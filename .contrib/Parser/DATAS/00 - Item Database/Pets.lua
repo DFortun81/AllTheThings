@@ -728,7 +728,6 @@ pet(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
 pet(166454, 2549);	-- Squishy Purple Goo (Void Jelly)
 pet(142100, 1969);	-- Stardust
-pet(180637, 2914);	-- Starry Dreamfoal
 pet(138810, 1911);	-- Sting Ray Pup
 pet(167047, 2579);	-- Stoneclaw
 pet(116402, 1515);	-- Stonegrinder
@@ -975,7 +974,7 @@ pet(181555, 2966);	-- Sinheart
 pet(182674, 3023);	-- Sir Reginald
 pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler
-pet(183623, 3044);	-- Spinemaw Larva
+pet(183623, 3044);	-- Spinemaw Gormling
 pet(180872, 2942);	-- Spirited Skyfoal
 pet(184509, 3067);	-- Spriggan Trickster
 pet(180637, 2914);	-- Starry Dreamfoal

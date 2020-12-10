@@ -20,9 +20,8 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
-		-- Toy
-		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
+		-- Gear
+		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -39,6 +38,12 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)
 		un(NEVER_IMPLEMENTED, i(180872)),	-- Spirited Skyfoal (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
+		-- Recipes
+		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
+		-- Toy
+		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+		-- Other
+		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
@@ -2269,7 +2274,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(39148)),	-- Baby Coralshell Turtle
 		un(NEVER_IMPLEMENTED, i(66070)),	-- Lizzy
 		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
-		un(NEVER_IMPLEMENTED, i(184397)),	-- Lost Featherling
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
 		un(NEVER_IMPLEMENTED, i(169195)),	-- Golden Cricket
@@ -3777,11 +3781,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
-			un(NEVER_IMPLEMENTED, i(174298)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - blue
 			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
 			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
 			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
-			un(NEVER_IMPLEMENTED, i(174302)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - silver
 			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
@@ -3886,12 +3888,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
-			un(NEVER_IMPLEMENTED, i(174310)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Blue]
 			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
 			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
 			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
 			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
-			un(NEVER_IMPLEMENTED, i(174315)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Silver]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown

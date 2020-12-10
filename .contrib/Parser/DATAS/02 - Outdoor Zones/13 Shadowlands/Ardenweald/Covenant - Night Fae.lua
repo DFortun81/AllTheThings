@@ -281,6 +281,11 @@ _.Zones =
 						["provider"] = { "n", 166982 },	-- Marasmius
 						["coord"] = { 29.5, 34.6, 1565 },
 					}),
+					q(63346, {	-- Night Fae Veteran
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, 1701 },
+						["description"] = "Becomes available at Renown 7",
+					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
@@ -473,16 +478,16 @@ _.Zones =
 						["provider"] = { "n", 174833 },	-- Shandris Feathermoon
 						["coord"] = { 44.3, 41.1, 1543 },
 					}),
-					q(60530, {	-- The Sea of Souls
-						["sourceQuests"] = { 60508 },	-- On the Trail
-						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
-						["coord"] = { 30.1, 36.4, 1543 },
-					}),
 					q(59189, {	-- The Recovery of Tyrande Whisperwind
 						["sourceQuests"] = { 60530 },	-- The Sea of Souls
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 						["coord"] = { 46.8, 41.7, 1543 },
 						["maps"] = { 1720 },	-- Torghast Scenario
+					}),
+					q(60530, {	-- The Sea of Souls
+						["sourceQuests"] = { 60508 },	-- On the Trail
+						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
+						["coord"] = { 30.1, 36.4, 1543 },
 					}),
 					q(59242, {	-- Their New Home
 						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
@@ -500,6 +505,57 @@ _.Zones =
 					}),					
 
 					-- Chapter 4: Da Boss (Renown 8 required to start)
+					q(59809, {	-- On De Other Side
+						["sourceQuests"] = { 59242 },	-- Their New Home
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+						["description"] = "Requires Renown 8 for this quest to be available.",
+					}),
+					q(59811, {	-- Taking Inventory
+						["sourceQuests"] = { 59809 },	-- On De Other Side
+						["provider"] = { "n", 166281 },	-- Bwonsamdi
+						["coord"] = { 50.4, 25.3, 1917 },
+					}),
+					q(59812, {	-- Following the Trail
+						["sourceQuests"] = { 59811 },	-- Taking Inventory
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59813, {	-- Minions of Mueh'zala
+						["sourceQuests"] = { 59812 },	-- Following the Trail
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59815, {	-- Stolen Loa
+						["sourceQuests"] = { 59812 },	-- Following the Trail
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59817, {	-- Winter Be Comin'
+						["sourceQuests"] = {
+							59813,	-- Minions of Mueh'zala
+							59815,	-- Stolen Loa
+						},
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+						["g"] = {
+							i(175586),	-- Faewoven Handwraps
+							i(179767),	-- Oakheart Armguards
+							i(179890),	-- Queensguard Gauntlets
+							i(181911),	-- Runewarden's Gloves
+						},
+					}),
+					q(59818, {	-- Gathering The Hunt
+						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
+						["provider"] = { "n", 156634 },	-- Winter Queen
+						["coord"] = { 50.9, 29.4, 1703 },
+					}),
+					q(59819, {	-- Cleansing the Forest
+						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
+						["provider"] = { "n", 167823 },	-- Lady Moonberry
+						["coord"] = { 66.6, 55.6, 1565 },
+					}),
+					q(59821, {	-- Report to the Queen
+						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
+						["provider"] = { "n", 167823 },	-- Lady Moonberry
+						["coord"] = { 68.4, 65.2, 1565 },
+					}),
+
 					-- Chapter 5: Night Warrior's Curse (Renown 11 required to start)
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
 					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
@@ -508,15 +564,10 @@ _.Zones =
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail
-					currency(1831, {		-- Renown-NightFae
-						q(60108, {	-- Drust and Ashes
-							--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-							["g"] = {
-								i(180721),	-- Enchanted Dreamlight Runestag
-							},
-						}),
-					}),
+					
+					--[[
 					q(61554, {	-- The Play's The Thing
+						-- pretty sure this was beta only
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 44.6, 56.2, 1565 },
 						["sourceQuests"] = { 61553 },	-- Know Where to Strike
@@ -538,64 +589,6 @@ _.Zones =
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.9, 38.8, 1565 },
 						["sourceQuests"] = { 59242 },	-- Their New Home
-					}),
-					-- Da Boss
-					q(59809, {	-- On De Other Side
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
-					}),
-					q(59811, {	-- Taking Inventory
-						["provider"] = { "n", 166281 },	-- Bwonsamdi
-						["sourceQuests"] = { 59809 },	-- On De Other Side
-					}),
-					q(59812, {	-- Following the Trail
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59811 },	-- Taking Inventory
-					}),
-					q(59813, {	-- Minions of Mueh'zala
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59812 },	-- Following the Trail
-					}),
-					q(59815, {	-- Stolen Loa
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59812 },	-- Following the Trail
-					}),
-					q(59817, {	-- Winter Be Comin'
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = {
-							59813,	-- Minions of Mueh'zala
-							59815,	-- Stolen Loa
-						},
-						["g"] = {
-							i(175586),	-- Faewoven Handwraps
-							i(179767),	-- Oakheart Armguards
-							i(181911),	-- Runewarden's Gloves
-							i(179890),	-- Queensguard Gauntlets
-						},
-					}),
-					q(59818, {	-- Gathering The Hunt
-						["provider"] = { "n", 156634 },	-- Winter Queen
-						["coord"] = { 51.3, 27.2, 1565 },
-						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
-					}),
-					q(59819, {	-- Cleansing the Forest
-						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 66.6, 55.6, 1565 },
-						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
-					}),
-					q(59821, {	-- Report to the Queen
-						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 68.4, 65.2, 1565 },
-						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
-						["g"] = {
-							i(179657),	-- Faewoven Tunic
-							i(175576),	-- Faewoven Raiment
-							i(179765),	-- Oakheart Tunic
-							i(179774),	-- Oakheart Vestment
-							i(181909),	-- Runewarden's Hauberk
-							i(181979),	-- Runewarden's Vestment
-							i(179888),	-- Queensguard Chestplate
-						},
 					}),
 					-- Night Warrior's Curse							-- wowhead, need to be confirmed
 					q(58610, {	-- The Speaker of Elune
@@ -678,6 +671,13 @@ _.Zones =
 						["provider"] = { "n", 165702 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
+					}),
+					--]]
+					q(60108, {	-- Drust and Ashes
+						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+						["g"] = {
+							i(180721),	-- Enchanted Dreamlight Runestag
+						},
 					}),
 					-- Covenant progress
 					q(61853, {	-- Adventurer: Te'zan (Rank ?)
@@ -1057,6 +1057,84 @@ _.Zones =
 					}),
 				}),
 				n(VENDORS, {
+					n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 48.1, 53.5, 1702 },
+						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 						["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
 						["g"] = {
@@ -1442,6 +1520,350 @@ _.Zones =
 							}),
 						},
 					}),
+					n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 49.4, 54.4, 1702 },
+						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
+					n(175418, {	-- Mar'lan <Night Fae Armor Trader>
+						["coord"] = { 45.9, 56.4, 1701 },
+						["g"] = {
+							i(179602, {	-- Bulwark of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(175597, {	-- Faewoven Amice
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175588, {	-- Faewoven Cowl
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175603, {	-- Faewoven Cuffs
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179623, {	-- Faewoven Drape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175586, {	-- Faewoven Handwraps
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175592, {	-- Faewoven Leggings
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175576, {	-- Faewoven Raiment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175581, {	-- Faewoven Sandals
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175600, {	-- Faewoven Sash
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179657, {	-- Faewoven Tunic
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179493, {	-- Fang of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179567, {	-- Harp of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179580, {	-- Jaws of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182319, {	-- Mace of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179766, {	-- Oakheart Anklewraps
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179767, {	-- Oakheart Armguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179771, {	-- Oakheart Belt
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179772, {	-- Oakheart Bracers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179769, {	-- Oakheart Britches
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179773, {	-- Oakheart Cape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179768, {	-- Oakheart Crest
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179770, {	-- Oakheart Mantle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179765, {	-- Oakheart Tunic
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179774, {	-- Oakheart Vestment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179888, {	-- Queensguard Chestplate
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179620, {	-- Queensguard Cloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179890, {	-- Queensguard Gauntlets
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179893, {	-- Queensguard Girdle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179887, {	-- Queensguard Greathelm
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179891, {	-- Queensguard Greaves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179892, {	-- Queensguard Pauldrons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179889, {	-- Queensguard Sabatons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179894, {	-- Queensguard Vambraces
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181916, {	-- Runewarden's Armguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181910, {	-- Runewarden's Boots
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181915, {	-- Runewarden's Buckle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181911, {	-- Runewarden's Gloves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181877, {	-- Runewarden's Greatcloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181912, {	-- Runewarden's Guise
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181909, {	-- Runewarden's Hauberk
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181913, {	-- Runewarden's Legguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181914, {	-- Runewarden's Spaulders
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181979, {	-- Runewarden's Vestment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179560, {	-- Scepter of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180005, {	-- Staff of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180021, {	-- Wand of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180079, {	-- Warbow of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180259, {	-- Warglaive of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179542, {	-- Warmaul of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+						},
+					}),
+					n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 46.9, 54.3, 1702 },
+						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 						["coord"] = { 59.6, 52.9, 1565 },
 						["g"] = {
@@ -1502,6 +1924,84 @@ _.Zones =
 								},
 							}),
 						},
+					}),
+					n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 49.4, 54.4, 1702 },
+						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
 					}),
 				}),
 			}),

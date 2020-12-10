@@ -9,7 +9,7 @@ _.Zones =
 			n(VENDORS, {
 				n(162804, {	-- Ve'nari
 					i(180949, {	-- Animaflow Stabilizer
-						["questID"] = 63217,
+						["questID"] = 61600,
 						["cost"] = { { "c", 1767, 1650 } },
 						["g"] = {
 							crit(5, {

@@ -496,7 +496,7 @@ _.WorldEvents =
 					}),
 				}),
 				n(RARES, {
-					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+					["g"] = {
 						n(169035, {	-- Nathanos Blightcaller
 							["maps"] = { 23 },	-- Eastern Plaguelands
 							["coord"] = { 23.5, 68.4, 23 },
@@ -507,6 +507,7 @@ _.WorldEvents =
 							-- ["altQuests"] = {
 								-- 60542,	-- This is the world quest ID. Not sure if it's repeatable, so using the loot tracker on Nathanos directly and we can add the quest itself later if it's relevant
 							-- },
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								-- world quest grants the equivalent of a darkshore cache. Not sure yet if he has his own loot table
 								-- the cache has a special item string... blah only drops weapons and apparently is guaranteed (finally)
@@ -521,133 +522,144 @@ _.WorldEvents =
 							["coord"] = { 49.6, 32.3, 118 },
 							["questID"] = 62343,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183646),	-- Chestguard of Siphoned Vitality
 								i(183648),	-- Veincrusher Gauntlets
 								i(183647),	-- Bloodspatter
-							},
+							}),
 						}),
 						n(174058, {	-- Bronjahm (13)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 70.6, 38.5, 118 },
 							["questID"] = 62336,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183675),	-- Cold Sweat Mitts
 								i(183634),	-- Papa's Mint Condition Bag
 								i(183639),	-- Gaze of Bewilderment
 								i(183635),	-- Grieving Gauntlets
-							},
+							}),
 						}),
 						n(174048, {	-- Elder Nadox (3)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 44.2, 49.2, 118 },
 							["questID"] = 62326,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183673),	-- Nerubian Aegis Ring
 								i(183641),	-- Shoulderpads of Corpal Rigidity
 								i(183624),	-- Serrated Blade of Nadox
-							},
+							}),
 						}),
 						n(174054, {	-- Falric (17)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 50.2, 88.1, 118 },
 							["questID"] = 62332,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183664),	-- Bracer of Ground Molars
 								i(183667),	-- Geistslicer
 								i(183665),	-- Valonforth's Marred Pauldrons
-							},
+							}),
 						}),
 						n(174056, {	-- Forgemaster Garfrost (15)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 59.1, 72.5, 118 },
 							["questID"] = 62334,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183666),	-- Legguards of the Frosty Fathoms
 								i(183631),	-- Ring of Carnelian and Sinew
 								i(183630),	-- Garfrost's Two-Ton Bludgeon
-							},
+							}),
 						}),
 						n(174061, {	-- Ingvar the Plunderer (10)
 							["maps"] = { 118 }, -- Icecrown
 							["coord"] = { 52.3, 52.6, 118 },
 							["questID"] = 62339,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183659),	-- Annhylde's Band
 								i(183658),	-- Ingvar's Monolithic Skullcleaver
 								i(183668),	-- Razor-Barbed Leather Belt
-							},
+							}),
 						}),
 						n(174050, {	-- Krik'thir the Gatewatcher (1)
 							["maps"] = { 118 }, -- Icecrown
 							["coord"] = { 67.5, 58.2, 118 },
 							["questID"] = 62328,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183682),	-- Cinch of the Servant
 								i(183683),	-- Skittering Vestments
 								i(183681),	-- Webrending Machete
-							},
+							}),
 						}),
 						n(174063, {	-- Lady Deathwhisper (8)
 							["maps"] = { 118 }, -- Icecrown
 							["coord"] = { 51.2, 78.6, 118 },
 							["questID"] = 62341,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183653),	-- Deathwhisper Vestment
 								i(183655),	-- Handgrips of Rime and Sleet
 								i(183652),	-- Zod's Echoing Longbow - confirmed
-							},
+							}),
 						}),
 						n(174055, {	-- Marwyn (16)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 58.2, 83.5, 118 },
 							["questID"] = 62333,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183687),	-- Frayed Flesh-Stitched Shoulderguards
 								i(183663),	-- Sightless Capuchin of Ulmaas
 								i(183662),	-- Frostsworn Rattleshirt
-							},
+							}),
 						}),
 						n(174067, {	-- Noth the Plaguebringer (4)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 31.5, 70.4, 118 },
 							["questID"] = 62345,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183642),	-- Robes of Rasped Breaths
 								i(183676),	-- Hailstone Loop
 								i(183654),	-- Etched Dragonbone Stompers
-							},
+							}),
 						}),
 						n(174052, {	-- Novos the Summoner (19)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 77.9, 66.2, 118 },
 							["questID"] = 62330,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183671),	-- Necromantic Wristwraps
 								i(183672),	-- Cuirass of Undeath
 								i(183627),	-- Summoner's Granite Gavel
-							},
+							}),
 						}),
 						n(174066, {	-- Patchwerk (5)
 							["maps"] = { 118 },	-- Icecrown
@@ -655,72 +667,86 @@ _.WorldEvents =
 							["questID"] = 62344,
 							["isRepeatable"] = true,
 							["description"] = "Inside the Sanctum of Reanimation at the Fleshworks.",
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183645),	-- Cinch of the Tortured
 								i(183644),	-- Regurgitator's Shoulderpads
 								i(183643),	-- Severance of Mortality
-							},
+							}),
 						}),
 						n(174060, {	-- Prince Keleseth (11)
 							["maps"] = { 118 }, -- Icecrown
 							["coord"] = { 53.9, 44.7, 118 },
 							["questID"] = 62338,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183678),	-- Keleseth's Influencer
 								i(183661),	-- Drake Stablers Gauntlets
 								i(183680),	-- Royal Sanguine Cloak
-							},
+							}),
 						}),
 						n(174049, {	-- Prince Taldaram (2)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 30.0, 62.4, 118 },
 							["questID"] = 62327,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183679),	-- Taldaram's Supple Slippers
 								i(183625),	-- Reforged Necklace of Taldaram
 								i(183677),	-- Blood-Drinker's Belt (reported on discord)
-							},
+							}),
 						}),
 						n(174064, {	-- Professor Putricide (7)
 							["maps"] = { 118 },
 							["coord"] = { 57.1, 30.5, 118 },
 							["questID"] = 62342,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183649),	-- Bag of Discarded Entrails
 								i(183651),	-- Chestplate of Septic Sutures
 								i(183650),	-- Miniscule Abomination in a Jar
-							},
+							}),
 						}),
 						n(174057, {	-- Scourgelord Tyrannus (14)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 47.1, 66.0, 118 },
 							["questID"] = 62335,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183674),	-- Rimewoven Pantaloons
 								i(183633),	-- Fringed Wyrmleather Leggings
 								i(183632),	-- Protector of Stolen Souls
-							},
+							}),
 						}),
 						n(174062, {	-- Skadi the Ruthless (9)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 57.7, 56.0, 118 },
 							["questID"] = 62340,
 							["isRepeatable"] = true,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
-								i(183200),	-- Pitch Black Scourgestone
+								i(183200, {	-- Pitch Black Scourgestone
+									["u"] = REMOVED_FROM_GAME,
+								}),
 								i(44151),	-- Reins of the Blue Proto-Drake
-								i(183670),	-- Skadi's Saronite Belt
-								i(183656),	-- Drake Rider's Jerkin
-								i(183657),	-- Skadi's Scaled Sollerets
+								i(183670, {	-- Skadi's Saronite Belt
+									["u"] = REMOVED_FROM_GAME,
+								}),
+								i(183656, {	-- Drake Rider's Jerkin
+									["u"] = REMOVED_FROM_GAME,
+								}),
+								i(183657, {	-- Skadi's Scaled Sollerets
+									["u"] = REMOVED_FROM_GAME,
+								}),
 							},
 						}),
 						n(174059, {	-- The Black Knight (12)
@@ -728,38 +754,41 @@ _.WorldEvents =
 							["coord"] = { 64.9, 22.1, 118 },
 							["questID"] = 62337,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183638),	-- Phantasmic Kris
 								i(183637),	-- Shoulderpads of the Notorious Knave
 								i(183636),	-- Helm of the Violent Fracas
-							},
+							}),
 						}),
 						n(174053, {	-- The Prophet Tharon'ja (18)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 80.3, 61.4, 118 },
 							["questID"] = 62331,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183686),	-- Breeches of the Skeletal Serpent
 								i(183685),	-- Phantasmic Seal of the Prophet
 								i(183684),	-- Tharaon'ja's Protectorate
-							},
+							}),
 						}),
 						n(174051, {	-- Trollgore (20)
 							["maps"] = { 118 },	-- Icecrown
 							["coord"] = { 58.3, 39.3, 118 },
 							["questID"] = 62329,
 							["isRepeatable"] = true,
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 								i(183200),	-- Pitch Black Scourgestone
 								i(183669),	-- Cowl of the Rampaging Trollgore
 								i(183626),	-- Troll Gorer
 								i(183640),	-- Leggings of Disreputable Charms
-							},
+							}),
 						}),
-					}),
+					},
 				}),
 				n(VENDORS, {
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {

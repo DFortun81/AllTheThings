@@ -130,6 +130,14 @@ _.Zones =
 					["provider"] = { "n", 160647 },	-- Acolyte Galistos
 					["coord"] = { 61.1, 74.4, 1533 },
 				}),
+				q(58184, {	-- Antiquated Methodology
+					["sourceQuests"] = { 57937 },	-- Tactical Formation
+					["isBreadcrumb"] = true,
+					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
+					["altQuests"] = { 58185 },	-- Success Without Soul
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
 				q(57714, {	-- Assessing Your Spirit
 					["sourceQuests"] = {
 						57909,	-- Assessing Your Stamina
@@ -153,6 +161,10 @@ _.Zones =
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, 1533 },
+				}),
+				q(59262, {	-- Broken Wings
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(58976, {	-- Chasing a Memory
 					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
@@ -208,6 +220,11 @@ _.Zones =
 						60007,	-- Stay Scrappy
 					},
 					["provider"] = { "n", 167164 },	-- Thanikos
+				}),
+				q(59263, {	-- Feathers of Flight
+					["sourceQuests"] = { 59262 },	-- Broken Wings
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(60009, {	-- Fight Another Day
 					["sourceQuests"] = { 60006 },	-- Now or Never
@@ -486,6 +503,14 @@ _.Zones =
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, 1533 },
+				}),
+				q(58185, {	-- Success Without Soul
+					["sourceQuests"] = { 58042 },	-- On Larion Wings
+					["isBreadcrumb"] = true,
+					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
+					["altQuests"] = { 58184 },	-- Antiquated Methodology
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
 				}),
 				q(57712, {	-- Suggested Reading
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -853,6 +878,12 @@ _.Zones =
 					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
 					["coord"] = { 59.3, 60.9, 1533 },
 				}),
+				q(62916, {	-- Your Next Best Friend
+					["sourceQuests"] = { 59196 },	-- Go in Service
+					["provider"] = { "n", 175426 },	-- Sika
+					["isWeekly"] = true,
+					["coord"] = { 53.0, 47.6, 1533 },
+				}),
 				q(59426, {	-- Your Personal Assistant
 					["sourceQuests"] = { 59196 },	-- Go in Service
 					["provider"] = { "n", 165045 },	-- Kalisthene
@@ -884,24 +915,6 @@ _.Zones =
 				-- End of Zone Achievement Quests
 
 				-- An Act of Service
-				q(58184, {	-- Antiquated Methodology
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuests"] = { 57937 },	-- Tactical Formation
-					["altQuests"] = {
-						58184,	-- Antiquated Methodology
-						58185,	-- Success Without Soul
-					},
-				}),
-				q(58185, {	-- Success Without Soul
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = { 58042 },	-- On Larion Wings
-					["altQuests"] = {
-						58184,	-- Antiquated Methodology
-						58185,	-- Success Without Soul
-					},
-				}),
 				q(59554, {	-- A Fine Journey
 					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
 					["coord"] = { 51.5, 47.1, 1533 },
@@ -921,29 +934,20 @@ _.Zones =
 					["coord"] = { 53.8, 73.8, 1533 },
 				}),
 				-- Glimmerfly toy/pet questline
-				q(59262, {	-- Broken Wings
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-				}),
-				q(59263, {	-- Feathers of Flight
-					["sourceQuests"] = { 59262 },	-- Broken Wings
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-				}),
 				q(60660, {	-- Flight Test
 					["sourceQuests"] = { 59263 },	-- Feathers of Flight
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59348, {	-- More Wings!
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59351, {	-- Strings and Things
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59311, {	-- How to Catch a Glimmerfly
 					["sourceQuests"] = {
@@ -951,7 +955,7 @@ _.Zones =
 						59351,	-- Strings and Things
 					},
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 					["g"] = {
 						i(180839)	-- Helpful Glimmerfly
 					},
@@ -967,7 +971,7 @@ _.Zones =
 				
 				-- Bonus Objectives
 				q(62737, {	-- Aspirant For a Day (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -977,11 +981,11 @@ _.Zones =
 				q(59015, {	-- Hostile Recollection
 				}),
 				q(62735, {	-- Hostile Recollection (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62732, {	-- Locus Focus (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -989,7 +993,7 @@ _.Zones =
 					},
 				}),
 				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items

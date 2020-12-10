@@ -387,22 +387,24 @@ _.Zones =
 						},
 					}),
 					crit(7, {	-- Abandoned Stockpile
+						["description"] = "Coordinates are for a cave entrance hidden by plants.",
 						["objectID"] = 354202,	-- Abandoned Stockpile
-						["coord"] = { 46.1, 45.3, 1533 },
 						["questID"] = 61006,
-						["description"] = "Inside a cave hidden by plants at |cFFFFFFFF46.4, 46.5|r.",
+						["coord"] = { 46.4, 46.5, 1533 },
 					}),
 					crit(8, {	-- Experimental Construct Part
+						["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
 						["objectID"] = 354275,	-- Experimental Construct Part
-						["coord"] = { 42.3, 23.3, 1533 },
 						["questID"] = 61052,
+						["coord"] = { 42.3, 23.3, 1533 },
 						["g"] = {
 							i(183609),	-- Re-Powered Golliath Fists
 						},
 					}),
 					crit(9, {	-- Windsmith's Tools
-						--["objectID"] = ,	-- The Necronom-i-nom
+						["objectID"] = 354289,	-- Windsmith's Tools
 						["coord"] = { 35.8, 48.1, 1533 },
+						["cost"] = { { "i", 180536, 1 } },	-- 1x Broken Kyrian Flute
 						["questID"] = 61053,
 						["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrm|r fying around the treasure after you got it use the |cFFFFFFFFWindsmith's Tools|r to restore the flute.",
 						["g"] = {
@@ -455,6 +457,33 @@ _.Zones =
 							i(179977),	-- Benevolent Gong
 						},
 					}),
+				}),
+				ach(14767, {	-- Count Your Blessings
+					crit(1, {		-- Purified Blessing of Grace
+						["coord"] = { 53.8, 28.9, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+					crit(2, {		-- Purified Blessing of Power
+						["coord"] = { 45.3, 59.8, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+					crit(3, {		-- Purified Blessing of Fortitude
+						["coord"] = { 34.7, 30.0, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+				}),
+				ach(14734, {	-- Rallying Cry of the Ascended
+					crit(1),		-- Vesper of Courage
+					crit(2),		-- Vesper of Wisdom
+					crit(3),		-- Vesper of Humility
+					crit(4),		-- Vesper of Loyalty
+					crit(5),		-- Vesper of Purity
+				}),
+				ach(14768, {	-- What is that Melody?
+					crit(1),		-- Hymn of Purity
+					crit(2),		-- Hymn of Courage
+					crit(3),		-- Hymn of Humility
+					crit(4),		-- Hymn of Wisdom
 				}),
 			}),
 		}),

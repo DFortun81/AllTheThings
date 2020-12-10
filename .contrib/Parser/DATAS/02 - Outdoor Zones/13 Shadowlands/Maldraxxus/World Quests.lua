@@ -55,11 +55,21 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61607, {	-- Cooking: Spider Jerky
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58490, {	-- Deadly Reminder
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(61141, {	-- Deathfang's Favorite Toy
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61608, {	-- Enchanting: Unbreakable Crystal
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -88,7 +98,20 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61611, {	-- Inscription: Litany of Might
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61540, {	-- Just Winging It
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61539, {	-- Liches Get Stitches
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61866, {	-- Mighty Minions of Maldraxxus
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -142,7 +165,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181625),	-- Gorewrought Medallion
 			}),
 		}),
 	}),

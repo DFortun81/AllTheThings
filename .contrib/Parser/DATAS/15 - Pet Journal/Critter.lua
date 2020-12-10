@@ -66,6 +66,7 @@ _.PetJournal =
 		p(193),		-- Giant Sewer Rat
 		p(2383),	-- Giant Woodworm
 		p(1913),	-- Gleamhoof Fawn
+		p(2917),	-- Gloober, as G-huun
 		p(2395),	-- Glutted Bleeder
 		p(430),		-- Gold Beetle
 		p(2387),	-- Golden Beetle
@@ -81,6 +82,7 @@ _.PetJournal =
 		p(550),		-- Highlands Mouse
 		p(823),		-- Highlands Skunk
 		p(3027),	-- Hissing Deathroach
+		p(2916),	-- Hungry Burrower
 		p(1040),	-- Imperial Silkworm
 		p(442),		-- Irradiated Roach
 		p(2663),	-- Junkheap Roach
@@ -133,6 +135,7 @@ _.PetJournal =
 		p(1938),	-- Rescued Fawn
 		p(744),		-- Resilient Roach
 		p(424),		-- Roach
+		p(3020),	-- Runelight Leaper
 		p(496),		-- Rusty Snail
 		un(10, p(665)),		-- Sand Scarab
 		p(2463),	-- Sandshell Chitterer
@@ -150,7 +153,7 @@ _.PetJournal =
 		p(2063),	-- Sneaky Marmot
 		p(640),		-- Snowshoe Hare
 		p(72),		-- Snowshoe Rabbit
-		p(3044),	-- Spinemaw Larva
+		p(3044),	-- Spinemaw Gormling
 		p(2653),	-- Spireshell Snail
 		p(200),		-- Spring Rabbit
 		p(379),		-- Squirrel

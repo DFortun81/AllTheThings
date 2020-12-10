@@ -35,6 +35,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61596, {	-- Cooking: Arden Apple Pie
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61440, {	-- Enchanting: Boundless Basket
 					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
@@ -64,6 +69,11 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61947, {	-- Lurking In The Shadows
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61530, {	-- Mining: Ligneous Phaedrum Cluster
+					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -107,7 +117,16 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(58993, {	-- Swarm Defense
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60786, {	-- Swarm Defense
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61604, {	-- Tailoring: Cloak of Camouflage
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

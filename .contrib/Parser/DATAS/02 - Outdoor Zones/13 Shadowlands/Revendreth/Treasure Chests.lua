@@ -7,15 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-212, {	-- Treasure Chest
-			--	TODO: figure out wtf to do with blanchy's reins
-			--	crit(8, {	-- Blanchy Assisted
-			--		--["objectID"] = 354646,	-- Ancient Cloudfeather Egg
-			--		["coord"] = { 63.01, 54.46, 1525 },
-					--["questID"] = 61065,
-			--		["g"] = {
-						i(182614),	-- Blanchy's Reins
-			--		},
-			--	}),
 				o(353232, {	-- Bleakwood Chest
 					["questID"] = 60665,
 					["isDaily"] = true,	-- repeatable??
@@ -31,11 +22,12 @@ _.Zones =
 					},
 				}),
 				o(357565, {	-- Forgotten Angler's Rod
-					["crs"] = { 173634 },	-- Muckribbon
-					["coord"] = { 69.3, 77.9, 1525 },
+					["description"] = "Click the fishing rod to spawn Muckribbon.",
 					["questID"] = 62196,
+					["coord"] = { 73.7, 75.4, 1525 },
+					["crs"] = { 173634 },	-- Muckribbon
 					["g"] = {
-						i(180993),	-- Bat Visage Bobber
+						i(180993),	-- Bat Visage Bobber (TOY!)
 					},
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
@@ -75,8 +67,7 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
 				}),
-				o(1278968750, {	-- Secret Treasure
-				--	TODO: fix objectID when data becomes available
+				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
 					["questID"] = 60197,
 					["isDaily"] = true,	-- repeatable??
@@ -90,22 +81,24 @@ _.Zones =
 						i(180400),	-- Inquisitions Final Judgment
 					}
 				}),
+				o(351541, {	-- Secret Treasure
+					["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
+					["questID"] = 60198,
+					["isDaily"] = true,
+					["coord"] = { 42.5, 50.3, 1525 },
+				}),
 				o(351542, {	-- Secret Treasure
+					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 74.0, 61.9, 1525 },					
 				}),
-				o(354186, {	-- Stoneborn Satchel
-					["questID"] = 60979,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 75.8, 77.3, 1525 },
-				}),
-				o(354113, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at 52.5, 59.2 to reach the treasure.",
-					["questID"] = 60983,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 53.6, 57.3, 1525 },
+				o(1278968750, {	-- Secret Treasure
+				--	TODO: fix objectID when data becomes available
+					["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
+					["questID"] = 60201,
+					["isDaily"] = true,
+					["coord"] = { 55.3, 35.9, 1525 },
 				}),
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,
@@ -113,45 +106,70 @@ _.Zones =
 					["coord"] = { 43.8, 57.1, 1525 },
 				}),
 				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
+					["questID"] = 60942,
+					["isDaily"] = true,
+					["coord"] = { 55.3, 42.3, 1525 },
+				}),
+				o(354112, {	-- Stoneborn Satchel
 					["questID"] = 60941,
-					["isDaily"] = true,	-- repeatable?
+					["isDaily"] = true,
 					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354186, {	-- Stoneborn Satchel
+					["questID"] = 60979,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 75.8, 77.3, 1525 },
+				}),
+				o(354187, {	-- Stoneborn Satchel
+					["questID"] = 60980,
+					["isDaily"] = true,
+					["coord"] = { 44.3, 77.9, 1525 },
+				}),
+				o(354188, {	-- Stoneborn Satchel
+					["questID"] = 60981,
+					["isDaily"] = true,
+					["coord"] = { 66.4, 65.4, 1525 },
+				}),
+				o(354189, {	-- Stoneborn Satchel
+					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
+					["questID"] = 60896,
+					["isDaily"] = true,
+					["coord"] = { 58.0, 67.2, 1525 },
 				}),
 				o(354192, {	-- Stoneborn Satchel
 					["questID"] = 60984,
 					["isDaily"] = true,
 					["coord"] = { 23.5, 48.8, 1525 }
 				}),
-				o(1278968752, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["questID"] = 60942,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 55.3, 42.3, 1525 },
-				}),
 				o(1278968751, {	-- Stoneborn Satchel
-				--	TODO: verify objectID, made a random one up
-					["questID"] = 60981,
+				--	TODO: verify objectID.
+					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
+					["questID"] = 60983,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 53.6, 57.3, 1525 },
+				}),
+				o(1278968752, {	-- Stoneborn Satchel
+				--	TODO: verify objectID when data is available
+					["questID"] = 60986,
 					["isDaily"] = true,
-					["coord"] = { 66.4, 65.4, 1525 },
-					["g"] = {
-					--	TODO: is this quest specific to this object?
-						i(182728, {	-- A Crate of Sinvyr Ore
-							["questID"] = 62184,	-- A Crate of Sinvyr Ore
-						}),
-					},
+					["coord"] = { 29.9, 37.4, 1525 },
+				}),
+				o(1278968759, {	-- Stoneborn Satchel
+				--	TODO: fix objectID when data is available
+					["questID"] = 60944,
+					["isDaily"] = true,
+					["coord"] = { 57.7, 29.4, 1525 },
 				}),
 				o(1278968753, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["questID"] = 60982,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 58.1, 67.3, 1525 },
+				--	TODO: fix objectID when data is available
+					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
+					["isDaily"] = true,
+					["coord"] = { 76.6, 51.0, 1525 },
 				}),
-				o(1278968754, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["questID"] = 60980,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 44.3, 77.9, 1525 },
+				o(1278968764, {	-- Stoneborn Satchel
+					["questID"] = 60985,
+					["isDaily"] = true,
+					["coord"] = { 36.5, 51.5, 1525 },
 				}),
 			}),
 		}),

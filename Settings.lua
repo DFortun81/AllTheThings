@@ -427,6 +427,8 @@ end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
+	settings:Set("Cache:CompletedGroups", checked);
+	settings:Set("Cache:CollectedThings", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
@@ -438,13 +440,15 @@ settings.SetCompletedGroups = function(self, checked, skipRefresh)
 end
 settings.ToggleCompletedGroups = function(self)
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
+	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
-	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
+	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
+	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);

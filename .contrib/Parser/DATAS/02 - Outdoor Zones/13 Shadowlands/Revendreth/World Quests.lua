@@ -21,9 +21,13 @@ _.Zones =
 				}),
 				q(60655, {	-- A Stolen Stone Fiend
 					["isWorldQuest"] = true,
+					["description"] = "Getting the pet from the WQ is currently a little buggy.\n\nAfter you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is intended to open the cage next to Penkle, giving you the pet.  Currently, it does not.  Keep the key in your bags, and next time the WQ is active, immediately head back to the cage at |cFFFFFFFF45.2, 47.8|r and open it.",
+					["crs"] = { 170189 },	-- Penkle
 					["lvl"] = { 60 },
 					["g"] = {
-						i(183859),	-- Dal's Courier Badge
+						i(180270, {	-- Cage Key
+							i(183859),	-- Dal's Courier Badge (PET!)
+						}),
 					},
 				}),
 				q(60657, {	-- Aid From Above
@@ -42,6 +46,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61621, {	-- Cooking: Skewered Meats
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60532, {	-- Destroy the Dominant
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -51,6 +60,11 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(57465, {	-- Dirty Job: Wood Work
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61630, {	-- Enchanting: Everburning Brand
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -75,8 +89,16 @@ _.Zones =
 				q(59643, {	-- It's Race Day in the Ramparts!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(177239),	-- Racing Permit (Ember Court item)
+					},
 				}),
 				q(60659, {	-- Light Defense
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61538, {	-- Mining: Menacing Sinvyr Cluser
+					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -104,11 +126,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(58084, {	-- Soul Snares
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59617, {	-- Stone Fiend Saboteurs
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(60656 , {	-- Summon Your Sins
+				q(60656, {	-- Summon Your Sins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -121,6 +147,11 @@ _.Zones =
 							i(180591),	-- Vial of Roiling Emotions
 						}),
 					},
+				}),
+				q(61628, {	-- Tailoring: Looming Tapestry
+					["requireSkill"] = TAILORING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
@@ -135,6 +166,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(59850, {	-- Tea Tales: Vulca
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61886, {	-- The Mind Games of Addius
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

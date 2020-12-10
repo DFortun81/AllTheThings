@@ -6,6 +6,7 @@ local i = function(itemID)
 end
 
 -- Anima Items
+i(184147);	-- Agony Enrichment Device
 i(181540);	-- Animaflower Bud
 i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
@@ -14,6 +15,7 @@ i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
 i(183723);	-- Brimming Anima Orb
+i(184374);	-- Cartel Exchange Vessel
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(181368);	-- Centurion Power Core
@@ -23,6 +25,7 @@ i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
 i(184151);	-- Counterfeit Ruby Brooch
+i(181548);	-- Darkhaven Soul Lantern
 i(181551);	-- Depleted Stoneborn Heart
 i(184383);	-- Duskfall Tuber
 i(181645);	-- Engorged Monstrosity's Heart
@@ -30,20 +33,29 @@ i(184294);	-- Ethereal Ambrosia
 i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184385);	-- Fossilized Heartwood
 i(184777);	-- Gravedredger's Shovel
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
+i(184774);	-- Juvenile Sporespindle
+i(184382);	-- Luminous Sylberry
 i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
+i(181546);	-- Mature Cryptbloom
 i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
+i(184360);	-- Musings on Repetition
 i(184386);	-- Nascent Sporepod
+i(184775);	-- Necromancy for the Practical Ritualist
 i(181547);	-- Noble's Draught
+i(181642);	-- Novice Principles of Plaguistry
 i(181743);	-- Plume of the Archon
+i(184388);	-- Plump Glitterroot
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
+i(184362);	-- Reflections on Purity
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
 i(184772);	-- Ritual Maldracite Crystal
@@ -52,11 +64,17 @@ i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
 i(184389);	-- Slumbering Starseed
 i(184373);	-- Small Anima Globe
+i(184306);	-- Soulcatching Sludge
 i(181647);	-- Stabilized Plague Strain
+i(184380);	-- Starblossom Nectar
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
+i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
+i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
+i(181643);	-- Weeping Corpseshroom
+i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet
 i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
@@ -124,6 +142,8 @@ i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
 i(180170);	-- Pulsing Animacone
+i(180008);	-- Resonating Anima Core
+i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
 i(180405);	-- Rusty Gargon Chain
 i(165699);	-- Scarlet Herring Lure
@@ -141,6 +161,7 @@ i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
 i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
+i(182198);	-- Undulating Blood Burrower
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
 i(180697);	-- Wing Commanders Insignia
@@ -155,7 +176,9 @@ i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(182067);	-- Antique Duelist's Rapier
 i(182021);	-- Antique Kyrian Javelin
+i(182043);	-- Antique Necromancer's Staff
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button
@@ -170,6 +193,7 @@ i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
+i(182688);	-- Cypher of Obfuscation
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)
 i(143657);	-- Echo of Time (H)
@@ -201,6 +225,7 @@ i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
 i(169257);	-- Jagged Rune
+i(174286);	-- Kyrian Ritual Vestments
 i(169236);	-- Latch-and-Lock Trigger
 i(146952);	-- Legendary Tailor's Materials
 i(146977);	-- Legendary Tanner's Kit
@@ -269,6 +294,7 @@ i(169867);	-- Visual Holo Sphere
 i(146688);	-- Waterlogged Handmaiden's Gloves
 i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
+i(142509);	-- Withered Targeting Orb
 i(164761);	-- Xal'atath, Blade of the Black Empire
 i(146690);	-- Xavius' Torn Spellsash
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
@@ -305,7 +331,9 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184631);	-- Adventurer's Enchanting Cache
 i(184634);	-- Adventurer's Herbalism Cache
+i(184635);	-- Adventurer's Mining Cache
 i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
@@ -339,6 +367,7 @@ i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
+i(181715);	-- Temel's Certificate of Completion
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

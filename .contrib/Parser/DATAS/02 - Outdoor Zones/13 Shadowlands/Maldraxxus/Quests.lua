@@ -56,6 +56,12 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
+				q(57245, {	-- Ani-Matter Animator
+					-- TODO: is this Necrolord only, or available to anyone?
+					["provider"] = { "n", 157076 },	-- Synder Sixfold
+					["coord"] = { 26.3, 42.7, 1536 },
+					["isWeekly"] = true,
+				}),
 				q(58031, {	-- Applied Science
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "o", 353645 },	-- Marileth's Journal
@@ -86,8 +92,18 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
-				q(59826, {	-- Bet On Yourself
-				--	TODO: is this a daily?
+				q(59827, {	-- Bet On Yourself (Devmorta)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.7, 47.5, 1536 },
+				}),
+				q(59826, {	-- Bet On Yourself (Mistress Dyrax)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.7, 47.5, 1536 },
+				}),
+				q(59828, {	-- Bet On Yourself (Ti'or)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
@@ -639,6 +655,10 @@ _.Zones =
 					["provider"] = { "o", 349612 },	-- Wanted: Appraiser Vix
 					["coord"] = { 54.1, 47.5, 1536 },
 				}),
+				q(62462, {	-- WANTED: The Key of Eyes
+					["provider"] = { "o", 358382 },	-- Wanted: Chelicera
+					["coord"] = { 53.0, 41.4, 1536 },
+				}),
 				q(59172, {	-- War is Deception
 					["sourceQuests"] = {
 						59171,	-- Prey Upon Them
@@ -670,8 +690,9 @@ _.Zones =
 					-- Renown 5
 					-- House of Eyes
 					q(59555, {	-- Enemy at the Door
+						["sourceQuests"] = { 62448 },	-- Securing the House
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						--["sourceQuests"] = { 57390 },	-- To Die By the Sword
+						["coord"] = { 49.6, 50.7, 1698 },
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus
 						},
@@ -698,19 +719,23 @@ _.Zones =
 
 				-- Bonus Objectives
 				q(62742, {	-- Avoid 'Em Like the Plague (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
 						i(181638),	-- Gorewrought Drape [monk]
 					},
 				}),
+				q(62741, {	-- Choice of Action (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 				q(62743, {	-- Decaying Situation (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62721, {	-- Deconstructing The Problem (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -718,7 +743,7 @@ _.Zones =
 					},
 				}),
 				q(62712, {	-- War of Attrition (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items

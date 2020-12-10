@@ -11,6 +11,8 @@ _.Zones =
 			["maps"] = {
 				1698,	-- Seat of the Primus
 				1649,	-- Etheric Vault
+				1650,	-- Sightless Hold
+				1651,	-- The Molten Forge
 			},
 		}),
 	}),

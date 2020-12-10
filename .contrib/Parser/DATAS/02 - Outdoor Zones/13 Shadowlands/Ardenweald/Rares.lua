@@ -65,11 +65,14 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
-					["coord"] = { 53.8, 75.8, 1565 },
-					--["questID"] = ,
+					["questID"] = 59006,
 					["isDaily"] = true,
+					["coord"] = { 53.8, 75.8, 1565 },
 					["g"] = {
-						i(183196),	-- Lavender Nibbler
+						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(183196),	-- Lavender Nibbler (PET!)
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
@@ -97,18 +100,24 @@ _.Zones =
 					},
 				}),
 				n(160448, {	-- Hunter Vivanna <The Wild Hunt>
-					["coord"] = { 67.8, 51.2, 1565 },
 					["questID"] = 59221,
 					["isDaily"] = true,
+					["coord"] = { 67.8, 51.2, 1565 },
 					["g"] = {
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(179596),	-- Drust Mask of Dominance
 						i(183091, {	-- Lifewoven Bracelet
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
-						i(180165),	-- Witherscorn Reaper (TODO: this may drop from other rares/treasures in zone too?)
+						i(179596),	-- Drust Mask of Dominance
+					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna	
+						i(180163),	-- Blackthorn Harvester
+						i(180143),	-- Darkreach Hacker
+						i(179593),	-- Darkreach Mask
+						i(180142),	-- Deadstone Hatchet
+						i(179594),	-- Witherscorn Guise
+						i(180165),	-- Witherscorn Reaper
 					},
 				}),
 				n(164093, {	-- Macabre
@@ -131,72 +140,33 @@ _.Zones =
 					},
 				}),
 				n(165053, {	-- Mymaen
-					["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 62.2, 24.8, 1565 },
 					["g"] = {
 						crit(11, {	-- Mymaen
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
+						i(179502),	-- Ripvine Barb
 					},
 				}),
 				n(164547, {	-- Mystic Rainbowhorn
-					["coord"] = { 50.0, 20.6, 1565 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 50.0, 20.6, 1565 },
 					["g"] = {
 						crit(2, {	-- Mystic Rainbowhorn
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(182179, {	-- Runestag Soul
+						--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file?
 							["questID"] = 62434,	-- Runestag Soul
 						}),
-					},
-				}),
-				n(168135, {	-- Night Mare
-					["coord"] = { 62.25, 53.97, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["description"] = "|cFFA330C9Night Fae Covenant|r only. Requires Dream Catcher.",
-					["g"] = {
-						crit(16, {	-- Night Mare
-							["achievementID"] = 14309,	-- Adventurer of Ardenweald
-						}),
-						i(180728),				-- Swift Gloomhoof
-						i(181243, {			-- Broken Soulweb
-							["coord"] = { 19.67, 63.47, 1565 },
-							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
-							["g"] = {
-								n(165704, {		-- Elder Gwenna
-									["coord"] = { 50.44, 33.06, 1565 },	-- Elder Gwenna
-									["g"] = {
-										i(181242, {			-- Repaired Soulweb
-											["crs"] = { 165704 },	-- Elder Gwenna
-											["coord"] = { 50.44, 33.06, 1565 },
-											["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
-											["g"] = {
-												n(160262, {		-- Ysera
-													["coord"] = { 45.30, 51.13, 1565 },	-- Ysera
-													["g"] = {
-														i(178675, {			-- Dream Catcher
-															["crs"] = { 160262 },	-- Ysera
-															["coord"] = { 45.30, 51.13, 1565 },
-															["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
-															["g"] = {
-																i(180728),				-- Swift Gloomhoof
-															},
-														}),
-													},
-												}),
-											},
-										}),
-									},
-								}),
-							},
-						}),
+						i(179586),	-- Elderwood Piercer
 					},
 				}),
 				n(164391, {	-- Old Ardeite
+					["description"] = "Use either a |cff16bf0dPinch of Faerie Dust|r (dropped by the mobs in the area) or the buff from |cFFFFFFFFBasket of Enchanted Wings|r to fly up to the rare.  When you get close enough, it will fly down and be attackable.",
 					["questID"] = 59208,
 					["isDaily"] = true,
 					["coord"] = { 52.0, 58.8, 1565 },
@@ -220,7 +190,7 @@ _.Zones =
 						i(179603),	-- Nettlehusk Barrier
 					},
 				}),
-				n(167724, {	-- Rotbriar Changeling
+				n(167724, {	-- Rotbriar Boggart
 					["questID"] = 60258,
 					["isDaily"] = true,
 					["coord"] = { 65.6, 24.0, 1565 },
@@ -250,9 +220,9 @@ _.Zones =
 					},
 				}),
 				n(164415, {	-- Skuld Vit
-					["coord"] = { 37.4, 59.6, 1565 },
 					["questID"] = 59220,
 					["isDaily"] = true,
+					["coord"] = { 37.4, 59.6, 1565 },
 					["g"] = {
 						crit(9, {	-- Skuld Vit
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -260,10 +230,11 @@ _.Zones =
 						i(182183, {	-- Wolfhawk Soul
 							["questID"] = 62439,	-- Shadowstalker Soul
 						}),
+						i(180146),	-- Axe of Broken Wills
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
 					["coord"] = { 72.4, 51.6, 1565 },
 					["g"] = {
@@ -274,8 +245,7 @@ _.Zones =
 					},
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
-					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
-				--	TODO: are these on a cycle?  i think it was Mi'kai > Glimmerdust as Kil'jaeden > Astra > Senthii > Niya so far, if order holds we can add it to the description
+					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
@@ -286,27 +256,38 @@ _.Zones =
 							["questID"] = 61201,
 							["isDaily"] = true,
 							["g"] = {
+								crit(6, {	-- Azshara
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(179518),	-- Glimmerlight Staff
 							},
 						}),
-						--[[
 						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-							["questID"] = ,
+							["questID"] = 61206,
 							["isDaily"] = true,
 							["g"] = {
+								crit(7, {	-- N'zoth
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 							},
 						}),
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-							["questID"] = ,
+							["questID"] = 61205,
 							["isDaily"] = true,
 							["g"] = {
+								crit(5, {	-- Jaina
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
+								i(182452),	-- Everchill Brambles
 							},
 						}),
-						--]]
 						n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
 							["questID"] = 61203,
 							["isDaily"] = true,
 							["g"] = {
+								crit(3, {	-- Kil'jaeden
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182451),	-- Glimmerdust's Grand Design
 							},
 						}),
@@ -314,6 +295,9 @@ _.Zones =
 							["isDaily"] = true,	-- ??
 							["questID"] = 61202,
 							["g"] = {
+								crit(4, {	-- Argus, The Unmaker
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(179534),	-- Mi'kai's Deathscythe
 							},
 						}),
@@ -321,6 +305,9 @@ _.Zones =
 							["questID"] = 61207,
 							["isDaily"] = true,
 							["g"] = {
+								crit(1, {	-- Xavius
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182455),	-- Dreamer's Mending
 							},
 						}),
@@ -328,6 +315,9 @@ _.Zones =
 							["questID"] = 61204,
 							["isDaily"] = true,
 							["g"] = {
+								crit(2, {	-- Gul'dan
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182454),	-- Murmurs in the Dark
 							},
 						}),
@@ -346,15 +336,15 @@ _.Zones =
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting
-					["coord"] = { 30.0, 55.0, 1565 },
+					["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
 					["questID"] = 61632,
 					["isDaily"] = true,
-					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
+					["coord"] = { 30.0, 55.0, 1565 },
 					["g"] = {
 						crit(19, {	-- Valfir the Unrelenting
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180730),	-- Wild Glimmerfur Prowler
+						i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
 						i(180154),	-- Greataxe of Unrelenting Pursuit
 						i(182176, {	-- Shadowstalker Soul
 							["questID"] = 62431,	-- Shadowstalker Soul
@@ -362,9 +352,11 @@ _.Zones =
 					},
 				}),
 				n(164147, {	-- Wrigglemortis
+					["description"] = "Pull on the Wriggling Tendril to spawn the rare.",
 					["questID"] = 59170,
 					["isDaily"] = true,
 					["coord"] = { 58.0, 61.6, 1565 },
+					["crs"] = { 164179 },	-- Wriggling Tendril
 					["g"] = {
 						crit(6, {	-- Wrigglemortis
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald

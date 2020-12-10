@@ -18,6 +18,18 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
+						n(QUESTS, {
+							q(36848, {	-- Ogre Waygates
+								["providers"] = {
+									{ "n", 77367 },	-- Archmage Kem (A)
+									{ "n", 79836 },	-- Gez'la (H)
+								},
+							}),
+							q(38354, {	-- Portable Portals
+								["provider"] = { "n", 77367 },	-- Archmage Kem
+								["races"] = ALLIANCE_ONLY,
+							}),
+						}),
 					},
 				}),
 			}),

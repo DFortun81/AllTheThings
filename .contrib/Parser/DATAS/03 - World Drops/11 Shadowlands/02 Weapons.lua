@@ -13,6 +13,7 @@ _.WorldDrops =
 			i(184800),	-- Klontzas' Precise Pummeler
 			i(184806),	-- Kudebeh's Remarkable Targe
 			i(184801),	-- Locke's Essential Scepter
+			i(181393),	-- Sylvan Whiteshield
 			i(184804),	-- Ulfius' Calming Claymore
 			i(184799),	-- Wolf-Fanged Fist
 			i(184797),	-- Zink's Subtle Shank

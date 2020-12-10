@@ -7,7 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-34,  {	-- World Quests
+				q(61593, {	-- A Crisis of Memory (no idea why there are 2 versions of this)
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61689, {	-- A Crisis of Memory
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60623, {	-- AHHH! Real Monsters!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -69,23 +77,14 @@ _.Zones =
 				q(60844, {	-- Flight School: Falling With Style
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(1)),	-- Flight School Graduate / Flight School: Falling With Style
-					},
 				}),
 				q(60911, {	-- Flight School: Flapping Frenzy
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(3)),	-- Flight School Graduate / Flight School: Flapping Frenzy
-					},
 				}),
 				q(60858, {	-- Flight School: Up and Away!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(2)),	-- Flight School Graduate / Flight School: Up and Away!
-					},
 				}),
 				q(59804, {	-- Gateways of Horror
 					["isWorldQuest"] = true,
@@ -100,7 +99,21 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61446, {	-- Inscription: Invocation of Duty
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61449, {	-- Leatherworking: Steelhide Leather Harness
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61337, {	-- March of the Eternal Protector
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61783, {	-- Mega Bite
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -120,6 +133,11 @@ _.Zones =
 				q(62258, {	-- Soaring Over Bastion
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+				}),
+				q(61469, {	-- Tailoring: Woven Gossamer Tunic
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+					["requireSkill"] = TAILORING,
 				}),
 				q(61791, {	-- Thenia's Loyal Companions
 					["isWorldQuest"] = true,

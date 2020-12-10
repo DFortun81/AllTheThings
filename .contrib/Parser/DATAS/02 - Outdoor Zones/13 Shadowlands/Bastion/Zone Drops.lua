@@ -35,6 +35,14 @@ _.Zones =
 				i(176803),	-- Harmonious Mallet
 				i(176793),	-- Honorguide Crossbow
 				i(176798),	-- Larion Claw
+				i(184397, {	-- Lost Featherling
+					["crs"] = {	-- this *may* only drop for Kyrian players - in the pet journal it says "Covenant: Kyrian"
+						156559,	-- Ardent Warrior
+						157212,	-- Assuming Scholar
+						157054,	-- Fallacious Aspirant
+						156560,	-- Misguided Postulant
+					},
+				}),
 				i(176802),	-- Meditator's Blade
 				i(176800),	-- Modest Greatblade
 				i(176987),	-- Ossein Scale Belt

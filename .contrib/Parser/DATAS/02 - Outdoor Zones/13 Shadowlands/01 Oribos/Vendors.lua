@@ -7,14 +7,250 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
 			n(VENDORS, {
-				n(156690, {	-- Distributor Au'nagl
-					i(180136),	-- The Brokers Angle'r
+				n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
+					["coord"] = { 47.6, 77.2, 1670 },
+					["g"] = {
+						i(183740, {	-- Gilded Prowler
+							["cost"] = 300000000, -- 30,000g
+						}),
+						i(184410),	-- Aspirant's Stretcher (TOY!)
+						i(183094),	-- Plans: Shadowsteel Helm
+						i(183097),	-- Schematic: PHA7-YNX
+						i(183098),	-- Technique: Codex of the Still Mind
+						i(183103, {	-- Technique: Contract: The Ascended
+							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311409,
+						}),
+						i(183243, {	-- Memory of the Arbiter's Judgment
+							["cost"] = 11000000, -- 1,100g
+							["modID"] = 14,
+						}),
+						i(180857, {	-- Goldenpaw Kit
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(184351),	-- Illusion: Devoted Spirit
+						i(178991),	-- Tabard of the Ascended
+						i(184734),	-- Bracers of Regret
+						i(184728),	-- Casque of the Path
+						i(184730),	-- Cowl of the Path
+						i(184731),	-- Gorget of the Path
+						i(184732),	-- Manacles of Burden
+						i(184729),	-- Masque of the Path
+						i(184756),	-- Smoothed Loop of Contemplation
+						i(184733),	-- Wristclamps of Remorse
+						i(184735),	-- Wristclasps of Shame
+					},
 				}),
-				--[[	Many items return as retrieving data. They either are added later or are changed (its the 2nd option 95% sure)
+				n(176368, {	-- Archivist Leonara <Avowed Quartermaster>
+					["coord"] = { 46.1, 77.7, 1670 },
+					["g"] = {
+						i(184221, {	-- Archivist's Quill
+							["cost"] = { { "c", 1816, 1000 } },
+						}),
+						i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
+							["cost"] = { { "c", 1816, 600 } },
+						}),
+						i(184222, {	-- Lemet's Requisition Orders
+							["cost"] = { { "c", 1816, 350 } },
+						}),
+						i(182890, {	-- Rapid Recitation Quill
+							["cost"] = { { "c", 1816, 500 } },
+						}),
+						i(182660, {	-- Recipe: Shadestone
+							["cost"] = { { "c", 1816, 35 } },
+						}),
+						i(184219, {	-- Treatise on Sinstone Fragment Acquisition
+							["cost"] = { { "c", 1816, 600 } },
+						}),
+						i(184218, {	-- Vulgarity Arbiter
+							["cost"] = { { "c", 1816, 1000 } },
+						}),
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(180940, {	-- Ebony Crypt Keeper's Mantle
+								["cost"] = { { "c", 1816, 500 } },
+							}),
+							i(182954, {	-- Inquisition Gargon
+								["cost"] = { { "c", 1816, 2000 } },
+							}),
+						}),
+					},
+				}),
+				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
+					["coord"] = { 47.8, 77.9, 1670 },
+					["g"] = {
+						i(182082, {	-- Lurid Bloodtusk (MOUNT)
+							["cost"] = 300000000, -- 30,000g
+						}),
+						i(183112, {	-- Animated Radius
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+							["g"] = {
+								i(183114, {	-- Carpal
+									["cost"] = {
+										{ "i", 183112, 1 },	-- Animated Radius
+										{ "i", 183111, 1 },	-- Animated Ulna
+										{ "i", 183113, 1 },	-- Flexing Phalanges
+									},
+								}),
+							},
+						}),
+						i(181272, {	-- Toenail
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+						}),
+						i(183101, {	-- Pattern: Shadowlace Cloak
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183095, {	-- Plans: Shadowsteel Pauldrons
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183104, {	-- Technique: Contract: The Undying Army
+							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311411,
+						}),
+						i(184741),	-- Apprentice Necromancer's Gloves
+						i(184738),	-- Chainmail of the March Warden
+						i(184737),	-- Chestplate of the March Warden
+						i(180456, {	-- Colors of the Undying Army
+							["cost"] = 2500000, -- 250g
+						}),
+						i(184740),	-- Fortified Jawcrackers
+						i(184744),	-- Gnarled Boneloop
+						i(183189, {	-- Illusion: Undying Spirit
+							["cost"] = 12500000, -- 1,250g
+						}),
+						i(183244, {	-- Memory of the Rattle of the Maw
+							["cost"] = 11000000, -- 1,100g
+						}),
+						i(184739),	-- Pallid Stitched Gloves
+						i(184742),	-- Rattling Bonefists
+						i(184736),	-- Robe of the March Warden
+						i(184745),	-- Tunic of the March Warden
+						n(-920, {	-- Covenant: Necrolord
+							-- These are only available to Necrolord covenant members
+							i(181807, {	-- Barbarous Osteowings
+								["cost"] = 5000000, -- 500g
+							}),
+							i(181808, {	-- Death Fetish
+								["cost"] = 5000000, -- 500g
+							}),
+						}),
+					},
+				}),
+				n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
+					["coord"] = { 46.6, 77.2, 1670 },
+					["g"] = {
+						i(183518, {	-- Court Sinrunner
+							["cost"] = 300000000, -- 30,000g
+						}),
+						i(179282, {	-- Court of Harvesters Tabard
+							["cost"] = 2500000, -- 250g
+						}),
+						i(180593, {	-- Court Messenger Scroll
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
+							["cost"] = 17650000, -- 1,765g
+						}),
+						i(183099, {	-- Design: Revitalizing Jewel Doublet
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183102, {	-- Technique: Contract: Court of Harvesters
+							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311412,
+						}),
+						i(183245, {	-- Memory of Norgannon
+							["cost"] = 11000000, -- 1,100g
+						}),
+						i(183839, {	-- Pattern: Heavy Desolate Hide
+							["cost"] = 17650000, -- 1,765g
+						}),
+						i(183865, {	-- Technique: Crafter's Mark III
+							["cost"] = 20000000, -- 2,000g
+						}),
+						i(183900, {	-- Sinvyr Tea Set
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(177665),	-- Spectral Hankerchief
+						i(184720),	-- Reflective Waistguard
+						i(184721),	-- Flourished Cummerbund
+						i(184722),	-- Ostentatious Buckle
+						i(184723),	-- Bedazzled Belt
+						i(184724),	-- Courtier's Pauldron
+						i(184725),	-- Courtier's Shoulderplate
+						i(184726),	-- Courtier's Mantle
+						i(184727),	-- Courtier's Shoulderguard
+						i(184755),	-- Reinforced High Collar
+						i(182207),	-- Illusion: Sinsedge
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(183708, {	-- Glittering Gold Sinstone Chain
+								["cost"] = { { "c", 1813, 3500 } },
+							}),
+						}),
+					},
+				}),
+				n(156690, {	-- Distributor Au'nagl
+					["coord"] = { 47.0, 23.6, 1670 },
+					["g"] = {
+						i(180136),	-- The Brokers Angle'r
+					},
+				}),
+				n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
+					["coord"] = { 47.0, 76.8, 1670 },
+					["g"] = {
+						i(180729, {	-- Duskflutter Ardenmoth (MOUNT)
+							["cost"] = 300000000,	-- 30,000g
+						}),
+						i(181309, {	-- Faewoven Pack
+							["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
+						}),
+						i(178336, {	-- Tabard of the Wild Hunt
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(180641, {	-- Floofa
+							["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
+						}),
+						i(182168, {	-- Crane Soul
+							["questID"] = 62424,
+							["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
+						}),
+						i(183093, {	-- Technique: Contract: The Wild Hunt
+							["cost"] = 17650000,	-- 1,765g
+							["recipeID"] = 311410,
+						}),
+						i(183096, {	-- Formula: Sacred Shard
+							["cost"] = 13500000,	-- 1,350g
+						}),
+						i(183100, {	-- Pattern: Heavy Desolate Armor Kit
+							["cost"] = 13500000,	-- 1,350g
+						}),
+						i(183106, {	-- Recipe: Eternal Cauldron
+							["cost"] = 17650000,	-- 1,765g
+						}),
+						i(183134, {	-- Illusion: Hunt's Favor
+							["cost"] = 12500000,	-- 1,250g
+						}),
+						i(183242, {	-- Memory of Eonar
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(184750),	-- Amber-Plated Legguards
+						i(184751),	-- Cycle-Tender's Pantaloons
+						i(184747),	-- Gamekeeper's Slippers
+						i(184749),	-- Gametender's Bramblewards
+						i(184746),	-- Gametender's Muckstompers
+						i(184748),	-- Gametender's Wading Boots
+						i(184754),	-- Glitterwing Scarf
+						i(184752),	-- Gormscale Leggings
+						i(184753),	-- Tree-Scaler's Britches
+					},
+				}),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, 1670 },
 					["g"] = {
-						i(183246, {	-- Memory of Sephuz
+                        i(183246, {	-- Memory of Sephuz
 							["cost"] = { { "c", 1792, 1500 } },
 						}),
 						i(183252, {	-- Memory of a Trapping Apparatus
@@ -65,212 +301,200 @@ _.Zones =
 							["cost"] = { { "c", 1792, 1500 } },
 							["classes"] = { DRUID },
 						}),
-						i(178469, {	-- Sinful Aspirant's Bow
-							["cost"] = { { "c", 1792, 3675 } },
+						i(175884, {	-- Sinful Aspirant's Badge of Ferocity
+							["cost"] = { { "c", 1792, 525 } },
 						}),
-						i(178472, {	-- Sinful Aspirant's Polearm
-							["cost"] = { { "c", 1792, 3675 } },
+						i(178298, {	-- Sinful Aspirant's Insignia of Alacrity
+							["cost"] = { { "c", 1792, 525 } },
 						}),
-						i(178473, {	-- Sinful Aspirant's Staff
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(178475, {	-- Sinful Aspirant's Greataxe
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(178668, {	-- Sinful Aspirant's Longspear
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(178671, {	-- Sinful Aspirant's Broadsword
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(183431, {	-- Sinful Aspirant's Magestaff
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(183432, {	-- Sinful Aspirant's Reaver
-							["cost"] = { { "c", 1792, 3675 } },
-						}),
-						i(175850, {	-- Sinful Aspirant's Plate Helm
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175852, {	-- Sinful Aspirant's Silk Robe
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175853, {	-- Sinful Aspirant's Plate Chestplate
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175854, {	-- Sinful Aspirant's Chain Vest
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175855, {	-- Sinful Aspirant's Leather Vest
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175864, {	-- Sinful Aspirant's Silk Hood
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175865, {	-- Sinful Aspirant's Chain Helm
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175866, {	-- Sinful Aspirant's Leather Helm
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175867, {	-- Sinful Aspirant's Plate Legguards
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175868, {	-- Sinful Aspirant's Silk Leggings
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175869, {	-- Sinful Aspirant's Chain Leggings
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(175870, {	-- Sinful Aspirant's Leather Breeches
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(178480, {	-- Sinful Aspirant's Keris
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(178481, {	-- Sinful Aspirant's Gavel
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(183434, {	-- Sinful Aspirant's Spellmace
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(183435, {	-- Sinful Aspirant's Crescent
-							["cost"] = { { "c", 1792, 2100 } },
-						}),
-						i(178468, {	-- Sinful Aspirant's Battleaxe
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(178470, {	-- Sinful Aspirant's Dagger
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(178471, {	-- Sinful Aspirant's Morningstar
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(178474, {	-- Sinful Aspirant's Sword
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(178479, {	-- Sinful Aspirant's Warglaive
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(178670, {	-- Sinful Aspirant's Blade
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(183433, {	-- Sinful Aspirant's Headcracker
-							["cost"] = { { "c", 1792, 1875 } },
-						}),
-						i(175856, {	-- Sinful Aspirant's Plate Warboots
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175857, {	-- Sinful Aspirant's Silk Treads
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175858, {	-- Sinful Aspirant's Chain Sabatons
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175859, {	-- Sinful Aspirant's Leather Boots
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175860, {	-- Sinful Aspirant's Leather Gloves
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175861, {	-- Sinful Aspirant's Plate Gauntlets
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175862, {	-- Sinful Aspirant's Silk Gloves
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175863, {	-- Sinful Aspirant's Chain Gauntlets
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175871, {	-- Sinful Aspirant's Leather Spaulders
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175872, {	-- Sinful Aspirant's Plate Shoulders
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175873, {	-- Sinful Aspirant's Silk Mantle
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175874, {	-- Sinful Aspirant's Chain Spaulders
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175875, {	-- Sinful Aspirant's Plate Girdle
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175876, {	-- Sinful Aspirant's Silk Cord
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175877, {	-- Sinful Aspirant's Chain Belt
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175878, {	-- Sinful Aspirant's Leather Belt
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175884, {	-- Sinful Aspirant's Accessory - Trinket
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(178298, {	-- Sinful Aspirant's Accessory - Trinket
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(178334, {	-- Sinful Aspirant's Accessory - Trinket
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(178476, {	-- Sinful Aspirant's Greatsword
-							["cost"] = { { "c", 1792, 1680 } },
-						}),
-						i(175851, {	-- Sinful Aspirant's Cloak
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175879, {	-- Sinful Aspirant's Ring
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175880, {	-- Sinful Aspirant's Silk Wristwraps
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175881, {	-- Sinful Aspirant's Plate Cuffs
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175882, {	-- Sinful Aspirant's Chain Wristwraps
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175883, {	-- Sinful Aspirant's Leather Wristwraps
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(175885, {	-- Sinful Aspirant's Necklace
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(178265, {	-- Sinful Aspirant's Drape
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(178293, {	-- Sinful Aspirant's Band
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(178299, {	-- Sinful Aspirant's Choker
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(178301, {	-- Sinful Aspirant's Cape
-							["cost"] = { { "c", 1792, 1260 } },
-						}),
-						i(178329, {	-- Sinful Aspirant's Signet
-							["cost"] = { { "c", 1792, 1260 } },
+						i(178334, {	-- Sinful Aspirant's Emblem
+							["cost"] = { { "c", 1792, 525 } },
 						}),
 						i(184052, {	-- Sinful Aspirant's Medallion
-							["cost"] = { { "c", 1792, 1260 } },
+							["cost"] = { { "c", 1792, 525 } },
 						}),
 						i(184053, {	-- Sinful Aspirant's Relentless Brooch
-							["cost"] = { { "c", 1792, 1260 } },
+							["cost"] = { { "c", 1792, 525 } },
 						}),
 						i(184054, {	-- Sinful Aspirant's Sigil of Adaptation
-							["cost"] = { { "c", 1792, 1260 } },
+							["cost"] = { { "c", 1792, 525 } },
 						}),
-						i(178477, {	-- Sinful Aspirant's Shield
-							["cost"] = { { "c", 1792, 1050 } },
+						i(178476, {	-- Sinful Aspirant's Greatsword
+							["cost"] = { { "c", 1792, 1750 } },
 						}),
-						i(178478, {	-- Sinful Aspirant's Weapon - Offhand
-							["cost"] = { { "c", 1792, 1050 } },
+						i(178473, {	-- Sinful Aspirant's Staff
+							["cost"] = { { "c", 1792, 1750 } },
 						}),
-						i(178490, {	-- Sinful Aspirant's Barrier
-							["cost"] = { { "c", 1792, 1050 } },
+						i(178668, {	-- Sinful Aspirant's Longspear
+							["cost"] = { { "c", 1792, 1750 } },
+						}),		
+						i(178472, {	-- Sinful Aspirant's Polearm
+							["cost"] = { { "c", 1792, 1750 } },
+						}),		
+						i(178664, {	-- Sinful Aspirant's Recurve
+							["cost"] = { { "c", 1792, 1750 } },
+						}),
+						i(178475, {	-- Sinful Aspirant's Greataxe
+							["cost"] = { { "c", 1792, 1750 } },
+						}),	
+						i(178481, {	-- Sinful Aspirant's Gavel
+							["cost"] = { { "c", 1792, 1325 } },
+						}),
+						i(183435, {	-- Sinful Aspirant's Crescent
+							["cost"] = { { "c", 1792, 1325 } },
+						}),
+						i(178479, {	-- Sinful Aspirant's Warglaive
+							["cost"] = { { "c", 1792, 875 } },
+						}),			
+						i(178670, {	-- Sinful Aspirant's Blade
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(178474, {	-- Sinful Aspirant's Sword
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(183433, {	-- Sinful Aspirant's Blackjack
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(178471, {	-- Sinful Aspirant's Mace
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(178470, {	-- Sinful Aspirant's Dagger
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(178663, {	-- Sinful Aspirant's Hatchet
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(178468, {	-- Sinful Aspirant's Battleaxe
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+					    i(178490, {	-- Sinful Aspirant's Barrier
+							["cost"] = { { "c", 1792, 425 } },
+                        }),
+						i(178478, {	-- Sinful Aspirant's Orb
+							["cost"] = { { "c", 1792, 425 } },
+						}),	
+						i(175850, {	-- Sinful Aspirant's Plate Helm
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175852, {	-- Sinful Aspirant's Silk Robe
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175853, {	-- Sinful Aspirant's Plate Chestplate
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175854, {	-- Sinful Aspirant's Chain Vest
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175855, {	-- Sinful Aspirant's Leather Vest
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175864, {	-- Sinful Aspirant's Silk Hood
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175865, {	-- Sinful Aspirant's Chain Helm
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175866, {	-- Sinful Aspirant's Leather Helm
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175867, {	-- Sinful Aspirant's Plate Legguards
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175868, {	-- Sinful Aspirant's Silk Leggings
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175869, {	-- Sinful Aspirant's Chain Leggings
+							["cost"] = { { "c", 1792, 875 } },
+						}),
+						i(175870, {	-- Sinful Aspirant's Leather Breeches
+							["cost"] = { { "c", 1792, 875 } },
+						}),							
+						i(175856, {	-- Sinful Aspirant's Plate Warboots
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175857, {	-- Sinful Aspirant's Silk Treads
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175858, {	-- Sinful Aspirant's Chain Sabatons
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175859, {	-- Sinful Aspirant's Leather Boots
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175860, {	-- Sinful Aspirant's Leather Gloves
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175861, {	-- Sinful Aspirant's Plate Gauntlets
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175862, {	-- Sinful Aspirant's Silk Gloves
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175863, {	-- Sinful Aspirant's Chain Gauntlets
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175871, {	-- Sinful Aspirant's Leather Spaulders
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175872, {	-- Sinful Aspirant's Plate Shoulders
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175873, {	-- Sinful Aspirant's Silk Mantle
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175874, {	-- Sinful Aspirant's Chain Spaulders
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175875, {	-- Sinful Aspirant's Plate Girdle
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175876, {	-- Sinful Aspirant's Silk Cord
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175877, {	-- Sinful Aspirant's Chain Belt
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175878, {	-- Sinful Aspirant's Leather Belt
+							["cost"] = { { "c", 1792, 700 } },
+						}),
+						i(175851, {	-- Sinful Aspirant's Cloak
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175879, {	-- Sinful Aspirant's Ring
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175880, {	-- Sinful Aspirant's Silk Wristwraps
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175881, {	-- Sinful Aspirant's Plate Cuffs
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175882, {	-- Sinful Aspirant's Chain Wristwraps
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175883, {	-- Sinful Aspirant's Leather Wristwraps
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(175885, {	-- Sinful Aspirant's Necklace
+							["cost"] = { { "c", 1792,525} },
+						}),
+						i(178265, {	-- Sinful Aspirant's Drape
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(178293, {	-- Sinful Aspirant's Band
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(178299, {	-- Sinful Aspirant's Choker
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(178301, {	-- Sinful Aspirant's Cape
+							["cost"] = { { "c", 1792, 525 } },
+						}),
+						i(178329, {	-- Sinful Aspirant's Signet
+							["cost"] = { { "c", 1792, 525  } },
+						}),		
+						i(178335, {	-- Sinful Aspirant's Pendant
+							["cost"] = { { "c", 1792, 525 } },
 						}),
 					},
 				}),

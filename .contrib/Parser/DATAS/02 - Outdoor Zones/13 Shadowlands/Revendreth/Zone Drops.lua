@@ -23,6 +23,7 @@ _.Zones =
 				i(176989),	-- Bloodskin Wristwraps
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
+				i(180862),	-- Bulletslinger
 				i(179319),	-- Caged Cudgel
 				i(180602, {	-- Crimson Dredwing Pup
 					-- TODO: possibly add other bats?
@@ -46,35 +47,12 @@ _.Zones =
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
 				i(182690),	-- Gilded Crusader's Morningstar
-				i(173720, {	-- Glittering Primrose Necklace
-					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
-					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-				}),
+				i(177802),	-- Hopebreaker Carbine
 				i(177813),	-- Hopebreaker's Badge
-				i(183420, {	-- Hopebreaker's Right Boot
-					i(183418, {	-- Hopebreaker's Boots
-						["cost"] = {
-							{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
-							{ "i", 183420, 1 },	-- Hopebreaker's Right Boot
-						},
-					}),
-				}),
+				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
-				i(173721, {	-- Love and Terror
-					["questID"] = 58081,
-					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-				}),
-				i(183417, {	-- Mail Courier's Right Runner
-					i(182719, {	-- Mail Courier's Runners
-						["cost"] = {
-							{ "i", 183416, 1 },	-- Mail Courier's Left Runner
-							{ "i", 183417, 1 },	-- Mail Courier's Right Runner
-						},
-					}),
-				}),
+				i(183417),	-- Mail Courier's Right Runner
 				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
 				i(177789),	-- Night Guardian Breastplate
@@ -84,16 +62,24 @@ _.Zones =
 				i(177788),	-- Night Guardian Helm
 				i(177792),	-- Night Guardian Legguards
 				i(177793),	-- Night Guardian Pauldrons
+				i(173719, {	-- Pristine Dredbat Fang
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+					["questID"] = 58079,	-- Favor: Pristine Dredbat Fang
+					["isDaily"] = true,
+					["crs"] = {
+						169154,	-- Famished Fangling
+						161206,	-- Fanged Dredbat
+						163893,	-- Fanged Dredbat
+						161207,	-- Fangling
+						156077,	-- Fiendish Terrorwing
+						165290,	-- Harika the Horrid
+						158976,	-- Shrieking Evedweller
+						156395,	-- Starving Dredbat
+					},
+				}),
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
-				i(183430, {	-- Researcher's Right Slipper
-					i(183425, {	-- Researcher's Slippers
-						["cost"] = {
-							{ "i", 183427, 1 },	-- Researcher's Left Slipper
-							{ "i", 183430, 1 },	-- Researcher's Right Slipper
-						},
-					}),
-				}),
+				i(183430),	-- Researcher's Right Slipper
 				i(177804),	-- Ritualist Dagger
 				i(177787),	-- Savage Bonemauler Bracers
 				i(177780),	-- Savage Bonemauler Chainmail
@@ -104,36 +90,10 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
-				i(173707, {	-- Soul Hunter's Blade
-					["questID"] = 58070,
-					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-				}),
-				i(183423, {	-- Stone Legion Right Sabaton
-					i(183421, {	-- Stone Legion Sabatons
-						["cost"] = {
-							{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
-							{ "i", 183423, 1 },	-- Stone Legion Right Sabaton
-						},
-					}),
-				}),
+				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
-				i(173709, {	-- Vial of Dredger Muck
-					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
-					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
-					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["crs"] = {
-						160846,	-- Beleaguered Excavator
-						161490,	-- Blackbale Flunky
-						161258,	-- Chalice Dredger
-						176118,	-- Confirmed Dredger
-						170953,	-- Head Pugilist
-						158193,	-- Manor Servant
-						159495,	-- Mire Dredger
-					},
-				}),
+				i(180487),	-- Stonefist's Knuckle Cover
 				i(179334),	-- Wingblade Staff
 			}),
 		}),

@@ -23,14 +23,6 @@ _.Zones =
 				ach(14272, {	-- Best Bud With Benefits
 					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
 				}),
-				ach(14277, {	-- The Accuser's Avowed
-					ach(14274),		-- Absolution For All
-					ach(14273, {	-- Crypt Kicker
-						["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
-					}),
-					ach(14276),		-- It's Always Sinny in Revendreth
-					title(423),		-- Cryptkeeper
-				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven
@@ -65,7 +57,7 @@ _.Zones =
 						["sourceQuests"] = { 57481 },	-- Running a Muck
 					}),
 					crit(4, {	-- The Final Atonement
-						["sourceQuests"] = { 60487 },	-- It Used to Be Quiet Here
+						["sourceQuests"] = { 58092 },	-- Halls of Atonement: Your Absolution
 					}),
 					crit(5, {	-- Mirror Maker of the Master
 						["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking

@@ -9,15 +9,91 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(182728, {	-- A Crate of Sinvyr Ore
+						["questID"] = 62184,	-- A Crate of Sinvyr Ore
+						["isDaily"] = true,
+					}),
 					i(182727, {	-- A Leaking Package
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
+						["isDaily"] = true,
+					}),
+					i(173718, {	-- Bottle of Redelav Wine
+						["questID"] = 58078,	-- Favor: Bottle of Redelav Wine
+						["isDaily"] = true,
+					}),
+					i(173720, {	-- Glittering Primrose Necklace
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
+						["isDaily"] = true,
+					}),
+					i(173712, {	-- Ledger of Souls
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58074,
+						["isDaily"] = true,
+					}),
+					i(173721, {	-- Love and Terror
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58081,
+						["isDaily"] = true,
 					}),
 					i(182726, {	-- Nadja's Letter
 						["questID"] = 62182,	-- A Letter From Nadja
+						["isDaily"] = true,
+					}),
+					i(173717, {	-- Perfected Hand Mirror
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58077,	-- Favor: Perfected Hand Mirror
+						["isDaily"] = true,
+					}),
+					i(173710, {	-- Petrified Stonefiend
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58072,	-- Favor: Petrified Stonefiend
+						["isDaily"] = true,
+					}),
+					i(173711, {	-- Portrait of the Sire
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58073,	-- Favor: Portrait of the Sire
+						["isDaily"] = true,
+					}),
+					i(180453, {	-- She Had a Stone Heart
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 60889,	-- Favor: She Had a Stone Heart
+						["isDaily"] = true,
+					}),
+					i(173707, {	-- Soul Hunter's Blade
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58070,
+						["isDaily"] = true,
+					}),
+					i(173705, {	-- The Venthyr Diaries
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58069,	-- Favor: The Venthyr Dairies
+						["isDaily"] = true,
+					}),
+					i(173709, {	-- Vial of Dredger Muck
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
+						["questID"] = 58071,	-- Favor: Vial of Dredger Muck
+						["isDaily"] = true,
+						["crs"] = {
+							160846,	-- Beleaguered Excavator
+							161490,	-- Blackbale Flunky
+							161258,	-- Chalice Dredger
+							176118,	-- Confirmed Dredger
+							170953,	-- Head Pugilist
+							158193,	-- Manor Servant
+							159495,	-- Mire Dredger
+						},
 					}),
 					i(181208),	-- Anima-Infused Muck
+					i(181224),	-- Avowed Arcanist's Staff
+					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
+					i(180397),	-- Crown of Decadent Desires
+					i(181215),	-- Darkwing Assassin's Blade
+					i(181222),	-- Darkwing Rebel's Halberd
 					i(181191),	-- Devourer Wrangler's Coif
+					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
@@ -27,6 +103,9 @@ _.Zones =
 					i(181176),	-- Sincollector's Sandals
 					i(181206),	-- Sincollector's Shoulderpads
 					i(181175),	-- Sincollector's Vestment
+					i(181181),	-- Soul Cuffs
+					i(181177),	-- Soul-Siphoner's Handwraps
+					i(181212),	-- Soulcaster's Mace
 					i(181211),	-- Souldrinker's Kris
 					i(181187),	-- Soulstalker Bindings
 					i(181185),	-- Soulstalker Breeches

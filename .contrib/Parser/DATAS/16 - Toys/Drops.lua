@@ -95,7 +95,7 @@ _.Toys =
 		i(169303),		-- Hell-Bent Bracers
 		i(86594),		-- Helpful Wikky's Whistle
 		i(166790),		-- Highborne Memento
-		--i(182655),		-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+	--	i(182655),		-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		i(86593),		-- Hozen Beach Ball
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
@@ -117,6 +117,7 @@ _.Toys =
 		i(164374),		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
 		i(167931),		-- Mechagonian Sawblades
+		i(184413),		-- Mnemonic Attunement Pane
 		i(153126),		-- Micro-Artillery Controller
 		i(163775),		-- Molok Morion
 		i(113670),		-- Mournful Moan of Murmur
@@ -144,6 +145,7 @@ _.Toys =
 		}),
 		i(127394),		-- Podling Camouflage
 		i(153181),		-- Red Conservatory Scroll
+		i(184476),		-- Regenerating Slime Vial
 		i(104294),		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
 		i(174928),		-- Rotten Apple

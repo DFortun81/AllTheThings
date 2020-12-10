@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(58062, {	-- A Very Special Guest
 					["sourceQuests"] = { 58060 },	-- The Night Market
-					["description"] = "Unlocks the Black Market Auction House.",
+					["description"] = "Unlocks the Black Market Auction House and item drops for Favor quests.",
 					["provider"] = { "n", 160091 },	-- Ta'ruca
 					["coord"] = { 51.0, 78.6, 1525 },
 				}),
@@ -67,6 +67,14 @@ _.Zones =
 					["g"] = {
 						i(175765),	-- Dredwing Shroud
 					},
+				}),
+				q(57919, {	-- An Abuse of Power
+					["sourceQuests"] = {
+						58093,	-- Our Forgotten Purpose (neutral)
+						57918,	-- The Absolution of Souls (Venthyr)
+					},
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.7, 40.3, 1525 },
 				}),
 				q(57461, {	-- An Uneventful Stroll
 					["sourceQuests"] = { 57460 },	-- Tubbins's Tea
@@ -97,6 +105,17 @@ _.Zones =
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, 1525 },
+				}),
+				q(57925, {	-- Archivist Fane
+					["sourceQuests"] = { 57924 },	-- Ritual of Judgment
+					["provider"] = { "n", 160294 },	-- The Accuser
+					["coord"] = { 74.2, 49.6, 1525 },
+				}),
+				q(57928, {	-- Atonement Crypt Key
+				--	using a description instead of ["crs"] because i think the quest showing up in mobs' tooltips prior to its availability would be confusing/potentially cause people to waste time killing the mobs when they can't get the item/quest
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+					["provider"] = { "i", 172957 },	-- Atonement Crypt Key
 				}),
 				q(58936, {	-- Beast Control
 				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
@@ -206,7 +225,7 @@ _.Zones =
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, 1525 },
 				}),
-				q(58092,{	-- Halls of Atonement: Your Absolution
+				q(58092, {	-- Halls of Atonement: Your Absolution
 					["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, 1525 },
@@ -228,6 +247,14 @@ _.Zones =
 						i(175432),	-- Soul Hunter's Leggings
 						i(175430),	-- Stoneforged Legguards
 					},
+				}),
+				q(57929, {	-- Hunting an Inquisitor
+					["sourceQuests"] = {	-- didn't require turning in "Atonement Crypt Key"
+						60128,	-- Ready to Serve
+						57926,	-- The Sinstone Archive
+					},
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
 				}),
 				q(60514, {	-- Hunting Trophies
 					["sourceQuests"] = { 59014 },	-- King of the Hill
@@ -339,6 +366,11 @@ _.Zones =
 						i(177657),	-- Overflowing Ember Mirror
 					},
 				}),
+				q(60127, {	-- Missing Stone Fiend
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
+				}),
 				q(57571, {	-- Moving Mirrors
 					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
 					["provider"] = { "n", 158205 },	-- Laurent
@@ -377,9 +409,9 @@ _.Zones =
 					["coord"] = { 65.3, 66.2, 1525 },
 				}),
 				q(58093, {	-- Our Forgotten Purpose
-				--	there is also a Venthyr-only version of this breadcrumb, #57918, "The Absolution of Souls."  that version references "returning" to Halls of Atonement, but this version was available before i had stepped foot in any SL dungeon
 				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, 1525 },
 				}),
@@ -387,6 +419,11 @@ _.Zones =
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
 					["provider"] = { "n", 158615 },	-- Vorpalia
 					["coord"] = { 42.8, 43.5, 1525 },
+				}),
+				q(60128, {	-- Ready to Serve
+					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, 1525 },
 				}),
 				q(60177, {	-- Reason for the Treason
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
@@ -415,10 +452,29 @@ _.Zones =
 						i(175438),	-- Stoneforged Girdle
 					},
 				}),
+				q(57927, {	-- Rebuilding Temel
+					["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, 1525 },
+				}),
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(57923, {	-- Ritual of Absolution
+					["sourceQuests"] = {
+						57922,	-- The Proper Punishment
+						57920,	-- The Proper Souls
+						57921,	-- The Proper Tools
+					},
+					["provider"] = { "n", 160139 },	-- The Accuser
+					["coord"] = { 70.7, 46.8, 1525 },
+				}),
+				q(57924, {	-- Ritual of Judgment
+					["sourceQuests"] = { 57923 },	-- Ritual of Absolution
+					["provider"] = { "n", 160163 },	-- The Accuser
+					["coord"] = { 71.9, 46.3, 1525 },
 				}),
 				q(60468, {	-- Rubble Rummaging
 					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
@@ -601,10 +657,30 @@ _.Zones =
 						i(175715),	-- Gargon Eye Ring
 					},
 				}),
+				q(57922, {	-- The Proper Punishment
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
+				}),
+				q(57920, {	-- The Proper Souls
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
+				}),
+				q(57921, {	-- The Proper Tools
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
+				}),
 				q(57026, {	-- The Sinstone
 					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 					["provider"] = { "n", 155537 },	-- Rendle
 					["coord"] = { 69.9, 82.6, 1525 },
+				}),
+				q(57926, {	-- The Sinstone Archive
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
 				}),
 				q(57174, {	-- The Stoneborn
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
@@ -779,7 +855,7 @@ _.Zones =
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 				}),
 				q(62781, {	-- Ash You Like It (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -787,7 +863,7 @@ _.Zones =
 					},
 				}),
 				q(62784, {	-- Charlatans (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -797,7 +873,7 @@ _.Zones =
 				q(59211, {	-- Forgotten Village
 				}),
 				q(62780, {	-- Parasites of Reality (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -805,7 +881,7 @@ _.Zones =
 					},
 				}),
 				q(62783, {	-- Stalking Fear (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -813,7 +889,7 @@ _.Zones =
 					},
 				}),
 				q(62782, {	-- The Banewood (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items

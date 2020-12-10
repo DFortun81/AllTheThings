@@ -9,6 +9,7 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(180142),	-- Deadstone Hatchet
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
 					i(181433),	-- Duskwarder Gavel
@@ -32,8 +33,10 @@ _.Zones =
 					i(181412),	-- Gormhusk Hood
 					i(181416),	-- Gormhusk Kilt
 					i(179549),	-- Nightwillow Cudgel
+					i(181418),	-- Runetender Shoulderguards
+					i(181402),	-- Runetender Tunic
 					i(175728),	-- Soulsifter Root
-					i(181205),	-- Soulstalker Epaulets (saw it on mission table)
+					i(181205),	-- Soulstalker Epaulets (seen on mission table)
 					i(179594),	-- Witherscorn Guise
 				},
 			}),

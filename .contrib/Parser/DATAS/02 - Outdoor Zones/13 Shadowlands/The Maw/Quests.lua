@@ -21,11 +21,11 @@ _.Zones =
 					},
 				}),
 				q(61874, {	-- A Chilling Summons (H)
+					["races"] = HORDE_ONLY,
 					["maps"] = {
 						1681,	-- Icecrown Citadel
 						1682,	-- Icecrown Citadel
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(59960, {	-- A Cooling Trail
 					["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
@@ -60,33 +60,33 @@ _.Zones =
 				}),
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
-					["coord"] = { 22.1, 48.0, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 22.1, 48.0, 1543 },
 				}),
 				q(57691, {	-- A Royal Key
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 				}),
+				q(63050, {	-- Acquisition: Blazing Ingots
+					["provider"] = { "o", 364932 },	-- Blazing Ingot
+					["isDaily"] = true,
+					["coord"] = { 39.0, 39.9, 1543 },
+				}),
+				q(63031, {	-- Acquisition: Crystallized Stygia
+					["provider"] = { "o", 364899 },	-- Crystallized Stygia
+					["isDaily"] = true,
+					["coord"] = { 21.2, 34.1, 1543 },
+				}),
+				q(63047, {	-- Acquisition: Runeforged Shackles
+					["provider"] = { "o", 364926 },	-- Runeforged Shackles
+					["isDaily"] = true,
+					["coord"] = { 25.6, 24.2, 1648 },
+				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
-				}),
-				q(63039, {	-- A Monument to Vengeance
-					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
-					["coord"] = { 22.1, 48.0, 1543 },
-					["isDaily"] = true,
-				}),
-				q(63031, {	-- Acquisition: Crystallized Stygia
-					["provider"] = { "o", 364899 },	-- Crystallized Stygia
-					-- ["coord"] = { 25.6, 24.2, 1648 },
-					["isDaily"] = true,
-				}),
-				q(63047, {	-- Acquisition: Runeforged Shackles
-					["provider"] = { "o", 364926 },	-- Runeforged Shackles
-					["coord"] = { 25.6, 24.2, 1648 },
-					["isDaily"] = true,
 				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
@@ -101,13 +101,15 @@ _.Zones =
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
 				}),
+				-- TODO: bonus objective is the same ID as the Rare kill daily?
 				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
+					["isDaily"] = true,
 					["coord"] = { 27.6, 28.2, 1543 },
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
@@ -116,8 +118,8 @@ _.Zones =
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {
@@ -126,10 +128,15 @@ _.Zones =
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
 				}),
+				q(63179, {	-- Drowned and Torn Asunder
+					["provider"] = { "n", 176144 },	-- Disciple Kimonas
+					["isDaily"] = true,
+					["coord"] = { 38.8, 23.6, 1543 },
+				}),
 				q(60622, {	-- Eye of the Scryer
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(62932, {	-- Explore Torghast
 					["sourceQuests"] = { 61099 },	-- The Search for Baine
@@ -149,10 +156,24 @@ _.Zones =
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 21.5, 41.7, 1648 },
 				}),
+				q(63045, {	-- Feed Your Soul
+					-- ["sourceQuests"] = {
+						-- TODO: Perdition's Hold Daily... requires some quest to unlock... rules #5 ?
+					-- },
+					["isDaily"] = true,
+					["provider"] = { "n", 175866 },	-- Vengeful Soul
+					["coord"] = { 25.2, 66.6, 1648 },
+				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },
+				}),
+				q(62214, {	-- Forces of Perdition
+					-- Think this requires "Tentative" with Ve'nari
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {
@@ -164,8 +185,21 @@ _.Zones =
 				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(63038, {	-- Guaranteed Delivery
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["provider"] = { "n", 175797 },	-- Deceased Broker
+					["isDaily"] = true,
+					["coord"] = { 30.7, 58.3, 1543 },
+				}),
+				q(63040, {	-- Guaranteed Delivery
+				--	TODO: add literally everything
+				--	["sourceQuests"] = {  },	-- 
+				--	["provider"] = { "n",  },	-- 
+					["isDaily"] = true,
+				--	["coord"] = { , , 1543 },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -195,6 +229,11 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+				}),
+				q(63100, {	-- Misery's Company
+					["provider"] = { "n", 176069 },	-- Hopeless Vessel
+					["isDaily"] = true,
+					["coord"] = { 24.6, 45.2, 1648 },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
@@ -226,6 +265,12 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
+				q(60284, {	-- Rule 5: Be Audacious
+					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
+					["description"] = "Requires Tentative reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
 						62905,	-- Back into the Darkness (Venthyr)
@@ -242,8 +287,8 @@ _.Zones =
 				}),
 				q(63206, {	-- Soulless Husks
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
@@ -255,12 +300,13 @@ _.Zones =
 					["coord"] = { 42.3, 42.1, 1648 },
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
+					["isDaily"] = true,
 					["coord"] = { 37.2, 44.6, 1543 },
 				}),
 				q(63043, {	-- Sundered Souls
 					["provider"] = { "n", 175813 },	-- Trapped Soul
-					["coord"] = { 28.2, 14.6, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 28.2, 14.6, 1543 },
 				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
@@ -275,6 +321,17 @@ _.Zones =
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, 1543 },
+				}),
+				q(60622, {	-- The Jailer's Share
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(61079, {	-- The Jailer's Share
+				--	["sourceQuests"] = {  },	-- no clue
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isDaily"] = true,
+					["coord"] = { 46.8, 41.6, 1543 },
 				}),
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
@@ -320,14 +377,20 @@ _.Zones =
 				}),
 				q(63062, {	-- Torment for the Taking
 					-- TODO: fill in provider and coord fields
-					--["provider"] = 
-					--["coord"] = 
+				--	["provider"] = 
 					["isDaily"] = true,
+				--	["coord"] = 
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, 1648 },
+				}),
+				q(61765, {	-- Words of Warding
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -398,36 +461,36 @@ _.Zones =
 					-- ["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
 				-- }),
 				q(62838, {	-- Soulful Recovery
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
-					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 				}),
 				q(60134, {	-- A Tauren in Trade
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 				}),
 
 				-- Dailies
 				q(61088, {	-- Dust to Dust
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
+					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(61103, {	-- Thin Their Numbers
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
+					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well
 				}),
 				-- Bonus Objectives ?? Rares or WQ
 				q(59441, {	-- The Soulsmith
-					["coord"] = { 36.2, 37.4, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 36.2, 37.4, 1543 },
 				}),
 			}),
 		}),

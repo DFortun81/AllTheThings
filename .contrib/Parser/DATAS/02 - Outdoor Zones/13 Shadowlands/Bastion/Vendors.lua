@@ -7,15 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(VENDORS, {
-				n(174937, {	-- Adjutant Galos <Renown Quartermaster>
-					i(180764, {	-- Phalynx of Purity
-						["cost"] = { { "c", 1813, 2500 } },
-					}),
-					i(180765, {	-- Eternal Phalynx of Purity
-						["cost"] = { { "c", 1813, 100 } },
-					}),
-				}),
-				n(160470, {	-- Adjutant Nikos <Quartermaster>
+				n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
 					["coord"] = { 52.2, 47.0, 1533 },
 					["g"] = {
 						i(183740, {	-- Gilded Prowler
@@ -32,9 +24,6 @@ _.Zones =
 						i(183243, {	-- Memory of the Arbiter's Judgment
 							["cost"] = 11000000, -- 1,100g
 							["modID"] = 14,
-						}),
-						i(183870, {	-- Recipe: Crafter's Mark II
-							["cost"] = 20000000, -- 2,000g
 						}),
 						i(180857, {	-- Goldenpaw Kit
 							["cost"] = { { "i", 163036, 250 } },

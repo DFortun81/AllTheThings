@@ -83,11 +83,6 @@ _.Achievements =
 				crit(6),		-- Ti'or
 				crit(7),		-- Sabriel the Bonecleaver
 			}),
-			ach(14767, {	-- Count Your Blessings
-				crit(1),		-- Purified Blessing of Grace
-				crit(2),		-- Purified Blessing of Power
-				crit(3),		-- Purified Blessing of Fortitude
-			}),
 			ach(14763, {	-- Crypt Couture
 				crit(1),		-- Ashen Ink
 				crit(2),		-- Jagged Bonesaw
@@ -371,6 +366,11 @@ _.Achievements =
 					crit(15),		-- Gift of Devos
 				}),
 			}),
+			ach(14767, {	-- Count Your Blessings
+				crit(1), 		-- Purified Blessing of Grace
+				crit(2), 		-- Purified Blessing of Power
+				crit(3), 		-- Purified Blessing of Fortitude
+			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1),		-- A Meandering Story
 				crit(2),		-- A Wandering Tale
@@ -482,17 +482,17 @@ _.Achievements =
 				crit(12),		-- Creeper
 			}),
 			ach(14791),		-- Toss a Seed to Your Hunter...
-			ach(14768, {	-- What is that Melody?
-				crit(1),		-- Hymn of Purity
-				crit(2),		-- Hymn of Courage
-				crit(3),		-- Hymn of Humility
-				crit(4),		-- Hymn of Wisdom
-			}),
 			ach(14770, {	-- What We Ride in the Shadows
 				crit(1),		-- Old Gate
 				crit(2),		-- Hole in the Wall
 				crit(3),		-- Dominance Gate Battlements
 				crit(4),		-- Darkhaven
+			}),
+			ach(14768, {	-- What is that Melody?
+				crit(1),		-- Hymn of Purity
+				crit(2),		-- Hymn of Courage
+				crit(3),		-- Hymn of Humility
+				crit(4),		-- Hymn of Wisdom
 			}),
 			ach(14742),		-- Who Sent You?
 			ach(14779, {	-- Wild Hunting

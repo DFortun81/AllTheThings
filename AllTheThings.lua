@@ -75,7 +75,7 @@ local function Push(self, name, method)
 	if not self.__stack then
 		self.__stack = {};
 	end
-	--print("Push->" .. name);
+	-- print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
 	self:SetScript("OnUpdate", OnUpdate);
 end
@@ -1230,6 +1230,12 @@ local PrintQuestInfo = function(questID, new, info)
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
 			end
+			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
+			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet  .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. 
+			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+			if searchResults[1].parent and searchResults[1].parent.parent.text == "Hidden Quest Triggers" then
+				questID = questID .. " [HQT]";
+			end
 		end
 		if new then
 			print("Quest accepted: #" .. questID .. (info or ""));
@@ -1676,8 +1682,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				(not group.itemID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
-				-- it is not a 'saved' thing for this character
-				(not group.saved or group.saved ~= 1))
+				-- it is not a 'saved' thing for this character or account mode is active
+				(not group.saved or group.saved ~= 1 or app.Settings:Get("AccountMode")))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
@@ -2337,80 +2343,96 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local progress = 0;
 	for i,group in ipairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		if app.RecursiveGroupRequirementsFilter(group) then
-			local right = nil;
-			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
-				total = total + group.total;
-				progress = progress + (group.progress or 0);
-				if app.GroupVisibilityFilter(group) then
-					right = GetProgressColorText(group.progress, group.total);
-				-- the group itself may be a trackable thing
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+		-- dont list itself under Contains
+		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
+			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
+			if app.RecursiveGroupRequirementsFilter(group) then
+				local right = nil;
+				if group.total and (group.collectible and group.total > 1 or group.total > 0) then
+					total = total + group.total;
+					progress = progress + (group.progress or 0);
+					if app.GroupVisibilityFilter(group) then
+						right = GetProgressColorText(group.progress, group.total);
+					-- the group itself may be a trackable thing
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
 						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
 					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
+				else
+					if group.collectible then
+						total = total + 1;
+						if group.collected then
+							progress = progress + 1;
+							if app.CollectedItemVisibilityFilter(group) then
+								right = GetCollectionIcon(group.collected);
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
+						end
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
+						end
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
+					end
 				end
-			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
-				if group.collectible then
-					total = total + 1;
-					if group.collected then
-						progress = progress + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							right = GetCollectionIcon(group.collected);
-						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
-					end
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
-						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
-					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
-				end
-			end
 
-			-- If there's progress to display, then let's summarize a bit better.
-			if right then
-				-- Insert into the display.
-				local o = { prefix = indent, group = group, right = right };
-				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
-				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
-				tinsert(entries, o);
+				-- If there's progress to display, then let's summarize a bit better.
+				if right then
+					-- Insert into the display.
+					local o = { prefix = indent, group = group, right = right };
+					-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
+					-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
+					if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+					tinsert(entries, o);
 
-				-- Only go down one more level.
-				if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
-					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
-				-- else
-					-- print("skipped sub-contains");
+					-- Only go down one more level.
+					if layer < 3
+						-- if there are sub groups
+						and group.g and #group.g > 0
+						-- not for achievements unless tied to an NPC
+						and (not group.achievementID or paramA == "creatureID")
+						-- not for things with a parent unless the parent has no difficultyID
+						and (not group.parent or not group.parent.difficultyID)
+						-- not for group which contains an artifact 
+						and not group.g[1].artifactID
+						-- not for heirlooms
+						and not group.filterID == 109
+						-- not for a group which is symbolized
+						and not group.symbolized 
+						then
+						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
+					-- else
+						-- print("skipped sub-contains");
+					end
+				-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
+				-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
+				-- elseif group.questID and not group.isBreadcrumb then
+					-- -- print("check if is a sourceQuest for",group.questID);
+					-- local search = app.SearchForField("sourceQuests", group.questID);
+					-- if search then
+						-- -- for i,g in ipairs(search) do
+							-- -- print("has sq",RecurseGroupParent(g));
+						-- -- end
+						-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
+					-- end
 				end
-			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
-			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
-			-- elseif group.questID and not group.isBreadcrumb then
-				-- -- print("check if is a sourceQuest for",group.questID);
-				-- local search = app.SearchForField("sourceQuests", group.questID);
-				-- if search then
-					-- -- for i,g in ipairs(search) do
-						-- -- print("has sq",RecurseGroupParent(g));
-					-- -- end
-					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
-				-- end
+				-- print("total",tostring(total),"progress",tostring(progress));
+			-- else
+				-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 			end
-			-- print("total",tostring(total),"progress",tostring(progress));
-		-- else
-			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
 	end
 	if (total > 0) then
@@ -3112,18 +3134,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
 			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-			-- local uniques, dupes = {}, {};
-			-- for i,item in ipairs(info) do
-				-- if not item.left then
-					-- tinsert(uniques, item);
-				-- elseif not dupes[item.left] then
-					-- dupes[item.left] = true;
-					-- tinsert(uniques, item);
-				-- end
-			-- end
-
-			group.info = info;
+			-- putting this back due to descriptions, ugh
+			local uniques, dupes = {}, {};
 			for i,item in ipairs(info) do
+				if not item.left then
+					tinsert(uniques, item);
+				elseif not dupes[item.left] then
+					dupes[item.left] = true;
+					tinsert(uniques, item);
+				end
+			end
+
+			group.info = uniques;
+			for i,item in ipairs(uniques) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
@@ -3532,15 +3555,20 @@ fieldConverters = {
 	end,
 };
 CacheFields = function(group)
-	local n = 0;
-	local clone = {};
+	-- local n = 0;
+	-- local clone = {};
+	-- for key,value in pairs(group) do
+	-- 	n = n + 1;
+	-- 	rawset(clone, n, key);
+	-- end
+	-- for i=1,n,1 do
+	-- 	_cache = rawget(fieldConverters, rawget(clone, i));
+	-- 	if _cache then _cache(group, rawget(group, rawget(clone, i))); end
+	-- end
+	-- iteration only moves across raw values
 	for key,value in pairs(group) do
-		n = n + 1
-		rawset(clone, n, key);
-	end
-	for i=1,n,1 do
-		_cache = rawget(fieldConverters, rawget(clone, i));
-		if _cache then _cache(group, rawget(group, rawget(clone, i))); end
+		_cache = rawget(fieldConverters, key);
+		if _cache then _cache(group, value); end
 	end
 end
 end)();
@@ -3605,10 +3633,12 @@ end
 -- provided field type and key id
 -- Meaning, when using this function, the results must be filtered to ensure the expected group(s) are being utilized
 -- i.e. "questID" & 55780 will return groups for 55780 AND 55781 (which is an altquest of 55780)
-local function SearchForField(field, id)
+local function SearchForField(field, id, onlyCached)
 	if field and id then
 		_cache = rawget(fieldCache, field);
 		if _cache then return rawget(_cache, id), field, id; end
+		if onlyCached then return nil, field, id; end
+		-- print("Recursive Search!",field,id);
 		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
 	end
 end
@@ -3962,7 +3992,7 @@ local function PopulateQuestObject(questObject)
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
-			cache = SearchForField("creatureID", qg);
+			cache = SearchForField("creatureID", qg, true);
 			if cache then
 				for _,data in ipairs(cache) do
 					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
@@ -4627,6 +4657,10 @@ end
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
+		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
+		if group.encounterID and group.collectionText then
+			self:AddDoubleLine("Progress", group.collectionText);
+		end
 		-- If there was info text generated for this search result, then display that first.
 		if group.info then
 			local left, right;
@@ -4652,7 +4686,7 @@ local function AttachTooltipRawSearchResults(self, group)
 		end
 
 		-- If the user has Show Collection Progress turned on.
-		if group.collectionText and self:NumLines() > 0 then
+		if group.collectionText and not group.encounterID and self:NumLines() > 0 then
 			local rightSide = _G[self:GetName() .. "TextRight1"];
 			if rightSide then
 				if self.CloseButton then
@@ -5809,11 +5843,10 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
 		elseif key == "saved" or key == "collected" then
-			if app.AccountWideReputations then
-				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			end
+			-- this character is exalted
+			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			-- another character exalted with account-wide
+			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
 				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
@@ -8781,11 +8814,11 @@ UpdateGroup = function(parent, group, defaultVisibility)
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
-					group.visible = false;
+					group.visible = defaultVisibility;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				group.visible = defaultVisibility;
 			end
 		else
 			-- If the 'can equip' filter says true
@@ -10067,6 +10100,7 @@ local function SetRowData(self, row, data)
 	end
 end
 local function Refresh(self)
+	if not app.IsReady then return; end
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -10152,10 +10186,8 @@ local function IsSelfOrChild(self, focus)
 	return focus and (self == focus or IsSelfOrChild(self, focus:GetParent()));
 end
 local function StopMovingOrSizing(self)
-	if self.isMoving then
-		self:StopMovingOrSizing();
-		self.isMoving = false;
-	end
+	self:StopMovingOrSizing();
+	self.isMoving = nil;
 end
 local function StartMovingOrSizing(self, fromChild)
 	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
@@ -10169,20 +10201,22 @@ local function StartMovingOrSizing(self, fromChild)
 			self:StartSizing();
 			Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
+					-- keeps the rows within the window fitting to the window as it resizes
 					self:Refresh();
 					return true;
 				end
 			end);
 		elseif self:IsMovable() then
 			self:StartMoving();
-			Push(app, "StartMovingOrSizing (Moving)", function()
-				-- This fixes a bug where the window will get stuck on the mouse until you reload.
-				if IsSelfOrChild(self, GetMouseFocus()) then
-					return true;
-				else
-					StopMovingOrSizing(self);
-				end
-			end);
+			-- never encountered this bug without this added logic...is there some specific way to trigger it?
+			-- Push(app, "StartMovingOrSizing (Moving)", function()
+			-- 	-- This fixes a bug where the window will get stuck on the mouse until you reload.
+			-- 	if IsSelfOrChild(self, GetMouseFocus()) then
+			-- 		return true;
+			-- 	else
+			-- 		StopMovingOrSizing(self);
+			-- 	end
+			-- end);
 		end
 	end
 end
@@ -10397,12 +10431,13 @@ local function RowOnClick(self, button)
 						RowOnLeave(self);
 						RowOnEnter(self);
 					end
+				else
+					self:SetScript("OnMouseUp", function(self)
+						self:SetScript("OnMouseUp", nil);
+						StopMovingOrSizing(owner);
+					end);
+					StartMovingOrSizing(owner, true);
 				end
-				self:SetScript("OnMouseUp", function(self)
-					self:SetScript("OnMouseUp", nil);
-					StopMovingOrSizing(owner);
-				end);
-				StartMovingOrSizing(owner, true);
 			end
 		end
 	end
@@ -10883,7 +10918,7 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect and not app.CustomCollects[reference.customCollect] then
 			local customCollectEx = L["CUSTOM_COLLECTS_REASONS"][reference.customCollect];
-			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "[MISSING_LOCAL_REASON");
+			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "");
 		end
 
 		-- Show Quest Prereqs
@@ -11112,10 +11147,10 @@ local function OnScrollBarMouseWheel(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - delta);
 end
 local function OnScrollBarValueChanged(self, value)
-	local un = math.floor(value);
-	local up = un + 1;
-	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self:GetParent():Refresh();
+	if self.CurrentValue ~= value then
+		self.CurrentValue = value;
+		self:GetParent():Refresh();
+	end
 end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
@@ -11833,14 +11868,16 @@ local backdrop = {
 
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
-	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
+	-- print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
 		-- While the player is in combat, wait for combat to end.
+		-- print("Wait Combat/Ready")
 		while InCombatLockdown() or not app.IsReady do coroutine.yield(); end
 
 		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
+		-- print("Wait Countdown")
 		while app.countdown > 0 do
 			app.countdown = app.countdown - 1;
 			coroutine.yield();
@@ -11849,6 +11886,7 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
+			-- print("Update Groups")
 			app:GetDataCache();
 			for i,data in ipairs(app.RawData) do
 				data.progress = 0;
@@ -11943,6 +11981,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar.back:SetAllPoints(scrollbar);
 		scrollbar:SetMinMaxValues(1, 1);
 		scrollbar:SetValueStep(1);
+		scrollbar:SetObeyStepOnDrag(true);
 		scrollbar.CurrentValue = 1;
 		scrollbar:SetWidth(16);
 		scrollbar:EnableMouseWheel(true);
@@ -12460,11 +12499,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
 
-				local hasDifficulties;
 				-- Check for timewalking difficulty objects
 				for i, group in ipairs(groups) do
 					if group.difficultyID then
-						hasDifficulties = true;
 						if group.difficultyID == 24 and group.g then
 							-- Look for a Common Boss Drop header.
 							local cbdIndex = -1;
@@ -12545,25 +12582,20 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				BuildGroups(self.data, self.data.g);
 				-- print("update groups");
 				UpdateGroups(self.data, self.data.g);
-				-- sort only the top layer of groups if not in an instance with difficulty, force visible so sort goes through
+				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
-				local difficultyID = select(3, GetInstanceInfo());
 				-- sort by name if not in an instance
-				if not difficultyID or difficultyID < 1 then
+				if not self.data.instanceID then
 					self.data.visible = true;
 					-- print("sortname");
 					SortGroup(self.data, "name", nil, false);
-				-- sort by difficulty ONLY if the instance has actual difficulty dividers
-				-- elseif hasDifficulties then
-				-- 	self.data.visible = true;
-				-- 	-- print("sortdiff");
-				-- 	SortGroup(self.data, "difficultyID", nil, false);
 				end
 				-- check to expand groups after they have been built and updated
 				-- print("expand current zone");
 				ExpandGroupsRecursively(self.data, true);
 
 				-- if enabled, minimize rows based on difficulty
+				local difficultyID = select(3, GetInstanceInfo());
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						for _, row in ipairs(self.data.g) do
@@ -13923,7 +13955,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 
 							-- Make sure a cache table exists for this item.
 							-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-							-- Index 2: The Crafted Item IDs
+							-- Index 2: The Crafted Item IDs => reagentCount
 							-- TODO: potentially re-design this structure
 							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
 							reagentCache[itemID][1][spellRecipeInfo.recipeID] = { craftedItemID, reagentCount };
@@ -16059,13 +16091,14 @@ app.events.VARIABLES_LOADED = function()
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
 	local reagentCache = app.GetDataMember("Reagents", {});
+	local rebuildReagents = 2;
 	-- verify that reagent cache is of the correct format by checking a special key
-	if not reagentCache[-1] or reagentCache[-1] < 2 then
-		C_Timer.After(20, function() app.print("Reagent Cache is out-of-date and will be re-cached when opening your professions!"); end);
+	if not reagentCache[-1] or reagentCache[-1] < rebuildReagents then
+		C_Timer.After(30, function() app.print("Reagent Cache is out-of-date and will be re-cached when opening your professions!"); end);
 		wipe(reagentCache);
 	end
 	if reagentCache then
-		reagentCache[-1] = 2;
+		reagentCache[-1] = rebuildReagents;
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
 		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
@@ -16223,6 +16256,21 @@ app.events.VARIABLES_LOADED = function()
 					return false;
 				end
 			end
+			return cc;
+		end);
+		-- Shadowlands Skip
+		app.SetCustomCollectibility("SL_SKIP", function(cc)
+			-- character is not checked
+			if cc == nil then
+				-- print("first check of SL_SKIP");
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			elseif not cc then
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			end
+			-- no apparent way to revert this choice, so no logic to revert the CC value
+			-- print("isSkip",cc);
 			return cc;
 		end);
 
