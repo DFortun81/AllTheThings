@@ -247,6 +247,7 @@ _.Zones =
 				n(-934,   {	-- Star Lake Amphitheater
 					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
+					["isDaily"] = true,
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew

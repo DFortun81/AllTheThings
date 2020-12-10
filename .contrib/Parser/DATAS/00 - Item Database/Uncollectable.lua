@@ -150,6 +150,7 @@ i(165699);	-- Scarlet Herring Lure
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
+i(180684);	-- Sentinel Stonewing
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
