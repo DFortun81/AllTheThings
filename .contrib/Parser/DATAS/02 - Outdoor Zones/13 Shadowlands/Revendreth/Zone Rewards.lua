@@ -17,6 +17,10 @@ _.Zones =
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
 						["isDaily"] = true,
 					}),
+					i(173718, {	-- Bottle of Redelav Wine
+						["questID"] = 58078,	-- Favor: Bottle of Redelav Wine
+						["isDaily"] = true,
+					}),
 					i(173720, {	-- Glittering Primrose Necklace
 						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 58080,	-- Favor: Glittering Primrose Necklace

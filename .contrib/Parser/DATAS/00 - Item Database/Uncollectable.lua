@@ -39,6 +39,7 @@ i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
+i(184774);	-- Juvenile Sporespindle
 i(184382);	-- Luminous Sylberry
 i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
@@ -72,6 +73,7 @@ i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
+i(181643);	-- Weeping Corpseshroom
 i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet

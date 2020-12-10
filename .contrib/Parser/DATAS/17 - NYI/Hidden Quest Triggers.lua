@@ -3213,6 +3213,12 @@ _.HiddenQuestTriggers =
 		q(63252),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
 		q(63303),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
 		q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
+		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"
+		q(58061),	-- when choosing House Primrose while on "Enacting Immediate Justice"
+		q(58063),	-- when choosing House Darkvein while on "Enacting Immediate Justice"
+		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
+		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
+		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

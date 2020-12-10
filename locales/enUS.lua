@@ -4345,6 +4345,7 @@ app.L = {
 		[1278968762] = "Runebound Coffer",	-- TODO: fix objectID when data becomes available
 		[1278968763] = "Lunarlight Pod",	-- TODO: fix objectID when data becomes available
 		[1278968764] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
+		[1278968765] = "Bonebound Chest",	-- TODO: fix objectID when data becomes available
 		[354852] = "Sprouting Growth",
 		[354853] = "Sprouting Growth",
 		[354856] = "Slime-Coated Crate",

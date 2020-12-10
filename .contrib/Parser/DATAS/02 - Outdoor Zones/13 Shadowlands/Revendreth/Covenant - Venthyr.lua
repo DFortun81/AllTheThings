@@ -263,6 +263,18 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						q(57889, {	-- "Accidental" Arson
+							["sourceQuests"] = { 57887 },	-- Killing the Messenger
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+							["g"] = {
+								i(180917),	-- Soulbreaker's Ebony Leggings
+							--	TODO: confirm non-cloth rewards (they aren't linked on wowhead)
+								i(180919),	-- Ebony Death Shroud Breeches
+								i(180918),	-- Fearstalker's Ebony Leggings
+								i(180916),	-- Dread Sentinel's Ebony Legguards
+							},
+						}),
 						q(62695, {	-- A Call to Service
 							["sourceQuests"] = { 62857 },	-- The Court's Bounty
 							["provider"] = { "n", 175772 },	-- Rahel
@@ -278,10 +290,25 @@ _.Zones =
 							["provider"] = { "n", 171950 },	-- The Accuser
 							["coord"] = { 44.6, 20.1, 1699 },	-- Sinfall Reaches
 						}),
+						q(57885, {	-- A Discreet Entrance
+							["sourceQuests"] = { 57884 },	-- Reclaiming Thornhill Manor
+							["provider"] = { "n", 159513 },	-- Bogdan
+							["coord"] = { 58.8, 29.9, 1525 },	-- Revendreth
+						}),
+						q(57886, {	-- A Meal and a Deal
+							["sourceQuests"] = { 57885 },	-- A Discreet Entrance
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						}),
 						q(57880, {	-- An Estate Within the Old Gate
 							["sourceQuests"] = { 60904 },	-- Medallion of Desire
 							["provider"] = { "n", 161979 },	-- Theotar
 							["coord"] = { 50.2, 18.6, 1699 },	-- Sinfall Reaches
+						}),
+						q(57888, {	-- An Invitation to Treachery
+							["sourceQuests"] = { 57887 },	-- Killing the Messenger
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
 						}),
 						q(59323, {	-- Anima Awakening
 							["sourceQuests"] = { 59321 },	-- Sacred Covenant
@@ -298,6 +325,11 @@ _.Zones =
 							["provider"] = { "n", 164738 },	-- Tenaval
 							["coord"] = { 46.0, 27.9, 1699 },	-- Sinfall Reaches
 						}),
+						q(57890, {	-- Beautiful, But Deadly
+							["sourceQuests"] = { 57887 },	-- Killing the Messenger
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						}),
 						q(62918, {	-- Binding Power
 							["sourceQuests"] = { 62915 },	-- Home Improvement
 							["provider"] = { "n", 171950 },	-- The Accuser
@@ -313,6 +345,11 @@ _.Zones =
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
+						}),
+						q(57892, {	-- Enacting Immediate Justice
+							["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
+							["provider"] = { "n", 159946 },	-- The Countess
+							["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
 						}),
 						q(60500, {	-- Halls of Atonement: Medallion of Pride
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -368,6 +405,11 @@ _.Zones =
 							["provider"] = { "n", 165661 },	-- Prince Renathal
 							["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
 						}),
+						q(57887, {	-- Killing the Messenger
+							["sourceQuests"] = { 57886 },	-- A Meal and a Deal
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						}),
 						q(59343, {	-- Kindred Spirits
 							["sourceQuests"] = { 59719 },	-- The Court
 							["provider"] = { "n", 172042 },	-- Theotar
@@ -380,6 +422,20 @@ _.Zones =
 						--	["provider"] = { "o",  },	-- Medallion of Desire
 							["coord"] = { 53.6, 32.9, 1699 },	-- Sinfall Reaches
 						}),
+						q(57891, {	-- Mix, Mingle, and Meddle
+							["sourceQuests"] = {
+								57889,	-- "Accidental" Arson
+								57888,	-- An Invitation to Treachery
+								57890,	-- Beautiful, But Deadly
+							},
+							["provider"] = { "n", 159694 },	-- The Countess
+							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						}),
+						q(57893, {	-- Neither Enemy nor Ally
+							["sourceQuests"] = { 57892 },	-- Enacting Immediate Justice
+							["provider"] = { "n", 159946 },	-- The Countess
+							["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
+						}),
 						q(62921, {	-- Our True Purpose
 							["sourceQuests"] = { 62920 },	-- A Conduit For Change
 							["provider"] = { "n", 171950 },	-- The Accuser
@@ -389,6 +445,19 @@ _.Zones =
 						--	["sourceQuests"] = {  },	-- TODO: unknown.  i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.6, 58.8, 1699 },	-- Sinfall Reaches
+						}),
+						q(57884, {	-- Reclaiming Thornhill Manor
+							["sourceQuests"] = {
+								57882,	-- Reestablishing the Household
+								57881,	-- The Key to Rebuilding
+							},
+							["provider"] = { "n", 159513 },	-- Bogdan
+							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
+						}),
+						q(57882, {	-- Reestablishing the Household
+							["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
+							["provider"] = { "n", 159513 },	-- Bogdan
+							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
 						}),
 						q(61981, {	-- Replenish the Reservoir
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -487,9 +556,14 @@ _.Zones =
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 						}),
+						q(57881, {	-- The Key to Rebuilding
+							["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
+							["provider"] = { "n", 159513 },	-- Bogdan
+							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
+						}),
 						q(61492, {	-- The Princeguard
-							["description"] = "Requires Renown 5.",
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["description"] = "Requires Renown 5.",
 							["provider"] = { "n", 161977 },	-- General Draven
 							["coord"] = { 46.3, 15.7, 1699 },	-- Sinfall Reaches
 						}),

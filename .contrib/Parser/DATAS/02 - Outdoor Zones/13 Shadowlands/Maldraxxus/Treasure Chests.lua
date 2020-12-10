@@ -20,6 +20,13 @@ _.Zones =
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
+				o(1278968765, {	-- Bonebound Chest
+				--	TODO: fix objectID when data is available.  may be a shared objectID, in which case the description would have to differentiate between multiple locations
+					["description"] = "The cave entrance is at |cFFFFFFFF37.9, 76.3|r.",
+					["questID"] = 60662,
+					["isDaily"] = true,
+					["coord"] = { 61.1, 22.6, 1651 },	-- cave mapID
+				}),
 				o(352433, {	-- Cache of Eyes
 					["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
 					["coord"] = { 54.0, 12.3, 1536 },
@@ -44,6 +51,7 @@ _.Zones =
 					["coords"] = {
 						{ 65.0, 82.1, 1536 },
 						{ 65.8, 76.0, 1536 },
+						{ 68.4, 85.9, 1536 },
 						{ 70.4, 75.3, 1536 },
 					},
 					["g"] = {
@@ -53,6 +61,7 @@ _.Zones =
 				o(354853, {	-- Sprouting Growth
 					["questID"] = 61089,
 					["coords"] = {
+						{ 45.0, 35.5, 1536 },
 						{ 46.8, 31.7, 1536 },
 					},
 					["g"] = {
