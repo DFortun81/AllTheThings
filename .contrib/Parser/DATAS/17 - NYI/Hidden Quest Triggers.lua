@@ -3146,12 +3146,15 @@ _.HiddenQuestTriggers =
 		q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
 		q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
 		q(62666),	-- triggered when turning in #58073, Favor: Portrait of the Sire
+		q(62659),	-- triggered when turning in #58078, Favor: Bottle of Redelav Wine
+		q(62660),	-- triggered when turning in #58075, Favor: Dredger's Toolkit
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
 		-- Revendreth Treasures
 		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
+		q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)
 		q(60940),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only)
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
@@ -3178,7 +3181,7 @@ _.HiddenQuestTriggers =
 		q(63323),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
-		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal"
+		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		-- q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -3189,16 +3192,22 @@ _.HiddenQuestTriggers =
 		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
 		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
-		q(59440),	-- triggered when entering the Ember Court for the week
+		q(59440),	-- triggered when entering the Ember Court, Week 1
+		q(61924),	-- triggered when entering the Ember Court, Week 2
 		q(61927),	-- triggered when entering the Ember Court for the week
 		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
-	--	q(62125),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
 	--	q(62130),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
+		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing Theotar's Toast objective in Ember Court
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+	--	q(62144),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62148),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-		q(62496),	-- triggered when Ember Court ended
-		q(62512),	-- triggered when Ember Court ended
+		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
+		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
+		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
+		q(62515),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
+		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page"
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
@@ -3218,6 +3227,8 @@ _.HiddenQuestTriggers =
 		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
 		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
+		q(59618),	-- triggered when using "RSVP: Stonehead"
+		q(59619),	-- triggered when using "RSVP: Stonehead"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

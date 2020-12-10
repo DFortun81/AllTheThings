@@ -828,9 +828,20 @@ _.Zones =
 										["coord"] = { 70.0, 56.2, 1525 },
 									}),
 									q(62080, {	-- Restock: Herbal Tea
+									--	showed up after Week 1 Ember Court
 										["repeatable"] = true,	-- it shows up as a blue ?
 										["provider"] = { "n", 165490 },	-- Picky Stefan
-										["coord"] = { 29.0, 44.2, 1525 },
+										["coord"] = { 29.0, 44.2, 1525 },	-- Revendreth
+									}),
+									q(62069, {	-- Restock: Sinstones
+									--	showed up after Week 2 Ember Court
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+										["cost"] = {
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+											{ "c", 1816, 50 },	-- 50x Sinstone Fragment
+										},
 									}),
 									q(60236, {	-- RSVP: Cryptkeeper Kassir
 										["sourceQuests"] = {
@@ -853,22 +864,38 @@ _.Zones =
 											i(176123),	-- RSVP: Kleia and Pelagos
 										},
 									}),
+									q(60916, {	-- RSVP: Stonehead
+									--	was available for me after doing Week 2 Ember Court
+										["provider"] = { "n", 157199 },	-- Stonehead
+										["isDaily"] = true,
+										["coord"] = { 38.9, 66.0, 1525 },	-- Revendreth
+										["g"] = {
+											i(178686),	-- RSVP: Stonehead
+										},
+									}),
 									q(63065, {	-- Sanctum Upgrade: The Ember Court
 										["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 										["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
 									}),
-									q(61616, {	-- The Ember Court
+									q(61616, {	-- The Ember Court (Week 1)
+									--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
 										["sourceQuests"] = {
 											61882,	-- Formal Entertainment
 											61884,	-- Formal Refreshments
 											61880,	-- Honored Attendance
 										},
 										["provider"] = { "n", 164966 },	-- Temel
-										["isDaily"] = true,
+										["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
 										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 										["g"] = {
 											i(181536),	-- Guest List Page (1st EC)
 										},
+									}),
+									q(61526, {	-- The Ember Court (Week 2)
+										["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 									}),
 								}),
 								n(-962, {	-- Tier 2: Homegrown Help

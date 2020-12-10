@@ -21,6 +21,10 @@ _.Zones =
 						["questID"] = 58078,	-- Favor: Bottle of Redelav Wine
 						["isDaily"] = true,
 					}),
+					i(173715, {	-- Dredger's Toolkit
+						["questID"] = 58075,	-- Favor: Dredger's Toolkit
+						["isDaily"] = true,
+					}),
 					i(173720, {	-- Glittering Primrose Necklace
 						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
@@ -95,6 +99,7 @@ _.Zones =
 					i(181191),	-- Devourer Wrangler's Coif
 					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
+					i(180400),	-- Inquisitions Final Judgment
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(182689),	-- Rapier of the Fearless

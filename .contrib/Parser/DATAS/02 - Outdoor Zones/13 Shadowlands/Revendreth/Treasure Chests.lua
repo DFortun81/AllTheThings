@@ -74,12 +74,10 @@ _.Zones =
 					["coord"] = { 66.5, 42.8, 1525 },
 				}),
 				o(351540, {	-- Secret Treasure
+					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
 					["questID"] = 60196,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 73.8, 46.3, 1525 },	
-					["g"] = {
-						i(180400),	-- Inquisitions Final Judgment
-					}
 				}),
 				o(351541, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
@@ -93,12 +91,19 @@ _.Zones =
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 74.0, 61.9, 1525 },					
 				}),
-				o(1278968750, {	-- Secret Treasure
-				--	TODO: fix objectID when data becomes available
+				o(351544, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
 					["questID"] = 60201,
 					["isDaily"] = true,
 					["coord"] = { 55.3, 35.9, 1525 },
+				}),
+				o(1278968756, {	-- Secret Treasure
+				--	TODO: fix objectID when data becomes available
+					["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
+					["questID"] = 60202,	-- also triggered 60851
+					["isDaily"] = true,
+					["coord"] = { 27.7, 48.7, 1525 },
+					["crs"] = { 169993 },	-- Lord Scowl
 				}),
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,
