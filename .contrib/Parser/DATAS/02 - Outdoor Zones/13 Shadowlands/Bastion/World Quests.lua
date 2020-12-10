@@ -134,6 +134,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61469, {	-- Tailoring: Woven Gossamer Tunic
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+					["requireSkill"] = TAILORING,
+				}),
 				q(61791, {	-- Thenia's Loyal Companions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

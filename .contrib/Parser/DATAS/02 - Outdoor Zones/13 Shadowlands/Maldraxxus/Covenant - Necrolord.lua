@@ -474,7 +474,17 @@ _.Zones =
 						-- Tier 3: Forced March
 					}),
 					-- Transport Network
-						-- Tier 1: Ziggaraut Now
+						-- Tier 1: Ziggurat Now
+							q(63059, {	-- Blink of an Eye
+								["sourceQuests"] = { 63055 },	-- Powering the Portals
+								["provider"] = { "n", 175963 },	-- Serafina Von
+								["coord"] = { 59.8, 31.8, 1698 },
+							}),
+							q(63055, {	-- Powering the Portals
+								["provider"] = { "n", 161909 },	-- Arkadia Moa
+								["coord"] = { 52.4, 38.4, 1698 },
+								["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
+							}),
 						-- Tier 2: A Keep Above
 						-- Tier 3: Flying Fortress
 				}),
