@@ -27,16 +27,19 @@ _.Zones =
 				o(353868, {	-- Hidden Hoard
 				--	TODO: verify objectID when coords are available, probably this one or 353869
 					["questID"] = 60877,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
+					["isDaily"] = true,
 					["coord"] = { 61.6, 37.2, 1533 }
 				}),
 				o(353871, {	-- Hidden Hoard
 					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff.  You'll have to walk along a ledge halfway up the cliffside to access it.",
 					["questID"] = 60878,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
+					["isDaily"] = true,
 					["coord"] = { 47.7, 35.1, 1533 },
 				}),
 				o(1278968758, {	-- Hidden Hoard
 					["description"] = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
 					["questID"] = 60879,
+					["isDaily"] = true,
 					["coord"] = { 48.5, 45.4, 1533 },
 				}),
 				o(353650, {	-- Steward's Golden Chest
@@ -83,6 +86,7 @@ _.Zones =
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60755,
+					["isDaily"] = true,
 					["coord"] = { 48.7, 31.8, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
@@ -91,6 +95,7 @@ _.Zones =
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60712,
+					["isDaily"] = true,
 					["coord"] = { 46.8, 19.9, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
@@ -99,6 +104,7 @@ _.Zones =
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60627,
+					["isDaily"] = true,
 					["coord"] = { 60.8, 80.3, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
@@ -106,6 +112,7 @@ _.Zones =
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60777,
+					["isDaily"] = true,
 					["coord"] = { 62.4, 57.6, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
@@ -113,6 +120,7 @@ _.Zones =
 				--	TODO: updated objectIDs to match with coords when the data is available
 					["questID"] = 60798,	-- also triggered 60874... why two quests?
 					-- also triggered 60799 for non-kyrian
+					["isDaily"] = true,
 					["coords"] = {
 						{ 45.6, 33.8, 1533 },
 						{ 59.5, 66.3, 1533 },	-- triggered 60798 / 60799
@@ -134,8 +142,9 @@ _.Zones =
 				--Not sure if this is the intended way to get this mount, but Kyrian can channel anima to the Temple of Purity for a treasure,
 				--and this mount dropped for me once i reached the Brazier of Purity.
 				o(356823, {	-- Cloudwalker's Coffer
-					["coord"] = { 61.1, 15.1, 1533 },
 					["questID"] = 61698,
+					["isDaily"] = true,
+					["coord"] = { 61.1, 15.1, 1533 },
 					["g"] = {
 						i(180783, {	-- Design: Crown of the Righteous
 							["requireSkill"] = JEWELCRAFTING,
