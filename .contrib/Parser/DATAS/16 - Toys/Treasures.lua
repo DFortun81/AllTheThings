@@ -8,6 +8,7 @@ _.Toys =
 		i(184418),	-- Acrobatic Steward
 		i(180993),	-- Bat Visage Bobber
 		i(183986),	-- Bondable Sinstone
+		i(183988),	-- Bondable Val'kyr Diadem
 		i(174920),	-- Coifcurl's Close Shave Kit
 		i(184489),	-- Fae Harp
 		i(184490),	-- Fae Pipes

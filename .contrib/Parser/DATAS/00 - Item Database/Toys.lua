@@ -682,6 +682,7 @@ t(183847);	-- Acolyte's Guise
 t(184292);	-- Ancient Elethium Coin
 t(180993);	-- Bat Visage Bobber
 t(183986);	-- Bondable Sinstone
+t(183988);	-- Bondable Val'kyr Diadem
 t(184312);	-- Borr-Geth's Fiery Brimstone
 t(183989);	-- Dredger Barrow Racer
 t(177951);	-- Glimmerflies on Strings
