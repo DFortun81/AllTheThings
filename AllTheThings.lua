@@ -1644,7 +1644,6 @@ end
 MergeObject = function(g, t, index)
 	local hash = GetHash(t);
 	-- print("_",hash);
-	-- TODO: if non-matching object is found then simply insert the object
 	if hash then
 		for i,o in ipairs(g) do
 			if GetHash(o) == hash then
@@ -3071,15 +3070,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
-				-- print("-- ipairs")
-				-- for i,v in ipairs(group.g) do
-				-- 	print(i,v)
-				-- end
-				-- print("-- pairs")
-				-- for k,o in pairs(group.g) do
-				-- 	print(k,o)
-				-- end
-				-- print("--")
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					-- print("#entries",#entries);
