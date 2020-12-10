@@ -14296,7 +14296,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				self:Update();
 			end
 			-- World Quests (Tasks)
-			self.MergeTasks = function(self, mapObject)	
+			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)	
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
 				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
@@ -14305,11 +14305,17 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually						
 						if poi.mapID == mapID then
 							local questObject = GetPopulatedQuestObject(poi.questId);
-
-							-- see if need to retry based on missing data
-							if not self.retry and questObject.missingData then self.retry = true; end
-
-							MergeObject(mapObject.g, questObject);
+							if includeAll or
+								-- include the quest in the list if holding shift and tracking quests
+								(includePermanent and includeQuests) or
+								-- or if it is repeatable (i.e. one attempt per day/week/year)
+								questObject.repeatable or
+								-- or if it has time remaining
+								(questObject.timeRemaining or 0 > 0) then
+								MergeObject(mapObject.g, questObject);
+								-- see if need to retry based on missing data
+								if not self.retry and questObject.missingData then self.retry = true; end
+							end
 						end
 					end
 				end				
@@ -14333,6 +14339,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0) then
 								MergeObject(mapObject.g, questObject);
+								-- see if need to retry based on missing data
+								if not self.retry and questObject.missingData then self.retry = true; end
 							end
 						end
 					end
@@ -14401,7 +14409,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
 
 							-- Merge Tasks for Zone
-							self:MergeTasks(subMapObject);
+							self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
 
 							-- Merge Storylines for Zone
 							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
