@@ -1644,6 +1644,7 @@ end
 MergeObject = function(g, t, index)
 	local hash = GetHash(t);
 	-- print("_",hash);
+	-- TODO: if non-matching object is found then simply insert the object
 	if hash then
 		for i,o in ipairs(g) do
 			if GetHash(o) == hash then
@@ -2339,10 +2340,13 @@ ResolveSymbolicLink = function(o)
 end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
+	print("Build contains",#groups)
 	local total = 0;
 	local progress = 0;
+	print("Build contains",#groups)
 	for i,group in ipairs(groups) do
-		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
+		print("group")
+		print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
 		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
@@ -2431,8 +2435,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 				-- print("total",tostring(total),"progress",tostring(progress));
 			-- else
-				-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
+			-- 	print("ex",group.key,group[group.key]);
 			end
+		-- else
+		-- 	print("group contains itself",group.key,group[group.key])
 		end
 	end
 	if (total > 0) then
@@ -2459,7 +2465,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not group then group = {}; end
 		if a then paramA = a; end
 		if b then paramB = b; end
-		-- print("Raw Search",#group);
+		print("Raw Search",#group,paramA,paramB);
 
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
@@ -2965,19 +2971,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,o in ipairs(group) do
 				if app.RecursiveGroupRequirementsFilter(o) then
 					MergeObject(merged, CreateObject(o));
-					-- print("add",o.hash);
+					print("add",o.hash);
 					-- print("total merged",#merged);
 				else
-					-- print("skip",o.hash);
+					print("skip",o.hash);
 					tinsert(skipped, o);
 				end
 			end
 			-- then merge any skipped groups
 			for i,o in ipairs(skipped) do
 				MergeObject(merged, CreateObject(o));
-				-- print("merge",o.hash);
+				print("merge",o.hash);
 			end
-			-- print("total merged",#merged);
+			print("total merged",#merged);
 			if #merged == 1 and merged[1][paramA] == paramB then
 				group = merged[1];
 				local symbolicLink = ResolveSymbolicLink(group);
@@ -3010,8 +3016,30 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				group = CreateObject({ [paramA] = paramB });
-				group.g = merged;
+				-- make sure that the merged group doesn't contain the actual matching group
+				group = nil;
+				for i=1,#merged do
+					-- found the exact group in the set
+					if merged[i][paramA] == paramB then
+						if not group then
+							group = merged[i];
+							group.g = merged[i].g;
+						else
+							MergeObject(group, merged[i]);
+						end
+						merged[i] = nil;
+					end
+				end
+				if not group then
+					print("create header group")
+					group = CreateObject({ [paramA] = paramB });
+					group.g = merged;
+				else
+					print("merge contains")
+					if not group.g then group.g = merged;
+					else MergeObjects(group.g, merged); end
+					print("group=>contains",group.key,group[group.key],#group.g)
+				end
 			end
 
 			-- Append any crafted things using this group
@@ -3048,6 +3076,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		local collectionData;
 		if group.g and #group.g > 0 then
+			print("group=>contains",group.key,group[group.key],#group.g)
 			--[[
 			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 				for i,j in ipairs(group.g) do
@@ -3059,9 +3088,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
+				print("group=>contains",group.key,group[group.key],#group.g)
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
-					-- print("#entries",#entries);
+					print("#entries",#entries);
 					tinsert(info, { left = "Contains:" });
 					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 					if #entries < containCount + 1 then
@@ -3314,14 +3344,13 @@ end
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
 	if group and group.g and #group.g > 0 then
-		for i=1,#group.g,1 do
-			local o = group.g[i];
+		for k,o in pairs(group.g) do
 			-- this is an empty currency group
 			if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
-				-- print("empty currency group",o.currencyID);
+				print("empty currency group",o.currencyID);
 				local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
 				if currencyGroup then
-					-- print("found currency",currencyGroup.currencyID,#currencyGroup.g);
+					print("found currency",currencyGroup.currencyID,#currencyGroup.g);
 					group.g[i] = currencyGroup;
 				end
 			end
@@ -9658,7 +9687,7 @@ function app:CreateMiniListForGroup(group)
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 			end;
-		elseif group.questID or group.sourceQuests then
+		elseif group.questID and group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 				group = group.parent;
