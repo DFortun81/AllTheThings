@@ -12754,7 +12754,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 			app.MaximumItemInfoRetries = 40;
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				for i,group in ipairs(groups) do
-					if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
+					if (not group.s or group.s == 0 or not C_TransmogCollection_GetSourceInfo(group.s)) then
 						if group.bonusID and not bonusIDs[group.bonusID] then
 							bonusIDs[group.bonusID] = true;
 							tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
