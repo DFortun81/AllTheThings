@@ -33,6 +33,7 @@ _.Zones =
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
+								i(182138),	-- Mind Devourer [Priest-Shadow]
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]
 								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
@@ -72,6 +73,7 @@ _.Zones =
 							["description"] = "Rewarded by completing a Calling based in Bastion",
 							["g"] = {
 								-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
+								-- i(182138),	-- Mind Devourer [Priest-Shadow]
 							},
 						}),
 
