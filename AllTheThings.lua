@@ -2340,13 +2340,11 @@ ResolveSymbolicLink = function(o)
 end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
-	print("Build contains",#groups)
 	local total = 0;
 	local progress = 0;
-	print("Build contains",#groups)
-	for i,group in ipairs(groups) do
-		print("group")
-		print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
+	-- using pairs since some index values may get set to nil prior to this
+	for i,group in pairs(groups) do
+		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
 		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
@@ -2413,13 +2411,17 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						-- not for group which contains an artifact 
 						and not group.g[1].artifactID
 						-- not for heirlooms
-						and not group.filterID == 109
+						and not (group.filterID == 109)
 						-- not for a group which is symbolized
-						and not group.symbolized 
+						and not group.symbolized
 						then
 						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
 					-- else
-						-- print("skipped sub-contains");
+					-- 	print("skipped sub-contains");
+					-- 	for k,o in pairs(group) do
+					-- 		print(k,o)
+					-- 	end
+					-- 	print("--");
 					end
 				-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
 				-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
@@ -2465,7 +2467,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not group then group = {}; end
 		if a then paramA = a; end
 		if b then paramB = b; end
-		print("Raw Search",#group,paramA,paramB);
+		-- print("Raw Search",#group,paramA,paramB);
 
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
@@ -2969,21 +2971,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local skipped = {};
 			-- First add only groups which meet the current filters
 			for i,o in ipairs(group) do
-				if app.RecursiveGroupRequirementsFilter(o) then
-					MergeObject(merged, CreateObject(o));
-					print("add",o.hash);
-					-- print("total merged",#merged);
-				else
-					print("skip",o.hash);
-					tinsert(skipped, o);
+				-- do not include the exact matching group as part of the set contained by the search group
+				if o[paramA] ~= paramB then
+					if app.RecursiveGroupRequirementsFilter(o) then
+						MergeObject(merged, CreateObject(o));
+						-- print("add",o.hash);
+						-- print("total merged",#merged);
+					else
+						-- print("skip",o.hash);
+						tinsert(skipped, o);
+					end
 				end
 			end
 			-- then merge any skipped groups
 			for i,o in ipairs(skipped) do
 				MergeObject(merged, CreateObject(o));
-				print("merge",o.hash);
+				-- print("merge",o.hash);
 			end
-			print("total merged",#merged);
+			-- print("total merged",#merged);
 			if #merged == 1 and merged[1][paramA] == paramB then
 				group = merged[1];
 				local symbolicLink = ResolveSymbolicLink(group);
@@ -3016,30 +3021,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				-- make sure that the merged group doesn't contain the actual matching group
-				group = nil;
-				for i=1,#merged do
-					-- found the exact group in the set
-					if merged[i][paramA] == paramB then
-						if not group then
-							group = merged[i];
-							group.g = merged[i].g;
-						else
-							MergeObject(group, merged[i]);
-						end
-						merged[i] = nil;
-					end
-				end
-				if not group then
-					print("create header group")
-					group = CreateObject({ [paramA] = paramB });
-					group.g = merged;
-				else
-					print("merge contains")
-					if not group.g then group.g = merged;
-					else MergeObjects(group.g, merged); end
-					print("group=>contains",group.key,group[group.key],#group.g)
-				end
+				group = app.SearchForObjectClone(paramA,paramB) or CreateObject({ [paramA] = paramB });
+				if not group.g then group.g = merged;
+				else MergeObjects(group.g, merged); end
 			end
 
 			-- Append any crafted things using this group
@@ -3076,7 +3060,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		local collectionData;
 		if group.g and #group.g > 0 then
-			print("group=>contains",group.key,group[group.key],#group.g)
 			--[[
 			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 				for i,j in ipairs(group.g) do
@@ -3088,10 +3071,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
-				print("group=>contains",group.key,group[group.key],#group.g)
+				-- print("-- ipairs")
+				-- for i,v in ipairs(group.g) do
+				-- 	print(i,v)
+				-- end
+				-- print("-- pairs")
+				-- for k,o in pairs(group.g) do
+				-- 	print(k,o)
+				-- end
+				-- print("--")
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
-					print("#entries",#entries);
+					-- print("#entries",#entries);
 					tinsert(info, { left = "Contains:" });
 					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 					if #entries < containCount + 1 then
@@ -3344,14 +3335,17 @@ end
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
 	if group and group.g and #group.g > 0 then
-		for k,o in pairs(group.g) do
-			-- this is an empty currency group
-			if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
-				print("empty currency group",o.currencyID);
-				local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
-				if currencyGroup then
-					print("found currency",currencyGroup.currencyID,#currencyGroup.g);
-					group.g[i] = currencyGroup;
+		for i=1,#group.g do
+			local o = group.g[i];
+			if o then
+				-- this is an empty currency group
+				if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
+					-- print("empty currency group",o.currencyID);
+					local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
+					if currencyGroup then
+						-- print("found currency",currencyGroup.currencyID,#currencyGroup.g);
+						group.g[i] = currencyGroup;
+					end
 				end
 			end
 		end
