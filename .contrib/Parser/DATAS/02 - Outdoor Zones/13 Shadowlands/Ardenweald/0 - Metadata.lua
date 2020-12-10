@@ -17,6 +17,7 @@ _.Zones =
 				1818,	-- Tirna Vaal
 				1824,	-- Matriarch's Den
 				1829,	-- Ardenweald_Micro_B
+				1917,	-- De Other Side (Ardenweald version, for Night Fae chapter 4 quests)
 			},
 		}),
 	}),

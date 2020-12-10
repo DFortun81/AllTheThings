@@ -505,6 +505,57 @@ _.Zones =
 					}),					
 
 					-- Chapter 4: Da Boss (Renown 8 required to start)
+					q(59809, {	-- On De Other Side
+						["sourceQuests"] = { 59242 },	-- Their New Home
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+						["description"] = "Requires Renown 8 for this quest to be available.",
+					}),
+					q(59811, {	-- Taking Inventory
+						["sourceQuests"] = { 59809 },	-- On De Other Side
+						["provider"] = { "n", 166281 },	-- Bwonsamdi
+						["coord"] = { 50.4, 25.3, 1917 },
+					}),
+					q(59812, {	-- Following the Trail
+						["sourceQuests"] = { 59811 },	-- Taking Inventory
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59813, {	-- Minions of Mueh'zala
+						["sourceQuests"] = { 59812 },	-- Following the Trail
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59815, {	-- Stolen Loa
+						["sourceQuests"] = { 59812 },	-- Following the Trail
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+					}),
+					q(59817, {	-- Winter Be Comin'
+						["sourceQuests"] = {
+							59813,	-- Minions of Mueh'zala
+							59815,	-- Stolen Loa
+						},
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+						["g"] = {
+							i(175586),	-- Faewoven Handwraps
+							i(179767),	-- Oakheart Armguards
+							i(179890),	-- Queensguard Gauntlets
+							i(181911),	-- Runewarden's Gloves
+						},
+					}),
+					q(59818, {	-- Gathering The Hunt
+						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
+						["provider"] = { "n", 156634 },	-- Winter Queen
+						["coord"] = { 50.9, 29.4, 1703 },
+					}),
+					q(59819, {	-- Cleansing the Forest
+						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
+						["provider"] = { "n", 167823 },	-- Lady Moonberry
+						["coord"] = { 66.6, 55.6, 1565 },
+					}),
+					q(59821, {	-- Report to the Queen
+						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
+						["provider"] = { "n", 167823 },	-- Lady Moonberry
+						["coord"] = { 68.4, 65.2, 1565 },
+					}),
+
 					-- Chapter 5: Night Warrior's Curse (Renown 11 required to start)
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
 					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
@@ -513,15 +564,10 @@ _.Zones =
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail
-					currency(1831, {		-- Renown-NightFae
-						q(60108, {	-- Drust and Ashes
-							--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-							["g"] = {
-								i(180721),	-- Enchanted Dreamlight Runestag
-							},
-						}),
-					}),
+					
+					--[[
 					q(61554, {	-- The Play's The Thing
+						-- pretty sure this was beta only
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 44.6, 56.2, 1565 },
 						["sourceQuests"] = { 61553 },	-- Know Where to Strike
@@ -543,64 +589,6 @@ _.Zones =
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.9, 38.8, 1565 },
 						["sourceQuests"] = { 59242 },	-- Their New Home
-					}),
-					-- Da Boss
-					q(59809, {	-- On De Other Side
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
-					}),
-					q(59811, {	-- Taking Inventory
-						["provider"] = { "n", 166281 },	-- Bwonsamdi
-						["sourceQuests"] = { 59809 },	-- On De Other Side
-					}),
-					q(59812, {	-- Following the Trail
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59811 },	-- Taking Inventory
-					}),
-					q(59813, {	-- Minions of Mueh'zala
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59812 },	-- Following the Trail
-					}),
-					q(59815, {	-- Stolen Loa
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = { 59812 },	-- Following the Trail
-					}),
-					q(59817, {	-- Winter Be Comin'
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-						["sourceQuests"] = {
-							59813,	-- Minions of Mueh'zala
-							59815,	-- Stolen Loa
-						},
-						["g"] = {
-							i(175586),	-- Faewoven Handwraps
-							i(179767),	-- Oakheart Armguards
-							i(181911),	-- Runewarden's Gloves
-							i(179890),	-- Queensguard Gauntlets
-						},
-					}),
-					q(59818, {	-- Gathering The Hunt
-						["provider"] = { "n", 156634 },	-- Winter Queen
-						["coord"] = { 51.3, 27.2, 1565 },
-						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
-					}),
-					q(59819, {	-- Cleansing the Forest
-						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 66.6, 55.6, 1565 },
-						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
-					}),
-					q(59821, {	-- Report to the Queen
-						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 68.4, 65.2, 1565 },
-						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
-						["g"] = {
-							i(179657),	-- Faewoven Tunic
-							i(175576),	-- Faewoven Raiment
-							i(179765),	-- Oakheart Tunic
-							i(179774),	-- Oakheart Vestment
-							i(181909),	-- Runewarden's Hauberk
-							i(181979),	-- Runewarden's Vestment
-							i(179888),	-- Queensguard Chestplate
-						},
 					}),
 					-- Night Warrior's Curse							-- wowhead, need to be confirmed
 					q(58610, {	-- The Speaker of Elune
@@ -683,6 +671,13 @@ _.Zones =
 						["provider"] = { "n", 165702 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
+					}),
+					--]]
+					q(60108, {	-- Drust and Ashes
+						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+						["g"] = {
+							i(180721),	-- Enchanted Dreamlight Runestag
+						},
 					}),
 					-- Covenant progress
 					q(61853, {	-- Adventurer: Te'zan (Rank ?)
