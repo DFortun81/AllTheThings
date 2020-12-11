@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				n(161891, {	-- Lord Mortegore
 					["coord"] = { 75.8, 61.4, 1525 },
-					--["questID"] = ,
+					["questID"] = 58633,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(9)),	-- Adventurer of Revendreth / Lord Mortegore

@@ -18,10 +18,12 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					i(173718, {	-- Bottle of Redelav Wine
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 58078,	-- Favor: Bottle of Redelav Wine
 						["isDaily"] = true,
 					}),
 					i(173715, {	-- Dredger's Toolkit
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 58075,	-- Favor: Dredger's Toolkit
 						["isDaily"] = true,
 					}),

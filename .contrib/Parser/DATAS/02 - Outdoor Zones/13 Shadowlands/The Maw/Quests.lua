@@ -271,6 +271,15 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
+				-- TODO: Rule 6
+				-- TODO: Rule 6 Footnote
+				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
+					-- maybe Rule 6 footnote instead, or is that breadcrumb? i dont remember...
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
+					["coord"] = { 56.9, 57.5, 1543 },
+				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
 						62905,	-- Back into the Darkness (Venthyr)

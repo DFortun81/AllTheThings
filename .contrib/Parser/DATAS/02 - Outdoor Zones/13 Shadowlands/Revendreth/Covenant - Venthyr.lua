@@ -476,6 +476,12 @@ _.Zones =
 							["isWeekly"] = true,
 							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						}),
+						q(62069, {	-- Restock: Sinstones
+							["provider"] = { "n", 165494 },	-- Hips <Entertainment>
+							["repeatable"] = true,
+							-- no rewards, ignore cost
+							["coord"] = { 30.6, 41.8, 1525 },	-- Sinfall Reaches
+						}),
 						q(59321, {	-- Sacred Covenant
 							["sourceQuests"] = { 59315 },	-- The Court of Harvesters
 							["provider"] = { "n", 164796 },	-- Prince Renathal

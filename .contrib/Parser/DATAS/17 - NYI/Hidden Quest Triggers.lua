@@ -3138,6 +3138,7 @@ _.HiddenQuestTriggers =
 		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
 		q(60707),	-- When looting [The Venthyr Diaries] (173705)
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
+		q(60849),	-- When looting [Ledger of Souls] (173712)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"

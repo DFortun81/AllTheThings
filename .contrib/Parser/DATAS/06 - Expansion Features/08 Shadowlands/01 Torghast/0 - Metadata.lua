@@ -53,6 +53,7 @@ _.ExpansionFeatures =
 				1762,	-- TG47_Floor
 				1763,	-- Arkoban Hall - Floor 5
 				1765,	-- TG54_Floor
+				1766,	-- 
 				1769,	-- Arkoban Hall - Floor 6
 				1771,	-- TG61_Floor
 				1772,	-- TG62_Floor
