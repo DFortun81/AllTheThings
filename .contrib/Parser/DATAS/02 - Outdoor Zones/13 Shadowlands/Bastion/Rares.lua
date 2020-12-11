@@ -381,7 +381,7 @@ _.Zones =
 							},
 						}),
 						n(171040, { -- Xixin the Ravening
-						--	["questID"] = ,
+							["questID"] = 61046,
 							["isDaily"] = true,
 							["g"] = {
 								crit(17, {	-- Xixin the Ravening

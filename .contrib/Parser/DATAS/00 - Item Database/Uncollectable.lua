@@ -45,6 +45,7 @@ i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
 i(181546);	-- Mature Cryptbloom
 i(184387);	-- Misty Shimmerleaf
+i(184763);	-- Mnemis Neural Network
 i(184315);	-- Multi-Modal Anima Container
 i(184360);	-- Musings on Repetition
 i(184386);	-- Nascent Sporepod
@@ -180,6 +181,7 @@ i(168234);	-- Ancient Runestone
 i(182067);	-- Antique Duelist's Rapier
 i(182021);	-- Antique Kyrian Javelin
 i(182043);	-- Antique Necromancer's Staff
+i(181991);	-- Antique Stalker's Bow
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button

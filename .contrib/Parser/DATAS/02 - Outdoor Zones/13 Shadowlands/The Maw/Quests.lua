@@ -495,6 +495,7 @@ _.Zones =
 				}),
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well
+					["isDaily"] = true,
 				}),
 				-- Bonus Objectives ?? Rares or WQ
 				q(59441, {	-- The Soulsmith

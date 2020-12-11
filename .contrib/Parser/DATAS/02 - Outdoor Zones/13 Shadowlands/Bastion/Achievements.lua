@@ -434,12 +434,12 @@ _.Zones =
 						},
 					}),
 					crit(13, {	-- Gift of Chyrus
+						["description"] = "Kneel in front of the chest.",
 						["objectID"] = 353941,	-- Gift of Chyrus
 						["questID"] = 60892,
 						["coord"] = { 70.4, 36.4, 1533 },
-						["description"] = "Kneel in front of the chest.",
 						["g"] = {
-							i(183988),	-- Bondable Val'kyr Diadem
+							i(183988),	-- Bondable Val'kyr Diadem (TOY!)
 						},
 					}),
 					crit(14, {	-- Gift of Thenios

@@ -154,11 +154,11 @@ _.Zones =
 						}),
 						q(60444, {	-- Challenges in Bastion
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 165291 },	-- The Accuser
-							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["repeatable"] = true,
+							["provider"] = { "n", 165291 },	-- The Accuser
+							["coord"] = { 55.9, 78.0, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181557),	-- Favor of the Court
+								i(181741),	-- Tribute of the Paragon
 							},
 						}),
 						q(60446, {	-- Challenges in Maldraxxus
