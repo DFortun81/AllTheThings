@@ -1231,7 +1231,7 @@ local PrintQuestInfo = function(questID, new, info)
 				return true;
 			end
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
-			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet  .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. 
+			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
 			if searchResults[1].parent and searchResults[1].parent.parent.text == "Hidden Quest Triggers" then
 				questID = questID .. " [HQT]";
@@ -4743,7 +4743,7 @@ local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
 				--[[--

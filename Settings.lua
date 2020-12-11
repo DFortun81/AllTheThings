@@ -34,6 +34,7 @@ app.Settings = settings;
 settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
+settings.ModifierKeys = { "None", "Shift", "Ctrl", "Alt" };
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg", 
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
@@ -135,6 +136,7 @@ local TooltipSettingsBase = {
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
+		["Enabled:Mod"] = "None",
 		["Expand:Difficulty"] = true,
 		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
@@ -187,7 +189,7 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
-	
+
 	-- Assign the default settings
 	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
 	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
@@ -327,6 +329,18 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return AllTheThingsSettings and AllTheThingsSettings.Tooltips[setting];
 end
+-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
+settings.GetTooltipSettingWithMod = function(self, setting)
+	local v = AllTheThingsSettings and AllTheThingsSettings.Tooltips[setting];
+	if not v then return v; end
+	local k = AllTheThingsSettings.Tooltips[setting .. ":Mod"];
+	if k == "None"
+		or (k == "Shift" and IsShiftKeyDown())
+		or (k == "Ctrl" and IsControlKeyDown())
+		or (k == "Alt" and IsAltKeyDown()) then
+		return v;
+	end
+end
 settings.Set = function(self, setting, value)
 	AllTheThingsSettings.General[setting] = value;
 	self:Refresh();
@@ -364,7 +378,7 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 end
 settings.CreateTab = function(self, text)
 	local id = #self.Tabs + 1;
-	local tab = CreateFrame('Button', self:GetName() .. '-Tab' .. id, self, 'OptionsFrameTabButtonTemplate');
+	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "OptionsFrameTabButtonTemplate");
 	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", 0, 0); end
 	table.insert(self.Tabs, tab);
 	self.MostRecentTab = tab;
@@ -372,8 +386,61 @@ settings.CreateTab = function(self, text)
 	tab:SetID(id);
 	tab:SetText(text);
 	PanelTemplates_TabResize(tab, 0);
-	tab:SetScript('OnClick', OnClickForTab);
+	tab:SetScript("OnClick", OnClickForTab);
 	return tab;
+end
+--- Opts:
+---     name (string): Name of the dropdown (lowercase)
+---     items (Table): String table of the dropdown options.
+---     defaultVal (String): String value for the dropdown to default to (empty otherwise).
+---     changeFunc (Function): A custom function to be called, after selecting a dropdown option.
+-- Reference: https://medium.com/@JordanBenge/creating-a-wow-dropdown-menu-in-pure-lua-db7b2f9c0364
+settings.CreateDropdown = function(self, opts, OnRefresh)
+    local dropdown_name = self:GetName() .. "-DD-" .. opts["name"];
+    local menu_items = opts["items"] or {};
+    local title_text = opts["title"] or "";
+    local dropdown_width = 0;
+    local default_val = opts["defaultVal"] or "";
+    local change_func = opts["changeFunc"] or function (dropdown_val) end;
+
+    local dropdown = CreateFrame("Frame", dropdown_name, self, "UIDropDownMenuTemplate");
+    local dd_title = dropdown:CreateFontString(dropdown, "OVERLAY", "GameFontNormal");
+	dd_title:SetPoint("BOTTOMLEFT", dropdown, "TOPLEFT", 20, 0);
+
+ 	-- Sets the dropdown width to the largest item string width.
+    for _, item in ipairs(menu_items) do
+        dd_title:SetText(item);
+        local text_width = dd_title:GetStringWidth() + 20;
+        if text_width > dropdown_width then
+            dropdown_width = text_width;
+        end
+    end
+
+    UIDropDownMenu_SetWidth(dropdown, dropdown_width);
+	UIDropDownMenu_SetText(dropdown, default_val);
+    dd_title:SetText(title_text);
+	dropdown:SetHitRectInsets(0,0,0,0);
+
+    UIDropDownMenu_Initialize(dropdown, function(self, level, _)
+        local info = UIDropDownMenu_CreateInfo();
+        for key, val in pairs(menu_items) do
+            info.text = val;
+            info.checked = false;
+            info.menuList = key;
+            info.hasArrow = false;
+            info.func = function(b)
+                UIDropDownMenu_SetSelectedName(dropdown, b.value, b.value);
+                UIDropDownMenu_SetText(dropdown, b.value);
+                b.checked = true;
+                change_func(dropdown, b.value);
+            end
+            UIDropDownMenu_AddButton(info);
+        end
+    end);
+
+	table.insert(self.MostRecentTab.objects, dropdown);
+	dropdown.OnRefresh = OnRefresh;
+    return dropdown
 end
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox(nil, self:GetText());
@@ -2296,10 +2363,34 @@ DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render 
 DisplayInCombatCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "TOP", 0, 0);
 DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox.Text, "RIGHT", 8, 0);
 
+local TooltipModifierDropdown = settings:CreateDropdown({
+    ["name"] = "TooltipModifier",
+    ["title"] = "Use Modifier",
+    ["items"] = settings.ModifierKeys,
+    ["defaultVal"] = settings:GetTooltipSetting("Enabled:Mod"),
+    ["changeFunc"] = function(dropdown_frame, dropdown_val)
+		settings:SetTooltipSetting("Enabled:Mod", dropdown_val);
+    end
+},
+function(self)
+	local key = settings:GetTooltipSetting("Enabled:Mod");
+	UIDropDownMenu_SetSelectedName(self, key, key);
+	UIDropDownMenu_SetText(self, key);
+	if not settings:GetTooltipSetting("Enabled") then
+		UIDropDownMenu_DisableDropDown(self);
+		self:SetAlpha(0.2);
+	else
+		UIDropDownMenu_EnableDropDown(self);
+		self:SetAlpha(1);
+	end
+end);
+-- TooltipModifierDropdown:SetATTTooltip("TEXT");
+TooltipModifierDropdown:SetPoint("TOP", DisplayInCombatCheckBox, "TOP", 0, 0);
+TooltipModifierDropdown:SetPoint("LEFT", DisplayInCombatCheckBox.Text, "RIGHT", -12, 0);
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
-TooltipShowLabel:SetText("Shown Information:");
+TooltipShowLabel:SetText("Shown Information");
 TooltipShowLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
