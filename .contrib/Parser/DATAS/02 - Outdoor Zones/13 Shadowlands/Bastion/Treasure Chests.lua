@@ -11,6 +11,9 @@ _.Zones =
 					["questID"] = 60795,
 					["isDaily"] = true,
 					["coord"] = { 58.3, 66.2, 1533 },
+					["g"] = {
+						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
+					},
 				}),
 				o(353234, {	-- Gilded Chest
 					["questID"] = 60663,
@@ -20,6 +23,7 @@ _.Zones =
 						{ 24.8, 23.3, 1533 },
 					--	{ 25.6, 26.2, 1533 },
 						{ 27.5, 21.7, 1533 },
+						{ 28.2, 24.8, 1533 },
 					},
 					["g"] = {
 						i(184418),	-- Acrobatic Steward (TOY!)
@@ -132,6 +136,9 @@ _.Zones =
 					["coords"] = {
 						{ 45.6, 33.8, 1533 },
 						{ 59.5, 66.3, 1533 },	-- triggered 60798 / 60799
+					},
+					["g"] = {
+						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 					},
 				}),
 				o(353876, {	-- Virtue of Penitence

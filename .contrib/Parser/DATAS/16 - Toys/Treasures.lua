@@ -17,6 +17,7 @@ _.Toys =
 		i(182780),	-- Muckpool Cookpot
 		i(181825),	-- Phial of Ravenous Slime
 		i(173984),	-- Scroll of Aeons
+		i(184415),	-- Soothing Vesper
 		i(184075),	-- Stonewrought Sentry
 		i(182694),	-- Stylish Black Parasol
 		i(182696),	-- The Countess's Parasol

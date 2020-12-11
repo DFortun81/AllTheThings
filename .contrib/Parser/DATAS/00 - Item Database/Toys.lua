@@ -437,6 +437,7 @@ t(127669);	-- Skull of the Mad Chief
 t(138415);	-- Slightly-Chewed Insult Book
 t(17716);	-- Snowmaster 9000 (Engineering)
 t(137663);	-- Soft Foam Sword
+t(184415);	-- Soothing Vesper
 t(119182);	-- Soul Evacuation Crystal (Alliance)
 t(119163);	-- Soul Inhaler
 t(138202);	-- Sparklepony XL

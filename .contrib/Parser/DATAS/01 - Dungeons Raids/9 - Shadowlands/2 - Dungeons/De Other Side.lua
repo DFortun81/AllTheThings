@@ -13,11 +13,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				q(62458, {	-- De Other Side
-					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
-					["coord"] = { 64.8, 19.7, 1525 },
-					["isBreadcrumb"] = true,
-				}),
 				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
 					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
 					["sourceQuest"] = 62458,	-- De Other Side

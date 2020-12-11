@@ -56,6 +56,10 @@ _.Zones =
 					["lvl"] = { 60 },
 					["requireSkill"] = COOKING,
 				}),
+				q(60534, {	-- Disloyal Denizens
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61549, {	-- Drought Conditions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

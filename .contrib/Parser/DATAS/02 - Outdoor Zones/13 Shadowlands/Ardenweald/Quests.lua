@@ -126,6 +126,11 @@ _.Zones =
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, 1565 },
 				}),
+				q(62458, {	-- De Other Side
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
+					["coord"] = { 64.8, 19.7, 1565 },
+				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["sourceQuests"] = { 57824 },	-- Collection Day
 					["provider"] = { "n", 158969 },	-- Master Sha'lor

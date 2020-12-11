@@ -3191,8 +3191,8 @@ _.HiddenQuestTriggers =
 		q(59507),	-- triggered when signing Tubbins's Contract
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
-		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item
-		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item
+		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item — every time
+		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item — first time only
 		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
 		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily

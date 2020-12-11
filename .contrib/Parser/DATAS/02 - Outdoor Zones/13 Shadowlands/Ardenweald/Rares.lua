@@ -140,6 +140,7 @@ _.Zones =
 					},
 				}),
 				n(165053, {	-- Mymaen
+					["description"] = "Shared spawn with Rotbriar Scrappers.",
 				--	["questID"] = ,
 					["isDaily"] = true,
 					["coord"] = { 62.2, 24.8, 1565 },
