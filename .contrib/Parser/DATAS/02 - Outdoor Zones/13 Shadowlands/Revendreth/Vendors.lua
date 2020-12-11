@@ -57,12 +57,30 @@ _.Zones =
 						i(182746, {	-- All-In-One Belt Repair Kit
 							["cost"] = { { "c", 1820, 5 } },
 							["g"] = {
+								i(182741, {	-- Buckled Cloth Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),
+								i(182742, {	-- Buckled Leather Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),
 								i(182739, {	-- Buckled Chain Belt
 									["cost"] = {
 										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
 										{ "i", 182744, 1 },	-- Ornate Belt Buckle
 									},
 								}),
+								i(182741, {	-- Buckled Plate Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),															
 							},
 						}),
 					},
