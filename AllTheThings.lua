@@ -4743,7 +4743,7 @@ local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
 				--[[--
@@ -4816,7 +4816,7 @@ local function AttachTooltip(self)
 
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
-				if spellID then
+				if spellID and app.Settings:GetTooltipSettingWithMod("Enabled") then
 					-- print("Search spellID",spellID);
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					-- self:Show();
@@ -4830,7 +4830,7 @@ local function AttachTooltip(self)
 
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
-				if link then
+				if link and app.Settings:GetTooltipSettingWithMod("Enabled") then
 					-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
 					-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
 					local itemID = string.match(link, "item:(%d+)");
@@ -4880,7 +4880,7 @@ local function AttachTooltip(self)
 					--]]--
 
 					local encounterID = owner.encounterID;
-					if encounterID and not owner.itemID then
+					if encounterID and not owner.itemID and app.Settings:GetTooltipSettingWithMod("Enabled") then
 						if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
 						AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 						return;
