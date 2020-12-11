@@ -271,6 +271,12 @@ _.Zones =
 						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 						["isDaily"] = true,
 					}),
+					q(62610, {	-- Hyphae Patrol: The Stalks
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
 					q(57455, {	-- Mushroom For Improvement
 						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 						["provider"] = { "n", 157710 },	-- Cortinarius
@@ -1047,11 +1053,12 @@ _.Zones =
 				}),
 				n(TREASURES, {
 					o(356820, {	-- Large Lunarlight Pod
-						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over nearby Lunarlight Buds.",
+						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
 						["repeatable"] = true,	-- ??
 						["questID"] = 61691,
 						["coord"] = { 51.7, 32.3, 1565 },
 						["g"] = {
+							i(181458),	-- Queensguard's Vigil
 							i(181457),	-- Wakener's Frond
 						},
 					}),
