@@ -43,16 +43,20 @@ _.ExpansionFeatures =
 					["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 				}),
 				q(62800, {	-- The Vessels of Jewels
-				--	TODO: add SQs, figure out if any rewards need to be added.  only thing listed is "Unlock the Shadowghast Jewelry recipes at your trainer in Oribos." but uh...what are they.
 					["requireSkill"] = JEWELCRAFTING,
-				--	["sourceQuests"] = {  },	-- 
+					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Jewelcrafting",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(62798, {	-- The Vessels of Leather and Bone
-				--	TODO: add SQs, figure out if any rewards need to be added.  only thing listed is "Unlock the Boneshatter Armor recipes at your trainer in Oribos." but uh...what are they.
 					["requireSkill"] = LEATHERWORKING,
-				--	["sourceQuests"] = {  },	-- 
+					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Leatherworking",
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(62799, {	-- The Vessels of the Thread
+					["requireSkill"] = TAILORING,
+					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
@@ -153,15 +157,48 @@ _.ExpansionFeatures =
 				-- Lockouts
 				-- TODO: Not sure how these all work or if we even want to track them (similar to how Horrific Visions had per-tier loot tracking?)
 				-- Upper Reaches
-				q(59337),	-- Level 1
-				q(61101),	-- Level 2
-				q(61131),	-- Level 3
+				q(59337, {	-- Level 1
+					["isWeekly"] = true,
+				}),
+				q(61101, {	-- Level 2
+					["isWeekly"] = true,
+				}),
+				q(61131, {	-- Level 3
+					["isWeekly"] = true,
+				}),
 
 				-- Soulforges
-				-- q(),	-- Level 1
-				-- q(),	-- Level 2
-				q(58193),	-- Level 3
+				-- q(, {	-- Level 1
+				-- 	["isWeekly"] = true,
+				-- }),
+				-- q(, {	-- Level 2
+				-- 	["isWeekly"] = true,
+				-- }),
+				q(58193, {	-- Level 3
+					["isWeekly"] = true,
+				}),
 
+				-- Skoldus Hall
+				q(59328, {	-- Level 1
+					["isWeekly"] = true,
+				}),
+				q(59329, {	-- Level 2
+					["isWeekly"] = true,
+				}),
+				q(59330, {	-- Level 3
+					["isWeekly"] = true,
+				}),
+
+				-- Coldheart
+				q(58198, {	-- Level 1
+					["isWeekly"] = true,
+				}),
+				q(58199, {	-- Level 2
+					["isWeekly"] = true,
+				}),
+				-- q(, {	-- Level 3
+				-- 	["isWeekly"] = true,
+				-- }),
 				
 			}),
 		}),

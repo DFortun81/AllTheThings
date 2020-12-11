@@ -195,11 +195,10 @@ _.Zones =
 					["coord"] = { 30.7, 58.3, 1543 },
 				}),
 				q(63040, {	-- Guaranteed Delivery
-				--	TODO: add literally everything
-				--	["sourceQuests"] = {  },	-- 
-				--	["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 30.7, 58.3, 1543 },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -332,6 +331,7 @@ _.Zones =
 					["coord"] = { 44.9, 40.9, 1543 },
 				}),
 				q(60622, {	-- The Jailer's Share
+				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },

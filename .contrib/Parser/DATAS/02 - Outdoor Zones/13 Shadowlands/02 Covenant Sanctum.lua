@@ -21,6 +21,8 @@ _.Zones =
 							-- Pets
 							i(180629),	-- Devouring Animite
 							i(182671),	-- Runelight Leaper
+							-- Misc.
+							i(184630),	-- Adventurer's Tailoring Cache
 					},
 				}),
 				n(-901, {	-- Covenant Callings
@@ -31,12 +33,14 @@ _.Zones =
 								-- guessing any box can reward the same set of conduits
 								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
-								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
+								i(182136),	-- Chilled to the Core [Shaman-Enhance]
+								i(181462),	-- Coordinated Offensive [Monk]
+								i(181740),	-- Evasive Stride [Monk]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(182138),	-- Mind Devourer [Priest-Shadow]
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]
-								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
+								i(181742),	-- Walk with the Ox [Monk-Brewmaster]								
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
@@ -52,6 +56,7 @@ _.Zones =
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
+								i(181740),	-- Evasive Stride [Monk] / Source
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
@@ -65,6 +70,7 @@ _.Zones =
 									}),
 								}),
 								-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
+								-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
 								-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
 								-- i(181640),	-- Tumbling Technique [Monk] / Source Drop
 							},

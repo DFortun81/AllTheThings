@@ -132,7 +132,7 @@ _.Zones =
 					},
 				}),
 				n(158025, {	-- Darklord Taraxis
-				--	["questID"] = ,
+					["questID"] = 62282,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
@@ -323,7 +323,7 @@ _.Zones =
 					},
 				}),
 				n(158278, {	-- Nascent Devourer
-				--	["questID"] = ,
+					["questID"] = 57573,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
@@ -436,12 +436,15 @@ _.Zones =
 					},
 				}),
 				n(172524, {	-- Skittering Broodmother
-				--	["questID"] = ,
+					["questID"] = 63386,
 					["isDaily"] = true,
 					["coord"] = { 61.7, 77.6, 1543 },
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(62211, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),

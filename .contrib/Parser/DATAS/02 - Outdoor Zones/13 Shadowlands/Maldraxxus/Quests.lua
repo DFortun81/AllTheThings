@@ -107,6 +107,12 @@ _.Zones =
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
+				q(57284, {	-- Blade of Blades
+					-- ["provider"] = { "n",  },	-- TODO
+					["coord"] = { 27.1, 51.7, 1536 },
+					-- ["sourceQuests"] = {  },	-- ?
+					["isDaily"] = true,
+				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {
 						57986,	-- A Burden Worth Bearing
@@ -687,16 +693,6 @@ _.Zones =
 
 
 				currency(1832, {		-- Renown-Necrolord
-					-- Renown 5
-					-- House of Eyes
-					q(59555, {	-- Enemy at the Door
-						["sourceQuests"] = { 62448 },	-- Securing the House
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.7, 1698 },
-						["g"] = {
-							i(182077),		-- War-Bred Tauralus
-						},
-					}),
 					-- Renown 22
 					-- House of Rituals
 					q(59020, {	-- The Third Fall of Kel'Thuzad

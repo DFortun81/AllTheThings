@@ -3046,7 +3046,7 @@ _.HiddenQuestTriggers =
 		q(62191),	-- Cloudfeather Guardian secondary quest
 		q(63424),	-- Cloudtail secondary quest
 		i(61069),	-- Demi the Relic Hoarder secondary quest
-		q(61802),	-- Echo of Aella kill quest
+		q(61082),	-- Echo of Aella kill quest
 		q(62251),	-- Echo of Aella secondary loot quest
 		q(57705),	-- Herculon kill quest
 		q(62201),	-- Herculon secondary loot quest
@@ -3111,6 +3111,7 @@ _.HiddenQuestTriggers =
 		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
 		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
+		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 
 
@@ -3186,7 +3187,7 @@ _.HiddenQuestTriggers =
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
-		-- q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
+	--	q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
@@ -3205,7 +3206,9 @@ _.HiddenQuestTriggers =
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing Theotar's Toast objective in Ember Court
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
 	--	q(62144),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62146),	-- triggered when completing 'formal' activities? maybe more info...
 	--	q(62148),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
@@ -3243,22 +3246,12 @@ _.HiddenQuestTriggers =
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
-		-- q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
-		-- q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
-		-- q(63383),	-- First kill of Malevolent Stygia
-		-- q(63381),	-- First kill of Krala
+	--	q(63195),	-- triggered randomly in The Maw 12/6/20
+	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
 		-- The Maw rares
-		-- q(63380),	-- Agonix secondary quest
-		-- q(63373),	-- Dartanos secondary quest
-		-- q(61140),	-- Dath Rezara secondary quest
-		-- q(63372),	-- Drifting Sorrow secondary quest
-		-- q(60903),	-- Krala bonus objective
-		-- q(63413),	-- Odalrik secondary quest/first kill?
-		-- q(63375),	-- Orrholyn secondary quest
-		-- q(63388),	-- Ratgusher secondary quest?
-		-- q(63374),	-- Razkazzar secondary quest
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
+	--	q(63384),	-- triggered when killing Sanngror
 		
 		-- Eye of the Jailer Levels
 		q(63382),	-- Mortars/Missiles (1)
@@ -3292,6 +3285,7 @@ _.HiddenQuestTriggers =
 		q(59326),	-- Mort'regar Layer 3
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
+	--	q(61418),	-- Triggered randomly... not sure why?
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

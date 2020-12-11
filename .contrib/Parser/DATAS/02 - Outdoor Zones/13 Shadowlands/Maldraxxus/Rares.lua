@@ -84,6 +84,8 @@ _.Zones =
 					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
 					["g"] = {
 						i(182080),	-- Predatory Plagueroc
+						i(184298),	-- Amalgamated Forsworn's Journal (has dropped twice from this rare)
+						i(181510),	-- Lingering Numbness [Monk] -- Maybe all Rares?
 					},
 				}),
 				n(162588, { -- Gristlebeak

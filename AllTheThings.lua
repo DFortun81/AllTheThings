@@ -1225,7 +1225,7 @@ local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID)
 		if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
-			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+			questID = questID .. " |cffff5c6c(Not in ATT " .. app.Version .. ")|r";
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
@@ -2345,9 +2345,11 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in pairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
+		-- TODO: 120216 only shows priest items in account mode, not on priest
 		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 			if app.RecursiveGroupRequirementsFilter(group) then
+				-- print("display")
 				local right = nil;
 				if group.total and (group.collectible and group.total > 1 or group.total > 0) then
 					total = total + group.total;

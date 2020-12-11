@@ -248,6 +248,7 @@ _.Zones =
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 47.7, 29.1, 1698 },
+						["repeatable"] = true,	-- Even though it is only offered once during the chain, it becomes incomplete later
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -337,6 +338,91 @@ _.Zones =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["sourceQuests"] = { 62694 },	-- A Calling in Maldraxxus
 					}),
+					
+					-- Renown 5
+					-- House of Eyes
+					q(59555, {	-- Enemy at the Door
+						["sourceQuests"] = { 62448 },	-- Securing the House
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.7, 1698 },
+						["g"] = {
+							i(182077),		-- War-Bred Tauralus
+						},
+					}),
+					q(58007, {	-- Eyes on the Problem
+						["coord"] = { 49.7, 50.6, 1698 },
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["sourceQuests"] = { 59555 },	-- Enemy at the Door
+					}),
+					q(57649, {	-- Whisper of Hope
+						["coord"] = { 50.8, 24.4, 1536 },
+						["provider"] = { "n", 164619 },	-- Baroness Vashj
+						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
+					}),
+					q(59265, {	-- Prying Eyes
+						["coord"] = { 50.8, 24.4, 1536 },
+						["provider"] = { "n", 164619 },	-- Baroness Vashj
+						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
+					}),
+					-- TODO: may be a quest or two missing here? same screenshot in discord like 3 times with different provider/sq info >_<
+					q(61230, {	-- Outside Influence
+						["coord"] = { 50.0, 17.9, 1536 },
+						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
+						["sourceQuests"] = { 
+							57649,	-- Whisper of Hope
+							59265,	-- Prying Eyes
+						},	-- Eyes on the Problem
+					}),
+					q(61226, {	-- Extra Limbs
+						["coord"] = { 49.9, 17.8, 1536 },
+						["provider"] = { "n", 158529 },	-- Whisperer Vyn
+						["sourceQuests"] = { 59265 },	-- Prying Eyes	-- TODO: not sure if this is correct...
+					}),
+					q(61227, {	-- The Other Foot
+						["coord"] = { 49.9, 17.8, 1536 },
+						["provider"] = { "n", 164646 },	-- Baroness Vashj
+						["sourceQuests"] = { 61230 },	-- Outside Influence	-- TODO: not sure if this is correct...
+					}),
+					q(57644, {	-- No Friend Left Behind
+						["coord"] = { 52.0, 16.9, 1536 },
+						["provider"] = { "n", 158604 },	-- Navigator Xennir
+						["sourceQuests"] = { 61226 },	-- Extra Limbs
+					}),
+					q(61252, {	-- Call In a Favor
+						["coord"] = { 54.2, 16.2, 1536 },
+						["provider"] = { "n", 173343 },	-- Ascended Bearer
+						["sourceQuests"] = { 61230 },	-- Outside Influence
+					}),
+					q(61335, {	-- Rage Against the Cage
+						["coord"] = { 48.6, 18.5, 1536 },
+						["provider"] = { "n", 159814 },	-- Ansid the Mechanic
+						["sourceQuests"] = { 61227 },	-- The Other Foot
+					}),
+					q(61323, {	-- See What You've Done
+						["coord"] = { 49.9, 17.8, 1536 },
+						["provider"] = { "n", 158529 },	-- Whisperer Vyn
+						["sourceQuests"] = { 
+							61335,	-- Rage Against the Cage
+							57644,	-- No Friend Left Behind
+							61252,	-- Call In a Favor
+						},
+					}),
+					q(57648, {	-- The Impossible Plan
+						["coord"] = { 50.7, 15.5, 1536 },
+						["provider"] = { "n", 160518 },	-- Whisperer Vyn
+						["sourceQuests"] = { 61323 },	-- See What You've Done
+					}),
+					q(62169, {	-- Eyes to the Sky
+						["coord"] = { 49.7, 50.6, 1536 },
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["sourceQuests"] = { 57648, }	-- The Impossible Plan
+					}),
+					q(60110, {	-- Never Had A Friend Like Me
+						["coord"] = { 38.3, 36.7, 1698 },
+						["provider"] = { "n", 172512 },	-- Emeni <The Slaughter Daughter>
+						["sourceQuests"] = { 60048, }	-- Stitching Time -- TODO: not 100% certain on this
+					}),
+					
 
 
 					-- Weekly Quests
@@ -352,7 +438,7 @@ _.Zones =
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory
 						-- Tier 1: Build a Buddy
-						q(59042, {	-- A Bountiful Haul
+						q(61510, {	-- A Bountiful Haul
 							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 							["isWeekly"] = true,
 						}),
@@ -489,6 +575,23 @@ _.Zones =
 						-- Tier 3: Flying Fortress
 				}),
 				n(TREASURES, {
+					o(1278968757, {	-- Treasure: House of the Chosen -- TODO: proper objectID
+						["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
+						["questID"] = 61647,
+						-- ["coord"] = {  },
+						["isDaily"] = true,
+						["g"] = {
+							o(1278968766, {	-- Rune -- TODO: proper objectID?
+								["questID"] = 61648,
+							}),
+							o(1278968767, {	-- Rune -- TODO: proper objectID?
+								["questID"] = 61649,
+							}),
+							o(1278968768, {	-- Rune -- TODO: proper objectID?
+								["questID"] = 61650,
+							}),
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>

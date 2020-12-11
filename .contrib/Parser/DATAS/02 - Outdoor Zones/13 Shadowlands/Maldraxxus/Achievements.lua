@@ -169,8 +169,17 @@ _.Zones =
 					}),
 					crit(7, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos
+						["description"] = "Accessible once unlocked via the Chain in the other room.\nTreasure will respawn about 5 minutes after being clicked by any player",
 						["coord"] = { 22.5, 30.5, 1536 },
-						--["questID"] = ,
+						["questID"] = 58710,
+						["g"] = {
+							o(1278968750, {	-- TODO: fix objectID Hanging Chain
+								["coord"] = { 25.8, 53.9, 1536 },
+								["description"] = "A clickable, hanging chain required to open the gate to the Forgotten Momentos treasure",
+								["questID"] = 58709,
+								["repeatable"] = true,
+							}),
+						},
 					}),
 					crit(8, {	-- Chest of Eyes
 						["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then just turn right and walk up the cliff to it.",

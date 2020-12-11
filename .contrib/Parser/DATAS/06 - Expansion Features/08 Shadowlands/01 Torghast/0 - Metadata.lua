@@ -9,6 +9,7 @@ _.ExpansionFeatures =
 			["coord"] = { 48.2, 39.4, 1543 },	-- Torghast Portal in The Maw
 			["icon"] = 3642306,
 			["maps"] = {
+				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
 				1635,	-- Fracture Chambers - Layer 1, Floor 1
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
@@ -33,6 +34,14 @@ _.ExpansionFeatures =
 				1757,	-- Mort'regar - Layer 2, Floor 5
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
+				1766,	-- Skoldus Hall - Layer 3 - Floor 2
+				1803,	-- Skoldus Hall - Layer 3 - Floor 4
+				1804,	-- Skoldus Hall - Layer 3 - Floor 5
+				--
+				1798,	-- Coldheart - Layer 2 - Floor 1
+				1795,	-- Coldheart - Layer 2 - Floor 2
+				1631,	-- Coldheart - Layer 2 - Floor 4
+				--
 				1764,	-- Fracture Chambers - Layer 2, Floor 2
 				1618,	-- Torghast
 				1620,	-- Torghast
@@ -53,7 +62,6 @@ _.ExpansionFeatures =
 				1762,	-- TG47_Floor
 				1763,	-- Arkoban Hall - Floor 5
 				1765,	-- TG54_Floor
-				1766,	-- 
 				1769,	-- Arkoban Hall - Floor 6
 				1771,	-- TG61_Floor
 				1772,	-- TG62_Floor

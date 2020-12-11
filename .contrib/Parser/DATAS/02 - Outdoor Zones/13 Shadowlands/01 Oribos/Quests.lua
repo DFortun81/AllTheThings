@@ -448,6 +448,8 @@ _.Zones =
 						62739,	-- Restoring Balance
 					},
 					["g"] = {
+						i(179562),	-- Duskwarder Branch
+						i(179517),	-- Duskwarder Censor
 						i(179532),	-- Duskwarder Scythe
 						-- TODO: more rewards
 					},
@@ -463,6 +465,9 @@ _.Zones =
 						62707,	-- The Elysian Fields
 					},
 					["g"] = {
+						i(181637),	-- Lifepath Hammer
+						i(181636),	-- Memoria Spellblade
+						i(181631),	-- Requiem Chime
 						-- TODO: more rewards
 					},
 				}),
