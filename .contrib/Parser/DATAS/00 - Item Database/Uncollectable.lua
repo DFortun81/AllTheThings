@@ -196,6 +196,7 @@ i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
+i(182955);	-- Cypher of Dampening
 i(182688);	-- Cypher of Obfuscation
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)

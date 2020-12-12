@@ -426,7 +426,7 @@ _.Zones =
 					},
 				}),
 				n(170634, {	-- Shadeweaver Zeris
-				--	["questID"] = ,
+					["questID"] = 60884,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {

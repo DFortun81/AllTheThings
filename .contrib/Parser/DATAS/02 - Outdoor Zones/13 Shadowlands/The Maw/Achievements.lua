@@ -163,14 +163,30 @@ _.Zones =
 				ach(14895, {	-- Ghast Five
 					ach(14894),		-- To 'Ghast, Two Curios
 				}),
+				ach(14745, {	-- Grand Theft Shadehound
+				--	["crs"] = {  },	-- TODO: add if possible (is it an NPC or an object?)
+				}),
 				ach(14334, {	-- Into the Maw
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				ach(14660, {	-- It's About Sending a Message
 					ach(14659),	-- Handling His Henchmen
 				}),
+				ach(14747, {	-- Make it Double!
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+				}),
 				ach(14746, {	-- Prepare for Trouble!
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				}),
+				ach(14658, {	-- Soulkeeper's Burden
+					["crs"] = {
+					--	TODO: add interactable souls' IDs
+					},
+				}),
+				ach(14742, {	-- Who Sent You?
+					["crs"] = {
+					--	TODO: add assassin's ID(s?)... figure out if all assassins share or if yours+others are different, i guess, or if you get credit for killing the assassins of others
+					},
 				}),
 			}),
 		}),
