@@ -160,6 +160,9 @@ _.Zones =
 						-- ["coords"] = { },
 					}),
 				}),
+				ach(14895, {	-- Ghast Five
+					ach(14894),		-- To 'Ghast, Two Curios
+				}),
 				ach(14334, {	-- Into the Maw
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
