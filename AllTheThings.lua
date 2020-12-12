@@ -2969,32 +2969,54 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not group.g then
 			local merged = {};
 			local skipped = {};
+			-- TODO: make this work for everything. clearly.
+			-- local preMergeTotal = #group;
+			-- -- First add only groups which meet the current filters
+			-- -- print("-final group-",#group,paramA,paramB)
+			-- for i,o in ipairs(group) do
+			-- 	-- print(o.key,o[o.key])
+			-- 	-- do not include the exact matching group as part of the set contained by the search group if it contains things itself
+			-- 	if o[paramA] ~= paramB and o.g then
+			-- 		if app.RecursiveGroupRequirementsFilter(o) then
+			-- 			MergeObject(merged, CreateObject(o));
+			-- 			-- print("add",o.hash);
+			-- 			-- print("total merged",#merged);
+			-- 		else
+			-- 			-- print("skip",o.hash);
+			-- 			tinsert(skipped, o);
+			-- 		end
+			-- 	-- the exact matching group contains things itself
+			-- 	elseif o.g then
+			-- 		-- pull the 'g' objects out of the matching group into the set of things it contains
+			-- 		for gi=1,#o.g do
+			-- 			if app.RecursiveGroupRequirementsFilter(o.g[gi]) then
+			-- 				MergeObject(merged, CreateObject(o.g[gi]));
+			-- 			else
+			-- 				tinsert(skipped, o.g[gi]);
+			-- 			end
+			-- 		end
+			-- 	-- a single object met the criteria, then just use that one object
+			-- 	elseif preMergeTotal == 1 then
+			-- 		tinsert(merged,o);
+			-- 	end
+			-- end
+			-- -- print("---")
+			-- -- then merge any skipped groups
+			-- for i,o in ipairs(skipped) do
+			-- 	MergeObject(merged, CreateObject(o));
+			-- 	-- print("merge",o.hash);
+			-- end
 			-- First add only groups which meet the current filters
-			-- print("-final group-",paramA,paramB)
 			for i,o in ipairs(group) do
-				-- print(o.key,o[o.key])
-				-- do not include the exact matching group as part of the set contained by the search group
-				if o[paramA] ~= paramB then
-					if app.RecursiveGroupRequirementsFilter(o) then
-						MergeObject(merged, CreateObject(o));
-						-- print("add",o.hash);
-						-- print("total merged",#merged);
-					else
-						-- print("skip",o.hash);
-						tinsert(skipped, o);
-					end
-				elseif o.g then
-					-- pull the 'g' objects out of the matching group into the set of things it contains
-					for gi=1,#o.g do
-						if app.RecursiveGroupRequirementsFilter(o.g[gi]) then
-							MergeObject(merged, CreateObject(o.g[gi]));
-						else
-							tinsert(skipped, o.g[gi]);
-						end
-					end
+				if app.RecursiveGroupRequirementsFilter(o) then
+					MergeObject(merged, CreateObject(o));
+					-- print("add",o.hash);
+					-- print("total merged",#merged);
+				else
+					-- print("skip",o.hash);
+					tinsert(skipped, o);
 				end
 			end
-			-- print("---")
 			-- then merge any skipped groups
 			for i,o in ipairs(skipped) do
 				MergeObject(merged, CreateObject(o));
@@ -3033,16 +3055,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				
 				group = CreateObject({ [paramA] = paramB });
 				group.g = merged;
+				-- print("multi-merge",#group.g)
 			end
 
 			-- Append any crafted things using this group
 			app.BuildCrafted(group, 10);
 
 			-- Append currency info to any orphan currency groups
-			app.BuildCurrencies(group);
+			app.BuildCurrencies(group); -- TODO: this is broke now
 
 			group.total = 0;
 			group.progress = 0;

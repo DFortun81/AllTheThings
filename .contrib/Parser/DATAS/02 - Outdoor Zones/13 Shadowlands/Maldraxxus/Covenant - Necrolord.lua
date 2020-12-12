@@ -594,7 +594,7 @@ _.Zones =
 					o(1278968757, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 						["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 						["questID"] = 61647,
-						-- ["coord"] = {  },
+						["coord"] = { 38.0, 65.6, 1536 },
 						["isDaily"] = true,
 						["g"] = {
 							o(1278968766, {	-- Rune -- TODO: proper objectID?
