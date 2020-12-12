@@ -9692,7 +9692,7 @@ function app:CreateMiniListForGroup(group)
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 			end;
-		elseif group.questID and group.sourceQuests then
+		elseif group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 				group = group.parent;
