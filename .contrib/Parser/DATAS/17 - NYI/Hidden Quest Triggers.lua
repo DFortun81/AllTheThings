@@ -1255,6 +1255,7 @@ _.HiddenQuestTriggers =
 
 		q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
 		q(40703),	-- Druid Order Hall - Restoration Chosen (First)
+		q(43979),	-- Druid Order Hall - Resto Chosen (second)
 		q(40781),	-- Druid Order Hall - Balance Chosen (First)
 		q(43976),	-- Druid Order Hall - Balance Chosen (Second)
 		q(44432),	-- Druid Order Hall - Balance Chosen (Third)
@@ -1275,6 +1276,7 @@ _.HiddenQuestTriggers =
 		q(44642),	-- Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
 		q(42361),	-- Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
 		q(42363),	-- Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
+		q(42513),	-- Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
 
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -2831,6 +2833,7 @@ _.HiddenQuestTriggers =
 		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
 		q(57562),	-- Amathet Assault Tracker — triggered when logging in
 		q(57564),	-- Mantid Assault Tracker — triggered when logging in
+		q(57563),	-- Mogu Assault Tracker — triggered when logging in
 		q(57566),	-- N'Zoth Assault Tracker (Uldum) — triggered when logging in
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache

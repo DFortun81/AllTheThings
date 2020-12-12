@@ -235,8 +235,8 @@ _.Zones =
 					["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 				}),
 				q(40643, {	-- A Summons From Moonglade
-					["classes"] = { DRUID },
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
+					["classes"] = { DRUID },
 				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["sourceQuests"] = {
@@ -442,7 +442,7 @@ _.Zones =
 				q(44550, {	-- Called to Acherus
 					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
 					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 42449, -- Return of the Four Horseman
+					["sourceQuests"] = { 42449 }, -- Return of the Four Horseman
 					["isBreadcrumb"] = true,
 				}),
 				q(48021, {	-- Chromie
