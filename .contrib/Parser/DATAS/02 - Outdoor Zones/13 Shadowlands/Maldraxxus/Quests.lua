@@ -695,20 +695,6 @@ _.Zones =
 				currency(1832, {		-- Renown-Necrolord
 					-- Renown 22
 					-- House of Rituals
-					q(59020, {	-- The Third Fall of Kel'Thuzad
-						["provider"] = { "n", 168381 },	-- Baroness Draka
-						["coord"] = { 50.3, 67.7, 1536 },
-						["g"] = {
-							i(181822),		-- Armored War-Bred Tauralus
-						},
-					}),
-					q(61761, {	-- The Better Part of Valor
-						--["provider"] = { "n", 168381 },	-- Baroness Draka
-						--["coord"] = { 50.3, 67.7, 1536 },
-						["g"] = {
-							i(183847),		-- Acolyte's Guise
-						},
-					}),
 				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain

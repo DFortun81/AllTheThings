@@ -170,7 +170,9 @@ _.Zones =
 							},
 						}),
 						i(180713),	-- Shrieker's Voicebox
-						i(180461),	-- Horrid Dredwing
+						i(180461, {	-- Horrid Dredwing (MOUNT!)
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+						}),
 						i(183720),	-- Dredbatskin Jerkin
 					},
 				}),
@@ -184,7 +186,9 @@ _.Zones =
 						crit(17, {	-- Hopecrusher
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180581),	-- Hopecrusher Gargon
+						i(180581, {	-- Hopecrusher Gargon (MOUNT!)
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+						}),
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus

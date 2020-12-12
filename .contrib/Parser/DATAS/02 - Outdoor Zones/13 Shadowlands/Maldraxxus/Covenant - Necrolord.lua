@@ -422,8 +422,24 @@ _.Zones =
 						["provider"] = { "n", 172512 },	-- Emeni <The Slaughter Daughter>
 						["sourceQuests"] = { 60048, }	-- Stitching Time -- TODO: not 100% certain on this
 					}),
-					
 
+					-- TODO: moved these here from Maldraxxus quests file, but don't think they made it out of beta; commenting out for now
+					--[[
+					q(59020, {	-- The Third Fall of Kel'Thuzad
+						["provider"] = { "n", 168381 },	-- Baroness Draka
+						["coord"] = { 50.3, 67.7, 1536 },
+						["g"] = {
+							i(181822),		-- Armored War-Bred Tauralus
+						},
+					}),
+					q(61761, {	-- The Better Part of Valor
+						--["provider"] = { "n", 168381 },	-- Baroness Draka
+						--["coord"] = { 50.3, 67.7, 1536 },
+						["g"] = {
+							i(183847),		-- Acolyte's Guise
+						},
+					}),
+					--]]
 
 					-- Weekly Quests
 					q(61983, {	-- Replenish the Reservoir

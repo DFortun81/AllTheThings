@@ -83,7 +83,9 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
 					["g"] = {
-						i(182080),	-- Predatory Plagueroc
+						i(182080, {	-- Predatory Plagueroc (MOUNT!)
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+						}),
 						i(184298),	-- Amalgamated Forsworn's Journal (has dropped twice from this rare)
 						i(181510),	-- Lingering Numbness [Monk] -- Maybe all Rares?
 					},
@@ -218,7 +220,9 @@ _.Zones =
 						crit(12, {	-- Tahonta
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(182075),	-- Bonehoof Tauralus
+						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
 				}),
@@ -227,7 +231,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(7)),	-- Adventurer of Maldraxxus / Taskmaster Xox <Master Taskmaster>
+						crit(7, {	-- Taskmaster Xox
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 					},
 				}),
 				n(-922,   {	-- Theater of Pain
@@ -274,8 +280,10 @@ _.Zones =
 								crit(7, {	-- Sabriel the Bonecleaver
 									["achievementID"] = 14802,	-- Bloodsport
 								}),
-								i(182083),	-- Bonecleaver'S Skullboar
-								i(181815),	-- Armored Bonehoof Tauralus
+								i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
+									["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+								}),
+								i(182083),	-- Bonecleaver's Skullboar (MOUNT!)
 							},
 						}),
 						n(162874, {	-- Ti'or

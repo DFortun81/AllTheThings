@@ -21,6 +21,9 @@ _.Mounts =
 		i(45725),	-- Argent Hippogryph
 		i(47180),	-- Argent Warhorse
 		i(44690),	-- Armored Blue Wind Rider
+		i(181815, {	-- Armored Bonehoof Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(44225, {	-- Armored Brown Bear [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -28,7 +31,9 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(116665),	-- Armored Irontusk
-		i(181821),	-- Armored Plaguerot Tauralus
+		i(181821, {	-- Armored Plaguerot Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(44689),	-- Armored Snowy Gryphon
 		i(103638),	-- Ashhide Mushan Beast
 		i(87781),	-- Azure Riding Crane
@@ -84,7 +89,6 @@ _.Mounts =
 		i(89307),	-- Blue Shado-Pan Riding Tiger
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
-		i(182075),	-- Bonehoof Tauralus
 		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
@@ -176,7 +180,7 @@ _.Mounts =
 			["cost"] = { { "c", 1813, 2500 } },
 		}),
 		i(180765, {	-- Eternal Phalynx of Purity
-			["cost"] = { { "c", 1813, 100 } },
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
 		i(45590),	-- Exodar Elekk
 		i(45597),	-- Forsaken Warhorse
@@ -266,6 +270,9 @@ _.Mounts =
 		i(87788),	-- Grey Riding Yak
 		i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
 		i(87774),	-- Heavenly Golden Cloud Serpent
+		i(180461, {	-- Horrid Dredwing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant only
+		}),
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
 			["classes"] = { HUNTER },
 		}),
@@ -299,16 +306,19 @@ _.Mounts =
 		i(45595),	-- Orgrimmar Wolf
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
+		i(180762, {	-- Phalynx of Humility
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(180761, {	-- Phalynx of Loyalty
-			["cost"] = { { "c", 1813, 1000 } },
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
 		i(180764, {	-- Phalynx of Purity
-			["cost"] = { { "c", 1813, 2500 } },
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
-		i(180761),	-- Phalynx of Loyalty
 		i(2414),	-- Pinto
 		i(182076, {	-- Plaguerot Tauralus
-			["cost"] = { { "c", 1813, 2500 } },
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+            ["cost"] = { { "c", 1813, 5000 } },
 		}),
 		i(166463, {	-- Priestess' Moonsaber
 			["races"] = ALLIANCE_ONLY,
@@ -533,7 +543,9 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(174770),	-- Wicked Swarmer
-		i(180730),	-- Wild Glimmerfur Prowler
+		i(180730, {	-- Wild Glimmerfur Prowler
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },

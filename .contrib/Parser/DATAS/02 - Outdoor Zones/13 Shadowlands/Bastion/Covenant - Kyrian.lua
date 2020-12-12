@@ -718,10 +718,13 @@ _.Zones =
 						--["coord"] = { x.x, y.y, zzzz },
 						-- TODO: Add the other 29 items that he sells
 						i(180762, {	-- Phalynx of Humility (MOUNT)
-							-- TODO: fix this ["cost"] = { { "c", 1813, 100 } },
+							["cost"] = { 
+								{ "c", 1813, 5000 },
+								{ "c", 1885, 100 },
+							},
 						}),
 						i(180764, {	-- Phalynx of Purity (MOUNT)
-							-- TODO: fix this ["cost"] = { { "c", 1813, 2500 } },
+							["cost"] = { { "c", 1813, 5000 } },
 						}),
 						i(184353),	-- Kyrian Hearthstone (TOY)
 					}),
@@ -906,6 +909,22 @@ _.Zones =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 						}),
+					}),
+					n(171973, {	-- Binkiros <Mount Vendor>
+						-- TODO: verify items sold and costs as these are probably outdated
+						i(180767, {	-- Eternal Phalynx of Loyalty
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180768, {	-- Eternal Phalynx of Humility
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180761, {	-- Phalynx of Loyalty
+							["cost"] = { { "c", 1813, 1000 } },
+						}),
+						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
 					}),
 					n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
 						-- TODO: Fill in coords
@@ -1095,6 +1114,20 @@ _.Zones =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 						}),
+					}),
+					n(171981,	{	-- Zeleskos <Pet Vendor>
+						-- TODO: verify items sold and costs as these are probably outdated
+						--["coord"] = { 52.2, 47.0, 1533 },
+						["g"] = {
+							i(184398, {	-- Steward Featherling
+								["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+							}),
+							i(180871),	-- Indigo
+							i(180628),	-- Pearlwing Heron
+							i(180639),	-- Dusty Sporeflutterer
+							i(180814),	-- Sable
+							i(180815),	-- Brightscale Hatchling
+						},
 					}),
 				}),
 			}),

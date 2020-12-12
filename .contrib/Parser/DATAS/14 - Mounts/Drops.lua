@@ -13,7 +13,9 @@ _.Mounts =
 		i(94230),	-- Amber Primordial Direhorn
 		i(152816),	-- Antoran Charhound
 		i(182650),	-- Arboreal Gulper
-		i(181815),	-- Armored Bonehoof Tauralus
+		i(181815, {	-- Armored Bonehoof Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+		}),
 		i(116669),	-- Armored Razorback
 		i(68823),	-- Armored Razzashi Raptor
 		i(183741),	-- Ascended Skymane
@@ -31,6 +33,9 @@ _.Mounts =
 		i(153043),	-- Blessed Felcrusher Mount
 		i(182085),	-- Blisterback Bloodtusk
 		i(182083),	-- Bonecleaver's Skullboar
+		i(182075, {	-- Bonehoof Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+		}),
 		i(166468),	-- Bloodgorged Hunter
 		i(116659),	-- Bloodhoof Bull
 		i(43953),	-- Blue Drake
@@ -83,8 +88,12 @@ _.Mounts =
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
 		i(147807),	-- Highmountain Elderhorn
-		i(180461),	-- Horrid Dredwing
-		i(180581),	-- Hopecrusher Gargon
+		i(180581, {	-- Hopecrusher Gargon
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+		}),
+		i(180461, {	-- Horrid Dredwing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+		}),
 		i(184161),	-- Infested Necroray
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
@@ -118,9 +127,13 @@ _.Mounts =
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
 		i(184162),	-- Pestilent Necroray
-		i(180762),	-- Phalynx of Humility
+		i(180762, {	-- Phalynx of Humility
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(63042),	-- Phosphorescent Stone Drake
-		i(182080),	-- Predatory Plagueroc
+		i(182080, {	-- Predatory Plagueroc
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+		}),
 		i(69224),	-- Pureblood Fire Hawk
 		i(163582),  -- Qinsho's Eternal Hound
 		i(32768),	-- Raven Lord
@@ -183,7 +196,9 @@ _.Mounts =
 		i(116780),	-- Warsong Direfang
 		i(174753),	-- Waste Marauder
 		i(147804),	-- Wild Dreamrunner
-		i(180730),	-- Wild Glimmerfur Prowler
+		i(180730, {	-- Wild Glimmerfur Prowler
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
+		}),
 		i(180731),	-- Wildseed Cradle
 		i(163706),	-- Witherbark Direwing
 		i(174840),	-- Xinlao

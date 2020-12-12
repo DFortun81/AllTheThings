@@ -996,6 +996,13 @@ _.Zones =
 						n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
 							["coord"] = { 54.0, 25.6, 1699 },
 							["g"] = {
+								i(180461, {	-- Horrid Dredwing (MOUNT)
+									["cost"] = { 
+										{ "c", 1813, 5000 },
+										{ "c", 1885, 100 },
+									},
+								}),
+								-- TODO: these costs and items below are outdated, need to verify all
 								i(183715, {	-- Sinfall Gargon
 									["cost"] = { { "c", 1816, 2000 } },
 								}),

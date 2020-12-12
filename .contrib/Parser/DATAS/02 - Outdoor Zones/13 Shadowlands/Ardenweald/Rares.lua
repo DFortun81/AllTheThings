@@ -346,7 +346,9 @@ _.Zones =
 						crit(19, {	-- Valfir the Unrelenting
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
+						i(180730, {	-- Wild Glimmerfur Prowler (MOUNT!)
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
+						}),
 						i(180154),	-- Greataxe of Unrelenting Pursuit
 						i(182176, {	-- Shadowstalker Soul
 							["questID"] = 62431,	-- Shadowstalker Soul
