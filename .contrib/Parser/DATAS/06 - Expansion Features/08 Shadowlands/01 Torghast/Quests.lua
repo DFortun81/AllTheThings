@@ -68,6 +68,12 @@ _.ExpansionFeatures =
 
 				-- Champion Unlocks
 				-- TODO: move to covenant files
+				q(61424, {	-- Champion: Chalkyth [Night Fae]
+					["provider"] = { "n", 172240 },	-- Chalkyth
+					["g"] = {
+						follower(1280)	-- Chalkyth
+					},
+				}),
 				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
 					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 					["g"] = {
@@ -87,7 +93,7 @@ _.ExpansionFeatures =
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
 					},
 				}),
-				q(61426, {	-- Champion: Yira'lya
+				q(61426, {	-- Champion: Yira'lya [Night Fae]
 					["provider"] = { "n", 172243 },	-- Yira'lya
 					["g"] = {
 						follower(1282)	-- Yira'lya
@@ -122,6 +128,10 @@ _.ExpansionFeatures =
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				-- Bonus Quests
+				q(61430, {	-- Chalkyth's Saber
+					["repeatable"] = true,
+					["provider"] = { "n", 172240 },	-- Chalkyth
+				}),
 				q(59777, {	-- Help Calix find Amethia
 					["repeatable"] = true,
 					["provider"] = { "n", 166147 },	-- Calix
