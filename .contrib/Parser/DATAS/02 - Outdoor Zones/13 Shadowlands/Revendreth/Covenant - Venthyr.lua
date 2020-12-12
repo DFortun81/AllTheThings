@@ -54,11 +54,11 @@ _.Zones =
 						}),
 						q(60397, {	-- Aiding Maldraxxus
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 165302 },	-- Rendle
-							--["coord"] = { , 1525 },
 							["repeatable"] = true,
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.0, 76.1, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181732),	-- 	Tribute of the Ambitious
 							},
 						}),
 						q(60399, {	-- Aiding Revendreth

@@ -18,6 +18,7 @@ _.Zones =
 					i(181594),	-- Forgehand's Sabatons
 					i(181602),	-- Forgehand's Spaulders
 					i(181604),	-- Forgehand's Wristguards
+					i(181636),	-- Memoria Spellblade
 					i(181631),	-- Requiem Chime
 					i(181605),	-- Shieldguard's Breastplate
 					i(181608),	-- Shieldguard's Gauntlets

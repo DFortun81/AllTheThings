@@ -205,19 +205,19 @@ _.Zones =
 				}),
 				n(171699, {	-- Shimmermist Runner
 					["coords"] = {
-						{  31.04, 54.51, 1565 },	-- start
-						{  29.60, 55.76, 1565 },	-- 1
-						{  30.02, 57.49, 1565 },	-- 2
-						{  29.56, 57.91, 1565 },	-- 3
-						{  29.31, 59.10, 1565 },	-- 4
-						{  28.82, 58.71, 1565 },	-- 5
-						{  27.56, 57.85, 1565 },	-- 6
+						{  31.0, 54.5, 1565 },	-- start
+						{  29.6, 56.3, 1565 },	-- 1
+						{  29.8, 57.8, 1565 },	-- 2
+						{  29.2, 58.5, 1565 },	-- 3
+						{  28.9, 58.8, 1565 },	-- 4
+						{  28.1, 58.1, 1565 },	-- 5
+						{  27.5, 57.8, 1565 },	-- 6
 					},
-					["description"] = "Enter the Maze in Oaken Assembly on (31.04, 54.51).\n\n On the 1st intersection at (29.60, 55.76) go LEFT/SOUTH-EAST.\n\n On the 2nd intersection at (30.02, 57.49) go RIGHT/SOUTH-WEST.\n\n On the 3rd intersection at (29.56, 57.91) go LEFT/SOUTH.\n\n On the 4th intersection at (29.31, 59.10) go RIGHT/NORTH-WEST.\n\n On the 5th intersection at (28.82, 58.71) go FORWARD/NORTH-WEST.\n\n On the 6th and last intersection at (27.56, 57.85) go LEFT/WEST into the Area.\n\n You can now engage Shizgher.\n\n After defeating Shizgher you can click Shimmermist Runner and the mount Shimmermist Runner will be put in your bag.",
-					["crs"] = { 171767 },	-- Shizgher
+					["description"] = "To complete the maze correctly, follow the blue lanterns at every step.\n\n1. Enter Mistveil Tangle through the Oaken Assembly at |cFFFFFFFF31.0, 54.5|r.  Two blue lanterns hang on either side of a vine arch.\n\n2. Head down the hill and turn left at |cFFFFFFFF29.6, 56.3|r.  Again, two blue lanterns hang on either side of a vine arch.\n\n3. Turn right at |cFFFFFFFF29.8, 57.8|r.  A single blue lamp hangs from the vine arch.\n\n4. Turn left at |cFFFFFFFF29.2, 58.5|r.  A single blue lamp is on the ground.\n\n5. Immediately turn right through the arch at |cFFFFFFFF28.9, 58.8|r.  A single blue lamp hangs on the left side.\n\n6. Go through the arch at |cFFFFFFFF28.1, 58.1|r.  A single blue lamp is on the ground on the right side of the arch.\n\n7. Go straight to the area on the map where the Tame Gladerunner treasure is displayed.  If you've done the maze correctly Shizgher will not fade out of view.  Defeat him, and then click on the Shimmermist Runner to collect it.",
 					["questID"] = 61192,
+					["crs"] = { 171767 },	-- Shizgher
 					["g"] = {
-						i(180727),		-- Shimmermist Runner
+						i(180727),		-- Shimmermist Runner (MOUNT!)
 					},
 				}),
 				n(164415, {	-- Skuld Vit

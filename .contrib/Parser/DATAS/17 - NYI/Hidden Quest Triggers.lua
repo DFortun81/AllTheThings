@@ -3062,6 +3062,7 @@ _.HiddenQuestTriggers =
 		--	Bastion Treasures
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
+		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
