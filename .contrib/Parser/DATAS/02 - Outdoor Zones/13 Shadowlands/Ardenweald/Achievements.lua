@@ -8,12 +8,15 @@ _.Zones =
 		m(1565, {	-- Ardenweald
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				--	TODO: finish adding criteria here/in other zones as pets are found
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Briarpaw
 							["coord"] = { 34.2, 44.4, 1565 },
 							["crs"] = { 175778 },	-- Briarpaw
+						}),
+						crit(3, {	-- Chittermaw
+							["coord"] = { 26.6, 62.0, 1565 },
+							["crs"] = { 175779 },	-- Chittermaw
 						}),
 						crit(4, {	-- Mistwing
 							["coord"] = { 49.8, 41.6, 1565 },
@@ -23,6 +26,8 @@ _.Zones =
 				}),
 				ach(14774, {	-- Ardenweald Gourmand
 					["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
+					["coord"] = { 65.0, 19.6, 1565 },
+					["crs"] = { 164725 },	-- Tanor <Food & Drink>
 					["g"] = {
 						crit(1),		-- Glittersnap Snowpeas
 						crit(2),		-- Glazed Glowberries

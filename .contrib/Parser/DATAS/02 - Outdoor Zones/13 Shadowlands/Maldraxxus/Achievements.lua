@@ -8,7 +8,6 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				--	TODO: finish adding criteria here + other SL zones
 					["collectible"] = false,
 					["g"] = {
 						crit(8, {	-- Gelatinous
