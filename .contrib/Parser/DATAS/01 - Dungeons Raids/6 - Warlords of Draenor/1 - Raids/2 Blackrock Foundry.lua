@@ -597,222 +597,216 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120277, {	-- Essence of the Iron Conqueror
-						q(37553, {	-- Essence of the Iron Conqueror
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120215, {	-- Helm of the Iron Conqueror
-									i(115568),	--
-									i(115586),	--
-									i(115563),	--
-								}),
-								i(120216, {	-- Shoulders of the Iron Conqueror
-									i(115565),	--
-									i(115589),	--
-									i(115561),	--
-								}),
-								i(120212, {	-- Chest of the Iron Conqueror
-									i(115566),	--
-									i(115588),	--
-									i(115560),	--
-								}),
-								i(120213, {	-- Gauntlets of the Iron Conqueror
-									i(115567),	--
-									i(115585),	--
-									i(115562),	--
-								}),
-								i(120214, {	-- Leggings of the Iron Conqueror
-									i(115569),	--
-									i(115587),	--
-									i(115564),	--
-								}),
-							},
-						}),
+						["questID"] = 37553,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120215, {	-- Helm of the Iron Conqueror
+								i(115568),	--
+								i(115586),	--
+								i(115563),	--
+							}),
+							i(120216, {	-- Shoulders of the Iron Conqueror
+								i(115565),	--
+								i(115589),	--
+								i(115561),	--
+							}),
+							i(120212, {	-- Chest of the Iron Conqueror
+								i(115566),	--
+								i(115588),	--
+								i(115560),	--
+							}),
+							i(120213, {	-- Gauntlets of the Iron Conqueror
+								i(115567),	--
+								i(115585),	--
+								i(115562),	--
+							}),
+							i(120214, {	-- Leggings of the Iron Conqueror
+								i(115569),	--
+								i(115587),	--
+								i(115564),	--
+							}),
+						},
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
-						q(37540, {	-- Essence of the Iron Conqueror
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120215, {	-- Helm of the Iron Conqueror
-									i(115568),	--
-									i(115586),	--
-									i(115563),	--
-								}),
-								i(120216, {	-- Shoulders of the Iron Conqueror
-									i(115565),	--
-									i(115589),	--
-									i(115561),	--
-								}),
-								i(120212, {	-- Chest of the Iron Conqueror
-									i(115566),	--
-									i(115588),	--
-									i(115560),	--
-								}),
-								i(120213, {	-- Gauntlets of the Iron Conqueror
-									i(115567),	--
-									i(115585),	--
-									i(115562),	--
-								}),
-								i(120214, {	-- Leggings of the Iron Conqueror
-									i(115569),	--
-									i(115587),	--
-									i(115564),	--
-								}),
-							},
-						}),
+						["questID"] = 37540,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120215, {	-- Helm of the Iron Conqueror
+								i(115568),	--
+								i(115586),	--
+								i(115563),	--
+							}),
+							i(120216, {	-- Shoulders of the Iron Conqueror
+								i(115565),	--
+								i(115589),	--
+								i(115561),	--
+							}),
+							i(120212, {	-- Chest of the Iron Conqueror
+								i(115566),	--
+								i(115588),	--
+								i(115560),	--
+							}),
+							i(120213, {	-- Gauntlets of the Iron Conqueror
+								i(115567),	--
+								i(115585),	--
+								i(115562),	--
+							}),
+							i(120214, {	-- Leggings of the Iron Conqueror
+								i(115569),	--
+								i(115587),	--
+								i(115564),	--
+							}),
+						},
 					}),
 					i(120279, {	-- Essence of the Iron Protector
-						q(37555, {	-- Essence of the Iron Protector
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120225, {	-- Helm of the Iron Protector
-									i(115584),	--
-									i(115556),	--
-									i(115545),	--
-									i(115579),	--
-								}),
-								i(120226, {	-- Shoulders of the Iron Protector
-									i(115581),	--
-									i(115559),	--
-									i(115547),	--
-									i(115576),	--
-								}),
-								i(120222, {	-- Chest of the Iron Protector
-									i(115582),	--
-									i(115548),	--
-									i(115558),	--
-									i(115577),	--
-								}),
-								i(120223, {	-- Gauntlets of the Iron Protector
-									i(115583),	--
-									i(115555),	--
-									i(115549),	--
-									i(115578),	--
-								}),
-								i(120224, {	-- Leggings of the Iron Protector
-									i(115580),	--
-									i(115557),	--
-									i(115546),	--
-									i(115575),	--
-								}),
-							},
-						}),
+						["questID"] = 37555,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120225, {	-- Helm of the Iron Protector
+								i(115584),	--
+								i(115556),	--
+								i(115545),	--
+								i(115579),	--
+							}),
+							i(120226, {	-- Shoulders of the Iron Protector
+								i(115581),	--
+								i(115559),	--
+								i(115547),	--
+								i(115576),	--
+							}),
+							i(120222, {	-- Chest of the Iron Protector
+								i(115582),	--
+								i(115548),	--
+								i(115558),	--
+								i(115577),	--
+							}),
+							i(120223, {	-- Gauntlets of the Iron Protector
+								i(115583),	--
+								i(115555),	--
+								i(115549),	--
+								i(115578),	--
+							}),
+							i(120224, {	-- Leggings of the Iron Protector
+								i(115580),	--
+								i(115557),	--
+								i(115546),	--
+								i(115575),	--
+							}),
+						},
 					}),
 					i(119323, {	-- Essence of the Iron Protector
-						q(37543, {	-- Essence of the Iron Protector
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120225, {	-- Helm of the Iron Protector
-									i(115584),	--
-									i(115556),	--
-									i(115545),	--
-									i(115579),	--
-								}),
-								i(120226, {	-- Shoulders of the Iron Protector
-									i(115581),	--
-									i(115559),	--
-									i(115547),	--
-									i(115576),	--
-								}),
-								i(120222, {	-- Chest of the Iron Protector
-									i(115582),	--
-									i(115548),	--
-									i(115558),	--
-									i(115577),	--
-								}),
-								i(120223, {	-- Gauntlets of the Iron Protector
-									i(115583),	--
-									i(115555),	--
-									i(115549),	--
-									i(115578),	--
-								}),
-								i(120224, {	-- Leggings of the Iron Protector
-									i(115580),	--
-									i(115557),	--
-									i(115546),	--
-									i(115575),	--
-								}),
-							},
-						}),
+						["questID"] = 37543,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120225, {	-- Helm of the Iron Protector
+								i(115584),	--
+								i(115556),	--
+								i(115545),	--
+								i(115579),	--
+							}),
+							i(120226, {	-- Shoulders of the Iron Protector
+								i(115581),	--
+								i(115559),	--
+								i(115547),	--
+								i(115576),	--
+							}),
+							i(120222, {	-- Chest of the Iron Protector
+								i(115582),	--
+								i(115548),	--
+								i(115558),	--
+								i(115577),	--
+							}),
+							i(120223, {	-- Gauntlets of the Iron Protector
+								i(115583),	--
+								i(115555),	--
+								i(115549),	--
+								i(115578),	--
+							}),
+							i(120224, {	-- Leggings of the Iron Protector
+								i(115580),	--
+								i(115557),	--
+								i(115546),	--
+								i(115575),	--
+							}),
+						},
 					}),
 					i(120278, {	-- Essence of the Iron Vanquisher
-						q(37554, {	-- Essence of the Iron Vanquisher
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120218, {	-- Helm of the Iron Vanquisher
-									i(115553),	--
-									i(115542),	--
-									i(115539),	--
-									i(115572),	--
-								}),
-								i(120220, {	-- Shoulders of the Iron Vanquisher
-									i(115551),	--
-									i(115544),	--
-									i(115536),	--
-									i(115574),	--
-								}),
-								i(120221, {	-- Chest of the Iron Vanquisher
-									i(115550),	--
-									i(115540),	--
-									i(115537),	--
-									i(115570),	--
-								}),
-								i(120217, {	-- Gauntlets of the Iron Vanquisher
-									i(115552),	--
-									i(115541),	--
-									i(115538),	--
-									i(115571),	--
-								}),
-								i(120219, {	-- Leggings of the Iron Vanquisher
-									i(115554),	--
-									i(115543),	--
-									i(115535),	--
-									i(115573),	--
-								}),
-							},
-						}),
+						["questID"] = 37554,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120218, {	-- Helm of the Iron Vanquisher
+								i(115553),	--
+								i(115542),	--
+								i(115539),	--
+								i(115572),	--
+							}),
+							i(120220, {	-- Shoulders of the Iron Vanquisher
+								i(115551),	--
+								i(115544),	--
+								i(115536),	--
+								i(115574),	--
+							}),
+							i(120221, {	-- Chest of the Iron Vanquisher
+								i(115550),	--
+								i(115540),	--
+								i(115537),	--
+								i(115570),	--
+							}),
+							i(120217, {	-- Gauntlets of the Iron Vanquisher
+								i(115552),	--
+								i(115541),	--
+								i(115538),	--
+								i(115571),	--
+							}),
+							i(120219, {	-- Leggings of the Iron Vanquisher
+								i(115554),	--
+								i(115543),	--
+								i(115535),	--
+								i(115573),	--
+							}),
+						},
 					}),
 					i(119316, {	-- Essence of the Iron Vanquisher
-						q(37541, {	-- Essence of the Iron Vanquisher
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120218, {	-- Helm of the Iron Vanquisher
-									i(115553),	--
-									i(115542),	--
-									i(115539),	--
-									i(115572),	--
-								}),
-								i(120220, {	-- Shoulders of the Iron Vanquisher
-									i(115551),	--
-									i(115544),	--
-									i(115536),	--
-									i(115574),	--
-								}),
-								i(120221, {	-- Chest of the Iron Vanquisher
-									i(115550),	--
-									i(115540),	--
-									i(115537),	--
-									i(115570),	--
-								}),
-								i(120217, {	-- Gauntlets of the Iron Vanquisher
-									i(115552),	--
-									i(115541),	--
-									i(115538),	--
-									i(115571),	--
-								}),
-								i(120219, {	-- Leggings of the Iron Vanquisher
-									i(115554),	--
-									i(115543),	--
-									i(115535),	--
-									i(115573),	--
-								}),
-							},
-						}),
+						["questID"] = 37541,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120218, {	-- Helm of the Iron Vanquisher
+								i(115553),	--
+								i(115542),	--
+								i(115539),	--
+								i(115572),	--
+							}),
+							i(120220, {	-- Shoulders of the Iron Vanquisher
+								i(115551),	--
+								i(115544),	--
+								i(115536),	--
+								i(115574),	--
+							}),
+							i(120221, {	-- Chest of the Iron Vanquisher
+								i(115550),	--
+								i(115540),	--
+								i(115537),	--
+								i(115570),	--
+							}),
+							i(120217, {	-- Gauntlets of the Iron Vanquisher
+								i(115552),	--
+								i(115541),	--
+								i(115538),	--
+								i(115571),	--
+							}),
+							i(120219, {	-- Leggings of the Iron Vanquisher
+								i(115554),	--
+								i(115543),	--
+								i(115535),	--
+								i(115573),	--
+							}),
+						},
 					}),
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds
@@ -1155,222 +1149,216 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120280, {	-- Essence of the Iron Conqueror
-						q(37557, {	-- Essence of the Iron Conqueror
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120230, {	-- Helm of the Iron Conqueror
-									i(115568),
-									i(115586),
-									i(115563),
-								}),
-								i(120231, {	-- Shoulders of the Iron Conqueror
-									i(115565),
-									i(115589),
-									i(115561),
-								}),
-								i(120227, {	-- Chest of the Iron Conqueror
-									i(115566),
-									i(115588),
-									i(115560),
-								}),
-								i(120228, {	-- Gauntlets of the Iron Conqueror
-									i(115567),
-									i(115585),
-									i(115562),
-								}),
-								i(120229, {	-- Leggings of the Iron Conqueror
-									i(115569),
-									i(115587),
-									i(115564),
-								}),
-							},
-						}),
+						["questID"] = 37557,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120230, {	-- Helm of the Iron Conqueror
+								i(115568),
+								i(115586),
+								i(115563),
+							}),
+							i(120231, {	-- Shoulders of the Iron Conqueror
+								i(115565),
+								i(115589),
+								i(115561),
+							}),
+							i(120227, {	-- Chest of the Iron Conqueror
+								i(115566),
+								i(115588),
+								i(115560),
+							}),
+							i(120228, {	-- Gauntlets of the Iron Conqueror
+								i(115567),
+								i(115585),
+								i(115562),
+							}),
+							i(120229, {	-- Leggings of the Iron Conqueror
+								i(115569),
+								i(115587),
+								i(115564),
+							}),
+						},
 					}),
 					i(120206, {	-- Essence of the Iron Conqueror
-						q(37551, {	-- Essence of the Iron Conqueror
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120230, {	-- Helm of the Iron Conqueror
-									i(115568),
-									i(115586),
-									i(115563),
-								}),
-								i(120231, {	-- Shoulders of the Iron Conqueror
-									i(115565),
-									i(115589),
-									i(115561),
-								}),
-								i(120227, {	-- Chest of the Iron Conqueror
-									i(115566),
-									i(115588),
-									i(115560),
-								}),
-								i(120228, {	-- Gauntlets of the Iron Conqueror
-									i(115567),
-									i(115585),
-									i(115562),
-								}),
-								i(120229, {	-- Leggings of the Iron Conqueror
-									i(115569),
-									i(115587),
-									i(115564),
-								}),
-							},
-						}),
+						["questID"] = 37551,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120230, {	-- Helm of the Iron Conqueror
+								i(115568),
+								i(115586),
+								i(115563),
+							}),
+							i(120231, {	-- Shoulders of the Iron Conqueror
+								i(115565),
+								i(115589),
+								i(115561),
+							}),
+							i(120227, {	-- Chest of the Iron Conqueror
+								i(115566),
+								i(115588),
+								i(115560),
+							}),
+							i(120228, {	-- Gauntlets of the Iron Conqueror
+								i(115567),
+								i(115585),
+								i(115562),
+							}),
+							i(120229, {	-- Leggings of the Iron Conqueror
+								i(115569),
+								i(115587),
+								i(115564),
+							}),
+						},
 					}),
 					i(120281, {	-- Essence of the Iron Protector
-						q(37559, {	-- Essence of the Iron Protector
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120240, {	-- Helm of the Iron Protector
-									i(115584),
-									i(115556),
-									i(115545),
-									i(115579),
-								}),
-								i(120241, {	-- Shoulders of the Iron Protector
-									i(115581),
-									i(115559),
-									i(115547),
-									i(115576),
-								}),
-								i(120237, {	-- Chest of the Iron Protector
-									i(115582),
-									i(115548),
-									i(115558),
-									i(115577),
-								}),
-								i(120238, {	-- Gauntlets of the Iron Protector
-									i(115583),
-									i(115555),
-									i(115549),
-									i(115578),
-								}),
-								i(120239, {	-- Leggings of the Iron Protector
-									i(115580),
-									i(115557),
-									i(115546),
-									i(115575),
-								}),
-							},
-						}),
+						["questID"] = 37559,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120240, {	-- Helm of the Iron Protector
+								i(115584),
+								i(115556),
+								i(115545),
+								i(115579),
+							}),
+							i(120241, {	-- Shoulders of the Iron Protector
+								i(115581),
+								i(115559),
+								i(115547),
+								i(115576),
+							}),
+							i(120237, {	-- Chest of the Iron Protector
+								i(115582),
+								i(115548),
+								i(115558),
+								i(115577),
+							}),
+							i(120238, {	-- Gauntlets of the Iron Protector
+								i(115583),
+								i(115555),
+								i(115549),
+								i(115578),
+							}),
+							i(120239, {	-- Leggings of the Iron Protector
+								i(115580),
+								i(115557),
+								i(115546),
+								i(115575),
+							}),
+						},
 					}),
 					i(120207, {	-- Essence of the Iron Protector
-						q(37547, {	-- Essence of the Iron Protector
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120240, {	-- Helm of the Iron Protector
-									i(115584),
-									i(115556),
-									i(115545),
-									i(115579),
-								}),
-								i(120241, {	-- Shoulders of the Iron Protector
-									i(115581),
-									i(115559),
-									i(115547),
-									i(115576),
-								}),
-								i(120237, {	-- Chest of the Iron Protector
-									i(115582),
-									i(115548),
-									i(115558),
-									i(115577),
-								}),
-								i(120238, {	-- Gauntlets of the Iron Protector
-									i(115583),
-									i(115555),
-									i(115549),
-									i(115578),
-								}),
-								i(120239, {	-- Leggings of the Iron Protector
-									i(115580),
-									i(115557),
-									i(115546),
-									i(115575),
-								}),
-							},
-						}),
+						["questID"] = 37547,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120240, {	-- Helm of the Iron Protector
+								i(115584),
+								i(115556),
+								i(115545),
+								i(115579),
+							}),
+							i(120241, {	-- Shoulders of the Iron Protector
+								i(115581),
+								i(115559),
+								i(115547),
+								i(115576),
+							}),
+							i(120237, {	-- Chest of the Iron Protector
+								i(115582),
+								i(115548),
+								i(115558),
+								i(115577),
+							}),
+							i(120238, {	-- Gauntlets of the Iron Protector
+								i(115583),
+								i(115555),
+								i(115549),
+								i(115578),
+							}),
+							i(120239, {	-- Leggings of the Iron Protector
+								i(115580),
+								i(115557),
+								i(115546),
+								i(115575),
+							}),
+						},
 					}),
 					i(120282, {	-- Essence of the Iron Vanquisher
-						q(37558, {	-- Essence of the Iron Vanquisher
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120233, {	-- Helm of the Iron Vanquisher
-									i(115553),
-									i(115542),
-									i(115539),
-									i(115572),
-								}),
-								i(120235, {	-- Shoulders of the Iron Vanquisher
-									i(115551),
-									i(115544),
-									i(115536),
-									i(115574),
-								}),
-								i(120236, {	-- Chest of the Iron Vanquisher
-									i(115550),
-									i(115540),
-									i(115537),
-									i(115570),
-								}),
-								i(120232, {	-- Gauntlets of the Iron Vanquisher
-									i(115552),
-									i(115541),
-									i(115538),
-									i(115571),
-								}),
-								i(120234, {	-- Leggings of the Iron Vanquisher
-									i(115554),
-									i(115543),
-									i(115535),
-									i(115573),
-								}),
-							},
-						}),
+						["questID"] = 37558,
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120233, {	-- Helm of the Iron Vanquisher
+								i(115553),
+								i(115542),
+								i(115539),
+								i(115572),
+							}),
+							i(120235, {	-- Shoulders of the Iron Vanquisher
+								i(115551),
+								i(115544),
+								i(115536),
+								i(115574),
+							}),
+							i(120236, {	-- Chest of the Iron Vanquisher
+								i(115550),
+								i(115540),
+								i(115537),
+								i(115570),
+							}),
+							i(120232, {	-- Gauntlets of the Iron Vanquisher
+								i(115552),
+								i(115541),
+								i(115538),
+								i(115571),
+							}),
+							i(120234, {	-- Leggings of the Iron Vanquisher
+								i(115554),
+								i(115543),
+								i(115535),
+								i(115573),
+							}),
+						},
 					}),
 					i(120208, {	-- Essence of the Iron Vanquisher
-						q(37549, {	-- Essence of the Iron Vanquisher
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(120233, {	-- Helm of the Iron Vanquisher
-									i(115553),
-									i(115542),
-									i(115539),
-									i(115572),
-								}),
-								i(120235, {	-- Shoulders of the Iron Vanquisher
-									i(115551),
-									i(115544),
-									i(115536),
-									i(115574),
-								}),
-								i(120236, {	-- Chest of the Iron Vanquisher
-									i(115550),
-									i(115540),
-									i(115537),
-									i(115570),
-								}),
-								i(120232, {	-- Gauntlets of the Iron Vanquisher
-									i(115552),
-									i(115541),
-									i(115538),
-									i(115571),
-								}),
-								i(120234, {	-- Leggings of the Iron Vanquisher
-									i(115554),
-									i(115543),
-									i(115535),
-									i(115573),
-								}),
-							},
-						}),
+						["questID"] = 37549,
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120233, {	-- Helm of the Iron Vanquisher
+								i(115553),
+								i(115542),
+								i(115539),
+								i(115572),
+							}),
+							i(120235, {	-- Shoulders of the Iron Vanquisher
+								i(115551),
+								i(115544),
+								i(115536),
+								i(115574),
+							}),
+							i(120236, {	-- Chest of the Iron Vanquisher
+								i(115550),
+								i(115540),
+								i(115537),
+								i(115570),
+							}),
+							i(120232, {	-- Gauntlets of the Iron Vanquisher
+								i(115552),
+								i(115541),
+								i(115538),
+								i(115571),
+							}),
+							i(120234, {	-- Leggings of the Iron Vanquisher
+								i(115554),
+								i(115543),
+								i(115535),
+								i(115573),
+							}),
+						},
 					}),
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds

@@ -2345,7 +2345,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in pairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
-		-- TODO: 120216 only shows priest items in account mode, not on priest
 		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 			if app.RecursiveGroupRequirementsFilter(group) then
@@ -2971,7 +2970,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local merged = {};
 			local skipped = {};
 			-- First add only groups which meet the current filters
+			-- print("-final group-",paramA,paramB)
 			for i,o in ipairs(group) do
+				-- print(o.key,o[o.key])
 				-- do not include the exact matching group as part of the set contained by the search group
 				if o[paramA] ~= paramB then
 					if app.RecursiveGroupRequirementsFilter(o) then
@@ -2982,8 +2983,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						-- print("skip",o.hash);
 						tinsert(skipped, o);
 					end
+				elseif o.g then
+					-- pull the 'g' objects out of the matching group into the set of things it contains
+					for gi=1,#o.g do
+						if app.RecursiveGroupRequirementsFilter(o.g[gi]) then
+							MergeObject(merged, CreateObject(o.g[gi]));
+						else
+							tinsert(skipped, o.g[gi]);
+						end
+					end
 				end
 			end
+			-- print("---")
 			-- then merge any skipped groups
 			for i,o in ipairs(skipped) do
 				MergeObject(merged, CreateObject(o));
@@ -3022,9 +3033,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				group = app.SearchForObjectClone(paramA,paramB) or CreateObject({ [paramA] = paramB });
-				if not group.g then group.g = merged;
-				else MergeObjects(group.g, merged); end
+				
+				group = CreateObject({ [paramA] = paramB });
+				group.g = merged;
 			end
 
 			-- Append any crafted things using this group
@@ -3659,9 +3670,17 @@ local function SearchForField(field, id, onlyCached)
 end
 app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
+-- will attempt to return a filtered clone as a priority
 app.SearchForObjectClone = function(field, id)
 	local fcache = SearchForField(field, id);
 	if fcache and #fcache > 0 then
+		-- find a filter-match object first
+		for i=1,#fcache,1 do
+			if fcache[i][field] == id and app.RecursiveGroupRequirementsFilter(fcache[i]) then
+				return CloneData(fcache[i]);
+			end
+		end
+		-- otherwise just find the first matching object
 		for i=1,#fcache,1 do
 			if fcache[i][field] == id then
 				return CloneData(fcache[i]);
