@@ -22,6 +22,31 @@ _.NeverImplemented =
 		-- Mounts
 		-- Gear
 		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(174311)),	-- Sinful Gladiator's Guard (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(177866)),	-- Sinful Gladiator's Chalice (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183439)),	-- Sinful Gladiator's Crystal (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176002)),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176003)),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178389)),	-- Sinful Gladiator's Recurve (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178392)),	-- Sinful Gladiator's Halberd (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178393)),	-- Sinful Gladiator's Spire (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183403)),	-- Sinful Gladiator's Battlehammer (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183406)),	-- Sinful Gladiator's Greatmaul (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183404)),	-- Sinful Gladiator's Spellblade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183405)),	-- Sinful Gladiator's Mageblade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(175998)),	-- Sinful Gladiator's Axe (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176000)),	-- Sinful Gladiator's Blade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176004)),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176009)),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178388)),	-- Sinful Gladiator's Handaxe (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178390)),	-- Sinful Gladiator's Dagger (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178394)),	-- Sinful Gladiator's Saber (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178399)),	-- Sinful Gladiator's Slicer (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176007)),	-- Sinful Gladiator's Shield (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176008)),	-- Sinful Gladiator's Focus (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178397)),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178398)),	-- Sinful Gladiator's Goblet (existed in beta; doesn't appear to exist in live)
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -3888,7 +3913,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
-			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
 			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
 			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
 			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
