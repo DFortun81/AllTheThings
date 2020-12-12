@@ -10,7 +10,15 @@ _.ExpansionFeatures =
 			["icon"] = 3642306,
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
-				1635,	-- Fracture Chambers - Layer 1, Floor 1
+				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6
+				--
+				1779,	-- Coldheart Interstitia - Layer 1, Floor 1
+				1736,	-- Coldheart Interstitia - Layer 1, Floor 2
+				1712,	-- Coldheart Interstitia - Layer 1, Floor 3
+				1796,	-- Coldheart Interstitia - Layer 1, Floor 4
+				1635,	-- Coldheart Interstitia - Layer 1, Floor 5 / Fracture Chambers - Layer 1, Floor 1
+				1630,	-- Coldheart Interstitia - Layer 1, Floor 6
+				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
 				1621,	-- Fracture Chambers - Layer 1, Floor 4 / Layer 2, Floor 5
@@ -34,23 +42,25 @@ _.ExpansionFeatures =
 				1757,	-- Mort'regar - Layer 2, Floor 5
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
-				1766,	-- Skoldus Hall - Layer 3 - Floor 2
-				1803,	-- Skoldus Hall - Layer 3 - Floor 4
-				1804,	-- Skoldus Hall - Layer 3 - Floor 5
+				1810,	-- Skoldus Hall - Layer 1, Floor 1
+				1758,	-- Skoldus Hall - Layer 1, Floor 3
+				1766,	-- Skoldus Hall - Layer 1, Floor 4 / Layer 3, Floor 2
+				1767,	-- Skoldus Hall - Layer 1, Floor 5
 				--
-				1798,	-- Coldheart - Layer 2 - Floor 1
-				1795,	-- Coldheart - Layer 2 - Floor 2
-				1631,	-- Coldheart - Layer 2 - Floor 4
+				1803,	-- Skoldus Hall - Layer 3, Floor 4
+				1804,	-- Skoldus Hall - Layer 3, Floor 5
+				--
+				1798,	-- Coldheart - Layer 2, Floor 1
+				1795,	-- Coldheart - Layer 2, Floor 2
+				1631,	-- Coldheart - Layer 2, Floor 4
 				--
 				1764,	-- Fracture Chambers - Layer 2, Floor 2
 				1618,	-- Torghast
 				1620,	-- Torghast
-				1630,	-- Floor 40
 				1632,	-- Floor 29
 				1656,	-- Floor 10
 				1660,	-- Alpha_TG_R04
 				1705,	-- Torghast Entrance
-				1712,	-- TG30_Floor
 				1728,	-- The Rundecarver
 				1749,	-- TG34_Floor
 				1751,	-- Floor 13
@@ -58,18 +68,15 @@ _.ExpansionFeatures =
 				1753,	-- Floor 18
 				1754,	-- Torghast
 				1756,	-- TG44_Floor
-				1758,	-- TG48_Floor
 				1762,	-- TG47_Floor
 				1763,	-- Arkoban Hall - Floor 5
 				1765,	-- TG54_Floor
-				1769,	-- Arkoban Hall - Floor 6
 				1771,	-- TG61_Floor
 				1772,	-- TG62_Floor
 				1773,	-- TG73_Floor
 				1774,	-- Torghast
 				1776,	-- TG66_Floor
 				1778,	-- TG68_Floor
-				1779,	-- TG69_Floor
 				1782,	-- Torghast
 				1783,	-- Torghast
 				1784,	-- TG75_Floor

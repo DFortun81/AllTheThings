@@ -191,23 +191,29 @@ _.ExpansionFeatures =
 				-- Skoldus Hall
 				q(59328, {	-- Level 1
 					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 1",
 				}),
 				q(59329, {	-- Level 2
 					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 2",
 				}),
 				q(59330, {	-- Level 3
 					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 3",
 				}),
 
 				-- Coldheart
 				q(58198, {	-- Level 1
 					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 1",
 				}),
 				q(58199, {	-- Level 2
 					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 2",
 				}),
 				-- q(, {	-- Level 3
 				-- 	["isWeekly"] = true,
+				--	["title"] = "Coldheart Interstitia, Layer 3",
 				-- }),
 				
 			}),
