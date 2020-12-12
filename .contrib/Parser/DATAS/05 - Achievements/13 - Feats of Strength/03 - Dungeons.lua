@@ -78,7 +78,7 @@ _.Achievements =
 				crit(9),	-- Tol Dagor
 				crit(10),	-- Waycrest Manor
 			})),
-			ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
+			un(REMOVED_FROM_GAME, ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
 				title(418),	-- "the Awakened"
 				crit(1),	-- Atal'Dazar
 				crit(2),	-- Freehold
@@ -92,8 +92,8 @@ _.Achievements =
 				crit(10),	-- Waycrest Manor
 				crit(11),	-- Mechagon Junkyard
 				crit(12),	-- Mechagon Workshop
-			}),
-			ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
+			})),
+			un(REMOVED_FROM_GAME, ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
 				i(174836),	-- Awakened Mindborer
 				crit(1),	-- Atal'Dazar
 				crit(2),	-- Freehold
@@ -107,7 +107,7 @@ _.Achievements =
 				crit(10),	-- Waycrest Manor
 				crit(11),	-- Mechagon Junkyard
 				crit(12),	-- Mechagon Workshop
-			}),
+			})),
 			un(REMOVED_FROM_GAME, ach(9622, {		-- Challenge Master: Auchindoun
 				un(REMOVED_FROM_GAME, title(293)),	-- the Soul Preserver
 			})),

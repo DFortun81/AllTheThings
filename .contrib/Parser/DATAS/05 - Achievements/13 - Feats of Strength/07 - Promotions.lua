@@ -13,9 +13,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8916)),		-- Collector's Edition: Dread Raven
 			un(REMOVED_FROM_GAME, ach(7412)),		-- Collector's Edition: Fetish Shaman
 			un(REMOVED_FROM_GAME, ach(683)),		-- Collector's Edition: Frost Wyrm Whelp
-			ach(12230, {			-- Collector's Edition: Gilded Ravasaur
+			un(REMOVED_FROM_GAME, ach(12230, {			-- Collector's Edition: Gilded Ravasaur
 				["races"] = HORDE_ONLY,
-			}),
+			})),
 			un(REMOVED_FROM_GAME, ach(10320)),		-- Collector's Edition: Illidari Felstalker
 			un(REMOVED_FROM_GAME, ach(6849)),		-- Collector's Edition: Imperial Quilen
 			un(REMOVED_FROM_GAME, ach(5377)),		-- Collector's Edition: Lil' Deathwing
@@ -25,9 +25,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(665)),		-- Collector's Edition: Netherwhelp
 			un(REMOVED_FROM_GAME, ach(10321)),		-- Collector's Edition: Nibbles
 			un(REMOVED_FROM_GAME, ach(663)),		-- Collector's Edition: Panda
-			ach(12229, {			-- Collector's Edition: Seabraid Stallion
+			un(REMOVED_FROM_GAME, ach(12229, {			-- Collector's Edition: Seabraid Stallion
 				["races"] = ALLIANCE_ONLY,
-			}),
+			})),
 			un(REMOVED_FROM_GAME, ach(12232)),		-- Collector's Edition: Tottle
 			un(REMOVED_FROM_GAME, ach(8795)),		-- Collector's Edition: Treasure Goblin
 			un(REMOVED_FROM_GAME, ach(10309)),		-- Collector's Edition: Zeradar
@@ -54,6 +54,7 @@ _.Achievements =
 			}),
 			un(REMOVED_FROM_GAME, ach(11425)),		-- Herald of Flames
 			ach(9926),				-- Hero of the Storm
+			ach(14283),				-- Heroic Edition: Ensorcelled Everwyrm
 			un(REMOVED_FROM_GAME, ach(3636)),		-- Jade Tiger (China only)
 			un(REMOVED_FROM_GAME, ach(13196, {			-- Meat Marauder
 				i(164571),			-- Meat Wagon
