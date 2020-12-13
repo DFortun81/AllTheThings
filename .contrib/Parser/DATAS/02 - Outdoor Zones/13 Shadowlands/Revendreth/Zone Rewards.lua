@@ -93,6 +93,7 @@ _.Zones =
 					}),
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
+					i(181218),	-- Chalice Noble's Signet
 					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
 					i(180397),	-- Crown of Decadent Desires

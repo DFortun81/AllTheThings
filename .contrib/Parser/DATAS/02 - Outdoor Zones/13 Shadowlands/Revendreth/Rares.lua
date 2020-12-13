@@ -240,12 +240,14 @@ _.Zones =
 					},
 				}),
 				n(170048, {	-- Manifestation of Wrath
-					["coord"] = { 49.8, 35.0, 1525 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 49.8, 35.0, 1525 },
 					["g"] = {
-						ach(14310, crit(22)),	-- Adventurer of Revendreth / Manifestation of Wrath
-						i(180591),	-- Vial of Roiling Emotions
+						crit(22, {	-- Manifestation of Wrath
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180585),	-- Bottled Up Rage (PET!)
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua

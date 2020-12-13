@@ -32,6 +32,7 @@ _.Zones =
 						156395,	-- Starving Dredbat
 					},
 				}),
+				i(182691),	-- Darkwing Headlopper
 				i(180864),	-- Decanter of Distilled Shadows
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings

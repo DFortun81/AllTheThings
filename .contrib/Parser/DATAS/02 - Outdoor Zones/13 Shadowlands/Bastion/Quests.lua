@@ -903,13 +903,6 @@ _.Zones =
 							i(180633),	-- Grubby
 						},
 					}),
-					-- Phaetus, Genesis of Aeons
-					q(58181, {	-- Building the Base
-						["provider"] = { "n", 160280 },	-- Mikanikos <Forgelite Prime>
-						["g"] = {
-							i(180763),		-- Phalynx of Courage
-						},
-					}),
 				}),
 				-- The Temple of Courage
 				-- End of Zone Achievement Quests

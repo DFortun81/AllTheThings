@@ -237,6 +237,11 @@ _.Zones =
 						["provider"] = { "n", 162558 },	-- Alithea
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
+					q(58178, {	-- A Partner for Eternity
+						["sourceQuests"] = { 58180 },	-- Phaestus, Genesis of Aeons
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 50.1, 20.5, 1533 },
+					}),
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
 						["provider"] = { "n", 168742 },	-- Polemarch Adrestes
@@ -265,6 +270,14 @@ _.Zones =
 							i(174293),	-- Selfless Collector's Legguards
 						},
 					}),
+					q(58181, {	-- Building the Base
+						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 45.2, 56.7, 1707 },
+						["g"] = {
+							i(180763),	-- Phalynx of Courage (MOUNT!)
+						},
+					}),
 					q(58788, {	-- Censers of Guidance
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
 						["provider"] = { "n", 162542 },	-- Kleia
@@ -280,6 +293,11 @@ _.Zones =
 					--	["sourceQuests"] = {  },	-- 
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 },	-- Elysian Hold
+					}),
+					q(58182, {	-- Dismantling the Opposition
+						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 50.1, 20.5, 1533 },
 					}),
 					q(57895, {	-- Elysian Hold
 						["sourceQuests"] = { 60492 },	-- A Proper Reception
@@ -310,6 +328,11 @@ _.Zones =
 						["provider"] = { "n", 163650 },	-- Kleia
 						["coord"] = { 51.6, 47.7, 1707 },
 					}),
+					q(58183, {	-- Friend to the Forgelite
+						["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 50.1, 20.5, 1533 },
+					}),
 					q(62832, {	-- Friends in Dark Places
 						["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
@@ -319,6 +342,11 @@ _.Zones =
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
 						["provider"] = { "n", 167745 },	-- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },
+					}),
+					q(58179, {	-- Instruments of Perfection
+						["sourceQuests"] = { 58175 },	-- The Eternal Forge
+						["provider"] = { "n", 160648 },	-- Sika
+						["coord"] = { 50.1, 20.6, 1533 },
 					}),
 					q(62793, {	-- It's All Coming Together
 						["sourceQuests"] = { 62796 },	-- Return to Adrestes
@@ -330,6 +358,12 @@ _.Zones =
 							i(179942),	-- Selfless Forgelite's Gloves
 							i(174292),	-- Selfless Collector's Gauntlets
 						},
+					}),
+					q(63344, {	-- Kyrian Veteran
+					--	["sourceQuests"] = {  },	-- unsure what unlocks the ability to pick up "return lost souls," which gives renown
+						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 176100 },	-- Iona Skyblade
+						["coord"] = { 42.7, 70.3, 1707 },
 					}),
 					q(58951, {	-- Lakeshire's Last Stand
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
@@ -380,6 +414,27 @@ _.Zones =
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 40.9, 40.9, 1707 },	-- Elysian Hold
 					}),
+					q(58180, {	-- Phaestus, Genesis of Aeons
+						["sourceQuests"] = {
+							58176,	-- Stewards of a Feather
+							58177,	-- Refining Ego
+							58179,	-- Instruments of Perfection
+						},
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 50.1, 20.5, 1533 },
+						["g"] = {
+							i(179947),	-- Selfless Forgelite's Wristwraps (mail wrist)
+							-- TODO: verify cloth leather and plate rewards
+							i(178160),	-- Selfless Watcher's Wristwraps
+							i(177057),	-- Selfless Bearer's Wrists
+							i(174296),	-- Selfless Collector's Wristguards
+						},
+					}),
+					q(58177, {	-- Refining Ego
+						["sourceQuests"] = { 58175 },	-- The Eternal Forge
+						["provider"] = { "n", 160280 },	-- Mikanikos
+						["coord"] = { 50.1, 20.5, 1533 },
+					}),
 					q(61982, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 167745 },	-- Haephus
@@ -421,6 +476,11 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
 					}),
+					q(58176, {	-- Stewards of a Feather
+						["sourceQuests"] = { 58175 },	-- The Eternal Forge
+						["provider"] = { "n", 160648 },	-- Sika
+						["coord"] = { 50.1, 20.6, 1533 },
+					}),
 					q(60504, {	-- Strengthen the Bond
 						["sourceQuests"] = { 57898 },	-- Soul Meets Body
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
@@ -431,6 +491,11 @@ _.Zones =
 							i(182469),    -- Rejuvenating Wind
 							i(182584),    -- Cheetah's Vigor
 						},
+					}),
+					q(58175, {	-- The Eternal Forge
+						-- Requires Kyrian, Renown 8
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.5, 42.0, 1707 },
 					}),
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
@@ -549,10 +614,22 @@ _.Zones =
 								-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
 								["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
 							}),
+							q(62984, {	-- Blueprint: Medallion of Service
+								-- From defeating Echthra on Loyalty difficulty
+								provider = { "i", 184445 },	-- Blueprint: Medallion of Service
+							}),
+							q(60973, {	-- Blueprint: Phial of Serenity
+								-- From defeating Kalisthene on Loyalty difficulty
+								provider = { "i", 180495 },	-- Blueprint: Phial of Serenity
+							}),
 							q(60975, {	-- Blueprint: Spiritforged Aegis
 								-- Quest starter is from defeating Craven Corinth on Courage difficulty
 								-- Rewards spell 346676 (Crafting: Spiritforged Aegis)
 								["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
+							}),
+							q(62970, {	-- Blueprint: Steward Mail Pouch
+								-- From defeating Myn'ir and Alderyn on Loyalty difficulty
+								provider = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
 							}),
 							q(61963, {	-- Called to the Hunt
 								["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
@@ -627,6 +704,10 @@ _.Zones =
 								["provider"] = { "n", 168427 },	-- Artemede
 								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
 							}),
+							q(60974, {	-- Phial of Serenity
+								-- Quest starter crafted with Ascension crafting
+								provider = { "i", 184478 },	-- Phial of Serenity
+							}),
 							q(61965, {	-- Piercing the Shell
 								["sourceQuests"] = { 61963 },	-- Called to the Hunt
 								["provider"] = { "n", 173402 },	-- Alderyn
@@ -637,10 +718,18 @@ _.Zones =
 								["provider"] = { "n", 168430 },	-- Dactylis
 								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
 							}),
+							q(62995, {	-- Spiritforged Aegis
+								-- Quest starter crafted with Ascension crafting
+								provider = { "i", 184475 },	-- Spiritforged Aegis
+							}),
 							q(61365, {	-- Splinterbark Nightmare
 								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
 								["provider"] = { "n", 168430 },	-- Dactylis
 								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(62483, {	-- Steward Mail Pouch
+								-- Quest starter created with Ascension crafting
+								provider = { "i", 184577 },	-- Steward Mail Pouch
 							}),
 							q(61366, {	-- Tactical Operation
 								-- Rewards spell 340108 (Trial: Splinterbark Nightmare)

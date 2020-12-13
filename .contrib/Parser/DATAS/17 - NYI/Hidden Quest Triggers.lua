@@ -3084,6 +3084,9 @@ _.HiddenQuestTriggers =
 		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
 		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
+		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
+		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
+		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3134,9 +3137,7 @@ _.HiddenQuestTriggers =
 		q(62711),	-- Triggered after choosing Necrolords covenant
 		-- q(62152),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Necrolords covenant... kind of want to see when it happens again though
 		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
-		q(63340),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg [one of these is probably for all covenants, one for Night Fae only, and one for ??]
 		q(63342),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg
-		q(63344),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary

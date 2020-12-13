@@ -156,6 +156,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2421, {	-- Grand Proctor Beryllia
 						["crs"] = { 162102 },	-- Grand Proctor Beryllia
 						["g"] = {
+							i(180591),	-- Vial of Roiling Emotions (PET!)
 							i(178852),	-- Vessel of Shining Radiance
 							i(178838),	-- Beryllia's Leggings of Endless Torment
 							i(178847),	-- Radiant Light Binders

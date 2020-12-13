@@ -22,6 +22,8 @@ _.ExpansionFeatures =
 				1631,	-- Coldheart Interstitia - Layer 2, Floor 2 / Layer 2, Floor 4
 				1776,	-- Coldheart Interstitia - Layer 2, Floor 5
 				--
+				1913,	-- Coldheart Interstitia - Layer 4, Floor 2
+				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
 				1621,	-- Fracture Chambers - Layer 1, Floor 4 / Layer 2, Floor 5
@@ -59,6 +61,8 @@ _.ExpansionFeatures =
 				1798,	-- Coldheart - Layer 2, Floor 1
 				1795,	-- Coldheart - Layer 2, Floor 2
 				--
+				1799,	-- somewhere in Coldheart Interstitia
+				1797,	-- somewhere in Coldheart Interstitia
 				1764,	-- Fracture Chambers - Layer 2, Floor 2
 				1618,	-- Torghast
 				1620,	-- Torghast

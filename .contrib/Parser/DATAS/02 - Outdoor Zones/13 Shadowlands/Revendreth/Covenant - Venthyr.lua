@@ -108,11 +108,11 @@ _.Zones =
 						}),
 						q(60431, {	-- A Call to Maldraxxus
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
 							["repeatable"] = true,
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181732),	-- 	Tribute of the Ambitious
 							},
 						}),
 						q(60378, {	-- A Source of Sorrowvine

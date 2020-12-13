@@ -270,7 +270,12 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
-				-- TODO: Rule 6
+				q(60285, {	-- Rule 6: Concealment is Everything
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				-- TODO: Rule 6 Footnote
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
 					-- maybe Rule 6 footnote instead, or is that breadcrumb? i dont remember...
