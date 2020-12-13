@@ -2955,22 +2955,31 @@ _.HiddenQuestTriggers =
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
-		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
-		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
-		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
-		q(63362),	-- triggered after completing mi(2174), "Tutorial, Dispose of the Detritus" as Venthyr
-		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
-		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
-		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
-		q(63366),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Venthyr
-		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
-		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
-		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
-		q(63370),	-- triggered after completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
-		q(63247),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
-		q(63280),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (probably Night Fae covenant)
-		q(63283),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
+		
+		-- Adventures
+		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" (shared across covenants)
+		q(63360),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
+		q(63359),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
+		q(63362),	-- completing mi(2174), "Tutorial, Dispose of the Detritus" as Venthyr
+		q(63071),	-- completing mi(2295), "Tutorial: Necromantic Intervention" (shared across covenants)
+		q(63364),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
+		q(63363),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
+		q(63366),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Venthyr
+		q(60634),	-- completing mi(2175),	"Tutorial: Spinal Swarm" (shared across covenants)
+		q(63368),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
+		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
+		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
+		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
+		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (probably Night Fae covenant)
+		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
+		q(63252),	-- completing mi(2228), "Campaign: Discarded But Not Useless" (shared among covenants)
+		q(63301),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Kyrian
+		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Venthyr
+		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
+		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
+		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
+		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3066,6 +3075,7 @@ _.HiddenQuestTriggers =
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
+		q(62847),	-- secondary quest trigger on Gift of Agthia
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
@@ -3097,6 +3107,7 @@ _.HiddenQuestTriggers =
 		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
+		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
@@ -3123,6 +3134,12 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
+		q(62572),	-- triggered after crafting Faction Flag for Abomination Factory
+		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
+		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
+		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
+		q(58410),	-- triggered after crafting Construct Body: Atticus at Abomination Factory
+		q(60783),	-- triggered when turning in #60722, "Tower Power"
 
 
 		-- Oribos
@@ -3159,6 +3176,7 @@ _.HiddenQuestTriggers =
 		q(62666),	-- triggered when turning in #58073, Favor: Portrait of the Sire
 		q(62659),	-- triggered when turning in #58078, Favor: Bottle of Redelav Wine
 		q(62660),	-- triggered when turning in #58075, Favor: Dredger's Toolkit
+		q(62663),	-- triggered when turning in #58081, Favor: Love and Terror
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
@@ -3186,16 +3204,13 @@ _.HiddenQuestTriggers =
 		q(60300),	-- appears to trigger with every anima conduit
 		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
-		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63242),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
-		q(63323),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
-	--	q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
+		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
+		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
 		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item — every time
@@ -3231,8 +3246,6 @@ _.HiddenQuestTriggers =
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
-		q(63252),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
-		q(63303),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
 		q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"
 		q(58061),	-- when choosing House Primrose while on "Enacting Immediate Justice"
@@ -3295,6 +3308,8 @@ _.HiddenQuestTriggers =
 		q(61215),	-- triggered when completing Champion: Kaletar
 	--	q(61418),	-- Triggered randomly... not sure why?
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
+		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

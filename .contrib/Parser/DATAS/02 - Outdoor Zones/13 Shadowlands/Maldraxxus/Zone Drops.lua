@@ -66,6 +66,9 @@ _.Zones =
 				i(176979),	-- Ossein Scale Leggings
 				i(176968),	-- Ossein Scale Sabatons
 				i(176984),	-- Ossein Scale Spaulders
+				i(183124, {	-- Simple Tome of Bone-Binding
+					["classes"] = { HUNTER },
+				}),
 				i(178947),	-- Steeljaw Crossbow
 				i(178951),	-- Vellum-Bound Tome
 				i(176988),	-- Warflesh Belt

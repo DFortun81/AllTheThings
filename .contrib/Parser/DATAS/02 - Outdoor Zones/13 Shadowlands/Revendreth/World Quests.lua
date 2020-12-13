@@ -90,7 +90,12 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
-						i(177239),	-- Racing Permit (Ember Court item)
+						i(177239, {	-- Racing Permit (Ember Court item)
+							crit(10, {	-- Racing Permit
+								["customCollect"] = "SL_COV_VEN",
+								["achievementID"] = 14678,	-- Court Favors
+							}),
+						}),
 					},
 				}),
 				q(60659, {	-- Light Defense

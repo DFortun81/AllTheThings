@@ -52,6 +52,7 @@ _.Zones =
 					i(181684),	-- Gorewrought Wand
 					i(181692),	-- Gorewrought Warblade
 					i(181687),	-- Gorewrought Warglaive
+					i(181865),	-- Plague-Etched Gorer
 					i(181502),	-- Rejuvenating Serum
 					i(181205),	-- Soulstalker Epaulets
 					i(181653),	-- Steelcore Chestplate

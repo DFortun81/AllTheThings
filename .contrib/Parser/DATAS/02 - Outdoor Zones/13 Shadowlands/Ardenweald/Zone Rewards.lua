@@ -10,6 +10,8 @@ _.Zones =
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(180142),	-- Deadstone Hatchet
+					i(180153),	-- Drustwrought Executioner
+					i(180162),	-- Drustwrought Scythe
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
 					i(181433),	-- Duskwarder Gavel
@@ -41,6 +43,7 @@ _.Zones =
 					i(181402),	-- Runetender Tunic
 					i(175728),	-- Soulsifter Root
 					i(179594),	-- Witherscorn Guise
+					i(180145),	-- Witherscorn Handaxe
 				},
 			}),
 		}),

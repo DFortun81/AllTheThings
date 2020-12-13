@@ -116,7 +116,10 @@ _.Zones =
 						i(180143),	-- Darkreach Hacker
 						i(179593),	-- Darkreach Mask
 						i(180142),	-- Deadstone Hatchet
+						i(180153),	-- Drustwrought Executioner
+						i(180162),	-- Drustwrought Scythe
 						i(179594),	-- Witherscorn Guise
+						i(180145),	-- Witherscorn Handaxe
 						i(180165),	-- Witherscorn Reaper
 					},
 				}),

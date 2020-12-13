@@ -630,118 +630,170 @@ _.Zones =
 							["maps"] = { 1644 },	-- Ember Court (scenario)
 							["g"] = {
 								n(ACHIEVEMENTS, {
-									ach(14678, {	-- Court Favors
-										crit(1, {	-- Anima-Infused Water
+									ach(14682, {	-- The Party Herald
+										title(433),	-- The Party Herald
+										ach(14723, {	-- Be Our Guest
+											crit(1),	-- Baroness Vashj
+											crit(2),	-- Lady Moonberry
+											crit(3),	-- Mikanikos
+											crit(4),	-- The Countess
+											crit(5),	-- Alexandros Mograine
+											crit(6),	-- Hunt-Captain Korayn
+											crit(7),	-- Polemarch Adrestes
+											crit(8),	-- Rendle and Cudgelface
+											crit(9),	-- Choofa
+											crit(10),	-- Cryptkeeper Kassir
+											crit(11),	-- Droman Aliothe
+											crit(12),	-- Grandmaster Vole
+											crit(13),	-- Kleia and Pelagos
+											crit(14),	-- Plague Deviser Marileth
+											crit(15),	-- Sika
+											crit(16),	-- Stonehead
 										}),
-										crit(2, {	-- Crown of Honor
-											["description"] = "|cFF16be0dCrown of Honor|r can be purchased from Bored Dredgers, which have a chance to be inside crypts opened with |cFFFFFFFFAtonement Crypt Keys|r.",
+										ach(14678, {	-- Court Favors
+										--	TODO: add remaining crit to the places From Whence They Come
+											crit(1, {	-- Anima-Infused Water
+											}),
+											crit(3, {	-- Bewitched Wardrobe
+											}),
+											crit(4, {	-- Bounding Shroom Seeds
+											}),
+											crit(5, {	-- Rally Bell
+											}),
+											crit(6, {	-- Tubbins's Lucky Teapot
+											}),
+											crit(7, {	-- Dog Bone's Bone
+											}),
+											crit(8, {	-- Dredger Party Supplies
+											}),
+											crit(9, {	-- Generous Gift
+											}),
+											crit(11, {	-- Necrolord Arsenal
+											}),
+											crit(12, {	-- Venthyr Arsenal
+											}),
+											crit(13, {	-- Kyrian Arsenal
+											}),
+											crit(14, {	-- Night Fae Arsenal
+											}),
+											crit(15, {	-- Maldraxxi Challenge Banner
+											}),
+											crit(16, {	-- Vanity Mirror
+											}),
+											crit(17, {	-- Training Dummies
+											}),
+											crit(18, {	-- The Wild Drum
+											}),
+											crit(19, {	-- Protective Braziers
+											}),
+											crit(20, {	-- Slippery Muck
+											}),
+											crit(21, {	-- Altar of Accomplishment
+											}),
 										}),
-										crit(3, {	-- Bewitched Wardrobe
+										ach(14681, {	-- Dredger Academy
+											crit(1),	-- Ardenweald Etiquette
+											crit(2),	-- Bastion Etiquette
+											crit(3),	-- Maldraxxus Etiquette
+											crit(4),	-- Revendreth Etiquette
+											crit(5),	-- Sinrunner Riding
+											crit(6),	-- Dredbat Riding
 										}),
-										crit(4, {	-- Bounding Shroom Seeds
+										ach(14683, {	-- Dredger Style
+											crit(1),	-- Black Muck Armor Dye
+											crit(2),	-- Blue Muck Armor Dye
+											crit(3),	-- Green Muck Armor Dye
+											crit(4),	-- Bubbling Muck Armor Dye
+											crit(5),	-- Thin Hair Cut
+											crit(6),	-- Spikey Hair Cut
+											crit(7),	-- Full Flowing Hair Cut
+											crit(8),	-- Dredger Lether Coif
+											crit(9),	-- Short Sleeved Doublet
+											crit(10),	-- Long Sleeved Doublet
 										}),
-										crit(5, {	-- Rally Bell
+										ach(14726, {	-- It's Certainly Never Boring
+											crit(1),	-- Messy
+											crit(2),	-- Clean
+											crit(3),	-- Safe
+											crit(4),	-- Dangerous
+											crit(5),	-- Humble
+											crit(6),	-- Decadent
+											crit(7),	-- Relaxing
+											crit(8),	-- Exciting
+											crit(9),	-- Casual
+											crit(10),	-- Formal
 										}),
-										crit(6, {	-- Tubbins's Lucky Teapot
+										ach(14727),		-- Master of Ceremonies
+										ach(14679, {	-- Party Palace
+											crit(1),	-- Building: Dredger Pool
+											crit(2),	-- Building: Guardhouse
+											crit(3),	-- Staff: Dredger Decorators
+											crit(4),	-- Staff: Stage Crew
+											crit(5),	-- Staff: Waiters
+											crit(6),	-- Staff: Bouncers
+											crit(7),	-- Staff: Revendreth Ambassador
+											crit(8),	-- Staff: Ardenweald Ambassador
+											crit(9),	-- Staff: Maldraxxus Ambassador
+											crit(10),	-- Staff: Bastion Ambassador
+											crit(11),	-- Stock: Greeting Kits
+											crit(12),	-- Stock: Appetizers
+											crit(13),	-- Stock: Anima Samples
+											crit(14),	-- Stock: Comfy Chairs
+											crit(16),	-- Third Guest List Page
+											crit(17),	-- Fourth Guest List Page
 										}),
-										crit(7, {	-- Dog Bone's Bone
+										ach(14724, {	-- People Pleaser
+											crit(1),	-- Baroness Vashj
+											crit(2),	-- Lady Moonberry
+											crit(3),	-- Mikanikos
+											crit(4),	-- The Countess
+											crit(5),	-- Alexandros Mograine
+											crit(6),	-- Hunt-Captain Korayn
+											crit(7),	-- Polemarch Adrestes
+											crit(8),	-- Rendle and Cudgelface
+											crit(9),	-- Choofa
+											crit(10),	-- Cryptkeeper Kassir
+											crit(11),	-- Droman Aliothe
+											crit(12),	-- Grandmaster Vole
+											crit(13),	-- Kleia and Pelagos
+											crit(14),	-- Plague Deviser Marileth
+											crit(15),	-- Sika
+											crit(16),	-- Stonehead
 										}),
-										crit(8, {	-- Dredger Party Supplies
+										ach(14749, {	-- Rendle's Big Day
+											crit(1),	-- Crown of the Righteous
+											crit(2),	-- Fae Revel Masque
+											crit(3),	-- Pink Party Hat
+											crit(4),	-- Red Noggin Candle
 										}),
-										crit(9, {	-- Generous Gift
+										ach(14680, {	-- Something for Everyone
+										--	TODO: add remaining crit to the places From Whence They Come
+											crit(3, {	-- Lost Chalice Band
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(6, {	-- Mushroom Surprise
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(7, {	-- Traditional Decorations
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(8, {	-- Mortal Reminders
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(9, {	-- Mystery Mirrors
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(10, {	-- Venthyr Volunteers
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(11, {	-- Stoneborn Reserves
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
+											crit(12, {	-- Maldraxxian Army
+											--	["achievementID"] = 14680,	-- Something for Everyone
+											}),
 										}),
-										crit(10, {	-- Racing Permit
-											["description"] = "Earned by using a |cFF16be0dRacing Permit|r, a reward from the |cFFFFD700It's Race Day in the Ramparts!|r world quest in Revendreth.",
-											["_quests"] = { 59643 },	-- It's Race Day in the Ramparts!
-										}),
-										crit(11, {	-- Necrolord Arsenal
-										}),
-										crit(12, {	-- Venthyr Arsenal
-										}),
-										crit(13, {	-- Kyrian Arsenal
-										}),
-										crit(14, {	-- Night Fae Arsenal
-										}),
-										crit(15, {	-- Maldraxxi Challenge Banner
-										}),
-										crit(16, {	-- Vanity Mirror
-										}),
-										crit(17, {	-- Training Dummies
-										}),
-										crit(18, {	-- The Wild Drum
-										}),
-										crit(19, {	-- Protective Braziers
-										}),
-										crit(20, {	-- Slippery Muck
-										}),
-										crit(21, {	-- Altar of Accomplishment
-										}),
-									}),
-									ach(14679, {	-- Party Palace
-									--	TODO: track with provider?  cost?
-										crit(1),	-- Building: Dredger Pool
-										crit(2),	-- Building: Guardhouse
-										crit(3),	-- Staff: Dredger Decorators
-										crit(4),	-- Staff: Stage Crew
-										crit(5),	-- Staff: Waiters
-										crit(6),	-- Staff: Bouncers
-										crit(7),	-- Staff: Revendreth Ambassador
-										crit(8),	-- Staff: Ardenweald Ambassador
-										crit(9),	-- Staff: Maldraxxus Ambassador
-										crit(10),	-- Staff: Bastion Ambassador
-										crit(11),	-- Stock: Greeting Kits
-										crit(12),	-- Stock: Appetizers
-										crit(13),	-- Stock: Anima Samples
-										crit(14),	-- Stock: Comfy Chairs
-										crit(15),	-- Second Guest List Page ... i(181536),	-- Guest List Page (1st EC)
-										crit(16),	-- Third Guest List Page
-										crit(17),	-- Fourth Guest List Page
-									}),
-									ach(14680, {	-- Something for Everyone
-										crit(1, {	-- Atoning Rituals
-											["questID"] = 59494,
-											["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
-											["description"] = "Requires using |cFF16be0dContract: Atoning Rituals|r after completing the quest.",
-											["provider"] = { "i", 176130 },	-- Contract: Atoning Rituals
-										}),
-										crit(2, {	-- Glimpse of the Wilds
-											["sourceQuests"] = { 61408 },	-- Glimpse of the Wilds
-											["description"] = "Requires using |cFF16be0dContract: Glimpse of the Wilds|r after completing the quest.",
-										}),
-										crit(3, {	-- Lost Chalice Band
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(4, {	-- Tubbins's Tea Party
-											["questID"] = 59506,
-											["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
-											["description"] = "Requires using |cFF16be0dContract: Tubbins's Tea Party|r after completing the quest.",
-											["provider"] = { "i", 176134 },	-- Contract: Tubbins's Tea Party
-										}),
-										crit(5, {	-- Divine Desserts
-											["sourceQuests"] = { 61405 },	-- Divine Desserts
-											["description"] = "Requires using |cFF16be0dContract: Divine Desserts|r after completing the quest.",
-										}),
-										crit(6, {	-- Mushroom Surprise
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(7, {	-- Traditional Decorations
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(8, {	-- Mortal Reminders
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(9, {	-- Mystery Mirrors
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(10, {	-- Venthyr Volunteers
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(11, {	-- Stoneborn Reserves
-										--	["sourceQuests"] = {  },	-- 
-										}),
-										crit(12, {	-- Maldraxxian Army
-										--	["sourceQuests"] = {  },	-- 
-										}),
+										ach(14725),		-- We Happy Few
 									}),
 								}),
 								n(-908, {	-- Rewards
@@ -769,7 +821,11 @@ _.Zones =
 										["provider"] = { "n", 167332 },	-- Gresit
 										["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
 										["g"] = {
-											i(176130),	-- Contract: Atoning Rituals
+											i(176130, {	-- Contract: Atoning Rituals	
+												crit(1, {	-- Atoning Rituals
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
 										},
 									}),
 									q(61405, {	-- Ember Court: Divine Desserts
@@ -778,7 +834,11 @@ _.Zones =
 										["provider"] = { "n", 172448 },	-- Stewart
 										["coord"] = { 33.9, 66.5, 1533 },	-- Bastion
 										["g"] = {
-											i(176135),	-- Contract: Divine Desserts
+											i(176135, {	-- Contract: Divine Desserts
+												crit(5, {	-- Divine Desserts
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
 										},
 									}),
 									q(61706, {	-- Ember Court: Entertainment
@@ -792,7 +852,11 @@ _.Zones =
 										["provider"] = { "n", 172352 },	-- Niya
 										["coord"] = { 56.3, 55.6, 1565 },	-- Ardenweald
 										["g"] = {
-											i(176131),	-- Contract: Glimpse of the Wilds
+											i(176131, {	-- Contract: Glimpse of the Wilds
+												crit(2, {	-- Glimpse of the Wilds
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
 										},
 									}),
 									q(61704, {	-- Ember Court: Guest RSVPs
@@ -811,7 +875,11 @@ _.Zones =
 										["provider"] = { "n", 167863 },	-- Tubbins
 										["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
 										["g"] = {
-											i(176134),	-- Contract: Tubbins's Tea Party
+											i(176134, {	-- Contract: Tubbins's Tea Party
+												crit(4, {	-- Tubbins's Tea Party
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
 										},
 									}),
 									q(59661, {	-- Ember Court Rehearsal
@@ -895,7 +963,11 @@ _.Zones =
 										["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
 										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 										["g"] = {
-											i(181536),	-- Guest List Page (1st EC)
+											i(181536, {	-- Guest List Page (1st EC)
+												crit(15, {	-- Second Guest List Page
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
 										},
 									}),
 									q(61526, {	-- The Ember Court (Week 2)

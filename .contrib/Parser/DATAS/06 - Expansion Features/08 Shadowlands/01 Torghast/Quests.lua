@@ -99,6 +99,19 @@ _.ExpansionFeatures =
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
 					},
 				}),
+				q(61959, {	-- Champion: Talethi (Necrolord)
+					["provider"] = { "n", 173399 },	-- Talethi
+					["g"] = {
+						follower(1307),	-- Talethi
+					},
+				}),
+				q(61317, {	-- Champion: Teliah (Kyrian)
+				--	TODO: add provider, multiple Teliahs on wowhead and unsure which one to use
+				--	["provider"] = { "n",  },	-- Teliah
+					["g"] = {
+						follower(1221),	-- Teliah
+					},
+				}),
 				q(61426, {	-- Champion: Yira'lya [Night Fae]
 					["provider"] = { "n", 172243 },	-- Yira'lya
 					["g"] = {
@@ -173,7 +186,17 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
 				}),
-
+				q(62226, {	-- Talethi's Desire
+				--	TODO: add provider.  there are multiple Talethi NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
+					["repeatable"] = true,
+				--	["provider"] = { "n",  },	-- Talethi
+				}),
+				q(61330, {	-- Teliah's Stolen Spear
+				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
+					["repeatable"] = true,
+				--	["provider"] = { "n",  },	-- Teliah
+				}),
+				
 				-- Lockouts
 				-- TODO: Not sure how these all work or if we even want to track them (similar to how Horrific Visions had per-tier loot tracking?)
 				
@@ -193,6 +216,14 @@ _.ExpansionFeatures =
 				q(58201, {	-- Coldheart Interstitia, Layer 4
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 4",
+				}),
+				q(59202, {	-- Coldheart Interstitia, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 5",
+				}),
+				q(58203, {	-- Coldheart Interstitia, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 6",
 				}),
 
 				
@@ -255,7 +286,14 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Skoldus Hall, Layer 4",
 				}),
-				
+				q(59332, {	-- Skoldus Hall, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 5",
+				}),
+				q(59333, {	-- Skoldus Hall, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 6",
+				}),
 				
 				-- Soulforges
 				-- q(, {	-- Soulforges, Layer 1

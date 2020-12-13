@@ -130,7 +130,7 @@ _.Zones =
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
-					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
 					["questID"] = 59612,
 					["isDaily"] = true,
 					["coord"] = { 45.8, 79.0, 1525 },

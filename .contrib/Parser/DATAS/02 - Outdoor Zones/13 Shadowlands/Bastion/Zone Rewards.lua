@@ -18,8 +18,15 @@ _.Zones =
 					i(181594),	-- Forgehand's Sabatons
 					i(181602),	-- Forgehand's Spaulders
 					i(181604),	-- Forgehand's Wristguards
+					i(181635),	-- Honortoll Gavel
+					i(181630),	-- Honortoll Spear
+					i(181627),	-- Lifepath Crossbow
+					i(181637),	-- Lifepath Hammer
+					i(181628),	-- Memoria Glaive
+					i(181634),	-- Memoria Greatblade
 					i(181636),	-- Memoria Spellblade
 					i(181631),	-- Requiem Chime
+					i(181632),	-- Requiem Handscythes
 					i(181605),	-- Shieldguard's Breastplate
 					i(181608),	-- Shieldguard's Gauntlets
 					i(181612),	-- Shieldguard's Girdle
@@ -45,8 +52,8 @@ _.Zones =
 					i(181574),	-- Spiritmender's Mantle
 					i(181569),	-- Spiritmender's Robe
 					i(181570),	-- Spiritmender's Slippers
-					i(179594),	-- Witherscorn Guise
-					i(180165),	-- Witherscorn Reaper
+					i(181633),	-- Waylight Blade
+					i(181629),	-- Waylight Defender
 				},
 			}),
 		}),

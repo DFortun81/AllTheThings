@@ -93,6 +93,7 @@ _.Zones =
 					}),
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
+					i(181221),	-- Balanced Darkwing Stave
 					i(181218),	-- Chalice Noble's Signet
 					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
@@ -100,12 +101,17 @@ _.Zones =
 					i(181215),	-- Darkwing Assassin's Blade
 					i(181222),	-- Darkwing Rebel's Halberd
 					i(181191),	-- Devourer Wrangler's Coif
+					i(181209),	-- Devourer's Bite
+					i(181217),	-- Dominance Guard's Band
+					i(181207),	-- Dominance Keep Barrier
 					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
+					i(181220),	-- Fiend Collector's Cudgel
 					i(180400),	-- Inquisitions Final Judgment
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(182689),	-- Rapier of the Fearless
+					i(181213),	-- Shard-Dusted Shank
 					i(181180),	-- Sincollector's Cord
 					i(181179),	-- Sincollector's Leggings
 					i(181176),	-- Sincollector's Sandals
@@ -119,12 +125,14 @@ _.Zones =
 					i(181185),	-- Soulstalker Breeches
 					i(181183),	-- Soulstalker Grips
 					i(181184),	-- Soulstalker Helm
+					i(181219),	-- Stonewing Rioter's Cudgel
 					i(181203),	-- Stonewrought Armplates
 					i(181197),	-- Stonewrought Breastplate
 					i(181199),	-- Stonewrought Gauntlets
 					i(181196),	-- Stonewrought Helm
 					i(181200),	-- Stonewrought Legguards
 					i(180398),	-- Stonewrought Legion Halberd
+					i(181214),	-- Tax Collector's Barb
 				},
 			}),
 		}),

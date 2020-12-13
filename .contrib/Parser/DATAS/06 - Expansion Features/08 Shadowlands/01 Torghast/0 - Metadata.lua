@@ -58,8 +58,8 @@ _.ExpansionFeatures =
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
-				1798,	-- Coldheart - Layer 2, Floor 1
-				1795,	-- Coldheart - Layer 2, Floor 2
+				1798,	-- Coldheart - Layer 2, Floor 1 / Layer 3, Floor 1
+				1795,	-- Coldheart - Layer 2, Floor 2 / Layer 3, Floor 2
 				--
 				1799,	-- somewhere in Coldheart Interstitia
 				1797,	-- somewhere in Coldheart Interstitia
