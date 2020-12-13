@@ -8,14 +8,101 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
-				ach(14752, {	-- Things To Do When You're Dead
-					ach(14684),	-- Abominable Lives
-					ach(14748),	-- Wardrobe Makeover
-					ach(14751, {	-- The Gang's All Here
-						i(182074),		-- Chosen Tauralus
+					ach(14764),	-- The Great Luckydo
+					ach(14752, {	-- Things To Do When You're Dead
+						i(181820),	-- Armored Chosen Tauralus (MOUNT!)
+						title(691),	-- Abominable
+						ach(14684, {	-- Abominable Lives
+							crit(1),	-- Asset Extraction
+							crit(2),	-- A Brokered Deal
+							crit(3),	-- Supply Chain
+							crit(4),	-- A Bountiful Haul
+							crit(5),	-- Shinies of Bastion
+							crit(6),	-- Something Old, Something Used
+							crit(7),	-- Things They Leave Behind
+							crit(8),	-- Corpse Run
+							crit(9),	-- Field Training
+							crit(10),	-- Training Program
+							crit(11),	-- Arboreal Tactics
+							crit(12),	-- In A Bad Light
+							crit(13),	-- Cure For All Ills
+							crit(14),	-- Scrounging for Scrolls
+							crit(15),	-- The Two Sides of History
+							crit(16),	-- One Lich's Trash...
+							crit(17),	-- Fighting Words
+							crit(18),	-- Say The Magic Words
+							crit(19),	-- The Last Word
+							crit(20),	-- Digging Around
+							crit(21),	-- Old Stomping Grounds
+							crit(22),	-- Special Formula
+							crit(23),	-- Herbicidal Tendencies
+							crit(24),	-- Hands on Approach
+							crit(25),	-- Grinder
+							crit(26),	-- Cut 'Em Down to Size
+							crit(27),	-- Baker's Dozen
+							crit(28),	-- Give A Dog A Bone
+							crit(29),	-- Pie Not?
+							crit(30),	-- Bring Your Own
+							crit(31),	-- Drink to the Dead
+						}),
+						ach(14748, {	-- Wardrobe Makeover
+							crit(1),	-- Chef Hat
+							crit(2),	-- Dapper Top Hat
+							crit(3),	-- Dundae's Hat
+							crit(4),	-- Egg Hat
+							crit(5),	-- Flower Crown
+							crit(6),	-- Halo of Purity
+							crit(7),	-- Holiday Hat
+							crit(8),	-- Magician's Hat
+							crit(9),	-- Pirate Hat
+							crit(10),	-- Red Eye Lens
+							crit(11),	-- Skull Fungus
+							crit(12),	-- Skull Protector
+							crit(13),	-- Unworthy Crown
+							crit(14),	-- Happiness Bird
+							crit(15),	-- Hitchhiker
+							crit(16),	-- Lovely Candle Display
+							crit(17),	-- Shoulder Sprouts
+							crit(18),	-- Sticky Cat
+							crit(19),	-- Trained Corpselice
+							crit(20),	-- Trustworthy Doll
+							crit(21),	-- Armor Plating
+							crit(22),	-- Back Mushrooms
+							crit(23),	-- Collector Kash's Pack
+							crit(24),	-- Engineering Pack
+							crit(25),	-- Plague Pack
+							crit(26),	-- Safe Fall Pack
+							crit(27),	-- Six-League Pack
+							crit(28),	-- Vestigial Wings
+							crit(29),	-- Barrel O' Fish
+							crit(30),	-- Underpowered Gravity Pack
+							crit(31),	-- Butterflies
+							crit(32),	-- Spare Weapon
+							crit(33),	-- Faction Flag
+							crit(34),	-- Operational Instructions
+							crit(35),	-- Outlaw Flag
+						}),
+						ach(14751, {	-- The Gang's All Here
+							i(182074),		-- Chosen Tauralus (MOUNT!)
+							crit(1),	-- Chordy
+							crit(2),	-- Flytrap
+							crit(3),	-- Marz
+							crit(4),	-- Atticus
+							crit(5),	-- Roseboil
+							crit(6),	-- Sabrina
+							crit(7),	-- Toothpick
+							crit(8),	-- The Professor
+							crit(9),	-- Gas Bag
+							crit(10),	-- Guillotine
+							crit(11),	-- Mama Tomalin
+							crit(12),	-- Naxx
+							crit(13),	-- Iron Phillip
+							crit(14),	-- Miru Soulblossom
+							crit(15),	-- Neena
+							crit(16),	-- Unity
+						}),
+						ach(14753),	-- It's a Wrap
 					}),
-					ach(14753),	-- It's a Wrap
-				}),
 				}),
 				n(QUESTS, {
 					n(-901, {	-- Covenant Callings

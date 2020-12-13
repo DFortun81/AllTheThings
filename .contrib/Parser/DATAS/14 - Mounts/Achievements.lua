@@ -8,6 +8,9 @@ _.Mounts =
 		i(152815),	-- Antoran Gloomhound
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk
+		i(181820, {		-- Armored Chosen Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(116668),	-- Armored Frostboar
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
@@ -26,7 +29,9 @@ _.Mounts =
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,
 		}),
-		i(182074),	-- Chosen Tauralus
+		i(182074, {		--  Chosen Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(163577),	-- Conquerer's Scythemaw
 		i(184166),	-- Corridor Creeper
 		i(69230),	-- Corrupted Fire Hawk
