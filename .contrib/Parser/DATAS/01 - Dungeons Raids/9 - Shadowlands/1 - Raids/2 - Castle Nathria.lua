@@ -178,6 +178,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 168938 },	-- Sire Denathrius
 					["g"] = {
 						ach(14715, crit(10)),	-- Castle Nathria / Sire Denathrius
+						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
+						i(179358, {	-- Remornia
+							["questID"] = 60501,	-- Redemption for the Redeemer
+						}),
 						i(183310),	-- A Memory of Badge of the Mad Paragon
 						i(183214),	-- A Memory of Chaos Theory
 						i(182636),	-- A Memory of Deadliest Coil
@@ -204,6 +208,15 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(1, {	-- Normal
+				-- TODO: presumably the same items across all difficulties?
+				n(ZONEDROPS, {
+					i(183035),	-- Ardent Sunstar Signet [N]
+					i(182990),	-- Legionnaire's Bloodstained Sabatons [N]
+					i(183013),	-- Fallen Templar's Gauntlets [N]
+					i(182978),	-- Barkweave Wristwraps [N]
+					i(182982),	-- Watchful Arbelist's Bracers [N]
+					-- i(184778),	-- Decadent Nathrian Shawl [H]
+				}),
 				e(2393, {	-- Shriekwing
 					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
 					["g"] = {
@@ -370,6 +383,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						ach(14715, crit(10)),	-- Castle Nathria / Sire Denathrius
 						ach(14610),	-- Clear Conscience
+						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
+						i(179358, {	-- Remornia
+							["questID"] = 60501,	-- Redemption for the Redeemer
+						}),
 						i(183310),	-- A Memory of Badge of the Mad Paragon
 						i(183214),	-- A Memory of Chaos Theory
 						i(182636),	-- A Memory of Deadliest Coil
@@ -396,6 +413,14 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
+				n(ZONEDROPS, {
+					-- i(183035),	-- Ardent Sunstar Signet [N]
+					-- i(182990),	-- Legionnaire's Bloodstained Sabatons [N]
+					-- i(183013),	-- Fallen Templar's Gauntlets [N]
+					-- i(182978),	-- Barkweave Wristwraps [N]
+					-- i(182982),	-- Watchful Arbelist's Bracers [N]
+					i(184778),	-- Decadent Nathrian Shawl [H]
+				}),
 				e(2393, {	-- Shriekwing
 					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
 					["g"] = {
@@ -563,6 +588,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						ach(14460),	-- Ahead of the Curve: Sire Denathrius
 						ach(14715, crit(10)),	-- Castle Nathria / Sire Denathrius
 						ach(14610),	-- Clear Conscience
+						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
+						i(179358, {	-- Remornia
+							["questID"] = 60501,	-- Redemption for the Redeemer
+						}),
 						i(183310),	-- A Memory of Badge of the Mad Paragon
 						i(183214),	-- A Memory of Chaos Theory
 						i(182636),	-- A Memory of Deadliest Coil
@@ -771,6 +800,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 							}),
 							ach(14715, crit(10)),	-- Castle Nathria / Sire Denathrius
 							ach(14610),	-- Clear Conscience
+							-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
+							i(179358, {	-- Remornia
+								["questID"] = 60501,	-- Redemption for the Redeemer
+							}),
 							i(183310),	-- A Memory of Badge of the Mad Paragon
 							i(183214),	-- A Memory of Chaos Theory
 							i(182636),	-- A Memory of Deadliest Coil

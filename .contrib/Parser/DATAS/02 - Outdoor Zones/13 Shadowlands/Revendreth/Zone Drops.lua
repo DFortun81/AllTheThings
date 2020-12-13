@@ -77,6 +77,7 @@ _.Zones =
 						156395,	-- Starving Dredbat
 					},
 				}),
+				i(177805),	-- Redeemer's Mace
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
 				i(183430),	-- Researcher's Right Slipper
