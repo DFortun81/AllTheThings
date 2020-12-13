@@ -207,7 +207,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(14, {	-- Normal
 				-- TODO: presumably the same items across all difficulties?
 				n(ZONEDROPS, {
 					i(183035),	-- Ardent Sunstar Signet [N]
@@ -412,13 +412,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(15, {	-- Heroic
 				n(ZONEDROPS, {
 					-- i(183035),	-- Ardent Sunstar Signet [N]
 					-- i(182990),	-- Legionnaire's Bloodstained Sabatons [N]
 					-- i(183013),	-- Fallen Templar's Gauntlets [N]
 					-- i(182978),	-- Barkweave Wristwraps [N]
-					-- i(182982),	-- Watchful Arbelist's Bracers [N]
+					i(182982),	-- Watchful Arbelist's Bracers [H]
 					i(184778),	-- Decadent Nathrian Shawl [H]
 				}),
 				e(2393, {	-- Shriekwing
@@ -617,8 +617,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(16, {	-- Mythic
 				["g"] = {
 					e(2393, {	-- Shriekwing
 						["crs"] = { 172145 },	-- Castle Nathria / Shriekwing

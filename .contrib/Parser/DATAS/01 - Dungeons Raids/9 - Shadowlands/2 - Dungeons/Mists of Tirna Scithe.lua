@@ -31,9 +31,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2402, {	-- Mistcaller
 					["crs"] = { 164501 },	-- Mistcaller
 					["g"] = {
-						i(178710, {	-- Tanglewood Thorn
-							["f"] = 20,	-- Dagger (blizz thinks this is a 1h mace)
-						}),
+						i(178710),	-- Tanglewood Thorn
 						i(178705),	-- Tricksprite Gloves
 						i(178691),	-- Hood of the Hidden Path
 						i(178695),	-- Wintersnap Shoulderguards
@@ -81,9 +79,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(178710, {	-- Tanglewood Thorn
-								["f"] = 20,	-- Dagger (blizz thinks this is a 1h mace)
-							}),
+							i(178710),	-- Tanglewood Thorn
 							i(178705),	-- Tricksprite Gloves
 							i(178691),	-- Hood of the Hidden Path
 							i(178695),	-- Wintersnap Shoulderguards
@@ -144,9 +140,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(178710, {	-- Tanglewood Thorn
-								["f"] = 20,	-- Dagger (blizz thinks this is a 1h mace)
-							}),
+							i(178710),	-- Tanglewood Thorn
 							i(178705),	-- Tricksprite Gloves
 							i(178691),	-- Hood of the Hidden Path
 							i(178695),	-- Wintersnap Shoulderguards
