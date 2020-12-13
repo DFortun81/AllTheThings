@@ -3243,6 +3243,7 @@ _.HiddenQuestTriggers =
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
 		q(59618),	-- triggered when using "RSVP: Stonehead"
 		q(59619),	-- triggered when using "RSVP: Stonehead"
+		q(59682),	-- triggered when using "Crown of Honor"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

@@ -634,6 +634,7 @@ _.Zones =
 										crit(1, {	-- Anima-Infused Water
 										}),
 										crit(2, {	-- Crown of Honor
+											["description"] = "|cFF16be0dCrown of Honor|r can be purchased from Bored Dredgers, which have a chance to be inside crypts opened with |cFFFFFFFFAtonement Crypt Keys|r.",
 										}),
 										crit(3, {	-- Bewitched Wardrobe
 										}),

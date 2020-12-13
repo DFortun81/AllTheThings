@@ -11,6 +11,9 @@ _.Zones =
 				i(178883),	-- Divine Prideful Spirit (Rare)
 				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
 				i(179311),	-- Oxxein Lockbox
+				i(172957, {	-- Atonement Crypt Key
+					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
+				}),
 				i(177772),	-- Avowed Tormenter's Cord
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
