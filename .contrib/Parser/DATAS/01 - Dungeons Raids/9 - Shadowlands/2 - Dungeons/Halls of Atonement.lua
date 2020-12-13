@@ -58,6 +58,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178816),	-- Nathrian Usurper's Mask
 						i(178820),	-- Pauldrons of Unleashed Pride
 						i(178824),	-- Signet of the False Accuser
+						i(183241),	-- Memory of the Dark Titan
 					},
 				}),
 			}),
@@ -106,6 +107,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178816),	-- Nathrian Usurper's Mask
 							i(178820),	-- Pauldrons of Unleashed Pride
 							i(178824),	-- Signet of the False Accuser
+							i(183241),	-- Memory of the Dark Titan
 						},
 					}),
 				},
@@ -159,6 +161,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178816),	-- Nathrian Usurper's Mask
 							i(178820),	-- Pauldrons of Unleashed Pride
 							i(178824),	-- Signet of the False Accuser
+							i(183241),	-- Memory of the Dark Titan
 						},
 					}),
 				},
