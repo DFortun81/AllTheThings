@@ -20,12 +20,14 @@ _.Zones =
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
-				o(1278968765, {	-- Bonebound Chest
-				--	TODO: fix objectID when data is available.  may be a shared objectID, in which case the description would have to differentiate between multiple locations
-					["description"] = "The cave entrance is at |cFFFFFFFF37.9, 76.3|r.",
-					["questID"] = 60662,
+				o(353231, {	-- Bonebound Chest
+					["description"] = "There are 2 versions of this chest. One is at the cave entrance at |cFFFFFFFF37.9, 76.3|r. One is at the Unyielding Assembly at building entrance |cFFFFFFFF35.9, 80.2|r.",
+					["questID"] = 60662,	-- same quest triggers for both versions of chest
 					["isDaily"] = true,
-					["coord"] = { 61.1, 22.6, 1651 },	-- cave mapID
+					["coords"] = { 
+						{ 61.1, 22.6, 1651 },	-- Molten Forge version of chest
+						{ 36.2, 81.6, 1536 },	-- Unyielding Assembly version of chest
+					},
 				}),
 				o(352433, {	-- Cache of Eyes
 					["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",

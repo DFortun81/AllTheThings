@@ -232,9 +232,6 @@ _.Zones =
 						},
 					}),
 				}),
-				ach(14751, {	-- The Gang's All Here
-					i(182074),		-- Chosen Tauralus
-				}),
 			}),
 		}),
 	}),

@@ -33,6 +33,7 @@ _.Zones =
 					i(181412),	-- Gormhusk Hood
 					i(181416),	-- Gormhusk Kilt
 					i(179549),	-- Nightwillow Cudgel
+					i(181429),	-- Runetender Bracers
 					i(181413),	-- Runetender Headguard
 					i(181407),	-- Runetender Mitts
 					i(181417),	-- Runetender Pants

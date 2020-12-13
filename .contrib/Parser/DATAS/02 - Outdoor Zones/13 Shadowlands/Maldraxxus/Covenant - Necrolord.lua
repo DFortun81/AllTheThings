@@ -8,8 +8,11 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
-					ach(14834, {
+					ach(14834, {	-- Bound with Purpose
 						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
+					}),
+					ach(14751, {	-- The Gang's All Here
+						i(182074),		-- Chosen Tauralus
 					}),
 				}),
 				n(QUESTS, {
@@ -843,6 +846,12 @@ _.Zones =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 						}),
+					}),
+					n(164588, {	-- Shinbone Slim <Food and Attire>
+						["coord"] = { 47.0, 48.8, 1536 },
+						["g"] = {
+							i(184036),	-- Dundae's Hat
+						},
 					}),
 					n(172176, {	-- Slayer Araya <Covenant Armor>
 						["coord"] = { 57.1, 48.3, 1698 },
