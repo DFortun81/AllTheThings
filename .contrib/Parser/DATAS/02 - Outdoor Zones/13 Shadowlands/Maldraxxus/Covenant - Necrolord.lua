@@ -8,12 +8,14 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
-					ach(14834, {	-- Bound with Purpose
-						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
-					}),
+				ach(14752, {	-- Things To Do When You're Dead
+					ach(14684),	-- Abominable Lives
+					ach(14748),	-- Wardrobe Makeover
 					ach(14751, {	-- The Gang's All Here
 						i(182074),		-- Chosen Tauralus
 					}),
+					ach(14753),	-- It's a Wrap
+				}),
 				}),
 				n(QUESTS, {
 					n(-901, {	-- Covenant Callings
@@ -415,16 +417,88 @@ _.Zones =
 						["provider"] = { "n", 160518 },	-- Whisperer Vyn
 						["sourceQuests"] = { 61323 },	-- See What You've Done
 					}),
-					q(62169, {	-- Eyes to the Sky
-						["coord"] = { 49.7, 50.6, 1536 },
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["sourceQuests"] = { 57648, }	-- The Impossible Plan
-					}),
 					q(60110, {	-- Never Had A Friend Like Me
 						["coord"] = { 38.3, 36.7, 1698 },
-						["provider"] = { "n", 172512 },	-- Emeni <The Slaughter Daughter>
-						["sourceQuests"] = { 60048, }	-- Stitching Time -- TODO: not 100% certain on this
+						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
+						["sourceQuests"] = { 57648, }	-- The Impossible Plan
 					}),
+					
+					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
+					q(62169, {	-- Eyes to the Sky
+						["sourceQuests"] = { 57648, },	-- The Impossible Plan
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1536 },
+					}),
+					q(57778, {	-- The Maldraxxian Job
+						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1536 },
+					}),
+					q(61485, {	-- I'll Only Say This Once
+						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
+						["provider"] = { "n", 160518 },	-- Whisperer Vyn
+						["coord"] = { 50.7, 15.6, 1536 },
+					}),
+					q(61518, {	-- Follow Me
+						["sourceQuests"] = { 61485 },	-- I'll Only Say This Once
+						["provider"] = { "n", 172574 },	-- Navigator Xennir
+						["coord"] = { 31.2, 49.4, 1536 },
+					}),
+					q(60112, {	-- Cut to the Bone
+						["sourceQuests"] = { 61518 },	-- Follow Me
+						["provider"] = { "n", 172574 },	-- Navigator Xennir
+						["coord"] = { 31.8, 40.2, 1536 },
+					}),
+					q(61548, {	-- Set Me Free
+						["sourceQuests"] = { 60112 },	-- Cut to the Bone
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 27.2, 45.2, 1536 },
+					}),
+					q(61551, {	-- Crush 'Em All
+						["sourceQuests"] = { 61548 },	-- Set Me Free
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 28.5, 47.7, 1536 },
+						["g"] = {
+							i(182268),	-- Bladesworn Conjurer's Cowl
+							i(182250),	-- Bladesworn Harbinger's Greathelm
+							i(182277),	-- Bladesworn Tactician's Faceguard
+							i(182259),	-- Bladesworn Wraith's Visage
+						}
+					}),
+					q(61569, {	-- Keys to the Ruin
+						["sourceQuests"] = { 61551 },	-- Crush 'Em All
+						["provider"] = { "n", 172805 },	-- Whisperer Vyn
+						["coord"] = { 30.2, 43.6, 1536 },
+					}),
+					q(61594, {	-- This Way Out
+						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 29.6, 44.0, 1536 },
+					}),
+					q(59722, {	-- Grand Theft Necropolis
+						["sourceQuests"] = { 61594 },	-- This Way Out
+						["provider"] = { "n", 164679 },	-- Whisperer Vyn
+						-- coordinates vary because it's on a moving ship/necropolis
+					}),
+					q(61869, {	-- Search the Place
+						["sourceQuests"] = { 61594 },	-- This Way Out
+						["provider"] = { "n", 164679 },	-- Whisperer Vyn
+						-- coordinates vary because it's on a moving ship/necropolis
+					}),
+					q(58820, {	-- Bindings of Fleshcrafting
+						["sourceQuests"] = {
+							59722,	-- Grand Theft Necropolis
+							61869,	-- Search the Place
+						},
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.7, 1698 },
+						["g"] = {
+							i(182275),	-- Bladesworn Conjurer's Wristwraps
+							i(182257),	-- Bladesworn Harbinger's Vambraces
+							i(182284),	-- Bladesworn Tactician's Bracers
+							i(182266),	-- Bladesworn Wraith's Armguards
+						},
+					}),					
 
 					-- TODO: moved these here from Maldraxxus quests file, but don't think they made it out of beta; commenting out for now
 					--[[
@@ -471,6 +545,11 @@ _.Zones =
 							["provider"] = { "n", 162174 },	-- Emeni
 							["coord"] = { 24.9, 31.7, 1536 },
 						}),
+						q(63058, {	-- Abominable Stitching and Me
+							["provider"] = { "n", 161909 },	-- Arkadia Moa
+							["coord"] = { 52.4, 38.4, 1698 },
+							["description"] = "Becomes available after you build Abomination Factory tier 1 in your sanctum.",
+						}),
 						q(60049, {	-- At Your Service
 							["sourceQuests"] = { 58727 },	-- A Place To Call Home
 							["provider"] = { "n", 167044 },	-- Emeni
@@ -483,6 +562,13 @@ _.Zones =
 						}),
 						q(60041, {	-- Build-A-Bomination
 							["sourceQuests"] = { 60048 },	-- Stitching Time
+							["provider"] = { "n", 167150 },	-- Rathan
+							["coord"] = { 55.1, 68.8, 1536 },
+						}),
+						q(60195, {	-- Build One More
+							["sourceQuests"] = { 60042 },	-- May I Take Your Order?
+							["provider"] = { "n", 167150 },	-- Rathan
+							["coord"] = { 55.1, 68.8, 1536 },
 						}),
 						q(58668, {	-- Find The Way
 							["sourceQuests"] = { 58665 },	-- Rebellious Souls
@@ -496,6 +582,8 @@ _.Zones =
 						}),
 						q(60042, {	-- May I Take Your Order?
 							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+							["provider"] = { "n", 167150 },	-- Rathan
+							["coord"] = { 55.1, 68.8, 1536 },
 						}),
 						q(58665, {	-- Rebellious Souls
 							-- TODO: might be breadcrumb?
@@ -510,6 +598,8 @@ _.Zones =
 						}),
 						q(58432, {	-- Something Old, Something Used
 							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+							["provider"] = { "n", 161270 },	-- Chordy
+							["coord"] = { 55.1, 68.6, 1536 },
 							["isWeekly"] = true,
 						}),
 						q(60048, {	-- Stitching Time
@@ -578,7 +668,7 @@ _.Zones =
 						-- Tier 2: Recuperative Treatments
 						-- Tier 3: Forced March
 					}),
-					-- Transport Network
+					n(-924, {	-- Transport Network
 						-- Tier 1: Ziggurat Now
 							q(63059, {	-- Blink of an Eye
 								["sourceQuests"] = { 63055 },	-- Powering the Portals
@@ -591,7 +681,17 @@ _.Zones =
 								["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 							}),
 						-- Tier 2: A Keep Above
+							q(60184, {	-- Dude, Where's My Necropolis?
+								-- appears after tier 1 transport network built and chapter 4 questline complete 
+								["sourceQuests"] = { 
+									58820,	-- Bindings of Fleshcrafting
+									63059,	-- Blink of an Eye
+								},
+								["provider"] = { "n", 172573 },	-- Khaliiq
+								["coord"] = { 29.6, 44.0, 1536 },
+							}),
 						-- Tier 3: Flying Fortress
+					}),
 				}),
 				n(TREASURES, {
 					o(1278968757, {	-- Treasure: House of the Chosen -- TODO: proper objectID
