@@ -287,6 +287,11 @@ _.Zones =
 						["provider"] = { "n", 166982 },	-- Marasmius
 						["coord"] = { 29.5, 34.6, 1565 },
 					}),
+					q(63347, {	-- Night Fae Tactician
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, 1701 },
+						["description"] = "Becomes available at Renown 22",
+					}),
 					q(63346, {	-- Night Fae Veteran
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },

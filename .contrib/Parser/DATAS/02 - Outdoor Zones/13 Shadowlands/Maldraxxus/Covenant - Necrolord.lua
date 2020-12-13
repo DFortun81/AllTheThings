@@ -222,6 +222,19 @@ _.Zones =
 							}),
 						}),
 					}),
+					-- non-chapter Necrolord quests
+					q(63343, {	-- Necrolord Tactician
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },
+						["description"] = "Becomes available at Renown 22",
+					}),
+					q(63342, {	-- Necrolord Veteran
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },
+						["description"] = "Becomes available at Renown 7",
+					}),
+				
+					
 					-- Covenant Intro
 					q(59556, {	-- Welcome To Our House
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
@@ -607,6 +620,12 @@ _.Zones =
 							["provider"] = { "n", 167150 },	-- Rathan
 							["coord"] = { 55.1, 68.8, 1536 },
 						}),
+						q(59126, {    -- Supply Chain
+							-- TODO: ["sourceQuests"] = {  },
+							["provider"] = { "n", 159238 },    -- Atticus
+							["coord"] = { 55.3, 68.3, 1536 },
+							["isWeekly"] = true,
+						}),
 						q(58670, {	-- The Slaughter Daughter
 							["sourceQuests"] = { 59042 },	-- A Good Heart
 							["provider"] = { "n", 162174 },	-- Emeni
@@ -635,7 +654,7 @@ _.Zones =
 							q(60722, {	-- Tower Power
 								["sourceQuests"] = { 63057 },	-- Restoring Power
 								["provider"] = { "n", 167205 },	-- Yondare Hex
-								["coord"] = { 490.0, 36.0, 1698 },
+								["coord"] = { 49.0, 36.0, 1698 },
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
