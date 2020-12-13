@@ -23,7 +23,7 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						n(58127, {	-- Inquisitor Sinstone
+						q(58127, {	-- Inquisitor Sinstone
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 160248 },	-- Archivist Fane
 							["isDaily"] = true,
@@ -33,17 +33,17 @@ _.Zones =
 								-- TODO: add sinstone
 							},
 						}),
-						n(58128, {	-- High Inquisitor Sinstone
+						q(58128, {	-- High Inquisitor Sinstone
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 160248 },	-- Archivist Fane
 							["isDaily"] = true,
 							["coord"] = { 73.0, 52.0, 1525 },
 							["cost"] = { { "c", 1816, 250 } },	-- 250x Sinstone Fragment
 							["g"] = {
-								-- TODO: add sinstone
+								i(173794),	-- High Inquisitor Sinstone
 							},
 						}),
-						n(58129, {	-- Grand Inquisitor Sinstone
+						q(58129, {	-- Grand Inquisitor Sinstone
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 160248 },	-- Archivist Fane
 							["isDaily"] = true,
@@ -53,7 +53,7 @@ _.Zones =
 								-- TODO: add sinstone
 							},
 						}),
-						n(62653, {	-- Stop the Inquisition
+						q(62653, {	-- Stop the Inquisition
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 167332 },	-- Gresit
 							["isWeekly"] = true,

@@ -176,56 +176,115 @@ _.ExpansionFeatures =
 
 				-- Lockouts
 				-- TODO: Not sure how these all work or if we even want to track them (similar to how Horrific Visions had per-tier loot tracking?)
-				-- Upper Reaches
-				q(59337, {	-- Level 1
-					["isWeekly"] = true,
-				}),
-				q(61101, {	-- Level 2
-					["isWeekly"] = true,
-				}),
-				q(61131, {	-- Level 3
-					["isWeekly"] = true,
-				}),
-
-				-- Soulforges
-				-- q(, {	-- Level 1
-				-- 	["isWeekly"] = true,
-				-- }),
-				-- q(, {	-- Level 2
-				-- 	["isWeekly"] = true,
-				-- }),
-				q(58193, {	-- Level 3
-					["isWeekly"] = true,
-				}),
-
-				-- Skoldus Hall
-				q(59328, {	-- Level 1
-					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 1",
-				}),
-				q(59329, {	-- Level 2
-					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 2",
-				}),
-				q(59330, {	-- Level 3
-					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 3",
-				}),
-
+				
 				-- Coldheart
-				q(58198, {	-- Level 1
+				q(58198, {	-- Coldheart Interstitia, Layer 1
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 1",
 				}),
-				q(58199, {	-- Level 2
+				q(58199, {	-- Coldheart Interstitia, Layer 2
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 2",
 				}),
-				-- q(, {	-- Level 3
-				-- 	["isWeekly"] = true,
-				--	["title"] = "Coldheart Interstitia, Layer 3",
-				-- }),
+				q(58200, {	-- Coldheart Interstitia, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 3",
+				}),
+				q(58201, {	-- Coldheart Interstitia, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 4",
+				}),
+
 				
+				-- Fracture Chambers
+				--[[
+				q(, {	-- Fracture Chambers, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 1",
+				}),
+				q(, {	-- Fracture Chambers, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 2",
+				}),
+				q(, {	-- Fracture Chambers, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 3",
+				}),
+				q(, {	-- Fracture Chambers, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 4",
+				}),
+				--]]
+				
+				
+				-- Mort'regar
+				--[[
+				q(, {	-- Mort'regar, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 1",
+				}),
+				q(, {	-- Mort'regar, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 2",
+				}),
+				q(, {	-- Mort'regar, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 3",
+				}),
+				q(, {	-- Mort'regar, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 4",
+				}),
+				--]]
+				
+				
+				-- Skoldus Hall
+				q(59328, {	-- Skoldus Hall, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 1",
+				}),
+				q(59329, {	-- Skoldus Hall, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 2",
+				}),
+				q(59330, {	-- Skoldus Hall, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 3",
+				}),
+				q(59331, {	-- Skoldus Hall, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 4",
+				}),
+				
+				
+				-- Soulforges
+				-- q(, {	-- Soulforges, Layer 1
+				-- 	["isWeekly"] = true,
+				--	["title"] = "Soulforges, Layer 1",
+				-- }),
+				-- q(, {	-- Soulforges, Layer 2
+				-- 	["isWeekly"] = true,
+				--	["title"] = "Soulforges, Layer 2",
+				-- }),
+				q(58193, {	-- Soulforges, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 3",
+				}),
+				
+				
+				-- Upper Reaches
+				q(59337, {	-- Upper Reaches, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 1",
+				}),
+				q(61101, {	-- Upper Reaches, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 2",
+				}),
+				q(61131, {	-- Upper Reaches, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 3",
+				}),
 			}),
 		}),
 	}),
