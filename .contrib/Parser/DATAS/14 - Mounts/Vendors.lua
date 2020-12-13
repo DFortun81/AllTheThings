@@ -517,7 +517,9 @@ _.Mounts =
 		}),
 		i(8591),	-- Turquoise Raptor
 		i(152796),	-- Umber Ruinstrider
-		i(183053),	-- Umbral Scythehorn
+		i(183053, {	-- Umbral Scythehorn
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
 		i(183801),	-- Vibrant Flutterwing
@@ -550,7 +552,9 @@ _.Mounts =
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },
 		}),
-		i(180415),	-- Winterborn Runestag
+		i(180415, {	-- Winterborn Runestag
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(116655),	-- Witherhide Cliffstomper
 		i(44230, {	-- Wooly Mammoth [Alliance Only]
 			["races"] = ALLIANCE_ONLY,

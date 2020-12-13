@@ -1886,15 +1886,48 @@ _.Zones =
 									{ "c", 1885, 5 },
 								},
 							}),
-							i(182664, {	-- Stemmins
+							i(182664, {	-- Stemmins (PET)
 								["cost"] = { 
 									{ "i", 163036, 250 },
 									{ "c", 1885, 5 },
 								},
 							}),
-							i(180636, {	-- Willowbreeze
+							i(180636, {	-- Willowbreeze (PET)
 								["cost"] = { 
 									{ "i", 163036, 250 },
+									{ "c", 1885, 5 },
+								},
+							}),
+							i(184665, {	-- Chronicle of Lost Memories
+								["cost"] = { 
+									{ "c", 1885, 35 },
+								},
+							}),
+							i(184116, {	-- Ensemble: Winterborn Guise
+								["questID"] = 61913,
+								["cost"] = { 
+									{ "c", 1813, 25000 },
+									{ "c", 1885, 5 },
+								},
+							}),
+							i(184115, {	-- Ensemble: Winterborn Raiment
+								["questID"] = 61914,
+								["cost"] = { 
+									{ "c", 1813, 25000 },
+									{ "c", 1885, 5 },
+								},
+							}),
+							i(184114, {	-- Ensemble: Winterborn Regalia
+								["questID"] = 61915,
+								["cost"] = { 
+									{ "c", 1813, 25000 },
+									{ "c", 1885, 5 },
+								},
+							}),
+							i(184117, {	-- Ensemble: Winterborn Warbark
+								["questID"] = 61912,
+								["cost"] = { 
+									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
 							}),
@@ -1921,12 +1954,6 @@ _.Zones =
 							i(181312, {	-- Winterwoven Pack
 								["cost"] = { 
 									{ "c", 1813, 3500 },
-									{ "c", 1885, 5 },
-								},
-							}),
-							i(184117, {	-- Ensemble: Winterborn Warbark
-								["cost"] = { 
-									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
 							}),

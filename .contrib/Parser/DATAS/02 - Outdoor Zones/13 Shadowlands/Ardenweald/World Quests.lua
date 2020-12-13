@@ -168,10 +168,6 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				i(181430),	-- Evernight Drape
-				-- Runetender [Leather]
-				i(181413),	-- Runetender Headguard
-				i(181407),	-- Runetender Mitts
-				i(181417),	-- Runetender Pants
 				i(175713),	-- Sprigthistle Loop
 				i(175740),	-- Valeshroud Torque
 			}),
