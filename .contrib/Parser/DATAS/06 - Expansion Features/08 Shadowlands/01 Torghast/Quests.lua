@@ -68,10 +68,16 @@ _.ExpansionFeatures =
 
 				-- Champion Unlocks
 				-- TODO: move to covenant files
+				q(61223, {	-- Champion: Ayeleth the Deprived
+					["provider"] = { "n", 171918 },	-- Ayeleth
+					["g"] = {
+						follower(1220),	-- Ayeleth
+					},
+				}),
 				q(61424, {	-- Champion: Chalkyth [Night Fae]
 					["provider"] = { "n", 172240 },	-- Chalkyth
 					["g"] = {
-						follower(1280)	-- Chalkyth
+						follower(1280),	-- Chalkyth
 					},
 				}),
 				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
@@ -128,6 +134,10 @@ _.ExpansionFeatures =
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				-- Bonus Quests
+				q(61259, {	-- Ayeleth's Hunger
+					["repeatable"] = true,
+					["provider"] = { "n", 171920 },	-- Ayeleth
+				}),
 				q(61430, {	-- Chalkyth's Saber
 					["repeatable"] = true,
 					["provider"] = { "n", 172240 },	-- Chalkyth

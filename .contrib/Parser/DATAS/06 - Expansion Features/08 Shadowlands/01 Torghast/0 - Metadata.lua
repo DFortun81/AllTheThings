@@ -10,14 +10,17 @@ _.ExpansionFeatures =
 			["icon"] = 3642306,
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
-				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6
+				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
 				1779,	-- Coldheart Interstitia - Layer 1, Floor 1
 				1736,	-- Coldheart Interstitia - Layer 1, Floor 2
-				1712,	-- Coldheart Interstitia - Layer 1, Floor 3
-				1796,	-- Coldheart Interstitia - Layer 1, Floor 4
-				1635,	-- Coldheart Interstitia - Layer 1, Floor 5 / Fracture Chambers - Layer 1, Floor 1
-				1630,	-- Coldheart Interstitia - Layer 1, Floor 6
+				1712,	-- Coldheart Interstitia - Layer 1, Floor 3 / Layer 2, Floor 3
+				1796,	-- Coldheart Interstitia - Layer 1, Floor 4 / Layer 2, Floor 4
+				1635,	-- Coldheart Interstitia - Layer 1, Floor 5 / Layer 2, Floor 1 / Fracture Chambers - Layer 1, Floor 1
+				1630,	-- Coldheart Interstitia - Layer 1, Floor 6 / Layer 2, Floor 6
+				--
+				1631,	-- Coldheart Interstitia - Layer 2, Floor 2 / Layer 2, Floor 4
+				1776,	-- Coldheart Interstitia - Layer 2, Floor 5
 				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
@@ -27,7 +30,7 @@ _.ExpansionFeatures =
 				--
 				1801,	-- Fracture Chambers - Layer 2, Floor 1
 				1629,	-- Fracture Chambers - Layer 2, Floor 2
-				1805,	-- Fracture Chambers - Layer 2, Floor 4 / Layer 3, Floor 1
+				1805,	-- Fracture Chambers - Layer 2, Floor 4 / Layer 3, Floor 1 / Skoldus Hall - Layer 2, Floor 4 / Skoldus Hall - Layer 3, Floor 1
 				--
 				1780,	-- Mort'regar - Layer 1, Floor 1
 				1802,	-- Mort'regar - Layer 1, Floor 2
@@ -43,16 +46,18 @@ _.ExpansionFeatures =
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
 				1810,	-- Skoldus Hall - Layer 1, Floor 1
-				1758,	-- Skoldus Hall - Layer 1, Floor 3
-				1766,	-- Skoldus Hall - Layer 1, Floor 4 / Layer 3, Floor 2
+				1758,	-- Skoldus Hall - Layer 1, Floor 3 / Layer 2, Floor 3 / Layer 3, Floor 3
+				1766,	-- Skoldus Hall - Layer 1, Floor 4 / Layer 2, Floor 5 / Layer 3, Floor 2
 				1767,	-- Skoldus Hall - Layer 1, Floor 5
+				--
+				1619,	-- Skoldus Hall - Layer 2, Floor 2 / Layer 3, Floor 2
 				--
 				1803,	-- Skoldus Hall - Layer 3, Floor 4
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
+				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
 				1798,	-- Coldheart - Layer 2, Floor 1
 				1795,	-- Coldheart - Layer 2, Floor 2
-				1631,	-- Coldheart - Layer 2, Floor 4
 				--
 				1764,	-- Fracture Chambers - Layer 2, Floor 2
 				1618,	-- Torghast
@@ -75,7 +80,6 @@ _.ExpansionFeatures =
 				1772,	-- TG62_Floor
 				1773,	-- TG73_Floor
 				1774,	-- Torghast
-				1776,	-- TG66_Floor
 				1778,	-- TG68_Floor
 				1782,	-- Torghast
 				1783,	-- Torghast

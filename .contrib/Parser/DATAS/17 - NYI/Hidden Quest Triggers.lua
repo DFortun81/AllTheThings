@@ -1256,6 +1256,8 @@ _.HiddenQuestTriggers =
 		q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
 		q(40703),	-- Druid Order Hall - Restoration Chosen (First)
 		q(43979),	-- Druid Order Hall - Resto Chosen (second)
+		q(44436),	-- Druid Order Hall - Resto Chosen (third)
+		q(44447),	-- Druid Order Hall - Resto Chosen (fourth)
 		q(40781),	-- Druid Order Hall - Balance Chosen (First)
 		q(43976),	-- Druid Order Hall - Balance Chosen (Second)
 		q(44432),	-- Druid Order Hall - Balance Chosen (Third)
@@ -1277,6 +1279,7 @@ _.HiddenQuestTriggers =
 		q(42361),	-- Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
 		q(42363),	-- Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
 		q(42513),	-- Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
+		q(41885),	-- Naralex Kneel Seen — drinking the potion while next to Naralex during #41436, "In Deep Slumber"
 
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -3290,6 +3293,7 @@ _.HiddenQuestTriggers =
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 	--	q(61418),	-- Triggered randomly... not sure why?
+		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
