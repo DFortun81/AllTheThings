@@ -164,7 +164,11 @@ _.Zones =
 					ach(14894),		-- To 'Ghast, Two Curios
 				}),
 				ach(14745, {	-- Grand Theft Shadehound
-				--	["crs"] = {  },	-- TODO: add if possible (is it an NPC or an object?)
+					["crs"] = { 
+						173139,	-- Bridled Shadehound (random spawn)
+						173149,	-- Bridled Shadehound (after killing NPC riding it)
+						-- 176390,	-- Bridled Shadehound -- Confirm this one, has very few locations on wowhead
+					},
 				}),
 				ach(14334, {	-- Into the Maw
 					["sourceQuests"] = { 59770 },	-- Stand as One
