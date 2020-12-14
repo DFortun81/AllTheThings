@@ -1599,6 +1599,18 @@ CreateObject = function(t)
 		end
 	end
 end
+-- merges the properties of the o group into the g group, making sure not to alter the filterability of the group
+MergeProperties = function(g, o)
+	if g and o then
+		for k,v in pairs(o) do
+			if k ~= "expanded" and
+				k ~= "g" and
+				(k ~= "parent" or not rawget(g, k) or app.RecursiveGroupRequirementsFilter(v)) then
+				rawset(g, k, v);
+			end
+		end
+	end
+end
 MergeObjects = function(g, g2)
 	if #g2 > 25 then
 		local hashTable,t = {};
@@ -1622,11 +1634,12 @@ MergeObjects = function(g, g2)
 							t.g = og;
 						end
 					end
-					for k,v in pairs(o) do
-						if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
-							rawset(o, k, v);
-						end
-					end
+					MergeProperties(t, o);
+					-- for k,v in pairs(o) do
+					-- 	if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
+					-- 		rawset(o, k, v);
+					-- 	end
+					-- end
 				else
 					hashTable[hash] = o;
 					tinsert(g, o);
@@ -1656,11 +1669,12 @@ MergeObject = function(g, t, index)
 						o.g = tg;
 					end
 				end
-				for k,v in pairs(t) do
-					if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
-						rawset(o, k, v);
-					end
-				end
+				MergeProperties(o, t);
+				-- for k,v in pairs(t) do
+				-- 	if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
+				-- 		rawset(o, k, v);
+				-- 	end
+				-- end
 				return o;
 			end
 		end
@@ -2967,9 +2981,82 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Create an unlinked version of the object.
 		if not group.g then
-			local merged = {};
+			-- local merged = {};
 			local skipped = {};
 			-- TODO: make this work for everything. clearly.
+			--[[
+			Basically need to merge up any group which is in the cache for field(a[b]) where the key of that group matches paramA and the value matches paramB
+			This way things which are cached under themselves are merged into the root group, and things which are tagged with another things (i.e. NPCs with MoH)
+			will not be treated as the same group as MoH and NOT be merged up (because their key will be 'npcID' instead of 'itemID')
+			if group.key == paramA and group[group.key] == paramB then
+			MergeObject(merged)
+			]]
+
+			-- Create the root group for the search results
+			-- print("params",paramA,paramB);
+			local root = CreateObject({ [paramA] = paramB });
+			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
+			paramA, paramB = root.key, root[root.key];
+			-- print("Root",root.key,root[root.key]);
+			-- print("params",paramA,paramB);
+			root.g = {};
+			-- Loop through all obj found for this search
+			-- print(#group,"Search total");
+			for i,o in ipairs(group) do
+				-- If the obj "is" the root obj
+				if o.key == paramA and o[o.key] == paramB then
+					-- Merge the obj info into the root
+					-- print("Merge root",o.key,o[o.key]);
+					MergeProperties(root, o);
+					-- Merge the g of the obj into the merged results
+					if o.g then
+						-- print("Merge root g",#o.g,o.key,o[o.key])
+						MergeObjects(root.g, o.g);
+					end
+				-- otherwise
+				else
+					-- If the obj meets the recursive group filter
+					if app.RecursiveGroupRequirementsFilter(o) then
+						-- Merge the obj into the merged results
+						-- print("Merge object",o.key,o[o.key])
+						MergeObject(root.g, CreateObject(o));
+					-- otherwise
+					else
+						-- Add to the set of skipped objects
+						-- print("Skip",o.key,o[o.key])
+						tinsert(skipped, o);
+					end
+				end
+				-- print(#root.g,"Merge total");
+			end
+			-- Loop through all skipped objects
+			for i,o in ipairs(skipped) do
+				-- Merge the obj into the merged results
+				-- print("Merge skip",o.key,o[o.key])
+				MergeObject(root.g, CreateObject(o));
+			end
+			-- Resolve symbolic links within the group
+			for i,o in ipairs(root.g) do
+				local symbolicLink = ResolveSymbolicLink(o);
+				if symbolicLink then
+					o.symbolized = true;
+					if o.g and #o.g >= 0 then
+						for j=1,#symbolicLink,1 do
+							MergeObject(o.g, CreateObject(symbolicLink[j]));
+						end
+					else
+						for j=#symbolicLink,1,-1 do
+							symbolicLink[j] = CreateObject(symbolicLink[j]);
+						end
+						o.g = symbolicLink;
+					end
+				end
+			end
+
+			-- Replace as the group
+			group = root;
+			-- print(#group.g,"Merge total");
+
 			-- local preMergeTotal = #group;
 			-- -- First add only groups which meet the current filters
 			-- -- print("-final group-",#group,paramA,paramB)
@@ -3007,64 +3094,64 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- 	-- print("merge",o.hash);
 			-- end
 			-- First add only groups which meet the current filters
-			for i,o in ipairs(group) do
-				if app.RecursiveGroupRequirementsFilter(o) then
-					MergeObject(merged, CreateObject(o));
-					-- print("add",o.hash);
-					-- print("total merged",#merged);
-				else
-					-- print("skip",o.hash);
-					tinsert(skipped, o);
-				end
-			end
-			-- then merge any skipped groups
-			for i,o in ipairs(skipped) do
-				MergeObject(merged, CreateObject(o));
-				-- print("merge",o.hash);
-			end
+			-- for i,o in ipairs(group) do
+			-- 	if app.RecursiveGroupRequirementsFilter(o) then
+			-- 		MergeObject(merged, CreateObject(o));
+			-- 		-- print("add",o.hash);
+			-- 		-- print("total merged",#merged);
+			-- 	else
+			-- 		-- print("skip",o.hash);
+			-- 		tinsert(skipped, o);
+			-- 	end
+			-- end
+			-- -- then merge any skipped groups
+			-- for i,o in ipairs(skipped) do
+			-- 	MergeObject(merged, CreateObject(o));
+			-- 	-- print("merge",o.hash);
+			-- end
 			-- print("total merged",#merged);
-			if #merged == 1 and merged[1][paramA] == paramB then
-				group = merged[1];
-				local symbolicLink = ResolveSymbolicLink(group);
-				if symbolicLink then
-					if group.g and #group.g >= 0 then
-						for j=1,#symbolicLink,1 do
-							MergeObject(group.g, CreateObject(symbolicLink[j]));
-						end
-					else
-						for j=#symbolicLink,1,-1 do
-							symbolicLink[j] = CreateObject(symbolicLink[j]);
-						end
-						group.g = symbolicLink;
-					end
-				end
-			else
-				for i,o in ipairs(merged) do
-					local symbolicLink = ResolveSymbolicLink(o);
-					if symbolicLink then
-						o.symbolized = true;
-						if o.g and #o.g >= 0 then
-							for j=1,#symbolicLink,1 do
-								MergeObject(o.g, CreateObject(symbolicLink[j]));
-							end
-						else
-							for j=#symbolicLink,1,-1 do
-								symbolicLink[j] = CreateObject(symbolicLink[j]);
-							end
-							o.g = symbolicLink;
-						end
-					end
-				end
-				group = CreateObject({ [paramA] = paramB });
-				group.g = merged;
-				-- print("multi-merge",#group.g)
-			end
+			-- if #merged == 1 and merged[1][paramA] == paramB then
+			-- 	group = merged[1];
+			-- 	local symbolicLink = ResolveSymbolicLink(group);
+			-- 	if symbolicLink then
+			-- 		if group.g and #group.g >= 0 then
+			-- 			for j=1,#symbolicLink,1 do
+			-- 				MergeObject(group.g, CreateObject(symbolicLink[j]));
+			-- 			end
+			-- 		else
+			-- 			for j=#symbolicLink,1,-1 do
+			-- 				symbolicLink[j] = CreateObject(symbolicLink[j]);
+			-- 			end
+			-- 			group.g = symbolicLink;
+			-- 		end
+			-- 	end
+			-- else
+			-- 	for i,o in ipairs(merged) do
+			-- 		local symbolicLink = ResolveSymbolicLink(o);
+			-- 		if symbolicLink then
+			-- 			o.symbolized = true;
+			-- 			if o.g and #o.g >= 0 then
+			-- 				for j=1,#symbolicLink,1 do
+			-- 					MergeObject(o.g, CreateObject(symbolicLink[j]));
+			-- 				end
+			-- 			else
+			-- 				for j=#symbolicLink,1,-1 do
+			-- 					symbolicLink[j] = CreateObject(symbolicLink[j]);
+			-- 				end
+			-- 				o.g = symbolicLink;
+			-- 			end
+			-- 		end
+			-- 	end
+			-- 	group = CreateObject({ [paramA] = paramB });
+			-- 	group.g = merged;
+			-- 	-- print("multi-merge",#group.g)
+			-- end
 
 			-- Append any crafted things using this group
 			app.BuildCrafted(group, 10);
 
 			-- Append currency info to any orphan currency groups
-			app.BuildCurrencies(group); -- TODO: this is broke now
+			-- app.BuildCurrencies(group); -- TODO: this is broke now
 
 			group.total = 0;
 			group.progress = 0;
@@ -9714,7 +9801,7 @@ function app:CreateMiniListForGroup(group)
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 			end;
-		elseif group.questID or group.sourceQuests then
+		elseif (group.key == "questID" and group.questID) or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 				group = group.parent;

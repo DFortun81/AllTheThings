@@ -122,7 +122,7 @@ _.Zones =
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
-				--	["questID"] = ,
+					["questID"] = 62281,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
