@@ -83,6 +83,141 @@ _.Zones =
 						["sourceQuests"] = { 58724 },	-- The Queen's Request
 					}),
 				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+					},
+				}),
 				ach(14788, {	-- Fractured Faerie Tales
 					-- TODO: fill in more coords; figure out if some of them have multiple spawn points
 					crit(1, {	-- A Meandering Story

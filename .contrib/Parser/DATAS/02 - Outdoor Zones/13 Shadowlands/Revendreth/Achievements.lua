@@ -31,6 +31,181 @@ _.Zones =
 				ach(14272, {	-- Best Bud With Benefits
 					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
 				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+					},
+				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven

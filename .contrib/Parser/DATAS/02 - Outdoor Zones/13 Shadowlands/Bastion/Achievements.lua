@@ -24,6 +24,181 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+					},
+				}),
 				ach(14281, {	-- The Path to Ascension
 					crit(1, {	-- Eternity's Call
 						["sourceQuests"] = { 57677 },	-- A Soulbind In Need

@@ -135,6 +135,181 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(13279, {	-- Family Battler
+					["collectible"] = false,
+					["g"] = {
+						ach(13280, {	-- Hobbyist Aquarist
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13270, {	-- Beast Mode
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13271, {	-- Critters with Huge Teeth
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13272, {	-- Dragons Make Everything Better
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13273, {	-- Element of Success
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13274, {	-- Fun With Flying
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13281, {	-- Human Resources
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13275, {	-- Magician's Secrets
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13277, {	-- Machine Learning
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+						ach(13278, {	-- Not Quite Dead Yet
+							["collectible"] = false,
+							["g"] = {
+								crit(11, {	-- Lozu
+									["creatureID"] = 141529,	-- Lozu
+									["coord"] = { 72.8, 48.6, 863 },
+								}),
+								crit(12, {	-- Grady Prett
+									["creatureID"] = 141799,	-- Grady Prett
+									["coord"] = { 36.0, 54.6, 863 },
+								}),
+								crit(13, {	-- Korval Darkbeard
+									["creatureID"] = 141814,	-- Korval Darkbeard
+									["coord"] = { 43.0, 38.8, 863 },
+								}),
+							},
+						}),
+					},
+				}),
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,
 					["g"] = {

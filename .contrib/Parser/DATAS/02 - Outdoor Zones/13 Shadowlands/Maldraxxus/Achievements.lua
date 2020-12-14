@@ -46,6 +46,181 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+					},
+				}),
 				ach(14626, {	-- Harvester of Sorrow
 				--	TODO: figure out a better way to display these?  maybe secrets?  maybe in a treasures header?  maybe the 'special' header?
 				--	the 'harvester of sorrow' achievement is granted by looting 'sorrowbane,' the pet is granted by looting oonar's arm... both have similarly convoluted loot methods and, from what i can tell, the objects are connected to each other.  this WAS part of the 'treasures of maldraxxus' achievement, but was moved to be its own thing

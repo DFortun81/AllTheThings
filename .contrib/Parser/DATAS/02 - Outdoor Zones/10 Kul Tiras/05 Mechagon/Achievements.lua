@@ -97,6 +97,40 @@ _.Zones =
 						},
 					}),
 				}),
+				ach(13625, {	-- Mighty Minions of Mechagon
+					crit(5, {	-- CK-9 Micro-Oppression Unit
+						["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+						["coord"] = { 65.4, 57.6, 1462 },
+					}),
+					crit(4, {	-- Creakclank
+						["crs"] = { 154925 },	-- Creakclank
+						["coord"] = { 59.2, 50.9, 1462 },
+					}),
+					crit(1, {	-- Gnomefeaster
+						["crs"] = { 154922 },	-- Gnomefeaster
+						["coord"] = { 64.7, 64.6, 1462 },
+					}),
+					crit(3, {	-- Goldenbot XD
+						["crs"] = { 154924 },	-- Goldenbot XD
+						["coord"] = { 60.6, 56.9, 1462 },
+					}),
+					crit(2, {	-- Sputtertube
+						["crs"] = { 154923 },	-- Sputtertube
+						["coord"] = { 60.7, 46.5, 1462 },
+					}),
+					crit(6, {	-- Unit 35
+						["crs"] = { 154927 },	-- Unit 35
+						["coord"] = { 51.1, 45.4, 1462 },
+					}),
+					crit(7, {	-- Unit 6
+						["crs"] = { 154928 },	-- Unit 6
+						["coord"] = { 39.5, 40.2, 1462 },
+					}),
+					crit(8, {	-- Unit 17
+						["crs"] = { 154929 },	-- Unit 17
+						["coord"] = { 72.1, 72.9, 1462 },
+					}),
+				}),
 				ach(13708),		-- Most Minis Wins
 				ach(13696, {	-- Scrappy's Best Friend
 					["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",

@@ -47,7 +47,7 @@ _.Achievements =
 					--["coord"] = { 34.8, 59.6, 554 },
 				}),
 			}),
-			ach(9069, {	-- An Awfully Big Adventure
+			ach(9069,  {	-- An Awfully Big Adventure
 				i(120121),	-- Trunks
 				crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
 					["coord"] = { 31.2, 74.2, 390 },
@@ -476,23 +476,23 @@ _.Achievements =
 					["_quests"] = { 52938 },
 				}),
 			}),
-			ach(6622, {	-- Big City Pet Brawler
+			ach(6622,  {	-- Big City Pet Brawler
 				crit(1),	-- Big City Pet Brawlin' - Horde
 				crit(2),	-- Big City Pet Brawlin' - Alliance
 			}),
-			ach(6584, {	-- Big City Pet Brawlin' - Alliance
+			ach(6584,  {	-- Big City Pet Brawlin' - Alliance
 				crit(1),	-- Stormwind
 				crit(2),	-- Ironforge
 				crit(3),	-- Darnassus
 				crit(4),	-- The Exodar
 			}),
-			ach(6621, {	-- Big City Pet Brawlin' - Horde
+			ach(6621,  {	-- Big City Pet Brawlin' - Horde
 				crit(1),	-- ORgrimmar
 				crit(2),	-- Thunder Bluff
 				crit(3),	-- Undercity
 				crit(4),	-- Silvermoon City
 			}),
-			ach(8301, {	-- Deadly Pet Brawler (1000)
+			ach(8301,  {	-- Deadly Pet Brawler (1000)
 				title(227),	-- Trainer
 				ach(8300, {	-- Brutal Pet Brawler (250)
 					i(94191),	-- Stunted Direhorn
@@ -500,7 +500,7 @@ _.Achievements =
 				ach(8298),	-- Vengeful Pet Brawler (50)
 				ach(8297),	-- Merciless Pet Brawler (10)
 			}),
-			ach(9463, {	-- Draenic Pet Battler
+			ach(9463,  {	-- Draenic Pet Battler
 				i(111999),	-- Menagerie, Level 3 [Blueprints]
 			}),
 			ach(13279, {	-- Family Battler
