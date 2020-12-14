@@ -3314,6 +3314,7 @@ _.HiddenQuestTriggers =
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
+		q(62079),	-- triggered at the end of Mythic Tirna Scithe (+2)
 		
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID

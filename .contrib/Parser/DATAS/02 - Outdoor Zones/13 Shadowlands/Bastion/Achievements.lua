@@ -481,6 +481,7 @@ _.Zones =
 					crit(4),		-- Vesper of Loyalty
 					crit(5),		-- Vesper of Purity
 				}),
+				ach(14514),		-- Tour of Duty: Bastion
 				ach(14768, {	-- What is that Melody?
 					crit(1),		-- Hymn of Purity
 					crit(2),		-- Hymn of Courage

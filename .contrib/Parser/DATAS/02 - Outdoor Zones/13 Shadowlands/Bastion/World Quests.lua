@@ -73,6 +73,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59658, {	-- Express Dominance
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61442, {	-- Fishing: Glorious Shimmerfin
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,

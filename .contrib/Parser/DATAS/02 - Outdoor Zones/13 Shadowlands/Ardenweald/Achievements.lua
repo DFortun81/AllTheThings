@@ -161,6 +161,7 @@ _.Zones =
 					["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
 					["crs"] = { 171690 },	-- Gwyncierw
 				}),
+				ach(14511),		-- Tour of Duty: Ardenweald
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
 						["questID"] = 61072,

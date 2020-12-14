@@ -13,6 +13,7 @@ _.Toys =
 		i(184489),	-- Fae Harp
 		i(184490),	-- Fae Pipes
 		i(182729),	-- Hearty Dragon Plume
+		i(184447);	-- Kevin's Party Supplies
 		i(179393),	-- Mirror of Envious Dreams
 		i(182780),	-- Muckpool Cookpot
 		i(181825),	-- Phial of Ravenous Slime

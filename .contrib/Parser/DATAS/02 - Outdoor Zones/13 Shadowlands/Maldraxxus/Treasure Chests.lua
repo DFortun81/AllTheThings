@@ -62,6 +62,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(181262),	-- Bubbling Pustule (PET!)
+						i(184447);	-- Kevin's Party Supplies (TOY!)
 					},
 				}),
 				o(354853, {	-- Sprouting Growth
