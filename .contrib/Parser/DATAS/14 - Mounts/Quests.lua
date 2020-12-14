@@ -154,7 +154,9 @@ _.Mounts =
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
 		i(183615),		-- Warstitched Darkhound
-		i(182077),		-- War-Bred Tauralus
+		i(182077, {		--  War-Bred Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },

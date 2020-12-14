@@ -718,6 +718,12 @@ _.Zones =
 							["provider"] = { "n", 162174 },	-- Emeni
 							["coord"] = { 23.8, 39.1, 1536 },
 						}),
+						q(62216, {	-- Training Program
+							["sourceQuests"] = { 60195 },	-- Build One More
+							["provider"] = { "n", 158301 },    -- Marz
+							["coord"] = { 54.2, 68.6, 1536 },
+							["isWeekly"] = true,
+						}),
 						q(58686, {	-- Weapon of Mass Construction
 							["sourceQuests"] = { 
 								58680,	-- Loose Threads
@@ -808,12 +814,15 @@ _.Zones =
 						["g"] = {
 							o(1278968766, {	-- Rune -- TODO: proper objectID?
 								["questID"] = 61648,
+								["isDaily"] = true,
 							}),
 							o(1278968767, {	-- Rune -- TODO: proper objectID?
 								["questID"] = 61649,
+								["isDaily"] = true,
 							}),
 							o(1278968768, {	-- Rune -- TODO: proper objectID?
 								["questID"] = 61650,
+								["isDaily"] = true,
 							}),
 						},
 					}),
