@@ -46,10 +46,12 @@ _.Zones =
 					},
 				}),
 				o(355038, {	-- Runebound Coffer
-				--	TODO: are the runes in this area also called Rune of Constructs?  other treasure was in the House of Constructs area and this one is in House of Rituals, so they may be Rune of Rituals.  confirm + add to desc
-					["description"] = "To unlock it, you must find 3 nearby runes and click them to deactivate the corresponding runes on the chest.",
+					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
 					["questID"] = 61116,
-					["coord"] = { 69.6, 33.5, 1536 },
+					["coords"] = {
+						{ 69.0, 27.6, 1536 },
+						{ 69.6, 33.5, 1536 },
+					},
 				}),
 				o(354856, {	-- Slime-Coated Crate
 					["questID"] = 61093,
