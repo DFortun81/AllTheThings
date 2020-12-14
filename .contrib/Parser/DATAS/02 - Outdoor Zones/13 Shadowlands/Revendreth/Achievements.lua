@@ -244,6 +244,24 @@ _.Zones =
 						},
 					}),
 				}),
+				ach(14770, {	-- What We Ride in the Shadows
+					["description"] = "Each ride costs 5 Infused Rubies.  Stay on the Sinrunner until you get credit for the ride.",
+					["crs"] = { 174032 },	-- Castle Sinrunner
+					["g"] = {
+						crit(1, {	-- Old Gate
+							["coord"] = { 60.3, 62.6, 1525 }
+						}),
+						crit(2, {	-- Hole in the Wall
+							["coord"] = { 41.2, 47.2, 1525 },
+						}),
+						crit(3, {	-- Dominance Gate Battlements
+							["coord"] = { 41.2, 47.2, 1525 },
+						}),
+						crit(4, {	-- Darkhaven
+							["coord"] = { 69.6, 58.0, 1525 },
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

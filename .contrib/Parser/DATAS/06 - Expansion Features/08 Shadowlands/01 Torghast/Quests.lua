@@ -80,12 +80,6 @@ _.ExpansionFeatures =
 						follower(1280),	-- Chalkyth
 					},
 				}),
-				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
-					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
-					["g"] = {
-						follower(1217),	-- Kaletar the Mender
-					},
-				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 173397 },	-- Gorgelimb
@@ -93,10 +87,22 @@ _.ExpansionFeatures =
 					--	follower(1306),	-- Gorgelimb (doesn't appear to be working for now?)
 					},
 				}),
+				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
+					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
+					["g"] = {
+						follower(1217),	-- Kaletar the Mender
+					},
+				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
+					},
+				}),
+				q(60651, {	-- Champion: Meatball
+					["provider"] = { "n", 169842 },	-- Meatball
+					["g"] = {
+						follower(1257),	-- Meatball
 					},
 				}),
 				q(61959, {	-- Champion: Talethi (Necrolord)
@@ -106,8 +112,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61317, {	-- Champion: Teliah (Kyrian)
-				--	TODO: add provider, multiple Teliahs on wowhead and unsure which one to use
-				--	["provider"] = { "n",  },	-- Teliah
+					["provider"] = { "n", 172006 },	-- Teliah
 					["g"] = {
 						follower(1221),	-- Teliah
 					},
@@ -177,6 +182,11 @@ _.ExpansionFeatures =
 				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["repeatable"] = true,	-- ?????
+				}),
+				q(60573, {	-- Meatball's Revenge
+				--	TODO: add provider
+					["repeatable"] = true,
+				--	["provider"] = { "n",  },	-- Meatball
 				}),
 				q(59345, {	-- Phantoriax's Warsword
 					["repeatable"] = true,

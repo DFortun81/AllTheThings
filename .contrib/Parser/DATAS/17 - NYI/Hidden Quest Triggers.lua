@@ -3306,10 +3306,11 @@ _.HiddenQuestTriggers =
 		q(59326),	-- Mort'regar Layer 3
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
-	--	q(61418),	-- Triggered randomly... not sure why?
+		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
+		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
