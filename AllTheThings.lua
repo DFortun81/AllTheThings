@@ -2359,7 +2359,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in pairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
-		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
+		-- if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 			if app.RecursiveGroupRequirementsFilter(group) then
 				-- print("display")
@@ -2452,7 +2452,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- print("total",tostring(total),"progress",tostring(progress));
 			-- else
 			-- 	print("ex",group.key,group[group.key]);
-			end
+			-- end
 		-- else
 		-- 	print("group contains itself",group.key,group[group.key])
 		end
@@ -2998,6 +2998,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
 			paramA, paramB = root.key, root[root.key];
 			-- print("Root",root.key,root[root.key]);
+			-- print("Root Collect",root.collectible,root.collected);
 			-- print("params",paramA,paramB);
 			root.g = {};
 			-- Loop through all obj found for this search
@@ -3005,7 +3006,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,o in ipairs(group) do
 				-- If the obj "is" the root obj
 				if o.key == paramA and o[o.key] == paramB then
-					-- Merge the obj info into the root
 					-- print("Merge root",o.key,o[o.key]);
 					MergeProperties(root, o);
 					-- Merge the g of the obj into the merged results
@@ -3052,10 +3052,31 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
+			-- Single group which matches the root, then collapse it
+			if #root.g == 1 and root.g[1][paramA] == paramB then
+				-- print("Single group")
+				root = root.g[1];
+			end
 
 			-- Replace as the group
 			group = root;
-			-- print(#group.g,"Merge total");
+			-- print(group.g and #group.g,"Merge total");
+			-- print("Group Collect",group.collectible,group.collected);
+
+			-- Special cases
+			-- Don't show nested criteria of achievements
+			if group.g and group.key == "achievementID" then
+				local noCrits = {};
+				-- print("achieve group",#group.g)
+				for i=1,#group.g do
+					if group.g[i].key ~= "criteriaID" then
+						tinsert(noCrits, group.g[i]);
+					end
+				end
+				group.g = noCrits;
+				-- print("achieve nocrits",#group.g)
+			end
+
 
 			-- local preMergeTotal = #group;
 			-- -- First add only groups which meet the current filters
