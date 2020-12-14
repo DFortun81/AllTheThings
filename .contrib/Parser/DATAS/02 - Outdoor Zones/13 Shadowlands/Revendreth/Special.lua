@@ -8,7 +8,7 @@ _.Zones =
 		m(1525, {	-- Revendreth
 			n(-77, {	-- Special
 				n(-907, {	-- Dead Blanchy
-					["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.\n\nOne of the special items you need to purchase costs 30 |cFFFFFFFFCreeping Crawler Meat|r, so make sure to collect it or pull it out of your bank before trekking all the way to the vendor!",
+					["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
 					["questID"] = 62107,	-- daily Blanchy interaction
 					["isDaily"] = true,
 					["coord"] = { 63.1, 43.1, 1525 },	-- Revendreth, area where Dead Blanchy spawns
@@ -47,12 +47,14 @@ _.Zones =
 						i(182585, {	-- Grooming Brush
 							["description"] = "Day 2: Borrow 1 |cFFFFFFFFGrooming Brush|r from Snickersnee in Darkhaven.",
 							["questID"] = 62042,
+							["sourceQuests"] = { 62038 },	-- Handful of Oats
 							["coord"] = { 63.4, 61.8, 1525 },	-- Revendreth
 							["crs"] = { 173570 },	-- Snickersnee Snickersnee <Stable Dredger>
 						}),
 						i(182595, {	-- Sturdy Horseshoe
 							["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r.  They can be found scattered around roads in Revendreth.  Unlike the Sacks of Oats, these sparkle.",
 							["questID"] = 62047,
+							["sourceQuests"] = { 62042 },	-- Grooming Brush
 							["coords"] = {
 								{ 61.2, 69.4, 1525 },	-- Revendreth
 								{ 63.2, 65.7, 1525 },
@@ -66,19 +68,26 @@ _.Zones =
 						i(182599, {	-- Bucket of Clean Water
 							["description"] = "Day 4: Pick up the |cFFFFFFFFEmpty Water Bucket|r in Revendreth, and fill it in either Bastion or Ardenweald.",
 							["questID"] = 62049,
+							["sourceQuests"] = { 62047 },	-- Sturdy Horseshoe
 							["coord"] = { 63.2, 61.5, 1525 },
 							["cost"] = { { "i", 182620, 1 } },	-- 1x Empty Water Bucket
 						}),
 						i(182597, {	-- Comfortable Saddle Blanket
-							["description"] = "Day 5: Purchase 1 |cFFFFFFFFComfortable Saddle Blanket|r from Ta'tru in Revendreth.  Requires 30 |cFFFFFFFFCreeping Crawler Meat|r.",
+							["description"] = "Day 5: Purchase 1 |cFFFFFFFFComfortable Saddle Blanket|r from Ta'tru in Revendreth.\n\nNOTE: This item has a varying cost depending on the week!",
 							["questID"] = 62048,
+							["sourceQuests"] = { 62049 },	-- Bucket of Clean Water
 							["coord"] = { 51.1, 78.8, 1525 },
-							["cost"] = { { "i", 179314, 30 } },	-- 30x Creeping Crawler Meat
+							["cost"] = { 
+								{ "i", 179314, 30 },	-- 30x Creeping Crawler Meat
+								{ "i", 168589, 10 },	-- 10x Marrowroot
+								-- TODO: more costs?
+							 },
 							["crs"] = { 171808 },	-- Ta'tru <Barterer>
 						}),
 						i(179271, {	-- Dredhollow Apple
 							["description"] = "Day 6: Purchase 3 |cFFFFFFFFDredhollow Apples|r from either Mims or Slabchop in Revendreth.",
 							["questID"] = 62050,
+							["sourceQuests"] = { 62048 },	-- Comfortable Saddle Blanket
 							["coords"] = {
 								{ 40.8, 46.6, 1525 },	-- Mims <Innkeeper>
 								{ 70.6, 80.2, 1525 },	-- Slabchop <Chugs, Chews, and Stews>
@@ -88,7 +97,9 @@ _.Zones =
 								166068,	-- Slabchop <Chugs, Chews, and Stews>
 							},
 						}),
-						i(182614),	-- Blanchy's Reins (MOUNT!)
+						i(182614, {	-- Blanchy's Reins (MOUNT!)
+							["sourceQuests"] = { 62050 },	-- Dredhollow Apple
+						}),
 					},
 				}),
 			}),
