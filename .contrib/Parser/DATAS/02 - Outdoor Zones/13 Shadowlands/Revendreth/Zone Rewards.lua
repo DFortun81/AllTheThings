@@ -125,6 +125,7 @@ _.Zones =
 					i(181185),	-- Soulstalker Breeches
 					i(181183),	-- Soulstalker Grips
 					i(181184),	-- Soulstalker Helm
+					i(181186),	-- Stalker Wight's Sash
 					i(181219),	-- Stonewing Rioter's Cudgel
 					i(181203),	-- Stonewrought Armplates
 					i(181197),	-- Stonewrought Breastplate

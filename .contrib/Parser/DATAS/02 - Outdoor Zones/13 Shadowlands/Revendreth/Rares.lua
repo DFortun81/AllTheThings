@@ -37,7 +37,10 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(23)),	-- Adventurer of Revendreth / Amalgamation of Sin
+						crit(23, {	-- Amalgamation of Sin
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),
 				n(166576, {	-- Azgar
@@ -45,8 +48,11 @@ _.Zones =
 					["questID"] = 59893,	-- TODO: also triggered 62464
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
+						crit(16, {	-- Azgar
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180691),	-- Obscuring Ash Cloud
+						i(183731),	-- Smolder-Tempered Legplates
 					},
 				}),
 				n(166292, {	-- Bog Beast
@@ -92,7 +98,10 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(8)),	-- Adventurer of Revendreth / Executioner Adrastia
+						crit(8, {	-- Executioner Adrastia
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180502),	-- Adrastia's Executioner Gloves
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
@@ -113,6 +122,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(180939),	-- Mantle of the Forgemaster's Dark Blades
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
@@ -200,6 +210,10 @@ _.Zones =
 						crit(20, {	-- Huntmaster Petrus
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(180705, {	-- Gargon Training Manual
+							["questID"] = 61160,
+							["classes"] = { HUNTER },
+						}),
 					},
 				}),
 				n(160640, {	-- Innervus
@@ -211,6 +225,7 @@ _.Zones =
 						crit(3, {	-- Innervus
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(183735),	-- Rogue Sinstealer's Mantle
 						i(177223),	-- Scorched Crypt Key
 					},
 				}),
@@ -236,7 +251,10 @@ _.Zones =
 					["questID"] = 58633,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(9)),	-- Adventurer of Revendreth / Lord Mortegore
+						crit(9, {	-- Lord Mortegore
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180501),	-- Skull-Formed Headcage
 					},
 				}),
 				n(170048, {	-- Manifestation of Wrath
@@ -268,7 +286,10 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(24)),	-- Adventurer of Revendreth / Sinstone Hoarder
+						crit(24, {	-- Sinstone Hoarder
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						--i(183732),	-- Sinstone-Linked Greaves (these are reported on wowhead from beta but no drops listed yet in live game)
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>

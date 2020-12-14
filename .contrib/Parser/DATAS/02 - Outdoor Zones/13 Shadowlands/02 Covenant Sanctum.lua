@@ -21,8 +21,6 @@ _.Zones =
 							-- Pets
 							i(180629),	-- Devouring Animite
 							i(182671),	-- Runelight Leaper
-							-- Gear (only put here if it is table-only; not a zone reward)
-							i(181186),	-- Stalker Wight's Sash
 							-- Misc.
 							i(184630),	-- Adventurer's Tailoring Cache
 					},

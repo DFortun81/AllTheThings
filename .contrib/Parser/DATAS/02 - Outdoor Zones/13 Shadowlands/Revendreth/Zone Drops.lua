@@ -39,6 +39,7 @@ _.Zones =
 				i(180864),	-- Decanter of Distilled Shadows
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings
+				i(177777),	-- Depraved Darkblade's Breeches
 				i(177797),	-- Depraved Darkblade's Epaulets
 				i(177775),	-- Depraved Darkblade's Grips
 				i(177776),	-- Depraved Darkblade's Helm
