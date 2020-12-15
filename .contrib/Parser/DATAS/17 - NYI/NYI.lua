@@ -65,6 +65,13 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		-- Recipes
 		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
+		un(NEVER_IMPLEMENTED, i(183866)),	-- Formula: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183869)),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183871)),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183864)),	-- Plans: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183868)),	-- Recipe: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183867)),	-- Schematic: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183865)),	-- Technique: Crafter's Mark III (was in beta but not live, possibly added in future?)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		-- Other

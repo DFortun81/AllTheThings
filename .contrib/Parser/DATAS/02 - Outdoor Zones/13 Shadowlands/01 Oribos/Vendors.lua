@@ -167,9 +167,6 @@ _.Zones =
 						i(183839, {	-- Pattern: Heavy Desolate Hide
 							["cost"] = 17650000, -- 1,765g
 						}),
-						i(183865, {	-- Technique: Crafter's Mark III
-							["cost"] = 20000000, -- 2,000g
-						}),
 						i(183900, {	-- Sinvyr Tea Set
 							["cost"] = 13500000, -- 1,350g
 						}),

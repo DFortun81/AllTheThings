@@ -15,6 +15,16 @@ _.Zones =
 						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 					},
 				}),
+				o(356823, {	-- Cloudwalker's Coffer
+					["questID"] = 61698,
+					["isDaily"] = true,
+					["coord"] = { 61.1, 15.1, 1533 },
+					["g"] = {
+						i(180783, {	-- Design: Crown of the Righteous
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+					},
+				}),
 				o(353234, {	-- Gilded Chest
 					["questID"] = 60663,
 					["isDaily"] = true,	-- repeatable?
@@ -147,16 +157,6 @@ _.Zones =
 					["coord"] = { 57.2, 92.7, 1533 },
 				}),
 				i(180866),	-- Gilded Wader
-				o(356823, {	-- Cloudwalker's Coffer
-					["questID"] = 61698,
-					["isDaily"] = true,
-					["coord"] = { 61.1, 15.1, 1533 },
-					["g"] = {
-						i(180783, {	-- Design: Crown of the Righteous
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-					},
-				}),
 			}),
 		}),
 	}),
