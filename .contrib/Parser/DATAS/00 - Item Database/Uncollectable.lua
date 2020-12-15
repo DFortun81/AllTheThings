@@ -15,6 +15,7 @@ i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
 i(183723);	-- Brimming Anima Orb
+i(181646);	-- Bound Failsafe Phylactery
 i(184374);	-- Cartel Exchange Vessel
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals

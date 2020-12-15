@@ -676,8 +676,6 @@ _.Zones =
 											}),
 											crit(14, {	-- Night Fae Arsenal
 											}),
-											crit(15, {	-- Maldraxxi Challenge Banner
-											}),
 											crit(16, {	-- Vanity Mirror
 											}),
 											crit(17, {	-- Training Dummies

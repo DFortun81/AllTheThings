@@ -844,7 +844,8 @@ _.Zones =
 					["coord"] = { 54.7, 41.1, 1533 },
 				}),
 				q(59774, {	-- Welcome to Eternity
-					["sourceQuests"] = { 59773 },	-- Seek the Ascended
+				--	commenting SQs for the first quest in each SL zone to avoid chains that are like...hundreds of quests long
+				--	["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 166227 },	-- Kleia
 					["coord"] = { 37.3, 76.4, 1533 },
 				}),
@@ -909,6 +910,7 @@ _.Zones =
 
 				-- An Act of Service
 				q(59554, {	-- A Fine Journey
+					["isBreadcrumb"] = true,
 					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
 					["coord"] = { 51.5, 47.1, 1533 },
 				}),

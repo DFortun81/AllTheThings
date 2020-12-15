@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1543, {	-- The Maw
-		--	TODO: verify mapIDs for quests in the maw.  we had 1648 set to many of them, and that may be for a scenario version of the maw -- it looks like it's normally 1543, so anything that's 1648 may be incorrect
+		--	TODO: 1648 is the scenario version of the maw.  anything in the actual maw will be 1543 (main mapID) or a separate cave/interior map.  double-check everything in the "real" maw
 			n(QUESTS, {
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies

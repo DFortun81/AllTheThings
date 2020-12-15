@@ -98,8 +98,8 @@ _.Zones =
 					},
 				}),
 				n(171317, {	-- Conjured Death
-				--	["questID"] = ,
-				--	["isDaily"] = true,
+					["questID"] = 61106,
+					["isDaily"] = true,
 					["coord"] = { 27.8, 13.2, 1543 },
 					["g"] = {
 						crit(4, {	-- Conjured Death

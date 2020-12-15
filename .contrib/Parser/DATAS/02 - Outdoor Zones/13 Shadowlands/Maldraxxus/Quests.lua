@@ -607,6 +607,7 @@ _.Zones =
 				q(58095, {	-- Theater of Pain: Help Wanted
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60181, {	-- Trench Warfare
 					["sourceQuests"] = {	-- TODO: verify SQs.  this didn't pop until i turned in Walk Among Death, but didn't require Memory of Honor

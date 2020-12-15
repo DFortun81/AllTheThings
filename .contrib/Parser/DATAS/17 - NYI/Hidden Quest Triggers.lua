@@ -3258,11 +3258,13 @@ _.HiddenQuestTriggers =
 		q(59618),	-- triggered when using "RSVP: Stonehead"
 		q(59619),	-- triggered when using "RSVP: Stonehead"
 		q(59682),	-- triggered when using "Crown of Honor"
+		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
+		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
 		q(63177),	-- Triggered after using Encased Riftwalker Essence
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"

@@ -147,6 +147,14 @@ _.Zones =
 				q(60231, {	-- State of Decay
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(177245, {	-- Maldraxxi Challenge Banner
+							crit(15, {	-- Maldraxxi Challenge Banner
+								["customCollect"] = "SL_COV_VEN",
+								["achievementID"] = 14678,	-- Court Favors
+							}),
+						}),
+					},
 				}),
 				q(61615, {	-- Tailoring: Haunting Hood
 					["requireSkill"] = TAILORING,
