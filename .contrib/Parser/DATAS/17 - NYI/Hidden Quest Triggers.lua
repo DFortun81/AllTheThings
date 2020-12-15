@@ -3322,5 +3322,6 @@ _.HiddenQuestTriggers =
 		
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID
+		q(62811),	-- Oranomonos kill questID
 	}),
 };
