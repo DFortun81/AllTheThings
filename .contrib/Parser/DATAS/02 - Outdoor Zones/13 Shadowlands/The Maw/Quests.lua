@@ -68,6 +68,11 @@ _.Zones =
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 				}),
+				q(60775, {	-- A Suitable Demise
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(63050, {	-- Acquisition: Blazing Ingots
 					["provider"] = { "o", 364932 },	-- Blazing Ingot
 					["isDaily"] = true,
@@ -108,7 +113,7 @@ _.Zones =
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59966, {	-- Delving Deeper
@@ -135,7 +140,7 @@ _.Zones =
 				}),
 				q(60622, {	-- Eye of the Scryer
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(62932, {	-- Explore Torghast
@@ -185,7 +190,7 @@ _.Zones =
 				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(63038, {	-- Guaranteed Delivery
@@ -234,10 +239,20 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 24.6, 45.2, 1648 },
 				}),
+				q(60646, {	-- Misery Business
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 22.2, 33.0, 1648 },
+				}),
+				q(62234, {	-- Power of the Colossus
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
@@ -338,13 +353,13 @@ _.Zones =
 				q(60622, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(61079, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.8, 41.6, 1543 },
 				}),
 				q(59759, {	-- The Lion's Cage
