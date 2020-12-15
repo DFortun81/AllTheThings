@@ -41,7 +41,7 @@ _.Zones =
 								i(181700),	-- Scalding Brew [Monk]
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]
-								i(181742),	-- Walk with the Ox [Monk-Brewmaster]								
+								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
