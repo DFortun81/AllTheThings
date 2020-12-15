@@ -45,11 +45,11 @@ _.Zones =
 						}),
 						q(60394, {	-- Aiding Bastion
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 165302 },	-- Rendle
-							--["coord"] = { , 1525 },
 							["repeatable"] = true,
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.0, 76.2, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181372),	-- 	Tribute of the Ascended
 							},
 						}),
 						q(60397, {	-- Aiding Maldraxxus

@@ -36,6 +36,7 @@ _.Zones =
 					i(181614),	-- Shieldguard's Vambraces
 					i(181606),	-- Shieldguard's Warboots
 					i(181704),	-- Silvernote Cloak
+					i(181703),	-- Skychime Necklace
 					i(181587),	-- Soulbearer's Belt
 					i(181578),	-- Soulbearer's Boots
 					i(181589),	-- Soulbearer's Bracers

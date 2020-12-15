@@ -28,7 +28,7 @@ _.Zones =
 				n(-901, {	-- Covenant Callings
 					["g"] = {
 						n(-11, {	-- Common Box Drops
-							["description"] = "Can be contained in any of the Calling rewards",
+							["description"] = "Can be contained in any of the Calling rewards.",
 							["g"] = {
 								-- guessing any box can reward the same set of conduits
 								i(181770),	-- Bone Marrow Hops [Monk]
@@ -45,12 +45,12 @@ _.Zones =
 						}),
 						-- Rare Quality Calling Rewards / Zone
 						i(181475, {	-- Bounty of the Grovewardens / Ardenweald
-							["description"] = "Rewarded by completing a Calling based in Ardenweald",
+							["description"] = "Rewarded by completing a Calling based in Ardenweald.",
 							["g"] = {
 							},
 						}),
 						i(181556, {	-- Tribute of the Court / Revendreth
-							["description"] = "Rewarded by completing a Calling based in Revendreth",
+							["description"] = "Rewarded by completing a Calling based in Revendreth.",
 							["g"] = {
 								i(181224),	-- Avowed Arcanist's Staff
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
@@ -60,7 +60,7 @@ _.Zones =
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
-							["description"] = "Rewarded by completing a Calling based in Maldraxxus",
+							["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
 							["g"] = {
 								i(184159, {	-- Oozing Necroray Egg (Timer)
 									i(184158, {	-- Oozing Necroray Egg (No Timer)
@@ -76,7 +76,7 @@ _.Zones =
 							},
 						}),
 						i(181372, {	-- Tribute of the Ascended / Bastion
-							["description"] = "Rewarded by completing a Calling based in Bastion",
+							["description"] = "Rewarded by completing a Calling based in Bastion.",
 							["g"] = {
 								-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
 								-- i(182138),	-- Mind Devourer [Priest-Shadow]
@@ -85,26 +85,26 @@ _.Zones =
 
 						-- Epic Quality Challenges Rewards / Zone
 						i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald",
+							["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
 							["g"] = {
 							},
 						}),
 						i(181557, {	-- Favor of the Court / Revendreth
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth",
+							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
 							["g"] = {
 								i(176850),	-- Blank Invitation
 								i(182348),	-- Lavish Harvest
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus",
+							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
 							["g"] = {
 								i(181705),	-- Celestial Effervescence
 								i(182111),	-- Spiritual Resonance
 							},
 						}),
 						i(181741, {	-- Tribute of the Paragon / Bastion
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion",
+							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 							["g"] = {
 								i(182145),	-- Heavy Rainfall
 								i(181944),	-- Resonant Words
