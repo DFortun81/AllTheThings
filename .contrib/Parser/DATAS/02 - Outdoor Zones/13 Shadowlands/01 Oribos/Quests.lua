@@ -156,6 +156,12 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },
 				}),
+				q(62966, {	-- Finding a Witness
+					-- TODO: add ["sourceQuests"] = { },
+					-- showed up after week 4 reset, so whatever was the previous Torghast quest is probably the source for this one
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.0, 65.3, 1670 },
+				}),
 				q(57386, {	-- If You Want Peace...
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
