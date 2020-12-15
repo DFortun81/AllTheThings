@@ -23,9 +23,10 @@ _.Zones =
 				ach(14769, {	-- Bat!
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 						{ 25.1, 37.5, 1525 },	-- (#1)
+						{ 35.0, 35.0, 1525 },	-- (#2)
 					},
 					["crs"] = {
-						161015,	-- Dredbat Statue (#1)
+						161015,	-- Dredbat Statue (#1, 2)
 					},
 				}),
 				ach(14272, {	-- Best Bud With Benefits

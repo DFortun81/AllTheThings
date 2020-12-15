@@ -42,6 +42,7 @@ _.Zones =
 					i(181418),	-- Runetender Shoulderguards
 					i(181402),	-- Runetender Tunic
 					i(175728),	-- Soulsifter Root
+					i(181457),	-- Wakener's Frond
 					i(179594),	-- Witherscorn Guise
 					i(180145),	-- Witherscorn Handaxe
 				},

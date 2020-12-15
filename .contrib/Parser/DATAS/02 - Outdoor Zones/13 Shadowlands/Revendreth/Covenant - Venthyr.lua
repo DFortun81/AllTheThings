@@ -172,9 +172,9 @@ _.Zones =
 						}),
 						q(60448, {	-- Challenges in Revendreth
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
-							["repeatable"] = true,
 							["g"] = {
 								i(181557),	-- Favor of the Court
 							},

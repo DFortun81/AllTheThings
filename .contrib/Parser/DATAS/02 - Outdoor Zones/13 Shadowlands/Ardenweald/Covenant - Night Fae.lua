@@ -1064,7 +1064,6 @@ _.Zones =
 						["coord"] = { 51.7, 32.3, 1565 },
 						["g"] = {
 							i(181458),	-- Queensguard's Vigil
-							i(181457),	-- Wakener's Frond
 						},
 					}),
 				}),

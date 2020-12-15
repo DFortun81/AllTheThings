@@ -363,7 +363,7 @@ _.Zones =
 							}),
 						}),
 						n(171013, { -- Embodied Hunger
-						--	["questID"] = ,
+							["questID"] = 61001,
 							["isDaily"] = true,
 							["g"] = {
 								crit(16, {	-- Embodied Hunger

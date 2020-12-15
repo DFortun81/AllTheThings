@@ -3026,7 +3026,6 @@ _.HiddenQuestTriggers =
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
-		q(59431),	-- Triggered when looting A Meandering Story
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended

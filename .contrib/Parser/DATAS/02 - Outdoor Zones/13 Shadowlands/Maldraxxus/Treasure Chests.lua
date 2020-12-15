@@ -20,6 +20,23 @@ _.Zones =
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
+				n(171337, {	-- Bloated Lootfly
+					["description"] = "This is a critter that flies around.  Find it, kill it, and loot it to collect the treasure.",
+					["questID"] = 61111,
+					["isDaily"] = true,
+					["coords"] = {	-- general coordinates for both known current spawn areas (west of the House of Eyes and south of the Keres' Rest FP)
+						{ 49.0, 24.6, 1536 },
+						{ 49.8, 21.8, 1536 },
+						{ 50.2, 19.0, 1536 },
+						{ 50.8, 22.0, 1536 },
+						{ 51.6, 35.2, 1536 },
+						{ 51.8, 18.4, 1536 },
+						{ 52.6, 20.0, 1536 },
+						{ 54.2, 37.2, 1536 },
+						{ 54.8, 33.4, 1536 },
+						{ 54.8, 40.2, 1536 },
+					},
+				}),
 				o(353231, {	-- Bonebound Chest
 					["description"] = "There are 2 versions of this chest. One is at the cave entrance at |cFFFFFFFF37.9, 76.3|r. One is at the Unyielding Assembly at building entrance |cFFFFFFFF35.9, 80.2|r.",
 					["questID"] = 60662,	-- same quest triggers for both versions of chest

@@ -76,6 +76,7 @@ i(184776);	-- Urn of Arena Soil
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
 i(181643);	-- Weeping Corpseshroom
+i(184149);	-- Widowbloom-Infused Fragrance
 i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet

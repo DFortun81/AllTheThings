@@ -94,9 +94,10 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-					["coord"] = { 44.0, 51.0, 1525 },
-					--["questID"] = ,
+				--	TODO: unsure what trigger's this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him
+					["questID"] = 58441,
 					["isDaily"] = true,
+					["coord"] = { 44.0, 51.0, 1525 },
 					["g"] = {
 						crit(8, {	-- Executioner Adrastia
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
