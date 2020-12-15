@@ -32,6 +32,12 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, 1670 },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
+					q(62288, {	-- Observing Teamwork
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isWeekly"] = true,
+						["coord"] = { 34.7, 56.5, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
+					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
@@ -41,12 +47,6 @@ _.Zones =
 					--[[
 				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
 					q(62289, {	-- Observing Conflict
-						["provider"] = { "n",  },	-- 
-						["isWeekly"] = true,
-						["coord"] = { , , 1670 },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62288, {	-- Observing Teamwork
 						["provider"] = { "n",  },	-- 
 						["isWeekly"] = true,
 						["coord"] = { , , 1670 },

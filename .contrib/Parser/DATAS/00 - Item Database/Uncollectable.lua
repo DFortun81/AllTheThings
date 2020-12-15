@@ -361,6 +361,7 @@ i(151757);	-- Limited Run Blight Boar Poster
 i(173781);	-- Lost Watermelon
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
+i(183734);	-- Mysteriously Thrumming Orb
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(179392);	-- Orb of Burgeoning Ambition
