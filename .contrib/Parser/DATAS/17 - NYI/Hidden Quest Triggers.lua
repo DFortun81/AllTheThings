@@ -2959,32 +2959,46 @@ _.HiddenQuestTriggers =
 		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger)
 		
 		-- Adventures
-		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" (shared across covenants)
-		q(63360),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
-		q(63359),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
-		q(63362),	-- completing mi(2174), "Tutorial, Dispose of the Detritus" as Venthyr
-		q(63071),	-- completing mi(2295), "Tutorial: Necromantic Intervention" (shared across covenants)
-		q(63364),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
-		q(63363),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
-		q(63366),	-- completing mi(2295), "Tutorial: Necromantic Intervention" as Venthyr
-		q(60634),	-- completing mi(2175),	"Tutorial: Spinal Swarm" (shared across covenants)
-		q(63368),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
-		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
-		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
+		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared
+		q(63360),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Kyrian
+		-- q( ),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Necrolord
+		q(63359),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Night Fae
+		q(63362),	-- completing mi(2174), "Tutorial, Dispose of the Detritus" -- Venthyr
+		q(63071),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Shared
+		q(63364),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Kyrian
+		-- q( ),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Necrolord
+		q(63363),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Night Fae
+		q(63366),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Venthyr
+		q(60634),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Shared
+		q(63368),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Kyrian
+		-- q( ),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Necrolord
+		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Night Fae
+		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" -- Venthyr
 		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Shared
-		-- q(),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
+		-- q( ),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
 		q(63282),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Necrolord
 		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Night Fae
 		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Venthyr
-		q(63252),	-- completing mi(2228), "Campaign: Discarded But Not Useless" (shared among covenants)
-		q(63301),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Kyrian
-		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Venthyr
-		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
-		q(63238),	-- Completing mi(TEMP1), ?? forgot sorry — one of these quests is probably Venthyr-specific and the other is shared
-		q(63267),	-- Completing mi(TEMP1), ?? forgot sorry — one of these quests is probably Venthyr-specific and the other is shared
+		q(63252),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Shared
+		q(63301),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Kyrian
+		-- q( ),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Necrolord
+		-- q( ),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Night Fae
+		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Venthyr
+		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Shared
+		q(63258),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Kyrian
+		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Necrolord
+		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Night Fae
+		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Venthyr
+		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- one of these quests is probably Venthyr-specific and the other is shared
+		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- one of these quests is probably Venthyr-specific and the other is shared
+		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Kyrian
+		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
+		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Night Fae
+		q(63238),	-- Completing mi(TEMP1), "Campaign: ??" -- one of these quests is probably Venthyr-specific and the other is shared
+		q(63267),	-- Completing mi(TEMP1), "Campaign: ??" -- one of these quests is probably Venthyr-specific and the other is shared
+		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Kyrian
+		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Necrolord
+		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Night Fae
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
