@@ -3288,7 +3288,6 @@ _.HiddenQuestTriggers =
 
 		-- Torghast
 		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
-		q(59340),	-- Triggered after using Gallath's Bell
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
 		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
 		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
@@ -3303,7 +3302,6 @@ _.HiddenQuestTriggers =
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
-		q(58186),	-- Fracture Chambers Layer 1
 		q(58187),	-- Fracture Chambers Layer 2
 		q(58188),	-- Fracture Chambers Layer 3
 		q(58204),	-- Mort'regar Layer 1

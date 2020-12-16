@@ -590,9 +590,10 @@ _.Zones =
 						["questID"] = 61150,
 					}),
 					crit(11, {	-- Gift of Agthia
+						["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it.  An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock.  Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
 						["objectID"] = 353942,	-- Gift of Agthia
-						["coord"] = { 35.1, 58.1, 1533 },
 						["questID"] = 60893,	-- 62847 also completed when opening
+						["coord"] = { 39.1, 54.4, 1533 },
 						["g"] = {
 							i(180063),	-- Unearthly Chime
 						},

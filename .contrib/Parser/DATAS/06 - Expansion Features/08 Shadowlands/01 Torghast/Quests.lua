@@ -22,11 +22,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
-				q(62938, {	-- Information for a Price
-					["sourceQuests"] = { 62935 },	-- Remnants of Hope
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
-				}),
 				q(60267, {	-- Prison of the Forgotten
 					["provider"] = { "i", 178585 },	-- The Forgotten Key
 					["cr"] = 151329,	-- Warden Skoldus
@@ -59,11 +54,6 @@ _.ExpansionFeatures =
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
-				}),
-				q(60139, {	-- Torment Chamber: Jaina
-					["sourceQuests"] = { 62938 },	-- Information for a Price
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 
 				-- Champion Unlocks
@@ -160,6 +150,10 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 172240 },	-- Chalkyth
 				}),
+				q(59340, {	-- Gallath's Bell
+					["repeatable"] = true,
+					["provider"] = { "n", 152418 },	-- Gallath
+				}),
 				q(59777, {	-- Help Calix find Amethia
 					["repeatable"] = true,
 					["provider"] = { "n", 166147 },	-- Calix
@@ -238,11 +232,11 @@ _.ExpansionFeatures =
 
 				
 				-- Fracture Chambers
-				--[[
-				q(, {	-- Fracture Chambers, Layer 1
+				q(58186, {	-- Fracture Chambers, Layer 1
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 1",
 				}),
+				--[[
 				q(, {	-- Fracture Chambers, Layer 2
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 2",

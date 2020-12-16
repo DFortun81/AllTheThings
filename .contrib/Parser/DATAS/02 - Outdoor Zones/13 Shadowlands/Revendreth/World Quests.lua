@@ -149,7 +149,7 @@ _.Zones =
 					["g"] = {
 						i(180590),	-- Lost Soul
 						n(170048, {	-- Manifestation of Wrath
-							i(180591),	-- Vial of Roiling Emotions
+							i(180585),	-- Bottled Up Rage (PET!)
 						}),
 					},
 				}),
