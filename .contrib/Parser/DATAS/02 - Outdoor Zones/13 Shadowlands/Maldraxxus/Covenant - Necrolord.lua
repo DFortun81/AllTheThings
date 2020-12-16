@@ -1032,6 +1032,55 @@ _.Zones =
 							i(178535),	-- Suspicious Slime Shot
 						},
 					}),
+					n(164795, {	-- Clyde <Curios & Oddities>
+						["coord"] = { 55.2, 68.4, 1536 },
+						["g"] = {
+							i(184303, {	-- Arsenal: Stitchmasters' Weapons
+								["cost"] = { 
+									{ "i", 184304, 750 },
+									{ "c", 1813, 1000 },
+								},
+								["g"] = {
+									i(184079),	-- Abominable Bulwark of Marz
+									i(184082),	-- Atticus's Anima Absolver
+									i(184085),	-- Flytrap's Life-Dividing Broadaxe
+									i(184081),	-- Gas Bag's Fetid Basher
+									i(184087),	-- Iron Phillip's Problem Solver
+									i(184078),	-- Naxx's Discarded Tooth
+									i(184086),	-- Neena's Fetch Stick
+									i(184083),	-- Professor's Beating Stick
+									i(184084),	-- Rathan's Bonespike Launcher
+									i(184080),	-- Roseboil's Molting Totem
+									i(184088),	-- Sabrina's Crooked Finger
+									i(184089),	-- Tomalin's Cleaver
+								},
+							}),
+							i(184047, {	-- Ascended Chest of Arms
+								["cost"] = { { "c", 1813, 1000 } },
+								["g"] = {
+									-- TODO: Add items when we find out what is in this box.
+								},
+							}),
+							i(184045, {	-- Martial Tithe of the Court of Harvesters
+								["cost"] = { { "c", 1813, 1000 } },
+								["g"] = {
+									-- TODO: Add items when we find out what is in this box.
+								},
+							}),
+							i(184046, {	-- Undying Army Weapon Cache
+								["cost"] = { { "c", 1813, 1000 } },
+								["g"] = {
+									-- TODO: Add items when we find out what is in this box.
+								},
+							}),
+							i(184048, {	-- Weapon Satchel of the Wild Hunt
+								["cost"] = { { "c", 1813, 1000 } },
+								["g"] = {
+									-- TODO: Add items when we find out what is in this box.
+								},
+							}),
+						},
+					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 60.8, 44.3, 1698 },
