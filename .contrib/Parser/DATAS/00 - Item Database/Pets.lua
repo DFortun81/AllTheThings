@@ -902,7 +902,7 @@ pet(181172, 2948);	-- Boneweave Hatchling
 pet(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
 pet(180815, 2931);	-- Brightscale Hatchling
 pet(181262, 2952);	-- Bubbling Pustule
-pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Sludge
+pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Bogling
 pet(180589, 2894);	-- Burdened soul
 pet(183114, 3025);	-- Carpal
 pet(180643, 2908);	-- Chirpy Valeshrieker
@@ -939,7 +939,7 @@ pet(180635, 2916);	-- Hungry Burrower
 pet(180871, 2941);	-- Indigo
 pet(181270, 2960);	-- Invertebrate Oil
 pet(183515, 3045);	-- Iridescent Ooze
---pet(183601, );	-- Jiggles
+pet(183601, 3043);	-- Jiggles
 pet(184399, 3064);	-- Larion Cub
 pet(184401, 3063);	-- Larion Pouncer
 pet(183196, 3035);	-- Lavender Nibbler
@@ -958,7 +958,7 @@ pet(180208, 2889);	-- PHA7-YNX
 pet(183107, 3024);	-- Pile of Ashen Dust // Char
 pet(173891, 2798);	-- Plagueborn Slime
 pet(181264, 2954);	-- Plaguelouse Larva
-pet(183395, 3036);	-- Projection of Remornia
+pet(183395, 3036);	-- Pommel Jewel of Remornia // Will of Remornia
 pet(180859, 2935);	-- Purity
 pet(182613, 3008);	-- Refilling Inkwell // Lost Quill
 pet(175114, 2878);	-- Renny

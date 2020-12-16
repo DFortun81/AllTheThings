@@ -66,6 +66,7 @@ _.PetJournal =
 		p(446),		-- Jade Oozeling
 		p(845),		-- Jade Owl
 		un(REMOVED_FROM_GAME, p(231)),	-- Jade Tiger
+		p(3043),	-- Jiggles
 		p(1635),	-- K'ute
 		un(20, p(308)),		-- Legs
 		p(1234),	-- Lesser Voidcaller
@@ -91,8 +92,7 @@ _.PetJournal =
 		p(530),		-- Oily Slimeling
 		un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
 		p(2798),	-- Plagueborn Slime
-		p(2896),	-- Primordial Sludge
-		p(3036),	-- Will of Remornia
+		p(2896),	-- Primordial Bogling
 		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
@@ -122,6 +122,7 @@ _.PetJournal =
 		p(2434),	-- Voidwiggle
 		un(20, p(157)),		-- Willy
 		p(2535),	-- Wicker Wraith
+		p(3036),	-- Will of Remornia
 		p(1937),	-- Wondrous Wisdomball
 		un(REMOVED_FROM_GAME, p(1255)),	-- Zeradar
 		un(REMOVED_FROM_GAME, p(247)),	-- Zipao Tiger

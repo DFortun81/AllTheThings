@@ -6,6 +6,15 @@ _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(QUESTS, {
+			i(174865, {	-- A Tiny Winter Hat (Pepe)
+				-- Added for Winter Veil 2020
+				["questID"] = 58901,
+				["coords"] = {
+					{ 33.95, 68.17, 87 },	-- Ironforge
+					{ 52.99, 77.44, 85 },	-- Orgrimmar
+				},
+				["maps"] = { 85, 87 },	-- Orgrimmar, Ironforge
+			}),
 			-- ALLIANCE QUESTS --
 			q(7022,  {	-- Greatfather Winter is Here!
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket

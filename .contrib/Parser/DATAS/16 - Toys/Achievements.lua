@@ -80,9 +80,6 @@ _.Toys =
 				["coord"] = { 38.98, 15.80, 1163 },
 				["description"] = "Located inside the |cFFFFD700Hot House|r.",
 			}),
-			i(174865, {	-- A Tiny Winter Hat
-				-- TODO:: find the hat and add the relevant info
-			}),
 		}),
 		i(182695),		-- Weathered Purple Parasol
 	}),
