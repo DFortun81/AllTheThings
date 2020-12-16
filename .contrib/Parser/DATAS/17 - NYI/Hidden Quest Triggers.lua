@@ -3159,9 +3159,6 @@ _.HiddenQuestTriggers =
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
-		q(58410),	-- triggered after crafting Construct Body: Atticus at Abomination Factory
-		q(57611),	-- triggered after crafting Construct Body: Marz at Abomination Factory
-		q(57605),	-- triggered after crafting Construct Body: Roseboil at Abomination Factory
 		q(60783),	-- triggered when turning in #60722, "Tower Power"
 
 

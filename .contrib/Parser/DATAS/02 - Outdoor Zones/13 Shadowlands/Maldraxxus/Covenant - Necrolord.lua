@@ -630,125 +630,232 @@ _.Zones =
 				}),
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory
-						-- Tier 1: Build a Buddy
-						q(61510, {	-- A Bountiful Haul
-							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
-							["isWeekly"] = true,
-						}),
-						q(59042, {	-- A Good Heart
-							["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
-							["provider"] = { "n", 162222 },	-- Rathan
-							["coord"] = { 48.0, 50.2, 1698 },
-						}),
-						q(58727, {	-- A Place To Call Home
-							["sourceQuests"] = { 58671 },	-- Bottled Up Inside
-							["provider"] = { "n", 162174 },	-- Emeni
-							["coord"] = { 24.9, 31.7, 1536 },
-						}),
-						q(63058, {	-- Abominable Stitching and Me
-							["provider"] = { "n", 161909 },	-- Arkadia Moa
-							["coord"] = { 52.4, 38.4, 1698 },
-							["description"] = "Becomes available after you build Abomination Factory tier 1 in your sanctum.",
-						}),
-						q(60049, {	-- At Your Service
-							["sourceQuests"] = { 58727 },	-- A Place To Call Home
-							["provider"] = { "n", 167044 },	-- Emeni
-							["coord"] = { 55.1, 68.7, 1536 },
-						}),
-						q(58671, {	-- Bottled Up Inside
-							["sourceQuests"] = { 59042 },	-- A Good Heart
-							["provider"] = { "n", 162174 },	-- Emeni
-							["coord"] = { 23.8, 39.1, 1536 },
-						}),
-						q(60041, {	-- Build-A-Bomination
-							["sourceQuests"] = { 60048 },	-- Stitching Time
-							["provider"] = { "n", 167150 },	-- Rathan
-							["coord"] = { 55.1, 68.8, 1536 },
-						}),
-						q(60195, {	-- Build One More
-							["sourceQuests"] = { 60042 },	-- May I Take Your Order?
-							["provider"] = { "n", 167150 },	-- Rathan
-							["coord"] = { 55.1, 68.8, 1536 },
-						}),
-						q(62217, {	-- Field Training
-							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
-							["provider"] = { "n", 158301 },    -- Marz
-							["coord"] = { 54.2, 68.6, 1536 },
-							["isWeekly"] = true,
-						}),
-						q(58668, {	-- Find The Way
-							["sourceQuests"] = { 58665 },	-- Rebellious Souls
-							["provider"] = { "n", 162153 },	-- Rathan
-							["coord"] = { 26.0, 42.6, 1536 },
-						}),
-						q(58680, {	-- Loose Threads
-							["sourceQuests"] = { 58668 },	-- Find The Way
-							["provider"] = { "n", 162227 },	-- Rathan
-							["coord"] = { 24.2, 38.8, 1536 },
-						}),
-						q(60042, {	-- May I Take Your Order?
-							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
-							["provider"] = { "n", 167150 },	-- Rathan
-							["coord"] = { 55.1, 68.8, 1536 },
-						}),
-						q(58665, {	-- Rebellious Souls
-							-- TODO: might be breadcrumb?
-							["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-							["provider"] = { "n", 162222 },	-- Rathan
-							["coord"] = { 48.0, 50.2, 1698 },
-						}),
-						q(58677, {	-- Skin in the Game
-							["sourceQuests"] = { 58668 },	-- Find The Way
-							["provider"] = { "n", 161285 },	-- Emeni
-							["coord"] = { 24.1, 38.7, 1536 },
-						}),
-						q(58432, {	-- Something Old, Something Used
-							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
-							["provider"] = { "n", 161270 },	-- Chordy
-							["coord"] = { 55.1, 68.6, 1536 },
-							["isWeekly"] = true,
-						}),
-						q(60048, {	-- Stitching Time
-							["sourceQuests"] = { 58727 },	-- A Place To Call Home
-							["provider"] = { "n", 167150 },	-- Rathan
-							["coord"] = { 55.1, 68.8, 1536 },
-						}),
-						q(59126, {    -- Supply Chain
-							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
-							["provider"] = { "n", 159238 },    -- Atticus
-							["coord"] = { 55.3, 68.3, 1536 },
-							["isWeekly"] = true,
-						}),
-						q(58670, {	-- The Slaughter Daughter
-							["sourceQuests"] = { 59042 },	-- A Good Heart
-							["provider"] = { "n", 162174 },	-- Emeni
-							["coord"] = { 23.8, 39.1, 1536 },
-						}),
-						q(61511, {	-- Things They Leave Behind
-							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
-							["provider"] = { "n", 161270 },	-- Chordy
-							["coord"] = { 55.1, 68.6, 1536 },
-							["isWeekly"] = true,
-						}),
-						q(62216, {	-- Training Program
-							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
-							["provider"] = { "n", 158301 },    -- Marz
-							["coord"] = { 54.2, 68.6, 1536 },
-							["isWeekly"] = true,
-						}),
-						q(58686, {	-- Weapon of Mass Construction
-							["sourceQuests"] = { 
-								58680,	-- Loose Threads
-								58677,	-- Skin in the Game
+						n(167042, {	-- Abominable Stitching Table
+							["coord"] = { 55.0, 68.8, 1536 },
+							["g"] = {
+								i(182078, {	-- Bonesewn Fleshroc (MOUNT!)
+									["cost"] = { 
+										{ "i", 178061, 50 },	-- Malleable Flesh
+										{ "i", 183744, 5 },		-- Superior Parts
+									},
+								}),
+								i(181268, {	-- Backbone (PET!)
+									["cost"] = { 
+										{ "i", 178061, 5 },	-- Malleable Flesh
+										{ "i", 172092, 1 },	-- Pallid Bone
+									},
+								}),
+								i(181282, {	-- Mu'dud (PET!)
+									["cost"] = { 
+										{ "i", 178061, 10 },	-- Malleable Flesh
+										{ "i", 183744, 5 },		-- Superior Parts
+									},
+								}),
+								i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
+									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+									["classes"] = { HUNTER, SHAMAN },
+									["g"] = {
+										-- TODO: Add appearances when we find out what is in this ensemble.
+									},
+								}),
+								i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
+									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+									["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+									["g"] = {
+										-- TODO: Add appearances when we find out what is in this ensemble.
+									},
+								}),
+								i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
+									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+									["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+									["g"] = {
+										-- TODO: Add appearances when we find out what is in this ensemble.
+									},
+								}),
+								i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+									["classes"] = { PRIEST, MAGE, WARLOCK },
+									["g"] = {
+										-- TODO: Add appearances when we find out what is in this ensemble.
+									},
+								}),
+								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
+								-- This section is kinda redundant with achievement 14751, but if they add more followers later that aren't added to the achieve, then
+								-- they can be added here.  Also think this is more useful than just having all these quests in the HQT file.
+								q(58410, {
+									["title"] = "Construct Body: Atticus",
+								}),
+								q(60041, {
+									["title"] = "Construct Body: Chordy",
+								}),
+								q(57597, {
+									["title"] = "Construct Body: Flytrap",
+								}),
+								q(57608, {
+									["title"] = "Construct Body: Gas Bag",
+								}),
+								q(58416, {
+									["title"] = "Construct Body: Guillotine",
+								}),
+								q(58411, {
+									["title"] = "Construct Body: Iron Phillip",
+								}),
+								q(60216, {
+									["title"] = "Construct Body: Mama Tomalin",
+								}),
+								q(57611, {
+									["title"] = "Construct Body: Marz",
+								}),
+								q(58415, {
+									["title"] = "Construct Body: Miru",
+								}),
+								q(58413, {
+									["title"] = "Construct Body: Naxx",
+								}),
+								q(57604, {
+									["title"] = "Construct Body: Neena",
+								}),
+								q(57601, {
+									["title"] = "Construct Body: Professor",
+								}),
+								q(57605, {
+									["title"] = "Construct Body: Roseboil",
+								}),
+								q(57600, {
+									["title"] = "Construct Body: Sabrina",
+								}),
+								q(58414, {
+									["title"] = "Construct Body: Toothpick",
+								}),
 							},
-							["provider"] = { "n", 162227 },	-- Rathan
-							["coord"] = { 24.2, 38.8, 1536 },
+						}),
+						n(QUESTS, {
+							-- Tier 1: Build a Buddy
+							q(61510, {	-- A Bountiful Haul
+								["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+								["isWeekly"] = true,
+							}),
+							q(62213, {    -- A Brokered Deal
+								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
+								["provider"] = { "n", 159238 },    -- Atticus
+								["coord"] = { 55.3, 68.3, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(59042, {	-- A Good Heart
+								["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
+								["provider"] = { "n", 162222 },	-- Rathan
+								["coord"] = { 48.0, 50.2, 1698 },
+							}),
+							q(58727, {	-- A Place To Call Home
+								["sourceQuests"] = { 58671 },	-- Bottled Up Inside
+								["provider"] = { "n", 162174 },	-- Emeni
+								["coord"] = { 24.9, 31.7, 1536 },
+							}),
+							q(63058, {	-- Abominable Stitching and Me
+								["provider"] = { "n", 161909 },	-- Arkadia Moa
+								["coord"] = { 52.4, 38.4, 1698 },
+								["description"] = "Becomes available after you build Abomination Factory tier 1 in your sanctum.",
+							}),
+							q(60049, {	-- At Your Service
+								["sourceQuests"] = { 58727 },	-- A Place To Call Home
+								["provider"] = { "n", 167044 },	-- Emeni
+								["coord"] = { 55.1, 68.7, 1536 },
+							}),
+							q(58671, {	-- Bottled Up Inside
+								["sourceQuests"] = { 59042 },	-- A Good Heart
+								["provider"] = { "n", 162174 },	-- Emeni
+								["coord"] = { 23.8, 39.1, 1536 },
+							}),
+							q(60041, {	-- Build-A-Bomination
+								["sourceQuests"] = { 60048 },	-- Stitching Time
+								["provider"] = { "n", 167150 },	-- Rathan
+								["coord"] = { 55.1, 68.8, 1536 },
+							}),
+							q(60195, {	-- Build One More
+								["sourceQuests"] = { 60042 },	-- May I Take Your Order?
+								["provider"] = { "n", 167150 },	-- Rathan
+								["coord"] = { 55.1, 68.8, 1536 },
+							}),
+							q(62217, {	-- Field Training
+								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
+								["provider"] = { "n", 158301 },    -- Marz
+								["coord"] = { 54.2, 68.6, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(58668, {	-- Find The Way
+								["sourceQuests"] = { 58665 },	-- Rebellious Souls
+								["provider"] = { "n", 162153 },	-- Rathan
+								["coord"] = { 26.0, 42.6, 1536 },
+							}),
+							q(58680, {	-- Loose Threads
+								["sourceQuests"] = { 58668 },	-- Find The Way
+								["provider"] = { "n", 162227 },	-- Rathan
+								["coord"] = { 24.2, 38.8, 1536 },
+							}),
+							q(60042, {	-- May I Take Your Order?
+								["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+								["provider"] = { "n", 167150 },	-- Rathan
+								["coord"] = { 55.1, 68.8, 1536 },
+							}),
+							q(58665, {	-- Rebellious Souls
+								-- TODO: might be breadcrumb?
+								["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+								["provider"] = { "n", 162222 },	-- Rathan
+								["coord"] = { 48.0, 50.2, 1698 },
+							}),
+							q(58677, {	-- Skin in the Game
+								["sourceQuests"] = { 58668 },	-- Find The Way
+								["provider"] = { "n", 161285 },	-- Emeni
+								["coord"] = { 24.1, 38.7, 1536 },
+							}),
+							q(58432, {	-- Something Old, Something Used
+								["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+								["provider"] = { "n", 161270 },	-- Chordy
+								["coord"] = { 55.1, 68.6, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(60048, {	-- Stitching Time
+								["sourceQuests"] = { 58727 },	-- A Place To Call Home
+								["provider"] = { "n", 167150 },	-- Rathan
+								["coord"] = { 55.1, 68.8, 1536 },
+							}),
+							q(59126, {    -- Supply Chain
+								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
+								["provider"] = { "n", 159238 },    -- Atticus
+								["coord"] = { 55.3, 68.3, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(58670, {	-- The Slaughter Daughter
+								["sourceQuests"] = { 59042 },	-- A Good Heart
+								["provider"] = { "n", 162174 },	-- Emeni
+								["coord"] = { 23.8, 39.1, 1536 },
+							}),
+							q(61511, {	-- Things They Leave Behind
+								["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+								["provider"] = { "n", 161270 },	-- Chordy
+								["coord"] = { 55.1, 68.6, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(62216, {	-- Training Program
+								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
+								["provider"] = { "n", 158301 },    -- Marz
+								["coord"] = { 54.2, 68.6, 1536 },
+								["isWeekly"] = true,
+							}),
+							q(58686, {	-- Weapon of Mass Construction
+								["sourceQuests"] = { 
+									58680,	-- Loose Threads
+									58677,	-- Skin in the Game
+								},
+								["provider"] = { "n", 162227 },	-- Rathan
+								["coord"] = { 24.2, 38.8, 1536 },
+							}),
+							-- Tier 2: Crafting Limbs
+							-- Tier 3: Bring Them to Life
+							-- Tier 4: Forged Friends
+							-- Tier 5: Best Fiends Forever
 						}),
 					}),
-						-- Tier 2: Crafting Limbs
-						-- Tier 3: Bring Them to Life
-						-- Tier 4: Forged Friends
-						-- Tier 5: Best Fiends Forever
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63057, {	-- Restoring Power
@@ -880,6 +987,51 @@ _.Zones =
 					}),
 				}),
 				n(VENDORS, {
+					n(159238, {	-- Atticus <Supplies & Acquisitions>
+						["coord"] = { 55.2, 68.2, 1536 },
+						["g"] = {
+							i(181317, {	-- Dauntless Duskrunner	(MOUNT!)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(181300, {	-- Gruesome Flayedwing (MOUNT!)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(180726, {	-- Pale Acidmaw (MOUNT!)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(181316, {	-- Silvertip Dredwing (MOUNT!)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(181315, {	-- Bloodfeaster Spiderling (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180815, {	-- Brightscale Hatchling (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(181168, {	-- Corpulent Bonetusk (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180639, {	-- Dusty Sporeflutterer (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180628, {	-- Pearlwing Heron (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(181264, {	-- Plaguelouse Larva (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180814, {	-- Sable (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180603, {	-- Violet Dredwing Pup (PET!)
+								["cost"] = { { "c", 1813, 1000 } },
+							}),
+							i(180277),	-- Battlefront Ration Key
+							i(178547),	-- Questionable Fried Poultry
+							i(178546),	-- Questionable Meat Product
+							i(178535),	-- Suspicious Slime Shot
+						},
+					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 60.8, 44.3, 1698 },
