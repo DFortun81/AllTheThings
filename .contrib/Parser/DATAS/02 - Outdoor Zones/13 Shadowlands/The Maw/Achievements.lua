@@ -189,7 +189,10 @@ _.Zones =
 				}),
 				ach(14742, {	-- Who Sent You?
 					["crs"] = {
-					--	TODO: add assassin's ID(s?)... figure out if all assassins share or if yours+others are different, i guess, or if you get credit for killing the assassins of others
+						161856,	-- Assassin <Mawsworn Blackguard>
+						161846,	-- Assassin <Mawsworn Inquisitor>
+						161854,	-- Assassin <Mawsworn Reaver>
+						161849,	-- Assassin <Mawsworn Stalker>
 					},
 				}),
 			}),

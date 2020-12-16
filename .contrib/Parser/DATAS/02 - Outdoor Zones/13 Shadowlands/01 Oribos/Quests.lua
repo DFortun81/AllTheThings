@@ -167,6 +167,11 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(62938, {	-- Information for a Price
+					["sourceQuests"] = { 62935 },	-- Remnants of Hope
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
 				q(60136, {	-- Into Torghast
 					["sourceQuests"] = { 
 						63029,	-- The Highlord Calls (Kyrian)
@@ -257,6 +262,11 @@ _.Zones =
 					["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
 					["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
 					["coord"] = { 50.5, 62.0, 1670 },
+				}),
+				q(60139, {	-- Torment Chamber: Jaina
+					["sourceQuests"] = { 62938 },	-- Information for a Price
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				q(60274, {	-- Trading Favors
 					["provider"] = { "n", 156688 },	-- Host Ta'rela

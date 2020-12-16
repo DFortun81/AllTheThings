@@ -109,6 +109,7 @@ _.Zones =
 					i(181220),	-- Fiend Collector's Cudgel
 					i(180400),	-- Inquisitions Final Judgment
 					i(181223),	-- Mace of Emberwrath
+					i(181182),	-- Muck Waders
 					i(180355),	-- Ornate Pyx
 					i(182689),	-- Rapier of the Fearless
 					i(181213),	-- Shard-Dusted Shank

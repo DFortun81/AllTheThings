@@ -259,9 +259,11 @@ _.Zones =
 					},
 				}),
 				n(170048, {	-- Manifestation of Wrath
-				--	["questID"] = ,
+					["description"] = "Only available when the |cFFFFD700Swarming Souls|r WQ is up in Revendreth.  When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
+					["questID"] = 60729,
 					["isDaily"] = true,
 					["coord"] = { 49.8, 35.0, 1525 },
+					["crs"] = { 169917 },	-- Avowed Ritualist
 					["g"] = {
 						crit(22, {	-- Manifestation of Wrath
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -284,7 +286,7 @@ _.Zones =
 				}),
 				n(162481, {	-- Sinstone Hoarder
 					["coord"] = { 67.4, 30.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 62252,
 					["isDaily"] = true,
 					["g"] = {
 						crit(24, {	-- Sinstone Hoarder

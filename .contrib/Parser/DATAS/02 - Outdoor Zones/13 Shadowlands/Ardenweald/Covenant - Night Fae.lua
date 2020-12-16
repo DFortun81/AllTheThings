@@ -568,6 +568,91 @@ _.Zones =
 					}),
 
 					-- Chapter 5: Night Warrior's Curse (Renown 11 required to start)
+					q(58610, {	-- The Speaker of Elune
+						["sourceQuests"] = { 59821 },	-- Report to the Queen
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.7, 39.0, 1701 },
+					}),
+					q(58647, {	-- Broken Webs
+						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
+						["provider"] = { "n", 161786 },	-- Qadarin
+						["coord"] = { 40.3, 51.2, 1565 },
+					}),
+					q(58669, {	-- A Little Pruning
+						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
+						["provider"] = { "n", 161786 },	-- Qadarin
+						["coord"] = { 40.3, 51.2, 1565 },
+					}),
+					q(59008, {	-- Spriggan Snares
+						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
+						["provider"] = { "n", 163385 },	-- Cirrik
+						["coord"] = { 39.0, 52.4, 1565 },
+					}),
+					q(58704, {	-- The Garden of Night
+						["sourceQuests"] = {
+							58669,	-- A Little Pruning
+							58647,	-- Broken Webs
+							59008,	-- Spriggan Snares
+						},
+						["provider"] = { "n", 161934 },	-- Qadarin
+						["g"] = {
+							i(175581),	-- Faewoven Sandals
+							i(179766),	-- Oakheart Anklewraps
+							i(179889),	-- Queensguard Sabatons
+							i(181910),	-- Runewarden's Boots
+						},
+					}),
+					q(58871, {	-- Broken Harts
+						["sourceQuests"] = { 58704 },	-- The Garden of Night
+						["provider"] = { "n", 161785 },	-- Thiernax
+						["coord"] = { 39.0, 59.4, 1565 },
+					}),
+					q(59725, {	-- Archivist on the Edge
+						["sourceQuests"] = { 58871 },	-- Broken Harts
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 44.0, 37.1, 1701 },
+					}),
+					q(59063, {	-- Curses!
+						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
+						["provider"] = { "n", 165867 },	-- Archivist Dreyden
+						["coord"] = { 63.6, 22.6, 1565 },
+					}),
+					q(59068, {	-- A Secret Never Spoken
+						["sourceQuests"] = { 59063 },	-- Curses!
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 44.0, 37.1, 1701 },
+					}),
+					q(59070, {	-- A Sacrifice of Anima
+						["sourceQuests"] = { 59063 },	-- Curses!
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 44.0, 37.1, 1701 },
+					}),
+					q(59069, {	-- A Token of Lost Love
+						["sourceQuests"] = { 59063 },	-- Curses!
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.7, 39.0, 1701 },
+					}),
+					q(59071, {	-- Mending a Broken Hart
+						["sourceQuests"] = { 
+							59070,	-- A Sacrifice of Anima
+							59068,	-- A Secret Never Spoken
+							59069,	-- A Token of Lost Love
+						},
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 44.0, 37.1, 1701 },
+						["g"] = {
+							i(181301),	-- Faewoven Branches
+							i(182172, {	-- Equine Soul
+								["questID"] = 62428,	-- Equine Soul
+							}),
+						},
+					}),
+					q(62560, {	-- Growing in Power
+						["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 47.4, 36.1, 1701 },
+					}),
+					
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
 					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
 					-- Chapter 8: Deal for a Loa (Renown 20 required to start)
@@ -600,83 +685,6 @@ _.Zones =
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.9, 38.8, 1565 },
 						["sourceQuests"] = { 59242 },	-- Their New Home
-					}),
-					-- Night Warrior's Curse							-- wowhead, need to be confirmed
-					q(58610, {	-- The Speaker of Elune
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1565 },
-						["sourceQuests"] = { 59821 },	-- Report to the Queen
-					}),
-					q(58647, {	-- Broken Webs
-						["provider"] = { "n", 161786 },	-- Qadarin
-						["coord"] = { 42.8, 36.4, 1565 },
-						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-					}),
-					q(58669, {	-- A Little Pruning
-						["provider"] = { "n", 161786 },	-- Qadarin
-						["coord"] = { 42.8, 36.4, 1565 },
-						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-					}),
-					q(59008, {	-- Spriggan Snares
-						["provider"] = { "n", 163385 },	-- Cirrik
-						["coord"] = { 39.0, 52.4, 1565 },
-						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-					}),
-					q(58704, {	-- The Garden of Night
-						["provider"] = { "n", 161934 },	-- Helpful Soul
-						--["coord"] = { 44.7, 39.0, 1565 },
-						["sourceQuests"] = {
-							58647,	-- Broken Webs
-							58669,	-- A Little Pruning
-							59008,	-- Spriggan Snares
-						},
-						["g"] = {
-							i(175581),	-- Faewoven Sandals
-							i(179766),	-- Oakheart Anklewraps
-							i(181910),	-- Runewarden's Boots
-							i(179889),	-- Queensguard Sabatons
-						},
-					}),
-					q(58871, {	-- Broken Harts
-						["provider"] = { "n", 161785 },	-- Thiernax
-						["coord"] = { 39.0, 59.4, 1565 },
-						["sourceQuests"] = { 58704 },	-- The Garden of Night
-					}),
-					q(59725, {	-- Archivist on the Edge
-						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.7, 39.0, 1565 },
-						["sourceQuests"] = { 58871 },	-- Broken Harts
-					}),
-					q(59063, {	-- Curses!
-						["provider"] = { "n", 165867 },	-- Archivist Dreyden
-						["coord"] = { 63.6, 22.6, 1565 },
-						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
-					}),
-					q(59068, {	-- A Secret Never Spoken
-						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.6, 36.4, 1565 },
-						["sourceQuests"] = { 59063 },	-- Curses!
-					}),
-					q(59069, {	-- A Token of Lost Love
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.4, 38.2, 1565 },
-						["sourceQuests"] = { 59068 },	-- A Secret Never Spoken
-					}),
-					q(59070, {	-- A Sacrifice of Anima
-						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.6, 36.4, 1565 },
-						["sourceQuests"] = { 59069 },	-- A Token of Lost Love
-					}),
-					q(59071, {	-- Mending a Broken Hart
-						["provider"] = { "n", 165867 },	-- Archivist Dreyden
-						["coord"] = { 63.6, 22.6, 1565 },
-						["sourceQuests"] = { 59070 },	-- A Sacrifice of Anima
-						["g"] = {
-							i(181301),	-- Faewoven Branches
-							i(182172, {	-- Equine Soul
-								["questID"] = 62428,	-- Equine Soul
-							}),
-						},
 					}),
 					q(62890, {	-- The Life-blood of the Forest
 						["provider"] = { "n", 165702 },	-- Blodwyn

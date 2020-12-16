@@ -677,6 +677,48 @@ _.Zones =
 						i(179609, {	-- Sinful Gladiator's Bulwark
 							["cost"] = { { "c", 1602, 450 } },
 						}),
+						i(174299, {	-- Sinful Gladiator's Splitter
+							["cost"] = { { "c", 1602, 900 } },
+						}),
+						i(184546, {	-- Sinful Gladiator's Hacker
+							["cost"] = { { "c", 1602, 900 } },
+						}),
+						i(177861, {	-- Sinful Gladiator's Knife
+							["cost"] = { { "c", 1602, 900 } },
+						}),
+						i(184548, {	-- Sinful Gladiator's Ritual Dager
+							["cost"] = { { "c", 1602, 1350 } },
+						}),
+						i(177846, {	-- Sinful Gladiator's Gladius
+							["cost"] = { { "c", 1602, 900 } },
+						}),
+						i(184547, {	-- Sinful Gladiator's Xiphos
+							["cost"] = { { "c", 1602, 900 } },
+						}),
+						i(177851, {	-- Sinful Gladiator's Ceremonial Sword
+							["cost"] = { { "c", 1602, 1350 } },
+						}),
+						i(184237, {	-- Sinful Gladiator's Warglaive
+							["cost"] = { { "c", 1602,  900 } },
+						}),
+						i(177856, {	-- Sinful Gladiator's Lightbow
+							["cost"] = { { "c", 1602, 1800 } },
+						}),
+						i(180313, {	-- Sinful Gladiator's Greatmallet
+							["cost"] = { { "c", 1602, 1800 } },
+						}),
+						i(184549, {	-- Sinful Gladiator's Dory
+							["cost"] = { { "c", 1602, 1800 } },
+						}),
+						i(178971, {	-- Sinful Gladiator's Vesper
+							["cost"] = { { "c", 1602, 1800 } },
+						}),
+						i(177866, {	-- Sinful Gladiator's Chalice
+							["cost"] = { { "c", 1602, 450 } },
+						}),
+						i(174311, {	-- Sinful Gladiator's Guard
+							["cost"] = { { "c", 1602, 450 } },
+						}),
 						i(175914, {	-- Sinful Gladiator's Chain Belt
 							["cost"] = { { "c", 1602, 700 } },
 						}),
