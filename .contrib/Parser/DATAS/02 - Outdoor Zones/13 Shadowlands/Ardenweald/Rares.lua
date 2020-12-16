@@ -238,7 +238,7 @@ _.Zones =
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
-				--	["questID"] = ,
+					["questID"] = 61177,
 					["isDaily"] = true,
 					["coord"] = { 72.4, 51.6, 1565 },
 					["g"] = {

@@ -239,6 +239,14 @@ _.Zones =
 							follower(1283),	-- Guardian Kota
 						},
 					}),
+					q(61853, {	-- Adventurer: Te'zan
+						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+						["coord"] = { 44.7, 56.3, 1565 },
+						["description"] = "Becomes available at Renown 12",
+						["g"] = {
+							follower(1285),	-- Te'zan
+						},
+					}),
 					q(57459, {	-- Fighting For Fungus
 						["sourceQuests"] = {
 							57455,	-- Mushroom For Improvement
@@ -698,14 +706,6 @@ _.Zones =
 							i(180721),	-- Enchanted Dreamlight Runestag
 						},
 					}),
-					-- Covenant progress
-					q(61853, {	-- Adventurer: Te'zan (Rank ?)
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 29.6, 81.6, 1565 },
-						["g"] = {
-							follower(1285),	-- Te'zan
-						},
-					}),
 				}),
 				n(RARES, {
 				}),
@@ -724,6 +724,16 @@ _.Zones =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62160, {	-- A Bundle of Lilies
+								["provider"] = { "n", 173277 },	-- Teendynneetll
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(61985, {	-- Wake the Sleepers
+								["provider"] = { "n", 173277 },	-- Teendynneetll
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
 						}),
