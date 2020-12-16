@@ -74,6 +74,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(183865)),	-- Technique: Crafter's Mark III (was in beta but not live, possibly added in future?)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+		un(NEVER_IMPLEMENTED, i(174445)),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
 		-- Other
 		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
 	}),

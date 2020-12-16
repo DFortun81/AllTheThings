@@ -17,7 +17,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179487),	-- Aethon's Horn
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(-940,   {	-- Ascendend Council
@@ -119,7 +118,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179488),	-- Cloudtail's Paw
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(171014, { -- Collector Astorestes
@@ -273,7 +271,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179485),	-- Fang of Nemaeus
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(160882, { -- Nikara Blackheart
@@ -319,7 +316,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179486),	-- Sigilback's Smashshell
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(170548, { -- Sundancer

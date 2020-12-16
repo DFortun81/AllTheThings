@@ -86,7 +86,6 @@ _.Toys =
 		i(127659),		-- Ghostly Iron Buccaneer's Hat
 		i(117569),		-- Giant Deathweb Egg
 		i(161342),		-- Gem of Acquiescence
-		i(174445),		-- Glimmerfly Cocoon
 		i(119211),		-- Golden Hearthstone Card: Lord Jaraxxus
 		i(118716),		-- Goren Garb
 		i(119180),		-- Goren "Log" Roller

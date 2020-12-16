@@ -1797,6 +1797,12 @@ _.Zones =
 									{ "c", 1885, 10 },
 								},
 							}),
+							i(179529, {	-- Warspear of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
 							i(179542, {	-- Warmaul of the Wild Hunt
 								["cost"] = { 
 									{ "c", 1813, 3500 },
