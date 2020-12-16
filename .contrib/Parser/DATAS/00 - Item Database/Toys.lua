@@ -720,6 +720,7 @@ t(172924);	-- Wormhole Generator: Shadowlands
 -- PATCH 9.0.2 --
 -----------------
 t(184410);	-- Aspirant's Stretcher
+t(184404);	-- Ever-Abundant Hearth
 t(184449);	-- Jiggles's Favorite Toy
 t(184353);	-- Kyrian Hearthstone
 t(184476);	-- Regenerating Slime Vial

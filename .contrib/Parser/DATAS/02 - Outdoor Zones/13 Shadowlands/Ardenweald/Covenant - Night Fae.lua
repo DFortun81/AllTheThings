@@ -231,22 +231,6 @@ _.Zones =
 						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 						["isDaily"] = true,
 					}),
-					q(61852, {	-- Adventurer: Guardian Kota
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 44.7, 56.3, 1565 },
-						["description"] = "Becomes available at Renown 4",
-						["g"] = {
-							follower(1283),	-- Guardian Kota
-						},
-					}),
-					q(61853, {	-- Adventurer: Te'zan
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 44.7, 56.3, 1565 },
-						["description"] = "Becomes available at Renown 12",
-						["g"] = {
-							follower(1285),	-- Te'zan
-						},
-					}),
 					q(57459, {	-- Fighting For Fungus
 						["sourceQuests"] = {
 							57455,	-- Mushroom For Improvement
@@ -740,6 +724,22 @@ _.Zones =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							q(61852, {	-- Adventurer: Guardian Kota
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, 1565 },
+								["description"] = "Becomes available at Renown 4",
+								["g"] = {
+									follower(1283),	-- Guardian Kota
+								},
+							}),
+							q(61853, {	-- Adventurer: Te'zan
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, 1565 },
+								["description"] = "Becomes available at Renown 12",
+								["g"] = {
+									follower(1285),	-- Te'zan
+								},
+							}),
 							q(61553, {	-- Know Where to Strike
 								["sourceQuests"] = { 61552 },	-- The Hunt Watches
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom

@@ -670,6 +670,12 @@ _.Zones =
 							["provider"] = { "n", 167150 },	-- Rathan
 							["coord"] = { 55.1, 68.8, 1536 },
 						}),
+						q(62217, {	-- Field Training
+							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
+							["provider"] = { "n", 158301 },    -- Marz
+							["coord"] = { 54.2, 68.6, 1536 },
+							["isWeekly"] = true,
+						}),
 						q(58668, {	-- Find The Way
 							["sourceQuests"] = { 58665 },	-- Rebellious Souls
 							["provider"] = { "n", 162153 },	-- Rathan
@@ -708,7 +714,7 @@ _.Zones =
 							["coord"] = { 55.1, 68.8, 1536 },
 						}),
 						q(59126, {    -- Supply Chain
-							-- TODO: ["sourceQuests"] = {  },
+							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
 							["provider"] = { "n", 159238 },    -- Atticus
 							["coord"] = { 55.3, 68.3, 1536 },
 							["isWeekly"] = true,
@@ -718,8 +724,14 @@ _.Zones =
 							["provider"] = { "n", 162174 },	-- Emeni
 							["coord"] = { 23.8, 39.1, 1536 },
 						}),
+						q(61511, {	-- Things They Leave Behind
+							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+							["provider"] = { "n", 161270 },	-- Chordy
+							["coord"] = { 55.1, 68.6, 1536 },
+							["isWeekly"] = true,
+						}),
 						q(62216, {	-- Training Program
-							["sourceQuests"] = { 60195 },	-- Build One More
+							-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
 							["provider"] = { "n", 158301 },    -- Marz
 							["coord"] = { 54.2, 68.6, 1536 },
 							["isWeekly"] = true,
