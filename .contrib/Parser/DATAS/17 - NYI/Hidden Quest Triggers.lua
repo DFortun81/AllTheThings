@@ -3323,5 +3323,51 @@ _.HiddenQuestTriggers =
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID
 		q(62811),	-- Oranomonos kill questID
+
+		-- Castle Nathria
+		-- LFR
+		-- q(),	-- Shriekwing
+		-- q(),	-- Huntsman Altimor
+		-- q(),	-- Sun King's Salvation
+		-- q(),	-- Artificer Xy'mox
+		-- q(),	-- Hungering Destroyer
+		-- q(),	-- Lady Inerva Darkvein
+		-- q(),	-- The Council of Blood
+		-- q(),	-- Sludgefist
+		-- q(),	-- Stone Legion Generals
+		-- q(),	-- Sire Denathrius
+		-- Normal
+		-- q(),	-- Shriekwing
+		-- q(),	-- Huntsman Altimor
+		-- q(),	-- Sun King's Salvation
+		-- q(),	-- Artificer Xy'mox
+		-- q(),	-- Hungering Destroyer
+		-- q(),	-- Lady Inerva Darkvein
+		-- q(),	-- The Council of Blood
+		-- q(),	-- Sludgefist
+		-- q(),	-- Stone Legion Generals
+		-- q(),	-- Sire Denathrius
+		-- Heroic
+		-- q(),	-- Shriekwing
+		-- q(),	-- Huntsman Altimor
+		q(62873),	-- Sun King's Salvation
+		q(62874),	-- Artificer Xy'mox
+		q(62875),	-- Hungering Destroyer
+		q(62877),	-- Lady Inerva Darkvein
+		-- q(),	-- The Council of Blood
+		-- q(),	-- Sludgefist
+		-- q(),	-- Stone Legion Generals
+		-- q(),	-- Sire Denathrius
+		-- Mythic
+		-- q(),	-- Shriekwing
+		-- q(),	-- Huntsman Altimor
+		-- q(),	-- Sun King's Salvation
+		-- q(),	-- Artificer Xy'mox
+		-- q(),	-- Hungering Destroyer
+		-- q(),	-- Lady Inerva Darkvein
+		-- q(),	-- The Council of Blood
+		-- q(),	-- Sludgefist
+		-- q(),	-- Stone Legion Generals
+		-- q(),	-- Sire Denathrius
 	}),
 };

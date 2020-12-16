@@ -2758,7 +2758,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												else
 													text = "   ";
 												end
-												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 											end
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -2768,7 +2768,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. (otherSource.modID and (":" .. otherSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -2817,7 +2817,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or "");
+											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or "");
 
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
@@ -2851,7 +2851,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. (otherSource.modID and (":" .. otherSource.modID) or "") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
 												tinsert(info, { left = text	.. " |CFFFF0000(INVALID BLIZZARD DATA - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
@@ -12905,6 +12905,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 			app.MaximumItemInfoRetries = 40;
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				for i,group in ipairs(groups) do
+					-- TODO: ignore any ignoreSource as well
 					if (not group.s or group.s == 0 or not C_TransmogCollection_GetSourceInfo(group.s)) then
 						if group.bonusID and not bonusIDs[group.bonusID] then
 							bonusIDs[group.bonusID] = true;
