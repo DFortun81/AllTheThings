@@ -31,7 +31,7 @@ _.Zones =
 					},
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
-					-- ["coord"] = { ##, ##, 1525 },
+					["coord"] = { 45.8, 47.8, 1525 },
 					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror leading to this chest",
 					-- ["sourceQuests"] = { },
 					["questID"] = 60949,

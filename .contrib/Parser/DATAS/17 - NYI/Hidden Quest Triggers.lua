@@ -2956,6 +2956,7 @@ _.HiddenQuestTriggers =
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
+		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger)
 		
 		-- Adventures
 		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" (shared across covenants)

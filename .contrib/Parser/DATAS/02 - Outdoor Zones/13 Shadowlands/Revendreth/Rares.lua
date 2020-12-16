@@ -284,7 +284,7 @@ _.Zones =
 				}),
 				n(162481, {	-- Sinstone Hoarder
 					["coord"] = { 67.4, 30.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 62252,
 					["isDaily"] = true,
 					["g"] = {
 						crit(24, {	-- Sinstone Hoarder
