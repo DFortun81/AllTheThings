@@ -38,6 +38,7 @@ _.Zones =
 								i(181740),	-- Evasive Stride [Monk]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(182138),	-- Mind Devourer [Priest-Shadow]
+								i(181842),	-- Power Unto Others
 								i(181700),	-- Scalding Brew [Monk]
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]

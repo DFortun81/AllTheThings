@@ -305,6 +305,11 @@ _.Zones =
 							["provider"] = { "n", 161979 },	-- Theotar
 							["coord"] = { 50.2, 18.6, 1699 },	-- Sinfall Reaches
 						}),
+						q(58424, {	-- An Eye for an Amulet
+							["sourceQuests"] = { 58372 },	-- Lead the Way
+							["provider"] = { "n", 160956 },	-- Watcher Emil
+							["coord"] = { 72.6, 37.5, 1525 },	-- Revendreth
+						}),
 						q(57888, {	-- An Invitation to Treachery
 							["sourceQuests"] = { 57887 },	-- Killing the Messenger
 							["provider"] = { "n", 159694 },	-- The Countess
@@ -335,16 +340,31 @@ _.Zones =
 							["provider"] = { "n", 171950 },	-- The Accuser
 							["coord"] = { 46.2, 21.6, 1699 },	-- Sinfall Reaches
 						}),
+						q(58337, {	-- Break Out
+							["sourceQuests"] = { 58842 },	-- The Curator
+							["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
+							["coord"] = { 65.9, 32.2, 1525 },	-- Revendreth
+						}),
 						q(62856, {	-- Building Your Renown
 							["sourceQuests"] = { 59323 },	-- Anima Awakening
 							["provider"] = { "n", 171934 },	-- Prince Renathal
 							["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
+						}),
+						q(58326, {	-- Combing the Catacombs
+							["sourceQuests"] = { 58842 },	-- The Curator
+							["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
+							["coord"] = { 65.9, 32.2, 1525 },	-- Revendreth
 						}),
 						q(59701, {	-- Common Ground
 							["description"] = "Requires Renown 5.",
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
+						}),
+						q(58428, {	-- Crypt Crashers
+							["sourceQuests"] = { 58372 },	-- Lead the Way
+							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 						}),
 						q(57892, {	-- Enacting Immediate Justice
 							["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
@@ -415,12 +435,37 @@ _.Zones =
 							["provider"] = { "n", 172042 },	-- Theotar
 							["coord"] = { 50.3, 18.8, 1699 },	-- Sinfall Reaches
 						}),
+						q(58372, {	-- Lead the Way
+							["sourceQuests"] = {
+								58325,	-- Watcher Emil
+								58337,	-- Break Out
+								58326,	-- Combing the Catacombs
+							},
+							["provider"] = { "n", 160956 },	-- Watcher Emil
+							["coord"] = { 65.9, 28.8, 1525 },	-- Revendreth
+						}),
+						q(60935, {	-- Medallion of Avarice
+							["description"] = "Requires Renown 11.",
+							["provider"] = { "o", 353949 },	-- Medallion of Avarice
+							["coord"] = { 54.9, 30.9, 1699 },	-- Sinfall Reaches
+						}),
 						q(60904, {	-- Medallion of Desire
-						--	TODO: add objectID for provider when data is available
-							["sourceQuests"] = { 59343 },	-- Kindred Spirits
+							-- ["sourceQuests"] = { 59343 },	-- Kindred Spirits
 							["description"] = "Requires Renown 8.",
-						--	["provider"] = { "o",  },	-- Medallion of Desire
+							["provider"] = { "o", 353948 },	-- Medallion of Desire
 							["coord"] = { 53.6, 32.9, 1699 },	-- Sinfall Reaches
+						}),
+						q(58440, {	-- Mirror, Mirror...
+							["sourceQuests"] = {
+								60673,	-- The Traitor
+								58424,	-- An Eye for an Amulet
+								58428,	-- Crypt Crashers
+							},
+							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+							["g"] = {
+								i(180945),	-- Crypt Gargon
+							},
 						}),
 						q(57891, {	-- Mix, Mingle, and Meddle
 							["sourceQuests"] = {
@@ -476,6 +521,11 @@ _.Zones =
 							["isWeekly"] = true,
 							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						}),
+						q(58444, {	-- Return to Sinfall
+							["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
+							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						}),
 						q(62069, {	-- Restock: Sinstones
 							["provider"] = { "n", 165494 },	-- Hips <Entertainment>
 							["repeatable"] = true,
@@ -511,6 +561,11 @@ _.Zones =
 								i(180911),	-- Soulbreaker's Ebony Handwraps
 								i(180912),	-- Fearstalker's Ebony Gauntlets
 							},
+						}),
+						q(58421, {	-- Special Access
+							["sourceQuests"] = { 58372 },	-- Lead the Way
+							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 						}),
 						q(62919, {	-- Strengthening the Bond
 							["sourceQuests"] = { 62918 },	-- Binding Power
@@ -557,6 +612,11 @@ _.Zones =
 							["provider"] = { "n", 164742 },	-- Prince Renathal
 							["coord"] = { 25.4, 56.1, 1699 },	-- Sinfall Reaches
 						}),
+						q(58842, {	-- The Curator
+							["sourceQuests"] = { 60935 },	-- Medallion of Avarice
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.7, 37.6, 1699 },	-- Sinfall Reaches
+						}),
 						q(63033, {	-- The Highlord Calls
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158653 },	-- Prince Renathal
@@ -578,6 +638,23 @@ _.Zones =
 							["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 							["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
 						}),
+						q(60673, {	-- The Traitor
+							["sourceQuests"] = { 58421 },	-- Special Access
+							["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
+							["coord"] = { 77.5, 39.2, 1525 },	-- Revendreth
+						}),
+						q(58325, {	-- Watcher Emil
+							["sourceQuests"] = { 58842 },	-- The Curator
+							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						}),
+
+
+						-- q(, {	-- 
+						-- 	["sourceQuests"] = {  },	-- 
+						-- 	["provider"] = { "n",  },	-- 
+						-- 	["coord"] = {  },	-- 
+						-- }),
 					}),
 					n(RARES, {
 						-- doubtful that any rares are specifically accessible to Venthyr without being taggable by others
@@ -624,6 +701,15 @@ _.Zones =
 							n(-958, {	-- Tier 2: Deserved Feast
 							}),
 							n(-959, {	-- Tier 3: Superior Efficiency
+							}),
+							q(61786, {	-- Adventurer: Stonehead
+								["sourceQuests"] = { 58444 },	-- Return to Sinfall
+								["description"] = "Requires Renown 12.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1251),	-- Stonehead
+								},
 							}),
 						}),
 						n(-960, {	-- The Ember Court

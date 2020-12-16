@@ -806,13 +806,6 @@ _.Zones =
 				
 				
 				currency(1830, {		-- Renown-Venthyr
-					-- Chapter 4 (Avarice)
-					q(58440, {	-- Mirror, Mirror...
-						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["g"] = {
-							i(180945),	-- Crypt Gargon
-						},
-					}),
 					-- Chapter 7 (Envy)
 					q(57771, {	-- An Unwelcome Incursion
 						--["provider"] = { "n", 170543 },	-- General Draven
