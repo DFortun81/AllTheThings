@@ -702,6 +702,22 @@ _.Zones =
 							}),
 							n(-959, {	-- Tier 3: Superior Efficiency
 							}),
+							q(61792, {	-- Adventurer: Bogdan
+								["description"] = "Requires Renown 38.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1253),	-- Bogdan
+								},
+							}),
+							q(61789, {	-- Adventurer: Lost Sybille
+								["description"] = "Requires Renown 27.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1254),	-- Lost Sybille
+								},
+							}),
 							q(61786, {	-- Adventurer: Stonehead
 								["sourceQuests"] = { 58444 },	-- Return to Sinfall
 								["description"] = "Requires Renown 12.",
@@ -709,6 +725,22 @@ _.Zones =
 								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
 								["g"] = {
 									follower(1251),	-- Stonehead
+								},
+							}),
+							q(61788, {	-- Adventurer: Simone
+								["description"] = "Requires Renown 17.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1252),	-- Simone
+								},
+							}),
+							q(61790, {	-- Adventurer: Vulca
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1255),	-- Vulca
 								},
 							}),
 						}),

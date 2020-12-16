@@ -723,34 +723,67 @@ _.Zones =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						n(-906, {	-- Tier 1: Tactical Insight
-							q(61852, {	-- Adventurer: Guardian Kota
-								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 4",
-								["g"] = {
-									follower(1283),	-- Guardian Kota
-								},
-							}),
-							q(61853, {	-- Adventurer: Te'zan
-								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 12",
-								["g"] = {
-									follower(1285),	-- Te'zan
-								},
-							}),
-							q(61553, {	-- Know Where to Strike
-								["sourceQuests"] = { 61552 },	-- The Hunt Watches
-								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-								["coord"] = { 44.6, 56.2, 1565 },
-							}),
-							q(61552, {	-- The Hunt Watches
-								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-								["coord"] = { 39.7, 55.7, 1701 },
-								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
-							}),
+						q(61857, {	-- Adventurer: Groonoomcrooek
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 38",
+							["g"] = {
+								follower(1288),	-- Groonoomcrooek
+							},
 						}),
+						q(61854, {	-- Adventurer: Master Sha'lor
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 17",
+							["g"] = {
+								follower(1284),	-- Master Sha'lor
+							},
+						}),
+						q(61852, {	-- Adventurer: Guardian Kota
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 4",
+							["g"] = {
+								follower(1283),	-- Guardian Kota
+							},
+						}),
+						q(61855, {	-- Adventurer: Qadarin
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 27",
+							["g"] = {
+								follower(1286),	-- Qadarin
+							},
+						}),
+						q(61853, {	-- Adventurer: Te'zan
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 12",
+							["g"] = {
+								follower(1285),	-- Te'zan
+							},
+						}),
+						q(61856, {	-- Adventurer: Watcher Vesperbloom
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, 1565 },
+							["description"] = "Becomes available at Renown 33",
+							["g"] = {
+								follower(1287),	-- Watcher Vesperbloom
+							},
+						}),
+						q(61553, {	-- Know Where to Strike
+							["sourceQuests"] = { 61552 },	-- The Hunt Watches
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.6, 56.2, 1565 },
+						}),
+						q(61552, {	-- The Hunt Watches
+							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+							["coord"] = { 39.7, 55.7, 1701 },
+							["coord"] = { 39.7, 55.7, 1701 },
+							["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
+						}),
+						-- think these headers are unneccessary, unless we find quests later that require tier 2/3
+						-- n(-906, {	-- Tier 1: Tactical Insight
 						-- Tier 2: Grovetender's Gift
 						-- Tier 3: Hidden Pathways
 					}),
@@ -993,6 +1026,7 @@ _.Zones =
 						},
 					}),
 					-- Transport Network
+						-- TODO: add header and move Mirasmius quests here
 						-- Tier 1: Nurtured Roots
 						-- Tier 2: Fun with Fungi
 						-- Tier 3: Blossoming Network

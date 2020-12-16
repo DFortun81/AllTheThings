@@ -769,11 +769,51 @@ _.Zones =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							q(62312, {    -- Adventurer: Gunn Gorgebone
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 12",
+								["g"] = {
+									follower(1301),	-- Gunn Gorgebone
+								},
+							}),
+							q(62314, {    -- Adventurer: Khaliiq
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 27",
+								["g"] = {
+									follower(1303),	-- Khaliiq
+								},
+							}),
+							q(62315, {    -- Adventurer: Plaguey
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 33",
+								["g"] = {
+									follower(1304),	-- Plaguey
+								},
+							}),
+							q(62316, {    -- Adventurer: Rathan
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 38",
+								["g"] = {
+									follower(1305),	-- Rathan
+								},
+							}),
+							q(62313, {    -- Adventurer: Rencissa the Dynamo
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 17",
+								["g"] = {
+									follower(1302),	-- Rencissa the Dynamo
+								},
+							}),
 							q(62309, {	-- Adventurer: Secutor Mevix
-								--	requires Renown 4
 								["sourceQuests"] = { 59603 },	-- In Shadowlands Service
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
+								["description"] = "Becomes available at Renown 4",
 								["g"] = {
 									follower(1300),	-- Secutor Mevix
 								},

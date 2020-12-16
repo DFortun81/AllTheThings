@@ -963,6 +963,7 @@ pet(180859, 2935);	-- Purity
 pet(182613, 3008);	-- Refilling Inkwell // Lost Quill
 pet(175114, 2878);	-- Renny
 pet(180644, 2907);	-- Rocky
+pet(184350, 3042);	-- Ruffle
 pet(182671, 3020);	-- Runelight Leaper
 pet(180814, 2933);	-- Sable
 pet(183117, 3028);	-- Severs

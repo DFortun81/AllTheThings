@@ -39,7 +39,6 @@ _.PetJournal =
 		p(1179),	-- Electrified Razortooth
 		p(293),		-- Elementium Geode
 		p(837),		-- Emerald Shale Hatchling
-		p(2897),	-- Emotional Leecher
 		p(2548),	-- Everburning Treant
 		p(1998),	-- Everliving Spore
 		p(519),		-- Fel Flame
@@ -96,6 +95,7 @@ _.PetJournal =
 		p(172),		-- Searing Scorchling
 		p(1690),	-- Shard of Cyrukh
 		p(291),		-- Singing Sunflower
+		p(2966),	-- Sinheart
 		p(162),		-- Sinister Squashling
 		p(1336),	-- Skunky Alemental
 		p(1960),	-- Snaplasher
@@ -126,6 +126,7 @@ _.PetJournal =
 		p(1959),	-- Winter Rageling
 		p(3015),	-- Withering Mire Creeper
 		p(220),		-- Withers
+		p(2897),	-- Wrathling
 		p(2084), 	-- Zephyrian Prince
 	}),
 };

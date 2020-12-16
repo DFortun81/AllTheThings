@@ -252,13 +252,6 @@ _.Zones =
 						["provider"] = { "n", 167745 },	-- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
 					}),
-					q(61860, {	-- Adventurer: Pelodis
-					--	Requires Kyrian renown 4
-					--	TODO: figure out if this also requires command table unlocked?
-						["sourceQuests"] = { 58103 },    -- Pride or Unit
-						["provider"] = { "n", 160389 },    -- Koros
-						["coord"] = { 43.8, 40.7, 1707 },
-					}),
 					q(58795, {	-- Ascended
 						["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
@@ -572,6 +565,55 @@ _.Zones =
 						-- TODO: create headers for these
 						-- Tier 2: Enhanced Purification
 						-- Tier 3: Wings of Light
+						q(61863, {	-- Adventurer: Apolon
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 27",
+							["g"] = {
+								follower(1276),	-- Apolon
+							},
+						}),
+						q(61864, {	-- Adventurer: Bron
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 33",
+							["g"] = {
+								follower(1275),	-- Bron
+							},
+						}),
+						q(61862, {	-- Adventurer: Clora
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 17",
+							["g"] = {
+								follower(1273),	-- Clora
+							},
+						}),
+						q(61865, {	-- Adventurer: Disciple Kosmas
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 38",
+							["g"] = {
+								follower(1274),	-- Disciple Kosmas
+							},
+						}),
+						q(61860, {	-- Adventurer: Pelodis
+							["sourceQuests"] = { 58103 },    -- Pride or Unit
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 4",
+							["g"] = {
+								follower(1271),	-- Pelodis
+							},
+						}),
+						q(61861, {	-- Adventurer: Sika
+							["provider"] = { "n", 160389 },    -- Koros
+							["coord"] = { 43.8, 40.7, 1707 },
+							["description"] = "Becomes available at Renown 12",
+							["g"] = {
+								follower(1272),	-- Sika
+							},
+						}),
 					}),
 					n(-942, {	-- Path of Ascension
 						n(-943, {	-- Tier 1: First Steps
@@ -816,6 +858,7 @@ _.Zones =
 							["cost"] = { { "c", 1813, 5000 } },
 						}),
 						i(184353),	-- Kyrian Hearthstone (TOY)
+						i(184350),	-- Ruffle (PET)
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
 						-- TODO: Fill in coords

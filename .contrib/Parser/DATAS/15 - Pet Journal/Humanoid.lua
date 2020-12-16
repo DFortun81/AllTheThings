@@ -108,6 +108,7 @@ _.PetJournal =
 		p(2417),			-- Ranishu Runt
 		p(2135),		 	-- Rebellious Imp
 		p(1349),			-- Rotten Little Helper
+		p(3042),			-- Ruffle
 		p(1628),			-- Sister of Temptation
 		p(2762),			-- Slimy Darkhunter
 		p(1953),			-- Snobold Runt
