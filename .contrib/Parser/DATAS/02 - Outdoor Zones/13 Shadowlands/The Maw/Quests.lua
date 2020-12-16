@@ -88,6 +88,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.6, 24.2, 1648 },
 				}),
+				q(63072, {	-- Acquisition: Stygic Ore
+					-- ["provider"] = { "o", ? },	-- 
+					["isDaily"] = true,
+					["coord"] = { 48.2, 81.9, 1543 },
+				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
@@ -415,6 +420,11 @@ _.Zones =
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, 1648 },
 				}),
+				q(63069, {	-- What They Know
+					-- ["provider"] = { "n", ? },	-- ?
+					["isDaily"] = true,
+					-- ["coord"] = { ?, ?, 1543 },
+				}),
 				q(61765, {	-- Words of Warding
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -516,11 +526,6 @@ _.Zones =
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well
 					["isDaily"] = true,
-				}),
-				-- Bonus Objectives ?? Rares or WQ
-				q(59441, {	-- The Soulsmith
-					["isDaily"] = true,
-					["coord"] = { 36.2, 37.4, 1543 },
 				}),
 			}),
 		}),

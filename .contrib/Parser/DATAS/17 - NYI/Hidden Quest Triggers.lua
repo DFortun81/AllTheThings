@@ -2971,9 +2971,11 @@ _.HiddenQuestTriggers =
 		q(63368),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
 		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
 		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
-		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
-		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (probably Night Fae covenant)
-		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
+		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Shared
+		-- q(),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
+		q(63282),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Necrolord
+		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Night Fae
+		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Venthyr
 		q(63252),	-- completing mi(2228), "Campaign: Discarded But Not Useless" (shared among covenants)
 		q(63301),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Kyrian
 		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" as Venthyr
@@ -2981,6 +2983,8 @@ _.HiddenQuestTriggers =
 		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
 		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
 		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" — one of these quests is probably Venthyr-specific and the other is shared
+		q(63238),	-- Completing mi(TEMP1), ?? forgot sorry — one of these quests is probably Venthyr-specific and the other is shared
+		q(63267),	-- Completing mi(TEMP1), ?? forgot sorry — one of these quests is probably Venthyr-specific and the other is shared
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3142,6 +3146,8 @@ _.HiddenQuestTriggers =
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(58410),	-- triggered after crafting Construct Body: Atticus at Abomination Factory
+		q(57611),	-- triggered after crafting Construct Body: Marz at Abomination Factory
+		q(57605),	-- triggered after crafting Construct Body: Roseboil at Abomination Factory
 		q(60783),	-- triggered when turning in #60722, "Tower Power"
 
 
@@ -3260,6 +3266,7 @@ _.HiddenQuestTriggers =
 		q(59619),	-- triggered when using "RSVP: Stonehead"
 		q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
+		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3273,7 +3280,9 @@ _.HiddenQuestTriggers =
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
 	--	q(63195),	-- triggered randomly in The Maw 12/6/20
+	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
+	--	q(63199),	-- The Maw Hunt event completion trigger... with 'The Alpha' as the final boss
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
@@ -3309,6 +3318,7 @@ _.HiddenQuestTriggers =
 		q(59326),	-- Mort'regar Layer 3
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
+		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
@@ -3338,14 +3348,14 @@ _.HiddenQuestTriggers =
 		-- Normal
 		-- q(),	-- Shriekwing
 		-- q(),	-- Huntsman Altimor
-		-- q(),	-- Sun King's Salvation
-		-- q(),	-- Artificer Xy'mox
+		q(62873),	-- Sun King's Salvation
+		q(62874),	-- Artificer Xy'mox
 		-- q(),	-- Hungering Destroyer
-		-- q(),	-- Lady Inerva Darkvein
+		q(62877),	-- Lady Inerva Darkvein
 		-- q(),	-- The Council of Blood
 		-- q(),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
-		-- q(),	-- Sire Denathrius
+		q(62880),	-- Sire Denathrius
 		-- Heroic
 		-- q(),	-- Shriekwing
 		-- q(),	-- Huntsman Altimor

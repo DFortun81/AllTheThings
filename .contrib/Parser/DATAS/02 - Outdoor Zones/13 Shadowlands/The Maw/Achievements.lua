@@ -184,6 +184,8 @@ _.Zones =
 				}),
 				ach(14658, {	-- Soulkeeper's Burden
 					["crs"] = {
+						174129,	-- Agonized Soul
+						174182,	-- Caged Soul
 					--	TODO: add interactable souls' IDs
 					},
 				}),

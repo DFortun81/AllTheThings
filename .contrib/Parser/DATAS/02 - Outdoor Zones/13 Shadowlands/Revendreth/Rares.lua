@@ -33,8 +33,8 @@ _.Zones =
 					},
 				}),
 				n(170434, {	-- Amalgamation of Sin
-					--["coord"] = { 49.8, 35.0, 1525 },
-					--["questID"] = ,
+					["coord"] = { 66.0, 33.2, 1525 },
+					["questID"] = 60836,
 					["isDaily"] = true,
 					["g"] = {
 						crit(23, {	-- Amalgamation of Sin
