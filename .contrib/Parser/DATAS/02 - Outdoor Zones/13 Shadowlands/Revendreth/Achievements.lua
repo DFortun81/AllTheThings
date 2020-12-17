@@ -209,23 +209,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14277, {	-- The Accuser's Avowed
-					title(423),		-- Cryptkeeper
-					ach(14273),		-- Crypt Kicker
-					ach(14274),		-- Absolution for All
-					ach(14276, {	-- It's Always Sinny in Revendreth
-						crit(1),		-- Inquisitor Otilia
-						crit(2),		-- Inquisitor Petre
-						crit(3),		-- Inquisitor Sorin
-						crit(4),		-- Inquisitor Traian
-						crit(5),		-- High Inquisitor Dacian
-						crit(6),		-- High Inquisitor Gabi
-						crit(7),		-- High Inquisitor Magda
-						crit(8),		-- High Inquisitor Radu
-						crit(9),		-- Grand Inquisitor Aurica
-						crit(10),		-- Grand Inquisitor Nicu
-					}),
-				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven
