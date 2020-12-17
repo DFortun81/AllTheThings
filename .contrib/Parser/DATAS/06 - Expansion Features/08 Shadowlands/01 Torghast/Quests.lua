@@ -236,11 +236,11 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 1",
 				}),
-				--[[
-				q(, {	-- Fracture Chambers, Layer 2
+				q(58187, {	-- Fracture Chambers, Layer 2
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 2",
 				}),
+				--[[
 				q(, {	-- Fracture Chambers, Layer 3
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 3",

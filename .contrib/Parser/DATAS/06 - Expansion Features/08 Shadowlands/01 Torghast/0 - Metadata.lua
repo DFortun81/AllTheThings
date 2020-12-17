@@ -32,7 +32,9 @@ _.ExpansionFeatures =
 				--
 				1801,	-- Fracture Chambers - Layer 2, Floor 1
 				1629,	-- Fracture Chambers - Layer 2, Floor 2
+				1761,	-- Fracture Chambers - Layer 2, Floor 2
 				1805,	-- Fracture Chambers - Layer 2, Floor 4 / Layer 3, Floor 1 / Skoldus Hall - Layer 2, Floor 4 / Skoldus Hall - Layer 3, Floor 1
+				1793,	-- Fracture Chambers - Layer 2, Floor 4
 				--
 				1780,	-- Mort'regar - Layer 1, Floor 1
 				1802,	-- Mort'regar - Layer 1, Floor 2
@@ -57,6 +59,15 @@ _.ExpansionFeatures =
 				1803,	-- Skoldus Hall - Layer 3, Floor 4
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
+				--
+				1792,	-- Upper Reaches - Layer 1, Floor 1
+				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4
+				1782,	-- Upper Reaches - Layer 1, Floor 4
+				1920,	-- Upper Reaches - Layer 1, Floor 5 / Layer 2, Floor 2
+				1787,	-- Upper Reaches - Layer 1, Floor 6
+				--
+				1783,	-- Upper Reaches - Layer 2, Floor 1
+				1789,	-- Upper Reaches - Layer 2, Floor 3
 				--
 				1798,	-- Coldheart - Layer 2, Floor 1 / Layer 3, Floor 1
 				1795,	-- Coldheart - Layer 2, Floor 2 / Layer 3, Floor 2
@@ -85,14 +96,9 @@ _.ExpansionFeatures =
 				1773,	-- TG73_Floor
 				1774,	-- Torghast
 				1778,	-- TG68_Floor
-				1782,	-- Torghast
-				1783,	-- Torghast
 				1784,	-- TG75_Floor
 				1785,	-- TG76_Floor
 				1786,	-- Torghast
-				1787,	-- Torghast
-				1789,	-- Torghast
-				1791,	-- Torghast
 				1794,	-- Torghast
 				1811,	-- Torghast
 				1911,	-- Torghast Entrance

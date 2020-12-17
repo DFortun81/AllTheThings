@@ -60,6 +60,7 @@ i(184769);	-- Pressed Torchlily Blossom
 i(184362);	-- Reflections on Purity
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
+i(183727);	-- Resonance of Conflict
 i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
@@ -107,6 +108,7 @@ i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
+i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
