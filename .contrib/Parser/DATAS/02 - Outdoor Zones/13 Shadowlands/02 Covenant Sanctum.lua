@@ -37,9 +37,12 @@ _.Zones =
 								i(181462),	-- Coordinated Offensive [Monk]
 								i(181740),	-- Evasive Stride [Monk]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
+								i(181495),	-- Jade Bond [Monk]
 								i(182138),	-- Mind Devourer [Priest-Shadow]
 								i(181842),	-- Power Unto Others
+								i(181505),	-- Resplendent Mist [Monk]
 								i(181700),	-- Scalding Brew [Monk]
+								i(181843),	-- Shining Radiance
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]
 								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
@@ -58,7 +61,7 @@ _.Zones =
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
-								i(181740),	-- Evasive Stride [Monk] / Source
+								-- i(181740),	-- Evasive Stride [Monk] / Source
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus

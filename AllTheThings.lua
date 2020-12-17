@@ -756,7 +756,10 @@ GameTooltipModel:Hide();
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
-app.report = function()
+app.report = function(...)
+	if ... then
+		app.print(...);
+	end
 	app.print(app.Version .. ": Please report this to the ATT Discord in #errors! Thanks!");
 end
 
@@ -1002,6 +1005,52 @@ local function CloneData(data)
 		end
 	end
 	return clone;
+end
+-- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
+-- based on the itemID and modID of the item
+local function VerifySourceID(item)
+	-- ignore things which arent items
+	if not item.itemID then return true; end
+	-- ignore items that dont meet the customHarvest range if specified
+	if app.customHarvestMin and app.customHarvestMin > item.itemID then return true; end
+	if app.customHarvestMax and app.customHarvestMax < item.itemID then return true; end
+	-- no source at all, try to get it
+	if not item.s or item.s == 0 then return; end
+	-- unobtainable item, don't change the sourceID
+	if item.u then return true; end
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(item.s);
+	-- no source info or no item for the source
+	-- ignore this, maybe blizz removed a sourceID that we tracked in the past...?
+	if not sourceInfo or not sourceInfo.itemID then
+		print("Invalid SourceID",item.itemID,item.modID,item.s);
+		return;
+	end
+	-- item for the source is different than the current item
+	if sourceInfo.itemID and sourceInfo.itemID ~= item.itemID then
+		print("Inaccurate SourceID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemID,sourceInfo.itemModID);
+		return;
+	end
+	-- ATT modID does not correlate to the TransmogSource ModID!!
+	-- if sourceInfo.itemModID and sourceInfo.itemModID ~= item.modID then
+	-- 	-- print("Item With Bad ModID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemModID);
+	-- 	return;
+	-- end
+	-- check that the group's itemlink still returns the same sourceID as saved in the group
+	if item.link and not item.retries then
+		-- quality below UNCOMMON means no source
+		if item.q and item.q < 2 then return true; end
+		
+		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
+		if linkInfoSourceID and linkInfoSourceID ~= item.s then
+			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
+			return;
+		end
+	-- item has not pulled its link yet, so include it for re-sourcing anyway
+	elseif item.retries then
+		return;
+	end
+	-- at this point the game source information matches the information for this item group
+	return true;
 end
 local function GetSourceID(itemLink, itemID)
 	if IsDressableItem(itemLink) then
@@ -2768,7 +2817,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. (otherSource.modID and (":" .. otherSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -2851,7 +2900,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. (otherSource.modID and (":" .. otherSource.modID) or "") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
 												tinsert(info, { left = text	.. " |CFFFF0000(INVALID BLIZZARD DATA - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
@@ -7021,10 +7070,11 @@ local itemFields = {
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
 				end
 			end
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
+				rawset(t, "q", quality);
 				if icon then rawset(t, "icon", icon); end
 				return link;
 			else
@@ -9690,6 +9740,15 @@ function app:CreateMiniListForGroup(group)
 	if not popout then
 		popout = app:GetWindow(suffix);
 		popout.shouldFullRefresh = true;
+		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
+		-- TODO: modify parser to include known sources for unsorted before commenting this back in
+		-- if not group.s or group.s == 0 then
+		-- 	local s, dressable = GetSourceID(group.text, group.itemID);
+		-- 	if dressable and s and s > 0 then
+		-- 		app.report("Item",group.itemID,group.modID,"is missing SourceID",s);
+		-- 		group.s = s;
+		-- 	end
+		-- end
 		if group.s then
 			popout.data = group;
 			popout.data.collectible = true;
@@ -10104,43 +10163,49 @@ local function SetRowData(self, row, data)
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
 		-- WARNING: DEV ONLY START
-		elseif data.s and data.s < 1 then
+		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
+		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, dressable = GetSourceID(text, data.itemID);
 			if s and s > 0 then
-				data.s = s;
-				if data.collected then
-					data.parent.progress = data.parent.progress + 1;
-				end
-				if not AllTheThingsHarvestItems then
-					AllTheThingsHarvestItems = {};
-				end
-				local item = AllTheThingsHarvestItems[data.itemID];
-				if not item then
-					item = {};
+				data.reSource = nil;
+				-- only save the source if it is different than what we already have
+				if not data.s or data.s < 1 or data.s ~= s then
+					print("SourceID Update",data.text,data.s,"=>",s);
+					data.s = s;
+					if data.collected then
+						data.parent.progress = data.parent.progress + 1;
+					end
+					local item = AllTheThingsHarvestItems[data.itemID];
+					if not item then
+						item = {};
+					end
+					if data.bonusID then
+						local bonuses = item.bonuses;
+						if not bonuses then
+							bonuses = {};
+							item.bonuses = bonuses;
+						end
+						bonuses[data.bonusID] = s;
+					else
+						local mods = item.mods;
+						if not mods then
+							mods = {};
+							item.mods = mods;
+						end
+						mods[data.modID or 1] = s;
+					end
+					-- print("NEW SOURCE ID!",text,s);
 					AllTheThingsHarvestItems[data.itemID] = item;
 				end
-				if data.bonusID then
-					local bonuses = item.bonuses;
-					if not bonuses then
-						bonuses = {};
-						item.bonuses = bonuses;
-					end
-					bonuses[data.bonusID] = s;
-				else
-					local mods = item.mods;
-					if not mods then
-						mods = {};
-						item.mods = mods;
-					end
-					mods[data.modID or 1] = s;
-				end
-				--print("NEW SOURCE ID!", text);
 			else
 				--print("NARP", text);
 				data.s = nil;
+				data.reSource = nil;
 				data.parent.total = data.parent.total - 1;
 			end
+		else
+			data.reSource = nil;
 		-- WARNING: DEV ONLY END
 		end
 		local leftmost = row;
@@ -10291,7 +10356,7 @@ local function Refresh(self)
 					end);
 				end
 			end);
-		elseif self.UpdateDone and rowCount > 5 then
+		elseif self.UpdateDone then
 			StartCoroutine(self:GetName()..":UpdateDone", function()
 				coroutine.yield();
 				StartCoroutine(self:GetName()..":UpdateDoneP2", function()
@@ -12883,11 +12948,13 @@ end);
 app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
+			self.initialized = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.Settings:Get("DebugMode") then
 				app.Settings:ToggleDebugMode();
 			end
-			self.initialized = true;
+			-- clear any previously saved harvest data
+			AllTheThingsHarvestItems = {};
 			local db = {};
 			db.g = {};
 			db.text = "Harvesting All Items";
@@ -12899,22 +12966,23 @@ app:GetWindow("Harvester", UIParent, function(self)
 			db.total = 0;
 			db.back = 1;
 
-			local mID = 1;
+			local mID;
 			local modIDs = {};
 			local bonusIDs = {};
 			app.MaximumItemInfoRetries = 40;
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				for i,group in ipairs(groups) do
-					-- TODO: ignore any ignoreSource as well
-					if (not group.s or group.s == 0 or not C_TransmogCollection_GetSourceInfo(group.s)) then
-						if group.bonusID and not bonusIDs[group.bonusID] then
-							bonusIDs[group.bonusID] = true;
-							tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-						else
-							mID = group.modID or 1;
-							if not modIDs[mID] then
-								modIDs[mID] = true;
-								tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+					if group.bonusID and not bonusIDs[group.bonusID] then
+						bonusIDs[group.bonusID] = true;
+						if (not VerifySourceID(group)) then
+							tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+						end
+					else
+						mID = group.modID or 1;
+						if not modIDs[mID] then
+							modIDs[mID] = true;
+							if (not VerifySourceID(group)) then
+								tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
 							end
 						end
 					end
@@ -12922,6 +12990,9 @@ app:GetWindow("Harvester", UIParent, function(self)
 				wipe(modIDs);
 				wipe(bonusIDs);
 			end
+			-- remove the custom harvest flags
+			app.customHarvestMin = nil;
+			app.customHarvestMax = nil;
 			--[[
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
 				tinsert(db.g, setmetatable({visible = true, artifactID = tonumber(artifactID)}, app.BaseArtifact));
@@ -12936,10 +13007,11 @@ app:GetWindow("Harvester", UIParent, function(self)
 				local total = 0;
 				for i,group in ipairs(db.g) do
 					total = total + 1;
-					if group.s and group.s == 0 or group.artifactID then
+					if (group.s and group.s == 0) or group.artifactID or group.reSource then
 						group.visible = true;
 					else
 						group.visible = false;
+						group.reSource = nil;
 						progress = progress + 1;
 					end
 				end
@@ -12953,6 +13025,10 @@ app:GetWindow("Harvester", UIParent, function(self)
 								table.remove(self.rowData, i);
 							end
 						end
+					else
+						table.sort(AllTheThingsHarvestItems);
+						app.print("Source Harvest Complete!");
+						self.UpdateDone = nil;
 					end
 				end
 				self:Refresh();
@@ -14668,6 +14744,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											end
 											if data.s then
 												item.s = data.s;
+												-- TODO: bad globals...
 												if data.modID == modID then
 													ACKCHUALLY = data.s;
 													item.modID = modID;
@@ -15887,6 +15964,12 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	if cmd then
+		local min,max = strsplit(",",cmd);
+		app.customHarvestMin = tonumber(min);
+		app.customHarvestMax = tonumber(max);
+		app.print("Set Harvest ItemID Bounds:",min,max);
+	end
 	app:GetWindow("Harvester"):Toggle();
 end
 
