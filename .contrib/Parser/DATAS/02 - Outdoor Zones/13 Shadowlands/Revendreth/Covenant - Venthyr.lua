@@ -144,12 +144,11 @@ _.Zones =
 						}),
 						q(60441, {	-- Challenges in Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
-							["repeatable"] = true,
 							["g"] = {
-								i(181557),	-- Favor of the Court
-								i(181476),	-- Tribute of the Wild Hunt [Live Reward]
+								i(181476),	-- Tribute of the Wild Hunt
 							},
 						}),
 						q(60444, {	-- Challenges in Bastion

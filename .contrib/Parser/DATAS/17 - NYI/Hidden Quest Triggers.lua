@@ -951,7 +951,9 @@ _.HiddenQuestTriggers =
 		q(36877),	-- Tracking Quest: Tormmok — taking Tormmok as a bodyguard/wingman
 		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
-		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
+		q(39058, {	-- Critters of Draenor — looks like an unused version of #38299
+			["_drop"] = { "g" },	-- pulls in a couple pet items and causes their sources to list 'unsorted'
+		}),
 		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
 		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
@@ -3213,6 +3215,7 @@ _.HiddenQuestTriggers =
 		q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
 		q(59860),	-- triggered when completing Tea Tales: Lost Sybille
 		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
+		q(62940),	-- opening the crate while on #61619, "Alchemy: Elixir of Humility"
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"

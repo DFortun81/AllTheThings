@@ -25,6 +25,7 @@ i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
+i(181478);	-- Cornucopia of the Winter Court
 i(184151);	-- Counterfeit Ruby Brooch
 i(181548);	-- Darkhaven Soul Lantern
 i(181551);	-- Depleted Stoneborn Heart
@@ -57,6 +58,7 @@ i(181743);	-- Plume of the Archon
 i(184388);	-- Plump Glitterroot
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
+i(184379);	-- Queen's Frozen Tear
 i(184362);	-- Reflections on Purity
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash

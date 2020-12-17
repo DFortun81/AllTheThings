@@ -808,6 +808,127 @@ _.Zones =
 						}),
 						n(-947, {	-- Tier 5: Trials of Humility
 						}),
+						n(VENDORS, {
+							n(171958, {	-- Phixin <Weapon Vendor>
+								["coord"] = { 30.4, 39.6, 1707 },
+								["g"] = {
+									i(177867, {	-- Doubt Tinged Beacon
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(180314, {	-- Doubt Tinged Bludgeon
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(174300, {	-- Doubt Tinged Carver
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(184538, {	-- Doubt Tinged Cleaver
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(174312, {	-- Doubt Tinged Deflector
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(177871, {	-- Doubt Tinged Glaive
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(178972, {	-- Doubt Tinged Greatstaff
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(184540, {	-- Doubt Tinged Longsword
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(184539, {	-- Doubt Tinged Mindpiercer
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(177852, {	-- Doubt Tinged Rapier
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(177847, {	-- Doubt Tinged Slicer
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(177862, {	-- Doubt Tinged Twinblade
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(177857, {	-- Doubt Tinged Warbow
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(184238, {	-- Doubt Tinged Warglaive
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(181323, {	-- Blightclutched Greatstaff
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181326, {	-- Bloodstained Hacksaw
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180954, {	-- Crypt Watcher's Spire
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180959, {	-- Dredger Anklebiter
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179605, {	-- Elderwood Barrier
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180964, {	-- Ember Court Barrier
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179538, {	-- Grove Warden's Maul
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181325, {	-- Marrowfused Dagger
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181331, {	-- Marrowfused Shield
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181328, {	-- Marrowfused Sword
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181330, {	-- Marrowfused Warglaive
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179499, {	-- Nightwillow Barb
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179585, {	-- Nightwillow Shortbow
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179514, {	-- Ripvine Saber
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180960, {	-- Shiny-Metal Topped Basher
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180956, {	-- Axeblade Blunderbuss
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180957, {	-- Batwing Glaive
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180963, {	-- Crypt Keeper's Vessel
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179548, {	-- Elderwood Gavel
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181321, {	-- Gem-Crowned Wand
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(179563, {	-- Heartwood Stem
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181329, {	-- Marrowfused Claymore
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(181327, {	-- Spineforged Tenderizer
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+									i(180955, {	-- Stonewing Halberd
+										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
+									}),
+								},
+							}),
+						}),
 					}),
 					n(-948, {	-- Transport Network
 						n(-3348, {	-- Tier 1: Step of Faith
