@@ -713,6 +713,12 @@ _.Zones =
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,
 							}),
+							q(62051, {	-- Gormling Toss: Spirit Glen
+								["isWorldQuest"] = true,
+								["g"] = {
+									i(184487),	-- Gormling in a Bag (toy)
+								},
+							}),
 							q(61985, {	-- Wake the Sleepers
 								["provider"] = { "n", 173277 },	-- Teendynneetll
 								["coord"] = { 59.7, 52.8, 1565 },
