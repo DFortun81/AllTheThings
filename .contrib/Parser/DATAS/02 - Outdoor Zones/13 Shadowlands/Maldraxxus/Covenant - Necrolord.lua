@@ -450,6 +450,7 @@ _.Zones =
 						["sourceQuests"] = { 62448 },	-- Securing the House
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.6, 50.7, 1698 },
+						["description"] = "Becomes available with Renown 5 (and previous chapters complete)",
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus
 						},
@@ -528,6 +529,7 @@ _.Zones =
 						["sourceQuests"] = { 57648, },	-- The Impossible Plan
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.7, 50.6, 1536 },
+						["description"] = "Becomes available with Renown 8 (and previous chapters complete)",
 					}),
 					q(57778, {	-- The Maldraxxian Job
 						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
@@ -599,6 +601,99 @@ _.Zones =
 							i(182266),	-- Bladesworn Wraith's Armguards
 						},
 					}),					
+
+					-- Necrolord Campaign, Chapter 5: Do Not Forget
+
+					-- Chapter 5 (Do Not Forget), requires Renown 11
+					q(59625, {	-- The Only Cure
+						["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
+						["provider"] = { "n", 161988 },	-- Alexandros Mograine
+						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
+						["description"] = "Becomes available with Renown 11 (and previous chapters complete)",
+					}),
+					q(59648, {	-- Peace by Piece
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 40.7, 55.0, 1533 },	-- Bastion
+					}),
+					q(59650, {	-- No Hesitation, No Surrender
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 40.7, 55.0, 1533 },	-- Bastion
+					}),
+					q(59645, {	-- Death Rains
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
+					}),
+					q(59653, {	-- Don't Cross Courage
+						["sourceQuests"] = {
+							59648,	-- Peace by Piece
+							59650,	-- No Hesitation, No Surrender
+							59645,	-- Death Rains
+						},
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 38.9, 55.2, 1533 },	-- Bastion
+					}),
+					q(59659, {	-- Aerial Absolution
+						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
+						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
+					}),
+					q(59678, {	-- Sustain, In Vain
+						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
+						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
+					}),
+					q(59698, {	-- Wipe the Slate Clean
+						["sourceQuests"] = {
+							59659,	-- Aerial Absolution
+							59678,	-- Sustain, In Vain
+						},
+						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 30.0, 55.2, 1533 },	-- Bastion
+					}),
+					q(59700, {	-- The Last Labor
+						["sourceQuests"] = { 59698 },	-- Wipe the Slate Clean
+						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 30.0, 55.2, 1533 },	-- Bastion
+						["g"] = {
+							i(182271),	-- Bladesworn Conjurer's Gloves
+							i(182253),	-- Bladesworn Harbinger's Crushers
+							i(182280),	-- Bladesworn Tactician's Gauntlets
+							i(182262),	-- Bladesworn Wraith's Stranglers
+						},
+					}),
+					q(59709, {	-- Afterlife Goes On
+						["sourceQuests"] = { 59700 },	-- The Last Labor
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 29.7, 53.1, 1533 },	-- Bastion
+					}),
+					q(59748, {	-- No Peace In Death
+						["sourceQuests"] = { 59709 },	-- Afterlife Goes On
+						["provider"] = { "n", 165795 },	-- Alexandros Mograine <The Ashbringer>
+						["coord"] = { 41.6, 55.1, 1533 },	-- Bastion
+					}),
+					q(59921, {	-- All I Ever Will Be
+						["sourceQuests"] = { 59748 },	-- No Peace In Death
+						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 46.5, 63.0, 1533 },	-- Bastion
+					}),
+					q(59922, {	-- Do Not Forget
+						["sourceQuests"] = { 59921 },	-- All I Ever Will Be
+						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 46.5, 63.0, 1533 },	-- Bastion
+					}),
+					q(59894, {	-- The Golden Dawn
+						["sourceQuests"] = { 59922 },	-- Do Not Forget
+						["provider"] = { "n", 161988 },	-- Alexandros Mograine
+						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(181803),	-- Bladesworn Battle Standard
+						},
+					}),
+					q(61586, {	-- Machinations of War
+						["sourceQuests"] = { 59894 },	-- The Golden Dawn
+						["provider"] = { "n", 166535 },	-- Baroness Draka
+						["coord"] = { 50.4, 70.6, 1536 },	-- Maldraxxus
+					}),
 
 					-- TODO: moved these here from Maldraxxus quests file, but don't think they made it out of beta; commenting out for now
 					--[[
