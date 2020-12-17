@@ -68,6 +68,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61602, {	-- Leatherworking: Stalker's Leather Quiver
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61947, {	-- Lurking In The Shadows
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

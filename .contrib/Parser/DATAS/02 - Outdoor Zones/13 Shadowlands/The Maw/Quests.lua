@@ -327,6 +327,12 @@ _.Zones =
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 				}),
+				q(62461, {	-- Stalking the Warrens
+				--	TODO: may also require 'rule 6 addendum,' not sure
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.6, 1543 },
+				}),
 				q(59770, {	-- Stand as One
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn

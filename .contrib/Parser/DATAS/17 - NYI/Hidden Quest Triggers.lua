@@ -3212,6 +3212,7 @@ _.HiddenQuestTriggers =
 		q(59857),	-- triggered when completing Tea Tales: Vulca
 		q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
 		q(59860),	-- triggered when completing Tea Tales: Lost Sybille
+		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
@@ -3290,6 +3291,8 @@ _.HiddenQuestTriggers =
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
+		q(63178),	-- triggered when using the cypher while on "Rule 6: Concealment is Everything"
+		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 	--	q(63195),	-- triggered randomly in The Maw 12/6/20
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
@@ -3359,10 +3362,10 @@ _.HiddenQuestTriggers =
 		-- Normal
 		-- q(),	-- Shriekwing
 		-- q(),	-- Huntsman Altimor
-		q(62873),	-- Sun King's Salvation
-		q(62874),	-- Artificer Xy'mox
+		q(62873),	-- Sun King's Salvation (also H)
+		q(62874),	-- Artificer Xy'mox (also H)
 		-- q(),	-- Hungering Destroyer
-		q(62877),	-- Lady Inerva Darkvein
+		q(62877),	-- Lady Inerva Darkvein (also H)
 		-- q(),	-- The Council of Blood
 		-- q(),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
@@ -3370,10 +3373,7 @@ _.HiddenQuestTriggers =
 		-- Heroic
 		-- q(),	-- Shriekwing
 		-- q(),	-- Huntsman Altimor
-		q(62873),	-- Sun King's Salvation
-		q(62874),	-- Artificer Xy'mox
 		q(62875),	-- Hungering Destroyer
-		q(62877),	-- Lady Inerva Darkvein
 		-- q(),	-- The Council of Blood
 		q(62878),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals

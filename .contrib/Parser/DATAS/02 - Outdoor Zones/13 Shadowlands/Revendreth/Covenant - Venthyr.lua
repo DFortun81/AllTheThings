@@ -94,7 +94,7 @@ _.Zones =
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.2, 37.7, 1699 },
 							["g"] = {
-								i(181475),	-- Bounty of the Grovewardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60427, {	-- A Call to Bastion
@@ -443,6 +443,13 @@ _.Zones =
 							},
 							["provider"] = { "n", 160956 },	-- Watcher Emil
 							["coord"] = { 65.9, 28.8, 1525 },	-- Revendreth
+							["g"] = {
+								i(180925),	-- Soulbreaker's Ebony Sash
+							--	TODO: verify non-cloth pieces
+								i(180927),	-- Ebony Death Shroud Belt
+								i(180926),	-- Fearstalker's Ebony Belt
+								i(180924),	-- Dread Sentinel's Ebony Girdle
+							},
 						}),
 						q(60935, {	-- Medallion of Avarice
 							["description"] = "Requires Renown 11.",
@@ -464,7 +471,7 @@ _.Zones =
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 							["g"] = {
-								i(180945),	-- Crypt Gargon
+								i(180945),	-- Crypt Gargon (MOUNT!)
 							},
 						}),
 						q(57891, {	-- Mix, Mingle, and Meddle
@@ -642,11 +649,24 @@ _.Zones =
 							["sourceQuests"] = { 58421 },	-- Special Access
 							["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
 							["coord"] = { 77.5, 39.2, 1525 },	-- Revendreth
+							["g"] = {
+								i(180913),	-- Soulbreaker's Ebony Hood
+							--	TODO: verify non-cloth rewards
+								i(180915),	-- Ebony Death Shroud Hood
+								i(180914),	-- Fearstalker's Ebony Helm
+								i(180900),	-- Dread Sentinel's Ebony Headgear
+							},
 						}),
 						q(58325, {	-- Watcher Emil
 							["sourceQuests"] = { 58842 },	-- The Curator
-							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+							["providers"] = {
+								{ "n", 160941 },	-- The Curator <Harvester of Avarice> (initial provider)
+								{ "n", 160942 },	-- Forgotten Soul (if you abandon it, this is in the follow-up quest area)
+							},
+							["coords"] = {
+								{ 72.7, 37.6, 1525 },	-- Revendreth, The Curator
+								{ 66.0, 28.9, 1525 },	-- Revendreth, Forgotten Soul
+							},
 						}),
 
 
@@ -719,6 +739,7 @@ _.Zones =
 								},
 							}),
 							q(61786, {	-- Adventurer: Stonehead
+							--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
 								["sourceQuests"] = { 58444 },	-- Return to Sinfall
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 164741 },	-- Tactician Sakaa
@@ -1130,6 +1151,24 @@ _.Zones =
 							}),
 							n(-952, {	-- Tier 2: Looking Glass
 								["description"] = "Requires Renown 11.",
+								["g"] = {
+									q(60159, {	-- Mirror Attunement: Halls of Atonement
+										["sourceQuests"] = {
+											60060,	-- Mirror Attunement: Pridefall Hamlet
+											60147,	-- Mirror Attunement: The Eternal Terrace
+										},
+										["provider"] = { "n", 167160 },	-- Laurent
+										["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
+									}),
+									q(60147, {	-- Mirror Attunement: The Banewood
+										["sourceQuests"] = {
+											60060,	-- Mirror Attunement: Pridefall Hamlet
+											60147,	-- Mirror Attunement: The Eternal Terrace
+										},
+										["provider"] = { "n", 167160 },	-- Laurent
+										["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
+									}),
+								},
 							}),
 							n(-953, {	-- Tier 3: Mirror's Edge
 								["description"] = "Requires Renown 19.",

@@ -99,9 +99,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61443, {	-- Herbalism: Windswept Rising Glory
+					["requireSkill"] = HERBALISM,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = HERBALISM,
 				}),
 				q(59771, {	-- History of Corruption
 					["isWorldQuest"] = true,

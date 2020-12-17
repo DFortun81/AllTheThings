@@ -103,6 +103,7 @@ i(180715);	-- Bottled Wrath
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
+i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
@@ -345,6 +346,7 @@ i(184635);	-- Adventurer's Mining Cache
 i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
+i(184633);	-- Champion's Meat Cache
 i(171987);	-- Champions of Azeroth Survival Kit
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors

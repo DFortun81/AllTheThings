@@ -247,12 +247,13 @@ _.Zones =
 						i(184108),	-- Vorpal Amulet
 					}
 				}),
-				n(174827, {	-- Gorged Shadehound
-					--["coord"] = { 27.3, 17.3, 1543 },
-					--["questID"] = 61125,	--
-					--["isDaily"] = true,
+				n(174861, {	-- Gorged Shadehound
+					["description"] = "Only up when the active Beastwarrens Hunt is |cFFFFFFFFShadehound|r.",
+					["isWeekly"] = true,	-- technically like demiweekly i guess
+					["questID"] = 63433,
+					["coord"] = { 53.4, 79.3, 1543 },
 					["g"] = {
-						i(184167),	-- Mawsworn Soulhunter
+						i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok

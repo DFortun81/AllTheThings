@@ -285,9 +285,11 @@ _.Zones =
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder
-					["coord"] = { 67.4, 30.6, 1525 },
+					["description"] = "Click on the |cFFFFFFFFCatacombs Cache|r to spawn the rare.",
 					["questID"] = 62252,
 					["isDaily"] = true,
+					["coord"] = { 67.4, 30.6, 1525 },
+					["crs"] = { 162503 },	-- Catacombs Cache
 					["g"] = {
 						crit(24, {	-- Sinstone Hoarder
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
