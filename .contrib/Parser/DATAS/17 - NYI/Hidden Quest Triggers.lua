@@ -3375,7 +3375,7 @@ _.HiddenQuestTriggers =
 		q(62875),	-- Hungering Destroyer
 		q(62877),	-- Lady Inerva Darkvein
 		-- q(),	-- The Council of Blood
-		-- q(),	-- Sludgefist
+		q(62878),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
 		-- q(),	-- Sire Denathrius
 		-- Mythic
