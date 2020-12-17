@@ -21,6 +21,7 @@ _.NeverImplemented =
 	n(-10100, {	-- Shadowlands
 		-- Mounts
 		-- Gear
+		un(NEVER_IMPLEMENTED, i(171401)),	-- ??? (retrieving data)
 		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(174311)),	-- Sinful Gladiator's Guard (existed in beta; doesn't appear to exist in live)
@@ -3816,7 +3817,6 @@ _.NeverImplemented =
 		n(-334, {	-- One-Handed Axes
 			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
 			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
-			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
 			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
@@ -3922,7 +3922,6 @@ _.NeverImplemented =
 		}),
 		n(-332, {	-- Shields
 			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
-			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
 			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward

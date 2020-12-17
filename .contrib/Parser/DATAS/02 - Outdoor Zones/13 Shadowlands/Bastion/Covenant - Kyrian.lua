@@ -1062,7 +1062,201 @@ _.Zones =
 						-- TODO: Fill in coords
 						--["coord"] = { x.x, y.y, zzzz },
 						["g"] = {
-							-- TODO: Add the 51 items that they sell
+							i(181290, {	-- Harmonious Sigil of the Archon
+								["cost"] = { { "c", 1813, 20 } },	-- 20x Reservoir Anima
+							}),
+							i(175248, {	-- Selfless Bearer's Blade
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(177051, {	-- Selfless Bearer's Chest
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177052, {	-- Selfless Bearer's Feet
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174301, {	-- Selfless Bearer's Labrys
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(184239, {	-- Selfless Bearer's Warglaive
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(177868, {	-- Selfless Bearer's Waylight
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(174290, {	-- Selfless Collector's Chestplate
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(180311, {	-- Selfless Collector's Cudgel
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(175249, {	-- Selfless Collector's Javelin
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(174291, {	-- Selfless Collector's Warboots
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174313, {	-- Selfless Collector's Ward
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(179941, {	-- Selfless Forgelite's Boots
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(184537, {	-- Selfless Forgelite's Falchion
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(184535, {	-- Selfless Forgelite's Hatchet
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(177858, {	-- Selfless Forgelite's Longbow
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(179940, {	-- Selfless Forgelite's Vest
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178154, {	-- Selfless Watcher's Chestplate
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(184536, {	-- Selfless Watcher's Edge
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(177863, {	-- Selfless Watcher's Sidearm
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(177853, {	-- Selfless Watcher's Spellsword
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(178970, {	-- Selfless Watcher's Spire
+								["cost"] = {
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
+								},
+							}),
+							i(178155, {	-- Selfless Watcher's Warboots
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177058, {	-- Selfless Bearer's Cloak
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177053, {	-- Selfless Bearer's Hands
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177050, {	-- Selfless Bearer's Head
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177054, {	-- Selfless Bearer's Legs
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177055, {	-- Selfless Bearer's Shoulders
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177056, {	-- Selfless Bearer's Waist
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(177057, {	-- Selfless Bearer's Wrists
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174292, {	-- Selfless Collector's Gauntlets
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174295, {	-- Selfless Collector's Girdle
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174297, {	-- Selfless Collector's Greatcloak
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174289, {	-- Selfless Collector's GreatHelm
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174293, {	-- Selfless Collector's Legguards
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174294, {	-- Selfless Collector's Spaulders
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(174296, {	-- Selfless Collector's Wristguards
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179946, {	-- Selfless Forgelite's Belt
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179944, {	-- Selfless Forgelite's Breeches
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179948, {	-- Selfless Forgelite's Drape
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179942, {	-- Selfless Forgelite's Gloves
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179943, {	-- Selfless Forgelite's Helm
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179945, {	-- Selfless Forgelite's Spaulders
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(179947, {	-- Selfless Forgelite's Wristwraps
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178161, {	-- Selfless Watcher's Cloak
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178156, {	-- Selfless Watcher's Gauntlets
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178159, {	-- Selfless Watcher's Girdle
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178153, {	-- Selfless Watcher's Helm
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178157, {	-- Selfless Watcher's Legguards
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178158, {	-- Selfless Watcher's Shoulders
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
+							i(178160, {	-- Selfless Watcher's Wristwraps
+								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+							}),
 						},
 					}),
 					n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
@@ -1247,7 +1441,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(171981,	{	-- Zeleskos <Pet Vendor>
+					n(171981, {	-- Zeleskos <Pet Vendor>
 						-- TODO: verify items sold and costs as these are probably outdated
 						--["coord"] = { 52.2, 47.0, 1533 },
 						["g"] = {

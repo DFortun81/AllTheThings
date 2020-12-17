@@ -41,6 +41,14 @@ _.Zones =
 					i(181417),	-- Runetender Pants
 					i(181418),	-- Runetender Shoulderguards
 					i(181402),	-- Runetender Tunic
+					i(181400),	-- Sapsteel Breastplate
+					i(181422),	-- Sapsteel Clasp
+					i(181408),	-- Sapsteel Gauntlets
+					i(181414),	-- Sapsteel Legplates
+					i(181419),	-- Sapsteel Pauldrons
+					i(181403),	-- Sapsteel Sabatons
+					i(181427),	-- Sapsteel Vambraces
+					i(181398),	-- Sapsteel Warhelm
 					i(175728),	-- Soulsifter Root
 					i(181457),	-- Wakener's Frond
 					i(179594),	-- Witherscorn Guise

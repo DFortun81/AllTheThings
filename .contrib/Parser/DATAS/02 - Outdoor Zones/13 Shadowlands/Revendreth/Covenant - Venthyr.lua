@@ -1417,9 +1417,195 @@ _.Zones =
 							},
 						}),
 						n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
-							["coord"] = { 70.6, 27.3, 1700 },
+							["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
 							["g"] = {
-								-- TODO: Add the 49 items he sells
+								i(181143, {	-- Claw of the Stoneborn Executioner
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181142, {	-- Dark Blade of the Repentant
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181154, {	-- Dark Bulwark of Death's Vigil
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(180902, {	-- Dread Sentinel's Ebony Chestplate
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180921, {	-- Dread Sentinel's Ebony Spaulders
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(181149, {	-- Dredbat's Dark Guile
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181152, {	-- Dredwing's Ebon Edge
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(180920, {	-- Ebony Death Shroud Spaulders
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180904, {	-- Ebony Death Shroud Vest
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(181153, {	-- Ebony Dredspine Repeater
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181141, {	-- Ebony Soul Piercer
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(180903, {	-- Fearstalker's Ebony Hauberk
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180923, {	-- Fearstalker's Ebony Monnion
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(181144, {	-- Gavel of Dark Diviniaton
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181150, {	-- Sin's Ebon Edge
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181146, {	-- Singed Soul Spire
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181156, {	-- Sinstealer's Dark Foci
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(180922, {	-- Soulbreaker's Ebony Mantle
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180901, {	-- Soulbreaker's Ebony Vestments
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(181151, {	-- Souleater's Ebony Barb
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181148, {	-- Stave of Dark Passions
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(180938, {	-- Dread Sentinel's Ebony Cloak
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180924, {	-- Dread Sentinel's Ebony Girdle
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180905, {	-- Dread Sentinel's Ebony Greatboots
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180910, {	-- Dread Sentinel's Ebony Grips
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180900, {	-- Dread Sentinel's Ebony Headgear
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180916, {	-- Dread Sentinel's Ebony Legguards
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180929, {	-- Dread Sentinel's Ebony Vambraces
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180927, {	-- Ebony Death Shroud Belt
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180931, {	-- Ebony Death Shroud Bindings
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180908, {	-- Ebony Death Shroud Boots
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180919, {	-- Ebony Death Shroud Breeches
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180936, {	-- Ebony Death Shroud Cloak
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180909, {	-- Ebony Death Shroud Gloves
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180915, {	-- Ebony Death Shroud Hood
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180926, {	-- Fearstalker's Ebony Belt
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180930, {	-- Fearstalker's Ebony Bracers
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180937, {	-- Fearstalker's Ebony Cloak
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180912, {	-- Fearstalker's Ebony Gauntlets
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180914, {	-- Fearstalker's Ebony Helm
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180918, {	-- Fearstalker's Ebony Leggings
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180907, {	-- Fearstalker's Ebony Sabatons
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180934, {	-- Soulbreaker's Ebony Drape
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180911, {	-- Soulbreaker's Ebony Handwraps
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180913, {	-- Soulbreaker's Ebony Hood
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180917, {	-- Soulbreaker's Ebony Leggings
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180925, {	-- Soulbreaker's Ebony Sash
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								i(180906, {	-- Soulbreaker's Ebony Slippers
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
+								
+								i(180928, {	-- Soulbreaker's Ebony Wraps
+									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								}),
 							},
 						}),
 						n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
