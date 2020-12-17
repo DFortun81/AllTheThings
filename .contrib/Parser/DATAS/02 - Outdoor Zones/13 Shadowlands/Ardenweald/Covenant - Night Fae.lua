@@ -1051,15 +1051,16 @@ _.Zones =
 					q(62428, {	-- Equine Soul
 						["provider"] = { "i", 182172 },	-- Equine Soul
 					}),
-					--q(xxxxx, {	-- Gryphon Soul
-						--["provider"] = { "i", 182170 },	-- Gryphon Soul
-					--}),
+					q(62426, {	-- Gryphon Soul
+						["description"] = "Drops from rated PvP.",
+						["provider"] = { "i", 182170 },	-- Gryphon Soul
+					}),
 					q(62421, {	-- Gulper Soul
 						["provider"] = { "i", 181314 },	-- Gulper Soul
 					}),
-					--q(xxxxx, {	-- Hippogryph Soul
-						--["provider"] = { "i", 182171 },	-- Hippogryph Soul
-					--}),
+					q(62427, {	-- Hippogryph Soul
+						["provider"] = { "i", 182171 },	-- Hippogryph Soul
+					}),
 					--q(xxxxx, {	-- Hyena Soul
 						--["provider"] = { "i", 182173 },	-- Hyena Soul
 					--}),
@@ -1072,9 +1073,9 @@ _.Zones =
 					q(62430, {	-- Moose Soul
 						["provider"] = { "i", 182175 },	-- Moose Soul
 					}),
-					--q(xxxxx, {	-- Owlcat Soul
-						--["provider"] = { "i", 182177 },	-- Owlcat Soul
-					--}),
+					q(62432, {	-- Owlcat Soul
+						["provider"] = { "i", 182177 },	-- Owlcat Soul
+					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
 						["crs"] = { 169769 },	-- 	Mueh'zala
@@ -1094,23 +1095,24 @@ _.Zones =
 					q(62420, {	-- Snapper Soul
 						["provider"] = { "i", 181313 },	-- Snapper Soul
 					}),
-					--q(xxxxx, {	-- Stag Soul
-						--["provider"] = { "i", 182180 },	-- Stag Soul
-					--}),
+					q(62435, {	-- Stag Soul
+						["provider"] = { "i", 182180 },	-- Stag Soul
+					}),
 					q(62437, {	-- Tiger Soul
 						["provider"] = { "i", 182181 },	-- Tiger Soul
 					}),
 					q(62423, {	-- Ursine Soul
 						["provider"] = { "i", 182166 },	-- Ursine Soul
 					}),
-					--q(xxxxx, {	-- Veilwing Soul
-						--["provider"] = { "i", 182169 },	-- Veilwing Soul
-					--}),
+					q(62425, {	-- Veilwing Soul
+						["provider"] = { "i", 182169 },	-- Veilwing Soul
+					}),
 					q(62439, {	-- Wolfhawk Soul
 						["provider"] = { "i", 182183 },	-- Wolfhawk Soul
 						["crs"] = { 164415 },	-- Skuld Vit
 					}),
 					q(62440, {	-- Wyvern Soul
+						["description"] = "Drops from random battlegrounds.",
 						["provider"] = { "i", 182184 },	-- Wyvern Soul
 					}),
 				}),

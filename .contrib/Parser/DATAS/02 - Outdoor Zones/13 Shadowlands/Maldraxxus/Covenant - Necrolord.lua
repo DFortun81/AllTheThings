@@ -320,6 +320,12 @@ _.Zones =
 						["coord"] = { 46.5, 40.2, 1698 },
 						["description"] = "Becomes available at Renown 7",
 					}),
+					q(61983, {	-- Replenish the Reservoir
+						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },
+						["isWeekly"] = true,
+					}),
 				
 					
 					-- Covenant Intro
@@ -712,14 +718,6 @@ _.Zones =
 						},
 					}),
 					--]]
-
-					-- Weekly Quests
-					q(61983, {	-- Replenish the Reservoir
-						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },
-						["isWeekly"] = true,
-					}),
 				}),
 				n(RARES, {
 				}),

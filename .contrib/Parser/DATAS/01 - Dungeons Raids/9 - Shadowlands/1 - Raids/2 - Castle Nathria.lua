@@ -633,6 +633,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
 						i(183395),	-- Pommel Jewel of Remornia
+						i(182169, {	-- Veilwing Soul
+							["questID"] = 62425,	-- Veilwing Soul
+						}),
 					},
 				}),
 			}),
@@ -855,6 +858,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
 						i(183395),	-- Pommel Jewel of Remornia
+						i(182169, {	-- Veilwing Soul
+							["questID"] = 62425,	-- Veilwing Soul
+						}),
 					},
 				}),
 			}),
