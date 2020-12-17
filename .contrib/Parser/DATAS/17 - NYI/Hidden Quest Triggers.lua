@@ -3258,7 +3258,7 @@ _.HiddenQuestTriggers =
 		q(62515),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59634),	-- triggered upon actually leaving the Ember Court
-		q(59638),	-- triggered when using item #181536, "Guest List Page"
+		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
@@ -3279,6 +3279,10 @@ _.HiddenQuestTriggers =
 		q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
+		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
+		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
+		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
+		q(59639),	-- triggered when leaving Ember Court (week 3)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

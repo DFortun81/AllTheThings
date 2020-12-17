@@ -1045,6 +1045,17 @@ _.Zones =
 										["provider"] = { "n", 165490 },	-- Picky Stefan
 										["coord"] = { 29.0, 44.2, 1525 },	-- Revendreth
 									}),
+									q(62087, {	-- Restock: Imported Dinnerware
+									--	showed up after Week 3 Ember Court
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+										["cost"] = {
+											{ "i", 171831, 1 },	-- 1x Phaedrum Ore
+											{ "i", 177061, 5 },	-- 5x Twilight Bark
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
 									q(62069, {	-- Restock: Sinstones
 									--	showed up after Week 2 Ember Court
 										["repeatable"] = true,	-- it shows up as a blue ?
@@ -1107,7 +1118,7 @@ _.Zones =
 											}),
 										},
 									}),
-									q(61526, {	-- The Ember Court (Week 2)
+									q(61526, {	-- The Ember Court (Week 2 / 3)
 										["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
 										["provider"] = { "n", 164966 },	-- Temel
 										["isDaily"] = true,	-- according to the API
@@ -1121,6 +1132,121 @@ _.Zones =
 								n(-964, {	-- Tier 4: Discerning Taste
 								}),
 								n(-965, {	-- Tier 5: The Professionals
+								}),
+								n(VENDORS, {
+									n(173371, {	-- Lady Rovinette <Ember Court Clothier>
+										["coord"] = { 28.3, 43.7, 1525 },	-- Revendreth
+										["g"] = {
+											i(181055, {	-- Court Death Shroud Belt
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181056, {	-- Court Death Shroud Bindings
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181050, {	-- Court Death Shroud Boots
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181053, {	-- Court Death Shroud Breeches
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181057, {	-- Court Death Shroud Cloak
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181051, {	-- Court Death Shroud Gloves
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181052, {	-- Court Death Shroud Hood
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181054, {	-- Court Death Shroud Spaulders
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181049, {	-- Court Death Shroud Vest
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181014, {	-- Dread Sentinel's Court Chestplate
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181021, {	-- Dread Sentinel's Court Cloak
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181019, {	-- Dread Sentinel's Court Girdle
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181015, {	-- Dread Sentinel's Court Greatboots
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181016, {	-- Dread Sentinel's Court Grips
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181013, {	-- Dread Sentinel's Court Headgear
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181017, {	-- Dread Sentinel's Court Legguards
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181018, {	-- Dread Sentinel's Court Spaulders
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181020, {	-- Dread Sentinel's Court Vambraces
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181082, {	-- Fearstalker's Court Belt
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181083, {	-- Fearstalker's Court Bracers
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181084, {	-- Fearstalker's Court Cloak
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181078, {	-- Fearstalker's Court Gauntlets
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181076, {	-- Fearstalker's Court Hauberk
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181079, {	-- Fearstalker's Court Helm
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181080, {	-- Fearstalker's Court Leggings
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181081, {	-- Fearstalker's Court Monnion
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181077, {	-- Fearstalker's Court Sabatons
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181120, {	-- Soulbreaker's Court Drape
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181114, {	-- Soulbreaker's Court Handwraps
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181115, {	-- Soulbreaker's Court Hood
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181116, {	-- Soulbreaker's Court Leggings
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181117, {	-- Soulbreaker's Court Mantle
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181118, {	-- Soulbreaker's Court Sash
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+											i(181113, {	-- Soulbreaker's Court Slippers
+												["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											}),
+											i(181112, {	-- Soulbreaker's Court Vestments
+												["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											}),
+											i(181119, {	-- Soulbreaker's Court Wraps
+												["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											}),
+										},
+									}),
 								}),
 							},
 						}),
