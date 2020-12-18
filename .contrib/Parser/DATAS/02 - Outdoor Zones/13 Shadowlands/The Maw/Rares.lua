@@ -329,7 +329,7 @@ _.Zones =
 				n(158278, {	-- Nascent Devourer
 					["questID"] = 57573,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 46.0, 74.2, 1543 },
 					["g"] = {
 						crit(13, {	-- Nascent Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -440,9 +440,10 @@ _.Zones =
 					},
 				}),
 				n(172524, {	-- Skittering Broodmother
+					["description"] = "Inside the cave.",
 					["questID"] = 63386,
 					["isDaily"] = true,
-					["coord"] = { 61.7, 77.6, 1543 },
+					["coord"] = { 59.2, 79.9, 1543 },
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message

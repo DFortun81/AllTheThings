@@ -45,7 +45,7 @@ _.ExpansionFeatures =
 				--
 				1806,	-- Mort'regar - Layer 2, Floor 1
 				1800,	-- Mort'regar - Layer 2, Floor 3 / Layer 3, Floor 3
-				1807,	-- Mort'regar - Layer 2, Floor 4
+				1807,	-- Mort'regar - Layer 2, Floor 4 / Upper Reaches - Layer 3, Floor 2
 				1757,	-- Mort'regar - Layer 2, Floor 5
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
@@ -60,14 +60,14 @@ _.ExpansionFeatures =
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
-				1792,	-- Upper Reaches - Layer 1, Floor 1
-				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4
+				1792,	-- Upper Reaches - Layer 1, Floor 1 / Layer 3, Floor 4
+				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4 / Layer 3, Floor 1
 				1782,	-- Upper Reaches - Layer 1, Floor 4
 				1920,	-- Upper Reaches - Layer 1, Floor 5 / Layer 2, Floor 2
-				1787,	-- Upper Reaches - Layer 1, Floor 6
+				1787,	-- Upper Reaches - Layer 1, Floor 6 / Layer 3, Floor 6
 				--
-				1783,	-- Upper Reaches - Layer 2, Floor 1
-				1789,	-- Upper Reaches - Layer 2, Floor 3
+				1783,	-- Upper Reaches - Layer 2, Floor 1 / Layer 3, Floor 5
+				1789,	-- Upper Reaches - Layer 2, Floor 3 / Layer 3, Floor 3
 				--
 				1798,	-- Coldheart - Layer 2, Floor 1 / Layer 3, Floor 1
 				1795,	-- Coldheart - Layer 2, Floor 2 / Layer 3, Floor 2

@@ -3317,7 +3317,7 @@ _.HiddenQuestTriggers =
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
-	--	q(63384),	-- triggered when killing Sanngror
+		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
 		
 		-- Eye of the Jailer Levels
 		q(63382),	-- Mortars/Missiles (1)

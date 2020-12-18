@@ -349,6 +349,7 @@ i(184631);	-- Adventurer's Enchanting Cache
 i(184634);	-- Adventurer's Herbalism Cache
 i(184635);	-- Adventurer's Mining Cache
 i(173791);	-- Baguette
+i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(184632);	-- Champion's Fish Cache
