@@ -240,17 +240,31 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 2",
 				}),
-				--[[
-				q(, {	-- Fracture Chambers, Layer 3
+				q(58188, {	-- Fracture Chambers, Layer 3
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 3",
 				}),
-				q(, {	-- Fracture Chambers, Layer 4
+				q(58189, {	-- Fracture Chambers, Layer 4
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 4",
 				}),
-				--]]
-				
+				q(58190, {	-- Fracture Chambers, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 5",
+				}),
+				q(58191, {	-- Fracture Chambers, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 6",
+				}),
+				q(61971, {	-- Fracture Chambers, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 7",
+				}),
+				q(61972, {	-- Fracture Chambers, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Fracture Chambers, Layer 8",
+				}),
+
 				
 				-- Mort'regar
 				--[[
@@ -326,6 +340,26 @@ _.ExpansionFeatures =
 				q(61131, {	-- Upper Reaches, Layer 3
 					["isWeekly"] = true,
 					["title"] = "Upper Reaches, Layer 3",
+				}),
+				q(61132, {	-- Upper Reaches, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 4",
+				}),
+				q(61133, {	-- Upper Reaches, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 5",
+				}),
+				q(61134, {	-- Upper Reaches, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 6",
+				}),
+				q(61979, {	-- Upper Reaches, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 7",
+				}),
+				q(61980, {	-- Upper Reaches, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Upper Reaches, Layer 8",
 				}),
 			}),
 		}),

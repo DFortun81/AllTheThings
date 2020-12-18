@@ -257,12 +257,15 @@ _.Zones =
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
-				--	["questID"] = ,
+					["questID"] = 63385,
 					["isDaily"] = true,
 					["coord"] = { 60.1, 64.9, 1543 },
 					["g"] = {
 						crit(13, {	-- Houndmaster Vasanok
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(62209, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),

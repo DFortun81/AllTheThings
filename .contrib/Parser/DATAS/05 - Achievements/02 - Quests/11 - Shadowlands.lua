@@ -9,12 +9,30 @@ _.Achievements =
 			ach(14672, {	-- A Bit of This, A Bit of That
 			--	["_quests"] = { 60475 },	-- We'll Workshop It
 				["g"] = {
-					crit(1),		-- Faerie Pomander
-					crit(2),		-- Slumberweb
-					crit(3),		-- Vorkai War Paint
-					crit(4),		-- Gorm Whisperer
-					crit(5),		-- Tirnenn Resilience
-					crit(6),		-- Finnan's Luck
+					crit(1, {	-- Faerie Pomander
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 158345 },	-- Lady of the Falls
+					}),
+					crit(2, {	-- Slumberweb
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165704 },	-- Elder Gwenna
+					}),
+					crit(3, {	-- Vorkai War Paint
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 158519 },	-- Sorcha
+					}),
+					crit(4, {	-- Gorm Whisperer
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165382 },	-- Gormsmith Cavina
+					}),
+					crit(5, {	-- Tirnenn Resilience
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165705 },	-- Groonoomcrooek
+					}),
+					crit(6, {	-- Finnan's Luck
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165703 },	-- Elder Finnan
+					}),
 				},
 			}),
 			ach(14741, {	-- Aerial Ace
