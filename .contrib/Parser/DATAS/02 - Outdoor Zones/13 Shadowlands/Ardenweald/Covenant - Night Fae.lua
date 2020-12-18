@@ -231,6 +231,12 @@ _.Zones =
 						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 						["isDaily"] = true,
 					}),
+					q(61058, {	-- Bound in Dreams
+						-- No idea what triggers this because they added the quest weeks after I already had Dreamweaver.
+						-- If someone quests on a new Night Fae character they might be able to figure out the sourceQuest(s)
+						["provider"] = { "n", 160482 },	-- Dreamweaver
+						["coord"] = { 33.7, 47.6, 1701 },
+					}),
 					q(57459, {	-- Fighting For Fungus
 						["sourceQuests"] = {
 							57455,	-- Mushroom For Improvement
@@ -2002,12 +2008,18 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["g"] = {
+									-- TODO: add items when we know what is in this ensemble
+								},
 							}),
 							i(184115, {	-- Ensemble: Winterborn Raiment
 								["questID"] = 61914,
 								["cost"] = { 
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
+								},
+								["g"] = {
+									-- TODO: add items when we know what is in this ensemble
 								},
 							}),
 							i(184114, {	-- Ensemble: Winterborn Regalia
@@ -2016,12 +2028,18 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["g"] = {
+									-- TODO: add items when we know what is in this ensemble
+								},
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark
 								["questID"] = 61912,
 								["cost"] = { 
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
+								},
+								["g"] = {
+									-- TODO: add items when we know what is in this ensemble
 								},
 							}),
 							i(182174, {	-- Leonine Soul
