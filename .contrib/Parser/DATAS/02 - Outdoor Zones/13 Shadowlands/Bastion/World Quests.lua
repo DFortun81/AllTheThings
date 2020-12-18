@@ -112,6 +112,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
+					["requireSkill"] = JEWELCRAFTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61449, {	-- Leatherworking: Steelhide Leather Harness
 					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,

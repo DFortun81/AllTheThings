@@ -73,6 +73,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61609, {	-- Engineering: Boneclad Stake Launcher
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61867, {	-- Extra Pieces
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

@@ -110,6 +110,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61603, {	-- Skinning: Thick Gormhide
+					["requireSkill"] = SKINNING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60585, {	-- Spriggan Riot
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

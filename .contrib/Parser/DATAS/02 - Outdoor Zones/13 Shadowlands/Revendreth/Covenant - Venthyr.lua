@@ -36,11 +36,11 @@ _.Zones =
 						}),
 						q(60389, {	-- Aiding Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 165302 },	-- Rendle
-							--["coord"] = { , 1525 },
 							["repeatable"] = true,
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181475),	-- 	Tribute of the Grove Wardens
 							},
 						}),
 						q(60394, {	-- Aiding Bastion

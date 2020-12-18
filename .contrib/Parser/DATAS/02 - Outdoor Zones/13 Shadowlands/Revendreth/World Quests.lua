@@ -47,6 +47,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61620, {	-- Blacksmithing: Prideful Manacles
+					["requireSkill"] = BLACKSMITHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60531, {	-- Chosen Champions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

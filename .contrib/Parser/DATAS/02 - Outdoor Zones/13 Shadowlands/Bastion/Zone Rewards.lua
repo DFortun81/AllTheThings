@@ -25,6 +25,7 @@ _.Zones =
 					i(181628),	-- Memoria Glaive
 					i(181634),	-- Memoria Greatblade
 					i(181636),	-- Memoria Spellblade
+					i(184839);	-- Misfiring Centurion Controller
 					i(181631),	-- Requiem Chime
 					i(181632),	-- Requiem Handscythes
 					i(181605),	-- Shieldguard's Breastplate
