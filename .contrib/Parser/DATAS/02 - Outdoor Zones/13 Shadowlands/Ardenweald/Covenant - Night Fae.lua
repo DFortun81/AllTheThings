@@ -713,11 +713,34 @@ _.Zones =
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,
 							}),
+							q(62224, {	-- A Thread of Hope
+								["provider"] = { "n", 173277 },	-- Teendynneetll
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(61717, {	-- Gormling Piper: Tranquil Pools
+								["isWorldQuest"] = true,
+							}),
 							q(62051, {	-- Gormling Toss: Spirit Glen
 								["isWorldQuest"] = true,
 								["g"] = {
 									i(184487),	-- Gormling in a Bag (toy)
 								},
+							}),
+							q(61950, {    -- Hunting the Wilds
+								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(62081, {    -- Return Those Animacones!
+								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(62057, {    -- Those Who Hunger
+								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
 							}),
 							q(61985, {	-- Wake the Sleepers
 								["provider"] = { "n", 173277 },	-- Teendynneetll

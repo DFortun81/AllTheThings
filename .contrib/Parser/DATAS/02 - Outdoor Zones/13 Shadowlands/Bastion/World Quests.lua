@@ -117,6 +117,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59578, {	-- Let's Get Ready to Humble
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61337, {	-- March of the Eternal Protector
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
