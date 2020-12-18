@@ -2977,7 +2977,7 @@ _.HiddenQuestTriggers =
 		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Night Fae
 		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" -- Venthyr
 		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Shared
-		-- q( ),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
+		q(63281),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
 		q(63282),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Necrolord
 		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Night Fae
 		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Venthyr
