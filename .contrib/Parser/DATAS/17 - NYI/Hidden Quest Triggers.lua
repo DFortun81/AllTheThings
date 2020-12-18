@@ -2991,11 +2991,11 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Necrolord
 		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Night Fae
 		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Venthyr
-		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- one of these quests is probably Venthyr-specific and the other is shared
-		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- one of these quests is probably Venthyr-specific and the other is shared
+		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Shared
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Kyrian
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Night Fae
+		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Venthyr
 		q(63238),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Shared
 		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Kyrian
 		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
@@ -3080,7 +3080,7 @@ _.HiddenQuestTriggers =
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
 		q(62191),	-- Cloudfeather Guardian secondary quest
 		q(63424),	-- Cloudtail secondary quest
-		i(61069),	-- Demi the Relic Hoarder secondary quest
+		q(61069),	-- Demi the Relic Hoarder secondary quest
 		q(61082),	-- Echo of Aella kill quest
 		q(62251),	-- Echo of Aella secondary loot quest
 		q(57705),	-- Herculon kill quest
