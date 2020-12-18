@@ -829,7 +829,7 @@ _.Zones =
 								["isWeekly"] = true,
 							}),
 							q(62213, {    -- A Brokered Deal
-								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
+								["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 								["provider"] = { "n", 159238 },    -- Atticus
 								["coord"] = { 55.3, 68.3, 1536 },
 								["isWeekly"] = true,
@@ -869,14 +869,20 @@ _.Zones =
 								["provider"] = { "n", 167150 },	-- Rathan
 								["coord"] = { 55.1, 68.8, 1536 },
 							}),
+							q(60765, {    -- Cure For All Ills
+								["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
+								["provider"] = { "n", 159241 },    -- Roseboil
+								["coord"] = { 55.1, 68.1, 1536 },
+								["isWeekly"] = true,
+							}),
 							q(60291, {    -- Corpse Run
-								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Flytrap
+								["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 								["provider"] = { "n", 158300 },    -- Flytrap
 								["coord"] = { 54.3, 68.1, 1536 },
 								["isWeekly"] = true,
 							}),
 							q(62217, {	-- Field Training
-								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
+								["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 								["provider"] = { "n", 158301 },    -- Marz
 								["coord"] = { 54.2, 68.6, 1536 },
 								["isWeekly"] = true,

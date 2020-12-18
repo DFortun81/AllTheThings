@@ -692,6 +692,18 @@ _.Zones =
 								}),
 							}),
 							n(-917, {	-- Tier 2: Streaming Threads
+								q(61733, {	-- Big Bag of Creepers
+									-- ["sourceQuests"] = { ? },	-- 
+									["provider"] = { "n", 173127 },	-- 
+									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
+									["isDaily"] = true,
+								}),
+								q(61846, {	-- Edict of Doom: Dredbats
+									-- ["sourceQuests"] = { ? },	-- 
+									["provider"] = { "n", 173251 },	-- 
+									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
+									["isDaily"] = true,
+								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
 							}),

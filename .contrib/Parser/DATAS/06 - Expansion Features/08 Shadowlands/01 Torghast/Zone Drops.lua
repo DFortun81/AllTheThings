@@ -12,7 +12,9 @@ _.ExpansionFeatures =
 				i(183193),	-- Jar of Ashes
 				i(183191),	-- Maw Crawler
 				i(183194),	-- Maw Stalker
-				i(183117),	-- Severs
+				i(183117, {	-- Severs
+					["crs"] = { 157122 },	-- Patrician Cromwell
+				}),
 				i(183195),	-- Torghast Lurker
 				i(183115),	-- Tower Deathroach
 

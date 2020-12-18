@@ -221,7 +221,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 4",
 				}),
-				q(59202, {	-- Coldheart Interstitia, Layer 5
+				q(58202, {	-- Coldheart Interstitia, Layer 5
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 5",
 				}),
