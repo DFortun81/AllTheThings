@@ -3001,6 +3001,11 @@ _.HiddenQuestTriggers =
 		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
 		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
 		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
+		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared
+		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
+		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
+		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
+		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3164,6 +3169,7 @@ _.HiddenQuestTriggers =
 		q(60783),	-- triggered when turning in #60722, "Tower Power"
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57578),	-- Triggered after recruiting Marz
+		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -3229,6 +3235,7 @@ _.HiddenQuestTriggers =
 		q(60300),	-- appears to trigger with every anima conduit
 		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
+		q(60299),	-- Channeling Anima Conduit to Pridefall Hamlet
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
