@@ -2996,11 +2996,11 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Kyrian
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Night Fae
-		q(63238),	-- Completing mi(TEMP1), "Campaign: ??" -- one of these quests is probably Venthyr-specific and the other is shared
-		q(63267),	-- Completing mi(TEMP1), "Campaign: ??" -- one of these quests is probably Venthyr-specific and the other is shared
-		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Kyrian
-		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Necrolord
-		-- q( ),	-- Completing mi(TEMP1), "Campaign: ??" -- Night Fae
+		q(63238),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Shared
+		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Kyrian
+		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
+		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
+		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
