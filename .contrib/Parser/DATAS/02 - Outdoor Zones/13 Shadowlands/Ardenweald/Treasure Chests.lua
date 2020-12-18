@@ -67,12 +67,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 42.5, 21.8, 1565 },
 				}),
-				--[[	-- this is the one by Humon'gozz, but it wasn't up
 				o(353329, {	-- Faerie Stash
-					["description"] = "Use the Bounding Shroom at 32.7, 29.8 to reach the treasure.",
-					["coord"] = { 32.8, 30.0, 1565 },
+					["description"] = "Use the Bounding Shroom at |cFFFFFFFF32.7, 29.8|r to reach the treasure.",
+					["questID"] = 60716,
+					["coord"] = { 32.7, 30.0, 1565 },
 				}),
-				--]]
 				o(353683, {	-- Lunarlight Pod
 					-- TODO: not 100% on object ID/coord
 					-- ["coord"] = { 42.5, 21.8, 1565 },

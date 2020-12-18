@@ -32,6 +32,7 @@ i(181551);	-- Depleted Stoneborn Heart
 i(184383);	-- Duskfall Tuber
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
+i(184286);	-- Extinguished Soul Anima
 i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal

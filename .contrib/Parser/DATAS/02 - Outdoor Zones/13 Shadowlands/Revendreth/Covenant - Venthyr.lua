@@ -1086,6 +1086,16 @@ _.Zones =
 											i(176123),	-- RSVP: Kleia and Pelagos
 										},
 									}),
+									q(61105, {	-- RSVP: Plague Deviser Marileth
+									--	showed up after Week 3 Ember Court
+										["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
+										["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 60.4, 71.6, 1536 },
+										["g"] = {
+											i(176124),	-- RSVP: Plague Deviser Marileth
+										},
+									}),
 									q(60916, {	-- RSVP: Stonehead
 									--	was available for me after doing Week 2 Ember Court
 										["provider"] = { "n", 157199 },	-- Stonehead

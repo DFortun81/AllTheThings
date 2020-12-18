@@ -3266,8 +3266,8 @@ _.HiddenQuestTriggers =
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
-		q(59418),	-- triggered when using "RSVP: Kleia and Pelagos"
-		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos"
+		q(59418),	-- triggered when using "RSVP: Kleia and Pelagos" — every time
+		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos" — first time only
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
@@ -3287,6 +3287,8 @@ _.HiddenQuestTriggers =
 		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59639),	-- triggered when leaving Ember Court (week 3)
+		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
+		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3357,11 +3359,12 @@ _.HiddenQuestTriggers =
 		-- Castle Nathria
 		-- LFR
 		-- q(),	-- Shriekwing
-		-- q(),	-- Huntsman Altimor
+		q(62872),	-- Huntsman Altimor
 		-- q(),	-- Sun King's Salvation
 		-- q(),	-- Artificer Xy'mox
-		-- q(),	-- Hungering Destroyer
-		-- q(),	-- Lady Inerva Darkvein
+		q(62875),	-- Hungering Destroyer (also N)
+		q(60680),	-- Lady Inerva Darkvein (maybe completing the full wing? triggered with the one below)
+		q(62877),	-- Lady Inerva Darkvein (also N/H)
 		-- q(),	-- The Council of Blood
 		-- q(),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
@@ -3372,7 +3375,6 @@ _.HiddenQuestTriggers =
 		q(62873),	-- Sun King's Salvation (also H)
 		q(62874),	-- Artificer Xy'mox (also H)
 		-- q(),	-- Hungering Destroyer
-		q(62877),	-- Lady Inerva Darkvein (also H)
 		-- q(),	-- The Council of Blood
 		-- q(),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
@@ -3380,7 +3382,6 @@ _.HiddenQuestTriggers =
 		-- Heroic
 		-- q(),	-- Shriekwing
 		-- q(),	-- Huntsman Altimor
-		q(62875),	-- Hungering Destroyer
 		-- q(),	-- The Council of Blood
 		q(62878),	-- Sludgefist
 		-- q(),	-- Stone Legion Generals
