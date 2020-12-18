@@ -3006,6 +3006,11 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr
+		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
+		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
+		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord
+		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
+		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
