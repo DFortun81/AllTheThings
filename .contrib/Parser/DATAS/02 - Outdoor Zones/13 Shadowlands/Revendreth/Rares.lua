@@ -325,6 +325,7 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180692),	-- Box of Stalker Traps
+						i(180490),	-- Soulstalker's Barbs
 					},
 				}),
 				n(159503, {	-- Stonefist

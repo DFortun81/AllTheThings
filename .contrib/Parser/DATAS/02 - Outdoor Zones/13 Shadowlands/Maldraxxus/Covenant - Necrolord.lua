@@ -869,6 +869,12 @@ _.Zones =
 								["provider"] = { "n", 167150 },	-- Rathan
 								["coord"] = { 55.1, 68.8, 1536 },
 							}),
+							q(60291, {    -- Corpse Run
+								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Flytrap
+								["provider"] = { "n", 158300 },    -- Flytrap
+								["coord"] = { 54.3, 68.1, 1536 },
+								["isWeekly"] = true,
+							}),
 							q(62217, {	-- Field Training
 								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
 								["provider"] = { "n", 158301 },    -- Marz

@@ -25,7 +25,9 @@ _.Zones =
 					["questID"] = 58005,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(4)),	-- Adventurer of Maldraxxus / Collector Kash
+						crit(4, {	-- Collector Kash
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(184188),	-- Collector's Corpse Gambrel
 					},
 				}),
@@ -34,7 +36,9 @@ _.Zones =
 					["questID"] = 58335,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(1)),	-- Adventurer of Maldraxxus / Corspecutter Moroc
+						crit(1, {	-- Corspecutter Moroc
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(184177),	-- Grotesque Goring Pick
 						i(184176),	-- Moroc's Boneslicing Warglaive
 					},
@@ -111,7 +115,9 @@ _.Zones =
 					["questID"] = 58332,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(8)),	-- Adventurer of Maldraxxus / Indomitable Schmitd
+						crit(8, {	-- Indomitable Schmitd
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(182192),	-- Knee-Obstructing Legguards
 					},
 				}),
@@ -308,7 +314,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(10)),	-- Adventurer of Maldraxxus / Thread Mistress Leeda
+						crit(10, {	-- Thread Mistress Leeda
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 					},
 				}),
 				n(162819, { -- Warbringer Mal'Korak
@@ -327,7 +335,9 @@ _.Zones =
 					["questID"] = 50290,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(3)),	-- Adventurer of Maldraxxus / Zargox the Reborn
+						crit(3, {	-- Zargox the Reborn
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 					},
 				}),
 			}),

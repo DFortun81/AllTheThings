@@ -3162,7 +3162,8 @@ _.HiddenQuestTriggers =
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(60783),	-- triggered when turning in #60722, "Tower Power"
-
+		q(57577),	-- Triggered after recruiting Flytrap
+		q(57578),	-- Triggered after recruiting Marz
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
