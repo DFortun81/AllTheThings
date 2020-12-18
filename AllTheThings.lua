@@ -241,7 +241,7 @@ local function RoundNumber(number, decimalPlaces)
 end
 
 local function formatNumericWithCommas(amount)
-  local formatted = amount
+  local formatted, k = amount
   while true do
 	formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
 	if (k==0) then
@@ -1490,7 +1490,7 @@ local function RefreshAchievementCollection()
 	for achievementID=1,maxID,1 do SetAchievementCollectionStatus(achievementID, 1) end
 end
 -- Search Caching
-local searchCache, CreateObject, MergeObject, MergeObjects = {};
+local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -2382,6 +2382,7 @@ ResolveSymbolicLink = function(o)
 					print("Could not find subroutine", sym[2]);
 				end
 			end
+			-- print("Current set of search results",searchResults and #searchResults);
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
@@ -2476,7 +2477,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						-- not for heirlooms
 						and not (group.filterID == 109)
 						-- not for a group which is symbolized
-						and not group.symbolized
+						-- and not group.symbolized
 						then
 						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
 					-- else
@@ -3084,21 +3085,36 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("Merge skip",o.key,o[o.key])
 				MergeObject(root.g, CreateObject(o));
 			end
-			-- Resolve symbolic links within the group
+			-- Resolve symbolic links for the root
+			-- print("Resolve Root",root.key,root[root.key])
+			local rootResolved = ResolveSymbolicLink(root);
+			if rootResolved then
+				-- print("Has symbolic")
+				root.symbolized = true;
+				for k,o in pairs(rootResolved) do
+					MergeObject(root.g, CreateObject(o));
+				end
+			end
+			-- Resolve symbolic links within the Root
 			for i,o in ipairs(root.g) do
+				-- print("Resolve",o.key,o[o.key],o.sym)
 				local symbolicLink = ResolveSymbolicLink(o);
 				if symbolicLink then
+					-- print("Has symbolic")
 					o.symbolized = true;
 					if o.g and #o.g >= 0 then
 						for j=1,#symbolicLink,1 do
+							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
 							MergeObject(o.g, CreateObject(symbolicLink[j]));
 						end
 					else
 						for j=#symbolicLink,1,-1 do
+							-- print("Replace symbolic",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
 							symbolicLink[j] = CreateObject(symbolicLink[j]);
 						end
 						o.g = symbolicLink;
 					end
+					-- print("o.g",o.g and #o.g)
 				end
 			end
 			-- Single group which matches the root, then collapse it
@@ -4168,9 +4184,9 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	cache = SearchForField("questID",questObject.questID);
-	if cache then
-		for _,data in ipairs(cache) do
+	_cache = SearchForField("questID",questObject.questID);
+	if _cache then
+		for _,data in ipairs(_cache) do
 			-- only merge into the WQ quest object properties from an object in cache with this questID
 			if data["questID"] == questObject.questID then
 				for key,value in pairs(data) do
@@ -4205,10 +4221,10 @@ local function PopulateQuestObject(questObject)
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
-			cache = SearchForField("creatureID", qg, true);
-			if cache then
-				for _,data in ipairs(cache) do
-					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
+			_cache = SearchForField("creatureID", qg, true);
+			if _cache then
+				for _,data in ipairs(_cache) do
+					if GetRelativeField(data, "npcID", -16) then	-- Rares only!
 						for key,value in pairs(data) do
 							if not (key == "g" or key == "parent") then
 								questObject[key] = value;
@@ -4251,10 +4267,10 @@ local function PopulateQuestObject(questObject)
 				QuestHarvester:Hide();
 				if link then
 					--print("TODO: Parse Link", link);
-					cache = SearchForLink(link);
-					if cache and #cache > 0 then
+					_cache = SearchForLink(link);
+					if _cache and #_cache > 0 then
 						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-						for _,item in ipairs(cache) do
+						for _,item in ipairs(_cache) do
 							item = CreateObject(item);
 							item.link = link;
 							if modID then item.modID = tonumber(modID); end
@@ -4264,11 +4280,11 @@ local function PopulateQuestObject(questObject)
 				else
 					-- Take the best guess at what this is... No clue.
 					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-					cache = fieldCache["itemID"][itemID];
+					_cache = fieldCache["itemID"][itemID];
 					local item = { ["itemID"] = itemID, ["expanded"] = false, };
-					if cache then
+					if _cache then
 						local ACKCHUALLY;
-						for _,data in ipairs(cache) do
+						for _,data in ipairs(_cache) do
 							if data.f then
 								item.f = data.f;
 							end
@@ -4337,9 +4353,9 @@ local function PopulateQuestObject(questObject)
 			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
 			if currencyID then
 				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-				cache = fieldCache["currencyID"][currencyID];
-				if cache then
-					for _,data in ipairs(cache) do
+				_cache = fieldCache["currencyID"][currencyID];
+				if _cache then
+					for _,data in ipairs(_cache) do
 						if data.f then
 							item.f = data.f;
 						end
@@ -4405,9 +4421,9 @@ end
 -- Returns a mapObject containing basic map information
 local function GetPopulatedMapObject(mapID)
 	local mapObject = { mapID=mapID,g={},progress=0,total=0};
-	cache = fieldCache["mapID"][mapID];
-	if cache then
-		for _,data in ipairs(cache) do
+	_cache = fieldCache["mapID"][mapID];
+	if _cache then
+		for _,data in ipairs(_cache) do
 			if data.mapID and data.icon then
 				mapObject.text = data.text;
 				mapObject.icon = data.icon;
@@ -14682,9 +14698,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Heroic Deeds
 				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = GetPopulatedMapObject(424);
-					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
-					if cache then
-						for _,data in ipairs(cache) do
+					_cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
+					if _cache then
+						for _,data in ipairs(_cache) do
 							data = CreateObject(data);
 							if data.g then
 								for _,entry in ipairs(data.g) do
@@ -14725,10 +14741,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
 								local item = { ["itemID"] = itemID, ["expanded"] = false };
-								cache = fieldCache["itemID"][itemID];
-								if cache then
+								_cache = fieldCache["itemID"][itemID];
+								if _cache then
 									local ACKCHUALLY;
-									for _,data in ipairs(cache) do
+									for _,data in ipairs(_cache) do
 										local lvl;
 										if isTimeWalker then
 											lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
