@@ -724,6 +724,14 @@ _.Zones =
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,
 							}),
+							q(62188, {	-- Catch A Star
+								["provider"] = { "n", 173277 },	-- Teendynneetll
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(62068, {	-- Gormling Piper: Crumbled Ridge
+								["isWorldQuest"] = true,
+							}),
 							q(61717, {	-- Gormling Piper: Tranquil Pools
 								["isWorldQuest"] = true,
 							}),
