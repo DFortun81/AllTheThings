@@ -745,6 +745,7 @@ _.Zones =
 									},
 								}),
 								i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
+									["questID"] = 62012,
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { HUNTER, SHAMAN },
 									["g"] = {
@@ -752,6 +753,7 @@ _.Zones =
 									},
 								}),
 								i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
+									["questID"] = 62011,
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 									["g"] = {
@@ -759,6 +761,7 @@ _.Zones =
 									},
 								}),
 								i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
+									["questID"] = 62013,
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 									["g"] = {
@@ -766,6 +769,7 @@ _.Zones =
 									},
 								}),
 								i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+									["questID"] = 62014,
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { PRIEST, MAGE, WARLOCK },
 									["g"] = {

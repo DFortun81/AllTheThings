@@ -12,17 +12,21 @@ _.Zones =
 					["provider"] = { "n", 158281 },	-- Greeter Mnemis
 					["coord"] = { 41.9, 78.0, 1533 },
 				}),
+				q(59554, {	-- A Fine Journey
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["isBreadcrumb"] = true,
+					["provider"] = { "o", 348558 },	-- Notice
+					["coord"] = { 51.9, 47.7, 1533 },
+				}),
 				q(57711, {	-- A Forge Gone Cold
 					["sourceQuests"] = { 57710 },	-- A Life of Service
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, 1533 },
 				}),
 				q(59674, {	-- A Friendly Rivalry
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						63068,	-- Settling Disputes
-					},
+					["altQuests"] = { 63068 },	-- Settling Disputes
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 57.4, 54.2, 1533 },
 				}),
@@ -244,7 +248,7 @@ _.Zones =
 					["coord"] = { 53.2, 46.4, 1533 },
 				}),
 				q(57529, {	-- Garden in Turmoil
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 158005 },	-- Tamesis
 					["coord"] = { 52.3, 61.3, 1533 },
@@ -293,7 +297,7 @@ _.Zones =
 					["coord"] = { 55.5, 42.0, 1533 },
 				}),
 				q(57549, {	-- In Agthia's Memory
-				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
+					["sourceQuests"] = { 59554 },	-- A Fine Journey
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
 				}),
@@ -615,8 +619,8 @@ _.Zones =
 				}),
 				q(57709, {	-- The Aspirant's Crucible
 					["sourceQuests"] = {
-						57676,	-- The Things That Haunt Us
 						57677,	-- A Soulbind In Need
+						57676,	-- The Things That Haunt Us
 					},
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
@@ -710,8 +714,8 @@ _.Zones =
 				}),
 				q(60466, {	-- The Old Ways
 					["sourceQuests"] = {
+						57677,	-- A Soulbind in Need
 						57676,	-- The Things That Haunt Us
-						57677,	-- A Soulbind In Need
 					},
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
@@ -812,7 +816,7 @@ _.Zones =
 					["coord"] = { 49.1, 72.8, 1533 },
 				}),
 				q(60366, {	-- WANTED: Darkwing
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -820,7 +824,7 @@ _.Zones =
 					},
 				}),
 				q(60315, {	-- WANTED: Gorgebeak
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -904,29 +908,6 @@ _.Zones =
 							i(180633),	-- Grubby
 						},
 					}),
-				}),
-				-- The Temple of Courage
-				-- End of Zone Achievement Quests
-
-				-- An Act of Service
-				q(59554, {	-- A Fine Journey
-					["isBreadcrumb"] = true,
-					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
-					["coord"] = { 51.5, 47.1, 1533 },
-				}),
-				q(60466, {	-- The Old Ways
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-				}),
-				q(62714, {	-- A Gift for An Acolyte
-					["sourceQuests"] = { 60466 },	-- The Old Ways
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-				}),
-				q(62715, {	-- More Than A Gift
-					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
-					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
-					["coord"] = { 53.8, 73.8, 1533 },
 				}),
 				-- Glimmerfly toy/pet questline
 				q(60660, {	-- Flight Test

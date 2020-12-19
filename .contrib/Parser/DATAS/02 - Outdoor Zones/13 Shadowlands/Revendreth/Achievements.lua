@@ -24,12 +24,11 @@ _.Zones =
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 						{ 25.1, 37.5, 1525 },
 						{ 35.0, 35.0, 1525 },
+						{ 56.2, 62.2, 1525 },
 						{ 60.4, 61.1, 1525 },
 						{ 64.0, 62.0, 1525 },
 					},
-					["crs"] = {
-						161015,	-- Dredbat Statue
-					},
+					["crs"] = { 161015 },	-- Dredbat Statue
 				}),
 				ach(14272, {	-- Best Bud With Benefits
 					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead

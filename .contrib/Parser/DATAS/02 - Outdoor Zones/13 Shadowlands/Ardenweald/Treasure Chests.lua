@@ -21,6 +21,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 54.4, 49.7, 1565 },
 				}),
+				o(353324, {	-- Decayed Husk
+					["questID"] = 60714,
+					["isDaily"] = true,
+					["coord"] = { 72.8, 28.9, 1565 },
+				}),
 				o(1278968760, {	-- Decayed Husk
 				--	TODO: verify objectID when data is available
 					["description"] = "The cave entrance is at |cFFFFFFFF54.0, 76.3|r.",
