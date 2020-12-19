@@ -1892,7 +1892,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(162447, {	-- Seed Merchant Daybreak <Queen's Conservatory>
+					n(174403, {	-- Seed Merchant Daybreak <Queen's Conservatory>
 						-- TODO: ["coord"] = { },
 						["g"] = {
 							i(184111, {	-- Ensemble: Conservator's Guise
