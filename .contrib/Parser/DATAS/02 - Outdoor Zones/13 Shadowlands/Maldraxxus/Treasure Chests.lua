@@ -13,10 +13,12 @@ _.Zones =
 					["questID"] = 60772,
 				}),
 				o(352086, {	-- Blackhound Cache
-					["description"] = "|cFF40bf40Necrolord Covenant|r, or can be accessed by placing interactible Toys inside the gate.",
+					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer works as you get teleported out.",
 					["questID"] = 60368,
+					["isDaily"] = true,
 					["coord"] = { 44.0, 39.8, 1536 },
 					["g"] = {
+						i(184318),	-- Battlecry of Krexus
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
@@ -51,6 +53,13 @@ _.Zones =
 					["coord"] = { 54.0, 12.3, 1536 },
 					["g"] = {
 						i(181171),	-- Luminous Webspinner (PET!)
+					},
+				}),
+				spell(343124, {	-- Giant Cache of Epic Treasure
+					["questID"] = 62602,
+					["coord"] = { 41.4, 19.7, 1536 },
+					["g"] = {
+						p(3047),	-- Spinebug
 					},
 				}),
 				o(355037, {	-- Runebound Coffer

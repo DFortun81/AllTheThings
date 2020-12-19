@@ -228,7 +228,8 @@ _.Zones =
 							["cost"] = 17650000,	-- 1,765g
 						}),
 						i(183134, {	-- Illusion: Hunt's Favor
-							["cost"] = 12500000,	-- 1,250g
+							["questID"] = 62965,
+							["cost"] = 12500000,	-- 1,250g							
 						}),
 						i(183242, {	-- Memory of Eonar
 							["cost"] = 11000000,	-- 1,100g

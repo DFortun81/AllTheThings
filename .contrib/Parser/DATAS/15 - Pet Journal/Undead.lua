@@ -82,6 +82,7 @@ _.PetJournal =
 		p(1966),	-- Soulbroken Whelpling
 		p(2397),	-- Spectral Raven
 		p(1730),	-- Spectral Spinner
+		p(3047),	-- Spinebug
 		p(463),		-- Spirit Crab
 		p(1629),	-- Stinkrot
 		p(1146),	-- Stitched Pup

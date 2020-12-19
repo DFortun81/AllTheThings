@@ -7,6 +7,7 @@ _.Toys =
 	n(TREASURES, {
 		i(184418),	-- Acrobatic Steward
 		i(180993),	-- Bat Visage Bobber
+		i(184318),	-- Battlecry of Krexus
 		i(183986),	-- Bondable Sinstone
 		i(183988),	-- Bondable Val'kyr Diadem
 		i(174920),	-- Coifcurl's Close Shave Kit
