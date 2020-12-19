@@ -31,10 +31,12 @@ _.Zones =
 							["description"] = "Can be contained in any of the Calling rewards.",
 							["g"] = {
 								-- guessing any box can reward the same set of conduits
+								i(182105),	-- Astral Protection [Shaman]
 								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance]
 								i(181462),	-- Coordinated Offensive [Monk]
+								i(182110),	-- Crippling Hex [Shaman]
 								i(181740),	-- Evasive Stride [Monk]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(181466),	-- Grounding Breath [Monk]
@@ -46,6 +48,7 @@ _.Zones =
 								i(181843),	-- Shining Radiance
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181640),	-- Tumbling Technique [Monk]
+								i(182107),	-- Vital Accretion [Shaman]
 								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
 							},
 						}),

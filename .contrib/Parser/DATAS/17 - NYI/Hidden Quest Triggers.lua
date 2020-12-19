@@ -3001,14 +3001,14 @@ _.HiddenQuestTriggers =
 		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
 		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
 		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
-		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared
+		q(63243),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared -- TODO: confirm
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
-		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
+		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr -- TODO: confirm
+		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared -- TODO: confirm
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord
+		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord -- TODO: confirm
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
 		
@@ -3171,7 +3171,7 @@ _.HiddenQuestTriggers =
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
-		q(60783),	-- triggered when turning in #60722, "Tower Power"
+		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57578),	-- Triggered after recruiting Marz
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
