@@ -37,6 +37,7 @@ _.Zones =
 								i(181462),	-- Coordinated Offensive [Monk]
 								i(181740),	-- Evasive Stride [Monk]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
+								i(181466),	-- Grounding Breath [Monk]
 								i(181495),	-- Jade Bond [Monk]
 								i(182138),	-- Mind Devourer [Priest-Shadow]
 								i(181842),	-- Power Unto Others

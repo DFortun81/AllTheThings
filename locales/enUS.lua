@@ -4251,6 +4251,7 @@ app.L = {
 		[329805] = "Strange Crystal",
 		[329918] = "Quilboar Treasure",
 		[329919] = "Stolen Supplies",
+		[330627] = "Danger Sign",
 		[332220] = "Glowing Arcane Trunk",
 		[332569] = "Crystalline Cat Figurine",
 		[332570] = "Crystalline Cat Figurine",
