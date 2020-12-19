@@ -1892,6 +1892,78 @@ _.Zones =
 							}),
 						},
 					}),
+					n(162447, {	-- Seed Merchant Daybreak <Queen's Conservatory>
+						-- TODO: ["coord"] = { },
+						["g"] = {
+							i(184111, {	-- Ensemble: Conservator's Guise
+								["questID"] = 61909,
+								["cost"] = { { "c", 1813, 12500 } },
+								["classes"] = { HUNTER, SHAMAN },
+								["g"] = {
+									i(181933),	-- Conservator's Scale Armguards
+									i(181939),	-- Conservator's Scale Boots
+									i(181934),	-- Conservator's Scale Buckle
+									i(181938),	-- Conservator's Scale Gloves
+									i(181880),	-- Conservator's Scale Greatcloak
+									i(181937),	-- Conservator's Scale Guise
+									i(181936),	-- Conservator's Scale Legguards
+									i(181935),	-- Conservator's Scale Spaulders
+									i(181978),	-- Conservator's Scale Vestments
+								},
+							}),
+							i(184112, {	-- Ensemble: Conservator's Raiment
+								["questID"] = 61910,
+								["cost"] = { { "c", 1813, 12500 } },
+								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+								["g"] = {
+									i(179781),	-- Conservator's Leather Anklewraps
+									i(179784),	-- Conservator's Leather Armguards
+									i(179799),	-- Conservator's Leather Belt
+									i(179802),	-- Conservator's Leather Bracers
+									i(179790),	-- Conservator's Leather Britches
+									i(179778),	-- Conservator's Leather Cape
+									i(179787),	-- Conservator's Leather Crest
+									i(179796),	-- Conservator's Leather Mantle
+									i(179775),	-- Conservator's Leather Tunic
+								},
+							}),
+							i(184113, {	-- Ensemble: Conservator's Regalia
+								["questID"] = 61911,
+								["cost"] = { { "c", 1813, 12500 } },
+								["classes"] = { PRIEST, MAGE, WARLOCK },
+								["g"] = {
+									i(179675),	-- Conservator's Silken Amice
+									i(179669),	-- Conservator's Silken Cowl
+									i(179681),	-- Conservator's Silken Cuffs
+									i(179625),	-- Conservator's Silken Drape
+									i(179666),	-- Conservator's Silken Handwraps
+									i(179672),	-- Conservator's Silken Leggings
+									i(179655),	-- Conservator's Silken Raiment
+									i(179662),	-- Conservator's Silken Sandals
+									i(179678),	-- Conservator's Silken Sash
+								},
+							}),
+							i(184110, {	-- Ensemble: Conservator's Warbark
+								["questID"] = 61908,
+								["cost"] = { { "c", 1813, 12500 } },
+								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+								["g"] = {
+									i(179902),	-- Conservator's Ironwood Chestplate
+									i(179633),	-- Conservator's Ironwood Cloak
+									i(179900),	-- Conservator's Ironwood Gauntlets
+									i(179896),	-- Conservator's Ironwood Girdle
+									i(179899),	-- Conservator's Ironwood Greathelm
+									i(179898),	-- Conservator's Ironwood Greaves
+									i(179897),	-- Conservator's Ironwood Pauldrons
+									i(179901),	-- Conservator's Ironwood Sabatons
+									i(179895),	-- Conservator's Ironwood Vambraces
+								},
+							}),
+							i(183521),	-- Temporal Leaf Seeds
+							i(183520),	-- Wild Nightbloom Seeds
+							i(183522),	-- Wildseed Root Grain Seeds
+						},
+					}),
 					n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 46.9, 54.3, 1702 },

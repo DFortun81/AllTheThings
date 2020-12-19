@@ -20,6 +20,7 @@ _.Zones =
 					i(181604),	-- Forgehand's Wristguards
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
+					i(184840),	-- Hymnal of the Path
 					i(181627),	-- Lifepath Crossbow
 					i(181637),	-- Lifepath Hammer
 					i(181628),	-- Memoria Glaive
