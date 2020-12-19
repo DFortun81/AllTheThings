@@ -3241,6 +3241,7 @@ _.HiddenQuestTriggers =
 		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 		q(60299),	-- Channeling Anima Conduit to Pridefall Hamlet
+		q(60305),	-- Channeling Anima Conduit to Court of the Harvesters
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
