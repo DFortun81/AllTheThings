@@ -749,7 +749,15 @@ _.Zones =
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { HUNTER, SHAMAN },
 									["g"] = {
-										-- TODO: Add appearances when we find out what is in this ensemble.
+										i(182515),	-- Stitched Tactician's Bracers
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182516),	-- Stitched Tactician's Drape
+										i(182508),	-- Stitched Tactician's Faceguard
+										i(182511),	-- Stitched Tactician's Gauntlets
+										i(182514),	-- Stitched Tactician's Girdle
+										i(182509),	-- Stitched Tactician's Hauberk
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182513),	-- Stitched Tactician's Spaulders
 									},
 								}),
 								i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
@@ -757,7 +765,15 @@ _.Zones =
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 									["g"] = {
-										-- TODO: Add appearances when we find out what is in this ensemble.
+										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182484),	-- Stitched Harbinger's Crushers
+										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182481),	-- Stitched Harbinger's Greathelm
+										i(182485),	-- Stitched Harbinger's Greaves
+										i(182486),	-- Stitched Harbinger's Pauldrons
+										i(182483),	-- Stitched Harbinger's Stompers
+										i(182488),	-- Stitched Harbinger's Vambraces
+										i(182487),	-- Stitched Harbinger's Warbelt
 									},
 								}),
 								i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
@@ -765,7 +781,15 @@ _.Zones =
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 									["g"] = {
-										-- TODO: Add appearances when we find out what is in this ensemble.
+										i(182497),	-- Stitched Wraith's Armguards
+										i(182496),	-- Stitched Wraith's Belt
+										i(182492),	-- Stitched Wraith's Boots
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182498),	-- Stitched Wraith's Cloak
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182493),	-- Stitched Wraith's Stranglers
+										i(182490),	-- Stitched Wraith's Visage
 									},
 								}),
 								i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
@@ -773,7 +797,15 @@ _.Zones =
 									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 									["classes"] = { PRIEST, MAGE, WARLOCK },
 									["g"] = {
-										-- TODO: Add appearances when we find out what is in this ensemble.
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182505),	-- Stitched Conjurer's Cinch
+										i(182499),	-- Stitched Conjurer's Cowl
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182503),	-- Stitched Conjurer's Leggings
+										i(182504),	-- Stitched Conjurer's Mantle
+										i(182501),	-- Stitched Conjurer's Slippers
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182506),	-- Stitched Conjurer's Wristwraps
 									},
 								}),
 								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
@@ -1430,10 +1462,194 @@ _.Zones =
 							i(184036),	-- Dundae's Hat
 						},
 					}),
-					n(172176, {	-- Slayer Araya <Covenant Armor>
+					n(175311, {	-- Slayer Araya <Covenant Armor>
 						["coord"] = { 57.1, 48.3, 1698 },
 						["g"] = {
-							-- TODO: Add the 48 items he sells
+							i(182276, {	-- Bladesworn Conjurer's Cape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182268, {	-- Bladesworn Conjurer's Cowl
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182274, {	-- Bladesworn Conjurer's Cinch
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182271, {	-- Bladesworn Conjurer's Gloves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182272, {	-- Bladesworn Conjurer's Leggings
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182273, {	-- Bladesworn Conjurer's Mantle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182270, {	-- Bladesworn Conjurer's Slippers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182269, {	-- Bladesworn Conjurer's Tunic
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182275, {	-- Bladesworn Conjurer's Wristwraps
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182251, {	-- Bladesworn Harbinger's Chestguard
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182253, {	-- Bladesworn Harbinger's Crushers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182258, {	-- Bladesworn Harbinger's Greatcloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182250, {	-- Bladesworn Harbinger's Greathelm
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182254, {	-- Bladesworn Harbinger's Greaves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182255, {	-- Bladesworn Harbinger's Pauldrons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182252, {	-- Bladesworn Harbinger's Stompers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182257, {	-- Bladesworn Harbinger's Vambraces
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182256, {	-- Bladesworn Harbinger's Warbelt
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182284, {	-- Bladesworn Tactician's Bracers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182281, {	-- Bladesworn Tactician's Chausses
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182285, {	-- Bladesworn Tactician's Drape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182277, {	-- Bladesworn Tactician's Faceguard
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182280, {	-- Bladesworn Tactician's Gauntlets
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182283, {	-- Bladesworn Tactician's Girdle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182278, {	-- Bladesworn Tactician's Hauberk
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182279, {	-- Bladesworn Tactician's Sabatons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182282, {	-- Bladesworn Tactician's Spaulders
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182266, {	-- Bladesworn Wraith's Armguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182265, {	-- Bladesworn Wraith's Belt
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182261, {	-- Bladesworn Wraith's Boots
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182263, {	-- Bladesworn Wraith's Breeches
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182267, {	-- Bladesworn Wraith's Cloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182260, {	-- Bladesworn Wraith's Jerkin
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182264, {	-- Bladesworn Wraith's Shoulders
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182262, {	-- Bladesworn Wraith's Stranglers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(182259, {	-- Bladesworn Wraith's Visage
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(184665, {	-- Chronicle of Lost Memories
+								["cost"] = { 
+									{ "c", 1885, 35 },
+								},
+							}),
+							i(183451, {	-- Goreforged Barrier
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183456, {	-- Goreforged Blunderbuss
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183946, {	-- Goreforged Chopper
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183459, {	-- Goreforged Cleaver
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183452, {	-- Goreforged Focus
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183457, {	-- Goreforged Greataxe
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183453, {	-- Goreforged Mace
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183458, {	-- Goreforged Polearm
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183450, {	-- Goreforged Shank
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183460, {	-- Goreforged Sickle
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183455, {	-- Goreforged Staff
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(183454, {	-- Goreforged Warglaive
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
 						},
 					}),
 					n(172176, {	-- Su Zettai <Renown Quartermaster>
