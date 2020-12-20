@@ -134,7 +134,7 @@ _.Zones =
 				n(158025, {	-- Darklord Taraxis
 					["questID"] = 62282,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 49.0, 81.6, 1543 },
 					["g"] = {
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead

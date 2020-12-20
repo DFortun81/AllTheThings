@@ -809,9 +809,118 @@ _.Zones =
 						n(-947, {	-- Tier 5: Trials of Humility
 						}),
 						n(VENDORS, {
-							n(171958, {	-- Phixin <Weapon Vendor>
-								["coord"] = { 30.4, 39.6, 1707 },
+							n(171973, {	-- Binkiros <Mount Vendor>
+								["coord"] = { 31.6, 48.0, 1707 },
 								["g"] = {
+									i(180768, {	-- Eternal Phalynx of Humility
+										["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+									}),
+									i(180767, {	-- Eternal Phalynx of Loyalty
+										["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+									}),
+									i(181300, {	-- Gruesome Flayedwing
+										["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+									}),
+									i(180726, {	-- Pale Acidmaw
+										["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+									}),
+									i(181316, {	-- Silvertip Dreadwing
+										["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+									}),
+								},
+							}),
+							n(171959, {	-- Orluna <Armor Vendor>
+								["coord"] = { 27.1, 40.9, 1707 },
+								["g"] = {
+									i(177222, {	-- Discordant Bearer's Cloak
+										["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+									}),
+									i(177683, {	-- Discordant Collector's Cloak
+										["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+									}),
+									i(179967, {	-- Discordant Forgelite's Cloak
+										["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+									}),
+									i(181292, {	-- Discordant Sigil of the Archon
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(178205, {	-- Discordant Watcher's Cloak
+										["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+									}),
+									i(181296, {	-- Discordant Wings of the Ascended
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(184498, {	-- Ensemble: Chain of the Discordant
+										["cost"] = { { "c", 1813, 12500 } },	-- 12,500x Reservoir Anima
+										["g"] = {
+											i(179965),	-- Discordant Forgelite's Belt
+											i(179960),	-- Discordant Forgelite's Boots
+											i(179967),	-- Discordant Forgelite's Cloak
+											i(179963),	-- Discordant Forgelite's Breeches
+											i(179961),	-- Discordant Forgelite's Gloves
+											i(179962),	-- Discordant Forgelite's Helm
+											i(179964),	-- Discordant Forgelite's Spaulders
+											i(179959),	-- Discordant Forgelite's Vest
+											i(179966),	-- Discordant Forgelite's Wristwraps
+										},
+									}),
+									i(184497, {	-- Ensemble: Garb of the Discordant
+										["cost"] = { { "c", 1813, 12500 } },	-- 12,500x Reservoir Anima
+										["g"] = {
+											i(177213),	-- Discordant Bearer's Chestplate
+											i(177222),	-- Discordant Bearer's Cloak
+											i(177215),	-- Discordant Bearer's Gauntlets
+											i(177218),	-- Discordant Bearer's Girdle
+											i(177212),	-- Discordant Bearer's Helm
+											i(177216),	-- Discordant Bearer's Legguards
+											i(177217),	-- Discordant Bearer's Shoulders
+											i(177214),	-- Discordant Bearer's Warboots
+											i(177219),	-- Discordant Bearer's Wristwraps
+										},
+									}),
+									i(184496, {	-- Ensemble: Vestments of the Discordant
+										["cost"] = { { "c", 1813, 12500 } },	-- 12,500x Reservoir Anima
+										["g"] = {
+											i(178198),	-- Discordant Watcher's Chest
+											i(178205),	-- Discordant Watcher's Cloak
+											i(178199),	-- Discordant Watcher's Feet
+											i(178200),	-- Discordant Watcher's Hands
+											i(178197),	-- Discordant Watcher's Head
+											i(178201),	-- Discordant Watcher's Legs
+											i(178202),	-- Discordant Watcher's Shoulders
+											i(178203),	-- Discordant Watcher's Waist
+											i(178204),	-- Discordant Watcher's Wrists
+										},
+									}),
+									i(184499, {	-- Ensemble: Warplate of the Discordant PLATE
+										["cost"] = { { "c", 1813, 12500 } },	-- 12,500x Reservoir Anima
+										["g"] = {
+											i(177676),	-- Discordant Collector's Chestplate
+											i(177683),	-- Discordant Collector's Cloak
+											i(177678),	-- Discordant Collector's Gauntlets
+											i(177681),	-- Discordant Collector's Girdle
+											i(177675),	-- Discordant Collector's Helm
+											i(177679),	-- Discordant Collector's Legguards
+											i(177680),	-- Discordant Collector's Shoulders
+											i(177677),	-- Discordant Collector's Warboots
+											i(177682),	-- Discordant Collector's Wristwraps
+										},
+									}),
+									i(181289, {	-- Halo of the Discordant
+										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+								},
+							}),
+							n(171958, {	-- Phixin <Weapon Vendor>
+								["coord"] = { 30.4, 39.7, 1707 },
+								["g"] = {
+								--	TODO: verify prices of items marked with * (these items are not on wowhead but were reported as coming from this vendor by nohh on discord.  i think the ability to purchase the items is unlocked via completing specific PoA achievements, so they may not be visible for all kyrians immediately)
+									i(181322, {	-- Bonebound Tome*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(181320, {	-- Bonejowl Ballista*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
 									i(177867, {	-- Doubt Tinged Beacon
 										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
 									}),
@@ -853,6 +962,24 @@ _.Zones =
 									}),
 									i(184238, {	-- Doubt Tinged Warglaive
 										["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+									}),
+									i(179509, {	-- Grove Warden's Edge*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(179533, {	-- Grove Warden's Harvester*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(180958, {	-- Redelev House Foil*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(180961, {	-- Silver-Bladed Ritual Dagger*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(179516, {	-- Songwood Staff*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
+									}),
+									i(180962, {	-- Sterling-Silver Cudgel*
+									--	["cost"] = { { "c", 1813,  } },	-- x Reservoir Anima
 									}),
 									i(181323, {	-- Blightclutched Greatstaff
 										["cost"] = { { "c", 1813, 500 } },	-- 500x Reservoir Anima
@@ -928,6 +1055,29 @@ _.Zones =
 									}),
 								},
 							}),
+							n(171981, {	-- Zeleskos <Pet Vendor>
+								["coord"] = { 31.1, 47.3, 1707 },
+								["g"] = {
+									i(181315, {	-- Bloodfeaster Spiderling
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+									i(181168, {	-- Corpulent Bonetusk
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+									i(180628, {	-- Pearlwing Heron
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+									i(180814, {	-- Sable
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+									i(184398, {	-- Steward Featherling
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+									i(180603, {	-- Violet Dredwing Pup
+										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+									}),
+								},
+							}),
 						}),
 					}),
 					n(-948, {	-- Transport Network
@@ -969,17 +1119,17 @@ _.Zones =
 						-- TODO: Fill in coords
 						--["coord"] = { x.x, y.y, zzzz },
 						-- TODO: Add the other 29 items that he sells
-						i(180762, {	-- Phalynx of Humility (MOUNT)
+						i(180762, {	-- Phalynx of Humility (MOUNT!)
 							["cost"] = { 
 								{ "c", 1813, 5000 },
 								{ "c", 1885, 100 },
 							},
 						}),
-						i(180764, {	-- Phalynx of Purity (MOUNT)
+						i(180764, {	-- Phalynx of Purity (MOUNT!)
 							["cost"] = { { "c", 1813, 5000 } },
 						}),
-						i(184353),	-- Kyrian Hearthstone (TOY)
-						i(184350),	-- Ruffle (PET)
+						i(184353),	-- Kyrian Hearthstone (TOY!)
+						i(184350),	-- Ruffle (PET!)
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
 						-- TODO: Fill in coords

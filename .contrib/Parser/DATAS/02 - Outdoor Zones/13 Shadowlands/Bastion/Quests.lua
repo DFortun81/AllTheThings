@@ -259,20 +259,7 @@ _.Zones =
 					["coord"] = { 54.4, 64.2, 1533 },
 				}),
 				q(62718, {	-- Hero's Rest
-					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
-						57715,	-- The Archon's Answer (Deathknight)
-						60217,	-- The Archon's Answer (Demonhunter)
-						60218,	-- The Archon's Answer (Druid)
-						60219,	-- The Archon's Answer (Hunter)
-						60220,	-- The Archon's Answer (Mage)
-						60221,	-- The Archon's Answer (Monk)
-						60222,	-- The Archon's Answer (Paladin)
-						60223,	-- The Archon's Answer (Priest)
-						60224,	-- The Archon's Answer (Rogue)
-						60225,	-- The Archon's Answer (Shaman)
-						60226,	-- The Archon's Answer (Warlock)
-						60229,	-- The Archon's Answer (Warror)
-					},
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
 				}),
@@ -798,7 +785,7 @@ _.Zones =
 					["coord"] = { 42.2, 78.1, 1533 },
 				}),
 				q(60316, {	-- WANTED: Altered Sentinel
-					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
+					["sourceQuests"] = {
 						57715,	-- The Archon's Answer (Deathknight)
 						60217,	-- The Archon's Answer (Demonhunter)
 						60218,	-- The Archon's Answer (Druid)

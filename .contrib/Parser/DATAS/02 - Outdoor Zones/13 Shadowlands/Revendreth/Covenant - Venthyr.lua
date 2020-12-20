@@ -1377,189 +1377,237 @@ _.Zones =
 						n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
 							["coord"] = { 54.0, 25.6, 1699 },
 							["g"] = {
-								i(180461, {	-- Horrid Dredwing (MOUNT)
+								i(180461, {	-- Horrid Dredwing (MOUNT!)
 									["cost"] = { 
-										{ "c", 1813, 5000 },
-										{ "c", 1885, 100 },
+										{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
+										{ "c", 1885, 100 },		-- 100x Grateful Offering
+									},
+								}),
+								i(183715, {	-- Sinfall Gargon (MOUNT!)
+									["cost"] = { { "c", 1813, 5000 } },
+								}),
+								i(181555, {	-- Sinheart (PET!)
+									["cost"] = {
+										{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+										{ "c", 1885, 30 },		-- 30x Grateful Offering
+									},
+								}),
+								i(183716, {	-- Venthyr Sinstone (TOY!)
+									["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+								}),
+								i(182204, {	-- Illusion: Sinwrath
+									["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+								}),
+								i(181046, {	-- Crimson Death Shroud Belt
+									["cost"] = {
+										{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
+										{ "c", 1885, 25 },		-- 25x Grateful Offering
+									},
+								}),
+								i(181047, {	-- Crimson Death Shroud Bindings
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181042, {	-- Crimson Death Shroud Gloves
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181048, {	-- Crimson Death Shroud Wrap
+									["cost"] = {
+										{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181010, {	-- Dread Sentinel's Crimson Girdle
+									["cost"] = {
+										{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
+										{ "c", 1885, 25 },		-- 25x Grateful Offering
+									},
+								}),
+								i(181007, {	-- Dread Sentinel's Crimson Grips
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181011, {	-- Dread Sentinel's Crimson Vambraces
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181073, {	-- Fearstalker's Crimson Belt
+									["cost"] = {
+										{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
+										{ "c", 1885, 25 },		-- 25x Grateful Offering
+									},
+								}),
+								i(181074, {	-- Fearstalker's Crimson Bracers
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181069, {	-- Fearstalker's Crimson Gauntlets
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(183712, {	-- Gleaming Crypt Keeper's Mantle
+									["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
+								}),
+								i(183705, {	-- Mantle of Crimson Blades
+									["cost"] = {
+										{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+										{ "c", 1885, 40 },		-- 40x Grateful Offering
+									},
+								}),
+								i(181102, {	-- Soulbreaker's Crimson Drape
+									["cost"] = {
+										{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+										{ "c", 1885, 10 },		-- 10x Grateful Offering
+									},
+								}),
+								i(181096, {	-- Soulbreaker's Crimson Handwraps
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
+									},
+								}),
+								i(181100, {	-- Soulbreaker's Crimson Sash
+									["cost"] = {
+										{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
+										{ "c", 1885, 25 },		-- 25x Grateful Offering
+									},
+								}),
+								i(181101, {	-- Soulbreaker's Crimson Wraps
+									["cost"] = {
+										{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+										{ "c", 1885, 15 },		-- 15x Grateful Offering
 									},
 								}),
 								-- TODO: these costs and items below are outdated, need to verify all
-								i(183715, {	-- Sinfall Gargon
-									["cost"] = { { "c", 1816, 2000 } },
+								i(182332, {	-- Gravestone Battle Armor
+									["cost"] = { { "c", 1813, 3000 } },
 								}),
 								i(182332, {	-- Gravestone Battle Armor
-									["cost"] = { { "c", 1816, 3000 } },
-								}),
-								i(183712, {	-- Gleaming Crypt Keeper's Mantle
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(183705, {	-- Mantle of Crimson Blades
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(182204, {	-- Illusion: Sinwrath
-									["cost"] = { { "c", 1816, 2000 } },
-								}),
-								i(182332, {	-- Gravestone Battle Armor
-									["cost"] = { { "c", 1816, 3000 } },
+									["cost"] = { { "c", 1813, 3000 } },
 								}),
 								i(183715, {	-- Sinfall Gargon
-									["cost"] = { { "c", 1816, 2000 } },
+									["cost"] = { { "c", 1813, 2000 } },
 								}),
 								i(181004, {	-- Dread Sentinel's Crimson Headgear
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181005, {	-- Dread Sentinel's Crimson Chestplate
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181006, {	-- Dread Sentinel's Crimson Greatboots
-									["cost"] = { { "c", 1816, 1500 } },
-								}),
-								i(181007, {	-- Dread Sentinel's Crimson Grips
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181008, {	-- Dread Sentinel's Crimson Legguards
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181009, {	-- Dread Sentinel's Crimson Spaulders
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(181010, {	-- Dread Sentinel's Crimson Girdle
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181011, {	-- Dread Sentinel's Crimson Vambraces
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181012, {	-- Dread Sentinel's Crimson Cloak
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181040, {	-- Crimson Death Shroud Vest
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181041, {	-- Crimson Death Shroud Boots
-									["cost"] = { { "c", 1816, 1500 } },
-								}),
-								i(181042, {	-- Crimson Death Shroud Gloves
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181043, {	-- Crimson Death Shroud Hood
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181044, {	-- Crimson Death Shroud Breeches
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181045, {	-- Crimson Death Shroud Spaulders
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(181046, {	-- Crimson Death Shroud Belt
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181047, {	-- Crimson Death Shroud Bindings
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181048, {	-- Crimson Death Shroud Wrap
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181067, {	-- Fearstalker's Crimson Hauberk
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181068, {	-- Fearstalker's Crimson Sabatons
-									["cost"] = { { "c", 1816, 1500 } },
-								}),
-								i(181069, {	-- Fearstalker's Crimson Gauntlets
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181070, {	-- Fearstalker's Crimson Helm
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181071, {	-- Fearstalker's Crimson Leggings
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181072, {	-- Fearstalker's Crimson Monnion
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(181073, {	-- Fearstalker's Crimson Belt
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181074, {	-- Fearstalker's Crimson Bracers
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181075, {	-- Fearstalker's Crimson Cloak
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181094, {	-- Soulbreaker's Crimson Vestments
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181095, {	-- Soulbreaker's Crimson Slippers
-									["cost"] = { { "c", 1816, 1500 } },
-								}),
-								i(181096, {	-- Soulbreaker's Crimson Handwraps
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181097, {	-- Soulbreaker's Crimson Hood
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(181098, {	-- Soulbreaker's Crimson Leggings
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 1500 } },
 								}),
 								i(181099, {	-- Soulbreaker's Crimson Mantle
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(181100, {	-- Soulbreaker's Crimson Sash
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181101, {	-- Soulbreaker's Crimson Wraps
-									["cost"] = { { "c", 1816, 1000 } },
-								}),
-								i(181102, {	-- Soulbreaker's Crimson Drape
-									["cost"] = { { "c", 1816, 1500 } },
-								}),
-								i(181555, {	-- Sinheart
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182427, {	-- Sinfall Heartpiercer
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182428, {	-- Gilded Sinfall Bastard Sword
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182429, {	-- Claw of the Gilded Stoneborn
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182430, {	-- Sinseeker's Dredwing Gavel
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182429, {	-- Claw of the Gilded Stoneborn
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182431, {	-- Gilded Sineater's Staff
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182432, {	-- Barbedged Dredblade
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182434, {	-- Crimson-Edged Wingblade
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182435, {	-- Crimsonbarbed Sinbreaker
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182436, {	-- Crimson Dredwing Glaive
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182437, {	-- Screecher's Crimson Spinethrower
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182438, {	-- Sinfall Gilded Bulwark
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(182439, {	-- Sinheart Spell Foci
-									["cost"] = { { "c", 1816, 2500 } },
-								}),
-								i(183716, {	-- Venthyr Sinstone
-									["cost"] = { { "c", 1816, 1500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 								i(183975, {	-- Sinfall Ceremonial Blade
-									["cost"] = { { "c", 1816, 2500 } },
+									["cost"] = { { "c", 1813, 2500 } },
 								}),
 							},
 						}),

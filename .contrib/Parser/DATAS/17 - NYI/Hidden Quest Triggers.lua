@@ -3212,6 +3212,7 @@ _.HiddenQuestTriggers =
 		q(62660),	-- triggered when turning in #58075, Favor: Dredger's Toolkit
 		q(62663),	-- triggered when turning in #58081, Favor: Love and Terror
 		q(60845),	-- triggered when looting "Bottle of Redelav Wine" (for Favor: Bottle of Redelav Wine)
+		q(60853),	-- triggered when looting "Portrait of the Sire" (for Favor: Portrait of the Sire)
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
