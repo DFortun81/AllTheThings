@@ -692,6 +692,12 @@ _.Zones =
 								}),
 							}),
 							n(-917, {	-- Tier 2: Streaming Threads
+								q(61735, {	-- Awaken Our Allies
+									-- ["sourceQuests"] = { ? },	-- 
+									["provider"] = { "n", 173038 },	-- 
+									["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
+									["isDaily"] = true,
+								}),
 								q(61733, {	-- Big Bag of Creepers
 									-- ["sourceQuests"] = { ? },	-- 
 									["provider"] = { "n", 173127 },	-- 
@@ -707,6 +713,12 @@ _.Zones =
 								q(61848, {	-- Edict of Doom: Sinstone Golems
 									-- ["sourceQuests"] = { ? },	-- 
 									["provider"] = { "n", 173629 },	-- 
+									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
+									["isDaily"] = true,
+								}),
+								q(61845, {	-- Edict of Doom: Devourers
+									-- ["sourceQuests"] = { ? },	-- 
+									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 									["isDaily"] = true,
 								}),
