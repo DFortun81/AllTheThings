@@ -704,6 +704,12 @@ _.Zones =
 									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
 									["isDaily"] = true,
 								}),
+								q(61848, {	-- Edict of Doom: Sinstone Golems
+									-- ["sourceQuests"] = { ? },	-- 
+									["provider"] = { "n", 173629 },	-- 
+									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
+									["isDaily"] = true,
+								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
 							}),
