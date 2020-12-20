@@ -837,7 +837,6 @@ _.Zones =
 								filter(100, {	-- Mounts
 									["coord"] = { 43.4, 33.6, 1565 },
 									["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth fully incubated, you can loot it which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-									-- TODO: use objectID? o(350978),	-- Queen's Conservatory Cache
 									["g"] = {
 										i(181317),	-- Dauntless Duskrunner
 										i(180723),	-- Enchanted Wakener's Runestag
@@ -2088,8 +2087,18 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["classes"] = { HUNTER, SHAMAN },
 								["g"] = {
-									-- TODO: add items when we know what is in this ensemble
+									i(181917),	-- Winterborn Armbands
+									i(181918),	-- Winterborn Buckle
+									i(181923),	-- Winterborn Footguards
+									i(181922),	-- Winterborn Gloves
+									i(181878),	-- Winterborn Greatcloak
+									i(181921),	-- Winterborn Guise
+									i(181924),	-- Winterborn Hauberk
+									i(181920),	-- Winterborn Legguards
+									i(181977),	-- Winterborn Raiment
+									i(181919),	-- Winterborn Spaulders
 								},
 							}),
 							i(184115, {	-- Ensemble: Winterborn Raiment
@@ -2098,8 +2107,18 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 								["g"] = {
-									-- TODO: add items when we know what is in this ensemble
+									i(179783),	-- Winterborn Anklewraps
+									i(179786),	-- Winterborn Armguards
+									i(179801),	-- Winterborn Belt
+									i(179804),	-- Winterborn Bracers
+									i(179792),	-- Winterborn Britches
+									i(179780),	-- Winterborn Cape
+									i(179777),	-- Winterborn Chestguard
+									i(179789),	-- Winterborn Crest
+									i(179798),	-- Winterborn Mantle
+									i(179795),	-- Winterborn Vestment
 								},
 							}),
 							i(184114, {	-- Ensemble: Winterborn Regalia
@@ -2108,8 +2127,18 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["g"] = {
-									-- TODO: add items when we know what is in this ensemble
+									i(179676),	-- Winterborn Amice
+									i(179670),	-- Winterborn Cowl
+									i(179682),	-- Winterborn Cuffs
+									i(179626),	-- Winterborn Drape
+									i(179667),	-- Winterborn Handwraps
+									i(179673),	-- Winterborn Leggings
+									i(179656),	-- Winterborn Robes
+									i(179663),	-- Winterborn Sandals
+									i(179679),	-- Winterborn Sash
+									i(179660),	-- Winterborn Tunic
 								},
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark
@@ -2118,8 +2147,17 @@ _.Zones =
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
 								},
+								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
-									-- TODO: add items when we know what is in this ensemble
+									i(179918),	-- Winterborn Chestplate
+									i(179635),	-- Winterborn Cloak
+									i(179916),	-- Winterborn Gauntlets
+									i(179912),	-- Winterborn Girdle
+									i(179915),	-- Winterborn Greathelm
+									i(179914),	-- Winterborn Greaves
+									i(179913),	-- Winterborn Pauldrons
+									i(179917),	-- Winterborn Sabatons
+									i(179911),	-- Winterborn Vambraces
 								},
 							}),
 							i(182174, {	-- Leonine Soul
