@@ -2993,7 +2993,7 @@ _.HiddenQuestTriggers =
 		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Venthyr
 		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Shared
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Kyrian
-		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
+		q(63322),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
 		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Night Fae
 		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Venthyr
 		q(63238),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Shared
