@@ -706,7 +706,7 @@ _.ExpansionFeatures =
 							q(37228, {	-- A Fruitful Proposition
 								["provider"] = { "n", 87991 },	-- Cro Threadstrong
 								["sourceQuests"] = { 37152 },	-- Cro's Revenge
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -715,7 +715,7 @@ _.ExpansionFeatures =
 							q(37237, {	-- A Hero's Quest is Never Complete
 								["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 								["sourceQuests"] = { 37162 },	-- Damsels and Dragons
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -724,7 +724,7 @@ _.ExpansionFeatures =
 							q(37235, {	-- A Plea to the Sky
 								["provider"] = { "n", 87999 },	--  Skylord Omnuron
 								["sourceQuests"] = { 37159 },	-- Avian's Request
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -733,7 +733,7 @@ _.ExpansionFeatures =
 							q(37243, {	-- An Axe to Grind
 								["provider"] = { "n", 88007 },	-- Gamon
 								["sourceQuests"] = { 37160 },	--  Cleaving Time
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -780,7 +780,7 @@ _.ExpansionFeatures =
 							q(37230, {	-- Bloody Expensive
 								["provider"] = { "n", 87994 },	--  Moroes
 								["sourceQuests"] = { 37157 },	-- Feeling A Bit Morose
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -788,7 +788,7 @@ _.ExpansionFeatures =
 							}),
 							q(37145, { 	-- Budd's Gambit
 								["provider"] = { "n", 88017 },	-- Budd
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119041, {	-- Strongbox of Mysterious Treasures
@@ -900,7 +900,7 @@ _.ExpansionFeatures =
 							q(37209, {	-- Cold Steel Part II
 								["provider"] = { "n", 88026 },	-- John J. Keeshan
 								["sourceQuests"] = { 37151 },	-- Cold Steel
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119036),  -- Box of Storied Treasures
@@ -933,7 +933,7 @@ _.ExpansionFeatures =
 							q(37239, {	-- Fate of the Fallen
 								["provider"] = { "n", 88003 },	--  Cowled Ranger
 								["sourceQuests"] = { 37164 },	-- The Huntress
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),  -- Supply of Storied Rarities
@@ -948,7 +948,7 @@ _.ExpansionFeatures =
 							q(37244, {	-- Flamefly Trap
 								["provider"] = { "n", 88024 },	-- Oralius
 								["sourceQuests"] = { 37148 },	-- Oralius' Adventure
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119036),  -- Box of Storied Treasures
@@ -969,7 +969,7 @@ _.ExpansionFeatures =
 							}),
 							q(37146, {	-- Go Fetch
 								["provider"] = { "n", 88022 },	-- Johnny Awesome
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119042, {	-- Crate of Valuable Treasures
@@ -1158,7 +1158,7 @@ _.ExpansionFeatures =
 							q(37242, {	-- Learning Is Painful
 								["provider"] = { "n", 88006 },	--  Lonika Stillblade
 								["sourceQuests"] = { 37167 },	-- And No Maces!
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),  -- Supply of Storied Rarities
@@ -1167,7 +1167,7 @@ _.ExpansionFeatures =
 							q(37241, {	-- Lessons of the Past
 								["provider"] = { "n", 88005 },	--  Lorewalker Cho
 								["sourceQuests"] = { 37166 },	-- Titanic Evolution
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1176,7 +1176,7 @@ _.ExpansionFeatures =
 							q(37229, {	-- Like A Dwarf In A Mine
 								["provider"] = { "n", 87992 },	--  Olaf
 								["sourceQuests"] = { 37153 },	-- Time-Lost Vikings
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1185,7 +1185,7 @@ _.ExpansionFeatures =
 							q(37236, {	-- Like Father, Like Son
 								["provider"] = { "n", 88000 },	--  Finkle Einhorn
 								["sourceQuests"] = { 37161 },	-- Family Traditions
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1293,7 +1293,7 @@ _.ExpansionFeatures =
 							q(37227, {	-- Put a Bird on It
 								["provider"] = { "n", 88025 },	-- Mylune
 								["sourceQuests"] = { 37150 },	-- For the Birds
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119036),  -- Box of Storied Treasures
@@ -1302,7 +1302,7 @@ _.ExpansionFeatures =
 							q(37238, {	-- Secrets of Soulbinding
 								["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 								["sourceQuests"] = { 37163 },	-- Shadowy Secrets
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1316,7 +1316,7 @@ _.ExpansionFeatures =
 							}),
 							q(37147, {	-- Sky Dancers
 								["provider"] = { "n", 88023 },	-- Taoshi
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119043, {	-- Trove of Smoldering Treasures
@@ -1509,7 +1509,7 @@ _.ExpansionFeatures =
 							q(37232, {	-- Soulcarver Voss
 								["provider"] = { "n", 87996 },	--  Lillian Voss
 								["sourceQuests"] = { 37156 },	-- The Soulcutter
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),  -- Supply of Storied Rarities
@@ -1530,7 +1530,7 @@ _.ExpansionFeatures =
 							q(37234, {	-- The Dark Within
 								["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 								["sourceQuests"] = { 37158 },	-- Gloriously Incandescent
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),  -- Supply of Storied Rarities
@@ -1549,7 +1549,7 @@ _.ExpansionFeatures =
 							q(37240, {	-- The Leaf-Reader
 								["provider"] = { "n", 88004 },	--  Zen'kiki
 								["sourceQuests"] = { 37165 },	-- Cenrion Concerns
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),  -- Supply of Storied Rarities
@@ -1558,7 +1558,7 @@ _.ExpansionFeatures =
 							q(37231, {	-- The Search Continues
 								["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 								["sourceQuests"] = { 37155 },	-- The Brass Compass
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1591,7 +1591,7 @@ _.ExpansionFeatures =
 							q(37233, {	-- Vessel of Virtue
 								["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 								["sourceQuests"] = { 37154 },	-- The Cure For Death
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119037),	-- Supply of Storied Rarities
@@ -1600,7 +1600,7 @@ _.ExpansionFeatures =
 							q(37245, {	-- Whispers in the Darkness
 								["provider"] = { "n", 88027 },	-- Impsy
 								["sourceQuests"] = { 37149 },	-- The Void-Gate
-								["modID"] = 2,
+								-- ["modID"] = 2,
 								["repeatable"] = true,
 								["g"] = {
 									i(119036),	-- Box of Storied Treasures

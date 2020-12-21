@@ -1671,6 +1671,7 @@ MergeObjects = function(g, g2)
 		end
 		for i,o in ipairs(g2) do
 			local hash = GetHash(o);
+			-- print("_",hash);
 			if hash then
 				t = hashTable[hash];
 				if t then
@@ -1684,11 +1685,6 @@ MergeObjects = function(g, g2)
 						end
 					end
 					MergeProperties(t, o);
-					-- for k,v in pairs(o) do
-					-- 	if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
-					-- 		rawset(o, k, v);
-					-- 	end
-					-- end
 				else
 					hashTable[hash] = o;
 					tinsert(g, o);
@@ -1719,11 +1715,6 @@ MergeObject = function(g, t, index)
 					end
 				end
 				MergeProperties(o, t);
-				-- for k,v in pairs(t) do
-				-- 	if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
-				-- 		rawset(o, k, v);
-				-- 	end
-				-- end
 				return o;
 			end
 		end
@@ -2392,10 +2383,14 @@ ResolveSymbolicLink = function(o)
 			end
 		end
 
-		-- If we had any finalized search results, then return it.
+		-- If we had any finalized search results, then clone all the records and return it.
 		if #finalized > 0 then
 			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #finalized, " values after filtering.");
-			return finalized;
+			local cloned = {};
+			for k,s in ipairs(finalized) do
+				tinsert(cloned, CreateObject(s));
+			end
+			return cloned;
 		else
 			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
 		end
@@ -3042,15 +3037,45 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			MergeObject(merged)
 			]]
 
-			-- Create the root group for the search results
+			-- Clone all the groups so that things don't get modified in the Source
+			local cloned = {};
+			for i,o in ipairs(group) do
+				tinsert(cloned, CreateObject(o));
+			end
+			-- replace the Source references with the cloned references
+			group = cloned;
+
+			-- Find or Create the root group for the search results
+			local root;
+			for i,o in ipairs(group) do
+				-- If the obj "is" the root obj
+				if o.key == paramA and o[o.key] == paramB then
+					-- object meets filter criteria and is exactly what is being searched
+					if app.RecursiveGroupRequirementsFilter(o) then
+						-- print("Create Filtered root",o.key,o[o.key]);
+						if root then
+							local otherRoot = root;
+							-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
+							root = o;
+							MergeProperties(root, otherRoot);
+						else
+							root = o;
+						end
+					else
+						-- print("Create Unfiltered root",o.key,o[o.key]);
+						if not root then root = o
+						else MergeProperties(root, o); end
+					end
+				end
+			end			
 			-- print("params",paramA,paramB);
-			local root = CreateObject({ [paramA] = paramB });
+			if not root then root = CreateObject({ [paramA] = paramB }); end
 			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
 			paramA, paramB = root.key, root[root.key];
 			-- print("Root",root.key,root[root.key]);
 			-- print("Root Collect",root.collectible,root.collected);
 			-- print("params",paramA,paramB);
-			root.g = {};
+			if not root.g then root.g = {}; end
 			-- Loop through all obj found for this search
 			-- print(#group,"Search total");
 			for i,o in ipairs(group) do
@@ -3069,7 +3094,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if app.RecursiveGroupRequirementsFilter(o) then
 						-- Merge the obj into the merged results
 						-- print("Merge object",o.key,o[o.key])
-						MergeObject(root.g, CreateObject(o));
+						MergeObject(root.g, o);
 					-- otherwise
 					else
 						-- Add to the set of skipped objects
@@ -3083,7 +3108,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,o in ipairs(skipped) do
 				-- Merge the obj into the merged results
 				-- print("Merge skip",o.key,o[o.key])
-				MergeObject(root.g, CreateObject(o));
+				MergeObject(root.g, o);
 			end
 			-- Resolve symbolic links for the root
 			-- print("Resolve Root",root.key,root[root.key])
@@ -3092,7 +3117,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("Has symbolic")
 				root.symbolized = true;
 				for k,o in pairs(rootResolved) do
-					MergeObject(root.g, CreateObject(o));
+					MergeObject(root.g, o);
 				end
 			end
 			-- Resolve symbolic links within the Root
@@ -3105,13 +3130,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if o.g and #o.g >= 0 then
 						for j=1,#symbolicLink,1 do
 							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-							MergeObject(o.g, CreateObject(symbolicLink[j]));
+							MergeObject(o.g, symbolicLink[j]);
 						end
 					else
-						for j=#symbolicLink,1,-1 do
-							-- print("Replace symbolic",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-							symbolicLink[j] = CreateObject(symbolicLink[j]);
-						end
 						o.g = symbolicLink;
 					end
 					-- print("o.g",o.g and #o.g)
@@ -3126,7 +3147,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Replace as the group
 			group = root;
 			-- print(group.g and #group.g,"Merge total");
-			-- print("Group Collect",group.collectible,group.collected);
+			-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
 
 			-- Special cases
 			-- Don't show nested criteria of achievements
@@ -3237,7 +3258,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.BuildCrafted(group, 10);
 
 			-- Append currency info to any orphan currency groups
-			-- app.BuildCurrencies(group); -- TODO: this is broke now
+			app.BuildCurrencies(group);
 
 			group.total = 0;
 			group.progress = 0;
@@ -3532,11 +3553,13 @@ app.BuildCost = function(group)
 end
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
+	-- print("check for currencies",group.key,group[group.key])
 	if group and group.g and #group.g > 0 then
 		for i=1,#group.g do
 			local o = group.g[i];
 			if o then
 				-- this is an empty currency group
+				-- print("check for currency",o.key,o[o.key])
 				if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
 					-- print("empty currency group",o.currencyID);
 					local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
