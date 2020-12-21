@@ -3011,6 +3011,11 @@ _.HiddenQuestTriggers =
 		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord -- TODO: confirm
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
+		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared -- TODO: confirm
+		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
+		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord -- TODO: confirm
+		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Night Fae
+		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3372,44 +3377,49 @@ _.HiddenQuestTriggers =
 
 		-- Castle Nathria
 		-- LFR
-		-- q(),	-- Shriekwing
+		-- q( ),	-- Shriekwing
 		q(62872),	-- Huntsman Altimor
-		-- q(),	-- Sun King's Salvation
-		-- q(),	-- Artificer Xy'mox
-		q(62875),	-- Hungering Destroyer (also N)
-		q(60680),	-- Lady Inerva Darkvein (maybe completing the full wing? triggered with the one below)
-		q(62877),	-- Lady Inerva Darkvein (also N/H)
-		-- q(),	-- The Council of Blood
-		-- q(),	-- Sludgefist
-		-- q(),	-- Stone Legion Generals
-		-- q(),	-- Sire Denathrius
+		-- q( ),	-- Sun King's Salvation
+		-- q( ),	-- Artificer Xy'mox
+		q(62875),	-- Hungering Destroyer (also N) -- TODO: Confirm next week
+		q(60680),	-- Lady Inerva Darkvein (maybe completing the full wing? triggered with the one below) -- TODO: Confirm next week
+		q(62877),	-- Lady Inerva Darkvein (also N/H) -- TODO: Confirm next week
+		-- q( ),	-- The Council of Blood
+		-- q( ),	-- Sludgefist
+		-- q( ),	-- Stone Legion Generals
+		-- q( ),	-- Sire Denathrius
 		-- Normal
-		-- q(),	-- Shriekwing
-		-- q(),	-- Huntsman Altimor
-		q(62873),	-- Sun King's Salvation (also H)
-		q(62874),	-- Artificer Xy'mox (also H)
-		-- q(),	-- Hungering Destroyer
-		-- q(),	-- The Council of Blood
-		-- q(),	-- Sludgefist
-		-- q(),	-- Stone Legion Generals
+		-- q( ),	-- Shriekwing
+		-- q( ),	-- Huntsman Altimor
+		q(62873),	-- Sun King's Salvation (also H) -- TODO: Confirm next week
+		q(62874),	-- Artificer Xy'mox (also H) -- TODO: Confirm next week
+		-- q(62875),	-- Hungering Destroyer
+		-- q(62877),	-- Lady Inerva Darkvein
+		-- q( ),	-- The Council of Blood
+		-- q( ),	-- Sludgefist
+		q(62879),	-- Stone Legion Generals
 		q(62880),	-- Sire Denathrius
 		-- Heroic
-		-- q(),	-- Shriekwing
-		-- q(),	-- Huntsman Altimor
-		-- q(),	-- The Council of Blood
+		-- q( ),	-- Shriekwing
+		-- q( ),	-- Huntsman Altimor
+		-- q(62873),	-- Sun King's Salvation
+		-- q(62874),	-- Artificer Xy'mox
+		-- q( ),	-- Hungering Destroyer
+		-- q(62877),	-- Lady Inerva Darkvein
+		-- q( ),	-- The Council of Blood
 		q(62878),	-- Sludgefist
-		-- q(),	-- Stone Legion Generals
-		-- q(),	-- Sire Denathrius
+		-- q( ),	-- Stone Legion Generals
+		-- q( ),	-- Sire Denathrius
 		-- Mythic
-		-- q(),	-- Shriekwing
-		-- q(),	-- Huntsman Altimor
-		-- q(),	-- Sun King's Salvation
-		-- q(),	-- Artificer Xy'mox
-		-- q(),	-- Hungering Destroyer
-		-- q(),	-- Lady Inerva Darkvein
-		-- q(),	-- The Council of Blood
-		-- q(),	-- Sludgefist
-		-- q(),	-- Stone Legion Generals
-		-- q(),	-- Sire Denathrius
+		-- q( ),	-- Shriekwing
+		-- q( ),	-- Huntsman Altimor
+		-- q( ),	-- Sun King's Salvation
+		-- q( ),	-- Artificer Xy'mox
+		-- q( ),	-- Hungering Destroyer
+		-- q( ),	-- Lady Inerva Darkvein
+		-- q( ),	-- The Council of Blood
+		-- q( ),	-- Sludgefist
+		-- q( ),	-- Stone Legion Generals
+		-- q( ),	-- Sire Denathrius
 	}),
 };
