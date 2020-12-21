@@ -831,7 +831,7 @@ _.Zones =
 						-- Tier 3: Hidden Pathways
 					}),
 					n(-930, {	-- Queen's Conservatory
-						["description"] = "|cFFA330C9Night Fae Covenant|r only.",
+					--	["description"] = "|cFFA330C9Night Fae Covenant|r only.",
 						["g"] = {
 							o(350978, {	-- Queen's Conservatory Cache
 								filter(100, {	-- Mounts

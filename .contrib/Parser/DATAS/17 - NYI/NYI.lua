@@ -20,6 +20,7 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
+		un(NEVER_IMPLEMENTED, i(182075)),	-- Bonehoof Tauralus (MOUNT!)
 		-- Gear
 		un(NEVER_IMPLEMENTED, i(171401)),	-- ??? (retrieving data)
 		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)

@@ -227,9 +227,10 @@ _.Zones =
 						crit(12, {	-- Tahonta
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
+						--[[i(182075, {	-- Bonehoof Tauralus (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
+						--]]
 						i(182190),	-- Tauralus Hide Collar
 					},
 				}),
