@@ -3011,11 +3011,11 @@ _.HiddenQuestTriggers =
 		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord -- TODO: confirm
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
-		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared -- TODO: confirm
+		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
-		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord -- TODO: confirm
+		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Night Fae
-		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
+		q(63307),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
