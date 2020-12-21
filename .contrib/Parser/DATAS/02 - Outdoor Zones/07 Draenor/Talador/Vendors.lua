@@ -26,49 +26,50 @@ _.Zones =
 					},
 				}),
 				n(84216, {	-- Talgaiir the Ironrender
-					["description"] = "This vendor is only available until you reach level 100. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
+					["description"] = "This vendor is only available at lower levels before he becomes phased out. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 					["coord"] = { 45.6, 38.6, 535 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, a(i(77596))),	-- Replica Grand Marshal's Aegis
-						un(REMOVED_FROM_GAME, a(i(77563))),	-- Replica Grand Marshal's Battle Hammer
-						un(REMOVED_FROM_GAME, a(i(77565))),	-- Replica Grand Marshal's Bullseye
-						un(REMOVED_FROM_GAME, a(i(77560))),	-- Replica Grand Marshal's Claymore
-						un(REMOVED_FROM_GAME, a(i(77549))),	-- Replica Grand Marshal's Demolisher
-						un(REMOVED_FROM_GAME, a(i(77551))),	-- Replica Grand Marshal's Dirk
-						un(REMOVED_FROM_GAME, a(i(77564))),	-- Replica Grand Marshal's Glaive
-						un(REMOVED_FROM_GAME, a(i(77557))),	-- Replica Grand Marshal's Hand Blade
-						un(REMOVED_FROM_GAME, a(i(77555))),	-- Replica Grand Marshal's Hand Cannon
-						un(REMOVED_FROM_GAME, a(i(77562))),	-- Replica Grand Marshal's Handaxe
-						un(REMOVED_FROM_GAME, a(i(77561))),	-- Replica Grand Marshal's Longsword
-						un(REMOVED_FROM_GAME, a(i(77552))),	-- Replica Grand Marshal's Mageblade
-						un(REMOVED_FROM_GAME, a(i(77558))),	-- Replica Grand Marshal's Punisher
-						un(REMOVED_FROM_GAME, a(i(77566))),	-- Replica Grand Marshal's Repeater
-						un(REMOVED_FROM_GAME, a(i(77556))),	-- Replica Grand Marshal's Stave
-						un(REMOVED_FROM_GAME, a(i(77554))),	-- Replica Grand Marshal's Sunderer
-						un(REMOVED_FROM_GAME, a(i(77550))),	-- Replica Grand Marshal's Swiftblade
-						un(REMOVED_FROM_GAME, a(i(77595))),	-- Replica Grand Marshal's Tome of Power
-						un(REMOVED_FROM_GAME, a(i(77594))),	-- Replica Grand Marshal's Tome of Restoration
-						un(REMOVED_FROM_GAME, a(i(77553))),	-- Replica Grand Marshal's Warhammer
-						un(REMOVED_FROM_GAME, h(i(77574))),	-- Replica High Warlord's Battle Axe
-						un(REMOVED_FROM_GAME, h(i(77567))),	-- Replica High Warlord's Battle Mace
-						un(REMOVED_FROM_GAME, h(i(77582))),	-- Replica High Warlord's Blade
-						un(REMOVED_FROM_GAME, h(i(77584))),	-- Replica High Warlord's Bludgeon
-						un(REMOVED_FROM_GAME, h(i(77575))),	-- Replica High Warlord's Claw
-						un(REMOVED_FROM_GAME, h(i(77580))),	-- Replica High Warlord's Cleaver
-						un(REMOVED_FROM_GAME, h(i(77585))),	-- Replica High Warlord's Crossbow
-						un(REMOVED_FROM_GAME, h(i(77571))),	-- Replica High Warlord's Destroyer
-						un(REMOVED_FROM_GAME, h(i(77577))),	-- Replica High Warlord's Greatsword
-						un(REMOVED_FROM_GAME, h(i(77572))),	-- Replica High Warlord's Pig Sticker
-						un(REMOVED_FROM_GAME, h(i(77573))),	-- Replica High Warlord's Pulverizer
-						un(REMOVED_FROM_GAME, h(i(77569))),	-- Replica High Warlord's Quickblade
-						un(REMOVED_FROM_GAME, h(i(77576))),	-- Replica High Warlord's Razor
-						un(REMOVED_FROM_GAME, h(i(77578))),	-- Replica High Warlord's Recurve
-						un(REMOVED_FROM_GAME, h(i(77597))),	-- Replica High Warlord's Shield Wall
-						un(REMOVED_FROM_GAME, h(i(77568))),	-- Replica High Warlord's Spellblade
-						un(REMOVED_FROM_GAME, h(i(77579))),	-- Replica High Warlord's Street Sweeper
-						un(REMOVED_FROM_GAME, h(i(77593))),	-- Replica High Warlord's Tome of Destruction
-						un(REMOVED_FROM_GAME, h(i(77592))),	-- Replica High Warlord's Tome of Mending
-						un(REMOVED_FROM_GAME, h(i(77581))),	-- Replica High Warlord's War Staff
+						-- Note: don't mark these as unobtainable here because they are obtainable from Big Zokk in Netherstorm.
+						a(i(77596)),	-- Replica Grand Marshal's Aegis
+						a(i(77563)),	-- Replica Grand Marshal's Battle Hammer
+						a(i(77565)),	-- Replica Grand Marshal's Bullseye
+						a(i(77560)),	-- Replica Grand Marshal's Claymore
+						a(i(77549)),	-- Replica Grand Marshal's Demolisher
+						a(i(77551)),	-- Replica Grand Marshal's Dirk
+						a(i(77564)),	-- Replica Grand Marshal's Glaive
+						a(i(77557)),	-- Replica Grand Marshal's Hand Blade
+						a(i(77555)),	-- Replica Grand Marshal's Hand Cannon
+						a(i(77562)),	-- Replica Grand Marshal's Handaxe
+						a(i(77561)),	-- Replica Grand Marshal's Longsword
+						a(i(77552)),	-- Replica Grand Marshal's Mageblade
+						a(i(77558)),	-- Replica Grand Marshal's Punisher
+						a(i(77566)),	-- Replica Grand Marshal's Repeater
+						a(i(77556)),	-- Replica Grand Marshal's Stave
+						a(i(77554)),	-- Replica Grand Marshal's Sunderer
+						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
+						a(i(77595)),	-- Replica Grand Marshal's Tome of Power
+						a(i(77594)),	-- Replica Grand Marshal's Tome of Restoration
+						a(i(77553)),	-- Replica Grand Marshal's Warhammer
+						h(i(77574)),	-- Replica High Warlord's Battle Axe
+						h(i(77567)),	-- Replica High Warlord's Battle Mace
+						h(i(77582)),	-- Replica High Warlord's Blade
+						h(i(77584)),	-- Replica High Warlord's Bludgeon
+						h(i(77575)),	-- Replica High Warlord's Claw
+						h(i(77580)),	-- Replica High Warlord's Cleaver
+						h(i(77585)),	-- Replica High Warlord's Crossbow
+						h(i(77571)),	-- Replica High Warlord's Destroyer
+						h(i(77577)),	-- Replica High Warlord's Greatsword
+						h(i(77572)),	-- Replica High Warlord's Pig Sticker
+						h(i(77573)),	-- Replica High Warlord's Pulverizer
+						h(i(77569)),	-- Replica High Warlord's Quickblade
+						h(i(77576)),	-- Replica High Warlord's Razor
+						h(i(77578)),	-- Replica High Warlord's Recurve
+						h(i(77597)),	-- Replica High Warlord's Shield Wall
+						h(i(77568)),	-- Replica High Warlord's Spellblade
+						h(i(77579)),	-- Replica High Warlord's Street Sweeper
+						h(i(77593)),	-- Replica High Warlord's Tome of Destruction
+						h(i(77592)),	-- Replica High Warlord's Tome of Mending
+						h(i(77581)),	-- Replica High Warlord's War Staff
 					},
 				}),
 				n(80765, {	-- Wixxa the Sapper <Explosives>
