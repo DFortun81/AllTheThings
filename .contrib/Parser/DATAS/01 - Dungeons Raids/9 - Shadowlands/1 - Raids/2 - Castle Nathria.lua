@@ -155,6 +155,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183014),	-- Castellan's Chainlink Grips
 						i(182983),	-- Stoneguard Attendant's Boots
 						i(183039),	-- Noble's Birthstone Pendant
+						i(184024),	-- Macabre Sheet Music
 					},
 				}),
 				e(2394, {	-- Sludgefist
@@ -385,6 +386,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183014),	-- Castellan's Chainlink Grips
 						i(182983),	-- Stoneguard Attendant's Boots
 						i(183039),	-- Noble's Birthstone Pendant
+						i(184024),	-- Macabre Sheet Music
 					},
 				}),
 				e(2394, {	-- Sludgefist
@@ -618,6 +620,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183014),	-- Castellan's Chainlink Grips
 						i(182983),	-- Stoneguard Attendant's Boots
 						i(183039),	-- Noble's Birthstone Pendant
+						i(184024),	-- Macabre Sheet Music
 					},
 				}),
 				e(2394, {	-- Sludgefist
