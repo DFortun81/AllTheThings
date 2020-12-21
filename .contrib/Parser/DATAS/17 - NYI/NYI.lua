@@ -22,11 +22,9 @@ _.NeverImplemented =
 		-- Mounts
 		un(NEVER_IMPLEMENTED, i(182075)),	-- Bonehoof Tauralus (MOUNT!)
 		-- Gear
-		un(NEVER_IMPLEMENTED, i(171401)),	-- ??? (retrieving data)
+		un(NEVER_IMPLEMENTED, i(171401)),	-- Phaeweald Rapier
 		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
-		un(NEVER_IMPLEMENTED, i(174311)),	-- Sinful Gladiator's Guard (existed in beta; doesn't appear to exist in live)
-		un(NEVER_IMPLEMENTED, i(177866)),	-- Sinful Gladiator's Chalice (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(183439)),	-- Sinful Gladiator's Crystal (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(176002)),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(176003)),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
@@ -52,11 +50,21 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(175941)),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		un(NEVER_IMPLEMENTED, i(175942)),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		un(NEVER_IMPLEMENTED, i(175943)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(180425)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
+		un(NEVER_IMPLEMENTED, i(180426)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
+		un(NEVER_IMPLEMENTED, i(180427)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
+		un(NEVER_IMPLEMENTED, i(180428)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
+		un(NEVER_IMPLEMENTED, i(180432)),	-- 9.0 PvP - PvP Reward - Tabard - 2
+		un(NEVER_IMPLEMENTED, i(180433)),	-- 9.0 PvP - PvP Reward - Tabard - 3
+		un(NEVER_IMPLEMENTED, i(180434)),	-- 9.0 PvP - PvP Reward - Tabard - 4
+		un(NEVER_IMPLEMENTED, i(180435)),	-- 9.0 PvP - PvP Reward - Tabard - 5
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(181259)),	-- Clutch (wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(184461)),	-- Clutch (wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(182683)),	-- Dredger Butler (might be Ember Court at a higher tier? no sign of it in game yet)
 		un(NEVER_IMPLEMENTED, i(184399)),	-- Larion Cub (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(184401)),	-- Larion Pouncer (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(180590)),	-- Lost Soul (wild pet in game, item was never used)
@@ -65,6 +73,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(180861)),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180867)),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180813)),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(183853)),	-- Sinfall Screecher
 		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)
 		un(NEVER_IMPLEMENTED, i(180872)),	-- Spirited Skyfoal (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
@@ -3822,7 +3831,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
-			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
 			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth

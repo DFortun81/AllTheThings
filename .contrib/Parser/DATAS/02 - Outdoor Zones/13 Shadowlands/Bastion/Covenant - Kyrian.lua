@@ -10,7 +10,6 @@ _.Zones =
 				n(ACHIEVEMENTS, {
 				}),
 				n(-901, {	-- Covenant Callings
-					["description"] = "|cFF516bfeKyrian Covenant|r only.",
 					["g"] = {
 						q(60424, {	-- A Call to Ardenweald
 							--["provider"] = { "n",  },	--
@@ -217,6 +216,12 @@ _.Zones =
 							["repeatable"] = true,
 							["g"] = {
 								i(181741),	-- Tribute of the Paragon
+							},
+						}),
+						n(175390, {	-- Dirty Glinting Object
+							["description"] = "Can appear when on any of the Training callings",
+							["g"] = {
+								i(184507),	-- Lucy's Lost Collar
 							},
 						}),
 					},

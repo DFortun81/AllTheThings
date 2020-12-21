@@ -892,7 +892,6 @@ pet(180640, 2911);	-- Amber Glitterwing
 pet(180587, 2893);	-- Animated Tome
 pet(184221, 3054);	-- Archivist's Quill
 pet(183193, 3030);	-- Ashen Chomper
---pet(183853, );	-- Baby Sinfall Screecher
 pet(181268, 2958);	-- Backbone
 pet(183854, 3011);	-- Battie's Pendant // Battie
 pet(181315, 2965);	-- Bloodfeaster Spiderling
@@ -946,7 +945,7 @@ pet(183196, 3035);	-- Lavender Nibbler
 pet(182662, 3017);	-- Leafadore
 pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
 pet(184397, 3062);	-- Lost Featherling
---pet(3066);	-- Lucy
+pet(184507, 3066);	-- Lucy's Lost Collar // Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
 pet(183194, 3033);	-- Maw Stalker

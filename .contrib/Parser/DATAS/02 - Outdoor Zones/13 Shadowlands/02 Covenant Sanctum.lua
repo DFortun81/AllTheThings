@@ -20,6 +20,7 @@ _.Zones =
 							i(183615),	-- Warstitched Darkhound
 							-- Pets
 							i(180629),	-- Devouring Animite
+							i(181170),	-- Pernicious Bonetusk
 							i(182671),	-- Runelight Leaper
 							-- Misc.
 							i(184630),	-- Adventurer's Tailoring Cache

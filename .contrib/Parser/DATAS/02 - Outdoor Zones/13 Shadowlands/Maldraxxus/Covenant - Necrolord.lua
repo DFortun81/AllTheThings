@@ -106,7 +106,6 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					n(-901, {	-- Covenant Callings
-						["description"] = "|cFF40bf40Necrolord Covenant|r only.",
 						["g"] = sharedData({
 							["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						}, {
@@ -305,6 +304,12 @@ _.Zones =
 								["repeatable"] = true,
 								["g"] = {
 									i(181733),	-- Tribute of the Duty-Bound
+								},
+							}),
+							n(175390, {	-- Dirty Glinting Object
+								["description"] = "Can appear when on any of the Training callings",
+								["g"] = {
+									i(184507),	-- Lucy's Lost Collar
 								},
 							}),
 						}),
