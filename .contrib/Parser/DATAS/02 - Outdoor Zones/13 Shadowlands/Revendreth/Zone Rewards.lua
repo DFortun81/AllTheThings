@@ -111,7 +111,6 @@ _.Zones =
 					i(181223),	-- Mace of Emberwrath
 					i(181182),	-- Muck Waders
 					i(180355),	-- Ornate Pyx
-					i(182689),	-- Rapier of the Fearless
 					i(181213),	-- Shard-Dusted Shank
 					i(181180),	-- Sincollector's Cord
 					i(181179),	-- Sincollector's Leggings

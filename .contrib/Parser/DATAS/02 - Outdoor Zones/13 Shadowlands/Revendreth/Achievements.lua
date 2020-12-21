@@ -312,12 +312,12 @@ _.Zones =
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless
-						--["objectID"] = ,	--
-						--["coord"] = { 52.9, 37.2, 1525 },
-						--["questID"] = 61065,
-						--["g"] = {
-						--	i(182689),	-- Rapier of the Fearless
-						--},
+						-- TODO: ["questID"] = x,
+						["coord"] = { 80.0, 37.1, 1525 },
+						["crs"] = { 173603 },	-- Rapier of the Fearless
+						["g"] = {
+							i(182689),	-- Rapier of the Fearless
+						},
 					}),
 					crit(5, {	-- Vyrtha's Dredglaive
 						["objectID"] = 357584,	-- Vyrtha's Dredglaive
