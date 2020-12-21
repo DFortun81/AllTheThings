@@ -21,6 +21,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 			n(ACHIEVEMENTS,  {
 				ach(14715),	-- Castle Nathria
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["g"] = {
+					i(173068),	-- Vantus Rune Technique: Castle Nathria
+				},
+			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
 					i(183017),	-- Acolyte's Velvet bindings
@@ -54,6 +59,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182988),	-- Master Huntsman's Bandolier
 						i(183018),	-- Hellhound Cuffs
 						i(183040),	-- Charm of Eternal Winter
+						i(184017),	-- Bargast's Leash
 					},
 				}),
 				e(2428, {	-- Hungering Destroyer
@@ -72,6 +78,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(182992),	-- Endlessly Gluttonous Greaves
+						i(184022),	-- Consumptive Infusion
+						i(184023),	-- Gluttonous Spike
 					},
 				}),
 				e(2420, {	-- Lady Inerva Darkvein
@@ -87,6 +95,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183026),	-- Gloves of Phantom Shadows
 						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(184025),	-- Memory of Past Sins
 					},
 				}),
 				e(2393, {	-- Shriekwing
@@ -100,6 +109,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182993),	-- Chiropteran Leggings
 						i(182976),	-- Double-Chained Utility Belt
 						i(183027),	-- Errant Crusader's Greaves
+						i(184016),	-- Skulker's Wing
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
@@ -116,6 +126,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183007),	-- Bleakwing Assassin's Grips
 						i(182977),	-- Bangles of Errant Pride
 						i(183025),	-- Stoic Guardsman's Belt
+						i(184018),	-- Splintered Heart of Al'ar
+						i(184019),	-- Soul Igniter
+						i(184020),	-- Tuft of Smoldering Plumage
 					},
 				}),
 				e(2418, {	-- Artificer Xy'mox
@@ -133,6 +146,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183012),	-- Greaves of Enigmatic Energies
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183038),	-- Hyperlight Band
+						i(184021),	-- Glyph of Assimilation
 					},
 				}),
 				e(2426, {	-- The Council of Blood
@@ -182,6 +196,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183006),	-- Stoneclas Stompers
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
+						i(184026),	-- Hateful Chain
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
@@ -208,6 +223,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183029),	-- Wicked Flanker's Gorget
 						i(182991),	-- Oathsworn Soldier's Gauntlets
 						i(183002),	-- Ceremonial Parade Legguards
+						i(184027),	-- Stone Legion Heraldry
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
@@ -242,6 +258,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
 						i(183395),	-- Pommel Jewel of Remornia
+						i(184028),	-- Cabalist's Hymnal
+						i(184030),	-- Dreadfire Vessel
+						i(184029),	-- Manabound Mirror
+						i(184031),	-- Sanguine Vintage
 					},
 				}),
 			}),
@@ -270,6 +290,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182993),	-- Chiropteran Leggings
 						i(182976),	-- Double-Chained Utility Belt
 						i(183027),	-- Errant Crusader's Greaves
+						i(184016),	-- Skulker's Wing
 					},
 				}),
 				e(2429, {	-- Huntsman Altimor
@@ -293,6 +314,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182988),	-- Master Huntsman's Bandolier
 						i(183018),	-- Hellhound Cuffs
 						i(183040),	-- Charm of Eternal Winter
+						i(184017),	-- Bargast's Leash
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
@@ -310,6 +332,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183007),	-- Bleakwing Assassin's Grips
 						i(182977),	-- Bangles of Errant Pride
 						i(183025),	-- Stoic Guardsman's Belt
+						i(184018),	-- Splintered Heart of Al'ar
+						i(184019),	-- Soul Igniter
+						i(184020),	-- Tuft of Smoldering Plumage
 					},
 				}),
 				e(2418, {	-- Artificer Xy'mox
@@ -328,6 +353,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183012),	-- Greaves of Enigmatic Energies
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183038),	-- Hyperlight Band
+						i(184021),	-- Glyph of Assimilation
 					},
 				}),
 				e(2428, {	-- Hungering Destroyer
@@ -347,6 +373,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(182992),	-- Endlessly Gluttonous Greaves
+						i(184022),	-- Consumptive Infusion
+						i(184023),	-- Gluttonous Spike
 					},
 				}),
 				e(2420, {	-- Lady Inerva Darkvein
@@ -363,6 +391,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183026),	-- Gloves of Phantom Shadows
 						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(184025),	-- Memory of Past Sins
 					},
 				}),
 				e(2426, {	-- The Council of Blood
@@ -414,6 +443,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183006),	-- Stoneclas Stompers
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
+						i(184026),	-- Hateful Chain
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
@@ -441,6 +471,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183029),	-- Wicked Flanker's Gorget
 						i(182991),	-- Oathsworn Soldier's Gauntlets
 						i(183002),	-- Ceremonial Parade Legguards
+						i(184027),	-- Stone Legion Heraldry
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
@@ -476,6 +507,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
 						i(183395),	-- Pommel Jewel of Remornia
+						i(184028),	-- Cabalist's Hymnal
+						i(184030),	-- Dreadfire Vessel
+						i(184029),	-- Manabound Mirror
+						i(184031),	-- Sanguine Vintage
 					},
 				}),
 			}),
@@ -504,6 +539,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182993),	-- Chiropteran Leggings
 						i(182976),	-- Double-Chained Utility Belt
 						i(183027),	-- Errant Crusader's Greaves
+						i(184016),	-- Skulker's Wing
 					},
 				}),
 				e(2429, {	-- Huntsman Altimor
@@ -527,6 +563,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182988),	-- Master Huntsman's Bandolier
 						i(183018),	-- Hellhound Cuffs
 						i(183040),	-- Charm of Eternal Winter
+						i(184017),	-- Bargast's Leash
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
@@ -544,6 +581,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183007),	-- Bleakwing Assassin's Grips
 						i(182977),	-- Bangles of Errant Pride
 						i(183025),	-- Stoic Guardsman's Belt
+						i(184018),	-- Splintered Heart of Al'ar
+						i(184019),	-- Soul Igniter
+						i(184020),	-- Tuft of Smoldering Plumage
 					},
 				}),
 				e(2418, {	-- Artificer Xy'mox
@@ -562,6 +602,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183012),	-- Greaves of Enigmatic Energies
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183038),	-- Hyperlight Band
+						i(184021),	-- Glyph of Assimilation
 					},
 				}),
 				e(2428, {	-- Hungering Destroyer
@@ -581,6 +622,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(182992),	-- Endlessly Gluttonous Greaves
+						i(184022),	-- Consumptive Infusion
+						i(184023),	-- Gluttonous Spike
 					},
 				}),
 				e(2420, {	-- Lady Inerva Darkvein
@@ -597,6 +640,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183026),	-- Gloves of Phantom Shadows
 						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(184025),	-- Memory of Past Sins
 					},
 				}),
 				e(2426, {	-- The Council of Blood
@@ -648,6 +692,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183006),	-- Stoneclas Stompers
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
+						i(184026),	-- Hateful Chain
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
@@ -675,6 +720,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183029),	-- Wicked Flanker's Gorget
 						i(182991),	-- Oathsworn Soldier's Gauntlets
 						i(183002),	-- Ceremonial Parade Legguards
+						i(184027),	-- Stone Legion Heraldry
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
@@ -714,6 +760,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182169, {	-- Veilwing Soul
 							["questID"] = 62425,	-- Veilwing Soul
 						}),
+						i(184028),	-- Cabalist's Hymnal
+						i(184030),	-- Dreadfire Vessel
+						i(184029),	-- Manabound Mirror
+						i(184031),	-- Sanguine Vintage
 					},
 				}),
 			}),
@@ -743,6 +793,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182993),	-- Chiropteran Leggings
 						i(182976),	-- Double-Chained Utility Belt
 						i(183027),	-- Errant Crusader's Greaves
+						i(184016),	-- Skulker's Wing
 					},
 				}),
 				e(2429, {	-- Huntsman Altimor
@@ -767,6 +818,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182988),	-- Master Huntsman's Bandolier
 						i(183018),	-- Hellhound Cuffs
 						i(183040),	-- Charm of Eternal Winter
+						i(184017),	-- Bargast's Leash
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
@@ -785,6 +837,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183007),	-- Bleakwing Assassin's Grips
 						i(182977),	-- Bangles of Errant Pride
 						i(183025),	-- Stoic Guardsman's Belt
+						i(184018),	-- Splintered Heart of Al'ar
+						i(184019),	-- Soul Igniter
+						i(184020),	-- Tuft of Smoldering Plumage
 					},
 				}),
 				e(2418, {	-- Artificer Xy'mox
@@ -804,6 +859,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183012),	-- Greaves of Enigmatic Energies
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183038),	-- Hyperlight Band
+						i(184021),	-- Glyph of Assimilation
 					},
 				}),
 				e(2428, {	-- Hungering Destroyer
@@ -824,6 +880,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(182992),	-- Endlessly Gluttonous Greaves
+						i(184022),	-- Consumptive Infusion
+						i(184023),	-- Gluttonous Spike
 					},
 				}),
 				e(2420, {	-- Lady Inerva Darkvein
@@ -841,6 +899,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183026),	-- Gloves of Phantom Shadows
 						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(184025),	-- Memory of Past Sins
 					},
 				}),
 				e(2426, {	-- The Council of Blood
@@ -865,6 +924,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183014),	-- Castellan's Chainlink Grips
 						i(182983),	-- Stoneguard Attendant's Boots
 						i(183039),	-- Noble's Birthstone Pendant
+						i(184024),	-- Macabre Sheet Music
 					},
 				}),
 				e(2394, {	-- Sludgefist
@@ -893,6 +953,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183006),	-- Stoneclas Stompers
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
+						i(184026),	-- Hateful Chain
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
@@ -921,6 +982,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183029),	-- Wicked Flanker's Gorget
 						i(182991),	-- Oathsworn Soldier's Gauntlets
 						i(183002),	-- Ceremonial Parade Legguards
+						i(184027),	-- Stone Legion Heraldry
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
@@ -964,6 +1026,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182169, {	-- Veilwing Soul
 							["questID"] = 62425,	-- Veilwing Soul
 						}),
+						i(184028),	-- Cabalist's Hymnal
+						i(184030),	-- Dreadfire Vessel
+						i(184029),	-- Manabound Mirror
+						i(184031),	-- Sanguine Vintage
 					},
 				}),
 			}),

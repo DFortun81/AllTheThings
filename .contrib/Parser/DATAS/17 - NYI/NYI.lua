@@ -49,6 +49,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(176008)),	-- Sinful Gladiator's Focus (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(178397)),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(178398)),	-- Sinful Gladiator's Goblet (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(175941)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(175942)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(175943)),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -74,6 +77,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(183868)),	-- Recipe: Crafter's Mark III (was in beta but not live, possibly added in future?)
 		un(NEVER_IMPLEMENTED, i(183867)),	-- Schematic: Crafter's Mark III (was in beta but not live, possibly added in future?)
 		un(NEVER_IMPLEMENTED, i(183865)),	-- Technique: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(182665)),	-- Recipe: Sins to Virtue
+		un(NEVER_IMPLEMENTED, i(182669)),	-- Pattern: Loosened Belt
+		un(NEVER_IMPLEMENTED, i(182670)),	-- Plans: Reinforced Girdle
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		un(NEVER_IMPLEMENTED, i(174445)),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)

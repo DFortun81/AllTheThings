@@ -21,8 +21,10 @@ _.Zones =
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
 					i(184840),	-- Hymnal of the Path
+					i(184842),	-- Instructor's Divine Bell
 					i(181627),	-- Lifepath Crossbow
 					i(181637),	-- Lifepath Hammer
+					i(184841),	-- Lyre of Sacred Purpose
 					i(181628),	-- Memoria Glaive
 					i(181634),	-- Memoria Greatblade
 					i(181636),	-- Memoria Spellblade

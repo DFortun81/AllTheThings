@@ -274,6 +274,7 @@ _.Zones =
 								crit(7, {	-- N'zoth
 									["achievementID"] = 14353,	-- Ardenweald's a Stage
 								}),
+								i(182453),	-- Twilight Bloom
 							},
 						}),
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
