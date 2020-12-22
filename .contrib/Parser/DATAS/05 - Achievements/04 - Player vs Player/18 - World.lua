@@ -62,6 +62,12 @@ _.Achievements =
 					ach(12575),		-- Tour of Duty: Zuldazar
 				},
 			}),
+			ach(14519, {	-- Covenant Combat
+				crit(1),	-- Venthyr
+				crit(2),	-- Night Fae
+				crit(3),	-- Necrolord
+				crit(4),	-- Kyrian
+			}),
 			--[[ commenting this out for now, because this meta does not exist atm on live (as of 12/13/20)
 			ach(14520, {	-- Deathbringer
 				title(424),	-- Deathbringer <Name>
