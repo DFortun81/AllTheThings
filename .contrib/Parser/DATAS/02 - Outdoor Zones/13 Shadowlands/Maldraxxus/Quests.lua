@@ -57,10 +57,10 @@ _.Zones =
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
 				q(57245, {	-- Ani-Matter Animator
-					-- TODO: is this Necrolord only, or available to anyone?
+				--	TODO: not necrolord only, picked up on a venthyr.  figure out SQs.  API says this is level 53... is it actually 60?
 					["provider"] = { "n", 157076 },	-- Synder Sixfold
-					["coord"] = { 26.3, 42.7, 1536 },
 					["isWeekly"] = true,
+					["coord"] = { 26.3, 42.7, 1536 },
 				}),
 				q(58031, {	-- Applied Science
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
@@ -608,6 +608,7 @@ _.Zones =
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
 					["_drop"] = { "g" },	-- drop anima trash
+					["maps"] = { 1683 },	-- Theater of Pain
 				}),
 				q(60181, {	-- Trench Warfare
 					["sourceQuests"] = {	-- TODO: verify SQs.  this didn't pop until i turned in Walk Among Death, but didn't require Memory of Honor

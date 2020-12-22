@@ -27,7 +27,17 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61595, {	-- Alchemy: Potion of Hibernal Rest
+					["requireSkill"] = ALCHEMY,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61949, {	-- Ardenweald's Tricksters
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61435, {	-- Blacksmithing: Stalker Arrowheads
+					["requireSkill"] = BLACKSMITHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

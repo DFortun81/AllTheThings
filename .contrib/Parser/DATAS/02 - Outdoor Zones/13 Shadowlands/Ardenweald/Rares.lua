@@ -65,6 +65,7 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
+					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn.",
 					["questID"] = 59006,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 75.8, 1565 },
@@ -80,11 +81,12 @@ _.Zones =
 					["questID"] = 59145,
 					["isDaily"] = true,
 					["coord"] = { 28.4, 55.3, 1565 },
+					["crs"] = { 164110 },	-- Chompy
 					["g"] = {
 						crit(4, {	-- Gormtamer Tizo
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180725),	-- Spinemaw Gladechewer
+						i(180725),	-- Spinemaw Gladechewer (MOUNT!)
 					},
 				}),
 				n(164112, {	-- Humon'gozz

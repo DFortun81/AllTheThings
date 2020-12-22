@@ -44,8 +44,8 @@ _.Zones =
 					["questID"] = 60662,	-- same quest triggers for both versions of chest
 					["isDaily"] = true,
 					["coords"] = { 
-						{ 61.1, 22.6, 1651 },	-- Molten Forge version of chest
 						{ 36.2, 81.6, 1536 },	-- Unyielding Assembly version of chest
+						{ 61.1, 22.6, 1651 },	-- Molten Forge version of chest
 					},
 				}),
 				o(352433, {	-- Cache of Eyes

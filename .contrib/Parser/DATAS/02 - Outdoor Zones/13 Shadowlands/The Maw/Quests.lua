@@ -68,6 +68,11 @@ _.Zones =
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 				}),
+				q(63166, {	-- A Shadowed Fate
+					["provider"] = { "n", 176029 },	-- Tormented Soul
+					["isDaily"] = true,
+					["coord"] = { 29.7, 20.9, 1543 },
+				}),
 				q(60775, {	-- A Suitable Demise
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
@@ -258,6 +263,11 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(62239, {	-- Rodent Removal
+				--	["provider"] = { "o",  },	-- Tormentor's Pike
+					["isDaily"] = true,
+					["coord"] = { 60.3, 72.1, 1543 },
 				}),
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky

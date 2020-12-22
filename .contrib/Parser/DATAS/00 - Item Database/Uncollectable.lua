@@ -97,6 +97,7 @@ i(23766);	-- Stabilized Eternium Scope
 i(23820);	-- Critter Enlarger
 i(28421);	-- Adamantite Weightstone
 
+i(180686);	-- "Borrowed" Soulstone
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
@@ -348,6 +349,7 @@ i(171315); 	-- Reuse me (MTMM)
 i(184631);	-- Adventurer's Enchanting Cache
 i(184634);	-- Adventurer's Herbalism Cache
 i(184635);	-- Adventurer's Mining Cache
+i(184636);	-- Adventurer's Skinning Cache
 i(173791);	-- Baguette
 i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card

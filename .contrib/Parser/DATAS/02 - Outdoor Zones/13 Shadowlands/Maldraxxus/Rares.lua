@@ -145,6 +145,7 @@ _.Zones =
 					},
 				}),
 				n(161857, { -- Nirvaska the Summoner
+					["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r WQ is up.",
 					["questID"] = 58629,
 					["isDaily"] = true,
 					["coord"] = { 50.6, 63.2, 1536 },
@@ -208,9 +209,10 @@ _.Zones =
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster
+					["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare.  Clicking the object will aggro all the Peaceful Bloodlice in the area.",
 					["questID"] = 58768,
 					["isDaily"] = true,
-					["coord"] = { 43.8, 53.2, 1536 },
+					["coord"] = { 42.5, 53.4, 1536 },
 					["g"] = {
 						crit(11, {	-- Smorgas the Feaster
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -235,9 +237,15 @@ _.Zones =
 					},
 				}),
 				n(160059, { -- Taskmaster Xox <Master Taskmaster>
-					--["coord"] = { 55.6, 22.4, 1536 },
-					--["questID"] = ,
+					["description"] = "Kill non-rare taskmasters (Bloata, Joyless, and Mortis) and Xox has a chance to spawn in their place.",
+					["questID"] = 58091,
 					["isDaily"] = true,
+					["coord"] = { 50.7, 20.1, 1536 },
+					["crs"] = {
+						160204,	-- Taskmaster Bloata
+						160230,	-- Taskmaster Joyless
+						160226,	-- Taskmaster Mortis
+					},
 					["g"] = {
 						crit(7, {	-- Taskmaster Xox
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -312,19 +320,23 @@ _.Zones =
 					},
 				}),
 				n(162180, { -- Thread Mistress Leeda
-					--["coord"] = { 50.6, 63.2, 1536 },
-					--["questID"] = ,
+					["description"] = "Kill the Razorthread Weavers in Leeda's room, and there is a chance that she will spawn in their place.",
+					["questID"] = 58678,
 					["isDaily"] = true,
+					["coord"] = { 24.0, 43.1, 1536 },
+					["crs"] = { 162220 },	-- Razorthread Weaver
 					["g"] = {
 						crit(10, {	-- Thread Mistress Leeda
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
+						i(184180),	-- Leeda's Unrefined Mask
 					},
 				}),
 				n(162819, { -- Warbringer Mal'Korak
 					["questID"] = 58889,
 					["isDaily"] = true,
 					["coord"] = { 34.4, 79.4, 1536 },
+					["crs"] = { 162818 },	-- Wartusk
 					["g"] = {
 						crit(21, {	-- Warbringer Mal'Korak
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -334,7 +346,7 @@ _.Zones =
 				}),
 				n(157125, { -- Zargox the Reborn
 					["coord"] = { 29.0, 51.6, 1536 },
-					["questID"] = 50290,
+					["questID"] = 59290,
 					["isDaily"] = true,
 					["g"] = {
 						crit(3, {	-- Zargox the Reborn

@@ -52,9 +52,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61439, {	-- Cooking: Steward Stew
+					["requireSkill"] = COOKING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = COOKING,
 				}),
 				q(60534, {	-- Disloyal Denizens
 					["isWorldQuest"] = true,
@@ -139,11 +139,16 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61467, {	-- Mining: Luminous Solenium Cluster
+					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = MINING,
 				}),
 				q(61967, {	-- Remedial Lessons
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61468, {	-- Skinning: Plush Copperfur Pelts
+					["requireSkill"] = SKINNING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -152,9 +157,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61469, {	-- Tailoring: Woven Gossamer Tunic
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = TAILORING,
 				}),
 				q(61791, {	-- Thenia's Loyal Companions
 					["isWorldQuest"] = true,

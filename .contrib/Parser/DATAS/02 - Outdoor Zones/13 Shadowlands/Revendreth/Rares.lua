@@ -349,6 +349,7 @@ _.Zones =
 						}),
 						i(179363, {	-- Misplaced Anima Tolls
 							["questID"] = 60517,	-- The Toll of the Road
+							["isDaily"] = true,
 						}),
 					},
 				}),

@@ -36,6 +36,8 @@ _.ExpansionFeatures =
 				1805,	-- Fracture Chambers - Layer 2, Floor 4 / Layer 3, Floor 1 / Skoldus Hall - Layer 2, Floor 4 / Skoldus Hall - Layer 3, Floor 1
 				1793,	-- Fracture Chambers - Layer 2, Floor 4
 				--
+				1615,	-- Fracture Chambers - Layer 6, Floor 1
+				--
 				1780,	-- Mort'regar - Layer 1, Floor 1
 				1802,	-- Mort'regar - Layer 1, Floor 2
 				1777,	-- Mort'regar - Layer 1, Floor 3

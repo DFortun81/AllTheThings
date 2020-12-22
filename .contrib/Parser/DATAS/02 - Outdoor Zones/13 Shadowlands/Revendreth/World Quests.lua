@@ -78,6 +78,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61622, {	-- Engineering: Duelist's Pistol
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61885, {	-- Eyegor's Special Friends
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
