@@ -190,6 +190,11 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
+				q(62969, {	-- Lest the Trail Go Cold
+					["sourceQuests"] = { 62966 },	-- Finding a Witness
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
 				q(60148, {	-- No Place for the Living
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
