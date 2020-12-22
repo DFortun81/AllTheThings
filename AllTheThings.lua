@@ -2388,7 +2388,7 @@ ResolveSymbolicLink = function(o)
 			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #finalized, " values after filtering.");
 			local cloned = {};
 			for k,s in ipairs(finalized) do
-				tinsert(cloned, CreateObject(s));
+				tinsert(cloned, CloneData(s));
 			end
 			return cloned;
 		else
@@ -3040,7 +3040,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Clone all the groups so that things don't get modified in the Source
 			local cloned = {};
 			for i,o in ipairs(group) do
-				tinsert(cloned, CreateObject(o));
+				tinsert(cloned, CloneData(o));
 			end
 			-- replace the Source references with the cloned references
 			group = cloned;
