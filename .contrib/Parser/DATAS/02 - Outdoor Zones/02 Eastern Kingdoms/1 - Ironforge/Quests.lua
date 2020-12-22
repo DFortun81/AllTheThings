@@ -804,6 +804,7 @@ _.Zones =
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6866)),	-- Symbol of Life
 					},

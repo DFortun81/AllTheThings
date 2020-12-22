@@ -1461,9 +1461,14 @@ _.Zones =
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6866)),	-- Symbol of Life
 					},
+				}),
+				q(1786, {	-- The Tome of Divinity
+					["classes"] = { PALADIN },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29158, {	-- The Zandalar Representative
 					["races"] = ALLIANCE_ONLY,
