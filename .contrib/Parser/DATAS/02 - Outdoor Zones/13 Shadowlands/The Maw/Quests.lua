@@ -73,6 +73,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 29.7, 20.9, 1543 },
 				}),
+				q(61075, {	-- A Spark of Light
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(60775, {	-- A Suitable Demise
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
