@@ -88,13 +88,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(6, {	-- Lady Inerva Darkvein
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
-						i(183218),	-- A Memory of Cloak of Fel Flames
-						i(183240),	-- A Memory of Memory of the Mother Tree
+						i(182336),	-- Golden Path
+						i(181466),	-- Grounding Breath
+						i(181498),	-- Grounding Surge
+						i(183218),	-- Memory of a Fortified Fel Flame
+						i(183240),	-- Memory of the Mother Tree
+						i(183502),	-- Prepared for All
+						i(181841),	-- Reinforced Shell
+						i(182469),	-- Rejuvenating Wind
+						i(182449),	-- Resolute Barrier
+						i(180896),	-- Safeguard
+						i(182317),	-- Shattered Restoration
+						i(182111),	-- Spiritual Resonance
 						i(183889),	-- Thaumaturgic Anima Bead
+						i(183464),	-- Tough as Bark
+						i(181826),	-- Translucent Image
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
-						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(182985),	-- Memento-Laden Cuisses
+						i(183037),	-- Ritualist's Treasured Ring
 						i(184025),	-- Memory of Past Sins
 					},
 				}),
@@ -384,13 +397,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14524),	-- I Don't Know What I Expected
-						i(183218),	-- A Memory of Cloak of Fel Flames
-						i(183240),	-- A Memory of Memory of the Mother Tree
+						i(182336),	-- Golden Path
+						i(181466),	-- Grounding Breath
+						i(181498),	-- Grounding Surge
+						i(183218),	-- Memory of a Fortified Fel Flame
+						i(183240),	-- Memory of the Mother Tree
+						i(183502),	-- Prepared for All
+						i(181841),	-- Reinforced Shell
+						i(182469),	-- Rejuvenating Wind
+						i(182449),	-- Resolute Barrier
+						i(180896),	-- Safeguard
+						i(182317),	-- Shattered Restoration
+						i(182111),	-- Spiritual Resonance
 						i(183889),	-- Thaumaturgic Anima Bead
+						i(183464),	-- Tough as Bark
+						i(181826),	-- Translucent Image
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
-						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(182985),	-- Memento-Laden Cuisses
+						i(183037),	-- Ritualist's Treasured Ring
 						i(184025),	-- Memory of Past Sins
 					},
 				}),
@@ -633,13 +659,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14524),	-- I Don't Know What I Expected
-						i(183218),	-- A Memory of Cloak of Fel Flames
-						i(183240),	-- A Memory of Memory of the Mother Tree
+						i(182336),	-- Golden Path
+						i(181466),	-- Grounding Breath
+						i(181498),	-- Grounding Surge
+						i(183218),	-- Memory of a Fortified Fel Flame
+						i(183240),	-- Memory of the Mother Tree
+						i(183502),	-- Prepared for All
+						i(181841),	-- Reinforced Shell
+						i(182469),	-- Rejuvenating Wind
+						i(182449),	-- Resolute Barrier
+						i(180896),	-- Safeguard
+						i(182317),	-- Shattered Restoration
+						i(182111),	-- Spiritual Resonance
 						i(183889),	-- Thaumaturgic Anima Bead
+						i(183464),	-- Tough as Bark
+						i(181826),	-- Translucent Image
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
-						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(182985),	-- Memento-Laden Cuisses
+						i(183037),	-- Ritualist's Treasured Ring
 						i(184025),	-- Memory of Past Sins
 					},
 				}),
@@ -892,13 +931,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 						}),
 						ach(14361),	-- Mythic: Lady Inerva Darkvein
 						ach(14524),	-- I Don't Know What I Expected
-						i(183218),	-- A Memory of Cloak of Fel Flames
-						i(183240),	-- A Memory of Memory of the Mother Tree
+						i(182336),	-- Golden Path
+						i(181466),	-- Grounding Breath
+						i(181498),	-- Grounding Surge
+						i(183218),	-- Memory of a Fortified Fel Flame
+						i(183240),	-- Memory of the Mother Tree
+						i(183502),	-- Prepared for All
+						i(181841),	-- Reinforced Shell
+						i(182469),	-- Rejuvenating Wind
+						i(182449),	-- Resolute Barrier
+						i(180896),	-- Safeguard
+						i(182317),	-- Shattered Restoration
+						i(182111),	-- Spiritual Resonance
 						i(183889),	-- Thaumaturgic Anima Bead
+						i(183464),	-- Tough as Bark
+						i(181826),	-- Translucent Image
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
-						i(182985),	-- Memento-Laden Cuisses
 						i(183015),	-- Binding of Warped Desires
+						i(182985),	-- Memento-Laden Cuisses
+						i(183037),	-- Ritualist's Treasured Ring
 						i(184025),	-- Memory of Past Sins
 					},
 				}),

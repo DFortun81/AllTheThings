@@ -99,7 +99,12 @@ _.Zones =
 					i(181178),	-- Cowl of Emberfury
 					i(180397),	-- Crown of Decadent Desires
 					i(181215),	-- Darkwing Assassin's Blade
+					i(181195),	-- Darkwing Rebel's Bracers
+					i(181188),	-- Darkwing Rebel's Chainmail
+					i(181194),	-- Darkwing Rebel's Cinch
 					i(181222),	-- Darkwing Rebel's Halberd
+					i(181193),	-- Darkwing Rebel's Shoulderguards
+					i(181189),	-- Darkwing Rebel's Striders
 					i(181191),	-- Devourer Wrangler's Coif
 					i(181209),	-- Devourer's Bite
 					i(181217),	-- Dominance Guard's Band
@@ -107,6 +112,7 @@ _.Zones =
 					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
 					i(181220),	-- Fiend Collector's Cudgel
+					i(181204),	-- Hide of Krengaath
 					i(180400),	-- Inquisitions Final Judgment
 					i(181223),	-- Mace of Emberwrath
 					i(181182),	-- Muck Waders

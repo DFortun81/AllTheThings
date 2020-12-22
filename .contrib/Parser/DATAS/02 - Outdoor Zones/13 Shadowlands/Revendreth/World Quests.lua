@@ -87,6 +87,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61623, {	-- Fishing: Bloodthroated Grouper
+					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59803, {	-- For Honor
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
