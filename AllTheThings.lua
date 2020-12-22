@@ -1566,7 +1566,15 @@ end
 local function GetHash(t)
 	return t.hash or CreateHash(t);
 end
+-- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
+-- based on the priority of possible key values
 CreateObject = function(t)
+	-- t can be anything, so if it is already a valid 'object', simply use CloneData
+	if t and t.key then
+		-- print("CloneData used for",t.key,t[t.key]);
+		return CloneData(t);
+	end
+	-- otherwise it is a set of raw data or array of raw data which needs to be turned into usable objects
 	local s = {};
 	if t[1] then
 		-- array
@@ -4222,7 +4230,7 @@ local function PopulateQuestObject(questObject)
 					for _,entry in ipairs(data.g) do
 						local resolved = ResolveSymbolicLink(entry);
 						if resolved then
-							entry = CreateObject(entry);
+							entry = CreateObject(entry); -- TODO: not necessary anymore
 							if entry.g then
 								MergeObjects(entry.g, resolved);
 							else
@@ -4257,7 +4265,7 @@ local function PopulateQuestObject(questObject)
 							for _,entry in ipairs(data.g) do
 								local resolved = ResolveSymbolicLink(entry);
 								if resolved then
-									entry = CreateObject(entry);
+									entry = CreateObject(entry); -- TODO: not necessary anymore
 									if entry.g then
 										MergeObjects(entry.g, resolved);
 									else
@@ -4294,7 +4302,7 @@ local function PopulateQuestObject(questObject)
 					if _cache and #_cache > 0 then
 						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 						for _,item in ipairs(_cache) do
-							item = CreateObject(item);
+							item = CreateObject(item); -- TODO: CloneData
 							item.link = link;
 							if modID then item.modID = tonumber(modID); end
 							MergeObject(questObject.g, item);
@@ -10133,7 +10141,7 @@ function app:CreateMiniListForGroup(group)
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
 					for i=#resolved,1,-1 do
-						resolved[i] = CreateObject(resolved[i]);
+						resolved[i] = CreateObject(resolved[i]); -- TODO: not necessary anymore
 					end
 					popout.data.g = resolved;
 				end
@@ -14737,7 +14745,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								for _,entry in ipairs(data.g) do
 									local resolved = ResolveSymbolicLink(entry);
 									if resolved then
-										entry = CreateObject(entry);
+										entry = CreateObject(entry); -- TODO: not necessary anymore
 										if entry.g then
 											MergeObjects(entry.g, resolved);
 										else
