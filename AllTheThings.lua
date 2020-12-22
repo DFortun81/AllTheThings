@@ -8944,8 +8944,9 @@ app.RecursiveGroupRequirementsFilter = function(group, ...)
 		      if group.parent == v then
 			 print("|cff000000WARNING:|r Circular reference in RecursiveGroupRequirementsFilter(), aborting recursion.")
 			 return false;
-		      else return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...); end
+		      end
 		   end
+		   return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...);
 		end
 		return true;
 	end
