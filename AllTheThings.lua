@@ -8926,7 +8926,7 @@ app.ShowIncompleteThings = app.Filter;
 
 -- Recursive Checks
 -- Recursively check outwards to find if any parent group restricts the filter for this character
-app.RecursiveGroupRequirementsFilter = function(group)
+app.RecursiveGroupRequirementsFilter = function(group, ...)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		-- if this group is an actual in-game 'thing', there's no reason to continue checking the parents, since it can exist on its own
 		local key = group.key;
@@ -8938,7 +8938,14 @@ app.RecursiveGroupRequirementsFilter = function(group)
 			key == "questID" or
 			(key == "itemID" and app.FilterItemBind(group))) then
 			return true;
-		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent); end
+		elseif group.parent then
+		   for k,v in ipairs({...}) do
+		      if group.parent == v then
+			 print("|cff000000WARNING:|r Circular reference in RecursiveGroupRequirementsFilter(), aborting recursion.")
+			 return false;
+		      else return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...); end
+		   end
+		end
 		return true;
 	end
 	return false;
