@@ -658,6 +658,115 @@ _.Zones =
 					}),
 					
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
+					q(60898, {	-- The Fate of Ara'lon
+						["sourceQuests"] = { 62560 },	-- Growing in Power
+						["provider"] = { "n", 158544 },	-- Lord Herne
+						["coord"] = { 40.9, 72.4, 1701 },
+					}),
+					q(60910, {	-- Masks of Deception
+						["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
+						["provider"] = { "n", 170705 },	-- Ara'lon
+						["coord"] = { 43.2, 40.1, 1565 },
+					}),
+					q(60928, {	-- Blackthorn Captives
+						["sourceQuests"] = { 60910 },	-- Masks of Deception
+						["provider"] = { "n", 170705 },	-- Ara'lon
+						["coord"] = { 43.2, 40.1, 1565 },
+					}),
+					q(60934, {	-- Report to Lord Herne
+						["sourceQuests"] = { 60928 },	-- Blackthorn Captives
+						["provider"] = { "n", 170705 },	-- Ara'lon
+						["coord"] = { 41.1, 31.6, 1565 },
+						["g"] = {
+							i(175603),	-- Faewoven Cuffs
+							i(179772),	-- Oakheart Bracers
+							i(179894),	-- Queensguard Vambraces
+							i(181916),	-- Runewarden's Armguards
+						},
+					}),
+					q(61061, {	-- Ulfar's Guidance
+						["sourceQuests"] = { 60934 },	-- Report to Lord Herne
+						["provider"] = { "n", 171138 },	-- Ysera
+						["coord"] = { 53.2, 78.3, 1701 },
+					}),
+					q(61076, {	-- Into the Flame
+						["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
+						["provider"] = { "n", 141159 },	-- Ulfar
+						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+					}),
+					q(61102, {	-- Kivarr the Thornspeaker
+						["sourceQuests"] = { 61076 },	-- Into the Flame
+						["provider"] = { "n", 141159 },	-- Ulfar
+						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+					}),
+					q(61113, {	-- Kivarr's Den
+						["sourceQuests"] = { 61102 },	-- Kivarr the Thornspeaker
+						["provider"] = { "n", 170848 },	-- Lord Herne
+						["coord"] = { 50.9, 80.8, 1701 },
+					}),
+					q(61701, {	-- Searching the Grove
+						["sourceQuests"] = { 61113 },	-- Kivarr's Den
+						["provider"] = { "n", 170705 },	-- Ara'lon
+						["coord"] = { 43.7, 69.1, 1565 },
+					}),
+					q(58773, {	-- The Thornspeaker Captive
+						["sourceQuests"] = { 61701 },	-- Searching the Grove
+						["provider"] = { "n", 171413 },	-- Kivarr
+						["coord"] = { 46.6, 73.1, 1565 },
+					}),
+					q(61702, {	-- A Swift Intervention
+						["sourceQuests"] = { 58773 },	-- The Thornspeaker Captive
+						["provider"] = { "n", 173612 },	-- Nika
+						["coord"] = { 46.6, 73.1, 1565 },
+					}),
+					q(61143, {	-- Return to the Den
+						["sourceQuests"] = { 61702 },	-- A Swift Intervention
+						["provider"] = { "n", 171413 },	-- Kivarr
+						["coord"] = { 41.3, 74.3, 1565 },
+						["g"] = {
+							i(175600),	-- Faewoven Sash
+							i(179771),	-- Oakheart Belt
+							i(179893),	-- Queensguard Girdle
+							i(181915),	-- Runewarden's Buckle
+						},
+					}),
+					q(61703, {	-- Nox Root
+						["sourceQuests"] = { 61143 },	-- Return to the Den
+						["provider"] = { "n", 171413 },	-- Kivarr
+						["coord"] = { 43.7, 69.0, 1565 },
+					}),
+					q(61709, {	-- Witch's Satchel
+						["sourceQuests"] = { 61703 },	-- Nox Root
+						["provider"] = { "n", 171413 },	-- Kivarr
+						["coord"] = { 46.2, 56.5, 1565 },
+					}),
+					q(61710, {	-- The Broken Spear
+						["sourceQuests"] = { 61703 },	-- Nox Root
+						-- TODO: add provider objectID, I couldn't see it in game and its not on wowhead yet.
+						--["provider"] = { "o", xxx },	-- Broken Spear
+						["coord"] = { 33.8, 54.4, 1565 },
+					}),
+					q(61711, {	-- Ritual of Purification
+						["sourceQuests"] = { 
+							61710,	 -- The Broken Spear
+							61709,	 -- Witch's Satchel
+						},
+						["provider"] = { "n", 171413 },	-- Kivarr
+						["coord"] = { 46.2, 56.5, 1565 },
+					}),
+					q(61171, {	-- Unbroken Bonds
+						["sourceQuests"] = { 61711 },	-- Ritual of Purification
+						["provider"] = { "n", 170848 },	-- Lord Herne
+						["coord"] = { 46.2, 56.7, 1565 },
+						["g"] = {
+							i(175597),	-- Faewoven Amice
+							i(179770),	-- Oakheart Mantle
+							i(179892),	-- Queensguard Pauldrons
+							i(181914),	-- Runewarden's Spaulders
+						},
+					}),
+
+
 					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
 					-- Chapter 8: Deal for a Loa (Renown 20 required to start)
 					-- Chapter 9: Drust and Ashes (Renown 22 required to start)
@@ -731,6 +840,11 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 							q(62188, {	-- Catch A Star
+								["provider"] = { "n", 173277 },	-- Teendynneetll
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(61875, {	-- Doing the Dew
 								["provider"] = { "n", 173277 },	-- Teendynneetll
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,

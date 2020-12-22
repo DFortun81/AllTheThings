@@ -23,6 +23,7 @@ _.ExpansionFeatures =
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(60267, {	-- Prison of the Forgotten
+					["sourceQuests"] = { 61099 },	-- The Search For Baine
 					["provider"] = { "i", 178585 },	-- The Forgotten Key
 					["cr"] = 151329,	-- Warden Skoldus
 				}),
