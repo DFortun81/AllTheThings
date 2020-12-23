@@ -1378,7 +1378,21 @@ _.Zones =
 								["cost"] = { { "c", 1813, 5000 } },
 							}),
 							i(184118, {	-- Arsenal: Winterborn Weapons
+								["questID"] = 62806,
 								["cost"] = { { "c", 1813, 30000 } },
+								["g"] = {
+									i(180075),	-- Winterborn Bow
+									i(179496),	-- Winterborn Fang
+									i(179571),	-- Winterborn Harp
+									i(179582),	-- Winterborn Jaws
+									i(179545),	-- Winterborn Maul
+									i(179556),	-- Winterborn Scepter
+									i(182353),	-- Winterborn Shillelagh
+									i(179525),	-- Winterborn Spear
+									i(180001),	-- Winterborn Staff
+									i(180018),	-- Winterborn Wand
+									i(180256),	-- Winterborn Warglaive
+								},
 							}),
 							i(181305, {	-- Faewoven Bulb
 								["cost"] = { { "c", 1813, 3500 } },
