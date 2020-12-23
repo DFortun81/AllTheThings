@@ -22,6 +22,7 @@ _.Zones =
 							i(180629),	-- Devouring Animite
 							i(181170),	-- Pernicious Bonetusk
 							i(182671),	-- Runelight Leaper
+							i(180872),	-- Spirited Skyfoal
 							-- Misc.
 							i(184630),	-- Adventurer's Tailoring Cache
 					},

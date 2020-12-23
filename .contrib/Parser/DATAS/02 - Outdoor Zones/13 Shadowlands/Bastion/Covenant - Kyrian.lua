@@ -720,7 +720,7 @@ _.Zones =
 								["provider"] = { "n", 168427 },	-- Artemede
 								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
 							}),
-							q(60447, {	-- Humble Gatherer
+							q(60493, {	-- Humble Gatherer
 								["sourceQuests"] = { 60489 },	-- The Path of Ascension
 								["provider"] = { "n", 168485 },	-- Apolon
 								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
@@ -729,6 +729,9 @@ _.Zones =
 								["sourceQuests"] = { 60495 },	-- A Suitable Opponent
 								["provider"] = { "n", 168427 },	-- Artemede
 								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+								["g"] = {
+									i(180464),	-- Blueprint: Herald's Footpads
+								},
 							}),
 							q(61370, {	-- No Other Way
 								-- Rewards spell 340105 (Trial: Craven Corinth)
@@ -800,7 +803,7 @@ _.Zones =
 								["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
 							}),
 							q(60494, {	-- Your Friend, Dactylis
-								["sourceQuests"] = { 60447 },	-- Humble Gatherer
+								["sourceQuests"] = { 60493 },	-- Humble Gatherer
 								["provider"] = { "n", 168485 },	-- Apolon
 								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
 							}),

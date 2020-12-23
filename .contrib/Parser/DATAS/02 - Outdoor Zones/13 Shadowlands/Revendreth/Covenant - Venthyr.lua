@@ -984,6 +984,12 @@ _.Zones =
 										["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
 										["crs"] = { 171705 },	-- Court Crusher
 									}),
+									q(61892, {	-- Ember Court Ambassador
+										-- TODO: use faction requirement logic of Friendly with Ember Court instead
+										["description"] = "Requires Friendly with Ember Court",
+										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									}),
 									q(61407, {	-- Ember Court: Atoning Rituals
 										["sourceQuests"] = {
 											61706,	-- Ember Court: Entertainment
@@ -1144,6 +1150,12 @@ _.Zones =
 										["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 										["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
 									}),
+									q(61898, {	-- Small Bites
+										-- TODO: use faction requirement logic of Friendly with Ember Court instead
+										["description"] = "Requires Friendly with Ember Court",
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 28.9, 44.2, 1525 },	-- Revendreth
+									}),
 									q(61616, {	-- The Ember Court (Week 1)
 									--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
 										["sourceQuests"] = {
@@ -1178,6 +1190,26 @@ _.Zones =
 								n(-965, {	-- Tier 5: The Professionals
 								}),
 								n(VENDORS, {
+									n(165453, {	-- Lady Ilinca <Court Concierge>
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(183876, {	-- Quill of Correspondence
+											}),
+											i(176850, {	-- Blank Invitation
+											}),
+											i(177234, {	-- Rally Bell
+												-- ["questID"] = ,
+											}),
+											i(183956, {	-- Invitation: Choofa
+												-- ["questID"] = ,
+											}),
+											i(183957, {	-- Invitation: Grandmaster Vole
+												-- TODO: use faction requirement logic of Friendly with Ember Court instead
+												["description"] = "Requires Friendly with Ember Court",
+												["questID"] = 62657,
+											}),
+										},
+									}),
 									n(173371, {	-- Lady Rovinette <Ember Court Clothier>
 										["coord"] = { 28.3, 43.7, 1525 },	-- Revendreth
 										["g"] = {
