@@ -133,40 +133,32 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.8, 79.0, 1525 },
 					["g"] = {
-						-- TODO: rearrange this probably...
-						n(165327, {	-- Wingsmash
+						q(59607, {	-- Takin' Down the Beast
+							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
+							["isDaily"] = true,
+							["crs"] = { 165327 },	-- Wingsmash
 							["coord"] = { 46.30, 77.86, 1525 },
-							["g"] = {
-								q(59607, {	-- Takin' Down the Beast
-									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-									["isDaily"] = true,
-									["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
-									["g"] = {										
-										i(176397, {	-- Dredhollow Bolt
-											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
-											["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
-											["crs"] = { 165324 },	-- Dredterror Ballista
-										}),
-									}
-								}),
-							},
+							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 						}),
-						n(165325, {	-- Muckborn Craftsman
-							["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
-							["g"] = {
-								-- TODO: do they offer a quest to repair the ballista? have never seen it...
-								-- i(176396, {			-- Dredhollow Tools
-								-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-								-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
-								-- 	["coords"] = {
-								-- 		{ 40.77, 72.70, 1525 },	-- Tool1
-								-- 		{ 41.18, 74.67, 1525 },	-- Tool2
-								-- 	},
-								-- 	["g"] = {
-								-- 	},
-								-- }),
-							},
+						i(176397, {	-- Dredhollow Bolt
+							["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
 						}),
+						-- TODO: do they offer a quest to repair the ballista? have never seen it...
+						-- n(165325, {	-- Muckborn Craftsman
+						-- 	["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+						-- 	["g"] = {
+						-- 		-- i(176396, {			-- Dredhollow Tools
+						-- 		-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+						-- 		-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
+						-- 		-- 	["coords"] = {
+						-- 		-- 		{ 40.77, 72.70, 1525 },	-- Tool1
+						-- 		-- 		{ 41.18, 74.67, 1525 },	-- Tool2
+						-- 		-- 	},
+						-- 		-- 	["g"] = {
+						-- 		-- 	},
+						-- 		-- }),
+						-- 	},
+						-- }),
 						i(180713),	-- Shrieker's Voicebox
 						i(180461, {	-- Horrid Dredwing (MOUNT!)
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
