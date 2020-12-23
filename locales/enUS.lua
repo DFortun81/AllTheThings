@@ -672,6 +672,7 @@ app.L = {
 		[-933] = 2451604,																	-- Greater Spirit
 		[-935] = "Interface\\Icons\\ui_sigil_nightfae",										-- Sanctum Upgrades (Night Fae)
 		[-936] = "Interface\\Icons\\ui_sigil_nightfae",										-- Soulshape Forms (Night Fae)
+		[-937] = "Interface\\Icons\\ui_sigil_nightfae",										-- Transport Network (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-941] = "Interface\\Icons\\ui_sigil_kyrian",										-- Sanctum Upgrades (Kyrian)
 		[-942] = 3675496,																	-- Path of Ascension
@@ -1540,6 +1541,7 @@ app.L = {
 		[-934] = "Star Lake Amphitheater",										-- Star Lake Amphitheater
 		[-935] = "Sanctum Upgrades",											-- Sanctum Upgrades (Night Fae)
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
+		[-937] = "Transport Network",											-- Transport Network (Night Fae)
 
 -- SL Bastion/Kyrian
 		[-939] = "Covenant: Kyrian",											-- Covenant: Kyrian

@@ -613,8 +613,6 @@ _.Zones =
 						},
 					}),					
 
-					-- Necrolord Campaign, Chapter 5: Do Not Forget
-
 					-- Chapter 5 (Do Not Forget), requires Renown 11
 					q(59625, {	-- The Only Cure
 						["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
@@ -705,6 +703,21 @@ _.Zones =
 						["provider"] = { "n", 166535 },	-- Baroness Draka
 						["coord"] = { 50.4, 70.6, 1536 },	-- Maldraxxus
 					}),
+
+					-- Chapter 6 (A Golden Dawn), requires Renown 14
+					q(61145, {	-- Take The Fight To Them
+						["sourceQuests"] = { 61586 },	-- Machinations of War
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.7, 1698 },
+					}),
+					-- TODO: add the rest of Chapter 6
+
+					-- TODO: Chapter 7 (The Wages of Sin), requires Renown 17
+					
+					-- TODO: Chapter 8 (The House of Rituals), requires Renown 20
+					
+					-- TODO: Chapter 9 (Assault on the House of Rituals), requires Renown 22
+
 
 					-- TODO: moved these here from Maldraxxus quests file, but don't think they made it out of beta; commenting out for now
 					--[[
@@ -922,6 +935,12 @@ _.Zones =
 								["coord"] = { 54.3, 68.1, 1536 },
 								["isWeekly"] = true,
 							}),
+							q(61522, {    -- Corpse Run
+								["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
+								["provider"] = { "n", 158300 },    -- Flytrap
+								["coord"] = { 54.3, 68.1, 1536 },
+								["isWeekly"] = true,
+							}),
 							q(62217, {	-- Field Training
 								["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 								["provider"] = { "n", 158301 },    -- Marz
@@ -932,6 +951,12 @@ _.Zones =
 								["sourceQuests"] = { 58665 },	-- Rebellious Souls
 								["provider"] = { "n", 162153 },	-- Rathan
 								["coord"] = { 26.0, 42.6, 1536 },
+							}),
+							q(62041, {    -- In A Bad Light
+								["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
+								["provider"] = { "n", 159241 },    -- Roseboil
+								["coord"] = { 55.1, 68.1, 1536 },
+								["isWeekly"] = true,
 							}),
 							q(58680, {	-- Loose Threads
 								["sourceQuests"] = { 58668 },	-- Find The Way
@@ -966,7 +991,7 @@ _.Zones =
 								["coord"] = { 55.1, 68.8, 1536 },
 							}),
 							q(59126, {    -- Supply Chain
-								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Atticus
+								["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 								["provider"] = { "n", 159238 },    -- Atticus
 								["coord"] = { 55.3, 68.3, 1536 },
 								["isWeekly"] = true,
@@ -983,7 +1008,7 @@ _.Zones =
 								["isWeekly"] = true,
 							}),
 							q(62216, {	-- Training Program
-								-- TODO: ["sourceQuests"] = { ?? },	-- need to have built Marz
+								["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 								["provider"] = { "n", 158301 },    -- Marz
 								["coord"] = { 54.2, 68.6, 1536 },
 								["isWeekly"] = true,

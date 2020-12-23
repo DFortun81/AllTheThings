@@ -214,82 +214,11 @@ _.Zones =
 					}),
 					
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
-					q(62606, {	-- A Blackthorn Blend
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(63073, {	-- A Mycelial Network
-						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.6, 55.0, 1702 },
-						["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
-					}),
-					q(62608, {	-- A Royal Treat
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(60175, {	-- A Taste of Tirna Noch
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
 					q(61058, {	-- Bound in Dreams
 						-- No idea what triggers this because they added the quest weeks after I already had Dreamweaver.
 						-- If someone quests on a new Night Fae character they might be able to figure out the sourceQuest(s)
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
-					}),
-					q(57459, {	-- Fighting For Fungus
-						["sourceQuests"] = {
-							57455,	-- Mushroom For Improvement
-							57458,	-- Ring Repairs
-						},
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 29.5, 34.8, 1565 },
-					}),
-					q(62607, {	-- Glittering Gritty Goodness
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(62614, {	-- Hyphae Patrol: Eventide Grove
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(62615, {	-- Hyphae Patrol: Gossamer Cliffs
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(62611, {	-- Hyphae Patrol: Heartwood Grove
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(62610, {	-- Hyphae Patrol: The Stalks
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
-						["isDaily"] = true,
-					}),
-					q(57455, {	-- Mushroom For Improvement
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 33.2, 36.3, 1565 },
-					}),
-					q(57463, {	-- My Way or the Hyphae
-						["sourceQuests"] = { 57459 },	-- Fighting For Fungus
-						["provider"] = { "n", 166982 },	-- Marasmius
-						["coord"] = { 29.5, 34.6, 1565 },
 					}),
 					q(63347, {	-- Night Fae Tactician
 						["provider"] = { "n", 176096 },	-- Laurel
@@ -313,22 +242,6 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
-					q(57458, {	-- Ring Repairs
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 33.2, 36.3, 1565 },
-					}),
-					q(57454, {	-- Silence in the Stalks
-						["sourceQuests"] = { 63073 },	-- A Mycelial Network
-						["provider"] = { "n", 174609 },	-- Zaki
-						["coord"] = { 53.2, 33.2, 1702 },
-					}),
-					q(57583, {	-- Through the Veil
-						["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
-						["provider"] = { "n", 166982 },	-- Marasmius
-						["coord"] = { 29.5, 34.6, 1565 },
-					}),
-
 					
 					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
 
@@ -1187,11 +1100,104 @@ _.Zones =
 							}),
 						},
 					}),
-					-- Transport Network
-						-- TODO: add header and move Mirasmius quests here
-						-- Tier 1: Nurtured Roots
-						-- Tier 2: Fun with Fungi
-						-- Tier 3: Blossoming Network
+					n(-937, {	-- Transport Network
+						-- (not adding tier headers at this time, can do it later if it needs to be more organized)
+						--		Tier 1: Nurtured Roots
+						--		Tier 2: Fun with Fungi
+						--		Tier 3: Blossoming Network
+						q(62606, {	-- A Blackthorn Blend
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(63073, {	-- A Mycelial Network
+							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+							["coord"] = { 39.6, 55.0, 1702 },
+							["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
+						}),
+						q(62608, {	-- A Royal Treat
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(60175, {	-- A Taste of Tirna Noch
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(57459, {	-- Fighting For Fungus
+							["sourceQuests"] = {
+								57455,	-- Mushroom For Improvement
+								57458,	-- Ring Repairs
+							},
+							["provider"] = { "n", 157710 },	-- Cortinarius
+							["coord"] = { 29.5, 34.8, 1565 },
+						}),
+						q(62607, {	-- Glittering Gritty Goodness
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62614, {	-- Hyphae Patrol: Eventide Grove
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62615, {	-- Hyphae Patrol: Gossamer Cliffs
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62611, {	-- Hyphae Patrol: Heartwood Grove
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62610, {	-- Hyphae Patrol: The Stalks
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62296, {	-- Into the Unknown
+							-- requires tier 2 network, but there's no sourceQuest for that
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(57455, {	-- Mushroom For Improvement
+							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+							["provider"] = { "n", 157710 },	-- Cortinarius
+							["coord"] = { 33.2, 36.3, 1565 },
+						}),
+						q(57463, {	-- My Way or the Hyphae
+							["sourceQuests"] = { 57459 },	-- Fighting For Fungus
+							["provider"] = { "n", 166982 },	-- Marasmius
+							["coord"] = { 29.5, 34.6, 1565 },
+						}),
+						q(57458, {	-- Ring Repairs
+							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+							["provider"] = { "n", 157710 },	-- Cortinarius
+							["coord"] = { 33.2, 36.3, 1565 },
+						}),
+						q(57454, {	-- Silence in the Stalks
+							["sourceQuests"] = { 63073 },	-- A Mycelial Network
+							["provider"] = { "n", 174609 },	-- Zaki
+							["coord"] = { 53.2, 33.2, 1702 },
+						}),
+						q(57583, {	-- Through the Veil
+							["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
+							["provider"] = { "n", 166982 },	-- Marasmius
+							["coord"] = { 29.5, 34.6, 1565 },
+						}),
+					}),
 				}),
 				n(-936, {	-- Soulshape Forms
 					-- TODO: fill in remaining quests that are as yet unknown
