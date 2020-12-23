@@ -27,6 +27,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61434, {	-- Alchemy: Flask of Measured Discipline
+					["requireSkill"] = ALCHEMY,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62235, {	-- Allay Their Fears
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

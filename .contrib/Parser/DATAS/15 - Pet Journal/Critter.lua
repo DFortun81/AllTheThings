@@ -87,7 +87,7 @@ _.PetJournal =
 		p(442),		-- Irradiated Roach
 		p(2663),	-- Junkheap Roach
 		p(429),		-- Lava Beetle
-		p(3035),	-- Lavender Nibbler
+		un(NEVER_IMPLEMENTED, p(3035)),	-- Lavender Nibbler -- no evidence of this ever dropping yet (12/23/2020)
 		p(203),		-- Little Fawn
 		p(2471),	-- Littlehoof
 		p(543),		-- Locust

@@ -774,17 +774,27 @@ _.Zones =
 									i(184487),	-- Gormling in a Bag (toy)
 								},
 							}),
-							q(61950, {    -- Hunting the Wilds
+							q(61950, {	-- Hunting the Wilds
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,
 							}),
-							q(62081, {    -- Return Those Animacones!
+							q(61968, {	-- Just Wing It
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,
 							}),
-							q(62057, {    -- Those Who Hunger
+							q(62081, {	-- Return Those Animacones!
+								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(62155, {	-- Runestone Roundup
+								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+								["coord"] = { 59.7, 52.8, 1565 },
+								["isDaily"] = true,
+							}),
+							q(62057, {	-- Those Who Hunger
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
 								["coord"] = { 59.7, 52.8, 1565 },
 								["isDaily"] = true,

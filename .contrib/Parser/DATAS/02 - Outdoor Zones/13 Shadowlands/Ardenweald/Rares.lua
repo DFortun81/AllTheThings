@@ -73,7 +73,7 @@ _.Zones =
 						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(183196),	-- Lavender Nibbler (PET!)
+						un(NEVER_IMPLEMENTED, i(183196)),	-- Lavender Nibbler (PET!) -- no evidence of this ever dropping yet (12/23/2020)
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo

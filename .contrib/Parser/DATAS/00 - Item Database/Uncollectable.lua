@@ -114,6 +114,7 @@ i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
 i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
+i(180660);	-- Darktower Parchments: Instant Polymorphist
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
 i(142262);	-- Electrified Key

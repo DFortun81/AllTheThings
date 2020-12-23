@@ -55,7 +55,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(8343, {	-- Deck Your Collection (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 				--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
 			}))),
-			a(ach(9176, {			-- Deck Your Collection (Season 2) (Alliance) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it.**
+			un(REMOVED_FROM_GAME, a(ach(9176, {			-- Deck Your Collection (Season 2) (Alliance) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
 				i(98543),				-- Wraps of the Blood-Soaked Brawler
 				crit(1),				-- Grandpa Grumplefloot
 				crit(2),				-- Ty'thar
@@ -70,8 +70,8 @@ _.Achievements =
 				crit(11),				-- Mingus Diggs
 				crit(12),				-- The Blind Hero
 				un(REMOVED_FROM_GAME, a(ach(8339))),	-- Collect Your Deck (Season 2)
-			})),
-			h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it.**
+			}))),
+			un(REMOVED_FROM_GAME, h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
 				i(98543),				-- Wraps of the Blood-Soaked Brawler
 				crit(1),				-- Grandpa Grumplefloot
 				crit(2),				-- Ty'thar
@@ -86,7 +86,7 @@ _.Achievements =
 				crit(11),				-- Mingus Diggs
 				crit(12),				-- The Blind Hero
 				un(REMOVED_FROM_GAME, h(ach(8342))),	-- Collect Your Deck (Season 2)
-			})),
+			}))),
 			un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
 				["classes"] = { WARLOCK },
 			})),

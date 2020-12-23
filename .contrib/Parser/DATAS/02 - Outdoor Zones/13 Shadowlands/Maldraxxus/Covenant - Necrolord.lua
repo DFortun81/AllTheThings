@@ -710,6 +710,21 @@ _.Zones =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.7, 50.7, 1698 },
 					}),
+					q(59910, {	-- Fight and Flight
+						["sourceQuests"] = { 61145 },	-- Take The Fight To Them
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						--["coord"] = { },
+					}),
+					q(60043, {	-- Justice from Above
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.6, 26.5, 1536 },
+					}),
+					q(59916, {	-- The Butchers of Bastion
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 26.0, 1536 },
+					}),
 					-- TODO: add the rest of Chapter 6
 
 					-- TODO: Chapter 7 (The Wages of Sin), requires Renown 17
