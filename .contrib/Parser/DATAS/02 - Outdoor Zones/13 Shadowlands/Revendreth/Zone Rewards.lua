@@ -139,6 +139,7 @@ _.Zones =
 					i(181196),	-- Stonewrought Helm
 					i(181200),	-- Stonewrought Legguards
 					i(180398),	-- Stonewrought Legion Halberd
+					i(181357),	-- Tablet of Despair
 					i(181214),	-- Tax Collector's Barb
 				},
 			}),

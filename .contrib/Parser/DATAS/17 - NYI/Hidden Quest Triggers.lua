@@ -3310,6 +3310,7 @@ _.HiddenQuestTriggers =
 		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
+		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3375,6 +3376,7 @@ _.HiddenQuestTriggers =
 		
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID
+		q(62812),	-- Nurgash Muckformed kill questID
 		q(62811),	-- Oranomonos kill questID
 
 		-- Castle Nathria

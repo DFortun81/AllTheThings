@@ -181,6 +181,14 @@ _.Zones =
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(177235, {	-- Tubbins's Lucky Teapot
+							crit(6, {	-- Tubbins's Lucky Teapot
+								["achievementID"] = 14678,	-- Court Favors
+								["customCollect"] = "SL_COV_VEN",
+							}),
+						}),
+					},
 				}),
 				q(59853, {	-- Tea Tales: Lost Sybille
 					["isWorldQuest"] = true,

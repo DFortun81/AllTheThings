@@ -834,8 +834,6 @@ _.Zones =
 											}),
 											crit(5, {	-- Rally Bell
 											}),
-											crit(6, {	-- Tubbins's Lucky Teapot
-											}),
 											crit(7, {	-- Dog Bone's Bone
 											}),
 											crit(8, {	-- Dredger Party Supplies
