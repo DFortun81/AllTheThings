@@ -75,7 +75,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(180813)),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(183853)),	-- Sinfall Screecher
 		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)
-		un(NEVER_IMPLEMENTED, i(180872)),	-- Spirited Skyfoal (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		-- Recipes
 		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
