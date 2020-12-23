@@ -9107,6 +9107,9 @@ local function UpdateParentProgress(group, increment)
 	-- Continue on to this object's parent.
 	if group.parent then
 		if group.visible then
+			-- If this is a collected collectible, update the parent.
+			if group.collectible and group.collected then UpdateParentProgress(group.parent, true) end;
+
 			-- If this group is trackable, then we should show it.
 			if app.GroupVisibilityFilter(group) then
 				group.visible = true;
@@ -9115,9 +9118,6 @@ local function UpdateParentProgress(group, increment)
 			else
 				group.visible = false;
 			end
-
-			-- If we are no longer visible, then update the parent.
-			if not group.visible then UpdateParentProgress(group.parent, true) end;
 		end
 	end
 end
