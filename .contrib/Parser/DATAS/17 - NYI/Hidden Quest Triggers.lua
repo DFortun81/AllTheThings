@@ -3006,11 +3006,11 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
 		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr -- TODO: confirm
-		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared -- TODO: confirm
+		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
-		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord -- TODO: confirm
+		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
+		q(63287),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
 		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
 		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
