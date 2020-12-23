@@ -65,7 +65,15 @@ _.ExpansionFeatures =
 						follower(1220),	-- Ayeleth
 					},
 				}),
+				q(61421, {	-- Champion: Blisswing [Night Fae]
+					["sourceQuests"] = { 61427 },	-- Blisswing's Rescue
+					["provider"] = { "n", 172244 },	-- Blisswing
+					["g"] = {
+						follower(1277),	-- Blisswing
+					},
+				}),
 				q(61424, {	-- Champion: Chalkyth [Night Fae]
+					["sourceQuests"] = { 61430 },	-- Chalkyth's Saber
 					["provider"] = { "n", 172240 },	-- Chalkyth
 					["g"] = {
 						follower(1280),	-- Chalkyth
@@ -91,6 +99,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(60651, {	-- Champion: Meatball
+					["sourceQuests"] = { 60573 },	-- Meatball's Revenge
 					["provider"] = { "n", 169842 },	-- Meatball
 					["g"] = {
 						follower(1257),	-- Meatball
@@ -116,6 +125,7 @@ _.ExpansionFeatures =
 				}),
 				
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
+				--[[
 				q(60137, {	-- The Fracture Chambers
 					["sourceQuests"] = { 61099 },	-- Skoldus Hall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -142,13 +152,19 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
+				]]--
+				
+				
 				-- Bonus Quests
+				-- TODO: are the ones that lead to the follower quest actually repeatable?
 				q(61259, {	-- Ayeleth's Hunger
 					["repeatable"] = true,
 					["provider"] = { "n", 171920 },	-- Ayeleth
 				}),
+				q(61427, {	-- Blisswing's Rescue
+					["provider"] = { "n", 172244 },	-- Blisswing
+				}),
 				q(61430, {	-- Chalkyth's Saber
-					["repeatable"] = true,
 					["provider"] = { "n", 172240 },	-- Chalkyth
 				}),
 				q(59340, {	-- Gallath's Bell

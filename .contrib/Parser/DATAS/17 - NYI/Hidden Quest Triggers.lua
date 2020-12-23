@@ -3006,11 +3006,11 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
 		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr -- TODO: confirm
-		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared -- TODO: confirm
+		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
-		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord -- TODO: confirm
+		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
+		q(63287),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
 		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
 		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
@@ -3362,6 +3362,7 @@ _.HiddenQuestTriggers =
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
+		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"

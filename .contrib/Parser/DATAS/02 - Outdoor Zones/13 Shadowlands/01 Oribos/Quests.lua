@@ -250,7 +250,8 @@ _.Zones =
 					["provider"] = { "n", 173350 },	-- Ba'vol
 					["coord"] = { 64.4, 35.8, 1670 },
 					["g"] = {
-						i(183224), -- Memory of a Deep Focus Draught
+						i(183224),	-- Memory of a Deep Focus Draught
+						i(183269),	-- Memory of the Triune Ward
 					},
 				}),
 				q(61475, {	-- The Heart of the Forest
