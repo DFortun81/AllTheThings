@@ -1417,10 +1417,10 @@ _.Zones =
 									{ "c", 1885, 75 },
 								},
 							}),
-							i(180290, {	-- Night Fae Hearthstone
+							i(180290, {	-- Night Fae Hearthstone (TOY)
 								["cost"] = { { "c", 1813, 750 } },
 							}),
-							i(182663, {	-- Trootie
+							i(182663, {	-- Trootie (PET)
 								["cost"] = { 
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 20 },
@@ -1429,7 +1429,10 @@ _.Zones =
 							i(184164, {	-- Illusion: Wild Soul
 								["cost"] = { { "c", 1813, 2500 } },
 							}),
-
+							i(183249, {	-- Memory of a Vital Sacrifice
+								-- appears on vendor after doing the questline to get to Renown 14
+								["cost"] = { { "c", 1813, 250 } },
+							}),
 							i(179674, {	-- Night Courtier's Amice
 								["cost"] = { 
 									{ "c", 1813, 4000 },

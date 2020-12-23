@@ -3362,6 +3362,7 @@ _.HiddenQuestTriggers =
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
+		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
