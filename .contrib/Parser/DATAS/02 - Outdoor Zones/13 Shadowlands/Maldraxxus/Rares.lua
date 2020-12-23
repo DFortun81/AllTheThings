@@ -85,7 +85,7 @@ _.Zones =
 					["coord"] = { 31.4, 35.4, 1536 },
 					["questID"] = 58872,
 					["isDaily"] = true,
-					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
+					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
 					["g"] = {
 						i(182080, {	-- Predatory Plagueroc (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
@@ -142,18 +142,6 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182084),	-- Gorespine
-					},
-				}),
-				n(161857, { -- Nirvaska the Summoner
-					["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r WQ is up.",
-					["questID"] = 58629,
-					["isDaily"] = true,
-					["coord"] = { 50.6, 63.2, 1536 },
-					["g"] = {
-						crit(9, {	-- Nirvaska the Summoner
-							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
-						}),
-						i(183700),	-- Forgotten Summoner's Shoulderpads
 					},
 				}),
 				n(162767, {	-- Pesticide

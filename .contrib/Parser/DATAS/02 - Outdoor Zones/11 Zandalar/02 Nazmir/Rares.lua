@@ -226,14 +226,6 @@ _.Zones =
 
 					}),
 				}),
-				n(128610, {	-- Maw of Shul-Nagruth
-					["description"] = "This rare is only up when its associated world quest is active.",
-					["questID"] = 50467,
-					["coord"] = { 49.8, 67.0, 863 },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-						i(160973),	-- Accursed Tuskwand
-					}),
-				}),
 				n(124375, {	-- Overstuffed Saurolisk
 					["questID"] = 47827,
 					["coord"] = { 62.1, 65.0, 863 },

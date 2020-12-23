@@ -67,6 +67,20 @@ _.Zones =
 				q(58490, {	-- Deadly Reminder
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						n(161857, { -- Nirvaska the Summoner
+							["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
+							["questID"] = 58629,
+							["isDaily"] = true,
+							["coord"] = { 50.6, 63.2, 1536 },
+							["g"] = {
+								crit(9, {	-- Nirvaska the Summoner
+									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+								}),
+								i(183700),	-- Forgotten Summoner's Shoulderpads
+							},
+						}),
+					},
 				}),
 				q(61141, {	-- Deathfang's Favorite Toy
 					["isWorldQuest"] = true,

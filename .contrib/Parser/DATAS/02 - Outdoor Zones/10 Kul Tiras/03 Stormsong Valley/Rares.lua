@@ -314,9 +314,6 @@ _.Zones =
 							["achievementID"] = 13054,	-- Sabertron Assemble
 							["description"] = "Red is the default color when a WQ isn't active.  To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
 						}),
-						crit(4, {	-- Sabertron
-							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
-						}),
 						i(154664),	-- Lionsight Omensword
 					}),
 				}),
@@ -442,17 +439,6 @@ _.Zones =
 							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 						}),
 					}),
-				}),
-				n(129803, {	-- Whiplash
-					["description"] = "This rare only spawns during its associated world quest.",
-					["questID"] = 52299,	-- Whiplash
-					["repeatable"] = true,
-					["coord"] = { 47.32, 65.81, 942 },
-					["g"] = {
-						crit(27, {	-- Whiplash
-							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
-						}),
-					},
 				}),
 				n(142088, {	-- Whirlwing
 					["questID"] = 52457,

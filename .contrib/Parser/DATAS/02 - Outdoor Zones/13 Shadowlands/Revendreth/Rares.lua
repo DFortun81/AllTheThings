@@ -55,19 +55,6 @@ _.Zones =
 						i(183731),	-- Smolder-Tempered Legplates
 					},
 				}),
-				n(166292, {	-- Bog Beast
-					["description"] = "Only available when the 'Muck It Up' world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
-					["questID"] = 59823,
-					["isDaily"] = true,
-					["coord"] = { 35.8, 32.6, 1525 },
-					["g"] = {
-						crit(18, {	-- Bog Beast
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
-						i(180588),	-- Bucket of Primordial Sludge (PET!)
-						i(180707),	-- Sticky Muck
-					},
-				}),
 				n(165206, {	-- Endlurker
 					["description"] = "There is a sparkling Anima Stake in front of the portal.  Pick it up and use the Extra Action Button to lure the rare.",
 					["questID"] = 59582,
@@ -258,19 +245,6 @@ _.Zones =
 						i(180501),	-- Skull-Formed Headcage
 					},
 				}),
-				n(170048, {	-- Manifestation of Wrath
-					["description"] = "Only available when the |cFFFFD700Swarming Souls|r WQ is up in Revendreth.  When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
-					["questID"] = 60729,
-					["isDaily"] = true,
-					["coord"] = { 49.8, 35.0, 1525 },
-					["crs"] = { 169917 },	-- Avowed Ritualist
-					["g"] = {
-						crit(22, {	-- Manifestation of Wrath
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
-						i(180585),	-- Bottled Up Rage (PET!)
-					},
-				}),
 				n(160675, {	-- Scrivener Lenua
 					["description"] = "To spawn the rare, find four stacks of Forbidden Tomes in the surrounding area and deliver them to the library.",
 					["questID"] = 58213,
@@ -383,7 +357,7 @@ _.Zones =
 							i(182589),	-- Loyal Gorger (MOUNT!)
 						}),
 						i(173939, {	-- Enticing Anima
-							["description"] = "Used to summon the Worldedge Gorger",
+							["description"] = "Used to summon the Worldedge Gorger.",
 							["crs"] = {
 								159676,	-- Animus Mite
 								160815,	-- Encroaching Gorger
