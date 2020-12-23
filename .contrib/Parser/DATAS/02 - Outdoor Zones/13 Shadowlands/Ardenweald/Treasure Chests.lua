@@ -75,6 +75,7 @@ _.Zones =
 				o(353329, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at |cFFFFFFFF32.7, 29.8|r to reach the treasure.",
 					["questID"] = 60716,
+					["isDaily"] = true,
 					["coord"] = { 32.7, 30.0, 1565 },
 				}),
 				o(353683, {	-- Lunarlight Pod
