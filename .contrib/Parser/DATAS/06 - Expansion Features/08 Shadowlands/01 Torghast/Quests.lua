@@ -125,6 +125,7 @@ _.ExpansionFeatures =
 				}),
 				
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
+				--[[
 				q(60137, {	-- The Fracture Chambers
 					["sourceQuests"] = { 61099 },	-- Skoldus Hall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -151,6 +152,9 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
+				]]--
+				
+				
 				-- Bonus Quests
 				-- TODO: are the ones that lead to the follower quest actually repeatable?
 				q(61259, {	-- Ayeleth's Hunger
