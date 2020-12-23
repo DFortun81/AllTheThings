@@ -91,10 +91,11 @@ _.Zones =
 						-- ["coords"] = { },
 					}),
 					crit(12, {	-- Box of Torments
+						["description"] = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
 						["provider"] = { "i", 183060 },	-- Box of Torments
 						["questID"] = 63157,	-- Box of Torments
-						-- ["crs"] = { },
-						-- ["coords"] = { },
+						["coord"] = { 27.7, 20.2, 1543 },
+						["crs"] = { 173837 },	-- Torture Implements
 					}),
 					crit(13, {	-- Words of the Warden
 						["provider"] = { "i", 183063 },	-- Words of the Warden
@@ -126,8 +127,8 @@ _.Zones =
 					crit(17, {	-- Tormentor's Notes
 						["provider"] = { "i", 183069 },	-- Tormentor's Notes
 						["questID"] = 63163,	-- Tormentor's Notes
-						["crs"] = { 173811 },	-- Subject 638
 						["coord"] = { 35.8, 45.5, 1543 },
+						["crs"] = { 173811 },	-- Subject 638
 					}),
 					crit(18, {	-- Shadehound Armor Plating
 						["provider"] = { "i", 183057 },	-- Shadehound Armor Plating

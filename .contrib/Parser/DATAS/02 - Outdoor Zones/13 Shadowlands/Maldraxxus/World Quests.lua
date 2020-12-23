@@ -140,6 +140,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61613, {	-- Leatherworking: Bonestudded Fists
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61539, {	-- Liches Get Stitches
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

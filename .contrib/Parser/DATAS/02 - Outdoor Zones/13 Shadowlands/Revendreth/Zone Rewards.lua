@@ -61,6 +61,10 @@ _.Zones =
 						["questID"] = 58073,	-- Favor: Portrait of the Sire
 						["isDaily"] = true,
 					}),
+					i(180834, {	-- Renathal's Journal Pages
+						["repeatable"] = true,
+						["questID"] = 61432,	-- Lost Journals
+					}),
 					i(180453, {	-- She Had a Stone Heart
 						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 60889,	-- Favor: She Had a Stone Heart
