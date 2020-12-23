@@ -9102,7 +9102,7 @@ UpdateGroups = function(parent, g, defaultVis)
 	end
 end
 local function UpdateParentProgress(group)
-	group.progress = group.progress + 1;
+	group.progress = group.progress + 1; -- This will increment even if nothing new has been collected, and if the group only has one remaining collectible, will incorrectly hide it if completed groups are not set to be shown.
 
 	-- Continue on to this object's parent.
 	if group.parent then
