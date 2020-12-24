@@ -204,12 +204,6 @@ _.Zones =
 									i(181475),	-- Tribute of the Grove Wardens
 								},
 							}),
-							n(175390, {	-- Dirty Glinting Object
-								["description"] = "Can appear when on any of the Training callings",
-								["g"] = {
-									i(184507),	-- Lucy's Lost Collar
-								},
-							}),
 						},
 					}),
 					

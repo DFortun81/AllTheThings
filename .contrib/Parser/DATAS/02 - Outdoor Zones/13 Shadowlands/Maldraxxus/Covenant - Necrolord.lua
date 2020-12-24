@@ -306,12 +306,6 @@ _.Zones =
 									i(181733),	-- Tribute of the Duty-Bound
 								},
 							}),
-							n(175390, {	-- Dirty Glinting Object
-								["description"] = "Can appear when on any of the Training callings",
-								["g"] = {
-									i(184507),	-- Lucy's Lost Collar
-								},
-							}),
 						}),
 					}),
 					-- non-chapter Necrolord quests

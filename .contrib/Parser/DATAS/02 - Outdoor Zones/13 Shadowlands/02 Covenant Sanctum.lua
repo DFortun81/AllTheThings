@@ -57,6 +57,17 @@ _.Zones =
 								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
 							},
 						}),
+						n(175390, {	-- Dirty Glinting Object
+							["description"] = "Can appear when on any of the Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							["g"] = {
+								i(184507),	-- Lucy's Lost Collar (PET!)
+								i(184503),	-- Attendant's Pocket Portal: Ardenweald
+								i(184500),	-- Attendant's Pocket Portal: Bastion
+								i(184502),	-- Attendant's Pocket Portal: Maldraxxus
+								i(184504),	-- Attendant's Pocket Portal: Oribos
+								i(184501),	-- Attendant's Pocket Portal: Revendreth
+							},
+						}),
 						-- Rare Quality Calling Rewards / Zone
 						i(181475, {	-- Bounty of the Grovewardens / Ardenweald
 							["description"] = "Rewarded by completing a Calling based in Ardenweald.",

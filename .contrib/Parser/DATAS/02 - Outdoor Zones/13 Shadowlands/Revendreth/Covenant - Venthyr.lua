@@ -260,12 +260,6 @@ _.Zones =
 								i(181556),	-- Tribute of the Court
 							},
 						}),
-						n(175390, {	-- Dirty Glinting Object
-							["description"] = "Can appear when on any of the Training callings",
-							["g"] = {
-								i(184507),	-- Lucy's Lost Collar
-							},
-						}),
 					}),
 					n(QUESTS, {
 						q(57889, {	-- "Accidental" Arson

@@ -218,12 +218,6 @@ _.Zones =
 								i(181741),	-- Tribute of the Paragon
 							},
 						}),
-						n(175390, {	-- Dirty Glinting Object
-							["description"] = "Can appear when on any of the Training callings",
-							["g"] = {
-								i(184507),	-- Lucy's Lost Collar
-							},
-						}),
 					},
 				}),
 				n(QUESTS, {
