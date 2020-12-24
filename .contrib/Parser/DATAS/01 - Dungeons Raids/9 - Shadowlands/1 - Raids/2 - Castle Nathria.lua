@@ -732,6 +732,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
 						i(184026),	-- Hateful Chain
+						i(182602),	-- Sludgefist's Head [Quest Item]
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
