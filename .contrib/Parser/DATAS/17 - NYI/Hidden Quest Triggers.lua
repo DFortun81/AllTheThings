@@ -3003,7 +3003,7 @@ _.HiddenQuestTriggers =
 		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
 		q(63243),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared -- TODO: confirm
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
-		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
+		q(63326),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
 		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr -- TODO: confirm
 		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
@@ -3383,6 +3383,7 @@ _.HiddenQuestTriggers =
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
+		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
 		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)

@@ -58,8 +58,8 @@ _.ExpansionFeatures =
 				}),
 
 				-- Champion Unlocks
-				-- TODO: move to covenant files
-				q(61223, {	-- Champion: Ayeleth the Deprived
+				-- TODO: move to covenant files -- imo keep them in torghast file
+				q(61223, {	-- Champion: Ayeleth the Deprived [??]
 					["provider"] = { "n", 171918 },	-- Ayeleth
 					["g"] = {
 						follower(1220),	-- Ayeleth
@@ -79,6 +79,13 @@ _.ExpansionFeatures =
 						follower(1280),	-- Chalkyth
 					},
 				}),
+				q(61218, {	-- Champion: Dug Gravewell [Venthyr]
+					["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
+					-- ["provider"] = { "n",  },	-- 171867/171869
+					["g"] = {
+						follower(1214),	-- Dug Gravewell
+					},
+				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 173397 },	-- Gorgelimb
@@ -86,7 +93,7 @@ _.ExpansionFeatures =
 					--	follower(1306),	-- Gorgelimb (doesn't appear to be working for now?)
 					},
 				}),
-				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
+				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
 					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
@@ -98,20 +105,20 @@ _.ExpansionFeatures =
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
 					},
 				}),
-				q(60651, {	-- Champion: Meatball
+				q(60651, {	-- Champion: Meatball [ALL]
 					["sourceQuests"] = { 60573 },	-- Meatball's Revenge
 					["provider"] = { "n", 169842 },	-- Meatball
 					["g"] = {
 						follower(1257),	-- Meatball
 					},
 				}),
-				q(61959, {	-- Champion: Talethi (Necrolord)
+				q(61959, {	-- Champion: Talethi [Necrolord]
 					["provider"] = { "n", 173399 },	-- Talethi
 					["g"] = {
 						follower(1307),	-- Talethi
 					},
 				}),
-				q(61317, {	-- Champion: Teliah (Kyrian)
+				q(61317, {	-- Champion: Teliah [Kyrian]
 					["provider"] = { "n", 172006 },	-- Teliah
 					["g"] = {
 						follower(1221),	-- Teliah
@@ -166,6 +173,9 @@ _.ExpansionFeatures =
 				}),
 				q(61430, {	-- Chalkyth's Saber
 					["provider"] = { "n", 172240 },	-- Chalkyth
+				}),
+				q(61228, {	-- Dug's Missing Shovel
+					-- ["provider"] = { "n",  },	-- 171867/171869
 				}),
 				q(59340, {	-- Gallath's Bell
 					["repeatable"] = true,
