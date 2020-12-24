@@ -725,7 +725,119 @@ _.Zones =
 						["provider"] = { "n", 168743 },	-- Apolon
 						["coord"] = { 35.3, 26.0, 1536 },
 					}),
-					-- TODO: add the rest of Chapter 6
+					q(61396, {	-- Dark Developments
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "o", 357246 },	-- Tattered Scroll
+						["coord"] = { 33.5, 24.1, 1536 },
+					}),
+					q(61180, {	-- Burn Before Reading
+						["sourceQuests"] = { 
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 168744 },	-- Artemede
+						["coord"] = { 35.2, 26.9, 1536 },
+					}),
+					q(60510, {	-- Descended
+						["sourceQuests"] = { 
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.6, 26.5, 1536 },
+						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
+					}),
+					q(61412, {	-- An Early End
+						["sourceQuests"] = { 
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 25.9, 1536 },
+					}),
+					q(60050, {	-- Trouble on the Western Front
+						["sourceQuests"] = { 
+							61412,	-- An Early End
+							61180,	-- Burn Before Reading
+							60510,	-- Descended
+						},
+						["provider"] = { "n", 168860 },	-- Kynthia
+						["coord"] = { 35.4, 26.5, 1536 },
+					}),
+					q(60044, {	-- Charging The Blade
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, 1536 },
+					}),
+					q(61567, {	-- Grave Intent
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167173 },	-- Baroness Vashj
+						["coord"] = { 28.7, 37.6, 1536 },
+					}),
+					q(60114, {	-- Aerial Advantage
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167810 },	-- Emeni
+						["coord"] = { 28.1, 37.5, 1536 },
+					}),
+					q(61246, {	-- Power of the Chosen
+						["sourceQuests"] = { 
+							60114,	-- Aerial Advantage
+							60044,	-- Charging The Blade
+							61567,	-- Grave Intent
+						},
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, 1536 },
+						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
+					}),
+					q(60098, {	-- The End is Now
+						["sourceQuests"] = { 61246 },	-- Power of the Chosen
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, 1536 },
+					}),
+					q(60067, {	-- Pursuit of Justice
+						["sourceQuests"] = { 60098 },	-- The End is Now
+						["provider"] = { "n", 172002 },	-- Xandria
+						["coord"] = { 31.8, 30.3, 1536 },
+					}),
+					q(57470, {	-- An Abominable Discovery
+						["sourceQuests"] = { 60067 },	-- Pursuit of Justice
+						["provider"] = { "n", 173308 },	-- Baroness Draka
+						["coord"] = { 31.0, 29.4, 1536 },
+					}),
+					q(57530, {	-- Gharmal's Tower
+						["sourceQuests"] = { 57470 },	-- An Abominable Discovery
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.5, 23.9, 1536 },
+					}),
+					q(57473, {	-- Prized Possession
+						["sourceQuests"] = { 57530 },	-- Gharmal's Tower
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.3, 23.8, 1536 },
+					}),
+					q(57475, {	-- The Mantle Returned
+						["sourceQuests"] = { 57473 },	-- Prized Possession
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.3, 23.8, 1536 },
+					}),
+					q(57636, {	-- Pride of Place
+						["sourceQuests"] = { 57475 },	-- The Mantle Returned
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },
+						["g"] = {
+							i(182276),	-- Bladesworn Conjurer's Cape
+							i(182258),	-- Bladesworn Harbinger's Greatcloak
+							i(182285),	-- Bladesworn Tactician's Drape
+							i(182267),	-- Bladesworn Wraith's Cloak
+						},
+					}),
+					q(62161, {	-- Blood from a Bone
+						["sourceQuests"] = { 57636 },	-- Pride of Place
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },
+					}),
 
 					-- TODO: Chapter 7 (The Wages of Sin), requires Renown 17
 					
