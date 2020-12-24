@@ -3016,6 +3016,11 @@ _.HiddenQuestTriggers =
 		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Night Fae
 		q(63307),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
+		q(63249),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Shared
+		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Kyrian
+		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Necrolord
+		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Night Fae
+		q(63291),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
