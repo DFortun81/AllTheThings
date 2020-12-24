@@ -23,6 +23,17 @@ _.Zones =
 				i(177767),	-- Avowed Tormenter's Vestment
 				i(177773),	-- Avowed Tormenter's Wristwraps
 				i(177806),	-- Banewood Dirk
+				i(174655, {	-- Bell of Remembrance
+				--	TODO: is this venthyr-only?  no questID appears to be attached to this, you can just judge souls as often as you loot bells.  this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either.  it gave me a buff item + some greys
+					["sourceQuests"] = { 58725 },	-- Sinkeeper
+					["description"] = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
+					["crs"] = { 160716 },	-- Sinstone Rampager
+					["g"] = {
+						i(174652, {	-- Satchel of Forgotten Heirlooms
+							["description"] = "Awarded if your judgment of a soul matches that of Sinkeeper Mourana.",
+						}),
+					},
+				}),
 				i(176989),	-- Bloodskin Wristwraps
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction

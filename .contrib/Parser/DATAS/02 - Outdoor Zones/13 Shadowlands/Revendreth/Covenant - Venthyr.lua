@@ -833,8 +833,8 @@ _.Zones =
 								q(61845, {	-- Edict of Doom: Devourers
 									-- ["sourceQuests"] = { ? },	-- 
 									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
-									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 									["isDaily"] = true,
+									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power

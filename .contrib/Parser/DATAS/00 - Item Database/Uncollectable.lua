@@ -198,6 +198,7 @@ i(182043);	-- Antique Necromancer's Staff
 i(181991);	-- Antique Stalker's Bow
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
+i(174741);	-- Bell of Remembrance
 i(169224);	-- Big Red Button
 i(147439);	-- Box of Completed Prime Wardenscale
 i(169248);	-- Broken Sandals
@@ -292,6 +293,9 @@ i(168817);	-- Siphoning Crystal
 i(118384);	-- Sliver of Iron (N)
 i(118385);	-- Sliver of Iron (H)
 i(118388);	-- Sliver of Iron (M)
+i(182601);	-- Sludgefist's Head (N)
+i(182602);	-- Sludgefist's Head (H)
+i(182603);	-- Sludgefist's Head (M)
 i(128416);	-- Soul Remnant (N)
 i(128417);	-- Soul Remnant (H)
 i(128418);	-- Soul Remnant (M)

@@ -122,6 +122,11 @@ _.Zones =
 					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 					["coord"] = { 49.6, 75.9, 1525 },
 				}),
+				q(58717, {	-- Bell of Remembrance
+				--	TODO: is this venthyr-only?
+					["provider"] = { "i", 174674 },	-- Bell of Remembrance
+					["crs"] = { 160716 },	-- Sinstone Rampager
+				}),
 				q(59644, {	-- Blinded By The Light
 					["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
 					["provider"] = { "n", 162688 },	-- Prince Renathal
@@ -532,6 +537,12 @@ _.Zones =
 					["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, 1525 },
+				}),
+				q(58725, {	-- Sinkeeper
+				--	TODO: is this venthyr-only?
+					["sourceQuests"] = { 58717 },	-- Bell of Remembrance
+					["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
+					["coord"] = { 73.2, 34.0, 1525 },
 				}),
 				q(57176, {	-- Sinstone Delivery
 					["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
