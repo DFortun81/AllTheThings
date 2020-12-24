@@ -9101,14 +9101,14 @@ UpdateGroups = function(parent, g, defaultVis)
 		end
 	end
 end
-local function UpdateParentProgress(group, increment)
-	if increment then group.progress = group.progress + 1 end;
+local function UpdateParentProgress(group)
+	group.progress = group.progress + 1;
 
 	-- Continue on to this object's parent.
 	if group.parent then
 		if group.visible then
 			-- If this is a collected collectible, update the parent.
-			if group.collectible and group.collected then UpdateParentProgress(group.parent, true) end;
+			UpdateParentProgress(group.parent)
 
 			-- If this group is trackable, then we should show it.
 			if app.GroupVisibilityFilter(group) then
@@ -9487,7 +9487,7 @@ function app.QuestCompletionHelper(questID)
 					result.marked = nil;
 					if result.total then
 						-- This is an item that has a relative set of groups
-						UpdateParentProgress(result);
+						--UpdateParentProgress(result);
 
 						-- If this is NOT a group...
 						if not result.g and result.collectible then
