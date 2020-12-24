@@ -254,10 +254,12 @@ _.Zones =
 							["g"] = {
 								i(177231, {	-- Crown of Honor
 									["questID"] = 59682,
-									crit(2, {	-- Crown of Honor
-										["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-										["achievementID"] = 14678,	-- Court Favors
-									}),
+									["g"] = {
+										crit(2, {	-- Crown of Honor
+											["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+											["achievementID"] = 14678,	-- Court Favors
+										}),
+									},
 								}),
 								i(180780, {	-- Recipe: Red Noggin Candle
 									["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby

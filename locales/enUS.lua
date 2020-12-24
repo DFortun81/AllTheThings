@@ -4272,6 +4272,7 @@ app.L = {
 		[343611] = "Voidtouched Egg",
 		[344588] = "Stewart's Stewpendous Stew",
 		[344726] = "Dark Sermon",
+		[345446] = "Great Horn of the Runestag",
 		[348521] = "Strange Growth",
 		[348558] = "Notice",
 		[348747] = "Muddy Scroll",

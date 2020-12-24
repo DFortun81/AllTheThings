@@ -89,6 +89,26 @@ _.Zones =
 						i(180725),	-- Spinemaw Gladechewer (MOUNT!)
 					},
 				}),
+				o(345446, {	-- Great Horn of the Runestag
+					["description"] = "The horn can randomly spawn at one of many locations in Ardenweald.  When the horn is used, the Mystic Rainbowhorn will spawn at |cFFFFFFFF65.7, 28.1|r.",
+					["g"] = {
+						n(164547, {	-- Mystic Rainbowhorn
+							["questID"] = 59235,
+							["isDaily"] = true,
+							["coord"] = { 65.7, 28.1, 1565 },
+							["g"] = {
+								crit(2, {	-- Mystic Rainbowhorn
+									["achievementID"] = 14309,	-- Adventurer of Ardenweald
+								}),
+								i(182179, {	-- Runestag Soul
+								--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file? [All soulshape forms are already in NF file; item needs to be here to see where it drops]
+									["questID"] = 62434,	-- Runestag Soul
+								}),
+								i(179586),	-- Elderwood Piercer
+							},
+						}),
+					},
+				}),
 				n(164112, {	-- Humon'gozz
 					["questID"] = 59157,
 					["isDaily"] = true,
@@ -154,21 +174,6 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(179502),	-- Ripvine Barb
-					},
-				}),
-				n(164547, {	-- Mystic Rainbowhorn
-				--	["questID"] = ,
-					["isDaily"] = true,
-					["coord"] = { 50.0, 20.6, 1565 },
-					["g"] = {
-						crit(2, {	-- Mystic Rainbowhorn
-							["achievementID"] = 14309,	-- Adventurer of Ardenweald
-						}),
-						i(182179, {	-- Runestag Soul
-						--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file?
-							["questID"] = 62434,	-- Runestag Soul
-						}),
-						i(179586),	-- Elderwood Piercer
 					},
 				}),
 				n(164391, {	-- Old Ardeite
