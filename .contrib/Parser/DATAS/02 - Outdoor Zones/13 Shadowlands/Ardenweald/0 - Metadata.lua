@@ -9,6 +9,7 @@ _.Zones =
 			["achievementID"] = 14304,	-- Explore Ardenweald
 			["description"] = "A vibrant afterlife for those closely connected to the wild, Ardenweald is a domain of endless restoration tended by the mystic night fae. Within this eternal forest, massive dream trees draw in precious anima —soul essence— to feed the spirits of nature awaiting rebirth.",
 			["maps"] = {
+				1816,	-- Claw's Edge (submap for the inn)
 				1819,	-- Fungal Terminus
 				1701,	-- Heart of the Forest
 				1702,	-- Heart of the Forest

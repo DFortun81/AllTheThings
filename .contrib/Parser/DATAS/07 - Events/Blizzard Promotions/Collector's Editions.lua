@@ -114,7 +114,9 @@ _.WorldEvents =
 					un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
 					un(BLIZZARD_BALANCE, p(2779)),			-- Anima Wyrmling
 					un(BLIZZARD_BALANCE, i(172179)),		-- Eternal Traveler's Hearthstone
-					un(BLIZZARD_BALANCE, i(172177)),		-- Illusion: Wraithchill
+					un(BLIZZARD_BALANCE, i(172177, {		-- Illusion: Wraithchill
+						["illusionID"] = 6162,	-- for some reason without this it wants to be ID #6258, which is Sinwrath's ID
+					})),
 					un(BLIZZARD_BALANCE, q(57686, {			-- The Eternal Traveler
 						["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 						["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",

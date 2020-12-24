@@ -205,9 +205,8 @@ _.ExpansionFeatures =
 					["repeatable"] = true,	-- ?????
 				}),
 				q(60573, {	-- Meatball's Revenge
-				--	TODO: add provider
 					["repeatable"] = true,
-				--	["provider"] = { "n",  },	-- Meatball
+					["provider"] = { "n", 168979 },	-- Meatball
 				}),
 				q(59345, {	-- Phantoriax's Warsword
 					["repeatable"] = true,

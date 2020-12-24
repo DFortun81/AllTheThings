@@ -214,6 +214,7 @@ _.Zones =
 					},
 				}),
 				n(171009, { -- Enforcer Aegeon
+					["description"] = "Force the rare to spawn by killing mobs around the Eternal Forge.  Forge-Keeper Mnemis will periodically announce the threat level, and Aegeon will be dispatched when the threat level reaches Major.",
 					["questID"] = 60998,
 					["isDaily"] = true,
 					["coord"] = { 50.8, 19.6, 1533 },

@@ -41,6 +41,7 @@ i(184777);	-- Gravedredger's Shovel
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
+i(181621);	-- Hyper-Reactive Slime Sample
 i(181377);	-- Illustrated Combat Meditation Aid
 i(184774);	-- Juvenile Sporespindle
 i(184382);	-- Luminous Sylberry
@@ -68,6 +69,7 @@ i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
+i(181622);	-- Slightly Irradiated Slime Sample
 i(184389);	-- Slumbering Starseed
 i(184373);	-- Small Anima Globe
 i(184306);	-- Soulcatching Sludge
@@ -391,6 +393,7 @@ i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
 i(181715);	-- Temel's Certificate of Completion
+i(171211);	-- Venthyr's Coin Purse
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

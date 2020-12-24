@@ -305,6 +305,15 @@ _.Zones =
 							["provider"] = { "n", 159694 },	-- The Countess
 							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
 						}),
+						q(58600, {	-- A Perfect Circle
+							["sourceQuests"] = {
+								58585,	-- No Friend of Mine
+								58584,	-- Right Our Wrongs
+								58586,	-- The Right Stuff
+							},
+							["provider"] = { "n", 160280 },	-- Mikanikos
+							["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						}),
 						q(58555, {	-- A Tense Reunion
 							["sourceQuests"] = { 58530 },	-- Hidden Mirror
 							["provider"] = { "n", 162213 },	-- General Draven
@@ -360,26 +369,52 @@ _.Zones =
 							["provider"] = { "n", 171934 },	-- Prince Renathal
 							["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
 						}),
+						q(60993, {	-- Citadel of Loyalty
+							["sourceQuests"] = { 58656 },	-- Heavy is the Head...
+							["provider"] = { "n", 160280 },	-- Mikanikos
+							["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						}),
 						q(58326, {	-- Combing the Catacombs
 							["sourceQuests"] = { 58842 },	-- The Curator
 							["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 							["coord"] = { 65.9, 32.2, 1525 },	-- Revendreth
 						}),
 						q(59701, {	-- Common Ground
-							["description"] = "Requires Renown 5.",
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["description"] = "Requires Renown 5.",
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
+						}),
+						q(58630, {	-- Crown of the Harvesters
+							["sourceQuests"] = {
+								58600,	-- A Perfect Circle
+								58603,	-- Phaestus, Genesis of Aeons
+							},
+							["provider"] = { "n", 160280 },	-- Mikanikos
+							["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
 						}),
 						q(58428, {	-- Crypt Crashers
 							["sourceQuests"] = { 58372 },	-- Lead the Way
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 						}),
+						q(60995, {	-- Disloyalty
+							["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
+							["provider"] = { "n", 170999 },	-- General Draven
+							["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
+						}),
 						q(57892, {	-- Enacting Immediate Justice
 							["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
 							["provider"] = { "n", 159946 },	-- The Countess
 							["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
+						}),
+						q(60996, {	-- Face Your Fears
+							["sourceQuests"] = {
+								60995,	-- Disloyalty
+								60994,	-- Lowering Their Defenses
+							},
+							["provider"] = { "n", 171147 },	-- General Draven
+							["coord"] = { 24.3, 29.7, 1533 },	-- Bastion
 						}),
 						q(60500, {	-- Halls of Atonement: Medallion of Pride
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -400,6 +435,11 @@ _.Zones =
 							["sourceQuests"] = { 59708 },	-- Invitation for the Stonewright
 							["provider"] = { "n", 165865 },	-- General Draven
 							["coord"] = { 40.3, 30.7, 1525 },	-- Revendreth
+						}),
+						q(58656, {	-- Heavy is the Head...
+							["sourceQuests"] = { 58630 },	-- Crown of the Harvesters
+							["provider"] = { "n", 174587 },	-- Mikanikos
+							["coord"] = { 51.4, 18.5, 1533 },	-- Bastion
 						}),
 						q(58530, {	-- Hidden Mirror
 							["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
@@ -472,6 +512,11 @@ _.Zones =
 								i(180924),	-- Dread Sentinel's Ebony Girdle
 							},
 						}),
+						q(60994, {	-- Lowering Their Defenses
+							["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
+							["provider"] = { "n", 171001 },	-- Mikanikos
+							["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
+						}),
 						q(60935, {	-- Medallion of Avarice
 							["description"] = "Requires Renown 11.",
 							["provider"] = { "o", 353949 },	-- Medallion of Avarice
@@ -523,6 +568,15 @@ _.Zones =
 						--	["sourceQuests"] = {  },	-- TODO: unknown.  i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.6, 58.8, 1699 },	-- Sinfall Reaches
+						}),
+						q(58603, {	-- Phaestus, Genesis of Aeons
+							["sourceQuests"] = {
+								58585,	-- No Friend of Mine
+								58584,	-- Right Our Wrongs
+								58586,	-- The Right Stuff
+							},
+							["provider"] = { "n", 160280 },	-- Mikanikos
+							["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
 						}),
 						q(57884, {	-- Reclaiming Thornhill Manor
 							["sourceQuests"] = {
@@ -672,6 +726,18 @@ _.Zones =
 							["provider"] = { "n", 159513 },	-- Bogdan
 							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
 						}),
+						q(59233, {	-- The Prince's New Crown
+							["sourceQuests"] = { 60996 },	-- Face Your Fears
+							["provider"] = { "n", 171175 },	-- General Draven
+							["coord"] = { 21.0, 22.8, 1533 },	-- Bastion
+							["g"] = {
+								i(180906),	-- Soulbreaker's Ebony Slippers
+							--	TODO: verify non-cloth rewards
+								i(180908),	-- Ebony Death Shroud Boots
+								i(180907),	-- Fearstalker's Ebony Sabatons
+								i(180905),	-- Dread Sentinel's Ebony Greatboots
+							},
+						}),
 						q(61492, {	-- The Princeguard
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["description"] = "Requires Renown 5.",
@@ -747,6 +813,10 @@ _.Zones =
 									["provider"] = { "n", 173127 },	-- 
 									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
 									["isDaily"] = true,
+								}),
+								q(60601, {	-- Darkwing Drills
+									["isWorldQuest"] = true,
+									["lvl"] = { 60 },
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
 									-- ["sourceQuests"] = { ? },	-- 
@@ -870,8 +940,6 @@ _.Zones =
 											}),
 											crit(4, {	-- Bounding Shroom Seeds
 											}),
-											crit(5, {	-- Rally Bell
-											}),
 											crit(7, {	-- Dog Bone's Bone
 											}),
 											crit(8, {	-- Dredger Party Supplies
@@ -895,8 +963,6 @@ _.Zones =
 											crit(19, {	-- Protective Braziers
 											}),
 											crit(20, {	-- Slippery Muck
-											}),
-											crit(21, {	-- Altar of Accomplishment
 											}),
 										}),
 										ach(14681, {	-- Dredger Academy
@@ -933,18 +999,10 @@ _.Zones =
 										}),
 										ach(14727),		-- Master of Ceremonies
 										ach(14679, {	-- Party Palace
-											crit(1),	-- Building: Dredger Pool
-											crit(2),	-- Building: Guardhouse
-											crit(3),	-- Staff: Dredger Decorators
-											crit(4),	-- Staff: Stage Crew
-											crit(5),	-- Staff: Waiters
-											crit(6),	-- Staff: Bouncers
-											crit(7),	-- Staff: Revendreth Ambassador
 											crit(8),	-- Staff: Ardenweald Ambassador
 											crit(9),	-- Staff: Maldraxxus Ambassador
 											crit(10),	-- Staff: Bastion Ambassador
 											crit(11),	-- Stock: Greeting Kits
-											crit(12),	-- Stock: Appetizers
 											crit(13),	-- Stock: Anima Samples
 											crit(14),	-- Stock: Comfy Chairs
 											crit(16),	-- Third Guest List Page
@@ -982,12 +1040,6 @@ _.Zones =
 											crit(6, {	-- Mushroom Surprise
 											--	["achievementID"] = 14680,	-- Something for Everyone
 											}),
-											crit(7, {	-- Traditional Decorations
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(8, {	-- Mortal Reminders
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
 											crit(9, {	-- Mystery Mirrors
 											--	["achievementID"] = 14680,	-- Something for Everyone
 											}),
@@ -1006,8 +1058,10 @@ _.Zones =
 								}),
 								n(-908, {	-- Rewards
 								--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
-									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir, Formal, Elated)
+									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
+									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
+									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute",
 									}),
@@ -1029,6 +1083,13 @@ _.Zones =
 										["minReputation"] = { 2445, FRIENDLY },
 										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
 										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(181521, {	-- Ember Court Ambassador
+												crit(7, {	-- Staff: Revendreth Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
+										},
 									}),
 									q(61407, {	-- Ember Court: Atoning Rituals
 										["sourceQuests"] = {
@@ -1082,10 +1143,34 @@ _.Zones =
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
 									}),
+									q(61399, {	-- Ember Court: Mortal Reminders
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 156791 },	-- Keeper Ta'saran
+										["coord"] = { 59.2, 75.1, 1670 },	-- Oribos
+										["g"] = {
+											i(176128, {	-- Contract: Mortal Reminders
+												crit(8, {	-- Mortal Reminders
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
 									q(61705, {	-- Ember Court: Refreshments
 										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									}),
+									q(61398, {	-- Ember Court: Traditional
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 156822 },	-- Mistress Mihaela
+										["coord"] = { 61.3, 63.8, 1525 },	-- Revendreth
+										["g"] = {
+											i(176126, {	-- Contract: Traditional Theme
+												crit(7, {	-- Traditional Decorations
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
 									}),
 									q(61404, {	-- Ember Court: Tubbins's Tea Party
 										["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
@@ -1135,6 +1220,12 @@ _.Zones =
 											{ "i", 177061, 5 },	-- 5x Twilight Bark
 											{ "c", 1820, 20 },	-- 20x Infused Ruby
 										},
+									}),
+									q(62082, {	-- Restock: Personal Stash
+									--	showed up after Week 4 Ember Court
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									}),
 									q(62069, {	-- Restock: Sinstones
 									--	showed up after Week 2 Ember Court
@@ -1194,6 +1285,13 @@ _.Zones =
 										["minReputation"] = { 2445, FRIENDLY },
 										["provider"] = { "n", 165490 },	-- Picky Stefan
 										["coord"] = { 28.9, 44.2, 1525 },	-- Revendreth
+										["g"] = {
+											i(181532, {	-- Stock: Appetizers
+												crit(12, {	-- Stock: Appetizers
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
+										},
 									}),
 									q(61616, {	-- The Ember Court (Week 1)
 									--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
@@ -1237,7 +1335,9 @@ _.Zones =
 											i(176850, {	-- Blank Invitation
 											}),
 											i(177234, {	-- Rally Bell
-												-- ["questID"] = ,
+												crit(5, {	-- Rally Bell
+													["achievementID"] = 14678,	-- Court Favors
+												}),
 											}),
 											i(183956, {	-- Invitation: Choofa
 												-- ["questID"] = ,
@@ -1361,6 +1461,93 @@ _.Zones =
 											}),
 										},
 									}),
+									n(164966, {	-- Temel <The Party Herald> (with a hat)
+										["coords"] = {
+											{ 28.0, 43.0, 1525 },	-- with hat, outside Sinfall
+											{ 58.8, 80.0, 1699},	-- without hat, inside Sinfall
+										},
+										["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
+										["g"] = {
+											i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
+											i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+											i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
+											i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
+											i(181441, {	-- Altar of Accomplishment
+												["cost"] = { { "c", 1816, 25 } },
+												["g"] = {
+													crit(21, {	-- Altar of Accomplishment
+														["achievementID"] = 14678,	-- Court Favors
+													}),
+												},
+											}),
+											i(181517, {	-- Building: Dredger Pool
+												["cost"] = { { "c", 1816, 100 } },
+												["g"] = {
+													crit(1, {	-- Building: Dredger Pool
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(181518, {	-- Building: Guardhouse
+												["cost"] = { { "c", 1816, 100 } },
+												["g"] = {
+													crit(2, {	-- Building: Guardhouse
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(181519, {	-- Staff: Dredger Decorators
+												["cost"] = 2500000,	-- 250g
+												["g"] = {
+													crit(3, {	-- Staff: Dredger Decorators
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(181520, {	-- Staff: Stage Crew
+												["cost"] = 2500000,	-- 250g
+												["g"] = {
+													crit(4, {	-- Staff: Stage Crew
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(181522, {	-- Staff: Waiters
+												["cost"] = 2500000,	-- 250g
+												["g"] = {
+													crit(5, {	-- Staff: Waiters
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(181523, {	-- Staff: Bouncers
+												["cost"] = 2500000,	-- 250g
+												["g"] = {
+													crit(6, {	-- Staff: Bouncers
+														["achievementID"] = 14679,	-- Party Palace
+													}),
+												},
+											}),
+											i(182296, {	-- Letter of Note, Premier Party Planner
+												["cost"] = { { "c", 1820, 85 } },
+											}),
+											i(182973, {	-- Leather Dredger Coif
+												["cost"] = { { "c", 1820, 10 } },
+											}),
+											i(183706, {	-- Mantle of Court Blades
+												["cost"] = { { "c", 1816, 300 } },
+											}),
+											i(183842, {	-- Sinrunner Pony Reins
+												["cost"] = { { "c", 1820, 55 } },
+											}),
+											i(183843, {	-- Juvenile Dredbat Harness
+												["cost"] = { { "c", 1820, 70 } },
+											}),
+											i(183854, {	-- Battie's Pendant
+												["cost"] = { { "i", 163036, 250 } },
+											}),
+										},
+									}),
 								}),
 							},
 						}),
@@ -1467,6 +1654,10 @@ _.Zones =
 								i(184665, {	-- Chronicle of Lost Memories
 									["cost"] = { { "c", 1885, 35 } },		-- 35x Grateful Offering
 								}),
+								i(183249, {	-- Memory of a Vital Sacrifice
+								--	appears on the vendor at Renown 14, not sure if this is the same or different for other source(s)
+									["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+								}),
 						--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?  
 								i(182332, {	-- Gravestone Battle Armor (MOUNT!)
 									["cost"] = { { "c", 1813, 3000 } },
@@ -1491,6 +1682,7 @@ _.Zones =
 									["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
 								}),
 								i(182204, {	-- Illusion: Sinwrath
+									["illusionID"] = 6258,	-- this doesn't want to be collectible without the ID added here, even though it's in the Illusions.lua file in the item DB
 									["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 								}),
 								i(182433, {	-- Barbedged Dredblade
@@ -2253,108 +2445,6 @@ _.Zones =
 									--["cost"] = { { "x", yyyy, zzzz } },
 								}),
 							}),
-						}),
-						n(164966, {	-- Temel <The Party Herald> (with a hat)
-							["coord"] = { 28.0, 43.0, 1525 },
-							["g"] = {
-								i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
-								i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
-								i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
-								i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
-								i(177234, {	-- Rally Bell
-									["cost"] = { { "c", 1816, 25 } },
-								}),
-								i(181441, {	-- Altar of Accomplishment
-									["cost"] = { { "c", 1816, 25 } },
-								}),
-								i(181517, {	-- Building: Dredger Pool
-									["cost"] = { { "c", 1816, 100 } },
-									["questID"] = 61493,
-								}),
-								i(181518, {	-- Building: Guardhouse
-									["cost"] = { { "c", 1816, 100 } },
-								}),
-								i(181519, {	-- Staff: Dredger Decorators
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181520, {	-- Staff: Stage Crew
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181522, {	-- Staff: Waiters
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181523, {	-- Staff: Bouncers
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(182296, {	-- Letter of Note, Premier Party Planner
-									["cost"] = { { "c", 1820, 85 } },
-								}),
-								i(182973, {	-- Leather Dredger Coif
-									["cost"] = { { "c", 1820, 10 } },
-								}),
-								i(183706, {	-- Mantle of Court Blades
-									["cost"] = { { "c", 1816, 300 } },
-								}),
-								i(183842, {	-- Sinrunner Pony Reins
-									["cost"] = { { "c", 1820, 55 } },
-								}),
-								i(183843, {	-- Juvenile Dredbat Harness
-									["cost"] = { { "c", 1820, 70 } },
-								}),
-								i(183854, {	-- Battie's Pendant
-									["cost"] = { { "i", 163036, 250 } },
-								}),
-							},
-						}),
-						n(172531, {	-- Temel <The Party Herald> (with no hat)
-							["coord"] = { 58.8, 80.0, 1699},
-							["g"] = {
-								i(181316, {	-- Silvertip Dredwing
-									["cost"] = { { "c", 1813, 5000 } },
-								}),
-								i(177234, {	-- Rally Bell
-									["cost"] = { { "c", 1813, 25 } },
-								}),
-								i(181441, {	-- Altar of Accomplishment
-									["cost"] = { { "c", 1813, 25 } },
-								}),
-								i(181517, {	-- Building: Dredger Pool
-									["cost"] = { { "c", 1813, 100 } },
-								}),
-								i(181518, {	-- Building: Guardhouse
-									["cost"] = { { "c", 1813, 100 } },
-								}),
-								i(181519, {	-- Staff: Dredger Decorators
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181520, {	-- Staff: Stage Crew
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181522, {	-- Staff: Waiters
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(181523, {	-- Staff: Bouncers
-									["cost"] = 2500000,	-- 250g
-								}),
-								i(182296, {	-- Letter of Note, Premier Party Planner
-									["cost"] = { { "c", 1820, 85 } },
-								}),
-								i(182973, {	-- Leather Dredger Coif
-									["cost"] = { { "c", 1820, 10 } },
-								}),
-								i(183706, {	-- Mantle of Court Blades
-									["cost"] = { { "c", 1813, 300 } },
-								}),
-								i(183842, {	-- Sinrunner Pony Reins
-									["cost"] = { { "c", 1820, 55 } },
-								}),
-								i(183843, {	-- Juvenile Dredbat Harness
-									["cost"] = { { "c", 1820, 70 } },
-								}),
-								i(183854, {	-- Battie's Pendant
-									["cost"] = { { "i", 163036, 250 } },
-								}),
-							},
 						}),
 						n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
 							-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
