@@ -86,7 +86,6 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				o(353684, {	-- Lunarlight Pod
-				--	TODO: verify coords for these questIDs!  if coords are incorrect, make up a new objectID or see if any new data has been added with new coords
 					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["questID"] = 60792,
 					["isDaily"] = true,

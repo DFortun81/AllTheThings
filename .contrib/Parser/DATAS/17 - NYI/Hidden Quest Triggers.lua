@@ -3324,7 +3324,7 @@ _.HiddenQuestTriggers =
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
 		q(59618),	-- triggered when using "RSVP: Stonehead"
 		q(59619),	-- triggered when using "RSVP: Stonehead"
-		q(59682),	-- triggered when using "Crown of Honor"
+		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
@@ -3403,6 +3403,7 @@ _.HiddenQuestTriggers =
 		q(62811),	-- Oranomonos kill questID
 
 		-- Castle Nathria
+		-- q(62949),	-- First kill of Sire Denthrius / First full clear on Normal / ???
 		-- LFR
 		-- q( ),	-- Shriekwing
 		q(62872),	-- Huntsman Altimor

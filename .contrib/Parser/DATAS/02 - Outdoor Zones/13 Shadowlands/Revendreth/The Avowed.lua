@@ -253,8 +253,9 @@ _.Zones =
 							["description"] = "There is a chance to find this vendor when opening a crypt with an |cFFFFFFFFAtonement Crypt Key|r.\n\nHe runs away shortly after exiting the crypt, so make your purchases quickly!",
 							["g"] = {
 								i(177231, {	-- Crown of Honor
+									["questID"] = 59682,
 									crit(2, {	-- Crown of Honor
-										["customCollect"] = "SL_COV_VEN",
+										["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 										["achievementID"] = 14678,	-- Court Favors
 									}),
 								}),

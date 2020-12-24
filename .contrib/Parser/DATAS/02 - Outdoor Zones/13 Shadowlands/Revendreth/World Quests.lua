@@ -209,7 +209,7 @@ _.Zones =
 						i(177235, {	-- Tubbins's Lucky Teapot
 							crit(6, {	-- Tubbins's Lucky Teapot
 								["achievementID"] = 14678,	-- Court Favors
-								["customCollect"] = "SL_COV_VEN",
+								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 							}),
 						}),
 					},
