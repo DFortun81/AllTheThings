@@ -500,6 +500,9 @@ _.Zones =
 						},
 						["questID"] = 61068,
 						["description"] = "Use the Mushroom at |cFFFFFFFF37.6, 61.5|r and jump into the broken tree.",
+						["g"] = {
+							i(180155),	-- Darkreach Splitter (potentially a ZR or ZD instead?)
+						},
 					}),
 				}),
 				ach(14779, {	-- Wild Hunting

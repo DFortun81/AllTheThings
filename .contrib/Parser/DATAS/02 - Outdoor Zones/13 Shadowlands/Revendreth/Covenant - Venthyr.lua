@@ -2266,6 +2266,7 @@ _.Zones =
 								}),
 								i(181517, {	-- Building: Dredger Pool
 									["cost"] = { { "c", 1816, 100 } },
+									["questID"] = 61493,
 								}),
 								i(181518, {	-- Building: Guardhouse
 									["cost"] = { { "c", 1816, 100 } },

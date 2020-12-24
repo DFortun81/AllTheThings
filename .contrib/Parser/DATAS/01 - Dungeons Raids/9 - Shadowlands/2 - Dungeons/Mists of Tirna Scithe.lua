@@ -31,6 +31,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2402, {	-- Mistcaller
 					["crs"] = { 164501 },	-- Mistcaller
 					["g"] = {
+						i(182305),	-- Crown of Autumnal Flora
 						i(178710),	-- Tanglewood Thorn
 						i(178705),	-- Tricksprite Gloves
 						i(178691),	-- Hood of the Hidden Path
@@ -79,6 +80,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
+							i(182305),	-- Crown of Autumnal Flora
 							i(178710),	-- Tanglewood Thorn
 							i(178705),	-- Tricksprite Gloves
 							i(178691),	-- Hood of the Hidden Path
@@ -140,6 +142,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
+							i(182305),	-- Crown of Autumnal Flora
 							i(178710),	-- Tanglewood Thorn
 							i(178705),	-- Tricksprite Gloves
 							i(178691),	-- Hood of the Hidden Path

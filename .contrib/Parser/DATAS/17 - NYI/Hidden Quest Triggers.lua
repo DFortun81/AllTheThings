@@ -3021,6 +3021,22 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Necrolord
 		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Night Fae
 		q(63291),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Venthyr
+		q(63239),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Shared
+		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Kyrian
+		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Necrolord
+		q(63268),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Night Fae
+		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Venthyr
+		q(63244),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Shared
+		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Kyrian
+		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Necrolord
+		q(63328),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Night Fae
+		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Venthyr
+		-- TODO: confirm below for "Ahnqat's Darkness"
+		-- q(63254),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Shared
+		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Kyrian
+		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
+		-- q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
+		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3199,6 +3215,7 @@ _.HiddenQuestTriggers =
 		q(62711),	-- Triggered after choosing Necrolords covenant
 		-- q(62152),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Necrolords covenant... kind of want to see when it happens again though
 		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
+					-- Also basically every day the first time I fall into the Maw
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
