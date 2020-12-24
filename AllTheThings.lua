@@ -962,15 +962,15 @@ local function BuildGroups(parent, g)
 		end
 	end
 end
-local function BuildSourceText(group, l, text)
+local function BuildSourceText(group, l)
 	if group.parent then
 		if l < 1 then
-			return BuildSourceText(group.parent, l + 1, text);
+			return BuildSourceText(group.parent, l + 1);
 		else
-			return BuildSourceText(group.parent, l + 1, " -> " .. (group.text or "*") .. (text and text or ""));
+			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
 	end
-	return (group.text or "*") .. text;
+	return group.text or "*";
 end
 local function BuildSourceTextForChat(group, l)
 	if group.parent then
