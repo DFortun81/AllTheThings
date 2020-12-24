@@ -218,8 +218,9 @@ _.ExpansionFeatures =
 				--	["provider"] = { "n",  },	-- Teliah
 				}),
 				
-				-- Lockouts
-				-- TODO: Not sure how these all work or if we even want to track them (similar to how Horrific Visions had per-tier loot tracking?)
+				--------------
+				-- Lockouts --
+				--------------
 				
 				-- Coldheart
 				q(58198, {	-- Coldheart Interstitia, Layer 1
@@ -245,6 +246,14 @@ _.ExpansionFeatures =
 				q(58203, {	-- Coldheart Interstitia, Layer 6
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 6",
+				}),
+				q(61975, {	-- Coldheart Interstitia, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 7",
+				}),
+				q(61976, {	-- Coldheart Interstitia, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Coldheart Interstitia, Layer 8",
 				}),
 
 				
@@ -284,24 +293,38 @@ _.ExpansionFeatures =
 
 				
 				-- Mort'regar
-				--[[
-				q(, {	-- Mort'regar, Layer 1
+				q(58204, {	-- Mort'regar, Layer 1
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 1",
 				}),
-				q(, {	-- Mort'regar, Layer 2
+				q(58205, {	-- Mort'regar, Layer 2
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 2",
 				}),
-				q(, {	-- Mort'regar, Layer 3
+				q(59326, {	-- Mort'regar, Layer 3
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 3",
 				}),
-				q(, {	-- Mort'regar, Layer 4
+				q(59334, {	-- Mort'regar, Layer 4
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 4",
 				}),
-				--]]
+				q(59335, {	-- Mort'regar, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 5",
+				}),
+				q(59336, {	-- Mort'regar, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 6",
+				}),
+				q(61977, {	-- Mort'regar, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 7",
+				}),
+				q(61978, {	-- Mort'regar, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Mort'regar, Layer 8",
+				}),
 				
 				
 				-- Skoldus Hall

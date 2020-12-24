@@ -3380,9 +3380,6 @@ _.HiddenQuestTriggers =
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
-		q(58204),	-- Mort'regar Layer 1
-		q(58205),	-- Mort'regar Layer 2
-		q(59326),	-- Mort'regar Layer 3
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
