@@ -765,6 +765,9 @@ _.Zones =
 							q(62068, {	-- Gormling Piper: Crumbled Ridge
 								["isWorldQuest"] = true,
 							}),
+							q(61394, {	-- Gormling Piper: Tranquil Pools
+								["isWorldQuest"] = true,
+							}),
 							q(61717, {	-- Gormling Piper: Tranquil Pools
 								["isWorldQuest"] = true,
 							}),
@@ -1176,8 +1179,15 @@ _.Zones =
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
-						q(62296, {	-- Into the Unknown
+						-- TODO: the API says these are dailies (D) but seems like they are a series to open up each of the unknown areas. Leaving daily for now but may need to change later.
+						q(62296, {	-- Into the Unknown (1)
 							-- requires tier 2 network, but there's no sourceQuest for that
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(60153, {	-- Into the Unknown (2)
+							-- requires tier 2 network, but there's no sourceQuest for that. Is 62296 a prerequisite or are they given in random order?
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,

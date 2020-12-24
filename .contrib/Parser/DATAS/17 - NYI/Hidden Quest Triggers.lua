@@ -3083,7 +3083,8 @@ _.HiddenQuestTriggers =
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
-		q(62959),	-- Triggered after completing Into The Unknown (62296) which opens permanent mushroom portal to the Deep Unknown
+		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
+		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
