@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 
 				-- Champion Unlocks
 				-- TODO: move to covenant files -- imo keep them in torghast file
-				q(61223, {	-- Champion: Ayeleth the Deprived [??]
+				q(61223, {	-- Champion: Ayeleth the Deprived [Venthyr]
 					["provider"] = { "n", 171918 },	-- Ayeleth
 					["g"] = {
 						follower(1220),	-- Ayeleth
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 				}),
 				q(61218, {	-- Champion: Dug Gravewell [Venthyr]
 					["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
-					-- ["provider"] = { "n",  },	-- 171867/171869
+					["provider"] = { "n", 171869 },	-- Dug Gravewell
 					["g"] = {
 						follower(1214),	-- Dug Gravewell
 					},
@@ -175,7 +175,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 172240 },	-- Chalkyth
 				}),
 				q(61228, {	-- Dug's Missing Shovel
-					-- ["provider"] = { "n",  },	-- 171867/171869
+					["provider"] = { "n", 171867 },	-- Dug Gravewell
 				}),
 				q(59340, {	-- Gallath's Bell
 					["repeatable"] = true,

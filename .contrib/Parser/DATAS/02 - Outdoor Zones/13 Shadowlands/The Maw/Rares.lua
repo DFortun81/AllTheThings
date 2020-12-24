@@ -218,7 +218,7 @@ _.Zones =
 				n(154330, {	-- Eternas the Tormentor
 					["questID"] = 57509,
 					["isDaily"] = true,
-					["coord"] = { 27.4, 49.4, 1543 },	-- TODO: verify coords, wowhead says 19.8, 46.0
+					["coord"] = { 19.3, 46.1, 1543 },
 					["g"] = {
 						crit(10, {	-- Eternas the Tormentor
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
