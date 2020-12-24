@@ -87,6 +87,9 @@ _.ExpansionFeatures =
 				-- Skodus Hall 3
 				i(183254),	-- Memory of a Dire Command [Hunter]
 				i(183359),	-- Memory of Jonat [Shaman]
+
+				-- Skodus Hall 6
+				i(183247),	-- Memory of a Stable Phantasma Lure [ALL]
 				
 				i(183230, {	-- Memory of the Apex Predator [Druid]
 					["crs"] = { 

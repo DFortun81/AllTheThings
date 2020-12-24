@@ -249,18 +249,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(183310),	-- A Memory of Badge of the Mad Paragon
-						i(183214),	-- A Memory of Chaos Theory
-						i(182636),	-- A Memory of Deadliest Coil
-						i(183384),	-- A Memory of Exploiter
-						i(183344),	-- A Memory of Finality
-						i(183279),	-- A Memory of Freezing Winds
-						i(183324),	-- A Memory of Harmonious Apparatus
-						i(183362),	-- A Memory of Malefic Wrath
-						i(183288),	-- A Memory of Mighty Pour
-						i(183227),	-- A Memory of Oneth's Clear Vision
-						i(183256),	-- A Memory of Qa'pla, Eredun War Order
-						i(183352),	-- A Memory of Skybreaker's Fiery Demise
+						i(183310),	-- Memory of the Vanguard's Momentum
+						i(183214),	-- Memory of the Chaos Theory
+						i(182636),	-- Memory of the Deadliest Coil
+						i(183384),	-- Memory of the Exploiter
+						i(183344),	-- Memory of Finality
+						i(183279),	-- Memory of the Freezing Winds
+						i(183324),	-- Memory of a Harmonious Apparatus
+						i(183362),	-- Memory of a Malefic Wrath
+						i(183288),	-- Memory of a Celestial Infusion
+						i(183227),	-- Memory of Oneth
+						i(183256),	-- Memory of the Eredun War Order
+						i(183352),	-- Memory of the Demise of Skybreaker
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
 						i(183898),	-- Venerated Anima Spherule
@@ -511,18 +511,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(183310),	-- A Memory of Badge of the Mad Paragon
-						i(183214),	-- A Memory of Chaos Theory
-						i(182636),	-- A Memory of Deadliest Coil
-						i(183384),	-- A Memory of Exploiter
-						i(183344),	-- A Memory of Finality
-						i(183279),	-- A Memory of Freezing Winds
-						i(183324),	-- A Memory of Harmonious Apparatus
-						i(183362),	-- A Memory of Malefic Wrath
-						i(183288),	-- A Memory of Mighty Pour
-						i(183227),	-- A Memory of Oneth's Clear Vision
-						i(183256),	-- A Memory of Qa'pla, Eredun War Order
-						i(183352),	-- A Memory of Skybreaker's Fiery Demise
+						i(183310),	-- Memory of the Vanguard's Momentum
+						i(183214),	-- Memory of the Chaos Theory
+						i(182636),	-- Memory of the Deadliest Coil
+						i(183384),	-- Memory of the Exploiter
+						i(183344),	-- Memory of Finality
+						i(183279),	-- Memory of the Freezing Winds
+						i(183324),	-- Memory of a Harmonious Apparatus
+						i(183362),	-- Memory of a Malefic Wrath
+						i(183288),	-- Memory of a Celestial Infusion
+						i(183227),	-- Memory of Oneth
+						i(183256),	-- Memory of the Eredun War Order
+						i(183352),	-- Memory of the Demise of Skybreaker
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
 						i(183898),	-- Venerated Anima Spherule
@@ -774,18 +774,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(183310),	-- A Memory of Badge of the Mad Paragon
-						i(183214),	-- A Memory of Chaos Theory
-						i(182636),	-- A Memory of Deadliest Coil
-						i(183384),	-- A Memory of Exploiter
-						i(183344),	-- A Memory of Finality
-						i(183279),	-- A Memory of Freezing Winds
-						i(183324),	-- A Memory of Harmonious Apparatus
-						i(183362),	-- A Memory of Malefic Wrath
-						i(183288),	-- A Memory of Mighty Pour
-						i(183227),	-- A Memory of Oneth's Clear Vision
-						i(183256),	-- A Memory of Qa'pla, Eredun War Order
-						i(183352),	-- A Memory of Skybreaker's Fiery Demise
+						i(183310),	-- Memory of the Vanguard's Momentum
+						i(183214),	-- Memory of the Chaos Theory
+						i(182636),	-- Memory of the Deadliest Coil
+						i(183384),	-- Memory of the Exploiter
+						i(183344),	-- Memory of Finality
+						i(183279),	-- Memory of the Freezing Winds
+						i(183324),	-- Memory of a Harmonious Apparatus
+						i(183362),	-- Memory of a Malefic Wrath
+						i(183288),	-- Memory of a Celestial Infusion
+						i(183227),	-- Memory of Oneth
+						i(183256),	-- Memory of the Eredun War Order
+						i(183352),	-- Memory of the Demise of Skybreaker
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
 						i(183898),	-- Venerated Anima Spherule
@@ -1053,18 +1053,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(183310),	-- A Memory of Badge of the Mad Paragon
-						i(183214),	-- A Memory of Chaos Theory
-						i(182636),	-- A Memory of Deadliest Coil
-						i(183384),	-- A Memory of Exploiter
-						i(183344),	-- A Memory of Finality
-						i(183279),	-- A Memory of Freezing Winds
-						i(183324),	-- A Memory of Harmonious Apparatus
-						i(183362),	-- A Memory of Malefic Wrath
-						i(183288),	-- A Memory of Mighty Pour
-						i(183227),	-- A Memory of Oneth's Clear Vision
-						i(183256),	-- A Memory of Qa'pla, Eredun War Order
-						i(183352),	-- A Memory of Skybreaker's Fiery Demise
+						i(183310),	-- Memory of the Vanguard's Momentum
+						i(183214),	-- Memory of the Chaos Theory
+						i(182636),	-- Memory of the Deadliest Coil
+						i(183384),	-- Memory of the Exploiter
+						i(183344),	-- Memory of Finality
+						i(183279),	-- Memory of the Freezing Winds
+						i(183324),	-- Memory of a Harmonious Apparatus
+						i(183362),	-- Memory of a Malefic Wrath
+						i(183288),	-- Memory of a Celestial Infusion
+						i(183227),	-- Memory of Oneth
+						i(183256),	-- Memory of the Eredun War Order
+						i(183352),	-- Memory of the Demise of Skybreaker
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
 						i(183898),	-- Venerated Anima Spherule

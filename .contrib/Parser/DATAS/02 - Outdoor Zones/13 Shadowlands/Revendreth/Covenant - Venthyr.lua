@@ -1008,6 +1008,9 @@ _.Zones =
 								--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir, Formal, Elated)
 									i(183107),	-- Char (pet)
+									i(183886, {	-- Sika's Rare Ore Pouch
+										["description"] = "Possible reward when Sika gives an Extravagant Tribute",
+									}),
 								}),
 								n(-961, {	-- Tier 1: A New Court
 								--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
