@@ -490,6 +490,7 @@ _.Zones =
 						i(181637),	-- Lifepath Hammer
 						i(181636),	-- Memoria Spellblade
 						i(181631),	-- Requiem Chime
+						i(181629),	-- Waylight Defender
 						-- TODO: more rewards
 					},
 				}),

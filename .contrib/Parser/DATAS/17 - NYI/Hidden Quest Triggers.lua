@@ -2959,6 +2959,9 @@ _.HiddenQuestTriggers =
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
 		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger)
+		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
+		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
+		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		
 		-- Adventures
 		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared
@@ -3121,6 +3124,7 @@ _.HiddenQuestTriggers =
 		q(61069),	-- Demi the Relic Hoarder secondary quest
 		q(61082),	-- Echo of Aella kill quest
 		q(62251),	-- Echo of Aella secondary loot quest
+		q(62705),	-- Fallen Acolyte Erisne secondary quest
 		q(57705),	-- Herculon kill quest
 		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest

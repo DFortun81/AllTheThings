@@ -656,7 +656,7 @@ pet(136904, 1754);	-- Sewer-Pipe Jelly
 pet(166492, 2556);	-- Shadefeather Hatchling
 pet(151234, 2062);	-- Shadow
 pet(175049, 2872);	-- Shadowbarb Hatchling
---pet(178533, 2622);	-- Shaking Pet Carrier (Jingles)
+pet(178533, 2622);	-- Shaking Pet Carrier (Jingles)
 pet(128309, 1690);	-- Shard of Cyrukh
 pet(122106, 1624);	-- Shard of Supremus (Abyssius)
 pet(97552, 1230);	-- Shell of Tide-Calling (Tideskipper)

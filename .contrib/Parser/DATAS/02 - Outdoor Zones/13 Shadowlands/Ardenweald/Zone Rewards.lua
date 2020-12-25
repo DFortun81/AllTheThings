@@ -32,8 +32,14 @@ _.Zones =
 					i(181399),	-- Faemoss Vestment
 					i(181423),	-- Faemoss Waistband
 					i(181426),	-- Faemoss Bindings
+					i(181401),	-- Gormhusk Chestguard
 					i(181412),	-- Gormhusk Hood
 					i(181416),	-- Gormhusk Kilt
+					i(181421),	-- Gormhusk Mantle
+					i(181405),	-- Gormhusk Steps
+					i(181410),	-- Gormhusk Strikers
+					i(181424),	-- Gormhusk Waistwrap
+					i(181428),	-- Gormhusk Wristguards
 					i(179549),	-- Nightwillow Cudgel
 					i(181406),	-- Runetender Boots
 					i(181429),	-- Runetender Bracers

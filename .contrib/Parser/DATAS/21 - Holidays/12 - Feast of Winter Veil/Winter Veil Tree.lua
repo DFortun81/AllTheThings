@@ -127,16 +127,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 								un(29, i(128768)),	-- Candy Cane
 							},
 						}),
-						--[[
-						i(, {	-- Gently Shaken Gift
+						i(178529, {	-- Gently Shaken Gift
 							["description"] = "Gift from 2020.",
-							["questID"] = ,
+							["questID"] = 60238,
 							["g"] = {
-								un(29, i(178533)),	-- Shaking Pet Carrier
 								un(29, i(178530)),	-- Wreath-A-Rang
 							},
 						}),
-						--]]
 					},
 				}),
 				q(8769, { 	-- A Ticking Present
@@ -287,6 +284,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 								ach(13927),	-- Crashin' Splashin'
 								un(29, i(172223)),	-- Crashin' Thrashin' Battleship [A]
 								un(29, i(172222)),	-- Crashin' Thrashin' Juggernaught [H]
+							},
+						}),
+						i(178528, {	-- Winter Veil Gift
+							["description"] = "Gift from 2020.",
+							["questID"] = 60239,	-- A Winter Veil Gift
+							["g"] = {
+								un(29, i(178533)),	-- Shaking Pet Carrier
 							},
 						}),
 					},
