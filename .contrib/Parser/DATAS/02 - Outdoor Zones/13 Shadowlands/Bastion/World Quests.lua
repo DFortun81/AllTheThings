@@ -48,6 +48,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61564, {	-- Blacksmithing: Polished Kyrian Shield
+					["requireSkill"] = BLACKSMITHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62058, {	-- Centurions, Assemble!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

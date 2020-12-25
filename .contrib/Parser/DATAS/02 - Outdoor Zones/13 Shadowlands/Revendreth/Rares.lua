@@ -340,7 +340,7 @@ _.Zones =
 					["questID"] = 58259,
 					["isDaily"] = true,
 					["coord"] = { 38.6, 72.0, 1525 },
-					["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
+				--	["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
 					["g"] = {
 						crit(6, {	-- Worldedge Gorger
 							["achievementID"] = 14310,	-- Adventurer of Revendreth

@@ -63,6 +63,7 @@ _.Zones =
 					i(181672),	-- Steelcore Shoulders
 					i(181656),	-- Steelcore Warboots
 					i(181680),	-- Steelcore Wristwraps
+					i(181503),	-- Vial of Caustic Liquid
 				},
 			}),
 		}),

@@ -395,7 +395,7 @@ pet(104307, 1348);	-- Jadefire Spirit
 pet(104164, 1333);	-- Jademist Dancer
 pet(93041, 1156);	-- Jewel of Maddening Whispers (Mini Mindslayer)
 pet(94835, 1202);	-- Ji-Kun Hatchling
-pet(21308, 118);	-- Jingling Bell (WInter Reindeer)
+pet(21308, 118);	-- Jingling Bell (Winter Reindeer)
 pet(163821, 2453);	-- Juvenile Brineshell
 pet(174473, 2845);	-- K'uddly
 pet(120051, 1597);	-- Kaliri Hatchling
@@ -656,6 +656,7 @@ pet(136904, 1754);	-- Sewer-Pipe Jelly
 pet(166492, 2556);	-- Shadefeather Hatchling
 pet(151234, 2062);	-- Shadow
 pet(175049, 2872);	-- Shadowbarb Hatchling
+--pet(178533, 2622);	-- Shaking Pet Carrier (Jingles)
 pet(128309, 1690);	-- Shard of Cyrukh
 pet(122106, 1624);	-- Shard of Supremus (Abyssius)
 pet(97552, 1230);	-- Shell of Tide-Calling (Tideskipper)

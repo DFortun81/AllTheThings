@@ -10,15 +10,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 				-- Added for Winter Veil 2020
 				["questID"] = 58901,
 				["coords"] = {
-					{ 33.95, 68.17, 87 },	-- Ironforge
-					{ 52.99, 77.44, 85 },	-- Orgrimmar
+					{ 33.9, 68.1, 87 },	-- Ironforge
+					{ 52.9, 77.4, 85 },	-- Orgrimmar
 				},
-				["maps"] = { 85, 87 },	-- Orgrimmar, Ironforge
 			}),
 			-- ALLIANCE QUESTS --
 			q(7022,  {	-- Greatfather Winter is Here!
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
-				["maps"] = { 87 },	-- Ironforge
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -38,7 +36,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter
 				["provider"] = { "n", 13444 },	-- Greatfather Winter
-				["maps"] = { 87 },	-- Ironforge
 				["sourceQuests"] = {
 					7022,	-- Greatfather Winter is Here!
 					7023,	-- Greatfather Winter is Here!
@@ -51,20 +48,17 @@ _.Holidays = bubbleDown({["u"] = 29},
 					{ "n", 13433 },	-- Wulmort Jinglepocket
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = {
-					25,	-- Hillsbrad Foothills
-					87,	-- Ironforge
-				},
+				["maps"] = { 25 },	-- Hillsbrad Foothills
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["groups"] = {
+				["g"] = {
 					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-						["lvl"] = 60,
+						["description"] = "This gift is granted to any player below 60. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
 						["lvl"] = 101,
-						["groups"] = {
+						["g"] = {
 							-- Battle Pets/Companions
 							un(29, p(254)),		-- Blue Clockwork Rocket Bot
 							un(29, p(191)),		-- Clockwork Rocket Bot
@@ -113,12 +107,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(7045,  {	-- A Smokywood Pastures Thank You! (Alliance)
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
-				["maps"] = { 87, },	-- Ironforge
 				["sourceQuests"] = { 7043, },	-- You're a Mean One... (Alliance)
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				["g"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
-						["groups"] = {
+						["g"] = {
 							-- Illusions
 							i(128649),	-- Illusion: Winter's Grasp
 							i(118572),	-- Illusion: Flames of Ragnaros
@@ -133,7 +126,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					n(-297, {	-- Mailbox
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
-						["groups"] = {
+						["g"] = {
 							n(13444, {	-- Greatfather Winter
 								un(29, i(17712)),	-- Winter Veil Disguise Kit
 							}),
@@ -144,13 +137,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(7062,  {	-- The Reason for the Season (Alliance)
 				["provider"] = { "n", 1365 },	-- Goli Krumn
-				["maps"] = { 87 },	-- Ironforge
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(7063,  {	-- The Feast of Winter Veil (Alliance)
 				["provider"] = { "n", 2916 },	-- Historian Karnik
-				["maps"] = { 87 },	-- Ironforge
 				["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -161,7 +152,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					27,		-- Dun Morogh
 					71,		-- Gadgetzan
-					85,		-- Orgrimmar
 					84,		-- Stormwind
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -170,7 +160,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 			-- HORDE QUESTS --
 			q(6961,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
-				["maps"] = { 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -213,20 +202,17 @@ _.Holidays = bubbleDown({["u"] = 29},
 			]]--
 			q(7061,  {	-- The Feast of Winter Veil (Horde)
 				["provider"] = { "n", 13417 },	-- Sagorne Creststrider
-				["maps"] = { 85 },	-- Orgrimmar
 				["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(6964,  {	-- The Reason for the Season (Horde)
 				["provider"] = { "n", 9550 },	-- Furmund
-				["maps"] = { 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(6962,  {	-- Treats for Great-father Winter
 				["provider"] = { "n", 13445 },	-- Great-father Winter
-				["maps"] = { 85 },	-- Orgrimmar
 				["sourceQuests"] = {
 					6961,	-- Great-father Winter is Here!
 					7021,	-- Great-father Winter is Here!
@@ -240,20 +226,17 @@ _.Holidays = bubbleDown({["u"] = 29},
 					{ "n", 13418 },	-- Kaymard Copperpinch
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = {
-					25,	-- Hillsbrad Foothills
-					85,	-- Orgrimmar
-				},
+				["maps"] = { 25 },	-- Hillsbrad Foothills
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["groups"] = {
+				["g"] = {
 					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-						["lvl"] = 60,
+						["description"] = "This gift is granted to any player below 60. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
 						["lvl"] = 101,
-						["groups"] = {
+						["g"] = {
 							-- Battle Pets/Companions
 							un(29, p(191)),	-- Clockwork Rocket Bot
 							un(29, i(73797, {	-- Lump of Coal
@@ -323,7 +306,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					27,		-- Dun Morogh
 					71,		-- Gadgetzan
-					85,		-- Orgrimmar
 					84,		-- Stormwind
 				},
 				["races"] = HORDE_ONLY,
@@ -331,12 +313,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(6984,  {	-- A Smokywood Pastures Thank You! (Horde)
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
-				["maps"] = { 85 },	-- Orgrimmar
 				["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
 				["races"] = HORDE_ONLY,
-				["groups"] = {
+				["g"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
-						["groups"] = {
+						["g"] = {
 							-- Illusions
 							i(128649),	-- Illusion: Winter's Grasp
 							i(118572),	-- Illusion: Flames of Ragnaros
@@ -350,9 +331,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					n(-297, {	-- Mailbox
-						["description"] = "Great-father Winter will mail this toy to you approximately 1 day after you complete this quest.",
-						["groups"] = {
-							n(13445, {	-- Great-father Winter
+						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
+						["g"] = {
+							n(13445, {	-- Greatfather Winter
 								un(29, i(17712)),	-- Winter Veil Disguise Kit
 							}),
 						},
@@ -365,7 +346,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 				["coord"] = { 52.4, 77.0, 87 },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 				}),
@@ -373,7 +353,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 				["coord"] = { 33.2, 67.8, 87 },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),

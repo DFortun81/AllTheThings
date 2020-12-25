@@ -1243,6 +1243,16 @@ _.Zones =
 											i(176120),	-- RSVP: Cryptkeeper Kassir
 										},
 									}),
+									q(61092, {	-- RSVP: Grandmaster Vole
+										["minReputation"] = { 2445, FRIENDLY },
+										["description"] = "|cFF16be0dInvitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+										["provider"] = { "n", 163019 },	-- Grandmaster Vole
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+										["g"] = {
+											i(176122),	-- RSVP: Grandmaster Vole
+										},
+									}),
 									q(61256, {	-- RSVP: Kleia and Pelagos
 										["sourceQuests"] = { 61880 },	-- Honored Attendance
 										["provider"] = { "n", 174916 },	-- Kleia

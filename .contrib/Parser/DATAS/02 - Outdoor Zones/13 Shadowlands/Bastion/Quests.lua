@@ -260,6 +260,7 @@ _.Zones =
 				}),
 				q(62718, {	-- Hero's Rest
 					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["isBreadcrumb"] = true,
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
 				}),

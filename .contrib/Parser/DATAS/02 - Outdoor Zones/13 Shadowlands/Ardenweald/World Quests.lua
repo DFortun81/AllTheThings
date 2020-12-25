@@ -55,6 +55,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61597, {	-- Engineering: Bug Zapifier
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61983, {	-- Fishing: Speckled Flametail
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,

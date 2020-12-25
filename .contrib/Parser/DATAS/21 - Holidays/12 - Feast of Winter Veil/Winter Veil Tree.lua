@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						}),
 						i(151345, {	-- Gently Shaken Gift
 							["questID"] = 43364,
-							["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+							["description"] = "Gift from 2017.  You will receive only one faction's Hearthstation.  In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(151344, {	-- Hearthstation [H]
@@ -127,6 +127,16 @@ _.Holidays = bubbleDown({["u"] = 29},
 								un(29, i(128768)),	-- Candy Cane
 							},
 						}),
+						--[[
+						i(, {	-- Gently Shaken Gift
+							["description"] = "Gift from 2020.",
+							["questID"] = ,
+							["g"] = {
+								un(29, i(178533)),	-- Shaking Pet Carrier
+								un(29, i(178530)),	-- Wreath-A-Rang
+							},
+						}),
+						--]]
 					},
 				}),
 				q(8769, { 	-- A Ticking Present

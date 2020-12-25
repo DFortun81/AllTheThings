@@ -3348,6 +3348,10 @@ _.HiddenQuestTriggers =
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
 		q(61498),	-- when using "Stock: Appetizers"
+		q(59476),	-- when using "Contract: Mortal Reminders"
+		q(59477),	-- when using "Contract: Mortal Reminders"
+		q(59415),	-- when using "RSVP: Grandmaster Vole"
+		q(59416),	-- when using "RSVP: Grandmaster Vole"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

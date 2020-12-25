@@ -726,3 +726,4 @@ t(184487);	-- Gormling in a Bag
 t(184449);	-- Jiggles's Favorite Toy
 t(184353);	-- Kyrian Hearthstone
 t(184476);	-- Regenerating Slime Vial
+t(178530);	-- Wreath-A-Rang
