@@ -812,6 +812,10 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
+				q(62720, {	-- The Fallen Tree (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 				q(62775, {	-- The Waning Grove (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands

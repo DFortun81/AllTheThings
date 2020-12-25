@@ -357,6 +357,7 @@ i(184631);	-- Adventurer's Enchanting Cache
 i(184634);	-- Adventurer's Herbalism Cache
 i(184635);	-- Adventurer's Mining Cache
 i(184636);	-- Adventurer's Skinning Cache
+i(180372);	-- Amalgamation of Sin
 i(173791);	-- Baguette
 i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card

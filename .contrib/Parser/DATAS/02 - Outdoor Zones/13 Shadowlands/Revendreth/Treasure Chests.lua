@@ -68,6 +68,12 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
 				}),
+				o(1278968758, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60952,
+					["isDaily"] = true,
+					["coord"] = { 66.6, 36.3, 1525 },
+				}),
 				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
 					["questID"] = 60197,

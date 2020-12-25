@@ -32,17 +32,6 @@ _.Zones =
 						i(180688),	-- Infused Remnant of Light
 					},
 				}),
-				n(170434, {	-- Amalgamation of Sin
-					["coord"] = { 66.0, 33.2, 1525 },
-					["questID"] = 60836,
-					["isDaily"] = true,
-					["g"] = {
-						crit(23, {	-- Amalgamation of Sin
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
-						i(183730),	-- Sinstone-Studded Greathelm
-					},
-				}),
 				n(166576, {	-- Azgar
 					["coord"] = { 36.0, 68.6, 1525 },
 					["questID"] = 59893,	-- TODO: also triggered 62464

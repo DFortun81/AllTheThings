@@ -186,6 +186,21 @@ _.Zones =
 				q(60656, {	-- Summon Your Sins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						n(170434, {	-- Amalgamation of Sin
+							["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF075ab2Amalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
+							["questID"] = 60836,
+							["isDaily"] = true,
+							["coord"] = { 66.0, 33.2, 1525 },
+							["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
+							["g"] = {
+								crit(23, {	-- Amalgamation of Sin
+									["achievementID"] = 14310,	-- Adventurer of Revendreth
+								}),
+								i(183730),	-- Sinstone-Studded Greathelm
+							},
+						}),
+					},
 				}),
 				q(60654, {	-- Swarming Souls
 					["isWorldQuest"] = true,

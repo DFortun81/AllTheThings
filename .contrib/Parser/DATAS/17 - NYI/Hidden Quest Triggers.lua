@@ -3248,6 +3248,7 @@ _.HiddenQuestTriggers =
 		q(60845),	-- triggered when looting "Bottle of Redelav Wine" (for Favor: Bottle of Redelav Wine)
 		q(60853),	-- triggered when looting "Portrait of the Sire" (for Favor: Portrait of the Sire)
 		q(60846),	-- triggered when looting "Dredger's Toolkit" (for Favor: Dredger's Toolkit)
+		q(61194),	-- triggers when looting Bell of Remembrance, but only once per day?  unless it just doesn't notify on subsequent loots
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
