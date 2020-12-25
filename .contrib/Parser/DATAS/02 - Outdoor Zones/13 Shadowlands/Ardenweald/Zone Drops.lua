@@ -41,6 +41,7 @@ _.Zones =
 				i(175560),	-- Shimmerbough Leggings
 				i(175565),	-- Shimmerbough Mantle
 				i(175544),	-- Shimmerbough Robe
+				i(175549),	-- Shimmerbough Treads
 				i(175571),	-- Shimmerbough Wristwraps
 				i(174042, {	-- Pinch of Faerie Dust
 					["crs"] = {

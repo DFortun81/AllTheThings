@@ -264,7 +264,7 @@ _.Zones =
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
-					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on Crazed Ash Ghouls for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
+					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on any mobs in the area (ghouls/outcasts/etc.) for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
 					["questID"] = 58263,
 					["isDaily"] = true,
 					["coord"] = { 34.0, 55.5, 1525 },

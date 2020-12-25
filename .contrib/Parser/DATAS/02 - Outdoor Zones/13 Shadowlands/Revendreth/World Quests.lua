@@ -39,6 +39,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60658, {	-- An Endless Appetite
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61879, {	-- Ashes Will Fall
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

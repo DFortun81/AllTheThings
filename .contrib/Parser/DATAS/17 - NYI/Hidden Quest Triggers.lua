@@ -3084,7 +3084,8 @@ _.HiddenQuestTriggers =
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
-
+		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
+		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)

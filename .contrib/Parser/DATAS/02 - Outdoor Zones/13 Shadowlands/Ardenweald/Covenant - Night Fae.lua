@@ -1186,6 +1186,11 @@ _.Zones =
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
+						q(62382, {	-- Into the Unknown (3)
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
 						q(57455, {	-- Mushroom For Improvement
 							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 							["provider"] = { "n", 157710 },	-- Cortinarius
