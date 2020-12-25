@@ -3031,11 +3031,10 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Necrolord
 		q(63328),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Night Fae
 		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Venthyr
-		-- TODO: confirm below for "Ahnqat's Darkness"
-		-- q(63254),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Shared
+		q(63254),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Shared
 		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Kyrian
-		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
-		-- q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
+		q(63310),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
+		q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
 		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
 		
 		-- Ardenweald

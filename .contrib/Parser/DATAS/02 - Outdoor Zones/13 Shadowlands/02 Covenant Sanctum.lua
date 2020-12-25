@@ -37,6 +37,7 @@ _.Zones =
 								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance]
+								i(181837),	-- Clear Mind [Priest]
 								i(181462),	-- Coordinated Offensive [Monk]
 								i(181974),	-- Courageous Ascension [Priest]
 								i(182110),	-- Crippling Hex [Shaman]
