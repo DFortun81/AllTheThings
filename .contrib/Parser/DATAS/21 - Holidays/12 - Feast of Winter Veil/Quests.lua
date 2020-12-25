@@ -53,7 +53,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["isDaily"] = true,
 				["g"] = {
 					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player below 60. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
@@ -231,7 +231,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["isDaily"] = true,
 				["g"] = {
 					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player below 60. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
