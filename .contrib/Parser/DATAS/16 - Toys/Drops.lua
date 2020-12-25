@@ -116,6 +116,7 @@ _.Toys =
 		i(163741),		-- Magic Fun Rock
 		i(164374),		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
+		i(184435),		-- Mark of Purity
 		i(167931),		-- Mechagonian Sawblades
 		i(184413),		-- Mnemonic Attunement Pane
 		i(153126),		-- Micro-Artillery Controller

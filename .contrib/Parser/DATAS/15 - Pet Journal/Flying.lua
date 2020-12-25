@@ -142,6 +142,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
+		p(3064),			-- Larion Cub
 		p(3063),			-- Larion Pouncer
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher
