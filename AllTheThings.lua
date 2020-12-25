@@ -8946,16 +8946,7 @@ app.RecursiveGroupRequirementsFilter = function(group, ...)
 			key == "questID" or
 			(key == "itemID" and app.FilterItemBind(group))) then
 			return true;
-		elseif group.parent then
-		   -- Seems there may have been some infinite recursion here. Add some protective measures and print a warning. Remove this later if it turns out it's not needed.
-		   for k,v in ipairs({...}) do
-		      if group.parent == v then
-			 print("|cff000000WARNING:|r Circular reference in RecursiveGroupRequirementsFilter(), aborting recursion.")
-			 return false;
-		      end
-		   end
-		   return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...);
-		end
+		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...) end;
 		return true;
 	end
 	return false;
