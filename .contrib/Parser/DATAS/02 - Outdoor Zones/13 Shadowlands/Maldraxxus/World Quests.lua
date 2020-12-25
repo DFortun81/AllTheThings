@@ -174,6 +174,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61614, {	-- Skinning: Rugged Carapace
+					["requireSkill"] = SKINNING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60211, {	-- Spore Losers
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

@@ -2962,6 +2962,7 @@ _.HiddenQuestTriggers =
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
+		q(63036),	-- secondary version of "Restoring Balance," unsure criteria for pickup?  possibly one is for Night Fae?  but they both say they can end in 'heart of the forest,' so i'm not sure
 		
 		-- Adventures
 		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared

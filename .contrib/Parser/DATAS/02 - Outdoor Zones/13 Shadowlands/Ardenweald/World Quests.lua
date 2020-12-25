@@ -60,7 +60,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61983, {	-- Fishing: Speckled Flametail
+				q(61598, {	-- Fishing: Speckled Flametail
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -192,9 +192,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181430),	-- Evernight Drape
-				i(175713),	-- Sprigthistle Loop
-				i(175740),	-- Valeshroud Torque
 			}),
 		}),
 	}),

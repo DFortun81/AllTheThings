@@ -24,6 +24,7 @@ _.Zones =
 					i(181432),	-- Duskwarder Spellthorn
 					i(179547),	-- Duskwarder Warclub
 					i(179508),	-- Duskwarder Warglaive
+					i(181430),	-- Evernight Drape
 					i(181420),	-- Faemoss Amice
 					i(181411),	-- Faemoss Coronet
 					i(181409),	-- Faemoss Gloves
@@ -58,6 +59,8 @@ _.Zones =
 					i(181427),	-- Sapsteel Vambraces
 					i(181398),	-- Sapsteel Warhelm
 					i(175728),	-- Soulsifter Root
+					i(175713),	-- Sprigthistle Loop
+					i(175740),	-- Valeshroud Torque
 					i(181457),	-- Wakener's Frond
 					i(179594),	-- Witherscorn Guise
 					i(180145),	-- Witherscorn Handaxe

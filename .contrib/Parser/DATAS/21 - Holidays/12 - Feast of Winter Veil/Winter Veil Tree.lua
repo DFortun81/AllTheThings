@@ -120,8 +120,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						}),
 						i(172225, {	-- Gently Shaken Gift
-							["questID"] = 57643,
 							["description"] = "Gift from 2019.",
+							["questID"] = 57643,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(172219)),	-- Wild Holly
 								un(29, i(128768)),	-- Candy Cane
@@ -278,8 +279,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						}),
 						i(172224, {	-- Winter Veil Gift
-							["questID"] = 57642,
 							["description"] = "Gift from 2019.",
+							["questID"] = 57642,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(13927),	-- Crashin' Splashin'
 								un(29, i(172223)),	-- Crashin' Thrashin' Battleship [A]

@@ -122,6 +122,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(61625, {	-- Jewelcrafting: Sinister Choker
+					["requireSkill"] = JEWELCRAFTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60659, {	-- Light Defense
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
