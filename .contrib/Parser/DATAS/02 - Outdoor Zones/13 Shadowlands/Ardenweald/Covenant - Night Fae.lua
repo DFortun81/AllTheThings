@@ -214,6 +214,11 @@ _.Zones =
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
 					}),
+					q(62544, {	-- From a Dark Place
+						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.6, 39.0, 1701 },
+					}),
 					q(63347, {	-- Night Fae Tactician
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },
