@@ -98,6 +98,7 @@ _.Zones =
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
+					i(181360),	-- Brimming Ember Shard
 					i(181218),	-- Chalice Noble's Signet
 					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
@@ -113,12 +114,20 @@ _.Zones =
 					i(181209),	-- Devourer's Bite
 					i(181217),	-- Dominance Guard's Band
 					i(181207),	-- Dominance Keep Barrier
+					i(181190),	-- Dredger Tossers
 					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
 					i(181220),	-- Fiend Collector's Cudgel
 					i(181204),	-- Hide of Krengaath
 					i(180400),	-- Inquisitions Final Judgment
+					i(180391),	-- Leggings of the Skydarkeners
 					i(181223),	-- Mace of Emberwrath
+					i(182724),	-- Mail Courier's Belt
+					i(182722),	-- Mail Courier's Cap
+					i(181192),	-- Mail Courier's Greaves
+					i(182721),	-- Mail Courier's Grips
+					i(182723),	-- Mail Courier's Shoulderguards
+					i(182720),	-- Mail Courier's Tunic
 					i(181182),	-- Muck Waders
 					i(180355),	-- Ornate Pyx
 					i(181213),	-- Shard-Dusted Shank

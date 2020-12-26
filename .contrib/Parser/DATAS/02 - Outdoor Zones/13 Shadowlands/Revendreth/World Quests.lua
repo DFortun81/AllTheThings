@@ -127,6 +127,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61626, {	-- Leatherworking: Courtly Leather Boots
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60659, {	-- Light Defense
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
