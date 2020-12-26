@@ -3027,14 +3027,14 @@ _.HiddenQuestTriggers =
 		q(63291),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Venthyr
 		q(63239),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Shared
 		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Kyrian
-		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Necrolord
+		q(63270),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Necrolord
 		q(63268),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Night Fae
 		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Venthyr
 		q(63244),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Shared
 		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Kyrian
 		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Necrolord
 		q(63328),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Night Fae
-		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Venthyr
+		q(63331),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Venthyr
 		q(63254),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Shared
 		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Kyrian
 		q(63310),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord

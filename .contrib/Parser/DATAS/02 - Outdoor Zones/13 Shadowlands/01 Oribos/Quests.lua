@@ -457,6 +457,13 @@ _.Zones =
 					["sourceQuests"] = { 62278 },	-- Maldraxxus
 				}),
 				-- Revendreth
+				q(62740, {	-- Dark Aspirations
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62279 },	-- Revendreth
+				}),
 				
 				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
 				-- Ardenweald
@@ -528,7 +535,13 @@ _.Zones =
 					},
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						-- ,	-- TODO: Revendreth Zone-Travel Quest
+						62740,	-- Dark Aspirations
+					},
+					["g"] = {
+						i(181207),	-- Dominance Keep Barrier
+						i(181214),	-- Tax Collector's Barb
+						i(181219),	-- Stonewing Rioter's Cudgel
+						-- TODO: more rewards
 					},
 				}),
 
