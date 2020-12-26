@@ -3016,7 +3016,7 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
 		q(63287),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
 		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared
-		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
+		q(63305),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
 		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
 		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Night Fae
 		q(63307),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
