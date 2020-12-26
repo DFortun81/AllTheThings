@@ -86,6 +86,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61708, {	-- Drawing Out The Poison
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61608, {	-- Enchanting: Unbreakable Crystal
 					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
