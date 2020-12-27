@@ -2961,8 +2961,9 @@ _.HiddenQuestTriggers =
 		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger)
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
+		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
-		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate"
+		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		q(63036),	-- secondary version of "Restoring Balance," unsure criteria for pickup?  possibly one is for Night Fae?  but they both say they can end in 'heart of the forest,' so i'm not sure
 		q(63037),	-- secondary version of "Dark Aspirations," unsure criteria for pickup?  possibly one is for Venthyr, but they both say they can end in sinfall so idk
 		
@@ -3169,7 +3170,6 @@ _.HiddenQuestTriggers =
 		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
-		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding

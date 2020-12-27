@@ -133,6 +133,7 @@ _.Zones =
 				o(348521, {	-- Strange Growth
 					["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
 					["coord"] = { 55.9, 38.9, 1536 },
+					["crs"] = { 165037 },	-- Strange Growth
 					["g"] = {
 						i(182607, {	-- Hairy Egg
 							i(182606),	-- Bloodlouse Larva

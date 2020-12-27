@@ -393,7 +393,13 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
-
+				q(63210, {	-- The Last Step
+				--	after completing your third zone in Skip mode
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 69.9, 1670 },
+				}),
+				
 				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -449,6 +455,14 @@ _.Zones =
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
 				-- Maldraxxus
+				q(62738, {	-- A Fresh Blade
+				--	picked up this version in Oribos (chose Maldraxxus 4th, was Kyrian, not sure if either of these things factor into which version you get)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62278 },	-- Maldraxxus
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+				}),
 				q(63035, {	-- A Fresh Blade
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -515,8 +529,11 @@ _.Zones =
 						63035,	-- A Fresh Blade
 					},
 					["g"] = {
+						i(181685),	-- Gorewrought Barrier
+						i(181689),	-- Gorewrought Bonesaw
 						i(181690),	-- Gorewrought Crusher
 						i(181691),	-- Gorewrought Greatstaff
+						i(181688),	-- Gorewrought Stave
 						i(181692),	-- Gorewrought Warblade
 						-- TODO: more rewards
 					},
