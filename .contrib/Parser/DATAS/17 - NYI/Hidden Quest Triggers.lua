@@ -2962,7 +2962,9 @@ _.HiddenQuestTriggers =
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
+		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate"
 		q(63036),	-- secondary version of "Restoring Balance," unsure criteria for pickup?  possibly one is for Night Fae?  but they both say they can end in 'heart of the forest,' so i'm not sure
+		q(63037),	-- secondary version of "Dark Aspirations," unsure criteria for pickup?  possibly one is for Venthyr, but they both say they can end in sinfall so idk
 		
 		-- Adventures
 		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared
@@ -3248,7 +3250,6 @@ _.HiddenQuestTriggers =
 		q(60845),	-- triggered when looting "Bottle of Redelav Wine" (for Favor: Bottle of Redelav Wine)
 		q(60853),	-- triggered when looting "Portrait of the Sire" (for Favor: Portrait of the Sire)
 		q(60846),	-- triggered when looting "Dredger's Toolkit" (for Favor: Dredger's Toolkit)
-		q(61194),	-- triggers when looting Bell of Remembrance, but only once per day?  unless it just doesn't notify on subsequent loots
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

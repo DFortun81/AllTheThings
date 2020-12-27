@@ -3828,7 +3828,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
-			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
 			un(NEVER_IMPLEMENTED, i(50251)),	-- Unknown
@@ -3932,7 +3931,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
-			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown

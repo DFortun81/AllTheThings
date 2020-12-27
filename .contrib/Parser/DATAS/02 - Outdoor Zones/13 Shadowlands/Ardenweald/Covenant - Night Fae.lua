@@ -214,6 +214,11 @@ _.Zones =
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
 					}),
+					q(62544, {	-- From a Dark Place
+						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.6, 39.0, 1701 },
+					}),
 					q(63347, {	-- Night Fae Tactician
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },
@@ -235,6 +240,11 @@ _.Zones =
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
+					}),
+					q(62536, {	-- The Lost of Teldrassil
+						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.6, 39.0, 1701 },
 					}),
 					
 					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
@@ -701,11 +711,6 @@ _.Zones =
 					}),
 					-- Daughter of the Night Warrior
 					-- From Ardenweald to the Maw and back
-					q(62536, {	-- The Lost of Teldrassil
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1565 },
-						["sourceQuests"] = { 59242 },	-- Their New Home
-					}),
 					q(62890, {	-- The Life-blood of the Forest
 						["provider"] = { "n", 165702 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
@@ -1173,7 +1178,6 @@ _.Zones =
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
-						-- TODO: the API says these are dailies (D) but seems like they are a series to open up each of the unknown areas. Leaving daily for now but may need to change later.
 						q(62296, {	-- Into the Unknown (1)
 							-- requires tier 2 network, but there's no sourceQuest for that
 							["provider"] = { "n", 167455 },	-- Marasmius
@@ -1181,12 +1185,13 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(60153, {	-- Into the Unknown (2)
-							-- requires tier 2 network, but there's no sourceQuest for that. Is 62296 a prerequisite or are they given in random order?
+							-- requires tier 2 network, but there's no sourceQuest for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
 						q(62382, {	-- Into the Unknown (3)
+							-- requires tier 2 network, but there's no sourceQuest for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,

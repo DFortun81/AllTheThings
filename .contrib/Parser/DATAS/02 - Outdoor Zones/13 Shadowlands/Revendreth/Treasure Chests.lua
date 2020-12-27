@@ -33,7 +33,7 @@ _.Zones =
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
 					["coord"] = { 45.8, 47.8, 1525 },
-					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror leading to this chest",
+					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
 					-- ["sourceQuests"] = { },
 					["questID"] = 60949,
 					["g"] = {
@@ -73,6 +73,12 @@ _.Zones =
 					["questID"] = 60952,
 					["isDaily"] = true,
 					["coord"] = { 66.6, 36.3, 1525 },
+				}),
+				o(1278968762, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60956,
+					["isDaily"] = true,
+					["coord"] = { 38.4, 29.8, 1525 },
 				}),
 				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",

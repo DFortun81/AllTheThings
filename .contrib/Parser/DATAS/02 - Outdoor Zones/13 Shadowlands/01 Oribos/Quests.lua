@@ -538,9 +538,13 @@ _.Zones =
 						62740,	-- Dark Aspirations
 					},
 					["g"] = {
+						i(181224),	-- Avowed Arcanist's Staff
 						i(181207),	-- Dominance Keep Barrier
-						i(181214),	-- Tax Collector's Barb
+						i(181223),	-- Mace of Emberwrath
+						i(181212),	-- Soulcaster's Mace
+						i(181211),	-- Souldrinker's Kris
 						i(181219),	-- Stonewing Rioter's Cudgel
+						i(181214),	-- Tax Collector's Barb
 						-- TODO: more rewards
 					},
 				}),
