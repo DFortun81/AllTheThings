@@ -64,6 +64,13 @@ _.Zones =
 				i(177815),	-- Devout Archivist's Chain
 				i(177816),	-- Dredhollow Cape
 				i(179323),	-- Dredhollow Cudgel
+				i(173939, {	-- Enticing Anima
+					["description"] = "Used to summon the Worldedge Gorger.",
+					["crs"] = {
+						159676,	-- Animus Mite
+						160815,	-- Encroaching Gorger
+					},
+				}),
 				i(179329),	-- Gargoyle Heartpiercer
 				i(182690),	-- Gilded Crusader's Morningstar
 				i(177802),	-- Hopebreaker Carbine

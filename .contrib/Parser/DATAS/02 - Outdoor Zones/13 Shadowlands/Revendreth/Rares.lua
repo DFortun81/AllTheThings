@@ -329,20 +329,13 @@ _.Zones =
 					["questID"] = 58259,
 					["isDaily"] = true,
 					["coord"] = { 38.6, 72.0, 1525 },
-				--	["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
+					["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
 					["g"] = {
 						crit(6, {	-- Worldedge Gorger
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180583, {	-- Impressionable Gorger Spawn
 							i(182589),	-- Loyal Gorger (MOUNT!)
-						}),
-						i(173939, {	-- Enticing Anima
-							["description"] = "Used to summon the Worldedge Gorger.",
-							["crs"] = {
-								159676,	-- Animus Mite
-								160815,	-- Encroaching Gorger
-							},
 						}),
 					},
 				}),

@@ -3008,7 +3008,7 @@ _.HiddenQuestTriggers =
 		q(63243),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared -- TODO: confirm
 		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
 		q(63326),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
-		-- q( ),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
+		q(63324),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
 		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr -- TODO: confirm
 		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
 		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
