@@ -19,7 +19,7 @@ _.Zones =
 						{ 33.8, 29.0, 1525 },
 					},
 					["g"] = {
-						i(180592),	-- Trapped Stonefiend
+						i(180592),	-- Trapped Stonefiend (PET!)
 					},
 				}),
 				o(357565, {	-- Forgotten Angler's Rod
@@ -32,10 +32,11 @@ _.Zones =
 					},
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
-					["coord"] = { 45.8, 47.8, 1525 },
 					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
 					-- ["sourceQuests"] = { },
 					["questID"] = 60949,
+					["isDaily"] = true,
+					["coord"] = { 45.8, 47.8, 1525 },
 					["g"] = {
 					},
 				}),

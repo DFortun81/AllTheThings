@@ -83,6 +83,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61441, {	-- Engineering: Power Hammer
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59658, {	-- Express Dominance
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
