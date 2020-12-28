@@ -217,6 +217,11 @@ _.Zones =
 					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
 					["coord"] = { 54.4, 54.2, 1670 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
 					["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi

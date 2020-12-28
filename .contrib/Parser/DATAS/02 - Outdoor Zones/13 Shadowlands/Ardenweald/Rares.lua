@@ -239,7 +239,7 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(182183, {	-- Wolfhawk Soul
-							["questID"] = 62439,	-- Shadowstalker Soul
+							["questID"] = 62439,	-- Wolfhawk Soul
 						}),
 						i(180146),	-- Axe of Broken Wills
 					},

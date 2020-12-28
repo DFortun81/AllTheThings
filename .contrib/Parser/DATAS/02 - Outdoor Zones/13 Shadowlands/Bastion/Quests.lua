@@ -469,6 +469,11 @@ _.Zones =
 					["provider"] = { "n", 167134 },	-- Thanikos
 					["coord"] = { 40.5, 55.2, 1533 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(57555, {	-- Shadow's Fall
 					["sourceQuests"] = {
 						57552,	-- Warriors of the Void
