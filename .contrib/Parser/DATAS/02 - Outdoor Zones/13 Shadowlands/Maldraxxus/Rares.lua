@@ -167,6 +167,19 @@ _.Zones =
 						i(181283),	-- Foulwing Hatchling
 					},
 				}),
+				n(158406, { -- Scunner
+					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
+					["questID"] = 58006,
+					["isDaily"] = true,
+					["coord"] = { 61.6, 76.4, 1536 },
+					["g"] = {
+						crit(2, {	-- Scunner
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(181267),	-- Writhing Spine (PET!)
+						i(184287),	-- Scum-Caked Epaulettes
+					},
+				}),
 				n(159886, { -- Sister Chelicerae
 					["description"] = "Destroy the Intricate Webbing and defeat waves of Chelicerae's Children.",
 					["questID"] = 58003,
@@ -181,19 +194,6 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(181172),	-- Boneweave Hatchling (PET!)
-					},
-				}),
-				n(158406, { -- Scunner
-					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
-					["questID"] = 58006,
-					["isDaily"] = true,
-					["coord"] = { 61.6, 76.4, 1536 },
-					["g"] = {
-						crit(2, {	-- Scunner
-							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
-						}),
-						i(181267),	-- Writhing Spine (PET!)
-						i(184287),	-- Scum-Caked Epaulettes
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster

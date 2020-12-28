@@ -1196,6 +1196,12 @@ _.Zones =
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
+						q(62453, {	-- Into the Unknown (4)
+							-- requires tier 2 network, but there's no sourceQuest for that
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
 						q(57455, {	-- Mushroom For Improvement
 							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 							["provider"] = { "n", 157710 },	-- Cortinarius
