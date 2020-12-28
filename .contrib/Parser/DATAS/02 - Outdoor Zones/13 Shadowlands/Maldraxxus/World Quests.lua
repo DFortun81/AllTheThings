@@ -48,6 +48,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61606, {	-- Blacksmithing: Soul Razor
+					["requireSkill"] = BLACKSMITHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58207, {	-- Buggin' Out
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

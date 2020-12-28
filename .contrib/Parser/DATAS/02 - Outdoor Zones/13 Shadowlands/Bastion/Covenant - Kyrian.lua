@@ -10,241 +10,239 @@ _.Zones =
 				n(ACHIEVEMENTS, {
 				}),
 				n(-901, {	-- Covenant Callings
-					["g"] = {
-						q(60424, {	-- A Call to Ardenweald
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60434, {	-- A Call to Revendreth
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60430, {	-- A Call to Maldraxxus
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(62692, {	-- A Calling in Bastion
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 160470 },	-- Adjutant Nikos
-							["coord"] = { 52.2, 47.0, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60380, {	-- A Source of Sorrowvine
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60372, {	-- A Wealth of Wealdwood
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60391, {	-- Aiding Ardenweald
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 160387 },	-- Hermestes
-							["coord"] = { 64.6, 16.4, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60392, {	-- Aiding Bastion
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 160387 },	-- Hermestes
-							["coord"] = { 64.6, 16.4, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60395, {	-- Aiding Maldraxxus
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 160387 },	-- Hermestes
-							["coord"] = { 64.6, 16.4, 1533 },
-						}),
-						q(60400, {	-- Aiding Revendreth
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 160387 },	-- Hermestes
-							["coord"] = { 64.6, 16.4, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60465, {	-- Anima Appeal
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 158773 },	-- Capheus
-							["coord"] = { 64.0, 20.0, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60458, {	-- Anima Salvage
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["isWeekly"] = true,
-							["provider"] = { "n", 160212 },	-- Soulguide Daelia
-							["coord"] = { 66.8, 15.8, 1533 },
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60377, {	-- Bonemetal Bonanza
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60439, {	-- Challenges in Ardenweald
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 154627 },	-- Xandria
-							["coord"] = { 67.2, 16.0, 1533 },
-							["g"] = {
-								i(181741),	-- Tribute of the Paragon
-							},
-						}),
-						q(60442, {	-- Challenges in Bastion
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 154627 },	-- Xandria
-							["coord"] = { 67.2, 16.0, 1533 },
-							["g"] = {
-								i(181741),	-- Tribute of the Paragon
-							},
-						}),
-						q(60447, {	-- Challenges in Maldraxxus
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 154627 },	-- Xandria
-							["coord"] = { 67.2, 16.0, 1533 },
-							["g"] = {
-								i(181741),	-- Tribute of the Paragon
-							},
-						}),
-						q(60450, {	-- Challenges in Revendreth
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["repeatable"] = true,
-							["provider"] = { "n", 154627 },	-- Xandria
-							["coord"] = { 67.2, 16.0, 1533 },
-							["g"] = {
-								i(181741),	-- Tribute of the Paragon
-							},
-						}),
-						q(60358, {	-- Gildenite Grab
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60415, {	-- Rare Resources
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60454, {	-- Storm the Maw
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["provider"] = { "n", 160212 },	-- Soulguide Daelia
-							["coord"] = { 66.8, 15.8, 1533 },
-							["isWeekly"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60404, {	-- Training Our Forces
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["provider"] = { "n", 168517 },	-- Kalisthene
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60403, {	-- Training in Ardenweald
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["provider"] = { "n", 168517 },	-- Kalisthene
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60407, {	-- Training in Maldraxxus
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["provider"] = { "n", 168517 },	-- Kalisthene
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60412, {	-- Training in Revendreth
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							["provider"] = { "n", 168517 },	-- Kalisthene
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181372),	-- Tribute of the Ascended
-							},
-						}),
-						q(60425, {	-- Troubles at Home
-							["sourceQuests"] = { 62698 },	-- A Call to Service
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181741),	-- Tribute of the Paragon
-							},
-						}),
-					},
+					q(60424, {	-- A Call to Ardenweald
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60434, {	-- A Call to Revendreth
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60430, {	-- A Call to Maldraxxus
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(62692, {	-- A Calling in Bastion
+						["sourceQuests"] = { 62698 },	-- A Call to Service
+						["repeatable"] = true,
+						["provider"] = { "n", 160470 },	-- Adjutant Nikos
+						["coord"] = { 52.2, 47.0, 1533 },
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60380, {	-- A Source of Sorrowvine
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60372, {	-- A Wealth of Wealdwood
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60391, {	-- Aiding Ardenweald
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 160387 },	-- Hermestes
+						["coord"] = { 41.0, 41.2, 1707 },	-- Archon's Rise
+						["g"] = {
+							i(181475),	-- Bounty of the Grove Wardens
+						},
+					}),
+					q(60392, {	-- Aiding Bastion
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 160387 },	-- Hermestes
+						["coord"] = { 64.6, 16.4, 1533 },
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60395, {	-- Aiding Maldraxxus
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 160387 },	-- Hermestes
+						["coord"] = { 64.6, 16.4, 1533 },
+					}),
+					q(60400, {	-- Aiding Revendreth
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 160387 },	-- Hermestes
+						["coord"] = { 64.6, 16.4, 1533 },
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60465, {	-- Anima Appeal
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 158773 },	-- Capheus
+						["coord"] = { 64.0, 20.0, 1533 },
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60458, {	-- Anima Salvage
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["isWeekly"] = true,
+						["provider"] = { "n", 160212 },	-- Soulguide Daelia
+						["coord"] = { 66.8, 15.8, 1533 },
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60377, {	-- Bonemetal Bonanza
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60439, {	-- Challenges in Ardenweald
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 154627 },	-- Xandria
+						["coord"] = { 67.2, 16.0, 1533 },
+						["g"] = {
+							i(181741),	-- Tribute of the Paragon
+						},
+					}),
+					q(60442, {	-- Challenges in Bastion
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 154627 },	-- Xandria
+						["coord"] = { 67.2, 16.0, 1533 },
+						["g"] = {
+							i(181741),	-- Tribute of the Paragon
+						},
+					}),
+					q(60447, {	-- Challenges in Maldraxxus
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 154627 },	-- Xandria
+						["coord"] = { 67.2, 16.0, 1533 },
+						["g"] = {
+							i(181741),	-- Tribute of the Paragon
+						},
+					}),
+					q(60450, {	-- Challenges in Revendreth
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 154627 },	-- Xandria
+						["coord"] = { 67.2, 16.0, 1533 },
+						["g"] = {
+							i(181741),	-- Tribute of the Paragon
+						},
+					}),
+					q(60358, {	-- Gildenite Grab
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60415, {	-- Rare Resources
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						--["provider"] = { "n",  },	--
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60454, {	-- Storm the Maw
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 160212 },	-- Soulguide Daelia
+						["coord"] = { 66.8, 15.8, 1533 },
+						["isWeekly"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60404, {	-- Training Our Forces
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60403, {	-- Training in Ardenweald
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60407, {	-- Training in Maldraxxus
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60412, {	-- Training in Revendreth
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						--["coord"] = { , 1533 },
+						["repeatable"] = true,
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
+					q(60425, {	-- Troubles at Home
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.3, 42.4, 1707 },	-- Archon's Rise
+						["g"] = {
+							i(181372),	-- Tribute of the Ascended
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 69.8, 1707 },	-- Elysian Hold
+						["coord"] = { 42.7, 69.8, 1707 },	-- Archon's Rise
 					}),
 					q(62795, {	-- A Conduit for Good
 						["sourceQuests"] = { 60504 },	-- Strengthen the Bond
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(58791, {	-- A Day in the Life
 						["sourceQuests"] = { 58790 },
@@ -254,7 +252,7 @@ _.Zones =
 					q(58178, {	-- A Partner for Eternity
 						["sourceQuests"] = { 58180 },	-- Phaestus, Genesis of Aeons
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },
+						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
 					}),
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
@@ -264,12 +262,12 @@ _.Zones =
 					q(57905, {	-- A Unique Opportunity
 						["sourceQuests"] = { 62792 },	-- Into the Reservoir
 						["provider"] = { "n", 167745 },	-- Haephus
-						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 					}),
 					q(58795, {	-- Ascended
 						["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 47.8, 53.6, 1707 },	-- Elysian Hold
+						["coord"] = { 47.8, 53.6, 1707 },	-- Archon's Rise
 						["g"] = {
 							i(178157),	-- Selfless Watcher's Legguards
 							i(177054),	-- Selfless Bearer's Legs
@@ -293,13 +291,13 @@ _.Zones =
 					q(57897, {	-- Dangerous to Go Alone
 						["sourceQuests"] = { 62794 },	-- Enhancing the Hold
 						["provider"] = { "n", 167745 },	-- Haephus
-						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 					}),
 					q(63002, {	-- Dangerous to Go Alone
 					--	TODO: verify coordinates and SQs for this version
 					--	["sourceQuests"] = {  },	-- 
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, 1707 },	-- Elysian Hold
+						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
 					}),
 					q(58182, {	-- Dismantling the Opposition
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
@@ -317,7 +315,13 @@ _.Zones =
 						-- Specific requirement unknown, available immediately after returning from the maw
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 167745 },    -- Haephus
-						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
+						["g"] = {
+							i(178156),	-- Selfless Watcher's Gauntlets
+							i(177053),	-- Selfless Bearer's Hands
+							i(179942),	-- Selfless Forgelite's Gloves
+							i(174292),	-- Selfless Collector's Gauntlets
+						},
 					}),
 					q(58793, {	-- Faith Through the Darkness
 						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
@@ -343,7 +347,7 @@ _.Zones =
 					q(62832, {	-- Friends in Dark Places
 						["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -358,7 +362,7 @@ _.Zones =
 					q(62793, {	-- It's All Coming Together
 						["sourceQuests"] = { 62796 },	-- Return to Adrestes
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, 1707 },	-- Elysian Hold
+						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
 						["g"] = {
 							i(178156),	-- Selfless Watcher's Gauntlets
 							i(177053),	-- Selfless Bearer's Hands
@@ -409,17 +413,17 @@ _.Zones =
 					q(62789, {	-- Of Great Renown
 						["sourceQuests"] = { 57895 },	-- Elysian Hold
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.5, 42.1, 1707 },	-- Elysian Hold
+						["coord"] = { 55.5, 42.1, 1707 },	-- Archon's Rise
 					}),
 					q(57904, {	-- Our Eternal Charge
 						["sourceQuests"] = { 62795 },	-- A Conduit for Good
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(62791, {	-- Our Most Precious Resource
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 160387 },	-- Hermestes
-						["coord"] = { 40.9, 40.9, 1707 },	-- Elysian Hold
+						["coord"] = { 40.9, 40.9, 1707 },	-- Archon's Rise
 					}),
 					q(58180, {	-- Phaestus, Genesis of Aeons
 						["sourceQuests"] = {
@@ -446,19 +450,17 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 167745 },	-- Haephus
 						["isWeekly"] = true,
-						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 					}),
 					q(61332, {	-- Return Lost Souls
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
-						["description"] = "|cFF516bfeKyrian Covenant|r only.",
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.6, 1670 },	-- Oribos
-						["maps"] = { 1670 },	-- Oribos
 					}),
 					q(57967, {	-- Rightful Resting Place
 						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
@@ -481,7 +483,7 @@ _.Zones =
 					q(57898, {	-- Soul Meets Body
 						["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(58176, {	-- Stewards of a Feather
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
@@ -491,12 +493,15 @@ _.Zones =
 					q(60504, {	-- Strengthen the Bond
 						["sourceQuests"] = { 57898 },	-- Soul Meets Body
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 						["g"] = {
 						--	TODO: keep conduits here or Uncollectable?
-							i(182321),    -- Enfeebled Mark
-							i(182469),    -- Rejuvenating Wind
-							i(182584),    -- Cheetah's Vigor
+							i(182584),	-- Cheetah's Vigor
+							i(182345),	-- Elysian Dirge
+							i(182321),	-- Enfeebled Mark
+							i(182106),	-- Refreshing Waters
+							i(182469),	-- Rejuvenating Wind
+							i(182108),	-- Thunderous Paws
 						},
 					}),
 					q(58175, {	-- The Eternal Forge
@@ -512,12 +517,12 @@ _.Zones =
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, 1707 },	-- Elysian Hold
+						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
 					}),
 					q(62790, {	-- The Path Provides
 						["sourceQuests"] = { 62789 },	-- Of Great Renown
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 69.8, 1707 },	-- Elysian Hold
+						["coord"] = { 42.7, 69.8, 1707 },	-- Archon's Rise
 					}),
 					q(58798, {	-- The Spires of Ascension
 					--	Increase Kyrian renown by 1
@@ -551,12 +556,12 @@ _.Zones =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(57901, {	-- All That Remains
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 							}),
 							q(57903, {	-- Power in the Sky
 								["sourceQuests"] = { 57901 },	-- All That Remains
 								["provider"] = { "n", 158773 },	-- Capheus
-								["coord"] = { 37.9, 67.5, 1707 },	-- Elysian Hold
+								["coord"] = { 37.9, 67.5, 1707 },	-- Archon's Rise
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
@@ -569,11 +574,11 @@ _.Zones =
 							q(57900, {	-- Across the Shadowlands
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros
-								["coord"] = { 43.8, 40.7, 1707 },	-- Elysian Hold
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
 							}),
 							q(57899, {	-- More Work?
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 							}),
 						}),
 						-- TODO: create headers for these
@@ -727,17 +732,17 @@ _.Zones =
 								-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
 								["sourceQuests"] = { 60496 },	-- Into the Coliseum
 								["provider"] = { "n", 168427 },	-- Artemede
-								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+								["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 							}),
 							q(60493, {	-- Humble Gatherer
 								["sourceQuests"] = { 60489 },	-- The Path of Ascension
 								["provider"] = { "n", 168485 },	-- Apolon
-								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
+								["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
 							}),
 							q(60496, {	-- Into the Coliseum
 								["sourceQuests"] = { 60495 },	-- A Suitable Opponent
 								["provider"] = { "n", 168427 },	-- Artemede
-								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+								["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 								["g"] = {
 									i(180464),	-- Blueprint: Herald's Footpads
 								},
@@ -746,22 +751,22 @@ _.Zones =
 								-- Rewards spell 340105 (Trial: Craven Corinth)
 								["sourceQuests"] = { 61369 },	-- Craven Corinth
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(61361, {	-- Nuuminuuru
 								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(61489, {	-- Of Hearsay and Heresy
 								["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(60498, {	-- Overcoming the Trial
 								["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
 								["provider"] = { "n", 168427 },	-- Artemede
-								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+								["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 							}),
 							q(60974, {	-- Phial of Serenity
 								-- Quest starter crafted with Ascension crafting
@@ -775,7 +780,7 @@ _.Zones =
 							q(61473, {	-- Sourcing Your Own Materials
 								["sourceQuests"] = { 60497 },	-- Herald's Footpads
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(62995, {	-- Spiritforged Aegis
 								-- Quest starter crafted with Ascension crafting
@@ -784,7 +789,7 @@ _.Zones =
 							q(61365, {	-- Splinterbark Nightmare
 								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(62483, {	-- Steward Mail Pouch
 								-- Quest starter created with Ascension crafting
@@ -794,7 +799,7 @@ _.Zones =
 								-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
 								["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
 								["provider"] = { "n", 168430 },	-- Dactylis
-								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+								["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 							}),
 							q(61360, {	-- The Hunt's Gratitude
 								-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
@@ -804,7 +809,7 @@ _.Zones =
 							}),
 							q(60489, {	-- The Path of Ascension
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 							}),
 							q(61490, {	-- War of Information
 								["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
@@ -814,7 +819,7 @@ _.Zones =
 							q(60494, {	-- Your Friend, Dactylis
 								["sourceQuests"] = { 60493 },	-- Humble Gatherer
 								["provider"] = { "n", 168485 },	-- Apolon
-								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
+								["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
 							}),
 						}),
 						n(-944, {	-- Tier 2: Sacred Trials
@@ -1102,11 +1107,11 @@ _.Zones =
 							q(63053, {	-- At a Moment's Notice
 								["sourceQuests"] = { 63052 },	-- Step of Faith
 								["provider"] = { "n", 175907 },	-- Khamsius
-								["coord"] = { 48.9, 62.7, 1707 },	-- Elysian Hold
+								["coord"] = { 48.9, 62.7, 1707 },	-- Archon's Rise
 							}),
 							q(63052, {	-- Step of Faith
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 							}),
 						}),
 						n(-3349, {	-- Tier 2: Leap of Power

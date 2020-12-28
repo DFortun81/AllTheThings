@@ -830,6 +830,11 @@ _.Zones =
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 								}),
+								q(61732, {	-- Old Habits Never Die
+									["provider"] = { "n", 173042 },	-- Second Talon Shenraa
+									["isDaily"] = true,
+									["coord"] = { 72.3, 76.0, 1525 },
+								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
 							}),

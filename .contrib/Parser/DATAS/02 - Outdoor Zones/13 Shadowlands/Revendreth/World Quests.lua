@@ -180,6 +180,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61627, {	-- Skinning: Horrific Leather Hide
+					["requireSkill"] = SKINNING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58084, {	-- Soul Snares
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

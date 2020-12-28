@@ -62,6 +62,7 @@ _.Zones =
 					i(175713),	-- Sprigthistle Loop
 					i(175740),	-- Valeshroud Torque
 					i(181457),	-- Wakener's Frond
+					i(181459),	-- Withergrove Shardling
 					i(179594),	-- Witherscorn Guise
 					i(180145),	-- Witherscorn Handaxe
 				},

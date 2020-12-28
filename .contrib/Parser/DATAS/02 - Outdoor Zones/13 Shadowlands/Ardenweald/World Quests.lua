@@ -83,6 +83,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61601, {	-- Jewelcrafting: Gem Studded Bangle
+					["requireSkill"] = JEWELCRAFTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,

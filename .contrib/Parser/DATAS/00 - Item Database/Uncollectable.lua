@@ -22,6 +22,7 @@ i(184768);	-- Censer of Dried Gracepetals
 i(181368);	-- Centurion Power Core
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
+i(184764);	-- Colossus Actuator
 i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
