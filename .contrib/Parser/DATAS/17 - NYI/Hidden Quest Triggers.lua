@@ -3091,7 +3091,8 @@ _.HiddenQuestTriggers =
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
-		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
+		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
+		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
 		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3173,6 +3174,7 @@ _.HiddenQuestTriggers =
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
+		q(61127),	-- Triggered after getting Oonar's Arm
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares

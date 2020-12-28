@@ -42,6 +42,7 @@ _.Zones =
 								i(181974),	-- Courageous Ascension [Priest]
 								i(182110),	-- Crippling Hex [Shaman]
 								i(181740),	-- Evasive Stride [Monk]
+								i(181942),	-- Focused Mending [Priest]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(181466),	-- Grounding Breath [Monk]
 								i(181373),	-- Harm Denial [Monk]

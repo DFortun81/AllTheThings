@@ -15,6 +15,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61605, {	-- Alchemy: Draught of Grotesque Strength
+					["requireSkill"] = ALCHEMY,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61352, {	-- All Will Be Consumed
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

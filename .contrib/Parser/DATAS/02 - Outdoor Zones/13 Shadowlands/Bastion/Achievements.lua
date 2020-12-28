@@ -617,14 +617,15 @@ _.Zones =
 						},
 					}),
 					crit(14, {	-- Gift of Thenios
+						["description"] = "Requires taking multiple transport pads on the |cFFFFFFFFPath of Wisdom|r and clicking on objects in the correct order.\n\n1. Incense of Patience\n2. Incense of Knowledge\n3. Incense of Insight\n4. Blue orb behind the first Incense of Judgment\n5. The orb will transport you to the real Incense of Judgment\n\nTake the transport pad after using the real Incense of Judgment and you will get the |cFFFFFFFFProof of Wisdom|r buff for a short time, allowing you to open the chest.",
 						["objectID"] = 353943,	-- Gift of Thenios
+						["questID"] = 60894,
 						["coords"] = {
 							{ 42.3, 23.3, 1533 },	-- Transport Pad
 							{ 40.6, 18.9, 1533 },	-- Treasure
 						},
-						["description"] = "Incense of Patience -> Incense of Knowledge -> Incense of Insight -> Blue Orb -> Incense of Judgement",
-						["questID"] = 60894,
 						["g"] = {
+							i(181290),	-- Harmonious Sigil of the Archon
 						},
 					}),
 					crit(15, {	-- Gift of Devos

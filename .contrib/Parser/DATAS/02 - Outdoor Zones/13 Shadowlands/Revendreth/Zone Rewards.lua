@@ -95,9 +95,12 @@ _.Zones =
 							159495,	-- Mire Dredger
 						},
 					}),
+					i(180378),	-- Forgemaster's Crate
+					i(180355),	-- Ornate Pyx
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
+					i(180323),	-- Blackbale Neckpiece
 					i(181360),	-- Brimming Ember Shard
 					i(181218),	-- Chalice Noble's Signet
 					i(181216),	-- Cinderwall Great Mace
@@ -129,7 +132,7 @@ _.Zones =
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(182720),	-- Mail Courier's Tunic
 					i(181182),	-- Muck Waders
-					i(180355),	-- Ornate Pyx
+					i(180401),	-- Noble Justice
 					i(181213),	-- Shard-Dusted Shank
 					i(181180),	-- Sincollector's Cord
 					i(181179),	-- Sincollector's Leggings

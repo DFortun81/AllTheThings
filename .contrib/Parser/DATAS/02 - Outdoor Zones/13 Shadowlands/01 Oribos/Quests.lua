@@ -96,6 +96,12 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
 					["_drop"] = { "g" },	-- drop anima trash
+					["g"] = {
+						i(178593),	-- Intricate Fae Groveweave
+						i(178592),	-- Venerable Kyrian Defender
+						i(178590),	-- Storied Maldraxxian Boneblade
+						i(178591),	-- Ancient Venthyr Relic
+					},
 				}),
 				q(60253, {	-- A Valuable Find: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -216,6 +222,11 @@ _.Zones =
 					["sourceQuests"] = { 59206 },	-- Words of the Primus
 					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
 					["coord"] = { 54.4, 54.2, 1670 },
+				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
 				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion

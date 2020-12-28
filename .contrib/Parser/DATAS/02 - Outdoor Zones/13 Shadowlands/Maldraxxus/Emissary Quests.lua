@@ -14,7 +14,7 @@ _.Zones =
 					["lvl"] = { 60 },
 					["g"] = {
 						i(180646, {	-- Supplies of the Undying Army
-							i(181269),	-- Suspended Corpse
+							i(181269),	-- Micromancer's Mystical Cowl
 							i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
 						}),
 					},

@@ -502,6 +502,11 @@ _.Zones =
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(57724, {	-- Securing Sinfall
 					["sourceQuests"] = { 60566 },	-- Into the Light
 					["provider"] = { "n", 169105 },	-- Breakfist

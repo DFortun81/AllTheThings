@@ -23,7 +23,6 @@ _.PetJournal =
 		p(321),		-- Creepy Crate
 		p(2749),	-- Crypt Fiend
 		p(1521),	-- Cursed Birman
-		p(2960),	-- Decaying Oozewalker
 		p(2546),	-- Detective Ray
 		p(2710),	-- Drowned Hatchling
 		p(1967),	-- Drudge Ghoul
@@ -49,6 +48,7 @@ _.PetJournal =
 		p(628),		-- Infected Fawn
 		p(627),		-- Infected Squirrel
 		p(453),		-- Infested Bear Cub
+		p(3045),	-- Iridescent Ooze
 		un(10, p(302)),	-- Landro's Lichling
 		p(2532),	-- Leper Rat
 		un(10, p(249)),		-- Lil' K.T.
@@ -57,16 +57,16 @@ _.PetJournal =
 		p(3066),	-- Lucy
 		p(1351),	-- Macabre Marionette
 		p(3029),	-- Maw Crawler
+		p(2959),	-- Micromancer
 		p(2202), 	-- Miimii
 		p(2638),	-- Minimancer
 		p(1145),	-- Mr. Bigglesworth
 		p(2963),	-- Mu'dud
 		p(2002), 	-- Naxxy
 		p(1954),	-- Nerubian Swarmer
-		p(2844),	-- Oonar's Arm
+		p(2944),	-- Oonar's Arm
 		p(3046),	-- Putrid Geist
 		p(2080), 	-- Rattlejaw
-		p(3045),	-- Reanimated Plague
 		p(439),		-- Restless Shadeling
 		p(2199),	-- Restored Revenant
 		p(2394),	-- Returned Hatchling

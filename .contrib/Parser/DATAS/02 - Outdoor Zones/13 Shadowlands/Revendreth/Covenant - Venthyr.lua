@@ -40,7 +40,7 @@ _.Zones =
 							["provider"] = { "n", 165302 },	-- Rendle
 							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181475),	-- 	Tribute of the Grove Wardens
+								i(181475),	-- 	Bounty of the Grove Wardens
 							},
 						}),
 						q(60394, {	-- Aiding Bastion

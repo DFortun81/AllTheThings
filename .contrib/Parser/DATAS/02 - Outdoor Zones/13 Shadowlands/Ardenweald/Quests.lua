@@ -441,6 +441,11 @@ _.Zones =
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, 1565 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(60567, {	-- Shooing Wildlife
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver

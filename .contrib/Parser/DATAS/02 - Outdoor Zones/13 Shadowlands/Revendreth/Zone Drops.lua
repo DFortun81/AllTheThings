@@ -39,8 +39,6 @@ _.Zones =
 						}),
 					},
 				}),
-				i(176989),	-- Bloodskin Wristwraps
-				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
 				i(180862),	-- Bulletslinger
 				i(179319),	-- Caged Cudgel
@@ -120,6 +118,7 @@ _.Zones =
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
 				i(183423),	-- Stone Legion Right Sabaton
+				i(180865),	-- Stonebane Cudgel
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(180487),	-- Stonefist's Knuckle Cover
