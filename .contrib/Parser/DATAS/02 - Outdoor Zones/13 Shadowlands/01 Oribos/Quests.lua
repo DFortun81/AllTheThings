@@ -96,6 +96,12 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
 					["_drop"] = { "g" },	-- drop anima trash
+					["g"] = {
+						i(178593),	-- Intricate Fae Groveweave
+						i(178592),	-- Venerable Kyrian Defender
+						i(178590),	-- Storied Maldraxxian Boneblade
+						i(178591),	-- Ancient Venthyr Relic
+					},
 				}),
 				q(60253, {	-- A Valuable Find: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
