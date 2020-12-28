@@ -950,6 +950,7 @@ pet(184507, 3066);	-- Lucy's Lost Collar // Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
 pet(183194, 3033);	-- Maw Stalker
+pet(181269, 2959);	-- Micromancer's Mystical Cowl // Micromancer
 pet(181282, 2963);	-- Mu'dud
 pet(181164, 2944);	-- Oonar's Arm
 pet(180628, 2923);	-- Pearlwing Heron
@@ -983,7 +984,6 @@ pet(182664, 3019);	-- Stemmins
 pet(184398, 3061);	-- Steward Featherling
 pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup
 pet(183855, 3012);	-- Stony's Infused Ruby // Stony
-pet(181269, 2959);	-- Suspended Corpse
 pet(182612, 3009);	-- The Count's Pendant // The Count
 pet(180629, 2922);	-- Thumbbiter
 pet(181272, 2962);	-- Toenail

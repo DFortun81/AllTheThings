@@ -3174,6 +3174,7 @@ _.HiddenQuestTriggers =
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
+		q(61127),	-- Triggered after getting Oonar's Arm
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
