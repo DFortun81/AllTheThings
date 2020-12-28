@@ -3042,7 +3042,7 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Kyrian
 		q(63310),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
 		q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
-		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
+		q(63311),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
