@@ -29,6 +29,9 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184188),	-- Collector's Corpse Gambrel
+						i(184181),	-- Kash's Favored Hook
+						i(184189),	-- Stained Fleshgorer
+						i(184182),	-- Strengthened Abomination Hook
 					},
 				}),
 				n(157058, { -- Corspecutter Moroc
@@ -51,8 +54,8 @@ _.Zones =
 						crit(17, {	-- Deadly Dapperling
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
+						i(181263),	-- Shy Melvin (PET!)
 						i(184280),	-- Dapper Threads
-						i(181263),	-- Shy Melvin
 					},
 				}),
 				n(162797, {	-- Deepscar <Pit Hound>
@@ -141,7 +144,11 @@ _.Zones =
 						crit(16, {	-- Nerissa Heartless
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(182084),	-- Gorespine
+						i(182084),	-- Gorespine (MOUNT!)
+						i(184179),	-- Lichborn Commander's Boneblade
+						i(174076, {	-- Necromantic Oil
+							["questID"] = 58376,	-- Construct Part: Necromantic Oil
+						}),
 					},
 				}),
 				n(162767, {	-- Pesticide
@@ -164,7 +171,8 @@ _.Zones =
 						crit(5, {	-- Ravenomous
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(181283),	-- Foulwing Hatchling
+						i(181283),	-- Foulwing Buzzer (PET!)
+						i(184184),	-- Ravenomous's Acid-Tipped Stinger
 					},
 				}),
 				n(158406, { -- Scunner
@@ -194,6 +202,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(181172),	-- Boneweave Hatchling (PET!)
+						i(184289),	-- Spindlefang Spellblade
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster
@@ -207,6 +216,7 @@ _.Zones =
 						}),
 						i(181265),	-- Corpselouse Larva
 						i(181266),	-- Feasting Larva
+						i(184299),	-- Goresoaked Carapace
 					},
 				}),
 				n(162586, { -- Tahonta
@@ -238,6 +248,10 @@ _.Zones =
 						crit(7, {	-- Taskmaster Xox
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
+						i(184193),	-- Callus-Forged Hook
+						i(184186),	-- Flesh-Fishing Hook
+						i(184192),	-- Pristine Alabaster Gorer
+						i(184187),	-- Taskmaster's Tenderizer
 					},
 				}),
 				n(-922,   {	-- Theater of Pain
@@ -330,6 +344,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182085),	-- Blisterback Bloodtusk
+						i(184288),	-- Ruthless Warlord's Barrier
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
@@ -340,6 +355,8 @@ _.Zones =
 						crit(3, {	-- Zargox the Reborn
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
+						i(184285),	-- Boneclutched Shackles
+						i(181804),	-- Trophy of the Reborn Bonelord
 					},
 				}),
 			}),
