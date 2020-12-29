@@ -623,11 +623,11 @@ _.Zones =
 							["provider"] = { "n", 161526 },	-- General Draven
 							["coord"] = { 50.1, 20.6, 1533 },	-- Bastion
 							["g"] = {
+								i(180937),	-- Fearstalker's Ebony Cloak
 								i(180934),	-- Soulbreaker's Ebony Drape
 							--	TODO: confirm all non-cloth set items (not linked on wowhead/via API)
 								i(180938),	-- Dread Sentinel's Ebony Cloak
 								i(180936),	-- Ebony Death Shroud Cloak
-								i(180937),	-- Fearstalker's Ebony Cloak
 							},
 						}),
 						q(59321, {	-- Sacred Covenant
@@ -730,10 +730,10 @@ _.Zones =
 							["provider"] = { "n", 171175 },	-- General Draven
 							["coord"] = { 21.0, 22.8, 1533 },	-- Bastion
 							["g"] = {
+								i(180907),	-- Fearstalker's Ebony Sabatons
 								i(180906),	-- Soulbreaker's Ebony Slippers
 							--	TODO: verify non-cloth rewards
 								i(180908),	-- Ebony Death Shroud Boots
-								i(180907),	-- Fearstalker's Ebony Sabatons
 								i(180905),	-- Dread Sentinel's Ebony Greatboots
 							},
 						}),

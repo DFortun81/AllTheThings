@@ -196,6 +196,7 @@ _.Zones =
 						}),
 						i(183735),	-- Rogue Sinstealer's Mantle
 						i(177223),	-- Scorched Crypt Key
+						i(183760),	-- Venthyr Spectacles
 					},
 				}),
 				n(165152, {	-- Leeched Soul
