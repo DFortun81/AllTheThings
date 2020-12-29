@@ -22,6 +22,7 @@ _.ExpansionFeatures =
 				1631,	-- Coldheart Interstitia - Layer 2, Floor 2 / Layer 2, Floor 4
 				1776,	-- Coldheart Interstitia - Layer 2, Floor 5
 				--
+				1912,	-- Coldheart Interstitia - Layer 6, Floor 1
 				1913,	-- Coldheart Interstitia - Layer 4, Floor 2
 				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2

@@ -363,19 +363,38 @@ _.ExpansionFeatures =
 				}),
 				
 				-- Soulforges
-				-- q(, {	-- Soulforges, Layer 1
-				-- 	["isWeekly"] = true,
-				--	["title"] = "Soulforges, Layer 1",
-				-- }),
-				-- q(, {	-- Soulforges, Layer 2
-				-- 	["isWeekly"] = true,
-				--	["title"] = "Soulforges, Layer 2",
-				-- }),
-				q(58193, {	-- Soulforges, Layer 3
+				q(58192, {	-- Soulforges, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 1",
+				}),
+				q(58193, {	-- Soulforges, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 2",
+				}),
+				q(58194, {	-- Soulforges, Layer 3
 					["isWeekly"] = true,
 					["title"] = "Soulforges, Layer 3",
 				}),
-				
+				q(58195, {	-- Soulforges, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 4",
+				}),
+				q(58196, {	-- Soulforges, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 5",
+				}),
+				q(58197, {	-- Soulforges, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 6",
+				}),
+				q(61973, {	-- Soulforges, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 7",
+				}),
+				q(61974, {	-- Soulforges, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Soulforges, Layer 8",
+				}),
 				
 				-- Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1
