@@ -2995,7 +2995,7 @@ _.HiddenQuestTriggers =
 		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Venthyr
 		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Shared
 		q(63258),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Kyrian
-		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Necrolord
+		q(63259),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Necrolord
 		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Night Fae
 		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Venthyr
 		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Shared
