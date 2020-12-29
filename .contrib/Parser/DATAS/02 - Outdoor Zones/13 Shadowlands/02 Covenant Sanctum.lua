@@ -24,7 +24,18 @@ _.Zones =
 							i(182671),	-- Runelight Leaper
 							i(180872),	-- Spirited Skyfoal
 							-- Misc.
+							i(184631);	-- Adventurer's Enchanting Cache
+							i(184634);	-- Adventurer's Herbalism Cache
+							i(184635);	-- Adventurer's Mining Cache
+							i(184636);	-- Adventurer's Skinning Cache
 							i(184630),	-- Adventurer's Tailoring Cache
+							i(184643),	-- Champion's Enchanting Cache
+							i(184632);	-- Champion's Fish Cache
+							i(184633);	-- Champion's Meat Cache
+							i(184641),	-- Champion's Mining Cache
+							i(184640),	-- Champion's Skinning Cache
+							i(184638),	-- Hero's Fish Cache
+							i(184637),	-- Hero's Meat Cache
 					},
 				}),
 				n(-901, {	-- Covenant Callings

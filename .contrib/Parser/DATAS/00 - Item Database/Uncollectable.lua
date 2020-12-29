@@ -355,17 +355,11 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
-i(184631);	-- Adventurer's Enchanting Cache
-i(184634);	-- Adventurer's Herbalism Cache
-i(184635);	-- Adventurer's Mining Cache
-i(184636);	-- Adventurer's Skinning Cache
 i(180372);	-- Amalgamation of Sin
 i(173791);	-- Baguette
 i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
-i(184632);	-- Champion's Fish Cache
-i(184633);	-- Champion's Meat Cache
 i(171987);	-- Champions of Azeroth Survival Kit
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
