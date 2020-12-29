@@ -597,7 +597,12 @@ _.Zones =
 							["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 							["maps"] = { 1670 },	-- Oribos
 						}),
-						q(61334, {	-- Return Lost Souls
+						q(61334, {	-- Return Lost Souls (5)
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["isWeekly"] = true,
+							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						}),
+						q(62867, {	-- Return Lost Souls (10)
 							["provider"] = { "n", 164738 },	-- Tenaval
 							["isWeekly"] = true,
 							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
@@ -1064,6 +1069,9 @@ _.Zones =
 									i(183886, {	-- Sika's Rare Ore Pouch
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute",
 									}),
+									i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
+										["questID"] = 62628,	-- Vole's Voucher
+									}),
 								}),
 								n(-961, {	-- Tier 1: A New Court
 								--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
@@ -1322,6 +1330,11 @@ _.Zones =
 									}),
 									q(61526, {	-- The Ember Court (Week 2 / 3)
 										["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									}),
+									q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
 										["provider"] = { "n", 164966 },	-- Temel
 										["isDaily"] = true,	-- according to the API
 										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
