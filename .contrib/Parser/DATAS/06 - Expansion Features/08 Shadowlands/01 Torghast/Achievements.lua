@@ -12,8 +12,10 @@ _.ExpansionFeatures =
 					i(170540, {	-- Ravenous Anima Cell
 						crit(1, {	-- Dark Armaments
 							["achievementID"] = 14778,	-- Extremely Ravenous
+							["description"] = "Requires creatures within the 'Coldheart Interstitia' tower.",
 							["crs"] = {
 								156212,	-- Coldheart Agent
+								165594,	-- Coldheart Ambusher
 								170800,	-- Coldheart Ambusher
 								156157,	-- Coldheart Ascendant
 								156226,	-- Coldheart Binder

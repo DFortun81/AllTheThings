@@ -3032,7 +3032,7 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Kyrian
 		q(63270),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Necrolord
 		q(63268),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Night Fae
-		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Venthyr
+		q(63271),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Venthyr
 		q(63244),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Shared
 		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Kyrian
 		q(63330),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Necrolord
