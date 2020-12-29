@@ -14575,6 +14575,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
 				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
+				-- print(#pois,"WQ in",mapID);
 				if pois then
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually						
@@ -14587,6 +14588,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								questObject.repeatable or
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0) then
+								-- if mapID == 1355 then
+								-- 	print("WQ",questObject.questID,questObject.parent);
+								-- end
 								MergeObject(mapObject.g, questObject);
 								-- see if need to retry based on missing data
 								if not self.retry and questObject.missingData then self.retry = true; end
@@ -14638,7 +14642,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.WorldMapIDs." .. tostring(mapID))
+					-- start fetching the data while other stuff is setup
+					C_QuestLine.RequestQuestLinesForMap(mapID);
 					local mapObject = GetPopulatedMapObject(mapID);
+
+					-- Merge Tasks for Zone
+					self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
+
+					-- Merge Storylines for Zone
+					self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
 
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
