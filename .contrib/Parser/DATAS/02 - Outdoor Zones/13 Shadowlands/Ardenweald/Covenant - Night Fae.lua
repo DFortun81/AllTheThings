@@ -491,6 +491,7 @@ _.Zones =
 						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
 						["provider"] = { "n", 167823 },	-- Lady Moonberry
 						["coord"] = { 68.4, 65.2, 1565 },
+						["_drop"] = { "g" },	-- make 7 items stop showing up that are not actually rewarded by this quest
 					}),
 
 					-- Chapter 5: Night Warrior's Curse (Renown 11 required to start)
@@ -688,8 +689,69 @@ _.Zones =
 						},
 					}),
 
-
 					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
+					q(58445, {	-- Containing the Night
+						["sourceQuests"] = { 61171 },	-- Unbroken Bonds
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.5, 39.1, 1701 },
+					}),
+					q(58446, {	-- Tracker Tracking
+						["sourceQuests"] = { 58445 },	-- Containing the Night
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.5, 39.1, 1701 },
+					}),
+					q(59258, {	-- Home of the Tirnenn
+						["sourceQuests"] = { 58446 },	-- Tracker Tracking
+						["provider"] = { "n", 164627 },	-- Reldorn
+						["coord"] = { 35.3, 51.5, 1565 },
+					}),
+					q(58706, {	-- Dressing the Kill
+						["sourceQuests"] = { 59258 },	-- Home of the Tirnenn
+						["provider"] = { "n", 161353 },	-- Huln Highmountain
+						["coord"] = { 30.0, 44.9, 1565 },
+					}),
+					q(58447, {	-- Monster Hunting
+						["sourceQuests"] = { 58706 },	-- Dressing the Kill
+						["provider"] = { "n", 161353 },	-- Huln Highmountain
+						["coord"] = { 30.0, 44.9, 1565 },
+						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
+					}),
+					q(58449, {	-- Acid Reflux
+						["sourceQuests"] = { 58447 },	-- Monster Hunting
+						["provider"] = { "n", 165841 },	-- Huln Highmountain
+						["coord"] = { 35.3, 51.2, 1565 },
+					}),
+					q(58450, {	-- Anima Instincts
+						["sourceQuests"] = { 58447 },	-- Monster Hunting
+						["provider"] = { "n", 165841 },	-- Huln Highmountain
+						["coord"] = { 35.3, 51.2, 1565 },
+					}),
+					q(59721, {	-- Becoming the Hunt
+						["sourceQuests"] = { 
+							58449,	-- Acid Reflux
+							58450,	-- Anima Instincts
+						},
+						["provider"] = { "n", 164627 },	-- Reldorn
+						["coord"] = { 35.3, 51.5, 1565 },
+					}),
+					q(58451, {	-- Voras, The Realm Eater
+						["sourceQuests"] = { 59721 },	-- Becoming the Hunt
+						["provider"] = { "n", 161353 },	-- Huln Highmountain
+						["coord"] = { 24.5, 49.0, 1565 },
+					}),
+					q(58452, {	-- Tracking the Shadows
+						["sourceQuests"] = { 58451 },	-- Voras, The Realm Eater
+						["provider"] = { "n", 161353 },	-- Huln Highmountain
+						["coord"] = { 24.5, 49.0, 1565 },
+						["g"] = {
+							i(175592),	-- Faewoven Leggings
+							i(179769),	-- Oakheart Britches
+							i(179891),	-- Queensguard Greaves
+							i(181913),	-- Runewarden's Legguards
+						},
+					}),
+
+
 					-- Chapter 8: Deal for a Loa (Renown 20 required to start)
 					-- Chapter 9: Drust and Ashes (Renown 22 required to start)
 					

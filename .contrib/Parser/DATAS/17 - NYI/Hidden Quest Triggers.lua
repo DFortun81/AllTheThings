@@ -3442,6 +3442,7 @@ _.HiddenQuestTriggers =
 		q(62810),	-- Mortanis kill questID
 		q(62812),	-- Nurgash Muckformed kill questID
 		q(62811),	-- Oranomonos kill questID
+		q(62809),	-- Valinor kill questID
 
 		-- Castle Nathria
 		-- q(62949),	-- First kill of Sire Denthrius / First full clear on Normal / ???
