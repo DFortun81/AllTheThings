@@ -949,16 +949,16 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_HOLDABLE"] = {17},
 	["INVTYPE_TABARD"] = {19},
 };
-local function BuildGroups(parent, g)
+local function BuildGroups(parent, g, noRecur)
 	if g then
 		-- Iterate through the groups
 		for key, group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
-			-- print(key,group.key,group[group.key]);
-
-			-- Build the groups
-			BuildGroups(group, group.g);
+			-- Build the sub-groups by default
+			if not noRecur then
+				BuildGroups(group, group.g);
+			end
 		end
 	end
 end
@@ -995,12 +995,16 @@ local function BuildSourceTextForTSM(group, l)
 end
 -- does not actually Clone Data, but rather returns a new table whose __index is the source table
 local function CloneData(data)
-	local clone = setmetatable({}, { __index = data });
+	-- local cloneSource = tostring(data);
+	local clone = setmetatable({
+		-- ["cloneSource"] = cloneSource,
+		}, { __index = data });
 	if data.g then
 		clone.g = {};
 		for i,group in ipairs(data.g) do
 			local child = CloneData(group);
-			child.parent = clone;
+			-- child.parent = clone;
+			rawset(child, "parent", clone);
 			tinsert(clone.g, child);
 		end
 	end
@@ -1662,7 +1666,7 @@ MergeProperties = function(g, o)
 		for k,v in pairs(o) do
 			if k ~= "expanded" and
 				k ~= "g" and
-				(k ~= "parent" or not rawget(g, k) or app.RecursiveGroupRequirementsFilter(v)) then
+				k ~= "parent" then
 				rawset(g, k, v);
 			end
 		end
@@ -2990,7 +2994,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 					if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
 						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source,replacement);
+							text = string.gsub(text, source, replacement);
 						end
 						if j.u then
 							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
@@ -3045,18 +3049,40 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			MergeObject(merged)
 			]]
 
+			-- print("params",paramA,paramB);
 			-- Clone all the groups so that things don't get modified in the Source
 			local cloned = {};
+			-- local temp_orig = {};
+			local uniques = {};
 			for i,o in ipairs(group) do
-				tinsert(cloned, CloneData(o));
+				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
+				if not contains(uniques, tostring(o)) then
+					tinsert(uniques, tostring(o));
+					-- tinsert(temp_orig,o);
+					-- if o.g then
+					-- 	for k,v in ipairs(o.g) do
+					-- 		tinsert(temp_orig,v);
+					-- 	end
+					-- end
+					-- print("Clone",o,"=>",c);
+					tinsert(cloned, CloneData(o));
+				end
 			end
+			wipe(uniques);
 			-- replace the Source references with the cloned references
 			group = cloned;
+
+			-- print("test1")
+			-- for k,v in pairs(temp_orig) do
+			-- 	print(k,tostring(v),tostring(v.parent));
+			-- end
+			-- print("--");
 
 			-- Find or Create the root group for the search results
 			local root;
 			for i,o in ipairs(group) do
 				-- If the obj "is" the root obj
+				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
 				if o.key == paramA and o[o.key] == paramB then
 					-- object meets filter criteria and is exactly what is being searched
 					if app.RecursiveGroupRequirementsFilter(o) then
@@ -3075,8 +3101,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						else MergeProperties(root, o); end
 					end
 				end
-			end			
-			-- print("params",paramA,paramB);
+			end
 			if not root then root = CreateObject({ [paramA] = paramB }); end
 			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
 			paramA, paramB = root.key, root[root.key];
@@ -3270,7 +3295,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			group.total = 0;
 			group.progress = 0;
-			BuildGroups(group, group.g);
+			-- ensure the root of the group has no parent which would pass-thru to the metatable of the root which might be a source group
+			group.parent = false;
+			-- print("pre-BuildGroups")
+			-- for k,v in pairs(temp_orig) do
+			-- 	print(k,tostring(v),tostring(v.parent));
+			-- end
+			-- print("--");
+			-- only adjust the parents of the top-level group results since all sub-levels already reference their respective parents from CloneData
+			-- (recursively setting the .parent keys somehow replaces the .parent values on the Source groups in some cases... makes no sense)
+			BuildGroups(group, group.g, true);
+			-- print("pre-UpdateGroups")
+			-- for k,v in pairs(temp_orig) do
+			-- 	print(k,tostring(v),tostring(v.parent));
+			-- end
+			-- print("--");
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
@@ -3278,6 +3317,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group.progress = group.progress + 1;
 				end
 			end
+
+			-- TEMP: save the final result as a top-level variable for debug /dump purposes
+			-- app.SearchResultGroup = CloneData(group);
 		end
 
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
@@ -8933,8 +8975,50 @@ app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
 
 -- Recursive Checks
+app.VerifyCache = function()
+	if not fieldCache then return false; end
+	for i,keyCache in pairs(fieldCache) do
+		print("keyCache",i);
+		for k,valueCache in pairs(keyCache) do
+			-- print("valueCache",k);
+			for o,group in pairs(valueCache) do
+				-- print("group",o);
+				if not app.VerifyRecursion(group) then
+					print("Caused infinite .parent recursion",group.key,group[group.key]);
+				end
+				app:CheckYieldHelper();
+			end
+		end
+	end
+end
+-- Verify no infinite parent recursion exists for a given group
+app.VerifyRecursion = function(group, checked)
+	if type(group) ~= "table" then return; end
+	if not checked then 
+		checked = { };
+		-- print("test",group.key,group[group.key]);
+	end
+	for k,o in pairs(checked) do
+		if o == group then
+			print("Infinite .parent Recursion Found:");
+			-- print the parent chain to the loop point
+			for a,b in pairs(checked) do
+				print(b.key,b[b.key],b,"=>");
+			end
+			print(group.key,group[group.key],group);
+			print("---");
+			return;
+		end
+	end
+	if group.parent then
+		tinsert(checked, group);
+		return app.VerifyRecursion(group.parent, checked);
+	end
+	return true;
+end
 -- Recursively check outwards to find if any parent group restricts the filter for this character
-app.RecursiveGroupRequirementsFilter = function(group, ...)
+app.RecursiveGroupRequirementsFilter = function(group)
+	-- if not app.VerifyRecursion(group) then return; end
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		-- if this group is an actual in-game 'thing', there's no reason to continue checking the parents, since it can exist on its own
 		local key = group.key;
@@ -8946,7 +9030,7 @@ app.RecursiveGroupRequirementsFilter = function(group, ...)
 			key == "questID" or
 			(key == "itemID" and app.FilterItemBind(group))) then
 			return true;
-		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent, group.parent, ...) end;
+		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent) end;
 		return true;
 	end
 	return false;
@@ -11290,6 +11374,10 @@ RowOnEnter = function (self)
 			end
 		end
 
+		-- DEBUGGING
+		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
+		-- GameTooltip:AddDoubleLine("LUA Parent Table ID",tostring(reference.parent));
+
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
 		GameTooltip:Show();
@@ -12087,6 +12175,9 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
+
+
+		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	end
 	app.GetDataCache = function()
 		return app:GetWindow("Prime").data;
@@ -16538,7 +16629,8 @@ app.events.VARIABLES_LOADED = function()
 			if cc == nil then
 				-- print("first check of SL_SKIP");
 				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-				cc = IsQuestFlaggedCompleted(62713);
+				cc = IsQuestFlaggedCompleted(62713) or false;
+			-- character is not a skip character, check if the status has changed
 			elseif not cc then
 				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 				cc = IsQuestFlaggedCompleted(62713);
