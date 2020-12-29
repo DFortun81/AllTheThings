@@ -253,7 +253,12 @@ _.Zones =
 									i(181732),	-- Tribute of the Ambitious
 								},
 							}),
-							q(61333, {	-- Return Lost Souls
+							q(61333, {	-- Return Lost Souls (5 soul version)
+								["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+								["coord"] = { 46.5, 42.2, 1698 },
+								["isWeekly"] = true,
+							}),
+							q(62864, {	-- Return Lost Souls (10 soul version)
 								["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 								["coord"] = { 46.5, 42.2, 1698 },
 								["isWeekly"] = true,

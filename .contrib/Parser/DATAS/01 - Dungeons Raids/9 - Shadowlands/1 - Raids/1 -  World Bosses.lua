@@ -71,9 +71,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
 				["isRaid"] = true,
-				--["coord"] = { 62.0, 24.0, 895 },
-				["maps"] = {
-				},
+				["coord"] = { 26.3, 22.4, 1533 },
+				["maps"] = { 1533 },	-- Bastion
 				["cr"] = 167524,	-- Valinor, the Light of Eons
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus
