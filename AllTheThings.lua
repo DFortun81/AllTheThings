@@ -9562,7 +9562,7 @@ function app.QuestCompletionHelper(questID)
 					result.marked = nil;
 					if result.total then
 						-- This is an item that has a relative set of groups
-						--UpdateParentProgress(result);
+						if result.collectible then UpdateParentProgress(result) end;
 
 						-- If this is NOT a group...
 						if not result.g and result.collectible then

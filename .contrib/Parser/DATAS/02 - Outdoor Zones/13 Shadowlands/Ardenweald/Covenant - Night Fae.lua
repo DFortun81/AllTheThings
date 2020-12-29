@@ -235,8 +235,13 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
-					q(61331, {	-- Return Lost Souls
+					q(61331, {	-- Return Lost Souls (5 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+						["provider"] = { "n", 158553 },	-- Flutterby
+						["coord"] = { 33.9, 43.5, 1565 },
+						["isWeekly"] = true,
+					}),
+					q(62858, {	-- Return Lost Souls (10 soul version)
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,

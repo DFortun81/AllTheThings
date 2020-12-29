@@ -3164,6 +3164,7 @@ _.HiddenQuestTriggers =
 		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
 		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
+		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3300,18 +3301,23 @@ _.HiddenQuestTriggers =
 		q(59440),	-- triggered when entering the Ember Court, Week 1
 		q(61924),	-- triggered when entering the Ember Court, Week 2
 		q(61928),	-- triggered when entering the Ember Court, Week 4
+		q(61921),	-- triggered when entering the Ember Court, Week 5
 		q(61927),	-- triggered when entering the Ember Court for the week
 		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
+		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
+		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
+		q(62143),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Murder of Colonel Mort" objective
+		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
 		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
-		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
-		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
-		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
-		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
 	--	q(62144),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62130),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62171),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62146),	-- triggered when completing 'formal' activities? maybe more info...
 		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
@@ -3320,8 +3326,11 @@ _.HiddenQuestTriggers =
 		q(62515),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
 		q(62500),	-- triggered when Ember Court ended, Week 4 (had Plague Deviser Marileth as guest and he was elated)
 		q(62516),	-- triggered when Ember Court ended, Week 4 (had Plague Deviser Marileth as guest and he was elated)
+		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
+		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
+		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
@@ -3362,6 +3371,8 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59415),	-- when using "RSVP: Grandmaster Vole"
 		q(59416),	-- when using "RSVP: Grandmaster Vole"
+		q(59474),	-- when selecting Traditional decorations for the Ember Court
+		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

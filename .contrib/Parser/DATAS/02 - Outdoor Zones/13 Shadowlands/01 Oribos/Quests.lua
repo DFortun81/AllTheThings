@@ -163,8 +163,7 @@ _.Zones =
 					["coord"] = { 39.2, 69.7, 1670 },
 				}),
 				q(62966, {	-- Finding a Witness
-					-- TODO: add ["sourceQuests"] = { },
-					-- showed up after week 4 reset, so whatever was the previous Torghast quest is probably the source for this one
+					["sourceQuests"] = { 60139 },	-- Torture Chamber: Jaina
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.0, 65.3, 1670 },
 				}),
@@ -282,6 +281,11 @@ _.Zones =
 				}),
 				q(60139, {	-- Torment Chamber: Jaina
 					["sourceQuests"] = { 62938 },	-- Information for a Price
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
+				q(60146, {	-- Torment Chamber: Thrall
+					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
