@@ -119,13 +119,14 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 			})),
 			ach(4496),	-- It's Over Nine Thousand!
-			ach(14140, {	-- Mad World	Crit not working here ingame.
-				title(419),	-- %s, the Faceless One
-				ach(14141),	-- Stormwind
-				ach(14142),	-- Orgrimmar
-				--crit(1),	-- Stormwind
-				--crit(2),	-- Orgrimmar
-			}),
+			un(REMOVED_FROM_GAME, ach(14140, {	-- Mad World
+				un(REMOVED_FROM_GAME, title(419)),	-- %s, the Faceless One
+				un(REMOVED_FROM_GAME, ach(14141)),	-- Solo Nightmares - Stormwind
+				un(REMOVED_FROM_GAME, ach(14142)),	-- Solo Nightmares - Orgrimmar
+			})),
+			un(REMOVED_FROM_GAME, ach(13779, {		-- Phenomenal Cosmic Power
+				un(REMOVED_FROM_GAME, title(407)),		-- , Azeroth's Champion"
+			})),
 			ach(10334, {	-- Predator
 				title(59),	-- Predator
 			}),
@@ -243,9 +244,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(6867)),	-- Realm First! Zen Master Scribe
 			un(REMOVED_FROM_GAME, ach(6871)),	-- Realm First! Zen Master Skinner
 			un(REMOVED_FROM_GAME, ach(6872)),	-- Realm First! Zen Master Tailor
-			ach(13779, {		-- Phenomenal Cosmic Power
-				title(407),		-- , Azeroth's Champion"
-			}),
 			ach(9597, {	-- You're Really Doing It Wrong
 				["maps"] = {
 					480,	-- Proving Grounds
