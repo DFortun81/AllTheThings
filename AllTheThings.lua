@@ -4257,22 +4257,23 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	_cache = SearchForField("questID",questObject.questID);
+	_cache = SearchForField("questID",questObject.questID, true);
 	if _cache then
 		for _,data in ipairs(_cache) do
 			-- only merge into the WQ quest object properties from an object in cache with this questID
 			if data["questID"] == questObject.questID then
-				for key,value in pairs(data) do
-					if not (key == "g" or key == "parent") then
-						questObject[key] = value;
-					end
-				end
+				-- for key,value in pairs(data) do
+				-- 	if not (key == "g" or key == "parent") then
+				-- 		questObject[key] = value;
+				-- 	end
+				-- end
+				MergeProperties(questObject, data);
 				if data.isVignette then questObject.isVignette = true; end
 				if data.g then
 					for _,entry in ipairs(data.g) do
 						local resolved = ResolveSymbolicLink(entry);
 						if resolved then
-							entry = CreateObject(entry); -- TODO: not necessary anymore
+							-- entry = CreateObject(entry); -- TODO: not necessary anymore
 							if entry.g then
 								MergeObjects(entry.g, resolved);
 							else
@@ -4298,16 +4299,17 @@ local function PopulateQuestObject(questObject)
 			if _cache then
 				for _,data in ipairs(_cache) do
 					if GetRelativeField(data, "npcID", -16) then	-- Rares only!
-						for key,value in pairs(data) do
-							if not (key == "g" or key == "parent") then
-								questObject[key] = value;
-							end
-						end
+						-- for key,value in pairs(data) do
+						-- 	if not (key == "g" or key == "parent") then
+						-- 		questObject[key] = value;
+						-- 	end
+						-- end
+						MergeProperties(questObject, data);
 						if data.g then
 							for _,entry in ipairs(data.g) do
 								local resolved = ResolveSymbolicLink(entry);
 								if resolved then
-									entry = CreateObject(entry); -- TODO: not necessary anymore
+									-- entry = CreateObject(entry); -- TODO: not necessary anymore
 									if entry.g then
 										MergeObjects(entry.g, resolved);
 									else
@@ -4331,7 +4333,11 @@ local function PopulateQuestObject(questObject)
 	for j=1,numQuestRewards,1 do
 		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
 		if itemID then
-			if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
+			if showCurrencies or (
+				itemID ~= 116415 and	-- Shiny Pet Charm
+				itemID ~= 163036 and	-- Polished Pet Charm
+				itemID ~= 137642		-- Mark of Honor
+				) then
 				QuestHarvester.AllTheThingsProcessing = true;
 				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
@@ -4340,20 +4346,36 @@ local function PopulateQuestObject(questObject)
 				QuestHarvester:Hide();
 				if link then
 					--print("TODO: Parse Link", link);
+					local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
+					itemID = tonumber(itemID);
+					local item = { ["itemID"] = itemID, ["expanded"] = false, ["link"] = link, ["modID"] = tonumber(modID) };
+					-- print("WQ reward",link,itemID)
 					_cache = SearchForLink(link);
-					if _cache and #_cache > 0 then
-						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-						for _,item in ipairs(_cache) do
-							item = CreateObject(item); -- TODO: CloneData
-							item.link = link;
-							if modID then item.modID = tonumber(modID); end
-							MergeObject(questObject.g, item);
+					if _cache then
+						for _,data in ipairs(_cache) do
+							-- print("_cached",data.key,data[data.key])
+							-- cache record is the item itself
+							if data.key == "itemID" and data[data.key] == itemID then
+								-- print("Merge cached item")
+								MergeProperties(item, data);
+							-- cache record is associated with the item
+							else
+								if not item.g then
+									item.g = {};
+									item.progress = 0;
+									item.total = 0;
+									-- item.OnUpdate = OnUpdateForItem;
+								end
+								-- print("Clone cached item")
+								MergeObject(item.g, CloneData(data));
+							end
 						end
 					end
+					MergeObject(questObject.g, item);
 				else
 					-- Take the best guess at what this is... No clue.
 					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-					_cache = fieldCache["itemID"][itemID];
+					_cache = SearchForField("itemID", itemID, true);
 					local item = { ["itemID"] = itemID, ["expanded"] = false, };
 					if _cache then
 						local ACKCHUALLY;
@@ -4425,29 +4447,37 @@ local function PopulateQuestObject(questObject)
 		for j=1,numCurrencies,1 do
 			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
 			if currencyID then
+				currencyID = tonumber(currencyID);
 				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-				_cache = fieldCache["currencyID"][currencyID];
+				_cache = SearchForField("currencyID", currencyID, true);
 				if _cache then
 					for _,data in ipairs(_cache) do
-						if data.f then
-							item.f = data.f;
-						end
-						if data.g and #data.g > 0 then
+						-- if data.f then
+						-- 	item.f = data.f;
+						-- end
+						-- print("_cached",data.key,data[data.key])
+						-- cache record is the item itself
+						if data.key == "currencyID" and data[data.key] == currencyID then
+							-- print("Merge cached item")
+							MergeProperties(item, data);
+						-- cache record is associated with the item
+						else
 							if not item.g then
 								item.g = {};
 								item.progress = 0;
 								item.total = 0;
-								item.OnUpdate = OnUpdateForItem;
+								-- item.OnUpdate = OnUpdateForItem;
 							end
-							MergeObjects(item.g, data.g);
+							-- print("Clone cached item")
+							MergeObject(item.g, CloneData(data));
 						end
 					end
-					if not item.g then
-						item.g = {};
-						item.progress = 0;
-						item.total = 0;
-						item.OnUpdate = OnUpdateForItem;
-					end
+					-- if not item.g then
+					-- 	item.g = {};
+					-- 	item.progress = 0;
+					-- 	item.total = 0;
+					-- 	-- item.OnUpdate = OnUpdateForItem;
+					-- end
 					MergeObject(questObject.g, item);
 				end
 			else
@@ -14611,7 +14641,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 641, 5210, { 47063 }},	-- Val'Sharah
 					}
 				},
-				{ 905 },	-- Argus, already has individual zones above
+				{ 905 },	-- Argus
 				-- WoD Continents
 				{ 572 },	-- Draenor
 				-- MoP Continents
