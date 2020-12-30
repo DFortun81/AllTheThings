@@ -128,9 +128,9 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["repeatable"] = true,
 						["provider"] = { "n", 154627 },	-- Xandria
-						["coord"] = { 67.2, 16.0, 1533 },
+						["coord"] = { 62.1, 37.6, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181741),	-- Tribute of the Paragon
+							i(181476),	-- Tribute of the Wild Hunt
 						},
 					}),
 					q(60442, {	-- Challenges in Bastion

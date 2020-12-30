@@ -79,6 +79,14 @@ _.ExpansionFeatures =
 						follower(1280),	-- Chalkyth
 					},
 				}),
+				q(62999, {	-- Champion: Croman
+				--	picked up on a venthyr, is this for all or covenant-specific?
+					["sourceQuests"] = { 62993 },	-- The Riddle of Death
+					["provider"] = { "n", 175649 },	-- Croman
+					["g"] = {
+						follower(1325),	-- Croman
+					},
+				}),
 				q(61218, {	-- Champion: Dug Gravewell [Venthyr]
 					["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
 					["provider"] = { "n", 171869 },	-- Dug Gravewell
@@ -225,6 +233,9 @@ _.ExpansionFeatures =
 				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
 					["repeatable"] = true,
 				--	["provider"] = { "n",  },	-- Teliah
+				}),
+				q(62993, {	-- The Riddle of Death
+					["provider"] = { "n", 175648 },	-- Croman
 				}),
 				
 				--------------

@@ -10,6 +10,64 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["modID"] = 14,
 		["lvl"] = { 60 },
 		["g"] = {
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					173104,	-- Mortanis
+					167526,	-- Nurgash Muckformed
+					167527,	-- Oranomonos the Everbranching
+					167524,	-- Valinor, the Light of Eons
+				},
+				["g"] = {
+					i(181770),	-- Bone Marrow Hops
+					i(182706),	-- Brooding Pool
+					i(182292),	-- Brutal Grasp
+					i(182962),	-- Catastrophic Origin
+					i(183473),	-- Conflux of Elements
+					i(181974),	-- Courageous Ascension
+					i(183471),	-- Deep Allegiance
+					i(182651),	-- Destructive Reverberations
+					i(181539),	-- Discipline of the Grove
+					i(182345),	-- Elysian Dirge
+					i(182331),	-- Empowered Release
+					i(183474),	-- Endless Thirst
+					i(182321),	-- Enfeebled Mark
+					i(182347),	-- Essential Extraction
+					i(183472),	-- Evolved Swarm
+					i(182129),	-- Fae Fermata
+					i(182961),	-- Fatal Decimation
+					i(181981),	-- Festering Transfusion
+					i(181553),	-- Gift of the Lich
+					i(182777),	-- Hallowed Discernment
+					i(182463),	-- Harrowing Punishment
+					i(181774),	-- Imbued Reflections
+					i(182288),	-- Impenetrable Gloom
+					i(182685),	-- Increased Scrutiny
+					i(181600),	-- Ire of the Ascended
+					i(183495),	-- Lashing Scars
+					i(182348),	-- Lavish Harvest
+					i(182339),	-- Necrotic Barrage
+					i(182440),	-- Piercing Verdict
+					i(182295),	-- Proliferation
+					i(182646),	-- Repeat Decree
+					i(183492),	-- Reverberation
+					i(182770),	-- Righteous Might
+					i(182778),	-- Ringing Clarity
+					i(183494),	-- Septic Shock
+					i(182130),	-- Shattered Perceptions
+					i(181639),	-- Siphoned Malice
+					i(182964),	-- Soul Eater
+					i(182960),	-- Soul Tithe
+					i(182335),	-- Spirit Attunement
+					i(181759),	-- Strike with Clarity
+					i(183493),	-- Sudden Fractures
+					i(182767),	-- The Long Summer
+					i(182346),	-- Tumbling Waves
+					i(183463),	-- Unnatural Malice
+					i(182442),	-- Veteran's Respite
+					i(181775),	-- Way of the Fae
+					i(183199),	-- Withering Ground
+				},
+			}),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
 				["questID"] = 61816,	-- Mortanis (WQ)

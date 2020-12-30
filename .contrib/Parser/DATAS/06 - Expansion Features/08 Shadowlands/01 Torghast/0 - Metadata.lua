@@ -63,6 +63,8 @@ _.ExpansionFeatures =
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
+				1623,	-- Soulforges - Layer 8, Floor 4
+				--
 				1792,	-- Upper Reaches - Layer 1, Floor 1 / Layer 3, Floor 4
 				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4 / Layer 3, Floor 1
 				1782,	-- Upper Reaches - Layer 1, Floor 4

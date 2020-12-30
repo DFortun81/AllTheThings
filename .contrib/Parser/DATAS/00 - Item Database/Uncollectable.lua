@@ -209,6 +209,7 @@ i(169292);	-- Charged Scale of the Blue Aspect
 i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
 i(146686);	-- Colorless Shroud of Xavius
+i(183042);	-- Colossal Power Core
 i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
