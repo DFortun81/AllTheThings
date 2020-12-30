@@ -958,9 +958,9 @@ _.Zones =
 								q(58410, {
 									["title"] = "Construct Body: Atticus",
 								}),
-								q(60041, {
-									["title"] = "Construct Body: Chordy",
-								}),
+								-- q(60041, {	-- Not this QuestID...
+								-- 	["title"] = "Construct Body: Chordy",
+								-- }),
 								q(57597, {
 									["title"] = "Construct Body: Flytrap",
 								}),
@@ -1025,9 +1025,10 @@ _.Zones =
 								["coord"] = { 24.9, 31.7, 1536 },
 							}),
 							q(63058, {	-- Abominable Stitching and Me
+								-- TODO: is this a breadcrumb to 60041?
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
 								["coord"] = { 52.4, 38.4, 1698 },
-								["description"] = "Becomes available after you build Abomination Factory tier 1 in your sanctum.",
+								["description"] = "Becomes available after you research Abomination Factory Tier 1 in your sanctum.",
 							}),
 							q(60049, {	-- At Your Service
 								["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -1040,7 +1041,10 @@ _.Zones =
 								["coord"] = { 23.8, 39.1, 1536 },
 							}),
 							q(60041, {	-- Build-A-Bomination
-								["sourceQuests"] = { 60048 },	-- Stitching Time
+								["sourceQuests"] = {
+									60048,	-- Stitching Time
+									63058,	-- Abominable Stitching and Me
+								},
 								["provider"] = { "n", 167150 },	-- Rathan
 								["coord"] = { 55.1, 68.8, 1536 },
 							}),
@@ -1152,6 +1156,12 @@ _.Zones =
 							-- Tier 4: Forged Friends
 							-- Tier 5: Best Fiends Forever
 						}),
+						i(184843, {	-- Salvaged Supplies
+							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+						}),
+						i(183744, {	-- Superior Parts
+							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+						}),
 					}),
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
@@ -1250,12 +1260,12 @@ _.Zones =
 							}),
 						-- Tier 2: A Keep Above
 							q(60184, {	-- Dude, Where's My Necropolis?
-								-- appears after tier 1 transport network built and chapter 4 questline complete 
+								-- appears after chapter 4 questline complete, may be breadcrumb for Tier 2 Transport Network?
 								["sourceQuests"] = { 
 									58820,	-- Bindings of Fleshcrafting
-									63059,	-- Blink of an Eye
+									-- 63059,	-- Blink of an Eye -- I can pick this up without having the Transport network Tier 1 Researched
 								},
-								["provider"] = { "n", 172573 },	-- Khaliiq
+								["provider"] = { "n", 173306 },	-- Khaliiq
 								["coord"] = { 29.6, 44.0, 1536 },
 							}),
 						-- Tier 3: Flying Fortress

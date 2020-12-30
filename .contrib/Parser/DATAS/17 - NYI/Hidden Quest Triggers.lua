@@ -3026,7 +3026,7 @@ _.HiddenQuestTriggers =
 		q(63249),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Shared
 		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Kyrian
 		q(63290),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Necrolord
-		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Night Fae
+		q(63288),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Night Fae
 		q(63291),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Venthyr
 		q(63239),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Shared
 		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Kyrian

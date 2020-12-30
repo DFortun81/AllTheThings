@@ -312,7 +312,7 @@ _.Zones =
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless
-						-- TODO: ["questID"] = x,
+						["questID"] = 62156,
 						["coord"] = { 80.0, 37.1, 1525 },
 						["crs"] = { 173603 },	-- Rapier of the Fearless
 						["g"] = {

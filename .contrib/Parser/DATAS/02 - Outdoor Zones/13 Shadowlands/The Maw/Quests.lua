@@ -319,6 +319,12 @@ _.Zones =
 					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
 					["coord"] = { 56.9, 57.5, 1543 },
 				}),
+				q(60158, {	-- Rule 7: Betrayal is Inevitable
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Appreciative reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
 						62905,	-- Back into the Darkness (Venthyr)
