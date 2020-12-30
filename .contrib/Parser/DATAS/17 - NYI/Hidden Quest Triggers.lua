@@ -3042,9 +3042,9 @@ _.HiddenQuestTriggers =
 		q(63310),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
 		q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
 		q(63311),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
-		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Shared
+		q(63240),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Shared
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Kyrian
-		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Necrolord
+		q(63274),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Necrolord
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Night Fae
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Venthyr
 		
