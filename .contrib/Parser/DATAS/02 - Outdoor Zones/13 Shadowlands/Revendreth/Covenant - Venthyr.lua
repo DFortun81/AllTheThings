@@ -353,6 +353,11 @@ _.Zones =
 							["provider"] = { "n", 171950 },	-- The Accuser
 							["coord"] = { 46.2, 21.6, 1699 },	-- Sinfall Reaches
 						}),
+						q(58388, {	-- Blackbale Betrayers
+							["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+							["provider"] = { "n", 161421 },	-- The Accuser
+							["coord"] = { 46.4, 51.4, 1525 },	-- Revendreth
+						}),
 						q(58337, {	-- Break Out
 							["sourceQuests"] = { 58842 },	-- The Curator
 							["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
@@ -379,6 +384,17 @@ _.Zones =
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
 						}),
+						q(61077, {	-- Confronting Sin
+							-- ["sourceQuests"] = {  },	-- 
+							["description"] = "Requires Renown 17.",
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 52.0, 37.6, 1699 },	-- Sinfall Reaches
+						}),
+						q(58443, {	-- Continued Care of Kael'thas
+							["sourceQuests"] = { 58387 },	-- We Each Must Carry Our Own Sins
+							["provider"] = { "n", 161278 },	-- The Accuser
+							["coord"] = { 43.8, 51.4, 1525 },	-- Revendreth
+						}),
 						q(58630, {	-- Crown of the Harvesters
 							["sourceQuests"] = {
 								58600,	-- A Perfect Circle
@@ -392,15 +408,34 @@ _.Zones =
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 						}),
+						q(58392, {	-- Death's End Destruction
+							["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
+							["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
+							["coord"] = { 69.8, 59.9, 1525 },	-- Revendreth
+						}),
 						q(60995, {	-- Disloyalty
 							["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
 							["provider"] = { "n", 170999 },	-- General Draven
 							["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
 						}),
+						q(58384, {	-- Dredgers Left Behind
+							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+							["provider"] = { "n", 161208 },	-- The Accuser
+							["coord"] = { 42.2, 47.5, 1525 },	-- Revendreth
+						}),
 						q(57892, {	-- Enacting Immediate Justice
 							["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
 							["provider"] = { "n", 159946 },	-- The Countess
 							["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
+						}),
+						q(58395, {	-- Enough Vengeance For One Day
+							["sourceQuests"] = { 58394 },	-- Lady Ouix'Ara
+							["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
+							-- no coords, is your 'pet'
+							["g"] = {
+								i(180903),	-- Fearstalker's Ebony Hauberk
+								-- TODO: Cloth/Leather/Plate
+							},
 						}),
 						q(60996, {	-- Face Your Fears
 							["sourceQuests"] = {
@@ -451,6 +486,11 @@ _.Zones =
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.3, 38.0, 1699 },	-- Sinfall Reaches
 						}),
+						q(58426, {	-- In the Shadow of our Failures
+							["sourceQuests"] = { 58383 },	-- The Many Sins of Kael'thas Sunstrider
+							["provider"] = { "n", 161160 },	-- The Accuser
+							["coord"] = { 46.5, 32.2, 1700 },	-- Sinfall
+						}),
 						q(62903, {	-- Into the Reservoir
 							["sourceQuests"] = { 62902 },	-- Anima is Power
 							["provider"] = { "n", 172605 },	-- Foreman Flatfinger
@@ -490,6 +530,14 @@ _.Zones =
 							["provider"] = { "n", 172042 },	-- Theotar
 							["coord"] = { 50.3, 18.8, 1699 },	-- Sinfall Reaches
 						}),
+						q(58394, {	-- Lady Ouix'Ara
+							["sourceQuests"] = {
+								58392,	-- Death's End Destruction
+								58393,	-- Strategic Executions
+							},	-- 
+							["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
+							-- no coords, is your 'pet'
+						}),
 						q(58372, {	-- Lead the Way
 							["sourceQuests"] = {
 								58325,	-- Watcher Emil
@@ -506,10 +554,27 @@ _.Zones =
 								i(180924),	-- Dread Sentinel's Ebony Girdle
 							},
 						}),
+						q(58385, {	-- Learning to Sacrifice
+							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+							["provider"] = { "n", 161208 },	-- The Accuser
+							["coord"] = { 42.2, 47.5, 1525 },	-- Revendreth
+						}),
 						q(60994, {	-- Lowering Their Defenses
 							["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
 							["provider"] = { "n", 171001 },	-- Mikanikos
 							["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
+						}),
+						q(58389, {	-- Maldraxxian Weapons
+							["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+							["provider"] = { "i", 174212 },	-- Suspicious Weapon
+							["coord"] = { 48.3, 54.4, 1525 },	-- Revendreth
+							["crs"] = {
+								161448,	-- Blackbale Lookout
+								161480,	-- Blackbale Extortionist
+							},
+							["g"] = {
+								174211,	-- Maldraxxian Weapon (quest item in bags collected during quest)
+							},
 						}),
 						q(60935, {	-- Medallion of Avarice
 							["description"] = "Requires Renown 11.",
@@ -580,6 +645,15 @@ _.Zones =
 							["provider"] = { "n", 159513 },	-- Bogdan
 							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
 						}),
+						q(58391, {	-- Reconnaissance... for my, uh, Recovery
+							["sourceQuests"] = {
+								58388,	-- Blackbale Betrayers
+								58389,	-- Maldraxxian Weapons
+								58518,	-- There's Always a Paper Trail
+							},	-- 
+							["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
+							-- no coords, is your 'pet'
+						}),
 						q(57882, {	-- Reestablishing the Household
 							["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
 							["provider"] = { "n", 159513 },	-- Bogdan
@@ -647,6 +721,11 @@ _.Zones =
 							["provider"] = { "n", 175772 },	-- Rahel
 							["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
 						}),
+						q(58382, {	-- Someone Worth Saving
+							["sourceQuests"] = { 61077 },	-- Confronting Sin
+							["provider"] = { "n", 165291 },	-- The Accuser
+							["coord"] = { 55.8, 78.7, 1700 },	-- Sinfall
+						}),
 						q(62870, {	-- Souls for Sinfall
 							["sourceQuests"] = { 62837 },	-- Hopeful News
 							["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -664,6 +743,11 @@ _.Zones =
 							["sourceQuests"] = { 58372 },	-- Lead the Way
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						}),
+						q(58393, {	-- Strategic Executions
+							["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
+							["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
+							["coord"] = { 69.8, 59.9, 1525 },	-- Revendreth
 						}),
 						q(62919, {	-- Strengthening the Bond
 							["sourceQuests"] = { 62918 },	-- Binding Power
@@ -725,6 +809,11 @@ _.Zones =
 							["provider"] = { "n", 159513 },	-- Bogdan
 							["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
 						}),
+						q(58383, {	-- The Many Sins of Kael'thas Sunstrider
+							["sourceQuests"] = { 58382 },	-- Someone Worth Saving
+							["provider"] = { "n", 161158 },	-- The Accuser
+							["coord"] = { 46.4, 32.3, 1700 },	-- Sinfall
+						}),
 						q(59233, {	-- The Prince's New Crown
 							["sourceQuests"] = { 60996 },	-- Face Your Fears
 							["provider"] = { "n", 171175 },	-- General Draven
@@ -765,6 +854,16 @@ _.Zones =
 								i(180900),	-- Dread Sentinel's Ebony Headgear
 							},
 						}),
+						q(58518, {	-- There's Always a Paper Trail
+							["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+							["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
+							-- no coords, is your 'pet'
+						}),
+						q(58386, {	-- Use My Strengths
+							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+							["provider"] = { "n", 161261 },	-- Kael'thas Sunstrider
+							-- no coords, is your 'pet'
+						}),
 						q(58325, {	-- Watcher Emil
 							["sourceQuests"] = { 58842 },	-- The Curator
 							["providers"] = {
@@ -776,7 +875,18 @@ _.Zones =
 								{ 66.0, 28.9, 1525 },	-- Revendreth, Forgotten Soul
 							},
 						}),
-
+						q(58387, {	-- We Each Must Carry Our Own Sins
+							["sourceQuests"] = {
+								58384,	-- Dredgers Left Behind
+								58385,	-- Learning to Sacrifice
+								58386,	-- Use My Strengths
+							},
+							["provider"] = { "n", 161278 },	-- The Accuser
+							["coord"] = { 43.8, 51.4, 1525 },	-- Revendreth
+							["g"] = {
+								i(180941),	-- Kael's Dark Sinstone Chain
+							},
+						}),
 
 						-- q(, {	-- 
 						-- 	["sourceQuests"] = {  },	-- 

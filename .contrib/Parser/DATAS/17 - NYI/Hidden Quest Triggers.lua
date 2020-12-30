@@ -3451,51 +3451,17 @@ _.HiddenQuestTriggers =
 		q(62809),	-- Valinor kill questID
 
 		-- Castle Nathria
-		-- q(62949),	-- First kill of Sire Denthrius / First full clear on Normal / ???
-		-- LFR
-		-- q( ),	-- Shriekwing
+		q(62949),	-- First kill of Sire Denthrius / First full clear ??
+
+		q(62871),	-- Shriekwing
 		q(62872),	-- Huntsman Altimor
-		-- q( ),	-- Sun King's Salvation
-		-- q( ),	-- Artificer Xy'mox
-		q(62875),	-- Hungering Destroyer (also N) -- TODO: Confirm next week
-		q(60680),	-- Lady Inerva Darkvein (maybe completing the full wing? triggered with the one below) -- TODO: Confirm next week
-		q(62877),	-- Lady Inerva Darkvein (also N/H) -- TODO: Confirm next week
-		-- q( ),	-- The Council of Blood
-		-- q( ),	-- Sludgefist
-		-- q( ),	-- Stone Legion Generals
-		-- q( ),	-- Sire Denathrius
-		-- Normal
-		-- q( ),	-- Shriekwing
-		-- q( ),	-- Huntsman Altimor
-		q(62873),	-- Sun King's Salvation (also H) -- TODO: Confirm next week
-		q(62874),	-- Artificer Xy'mox (also H) -- TODO: Confirm next week
-		-- q(62875),	-- Hungering Destroyer
-		-- q(62877),	-- Lady Inerva Darkvein
-		-- q( ),	-- The Council of Blood
-		-- q( ),	-- Sludgefist
-		q(62879),	-- Stone Legion Generals
-		q(62880),	-- Sire Denathrius
-		-- Heroic
-		-- q( ),	-- Shriekwing
-		-- q( ),	-- Huntsman Altimor
-		-- q(62873),	-- Sun King's Salvation
-		-- q(62874),	-- Artificer Xy'mox
-		-- q( ),	-- Hungering Destroyer
-		-- q(62877),	-- Lady Inerva Darkvein
-		-- q( ),	-- The Council of Blood
+		q(62873),	-- Sun King's Salvation
+		q(62874),	-- Artificer Xy'mox
+		q(62875),	-- Hungering Destroyer
+		q(62876),	-- The Council of Blood
+		q(62877),	-- Lady Inerva Darkvein
 		q(62878),	-- Sludgefist
-		-- q( ),	-- Stone Legion Generals
-		-- q( ),	-- Sire Denathrius
-		-- Mythic
-		-- q( ),	-- Shriekwing
-		-- q( ),	-- Huntsman Altimor
-		-- q( ),	-- Sun King's Salvation
-		-- q( ),	-- Artificer Xy'mox
-		-- q( ),	-- Hungering Destroyer
-		-- q( ),	-- Lady Inerva Darkvein
-		-- q( ),	-- The Council of Blood
-		-- q( ),	-- Sludgefist
-		-- q( ),	-- Stone Legion Generals
-		-- q( ),	-- Sire Denathrius
+		q(62879),	-- Stone Legion Generals
+		q(60680),	-- Lady Inerva Darkvein
 	}),
 };
