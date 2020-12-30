@@ -87,6 +87,9 @@ _.Zones =
 								crit(9, {	-- Nirvaska the Summoner
 									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 								}),
+								i(181811, {	-- Beckoner's Shadowy Crystal
+									["customCollect"] = "SL_COV_NEC",	-- Necrolord Only
+								}),
 								i(183700),	-- Forgotten Summoner's Shoulderpads
 							},
 						}),

@@ -41,12 +41,14 @@ _.Zones =
 				n(-901, {	-- Covenant Callings
 					["g"] = {
 						n(-11, {	-- Common Box Drops
+							-- TODO: Feels like this is pointless. Getting conduits from literally every source in the game via calling boxes...
 							["description"] = "Can be contained in any of the Calling rewards.",
 							["g"] = {
 								-- guessing any box can reward the same set of conduits
 								i(182105),	-- Astral Protection [Shaman]
 								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
+								i(181838),	-- Charitable Soul [Priest]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance]
 								i(181837),	-- Clear Mind [Priest]
 								i(181462),	-- Coordinated Offensive [Monk]
@@ -54,6 +56,7 @@ _.Zones =
 								i(182110),	-- Crippling Hex [Shaman]
 								i(181512),	-- Dizzying Tumble [Monk]
 								i(181740),	-- Evasive Stride [Monk]
+								i(181845),	-- Exaltation [Priest]
 								i(181942),	-- Focused Mending [Priest]
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(181466),	-- Grounding Breath [Monk]

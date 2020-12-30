@@ -3047,6 +3047,11 @@ _.HiddenQuestTriggers =
 		q(63274),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Necrolord
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Night Fae
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Venthyr
+		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Shared
+		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Kyrian
+		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
+		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Night Fae
+		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
