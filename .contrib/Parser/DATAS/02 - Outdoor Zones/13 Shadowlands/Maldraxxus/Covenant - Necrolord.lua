@@ -838,7 +838,49 @@ _.Zones =
 						["coord"] = { 49.8, 50.6, 1698 },
 					}),
 
-					-- TODO: Chapter 7 (The Wages of Sin), requires Renown 17
+					-- Chapter 7 (The Wages of Sin), requires Renown 17
+					q(58504, {	-- Accusatory Missive
+						["sourceQuests"] = { 62161 },	-- Blood from a Bone
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },
+					}),
+					q(58523, {	-- You're Dead To Me
+						["sourceQuests"] = { 58504 },	-- Accusatory Missive
+						["provider"] = { "n", 161461 },	-- The Accuser
+						["coord"] = { 72.0, 41.2, 1525 },
+					}),
+					q(58472, {	-- A Farewell to Arms
+						["sourceQuests"] = { 58523 },	-- You're Dead To Me
+						["provider"] = { "n", 161461 },	-- The Accuser
+						["coord"] = { 73.8, 57.4, 1525 },
+					}),
+					q(58599, {	-- Drive A Dredge Between Them
+						["sourceQuests"] = { 58523 },	-- You're Dead To Me
+						["provider"] = { "n", 161474 },	-- Baroness Draka
+					}),
+					q(58608, {	-- It's Treason, Then
+						["sourceQuests"] = {
+							58472,	-- A Farewell to Arms
+							58599,	-- Drive A Dredge Between Them
+						},
+						["provider"] = { "n", 161474 },	-- Baroness Draka
+					}),
+					q(58624, {	-- Pauldrons of Imperium
+						["sourceQuests"] = { 58608 },	-- It's Treason, Then
+						["provider"] = { "n", 161865 },	-- Baroness Draka
+						["coord"] = { 78.1, 62.2, 1525 },
+						["g"] = {
+							i(182273),	-- Bladesworn Conjurer's Mantle
+							i(182255),	-- Bladesworn Harbinger's Pauldrons
+							i(182282),	-- Bladesworn Tactician's Spaulders
+							i(182264),	-- Bladesworn Wraith's Shoulders
+						},
+					}),
+					q(62388, {	-- House of Rituals
+						["sourceQuests"] = { 58624 },	-- Pauldrons of Imperium
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },
+					}),
 					
 					-- TODO: Chapter 8 (The House of Rituals), requires Renown 20
 					

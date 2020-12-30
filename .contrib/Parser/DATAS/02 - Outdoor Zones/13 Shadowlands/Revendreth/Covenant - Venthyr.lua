@@ -573,7 +573,7 @@ _.Zones =
 								161480,	-- Blackbale Extortionist
 							},
 							["g"] = {
-								174211,	-- Maldraxxian Weapon (quest item in bags collected during quest)
+								i(174211),	-- Maldraxxian Weapon (quest item in bags collected during quest)
 							},
 						}),
 						q(60935, {	-- Medallion of Avarice
