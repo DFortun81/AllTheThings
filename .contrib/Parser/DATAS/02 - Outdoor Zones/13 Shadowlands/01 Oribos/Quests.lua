@@ -448,11 +448,20 @@ _.Zones =
 				-- Zone Travel Breadcrumbs
 				-- Ardenweald
 				q(62739, {	-- Restoring Balance
+				--	picked up on Kyrian
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62277 },	-- Ardenweald
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["isBreadcrumb"] = true,
+				}),
+				q(63036, {	-- Restoring Balance
+				--	picked up on Night Fae
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62277 },	-- Ardenweald
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
 				}),
 				-- Bastion
 				q(62707, {	-- The Elysian Fields

@@ -2964,7 +2964,6 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
-		q(63036),	-- secondary version of "Restoring Balance," unsure criteria for pickup?  possibly one is for Night Fae?  but they both say they can end in 'heart of the forest,' so i'm not sure
 		q(63037),	-- secondary version of "Dark Aspirations," unsure criteria for pickup?  possibly one is for Venthyr, but they both say they can end in sinfall so idk
 		
 		-- Adventures
@@ -3366,6 +3365,7 @@ _.HiddenQuestTriggers =
 		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
+		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin) – 60607 didn't trigger this time, not sure why there are different ones?  all i can think of is the reward was different (this time it gave rep, i think last time it was anima but i'm not 100% sure)
 		q(60608),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as stone golem dude)
 		q(61493),	-- when using "Building: Dredger Pool"
 		q(59472),	-- when using "Contract: Traditional Theme"
@@ -3378,6 +3378,11 @@ _.HiddenQuestTriggers =
 		q(59416),	-- when using "RSVP: Grandmaster Vole"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
+		q(59424),	-- when using "RSVP: Sika"
+		q(59425),	-- when using "RSVP: Sika"
+		q(59412),	-- when using "RSVP: Droman Aliothe"
+		q(59413),	-- when using "RSVP: Droman Aliothe"
+		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3433,6 +3438,7 @@ _.HiddenQuestTriggers =
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
+		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
