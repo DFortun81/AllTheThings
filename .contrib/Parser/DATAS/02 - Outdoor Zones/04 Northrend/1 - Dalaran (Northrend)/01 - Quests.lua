@@ -224,18 +224,6 @@ _.Zones =
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
-				q(8860, {	-- New Year Celebrations! (A)
-					["description"] = "This quest is only available on December 31, and can be done once per character (not each year).",
-					["u"] = 29,	-- Feast of Winter Veil
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 15732 },	-- Wonderform Operator
-				}),
-				q(8861, {	-- New Year Celebrations! (H)
-					["description"] = "This quest is only available on December 31, and can be done once per character (not each year).",
-					["u"] = 29,	-- Feast of Winter Veil
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 15732 },	-- Wonderform Operator
-				}),
 				q(24581, {	-- Noth the Plaguebringer Must Die!
 					["coord"] = { 57.3, 66.7, 125 },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock

@@ -34,6 +34,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
+			q(8860, {	-- New Year Celebrations! (A)
+				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from any Wonderform Operator.",
+				["u"] = 29,	-- Feast of Winter Veil
+				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 84 },	-- Stormwind
+				["provider"] = { "n", 15732 },	-- Wonderform Operator
+			}),
 			q(7025,  {	-- Treats for Greatfather Winter
 				["provider"] = { "n", 13444 },	-- Greatfather Winter
 				["sourceQuests"] = {
@@ -193,13 +200,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(128659),	-- Merry Supplies
 				},
 			}),
-			--[[ this was listed in a metadata file. putting it here temporarily
-			q(8861, {	-- New Year Celebrations!
-				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["maps"] = { 88 },	-- Thunder Bluff
+			q(8861, {	-- New Year Celebrations! (H)
+				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from Wonderform Operator in any major city.",
+				["u"] = 29,	-- Feast of Winter Veil
 				["races"] = HORDE_ONLY,
+				["maps"] = { 88 },	-- Thunder Bluff
+				["provider"] = { "n", 15732 },	-- Wonderform Operator
 			}),
-			]]--
 			q(7061,  {	-- The Feast of Winter Veil (Horde)
 				["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 				["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
