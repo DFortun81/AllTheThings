@@ -45,12 +45,6 @@ _.Zones =
 						i(2166),	-- Foreman's Leggings
 					},
 				}),
-				n(115,  {	-- Harvest Reaper
-					["coord"] = { 63.6, 62.2, 52 },
-					["g"] = {
-						i(820),	-- Slicer Blade
-					},
-				}),
 				n(572,  {	-- Leprithus
 					["coord"] = { 42.6, 28.8, 52 },
 					["g"] = {
