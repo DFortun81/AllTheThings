@@ -5217,7 +5217,7 @@ local function AttachTooltip(self)
 								gf = app:GetWindow("Prime").data.g[4];
 							elseif owner.tooltipText == BLIZZARD_STORE then
 								-- Shop
-								gf = app:GetWindow("Prime").data.g[18];
+								gf = app:GetWindow("Prime").data.g[17];
 							elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
 								-- Achievements
 								gf = app:GetWindow("Prime").data.g[5];
