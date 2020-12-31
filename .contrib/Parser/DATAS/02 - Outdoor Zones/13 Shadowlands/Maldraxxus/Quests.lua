@@ -695,14 +695,6 @@ _.Zones =
 					["maps"] = { 1691 },	-- Shattered Grove
 				}),
 
-
-
-
-
-				currency(1832, {		-- Renown-Necrolord
-					-- Renown 22
-					-- House of Rituals
-				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
 

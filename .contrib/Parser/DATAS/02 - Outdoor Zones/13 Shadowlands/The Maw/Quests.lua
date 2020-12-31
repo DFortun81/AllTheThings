@@ -530,11 +530,13 @@ _.Zones =
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(60134, {	-- A Tauren in Trade
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 
 				-- Dailies

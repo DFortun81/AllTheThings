@@ -3047,9 +3047,9 @@ _.HiddenQuestTriggers =
 		q(63274),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Necrolord
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Night Fae
 		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Venthyr
-		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Shared
+		q(63255),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Shared
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Kyrian
-		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
+		q(63314),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Night Fae
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Venthyr
 		
