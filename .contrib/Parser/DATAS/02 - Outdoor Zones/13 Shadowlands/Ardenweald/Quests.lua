@@ -156,7 +156,7 @@ _.Zones =
 				}),
 				q(58473, {	-- Echoes of Tirna Noch
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
-					["providers"] = { "n", 160963 },	-- Ara'lon
+					["provider"] = { "n", 160963 },	-- Ara'lon
 					["coord"] = { 60.1, 52.8, 1565 },
 				}),
 				q(58593, {	-- End of the Dream

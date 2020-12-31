@@ -1542,70 +1542,11 @@ namespace ATT
                             break;
                         }
                     case "provider":
-                        {
-                            if (!(value is List<object> newList))
-                            {
-                                if (value is Dictionary<object, object> dict)
-                                {
-                                    newList = dict.Values.ToList();
-                                }
-                                else return;
-                            }
-                            var newProvider = new List<object>()
-                            {
-                                newList[0],
-                                Convert.ToInt32(newList[1])
-                            };
-                            if (item.TryGetValue("providers", out object providersRef) && providersRef is List<object> providers)
-                            {
-                                foreach (var providerRef in providers)
-                                {
-                                    if (providerRef is List<object> oldprovider)
-                                    {
-                                        if (oldprovider.Count == newProvider.Count)
-                                        {
-                                            bool match = true;
-                                            for (int i = 0; i < newProvider.Count; ++i)
-                                            {
-                                                if (oldprovider[i] == newProvider[i]) continue;
-                                                match = false;
-                                                break;
-                                            }
-                                            if (match) return;
-                                        }
-                                    }
-                                }
-                                providers.Add(newProvider);
-                            }
-                            else
-                            {
-                                item["providers"] = providers = new List<object>
-                                {
-                                    newProvider
-                                };
-                            }
-                            // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                            if (newProvider[0].ToString() == "i")
-                            {
-                                int itemID = Convert.ToInt32(newProvider[1]);
-                                Items.MarkItemAsReferenced(itemID);
-                            }
-                            break;
-                        }
+                        MergeField_provider(item, value);
+                        break;
                     case "providers":
-                        {
-                            // Convert the data to a list of generic objects.
-                            if (value is List<object> newList)
-                            {
-                                foreach (var provider in newList) Merge(item, "provider", provider);
-                            }
-                            else if (value is Dictionary<object, object> dict)
-                            {
-                                newList = dict.Values.ToList();
-                                foreach (var provider in newList) Merge(item, "provider", provider);
-                            }
-                            break;
-                        }
+                        MergeField_providers(item, value);
+                        break;
                     // Special parser for coordinate data. (list of floats)
                     case "coord":
                         {
@@ -1806,6 +1747,72 @@ namespace ATT
                 }
 
                 item[field] = costsList;
+            }
+
+            internal static void MergeField_provider(Dictionary<string, object> item, object value)
+            {
+                const string field = "provider";
+
+                if (!(value is List<object> newList))
+                {
+                    if (value is Dictionary<object, object> dict)
+                    {
+                        newList = dict.Values.ToList();
+                    }
+                    else throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                }
+                var newProvider = new List<object>()
+                {
+                    newList[0],
+                    Convert.ToInt32(newList[1])
+                };
+                MergeField_providers(item, new List<object>() { newProvider });
+            }
+
+            internal static void MergeField_providers(Dictionary<string, object> item, object value)
+            {
+                const string field = "providers";
+
+                var mergeProviders = ConvertToList(item, field, value);
+                foreach (var mergeProvider in mergeProviders)
+                {
+                    bool match = false;
+                    var newMergeProvider = ConvertToList(item, field, mergeProvider);
+                    try
+                    {
+                        Tuple<string, int> newProvider = new Tuple<string, int>(newMergeProvider[0]?.ToString(), Convert.ToInt32(newMergeProvider[1]));
+                        if (item.TryGetValue(field, out object providersRef) && providersRef is List<object> providers)
+                        {
+                            foreach (var providerRef in providers)
+                            {
+                                if (providerRef is List<object> oldprovider)
+                                {
+                                    Tuple<string, int> oldProvider = new Tuple<string, int>(oldprovider[0]?.ToString(), Convert.ToInt32(oldprovider[1]));
+                                    if (oldProvider.Item1 == newProvider.Item1 && oldProvider.Item2 == newProvider.Item2)
+                                    {
+                                        match = true;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            item[field] = providers = new List<object>();
+                        }
+                        if (!match)
+                        {
+                            providers.Add(newMergeProvider);
+                            // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                            if (newProvider.Item1 == "i")
+                                Items.MarkItemAsReferenced(newProvider.Item2);
+                        }
+                    }
+                    catch
+                    {
+                        throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    }
+                }
             }
 
             /// <summary>
@@ -2214,7 +2221,7 @@ namespace ATT
                 }
 
                 // no hope
-                throw new Exception("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
             }
 
             /// <summary>
