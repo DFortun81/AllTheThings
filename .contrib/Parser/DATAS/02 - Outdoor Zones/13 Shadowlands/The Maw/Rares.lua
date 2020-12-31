@@ -67,7 +67,7 @@ _.Zones =
 				n(170787, {	-- Akros <Death's Hammer>
 					["questID"] = 60920,
 					["isDaily"] = true,
-					["coord"] = { 26.0, 54.9, 1543 },
+					["coord"] = { 34.0, 74.6, 1543 },
 					["g"] = {
 						crit(10, {	-- Akros
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -124,7 +124,7 @@ _.Zones =
 				n(160770, {	-- Darithis the Bleak
 					["questID"] = 62281,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 61.0, 48.6, 1543 },
 					["g"] = {
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -172,7 +172,7 @@ _.Zones =
 				n(170711, {	-- Dolos
 					["questID"] = 60909,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 28.6, 60.6, 1543 },
 					["g"] = {
 						crit(7, {	-- Dolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -280,9 +280,10 @@ _.Zones =
 					},
 				}),
 				n(175012, {	-- Ikras the Devourer
+					["description"] = "Flies along the gap between islands.",
 					["questID"] = 62788,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 35.6, 52.2, 1543 },
 					["g"] = {
 						crit(21, {	-- Ikras the Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -316,7 +317,7 @@ _.Zones =
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-					--["coord"] = { 27.4, 49.4, 1543 },
+					["coord"] = { 16.6, 50.6, 1543 },
 					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
@@ -432,7 +433,7 @@ _.Zones =
 				n(170634, {	-- Shadeweaver Zeris
 					["questID"] = 60884,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 32.8, 66.6, 1543 },
 					["g"] = {
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -505,7 +506,7 @@ _.Zones =
 				n(170731, {	-- Thanassos <Death's Voice>
 					["questID"] = 60914,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 27.6, 71.6, 1543 },
 					["g"] = {
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -513,6 +514,7 @@ _.Zones =
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
+					["description"] = "Click the runes in the correct order.",
 					["questID"] = 63387,
 					["isDaily"] = true,
 					["coord"] = { 40.8, 59.8, 1543 },
@@ -566,7 +568,7 @@ _.Zones =
 				n(172862, {	-- Yero the Skittish
 					["questID"] = 61568,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 37.9, 61.4, 1543 },
 					["g"] = {
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
