@@ -127,6 +127,7 @@ _.Mounts =
 		}),
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
+		i(180726),	-- Pale Acidmaw
 		i(184162),	-- Pestilent Necroray
 		i(180762, {	-- Phalynx of Humility
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only

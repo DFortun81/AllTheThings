@@ -304,6 +304,7 @@ _.Mounts =
 		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
+		i(180726),	-- Pale Acidmaw
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(180762, {	-- Phalynx of Humility
