@@ -1000,9 +1000,9 @@ _.Zones =
 								q(58410, {
 									["title"] = "Construct Body: Atticus",
 								}),
-								-- q(60041, {	-- Not this QuestID...
-								-- 	["title"] = "Construct Body: Chordy",
-								-- }),
+								q(60041, {	-- Chordy is different from the others in that there is no specific quest with his name on it, but we want to have him in the list of constructs, and 60041 (Build-A-Bomination) is the one that gives you Chordy
+								 	["title"] = "Construct Body: Chordy",
+								}),
 								q(57597, {
 									["title"] = "Construct Body: Flytrap",
 								}),
@@ -1028,6 +1028,7 @@ _.Zones =
 									["title"] = "Construct Body: Naxx",
 								}),
 								q(57604, {
+									["sourceQuests"] = { 59615 },	-- Every Dog Has Its Day
 									["title"] = "Construct Body: Neena",
 								}),
 								q(57601, {
@@ -1194,6 +1195,11 @@ _.Zones =
 								["coord"] = { 24.2, 38.8, 1536 },
 							}),
 							-- Tier 2: Crafting Limbs
+							q(59615, {	-- Every Dog Has Its Day
+								["description"] = "Kill the lich at 69,40 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
+								["provider"] = { "n", 162151 },    -- Neena
+								["coord"] = { 69.0, 40.0, 1536 },
+							}),
 							-- Tier 3: Bring Them to Life
 							-- Tier 4: Forged Friends
 							-- Tier 5: Best Fiends Forever
