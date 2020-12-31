@@ -3052,6 +3052,11 @@ _.HiddenQuestTriggers =
 		q(63314),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Night Fae
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Venthyr
+		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Shared
+		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Kyrian
+		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Necrolord
+		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Night Fae
+		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3221,6 +3226,7 @@ _.HiddenQuestTriggers =
 		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57578),	-- Triggered after recruiting Marz
+		q(57606),	-- Triggered after recruiting Roseboil
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 
