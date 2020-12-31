@@ -21,11 +21,11 @@ _.Zones =
 					}),
 					q(60434, {	-- A Call to Revendreth
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.5, 42.1, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60430, {	-- A Call to Maldraxxus
