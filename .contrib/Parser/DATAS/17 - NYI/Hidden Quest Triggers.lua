@@ -3222,6 +3222,7 @@ _.HiddenQuestTriggers =
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57578),	-- Triggered after recruiting Marz
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
+		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

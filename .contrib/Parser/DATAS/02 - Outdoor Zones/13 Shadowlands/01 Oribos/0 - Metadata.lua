@@ -12,6 +12,7 @@ _.Zones =
 				1613,	-- Oribos
 				1671,	-- Ring of Transference
 				1672,	-- Broker's Den
+				1673,	-- Ring of Transference
 			},
 		}),
 	}),

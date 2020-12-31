@@ -254,6 +254,11 @@ _.Zones =
 						["provider"] = { "n", 160280 },	-- Mikanikos
 						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
 					}),
+					q(61767, {	-- A Perilous Journey
+						["sourceQuests"] = { 61785 },	-- An Expected Visitor
+						["provider"] = { "n", 154627 },	-- Xandria
+						-- ["coord"] = {  },	-- 
+					}),
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
 						["provider"] = { "n", 168742 },	-- Polemarch Adrestes
@@ -263,6 +268,31 @@ _.Zones =
 						["sourceQuests"] = { 62792 },	-- Into the Reservoir
 						["provider"] = { "n", 167745 },	-- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
+					}),
+					q(58566, {	-- Actions Speak Louder than Words
+						["sourceQuests"] = { 58565 },	-- Land of Light
+						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
+						["coord"] = { 31.9, 47.5, 1525 },	-- Revendreth
+					}),
+					q(61778, {	-- Aerial Advantage
+						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167810 },	-- Emeni
+						["coord"] = { 28.5, 37.5, 1536 },	-- Maldraxxus
+					}),
+					q(61775, {	-- An Early End
+						["sourceQuests"] = {
+							61770,	-- The Butchers of Bastion
+							61771,	-- Justice from Above
+							61772,	-- Dark Developments
+						},
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+					}),
+					q(61785, {	-- An Expected Visitor
+						["description"] = "Requires Renown 11.",
+						-- ["sourceQuests"] = {  },	-- 
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.2, 1707 },	-- Elysian Hold
 					}),
 					q(58795, {	-- Ascended
 						["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
@@ -275,6 +305,12 @@ _.Zones =
 							i(174293),	-- Selfless Collector's Legguards
 						},
 					}),
+					q(58557, {	-- Assistance from Sinfall
+						["description"] = "Requires Renown 13.",
+						-- ["sourceQuests"] = { 61878 },	-- Creat of Greatness
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 45.0, 56.9, 1707 },	-- Elysian Hold
+					}),
 					q(58181, {	-- Building the Base
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
 						["provider"] = { "n", 160280 },	-- Mikanikos
@@ -283,10 +319,38 @@ _.Zones =
 							i(180763),	-- Phalynx of Courage (MOUNT!)
 						},
 					}),
+					q(61774, {	-- Burn Before Reading
+						["sourceQuests"] = {
+							61770,	-- The Butchers of Bastion
+							61771,	-- Justice from Above
+							61772,	-- Dark Developments
+						},
+						["provider"] = { "n", 168744 },	-- Artemede
+						["coord"] = { 35.1, 26.8, 1536 },	-- Maldraxxus
+					}),
 					q(58788, {	-- Censers of Guidance
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
 						["provider"] = { "n", 162542 },	-- Kleia
 						["coord"] = { 33.2, 26.1, 1533 }, -- Bastion
+					}),
+					q(61777, {	-- Charging The Blade
+						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+					}),
+					q(58562, {	-- Collecting Dust
+						["sourceQuests"] = {
+							58558,	-- Overhead Intelligence
+							58559,	-- Eyes of the Master
+							58560,	-- Gothic Fashion
+						},
+						["provider"] = { "n", 161544 },	-- The Curator
+						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+					}),
+					q(61878, {	-- Crest of Greatness
+						["sourceQuests"] = { 61877 },	-- Return to the Hold
+						["provider"] = { "n", 173313 },	-- Xandria
+						["coord"] = { 38.9, 59.8, 1707 },	-- Elysian Hold
 					}),
 					q(57897, {	-- Dangerous to Go Alone
 						["sourceQuests"] = { 62794 },	-- Enhancing the Hold
@@ -298,6 +362,20 @@ _.Zones =
 					--	["sourceQuests"] = {  },	-- 
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
+					}),
+					q(61772, {	-- Dark Developments
+						["sourceQuests"] = { 61769 },	-- Fight and Flight
+						["provider"] = { "o", 357246 },	-- Tattered Scroll
+						["coord"] = { 33.5, 24.1, 1536 },	-- Maldraxxus
+					}),
+					q(61773, {	-- Descended
+						["sourceQuests"] = {
+							61770,	-- The Butchers of Bastion
+							61771,	-- Justice from Above
+							61772,	-- Dark Developments
+						},
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
 					}),
 					q(58182, {	-- Dismantling the Opposition
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
@@ -323,10 +401,20 @@ _.Zones =
 							i(174292),	-- Selfless Collector's Gauntlets
 						},
 					}),
+					q(58559, {	-- Eyes of the Master
+						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+						["provider"] = { "n", 161540 },	-- Kleia
+						["coord"] = { 60.2, 60.8, 1525 },	-- Revendreth
+					}),
 					q(58793, {	-- Faith Through the Darkness
 						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
 						["provider"] = { "n", 162542 },	-- Kleia
 						["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
+					}),
+					q(61769, {	-- Fight and Flight
+						["sourceQuests"] = { 61768 },	-- Stronger Together
+						["provider"] = { "n", 171483 },	-- Baroness Draka
+						["coord"] = { 36.3, 36.6, 1536 },	-- Maldraxxus
 					}),
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
@@ -349,6 +437,16 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
+					q(58560, {	-- Gothic Fashion
+						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+						["provider"] = { "n", 165011 },	-- Pelagos
+						["coord"] = { 50.6, 52.1, 1525 },	-- Revendreth
+					}),
+					q(61779, {	-- Grave Intent
+						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167173 },	-- Baroness Vashj
+						["coord"] = { 28.6, 37.6, 1536 },	-- Maldraxxus
+					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
 						["provider"] = { "n", 167745 },	-- Haephus
@@ -370,6 +468,11 @@ _.Zones =
 							i(174292),	-- Selfless Collector's Gauntlets
 						},
 					}),
+					q(61771, {	-- Justice from Above
+						["sourceQuests"] = { 61769 },	-- Fight and Flight
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+					}),
 					q(63344, {	-- Kyrian Veteran
 					--	["sourceQuests"] = {  },	-- unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",
@@ -380,6 +483,16 @@ _.Zones =
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
 						["provider"] = { "n", 163111 },	-- Magistrate Solomon
 						["coord"] = { 28.9, 41.1, 49 },
+					}),
+					q(58565, {	-- Land of Light
+						["sourceQuests"] = { 58564 },	-- Sins of the Past
+						["provider"] = { "n", 161544 },	-- The Curator
+						["coord"] = { 58.1, 27.5, 1525 },	-- Revendreth
+					}),
+					q(58568, {	-- Light Respite
+						["sourceQuests"] = { 58565 },	-- Land of Light
+						["provider"] = { "n", 161540 },	-- Kleia
+						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
 					}),
 					q(58950, {	-- Lumber for Lakeshire
 						["sourceQuests"] = {
@@ -425,6 +538,16 @@ _.Zones =
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 40.9, 40.9, 1707 },	-- Archon's Rise
 					}),
+					q(58558, {	-- Overhead Intelligence
+						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+						["provider"] = { "n", 161544 },	-- The Curator
+						["coord"] = { 60.3, 60.8, 1525 },	-- Revendreth
+					}),
+					q(58570, {	-- Parting Words
+						["sourceQuests"] = { 58569 },	-- The Folly of Envy
+						["provider"] = { "n", 161540 },	-- Kleia
+						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
+					}),
 					q(58180, {	-- Phaestus, Genesis of Aeons
 						["sourceQuests"] = {
 							58176,	-- Stewards of a Feather
@@ -441,6 +564,24 @@ _.Zones =
 							i(174296),	-- Selfless Collector's Wristguards
 						},
 					}),
+					q(61780, {	-- Power of the Chosen
+						["sourceQuests"] = {
+							61777,	-- Charging The Blade
+							61778,	-- Aerial Advantage
+							61779,	-- Grave Intent
+						},
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.7, 38.1, 1536 },	-- Maldraxxus
+					}),
+					q(61782, {	-- Pursuit of Justice
+						["sourceQuests"] = { 61781 },	-- The End is Now
+						["provider"] = { "n", 172002 },	-- Xandria
+						["coord"] = { 31.7, 30.3, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(178158),	-- Selfless Watcher's Shoulders
+							-- TODO: Confirm Leather/Mail/Plate
+						},
+					}),
 					q(58177, {	-- Refining Ego
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
 						["provider"] = { "n", 160280 },	-- Mikanikos
@@ -452,7 +593,13 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 					}),
-					q(61332, {	-- Return Lost Souls
+					q(61332, {	-- Return Lost Souls (5 Souls)
+						["provider"] = { "n", 160212 },	-- Soulguide Daelia
+						["isWeekly"] = true,
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+					}),
+					q(62861, {	-- Return Lost Souls (10 Souls)
+						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
 						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
@@ -462,18 +609,42 @@ _.Zones =
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.6, 1670 },	-- Oribos
 					}),
+					q(61877, {	-- Return to the Hold
+						["sourceQuests"] = { 61876 },	-- Take Heart
+						["provider"] = { "n", 173193 },	-- Xandria
+						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+					}),
 					q(57967, {	-- Rightful Resting Place
 						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 						["provider"] = { "n", 159248 },	-- Haetio
 						["coord"] = { 43.2, 38.5, 1533 },
 					}),
 					q(63068, {	-- Settling Disputes
-					--	Requires Kyrian renown 4
 					--	TODO: is altQuests necessary or do they complete each other?
+						["description"] = "Requires Renown 4.",
 						["isBreadcrumb"] = true,
 						["altQuests"] = { 59674 },    -- A Friendly Rivalry
 						["provider"] = { "n", 160389 },    -- Koros
 						["coord"] = { 43.8, 40.7, 1707 },
+					}),
+					q(58561, {	-- Shards of the Countess
+						["sourceQuests"] = {
+							58558,	-- Overhead Intelligence
+							58559,	-- Eyes of the Master
+							58560,	-- Gothic Fashion
+						},
+						["provider"] = { "n", 161540 },	-- Kleia
+						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+					}),
+					q(58564, {	-- Sins of the Past
+						["sourceQuests"] = { 58563 },	-- Through Glass
+						["provider"] = { "n", 161544 },	-- The Curator
+						["coord"] = { 77.8, 39.6, 1525 },	-- Revendreth
+					}),
+					q(58567, {	-- Skulking in the Darkness
+						["sourceQuests"] = { 58565 },	-- Land of Light
+						["provider"] = { "n", 161540 },	-- Kleia
+						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
 					}),
 					q(62238, {	-- Soul Led Astray
 						["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
@@ -504,10 +675,39 @@ _.Zones =
 							i(182108),	-- Thunderous Paws
 						},
 					}),
+					q(61768, {	-- Stronger Together
+						["sourceQuests"] = { 61767 },	-- A Perilous Journey
+						["provider"] = { "n", 173222 },	-- Xandria
+						["coord"] = { 37.7, 29.4, 1536 },	-- Maldraxxus
+					}),
+					q(61876, {	-- Take Heart
+						["sourceQuests"] = { 61782 },	-- Pursuit of Justice
+						["provider"] = { "n", 173193 },	-- Xandria
+						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+					}),
+					q(61770, {	-- The Butchers of Bastion
+						["sourceQuests"] = { 61769 },	-- Fight and Flight
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+					}),
+					q(61781, {	-- The End is Now
+						["sourceQuests"] = { 61780 },	-- Power of the Chosen
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+					}),
 					q(58175, {	-- The Eternal Forge
 						-- Requires Kyrian, Renown 8
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.5, 42.0, 1707 },
+					}),
+					q(58569, {	-- The Folly of Envy
+						["sourceQuests"] = {
+							58566,	-- Actions Speak Louder than Words
+							58567,	-- Skulking in the Darkness
+							58568,	-- Light Respite
+						},
+						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
+						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
 					}),
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
@@ -524,11 +724,30 @@ _.Zones =
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 69.8, 1707 },	-- Archon's Rise
 					}),
+					q(58571, {	-- The Seal of Contrition
+						["sourceQuests"] = { 58570 },	-- Parting Words
+						["provider"] = { "n", 162149 },	-- Mikanikos
+						["coord"] = { 45.7, 56.5, 1707 },	-- Elysian Hold
+						["g"] = {
+							i(178153),	-- Selfless Watcher's Helm
+							-- TODO: Confirm Leather/Mail/Plate
+						}
+					}),
 					q(58798, {	-- The Spires of Ascension
-					--	Increase Kyrian renown by 1
 						["sourceQuests"] = { 58797 },	-- Forged by Trial
 						["provider"] = { "n", 163650 },	-- Kleia
 						["coord"] = { 59.9, 36.2, 1708 },
+					}),
+					q(58563, {	-- Through Glass
+						["sourceQuests"] = {
+							58561,	-- Shards of the Countess
+							58562,	-- Collecting Dust
+						},
+						["provider"] = { "n", 161544 },	-- The Curator
+						["coord"] = { 55.2, 34.7, 1525 },	-- Revendreth
+						["g"] = {
+							i(181286),	-- Halo of the Selfless
+						},
 					}),
 					q(58790, {	-- To Cross the Veil
 						["sourceQuests"] = {
@@ -539,15 +758,30 @@ _.Zones =
 						["coord"] = { 32.1, 21.2, 1533 },
 					}),
 					q(58787, {	-- Trial of Ascension
-					--	Requires Kyrian renown 5
+						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 }, -- Elysian Hold
+					}),
+					q(61776, {	-- Trouble on the Western Front
+						["sourceQuests"] = {
+							61773,	-- Descended
+							61774,	-- Burn Before Reading
+							61775,	-- An Early End
+						},
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.4, 26.4, 1536 },	-- Maldraxxus
 					}),
 					q(58792, {	-- Where a Soul Belongs
 						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
 						["provider"] = { "n", 162558 },	-- Alithea
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
+					
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
 				}),
 				n(RARES, {
 				}),

@@ -4347,6 +4347,7 @@ app.L = {
 		[354189] = "Stoneborn Satchel",
 		[354192] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
+		[357246] = "Tattered Scroll",
 		[1278968750] = "Hanging Chain",
 		[1278968751] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
 		[1278968752] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
