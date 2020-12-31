@@ -3052,9 +3052,9 @@ _.HiddenQuestTriggers =
 		q(63314),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Night Fae
 		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Venthyr
-		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Shared
+		q(63250),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Shared
 		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Kyrian
-		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Necrolord
+		q(63294),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Necrolord
 		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Night Fae
 		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Venthyr
 		
