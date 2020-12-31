@@ -15,7 +15,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(1, {	-- Normal
 				e(2400, {	-- Ingra Maloch
-					["crs"] = { 164567 },	-- Ingra Maloch
+					["crs"] = {
+						164567,	-- Ingra Maloch
+						164804,	-- Droman Oulfarran
+					},
 					["g"] = {
 						i(182582),	-- Enkindled Spirit
 						i(183253),	-- Memory of the Soulforge Embers
@@ -83,7 +86,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["lvl"] = { 60 },
 				["g"] = {
 					e(2400, {	-- Ingra Maloch
-						["crs"] = { 164567 },	-- Ingra Maloch
+						["crs"] = {
+							164567,	-- Ingra Maloch
+							164804,	-- Droman Oulfarran
+						},
 						["g"] = {
 							i(182582),	-- Enkindled Spirit
 							i(183253),	-- Memory of the Soulforge Embers
@@ -163,7 +169,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						}),
 					}),
 					e(2400, {	-- Ingra Maloch
-						["crs"] = { 164567 },	-- Ingra Maloch
+						["crs"] = {
+							164567,	-- Ingra Maloch
+							164804,	-- Droman Oulfarran
+						},
 						["g"] = {
 							ach(14503),	-- Hooked On Hydroponics
 							i(182582),	-- Enkindled Spirit

@@ -71,7 +71,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2392, {	-- Surgeon Stitchflesh
-					["crs"] = { 162689 },	-- Surgeon Stitchflesh
+					["crs"] = {
+						162689,	-- Surgeon Stitchflesh
+						164578,	-- Stitchflesh's Creation
+					},
 					["g"] = {
 						i(181738),	-- Artifice of the Archmage
 						i(182750),	-- Carnivorous Stalkers
@@ -149,7 +152,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2392, {	-- Surgeon Stitchflesh
-						["crs"] = { 166880 },	-- Surgeon Stitchflesh
+						["crs"] = {
+							162689,	-- Surgeon Stitchflesh
+							164578,	-- Stitchflesh's Creation
+						},
 						["g"] = {
 							i(181738),	-- Artifice of the Archmage
 							i(182750),	-- Carnivorous Stalkers
@@ -230,7 +236,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2392, {	-- Surgeon Stitchflesh
-						["crs"] = { 166880 },	-- Surgeon Stitchflesh
+						["crs"] = {
+							162689,	-- Surgeon Stitchflesh
+							164578,	-- Stitchflesh's Creation
+						},
 						["g"] = {
 							ach(14320),	-- Surgeon's Supplies
 							i(181738),	-- Artifice of the Archmage

@@ -15,6 +15,15 @@ _.Zones =
 						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 					},
 				}),
+				o(1278968769, {	-- Broken Bell
+				--	TODO: fix objectID when data is available
+					["questID"] = 60796,
+					["isDaily"] = true,
+					["coord"] = { 57.6, 40.6, 1533 },
+					["g"] = {
+						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
+					},
+				}),
 				o(356823, {	-- Cloudwalker's Coffer
 					["questID"] = 61698,
 					["isDaily"] = true,
@@ -61,14 +70,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 47.3, 16.5, 1533 },
 				}),
-				o(353650, {	-- Steward's Golden Chest
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
-					["questID"] = 60779,
+				o(1278968770, {	-- Hidden Hoard
+				--	TODO: fix objectID
+					["description"] = "Inside the cave.",
+					["questID"] = 60876,
 					["isDaily"] = true,
-					["coord"] = { 53.2, 46.4, 1533 },
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-					["crs"] = { 170284 },	-- Elios
+					["coord"] = { 49.3, 52.1, 1533 },
 				}),
 				--	TODO: are Silver Strongbox rewards shared or specific to the objectID?
 				o(353205, {	-- Silver Strongbox (under Hero's Rest)
@@ -77,6 +84,14 @@ _.Zones =
 					["questID"] = 60652,
 					["isDaily"] = true,
 					["coord"] = { 50.8, 44.7, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				}),
+				o(353314, {	-- Silver Strongbox
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60708,
+					["isDaily"] = true,
+					["coord"] = { 42.3, 26.4, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(363825, {	-- Silver Strongbox (near The Eternal Forge)
@@ -150,6 +165,15 @@ _.Zones =
 					["g"] = {
 						i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 					},
+				}),
+				o(353650, {	-- Steward's Golden Chest
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
+					["questID"] = 60779,
+					["isDaily"] = true,
+					["coord"] = { 53.2, 46.4, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+					["crs"] = { 170284 },	-- Elios
 				}),
 				o(353876, {	-- Virtue of Penitence
 					["questID"] = 60882,

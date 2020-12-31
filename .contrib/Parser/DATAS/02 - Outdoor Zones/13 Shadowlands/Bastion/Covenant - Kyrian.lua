@@ -92,9 +92,9 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["repeatable"] = true,
 						["provider"] = { "n", 160387 },	-- Hermestes
-						["coord"] = { 64.6, 16.4, 1533 },
+						["coord"] = { 40.9, 41.0, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60465, {	-- Anima Appeal

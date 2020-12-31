@@ -64,7 +64,7 @@ _.Zones =
 						q(60399, {	-- Aiding Revendreth
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
-							--["coord"] = { , 1525 },
+							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
 							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
@@ -489,7 +489,7 @@ _.Zones =
 						q(58426, {	-- In the Shadow of our Failures
 							["sourceQuests"] = { 58383 },	-- The Many Sins of Kael'thas Sunstrider
 							["provider"] = { "n", 161160 },	-- The Accuser
-							["coord"] = { 46.5, 32.2, 1700 },	-- Sinfall
+							["coord"] = { 46.5, 32.2, 1700 },	-- Sinfall Depths
 						}),
 						q(62903, {	-- Into the Reservoir
 							["sourceQuests"] = { 62902 },	-- Anima is Power
@@ -724,7 +724,7 @@ _.Zones =
 						q(58382, {	-- Someone Worth Saving
 							["sourceQuests"] = { 61077 },	-- Confronting Sin
 							["provider"] = { "n", 165291 },	-- The Accuser
-							["coord"] = { 55.8, 78.7, 1700 },	-- Sinfall
+							["coord"] = { 55.8, 78.7, 1700 },	-- Sinfall Depths
 						}),
 						q(62870, {	-- Souls for Sinfall
 							["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -812,7 +812,7 @@ _.Zones =
 						q(58383, {	-- The Many Sins of Kael'thas Sunstrider
 							["sourceQuests"] = { 58382 },	-- Someone Worth Saving
 							["provider"] = { "n", 161158 },	-- The Accuser
-							["coord"] = { 46.4, 32.3, 1700 },	-- Sinfall
+							["coord"] = { 46.4, 32.3, 1700 },	-- Sinfall Depths
 						}),
 						q(59233, {	-- The Prince's New Crown
 							["sourceQuests"] = { 60996 },	-- Face Your Fears
@@ -913,15 +913,20 @@ _.Zones =
 							n(-917, {	-- Tier 2: Streaming Threads
 								q(61735, {	-- Awaken Our Allies
 									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173038 },	-- 
-									["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
+									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["isDaily"] = true,
+									["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
 								}),
 								q(61733, {	-- Big Bag of Creepers
 									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173127 },	-- 
-									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
+									["provider"] = { "n", 173127 },	-- Thinman 
 									["isDaily"] = true,
+									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
+								}),
+								q(61734, {	-- Census of Sins
+									["provider"] = { "n", 173532 },	-- Lady Sinrender
+									["isDaily"] = true,
+									["coord"] = { 72.2, 75.8, 1525 },	-- Revendreth
 								}),
 								q(60601, {	-- Darkwing Drills
 									["isWorldQuest"] = true,
@@ -929,15 +934,15 @@ _.Zones =
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
 									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173251 },	-- 
-									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
+									["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 									["isDaily"] = true,
+									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
 								}),
 								q(61848, {	-- Edict of Doom: Sinstone Golems
 									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173629 },	-- 
-									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
+									["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 									["isDaily"] = true,
+									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 								}),
 								q(61845, {	-- Edict of Doom: Devourers
 									-- ["sourceQuests"] = { ? },	-- 
