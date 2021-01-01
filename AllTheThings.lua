@@ -4355,7 +4355,7 @@ local function PopulateQuestObject(questObject)
 						for _,data in ipairs(_cache) do
 							-- print("_cached",data.key,data[data.key])
 							-- cache record is the item itself
-							if data.key == "itemID" and data[data.key] == itemID then
+							if data.itemID and data.itemID == itemID then
 								-- print("Merge cached item")
 								MergeProperties(item, data);
 							-- cache record is associated with the item
