@@ -34,6 +34,7 @@ _.Zones =
 							i(184633),	-- Champion's Meat Cache
 							i(184641),	-- Champion's Mining Cache
 							i(184640),	-- Champion's Skinning Cache
+							i(184639),	-- Champion's Tailoring Cache
 							i(184638),	-- Hero's Fish Cache
 							i(184637),	-- Hero's Meat Cache
 					},
