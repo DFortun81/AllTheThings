@@ -2964,7 +2964,6 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
-		q(63037),	-- secondary version of "Dark Aspirations," unsure criteria for pickup?  possibly one is for Venthyr, but they both say they can end in sinfall so idk
 		
 		-- Adventures
 		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared

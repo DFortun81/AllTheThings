@@ -190,6 +190,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 36.5, 51.5, 1525 },
 				}),
+				o(352703, {	-- The Harvest
+				--	TODO: apparently this has multiple notes/locations, add them as they pop up
+					["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r",
+					["isDaily"] = true,
+					["questID"] = 60579,
+					["coord"] = { 38.5, 39.9, 1525 },
+				}),
 			}),
 		}),
 	}),
