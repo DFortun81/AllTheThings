@@ -21,7 +21,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(1, {	-- Normal
 				e(2408, {	-- Hakkar the Soulflayer
-					["crs"] = { 166473 },	-- Hakkar the Soulflayer
+					["crs"] = { 164558 },	-- Hakkar the Soulflayer
 					["g"] = {
 						i(181737),	-- Nourishing Chi
 						i(182621),	-- One With the Beast
@@ -38,7 +38,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2409, {	-- The Manastorms
-					["crs"] = { 101976 },	-- Millificent Manastorm
+					["crs"] = {
+						164556,	-- Millhouse Manastorm
+						164555,	-- Millificent Manastorm
+					},
 					["g"] = {
 						i(181509),	-- Arcane Prodigy
 						i(182748),	-- Borne of Blood
@@ -55,7 +58,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2398, {	-- Dealer Xy'exa
-					["crs"] = { 101976 },	-- Millificent Manastorm
+					["crs"] = { 164450 },	-- Millificent Manastorm
 					["g"] = {
 						i(183396),	-- Flame Infusion
 						i(183265),	-- Memory of a Wildfire Cluster
@@ -72,7 +75,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2410, {	-- 	Mueh'zala
-					["crs"] = { 169769 },	-- 	Mueh'zala
+					["crs"] = { 166608 },	-- 	Mueh'zala
 					["g"] = {
 						ach(14373),	-- De Other Side
 						i(182178, {	-- Raptor Soul
@@ -101,7 +104,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["lvl"] = { 60 },
 				["g"] = {
 					e(2408, {	-- Hakkar the Soulflayer
-						["crs"] = { 166473 },	-- Hakkar the Soulflayer
+						["crs"] = { 164558 },	-- Hakkar the Soulflayer
 						["g"] = {
 							i(181737),	-- Nourishing Chi
 							i(182621),	-- One With the Beast
@@ -118,7 +121,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2409, {	-- The Manastorms
-						["crs"] = { 101976 },	-- Millificent Manastorm
+						["crs"] = {
+							164556,	-- Millhouse Manastorm
+							164555,	-- Millificent Manastorm
+						},
 						["g"] = {
 							i(181509),	-- Arcane Prodigy
 							i(182748),	-- Borne of Blood
@@ -135,7 +141,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2398, {	-- Dealer Xy'exa
-						["crs"] = { 101976 },	-- Millificent Manastorm
+						["crs"] = { 164450 },	-- Millificent Manastorm
 						["g"] = {
 							i(183396),	-- Flame Infusion
 							i(183265),	-- Memory of a Wildfire Cluster
@@ -152,7 +158,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2410, {	-- 	Mueh'zala
-						["crs"] = { 169769 },	-- 	Mueh'zala
+						["crs"] = { 166608 },	-- 	Mueh'zala
 						["g"] = {
 							ach(14408),	-- Heroic: De Other Side
 							i(182178, {	-- Raptor Soul
@@ -186,7 +192,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						ach(14354),	-- Highly Communicable
 					}),
 					e(2408, {	-- Hakkar the Soulflayer
-						["crs"] = { 166473 },	-- Hakkar the Soulflayer
+						["crs"] = { 164558 },	-- Hakkar the Soulflayer
 						["g"] = {
 							i(181737),	-- Nourishing Chi
 							i(182621),	-- One With the Beast
@@ -203,7 +209,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2409, {	-- The Manastorms
-						["crs"] = { 101976 },	-- Millificent Manastorm
+						["crs"] = {
+							164556,	-- Millhouse Manastorm
+							164555,	-- Millificent Manastorm
+						},
 						["g"] = {
 							ach(14374),	-- Couple's Therapy
 							i(181509),	-- Arcane Prodigy
@@ -221,7 +230,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2398, {	-- Dealer Xy'exa
-						["crs"] = { 101976 },	-- Millificent Manastorm
+						["crs"] = { 164450 },	-- Millificent Manastorm
 						["g"] = {
 							ach(14606),	-- Thinking with...
 							i(183396),	-- Flame Infusion
@@ -239,7 +248,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2410, {	-- 	Mueh'zala
-						["crs"] = { 169769 },	-- 	Mueh'zala
+						["crs"] = { 166608 },	-- 	Mueh'zala
 						["g"] = {
 							ach(14409),	-- Mythic: De Other Side
 							i(182178, {	-- Raptor Soul

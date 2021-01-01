@@ -1326,6 +1326,11 @@ _.Zones =
 										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 										["coord"] = { 70.0, 56.2, 1525 },
 									}),
+									q(61916, {	-- Restock: Fire Damage
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									}),
 									q(62080, {	-- Restock: Herbal Tea
 									--	showed up after Week 1 Ember Court
 										["repeatable"] = true,	-- it shows up as a blue ?

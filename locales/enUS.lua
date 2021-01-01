@@ -4307,6 +4307,7 @@ app.L = {
 		[352490] = "Join the Rebellion!",
 		[352520] = "Medallion of Pride",
 		[352596] = "Sprouting Growth",
+		[352703] = "The Harvest",
 		[353019] = "Silver Strongbox",
 		[353205] = "Silver Strongbox",
 		[353231] = "Bonebound Chest",

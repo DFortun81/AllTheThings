@@ -96,6 +96,7 @@ _.Zones =
 						},
 					}),
 					i(180378),	-- Forgemaster's Crate
+					i(180380),	-- Lace Draperies
 					i(180355),	-- Ornate Pyx
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
