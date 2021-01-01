@@ -3056,6 +3056,11 @@ _.HiddenQuestTriggers =
 		q(63294),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Necrolord
 		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Night Fae
 		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Venthyr
+		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Shared
+		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Kyrian
+		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Necrolord
+		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Night Fae
+		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
