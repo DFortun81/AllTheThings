@@ -119,6 +119,7 @@ _.Zones =
 					i(181207),	-- Dominance Keep Barrier
 					i(181190),	-- Dredger Tossers
 					i(181210),	-- Dredhollow Boomstick
+					i(181202),	-- Ember-Scarred Girdle
 					i(181334),	-- Essence Extractor
 					i(181220),	-- Fiend Collector's Cudgel
 					i(181204),	-- Hide of Krengaath
@@ -148,6 +149,8 @@ _.Zones =
 					i(181183),	-- Soulstalker Grips
 					i(181184),	-- Soulstalker Helm
 					i(181186),	-- Stalker Wight's Sash
+					i(181198),	-- Stone-Infused Sabatons
+					i(181201),	-- Stonewing Mantle
 					i(181219),	-- Stonewing Rioter's Cudgel
 					i(181203),	-- Stonewrought Armplates
 					i(181197),	-- Stonewrought Breastplate
