@@ -3337,6 +3337,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 
+		-- an item used for a faction which is repeatable
+		if group.itemID and group.factionID and group.repeatable then
+			tinsert(info, { left = "Provides Reputation with '" .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+		end
+
 		local collectionData;
 		if group.g and #group.g > 0 then
 			--[[
