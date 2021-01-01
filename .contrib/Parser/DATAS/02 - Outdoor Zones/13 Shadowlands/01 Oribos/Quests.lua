@@ -447,56 +447,68 @@ _.Zones =
 
 				-- Zone Travel Breadcrumbs
 				-- Ardenweald
-				q(62739, {	-- Restoring Balance
-				--	picked up on Kyrian
+				q(62739, {	-- Restoring Balance [Non-Night Fae]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is not aligned with the Night Fae Covenant",
 					["sourceQuests"] = { 62277 },	-- Ardenweald
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
-				q(63036, {	-- Restoring Balance
-				--	picked up on Night Fae
+				q(63036, {	-- Restoring Balance [Night Fae]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is aligned with the Night Fae Covenant",
 					["sourceQuests"] = { 62277 },	-- Ardenweald
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
 				-- Bastion
-				q(62707, {	-- The Elysian Fields
+				q(62707, {	-- The Elysian Fields [Non-Kyrian]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is not aligned with the Kyrian Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
-				q(63034, {	-- The Elysian Fields
+				q(63034, {	-- The Elysian Fields [Kyrian]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is aligned with the Kyrian Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
 				-- Maldraxxus
-				q(62738, {	-- A Fresh Blade
-				--	picked up this version in Oribos (chose Maldraxxus 4th, was Kyrian, not sure if either of these things factor into which version you get)
+				q(62738, {	-- A Fresh Blade [Non-Necrolord]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is not aligned with the Necrolord Covenant",
 					["sourceQuests"] = { 62278 },	-- Maldraxxus
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
-				q(63035, {	-- A Fresh Blade
+				q(63035, {	-- A Fresh Blade [Necrolord]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is aligned with the Necrolord Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62278 },	-- Maldraxxus
 				}),
 				-- Revendreth
-				q(62740, {	-- Dark Aspirations
+				q(62740, {	-- Dark Aspirations [Non-Venthyr]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is not aligned with the Venthyr Covenant",
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62279 },	-- Revendreth
+				}),
+				q(63037, {	-- Dark Aspirations [Venthyr]
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["description"] = "Provided to a character which is aligned with the Venthyr Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
@@ -512,7 +524,8 @@ _.Zones =
 					["coord"] = { 49.2, 52.2, 1565 },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						62739,	-- Restoring Balance
+						62739,	-- Restoring Balance [Non-Night Fae]
+						63036,	-- Restoring Balance [Night Fae]
 					},
 					["g"] = {
 						i(179562),	-- Duskwarder Branch
@@ -532,7 +545,8 @@ _.Zones =
 					["coord"] = { 51.1, 43.7, 1533 },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						62707,	-- The Elysian Fields
+						62707,	-- The Elysian Fields [Non-Kyrian]
+						63034,	-- The Elysian Fields [Kyrian]
 					},
 					["g"] = {
 						i(181637),	-- Lifepath Hammer
@@ -550,7 +564,8 @@ _.Zones =
 					["coord"] = { 52.8, 68.2, 1536 },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						63035,	-- A Fresh Blade
+						62738,	-- A Fresh Blade [Non-Necrolord]
+						63035,	-- A Fresh Blade [Necrolord]
 					},
 					["g"] = {
 						i(181685),	-- Gorewrought Barrier
@@ -576,7 +591,8 @@ _.Zones =
 					},
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						62740,	-- Dark Aspirations
+						62740,	-- Dark Aspirations [Non-Venthyr]
+						63037,	-- Dark Aspirations [Venthyr]
 					},
 					["g"] = {
 						i(181224),	-- Avowed Arcanist's Staff
