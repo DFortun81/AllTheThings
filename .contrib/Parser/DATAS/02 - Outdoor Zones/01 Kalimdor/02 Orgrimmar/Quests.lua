@@ -1547,10 +1547,21 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(51443, {	-- Mission Statement (BfA version, may be removed now)
-					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
-					["coord"] = { 48.9, 91.4, 85 },
-					["sourceQuest"] = 53031,	-- The Speaker's Imperative
+				q(51443, {	-- Mission Statement (BfA version)
+					-- available to a level 47, pre-9.0 character during patch 9.0
+					["providers"] = { 
+						{ "n", 140176 },	-- Nathanos Blightcaller
+						{ "n", 49750 },	-- Warchief's Herald
+					},
+					["coords"] = {
+						{ 48.9, 91.4, 85 },	-- Nathanos Blightcaller
+						{ 49.4, 76.6, 85 },	-- Warchief's Herald
+					},
+					["sourceQuests"] = {
+						-- This quest was not completed for me, but 52428 was completed... maybe it's a breadcrumb technically?
+						53031,	-- The Speaker's Imperative
+						52428,	-- Infusing the Heart
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				q(60361, {	-- Mission Statement (Shadowlands version)

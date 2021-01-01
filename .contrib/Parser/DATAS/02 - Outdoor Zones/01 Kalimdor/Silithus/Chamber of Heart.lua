@@ -122,6 +122,7 @@ _.Zones =
 							},
 						}),
 						q(51403, {	-- The Speaker's Imperative (A)
+							-- TODO: likely this is technically a breadcrumb as well, if someone tests heading to Stormwind after receiving their neck and not picking this up...
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
@@ -129,6 +130,8 @@ _.Zones =
 							["lvl"] = 110,
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
+							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
+							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
