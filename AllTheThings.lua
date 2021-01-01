@@ -1452,6 +1452,7 @@ end })
 local NPCTitlesFromID = {};
 local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
 local NPCNameFromID = setmetatable({}, { __index = function(t, id)
+	if not id then return; end
 	if id > 0 then
 		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
 		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
@@ -4880,8 +4881,8 @@ local function SortGroup(group, sortType, row, recur)
 		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
-				txtA = a and tostring(a.text) or "";
-				txtB = b and tostring(b.text) or "";
+				txtA = a and tostring(a.sorttext or a.text) or "";
+				txtB = b and tostring(b.sorttext or b.text) or "";
 				if txtA then
 					if txtB then return txtA < txtB; end
 					return true;
@@ -4958,29 +4959,40 @@ app.ToggleMainList = function()
 end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
-app.TryColorizeName = function(self, name)
+-- Attempts to determine the colorized text for a given Group
+app.TryColorizeName = function(group, name)
 	if not name or name == RETRIEVING_DATA then return name; end
-	if self.isBreadcrumb then
-		return "|cff7f40bf" .. name .. "|r";
-	elseif self.isRaid then
-		return "|cffff8000" .. name .. "|r";
+	-- breadcrumbs
+	if group.isBreadcrumb then
+		return Colorize(name, "ff7f40bf");
+	-- raid headers
+	elseif group.isRaid then
+		return Colorize(name, "ffff8000");
+	-- faction standings
+	elseif group.factionID and group.standing then
+		local rgb = FACTION_BAR_COLORS[group.standing + (group.isFriend and 2 or 0)];
+		return Colorize(name, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
 	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))
 	then
 		-- class color
-		if self.classID then
-			return "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(self.classID))].colorStr .. name .. "|r";
-		elseif self.c and #self.c == 1 then
-			return "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(self.c[1]))].colorStr .. name .. "|r";
+		if group.classID then
+			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
+		elseif group.c and #group.c == 1 then
+			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
 		-- faction colors
-		elseif self.r then
+		elseif group.r then
 			-- red for Horde
-			if self.r == Enum.FlightPathFaction.Horde then
-				return "|cffcc6666" .. name .. "|r";
+			if group.r == Enum.FlightPathFaction.Horde then
+				return Colorize(name, "ffcc6666");
 			-- blue for Alliance
-			elseif self.r == Enum.FlightPathFaction.Alliance then
-				return "|cff407fbf" .. name .. "|r";
+			elseif group.r == Enum.FlightPathFaction.Alliance then
+				return Colorize(name, "ff407fbf");
 			end
+		-- un-acquirable color
+		-- TODO: grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
+		-- elseif not app.FilterItemClass(group) then
+		-- 	return Colorize(name, "ff808080");
 		end
 	end
 	return name;
@@ -6044,9 +6056,8 @@ app.BaseEncounter = {
 		if key == "key" then
 			return "encounterID";
 		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "name" then
+			return app.TryColorizeName(t, t.name);
+		elseif key == "name" or key == "sorttext" then
 			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
 		elseif key == "description" then
 			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
@@ -6154,9 +6165,10 @@ app.BaseFaction = {
 			if t.achievementID then
 				return select(4, GetAchievementInfo(t.achievementID));
 			end
+		elseif key == "name" or key == "sorttext" then
+			return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID);
 		elseif key == "text" then
-			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
-			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+			return app.TryColorizeName(t, t.name);
 		elseif key == "title" then
 			return t.isFriend and select(7, GetFriendshipReputation(t.factionID)) or _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "description" then
@@ -7567,7 +7579,7 @@ local npcFields = {
 	end,
 	["name"] = function(t)
 		_cache = rawget(t, "npcID");
-		return _cache > 0 and app.TryColorizeName(t, NPCNameFromID[_cache]) or L["NPC_ID_NAMES"][_cache];
+		return app.TryColorizeName(t, NPCNameFromID[_cache]);
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
@@ -7787,13 +7799,7 @@ app.BaseQuest = {
 			end
 			local questName = t.questName;
 			if t.retries and t.retries > 120 then
-				if t.npcID then
-					if t.npcID > 0 then
-						return t.npcID > 0 and NPCNameFromID[t.npcID];
-					else
-						return L["NPC_ID_NAMES"][t.npcID];
-					end
-				end
+				return NPCNameFromID[t.npcID];
 			end
 			return app.TryColorizeName(t, questName);
 		elseif key == "questName" then
@@ -8093,7 +8099,7 @@ app.BaseSelfieFilter = {
 				end
 				if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
 					return 2;
-			end
+				end
 			end
 		elseif key == "description" then
 			if t.crs and #t.crs > 0 then
