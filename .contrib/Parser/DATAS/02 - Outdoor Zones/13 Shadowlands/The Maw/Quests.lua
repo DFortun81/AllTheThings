@@ -448,9 +448,9 @@ _.Zones =
 					["coord"] = { 32.9, 66.4, 1648 },
 				}),
 				q(63069, {	-- What They Know
-					-- ["provider"] = { "n", ? },	-- ?
+					["provider"] = { "o", 364987 },	-- Broker Journal
 					["isDaily"] = true,
-					-- ["coord"] = { ?, ?, 1543 },
+					["coord"] = { 46.4, 62.3, 1543 },
 				}),
 				q(61765, {	-- Words of Warding
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
