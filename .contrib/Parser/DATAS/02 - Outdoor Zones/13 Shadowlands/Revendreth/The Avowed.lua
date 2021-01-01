@@ -221,9 +221,11 @@ _.Zones =
 									["cost"] = { { "c", 1816, 1000 } },
 								}),
 								i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
+									["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
 									["cost"] = { { "c", 1816, 600 } },
 								}),
 								i(184222, {	-- Lemet's Requisition Orders
+									["questID"] = 62822,
 									["cost"] = { { "c", 1816, 350 } },
 								}),
 								i(182890, {	-- Rapid Recitation Quill
@@ -233,6 +235,7 @@ _.Zones =
 									["cost"] = { { "c", 1816, 35 } },
 								}),
 								i(184219, {	-- Treatise on Sinstone Fragment Acquisition
+									["questID"] = 62821,
 									["cost"] = { { "c", 1816, 600 } },
 								}),
 								i(184218, {	-- Vulgarity Arbiter
