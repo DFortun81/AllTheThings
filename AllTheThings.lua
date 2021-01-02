@@ -7578,6 +7578,8 @@ local npcFields = {
 		return L["NPC_ID_ICONS"][t.npcID]
 			or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)))
 			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+			or app.DifficultyIcons[t.difficultyID]
+			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID")]
 			or "Interface\\Worldmap\\Skull_64Green";
 	end,
 	["link"] = function(t)

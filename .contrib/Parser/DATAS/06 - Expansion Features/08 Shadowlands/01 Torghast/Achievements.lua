@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					i(170540, {	-- Ravenous Anima Cell
 						crit(1, {	-- Dark Armaments
 							["achievementID"] = 14778,	-- Extremely Ravenous
-							["description"] = "Requires creatures within the 'Coldheart Interstitia' tower.",
+							["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
 							["crs"] = {
 								156212,	-- Coldheart Agent
 								165594,	-- Coldheart Ambusher
@@ -111,6 +111,7 @@ _.ExpansionFeatures =
 						}),
 						crit(13, {	-- Prisoner's Concord
 							["achievementID"] = 14778,	-- Extremely Ravenous
+							["description"] = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
 							["crs"] = {
 								154011,	-- Armed Prisoner
 								154015,	-- Escaped Ritualist
