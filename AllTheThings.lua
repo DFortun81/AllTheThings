@@ -6083,7 +6083,9 @@ app.BaseEncounter = {
 			end
 			return displayInfos;
 		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_Head_Human_01";
+			return app.DifficultyIcons[t.difficultyID] or
+				app.DifficultyIcons[GetRelativeValue(t, "difficultyID")] or
+				"Interface\\Icons\\INV_Misc_Head_Human_01";
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
