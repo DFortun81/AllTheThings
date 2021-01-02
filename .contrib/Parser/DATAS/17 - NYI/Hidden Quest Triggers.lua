@@ -3467,6 +3467,8 @@ _.HiddenQuestTriggers =
 		q(62809),	-- Valinor kill questID
 
 		-- Castle Nathria
+		q(60680),	-- LFR 'The Leeching Vaults' Completed
+
 		q(62949),	-- First kill of Sire Denthrius / First full clear ??
 
 		q(62871),	-- Shriekwing
@@ -3478,6 +3480,6 @@ _.HiddenQuestTriggers =
 		q(62877),	-- Lady Inerva Darkvein
 		q(62878),	-- Sludgefist
 		q(62879),	-- Stone Legion Generals
-		q(60680),	-- Lady Inerva Darkvein
+		q(62880),	-- Sire Denthrius
 	}),
 };
