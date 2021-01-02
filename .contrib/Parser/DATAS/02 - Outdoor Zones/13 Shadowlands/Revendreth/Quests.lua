@@ -808,35 +808,11 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
+				
 				q(56829, {	-- Bottom Feeders
 					["sourceQuests"] = { 57007 },	-- Invitation of the Master
 					["provider"] = { "n", 155668 },	-- Rendle
 					["coord"] = { 65.3, 66.2, 1525 },
-				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				currency(1830, {		-- Renown-Venthyr
-					-- Chapter 7 (Envy)
-					q(57771, {	-- An Unwelcome Incursion
-						--["provider"] = { "n", 170543 },	-- General Draven
-						["g"] = {
-							i(180947),	-- Tithe Collector's Vessel
-						},
-					}),
-					-- Chapter 8 (Dominion)
-					q(58407, {	-- The Medallion of Dominion
-						["provider"] = { "n", 170543 },	-- General Draven
-						["g"] = {
-							i(180948),	-- Battle Gargon Vrednic
-						},
-					}),
-					-- Mirror Network
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache

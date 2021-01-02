@@ -893,15 +893,6 @@ _.Zones =
 
 
 
-				currency(1829, {		-- Renown-Kyrian
-					q(61697, {	-- A New Age
-						["provider"] = { "n", 174937 },	-- Adjutant Galos
-						["g"] = {
-							i(180766),	-- Eternal Phalynx of Courage
-							i(180633),	-- Grubby
-						},
-					}),
-				}),
 				-- Glimmerfly toy/pet questline
 				q(60660, {	-- Flight Test
 					["sourceQuests"] = { 59263 },	-- Feathers of Flight

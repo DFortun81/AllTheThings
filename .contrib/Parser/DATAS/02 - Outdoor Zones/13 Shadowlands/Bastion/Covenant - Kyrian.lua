@@ -777,6 +777,14 @@ _.Zones =
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
 					
+					-- TODO: moved this quest here from Bastion file; sort above once it is actually seen/verified in game
+					q(61697, {	-- A New Age
+						["provider"] = { "n", 174937 },	-- Adjutant Galos
+						["g"] = {
+							i(180766),	-- Eternal Phalynx of Courage
+							i(180633),	-- Grubby
+						},
+					}),
 					-- q(, {	-- 
 					-- 	["sourceQuests"] = {  },	-- 
 					-- 	["provider"] = { "n",  },	-- 

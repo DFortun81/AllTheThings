@@ -687,10 +687,13 @@ _.Zones =
 
 				-- From Revendreth
 				-- Choosing Your Covenant
+				
+				--[[ quest was in beta but still has not been seen in game
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn
 					["coord"] = { 33.2, 48.9, 1670 },
 				}),
+				--]]
 			}),
 		}),
 	}),

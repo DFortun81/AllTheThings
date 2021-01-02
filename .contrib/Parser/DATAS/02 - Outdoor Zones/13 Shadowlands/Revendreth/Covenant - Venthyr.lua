@@ -888,6 +888,22 @@ _.Zones =
 							},
 						}),
 
+						-- TODO: moved these 2 quests here from Revendreth file; sort them above once they are actually seen/verified in game
+						-- Chapter 7 (Envy)
+						q(57771, {	-- An Unwelcome Incursion
+							--["provider"] = { "n", 170543 },	-- General Draven
+							["g"] = {
+								i(180947),	-- Tithe Collector's Vessel
+							},
+						}),
+						-- Chapter 8 (Dominion)
+						q(58407, {	-- The Medallion of Dominion
+							["provider"] = { "n", 170543 },	-- General Draven
+							["g"] = {
+								i(180948),	-- Battle Gargon Vrednic
+							},
+						}),
+
 						-- q(, {	-- 
 						-- 	["sourceQuests"] = {  },	-- 
 						-- 	["provider"] = { "n",  },	-- 
