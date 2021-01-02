@@ -106,6 +106,7 @@ _.ExpansionFeatures =
 				1786,	-- Torghast
 				1794,	-- Torghast
 				1811,	-- Torghast
+				1812,	-- Torghast
 				1911,	-- Torghast Entrance
 			},
 		}),

@@ -369,7 +369,7 @@ _.Zones =
 							},
 						}),
 						n(171041, { -- Worldfeaster Chronn
-						--	["questID"] = ,
+							["questID"] = 61047,
 							["isDaily"] = true,
 							["g"] = {
 								crit(18, {	-- Worldfeaster Chronn

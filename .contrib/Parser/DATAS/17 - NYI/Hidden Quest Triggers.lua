@@ -3069,6 +3069,7 @@ _.HiddenQuestTriggers =
 		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
 		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
 		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
+		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
 		-- Ardenweald Rares
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(62269),	-- Macabre secondary quest
@@ -3161,6 +3162,7 @@ _.HiddenQuestTriggers =
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
 		q(62847),	-- secondary quest trigger on Gift of Agthia
+		q(62842),	-- secondary quest trigger on Gift of Devos
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"

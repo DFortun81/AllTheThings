@@ -10,7 +10,7 @@ _.Zones =
 				q(58163, {	-- A Desperate Solution
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "o", 349515 },	-- Battered Journal
-					["coord"] = { 70.3, 32.5, 1565 },
+					["coord"] = { 72.2, 33.9, 1565 },
 					["g"] = {
 						i(183851),	-- Withergrove Shardling
 					},
