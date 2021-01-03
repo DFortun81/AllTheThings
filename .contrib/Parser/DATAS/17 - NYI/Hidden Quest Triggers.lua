@@ -3004,7 +3004,7 @@ _.HiddenQuestTriggers =
 		q(63238),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Shared
 		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Kyrian
 		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
-		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
+		q(63264),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
 		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
 		q(63243),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared
 		q(63325),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
