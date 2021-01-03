@@ -234,6 +234,11 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
+					q(58997, {	-- A Bittersweet Prize
+						["provider"] = { "n", 163328 },	-- Pelagos
+						["coord"] = { 45.2, 65.4, 1565 },
+						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
+					}),
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
@@ -248,6 +253,15 @@ _.Zones =
 						["sourceQuests"] = { 58790 },
 						["provider"] = { "n", 162558 },	-- Alithea
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+					}),
+					q(61697, {	-- A New Age
+						["provider"] = { "n", 174177 },	-- Polemarch Adrestes
+						["coord"] = { 43.7, 66.6, 1707 },
+						["g"] = {
+							i(180766),	-- Eternal Phalynx of Courage (mount)
+							i(180633),	-- Grubby (pet)
+							i(181295),	-- Selfless Wings of the Ascended (cosmetic back)
+						},
 					}),
 					q(58178, {	-- A Partner for Eternity
 						["sourceQuests"] = { 58180 },	-- Phaestus, Genesis of Aeons
@@ -401,6 +415,16 @@ _.Zones =
 							i(174292),	-- Selfless Collector's Gauntlets
 						},
 					}),
+					q(58937, {	-- Evil Grubbies
+						["provider"] = { "n", 162392 },	-- Willowblossom
+						["coord"] = { 50.5, 68.9, 1565 },
+						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
+						["g"] = {
+							i(179941),	-- Selfless Forgelite's Boots
+							i(178155),	-- Selfless Watcher's Warboots
+							-- TODO: leather and plate boot rewards
+						},
+					}),
 					q(58559, {	-- Eyes of the Master
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 161540 },	-- Kleia
@@ -437,6 +461,19 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
+					q(58816, {	-- Getting Backstage
+						["provider"] = { "n", 162679 },	-- Willowblossom
+						["sourceQuests"] = {
+							58856,	-- Who Are You Fooling?
+							58832,	-- Trinkle Trinkle Little Twerp
+						},
+						-- no coords, is your 'pet'
+					}),
+					q(58938, {	-- Gorm Ruin Everything
+						-- ["provider"] = { "n",  },	-- Willowblossom
+						["coord"] = { 50.5, 68.9, 1565 },
+						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
+					}),
 					q(58560, {	-- Gothic Fashion
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 165011 },	-- Pelagos
@@ -446,6 +483,16 @@ _.Zones =
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167173 },	-- Baroness Vashj
 						["coord"] = { 28.6, 37.6, 1536 },	-- Maldraxxus
+					}),
+					q(61135, {	-- Heart of the Crest
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 },
+						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
+					}),
+					q(58995, {	-- I Dreamed A Dream
+						["provider"] = { "n", 163328 },	-- Pelagos
+						["coord"] = { 45.2, 65.4, 1565 },
+						["sourceQuests"] = { 58857 },	-- Seeds Away!
 					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -501,6 +548,11 @@ _.Zones =
 						},
 						["provider"] = { "n", 162953 },	-- Sarah Howell
 						["coord"] = { 21.6, 42.0, 49 },
+					}),
+					q(58775, {	-- Meet the Queen
+						["description"] = "Requires Renown 17.",
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 },
 					}),
 					q(58949, {	-- Millie's Garden
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
@@ -564,6 +616,11 @@ _.Zones =
 							i(174296),	-- Selfless Collector's Wristguards
 						},
 					}),
+					q(58905, {	-- Picking Up Pelagos
+						["provider"] = { "n", 162679 },	-- Willowblossom
+						["sourceQuests"] = { 58816 },	-- Getting Backstage
+						-- no coords, is your 'pet'
+					}),
 					q(61780, {	-- Power of the Chosen
 						["sourceQuests"] = {
 							61777,	-- Charging The Blade
@@ -618,6 +675,11 @@ _.Zones =
 						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 						["provider"] = { "n", 159248 },	-- Haetio
 						["coord"] = { 43.2, 38.5, 1533 },
+					}),
+					q(58857, {	-- Seeds Away!
+						["provider"] = { "n", 162392 },	-- Willowblossom
+						["sourceQuests"] = { 58939 },	-- The Blue Seed
+						-- no coords, is your 'pet'
 					}),
 					q(63068, {	-- Settling Disputes
 					--	TODO: is altQuests necessary or do they complete each other?
@@ -684,6 +746,14 @@ _.Zones =
 						["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 						["provider"] = { "n", 173193 },	-- Xandria
 						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+					}),
+					q(58939, {	-- The Blue Seed
+						["provider"] = { "n", 165110 },	-- Pelagos
+						["sourceQuests"] = {
+							58938,	-- Gorm Ruin Everything
+							58937,	-- Evil Grubbies
+						},
+						-- no coords, is your 'pet'
 					}),
 					q(61770, {	-- The Butchers of Bastion
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
@@ -762,6 +832,11 @@ _.Zones =
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
+					q(58832, {	-- Trinkle Trinkle Little Twerp
+						["description"] = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
+						["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
+						["sourceQuests"] = { 58775 },	-- Meet the Queen
+					}),
 					q(61776, {	-- Trouble on the Western Front
 						["sourceQuests"] = {
 							61773,	-- Descended
@@ -776,15 +851,12 @@ _.Zones =
 						["provider"] = { "n", 162558 },	-- Alithea
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
-					
-					-- TODO: moved this quest here from Bastion file; sort above once it is actually seen/verified in game
-					q(61697, {	-- A New Age
-						["provider"] = { "n", 174937 },	-- Adjutant Galos
-						["g"] = {
-							i(180766),	-- Eternal Phalynx of Courage
-							i(180633),	-- Grubby
-						},
+					q(58856, {	-- Who Are You Fooling?
+						["provider"] = { "n", 162392 },	-- Willowblossom
+						["coord"] = { 44.0, 51.8, 1565 },
+						["sourceQuests"] = { 58775 },	-- Meet the Queen
 					}),
+					
 					-- q(, {	-- 
 					-- 	["sourceQuests"] = {  },	-- 
 					-- 	["provider"] = { "n",  },	-- 

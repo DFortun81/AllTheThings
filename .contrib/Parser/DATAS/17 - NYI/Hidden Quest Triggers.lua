@@ -3222,6 +3222,8 @@ _.HiddenQuestTriggers =
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
 		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
+		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
+		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
