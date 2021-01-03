@@ -3275,6 +3275,8 @@ _.HiddenQuestTriggers =
 		q(57606),	-- Triggered after recruiting Roseboil
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
+		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
+		q(62929),	-- Triggered when freeing Neena from cage to make Every Dog Has Its Day (59615) available
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

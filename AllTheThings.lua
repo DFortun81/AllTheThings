@@ -6797,7 +6797,7 @@ app.BaseHeirloomLevel = {
 						t.retries = t.retries + 1;
 						if t.retries > app.MaximumItemInfoRetries then
 							local itemName = "Item #" .. t.itemID .. "*";
-							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+							t.title = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
 							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
 							t.link = "";
 							t.s = nil;
@@ -7220,7 +7220,7 @@ local itemFields = {
 					rawset(t, "retries", rawget(t, "retries") + 1);
 					if t.retries > app.MaximumItemInfoRetries then
 						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
+						rawset(t, "title", "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.");
 						rawset(t, "text", itemName);
 						rawset(t, "retries", nil);
 						rawset(t, "link", "");
@@ -7317,7 +7317,7 @@ local appearanceFields = {
 					rawset(t, "retries", rawget(t, "retries") + 1);
 					if t.retries > app.MaximumItemInfoRetries then
 						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
+						rawset(t, "title", "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.");
 						rawset(t, "text", itemName);
 						rawset(t, "retries", nil);
 						rawset(t, "link", "");
