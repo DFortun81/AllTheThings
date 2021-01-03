@@ -313,6 +313,7 @@ _.Zones =
 								i(140617),	-- Rakeesh's Pauldron
 								i(140611),	-- Fel Commander's Vambraces
 								n(110486, {	-- Huk'roth the Huntmaster
+									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["questID"] = 43480,
 									["g"] = {
 										i(140533),	-- Huntmaster's Injector
@@ -320,6 +321,7 @@ _.Zones =
 								}),
 								q(43705, {	-- Nobundo's Last Stand
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
+									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["provider"] = { "n", 110695 },	-- Farseer Nobundo
 									["g"] = {
 										i(140608),	-- Boots of the Broken

@@ -57,7 +57,8 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61610, {	-- Buggin' Out
+				q(61610, {	-- Fishing: Skeletal Mudskipper
+					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

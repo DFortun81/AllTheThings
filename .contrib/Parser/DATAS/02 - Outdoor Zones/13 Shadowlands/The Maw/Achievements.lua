@@ -152,8 +152,8 @@ _.Zones =
 					crit(21, {	-- Wailing Coin
 						["provider"] = { "i", 183061 },	-- Wailing Coin
 						["questID"] = 63158,	-- Wailing Coin
+						["coord"] = { 38.6, 28.8, 1543 },
 						["crs"] = { 172207 },	-- Odalrik
-						-- ["coords"] = { },
 					}),
 					crit(22, {	-- Mawsworn Orders
 						["provider"] = { "i", 183070 },	-- Mawsworn Orders

@@ -41,10 +41,11 @@ _.Zones =
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
-					["description"] = "At the back of the cave.",
+					["description"] = "At the back of the cave.  Destroy |cFFFFFFFFQuivering Gorm Eggs|r and defeat the Angry Egg-Tenders until the rare spawns.",
 					["questID"] = 60266,
 					["isDaily"] = true,
 					["coord"] = { 58.5, 31.8, 1565 },
+					["crs"] = { 171827 },	-- Angry Egg-Tender
 					["g"] = {
 						crit(13, {	-- Egg-Tender Leh'go
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald

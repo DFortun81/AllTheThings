@@ -137,7 +137,7 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["repeatable"] = true,
 						["provider"] = { "n", 154627 },	-- Xandria
-						["coord"] = { 67.2, 16.0, 1533 },
+						["coord"] = { 62.0, 37.4, 1707 },	-- Archon's Rise
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -198,11 +198,11 @@ _.Zones =
 					}),
 					q(60403, {	-- Training in Ardenweald
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						["provider"] = { "n", 168517 },	-- Kalisthene
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						["coord"] = { 37.3, 61.0, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60407, {	-- Training in Maldraxxus
@@ -760,7 +760,7 @@ _.Zones =
 					q(58787, {	-- Trial of Ascension
 						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, 1707 }, -- Elysian Hold
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(61776, {	-- Trouble on the Western Front
 						["sourceQuests"] = {

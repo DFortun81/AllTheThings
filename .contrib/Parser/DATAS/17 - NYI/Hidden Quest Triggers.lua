@@ -3236,6 +3236,7 @@ _.HiddenQuestTriggers =
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
+		q(61989),	-- Deadly Dapperling secondary quest
 		q(61987),	-- Deepscar secondary kill
 		q(61991),	-- Gristlebeak secondary kill
 		q(61988),	-- Indomitable Schmitd secondary quest

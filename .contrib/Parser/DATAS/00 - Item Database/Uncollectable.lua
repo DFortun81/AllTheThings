@@ -384,6 +384,7 @@ i(173778);	-- Orange Orange
 i(179392);	-- Orb of Burgeoning Ambition
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(183987);	-- Prisoner Cage Key
 i(79104);	-- Rusty Watering Can
 i(171210);	-- Satchel of Nature's Bounty
 i(139590);	-- Scroll of Teleport: Ravenholdt

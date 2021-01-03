@@ -434,7 +434,10 @@ _.Zones =
 							-- no coords, is your 'pet'
 							["g"] = {
 								i(180903),	-- Fearstalker's Ebony Hauberk
-								-- TODO: Cloth/Leather/Plate
+								i(180901),	-- Soulbreaker's Ebony Vestments
+								-- TODO: verify leather/plate
+								i(180904),	-- Ebony Death Shroud Vest
+								i(180902),	-- Dread Sentinel's Ebony Chestplate
 							},
 						}),
 						q(60996, {	-- Face Your Fears
@@ -887,7 +890,7 @@ _.Zones =
 								i(180941),	-- Kael's Dark Sinstone Chain
 							},
 						}),
-
+						
 						-- TODO: moved these 2 quests here from Revendreth file; sort them above once they are actually seen/verified in game
 						-- Chapter 7 (Envy)
 						q(57771, {	-- An Unwelcome Incursion
@@ -970,6 +973,11 @@ _.Zones =
 									["provider"] = { "n", 173042 },	-- Second Talon Shenraa
 									["isDaily"] = true,
 									["coord"] = { 72.3, 76.0, 1525 },
+								}),
+								q(61849, {	-- Take the Bite Out of 'Em
+									["provider"] = { "n", 173630 },	-- Partially-eaten Iger
+									["isDaily"] = true,
+									["coord"] = { 71.2, 74.4, 1525 },
 								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
