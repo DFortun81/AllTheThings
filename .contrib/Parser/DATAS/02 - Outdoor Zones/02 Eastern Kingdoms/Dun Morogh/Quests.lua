@@ -215,15 +215,17 @@ _.Zones =
 				}),
 				q(32663, {	-- Learn To Ride
 					["races"] = { GNOME },
-					["description"] = "This quest is available to Gnomes upon reaching level 20.",
+					["description"] = "This quest is available to Gnomes upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(32662, {	-- Learn To Ride
 					["races"] = { DWARF },
-					["description"] = "This quest is available to Dwarves upon reaching level 20.",
+					["description"] = "This quest is available to Dwarves upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["u"] = REMOVED_FROM_GAME,

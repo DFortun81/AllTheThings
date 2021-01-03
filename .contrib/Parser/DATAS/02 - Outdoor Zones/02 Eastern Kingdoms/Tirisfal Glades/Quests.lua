@@ -380,9 +380,9 @@ _.Zones =
 				}),
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is available to Undead characters upon reaching level 20.",
+					["description"] = "This quest is available to Undead characters upon reaching level 10.",
 					["races"] = { UNDEAD },
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["u"] = REMOVED_FROM_GAME,

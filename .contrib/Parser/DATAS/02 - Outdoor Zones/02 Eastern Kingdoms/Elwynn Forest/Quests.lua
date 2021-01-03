@@ -163,11 +163,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32618, {	-- Learn To Ride
-					["description"] = "This quest is available to Humans upon reaching level 20.",
+					["description"] = "This quest is available to Humans upon reaching level 10.",
 					["races"] = { HUMAN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["u"] = REMOVED_FROM_GAME,

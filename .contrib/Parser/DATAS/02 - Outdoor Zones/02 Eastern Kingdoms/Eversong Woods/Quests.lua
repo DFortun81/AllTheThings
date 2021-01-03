@@ -151,9 +151,10 @@ _.Zones =
 				}),
 				q(32668, {	-- Learn To Ride
 					["races"] = { BLOODELF },
-					["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 20.",
+					["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
 					["u"] = REMOVED_FROM_GAME,

@@ -63,11 +63,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(32670, {	-- Learn to Ride
-					["lvl"] = 20,
+					["lvl"] = 10,
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["description"] = "This quest is available Tauren upon reaching level 20.",
+					["description"] = "This quest is available Tauren upon reaching level 10.",
 				}),
 				q(14087, {	-- Learn to Ride
 					["u"] = REMOVED_FROM_GAME,
