@@ -937,11 +937,11 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32665, {	-- Learn To Ride
-					["description"] = "This quest is available to Pandaren upon reaching level 20.",
+					["description"] = "This quest is available to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_ALLIANCE },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(58909, {	-- License to Ride
 					["provider"] = { "n", 163007 },	-- Curly

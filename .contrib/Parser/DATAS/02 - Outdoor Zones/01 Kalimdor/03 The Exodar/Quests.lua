@@ -49,11 +49,11 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(32661, {	-- Learn To Ride
-					["description"] = "This quest is available to Draenei upon reaching level 20.",
+					["description"] = "This quest is available to Draenei upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["races"] = { DRAENEI },
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				i(46879, {	-- Riding Training Pamphlet
 					q(14082, {	-- Learn to Ride at the Exodar

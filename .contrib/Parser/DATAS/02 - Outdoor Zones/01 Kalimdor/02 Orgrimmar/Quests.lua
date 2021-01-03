@@ -1294,11 +1294,11 @@ _.Zones =
 					},
 				}),
 				q(32674, {	-- I Believe You Can Fly
-					["description"] = "This quest is automatically offered to Horde players upon reaching level 60.",
+					["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["races"] = HORDE_ONLY,
-					["lvl"] = 60,
+					["lvl"] = 30,
 				}),
 				q(7241, {	-- In Defense of Frostwolf
 					["u"] = REMOVED_FROM_GAME,
@@ -1468,25 +1468,25 @@ _.Zones =
 					["classes"] = { MAGE },
 				}),
 				q(32673, {	-- Learn To Ride
-					["description"] = "This quest is available to Goblins upon reaching level 20.",
+					["description"] = "This quest is available to Goblins upon reaching level 10.",
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(32669, {	-- Learn To Ride
-					["description"] = "This quest is available to Orcs upon reaching level 20.",
+					["description"] = "This quest is available to Orcs upon reaching level 10.",
 					["races"] = { ORC },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(32667, {	-- Learn To Ride
-					["description"] = "This quest is available to Pandaren upon reaching level 20.",
+					["description"] = "This quest is available to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_HORDE },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["lvl"] = 20,
+					["lvl"] = 10,
 				}),
 				q(60345, {	-- License to Ride
 					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
