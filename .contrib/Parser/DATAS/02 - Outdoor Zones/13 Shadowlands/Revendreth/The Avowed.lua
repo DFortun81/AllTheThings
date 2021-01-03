@@ -257,6 +257,7 @@ _.Zones =
 							["g"] = {
 								i(177231, {	-- Crown of Honor
 									["questID"] = 59682,
+									["cost"] = { 1000000 },	-- 100g
 									["g"] = {
 										crit(2, {	-- Crown of Honor
 											["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant

@@ -158,10 +158,6 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60140 },	-- Mort'regar
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				}),
-				q(60146, {	-- The Upper Reaches
-					["sourceQuests"] = { 60757 },	-- Skeleton Key
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				}),
 				q(61730, {	-- The Upper Reaches
 					["sourceQuests"] = { 60146 },	-- The Upper Reaches
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon

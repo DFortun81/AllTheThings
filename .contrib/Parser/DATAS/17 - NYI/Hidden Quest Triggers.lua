@@ -2966,101 +2966,138 @@ _.HiddenQuestTriggers =
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		
 		-- Adventures
-		q(63070),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Shared
-		q(63360),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Kyrian
-		-- q( ),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Necrolord
-		q(63359),	-- completing mi(2174), "Tutorial: Dispose of the Detritus" -- Night Fae
-		q(63362),	-- completing mi(2174), "Tutorial, Dispose of the Detritus" -- Venthyr
-		q(63071),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Shared
-		q(63364),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Kyrian
-		-- q( ),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Necrolord
-		q(63363),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Night Fae
-		q(63366),	-- completing mi(2295), "Tutorial: Necromantic Intervention" -- Venthyr
-		q(60634),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Shared
-		q(63368),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Kyrian
-		-- q( ),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Necrolord
-		q(63367),	-- completing mi(2175),	"Tutorial: Spinal Swarm" -- Night Fae
-		q(63370),	-- completing mi(2175), "Tutorial: Spinal Swarm" -- Venthyr
-		q(63247),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Shared
-		q(63281),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Kyrian
-		q(63282),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Necrolord
-		q(63280),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Night Fae
-		q(63283),	-- completing mi(2211),	"Campaign: Whisper in the Dark" -- Venthyr
-		q(63252),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Shared
-		q(63301),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Kyrian
-		-- q( ),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Necrolord
-		-- q( ),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Night Fae
-		q(63303),	-- completing mi(2228), "Campaign: Discarded But Not Useless" -- Venthyr
-		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Shared
-		q(63258),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Kyrian
-		q(63259),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Necrolord
-		-- q( ),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Night Fae
-		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" -- Venthyr
-		q(63242),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Shared
-		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Kyrian
-		q(63322),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Necrolord
-		-- q( ),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Night Fae
-		q(63323),	-- Completing mi(2245), "Campaign: Stacka's Last Stand" -- Venthyr
-		q(63238),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Shared
-		-- q( ),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Kyrian
-		q(63266),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Necrolord
-		q(63264),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Night Fae
-		q(63267),	-- Completing mi(2195), "Campaign: Quiet the Shriekers" -- Venthyr
-		q(63243),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Shared
-		q(63325),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Kyrian
-		q(63326),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Necrolord
-		q(63324),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Night Fae
-		q(63327),	-- Completing mi(2246), "Campaign: Alpha Bonemauler" -- Venthyr
-		q(63248),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Shared
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Kyrian
-		q(63286),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Necrolord
-		-- q( ),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Night Fae
-		q(63287),	-- Completing mi(2212), "Campaign: Promises of the Praetor" -- Venthyr
-		q(63253),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Shared
-		q(63305),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Kyrian
-		q(63306),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Necrolord
-		-- q( ),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Night Fae
-		q(63307),	-- Completing mi(2229), "Campaign: Bone Breaker's Hoard" -- Venthyr
-		q(63249),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Shared
-		-- q( ),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Kyrian
-		q(63290),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Necrolord
-		q(63288),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Night Fae
-		q(63291),	-- Completing mi(2213), "Campaign: Save the Skyfoal" -- Venthyr
-		q(63239),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Shared
-		-- q( ),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Kyrian
-		q(63270),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Necrolord
-		q(63268),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Night Fae
-		q(63271),	-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper" -- Venthyr
-		q(63244),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Shared
-		-- q( ),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Kyrian
-		q(63330),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Necrolord
-		q(63328),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Night Fae
-		q(63331),	-- Completing mi(2247), "Campaign: Charthox the Indomitable" -- Venthyr
-		q(63254),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Shared
-		-- q( ),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Kyrian
-		q(63310),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Necrolord
-		q(63308),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Night Fae
-		q(63311),	-- Completing mi(2230), "Campaign: Ahnqat's Darkness" -- Venthyr
-		q(63240),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Shared
-		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Kyrian
-		q(63274),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Necrolord
-		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Night Fae
-		-- q( ),	-- Completing mi(2197), "Campaign: Cleanse the Possessed" -- Venthyr
-		q(63255),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Shared
-		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Kyrian
-		q(63314),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Necrolord
-		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Night Fae
-		-- q( ),	-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs" -- Venthyr
-		q(63250),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Shared
-		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Kyrian
-		q(63294),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Necrolord
-		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Night Fae
-		-- q( ),	-- Completing mi(2214), "Campaign: The Forsworn Strike Back" -- Venthyr
-		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Shared
-		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Kyrian
-		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Necrolord
-		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Night Fae
-		-- q( ),	-- Completing mi(2248), "Campaign: Big Shiny and Friends" -- Venthyr
+		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
+		q(63070),	-- Shared
+		q(63360),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63359),	-- Night Fae
+		q(63362),	-- Venthyr
+		-- Completing mi(2295), "Tutorial: Necromantic Intervention"
+		q(63071),	-- Shared
+		q(63364),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63363),	-- Night Fae
+		q(63366),	-- Venthyr
+		-- Completing mi(2175),	"Tutorial: Spinal Swarm"
+		q(60634),	-- Shared
+		q(63368),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63367),	-- Night Fae
+		q(63370),	-- Venthyr
+		-- Completing mi(2211),	"Campaign: Whisper in the Dark"
+		q(63247),	-- Shared
+		q(63281),	-- Kyrian
+		q(63282),	-- Necrolord
+		q(63280),	-- Night Fae
+		q(63283),	-- Venthyr
+		-- Completing mi(2228), "Campaign: Discarded But Not Useless"
+		q(63252),	-- Shared
+		q(63301),	-- Kyrian
+		-- q( ),	-- Necrolord
+		-- q( ),	-- Night Fae
+		q(63303),	-- Venthyr
+		-- Completing mi(2194), "Campaign: Erezuel's Revenge"
+		q(63237),	-- Shared
+		q(63258),	-- Kyrian
+		q(63259),	-- Necrolord
+		-- q( ),	-- Night Fae
+		q(63260),	-- Venthyr
+		-- Completing mi(2245), "Campaign: Stacka's Last Stand"
+		q(63242),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63322),	-- Necrolord
+		-- q( ),	-- Night Fae
+		q(63323),	-- Venthyr
+		-- Completing mi(2195), "Campaign: Quiet the Shriekers"
+		q(63238),	-- Shared
+		q(63265),	-- Kyrian
+		q(63266),	-- Necrolord
+		q(63264),	-- Night Fae
+		q(63267),	-- Venthyr
+		-- Completing mi(2246), "Campaign: Alpha Bonemauler"
+		q(63243),	-- Shared
+		q(63325),	-- Kyrian
+		q(63326),	-- Necrolord
+		q(63324),	-- Night Fae
+		q(63327),	-- Venthyr
+		-- Completing mi(2212), "Campaign: Promises of the Praetor"
+		q(63248),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63286),	-- Necrolord
+		-- q( ),	-- Night Fae
+		q(63287),	-- Venthyr
+		-- Completing mi(2229), "Campaign: Bone Breaker's Hoard"
+		q(63253),	-- Shared
+		q(63305),	-- Kyrian
+		q(63306),	-- Necrolord
+		-- q( ),	-- Night Fae
+		q(63307),	-- Venthyr
+		-- Completing mi(2213), "Campaign: Save the Skyfoal"
+		q(63249),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63290),	-- Necrolord
+		q(63288),	-- Night Fae
+		q(63291),	-- Venthyr
+		-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper"
+		q(63239),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63270),	-- Necrolord
+		q(63268),	-- Night Fae
+		q(63271),	-- Venthyr
+		-- Completing mi(2247), "Campaign: Charthox the Indomitable"
+		q(63244),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63330),	-- Necrolord
+		q(63328),	-- Night Fae
+		q(63331),	-- Venthyr
+		-- Completing mi(2230), "Campaign: Ahnqat's Darkness"
+		q(63254),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63310),	-- Necrolord
+		q(63308),	-- Night Fae
+		q(63311),	-- Venthyr
+		-- Completing mi(2197), "Campaign: Cleanse the Possessed"
+		q(63240),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63274),	-- Necrolord
+		q(63272),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs"
+		q(63255),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63314),	-- Necrolord
+		q(63312),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2214), "Campaign: The Forsworn Strike Back"
+		q(63250),	-- Shared
+		-- q( ),	-- Kyrian
+		q(63294),	-- Necrolord
+		-- q( ),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2248), "Campaign: Big Shiny and Friends"
+		q(63245),	-- Shared
+		-- q( ),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63332),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2215), "Campaign: War-Captain's Woe"
+		q(63251),	-- Shared
+		-- q( ),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63296),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2198), "Campaign: Darkwarren Finality"
+		q(63241),	-- Shared
+		-- q( ),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63276),	-- Night Fae
+		-- q( ),	-- Venthyr
+		-- Completing mi(2249), "Campaign: The Final Puzzle"
+		q(63246),	-- Shared
+		-- q( ),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63336),	-- Night Fae
+		-- q( ),	-- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)

@@ -124,6 +124,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 43.8, 57.1, 1525 },
 				}),
+				o(354110, {	-- Stoneborn Satchel
+					["questID"] = 60943,
+					["isDaily"] = true,
+					["coord"] = { 80.4, 70.8, 1525 },
+				}),
 				o(354111, {	-- Stoneborn Satchel
 					["questID"] = 60942,
 					["isDaily"] = true,
@@ -133,6 +138,11 @@ _.Zones =
 					["questID"] = 60941,
 					["isDaily"] = true,
 					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354114, {	-- Stoneborn Satchel
+					["questID"] = 60939,
+					["isDaily"] = true,
+					["coord"] = { 76.3, 64.1, 1525 },
 				}),
 				o(354186, {	-- Stoneborn Satchel
 					["questID"] = 60979,

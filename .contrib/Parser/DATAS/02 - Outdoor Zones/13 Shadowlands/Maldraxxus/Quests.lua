@@ -685,7 +685,7 @@ _.Zones =
 				}),
 				q(59206, {	-- Words of the Primus
 					["sourceQuests"] = { 60737 },	-- The Door to the Unknown
-					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["provider"] = { "n", 164545 },	-- Baroness Draka
 					["coord"] = { 39.1, 49.9, 1536 },
 				}),
 				q(59837, {	-- Working For The Living

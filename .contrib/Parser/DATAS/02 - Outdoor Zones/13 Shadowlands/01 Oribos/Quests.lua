@@ -531,6 +531,7 @@ _.Zones =
 						i(179562),	-- Duskwarder Branch
 						i(179517),	-- Duskwarder Censor
 						i(181433),	-- Duskwarder Gavel
+						i(179513),	-- Duskwarder Scimitar
 						i(179532),	-- Duskwarder Scythe
 						i(179604),	-- Duskwarder Shield
 						i(181432),	-- Duskwarder Spellthorn

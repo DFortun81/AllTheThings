@@ -628,7 +628,7 @@ _.Zones =
 						60647,	-- Recovering the Animacones
 						60648,	-- Survivors of Heartwood Grove
 					},
-					["provider"] = { "n", 169686 },	-- Niya
+					["provider"] = { "n", 169868 },	-- Niya
 				}),
 				q(60062, {	-- The Shattered Harp
 					["sourceQuests"] = { 57661 },	-- Silk Shortage
@@ -662,8 +662,7 @@ _.Zones =
 					["coord"] = { 48.0, 24.3, 1565 },
 				}),
 				q(62371, {	-- Tirna Scithe: A Warning Silence
-				--	TODO: verify SQs
-					["sourceQuests"] = { 58723 },	-- The Court of Winter
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 168032 },	-- Flwngyrr
 					["coord"] = { 48.3, 50.5, 1565 },
 					["maps"] = { 1669 },	-- Mists of Tirna Scithe
@@ -761,7 +760,7 @@ _.Zones =
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
-					["provider"] = { "n", 170175 },	-- Featherlight
+					["provider"] = { "n", 170324 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, 1565 },
 				}),
 				q(59656, {	-- Well, Tell the Lady

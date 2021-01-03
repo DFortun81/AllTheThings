@@ -46,7 +46,9 @@ _.Zones =
 							-- TODO: Feels like this is pointless. Getting conduits from literally every source in the game via calling boxes...
 							["description"] = "Can be contained in any of the Calling rewards.",
 							["g"] = {
-								-- guessing any box can reward the same set of conduits
+								-- Gear
+								i(181702),	-- Sanctified Guardian's Signet
+								-- Conduits (maybe remove since it's basically just any Conduit in the game...)
 								i(182105),	-- Astral Protection [Shaman]
 								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
