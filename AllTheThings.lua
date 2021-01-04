@@ -16691,6 +16691,24 @@ app.events.VARIABLES_LOADED = function()
 			-- print("isSkip",cc);
 			return cc;
 		end);
+		local SLCovenantId = C_Covenants.GetActiveCovenantID();
+		-- print("Current Covenant",SLCovenantId);
+		-- Shadowlands Covenant: Kyrian
+		app.SetCustomCollectibility("SL_COV_KYR", function()
+			return SLCovenantId == 1;
+		end);
+		-- Shadowlands Covenant: Venthyr
+		app.SetCustomCollectibility("SL_COV_VEN", function()
+			return SLCovenantId == 2;
+		end);
+		-- Shadowlands Covenant: Night Fae
+		app.SetCustomCollectibility("SL_COV_NFA", function()
+			return SLCovenantId == 3;
+		end);
+		-- Shadowlands Covenant: Necrolord
+		app.SetCustomCollectibility("SL_COV_NEC", function()
+			return SLCovenantId == 4;
+		end);
 
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
