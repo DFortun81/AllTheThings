@@ -4364,13 +4364,20 @@ local function PopulateQuestObject(questObject)
 							if data.itemID and data.itemID == itemID then
 								-- print("Merge cached item")
 								MergeProperties(item, data);
+								if data.g then
+									if not item.g then
+										item.g = {};
+										item.progress = 0;
+										item.total = 0;
+									end
+									MergeObjects(item.g, data.g);
+								end
 							-- cache record is associated with the item
 							else
 								if not item.g then
 									item.g = {};
 									item.progress = 0;
 									item.total = 0;
-									-- item.OnUpdate = OnUpdateForItem;
 								end
 								-- print("Clone cached item")
 								MergeObject(item.g, CloneData(data));
