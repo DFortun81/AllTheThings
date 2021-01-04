@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				q(58623, {	-- A Complete Set
 					["sourceQuests"] = { 59994 },	-- Trust Fall
-					["provider"] = { "n", 166664 },	-- Ta'eran
+					["provider"] = { "n", 166806 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 				}),
 				q(57987, {	-- A Deadly Distraction
@@ -119,7 +119,7 @@ _.Zones =
 						57987,	-- A Deadly Distraction
 						57985,	-- Give Them a Hand
 					},
-					["provider"] = { "n", 170018 },	-- Secutor Mevix
+					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
 				}),
 				q(62605, {	-- Broker Business
@@ -510,7 +510,7 @@ _.Zones =
 						60181,	-- Trench Warfare
 						60179,	-- Memory of Honor
 					},
-					["provider"] = { "n", 159065 },	-- Baroness Draka
+					["provider"] = { "n", 167535 },	-- Chosen Scrapper
 				}),
 				q(57316, {	-- The Ladder
 					["sourceQuests"] = { 58900 },	-- A Sure Bet
@@ -548,7 +548,7 @@ _.Zones =
 				}),
 				q(57984, {	-- The Ones in Charge
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-					["provider"] = { "n", 160211 },	-- Aspirant Thales
+					["provider"] = { "n", 161060 },	-- Aspirant Survivor
 					["g"] = {
 						i(175477),	-- Deceitful Agent's Wristwraps
 						i(175475),	-- Cruel Executioner's Wristwraps
