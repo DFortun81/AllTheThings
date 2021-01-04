@@ -12,11 +12,11 @@ _.Zones =
 				n(-901, {	-- Covenant Callings
 					q(60424, {	-- A Call to Ardenweald
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.4, 42.3, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60434, {	-- A Call to Revendreth

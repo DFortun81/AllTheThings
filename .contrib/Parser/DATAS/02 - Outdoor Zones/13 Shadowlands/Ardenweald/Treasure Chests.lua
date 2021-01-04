@@ -9,13 +9,6 @@ _.Zones =
 			n(-212, {	-- Treasure Chest
 			--	TODO: figure out if Faerie Stashes are daily, repeatable (like if they pop back up on your map after a certain interval), or one-time only
 			--	if they're repeatable/daily, figure out if the loot is static or if they should be put in a Rewards/Common Box Drop header or something under this section?
-				--[[
-				o(, {	-- Decayed Husk
-					["coord"] = { 42.4, 31.2, 1565 },
-					["questID"] = 60715,
-					["repeatable"] = true,
-				}),
-				]]--			|cffcc33ffThe demons are taking over this island, you may want to leave.|r
 				o(353306, {	-- Decayed Husk
 					["questID"] = 60672,
 					["isDaily"] = true,
@@ -26,17 +19,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 72.8, 28.9, 1565 },
 				}),
-				o(1278968760, {	-- Decayed Husk
-				--	TODO: verify objectID when data is available
+				o(353326, {	-- Decayed Husk
+					["questID"] = 60711,
+					["isDaily"] = true,
+					["coord"] = { 66.6, 53.2, 1565 },
+				}),
+				o(353327, {	-- Decayed Husk
 					["description"] = "The cave entrance is at |cFFFFFFFF54.0, 76.3|r.",
 					["questID"] = 60710,
 					["isDaily"] = true,
 					["coord"] = { 53.3, 78.4, 1565 },
 				}),
-				o(1278968761, {	-- Decayed Husk
-					["questID"] = 60711,
+				o(1278968760, {	-- Decayed Husk
+					["questID"] = 60715,
 					["isDaily"] = true,
-					["coord"] = { 66.6, 53.2, 1565 },
+					["coord"] = { 42.4, 31.2, 1565 },
 				}),
 				o(353233, {	-- Enchanted Chest
 				--	TODO: looks like this one has additional coordinates, add as they are confirmed
