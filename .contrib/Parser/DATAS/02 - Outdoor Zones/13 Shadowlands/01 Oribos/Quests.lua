@@ -388,28 +388,29 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
+
+				-- Zone Choice Quests
 				q(62159, {	-- Aiding the Shadowlands
+					["description"] = "Offered prior to completing any Zone Meta-quest.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
 				q(63208, {	-- The Next Step
-				--	TODO: not sure where to put this
-				--	After completing your first zone in Skip mode
+					["description"] = "Offered after completing 1 Zone Meta-quest.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
 				q(63209, {	-- Furthering the Purpose
-				--	TODO: not sure where to put this
-				--	After completing your second zone in Skip mode
+					["description"] = "Offered after completing 2 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
 				q(63210, {	-- The Last Step
-				--	after completing your third zone in Skip mode
+					["description"] = "Offered after completing 3 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
@@ -647,7 +648,7 @@ _.Zones =
 					["lvl"] = { 48, 59 },
 				}),
 
-				-- Covenant Travel Quests
+				-- Covenant Travel Quests @ 60
 				-- Ardenweald
 				-- Bastion
 				q(63211, {	-- Report to Adrestes
@@ -685,9 +686,6 @@ _.Zones =
 					},	
 				}),
 				-- Revendreth
-
-				-- From Revendreth
-				-- Choosing Your Covenant
 				
 				--[[ quest was in beta but still has not been seen in game
 				q(60286, {	-- A Token of Our Admiration
