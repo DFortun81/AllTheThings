@@ -375,6 +375,7 @@ i(173785);	-- Hidden Banana
 i(173784);	-- Hoppy Mead
 i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
+i(184043);	-- Lost Scroll
 i(173781);	-- Lost Watermelon
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory

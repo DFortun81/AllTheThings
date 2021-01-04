@@ -372,7 +372,7 @@ _.Zones =
 						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 					}),
 					q(63002, {	-- Dangerous to Go Alone
-					--	TODO: verify coordinates and SQs for this version
+					--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
 					--	["sourceQuests"] = {  },	-- 
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
@@ -443,13 +443,18 @@ _.Zones =
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },
+						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
 					}),
 					q(58797, {	-- Forged by Trial
 					--	Unlocks Soulbind: Kleia (344757)
+					--	TODO: verify follower
 						["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
 						["provider"] = { "n", 163650 },	-- Kleia
 						["coord"] = { 51.6, 47.7, 1707 },
+						["g"] = {
+						--	follower is unlocked even if you haven't built the command table yet
+							follower(1260),	-- Kleia
+						},
 					}),
 					q(58183, {	-- Friend to the Forgelite
 						["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
@@ -462,12 +467,12 @@ _.Zones =
 						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
 					q(58816, {	-- Getting Backstage
-						["provider"] = { "n", 162679 },	-- Willowblossom
+						-- no coords, is your 'pet'
 						["sourceQuests"] = {
 							58856,	-- Who Are You Fooling?
 							58832,	-- Trinkle Trinkle Little Twerp
 						},
-						-- no coords, is your 'pet'
+						["provider"] = { "n", 162679 },	-- Willowblossom
 					}),
 					q(58938, {	-- Gorm Ruin Everything
 						-- ["provider"] = { "n",  },	-- Willowblossom
@@ -529,7 +534,7 @@ _.Zones =
 					q(58951, {	-- Lakeshire's Last Stand
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
 						["provider"] = { "n", 163111 },	-- Magistrate Solomon
-						["coord"] = { 28.9, 41.1, 49 },
+						["coord"] = { 28.9, 41.1, 49 },	-- Redridge Mountains
 					}),
 					q(58565, {	-- Land of Light
 						["sourceQuests"] = { 58564 },	-- Sins of the Past
@@ -547,7 +552,7 @@ _.Zones =
 							58949,	-- Millie's Garden
 						},
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },
+						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
 					}),
 					q(58775, {	-- Meet the Queen
 						["description"] = "Requires Renown 17.",
@@ -557,12 +562,12 @@ _.Zones =
 					q(58949, {	-- Millie's Garden
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },
+						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
 					}),
 					q(58789, {	-- Misguiding Mentors
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
 						["provider"] = { "n", 162544 },	-- Achillon
-						["coord"] = { 33.2, 26.2, 1533 },
+						["coord"] = { 33.2, 26.2, 1533 },	-- Bastion
 						["g"] = {
 							i(174297),	-- Selfless Collector's Greatcloak
 							i(177058),	-- Selfless Bearer's Cloak
@@ -681,14 +686,6 @@ _.Zones =
 						["sourceQuests"] = { 58939 },	-- The Blue Seed
 						-- no coords, is your 'pet'
 					}),
-					q(63068, {	-- Settling Disputes
-					--	TODO: is altQuests necessary or do they complete each other?
-						["description"] = "Requires Renown 4.",
-						["isBreadcrumb"] = true,
-						["altQuests"] = { 59674 },    -- A Friendly Rivalry
-						["provider"] = { "n", 160389 },    -- Koros
-						["coord"] = { 43.8, 40.7, 1707 },
-					}),
 					q(58561, {	-- Shards of the Countess
 						["sourceQuests"] = {
 							58558,	-- Overhead Intelligence
@@ -782,7 +779,7 @@ _.Zones =
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
 						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 51.6, 47.7, 1707 },
+						["coord"] = { 51.6, 47.7, 1707 },	-- Archon's Rise
 					}),
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
@@ -806,7 +803,8 @@ _.Zones =
 					q(58798, {	-- The Spires of Ascension
 						["sourceQuests"] = { 58797 },	-- Forged by Trial
 						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 59.9, 36.2, 1708 },
+						["coord"] = { 59.9, 36.2, 1708 },	-- Sanctum of Binding
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(58563, {	-- Through Glass
 						["sourceQuests"] = {
@@ -825,7 +823,7 @@ _.Zones =
 							58789,	-- Misguiding Mentors
 						},
 						["provider"] = { "n", 162542 },	-- Kleia
-						["coord"] = { 32.1, 21.2, 1533 },
+						["coord"] = { 32.1, 21.2, 1533 },	-- Bastion
 					}),
 					q(58787, {	-- Trial of Ascension
 						["description"] = "Requires Renown 5.",
@@ -889,10 +887,32 @@ _.Zones =
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros
 								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+								--	follower is granted upon accepting the quest
+									follower(1259),	-- Pelagos
+								},
+							}),
+							q(61861, {	-- Adventurer: Sika
+								["description"] = "Requires Renown 12.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },
+								["g"] = {
+									follower(1272),	-- Sika
+								},
 							}),
 							q(57899, {	-- More Work?
 								["provider"] = { "n", 167745 },	-- Haephus
 								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
+							}),
+							q(63068, {	-- Settling Disputes
+							--	TODO: is altQuests necessary or do they complete each other?
+							--	quest is unavailable until you build your command table
+								["sourceQuests"] = { 57899 },	-- More Work?
+								["isBreadcrumb"] = true,
+								["description"] = "Requires Renown 4.",
+								["altQuests"] = { 59674 },    -- A Friendly Rivalry
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },
 							}),
 						}),
 						-- TODO: create headers for these
@@ -937,14 +957,6 @@ _.Zones =
 							["description"] = "Becomes available at Renown 4",
 							["g"] = {
 								follower(1271),	-- Pelodis
-							},
-						}),
-						q(61861, {	-- Adventurer: Sika
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 12",
-							["g"] = {
-								follower(1272),	-- Sika
 							},
 						}),
 					}),
