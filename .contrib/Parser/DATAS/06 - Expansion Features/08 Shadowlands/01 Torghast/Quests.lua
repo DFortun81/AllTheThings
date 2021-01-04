@@ -50,6 +50,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(62797, {	-- The Vessels of Metal
+					["requireSkill"] = BLACKSMITHING,
+					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Blacksmithing",
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
 				q(62799, {	-- The Vessels of the Thread
 					["requireSkill"] = TAILORING,
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
@@ -60,12 +66,15 @@ _.ExpansionFeatures =
 				-- Champion Unlocks
 				-- TODO: move to covenant files -- imo keep them in torghast file
 				q(61223, {	-- Champion: Ayeleth the Deprived [Venthyr]
+					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 61259 },	-- Ayeleth's Hunger
 					["provider"] = { "n", 171918 },	-- Ayeleth
 					["g"] = {
 						follower(1220),	-- Ayeleth
 					},
 				}),
 				q(61421, {	-- Champion: Blisswing [Night Fae]
+					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61427 },	-- Blisswing's Rescue
 					["provider"] = { "n", 172244 },	-- Blisswing
 					["g"] = {
@@ -73,6 +82,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61424, {	-- Champion: Chalkyth [Night Fae]
+					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61430 },	-- Chalkyth's Saber
 					["provider"] = { "n", 172240 },	-- Chalkyth
 					["g"] = {
@@ -88,6 +98,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61218, {	-- Champion: Dug Gravewell [Venthyr]
+					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
 					["provider"] = { "n", 171869 },	-- Dug Gravewell
 					["g"] = {
@@ -95,19 +106,24 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
-					["sourceQuests"] = { 60136 },	-- Into Torghast
+					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 173397 },	-- Gorgelimb
 					["g"] = {
-					--	follower(1306),	-- Gorgelimb (doesn't appear to be working for now?)
+						follower(1306),	-- Gorgelimb
 					},
 				}),
 				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
+					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
 					},
 				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
+					-- ["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
@@ -121,18 +137,24 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61959, {	-- Champion: Talethi [Necrolord]
+					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 173399 },	-- Talethi
 					["g"] = {
 						follower(1307),	-- Talethi
 					},
 				}),
 				q(61317, {	-- Champion: Teliah [Kyrian]
+					-- ["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 172006 },	-- Teliah
 					["g"] = {
 						follower(1221),	-- Teliah
 					},
 				}),
 				q(61426, {	-- Champion: Yira'lya [Night Fae]
+					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 172243 },	-- Yira'lya
 					["g"] = {
 						follower(1282)	-- Yira'lya
@@ -168,70 +190,92 @@ _.ExpansionFeatures =
 				
 				-- Bonus Quests
 				-- TODO: are the ones that lead to the follower quest actually repeatable?
+				-- they appear to be, since I have them marked as incomplete yet have the corresponding follower
 				q(61259, {	-- Ayeleth's Hunger
 					["repeatable"] = true,
 					["provider"] = { "n", 171920 },	-- Ayeleth
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61427, {	-- Blisswing's Rescue
+					["repeatable"] = true,
 					["provider"] = { "n", 172244 },	-- Blisswing
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61430, {	-- Chalkyth's Saber
+					["repeatable"] = true,
 					["provider"] = { "n", 172240 },	-- Chalkyth
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61228, {	-- Dug's Missing Shovel
+					["repeatable"] = true,
 					["provider"] = { "n", 171867 },	-- Dug Gravewell
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59340, {	-- Gallath's Bell
 					["repeatable"] = true,
 					["provider"] = { "n", 152418 },	-- Gallath
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59777, {	-- Help Calix find Amethia
 					["repeatable"] = true,
 					["provider"] = { "n", 166147 },	-- Calix
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59775, {	-- Help Indigo find Penthia
 					["repeatable"] = true,
 					["provider"] = { "n", 166123 },	-- Indigo
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59779, {	-- Help Moriaz find Buttons
 					["repeatable"] = true,
 					["provider"] = { "n", 166151 },	-- Moriaz the Red
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59778, {	-- Help Sawn find Varrik
 					["repeatable"] = true,
 					["provider"] = { "n", 166148 },	-- Sawn
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59346, {	-- Indri's Flute
 					["repeatable"] = true,
 					["provider"] = { "n", 157426 },	-- Indri the Treesinger
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61322, {	-- Kythekios' Memory Stone
-					["repeatable"] = true,	-- ?????
+					["repeatable"] = true,
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(60573, {	-- Meatball's Revenge
 					["repeatable"] = true,
 					["provider"] = { "n", 168979 },	-- Meatball
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59345, {	-- Phantoriax's Warsword
 					["repeatable"] = true,
 					["provider"] = { "n", 157432 },	-- Indigo
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59344, {	-- Renavyth's Medallion
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(62226, {	-- Talethi's Desire
 				--	TODO: add provider.  there are multiple Talethi NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
 					["repeatable"] = true,
 				--	["provider"] = { "n",  },	-- Talethi
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61330, {	-- Teliah's Stolen Spear
 				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
 					["repeatable"] = true,
 				--	["provider"] = { "n",  },	-- Teliah
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(62993, {	-- The Riddle of Death
+					["repeatable"] = true,
 					["provider"] = { "n", 175648 },	-- Croman
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				
 				--------------
@@ -271,7 +315,6 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Coldheart Interstitia, Layer 8",
 				}),
-
 				
 				-- Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
@@ -306,7 +349,6 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Fracture Chambers, Layer 8",
 				}),
-
 				
 				-- Mort'regar
 				q(58204, {	-- Mort'regar, Layer 1
@@ -340,8 +382,7 @@ _.ExpansionFeatures =
 				q(61978, {	-- Mort'regar, Layer 8
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 8",
-				}),
-				
+				}),				
 				
 				-- Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1
@@ -368,6 +409,14 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Skoldus Hall, Layer 6",
 				}),
+				-- q(, {	-- Skoldus Hall, Layer 7
+				-- 	["isWeekly"] = true,
+				-- 	["title"] = "Skoldus Hall, Layer 7",
+				-- }),
+				-- q(, {	-- Skoldus Hall, Layer 8
+				-- 	["isWeekly"] = true,
+				-- 	["title"] = "Skoldus Hall, Layer 8",
+				-- }),
 				
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1

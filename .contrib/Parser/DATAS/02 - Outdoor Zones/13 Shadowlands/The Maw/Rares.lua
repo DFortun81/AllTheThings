@@ -229,20 +229,12 @@ _.Zones =
 				n(170303, {	-- Exos, Herald of Domination
 					["questID"] = 62260,
 					["isDaily"] = true,
-					["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
+					["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
 					["coord"] = { 21.0, 70.2, 1543 },
 					["description"] = "Summoned using |cff0070ddDomination's Calling|r",
 					["g"] = {
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-						}),
-						i(182329, {	-- Domination's Calling
-							["description"] = "This is NOT consumed upon use",
-							["cost"] = {
-								{ "i", 182328, 1 },	-- Dominion Etching: Grief
-								{ "i", 182327, 1 },	-- Dominion Etching: Loss
-								{ "i", 182326, 1 },	-- Dominion Etching: Pain
-							},
 						}),
 						i(184108),	-- Vorpal Amulet
 					}
@@ -573,6 +565,14 @@ _.Zones =
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+					},
+				}),
+				i(182329, {	-- Domination's Calling
+					["description"] = "This is NOT consumed upon use.",
+					["cost"] = {
+						{ "i", 182328, 1 },	-- Dominion Etching: Grief
+						{ "i", 182327, 1 },	-- Dominion Etching: Loss
+						{ "i", 182326, 1 },	-- Dominion Etching: Pain
 					},
 				}),
 			}),

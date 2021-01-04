@@ -212,11 +212,6 @@ _.Zones =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
-				q(63214, {	-- Report to Moonberry
-					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },
-				}),
 				q(61715, {	-- Request of the Highlord
 					["sourceQuests"] = { 59206 },	-- Words of the Primus
 					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
@@ -263,11 +258,6 @@ _.Zones =
 						i(183224),	-- Memory of a Deep Focus Draught
 						i(183269),	-- Memory of the Triune Ward
 					},
-				}),
-				q(61475, {	-- The Heart of the Forest
-					["sourceQuests"] = { 63214 },	-- Report to Moonberry
-					["provider"] = { "n", 171795 },	-- Lady Moonberry
-					["coord"] = { 39.7, 61.0, 1670 },
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning
@@ -402,18 +392,24 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(63209, {	-- Furthering the Purpose
 					["description"] = "Offered after completing 2 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
+					["sourceQuests"] = { 63208 },	-- The Next Step
 				}),
 				q(63210, {	-- The Last Step
 					["description"] = "Offered after completing 3 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
+					["sourceQuests"] = { 63209 },	-- Furthering the Purpose
 				}),
 				
 				-- Zone Select Breadcrumbs
@@ -650,6 +646,24 @@ _.Zones =
 
 				-- Covenant Travel Quests @ 60
 				-- Ardenweald
+				q(63214, {	-- Report to Moonberry
+					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+					["description"] = "|cFFA330C9Night Fae Covenant|r only.",
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
+					["lvl"] = { 60 },
+				}),
+				q(61475, {	-- The Heart of the Forest
+					["sourceQuests"] = {
+						-- TODO: confirm
+						-- 57878,	-- Choosing Your Purpose [Story]
+						63214,	-- Report to Moonberry [Skip]
+					},
+					["description"] = "|cFFA330C9Night Fae Covenant|r only.",
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["coord"] = { 39.7, 61.0, 1670 },	-- Oribos
+					["lvl"] = { 60 },
+				}),
 				-- Bastion
 				q(63211, {	-- Report to Adrestes
 					-- TODO: not 62023... that's a HQT or doesn't exist anymore? prob different for Story/Skip
@@ -661,15 +675,18 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(60491, {	-- Among the Kyrian
-					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
-					["coord"] = { 36.1, 64.1, 1670 },
 					["sourceQuests"] = { 
 						57878,	-- Choosing Your Purpose [Story]
 						63211,	-- Report to Adrestes [Skip]
 					 },
+					["description"] = "|cFF516bfeKyrian Covenant|r only.",
+					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+					["coord"] = { 36.1, 64.1, 1670 },	-- Oribos
+					["lvl"] = { 60 },
 				}),
 				-- Maldraxxus
 				q(63212, {	-- Report to Mevix
+					-- ["sourceQuests"] = { },	-- TODO
 					["customCollect"] = "SL_SKIP",
 					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -678,15 +695,18 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(58609, {	-- Taking The Seat
-					["provider"] = { "n", 171821 },	-- Baroness Draka
-					["coord"] = { 42.9, 74.1, 1670 },
 					["sourceQuests"] = { 
 						57878,	-- Choosing Your Purpose [Story]
 						63212,	-- Report to Mevix [Skip]
-					},	
+					},
+					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
+					["provider"] = { "n", 171821 },	-- Baroness Draka
+					["coord"] = { 42.9, 74.1, 1670 },	-- Oribos
+					["lvl"] = { 60 },
 				}),
 				-- Revendreth
 				
+
 				--[[ quest was in beta but still has not been seen in game
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn

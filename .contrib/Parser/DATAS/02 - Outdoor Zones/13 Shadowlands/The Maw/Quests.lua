@@ -311,10 +311,18 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
-				-- TODO: Rule 6 Footnote
+				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
-					-- maybe Rule 6 footnote instead, or is that breadcrumb? i dont remember...
-					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["sourceQuests"] = {
+						60284,	-- Rule 5: Be Audacious
+						63060,	-- Rule 6 Footnote: Don't Forget Anything
+					},
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
 					["coord"] = { 56.9, 57.5, 1543 },
