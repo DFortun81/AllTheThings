@@ -3077,7 +3077,7 @@ _.HiddenQuestTriggers =
 		-- Completing mi(2248), "Campaign: Big Shiny and Friends"
 		q(63245),	-- Shared
 		-- q( ),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63334),	-- Necrolord
 		q(63332),	-- Night Fae
 		-- q( ),	-- Venthyr
 		-- Completing mi(2215), "Campaign: War-Captain's Woe"
