@@ -9,6 +9,7 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(180163),	-- Blackthorn Harvester
 					i(180142),	-- Deadstone Hatchet
 					i(180153),	-- Drustwrought Executioner
 					i(180162),	-- Drustwrought Scythe
