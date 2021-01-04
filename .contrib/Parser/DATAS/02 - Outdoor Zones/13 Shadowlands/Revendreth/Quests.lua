@@ -28,6 +28,13 @@ _.Zones =
 						i(175435),	-- Stoneforged Spaulders
 					},
 				}),
+				q(62046, {	-- A New Pack
+					["sourceQuests"] = { 62045 },	-- Ready for More
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182589),	-- Loyal Gorger (MOUNT!)
+					}
+				}),
 				q(58654, {	-- A Plea to the Harvesters
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
@@ -253,6 +260,13 @@ _.Zones =
 						i(175430),	-- Stoneforged Legguards
 					},
 				}),
+				q(61844, {	-- Hungry Hungry Gorger
+					["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182593),	-- Sinrunner Carving
+					}
+				}),
 				q(57929, {	-- Hunting an Inquisitor
 					["sourceQuests"] = {	-- didn't require turning in "Atonement Crypt Key"
 						60128,	-- Ready to Serve
@@ -392,6 +406,13 @@ _.Zones =
 						i(175424),	-- Stoneforged Grips
 					},
 				}),
+				q(61839, {	-- Nipping at the Undergrowth
+					["description"] = "Becomes available in the Endmire north of Darkhaven, after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182590),	-- Vinewormed Coin Pouch
+					}
+				}),
 				q(60509, {	-- Not My Job
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 158057 },	-- Rendle
@@ -424,6 +445,15 @@ _.Zones =
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
 					["provider"] = { "n", 158615 },	-- Vorpalia
 					["coord"] = { 42.8, 43.5, 1525 },
+				}),
+				q(62045, {	-- Ready for More
+					["sourceQuests"] = { 62044 },	-- Standing Toe To Toe
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182586, {	-- A Venthyr Arm Holding a Cudgel
+							i(182587) -- Gorger Slobbered Cudgel
+						}),
+					}
 				}),
 				q(60128, {	-- Ready to Serve
 					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
@@ -557,6 +587,13 @@ _.Zones =
 				q(58327, {	-- Snacks for Stonehead
 					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 					["coord"] = { 39.2, 65.2, 1525 },
+				}),
+				q(62044, {	-- Standing Toe To Toe
+					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182594),	-- A Sparkling Ruby Necklace
+					}
 				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -730,6 +767,20 @@ _.Zones =
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
 					["provider"] = { "n", 157639 },	-- Theotar
 					["coord"] = { 38.0, 60.7, 1525 },
+				}),
+				q(61840, {	-- Vineroot on the Menu
+					["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182591),	-- Vinecovered Infused Rubies
+					}
+				}),
+				q(61842, {	-- Vineroot Will Not Do
+					["sourceQuests"] = { 61840 },	-- Vineroot on the Menu
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182592),	-- Infused Endmire Fruit
+					}
 				}),
 				q(60277, {	-- WANTED: Aggregate of Doom
 					["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom

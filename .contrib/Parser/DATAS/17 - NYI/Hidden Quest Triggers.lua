@@ -3322,6 +3322,8 @@ _.HiddenQuestTriggers =
 		q(60845),	-- triggered when looting "Bottle of Redelav Wine" (for Favor: Bottle of Redelav Wine)
 		q(60853),	-- triggered when looting "Portrait of the Sire" (for Favor: Portrait of the Sire)
 		q(60846),	-- triggered when looting "Dredger's Toolkit" (for Favor: Dredger's Toolkit)
+		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
+		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
