@@ -1384,9 +1384,6 @@ _.Zones =
 						["repeatable"] = true,	-- ??
 						["questID"] = 61691,
 						["coord"] = { 51.7, 32.3, 1565 },
-						["g"] = {
-							i(181458),	-- Queensguard's Vigil
-						},
 					}),
 				}),
 				n(VENDORS, {

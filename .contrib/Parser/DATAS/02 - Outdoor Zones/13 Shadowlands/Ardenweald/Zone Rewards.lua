@@ -43,6 +43,7 @@ _.Zones =
 					i(181424),	-- Gormhusk Waistwrap
 					i(181428),	-- Gormhusk Wristguards
 					i(179549),	-- Nightwillow Cudgel
+					i(181458),	-- Queensguard's Vigil
 					i(181406),	-- Runetender Boots
 					i(181429),	-- Runetender Bracers
 					i(181425),	-- Runtender Cinch
