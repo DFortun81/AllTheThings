@@ -788,6 +788,9 @@ _.Zones =
 						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 						["g"] = {
 							i(180721),	-- Enchanted Dreamlight Runestag
+							i(182165, {	-- Ardenmoth Soul
+								["questID"] = 62422,
+							}),
 						},
 					}),
 				}),

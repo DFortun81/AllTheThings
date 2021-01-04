@@ -386,6 +386,7 @@ _.Achievements =
 				crit(3),		-- Complete Hunt: Death Elemental
 				crit(4),		-- Complete Hunt: Winged Soul Eaters
 			}),
+			ach(14733),		-- In the Hot Seat
 			ach(14660, {	-- It's About Sending a Message (all criteria below)
 				ach(14659),		-- Handling His Henchmen (5 of the criteria below)
 				crit(1),		-- Drifting Sorrow
