@@ -3061,7 +3061,7 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Kyrian
 		q(63274),	-- Necrolord
 		q(63272),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63275),	-- Venthyr
 		-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs"
 		q(63255),	-- Shared
 		-- q( ),	-- Kyrian
