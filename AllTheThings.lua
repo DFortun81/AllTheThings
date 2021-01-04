@@ -8006,8 +8006,7 @@ app.CollectibleAsQuest = function(t)
 	-- must not be repeatable, unless considering repeatable quests as trackable
 	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
 	-- must match custom collectibility if set as well
-	and (not t.customCollect or
-		(app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") or app.CustomCollects[t.customCollect]))
+	and app.CheckCustomCollects(t)
 	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 	-- TODO: revisit if party sync option becomes a thing
 	and ((not t.isBreadcrumb and not t.DisablePartySync) or
@@ -9664,6 +9663,17 @@ function app.SetCustomCollectibility(key, func)
 		SetDataMember("CustomCollectibility", cc);
 	end
 end
+-- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
+app.CheckCustomCollects = function(t)
+	-- no customCollect, or Account/Debug mode then disregard
+	if not t.customCollect or app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") then return true; end
+	for k,c in ipairs(t.customCollect) do
+		if not app.CustomCollects[c] then
+			return false;
+		end
+	end
+	return true;
+end
 
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
@@ -11287,9 +11297,16 @@ RowOnEnter = function (self)
 
 		-- Show info about if this Thing cannot be collected due to a custom collectibility
 		-- restriction on the Thing which this character does not meet
-		if reference.customCollect and not app.CustomCollects[reference.customCollect] then
-			local customCollectEx = L["CUSTOM_COLLECTS_REASONS"][reference.customCollect];
-			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "");
+		if reference.customCollect then
+			local customCollectEx;
+			for i,c in ipairs(reference.customCollect) do
+				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
+				if not app.CustomCollects[c] then
+					GameTooltip:AddDoubleLine("|cffc20000Requires:|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+				else
+					GameTooltip:AddDoubleLine("Requires: " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+				end
+			end
 		end
 
 		-- Show Quest Prereqs
@@ -16693,21 +16710,22 @@ app.events.VARIABLES_LOADED = function()
 		end);
 		local SLCovenantId = C_Covenants.GetActiveCovenantID();
 		-- print("Current Covenant",SLCovenantId);
+		-- Show all Covenants if not yet selected
 		-- Shadowlands Covenant: Kyrian
 		app.SetCustomCollectibility("SL_COV_KYR", function()
-			return SLCovenantId == 1;
+			return SLCovenantId == 1 or SLCovenantId == 0;
 		end);
 		-- Shadowlands Covenant: Venthyr
 		app.SetCustomCollectibility("SL_COV_VEN", function()
-			return SLCovenantId == 2;
+			return SLCovenantId == 2 or SLCovenantId == 0;
 		end);
 		-- Shadowlands Covenant: Night Fae
 		app.SetCustomCollectibility("SL_COV_NFA", function()
-			return SLCovenantId == 3;
+			return SLCovenantId == 3 or SLCovenantId == 0;
 		end);
 		-- Shadowlands Covenant: Necrolord
 		app.SetCustomCollectibility("SL_COV_NEC", function()
-			return SLCovenantId == 4;
+			return SLCovenantId == 4 or SLCovenantId == 0;
 		end);
 
 		-- finally can say the app is ready

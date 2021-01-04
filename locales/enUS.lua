@@ -4600,8 +4600,8 @@ app.L = {
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
-		["NPE"] = { "New Player Experience", "Only a New Character can Collect this" },
-		["SL_SKIP"] = { "Shadowlands Skip", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
+		["NPE"] = { "|cff5bc41dNew Player Experience|r", "Only a New Character can Collect this" },
+		["SL_SKIP"] = { "|cff76879cShadowlands Skip|r", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
 		["SL_COV_KYR"] = { "|cFF516bfeKyrian Covenant|r" },
 		["SL_COV_NEC"] = { "|cFF40bf40Necrolord Covenant|r" },
 		["SL_COV_NFA"] = { "|cFFA330C9Night Fae Covenant|r" },

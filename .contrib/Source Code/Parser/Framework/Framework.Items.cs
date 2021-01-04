@@ -295,7 +295,6 @@ namespace ATT
                     // String Data Type Fields
                     case "name":
                     case "description":
-                    case "customCollect":
                         {
                             item[field] = ATT.Export.ToString(value);
                             break;
@@ -380,6 +379,7 @@ namespace ATT
                         }
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
+                    case "customCollect":
                     case "timeline":
                         {
                             Objects.MergeStringArrayData(item, field, value);

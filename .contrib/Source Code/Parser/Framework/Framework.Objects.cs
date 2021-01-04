@@ -1347,7 +1347,6 @@ namespace ATT
                     case "description":
                     case "title":
                     case "order":
-                    case "customCollect":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
@@ -1482,6 +1481,7 @@ namespace ATT
                         }
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
+                    case "customCollect":
                     case "timeline":
                         {
                             MergeStringArrayData(item, field, value);
@@ -2216,7 +2216,7 @@ namespace ATT
 
                 if (found)
                 {
-                    Trace.WriteLine("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    //Trace.WriteLine("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
                     return list;
                 }
 

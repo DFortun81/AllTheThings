@@ -385,6 +385,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
+					-- ["isBreadcrumb"] = true,	-- TODO: probably able to skip picking up any Zone-Select Quests by just flying away...
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
 				q(63208, {	-- The Next Step
@@ -392,6 +393,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
@@ -400,6 +402,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 63208 },	-- The Next Step
 				}),
@@ -408,6 +411,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
+					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 63209 },	-- Furthering the Purpose
 				}),
@@ -453,7 +457,7 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
 				q(63036, {	-- Restoring Balance [Night Fae]
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- SL Skip Character + Night Fae
 					["description"] = "Provided to a character which is aligned with the Night Fae Covenant",
 					["sourceQuests"] = { 62277 },	-- Ardenweald
 					["isBreadcrumb"] = true,
@@ -470,7 +474,7 @@ _.Zones =
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
 				q(63034, {	-- The Elysian Fields [Kyrian]
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- SL Skip Character + Kyrian
 					["description"] = "Provided to a character which is aligned with the Kyrian Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
@@ -487,7 +491,7 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
 				q(63035, {	-- A Fresh Blade [Necrolord]
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- SL Skip Character + Necrolord
 					["description"] = "Provided to a character which is aligned with the Necrolord Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
@@ -504,7 +508,7 @@ _.Zones =
 					["sourceQuests"] = { 62279 },	-- Revendreth
 				}),
 				q(63037, {	-- Dark Aspirations [Venthyr]
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["customCollect"] = { "SL_SKIP", "SL_COV_VEN", },	-- SL Skip Character + Venthyr
 					["description"] = "Provided to a character which is aligned with the Venthyr Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
@@ -648,7 +652,9 @@ _.Zones =
 				-- Ardenweald
 				q(63214, {	-- Report to Moonberry
 					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
-					["description"] = "|cFFA330C9Night Fae Covenant|r only.",
+					-- TODO: is this not a Skip-only quest?
+					-- ["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- Skip + Night Fae
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 					["lvl"] = { 60 },
@@ -659,7 +665,7 @@ _.Zones =
 						-- 57878,	-- Choosing Your Purpose [Story]
 						63214,	-- Report to Moonberry [Skip]
 					},
-					["description"] = "|cFFA330C9Night Fae Covenant|r only.",
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["provider"] = { "n", 171795 },	-- Lady Moonberry
 					["coord"] = { 39.7, 61.0, 1670 },	-- Oribos
 					["lvl"] = { 60 },
@@ -668,8 +674,7 @@ _.Zones =
 				q(63211, {	-- Report to Adrestes
 					-- TODO: not 62023... that's a HQT or doesn't exist anymore? prob different for Story/Skip
 					-- ["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
-					["customCollect"] = "SL_SKIP",
-					["description"] = "|cFF516bfeKyrian Covenant|r only.",
+					["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- Skip + Kyrian
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 					["lvl"] = { 60 },
@@ -679,7 +684,7 @@ _.Zones =
 						57878,	-- Choosing Your Purpose [Story]
 						63211,	-- Report to Adrestes [Skip]
 					 },
-					["description"] = "|cFF516bfeKyrian Covenant|r only.",
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, 1670 },	-- Oribos
 					["lvl"] = { 60 },
@@ -687,8 +692,7 @@ _.Zones =
 				-- Maldraxxus
 				q(63212, {	-- Report to Mevix
 					-- ["sourceQuests"] = { },	-- TODO
-					["customCollect"] = "SL_SKIP",
-					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
+					["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- Skip + Necrolord
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
@@ -699,7 +703,7 @@ _.Zones =
 						57878,	-- Choosing Your Purpose [Story]
 						63212,	-- Report to Mevix [Skip]
 					},
-					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },	-- Oribos
 					["lvl"] = { 60 },
