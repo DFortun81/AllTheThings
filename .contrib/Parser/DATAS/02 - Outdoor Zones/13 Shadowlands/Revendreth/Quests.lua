@@ -414,6 +414,7 @@ _.Zones =
 					}
 				}),
 				q(60509, {	-- Not My Job
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 158057 },	-- Rendle
 					["coord"] = { 67.5, 68.5, 1525 },
