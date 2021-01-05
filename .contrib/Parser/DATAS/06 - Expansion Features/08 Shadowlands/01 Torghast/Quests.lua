@@ -105,6 +105,14 @@ _.ExpansionFeatures =
 						follower(1214),	-- Dug Gravewell
 					},
 				}),
+				q(61422, {	-- Champion: Duskleaf [Night Fae]
+					-- found in Twisting Corridors
+					["sourceQuests"] = { 61428 },	-- Duskleaf's Revenge
+					["provider"] = { "n", 172259 },	-- Duskleaf
+					["g"] = {
+						follower(1278)	-- Duskleaf
+					},
+				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
 					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					-- ["sourceQuests"] = { },	-- TODO
@@ -209,6 +217,11 @@ _.ExpansionFeatures =
 				q(61228, {	-- Dug's Missing Shovel
 					["repeatable"] = true,
 					["provider"] = { "n", 171867 },	-- Dug Gravewell
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+				}),
+				q(61428, {	-- Duskleaf's Revenge
+					["repeatable"] = true,
+					["provider"] = { "n", 172259 },	-- Duskleaf
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59340, {	-- Gallath's Bell

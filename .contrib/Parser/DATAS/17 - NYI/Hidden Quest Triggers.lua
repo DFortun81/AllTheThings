@@ -3500,6 +3500,7 @@ _.HiddenQuestTriggers =
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
 		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
 		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
+		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
