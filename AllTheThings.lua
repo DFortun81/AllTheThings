@@ -12829,6 +12829,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							group = app.CreateNPC(-25, { g = { group } });
 						elseif group.key == "questID" then
 							group = app.CreateNPC(-17, { g = { group } });
+						elseif group.key == "criteriaID" and group.achievementID then
+							-- Achievements / Achievement / Criteria
+							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group } }) } });
 						else
 							-- special cases to source the mapped-categories
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)

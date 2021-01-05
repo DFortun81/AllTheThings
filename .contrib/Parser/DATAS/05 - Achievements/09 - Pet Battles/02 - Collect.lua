@@ -400,10 +400,10 @@ _.Achievements =
 				crit(11),	-- Ravenous Prideling	( HoF  — Grand Empress Shek'zeer )
 			}),
 			ach(14867, {	-- Shadowlands Safari
-				crit(1),		-- Animared Cruor
+				crit(1, { ["maps"] = { 1536, } }),		-- Animared Cruor
 				crit(2),		-- Bleak Skitterer
 				crit(3),		-- Clutch
-				crit(4),		-- Copperfur Kit
+				crit(4, { ["maps"] = { 1533, } }),		-- Copperfur Kit
 				crit(5),		-- Deepwood Leaper
 				crit(6),		-- Dusky Dredwing Pup
 				crit(7),		-- Fledgling Teroclaw
