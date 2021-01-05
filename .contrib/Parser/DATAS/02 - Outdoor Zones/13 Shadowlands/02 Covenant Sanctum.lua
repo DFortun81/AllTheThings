@@ -37,6 +37,7 @@ _.Zones =
 							i(184639),	-- Champion's Tailoring Cache
 							i(184638),	-- Hero's Fish Cache
 							i(184637),	-- Hero's Meat Cache
+							i(184644),	-- Hero's Tailoring Cache
 							i(181468),	-- Veiled Augment Rune
 					},
 				}),
