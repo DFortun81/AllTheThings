@@ -35,59 +35,59 @@ _.Achievements =
 					crit(4),		-- Soup for the Soup
 				}),
 				ach(1779, {		-- The Northrend Gourmet (45)
-					crit(1, { ["cost"] = { { "i", 43491, 1 } } } ),		-- Bad Clams
-					crit(2),		-- Baked Manta Ray
-					crit(3),		-- Blackened Dragonfin
-					crit(4),		-- Blackened Worg Steak
-					crit(5),		-- Critter Bites
-					crit(6),		-- Cuttlesteak
-					crit(7),		-- Dalaran Clam Chowder
-					crit(8),		-- Dragonfin Filet
-					crit(9),		-- Firecracker Salmon
-					crit(10),		-- Fish Feast
-					crit(11),		-- Gigantic Feast
-					crit(12),		-- Great Feast
-					crit(13),		-- Grilled Bonescale
-					crit(14),		-- Grilled Sculpin
-					crit(15),		-- Haunted Herring
-					crit(16),		-- Hearty Rhino
-					crit(17),		-- Imperial Manta Steak
-					crit(18),		-- Kungaloosh
-					crit(19),		-- Last Week's Mammoth
-					crit(20),		-- Mammoth Meal
-					crit(21),		-- Mega Mammoth Meal
-					crit(22),		-- Mighty Rhino Dogs
-					crit(23),		-- Northern Stew
-					crit(24),		-- Pickled Fangtooth
-					crit(25),		-- Poached Nettlefish
-					crit(26),		-- Poached Northern Sculpin
-					crit(27),		-- Rhino Dogs
-					crit(28),		-- Rhinolicious Wormsteak
-					crit(29),		-- Roasted Worg
-					crit(30),		-- Sauteed Goby
-					crit(31),		-- Shoveltusk Steak
-					crit(32),		-- Small Feast
-					crit(33),		-- Smoked Rockfin
-					crit(34),		-- Smoked Salmon
-					crit(35),		-- Snapper Extreme
-					crit(36),		-- Spiced Mammoth Treats
-					crit(37),		-- Spiced Worm Burger
-					crit(38),		-- Spicy Blue Nettlefish
-					crit(39),		-- Spicy Fried Herring
-					crit(40),		-- Tasty Cupcake
-					crit(41),		-- Tender Shoveltusk Steak
-					crit(42),		-- Tracker Snacks
-					crit(43),		-- Very Burnt Worg
-					crit(44),		-- Worg Tartare
-					crit(45),		-- Worm Delight
+					crit(1, { ["cost"] = { { "i", 43491, 1 } } } ), 	-- Bad Clams
+					crit(2, { ["cost"] = { { "i", 42942, 1 } } } ), 	-- Baked Manta Ray
+					crit(3, { ["cost"] = { { "i", 43268, 1 } } } ), 	-- Dalaran Clam Chowder
+					crit(4, { ["cost"] = { { "i", 34760, 1 } } } ), 	-- Grilled Bonescale
+					crit(5, { ["cost"] = { { "i", 34762, 1 } } } ), 	-- Grilled Sculpin
+					crit(6, { ["cost"] = { { "i", 43492, 1 } } } ), 	-- Haunted Herring
+					crit(7, { ["cost"] = { { "i", 43488, 1 } } } ), 	-- Last Week's Mammoth
+					crit(8, { ["cost"] = { { "i", 34748, 1 } } } ), 	-- Mammoth Meal
+					crit(9, { ["cost"] = { { "i", 34747, 1 } } } ), 	-- Northern Stew
+					crit(10, { ["cost"] = { { "i", 34765, 1 } } } ), 	-- Pickled Fangtooth
+					crit(11, { ["cost"] = { { "i", 34764, 1 } } } ), 	-- Poached Nettlefish
+					crit(12, { ["cost"] = { { "i", 34752, 1 } } } ), 	-- Rhino Dogs
+					crit(13, { ["cost"] = { { "i", 34751, 1 } } } ), 	-- Roasted Worg
+					crit(14, { ["cost"] = { { "i", 34761, 1 } } } ), 	-- Sauteed Goby
+					crit(15, { ["cost"] = { { "i", 34749, 1 } } } ), 	-- Shoveltusk Steak
+					crit(16, { ["cost"] = { { "i", 34759, 1 } } } ), 	-- Smoked Rockfin
+					crit(17, { ["cost"] = { { "i", 34763, 1 } } } ), 	-- Smoked Salmon
+					crit(18, { ["cost"] = { { "i", 43490, 1 } } } ), 	-- Tasty Cupcake
+					crit(19, { ["cost"] = { { "i", 34750, 1 } } } ), 	-- Worm Delight
+					crit(20, { ["cost"] = { { "i", 34753, 1 } } } ), 	-- Great Feast
+					crit(21, { ["cost"] = { { "i", 39520, 1 } } } ), 	-- Kungaloosh
+					crit(22, { ["cost"] = { { "i", 42999, 1 } } } ), 	-- Blackened Dragonfin
+					crit(23, { ["cost"] = { { "i", 42997, 1 } } } ), 	-- Blackened Worg Steak
+					crit(24, { ["cost"] = { { "i", 43004, 1 } } } ), 	-- Critter Bites
+					crit(25, { ["cost"] = { { "i", 42998, 1 } } } ), 	-- Cuttlesteak
+					crit(26, { ["cost"] = { { "i", 43000, 1 } } } ), 	-- Dragonfin Filet
+					crit(27, { ["cost"] = { { "i", 34767, 1 } } } ), 	-- Firecracker Salmon
+					crit(28, { ["cost"] = { { "i", 43015, 1 } } } ), 	-- Fish Feast
+					crit(29, { ["cost"] = { { "i", 43478, 1 } } } ), 	-- Gigantic Feast
+					crit(30, { ["cost"] = { { "i", 42995, 1 } } } ), 	-- Hearty Rhino
+					crit(31, { ["cost"] = { { "i", 34769, 1 } } } ), 	-- Imperial Manta Steak
+					crit(32, { ["cost"] = { { "i", 34754, 1 } } } ), 	-- Mega Mammoth Meal
+					crit(33, { ["cost"] = { { "i", 34758, 1 } } } ), 	-- Mighty Rhino Dogs
+					crit(34, { ["cost"] = { { "i", 34766, 1 } } } ), 	-- Poached Northern Sculpin
+					crit(35, { ["cost"] = { { "i", 42994, 1 } } } ), 	-- Rhinolicious Wormsteak
+					crit(36, { ["cost"] = { { "i", 43480, 1 } } } ), 	-- Small Feast
+					crit(37, { ["cost"] = { { "i", 42996, 1 } } } ), 	-- Snapper Extreme
+					crit(38, { ["cost"] = { { "i", 43005, 1 } } } ), 	-- Spiced Mammoth Treats
+					crit(39, { ["cost"] = { { "i", 34756, 1 } } } ), 	-- Spiced Worm Burger
+					crit(40, { ["cost"] = { { "i", 34768, 1 } } } ), 	-- Spicy Blue Nettlefish
+					crit(41, { ["cost"] = { { "i", 42993, 1 } } } ), 	-- Spicy Fried Herring
+					crit(42, { ["cost"] = { { "i", 34755, 1 } } } ), 	-- Tender Shoveltusk Steak
+					crit(43, { ["cost"] = { { "i", 43001, 1 } } } ), 	-- Tracker Snacks
+					crit(44, { ["cost"] = { { "i", 34757, 1 } } } ), 	-- Very Burnt Worg
+					crit(45, { ["cost"] = { { "i", 44953, 1 } } } ), 	-- Worg Tartare
 					ach(1778),		-- The Northrend Gourmet (30)
 					ach(1777),		-- The Northrend Gourmet (15)
 				}),
 				ach(1780, {		-- Second That Emotion
-					crit(1),		-- Bad Clams
-					crit(2),		-- Haunted Herring
-					crit(3),		-- Last Week's Mammoth
-					crit(4),		-- Tasty Cupcake
+					crit(1, { ["cost"] = { { "i", 43491, 1 } } } ),		-- Bad Clams
+					crit(2, { ["cost"] = { { "i", 43492, 1 } } } ),		-- Haunted Herring
+					crit(3, { ["cost"] = { { "i", 43488, 1 } } } ),		-- Last Week's Mammoth
+					crit(4, { ["cost"] = { { "i", 43490, 1 } } } ),		-- Tasty Cupcake
 				}),
 				ach(1781),		-- Critter Gitter
 				a(ach(1782, {	-- Our Daily Bread [A]
@@ -105,7 +105,7 @@ _.Achievements =
 					crit(5),	-- Mustard Dogs!
 				})),
 				ach(1785, {		-- Dinner Impossible
-					crit(1),		-- ALterac Valley
+					crit(1),		-- Alterac Valley
 					crit(2),		-- Arathi Basin
 					crit(3),		-- Warsong Gulch
 					crit(4),		-- Eye of the Storm
