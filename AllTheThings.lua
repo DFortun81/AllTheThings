@@ -14904,7 +14904,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Heroic Deeds
 				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = GetPopulatedMapObject(424);
-					_cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
+					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901, true);
 					if _cache then
 						for _,data in ipairs(_cache) do
 							data = CreateObject(data);
@@ -14930,13 +14930,18 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				-- Get the LFG Rewards Available at this level
 				local numRandomDungeons = GetNumRandomDungeons();
+				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
 					local groupFinder = {achID=4476,text=DUNGEONS_BUTTON,g={}};
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
+						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));
+						-- print("NormInfo",dungeonID,GetLFGDungeonInfo(dungeonID))
+						-- print("DungeonAppearsInRandomLFD(dungeonID)",DungeonAppearsInRandomLFD(dungeonID)); -- useless
 						local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel = GetLFGDungeonInfo(dungeonID);
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _,gold,unknown,xp,unknown2,numRewards,unknown = GetLFGDungeonRewards(dungeonID);
+						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
 						local header = {dungeonID=dungeonID,text=name,description=description,lvl={minRecLevel or 1, maxRecLevel},g={}};
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
@@ -14947,7 +14952,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
 								local item = { ["itemID"] = itemID, ["expanded"] = false };
-								_cache = fieldCache["itemID"][itemID];
+								_cache = SearchForField("itemID", itemID, true);
 								if _cache then
 									local ACKCHUALLY;
 									for _,data in ipairs(_cache) do
@@ -14967,21 +14972,22 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											if data.s then
 												item.s = data.s;
 												-- TODO: bad globals...
-												if data.modID == modID then
-													ACKCHUALLY = data.s;
-													item.modID = modID;
-													if tagID == 137 then
-														local parent = data.parent;
-														while parent do
-															if parent.instanceID then
-																-- this referenced questObject.icon, but that variable isn't part of the group finder section, so using header instead...
-																header.icon = parent.icon;
-																break;
-															end
-															parent = parent.parent;
-														end
-													end
-												end
+												-- print("Bad globals");
+												-- if data.modID == modID then
+												-- 	ACKCHUALLY = data.s;
+												-- 	item.modID = modID;
+												-- 	if tagID == 137 then
+												-- 		local parent = data.parent;
+												-- 		while parent do
+												-- 			if parent.instanceID then
+												-- 				-- this referenced questObject.icon, but that variable isn't part of the group finder section, so using header instead...
+												-- 				header.icon = parent.icon;
+												-- 				break;
+												-- 			end
+												-- 			parent = parent.parent;
+												-- 		end
+												-- 	end
+												-- end
 											end
 											if data.g and #data.g > 0 then
 												if not item.g then
@@ -15001,9 +15007,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							elseif rewardType == "currency" then
 								if showCurrencies then
 									local item = { ["currencyID"] = itemID, ["expanded"] = false, };
-									cache = fieldCache["currencyID"][itemID];
-									if cache then
-										for _,data in ipairs(cache) do
+									_cache = SearchForField("currencyID", itemID, true);
+									if _cache then
+										for _,data in ipairs(_cache) do
 											local lvl;
 											if isTimeWalker then
 												lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
