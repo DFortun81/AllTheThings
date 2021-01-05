@@ -751,8 +751,79 @@ _.Zones =
 						},
 					}),
 
-
 					-- Chapter 8: Deal for a Loa (Renown 20 required to start)
+					q(59731, {	-- An Expected Guest
+						["sourceQuests"] = { 58452 },	-- Tracking the Shadows
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.5, 39.1, 1701 },
+					}),
+					q(59732, {	-- Something Extra for the Winter Queen
+						["sourceQuests"] = { 59731 },	-- An Expected Guest
+						["provider"] = { "n", 165951 },	-- Bwonsamdi
+						["coord"] = { 48.4, 52.5, 1565 },
+					}),
+					q(59739, {	-- The Problem with Containing a Death Loa
+						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
+						["provider"] = { "n", 122688 },	-- Bwonsamdi
+						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+					}),
+					q(59741, {	-- Dark Mojo for a Dark Loa
+						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
+						["provider"] = { "n", 165968 },	-- Hanzabu
+						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+					}),
+					q(59742, {	-- Delaying the Other Side
+						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
+						["provider"] = { "n", 165968 },	-- Hanzabu
+						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+					}),
+					q(59749, {	-- One Little Whisper
+						["sourceQuests"] = { 
+							59741,	-- Dark Mojo for a Dark Loa
+							59742,	-- Delaying the Other Side
+							59739,	-- The Problem with Containing a Death Loa
+						},
+						["provider"] = { "n", 122688 },	-- Bwonsamdi
+						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["g"] = {
+							i(179623),	-- Faewoven Drape
+							i(179773),	-- Oakheart Cape
+							i(179620),	-- Queensguard Cloak
+							i(181877),	-- Runewarden's Greatcloak
+						},
+					}),
+					q(59805, {	-- Maw Manifested
+						["sourceQuests"] = { 59749 },	-- One Little Whisper
+						["provider"] = { "n", 122688 },	-- Bwonsamdi
+						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+					}),
+					q(59822, {	-- Tracking a Wild God
+						["sourceQuests"] = { 59805 },	-- Maw Manifested
+						["provider"] = { "n", 171655 },	-- Spirit of Vol'jin
+						["coord"] = { 44.8, 40.9, 1543 },	-- The Maw
+					}),
+					q(59824, {	-- Loa Rescue
+						["sourceQuests"] = { 59822 },	-- Tracking a Wild God
+						["provider"] = { "n", 171828 },	-- Spirit of Vol'jin
+						["coord"] = { 41.0, 64.2, 1543 },	-- The Maw
+					}),
+					q(59856, {	-- Rezan, Loa of Kings
+						["sourceQuests"] = { 59824 },	-- Loa Rescue
+						["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
+						["coord"] = { 45.8, 85.0, 1543 },	-- The Maw
+					}),
+					q(59866, {	-- Parting Ways
+						["sourceQuests"] = { 59856 },	-- Rezan, Loa of Kings
+						["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
+						["coord"] = { 45.8, 85.0, 1543 },	-- The Maw
+						["g"] = {
+							i(175588),	-- Faewoven Cowl
+							i(179768),	-- Oakheart Crest
+							i(179887),	-- Queensguard Greathelm
+							i(181912),	-- Runewarden's Guise
+						},
+					}),
+
 					-- Chapter 9: Drust and Ashes (Renown 22 required to start)
 					
 					------------------------------

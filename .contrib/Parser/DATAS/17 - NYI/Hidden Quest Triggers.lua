@@ -2958,7 +2958,8 @@ _.HiddenQuestTriggers =
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
-		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger)
+		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger) - WQ reward upgrade #1
+		q(63221),	-- triggered when hitting Renown 19 (all covenants appear to get the same quest trigger) - WQ reward upgrade #2
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
@@ -3468,10 +3469,12 @@ _.HiddenQuestTriggers =
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
 	--	q(63199),	-- The Maw Hunt event completion trigger... with 'The Alpha' as the final boss
+		q(63198),	-- Triggered after completing Hunt: Death Elementals
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
 		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
+
 		
 		-- Eye of the Jailer Levels
 		q(63382),	-- Mortars/Missiles (1)
