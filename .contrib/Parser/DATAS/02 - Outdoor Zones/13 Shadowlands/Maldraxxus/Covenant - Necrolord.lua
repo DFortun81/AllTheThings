@@ -1073,6 +1073,18 @@ _.Zones =
 									["coord"] = { 52.4, 38.4, 1698 },
 									["description"] = "Becomes available after you research Abomination Factory Tier 1 in your sanctum.",
 								}),
+								q(62232, {	-- Arboreal Tactics
+									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
+									["provider"] = { "n", 158301 },    -- Marz
+									["coord"] = { 54.2, 68.6, 1536 },
+									["isWeekly"] = true,
+								}),
+								q(62256, {    -- Asset Extraction
+									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
+									["provider"] = { "n", 159238 },    -- Atticus
+									["coord"] = { 55.3, 68.3, 1536 },
+									["isWeekly"] = true,
+								}),
 								q(60049, {	-- At Your Service
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
 									["provider"] = { "n", 167044 },	-- Emeni
@@ -1096,12 +1108,6 @@ _.Zones =
 									["provider"] = { "n", 167150 },	-- Rathan
 									["coord"] = { 55.1, 68.8, 1536 },
 								}),
-								q(60765, {    -- Cure For All Ills
-									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
-									["provider"] = { "n", 159241 },    -- Roseboil
-									["coord"] = { 55.1, 68.1, 1536 },
-									["isWeekly"] = true,
-								}),
 								q(60291, {    -- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
@@ -1112,6 +1118,18 @@ _.Zones =
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, 1536 },
+									["isWeekly"] = true,
+								}),
+								q(61523, {    -- Corpse Run
+									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
+									["provider"] = { "n", 158300 },    -- Flytrap
+									["coord"] = { 54.3, 68.1, 1536 },
+									["isWeekly"] = true,
+								}),
+								q(60765, {    -- Cure For All Ills
+									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
+									["provider"] = { "n", 159241 },    -- Roseboil
+									["coord"] = { 55.1, 68.1, 1536 },
 									["isWeekly"] = true,
 								}),
 								q(62217, {	-- Field Training
@@ -1146,6 +1164,12 @@ _.Zones =
 									["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 									["provider"] = { "n", 162222 },	-- Rathan
 									["coord"] = { 48.0, 50.2, 1698 },
+								}),
+								q(61509, {	-- Shinies of Bastion
+									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+									["provider"] = { "n", 161270 },	-- Chordy
+									["coord"] = { 55.1, 68.6, 1536 },
+									["isWeekly"] = true,
 								}),
 								q(58677, {	-- Skin in the Game
 									["sourceQuests"] = { 58668 },	-- Find The Way
@@ -1196,6 +1220,12 @@ _.Zones =
 								}),
 							}),
 							n(-926, {	-- Tier 2: Crafting Limbs
+								q(62244, {	-- Digging Around
+									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
+									["provider"] = { "n", 159212 },    -- Toothpick
+									["coord"] = { 54.9, 67.8, 1536 },
+									["isWeekly"] = true,
+								}),
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
 									["provider"] = { "n", 162151 },    -- Neena
@@ -1217,10 +1247,22 @@ _.Zones =
 									["coord"] = { 54.9, 67.8, 1536 },
 									["isWeekly"] = true,
 								}),
+								q(62294, {	-- One Lich's Trash...
+									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
+									["provider"] = { "n", 159198 },    -- The Professor
+									["coord"] = { 55.4, 68.2, 1536 },
+									["isWeekly"] = true,
+								}),
 								q(60283, {	-- Specter Of War: Visectus
 									["provider"] = { "n", 161668 },	-- Summoner Gerard
 									["coord"] = { 53.5, 69.3, 1536 },
 									["repeatable"] = true,
+								}),
+								q(62195, {	-- The Last Word
+									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
+									["provider"] = { "n", 159226 },    -- Sabrina
+									["coord"] = { 54.8, 68.8, 1536 },
+									["isWeekly"] = true,
 								}),
 								q(58525, {	-- The Two Sides of History
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
