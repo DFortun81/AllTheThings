@@ -232,6 +232,11 @@ _.Zones =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
+				q(62836, {	-- Signs of the Lion
+					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
 				q(60129, {	-- Stranger in an Even Stranger Land
 					["sourceQuests"] = { 59770 },	-- Stand as One
 					["coord"] = { 20.4, 50.3, 1670 },
