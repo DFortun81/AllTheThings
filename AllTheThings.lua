@@ -3455,10 +3455,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 end
 -- Appends sub-groups into the item group based on what the item is used to craft, following only as deep as the provided recurDepth
-app.BuildCrafted = function(item, recurDepth, includedItems)
+app.BuildCrafted_IncludedItems = {};
+app.BuildCrafted = function(item)
 	local itemID = item.itemID;
-	if not itemID or recurDepth < 1 then return; end
+	if not itemID then return; end
 
+	-- track the starting item
+	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
 		if not app.AppliedSkillIDToNPCIDs then
@@ -3515,16 +3518,20 @@ app.BuildCrafted = function(item, recurDepth, includedItems)
 					-- ensure this character can craft the recipe
 					if skillID then
 						if knownSkills and knownSkills[skillID] then
-							if not includedItems or not contains(includedItems, craftedItemID) then
+							if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+								-- track the added craftedItemID regardless of if an item was added for it
+								tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
 								-- find a reference to the item in the DB and add it to the group
-								clone = app.SearchForObjectClone("itemID", craftedItemID) or app.CreateItem(craftedItemID);
+								clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 							end
 						end
 					else
 					-- recipe without any skill requirement? weird...
-						if not includedItems or not contains(includedItems, craftedItemID) then
+						if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+							-- track the added craftedItemID regardless of if an item was added for it
+							tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
 							-- find a reference to the item in the DB and add it to the group
-							clone = app.SearchForObjectClone("itemID", craftedItemID) or app.CreateItem(craftedItemID);
+							clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 						end
 					end
 				end
@@ -3533,47 +3540,51 @@ app.BuildCrafted = function(item, recurDepth, includedItems)
 					-- clone.matCount = count;-- * (item.matCount or 1);
 					-- clone.total = clone.collectible and clone.matCount;
 					-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+					if not clone.g then
+						clone.total = nil;
+						clone.progress = nil;
+					end
 
 					if not item.g then item.g = { clone };
 					else MergeObject(item.g, clone); end
 				end
-
-				-- track the added craftedItemID regardless of if an item was added for it
-				if not includedItems then includedItems = { craftedItemID };
-				else tinsert(includedItems, craftedItemID); end
 			end
 		else
 			-- Can otherwise simply iterate over the set of crafted items and add them
 			for craftedItemID,count in pairs(reagentCache[2]) do
 				-- print(itemID,"x",count,"=>",craftedItemID);
 				clone = nil;
-				if not includedItems or not contains(includedItems, craftedItemID) then
+				if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+					-- track the added craftedItemID regardless of if an item was added for it
+					tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
 					-- find a reference to the item in the DB and add it to the group
-					clone = app.SearchForObjectClone("itemID", craftedItemID) or app.CreateItem(craftedItemID);
+					clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 				end
 				if clone then
 					-- use the crafting count as the total/progress
 					-- clone.matCount = count;-- * (item.matCount or 1);
 					-- clone.total = clone.collectible and clone.matCount;
 					-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+					if not clone.g then
+						clone.total = nil;
+						clone.progress = nil;
+					end
 
 					if not item.g then item.g = { clone };
 					else MergeObject(item.g, clone); end
 				end
-
-				-- track the added craftedItemID regardless of if an item was added for it
-				if not includedItems then includedItems = { craftedItemID };
-				else tinsert(includedItems, craftedItemID); end
 			end
 		end
 	end
 
 	-- Recursively check each crafted item for sub-sequent crafted items...
-	if item.g then
-		for i,subItem in ipairs(item.g) do
-			app.BuildCrafted(subItem, recurDepth - 1, includedItems);
-		end
-	end
+	-- if item.g then
+		-- for i,subItem in ipairs(item.g) do
+		-- 	app.BuildCrafted(subItem, recurDepth - 1, includedItems);
+		-- end
+	-- end
+	-- sort the set of crafted items by the name of each crafted item
+	-- app.SortGroup(item, "name");
 end
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
@@ -4942,6 +4953,7 @@ local function SortGroup(group, sortType, row, recur)
 		app.print("Finished Sorting.");
 	end
 end
+app.SortGroup = SortGroup;
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
@@ -5059,6 +5071,7 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
+	app.BuildCrafted_IncludedItems = {};
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 -- local function CheckAttachTooltip(self, elapsed)
@@ -16170,6 +16183,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			end
 		end
 
+		-- Reset the build crafted included items list
+		app.BuildCrafted_IncludedItems = {};
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- make sure it's 'something' returned from the search before throwing it into a window

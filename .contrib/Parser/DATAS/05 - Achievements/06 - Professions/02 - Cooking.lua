@@ -35,7 +35,7 @@ _.Achievements =
 					crit(4),		-- Soup for the Soup
 				}),
 				ach(1779, {		-- The Northrend Gourmet (45)
-					crit(1),		-- Bad Clams
+					crit(1, { ["cost"] = { { "i", 43491, 1 } } } ),		-- Bad Clams
 					crit(2),		-- Baked Manta Ray
 					crit(3),		-- Blackened Dragonfin
 					crit(4),		-- Blackened Worg Steak

@@ -34,7 +34,7 @@ _.Holidays =
 									{	-- Dalaran Brownie
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 6,			-- Dalaran Brownie
-										["itemID"] = 42431,			-- Dalaran Brownie
+										["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
 										["crs"] = {
 											29548,	-- Aimee
 											92936,	-- Aimee
@@ -51,7 +51,7 @@ _.Holidays =
 									{	-- Dalaran Doughnut
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 7,			-- Dalaran Doughnut
-										["itemID"] = 42430,			-- Dalaran Doughnut
+										["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
 										["crs"] = {
 											29548,	-- Aimee
 											92936,	-- Aimee
@@ -68,13 +68,13 @@ _.Holidays =
 									{	-- Delicious Chocolate Cake
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 4,			-- Delicious Chocolate Cake
-										["itemID"] = 33924,			-- Delicious Chocolate Cake
-										["description"] = "Comes from cooking.",
+										["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
+										-- ["description"] = "Comes from cooking.",
 									},
 									{	-- Lovely Cake Slice
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 5,			-- Lovely Cake Slice
-										["itemID"] = 42438,			-- Lovely Cake
+										["cost"] = { { "i", 42438, 1 } },	-- Lovely Cake
 										["crs"] = {
 											29548,	-- Aimee
 											-- 65859,	-- Beige Sugar	Note!! Doesn't actually exist
@@ -92,7 +92,7 @@ _.Holidays =
 									{	-- Red Velvet Cupcake
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 3,			-- Red Velvet Cupcake
-										["itemID"] = 42429,			-- Red Velvet Cupcake
+										["cost"] = { { "i", 42429, 1 } },	-- Red Velvet Cupcake
 										["crs"] = {
 											29548,	-- Aimee
 											-- 65859,	-- Beige Sugar	Note!! Doesn't actually exist
@@ -110,13 +110,13 @@ _.Holidays =
 									{	-- Tasty Cupcake
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 2,			-- Tasty Cupcake
-										["itemID"] = 43490,			-- Tasty Cupcake
-										["description"] = "Comes from cooking.",
+										["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
+										-- ["description"] = "Comes from cooking.",
 									},
 									{	-- Tigule and Foror's Strawberry Ice Cream
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 1,			-- Tigule and Foror's Strawberry Ice Cream
-										["itemID"] = 7228,			-- Tigule and Foror's Strawberry Ice Cream
+										["cost"] = { { "i", 7228, 1 } },	-- Tigule and Foror's Strawberry Ice Cream
 										["crs"] = {
 											14480,	-- Alowicious Czervik
 											47383,	-- Brivelthwerp
