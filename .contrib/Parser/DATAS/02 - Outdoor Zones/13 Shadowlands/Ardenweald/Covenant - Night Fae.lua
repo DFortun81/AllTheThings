@@ -287,9 +287,6 @@ _.Zones =
 						["sourceQuests"] = { 58159 },	-- What's My Motivation?
 						["provider"] = { "n", 160500 },	-- Ysera
 						["coord"] = { 42.4, 45.2, 1565 },
-						["g"] = {
-							spell(338946),	-- World Quests
-						},
 					}),
 					q(62883, {	-- Keeper of Great Renown
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -1040,16 +1037,29 @@ _.Zones =
 								}),
 							}),
 							n(QUESTS, {
+								q(62447, {	-- A Rare and Unusual Spirit
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+									["coord"] = { 42.2, 52.9, 1662 },
+									["g"] = {
+										i(183704),	-- Shifting Spirit of Knowledge
+									},
+								}),
 								q(59862, {	-- A Savior for Lost Souls
 									["sourceQuests"] = { 63046 },	-- The End and the Beginning
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
 								}),
-								q(62442, {	-- Aid the Covenant
-								-- requires tier 2 Conservatory
-								["provider"] = { "n", 174324 },	-- Conservator Aoni
-								["coord"] = { 32.1, 62.0, 1662 },
-								["isDaily"] = true,
+								q(62444, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
+								q(59871, {	-- Catalyze This
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
 								}),
 								q(62441, {	-- Fair Exchange for a Soul
 									["sourceQuests"] = { 59873 },	-- Greeting a God
@@ -1078,6 +1088,16 @@ _.Zones =
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
 								}),
+								q(60640, {	-- Regrowth of the Grove
+									["sourceQuests"] = { 62467 },	-- Seed of a Thought
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(62467, {	-- Seed of a Thought
+									["sourceQuests"] = { 59871 },	-- Catalyze This
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
 								q(63046, {	-- The End and the Beginning
 									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
@@ -1090,21 +1110,6 @@ _.Zones =
 								}),
 								
 								-- TODO: everything past here is yet to be verified on retail
-								q(59871, {	-- Catalyze This
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-								}),
-								q(62467, {	-- Seed of a Thought
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 59871 },	-- Catalyze This
-								}),
-								q(60640, {	-- Regrowth of the Grove
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 62467 },	-- Seed of a Thought
-								}),
 								q(60641, {	-- Blossoming of the Grove
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
@@ -1114,14 +1119,6 @@ _.Zones =
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
 									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-								}),
-								q(62447, {	-- A Rare and Unusual Spirit
-									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-									["coord"] = { 42.2, 52.9, 1662 },
-									["maps"] = { 1669 },	-- Mists of Tirna Scithe
-									["g"] = {
-										i(183704),	-- Shifting Spirit of Knowledge
-									},
 								}),
 								q(62603, {	-- A Rare and Unusual Spirit
 									["provider"] = { "n", 171107 },	-- Cultivator Blaithin

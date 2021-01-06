@@ -541,6 +541,7 @@ _.Zones =
 						i(179532),	-- Duskwarder Scythe
 						i(179604),	-- Duskwarder Shield
 						i(181432),	-- Duskwarder Spellthorn
+						i(179547),	-- Duskwarder Warclub
 						-- TODO: more rewards
 					},
 				}),

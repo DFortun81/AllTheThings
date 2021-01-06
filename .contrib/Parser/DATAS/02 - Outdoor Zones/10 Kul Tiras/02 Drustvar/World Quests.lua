@@ -58,11 +58,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
 					}),
-					q(52407, {	-- Work Order: Golden Beryl
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50986, {	-- Work Order: Sea Stalk
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
@@ -753,6 +748,12 @@ _.Zones =
 						["g"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
+					}),
+					q(52407, {	-- Work Order: Golden Beryl
+						["lvl"] = { 50 },
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(50987, {	-- Work Order: Monelite Ore
 						["lvl"] = { 50 },
