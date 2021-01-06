@@ -1204,13 +1204,15 @@ _.Zones =
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
+									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch
-										["description"] = "Possible reward when Sika gives an Extravagant Tribute",
+										["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
 									}),
 									i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
 										["questID"] = 62628,	-- Vole's Voucher
 									}),
+									i(181229),	-- Tranquil's Censer (Sika's Extravagant Tribute)
 								}),
 								n(-961, {	-- Tier 1: A New Court
 								--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
@@ -1349,6 +1351,11 @@ _.Zones =
 										["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
 										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 										["coord"] = { 70.0, 56.2, 1525 },
+									}),
+									q(62066, {	-- Restock: Dredger Pool
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 									}),
 									q(61916, {	-- Restock: Fire Damage
 										["repeatable"] = true,	-- it shows up as a blue ?

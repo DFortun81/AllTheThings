@@ -3358,7 +3358,7 @@ _.HiddenQuestTriggers =
 		q(60305),	-- Channeling Anima Conduit to Court of the Harvesters
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
-		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2
+		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -3374,6 +3374,7 @@ _.HiddenQuestTriggers =
 		q(61924),	-- triggered when entering the Ember Court, Week 2
 		q(61928),	-- triggered when entering the Ember Court, Week 4
 		q(61921),	-- triggered when entering the Ember Court, Week 5
+		q(61933),	-- triggered when entering the Ember Court, Week 6
 		q(61927),	-- triggered when entering the Ember Court for the week
 		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
@@ -3384,12 +3385,22 @@ _.HiddenQuestTriggers =
 		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
+		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
+		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective
+		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
+		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
+		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
+		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective by giving the slime to Prince Renathal
+		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
+		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
 	--	q(62144),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62130),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62171),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62127),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62120),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62121),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62146),	-- triggered when completing 'formal' activities? maybe more info...
 		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
@@ -3400,11 +3411,15 @@ _.HiddenQuestTriggers =
 		q(62516),	-- triggered when Ember Court ended, Week 4 (had Plague Deviser Marileth as guest and he was elated)
 		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
+		q(62497),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
+		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
+		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
+		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59634),	-- triggered upon actually leaving the Ember Court
-		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3)
+		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"

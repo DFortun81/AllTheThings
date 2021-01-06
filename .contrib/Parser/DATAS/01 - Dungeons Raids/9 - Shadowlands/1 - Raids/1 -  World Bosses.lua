@@ -12,7 +12,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
-					173104,	-- Mortanis
+					167525,	-- Mortanis
 					167526,	-- Nurgash Muckformed
 					167527,	-- Oranomonos the Everbranching
 					167524,	-- Valinor, the Light of Eons
@@ -74,7 +74,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isRaid"] = true,
 				["coord"] = { 32.1, 67.3, 1536 },
 				["maps"] = { 1536 },	-- Maldraxxus
-				["cr"] = 173104,	-- Mortanis
+				["cr"] = 167525,	-- Mortanis
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda

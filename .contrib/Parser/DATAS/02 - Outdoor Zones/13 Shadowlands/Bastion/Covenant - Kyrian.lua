@@ -30,11 +30,11 @@ _.Zones =
 					}),
 					q(60430, {	-- A Call to Maldraxxus
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.5, 42.2, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(62692, {	-- A Calling in Bastion
@@ -86,7 +86,10 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["repeatable"] = true,
 						["provider"] = { "n", 160387 },	-- Hermestes
-						["coord"] = { 64.6, 16.4, 1533 },
+						["coord"] = { 40.9, 41.0, 1707 },	-- Archon's Rise
+						["g"] = {
+							i(181732),	-- Tribute of the Ambitious
+						},
 					}),
 					q(60400, {	-- Aiding Revendreth
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
@@ -155,9 +158,9 @@ _.Zones =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["repeatable"] = true,
 						["provider"] = { "n", 154627 },	-- Xandria
-						["coord"] = { 67.2, 16.0, 1533 },
+						["coord"] = { 62.0, 37.3, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181741),	-- Tribute of the Paragon
+							i(181557),	-- Favor of the Court
 						},
 					}),
 					q(60358, {	-- Gildenite Grab

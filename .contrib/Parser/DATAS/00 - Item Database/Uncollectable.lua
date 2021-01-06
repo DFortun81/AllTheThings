@@ -358,10 +358,12 @@ i(171315); 	-- Reuse me (MTMM)
 -- "Toy"
 i(180372);	-- Amalgamation of Sin
 i(173791);	-- Baguette
+i(181362);	-- Blob of Slime
 i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
+i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate

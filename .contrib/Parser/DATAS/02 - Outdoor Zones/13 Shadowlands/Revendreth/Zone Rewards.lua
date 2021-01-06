@@ -133,6 +133,7 @@ _.Zones =
 					i(182721),	-- Mail Courier's Grips
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(182720),	-- Mail Courier's Tunic
+					i(181358),	-- Master Duelist's Chit
 					i(181182),	-- Muck Waders
 					i(180401),	-- Noble Justice
 					i(181213),	-- Shard-Dusted Shank
