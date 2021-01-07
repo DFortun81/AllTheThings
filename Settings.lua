@@ -421,22 +421,27 @@ settings.CreateDropdown = function(self, opts, OnRefresh)
     dd_title:SetText(title_text);
 	dropdown:SetHitRectInsets(0,0,0,0);
 
-    UIDropDownMenu_Initialize(dropdown, function(self, level, _)
-        local info = UIDropDownMenu_CreateInfo();
-        for key, val in pairs(menu_items) do
-            info.text = val;
-            info.checked = false;
-            info.menuList = key;
-            info.hasArrow = false;
-            info.func = function(b)
-                UIDropDownMenu_SetSelectedName(dropdown, b.value, b.value);
-                UIDropDownMenu_SetText(dropdown, b.value);
-                b.checked = true;
-                change_func(dropdown, b.value);
-            end
-            UIDropDownMenu_AddButton(info);
-        end
-    end);
+	-- for whatever reason, using a UIDropdown from an addon initially will taint the dropdown itself and
+	-- various frames beneath it, thus leading to ADDON_ACTION_BLOCKED during use of CompactRaidFrames (i.e. default raid frames)
+	-- http://web.archive.org/web/20120924210349/http://us.battle.net/wow/en/forum/topic/6413024969?page=1
+	-- putting the dropdown initialize into a securecall seems to ensure that the addon taint does not propogate into the secure blizzard frames
+	securecall(
+		UIDropDownMenu_Initialize, dropdown, function(self, level, _)
+			local info = {};
+			for key, val in pairs(menu_items) do
+				info.text = val;
+				info.checked = false;
+				info.menuList = key;
+				info.hasArrow = false;
+				info.func = function(b)
+					UIDropDownMenu_SetSelectedName(dropdown, b.value, b.value);
+					UIDropDownMenu_SetText(dropdown, b.value);
+					b.checked = true;
+					change_func(dropdown, b.value);
+				end
+				UIDropDownMenu_AddButton(info);
+			end
+		end);
 
 	table.insert(self.MostRecentTab.objects, dropdown);
 	dropdown.OnRefresh = OnRefresh;
