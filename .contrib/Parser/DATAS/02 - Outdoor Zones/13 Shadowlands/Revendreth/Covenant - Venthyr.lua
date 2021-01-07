@@ -313,6 +313,16 @@ _.Zones =
 							["provider"] = { "n", 162213 },	-- General Draven
 							["coord"] = { 49.7, 30.1, 1533 },	-- Bastion
 						}),
+						q(60183, {	-- After Them!
+							["sourceQuests"] = {
+								57772,	-- Fangs and Minds
+								57771,	-- An Unwelcome Incursion
+								60145,	-- Third Talon Vartox
+								60265,	-- Disrupting the Chain
+							},
+							["provider"] = { "n", 167381 },	-- Baroness Draka
+							["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+						}),
 						q(57880, {	-- An Estate Within the Old Gate
 							["sourceQuests"] = { 60904 },	-- Medallion of Desire
 							["provider"] = { "n", 161979 },	-- Theotar
@@ -327,6 +337,14 @@ _.Zones =
 							["sourceQuests"] = { 57887 },	-- Killing the Messenger
 							["provider"] = { "n", 159694 },	-- The Countess
 							["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						}),
+						q(57771, {	-- An Unwelcome Incursion
+							["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+							["provider"] = { "n", 167381 },	-- Baroness Draka
+							["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+							["g"] = {
+								i(180947),	-- Tithe Collector's Vessel
+							},
 						}),
 						q(59323, {	-- Anima Awakening
 							["sourceQuests"] = { 59321 },	-- Sacred Covenant
@@ -418,6 +436,12 @@ _.Zones =
 							["provider"] = { "n", 170999 },	-- General Draven
 							["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
 						}),
+						q(60265, {	-- Disrupting the Chain
+							["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+							["provider"] = { "i", 178557 },	-- Supply Chain Memo
+							["crs"] = { 158796 },	-- Stonevigil Collector
+							["coord"] = { 57.4, 69.2, 1525 },	-- Revendreth (rough area)
+						}),
 						q(58384, {	-- Dredgers Left Behind
 							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
 							["provider"] = { "n", 161208 },	-- The Accuser
@@ -447,6 +471,11 @@ _.Zones =
 							},
 							["provider"] = { "n", 171147 },	-- General Draven
 							["coord"] = { 24.3, 29.7, 1533 },	-- Bastion
+						}),
+						q(57772, {	-- Fangs and Minds
+							["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+							["provider"] = { "n", 167380 },	-- Prince Renethal
+							["coord"] = { 56.3, 66.7, 1525 },	-- Revendreth
 						}),
 						q(60500, {	-- Halls of Atonement: Medallion of Pride
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -747,6 +776,12 @@ _.Zones =
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 							["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 						}),
+						q(57727, {	-- Stonevigil Unrest
+							["description"] = "Requires Renown 20.",
+							-- ["sourceQuests"] = {  },	-- 
+							["provider"] = { "n", 158653 },	-- Prince Renethal
+							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
+						}),
 						q(58393, {	-- Strategic Executions
 							["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
 							["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
@@ -845,6 +880,15 @@ _.Zones =
 							["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 							["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
 						}),
+						q(57646, {	-- The Tithelord
+							["sourceQuests"] = { 57729 },	-- To the Estate
+							["provider"] = { "n", 167689 },	-- Prince Renethal
+							["coord"] = { 71.9, 68.8, 1525 },	-- Revendreth
+							["g"] = {
+								i(180923),	-- Fearstalker's Ebony Monnion
+								-- TODO: Cloth/Leather/Plate
+							},
+						}),
 						q(60673, {	-- The Traitor
 							["sourceQuests"] = { 58421 },	-- Special Access
 							["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
@@ -861,6 +905,16 @@ _.Zones =
 							["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
 							["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
 							-- no coords, is your 'pet'
+						}),
+						q(60145, {	-- Third Talon Vartox
+							["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+							["provider"] = { "n", 167381 },	-- Baroness Draka
+							["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+						}),
+						q(57729, {	-- To the Estate
+							["sourceQuests"] = { 60183 },	-- After Them!
+							["provider"] = { "n", 167620 },	-- Prince Renethal
+							["coord"] = { 61.5, 69.6, 1525 },	-- Revendreth
 						}),
 						q(58386, {	-- Use My Strengths
 							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
@@ -892,20 +946,13 @@ _.Zones =
 						}),
 						
 						-- TODO: moved these 2 quests here from Revendreth file; sort them above once they are actually seen/verified in game
-						-- Chapter 7 (Envy)
-						q(57771, {	-- An Unwelcome Incursion
-							--["provider"] = { "n", 170543 },	-- General Draven
-							["g"] = {
-								i(180947),	-- Tithe Collector's Vessel
-							},
-						}),
 						-- Chapter 8 (Dominion)
 						q(58407, {	-- The Medallion of Dominion
 							["provider"] = { "n", 170543 },	-- General Draven
 							["g"] = {
 								i(180948),	-- Battle Gargon Vrednic
 							},
-						}),
+						}),						
 
 						-- q(, {	-- 
 						-- 	["sourceQuests"] = {  },	-- 
