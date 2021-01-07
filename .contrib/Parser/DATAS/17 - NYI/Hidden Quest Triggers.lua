@@ -3450,8 +3450,9 @@ _.HiddenQuestTriggers =
 		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
-		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
-		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin) – 60607 didn't trigger this time, not sure why there are different ones?  all i can think of is the reward was different (this time it gave rep, i think last time it was anima but i'm not 100% sure)
+		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	-- incremental power/ability boosts each time you complete the WQ
+		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
+		q(60612),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor rank 2 WQ (as assassin)
 		q(60608),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as stone golem dude)
 		q(61493),	-- when using "Building: Dredger Pool"
 		q(59472),	-- when using "Contract: Traditional Theme"
