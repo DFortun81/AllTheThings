@@ -8,6 +8,15 @@ _.Zones =
 		m(1565, {	-- Ardenweald
 			n(-929, {	-- Covenant: Night Fae
 				n(ACHIEVEMENTS, {
+					ach(14789),	-- All Spirits Great and Small
+					ach(14676),	-- Divine Spirit Savior
+					ach(14780),	-- Meditation Master
+					ach(14775, {	-- Mush Appreciated
+						title(435),	-- Fun Guy / Fun Gal
+					}),
+					ach(14675),	-- Spirit Talker
+					ach(14677),	-- Spiritual Observations
+					ach(14670),	-- That's the Spirit
 				}),
 				n(QUESTS, {
 					n(-901, {	-- Covenant Callings
@@ -1050,11 +1059,22 @@ _.Zones =
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
 								}),
+								q(62443, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
 								q(62444, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 									["provider"] = { "n", 174324 },	-- Conservator Aoni
 									["coord"] = { 32.1, 62.0, 1662 },
 									["isDaily"] = true,
+								}),
+								q(60641, {	-- Blossoming of the Grove
+									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
 								}),
 								q(59871, {	-- Catalyze This
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
@@ -1110,11 +1130,6 @@ _.Zones =
 								}),
 								
 								-- TODO: everything past here is yet to be verified on retail
-								q(60641, {	-- Blossoming of the Grove
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
-								}),
 								q(60642, {	-- The Grove Resplendent
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
@@ -1144,8 +1159,7 @@ _.Zones =
 									},
 								}),
 								--q(xxxxx, {	-- Master of Inner Calm
-									ach(14780),	-- Meditation Master
-									i(183856),	-- Mystical Orb of Meditation
+									i(183856),	-- Mystical Orb of Meditation (TOY!)
 								--}),
 							}),
 							-- Spirits/Transmog
@@ -1455,7 +1469,7 @@ _.Zones =
 				n(TREASURES, {
 					o(356820, {	-- Large Lunarlight Pod
 						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
-						["repeatable"] = true,	-- ??
+						["isDaily"] = true,
 						["questID"] = 61691,
 						["coord"] = { 51.7, 32.3, 1565 },
 					}),

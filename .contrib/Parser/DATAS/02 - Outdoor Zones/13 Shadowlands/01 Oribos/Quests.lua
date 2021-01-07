@@ -611,6 +611,7 @@ _.Zones =
 						i(181224),	-- Avowed Arcanist's Staff
 						i(181207),	-- Dominance Keep Barrier
 						i(181223),	-- Mace of Emberwrath
+						i(181213),	-- Shard-Dusted Shank
 						i(181212),	-- Soulcaster's Mace
 						i(181211),	-- Souldrinker's Kris
 						i(181219),	-- Stonewing Rioter's Cudgel
