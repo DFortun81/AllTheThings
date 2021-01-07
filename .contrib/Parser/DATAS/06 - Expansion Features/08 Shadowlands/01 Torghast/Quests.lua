@@ -433,15 +433,15 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Skoldus Hall, Layer 6",
 				}),
-				-- q(, {	-- Skoldus Hall, Layer 7
-				-- 	["isWeekly"] = true,
-				-- 	["title"] = "Skoldus Hall, Layer 7",
-				-- }),
-				-- q(, {	-- Skoldus Hall, Layer 8
-				-- 	["isWeekly"] = true,
-				-- 	["title"] = "Skoldus Hall, Layer 8",
-				-- }),
-				
+				q(61969, {	-- Skoldus Hall, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 7",
+				}),
+				q(61970, {	-- Skoldus Hall, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Skoldus Hall, Layer 8",
+				}),
+								
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
 					["isWeekly"] = true,
