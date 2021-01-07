@@ -3470,6 +3470,7 @@ _.HiddenQuestTriggers =
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
+		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
