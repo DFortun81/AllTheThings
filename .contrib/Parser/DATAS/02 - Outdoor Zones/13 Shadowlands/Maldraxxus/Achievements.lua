@@ -227,6 +227,93 @@ _.Zones =
 					i(181164),	-- Oonar's Arm (PET!)
 					i(180273),	-- Sorrowbane
 				}),
+				ach(14721, {	-- It's in the Mix
+					["description"] = "Spawns a mob based on the current combination of 30 slimes added to the pool.",
+					["coord"] = { 58.6, 74.2, 1536 },
+					["g"] = {
+						i(183903),	-- Smelly Jelly
+						crit(1, {
+							["description"] = "Requires a majority of Red slime.",
+							["g"] = {
+								n(157294, {	-- Pulsing Leech
+									["questID"] = 61718,
+									["isDaily"] = true;
+									["g"] = {
+										i(184279),	-- Siphoning Blood-Drinker
+									},
+								}),
+							},
+						}),
+						crit(2, {
+							["description"] = "Requires a majority of Yellow slime.",
+							["g"] = {
+								n(157307, {	-- Gelloh
+									-- ["questID"] = ,
+									["isDaily"] = true;
+								}),
+							},
+						}),
+						crit(3, {
+							["description"] = "Requires an equal portion of Red, Blue & Yellow slime.",
+							["g"] = {
+								n(157312, {	-- Oily Invertebrate
+									-- ["questID"] = ,
+									["isDaily"] = true;
+									["g"] = {
+										i(184300),	-- Fused Spineguard
+										i(181270),	-- Decaying Oozewalker
+									},
+								}),
+							},
+						}),
+						crit(4, {
+							["description"] = "Requires an equal majority of Blue & Yellow slime.",
+							["g"] = {
+								n(157310, {	-- Boneslurp
+									-- ["questID"] = ,
+									["isDaily"] = true;
+									["g"] = {
+										i(184185),	-- Grunge-Caked Collarbone
+									}
+								}),
+							},
+						}),
+						crit(5, {
+							["description"] = "Requires an equal majority of Red & Blue slime.",
+							["g"] = {
+								n(157309, {	-- Violet Mistake
+									["questID"] = 61720,
+									["isDaily"] = true;
+									["g"] = {
+										i(184301),	-- Twenty-Loop Violet Girdle
+										i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
+									},
+								}),
+							},
+						}),
+						crit(6, {
+							["description"] = "Requires an equal majority of Red & Yellow slime.",
+							["g"] = {
+								n(157311, {	-- Burnblister
+									-- ["questID"] = ,
+									["isDaily"] = true;
+								}),
+							},
+						}),
+						crit(7, {
+							["description"] = "Requires a majority of Blue slime.",
+							["g"] = {
+								n(157308, {	-- Corrupted Sediment
+									["questID"] = 61719,
+									["isDaily"] = true;
+									["g"] = {
+										i(184302),	-- Residue-Coated Muck Waders
+									},
+								}),
+							},
+						}),
+					},
+				}),
 				ach(14634, {	-- Nine Afterlives
 					["collectible"] = false,
 					["g"] = {
