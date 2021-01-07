@@ -144,6 +144,13 @@ _.ExpansionFeatures =
 						follower(1257),	-- Meatball
 					},
 				}),
+				q(61221, {	-- Champion: Stonehuck [Venthyr???]
+					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
+					["provider"] = { "n", 171878 },	-- Stonehuck
+					["g"] = {
+						follower(1216),	-- Stonehuck
+					},
+				}),
 				q(61959, {	-- Champion: Talethi [Necrolord]
 					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					-- ["sourceQuests"] = { },	-- TODO
@@ -273,11 +280,15 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 157406 },	-- Renavyth
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
+				q(61234, {	-- Stonehuck's Sinstone
+					["repeatable"] = true,
+					["provider"] = { "n", 171879 },	-- Stonehuck
+				}),
 				q(62226, {	-- Talethi's Desire
 				--	TODO: add provider.  there are multiple Talethi NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 				--	["provider"] = { "n",  },	-- Talethi
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61330, {	-- Teliah's Stolen Spear
 				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use

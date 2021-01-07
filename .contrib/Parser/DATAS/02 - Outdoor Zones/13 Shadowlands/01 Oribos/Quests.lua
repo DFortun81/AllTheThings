@@ -251,6 +251,11 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.9, 69.9, 1670 },
 				}),
+				q(61730, {	-- The Captive King
+					["sourceQuests"] = { 62836 },	-- Signs of the Lion
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.2, 68.2, 1670 },
+				}),
 				q(60152, {	-- The Eternal City
 					["sourceQuests"] = { 60151 },	-- A Doorway Through the Veil
 					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher

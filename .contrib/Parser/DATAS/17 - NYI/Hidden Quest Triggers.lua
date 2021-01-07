@@ -3527,6 +3527,7 @@ _.HiddenQuestTriggers =
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
+		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
 		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
 

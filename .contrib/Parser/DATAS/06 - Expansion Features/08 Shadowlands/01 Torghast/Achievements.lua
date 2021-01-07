@@ -57,7 +57,10 @@ _.ExpansionFeatures =
 						}),
 						crit(7, {	-- Shackle Keys
 							["achievementID"] = 14778,	-- Extremely Ravenous
-							["crs"] = { 155798 },	-- Mawsworn Shackler
+							["crs"] = {
+								155798,	-- Mawsworn Shackler (not sure if this version exists?)
+								150965,	-- Mawsworn Shackler (this is the one i got the criteria from, in Twisting Corridors)
+							},
 						}),
 						crit(8, {	-- Purifier's Flame
 							["achievementID"] = 14778,	-- Extremely Ravenous
