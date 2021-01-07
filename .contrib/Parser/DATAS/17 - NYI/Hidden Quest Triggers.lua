@@ -2965,9 +2965,6 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
-		q(62750),	-- Reaching Renown 19 Venthyr
-		q(62753),	-- Reaching Renown 19 Necrolord
-		q(62756),	-- Reaching Renown 19 Kyrian
 		
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
@@ -3229,6 +3226,7 @@ _.HiddenQuestTriggers =
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
+		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3286,6 +3284,7 @@ _.HiddenQuestTriggers =
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
 		q(62929),	-- Triggered when freeing Neena from cage to make Every Dog Has Its Day (59615) available
 		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
+		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -3470,6 +3469,7 @@ _.HiddenQuestTriggers =
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
+		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
