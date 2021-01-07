@@ -144,7 +144,7 @@ _.ExpansionFeatures =
 						follower(1257),	-- Meatball
 					},
 				}),
-				q(61221, {	-- Champion: Stonehuck [Venthyr???]
+				q(61221, {	-- Champion: Stonehuck [Venthyr]
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
 					["provider"] = { "n", 171878 },	-- Stonehuck
 					["g"] = {
@@ -281,6 +281,7 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61234, {	-- Stonehuck's Sinstone
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 171879 },	-- Stonehuck
 				}),
@@ -406,7 +407,7 @@ _.ExpansionFeatures =
 				q(61978, {	-- Mort'regar, Layer 8
 					["isWeekly"] = true,
 					["title"] = "Mort'regar, Layer 8",
-				}),				
+				}),
 				
 				-- Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1
@@ -441,7 +442,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Skoldus Hall, Layer 8",
 				}),
-								
+				
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
 					["isWeekly"] = true,
