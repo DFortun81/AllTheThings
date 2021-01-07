@@ -77,6 +77,11 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(61559, {	-- A Mourneblade Born
+					["sourceQuests"] = { 61558 },	-- The Highlord's Vision
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.0, 65.3, 1670 },
+				}),
 				q(57025, {	-- A Plea to Revendreth
 					["sourceQuests"] = { 58724 },	-- The Queen's Request
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -151,6 +156,12 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
 					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(61557, {	-- An Echo in the Darkness
+					["sourceQuests"] = { 
+						60501,	-- Redemption for the Redeemer
+						60146,	-- Torment Chamber: Thrall
+					},
 				}),
 				q(60149, {	-- Audience with the Arbiter
 					["sourceQuests"] = { 60148 },	-- No Place for the Living
@@ -268,6 +279,16 @@ _.Zones =
 						i(183224),	-- Memory of a Deep Focus Draught
 						i(183269),	-- Memory of the Triune Ward
 					},
+				}),
+				q(61558, {	-- The Highlord's Vision
+					["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
+					["provider"] = { "n", 171362 },	-- Thrall
+					["coord"] = { 40.0, 68.4, 1670 },
+				}),
+				q(62569, {	-- The Jailer's Grasp
+					["sourceQuests"] = { 61559 },	-- A Mourneblade Born
+					["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
+					["coord"] = { 39.8, 68.0, 1670 },
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning
