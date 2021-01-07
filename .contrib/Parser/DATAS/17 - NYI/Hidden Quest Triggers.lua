@@ -2965,6 +2965,9 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
+		q(62750),	-- Reaching Renown 19 Venthyr
+		q(62753),	-- Reaching Renown 19 Necrolord
+		q(62756),	-- Reaching Renown 19 Kyrian
 		
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
