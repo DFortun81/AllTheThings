@@ -972,12 +972,17 @@ _.Zones =
 								q(61732, {	-- Old Habits Never Die
 									["provider"] = { "n", 173042 },	-- Second Talon Shenraa
 									["isDaily"] = true,
-									["coord"] = { 72.3, 76.0, 1525 },
+									["coord"] = { 72.3, 76.0, 1525 },	-- Revendreth
+								}),
+								q(61847, {	-- Overdue Purging
+									["provider"] = { "n", 173087 },	-- Ironwing Fraado
+									["isDaily"] = true,
+									["coord"] = { 71.4, 76.3, 1525 },	-- Revendreth
 								}),
 								q(61849, {	-- Take the Bite Out of 'Em
 									["provider"] = { "n", 173630 },	-- Partially-eaten Iger
 									["isDaily"] = true,
-									["coord"] = { 71.2, 74.4, 1525 },
+									["coord"] = { 71.2, 74.4, 1525 },	-- Revendreth
 								}),
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
