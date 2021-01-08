@@ -11312,12 +11312,13 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect then
 			local customCollectEx;
+			local requires = L["REQUIRES"] or "Requires";
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
 				if not app.CustomCollects[c] then
-					GameTooltip:AddDoubleLine("|cffc20000Requires:|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
 				else
-					GameTooltip:AddDoubleLine("Requires: " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+					GameTooltip:AddDoubleLine(requires .. ": " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
 				end
 			end
 		end
