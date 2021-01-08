@@ -361,7 +361,7 @@ _.Zones =
 						62605,	-- Broker Business (breadcrumb?)
 						57425,	-- Land of Opportunity
 					},	
-					["provider"] = { "n", 162615 },	-- Ta'eran
+					["provider"] = { "n", 166657 },	-- Ta'eran
 					["coord"] = { 40.6, 33.0, 1536 },
 				}),
 				q(58621, {	-- Repeat After Me
