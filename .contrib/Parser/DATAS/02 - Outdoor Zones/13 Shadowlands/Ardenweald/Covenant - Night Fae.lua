@@ -321,7 +321,7 @@ _.Zones =
 					}),
 					q(62890, {	-- Who Shapes the Forest
 						["sourceQuests"] = { 62697 },	-- A Call to Service
-						["provider"] = { "n", 165702 },	-- Blodwyn
+						["provider"] = { "n", 167195 },	-- Blodwyn
 						["coord"] = { 53.8, 6.2, 1701 },
 					}),
 					q(62891, {	-- Into the Reservoir
@@ -855,11 +855,6 @@ _.Zones =
 					}),
 					-- Daughter of the Night Warrior
 					-- From Ardenweald to the Maw and back
-					q(62890, {	-- The Life-blood of the Forest
-						["provider"] = { "n", 165702 },	-- Blodwyn
-						["coord"] = { 46.4, 50.6, 1565 },
-						["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
-					}),
 					--]]
 					q(60108, {	-- Drust and Ashes
 						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>

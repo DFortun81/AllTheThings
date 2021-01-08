@@ -51,12 +51,6 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { , , 1670 },
 						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62569, {	-- quest not found
-						["description"] = "Area: |cFFf09f26Oribos|r",
-						["_drop"] = { "g" },
-						["lvl"] = 60,
-						["u"] = NEVER_IMPLEMENTED,	-- move to NYI > NYI Quests file if this doesn't show up in the next few months i guess
 					}),--]]
 				}),
 				q(60151, {	-- A Doorway Through the Veil
@@ -158,7 +152,8 @@ _.Zones =
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(61557, {	-- An Echo in the Darkness
-					["sourceQuests"] = { 
+					["description"] = "Provided automatically when zoning or changing floors in Oribos.",
+					["sourceQuests"] = {
 						60501,	-- Redemption for the Redeemer
 						60146,	-- Torment Chamber: Thrall
 					},
@@ -282,7 +277,10 @@ _.Zones =
 				}),
 				q(61558, {	-- The Highlord's Vision
 					["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
-					["provider"] = { "n", 171362 },	-- Thrall
+					["providers"] = {
+						{ "n", 171362 },	-- Thrall (this NPC gives the quest but the RP does not properly progress)
+						{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
+					},
 					["coord"] = { 40.0, 68.4, 1670 },
 				}),
 				q(62569, {	-- The Jailer's Grasp

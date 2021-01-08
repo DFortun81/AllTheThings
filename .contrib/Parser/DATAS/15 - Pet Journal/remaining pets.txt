@@ -1,7 +1,6 @@
 unsourced pet items
 -- already in ATT pet journal
 i(182671)	-- Runelight Leaper
-i(182683)	-- Dredger Butler's Contract(probably Temel vendor)
 i(183107)	-- Pile of Ashen Dust(Ashen Amalaganation drop)
 i(180629)	-- Thumbbiter
 i(181282)	-- Mu'dud(profession abom stitching)

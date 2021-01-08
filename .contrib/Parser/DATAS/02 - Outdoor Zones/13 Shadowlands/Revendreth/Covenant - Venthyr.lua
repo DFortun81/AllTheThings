@@ -1258,9 +1258,10 @@ _.Zones =
 									i(183107),	-- Char (pet)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
-									i(183886, {	-- Sika's Rare Ore Pouch
+									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
 									}),
+									i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
 									i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
 										["questID"] = 62628,	-- Vole's Voucher
 									}),
@@ -1570,6 +1571,44 @@ _.Zones =
 									}),
 								}),
 								n(-962, {	-- Tier 2: Homegrown Help
+									q(61766, {	-- Homegrown Help
+										-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify sourceQuest
+										["provider"] = { "n", 164966 },	-- Temel
+										["coord"] = { 27.9, 43.0, 1525 },	-- Revendreth
+									}),
+									q(61851, {	-- Shades of Muck
+										["sourceQuests"] = { 61766 },	-- Homegrown Help
+										["provider"] = { "n", 157846 },	-- Rendle
+										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									}),
+									q(61762, {	-- Making a Smarter Dredger
+										["sourceQuests"] = { 61851 },	-- Shades of Muck
+										["provider"] = { "n", 157846 },	-- Rendle
+										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									}),
+									q(61763, {	-- Dredging Up an Assistant
+										["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
+										["provider"] = { "n", 157846 },	-- Rendle
+										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+										["g"] = {
+											i(182683),	-- Dredger Butler's Contract (pet)
+										},
+									}),
+									q(62361, {	-- Introductions are in Order
+										["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+										["provider"] = { "n", 157846 },	-- Rendle
+										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									}),
+									q(61764, {	-- Dredging up a Name
+										["sourceQuests"] = { 62361 },	-- Introductions are in Order
+										-- ["provider"] = { "n",  },	-- Dredger Butler
+										-- ["coord"] = {  },	-- your 'pet'
+									}),
+									q(62985, {	-- Dredging up a New Look
+										["sourceQuests"] = { 61764 },	-- Dredging up a Name
+										-- ["provider"] = { "n",  },	-- Dredger Butler
+										-- ["coord"] = {  },	-- your 'pet'
+									}),
 								}),
 								n(-963, {	-- Tier 3: Court Influencer
 								}),

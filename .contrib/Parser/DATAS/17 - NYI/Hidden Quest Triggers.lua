@@ -3439,6 +3439,34 @@ _.HiddenQuestTriggers =
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
 		q(59618),	-- triggered when using "RSVP: Stonehead"
 		q(59619),	-- triggered when using "RSVP: Stonehead"
+		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
+		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
+		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
+		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
+		q(61582),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61585),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
+		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
+		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
+		q(61796),	-- Choosing name 'Smither' during 'Dredging up a Name' (61764)
+		q(61797),	-- Choosing name 'Higgs' during 'Dredging up a Name' (61764)
+		q(61798),	-- Choosing name 'Muckworth Muddington III' during 'Dredging up a Name' (61764)
+		q(61799),	-- Choosing name 'Belvy' during 'Dredging up a Name' (61764)
+		q(61800),	-- Choosing name 'Wustur' during 'Dredging up a Name' (61764)
+		q(61801),	-- Choosing name 'Riff' during 'Dredging up a Name' (61764)
+		q(61802),	-- Choosing name 'Egor' during 'Dredging up a Name' (61764)
+		q(61803),	-- Choosing name 'Dredgeworth' during 'Dredging up a Name' (61764)
+		q(61804),	-- Choosing name 'Furgus' during 'Dredging up a Name' (61764)
+		q(61805),	-- Choosing name 'Colem' during 'Dredging up a Name' (61764)
+		q(61806),	-- Choosing name 'Panns' during 'Dredging up a Name' (61764)
+		q(61807),	-- Choosing name 'Mucky' during 'Dredging up a Name' (61764)
+		q(61808),	-- Choosing name 'Dobb' during 'Dredging up a Name' (61764)
+		q(61809),	-- Choosing name 'Sweepy' during 'Dredging up a Name' (61764)
+		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
+		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
+		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
+		q(62179),	-- When completing 'Dredging up a New Look' (62985) (Vial of Blue Muck Dye?)
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)

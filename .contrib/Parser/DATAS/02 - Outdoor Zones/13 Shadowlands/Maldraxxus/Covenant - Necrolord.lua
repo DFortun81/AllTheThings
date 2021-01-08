@@ -886,8 +886,8 @@ _.Zones =
 					q(61739, {	-- The Wayward Baron
 						["description"] = "Requires Renown 20.",
 						-- ["sourceQuests"] = {  },	-- 
-						["provider"] = { "n", 173172 },	-- 
-						["coord"] = { 49.7, 49.8, 1698 },	-- 
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 49.7, 49.8, 1698 },	-- Seat of the Primus
 					}),
 					q(61740, {	-- Playing Favorites
 						["sourceQuests"] = { 61739 },	-- The Wayward Baron
