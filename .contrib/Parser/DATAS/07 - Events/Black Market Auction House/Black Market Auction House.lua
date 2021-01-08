@@ -194,6 +194,7 @@ _.WorldEvents =
 				i(94835),	-- Ji-Kun Hatchling
 				i(104165),	-- Kovok
 				i(48118),	-- Leaping Hatchling
+				i(172016),	-- Lil' Nefarian
 				i(94125),	-- Living Sandling
 				i(45002),	-- Mechanopeep Pet
 				i(44980),	-- Mulgore Hatchling Pet
