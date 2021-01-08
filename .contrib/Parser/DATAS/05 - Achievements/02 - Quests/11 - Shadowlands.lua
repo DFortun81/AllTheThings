@@ -165,28 +165,28 @@ _.Achievements =
 			--	["_quests"] = { 59717 },	-- Things Remembered
 				["g"] = {
 					crit(1, {	-- Eridia, Hand of Purity
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(2, {	-- Kalisthene
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(3, {	-- Chyrus, Paragon of Humility
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(4, {	-- Kleia
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(5, {	-- Pelagos
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(6, {	-- Forgelite Sophone
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(7, {	-- Uther
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 					crit(8, {	-- Mikanikos
-						["_quests"] = { 59717 },	-- Things Remembered
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
 					}),
 				},
 			}),
