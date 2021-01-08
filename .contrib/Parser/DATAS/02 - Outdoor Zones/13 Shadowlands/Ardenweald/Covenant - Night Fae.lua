@@ -1054,6 +1054,12 @@ _.Zones =
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
 								}),
+								q(62442, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
 								q(62443, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 									["provider"] = { "n", 174324 },	-- Conservator Aoni

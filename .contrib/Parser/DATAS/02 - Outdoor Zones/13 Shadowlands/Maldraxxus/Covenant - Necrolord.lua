@@ -963,7 +963,7 @@ _.Zones =
 					}),
 					q(62317, {	-- Casting Doubt
 						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
-						-- ["provider"] = { "o",  },	-- Sorcerer's Note
+						["provider"] = { "o", 358319 },	-- Sorcerer's Note
 						["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
 						["g"] = {
 							i(183397, {	-- Sorcerer's Blade
@@ -1000,8 +1000,9 @@ _.Zones =
 						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
 						["g"] = {
 							i(182270),	-- Bladesworn Conjurer's Slippers
+							i(182252),	-- Bladesworn Harbinger's Stompers
+							i(182279),	-- Bladesworn Tactician's Sabatons
 							i(182261),	-- Bladesworn Wraith's Boots
-							-- TODO: Mail/Plate
 						},
 					}),
 					q(61753, {	-- Explosive Schemes
@@ -1013,6 +1014,7 @@ _.Zones =
 						["sourceQuests"] = { 61753 },	-- Explosive Schemes
 						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
 						-- ["coord"] = {  },	-- is your 'pet'
+						["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
 					}),
 					q(61755, {	-- Blinding the Brokers
 						["sourceQuests"] = { 61753 },	-- Explosive Schemes
@@ -1040,7 +1042,7 @@ _.Zones =
 							}),
 						},
 					}),
-					q(61575, {	-- Caught in the Act
+					q(61757, {	-- Caught in the Act
 						["sourceQuests"] = { 61756 },	-- Designed to Fail
 						["provider"] = { "n", 172923 },	-- Kel'Thuzad
 						["coord"] = { 44.1, 26.9, 1652 },	-- Vault of Souls
@@ -1061,8 +1063,9 @@ _.Zones =
 						["coord"] = { 52.5, 63.8, 1652 },	-- Vault of Souls
 						["g"] = {
 							i(182269),	-- Bladesworn Conjurer's Tunic
+							i(182251),	-- Bladesworn Harbinger's Chestguard
+							i(182278),	-- Bladesworn Tactician's Hauberk
 							i(182260),	-- Bladesworn Wraith's Jerkin
-							-- TODO: Mail/Plate
 						},
 					}),
 					q(61761, {	-- The Better Part of Valor
