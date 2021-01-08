@@ -184,6 +184,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59705, {	-- Things Remembered
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62241, {	-- Training Regimen
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
