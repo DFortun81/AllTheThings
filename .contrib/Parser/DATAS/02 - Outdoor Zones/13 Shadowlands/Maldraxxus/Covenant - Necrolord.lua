@@ -882,7 +882,239 @@ _.Zones =
 						["coord"] = { 49.8, 50.6, 1698 },
 					}),
 					
-					-- TODO: Chapter 8 (The House of Rituals), requires Renown 20
+					-- Chapter 8 (The House of Rituals), requires Renown 20
+					q(61739, {	-- The Wayward Baron
+						["description"] = "Requires Renown 20.",
+						-- ["sourceQuests"] = {  },	-- 
+						["provider"] = { "n", 173172 },	-- 
+						["coord"] = { 49.7, 49.8, 1698 },	-- 
+					}),
+					q(61740, {	-- Playing Favorites
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+					}),
+					q(61741, {	-- Pilfered Power
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+					}),
+					q(62414, {	-- Burying Suspicion
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+					}),
+					q(61742, {	-- A Fitting Guise
+						["sourceQuests"] = {
+							61740,	-- Playing Favorites
+							61741,	-- Pilfered Power
+							62414,	-- Burying Suspicion
+						},
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						-- ["coord"] = {  },	-- is your 'pet'
+					}),
+					q(61743, {	-- The Pupil Returns
+						["sourceQuests"] = { 61742 },	-- A Fitting Guise
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+					}),
+					q(62297, {	-- A Fatal Failure
+						["sourceQuests"] = { 61742 },	-- A Fitting Guise
+						["provider"] = { "n", 174020 },	-- 
+						["coord"] = { 70.4, 27.7, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(183394, {	-- Discarded Grimoire
+								["questID"] = 62266,
+							}),
+						},
+					}),
+					q(61744, {	-- The Baron's Plan
+						["sourceQuests"] = { 61743 },	-- The Pupil Returns
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 50.0, 52.0, 1652 },	-- Vault of Souls
+					}),
+					q(61745, {	-- Mistress of Tomes
+						["sourceQuests"] = { 61744 },	-- The Baron's Plan
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 44.0, 27.3, 1652 },	-- Vault of Souls
+					}),
+					q(61746, {	-- Cantrip Collections
+						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+					}),
+					q(61747, {	-- Errant Enchantments
+						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+					}),
+					q(61748, {	-- The Hall of Tomes
+						["sourceQuests"] = {
+							61746,	-- Cantrip Collections
+							61747,	-- Errant Enchantments
+						},
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+					}),
+					q(61749, {	-- Necessary Ingredients
+						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 43.9, 27.1, 1652 },	-- Vault of Souls
+					}),
+					q(62317, {	-- Casting Doubt
+						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
+						-- ["provider"] = { "o",  },	-- Sorcerer's Note
+						["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
+						["g"] = {
+							i(183397, {	-- Sorcerer's Blade
+								["questID"] = 62306,
+							}),
+						},
+					}),
+					q(61750, {	-- Heart of the Forest
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+					}),
+					q(61751, {	-- Cage Free Spores
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+					}),
+					q(62320, {	-- Regalia de Rigeuer
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 174120 },	-- Moret the Vogue
+						["coord"] = { 71.7, 32.9, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(183401, {	-- Amethystine Dye
+								["questID"] = 62319,
+							}),
+						},
+					}),
+					q(61752, {	-- The Final Reagent
+						["sourceQuests"] = {
+							61750,	-- Heart of the Forest
+							61751,	-- Cage Free Spores
+						},	-- 
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(182270),	-- Bladesworn Conjurer's Slippers
+							i(182261),	-- Bladesworn Wraith's Boots
+							-- TODO: Mail/Plate
+						},
+					}),
+					q(61753, {	-- Explosive Schemes
+						["sourceQuests"] = { 61752 },	-- The Final Reagent
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+					}),
+					q(61754, {	-- No Crate Unturned
+						["sourceQuests"] = { 61753 },	-- Explosive Schemes
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						-- ["coord"] = {  },	-- is your 'pet'
+					}),
+					q(61755, {	-- Blinding the Brokers
+						["sourceQuests"] = { 61753 },	-- Explosive Schemes
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						-- ["coord"] = {  },	-- is your 'pet'
+					}),
+					q(61756, {	-- Designed to Fail
+						["sourceQuests"] = {
+							61754,	-- No Crate Unturned
+							61755,	-- Blinding the Brokers
+						},
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+					}),
+					q(62308, {	-- Mantle of Mastery
+						["sourceQuests"] = {
+							61754,	-- No Crate Unturned TODO: (confirm?)
+							61755,	-- Blinding the Brokers TODO: (confirm?)
+						},
+						["provider"] = { "n", 172813 },	-- Ton'hamil
+						["coord"] = { 67.9, 30.6, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(183399, {	-- Ritualist's Mantle
+								["questID"] = 62311,
+							}),
+						},
+					}),
+					q(61575, {	-- Caught in the Act
+						["sourceQuests"] = { 61756 },	-- Designed to Fail
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 44.1, 26.9, 1652 },	-- Vault of Souls
+					}),
+					q(61758, {	-- Improvised Implements
+						["sourceQuests"] = { 61575 },	-- Caught in the Act
+						-- ["provider"] = { "n",  },	-- auto-accepted
+						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
+					}),
+					q(61759, {	-- A Helpful Hand
+						["sourceQuests"] = { 61758 },	-- Improvised Implements
+						-- ["provider"] = { "n",  },	-- auto-accepted
+						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
+					}),
+					q(61760, {	-- The Traitor Unmasked
+						["sourceQuests"] = { 61759 },	-- A Helpful Hand
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 52.5, 63.8, 1652 },	-- Vault of Souls
+						["g"] = {
+							i(182269),	-- Bladesworn Conjurer's Tunic
+							i(182260),	-- Bladesworn Wraith's Jerkin
+							-- TODO: Mail/Plate
+						},
+					}),
+					q(61761, {	-- The Better Part of Valor
+						["sourceQuests"] = { 61760 },	-- The Traitor Unmasked
+						["provider"] = { "n", 173831 },	-- Balmedar
+						["coord"] = { 69.9, 27.0, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(183847),	-- Acolyte's Guise
+						},
+					}),
+					q(62391, {	-- Mobilize Maldraxxus
+						["sourceQuests"] = { 61761 },	-- The Better Part of Valor
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+					}),
+
+
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
 					
 					-- TODO: Chapter 9 (Assault on the House of Rituals), requires Renown 22
 
@@ -904,6 +1136,11 @@ _.Zones =
 						},
 					}),
 					--]]
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
 				}),
 				n(RARES, {
 				}),
