@@ -184,10 +184,10 @@ _.Zones =
 					q(60454, {	-- Storm the Maw
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 66.8, 15.8, 1533 },
 						["isWeekly"] = true,
+						["coord"] = { 59.4, 34.4, 1708 },	-- Sanctum of Binding
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181741),	-- Tribute of the Paragon
 						},
 					}),
 					q(60404, {	-- Training Our Forces

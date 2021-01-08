@@ -3449,9 +3449,10 @@ _.HiddenQuestTriggers =
 		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
-		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	-- incremental power/ability boosts each time you complete the WQ
+		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
 		q(60612),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor rank 2 WQ (as assassin)
+		q(60636),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor rank 2 WQ (as assassin)
 		q(60608),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as stone golem dude)
 		q(61493),	-- when using "Building: Dredger Pool"
 		q(59472),	-- when using "Contract: Traditional Theme"
