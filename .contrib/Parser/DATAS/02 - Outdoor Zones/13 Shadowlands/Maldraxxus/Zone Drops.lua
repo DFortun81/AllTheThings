@@ -58,6 +58,21 @@ _.Zones =
 				i(178946),	-- Gore-Smudged Sword
 				i(178952),	-- Gore-Smudged Warglaive
 				i(176798),	-- Larion Claw
+				i(183691, {	-- Mucosal Pigment
+					["questID"] = 62405,
+					["crs"] = {
+						165027,	-- Burning Extract
+						171745,	-- Congealed Plague
+						166358,	-- Green Slime
+						160048,	-- Plaguedoused Remnant
+						166335,	-- Slime Giant
+					},
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 14763,	-- Crypt Couture
+						}),
+					},
+				}),
 				i(176987),	-- Ossein Scale Belt
 				i(176991),	-- Ossein Scale Cuffs
 				i(176973),	-- Ossein Scale Gauntlets

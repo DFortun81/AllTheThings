@@ -29,6 +29,14 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184188),	-- Collector's Corpse Gambrel
+						i(183692, {	-- Jagged Bonesaw
+							["questID"] = 62408,
+							["g"] = {
+								crit(2, {
+									["achievementID"] = 14763,	-- Crypt Couture
+								}),
+							},
+						}),
 						i(184181),	-- Kash's Favored Hook
 						i(184189),	-- Stained Fleshgorer
 						i(184182),	-- Strengthened Abomination Hook
@@ -157,7 +165,7 @@ _.Zones =
 					["coord"] = { 53.8, 61.0, 1536 },
 					["g"] = {
 						crit(19, {	-- Pesticide
-							["achievementID"] = 14308,	-- Adventurer of Bastion
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182205),	-- Scarab-Shell Faceguard
 					},
@@ -353,6 +361,14 @@ _.Zones =
 					["g"] = {
 						crit(3, {	-- Zargox the Reborn
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(183690, {	-- Ashen Ink
+							["questID"] = 62404,
+							["g"] = {
+								crit(1, {
+									["achievementID"] = 14763,	-- Crypt Couture
+								}),
+							},
 						}),
 						i(184285),	-- Boneclutched Shackles
 						i(181804),	-- Trophy of the Reborn Bonelord

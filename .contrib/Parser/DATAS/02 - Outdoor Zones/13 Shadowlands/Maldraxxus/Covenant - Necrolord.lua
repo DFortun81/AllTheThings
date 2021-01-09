@@ -925,6 +925,11 @@ _.Zones =
 						["g"] = {
 							i(183394, {	-- Discarded Grimoire
 								["questID"] = 62266,
+								["g"] = {
+									crit(3, {
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
 							}),
 						},
 					}),
@@ -968,6 +973,11 @@ _.Zones =
 						["g"] = {
 							i(183397, {	-- Sorcerer's Blade
 								["questID"] = 62306,
+								["g"] = {
+									crit(4, {
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
 							}),
 						},
 					}),
@@ -988,6 +998,11 @@ _.Zones =
 						["g"] = {
 							i(183401, {	-- Amethystine Dye
 								["questID"] = 62319,
+								["g"] = {
+									crit(6, {
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
 							}),
 						},
 					}),
@@ -1039,6 +1054,11 @@ _.Zones =
 						["g"] = {
 							i(183399, {	-- Ritualist's Mantle
 								["questID"] = 62311,
+								["g"] = {
+									crit(7, {
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
 							}),
 						},
 					}),

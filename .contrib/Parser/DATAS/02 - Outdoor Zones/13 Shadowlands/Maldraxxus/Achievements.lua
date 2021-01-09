@@ -46,6 +46,7 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
+				ach(14763),	-- Crypt Couture
 				ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
