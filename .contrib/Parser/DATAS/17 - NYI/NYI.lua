@@ -20,12 +20,12 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
-		un(NEVER_IMPLEMENTED, i(182075)),	-- Bonehoof Tauralus (MOUNT!)
+		un(NEVER_IMPLEMENTED, i(182083)),	-- Bonecleaver's Skullboar
+		un(NEVER_IMPLEMENTED, i(182075)),	-- Bonehoof Tauralus
 		-- Gear
 		un(NEVER_IMPLEMENTED, i(171401)),	-- Phaeweald Rapier
 		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
-		un(NEVER_IMPLEMENTED, i(183439)),	-- Sinful Gladiator's Crystal (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(176002)),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(176003)),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
 		un(NEVER_IMPLEMENTED, i(178389)),	-- Sinful Gladiator's Recurve (existed in beta; doesn't appear to exist in live)

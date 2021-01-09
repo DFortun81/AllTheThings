@@ -289,7 +289,7 @@ _.Zones =
 						n(168147, { -- Sabriel the Bonecleaver
 							["description"] = "Requires a member of the |cFF40bf40Necrolord Covenant|r to summon.",
 							["isDaily"] = true,
-						--	["questID"] = ,
+							["questID"] = 58784,
 							["coord"] = { 50.4, 48.2, 1536 },
 							["g"] = {
 								crit(13, {	-- Sabriel the Bonecleaver
@@ -301,7 +301,6 @@ _.Zones =
 								i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 									["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 								}),
-								i(182083),	-- Bonecleaver's Skullboar (MOUNT!)
 							},
 						}),
 						n(162874, {	-- Ti'or
