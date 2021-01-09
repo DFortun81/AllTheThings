@@ -31,6 +31,7 @@ _.Zones =
 							i(184630),	-- Adventurer's Tailoring Cache
 							i(184643),	-- Champion's Enchanting Cache
 							i(184632),	-- Champion's Fish Cache
+							i(184642),	-- Champion's Herbalism Cache
 							i(184633),	-- Champion's Meat Cache
 							i(184641),	-- Champion's Mining Cache
 							i(184640),	-- Champion's Skinning Cache
