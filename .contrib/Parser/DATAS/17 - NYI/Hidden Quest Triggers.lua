@@ -3179,6 +3179,7 @@ _.HiddenQuestTriggers =
 			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 		--	Bastion Rares
 		q(63422),	-- Aethon secondary quest
+		q(60977),	-- Ascended Council secondary quest (Cache of the Ascended)
 		q(62192),	-- Baedos secondary quest
 		q(62158),	-- Basilofos secondary quest
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022

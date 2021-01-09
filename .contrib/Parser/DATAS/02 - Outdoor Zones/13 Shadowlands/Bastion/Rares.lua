@@ -19,8 +19,10 @@ _.Zones =
 						i(179487),	-- Aethon's Horn
 					},
 				}),
-				n(-940,   {	-- Ascendend Council
+				n(-940,   {	-- Ascended Council
 					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
+					["questID"] = 60977,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 53.5, 88.3, 1533 },	-- The Ascended Council
 						{ 33.3, 59.7, 1533 },	-- Vesper of Courage
@@ -30,23 +32,14 @@ _.Zones =
 						{ 32.1, 17.8, 1533 },	-- Vesper of Loyalty
 					},
 					["crs"] = { 
-						170834,	-- Champion of Purity
 						170835,	-- Champion of Courage	
-						170833,	-- Champion of Wisdom
 						170836,	-- Champion of Humility
+						170832,	-- Champion of Loyalty
+						170834,	-- Champion of Purity
+						170833,	-- Champion of Wisdom
 					},
 					["g"] = {
 						i(183741),	-- Ascended Skymane
-						n(170832, { -- Champion of Loyalty
-							--["coord"] = { 43.0, 82.6, 1533 },
-							--["questID"] = ,
-							["isDaily"] = true,
-							["g"] = {
-								crit(28, {	-- Champion of Loyalty
-									["achievementID"] = 14307,	-- Adventurer of Bastion
-								}),
-							},
-						}),
 					},
 				}),
 				n(171211, { -- Aspirant Eolis
@@ -255,10 +248,13 @@ _.Zones =
 				}),
 				n(156340, { -- Larionrider Orstus
 					["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+					["questID"] = 61634,
 					["isDaily"] = true,
 					["coord"] = { 24.5, 22.7, 1533 },
-					--["questID"] = ,
 					["g"] = {
+						crit(28, {	-- Orstus and Sotiros
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(184401),	-- Larion Pouncer (PET!)
 					},
 				}),
