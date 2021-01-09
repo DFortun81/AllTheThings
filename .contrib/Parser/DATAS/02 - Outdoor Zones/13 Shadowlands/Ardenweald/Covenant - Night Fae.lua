@@ -20,206 +20,228 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					n(-901, {	-- Covenant Callings
-						["g"] = {
-							q(60381, {	-- Aiding Ardenweald
-								["provider"] = { "n", 167195 },	-- Blodwyn
-								["coord"] = { 46.4, 50.6, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60384, {	-- Aiding Bastion
-								["provider"] = { "n", 167195 },	-- Blodwyn
-								["coord"] = { 46.4, 50.6, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60383, {	-- Aiding Maldraxxus
-								["provider"] = { "n", 167195 },	-- Blodwyn
-								["coord"] = { 46.4, 50.6, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60382, {	-- Aiding Revendreth
-								["provider"] = { "n", 167195 },	-- Blodwyn
-								["coord"] = { 46.4, 50.6, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60462, {	-- Anima Appeal
-								["provider"] = { "n", 167196 },	-- Sesselie
-								["coord"] = { 48.9, 39.3, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60457, {	-- Anima Salvage
-								["provider"] = { "n", 158553 },	-- Flutterby
-								["coord"] = { 33.9, 43.5, 1565 },
-								["isWeekly"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60418, {	-- A Call to Bastion
-								["provider"] = { "n", 167193 },	-- Featherlight
-								["coord"] = { 59.7, 31.3, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60421, {	-- A Call to Revendreth
-								["provider"] = { "n", 167193 },	-- Featherlight
-								["coord"] = { 59.7, 31.3, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60420, {	-- A Call to Maldraxxus
-								["provider"] = { "n", 167193 },	-- Featherlight
-								["coord"] = { 59.7, 31.3, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60373, {	-- A Source of Sorrowvine
-								["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-								["coord"] = { 16.5, 52.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60369, {	-- A Wealth of Wealdwood
-								["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-								["coord"] = { 16.5, 52.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60374, {	-- Bonemetal Bonanza
-								["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-								["coord"] = { 16.5, 52.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60438, {	-- Challenges in Ardenweald
-								["provider"] = { "n", 167206 },	-- Yanlar
-								["coord"] = { 36.8, 24.8, 1533 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60437, {	-- Challenges in Bastion
-								["provider"] = { "n", 167206 },	-- Yanlar
-								["coord"] = { 36.8, 24.8, 1533 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60436, {	-- Challenges in Maldraxxus
-								["provider"] = { "n", 167206 },	-- Yanlar
-								["coord"] = { 36.8, 24.8, 1533 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60435, {	-- Challenges in Revendreth
-								["provider"] = { "n", 167206 },	-- Yanlar
-								["coord"] = { 36.8, 24.8, 1533 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60364, {	-- Gildenite Grab
-								["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-								["coord"] = { 16.5, 52.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60414, {	-- Rare Resources
-								["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-								["coord"] = { 16.5, 52.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60452, {	-- Storm the Maw
-								["provider"] = { "n", 158553 },	-- Flutterby
-								["coord"] = { 33.9, 43.5, 1565 },
-								["isWeekly"] = true,
-								["g"] = {
-									i(181476),	-- Tribute of the Wild Hunt
-								},
-							}),
-							q(60388, {	-- Training Our Forces
-								["provider"] = { "n", 158544 },	-- Lord Herne
-								["coord"] = { 40.9, 72.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60387, {	-- Training in Bastion
-								["provider"] = { "n", 158544 },	-- Lord Herne
-								["coord"] = { 40.9, 72.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60386, {	-- Training in Maldraxxus
-								["provider"] = { "n", 158544 },	-- Lord Herne
-								["coord"] = { 40.9, 72.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60385, {	-- Training in Revendreth
-								["provider"] = { "n", 158544 },	-- Lord Herne
-								["coord"] = { 40.9, 72.4, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-							q(60419, {	-- Troubles at Home
-								["provider"] = { "n", 167193 },	-- Featherlight
-								["coord"] = { 59.7, 31.3, 1565 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181475),	-- Tribute of the Grove Wardens
-								},
-							}),
-						},
+						q(60381, {	-- Aiding Ardenweald
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167195 },	-- Blodwyn
+							["coord"] = { 46.4, 50.6, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60384, {	-- Aiding Bastion
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167195 },	-- Blodwyn
+							["coord"] = { 46.4, 50.6, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60383, {	-- Aiding Maldraxxus
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167195 },	-- Blodwyn
+							["coord"] = { 46.4, 50.6, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60382, {	-- Aiding Revendreth
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167195 },	-- Blodwyn
+							["coord"] = { 46.4, 50.6, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60462, {	-- Anima Appeal
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167196 },	-- Sesselie
+							["coord"] = { 48.9, 39.3, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60457, {	-- Anima Salvage
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 158553 },	-- Flutterby
+							["coord"] = { 33.9, 43.5, 1565 },
+							["isWeekly"] = true,
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60418, {	-- A Call to Bastion
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.7, 31.3, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60421, {	-- A Call to Revendreth
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.7, 31.3, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60420, {	-- A Call to Maldraxxus
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.7, 31.3, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60373, {	-- A Source of Sorrowvine
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 16.5, 52.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60369, {	-- A Wealth of Wealdwood
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 16.5, 52.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60374, {	-- Bonemetal Bonanza
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 16.5, 52.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60438, {	-- Challenges in Ardenweald
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167206 },	-- Yanlar
+							["coord"] = { 36.8, 24.8, 1533 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60437, {	-- Challenges in Bastion
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167206 },	-- Yanlar
+							["coord"] = { 36.8, 24.8, 1533 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60436, {	-- Challenges in Maldraxxus
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167206 },	-- Yanlar
+							["coord"] = { 36.8, 24.8, 1533 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60435, {	-- Challenges in Revendreth
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167206 },	-- Yanlar
+							["coord"] = { 36.8, 24.8, 1533 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60364, {	-- Gildenite Grab
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 16.5, 52.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60414, {	-- Rare Resources
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 16.5, 52.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60452, {	-- Storm the Maw
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 158553 },	-- Flutterby
+							["isWeekly"] = true,
+							["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
+							["g"] = {
+								i(181476),	-- Tribute of the Wild Hunt
+							},
+						}),
+						q(60388, {	-- Training Our Forces
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 158544 },	-- Lord Herne
+							["coord"] = { 40.9, 72.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60387, {	-- Training in Bastion
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 158544 },	-- Lord Herne
+							["coord"] = { 40.9, 72.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60386, {	-- Training in Maldraxxus
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 158544 },	-- Lord Herne
+							["coord"] = { 40.9, 72.4, 1565 },
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
+						q(60385, {	-- Training in Revendreth
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["repeatable"] = true,
+							["provider"] = { "n", 158544 },	-- Lord Herne
+							["coord"] = { 40.9, 72.4, 1701 },	-- The Trunk
+							["g"] = {
+								i(181556),	-- Tribute of the Court
+							},
+						}),
+						q(60419, {	-- Troubles at Home
+							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.7, 31.3, 1701 },	-- The Trunk
+							["repeatable"] = true,
+							["g"] = {
+								i(181475),	-- Tribute of the Grove Wardens
+							},
+						}),
 					}),
 					
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
 						-- No idea what triggers this because they added the quest weeks after I already had Dreamweaver.
-						-- If someone quests on a new Night Fae character they might be able to figure out the sourceQuest(s)
+						-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
 					}),
@@ -241,14 +263,14 @@ _.Zones =
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
+						["coord"] = { 33.9, 43.5, 1702 },	-- The Roots
 					}),
 					q(61331, {	-- Return Lost Souls (5 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
+						["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
 					}),
 					q(62858, {	-- Return Lost Souls (10 soul version)
 						["provider"] = { "n", 158553 },	-- Flutterby
@@ -314,7 +336,7 @@ _.Zones =
 					q(62693, {	-- A Calling in Ardenweald
 						["sourceQuests"] = { 62697 },	-- A Call to Service
 						["provider"] = { "n", 165702 },	-- Blodwyn
-						["coord"] = { 53.8, 6.2, 1701 },
+						["coord"] = { 53.8, 6.2, 1701 },	-- The Trunk
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -359,6 +381,12 @@ _.Zones =
 						["sourceQuests"] = { 62898 },	-- The First New Growth
 						["provider"] = { "n", 172431 },	-- Lady Moonberry
 						["coord"] = { 49.5, 40.0, 1701 },
+					}),
+					q(63008, {	-- The Forge of Bonds
+					--	TODO: unsure how to pick up this version.  it automatically turned in with 61541
+					--	["sourceQuests"] = {  },	-- 
+						["provider"] = { "n", 156634 },	-- Winter Queen
+					--	["coord"] = {  },
 					}),
 					q(61542, {	-- The Boon of Binding
 						["sourceQuests"] = { 61541 },	-- The Forge of Bonds
@@ -873,13 +901,12 @@ _.Zones =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63067, {	-- Root Restoration
 								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-								["coord"] = { 39.6, 55.0, 1702 },
-								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
+								["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
 							}),
 							q(60723, {	-- The Roots Thirst
 								["sourceQuests"] = { 63067 },	-- Root Restoration
 								["provider"] = { "n", 167196 },	-- Sesselie
-								["coord"] = { 50.1, 63.7, 1702 },
+								["coord"] = { 50.1, 63.7, 1702 },	-- The Roots
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
@@ -1283,9 +1310,9 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(63073, {	-- A Mycelial Network
-							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.6, 55.0, 1702 },
 							["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
+							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+							["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
 						}),
 						q(62608, {	-- A Royal Treat
 							["sourceQuests"] = { 57583 },	-- Through the Veil
@@ -1338,25 +1365,25 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(62296, {	-- Into the Unknown (1)
-							-- requires tier 2 network, but there's no sourceQuest for that
+							-- requires tier 2 network, but there's no SQ for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
 						q(60153, {	-- Into the Unknown (2)
-							-- requires tier 2 network, but there's no sourceQuest for that
+							-- requires tier 2 network, but there's no SQ for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
 						q(62382, {	-- Into the Unknown (3)
-							-- requires tier 2 network, but there's no sourceQuest for that
+							-- requires tier 2 network, but there's no SQ for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
 						q(62453, {	-- Into the Unknown (4)
-							-- requires tier 2 network, but there's no sourceQuest for that
+							-- requires tier 2 network, but there's no SQ for that
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
@@ -1379,7 +1406,7 @@ _.Zones =
 						q(57454, {	-- Silence in the Stalks
 							["sourceQuests"] = { 63073 },	-- A Mycelial Network
 							["provider"] = { "n", 174609 },	-- Zaki
-							["coord"] = { 53.2, 33.2, 1702 },
+							["coord"] = { 53.2, 33.2, 1702 },	-- The Roots
 						}),
 						q(57583, {	-- Through the Veil
 							["sourceQuests"] = { 57463 },	-- My Way or the Hyphae

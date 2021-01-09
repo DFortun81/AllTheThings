@@ -219,11 +219,11 @@ _.Zones =
 					}),
 					q(60412, {	-- Training in Revendreth
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						["provider"] = { "n", 168517 },	-- Kalisthene
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						["coord"] = { 37.2, 61.0, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(181372),	-- Tribute of the Ascended
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60425, {	-- Troubles at Home

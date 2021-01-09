@@ -195,6 +195,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60140 },	-- Mort'regar
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				}),
+				q(61730, {	-- The Upper Reaches
+					["sourceQuests"] = { 60146 },	-- The Upper Reaches
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
 				]]--
 				
 				
@@ -471,6 +476,48 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Soulforges, Layer 8",
 				}),
+				
+				-- Twisting Corridors
+				--[[
+				q(, {	-- Twisting Corridors, Layer 1
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 1",
+				}),
+				--]]
+				q(62977, {	-- Twisting Corridors, Layer 2
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 2",
+				}),
+				--[[
+				q(, {	-- Twisting Corridors, Layer 3
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 3",
+				}),
+				q(, {	-- Twisting Corridors, Layer 4
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 4",
+				}),
+				q(, {	-- Twisting Corridors, Layer 5
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 5",
+				}),
+				q(, {	-- Twisting Corridors, Layer 6
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 6",
+				}),
+				q(, {	-- Twisting Corridors, Layer 7
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 7",
+				}),
+				q(, {	-- Twisting Corridors, Layer 8
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 8",
+				}),
+				q(, {	-- Twisting Corridors, Layer 9
+					["isWeekly"] = true,
+					["title"] = "Twisting Corridors, Layer 9",
+				}),
+				--]]
 				
 				-- Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1

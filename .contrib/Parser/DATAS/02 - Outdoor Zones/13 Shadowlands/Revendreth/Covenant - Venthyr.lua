@@ -315,10 +315,10 @@ _.Zones =
 						}),
 						q(60183, {	-- After Them!
 							["sourceQuests"] = {
-								57772,	-- Fangs and Minds
 								57771,	-- An Unwelcome Incursion
-								60145,	-- Third Talon Vartox
 								60265,	-- Disrupting the Chain
+								57772,	-- Fangs and Minds
+								60145,	-- Third Talon Vartox
 							},
 							["provider"] = { "n", 167381 },	-- Baroness Draka
 							["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
@@ -439,8 +439,8 @@ _.Zones =
 						q(60265, {	-- Disrupting the Chain
 							["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 							["provider"] = { "i", 178557 },	-- Supply Chain Memo
-							["crs"] = { 158796 },	-- Stonevigil Collector
 							["coord"] = { 57.4, 69.2, 1525 },	-- Revendreth (rough area)
+							["crs"] = { 158796 },	-- Stonevigil Collector
 						}),
 						q(58384, {	-- Dredgers Left Behind
 							["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
@@ -886,7 +886,10 @@ _.Zones =
 							["coord"] = { 71.9, 68.8, 1525 },	-- Revendreth
 							["g"] = {
 								i(180923),	-- Fearstalker's Ebony Monnion
-								-- TODO: Cloth/Leather/Plate
+								i(180922),	-- Soulbreaker's Ebony Mantle
+								-- TODO: verify Leather/Plate
+								i(180920),	-- Ebony Death Shroud Spaulders
+								i(180921),	-- Dread Sentinel's Ebony Spaulders
 							},
 						}),
 						q(60673, {	-- The Traitor
