@@ -70,7 +70,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2407, {	-- General Kaal
-					["crs"] = { 165318 },	-- 	General Kaal
+					["crs"] = {
+						165318,	-- General Kaal
+						162099,	-- General Kaal (during Guantlet)
+					},
 					["g"] = {
 						ach(14197),	-- Sanguine Depths
 						i(183358),	-- Memory of an Earthen Harmony

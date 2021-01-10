@@ -3099,6 +3099,12 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Necrolord
 		q(63336),	-- Night Fae
 		-- q( ),	-- Venthyr
+		-- Completing mi(2232), "Campaign: Corpselice Catastrophe"
+		q(63256),	-- Shared
+		-- q( ),	-- Kyrian
+		-- q( ),	-- Necrolord
+		q(63316),	-- Night Fae
+		-- q( ),	-- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)

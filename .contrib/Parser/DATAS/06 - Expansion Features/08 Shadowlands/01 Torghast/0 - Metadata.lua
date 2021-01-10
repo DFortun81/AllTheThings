@@ -93,6 +93,7 @@ _.ExpansionFeatures =
 				1753,	-- Floor 18
 				1754,	-- Torghast
 				1756,	-- TG44_Floor
+				1760,	-- Twisting Corridors
 				1762,	-- TG47_Floor
 				1763,	-- Arkoban Hall - Floor 5
 				1765,	-- TG54_Floor

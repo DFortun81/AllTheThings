@@ -478,6 +478,7 @@ _.ExpansionFeatures =
 				}),
 				
 				-- Twisting Corridors
+				-- don't think these are weekly... the questID for layer 8 was also complete on my alt once i had completed layer 8 on main
 				--[[
 				q(, {	-- Twisting Corridors, Layer 1
 					["isWeekly"] = true,
@@ -501,7 +502,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Twisting Corridors, Layer 5",
 				}),
-				q(, {	-- Twisting Corridors, Layer 6
+				q(62979, {	-- Twisting Corridors, Layer 6
 					["isWeekly"] = true,
 					["title"] = "Twisting Corridors, Layer 6",
 				}),
@@ -509,7 +510,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["title"] = "Twisting Corridors, Layer 7",
 				}),
-				q(, {	-- Twisting Corridors, Layer 8
+				q(62980, {	-- Twisting Corridors, Layer 8
 					["isWeekly"] = true,
 					["title"] = "Twisting Corridors, Layer 8",
 				}),
