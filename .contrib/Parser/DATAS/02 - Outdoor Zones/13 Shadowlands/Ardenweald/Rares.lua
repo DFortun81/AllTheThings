@@ -66,7 +66,7 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
-					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn.",
+					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn. |cFFFFFFFF\nIf you loot Gormbore directly, it will only drop gray trash. If you accept a battleground queue or use some other method to get loot via Postmaster instead, then it will mail you the correct loot (possibly Lavender Nibbler).|r",
 					["questID"] = 59006,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 75.8, 1565 },
@@ -74,7 +74,9 @@ _.Zones =
 						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						un(NEVER_IMPLEMENTED, i(183196)),	-- Lavender Nibbler (PET!) -- no evidence of this ever dropping yet (12/23/2020)
+						i(183196, {	-- Lavender Nibbler (PET!)
+							["description"] = "If you loot Gormbore directly, it will only drop gray trash. If you accept a battleground queue or use some other method to get loot via Postmaster instead, then it will mail you the correct loot (possibly Lavender Nibbler).",
+						}),
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
