@@ -169,6 +169,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),
 			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
+				title(685),	-- 'the Proud'
 				crit(1),	-- Necrotic Wake
 				crit(2),	-- Plaguefall
 				crit(3),	-- Mists of Tirna Scithe
