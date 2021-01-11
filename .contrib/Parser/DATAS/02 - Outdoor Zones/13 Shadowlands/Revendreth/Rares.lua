@@ -159,7 +159,7 @@ _.Zones =
 					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
 					["questID"] = 59900,
 					["isDaily"] = true,
-					["coord"] = { 51.2, 52.2, 1525 },
+					["coord"] = { 51.9, 51.8, 1525 },
 					["crs"] = { 166682 },	-- Large Prey
 					["g"] = {
 						crit(17, {	-- Hopecrusher

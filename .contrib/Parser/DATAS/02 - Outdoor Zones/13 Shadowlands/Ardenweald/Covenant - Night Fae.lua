@@ -202,11 +202,11 @@ _.Zones =
 						}),
 						q(60387, {	-- Training in Bastion
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 158544 },	-- Lord Herne
-							["coord"] = { 40.9, 72.4, 1565 },
 							["repeatable"] = true,
+							["provider"] = { "n", 158544 },	-- Lord Herne
+							["coord"] = { 40.1, 71.5, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181372),	-- Tribute of the Ascended
 							},
 						}),
 						q(60386, {	-- Training in Maldraxxus

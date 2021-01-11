@@ -192,9 +192,9 @@ _.Zones =
 					}),
 					q(60404, {	-- Training Our Forces
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						["provider"] = { "n", 168517 },	-- Kalisthene
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 168517 },	-- Kalisthene
+						["coord"] = { 37.3, 61.1, 1707 },	-- Archon's Rise
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
