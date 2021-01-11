@@ -3090,7 +3090,7 @@ _.HiddenQuestTriggers =
 		-- Completing mi(2198), "Campaign: Darkwarren Finality"
 		q(63241),	-- Shared
 		-- q( ),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63278),	-- Necrolord
 		q(63276),	-- Night Fae
 		-- q( ),	-- Venthyr
 		-- Completing mi(2249), "Campaign: The Final Puzzle"
