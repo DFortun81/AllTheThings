@@ -139,11 +139,11 @@ _.Zones =
 						}),
 						q(60437, {	-- Challenges in Bastion
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 167206 },	-- Yanlar
-							["coord"] = { 36.8, 24.8, 1533 },
 							["repeatable"] = true,
+							["provider"] = { "n", 167206 },	-- Yanlar
+							["coord"] = { 37.1, 25.5, 1701 },	-- The Trunk
 							["g"] = {
-								i(181476),	-- Tribute of the Wild Hunt
+								i(181741),	-- Tribute of the Paragon
 							},
 						}),
 						q(60436, {	-- Challenges in Maldraxxus

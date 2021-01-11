@@ -135,28 +135,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(184025),	-- Memory of Past Sins
 					},
 				}),
-				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
-					["g"] = {
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						i(182330),	-- Demonic Parole
-						i(182656),	-- Disturb the Peace
-						i(181962),	-- Mental Recovery
-						i(182466),	-- Shade of Terror
-						i(182109),	-- Totemic Surge
-						i(182132),	-- Unending Grip
-						i(183034),	-- Cowled Batwing Cloak
-						i(182976),	-- Double-Chained Utility Belt
-						i(182993),	-- Chiropteran Leggings
-						i(183027),	-- Errant Crusader's Greaves
-						i(182979),	-- Slippers of the Forgotten Heretic
-						i(184016),	-- Skulker's Wing
-					},
-				}),
 				e(2422, {	-- Sun King's Salvation
-					["crs"] = { 165805 },	-- Shade of Kael'thas
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
 					["g"] = {
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -236,6 +220,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183023),	-- Sparkling Glass Slippers
 						i(182983),	-- Stoneguard Attendant's Boots
 						i(184024),	-- Macabre Sheet Music
+					},
+				}),
+				e(2393, {	-- Shriekwing
+					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["g"] = {
+						crit(1, {	-- Shriekwing
+							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						i(182330),	-- Demonic Parole
+						i(182656),	-- Disturb the Peace
+						i(181962),	-- Mental Recovery
+						i(182466),	-- Shade of Terror
+						i(182109),	-- Totemic Surge
+						i(182132),	-- Unending Grip
+						i(183034),	-- Cowled Batwing Cloak
+						i(182976),	-- Double-Chained Utility Belt
+						i(182993),	-- Chiropteran Leggings
+						i(183027),	-- Errant Crusader's Greaves
+						i(182979),	-- Slippers of the Forgotten Heretic
+						i(184016),	-- Skulker's Wing
 					},
 				}),
 				e(2394, {	-- Sludgefist
@@ -436,7 +440,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
-					["crs"] = { 165805 },	-- Shade of Kael'thas
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
 					["g"] = {
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -777,7 +785,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
-					["crs"] = { 165805 },	-- Shade of Kael'thas
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
 					["g"] = {
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1120,7 +1132,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2422, {	-- Sun King's Salvation
-					["crs"] = { 165805 },	-- Shade of Kael'thas
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
 					["g"] = {
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
