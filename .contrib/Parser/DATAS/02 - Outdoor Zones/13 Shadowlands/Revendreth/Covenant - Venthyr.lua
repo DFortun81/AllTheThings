@@ -1594,7 +1594,15 @@ _.Zones =
 										["provider"] = { "n", 157846 },	-- Rendle
 										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
 										["g"] = {
-											i(182683),	-- Dredger Butler's Contract (pet)
+											i(182683, {	-- Dredger Butler's Contract (pet)
+												-- TODO: move to be under the pet itself somehow? is the creatureID (172854) always the same or based on the chosen name?
+												n(QUESTS, {
+													q(62178, {	-- Black Muck Dye
+														["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
+														["repeatable"] = true,
+													}),
+												}),
+											}),
 										},
 									}),
 									q(62361, {	-- Introductions are in Order
@@ -2570,6 +2578,16 @@ _.Zones =
 									--["cost"] = { { "x", yyyy, zzzz } },
 								}),
 							}),
+						}),
+						n(171808, {	-- Ta'tru
+							["coords"] = { 51.1, 78.8, 1525 },
+							["g"] = {
+								i(180973),	-- Necklace of Dredbat Fangs
+								i(181799),	-- Extra Large Hat
+								i(182702, {	-- Phial of Black Muck Dye
+									["description"] = "Allows for repeatably dying the clothes of your Dreger Butler to Black.",
+								}),
+							},
 						}),
 						n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
 							-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
