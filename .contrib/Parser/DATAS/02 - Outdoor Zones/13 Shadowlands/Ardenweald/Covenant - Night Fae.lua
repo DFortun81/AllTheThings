@@ -85,11 +85,11 @@ _.Zones =
 						}),
 						q(60421, {	-- A Call to Revendreth
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 167193 },	-- Featherlight
-							["coord"] = { 59.7, 31.3, 1565 },
 							["repeatable"] = true,
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.9, 32.4, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181556),	-- Tribute of the Court
 							},
 						}),
 						q(60420, {	-- A Call to Maldraxxus

@@ -96,7 +96,7 @@ _.Zones =
 				q(63047, {	-- Acquisition: Runeforged Shackles
 					["provider"] = { "o", 364926 },	-- Runeforged Shackles
 					["isDaily"] = true,
-					["coord"] = { 25.6, 24.2, 1648 },
+					["coord"] = { 25.6, 24.2, 1543 },
 				}),
 				q(63072, {	-- Acquisition: Stygic Ore
 					-- ["provider"] = { "o", ? },	-- 
