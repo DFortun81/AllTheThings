@@ -1259,6 +1259,7 @@ _.Zones =
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
+									i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
