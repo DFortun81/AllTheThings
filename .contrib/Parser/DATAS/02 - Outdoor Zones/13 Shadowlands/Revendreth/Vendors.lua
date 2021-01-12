@@ -247,7 +247,7 @@ _.Zones =
 						}),
 						i(181799),	-- Extra Large Hat
 						i(182702, {	-- Phial of Black Muck Dye
-							["description"] = "Allows for repeatably dying the clothes of your Dreger Butler to Black.",
+							["description"] = "Allows for repeatably dying the clothes of your Dredger Butler to Black.",
 						}),
 					},
 				}),
