@@ -589,6 +589,7 @@ _.Zones =
 				q(46069, {	-- Worthy of the Title
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
+					["classes"] = { PALADIN },
 					["coord"] = { 43.8, 63.0, 646 },
 				}),
 

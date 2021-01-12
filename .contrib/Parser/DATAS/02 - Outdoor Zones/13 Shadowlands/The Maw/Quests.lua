@@ -252,7 +252,7 @@ _.Zones =
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
 					["isDaily"] = true,
-					["coord"] = { 24.6, 45.2, 1648 },
+					["coord"] = { 24.6, 45.2, 1543 },
 				}),
 				q(60646, {	-- Misery Business
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -445,10 +445,9 @@ _.Zones =
 					},
 				}),
 				q(63062, {	-- Torment for the Taking
-					-- TODO: fill in provider and coord fields
-				--	["provider"] = 
+					["provider"] = { "o", 364937 },	-- Phasic Siphoner
 					["isDaily"] = true,
-				--	["coord"] = 
+					["coord"] = { 28.0, 47.0, 1543 },
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death

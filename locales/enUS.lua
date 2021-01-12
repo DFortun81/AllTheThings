@@ -4405,6 +4405,7 @@ app.L = {
 		[363825] = "Silver Strongbox",
 		[364899] = "Crystallized Stygia",
 		[364932] = "Blazing Ingot",
+		[364937] = "Phasic Siphoner",
 		[364987] = "Broker Journal",
 		[9999890] = "Corrupted Loot",
 		[9999891] = "Main Objective Only",
