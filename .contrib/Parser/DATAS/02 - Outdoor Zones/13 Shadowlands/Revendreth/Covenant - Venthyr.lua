@@ -308,6 +308,11 @@ _.Zones =
 							["provider"] = { "n", 160280 },	-- Mikanikos
 							["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
 						}),
+						q(59325, {	-- A Stalwart Ally
+							["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
+							["provider"] = { "n", 161977 },	-- General Draven
+							["coord"] = { 46.2, 14.7, 1699 },	-- Sinfall
+						}),
 						q(58555, {	-- A Tense Reunion
 							["sourceQuests"] = { 58530 },	-- Hidden Mirror
 							["provider"] = { "n", 162213 },	-- General Draven
@@ -619,6 +624,12 @@ _.Zones =
 							["provider"] = { "o", 353948 },	-- Medallion of Desire
 							["coord"] = { 53.6, 32.9, 1699 },	-- Sinfall Reaches
 						}),
+						q(58406, {	-- Mirror to Maldraxxus
+							["description"] = "Requires Renown 22.",
+							-- ["sourceQuests"] = {  },	-- 
+							["provider"] = { "n", 158653 },	-- Prince Renethal
+							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
+						}),
 						q(58440, {	-- Mirror, Mirror...
 							["sourceQuests"] = {
 								60673,	-- The Traitor
@@ -747,6 +758,13 @@ _.Zones =
 							["coord"] = { 44.8, 68.9, 1670 },	-- Oribos
 							["maps"] = { 1670 },	-- Oribos
 						}),
+						q(63341, {	-- Sinfall Tactician
+							-- TODO: Assumed SQ... double check by skipping to Renown 22
+							["sourceQuests"] = { 63340 },	-- Sinfall Veteran
+							["description"] = "Requires Renown 22.",
+							["provider"] = { "n", 175772 },	-- Rahel
+							["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+						}),
 						q(63340, {	-- Sinfall Veteran
 						--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 							["description"] = "Requires Renown 7.",
@@ -852,6 +870,16 @@ _.Zones =
 							["provider"] = { "n", 161158 },	-- The Accuser
 							["coord"] = { 46.4, 32.3, 1700 },	-- Sinfall Depths
 						}),
+						q(58407, {	-- The Medallion of Dominion
+							["sourceQuests"] = { 58406 },	-- Mirror to Maldraxxus
+							["provider"] = { "n", 170543 },	-- General Draven
+							["coord"] = { 27.4, 40.3, 1525 },	-- Revendreth
+							["g"] = {
+								i(180948),	-- Battle Gargon Vrednic
+								i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+								i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
+							},
+						}),	
 						q(59233, {	-- The Prince's New Crown
 							["sourceQuests"] = { 60996 },	-- Face Your Fears
 							["provider"] = { "n", 171175 },	-- General Draven
@@ -948,15 +976,6 @@ _.Zones =
 							},
 						}),
 						
-						-- TODO: moved these 2 quests here from Revendreth file; sort them above once they are actually seen/verified in game
-						-- Chapter 8 (Dominion)
-						q(58407, {	-- The Medallion of Dominion
-							["provider"] = { "n", 170543 },	-- General Draven
-							["g"] = {
-								i(180948),	-- Battle Gargon Vrednic
-							},
-						}),						
-
 						-- q(, {	-- 
 						-- 	["sourceQuests"] = {  },	-- 
 						-- 	["provider"] = { "n",  },	-- 
