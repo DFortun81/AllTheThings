@@ -244,11 +244,27 @@ _.Zones =
 						-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
+						["g"] = {
+							follower(1264),	-- Dreamweaver
+						},
+					}),
+					q(61057, {	-- By Trials Forged
+						["sourceQuests"] = { 60108 },	-- Drust and Ashes
+						["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
+						["coord"] = { 35.2, 47.4, 1701 },
+						["g"] = {
+							follower(1266),	-- Hunt-Captain Korayn
+						},
 					}),
 					q(62544, {	-- From a Dark Place
 						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.6, 39.0, 1701 },
+					}),
+					q(62561, {	-- My Heart is Full
+						["sourceQuests"] = { 60108 },	-- Drust and Ashes
+						["provider"] = { "n", 161509 },	-- Lady Moonberry
+						["coord"] = { 47.6, 36.4, 1701 },
 					}),
 					q(63347, {	-- Night Fae Tactician
 						["provider"] = { "n", 176096 },	-- Laurel
@@ -401,8 +417,7 @@ _.Zones =
 							i(183473),	-- Conflux of Elements
 							i(183466),	-- Innate Resolve
 							i(183467),	-- Tireless Pursuit
-							-- TODO: figure out follower ID
-							--follower(xxxx),	-- Niya
+							follower(1265),	-- Niya
 						},
 					}),
 					q(62900, {	-- A Conduit for Growth
