@@ -314,6 +314,14 @@ _.Zones =
 						}),
 					}),
 					-- non-chapter Necrolord quests
+					q(60111, {	-- Forging a Friendship
+						["sourceQuests"] = { 62406 },	-- Staff of the Primus
+						["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
+						["coord"] = { 42.8, 32.2, 1698 },
+						["g"] = {
+							follower(1262),	-- Bonesmith Heirmir
+						},
+					}),
 					q(63343, {	-- Necrolord Tactician
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, 1698 },
@@ -1102,68 +1110,29 @@ _.Zones =
 						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
 					}),
 
-
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					
-					-- TODO: Chapter 9 (Assault on the House of Rituals), requires Renown 22
-
-
-					-- TODO: moved these here from Maldraxxus quests file, but don't think they made it out of beta; commenting out for now
-					--[[
+					-- Chapter 9 (Assault on the House of Rituals), requires Renown 22
+					q(58833, {	-- Calling in All Favors
+						["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+					}),
 					q(59020, {	-- The Third Fall of Kel'Thuzad
-						["provider"] = { "n", 168381 },	-- Baroness Draka
-						["coord"] = { 50.3, 67.7, 1536 },
+						["sourceQuests"] = { 58833 },	-- Calling in All Favors
+						["provider"] = { "n", 174179 },	-- Baroness Draka
+						["coord"] = { 62.2, 41.0, 1536 },
 						["g"] = {
-							i(181822),		-- Armored War-Bred Tauralus
+							i(181822),	-- Armored War-Bred Tauralus (MOUNT!)
 						},
 					}),
-					q(61761, {	-- The Better Part of Valor
-						--["provider"] = { "n", 168381 },	-- Baroness Draka
-						--["coord"] = { 50.3, 67.7, 1536 },
+					q(62406, {	-- Staff of the Primus
+						["sourceQuests"] = { 59020 },	-- The Third Fall of Kel'Thuzad
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
 						["g"] = {
-							i(183847),		-- Acolyte's Guise
+							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 						},
 					}),
-					--]]
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
 				}),
 				n(RARES, {
 				}),
