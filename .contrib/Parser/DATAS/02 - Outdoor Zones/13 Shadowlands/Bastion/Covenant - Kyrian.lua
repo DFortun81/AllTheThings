@@ -528,6 +528,11 @@ _.Zones =
 						["provider"] = { "n", 166333 },	-- Xandria
 						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
 					}),
+					q(63345, {	-- Kyrian Tactician
+						["description"] = "Becomes available at Renown 22",
+						["provider"] = { "n", 176100 },	-- Iona Skyblade
+						["coord"] = { 42.7, 70.3, 1707 },
+					}),
 					q(63344, {	-- Kyrian Veteran
 					--	["sourceQuests"] = {  },	-- unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",
