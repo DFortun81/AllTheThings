@@ -7,6 +7,10 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
 			n(ACHIEVEMENTS, {
+				ach(14795, {	-- Clearing the Fog
+					ach(14759),	-- It's Coming Back to Me...
+					ach(14760),	-- Recollection Collection
+				}),
 				ach(14773),		-- Explosive Extermination
 				ach(14778, {	-- Extremely Ravenous
 					i(170540, {	-- Ravenous Anima Cell
@@ -186,6 +190,7 @@ _.ExpansionFeatures =
 						["crs"] = { 155250 },	-- Decayspeaker
 					}),
 				}),
+				ach(14755),		-- Legendary Accord
 				ach(14501, {	-- Phanatical
 					ach(14499),		-- Phanciful
 					ach(14500),		-- Phantastic
