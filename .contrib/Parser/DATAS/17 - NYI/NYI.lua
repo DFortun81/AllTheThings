@@ -90,6 +90,26 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(174445)),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
 		-- Other
 		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
+		un(NEVER_IMPLEMENTED, i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
+			["questID"] = 62012,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { HUNTER, SHAMAN },
+		})),
+		un(NEVER_IMPLEMENTED, i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
+			["questID"] = 62011,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+		})),
+		un(NEVER_IMPLEMENTED, i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
+			["questID"] = 62013,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+		})),
+		un(NEVER_IMPLEMENTED, i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+			["questID"] = 62014,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+		})),
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!

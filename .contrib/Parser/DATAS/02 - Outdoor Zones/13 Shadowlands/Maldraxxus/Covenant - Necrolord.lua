@@ -1162,70 +1162,6 @@ _.Zones =
 										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
 									},
 								}),
-								i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
-									["questID"] = 62012,
-									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-									["classes"] = { HUNTER, SHAMAN },
-									["g"] = {
-										i(182515),	-- Stitched Tactician's Bracers
-										i(182512),	-- Stitched Tactician's Chausses
-										i(182516),	-- Stitched Tactician's Drape
-										i(182508),	-- Stitched Tactician's Faceguard
-										i(182511),	-- Stitched Tactician's Gauntlets
-										i(182514),	-- Stitched Tactician's Girdle
-										i(182509),	-- Stitched Tactician's Hauberk
-										i(182510),	-- Stitched Tactician's Sabatons
-										i(182513),	-- Stitched Tactician's Spaulders
-									},
-								}),
-								i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
-									["questID"] = 62011,
-									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-									["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
-									["g"] = {
-										i(182482),	-- Stitched Harbinger's Chestguard
-										i(182484),	-- Stitched Harbinger's Crushers
-										i(182489),	-- Stitched Harbinger's Greatcloak
-										i(182481),	-- Stitched Harbinger's Greathelm
-										i(182485),	-- Stitched Harbinger's Greaves
-										i(182486),	-- Stitched Harbinger's Pauldrons
-										i(182483),	-- Stitched Harbinger's Stompers
-										i(182488),	-- Stitched Harbinger's Vambraces
-										i(182487),	-- Stitched Harbinger's Warbelt
-									},
-								}),
-								i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
-									["questID"] = 62013,
-									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-									["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
-									["g"] = {
-										i(182497),	-- Stitched Wraith's Armguards
-										i(182496),	-- Stitched Wraith's Belt
-										i(182492),	-- Stitched Wraith's Boots
-										i(182494),	-- Stitched Wraith's Breeches
-										i(182498),	-- Stitched Wraith's Cloak
-										i(182491),	-- Stitched Wraith's Jerkin
-										i(182495),	-- Stitched Wraith's Shoulders
-										i(182493),	-- Stitched Wraith's Stranglers
-										i(182490),	-- Stitched Wraith's Visage
-									},
-								}),
-								i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
-									["questID"] = 62014,
-									["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-									["classes"] = { PRIEST, MAGE, WARLOCK },
-									["g"] = {
-										i(182507),	-- Stitched Conjurer's Cape
-										i(182505),	-- Stitched Conjurer's Cinch
-										i(182499),	-- Stitched Conjurer's Cowl
-										i(182502),	-- Stitched Conjurer's Gloves
-										i(182503),	-- Stitched Conjurer's Leggings
-										i(182504),	-- Stitched Conjurer's Mantle
-										i(182501),	-- Stitched Conjurer's Slippers
-										i(182500),	-- Stitched Conjurer's Tunic
-										i(182506),	-- Stitched Conjurer's Wristwraps
-									},
-								}),
 								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
 								-- This section is kinda redundant with achievement 14751, but if they add more followers later that aren't added to the achieve, then
 								-- they can be added here.  Also think this is more useful than just having all these quests in the HQT file.
@@ -1510,11 +1446,52 @@ _.Zones =
 							-- Tier 4: Forged Friends
 							-- Tier 5: Best Fiends Forever
 						}),
-						i(184843, {	-- Salvaged Supplies
-							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
-						}),
-						i(183744, {	-- Superior Parts
-							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+						n(-908, {	-- Rewards
+							["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
+							["g"] = {
+								i(184843, {	-- Salvaged Supplies
+									["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+								}),
+								i(183744, {	-- Superior Parts
+									["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+								}),
+								i(182507),	-- Stitched Conjurer's Cape
+								i(182505),	-- Stitched Conjurer's Cinch
+								i(182499),	-- Stitched Conjurer's Cowl
+								i(182502),	-- Stitched Conjurer's Gloves
+								i(182503),	-- Stitched Conjurer's Leggings
+								i(182504),	-- Stitched Conjurer's Mantle
+								i(182501),	-- Stitched Conjurer's Slippers
+								i(182500),	-- Stitched Conjurer's Tunic
+								i(182506),	-- Stitched Conjurer's Wristwraps
+								i(182482),	-- Stitched Harbinger's Chestguard
+								i(182484),	-- Stitched Harbinger's Crushers
+								i(182489),	-- Stitched Harbinger's Greatcloak
+								i(182481),	-- Stitched Harbinger's Greathelm
+								i(182485),	-- Stitched Harbinger's Greaves
+								i(182486),	-- Stitched Harbinger's Pauldrons
+								i(182483),	-- Stitched Harbinger's Stompers
+								i(182488),	-- Stitched Harbinger's Vambraces
+								i(182487),	-- Stitched Harbinger's Warbelt
+								i(182515),	-- Stitched Tactician's Bracers
+								i(182512),	-- Stitched Tactician's Chausses
+								i(182516),	-- Stitched Tactician's Drape
+								i(182508),	-- Stitched Tactician's Faceguard
+								i(182511),	-- Stitched Tactician's Gauntlets
+								i(182514),	-- Stitched Tactician's Girdle
+								i(182509),	-- Stitched Tactician's Hauberk
+								i(182510),	-- Stitched Tactician's Sabatons
+								i(182513),	-- Stitched Tactician's Spaulders
+								i(182497),	-- Stitched Wraith's Armguards
+								i(182496),	-- Stitched Wraith's Belt
+								i(182492),	-- Stitched Wraith's Boots
+								i(182494),	-- Stitched Wraith's Breeches
+								i(182498),	-- Stitched Wraith's Cloak
+								i(182491),	-- Stitched Wraith's Jerkin
+								i(182495),	-- Stitched Wraith's Shoulders
+								i(182493),	-- Stitched Wraith's Stranglers
+								i(182490),	-- Stitched Wraith's Visage
+							},
 						}),
 					}),
 					n(-915, {	-- Anima Conductor
