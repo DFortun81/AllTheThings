@@ -13,7 +13,8 @@ _.Zones =
 				1819,	-- Fungal Terminus
 				1701,	-- Heart of the Forest
 				1702,	-- Heart of the Forest
-				1703,	-- Heart of the Forest
+				1703,	-- Heart of the Forest (Drust and Ashes quest)
+				1709,	-- Heart of the Forest
 				1662,	-- Queen's Conservatory
 				1818,	-- Tirna Vaal
 				1824,	-- Matriarch's Den

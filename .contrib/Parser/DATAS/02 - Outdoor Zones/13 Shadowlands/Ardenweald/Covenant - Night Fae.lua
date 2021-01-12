@@ -859,6 +859,53 @@ _.Zones =
 					}),
 
 					-- Chapter 9: Drust and Ashes (Renown 22 required to start)
+					q(60189, {	-- We Strike Now
+						["sourceQuests"] = { 59866 },	-- Parting Ways
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.5, 39.1, 1701 },
+					}),
+					q(60190, {	-- Assault on Darkreach
+						["sourceQuests"] = { 60189 },	-- We Strike Now
+						["provider"] = { "n", 167686 },	-- Lord Herne
+						["coord"] = { 39.1, 63.7, 1565 },
+					}),
+					q(60191, {	-- Ingra Drif
+						["sourceQuests"] = { 60189 },	-- We Strike Now
+						["provider"] = { "n", 172010 },	-- Kivarr
+						["coord"] = { 39.0, 63.7, 1565 },
+					}),
+					q(60192, {	-- Their Last Line of Defense
+						["sourceQuests"] = { 60189 },	-- We Strike Now
+						["provider"] = { "n", 167688 },	-- Lady Moonberry
+						["coord"] = { 39.1, 63.7, 1565 },
+					}),
+					q(60193, {	-- Unmasked
+						["sourceQuests"] = {
+							60190,	-- Assault on Darkreach
+							60191,	-- Ingra Drif
+							60192,	-- Their Last Line of Defense
+						},
+						["provider"] = { "n", 171838 },	-- Lord Herne
+						["coord"] = { 35.2, 72.4, 1565 },
+					}),
+					q(60194, {	-- The Call of the Hunt
+						["sourceQuests"] = { 60193 },	-- Unmasked
+						["provider"] = { "n", 171992 },	-- Lady Moonberry
+						["coord"] = { 36.2, 69.6, 1565 },
+					}),
+					q(60108, {	-- Drust and Ashes
+						["sourceQuests"] = { 60194 },	-- The Call of the Hunt
+						["provider"] = { "n", 172091 },	-- Lord Herne
+						["coord"] = { 39.0, 63.4, 1565 },
+						["g"] = {
+							i(180721),	-- Enchanted Dreamlight Runestag (MOUNT!)
+							i(182165, {	-- Ardenmoth Soul
+								["questID"] = 62422,
+							}),
+							i(183892),	-- Mystic Anima Spherule
+							i(183889),	-- Thaumaturgic Anima Bead
+						},
+					}),
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail
@@ -881,18 +928,7 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["sourceQuests"] = { 60233 },	-- Souls of the Damned
 					}),
-					-- Daughter of the Night Warrior
-					-- From Ardenweald to the Maw and back
 					--]]
-					q(60108, {	-- Drust and Ashes
-						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["g"] = {
-							i(180721),	-- Enchanted Dreamlight Runestag
-							i(182165, {	-- Ardenmoth Soul
-								["questID"] = 62422,
-							}),
-						},
-					}),
 				}),
 				n(RARES, {
 				}),
