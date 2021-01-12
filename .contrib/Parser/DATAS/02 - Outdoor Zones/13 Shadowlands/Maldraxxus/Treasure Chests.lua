@@ -13,6 +13,7 @@ _.Zones =
 					["questID"] = 60772,
 				}),
 				o(352086, {	-- Blackhound Cache
+					["customCollect"] = "SL_COV_NEC",
 					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer works as you get teleported out.",
 					["questID"] = 60368,
 					["isDaily"] = true,
@@ -20,6 +21,7 @@ _.Zones =
 					["g"] = {
 						i(184318),	-- Battlecry of Krexus
 						i(183619),	-- Everlasting Boneforged Greataxe
+						i(181800),	-- Standard of the Blackhound Warband
 					},
 				}),
 				n(171337, {	-- Bloated Lootfly

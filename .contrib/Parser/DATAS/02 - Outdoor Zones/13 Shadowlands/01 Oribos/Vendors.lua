@@ -7,6 +7,14 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
 			n(VENDORS, {
+				n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
+					["coord"] = { 61.7, 72.3, 1670 },
+					["g"] = {
+						i(180970, {	-- Teregeer Crystal
+							["description"] = "Take this to Au'larrynar in Maldraxxus |cffffffff(53.6, 47.9)|r.",
+						}),
+					},
+				}),
 				n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
 					["coord"] = { 47.6, 77.2, 1670 },
 					["g"] = {
@@ -496,6 +504,14 @@ _.Zones =
 						}),		
 						i(178335, {	-- Sinful Aspirant's Pendant
 							["cost"] = { { "c", 1792, 525 } },
+						}),
+					},
+				}),
+				n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
+					["coord"] = { 51.3, 43.0, 1672 },
+					["g"] = {
+						i(180971, {	-- Aquamarine Cartel Chit
+							["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 						}),
 					},
 				}),

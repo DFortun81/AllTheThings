@@ -2579,16 +2579,6 @@ _.Zones =
 								}),
 							}),
 						}),
-						n(171808, {	-- Ta'tru
-							["coords"] = { 51.1, 78.8, 1525 },
-							["g"] = {
-								i(180973),	-- Necklace of Dredbat Fangs
-								i(181799),	-- Extra Large Hat
-								i(182702, {	-- Phial of Black Muck Dye
-									["description"] = "Allows for repeatably dying the clothes of your Dreger Butler to Black.",
-								}),
-							},
-						}),
 						n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
 							-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 							["coord"] = { 55.1, 46.1, 1700 },

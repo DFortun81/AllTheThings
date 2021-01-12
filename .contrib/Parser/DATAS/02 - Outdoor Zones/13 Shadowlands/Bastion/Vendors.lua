@@ -44,6 +44,15 @@ _.Zones =
 				n(175574, {	-- Angler Danica
 					i(180136),	-- The Brokers Angle'r
 				}),
+				n(158625, {	-- Trader Ta'bix
+					["coord"] = { 33.4, 36.4, 1533 },
+					["g"] = {
+						i(180972, {	-- Pristine Vuline Pelt
+							["description"] = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",
+						}),
+						i(183786),	-- Happiness Bird
+					},
+				})
 			}),
 		}),
 	}),

@@ -239,6 +239,18 @@ _.Zones =
 						}),
 					},
 				}),
+				n(171808, {	-- Ta'tru
+					["coords"] = { 51.1, 78.8, 1525 },
+					["g"] = {
+						i(180973, {	-- Necklace of Dredbat Fangs
+							["description"] = "Take this to Trader Ta'bix in Bastion |cffffffff(33.4, 36.2)|r.",
+						}),
+						i(181799),	-- Extra Large Hat
+						i(182702, {	-- Phial of Black Muck Dye
+							["description"] = "Allows for repeatably dying the clothes of your Dreger Butler to Black.",
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

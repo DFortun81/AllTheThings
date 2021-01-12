@@ -8,7 +8,7 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(VENDORS, {
 				n(166640, {	-- Au'larrynar <Enhancers>
-					["coord"] = { 53.7, 47.8, 1536 },
+					["coord"] = { 53.6, 47.9, 1536 },
 					["g"] = {
 						i(180706),	-- Caustic Muck
 						i(180657),	-- Crystallized Ichor
@@ -17,7 +17,9 @@ _.Zones =
 						i(177957),	-- Necessary Enhancers
 						i(180771),	-- Potion of Unusual Strength
 						i(180659),	-- Soul Siphoning Shard
-						i(180969),	-- Spiral Deathroc Horn
+						i(180969, {	-- Spiral Deathroc Horn
+							["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.8)|r.",
+						}),
 						i(180694),	-- Tome of Power
 						i(180658),	-- Witherlight Crystal
 						i(179939),	-- Wriggling Spider Sac

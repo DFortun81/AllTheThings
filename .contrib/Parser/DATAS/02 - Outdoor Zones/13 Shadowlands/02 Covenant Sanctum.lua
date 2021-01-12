@@ -40,6 +40,7 @@ _.Zones =
 							i(184647),	-- Hero's Herbalism Cache
 							i(184637),	-- Hero's Meat Cache
 							i(184646),	-- Hero's Mining Cache
+							i(184645),	-- Hero's Skinning Cache
 							i(184644),	-- Hero's Tailoring Cache
 							i(181468),	-- Veiled Augment Rune
 					},

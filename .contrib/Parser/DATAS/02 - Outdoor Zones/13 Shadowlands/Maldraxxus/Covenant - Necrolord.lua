@@ -1176,18 +1176,21 @@ _.Zones =
 									["cost"] = { 
 										{ "i", 178061, 50 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
+										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
 									},
 								}),
 								i(181268, {	-- Backbone (PET!)
 									["cost"] = { 
 										{ "i", 178061, 5 },	-- Malleable Flesh
 										{ "i", 172092, 1 },	-- Pallid Bone
+										{ "c", 1813, 750 },	-- 750x Anima (not shown in-game)
 									},
 								}),
 								i(181282, {	-- Mu'dud (PET!)
 									["cost"] = { 
 										{ "i", 178061, 10 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
+										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
 									},
 								}),
 								i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
@@ -1292,15 +1295,18 @@ _.Zones =
 									["title"] = "Construct Body: Neena",
 								}),
 								q(57601, {
+									["sourceQuests"] = { 60230 },	-- More the Merrier
 									["title"] = "Construct Body: Professor",
 								}),
 								q(57605, {
 									["title"] = "Construct Body: Roseboil",
 								}),
 								q(57600, {
+									["sourceQuests"] = { 60230 },	-- More the Merrier
 									["title"] = "Construct Body: Sabrina",
 								}),
 								q(58414, {
+									["sourceQuests"] = { 60230 },	-- More the Merrier
 									["title"] = "Construct Body: Toothpick",
 								}),
 							},

@@ -682,10 +682,14 @@ _.Zones =
 				-- Covenant Travel Quests @ 60
 				-- Ardenweald
 				q(63214, {	-- Report to Moonberry
-					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+					["sourceQuests"] = {
+						57878,	-- Choosing Your Purpose [Story] -- TODO: confirm this requirement on a Story-Night Fae?
+						62000,	-- Choosing Your Purpose [Skip]
+					},
 					-- TODO: is this not a Skip-only quest?
 					-- ["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- Skip + Night Fae
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 					["lvl"] = { 60 },
