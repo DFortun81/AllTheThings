@@ -238,6 +238,11 @@ _.Zones =
 						i(175718),	-- Ascended Defender's Crest
 					},
 				}),
+				q(60660, {	-- Flight Test
+					["sourceQuests"] = { 59263 },	-- Feathers of Flight
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+				}),
 				q(60056, {	-- Follow the Path
 					["sourceQuests"] = { 60055 },	-- A Time for Courage
 					["provider"] = { "n", 167583 },	-- Disciple Apolon
@@ -350,6 +355,11 @@ _.Zones =
 					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 47.8, 73.2, 1533 },
+				}),
+				q(59348, {	-- More Wings!
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(60057, {	-- Necrotic Wake: A Paragon's Plight
 					["sourceQuests"] = { 60055 },	-- A Time For Courage
@@ -500,6 +510,11 @@ _.Zones =
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, 1533 },
+				}),
+				q(59351, {	-- Strings and Things
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(58185, {	-- Success Without Soul
 					["sourceQuests"] = { 58042 },	-- On Larion Wings
@@ -894,21 +909,6 @@ _.Zones =
 
 
 				-- Glimmerfly toy/pet questline
-				q(60660, {	-- Flight Test
-					["sourceQuests"] = { 59263 },	-- Feathers of Flight
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
-				q(59348, {	-- More Wings!
-					["sourceQuests"] = { 60660 },	-- Flight Test
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
-				q(59351, {	-- Strings and Things
-					["sourceQuests"] = { 60660 },	-- Flight Test
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
 				q(59311, {	-- How to Catch a Glimmerfly
 					["sourceQuests"] = {
 						59348,	-- More Wings!
