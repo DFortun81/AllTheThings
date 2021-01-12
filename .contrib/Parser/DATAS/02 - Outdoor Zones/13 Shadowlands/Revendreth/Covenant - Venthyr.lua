@@ -872,6 +872,7 @@ _.Zones =
 						}),
 						q(58407, {	-- The Medallion of Dominion
 							["sourceQuests"] = { 58406 },	-- Mirror to Maldraxxus
+							["maps"] = { 1689 },	-- Exoramas (Venthyr Renown 22 Scenario)
 							["provider"] = { "n", 170543 },	-- General Draven
 							["coord"] = { 27.4, 40.3, 1525 },	-- Revendreth
 							["g"] = {
