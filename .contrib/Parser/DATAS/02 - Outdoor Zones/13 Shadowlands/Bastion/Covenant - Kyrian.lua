@@ -174,9 +174,9 @@ _.Zones =
 					}),
 					q(60415, {	-- Rare Resources
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
 						["repeatable"] = true,
+						["provider"] = { "n", 168519 },	-- Sika
+						["coord"] = { 33.6, 44.7, 1707 },	-- Archon's Rise
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},

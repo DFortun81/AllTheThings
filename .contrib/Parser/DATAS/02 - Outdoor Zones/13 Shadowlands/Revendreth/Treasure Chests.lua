@@ -49,13 +49,12 @@ _.Zones =
 						i(182969),	-- The Countess's Parasol
 					},
 				}),]]
-
 				-- TODO: treasure @ 68,64 questID = 59884
-				o(354121, {	-- Pugilist's Prize
+				o(354115, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60951,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 71.3, 80.2, 1525 },
+					["questID"] = 60956,
+					["isDaily"] = true,
+					["coord"] = { 38.4, 29.8, 1525 },
 				}),
 				o(354116, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
@@ -63,23 +62,23 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 35.8, 67.5, 1525 },
 				}),
-				o(354123, {	-- Pugilist's Prize
+				o(354121, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60953,
+					["questID"] = 60951,
 					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 48.7, 63.8, 1525 },
+					["coord"] = { 71.3, 80.2, 1525 },
 				}),
-				o(1278968758, {	-- Pugilist's Prize
+				o(354122, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60952,
 					["isDaily"] = true,
 					["coord"] = { 66.6, 36.3, 1525 },
 				}),
-				o(1278968762, {	-- Pugilist's Prize
+				o(354123, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60956,
-					["isDaily"] = true,
-					["coord"] = { 38.4, 29.8, 1525 },
+					["questID"] = 60953,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 48.7, 63.8, 1525 },
 				}),
 				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
@@ -105,14 +104,20 @@ _.Zones =
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 74.0, 61.9, 1525 },					
 				}),
+				o(351543, {	-- Secret Treasure
+					["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r.  Clicking the chain will pull you up to the tiny alcove above the treasure.  Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
+					["isDaily"] = true,
+					["questID"] = 60200,
+					["coord"] = { 50.2, 49.0, 1525 },
+					["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
+				}),
 				o(351544, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
 					["questID"] = 60201,
 					["isDaily"] = true,
 					["coord"] = { 55.3, 35.9, 1525 },
 				}),
-				o(1278968756, {	-- Secret Treasure
-				--	TODO: fix objectID when data becomes available
+				o(351545, {	-- Secret Treasure
 					["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
 					["questID"] = 60202,	-- also triggered 60851
 					["isDaily"] = true,
@@ -123,6 +128,11 @@ _.Zones =
 					["questID"] = 60938,
 					["isDaily"] = true,
 					["coord"] = { 43.8, 57.1, 1525 },
+				}),
+				o(354109, {	-- Stoneborn Satchel
+					["questID"] = 60944,
+					["isDaily"] = true,
+					["coord"] = { 57.7, 29.4, 1525 },
 				}),
 				o(354110, {	-- Stoneborn Satchel
 					["questID"] = 60943,
@@ -138,6 +148,11 @@ _.Zones =
 					["questID"] = 60941,
 					["isDaily"] = true,
 					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354113, {	-- Stoneborn Satchel
+					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
+					["isDaily"] = true,
+					["coord"] = { 76.6, 51.0, 1525 },
 				}),
 				o(354114, {	-- Stoneborn Satchel
 					["questID"] = 60939,
@@ -165,37 +180,23 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 58.0, 67.2, 1525 },
 				}),
-				o(354192, {	-- Stoneborn Satchel
-					["questID"] = 60984,
-					["isDaily"] = true,
-					["coord"] = { 23.5, 48.8, 1525 }
-				}),
-				o(1278968751, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
+				o(354190, {	-- Stoneborn Satchel
 					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 53.6, 57.3, 1525 },
 				}),
-				o(1278968752, {	-- Stoneborn Satchel
-				--	TODO: verify objectID when data is available
+				o(354191, {	-- Stoneborn Satchel
 					["questID"] = 60986,
 					["isDaily"] = true,
 					["coord"] = { 29.9, 37.4, 1525 },
 				}),
-				o(1278968759, {	-- Stoneborn Satchel
-				--	TODO: fix objectID when data is available
-					["questID"] = 60944,
+				o(354192, {	-- Stoneborn Satchel
+					["questID"] = 60984,
 					["isDaily"] = true,
-					["coord"] = { 57.7, 29.4, 1525 },
+					["coord"] = { 23.5, 48.8, 1525 }
 				}),
-				o(1278968753, {	-- Stoneborn Satchel
-				--	TODO: fix objectID when data is available
-					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
-					["isDaily"] = true,
-					["coord"] = { 76.6, 51.0, 1525 },
-				}),
-				o(1278968764, {	-- Stoneborn Satchel
+				o(354193, {	-- Stoneborn Satchel
 					["questID"] = 60985,
 					["isDaily"] = true,
 					["coord"] = { 36.5, 51.5, 1525 },

@@ -3332,6 +3332,7 @@ _.HiddenQuestTriggers =
 		q(60845),	-- triggered when looting "Bottle of Redelav Wine" (for Favor: Bottle of Redelav Wine)
 		q(60853),	-- triggered when looting "Portrait of the Sire" (for Favor: Portrait of the Sire)
 		q(60846),	-- triggered when looting "Dredger's Toolkit" (for Favor: Dredger's Toolkit)
+		q(60850),	-- triggered when looting "Love and Terror" (for Favor: Love and Terror)
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		-- Revendreth Rares
@@ -3491,6 +3492,7 @@ _.HiddenQuestTriggers =
 		q(60608),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(60611),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(60613),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
+		q(62460),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(61493),	-- when using "Building: Dredger Pool"
 		q(59472),	-- when using "Contract: Traditional Theme"
 		q(59473),	-- when using "Contract: Traditional Theme"

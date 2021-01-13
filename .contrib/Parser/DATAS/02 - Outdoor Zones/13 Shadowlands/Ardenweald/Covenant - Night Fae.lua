@@ -26,7 +26,7 @@ _.Zones =
 							["coord"] = { 46.4, 50.6, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60384, {	-- Aiding Bastion
@@ -35,7 +35,7 @@ _.Zones =
 							["coord"] = { 46.4, 50.6, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60383, {	-- Aiding Maldraxxus
@@ -44,7 +44,7 @@ _.Zones =
 							["coord"] = { 46.4, 50.6, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60382, {	-- Aiding Revendreth
@@ -53,7 +53,7 @@ _.Zones =
 							["coord"] = { 46.4, 50.6, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60462, {	-- Anima Appeal
@@ -62,7 +62,7 @@ _.Zones =
 							["coord"] = { 48.9, 39.3, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60457, {	-- Anima Salvage
@@ -80,7 +80,7 @@ _.Zones =
 							["coord"] = { 59.7, 31.3, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60421, {	-- A Call to Revendreth
@@ -98,7 +98,7 @@ _.Zones =
 							["coord"] = { 59.7, 31.3, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60373, {	-- A Source of Sorrowvine
@@ -107,7 +107,7 @@ _.Zones =
 							["coord"] = { 16.5, 52.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60369, {	-- A Wealth of Wealdwood
@@ -116,7 +116,7 @@ _.Zones =
 							["coord"] = { 16.5, 52.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60374, {	-- Bonemetal Bonanza
@@ -125,7 +125,7 @@ _.Zones =
 							["coord"] = { 16.5, 52.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60438, {	-- Challenges in Ardenweald
@@ -170,16 +170,16 @@ _.Zones =
 							["coord"] = { 16.5, 52.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60414, {	-- Rare Resources
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-							["coord"] = { 16.5, 52.4, 1565 },
 							["repeatable"] = true,
+							["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+							["coord"] = { 43.6, 52.4, 1565 },	-- Ardenweald
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60452, {	-- Storm the Maw
@@ -197,7 +197,7 @@ _.Zones =
 							["coord"] = { 40.9, 72.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60387, {	-- Training in Bastion
@@ -215,7 +215,7 @@ _.Zones =
 							["coord"] = { 40.9, 72.4, 1565 },
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 						q(60385, {	-- Training in Revendreth
@@ -233,7 +233,7 @@ _.Zones =
 							["coord"] = { 59.7, 31.3, 1701 },	-- The Trunk
 							["repeatable"] = true,
 							["g"] = {
-								i(181475),	-- Tribute of the Grove Wardens
+								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
 					}),

@@ -169,7 +169,7 @@ _.Zones =
 					["crs"] = { 
 						173139,	-- Bridled Shadehound (random spawn)
 						173149,	-- Bridled Shadehound (after killing NPC riding it)
-						-- 176390,	-- Bridled Shadehound -- Confirm this one, has very few locations on wowhead
+						176390,	-- Bridled Shadehound (random spawn?  found one up around 44, 45.  you just click to ride and it doesn't have a cast bar to hop on)
 					},
 				}),
 				ach(14334, {	-- Into the Maw
