@@ -3956,8 +3956,8 @@ end
 app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
 -- will attempt to return a filtered clone as a priority
-app.SearchForObjectClone = function(field, id)
-	local fcache = SearchForField(field, id);
+app.SearchForObjectClone = function(field, id, onlyCached)
+	local fcache = SearchForField(field, id, onlyCached);
 	if fcache and #fcache > 0 then
 		-- find a filter-match object first
 		for i=1,#fcache,1 do
@@ -12795,6 +12795,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						-- VENDORS = -2;
 						-- ZONEDROPS = 0;
 
+						-- TODO: Maybe generically just find creature headers < 1 instead of checking specific ones...
+
 						local holidayID = GetRelativeValue(group, "holidayID");
 						local u = group.u or GetRelativeValue(group, "u");
 						if group.key == "npcID" then
@@ -12815,6 +12817,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
 						MergeObject(holiday, group);
 					else
+						-- TODO: Maybe generically just find creature headers < 1 instead of checking specific ones...
 						-- Check if any top-level group in the mapped-groups matches the mapped-group (or its parent) being pulled in
 						-- if so, merge the categorized group into the matching topGroup instead of directly at the zone-level
 						-- Source:

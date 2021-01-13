@@ -281,6 +281,16 @@ _.Zones =
 						["provider"] = { "n", 168742 },	-- Polemarch Adrestes
 						["coord"] = { 56.8, 31.4, 1533 },	-- Bastion
 					}),
+					q(57122, {	-- A Step Too Far
+						["sourceQuests"] = { 57121 },	-- The Power of the Maw
+						["provider"] = { "n", 170375 },	-- Kleia
+						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+					}),
+					q(62555, {	-- A Touch of Humility
+						["sourceQuests"] = { 57125 },	-- Time to Reflect
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
+					}),
 					q(57905, {	-- A Unique Opportunity
 						["sourceQuests"] = { 62792 },	-- Into the Reservoir
 						["provider"] = { "n", 167745 },	-- Haephus
@@ -295,6 +305,11 @@ _.Zones =
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167810 },	-- Emeni
 						["coord"] = { 28.5, 37.5, 1536 },	-- Maldraxxus
+					}),
+					q(57114, {	-- Aerial Reconnaissance
+						["sourceQuests"] = { 57113 },	-- Lysonia's Trail
+						["provider"] = { "n", 156361 },	-- Kleia
+						["coord"] = { 61.8, 43.6, 1533 },	-- Bastion
 					}),
 					q(61775, {	-- An Early End
 						["sourceQuests"] = {
@@ -364,6 +379,11 @@ _.Zones =
 						["provider"] = { "n", 161544 },	-- The Curator
 						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
 					}),
+					q(57120, {	-- Compassion, Blade of Humility
+						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+						["provider"] = { "o", 353472 },	-- Radiant Sword
+						["coord"] = { 64.7, 45.6, 1533 },	-- Bastion
+					}),
 					q(61878, {	-- Crest of Greatness
 						["sourceQuests"] = { 61877 },	-- Return to the Hold
 						["provider"] = { "n", 173313 },	-- Xandria
@@ -398,6 +418,15 @@ _.Zones =
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
 						["provider"] = { "n", 160280 },	-- Mikanikos
 						["coord"] = { 50.1, 20.5, 1533 },
+					}),
+					q(57118, {	-- Distorted by the Maw
+						["sourceQuests"] = {
+							57115,	-- Sacred Scrolls of Humility
+							57116,	-- Succumbing to Pride
+							57120,	-- Compassion, Blade of Humility
+						},
+						["provider"] = { "n", 156327 },	-- Voitha
+						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
 					}),
 					q(57895, {	-- Elysian Hold
 						["sourceQuests"] = { 60492 },	-- A Proper Reception
@@ -437,6 +466,18 @@ _.Zones =
 						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
 						["provider"] = { "n", 162542 },	-- Kleia
 						["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
+					}),
+					q(57117, {	-- Fallen to Their Vices
+						["sourceQuests"] = {
+							57115,	-- Sacred Scrolls of Humility
+							57116,	-- Succumbing to Pride
+							57120,	-- Compassion, Blade of Humility
+						},
+						["provider"] = { "n", 156327 },	-- Voitha
+						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
+						["g"] = {
+							i(181291),	-- Selfless Sigil of the Archon
+						},
 					}),
 					q(61769, {	-- Fight and Flight
 						["sourceQuests"] = { 61768 },	-- Stronger Together
@@ -497,6 +538,18 @@ _.Zones =
 						["coord"] = { 55.6, 42.0, 1707 },
 						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
 					}),
+					q(57124, {	-- Her Will, Inflicted
+						["sourceQuests"] = {
+							57122,	-- A Step Too Far
+							57123,	-- Kyrian No More
+						},
+						["provider"] = { "n", 170375 },	-- Kleia
+						-- ["coord"] = { 30.1, 61.9, 1543 },	-- The Maw (your pet)
+						["g"] = {
+							i(178154),	-- Selfless Watcher's Chestplate
+							-- TODO: Leather/Mail/Plate
+						},
+					}),
 					q(58995, {	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
 						["coord"] = { 45.2, 65.4, 1565 },
@@ -528,7 +581,14 @@ _.Zones =
 						["provider"] = { "n", 166333 },	-- Xandria
 						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
 					}),
+					q(57123, {	-- Kyrian No More
+						["sourceQuests"] = { 57121 },	-- The Power of the Maw
+						["provider"] = { "n", 170375 },	-- Kleia
+						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+					}),
 					q(63345, {	-- Kyrian Tactician
+						-- TODO: confirm SQ, assumed
+						["sourceQuests"] = { 63344 },	-- Kyrian Veteran
 						["description"] = "Becomes available at Renown 22.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 70.3, 1707 },
@@ -561,6 +621,20 @@ _.Zones =
 						},
 						["provider"] = { "n", 162953 },	-- Sarah Howell
 						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+					}),
+					q(57207, {	-- Lysonia's Plan
+						["sourceQuests"] = {
+							57118,	-- Distorted by the Maw
+							57117,	-- Fallen to Their Vices
+						},
+						["provider"] = { "n", 156361 },	-- Kleia
+						["coord"] = { 68.3, 41.6, 1533 },	-- Bastion
+					}),
+					q(57113, {	-- Lysonia's Trail
+						-- ["sourceQuests"] = {  },	-- 
+						["description"] = "Requires Renown 20.",
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(58775, {	-- Meet the Queen
 						["description"] = "Requires Renown 17.",
@@ -689,6 +763,11 @@ _.Zones =
 						["provider"] = { "n", 159248 },	-- Haetio
 						["coord"] = { 43.2, 38.5, 1533 },
 					}),
+					q(57115, {	-- Sacred Scrolls of Humility
+						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+						["provider"] = { "n", 156327 },	-- Voitha
+						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
+					}),
 					q(58857, {	-- Seeds Away!
 						["provider"] = { "n", 162392 },	-- Willowblossom
 						["sourceQuests"] = { 58939 },	-- The Blue Seed
@@ -747,6 +826,11 @@ _.Zones =
 						["provider"] = { "n", 173222 },	-- Xandria
 						["coord"] = { 37.7, 29.4, 1536 },	-- Maldraxxus
 					}),
+					q(57116, {	-- Succumbing to Pride
+						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+						["provider"] = { "n", 156361 },	-- Kleia
+						["coord"] = { 65.8, 46.9, 1533 },	-- Bastion
+					}),
 					q(61876, {	-- Take Heart
 						["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 						["provider"] = { "n", 173193 },	-- Xandria
@@ -799,6 +883,11 @@ _.Zones =
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 69.8, 1707 },	-- Archon's Rise
 					}),
+					q(57121, {	-- The Power of the Maw
+						["sourceQuests"] = { 57207 },	-- Lysonia's Plan
+						["provider"] = { "n", 156474 },	-- Chyrus
+						["coord"] = { 69.0, 40.7, 1533 },	-- Bastion
+					}),
 					q(58571, {	-- The Seal of Contrition
 						["sourceQuests"] = { 58570 },	-- Parting Words
 						["provider"] = { "n", 162149 },	-- Mikanikos
@@ -824,6 +913,11 @@ _.Zones =
 						["g"] = {
 							i(181286),	-- Halo of the Selfless
 						},
+					}),
+					q(57125, {	-- Time to Reflect
+						["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
+						["provider"] = { "n", 169850 },	-- Uther
+						["coord"] = { 25.6, 65.1, 1543 },	-- The Maw
 					}),
 					q(58790, {	-- To Cross the Veil
 						["sourceQuests"] = {
@@ -862,6 +956,34 @@ _.Zones =
 						["coord"] = { 44.0, 51.8, 1565 },
 						["sourceQuests"] = { 58775 },	-- Meet the Queen
 					}),
+
+
+					q(58854, {	-- Convene the Paragons
+						["description"] = "Requires Renown 22.",
+						["sourceQuests"] = { 62555 },	-- A Touch of Humility
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
+					}),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
+					-- q(, {	-- 
+					-- 	["sourceQuests"] = {  },	-- 
+					-- 	["provider"] = { "n",  },	-- 
+					-- 	["coord"] = {  },	-- 
+					-- }),
 					
 					-- q(, {	-- 
 					-- 	["sourceQuests"] = {  },	-- 

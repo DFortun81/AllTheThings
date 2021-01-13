@@ -3068,7 +3068,7 @@ _.HiddenQuestTriggers =
 		-- q( ),	-- Kyrian
 		q(63314),	-- Necrolord
 		q(63312),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63315),	-- Venthyr
 		-- Completing mi(2214), "Campaign: The Forsworn Strike Back"
 		q(63250),	-- Shared
 		-- q( ),	-- Kyrian

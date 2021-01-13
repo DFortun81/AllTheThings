@@ -4329,6 +4329,7 @@ app.L = {
 		[353331] = "Faerie Stash",
 		[353332] = "Faerie Stash",
 		[353333] = "Faerie Stash",
+		[353472] = "Radiant Sword",
 		[353503] = "Silver Strongbox",
 		[353516] = "Silver Strongbox",
 		[353627] = "Battlefront Rations",
