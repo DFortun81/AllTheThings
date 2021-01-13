@@ -529,7 +529,7 @@ _.Zones =
 						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
 					}),
 					q(63345, {	-- Kyrian Tactician
-						["description"] = "Becomes available at Renown 22",
+						["description"] = "Becomes available at Renown 22.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 70.3, 1707 },
 					}),
@@ -929,7 +929,7 @@ _.Zones =
 						q(61863, {	-- Adventurer: Apolon
 							["provider"] = { "n", 160389 },    -- Koros
 							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 27",
+							["description"] = "Becomes available at Renown 27.",
 							["g"] = {
 								follower(1276),	-- Apolon
 							},
@@ -937,7 +937,7 @@ _.Zones =
 						q(61864, {	-- Adventurer: Bron
 							["provider"] = { "n", 160389 },    -- Koros
 							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 33",
+							["description"] = "Becomes available at Renown 33.",
 							["g"] = {
 								follower(1275),	-- Bron
 							},
@@ -945,7 +945,7 @@ _.Zones =
 						q(61862, {	-- Adventurer: Clora
 							["provider"] = { "n", 160389 },    -- Koros
 							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 17",
+							["description"] = "Becomes available at Renown 17.",
 							["g"] = {
 								follower(1273),	-- Clora
 							},
@@ -953,7 +953,7 @@ _.Zones =
 						q(61865, {	-- Adventurer: Disciple Kosmas
 							["provider"] = { "n", 160389 },    -- Koros
 							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 38",
+							["description"] = "Becomes available at Renown 38.",
 							["g"] = {
 								follower(1274),	-- Disciple Kosmas
 							},
@@ -962,7 +962,7 @@ _.Zones =
 							["sourceQuests"] = { 58103 },    -- Pride or Unit
 							["provider"] = { "n", 160389 },    -- Koros
 							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 4",
+							["description"] = "Becomes available at Renown 4.",
 							["g"] = {
 								follower(1271),	-- Pelodis
 							},
@@ -1011,11 +1011,11 @@ _.Zones =
 							}),
 							q(62984, {	-- Blueprint: Medallion of Service
 								-- From defeating Echthra on Loyalty difficulty
-								provider = { "i", 184445 },	-- Blueprint: Medallion of Service
+								["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
 							}),
 							q(60973, {	-- Blueprint: Phial of Serenity
 								-- From defeating Kalisthene on Loyalty difficulty
-								provider = { "i", 180495 },	-- Blueprint: Phial of Serenity
+								["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
 							}),
 							q(60975, {	-- Blueprint: Spiritforged Aegis
 								-- Quest starter is from defeating Craven Corinth on Courage difficulty
@@ -1024,7 +1024,7 @@ _.Zones =
 							}),
 							q(62970, {	-- Blueprint: Steward Mail Pouch
 								-- From defeating Myn'ir and Alderyn on Loyalty difficulty
-								provider = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
+								["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
 							}),
 							q(61963, {	-- Called to the Hunt
 								["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
@@ -1104,7 +1104,7 @@ _.Zones =
 							}),
 							q(60974, {	-- Phial of Serenity
 								-- Quest starter crafted with Ascension crafting
-								provider = { "i", 184478 },	-- Phial of Serenity
+								["provider"] = { "i", 184478 },	-- Phial of Serenity
 							}),
 							q(61965, {	-- Piercing the Shell
 								["sourceQuests"] = { 61963 },	-- Called to the Hunt
@@ -1118,7 +1118,7 @@ _.Zones =
 							}),
 							q(62995, {	-- Spiritforged Aegis
 								-- Quest starter crafted with Ascension crafting
-								provider = { "i", 184475 },	-- Spiritforged Aegis
+								["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 							}),
 							q(61365, {	-- Splinterbark Nightmare
 								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
@@ -1127,7 +1127,7 @@ _.Zones =
 							}),
 							q(62483, {	-- Steward Mail Pouch
 								-- Quest starter created with Ascension crafting
-								provider = { "i", 184577 },	-- Steward Mail Pouch
+								["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 							}),
 							q(61366, {	-- Tactical Operation
 								-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
