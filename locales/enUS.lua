@@ -129,7 +129,7 @@ app.L = {
 		["Expansion Pre"] = "Pre",
 		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",
-		["Classic -> "] = "",
+		["Classic %-> "] = "",
 		["Burning Crusade"] = "BC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",
@@ -162,6 +162,8 @@ app.L = {
 		["Emissary Quests"] = "Emissary",
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
+		["Covenant:"] = "Cov:",
+		["Sanctum Upgrades %-> "] = "",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {
