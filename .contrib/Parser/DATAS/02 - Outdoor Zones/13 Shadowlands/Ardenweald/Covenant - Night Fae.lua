@@ -1096,7 +1096,6 @@ _.Zones =
 						-- Tier 3: Hidden Pathways
 					}),
 					n(-930, {	-- Queen's Conservatory
-					--	["description"] = "|cFFA330C9Night Fae Covenant|r only.",
 						["g"] = {
 							o(350978, {	-- Queen's Conservatory Cache
 								filter(100, {	-- Mounts
@@ -1111,6 +1110,7 @@ _.Zones =
 										i(180414),	-- Wakener's Runestag
 									},
 								}),
+								i(180639),	-- Dusty Sporeflutterer
 								i(181314, {	-- Gulper Soul
 									["questID"] = 62421,	-- Gulper Soul
 								}),
@@ -1119,7 +1119,7 @@ _.Zones =
 								}),
 							}),
 							n(QUESTS, {
-								q(62447, {	-- A Rare and Unusual Spirit
+								q(62447, {	-- A Rare and Unusual Spirit (1)
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 									["provider"] = { "n", 171107 },	-- Cultivator Littleflower
 									["coord"] = { 42.2, 52.9, 1662 },
@@ -1127,10 +1127,21 @@ _.Zones =
 										i(183704),	-- Shifting Spirit of Knowledge
 									},
 								}),
+								q(62454, {	-- A Rare and Unusual Spirit (2)
+									["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+								}),
 								q(59862, {	-- A Savior for Lost Souls
 									["sourceQuests"] = { 63046 },	-- The End and the Beginning
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
+								}),
+								q(62450, {	-- A Spirit's Heart
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isDaily"] = true,
 								}),
 								q(62442, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
@@ -1226,13 +1237,6 @@ _.Zones =
 									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
 									["coord"] = { 42.2, 52.9, 1662 },
 									["maps"] = { 1669 },	-- Mists of Tirna Scithe
-									["g"] = {
-										i(183806),	-- Energetic Spirit of Curiosity
-									},
-								}),
-								q(62454, {	-- A Rare and Unusual Spirit
-									["provider"] = { "n", 174329 },	-- Falir the Shifting
-									["coord"] = { 24.0, 53.3, 1662 },
 									["g"] = {
 										i(183806),	-- Energetic Spirit of Curiosity
 									},

@@ -3157,6 +3157,7 @@ _.HiddenQuestTriggers =
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
+		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3276,6 +3277,7 @@ _.HiddenQuestTriggers =
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 		q(62572),	-- triggered after crafting Faction Flag for Abomination Factory
+		q(61561),	-- triggered after crafting Outlaw Flag for Abomination Factory
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
