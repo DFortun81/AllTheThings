@@ -9594,18 +9594,18 @@ app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 
 function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 	if total <= progress then
-		return "|c" .. GetProgressColor(1) .. "YOU DID IT!|r";
+		return "|c" .. GetProgressColor(1) .. L["YOU_DID_IT"];
 	else
 		local originalPercent = progress / total;
 		local nextPercent = math.ceil(originalPercent * 100);
 		local roundedPercent = nextPercent * 0.01;
 		local diff = math.ceil(total * (roundedPercent - originalPercent));
 		if diff < 1 then
-			return "|c" .. GetProgressColor(1) .. (total - progress) .. " THINGS UNTIL 100%|r";
+			return "|c" .. GetProgressColor(1) .. (total - progress) .. L["THINGS_UNTIL"] .. "100%|r";
 		elseif diff == 1 then
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THING UNTIL " .. nextPercent .. "%|r";
+			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THING_UNTIL"] .. nextPercent .. "%|r";
 		else
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THINGS UNTIL " .. nextPercent .. "%|r";
+			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THINGS_UNTIL"] .. nextPercent .. "%|r";
 		end
 	end
 end
