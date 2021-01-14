@@ -6,12 +6,11 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1543, {	-- The Maw
-		--	TODO: 1648 is the scenario version of the maw.  anything in the actual maw will be 1543 (main mapID) or a separate cave/interior map.  double-check everything in the "real" maw
 			n(QUESTS, {
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
+					["coord"] = { 32.9, 66.4, 1543 },
 				}),
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
@@ -34,11 +33,13 @@ _.Zones =
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 23.1, 31.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59752, {	-- A Fractured Blade
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59766, {	-- A Good Axe
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -47,6 +48,7 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(60271, {	-- A Grave Chance
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
@@ -57,6 +59,7 @@ _.Zones =
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
@@ -107,11 +110,13 @@ _.Zones =
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(57690, {	-- Cages For All Occasions
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
@@ -134,7 +139,7 @@ _.Zones =
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.2, 55.7, 1648 },
+					["coord"] = { 36.2, 55.7, 1543 },
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
@@ -147,6 +152,7 @@ _.Zones =
 						59766,	-- A Good Axe
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63179, {	-- Drowned and Torn Asunder
 					["provider"] = { "n", 176144 },	-- Disciple Kimonas
@@ -175,6 +181,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 21.5, 41.7, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63045, {	-- Feed Your Soul
 					-- ["sourceQuests"] = {
@@ -182,12 +189,13 @@ _.Zones =
 					-- },
 					["isDaily"] = true,
 					["provider"] = { "n", 175866 },	-- Vengeful Soul
-					["coord"] = { 25.2, 66.6, 1648 },
+					["coord"] = { 25.2, 66.6, 1543 },
 				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62214, {	-- Forces of Perdition
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
@@ -202,6 +210,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -223,7 +232,7 @@ _.Zones =
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.5, 50.7, 1648 },
+					["coord"] = { 36.5, 50.7, 1543 },
 				}),
 				q(62837, {	-- Hopeful News
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
@@ -248,6 +257,7 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
@@ -263,6 +273,7 @@ _.Zones =
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 22.2, 33.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62234, {	-- Power of the Colossus
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -278,6 +289,7 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 170624 },	-- Wilona Thorne
 					["coord"] = { 22.7, 51.9, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(60287, {	-- Rule 1: Have an Escape Plan
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
@@ -346,6 +358,7 @@ _.Zones =
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63206, {	-- Soulless Husks
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -355,6 +368,7 @@ _.Zones =
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62461, {	-- Stalking the Warrens
 				--	TODO: may also require 'rule 6 addendum,' not sure
@@ -366,6 +380,7 @@ _.Zones =
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 42.3, 42.1, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
 					["isDaily"] = true,
@@ -380,11 +395,12 @@ _.Zones =
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59959, {	-- The Brand Holds the Key
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
 					["provider"] = { "o", 355798 },	-- Cage
-					["coord"] = { 38.3, 48.5, 1648 },
+					["coord"] = { 38.3, 48.5, 1543 },
 				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
@@ -406,11 +422,13 @@ _.Zones =
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59767, {	-- The Path to Salvation
 					["sourceQuests"] = { 60644 },	-- Draw Out the Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 29.4, 44.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(61099, {	-- The Search for Baine
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -452,7 +470,7 @@ _.Zones =
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
+					["coord"] = { 32.9, 66.4, 1543 },
 				}),
 				q(63069, {	-- What They Know
 					["provider"] = { "o", 364987 },	-- Broker Journal
@@ -472,6 +490,7 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 
 
