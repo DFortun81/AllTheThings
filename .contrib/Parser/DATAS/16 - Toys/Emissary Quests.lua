@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-169, {	-- Emissary Quests
+	n(-169, {	-- Emissary Quests/Paragon Rewards
 		i(166877),	-- Azerite Firework Launcher
 		i(166808),	-- Bewitching Tea Set
 		i(166704),	-- Bowl of Glowing Pufferfish
@@ -12,6 +12,7 @@ _.Toys =
 		i(166308),	-- For da Blood God!
 		i(166703),	-- Goldtusk Inn Breakfast Buffet
 		i(153182),	-- Holy Lightsphere Toy
+		i(184495),	-- Infested Arachnid Casing
 		i(166880),	-- Meerah's Jukebox
 		i(170469),	-- Memento of the Deeps
 		i(166702),	-- Proudmoore Music Box
