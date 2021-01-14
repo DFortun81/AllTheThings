@@ -10277,7 +10277,7 @@ function app:CreateMiniListForGroup(group)
 			end
 			popout.data = {
 				["text"] = L["QUEST_CHAIN_REQ"],		-- L["QUEST_CHAIN_REQ"] = "Quest Chain Requirements"
-				["description"] = ,		-- L["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r"
+				["description"] = L["QUEST_CHAIN_REQ_DESC"],		-- L["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r"
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 				["g"] = gTop and { gTop } or g,
 				["hideText"] = true
@@ -13454,7 +13454,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			raidassistant = {
 				['text'] = L["RAID_ASSISTANT"],		-- L["RAID_ASSISTANT"] = "Raid Assistant"
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
-				["description"] = ,		-- L["RAID_ASSISTANT_DESC"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!"
+				["description"] = L["RAID_ASSISTANT_DESC"],		-- L["RAID_ASSISTANT_DESC"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!"
 				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
@@ -14242,7 +14242,7 @@ app:GetWindow("Random", UIParent, function(self)
 				local method = app.GetDataMember("RandomSearchFilter", L["INSTANCE"]);
 				if method then
 					rerollOption.text = L["REROLL_2"] .. method;		-- L["REROLL_2"] = "Reroll: "
-					method = "L["SELECT"] .. method;		-- L["SELECT"] = "Select"
+					method = L["SELECT"] .. method;		-- L["SELECT"] = "Select"
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
