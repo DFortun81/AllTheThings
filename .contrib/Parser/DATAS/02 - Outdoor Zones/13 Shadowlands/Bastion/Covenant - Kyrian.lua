@@ -619,6 +619,7 @@ _.Zones =
 						["sourceQuests"] = { 58846 },	-- The Greater Good
 						["provider"] = { "n", 166693 },	-- Polemarch Adrestes
 						["coord"] = { 67.4, 15.2, 1533 },	-- Bastion
+						["_drop"] = { "g" },	-- make a bunch of vendor items stop showing up that are not actually rewarded by this quest
 						["g"] = {
 							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
 							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
