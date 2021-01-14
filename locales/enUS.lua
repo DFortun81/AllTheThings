@@ -16,7 +16,7 @@ app.L = {
 	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
-	["THINGS_UNTIL"] = " THINGS UNTIL";
+	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
 
