@@ -23,11 +23,11 @@ app.L = {
 	
 	-- Big new chunk from AllTheThings.lua
 	
-	["REQUIRES"] = "Requires"
+	["REQUIRES"] = "Requires";
 	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
-	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot."
-	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
-	["ITEM_GIVES_REP"] = "Provides Reputation with '"
+	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
+	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)";
+	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	["COST"] = "Cost";
 	["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
 	["WRONG_FACTION"] = "You might need to be on the other faction to view this.";
@@ -100,7 +100,7 @@ app.L = {
 	["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 	["UNSORTED_1"] = "Unsorted";
 	["UNSORTED_2"] = " (Unsorted)";
-	["UNSORTED_DESC"] = "This data hasn't been implemented yet."
+	["UNSORTED_DESC"] = "This data hasn't been implemented yet.";
 	["NEVER_IMPLEMENTED"] = "Never Implemented";
 	["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players";
 	["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers";
@@ -131,7 +131,7 @@ app.L = {
 	["LEGACY_RAID_DIFF"] = "Legacy Raid Difficulty";
 	["LEGACY_RAID_DIFF_DESC"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!";
 	["TELEPORT_TO_FROM_DUNGEON"] = "Teleport to/from Dungeon";
-	["TELEPORT_TO_FROM_DUNGEON_DESC"] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way."
+	["TELEPORT_TO_FROM_DUNGEON_DESC"] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.";
 	["RESET_INSTANCES"] = "Reset Instances";
 	["RESET_INSTANCES_DESC"] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
 	["DELIST_GROUP"] = "Delist Group";
@@ -197,8 +197,8 @@ app.L = {
 	["ALL_THE_ILLUSIONS_DESC"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.";
 	["ALL_THE_REAGENTS_DESC"] = "All items that can be used to craft an item using a profession on your account.";
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
-	["AH_SCAN_SUCCESSFUL_2"] = " item(s)."
-	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!"
+	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
+	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
