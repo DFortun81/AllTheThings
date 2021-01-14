@@ -7905,7 +7905,7 @@ app.BaseQuest = {
 						local nq = app.SearchForObjectClone("questID", questID);
 						-- check the quests cached under this questID for the correct quest group
 						if nq then
-							if nq.collected or nq.altcollected or nq.breadcrumbLockedBy then
+							if IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy then
 								-- print(t.questID,"locked by",questID,"locked by",nq.breadcrumbLockedBy);
 								found = questID;
 							end
@@ -7919,15 +7919,23 @@ app.BaseQuest = {
 		elseif key == "sourceQuestsCompleted" then
 			if t.sourceQuests and #t.sourceQuests > 0 then
 				local anySourceIncomplete = false;
+				local sq;
+				local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
 				for i,sourceQuestID in ipairs(t.sourceQuests) do
 					if not anySourceIncomplete and not IsQuestFlaggedCompleted(sourceQuestID) then
-						anySourceIncomplete = true;
+						if includeBreadcrumbs then
+							-- consider the breadcrumb as an actual sq since the user is tracking them
+							anySourceIncomplete = true;
+						else
+							-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
+							sq = app.SearchForObjectClone("questID", sourceQuestID);
+							-- print(sq.questID,sq.isBreadcrumb,sq.breadcrumbLockedBy,sq.altcollected);
+							anySourceIncomplete = not sq or not sq.isBreadcrumb or sq.breadcrumbLockedBy or sq.altcollected;
+						end
 					end
 				end
 				return not anySourceIncomplete;
 			end
-			-- nil if no sourceQuests
-			return;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -11460,6 +11468,9 @@ RowOnEnter = function (self)
 		-- DEBUGGING
 		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
 		-- GameTooltip:AddDoubleLine("LUA Parent Table ID",tostring(reference.parent));
+		-- GameTooltip:AddDoubleLine("Completed AltQuestID",tostring(reference.altcompleted));
+		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
+		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
