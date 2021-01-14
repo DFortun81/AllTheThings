@@ -49,11 +49,11 @@ _.Zones =
 						}),
 						q(60382, {	-- Aiding Revendreth
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 167195 },	-- Blodwyn
-							["coord"] = { 46.4, 50.6, 1565 },
 							["repeatable"] = true,
+							["provider"] = { "n", 167195 },	-- Blodwyn
+							["coord"] = { 53.7, 6.42, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Bounty of the Grove Wardens
+								i(181556),	-- Tribute of the Court
 							},
 						}),
 						q(60462, {	-- Anima Appeal

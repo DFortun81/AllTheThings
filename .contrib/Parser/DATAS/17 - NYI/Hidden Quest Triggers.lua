@@ -3005,7 +3005,7 @@ _.HiddenQuestTriggers =
 		q(63260),	-- Venthyr
 		-- Completing mi(2245), "Campaign: Stacka's Last Stand"
 		q(63242),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63321),	-- Kyrian
 		q(63322),	-- Necrolord
 		-- q( ),	-- Night Fae
 		q(63323),	-- Venthyr
@@ -3388,24 +3388,23 @@ _.HiddenQuestTriggers =
 		q(61921),	-- triggered when entering the Ember Court, Week 5
 		q(61933),	-- triggered when entering the Ember Court, Week 6
 		q(61927),	-- triggered when entering the Ember Court for the week
+		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
+		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
 		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
+		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
+		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
 		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
+		q(62144),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Legacy of Stone" objective (went with Humble option, not Decadent)
 		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
 		q(62143),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Murder of Colonel Mort" objective
 		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
 		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
-		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
-		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective
-		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
-		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective by giving the slime to Prince Renathal
-		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
-	--	q(62144),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are

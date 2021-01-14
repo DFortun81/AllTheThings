@@ -63,9 +63,9 @@ _.Zones =
 						}),
 						q(60399, {	-- Aiding Revendreth
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["repeatable"] = true,
 							["provider"] = { "n", 165302 },	-- Rendle
 							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
-							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
@@ -312,6 +312,9 @@ _.Zones =
 							["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
 							["provider"] = { "n", 161977 },	-- General Draven
 							["coord"] = { 46.2, 14.7, 1699 },	-- Sinfall
+							["g"] = {
+								follower(1209),	-- General Draven
+							},
 						}),
 						q(58555, {	-- A Tense Reunion
 							["sourceQuests"] = { 58530 },	-- Hidden Mirror
