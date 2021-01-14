@@ -320,6 +320,11 @@ _.Zones =
 						["provider"] = { "n", 168743 },	-- Apolon
 						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
 					}),
+					q(59919, {	-- An Earned Bond
+						["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
+					}),
 					q(61785, {	-- An Expected Visitor
 						["description"] = "Requires Renown 11.",
 						-- ["sourceQuests"] = {  },	-- 
@@ -342,6 +347,11 @@ _.Zones =
 						-- ["sourceQuests"] = { 61878 },	-- Creat of Greatness
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 45.0, 56.9, 1707 },	-- Elysian Hold
+					}),
+					q(58844, {	-- Before the Dawn
+						["sourceQuests"] = { 58854 },	-- Convene the Paragons
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(58181, {	-- Building the Base
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
@@ -383,6 +393,12 @@ _.Zones =
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 						["provider"] = { "o", 353472 },	-- Radiant Sword
 						["coord"] = { 64.7, 45.6, 1533 },	-- Bastion
+					}),
+					q(58854, {	-- Convene the Paragons
+						["description"] = "Requires Renown 22.",
+						["sourceQuests"] = { 62555 },	-- A Touch of Humility
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(61878, {	-- Crest of Greatness
 						["sourceQuests"] = { 61877 },	-- Return to the Hold
@@ -599,6 +615,19 @@ _.Zones =
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 70.3, 1707 },
 					}),
+					q(58847, {	-- Kyrestia's Grace
+						["sourceQuests"] = { 58846 },	-- The Greater Good
+						["provider"] = { "n", 166693 },	-- Polemarch Adrestes
+						["coord"] = { 67.4, 15.2, 1533 },	-- Bastion
+						["g"] = {
+							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
+							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
+							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
+						},
+					}),
 					q(58951, {	-- Lakeshire's Last Stand
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
 						["provider"] = { "n", 163111 },	-- Magistrate Solomon
@@ -676,6 +705,11 @@ _.Zones =
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 40.9, 40.9, 1707 },	-- Archon's Rise
+					}),
+					q(62557, {	-- Our Realm Reclaimed
+						["sourceQuests"] = { 59919 },	-- An Earned Bond
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(58558, {	-- Overhead Intelligence
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
@@ -873,6 +907,11 @@ _.Zones =
 						["provider"] = { "n", 163650 },	-- Kleia
 						["coord"] = { 51.6, 47.7, 1707 },	-- Archon's Rise
 					}),
+					q(58846, {	-- The Greater Good
+						["sourceQuests"] = { 58844 },	-- Before the Dawn
+						["provider"] = { "n", 164473 },	-- Polemarch Adrestes
+						["coord"] = { 31.4, 23.4, 1533 },	-- Bastion
+					}),
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
@@ -956,34 +995,6 @@ _.Zones =
 						["coord"] = { 44.0, 51.8, 1565 },
 						["sourceQuests"] = { 58775 },	-- Meet the Queen
 					}),
-
-
-					q(58854, {	-- Convene the Paragons
-						["description"] = "Requires Renown 22.",
-						["sourceQuests"] = { 62555 },	-- A Touch of Humility
-						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
-					}),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
-					-- q(, {	-- 
-					-- 	["sourceQuests"] = {  },	-- 
-					-- 	["provider"] = { "n",  },	-- 
-					-- 	["coord"] = {  },	-- 
-					-- }),
 					
 					-- q(, {	-- 
 					-- 	["sourceQuests"] = {  },	-- 

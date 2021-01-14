@@ -1129,7 +1129,11 @@ _.Zones =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
 						["g"] = {
+							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
 							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 						},
 					}),

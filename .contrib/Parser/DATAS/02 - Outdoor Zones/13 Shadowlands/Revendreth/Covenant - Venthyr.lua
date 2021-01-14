@@ -877,7 +877,11 @@ _.Zones =
 							["coord"] = { 27.4, 40.3, 1525 },	-- Revendreth
 							["g"] = {
 								i(180948),	-- Battle Gargon Vrednic
+								i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
+								i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
 								i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+								i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+								i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 								i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 							},
 						}),	

@@ -917,7 +917,11 @@ _.Zones =
 							i(182165, {	-- Ardenmoth Soul
 								["questID"] = 62422,
 							}),
+							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
 							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 						},
 					}),
