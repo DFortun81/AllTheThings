@@ -28,7 +28,8 @@ _.Zones =
 						crit(12, {	-- Amalgamation of Light
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180586),	-- Lightbinders
+						i(180586),	-- Lightbinders (PET!)
+						i(179926),	-- Light-Infused Tunic
 						i(180688),	-- Infused Remnant of Light
 					},
 				}),

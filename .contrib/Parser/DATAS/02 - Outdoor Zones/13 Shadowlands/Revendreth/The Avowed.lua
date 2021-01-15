@@ -64,12 +64,21 @@ _.Zones =
 					n(RARES, {
 						n(-954, {	-- Inquisitors
 							n(COMMON_BOSS_DROPS, {
-								i(173721, {	-- Love and Terror
-									["questID"] = 58081,	-- Favor: Love and Terror
-								}),
-								i(184214),	-- Chained Manacles
-								i(184213),	-- Ritualist's Soles
-								i(184217),	-- Sinstone Stompers
+								["crs"] = {
+									156918,	-- Inquisitor Otilia
+									156919,	-- Inquisitor Petre
+									156916,	-- Inquisitor Sorian
+									159151,	-- Inquisitor Traian
+								},
+								["g"] = {
+									i(173721, {	-- Love and Terror
+										["questID"] = 58081,	-- Favor: Love and Terror
+									}),
+									i(184214),	-- Chained Manacles
+									i(180493),	-- Inquisitor's Robes
+									i(184213),	-- Ritualist's Soles
+									i(184217),	-- Sinstone Stompers
+								},
 							}),
 							n(156918, {	-- Inquisitor Otilia
 								["description"] = "Requires |cff18bb0aInquisitor Otilia's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
@@ -122,11 +131,19 @@ _.Zones =
 						--	TODO: add any missing loot (some is npc-specific, some is shared, ugh)
 							-- when i killed the first one, Gabi, i got a questID of 59887.  the second one, Radu, didn't give a questID.  are they shared through each tier (normal > high > grand), one-time, random?  test!
 							n(COMMON_BOSS_DROPS, {
-								i(173721, {	-- Love and Terror
-									["questID"] = 58081,	-- Favor: Love and Terror
-								}),
-								i(184211),	-- High Inquisitor's Banded Cincture
-								i(184212),	-- Intimidator Trainer's Cuffs
+								["crs"] = {
+									159155,	-- High Inquisitor Dacian
+									159152,	-- High Inquisitor Gabi
+									159154,	-- High Inquisitor Magda
+									159153,	-- High Inquisitor Radu
+								},
+								["g"] = {
+									i(173721, {	-- Love and Terror
+										["questID"] = 58081,	-- Favor: Love and Terror
+									}),
+									i(184211),	-- High Inquisitor's Banded Cincture
+									i(184212),	-- Intimidator Trainer's Cuffs
+								},
 							}),
 							n(159155, {	-- High Inquisitor Dacian
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
@@ -182,11 +199,17 @@ _.Zones =
 						}),
 						n(-956, {	-- Grand Inquisitors
 							n(COMMON_BOSS_DROPS, {
-								i(173721, {	-- Love and Terror
-									["questID"] = 58081,	-- Favor: Love and Terror
-								}),
-								i(177803),	-- Grand Inquisitor's Stave
-								i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
+								["crs"] = {
+									159157,	-- Grand Inquisitor Aurica
+									159156,	-- Grand Inquisitor Nicu
+								},
+								["g"] = {
+									i(173721, {	-- Love and Terror
+										["questID"] = 58081,	-- Favor: Love and Terror
+									}),
+									i(177803),	-- Grand Inquisitor's Stave
+									i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
+								},
 							}),
 							n(159157, {	-- Grand Inquisitor Aurica
 								["description"] = "Requires |cff712daaGrand Inquisitor Aurica's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",

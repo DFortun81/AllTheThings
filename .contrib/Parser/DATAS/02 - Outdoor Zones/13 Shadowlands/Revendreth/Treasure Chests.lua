@@ -99,10 +99,14 @@ _.Zones =
 					["coord"] = { 42.5, 50.3, 1525 },
 				}),
 				o(351542, {	-- Secret Treasure
+				--	TODO: check back and see if this ever drops from any other treasure chests/secret treasures/shows up on mission table/etc.  this is the chest i got it from and as of january 15th it's the only one listed as dropping it on wowhead!  definitely not a guaranteed drop even if it's PL; this was at least my second time looting this chest
 					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
-					["isDaily"] = true,	-- ?? repeatable?
-					["coord"] = { 74.0, 61.9, 1525 },					
+					["isDaily"] = true,
+					["coord"] = { 74.0, 61.9, 1525 },
+					["g"] = {
+						i(180394),	-- Envy-Laced Leggings
+					},
 				}),
 				o(351543, {	-- Secret Treasure
 					["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r.  Clicking the chain will pull you up to the tiny alcove above the treasure.  Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
