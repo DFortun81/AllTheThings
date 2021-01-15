@@ -94,11 +94,11 @@ _.Zones =
 						}),
 						q(60420, {	-- A Call to Maldraxxus
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["provider"] = { "n", 167193 },	-- Featherlight
-							["coord"] = { 59.7, 31.3, 1565 },
 							["repeatable"] = true,
+							["provider"] = { "n", 167193 },	-- Featherlight
+							["coord"] = { 59.9, 32.1, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Bounty of the Grove Wardens
+								i(181732),	-- Tribute of the Ambitious
 							},
 						}),
 						q(60373, {	-- A Source of Sorrowvine

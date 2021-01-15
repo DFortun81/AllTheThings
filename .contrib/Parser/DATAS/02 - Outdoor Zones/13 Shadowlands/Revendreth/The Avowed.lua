@@ -15,7 +15,11 @@ _.Zones =
 					n(ACHIEVEMENTS, {
 						ach(14277, {	-- The Accuser's Avowed
 							title(423),		-- Cryptkeeper
-							ach(14274),		-- Absolution For All
+							ach(14274, {	-- Absolution For All
+							--	these dudes are so plentiful that coordinates seems insane.  they are EVERYWHERE
+								["description"] = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters.  Find them and bring them to an Avowed Ritualist to perform ritual of absolution.\n\nOnly one soul can be picked up at a time.",
+								["crs"] = { 156150 },	-- Fugitive Soul
+							}),
 							ach(14273, {	-- Crypt Kicker
 								["cost"] = { { "i", 172957, 50 } },	-- 50x Atonement Crypt Key
 								["sourceQuests"] = { 57928 },	-- Atonement Crypt Key

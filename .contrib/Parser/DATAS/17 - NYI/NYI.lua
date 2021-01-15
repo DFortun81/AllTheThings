@@ -58,6 +58,16 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(180433)),	-- 9.0 PvP - PvP Reward - Tabard - 3
 		un(NEVER_IMPLEMENTED, i(180434)),	-- 9.0 PvP - PvP Reward - Tabard - 4
 		un(NEVER_IMPLEMENTED, i(180435)),	-- 9.0 PvP - PvP Reward - Tabard - 5
+		un(NEVER_IMPLEMENTED, i(175181)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(175213)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178302)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178307)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178312)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178314)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178318)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178323)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178326)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178330)),	-- Retrieving Data
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -1305,6 +1315,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(81000)),	-- Ringmail Armor of Eminent Domain (not added version)
 			un(NEVER_IMPLEMENTED, i(80996)),	-- Chain Armor of Eminent Domain (not added version)
 			un(NEVER_IMPLEMENTED, i(37454)),	-- HF28 Mail Physical Chest4
+			un(NEVER_IMPLEMENTED, i(2867)),		-- Rough Bronze Bracers (crafted by NYI pattern)
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
