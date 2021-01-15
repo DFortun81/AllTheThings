@@ -12,9 +12,6 @@ profession(FIRST_AID, {
 				un(REMOVED_FROM_GAME, ach(9505)),	-- Draenor Medic (700)
 			},
 		})),
-		un(REMOVED_FROM_GAME, ach(137)),	-- Stocking Up
-		un(REMOVED_FROM_GAME, ach(5480)),	-- Preparing for Disaster
-		un(REMOVED_FROM_GAME, ach(141)),	-- Ultimate Triage
 		un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 			["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 			["groups"] = {

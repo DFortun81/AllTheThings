@@ -156,9 +156,13 @@ _.Achievements =
 				ach(6838),	-- Zen Master Medic (600)
 				ach(9505),	-- Draenor Medic (700)
 			})),
-			un(REMOVED_FROM_GAME, ach(5480)),	-- Preparing for Disaster
-			un(REMOVED_FROM_GAME, ach(137)),	-- Stocking Up
-			un(REMOVED_FROM_GAME, ach(141)),	-- Ultimate Triage
+			ach(5480, {	-- Preparing for Disaster
+				["requireSkill"] = TAILORING,
+			}),
+			ach(137, {	-- Stocking Up
+				["requireSkill"] = TAILORING,
+			}),
+			ach(141),	-- Ultimate Triage
 		}),
 	}),
 };

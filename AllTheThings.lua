@@ -7895,6 +7895,7 @@ app.BaseQuest = {
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			local found;
 			if t.isBreadcrumb and t.nextQuests then
+				local nq;
 				for i,questID in ipairs(t.nextQuests) do
 					-- any nextQuests completed specifically on this character, mark the nextQuestsID
 					if not found and IsQuestFlaggedCompleted(questID) then
@@ -7902,7 +7903,7 @@ app.BaseQuest = {
 						found = questID;
 					elseif not found then
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local nq = app.SearchForObjectClone("questID", questID);
+						nq = app.SearchForObjectClone("questID", questID);
 						-- check the quests cached under this questID for the correct quest group
 						if nq then
 							if IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy then
