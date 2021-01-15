@@ -20,15 +20,18 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(127725, {	-- Recipe: Mighty Steelforged Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127726, {	-- Recipe: Mighty Taladite Amplifier
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127727, {	-- Recipe: Mighty Truesteel Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
@@ -39,34 +42,41 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Recipe: Savage Steelforged Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127744, {	-- Recipe: Savage Taladite Amplifier
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127745, {	-- Recipe: Savage Truesteel Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127729, {	-- Schematic: Advanced Muzzlesprocket
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127739, {	-- Schematic: Infrablue-Blocker Lenses
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(122712, {	-- Schematic: Primal Welding
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127747, {	-- Schematic: Taladite Firing Pin
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 					},
@@ -182,11 +192,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(127724, {	-- Recipe: Mighty Hexweave Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(127742, {	-- Recipe: Savage Hexweave Essence
-							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 					},
@@ -230,10 +242,14 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(127722, {	-- Recipe: Mighty Burnished Essence
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 						un(REMOVED_FROM_GAME, i(122547)),	-- Recipe: Powerful Burnished Essence
 						i(127740, {	-- Recipe: Savage Burnished Essence
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 						i(122715, {	-- Recipe: Spiritual Leathercraft
@@ -254,6 +270,8 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(128161, {	-- Recipe: Elemental Distillate
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(122710, {	-- Recipe: Primal Alchemy
@@ -263,6 +281,8 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128410, {	-- Technique: Mass Mill Fireweed
@@ -284,15 +304,23 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(127723, {	-- Technique: Mighty Ensorcelled Tarot
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(127728, {	-- Technique: Mighty Weapon Crystal
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(127741, {	-- Technique: Savage Ensorcelled Tarot
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(127746, {	-- Technique: Savage Weapon Crystal
+							["description"] = WOD_REMOVED_RECIPE_STR,
+							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(122713, {	-- Technique: The Spirit of War
