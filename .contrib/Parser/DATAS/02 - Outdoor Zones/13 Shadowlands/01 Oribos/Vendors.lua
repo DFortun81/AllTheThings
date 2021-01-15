@@ -513,6 +513,174 @@ _.Zones =
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					["coord"] = { 35.0, 57.6, 1670 },
 					["g"] = {
+						n(-939, {	-- Covenant: Kyrian
+							-- These are only available to Kyrian covenant members
+							i(177851, {	-- Sinful Gladiator's Ceremonial Sword
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(177866, {	-- Sinful Gladiator's Chalice
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(184549, {	-- Sinful Gladiator's Dory
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(177846, {	-- Sinful Gladiator's Gladius
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(180313, {	-- Sinful Gladiator's Greatmallet
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(174311, {	-- Sinful Gladiator's Guard
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(184546, {	-- Sinful Gladiator's Hacker
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(177861, {	-- Sinful Gladiator's Knife
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(177856, {	-- Sinful Gladiator's Lightbow
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(184548, {	-- Sinful Gladiator's Ritual Dagger
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(174299, {	-- Sinful Gladiator's Splitter
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(178971, {	-- Sinful Gladiator's Vesper
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(184237, {	-- Sinful Gladiator's Warglaive
+								["cost"] = { { "c", 1602,  900 } },
+							}),
+							i(184547, {	-- Sinful Gladiator's Xiphos
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+						}),
+						n(-920, {	-- Covenant: Necrolord
+							-- These are only available to Necrolord covenant members
+							i(183446, {	-- Sinful Gladiator's Cleaver
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(183439, {	-- Sinful Gladiator's Crystal
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(183449, {	-- Sinful Gladiator's Gavel
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(183447, {	-- Sinful Gladiator's Glaive
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(183448, {	-- Sinful Gladiator's Hacker
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(184574, {	-- Sinful Gladiator's Necrostave
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(183438, {	-- Sinful Gladiator's Redoubt
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(183445, {	-- Sinful Gladiator's Rifle
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(183443, {	-- Sinful Gladiator's Sacrificial Dagger
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(183437, {	-- Sinful Gladiator's Shanker
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(183440, {	-- Sinful Gladiator's Splitter
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(183441, {	-- Sinful Gladiator's Warglaive
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+						}),
+						n(-929, {	-- Covenant: Night Fae
+							-- These are only available to Night Fae covenant members
+							i(179543, {	-- Sinful Gladiator's Bludgeon
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(179609, {	-- Sinful Gladiator's Bulwark
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(180261, {	-- Sinful Gladiator's Edge
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(179495, {	-- Sinful Gladiator's Fang
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(179578, {	-- Sinful Gladiator's Jaws
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(179569, {	-- Sinful Gladiator's Lyre
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(179559, {	-- Sinful Gladiator's Scepter
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(182349, {	-- Sinful Gladiator's Shillelagh
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(179526, {	-- Sinful Gladiator's Spear
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(180004, {	-- Sinful Gladiator's Staff
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(180019, {	-- Sinful Gladiator's Wand
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(180081, {	-- Sinful Gladiator's Warbow
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+						}),
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(182406, {	-- Sinful Gladiator's Battlestave
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(182402, {	-- Sinful Gladiator's Crusaderblade
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(182403, {	-- Sinful Gladiator's Gargoyle Claw
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(182412, {	-- Sinful Gladiator's Redoubt
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(182411, {	-- Sinful Gladiator's Repeating Crossbow
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(184568, {	-- Sinful Gladiator's Shortblade
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(182409, {	-- Sinful Gladiator's Sineater Blade
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(182404, {	-- Sinful Gladiator's Sineater Gavel
+								["cost"] = { { "c", 1602, 1350 } },
+							}),
+							i(182401, {	-- Sinful Gladiator's Sinedged Dirk
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(182413, {	-- Sinful Gladiator's Spell Foci
+								["cost"] = { { "c", 1602, 450 } },
+							}),
+							i(182408, {	-- Sinful Gladiator's Swordbreaker
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(182405, {	-- Sinful Gladiator's Torch Staff
+								["cost"] = { { "c", 1602, 1800 } },
+							}),
+							i(182407, {	-- Sinful Gladiator's Wingblade
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+							i(182410, {	-- Sinful Gladiator's Wingglaive
+								["cost"] = { { "c", 1602, 900 } },
+							}),
+						}),
 						i(181848, {	-- Accelerated Cold
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { DEATHKNIGHT },
@@ -686,18 +854,6 @@ _.Zones =
 						i(178381, {	-- Sinful Gladiator's Band
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(182406, {	-- Sinful Gladiator's Battlestave
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(179543, {	-- Sinful Gladiator's Bludgeon
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(179609, {	-- Sinful Gladiator's Bulwark
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(177851, {	-- Sinful Gladiator's Ceremonial Sword
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
 						i(175914, {	-- Sinful Gladiator's Chain Belt
 							["cost"] = { { "c", 1602, 700 } },
 						}),
@@ -746,71 +902,20 @@ _.Zones =
 						i(175919, {	-- Sinful Gladiator's Chain Wristguards
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(177866, {	-- Sinful Gladiator's Chalice
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(183446, {	-- Sinful Gladiator's Cleaver
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
 						i(175888, {	-- Sinful Gladiator's Cloak
 							["cost"] = { { "c", 1602, 525 } },
-						}),
-						i(182402, {	-- Sinful Gladiator's Crusaderblade
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(183439, {	-- Sinful Gladiator's Crystal
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(184549, {	-- Sinful Gladiator's Dory
-							["cost"] = { { "c", 1602, 1800 } },
 						}),
 						i(178353, {	-- Sinful Gladiator's Drape
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(180261, {	-- Sinful Gladiator's Edge
-							["cost"] = { { "c", 1602, 900 } },
-						}),
 						i(178447, {	-- Sinful Gladiator's Emblem
 							["cost"] = { { "c", 1602, 700 } },
-						}),
-						i(179495, {	-- Sinful Gladiator's Fang
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(182403, {	-- Sinful Gladiator's Gargoyle Claw
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(183449, {	-- Sinful Gladiator's Gavel
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(177846, {	-- Sinful Gladiator's Gladius
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(183447, {	-- Sinful Gladiator's Glaive
-							["cost"] = { { "c", 1602, 1800 } },
 						}),
 						i(184311, {	-- Sinful Gladiator's Greatcloak
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(180313, {	-- Sinful Gladiator's Greatmallet
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(174311, {	-- Sinful Gladiator's Guard
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(183448, {	-- Sinful Gladiator's Hacker (apparently there are 2 versions of this item that are both available cause I see this one on the vendor and someone else added the other one)
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(184546, {	-- Sinful Gladiator's Hacker
-							["cost"] = { { "c", 1602, 900 } },
-						}),
 						i(178386, {	-- Sinful Gladiator's Insignia of Alacrity
 							["cost"] = { { "c", 1602, 700 } },
-						}),
-						i(179578, {	-- Sinful Gladiator's Jaws
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(177861, {	-- Sinful Gladiator's Knife
-							["cost"] = { { "c", 1602, 900 } },
 						}),
 						i(175915, {	-- Sinful Gladiator's Leather Belt
 							["cost"] = { { "c", 1602, 700 } },
@@ -860,20 +965,11 @@ _.Zones =
 						i(175920, {	-- Sinful Gladiator's Leather Wristwraps
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(177856, {	-- Sinful Gladiator's Lightbow
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(179569, {	-- Sinful Gladiator's Lyre
-							["cost"] = { { "c", 1602, 450 } },
-						}),
 						i(181333, {	-- Sinful Gladiator's Medallion
 							["cost"] = { { "c", 1602, 525 } },
 						}),
 						i(175922, {	-- Sinful Gladiator's Necklace
 							["cost"] = { { "c", 1602, 525 } },
-						}),
-						i(184574, {	-- Sinful Gladiator's Necrostave
-							["cost"] = { { "c", 1602, 1800 } },
 						}),
 						i(178387, {	-- Sinful Gladiator's Pendant
 							["cost"] = { { "c", 1602, 525 } },
@@ -926,44 +1022,14 @@ _.Zones =
 						i(175918, {	-- Sinful Gladiator's Plate Wristguards
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(182412, {	-- Sinful Gladiator's Redoubt
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(183438, {	-- Sinful Gladiator's Redoubt (apparently there are 2 versions of this item that are both available cause I see this one on the vendor and someone else added the other one)
-							["cost"] = { { "c", 1602, 450 } },
-						}),
 						i(181335, {	-- Sinful Gladiator's Relentless Brooch
 							["cost"] = { { "c", 1602, 525 } },
-						}),
-						i(182411, {	-- Sinful Gladiator's Repeating Crossbow
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(183445, {	-- Sinful Gladiator's Rifle
-							["cost"] = { { "c", 1602, 1800 } },
 						}),
 						i(175916, {	-- Sinful Gladiator's Ring
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(184548, {	-- Sinful Gladiator's Ritual Dagger
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(183443, {	-- Sinful Gladiator's Sacrificial Dagger
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(179559, {	-- Sinful Gladiator's Scepter
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(183437, {	-- Sinful Gladiator's Shanker
-							["cost"] = { { "c", 1602, 900 } },
-						}),
 						i(178414, {	-- Sinful Gladiator's Shawl
 							["cost"] = { { "c", 1602, 525 } },
-						}),
-						i(182349, {	-- Sinful Gladiator's Shillelagh
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(184568, {	-- Sinful Gladiator's Shortblade
-							["cost"] = { { "c", 1602, 900 } },
 						}),
 						i(181816, {	-- Sinful Gladiator's Sigil of Adaptation
 							["cost"] = { { "c", 1602, 525 } },
@@ -1019,60 +1085,6 @@ _.Zones =
 						i(175917, {	-- Sinful Gladiator's Silk Wristwraps
 							["cost"] = { { "c", 1602, 525 } },
 						}),
-						i(182409, {	-- Sinful Gladiator's Sineater Blade
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(182404, {	-- Sinful Gladiator's Sineater Gavel
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(182401, {	-- Sinful Gladiator's Sinedged Dirk
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(179526, {	-- Sinful Gladiator's Spear
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(182413, {	-- Sinful Gladiator's Spell Foci
-							["cost"] = { { "c", 1602, 450 } },
-						}),
-						i(174299, {	-- Sinful Gladiator's Splitter
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(183440, {	-- Sinful Gladiator's Splitter (apparently there are 2 versions of this item that are both available cause I see this one on the vendor and someone else added the other one)
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(180004, {	-- Sinful Gladiator's Staff
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(182408, {	-- Sinful Gladiator's Swordbreaker
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(182405, {	-- Sinful Gladiator's Torch Staff
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(178971, {	-- Sinful Gladiator's Vesper
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(180019, {	-- Sinful Gladiator's Wand
-							["cost"] = { { "c", 1602, 1350 } },
-						}),
-						i(180081, {	-- Sinful Gladiator's Warbow
-							["cost"] = { { "c", 1602, 1800 } },
-						}),
-						i(183441, {	-- Sinful Gladiator's Warglaive (apparently there are 2 versions of this item that are both available cause I see this one on the vendor and someone else added the other one)
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(184237, {	-- Sinful Gladiator's Warglaive
-							["cost"] = { { "c", 1602,  900 } },
-						}),
-						i(182407, {	-- Sinful Gladiator's Wingblade
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(182410, {	-- Sinful Gladiator's Wingglaive
-							["cost"] = { { "c", 1602, 900 } },
-						}),
-						i(184547, {	-- Sinful Gladiator's Xiphos
-							["cost"] = { { "c", 1602, 900 } },
-						}),
 						i(181836, {	-- Spirit Drain
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { DEATHKNIGHT },
@@ -1105,11 +1117,6 @@ _.Zones =
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { PALADIN },
 						}),
-						--[[
-						i(, {	-- Sinful Gladiator's 
-							["cost"] = { { "c", 1602,  } },
-						}),
-						--]]
 					},
 				}),
 			}),
