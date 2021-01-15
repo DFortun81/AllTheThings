@@ -14412,6 +14412,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							local requireSkill = self.data.requireSkill;
 							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
+							response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = "Interface\\Addons\\AllTheThings\\assets\\ach",g=response});  end
 							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);

@@ -6,7 +6,7 @@
 _.Achievements =
 {
 	n(-9960, {	-- Professions
-		n(-9971, {	-- Cooking
+		n(-9971, bubbleDown({ ["requireSkill"] = COOKING, }, {	-- Cooking
 			ach(2002, {		-- 100 Cooking Awards
 				ach(2001),		-- 50 Cooking Awards
 				ach(2000),		-- 25 Cooking Awards
@@ -16,7 +16,14 @@ _.Achievements =
 			ach(5845),		-- A Bunch of Lunch
 			ach(10591),		-- All Grown Up
 			ach(4916),		-- Cataclysmic Cook
-			ach(12747),		-- Catering for Combat
+			ach(12747, {		-- Catering for Combat
+				["cost"] = {
+					{ "i", 156525, 1 },	-- 1x Galley Banquet
+					{ "i", 156526, 1 },	-- 1x Bountiful Captain's Feast
+					{ "i", 166240, 1 },	-- 1x Sanguinated Feast
+					{ "i", 168315, 1 },	-- 1x Famine Evaluator And Snack Table
+				},
+			}),
 			ach(123, {		-- Classic Cook
 				ach(122),		-- Expert Cook
 				ach(121),		-- Journeyman Cook
@@ -455,6 +462,6 @@ _.Achievements =
 			}),
 			ach(5779),		-- You'll Feel Right as Rain
 			ach(6365),		-- Zen Master Cook
-		}),
+		})),
 	}),
 };
