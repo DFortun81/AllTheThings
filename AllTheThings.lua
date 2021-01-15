@@ -1118,9 +1118,14 @@ end
 local function GetUnobtainableTexture(group)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
-	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1],1);
+	local obtainType = group.u or 1;
+	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1],1);
 	if group.itemID or group.spellID then
-		if not group.b or group.b == 2 or group.b == 3 then
+		-- not NYI
+		if obtainType > 1 and
+			-- is BoE
+			(not group.b or group.b == 2 or group.b == 3) then
+			-- green dot for 'possible'
 			index = 3;
 		end
 	end
