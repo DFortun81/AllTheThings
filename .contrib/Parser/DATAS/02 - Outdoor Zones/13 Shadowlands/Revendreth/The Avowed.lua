@@ -16,7 +16,7 @@ _.Zones =
 						ach(14277, {	-- The Accuser's Avowed
 							title(423),		-- Cryptkeeper
 							ach(14274, {	-- Absolution For All
-							--	these dudes are so plentiful that coordinates seems insane.  they are EVERYWHERE
+							--	these dudes are so plentiful that coordinates seem insane.  they are EVERYWHERE, there's like 50+ spawnpoints in a pretty small area.  there are plenty of ritualists, too, and they get highlighted when you have a soul to turn in so they're very obvious and also don't need coords
 								["description"] = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters.  Find them and bring them to an Avowed Ritualist to perform ritual of absolution.\n\nOnly one soul can be picked up at a time.",
 								["crs"] = { 156150 },	-- Fugitive Soul
 							}),

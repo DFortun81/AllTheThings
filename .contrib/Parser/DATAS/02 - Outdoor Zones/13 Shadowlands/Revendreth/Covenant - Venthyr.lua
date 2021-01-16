@@ -1999,6 +1999,7 @@ _.Zones =
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
 									}),
+								--	TODO: flesh out, add 181363 Handcrafted Mirror Repair Kit somewhere (to vendor or as cost to broken mirror objects?)
 								--	not sure if the mirrors have discrete questIDs/locations/objects associated?
 								--	apparently there are 3 up that can be completed each day (costs 20 Infused Ruby each).  the same 3 will be up each week, and then upon reset will cycle, but unpredictably (aka the same 3 can be up the next week)
 								--	mirror should always port you to treasure.  if it takes you to Sanctuary of the Mad, go back to the same mirror, re-enter, and you should get ported to the right place
