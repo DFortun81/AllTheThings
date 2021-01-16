@@ -2970,19 +2970,19 @@ _.HiddenQuestTriggers =
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
 		q(63070),	-- Shared
 		q(63360),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63361),	-- Necrolord
 		q(63359),	-- Night Fae
 		q(63362),	-- Venthyr
 		-- Completing mi(2295), "Tutorial: Necromantic Intervention"
 		q(63071),	-- Shared
 		q(63364),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63365),	-- Necrolord
 		q(63363),	-- Night Fae
 		q(63366),	-- Venthyr
 		-- Completing mi(2175),	"Tutorial: Spinal Swarm"
 		q(60634),	-- Shared
 		q(63368),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63369),	-- Necrolord
 		q(63367),	-- Night Fae
 		q(63370),	-- Venthyr
 		-- Completing mi(2211),	"Campaign: Whisper in the Dark"
@@ -2994,20 +2994,20 @@ _.HiddenQuestTriggers =
 		-- Completing mi(2228), "Campaign: Discarded But Not Useless"
 		q(63252),	-- Shared
 		q(63301),	-- Kyrian
-		-- q( ),	-- Necrolord
-		-- q( ),	-- Night Fae
+		q(63302),	-- Necrolord
+		q(63300),	-- Night Fae
 		q(63303),	-- Venthyr
 		-- Completing mi(2194), "Campaign: Erezuel's Revenge"
 		q(63237),	-- Shared
 		q(63258),	-- Kyrian
 		q(63259),	-- Necrolord
-		-- q( ),	-- Night Fae
+		q(63257),	-- Night Fae
 		q(63260),	-- Venthyr
 		-- Completing mi(2245), "Campaign: Stacka's Last Stand"
 		q(63242),	-- Shared
 		q(63321),	-- Kyrian
 		q(63322),	-- Necrolord
-		-- q( ),	-- Night Fae
+		q(63320),	-- Night Fae
 		q(63323),	-- Venthyr
 		-- Completing mi(2195), "Campaign: Quiet the Shriekers"
 		q(63238),	-- Shared
@@ -3023,88 +3023,88 @@ _.HiddenQuestTriggers =
 		q(63327),	-- Venthyr
 		-- Completing mi(2212), "Campaign: Promises of the Praetor"
 		q(63248),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63285),	-- Kyrian
 		q(63286),	-- Necrolord
-		-- q( ),	-- Night Fae
+		q(63284),	-- Night Fae
 		q(63287),	-- Venthyr
 		-- Completing mi(2229), "Campaign: Bone Breaker's Hoard"
 		q(63253),	-- Shared
 		q(63305),	-- Kyrian
 		q(63306),	-- Necrolord
-		-- q( ),	-- Night Fae
+		q(63304),	-- Night Fae
 		q(63307),	-- Venthyr
 		-- Completing mi(2213), "Campaign: Save the Skyfoal"
 		q(63249),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63289),	-- Kyrian
 		q(63290),	-- Necrolord
 		q(63288),	-- Night Fae
 		q(63291),	-- Venthyr
 		-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper"
 		q(63239),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63269),	-- Kyrian
 		q(63270),	-- Necrolord
 		q(63268),	-- Night Fae
 		q(63271),	-- Venthyr
 		-- Completing mi(2247), "Campaign: Charthox the Indomitable"
 		q(63244),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63329),	-- Kyrian
 		q(63330),	-- Necrolord
 		q(63328),	-- Night Fae
 		q(63331),	-- Venthyr
 		-- Completing mi(2230), "Campaign: Ahnqat's Darkness"
 		q(63254),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63309),	-- Kyrian
 		q(63310),	-- Necrolord
 		q(63308),	-- Night Fae
 		q(63311),	-- Venthyr
 		-- Completing mi(2197), "Campaign: Cleanse the Possessed"
 		q(63240),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63273),	-- Kyrian
 		q(63274),	-- Necrolord
 		q(63272),	-- Night Fae
 		q(63275),	-- Venthyr
 		-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs"
 		q(63255),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63313),	-- Kyrian
 		q(63314),	-- Necrolord
 		q(63312),	-- Night Fae
 		q(63315),	-- Venthyr
 		-- Completing mi(2214), "Campaign: The Forsworn Strike Back"
 		q(63250),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63293),	-- Kyrian
 		q(63294),	-- Necrolord
-		-- q( ),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63292),	-- Night Fae
+		q(63295),	-- Venthyr
 		-- Completing mi(2248), "Campaign: Big Shiny and Friends"
 		q(63245),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63333),	-- Kyrian
 		q(63334),	-- Necrolord
 		q(63332),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63335),	-- Venthyr
 		-- Completing mi(2215), "Campaign: War-Captain's Woe"
 		q(63251),	-- Shared
-		-- q( ),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63297),	-- Kyrian
+		q(63298),	-- Necrolord
 		q(63296),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63299),	-- Venthyr
 		-- Completing mi(2198), "Campaign: Darkwarren Finality"
 		q(63241),	-- Shared
-		-- q( ),	-- Kyrian
+		q(63277),	-- Kyrian
 		q(63278),	-- Necrolord
 		q(63276),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63279),	-- Venthyr
 		-- Completing mi(2249), "Campaign: The Final Puzzle"
 		q(63246),	-- Shared
-		-- q( ),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63337),	-- Kyrian
+		q(63338),	-- Necrolord
 		q(63336),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63339),	-- Venthyr
 		-- Completing mi(2232), "Campaign: Corpselice Catastrophe"
 		q(63256),	-- Shared
-		-- q( ),	-- Kyrian
-		-- q( ),	-- Necrolord
+		q(63317),	-- Kyrian
+		q(63318),	-- Necrolord
 		q(63316),	-- Night Fae
-		-- q( ),	-- Venthyr
+		q(63319),	-- Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3293,6 +3293,8 @@ _.HiddenQuestTriggers =
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
 		q(62929),	-- Triggered when freeing Neena from cage to make Every Dog Has Its Day (59615) available
 		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
+		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
+		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 
 		-- Oribos

@@ -59,6 +59,7 @@ _.Zones =
 				i(178952),	-- Gore-Smudged Warglaive
 				i(176798),	-- Larion Claw
 				i(183691, {	-- Mucosal Pigment
+					["description"] = "This may drop for any character on your Account once the Toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					["questID"] = 62405,
 					["crs"] = {
 						165027,	-- Burning Extract
@@ -67,11 +68,11 @@ _.Zones =
 						160048,	-- Plaguedoused Remnant
 						166335,	-- Slime Giant
 					},
-					["g"] = {
-						crit(5, {
-							["achievementID"] = 14763,	-- Crypt Couture
-						}),
-					},
+					-- ["g"] = {
+					-- 	crit(5, {
+					-- 		["achievementID"] = 14763,	-- Crypt Couture
+					-- 	}),
+					-- },
 				}),
 				i(176987),	-- Ossein Scale Belt
 				i(176991),	-- Ossein Scale Cuffs

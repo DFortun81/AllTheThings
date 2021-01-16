@@ -46,7 +46,29 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
-				ach(14763),	-- Crypt Couture
+				ach(14763, {	-- Crypt Couture
+					crit(1, {	-- Ashen Ink
+						["cost"] = { { "i", 183690, 1 } },	-- Ashen Ink
+					}),
+					crit(2, {	-- Jagged Bonesaw
+						["cost"] = { { "i", 183692, 1 } },	-- Jagged Bonesaw
+					}),
+					crit(3, {	-- Discarded Grimoire
+						["cost"] = { { "i", 183394, 1 } },	-- Discarded Grimoire
+					}),
+					crit(4, {	-- Sorcerer's Blade
+						["cost"] = { { "i", 183397, 1 } },	-- Sorcerer's Blade
+					}),
+					crit(5, {	-- Mucosal Pigment
+						["cost"] = { { "i", 183691, 1 } },	-- Mucosal Pigment
+					}),
+					crit(6, {	-- Amethystine Dye
+						["cost"] = { { "i", 183401, 1 } },	-- Amethystine Dye
+					}),
+					crit(7, {	-- Ritualist's Mantle
+						["cost"] = { { "i", 183399, 1 } },	-- Ritualist's Mantle
+					}),
+				}),
 				ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
@@ -232,85 +254,68 @@ _.Zones =
 					["description"] = "Spawns a mob based on the current combination of 30 slimes added to the pool.",
 					["coord"] = { 58.6, 74.2, 1536 },
 					["g"] = {
-						i(183903),	-- Smelly Jelly
-						crit(1, {
+						i(183903),	-- Smelly Jelly						
+						n(157294, {	-- Pulsing Leech
 							["description"] = "Requires a majority of Red slime.",
+							["questID"] = 61718,
+							["isDaily"] = true;
 							["g"] = {
-								n(157294, {	-- Pulsing Leech
-									["questID"] = 61718,
-									["isDaily"] = true;
-									["g"] = {
-										i(184279),	-- Siphoning Blood-Drinker
-									},
-								}),
+								crit(1, { ["achievementID"] = 14721 }),	-- Pulsing Leech
+								i(184279),	-- Siphoning Blood-Drinker
 							},
 						}),
-						crit(2, {
+						n(157307, {	-- Gelloh
 							["description"] = "Requires a majority of Yellow slime.",
+							-- ["questID"] = ,
+							["isDaily"] = true;
 							["g"] = {
-								n(157307, {	-- Gelloh
-									-- ["questID"] = ,
-									["isDaily"] = true;
-								}),
+								crit(2, { ["achievementID"] = 14721 }),	-- Gelloh
 							},
 						}),
-						crit(3, {
+						n(157312, {	-- Oily Invertebrate
 							["description"] = "Requires an equal portion of Red, Blue & Yellow slime.",
+							-- ["questID"] = ,
+							["isDaily"] = true;
 							["g"] = {
-								n(157312, {	-- Oily Invertebrate
-									-- ["questID"] = ,
-									["isDaily"] = true;
-									["g"] = {
-										i(184300),	-- Fused Spineguard
-										i(181270),	-- Decaying Oozewalker
-									},
-								}),
+								crit(3, { ["achievementID"] = 14721 }),	-- Oily Invertebrate
+								i(184300),	-- Fused Spineguard
+								i(181270),	-- Decaying Oozewalker
 							},
 						}),
-						crit(4, {
+						n(157310, {	-- Boneslurp
 							["description"] = "Requires an equal majority of Blue & Yellow slime.",
+							-- ["questID"] = ,
+							["isDaily"] = true;
 							["g"] = {
-								n(157310, {	-- Boneslurp
-									-- ["questID"] = ,
-									["isDaily"] = true;
-									["g"] = {
-										i(184185),	-- Grunge-Caked Collarbone
-									}
-								}),
-							},
+								crit(4, { ["achievementID"] = 14721 }),	-- Boneslurp
+								i(184185),	-- Grunge-Caked Collarbone
+							}
 						}),
-						crit(5, {
+						n(157309, {	-- Violet Mistake
 							["description"] = "Requires an equal majority of Red & Blue slime.",
+							["questID"] = 61720,
+							["isDaily"] = true;
 							["g"] = {
-								n(157309, {	-- Violet Mistake
-									["questID"] = 61720,
-									["isDaily"] = true;
-									["g"] = {
-										i(184301),	-- Twenty-Loop Violet Girdle
-										i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
-									},
-								}),
+								crit(5, { ["achievementID"] = 14721 }),	-- Violet Mistake
+								i(184301),	-- Twenty-Loop Violet Girdle
+								i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
 							},
 						}),
-						crit(6, {
+						n(157311, {	-- Burnblister
 							["description"] = "Requires an equal majority of Red & Yellow slime.",
+							-- ["questID"] = ,
+							["isDaily"] = true;
 							["g"] = {
-								n(157311, {	-- Burnblister
-									-- ["questID"] = ,
-									["isDaily"] = true;
-								}),
+								crit(6, { ["achievementID"] = 14721 }),	-- Burnblister
 							},
 						}),
-						crit(7, {
+						n(157308, {	-- Corrupted Sediment
 							["description"] = "Requires a majority of Blue slime.",
+							["questID"] = 61719,
+							["isDaily"] = true;
 							["g"] = {
-								n(157308, {	-- Corrupted Sediment
-									["questID"] = 61719,
-									["isDaily"] = true;
-									["g"] = {
-										i(184302),	-- Residue-Coated Muck Waders
-									},
-								}),
+								crit(7, { ["achievementID"] = 14721 }),	-- Corrupted Sediment
+								i(184302),	-- Residue-Coated Muck Waders
 							},
 						}),
 					},
