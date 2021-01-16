@@ -396,6 +396,7 @@ end
 ---     changeFunc (Function): A custom function to be called, after selecting a dropdown option.
 -- Reference: https://medium.com/@JordanBenge/creating-a-wow-dropdown-menu-in-pure-lua-db7b2f9c0364
 settings.CreateDropdown = function(self, opts, OnRefresh)
+	print("DO NOT USE THIS METHOD");
     local dropdown_name = self:GetName() .. "-DD-" .. opts["name"];
     local menu_items = opts["items"] or {};
     local title_text = opts["title"] or "";
@@ -2372,35 +2373,114 @@ DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
 DisplayInCombatCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "TOP", 0, 0);
 DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox.Text, "RIGHT", 8, 0);
 
-local TooltipModifierDropdown = settings:CreateDropdown({
-    ["name"] = "TooltipModifier",
-    ["title"] = L["MODIFIER_DROPDOWN"],
-    ["items"] = settings.ModifierKeys,
-    ["defaultVal"] = settings:GetTooltipSetting("Enabled:Mod"),
-    ["changeFunc"] = function(dropdown_frame, dropdown_val)
-		settings:SetTooltipSetting("Enabled:Mod", dropdown_val);
-    end
-},
+local TooltipModifierLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+TooltipModifierLabel:SetJustifyH("LEFT");
+TooltipModifierLabel:SetText(L["TOOLTIP_MOD_LABEL"]);
+TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, -2);
+TooltipModifierLabel:Show();
+table.insert(settings.MostRecentTab.objects, TooltipModifierLabel);
+
+local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
-	local key = settings:GetTooltipSetting("Enabled:Mod");
-	UIDropDownMenu_SetSelectedName(self, key, key);
-	UIDropDownMenu_SetText(self, key);
+	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
-		UIDropDownMenu_DisableDropDown(self);
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
-		UIDropDownMenu_EnableDropDown(self);
 		self:SetAlpha(1);
+		-- act like a radio button
+		if not self:GetChecked() then
+			self:Enable();
+		else
+			self:Disable();
+		end
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Enabled:Mod", "None");
 	end
 end);
--- TooltipModifierDropdown:SetATTTooltip("TEXT");
-TooltipModifierDropdown:SetPoint("TOP", DisplayInCombatCheckBox, "TOP", 0, 0);
-TooltipModifierDropdown:SetPoint("LEFT", DisplayInCombatCheckBox.Text, "RIGHT", -12, 0);
+TooltipModifierNoneCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "BOTTOM", 0, 4);
+TooltipModifierNoneCheckBox:SetPoint("LEFT", TooltipModifierLabel, "RIGHT", 5, 0);
+
+local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+		-- act like a radio button
+		if not self:GetChecked() then
+			self:Enable();
+		else
+			self:Disable();
+		end
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Enabled:Mod", "Shift");
+	end
+end);
+TooltipModifierShiftCheckBox:SetPoint("TOP", TooltipModifierNoneCheckBox, "TOP", 0, 0);
+TooltipModifierShiftCheckBox:SetPoint("LEFT", TooltipModifierNoneCheckBox.Text, "RIGHT", 5, 0);
+
+local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+		-- act like a radio button
+		if not self:GetChecked() then
+			self:Enable();
+		else
+			self:Disable();
+		end
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Enabled:Mod", "Ctrl");
+	end
+end);
+TooltipModifierCtrlCheckBox:SetPoint("TOP", TooltipModifierShiftCheckBox, "TOP", 0, 0);
+TooltipModifierCtrlCheckBox:SetPoint("LEFT", TooltipModifierShiftCheckBox.Text, "RIGHT", 5, 0);
+
+local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+		-- act like a radio button
+		if not self:GetChecked() then
+			self:Enable();
+		else
+			self:Disable();
+		end
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Enabled:Mod", "Alt");
+	end
+end);
+TooltipModifierAltCheckBox:SetPoint("TOP", TooltipModifierCtrlCheckBox, "TOP", 0, 0);
+TooltipModifierAltCheckBox:SetPoint("LEFT", TooltipModifierCtrlCheckBox.Text, "RIGHT", 5, 0);
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
 TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
-TooltipShowLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, 0);
+TooltipShowLabel:SetPoint("TOP", TooltipModifierNoneCheckBox, "BOTTOM", 0, 0);
+TooltipShowLabel:SetPoint("LEFT", TooltipModifierLabel, "LEFT", 0, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
 
@@ -2488,7 +2568,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
-ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX"]);
+ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
 ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
 local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
