@@ -8,7 +8,13 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
-					ach(14764),	-- The Great Luckydo
+					ach(14764, {	-- The Great Luckydo
+						["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
+						["crs"] = {
+							158259,	-- Chordy (pet)
+							161270,	-- Chordy (in world)
+						},
+					}),
 					ach(14752, {	-- Things To Do When You're Dead
 						i(181820),	-- Armored Chosen Tauralus (MOUNT!)
 						title(437),	-- Abominable
@@ -45,43 +51,140 @@ _.Zones =
 							crit(30),	-- Bring Your Own
 							crit(31),	-- Drink to the Dead
 						}),
-						ach(14748, {	-- Wardrobe Makeover
+						ach(14748, sharedData({["customCollect"] = "SL_COV_NEC" }, {	-- Wardrobe Makeover
 							crit(1),	-- Chef Hat
-							crit(2),	-- Dapper Top Hat
-							crit(3),	-- Dundae's Hat
+							crit(2, {	-- Dapper Top Hat
+								["cost"] = {
+									{ "i", 181799,  1 },	-- 1 Extra Large Hat
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
+							crit(3, {	-- Dundae's Hat
+								["cost"] = {
+									{ "i", 184036,  1 },	-- 1 Dundae's Hat
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
 							crit(4),	-- Egg Hat
-							crit(5),	-- Flower Crown
+							crit(5, {	-- Flower Crown
+								["cost"] = {
+									{ "i", 183755, 1 },	-- 1 Aredenweald Wreath
+									{ "i", 170554, 5 },	-- 5 Vigil's Torch
+								},
+							}),
 							crit(6),	-- Halo of Purity
-							crit(7),	-- Holiday Hat
-							crit(8),	-- Magician's Hat
-							crit(9),	-- Pirate Hat
-							crit(10),	-- Red Eye Lens
-							crit(11),	-- Skull Fungus
-							crit(12),	-- Skull Protector
-							crit(13),	-- Unworthy Crown
-							crit(14),	-- Happiness Bird
+							crit(7, {	-- Holiday Hat
+								["cost"] = {
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+									{ "i", 2604, 1 },	-- 1 Red Dye
+									{ "i", 8343, 3 },	-- 3 Heavy Silken Thread
+								},
+							}),
+							crit(8, {	-- Magician's Hat
+								["cost"] = {
+									{ "i", 183826,  1 },	-- 1 Big Floppy Hat
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
+							crit(9, {	-- Pirate Hat
+								["cost"] = {
+									{ "i", 184204,  1 },	-- 1 Otherworld Hat
+									{ "i", 173202, 20 },	-- 20 Shrouded Cloth
+								},
+							}),
+							crit(10, {	-- Red Eye Lens
+								["cost"] = {
+									{ "i", 183760, 1 },	-- 1 Venthyr Spectacles
+									{ "i", 180733, 5 },	-- 5 Luminous Flux
+									{ "i", 172934, 5 },	-- 5 Handful of Laestrite Bolts
+								},
+							}),
+							crit(11, {	-- Skull Fungus
+								["cost"] = {
+									{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
+							crit(12, {	-- Skull Protector
+								["cost"] = {
+									{ "i", 183759, 1 },	-- 1 Unusually Large Cranium
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
+							crit(13, {	-- Unworthy Crown
+								["cost"] = {
+									{ "i", 184205, 1 },	-- 1 Long Lost Crown
+									{ "i", 171840, 5 },	-- 5 Porous Stone
+								},
+							}),
+							crit(14, {	-- Happiness Bird
+								["cost"] = {
+									{ "i", 183786, 1 },	-- 1 Happiness Bird
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(15),	-- Hitchhiker
 							crit(16),	-- Lovely Candle Display
-							crit(17),	-- Shoulder Sprouts
+							crit(17, {	-- Shoulder Sprouts
+								["cost"] = {
+									{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(18),	-- Sticky Cat
 							crit(19),	-- Trained Corpselice
-							crit(20),	-- Trustworthy Doll
+							crit(20, {	-- Trustworthy Doll
+								["cost"] = {
+									{ "i", 181798, 1 },	-- 1 Stuffed Construct
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(21),	-- Armor Plating
 							crit(22),	-- Back Mushrooms
-							crit(23),	-- Collector Kash's Pack
+							crit(23, {	-- Collector Kash's Pack
+								["cost"] = {
+									{ "i", 183833, 1 },	-- 1 Kash's Bag of Junk
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(24),	-- Engineering Pack
 							crit(25),	-- Plague Pack
-							crit(26),	-- Safe Fall Pack
-							crit(27),	-- Six-League Pack
+							crit(26, {	-- Safe Fall Pack
+								["cost"] = {
+									{ "i", 183831,  1 },	-- 1 Safe Fall Kit
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
+							crit(27, {	-- Six-League Pack
+								["cost"] = {
+									{ "i", 183789, 1 },	-- 1 Six-League Pack
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(28),	-- Vestigial Wings
 							crit(29),	-- Barrel O' Fish
 							crit(30),	-- Underpowered Gravity Pack
 							crit(31),	-- Butterflies
 							crit(32),	-- Spare Weapon
-							crit(33),	-- Faction Flag
-							crit(34),	-- Operational Instructions
-							crit(35),	-- Outlaw Flag
-						}),
+							crit(33, {	-- Faction Flag
+								["cost"] = {
+									{ "i", 183830,  1 },	-- 1 Do It Yourself Flag Kit
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
+							crit(34, {	-- Operational Instructions
+								["cost"] = {
+									{ "i", 183754, 1 },	-- 1 Stitchflesh's Design Notes
+									{ "i", 175886, 5 },	-- 5 Dark Parchment
+								},
+							}),
+							crit(35, {	-- Outlaw Flag
+								["cost"] = {
+									{ "i", 181797,  1 },	-- 1 Strange Cloth
+									{ "i", 173202, 20 },	-- 20 Shrouded Cloth
+								},
+							}),
+						})),
 						ach(14751, {	-- The Gang's All Here
 							i(182074),		-- Chosen Tauralus (MOUNT!)
 							crit(1),	-- Chordy
@@ -101,7 +204,10 @@ _.Zones =
 							crit(15),	-- Neena
 							crit(16),	-- Unity
 						}),
-						ach(14753),	-- It's a Wrap
+						ach(14753, {	-- It's a Wrap
+							["customCollect"] = "SL_COV_NEC",
+							["cost"] = { { "i", 178594, 100 } },
+						}),
 					}),
 				}),
 				n(QUESTS, {

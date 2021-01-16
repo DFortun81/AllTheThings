@@ -3380,6 +3380,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									right = "|T" .. icon .. ":0|t " .. right;
 								end
 							end
+							-- If this group has customCollect requirements, list them for clarity
+							if item.group.customCollect then
+								for i,c in ipairs(item.group.customCollect) do
+									if i > 1 then
+										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+									else
+										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
+									end
+								end								
+							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 					else
@@ -3397,6 +3407,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
 									right = "|T" .. icon .. ":0|t " .. right;
 								end
+							end
+							-- If this group has customCollect requirements, list them for clarity
+							if item.group.customCollect then
+								for i,c in ipairs(item.group.customCollect) do
+									if i > 1 then
+										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+									else
+										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
+									end
+								end								
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
