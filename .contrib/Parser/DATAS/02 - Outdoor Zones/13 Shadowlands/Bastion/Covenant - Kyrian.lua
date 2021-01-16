@@ -8,6 +8,87 @@ _.Zones =
 		m(1533, {	-- Bastion
 			n(-939, {	-- Covenant: Kyrian
 				n(ACHIEVEMENTS, {
+					ach(14853),	-- All The Colors of the Painbow
+					ach(14860),	-- Bare Necessities
+					ach(14851),	-- Bastion of Protection
+					ach(14856),	-- Charmed, I'm Sure
+					ach(14858),	-- Curse of Thirst
+					ach(14863),	-- Death Foursworn
+					ach(14865, {	-- Disciple of Humility
+						crit(1),	-- Defeat Kalisthene as Pelagos
+						crit(2),	-- Defeat Kalisthene as Kleia
+						crit(3),	-- Defeat Kalisthene as Mikanikos
+						crit(4),	-- Defeat Echthra as Pelagos
+						crit(5),	-- Defeat Echthra as Kleia
+						crit(6),	-- Defeat Echthra as Mikanikos
+						crit(7),	-- Defeat Alderyn and Myn'ir as Pelagos
+						crit(8),	-- Defeat Alderyn and Myn'ir as Kleia
+						crit(9),	-- Defeat Alderyn and Myn'ir as Mikanikos
+						crit(10),	-- Defeat Nuuminuuru as Pelagos
+						crit(11),	-- Defeat Nuuminuuru as Kleia
+						crit(12),	-- Defeat Nuuminuuru as Mikanikos
+						crit(13),	-- Defeat Craven Corinth as Pelagos
+						crit(14),	-- Defeat Craven Corinth as Kleia
+						crit(15),	-- Defeat Craven Corinth as Mikanikos
+						crit(16),	-- Defeat Splinterbark Nightmare as Pelagos
+						crit(17),	-- Defeat Splinterbark Nightmare as Kleia
+						crit(18),	-- Defeat Splinterbark Nightmare as Mikanikos
+						crit(19),	-- Defeat Thran'tiok as Pelagos
+						crit(20),	-- Defeat Thran'tiok as Kleia
+						crit(21),	-- Defeat Thran'tiok as Mikanikos
+						crit(22),	-- Defeat Mad Mortimer as Pelagos
+						crit(23),	-- Defeat Mad Mortimer as Kleia
+						crit(24),	-- Defeat Mad Mortimer as Mikanikos
+						crit(25),	-- Defeat Athanos as Pelagos
+						crit(26),	-- Defeat Athanos as Kleia
+						crit(27),	-- Defeat Athanos as Mikanikos
+						crit(28),	-- Defeat Azaruux as Pelagos
+						crit(29),	-- Defeat Azaruux as Kleia
+						crit(30),	-- Defeat Azaruux as Mikanikos
+					}),
+					ach(14859),	-- Inside the Park Home Run
+					ach(14862, {	-- It's How You Wear It
+						crit(1),	-- Herald's Footpads
+						crit(2),	-- Deep Echo Trident
+						crit(3),	-- Vial of Lichfrost
+						crit(4),	-- Phial of Serenity
+						crit(5),	-- Ring of Warding
+						crit(6),	-- Spiritforged Aegis
+					}),
+					ach(14854),	-- It's Not What You Wear
+					ach(14857),	-- Itsy Bitsy Fighters
+					ach(14861, {	-- Learning from the Masters
+						crit(1),	-- Defeat Kalisthene as Pelagos
+						crit(2),	-- Defeat Kalisthene as Kleia
+						crit(3),	-- Defeat Kalisthene as Mikanikos
+						crit(4),	-- Defeat Athanos as Pelagos
+						crit(5),	-- Defeat Athanos as Kleia
+						crit(6),	-- Defeat Athanos as Mikanikos
+					}),
+					ach(14866, {	-- Master of the Path
+						crit(1),	-- Kalisthene
+						crit(2),	-- Echthra
+						crit(3),	-- Alderyn and Myn'ir
+						crit(4),	-- Nuuminuuru
+						crit(5),	-- Craven Corinth
+						crit(6),	-- Splinterbark Nightmare
+						crit(7),	-- Thran'tiok
+						crit(8),	-- Mad Mortimer
+						crit(9),	-- Athanos
+						crit(10),	-- Azaruux
+					}),
+					ach(14864),	-- Personal Nightmare
+					ach(14852),	-- The Hoot of the Issue
+					ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
+						ach(14340),	-- The Path Towards Ascension 1
+						ach(14342),	-- The Path Towards Ascension 3
+						ach(14343),	-- The Path Towards Ascension 5
+						ach(14344),	-- The Path Towards Ascension 7
+						ach(14345),	-- The Path Towards Ascension 12
+						ach(14346),	-- The Path Towards Ascension 16
+						ach(14348),	-- The Path Towards Ascension 20
+						ach(14349),	-- The Path Towards Ascension 24
+					}),
 				}),
 				n(-901, {	-- Covenant Callings
 					q(60424, {	-- A Call to Ardenweald
@@ -2125,23 +2206,6 @@ _.Zones =
 							}),
 						}),
 					}),
-					-- TODO: Figure out which Binkiros is correct, this or the other one.  Commenting this one out for now.
-					--[[n(171973, {	-- Binkiros <Mount Vendor>
-						-- TODO: verify items sold and costs as these are probably outdated
-						i(180767, {	-- Eternal Phalynx of Loyalty
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(180768, {	-- Eternal Phalynx of Humility
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(180761, {	-- Phalynx of Loyalty
-							["cost"] = { { "c", 1813, 1000 } },
-						}),
-						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
-						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
-						i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
-						i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
-					}),]]--
 					n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
 						["coord"] = { 56.9, 30.9, 1708 },
 						["g"] = {
@@ -2524,21 +2588,6 @@ _.Zones =
 							}),
 						}),
 					}),
-					-- TODO: Figure out which Zeleskos is correct, this or the other one.  Commenting this one out for now.
-					--[[n(171981, {	-- Zeleskos <Pet Vendor>
-						-- TODO: verify items sold and costs as these are probably outdated
-						--["coord"] = { 52.2, 47.0, 1533 },
-						["g"] = {
-							i(184398, {	-- Steward Featherling
-								["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
-							}),
-							i(180871),	-- Indigo
-							i(180628),	-- Pearlwing Heron
-							i(180639),	-- Dusty Sporeflutterer
-							i(180814),	-- Sable
-							i(180815),	-- Brightscale Hatchling
-						},
-					}),]]--
 				}),
 			}),
 		}),
