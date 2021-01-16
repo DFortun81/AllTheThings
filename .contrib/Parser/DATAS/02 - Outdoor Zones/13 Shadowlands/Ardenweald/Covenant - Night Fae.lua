@@ -276,6 +276,16 @@ _.Zones =
 						["coord"] = { 34.0, 37.0, 1701 },
 						["description"] = "Becomes available at Renown 7",
 					}),
+					q(62546, {	-- No Wisp Left Behind (1)
+						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday (similar to 62536 a couple weeks earlier).
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.6, 39.0, 1701 },
+					}),
+					q(62549, {	-- No Wisp Left Behind (2)
+						["sourceQuests"] = { 62546 },	-- No Wisp Left Behind (1)
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.6, 39.0, 1701 },
+					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby

@@ -101,7 +101,7 @@ _.Zones =
 						["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
 						["provider"] = { "i", 183063 },	-- Words of the Warden
 						["questID"] = 63159,	-- Words of the Warden
-						["coords"] = { 19.3, 33.5 },
+						["coord"] = { 19.3, 33.5, 1543 },
 						["crs"] = { 173841 },	-- Paper Scrap
 					}),
 					crit(14, {	-- Korrath's Grimoire: Gyadrek
