@@ -25,7 +25,9 @@ _.Zones =
 							i(180872),	-- Spirited Skyfoal
 							-- Misc.
 							i(184631),	-- Adventurer's Enchanting Cache
+							-- i(  )	-- Adventurer's Fish Cache (doesn't exist)
 							i(184634),	-- Adventurer's Herbalism Cache
+							-- i(  ),	-- Adventurer's Meat Cache (doesn't exist)
 							i(184635),	-- Adventurer's Mining Cache
 							i(184636),	-- Adventurer's Skinning Cache
 							i(184630),	-- Adventurer's Tailoring Cache
@@ -36,6 +38,7 @@ _.Zones =
 							i(184641),	-- Champion's Mining Cache
 							i(184640),	-- Champion's Skinning Cache
 							i(184639),	-- Champion's Tailoring Cache
+							i(184648),	-- Hero's Enchanting Cache
 							i(184638),	-- Hero's Fish Cache
 							i(184647),	-- Hero's Herbalism Cache
 							i(184637),	-- Hero's Meat Cache
