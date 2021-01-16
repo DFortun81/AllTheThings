@@ -71,8 +71,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 				e(2407, {	-- General Kaal
 					["crs"] = {
-						165318,	-- General Kaal
-						162099,	-- General Kaal (during Guantlet)
+						162133,	-- General Kaal (during gauntlet)
+						162099,	-- General Kaal
 					},
 					["g"] = {
 						ach(14197),	-- Sanguine Depths
@@ -149,7 +149,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2407, {	-- General Kaal
-						["crs"] = { 165318 },	-- 	General Kaal
+						["crs"] = {
+							162133,	-- General Kaal (during gauntlet)
+							162099,	-- General Kaal
+						},
 						["g"] = {
 							ach(14198),	-- Heroic: Sanguine Depths
 							i(183358),	-- Memory of an Earthen Harmony
@@ -232,7 +235,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2407, {	-- 	General Kaal
-						["crs"] = { 165318 },	-- 	General Kaal
+						["crs"] = {
+							162133,	-- General Kaal (during gauntlet)
+							162099,	-- General Kaal
+						},
 						["g"] = {
 							ach(14199),	-- Mythic: Sanguine Depths
 							ach(14289),	-- Kaal-ed Shot
