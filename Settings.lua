@@ -738,7 +738,7 @@ f:SetWidth(230);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!");
+f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
@@ -748,7 +748,7 @@ f:SetWidth(200);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip("Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!");
+f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
 settings.community = f;
 
 ------------------------------------------
@@ -756,7 +756,7 @@ settings.community = f;
 ------------------------------------------
 local line;
 (function()
-local tab = settings:CreateTab("General");
+local tab = settings:CreateTab(L["GENERAL_TAB"]);
 tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", 16, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
@@ -774,17 +774,17 @@ ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString());
 end;
 
-local DebugModeCheckBox = settings:CreateCheckBox("|Cff15abffDebug Mode|r (Show Everything)",
+local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
 	self:SetChecked(settings:Get("DebugMode"));
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
 end);
-DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
+DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
-local UniqueModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Unique|r (Appearances)",
+local UniqueModeCheckBox = settings:CreateCheckBox(L["UNIQUE_MODE"],
 function(self)
 	self:SetChecked(not settings:Get("Completionist"));
 	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
@@ -798,10 +798,10 @@ end,
 function(self)
 	settings:SetCompletionistMode(not self:GetChecked());
 end);
-UniqueModeCheckBox:SetATTTooltip("Enable this Mode to consider all Items which share the same Appearance to be collected once that specific Appearance has been collected.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific Source of the Appearance yet.");
+UniqueModeCheckBox:SetATTTooltip(L["UNIQUE_MODE_TOOLTIP"]);
 UniqueModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 
-local CompletionistModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Completionist|r (Sources)",
+local CompletionistModeCheckBox = settings:CreateCheckBox(L["COMPLETIONIST_MODE"],
 function(self)
 	self:SetChecked(settings:Get("Completionist"));
 	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
@@ -815,7 +815,7 @@ end,
 function(self)
 	settings:SetCompletionistMode(self:GetChecked());
 end);
-CompletionistModeCheckBox:SetATTTooltip("Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.");
+CompletionistModeCheckBox:SetATTTooltip(L["COMPLETIONIST_MODE_TOOLTIP"]);
 CompletionistModeCheckBox:SetPoint("LEFT", UniqueModeCheckBox.Text, "RIGHT", 4, 0);
 CompletionistModeCheckBox:SetPoint("TOP", UniqueModeCheckBox, "TOP", 0, 0);
 
@@ -833,10 +833,10 @@ end,
 function(self)
 	settings:SetMainOnlyMode(self:GetChecked());
 end);
-MainOnlyModeCheckBox:SetATTTooltip("Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.");
+MainOnlyModeCheckBox:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"]);
 MainOnlyModeCheckBox:SetPoint("TOPLEFT", UniqueModeCheckBox, "BOTTOMLEFT", 4, 4);
 
-local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r (All Characters)",
+local AccountModeCheckBox = settings:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
 	self:SetChecked(settings:Get("AccountMode"));
 	if settings:Get("DebugMode") then
@@ -850,7 +850,7 @@ end,
 function(self)
 	settings:SetAccountMode(self:GetChecked());
 end);
-AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
+AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
 AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
 
 -- This creates the "Precision" slider.
@@ -859,7 +859,7 @@ PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
 table.insert(settings.MostRecentTab.objects, PrecisionSlider);
 settings.PrecisionSlider = PrecisionSlider;
-PrecisionSlider.tooltipText = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
+PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
 PrecisionSlider:SetOrientation('HORIZONTAL');
 PrecisionSlider:SetWidth(200);
 PrecisionSlider:SetHeight(20);
@@ -868,7 +868,7 @@ PrecisionSlider:SetMinMaxValues(0, 8);
 PrecisionSlider:SetObeyStepOnDrag(true);
 _G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
 _G[PrecisionSlider:GetName() .. 'High']:SetText('8')
-_G[PrecisionSlider:GetName() .. 'Text']:SetText("Level of Precision for Percentage")
+_G[PrecisionSlider:GetName() .. 'Text']:SetText(L["PRECISION_SLIDER"])
 PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 2);
 PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
@@ -888,7 +888,7 @@ MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -24);
 MinimapButtonSizeSlider:SetPoint("RIGHT", PrecisionSlider, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
-MinimapButtonSizeSlider.tooltipText = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
+MinimapButtonSizeSlider.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"];
 MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
 MinimapButtonSizeSlider:SetHeight(20);
 MinimapButtonSizeSlider:SetValueStep(1);
@@ -896,7 +896,7 @@ MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
 MinimapButtonSizeSlider:SetObeyStepOnDrag(true);
 _G[MinimapButtonSizeSlider:GetName() .. 'Low']:SetText('18')
 _G[MinimapButtonSizeSlider:GetName() .. 'High']:SetText('48')
-_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText("Minimap Button Size")
+_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText(L["MINIMAP_SLIDER"])
 MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 2);
 MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
@@ -921,7 +921,7 @@ end;
 local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -6);
 ThingsLabel:SetJustifyH("LEFT");
-ThingsLabel:SetText("Which \"Things\" do you want to Collect?");
+ThingsLabel:SetText(L["THINGS_LABEL_TEXT"]);
 ThingsLabel:Show();
 table.insert(settings.MostRecentTab.objects, ThingsLabel);
 ThingsLabel.OnRefresh = function(self)
@@ -932,7 +932,7 @@ ThingsLabel.OnRefresh = function(self)
 	end
 end;
 
-local AchievementsCheckBox = settings:CreateCheckBox("Achievements",
+local AchievementsCheckBox = settings:CreateCheckBox(L["ACHIEVEMENTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Achievements"));
 	if settings:Get("DebugMode") then
@@ -947,10 +947,10 @@ function(self)
 	settings:Set("Thing:Achievements", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.");
+AchievementsCheckBox:SetATTTooltip(L["ACHIEVEMENTS_CHECKBOX_TOOLTIP"]);
 AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -1);
 
-local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local AchievementsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Achievements"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
@@ -965,10 +965,10 @@ function(self)
 	settings:Set("AccountWide:Achievements", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AchievementsAccountWideCheckBox:SetATTTooltip("Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.");
+AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_1_TOOLTIP"]);
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
 
-local TransmogCheckBox = settings:CreateCheckBox("Appearances / Transmog",
+local TransmogCheckBox = settings:CreateCheckBox(L["TMOG_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"));
 	if settings:Get("DebugMode") then
@@ -988,21 +988,21 @@ function(self)
 	end
 	app:RefreshData(nil,nil,true);
 end);
-TransmogCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.");
+TransmogCheckBox:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"]);
 TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local TransmogAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local TransmogAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end,
 function(self)
-	print("Transmog appearances are only tracked account wide and cannot be disabled.");
+	print(L["ACCOUNT_WIDE_2_TOOLTIP"]);
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
 
-local AzeriteEssencesCheckBox = settings:CreateCheckBox("Azerite Essences",
+local AzeriteEssencesCheckBox = settings:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
 	if settings:Get("DebugMode") then
@@ -1017,10 +1017,10 @@ function(self)
 	settings:Set("Thing:AzeriteEssences", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AzeriteEssencesCheckBox:SetATTTooltip("Enable this option to track Azerite Essences.\n\nTracked per character by default.");
+AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
 AzeriteEssencesCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
 
-local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
@@ -1035,10 +1035,10 @@ function(self)
 	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AzeriteEssencesAccountWideCheckBox:SetATTTooltip("Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.");
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_3_TOOLTIP"]);
 AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
 
-local BattlePetsCheckBox = settings:CreateCheckBox("Battle Pets / Companions",
+local BattlePetsCheckBox = settings:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
 	if settings:Get("DebugMode") then
@@ -1053,10 +1053,10 @@ function(self)
 	settings:Set("Thing:BattlePets", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.");
+BattlePetsCheckBox:SetATTTooltip(L["BATTLE_PETS_CHECKBOX_TOOLTIP"]);
 BattlePetsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local BattlePetsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(true);
 	self:Disable();
@@ -1065,7 +1065,7 @@ end,
 nil);
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
 
-local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
+local FlightPathsCheckBox = settings:CreateCheckBox(L["FLIGHT_PATHS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:FlightPaths"));
 	if settings:Get("DebugMode") then
@@ -1080,10 +1080,10 @@ function(self)
 	settings:Set("Thing:FlightPaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
+FlightPathsCheckBox:SetATTTooltip(L["FLIGHT_PATHS_CHECKBOX_TOOLTIP"]);
 FlightPathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local FlightPathsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:FlightPaths"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:FlightPaths") then
@@ -1098,10 +1098,10 @@ function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
+FlightPathsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_5_TOOLTIP"]);
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
-local FollowersCheckBox = settings:CreateCheckBox("Followers / Champions",
+local FollowersCheckBox = settings:CreateCheckBox(L["FOLLOWERS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Followers"));
 	if settings:Get("DebugMode") then
@@ -1116,10 +1116,10 @@ function(self)
 	settings:Set("Thing:Followers", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FollowersCheckBox:SetATTTooltip("Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, and BFA Campaign Minions.");
+FollowersCheckBox:SetATTTooltip(L["FOLLOWERS_CHECKBOX_TOOLTIP"]);
 FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FollowersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local FollowersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Followers"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Followers") then
@@ -1134,10 +1134,10 @@ function(self)
 	settings:Set("AccountWide:Followers", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FollowersAccountWideCheckBox:SetATTTooltip("Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.");
+FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_6_TOOLTIP"]);
 FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
 
-local HeirloomsCheckBox = settings:CreateCheckBox("Heirlooms",
+local HeirloomsCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Heirlooms"));
 	if settings:Get("DebugMode") then
@@ -1152,10 +1152,10 @@ function(self)
 	settings:Set("Thing:Heirlooms", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-HeirloomsCheckBox:SetATTTooltip("Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.");
+HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
 HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local HeirloomUpgradesCheckBox = settings:CreateCheckBox("+Upgrades",
+local HeirloomUpgradesCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
@@ -1170,21 +1170,21 @@ function(self)
 	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-HeirloomUpgradesCheckBox:SetATTTooltip("Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.");
+HeirloomUpgradesCheckBox:SetATTTooltip(L["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"]);
 HeirloomUpgradesCheckBox:SetPoint("TOP", HeirloomsCheckBox, "TOP", 0, 0);
 HeirloomUpgradesCheckBox:SetPoint("LEFT", HeirloomsCheckBox.Text, "RIGHT", 8, 0);
 
-local HeirloomsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local HeirloomsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end,
 nil);
-HeirloomsAccountWideCheckBox:SetATTTooltip("Heirlooms are tracked account wide.");
+HeirloomsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_7_TOOLTIP"]);
 HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
 
-local IllusionsCheckBox = settings:CreateCheckBox("Illusions",
+local IllusionsCheckBox = settings:CreateCheckBox(L["ILLUSIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Illusions"));
 	if settings:Get("DebugMode") then
@@ -1199,10 +1199,10 @@ function(self)
 	settings:Set("Thing:Illusions", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\nTracked Account Wide by Default.");
+IllusionsCheckBox:SetATTTooltip(L["ILLUSIONS_CHECKBOX_TOOLTIP"]);
 IllusionsCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local IllusionsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Illusions"));
 	self:Disable();
@@ -1214,7 +1214,7 @@ function(self)
 end);
 IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
 
-local MountsCheckBox = settings:CreateCheckBox("Mounts",
+local MountsCheckBox = settings:CreateCheckBox(L["MOUNTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Mounts"));
 	if settings:Get("DebugMode") then
@@ -1229,10 +1229,10 @@ function(self)
 	settings:Set("Thing:Mounts", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.");
+MountsCheckBox:SetATTTooltip(L["MOUNTS_CHECKBOX_TOOLTIP"]);
 MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local MountsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(true);
 	self:Disable();
@@ -1240,7 +1240,7 @@ function(self)
 end);
 MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
 
-local MusicRollsCheckBox = settings:CreateCheckBox("Music Rolls",
+local MusicRollsCheckBox = settings:CreateCheckBox(L["MUSIC_ROLLS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:MusicRolls"));
 	if settings:Get("DebugMode") then
@@ -1255,10 +1255,10 @@ function(self)
 	settings:Set("Thing:MusicRolls", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-MusicRollsCheckBox:SetATTTooltip("Enable this option to track music rolls.\n\nYou can use your Jukebox Toy to play in-game music!");
+MusicRollsCheckBox:SetATTTooltip(L["MUSIC_ROLLS_CHECKBOX_TOOLTIP"]);
 MusicRollsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MusicRollsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local MusicRollsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:MusicRolls"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRolls") then
@@ -1273,10 +1273,10 @@ function(self)
 	settings:Set("AccountWide:MusicRolls", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-MusicRollsAccountWideCheckBox:SetATTTooltip("Music Rolls are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy that you have collected on your current character.");
+MusicRollsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_10_TOOLTIP"]);
 MusicRollsAccountWideCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "TOPLEFT", 220, 0);
 
-local QuestsCheckBox = settings:CreateCheckBox("Quests",
+local QuestsCheckBox = settings:CreateCheckBox(L["QUESTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Quests"));
 	if settings:Get("DebugMode") then
@@ -1291,11 +1291,11 @@ function(self)
 	settings:Set("Thing:Quests", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestsCheckBox:SetATTTooltip("Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.");
+QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
 QuestsCheckBox.Text:SetWidth(50);
 QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local QuestBreadcrumbsCheckBox = settings:CreateCheckBox("+Breadcrumbs",
+local QuestBreadcrumbsCheckBox = settings:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
@@ -1310,11 +1310,11 @@ function(self)
 	settings:Set("Thing:QuestBreadcrumbs", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestBreadcrumbsCheckBox:SetATTTooltip("Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account Mode + Account-Wide Quests");
+QuestBreadcrumbsCheckBox:SetATTTooltip(L["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"]);
 QuestBreadcrumbsCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
 QuestBreadcrumbsCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 8, 0);
 
-local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local QuestsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Quests"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
@@ -1329,10 +1329,10 @@ function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestsAccountWideCheckBox:SetATTTooltip("Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.");
+QuestsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_11_TOOLTIP"]);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
-local RecipesCheckBox = settings:CreateCheckBox("Recipes",
+local RecipesCheckBox = settings:CreateCheckBox(L["RECIPES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Recipes"));
 	if settings:Get("DebugMode") then
@@ -1347,10 +1347,10 @@ function(self)
 	settings:Set("Thing:Recipes", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-RecipesCheckBox:SetATTTooltip("Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.");
+RecipesCheckBox:SetATTTooltip(L["RECIPES_CHECKBOX_TOOLTIP"]);
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local RecipesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local RecipesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Recipes"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Recipes") then
@@ -1365,10 +1365,10 @@ function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-RecipesAccountWideCheckBox:SetATTTooltip("Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.");
+RecipesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_12_TOOLTIP"]);
 RecipesAccountWideCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "TOPLEFT", 220, 0);
 
-local ReputationsCheckBox = settings:CreateCheckBox("Reputations",
+local ReputationsCheckBox = settings:CreateCheckBox(L["REPUTATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Reputations"));
 	if settings:Get("DebugMode") then
@@ -1383,10 +1383,10 @@ function(self)
 	settings:Set("Thing:Reputations", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ReputationsCheckBox:SetATTTooltip("Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.");
+ReputationsCheckBox:SetATTTooltip(L["REPUTATIONS_CHECKBOX_TOOLTIP"]);
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReputationsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local ReputationsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Reputations"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Reputations") then
@@ -1401,10 +1401,10 @@ function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.");
+ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_13_TOOLTIP"]);
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
 
-local SelfieFiltersCheckBox = settings:CreateCheckBox("Selfie Filters",
+local SelfieFiltersCheckBox = settings:CreateCheckBox(L["SELFIE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:SelfieFilters"));
 	if settings:Get("DebugMode") then
@@ -1419,10 +1419,10 @@ function(self)
 	settings:Set("Thing:SelfieFilters", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SelfieFiltersCheckBox:SetATTTooltip("Enable this option to track selfie filters for S.E.L.F.I.E Camera Toy.\n\nOh joy! Selfies! Okay duuude.");
+SelfieFiltersCheckBox:SetATTTooltip(L["SELFIE_CHECKBOX_TOOLTIP"]);
 SelfieFiltersCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local SelfieFiltersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local SelfieFiltersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:SelfieFilters"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:SelfieFilters") then
@@ -1437,10 +1437,10 @@ function(self)
 	settings:Set("AccountWide:SelfieFilters", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SelfieFiltersAccountWideCheckBox:SetATTTooltip("Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!");
+SelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_14_TOOLTIP"]);
 SelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "TOPLEFT", 220, 0);
 
-local TitlesCheckBox = settings:CreateCheckBox("Titles",
+local TitlesCheckBox = settings:CreateCheckBox(L["TITLES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Titles"));
 	if settings:Get("DebugMode") then
@@ -1455,10 +1455,10 @@ function(self)
 	settings:Set("Thing:Titles", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-TitlesCheckBox:SetATTTooltip("Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.");
+TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
 TitlesCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local TitlesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local TitlesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Titles"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Titles") then
@@ -1473,10 +1473,10 @@ function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-TitlesAccountWideCheckBox:SetATTTooltip("Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.");
+TitlesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_15_TOOLTIP"]);
 TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
 
-local ToysCheckBox = settings:CreateCheckBox("Toys",
+local ToysCheckBox = settings:CreateCheckBox(L["TOYS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Toys"));
 	if settings:Get("DebugMode") then
@@ -1491,10 +1491,10 @@ function(self)
 	settings:Set("Thing:Toys", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ToysCheckBox:SetATTTooltip("Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.");
+ToysCheckBox:SetATTTooltip(L["TOYS_CHECKBOX_TOOLTIP"]);
 ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local ToysAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
 	self:SetChecked(true);
 	self:Disable();
@@ -1503,7 +1503,7 @@ end);
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
 
 
-local ShowMinimapButtonCheckBox = settings:CreateCheckBox("Show the Minimap Button",
+local ShowMinimapButtonCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
 end,
@@ -1516,10 +1516,10 @@ function(self)
 		app.Minimap:Hide();
 	end
 end);
-ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
+ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
 ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 24);
 
-local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
+local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
 	if not settings:GetTooltipSetting("MinimapButton") then
@@ -1534,10 +1534,10 @@ function(self)
 	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
 	if app.Minimap then app.Minimap:UpdateStyle(); end
 end);
-MinimapButtonStyleCheckBox:SetATTTooltip("Some people don't like the new minimap button...\n\nThose people are wrong!\n\nIf you don't like it, here's an option to go back to the old style.");
+MinimapButtonStyleCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"]);
 MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 4, 4);
 
-local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
+local ShowCompletedGroupsCheckBox = settings:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:CompletedGroups"));
 end,
@@ -1546,10 +1546,10 @@ function(self)
 	settings:Set("Cache:CompletedGroups", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCompletedGroupsCheckBox:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"]);
 ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, -2);
 
-local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
+local ShowCollectedThingsCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:CollectedThings"));
 end,
@@ -1558,10 +1558,10 @@ function(self)
 	settings:Set("Cache:CollectedThings", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show All Trackable Things",
+local ShowIncompleteThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:IncompleteThings"));
 	if settings:Get("DebugMode") then
@@ -1576,10 +1576,10 @@ function(self)
 	settings:Set("Show:IncompleteThings", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
+ShowIncompleteThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
 ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRepeatableThingsCheckBox = settings:CreateCheckBox("Collect Repeatable Quests",
+local ShowRepeatableThingsCheckBox = settings:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Repeatable"));
 	if not settings:Get("Thing:Quests") then
@@ -1594,10 +1594,10 @@ function(self)
 	settings:SetTooltipSetting("Repeatable", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowRepeatableThingsCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.");
+ShowRepeatableThingsCheckBox:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"]);
 ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox("Only first time",
+local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"));
 	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
@@ -1612,10 +1612,10 @@ function(self)
 	settings:SetTooltipSetting("RepeatableFirstTime", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowRepeatableThingsFirstTimeCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.");
+ShowRepeatableThingsFirstTimeCheckBox:SetATTTooltip(L["FIRST_TIME_CHECKBOX_TOOLTIP"]);
 ShowRepeatableThingsFirstTimeCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsCheckBox, "BOTTOMLEFT", 4, 4);
 
-local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
+local FilterThingsByLevelCheckBox = settings:CreateCheckBox(L["FILTER_THINGS_BY_LEVEL_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Filter:ByLevel"));
 	if settings:Get("DebugMode") then
@@ -1630,10 +1630,10 @@ function(self)
 	settings:Set("Filter:ByLevel", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
+FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
 FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, -2);
 
-local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
+local HideBoEItemsCheckBox = settings:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Hide:BoEs"));
 	if settings:Get("DebugMode") or settings:Get("Filter:BoEs") then
@@ -1647,10 +1647,10 @@ end,
 function(self)
 	settings:SetHideBOEItems(self:GetChecked());
 end);
-HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
+HideBoEItemsCheckBox:SetATTTooltip(L["HIDE_BOE_CHECKBOX_TOOLTIP"]);
 HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
+local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"));
 	if settings:Get("DebugMode") then
@@ -1665,50 +1665,50 @@ function(self)
 	settings:Set("Filter:BoEs", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-IgnoreFiltersForBoEsCheckBox:SetATTTooltip("Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.");
+IgnoreFiltersForBoEsCheckBox:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"]);
 IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ExpandDifficultyCheckBox = settings:CreateCheckBox("Expand Current Difficulty",
+local ExpandDifficultyCheckBox = settings:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
 end,
 function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
 end);
-ExpandDifficultyCheckBox:SetATTTooltip("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon");
+ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
 ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, -2);
 
-local WarnDifficultyCheckBox = settings:CreateCheckBox("Warn Completed Difficulty",
+local WarnDifficultyCheckBox = settings:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"));
 end,
 function(self)
 	settings:SetTooltipSetting("Warn:Difficulty", self:GetChecked());
 end);
-WarnDifficultyCheckBox:SetATTTooltip("Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.");
+WarnDifficultyCheckBox:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"]);
 WarnDifficultyCheckBox:SetPoint("TOPLEFT", ExpandDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportCollectedThingsCheckBox = settings:CreateCheckBox("Report Collected Things",
+local ReportCollectedThingsCheckBox = settings:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
 end,
 function(self)
 	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
 end);
-ReportCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
+ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, -4);
 
-local ReportCompletedQuestsCheckBox = settings:CreateCheckBox("Report Quests",
+local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
 end,
 function(self)
 	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
 end);
-ReportCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)");
+ReportCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"]);
 ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox("Only 'Unsourced'",
+local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
 	if not settings:GetTooltipSetting("Report:CompletedQuests") then
@@ -1722,7 +1722,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
 end);
-ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the QuestID if it isn't already Sourced.");
+ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"]);
 ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 
@@ -1730,7 +1730,7 @@ end)();
 -- The "Filters" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Filters");
+local tab = settings:CreateTab(L["FILTERS_TAB"]);
 tab.OnRefresh = function(self) 
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
@@ -1742,7 +1742,7 @@ end;
 local ItemFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ItemFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 ItemFiltersLabel:SetJustifyH("LEFT");
-ItemFiltersLabel:SetText("Armor / Weapon Filters");
+ItemFiltersLabel:SetText(L["ITEM_FILTER_LABEL"]);
 ItemFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, ItemFiltersLabel);
 
@@ -1820,7 +1820,7 @@ end
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
-f:SetText("Class Defaults");
+f:SetText(L["CLASS_DEFAULTS_BUTTON"]);
 f:SetWidth(120);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
@@ -1831,7 +1831,7 @@ f:SetScript("OnClick", function(self)
 	settings:Refresh();
 	app:RefreshData(nil,nil,true);
 end);
-f:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
+f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self) 
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
@@ -1874,7 +1874,7 @@ local allEquipmentFilters = {	-- Filter IDs
 }
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.classdefaults, "TOPRIGHT", 3, 0);
-f:SetText("All");
+f:SetText(L["ALL_BUTTON"]);
 f:SetWidth(80);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
@@ -1886,7 +1886,7 @@ f:SetScript("OnClick", function(self)
 	settings:Refresh();
 	app:RefreshData(nil,nil,true);
 end);
-f:SetATTTooltip("Click this button to enable all equipment filters at once.");
+f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self) 
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
@@ -1899,7 +1899,7 @@ settings.equipfilterall = f
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 3, 0);
-f:SetText("Uncheck All");
+f:SetText(L["UNCHECK_ALL_BUTTON"]);
 f:SetWidth(100);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
@@ -1911,7 +1911,7 @@ f:SetScript("OnClick", function(self)
 	settings:Refresh();
 	app:RefreshData(nil,nil,true);
 end);
-f:SetATTTooltip("Click this button to disable all equipment filters at once.");
+f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self) 
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
@@ -1924,7 +1924,7 @@ table.insert(settings.MostRecentTab.objects, f);
 local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
 LegacyFiltersLabel:SetJustifyH("LEFT");
-LegacyFiltersLabel:SetText("Legacy / Unobtainable Filters");
+LegacyFiltersLabel:SetText(L["LEGACY_FILTERS_LABEL"]);
 LegacyFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
 
@@ -1932,7 +1932,7 @@ local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFo
 LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
 LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
 LegacyFiltersTempLabel:SetJustifyH("LEFT");
-LegacyFiltersTempLabel:SetText("|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r");
+LegacyFiltersTempLabel:SetText(L["LEGACY_FILTERS_TEMP_LABEL"]);
 LegacyFiltersTempLabel:Show();
 table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
 end)();
@@ -1954,7 +1954,7 @@ end)();
 -- The temporary "Unobtainables" Tab.	--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Unobtainables");
+local tab = settings:CreateTab(L["UNOBTAINABLES_TAB"]);
 tab.OnRefresh = function(self) 
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
@@ -2008,7 +2008,7 @@ end
 -- seasonal
 local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 seasonal:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-seasonal:SetText("Seasonal (Check to hide)");
+seasonal:SetText(L["SEASONAL"]);
 
 local seasonalFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 seasonalFrame:SetPoint("TOP", seasonal, "BOTTOM", 0, -4);
@@ -2017,7 +2017,7 @@ seasonalFrame:SetPoint("RIGHT", child, -4, 0);
 seasonalFrame:SetHeight(250);
 
 -- seasonal enable
-local seasonalEnable = child:CreateCheckBox("Filter Seasonal Items", 
+local seasonalEnable = child:CreateCheckBox(L["SEASONAL_ENABLE"], 
 function(self) 
 	self:SetChecked(app.GetDataMember("FilterSeasonal"));
 end,
@@ -2034,7 +2034,7 @@ end);
 seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
 
 -- seasonal Everything
-local seasonalAll = child:CreateCheckBox("Toggle All Seasonal",
+local seasonalAll = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
@@ -2112,7 +2112,7 @@ end
 local unobtainable = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 unobtainable:SetPoint("TOP", seasonalFrame, "TOP", 0, -(seasonalFrame:GetHeight() + 20))
 unobtainable:SetPoint("LEFT", line, "LEFT", 8, 0);
-unobtainable:SetText("Unobtainable (Check to hide)");
+unobtainable:SetText(L["UNOBTAINALBE_LABEL"]);
 
 local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
@@ -2121,7 +2121,7 @@ unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
 unobtainableFrame:SetHeight(320);
 
 -- unobtainable enable
-local unobtainableEnable = child:CreateCheckBox("Filter Unobtainable Items",
+local unobtainableEnable = child:CreateCheckBox(L["UNOBTAINABLE_ENABLE"],
 function(self) 
 	self:SetChecked(app.GetDataMember("FilterUnobtainableItems"));
 end,
@@ -2138,7 +2138,7 @@ end);
 unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
 
 -- unobtainable Everything
-local unobtainableAll = child:CreateCheckBox("Toggle All Unobtainable",
+local unobtainableAll = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2181,7 +2181,7 @@ noChanceFrame:SetPoint("RIGHT", child, -4, 0);
 noChanceFrame:SetHeight(120);
 
 -- no chance Everything
-local noChanceAll = child:CreateCheckBox("Toggle All \"No Chance\"",
+local noChanceAll = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2262,7 +2262,7 @@ highChanceFrame:SetPoint("RIGHT", child, -4, 0);
 highChanceFrame:SetHeight(90);
 
 -- high Everything
-local highChanceAll = child:CreateCheckBox("Toggle All \"High Chance\"",
+local highChanceAll = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2336,25 +2336,25 @@ end)();
 -- The "Interface" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Interface");
+local tab = settings:CreateTab(L["INTERFACE_TAB"]);
 local TooltipLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
-TooltipLabel:SetText("Tooltips");
+TooltipLabel:SetText(L["TOOLTIP_LABEL"]);
 TooltipLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipLabel);
 
-local EnableTooltipInformationCheckBox = settings:CreateCheckBox("|CFFADD8E6Tooltip Integrations|r",
+local EnableTooltipInformationCheckBox = settings:CreateCheckBox(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled"));
 end,
 function(self)
 	settings:SetTooltipSetting("Enabled", self:GetChecked());
 end);
-EnableTooltipInformationCheckBox:SetATTTooltip("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.");
+EnableTooltipInformationCheckBox:SetATTTooltip(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"]);
 EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", 4, 0);
 
-local DisplayInCombatCheckBox = settings:CreateCheckBox("In Combat",
+local DisplayInCombatCheckBox = settings:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2368,13 +2368,13 @@ end,
 function(self)
 	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
 end);
-DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
+DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
 DisplayInCombatCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "TOP", 0, 0);
 DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox.Text, "RIGHT", 8, 0);
 
 local TooltipModifierDropdown = settings:CreateDropdown({
     ["name"] = "TooltipModifier",
-    ["title"] = "Use Modifier",
+    ["title"] = L["MODIFIER_DROPDOWN"],
     ["items"] = settings.ModifierKeys,
     ["defaultVal"] = settings:GetTooltipSetting("Enabled:Mod"),
     ["changeFunc"] = function(dropdown_frame, dropdown_val)
@@ -2399,12 +2399,12 @@ TooltipModifierDropdown:SetPoint("LEFT", DisplayInCombatCheckBox.Text, "RIGHT", 
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
-TooltipShowLabel:SetText("Shown Information");
+TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
 TooltipShowLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
 
-local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Collection Progress",
+local ShowCollectionProgressCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2418,10 +2418,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
-ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
+ShowCollectionProgressCheckBox:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"]);
 ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", TooltipShowLabel, "BOTTOMLEFT", 0, 0);
 
-local ShortenProgressCheckBox = settings:CreateCheckBox("Icon Only",
+local ShortenProgressCheckBox = settings:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
@@ -2435,11 +2435,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("ShowIconOnly", self:GetChecked());
 end);
-ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
+ShortenProgressCheckBox:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"]);
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 8, 4);
 
 
-local ShowCoordinatesCheckBox = settings:CreateCheckBox("Coordinates",
+local ShowCoordinatesCheckBox = settings:CreateCheckBox(L["COORDINATES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2453,11 +2453,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked());
 end);
-ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
+ShowCoordinatesCheckBox:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"]);
 ShowCoordinatesCheckBox:SetPoint("TOP", ShowCollectionProgressCheckBox, "TOP", 0, 0);
 ShowCoordinatesCheckBox:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 
-local ShowDescriptionsCheckBox = settings:CreateCheckBox("Descriptions",
+local ShowDescriptionsCheckBox = settings:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2471,10 +2471,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Descriptions", self:GetChecked());
 end);
-ShowDescriptionsCheckBox:SetATTTooltip("Enable this option to show descriptions within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or a custom description added by a Contributor who felt some additional information was necessary.\n\nYou might want to keep this turned on.");
+ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
 ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowKnownByCheckBox = settings:CreateCheckBox("Known By",
+local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2488,10 +2488,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
-ShowKnownByCheckBox:SetATTTooltip("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.");
+ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX"]);
 ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
-local ShowModelsCheckBox = settings:CreateCheckBox("Model Preview",
+local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2505,10 +2505,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked());
 end);
-ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
+ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Shared Appearances",
+local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2522,10 +2522,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
-ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
+ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"]);
 ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IncludeOriginalSourceCheckBox = settings:CreateCheckBox("Include Original Source",
+local IncludeOriginalSourceCheckBox = settings:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2539,10 +2539,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked());
 end);
-IncludeOriginalSourceCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
+IncludeOriginalSourceCheckBox:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"]);
 IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 8, 4);
 
-local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox("Only Relevant",
+local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2556,11 +2556,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked());
 end);
-OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.");
+OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"]);
 OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
 
 
-local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Classes",
+local ShowClassRequirementsCheckBox = settings:CreateCheckBox(L["CLASSES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2574,10 +2574,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
 end);
-ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
+ShowClassRequirementsCheckBox:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"]);
 ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Races",
+local ShowRaceRequirementsCheckBox = settings:CreateCheckBox(L["RACES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2591,10 +2591,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("RaceRequirements", self:GetChecked());
 end);
-ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
+ShowRaceRequirementsCheckBox:SetATTTooltip(L["RACES_CHECKBOX_TOOLTIP"]);
 ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Specializations",
+local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox(L["SPEC_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2608,10 +2608,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked());
 end);
-ShowSpecializationRequirementsCheckBox:SetATTTooltip("Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
+ShowSpecializationRequirementsCheckBox:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"]);
 ShowSpecializationRequirementsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local SummarizeThingsCheckBox = settings:CreateCheckBox("Summarize Things",
+local SummarizeThingsCheckBox = settings:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2625,7 +2625,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
 end);
-SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
+SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
 SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 0);
 
 -- This creates the "Contains Count" slider.
@@ -2634,7 +2634,7 @@ ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox, "TOP", 0, 0);
 ContainsSlider:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
-ContainsSlider.tooltipText = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
+ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
 ContainsSlider:SetOrientation('HORIZONTAL');
 ContainsSlider:SetWidth(150);
 ContainsSlider:SetHeight(20);
@@ -2665,7 +2665,7 @@ ContainsSlider.OnRefresh = function(self)
 end;
 
 
-local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Source Locations",
+local ShowSourceLocationsCheckBox = settings:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2679,7 +2679,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
-ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
+ShowSourceLocationsCheckBox:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, -2);
 
 -- This creates the "Locations" slider.
@@ -2688,7 +2688,7 @@ LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "TOP", 0, 0);
 LocationsSlider:SetPoint("LEFT", ContainsSlider, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
-LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"];
 LocationsSlider:SetOrientation('HORIZONTAL');
 LocationsSlider:SetWidth(150);
 LocationsSlider:SetHeight(20);
@@ -2719,7 +2719,7 @@ LocationsSlider.OnRefresh = function(self)
 	end
 end;
 
-local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed",
+local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox(L["COMPLETED_SOURCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -2733,10 +2733,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Completed", self:GetChecked());
 end);
-ShowCompletedSourceLocationsForCheckBox:SetATTTooltip("Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.");
+ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"]);
 ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 8, 4);
 
-local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox("For Creatures",
+local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Creatures"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -2750,10 +2750,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Creatures", self:GetChecked());
 end);
-ShowSourceLocationsForCreaturesCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Creatures.");
+ShowSourceLocationsForCreaturesCheckBox:SetATTTooltip(L["FOR_CREATURES_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForCreaturesCheckBox:SetPoint("TOPLEFT", ShowCompletedSourceLocationsForCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSourceLocationsForThingsCheckBox = settings:CreateCheckBox("For Things",
+local ShowSourceLocationsForThingsCheckBox = settings:CreateCheckBox(L["FOR_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Things"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -2767,10 +2767,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Things", self:GetChecked());
 end);
-ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
+ShowSourceLocationsForThingsCheckBox:SetATTTooltip(L["FOR_THINGS_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSourceLocationsForUnsortedCheckBox = settings:CreateCheckBox("For Unsorted",
+local ShowSourceLocationsForUnsortedCheckBox = settings:CreateCheckBox(L["FOR_UNSORTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Unsorted"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -2784,17 +2784,17 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Unsorted", self:GetChecked());
 end);
-ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations which have not been fully sourced into the database.");
+ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip(L["FOR_UNSORTED_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForUnsortedCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local MiscLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 MiscLabel:SetPoint("TOPLEFT", ShowSourceLocationsForUnsortedCheckBox, "BOTTOMLEFT", -12, 0); -- 8,4
 MiscLabel:SetJustifyH("LEFT");
-MiscLabel:SetText("Miscellaneous");
+MiscLabel:SetText(L["MISC_LABEL"]);
 MiscLabel:Show();
 table.insert(settings.MostRecentTab.objects, MiscLabel);
 
-local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+local ShowRemainingCheckBox = settings:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
 	if self:GetChecked() then
@@ -2807,10 +2807,10 @@ function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
 	app:UpdateWindows();
 end);
-ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
+ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
 ShowRemainingCheckBox:SetPoint("TOPLEFT", MiscLabel, "BOTTOMLEFT", 4, 0);
 
-local ShowPercentagesCheckBox = settings:CreateCheckBox("Show Percentage Completion",
+local ShowPercentagesCheckBox = settings:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
 end,
@@ -2818,10 +2818,10 @@ function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
 	app:UpdateWindows();
 end);
-ShowPercentagesCheckBox:SetATTTooltip("Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.");
+ShowPercentagesCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
 ShowPercentagesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
-local UseMoreColorsCheckBox = settings:CreateCheckBox("Use More Colors! |CFF4AA7FF[Beta]|R",
+local UseMoreColorsCheckBox = settings:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
 end,
@@ -2829,10 +2829,10 @@ function(self)
 	settings:SetTooltipSetting("UseMoreColors", self:GetChecked());
 	app:UpdateWindows();
 end);
-UseMoreColorsCheckBox:SetATTTooltip("Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)");
+UseMoreColorsCheckBox:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"]);
 UseMoreColorsCheckBox:SetPoint("TOPLEFT", ShowPercentagesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowTooltipHelpCheckBox = settings:CreateCheckBox("Show Tooltip Help",
+local ShowTooltipHelpCheckBox = settings:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:TooltipHelp"));
 end,
@@ -2840,14 +2840,14 @@ function(self)
 	settings:SetTooltipSetting("Show:TooltipHelp", self:GetChecked());
 	app:UpdateWindows();
 end);
-ShowTooltipHelpCheckBox:SetATTTooltip("Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.");
+ShowTooltipHelpCheckBox:SetATTTooltip(L["TOOLTIP_HELP_CHECKBOX_TOOLTIP"]);
 ShowTooltipHelpCheckBox:SetPoint("TOPLEFT", UseMoreColorsCheckBox, "BOTTOMLEFT", 0, 4);
 
 
 local SizingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 SizingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
 SizingLabel:SetJustifyH("LEFT");
-SizingLabel:SetText("Scale");
+SizingLabel:SetText(L["SIZING_LABEL"]);
 SizingLabel:Show();
 table.insert(settings.MostRecentTab.objects, SizingLabel);
 
@@ -2858,7 +2858,7 @@ MainListScaleSlider:SetPoint("TOP", SizingLabel, "BOTTOM", 0, -10);
 MainListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
-MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
+MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
 MainListScaleSlider:SetOrientation('HORIZONTAL');
 MainListScaleSlider:SetHeight(20);
 MainListScaleSlider:SetValueStep(0.1);
@@ -2866,7 +2866,7 @@ MainListScaleSlider:SetMinMaxValues(0.1, 4);
 MainListScaleSlider:SetObeyStepOnDrag(true);
 _G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
 _G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
-_G[MainListScaleSlider:GetName() .. 'Text']:SetText("Main List Scale")
+_G[MainListScaleSlider:GetName() .. 'Text']:SetText(L["MAIN_LIST_SLIDER_LABEL"])
 MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
 MainListScaleSlider.Label:SetText(MainListScaleSlider:GetValue());
@@ -2883,7 +2883,7 @@ MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -24);
 MiniListScaleSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
-MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
 MiniListScaleSlider:SetOrientation('HORIZONTAL');
 MiniListScaleSlider:SetHeight(20);
 MiniListScaleSlider:SetValueStep(0.1);
@@ -2891,7 +2891,7 @@ MiniListScaleSlider:SetMinMaxValues(0.1, 4);
 MiniListScaleSlider:SetObeyStepOnDrag(true);
 _G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
 _G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
-_G[MiniListScaleSlider:GetName() .. 'Text']:SetText("Mini/Other List Scale")
+_G[MiniListScaleSlider:GetName() .. 'Text']:SetText(L["MINI_LIST_SLIDER_LABEL"])
 MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
 MiniListScaleSlider.Label:SetText(MiniListScaleSlider:GetValue());
@@ -2911,11 +2911,11 @@ end)();
 -- The "Features" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Features");
+local tab = settings:CreateTab(L["FEATURES_TAB"]);
 local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModulesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 ModulesLabel:SetJustifyH("LEFT");
-ModulesLabel:SetText("Modules & Mini Lists");
+ModulesLabel:SetText(L["MODULES_LABEL"]);
 ModulesLabel:Show();
 table.insert(settings.MostRecentTab.objects, ModulesLabel);
 
@@ -2928,7 +2928,7 @@ local ChangeSkipCutsceneState = function(self, checked)
 		self:UnregisterEvent("CINEMATIC_START");
 	end
 end
-local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox("Automatically Skip Cutscenes",
+local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
 	self:SetChecked(checked);
@@ -2942,81 +2942,81 @@ end,
 function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
-AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
+AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
 
-local OpenBountyListAutomatically = settings:CreateCheckBox("Automatically Open the Bounty List",
+local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked());
 end);
-OpenBountyListAutomatically:SetATTTooltip("Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty");
+OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY__CHECKBOX_TOOLTIP"]);
 OpenBountyListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local OpenMainListAutomatically = settings:CreateCheckBox("Automatically Open the Main List",
+local OpenMainListAutomatically = settings:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
 end);
-OpenMainListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att");
+OpenMainListAutomatically:SetATTTooltip(L["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"]);
 OpenMainListAutomatically:SetPoint("TOPLEFT", OpenBountyListAutomatically, "BOTTOMLEFT", 0, 4);
 
-local OpenMiniListAutomatically = settings:CreateCheckBox("Automatically Open the Mini List",
+local OpenMiniListAutomatically = settings:CreateCheckBox(L["AUTO_MINI_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:MiniList", self:GetChecked());
 end);
-OpenMiniListAutomatically:SetATTTooltip("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini");
+OpenMiniListAutomatically:SetATTTooltip(L["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"]);
 OpenMiniListAutomatically:SetPoint("TOPLEFT", OpenMainListAutomatically, "BOTTOMLEFT", 0, 4);
 
-local OpenProfessionListAutomatically = settings:CreateCheckBox("Automatically Open the Profession List",
+local OpenProfessionListAutomatically = settings:CreateCheckBox(L["AUTO_PROF_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
 end);
-OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof");
+OpenProfessionListAutomatically:SetATTTooltip(L["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"]);
 OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
 
-local OpenRaidAssistantAutomatically = settings:CreateCheckBox("Automatically Open the Raid Assistant",
+local OpenRaidAssistantAutomatically = settings:CreateCheckBox(L["AUTO_RAID_ASSISTANT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked());
 end);
-OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
+OpenRaidAssistantAutomatically:SetATTTooltip(L["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"]);
 OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
 
 
-local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Automatically Open the World Quests List",
+local OpenWorldQuestsListAutomatically = settings:CreateCheckBox(L["AUTO_WQ_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked());
 end);
-OpenWorldQuestsListAutomatically:SetATTTooltip("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq");
+OpenWorldQuestsListAutomatically:SetATTTooltip(L["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"]);
 OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
 
-local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox("Treat Currencies as Containers",
+local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
 end,
 function(self)
 	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
 end);
-ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
+ShowCurrenciesInWorldQuestsList:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"]);
 ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
 
-local ShowAuctionHouseModuleTab = settings:CreateCheckBox("Show the Auction House Module Tab",
+local ShowAuctionHouseModuleTab = settings:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:AH"));
 end,
@@ -3035,38 +3035,38 @@ function(self)
 		end
 	end
 end);
-ShowAuctionHouseModuleTab:SetATTTooltip("Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.");
+ShowAuctionHouseModuleTab:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"]);
 ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -4, 4);
 
-local SortByCompletionInstead = settings:CreateCheckBox("Sort By Progress",
+local SortByCompletionInstead = settings:CreateCheckBox(L["SORT_BY_PROGRESS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
 end,
 function(self)
 	settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
 end);
-SortByCompletionInstead:SetATTTooltip("Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)");
+SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
 SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
-local QuestChainRequirementsNested = settings:CreateCheckBox("Nested Quest Chain Requirements |CFF4AA7FF[Beta]|R",
+local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
 end,
 function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
 end);
-QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
+QuestChainRequirementsNested:SetATTTooltip(L["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"]);
 QuestChainRequirementsNested:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOP", QuestChainRequirementsNested, "BOTTOM", 0, -10);
 CelebrationsLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, -10);
 CelebrationsLabel:SetJustifyH("LEFT");
-CelebrationsLabel:SetText("Celebrations & Sound Effects");
+CelebrationsLabel:SetText(L["CELEBRATIONS_LABEL"]);
 CelebrationsLabel:Show();
 table.insert(settings.MostRecentTab.objects, CelebrationsLabel);
 
-local UseMasterAudioChannel = settings:CreateCheckBox("Use the Master Audio Channel",
+local UseMasterAudioChannel = settings:CreateCheckBox(L["MASTER_AUDIO_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "master");
 end,
@@ -3076,27 +3076,27 @@ function(self)
 		settings:SetTooltipSetting("Channel", state);
 	end
 end);
-UseMasterAudioChannel:SetATTTooltip("Enable this option if you want the celebrations and other ATT sound effects to play on the 'MASTER' audio channel.\n\nDefault: Yes\n\nA lot of people play with sound effects off, so this option allows the ATT sounds to bypass that should it be desired.");
+UseMasterAudioChannel:SetATTTooltip(L["MASTER_AUDIO_CHECKBOX_TOOLTIP"]);
 UseMasterAudioChannel:SetPoint("TOPLEFT", CelebrationsLabel, "BOTTOMLEFT", 4, 0);
 
-local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox("Collected Things Trigger a Celebration",
+local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Celebrate"));
 end,
 function(self)
 	settings:SetTooltipSetting("Celebrate", self:GetChecked());
 end);
-CelebrateCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.");
+CelebrateCollectedThingsCheckBox:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"]);
 CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", UseMasterAudioChannel, "BOTTOMLEFT", 0, 4);
 
-local WarnRemovedThingsCheckBox = settings:CreateCheckBox("Removed Things Trigger a Warning",
+local WarnRemovedThingsCheckBox = settings:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"));
 end,
 function(self)
 	settings:SetTooltipSetting("Warn:Removed", self:GetChecked());
 end);
-WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
+WarnRemovedThingsCheckBox:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"]);
 WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 
@@ -3183,7 +3183,7 @@ local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: As a community, we're currently focusing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic (nor should there be).\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r");
+AboutText:SetText(L["TITLE"] .. L["ABOUT_1"]);
 AboutText:Show();
 table.insert(settings.MostRecentTab.objects, AboutText);
 
@@ -3192,7 +3192,7 @@ ShoutoutText:SetPoint("LEFT", AboutText, "LEFT", 0, 0);
 ShoutoutText:SetPoint("RIGHT", AboutText, "RIGHT", 0, 0);
 ShoutoutText:SetPoint("BOTTOM", settings, "BOTTOM", 0, 8);
 ShoutoutText:SetJustifyH("LEFT");
-ShoutoutText:SetText("Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  " .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r");
+ShoutoutText:SetText(L["ABOUT_2"] .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. L["ABOUT_3"]);
 ShoutoutText:Show();
 table.insert(settings.MostRecentTab.objects, ShoutoutText);
 end)();
