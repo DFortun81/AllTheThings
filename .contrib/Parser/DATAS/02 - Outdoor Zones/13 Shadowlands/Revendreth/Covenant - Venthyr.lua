@@ -1024,6 +1024,11 @@ _.Zones =
 									["isDaily"] = true,
 									["coord"] = { 72.2, 75.8, 1525 },	-- Revendreth
 								}),
+								q(61707, {	-- Crumbled Reality
+									["provider"] = { "n", 173036 },	-- Thickman
+									["isDaily"] = true,
+									["coord"] = { 71.3, 74.5, 1525 },	-- Revendreth
+								}),
 								q(60601, {	-- Darkwing Drills
 									["isWorldQuest"] = true,
 									["lvl"] = { 60 },
