@@ -260,7 +260,9 @@ _.Zones =
 							["questID"] = 61718,
 							["isDaily"] = true;
 							["g"] = {
-								crit(1, { ["achievementID"] = 14721 }),	-- Pulsing Leech
+								crit(1, {	-- Pulsing Leech
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
 								i(184279),	-- Siphoning Blood-Drinker
 							},
 						}),
@@ -269,7 +271,9 @@ _.Zones =
 							-- ["questID"] = ,
 							["isDaily"] = true;
 							["g"] = {
-								crit(2, { ["achievementID"] = 14721 }),	-- Gelloh
+								crit(2, {	-- Gelloh
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
 							},
 						}),
 						n(157312, {	-- Oily Invertebrate
@@ -277,7 +281,16 @@ _.Zones =
 							-- ["questID"] = ,
 							["isDaily"] = true;
 							["g"] = {
-								crit(3, { ["achievementID"] = 14721 }),	-- Oily Invertebrate
+								crit(3, {	-- Oily Invertebrate
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184155, {	-- Recovered Containment Pack
+								--	TODO: figure out if this is the best way to display this.  i haven't done it myself so i'm not 100% sure how it works other than "loot item > do quest > get reward."
+									["questID"] = 62804,	-- Filling the Tanks
+									["g"] = {
+										i(184156),	-- Pristine Containment Pack
+									},
+								}),
 								i(184300),	-- Fused Spineguard
 								i(181270),	-- Decaying Oozewalker
 							},
@@ -287,7 +300,9 @@ _.Zones =
 							-- ["questID"] = ,
 							["isDaily"] = true;
 							["g"] = {
-								crit(4, { ["achievementID"] = 14721 }),	-- Boneslurp
+								crit(4, {	-- Boneslurp
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
 								i(184185),	-- Grunge-Caked Collarbone
 							}
 						}),
@@ -296,7 +311,9 @@ _.Zones =
 							["questID"] = 61720,
 							["isDaily"] = true;
 							["g"] = {
-								crit(5, { ["achievementID"] = 14721 }),	-- Violet Mistake
+								crit(5, {	-- Violet Mistake
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
 								i(184301),	-- Twenty-Loop Violet Girdle
 								i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
 							},
@@ -306,7 +323,10 @@ _.Zones =
 							-- ["questID"] = ,
 							["isDaily"] = true;
 							["g"] = {
-								crit(6, { ["achievementID"] = 14721 }),	-- Burnblister
+								crit(6, {	-- Burnblister
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184175),	-- Bone-Blistering Wand
 							},
 						}),
 						n(157308, {	-- Corrupted Sediment
@@ -314,7 +334,9 @@ _.Zones =
 							["questID"] = 61719,
 							["isDaily"] = true;
 							["g"] = {
-								crit(7, { ["achievementID"] = 14721 }),	-- Corrupted Sediment
+								crit(7, {	-- Corrupted Sediment
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
 								i(184302),	-- Residue-Coated Muck Waders
 							},
 						}),

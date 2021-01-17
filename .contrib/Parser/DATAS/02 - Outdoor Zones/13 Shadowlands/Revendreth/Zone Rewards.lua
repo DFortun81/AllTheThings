@@ -97,7 +97,9 @@ _.Zones =
 					}),
 					i(180378),	-- Forgemaster's Crate
 					i(180380),	-- Lace Draperies
-					i(180355),	-- Ornate Pyx
+					i(180355, {	-- Ornate Pyx
+						i(180349),	-- Nethrezim Acolyte's Band
+					}),
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
@@ -125,6 +127,7 @@ _.Zones =
 					i(181220),	-- Fiend Collector's Cudgel
 					i(181204),	-- Hide of Krengaath
 					i(180400),	-- Inquisitions Final Judgment
+					i(181708),	-- Leafed Banewood Band
 					i(180391),	-- Leggings of the Skydarkeners
 					i(181223),	-- Mace of Emberwrath
 					i(182724),	-- Mail Courier's Belt
@@ -136,6 +139,7 @@ _.Zones =
 					i(181358),	-- Master Duelist's Chit
 					i(181182),	-- Muck Waders
 					i(180401),	-- Noble Justice
+					i(180339),	-- Shadow-Lined Chalice
 					i(181213),	-- Shard-Dusted Shank
 					i(181180),	-- Sincollector's Cord
 					i(181179),	-- Sincollector's Leggings

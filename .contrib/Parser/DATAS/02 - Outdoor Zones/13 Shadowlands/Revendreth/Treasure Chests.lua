@@ -50,6 +50,55 @@ _.Zones =
 					},
 				}),]]
 				-- TODO: treasure @ 68,64 questID = 59884
+				o(353793, {	-- Parish Chest
+				--	TODO: confirm that these are repeatable.  the 3 blues have a pretty high droprate (and are seemingly the only blues that drop from this chest, giving it a significantly smaller drop table than the other treasures).  that + their presumed repeatability makes them worth listing/duplicating these 3 drops.  they have no associated questID but i can't find more than one up atm and i'm tired and don't feel like looking anymore
+					["description"] = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
+					["coords"] = {
+						{ 64.9, 43.4, 1525 },
+						{ 65.2, 48.6, 1525 },
+						{ 65.8, 45.4, 1525 },
+						{ 66.4, 47.8, 1525 },
+						{ 66.5, 47.8, 1525 },
+						{ 66.5, 55.3, 1525 },
+						{ 66.8, 53.0, 1525 },
+						{ 67.1, 51.5, 1525 },
+						{ 67.3, 40.4, 1525 },
+						{ 68.3, 54.5, 1525 },
+						{ 68.5, 42.8, 1525 },
+						{ 68.5, 44.8, 1525 },
+						{ 68.7, 44.3, 1525 },
+						{ 68.9, 51.0, 1525 },
+						{ 69.1, 55.2, 1525 },
+						{ 69.1, 57.0, 1525 },
+						{ 69.5, 53.4, 1525 },
+						{ 70.2, 48.1, 1525 },
+						{ 70.4, 45.8, 1525 },
+						{ 70.4, 49.0, 1525 },
+						{ 70.5, 54.9, 1525 },
+						{ 70.8, 49.1, 1525 },
+						{ 70.8, 52.1, 1525 },
+						{ 70.9, 44.1, 1525 },
+						{ 70.9, 55.5, 1525 },
+						{ 71.5, 55.5, 1525 },
+						{ 71.7, 54.4, 1525 },
+						{ 72.3, 45.4, 1525 },
+						{ 72.6, 43.6, 1525 },
+						{ 72.6, 51.3, 1525 },
+						{ 72.7, 44.6, 1525 },
+						{ 73.5, 49.8, 1525 },
+						{ 73.7, 51.4, 1525 },
+						{ 74.4, 53.8, 1525 },
+						{ 74.8, 53.7, 1525 },
+						{ 74.9, 49.7, 1525 },
+						{ 76.2, 52.4, 1525 },
+						{ 76.5, 47.4, 1525 },
+					},
+					["g"] = {
+						i(180400),	-- Inquisitions Final Judgment
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180339),	-- Shadow-Lined Chalice
+					},
+				}),
 				o(354115, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60956,
@@ -79,6 +128,29 @@ _.Zones =
 					["questID"] = 60953,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
+				}),
+				o(353796, {	-- Reliquary of Remembrance
+				--	TODO: confirm that these are repeatable.  like parish chest, there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
+					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
+					["coords"] = {
+						{ 63.5, 34.2, 1525 },
+						{ 64.8, 31.2, 1525 },
+						{ 64.9, 26.8, 1525 },
+						{ 65.9, 29.2, 1525 },
+						{ 66.6, 31.2, 1525 },
+						{ 76.1, 38.1, 1525 },
+						{ 77.2, 32.8, 1525 },
+						{ 78.0, 40.8, 1525 },
+						{ 78.2, 42.5, 1525 },
+						{ 79.0, 42.2, 1525 },
+						{ 80.1, 37.1, 1525 },
+						{ 80.4, 39.7, 1525 },
+					},
+					["g"] = {
+						i(180402),	-- Barrier of the Forgotten
+						i(180396),	-- Vambraces of Fading Humanity
+						i(180403),	-- Vessel of Distilled Regret
+					},
 				}),
 				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",

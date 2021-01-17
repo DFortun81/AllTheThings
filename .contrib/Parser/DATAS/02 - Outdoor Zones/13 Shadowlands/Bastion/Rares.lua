@@ -179,6 +179,7 @@ _.Zones =
 						i(183604),	-- Piercing Timbre Crossbow
 						i(183609),	-- Re-Powered Golliath Fists
 						i(183607),	-- Uncertain Aspirant's Spear
+						i(183610),	-- Warrior Poet's Poniard
 					},
 				}),
 				n(163460, { -- Dionae

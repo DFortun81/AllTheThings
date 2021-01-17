@@ -1947,15 +1947,8 @@ _.Zones =
 										i(181061),	-- Burnished Death Shroud Hood
 										i(181063),	-- Burnished Death Shroud Spaulders
 										i(181058),	-- Burnished Death Shroud Vest
-										i(181091),	-- Fearstalker's Burnished Belt
-										i(181092),	-- Fearstalker's Burnished Bracers
-										i(181093),	-- Fearstalker's Burnished Cloak
-										i(181087),	-- Fearstalker's Burnished Gauntlets
-										i(181085),	-- Fearstalker's Burnished Hauberk
-										i(181088),	-- Fearstalker's Burnished Helm
-										i(181089),	-- Fearstalker's Burnished Leggings
-										i(181090),	-- Fearstalker's Burnished Monnion
-										i(181086),	-- Fearstalker's Burnished Sabatons
+										i(183711),	-- Burnished Crypt Keeper's Mantle
+										i(183710),	-- Burnished Sinstone Chain
 										i(181023),	-- Dread Sentinel's Burnished Chestplate
 										i(181030),	-- Dread Sentinel's Burnished Cloak
 										i(181028),	-- Dread Sentinel's Burnished Girdle
@@ -1965,6 +1958,17 @@ _.Zones =
 										i(181026),	-- Dread Sentinel's Burnished Legguards
 										i(181027),	-- Dread Sentinel's Burnished Spaulders
 										i(181029),	-- Dread Sentinel's Burnished Vambraces
+										i(181091),	-- Fearstalker's Burnished Belt
+										i(181092),	-- Fearstalker's Burnished Bracers
+										i(181093),	-- Fearstalker's Burnished Cloak
+										i(181087),	-- Fearstalker's Burnished Gauntlets
+										i(181085),	-- Fearstalker's Burnished Hauberk
+										i(181088),	-- Fearstalker's Burnished Helm
+										i(181089),	-- Fearstalker's Burnished Leggings
+										i(181090),	-- Fearstalker's Burnished Monnion
+										i(181086),	-- Fearstalker's Burnished Sabatons
+										i(183707),	-- Mantle of Burnished Blades
+										i(183978),	-- Silver-Etched Hopebreaker Dirk
 										i(181129),	-- Soulbreaker's Burnished Drape
 										i(181123),	-- Soulbreaker's Burnished Handwraps
 										i(181124),	-- Soulbreaker's Burnished Hood

@@ -3339,6 +3339,7 @@ _.HiddenQuestTriggers =
 		q(60850),	-- triggered when looting "Love and Terror" (for Favor: Love and Terror)
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
+		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

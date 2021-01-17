@@ -1713,7 +1713,7 @@ _.Zones =
 					}),
 				}),
 				n(TREASURES, {
-					o(1278968757, {	-- Treasure: House of the Chosen -- TODO: proper objectID
+					o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 						["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 						["questID"] = 61647,
 						["coord"] = { 38.0, 65.6, 1536 },
@@ -1731,6 +1731,7 @@ _.Zones =
 								["questID"] = 61650,
 								["isDaily"] = true,
 							}),
+							i(183622),	-- Grand Runespeaker's Staff
 						},
 					}),
 				}),
