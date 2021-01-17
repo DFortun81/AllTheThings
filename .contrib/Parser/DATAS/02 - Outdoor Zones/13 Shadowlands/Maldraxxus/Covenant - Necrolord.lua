@@ -8,6 +8,7 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
+					ach(14763),		-- Crypt Couture
 					ach(14764, {	-- The Great Luckydo
 						["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
 						["cost"] = { { "i", 178554, 1 } },	-- Call Chordy
@@ -1044,7 +1045,7 @@ _.Zones =
 							i(183394, {	-- Discarded Grimoire
 								["questID"] = 62266,
 								["g"] = {
-									crit(3, {
+									crit(3, {	-- Discarded Grimoire
 										["achievementID"] = 14763,	-- Crypt Couture
 									}),
 								},
@@ -1092,7 +1093,7 @@ _.Zones =
 							i(183397, {	-- Sorcerer's Blade
 								["questID"] = 62306,
 								["g"] = {
-									crit(4, {
+									crit(4, {	-- Sorceror's Blade
 										["achievementID"] = 14763,	-- Crypt Couture
 									}),
 								},
@@ -1117,7 +1118,7 @@ _.Zones =
 							i(183401, {	-- Amethystine Dye
 								["questID"] = 62319,
 								["g"] = {
-									crit(6, {
+									crit(6, {	-- Amethystine Dye
 										["achievementID"] = 14763,	-- Crypt Couture
 									}),
 								},
@@ -1173,7 +1174,7 @@ _.Zones =
 							i(183399, {	-- Ritualist's Mantle
 								["questID"] = 62311,
 								["g"] = {
-									crit(7, {
+									crit(7, {	-- Ritualist's Mantle
 										["achievementID"] = 14763,	-- Crypt Couture
 									}),
 								},

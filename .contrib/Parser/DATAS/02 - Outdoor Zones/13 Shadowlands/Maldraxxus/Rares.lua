@@ -21,18 +21,18 @@ _.Zones =
 					},
 				}),
 				n(159105, { -- Collector Kash
-					["coord"] = { 49.8, 24.6, 1536 },
 					["questID"] = 58005,
 					["isDaily"] = true,
+					["coord"] = { 49.8, 24.6, 1536 },
 					["g"] = {
 						crit(4, {	-- Collector Kash
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184188),	-- Collector's Corpse Gambrel
 						i(183692, {	-- Jagged Bonesaw
-							["questID"] = 62408,
+							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 							["g"] = {
-								crit(2, {
+								crit(2, {	-- Jagged Bonesaw
 									["achievementID"] = 14763,	-- Crypt Couture
 								}),
 							},
@@ -356,17 +356,17 @@ _.Zones =
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
-					["coord"] = { 29.0, 51.6, 1536 },
 					["questID"] = 59290,
 					["isDaily"] = true,
+					["coord"] = { 29.0, 51.6, 1536 },
 					["g"] = {
 						crit(3, {	-- Zargox the Reborn
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(183690, {	-- Ashen Ink
-							["questID"] = 62404,
+							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 							["g"] = {
-								crit(1, {
+								crit(1, {	-- Ashen Ink
 									["achievementID"] = 14763,	-- Crypt Couture
 								}),
 							},

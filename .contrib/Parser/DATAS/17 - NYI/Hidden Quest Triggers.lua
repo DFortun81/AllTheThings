@@ -3297,6 +3297,9 @@ _.HiddenQuestTriggers =
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
+		q(62404),	-- using Ashen Ink (Crypt Couture)
+		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
+		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
