@@ -1378,6 +1378,45 @@ _.Zones =
 						n(-946, {	-- Tier 4: Teachings of Wisdom
 						}),
 						n(-947, {	-- Tier 5: Trials of Humility
+							n(-908, {	-- Rewards
+							--	TODO: cloaks may need to be tagged with classes based on armor proficiency (like if leather users can't learn/use the 'cloth' set cloak)
+								i(177205),	-- Reverent Bearer's Chestplate
+								i(177221),	-- Reverent Bearer's Cloak
+								i(177207),	-- Reverent Bearer's Gauntlets
+								i(177210),	-- Reverent Bearer's Girdle
+								i(177204),	-- Reverent Bearer's Helm
+								i(177208),	-- Reverent Bearer's Legguards
+								i(177209),	-- Reverent Bearer's Shoulders
+								i(177206),	-- Reverent Bearer's Warboots
+								i(177211),	-- Reverent Bearer's Wristwraps
+								i(180240),	-- Reverent Collector's Chestplate
+								i(180247),	-- Reverent Collector's Cloak
+								i(180242),	-- Reverent Collector's Gauntlets
+								i(180245),	-- Reverent Collector's Girdle
+								i(180239),	-- Reverent Collector's Helm
+								i(180243),	-- Reverent Collector's Legguards
+								i(180244),	-- Reverent Collector's Shoulders
+								i(180241),	-- Reverent Collector's Warboots
+								i(180246),	-- Reverent Collector's Wristwraps
+								i(179974),	-- Reverent Forgelite's Belt
+								i(179969),	-- Reverent Forgelite's Boots
+								i(179972),	-- Reverent Forgelite's Breeches
+								i(179976),	-- Reverent Forgelite's Cloak
+								i(179970),	-- Reverent Forgelite's Gloves
+								i(179971),	-- Reverent Forgelite's Helm
+								i(179973),	-- Reverent Forgelite's Spaulders
+								i(179968),	-- Reverent Forgelite's Vest
+								i(179975),	-- Reverent Forgelite's Wristwraps
+								i(178189),	-- Reverent Watcher's Chestplate
+								i(178196),	-- Reverent Watcher's Cloak
+								i(178191),	-- Reverent Watcher's Gauntlets
+								i(178194),	-- Reverent Watcher's Girdle
+								i(178188),	-- Reverent Watcher's Helm
+								i(178192),	-- Reverent Watcher's Legguards
+								i(178193),	-- Reverent Watcher's Shoulders
+								i(178190),	-- Reverent Watcher's Warboots
+								i(178195),	-- Reverent Watcher's Wristwraps
+							}),
 						}),
 						n(VENDORS, {
 							n(171973, {	-- Binkiros <Mount Vendor>

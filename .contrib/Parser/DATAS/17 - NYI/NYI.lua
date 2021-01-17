@@ -207,6 +207,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(179442)),	-- 
 		un(NEVER_IMPLEMENTED, i(179443)),	-- 
 		un(NEVER_IMPLEMENTED, i(179444)),	-- 
+		un(NEVER_IMPLEMENTED, i(179445)),	-- 
 		un(NEVER_IMPLEMENTED, i(179446)),	-- 
 		un(NEVER_IMPLEMENTED, i(179466)),	-- 
 		un(NEVER_IMPLEMENTED, i(179467)),	-- 
@@ -329,6 +330,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(176015)),	-- 
 		un(NEVER_IMPLEMENTED, i(176016)),	-- 
 		un(NEVER_IMPLEMENTED, i(176007)),	-- 
+		un(NEVER_IMPLEMENTED, i(179007)),	-- 
 		un(NEVER_IMPLEMENTED, i(179550)),	-- 
 		un(NEVER_IMPLEMENTED, i(179551)),	-- 
 		un(NEVER_IMPLEMENTED, i(179552)),	-- 
