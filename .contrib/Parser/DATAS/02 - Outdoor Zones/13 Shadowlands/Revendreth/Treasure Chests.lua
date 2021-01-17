@@ -51,7 +51,6 @@ _.Zones =
 				}),]]
 				-- TODO: treasure @ 68,64 questID = 59884
 				o(353793, {	-- Parish Chest
-				--	TODO: confirm that these are repeatable.  the 3 blues have a pretty high droprate (and are seemingly the only blues that drop from this chest, giving it a significantly smaller drop table than the other treasures).  that + their presumed repeatability makes them worth listing/duplicating these 3 drops.  they have no associated questID but i can't find more than one up atm and i'm tired and don't feel like looking anymore
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
 					["coords"] = {
 						{ 64.9, 43.4, 1525 },
@@ -130,7 +129,7 @@ _.Zones =
 					["coord"] = { 48.7, 63.8, 1525 },
 				}),
 				o(353796, {	-- Reliquary of Remembrance
-				--	TODO: confirm that these are repeatable.  like parish chest, there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
+				--	TODO: confirm that these are repeatable.  like parish chest (confirmed repeatable), there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 					["coords"] = {
 						{ 63.5, 34.2, 1525 },
