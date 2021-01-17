@@ -1968,6 +1968,7 @@ _.Zones =
 										i(181090),	-- Fearstalker's Burnished Monnion
 										i(181086),	-- Fearstalker's Burnished Sabatons
 										i(183707),	-- Mantle of Burnished Blades
+										i(183976),	-- Rogue Researcher's Dagger
 										i(183978),	-- Silver-Etched Hopebreaker Dirk
 										i(181129),	-- Soulbreaker's Burnished Drape
 										i(181123),	-- Soulbreaker's Burnished Handwraps
