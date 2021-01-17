@@ -3295,6 +3295,7 @@ _.HiddenQuestTriggers =
 		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
+		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 
 		-- Oribos

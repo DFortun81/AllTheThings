@@ -10,9 +10,13 @@ _.Zones =
 				n(ACHIEVEMENTS, {
 					ach(14764, {	-- The Great Luckydo
 						["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
+						["cost"] = { { "i", 178554, 1 } },	-- Call Chordy
 						["crs"] = {
-							158259,	-- Chordy (pet)
 							161270,	-- Chordy (in world)
+							167828,	-- Salvageable Items (lootable treasure in world)
+						},
+						["g"] = {
+							i(183804),	-- The Great Luckydo
 						},
 					}),
 					ach(14752, {	-- Things To Do When You're Dead

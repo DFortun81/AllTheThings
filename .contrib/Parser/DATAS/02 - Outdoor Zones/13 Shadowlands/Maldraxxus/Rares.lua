@@ -193,6 +193,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(181267),	-- Writhing Spine (PET!)
+						i(183833),	-- Kash's Bag of Junk
 						i(184287),	-- Scum-Caked Epaulettes
 					},
 				}),
