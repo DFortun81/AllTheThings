@@ -64,6 +64,11 @@ _.Zones =
 						p(3047),	-- Spinebug
 					},
 				}),
+				o(353626, {	-- Locked Toolbox
+					["description"] = "To unlock it, you must obtain |cFFFFFFFFLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["questID"] = 60771,
+					["coord"] = { 38.1, 42.6, 1536 },
+				}),
 				o(355037, {	-- Runebound Coffer
 				--	TODO: verify objectID when data is available
 					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",

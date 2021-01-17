@@ -4754,6 +4754,7 @@ app.L = {
 		[353472] = "Radiant Sword",
 		[353503] = "Silver Strongbox",
 		[353516] = "Silver Strongbox",
+		[353626] = "Locked Toolbox",
 		[353627] = "Battlefront Rations",
 		[353643] = "Silver Strongbox",
 		[353645] = "Marileth's Journal",

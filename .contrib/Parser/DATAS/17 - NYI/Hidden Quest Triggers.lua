@@ -3208,6 +3208,7 @@ _.HiddenQuestTriggers =
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
+		q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)
 		q(62847),	-- secondary quest trigger on Gift of Agthia
 		q(62842),	-- secondary quest trigger on Gift of Devos
 		--	Bastion WQs
@@ -3246,6 +3247,7 @@ _.HiddenQuestTriggers =
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
+		q(61128),	-- Triggered after getting Sorrowbane
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
