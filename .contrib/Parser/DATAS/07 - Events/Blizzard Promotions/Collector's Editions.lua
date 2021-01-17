@@ -47,6 +47,36 @@ _.WorldEvents =
 			}),
 			n(-544, {	-- WoW Collector's Edition
 				tier(1, {	-- Classic
+					q(5841, {	-- Welcome! (Dwarf)
+						["provider"] = { "i", 14647 },	-- Kharanos Gift Voucher
+						["races"] = { DWARF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5805, {	-- Welcome! (Human)
+						["provider"] = { "i", 14646 },	-- Goldshire Gift Voucher
+						["races"] = { HUMAN },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5842, {	-- Welcome! (Night Elf)
+						["provider"] = { "i", 14648 },	-- Dolanaar Gift Voucher
+						["races"] = { NIGHTELF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5843, {	-- Welcome! (Orc)
+						["provider"] = { "i", 14649 },	-- Razor Hill Gift Voucher
+						["races"] = { ORC },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5844, {	-- Welcome! (Tauren)
+						["provider"] = { "i", 14650 },	-- Bloodhoof Village Gift Voucher
+						["races"] = { TAUREN },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5847, {	-- Welcome! (Undead)
+						["provider"] = { "i", 14651 },	-- Brill Gift Voucher
+						["races"] = { UNDEAD },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					un(REMOVED_FROM_GAME, ach(662, {		-- Collector's Edition: Mini-Diablo
 						un(REMOVED_FROM_GAME, i(13584)),	-- Diablo Stone (Mini-Diablo)
 					})),

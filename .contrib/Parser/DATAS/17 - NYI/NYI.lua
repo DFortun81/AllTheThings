@@ -68,6 +68,13 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(178323)),	-- Retrieving Data
 		un(NEVER_IMPLEMENTED, i(178326)),	-- Retrieving Data
 		un(NEVER_IMPLEMENTED, i(178330)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178480)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178665)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(183434)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(183431)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178488)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178489)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178673)),	-- Retrieving Data
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)

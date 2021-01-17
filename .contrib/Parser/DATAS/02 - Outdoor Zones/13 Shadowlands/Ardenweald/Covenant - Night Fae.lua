@@ -1125,6 +1125,9 @@ _.Zones =
 									},
 								}),
 								i(180639),	-- Dusty Sporeflutterer
+								i(181310),	-- Spirit Tender's Pack
+								i(181302),	-- Spirit Tender's Branches
+								i(181306),	-- Spirit Tender's Bulb
 								i(181314, {	-- Gulper Soul
 									["questID"] = 62421,	-- Gulper Soul
 								}),

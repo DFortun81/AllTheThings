@@ -112,6 +112,9 @@ _.Zones =
 				i(177808),	-- Reinforced Rapier
 				i(183430),	-- Researcher's Right Slipper
 				i(177804),	-- Ritualist Dagger
+				i(183970, {	-- Royal Arcanist's Ritual Blade
+					["crs"] = { 165270 },	-- Royal Arcanist
+				}),
 				i(177787),	-- Savage Bonemauler Bracers
 				i(177780),	-- Savage Bonemauler Chainmail
 				i(177786),	-- Savage Bonemauler Cinch

@@ -11,37 +11,45 @@ _.PVP =
 			},
 			["achievementID"] = 218,	-- Alterac Valley Victory
 			["description"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.\n\nAlterac Valley is won when the enemy's General is killed, or the opposing team's resources are reduced from 600 to 0. 1 reinforcement is lost when each player dies, 75 lost per each destroyed tower (4 towers total), and 100 for the enemy Captain. Two mines can be captured that replenish reinforcements every 45 seconds--but this is trivial and should only be used in a very long turtle.\n\nKilling players is secondary to destroying towers. For each tower destroyed, the enemy's General becomes easier to kill. Most players will rush for the enemy's graveyard closest to the General first, capping other graveyards in the middle after. A \"turtle\" is when both teams rez in inconvenient areas and spend most of the battle fighting at a chokepoint, instead of capturing objectives. It is important to defend your own towers and cap graveyards in a strategic order.",
-			["groups"] = {
+			["g"] = {
 				faction(729, {	-- Frostwolf Clan
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["g"] = {
 						n(QUESTS, {
-							q(7385, {	-- A Gallon of Blood
+							q(7385,  {	-- A Gallon of Blood
 								["provider"] = { "n", 13236 },	-- Primalist Thurloga
 								["coord"] = { 50.1, 85.1, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7281, {	-- Brotherly Love (H)
+							q(7362,  {	-- Ally of the Tauren
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7281,  {	-- Brotherly Love (H)
 								["provider"] = { "n", 13154 },	-- Commander Louis Philips
 								["coord"] = { 50.4, 65.5, 91 },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7124, {	-- Capture a Mine (H)
+							q(7124,  {	-- Capture a Mine (H)
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
-							q(5893, {	-- Coldtooth Supplies (H)
+							q(5893,  {	-- Coldtooth Supplies (H)
 								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7165, {	-- Earned Reverence
+							q(7368,  {	-- Defusing the Threat
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7165,  {	-- Earned Reverence
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -51,20 +59,28 @@ _.PVP =
 									i(17907),	-- Frostwolf Insignia Rank 4
 								},
 							}),
-							q(7001, {	-- Empty Stables (H)
+							q(7001,  {	-- Empty Stables (H)
 								["provider"] = { "n", 13616 }, -- Frostwolf Stable Master
 								["coord"] = { 57.1, 82.5, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7224, {	-- Enemy Booty
+							q(7224,  {	-- Enemy Booty
 								["provider"] = { "n", 13176 },	-- Smith Regzar
 								["coord"] = { 49.6, 82.6, 91 },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(8272, {	-- Hero of the Frostwolf
+							q(7302,  {	-- Fallen Sky Lords
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7361,  {	-- Favor Amongst the Darkspear
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8272,  {	-- Hero of the Frostwolf
 								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 								["coord"] = { 58.6, 34.2, 25 },
 								["races"] = HORDE_ONLY,
@@ -77,7 +93,7 @@ _.PVP =
 								},
 								["lvl"] = 51,
 							}),
-							q(7164, {	-- Honored Amongst the Clan
+							q(7164,  {	-- Honored Amongst the Clan
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -87,14 +103,14 @@ _.PVP =
 									i(17906),	-- Frostwolf Insignia Rank 3
 								},
 							}),
-							q(6985, {	-- Irondeep Supplies (H)
+							q(6985,  {	-- Irondeep Supplies (H)
 								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7166, {	-- Legendary Heroes
+							q(7166,  {	-- Legendary Heroes
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -110,22 +126,25 @@ _.PVP =
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							}),
-							q(6801, {	-- Lokholar the Ice Lord
+							q(6801,  {	-- Lokholar the Ice Lord
 								["provider"] = { "n", 13236 },	-- Primalist Thurloga
 								["coord"] = { 50.1, 85.1, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(6741, {	-- More Booty!
+							q(6847,  {	-- Master Ryson's All Seeing Eye
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(6741,  {	-- More Booty!
+								["sourceQuests"] = { 7224 },	-- Enemy Booty
+								["repeatable"] = true,
 								["provider"] = { "n", 13176 },	-- Smith Regzar
 								["coord"] = { 49.6, 82.6, 91 },
-								["sourceQuest"] = 7224,	-- Enemy Booty
-								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
-								["lvl"] = 51,
 							}),
-							q(7161, {	-- Proving Grounds
+							q(7161,  {	-- Proving Grounds
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["lvl"] = 51,
 								["coord"] = { 57.7, 33.3, 25 },
@@ -134,14 +153,14 @@ _.PVP =
 									i(17690),	-- Frostwolf Insignia Rank 1
 								},
 							}),
-							q(7002, {	-- Ram Hide Harnesses
+							q(7002,  {	-- Ram Hide Harnesses
 								["provider"] = { "n", 13441 }, -- Frostwolf Wolf Rider Commander
 								["coord"] = { 57.0, 82.5, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7163, {	-- Rise and Be Recognized
+							q(7163,  {	-- Rise and Be Recognized
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -151,12 +170,12 @@ _.PVP =
 									i(17905),	-- Frostwolf Insignia Rank 2
 								},
 							}),
-							q(7123, {	-- Speak with our Quartermaster
+							q(7123,  {	-- Speak with our Quartermaster
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 								["provider"] = { "n", 13798 },	-- Jotek
 							}),
-							q(7142, {	-- The Battle for Alterac
+							q(7142,  {	-- The Battle for Alterac
 								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 								["coord"] = { 58.6, 34.2, 25 },
 								["races"] = HORDE_ONLY,
@@ -168,7 +187,7 @@ _.PVP =
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							}),
-							q(7167, {	-- The Eye of Command
+							q(7167,  {	-- The Eye of Command
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -179,18 +198,34 @@ _.PVP =
 									i(17909),	-- Frostwolf Insignia Rank 6
 								},
 							}),
-							q(7082, {	-- The Graveyards of Alterac
+							q(7082,  {	-- The Graveyards of Alterac
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
-							q(7101, {	-- Towers and Bunkers (H)
+							q(7363,  {	-- The Human Condition
 								["races"] = HORDE_ONLY,
-								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
-							}),
-							q(6861, {	-- Zinfizzlex's Portable Shredder Unit (H)
 								["u"] = REMOVED_FROM_GAME,
 							}),
-							q(6862, {	-- Zinfizzlex's Portable Shredder Unit (A)
+							q(7181,  {	-- The Legend of Korrak
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7381,  {	-- The Return of Korrak
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7101,  {	-- Towers and Bunkers (H)
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
+							}),
+							q(7401,  {	-- WANTED: Dwarves!
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(6861,  {	-- Zinfizzlex's Portable Shredder Unit (H)
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(6862,  {	-- Zinfizzlex's Portable Shredder Unit (A)
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						}),
@@ -284,7 +319,7 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(169298, {	-- Frostwolf Insignia
-										["sourceQuest"] = 56257,	-- The Battle for Alterac (H)
+										["sourceQuests"] = { 56257 },	-- The Battle for Alterac (H)
 									}),
 								},
 							}),
@@ -340,47 +375,51 @@ _.PVP =
 					["icon"] = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
 					["g"] = {
 						n(QUESTS, {
-							q(7081, {	-- Alterac Valley Graveyards
+							q(7081,  {	-- Alterac Valley Graveyards
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
-							q(7223, {	-- Armor Scraps
+							q(7223,  {	-- Armor Scraps
 								["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							--	["coord"] = { , 91 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7282, {	-- Brotherly Love (A)
+							q(7282,  {	-- Brotherly Love (A)
 								["provider"] = { "n", 13320 },	-- Commander Karl Philips
 								["coord"] = { 50.9, 30.8, 91 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7122, {	-- Capture a Mine (A)
+							q(7122,  {	-- Capture a Mine (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
-							q(6982, {	-- Coldtooth Supplies (A)
+							q(6982,  {	-- Coldtooth Supplies (A)
+								["sourceQuests"] = { 7121 },	-- The Quartermaster
+								["repeatable"] = true,
 								["provider"] = { "n", 12096 }, -- Stormpike Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
-								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 51,
 							}),
-							q(7386, {	-- Crystal Cluster
+							q(7386,  {	-- Crystal Cluster
 								["provider"] = { "n", 13442 },	-- Archdruid Renferal
 								["coord"] = { 43.9, 12.6, 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7170, {	-- Earned Reverence
+							q(7367,  {	-- Defusing the Threat
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7170,  {	-- Earned Reverence
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -390,14 +429,22 @@ _.PVP =
 									i(17902),	-- Stormpike Insignia Rank 4
 								},
 							}),
-							q(7027, {	-- Empty Stables (A)
+							q(7027,  {	-- Empty Stables (A)
 								["provider"] = { "n", 13617 }, -- Stormpike Stable Master
 								["coord"] = { 42.6, 16.9 , 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(8271, {	-- Hero of the Stormpike
+							q(7301,  {	-- Fallen Sky Lords
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7364,  {	-- Gnomeregan Bounty
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8271,  {	-- Hero of the Stormpike
 								["provider"] = { "n", 13816 },	-- Prospecter Stonechewer
 								["coord"] = { 45.2, 45.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -410,7 +457,7 @@ _.PVP =
 								},
 								["lvl"] = 51,
 							}),
-							q(7169, {	-- Honored Amongst the Guard
+							q(7169,  {	-- Honored Amongst the Guard
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -420,14 +467,14 @@ _.PVP =
 									i(17901),	-- Stormpike Insignia Rank 3
 								},
 							}),
-							q(5892, {	-- Irondeep Supplies (A)
+							q(5892,  {	-- Irondeep Supplies (A)
+								["sourceQuests"] = { 7121 },	-- The Quartermaster
+								["repeatable"] = true,
 								["provider"] = { "n", 12096 }, -- Stormpike Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
-								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 51,
 							}),
-							q(6881, {	-- Ivus the Forest Lord
+							q(6881,  {	-- Ivus the Forest Lord
 								["provider"] = { "n", 13442 },	-- Archdruid Renferal
 								["coord"] = { 43.9, 12.6, 91 },
 								["repeatable"] = true,
@@ -441,7 +488,15 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7171, {	-- Legendary Heroes
+							q(7202,  {	-- Korrak the Bloodrager
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7382,  {	-- Korrak the Everliving
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7171,  {	-- Legendary Heroes
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -451,15 +506,18 @@ _.PVP =
 									i(17903),	-- Stormpike Insignia Rank 5
 								},
 							}),
-							q(6781, {	-- More Armor Scraps
+							q(6848,  {	-- Master Ryson's All Seeing Eye
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(6781,  {	-- More Armor Scraps
+								["sourceQuests"] = { 7223 },	-- Armor Scraps
+								["repeatable"] = true,
 								["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							--	["coord"] = { , 91 },
-								["sourceQuest"] = 7223,	-- Armor Scraps
-								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 51,
 							}),
-							q(7162, {	-- Proving Grounds
+							q(7162,  {	-- Proving Grounds
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -468,14 +526,14 @@ _.PVP =
 									i(17691),	-- Stormpike Insignia Rank 1
 								},
 							}),
-							q(7026, {	-- Ram Riding Harnesses
+							q(7026,  {	-- Ram Riding Harnesses
 								["provider"] = { "n", 13577 }, -- Stormpike Ram Rider Commander
 							--	["coord"] = { , 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7168, {	-- Rise and Be Recognized
+							q(7168,  {	-- Rise and Be Recognized
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -485,7 +543,15 @@ _.PVP =
 									i(17900),	-- Stormpike Insignia Rank 2
 								},
 							}),
-							q(7141, {	-- The Battle of Alterac
+							q(7365,  {	-- Staghelm's Requiem
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7366,  {	-- The Archbishop's Mercy
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(7141,  {	-- The Battle of Alterac
 								["provider"] = { "n", 13816 },	-- Prospecter Stonehewer
 								["races"] = ALLIANCE_ONLY,
                                 ["lvl"] = 51,
@@ -496,7 +562,7 @@ _.PVP =
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(7172, {	-- The Eye of Command
+							q(7172,  {	-- The Eye of Command
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
@@ -507,12 +573,21 @@ _.PVP =
 									i(17904),	-- Stormpike Insignia Rank 6
 								},
 							}),
-							q(7102, {	-- Towers and Bunkers (A)
+							q(7121,  {	-- The Quartermaster
+								["isBreadcrumb"] = true,
+								["provider"] = { "n", 13797 },	-- Mountaineer Boombellow
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(7102,  {	-- Towers and Bunkers (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
+							}),
+							q(7402,  {	-- WANTED: Orcs!
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						}),
 						n(VENDORS, {
@@ -521,7 +596,7 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(169297, {	-- Stormpike Insignia
-										["sourceQuest"] = 56256,	-- The Battle for Alterac (A)
+										["sourceQuests"] = { 56256 },	-- The Battle for Alterac (A)
 									}),
 								},
 							}),

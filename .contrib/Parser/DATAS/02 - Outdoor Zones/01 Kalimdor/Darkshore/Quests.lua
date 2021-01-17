@@ -454,6 +454,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
+				q(1442,  {	-- Seeking the Kor Gem
+					["provider"] = { "n", 3649 },	-- Thundris Windweaver
+					["classes"] = { PALADIN },
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(13504, {	-- Shatterspear Laborers
 					["provider"] = { "n", 32965 },	-- Sentinel Tysha Moonblade
 					["coord"] = { 58.8, 19.4, 62 },

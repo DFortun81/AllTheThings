@@ -1380,6 +1380,11 @@ _.Zones =
 						n(-947, {	-- Tier 5: Trials of Humility
 							n(-908, {	-- Rewards
 							--	TODO: cloaks may need to be tagged with classes based on armor proficiency (like if leather users can't learn/use the 'cloth' set cloak)
+							--	*not sure about 3 items marked with asterisk
+								i(181287),	-- Halo of the Reverent*
+								i(181293),	-- Reverent Sigil of the Archon*
+								i(181297),	-- Reverent Wings of the Ascended*
+								--
 								i(177205),	-- Reverent Bearer's Chestplate
 								i(177221),	-- Reverent Bearer's Cloak
 								i(177207),	-- Reverent Bearer's Gauntlets

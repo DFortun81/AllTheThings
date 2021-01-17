@@ -1967,6 +1967,7 @@ _.Zones =
 										i(181089),	-- Fearstalker's Burnished Leggings
 										i(181090),	-- Fearstalker's Burnished Monnion
 										i(181086),	-- Fearstalker's Burnished Sabatons
+										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183707),	-- Mantle of Burnished Blades
 										i(183976),	-- Rogue Researcher's Dagger
 										i(183978),	-- Silver-Etched Hopebreaker Dirk
