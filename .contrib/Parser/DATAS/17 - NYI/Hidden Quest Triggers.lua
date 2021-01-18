@@ -3584,6 +3584,7 @@ _.HiddenQuestTriggers =
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
 		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
+		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

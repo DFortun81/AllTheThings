@@ -167,6 +167,13 @@ _.ExpansionFeatures =
 						follower(1221),	-- Teliah
 					},
 				}),
+				q(61962, {	-- Champion: Velkein [Necrolord]
+					["sourceQuests"] = { 62231 },	-- Velkein's Blade
+					["provider"] = { "n", 173400 },	-- Velkein
+					["g"] = {
+						follower(1308),	-- Velkein
+					},
+				}),
 				q(61426, {	-- Champion: Yira'lya [Night Fae]
 					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					-- ["sourceQuests"] = { },	-- TODO
@@ -300,6 +307,11 @@ _.ExpansionFeatures =
 				q(62993, {	-- The Riddle of Death
 					["repeatable"] = true,
 					["provider"] = { "n", 175648 },	-- Croman
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+				}),
+				q(62231, {	-- Velkein's Blade
+					["repeatable"] = true,
+					["provider"] = { "n", 173753 },	-- Velkein
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				
