@@ -14164,7 +14164,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["ITEM_DESC"],		-- L["ITEM_DESC"] = "Click this button to select a random item based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["ITEM"]);
+							app.SetDataMember("RandomSearchFilter", "Item");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14179,7 +14179,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["INSTANCE_DESC"],		-- L["INSTANCE_DESC"] = "Click this button to select a random instance based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["INSTANCE"]);
+							app.SetDataMember("RandomSearchFilter", "Instance");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14194,7 +14194,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["DUNGEON_DESC"],		-- L["DUNGEON_DESC"] = "Click this button to select a random dungeon based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["DUNGEON"]);
+							app.SetDataMember("RandomSearchFilter", "Dungeon");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14209,7 +14209,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["RAID_DESC"],		-- L["RAID_DESC"] = "Click this button to select a random raid based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["RAID"]);
+							app.SetDataMember("RandomSearchFilter", "Raid");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14224,7 +14224,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["MOUNT_DESC"],		-- L["MOUNT_DESC"] = "Click this button to select a random mount based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["MOUNT"]);
+							app.SetDataMember("RandomSearchFilter", "Mount");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14239,7 +14239,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["PET_DESC"],		-- L["PET_DESC"] = "Click this button to select a random pet based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["PET"]);
+							app.SetDataMember("RandomSearchFilter", "Pet");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14255,7 +14255,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["QUEST_DESC"],		-- L["QUEST_DESC"] = "Click this button to select a random quest based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["QUEST"]);
+							app.SetDataMember("RandomSearchFilter", "Quest");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14270,7 +14270,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["TOY_DESC"],		-- L["TOY_DESC"] = "Click this button to select a random toy based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["TOY"]);
+							app.SetDataMember("RandomSearchFilter", "Toy");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14285,7 +14285,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = L["ZONE_DESC"],		-- L["ZONE_DESC"] = "Click this button to select a random zone based on what you're missing."
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", L["ZONE"]);
+							app.SetDataMember("RandomSearchFilter", "Zone");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -14332,10 +14332,10 @@ app:GetWindow("Random", UIParent, function(self)
 				wipe(self.data.g);
 
 				-- Call to our method and build a list to draw from
-				local method = app.GetDataMember("RandomSearchFilter", L["INSTANCE"]);
+				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
 					rerollOption.text = L["REROLL_2"] .. method;		-- L["REROLL_2"] = "Reroll: "
-					method = L["SELECT"] .. method;		-- L["SELECT"] = "Select"
+					method = "Select" .. method;		-- L["SELECT"] = "Select"
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
@@ -14375,7 +14375,7 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", L["INSTANCE"]);		--
+			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");		--
 		end
 
 		-- Update the window and all of its row data
