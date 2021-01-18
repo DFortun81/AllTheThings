@@ -14332,7 +14332,7 @@ app:GetWindow("Random", UIParent, function(self)
 				wipe(self.data.g);
 
 				-- Call to our method and build a list to draw from
-				local method = app.GetDataMember("RandomSearchFilter", L["INSTANCE"]);
+				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
 					rerollOption.text = L["REROLL_2"] .. method;		-- L["REROLL_2"] = "Reroll: "
 					method = "Select" .. method;		-- L["SELECT"] = "Select"
@@ -14375,7 +14375,7 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", L["INSTANCE"]);		--
+			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");		--
 		end
 
 		-- Update the window and all of its row data
