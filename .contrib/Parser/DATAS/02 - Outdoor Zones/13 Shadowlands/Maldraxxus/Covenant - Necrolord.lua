@@ -1332,7 +1332,7 @@ _.Zones =
 							},
 						}),
 						n(QUESTS, {
-							n(-926, {	-- Tier 1: Build a Buddy
+							n(-925, {	-- Tier 1: Build a Buddy
 								q(61510, {	-- A Bountiful Haul
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["isWeekly"] = true,
