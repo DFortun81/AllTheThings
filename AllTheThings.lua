@@ -11960,6 +11960,7 @@ function app:GetDataCache()
 		if app.Categories.Factions then
 			db = {};
 			db.g = app.Categories.Factions;
+			db.npcID = -6013;	-- Factions, for 'mapping' tech on Factions to work properly
 			-- db = app.CreateAchievement(11177, app.Categories.Factions);
 			db.expanded = false;
 			db.text = "Factions";
@@ -12903,6 +12904,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group }, u = u  }); end
 							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
 								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group }, u = u  }); end
+							elseif GetRelativeField(group, "npcID", -6013) then	-- It's a Faction.
+								if group.npcID ~= -6013 then group = app.CreateNPC(-6013, { g = { group }, u = u  }); end
 							end
 						elseif group.key == "questID" then
 							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
@@ -12954,6 +12957,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group } }); end
 							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
 								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group } }); end
+							elseif GetRelativeField(group, "npcID", -6013) then	-- It's a Faction.
+								if group.npcID ~= -6013 then group = app.CreateNPC(-6013, { g = { group } }); end
 							end
 						end
 
