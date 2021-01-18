@@ -728,6 +728,7 @@ t(184487);	-- Gormling in a Bag
 t(184495);	-- Infested Arachnid Casing
 t(184449);	-- Jiggles's Favorite Toy
 t(184353);	-- Kyrian Hearthstone
+t(184396);	-- Malfunctioning Goliath Gauntlet
 t(184435);	-- Mark of Purity
 t(184476);	-- Regenerating Slime Vial
 t(178530);	-- Wreath-A-Rang

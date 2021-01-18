@@ -13,6 +13,8 @@ _.Toys =
 		i(166703),	-- Goldtusk Inn Breakfast Buffet
 		i(153182),	-- Holy Lightsphere Toy
 		i(184495),	-- Infested Arachnid Casing
+		i(184396),	-- Malfunctioning Goliath Gauntlet
+		i(184435),	-- Mark of Purity
 		i(166880),	-- Meerah's Jukebox
 		i(170469),	-- Memento of the Deeps
 		i(166702),	-- Proudmoore Music Box
