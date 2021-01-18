@@ -2966,6 +2966,10 @@ _.HiddenQuestTriggers =
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		
+		-- Illusions
+		q(62964),	-- triggered when learning Illusion: Undying Spirit
+		q(61727), 	-- triggered when learning Illusion: Sinsedge
+		
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
 		q(63070),	-- Shared
