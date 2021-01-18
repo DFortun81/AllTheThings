@@ -441,7 +441,7 @@ _.Zones =
 							["coord"] = { 65.2, 42.8, 1533 },
 						}),
 						n(-1433911, {	-- Shard ##
-							["description"] = "Use the Anima Gateway at |cFFFFFFFF65.5, 71.9|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
+							["description"] = "Use the Anima Gateway at |cFFFFFFFF63.5, 72.4|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
 							["questID"] = 61249,
 							["coord"] = { 65.5, 71.9, 1533 },
 						}),
@@ -569,7 +569,8 @@ _.Zones =
 						["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
 						["objectID"] = 354275,	-- Experimental Construct Part
 						["questID"] = 61052,
-						["coord"] = { 42.3, 23.3, 1533 },
+						["coord"] = { 51.5, 18.0, 1533 },
+						["cost"] = { { "i", 180534, 1 } },	-- Unstable Construct Anima
 						["g"] = {
 							i(183609),	-- Re-Powered Golliath Fists
 						},

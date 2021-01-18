@@ -1694,6 +1694,10 @@ _.Zones =
 								},
 							}),
 						}),
+						-- TODO: do these need a sub-header?
+						i(180594),	-- Calloused Bone
+						i(180477),	-- Elysian Feathers
+						i(180595),	-- Nightforged Steel
 					}),
 					n(-948, {	-- Transport Network
 						n(-3348, {	-- Tier 1: Step of Faith
@@ -2633,6 +2637,8 @@ _.Zones =
 						}),
 					}),
 				}),
+				-- TODO: not sure if these should be moved into a sub-header? based on selected Soulbind/Tree
+				i(183701),	-- Cleansing Rite Materials
 			}),
 		}),
 	}),
