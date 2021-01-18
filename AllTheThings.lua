@@ -6198,25 +6198,28 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
 		elseif key == "saved" or key == "collected" then
-			-- this character is exalted
-			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			-- another character exalted with account-wide
-			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
-			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
-				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-				SetDataSubMember("CollectedFactions", t.factionID, 1);
-				return 1;
-			end
-			if t.altAchievements then
-				for i,achID in ipairs(t.altAchievements) do
-					if select(4, GetAchievementInfo(achID)) then
-						return 2;
-					end
-				end
-			end
-			if t.achievementID then
-				return select(4, GetAchievementInfo(t.achievementID));
-			end
+			return app.GetFactionCollected(t.factionID,t.altAchievements) or t.achievementID and select(4, GetAchievementInfo(t.achievementID));
+			-- -- this character is exalted
+			-- if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			-- -- another character exalted with account-wide
+			-- if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+			-- if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
+			-- 	SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+			-- 	SetDataSubMember("CollectedFactions", t.factionID, 1);
+			-- 	return 1;
+			-- end
+			-- if t.altAchievements then
+			-- 	for i,achID in ipairs(t.altAchievements) do
+			-- 		if select(4, GetAchievementInfo(achID)) then
+			-- 			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+			-- 			SetDataSubMember("CollectedFactions", t.factionID, 1);
+			-- 			return 2;
+			-- 		end
+			-- 	end
+			-- end
+			-- if t.achievementID then
+			-- 	return select(4, GetAchievementInfo(t.achievementID));
+			-- end
 		elseif key == "name" or key == "sorttext" then
 			return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID);
 		elseif key == "text" then
@@ -6280,6 +6283,52 @@ app.GetFactionStandingText = function(standingId, colorCode)
 		end
 	end
 	return "|cCC222200UNKNOWN|r"
+end
+-- Returns whether the given factionID is considered 'collected' for the current character with the current settings, including altAchievements for factions which are
+-- considered completed via an achievement which requires completing multiple
+app.GetFactionCollected = function(factionID, altAchievements)
+	if factionID then
+		local factionName = GetFactionInfoByID(factionID);
+		-- print("check factionID",factionID,factionName)
+		-- this character is cached exalted
+		if GetTempDataSubMember("CollectedFactions", factionID) then return 1; end
+		-- print("character not exalted")
+		-- another character cached exalted with account-wide
+		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
+		-- print("not account-wide exalted")
+		-- character is freshly exalted
+		if select(3, GetFactionInfoByID(factionID)) == 8 then
+			-- print("fresh exalted")
+			SetTempDataSubMember("CollectedFactions", factionID, 1);
+			SetDataSubMember("CollectedFactions", factionID, 1);
+			return 1;
+		end
+		-- is a 'friendship' reputation
+		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
+		if friendID and not nextFriendThreshold then
+			-- print("fresh exalted friendship")
+			SetTempDataSubMember("CollectedFactions", factionID, 1);
+			SetDataSubMember("CollectedFactions", factionID, 1);
+			return 1;
+		end
+		-- reputation is 'completed' via completion of an achievement (i.e. 2 conflicting exalted reps achieve)
+		if altAchievements then
+			for i,achID in ipairs(altAchievements) do
+				if select(4, GetAchievementInfo(achID)) then
+					-- print("completed via ach",achID)
+					SetTempDataSubMember("CollectedFactions", factionID, 1);
+					SetDataSubMember("CollectedFactions", factionID, 1);
+					-- return 2 since it's not 'technically' completed reputation currently for this character
+					return 2;
+				end
+			end
+		end
+		-- print("incomplete rep")
+		-- not sure when this is useful?
+		-- if t.achievementID then
+		-- 	return select(4, GetAchievementInfo(t.achievementID));
+		-- end
+	end
 end
 end)();
 
@@ -6896,22 +6945,23 @@ app.BaseHeirloom = {
 			-- heirloom for a faction (grand commendation/rep item/etc.)
 			if t.factionID then
 				if t.repeatable then
-					-- This is used by reputation tokens.
-					if app.AccountWideReputations then
-						if GetDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					end
+					return app.GetFactionCollected(t.factionID);
+					-- -- This is used by reputation tokens.
+					-- if app.AccountWideReputations then
+					-- 	if GetDataSubMember("CollectedFactions", t.factionID) then
+					-- 		return 1;
+					-- 	end
+					-- else
+					-- 	if GetTempDataSubMember("CollectedFactions", t.factionID) then
+					-- 		return 1;
+					-- 	end
+					-- end
 
-					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
-						SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-						SetDataSubMember("CollectedFactions", t.factionID, 1);
-						return 1;
-					end
+					-- if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
+					-- 	SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+					-- 	SetDataSubMember("CollectedFactions", t.factionID, 1);
+					-- 	return 1;
+					-- end
 				else
 					-- This is used for the Grand Commendations unlocking Bonus Reputation
 					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
@@ -7206,23 +7256,29 @@ local itemFields = {
 		-- if the item is collectible because it's tied to a factionID
 		if cache then
 			if t.repeatable then
-				-- This is used by reputation tokens.
-				if app.AccountWideReputations then
-					if GetDataSubMember("CollectedFactions", cache) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedFactions", cache) then
-						return 1;
-					end
-				end
+				-- This is used by reputation-granting items.
+				return app.GetFactionCollected(cache);
+				-- if app.AccountWideReputations then
+				-- 	print("account-wide reps")
+				-- 	if GetDataSubMember("CollectedFactions", cache) then
+				-- 		print("collected")
+				-- 		return 1;
+				-- 	end
+				-- else
+				-- 	if GetTempDataSubMember("CollectedFactions", cache) then
+				-- 		print("collected")
+				-- 		return 1;
+				-- 	end
+				-- end
 
-				if select(1, GetFriendshipReputation(cache)) and not select(9, GetFriendshipReputation(cache)) or select(3, GetFactionInfoByID(cache)) == 8 then
-					SetTempDataSubMember("CollectedFactions", cache, 1);
-					SetDataSubMember("CollectedFactions", cache, 1);
-					return 1;
-				end
+				-- if select(1, GetFriendshipReputation(cache)) and not select(9, GetFriendshipReputation(cache)) or select(3, GetFactionInfoByID(cache)) == 8 then
+				-- 	SetTempDataSubMember("CollectedFactions", cache, 1);
+				-- 	SetDataSubMember("CollectedFactions", cache, 1);
+				-- 	return 1;
+				-- end
+				-- print("incomplete rep")
 			else
+				-- print("non-repeatable reputaiton item")
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if GetDataSubMember("CollectedFactionBonusReputation", cache) then return 1; end
 				if select(15, GetFactionInfoByID(cache)) then
