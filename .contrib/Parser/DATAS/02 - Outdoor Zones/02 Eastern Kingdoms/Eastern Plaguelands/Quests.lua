@@ -400,7 +400,7 @@ _.Zones =
 					["provider"] = { "n", 12384 },	-- Augustus the Touched
 					["coord"] = { 11.3, 28.5, 23 },
 				}),
-				q(5152, {	-- Auntie Marlene
+				q(5152,  {	-- Auntie Marlene
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
@@ -427,12 +427,12 @@ _.Zones =
 						27612,	-- Victory From Within
 					},
 				}),
-				q(5531, {	-- Betina Bigglezink
+				q(5531,  {	-- Betina Bigglezink
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 				}),
-				q(9131, {	-- Binding the Dreadnaught
+				q(9131,  {	-- Binding the Dreadnaught
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
@@ -442,16 +442,16 @@ _.Zones =
 					["coord"] = { 50.5, 20.1, 23 },
 					["sourceQuests"] = { 27522 },	-- Beat it Out of Them
 				}),
-				q(5543, {	-- Blood Tinged Skies
+				q(5543,  {	-- Blood Tinged Skies
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
-				q(9665, {	-- Bolstering Our Defenses
+				q(9665,  {	-- Bolstering Our Defenses
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17072 },	-- Emissary Gormok
 				}),
-				q(9126, {	-- Bonescythe Digs
+				q(9126,  {	-- Bonescythe Digs
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16131 },	-- Rohan the Assassin
 				}),
@@ -470,7 +470,7 @@ _.Zones =
 						i(62982),	-- Light-Touched Pendant
 					},
 				}),
-				q(5544, {	-- Carrion Grubbage
+				q(5544,  {	-- Carrion Grubbage
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
@@ -507,7 +507,7 @@ _.Zones =
 						i(63007),	-- Plaguewood Mace
 					},
 				}),
-				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
+				q(9124,  {	-- Cryptstalker Armor Doesn't Make Itself...
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16132 },	-- Huntsman Leopold
 				}),
@@ -525,7 +525,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5211, {	-- Defenders of Darrowshire
+				q(5211,  {	-- Defenders of Darrowshire
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5241,	-- Uncle Carlin
@@ -534,7 +534,7 @@ _.Zones =
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
 				}),
-				q(5542, {	-- Demon Dogs
+				q(5542,  {	-- Demon Dogs
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
@@ -604,7 +604,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
-				q(5861, {	-- Find Myranda
+				q(5861,  {	-- Find Myranda
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
@@ -852,11 +852,11 @@ _.Zones =
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["coord"] = { 35.5, 68.8, 23 },
 				}),
-				q(5513, {	-- Mantles of the Dawn
+				q(5513,  {	-- Mantles of the Dawn
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11536 },	-- Quartermaster Miranda Breechlock
 				}),
-				q(5206, {	-- Marauders of Darrowshire
+				q(5206,  {	-- Marauders of Darrowshire
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuests"] = {
@@ -874,7 +874,7 @@ _.Zones =
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 				}),
-				q(5464, {	-- Menethil's Gift
+				q(5464,  {	-- Menethil's Gift
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 176631 },	-- Menethil's Gift
 					["sourceQuest"] = 5463,	-- Menethil's Gift
@@ -892,15 +892,15 @@ _.Zones =
 					["coord"] = { 61.5, 43.2, 23 },
 					["sourceQuests"] = { 27488 },	-- Impatience
 				}),
-				q(5781, {	-- Of Forgotten Memories
+				q(5781,  {	-- Of Forgotten Memories
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
-				q(5845, {	-- Of Lost Honor
+				q(5845,  {	-- Of Lost Honor
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
-				q(5846, {	-- Of Love and Family (1/2)
+				q(5846,  {	-- Of Love and Family (1/2)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
@@ -920,7 +920,7 @@ _.Zones =
 						27449,	-- Honor and Strength
 					},
 				}),
-				q(5149, {	-- Pamela's Doll
+				q(5149,  {	-- Pamela's Doll
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuests"] = {
@@ -945,7 +945,7 @@ _.Zones =
 						{ 73.6, 51.9, 23 },
 					},
 				}),
-				q(5529, {	-- Plagued Hatchlings
+				q(5529,  {	-- Plagued Hatchlings
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 				}),
@@ -962,11 +962,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18022)),	-- Royal Seal of Alexis
 					},
 				}),
-				q(5742, {	-- Redemption
+				q(5742,  {	-- Redemption
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
-				q(5941, {	-- Return to Chromie
+				q(5941,  {	-- Return to Chromie
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
@@ -997,7 +997,7 @@ _.Zones =
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
-				q(5862, {	-- Scarlet Subterfuge
+				q(5862,  {	-- Scarlet Subterfuge
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11872 },	-- Myranda the Hag
 				}),
@@ -1085,7 +1085,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(13209)),	-- Seal of the Dawn
 					},
 				}),
-				q(5251, {	-- The Archivist
+				q(5251,  {	-- The Archivist
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 				}),
@@ -1133,7 +1133,7 @@ _.Zones =
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["coord"] = { 41.0, 87.9, 24 },
 				}),
-				q(9141, {	-- They Call Me "The Rooster"
+				q(9141,  {	-- They Call Me "The Rooster"
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27619, {	-- The Commander
@@ -1178,12 +1178,12 @@ _.Zones =
 						i(62985),	-- Corpulent Shoulderpads
 					},
 				}),
-				q(9128, {	-- The Elemental Equation
+				q(9128,  {	-- The Elemental Equation
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 				}),
-				q(5212, {	-- The Flesh Does Not Lie
+				q(5212,  {	-- The Flesh Does Not Lie
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 				}),
@@ -1204,7 +1204,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22636)),	-- Ice Guard
 					},
 				}),
-				q(5466, { 	-- The Lich, Ras Frostwhisper
+				q(5466,  { 	-- The Lich, Ras Frostwhisper
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["sourceQuest"] = 5465,	-- Soulbound Keepsake
@@ -1221,16 +1221,16 @@ _.Zones =
 					["sourceQuests"] = { 27526 },	-- Gidwin's Fate Revealed
 					["isBreadcrumb"] = true,
 				}),
-				q(6133, {	-- The Ranger Lord's Behest
+				q(6133,  {	-- The Ranger Lord's Behest
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
-				q(5281, {	-- The Restless Souls
+				q(5281,  {	-- The Restless Souls
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
-				q(5282, {	-- The Restless Souls
+				q(5282,  {	-- The Restless Souls
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11140 },	-- Egan
 					["sourceQuest"] = 5281,	-- The Restless Souls
@@ -1257,14 +1257,18 @@ _.Zones =
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
-				q(5281, {	-- The Restless Souls
+				q(5281,  {	-- The Restless Souls
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
-				q(6022, {	-- To Kill With Purpose (Legacy)
+				q(6022,  {	-- To Kill With Purpose (Legacy)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
+				}),
+				q(27451, {	-- To Kill With Purpose
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink <The Argent Dawn>
+					["coord"] = { 53.2, 54.6, 23 },
 				}),
 				q(27461, {	-- To Take the Abbey
 					["coord"] = { 77.5, 79.4, 23 },
@@ -1281,7 +1285,7 @@ _.Zones =
 					["coord"] = { 35.2, 68.8, 23 },
 					["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 				}),
-				q(5241, {	-- Uncle Carlin
+				q(5241,  {	-- Uncle Carlin
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
@@ -1294,7 +1298,7 @@ _.Zones =
 						27384,	-- Pamela's Doll
 					},
 				}),
-				q(6042, {	-- Un-Life's Little Annoyances
+				q(6042,  {	-- Un-Life's Little Annoyances
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
@@ -1314,7 +1318,7 @@ _.Zones =
 					["coord"] = { 76.7, 73.1, 23 },
 					["sourceQuests"] = { 27461 },	-- To Take the Abbey
 				}),
-				q(5181, {	-- Villains of Darrowshire
+				q(5181,  {	-- Villains of Darrowshire
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
@@ -1352,7 +1356,7 @@ _.Zones =
 					["provider"] = { "n", 45826 },	-- Kirkian Dawnshield
 					["coord"] = { 49.9, 19.5, 23 },
 				}),
-				q(6021, {	-- Zeldarr the Outcast
+				q(6021,  {	-- Zeldarr the Outcast
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),

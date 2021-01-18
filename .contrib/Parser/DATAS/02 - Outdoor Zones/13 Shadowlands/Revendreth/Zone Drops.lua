@@ -18,6 +18,26 @@ _.Zones =
 				i(172957, {	-- Atonement Crypt Key
 					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
 				}),
+				i(180602, {	-- Crimson Dredwing Pup (PET!)
+					["crs"] = {
+						159178,	-- Dire Evedweller
+						169154,	-- Famished Fangling
+						163893,	-- Fanged Dredbat
+						161206,	-- Fanged Dredbat
+						161207,	-- Fangling
+						156077,	-- Fiendish Terrorwing
+						165290,	-- Harika
+						158976,	-- Shrieking Evedweller
+						156395,	-- Starving Dredbat
+					},
+				}),
+				i(183420),	-- Hopebreaker's Right Boot
+				i(183417),	-- Mail Courier's Right Runner
+				i(183430),	-- Researcher's Right Slipper
+				i(183970, {	-- Royal Arcanist's Ritual Blade
+					["crs"] = { 165270 },	-- Royal Arcanist
+				}),
+				i(183423),	-- Stone Legion Right Sabaton
 				i(177772),	-- Avowed Tormenter's Cord
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
@@ -46,13 +66,6 @@ _.Zones =
 				i(177800),	-- Bubbling Concoction
 				i(180862),	-- Bulletslinger
 				i(179319),	-- Caged Cudgel
-				i(180602, {	-- Crimson Dredwing Pup
-					-- TODO: possibly add other bats?
-					["crs"] = {
-						169154,	-- Famished Fangling
-						156395,	-- Starving Dredbat
-					},
-				}),
 				i(182691),	-- Darkwing Headlopper
 				i(180864),	-- Decanter of Distilled Shadows
 				i(177778),	-- Depraved Darkblade's Belt
@@ -79,10 +92,8 @@ _.Zones =
 				i(182690),	-- Gilded Crusader's Morningstar
 				i(177802),	-- Hopebreaker Carbine
 				i(177813),	-- Hopebreaker's Badge
-				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
-				i(183417),	-- Mail Courier's Right Runner
 				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
 				i(177789),	-- Night Guardian Breastplate
@@ -110,11 +121,7 @@ _.Zones =
 				i(177805),	-- Redeemer's Mace
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
-				i(183430),	-- Researcher's Right Slipper
 				i(177804),	-- Ritualist Dagger
-				i(183970, {	-- Royal Arcanist's Ritual Blade
-					["crs"] = { 165270 },	-- Royal Arcanist
-				}),
 				i(177787),	-- Savage Bonemauler Bracers
 				i(177780),	-- Savage Bonemauler Chainmail
 				i(177786),	-- Savage Bonemauler Cinch
@@ -124,7 +131,6 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
-				i(183423),	-- Stone Legion Right Sabaton
 				i(180865),	-- Stonebane Cudgel
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace

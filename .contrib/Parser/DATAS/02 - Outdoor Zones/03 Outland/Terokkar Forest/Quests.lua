@@ -24,6 +24,9 @@ _.Zones =
 						i(25926),	-- Nexus-Stalker's Band
 					},
 				}),
+				q(9989,  {	-- Alien Spirits
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(10871, {	-- Ally of the Netherwing
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
