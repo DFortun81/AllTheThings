@@ -1160,6 +1160,13 @@ _.Zones =
 									["coord"] = { 24.0, 53.3, 1662 },
 									["isDaily"] = true,
 								}),
+								q(62449, {	-- A Spirit's Duty
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174273 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+									["altQuests"] = { 62445 },
+								}),
 								q(62442, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 									["provider"] = { "n", 174324 },	-- Conservator Aoni
