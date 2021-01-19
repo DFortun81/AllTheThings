@@ -304,6 +304,11 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
+					q(62859, {	-- Return Lost Souls (15 soul version)
+						["provider"] = { "n", 158553 },	-- Flutterby
+						["coord"] = { 33.9, 43.5, 1565 },
+						["isWeekly"] = true,
+					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 						["provider"] = { "n", 160262 },	-- Ysera
@@ -1155,18 +1160,24 @@ _.Zones =
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
 								}),
-								q(62450, {	-- A Spirit's Heart
-									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
-									["provider"] = { "n", 174329 },	-- Falir the Shifting
-									["coord"] = { 24.0, 53.3, 1662 },
-									["isDaily"] = true,
-								}),
 								q(62449, {	-- A Spirit's Duty
 									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 									["provider"] = { "n", 174273 },	-- Falir the Shifting
 									["coord"] = { 24.0, 53.3, 1662 },
 									["isWeekly"] = true,
 									["altQuests"] = { 62445 },
+								}),
+								q(62450, {	-- A Spirit's Heart
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isDaily"] = true,
+								}),
+								q(62452, {	-- A Spirit's Might
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isDaily"] = true,
 								}),
 								q(62442, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
