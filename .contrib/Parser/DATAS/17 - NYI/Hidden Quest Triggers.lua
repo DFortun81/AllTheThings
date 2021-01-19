@@ -3589,6 +3589,8 @@ _.HiddenQuestTriggers =
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
 		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
+		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
+		q(62978),	-- Twisting Corridors, Layer 4
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

@@ -46,29 +46,6 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
-				ach(14763, {	-- Crypt Couture
-					crit(1, {	-- Ashen Ink
-						["cost"] = { { "i", 183690, 1 } },	-- Ashen Ink
-					}),
-					crit(2, {	-- Jagged Bonesaw
-						["cost"] = { { "i", 183692, 1 } },	-- Jagged Bonesaw
-					}),
-					crit(3, {	-- Discarded Grimoire
-						["cost"] = { { "i", 183394, 1 } },	-- Discarded Grimoire
-					}),
-					crit(4, {	-- Sorcerer's Blade
-						["cost"] = { { "i", 183397, 1 } },	-- Sorcerer's Blade
-					}),
-					crit(5, {	-- Mucosal Pigment
-						["cost"] = { { "i", 183691, 1 } },	-- Mucosal Pigment
-					}),
-					crit(6, {	-- Amethystine Dye
-						["cost"] = { { "i", 183401, 1 } },	-- Amethystine Dye
-					}),
-					crit(7, {	-- Ritualist's Mantle
-						["cost"] = { { "i", 183399, 1 } },	-- Ritualist's Mantle
-					}),
-				}),
 				ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {

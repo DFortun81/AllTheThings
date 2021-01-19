@@ -489,51 +489,6 @@ _.ExpansionFeatures =
 					["title"] = "Soulforges, Layer 8",
 				}),
 				
-				-- Twisting Corridors
-				-- don't think these are weekly... the questID for layer 8 was also complete on my alt once i had completed layer 8 on main
-				--[[
-				q(, {	-- Twisting Corridors, Layer 1
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 1",
-				}),
-				--]]
-				q(62977, {	-- Twisting Corridors, Layer 2
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 2",
-				}),
-				--[[
-				q(, {	-- Twisting Corridors, Layer 3
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 3",
-				}),
-				--]]
-				q(62978, {	-- Twisting Corridors, Layer 4
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 4",
-				}),
-				--[[
-				q(, {	-- Twisting Corridors, Layer 5
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 5",
-				}),
-				q(62979, {	-- Twisting Corridors, Layer 6
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 6",
-				}),
-				q(, {	-- Twisting Corridors, Layer 7
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 7",
-				}),
-				q(62980, {	-- Twisting Corridors, Layer 8
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 8",
-				}),
-				q(, {	-- Twisting Corridors, Layer 9
-					["isWeekly"] = true,
-					["title"] = "Twisting Corridors, Layer 9",
-				}),
-				--]]
-				
 				-- Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1
 					["isWeekly"] = true,

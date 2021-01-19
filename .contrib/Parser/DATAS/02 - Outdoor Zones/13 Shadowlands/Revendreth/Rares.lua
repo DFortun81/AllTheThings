@@ -29,14 +29,17 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180586),	-- Lightbinders (PET!)
+						i(179925),	-- Light-Infused Breastplate
+						i(179653),	-- Light-Infused Hauberk
+						i(179924),	-- Light-Infused Jacket
 						i(179926),	-- Light-Infused Tunic
 						i(180688),	-- Infused Remnant of Light
 					},
 				}),
 				n(166576, {	-- Azgar
-					["coord"] = { 36.0, 68.6, 1525 },
 					["questID"] = 59893,	-- TODO: also triggered 62464
 					["isDaily"] = true,
+					["coord"] = { 36.0, 68.6, 1525 },
 					["g"] = {
 						crit(16, {	-- Azgar
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -71,7 +74,7 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-				--	TODO: unsure what trigger's this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him
+				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time 
 					["questID"] = 58441,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 51.0, 1525 },
@@ -91,15 +94,16 @@ _.Zones =
 						crit(15, {	-- Famu the Infinite
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180582),	-- Endmire Flyer Tether
+						i(180582),	-- Endmire Flyer Tether (MOUNT!)
 						i(183739),	-- Endmire Wristwarmers
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
-					--["coord"] = { 31.0, 23.2, 1525 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+				--	["coord"] = { 31.0, 23.2, 1525 },
 					["g"] = {
+						i(180489),	-- Forgemaster's Many-Fold Rapier
 						i(180939),	-- Mantle of the Forgemaster's Dark Blades
 					},
 				}),
@@ -218,9 +222,10 @@ _.Zones =
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
-					["coord"] = { 75.8, 61.4, 1525 },
+					["description"] = "Collect 4 |cFF075ab2Mortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
 					["questID"] = 58633,
 					["isDaily"] = true,
+					["coord"] = { 75.8, 61.4, 1525 },
 					["g"] = {
 						crit(9, {	-- Lord Mortegore
 							["achievementID"] = 14310,	-- Adventurer of Revendreth

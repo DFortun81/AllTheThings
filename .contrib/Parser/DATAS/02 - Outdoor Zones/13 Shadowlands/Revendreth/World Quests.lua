@@ -136,6 +136,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(62204, {	-- Major Mirror Disruptions
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61538, {	-- Mining: Menacing Sinvyr Cluser
 					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,
