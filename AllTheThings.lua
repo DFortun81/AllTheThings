@@ -10879,9 +10879,14 @@ local function RowOnClick(self, button)
 
 				-- If this reference is anything else, expand the groups.
 				if reference.g then
+					-- mark the window if it is being fully-collapsed
+					local window = self:GetParent():GetParent();
+					if self.index < 1 then
+						window.fullCollapsed = HasExpandedSubgroup(reference);
+					end
 					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
-					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not HasExpandedSubgroup(reference)), true);
-					self:GetParent():GetParent():Update();
+					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
+					window:Update();
 					return true;
 				end
 			end
@@ -13100,12 +13105,15 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- sort by name if not in an instance
 				if not self.data.instanceID then
 					self.data.visible = true;
-					-- print("sortname");
+					-- print("sort",self.mapID);
 					SortGroup(self.data, "name", nil, false);
 				end
 				-- check to expand groups after they have been built and updated
-				-- print("expand current zone");
-				ExpandGroupsRecursively(self.data, true);
+				-- dont re-expand if the user has previously full-collapsed the minilist
+				if not self.fullCollapsed then
+					-- print("expand current zone");
+					ExpandGroupsRecursively(self.data, true);
+				end
 
 				-- if enabled, minimize rows based on difficulty
 				local difficultyID = select(3, GetInstanceInfo());
