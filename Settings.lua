@@ -236,7 +236,7 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = "Mode";
+	local mode = "Mode" .. " v" .. app.Version;
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
 			mode = "Completionist " .. mode;
