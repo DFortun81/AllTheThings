@@ -272,6 +272,7 @@ _.Zones =
 						["description"] = "Becomes available at Renown 22",
 					}),
 					q(63346, {	-- Night Fae Veteran
+						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },
 						["description"] = "Becomes available at Renown 7",
@@ -399,7 +400,7 @@ _.Zones =
 						["coord"] = { 34.1, 43.6, 1701 },
 					}),
 					q(62898, {	-- The First New Growth
-						["sourceQuests"] = { 62897 },	-- Recovered Souls
+						["sourceQuests"] = { 62897 },	-- Recovered Souls (technically can be acquired after 62837 Hopeful News, but requires Souls reward from 62897 anyway...)
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.7, 55.7, 1701 },
 					}),

@@ -1698,6 +1698,8 @@ _.Zones =
 						i(180594),	-- Calloused Bone
 						i(180477),	-- Elysian Feathers
 						i(180595),	-- Nightforged Steel
+						i(180579),	-- Herald's Footpads
+						i(180479),	-- Charm of Fortitude
 					}),
 					n(-948, {	-- Transport Network
 						n(-3348, {	-- Tier 1: Step of Faith
