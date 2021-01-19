@@ -4929,8 +4929,8 @@ local function SortGroup(group, sortType, row, recur)
 		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
-				txtA = a and tostring(a.sorttext or a.text) or "";
-				txtB = b and tostring(b.sorttext or b.text) or "";
+				txtA = a and tostring(a.name or a.text) or "";
+				txtB = b and tostring(b.name or b.text) or "";
 				if txtA then
 					if txtB then return txtA < txtB; end
 					return true;
@@ -5874,12 +5874,10 @@ app.BaseCategory = {
 	__index = function(t, key)
 		if key == "key" then
 			return "categoryID";
+		elseif key == "name" then
+			return app.GetDataSubMember("Categories", t.categoryID) or "Open your Professions to Cache";
 		elseif key == "text" then
-			local info = app.GetDataSubMember("Categories", t.categoryID);
-			if info then
-				return app.TryColorizeName(t, info);
-			end
-			return "Open your Professions to Cache";
+			return app.TryColorizeName(t, t.name);
 		elseif key == "icon" then
 			return "Interface/ICONS/INV_Garrison_Blueprints1";
 		else
@@ -6107,7 +6105,7 @@ app.BaseEncounter = {
 			return "encounterID";
 		elseif key == "text" then
 			return app.TryColorizeName(t, t.name);
-		elseif key == "name" or key == "sorttext" then
+		elseif key == "name" then
 			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
 		elseif key == "description" then
 			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
@@ -6220,7 +6218,7 @@ app.BaseFaction = {
 			-- if t.achievementID then
 			-- 	return select(4, GetAchievementInfo(t.achievementID));
 			-- end
-		elseif key == "name" or key == "sorttext" then
+		elseif key == "name" then
 			return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID);
 		elseif key == "text" then
 			return app.TryColorizeName(t, t.name);
@@ -6429,8 +6427,10 @@ end)();
 						end
 					end
 				end
+			elseif key == "name" then
+				return t.info.name or L["VISIT_FLIGHT_MASTER"];		-- L["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache."
 			elseif key == "text" then
-				return app.TryColorizeName(t, t.info.name or L["VISIT_FLIGHT_MASTER"]);		-- L["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache."
+				return app.TryColorizeName(t, t.name);
 			elseif key == "u" then
 				return t.info.u;
 			elseif key == "coord" then
@@ -7474,8 +7474,10 @@ app.BaseMap = {
 			end
 		elseif key == "key" then
 			return "mapID";
+		elseif key == "name" then
+			return app.GetMapName(t.mapID);
 		elseif key == "text" then
-			return app.TryColorizeName(t, app.GetMapName(t.mapID));
+			return app.TryColorizeName(t, t.name);
 		elseif key == "back" then
 			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 				return 1;
@@ -7689,17 +7691,13 @@ local npcFields = {
 	end,
 	["name"] = function(t)
 		_cache = rawget(t, "npcID");
-		return app.TryColorizeName(t, NPCNameFromID[_cache]);
+		return NPCNameFromID[_cache];
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
 	end,
 	["text"] = function(t)
-		_cache = t.name;
-		if rawget(t, "isRaid") and _cache then
-			return "|cffff8000" .. _cache .. "|r";
-		end
-		return _cache;
+		return app.TryColorizeName(t, t.name);
 	end,
 	["title"] = function(t)
 		_cache = rawget(t, "npcID");
@@ -7731,11 +7729,11 @@ app.BaseObject = {
 	__index = function(t, key)
 		if key == "key" then
 			return "objectID";
+		elseif key == "name" then
+			rawset(t, "name", L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID));
+			return rawget(t, "name");
 		elseif key == "text" then
-			local name = L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
-			name = app.TryColorizeName(t, name);
-			rawset(t, "text", name);
-			return name;
+			return app.TryColorizeName(t, t.name);
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
@@ -7902,17 +7900,15 @@ app.BaseQuest = {
 		if key == "key" then
 			return "questID";
 		elseif key == "text" then
+			-- Quests may have hard-coded 'title' set in Source for when the game does not return the information for the Quest
 			if rawget(t, "title") then
-				rawset(t, "text", rawget(t, "title"));
-				t.title = false;
-				return t.text;
-			end
-			local questName = t.questName;
-			if t.retries and t.retries > 120 then
+				rawset(t, "name", rawget(t, "title"));
+				t.title = nil;
+			elseif t.retries and t.retries > 120 then
 				return NPCNameFromID[t.npcID];
 			end
-			return app.TryColorizeName(t, questName);
-		elseif key == "questName" then
+			return app.TryColorizeName(t, t.name);
+		elseif key == "questName" or key == "name" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			return QuestTitleFromID[questID];
 		elseif key == "link" then
