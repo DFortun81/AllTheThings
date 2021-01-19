@@ -4884,6 +4884,7 @@ local function RefreshMountCollection(newMountID)
 		if newMountID then
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
+				print("collected spellID",spellID);
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
 			end
@@ -4892,6 +4893,7 @@ local function RefreshMountCollection(newMountID)
 			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 				if spellID and isCollected then
+					print("collected spellID",spellID);
 					collectedSpells[spellID] = 1;
 					collectedSpellsPerCharacter[spellID] = 1;
 				end
@@ -4916,8 +4918,8 @@ local function RefreshMountCollection(newMountID)
 			app:PlayRemoveSound();
 		-- increase in progress or new mount ID specifically added
 		elseif progress > previousProgress or newMountID then
-			print("Play Fanfare",newMountID)
-			app:PlayFanfare();
+			print("Play Rare Find",newMountID)
+			app:PlayRareFindSound();
 		end
 		-- already done in RefreshData
 		-- wipe(searchCache);
@@ -8322,8 +8324,9 @@ local meta = {
 local collectedSpecies = setmetatable({}, meta);
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	--print("NEW_PET_ADDED", petID, speciesID);
+	print("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
+		print("not already learned pet")
 		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
@@ -8334,7 +8337,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
 	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
-	-- print("PET_JOURNAL_PET_DELETED", petID);
+	-- print("PET_JOURNAL_PET_DELETED", petID,C_PetJournal.GetPetInfoByPetID(petID));
 
 	-- Check against all of the collected species for a species that is no longer 1/X
 	local atLeastOne = false;
@@ -8347,7 +8350,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	if atLeastOne then
 		app:PlayRemoveSound();
 		app:RefreshData(false, true);
-		wipe(searchCache);
+		-- wipe(searchCache); -- handled by refresth data
 	end
 end
 app.BaseSpecies = {
@@ -16386,8 +16389,8 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("COMPANION_LEARNED");
-app:RegisterEvent("COMPANION_UNLEARNED");
+app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
+app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("NEW_MOUNT_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
@@ -17026,11 +17029,11 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.COMPANION_LEARNED = function(...)
-	print("COMPANION_LEARNED", ...);
+	-- print("COMPANION_LEARNED", ...);
 	RefreshMountCollection();
 end
 app.events.COMPANION_UNLEARNED = function(...)
-	print("COMPANION_UNLEARNED", ...);
+	-- print("COMPANION_UNLEARNED", ...);
 	RefreshMountCollection();
 end
 app.events.NEW_MOUNT_ADDED = function(...)
