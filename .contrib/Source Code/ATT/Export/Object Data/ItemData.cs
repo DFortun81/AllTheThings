@@ -22,13 +22,19 @@ namespace ATT
             /// <param name="fields">The fields.</param>
             public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
             {
-                if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
+                if (data.TryGetValue("f", out int f))
                 {
-                    WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
-                    ExportField(builder, data, fields, "questID");
-                    fields.Remove("f");
+                    if (f == 104) fields.Remove("f");  // Quest Items
+                    else if (f == 60)   // Selfies
+                    {
+                        WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
+                        ExportField(builder, data, fields, "questID");
+                        fields.Remove("f");
+                        return;
+                    }
                 }
-                else base.Build(builder, data, fields);
+
+                base.Build(builder, data, fields);
             }
         }
     }
