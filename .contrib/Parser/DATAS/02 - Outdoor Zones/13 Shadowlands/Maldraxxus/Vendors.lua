@@ -32,7 +32,7 @@ _.Zones =
 							["cost"] = 300000000, -- 30,000g
 						}),
 						i(183112, {	-- Animated Radius
-							["description"] = "Combine with the other bones to craft the pet:\n|cFF075ab2Animated Ulna|r: A rare reward from pet battle WQs in Maldraxxus.\n|cFF075ab2Flexing Phalanges|r: Unknown source.",
+							["description"] = "Combine with the other bones to craft the pet:\n|cFF075ab2Animated Ulna|r: A rare reward from pet battle WQs in Maldraxxus.\n|cFF075ab2Flexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 							["g"] = {
 								i(183114),	-- Carpal (PET!)

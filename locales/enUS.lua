@@ -4794,6 +4794,7 @@ app.L = {
 		[354193] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
 		[355035] = "Treasure: House of the Chosen",	-- Chosen Runecoffer
+		[358315] = "Skeletal Hand Fragments",
 		[358319] = "Sorceror's Note",
 		[1278968750] = "Hanging Chain",
 	--	[1278968751] = "",	-- ***REUSE ME***
