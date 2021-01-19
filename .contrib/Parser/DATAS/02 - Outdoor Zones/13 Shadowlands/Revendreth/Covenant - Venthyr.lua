@@ -7,90 +7,30 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-949, {	-- Covenant: Venthyr
-				["customCollect"] = "SL_COV_VEN",
+				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 				-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 				-- But it is complete for my main, as well as 62921... /shrug
 				--	1699 = Sinfall Reaches
 				--	1700 = Sinfall Depths
 				["g"] = {
-					n(-901, {	-- Covenant Callings
+					n(-901, sharedData({	-- Covenant Callings
+							["sourceQuests"] = {
+								59324,	-- Our True Purpose
+								62921,	-- Our True Purpose
+							},
+							["repeatable"] = true,
+						}, {
 						q(62691, {	-- A Calling in Revendreth
 							["sourceQuests"] = { 62695 },	-- A Call to Service
-							["repeatable"] = true,	-- ??
+							["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 							["provider"] = { "n", 165302 },	-- Rendle
 							["coord"] = { 61.6, 75.6, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181556, {	-- Tribute of the Court
-									--[[ Might be Necro's only
-									i(184159, {	-- Oozing Necroray Egg (Timer)
-										i(184158, {	-- Oozing Necroray Egg (No Timer)
-											i(184160),	-- Bulbous Necroray
-											i(184161),	-- Infested Necroray
-											i(184162),	-- Pestilent Necroray
-										}),
-									}),
-									--]]
-								}),
-							},
-						}),
-						q(60389, {	-- Aiding Ardenweald
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
-							["provider"] = { "n", 165302 },	-- Rendle
-							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
-							["g"] = {
-								i(181475),	-- 	Bounty of the Grove Wardens
-							},
-						}),
-						q(60394, {	-- Aiding Bastion
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
-							["provider"] = { "n", 165302 },	-- Rendle
-							["coord"] = { 62.0, 76.2, 1700 },	-- Sinfall Depths
-							["g"] = {
-								i(181372),	-- 	Tribute of the Ascended
-							},
-						}),
-						q(60397, {	-- Aiding Maldraxxus
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
-							["provider"] = { "n", 165302 },	-- Rendle
-							["coord"] = { 62.0, 76.1, 1700 },	-- Sinfall Depths
-							["g"] = {
-								i(181732),	-- 	Tribute of the Ambitious
-							},
-						}),
-						q(60399, {	-- Aiding Revendreth
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
-							["provider"] = { "n", 165302 },	-- Rendle
-							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
-							["g"] = {
-								i(181556),	-- 	Tribute of the Court
-							},
-						}),
-						q(60462, {	-- Anima Appeal
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 164739 },	-- Devahia
-							--["coord"] = { 48.9, 39.3, 1525 },
-							["repeatable"] = true,
-							["g"] = {
-								i(181556),	-- 	Tribute of the Court
-							},
-						}),
-						q(60460, {	-- Anima Salvage
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 164738 },	-- Tenaval
-							["isWeekly"] = true,
-							["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
-							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181556), -- Tribute of the Court
 							},
 						}),
 						q(60422, {	-- A Call to Ardenweald
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.2, 37.7, 1699 },
 							["g"] = {
@@ -98,8 +38,6 @@ _.Zones =
 							},
 						}),
 						q(60427, {	-- A Call to Bastion
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
 							["g"] = {
@@ -107,8 +45,6 @@ _.Zones =
 							},
 						}),
 						q(60431, {	-- A Call to Maldraxxus
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 							["g"] = {
@@ -116,35 +52,69 @@ _.Zones =
 							},
 						}),
 						q(60378, {	-- A Source of Sorrowvine
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
-							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
 						q(60370, {	-- A Wealth of Wealdwood
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
-							["repeatable"] = true,
+							["g"] = {
+								i(181556),	-- 	Tribute of the Court
+							},
+						}),
+						q(60389, {	-- Aiding Ardenweald
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
+							["g"] = {
+								i(181475),	-- 	Bounty of the Grove Wardens
+							},
+						}),
+						q(60394, {	-- Aiding Bastion
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.0, 76.2, 1700 },	-- Sinfall Depths
+							["g"] = {
+								i(181372),	-- 	Tribute of the Ascended
+							},
+						}),
+						q(60397, {	-- Aiding Maldraxxus
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.0, 76.1, 1700 },	-- Sinfall Depths
+							["g"] = {
+								i(181732),	-- 	Tribute of the Ambitious
+							},
+						}),
+						q(60399, {	-- Aiding Revendreth
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
+							["g"] = {
+								i(181556),	-- 	Tribute of the Court
+							},
+						}),
+						q(60462, {	-- Anima Appeal
+							["provider"] = { "n", 164739 },	-- Devahia
+							--["coord"] = { 48.9, 39.3, 1525 },
+							["g"] = {
+								i(181556),	-- 	Tribute of the Court
+							},
+						}),
+						q(60460, {	-- Anima Salvage
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
 						q(60375, {	-- Bonemetal Bonanza
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
-							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
 						q(60441, {	-- Challenges in Ardenweald
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -152,8 +122,6 @@ _.Zones =
 							},
 						}),
 						q(60444, {	-- Challenges in Bastion
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.9, 78.0, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -161,8 +129,6 @@ _.Zones =
 							},
 						}),
 						q(60446, {	-- Challenges in Maldraxxus
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -170,8 +136,6 @@ _.Zones =
 							},
 						}),
 						q(60448, {	-- Challenges in Revendreth
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -179,17 +143,13 @@ _.Zones =
 							},
 						}),
 						q(60365, {	-- Gildenite Grab
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158713 },	-- The Curator
 							--["coord"] = { , 1533 },
-							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
 						q(60417, {	-- Rare Resources
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 158713 },	-- The Curator
 							["coord"] = { 61.3, 66.7, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -197,17 +157,13 @@ _.Zones =
 							},
 						}),
 						q(60456, {	-- Storm the Maw
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
-							["isWeekly"] = true,
 							["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181557),	-- Favor of the Court
 							},
 						}),
 						q(60410, {	-- Training Our Forces
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
@@ -215,27 +171,13 @@ _.Zones =
 							},
 						}),
 						q(60401, {	-- Training in Ardenweald
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.8, 58.7, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181475),	-- Bounty of the Grove Wardens
 							},
 						}),
-						q(60403, {	-- Training in Ardenweald
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
-							["repeatable"] = true,
-							["g"] = {
-								i(181556),	-- 	Tribute of the Court
-								i(181372),	-- Tribute of the Ascended [Live Reward]
-							},
-						}),
 						q(60406, {	-- Training in Bastion
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
@@ -243,8 +185,6 @@ _.Zones =
 							},
 						}),
 						q(60409, {	-- Training in Maldraxxus
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
@@ -252,15 +192,13 @@ _.Zones =
 							},
 						}),
 						q(60432, {	-- Troubles at Home
-							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- Tribute of the Court
 							},
 						}),
-					}),
+					})),
 					n(QUESTS, {
 						q(57889, {	-- "Accidental" Arson
 							["sourceQuests"] = { 57887 },	-- Killing the Messenger
@@ -717,29 +655,6 @@ _.Zones =
 							["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 							["maps"] = { 1670 },	-- Oribos
 						}),
-						q(61334, {	-- Return Lost Souls (5)
-							["provider"] = { "n", 164738 },	-- Tenaval
-							["isWeekly"] = true,
-							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
-						}),
-						q(62867, {	-- Return Lost Souls (10)
-							["description"] = "Requires Renown 15.",
-							["provider"] = { "n", 164738 },	-- Tenaval
-							["isWeekly"] = true,
-							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
-						}),
-						q(62868, {	-- Return Lost Souls (15)
-							["description"] = "Requires Renown 24.",
-							["provider"] = { "n", 164738 },	-- Tenaval
-							["isWeekly"] = true,
-							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
-						}),
-						-- q(, {	-- Return Lost Souls (20)
-						-- 	["description"] = "Requires Renown 32.",
-						-- 	["provider"] = { "n", 164738 },	-- Tenaval
-						-- 	["isWeekly"] = true,
-						-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
-						-- }),
 						q(58444, {	-- Return to Sinfall
 							["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
@@ -996,6 +911,33 @@ _.Zones =
 								i(180941),	-- Kael's Dark Sinstone Chain
 							},
 						}),
+						q(61334, {	-- Return Lost Souls (5)
+							-- ["sourceQuests"] = {  },	-- TODO
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["isWeekly"] = true,
+							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						}),
+						q(62867, {	-- Return Lost Souls (10)
+							-- ["sourceQuests"] = {  },	-- TODO
+							["description"] = "Requires Renown 15.",
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["isWeekly"] = true,
+							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						}),
+						q(62868, {	-- Return Lost Souls (15)
+							-- ["sourceQuests"] = {  },	-- TODO
+							["description"] = "Requires Renown 24.",
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["isWeekly"] = true,
+							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						}),
+						-- q(, {	-- Return Lost Souls (20)
+							-- ["sourceQuests"] = {  },	-- TODO
+						-- 	["description"] = "Requires Renown 32.",
+						-- 	["provider"] = { "n", 164738 },	-- Tenaval
+						-- 	["isWeekly"] = true,
+						-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						-- }),
 						
 						-- q(, {	-- 
 						-- 	["sourceQuests"] = {  },	-- 
