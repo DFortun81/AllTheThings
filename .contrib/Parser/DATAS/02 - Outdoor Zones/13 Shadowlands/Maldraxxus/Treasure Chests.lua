@@ -86,6 +86,15 @@ _.Zones =
 						{ 69.6, 33.5, 1536 },
 					},
 				}),
+				o(358315, {	-- Skeletal Hand Fragments
+					["description"] = "You must possess the Animated Ulna and Animated Radius to interact with this object.",
+					["coord"] = { 47.4, 62.1, 1536 },
+					["g"] = {
+						i(183113, {	-- Flexing Phalanges
+							i(183114),	-- Carpal (PET!)
+						}),
+					},
+				}),
 				o(354856, {	-- Slime-Coated Crate
 					["questID"] = 61093,
 					["coords"] = {

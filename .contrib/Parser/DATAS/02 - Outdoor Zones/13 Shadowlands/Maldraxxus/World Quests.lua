@@ -8,8 +8,7 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-34,  {	-- World Quests
 				i(183111, {	-- Animated Ulna
-				--	TODO: figure out where tf the phalanges come from
-					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF075ab2Animated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF075ab2Flexing Phalanges|r: Unknown source.",
+					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF075ab2Animated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF075ab2Flexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
 					["g"] = {
 						i(183114),	-- Carpal (PET!)
 					},
