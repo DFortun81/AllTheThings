@@ -284,7 +284,6 @@ namespace ATT
 
                         // Items may have changed level or object types between classic and now.
                         if (o.Remove("lvl")) keys.Remove("lvl");
-                        if (o.Remove("reqlvl")) keys.Remove("reqlvl");
                         if (o.Remove("f")) keys.Remove("f");
                         index = keys.IndexOf(key);
                         continue;

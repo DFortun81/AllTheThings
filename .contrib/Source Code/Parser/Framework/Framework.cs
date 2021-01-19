@@ -602,13 +602,6 @@ namespace ATT
         /// <returns></returns>
         private static int LevelConsolidation(Dictionary<string, object> data, int minLevel)
         {
-            // going to use 'lvl' in the end to handle level information for an object, so if reqLvl is present still, switch back to 'lvl'
-            if (data.TryGetValue("reqlvl", out List<object> reqlvls))
-            {
-                data["lvl"] = reqlvls;
-                data.Remove("reqlvl");
-            }
-
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
             {
@@ -1449,16 +1442,13 @@ namespace ATT
                 case "Level":
                 case "requiredLevel":
                 case "levelRequirement":
-                    {
-                        return "lvl";
-                    }
-
-                // new tag to handle level range requirement post patch 9.0
                 case "reqlvl":
                 case "reqlvls":
                 case "reqLvl":
                 case "reqLvls":
-                    return "reqlvl";
+                    {
+                        return "lvl";
+                    }
 
                 case "rank":
                 case "azeriteRank":

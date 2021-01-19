@@ -1181,7 +1181,7 @@ namespace ATT
 
                 // special case for level requirements
                 // item with quest attached, item has diff reqlvl than the quest reqlvl, you end up with the item having a lvl range instead of the highest value
-                if (field == "reqlvl" || field == "lvl")
+                if (field == "lvl")
                 {
                     int? oldmin = null, oldmax = null, newmin = null, newmax = null;
                     if (oldList.Count > 0)
@@ -1382,7 +1382,6 @@ namespace ATT
                     case "b":
                     case "rank":
                     case "ilvl":
-                    //case "lvl":
                     case "q":
                     case "r":
                         {
@@ -1437,7 +1436,6 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
-                    case "reqlvl":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -1452,6 +1450,7 @@ namespace ATT
                         {
                             MergeIntegerArrayData(item, field, dict.Values.ToList());
                         }
+                        else item[field] = Convert.ToInt32(value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)

@@ -262,7 +262,7 @@ namespace ATT
                     case "maxReputation":
                     case "provider":
                     case "providers":
-                        //case "lvl":
+                    //case "lvl":
                         {
                             return;
                         }
@@ -336,7 +336,6 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
-                    case "reqlvl":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -350,6 +349,10 @@ namespace ATT
                         else if (value is Dictionary<object, object> dict)
                         {
                             Objects.MergeIntegerArrayData(item, field, dict.Values.ToList());
+                        }
+                        else
+                        {
+                            item[field] = Convert.ToInt32(value);
                         }
                         break;
 
@@ -644,7 +647,6 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
-                    case "reqlvl":
                         {
                             data[field] = value;
                             break;
