@@ -300,15 +300,23 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
 					}),
 					q(62858, {	-- Return Lost Souls (10 soul version)
+						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
 					q(62859, {	-- Return Lost Souls (15 soul version)
+						["description"] = "Requires Renown 24.",
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
+					-- q(, {	-- Return Lost Souls (20 soul version)
+					-- 	["description"] = "Requires Renown 32.",
+					-- 	["provider"] = { "n", 158553 },	-- Flutterby
+					-- 	["coord"] = { 33.9, 43.5, 1565 },
+					-- 	["isWeekly"] = true,
+					-- }),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 						["provider"] = { "n", 160262 },	-- Ysera

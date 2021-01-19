@@ -370,10 +370,23 @@ _.Zones =
 								["isWeekly"] = true,
 							}),
 							q(62864, {	-- Return Lost Souls (10 soul version)
+								["description"] = "Requires Renown 15.",
 								["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 								["coord"] = { 46.5, 42.2, 1698 },
 								["isWeekly"] = true,
 							}),
+							-- q(, {	-- Return Lost Souls (15 soul version)
+							-- 	["description"] = "Requires Renown 24.",
+							-- 	["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+							-- 	["coord"] = { 46.5, 42.2, 1698 },
+							-- 	["isWeekly"] = true,
+							-- }),
+							-- q(, {	-- Return Lost Souls (20 soul version)
+							-- 	["description"] = "Requires Renown 32.",
+							-- 	["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+							-- 	["coord"] = { 46.5, 42.2, 1698 },
+							-- 	["isWeekly"] = true,
+							-- }),
 							q(60455, {	-- Storm the Maw
 								["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 								["coord"] = { 43.2, 47.8, 1698 },

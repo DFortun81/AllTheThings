@@ -864,6 +864,18 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
 					}),
+					q(62862, {	-- Return Lost Souls (15 Souls)
+						["description"] = "Requires Renown 24.",
+						["provider"] = { "n", 160212 },	-- Soulguide Daelia
+						["isWeekly"] = true,
+						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+					}),
+					-- q(, {	-- Return Lost Souls (20 Souls)
+					-- 	["description"] = "Requires Renown 32.",
+					-- 	["provider"] = { "n", 160212 },	-- Soulguide Daelia
+					-- 	["isWeekly"] = true,
+					-- 	["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+					-- }),
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon

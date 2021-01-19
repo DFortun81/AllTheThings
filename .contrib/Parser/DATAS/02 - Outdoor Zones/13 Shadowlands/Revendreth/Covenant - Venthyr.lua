@@ -723,10 +723,23 @@ _.Zones =
 							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						}),
 						q(62867, {	-- Return Lost Souls (10)
+							["description"] = "Requires Renown 15.",
 							["provider"] = { "n", 164738 },	-- Tenaval
 							["isWeekly"] = true,
 							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						}),
+						q(62868, {	-- Return Lost Souls (15)
+							["description"] = "Requires Renown 24.",
+							["provider"] = { "n", 164738 },	-- Tenaval
+							["isWeekly"] = true,
+							["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						}),
+						-- q(, {	-- Return Lost Souls (20)
+						-- 	["description"] = "Requires Renown 32.",
+						-- 	["provider"] = { "n", 164738 },	-- Tenaval
+						-- 	["isWeekly"] = true,
+						-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						-- }),
 						q(58444, {	-- Return to Sinfall
 							["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
 							["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
