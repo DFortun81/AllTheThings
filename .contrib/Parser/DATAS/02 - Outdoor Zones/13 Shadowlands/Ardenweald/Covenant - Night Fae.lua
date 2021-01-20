@@ -1098,16 +1098,17 @@ _.Zones =
 											i(180414),	-- Wakener's Runestag
 										},
 									}),
+									i(181315),	-- Bloodfeaster Spiderling
 									i(180639),	-- Dusty Sporeflutterer
-									i(181310),	-- Spirit Tender's Pack
-									i(181302),	-- Spirit Tender's Branches
-									i(181306),	-- Spirit Tender's Bulb
 									i(181314, {	-- Gulper Soul
 										["questID"] = 62421,	-- Gulper Soul
 									}),
 									i(181313, {	-- Snapper Soul
 										["questID"] = 62420,	-- Snapper Soul
 									}),
+									i(181302),	-- Spirit Tender's Branches
+									i(181306),	-- Spirit Tender's Bulb
+									i(181310),	-- Spirit Tender's Pack
 								}),
 								n(QUESTS, {
 									q(62447, {	-- A Rare and Unusual Spirit (1)
