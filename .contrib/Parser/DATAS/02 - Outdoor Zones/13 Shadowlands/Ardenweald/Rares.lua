@@ -74,9 +74,7 @@ _.Zones =
 						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(183196, {	-- Lavender Nibbler (PET!)
-							["description"] = "If you loot Gormbore directly, it will only drop gray trash. If you accept a battleground queue or use some other method to get loot via Postmaster instead, then it will mail you the correct loot (possibly Lavender Nibbler).",
-						}),
+						i(183196), 	-- Lavender Nibbler (PET!)
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
