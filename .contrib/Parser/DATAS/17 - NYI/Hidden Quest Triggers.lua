@@ -3121,9 +3121,10 @@ _.HiddenQuestTriggers =
 		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
 		q(62941),	-- When opening the box containing Blacksmithing WQ supplies for 61435
 		-- Ardenweald Rares
-		q(62271),	-- Deifir the Untamed secondary quest
+		q(62267),	-- Gormbore secondary quest
 		q(62269),	-- Macabre secondary quest
 		q(62270),	-- Old Ardeite secondary quest
+		q(62271),	-- Deifir the Untamed secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Treasures
 		q(60820),	-- \
