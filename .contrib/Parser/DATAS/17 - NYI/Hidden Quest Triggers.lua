@@ -2967,6 +2967,7 @@ _.HiddenQuestTriggers =
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		
 		-- Illusions
+		q(63004),	-- triggered when learning Illusion: Devoted Spirit
 		q(62964),	-- triggered when learning Illusion: Undying Spirit
 		q(61727), 	-- triggered when learning Illusion: Sinsedge
 		
