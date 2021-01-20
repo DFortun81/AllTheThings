@@ -1196,6 +1196,7 @@ _.Zones =
 						}),
 						q(59020, {	-- The Third Fall of Kel'Thuzad
 							["sourceQuests"] = { 58833 },	-- Calling in All Favors
+							["maps"] = { 1689 },	-- Exoramas (Necrolord Renown 24 Scenario)
 							["provider"] = { "n", 174179 },	-- Baroness Draka
 							["coord"] = { 62.2, 41.0, 1536 },
 							["g"] = {

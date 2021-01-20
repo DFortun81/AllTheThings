@@ -3290,6 +3290,7 @@ _.HiddenQuestTriggers =
 		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
 		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
 		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
+		q(62570),	-- triggered after crafting Collector Kash's Pack
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"

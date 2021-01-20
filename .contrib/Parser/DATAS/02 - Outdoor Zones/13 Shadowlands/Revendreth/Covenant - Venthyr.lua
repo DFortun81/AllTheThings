@@ -1589,6 +1589,10 @@ _.Zones =
 														["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
 														["repeatable"] = true,
 													}),
+													q(62181, {	-- Bubbling Red Muck Dye
+														["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
+														["repeatable"] = true,
+													}),
 												}),
 											}),
 										},
