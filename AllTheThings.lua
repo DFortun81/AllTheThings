@@ -4870,12 +4870,12 @@ local function RefreshCollections()
 end
 local function RefreshMountCollection(newMountID)
 	StartCoroutine("RefreshMountCollection", function()
-		print("Mount Collected",newMountID)
+		-- print("Mount Collected",newMountID)
 		while InCombatLockdown() do coroutine.yield(); end
 
 		-- Cache current counts
 		local previousProgress = app:GetDataCache().progress or 0;
-		print("Previous Progress",previousProgress)
+		-- print("Previous Progress",previousProgress)
 
 		-- Refresh Mounts
 		local collectedSpells = GetDataMember("CollectedSpells", {});
@@ -4884,7 +4884,7 @@ local function RefreshMountCollection(newMountID)
 		if newMountID then
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
-				print("collected spellID",spellID);
+				-- print("collected spellID",spellID);
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
 			end
@@ -4893,7 +4893,7 @@ local function RefreshMountCollection(newMountID)
 			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 				if spellID and isCollected then
-					print("collected spellID",spellID);
+					-- print("collected spellID",spellID);
 					collectedSpells[spellID] = 1;
 					collectedSpellsPerCharacter[spellID] = 1;
 				end
@@ -4902,7 +4902,7 @@ local function RefreshMountCollection(newMountID)
 
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
-		print("Refresh to check progress after collection...")
+		-- print("Refresh to check progress after collection...")
 		app:RefreshData(false, true);		
 
 		-- Wait 2 frames before refreshing states.
@@ -4911,18 +4911,16 @@ local function RefreshMountCollection(newMountID)
 
 		-- Compare progress
 		local progress = app:GetDataCache().progress or 0;
-		print("New Progress",progress)
+		-- print("New Progress",progress)
 		-- decrease in progress and not a specific mount ID added
 		if progress < previousProgress and not newMountID then
-			print("Play Remove")
+			-- print("Play Remove")
 			app:PlayRemoveSound();
 		-- increase in progress or new mount ID specifically added
 		elseif progress > previousProgress or newMountID then
-			print("Play Rare Find",newMountID)
+			-- print("Play Rare Find",newMountID)
 			app:PlayRareFindSound();
 		end
-		-- already done in RefreshData
-		-- wipe(searchCache);
 	end);
 end
 local function GetGroupSortValue(group)
@@ -17037,8 +17035,7 @@ app.events.COMPANION_UNLEARNED = function(...)
 	RefreshMountCollection();
 end
 app.events.NEW_MOUNT_ADDED = function(...)
-	print("NEW_MOUNT_ADDED", ...);
-	-- TODO: if this works, then clean up the logic
+	-- print("NEW_MOUNT_ADDED", ...);
 	RefreshMountCollection(...);
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
