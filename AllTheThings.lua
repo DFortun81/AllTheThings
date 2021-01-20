@@ -8322,9 +8322,9 @@ local meta = {
 local collectedSpecies = setmetatable({}, meta);
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	print("NEW_PET_ADDED", petID, speciesID);
+	-- print("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
-		print("not already learned pet")
+		-- print("not already learned pet")
 		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
