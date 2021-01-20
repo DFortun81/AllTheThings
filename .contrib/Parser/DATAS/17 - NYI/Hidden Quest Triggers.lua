@@ -3285,8 +3285,11 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
-		q(62572),	-- triggered after crafting Faction Flag for Abomination Factory
-		q(61561),	-- triggered after crafting Outlaw Flag for Abomination Factory
+		q(62572),	-- triggered after crafting Faction Flag at Abominable Stitching Table
+		q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
+		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
+		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
+		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"

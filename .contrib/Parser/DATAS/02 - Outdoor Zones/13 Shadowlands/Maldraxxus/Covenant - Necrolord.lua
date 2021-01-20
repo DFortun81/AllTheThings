@@ -1228,13 +1228,13 @@ _.Zones =
 							["coord"] = { 46.5, 42.2, 1698 },
 							["isWeekly"] = true,
 						}),
-						-- q(, {	-- Return Lost Souls (15 soul version)
+						q(62865, {	-- Return Lost Souls (15 soul version)
 							-- ["sourceQuests"] = {  },	-- TODO
-						-- 	["description"] = "Requires Renown 24.",
-						-- 	["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						-- 	["coord"] = { 46.5, 42.2, 1698 },
-						-- 	["isWeekly"] = true,
-						-- }),
+							["description"] = "Requires Renown 24.",
+							["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+							["coord"] = { 46.5, 42.2, 1698 },
+							["isWeekly"] = true,
+						}),
 						-- q(, {	-- Return Lost Souls (20 soul version)
 							-- ["sourceQuests"] = {  },	-- TODO
 						-- 	["description"] = "Requires Renown 32.",
