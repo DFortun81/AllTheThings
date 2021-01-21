@@ -370,6 +370,7 @@ _.Zones =
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
 					["coord"] = { 75.9, 54.3, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["g"] = {
 						i(57570),	-- Gol'Bolar Miner's Belt
 						i(57568),	-- Senator's Dignified Pants
