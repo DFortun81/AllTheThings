@@ -3258,7 +3258,7 @@ end)();
 -- The "About" Tab.				--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("About");
+local tab = settings:CreateTab(L["ABOUT"]);		-- L["ABOUT"] = "About"
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
