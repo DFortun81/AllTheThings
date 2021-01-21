@@ -2173,7 +2173,7 @@ unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
 -- no chance
 local noChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 noChance:SetPoint("TOPLEFT", unobtainable, 10, -50)
-noChance:SetText("No Chance");
+noChance:SetText(L["NO_CHANCE_LABEL"]);		-- L["NO_CHANCE_LABEL"] = "No Chance";
 
 local noChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 noChanceFrame:SetPoint("TOP",noChance,0,-20);
@@ -2254,7 +2254,7 @@ end
 -- high
 local highChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 highChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
-highChance:SetText("High Chance");
+highChance:SetText(L["HIGH_CHENCE_LABEL"]);		-- L["HIGH_CHENCE_LABEL"] = "High Chance";
 
 local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 highChanceFrame:SetPoint("TOP",highChance,0,-20);
