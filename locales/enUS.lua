@@ -487,7 +487,6 @@ app.L = {
 	["LOCKOUT"] = "Lockout";
 	["SHARED"] = "Shared";
 	["SPLIT"] = "Per Difficulty";
-	["REQUIRES"] = "Requires";
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
