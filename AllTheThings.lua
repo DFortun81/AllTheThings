@@ -3437,7 +3437,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				table.sort(knownBy);
-				local desc = "Known by ";
+				local desc = L["KNOWN_BY"];		-- L["KNOWN_BY"] = "Known by "
 				local characters = GetDataMember("Characters");
 				for i,key in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
