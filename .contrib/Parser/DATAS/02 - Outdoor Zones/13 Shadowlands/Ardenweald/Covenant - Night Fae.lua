@@ -1124,6 +1124,14 @@ _.Zones =
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 									}),
+									q(62603, {	-- A Rare and Unusual Spirit (3)
+										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
+										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+										["coord"] = { 42.2, 52.9, 1662 },
+										["g"] = {
+											i(183805),	-- Tranquil Spirit of the Cosmos
+										},
+									}),
 									q(59862, {	-- A Savior for Lost Souls
 										["sourceQuests"] = { 63046 },	-- The End and the Beginning
 										["provider"] = { "n", 166476 },	-- Warden Casad
@@ -1229,14 +1237,6 @@ _.Zones =
 										["provider"] = { "n", 166476 },	-- Warden Casad
 										["coord"] = { 33.4, 62.0, 1662 },
 										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-									}),
-									q(62603, {	-- A Rare and Unusual Spirit
-										["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-										["coord"] = { 42.2, 52.9, 1662 },
-										["maps"] = { 1669 },	-- Mists of Tirna Scithe
-										["g"] = {
-											i(183805),	-- Tranquil Spirit of the Cosmos
-										},
 									}),
 									q(62625, {	-- A Rare and Unusual Spirit
 										["provider"] = { "n", 171107 },	-- Cultivator Blaithin

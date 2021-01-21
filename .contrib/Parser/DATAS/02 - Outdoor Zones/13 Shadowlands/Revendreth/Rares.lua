@@ -99,9 +99,9 @@ _.Zones =
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
-				--	["questID"] = ,
+					["questID"] = 61618,
 					["isDaily"] = true,
-				--	["coord"] = { 31.0, 23.2, 1525 },
+					["coord"] = { 33.0, 15.2, 1525 },
 					["g"] = {
 						i(180489),	-- Forgemaster's Many-Fold Rapier
 						i(180939),	-- Mantle of the Forgemaster's Dark Blades
