@@ -142,6 +142,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184174),	-- Clasp of Death
+						i(181810),	-- Phylactery of the Dead Conniver
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
