@@ -114,6 +114,12 @@ _.Zones =
 						}),
 					},
 				}),
+				n(165419, {	-- Grand Marshal Mudrag
+					["coord"] = { 40.6, 46.8, 1699 },
+					["g"] = {
+						i(183989),	-- Dredger Barrow Racer
+					},
+				}),
 				n(165453, {	-- Lady Ilinca <Court Concierge>
 					["coord"] = { 28.6, 41.0, 1525 },
 					["g"] =  {

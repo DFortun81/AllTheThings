@@ -2391,12 +2391,6 @@ _.Zones =
 								}),
 							},
 						}),
-						n(165419, {	-- Grand Marshal Mudrag
-							["coord"] = { 40.6, 46.8, 1699 },
-							["g"] = {
-								i(183989),	-- Dredger Barrow Racer
-							},
-						}),
 						n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
 							["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
 							["g"] = {
