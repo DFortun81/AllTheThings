@@ -4185,6 +4185,7 @@ local function AddTomTomWaypoint(group, auto, recur)
 			};
 			if group.title then opt.title = opt.title .. "\n" .. group.title; end
 			if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
+			if group.description then opt.from = opt.from .. "\n" .. string.gsub(group.description, "%.% ", ".\n"); end
 			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
 			local displayID = GetDisplayID(group);
 			if displayID then
