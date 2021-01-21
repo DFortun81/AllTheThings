@@ -89,6 +89,7 @@ _.Zones =
 				o(358315, {	-- Skeletal Hand Fragments
 					["description"] = "You must possess the Animated Ulna and Animated Radius to interact with this object.",
 					["coord"] = { 47.4, 62.1, 1536 },
+					["questID"] = 62318,
 					["g"] = {
 						i(183113, {	-- Flexing Phalanges
 							i(183114),	-- Carpal (PET!)
