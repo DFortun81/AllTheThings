@@ -908,6 +908,10 @@ _.Zones =
 					},
 				}),
 				q(59211, {	-- Forgotten Village
+					["description"] = "This Bonus Objective is only available at level 58 or 59.",
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["lvl"] = { 58, 59 },
 				}),
 				q(62780, {	-- Parasites of Reality (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

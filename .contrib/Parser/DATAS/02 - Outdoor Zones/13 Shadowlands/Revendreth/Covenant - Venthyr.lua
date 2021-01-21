@@ -1614,6 +1614,14 @@ _.Zones =
 									}),
 								}),
 								n(-963, {	-- Tier 3: Court Influencer
+									q(61943, {	-- Court Influencer
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165399 },	-- Lord Garridan
+										["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
+										["g"] = {
+											i(181537),	-- Guest List Page
+										},
+									}),
 								}),
 								n(-964, {	-- Tier 4: Discerning Taste
 								}),
