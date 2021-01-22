@@ -967,7 +967,7 @@ local function BuildSourceText(group, l)
 		if l < 1 then
 			return BuildSourceText(group.parent, l + 1);
 		else
-			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
+			return BuildSourceText(group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
 	end
 	return group.text or "*";
@@ -2994,6 +2994,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local unfiltered = {};
 			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 			local abbrevs = L["ABBREVIATIONS"];
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) then
@@ -3037,7 +3038,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
-					tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+					tinsert(info, 1, { left = left, right = right, wrap = wrap });
 				end
 			end
 		end
