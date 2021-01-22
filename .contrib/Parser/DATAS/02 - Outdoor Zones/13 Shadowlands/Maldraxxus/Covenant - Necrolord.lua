@@ -1620,6 +1620,11 @@ _.Zones =
 							n(-917, {	-- Tier 2: Streaming Threads
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
+								q(58454, {	-- Spoiling For A Fight
+									["provider"] = { "n", 159830 },	-- Au'narim
+									["isDaily"] = true,
+									["coord"] = { 53.6, 47.6, 1536 },
+								}),
 							}),
 						}),
 						n(-905, {	-- Command Table

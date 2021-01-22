@@ -3455,6 +3455,7 @@ _.HiddenQuestTriggers =
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
+		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
@@ -3538,6 +3539,7 @@ _.HiddenQuestTriggers =
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
+		q(60302),	-- when channeling anima to Dominance Keep for the first time
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

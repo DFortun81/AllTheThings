@@ -1934,10 +1934,7 @@ _.Zones =
 										i(181089),	-- Fearstalker's Burnished Leggings
 										i(181090),	-- Fearstalker's Burnished Monnion
 										i(181086),	-- Fearstalker's Burnished Sabatons
-										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183707),	-- Mantle of Burnished Blades
-										i(183976),	-- Rogue Researcher's Dagger
-										i(183978),	-- Silver-Etched Hopebreaker Dirk
 										i(181129),	-- Soulbreaker's Burnished Drape
 										i(181123),	-- Soulbreaker's Burnished Handwraps
 										i(181124),	-- Soulbreaker's Burnished Hood
@@ -1947,6 +1944,9 @@ _.Zones =
 										i(181122),	-- Soulbreaker's Burnished Slippers
 										i(181121),	-- Soulbreaker's Burnished Vestments
 										i(181128),	-- Soulbreaker's Burnished Wraps
+										i(183972),	-- Forgotten Venthyr Winged Kris
+										i(183976),	-- Rogue Researcher's Dagger
+										i(183978),	-- Silver-Etched Hopebreaker Dirk
 									}),
 									q(60164, {	-- Mirror Attunement: Dominance Keep
 										["sourceQuests"] = {

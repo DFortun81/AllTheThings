@@ -119,7 +119,7 @@ _.Zones =
 						}),
 						q(60438, {	-- Challenges in Ardenweald
 							["provider"] = { "n", 167206 },	-- Yanlar
-							["coord"] = { 36.8, 24.8, 1533 },
+							["coord"] = { 37.0, 25.3, 1701 },	-- The Trunk
 							["g"] = {
 								i(181476),	-- Tribute of the Wild Hunt
 							},

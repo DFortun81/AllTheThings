@@ -297,10 +297,11 @@ _.Zones =
 							}),
 						}),
 						n(168147, { -- Sabriel the Bonecleaver
-							["description"] = "Requires a member of the |cFF40bf40Necrolord Covenant|r to summon.",
+							["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
 							["isDaily"] = true,
 							["questID"] = 58784,
 							["coord"] = { 50.4, 48.2, 1536 },
+							["crs"] = { 168148 },	-- Drolkrad
 							["g"] = {
 								crit(13, {	-- Sabriel the Bonecleaver
 									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -311,6 +312,7 @@ _.Zones =
 								i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 									["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 								}),
+								i(184291),	-- Tempered Boneplate Waistguard
 							},
 						}),
 						n(162874, {	-- Ti'or

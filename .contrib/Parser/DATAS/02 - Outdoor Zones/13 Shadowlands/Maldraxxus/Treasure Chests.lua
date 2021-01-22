@@ -8,8 +8,8 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(353627, {	-- Battlefront Rations
-					-- ["coord"] = { ##, ##, 1536 },
-					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Rations Key
+					["coord"] = { 37.8, 45.6, 1536 },
+					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Ration Key
 					["questID"] = 60772,
 				}),
 				o(352086, {	-- Blackhound Cache
@@ -68,6 +68,20 @@ _.Zones =
 					["description"] = "To unlock it, you must obtain |cFFFFFFFFLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 60771,
 					["coord"] = { 38.1, 42.6, 1536 },
+					["cost"] = { { "i", 180276, 1 } },	-- Locked Toolbox Key
+					["crs"] = {
+						157037,	-- Grabber Ga'shock <Supply Officer>
+						157036,	-- Pilfer Bur'tok <Supply Officer>
+						157028,	-- Thalrix the Slicer
+					},
+				}),
+				o(345458, {	-- Prize Bag
+					["description"] = "Spawns periodically around the arena.",
+					["coord"] = { 50.3, 47.1, 1536 },
+					["g"] = {
+						i(180854),	-- Competitor's Medallion
+						i(180855),	-- Competitor's Signet
+					},
 				}),
 				o(355037, {	-- Runebound Coffer
 				--	TODO: verify objectID when data is available
@@ -98,6 +112,7 @@ _.Zones =
 				}),
 				o(354856, {	-- Slime-Coated Crate
 					["questID"] = 61093,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 65.0, 82.1, 1536 },
 						{ 65.8, 76.0, 1536 },

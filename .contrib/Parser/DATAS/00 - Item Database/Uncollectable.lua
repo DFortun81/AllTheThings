@@ -158,7 +158,9 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(180710);	-- Pocket Repair Kit
 i(180170);	-- Pulsing Animacone
+i(180377);	-- Red Rum
 i(180008);	-- Resonating Anima Core
 i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
@@ -356,6 +358,7 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184505);	-- "Adorable Ascended" Costume
 i(180372);	-- Amalgamation of Sin
 i(173791);	-- Baguette
 i(181362);	-- Blob of Slime
