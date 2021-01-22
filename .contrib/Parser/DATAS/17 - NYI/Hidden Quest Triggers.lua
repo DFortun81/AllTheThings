@@ -3554,9 +3554,6 @@ _.HiddenQuestTriggers =
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 	--	q(63195),	-- triggered randomly in The Maw 12/6/20
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
-	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
-	--	q(63199),	-- The Maw Hunt event completion trigger... with 'The Alpha' as the final boss
-		q(63198),	-- Triggered after completing Hunt: Death Elementals
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...

@@ -239,15 +239,6 @@ _.Zones =
 						i(184108),	-- Vorpal Amulet
 					}
 				}),
-				n(174861, {	-- Gorged Shadehound
-					["description"] = "Only up when the active Beastwarrens Hunt is |cFFFFFFFFShadehound|r.",
-					["isWeekly"] = true,	-- technically like demiweekly i guess
-					["questID"] = 63433,
-					["coord"] = { 53.4, 79.3, 1543 },
-					["g"] = {
-						i(184167),	-- Mawsworn Soulhunter (MOUNT!)
-					},
-				}),
 				n(172523, {	-- Houndmaster Vasanok
 					["questID"] = 63385,
 					["isDaily"] = true,
@@ -516,44 +507,6 @@ _.Zones =
 						}),
 						q(61728, {	-- Bonus Objective
 							["isDaily"] = true,
-						}),
-					},
-				}),
-				n(-904, {	-- Wrath of the Jailer
-					["isWeekly"] = true,
-					["questID"] = 63414,
-					["g"] = {
-						n(COMMON_BOSS_DROPS, {
-							i(183228),	-- Memory of Arcane Pulsars
-							i(184657),	-- Armguard of the Unseen Assailant
-							i(184661),	-- Bracers of the Tenebrous Retinue
-							i(184658),	-- Dread Harrier's Pauldrons
-							i(184660),	-- Dreadguard's Greathelm
-							i(184654),	-- Forgotten Shade's Shawl
-							i(184659),	-- Grips of the Dreadhound Tamer
-							i(184656),	-- Mawsworn Assassin's Doublet
-							i(184655),	-- Sash of the Ethereal Servant
-						}),
-						n(175846, {	-- Dathlane the Herald <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175877, {	-- Lumisende <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175881, {	-- Naelcrotix <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(176173, {	-- Zograthos <Torghast Executioner>
-							-- ["coord"] = { 35.1, 41.5, 1543 },
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
 						}),
 					},
 				}),

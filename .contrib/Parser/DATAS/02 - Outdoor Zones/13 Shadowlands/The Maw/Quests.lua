@@ -7,6 +7,82 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1543, {	-- The Maw
 			n(QUESTS, {
+				n(-229, {	-- Weekly
+					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
+					n(-909, {	-- Hunt: Death Elementals
+						["isWeekly"] = true,
+						["questID"] = 63198,
+						["crs"] = {
+							172962,	-- Tempered Stygia
+						},
+					}),
+					n(-910, {	-- Hunt: Alpha Devourers
+						["isWeekly"] = true,
+						["questID"] = 63199,
+						["crs"] = {
+							175851,	-- Alpha Anima Devourer
+						},
+					}),
+					n(-911, {	-- Hunt: Gorged Shadehound
+						["isWeekly"] = true,
+						["questID"] = 63433,
+						["g"] = {
+							n(174861, {	-- Gorged Shadehound
+								["isWeekly"] = true,
+								["questID"] = 63433,
+								["coord"] = { 53.4, 79.3, 1543 },
+								["g"] = {
+									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
+								},
+							}),
+						},
+					}),
+					n(-912, {	-- Hunt: Soul Eaters
+						["isWeekly"] = true,
+						["questID"] = 63194,
+						["crs"] = {
+							-- TODO: another NPC is part of the final objective
+							173195,	-- Undying Soulbinder
+						},
+					}),
+					n(-904, {	-- Wrath of the Jailer
+						["isWeekly"] = true,
+						["questID"] = 63414,
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								i(183228),	-- Memory of Arcane Pulsars
+								i(184657),	-- Armguard of the Unseen Assailant
+								i(184661),	-- Bracers of the Tenebrous Retinue
+								i(184658),	-- Dread Harrier's Pauldrons
+								i(184660),	-- Dreadguard's Greathelm
+								i(184654),	-- Forgotten Shade's Shawl
+								i(184659),	-- Grips of the Dreadhound Tamer
+								i(184656),	-- Mawsworn Assassin's Doublet
+								i(184655),	-- Sash of the Ethereal Servant
+							}),
+							n(175846, {	-- Dathlane the Herald <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(175877, {	-- Lumisende <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(175881, {	-- Naelcrotix <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(176173, {	-- Zograthos <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+						},
+					}),
+				}),
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
