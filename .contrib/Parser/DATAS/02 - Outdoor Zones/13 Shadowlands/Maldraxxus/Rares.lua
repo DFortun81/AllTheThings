@@ -52,6 +52,7 @@ _.Zones =
 						}),
 						i(184177),	-- Grotesque Goring Pick
 						i(184176),	-- Moroc's Boneslicing Warglaive
+						i(181797),	-- Strange Cloth
 					},
 				}),
 				n(162711, {	-- Deadly Dapperling
