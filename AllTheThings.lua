@@ -10009,7 +10009,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 					-- clean anything out of it so that items don't show in the quest requirements
 					sq.g = {};
 
-					sq = NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
+					sq = app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1) or sq;
 					if sq then
 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
 						root.depth = math.max((root.depth or 0),(sq.depth or 1));
