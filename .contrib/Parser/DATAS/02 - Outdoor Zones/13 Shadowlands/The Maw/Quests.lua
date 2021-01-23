@@ -37,7 +37,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-912, {	-- Hunt: Soul Eaters
+					n(-912, {	-- Hunt: Winged Soul Eaters
 						["isWeekly"] = true,
 						["questID"] = 63194,
 						["crs"] = {
