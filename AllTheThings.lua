@@ -10214,7 +10214,7 @@ function app:CreateMiniListForGroup(group)
 						i = i - 1;
 					end
 					if sq then
-						searchResult = CloneData(sq);
+						local searchResult = CloneData(sq);
 						searchResult.collectible = true;
 						searchResult.g = g;
 						root = searchResult;
@@ -10673,9 +10673,12 @@ local function Refresh(self)
 		if minIndent > 15 then
 			minIndent = minIndent - 16;
 		end
-		for i=2,rowCount do
-			row = rawget(container.rows, i);
-			AdjustRowIndent(row, minIndent);
+		-- if there's actually an indent to adjust...
+		if minIndent > 0 then
+			for i=2,rowCount do
+				row = rawget(container.rows, i);
+				AdjustRowIndent(row, minIndent);
+			end
 		end
 
 		-- Hide the extra rows if any exist
@@ -11287,9 +11290,11 @@ RowOnEnter = function (self)
 			local str = "";
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
+				-- TODO: causes 60 upvalue error...
+				-- str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr)
 				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
 			end
-			GameTooltip:AddDoubleLine("Classes", str);
+			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
 		if app.Settings:GetTooltipSetting("RaceRequirements") then
 			if reference.races then
@@ -11299,12 +11304,12 @@ RowOnEnter = function (self)
 					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
 				end
 				if #reference.races > 4 then
-					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+					GameTooltip:AddLine(L["RACES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
 				else
-					GameTooltip:AddDoubleLine("Races", str);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
 				end
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+				GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
