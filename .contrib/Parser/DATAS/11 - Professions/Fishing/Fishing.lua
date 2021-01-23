@@ -3,6 +3,7 @@ profession(FISHING, {
 	n(-26,    {	-- Drop
 		i(34109, {	-- Weather-Beaten Journal
 			["collectible"] = false,	-- Does not track
+			["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
 		}),
 		i(16082, {	-- Artisan Fishing - The Way of the Lure
 			["collectible"] = false,

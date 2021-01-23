@@ -251,6 +251,7 @@ _.WorldEvents =
 								}),
 								i(34109, {	-- Weather-Beaten Journal
 									["collectible"] = false,	-- Does not track
+									["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
 								}),
 							},
 						}),
