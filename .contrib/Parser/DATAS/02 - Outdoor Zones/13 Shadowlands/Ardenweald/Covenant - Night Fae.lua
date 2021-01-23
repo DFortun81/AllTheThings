@@ -1196,6 +1196,11 @@ _.Zones =
 											i(177699),	-- Greater Untamed Spirit
 										},
 									}),
+									q(62600, {	-- Finding Inner Peace
+										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
+										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["coord"] = { 25.6, 47.5, 1662 },
+									}),
 									q(59873, {	-- Greeting a God
 										["sourceQuests"] = { 59872 },	-- How to Save a God
 										["provider"] = { "n", 166476 },	-- Warden Casad
@@ -1205,6 +1210,11 @@ _.Zones =
 										["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 										["provider"] = { "n", 166476 },	-- Warden Casad
 										["coord"] = { 33.4, 62.0, 1662 },
+									}),
+									q(62587, {	-- In Search of Inner Calm
+										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
+										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["coord"] = { 25.6, 47.5, 1662 },
 									}),
 									q(59999, {	-- Rebirth of the Grove
 										["sourceQuests"] = { 59873 },	-- Greeting a God

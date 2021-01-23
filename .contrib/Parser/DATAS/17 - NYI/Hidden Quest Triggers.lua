@@ -3164,6 +3164,7 @@ _.HiddenQuestTriggers =
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
+		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
