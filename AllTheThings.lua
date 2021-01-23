@@ -10465,6 +10465,27 @@ local function CalculateRowIndent(data)
 		return 0;
 	end
 end
+local function AdjustRowIndent(row, indentAdjust)
+	if row.Indicator then
+		local _, _, _, x = row.Indicator:GetPoint(2);
+		row.Indicator:SetPoint("RIGHT", row, "LEFT", x - indentAdjust, 0);
+	end
+	if row.Texture then
+		-- only ever LEFT point set
+		-- for i=1, row.Texture:GetNumPoints() do   
+		-- 	print(row.Texture:GetPoint(i));
+		-- end
+		-- print("---")
+		local _, _, _, x = row.Texture:GetPoint(2);
+		-- print("row texture at",x)
+		row.Texture:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	else
+		-- only ever LEFT point set
+		local _, _, _, x = row.Label:GetPoint(1);
+		-- print("row label at",x)
+		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	end
+end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
@@ -10525,6 +10546,7 @@ local function SetRowData(self, row, data)
 		local leftmost = row;
 		local relative = "LEFT";
 		local x = ((CalculateRowIndent(data) * 8) or 0) + 8;
+		row.indent = x;
 		local back = CalculateRowBack(data);
 		row.ref = data;
 		if back then
@@ -10620,7 +10642,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight = self.Container, 0, 0;
+		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -10633,6 +10655,11 @@ local function Refresh(self)
 		for i=2,totalRowCount do
 			row = rawget(container.rows, i) or CreateRow(container);
 			SetRowData(self, row, rawget(rowData, current));
+			-- track the minimum indentation within the set of rows so they can be adjusted later
+			if row.indent and (not minIndent or row.indent < minIndent) then
+				minIndent = row.indent;
+				-- print("new minIndent",minIndent)
+			end
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
 				break;
@@ -10640,6 +10667,15 @@ local function Refresh(self)
 				current = current + 1;
 				rowCount = rowCount + 1;
 			end
+		end
+
+		-- Readjust the indent of visible rows
+		if minIndent > 15 then
+			minIndent = minIndent - 16;
+		end
+		for i=2,rowCount do
+			row = rawget(container.rows, i);
+			AdjustRowIndent(row, minIndent);
 		end
 
 		-- Hide the extra rows if any exist
@@ -11712,13 +11748,18 @@ local function Update(self, force, got)
 						if got then app:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
-					tinsert(self.rowData, {
-						["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
-						["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
-						["collectible"] = 1,
-						["collected"] = 1,
-						["back"] = 0.7
-					});
+					-- only add this info row if there is actually nothing visible in the list
+					-- always a header row
+					-- print("any data",#self.Container,#self.rowData,#self.data)
+					if #self.rowData < 2 then
+						tinsert(self.rowData, {
+							["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
+							["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+							["collectible"] = 1,
+							["collected"] = 1,
+							["back"] = 0.7
+						});
+					end
 				else
 					self.missingData = true;
 				end
