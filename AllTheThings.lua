@@ -10069,6 +10069,7 @@ function app:CreateMiniListForGroup(group)
 			popout.data.visible = true;
 			popout.data.progress = 0;
 			popout.data.total = 0;
+			popout.data.expanded = nil;
 			if not popout.data.g then
 				popout.data.g = {};
 			end
