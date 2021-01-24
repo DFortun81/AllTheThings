@@ -1333,6 +1333,8 @@ _.HiddenQuestTriggers =
 		q(43970),	-- Monk Order Hall - Brewmaster Chosen
 		q(44427),	-- Monk Order Hall - Brewmaster Chosen
 		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
+		q(40655),	-- Monk Order Hall - Li Li — hopping on kite during "Off to Adventure!"
+		q(41812),	-- Monk Order Hall - Tracking Quest: Saw Boss Cinematic — cinematic during #41732, "The Hand of Keletress"
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -2477,6 +2479,9 @@ _.HiddenQuestTriggers =
 		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
 		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+		q(56695),	-- after poen dialogue around 29.4, 31.7: "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
+		q(56693),	-- after poen dialogue around 38.0, 42.7: "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
+		q(56682),	-- after poen dialogue around 63.5, 39.0: "I always dreamt of fighting back against the naga.  Neri gave me that chance."
 		q(56690),	-- after poen dialogue: "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
 		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
 		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
@@ -3426,18 +3431,18 @@ _.HiddenQuestTriggers =
 		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
 		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
+		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
+		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
 	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62171),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62127),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62120),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 	--	q(62121),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62146),	-- triggered when completing 'formal' activities? maybe more info...
 		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
@@ -3451,6 +3456,7 @@ _.HiddenQuestTriggers =
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
+		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
@@ -3541,6 +3547,25 @@ _.HiddenQuestTriggers =
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
+		q(61494),	-- using Building: Guardhouse
+		q(59436),	-- using Staff: Stage Crew
+		q(59433),	-- using Staff: Waiters
+		q(61457),	-- using Altar of Accomplishment
+		q(59515),	-- using Contract: Stoneborn Reserves
+		q(59516),	-- using Contract: Stoneborn Reserves
+		q(59488),	-- using Contract: Lost Chalice Band
+		q(59489),	-- using Contract: Lost Chalice Band
+		q(59518),	-- using Contract: Venthyr Volunteers
+		q(59519),	-- using Contract: Venthyr Volunteers
+		q(59500),	-- using Contract: Mushroom Surprise
+		q(59501),	-- using Contract: Mushroom Surprise
+		q(61499),	-- using Stock: Anima Samples
+		q(61502),	-- when using Invitation: Choofa
+		q(62656),	-- when using Invitation: Choofa
+		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
+		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
+		q(59517),	-- selecting Venthyr Volunteers as the security for the week
+		q(59514),	-- selecting Stoneborn Reserves as the security for the week
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

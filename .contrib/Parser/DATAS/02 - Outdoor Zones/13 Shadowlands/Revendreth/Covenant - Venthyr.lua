@@ -1184,11 +1184,9 @@ _.Zones =
 										}),
 										ach(14727),		-- Master of Ceremonies
 										ach(14679, {	-- Party Palace
-											crit(8),	-- Staff: Ardenweald Ambassador
 											crit(9),	-- Staff: Maldraxxus Ambassador
 											crit(10),	-- Staff: Bastion Ambassador
 											crit(11),	-- Stock: Greeting Kits
-											crit(13),	-- Stock: Anima Samples
 											crit(14),	-- Stock: Comfy Chairs
 											crit(16),	-- Third Guest List Page
 											crit(17),	-- Fourth Guest List Page
@@ -1219,19 +1217,7 @@ _.Zones =
 										}),
 										ach(14680, {	-- Something for Everyone
 										--	TODO: add remaining crit to the places From Whence They Come
-											crit(3, {	-- Lost Chalice Band
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(6, {	-- Mushroom Surprise
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
 											crit(9, {	-- Mystery Mirrors
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(10, {	-- Venthyr Volunteers
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(11, {	-- Stoneborn Reserves
 											--	["achievementID"] = 14680,	-- Something for Everyone
 											}),
 											crit(12, {	-- Maldraxxian Army
@@ -1271,13 +1257,14 @@ _.Zones =
 										["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
 										["crs"] = { 171705 },	-- Court Crusher
 									}),
-									q(61892, {	-- Ember Court Ambassador
-										["minReputation"] = { 2445, FRIENDLY },
-										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
-										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									q(61899, {	-- Anima Tastings
+									--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
+										["minReputation"] = { 2445, HONORED },
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.8, 1525 },	-- Revendreth
 										["g"] = {
-											i(181521, {	-- Ember Court Ambassador
-												crit(7, {	-- Staff: Revendreth Ambassador
+											i(181533, {	-- Stock: Anima Samples
+												crit(13, {	-- Stock: Anima Samples
 													["achievementID"] = 14679,	-- Party Palace
 												}),
 											}),
@@ -1335,6 +1322,19 @@ _.Zones =
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
 									}),
+									q(61738, {	-- Ember Court: Lost Chalice Band
+									--	TODO: might just require 'honored' rep???
+										["description"] = "Available after purchasing Staff: Stage Crew.",
+										["provider"] = { "n", 173173 },	-- Caretaker Tedo
+										["coord"] = { 55.1, 43.7, 1525 },	-- Revendreth
+										["g"] = {
+											i(176132, {	-- Contract: Lost Chalice Band
+												crit(3, {	-- Lost Chalice Band
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
 									q(61399, {	-- Ember Court: Mortal Reminders
 										["minReputation"] = { 2445, FRIENDLY },
 										["provider"] = { "n", 156791 },	-- Keeper Ta'saran
@@ -1347,10 +1347,34 @@ _.Zones =
 											}),
 										},
 									}),
+									q(61406, {	-- Ember Court: Mushroom Surprise
+										["description"] = "Available after purchasing Staff: Waiters.",
+										["provider"] = { "n", 168429 },	-- Melody Madcap
+										["coord"] = { 40.2, 41.2, 1536 },	-- Maldraxxus
+										["g"] = {
+											i(176136, {	-- Contract: Mushroom Surprise!
+												crit(6, {	-- Mushroom Surprise
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
 									q(61705, {	-- Ember Court: Refreshments
 										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									}),
+									q(61402, {	-- Ember Court: Stoneborn Reserves
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172502 },	-- Chelra the Bladewall
+										["coord"] = { 26.5, 29.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(176139, {	-- Contract: Stoneborn Reserves
+												crit(11, {	-- Stoneborn Reserves
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
 									}),
 									q(61398, {	-- Ember Court: Traditional
 										["minReputation"] = { 2445, FRIENDLY },
@@ -1372,6 +1396,42 @@ _.Zones =
 											i(176134, {	-- Contract: Tubbins's Tea Party
 												crit(4, {	-- Tubbins's Tea Party
 													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
+									q(61401, {	-- Ember Court: Venthyr Volunteers
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172614 },	-- Nadija the Mistblade
+										["coord"] = { 60.9, 39.5, 1525 },	-- Revendreth
+										["g"] = {
+											i(176138, {	-- Contract: Venthyr Volunteers
+												crit(10, {	-- Venthyr Volunteers
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
+									q(61892, {	-- Ember Court Ambassador 1 - Revendreth
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(181521, {	-- Ember Court Ambassador
+												crit(7, {	-- Staff: Revendreth Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
+										},
+									}),
+									q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
+										["minReputation"] = { 2445, HONORED },
+										["provider"] = { "n", 165453 },	-- Lady Ilinca
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(181524, {	-- Staff: Ambassador
+												crit(8, {	-- Staff: Ardenweald Ambassador
+													["achievementID"] = 14679,	-- Party Palace
 												}),
 											}),
 										},
@@ -1989,6 +2049,50 @@ _.Zones =
 										--	fixing mirror triggered 61827
 										--	ported to room with a bunch of Decaying Skeletons (npcID 173390) and Forgotten Chest (31.8, 48.4, 1525)
 										--	looting chest triggered 61838
+								--]]
+								--[[
+								TODO: finish this next week or the week after (depending on cycle).  i THINK the chests might be shared every week, with different questIDs based on the mirrors used to access them?  super annoying but it would change implementation, so i need to wait and check their coords after the cycle changes.  don't want to fuck around making a bunch of custom objects if i'm going to have to change them later lol
+								n(, {	-- Mirror Set 3
+									o(, {	-- Broken Mirror (3A)
+										["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
+										["questID"] = 61817,
+										["isDaily"] = true,
+										["coord"] = { 73.1, 44.8, 1525 },	-- Revendreth
+										["g"] = {
+											o(357236, {	-- Forgotten Chest
+												["questID"] = 61830,
+												["isDaily"] = true,
+												["coord"] = { 30.9, 47.0, 1525 },	-- Revendreth
+											}),
+										},
+									}),
+									o(, {	-- Broken Mirror (3B)
+										["description"] = "Inside a house.",
+										["questID"] = 61821,
+										["isDaily"] = true,
+										["coord"] = { 40.3, 77.1, 1525 },	-- Revendreth
+										["g"] = {
+											o(357237, {	-- Forgotten Chest
+												["questID"] = 61831,
+												["isDaily"] = true,
+												["coord"] = { 31.8, 47.0, 1525 },	-- Revendreth
+											}),
+										},
+									}),
+									o(, {	-- Broken Mirror (3C)
+										["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
+										["questID"] = 61825,
+										["isDaily"] = true,
+										["coord"] = { 77.2, 65.4, 1525 },	-- TODO: tweak coords?  forgot to grab until after i ported out, so might not be precise
+										["g"] = {
+											o(357238, {	-- Forgotten Chest
+												["questID"] = 61832,
+												["isDaily"] = true,
+												["coord"] = { 31.8, 48.4, 1525 },	-- Revendreth
+											}),
+										},
+									}),
+								}),
 								--]]
 								--[[
 									o(357565, {	-- Repaired Transport Mirror

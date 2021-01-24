@@ -8,22 +8,19 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
-		["maps"] = {
-			456,	-- Raid Map
-			728,	-- Monk: Legion Class Campaign Map
-		},
+		["maps"] = { 456 },	-- Terrace of Endless Spring
 		["coord"] = { 48.4, 61.4, 433 },	-- Terrace of Endless Spring, The Veiled Stair
-		["groups"] = {
+		["g"] = {
 			d(7, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(95617, {	-- Dividends of the Everlasting Spring
 								["description"] = "Since the introduction of Legacy Loot, this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1.",
-								["groups"] = {
+								["g"] = {
 									i(86884),	-- Belt of Embodied Terror
 									i(86900),	-- Binder's Chain of Unending Summer
 									i(86850),	-- Darting Damselfly Cuffs
@@ -104,7 +101,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(60583, e(683, {	-- Protectors of the Endless
 								i(86909),	-- Regail's Crackling Dagger
 								i(86876),	-- Casque of Expelled Corruption
@@ -250,7 +247,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(1, {	-- Normal
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							60583,	-- Protector Kaolan
@@ -260,7 +257,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							62983,	-- Lei Shi
 							60999,	-- Sha of Fear
 						},
-						["groups"] = {
+						["g"] = {
 							i(86272),	-- Pattern: Fists of Lightning
 							i(86380),	-- Pattern: Imperial Silk Gloves
 							i(86279),	-- Pattern: Liferuned Leather Gloves
@@ -287,11 +284,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							60586,	-- Elder Asani
 							60585,	-- Elder Regail
 						},
-						["groups"] = {
+						["g"] = {
 							ach(6717),	-- Power Overwhelming
 							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
-								["groups"] = {
+								["g"] = {
 									i(90527),	-- Regail's Crackling Dagger (Elite)
 									i(90530),	-- Casque of Expelled Corruption (Elite)
 									i(90523),	-- Kaolan's Withering Necklace (Elite)
@@ -454,7 +451,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(2, {	-- Heroic
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							60583,	-- Protector Kaolan
@@ -464,7 +461,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							62983,	-- Lei Shi
 							60999,	-- Sha of Fear
 						},
-						["groups"] = {
+						["g"] = {
 							i(86272),	-- Pattern: Fists of Lightning
 							i(86380),	-- Pattern: Imperial Silk Gloves
 							i(86279),	-- Pattern: Liferuned Leather Gloves
@@ -491,12 +488,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							60586,	-- Elder Asani
 							60585,	-- Elder Regail
 						},
-						["groups"] = {
+						["g"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
 							ach(6717),	-- Power Overwhelming
 							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
-								["groups"] = {
+								["g"] = {
 									i(90513),	-- Regail's Crackling Dagger (Elite)
 									i(90516),	-- Casque of Expelled Corruption (Elite)
 									i(90509),	-- Kaolan's Withering Necklace (Elite)
@@ -615,7 +612,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					cr(60999, e(709, {	-- Sha of Fear
 						{	-- Heroic: Sha of Fear
 							["achievementID"] = 6734,	-- Heroic: Sha of Fear
-							["groups"] = {
+							["g"] = {
 								{	-- the Fearless
 									["titleID"] = 198,	-- the Fearless
 								},
