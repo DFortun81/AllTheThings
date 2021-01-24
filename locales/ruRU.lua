@@ -15,6 +15,7 @@ local L = app.L;
 	
 		-- Big new chunk from AllTheThings.lua
 	
+	L.FLIGHT_PATHS = "Пути Полётов";
 	L.KNOWN_BY = "Изучено ";
 	L.REQUIRES = "Требуется";
 	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Дискорд-сервере ATT в разделе #errors! Спасибо!";
