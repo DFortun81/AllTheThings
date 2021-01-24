@@ -23,6 +23,7 @@ app.L = {
 	
 	-- Big new chunk from AllTheThings.lua
 	
+	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by ";
 	["REQUIRES"] = "Requires";
 	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
