@@ -11873,7 +11873,7 @@ function app:GetDataCache()
 			self.g = cache;
 		end;
 		db.OnUpdate(db);
-		db.text = "Flight Paths";
+		db.text = L["FLIGHT_PATHS"];		-- L["FLIGHT_PATHS"] = "Flight Paths";
 		db.icon = "Interface\\Addons\\AllTheThings\\assets\\fpl";
 		table.insert(g, db);
 
