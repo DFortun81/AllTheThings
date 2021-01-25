@@ -312,7 +312,7 @@ _.Zones =
 						q(61767, {	-- A Perilous Journey
 							["sourceQuests"] = { 61785 },	-- An Expected Visitor
 							["provider"] = { "n", 154627 },	-- Xandria
-							-- ["coord"] = {  },	-- 
+							["coord"] = { 61.8, 37.5, 1707 },	-- Archon's Rise
 						}),
 						q(60492, {	-- A Proper Reception
 							["sourceQuests"] = { 60491 },	-- Among the Kyrian
@@ -365,9 +365,8 @@ _.Zones =
 						}),
 						q(61785, {	-- An Expected Visitor
 							["description"] = "Requires Renown 11.",
-							-- ["sourceQuests"] = {  },	-- 
 							["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-							["coord"] = { 55.6, 42.2, 1707 },	-- Elysian Hold
+							["coord"] = { 55.6, 42.2, 1707 },	-- Archon's Rise
 						}),
 						q(58795, {	-- Ascended
 							["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
@@ -381,8 +380,8 @@ _.Zones =
 							},
 						}),
 						q(58557, {	-- Assistance from Sinfall
+						--	["sourceQuests"] = { 61878 },	-- Creat of Greatness
 							["description"] = "Requires Renown 13.",
-							-- ["sourceQuests"] = { 61878 },	-- Creat of Greatness
 							["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 							["coord"] = { 45.0, 56.9, 1707 },	-- Elysian Hold
 						}),
@@ -392,9 +391,9 @@ _.Zones =
 							["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 						}),
 						q(58181, {	-- Building the Base
-							["sourceQuests"] = { 58178 },	-- A Partner for Eternity
+							["sourceQuests"] = { 58183 },	-- Friend to the Forgelite
 							["provider"] = { "n", 160280 },	-- Mikanikos
-							["coord"] = { 45.2, 56.7, 1707 },
+							["coord"] = { 45.2, 56.7, 1707 },	-- Archon's Rise
 							["g"] = {
 								i(180763),	-- Phalynx of Courage (MOUNT!)
 							},
@@ -467,6 +466,12 @@ _.Zones =
 							},
 							["provider"] = { "n", 166333 },	-- Xandria
 							["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+							["g"] = {
+								i(177056),	-- Selfless Bearer's Waist
+								i(174295),	-- Selfless Collector's Girdle
+								i(179946),	-- Selfless Forgelite's Belt
+								i(178159),	-- Selfless Watcher's Girdle
+							},
 						}),
 						q(58182, {	-- Dismantling the Opposition
 							["sourceQuests"] = { 58178 },	-- A Partner for Eternity
@@ -545,7 +550,6 @@ _.Zones =
 						}),
 						q(58797, {	-- Forged by Trial
 						--	Unlocks Soulbind: Kleia (344757)
-						--	TODO: verify follower
 							["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
 							["provider"] = { "n", 163650 },	-- Kleia
 							["coord"] = { 51.6, 47.7, 1707 },
@@ -762,14 +766,14 @@ _.Zones =
 						}),
 						q(58180, {	-- Phaestus, Genesis of Aeons
 							["sourceQuests"] = {
-								58176,	-- Stewards of a Feather
-								58177,	-- Refining Ego
 								58179,	-- Instruments of Perfection
+								58177,	-- Refining Ego
+								58176,	-- Stewards of a Feather
 							},
 							["provider"] = { "n", 160280 },	-- Mikanikos
 							["coord"] = { 50.1, 20.5, 1533 },
 							["g"] = {
-								i(179947),	-- Selfless Forgelite's Wristwraps (mail wrist)
+								i(179947),	-- Selfless Forgelite's Wristwraps
 								-- TODO: verify cloth leather and plate rewards
 								i(178160),	-- Selfless Watcher's Wristwraps
 								i(177057),	-- Selfless Bearer's Wrists
@@ -783,8 +787,8 @@ _.Zones =
 						}),
 						q(61780, {	-- Power of the Chosen
 							["sourceQuests"] = {
-								61777,	-- Charging The Blade
 								61778,	-- Aerial Advantage
+								61777,	-- Charging The Blade
 								61779,	-- Grave Intent
 							},
 							["provider"] = { "n", 166211 },	-- Alexandros Mograine
@@ -795,8 +799,10 @@ _.Zones =
 							["provider"] = { "n", 172002 },	-- Xandria
 							["coord"] = { 31.7, 30.3, 1536 },	-- Maldraxxus
 							["g"] = {
+								i(177055),	-- Selfless Bearer's Shoulders
+								i(174294),	-- Selfless Collector's Spaulders
+								i(179945),	-- Selfless Forgelite's Spaulders
 								i(178158),	-- Selfless Watcher's Shoulders
-								-- TODO: Confirm Leather/Mail/Plate
 							},
 						}),
 						q(58177, {	-- Refining Ego
@@ -941,6 +947,7 @@ _.Zones =
 						}),
 						q(58175, {	-- The Eternal Forge
 							-- Requires Kyrian, Renown 8
+							["sourceQuests"] = { 58798 },	-- The Spires of Ascension
 							["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 							["coord"] = { 55.5, 42.0, 1707 },
 						}),
@@ -1029,9 +1036,9 @@ _.Zones =
 						}),
 						q(61776, {	-- Trouble on the Western Front
 							["sourceQuests"] = {
-								61773,	-- Descended
-								61774,	-- Burn Before Reading
 								61775,	-- An Early End
+								61774,	-- Burn Before Reading
+								61773,	-- Descended
 							},
 							["provider"] = { "n", 168743 },	-- Apolon
 							["coord"] = { 35.4, 26.4, 1536 },	-- Maldraxxus
@@ -1127,9 +1134,9 @@ _.Zones =
 								},
 							}),
 							q(61862, {	-- Adventurer: Clora
-								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, 1707 },
 								["description"] = "Becomes available at Renown 17.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
 								["g"] = {
 									follower(1273),	-- Clora
 								},
@@ -1164,7 +1171,7 @@ _.Zones =
 									q(60495, {	-- A Suitable Opponent
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, 1707 },
+										["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
 									}),
 									q(61358, {	-- Alderyn and Myn'ir
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
@@ -1264,7 +1271,7 @@ _.Zones =
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 										["g"] = {
-											i(180464),	-- Blueprint: Herald's Footpads
+											i(180481),	-- Curious Blueprint
 										},
 									}),
 									q(61370, {	-- No Other Way

@@ -1335,6 +1335,11 @@ _.HiddenQuestTriggers =
 		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
 		q(40655),	-- Monk Order Hall - Li Li — hopping on kite during "Off to Adventure!"
 		q(41812),	-- Monk Order Hall - Tracking Quest: Saw Boss Cinematic — cinematic during #41732, "The Hand of Keletress"
+		q(43065),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 1 — during "Tracking the Tideskorn"
+		q(43066),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 2 — during "Tracking the Tideskorn"
+		q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
+		q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
+		q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -2970,6 +2975,7 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
+		q(60826),	-- first use per day of Unbound Changeling trinket
 		
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
@@ -3626,6 +3632,7 @@ _.HiddenQuestTriggers =
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
 		q(62978),	-- Twisting Corridors, Layer 4
+		q(62980),	-- Twisting Corridors, Layer 8
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

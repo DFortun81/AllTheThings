@@ -154,6 +154,7 @@ i(138883);	-- Meryl's Conjured Refreshment
 i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
+i(180682);	-- Noble's Wardrobe
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
