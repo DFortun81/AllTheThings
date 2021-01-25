@@ -283,13 +283,15 @@ _.Zones =
 					},
 				}),
 				n(171327, { -- Reekmonger
-					--["coord"] = { 46.8, 64.0, 1533 },
-					--["questID"] = ,
+					["description"] = "Killing the creatures in 'The Necrotic Wake' area will have a chance to make the dragon come down from the sky and become attackable.",
+					["coord"] = { 30.3, 55.2, 1533 },
+					["questID"] = 61108,
 					["isDaily"] = true,
 					["g"] = {
 						crit(25, {	-- Reekmonger
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(182749),	-- Regurgitated Kyrian Wings
 					},
 				}),
 				n(160985, {	-- Selena the Reborn

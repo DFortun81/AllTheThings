@@ -87,7 +87,14 @@ _.Zones =
 							},
 						}),
 						n(175390, {	-- Dirty Glinting Object
-							["description"] = "Can appear when on any of the Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							["crs"] = {
+								-- Confirmed Follower ID's which will drop the loot objects
+								170029,	-- Twinklewings [Night Fae]
+
+								-- Follower ID's which will NOT drop loot objects
+								-- 170044,	-- Nandor [Venthyr]
+							},
 							["g"] = {
 								i(184507),	-- Lucy's Lost Collar (PET!)
 								i(184503),	-- Attendant's Pocket Portal: Ardenweald
@@ -95,6 +102,7 @@ _.Zones =
 								i(184502),	-- Attendant's Pocket Portal: Maldraxxus
 								i(184504),	-- Attendant's Pocket Portal: Oribos
 								i(184501),	-- Attendant's Pocket Portal: Revendreth
+								i(171438),	-- Porous Weightstone
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
