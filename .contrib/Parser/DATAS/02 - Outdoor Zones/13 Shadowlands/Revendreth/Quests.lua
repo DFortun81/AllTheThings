@@ -130,7 +130,7 @@ _.Zones =
 					["coord"] = { 49.6, 75.9, 1525 },
 				}),
 				q(58717, {	-- Bell of Remembrance
-				--	TODO: is this venthyr-only?
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["provider"] = { "i", 174674 },	-- Bell of Remembrance
 					["crs"] = { 160716 },	-- Sinstone Rampager
 				}),
@@ -575,7 +575,7 @@ _.Zones =
 					["coord"] = { 38.9, 66.0, 1525 },
 				}),
 				q(58725, {	-- Sinkeeper
-				--	TODO: is this venthyr-only?
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 58717 },	-- Bell of Remembrance
 					["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 					["coord"] = { 73.2, 34.0, 1525 },
