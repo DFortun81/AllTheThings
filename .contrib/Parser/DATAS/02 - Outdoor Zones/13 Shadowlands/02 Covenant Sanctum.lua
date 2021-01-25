@@ -91,6 +91,7 @@ _.Zones =
 							["crs"] = {
 								-- Confirmed Follower ID's which will drop the loot objects
 								170029,	-- Twinklewings [Night Fae]
+								170016,	-- Dregs [Necrolord]
 
 								-- Follower ID's which will NOT drop loot objects
 								-- 170044,	-- Nandor [Venthyr]

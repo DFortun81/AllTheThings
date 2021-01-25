@@ -3413,8 +3413,6 @@ _.HiddenQuestTriggers =
 		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
-		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item — every time
-		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item — first time only
 		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
 		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
@@ -3472,8 +3470,6 @@ _.HiddenQuestTriggers =
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
-		q(59418),	-- triggered when using "RSVP: Kleia and Pelagos" — every time
-		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos" — first time only
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
@@ -3484,8 +3480,6 @@ _.HiddenQuestTriggers =
 		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
 		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
-		q(59618),	-- triggered when using "RSVP: Stonehead"
-		q(59619),	-- triggered when using "RSVP: Stonehead"
 		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
 		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
 		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
@@ -3521,8 +3515,6 @@ _.HiddenQuestTriggers =
 		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59639),	-- triggered when leaving Ember Court (week 3)
-		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
-		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -3539,14 +3531,24 @@ _.HiddenQuestTriggers =
 		q(61498),	-- when using "Stock: Appetizers"
 		q(59476),	-- when using "Contract: Mortal Reminders"
 		q(59477),	-- when using "Contract: Mortal Reminders"
-		q(59415),	-- when using "RSVP: Grandmaster Vole"
-		q(59416),	-- when using "RSVP: Grandmaster Vole"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
-		q(59424),	-- when using "RSVP: Sika"
-		q(59425),	-- when using "RSVP: Sika"
+		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
+		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
+		q(59415),	-- when using "RSVP: Grandmaster Vole"
+		q(59416),	-- when using "RSVP: Grandmaster Vole"
+		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
+		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
+		q(59421),	-- when using "RSVP: Plague Deviser Marileth"
+		q(59422),	-- when using "RSVP: Plague Deviser Marileth"
+		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118)
+		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118)
+		q(59424),	-- when using "RSVP: Sika"
+		q(59425),	-- when using "RSVP: Sika"
+		q(59618),	-- when using "RSVP: Stonehead"
+		q(59619),	-- when using "RSVP: Stonehead"
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
@@ -3572,6 +3574,8 @@ _.HiddenQuestTriggers =
 		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
 		q(59517),	-- selecting Venthyr Volunteers as the security for the week
 		q(59514),	-- selecting Stoneborn Reserves as the security for the week
+		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

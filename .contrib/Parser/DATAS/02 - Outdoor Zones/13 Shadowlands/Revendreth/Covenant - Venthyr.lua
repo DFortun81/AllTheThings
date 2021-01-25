@@ -1682,6 +1682,39 @@ _.Zones =
 											i(181537),	-- Guest List Page
 										},
 									}),
+									-- TODO: not sure if this requires Tier 3, or just happened to be available immediately after unlocking Tier 3
+									q(61059, {	-- RSVP: Rendle and Cudgelface
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 171190 },	-- Cudgelface
+										["coord"] = { 61.9, 77.0, 1700 },	-- Sinfall Depths
+										["g"] = {
+											i(176118),	-- RSVP: Rendle and Cudgelface
+										},
+									}),
+									q(62559, {	-- Sootible Hat: Crown of the Righteous
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62558, {	-- Sootible Hat: Fae Revel Masque
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62556, {	-- Sootible Hat: Pink Party Hat
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62554, {	-- Sootible Hat: Red Noggin Candle
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
 								}),
 								n(-964, {	-- Tier 4: Discerning Taste
 								}),
