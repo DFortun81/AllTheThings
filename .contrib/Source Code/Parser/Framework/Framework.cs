@@ -1368,6 +1368,12 @@ namespace ATT
                         return "coords";
                     }
 
+                case "explorationId":
+                case "explorationID":
+                    {
+                        return "explorationID";
+                    }
+
                 case "illusionId":
                 case "illusionID":
                     {
