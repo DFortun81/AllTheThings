@@ -1155,13 +1155,13 @@ _.Zones =
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
-										["isDaily"] = true,
+										["isWeekly"] = true,
 									}),
 									q(62452, {	-- A Spirit's Might
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
-										["isDaily"] = true,
+										["isWeekly"] = true,
 									}),
 									q(62442, {	-- Aid the Covenant
 										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
@@ -1218,8 +1218,13 @@ _.Zones =
 										["provider"] = { "n", 166476 },	-- Warden Casad
 										["coord"] = { 33.4, 62.0, 1662 },
 									}),
-									q(62587, {	-- In Search of Inner Calm
+									q(62587, {	-- In Search of Inner Calm (1)
 										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
+										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["coord"] = { 25.6, 47.5, 1662 },
+									}),
+									q(62588, {	-- In Search of Inner Calm (2)
+										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
 									}),
