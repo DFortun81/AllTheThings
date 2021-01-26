@@ -92,6 +92,7 @@ _.Zones =
 								-- Confirmed Follower ID's which will drop the loot objects
 								170029,	-- Twinklewings [Night Fae]
 								170016,	-- Dregs [Necrolord]
+								170035,	-- Deos [Kyrian]
 
 								-- Follower ID's which will NOT drop loot objects
 								-- 170044,	-- Nandor [Venthyr]
