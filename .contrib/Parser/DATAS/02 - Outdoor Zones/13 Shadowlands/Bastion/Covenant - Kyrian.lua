@@ -66,7 +66,7 @@ _.Zones =
 						}),
 						q(60392, {	-- Aiding Bastion
 							["provider"] = { "n", 160387 },	-- Hermestes
-							["coord"] = { 64.6, 16.4, 1533 },
+							["coord"] = { 41.0, 41.1, 1707 },	-- Archon's Rise
 							["g"] = {
 								i(181372),	-- Tribute of the Ascended
 							},
@@ -1232,7 +1232,7 @@ _.Zones =
 									q(62218, {	-- A Fountain for Fae
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, 1707 },
+										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
 									q(60495, {	-- A Suitable Opponent
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis

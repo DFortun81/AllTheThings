@@ -3424,31 +3424,38 @@ _.HiddenQuestTriggers =
 		q(61921),	-- triggered when entering the Ember Court, Week 5
 		q(61933),	-- triggered when entering the Ember Court, Week 6
 		q(61927),	-- triggered when entering the Ember Court for the week
+		q(61939),	-- triggered when Ember Court began for the week (after the initial wave of "Quest accepted," after the pre-event when you can mingle with guests)
 		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
 		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
-		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
+		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment objective
 		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
 		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+		q(62142),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Ember Skyterror" objective
+		q(61450),	-- also part of the "Ember Skyterror" objective, for turning the seed in to Renathal
 		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
 		q(62144),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Legacy of Stone" objective (went with Humble option, not Decadent)
+		q(61998),	-- also part of "Legacy of Stone," not sure if they both triggered last week?  again, i chose Humble, but both versions went off this time
 		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
 		q(62143),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Murder of Colonel Mort" objective
+		q(62115),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Crashers" objective
+		q(61163),	-- also for the "Party Crashers" objective, but automatically "accepted" when it started
 		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
-		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
+		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" objective
+		q(62114),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Sineater" objective
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
+		q(62118),	-- picked up when entering the Ember Court for the week — for "Traditional Candles"
+		q(62119),	-- picked up when entering the Ember Court for the week – for "Roaring Fires"
+		q(62132),	-- picked up when entering the Ember Court for the week — for "Food Fight"
+		q(62127),	-- picked up when entering the Ember Court for the week — for "Ride on the Wild Side" - the description for this is "Ride Gorm" so i guess... you can ride a gorm somehow.  k
+		q(62120),	-- picked up when entering the Ember Court for the week — for "Stolen Mementos"
+		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
-	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62127),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62120),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62121),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
 		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
@@ -3469,6 +3476,7 @@ _.HiddenQuestTriggers =
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
+		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"

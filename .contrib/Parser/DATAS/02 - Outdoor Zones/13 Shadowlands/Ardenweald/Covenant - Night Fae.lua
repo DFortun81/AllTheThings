@@ -77,9 +77,9 @@ _.Zones =
 						}),
 						q(60384, {	-- Aiding Bastion
 							["provider"] = { "n", 167195 },	-- Blodwyn
-							["coord"] = { 46.4, 50.6, 1565 },
+							["coord"] = { 53.7, 6.53, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Bounty of the Grove Wardens
+								i(181372),	-- Tribute of the Ascended
 							},
 						}),
 						q(60383, {	-- Aiding Maldraxxus

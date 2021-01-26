@@ -1622,6 +1622,11 @@ _.Zones =
 										["isDaily"] = true,	-- according to the API
 										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 									}),
+									q(60339, {	-- The Ember Court (Honored)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									}),
 								}),
 								n(-962, {	-- Tier 2: Homegrown Help
 									q(61766, {	-- Homegrown Help
