@@ -3326,6 +3326,7 @@ _.HiddenQuestTriggers =
 		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
+		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 		q(62404),	-- using Ashen Ink (Crypt Couture)
