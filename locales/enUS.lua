@@ -212,9 +212,6 @@ app.L = {
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 	
-	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
-	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)";
-	
 	-- Settings.lua
 		-- General tab
 	["GENERAL_TAB"] = "General";
@@ -550,7 +547,7 @@ app.L = {
 		["Expansion Pre"] = "Pre",
 		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",
-		["Classic %-> "] = "",
+		["Classic %> "] = "",
 		["Burning Crusade"] = "BC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",
@@ -585,7 +582,7 @@ app.L = {
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
 		["Covenant:"] = "Cov:",
-		["Sanctum Upgrades %-> "] = "",
+		["Sanctum Upgrades %> "] = "",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {

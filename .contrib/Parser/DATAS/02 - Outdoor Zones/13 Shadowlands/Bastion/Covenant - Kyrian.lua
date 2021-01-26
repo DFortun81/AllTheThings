@@ -1162,6 +1162,72 @@ _.Zones =
 										ach(14349),	-- The Path Towards Ascension 24
 									}),
 								}),
+								n(-966, {	-- Blueprints & Crafting
+									["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
+									["crs"] = { 168430 },	-- Dactylis
+									["g"] = {
+										q(60946, {	-- Blueprint: Deep Echo Trident
+											-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
+											["description"] = "From defeating Kalisthene on 'Courage' difficulty.",
+											["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
+										}),
+										q(60947, {	-- Blueprint: Charm of Fortitude
+											-- Rewards: spell 333266 (Crafting: Charm of Fortitude), unlocking ascension crafting recipe
+											["description"] = "From defeating Echthra on 'Courage' difficulty.",
+											["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
+										}),
+										q(61269, {	-- Blueprint: Charm of Persistence
+											-- Quest starter is from defeating Splinterbark Nightmare on Courage difficulty
+											-- Rewards spell 335605 (Crafting: Charm of Persistence)
+											["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
+										}),
+										q(61713, {	-- Blueprint: Charm of Quickness
+											-- Rewards: spell 346669 (Crafting: Charm of Quickness) unlocking ascension crafting recipe
+											["description"] = "From defeating Alderyn and Myn'ir on 'Courage' difficulty.",
+											["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
+										}),
+										q(62984, {	-- Blueprint: Medallion of Service
+											-- From defeating Echthra on Loyalty difficulty
+											["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
+										}),
+										q(60973, {	-- Blueprint: Phial of Serenity
+											-- From defeating Kalisthene on Loyalty difficulty
+											["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
+										}),
+										q(60975, {	-- Blueprint: Spiritforged Aegis
+											-- Quest starter is from defeating Craven Corinth on Courage difficulty
+											-- Rewards spell 346676 (Crafting: Spiritforged Aegis)
+											["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
+										}),
+										q(62970, {	-- Blueprint: Steward Mail Pouch
+											-- From defeating Myn'ir and Alderyn on Loyalty difficulty
+											["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
+										}),
+										q(60945, {	-- Deep Echo Trident
+											["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
+											["provider"] = { "i", 181499 },	-- Deep Echo Trident
+										}),
+										q(60497, {	-- Herald's Footpads
+											-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
+											["sourceQuests"] = { 60496 },	-- Into the Coliseum
+											["provider"] = { "n", 168427 },	-- Artemede
+											["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
+										}),
+										q(60974, {	-- Phial of Serenity
+											-- Quest starter crafted with Ascension crafting
+											["provider"] = { "i", 184478 },	-- Phial of Serenity
+										}),
+										q(62995, {	-- Spiritforged Aegis
+											-- Quest starter crafted with Ascension crafting
+											["provider"] = { "i", 184475 },	-- Spiritforged Aegis
+										}),
+										q(62483, {	-- Steward Mail Pouch
+											-- Quest starter created with Ascension crafting
+											["provider"] = { "i", 184577 },	-- Steward Mail Pouch
+										}),
+										i(181846),	-- Charm of Quickness
+									},
+								}),
 								n(-943, {	-- Tier 1: First Steps
 									q(62218, {	-- A Fountain for Fae
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
@@ -1182,43 +1248,6 @@ _.Zones =
 										-- Quest starter is from defeating Nuuminuuru on Courage difficulty
 										["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
 									}),
-									q(60947, {	-- Blueprint: Charm of Fortitude
-										-- Quest starter is from defeating Echthra on Courage difficulty
-										-- Rewards: spell 333266 (Crafting: Charm of Fortitude), unlocking ascension crafting recipe
-										["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
-									}),
-									q(61269, {	-- Blueprint: Charm of Persistence
-										-- Quest starter is from defeating Splinterbark Nightmare on Courage difficulty
-										-- Rewards spell 335605 (Crafting: Charm of Persistence)
-										["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
-									}),
-									q(61713, {	-- Blueprint: Charm of Quickness
-										-- Quest starter is from defeating Alderyn and Myn'ir on 'Courage' difficulty
-										-- Rewards: spell 346669 (Crafting: Charm of Quickness) unlocking ascension crafting recipe
-										["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
-									}),
-									q(60946, {	-- Blueprint: Deep Echo Trident
-										-- provider item 180472 contained in Path of Ascension chest after defeating Kalisthene on 'Courage' difficulty (easiest)
-										-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
-										["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
-									}),
-									q(62984, {	-- Blueprint: Medallion of Service
-										-- From defeating Echthra on Loyalty difficulty
-										["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
-									}),
-									q(60973, {	-- Blueprint: Phial of Serenity
-										-- From defeating Kalisthene on Loyalty difficulty
-										["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
-									}),
-									q(60975, {	-- Blueprint: Spiritforged Aegis
-										-- Quest starter is from defeating Craven Corinth on Courage difficulty
-										-- Rewards spell 346676 (Crafting: Spiritforged Aegis)
-										["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
-									}),
-									q(62970, {	-- Blueprint: Steward Mail Pouch
-										-- From defeating Myn'ir and Alderyn on Loyalty difficulty
-										["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
-									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
 										["provider"] = { "n", 168430 },	-- Dactylis
@@ -1231,18 +1260,14 @@ _.Zones =
 										["coord"] = { 51.4, 33.7, 1565 }, -- Ardenweald
 									}),
 									q(61369, {	-- Craven Corinth
-										-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },
-									}),
-									q(60945, {	-- Deep Echo Trident
-										["provider"] = { "i", 181499 },	-- Deep Echo Trident
-										-- provider item 181499 crafted via Ascension Crafting
 									}),
 									q(61356, {	-- Echthra, Dame of Hated
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, 1707 },
+                                        ["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
@@ -1254,12 +1279,6 @@ _.Zones =
 										["sourceQuests"] = { 61490 },	-- War of Information
 										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
-									}),
-									q(60497, {	-- Herald's Footpads
-										-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
-										["sourceQuests"] = { 60496 },	-- Into the Coliseum
-										["provider"] = { "n", 168427 },	-- Artemede
-										["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 									}),
 									q(60493, {	-- Humble Gatherer
 										["sourceQuests"] = { 60489 },	-- The Path of Ascension
@@ -1281,7 +1300,7 @@ _.Zones =
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
 									q(61361, {	-- Nuuminuuru
-										-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+                                        ["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
@@ -1295,10 +1314,6 @@ _.Zones =
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 									}),
-									q(60974, {	-- Phial of Serenity
-										-- Quest starter crafted with Ascension crafting
-										["provider"] = { "i", 184478 },	-- Phial of Serenity
-									}),
 									q(61965, {	-- Piercing the Shell
 										["sourceQuests"] = { 61963 },	-- Called to the Hunt
 										["provider"] = { "n", 173402 },	-- Alderyn
@@ -1309,18 +1324,10 @@ _.Zones =
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
-									q(62995, {	-- Spiritforged Aegis
-										-- Quest starter crafted with Ascension crafting
-										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
-									}),
 									q(61365, {	-- Splinterbark Nightmare
-										-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+                                        ["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-									}),
-									q(62483, {	-- Steward Mail Pouch
-										-- Quest starter created with Ascension crafting
-										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 									}),
 									q(61366, {	-- Tactical Operation
 										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
