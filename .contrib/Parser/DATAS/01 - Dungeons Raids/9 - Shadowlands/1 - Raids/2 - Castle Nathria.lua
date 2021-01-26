@@ -275,7 +275,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
-					["crs"] = { 165318 },	-- General Kaal
+					["crs"] = {
+						168112,	-- General Kaal
+						168113,	-- General Grashaal
+					},
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -619,7 +622,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
-					["crs"] = { 165318 },	-- General Kaal
+					["crs"] = {
+						168112,	-- General Kaal
+						168113,	-- General Grashaal
+					},
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -964,7 +970,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
-					["crs"] = { 165318 },	-- General Kaal
+					["crs"] = {
+						168112,	-- General Kaal
+						168113,	-- General Grashaal
+					},
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1317,7 +1326,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2425, {	-- Stone Legion Generals
-					["crs"] = { 165318 },	-- General Kaal
+					["crs"] = {
+						168112,	-- General Kaal
+						168113,	-- General Grashaal
+					},
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria

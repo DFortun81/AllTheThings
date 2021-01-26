@@ -232,15 +232,15 @@ _.Zones =
 							["coord"] = { 47.6, 36.4, 1701 },
 						}),
 						q(63347, {	-- Night Fae Tactician
+							["description"] = "Requires Renown 22.",
 							["provider"] = { "n", 176096 },	-- Laurel
 							["coord"] = { 34.0, 37.0, 1701 },
-							["description"] = "Becomes available at Renown 22",
 						}),
 						q(63346, {	-- Night Fae Veteran
 							["sourceQuests"] = { 62899 },	-- The Endless Forest
+							["description"] = "Requires Renown 7.",
 							["provider"] = { "n", 176096 },	-- Laurel
-							["coord"] = { 34.0, 37.0, 1701 },
-							["description"] = "Becomes available at Renown 7",
+							["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 						}),
 						q(62546, {	-- No Wisp Left Behind (1)
 							-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday (similar to 62536 a couple weeks earlier).

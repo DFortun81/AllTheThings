@@ -1131,6 +1131,7 @@ app.L = {
 		[-963] = 3675493,																	-- Tier 3: Court Influencer
 		[-964] = 3675493,																	-- Tier 4: Discerning Taste
 		[-965] = 3675493,																	-- Tier 5: The Professionals
+		[-966] = 979574,																	-- Blueprints & Crafting (for Kyrian Path of Ascension)
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1990,6 +1991,7 @@ app.L = {
 		[-3348] = "Tier 1: Step of Faith",										-- Tier 1: Step of Faith
 		[-3349] = "Tier 2: Leap of Power",										-- Tier 2: Leap of Power
 		[-3350] = "Tier 3: Eternal Paths",										-- Tier 3: Eternal Paths
+		[-966] = "Blueprints & Crafting",										-- Blueprints (for Path of Ascension)
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
