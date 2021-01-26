@@ -245,7 +245,7 @@ _.Zones =
 						}),
 						n(157307, {	-- Gelloh
 							["description"] = "Requires a majority of Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61721,
 							["isDaily"] = true;
 							["g"] = {
 								crit(2, {	-- Gelloh

@@ -9,89 +9,6 @@ _.Zones =
 			n(-939, {	-- Covenant: Kyrian
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				["g"] = {
-					n(ACHIEVEMENTS, {
-						ach(14853),	-- All The Colors of the Painbow
-						ach(14860),	-- Bare Necessities
-						ach(14851),	-- Bastion of Protection
-						ach(14856),	-- Charmed, I'm Sure
-						ach(14858),	-- Curse of Thirst
-						ach(14863),	-- Death Foursworn
-						ach(14865, {	-- Disciple of Humility
-							crit(1),	-- Defeat Kalisthene as Pelagos
-							crit(2),	-- Defeat Kalisthene as Kleia
-							crit(3),	-- Defeat Kalisthene as Mikanikos
-							crit(4),	-- Defeat Echthra as Pelagos
-							crit(5),	-- Defeat Echthra as Kleia
-							crit(6),	-- Defeat Echthra as Mikanikos
-							crit(7),	-- Defeat Alderyn and Myn'ir as Pelagos
-							crit(8),	-- Defeat Alderyn and Myn'ir as Kleia
-							crit(9),	-- Defeat Alderyn and Myn'ir as Mikanikos
-							crit(10),	-- Defeat Nuuminuuru as Pelagos
-							crit(11),	-- Defeat Nuuminuuru as Kleia
-							crit(12),	-- Defeat Nuuminuuru as Mikanikos
-							crit(13),	-- Defeat Craven Corinth as Pelagos
-							crit(14),	-- Defeat Craven Corinth as Kleia
-							crit(15),	-- Defeat Craven Corinth as Mikanikos
-							crit(16),	-- Defeat Splinterbark Nightmare as Pelagos
-							crit(17),	-- Defeat Splinterbark Nightmare as Kleia
-							crit(18),	-- Defeat Splinterbark Nightmare as Mikanikos
-							crit(19),	-- Defeat Thran'tiok as Pelagos
-							crit(20),	-- Defeat Thran'tiok as Kleia
-							crit(21),	-- Defeat Thran'tiok as Mikanikos
-							crit(22),	-- Defeat Mad Mortimer as Pelagos
-							crit(23),	-- Defeat Mad Mortimer as Kleia
-							crit(24),	-- Defeat Mad Mortimer as Mikanikos
-							crit(25),	-- Defeat Athanos as Pelagos
-							crit(26),	-- Defeat Athanos as Kleia
-							crit(27),	-- Defeat Athanos as Mikanikos
-							crit(28),	-- Defeat Azaruux as Pelagos
-							crit(29),	-- Defeat Azaruux as Kleia
-							crit(30),	-- Defeat Azaruux as Mikanikos
-						}),
-						ach(14859),	-- Inside the Park Home Run
-						ach(14862, {	-- It's How You Wear It
-							crit(1),	-- Herald's Footpads
-							crit(2),	-- Deep Echo Trident
-							crit(3),	-- Vial of Lichfrost
-							crit(4),	-- Phial of Serenity
-							crit(5),	-- Ring of Warding
-							crit(6),	-- Spiritforged Aegis
-						}),
-						ach(14854),	-- It's Not What You Wear
-						ach(14857),	-- Itsy Bitsy Fighters
-						ach(14861, {	-- Learning from the Masters
-							crit(1),	-- Defeat Kalisthene as Pelagos
-							crit(2),	-- Defeat Kalisthene as Kleia
-							crit(3),	-- Defeat Kalisthene as Mikanikos
-							crit(4),	-- Defeat Athanos as Pelagos
-							crit(5),	-- Defeat Athanos as Kleia
-							crit(6),	-- Defeat Athanos as Mikanikos
-						}),
-						ach(14866, {	-- Master of the Path
-							crit(1),	-- Kalisthene
-							crit(2),	-- Echthra
-							crit(3),	-- Alderyn and Myn'ir
-							crit(4),	-- Nuuminuuru
-							crit(5),	-- Craven Corinth
-							crit(6),	-- Splinterbark Nightmare
-							crit(7),	-- Thran'tiok
-							crit(8),	-- Mad Mortimer
-							crit(9),	-- Athanos
-							crit(10),	-- Azaruux
-						}),
-						ach(14864),	-- Personal Nightmare
-						ach(14852),	-- The Hoot of the Issue
-						ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
-							ach(14340),	-- The Path Towards Ascension 1
-							ach(14342),	-- The Path Towards Ascension 3
-							ach(14343),	-- The Path Towards Ascension 5
-							ach(14344),	-- The Path Towards Ascension 7
-							ach(14345),	-- The Path Towards Ascension 12
-							ach(14346),	-- The Path Towards Ascension 16
-							ach(14348),	-- The Path Towards Ascension 20
-							ach(14349),	-- The Path Towards Ascension 24
-						}),
-					}),
 					n(-901, sharedData({	-- Covenant Callings
 							["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 							["repeatable"] = true,
@@ -1162,6 +1079,89 @@ _.Zones =
 						n(-942, {	-- Path of Ascension
 							["maps"] = 1711,	-- Path of Ascension Coliseum
 							["g"] = {
+								n(ACHIEVEMENTS, {
+									ach(14853),	-- All The Colors of the Painbow
+									ach(14860),	-- Bare Necessities
+									ach(14851),	-- Bastion of Protection
+									ach(14856),	-- Charmed, I'm Sure
+									ach(14858),	-- Curse of Thirst
+									ach(14863),	-- Death Foursworn
+									ach(14865, {	-- Disciple of Humility
+										crit(1),	-- Defeat Kalisthene as Pelagos
+										crit(2),	-- Defeat Kalisthene as Kleia
+										crit(3),	-- Defeat Kalisthene as Mikanikos
+										crit(4),	-- Defeat Echthra as Pelagos
+										crit(5),	-- Defeat Echthra as Kleia
+										crit(6),	-- Defeat Echthra as Mikanikos
+										crit(7),	-- Defeat Alderyn and Myn'ir as Pelagos
+										crit(8),	-- Defeat Alderyn and Myn'ir as Kleia
+										crit(9),	-- Defeat Alderyn and Myn'ir as Mikanikos
+										crit(10),	-- Defeat Nuuminuuru as Pelagos
+										crit(11),	-- Defeat Nuuminuuru as Kleia
+										crit(12),	-- Defeat Nuuminuuru as Mikanikos
+										crit(13),	-- Defeat Craven Corinth as Pelagos
+										crit(14),	-- Defeat Craven Corinth as Kleia
+										crit(15),	-- Defeat Craven Corinth as Mikanikos
+										crit(16),	-- Defeat Splinterbark Nightmare as Pelagos
+										crit(17),	-- Defeat Splinterbark Nightmare as Kleia
+										crit(18),	-- Defeat Splinterbark Nightmare as Mikanikos
+										crit(19),	-- Defeat Thran'tiok as Pelagos
+										crit(20),	-- Defeat Thran'tiok as Kleia
+										crit(21),	-- Defeat Thran'tiok as Mikanikos
+										crit(22),	-- Defeat Mad Mortimer as Pelagos
+										crit(23),	-- Defeat Mad Mortimer as Kleia
+										crit(24),	-- Defeat Mad Mortimer as Mikanikos
+										crit(25),	-- Defeat Athanos as Pelagos
+										crit(26),	-- Defeat Athanos as Kleia
+										crit(27),	-- Defeat Athanos as Mikanikos
+										crit(28),	-- Defeat Azaruux as Pelagos
+										crit(29),	-- Defeat Azaruux as Kleia
+										crit(30),	-- Defeat Azaruux as Mikanikos
+									}),
+									ach(14859),	-- Inside the Park Home Run
+									ach(14862, {	-- It's How You Wear It
+										crit(1),	-- Herald's Footpads
+										crit(2),	-- Deep Echo Trident
+										crit(3),	-- Vial of Lichfrost
+										crit(4),	-- Phial of Serenity
+										crit(5),	-- Ring of Warding
+										crit(6),	-- Spiritforged Aegis
+									}),
+									ach(14854),	-- It's Not What You Wear
+									ach(14857),	-- Itsy Bitsy Fighters
+									ach(14861, {	-- Learning from the Masters
+										crit(1),	-- Defeat Kalisthene as Pelagos
+										crit(2),	-- Defeat Kalisthene as Kleia
+										crit(3),	-- Defeat Kalisthene as Mikanikos
+										crit(4),	-- Defeat Athanos as Pelagos
+										crit(5),	-- Defeat Athanos as Kleia
+										crit(6),	-- Defeat Athanos as Mikanikos
+									}),
+									ach(14866, {	-- Master of the Path
+										crit(1),	-- Kalisthene
+										crit(2),	-- Echthra
+										crit(3),	-- Alderyn and Myn'ir
+										crit(4),	-- Nuuminuuru
+										crit(5),	-- Craven Corinth
+										crit(6),	-- Splinterbark Nightmare
+										crit(7),	-- Thran'tiok
+										crit(8),	-- Mad Mortimer
+										crit(9),	-- Athanos
+										crit(10),	-- Azaruux
+									}),
+									ach(14864),	-- Personal Nightmare
+									ach(14852),	-- The Hoot of the Issue
+									ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
+										ach(14340),	-- The Path Towards Ascension 1
+										ach(14342),	-- The Path Towards Ascension 3
+										ach(14343),	-- The Path Towards Ascension 5
+										ach(14344),	-- The Path Towards Ascension 7
+										ach(14345),	-- The Path Towards Ascension 12
+										ach(14346),	-- The Path Towards Ascension 16
+										ach(14348),	-- The Path Towards Ascension 20
+										ach(14349),	-- The Path Towards Ascension 24
+									}),
+								}),
 								n(-943, {	-- Tier 1: First Steps
 									q(62218, {	-- A Fountain for Fae
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
@@ -1350,6 +1350,14 @@ _.Zones =
 									}),
 								}),
 								n(-944, {	-- Tier 2: Sacred Trials
+									q(62951, {	-- Path of Ascension: Kleia
+										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
 								}),
 								n(-945, {	-- Tier 3: Continued Training
 								}),

@@ -1088,6 +1088,7 @@ _.Zones =
 								o(350978, {	-- Queen's Conservatory Cache
 									filter(100, {	-- Mounts
 										["coord"] = { 43.4, 33.6, 1565 },
+										-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
 										["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth fully incubated, you can loot it which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 										["g"] = {
 											i(181317),	-- Dauntless Duskrunner
@@ -1095,7 +1096,13 @@ _.Zones =
 											i(181300),	-- Gruesome Flayedwing
 											i(180726),	-- Pale Acidmaw
 											i(181316),	-- Silvertip Dredwing
-											i(180414),	-- Wakener's Runestag
+											i(180414, {	-- Wakener's Runestag
+												["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+												-- ["cost"] = {	-- TODO: waiting to verify...
+												-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
+												-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
+												-- },
+											}),
 										},
 									}),
 									i(181315),	-- Bloodfeaster Spiderling
@@ -1261,6 +1268,7 @@ _.Zones =
 									--}),
 								}),
 								-- Spirits/Transmog
+								-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
 								n(-931, {		-- Lesser Spirit
 									["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. Its possible to receive rewards from higher quality spirits of the same type as well.",
 									["g"] = {

@@ -3541,8 +3541,10 @@ _.HiddenQuestTriggers =
 		q(59416),	-- when using "RSVP: Grandmaster Vole"
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
-		q(59421),	-- when using "RSVP: Plague Deviser Marileth"
-		q(59422),	-- when using "RSVP: Plague Deviser Marileth"
+		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
+		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124)
+		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117)
+		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117)
 		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118)
 		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118)
 		q(59424),	-- when using "RSVP: Sika"

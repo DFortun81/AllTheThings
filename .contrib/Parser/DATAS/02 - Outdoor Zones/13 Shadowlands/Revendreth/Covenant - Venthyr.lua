@@ -1229,12 +1229,14 @@ _.Zones =
 								}),
 								n(-908, {	-- Rewards
 								--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
+									i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
 									i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+									i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
 									}),
@@ -1653,6 +1655,10 @@ _.Zones =
 														["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
 														["repeatable"] = true,
 													}),
+													q(62174, {	-- A Proper Cover
+														["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
+														["repeatable"] = true,
+													}),
 												}),
 											}),
 										},
@@ -1682,7 +1688,14 @@ _.Zones =
 											i(181537),	-- Guest List Page
 										},
 									}),
-									-- TODO: not sure if this requires Tier 3, or just happened to be available immediately after unlocking Tier 3
+									q(61123, {	-- RSVP: Polemarch Adrestes
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 171385 },	-- Polemarch Adrestes
+										["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
+										["g"] = {
+											i(176117),	-- RSVP: Polemarch Adrestes
+										},
+									}),
 									q(61059, {	-- RSVP: Rendle and Cudgelface
 										-- ["sourceQuests"] = {  },	-- TODO: unknown
 										["provider"] = { "n", 171190 },	-- Cudgelface
