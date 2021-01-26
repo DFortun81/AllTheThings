@@ -1501,6 +1501,16 @@ _.Zones =
 											{ "c", 1816, 50 },	-- 50x Sinstone Fragment
 										},
 									}),
+									q(62075, {	-- Restock: Soul Cages
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+										["cost"] = {
+											{ "i", 172089, 20 },	-- 20x Desolate Leather
+											{ "i", 171832, 1 },		-- 1x Sinvyr Ore
+											{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										},
+									}),
 									q(60236, {	-- RSVP: Cryptkeeper Kassir
 										["sourceQuests"] = {
 											57928,	-- Atonement Crypt Key
