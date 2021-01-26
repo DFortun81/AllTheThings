@@ -2020,7 +2020,7 @@ _.Zones =
 								},
 							}),
 							n(-953, {	-- Tier 3: Mirror's Edge
-								["description"] = "Requires Renown 19.  Each week, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two weeks in a row.  Toggle Debug Mode on to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
+								["description"] = "Requires Renown 19.  Each week, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two weeks in a row.  Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
 								["g"] = {
 									n(-967, {	-- Mirror Restoration
 										n(166133, {	-- Simone
@@ -2068,37 +2068,39 @@ _.Zones =
 										}),
 										n(-969, {	-- Set B
 											n(-1433954, {	-- Broken Mirror B-1
-												["questID"] = 61819,
+												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
+												["questID"] = 61817,
 												["isDaily"] = true,
-												["coord"] = { 39.1, 52.2, 1525 },	-- Revendreth
+												["coord"] = { 73.1, 44.8, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
 													o(357230, {	-- Forgotten Chest
-														["questID"] = 61836,
+														["questID"] = 61830,
 														["isDaily"] = true,
 													}),
 												},
 											}),
 											n(-1433955, {	-- Broken Mirror B-2
-												["questID"] = 61823,
+												["questID"] = 61821,
 												["isDaily"] = true,
-												["coord"] = { 58.8, 67.8, 1525 },	-- Revendreth
+												["coord"] = { 40.3, 77.1, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
 													o(357231, {	-- Forgotten Chest
-														["questID"] = 61837,
+														["questID"] = 61831,
 														["isDaily"] = true,
 													}),
 												},
 											}),
 											n(-1433956, {	-- Broken Mirror B-3
-												["questID"] = 61827,
+												["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
+												["questID"] = 61825,
 												["isDaily"] = true,
-												["coord"] = { 70.9, 43.6, 1525 },	-- Revendreth
+												["coord"] = { 77.2, 65.4, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
 													o(357232, {	-- Forgotten Chest
-														["questID"] = 61838,
+														["questID"] = 61832,
 														["isDaily"] = true,
 													}),
 												},
