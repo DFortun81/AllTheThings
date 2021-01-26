@@ -1129,6 +1129,11 @@ app.L = {
 		[-964] = 3675493,																	-- Tier 4: Discerning Taste
 		[-965] = 3675493,																	-- Tier 5: The Professionals
 		[-966] = 979574,																	-- Blueprints & Crafting (for Kyrian Path of Ascension)
+		[-967] = 3854020,																	-- Mirror Restoration
+		[-968] = 3854020,																	-- Set A
+		[-969] = 3854020,																	-- Set B
+		[-970] = 3854020,																	-- Set C
+		[-971] = 3854020,																	-- Set D
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1499,6 +1504,14 @@ app.L = {
 		[-1433948] = 3528288,															-- Anima Crystal Shard
 		[-1433949] = 3528288,															-- Anima Crystal Shard
 		[-1433950] = 3528288,															-- Anima Crystal Shard
+		
+	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
+		[-1433951] = "3854020",															-- Broken Mirror
+		[-1433952] = "3854020",															-- Broken Mirror
+		[-1433953] = "3854020",															-- Broken Mirror
+		[-1433954] = "3854020",															-- Broken Mirror
+		[-1433955] = "3854020",															-- Broken Mirror
+		[-1433956] = "3854020",															-- Broken Mirror
 	};
 
 	["NPC_ID_NAMES"] = {
@@ -2008,6 +2021,11 @@ app.L = {
 		[-963] = "Tier 3: Court Influencer",									-- Tier 3: Court Influencer
 		[-964] = "Tier 4: Discerning Taste",									-- Tier 4: Discerning Taste
 		[-965] = "Tier 5: The Professionals",									-- Tier 5: The Professionals
+		[-967] = "Mirror Restoration",											-- "Mirror Restoration",
+		[-968] = "Set A",														-- Set A
+		[-969] = "Set B",														-- Set B
+		[-970] = "Set C",														-- Set C
+		[-971] = "Set D",														-- Set D
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
@@ -2502,6 +2520,14 @@ app.L = {
 		[-1433948] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433949] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433950] = "Anima Crystal Shard",															-- Anima Crystal Shard
+		
+	--	hopefully temp objects, these currently do not have accessible object data on wowhead
+		[-1433951] = "Broken Mirror",																-- Broken Mirror
+		[-1433952] = "Broken Mirror",																-- Broken Mirror
+		[-1433953] = "Broken Mirror",																-- Broken Mirror
+		[-1433954] = "Broken Mirror",																-- Broken Mirror
+		[-1433955] = "Broken Mirror",																-- Broken Mirror
+		[-1433956] = "Broken Mirror",																-- Broken Mirror
 	};
 
 	["OBJECT_ID_ICONS"] = {
@@ -4802,6 +4828,12 @@ app.L = {
 		[354193] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
 		[355035] = "Treasure: House of the Chosen",	-- Chosen Runecoffer
+		[357230] = "Forgotten Chest",	-- B-1
+		[357231] = "Forgotten Chest",	-- B-2
+		[357232] = "Forgotten Chest",	-- B-3
+		[357236] = "Forgotten Chest",	-- A-1
+		[357237] = "Forgotten Chest",	-- A-2
+		[357238] = "Forgotten Chest",	-- A-3
 		[358315] = "Skeletal Hand Fragments",
 		[358319] = "Sorceror's Note",
 		[1278968750] = "Hanging Chain",

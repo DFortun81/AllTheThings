@@ -2020,8 +2020,97 @@ _.Zones =
 								},
 							}),
 							n(-953, {	-- Tier 3: Mirror's Edge
-								["description"] = "Requires Renown 19.",
+								["description"] = "Requires Renown 19.  Each week, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two weeks in a row.  Toggle Debug Mode on to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
 								["g"] = {
+									n(-967, {	-- Mirror Restoration
+										n(166133, {	-- Simone
+											i(181363, {	-- Handcrafted Mirror Repair Kit
+												["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby
+											}),
+										}),
+										n(-968, {	-- Set A
+											n(-1433951, {	-- Broken Mirror A-1
+												["questID"] = 61819,
+												["isDaily"] = true,
+												["coord"] = { 39.1, 52.2, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357236, {	-- Forgotten Chest
+														["questID"] = 61836,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433952, {	-- Broken Mirror A-2
+												["questID"] = 61823,
+												["isDaily"] = true,
+												["coord"] = { 58.8, 67.8, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357237, {	-- Forgotten Chest
+														["questID"] = 61837,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433953, {	-- Broken Mirror A-3
+												["questID"] = 61827,
+												["isDaily"] = true,
+												["coord"] = { 70.9, 43.6, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357238, {	-- Forgotten Chest
+														["questID"] = 61838,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+										}),
+										n(-969, {	-- Set B
+											n(-1433954, {	-- Broken Mirror B-1
+												["questID"] = 61819,
+												["isDaily"] = true,
+												["coord"] = { 39.1, 52.2, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357230, {	-- Forgotten Chest
+														["questID"] = 61836,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433955, {	-- Broken Mirror B-2
+												["questID"] = 61823,
+												["isDaily"] = true,
+												["coord"] = { 58.8, 67.8, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357231, {	-- Forgotten Chest
+														["questID"] = 61837,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433956, {	-- Broken Mirror B-3
+												["questID"] = 61827,
+												["isDaily"] = true,
+												["coord"] = { 70.9, 43.6, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357232, {	-- Forgotten Chest
+														["questID"] = 61838,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+										}),
+										--[[
+										n(-970, {	-- Set C
+										}),
+										n(-971, {	-- Set D
+										}),
+										--]]
+									}),
 									n(-908, {	-- Rewards
 									--	TODO: cloaks might need to be marked with armor spec classes, need to get one and then see if cloth set cloak can be used on a druid, for example.  there's no blizz text indicating that they're locked to users of a specific armor type so it needs verification i guess
 										i(183798),	-- Silessa's Battle Harness (MOUNT!)
@@ -2093,99 +2182,6 @@ _.Zones =
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
 									}),
-								--	TODO: flesh out, add 181363 Handcrafted Mirror Repair Kit somewhere (to vendor or as cost to broken mirror objects?)
-								--	not sure if the mirrors have discrete questIDs/locations/objects associated?
-								--	apparently there are 3 up that can be completed each day (costs 20 Infused Ruby each).  the same 3 will be up each week, and then upon reset will cycle, but unpredictably (aka the same 3 can be up the next week)
-								--	mirror should always port you to treasure.  if it takes you to Sanctuary of the Mad, go back to the same mirror, re-enter, and you should get ported to the right place
-								--[[ JAN 12 - JAN 18
-									1.	Broken Mirror: 39.1, 52.2, 1525
-										--	fixing mirror triggered 58013 / 61819
-										--	ported to Sanctuary of the Mad, re-ported and got to a room with Living Bulwark (npcID 173392) and Forgotten Chest (30.9, 47.0, 1525)
-										--	looting chest triggered 61836
-									2.	Broken Mirror: 58.8, 67.8, 1525
-										--	fixing mirror triggered 61823
-										--	ported to room with 2 Ancient Tomes (npcID 173387) and Forgotten Chest (31.8, 47.0, 1525)
-										--	looting chest triggered 61837
-									3. Broken Mirror: 70.9, 43.6, 1525
-										--	fixing mirror triggered 61827
-										--	ported to room with a bunch of Decaying Skeletons (npcID 173390) and Forgotten Chest (31.8, 48.4, 1525)
-										--	looting chest triggered 61838
-								--]]
-								--[[
-								TODO: finish this next week or the week after (depending on cycle).  i THINK the chests might be shared every week, with different questIDs based on the mirrors used to access them?  super annoying but it would change implementation, so i need to wait and check their coords after the cycle changes.  don't want to fuck around making a bunch of custom objects if i'm going to have to change them later lol
-								n(, {	-- Mirror Set 3
-									o(, {	-- Broken Mirror (3A)
-										["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
-										["questID"] = 61817,
-										["isDaily"] = true,
-										["coord"] = { 73.1, 44.8, 1525 },	-- Revendreth
-										["g"] = {
-											o(357236, {	-- Forgotten Chest
-												["questID"] = 61830,
-												["isDaily"] = true,
-												["coord"] = { 30.9, 47.0, 1525 },	-- Revendreth
-											}),
-										},
-									}),
-									o(, {	-- Broken Mirror (3B)
-										["description"] = "Inside a house.",
-										["questID"] = 61821,
-										["isDaily"] = true,
-										["coord"] = { 40.3, 77.1, 1525 },	-- Revendreth
-										["g"] = {
-											o(357237, {	-- Forgotten Chest
-												["questID"] = 61831,
-												["isDaily"] = true,
-												["coord"] = { 31.8, 47.0, 1525 },	-- Revendreth
-											}),
-										},
-									}),
-									o(, {	-- Broken Mirror (3C)
-										["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
-										["questID"] = 61825,
-										["isDaily"] = true,
-										["coord"] = { 77.2, 65.4, 1525 },	-- TODO: tweak coords?  forgot to grab until after i ported out, so might not be precise
-										["g"] = {
-											o(357238, {	-- Forgotten Chest
-												["questID"] = 61832,
-												["isDaily"] = true,
-												["coord"] = { 31.8, 48.4, 1525 },	-- Revendreth
-											}),
-										},
-									}),
-								}),
-								--]]
-								--[[
-									o(357565, {	-- Repaired Transport Mirror
-									--	["description"] = "Requires Tier 3 Mirror Network to see.",
-									--	["npcID"] = 173634,	-- Muckribbon
-									--	["coord"] = { 69.3, 77.9, 1525 },
-									--	["questID"] = 62196,
-										["g"] = {
-								--]]
-											
-								--[[
-										},
-									}),
-									(xxxxxx, {	--
-									--["description"] = "Chance to loot from repairing broken mirrors.",
-									--]]
-									--["g"] = {
-								--]]
-										
-								--	}),
-									--[[
-									Obtained from the tier 3 mirror system for Venthyr.
-									I got it from repairing the broken mirror and looting the chest inside at 20, 54 in Revendreth.
-									Although i've repair this mirror around 7 days total so far and only got it today,
-									so seems random from the broken mirror chests. Once you upgrade to tier 3 of the mirror system and
-									unlock the various mirrors for teleporting around the zone, you'll be then taught about broken mirrors.
-									After this quest you'll be able then purchase Handcrafted Mirror Repair Kit.
-									This will allow you to repair the various broken mirrors across Revendreth and enter them.
-									They despawn once entered and you loot the chest within, although currently on beta they sometimes bug and
-									send you to the Sanctuary of the Mad, if this happens I just kept returning to the repaired mirror
-									and entering it until it teleports me to the chest room.
-									--]]
 								},
 							}),
 						}),
