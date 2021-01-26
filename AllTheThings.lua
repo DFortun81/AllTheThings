@@ -11154,7 +11154,7 @@ RowOnEnter = function (self)
 				else
 					str = "";
 				end
-				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ",
+				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",		-- L["COORDINATES_STRING"] = "Coordinates"
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
 			end
