@@ -505,6 +505,7 @@ for key,value in pairs({
 	["Expansion Features"] = "ОК";
 	["Dungeons & Raids"] = "П и Р";
 	["Cataclysm"] = "Ката";
+	["The Shadowlands"] = "ТЗ",
 	["Player vs Player"] = "ПвП";
 	["Raid Finder"] = "ЛФР";
 	["Looking For Raid"] = "ЛФР";
