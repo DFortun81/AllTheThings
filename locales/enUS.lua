@@ -214,10 +214,7 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
-	
-	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
-	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)";
-	
+
 	-- Settings.lua
 		-- General tab
 	["GENERAL_TAB"] = "General";
