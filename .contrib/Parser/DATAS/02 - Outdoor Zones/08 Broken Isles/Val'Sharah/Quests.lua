@@ -441,14 +441,14 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(38684, {	-- Reading the Leaves
-					["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
-					["coord"] = { 66.1, 44.6, 641 },
+					["sourceQuests"] = { 41724, 38675 },	-- Heart of the Nightmare (A, H)
 					["provider"] = { "n", 92783 },	-- Elothir
+					["coord"] = { 66.1, 44.6, 641 },
 				}),
 				q(43576, {	-- Regroup at the Refuge
-					["sourceQuests"] = { 41890 },	-- Dark Side of the Moon (Horde)
-					["coord"] = { 66.8, 50.2, 641 },
+					["sourceQuests"] = { 41708, 41890 },	-- Dark Side of the Moon (A, H)
 					["provider"] = { "n", 104885 },	-- Tyrande Whisperwind
+					["coord"] = { 66.8, 50.2, 641 },
 				}),
 				q(38148, {	-- Return to the Grove
 					["sourceQuests"] = { 38147 },	-- Entangled Dreams
@@ -494,6 +494,7 @@ _.Zones =
 				}),
 				q(43702, {	-- Softening the Target
 					["sourceQuests"] = {
+						41893,	-- Given to Corruption (Alliance)
 						41749,	-- Given to Corruption (Horde)
 						38684,	-- Reading the Leaves
 					},
@@ -618,9 +619,9 @@ _.Zones =
 					},
 				}),
 				q(38743, {	-- The Fate of Val'sharah
-					["sourceQuests"] = { 41763 },	-- Close Enough to Touch (Horde)
-					["coord"] = { 57.8, 38.6, 641 },
+					["sourceQuests"] = { 38687, 41763 },	-- Close Enough to Touch (A, H)
 					["provider"] = { "n", 104799 },	-- Tyrande Whisperwind
+					["coord"] = { 57.8, 38.6, 641 },
 				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["sourceQuests"] = { 46107 },	-- Source of the Corruption

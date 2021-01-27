@@ -2490,6 +2490,7 @@ _.HiddenQuestTriggers =
 		q(56690),	-- after poen dialogue: "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
 		q(56688),	-- after poen dialogue: "The world's a lot less interesting when you can only move on the ground.  Now I see why the sea cucumbers are always complaining."
 		q(56696),	-- after poen dialogue around 54.6, 54.3: "Have you ever swooped on a ray?  It's out-ray-geous!"
+		q(56697),	-- after poen dialogue around 58, 48: "We have so many free people in Newhome that we need to gather more food!  This is great!"
 		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
 		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
 		q(56705),	-- vim brineheart dialogue, triggered around 71.6, 50.9: "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
