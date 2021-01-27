@@ -23,7 +23,7 @@ _.Zones =
 							175851,	-- Alpha Anima Devourer
 						},
 					}),
-					n(-911, {	-- Hunt: Gorged Shadehound
+					n(-911, {	-- Hunt: Shadehounds
 						["isWeekly"] = true,
 						["questID"] = 63433,
 						["g"] = {
