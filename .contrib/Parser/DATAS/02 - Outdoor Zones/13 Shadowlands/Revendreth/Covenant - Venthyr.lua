@@ -32,7 +32,7 @@ _.Zones =
 						}),
 						q(60422, {	-- A Call to Ardenweald
 							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.2, 37.7, 1699 },
+							["coord"] = { 51.2, 37.7, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181475),	-- Bounty of the Grove Wardens
 							},

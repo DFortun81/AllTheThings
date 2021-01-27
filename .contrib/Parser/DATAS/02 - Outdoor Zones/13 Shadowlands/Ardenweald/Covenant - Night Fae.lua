@@ -478,7 +478,7 @@ _.Zones =
 						q(59809, {	-- On De Other Side
 							["sourceQuests"] = { 59242 },	-- Their New Home
 							["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-							["description"] = "Requires Renown 8 for this quest to be available.",
+							["description"] = "Requires Renown 8.",
 						}),
 						q(59811, {	-- Taking Inventory
 							["sourceQuests"] = { 59809 },	-- On De Other Side
@@ -1022,7 +1022,7 @@ _.Zones =
 							q(61857, {	-- Adventurer: Groonoomcrooek
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 38",
+								["description"] = "Requires Renown 38.",
 								["g"] = {
 									follower(1288),	-- Groonoomcrooek
 								},
@@ -1030,7 +1030,7 @@ _.Zones =
 							q(61854, {	-- Adventurer: Master Sha'lor
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 17",
+								["description"] = "Requires Renown 17.",
 								["g"] = {
 									follower(1284),	-- Master Sha'lor
 								},
@@ -1038,7 +1038,7 @@ _.Zones =
 							q(61852, {	-- Adventurer: Guardian Kota
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 4",
+								["description"] = "Requires Renown 4.",
 								["g"] = {
 									follower(1283),	-- Guardian Kota
 								},
@@ -1046,7 +1046,7 @@ _.Zones =
 							q(61855, {	-- Adventurer: Qadarin
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 27",
+								["description"] = "Requires Renown 27.",
 								["g"] = {
 									follower(1286),	-- Qadarin
 								},
@@ -1054,7 +1054,7 @@ _.Zones =
 							q(61853, {	-- Adventurer: Te'zan
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 12",
+								["description"] = "Requires Renown 12.",
 								["g"] = {
 									follower(1285),	-- Te'zan
 								},
@@ -1062,7 +1062,7 @@ _.Zones =
 							q(61856, {	-- Adventurer: Watcher Vesperbloom
 								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 								["coord"] = { 44.7, 56.3, 1565 },
-								["description"] = "Becomes available at Renown 33",
+								["description"] = "Requires Renown 33.",
 								["g"] = {
 									follower(1287),	-- Watcher Vesperbloom
 								},
@@ -1074,9 +1074,7 @@ _.Zones =
 							}),
 							q(61552, {	-- The Hunt Watches
 								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-								["coord"] = { 39.7, 55.7, 1701 },
-								["coord"] = { 39.7, 55.7, 1701 },
-								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
+								["coord"] = { 39.7, 55.7, 1701 },	-- The Trunk
 							}),
 							-- think these headers are unneccessary, unless we find quests later that require tier 2/3
 							-- n(-906, {	-- Tier 1: Tactical Insight
@@ -1089,7 +1087,7 @@ _.Zones =
 									filter(100, {	-- Mounts
 										["coord"] = { 43.4, 33.6, 1565 },
 										-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
-										["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth fully incubated, you can loot it which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+										["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 										["g"] = {
 											i(181317),	-- Dauntless Duskrunner
 											i(180723),	-- Enchanted Wakener's Runestag
@@ -1251,7 +1249,6 @@ _.Zones =
 									q(62624, {	-- The Queen's Conservatory
 										["provider"] = { "n", 173171 },	-- Conservator Starry Night
 										["coord"] = { 56.0, 68.2, 1702 },
-										["description"] = "Becomes available after you build Queen's Conservatory tier 1 in your sanctum.",
 									}),
 									
 									-- TODO: everything past here is yet to be verified on retail
@@ -1307,7 +1304,7 @@ _.Zones =
 									},
 								}),
 								n(-932, {		-- Spirit
-									["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. Its possible to receive rewards from lower & higher quality spirits of the same type as well.",
+									["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
 									["g"] = {
 										i(177699, {		--	Divine Untamed Spirit Ardenweald (Rare)
 											i(179499),		-- Nightwillow Barb
@@ -1348,7 +1345,7 @@ _.Zones =
 									},
 								}),
 								n(-933, {		-- Greater Spirit
-									["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. Its possible to receive rewards from lower quality spirits of the same type as well.",
+									["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
 									["g"] = {
 										i(177700, {		--	Greater Untamed Spirit Ardenweald (Epic)
 											i(179509),		-- Grove Warden's Edge
@@ -1393,7 +1390,6 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 							q(63073, {	-- A Mycelial Network
-								["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 								["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
 							}),
