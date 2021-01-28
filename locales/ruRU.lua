@@ -521,7 +521,7 @@ for key,value in pairs({
 	["Emissary Quests"] = "Посланник";
 	["WoW Anniversary"] = "Годовщина";
 	["Covenant:"] = "Ков:",
-	["Sanctum Upgrades %-> "] = "",
+	["Sanctum Upgrades %-> "] = "УО",
 })
 do a[key] = value; end
 
@@ -777,10 +777,10 @@ for key,value in pairs({
 		
 -- SL Maldraxxus/Necrolord
 		[-920] = "Ковенант: Некролорды",											-- Covenant: Necrolord
-		[-921] = "Улучшения для обители",											-- Sanctum Upgrades (Necrolord)
+		[-921] = "Улучшения для Обители",											-- Sanctum Upgrades (Necrolord)
 		[-922] = "Театр Боли",												-- Theater of Pain
 		[-923] = "Фабрика Поганищ",											-- Abomination Factory (Necrolord)
-		[-924] = "Транспортная сеть",											-- Transport Network (Necrolord)
+		[-924] = "Транспортная Сеть",											-- Transport Network (Necrolord)
 		[-925] = "1-й уровень: Собери себе друга",										-- Abomination Factory (Necrolord) Tier 1
 		[-926] = "2-й уровень: А теперь добавим ножек",										-- Abomination Factory (Necrolord) Tier 2
 
