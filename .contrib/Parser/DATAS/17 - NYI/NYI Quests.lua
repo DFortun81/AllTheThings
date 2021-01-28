@@ -11,6 +11,9 @@ _.NeverImplemented =
 		q(241,   {	-- <TEST> HEY MISTER WILSON!
 			["u"] = NEVER_IMPLEMENTED,
 		}),
+		q(39991, {	-- Blessing of Cenarius
+			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
+		}),
 		q(12338, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,

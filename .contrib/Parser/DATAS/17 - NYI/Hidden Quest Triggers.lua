@@ -1121,6 +1121,7 @@ _.HiddenQuestTriggers =
 		q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer
 		q(40610),	-- 7.0 Highmountain - Vignette - Worm Treasure - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing Treasure Worm
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
+		q(41246),	-- Snowblind Mesa Phased Terrain Tracking Quest — when Snowblind Mesa phases during #42512, "Highmountain Stands"
 		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
@@ -1205,6 +1206,7 @@ _.HiddenQuestTriggers =
 		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
+		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1665,6 +1667,7 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(39576),	-- Echoes of Deathwing
 		q(40050),	-- Shipwreck Cove
 		q(39317),	-- Siege of Crawliac
 		q(40316),	-- The Screeching Crag
