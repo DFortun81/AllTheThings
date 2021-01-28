@@ -11985,7 +11985,7 @@ function app:GetDataCache()
 			db.npcID = -6013;	-- Factions, for 'mapping' tech on Factions to work properly
 			-- db = app.CreateAchievement(11177, app.Categories.Factions);
 			db.expanded = false;
-			db.text = "Factions";
+			db.text = L["FACTIONS"];		-- L["FACTIONS"] = "Factions"
 			db.icon = "Interface\\Addons\\AllTheThings\\assets\\factions";
 			table.insert(g, db);
 		end
