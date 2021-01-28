@@ -1215,6 +1215,9 @@ _.Zones =
 										["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 										["provider"] = { "n", 166476 },	-- Warden Casad
 										["coord"] = { 33.4, 62.0, 1662 },
+										["g"] = {
+											i(177953),	-- Untamed Spirit
+										},
 									}),
 									q(62587, {	-- In Search of Inner Calm (1)
 										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
