@@ -15,6 +15,7 @@ local L = app.L;
 	
 		-- Big new chunk from AllTheThings.lua
 	
+	L.FACTIONS = "Фракции";
 	L.COORDINATES_STRING = "Координаты";
 	L.FLIGHT_PATHS = "Пути Полётов";
 	L.KNOWN_BY = "Изучено ";
