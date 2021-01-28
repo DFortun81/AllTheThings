@@ -23,6 +23,7 @@ app.L = {
 	
 	-- Big new chunk from AllTheThings.lua
 	
+	["FACTIONS"] = "Factions";
 	["COORDINATES_STRING"] = "Coordinates";
 	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by ";
