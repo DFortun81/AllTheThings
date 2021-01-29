@@ -1207,6 +1207,8 @@ _.HiddenQuestTriggers =
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
+		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
+		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1676,6 +1678,7 @@ _.HiddenQuestTriggers =
 
 		--	Stormheim bonus objectives
 		q(42431),	-- The Brood of Nithogg
+		q(38343),	-- Raze Hel
 		q(40111),	-- Rout the Bilgefin Invaders
 
 		--	Val'sharah bonus objectives
@@ -3165,6 +3168,11 @@ _.HiddenQuestTriggers =
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
 		q(60813),	--  /
 		q(60814),	-- /
+		q(60805),	-- \
+		q(60806),	--  \
+		q(60807),	--   running over Lunarlight Buds for Lunarlight Pod at 38.8, 53.6, for #60791
+		q(60808),	--  /
+		q(60809),	-- /
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(61692),	-- \

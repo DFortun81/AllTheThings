@@ -38,7 +38,6 @@ _.ExpansionFeatures =
 					}),
 					q(41086, {	-- A Peaceful World
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57, 709 },
 						["sourceQuests"] = { 41039 }	-- Stolen Knowledge
@@ -61,7 +60,6 @@ _.ExpansionFeatures =
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["maps"] = { 634 }	-- Stormheim
@@ -91,7 +89,6 @@ _.ExpansionFeatures =
 					}),
 					q(41854, {	-- Brick by Brick
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 105152 },	-- Hiro
 						["sourceQuests"] = {
 							41851,	-- Quelling the Tide
@@ -200,7 +197,6 @@ _.ExpansionFeatures =
 					}),
 					q(41910, {	-- Freya's Spring
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["maps"] = { 634 },	-- Stormheim
@@ -222,14 +218,12 @@ _.ExpansionFeatures =
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 103049 },	-- Melba
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
 						["maps"] = { 704 }	-- Halls of Valor, Stormheim
@@ -259,9 +253,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41086 },	-- A Peaceful World
 					}),
 					q(44249, {	-- Inner Sanctuary
-						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 112338 },	-- Caydori Brightstar
+						["classes"] = { MONK },
+						["coord"] = { 50.3, 59.0, 709 },
 						["g"] = {
 							i(139734),	-- Grandmaster's Crown
 						},
@@ -303,7 +297,6 @@ _.ExpansionFeatures =
 					}),
 					q(43151, {	-- Making a Trade
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 109738 },	-- Fleuris Asterleaf
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
 						["maps"] = { 641 },	-- Val'sharah
@@ -315,12 +308,10 @@ _.ExpansionFeatures =
 					}),
 					q(44238, {	-- Meditations on Fate
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 110817 },	-- Yushi
 					}),
 					q(41852, {	-- No Monk Left Behind
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["maps"] = { 634 },	-- Stormheim
@@ -350,7 +341,6 @@ _.ExpansionFeatures =
 					}),
 					q(41851, {	-- Quelling the Tide
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 105088 },	-- Sylara Steelsong
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["maps"] = { 634 },	-- Stormheim
@@ -419,7 +409,6 @@ _.ExpansionFeatures =
 					}),
 					q(41039, {	-- Stolen Knowledge
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 102843 },	-- Aegira
 						["sourceQuests"] = { 41038 },	-- The Mead Master
 						["maps"] = { 634 },	-- Stormheim
@@ -501,10 +490,10 @@ _.ExpansionFeatures =
 						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(41849, {	-- The Iron Fist
-						["classes"] = { MONK },
-						["lvl"] = 110,
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 43054 },	-- An Ample Stockpile
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["classes"] = { MONK },
+						["coord"] = { 51.4, 48.4, 709 },	-- The Wandering Isle
 					}),
 					q(40569, {	-- The Legend of the Sands
 						["description"] = "Offered when you pursue your Windwalker artifact weapon.",
@@ -513,15 +502,14 @@ _.ExpansionFeatures =
 						["coord"] = { 51.4, 48.5, 709 },	-- The Wandering Isle
 					}),
 					q(41850, {	-- The Master of Swords
-						["classes"] = { MONK },
-						["lvl"] = 110,
-						["provider"] = { "n", 105045 },	-- Angus Ironfist
 						["sourceQuests"] = { 41849 },	-- The Iron Fist
+						["provider"] = { "n", 105045 },	-- Angus Ironfist
+						["classes"] = { MONK },
+						["coord"] = { 62.9, 59.5, 634 },
 						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41038, {	-- The Mead Master
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 41736 },	-- Iron-Body Ponshu
 						["sourceQuests"] = {
 							41736,	-- Champion: Angus Ironfist
@@ -651,7 +639,6 @@ _.ExpansionFeatures =
 					}),
 					q(41853, {	-- Zero to Hiro
 						["classes"] = { MONK },
-						["lvl"] = 110,
 						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["maps"] = { 634 },	-- Stormheim

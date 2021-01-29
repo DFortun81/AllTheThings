@@ -90,9 +90,10 @@ _.Zones =
 							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
 							["crs"] = {
 								-- Confirmed Follower ID's which will drop the loot objects
-								170029,	-- Twinklewings [Night Fae]
-								170016,	-- Dregs [Necrolord]
 								170035,	-- Deos [Kyrian]
+								170016,	-- Dregs [Necrolord]
+								170045,	-- Drippy [Venthyr]
+								170029,	-- Twinklewings [Night Fae]
 
 								-- Follower ID's which will NOT drop loot objects
 								-- 170044,	-- Nandor [Venthyr]
