@@ -586,6 +586,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(58912, {	-- An Urgent Meeting
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, 84 },
 					["sourceQuest"] = 58911,	-- Home Is Where the Hearth Is
@@ -761,6 +762,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(58908, {	-- Finding Your Way (A)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["coord"] = { 66.3, 78.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 163095 },	-- Lindie Springstock
@@ -848,6 +850,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(58911, {	-- Home Is Where the Hearth Is
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 79.0, 69.8, 84 },
 					["sourceQuests"] = {
@@ -944,6 +947,7 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(58909, {	-- License to Ride
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163007 },	-- Curly
 					["coord"] = { 77.3, 67.0, 84 },
 					["sourceQuest"] = 58908,	-- Finding Your Way (A)
@@ -1587,12 +1591,14 @@ _.Zones =
 					},
 				}),
 				q(59583, {	-- Welcome to Stormwind
+					["customCollect"] = "NPE",	-- New Player Experience
 					["coord"] = { 73.6, 91.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 154169 },	-- Captain Garrick
 					["sourceQuest"] = 55991,	-- An End to Beginnings
 				}),
 				q(58910, {	-- What's Your Specialty? (Druid)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1600,6 +1606,7 @@ _.Zones =
 					["classes"] = { DRUID },
 				}),
 				q(59586, {	-- What's Your Specialty? (Hunter)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1607,6 +1614,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 				}),
 				q(59587, {	-- What's Your Specialty? (Mage)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1614,6 +1622,7 @@ _.Zones =
 					["classes"] = { MAGE },
 				}),
 				q(59588, {	-- What's Your Specialty? (Monk)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1621,6 +1630,7 @@ _.Zones =
 					["classes"] = { MONK },
 				}),
 				q(59589, {	-- What's Your Specialty? (Paladin)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1628,6 +1638,7 @@ _.Zones =
 					["classes"] = { PALADIN },
 				}),
 				q(59590, {	-- What's Your Specialty? (Priest)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1635,6 +1646,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 				}),
 				q(59591, {	-- What's Your Specialty? (Rogue)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1642,6 +1654,7 @@ _.Zones =
 					["classes"] = { ROGUE },
 				}),
 				q(59592, {	-- What's Your Specialty? (Shaman)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1649,6 +1662,7 @@ _.Zones =
 					["classes"] = { SHAMAN },
 				}),
 				q(59593, {	-- What's Your Specialty? (Warlock)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
@@ -1656,6 +1670,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 				}),
 				q(59594, {	-- What's Your Specialty? (Warrior)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, 84 },
 					["sourceQuest"] = 58909,	-- License to Ride
