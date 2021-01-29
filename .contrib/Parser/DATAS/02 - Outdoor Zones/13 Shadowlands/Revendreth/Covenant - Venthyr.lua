@@ -1210,10 +1210,13 @@ _.Zones =
 											crit(16),	-- Stonehead
 										}),
 										ach(14749, {	-- Rendle's Big Day
-											crit(1),	-- Crown of the Righteous
-											crit(2),	-- Fae Revel Masque
-											crit(3),	-- Pink Party Hat
-											crit(4),	-- Red Noggin Candle
+											["crs"] = { 165302 },	-- Rendle
+											["g"] = {
+												crit(1),	-- Crown of the Righteous
+												crit(2),	-- Fae Revel Masque
+												crit(3),	-- Pink Party Hat
+												crit(4),	-- Red Noggin Candle
+											},
 										}),
 										ach(14680, {	-- Something for Everyone
 										--	TODO: add remaining crit to the places From Whence They Come

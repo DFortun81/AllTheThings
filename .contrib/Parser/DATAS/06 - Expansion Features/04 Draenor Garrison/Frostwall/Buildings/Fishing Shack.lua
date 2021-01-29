@@ -16,21 +16,22 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(QUESTS, {
+							i(112623, {	-- Pack of Fishing Supplies
+								["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
+								["g"] = {
+									i(34834),	-- Recipe: Captain Rumsey's Lager
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(44983),	-- Strand Crawler Pet
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
 							q(35075, {	-- Abyssal Gulper Eel
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
-								["g"] = {
-									i(112623, {	-- Pack of Fishing Supplies
-										i(34834),	-- Recipe: Captain Rumsey's Lager
-										i(33820),	-- Weather-Beaten Fishing Hat
-										i(44983),	-- Strand Crawler Pet
-										i(45991),	-- Bone Fishing Pole
-										i(45992),	-- Jeweled Fishing Pole
-									}),
-								},
 							}),
 							q(36802, {	-- Abyssal Gulper Lunker
 								["requireSkill"] = FISHING,

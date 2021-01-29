@@ -164,6 +164,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 3028 },	-- Kah Mistrunner
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(29349, {	-- Craving Crayfish
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
@@ -174,12 +184,6 @@ _.Zones =
 							["g"] = {
 								crit(4, {	-- Craving Crayfish
 									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -194,12 +198,6 @@ _.Zones =
 								crit(1, {	-- Pond Predators
 									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29354, {	-- Shiny Baubles
@@ -212,12 +210,6 @@ _.Zones =
 							["g"] = {
 								crit(5, {	-- Shiny Baubles
 									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -232,12 +224,6 @@ _.Zones =
 								crit(3, {	-- The Race to Restock
 									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29346, {	-- The Ring's the Thing
@@ -250,12 +236,6 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- The Ring's the Thing
 									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

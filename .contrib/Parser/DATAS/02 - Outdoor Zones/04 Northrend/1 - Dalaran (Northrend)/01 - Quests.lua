@@ -29,6 +29,7 @@ _.Zones =
 				}),
 				i(46007,  {	-- Bag of Fishing Treasures
 					["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+					["crs"] = { 28742 },	-- Marcia Chase
 					["g"] = {
 						i(46004),	-- Sealed Vial of Poison
 						i(44983),	-- Strand Crawler Pet
