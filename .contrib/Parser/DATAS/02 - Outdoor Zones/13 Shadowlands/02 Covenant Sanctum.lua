@@ -9,8 +9,12 @@ _.Zones =
 			["description"] = "These rewards are shared between each Covenant.",
 			["g"] = {
 				n(-914, {	-- Adventures
-					-- todo: find object id for the table
-					--["modelScale"] = 2,
+					["crs"] = {
+						154527,	-- Command Table [Kyrian]
+						175136,	-- Command Table [Necrolord]
+						172400,	-- Command Table [Night Fae]
+						166143,	-- Command Table [Venthyr]
+					},
 					["g"] = {
 						--mission(1877, {	-- The Shadow War
 							-- Mounts
