@@ -116,7 +116,7 @@ _.Zones =
 						i(181556, {	-- Tribute of the Court / Revendreth
 							["description"] = "Rewarded by completing a Calling based in Revendreth.",
 							["g"] = {
-								i(181224),	-- Avowed Arcanist's Staff
+								-- i(181224),	-- Avowed Arcanist's Staff / Zone Reward
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
@@ -126,7 +126,7 @@ _.Zones =
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
 							["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
 							["g"] = {
-								i(184159, {	-- Oozing Necroray Egg (Timer)
+								i(184159, {	-- Necroray Egg (Timer)
 									i(184158, {	-- Oozing Necroray Egg (No Timer)
 										i(184160),	-- Bulbous Necroray
 										i(184161),	-- Infested Necroray
@@ -157,22 +157,29 @@ _.Zones =
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
 							["g"] = {
 								i(176850),	-- Blank Invitation
-								i(182348),	-- Lavish Harvest
+								-- i(182348),	-- Lavish Harvest
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
 							["g"] = {
-								i(181705),	-- Celestial Effervescence
-								i(182111),	-- Spiritual Resonance
+								i(184159, {	-- Necroray Egg (Timer)
+									i(184158, {	-- Oozing Necroray Egg (No Timer)
+										i(184160),	-- Bulbous Necroray
+										i(184161),	-- Infested Necroray
+										i(184162),	-- Pestilent Necroray
+									}),
+								}),
+								-- i(181705),	-- Celestial Effervescence
+								-- i(182111),	-- Spiritual Resonance
 							},
 						}),
 						i(181741, {	-- Tribute of the Paragon / Bastion
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 							["g"] = {
-								i(182145),	-- Heavy Rainfall
-								i(181944),	-- Resonant Words
-								i(181867),	-- Swift Penitence
+								-- i(182145),	-- Heavy Rainfall
+								-- i(181944),	-- Resonant Words
+								-- i(181867),	-- Swift Penitence
 							},
 						}),
 					},

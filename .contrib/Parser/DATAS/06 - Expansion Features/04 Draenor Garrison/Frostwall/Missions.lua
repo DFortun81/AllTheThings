@@ -75,7 +75,7 @@ _.ExpansionFeatures =
 							mi(2,   {	-- Gronnlings Abound
 								i(112737, {	-- Contract: Ka'la of the Frostwolves
 									follower(153, {	-- Ka'la
-										["description"] = "Press Shift+Click to refresh or relog once you obtain this follower",
+										["description"] = "Press Shift+Click to refresh or relog once you obtain this follower.",
 									}),
 								}),
 							}),
@@ -427,6 +427,17 @@ _.ExpansionFeatures =
 							i(128319, {	-- Void-Shrouded Satchel
 								i(128318),	-- Touch of the Void
 							}),
+							i(120301),	-- Armor Enhancement Token
+							i(114128),	-- Balanced Weapon Enhancement
+							i(114745),	-- Braced Armor Enhancement
+							i(123858),	-- Follower Retraining Scroll Case
+							i(114808),	-- Fortified Armor Enhancement
+							i(114746),	-- Goredrenched Armor Set
+							i(114622),	-- Goredrenched Weaponry
+							i(114822),	-- Heavily Reinforced Armor Enhancement
+							i(122594),	-- Rush Order: Tailoring Emporium
+							i(114131),	-- Power Overrun Weapon Enhancement
+							i(120302),	-- Weapon Enhancement Token
 						},
 					}),
 					n(94398, {	-- Fleet Command Table
@@ -552,8 +563,8 @@ _.ExpansionFeatures =
 							i(127855, {	-- Iron Fleet Treasure Chest [Mythic]
 								["sym"] = {{"select", "instanceID", 669}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "itemID", 139630 }},
 							}),
-							i(116769), 	-- Mount
-							i(127856), 	-- Pet
+							i(116769),	-- Mudback Riverbeast
+							i(127856),	-- Left Shark
 							i(127781, {	-- Baleful Cloth Hood
 								i(124579),	-- Felcast Hood
 							}),
