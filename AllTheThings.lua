@@ -2998,19 +2998,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local abbrevs = L["ABBREVIATIONS"];
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) then
-					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
-						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source, replacement);
-						end
-						if j.u then
-							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-						elseif not app.RecursiveUnobtainableFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-						else
-							tinsert(temp, text);
+					-- don't use cost items as sources for the search
+					if not app.HasCost(j, paramA, paramB) then
+						local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+						if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
+							for source,replacement in pairs(abbrevs) do
+								text = string.gsub(text, source, replacement);
+							end
+							if j.u then
+								tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+							elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+							elseif not app.RecursiveUnobtainableFilter(j.parent) then
+								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+							else
+								tinsert(temp, text);
+							end
 						end
 					end
 				end
@@ -3663,6 +3666,17 @@ app.BuildCurrencies = function(group)
 				end
 			end
 		end
+	end
+end
+-- check if the group has a cost which includes the given parameters
+app.HasCost = function(group, idType, id)
+	-- only checking for item/currency costs
+	if not (idType == "itemID" or idType == "currencyID") then return false; end
+	-- group doesn't have a valid cost at all
+	if not group.cost or type(group.cost) ~= "table" then return false; end
+	for i,c in ipairs(group.cost) do
+		-- return true if exact cost is found
+		if c[2] == id and ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then return true; end
 	end
 end
 local function SendGroupMessage(msg)
