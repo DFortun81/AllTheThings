@@ -583,6 +583,7 @@ _.Zones =
 					["coord"] = { 44.3, 24.8, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29026,	-- Wenikee Boltbucket
+					["altQuests"] = { 3922 },	-- Nugget Slugs [Pre-4.0]
 				}),
 				q(1840,  {	-- Orm Stonehoof and the Brutal Helm
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
@@ -662,24 +663,28 @@ _.Zones =
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.3, 17.4, 10 },
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 				}),
 				q(29022, {	-- Samophlange
 					["coord"] = { 50.3, 25.6, 10 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 29021,	-- Samophlange
+					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 				}),
 				q(29023, {	-- Samophlange
 					["coord"] = { 50.3, 25.6, 10 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 29022,	-- Samophlange
+					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 				}),
 				q(29024, {	-- Samophlange
 					["coord"] = { 50.3, 25.6, 10 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 29023,	-- Samophlange
+					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 					["g"] = {
 						i(59568),	-- Painstakingly Crafted Belt
 						i(59569),	-- Clean Room Boots
@@ -1028,6 +1033,7 @@ _.Zones =
 					["coord"] = { 62.6, 16.9, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14003,	-- Samophlange Repair
+					["altQuests"] = { 3921 },	-- Wenikee Boltbucket [Pre-4.0]
 				}),
 				q(13999, {	-- Who's Shroomin' Who?
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim

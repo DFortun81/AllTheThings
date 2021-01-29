@@ -67,7 +67,7 @@ _.Zones =
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["description"] = "This quest is available Tauren upon reaching level 10.",
+					["description"] = "This quest is available to Tauren upon reaching level 10.",
 				}),
 				q(14087, {	-- Learn to Ride
 					["u"] = REMOVED_FROM_GAME,
