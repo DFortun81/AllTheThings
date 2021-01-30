@@ -48,22 +48,18 @@ profession(COOKING, {
 			},
 		}),
 	}),
-	{
-		["itemID"] = 86425,	-- Cooking School Bell
-		["groups"] = {
-			faction(1357, {		-- Nomi (Faction)
-				["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-				["creatureID"] = 64337,	-- Nomi (Child)
-				["collectible"] = false,
-				["groups"] = {
-					ach(7325),	-- Now I Am the Master
-					q(31820, {	-- A Present for Teacher
-						i(86468),	-- Apron
-					}),
-				},
-			}),
-		}
-	},
+	i(86425, {	-- Cooking School Bell
+		faction(1357, {		-- Nomi (Faction)
+			["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
+			["creatureID"] = 64337,	-- Nomi (Child)
+			["g"] = {
+				ach(7325),	-- Now I Am the Master
+				q(31820, {	-- A Present for Teacher
+					i(86468),	-- Apron
+				}),
+			},
+		}),
+	}),
 	n(101846, {	-- Nomi
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 		["maps"] = { -- Do not include 626 as that is Rogue Class Hall

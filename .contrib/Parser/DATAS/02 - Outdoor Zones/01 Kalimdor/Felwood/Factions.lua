@@ -7,7 +7,7 @@ _.Zones =
 		m(77, {	-- Felwood
 			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
-					["creatureID"] = 11558,	-- Kernda
+					["crs"] = { 11558 },	-- Kernda
 					["g"] = {
 						ach(944),	-- They Love Me In That Tunnel
 						n(QUESTS, {

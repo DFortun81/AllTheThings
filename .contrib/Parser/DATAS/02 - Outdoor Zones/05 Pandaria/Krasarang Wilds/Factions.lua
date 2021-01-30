@@ -9,7 +9,6 @@ _.Zones =
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 			n(FACTIONS, {
 				faction(1375, {	-- Dominance Offensive
-					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\achievement_general_hordeslayer",
 					["g"] = {
@@ -710,7 +709,6 @@ _.Zones =
 					},
 				}),
 				faction(1376, {	-- Operation: Shieldwall
-					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\achievement_general_allianceslayer",
 					["g"] = {
@@ -1415,7 +1413,6 @@ _.Zones =
 				}),
 				faction(1302, {	-- The Anglers
 					["requireSkill"] = FISHING,	-- doesn't seem like you can even get access to the faction on a non-fisher.  flew/walked all around the area on a character with no professions and nothing, and as soon as i flew up on a character with fishing the faction unlocked and all the NPCs appeared
-					["collectible"] = false,
 					["icon"] = "Interface\\Icons\\achievement_faction_anglers",
 					["g"] = {
 						n(QUESTS, {

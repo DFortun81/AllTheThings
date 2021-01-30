@@ -7,10 +7,7 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
 			n(FACTIONS, {
-				-- The Taunka 1064
-				-- The Hand of Vengeance 1067
 				faction(1073, {	-- The Kalu'ak
-					["achievementID"] = 949,	-- Tuskarrmageddon
 					["g"] = {
 						n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
 							["coord"] = { 48.6, 75.6, 115 },
@@ -46,7 +43,6 @@ _.Zones =
 					},
 				}),
 				faction(1091, {	-- The Wyrmrest Accord
-					["achievementID"] = 1007,
 					["g"] = {
 						n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
 							["coord"] = { 59.8, 53.0, 115 },

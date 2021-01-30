@@ -8,7 +8,7 @@ _.Zones =
 		m(117, {	-- Howling Fjord
 			n(FACTIONS, {
 				faction(1073, {	-- The Kalu'ak
-					["achievementID"] = 949,	-- Tuskarrmageddon
+					["collectible"] = false,	-- Collectible in Dragonblight
 					["g"] = {
 						n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
 							["coord"] = { 25.4, 58.6, 117 },

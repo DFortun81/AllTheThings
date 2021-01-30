@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+-- TODO: re-organize to current standards
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -10,9 +11,9 @@ _.Zones =
 				ach(1194, {		-- Into the Nether
 					crit(1, {		-- Socrethar
 						faction(932, {	-- The Aldor
-							["collectible"] = false,
-							["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>
-							["groups"] = {
+							["collectible"] = false,	-- Collectible in Shattrath
+							["crs"] = { 19321 },	-- Quartermaster Endarin <Aldor Quartermaster>
+							["g"] = {
 								q(10241, {	-- Distraction at Manaforge B'naar
 									["provider"] = { "n", 19466 },	-- Exarch Orelis
 									["coord"] = { 32.0, 64.2, 109 },
@@ -129,9 +130,9 @@ _.Zones =
 							},
 						}),
 						faction(934, {	-- The Scryers
-							["collectible"] = false,
-							["creatureID"] = 19331,	-- Quartermaster Enuril <Scryer Quartermaster>
-							["groups"] = {
+							["collectible"] = false,	-- Collectible in Shattrath
+							["crs"] = { 19331 },	-- Quartermaster Enuril <Scryer Quartermaster>
+							["g"] = {
 								q(10189, {	-- Manaforge B'naar
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 									["coord"] = { 32.0, 64.1, 109 },
@@ -1048,6 +1049,7 @@ _.Zones =
 						["coord"] = { 66.4, 67.2, 109 },
 					}),
 					faction(933, {	-- The Consortium
+						["collectible"] = false,	-- Collectible in Nagrand
 						["groups"] = {
 							q(10308, {	-- Another Heap of Ethereals
 								["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji

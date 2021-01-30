@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(FACTIONS, {   -- Factions
+			n(FACTIONS, {
                 faction(990, {  -- Scale of the Sands
 				    -- Repeatable Switch Ring Quests
                     q(11105, {	-- Champion No More

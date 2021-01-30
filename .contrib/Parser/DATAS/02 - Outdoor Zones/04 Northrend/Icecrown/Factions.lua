@@ -8,7 +8,6 @@ _.Zones =
 		m(118, {	-- Icecrown
 			n(FACTIONS, {
 				faction(1106, {	-- Argent Crusade
-					["achievementID"] = 947,	-- The Argent Crusade
 					["g"] = {
 						ach(945, {	-- The Argent Champion
 							title(99),	-- %s the Argent Champion
@@ -36,7 +35,6 @@ _.Zones =
 					},
 				}),
 				faction(1098, {	-- Knights of the Ebon Blade
-					["achievementID"] = 1009,	-- Knights of the Ebon Blade
 					["g"] = {
 						n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 							["coord"] = { 43.4, 20.6, 118 },

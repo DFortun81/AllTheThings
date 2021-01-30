@@ -8,8 +8,8 @@ _.Zones =
 		m(120, {	-- The Storm Peaks
 			n(FACTIONS, {
 				faction(1119, {	-- The Sons of Hodir
-					["creatureID"] = 30105,	-- King Jokkum
-					["groups"] = {
+					["crs"] = { 30105 },	-- King Jokkum
+					["g"] = {
 						n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
 							["coord"] = { 66.1, 61.4, 120 },
 							["g"] = {
