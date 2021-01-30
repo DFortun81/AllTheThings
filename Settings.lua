@@ -236,21 +236,21 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = "Mode" .. " v" .. app.Version;
+	local mode = L["MODE"] .. " v" .. app.Version;		-- L["MODE"] = "Mode"
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
-			mode = "Completionist " .. mode;
+			mode = L["TITLE_COMPLETIONIST"] .. mode;	-- L["TITLE_COMPLETIONIST"] = "Completionist ";
 		else
-			mode = "Unique Appearance " .. mode;
+			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode;		-- L["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
 		end
 	end
 	if self:Get("DebugMode") then
-		mode = "Debug " .. mode;
+		mode = L["TITLE_DEBUG"] .. mode;		-- L["TITLE_DEBUG"] = "Debug "
 	else
 		if self:Get("AccountMode") then
-			mode = "Account " .. mode;
+			mode = L["TITLE_ACCOUNT"] .. mode;		-- L["TITLE_ACCOUNT"] = "Account ";
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
-			mode = mode .. " (Main Only)";
+			mode = mode .. L["TITLE_MAIN_ONLY"];		-- L["TITLE_MAIN_ONLY"] = " (Main Only)";
 		end
 		
 		local things = {};
@@ -266,19 +266,19 @@ settings.GetModeString = function(self)
 			end
 		end
 		if thingCount == 0 then
-			mode = "None of the Things " .. mode;
+			mode = L["TITLE_NONE_THINGS"] .. mode;		-- L["TITLE_NONE_THINGS"] = "None of the Things ";
 		elseif thingCount == 1 then
-			mode = things[1] .. " Only " .. mode;
+			mode = things[1] .. L["TITLE_ONLY"] .. mode;		-- L["TITLE_ONLY"] = " Only ";
 		elseif thingCount == 2 then
-			mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
+			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == totalThingCount then
-			mode = "Insane " .. mode;
+			mode = L["TITLE_INSANE"] .. mode;		-- L["TITLE_INSANE"] = "Insane ";
 		elseif not settings:Get("Thing:Transmog") then
-			mode = "Some of the Things " .. mode;
+			mode = L["TITLE_SOME_THINGS"] .. mode;		-- L["TITLE_SOME_THINGS"] = "Some of the Things ";
 		end
 	end
 	if self:Get("Filter:ByLevel") then
-		mode = "Level " .. app.Level .. " " .. mode;
+		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;		-- L["TITLE_LEVEL"] = "Level ";
 	end
 	return mode;
 end
@@ -2173,7 +2173,7 @@ unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
 -- no chance
 local noChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 noChance:SetPoint("TOPLEFT", unobtainable, 10, -50)
-noChance:SetText("No Chance");
+noChance:SetText(L["NO_CHANCE_LABEL"]);		-- L["NO_CHANCE_LABEL"] = "No Chance";
 
 local noChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 noChanceFrame:SetPoint("TOP",noChance,0,-20);
@@ -2254,7 +2254,7 @@ end
 -- high
 local highChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 highChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
-highChance:SetText("High Chance");
+highChance:SetText(L["HIGH_CHENCE_LABEL"]);		-- L["HIGH_CHENCE_LABEL"] = "High Chance";
 
 local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 highChanceFrame:SetPoint("TOP",highChance,0,-20);
@@ -3275,7 +3275,7 @@ end)();
 -- The "About" Tab.				--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("About");
+local tab = settings:CreateTab(L["ABOUT"]);		-- L["ABOUT"] = "About"
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);

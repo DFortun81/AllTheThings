@@ -3441,7 +3441,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				table.sort(knownBy);
-				local desc = "Known by ";
+				local desc = L["KNOWN_BY"];		-- L["KNOWN_BY"] = "Known by "
 				local characters = GetDataMember("Characters");
 				for i,key in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
@@ -11209,7 +11209,7 @@ RowOnEnter = function (self)
 				else
 					str = "";
 				end
-				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ",
+				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",		-- L["COORDINATES_STRING"] = "Coordinates"
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
 			end
@@ -11935,7 +11935,7 @@ function app:GetDataCache()
 			self.g = cache;
 		end;
 		db.OnUpdate(db);
-		db.text = "Flight Paths";
+		db.text = L["FLIGHT_PATHS"];		-- L["FLIGHT_PATHS"] = "Flight Paths";
 		db.icon = "Interface\\Addons\\AllTheThings\\assets\\fpl";
 		table.insert(g, db);
 
@@ -12047,7 +12047,7 @@ function app:GetDataCache()
 			db.npcID = -6013;	-- Factions, for 'mapping' tech on Factions to work properly
 			-- db = app.CreateAchievement(11177, app.Categories.Factions);
 			db.expanded = false;
-			db.text = "Factions";
+			db.text = L["FACTIONS"];		-- L["FACTIONS"] = "Factions"
 			db.icon = "Interface\\Addons\\AllTheThings\\assets\\factions";
 			table.insert(g, db);
 		end
