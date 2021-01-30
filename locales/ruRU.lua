@@ -210,6 +210,20 @@ local L = app.L;
 	
 	-- Settings.lua
 		-- General tab
+			-- Mod Title
+
+	L.MODE = "Режим";
+	L.TITLE_COMPLETIONIST = "Коллекционера ";
+	L.TITLE_UNIQUE_APPEARANCE = "Уникальных Обликов ";
+	L.TITLE_DEBUG = "Отладки";
+	L.TITLE_ACCOUNT = "Учётной Записи ";
+	L.TITLE_MAIN_ONLY = " (Основного Персонажа)";
+	L.TITLE_NONE_THINGS = "Без Штучек ";
+	L.TITLE_ONLY = "";
+	L.TITLE_INSANE = "Безумный ";
+	L.TITLE_SOME_THINGS = "Некоторых Штучек ";
+	L.TITLE_LEVEL = "Уровня ";
+
 	L.GENERAL_TAB = "Общие";
 	L.TWITCH_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на мой канал Твитч.\n\nВы можете задавать вопросы, когда трансляция онлайн, и я постараюсь на них ответить!\n\nПримечание переводчика: на английском языке.";	
 	L.DISCORD_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на ALL THE THINGS Дискорд.\n\nВы можете делиться своим прогрессом или фрустрацией с другими собирателями!\n\nПримечание переводчика: на английском языке.";
