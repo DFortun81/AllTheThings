@@ -218,6 +218,21 @@ app.L = {
 
 	-- Settings.lua
 		-- General tab
+			-- Mod Title
+	
+	["MODE"] = "Mode";
+	["TITLE_COMPLETIONIST"] = "Completionist ";
+	["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+	["TITLE_DEBUG"] = "Debug ";
+	["TITLE_ACCOUNT"] = "Account ";
+	["TITLE_MAIN_ONLY"] = " (Main Only)";
+	["TITLE_NONE_THINGS"] = "None of the Things ";
+	["TITLE_ONLY"] = " Only ";
+	["TITLE_INSANE"] = "Insane " ;
+	["TITLE_SOME_THINGS"] = "Some of the Things " ;
+	["TITLE_LEVEL"] = "Level ";
+	
+	
 	["GENERAL_TAB"] = "General";
 	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";	
 	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!";
