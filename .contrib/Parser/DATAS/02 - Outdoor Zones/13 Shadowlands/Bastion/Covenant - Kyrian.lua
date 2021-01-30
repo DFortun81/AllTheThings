@@ -10,9 +10,9 @@ _.Zones =
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				["g"] = {
 					n(-901, sharedData({	-- Covenant Callings
-							["sourceQuests"] = { 57904 },	-- Our Eternal Charge
-							["repeatable"] = true,
-						}, {
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["repeatable"] = true,
+					}, {
 						q(62692, {	-- A Calling in Bastion
 							["sourceQuests"] = { 62698 },	-- A Call to Service
 							["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
@@ -366,7 +366,7 @@ _.Zones =
 						}),
 						q(63002, {	-- Dangerous to Go Alone
 						--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
-						--	["sourceQuests"] = {  },	-- 
+						--	["sourceQuests"] = {  },	--
 							["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 							["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
 						}),
@@ -620,7 +620,7 @@ _.Zones =
 							["coord"] = { 68.3, 41.6, 1533 },	-- Bastion
 						}),
 						q(57113, {	-- Lysonia's Trail
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["description"] = "Requires Renown 20.",
 							["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 							["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
@@ -970,11 +970,11 @@ _.Zones =
 							["coord"] = { 44.0, 51.8, 1565 },
 							["sourceQuests"] = { 58775 },	-- Meet the Queen
 						}),
-						
-						-- q(, {	-- 
-						-- 	["sourceQuests"] = {  },	-- 
-						-- 	["provider"] = { "n",  },	-- 
-						-- 	["coord"] = {  },	-- 
+
+						-- q(, {	--
+						-- 	["sourceQuests"] = {  },	--
+						-- 	["provider"] = { "n",  },	--
+						-- 	["coord"] = {  },	--
 						-- }),
 					}),
 					n(RARES, {
@@ -1267,7 +1267,7 @@ _.Zones =
 									q(61356, {	-- Echthra, Dame of Hated
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
-                                        ["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+										["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
@@ -1300,7 +1300,7 @@ _.Zones =
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
 									q(61361, {	-- Nuuminuuru
-                                        ["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
@@ -1325,7 +1325,7 @@ _.Zones =
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
 									q(61365, {	-- Splinterbark Nightmare
-                                        ["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 									}),
@@ -1734,7 +1734,7 @@ _.Zones =
 							["coord"] = { 63.3, 30.6, 1708 },
 							["g"] = {
 								i(180762, {	-- Phalynx of Humility (MOUNT!)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },
 										{ "c", 1885, 100 },
 									},
@@ -1746,13 +1746,13 @@ _.Zones =
 									["cost"] = { { "c", 1813, 750 } },
 								}),
 								i(184350, {	-- Ruffle (PET!)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(184352, {	-- Illusion: Transcendent Soul
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 30 },
 									},
@@ -1761,307 +1761,307 @@ _.Zones =
 									["cost"] = { { "c", 1813, 3500 } },
 								}),
 								i(177197, {	-- Harmonious Bearer's Chestplate
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177220, {	-- Harmonious Bearer's Cloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(177199, {	-- Harmonious Bearer's Gauntlets
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(177202, {	-- Harmonious Bearer's Girdle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(184545, {	-- Harmonious Bearer's Halberd
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177196, {	-- Harmonious Bearer's Helm
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177200, {	-- Harmonious Bearer's Legguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(177864, {	-- Harmonious Bearer's Poniard
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177201, {	-- Harmonious Bearer's Shoulders
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177198, {	-- Harmonious Bearer's Warboots
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(184240, {	-- Harmonious Bearer's Warglaive
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177203, {	-- Harmonious Bearer's Wristwraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(184541, {	-- Harmonious Collector's Battleaxe
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(174314, {	-- Harmonious Collector's Bulwark
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177667, {	-- Harmonious Collector's Chestplate
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177674, {	-- Harmonious Collector's Cloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(177669, {	-- Harmonious Collector's Gauntlets
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(177672, {	-- Harmonious Collector's Girdle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(180316, {	-- Harmonious Collector's Greatmaul
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177666, {	-- Harmonious Collector's Helm
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177848, {	-- Harmonious Collector's Kopis
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(177670, {	-- Harmonious Collector's Legguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(177671, {	-- Harmonious Collector's Shoulders
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177668, {	-- Harmonious Collector's Warboots
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(177673, {	-- Harmonious Collector's Wristwraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179955, {	-- Harmonious Forgelite's Belt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(184542, {	-- Harmonious Forgelite's Blade
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179950, {	-- Harmonious Forgelite's Boots
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(177859, {	-- Harmonious Forgelite's Bow
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179953, {	-- Harmonious Forgelite's Breeches
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(174303, {	-- Harmonious Forgelite's Carver
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179957, {	-- Harmonious Forgelite's Cloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179951, {	-- Harmonious Forgelite's Gloves
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179952, {	-- Harmonious Forgelite's Helm
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179954, {	-- Harmonious Forgelite's Spaulders
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179949, {	-- Harmonious Forgelite's Vest
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179956, {	-- Harmonious Forgelite's Wristwraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(184543, {	-- Harmonious Watcher's Barb
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(178180, {	-- Harmonious Watcher's Chestplate
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(178187, {	-- Harmonious Watcher's Cloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(178182, {	-- Harmonious Watcher's Gauntlets
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(178185, {	-- Harmonious Watcher's Girdle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(177869, {	-- Harmonious Watcher's Guiding Light
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(178179, {	-- Harmonious Watcher's Helm
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(178183, {	-- Harmonious Watcher's Legguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(178184, {	-- Harmonious Watcher's Shoulders
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(177854, {	-- Harmonious Watcher's Spellsword
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(178974, {	-- Harmonious Watcher's Vesperstaff
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(178181, {	-- Harmonious Watcher's Warboots
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(178186, {	-- Harmonious Watcher's Wristwraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(181294, {	-- Harmonious Wings of the Ascended
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 40 },
 									},

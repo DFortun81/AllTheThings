@@ -9,7 +9,7 @@ _.Zones =
 			n(-929, {	-- Covenant: Night Fae
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["g"] = {
-					n(ACHIEVEMENTS, {
+					n(ACHIEVEMENTS,{
 						ach(14789),	-- All Spirits Great and Small
 						ach(14676),	-- Divine Spirit Savior
 						ach(14780),	-- Meditation Master
@@ -21,9 +21,9 @@ _.Zones =
 						ach(14670),	-- That's the Spirit
 					}),
 					n(-901, sharedData({	-- Covenant Callings
-							["sourceQuests"] = { 62899 },	-- The Endless Forest
-							["repeatable"] = true,
-						}, {
+						["sourceQuests"] = { 62899 },	-- The Endless Forest
+						["repeatable"] = true,
+					}, {
 						q(62693, {	-- A Calling in Ardenweald
 							["sourceQuests"] = { 62697 },	-- A Call to Service
 							["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
@@ -202,7 +202,7 @@ _.Zones =
 							},
 						}),
 					})),
-					n(QUESTS, {						
+					n(QUESTS, {
 						-- These quests are not part of the covenant questline chapters, but are Night Fae only
 						q(61058, {	-- Bound in Dreams
 							-- No idea what triggers this because they added the quest weeks after I already had Dreamweaver.
@@ -290,7 +290,7 @@ _.Zones =
 							["provider"] = { "n", 160262 },	-- Ysera
 							["coord"] = { 44.6, 39.0, 1701 },
 						}),
-						
+
 						-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
 
 						-- Chapter 1: For Queen and Grove!
@@ -384,7 +384,7 @@ _.Zones =
 						}),
 						q(63008, {	-- The Forge of Bonds
 						--	TODO: unsure how to pick up this version.  it automatically turned in with 61541
-						--	["sourceQuests"] = {  },	-- 
+						--	["sourceQuests"] = {  },	--
 							["provider"] = { "n", 156634 },	-- Winter Queen
 						--	["coord"] = {  },
 						}),
@@ -472,7 +472,7 @@ _.Zones =
 								i(181909),	-- Runewarden's Hauberk
 								i(181979),	-- Runewarden's Vestment
 							},
-						}),					
+						}),
 
 						-- Chapter 4: Da Boss (Renown 8 required to start)
 						q(59809, {	-- On De Other Side
@@ -593,7 +593,7 @@ _.Zones =
 							["coord"] = { 44.7, 39.0, 1701 },
 						}),
 						q(59071, {	-- Mending a Broken Hart
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								59070,	-- A Sacrifice of Anima
 								59068,	-- A Secret Never Spoken
 								59069,	-- A Token of Lost Love
@@ -612,7 +612,7 @@ _.Zones =
 							["provider"] = { "n", 161509 },	-- Lady Moonberry
 							["coord"] = { 47.4, 36.1, 1701 },
 						}),
-						
+
 						-- Chapter 6: Drust to Drust (Renown 13 required to start)
 						q(60898, {	-- The Fate of Ara'lon
 							["sourceQuests"] = { 62560 },	-- Growing in Power
@@ -703,7 +703,7 @@ _.Zones =
 							["coord"] = { 33.8, 54.4, 1565 },
 						}),
 						q(61711, {	-- Ritual of Purification
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								61710,	 -- The Broken Spear
 								61709,	 -- Witch's Satchel
 							},
@@ -760,7 +760,7 @@ _.Zones =
 							["coord"] = { 35.3, 51.2, 1565 },
 						}),
 						q(59721, {	-- Becoming the Hunt
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								58449,	-- Acid Reflux
 								58450,	-- Anima Instincts
 							},
@@ -811,7 +811,7 @@ _.Zones =
 							["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
 						}),
 						q(59749, {	-- One Little Whisper
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								59741,	-- Dark Mojo for a Dark Loa
 								59742,	-- Delaying the Other Side
 								59739,	-- The Problem with Containing a Death Loa
@@ -909,10 +909,10 @@ _.Zones =
 								i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 							},
 						}),
-						
+
 						------------------------------
 						-- Everything past here has not been verified yet in retail
-						
+
 						--[[
 						q(61554, {	-- The Play's The Thing
 							-- pretty sure this was beta only
@@ -1082,304 +1082,302 @@ _.Zones =
 							-- Tier 3: Hidden Pathways
 						}),
 						n(-930, {	-- Queen's Conservatory
-							["g"] = {
-								o(350978, {	-- Queen's Conservatory Cache
-									filter(100, {	-- Mounts
-										["coord"] = { 43.4, 33.6, 1565 },
-										-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
-										["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-										["g"] = {
-											i(181317),	-- Dauntless Duskrunner
-											i(180723),	-- Enchanted Wakener's Runestag
-											i(181300),	-- Gruesome Flayedwing
-											i(180726),	-- Pale Acidmaw
-											i(181316),	-- Silvertip Dredwing
-											i(180414, {	-- Wakener's Runestag
-												["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-												-- ["cost"] = {	-- TODO: waiting to verify...
-												-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
-												-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
-												-- },
-											}),
-										},
-									}),
-									i(181315),	-- Bloodfeaster Spiderling
-									i(180639),	-- Dusty Sporeflutterer
-									i(181314, {	-- Gulper Soul
-										["questID"] = 62421,	-- Gulper Soul
-									}),
-									i(181313, {	-- Snapper Soul
-										["questID"] = 62420,	-- Snapper Soul
-									}),
-									i(181302),	-- Spirit Tender's Branches
-									i(181306),	-- Spirit Tender's Bulb
-									i(181310),	-- Spirit Tender's Pack
-								}),
-								n(QUESTS, {
-									q(62447, {	-- A Rare and Unusual Spirit (1)
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
-										["coord"] = { 42.2, 52.9, 1662 },
-										["g"] = {
-											i(183704),	-- Shifting Spirit of Knowledge
-										},
-									}),
-									q(62454, {	-- A Rare and Unusual Spirit (2)
-										["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
-										["provider"] = { "n", 174329 },	-- Falir the Shifting
-										["coord"] = { 24.0, 53.3, 1662 },
-									}),
-									q(62603, {	-- A Rare and Unusual Spirit (3)
-										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
-										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
-										["coord"] = { 42.2, 52.9, 1662 },
-										["g"] = {
-											i(183805),	-- Tranquil Spirit of the Cosmos
-										},
-									}),
-									q(59862, {	-- A Savior for Lost Souls
-										["sourceQuests"] = { 63046 },	-- The End and the Beginning
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 69.9, 44.7, 1662 },
-									}),
-									q(62449, {	-- A Spirit's Duty
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
-										["provider"] = { "n", 174273 },	-- Falir the Shifting
-										["coord"] = { 24.0, 53.3, 1662 },
-										["isWeekly"] = true,
-										["altQuests"] = { 62445 },
-									}),
-									q(62450, {	-- A Spirit's Heart
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
-										["provider"] = { "n", 174329 },	-- Falir the Shifting
-										["coord"] = { 24.0, 53.3, 1662 },
-										["isWeekly"] = true,
-									}),
-									q(62452, {	-- A Spirit's Might
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
-										["provider"] = { "n", 174329 },	-- Falir the Shifting
-										["coord"] = { 24.0, 53.3, 1662 },
-										["isWeekly"] = true,
-									}),
-									q(62442, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-										["provider"] = { "n", 174324 },	-- Conservator Aoni
-										["coord"] = { 32.1, 62.0, 1662 },
-										["isDaily"] = true,
-									}),
-									q(62443, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-										["provider"] = { "n", 174324 },	-- Conservator Aoni
-										["coord"] = { 32.1, 62.0, 1662 },
-										["isDaily"] = true,
-									}),
-									q(62444, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-										["provider"] = { "n", 174324 },	-- Conservator Aoni
-										["coord"] = { 32.1, 62.0, 1662 },
-										["isDaily"] = true,
-									}),
-									q(60641, {	-- Blossoming of the Grove
-										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(59871, {	-- Catalyze This
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(62441, {	-- Fair Exchange for a Soul
-										["sourceQuests"] = { 59873 },	-- Greeting a God
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-										["isWeekly"] = true,
-										["g"] = {
-											i(178880),	-- Greater Dutiful Spirit
-											i(178877),	-- Greater Martial Spirit
-											i(178883),	-- Greater Prideful Spirit
-											i(177699),	-- Greater Untamed Spirit
-										},
-									}),
-									q(62600, {	-- Finding Inner Peace
-										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
-										["provider"] = { "n", 174507 },	-- Ohm of Meditation
-										["coord"] = { 25.6, 47.5, 1662 },
-									}),
-									q(59873, {	-- Greeting a God
-										["sourceQuests"] = { 59872 },	-- How to Save a God
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(59872, {	-- How to Save a God
-										["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-										["g"] = {
-											i(177953),	-- Untamed Spirit
-										},
-									}),
-									q(62587, {	-- In Search of Inner Calm (1)
-										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
-										["provider"] = { "n", 174507 },	-- Ohm of Meditation
-										["coord"] = { 25.6, 47.5, 1662 },
-									}),
-									q(62588, {	-- In Search of Inner Calm (2)
-										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
-										["provider"] = { "n", 174507 },	-- Ohm of Meditation
-										["coord"] = { 25.6, 47.5, 1662 },
-									}),
-									q(59999, {	-- Rebirth of the Grove
-										["sourceQuests"] = { 59873 },	-- Greeting a God
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(60640, {	-- Regrowth of the Grove
-										["sourceQuests"] = { 62467 },	-- Seed of a Thought
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(62467, {	-- Seed of a Thought
-										["sourceQuests"] = { 59871 },	-- Catalyze This
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-									}),
-									q(63046, {	-- The End and the Beginning
-										["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
-										["provider"] = { "n", 173171 },	-- Conservator Starry Night
-										["coord"] = { 56.0, 68.2, 1702 },
-									}),
-									q(62624, {	-- The Queen's Conservatory
-										["provider"] = { "n", 173171 },	-- Conservator Starry Night
-										["coord"] = { 56.0, 68.2, 1702 },
-									}),
-									
-									-- TODO: everything past here is yet to be verified on retail
-									q(60642, {	-- The Grove Resplendent
-										["provider"] = { "n", 166476 },	-- Warden Casad
-										["coord"] = { 33.4, 62.0, 1662 },
-										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-									}),
-									q(62625, {	-- A Rare and Unusual Spirit
-										["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-										["coord"] = { 42.2, 52.9, 1662 },
-										["maps"] = { 1669 },	-- Mists of Tirna Scithe
-										["g"] = {
-											i(183806),	-- Energetic Spirit of Curiosity
-										},
-									}),
-									--q(xxxxx, {	-- Master of Inner Calm
-										i(183856),	-- Mystical Orb of Meditation (TOY!)
-									--}),
-								}),
-								-- Spirits/Transmog
-								-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
-								n(-931, {		-- Lesser Spirit
-									["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. Its possible to receive rewards from higher quality spirits of the same type as well.",
+							o(350978, {	-- Queen's Conservatory Cache
+								filter(100, {	-- Mounts
+									["coord"] = { 43.4, 33.6, 1565 },
+									-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
+									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 									["g"] = {
-										i(177698, {		--	Untamed Spirit Ardenweald (Uncommon)
-											i(179548),		-- Elderwood Gavel
-											i(179563),		-- Heartwood Stem
-											i(181313),		-- Snapper Soul
-											i(181314),		-- Gulper Soul
-											i(180975),		-- Journeyman's Satchel
-										}),
-										i(178881, {		--	Dutiful Spirit Bastion (Uncommon)
-											i(181225),		-- Crossbow of Contemplative Calm
-											i(181226),		-- Bronze Dual-Bladed Glaive
-											i(181232),		-- Cupbearer's Claymore
-											i(181234),		-- Dutybound Spellblade
-											i(180975),		-- Journeyman's Satchel
-										}),
-										i(178874, {		--	Martial Spirit Maldraxxus (Uncommon)
-											i(181329),		-- Marrowfused Claymore
-											i(181321),		-- Gem-Crowned Wand
-											i(181327),		-- Spineforged Tenderizer
-											i(180975),		-- Journeyman's Satchel
-										}),
-										i(178882, {		--	Prideful Spirit Revendreth(Uncommon)
-											i(180955),		-- Stonewing Halberd
-											i(180956),		-- Axeblade Blunderbuss
-											i(180957),		-- Batwing Glaive
-											i(180963),		-- Crypt Keeper's Vessel
-											i(180975),		-- Journeyman's Satchel
+										i(181317),	-- Dauntless Duskrunner
+										i(180723),	-- Enchanted Wakener's Runestag
+										i(181300),	-- Gruesome Flayedwing
+										i(180726),	-- Pale Acidmaw
+										i(181316),	-- Silvertip Dredwing
+										i(180414, {	-- Wakener's Runestag
+											["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+											-- ["cost"] = {	-- TODO: waiting to verify...
+											-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
+											-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
+											-- },
 										}),
 									},
 								}),
-								n(-932, {		-- Spirit
-									["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
+								i(181315),	-- Bloodfeaster Spiderling
+								i(180639),	-- Dusty Sporeflutterer
+								i(181314, {	-- Gulper Soul
+									["questID"] = 62421,	-- Gulper Soul
+								}),
+								i(181313, {	-- Snapper Soul
+									["questID"] = 62420,	-- Snapper Soul
+								}),
+								i(181302),	-- Spirit Tender's Branches
+								i(181306),	-- Spirit Tender's Bulb
+								i(181310),	-- Spirit Tender's Pack
+							}),
+							n(QUESTS, {
+								q(62447, {	-- A Rare and Unusual Spirit (1)
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+									["coord"] = { 42.2, 52.9, 1662 },
 									["g"] = {
-										i(177699, {		--	Divine Untamed Spirit Ardenweald (Rare)
-											i(179499),		-- Nightwillow Barb
-											i(179538),		-- Grove Warden's Maul
-											i(179605),		-- Elderwood Barrier
-											i(179514),		-- Ripvine Saber
-											i(179585),		-- Nightwillow Shortbow
-											i(180726),		-- Pale Acidmaw
-											i(180723),		-- Enchanted Wakener's Runestag
-											i(180414),		-- Wakener's Runestag
-											i(180976),		-- Artisan's Satchel
-										}),
-										i(178880, {		--	Divine Dutiful Spirit (Rare)
-											i(181228),		-- Temple Guard's Partisan
-											i(181229),		-- Tranquil's Censer
-											i(181230),		-- Pugilist's Chakram
-											i(181233),		-- Bellringer's Hammer
-											i(181317),		-- Dauntless Duskrunner
-											i(180976),		-- Artisan's Satchel
-										}),
-										i(178877, {		--	Divine Martial Spirit (Rare)
-											i(181330),		-- Marrowfused Warglaive
-											i(181325),		-- Marrowfused Dagger
-											i(181328),		-- Marrowfused Sword
-											i(181331),		-- Marrowfused Shield
-											i(181300),		-- Gruesome Flayedwing
-											i(181326),		-- Bloodstained Hacksaw
-											i(181323),		-- Blightclutched Greatstaff
-											i(180976),		-- Artisan's Satchel
-										}),
-										i(178883, {		--	Divine Prideful Spirit (Rare)
-											i(180954),		-- Crypt Watcher's Spire
-											i(180959),		-- Dredger Anklebiter
-											i(180960),		-- Shiny-Metal Topped Basher
-											i(180954),		-- Ember Court Barrier
-											i(180976),		-- Artisan's Satchel
-										}),
+										i(183704),	-- Shifting Spirit of Knowledge
 									},
 								}),
-								n(-933, {		-- Greater Spirit
-									["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
+								q(62454, {	-- A Rare and Unusual Spirit (2)
+									["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+								}),
+								q(62603, {	-- A Rare and Unusual Spirit (3)
+									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
+									["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+									["coord"] = { 42.2, 52.9, 1662 },
 									["g"] = {
-										i(177700, {		--	Greater Untamed Spirit Ardenweald (Epic)
-											i(179509),		-- Grove Warden's Edge
-											i(179516),		-- Songwood Staff
-											i(179533),		-- Grove Warden's Harvester
-											--i(181225),	-- Backpack (Spirit Tender's Pack)
-											i(180977),		-- Spirit-Tender's Satchel
-										}),
-										i(178884, {		--	Greater Prideful Spirit (Epic)
-											i(180958),		-- Redelev House Foil
-											i(180961),		-- Silver-Bladed Ritual Dagger
-											i(180962),		-- Sterling-Silver Cudgel
-											--i(181317),	-- Backpack (Spirit Tender's Pack)
-											i(180977),		-- Spirit-Tender's Satchel
-										}),
-										i(178878, {		--	Greater Martial Spirit (Epic)
-											i(181320),		-- Bonejowl Ballista
-											i(181322),		-- Bonebound Tome
-											--i(181317),	-- Backpack (Spirit Tender's Pack)
-											i(180977),		-- Spirit-Tender's Satchel
-										}),
-										i(178879, {		--	Greater Dutiful Spirit (Epic)
-											i(181227),		-- Bronze Ceremonial Targe
-											i(181231),		-- Broadbladed Severer
-											i(181235),		-- Final Arbiter's Gavel
-											--i(181227),	-- Backpack (Spirit Tender's Pack)
-											i(180977),		-- Spirit-Tender's Satchel
-										}),
+										i(183805),	-- Tranquil Spirit of the Cosmos
 									},
 								}),
-							},
+								q(59862, {	-- A Savior for Lost Souls
+									["sourceQuests"] = { 63046 },	-- The End and the Beginning
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 69.9, 44.7, 1662 },
+								}),
+								q(62449, {	-- A Spirit's Duty
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174273 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+									["altQuests"] = { 62445 },
+								}),
+								q(62450, {	-- A Spirit's Heart
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+								}),
+								q(62452, {	-- A Spirit's Might
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+								}),
+								q(62442, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
+								q(62443, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
+								q(62444, {	-- Aid the Covenant
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 174324 },	-- Conservator Aoni
+									["coord"] = { 32.1, 62.0, 1662 },
+									["isDaily"] = true,
+								}),
+								q(60641, {	-- Blossoming of the Grove
+									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(59871, {	-- Catalyze This
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(62441, {	-- Fair Exchange for a Soul
+									["sourceQuests"] = { 59873 },	-- Greeting a God
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["isWeekly"] = true,
+									["g"] = {
+										i(178880),	-- Greater Dutiful Spirit
+										i(178877),	-- Greater Martial Spirit
+										i(178883),	-- Greater Prideful Spirit
+										i(177699),	-- Greater Untamed Spirit
+									},
+								}),
+								q(62600, {	-- Finding Inner Peace
+									["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
+									["provider"] = { "n", 174507 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+								}),
+								q(59873, {	-- Greeting a God
+									["sourceQuests"] = { 59872 },	-- How to Save a God
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(59872, {	-- How to Save a God
+									["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["g"] = {
+										i(177953),	-- Untamed Spirit
+									},
+								}),
+								q(62587, {	-- In Search of Inner Calm (1)
+									["sourceQuests"] = { 62600 },	-- Finding Inner Peace
+									["provider"] = { "n", 174507 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+								}),
+								q(62588, {	-- In Search of Inner Calm (2)
+									["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
+									["provider"] = { "n", 174507 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+								}),
+								q(59999, {	-- Rebirth of the Grove
+									["sourceQuests"] = { 59873 },	-- Greeting a God
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(60640, {	-- Regrowth of the Grove
+									["sourceQuests"] = { 62467 },	-- Seed of a Thought
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(62467, {	-- Seed of a Thought
+									["sourceQuests"] = { 59871 },	-- Catalyze This
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(63046, {	-- The End and the Beginning
+									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
+									["provider"] = { "n", 173171 },	-- Conservator Starry Night
+									["coord"] = { 56.0, 68.2, 1702 },
+								}),
+								q(62624, {	-- The Queen's Conservatory
+									["provider"] = { "n", 173171 },	-- Conservator Starry Night
+									["coord"] = { 56.0, 68.2, 1702 },
+								}),
+
+								-- TODO: everything past here is yet to be verified on retail
+								q(60642, {	-- The Grove Resplendent
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
+								}),
+								q(62625, {	-- A Rare and Unusual Spirit
+									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+									["coord"] = { 42.2, 52.9, 1662 },
+									["maps"] = { 1669 },	-- Mists of Tirna Scithe
+									["g"] = {
+										i(183806),	-- Energetic Spirit of Curiosity
+									},
+								}),
+								--q(xxxxx, {	-- Master of Inner Calm
+									i(183856),	-- Mystical Orb of Meditation (TOY!)
+								--}),
+							}),
+							-- Spirits/Transmog
+							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
+							n(-931, {		-- Lesser Spirit
+								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. Its possible to receive rewards from higher quality spirits of the same type as well.",
+								["g"] = {
+									i(177698, {		--	Untamed Spirit Ardenweald (Uncommon)
+										i(179548),		-- Elderwood Gavel
+										i(179563),		-- Heartwood Stem
+										i(181313),		-- Snapper Soul
+										i(181314),		-- Gulper Soul
+										i(180975),		-- Journeyman's Satchel
+									}),
+									i(178881, {		--	Dutiful Spirit Bastion (Uncommon)
+										i(181225),		-- Crossbow of Contemplative Calm
+										i(181226),		-- Bronze Dual-Bladed Glaive
+										i(181232),		-- Cupbearer's Claymore
+										i(181234),		-- Dutybound Spellblade
+										i(180975),		-- Journeyman's Satchel
+									}),
+									i(178874, {		--	Martial Spirit Maldraxxus (Uncommon)
+										i(181329),		-- Marrowfused Claymore
+										i(181321),		-- Gem-Crowned Wand
+										i(181327),		-- Spineforged Tenderizer
+										i(180975),		-- Journeyman's Satchel
+									}),
+									i(178882, {		--	Prideful Spirit Revendreth(Uncommon)
+										i(180955),		-- Stonewing Halberd
+										i(180956),		-- Axeblade Blunderbuss
+										i(180957),		-- Batwing Glaive
+										i(180963),		-- Crypt Keeper's Vessel
+										i(180975),		-- Journeyman's Satchel
+									}),
+								},
+							}),
+							n(-932, {		-- Spirit
+								["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
+								["g"] = {
+									i(177699, {		--	Divine Untamed Spirit Ardenweald (Rare)
+										i(179499),		-- Nightwillow Barb
+										i(179538),		-- Grove Warden's Maul
+										i(179605),		-- Elderwood Barrier
+										i(179514),		-- Ripvine Saber
+										i(179585),		-- Nightwillow Shortbow
+										i(180726),		-- Pale Acidmaw
+										i(180723),		-- Enchanted Wakener's Runestag
+										i(180414),		-- Wakener's Runestag
+										i(180976),		-- Artisan's Satchel
+									}),
+									i(178880, {		--	Divine Dutiful Spirit (Rare)
+										i(181228),		-- Temple Guard's Partisan
+										i(181229),		-- Tranquil's Censer
+										i(181230),		-- Pugilist's Chakram
+										i(181233),		-- Bellringer's Hammer
+										i(181317),		-- Dauntless Duskrunner
+										i(180976),		-- Artisan's Satchel
+									}),
+									i(178877, {		--	Divine Martial Spirit (Rare)
+										i(181330),		-- Marrowfused Warglaive
+										i(181325),		-- Marrowfused Dagger
+										i(181328),		-- Marrowfused Sword
+										i(181331),		-- Marrowfused Shield
+										i(181300),		-- Gruesome Flayedwing
+										i(181326),		-- Bloodstained Hacksaw
+										i(181323),		-- Blightclutched Greatstaff
+										i(180976),		-- Artisan's Satchel
+									}),
+									i(178883, {		--	Divine Prideful Spirit (Rare)
+										i(180954),		-- Crypt Watcher's Spire
+										i(180959),		-- Dredger Anklebiter
+										i(180960),		-- Shiny-Metal Topped Basher
+										i(180954),		-- Ember Court Barrier
+										i(180976),		-- Artisan's Satchel
+									}),
+								},
+							}),
+							n(-933, {		-- Greater Spirit
+								["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
+								["g"] = {
+									i(177700, {		--	Greater Untamed Spirit Ardenweald (Epic)
+										i(179509),		-- Grove Warden's Edge
+										i(179516),		-- Songwood Staff
+										i(179533),		-- Grove Warden's Harvester
+										--i(181225),	-- Backpack (Spirit Tender's Pack)
+										i(180977),		-- Spirit-Tender's Satchel
+									}),
+									i(178884, {		--	Greater Prideful Spirit (Epic)
+										i(180958),		-- Redelev House Foil
+										i(180961),		-- Silver-Bladed Ritual Dagger
+										i(180962),		-- Sterling-Silver Cudgel
+										--i(181317),	-- Backpack (Spirit Tender's Pack)
+										i(180977),		-- Spirit-Tender's Satchel
+									}),
+									i(178878, {		--	Greater Martial Spirit (Epic)
+										i(181320),		-- Bonejowl Ballista
+										i(181322),		-- Bonebound Tome
+										--i(181317),	-- Backpack (Spirit Tender's Pack)
+										i(180977),		-- Spirit-Tender's Satchel
+									}),
+									i(178879, {		--	Greater Dutiful Spirit (Epic)
+										i(181227),		-- Bronze Ceremonial Targe
+										i(181231),		-- Broadbladed Severer
+										i(181235),		-- Final Arbiter's Gavel
+										--i(181227),	-- Backpack (Spirit Tender's Pack)
+										i(180977),		-- Spirit-Tender's Satchel
+									}),
+								},
+							}),
 						}),
 						n(-937, {	-- Transport Network
 							-- (not adding tier headers at this time, can do it later if it needs to be more organized)
@@ -1718,7 +1716,7 @@ _.Zones =
 							["coord"] = { 60.2, 33.2, 1701 },	-- Heart of the Forest
 							["g"] = {
 								i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 100 },
 										{ "c", 1885, 40 },
 									},
@@ -1727,7 +1725,7 @@ _.Zones =
 									["cost"] = { { "c", 1813, 5000 } },
 								}),
 								i(180730, {	-- Wild Glimmerfur Prowler (MOUNT)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },
 										{ "c", 1885, 75 },
 									},
@@ -1736,7 +1734,7 @@ _.Zones =
 									["cost"] = { { "c", 1813, 750 } },
 								}),
 								i(182663, {	-- Trootie (PET)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 20 },
 									},
@@ -1749,55 +1747,55 @@ _.Zones =
 									["cost"] = { { "c", 1813, 250 } },
 								}),
 								i(179674, {	-- Night Courtier's Amice
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179782, {	-- Night Courtier's Anklewraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(181925, {	-- Night Courtier's Armbands
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179785, {	-- Night Courtier's Armguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179608, {	-- Night Courtier's Barrier
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179800, {	-- Night Courtier's Belt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(179803, {	-- Night Courtier's Bracers
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179791, {	-- Night Courtier's Britches
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(181926, {	-- Night Courtier's Buckle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
@@ -1806,259 +1804,259 @@ _.Zones =
 									["cost"] = { { "c", 1813, 3500 } },
 								}),
 								i(179628, {	-- Night Courtier's Cape
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179776, {	-- Night Courtier's Chestguard
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179910, {	-- Night Courtier's Chestplate
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179634, {	-- Night Courtier's Cloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179668, {	-- Night Courtier's Cowl
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179788, {	-- Night Courtier's Crest
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179680, {	-- Night Courtier's Cuffs
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179624, {	-- Night Courtier's Drape
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179494, {	-- Night Courtier's Fang
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(181931, {	-- Night Courtier's Footguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179908, {	-- Night Courtier's Gauntlets
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179904, {	-- Night Courtier's Girdle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(181930, {	-- Night Courtier's Gloves
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(181879, {	-- Night Courtier's Greatcloak
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179907, {	-- Night Courtier's Greathelm
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179906, {	-- Night Courtier's Greaves
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(181929, {	-- Night Courtier's Guise
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179665, {	-- Night Courtier's Handwraps
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(181932, {	-- Night Courtier's Hauberk
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179581, {	-- Night Courtier's Jaws
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179671, {	-- Night Courtier's Leggings
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(181928, {	-- Night Courtier's Legguards
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(179568, {	-- Night Courtier's Lyre
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(182352, {	-- Night Courtier's Mace
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179797, {	-- Night Courtier's Mantle
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179540, {	-- Night Courtier's Maul
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(181311, {	-- Night Courtier's Pack
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 40 },
 									},
 								}),
 								i(179905, {	-- Night Courtier's Pauldrons
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(181941, {	-- Night Courtier's Raiment
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179654, {	-- Night Courtier's Robes
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179909, {	-- Night Courtier's Sabatons
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179661, {	-- Night Courtier's Sandals
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179677, {	-- Night Courtier's Sash
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3000 },
 										{ "c", 1885, 25 },
 									},
 								}),
 								i(179558, {	-- Night Courtier's Scepter
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(181927, {	-- Night Courtier's Spaulders
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(180003, {	-- Night Courtier's Spire
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179658, {	-- Night Courtier's Tunic
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(179903, {	-- Night Courtier's Vambraces
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 2000 },
 										{ "c", 1885, 15 },
 									},
 								}),
 								i(179794, {	-- Night Courtier's Vestment
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 4000 },
 										{ "c", 1885, 30 },
 									},
 								}),
 								i(180020, {	-- Night Courtier's Wand
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(180077, {	-- Night Courtier's Warbow
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(180257, {	-- Night Courtier's Warglaive
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
 								}),
 								i(179528, {	-- Night Courtier's Warspear
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 50 },
 									},
@@ -2147,7 +2145,7 @@ _.Zones =
 							["coord"] = { 45.9, 56.4, 1701 },
 							["g"] = {
 								i(179602, {	-- Bulwark of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
@@ -2183,25 +2181,25 @@ _.Zones =
 									["cost"] = { { "c", 1813, 100 } },
 								}),
 								i(179493, {	-- Fang of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179567, {	-- Harp of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179580, {	-- Jaws of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(182319, {	-- Mace of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
@@ -2294,43 +2292,43 @@ _.Zones =
 									["cost"] = { { "c", 1813, 100 } },
 								}),
 								i(179560, {	-- Scepter of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(180005, {	-- Staff of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(180021, {	-- Wand of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(180079, {	-- Warbow of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(180259, {	-- Warglaive of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179529, {	-- Warspear of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
 								}),
 								i(179542, {	-- Warmaul of the Wild Hunt
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 10 },
 									},
@@ -2491,37 +2489,37 @@ _.Zones =
 							["coord"] = { 59.6, 52.9, 1565 },
 							["g"] = {
 								i(183053, {	-- Umbral Scythehorn (MOUNT)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(180415, {	-- Winterborn Runestag (MOUNT)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(182664, {	-- Stemmins (PET)
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 163036, 250 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(180636, {	-- Willowbreeze (PET)
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 163036, 250 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(184665, {	-- Chronicle of Lost Memories
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1885, 35 },
 									},
 								}),
 								i(184116, {	-- Ensemble: Winterborn Guise
 									["questID"] = 61913,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 25000 },
 										{ "c", 1885, 5 },
 									},
@@ -2541,7 +2539,7 @@ _.Zones =
 								}),
 								i(184115, {	-- Ensemble: Winterborn Raiment
 									["questID"] = 61914,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 25000 },
 										{ "c", 1885, 5 },
 									},
@@ -2561,7 +2559,7 @@ _.Zones =
 								}),
 								i(184114, {	-- Ensemble: Winterborn Regalia
 									["questID"] = 61915,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 25000 },
 										{ "c", 1885, 5 },
 									},
@@ -2581,7 +2579,7 @@ _.Zones =
 								}),
 								i(184117, {	-- Ensemble: Winterborn Warbark
 									["questID"] = 61912,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 25000 },
 										{ "c", 1885, 5 },
 									},
@@ -2600,26 +2598,26 @@ _.Zones =
 								}),
 								i(182174, {	-- Leonine Soul
 									["questID"] = 62429,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(182182, {	-- Lupine Soul
 									["questID"] = 62438,
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 1500 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(181308, {	-- Winterwoven Bulb
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 5 },
 									},
 								}),
 								i(181312, {	-- Winterwoven Pack
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 3500 },
 										{ "c", 1885, 5 },
 									},

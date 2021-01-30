@@ -19,10 +19,10 @@ app.L = {
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
-	
-	
+
+
 	-- Big new chunk from AllTheThings.lua
-	
+
 	["REQUIRES"] = "Requires";
 	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
@@ -44,7 +44,7 @@ app.L = {
 	["MUSIC_ROLLS_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 	["MUSIC_ROLLS_DESC_2"] = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
 	["OPPOSITE_FACTION_EQ"] = "Opposite faction equivalent: ";
-	["SELFIE_DESC"] = "Take a selfie using your ";  
+	["SELFIE_DESC"] = "Take a selfie using your ";
 	["SELFIE_DESC_2"] = " with |cffff8000";
 	["CLASSIC_TIER_DESC"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
 	["TBC_TIER_DESC"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
@@ -200,7 +200,7 @@ app.L = {
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
 	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	
+
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffCtrl + Click to Expand/Collapse Recursively|r";
@@ -211,11 +211,11 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
-	
+
 	-- Settings.lua
 		-- General tab
 	["GENERAL_TAB"] = "General";
-	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";	
+	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!";
 	["DEBUG_MODE"] = "|Cff15abffDebug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
@@ -298,7 +298,7 @@ app.L = {
 	["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
 	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
 	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
-	
+
 		-- Account Wide Checkboxes
 	["ACCOUNT_WIDE"] = "Account Wide";
 	["ACCOUNT_WIDE_1_TOOLTIP"] = "Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -313,8 +313,8 @@ app.L = {
 	["ACCOUNT_WIDE_13_TOOLTIP"] = "Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
 	["ACCOUNT_WIDE_14_TOOLTIP"] = "Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!";
 	["ACCOUNT_WIDE_15_TOOLTIP"] = "Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
-	
-		--  Filters tab					
+
+		--  Filters tab
 
 	["FILTERS_TAB"] = "Filters";
 	["ITEM_FILTER_LABEL"] = "Armor / Weapon Filters";
@@ -326,9 +326,9 @@ app.L = {
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
 	["LEGACY_FILTERS_LABEL"] = "Legacy / Unobtainable Filters";
 	["LEGACY_FILTERS_TEMP_LABEL"] = "|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r";
-	
+
 		-- Unobtainables tab
-	
+
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
 	["SEASONAL_LABEL"] = "Seasonal (Check to hide)";
 	["SEASONAL_ENABLE"] = "Filter Seasonal Items";
@@ -338,9 +338,9 @@ app.L = {
 	["UNOBTAINABLE_ALL"] = "Toggle All Unobtainable";
 	["NO_CHANCE_ALL"] = "Toggle All \"No Chance\"";
 	["HIGH_CHANCE_ALL"] = "Toggle All \"High Chance\"";
-	
+
 		-- Interface tab
-	
+
 	["INTERFACE_TAB"] = "Interface";
 	["TOOLTIP_LABEL"] = "Tooltips";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "|CFFADD8E6Tooltip Integrations|r";
@@ -407,7 +407,7 @@ app.L = {
 	["MAIN_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 	["MINI_LIST_SLIDER_LABEL"] = "Mini/Other List Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
-	
+
 	-- Features tab
 
 	["FEATURES_TAB"] = "Features";
@@ -441,9 +441,9 @@ app.L = {
 	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
 	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
 	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-	
+
 	-- About tab
-	
+
 	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: As a community, we're currently focusing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic (nor should there be).\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r";
 	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 	["ABOUT_3"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
@@ -1109,8 +1109,8 @@ app.L = {
 		[-3349] = 3854018,																	-- Tier 2: Leap of Power
 		[-3350] = 3854018,																	-- Tier 3: Eternal Paths
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
-		
-		
+
+
 
 		[-950] = 3854020,																	-- Transport Network
 		[-951] = 3854020,																	-- Tier 1: Mirror Mirror
@@ -1504,7 +1504,7 @@ app.L = {
 		[-1433948] = 3528288,															-- Anima Crystal Shard
 		[-1433949] = 3528288,															-- Anima Crystal Shard
 		[-1433950] = 3528288,															-- Anima Crystal Shard
-		
+
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -1948,7 +1948,7 @@ app.L = {
 -- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-	--	[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
+		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
@@ -1959,14 +1959,14 @@ app.L = {
 		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
 		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
 		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
-		-- [-913] = ,															-- 
+		--[-913] = ,															--
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils
 		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
 		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
 		[-919] = "Night Mare",													-- Night Mare
-		
+
 -- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
@@ -2520,7 +2520,7 @@ app.L = {
 		[-1433948] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433949] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433950] = "Anima Crystal Shard",															-- Anima Crystal Shard
-		
+
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror",																-- Broken Mirror
 		[-1433952] = "Broken Mirror",																-- Broken Mirror

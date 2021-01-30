@@ -15,12 +15,12 @@ _.Zones =
 				--	1700 = Sinfall Depths
 				["g"] = {
 					n(-901, sharedData({	-- Covenant Callings
-							["sourceQuests"] = {
-								59324,	-- Our True Purpose
-								62921,	-- Our True Purpose
-							},
-							["repeatable"] = true,
-						}, {
+						["sourceQuests"] = {
+							59324,	-- Our True Purpose
+							62921,	-- Our True Purpose
+						},
+						["repeatable"] = true,
+					}, {
 						q(62691, {	-- A Calling in Revendreth
 							["sourceQuests"] = { 62695 },	-- A Call to Service
 							["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
@@ -349,7 +349,7 @@ _.Zones =
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
 						}),
 						q(61077, {	-- Confronting Sin
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["description"] = "Requires Renown 17.",
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 52.0, 37.6, 1699 },	-- Sinfall Reaches
@@ -512,7 +512,7 @@ _.Zones =
 							["sourceQuests"] = {
 								58392,	-- Death's End Destruction
 								58393,	-- Strategic Executions
-							},	-- 
+							},	--
 							["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 							-- no coords, is your 'pet'
 						}),
@@ -567,7 +567,7 @@ _.Zones =
 						}),
 						q(58406, {	-- Mirror to Maldraxxus
 							["description"] = "Requires Renown 22.",
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["provider"] = { "n", 158653 },	-- Prince Renethal
 							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
 						}),
@@ -634,7 +634,7 @@ _.Zones =
 								58388,	-- Blackbale Betrayers
 								58389,	-- Maldraxxian Weapons
 								58518,	-- There's Always a Paper Trail
-							},	-- 
+							},	--
 							["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
 							-- no coords, is your 'pet'
 						}),
@@ -727,7 +727,7 @@ _.Zones =
 						}),
 						q(57727, {	-- Stonevigil Unrest
 							["description"] = "Requires Renown 20.",
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["provider"] = { "n", 158653 },	-- Prince Renethal
 							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
 						}),
@@ -815,7 +815,7 @@ _.Zones =
 								i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 								i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 							},
-						}),	
+						}),
 						q(59233, {	-- The Prince's New Crown
 							["sourceQuests"] = { 60996 },	-- Face Your Fears
 							["provider"] = { "n", 171175 },	-- General Draven
@@ -938,11 +938,11 @@ _.Zones =
 						-- 	["isWeekly"] = true,
 						-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						-- }),
-						
-						-- q(, {	-- 
-						-- 	["sourceQuests"] = {  },	-- 
-						-- 	["provider"] = { "n",  },	-- 
-						-- 	["coord"] = {  },	-- 
+
+						-- q(, {	--
+						-- 	["sourceQuests"] = {  },	--
+						-- 	["provider"] = { "n",  },	--
+						-- 	["coord"] = {  },	--
 						-- }),
 					}),
 					n(RARES, {
@@ -963,14 +963,14 @@ _.Zones =
 							}),
 							n(-917, {	-- Tier 2: Streaming Threads
 								q(61735, {	-- Awaken Our Allies
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["isDaily"] = true,
 									["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
 								}),
 								q(61733, {	-- Big Bag of Creepers
-									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173127 },	-- Thinman 
+									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173127 },	-- Thinman
 									["isDaily"] = true,
 									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
 								}),
@@ -989,19 +989,19 @@ _.Zones =
 									["lvl"] = { 60 },
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
 								}),
 								q(61848, {	-- Edict of Doom: Sinstone Golems
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 								}),
 								q(61845, {	-- Edict of Doom: Devourers
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
@@ -1283,7 +1283,7 @@ _.Zones =
 										["provider"] = { "n", 167332 },	-- Gresit
 										["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
 										["g"] = {
-											i(176130, {	-- Contract: Atoning Rituals	
+											i(176130, {	-- Contract: Atoning Rituals
 												crit(1, {	-- Atoning Rituals
 													["achievementID"] = 14680,	-- Something for Everyone
 												}),
@@ -2219,13 +2219,13 @@ _.Zones =
 								--	appears on the vendor at Renown 14, not sure if this is the same or different for other covenants
 									["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
 								}),
-						--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?  
+						--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?
 								i(182332, {	-- Gravestone Battle Armor (MOUNT!)
 									["cost"] = { { "c", 1813, 3000 } },
 								}),
 						--]]
 								i(180461, {	-- Horrid Dredwing (MOUNT!)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
 										{ "c", 1885, 100 },		-- 100x Grateful Offering
 									},
@@ -2743,7 +2743,7 @@ _.Zones =
 								i(180906, {	-- Soulbreaker's Ebony Slippers
 									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 								}),
-								
+
 								i(180928, {	-- Soulbreaker's Ebony Wraps
 									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 								}),
