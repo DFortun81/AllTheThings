@@ -286,7 +286,7 @@ _.Zones =
 								},
 							}),
 							i(133711, {		-- Swollen Murloc Egg
-								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+								["description"] = "This item will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
 								["groups"] = {
 									n(102339, {		-- Swamprock Tadpole
 										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",

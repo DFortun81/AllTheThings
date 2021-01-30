@@ -8,8 +8,8 @@ _.Zones =
 		m(104, {	-- Shadowmoon Valley (Outland)
 			n(FACTIONS, {
 				faction(932,  {	-- The Aldor
-					["collectible"] = false,
-					["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>
+					["collectible"] = false,	-- Collectible in Shattrath
+					["crs"] = { 19321 },	-- Quartermaster Endarin <Aldor Quartermaster>
 					["g"] = {
 						q(10619, {	-- The Ashtongue Tribe
 							["provider"] = { "n", 21822 },	-- Vindicator Aluumen
@@ -116,7 +116,7 @@ _.Zones =
 					},
 				}),
 				faction(1015, {	-- Netherwing
-					["creatureID"] = 23489,	-- Drake Dealer Hurlunk
+					["crs"] = { 23489 },	-- Drake Dealer Hurlunk
 					["g"] = {
 						q(10804, {	-- Kindness
 							["provider"] = { "n", 22113 },	-- Mordenai
@@ -388,8 +388,8 @@ _.Zones =
 					},
 				}),
 				faction(934,  {	-- The Scryers
-					["collectible"] = false,
-					["creatureID"] = 19331,	-- Quartermaster Enuril <Scryer Quartermaster>
+					["collectible"] = false,	-- Collectible in Shattrath
+					["crs"] = { 19331 },	-- Quartermaster Enuril <Scryer Quartermaster>
 					["g"] = {
 						q(10807, {	-- The Ashtongue Broken
 							["provider"] = { "n", 21953 },	-- Varen the Reclaimer

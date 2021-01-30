@@ -9,8 +9,12 @@ _.Zones =
 			["description"] = "These rewards are shared between each Covenant.",
 			["g"] = {
 				n(-914, {	-- Adventures
-					-- todo: find object id for the table
-					--["modelScale"] = 2,
+					["crs"] = {
+						154527,	-- Command Table [Kyrian]
+						175136,	-- Command Table [Necrolord]
+						172400,	-- Command Table [Night Fae]
+						166143,	-- Command Table [Venthyr]
+					},
 					["g"] = {
 						--mission(1877, {	-- The Shadow War
 							-- Mounts
@@ -87,7 +91,17 @@ _.Zones =
 							},
 						}),
 						n(175390, {	-- Dirty Glinting Object
-							["description"] = "Can appear when on any of the Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							["crs"] = {
+								-- Confirmed Follower ID's which will drop the loot objects
+								170035,	-- Deos [Kyrian]
+								170016,	-- Dregs [Necrolord]
+								170045,	-- Drippy [Venthyr]
+								170029,	-- Twinklewings [Night Fae]
+
+								-- Follower ID's which will NOT drop loot objects
+								-- 170044,	-- Nandor [Venthyr]
+							},
 							["g"] = {
 								i(184507),	-- Lucy's Lost Collar (PET!)
 								i(184503),	-- Attendant's Pocket Portal: Ardenweald
@@ -95,6 +109,7 @@ _.Zones =
 								i(184502),	-- Attendant's Pocket Portal: Maldraxxus
 								i(184504),	-- Attendant's Pocket Portal: Oribos
 								i(184501),	-- Attendant's Pocket Portal: Revendreth
+								i(171438),	-- Porous Weightstone
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
@@ -106,7 +121,7 @@ _.Zones =
 						i(181556, {	-- Tribute of the Court / Revendreth
 							["description"] = "Rewarded by completing a Calling based in Revendreth.",
 							["g"] = {
-								i(181224),	-- Avowed Arcanist's Staff
+								-- i(181224),	-- Avowed Arcanist's Staff / Zone Reward
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
@@ -116,7 +131,7 @@ _.Zones =
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
 							["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
 							["g"] = {
-								i(184159, {	-- Oozing Necroray Egg (Timer)
+								i(184159, {	-- Necroray Egg (Timer)
 									i(184158, {	-- Oozing Necroray Egg (No Timer)
 										i(184160),	-- Bulbous Necroray
 										i(184161),	-- Infested Necroray
@@ -147,22 +162,29 @@ _.Zones =
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
 							["g"] = {
 								i(176850),	-- Blank Invitation
-								i(182348),	-- Lavish Harvest
+								-- i(182348),	-- Lavish Harvest
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
 							["g"] = {
-								i(181705),	-- Celestial Effervescence
-								i(182111),	-- Spiritual Resonance
+								i(184159, {	-- Necroray Egg (Timer)
+									i(184158, {	-- Oozing Necroray Egg (No Timer)
+										i(184160),	-- Bulbous Necroray
+										i(184161),	-- Infested Necroray
+										i(184162),	-- Pestilent Necroray
+									}),
+								}),
+								-- i(181705),	-- Celestial Effervescence
+								-- i(182111),	-- Spiritual Resonance
 							},
 						}),
 						i(181741, {	-- Tribute of the Paragon / Bastion
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 							["g"] = {
-								i(182145),	-- Heavy Rainfall
-								i(181944),	-- Resonant Words
-								i(181867),	-- Swift Penitence
+								-- i(182145),	-- Heavy Rainfall
+								-- i(181944),	-- Resonant Words
+								-- i(181867),	-- Swift Penitence
 							},
 						}),
 					},

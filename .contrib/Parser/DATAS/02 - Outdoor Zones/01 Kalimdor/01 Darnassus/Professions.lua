@@ -142,6 +142,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 4156 },	-- Astaia
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(29325, {	-- A Slippery Snack
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
@@ -152,12 +162,6 @@ _.Zones =
 							["g"] = {
 								crit(4, {	-- A Slippery Snack
 									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -172,12 +176,6 @@ _.Zones =
 								crit(5, {	-- An Old Favorite
 									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29321, {	-- Happy as a Clam Digger
@@ -190,12 +188,6 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Happy as a Clam Digger
 									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -210,12 +202,6 @@ _.Zones =
 								crit(2, {	-- Stocking Up
 									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29324, {	-- The Sister's Pendant
@@ -228,12 +214,6 @@ _.Zones =
 							["g"] = {
 								crit(3, {	-- The Sister's Pendant
 									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

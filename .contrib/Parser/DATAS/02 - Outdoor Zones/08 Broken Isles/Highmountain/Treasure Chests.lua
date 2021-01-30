@@ -28,6 +28,11 @@ _.Zones =
 					["questID"] = 40483,
 					["coord"] = { 54.2, 41.6, 650 },
 				}),
+				o(245530, {	-- Glimmering Treasure Chest
+					["description"] = "Inside Lifespring Cavern.  Cave entrance is at |cFFFFFFFF38.3, 61.2|r.",
+					["questID"] = 40476,
+					["coord"] = { 52.9, 23.3, 655 },	-- Lifespring Lower Cavern
+				}),
 				o(245525, {	-- Small Treasure Chest
 					["questID"] = 40472,
 					["coord"] = { 50.6, 75.4, 750 },
@@ -163,6 +168,11 @@ _.Zones =
 				o(245602, {	-- Treasure Chest
 					["questID"] = 40509,
 					["coord"] = { 40.3, 50.0, 657 },
+				}),
+				o(245543, {	-- Treasure Chest
+					["description"] = "On the upper level of Bitestone Enclave, all the way at the back.  Cave entrance is at |cFFFFFFFF13.8, 24.8|r.",
+					["questID"] = 40489,
+					["coord"] = { 85.2, 38.2, 651 },	-- Bitestone Enclave
 				}),
 			}),
 		}),

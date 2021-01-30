@@ -19,10 +19,10 @@ app.L = {
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
-	
-	
+
+
 	-- Big new chunk from AllTheThings.lua
-	
+
 	["FACTIONS"] = "Factions";
 	["COORDINATES_STRING"] = "Coordinates";
 	["FLIGHT_PATHS"] = "Flight Paths";
@@ -48,7 +48,7 @@ app.L = {
 	["MUSIC_ROLLS_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 	["MUSIC_ROLLS_DESC_2"] = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
 	["OPPOSITE_FACTION_EQ"] = "Opposite faction equivalent: ";
-	["SELFIE_DESC"] = "Take a selfie using your ";  
+	["SELFIE_DESC"] = "Take a selfie using your ";
 	["SELFIE_DESC_2"] = " with |cffff8000";
 	["CLASSIC_TIER_DESC"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
 	["TBC_TIER_DESC"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
@@ -204,7 +204,7 @@ app.L = {
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
 	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	
+
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffCtrl + Click to Expand/Collapse Recursively|r";
@@ -234,7 +234,7 @@ app.L = {
 	
 	
 	["GENERAL_TAB"] = "General";
-	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";	
+	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!";
 	["DEBUG_MODE"] = "|Cff15abffDebug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
@@ -317,7 +317,7 @@ app.L = {
 	["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
 	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
 	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
-	
+
 		-- Account Wide Checkboxes
 	["ACCOUNT_WIDE"] = "Account Wide";
 	["ACCOUNT_WIDE_1_TOOLTIP"] = "Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -332,8 +332,8 @@ app.L = {
 	["ACCOUNT_WIDE_13_TOOLTIP"] = "Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
 	["ACCOUNT_WIDE_14_TOOLTIP"] = "Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!";
 	["ACCOUNT_WIDE_15_TOOLTIP"] = "Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
-	
-		--  Filters tab					
+
+		--  Filters tab
 
 	["FILTERS_TAB"] = "Filters";
 	["ITEM_FILTER_LABEL"] = "Armor / Weapon Filters";
@@ -345,9 +345,9 @@ app.L = {
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
 	["LEGACY_FILTERS_LABEL"] = "Legacy / Unobtainable Filters";
 	["LEGACY_FILTERS_TEMP_LABEL"] = "|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r";
-	
+
 		-- Unobtainables tab
-	
+
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
 	["SEASONAL_LABEL"] = "Seasonal (Check to hide)";
 	["SEASONAL_ENABLE"] = "Filter Seasonal Items";
@@ -359,9 +359,9 @@ app.L = {
 	["NO_CHANCE_ALL"] = "Toggle All \"No Chance\"";
 	["HIGH_CHENCE_LABEL"] = "High Chance";
 	["HIGH_CHANCE_ALL"] = "Toggle All \"High Chance\"";
-	
+
 		-- Interface tab
-	
+
 	["INTERFACE_TAB"] = "Interface";
 	["TOOLTIP_LABEL"] = "Tooltips";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "|CFFADD8E6Tooltip Integrations|r";
@@ -412,6 +412,8 @@ app.L = {
 	["FOR_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations for Things.";
 	["FOR_UNSORTED_CHECKBOX"] = "For Unsorted";
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
+	["WITH_WRAPPING_CHECKBOX"] = "Allow Source Wrapping",
+	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
 	["MISC_LABEL"] = "Miscellaneous";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
@@ -426,7 +428,7 @@ app.L = {
 	["MAIN_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 	["MINI_LIST_SLIDER_LABEL"] = "Mini/Other List Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
-	
+
 	-- Features tab
 
 	["FEATURES_TAB"] = "Features";
@@ -460,9 +462,9 @@ app.L = {
 	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
 	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
 	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-	
+
 	-- About tab
-	
+
 	["ABOUT"] = "About";
 	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: As a community, we're currently focusing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic (nor should there be).\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r";
 	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
@@ -567,13 +569,14 @@ app.L = {
 		["Expansion Pre"] = "Pre",
 		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",
-		["Classic %-> "] = "",
+		["Classic %> "] = "",
 		["Burning Crusade"] = "BC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
 		["Battle for Azeroth"] = "BFA",
+		["The Shadowlands"] = "SL",
 		["Shadowlands"] = "SL",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
@@ -601,7 +604,7 @@ app.L = {
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
 		["Covenant:"] = "Cov:",
-		["Sanctum Upgrades %-> "] = "",
+		["Sanctum Upgrades %> "] = "",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {
@@ -1128,8 +1131,8 @@ app.L = {
 		[-3349] = 3854018,																	-- Tier 2: Leap of Power
 		[-3350] = 3854018,																	-- Tier 3: Eternal Paths
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
-		
-		
+
+
 
 		[-950] = 3854020,																	-- Transport Network
 		[-951] = 3854020,																	-- Tier 1: Mirror Mirror
@@ -1147,6 +1150,12 @@ app.L = {
 		[-963] = 3675493,																	-- Tier 3: Court Influencer
 		[-964] = 3675493,																	-- Tier 4: Discerning Taste
 		[-965] = 3675493,																	-- Tier 5: The Professionals
+		[-966] = 979574,																	-- Blueprints & Crafting (for Kyrian Path of Ascension)
+		[-967] = 3854020,																	-- Mirror Restoration
+		[-968] = 3854020,																	-- Set A
+		[-969] = 3854020,																	-- Set B
+		[-970] = 3854020,																	-- Set C
+		[-971] = 3854020,																	-- Set D
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1517,6 +1526,14 @@ app.L = {
 		[-1433948] = 3528288,															-- Anima Crystal Shard
 		[-1433949] = 3528288,															-- Anima Crystal Shard
 		[-1433950] = 3528288,															-- Anima Crystal Shard
+
+	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
+		[-1433951] = "3854020",															-- Broken Mirror
+		[-1433952] = "3854020",															-- Broken Mirror
+		[-1433953] = "3854020",															-- Broken Mirror
+		[-1433954] = "3854020",															-- Broken Mirror
+		[-1433955] = "3854020",															-- Broken Mirror
+		[-1433956] = "3854020",															-- Broken Mirror
 	};
 
 	["NPC_ID_NAMES"] = {
@@ -1953,20 +1970,25 @@ app.L = {
 -- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-	--	[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
+		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
 		[-906] = "Tier 1: Tactical Insight",									-- Tier 1: Tactical Insight
 		[-907] = "Dead Blanchy",												-- Dead Blanchy
 		[-908] = "Rewards",														-- Rewards
+		[-909] = "Hunt: Death Elementals",										-- Hunt: Death Elementals
+		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
+		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
+		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
+		--[-913] = ,															--
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils
 		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
 		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
 		[-919] = "Night Mare",													-- Night Mare
-		
+
 -- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
@@ -2001,6 +2023,7 @@ app.L = {
 		[-3348] = "Tier 1: Step of Faith",										-- Tier 1: Step of Faith
 		[-3349] = "Tier 2: Leap of Power",										-- Tier 2: Leap of Power
 		[-3350] = "Tier 3: Eternal Paths",										-- Tier 3: Eternal Paths
+		[-966] = "Blueprints & Crafting",										-- Blueprints (for Path of Ascension)
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
@@ -2020,6 +2043,11 @@ app.L = {
 		[-963] = "Tier 3: Court Influencer",									-- Tier 3: Court Influencer
 		[-964] = "Tier 4: Discerning Taste",									-- Tier 4: Discerning Taste
 		[-965] = "Tier 5: The Professionals",									-- Tier 5: The Professionals
+		[-967] = "Mirror Restoration",											-- "Mirror Restoration",
+		[-968] = "Set A",														-- Set A
+		[-969] = "Set B",														-- Set B
+		[-970] = "Set C",														-- Set C
+		[-971] = "Set D",														-- Set D
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
@@ -2514,6 +2542,14 @@ app.L = {
 		[-1433948] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433949] = "Anima Crystal Shard",															-- Anima Crystal Shard
 		[-1433950] = "Anima Crystal Shard",															-- Anima Crystal Shard
+
+	--	hopefully temp objects, these currently do not have accessible object data on wowhead
+		[-1433951] = "Broken Mirror",																-- Broken Mirror
+		[-1433952] = "Broken Mirror",																-- Broken Mirror
+		[-1433953] = "Broken Mirror",																-- Broken Mirror
+		[-1433954] = "Broken Mirror",																-- Broken Mirror
+		[-1433955] = "Broken Mirror",																-- Broken Mirror
+		[-1433956] = "Broken Mirror",																-- Broken Mirror
 	};
 
 	["OBJECT_ID_ICONS"] = {
@@ -4135,6 +4171,7 @@ app.L = {
 		[245525] = "Small Treasure Chest",
 		[245528] = "Treasure Chest",
 		[245529] = "Small Treasure Chest",
+		[245530] = "Glimmering Treasure Chest",
 		[245531] = "Treasure Chest",
 		[245532] = "Treasure Chest",
 		[245533] = "Treasure Chest",
@@ -4142,10 +4179,12 @@ app.L = {
 		[245535] = "Small Treasure Chest",
 		[245541] = "Small Treasure Chest",
 		[245542] = "Treasure Chest",
+		[245543] = "Treasure Chest",
 		[245545] = "Small Treasure Chest",
 		[245547] = "Small Treasure Chest",
 		[245550] = "Treasure Chest",
 		[245551] = "Small Treasure Chest",
+		[245553] = "Treasure Chest",
 		[245554] = "Small Treasure Chest",
 		[245555] = "Small Treasure Chest",
 		[245579] = "Treasure Chest",
@@ -4717,6 +4756,7 @@ app.L = {
 		[344588] = "Stewart's Stewpendous Stew",
 		[344726] = "Dark Sermon",
 		[345446] = "Great Horn of the Runestag",
+		[345458] = "Prize Bag",
 		[348521] = "Strange Growth",
 		[348558] = "Notice",
 		[348747] = "Muddy Scroll",
@@ -4762,6 +4802,7 @@ app.L = {
 		[353233] = "Enchanted Chest",
 		[353234] = "Gilded Chest",
 		[353306] = "Decayed Husk",
+		[353323] = "Decayed Husk",
 		[353324] = "Decayed Husk",
 		[353325] = "Silver Strongbox",
 		[353326] = "Decayed Husk",
@@ -4779,8 +4820,10 @@ app.L = {
 		[353643] = "Silver Strongbox",
 		[353645] = "Marileth's Journal",
 		[353650] = "Steward's Golden Chest",
+		[353681] = "Lunarlight Pod",
 		[353683] = "Lunarlight Pod",
 		[353684] = "Lunarlight Pod",
+		[353685] = "Lunarlight Pod",
 		[353688] = "Broken Bell",
 		[353691] = "Skyward Bell",
 		[353793] = "Parish Chest",
@@ -4813,22 +4856,28 @@ app.L = {
 		[354193] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
 		[355035] = "Treasure: House of the Chosen",	-- Chosen Runecoffer
+		[357230] = "Forgotten Chest",	-- B-1
+		[357231] = "Forgotten Chest",	-- B-2
+		[357232] = "Forgotten Chest",	-- B-3
+		[357236] = "Forgotten Chest",	-- A-1
+		[357237] = "Forgotten Chest",	-- A-2
+		[357238] = "Forgotten Chest",	-- A-3
 		[358315] = "Skeletal Hand Fragments",
 		[358319] = "Sorceror's Note",
 		[1278968750] = "Hanging Chain",
-	--	[1278968751] = "",	-- ***REUSE ME***
+		[1278968751] = "Lunarlight Pod",	-- TODO: fix objectID when data becomes available
 	--	[1278968752] = "",	-- ***REUSE ME***
 	--	[1278968753] = "",	-- ***REUSE ME***
-		[1278968754] = "Lunarlight Pod",	-- TODO: fix objectID when data becomes available
+	--	[1278968754] = "",	-- ***REUSE ME***
 		[1278968755] = "Silver Strongbox",	-- TODO: fix objectID when data becomes available
 	--	[1278968756] = "",	-- ***REUSE ME***
 	--	[1278968757] = "",	-- ***REUSE ME***
 	--	[1278968758] = "",	-- ***REUSE ME***
 	--	[1278968759] = "",	-- ***REUSE ME***
-		[1278968760] = "Decayed Husk",		-- TODO: fix objectID when data becomes available
+	--	[1278968760] = "",	-- ***REUSE ME***
 	--	[1278968761] = "",	-- ***REUSE ME***
 	--	[1278968762] = "",	-- ***REUSE ME***
-		[1278968763] = "Lunarlight Pod",	-- TODO: fix objectID when data becomes available
+	--	[1278968763] = "",	-- ***REUSE ME***
 	--	[1278968764] = "",	-- ***REUSE ME***
 		[1278968766] = "Rune",				-- TODO: fix objectID when data becomes available
 		[1278968767] = "Rune",				-- TODO: fix objectID when data becomes available

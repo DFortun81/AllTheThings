@@ -194,6 +194,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 5161 },	-- Grimnur Stonebrand
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(29342, {	-- Cold Water Fishing
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
@@ -204,12 +214,6 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Cold Water Fishing
 									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -233,12 +237,6 @@ _.Zones =
 								crit(3, {	-- Fish fer Squrky
 									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(6609, {	-- I Got Nothin' Left!
@@ -261,12 +259,6 @@ _.Zones =
 								crit(4, {	-- Live Bait
 									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29343, {	-- One fer the Ages
@@ -280,12 +272,6 @@ _.Zones =
 								crit(2, {	-- One fer the Ages
 									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29350, {	-- The Gnomish Bait-o-Matic
@@ -298,12 +284,6 @@ _.Zones =
 							["g"] = {
 								crit(5, {	-- The Gnomish Bait-o-Matic
 									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

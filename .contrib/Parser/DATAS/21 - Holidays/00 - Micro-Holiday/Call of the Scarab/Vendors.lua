@@ -38,6 +38,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45755,	-- Cinder of Cynders
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -46,6 +47,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45756,	-- Pearl of Fathoms
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -54,6 +56,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45757,	-- Salt of Shards
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -62,6 +65,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45758,	-- Song of Zephyrs
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -77,6 +81,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45759,	-- Coreforged Sigil of Skaldrenox
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -85,6 +90,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45761,	-- Diamondine Sigil of Kazum
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -93,6 +99,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45760,	-- Glimmering Sigil of Whirlaxis
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -101,6 +108,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45762,	-- Tidal Sigil of Skwol
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
@@ -138,6 +146,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45747,	-- Cinder of Cynders
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -146,6 +155,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45748,	-- Pearl of Fathoms
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -154,6 +164,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45749,	-- Salt of Shards
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -162,6 +173,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45750,	-- Song of Zephyrs
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -177,6 +189,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45751,	-- Coreforged Sigil of Skaldrenox
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -185,6 +198,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45753,	-- Diamondine Sigil of Kazum
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -193,6 +207,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45752,	-- Glimmering Sigil of Whirlaxis
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
@@ -201,6 +216,7 @@ _.Holidays =
 												["u"] = 22,				-- Micro-Holiday Filter
 												["description"] = "Call of the Scarab must be available to use this item.",
 												["questID"] = 45754,	-- Tidal Sigil of Skwol
+												["isYearly"] = true,
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},

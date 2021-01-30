@@ -231,7 +231,7 @@ _.Zones =
 					["description"] = "Spawns a mob based on the current combination of 30 slimes added to the pool.",
 					["coord"] = { 58.6, 74.2, 1536 },
 					["g"] = {
-						i(183903),	-- Smelly Jelly						
+						i(183903),	-- Smelly Jelly
 						n(157294, {	-- Pulsing Leech
 							["description"] = "Requires a majority of Red slime.",
 							["questID"] = 61718,
@@ -245,7 +245,7 @@ _.Zones =
 						}),
 						n(157307, {	-- Gelloh
 							["description"] = "Requires a majority of Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61721,
 							["isDaily"] = true;
 							["g"] = {
 								crit(2, {	-- Gelloh

@@ -16,6 +16,16 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(QUESTS, {
+							i(112623, {	-- Pack of Fishing Supplies
+								["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
+								["g"] = {
+									i(34834),	-- Recipe: Captain Rumsey's Lager
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(44983),	-- Strand Crawler Pet
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
 							q(36517, {	-- Abyssal Gulper Eel
 								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
@@ -23,15 +33,6 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 77733 },	-- Ron Ashton
 								["coord"] = { 54.4, 13.9, 582 },
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(112623, {	-- Pack of Fishing Supplies
-										i(34834),	-- Recipe: Captain Rumsey's Lager
-										i(33820),	-- Weather-Beaten Fishing Hat
-										i(44983),	-- Strand Crawler Pet
-										i(45991),	-- Bone Fishing Pole
-										i(45992),	-- Jeweled Fishing Pole
-									}),
-								},
 							}),
 							q(36802, {	-- Abyssal Gulper Lunker
 								["requireSkill"] = FISHING,

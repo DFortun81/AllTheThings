@@ -24,7 +24,7 @@ namespace ATT
             {
                 if (data.TryGetValue("f", out int f))
                 {
-                    if (f == 104) fields.Remove("f");  // Quest Items
+                    if (f == 104 || f == 0) fields.Remove("f");  // Quest Items
                     else if (f == 60)   // Selfies
                     {
                         WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");

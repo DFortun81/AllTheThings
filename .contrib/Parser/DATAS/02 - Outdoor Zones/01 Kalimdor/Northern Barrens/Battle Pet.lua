@@ -29,7 +29,7 @@ _.Zones =
 				q(31814, {	-- Analynn
 					["provider"] = { "n", 66135 },	-- Dagra the Fierce
 					["coord"] = { 58.6, 53.0, 10 },
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31813,	-- Dagra the Fierce
 					["groups"] = {
 						i(89125),	-- Sack of Pet Supplies

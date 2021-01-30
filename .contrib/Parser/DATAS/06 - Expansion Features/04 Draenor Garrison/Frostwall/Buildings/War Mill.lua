@@ -18,6 +18,15 @@ _.ExpansionFeatures =
 									i(118372),	-- Orgrimmar Tabard
 								},
 							}),
+							q(38188, {	-- Scrap Meltdown
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 79815 },	-- Gun'lek
+								["isDaily"] = true,
+								["g"] = {
+									i(120301),	-- Armor Enhancement Token
+									i(120302),	-- Weapon Enhancement Token
+								},
+							}),
 						}),
 						n(VENDORS, {
 							n(79815, {	-- Grun'lek - Quartermaster	-- War Mill

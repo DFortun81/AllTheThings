@@ -15,12 +15,12 @@ _.Zones =
 				--	1700 = Sinfall Depths
 				["g"] = {
 					n(-901, sharedData({	-- Covenant Callings
-							["sourceQuests"] = {
-								59324,	-- Our True Purpose
-								62921,	-- Our True Purpose
-							},
-							["repeatable"] = true,
-						}, {
+						["sourceQuests"] = {
+							59324,	-- Our True Purpose
+							62921,	-- Our True Purpose
+						},
+						["repeatable"] = true,
+					}, {
 						q(62691, {	-- A Calling in Revendreth
 							["sourceQuests"] = { 62695 },	-- A Call to Service
 							["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
@@ -32,7 +32,7 @@ _.Zones =
 						}),
 						q(60422, {	-- A Call to Ardenweald
 							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.2, 37.7, 1699 },
+							["coord"] = { 51.2, 37.7, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181475),	-- Bounty of the Grove Wardens
 							},
@@ -349,7 +349,7 @@ _.Zones =
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
 						}),
 						q(61077, {	-- Confronting Sin
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["description"] = "Requires Renown 17.",
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 52.0, 37.6, 1699 },	-- Sinfall Reaches
@@ -512,7 +512,7 @@ _.Zones =
 							["sourceQuests"] = {
 								58392,	-- Death's End Destruction
 								58393,	-- Strategic Executions
-							},	-- 
+							},	--
 							["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 							-- no coords, is your 'pet'
 						}),
@@ -567,7 +567,7 @@ _.Zones =
 						}),
 						q(58406, {	-- Mirror to Maldraxxus
 							["description"] = "Requires Renown 22.",
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["provider"] = { "n", 158653 },	-- Prince Renethal
 							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
 						}),
@@ -634,7 +634,7 @@ _.Zones =
 								58388,	-- Blackbale Betrayers
 								58389,	-- Maldraxxian Weapons
 								58518,	-- There's Always a Paper Trail
-							},	-- 
+							},	--
 							["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
 							-- no coords, is your 'pet'
 						}),
@@ -727,7 +727,7 @@ _.Zones =
 						}),
 						q(57727, {	-- Stonevigil Unrest
 							["description"] = "Requires Renown 20.",
-							-- ["sourceQuests"] = {  },	-- 
+							-- ["sourceQuests"] = {  },	--
 							["provider"] = { "n", 158653 },	-- Prince Renethal
 							["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
 						}),
@@ -815,7 +815,7 @@ _.Zones =
 								i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 								i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 							},
-						}),	
+						}),
 						q(59233, {	-- The Prince's New Crown
 							["sourceQuests"] = { 60996 },	-- Face Your Fears
 							["provider"] = { "n", 171175 },	-- General Draven
@@ -938,11 +938,11 @@ _.Zones =
 						-- 	["isWeekly"] = true,
 						-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 						-- }),
-						
-						-- q(, {	-- 
-						-- 	["sourceQuests"] = {  },	-- 
-						-- 	["provider"] = { "n",  },	-- 
-						-- 	["coord"] = {  },	-- 
+
+						-- q(, {	--
+						-- 	["sourceQuests"] = {  },	--
+						-- 	["provider"] = { "n",  },	--
+						-- 	["coord"] = {  },	--
 						-- }),
 					}),
 					n(RARES, {
@@ -963,14 +963,14 @@ _.Zones =
 							}),
 							n(-917, {	-- Tier 2: Streaming Threads
 								q(61735, {	-- Awaken Our Allies
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["isDaily"] = true,
 									["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
 								}),
 								q(61733, {	-- Big Bag of Creepers
-									-- ["sourceQuests"] = { ? },	-- 
-									["provider"] = { "n", 173127 },	-- Thinman 
+									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173127 },	-- Thinman
 									["isDaily"] = true,
 									["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
 								}),
@@ -989,19 +989,19 @@ _.Zones =
 									["lvl"] = { 60 },
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
 								}),
 								q(61848, {	-- Edict of Doom: Sinstone Golems
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
 								}),
 								q(61845, {	-- Edict of Doom: Devourers
-									-- ["sourceQuests"] = { ? },	-- 
+									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 									["isDaily"] = true,
 									["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
@@ -1184,11 +1184,9 @@ _.Zones =
 										}),
 										ach(14727),		-- Master of Ceremonies
 										ach(14679, {	-- Party Palace
-											crit(8),	-- Staff: Ardenweald Ambassador
 											crit(9),	-- Staff: Maldraxxus Ambassador
 											crit(10),	-- Staff: Bastion Ambassador
 											crit(11),	-- Stock: Greeting Kits
-											crit(13),	-- Stock: Anima Samples
 											crit(14),	-- Stock: Comfy Chairs
 											crit(16),	-- Third Guest List Page
 											crit(17),	-- Fourth Guest List Page
@@ -1212,26 +1210,17 @@ _.Zones =
 											crit(16),	-- Stonehead
 										}),
 										ach(14749, {	-- Rendle's Big Day
-											crit(1),	-- Crown of the Righteous
-											crit(2),	-- Fae Revel Masque
-											crit(3),	-- Pink Party Hat
-											crit(4),	-- Red Noggin Candle
+											["crs"] = { 165302 },	-- Rendle
+											["g"] = {
+												crit(1),	-- Crown of the Righteous
+												crit(2),	-- Fae Revel Masque
+												crit(3),	-- Pink Party Hat
+												crit(4),	-- Red Noggin Candle
+											},
 										}),
 										ach(14680, {	-- Something for Everyone
 										--	TODO: add remaining crit to the places From Whence They Come
-											crit(3, {	-- Lost Chalice Band
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(6, {	-- Mushroom Surprise
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
 											crit(9, {	-- Mystery Mirrors
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(10, {	-- Venthyr Volunteers
-											--	["achievementID"] = 14680,	-- Something for Everyone
-											}),
-											crit(11, {	-- Stoneborn Reserves
 											--	["achievementID"] = 14680,	-- Something for Everyone
 											}),
 											crit(12, {	-- Maldraxxian Army
@@ -1243,12 +1232,14 @@ _.Zones =
 								}),
 								n(-908, {	-- Rewards
 								--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
+									i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
 									i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+									i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
 									}),
@@ -1271,13 +1262,14 @@ _.Zones =
 										["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
 										["crs"] = { 171705 },	-- Court Crusher
 									}),
-									q(61892, {	-- Ember Court Ambassador
-										["minReputation"] = { 2445, FRIENDLY },
-										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
-										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									q(61899, {	-- Anima Tastings
+									--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
+										["minReputation"] = { 2445, HONORED },
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.8, 1525 },	-- Revendreth
 										["g"] = {
-											i(181521, {	-- Ember Court Ambassador
-												crit(7, {	-- Staff: Revendreth Ambassador
+											i(181533, {	-- Stock: Anima Samples
+												crit(13, {	-- Stock: Anima Samples
 													["achievementID"] = 14679,	-- Party Palace
 												}),
 											}),
@@ -1291,7 +1283,7 @@ _.Zones =
 										["provider"] = { "n", 167332 },	-- Gresit
 										["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
 										["g"] = {
-											i(176130, {	-- Contract: Atoning Rituals	
+											i(176130, {	-- Contract: Atoning Rituals
 												crit(1, {	-- Atoning Rituals
 													["achievementID"] = 14680,	-- Something for Everyone
 												}),
@@ -1335,6 +1327,19 @@ _.Zones =
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
 									}),
+									q(61738, {	-- Ember Court: Lost Chalice Band
+									--	TODO: might just require 'honored' rep???
+										["description"] = "Available after purchasing Staff: Stage Crew.",
+										["provider"] = { "n", 173173 },	-- Caretaker Tedo
+										["coord"] = { 55.1, 43.7, 1525 },	-- Revendreth
+										["g"] = {
+											i(176132, {	-- Contract: Lost Chalice Band
+												crit(3, {	-- Lost Chalice Band
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
 									q(61399, {	-- Ember Court: Mortal Reminders
 										["minReputation"] = { 2445, FRIENDLY },
 										["provider"] = { "n", 156791 },	-- Keeper Ta'saran
@@ -1347,10 +1352,34 @@ _.Zones =
 											}),
 										},
 									}),
+									q(61406, {	-- Ember Court: Mushroom Surprise
+										["description"] = "Available after purchasing Staff: Waiters.",
+										["provider"] = { "n", 168429 },	-- Melody Madcap
+										["coord"] = { 40.2, 41.2, 1536 },	-- Maldraxxus
+										["g"] = {
+											i(176136, {	-- Contract: Mushroom Surprise!
+												crit(6, {	-- Mushroom Surprise
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
 									q(61705, {	-- Ember Court: Refreshments
 										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 										["provider"] = { "n", 164966 },	-- Temel
 										["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									}),
+									q(61402, {	-- Ember Court: Stoneborn Reserves
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172502 },	-- Chelra the Bladewall
+										["coord"] = { 26.5, 29.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(176139, {	-- Contract: Stoneborn Reserves
+												crit(11, {	-- Stoneborn Reserves
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
 									}),
 									q(61398, {	-- Ember Court: Traditional
 										["minReputation"] = { 2445, FRIENDLY },
@@ -1372,6 +1401,42 @@ _.Zones =
 											i(176134, {	-- Contract: Tubbins's Tea Party
 												crit(4, {	-- Tubbins's Tea Party
 													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
+									q(61401, {	-- Ember Court: Venthyr Volunteers
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172614 },	-- Nadija the Mistblade
+										["coord"] = { 60.9, 39.5, 1525 },	-- Revendreth
+										["g"] = {
+											i(176138, {	-- Contract: Venthyr Volunteers
+												crit(10, {	-- Venthyr Volunteers
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
+											}),
+										},
+									}),
+									q(61892, {	-- Ember Court Ambassador 1 - Revendreth
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(181521, {	-- Ember Court Ambassador
+												crit(7, {	-- Staff: Revendreth Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
+										},
+									}),
+									q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
+										["minReputation"] = { 2445, HONORED },
+										["provider"] = { "n", 165453 },	-- Lady Ilinca
+										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+										["g"] = {
+											i(181524, {	-- Staff: Ambassador
+												crit(8, {	-- Staff: Ardenweald Ambassador
+													["achievementID"] = 14679,	-- Party Palace
 												}),
 											}),
 										},
@@ -1437,6 +1502,16 @@ _.Zones =
 										["cost"] = {
 											{ "c", 1820, 20 },	-- 20x Infused Ruby
 											{ "c", 1816, 50 },	-- 50x Sinstone Fragment
+										},
+									}),
+									q(62075, {	-- Restock: Soul Cages
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+										["cost"] = {
+											{ "i", 172089, 20 },	-- 20x Desolate Leather
+											{ "i", 171832, 1 },		-- 1x Sinvyr Ore
+											{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 										},
 									}),
 									q(60236, {	-- RSVP: Cryptkeeper Kassir
@@ -1560,6 +1635,11 @@ _.Zones =
 										["isDaily"] = true,	-- according to the API
 										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 									}),
+									q(60339, {	-- The Ember Court (Honored)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									}),
 								}),
 								n(-962, {	-- Tier 2: Homegrown Help
 									q(61766, {	-- Homegrown Help
@@ -1593,6 +1673,10 @@ _.Zones =
 														["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
 														["repeatable"] = true,
 													}),
+													q(62174, {	-- A Proper Cover
+														["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
+														["repeatable"] = true,
+													}),
 												}),
 											}),
 										},
@@ -1621,6 +1705,46 @@ _.Zones =
 										["g"] = {
 											i(181537),	-- Guest List Page
 										},
+									}),
+									q(61123, {	-- RSVP: Polemarch Adrestes
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 171385 },	-- Polemarch Adrestes
+										["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
+										["g"] = {
+											i(176117),	-- RSVP: Polemarch Adrestes
+										},
+									}),
+									q(61059, {	-- RSVP: Rendle and Cudgelface
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 171190 },	-- Cudgelface
+										["coord"] = { 61.9, 77.0, 1700 },	-- Sinfall Depths
+										["g"] = {
+											i(176118),	-- RSVP: Rendle and Cudgelface
+										},
+									}),
+									q(62559, {	-- Sootible Hat: Crown of the Righteous
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62558, {	-- Sootible Hat: Fae Revel Masque
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62556, {	-- Sootible Hat: Pink Party Hat
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
+									}),
+									q(62554, {	-- Sootible Hat: Red Noggin Candle
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 165302 },	-- Rendle
+										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+										["repeatable"] = true,
 									}),
 								}),
 								n(-964, {	-- Tier 4: Discerning Taste
@@ -1899,8 +2023,99 @@ _.Zones =
 								},
 							}),
 							n(-953, {	-- Tier 3: Mirror's Edge
-								["description"] = "Requires Renown 19.",
+								["description"] = "Requires Renown 19.  Each week, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two weeks in a row.  Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
 								["g"] = {
+									n(-967, {	-- Mirror Restoration
+										n(166133, {	-- Simone
+											i(181363, {	-- Handcrafted Mirror Repair Kit
+												["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby
+											}),
+										}),
+										n(-968, {	-- Set A
+											n(-1433951, {	-- Broken Mirror A-1
+												["questID"] = 61819,
+												["isDaily"] = true,
+												["coord"] = { 39.1, 52.2, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357236, {	-- Forgotten Chest
+														["questID"] = 61836,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433952, {	-- Broken Mirror A-2
+												["questID"] = 61823,
+												["isDaily"] = true,
+												["coord"] = { 58.8, 67.8, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357237, {	-- Forgotten Chest
+														["questID"] = 61837,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433953, {	-- Broken Mirror A-3
+												["questID"] = 61827,
+												["isDaily"] = true,
+												["coord"] = { 70.9, 43.6, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357238, {	-- Forgotten Chest
+														["questID"] = 61838,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+										}),
+										n(-969, {	-- Set B
+											n(-1433954, {	-- Broken Mirror B-1
+												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
+												["questID"] = 61817,
+												["isDaily"] = true,
+												["coord"] = { 73.1, 44.8, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357230, {	-- Forgotten Chest
+														["questID"] = 61830,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433955, {	-- Broken Mirror B-2
+												["questID"] = 61821,
+												["isDaily"] = true,
+												["coord"] = { 40.3, 77.1, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357231, {	-- Forgotten Chest
+														["questID"] = 61831,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433956, {	-- Broken Mirror B-3
+												["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
+												["questID"] = 61825,
+												["isDaily"] = true,
+												["coord"] = { 77.2, 65.4, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(357232, {	-- Forgotten Chest
+														["questID"] = 61832,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+										}),
+										--[[
+										n(-970, {	-- Set C
+										}),
+										n(-971, {	-- Set D
+										}),
+										--]]
+									}),
 									n(-908, {	-- Rewards
 									--	TODO: cloaks might need to be marked with armor spec classes, need to get one and then see if cloth set cloak can be used on a druid, for example.  there's no blizz text indicating that they're locked to users of a specific armor type so it needs verification i guess
 										i(183798),	-- Silessa's Battle Harness (MOUNT!)
@@ -1934,10 +2149,7 @@ _.Zones =
 										i(181089),	-- Fearstalker's Burnished Leggings
 										i(181090),	-- Fearstalker's Burnished Monnion
 										i(181086),	-- Fearstalker's Burnished Sabatons
-										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183707),	-- Mantle of Burnished Blades
-										i(183976),	-- Rogue Researcher's Dagger
-										i(183978),	-- Silver-Etched Hopebreaker Dirk
 										i(181129),	-- Soulbreaker's Burnished Drape
 										i(181123),	-- Soulbreaker's Burnished Handwraps
 										i(181124),	-- Soulbreaker's Burnished Hood
@@ -1947,6 +2159,9 @@ _.Zones =
 										i(181122),	-- Soulbreaker's Burnished Slippers
 										i(181121),	-- Soulbreaker's Burnished Vestments
 										i(181128),	-- Soulbreaker's Burnished Wraps
+										i(183972),	-- Forgotten Venthyr Winged Kris
+										i(183976),	-- Rogue Researcher's Dagger
+										i(183978),	-- Silver-Etched Hopebreaker Dirk
 									}),
 									q(60164, {	-- Mirror Attunement: Dominance Keep
 										["sourceQuests"] = {
@@ -1972,55 +2187,6 @@ _.Zones =
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
 									}),
-								--	TODO: flesh out, add 181363 Handcrafted Mirror Repair Kit somewhere (to vendor or as cost to broken mirror objects?)
-								--	not sure if the mirrors have discrete questIDs/locations/objects associated?
-								--	apparently there are 3 up that can be completed each day (costs 20 Infused Ruby each).  the same 3 will be up each week, and then upon reset will cycle, but unpredictably (aka the same 3 can be up the next week)
-								--	mirror should always port you to treasure.  if it takes you to Sanctuary of the Mad, go back to the same mirror, re-enter, and you should get ported to the right place
-								--[[ JAN 12 - JAN 18
-									1.	Broken Mirror: 39.1, 52.2, 1525
-										--	fixing mirror triggered 58013 / 61819
-										--	ported to Sanctuary of the Mad, re-ported and got to a room with Living Bulwark (npcID 173392) and Forgotten Chest (30.9, 47.0, 1525)
-										--	looting chest triggered 61836
-									2.	Broken Mirror: 58.8, 67.8, 1525
-										--	fixing mirror triggered 61823
-										--	ported to room with 2 Ancient Tomes (npcID 173387) and Forgotten Chest (31.8, 47.0, 1525)
-										--	looting chest triggered 61837
-									3. Broken Mirror: 70.9, 43.6, 1525
-										--	fixing mirror triggered 61827
-										--	ported to room with a bunch of Decaying Skeletons (npcID 173390) and Forgotten Chest (31.8, 48.4, 1525)
-										--	looting chest triggered 61838
-								--]]
-								--[[
-									o(357565, {	-- Repaired Transport Mirror
-									--	["description"] = "Requires Tier 3 Mirror Network to see.",
-									--	["npcID"] = 173634,	-- Muckribbon
-									--	["coord"] = { 69.3, 77.9, 1525 },
-									--	["questID"] = 62196,
-										["g"] = {
-								--]]
-											
-								--[[
-										},
-									}),
-									(xxxxxx, {	--
-									--["description"] = "Chance to loot from repairing broken mirrors.",
-									--]]
-									--["g"] = {
-								--]]
-										
-								--	}),
-									--[[
-									Obtained from the tier 3 mirror system for Venthyr.
-									I got it from repairing the broken mirror and looting the chest inside at 20, 54 in Revendreth.
-									Although i've repair this mirror around 7 days total so far and only got it today,
-									so seems random from the broken mirror chests. Once you upgrade to tier 3 of the mirror system and
-									unlock the various mirrors for teleporting around the zone, you'll be then taught about broken mirrors.
-									After this quest you'll be able then purchase Handcrafted Mirror Repair Kit.
-									This will allow you to repair the various broken mirrors across Revendreth and enter them.
-									They despawn once entered and you loot the chest within, although currently on beta they sometimes bug and
-									send you to the Sanctuary of the Mad, if this happens I just kept returning to the repaired mirror
-									and entering it until it teleports me to the chest room.
-									--]]
 								},
 							}),
 						}),
@@ -2053,13 +2219,13 @@ _.Zones =
 								--	appears on the vendor at Renown 14, not sure if this is the same or different for other covenants
 									["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
 								}),
-						--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?  
+						--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?
 								i(182332, {	-- Gravestone Battle Armor (MOUNT!)
 									["cost"] = { { "c", 1813, 3000 } },
 								}),
 						--]]
 								i(180461, {	-- Horrid Dredwing (MOUNT!)
-									["cost"] = { 
+									["cost"] = {
 										{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
 										{ "c", 1885, 100 },		-- 100x Grateful Offering
 									},
@@ -2391,12 +2557,6 @@ _.Zones =
 								}),
 							},
 						}),
-						n(165419, {	-- Grand Marshal Mudrag
-							["coord"] = { 40.6, 46.8, 1699 },
-							["g"] = {
-								i(183989),	-- Dredger Barrow Racer
-							},
-						}),
 						n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
 							["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
 							["g"] = {
@@ -2583,7 +2743,7 @@ _.Zones =
 								i(180906, {	-- Soulbreaker's Ebony Slippers
 									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 								}),
-								
+
 								i(180928, {	-- Soulbreaker's Ebony Wraps
 									["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 								}),

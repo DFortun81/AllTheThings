@@ -259,6 +259,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 43239 },	-- Razgar
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(26588, {	-- A Furious Catch
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
@@ -268,12 +278,6 @@ _.Zones =
 							["groups"] = {
 								crit(4, {	-- A Furious Catch
 									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -287,12 +291,6 @@ _.Zones =
 								crit(5, {	-- A Golden Opportunity
 									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(26557, {	-- A Staggering Effort
@@ -305,12 +303,6 @@ _.Zones =
 								crit(3, {	-- A Staggering Effort
 									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(26543, {	-- Clammy Hands
@@ -322,12 +314,6 @@ _.Zones =
 							["groups"] = {
 								crit(1, {	-- Clammy Hands
 									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -349,12 +335,6 @@ _.Zones =
 							["groups"] = {
 								crit(2, {	-- No Dumping Allowed
 									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

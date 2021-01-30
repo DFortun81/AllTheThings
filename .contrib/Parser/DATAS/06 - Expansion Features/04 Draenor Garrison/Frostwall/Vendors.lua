@@ -563,6 +563,8 @@ _.ExpansionFeatures =
 						i(127868, {	-- Crusher (PET!)
 							["cost"] = 10000000,	-- 1,000g
 						}),
+						i(128308),	-- Draenic Armor Set
+						i(128307),	-- Draenic Weaponry
 						i(127864),	-- Personal Spotlight (TOY!)
 						i(116667, {	-- Rocktusk Battleboar (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g

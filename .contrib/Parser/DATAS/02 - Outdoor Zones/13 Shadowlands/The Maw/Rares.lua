@@ -117,7 +117,12 @@ _.Zones =
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
 						i(183070, {	-- Mawsworn Orders
-							["questID"] = 63164,
+							["questID"] = 63164,	-- Mawsworn Orders
+							["g"] = {
+								crit(22, {	-- Mawsworn Orders
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
 						}),
 					},
 				}),
@@ -153,7 +158,6 @@ _.Zones =
 						q(59230, {	-- Bonus Objective
 							["isDaily"] = true,
 						}),
-						i(183070),	-- Mawsworn Orders
 					},
 				}),
 				n(162844, {	-- Dath Rezara
@@ -163,6 +167,30 @@ _.Zones =
 					["g"] = {
 						crit(18, {	-- Dath Rezara
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
 						}),
 						q(61140, {	-- Bonus Objective
 							["isDaily"] = true,
@@ -227,25 +255,40 @@ _.Zones =
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
+					["description"] = "Summoned using |cff0070ddDomination's Calling|r.",
 					["questID"] = 62260,
 					["isDaily"] = true,
-					["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
 					["coord"] = { 21.0, 70.2, 1543 },
-					["description"] = "Summoned using |cff0070ddDomination's Calling|r",
+					["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
 					["g"] = {
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(184108),	-- Vorpal Amulet
-					}
-				}),
-				n(174861, {	-- Gorged Shadehound
-					["description"] = "Only up when the active Beastwarrens Hunt is |cFFFFFFFFShadehound|r.",
-					["isWeekly"] = true,	-- technically like demiweekly i guess
-					["questID"] = 63433,
-					["coord"] = { 53.4, 79.3, 1543 },
-					["g"] = {
-						i(184167),	-- Mawsworn Soulhunter (MOUNT!)
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
@@ -347,6 +390,14 @@ _.Zones =
 						crit(16, {	-- Odalrik
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(183061, {	-- Wailing Coin
+							["questID"] = 63158,	-- Wailing Coin
+							["g"] = {
+								crit(21, {	-- Wailing Coin
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
 						q(62618, {	-- Bonus Objective
 							["isDaily"] = true,
 						}),
@@ -429,6 +480,30 @@ _.Zones =
 					["g"] = {
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
 						}),
 					},
 				}),
@@ -516,44 +591,6 @@ _.Zones =
 						}),
 						q(61728, {	-- Bonus Objective
 							["isDaily"] = true,
-						}),
-					},
-				}),
-				n(-904, {	-- Wrath of the Jailer
-					["isWeekly"] = true,
-					["questID"] = 63414,
-					["g"] = {
-						n(COMMON_BOSS_DROPS, {
-							i(183228),	-- Memory of Arcane Pulsars
-							i(184657),	-- Armguard of the Unseen Assailant
-							i(184661),	-- Bracers of the Tenebrous Retinue
-							i(184658),	-- Dread Harrier's Pauldrons
-							i(184660),	-- Dreadguard's Greathelm
-							i(184654),	-- Forgotten Shade's Shawl
-							i(184659),	-- Grips of the Dreadhound Tamer
-							i(184656),	-- Mawsworn Assassin's Doublet
-							i(184655),	-- Sash of the Ethereal Servant
-						}),
-						n(175846, {	-- Dathlane the Herald <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175877, {	-- Lumisende <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175881, {	-- Naelcrotix <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(176173, {	-- Zograthos <Torghast Executioner>
-							-- ["coord"] = { 35.1, 41.5, 1543 },
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
 						}),
 					},
 				}),

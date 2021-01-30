@@ -8,7 +8,7 @@ _.Zones =
 		m(111, {	-- Shattrath City
 			n(FACTIONS, {
 				faction(1011, {	-- Lower City
-					["creatureID"] = 21655,	-- Nakodu <Lower City Quartermaster>
+					["crs"] = { 21655 },	-- Nakodu <Lower City Quartermaster>
 					["g"] = {
 						n(QUESTS, {
 							q(10917,  {  -- The Outcast's Plight
@@ -105,7 +105,7 @@ _.Zones =
 				}),
 				faction(1015, {	-- Netherwing
 					["collectible"] = false,	-- Netherwing isn't based in Shattrath, so shouldn't be collectible here.
-					["creatureID"] = 23489,	-- Drake Dealer Hurlunk
+					["crs"] = { 23489 },	-- Drake Dealer Hurlunk
 					["g"] = {
 						q(11109, {	-- Jorus the Cobalt Netherwing Drake
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
@@ -147,7 +147,7 @@ _.Zones =
 				}),
 				faction(1038, {	-- Ogri'la
 					["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
-					["creatureID"] = 23428,	-- Jho'nass <Ogri'la Quartermaster>
+					["crs"] = { 23428 },	-- Jho'nass <Ogri'la Quartermaster>
 					["g"] = {
 						q(10984, {	-- Speak with the Ogre
 							["isBreadcrumb"] = true,
@@ -164,7 +164,7 @@ _.Zones =
 				}),
 				faction(1031, {	-- Sha'tari Skyguard
 					["collectible"] = false,	-- Sha'tari Skyguard isn't based in Shattrath, so shouldn't be collectible here.
-					["creatureID"] = 23367,	-- Grella <Skyguard Quartermaster>
+					["crs"] = { 23367 },	-- Grella <Skyguard Quartermaster>
 					["g"] = {
 						q(11096, {	-- Threat from Above
 							["coord"] = { 64.0, 42.0, 111 },
@@ -179,7 +179,7 @@ _.Zones =
 				}),
 				faction(1077, {	-- Shattered Sun Offensive
 					["collectible"] = false,	-- Shattered Sun Offensive isn't based in Shattrath, so shouldn't be collectible here.
-					["creatureID"] = 25032,	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
+					["crs"] = { 25032 },	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["g"] = {
 						q(11877, {	-- Sunfury Attack Plans
 							["provider"] = { "n", 25140 },	-- Lord Torvos
@@ -209,7 +209,7 @@ _.Zones =
 					},
 				}),
 				faction(932,  {	-- The Aldor
-					["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>
+					["crs"] = { 19321 },	-- Quartermaster Endarin <Aldor Quartermaster>
 					["altAchievements"] = {
 						1205,	-- Hero of Shattrath
 					},
@@ -929,7 +929,7 @@ _.Zones =
 					},
 				}),
 				faction(934,  {	-- The Scryers
-					["creatureID"] = 19331,	-- Quartermaster Enuril <Scryer Quartermaster>
+					["crs"] = { 19331 },	-- Quartermaster Enuril <Scryer Quartermaster>
 					["altAchievements"] = {
 						1205,	-- Hero of Shattrath
 					},
@@ -1640,7 +1640,7 @@ _.Zones =
 					},
 				}),
 				faction(935,  {	-- The Sha'tar
-					["creatureID"] = 21432,	-- Almaador <Sha'tari Quartermaster>
+					["crs"] = { 21432 },	-- Almaador <Sha'tari Quartermaster>
 					["g"] = {
 						q(13430, {	-- Trial of the Naaru: Magtheridon
 							["sourceQuests"] = {

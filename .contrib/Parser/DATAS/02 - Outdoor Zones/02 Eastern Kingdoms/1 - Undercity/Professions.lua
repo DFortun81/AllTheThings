@@ -63,6 +63,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 4573 },	-- Armand Cromwell
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(29317, {	-- Fish Head
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 80.7, 31.2, 90 },
@@ -72,12 +82,6 @@ _.Zones =
 							["groups"] = {
 								crit(1, {	-- Fish Head
 									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -91,12 +95,6 @@ _.Zones =
 								crit(3, {	-- Like Pike?
 									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29361, {	-- Moat Monster!
@@ -108,12 +106,6 @@ _.Zones =
 							["groups"] = {
 								crit(5, {	-- Moat Monster!
 									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -127,12 +119,6 @@ _.Zones =
 								crit(2, {	-- Tadpole Terror
 									["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(29322, {	-- Time for Slime
@@ -144,12 +130,6 @@ _.Zones =
 							["groups"] = {
 								crit(4, {	-- Time for Slime
 									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

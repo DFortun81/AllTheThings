@@ -189,6 +189,16 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						i(67414, {	-- Bag of Shiny Things
+							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["crs"] = { 5494 },	-- Catherine Leland
+							["g"] = {
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
+						}),
 						q(26488, {	-- Big Gulp
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
@@ -198,12 +208,6 @@ _.Zones =
 							["g"] = {
 								crit(4, {	-- Big Gulp
 									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -217,12 +221,6 @@ _.Zones =
 								crit(2, {	-- Diggin' For Worms
 									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(26414, {	-- Hitting a Walleye
@@ -234,12 +232,6 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Hitting a Walleye
 									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),
@@ -253,12 +245,6 @@ _.Zones =
 								crit(3, {	-- Rock Lobster
 									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
 								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								}),
 							},
 						}),
 						q(26536, {	-- Thunder Falls
@@ -270,12 +256,6 @@ _.Zones =
 							["g"] = {
 								crit(5, {	-- Thunder Falls
 									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
 						}),

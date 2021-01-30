@@ -13,8 +13,6 @@ _.Zones =
 				373,	-- Greenstone Quarry #2
 				374,	-- The Widows Wail
 				375,	-- Oona Kagu
-				791,	-- temple of the jade serpent #1
-				792,	-- temple of the jade serpent #2
 			},
 		}),
 	}),

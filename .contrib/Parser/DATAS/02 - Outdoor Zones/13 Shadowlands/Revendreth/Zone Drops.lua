@@ -48,7 +48,8 @@ _.Zones =
 				i(177773),	-- Avowed Tormenter's Wristwraps
 				i(177806),	-- Banewood Dirk
 				i(174655, {	-- Bell of Remembrance
-				--	TODO: is this venthyr-only?  no questID appears to be attached to this, you can just judge souls as often as you loot bells.  this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either.  it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					--	no questID appears to be attached to this, you can just judge souls as often as you loot bells.  this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either.  it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
 					["sourceQuests"] = { 58725 },	-- Sinkeeper
 					["description"] = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
 					["questID"] = 61194,	-- after the first day, when you can do the original quest item > second looted bell (this one), i haven't been able to loot more than one bell per day.  they also generally drop very quickly, like in < 10 mob kills, and this quest triggers on loot each time

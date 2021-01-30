@@ -6,9 +6,8 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			faction(1104, {	-- Frenzyheart Tribe
-				["achievementID"] = 950,	-- Frenzyheart Tribe
-				["g"] = {
+			n(FACTIONS, {
+				faction(1104, {	-- Frenzyheart Tribe
 					n(QUESTS, {
 						q(12758, {	-- A Hero's Headgear
 							["coord"] = { 55.7, 69.4, 119 },
@@ -130,11 +129,8 @@ _.Zones =
 							i(44121),	-- Sparkly Shiny Gloves
 						},
 					}),
-				},
-			}),
-			faction(1105, {	-- The Oracles
-				["achievementID"] = 951,	-- The Oracles
-				["g"] = {
+				}),
+				faction(1105, {	-- The Oracles
 					n(QUESTS, {
 						q(12735, {	-- A Cleansing Song
 							["coord"] = { 53.3, 56.4, 119 },
@@ -265,7 +261,7 @@ _.Zones =
 							i(44109),	-- Toothslice Helm
 						},
 					}),
-				},
+				}),
 			}),
 		}),
 	}),

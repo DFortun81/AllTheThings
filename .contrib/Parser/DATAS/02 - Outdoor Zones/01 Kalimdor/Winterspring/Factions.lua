@@ -8,8 +8,8 @@ _.Zones =
 		m(83, {	-- Winterspring
 			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
-					["creatureID"] = 11558,	-- Kernda
-					["collectible"] = false,
+					["crs"] = { 11558 },	-- Kernda
+					["collectible"] = false,	-- Collectible in Felwood
 					["g"] = {
 						q(28614, {	-- Bearzerker
 							["provider"] = { "n", 48722 },	-- Burndl
@@ -50,7 +50,7 @@ _.Zones =
 					},
 				}),
 				faction(589, {	-- Wintersaber Trainers
-					["creatureID"] = 10618,	-- Rivern Frostwind
+					["crs"] = { 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(29035, {	-- A Cub's Cravings

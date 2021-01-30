@@ -154,11 +154,14 @@ i(138883);	-- Meryl's Conjured Refreshment
 i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
+i(180682);	-- Noble's Wardrobe
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(180710);	-- Pocket Repair Kit
 i(180170);	-- Pulsing Animacone
+i(180377);	-- Red Rum
 i(180008);	-- Resonating Anima Core
 i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
@@ -174,6 +177,7 @@ i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
 i(15723);	-- Tea with Sugar
+i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop
 i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
@@ -356,6 +360,7 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184505);	-- "Adorable Ascended" Costume
 i(180372);	-- Amalgamation of Sin
 i(173791);	-- Baguette
 i(181362);	-- Blob of Slime

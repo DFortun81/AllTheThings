@@ -1121,6 +1121,7 @@ _.HiddenQuestTriggers =
 		q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer
 		q(40610),	-- 7.0 Highmountain - Vignette - Worm Treasure - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing Treasure Worm
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
+		q(41246),	-- Snowblind Mesa Phased Terrain Tracking Quest — when Snowblind Mesa phases during #42512, "Highmountain Stands"
 		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
@@ -1205,6 +1206,9 @@ _.HiddenQuestTriggers =
 		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
+		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
+		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
+		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1333,6 +1337,13 @@ _.HiddenQuestTriggers =
 		q(43970),	-- Monk Order Hall - Brewmaster Chosen
 		q(44427),	-- Monk Order Hall - Brewmaster Chosen
 		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
+		q(40655),	-- Monk Order Hall - Li Li — hopping on kite during "Off to Adventure!"
+		q(41812),	-- Monk Order Hall - Tracking Quest: Saw Boss Cinematic — cinematic during #41732, "The Hand of Keletress"
+		q(43065),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 1 — during "Tracking the Tideskorn"
+		q(43066),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 2 — during "Tracking the Tideskorn"
+		q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
+		q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
+		q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -1658,6 +1669,7 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(39576),	-- Echoes of Deathwing
 		q(40050),	-- Shipwreck Cove
 		q(39317),	-- Siege of Crawliac
 		q(40316),	-- The Screeching Crag
@@ -1666,6 +1678,7 @@ _.HiddenQuestTriggers =
 
 		--	Stormheim bonus objectives
 		q(42431),	-- The Brood of Nithogg
+		q(38343),	-- Raze Hel
 		q(40111),	-- Rout the Bilgefin Invaders
 
 		--	Val'sharah bonus objectives
@@ -2477,7 +2490,14 @@ _.HiddenQuestTriggers =
 		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
 		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+		q(56695),	-- after poen dialogue around 29.4, 31.7: "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
+		q(56693),	-- after poen dialogue around 38.0, 42.7: "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
+		q(56682),	-- after poen dialogue around 63.5, 39.0: "I always dreamt of fighting back against the naga.  Neri gave me that chance."
 		q(56690),	-- after poen dialogue: "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
+		q(56688),	-- after poen dialogue: "The world's a lot less interesting when you can only move on the ground.  Now I see why the sea cucumbers are always complaining."
+		q(56696),	-- after poen dialogue around 54.6, 54.3: "Have you ever swooped on a ray?  It's out-ray-geous!"
+		q(56697),	-- after poen dialogue around 58, 48: "We have so many free people in Newhome that we need to gather more food!  This is great!"
+		q(56692),	-- after poen dialogue from turning in #56151, "Poen's Favorite Dish" - "Mmm, I love eel!"
 		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
 		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
 		q(56705),	-- vim brineheart dialogue, triggered around 71.6, 50.9: "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
@@ -2965,6 +2985,7 @@ _.HiddenQuestTriggers =
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
+		q(60826),	-- first use per day of Unbound Changeling trinket
 		
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
@@ -3147,6 +3168,11 @@ _.HiddenQuestTriggers =
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
 		q(60813),	--  /
 		q(60814),	-- /
+		q(60805),	-- \
+		q(60806),	--  \
+		q(60807),	--   running over Lunarlight Buds for Lunarlight Pod at 38.8, 53.6, for #60791
+		q(60808),	--  /
+		q(60809),	-- /
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(61692),	-- \
@@ -3164,6 +3190,7 @@ _.HiddenQuestTriggers =
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
+		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3312,6 +3339,7 @@ _.HiddenQuestTriggers =
 		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
+		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 		q(62404),	-- using Ashen Ink (Crypt Couture)
@@ -3401,8 +3429,6 @@ _.HiddenQuestTriggers =
 		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
-		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item — every time
-		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item — first time only
 		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
 		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
@@ -3412,31 +3438,38 @@ _.HiddenQuestTriggers =
 		q(61921),	-- triggered when entering the Ember Court, Week 5
 		q(61933),	-- triggered when entering the Ember Court, Week 6
 		q(61927),	-- triggered when entering the Ember Court for the week
+		q(61939),	-- triggered when Ember Court began for the week (after the initial wave of "Quest accepted," after the pre-event when you can mingle with guests)
 		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
 		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
-		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
+		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment objective
 		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
 		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+		q(62142),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Ember Skyterror" objective
+		q(61450),	-- also part of the "Ember Skyterror" objective, for turning the seed in to Renathal
 		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
 		q(62144),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Legacy of Stone" objective (went with Humble option, not Decadent)
+		q(61998),	-- also part of "Legacy of Stone," not sure if they both triggered last week?  again, i chose Humble, but both versions went off this time
 		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
 		q(62143),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Murder of Colonel Mort" objective
+		q(62115),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Crashers" objective
+		q(61163),	-- also for the "Party Crashers" objective, but automatically "accepted" when it started
 		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
-		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" event
+		q(62125),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Ritual of Absolution" objective
+		q(62114),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Sineater" objective
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
+		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
+		q(62118),	-- picked up when entering the Ember Court for the week — for "Traditional Candles"
+		q(62119),	-- picked up when entering the Ember Court for the week – for "Roaring Fires"
+		q(62132),	-- picked up when entering the Ember Court for the week — for "Food Fight"
+		q(62127),	-- picked up when entering the Ember Court for the week — for "Ride on the Wild Side" - the description for this is "Ride Gorm" so i guess... you can ride a gorm somehow.  k
+		q(62120),	-- picked up when entering the Ember Court for the week — for "Stolen Mementos"
+		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
+		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
-	--	q(62132),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62118),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62119),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62171),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62127),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62120),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62121),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
-	--	q(62146),	-- triggered when completing 'formal' activities? maybe more info...
 		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
@@ -3450,16 +3483,17 @@ _.HiddenQuestTriggers =
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
+		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
+		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
+		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
-		q(59418),	-- triggered when using "RSVP: Kleia and Pelagos" — every time
-		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos" — first time only
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
@@ -3470,8 +3504,6 @@ _.HiddenQuestTriggers =
 		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
 		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
-		q(59618),	-- triggered when using "RSVP: Stonehead"
-		q(59619),	-- triggered when using "RSVP: Stonehead"
 		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
 		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
 		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
@@ -3507,8 +3539,6 @@ _.HiddenQuestTriggers =
 		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59639),	-- triggered when leaving Ember Court (week 3)
-		q(59421),	-- triggered when using "RSVP: Plague Deviser Marileth"
-		q(59422),	-- triggered when using "RSVP: Plague Deviser Marileth"
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -3525,19 +3555,54 @@ _.HiddenQuestTriggers =
 		q(61498),	-- when using "Stock: Appetizers"
 		q(59476),	-- when using "Contract: Mortal Reminders"
 		q(59477),	-- when using "Contract: Mortal Reminders"
-		q(59415),	-- when using "RSVP: Grandmaster Vole"
-		q(59416),	-- when using "RSVP: Grandmaster Vole"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
-		q(59424),	-- when using "RSVP: Sika"
-		q(59425),	-- when using "RSVP: Sika"
+		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
+		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
+		q(59415),	-- when using "RSVP: Grandmaster Vole"
+		q(59416),	-- when using "RSVP: Grandmaster Vole"
+		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
+		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
+		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
+		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124)
+		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117)
+		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117)
+		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118)
+		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118)
+		q(59424),	-- when using "RSVP: Sika"
+		q(59425),	-- when using "RSVP: Sika"
+		q(59618),	-- when using "RSVP: Stonehead"
+		q(59619),	-- when using "RSVP: Stonehead"
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
+		q(60302),	-- when channeling anima to Dominance Keep for the first time
+		q(61494),	-- using Building: Guardhouse
+		q(59436),	-- using Staff: Stage Crew
+		q(59433),	-- using Staff: Waiters
+		q(61457),	-- using Altar of Accomplishment
+		q(59515),	-- using Contract: Stoneborn Reserves
+		q(59516),	-- using Contract: Stoneborn Reserves
+		q(59488),	-- using Contract: Lost Chalice Band
+		q(59489),	-- using Contract: Lost Chalice Band
+		q(59518),	-- using Contract: Venthyr Volunteers
+		q(59519),	-- using Contract: Venthyr Volunteers
+		q(59500),	-- using Contract: Mushroom Surprise
+		q(59501),	-- using Contract: Mushroom Surprise
+		q(61499),	-- using Stock: Anima Samples
+		q(61502),	-- when using Invitation: Choofa
+		q(62656),	-- when using Invitation: Choofa
+		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
+		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
+		q(59517),	-- selecting Venthyr Volunteers as the security for the week
+		q(59514),	-- selecting Stoneborn Reserves as the security for the week
+		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3554,9 +3619,6 @@ _.HiddenQuestTriggers =
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 	--	q(63195),	-- triggered randomly in The Maw 12/6/20
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
-	--	q(63194),	-- The Maw Hunt event completion trigger... maybe will become a sourced/trackable thing like the 'Wrath of the Jailor'?
-	--	q(63199),	-- The Maw Hunt event completion trigger... with 'The Alpha' as the final boss
-		q(63198),	-- Triggered after completing Hunt: Death Elementals
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
@@ -3601,6 +3663,7 @@ _.HiddenQuestTriggers =
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
 		q(62978),	-- Twisting Corridors, Layer 4
+		q(62980),	-- Twisting Corridors, Layer 8
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

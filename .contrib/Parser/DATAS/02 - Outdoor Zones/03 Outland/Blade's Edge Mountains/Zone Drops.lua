@@ -387,7 +387,10 @@ _.Zones =
 						{ 32.0, 63.2, 105 },
 						{ 33.6, 52.6, 105 },
 					},
-					["crs"] = { 23386 },	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
+					["crs"] = {
+						23385,	-- Gan'arg Analyzer
+						23386,	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
+					},
 				}),
 				i(22925, {	-- Recipe: Major Holy Protection Potion
 					["coords"] = {

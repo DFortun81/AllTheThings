@@ -967,7 +967,7 @@ local function BuildSourceText(group, l)
 		if l < 1 then
 			return BuildSourceText(group.parent, l + 1);
 		else
-			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
+			return BuildSourceText(group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
 	end
 	return group.text or "*";
@@ -2994,22 +2994,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local unfiltered = {};
 			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 			local abbrevs = L["ABBREVIATIONS"];
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) then
-					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
-						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source, replacement);
-						end
-						if j.u then
-							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-						elseif not app.RecursiveUnobtainableFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-						else
-							tinsert(temp, text);
+					-- don't use cost items as sources for the search
+					if not app.HasCost(j, paramA, paramB) then
+						local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+						if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
+							for source,replacement in pairs(abbrevs) do
+								text = string.gsub(text, source, replacement);
+							end
+							if j.u then
+								tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+							elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+							elseif not app.RecursiveUnobtainableFilter(j.parent) then
+								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+							else
+								tinsert(temp, text);
+							end
 						end
 					end
 				end
@@ -3037,7 +3041,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
-					tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+					tinsert(info, 1, { left = left, right = right, wrap = wrap });
 				end
 			end
 		end
@@ -3662,6 +3666,17 @@ app.BuildCurrencies = function(group)
 				end
 			end
 		end
+	end
+end
+-- check if the group has a cost which includes the given parameters
+app.HasCost = function(group, idType, id)
+	-- only checking for item/currency costs
+	if not (idType == "itemID" or idType == "currencyID") then return false; end
+	-- group doesn't have a valid cost at all
+	if not group.cost or type(group.cost) ~= "table" then return false; end
+	for i,c in ipairs(group.cost) do
+		-- return true if exact cost is found
+		if c[2] == id and ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then return true; end
 	end
 end
 local function SendGroupMessage(msg)
@@ -10008,7 +10023,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 					-- clean anything out of it so that items don't show in the quest requirements
 					sq.g = {};
 
-					sq = NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
+					sq = app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1) or sq;
 					if sq then
 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
 						root.depth = math.max((root.depth or 0),(sq.depth or 1));
@@ -10068,6 +10083,7 @@ function app:CreateMiniListForGroup(group)
 			popout.data.visible = true;
 			popout.data.progress = 0;
 			popout.data.total = 0;
+			popout.data.expanded = nil;
 			if not popout.data.g then
 				popout.data.g = {};
 			end
@@ -10213,7 +10229,7 @@ function app:CreateMiniListForGroup(group)
 						i = i - 1;
 					end
 					if sq then
-						searchResult = CloneData(sq);
+						local searchResult = CloneData(sq);
 						searchResult.collectible = true;
 						searchResult.g = g;
 						root = searchResult;
@@ -10464,6 +10480,27 @@ local function CalculateRowIndent(data)
 		return 0;
 	end
 end
+local function AdjustRowIndent(row, indentAdjust)
+	if row.Indicator then
+		local _, _, _, x = row.Indicator:GetPoint(2);
+		row.Indicator:SetPoint("RIGHT", row, "LEFT", x - indentAdjust, 0);
+	end
+	if row.Texture then
+		-- only ever LEFT point set
+		-- for i=1, row.Texture:GetNumPoints() do   
+		-- 	print(row.Texture:GetPoint(i));
+		-- end
+		-- print("---")
+		local _, _, _, x = row.Texture:GetPoint(2);
+		-- print("row texture at",x)
+		row.Texture:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	else
+		-- only ever LEFT point set
+		local _, _, _, x = row.Label:GetPoint(1);
+		-- print("row label at",x)
+		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	end
+end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
@@ -10524,6 +10561,7 @@ local function SetRowData(self, row, data)
 		local leftmost = row;
 		local relative = "LEFT";
 		local x = ((CalculateRowIndent(data) * 8) or 0) + 8;
+		row.indent = x;
 		local back = CalculateRowBack(data);
 		row.ref = data;
 		if back then
@@ -10619,7 +10657,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight = self.Container, 0, 0;
+		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -10632,12 +10670,29 @@ local function Refresh(self)
 		for i=2,totalRowCount do
 			row = rawget(container.rows, i) or CreateRow(container);
 			SetRowData(self, row, rawget(rowData, current));
+			-- track the minimum indentation within the set of rows so they can be adjusted later
+			if row.indent and (not minIndent or row.indent < minIndent) then
+				minIndent = row.indent;
+				-- print("new minIndent",minIndent)
+			end
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
 				break;
 			else
 				current = current + 1;
 				rowCount = rowCount + 1;
+			end
+		end
+
+		-- Readjust the indent of visible rows
+		if minIndent > 15 then
+			minIndent = minIndent - 16;
+		end
+		-- if there's actually an indent to adjust...
+		if minIndent > 0 then
+			for i=2,rowCount do
+				row = rawget(container.rows, i);
+				AdjustRowIndent(row, minIndent);
 			end
 		end
 
@@ -11250,9 +11305,11 @@ RowOnEnter = function (self)
 			local str = "";
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
+				-- TODO: causes 60 upvalue error...
+				-- str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr)
 				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
 			end
-			GameTooltip:AddDoubleLine("Classes", str);
+			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
 		if app.Settings:GetTooltipSetting("RaceRequirements") then
 			if reference.races then
@@ -11262,12 +11319,12 @@ RowOnEnter = function (self)
 					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
 				end
 				if #reference.races > 4 then
-					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+					GameTooltip:AddLine(L["RACES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
 				else
-					GameTooltip:AddDoubleLine("Races", str);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
 				end
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+				GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
@@ -11711,13 +11768,18 @@ local function Update(self, force, got)
 						if got then app:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
-					tinsert(self.rowData, {
-						["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
-						["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
-						["collectible"] = 1,
-						["collected"] = 1,
-						["back"] = 0.7
-					});
+					-- only add this info row if there is actually nothing visible in the list
+					-- always a header row
+					-- print("any data",#self.Container,#self.rowData,#self.data)
+					if #self.rowData < 2 then
+						tinsert(self.rowData, {
+							["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
+							["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+							["collectible"] = 1,
+							["collected"] = 1,
+							["back"] = 0.7
+						});
+					end
 				else
 					self.missingData = true;
 				end

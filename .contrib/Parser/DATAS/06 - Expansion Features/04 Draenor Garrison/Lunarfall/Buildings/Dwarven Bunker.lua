@@ -18,6 +18,15 @@ _.ExpansionFeatures =
 									i(118365),	-- Stormwind Tabard
 								},
 							}),
+							q(38175, {	-- Scrap Meltdown
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 77377 },	-- Kristen Stoneforge
+								["isDaily"] = true,
+								["g"] = {
+									i(120301),	-- Armor Enhancement Token
+									i(120302),	-- Weapon Enhancement Token
+								},
+							}),
 						}),
 						n(VENDORS, {
 							n(77377, {	-- Kristen Stoneforge <Quartermaster>

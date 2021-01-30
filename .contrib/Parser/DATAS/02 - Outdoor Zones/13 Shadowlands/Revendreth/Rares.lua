@@ -99,9 +99,10 @@ _.Zones =
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
+					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
 					["questID"] = 61618,
 					["isDaily"] = true,
-					["coord"] = { 33.0, 15.2, 1525 },
+					["coord"] = { 32.6, 14.7, 1525 },	-- Madalav's Hammer (to summon rare)
 					["g"] = {
 						i(180489),	-- Forgemaster's Many-Fold Rapier
 						i(180939),	-- Mantle of the Forgemaster's Dark Blades
@@ -122,7 +123,7 @@ _.Zones =
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
-					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
+					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
 					["questID"] = 59612,
 					["isDaily"] = true,
 					["coord"] = { 45.8, 79.0, 1525 },

@@ -1029,6 +1029,7 @@ _.Zones =
 					},
 				}),
 				q(60360, {	-- An Urgent Meeting
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 					["coord"] = { 70.9, 49.6, 85 },
 					["sourceQuest"] = 60359,	-- Home Is Where the Hearth Is
@@ -1187,6 +1188,7 @@ _.Zones =
 					["lvl"] = 15,
 				}),
 				q(60344, {	-- Finding Your Way (H)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["coord"] = { 51.9, 85.4, 85 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
@@ -1259,6 +1261,7 @@ _.Zones =
 					},
 				}),
 				q(60359, {	-- Home Is Where the Hearth Is
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1489,6 +1492,7 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(60345, {	-- License to Ride
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
 					["coord"] = { 61.5, 32.9, 85 },
 					["sourceQuest"] = 60344,	-- Finding Your Way (H)
@@ -2252,12 +2256,14 @@ _.Zones =
 					},
 				}),
 				q(60343, {	-- Welcome to Orgrimmar
+					["customCollect"] = "NPE",	-- New Player Experience
 					["coord"] = { 52.5, 88.0, 85 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59985,	-- An End to Beginnings (H)
 				}),
 				q(60346, {	-- What's Your Specialty? (Druid)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2265,6 +2271,7 @@ _.Zones =
 					["classes"] = { DRUID },
 				}),
 				q(60347, {	-- What's Your Specialty? (Hunter)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2272,6 +2279,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 				}),
 				q(60348, {	-- What's Your Specialty? (Mage)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2279,6 +2287,7 @@ _.Zones =
 					["classes"] = { MAGE },
 				}),
 				q(60349, {	-- What's Your Specialty? (Monk)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2286,6 +2295,7 @@ _.Zones =
 					["classes"] = { MONK },
 				}),
 				q(60350, {	-- What's Your Specialty? (Paladin)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2293,6 +2303,7 @@ _.Zones =
 					["classes"] = { PALADIN },
 				}),
 				q(60351, {	-- What's Your Specialty? (Priest)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2300,6 +2311,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 				}),
 				q(60352, {	-- What's Your Specialty? (Rogue)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2307,6 +2319,7 @@ _.Zones =
 					["classes"] = { ROGUE },
 				}),
 				q(60353, {	-- What's Your Specialty? (Shaman)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2314,6 +2327,7 @@ _.Zones =
 					["classes"] = { SHAMAN },
 				}),
 				q(60355, {	-- What's Your Specialty? (Warlock)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
@@ -2321,6 +2335,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 				}),
 				q(60357, {	-- What's Your Specialty? (Warrior)
+					["customCollect"] = "NPE",	-- New Player Experience
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride

@@ -1534,6 +1534,18 @@ _.Zones =
 										["coord"] = { 55.4, 68.2, 1536 },
 										["isWeekly"] = true,
 									}),
+									q(61996, {	-- Say The Magic Words
+										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
+										["provider"] = { "n", 159226 },    -- Sabrina
+										["coord"] = { 54.8, 68.8, 1536 },
+										["isWeekly"] = true,
+									}),
+									q(58515, {	-- Scrounging for Scrolls
+										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
+										["provider"] = { "n", 159198 },    -- The Professor
+										["coord"] = { 55.4, 68.2, 1536 },
+										["isWeekly"] = true,
+									}),
 									q(60283, {	-- Specter Of War: Visectus
 										["provider"] = { "n", 161668 },	-- Summoner Gerard
 										["coord"] = { 53.5, 69.3, 1536 },
@@ -1620,6 +1632,11 @@ _.Zones =
 							n(-917, {	-- Tier 2: Streaming Threads
 							}),
 							n(-918, {	-- Tier 3: Flowing Power
+								q(58454, {	-- Spoiling For A Fight
+									["provider"] = { "n", 159830 },	-- Au'narim
+									["isDaily"] = true,
+									["coord"] = { 53.6, 47.6, 1536 },
+								}),
 							}),
 						}),
 						n(-905, {	-- Command Table
