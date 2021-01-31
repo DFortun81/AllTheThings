@@ -10,8 +10,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			440,
 			441,
 			442,
-			872,	-- Monk: Legion Class Mount Map
-			874,	-- Monk: Legion Class Mount Map
 		},
 		["g"] = {
 			n(QUESTS, {

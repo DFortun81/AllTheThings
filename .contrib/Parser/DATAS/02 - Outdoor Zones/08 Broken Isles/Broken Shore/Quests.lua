@@ -10,7 +10,6 @@ _.Zones =
 				q(46268, {	-- A Found Memento
 					["provider"] = { "o", 268478 },	-- Battered Trinket
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(46208, {	-- A Godly Invitation
 					["coord"] = { 43.6, 63.1, 646 },
@@ -23,47 +22,40 @@ _.Zones =
 					["provider"] = { "n", 121224 },	-- Anduin Wrynn
 					["coord"] = { 41.4, 59.4, 646 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(46832, {	-- Aalgen Point
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.0, 646 },
-					["lvl"] = 110,
 				}),
 				q(46245, {	-- Begin Construction
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.0, 646 },
-					["lvl"] = 110,
 				}),
 				q(46904, {	-- Boon of the Command Center (Heavily Augmented)
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(46998, {	-- Boon of the Command Center (War Effort)
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(46999, {	-- Boon of the Command Center (Well Prepared)
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(46997, {	-- Boon of the Command Center (Worthy Champions)
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(47007, {	-- Boon of the Mage Tower
 					["coord"] = { 44.6, 63.2, 646 },
@@ -115,7 +107,6 @@ _.Zones =
 				}),
 				q(46791, {	-- Carried On the Wind
 					["classes"] = { SHAMAN },
-					["lvl"] = 110,
 					["provider"] = { "n", 117888 },	-- Orono
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 				}),
@@ -123,7 +114,6 @@ _.Zones =
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 					["g"] = {
 						i(146932),	-- Condensed Storm's Fury
 						i(146926),	-- Fel Command Beacon
@@ -141,20 +131,17 @@ _.Zones =
 					["sourceQuests"] = { 46250 },	-- Take Out the Head
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47137, {	-- Champions of Legionfall
 					["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 					["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.4, 646 },
-					["lvl"] = 110,
 				}),
 				q(46247, {	-- Defending Broken Isles
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.4, 646 },
-					["lvl"] = 110,
 				}),
 				q(46809, {	-- Delivering Lost Knowledge
 					["u"] = REMOVED_FROM_GAME,
@@ -232,19 +219,16 @@ _.Zones =
 					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(46252, {	-- Intolerable Infestation
 					["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.4, 646 },
-					["lvl"] = 110,
 				}),
 				q(46286, {	-- Legionfall Supplies
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.0, 646 },
-					["lvl"] = 110,
 				}),
 				q(47032, {	-- Legion Threat: Azshara
 					["isBreadcrumb"] = true,
@@ -257,7 +241,6 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47030, {	-- Legion Threat: Dalaran Infiltration
 					["isBreadcrumb"] = true,
@@ -272,7 +255,6 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["lvl"] = 110,
 				}),
 				q(47031, {	-- Legion Threat: Highmountain
 					["isBreadcrumb"] = true,
@@ -285,7 +267,6 @@ _.Zones =
 						WARLOCK,	-- Destruction
 					},
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47033, {	-- Legion Threat: Suramar
 					["isBreadcrumb"] = true,
@@ -299,7 +280,6 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["coord"] = { 44.7, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47035, {	-- Legion Threat: The Missing Mage
 					["isBreadcrumb"] = true,
@@ -314,7 +294,6 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["coord"] = { 44.7, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47034, {	-- Legion Threat: The Necromancer
 					["isBreadcrumb"] = true,
@@ -328,7 +307,6 @@ _.Zones =
 						WARLOCK,	-- Affliction
 					},
 					["coord"] = { 44.7, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
 					["isBreadcrumb"] = true,
@@ -342,27 +320,23 @@ _.Zones =
 						SHAMAN,		-- Restoration
 					},
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46333, {	-- Livin' on the Ledge
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["provider"] = { "n", 118316 },	-- Illidari Enforcer
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 44.0, 62.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(47112, {	-- Lost Souls
 					["sourceQuests"] = { 47097 },	-- A Walk to Remember
 					["provider"] = { "n", 121226 },	-- Anduin Wrynn
 					["coord"] = { 52.5, 48.4, 646 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(47139, {	-- Mark of the Sentinax
 					["sourceQuests"] = { 46251 },	-- Shard Times
 					["provider"] = { "n", 117873 },	-- Illidan Stormrage
 					["coord"] = { 44.6, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(45193, {	-- One Step Behind
 					["sourceQuests"] = { 45192 },	-- Runes of Rending
@@ -374,33 +348,28 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
 				}),
 				q(46253, {	-- Pillars of Creation
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(46725, {	-- Power Outage
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
-					["lvl"] = 110,
 				}),
 				q(46769, {	-- Relieved of Their Valuables
 					["sourceQuests"] = { 46252 },	-- Intolerable Infestation
 					["provider"] = { "n", 44.6, 63.1, 646 },
 					["coord"] = { 44.6, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(45764, {	-- Restoring Equilibrium
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
-					["lvl"] = 110,
 				}),
 				q(46266, {	-- Return of the Slayer
 					["sourceQuests"] = {
@@ -411,7 +380,6 @@ _.Zones =
 					["provider"] = { "n", 117709 },	-- Lady S'theno
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
-					["lvl"] = 110,
 				}),
 				q(45192, {	-- Runes of Rending
 					["sourceQuests"] = { 45190 },	-- Where it's Thinnest
@@ -423,96 +391,81 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46248, {	-- Self-Fulfilling Prophecy
 					["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
 					["provider"] = { "n", 120372 },	-- Prophet Velen
 					["coord"] = { 44.4, 63.3, 646 },
-					["lvl"] = 110,
 				}),
 				q(46251, {	-- Shard Times
 				-- TODO: could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
 					["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46510, {	-- Ship Graveyard
 					["sourceQuests"] = { 46509 },	-- Tomb Raidering
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(46499, {	-- Spiders, Huh?
 					["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(46246, {	-- Strike Them Down
 					["sourceQuests"] = { 46249 },	-- Championing Our Cause
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.4, 646 },
-					["lvl"] = 110,
 				}),
 				q(46272, {	-- Summons to the Keep
 					["sourceQuests"] = { 46268 },	-- A Found Memento
 					["provider"] = { "n", 120281 },	-- Captain Shwayder
 					["coord"] = { 41.6, 59.6, 646 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(46250, {	-- Take Out the Head...
 					["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.5, 646 },
-					["lvl"] = 110,
 				}),
 				q(46765, {	-- The Broken Shore: Investigating the Legion
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46773, {	-- The Command Center
 					["sourceQuests"] = { 46245 },	-- Begin Construction (probably?  i didn't pick it up until after doing 'defending broken isles' and finishing my class campaign)
 					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(47000, {	-- The Council's Call
 					["sourceQuest"] = 46765,	-- The Broken Shore: Investigating the Legion
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46805, {	-- The Deceiver's Downfall
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 120372 },	-- Prophet Velen
 					["coord"] = { 44.6, 63.2, 646 },
-					["lvl"] = 110,
 				}),
 				q(46282, {	-- The King's Path
 					["sourceQuests"] = { 47112 },	-- Lost Souls
 					["provider"] = { "n", 121237 },	-- Anduin Wrynn
 					["coord"] = { 58.2, 26.6, 646 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(46772, {	-- The Mage Tower
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["repeatable"] = true,
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
-					["lvl"] = 110,
 				}),
 				q(46774, {	-- The Nether Disruptor
 					["provider"] = { "n", 120183 },	-- Commander Chambers
@@ -525,7 +478,6 @@ _.Zones =
 					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 					["g"] = {
 						i(143559),	-- Wyrmtongue's Cache Key
 					},
@@ -533,7 +485,6 @@ _.Zones =
 				q(46935, {	-- The Shadow of the Sentinax
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
-					["lvl"] = 110,
 				}),
 				q(54120, {	-- To Orgrimmar
 					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
@@ -546,20 +497,17 @@ _.Zones =
 					["sourceQuests"] = { 46501 },	-- Grave Robbin'
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(46845, {	-- Vengeance Point
 					["sourceQuests"] = { 46832 },	-- Aalgen Point
 					["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
 					["coord"] = { 70.6, 47.5, 646 },
-					["lvl"] = 110,
 				}),
 				q(45798, {	-- War'zuul the Provoker
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
-					["lvl"] = 110,
 				}),
 				q(42811, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
@@ -571,7 +519,6 @@ _.Zones =
 					["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
 				}),
 				q(45103, {	-- We Ride!
 					["provider"] = { "n", 116128 },	-- Highlord Darion Mograine

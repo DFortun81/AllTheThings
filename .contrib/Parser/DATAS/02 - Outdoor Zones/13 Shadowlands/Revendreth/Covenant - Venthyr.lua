@@ -1245,6 +1245,7 @@ _.Zones =
 									}),
 									i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
 									i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
+										["isWeekly"] = true,
 										["questID"] = 62628,	-- Vole's Voucher
 									}),
 									i(181229),	-- Tranquil's Censer (Sika's Extravagant Tribute)

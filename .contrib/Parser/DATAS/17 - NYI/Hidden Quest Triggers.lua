@@ -1344,6 +1344,8 @@ _.HiddenQuestTriggers =
 		q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
 		q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
 		q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
+		q(41858),	-- Monk Order Hall - No Monk Left Behind (obsolete or NYI version, triggers with #41852 version)
+		q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -2498,6 +2500,8 @@ _.HiddenQuestTriggers =
 		q(56696),	-- after poen dialogue around 54.6, 54.3: "Have you ever swooped on a ray?  It's out-ray-geous!"
 		q(56697),	-- after poen dialogue around 58, 48: "We have so many free people in Newhome that we need to gather more food!  This is great!"
 		q(56692),	-- after poen dialogue from turning in #56151, "Poen's Favorite Dish" - "Mmm, I love eel!"
+		q(56686),	-- after poen dialogue around 55.3, 55.1: "The ocean taught me how to help and heal my friends.  I'm glad when I can be useful."
+		q(56685),	-- after poen dialogue in Newhome, around 47.6, 62.9: "If you really listen, sometimes you can hear the voice of the ocean.  She brings me peace."
 		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
 		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
 		q(56705),	-- vim brineheart dialogue, triggered around 71.6, 50.9: "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
