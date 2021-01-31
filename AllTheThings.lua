@@ -1518,6 +1518,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"currencyID",
 	"encounterID",
 	"instanceID",
+	"factionID",
 	"recipeID",
 	"spellID",
 	"classID",
@@ -9732,43 +9733,43 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 	end
 end
 function app.QuestCompletionHelper(questID)
-	-- Search ATT for the related quests.
-	local searchResults = SearchForField("questID", questID);
-	if searchResults and #searchResults > 0 then
-		-- Only increase progress for Quests as Collectible users.
-		if app.CollectibleQuests then
-			-- Attempt to cleanly refresh the data.
-			for i,result in ipairs(searchResults) do
-				if result.visible and result.parent and result.parent.total then
-					result.marked = true;
+	-- Only increase progress for Quests as Collectible users.
+	if app.CollectibleQuests then
+		-- Search ATT for the related quests.
+		local searchResults = SearchForField("questID", questID);
+		if searchResults and #searchResults > 0 then
+				-- Attempt to cleanly refresh the data.
+				for i,result in ipairs(searchResults) do
+					if result.visible and result.parent and result.parent.total then
+						result.marked = true;
+					end
 				end
-			end
-			for i,result in ipairs(searchResults) do
-				if result.marked then
-					result.marked = nil;
-					if result.total then
-						-- This is an item that has a relative set of groups
-						if result.collectible then UpdateParentProgress(result) end;
+				for i,result in ipairs(searchResults) do
+					if result.marked then
+						result.marked = nil;
+						if result.total then
+							-- This is an item that has a relative set of groups
+							if result.collectible then UpdateParentProgress(result) end;
 
-						-- If this is NOT a group...
-						if not result.g and result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					else
-						UpdateParentProgress(result.parent);
+							-- If this is NOT a group...
+							if not result.g and result.collectible then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+						else
+							UpdateParentProgress(result.parent);
 
-						if result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
+							if result.collectible then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
 						end
 					end
 				end
-			end
-		end
 
-		-- Don't force a full refresh.
-		app:RefreshData(true, true);
+			-- Don't force a full refresh.
+			app:RefreshData(true, true);
+		end
 	end
 end
 -- helps prevent coroutines running longer than 1 second per frame, not sure we can get a finer time resolution like this...
@@ -16450,8 +16451,8 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
-app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
+-- app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
+-- app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("NEW_MOUNT_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
@@ -17089,14 +17090,14 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
-app.events.COMPANION_LEARNED = function(...)
-	-- print("COMPANION_LEARNED", ...);
-	RefreshMountCollection();
-end
-app.events.COMPANION_UNLEARNED = function(...)
-	-- print("COMPANION_UNLEARNED", ...);
-	RefreshMountCollection();
-end
+-- app.events.COMPANION_LEARNED = function(...)
+-- 	print("COMPANION_LEARNED", ...);
+-- 	RefreshMountCollection();
+-- end
+-- app.events.COMPANION_UNLEARNED = function(...)
+-- 	print("COMPANION_UNLEARNED", ...);
+-- 	RefreshMountCollection();
+-- end
 app.events.NEW_MOUNT_ADDED = function(...)
 	-- print("NEW_MOUNT_ADDED", ...);
 	RefreshMountCollection(...);
@@ -17125,7 +17126,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq;
 		if logIndex then
-			info = C_QuestLog.GetInfo(logIndex);
+			local info = C_QuestLog.GetInfo(logIndex);
 			if info then
 				if info.frequency == 1 then
 					freq = " (D)";
