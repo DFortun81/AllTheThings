@@ -2703,6 +2703,8 @@ _.Zones =
 							}),
 						}),
 					}),
+					-- TODO: not sure if these should be moved into a sub-header? based on selected Soulbind/Tree
+					i(183702),	-- Nature's Splendor
 				},
 			}),
 		}),
