@@ -122,9 +122,9 @@ _.Zones =
 						}),
 						q(60447, {	-- Challenges in Maldraxxus
 							["provider"] = { "n", 154627 },	-- Xandria
-							["coord"] = { 67.2, 16.0, 1533 },
+							["coord"] = { 61.9, 37.4, 1707 },	-- Archon's Rise
 							["g"] = {
-								i(181741),	-- Tribute of the Paragon
+								i(181733),	-- Tribute of the Duty-Bound
 							},
 						}),
 						q(60450, {	-- Challenges in Revendreth

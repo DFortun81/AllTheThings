@@ -133,9 +133,9 @@ _.Zones =
 						}),
 						q(60436, {	-- Challenges in Maldraxxus
 							["provider"] = { "n", 167206 },	-- Yanlar
-							["coord"] = { 36.8, 24.8, 1533 },
+							["coord"] = { 37.1, 25.5, 1701 },	-- The Trunk
 							["g"] = {
-								i(181476),	-- Tribute of the Wild Hunt
+								i(181733),	-- Tribute of the Duty-Bound
 							},
 						}),
 						q(60435, {	-- Challenges in Revendreth
@@ -168,7 +168,7 @@ _.Zones =
 						}),
 						q(60388, {	-- Training Our Forces
 							["provider"] = { "n", 158544 },	-- Lord Herne
-							["coord"] = { 40.9, 72.4, 1565 },
+							["coord"] = { 38.5, 70.7, 1701 },	-- The Trunk
 							["g"] = {
 								i(181475),	-- Bounty of the Grove Wardens
 							},
@@ -608,6 +608,7 @@ _.Zones =
 							},
 						}),
 						q(62560, {	-- Growing in Power
+						--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock?
 							["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
 							["provider"] = { "n", 161509 },	-- Lady Moonberry
 							["coord"] = { 47.4, 36.1, 1701 },
