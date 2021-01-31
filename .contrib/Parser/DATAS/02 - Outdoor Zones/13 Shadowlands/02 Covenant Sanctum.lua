@@ -100,10 +100,15 @@ _.Zones =
 								170029,	-- Twinklewings [Night Fae]
 
 								-- Follower ID's which will NOT drop loot objects
+								-- 170026,	-- Cadaverous [Necrolord]
+								-- 170033,	-- Karras [Night Fae]
 								-- 170044,	-- Nandor [Venthyr]
+								-- 170039,	-- Popo [Kyrian]
 							},
 							["g"] = {
 								i(184507),	-- Lucy's Lost Collar (PET!)
+								i(184505),	-- "Adorable Ascended" Costume
+								i(184506),	-- "Flying Faerie" Costume
 								i(184503),	-- Attendant's Pocket Portal: Ardenweald
 								i(184500),	-- Attendant's Pocket Portal: Bastion
 								i(184502),	-- Attendant's Pocket Portal: Maldraxxus
