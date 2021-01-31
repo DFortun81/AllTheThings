@@ -552,7 +552,7 @@ for key,value in pairs({
 	[59] = "Классовые Книги";								-- Class Books (Classic Spells, Ashran Books, etc)
 
 	-- "Non-Equipment Types"
-	[103] = "Чары для оружия";										-- Illusions (TODO: Да, специальные эффекты,?)
+	[103] = "Чары для оружия";										-- Illusions
 	[107] = "Особые";
 	[110] = "Звания";										-- Titles
 	[114] = "Экипировка Транспорта";						-- Mount Equipment
