@@ -87,10 +87,10 @@ _.PetJournal =
 		p(3062),			-- Lost Featherling
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
-		un(BLIZZARD_BALANCE, p(296, {	-- Moonkin Hatchling (Alliance)
+		un(REMOVED_FROM_GAME, p(296, {	-- Moonkin Hatchling (Alliance)
 			["races"] = ALLIANCE_ONLY,
 		})),
-		un(BLIZZARD_BALANCE, p(298, {	-- Moonkin Hatchling (Horde)
+		un(REMOVED_FROM_GAME, p(298, {	-- Moonkin Hatchling (Horde)
 			["races"] = HORDE_ONLY,
 		})),
 		p(2681),			-- Murgle
