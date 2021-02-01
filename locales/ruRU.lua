@@ -812,6 +812,7 @@ for key,value in pairs({
 			[-3348] = "1-й уровень: Шаг веры",						-- Tier 1: Step of Faith
 			[-3349] = "2-й уровень: Прыжок силы",					-- Tier 2: Leap of Power
 			[-3350] = "3-й уровень: Вечные пути",					-- Tier 3: Eternal Paths
+			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
 
 		-- SL Revendreth/Venthyr
 			[-949] = "Ковенант: Вентиры",							-- Covenant: Venthyr
@@ -831,7 +832,11 @@ for key,value in pairs({
 			[-963] = "3-й уровень: Влияние при Дворе",				-- Tier 3: Court Influencer
 			[-964] = "4-й уровень: Тонкий вкус",					-- Tier 4: Discerning Taste
 			[-965] = "5-й уровень: Профессионалы",					-- Tier 5: The Professionals
-
+			[-967] = "Восстановление зеркала",							-- "Mirror Restoration",
+			[-968] = "Набор A",										-- Set A
+			[-969] = "Набор B",										-- Set B
+			[-970] = "Набор C",										-- Set C
+			[-971] = "Набор D",										-- Set D
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize
@@ -1139,6 +1144,14 @@ for key,value in pairs({
 				[-1433948] = "Осколок кристалла анимы",				-- Anima Crystal Shard
 				[-1433949] = "Осколок кристалла анимы",				-- Anima Crystal Shard
 				[-1433950] = "Осколок кристалла анимы",				-- Anima Crystal Shard
+		
+			--	hopefully temp objects, these currently do not have accessible object data on wowhead
+				[-1433951] = "Разбитое зеркало",											-- Broken Mirror
+				[-1433952] = "Разбитое зеркало",											-- Broken Mirror
+				[-1433953] = "Разбитое зеркало",											-- Broken Mirror
+				[-1433954] = "Разбитое зеркало",											-- Broken Mirror
+				[-1433955] = "Разбитое зеркало",											-- Broken Mirror
+				[-1433956] = "Разбитое зеркало",											-- Broken Mirror
 })
 do a[key] = value; end
 
