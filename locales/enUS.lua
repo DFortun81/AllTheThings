@@ -4817,6 +4817,7 @@ app.L = {
 		[353685] = "Lunarlight Pod",
 		[353688] = "Broken Bell",
 		[353691] = "Skyward Bell",
+		[353792] = "Village Strongbox",
 		[353793] = "Parish Chest",
 		[353796] = "Reliquary of Remembrance",
 		[353797] = "Stone Legion Supplies",

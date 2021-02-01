@@ -183,6 +183,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 74.0, 61.9, 1525 },
 					["g"] = {
+						i(180393),	-- Depraved Darkblade's Epaulets
 						i(180394),	-- Envy-Laced Leggings
 					},
 				}),
@@ -301,6 +302,15 @@ _.Zones =
 					["isDaily"] = true,
 					["questID"] = 60579,
 					["coord"] = { 38.5, 39.9, 1525 },
+				}),
+				o(353792, {	-- Village Strongbox
+					--TODO: ["questID"] = xxxxx,
+					["isDaily"] = true,	-- repeatable??
+					--TODO: ["coords"] = {
+					--},
+					["g"] = {
+						i(180393),	-- Depraved Darkblade's Epaulets
+					},
 				}),
 			}),
 		}),
