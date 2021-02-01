@@ -39,6 +39,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
+			n(ZONEDROPS, {
+				i(180453, {	-- She Had a Stone Heart
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+					["questID"] = 60889,	-- Favor: She Had a Stone Heart
+					["isDaily"] = true,
+				}),
+			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
 					i(183017),	-- Acolyte's Velvet bindings
