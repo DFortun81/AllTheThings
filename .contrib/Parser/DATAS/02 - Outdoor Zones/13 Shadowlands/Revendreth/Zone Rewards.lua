@@ -128,14 +128,12 @@ _.Zones =
 					i(181204),	-- Hide of Krengaath
 					i(180400),	-- Inquisitions Final Judgment
 					i(181708),	-- Leafed Banewood Band
-					i(180391),	-- Leggings of the Skydarkeners
 					i(181223),	-- Mace of Emberwrath
 					i(182724),	-- Mail Courier's Belt
 					i(182722),	-- Mail Courier's Cap
 					i(181192),	-- Mail Courier's Greaves
 					i(182721),	-- Mail Courier's Grips
 					i(182723),	-- Mail Courier's Shoulderguards
-					i(182720),	-- Mail Courier's Tunic
 					i(181358),	-- Master Duelist's Chit
 					i(181182),	-- Muck Waders
 					i(180401),	-- Noble Justice
@@ -163,7 +161,6 @@ _.Zones =
 					i(181199),	-- Stonewrought Gauntlets
 					i(181196),	-- Stonewrought Helm
 					i(181200),	-- Stonewrought Legguards
-					i(180398),	-- Stonewrought Legion Halberd
 					i(181357),	-- Tablet of Despair
 					i(181214),	-- Tax Collector's Barb
 				},

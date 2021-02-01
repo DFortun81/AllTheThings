@@ -903,7 +903,6 @@ pet(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
 pet(180815, 2931);	-- Brightscale Hatchling
 pet(181262, 2952);	-- Bubbling Pustule
 pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Bogling
-pet(180589, 2894);	-- Burdened soul
 pet(183114, 3025);	-- Carpal
 pet(180643, 2908);	-- Chirpy Valeshrieker
 pet(180642, 2909);	-- Cloudfeather Fledgling
@@ -976,6 +975,7 @@ pet(181555, 2966);	-- Sinheart
 pet(182674, 3023);	-- Sir Reginald
 pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler
+pet(180589, 2894);	-- Soullocked Sinstone // Burdened Soul
 pet(183623, 3044);	-- Spinemaw Gormling
 pet(180872, 2942);	-- Spirited Skyfoal
 pet(184509, 3067);	-- Spriggan Trickster
@@ -998,9 +998,3 @@ pet(180636, 2915);	-- Willowbreeze
 pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
--- pets in journal
-
--- Bastion	23
--- Mald		22
--- Arden	21
--- Raven	21

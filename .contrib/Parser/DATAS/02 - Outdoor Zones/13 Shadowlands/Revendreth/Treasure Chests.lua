@@ -20,6 +20,10 @@ _.Zones =
 					},
 					["g"] = {
 						i(180592),	-- Trapped Stonefiend (PET!)
+						i(180392),	-- Gargoyle Stone Fists
+						i(180391),	-- Leggings of the Skydarkeners
+						i(182720),	-- Mail Courier's Tunic
+						i(180398),	-- Stonewrought Legion Halberd
 					},
 				}),
 				o(357565, {	-- Forgotten Angler's Rod
@@ -156,6 +160,9 @@ _.Zones =
 					["questID"] = 60197,
 					["isDaily"] = true,	-- repeatable??
 					["coord"] = { 66.5, 42.8, 1525 },
+					["g"] = {
+						i(180589),	-- Soullocked Sinstone (PET!)
+					},
 				}),
 				o(351540, {	-- Secret Treasure
 					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
@@ -198,6 +205,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 27.7, 48.7, 1525 },
 					["crs"] = { 169993 },	-- Lord Scowl
+				}),
+				o(353797, {	-- Stone Legion Supplies
+					--TODO: ["questID"] = xxxxx,
+					["isDaily"] = true,	-- repeatable??
+					--TODO: ["coords"] = {
+					--},
+					["g"] = {
+						i(180392),	-- Gargoyle Stone Fists
+						i(180391),	-- Leggings of the Skydarkeners
+						i(182720),	-- Mail Courier's Tunic
+						i(180398),	-- Stonewrought Legion Halberd
+					},
 				}),
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,

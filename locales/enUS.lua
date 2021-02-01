@@ -4819,6 +4819,7 @@ app.L = {
 		[353691] = "Skyward Bell",
 		[353793] = "Parish Chest",
 		[353796] = "Reliquary of Remembrance",
+		[353797] = "Stone Legion Supplies",
 		[353869] = "Hidden Hoard",
 		[353870] = "Hidden Hoard",
 		[353872] = "Hidden Hoard",
