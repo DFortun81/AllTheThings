@@ -60,6 +60,7 @@ _.Zones =
 				spell(343124, {	-- Giant Cache of Epic Treasure
 					["questID"] = 62602,
 					["coord"] = { 41.4, 19.7, 1536 },
+					["crs"] = { 174663 },	-- Spinebug
 					["g"] = {
 						p(3047),	-- Spinebug
 					},

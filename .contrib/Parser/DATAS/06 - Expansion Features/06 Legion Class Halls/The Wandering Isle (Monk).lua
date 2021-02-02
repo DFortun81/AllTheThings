@@ -344,9 +344,15 @@ _.ExpansionFeatures =
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(46353, {	-- Master Who?
-						["classes"] = { MONK },
+						["sourceQuests"] = {
+							46832,	-- Aalgen Point
+							46245,	-- Begin Construction
+							46246,	-- Strike Them Down
+							46845,	-- Vengeance Point
+						},
 						["provider"] = { "n", 118214 },	-- Yiska
-						["sourceQuests"] = { 46246 },	-- Strike Them Down
+						["classes"] = { MONK },
+						["coord"] = { 44.9, 62.0, 646 },	-- Broken Shore
 					}),
 					q(44238, {	-- Meditations on Fate
 						["classes"] = { MONK },
@@ -610,9 +616,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
-						["classes"] = { MONK },
-						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46353 },	-- Master Who?
+						["provider"] = { "n", 120758 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 					}),
 					q(46343, {	-- The Trail of Ban-Lu
 						["classes"] = { MONK },

@@ -2457,6 +2457,7 @@ _.HiddenQuestTriggers =
 		q(55199),	-- Summoned Zomera
 		q(56476),	-- Killed Arcane Amalgamation
 		q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
+		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
 		q(55145),	-- Killed Burning Amalgamation
 		q(56481),	-- Killed Burning Amalgamation
 		q(56725),	-- Killed Burning Amalgamation
@@ -2484,78 +2485,43 @@ _.HiddenQuestTriggers =
 		q(56894),	-- Shadowbinder Athissa
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
-		-- Various
-		q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped
-		q(56664),	-- i flew into brinestone cove with neri as my follower.  she said, "we need to be careful down here.  the locals are definitely not friendly," and this quest popped immediately afterward
-		q(56680),	-- triggered right after another neri dialogue right after i accepted "the price is death" ("it's hard to imagine what we'll do once we don't have to fight to survive.  i look forward to figuring that out."
-		q(56669),	-- i flew into the area with snapdragons (west of the drowned market) and neri said, "the tamed snapdragons aren't producing venom anymore. our only way to harvest it is from the wild packs roaming here."  this quest popped immediately afterward
-		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
-		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
-		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
-		q(56695),	-- after poen dialogue around 29.4, 31.7: "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
-		q(56693),	-- after poen dialogue around 38.0, 42.7: "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
-		q(56682),	-- after poen dialogue around 63.5, 39.0: "I always dreamt of fighting back against the naga.  Neri gave me that chance."
-		q(56690),	-- after poen dialogue: "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
-		q(56688),	-- after poen dialogue: "The world's a lot less interesting when you can only move on the ground.  Now I see why the sea cucumbers are always complaining."
-		q(56696),	-- after poen dialogue around 54.6, 54.3: "Have you ever swooped on a ray?  It's out-ray-geous!"
-		q(56697),	-- after poen dialogue around 58, 48: "We have so many free people in Newhome that we need to gather more food!  This is great!"
-		q(56692),	-- after poen dialogue from turning in #56151, "Poen's Favorite Dish" - "Mmm, I love eel!"
-		q(56686),	-- after poen dialogue around 55.3, 55.1: "The ocean taught me how to help and heal my friends.  I'm glad when I can be useful."
-		q(56685),	-- after poen dialogue in Newhome, around 47.6, 62.9: "If you really listen, sometimes you can hear the voice of the ocean.  She brings me peace."
-		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
-		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
-		q(56705),	-- vim brineheart dialogue, triggered around 71.6, 50.9: "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
-		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
-		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
-		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
-		q(56881),	-- Triggered upon first entry into Nazjatar
-		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
-		q(57041),	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
-		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
-		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more
-		q(55404),	-- Triggered when interacting with the "Deepflame Campfire" in Mezzamere as alliance, but without picking a follower
-		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
-		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
-		q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
-		q(56661),	-- Triggered when walking into the "Void Chamber" cave
+		-- HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard)
+		-- unknown/probable bodyguard dialogue quests
+		q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
+		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
 		q(56675),	-- Triggered shortly after summoning Neri from the conch
-		q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
-		q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
-		q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)
-		q(55999),	-- Triggers after completing the Glowing Arcane Trunk minigame in Zanj'ir Terrace (37.2, 19.1)
-		q(55996),	-- Triggers after completing the Glowing Arcane Trunk minigame in Azsh'ari Terrace (64.1, 28.5)
-		q(55998),	-- Triggers after completing the Glowing Arcane Trunk minigame in Shirakess Repository (55.8, 14.1)
-		q(56359),	-- Triggers after completing the Glowing Arcane Trunk minigame in Coldlight Cavern (61.4, 22.8)
-		q(56548),	-- Triggers after completing the Glowing Arcane Trunk minigame in Highborne Estates (80.5, 31.9)
 		q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
 		q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 		q(56507),	-- Triggered randomly while in nazjatar
 		q(56658),	-- Triggered randomly while in Nazjatar
 		q(56670),	-- Triggered randomly while in Nazjatar
-		q(56679),	-- Triggered randomly while in Nazjatar, after Neri says "One day, there will be no more shackles."
-		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
-		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
-		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
-		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
-		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
-		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
-		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
-		q(57191),	-- Glimmering Chest — Prismatic Manapearls
-		q(57192),	-- Glimmering Chest — Prismatic Manapearls
-		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
-		q(55470),	-- Ravenous SLime fed 5x to spawn the Slimy Cocoon(55.1, 48.8)
-		q(55475),	-- Slimy Cocoon opened (55.1, 48.8)
-		q(55428),	-- Ravenous Slime fed (71.7, 25.7)
-		q(55471),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (71.7, 25.7)
-		q(55476),	-- Slimy Cocoon opened (71.7, 25.7)
-		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
-		q(55472),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
-		q(55477),	-- Slimy Cocoon opened (45.7, 24.1)
-		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
-		q(55473),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (32.9, 39.8)
-		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
-		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
+		-- Neri
+		q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
+		q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
+		q(56679),	-- "One day, there will be no more shackles."
+		q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
+		-- Poen
+		q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
+		q(56671),	-- "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+		q(56682),	-- "I always dreamt of fighting back against the naga.  Neri gave me that chance."
+		q(56683),	-- "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
+		q(56685),	-- "If you really listen, sometimes you can hear the voice of the ocean.  She brings me peace."
+		q(56686),	-- "The ocean taught me how to help and heal my friends.  I'm glad when I can be useful."
+		q(56687),	-- "This one time, I got caught in some seaweed while fleeling from the naga.  But Mak showed up and saved me!  We've been best friends ever since!"
+		q(56688),	-- "The world's a lot less interesting when you can only move on the ground.  Now I see why the sea cucumbers are always complaining."
+		q(56689),	-- "When the ocean returns, the tears of all who have suffered will be washed away."
+		q(56690),	-- "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
+		q(56692),	-- "Mmm, I love eel!"
+		q(56693),	-- "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
+		q(56695),	-- "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
+		q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
+		q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
+		-- Vim
+		q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
+		q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
+		q(56711),	-- "I won't always be around to protect Newhome.  If these scales can help keep our people safe, then they're worth the effort."
+		-- Rares
 		q(56604),	-- Alga the Eyeless first kill
 		q(56603),	-- Allseer Oma'kil first kill
 		q(56602),	-- Anemonar first kill
@@ -2597,14 +2563,58 @@ _.HiddenQuestTriggers =
 		q(56620),	-- Tidemistress Leth'sindra first kill
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
+		q(56583),	-- Voice in the Deeps first kill
 		q(57083),	-- Wayward Algan Benthic loot
 		q(57096),	-- reported as triggering upon snapping a photo to collect Fabious
+		-- WQs
+		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
 		q(57165),	-- triggered when completing #55892, "Champion Eldanar, Shield of Her Glory," in nazjatar
 		q(57168),	-- triggered when completing #55889, "Champion Kyx'zhul the Deepspeaker," in nazjatar
 		q(57170),	-- triggered when completing #55888, "Champion Qalina, Spear of Ice," in nazjatar
-		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
 		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
+		-- Various
+		q(55404),	-- Triggered when interacting with the "Deepflame Campfire" in Mezzamere as alliance, but without picking a follower
+		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
+		q(56881),	-- Triggered upon first entry into Nazjatar
+		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
+		q(57041),	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
+		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
+		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
+		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
+		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
+		q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
+		q(56661),	-- Triggered when walking into the "Void Chamber" cave
+		q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
+		q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
+		q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)
+		q(55999),	-- Triggers after completing the Glowing Arcane Trunk minigame in Zanj'ir Terrace (37.2, 19.1)
+		q(55996),	-- Triggers after completing the Glowing Arcane Trunk minigame in Azsh'ari Terrace (64.1, 28.5)
+		q(55998),	-- Triggers after completing the Glowing Arcane Trunk minigame in Shirakess Repository (55.8, 14.1)
+		q(56359),	-- Triggers after completing the Glowing Arcane Trunk minigame in Coldlight Cavern (61.4, 22.8)
+		q(56548),	-- Triggers after completing the Glowing Arcane Trunk minigame in Highborne Estates (80.5, 31.9)
+		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
+		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
+		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
+		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
+		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
+		q(57191),	-- Glimmering Chest — Prismatic Manapearls
+		q(57192),	-- Glimmering Chest — Prismatic Manapearls
+		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
+		q(55470),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon(55.1, 48.8)
+		q(55475),	-- Slimy Cocoon opened (55.1, 48.8)
+		q(55428),	-- Ravenous Slime fed (71.7, 25.7)
+		q(55471),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (71.7, 25.7)
+		q(55476),	-- Slimy Cocoon opened (71.7, 25.7)
+		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
+		q(55472),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
+		q(55477),	-- Slimy Cocoon opened (45.7, 24.1)
+		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
+		q(55473),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (32.9, 39.8)
+		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
+		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
+		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
 
 		--	Mechagon
 		q(56329),	-- Triggered when completing 'Do Not Drink'(56328) the first time
@@ -3320,7 +3330,6 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
-		q(62572),	-- triggered after crafting Faction Flag at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
