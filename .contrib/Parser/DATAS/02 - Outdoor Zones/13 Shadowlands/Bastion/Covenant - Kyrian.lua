@@ -1690,6 +1690,7 @@ _.Zones =
 								-- TODO: do these need a sub-header?
 								i(180594),	-- Calloused Bone
 								i(180477),	-- Elysian Feathers
+								i(180478),	-- Champion's Pelt
 								i(180595),	-- Nightforged Steel
 								i(180579),	-- Herald's Footpads
 								i(180479),	-- Charm of Fortitude
