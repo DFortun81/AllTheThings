@@ -154,6 +154,7 @@ namespace ATT
                 var itemsMissingData = new List<object>();
                 Objects.Filters filter = Objects.Filters.Invalid;
                 var filterGroups = new Dictionary<Objects.Filters, List<Dictionary<string, object>>>();
+                var builder2 = new StringBuilder();
                 foreach (var itemID in allItemIDs)
                 {
                     // Get the item.
@@ -177,9 +178,14 @@ namespace ATT
                     {
                         itemsMissingData.Add(item);
                     }
+                    else
+                    {
+                        builder2.Append(itemID).Append('\t').Append(item["name"]).AppendLine();
+                    }
                 }
 
                 // Export all of the Items to the Item DB folder.
+                File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString());
                 File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString());
                 File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString());
 
