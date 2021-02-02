@@ -1239,11 +1239,13 @@ _.Zones =
 									i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+									i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
 									i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 										["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
 									}),
 									i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
+									i(178897),	-- Stalwart Pauldron of Resolve (Polemarch Adrestes' Extravagant Tribute)
 									i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
 										["isWeekly"] = true,
 										["questID"] = 62628,	-- Vole's Voucher

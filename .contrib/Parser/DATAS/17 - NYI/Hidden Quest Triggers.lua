@@ -3193,6 +3193,7 @@ _.HiddenQuestTriggers =
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
+		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		
@@ -3623,7 +3624,7 @@ _.HiddenQuestTriggers =
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
 		q(63178),	-- triggered when using the cypher while on "Rule 6: Concealment is Everything"
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
-	--	q(63195),	-- triggered randomly in The Maw 12/6/20
+		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
