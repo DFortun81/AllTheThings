@@ -3319,9 +3319,11 @@ _.HiddenQuestTriggers =
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 		q(62572),	-- triggered after crafting Faction Flag at Abominable Stitching Table
+		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
 		q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
+		q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
 		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
 		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
 		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
