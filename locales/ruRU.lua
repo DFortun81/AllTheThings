@@ -772,7 +772,7 @@ for key,value in pairs({
 		[-907] = "Мертвая Бланчи",									-- Dead Blanchy
 		[-908] = "Награды",											-- Rewards
 		[-909] = "Охота: элементали смерти",						-- Hunt: Death Elementals
-		[-910] = "Hunt: Alpha Devourers",							-- Hunt: Alpha Devourers TODO
+		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
 		--[-913] = ,												--
@@ -2762,9 +2762,9 @@ for key,value in pairs({
 		--[1278968762] = "",										-- ***REUSE ME***
 		--[1278968763] = "",										-- ***REUSE ME***
 		--[1278968764] = "",										-- ***REUSE ME***
-		[1278968766] = "Rune",										-- TODO: fix objectID when data becomes available
-		[1278968767] = "Rune",										-- TODO: fix objectID when data becomes available
-		[1278968768] = "Rune",										-- TODO: fix objectID when data becomes available
+		[1278968766] = "Руна",										-- TODO: fix objectID when data becomes available
+		[1278968767] = "Руна",										-- TODO: fix objectID when data becomes available
+		[1278968768] = "Руна",										-- TODO: fix objectID when data becomes available
 		[1278968769] = "Сломанный колокол",							-- TODO: fix objectID when data becomes available
 		[1278968770] = "Тайные сокровища",							-- TODO: fix objectID when data becomes available
 		[354852] = "Тянущийся росток",
@@ -2815,7 +2815,7 @@ for key,value in pairs({
 		[9999918] = "|cFFFFFFFFШаг 11:|r Металлические Ворота",
 		[9999919] = "|cFFFFFFFFШаг 12:|r Куб мудрости",
 		[9999920] = "|cFFFFFFFFШаг 13:|r Потускневшая табличка",
-		[9999921] = "Placement",			-- TO DO
+		[9999921] = "Расположение",
 		[9999938] = "Приключения с Ууной",
 		[9999946] = "Призовите Бее'ла",
 		[9999990] = "Сундук с сокровищами",							-- Use these until objectID is found
