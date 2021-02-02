@@ -2984,6 +2984,7 @@ _.HiddenQuestTriggers =
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
 		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger) - WQ reward upgrade #1
 		q(63221),	-- triggered when hitting Renown 19 (all covenants appear to get the same quest trigger) - WQ reward upgrade #2
+		q(63350),	-- triggered when hitting Renown 29 (all covenants appear to get the same quest trigger) - WQ reward upgrade #3
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
