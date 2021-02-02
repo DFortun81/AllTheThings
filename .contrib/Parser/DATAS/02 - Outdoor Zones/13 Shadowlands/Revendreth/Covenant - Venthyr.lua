@@ -2035,6 +2035,7 @@ _.Zones =
 											}),
 										}),
 										n(-968, {	-- Set A
+										--	i don't think these are on a cycle, but just in case, this set was up from 1/26 - 2/2
 											n(-1433951, {	-- Broken Mirror A-1
 												["questID"] = 61819,
 												["isDaily"] = true,
@@ -2114,6 +2115,49 @@ _.Zones =
 										}),
 										--[[
 										n(-970, {	-- Set C
+										--	up 2/2 - 2/9
+										--	am dumb and forgot to check coords for chests for objectID verification, so will do that bit tomorrow
+										--	351948 = 30.9, 47.0
+										--	357228 = 31.8, 47.0
+										--	357229 = 31.8, 48.3
+											n(-1433957, {	-- Broken Mirror C-1
+												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
+												["questID"] = 61826,
+												["isDaily"] = true,
+												["coord"] = { 27.1, 21.6, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(, {	-- Forgotten Chest
+														["questID"] = 61835,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433958, {	-- Broken Mirror C-2
+												["description"] = "On the middle level of the crumbled edifice.",
+												["questID"] = 61818,
+												["isDaily"] = true,
+												["coord"] = { 29.4, 37.3, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(, {	-- Forgotten Chest
+														["questID"] = 61833,
+														["isDaily"] = true,
+													}),
+												},
+											}),
+											n(-1433959, {	-- Broken Mirror C-3
+												["questID"] = 61822,
+												["isDaily"] = true,
+												["coord"] = { 40.4, 73.3, 1525 },	-- Revendreth
+												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+												["g"] = {
+													o(, {	-- Forgotten Chest
+														["questID"] = 61834,
+														["isDaily"] = true,
+													}),
+												},
+											}),
 										}),
 										n(-971, {	-- Set D
 										}),

@@ -1526,6 +1526,9 @@ app.L = {
 		[-1433954] = "3854020",															-- Broken Mirror
 		[-1433955] = "3854020",															-- Broken Mirror
 		[-1433956] = "3854020",															-- Broken Mirror
+		[-1433957] = "3854020",															-- Broken Mirror
+		[-1433958] = "3854020",															-- Broken Mirror
+		[-1433959] = "3854020",															-- Broken Mirror
 	};
 
 	["NPC_ID_NAMES"] = {
@@ -2541,6 +2544,9 @@ app.L = {
 		[-1433954] = "Broken Mirror",											-- Broken Mirror
 		[-1433955] = "Broken Mirror",											-- Broken Mirror
 		[-1433956] = "Broken Mirror",											-- Broken Mirror
+		[-1433957] = "Broken Mirror",											-- Broken Mirror
+		[-1433958] = "Broken Mirror",											-- Broken Mirror
+		[-1433959] = "Broken Mirror",											-- Broken Mirror
 	};
 
 	["OBJECT_ID_ICONS"] = {
@@ -4778,6 +4784,7 @@ app.L = {
 		[351887] = "Wanted: Lord Darion",
 		[351888] = "Wanted: Summoner Marcelis",
 		[351889] = "Wanted: The Pale Doom",
+		[351948] = "Forgotten Chest",											-- C-?
 		[352027] = "Wanted Scroll",
 		[352028] = "Wanted Scroll",
 		[352086] = "Blackhound Cache",
@@ -4849,6 +4856,8 @@ app.L = {
 		[354193] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
 		[355035] = "Treasure: House of the Chosen",								-- Chosen Runecoffer
+		[357228] = "Forgotten Chest",											-- C-?
+		[357229] = "Forgotten Chest",											-- C-?
 		[357230] = "Forgotten Chest",											-- B-1
 		[357231] = "Forgotten Chest",											-- B-2
 		[357232] = "Forgotten Chest",											-- B-3
