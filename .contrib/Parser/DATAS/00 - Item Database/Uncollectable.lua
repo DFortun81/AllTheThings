@@ -412,6 +412,7 @@ i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
 i(160376);	-- Wilderbew Special
+i(180470);	-- Wild Fungus
 i(173773);	-- Yeasty Hunk
 
 i(4407);	-- Accurate Scope
