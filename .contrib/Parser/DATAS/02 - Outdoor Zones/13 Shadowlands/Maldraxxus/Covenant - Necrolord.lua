@@ -1331,12 +1331,14 @@ _.Zones =
 									q(61510, {	-- A Bountiful Haul
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(62213, {    -- A Brokered Deal
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 										["provider"] = { "n", 159238 },    -- Atticus
 										["coord"] = { 55.3, 68.3, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(59042, {	-- A Good Heart
 										["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
@@ -1359,12 +1361,14 @@ _.Zones =
 										["provider"] = { "n", 158301 },    -- Marz
 										["coord"] = { 54.2, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(62256, {    -- Asset Extraction
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 										["provider"] = { "n", 159238 },    -- Atticus
 										["coord"] = { 55.3, 68.3, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(60049, {	-- At Your Service
 										["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -1394,30 +1398,35 @@ _.Zones =
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(61522, {    -- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(61523, {    -- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(60765, {    -- Cure For All Ills
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 										["provider"] = { "n", 159241 },    -- Roseboil
 										["coord"] = { 55.1, 68.1, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(62217, {	-- Field Training
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 										["provider"] = { "n", 158301 },    -- Marz
 										["coord"] = { 54.2, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58668, {	-- Find The Way
 										["sourceQuests"] = { 58665 },	-- Rebellious Souls
@@ -1429,6 +1438,7 @@ _.Zones =
 										["provider"] = { "n", 159241 },    -- Roseboil
 										["coord"] = { 55.1, 68.1, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58680, {	-- Loose Threads
 										["sourceQuests"] = { 58668 },	-- Find The Way
@@ -1451,6 +1461,7 @@ _.Zones =
 										["provider"] = { "n", 161270 },	-- Chordy
 										["coord"] = { 55.1, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58677, {	-- Skin in the Game
 										["sourceQuests"] = { 58668 },	-- Find The Way
@@ -1462,6 +1473,7 @@ _.Zones =
 										["provider"] = { "n", 161270 },	-- Chordy
 										["coord"] = { 55.1, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(60048, {	-- Stitching Time
 										["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -1473,6 +1485,7 @@ _.Zones =
 										["provider"] = { "n", 159238 },    -- Atticus
 										["coord"] = { 55.3, 68.3, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58670, {	-- The Slaughter Daughter
 										["sourceQuests"] = { 59042 },	-- A Good Heart
@@ -1484,12 +1497,14 @@ _.Zones =
 										["provider"] = { "n", 161270 },	-- Chordy
 										["coord"] = { 55.1, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(62216, {	-- Training Program
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 										["provider"] = { "n", 158301 },    -- Marz
 										["coord"] = { 54.2, 68.6, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58686, {	-- Weapon of Mass Construction
 										["sourceQuests"] = { 
@@ -1506,6 +1521,7 @@ _.Zones =
 										["provider"] = { "n", 159212 },    -- Toothpick
 										["coord"] = { 54.9, 67.8, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(59615, {	-- Every Dog Has Its Day
 										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -1517,6 +1533,7 @@ _.Zones =
 										["provider"] = { "n", 159226 },    -- Sabrina
 										["coord"] = { 54.8, 68.8, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(60230, {	-- More the Merrier
 										["provider"] = { "n", 167150 },	-- Rathan
@@ -1527,24 +1544,28 @@ _.Zones =
 										["provider"] = { "n", 159212 },    -- Toothpick
 										["coord"] = { 54.9, 67.8, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(62294, {	-- One Lich's Trash...
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 										["provider"] = { "n", 159198 },    -- The Professor
 										["coord"] = { 55.4, 68.2, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(61996, {	-- Say The Magic Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 										["provider"] = { "n", 159226 },    -- Sabrina
 										["coord"] = { 54.8, 68.8, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58515, {	-- Scrounging for Scrolls
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 										["provider"] = { "n", 159198 },    -- The Professor
 										["coord"] = { 55.4, 68.2, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(60283, {	-- Specter Of War: Visectus
 										["provider"] = { "n", 161668 },	-- Summoner Gerard
@@ -1556,12 +1577,14 @@ _.Zones =
 										["provider"] = { "n", 159226 },    -- Sabrina
 										["coord"] = { 54.8, 68.8, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 									q(58525, {	-- The Two Sides of History
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 										["provider"] = { "n", 159198 },    -- The Professor
 										["coord"] = { 55.4, 68.2, 1536 },
 										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 								}),
 								-- Tier 3: Bring Them to Life
