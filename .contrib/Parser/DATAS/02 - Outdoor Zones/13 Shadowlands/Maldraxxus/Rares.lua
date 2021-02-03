@@ -65,6 +65,7 @@ _.Zones =
 						}),
 						i(181263),	-- Shy Melvin (PET!)
 						i(184280),	-- Dapper Threads
+						i(184224),	-- Dapperling Seeds
 					},
 				}),
 				n(162797, {	-- Deepscar <Pit Hound>

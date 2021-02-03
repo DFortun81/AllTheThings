@@ -3525,7 +3525,6 @@ _.HiddenQuestTriggers =
 		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
 		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
 		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
-		q(61582),	-- When completing 'Shades of Muck' (61851) with Purple chosen
 		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
 		q(61585),	-- When completing 'Shades of Muck' (61851) with Purple chosen
 		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
@@ -3549,6 +3548,9 @@ _.HiddenQuestTriggers =
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
 		q(62179),	-- When completing 'Dredging up a New Look' (62985) (Vial of Blue Muck Dye?)
+		q(61582),	-- When applying trimmed hair to your dredger
+		q(61573),	-- When applying the long sleeved doublet to your dredger
+		q(61575),	-- When applying Spikey Hair to your dredger
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)

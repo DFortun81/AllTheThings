@@ -122,6 +122,13 @@ _.Zones =
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
 				}),
+				q(57278, {	-- Bring Me Their Heads
+					["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+					-- ["provider"] = { "n",  },	-- TODO
+					["coord"] = { 29.8, 49.7, 1536 },
+					-- ["sourceQuests"] = {  },	-- ?
+					["isDaily"] = true,
+				}),
 				q(62605, {	-- Broker Business
 					-- TODO: verify SQs (multiple reports that this showed up after finishing the 'House of Constructs' criteria.  'Read Between the Lines' is available immediately as soon as the zone unlocks, so this breadcrumb is easy to miss if you explore before you start questing)
 					["sourceQuests"] = { 60733 },	-- Front and Center

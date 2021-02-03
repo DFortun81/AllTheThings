@@ -83,6 +83,7 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180502),	-- Adrastia's Executioner Gloves
+						i(182967),	-- Dredger's Long Sleeved Doublet
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
@@ -96,6 +97,7 @@ _.Zones =
 						}),
 						i(180582),	-- Endmire Flyer Tether (MOUNT!)
 						i(183739),	-- Endmire Wristwarmers
+						i(182972),	-- Critter Two-Thumbs Portrait
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav

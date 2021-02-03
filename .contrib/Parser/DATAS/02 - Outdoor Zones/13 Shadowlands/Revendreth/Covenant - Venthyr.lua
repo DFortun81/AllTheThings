@@ -1158,17 +1158,18 @@ _.Zones =
 											crit(5),	-- Sinrunner Riding
 											crit(6),	-- Dredbat Riding
 										}),
+										-- TODO: comment entirely when sourced properly
 										ach(14683, {	-- Dredger Style
-											crit(1),	-- Black Muck Armor Dye
-											crit(2),	-- Blue Muck Armor Dye
+											-- crit(1),	-- Black Muck Armor Dye
+											-- crit(2),	-- Blue Muck Armor Dye
 											crit(3),	-- Green Muck Armor Dye
-											crit(4),	-- Bubbling Muck Armor Dye
+											-- crit(4),	-- Bubbling Muck Armor Dye
 											crit(5),	-- Thin Hair Cut
-											crit(6),	-- Spikey Hair Cut
+											-- crit(6),	-- Spikey Hair Cut
 											crit(7),	-- Full Flowing Hair Cut
-											crit(8),	-- Dredger Lether Coif
+											-- crit(8),	-- Dredger Lether Coif
 											crit(9),	-- Short Sleeved Doublet
-											crit(10),	-- Long Sleeved Doublet
+											-- crit(10),	-- Long Sleeved Doublet
 										}),
 										ach(14726, {	-- It's Certainly Never Boring
 											crit(1),	-- Messy
@@ -1666,21 +1667,56 @@ _.Zones =
 										["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
 										["g"] = {
 											i(182683, {	-- Dredger Butler's Contract (pet)
-												-- TODO: move to be under the pet itself somehow? is the creatureID (172854) always the same or based on the chosen name?
-												n(QUESTS, {
+												["crs"] = {
+													172854,	-- Dredger Butler (summoned pet)
+												},
+												["g"] = {
 													q(62178, {	-- Black Muck Dye
 														["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
-														["repeatable"] = true,
+														-- ["repeatable"] = true,
+														["g"] = {
+															crit(1, {	-- Black Muck Armor Dye
+																["achievementID"] = 14683,	-- Dredger Style
+															}),
+														},
 													}),
 													q(62181, {	-- Bubbling Red Muck Dye
 														["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
-														["repeatable"] = true,
+														-- ["repeatable"] = true,
+														["g"] = {
+															crit(4, {	-- Bubbling Muck Armor Dye
+																["achievementID"] = 14683,	-- Dredger Style
+															}),
+														},
 													}),
 													q(62174, {	-- A Proper Cover
 														["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
-														["repeatable"] = true,
+														-- ["repeatable"] = true,
+														["g"] = {
+															crit(8, {	-- Dredger Lether Coif
+																["achievementID"] = 14683,	-- Dredger Style
+															}),
+														},
 													}),
-												}),
+													q(62176, {	-- The Spikey Look
+														["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
+														-- ["repeatable"] = true,
+														["g"] = {
+															crit(6, {	-- Spikey Hair Cut
+																["achievementID"] = 14683,	-- Dredger Style
+															}),
+														},
+													}),
+													q(62173, {	-- Long Sleeved Doublet
+														["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
+														-- ["repeatable"] = true,
+														["g"] = {
+															crit(10, {	-- Long Sleeved Doublet
+																["achievementID"] = 14683,	-- Dredger Style
+															}),
+														},
+													}),
+												},
 											}),
 										},
 									}),
@@ -1698,6 +1734,11 @@ _.Zones =
 										["sourceQuests"] = { 61764 },	-- Dredging up a Name
 										-- ["provider"] = { "n",  },	-- Dredger Butler
 										-- ["coord"] = {  },	-- your 'pet'
+										["g"] = {
+											crit(2, {	-- Blue Muck Armor Dye
+												["achievementID"] = 14683,	-- Dredger Style
+											}),
+										},
 									}),
 								}),
 								n(-963, {	-- Tier 3: Court Influencer
