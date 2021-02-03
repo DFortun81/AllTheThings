@@ -409,6 +409,7 @@ _.Zones =
 						["coord"] = { 75.2, 56.1, 1525 },
 						["crs"] = { 166680 },	-- Greedy Soul
 						["g"] = {
+							i(179390),	-- Tantalizingly Large Golden Plum (grey item but causes a permanent debuff while held)
 						},
 					}),
 					crit(16, {	-- Abandoned Curios

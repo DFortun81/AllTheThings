@@ -120,20 +120,21 @@ _.Zones =
 						i(183989),	-- Dredger Barrow Racer
 					},
 				}),
-				n(165453, {	-- Lady Ilinca <Court Concierge>
-					["coord"] = { 28.6, 41.0, 1525 },
-					["g"] =  {
-						i(176850, {	-- Blank Invitation
-							["cost"] = { { "c", 1820, 15 } },
-						}),
-						i(177234, {	-- Rally Bell
-							["cost"] = { { "c", 1813, 25 } },
-						}),
-						i(183876, {	-- Quill of Correspondence
-							["cost"] = 5000000,	-- 500g
-						}),
-					},
-				}),
+				-- already under Venthyr covenant, and only sells items that Venthyr can utilize
+				-- n(165453, {	-- Lady Ilinca <Court Concierge>
+				-- 	["coord"] = { 28.6, 41.0, 1525 },
+				-- 	["g"] =  {
+				-- 		i(176850, {	-- Blank Invitation
+				-- 			["cost"] = { { "c", 1820, 15 } },
+				-- 		}),
+				-- 		i(177234, {	-- Rally Bell
+				-- 			["cost"] = { { "c", 1813, 25 } },
+				-- 		}),
+				-- 		i(183876, {	-- Quill of Correspondence
+				-- 			["cost"] = 5000000,	-- 500g
+				-- 		}),
+				-- 	},
+				-- }),
 				n(166076, {	-- Mats
 					["coord"] = { 32.6, 49.3, 1525 },
 					["g"] = {

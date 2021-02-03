@@ -255,7 +255,7 @@ _.Zones =
 						}),
 						n(157312, {	-- Oily Invertebrate
 							["description"] = "Requires an equal portion of Red, Blue & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61724,
 							["isDaily"] = true;
 							["g"] = {
 								crit(3, {	-- Oily Invertebrate
@@ -297,7 +297,7 @@ _.Zones =
 						}),
 						n(157311, {	-- Burnblister
 							["description"] = "Requires an equal majority of Red & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61723,
 							["isDaily"] = true;
 							["g"] = {
 								crit(6, {	-- Burnblister

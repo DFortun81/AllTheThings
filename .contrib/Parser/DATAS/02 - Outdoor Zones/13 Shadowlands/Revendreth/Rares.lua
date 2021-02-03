@@ -259,7 +259,7 @@ _.Zones =
 						crit(24, {	-- Sinstone Hoarder
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						--i(183732),	-- Sinstone-Linked Greaves (these are reported on wowhead from beta but no drops listed yet in live game)
+						i(183732),	-- Sinstone-Linked Greaves
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>

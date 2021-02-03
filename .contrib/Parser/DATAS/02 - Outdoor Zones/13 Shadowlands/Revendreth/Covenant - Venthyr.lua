@@ -1810,21 +1810,27 @@ _.Zones =
 									n(165453, {	-- Lady Ilinca <Court Concierge>
 										["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 										["g"] = {
-											i(183876, {	-- Quill of Correspondence
-											}),
 											i(176850, {	-- Blank Invitation
-											}),
-											i(177234, {	-- Rally Bell
-												crit(5, {	-- Rally Bell
-													["achievementID"] = 14678,	-- Court Favors
-												}),
+												["cost"] = { { "c", 1820, 15 } },
 											}),
 											i(183956, {	-- Invitation: Choofa
-												-- ["questID"] = ,
+												["minReputation"] = { 2445, HONORED },
+												["questID"] = 62656,
 											}),
 											i(183957, {	-- Invitation: Grandmaster Vole
 												["minReputation"] = { 2445, FRIENDLY },
 												["questID"] = 62657,
+											}),
+											i(183876, {	-- Quill of Correspondence
+												["cost"] = 5000000,	-- 500g
+											}),
+											i(177234, {	-- Rally Bell
+												["cost"] = { { "c", 1813, 25 } },
+												["g"] = {
+													crit(5, {	-- Rally Bell
+														["achievementID"] = 14678,	-- Court Favors
+													}),
+												},
 											}),
 										},
 									}),

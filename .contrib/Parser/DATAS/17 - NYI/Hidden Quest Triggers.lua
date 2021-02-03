@@ -3614,7 +3614,6 @@ _.HiddenQuestTriggers =
 		q(59501),	-- using Contract: Mushroom Surprise
 		q(61499),	-- using Stock: Anima Samples
 		q(61502),	-- when using Invitation: Choofa
-		q(62656),	-- when using Invitation: Choofa
 		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
 		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
 		q(59517),	-- selecting Venthyr Volunteers as the security for the week
