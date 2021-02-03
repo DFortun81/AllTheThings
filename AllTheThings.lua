@@ -1668,14 +1668,20 @@ CreateObject = function(t)
 	end
 end
 -- merges the properties of the o group into the g group, making sure not to alter the filterability of the group
-MergeProperties = function(g, o)
-	if g and o then
+MergeProperties = function(g, o, noReplace)
+	if g and o and type(o) == "table" then
 		for k,v in pairs(o) do
 			if k ~= "expanded" and
 				k ~= "g" and
 				k ~= "parent" then
-				rawset(g, k, v);
+				if not noReplace or not rawget(g, k) then
+					rawset(g, k, v);
+				end
 			end
+		end
+		-- if o is a metadata clone of another table, then copy those properties as well without replacing any existing properties of the table
+		if getmetatable(o) then
+			MergeProperties(g, getmetatable(o).__index, true);
 		end
 	end
 end
@@ -1695,12 +1701,10 @@ MergeObjects = function(g, g2)
 				t = hashTable[hash];
 				if t then
 					if o.g then
-						local og = o.g;
-						o.g = nil;
 						if t.g then
-							MergeObjects(t.g, og);
+							MergeObjects(t.g, o.g);
 						else
-							t.g = og;
+							t.g = o.g;
 						end
 					end
 					MergeProperties(t, o);
@@ -1725,12 +1729,10 @@ MergeObject = function(g, t, index)
 		for i,o in ipairs(g) do
 			if GetHash(o) == hash then
 				if t.g then
-					local tg = t.g;
-					t.g = nil;
 					if o.g then
-						MergeObjects(o.g, tg);
+						MergeObjects(o.g, t.g);
 					else
-						o.g = tg;
+						o.g = t.g;
 					end
 				end
 				MergeProperties(o, t);
@@ -3060,7 +3062,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			MergeObject(merged)
 			]]
 
-			-- print("params",paramA,paramB);
+			-- print("unlinked group params",paramA,paramB);
 			-- Clone all the groups so that things don't get modified in the Source
 			local cloned = {};
 			-- local temp_orig = {};
@@ -3299,7 +3301,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- end
 
 			-- Append any crafted things using this group
-			app.BuildCrafted(group, 10);
+			app.BuildCrafted(group);
+
+			-- Expand any things requiring this group
+			app.ExpandSubGroups(group);
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
@@ -3481,54 +3486,36 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group.working = working;
 		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
+		-- dont need to cache the raw version of literally everything since it will be rare that a raw search will be performed
+		-- print("Cached Search Group:",search)
+		-- app.PrintGroup(group)
+		-- print("---")
+		-- -- also cache the raw version of this search result
+		-- if group.key and group[group.key] then
+		-- 	local cacheKey = group.key .. ":" .. group[group.key];
+		-- 	if not searchCache[cacheKey] then
+		-- 		print("Cached Raw Search Group:",cacheKey)
+		-- 		searchCache[cacheKey] = { now, (working and 0.01) or 100000000, group };
+		-- 	end
+		-- end
 		return group;
 	end
 end
--- Appends sub-groups into the item group based on what the item is used to craft, following only as deep as the provided recurDepth
 app.BuildCrafted_IncludedItems = {};
+-- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
-
+	
 	-- track the starting item
 	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
-		if not app.AppliedSkillIDToNPCIDs then
-			app.AppliedSkillIDToNPCIDs = true;
-			local skillIDMap = {
-				[-178] = 20222,	-- Goblin Engineering
-				[-179] = 20219,	-- Gnomish Engineering
-				[-180] = 171,	-- Alchemy
-				[-181] = 164,	-- Blacksmithing
-				[-182] = 333,	-- Enchanting
-				[-183] = 202,	-- Engineering
-				[-184] = 182,	-- Herbalism
-				[-185] = 773,	-- Inscription
-				[-186] = 755,	-- Jewelcrafting
-				[-187] = 165,	-- Leatherworking
-				[-188] = 186,	-- Mining
-				[-189] = 393,	-- Skinning
-				[-190] = 197,	-- Tailoring
-				[-191] = 794,	-- Archaeology
-				[-192] = 185,	-- Cooking
-				[-193] = 129,	-- First Aid
-				[-194] = 356,	-- Fishing
-			};
-			for npcID,skillID in pairs(skillIDMap) do
-				local searchResults = app.SearchForField("creatureID", npcID);
-				if searchResults then
-					for i,o in ipairs(searchResults) do
-						o.skillID = skillID;
-					end
-				end
-			end
-		end
-
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
 		local filterSkill = not app.Settings:Get("DebugMode") and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
 		local clone;
+		-- item is BoP
 		if filterSkill then
 			-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
 			local knownSkills = app.GetTradeSkillCache();
@@ -3579,6 +3566,7 @@ app.BuildCrafted = function(item)
 					else MergeObject(item.g, clone); end
 				end
 			end
+		-- item is BoE
 		else
 			-- Can otherwise simply iterate over the set of crafted items and add them
 			for craftedItemID,count in pairs(reagentCache[2]) do
@@ -3589,32 +3577,58 @@ app.BuildCrafted = function(item)
 					tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
 					-- find a reference to the item in the DB and add it to the group
 					clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
+					if clone then
+						-- use the crafting count as the total/progress
+						-- clone.matCount = count;-- * (item.matCount or 1);
+						-- clone.total = clone.collectible and clone.matCount;
+						-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+						if not clone.g then
+							clone.total = nil;
+							clone.progress = nil;
+						end
+
+						if not item.g then item.g = { clone };
+						else MergeObject(item.g, clone); end
+					end
 				end
+			end
+		end
+	end
+end
+app.ExpandSubGroups_IncludedItems = {};
+-- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group)
+app.ExpandSubGroups = function(item)
+	local itemID = item.itemID;
+	if not itemID or not item.g then return; end
+	
+	-- print("ExpandSubGroups",itemID);
+	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
+		-- track the starting item
+		tinsert(app.ExpandSubGroups_IncludedItems, itemID);
+		local count, subItemID = #item.g;
+		-- only loop thru existing items in case somehow more show up
+		for i=1,count do
+			-- only expand sub-items
+			subItemID = item.g[i].itemID;
+			if subItemID then
+				-- print("Search sub",subItemID)
+				-- find a reference to the item in the DB and add it to the group
+				local clone = GetCachedSearchResults("itemID:" .. tostring(subItemID), app.SearchForField, "itemID", subItemID);
 				if clone then
-					-- use the crafting count as the total/progress
-					-- clone.matCount = count;-- * (item.matCount or 1);
-					-- clone.total = clone.collectible and clone.matCount;
-					-- clone.progress = clone.collectible and clone.collected and clone.matCount;
 					if not clone.g then
 						clone.total = nil;
 						clone.progress = nil;
 					end
 
-					if not item.g then item.g = { clone };
-					else MergeObject(item.g, clone); end
+					-- merge the expanded group into the table of expanded groups
+					-- if MergeObject continues to require clearing the sub-g group, then just use tinsert i guess
+					-- print("Merge expanded",subItemID)
+					-- app.PrintGroup(clone);
+					MergeObject(item.g, clone);
 				end
 			end
 		end
 	end
-
-	-- Recursively check each crafted item for sub-sequent crafted items...
-	-- if item.g then
-		-- for i,subItem in ipairs(item.g) do
-		-- 	app.BuildCrafted(subItem, recurDepth - 1, includedItems);
-		-- end
-	-- end
-	-- sort the set of crafted items by the name of each crafted item
-	-- app.SortGroup(item, "name");
 end
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
@@ -3678,6 +3692,22 @@ app.HasCost = function(group, idType, id)
 	for i,c in ipairs(group.cost) do
 		-- return true if exact cost is found
 		if c[2] == id and ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then return true; end
+	end
+end
+app.PrintGroup = function(group,depth)
+	if not depth then depth = 0; end
+	if group then
+		local p = "";
+		for i=0,depth,1 do
+			p = p .. "-";
+		end
+		p = p .. tostring(group.key or group.text) .. ":" .. tostring(group[group.key or "NIL"]);
+		print(p);
+		if group.g then
+			for i,sg in ipairs(group.g) do
+				app.PrintGroup(sg,depth + 1);
+			end
+		end
 	end
 end
 local function SendGroupMessage(msg)
@@ -5132,7 +5162,8 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	app.BuildCrafted_IncludedItems = {};
+	wipe(app.BuildCrafted_IncludedItems);
+	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 -- local function CheckAttachTooltip(self, elapsed)
@@ -12916,26 +12947,27 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					-- mergeGroups = nil;
 					-- print(group.key,group[group.key]);
 					-- clone the information from the group so it can be adjusted in the list without changing the source
-					local clone = {};
-					for key,value in pairs(group) do
-						if key == "maps" then
-							local maps = {};
-							for i,mapID in ipairs(value) do
-								tinsert(maps, mapID);
-							end
-							clone[key] = maps;
-						elseif key == "g" then
-							local g = {};
-							for i,o in ipairs(value) do
-								tinsert(g, CloneData(o));
-							end
-							clone[key] = g;
-						else
-							clone[key] = value;
-						end
-					end
-					setmetatable(clone, getmetatable(group));
-					group = clone;
+					-- local clone = {};
+					-- for key,value in pairs(group) do
+					-- 	if key == "maps" then
+					-- 		local maps = {};
+					-- 		for i,mapID in ipairs(value) do
+					-- 			tinsert(maps, mapID);
+					-- 		end
+					-- 		clone[key] = maps;
+					-- 	elseif key == "g" then
+					-- 		local g = {};
+					-- 		for i,o in ipairs(value) do
+					-- 			tinsert(g, CloneData(o));
+					-- 		end
+					-- 		clone[key] = g;
+					-- 	else
+					-- 		clone[key] = value;
+					-- 	end
+					-- end
+					-- setmetatable(clone, getmetatable(group));
+					-- group = clone;
+					group = CloneData(group);
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "npcID", -496) and GetRelativeValue(group, "difficultyID");
@@ -13020,9 +13052,21 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						-- end
 
 						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-							header.key = group.key;
-							header[group.key] = group[group.key];
-							MergeObject({header}, group);
+							-- print("merge map object into header",group.key,group[group.key])
+							-- for k,v in pairs(group) do
+							-- 	if k ~= "g" then
+							-- 		print("-merge",k,v);
+							-- 	end
+							-- end
+							-- print("--")
+							-- header.key = group.key;
+							-- header[group.key] = group[group.key];
+							MergeProperties(header, group);
+							if group.g then
+								MergeObjects(groups, group.g);
+							end
+							group = nil;
+							-- MergeObject({header}, group);
 						elseif group.key == "speciesID" then
 							group = app.CreateNPC(-25, { g = { group } });
 						elseif group.key == "questID" then
@@ -13049,7 +13093,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 						-- If relative to a difficultyID, then merge it into one.
 						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-						MergeObject(groups, group);
+						if group then
+							MergeObject(groups, group);
+						end
 					end
 				end
 
@@ -16376,7 +16422,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		end
 
 		-- Reset the build crafted included items list
-		app.BuildCrafted_IncludedItems = {};
+		wipe(app.BuildCrafted_IncludedItems);
+		wipe(app.ExpandSubGroups_IncludedItems);
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- make sure it's 'something' returned from the search before throwing it into a window
@@ -16871,6 +16918,38 @@ app.events.VARIABLES_LOADED = function()
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
 				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				needRefresh = true;
+			end
+		end
+
+		-- apply the skillIDs to NPCIDs
+		if not app.AppliedSkillIDToNPCIDs then
+			app.AppliedSkillIDToNPCIDs = true;
+			local skillIDMap = {
+				[-178] = 20222,	-- Goblin Engineering
+				[-179] = 20219,	-- Gnomish Engineering
+				[-180] = 171,	-- Alchemy
+				[-181] = 164,	-- Blacksmithing
+				[-182] = 333,	-- Enchanting
+				[-183] = 202,	-- Engineering
+				[-184] = 182,	-- Herbalism
+				[-185] = 773,	-- Inscription
+				[-186] = 755,	-- Jewelcrafting
+				[-187] = 165,	-- Leatherworking
+				[-188] = 186,	-- Mining
+				[-189] = 393,	-- Skinning
+				[-190] = 197,	-- Tailoring
+				[-191] = 794,	-- Archaeology
+				[-192] = 185,	-- Cooking
+				[-193] = 129,	-- First Aid
+				[-194] = 356,	-- Fishing
+			};
+			for npcID,skillID in pairs(skillIDMap) do
+				local searchResults = app.SearchForField("creatureID", npcID);
+				if searchResults then
+					for i,o in ipairs(searchResults) do
+						o.skillID = skillID;
+					end
+				end
 			end
 		end
 
