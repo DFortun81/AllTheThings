@@ -2180,13 +2180,8 @@ _.Zones =
 												},
 											}),
 										}),
-										--[[
 										n(-970, {	-- Set C
 										--	up 2/2 - 2/9
-										--	am dumb and forgot to check coords for chests for objectID verification, so will do that bit tomorrow
-										--	351948 = 30.9, 47.0
-										--	357228 = 31.8, 47.0
-										--	357229 = 31.8, 48.3
 											n(-1433957, {	-- Broken Mirror C-1
 												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
 												["questID"] = 61826,
@@ -2194,7 +2189,7 @@ _.Zones =
 												["coord"] = { 27.1, 21.6, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
-													o(, {	-- Forgotten Chest
+													o(357229, {	-- Forgotten Chest
 														["questID"] = 61835,
 														["isDaily"] = true,
 													}),
@@ -2207,7 +2202,7 @@ _.Zones =
 												["coord"] = { 29.4, 37.3, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
-													o(, {	-- Forgotten Chest
+													o(351948, {	-- Forgotten Chest
 														["questID"] = 61833,
 														["isDaily"] = true,
 													}),
@@ -2219,13 +2214,14 @@ _.Zones =
 												["coord"] = { 40.4, 73.3, 1525 },	-- Revendreth
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 												["g"] = {
-													o(, {	-- Forgotten Chest
+													o(357228, {	-- Forgotten Chest
 														["questID"] = 61834,
 														["isDaily"] = true,
 													}),
 												},
 											}),
 										}),
+										--[[
 										n(-971, {	-- Set D
 										}),
 										--]]

@@ -70,7 +70,7 @@ _.Zones =
 						}),
 						q(60381, {	-- Aiding Ardenweald
 							["provider"] = { "n", 167195 },	-- Blodwyn
-							["coord"] = { 46.4, 50.6, 1565 },
+							["coord"] = { 53.7, 6.20, 1701 },	-- The Trunk
 							["g"] = {
 								i(181475),	-- Bounty of the Grove Wardens
 							},
