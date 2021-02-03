@@ -5085,6 +5085,8 @@ app.TryColorizeName = function(group, name)
 		return Colorize(name, "ffff8000");
 	-- faction standings
 	elseif group.factionID and group.standing then
+		-- use 'completed' color for Exalted faction
+		if group.saved then return "|c" .. GetProgressColor(1) .. name .. "|r"; end
 		local rgb = FACTION_BAR_COLORS[group.standing + (group.isFriend and 2 or 0)];
 		return Colorize(name, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
