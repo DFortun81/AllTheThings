@@ -2331,6 +2331,8 @@ _.Zones =
 									},
 								}),
 								i(182773, {	-- Necrolord Hearthstone (TOY)
+									["customCollect"] = { "SL_COV_NEC" },	-- Requires Necrolord to obtain & use
+									["description"] = "Unlike the other Covenant hearthstone Toys, this one can ONLY be used by a Necrolord character.",
 									["cost"] = { { "c", 1813, 750 } },
 								}),
 								i(184071, {	-- Blooddoused Aranakk Polearm
