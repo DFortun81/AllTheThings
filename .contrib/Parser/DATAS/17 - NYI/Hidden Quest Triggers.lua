@@ -3469,6 +3469,8 @@ _.HiddenQuestTriggers =
 		q(61998),	-- also part of "Legacy of Stone," not sure if they both triggered last week?  again, i chose Humble, but both versions went off this time
 		q(62133),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Made to Order" objective
 		q(62143),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Murder of Colonel Mort" objective
+		q(62110),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Crashers" objective
+		q(61161),	-- another "Party Crashers!" objective, automatically "accepted" when it started
 		q(62115),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Crashers" objective
 		q(61163),	-- also for the "Party Crashers" objective, but automatically "accepted" when it started
 		q(62147),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Party Pests" objective
@@ -3477,6 +3479,7 @@ _.HiddenQuestTriggers =
 		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
+		q(61929),	-- also completed when finishing "Theotar's Toast" objective
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
 		q(62118),	-- picked up when entering the Ember Court for the week — for "Traditional Candles"
 		q(62119),	-- picked up when entering the Ember Court for the week – for "Roaring Fires"
@@ -3484,6 +3487,10 @@ _.HiddenQuestTriggers =
 		q(62127),	-- picked up when entering the Ember Court for the week — for "Ride on the Wild Side" - the description for this is "Ride Gorm" so i guess... you can ride a gorm somehow.  k
 		q(62120),	-- picked up when entering the Ember Court for the week — for "Stolen Mementos"
 		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
+		q(62111),	-- picked up when entering the Ember Court for the week — for "Drezgruda"
+		q(62134),	-- picked up when entering the Ember Court for the week — for "Lower Your Standards"
+		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
@@ -3501,6 +3508,7 @@ _.HiddenQuestTriggers =
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
+		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5

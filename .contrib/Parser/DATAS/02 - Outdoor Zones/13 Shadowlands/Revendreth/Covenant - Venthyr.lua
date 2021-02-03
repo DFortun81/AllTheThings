@@ -1483,6 +1483,15 @@ _.Zones =
 											{ "c", 1820, 20 },	-- 20x Infused Ruby
 										},
 									}),
+									q(62083, {	-- Restock: Medical Supplies
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+										["cost"] = {
+											{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
 									q(62082, {	-- Restock: Personal Stash
 									--	showed up after Week 4 Ember Court
 										["repeatable"] = true,	-- it shows up as a blue ?
