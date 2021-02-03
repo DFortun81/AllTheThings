@@ -1210,15 +1210,6 @@ _.Zones =
 											crit(15),	-- Sika
 											crit(16),	-- Stonehead
 										}),
-										ach(14749, {	-- Rendle's Big Day
-											["crs"] = { 165302 },	-- Rendle
-											["g"] = {
-												crit(1),	-- Crown of the Righteous
-												crit(2),	-- Fae Revel Masque
-												crit(3),	-- Pink Party Hat
-												crit(4),	-- Red Noggin Candle
-											},
-										}),
 										ach(14680, {	-- Something for Everyone
 										--	TODO: add remaining crit to the places From Whence They Come
 											crit(9, {	-- Mystery Mirrors
@@ -1771,24 +1762,44 @@ _.Zones =
 										["provider"] = { "n", 165302 },	-- Rendle
 										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
 										["repeatable"] = true,
+										["g"] = {
+											crit(1, {	-- Crown of the Righteous
+												["achievementID"] = 14749,
+											}),
+										},
 									}),
 									q(62558, {	-- Sootible Hat: Fae Revel Masque
 										-- ["sourceQuests"] = {  },	-- TODO: unknown
 										["provider"] = { "n", 165302 },	-- Rendle
 										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
 										["repeatable"] = true,
+										["g"] = {
+											crit(2, {	-- Fae Revel Masque
+												["achievementID"] = 14749,
+											}),
+										},
 									}),
 									q(62556, {	-- Sootible Hat: Pink Party Hat
 										-- ["sourceQuests"] = {  },	-- TODO: unknown
 										["provider"] = { "n", 165302 },	-- Rendle
 										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
 										["repeatable"] = true,
+										["g"] = {
+											crit(3, {	-- Pink Party Hat
+												["achievementID"] = 14749,
+											}),
+										},
 									}),
 									q(62554, {	-- Sootible Hat: Red Noggin Candle
 										-- ["sourceQuests"] = {  },	-- TODO: unknown
 										["provider"] = { "n", 165302 },	-- Rendle
 										["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
 										["repeatable"] = true,
+										["g"] = {
+											crit(4, {	-- Red Noggin Candle
+												["achievementID"] = 14749,
+											}),
+										},
 									}),
 								}),
 								n(-964, {	-- Tier 4: Discerning Taste
