@@ -182,9 +182,9 @@ _.Zones =
 						}),
 						q(60386, {	-- Training in Maldraxxus
 							["provider"] = { "n", 158544 },	-- Lord Herne
-							["coord"] = { 40.9, 72.4, 1565 },
+							["coord"] = { 42.0, 73.5, 1701 },	-- The Trunk
 							["g"] = {
-								i(181475),	-- Bounty of the Grove Wardens
+								i(181732),	-- Tribute of the Ambitious
 							},
 						}),
 						q(60385, {	-- Training in Revendreth
