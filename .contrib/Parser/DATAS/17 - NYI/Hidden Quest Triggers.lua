@@ -2468,6 +2468,7 @@ _.HiddenQuestTriggers =
 		q(55891),	-- Killed Herald of Salgos
 		q(56733),	-- First kill of Herald of Salgos
 		q(56484),	-- Killed Moghiea
+		q(56728),	-- killed Moghiea (first time)
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
 		q(56483),	-- Killed Ungormath
@@ -3681,6 +3682,7 @@ _.HiddenQuestTriggers =
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"

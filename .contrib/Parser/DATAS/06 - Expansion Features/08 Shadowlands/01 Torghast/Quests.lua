@@ -144,6 +144,13 @@ _.ExpansionFeatures =
 						follower(1257),	-- Meatball
 					},
 				}),
+				q(61219, {	-- Champion: Nerith Darkwing [Venthyr]
+					["sourceQuests"] = { 61262 },	-- Nerith's Vengeance
+					["provider"] = { "n", 171927 },	-- Nerith Darkwing
+					["g"] = {
+						follower(1215),	-- Nerith Darkwing
+					},
+				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
 					["provider"] = { "n", 171878 },	-- Stonehuck
@@ -214,78 +221,84 @@ _.ExpansionFeatures =
 				-- TODO: are the ones that lead to the follower quest actually repeatable?
 				-- they appear to be, since I have them marked as incomplete yet have the corresponding follower
 				q(61259, {	-- Ayeleth's Hunger
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 171920 },	-- Ayeleth
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61427, {	-- Blisswing's Rescue
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172244 },	-- Blisswing
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61430, {	-- Chalkyth's Saber
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172240 },	-- Chalkyth
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61228, {	-- Dug's Missing Shovel
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 171867 },	-- Dug Gravewell
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61428, {	-- Duskleaf's Revenge
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172259 },	-- Duskleaf
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59340, {	-- Gallath's Bell
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 152418 },	-- Gallath
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59777, {	-- Help Calix find Amethia
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 166147 },	-- Calix
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59775, {	-- Help Indigo find Penthia
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 166123 },	-- Indigo
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59779, {	-- Help Moriaz find Buttons
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 166151 },	-- Moriaz the Red
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59778, {	-- Help Sawn find Varrik
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 166148 },	-- Sawn
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59346, {	-- Indri's Flute
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 157426 },	-- Indri the Treesinger
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61322, {	-- Kythekios' Memory Stone
-					["repeatable"] = true,
 					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+				--	["provider"] = { "n",  },	-- 
 				}),
 				q(60573, {	-- Meatball's Revenge
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 168979 },	-- Meatball
+				}),
+				q(61262, {	-- Nerith's Vengeance
 					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 171928 },	-- Nerith Darkwing
 				}),
 				q(59345, {	-- Phantoriax's Warsword
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 157432 },	-- Indigo
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(59344, {	-- Renavyth's Medallion
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(61234, {	-- Stonehuck's Sinstone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -300,19 +313,19 @@ _.ExpansionFeatures =
 				}),
 				q(61330, {	-- Teliah's Stolen Spear
 				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 				--	["provider"] = { "n",  },	-- Teliah
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(62993, {	-- The Riddle of Death
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 175648 },	-- Croman
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				q(62231, {	-- Velkein's Blade
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 173753 },	-- Velkein
-					["sourceQuests"] = { 60136 },	-- Into Torghast
 				}),
 				
 				--------------
