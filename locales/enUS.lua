@@ -2549,6 +2549,11 @@ app.L = {
 		[-1433959] = "Broken Mirror",											-- Broken Mirror
 	};
 
+	-- Descriptions which are common to a common NPCID
+	["NPC_ID_DESCRIPTIONS"] = {
+		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
+	};
+
 	["OBJECT_ID_ICONS"] = {
 		[31] = "Interface\\Icons\\INV_Mount_AllianceLionG",
 		[34] = "Interface\\Icons\\INV_Drink_11",

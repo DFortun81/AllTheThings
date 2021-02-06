@@ -11295,15 +11295,24 @@ RowOnEnter = function (self)
 		end
 		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
-		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
-			local found = false;
-			for i=1,GameTooltip:NumLines() do
-				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-					found = true;
-					break;
+		if app.Settings:GetTooltipSetting("Descriptions") then
+			-- non-localized description on the specified Thing (will be converted into localized text at some point)
+			if reference.description then
+				local found = false;
+				for i=1,GameTooltip:NumLines() do
+					if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+						found = true;
+						break;
+					end
+				end
+				if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+			end
+			if reference.npcID then
+				local commonDesc = L["NPC_ID_DESCRIPTIONS"][reference.npcID];
+				if commonDesc then
+					GameTooltip:AddLine(commonDesc, 0.4, 0.8, 1, 1);
 				end
 			end
-			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		end
 		if not reference.itemID then
 			if reference.speciesID then
