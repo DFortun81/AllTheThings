@@ -13,8 +13,8 @@ _.Zones =
 					["questID"] = 60772,
 				}),
 				o(352086, {	-- Blackhound Cache
-					["customCollect"] = "SL_COV_NEC",
-					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer works as you get teleported out.",
+					-- ["customCollect"] = "SL_COV_NEC",
+					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer works as you get teleported out.\n\nIf the door is already open, a character from any Covenant may walk in and loot the treasure.",
 					["questID"] = 60368,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 39.8, 1536 },

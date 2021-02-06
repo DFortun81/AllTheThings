@@ -349,6 +349,7 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(175711),	-- Slumberwood Band
+						i(183828),	-- Friendly Bugs
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting

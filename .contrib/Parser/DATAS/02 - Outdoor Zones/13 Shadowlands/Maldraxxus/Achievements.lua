@@ -460,7 +460,7 @@ _.Zones =
 					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
 						["coord"] = { 62.4, 59.9, 1536 },
-						["questID"] = 59245,
+						["questID"] = 59245,	-- 60311 triggered for me on this treasure
 						["description"] = "On top of the mushroom.",
 					}),
 					crit(10, {	-- Glutharn's Stash

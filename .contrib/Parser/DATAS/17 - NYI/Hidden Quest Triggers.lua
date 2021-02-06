@@ -3643,6 +3643,7 @@ _.HiddenQuestTriggers =
 		q(63178),	-- triggered when using the cypher while on "Rule 6: Concealment is Everything"
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
+		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
