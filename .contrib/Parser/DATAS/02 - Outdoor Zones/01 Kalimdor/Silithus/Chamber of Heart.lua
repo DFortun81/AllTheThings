@@ -102,7 +102,7 @@ _.Zones =
 								{ 50.3, 41.7, 1165 },	-- Dazar'alor, Horde
 								{ 51.0, 88.8, 1165 },	-- Dazar'alor, Horde
 							},
-							["_drop"] = { "races" },	-- API claims this is Horde-only, but it's neutral
+							["_drop"] = { "r" },	-- API claims this is Horde-only, but it's neutral
 						}),
 						q(52428, {	-- Infusing the Heart
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
