@@ -3589,8 +3589,8 @@ _.HiddenQuestTriggers =
 		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
-		q(59415),	-- when using "RSVP: Grandmaster Vole"
-		q(59416),	-- when using "RSVP: Grandmaster Vole"
+		q(59415),	-- when using "RSVP: Grandmaster Vole" - every time
+		q(59416),	-- when using "RSVP: Grandmaster Vole" - first time
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
 		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
@@ -3646,6 +3646,7 @@ _.HiddenQuestTriggers =
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
+		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
