@@ -2497,11 +2497,15 @@ _.HiddenQuestTriggers =
 		q(56507),	-- Triggered randomly while in nazjatar
 		q(56658),	-- Triggered randomly while in Nazjatar
 		q(56670),	-- Triggered randomly while in Nazjatar
+		-- Akana
+		-- Inowari
 		-- Neri
 		q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 		q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
 		q(56679),	-- "One day, there will be no more shackles."
 		q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
+		-- Ori
+		q(57041),	-- "Change is inevitable.  Though she wielded powerful magic, Azshara could not hold back the tide.  Such will be her fate once more."
 		-- Poen
 		q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
@@ -2579,7 +2583,6 @@ _.HiddenQuestTriggers =
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
-		q(57041),	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
 		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
 		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"

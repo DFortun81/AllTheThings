@@ -34,6 +34,9 @@ _.Zones =
 						i(160100),	-- Sea Raider's Shackles
 						i(158259),	-- Sea Raider's Handguards
 						i(158261),	-- Outrigger Handguards
+						i(161237, {	-- Jambani Bands
+							["races"] = HORDE_ONLY,	-- horde appearance with no other source, granted by learning Freebooter Bands
+						}),
 					},
 				}),
 				q(49869, {	-- A Desperate Defense
@@ -216,9 +219,12 @@ _.Zones =
 				}),
 				q(48421, { 	-- Blood in the Tides (A)
 					["sourceQuests"] = { 47489 }, 	-- Stow and Go
-					["coord"] = { 85.61, 76.61, 895 },
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125342 },	-- Captain Keelson
+					["coords"] = {
+						{ 85.6, 76.6, 895 },
+						{ 86.3, 79.7, 895 },	-- not sure what causes this NPC to show up in this location instead of the other coord, but this is where it was for me
+					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155024),	-- Navigator's Sandals
 						i(155026),	-- Freebooter Boots
@@ -1234,6 +1240,9 @@ _.Zones =
 						i(158279),	-- Freebooter Bindings
 						i(158278),	-- Outrigger Bindings
 						i(158277),	-- Sea Raider's Wristguards
+						i(158672, {	-- Jambani Bracers
+							["races"] = HORDE_ONLY,	-- horde appearance with no other source, granted by learning Freebooter Bindings
+						}),
 					},
 				}),
 				q(50058, {	-- The Witch's Pet

@@ -635,6 +635,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.2, 16.2, 1161 },
 				}),
+				q(52453, {	-- A Forlorn Hope
+					["sourceQuests"] = { 52449 },	-- The Mysterious Island
+					["provider"] = { "n", 140495 },
+					["coord"] = { 36.4, 62.8, 1161 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(58674, {	-- A Gathering of Champions
 					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
 					["provider"] = { "n", 135614 },	-- Master Mathias Shaw
@@ -870,6 +876,28 @@ _.Zones =
 					},
 					["provider"] = { "n", 150208 },	-- Tinkmaster Overspark
 					["coord"] = { 67.2, 15.6, 1161 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52449, {	-- The Mysterious Island
+					["sourceQuests"] = {
+						52445,	-- Tol Dagor: The Fourth Key
+					--	also requires entirety of "A Sound Plan"
+						50531,	-- Under Their Noses
+						49404,	-- Fairwind's "Friends"
+						49740,	-- Cease Fire!
+						49736,	-- For Kul Tiras!
+						50972,	-- Proudmoore's Parley
+						49302,	-- The Deadliest Catch
+						48089,	-- Mountain Sounds
+						48088,	-- No Party Like a Trogg Party
+						48421,	-- Blood in the Tides
+						49226,	-- Silencing the Sisters
+					--	49230,	-- Local Flavor (unsure if these 3 are required for "Castaways and Cutouts" criteria
+					--	48505,	-- Lovesick and Lost
+					--	49178,	-- My Favorite Things
+					},
+					["provider"] = { "n", 140732 },	-- Flynn Fairwind
+					["coord"] = { 68.0, 22.6, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53761, {	-- The Pirate's Treasure
