@@ -59,7 +59,6 @@ _.Zones =
 							["description"] = "Can be contained in any of the Calling rewards.",
 							["g"] = {
 								-- Gear
-								i(181702),	-- Sanctified Guardian's Signet
 								-- Conduits (maybe remove since it's basically just any Conduit in the game...)
 								i(182105),	-- Astral Protection [Shaman]
 								i(181770),	-- Bone Marrow Hops [Monk]

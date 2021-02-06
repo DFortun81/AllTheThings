@@ -89,6 +89,21 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						q(53028, {	-- A Dying World
+						--	originally removed, then hotfixed back in for 50 characters
+						--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance, but it looks like that one was permanently removed.
+						--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
+							["providers"] = {
+								{ "n", 154464 },	-- Earthen Guardian (Alliance)
+								{ "n", 154465 },	-- Earthen Guardian (Horde)
+							},
+							["coords"] = {	-- i found it at the first one for Horde; apparently it can show up in both, but i'm not sure what governs which location it's available at
+								{ 75.0, 15.0, 1161 },	-- Boralus, Alliance
+								{ 50.3, 41.7, 1165 },	-- Dazar'alor, Horde
+								{ 51.0, 88.8, 1165 },	-- Dazar'alor, Horde
+							},
+							["_drop"] = { "races" },	-- API claims this is Horde-only, but it's neutral
+						}),
 						q(52428, {	-- Infusing the Heart
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },

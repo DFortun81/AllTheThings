@@ -1114,6 +1114,12 @@ _.Zones =
 					["coord"] = { 66.3, 56.6, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52508, {	-- Ritual Effects
+					["sourceQuests"] = { 52453 },	-- A Forlorn Hope
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 70.3, 36.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50816, {	-- Roarke's Missing
 					["u"] = NEVER_IMPLEMENTED,
 				}),
@@ -1168,6 +1174,15 @@ _.Zones =
 				}),
 				q(49743, {	-- Shoot First, Questions Later
 					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(52510, {	-- Shrine of the Storm: The Missing Ritual
+					["sourceQuests"] = {
+						52508,	-- Ritual Effects
+						52509,	-- The Strength of the Storm
+					},
+					["provider"] = { "n", 137691 },	-- Brother Pike
+					["coord"] = { 78.3, 28.8, 942 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50825, {	-- Shrine of the Storm: Whispers Below
 					["sourceQuests"] = { 50824 },	-- Storm's End
@@ -1459,6 +1474,12 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["provider"] = { "n", 135534 },	-- Brother Pike
 					["coord"] = { 63.1, 43.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52509, {	-- The Strength of the Storm
+					["sourceQuests"] = { 52453 },	-- A Forlorn Hope
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 70.3, 36.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56111, {	-- The Usurper

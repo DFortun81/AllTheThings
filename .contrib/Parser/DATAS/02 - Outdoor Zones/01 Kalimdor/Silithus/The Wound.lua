@@ -105,10 +105,9 @@ _.Zones =
 								52946,	-- A Dying World
 								53028,	-- A Dying World
 							},
-							["coord"] = { 42.2, 44.2, 81 },
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["coord"] = { 42.2, 44.2, 81 },
 							["g"] = {
-								ach(12918),	-- Have a Heart
 								i(158075),	-- Heart of Azeroth
 							},
 						}),

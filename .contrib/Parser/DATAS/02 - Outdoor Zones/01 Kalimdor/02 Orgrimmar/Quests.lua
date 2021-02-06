@@ -17,105 +17,90 @@ _.Zones =
 							},
 							["coord"] = { 37.8, 81.0, 85 },
 							["races"] = HORDE_ONLY,
-							["lvl"] = 110,
 							["g"] = {
 								n(-209, {	-- Highmountain Tauren
 									q(48066, {	-- A Feast for Our Kin
 										["provider"] = { "n", 125285 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 38.0, 81.0, 85 },
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48067, {	-- Shadow Over Thunder Bluff
 										["provider"] = { "n", 129914 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 61.2, 51.8, 88 },
 										["sourceQuest"] = 48066,	-- A Feast for Our Kin
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(49756, {	-- Dark Forces
 										["provider"] = { "n", 130773 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 61.2, 51.8, 88 },
 										["sourceQuest"] = 48067,	-- Shadow Over Thunder Bluff
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48079, {	-- Return to Highmountain
 										["provider"] = { "n", 130773 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 61.2, 51.8, 88 },
 										["sourceQuest"] = 49756,	-- Dark Forces
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41884, {	-- Dark Tales
 										["provider"] = { "n", 105085 },	-- Spiritwalker Graysky
 										["coord"] = { 70.2, 72.0, 650 },
 										["sourceQuest"] = 48079,	-- Return to Highmountain
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41764, {	-- Walking in Their Footsteps
 										["provider"] = { "n", 125454 },	-- Spiritwalker Graysky
 										["coord"] = { 38.6, 69.0, 650 },
 										["sourceQuest"] = 41884,	-- Dark Tales
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48185, {	-- Shadow of the Sepulcher
 										["provider"] = { "n", 125454 },	-- Spiritwalker Graysky
 										["coord"] = { 38.6, 69.0, 650 },
 										["sourceQuest"] = 41764,	-- Walking in Their Footsteps
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41799, {	-- Minions of the Darkness
 										["provider"] = { "n", 125459 },	-- Spiritwalker Graysky
 										["coord"] = { 57.0, 46.2, 650 },
 										["sourceQuest"] = 48185,	-- Shadows of the Sepulcher
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48190, {	-- Huln's Mountain
 										["provider"] = { "n", 125459 },	-- Spiritwalker Graysky
 										["coord"] = { 57.0, 46.2, 650 },
 										["sourceQuest"] = 41799,	-- Minions of the Darkness
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41800, {	-- Servants of the Darkness
 										["provider"] = { "n", 125466 },	-- Spiritwalker Graysky
 										["coord"] = { 53.2, 64.0, 650 },
 										["sourceQuest"] = 48190,	-- Huln's Mountain
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48434, {	-- How Fares Ebonhorn?
 										["provider"] = { "n", 125466 },	-- Spiritwalker Graysky
 										["coord"] = { 53.2, 64.0, 650 },
 										["sourceQuest"] = 41800,	-- Servants of the Darkness
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41815, {	-- Curse of the Necrodark
 										["provider"] = { "n", 108434 },	-- Mayla Highmountain
 										["coord"] = { 69.0, 70.4, 650 },
 										["sourceQuest"] = 48434,	-- How Fares Ebonhorn?
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41840, {	-- Ice and Shadow
 										["provider"] = { "n", 130423 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 56.4, 89.2, 650 },
 										["sourceQuest"] = 41815,	-- Curse of the Necrodark
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41882, {	-- Whispers of the Darnkess
 										["provider"] = { "n", 97662 },	-- Jale Rivermane
 										["coord"] = { 56.4, 89.2, 650 },
 										["sourceQuest"] = 41815,	-- Curse of the Necrodark
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(41841, {	-- The Final Ward
 										["provider"] = { "n", 105213 },	-- Spiritwalker Ebonhorn
@@ -125,21 +110,18 @@ _.Zones =
 											41882,	-- Whispers of the Darkness
 										},
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48403, {	-- The Darkness
 										["provider"] = { "n", 105213 },	-- Spiritwalker Ebonhorn
 										["coord"] = { 56.8, 92.0, 650 },
 										["sourceQuest"] = 41841,	-- The Final Ward
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(48433, {	-- Together We Are the Horde!
 										["provider"] = { "n", 126134 },	-- Baine Bloodhoof <High Chieftain>
 										["coord"] = { 56.6, 92.6, 650 },
 										["sourceQuest"] = 48403,	-- The Darkness
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 										["g"] = {
 											ach(12245),	-- Allied Races: Highmountain Tauren
 										},
@@ -168,28 +150,24 @@ _.Zones =
 										["provider"] = { "n", 133523 },	-- Ji Firepaw
 										["coord"] = { 37.8, 81.1, 85 },
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(49613, {	-- Silvermoon City
 										["provider"] = { "n", 131478 },	-- Lady Liadrin
 										["coord"] = { 65.8, 63.6, 680 },
 										["sourceQuest"] = 49973,	-- Thalyssra's Estate
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(49354, {	-- Remember the Sunwell
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
 										["coord"] = { 58.2, 19.4, 110 },
 										["sourceQuest"] = 49613,	-- Silvermoon City
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 									}),
 									q(49614, {	-- The Nightborne
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
 										["coord"] = { 58.2, 19.4, 110 },
 										["sourceQuest"] = 49354,	-- Remember the Sunwell
 										["races"] = HORDE_ONLY,
-										["lvl"] = 110,
 										["g"] = {
 											ach(12244),	-- Allied Races: Nightborne
 										},
@@ -688,7 +666,6 @@ _.Zones =
 									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
-									["lvl"] = 110,
 								}),
 								q(50254,{	-- A Second Ally For the Cause
 									["providers"] = {
@@ -697,7 +674,6 @@ _.Zones =
 									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
-									["lvl"] = 110,
 									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
@@ -756,14 +732,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
-				q(53028, {	-- A Dying World
-					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
-					["coord"] = { 48.8, 91.5, 85 },
-					["sourceQuest"] = 51796,	-- The Battle for Lordaeron
-					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27365, {	-- A Fitting Weapon
 					["provider"] = { "n", 3353 },	-- Grezz Ragefist
 					["coord"] = { 73.6, 45.6, 85 },
@@ -812,7 +780,6 @@ _.Zones =
 					["coord"] = { 49.8, 75.6, 85 },
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27435, {	-- A Seer's Staff
@@ -1282,7 +1249,6 @@ _.Zones =
 					["coord"] = { 48.6, 71.0, 85 },
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 					["g"] = {
 						i(163528),	-- Deathguard's Gladius
 						i(163525),	-- Grunt's Boot Knife
@@ -1553,7 +1519,7 @@ _.Zones =
 				}),
 				q(51443, {	-- Mission Statement (BfA version)
 					-- available to a level 47, pre-9.0 character during patch 9.0
-					["providers"] = { 
+					["providers"] = {
 						{ "n", 140176 },	-- Nathanos Blightcaller
 						{ "n", 49750 },	-- Warchief's Herald
 					},
@@ -1871,7 +1837,6 @@ _.Zones =
 				}),
 				q(49977, {	-- Summons to Orgrimmar
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27397, {	-- Terga's Task
@@ -1915,7 +1880,6 @@ _.Zones =
 					},
 					["sourceQuest"] = 53372,	-- Hour of Reckoning
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(1513, {	-- The Binding
 					["u"] = REMOVED_FROM_GAME,
@@ -2081,7 +2045,6 @@ _.Zones =
 					["coord"] = { 54.4, 78.4, 85 },
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(1146,  {	-- The Swarm Grows
 					["u"] = REMOVED_FROM_GAME,
@@ -2354,7 +2317,6 @@ _.Zones =
 					["coord"] = { 49.8, 75.6, 85 },
 					["sourceQuest"] = 50341 ,	-- A Recent Discovery
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(7660,  {	-- Wolf Swapping - Arctic Wolf

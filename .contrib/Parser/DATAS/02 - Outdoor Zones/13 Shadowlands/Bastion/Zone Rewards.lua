@@ -32,6 +32,7 @@ _.Zones =
 					i(184839);	-- Misfiring Centurion Controller
 					i(181631),	-- Requiem Chime
 					i(181632),	-- Requiem Handscythes
+					i(181702),	-- Sanctified Guardian's Signet
 					i(181605),	-- Shieldguard's Breastplate
 					i(181608),	-- Shieldguard's Gauntlets
 					i(181612),	-- Shieldguard's Girdle
