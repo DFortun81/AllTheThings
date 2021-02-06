@@ -1346,6 +1346,7 @@ _.HiddenQuestTriggers =
 		q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
 		q(41858),	-- Monk Order Hall - No Monk Left Behind (obsolete or NYI version, triggers with #41852 version)
 		q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
+		q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -2467,6 +2468,7 @@ _.HiddenQuestTriggers =
 		q(55891),	-- Killed Herald of Salgos
 		q(56733),	-- First kill of Herald of Salgos
 		q(56484),	-- Killed Moghiea
+		q(56728),	-- killed Moghiea (first time)
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
 		q(56483),	-- Killed Ungormath
@@ -3681,6 +3683,7 @@ _.HiddenQuestTriggers =
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"

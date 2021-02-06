@@ -206,9 +206,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46347, {	-- Clean-up on Aisle Sha
-						["classes"] = { MONK },
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
+						["provider"] = { "n", 120722 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 36.5, 48.2, 379 },	-- Kun-Lai Summit
 					}),
 					q(41730, {	-- Desperate Strike
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
@@ -332,9 +333,10 @@ _.ExpansionFeatures =
 						["classes"] = { MONK },
 					}),
 					q(46349, {	-- Lilies for Ryuli
-						["classes"] = { MONK },
-						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
+						["classes"] = { MONK },
+						["coord"] = { 74.4, 88.7, 379 },	-- Kun-Lai Summit
 					}),
 					q(43151, {	-- Making a Trade
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops (technically part of this quest)
@@ -355,8 +357,8 @@ _.ExpansionFeatures =
 						["coord"] = { 44.9, 62.0, 646 },	-- Broken Shore
 					}),
 					q(44238, {	-- Meditations on Fate
-						["classes"] = { MONK },
 						["provider"] = { "n", 110817 },	-- Yushi
+						["classes"] = { MONK },
 					}),
 					q(41852, {	-- No Monk Left Behind
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
@@ -419,9 +421,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46342, {	-- Return to the Broken Peak
-						["classes"] = { MONK },
-						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
+						["provider"] = { "n", 120758 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 					}),
 					q(42187, {	-- Rise, Champions
 					--	TODO: is altQuests necessary here?  is there a situation in which you'd complete the tracking quest but not the main quest?
@@ -452,9 +455,10 @@ _.ExpansionFeatures =
 						["maps"] = { 371 }	-- Jade Forest
 					}),
 					q(46344, {	-- Smelly's Luckydo
-						["classes"] = { MONK },
-						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
+						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
+						["classes"] = { MONK },
+						["coord"] = { 47.9, 49.0, 379 },	-- Kun-Lai Summit
 					}),
 					q(43058, {	-- Spiced Rib Roast
 					--	repeatable quest during "An Ample Stockpile"
@@ -606,14 +610,16 @@ _.ExpansionFeatures =
 						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(46348, {	-- The River to Ban-Lu
-						["classes"] = { MONK },
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
+						["provider"] = { "n", 120722 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 36.5, 48.3, 379 },	-- Kun-Lai Summit
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
-						["classes"] = { MONK },
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
+						["provider"] = { "n", 120722 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 47.9, 48.8, 379 },	-- Kun-Lai Summit
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
 						["sourceQuests"] = { 46353 },	-- Master Who?
@@ -622,9 +628,10 @@ _.ExpansionFeatures =
 						["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 					}),
 					q(46343, {	-- The Trail of Ban-Lu
-						["classes"] = { MONK },
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
+						["provider"] = { "n", 120722 },	-- Master Bu
+						["classes"] = { MONK },
+						["coord"] = { 47.3, 41.7, 379 },	-- Kun-Lai Summit
 					}),
 					q(42765, {	-- The Trial at the Temple
 						["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
@@ -641,11 +648,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46350, {	-- The Trial of Ban-Lu
-						["classes"] = { MONK },
-						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
+						["classes"] = { MONK },
+						["coord"] = { 73.9, 88.9, 379 },	-- Kun-Lai Summit
 						["g"] = {
-							i(142225),	-- Ban-Lu, Grandmaster's Companion
+							i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 						},
 					}),
 					q(42762, {	-- The Wanderer's Companion

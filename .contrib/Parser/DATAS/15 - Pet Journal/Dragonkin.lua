@@ -42,6 +42,9 @@ _.PetJournal =
 			["u"] = 31,	-- WoW Anniversary
 		}),
 		p(320),		-- Lil' Tarecgosa
+		p(3053, {	-- Moon-Touched Netherwhelp
+			["u"] = BLIZZARD_BALANCE,
+		}),
 		p(557),		-- Nether Faerie Dragon
 		p(131, {	-- Netherwhelp
 			["u"] = REMOVED_FROM_GAME,
