@@ -1745,7 +1745,6 @@ MergeObject = function(g, t, index)
 	else
 		tinsert(g, t);
 	end
-	return t;
 end
 end)();
 local function ExpandGroupsRecursively(group, expanded, manual)
@@ -3370,7 +3369,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
+				-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				-- app.DEBUG_PRINT = nil;
 				if #entries > 0 then
 					-- print("#entries",#entries);
 					tinsert(info, { left = "Contains:" });
@@ -3708,6 +3709,23 @@ app.PrintGroup = function(group,depth)
 				app.PrintGroup(sg,depth + 1);
 			end
 		end
+	end
+end
+app.PrintTable = function(t,depth)
+	if not t then print("nil"); return; end
+	if type(t) ~= "table" then print(type(t),t); return; end
+	if not depth then depth = 0; end
+	local p = "";
+	for i=0,depth,1 do
+		p = p .. "-";
+	end
+	print(p .. tostring(t) .. " {");
+	for k,v in pairs(t) do
+		print(p .. k .. ":" .. tostring(v));
+	end
+	print("}");
+	if getmetatable(t) then
+		app.PrintTable(getmetatable(t).__index, depth + 1);
 	end
 end
 local function SendGroupMessage(msg)
@@ -9252,6 +9270,10 @@ app.RecursiveGroupRequirementsFilter = function(group)
 			return true;
 		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent) end;
 		return true;
+	-- elseif app.DEBUG_PRINT then
+	-- 	print("FILTERED FROM", app.DEBUG_PRINT)
+	-- 	app.PrintTable(group);
+	-- 	print("--");
 	end
 	return false;
 end
