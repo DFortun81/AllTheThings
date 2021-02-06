@@ -202,7 +202,6 @@ _.Zones =
 					["coord"] = { 72.9, 65.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 207304 },	-- Adventure Board
-					["description"] = "Only available between level 47 and 56.",
 					["isBreadcrumb"] = true,
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths
