@@ -3348,6 +3348,8 @@ _.HiddenQuestTriggers =
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
 		q(57577),	-- Triggered after recruiting Flytrap
+		q(57598),	-- Triggered after recruiting Gas Bag
+		q(57859),	-- Triggered after recruiting Guillotine
 		q(57578),	-- Triggered after recruiting Marz
 		q(57606),	-- Triggered after recruiting Roseboil
 		q(57854),	-- Triggered after recruiting Sabrina

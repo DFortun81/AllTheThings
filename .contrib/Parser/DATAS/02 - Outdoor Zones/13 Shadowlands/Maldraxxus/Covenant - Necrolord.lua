@@ -1400,14 +1400,14 @@ _.Zones =
 										["isWeekly"] = true,
 										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
-									q(61522, {    -- Corpse Run
+									q(61522, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, 1536 },
 										["isWeekly"] = true,
 										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
-									q(61523, {    -- Corpse Run
+									q(61523, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, 1536 },
@@ -1433,7 +1433,7 @@ _.Zones =
 										["provider"] = { "n", 162153 },	-- Rathan
 										["coord"] = { 26.0, 42.6, 1536 },
 									}),
-									q(62041, {    -- In A Bad Light
+									q(62041, {	-- In A Bad Light
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 										["provider"] = { "n", 159241 },    -- Roseboil
 										["coord"] = { 55.1, 68.1, 1536 },
@@ -1480,7 +1480,7 @@ _.Zones =
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, 1536 },
 									}),
-									q(59126, {    -- Supply Chain
+									q(59126, {	-- Supply Chain
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 										["provider"] = { "n", 159238 },    -- Atticus
 										["coord"] = { 55.3, 68.3, 1536 },
@@ -1587,7 +1587,34 @@ _.Zones =
 										["_drop"] = { "g" },	-- Superior Parts is included from API
 									}),
 								}),
-								-- Tier 3: Bring Them to Life
+								n(-927, {	-- Tier 3: Bring Them to Life
+									q(60342, {	-- Cut 'Em Down to Size
+										["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
+										["provider"] = { "n", 159214 },	-- Guillotine
+										["coord"] = { 54.4, 67.9, 1536 },
+										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
+									}),
+									q(56470, {	-- Give A Dog A Bone
+										["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+										["provider"] = { "n", 161678 },	-- Mama Tomalin
+										["coord"] = { 55.3, 68.6, 1536 },
+										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
+									}),
+									q(62407, {	-- Herbicidal Tendencies
+										["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
+										["provider"] = { "n", 159240 },	-- Gas Bag
+										["coord"] = { 54.2, 68.0, 1536 },
+										["isWeekly"] = true,
+										["_drop"] = { "g" },	-- Superior Parts is included from API
+									}),
+									q(61635, {	-- Troubled Souls
+										["provider"] = { "n", 167150 },	-- Rathan
+										["coord"] = { 55.1, 68.8, 1536 },
+										["description"] = "Becomes available after you research Abomination Factory Tier 3 in your sanctum.",
+									}),
+								}),
 								-- Tier 4: Forged Friends
 								-- Tier 5: Best Fiends Forever
 							}),

@@ -1102,6 +1102,7 @@ app.L = {
 		[-924] = "Interface\\Icons\\ui_sigil_necrolord",									-- Transport Network (Necrolord)
 		[-925] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 1
 		[-926] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 2
+		[-927] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 3
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
@@ -1991,6 +1992,7 @@ app.L = {
 		[-924] = "Transport Network",											-- Transport Network (Necrolord)
 		[-925] = "Tier 1: Build A Buddy",										-- Abomination Factory (Necrolord) Tier 1
 		[-926] = "Tier 2: Crafting Limbs",										-- Abomination Factory (Necrolord) Tier 2
+		[-927] = "Tier 3: Bring Them to Life",									-- Abomination Factory (Necrolord) Tier 3
 
 	-- SL Ardenweald/Night Fae
 		[-929] = "Covenant: Night Fae",											-- Covenant: Night Fae
