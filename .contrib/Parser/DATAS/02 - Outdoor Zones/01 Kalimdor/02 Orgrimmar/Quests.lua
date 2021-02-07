@@ -1582,6 +1582,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
+				q(60887,   {	-- Cataclysm: Onward to Adventure in Kalimdor
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(26642, {	-- Preserving the Barrens
 					["provider"] = { "n", 35068 },	-- Gotura Fourwinds
 					["coord"] = { 47.6, 71.3, 85 },
