@@ -614,9 +614,6 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57373,	-- Descending Into Madness
-							["g"] = {
-								spell(315864),	-- Tenebrous Conduit (unlocks horrific visions)
-							},
 						}),
 						q(57373, {	-- Descending Into Madness
 							["lvl"] = 120,
@@ -656,9 +653,6 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
-							["g"] = {
-								spell(315863),	-- Archival Research Database (unlocks the Horrific Visions upgrades)
-							},
 						}),
 						q(57378, {	-- Remnants of a Shattered World (Rank 2)
 							["lvl"] = 120,
