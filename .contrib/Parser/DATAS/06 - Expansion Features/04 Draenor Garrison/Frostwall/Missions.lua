@@ -429,16 +429,19 @@ _.ExpansionFeatures =
 							}),
 							i(120301),	-- Armor Enhancement Token
 							i(114128),	-- Balanced Weapon Enhancement
+							i(114806),	-- Blackrock Armor Set
 							i(114745),	-- Braced Armor Enhancement
 							i(123858),	-- Follower Retraining Scroll Case
 							i(118354),	-- Follower Retraining Certificate
 							i(114808),	-- Fortified Armor Enhancement
+							i(122583),	-- Grease Monkey Guide
 							i(114746),	-- Goredrenched Armor Set
 							i(114622),	-- Goredrenched Weaponry
 							i(114822),	-- Heavily Reinforced Armor Enhancement
 							i(128313),	-- Huge Ogre Cache
 							i(114131),	-- Power Overrun Weapon Enhancement
 							i(122594),	-- Rush Order: Tailoring Emporium
+							i(114616),	-- War Ravaged Weaponry
 							i(120302),	-- Weapon Enhancement Token
 						},
 					}),
