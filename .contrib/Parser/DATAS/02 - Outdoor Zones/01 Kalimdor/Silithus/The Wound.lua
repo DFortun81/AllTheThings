@@ -187,7 +187,7 @@ _.Zones =
 					}),
 					n(RARES, {
 						n(132591, {	-- Ogmot the Mad
-							["questID"] = 50334,	-- also triggered 50225. First kill questID?
+							["questID"] = 50334,
 							["coord"] = { 28.9, 74.6, 81 },
 							["g"] = {
 								i(156852),	-- Ogmot's Dream Journal

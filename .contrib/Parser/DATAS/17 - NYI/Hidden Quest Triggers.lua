@@ -1821,6 +1821,7 @@ _.HiddenQuestTriggers =
 
 		--	VARIOUS
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
+		q(50225),	-- first kill of Ogmot the Mad
 		q(50465),	-- triggered with #49950, "Blood Purification"
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
@@ -3006,12 +3007,12 @@ _.HiddenQuestTriggers =
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		q(60826),	-- first use per day of Unbound Changeling trinket
-		
+
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
 		q(62964),	-- triggered when learning Illusion: Undying Spirit
 		q(61727), 	-- triggered when learning Illusion: Sinsedge
-		
+
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
 		q(63070),	-- Shared
@@ -3151,7 +3152,7 @@ _.HiddenQuestTriggers =
 		q(63318),	-- Necrolord
 		q(63316),	-- Night Fae
 		q(63319),	-- Venthyr
-		
+
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
@@ -3197,7 +3198,7 @@ _.HiddenQuestTriggers =
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(61692),	-- \
 		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3
 		q(61695),	--  /
 		q(61696),	-- /
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
@@ -3212,7 +3213,7 @@ _.HiddenQuestTriggers =
 		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
-		
+
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
@@ -3326,7 +3327,7 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
-		
+
 		-- Maldraxxus Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
@@ -3659,7 +3660,7 @@ _.HiddenQuestTriggers =
 					-- also for mogwai when killing Eketra...
 		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
 
-		
+
 		-- Eye of the Jailer Levels
 		q(63382),	-- Mortars/Missiles (1)
 		q(63379),	-- Assassins (2)
@@ -3704,7 +3705,7 @@ _.HiddenQuestTriggers =
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
 		q(62079),	-- triggered at the end of Mythic Tirna Scithe (+2)
-		
+
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID
 		q(62812),	-- Nurgash Muckformed kill questID
