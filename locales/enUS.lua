@@ -4652,6 +4652,7 @@ app.L = {
 		[294319] = "Sandsunken Treasure",
 		[294335] = "Rotten Potato",
 		[294703] = "Grimmy's Rusty Lockbox",
+		[296479] = "Lord Admiral's Footlocker",
 		[296536] = "Bloodied Sentinel's Glaive",
 		[297825] = "Web-Covered Chest",
 		[297828] = "Merchant's Chest",

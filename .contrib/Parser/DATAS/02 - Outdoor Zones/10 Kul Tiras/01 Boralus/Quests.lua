@@ -662,6 +662,12 @@ _.Zones =
 					["coord"] = { 67.0, 36.2, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52151, {	-- A Nation United
+					["sourceQuests"] = { 52153 },	-- Siege of Boralus: Lady Ashvane's Return
+					["provider"] = { "n", 120788 },	-- Genn Greymane
+					["coord"] = { 67.9, 22.2, 1161 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(54947, {	-- A Small Team
 					["sourceQuests"] = { 54946 },	-- Report to Gila
 					["provider"] = { "n", 151100 },	-- Gila Crosswires
@@ -759,6 +765,12 @@ _.Zones =
 					["provider"] = { "n", 135335 },	-- Proudmoore Guard
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52481, {	-- Of Myth and Fable
+					["sourceQuests"] = { 52513 },	-- Lost in Darkness
+					["provider"] = { "n", 140495 },	-- Katherine Proudmoore
+					["coord"] = { 36.4, 62.8, 1161 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53847, {	-- On Whispered Winds
 					["provider"] = { "n", 152000 },	-- Dori'thur
 					["coord"] = { 70.7, 26.8, 1161 },
@@ -832,6 +844,12 @@ _.Zones =
 					["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 					["provider"] = { "n", 153932 },	-- Genn Greymane
 					["coord"] = { 70.6, 27.2, 1161 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52153, {	-- Siege of Boralus: Lady Ashvane's Return
+					["sourceQuests"] = { 51445 },	-- Thros, the Blighted Lands
+					["provider"] = { "n", 141785 },	-- Katherine Proudmoore
+					["coord"] = { 44.7, 62.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56500, {	-- Storming the Battlefields

@@ -11,6 +11,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["maps"] = { 1162 },	-- Siege of Boralus
 		["lvl"] = 120,
 		["g"] = {
+			n(QUESTS, {
+				q(53128, {	-- The Lord Admiral's Lament
+					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53127, {	-- The Lord Admiral's Lament
+					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
+					["races"] = HORDE_ONLY,
+				}),
+			}),
 			n(-34, {	-- World Quests
 				q(52761, {	-- Siege of Boralus: Blood Money
 					["isWorldQuest"] = true,

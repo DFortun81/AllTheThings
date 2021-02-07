@@ -477,16 +477,16 @@ _.ExpansionFeatures =
 							-- Hidden quest 53384 completes as Kelsey Steelspark runs up
 						}),
 						q(51331, {	-- Mole Machinations
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 51418,	-- Xibala
 						}),
 						q(51309, {	-- Rocks of Ragnaros
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 51418,	-- Xibala
 						}),
 						q(51359, {	-- Fragment of the Firelands
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
@@ -515,12 +515,11 @@ _.ExpansionFeatures =
 						}),
 					--	ALL 3 FOOTHOLDS END Here
 						q(51918, {	-- Uniting Kul Tiras - completed once per account
+							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["altQuests"] = { 52450 },	-- Uniting Kul Tiras
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["lvl"] = 120,
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["g"] = {
 								spell(273746),	-- World Quests
 								i(141605, {	-- Flight Master Whistle
@@ -528,12 +527,11 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 120
+						q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 50 - requires HoA and, afaik, nothing else
+							["sourceQuests"] = { 52428 },	-- Infusing the Heart
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["lvl"] = 120,
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["g"] = {
 								spell(273746),	-- World Quests
 								i(141605, {	-- Flight Master Whistle
@@ -661,19 +659,31 @@ _.ExpansionFeatures =
 						}),
 					--	CHASING DARKNESS STARTS HERE
 						q(52150, {	-- How to Kill a Dark Ranger
+							["sourceQuests"] = { 52147 },	-- Crippling the Horde
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 							["coord"] = { 61.9, 41.1, 863 },	-- Nazmir
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52147 },	-- Crippling the Horde
+						}),
+						q(52156, {	-- Tortollans in Distress
+							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
+							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
+							["coord"] = { 61.9, 41.2, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(52158, {	-- The Savage Hunt
+							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
+							["provider"] = { "n", 139609 },	-- John J. Keeshan
+							["coord"] = { 61.8, 41.3, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52170, {	-- Ending Areiel
-							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52158,	-- The Savage Hunt
 								52156,	-- Tortollans in Distress
 							},
+							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
+							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52171, {	-- One Option: Fire
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
@@ -825,9 +835,9 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(53131, {	-- Kings' Rest (Unlocks Kings' Rest)
-							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
-							["sourceQuest"] = 52492,	-- The Wildhammer Specialty
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52493, {	-- An Unnatural Crew
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
@@ -1318,30 +1328,28 @@ _.ExpansionFeatures =
 						}),
 						-- Night Warrior appearance unlock
 						q(53849, {	-- Waning Hope
+							["sourceQuests"] = { 53847 },	-- On Whispered Winds
+							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
 							["coord"] = { 86.6, 35.7, 84 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["sourceQuest"] = 53847,	-- On Whispered Winds
 						}),
 						q(53988, {	-- Shores of Fate
+							["sourceQuests"] = { 53849 },	-- Waning Hope
+							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
 							["coord"] = { 86.6, 35.7, 84 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["sourceQuest"] = 53849,	-- Waning Hope
 						}),
 						q(53989, {	-- Hope
-							["lvl"] = 120,
+							["sourceQuests"] = { 53988 },	-- Shores of Fate
+							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
 							["coord"] = { 11.5, 17.6, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
-							["sourceQuest"] = 53988,	-- Shores of Fate
 						}),
 						q(54041, {	-- No Survivors
-							["lvl"] = 120,
+							["sourceQuests"] = { 53988 },	-- Shores of Fate
+							["provider"] = { "n", 146375 },	-- Sira Moonwarden
 							["coord"] = { 11.4, 17.8, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146375 },	-- Sira Moonwarden
-							["sourceQuest"] = 53988,	-- Shores of Fate
 						}),
 						q(53990, {	-- In Darkest Night
 							["coord"] = { 86.6, 35.7, 84 },
@@ -1353,10 +1361,10 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(54871, {	-- We Are Coming
+							["sourceQuests"] = { 53990 },	-- In Darkest Night
+							["provider"] = { "n", 149612 },	-- Shandris Feathermoon
 							["coord"] = { 69.5, 26.8, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 149612 },	-- Shandris Feathermoon
-							["sourceQuest"] = 53990,	-- In Darkest Night
 						}),
 					--	RISE OF AZSHARA (8.2)
 						q(55784, {	-- Payment in Kind

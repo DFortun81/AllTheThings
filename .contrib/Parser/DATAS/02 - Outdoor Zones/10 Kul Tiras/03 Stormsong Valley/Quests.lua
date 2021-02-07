@@ -582,6 +582,12 @@ _.Zones =
 						i(155235),	-- Vineshaper's Grasp
 					},
 				}),
+				q(52512, {	-- Fate's End
+					["sourceQuests"] = { 52511 },	-- Opening the Way
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 21.3, 69.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50493, {	-- Fetching Wrex
 					["provider"] = { "n", 134028 },	-- Sam Robinson
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
@@ -890,6 +896,12 @@ _.Zones =
 					["coord"] = { 70.2, 36.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52513, {	-- Lost in Darkness
+					["sourceQuests"] = { 52512 },	-- Fate's End
+					["provider"] = { "n", 141223 },
+					["coord"] = { 6.64, 31.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(49791, {	-- Lost, Not Forgotten
 					["sourceQuests"] = {
 						49704,	-- Haywire Harvesters
@@ -1006,6 +1018,12 @@ _.Zones =
 				}),
 				q(56107, {	-- One of the Hive
 					["u"] = NEVER_IMPLEMENTED, -- placeholder replaced with tracking quest
+				}),
+				q(52511, {	-- Opening the Way
+					["sourceQuests"] = { 52510 },	-- Shrine of the Storm: The Missing Ritual
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 21.3, 69.5, 942 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50815, {	-- Orcs Versus Humans
 					["u"] = NEVER_IMPLEMENTED,
