@@ -3312,8 +3312,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Append any crafted things using this group
 			app.BuildCrafted(group);
 
-			-- Expand any things requiring this group
-			app.ExpandSubGroups(group);
+			-- Expand any things requiring this group if this group does not already have sub-groups
+			if not group.g then
+				app.ExpandSubGroups(group);
+			end
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
