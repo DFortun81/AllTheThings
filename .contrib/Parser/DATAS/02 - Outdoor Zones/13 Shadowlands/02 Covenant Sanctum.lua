@@ -130,6 +130,7 @@ _.Zones =
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
 								-- i(181740),	-- Evasive Stride [Monk] / Source
+								i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus

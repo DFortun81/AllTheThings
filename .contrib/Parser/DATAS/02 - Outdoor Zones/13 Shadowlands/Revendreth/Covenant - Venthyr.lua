@@ -1230,6 +1230,7 @@ _.Zones =
 									i(183107),	-- Char (pet)
 									i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
+									i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 									i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
 									i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
@@ -1748,6 +1749,14 @@ _.Zones =
 										["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
 										["g"] = {
 											i(181537),	-- Guest List Page
+										},
+									}),
+									q(61255, {	-- RSVP: Alexandros Mograine
+										-- ["sourceQuests"] = {  },	-- TODO: unknown
+										["provider"] = { "n", 171933 },	-- Alexandros Morgraine
+										["coord"] = { 50.3, 67.4, 1536 },	-- Maldraxxus
+										["g"] = {
+											i(176115),	-- RSVP: Alexandros Mograine
 										},
 									}),
 									q(61123, {	-- RSVP: Polemarch Adrestes
