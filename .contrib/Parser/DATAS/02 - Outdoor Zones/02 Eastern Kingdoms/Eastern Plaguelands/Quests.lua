@@ -396,6 +396,10 @@ _.Zones =
 						{ 73.6, 51.9, 23 },
 					},
 				}),
+				q(6164, {	-- Augustus' Receipt Book
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 12384 },	-- Augustus the Touched
+				}),
 				q(27534, {	-- Augustus' Receipt Book
 					["provider"] = { "n", 12384 },	-- Augustus the Touched
 					["coord"] = { 11.3, 28.5, 23 },

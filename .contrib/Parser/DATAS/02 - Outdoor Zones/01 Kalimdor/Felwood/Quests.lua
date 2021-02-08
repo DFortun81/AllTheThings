@@ -736,6 +736,11 @@ _.Zones =
 						28333,	-- It's Time to Oil Up
 					},
 				}),
+				q(8485,  {	-- The Brokering of Peace
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 11555 },	-- Gorn One Eye
+					["races"] = HORDE_ONLY,
+				}),
 				q(28364, {	-- The Chieftain's Key
 					["provider"] = { "n", 47556 },	-- Drizle
 					["coord"] = { 60.5, 9.5, 77 },

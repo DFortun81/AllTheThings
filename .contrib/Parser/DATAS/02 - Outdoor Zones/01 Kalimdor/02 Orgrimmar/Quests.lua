@@ -1874,6 +1874,11 @@ _.Zones =
 					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(8276,   {	-- Taking Back Silithus
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15188 },	-- Cenarion Emissary Blackhoof
+				}),
 				q(27397, {	-- Terga's Task
 					["provider"] = { "n", 3344 },	-- Kardris Dreamseeker
 					["coord"] = { 39.0, 47.4, 85 },
@@ -1991,6 +1996,18 @@ _.Zones =
 					["g"] = {
 						i(65628),	-- Helm of the Great Hunter
 					},
+				}),
+				q(8532, {	-- The Horde Needs Copper Bars!
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = HORDE_ONLY,
+				}),
+				q(8549, {	-- The Horde Needs Peacebloom!
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = HORDE_ONLY,
+				}),
+				q(8542, {	-- The Horde Needs Tin Bars!
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = HORDE_ONLY,
 				}),
 				q(31013, {	-- The Horde Way
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream

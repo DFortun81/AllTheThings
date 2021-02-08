@@ -520,6 +520,22 @@ _.Zones =
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 2744,	-- The Demon Hunter
 				}),
+				q(8250,  {	-- Magecraft
+					["u"] = REMOVED_FROM_GAME,
+					["classes"] = { MAGE },
+					["providers"] = {
+						{ "n", 3047 },	-- Archmage Shymm <Mage Trainer>
+						{ "n", 7312 },	-- Dink <Mage Trainer>
+						{ "n", 4567 },	-- Pierce Shackleton <Mage Trainer>
+						{ "n", 16652 },	-- Quithas <Mage Trainer>
+						{ "n", 7311 },	-- Uthel'nay
+					},
+				}),
+				q(8251,  {	-- Magic Dust
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 8379 },	-- Archmage Xylem
+					["classes"] = { MAGE },
+				}),
 				q(14230, {	-- Manual Labor
 					["provider"] = { "n", 35756 },	-- Teresa Spireleaf
 					["coord"] = { 47.2, 21.2, 76 },
@@ -1008,6 +1024,11 @@ _.Zones =
 						14230,	-- Manual Labor
 						14226,	-- Trouble Under Foot
 					},
+				}),
+				q(8252,  {	-- The Siren's Coral
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 8379 },	-- Archmage Xylem
+					["classes"] = { MAGE },
 				}),
 				q(14383, {	-- The Terrible Tinkers of the Ruined Reaches
 					["provider"] = { "n", 36379 },	-- Hobart Grapplehammer

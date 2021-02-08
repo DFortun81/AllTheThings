@@ -215,6 +215,10 @@ _.Instances = { tier(1, {	-- Classic
 								}),
 							},
 						}),
+						q(7463, {	-- Arcane Refreshment
+							["provider"] = { "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
+							["classes"] = { MAGE },
+						}),
 						q(7499, {	-- Codex of Defense
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR },
