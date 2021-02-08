@@ -2236,7 +2236,7 @@ ResolveSymbolicLink = function(o)
 					if s[key] then table.remove(searchResults, k); end
 				end
 			elseif cmd == "contains" then
-				-- Instruction to include only search results where a key value contains a value.
+				-- Instruction to include only search results where a key value/table contains a value.
 				local key = sym[2];
 				local clone = {unpack(sym)};
 				table.remove(clone, 1);
@@ -2244,7 +2244,17 @@ ResolveSymbolicLink = function(o)
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
-						if not s[key] or not contains(clone, s[key]) then
+						-- key doesn't exist at all on the result
+						if not s[key] then
+							table.remove(searchResults, k);
+						-- key exists with multiple values on the result
+						elseif type(s[key]) == "table" then
+							-- none of the values match the contains values
+							if not containsAny(clone, s[key]) then
+								table.remove(searchResults, k);
+							end
+						-- key exists with single value on the result
+						elseif not contains(clone, s[key]) then
 							table.remove(searchResults, k);
 						end
 					end

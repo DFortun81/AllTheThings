@@ -426,22 +426,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90435, e(1392, {	-- Kormrok
 					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
-						i(124162),	-- Deathrattle Mask (Warlock)
-						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
-						i(124161),	-- Pious Cowl (Priest)
-						i(139627),	-- Ferroleather Hood (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127966, {	-- Helm of Hellfire's Protector
-						i(124297),	-- Crown of the Living Mountain (Shaman)
-						i(124334),	-- Faceguard of Iron Wrath (Warrior)
-						i(124296),	-- Hood of the Savage Hunt (Hunter)
-						i(124262),	-- Mask of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127959, {	-- Helm of Hellfire's Vanquisher
-						i(124160),	-- Cowl of the Arcanic Conclave (Mage)
-						i(124332),	-- Demongaze Helm (Death Knight)
-						i(124263),	-- Felblade Hood (Rogue)
-						i(124261),	-- Oathclaw Helm (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124162),	-- Deathrattle Mask (Warlock)
 					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -518,22 +527,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
 					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
-						i(124167),	-- Deathrattle Leggings (Warlock)
-						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
-						i(124166),	-- Pious Leggings (Priest)
-                        i(139628),	-- Ferroleather Leggings (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127965, {	-- Leggings of Hellfire's Protector
-						i(124302),	-- Leggings of the Living Mountain (Shaman)
-						i(124301),	-- Leggings of the Savage Hunt (Hunter)
-						i(124340),	-- Legplates of Iron Wrath (Warrior)
-						i(124268),	-- Legwraps of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127960, {	-- Leggings of Hellfire's Vanquisher
-						i(124338),	-- Demongaze Legplates (Death Knight)
-						i(124269),	-- Felblade Leggings (Rogue)
-						i(124267),	-- Oathclaw Leggings (Druid)
-						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124167),	-- Deathrattle Leggings (Warlock)
 					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
@@ -590,22 +608,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
 					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
-						i(124156),	-- Deathrattle Gloves (Warlock)
-						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
-						i(124155),	-- Pious Handwraps (Priest)
-						i(139626),	-- Ferroleather Gloves (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127964, {	-- Gauntlets of Hellfire's Protector
-						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
-						i(124329),	-- Gauntlets of Iron Wrath (Warrior)
-						i(124293),	-- Gauntlets of the Living Mountain (Shaman)
-						i(124292),	-- Gloves of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127958, {	-- Gauntlets of Hellfire's Vanquisher
-						i(124327),	-- Demongaze Gauntlets (Death Knight)
-						i(124257),	-- Felblade Gloves (Rogue)
-						i(124154),	-- Gloves of the Arcanic Conclave (Mage)
-						i(124255),	-- Oathclaw Gauntlets (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124156),	-- Deathrattle Gloves (Warlock)
 					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -670,22 +697,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(93068, e(1447, {	-- Xhul'horac
 					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
-						i(124179),	-- Deathrattle Shoulderpads (Warlock)
-						i(124178),	-- Pious Mantle (Priest)
-						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
-						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1447 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127967, {	-- Shoulders of Hellfire's Protector
-						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
-						i(124346),	-- Pauldrons of Iron Wrath (Warrior)
-						i(124308),	-- Pauldrons of the Living Mountain (Shaman)
-						i(124307),	-- Pauldrons of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127961, {	-- Shoulders of Hellfire's Vanquisher
-						i(124344),	-- Demongaze Pauldrons (Death Knight)
-						i(124274),	-- Felblade Spaulders (Rogue)
-						i(124177),	-- Mantle of the Arcanic Conclave (Mage)
-						i(124272),	-- Oathclaw Mantle (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124179),	-- Deathrattle Shoulderpads (Warlock)
 					i(124178),	-- Pious Mantle (Priest)
@@ -714,22 +750,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(91349, e(1395, {	-- Mannoroth
 					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
-						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
-						i(124173),	-- Deathrattle Robe (Warlock)
-						i(124172),	-- Pious Raiment (Priest)
-						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1395 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127963, {	-- Chest of Hellfire's Protector
-						i(124319),	-- Breastplate of Iron Wrath (Warrior)
-						i(124284),	-- Hauberk of the Savage Hunt (Hunter)
-						i(124247),	-- Robe of the Hurricane's Eye (Monk)
-						i(124303),	-- Robe of the Living Mountain (Shaman)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127962, {	-- Chest of Hellfire's Vanquisher
-						i(124317),	-- Demongaze Chestplate (Death Knight)
-						i(124248),	-- Felblade Chestguard (Rogue)
-						i(124246),	-- Oathclaw Vestment (Druid)
-						i(124171),	-- Robe of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 					i(124173),	-- Deathrattle Robe (Warlock)
@@ -785,21 +830,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124514),	-- Seed of Creation
 					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
-						i(124522),	-- Fragment of the Dark Star
-						i(124518),	-- Libram of Vindication
-						i(124519),	-- Repudiation of War
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127970, {	-- Badge of Hellfire's Protector
-						i(124521),	-- Core of the Primal Elements
-						i(124517),	-- Sacred Draenic Incense
-						i(124515),	-- Talisman of the Master Tracker
-						i(124523),	-- Worldbreaker's Resolve
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127968, {	-- Badge of Hellfire's Vanquisher
-						i(124520),	-- Bleeding Hollow Toxin Vessel
-						i(124513),	-- Reaper's Harvest
-						i(124514),	-- Seed of Creation
-						i(124516),	-- Tome of Shifting Words
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 3 },			-- only keep this difficulty
+							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
@@ -890,22 +945,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90435, e(1392, {	-- Kormrok
 					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
-						i(124162),	-- Deathrattle Mask (Warlock)
-						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
-						i(124161),	-- Pious Cowl (Priest)
-						i(139627),	-- Ferroleather Hood (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127966, {	-- Helm of Hellfire's Protector
-						i(124297),	-- Crown of the Living Mountain (Shaman)
-						i(124334),	-- Faceguard of Iron Wrath (Warrior)
-						i(124296),	-- Hood of the Savage Hunt (Hunter)
-						i(124262),	-- Mask of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127959, {	-- Helm of Hellfire's Vanquisher
-						i(124160),	-- Cowl of the Arcanic Conclave (Mage)
-						i(124332),	-- Demongaze Helm (Death Knight)
-						i(124263),	-- Felblade Hood (Rogue)
-						i(124261),	-- Oathclaw Helm (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124162),	-- Deathrattle Mask (Warlock)
 					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -982,22 +1046,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
 					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
-						i(124167),	-- Deathrattle Leggings (Warlock)
-						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
-						i(124166),	-- Pious Leggings (Priest)
-						i(139628),	-- Ferroleather Leggings (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127965, {	-- Leggings of Hellfire's Protector
-						i(124302),	-- Leggings of the Living Mountain (Shaman)
-						i(124301),	-- Leggings of the Savage Hunt (Hunter)
-						i(124340),	-- Legplates of Iron Wrath (Warrior)
-						i(124268),	-- Legwraps of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127960, {	-- Leggings of Hellfire's Vanquisher
-						i(124338),	-- Demongaze Legplates (Death Knight)
-						i(124269),	-- Felblade Leggings (Rogue)
-						i(124267),	-- Oathclaw Leggings (Druid)
-						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124167),	-- Deathrattle Leggings (Warlock)
 					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
@@ -1054,22 +1127,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
 					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
-						i(124156),	-- Deathrattle Gloves (Warlock)
-						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
-						i(124155),	-- Pious Handwraps (Priest)
-						i(139626),	-- Ferroleather Gloves (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127964, {	-- Gauntlets of Hellfire's Protector
-						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
-						i(124329),	-- Gauntlets of Iron Wrath (Warrior)
-						i(124293),	-- Gauntlets of the Living Mountain (Shaman)
-						i(124292),	-- Gloves of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127958, {	-- Gauntlets of Hellfire's Vanquisher
-						i(124327),	-- Demongaze Gauntlets (Death Knight)
-						i(124257),	-- Felblade Gloves (Rogue)
-						i(124154),	-- Gloves of the Arcanic Conclave (Mage)
-						i(124255),	-- Oathclaw Gauntlets (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124156),	-- Deathrattle Gloves (Warlock)
 					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -1134,22 +1216,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(93068, e(1447, {	-- Xhul'horac
 					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
-						i(124179),	-- Deathrattle Shoulderpads (Warlock)
-						i(124178),	-- Pious Mantle (Priest)
-						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
-						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1447 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127967, {	-- Shoulders of Hellfire's Protector
-						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
-						i(124346),	-- Pauldrons of Iron Wrath (Warrior)
-						i(124308),	-- Pauldrons of the Living Mountain (Shaman)
-						i(124307),	-- Pauldrons of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127961, {	-- Shoulders of Hellfire's Vanquisher
-						i(124344),	-- Demongaze Pauldrons (Death Knight)
-						i(124274),	-- Felblade Spaulders (Rogue)
-						i(124177),	-- Mantle of the Arcanic Conclave (Mage)
-						i(124272),	-- Oathclaw Mantle (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124179),	-- Deathrattle Shoulderpads (Warlock)
 					i(124178),	-- Pious Mantle (Priest)
@@ -1178,22 +1269,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(91349, e(1395, {	-- Mannoroth
 					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
-						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
-						i(124173),	-- Deathrattle Robe (Warlock)
-						i(124172),	-- Pious Raiment (Priest)
-						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1395 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127963, {	-- Chest of Hellfire's Protector
-						i(124319),	-- Breastplate of Iron Wrath (Warrior)
-						i(124284),	-- Hauberk of the Savage Hunt (Hunter)
-						i(124247),	-- Robe of the Hurricane's Eye (Monk)
-						i(124303),	-- Robe of the Living Mountain (Shaman)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127962, {	-- Chest of Hellfire's Vanquisher
-						i(124317),	-- Demongaze Chestplate (Death Knight)
-						i(124248),	-- Felblade Chestguard (Rogue)
-						i(124246),	-- Oathclaw Vestment (Druid)
-						i(124171),	-- Robe of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 					i(124173),	-- Deathrattle Robe (Warlock)
@@ -1254,21 +1354,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124514),	-- Seed of Creation
 					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
-						i(124522),	-- Fragment of the Dark Star
-						i(124518),	-- Libram of Vindication
-						i(124519),	-- Repudiation of War
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127970, {	-- Badge of Hellfire's Protector
-						i(124521),	-- Core of the Primal Elements
-						i(124517),	-- Sacred Draenic Incense
-						i(124515),	-- Talisman of the Master Tracker
-						i(124523),	-- Worldbreaker's Resolve
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127968, {	-- Badge of Hellfire's Vanquisher
-						i(124520),	-- Bleeding Hollow Toxin Vessel
-						i(124513),	-- Reaper's Harvest
-						i(124514),	-- Seed of Creation
-						i(124516),	-- Tome of Shifting Words
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 5 },			-- only keep this difficulty
+							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
@@ -1357,22 +1467,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90435, e(1392, {	-- Kormrok
 					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
-						i(124162),	-- Deathrattle Mask (Warlock)
-						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
-						i(124161),	-- Pious Cowl (Priest)
-						i(139627),	-- Ferroleather Hood (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127966, {	-- Helm of Hellfire's Protector
-						i(124297),	-- Crown of the Living Mountain (Shaman)
-						i(124334),	-- Faceguard of Iron Wrath (Warrior)
-						i(124296),	-- Hood of the Savage Hunt (Hunter)
-						i(124262),	-- Mask of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127959, {	-- Helm of Hellfire's Vanquisher
-						i(124160),	-- Cowl of the Arcanic Conclave (Mage)
-						i(124332),	-- Demongaze Helm (Death Knight)
-						i(124263),	-- Felblade Hood (Rogue)
-						i(124261),	-- Oathclaw Helm (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124162),	-- Deathrattle Mask (Warlock)
 					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -1449,22 +1568,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
 					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
-						i(124167),	-- Deathrattle Leggings (Warlock)
-						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
-						i(124166),	-- Pious Leggings (Priest)
-						i(139628),	-- Ferroleather Leggings (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127965, {	-- Leggings of Hellfire's Protector
-						i(124302),	-- Leggings of the Living Mountain (Shaman)
-						i(124301),	-- Leggings of the Savage Hunt (Hunter)
-						i(124340),	-- Legplates of Iron Wrath (Warrior)
-						i(124268),	-- Legwraps of the Hurricane's Eye (Monk)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127960, {	-- Leggings of Hellfire's Vanquisher
-						i(124338),	-- Demongaze Legplates (Death Knight)
-						i(124269),	-- Felblade Leggings (Rogue)
-						i(124267),	-- Oathclaw Leggings (Druid)
-						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124167),	-- Deathrattle Leggings (Warlock)
 					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
@@ -1521,22 +1649,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
 					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
-						i(124156),	-- Deathrattle Gloves (Warlock)
-						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
-						i(124155),	-- Pious Handwraps (Priest)
-						i(139626),	-- Ferroleather Gloves (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127964, {	-- Gauntlets of Hellfire's Protector
-						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
-						i(124329),	-- Gauntlets of Iron Wrath (Warrior)
-						i(124293),	-- Gauntlets of the Living Mountain (Shaman)
-						i(124292),	-- Gloves of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127958, {	-- Gauntlets of Hellfire's Vanquisher
-						i(124327),	-- Demongaze Gauntlets (Death Knight)
-						i(124257),	-- Felblade Gloves (Rogue)
-						i(124154),	-- Gloves of the Arcanic Conclave (Mage)
-						i(124255),	-- Oathclaw Gauntlets (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124156),	-- Deathrattle Gloves (Warlock)
 					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -1601,22 +1738,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(93068, e(1447, {	-- Xhul'horac
 					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
-						i(124179),	-- Deathrattle Shoulderpads (Warlock)
-						i(124178),	-- Pious Mantle (Priest)
-						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
-						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1447 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127967, {	-- Shoulders of Hellfire's Protector
-						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
-						i(124346),	-- Pauldrons of Iron Wrath (Warrior)
-						i(124308),	-- Pauldrons of the Living Mountain (Shaman)
-						i(124307),	-- Pauldrons of the Savage Hunt (Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127961, {	-- Shoulders of Hellfire's Vanquisher
-						i(124344),	-- Demongaze Pauldrons (Death Knight)
-						i(124274),	-- Felblade Spaulders (Rogue)
-						i(124177),	-- Mantle of the Arcanic Conclave (Mage)
-						i(124272),	-- Oathclaw Mantle (Druid)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124179),	-- Deathrattle Shoulderpads (Warlock)
 					i(124178),	-- Pious Mantle (Priest)
@@ -1645,22 +1791,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(91349, e(1395, {	-- Mannoroth
 					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
-						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
-						i(124173),	-- Deathrattle Robe (Warlock)
-						i(124172),	-- Pious Raiment (Priest)
-						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
+						["sym"] = {
+							{ "select", "encounterID", 1395 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127963, {	-- Chest of Hellfire's Protector
-						i(124319),	-- Breastplate of Iron Wrath (Warrior)
-						i(124284),	-- Hauberk of the Savage Hunt (Hunter)
-						i(124247),	-- Robe of the Hurricane's Eye (Monk)
-						i(124303),	-- Robe of the Living Mountain (Shaman)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127962, {	-- Chest of Hellfire's Vanquisher
-						i(124317),	-- Demongaze Chestplate (Death Knight)
-						i(124248),	-- Felblade Chestguard (Rogue)
-						i(124246),	-- Oathclaw Vestment (Druid)
-						i(124171),	-- Robe of the Arcanic Conclave (Mage)
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "s" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 					i(124173),	-- Deathrattle Robe (Warlock)
@@ -1717,21 +1872,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124514),	-- Seed of Creation
 					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
-						i(124522),	-- Fragment of the Dark Star
-						i(124518),	-- Libram of Vindication
-						i(124519),	-- Repudiation of War
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127970, {	-- Badge of Hellfire's Protector
-						i(124521),	-- Core of the Primal Elements
-						i(124517),	-- Sacred Draenic Incense
-						i(124515),	-- Talisman of the Master Tracker
-						i(124523),	-- Worldbreaker's Resolve
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127968, {	-- Badge of Hellfire's Vanquisher
-						i(124520),	-- Bleeding Hollow Toxin Vessel
-						i(124513),	-- Reaper's Harvest
-						i(124514),	-- Seed of Creation
-						i(124516),	-- Tome of Shifting Words
+						["sym"] = {
+							{ "select", "encounterID", 1438 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
 					})),
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
