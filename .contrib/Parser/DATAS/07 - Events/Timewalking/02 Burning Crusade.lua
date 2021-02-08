@@ -8,10 +8,7 @@ _.WorldEvents =
 		["u"] = 42,	--  Timewalking
 		["g"] = {
 			tier(2, { 	-- Burning Crusade
-				["maps"] = {
-					111	-- Shattrath City
-				},
-				["lvl"] = 70,
+				["maps"] = { 111 },	-- Shattrath City
 				["g"] = {
 					q(47523, {	-- Disturbance Detected: Black Temple
 						["provider"] = { "n", 123252 },	-- Vormu

@@ -7,91 +7,48 @@ _.WorldEvents =
 {
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
-		["groups"] = {
+		["g"] = {
 			tier(4, { 	-- Catacylsm
-				{	-- Smoldering Timewarped Ember [Alliance]
-					["itemID"] = 133378,	-- Smoldering Timewarped Ember [Alliance]
-					["questID"] = 40786,	-- The Smoldering Ember
-					["provider"] = { "n", 101759 },	-- Kiatke
+				q(40786, {	-- The Smoldering Ember (A)
+					["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Smoldering Timewarped Ember [Horde]
-					["itemID"] = 133377, 	-- Smoldering Timewarped Ember [Horde]
-					["questID"] = 40787, 	-- The Smoldering Ember
-					["provider"] = { "n", 101759 },	-- Kiatke
+				}),
+				q(40787, { 	-- The Smoldering Ember (H)
+					["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Kiatke <Timewalking Vendor>
-					["npcID"] = 101759, 	-- Kiatke <Timewalking Vendor>
-					["currencyID"] = 1166,  -- Timewarped Badge
-					["lvl"] = 85,
+				}),
+				n(101759, {	-- Kiatke <Timewalking Vendor>
 					["maps"] = {
 						84,	-- Stormwind City
 						85,	-- Orgrimmar
 					},
 					["g"] = {
 					-- Commendations!!
-						{	-- Commendation of the Dragonmaw Clan
-							["itemID"] = 133150,	-- Commendation of the Dragonmaw Clan
-							["icon"] = "Interface\\Icons\\inv_misc_head_dragon_red",
+						i(133150, {	-- Commendation of the Dragonmaw Clan
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Commendation of the Earthen Ring
-							["itemID"] = 133159,	-- Commendation of the Earthen Ring
-							["icon"] = "Interface\\Icons\\ability_earthenfury_giftofearth",
-						},
-						{	-- Commendation of the Guardians of Hyjal
-							["itemID"] = 133152,	-- Commendation of the Guardians of Hyjal
-							["icon"] = "Interface\\Icons\\inv_misc_markoftheworldtree",
-						},
-						{	-- Commendation of the Ramkahen
-							["itemID"] = 133154,	-- Commendation of the Ramkahen
-							["icon"] = "Interface\\Icons\\inv_jewelry_amulet_03",
-						},
-						{	-- Commendation of the Wildhammer Clan
-							["itemID"] = 133151,	-- Commendation of the Wildhammer Clan
-							["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
+						}),
+						i(133159),	-- Commendation of the Earthen Ring
+						i(133152),	-- Commendation of the Guardians of Hyjal
+						i(133154),	-- Commendation of the Ramkahen
+						i(133151, {	-- Commendation of the Wildhammer Clan
 							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Commendation of Therazanae
-							["itemID"] = 133160,	-- Commendation of Therazanae
-							["icon"] = "Interface\\Icons\\inv_datacrystal09",
-						},
+						}),
+						i(133160),	-- Commendation of Therazanae
 					-- Toy!!
-						{	-- Gurboggle's Gleaming Bauble
-							["itemID"] = 133511,	-- Gurboggle's Gleaming Bauble
-						},
-						{	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
-							["itemID"] = 133542,	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
-						},
+						i(133511),	-- Gurboggle's Gleaming Bauble
+						i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
 					-- Rings!!
-						{	-- Band of Reconstruction
-							["itemID"] = 133521,	-- Band of Reconstruction
-						},
-						{	-- Emergency Descent Loop
-							["itemID"] = 133523,	-- Emergency Descent Loop
-						},
-						{	-- Seal of the Grand Architect
-							["itemID"] = 133520,	-- Seal of the Grand Architect
-						},
-						{	-- Signet of the Resolute
-							["itemID"] = 133524,	-- Signet of the Resolute
-						},
+						i(133521),	-- Band of Reconstruction
+						i(133523),	-- Emergency Descent Loop
+						i(133520),	-- Seal of the Grand Architect
+						i(133524),	-- Signet of the Resolute
 					-- Trinkets!!
-						{	-- Bottled Wishes
-							["itemID"] = 133538,	-- Bottled Wishes
-						},
-						{	-- Fire of the Deep
-							["itemID"] = 133541,	-- Fire of the Deep
-						},
-						{	-- Kiroptric Sigil
-							["itemID"] = 133537,	-- Kiroptric Sigil
-						},
-						{	-- Reflection of the Light
-							["itemID"] = 133539,	-- Reflection of the Light
-						},
+						i(133538),	-- Bottled Wishes
+						i(133541),	-- Fire of the Deep
+						i(133537),	-- Kiroptric Sigil
+						i(133539),	-- Reflection of the Light
 					-- Heirlooms!!
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
@@ -140,62 +97,27 @@ _.WorldEvents =
 							},
 						}),
 					-- Gear!!
-						{	-- Bones of the Damned
-							["itemID"] = 133525,	-- Bones of the Damned
-						},
-						{	-- Lightwarper Vestments
-							["itemID"] = 133526,	-- Lightwarper Vestments
-						},
-						{	-- Ghostworld Chestguard
-							["itemID"] = 133527,	-- Ghostworld Chestguard
-						},
-						{	-- Decaying Herbalist's Robes
-							["itemID"] = 133528,	-- Decaying Herbalist's Robes
-						},
-						{	-- Belt of Hidden Keys
-							["itemID"] = 133529,	-- Belt of Hidden Keys
-						},
-						{	-- Cord of Dragon Sinew
-							["itemID"] = 133530,	-- Cord of Dragon Sinew
-						},
-						{	-- Blinding Girdle of Truth
-							["itemID"] = 133531,	-- Blinding Girdle of Truth
-						},
-						{	-- Vestal's Irrepressible Girdle
-							["itemID"] = 133532,	-- Vestal's Irrepressible Girdle
-						},
-						{	-- Flashing Bracers of Warmth
-							["itemID"] = 133533,	-- Flashing Bracers of Warmth
-						},
-						{	-- Dragonbelly Bracers
-							["itemID"] = 133534,	-- Dragonbelly Bracers
-						},
-						{	-- Bracers of Manifold Pockets
-							["itemID"] = 133535,	-- Bracers of Manifold Pockets
-						},
-						{	-- Bracers of the Black Dream
-							["itemID"] = 133536,	-- Bracers of the Black Dream
-						},
+						i(133525),	-- Bones of the Damned
+						i(133526),	-- Lightwarper Vestments
+						i(133527),	-- Ghostworld Chestguard
+						i(133528),	-- Decaying Herbalist's Robes
+						i(133529),	-- Belt of Hidden Keys
+						i(133530),	-- Cord of Dragon Sinew
+						i(133531),	-- Blinding Girdle of Truth
+						i(133532),	-- Vestal's Irrepressible Girdle
+						i(133533),	-- Flashing Bracers of Warmth
+						i(133534),	-- Dragonbelly Bracers
+						i(133535),	-- Bracers of Manifold Pockets
+						i(133536),	-- Bracers of the Black Dream
 					-- Miscellaneous!!
-						{	-- Bag of Shiny Things
-							["itemID"] = 67414,	-- Bag of Shiny Things
-							["g"] = {
-								{	-- Strand Crawler Pet
-									["itemID"] = 44983,	-- Strand Crawler Pet
-								},
-								{	-- Weather-Beaten Fishing Hat
-									["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-								},
-								{	-- Bone Fishing Pole
-									["itemID"] = 45991,	-- Bone Fishing Pole
-								},
-								{	-- Jeweled Fishing Pole
-									["itemID"] = 45992,	-- Jeweled Fishing Pole
-								},
-							},
-						},
+						i(67414, {	-- Bag of Shiny Things
+							i(44983),	-- Strand Crawler Pet
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(45991),	-- Bone Fishing Pole
+							i(45992),	-- Jeweled Fishing Pole
+						}),
 					},
-				},
+				}),
 			}),
 		},
 	}),

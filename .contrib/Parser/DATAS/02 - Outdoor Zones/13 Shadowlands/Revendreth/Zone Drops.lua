@@ -132,6 +132,7 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
+				i(179332),	-- Stone Sentinel Poleaxe
 				i(180865),	-- Stonebane Cudgel
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace

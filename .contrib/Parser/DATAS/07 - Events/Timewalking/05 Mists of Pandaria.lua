@@ -6,21 +6,15 @@ _.WorldEvents =
 {
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
-		["groups"] = {
+		["g"] = {
 			tier(5, { 	-- Mists of Pandaria
-				{	--  Shrouded Timewarped Coin
-					["itemID"] = 143776,	-- Shrouded Timewarped Coin
-					["questID"] = 45563,	-- The Shrouded Coin
-					["provider"] = { "n", 118828 },	-- Mistweaver Xia
+				q(45563, {	-- The Shrouded Coin
+					["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
 					["isWeekly"] = true,
-				},
+				}),
 				n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["lvl"] = 90,
-					["maps"] = {
-						554	-- Timeless Isle
-					},
-					["groups"] = {
+					["maps"] = { 554 },	-- Timeless Isle
+					["g"] = {
 						-- Mounts / Pets / Toys
 						i(87775),	-- Yu'lei, Daughter of Jade [Mount]
 						i(143953),	-- Infinite Hatchling [Pet]
