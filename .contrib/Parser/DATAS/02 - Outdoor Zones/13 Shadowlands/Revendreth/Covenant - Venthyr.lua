@@ -1225,6 +1225,7 @@ _.Zones =
 								n(-908, {	-- Rewards
 								--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
 									i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
+									i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)
 									i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 									i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 									i(183107),	-- Char (pet)
@@ -1232,6 +1233,7 @@ _.Zones =
 									i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 									i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 									i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+									i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
 									i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
 									i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 									i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
@@ -1244,6 +1246,7 @@ _.Zones =
 										["questID"] = 62628,	-- Vole's Voucher
 									}),
 									i(181229),	-- Tranquil's Censer (Sika's Extravagant Tribute)
+									i(178899),	-- Treecorn (Choofa's Extravagant Tribute)
 								}),
 								n(-961, {	-- Tier 1: A New Court
 								--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
@@ -1457,10 +1460,24 @@ _.Zones =
 										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 										["coord"] = { 70.0, 56.2, 1525 },
 									}),
+									q(63213, {	-- Naladu the Elder
+										["provider"] = { "n", 176253 },	-- Elder Naladu
+										["coord"] = { 61.8, 59.8, 1644 },	-- Ember Court
+										["g"] = {
+											i(184627, {	-- Sacrificial Red Envelope
+												i(184628),	-- Elder's Sacrificial Moonstone
+											}),
+										},
+									}),
 									q(62066, {	-- Restock: Dredger Pool
 										["repeatable"] = true,	-- it shows up as a blue ?
 										["provider"] = { "n", 165493 },	-- Boot the Beaut
 										["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									}),
+									q(62094, {	-- Restock: Exploratory Meals
+										["repeatable"] = true,	-- it shows up as a blue ?
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									}),
 									q(61916, {	-- Restock: Fire Damage
 										["repeatable"] = true,	-- it shows up as a blue ?
@@ -1593,6 +1610,15 @@ _.Zones =
 										["coord"] = { 38.9, 66.0, 1525 },	-- Revendreth
 										["g"] = {
 											i(178686),	-- RSVP: Stonehead
+										},
+									}),
+									q(61139, {	-- RSVP: Choofa
+										["provider"] = { "n", 160814 },	-- Choofa
+										["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
+										["isDaily"] = true,
+										["coord"] = { 63.6, 36.6, 1565 },	-- Ardenweald
+										["g"] = {
+											i(176119),	-- RSVP: Choofa
 										},
 									}),
 									q(63065, {	-- Sanctum Upgrade: The Ember Court

@@ -3161,6 +3161,7 @@ _.HiddenQuestTriggers =
 		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
 		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
 		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
+					-- Also when reaching Renown 23, rep only at Honored with Wild Hunt
 		q(62941),	-- When opening the box containing Blacksmithing WQ supplies for 61435
 		-- Ardenweald Rares
 		q(62267),	-- Gormbore secondary quest
@@ -3511,15 +3512,21 @@ _.HiddenQuestTriggers =
 		q(62516),	-- triggered when Ember Court ended, Week 4 (had Plague Deviser Marileth as guest and he was elated)
 		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
+					-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62497),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
+		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
+		q(59639),	-- triggered when leaving Ember Court (week 3)
+		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
@@ -3573,7 +3580,6 @@ _.HiddenQuestTriggers =
 		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
 		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
-		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -3592,6 +3598,8 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
+		q(59406),	-- when using "RSVP: Choofa"
+		q(59407),	-- when using "RSVP: Choofa"
 		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
 		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
 		q(59412),	-- when using "RSVP: Droman Aliothe"
@@ -3610,6 +3618,8 @@ _.HiddenQuestTriggers =
 		q(59425),	-- when using "RSVP: Sika"
 		q(59618),	-- when using "RSVP: Stonehead"
 		q(59619),	-- when using "RSVP: Stonehead"
+		q(59394),	-- when using "RSVP: Alexandros Morgraine"
+		q(59395),	-- when using "RSVP: Alexandros Morgraine"
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)

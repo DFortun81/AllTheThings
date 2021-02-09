@@ -428,6 +428,7 @@ _.ExpansionFeatures =
 								i(128318),	-- Touch of the Void
 							}),
 							i(120301),	-- Armor Enhancement Token
+							i(118427),	-- Autographed Hearthstone Card
 							i(114128),	-- Balanced Weapon Enhancement
 							i(114806),	-- Blackrock Armor Set
 							i(114745),	-- Braced Armor Enhancement
@@ -437,6 +438,7 @@ _.ExpansionFeatures =
 							i(122583),	-- Grease Monkey Guide
 							i(114746),	-- Goredrenched Armor Set
 							i(114622),	-- Goredrenched Weaponry
+							i(118475),	-- Hearthstone Strategy Guide
 							i(114822),	-- Heavily Reinforced Armor Enhancement
 							i(128313),	-- Huge Ogre Cache
 							i(114131),	-- Power Overrun Weapon Enhancement
