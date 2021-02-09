@@ -3386,7 +3386,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- app.DEBUG_PRINT = nil;
 				if #entries > 0 then
 					-- print("#entries",#entries);
-					tinsert(info, { left = "Contains:" });
+					tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
 					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 					if #entries < containCount + 1 then
 						for i,item in ipairs(entries) do
