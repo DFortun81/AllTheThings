@@ -1234,6 +1234,11 @@ _.Zones =
 									["provider"] = { "n", 174508 },	-- Ohm of Meditation
 									["coord"] = { 25.6, 47.5, 1662 },
 								}),
+								q(62590, {	-- In Search of Inner Calm (4)
+									["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
+									["provider"] = { "n", 174508 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+								}),
 								q(59999, {	-- Rebirth of the Grove
 									["sourceQuests"] = { 59873 },	-- Greeting a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
