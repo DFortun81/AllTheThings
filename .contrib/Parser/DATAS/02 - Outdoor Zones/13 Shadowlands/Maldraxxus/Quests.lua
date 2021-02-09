@@ -285,7 +285,7 @@ _.Zones =
 					["coord"] = { 39.2, 55.9, 1536 },
 				}),
 				q(59203, {	-- Leave Me a Loan
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["sourceQuests"] = { 59879 },	-- This Thing of Ours
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, 1536 },
 				}),
@@ -596,7 +596,7 @@ _.Zones =
 					},
 				}),
 				q(59879, {	-- This Thing Of Ours
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["sourceQuests"] = { 58090 },	-- Side Effects
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, 1536 },
 				}),
