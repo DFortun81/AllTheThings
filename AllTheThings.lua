@@ -3626,7 +3626,8 @@ app.ExpandSubGroups = function(item)
 			if subItemID then
 				-- print("Search sub",subItemID)
 				-- find a reference to the item in the DB and add it to the group
-				local clone = GetCachedSearchResults("itemID:" .. tostring(subItemID), app.SearchForField, "itemID", subItemID);
+				local clone = (not item.modID or item.modID < 2) and GetCachedSearchResults("itemID:" .. tostring(subItemID), app.SearchForField, "itemID", subItemID)
+							or GetCachedSearchResults("itemID:" .. tostring(subItemID) .. tostring(item.modID), app.SearchForField, "itemID", subItemID)
 				if clone then
 					if not clone.g then
 						clone.total = nil;
@@ -3702,9 +3703,15 @@ app.HasCost = function(group, idType, id)
 	if not (idType == "itemID" or idType == "currencyID") then return false; end
 	-- group doesn't have a valid cost at all
 	if not group.cost or type(group.cost) ~= "table" then return false; end
+	local idStr, split = tostring(id);
 	for i,c in ipairs(group.cost) do
-		-- return true if exact cost is found
-		if c[2] == id and ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then return true; end
+		if ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then
+			-- return true if exact cost is found
+			if c[2] == id then return true; end
+			-- cost itemID can also be a string, so check the first portion if it matches
+			split = strsplit(":",c[2]);
+			if split == idStr then return true; end
+		end
 	end
 end
 app.PrintGroup = function(group,depth)
@@ -3840,7 +3847,14 @@ fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value)
-		CacheField(group, "itemID", value);
+		-- TODO: when modID eventually gets all fixed to be accurate to in-game, adjust this logic
+		if not group.modID or group.modID < 2 then
+			CacheField(group, "itemID", value);
+		else
+			-- cache items with modID differently so that we can use modID items as lookups to their proper results
+			-- print("mitemID-cache",value,group.modID)
+			CacheField(group, "itemID", tostring(value) .. ":" .. tostring(group.modID));
+		end
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 	end,
 	["mapID"] = function(group, value)
@@ -3940,7 +3954,10 @@ fieldConverters = {
 			return;
 		else
 			for k,v in pairs(value) do
-				if v[1] == "i" and v[2] > 0 then
+				-- cost can be an "itemID:modID" string instead of raw value to support modID requirement of the item
+				if v[1] == "i" and not tonumber(v[2]) then
+					CacheField(group, "itemID", v[2]);
+				elseif v[1] == "i" and v[2] > 0 then
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
 						CacheField(group, "itemID", v[2]);
 					end
@@ -4108,7 +4125,10 @@ local function SearchForLink(link)
 				end
 
 				-- Search for the item ID.
-				_ = SearchForField("itemID", itemID);
+				-- print("link-search",itemID,modID)
+				_ = ((tonumber(modID) or 1) > 1) and SearchForField("itemID", tostring(itemID) .. ":" .. modID)
+					or SearchForField("itemID", itemID);
+				-- print("found",_ and #_)
 				if _ and modID and modID ~= "" then
 					modID = tonumber(modID or "1");
 					if modID == 35 then modID = 23; end
@@ -4149,7 +4169,10 @@ local function SearchForLink(link)
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
 		--print(kind, id, paramA, paramB);
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
-		if kind == "itemid" then
+		if kind == "itemid" and paramA then
+			-- print("search",id .. ":" .. paramA)
+			return SearchForField("itemID", id .. ":" .. paramA);
+		elseif kind == "itemid" then
 			return SearchForField("itemID", id);
 		elseif kind == "sourceid" or kind == "s" then
 			return SearchForField("s", id);
@@ -9362,7 +9385,6 @@ UpdateGroup = function(parent, group, defaultVisibility)
 					group.visible = true;
 					-- if this group is visible ensure parent is also visible
 					parent.visible = 1;
-				-- If this group is trackable, then we should show it.
 				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
 					group.visible = true;
 				elseif group.trackable and app.ShowIncompleteThings(group) then
@@ -10267,15 +10289,12 @@ function app:CreateMiniListForGroup(group)
 				local GroupFilter = app.GroupFilter;
 				local GroupVisibilityFilter = app.GroupVisibilityFilter;
 				local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
-				local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
 				app.GroupFilter = app.NoFilter;
 				app.GroupVisibilityFilter = app.NoFilter;
-				app.CollectedItemVisibilityFilter = app.NoFilter;
 				app.CollectedItemVisibilityFilter = app.NoFilter;
 				oldUpdate(self, ...);
 				app.GroupFilter = GroupFilter;
 				app.GroupVisibilityFilter = GroupVisibilityFilter;
-				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 			end;
 		elseif (group.key == "questID" and group.questID) or group.sourceQuests then
