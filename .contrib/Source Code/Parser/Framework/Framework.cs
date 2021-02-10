@@ -471,7 +471,7 @@ namespace ATT
                         switch (c[0].ToString())
                         {
                             case "i":
-                                itemID = Convert.ToInt32(c[1]);
+                                itemID = Convert.ToInt32(c[1]?.ToString()?.Split(':')[0]);
                                 if (itemID > MAX_ITEMID) cost.RemoveAt(i);
                                 else
                                 {

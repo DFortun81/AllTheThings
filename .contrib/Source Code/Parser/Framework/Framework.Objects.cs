@@ -1172,6 +1172,17 @@ namespace ATT
                 {
                     // Convert the old data to a list of objects.
                     oldList = oldData as List<object>;
+
+                    // a non-array item
+                    if (oldList == null)
+                    {
+                        // TODO: tons of spam due to 'lvl' right now... maybe re-introduce at a later time when all 'lvl is cleaned up
+                        //item[field] = oldList = new List<object>() { oldData };
+                        //Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(item));
+
+                        // Create a new list since the incoming data is bad
+                        item[field] = oldList = new List<object>();
+                    }
                 }
                 else
                 {
@@ -1740,8 +1751,8 @@ namespace ATT
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                     if (costType == "i")
                     {
-                        int itemID = Convert.ToInt32(cost[1]);
-                        Items.MarkItemAsReferenced(itemID);
+                        // suport raw strings in the format of "itemID:modID" as well
+                        Items.MarkItemAsReferenced(Convert.ToInt32(cost[1]?.ToString()?.Split(':')[0]));
                     }
                 }
 
