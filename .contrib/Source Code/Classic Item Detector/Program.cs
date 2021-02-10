@@ -170,7 +170,7 @@ namespace Classic_Item_Detector
             {
                 return Convert.ToInt32(idRef);
             }
-            return 0;
+            return -1;
         }
 
         static int ConvertItemSubClass(object container)
@@ -179,7 +179,7 @@ namespace Classic_Item_Detector
             {
                 return Convert.ToInt32(idRef);
             }
-            return 0;
+            return -1;
         }
 
         static int ConvertItemQuality(object container)
@@ -379,12 +379,12 @@ namespace Classic_Item_Detector
                     if (classicData.TryGetValue("item_class", out r))
                     {
                         var itemClass = ConvertItemClass(r);
-                        if (itemClass > 0) data["class"] = itemClass;
+                        if (itemClass > -1) data["class"] = itemClass;
                     }
                     if (classicData.TryGetValue("item_subclass", out r))
                     {
                         var itemSubClass = ConvertItemSubClass(r);
-                        if (itemSubClass > 0) data["subclass"] = itemSubClass;
+                        if (itemSubClass > -1) data["subclass"] = itemSubClass;
                     }
 
 
