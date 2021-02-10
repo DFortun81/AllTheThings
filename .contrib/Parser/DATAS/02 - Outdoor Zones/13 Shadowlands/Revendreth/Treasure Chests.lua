@@ -7,6 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-212, {	-- Treasure Chest
+				i(180866),	-- Gilded Wader (looks like this may just be an overall shared drop from treasures.  i got it from the Bleakwood Chest, there is drop data for it from Stoneborn Satchel, someone says they got it from the Venthyr Greed's Desire... so far only history from Revendreth/Bastion but it may come from other zones as well.  TODO: check back to see if this needs to be put in other zones)
 				o(353232, {	-- Bleakwood Chest
 					["questID"] = 60665,
 					["isDaily"] = true,	-- repeatable??

@@ -2540,15 +2540,15 @@ app.L = {
 		[-1433950] = "Anima Crystal Shard",										-- Anima Crystal Shard
 
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
-		[-1433951] = "Broken Mirror",											-- Broken Mirror
-		[-1433952] = "Broken Mirror",											-- Broken Mirror
-		[-1433953] = "Broken Mirror",											-- Broken Mirror
-		[-1433954] = "Broken Mirror",											-- Broken Mirror
-		[-1433955] = "Broken Mirror",											-- Broken Mirror
-		[-1433956] = "Broken Mirror",											-- Broken Mirror
-		[-1433957] = "Broken Mirror",											-- Broken Mirror
-		[-1433958] = "Broken Mirror",											-- Broken Mirror
-		[-1433959] = "Broken Mirror",											-- Broken Mirror
+		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
+		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
+		[-1433953] = "Broken Mirror A-3",										-- Broken Mirror
+		[-1433954] = "Broken Mirror B-1",										-- Broken Mirror
+		[-1433955] = "Broken Mirror B-2",										-- Broken Mirror
+		[-1433956] = "Broken Mirror B-3",										-- Broken Mirror
+		[-1433957] = "Broken Mirror C-1",										-- Broken Mirror
+		[-1433958] = "Broken Mirror C-2",										-- Broken Mirror
+		[-1433959] = "Broken Mirror C-3",										-- Broken Mirror
 	};
 
 	-- Descriptions which are common to a common NPCID

@@ -287,6 +287,7 @@ _.Zones =
 					["sourceQuests"] = { 61559 },	-- A Mourneblade Born
 					["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
 					["coord"] = { 39.8, 68.0, 1670 },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning

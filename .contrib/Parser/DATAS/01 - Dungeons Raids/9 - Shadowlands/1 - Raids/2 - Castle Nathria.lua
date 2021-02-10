@@ -325,7 +325,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
-					["crs"] = { 168938 },	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -673,7 +676,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
-					["crs"] = { 168938 },	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1021,7 +1027,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
-					["crs"] = { 168938 },	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1378,7 +1387,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2424, {	-- Sire Denathrius
-					["crs"] = { 168938 },	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
