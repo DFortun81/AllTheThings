@@ -3659,8 +3659,8 @@ _.HiddenQuestTriggers =
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
-		q(63178),	-- triggered when using the cypher while on "Rule 6: Concealment is Everything"
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
+		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
 		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters

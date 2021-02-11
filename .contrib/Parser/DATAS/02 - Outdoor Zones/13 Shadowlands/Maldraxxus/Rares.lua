@@ -133,6 +133,10 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182192),	-- Knee-Obstructing Legguards
+						i(174070, {	-- Indomitable Hide
+							["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
+							["questID"] = 58379,
+						}),
 					},
 				}),
 				n(174108, { -- Necromantic Anomaly

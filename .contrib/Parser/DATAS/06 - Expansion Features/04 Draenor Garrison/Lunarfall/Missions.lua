@@ -441,10 +441,12 @@ _.ExpansionFeatures =
 							i(118475),	-- Hearthstone Strategy Guide
 							i(114822),	-- Heavily Reinforced Armor Enhancement
 							i(128313),	-- Huge Ogre Cache
+							i(128315),	-- Medallion of the Legion
 							i(114131),	-- Power Overrun Weapon Enhancement
 							i(122594),	-- Rush Order: Tailoring Emporium
 							i(114616),	-- War Ravaged Weaponry
 							i(120302),	-- Weapon Enhancement Token
+							i(122584),	-- Winning with Wildlings
 						},
 					}),
 					n(94399, {	-- Fleet Command Table
