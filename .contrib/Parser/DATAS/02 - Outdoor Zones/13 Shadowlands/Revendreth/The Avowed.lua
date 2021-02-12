@@ -86,7 +86,7 @@ _.Zones =
 								}),
 								n(156918, {	-- Inquisitor Otilia
 									["description"] = "Requires |cff18bb0aInquisitor Otilia's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,	-- 
+								--	["questID"] = ,	--
 									["isDaily"] = true,
 									["coord"] = { 64.8, 46.6, 1525 },
 									["g"] = {
@@ -98,7 +98,7 @@ _.Zones =
 								}),
 								n(156919, {	-- Inquisitor Petre
 									["description"] = "Requires |cff18bb0aInquisitor Petre's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,	-- 
+								--	["questID"] = ,	--
 									["isDaily"] = true,
 									["coord"] = { 67.2, 43.6, 1525 },
 									["g"] = {
@@ -110,7 +110,7 @@ _.Zones =
 								}),
 								n(156916, {	-- Inquisitor Sorin
 									["description"] = "Requires |cff18bb0aInquisitor Sorin's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,	-- 
+								--	["questID"] = ,	--
 									["isDaily"] = true,
 									["coord"] = { 69.6, 47.6, 1525 },
 									["g"] = {
@@ -151,7 +151,6 @@ _.Zones =
 										i(184214),	-- Chained Manacles
 										i(184215),	-- Depraved Houndmasster's Grips
 										i(184216),	-- Stoneborn Bodyguard's Shoulderplate
-										
 									},
 								}),
 								n(159155, {	-- High Inquisitor Dacian
@@ -203,7 +202,6 @@ _.Zones =
 										}),
 										i(180499),	-- High Inquisitor's Cloak of Fanaticism
 										i(173001),	-- High Inquisitor Radu's Sinstone (so the item is associated with the rare)
-			
 									},
 								}),
 							}),

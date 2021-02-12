@@ -427,8 +427,8 @@ _.ExpansionFeatures =
 						["coord"] = { 52.4, 38.4, 1698 },
 						["isWeekly"] = true,
 					}),
-				
-					
+
+
 					-- Covenant Intro
 					q(59556, {	-- Welcome To Our House
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
@@ -541,7 +541,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["sourceQuests"] = { 62694 },	-- A Calling in Maldraxxus
 					}),
-					
+
 					-- Renown 5
 					-- House of Eyes
 					q(59555, {	-- Enemy at the Door
@@ -572,7 +572,7 @@ _.ExpansionFeatures =
 					q(61230, {	-- Outside Influence
 						["coord"] = { 50.0, 17.9, 1536 },
 						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							57649,	-- Whisper of Hope
 							59265,	-- Prying Eyes
 						},	-- Eyes on the Problem
@@ -605,7 +605,7 @@ _.ExpansionFeatures =
 					q(61323, {	-- See What You've Done
 						["coord"] = { 49.9, 17.8, 1536 },
 						["provider"] = { "n", 158529 },	-- Whisperer Vyn
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							61335,	-- Rage Against the Cage
 							57644,	-- No Friend Left Behind
 							61252,	-- Call In a Favor
@@ -621,7 +621,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
 						["sourceQuests"] = { 57648, }	-- The Impossible Plan
 					}),
-					
+
 					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
 					q(62169, {	-- Eyes to the Sky
 						["sourceQuests"] = { 57648, },	-- The Impossible Plan
@@ -698,7 +698,7 @@ _.ExpansionFeatures =
 							i(182284),	-- Bladesworn Tactician's Bracers
 							i(182266),	-- Bladesworn Wraith's Armguards
 						},
-					}),					
+					}),
 
 					-- Chapter 5 (Do Not Forget), requires Renown 11
 					q(59625, {	-- The Only Cure
@@ -818,7 +818,7 @@ _.ExpansionFeatures =
 						["coord"] = { 33.5, 24.1, 1536 },
 					}),
 					q(61180, {	-- Burn Before Reading
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							61396,	-- Dark Developments
 							60043,	-- Justice from Above
 							59916,	-- The Butchers of Bastion
@@ -827,7 +827,7 @@ _.ExpansionFeatures =
 						["coord"] = { 35.2, 26.9, 1536 },
 					}),
 					q(60510, {	-- Descended
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							61396,	-- Dark Developments
 							60043,	-- Justice from Above
 							59916,	-- The Butchers of Bastion
@@ -837,7 +837,7 @@ _.ExpansionFeatures =
 						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
 					}),
 					q(61412, {	-- An Early End
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							61396,	-- Dark Developments
 							60043,	-- Justice from Above
 							59916,	-- The Butchers of Bastion
@@ -846,7 +846,7 @@ _.ExpansionFeatures =
 						["coord"] = { 35.3, 25.9, 1536 },
 					}),
 					q(60050, {	-- Trouble on the Western Front
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							61412,	-- An Early End
 							61180,	-- Burn Before Reading
 							60510,	-- Descended
@@ -870,7 +870,7 @@ _.ExpansionFeatures =
 						["coord"] = { 28.1, 37.5, 1536 },
 					}),
 					q(61246, {	-- Power of the Chosen
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							60114,	-- Aerial Advantage
 							60044,	-- Charging The Blade
 							61567,	-- Grave Intent
@@ -969,11 +969,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.8, 50.6, 1698 },
 					}),
-					
+
 					-- Chapter 8 (The House of Rituals), requires Renown 20
 					q(61739, {	-- The Wayward Baron
 						["description"] = "Requires Renown 20.",
-						-- ["sourceQuests"] = {  },	-- 
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 173172 },	-- Balmedar
 						["coord"] = { 49.7, 49.8, 1698 },	-- Seat of the Primus
 					}),
@@ -1008,7 +1008,7 @@ _.ExpansionFeatures =
 					}),
 					q(62297, {	-- A Fatal Failure
 						["sourceQuests"] = { 61742 },	-- A Fitting Guise
-						["provider"] = { "n", 174020 },	-- 
+						["provider"] = { "n", 174020 },	--
 						["coord"] = { 70.4, 27.7, 1536 },	-- Maldraxxus
 						["g"] = {
 							i(183394, {	-- Discarded Grimoire
@@ -1098,7 +1098,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							61750,	-- Heart of the Forest
 							61751,	-- Cage Free Spores
-						},	-- 
+						},
 						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
 						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
 						["g"] = {
@@ -1254,21 +1254,21 @@ _.ExpansionFeatures =
 							["coord"] = { 55.0, 68.8, 1536 },
 							["g"] = {
 								i(182078, {	-- Bonesewn Fleshroc (MOUNT!)
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 178061, 50 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
 										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
 									},
 								}),
 								i(181268, {	-- Backbone (PET!)
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 178061, 5 },	-- Malleable Flesh
 										{ "i", 172092, 1 },	-- Pallid Bone
 										{ "c", 1813, 750 },	-- 750x Anima (not shown in-game)
 									},
 								}),
 								i(181282, {	-- Mu'dud (PET!)
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 178061, 10 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
 										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
@@ -1509,7 +1509,7 @@ _.ExpansionFeatures =
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58686, {	-- Weapon of Mass Construction
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										58680,	-- Loose Threads
 										58677,	-- Skin in the Game
 									},
@@ -1792,7 +1792,7 @@ _.ExpansionFeatures =
 						-- Tier 2: A Keep Above
 							q(60184, {	-- Dude, Where's My Necropolis?
 								-- appears after chapter 4 questline complete, may be breadcrumb for Tier 2 Transport Network?
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									58820,	-- Bindings of Fleshcrafting
 									-- 63059,	-- Blink of an Eye -- I can pick this up without having the Transport network Tier 1 Researched
 								},
@@ -1875,7 +1875,7 @@ _.ExpansionFeatures =
 						["coord"] = { 55.2, 68.4, 1536 },
 						["g"] = {
 							i(184303, {	-- Arsenal: Stitchmasters' Weapons
-								["cost"] = { 
+								["cost"] = {
 									{ "i", 184304, 750 },
 									{ "c", 1813, 1000 },
 								},
@@ -2272,78 +2272,78 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 100 } },
 							}),
 							i(184665, {	-- Chronicle of Lost Memories
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1885, 35 },
 								},
 							}),
 							i(183451, {	-- Goreforged Barrier
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183456, {	-- Goreforged Blunderbuss
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183946, {	-- Goreforged Chopper
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183459, {	-- Goreforged Cleaver
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183452, {	-- Goreforged Focus
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183457, {	-- Goreforged Greataxe
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183453, {	-- Goreforged Mace
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183458, {	-- Goreforged Polearm
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183450, {	-- Goreforged Shank
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183460, {	-- Goreforged Sickle
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183455, {	-- Goreforged Staff
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(183454, {	-- Goreforged Warglaive
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 10 },
 								},
@@ -2357,13 +2357,13 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(181815, {	-- Armored Bonehoof Tauralus (MOUNT)
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 5000 },
 									{ "c", 1885, 100 },
 								},
 							}),
 							i(181821, {	-- Armored Plaguerot Tauralus (MOUNT)
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 100 },
 									{ "c", 1885, 50 },
 								},
@@ -2375,7 +2375,7 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 2500 } },
 							}),
 							i(183601, {	-- Jiggles (PET)
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 30 },
 								},
@@ -2386,289 +2386,289 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 750 } },
 							}),
 							i(184071, {	-- Blooddoused Aranakk Polearm
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184072, {	-- Brutal Fury-Forged Cleaver
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184074, {	-- Chopper of the Hidden Hand
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184070, {	-- Colossal Greataxe of Pandemonium
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184073, {	-- Crooked Plaguedtouched Dagger
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184064, {	-- Deathforged Bulwark of Maldraxxus
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184068, {	-- Greatstaff of the Lichsworn
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184065, {	-- Lambent Plaguetouched Focux
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(181805, {	-- Osteowings of the Necrolords
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 40 },
 								},
 							}),
 							i(182239, {	-- Prime Conjurer's Cape
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(182237, {	-- Prime Conjurer's Cinch
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182231, {	-- Prime Conjurer's Cowl
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182234, {	-- Prime Conjurer's Gloves
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182235, {	-- Prime Conjurer's Leggings
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182236, {	-- Prime Conjurer's Mantle
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182233, {	-- Prime Conjurer's Slippers
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182232, {	-- Prime Conjurer's Tunic
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182238, {	-- Prime Conjurer's Wristwraps
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182214, {	-- Prime Harbinger's Chestguard
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182216, {	-- Prime Harbinger's Crushers
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182221, {	-- Prime Harbinger's Greatcloak
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(182213, {	-- Prime Harbinger's Greathelm
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182217, {	-- Prime Harbinger's Greaves
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182218, {	-- Prime Harbinger's Pauldrons
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182215, {	-- Prime Harbinger's Stompers
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182220, {	-- Prime Harbinger's Vambraces
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182219, {	-- Prime Harbinger's Warbelt
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182247, {	-- Prime Tactician's Bracers
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182244, {	-- Prime Tactician's Chausses
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182248, {	-- Prime Tactician's Drape
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(182240, {	-- Prime Tactician's Faceguard
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182243, {	-- Prime Tactician's Gauntlets
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182246, {	-- Prime Tactician's Girdle
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182241, {	-- Prime Tactician's Hauberk
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182242, {	-- Prime Tactician's Sabatons
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182245, {	-- Prime Tactician's Spaulders
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182229, {	-- Prime Wraith's Armguards
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182228, {	-- Prime Wraith's Belt
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182226, {	-- Prime Wraith's Breeches
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3000 },
 									{ "c", 1885, 25 },
 								},
 							}),
 							i(182224, {	-- Prime Wraith's Boots
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182230, {	-- Prime Wraith's Cloak
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 10 },
 								},
 							}),
 							i(182223, {	-- Prime Wraith's Jerkin
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182227, {	-- Prime Wraith's Shoulders
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(182225, {	-- Prime Wraith's Stranglers
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 2000 },
 									{ "c", 1885, 15 },
 								},
 							}),
 							i(182222, {	-- Prime Wraith's Visage
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 4000 },
 									{ "c", 1885, 30 },
 								},
 							}),
 							i(184063, {	-- Shank of the Unseen Eye
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184067, {	-- Skullformed Ossein Warglaive
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
 							}),
 							i(184069, {	-- Soulbarb, the Breathless Kill
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
@@ -2677,7 +2677,7 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
 							i(184066, {	-- Wriggling Soulcharged Mace
-								["cost"] = { 
+								["cost"] = {
 									{ "c", 1813, 3500 },
 									{ "c", 1885, 50 },
 								},
