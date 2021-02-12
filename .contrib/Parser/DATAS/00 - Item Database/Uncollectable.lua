@@ -117,6 +117,7 @@ i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
 i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
+i(180661);	-- Darktower Parchments: Affliction Most Foul
 i(180660);	-- Darktower Parchments: Instant Polymorphist
 i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
