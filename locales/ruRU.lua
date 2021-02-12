@@ -1153,15 +1153,15 @@ for key,value in pairs({
 				[-1433950] = "Осколок кристалла анимы",				-- Anima Crystal Shard
 
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433952] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433953] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433954] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433955] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433956] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433957] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433958] = "Разбитое зеркало",					-- Broken Mirror
-				[-1433959] = "Разбитое зеркало",					-- Broken Mirror
+				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror
+				[-1433952] = "Разбитое зеркало A-2",				-- Broken Mirror
+				[-1433953] = "Разбитое зеркало A-3",				-- Broken Mirror
+				[-1433954] = "Разбитое зеркало B-1",				-- Broken Mirror
+				[-1433955] = "Разбитое зеркало B-2",				-- Broken Mirror
+				[-1433956] = "Разбитое зеркало B-3",				-- Broken Mirror
+				[-1433957] = "Разбитое зеркало C-1",				-- Broken Mirror
+				[-1433958] = "Разбитое зеркало C-2",				-- Broken Mirror
+				[-1433959] = "Разбитое зеркало C-3",				-- Broken Mirror
 })
 do a[key] = value; end
 
