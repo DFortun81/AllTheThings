@@ -1751,8 +1751,8 @@ namespace ATT
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                     if (costType == "i")
                     {
-                        // suport raw strings in the format of "itemID:modID" as well
-                        Items.MarkItemAsReferenced(Convert.ToInt32(cost[1]?.ToString()?.Split(':')[0]));
+                        // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
+                        Items.MarkItemAsReferenced(decimal.ToInt32(Convert.ToDecimal(cost[1])));
                     }
                 }
 

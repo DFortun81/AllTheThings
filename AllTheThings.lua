@@ -1232,6 +1232,42 @@ local function GetRelativeValue(group, field)
 		if group.parent then return GetRelativeValue(group.parent, field); end
 	end
 end
+-- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100
+-- or converts a raw ItemID/ModID into the combined modItemID value
+-- Ex. 12345 (ModID 5) => 12345.05
+-- Ex. 87654 (ModID 23)=> 87654.23
+local function GetGroupItemIDWithModID(group, rawItemID, rawModID)
+	if group and group.itemID then
+		if group.modID and group.modID > 0 then
+			return group.itemID + (group.modID / 100);
+		else
+			return group.itemID;
+		end
+	elseif tonumber(rawItemID) then
+		-- print("modItemID-raw",rawItemID,rawModID,(tonumber(rawItemID) or 0) + ((tonumber(rawModID) or 0) / 100))
+		return (tonumber(rawItemID) or 0) + ((tonumber(rawModID) or 0) / 100);
+	end
+end
+-- Returns the ItemID, ModID of the provided ModItemID
+-- Ex. 12345.05		=> 12345, 5
+-- Ex. 87654.23		=> 87654, 23
+local function GetItemIDAndModID(modItemID)
+	if modItemID and tonumber(modItemID) then
+		local itemID = math.floor(modItemID);
+		return itemID, 100 * (modItemID - itemID);
+	end
+end
+local function GroupMatchesParams(group, key, value, ignoreModID)
+	if not group then return false; end
+	if key == "itemID" then
+		if ignoreModID then
+			value = GetItemIDAndModID(value);
+		end
+		return group.modItemID == value;
+	end
+	-- exact specific match for other keys
+	if group[key] == value then return true; end
+end
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
 	if specs then
@@ -2432,14 +2468,14 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local progress = 0;
 	-- using pairs since some index values may get set to nil prior to this
 	for i,group in pairs(groups) do
-		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
+		-- print(group.hash,group.key,group[group.key],group.modItemID,group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- dont list itself under Contains
 		-- if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 			if app.RecursiveGroupRequirementsFilter(group) then
 				-- print("display")
 				local right = nil;
-				if group.total and (group.collectible and group.total > 1 or group.total > 0) then
+				if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
 					total = total + group.total;
 					progress = progress + (group.progress or 0);
 					if app.GroupVisibilityFilter(group) then
@@ -2726,11 +2762,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, difficultyID, numBonusIds = strsplit(":", itemString);
+					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
 					if itemID2 then
 						itemID = tonumber(itemID2);
 						paramA = "itemID";
-						paramB = itemID;
+						paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
 					end
 					if #group > 0 then
 						for i,j in ipairs(group) do
@@ -3102,13 +3138,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			-- Find or Create the root group for the search results
 			local root;
+			-- print("Find Root for",paramA,paramB);
 			for i,o in ipairs(group) do
 				-- If the obj "is" the root obj
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if o.key == paramA and o[o.key] == paramB then
+				if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
+				-- if (o.key == paramA and (o.modItemID or o[o.key]) == paramB) then
 					-- object meets filter criteria and is exactly what is being searched
 					if app.RecursiveGroupRequirementsFilter(o) then
-						-- print("Create Filtered root",o.key,o[o.key]);
+						-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
 						if root then
 							local otherRoot = root;
 							-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
@@ -3118,7 +3156,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							root = o;
 						end
 					else
-						-- print("Create Unfiltered root",o.key,o[o.key]);
+						-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
 						if not root then root = o
 						else MergeProperties(root, o); end
 					end
@@ -3127,16 +3165,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if not root then root = CreateObject({ [paramA] = paramB }); end
 			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
 			paramA, paramB = root.key, root[root.key];
-			-- print("Root",root.key,root[root.key]);
+			-- Special Case for itemID, need to use the modItemID for accuracy in item matching
+			if paramA == "itemID" then
+				paramB = root.modItemID or paramB;
+			end
+			-- print("Root",root.key,root[root.key],root.modItemID);
 			-- print("Root Collect",root.collectible,root.collected);
 			-- print("params",paramA,paramB);
 			if not root.g then root.g = {}; end
 			-- Loop through all obj found for this search
 			-- print(#group,"Search total");
 			for i,o in ipairs(group) do
-				-- If the obj "is" the root obj
-				if o.key == paramA and o[o.key] == paramB then
-					-- print("Merge root",o.key,o[o.key]);
+				-- If the obj "is" the root obj via bi-directional key
+				-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+				-- if GroupMatchesParams(o, paramA, paramB) then
+				-- if (o.key == paramA and o[o.key] == paramB) then
+					-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
 					MergeProperties(root, o);
 					-- Merge the g of the obj into the merged results
 					if o.g then
@@ -3194,7 +3239,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			-- Single group which matches the root, then collapse it
-			if #root.g == 1 and root.g[1][paramA] == paramB then
+			if #root.g == 1 and GroupMatchesParams(root.g[1], paramA, paramB) then
 				-- print("Single group")
 				root = root.g[1];
 			end
@@ -3313,9 +3358,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.BuildCrafted(group);
 
 			-- Expand any things requiring this group if this group does not already have sub-groups
-			if not group.g then
-				app.ExpandSubGroups(group);
-			end
+			-- if not group.g then
+			app.ExpandSubGroups(group);
+			-- end
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
@@ -3611,23 +3656,23 @@ end
 app.ExpandSubGroups_IncludedItems = {};
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group)
 app.ExpandSubGroups = function(item)
-	local itemID = item.itemID;
-	if not itemID or not item.g then return; end
+	local itemID = item.modItemID or item.itemID;
+	if not itemID or itemID < 1 or not item.g then return; end
 	
 	-- print("ExpandSubGroups",itemID);
 	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
 		-- track the starting item
 		tinsert(app.ExpandSubGroups_IncludedItems, itemID);
-		local count, subItemID = #item.g;
+		local count, modItemID, clone = #item.g;
 		-- only loop thru existing items in case somehow more show up
 		for i=1,count do
 			-- only expand sub-items
-			subItemID = item.g[i].itemID;
-			if subItemID then
-				-- print("Search sub",subItemID)
+			local sub = item.g[i];
+			if sub.itemID then
+				modItemID = GetGroupItemIDWithModID(sub);
+				-- print("Search sub",modItemID)
 				-- find a reference to the item in the DB and add it to the group
-				local clone = (not item.modID or item.modID < 2) and GetCachedSearchResults("itemID:" .. tostring(subItemID), app.SearchForField, "itemID", subItemID)
-							or GetCachedSearchResults("itemID:" .. tostring(subItemID) .. tostring(item.modID), app.SearchForField, "itemID", subItemID)
+				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)				
 				if clone then
 					if not clone.g then
 						clone.total = nil;
@@ -3636,7 +3681,7 @@ app.ExpandSubGroups = function(item)
 
 					-- merge the expanded group into the table of expanded groups
 					-- if MergeObject continues to require clearing the sub-g group, then just use tinsert i guess
-					-- print("Merge expanded",subItemID)
+					-- print("Merge expanded",modItemID)
 					-- app.PrintGroup(clone);
 					MergeObject(item.g, clone);
 				end
@@ -3703,14 +3748,15 @@ app.HasCost = function(group, idType, id)
 	if not (idType == "itemID" or idType == "currencyID") then return false; end
 	-- group doesn't have a valid cost at all
 	if not group.cost or type(group.cost) ~= "table" then return false; end
-	local idStr, split = tostring(id);
+	-- print("HasCost",group,idType,id)
+	-- local idStr, split = tostring(id);
 	for i,c in ipairs(group.cost) do
 		if ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then
 			-- return true if exact cost is found
 			if c[2] == id then return true; end
 			-- cost itemID can also be a string, so check the first portion if it matches
-			split = strsplit(":",c[2]);
-			if split == idStr then return true; end
+			-- split = strsplit(":",c[2]);
+			-- if split == idStr then return true; end
 		end
 	end
 end
@@ -3847,15 +3893,16 @@ fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value)
-		-- TODO: when modID eventually gets all fixed to be accurate to in-game, adjust this logic
-		if not group.modID or group.modID < 2 then
-			CacheField(group, "itemID", value);
-		else
-			-- cache items with modID differently so that we can use modID items as lookups to their proper results
-			-- print("mitemID-cache",value,group.modID)
-			CacheField(group, "itemID", tostring(value) .. ":" .. tostring(group.modID));
-		end
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
+		-- TODO: when modID eventually gets all fixed to be accurate to in-game, adjust this logic
+		-- if not group.modID or group.modID < 2 then
+		-- cache with the modID as a decimal
+		CacheField(group, "itemID", GetGroupItemIDWithModID(group) or value);
+		-- else
+		-- 	-- cache items with modID differently so that we can use modID items as lookups to their proper results
+		-- 	-- print("mitemID-cache",value,group.modID)
+		-- 	CacheField(group, "itemID", tostring(value) .. ":" .. tostring(group.modID));
+		-- end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -3954,10 +4001,7 @@ fieldConverters = {
 			return;
 		else
 			for k,v in pairs(value) do
-				-- cost can be an "itemID:modID" string instead of raw value to support modID requirement of the item
-				if v[1] == "i" and not tonumber(v[2]) then
-					CacheField(group, "itemID", v[2]);
-				elseif v[1] == "i" and v[2] > 0 then
+				if v[1] == "i" and v[2] > 0 then
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
 						CacheField(group, "itemID", v[2]);
 					end
@@ -4125,9 +4169,9 @@ local function SearchForLink(link)
 				end
 
 				-- Search for the item ID.
-				-- print("link-search",itemID,modID)
-				_ = ((tonumber(modID) or 1) > 1) and SearchForField("itemID", tostring(itemID) .. ":" .. modID)
-					or SearchForField("itemID", itemID);
+				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
+				-- print("link-search",modItemID,itemID)
+				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 				-- print("found",_ and #_)
 				if _ and modID and modID ~= "" then
 					modID = tonumber(modID or "1");
@@ -4169,10 +4213,7 @@ local function SearchForLink(link)
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
 		--print(kind, id, paramA, paramB);
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
-		if kind == "itemid" and paramA then
-			-- print("search",id .. ":" .. paramA)
-			return SearchForField("itemID", id .. ":" .. paramA);
-		elseif kind == "itemid" then
+		if kind == "itemid" then
 			return SearchForField("itemID", id);
 		elseif kind == "sourceid" or kind == "s" then
 			return SearchForField("s", id);
@@ -5911,6 +5952,10 @@ app.BaseArtifact = {
 			elseif t.parent and t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
 				return GetRelativeValue(t.parent, "itemID");
 			end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "s" then
 			local s = t.silentLink;
 			if s then
@@ -6864,6 +6909,10 @@ app.BaseGearSource = {
 				rawset(t, "itemID", info.itemID);
 				return info.itemID;
 			end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "text" then
 			return select(2, GetItemInfo(t.itemID));
 		elseif key == "link" then
@@ -7094,8 +7143,12 @@ app.BaseHeirloom = {
 					end
 				end
 			end
-		elseif key == "modID" then
-			return 1;
+		-- elseif key == "modID" then
+		-- 	return 1;
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "b" then
 			return 2;
 		elseif key == "text" then
@@ -7292,6 +7345,10 @@ app.BaseIllusion = {
 					return link;
 				end
 			end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "silentLink" then
 			return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
 		elseif key == "icon" then
@@ -7426,9 +7483,11 @@ local itemFields = {
 					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			else
-				bonusID = rawget(t, "modID") or 1;
+				bonusID = t.modID;
 				if bonusID then
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			end
 			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
@@ -7456,8 +7515,13 @@ local itemFields = {
 			end
 		end
 	end,
-	["modID"] = function(t)
-		return 1;
+	-- ["modID"] = function(t)
+	-- 	return 1;
+	-- end,
+	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+		return rawget(t, "modItemID");
 	end,
 	["name"] = function(t)
 		local link = t.link;
@@ -7513,6 +7577,11 @@ local appearanceFields = {
 	["collected"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
 	end,
+	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+		return rawget(t, "modItemID");
+	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
@@ -7524,9 +7593,11 @@ local appearanceFields = {
 					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			else
-				bonusID = rawget(t, "modID") or 1;
+				bonusID = t.modID;
 				if bonusID then
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			end
 			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
@@ -7685,6 +7756,11 @@ app.BaseMount = {
 
 			local mountID = temp[t.spellID];
 			if mountID then return mountID; end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			-- mounts ignore modID even if applied in source
+			rawset(t, "modItemID", t.itemID);
+			return rawget(t, "modItemID");
 		elseif key == "name" then
 			local mountID = t.mountID;
 			if mountID then return C_MountJournal_GetMountInfoByID(mountID); end
@@ -7731,6 +7807,10 @@ app.BaseMusicRoll = {
 				t.icon = icon;
 				return link;
 			end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "description" then
 			local description = L["MUSIC_ROLLS_DESC"];		-- L["MUSIC_ROLLS_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected."
 			if not IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
@@ -8300,6 +8380,10 @@ app.BaseRecipe = {
 			return t.requireSkill;
 		elseif key == "b" then
 			return t.itemID and app.AccountWideRecipes and 2;
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+			return rawget(t, "modItemID");
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -8488,6 +8572,10 @@ app.BaseSpecies = {
 					return link;
 				end
 			end
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			return rawget(t, "modItemID");
 		elseif key == "tsm" then
 			return string.format("p:%d:1:3", t.speciesID);
 		else
@@ -8680,6 +8768,11 @@ app.BaseToy = {
 			return C_ToyBox_GetToyLink(t.itemID);
 		elseif key == "icon" then
 			return select(3, C_ToyBox_GetToyInfo(t.itemID));
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		elseif key == "modItemID" then
+			-- toys don't use modIDs
+			rawset(t, "modItemID", t.itemID);
+			return rawget(t, "modItemID");
 		elseif key == "name" then
 			return select(2, C_ToyBox_GetToyInfo(t.itemID));
 		elseif key == "tsm" then
@@ -14670,6 +14763,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
 							skillCache[spellRecipeInfo.recipeID] = { {} };
 						end
+						-- TODO: Abom Stitching lvl 3 Table causes an error here I think, likely because no actual Item is being created?
 						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
 						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
 							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);

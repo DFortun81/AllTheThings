@@ -2989,7 +2989,7 @@ _.Zones =
 									--["cost"] = { { "x", yyyy, zzzz } },
 								}),
 								i(182416, {	-- Claws of the Stone Generals
-									["cost"] = { { "i", "183891:4", 1 } },	-- LFR Venerated Anima Spherule
+									["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 								}),
 								i(182414, {	-- Crimson Court Backstabber
 									--["cost"] = { { "x", yyyy, zzzz } },
