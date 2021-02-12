@@ -76,7 +76,7 @@ _.Zones =
 						i(184218, {	-- Vulgarity Arbiter
 							["cost"] = { { "c", 1816, 1000 } },
 						}),
-						n(-949, {	-- Covenant: Venthyr
+						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
 							-- These are only available to Venthyr covenant members
 							i(180940, {	-- Ebony Crypt Keeper's Mantle
 								["cost"] = { { "c", 1816, 500 } },
@@ -84,7 +84,7 @@ _.Zones =
 							i(182954, {	-- Inquisition Gargon
 								["cost"] = { { "c", 1816, 2000 } },
 							}),
-						}),
+						})),
 					},
 				}),
 				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
@@ -134,7 +134,7 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, {	-- Covenant: Necrolord
+						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
 							-- These are only available to Necrolord covenant members
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
@@ -142,7 +142,7 @@ _.Zones =
 							i(181808, {	-- Death Fetish
 								["cost"] = 5000000, -- 500g
 							}),
-						}),
+						})),
 					},
 				}),
 				n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
@@ -187,12 +187,12 @@ _.Zones =
 						i(184727),	-- Courtier's Shoulderguard
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
-						n(-949, {	-- Covenant: Venthyr
+						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
 							-- These are only available to Venthyr covenant members
 							i(183708, {	-- Glittering Gold Sinstone Chain
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
-						}),
+						})),
 					},
 				}),
 				n(156690, {	-- Distributor Au'nagl
@@ -207,18 +207,11 @@ _.Zones =
 						i(180729, {	-- Duskflutter Ardenmoth (MOUNT)
 							["cost"] = 300000000,	-- 30,000g
 						}),
-						i(181309, {	-- Faewoven Pack
-							["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
-						}),
 						i(178336, {	-- Tabard of the Wild Hunt
 							["cost"] = 2500000,	-- 250g
 						}),
 						i(180641, {	-- Floofa
 							["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
-						}),
-						i(182168, {	-- Crane Soul
-							["questID"] = 62424,
-							["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
 						}),
 						i(183093, {	-- Technique: Contract: The Wild Hunt
 							["cost"] = 17650000,	-- 1,765g
@@ -249,6 +242,15 @@ _.Zones =
 						i(184754),	-- Glitterwing Scarf
 						i(184752),	-- Gormscale Leggings
 						i(184753),	-- Tree-Scaler's Britches
+						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
+							i(182168, {	-- Crane Soul
+								["questID"] = 62424,
+								["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
+							}),
+							i(181309, {	-- Faewoven Pack
+								["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
+							}),
+						})),
 					},
 				}),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
