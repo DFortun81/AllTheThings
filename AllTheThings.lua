@@ -3239,9 +3239,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			-- Single group which matches the root, then collapse it
-			if #root.g == 1 and GroupMatchesParams(root.g[1], paramA, paramB) then
-				-- print("Single group")
-				root = root.g[1];
+			if #root.g == 1 then
+				local o = root.g[1];
+				-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+					-- print("Single group")
+					root = o;
+				end
 			end
 
 			-- Replace as the group
@@ -10723,7 +10727,7 @@ local function SetRowData(self, row, data)
 							mods = {};
 							item.mods = mods;
 						end
-						mods[data.modID or 1] = s;
+						mods[data.modID or 0] = s;
 					end
 					-- print("NEW SOURCE ID!",text,s);
 					AllTheThingsHarvestItems[data.itemID] = item;
@@ -13594,7 +13598,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 							tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
 						end
 					else
-						mID = group.modID or 1;
+						mID = group.modID or 0;
 						if not modIDs[mID] then
 							modIDs[mID] = true;
 							if (not VerifySourceID(group)) then
