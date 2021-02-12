@@ -1034,11 +1034,6 @@ local function VerifySourceID(item)
 		print("Inaccurate SourceID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemID,sourceInfo.itemModID);
 		return;
 	end
-	-- ATT modID does not correlate to the TransmogSource ModID!!
-	-- if sourceInfo.itemModID and sourceInfo.itemModID ~= item.modID then
-	-- 	-- print("Item With Bad ModID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemModID);
-	-- 	return;
-	-- end
 	-- check that the group's itemlink still returns the same sourceID as saved in the group
 	if item.link and not item.retries then
 		-- quality below UNCOMMON means no source
@@ -1056,7 +1051,7 @@ local function VerifySourceID(item)
 	-- at this point the game source information matches the information for this item group
 	return true;
 end
-local function GetSourceID(itemLink, itemID)
+local function GetSourceID(itemLink)
 	if IsDressableItem(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
@@ -3242,6 +3237,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #root.g == 1 then
 				local o = root.g[1];
 				-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+				-- TODO: find an example which tests this... may not be possible with above logic
 				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
 					-- print("Single group")
 					root = o;
@@ -10837,7 +10833,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
+		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -13587,6 +13583,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 			local bonusIDs = {};
 			app.MaximumItemInfoRetries = 40;
 			for itemID,groups in pairs(fieldCache["itemID"]) do
+				-- clean any cached modID from the itemID
+				itemID = GetItemIDAndModID(itemID);
 				for i,group in ipairs(groups) do
 					if group.bonusID and not bonusIDs[group.bonusID] then
 						bonusIDs[group.bonusID] = true;
