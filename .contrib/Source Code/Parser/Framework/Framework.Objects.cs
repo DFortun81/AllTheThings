@@ -170,15 +170,15 @@ namespace ATT
                     case 0:
                         switch (itemSubClass)
                         {
-                            case 00: return Filters.Consumable;    // Engineering Items (Explosives / Scopes) (Ignored!)
-                            case 01: return Filters.Consumable;    // Potions (Ignored!)
-                            case 02: return Filters.Consumable;    // Elixirs (Ignored!)
-                            case 03: return Filters.Consumable;    // Flask (Ignored!)
-                            case 05: return Filters.Consumable;    // Food (Ignored!)
-                            case 07: return Filters.Consumable;    // First Aid (Ignored!)
-                            case 08: return Filters.Consumable;    // Consumables (Artifact Power)
-                            case 09: return Filters.Consumable;    // Vantus Runes (Ignored!)
-                            default: return Filters.Consumable;
+                            case 00: return Filters.Ignored;    // Engineering Items (Explosives / Scopes) (Ignored!)
+                            case 01: return Filters.Ignored;    // Potions (Ignored!)
+                            case 02: return Filters.Ignored;    // Elixirs (Ignored!)
+                            case 03: return Filters.Ignored;    // Flask (Ignored!)
+                            case 05: return Filters.Ignored;    // Food (Ignored!)
+                            case 07: return Filters.Ignored;    // First Aid (Ignored!)
+                            case 08: return Filters.Ignored;    // Consumables (Artifact Power)
+                            case 09: return Filters.Ignored;    // Vantus Runes (Ignored!)
+                            default: return Filters.Ignored;
                         }
 
                     // Bags -- Note: This might be pretty cool to add.
