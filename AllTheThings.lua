@@ -8574,7 +8574,7 @@ app.BaseSpecies = {
 			end
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
 		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
 			return rawget(t, "modItemID");
 		elseif key == "tsm" then
 			return string.format("p:%d:1:3", t.speciesID);

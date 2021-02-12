@@ -9,7 +9,6 @@ _.Zones =
 			["achievementID"] = 14305,	-- Explore Maldraxxus
 			["description"] = "Within war-torn Maldraxxus, might —of all kinds— makes right. Here, in the birthplace of necromantic magic, those who master the powers of death turn legions of ambitious souls into relentless undead armies.",
 			["maps"] = {
-				1698,	-- Seat of the Primus
 				1649,	-- Etheric Vault
 				1650,	-- Sightless Hold
 				1651,	-- The Molten Forge
