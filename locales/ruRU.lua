@@ -15,8 +15,8 @@ local L = app.L;
 
 	-- Big new chunk from AllTheThings.lua
 
-	L.PROVIDERS = "Provider(s)";
-	L.COLLECTION_PROGRESS = "Collection Progress";
+	L.PROVIDERS = "Начинает";
+	L.COLLECTION_PROGRESS = "Прогресс Коллекции";
 	L.CONTAINS = "Содержит:";
 	L.FACTIONS = "Фракции";
 	L.COORDINATES_STRING = "Координаты";
