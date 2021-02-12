@@ -3431,7 +3431,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- app.DEBUG_PRINT = nil;
 				if #entries > 0 then
 					-- print("#entries",#entries);
-					tinsert(info, { left = "Contains:" });
+					tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
 					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 					if #entries < containCount + 1 then
 						for i,item in ipairs(entries) do
@@ -11287,7 +11287,7 @@ RowOnEnter = function (self)
 			if reference.total and reference.total >= 2 then
 				-- if collecting this reference type, then show Collection State
 				if reference.collectible then
-					GameTooltip:AddDoubleLine("Collection Progress", GetCollectionText(reference.collected or reference.saved));
+					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));		-- L["COLLECTION_PROGRESS"] = "Collection Progress"
 				-- if completion/tracking is available, show Completion State
 				elseif reference.trackable then
 					GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
@@ -11435,7 +11435,7 @@ RowOnEnter = function (self)
 					local name = GetItemInfo(providerID)
 					providerString = name or 'Item #'..providerID
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
+				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');		-- L["PROVIDERS"] = "Provider(s)"
 				counter = counter + 1;
 			end
 		end
