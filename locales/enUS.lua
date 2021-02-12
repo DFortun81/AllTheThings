@@ -23,6 +23,8 @@ app.L = {
 
 	-- Big new chunk from AllTheThings.lua
 	
+	["PROVIDERS"] = "Provider(s)";
+	["COLLECTION_PROGRESS"] = "Collection Progress";
 	["CONTAINS"] = "Contains:";
 	["FACTIONS"] = "Factions";
 	["COORDINATES_STRING"] = "Coordinates";
