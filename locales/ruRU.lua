@@ -537,11 +537,10 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-	L.CUSTOM_DIFFICULTIES[-1] = "Поиск Рейда (5.4)";
-	L.CUSTOM_DIFFICULTIES[-2] = "Гибкий (5.4)";
-	L.CUSTOM_DIFFICULTIES[-3] = "Обычный (5.4)";
-	L.CUSTOM_DIFFICULTIES[-4] = "Героический (5.4)";
-
+L.CUSTOM_DIFFICULTIES[-1] = "Поиск Рейда (5.4)";
+L.CUSTOM_DIFFICULTIES[-2] = "Гибкий (5.4)";
+L.CUSTOM_DIFFICULTIES[-3] = "Обычный (5.4)";
+L.CUSTOM_DIFFICULTIES[-4] = "Героический (5.4)";
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
@@ -562,7 +561,6 @@ for key,value in pairs({
 	[999] = "Предметы Событий";
 })
 do a[key] = value; end
-
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
@@ -794,6 +792,7 @@ for key,value in pairs({
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
 			[-925] = "1-й уровень: Собери себе друга",				-- Abomination Factory (Necrolord) Tier 1
 			[-926] = "2-й уровень: А теперь добавим ножек",			-- Abomination Factory (Necrolord) Tier 2
+			[-927] = "3-й уровень: Встань и живи",					-- Abomination Factory (Necrolord) Tier 3
 
 		-- SL Ardenweald/Night Fae
 			[-929] = "Ковенант: Ночной Народец",					-- Covenant: Night Fae
@@ -1163,6 +1162,12 @@ for key,value in pairs({
 				[-1433957] = "Разбитое зеркало",					-- Broken Mirror
 				[-1433958] = "Разбитое зеркало",					-- Broken Mirror
 				[-1433959] = "Разбитое зеркало",					-- Broken Mirror
+})
+do a[key] = value; end
+
+local a = L.NPC_ID_DESCRIPTIONS;
+for key,value in pairs({
+	[-34] = "Локальные задания – это ограниченные по времени задания, доступные в определённых местах с переменными наградами.\n\nЧаще проверяйте окно локальных заданий ATT (/attwq), чтобы увидеть какие ограниченные по времени Штучки можно собрать!",
 })
 do a[key] = value; end
 
@@ -2889,7 +2894,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
 
@@ -2922,7 +2926,6 @@ for key,value in pairs({
 		["Violet Hold"] = "Аметистовая Крепость";
 })
 do a[key] = value; end
-
 
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
