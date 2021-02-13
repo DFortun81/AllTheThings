@@ -424,10 +424,16 @@ _.Craftables =
 				-- Trinket
 				i(16022),	-- Arcanite Dragonling*
 				i(4397),	-- Gnomish Cloaking Device*
-				i(10720),	-- Gnomish Net-o-Matic Projector*
-				i(10716),	-- Gnomish Shrink Ray*
+				i(10720, {	-- Gnomish Net-o-Matic Projector*
+					["collectible"] = false,	-- item is getting a spellID added (from parser?) which is incorrectly making this trinket a collectible thing [github issue 671]
+				}),
+				i(10716, {	-- Gnomish Shrink Ray*
+					["collectible"] = false,	-- item is getting a spellID added (from parser?) which is incorrectly making this trinket a collectible thing [github issue 671]
+				}),
 				i(7506),	-- Gnomish Universal Remote*
-				i(10577),	-- Goblin Mortar*
+				i(10577, {	-- Goblin Mortar*
+					["collectible"] = false,	-- item is getting a spellID added (from parser?) which is incorrectly making this trinket a collectible thing [github issue 671]
+				}),
 				i(18634),	-- Gyrofreeze Ice Reflector*
 				i(45631),	-- High-Powered Flashlight*
 				un(REMOVED_FROM_GAME, i(18638)),	-- Hyper-Radiant Flame Reflector
