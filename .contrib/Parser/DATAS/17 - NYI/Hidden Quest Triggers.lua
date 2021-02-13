@@ -3419,6 +3419,7 @@ _.HiddenQuestTriggers =
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
+		q(62455),	-- Amalgamation of Light secondary quest
 		-- Revendreth Treasures
 		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
 		q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)

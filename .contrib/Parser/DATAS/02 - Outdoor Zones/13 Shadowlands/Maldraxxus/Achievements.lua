@@ -274,7 +274,7 @@ _.Zones =
 						}),
 						n(157310, {	-- Boneslurp
 							["description"] = "Requires an equal majority of Blue & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61722,
 							["isDaily"] = true;
 							["g"] = {
 								crit(4, {	-- Boneslurp

@@ -15,6 +15,7 @@ _.ExpansionFeatures =
                 1698,	-- Seat of the Primus
                 -- Night Fae
                 1701,	-- Heart of the Forest
+                1702,	-- Heart of the Forest
                 -- Venthyr
                 1699,	-- Sinfall Reaches
                 1700,	-- Sinfall Depths
