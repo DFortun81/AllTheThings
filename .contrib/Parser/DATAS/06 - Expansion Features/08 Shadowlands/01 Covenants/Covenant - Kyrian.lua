@@ -1366,6 +1366,7 @@ _.ExpansionFeatures =
 									-- ["sourceQuests"] = {  },	-- TODO: ?
 									["provider"] = { "n", 168485 },	-- Apolon
 									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+									["isWeekly"] = true,
 									["g"] = {
 										i(184812),	-- Apolon's Bounty
 									},

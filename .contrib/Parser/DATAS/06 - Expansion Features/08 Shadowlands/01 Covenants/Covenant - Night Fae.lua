@@ -1154,6 +1154,14 @@ _.ExpansionFeatures =
 										i(183805),	-- Tranquil Spirit of the Cosmos
 									},
 								}),
+								q(62625, {	-- A Rare and Unusual Spirit (4)
+									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
+									["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+									["coord"] = { 42.2, 52.9, 1662 },
+									["g"] = {
+										i(183806),	-- Energetic Spirit of Curiosity
+									},
+								}),
 								q(59862, {	-- A Savior for Lost Souls
 									["sourceQuests"] = { 63046 },	-- The End and the Beginning
 									["provider"] = { "n", 166476 },	-- Warden Casad
@@ -1276,25 +1284,17 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
 									["coord"] = { 56.0, 68.2, 1702 },
 								}),
+								q(60642, {	-- The Grove Resplendent
+									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
 								q(62624, {	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
 									["coord"] = { 56.0, 68.2, 1702 },
 								}),
 
 								-- TODO: everything past here is yet to be verified on retail
-								q(60642, {	-- The Grove Resplendent
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-								}),
-								q(62625, {	-- A Rare and Unusual Spirit
-									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-									["coord"] = { 42.2, 52.9, 1662 },
-									["maps"] = { 1669 },	-- Mists of Tirna Scithe
-									["g"] = {
-										i(183806),	-- Energetic Spirit of Curiosity
-									},
-								}),
 								--q(xxxxx, {	-- Master of Inner Calm
 									i(183856),	-- Mystical Orb of Meditation (TOY!)
 								--}),
