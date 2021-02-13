@@ -96,20 +96,21 @@ _.Zones =
 						i(175069, {	-- Theater Ticket
 							["cost"] = 2000,	-- 2 silver
 						}),
-						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
+						n(-929, {	-- Covenant: Night Fae
 							-- These are only available to Night Fae covenant members
-							-- TODO: verify if pet/tmog can be summoned/used by other covenants
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182175, {	-- Moose Soul
+								["customCollect"] = { "SL_COV_NFA" },
 								["questID"] = 62430,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 							i(181304, {	-- Winterwoven Branches
+								["customCollect"] = { "SL_COV_NFA" },
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
-						})),
+						}),
 					},
 				}),
 			}),
