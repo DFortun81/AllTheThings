@@ -5151,8 +5151,9 @@ app.GetCurrentMapID = function()
 				if otherMapID then uiMapID = otherMapID; end
 			end
 		end
+		-- print("Current UI Map ID: ", uiMapID);
+		app.CurrentMapID = uiMapID;
 	end
-	-- print("Current UI Map ID: ", uiMapID);
 	return uiMapID;
 end
 app.GetMapName = function(mapID)
@@ -13539,8 +13540,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		local function RefreshLocationCoroutine()
 			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 
-				-- While the player is in combat, wait for combat to end.
-				while InCombatLockdown() do coroutine.yield(); end
+				-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
+				while not app.IsReady or InCombatLockdown() do coroutine.yield(); end
 				-- Acquire the new map ID.
 				local mapID = app.GetCurrentMapID();
 				while not mapID or mapID < 0 do
@@ -13559,18 +13560,19 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			-- print("location trigger event");
 			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		app.LocationTrigger = LocationTrigger;
 		self:SetScript("OnEvent", function(self, e, ...)
+			-- print("LocationTrigger",e,...);
 			LocationTrigger();
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("SCENARIO_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
 	if self:IsVisible() then
@@ -16970,7 +16972,7 @@ app.events.VARIABLES_LOADED = function()
 	RefreshAchievementCollection();
 
 	-- Set the Current Map ID
-	app.CurrentMapID = app.GetCurrentMapID();
+	app.GetCurrentMapID();
 
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
@@ -17149,7 +17151,7 @@ app.events.VARIABLES_LOADED = function()
 				-- check if the current MapID is in Exile's Reach
 				local maps = { 1409, 1609, 1610, 1611, 1726, 1727 };
 				while not app.CurrentMapID do
-					app.CurrentMapID = app.GetCurrentMapID();
+					app.GetCurrentMapID();
 				end
 				-- print("map check",app.CurrentMapID);
 				-- this is an NPE character, so flag the GUID
@@ -17347,9 +17349,13 @@ app.events.LOOT_CLOSED = function()
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
 end
+app.events.ZONE_CHANGED_INDOORS = function()
+	RefreshQuestCompletionState()
+	app.GetCurrentMapID();
+end
 app.events.ZONE_CHANGED_NEW_AREA = function()
 	RefreshQuestCompletionState()
-	app.CurrentMapID = app.GetCurrentMapID();
+	app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D
