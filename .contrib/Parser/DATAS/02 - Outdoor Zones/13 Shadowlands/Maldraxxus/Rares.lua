@@ -243,10 +243,10 @@ _.Zones =
 						crit(12, {	-- Tahonta
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						--[[i(182075, {	-- Bonehoof Tauralus (MOUNT!)
+						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
+							["description"] = "You must be Necrolord and at least renown 32 for this mount to have a chance of dropping.",
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
-						--]]
 						i(182190),	-- Tauralus Hide Collar
 					},
 				}),

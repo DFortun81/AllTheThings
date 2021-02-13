@@ -36,7 +36,6 @@ _.Mounts =
 			["u"] = NEVER_IMPLEMENTED,	-- No evidence of this dropping from Sabriel yet
 		}),
 		i(182075, {	-- Bonehoof Tauralus
-			["u"] = NEVER_IMPLEMENTED,	-- No evidence of this dropping from Tahonta yet
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 		}),
 		i(166468),	-- Bloodgorged Hunter

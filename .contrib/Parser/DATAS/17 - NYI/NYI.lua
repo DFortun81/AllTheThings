@@ -21,7 +21,6 @@ _.NeverImplemented =
 	n(-10100, {	-- Shadowlands
 		-- Mounts
 		un(NEVER_IMPLEMENTED, i(182083)),	-- Bonecleaver's Skullboar
-		un(NEVER_IMPLEMENTED, i(182075)),	-- Bonehoof Tauralus
 		-- Gear
 		un(NEVER_IMPLEMENTED, i(171401)),	-- Phaeweald Rapier
 		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
