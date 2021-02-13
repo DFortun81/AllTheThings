@@ -322,6 +322,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 			}),
 			q(24536, {	-- Something Stinks (Horde)
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 42.2, 55.75, 88 },	-- Thunder Bluff
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 24805,	-- Uncommon Scents (Horde)
 			}),
