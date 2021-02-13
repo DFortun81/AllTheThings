@@ -33,6 +33,10 @@ _.Zones =
 						})),
 					},
 				}),
+				q(8303,  {	-- Anachronos
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(8316,  {	-- Armaments of War (Warrior)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane

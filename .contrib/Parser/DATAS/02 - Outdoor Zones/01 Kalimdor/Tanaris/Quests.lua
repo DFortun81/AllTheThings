@@ -58,10 +58,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard
 				}),
-				q(8303,  {	-- Anachronos
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25420, {	-- Ancient Obstacles
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
 					["coord"] = { 40.1, 76.8, 71 },
