@@ -13,12 +13,20 @@ profession(LEATHERWORKING, {
 					["name"] = "Leather Armor",
 					["categoryID"] = 461,
 					["g"] = {
+						{	-- Dreadleather Shoulderguard [Rank 3]
+							["recipeID"] = 194729,
+							["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
+						},
 					}
 				},
 				{
 					["name"] = "Mail Armor",
 					["categoryID"] = 462,
 					["g"] = {
+						{	-- Gravenscale Spaulders [Rank 3]
+							["recipeID"] = 194769,
+							["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
+						},
 					}
 				},
 				{
