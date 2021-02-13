@@ -41,6 +41,21 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
+							q(8169, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8170, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8171, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
 						}),
 						n(VENDORS, {
 							n(15126, {	-- Rutherford Twing
@@ -200,6 +215,21 @@ _.PVP =
 								["lvl"] = 35,
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
+							}),
+							q(8166, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8167, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8168, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						}),
 						n(VENDORS, {

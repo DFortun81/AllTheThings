@@ -694,6 +694,9 @@ _.Zones =
 						i(11469),	-- Bloodband Bracers
 					},
 				}),
+				q(8553,   {	-- The Captain's Cutlass
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(1041,  {	-- The Caravan Road
 					["provider"] = { "n", 3945 },	-- Caravaneer Ruzzgot
 					["coord"] = { 27.4, 74.2, 210 },
@@ -766,6 +769,9 @@ _.Zones =
 						2757,	-- Booty Bay or Bust!
 						2759,	-- In Search of Galvan
 					},
+				}),
+				q(8552,   {	-- The Monogrammed Sash
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26493, {	-- There's Somebody Out There Who Wants It
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench

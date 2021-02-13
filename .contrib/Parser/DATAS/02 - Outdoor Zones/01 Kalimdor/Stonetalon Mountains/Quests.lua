@@ -195,6 +195,11 @@ _.Zones =
 						i(131881),	-- Barus' Armbands
 					},
 				}),
+				q(6421,  {	-- Boulderslide Ravine
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 11861 },	-- Mor'rogal
+					["races"] = HORDE_ONLY,
+				}),
 				q(25640, {	-- Bombs Away: Windshear Mine!
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25622,	-- Burn, Baby, Burn!
@@ -319,6 +324,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16981)),	-- Owlbeard Bracers
 						un(REMOVED_FROM_GAME, i(1306)),	-- Wolfmane Wristguards
 					},
+				}),
+				q(6393,  {	-- Elemental War
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 11862 },	-- Tsunaman
+					["races"] = HORDE_ONLY,
 				}),
 				q(26011, {	-- Enemy of the Horde: Marshal Paltrow
 					["provider"] = { "n", 40903 },	-- Spy-Mistress Anara

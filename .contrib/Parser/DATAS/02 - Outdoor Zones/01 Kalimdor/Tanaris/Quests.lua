@@ -565,6 +565,11 @@ _.Zones =
 					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
 					["sourceQuest"] = 3913,	-- A Grave Situation
 				}),
+				q(8305,  {	-- Long Forgotten Memories
+					["provider"] = { "n", 15192 },	-- Anachronos
+					["sourceQuest"] = 8303,	-- Anachronos
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(25054, {	-- Lootin' Plunder
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["coord"] = { 72.1, 45.1, 71 },
