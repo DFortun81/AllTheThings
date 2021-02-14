@@ -11291,7 +11291,7 @@ RowOnEnter = function (self)
 					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));		-- L["COLLECTION_PROGRESS"] = "Collection Progress"
 				-- if completion/tracking is available, show Completion State
 				elseif reference.trackable then
-					GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));		-- L["TRACKING_PROGRESS"] = "Tracking Progress"
 				end
 			end
 		end
@@ -11299,7 +11299,7 @@ RowOnEnter = function (self)
 		-- achievement progress. If it has a measurable statistic, show it under the achievement description
 		if reference.achievementID then
 			if reference.statistic then
-				GameTooltip:AddDoubleLine("Progress", reference.statistic)
+				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)		-- L["PROGRESS"] = "Progress"
 			end
 		end
 
