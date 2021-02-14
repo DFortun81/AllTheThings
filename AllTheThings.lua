@@ -11475,7 +11475,7 @@ RowOnEnter = function (self)
 		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
-			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. " Collected"); end
+			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
 		end
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
