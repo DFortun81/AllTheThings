@@ -15,6 +15,8 @@ local L = app.L;
 
 	-- Big new chunk from AllTheThings.lua
 
+	L.PROGRESS = "Прогресс";
+	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
 	L.PROVIDERS = "Начинает";
 	L.COLLECTION_PROGRESS = "Прогресс Коллекции";
