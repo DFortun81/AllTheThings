@@ -258,6 +258,14 @@ _.Zones =
 					["provider"] = { "n", 158005 },	-- Tamesis
 					["coord"] = { 52.3, 61.3, 1533 },
 				}),
+				q(59865, {	-- Glimmerflight
+					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.82, 42.73, 1533 },
+					["g"] = {
+						i(177951),	-- Glimmerflies on Strings (TOY!)
+					},
+				}),
 				q(59196, {	-- Go in Service
 					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 					["provider"] = { "n", 167038 },	-- Kleia
@@ -272,6 +280,17 @@ _.Zones =
 				q(57860, {	-- How to Become Forsworn
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 36.6, 37.6, 1533 },
+				}),
+				q(59311, {	-- How to Catch a Glimmerfly
+					["sourceQuests"] = {
+						59348,	-- More Wings!
+						59351,	-- Strings and Things
+					},
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+					["g"] = {
+						i(180839)	-- Helpful Glimmerfly (PET!)
+					},
 				}),
 				q(58979, {	-- I MADE You!
 					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
@@ -903,32 +922,6 @@ _.Zones =
 					["coord"] = { 52.8, 47.8, 1533 },
 				}),
 
-
-
-
-
-
-				-- Glimmerfly toy/pet questline
-				q(59311, {	-- How to Catch a Glimmerfly
-					["sourceQuests"] = {
-						59348,	-- More Wings!
-						59351,	-- Strings and Things
-					},
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-					["g"] = {
-						i(180839)	-- Helpful Glimmerfly
-					},
-				}),
-				q(59865, {	-- Glimmerflight
-					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-					["g"] = {
-						i(177951),	-- Glimmerflies on Strings
-					},
-				}),
-				
 				-- Bonus Objectives
 				q(62737, {	-- Aspirant For a Day (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

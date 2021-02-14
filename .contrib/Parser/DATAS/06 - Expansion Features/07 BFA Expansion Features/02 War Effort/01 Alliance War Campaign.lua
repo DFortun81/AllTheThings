@@ -1324,6 +1324,18 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(54163, {	-- As the Dust Settles
+							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54183, {	-- Dead Reckoning
+							["sourceQuests"] = { 54163 },	-- As the Dust Settles
+							["provider"] = { "n", 147885 },	-- Anduin Wrynn
+							["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(55118, {	-- Loose Ends
 							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -1351,16 +1363,28 @@ _.ExpansionFeatures =
 							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(54163, {	-- As the Dust Settles
-							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
-							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+						q(55119, {	-- Reporting In!
+							["sourceQuests"] = { 55116 },	-- Getting A Clue
+							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
+							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55044, {	-- Don't Shoot the Messenger
+							["sourceQuests"] = { 55119 },	-- Reporting In!
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(54183, {	-- Dead Reckoning
-							["sourceQuests"] = { 54163 },	-- As the Dust Settles
-							["provider"] = { "n", 147885 },	-- Anduin Wrynn
-							["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
+						q(55045, {	-- My Brother's Keeper
+							["sourceQuests"] = { 55044 },	-- Don't Shoot the Messenger
+							["provider"] = { "n", 150574 },	-- Lady Jaina Proudmoore
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55171, {	-- Spy Versus Spy
+							["sourceQuests"] = { 55045 },	-- My Brother's Keeper
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- Night Warrior appearance unlock
