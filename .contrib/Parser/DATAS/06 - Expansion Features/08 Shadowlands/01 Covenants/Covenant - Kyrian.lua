@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 					}),
 					q(60458, {	-- Anima Salvage
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 66.8, 15.8, 1533 },
+						["coord"] = { 59.4, 34.7, 1708 },	-- Sanctum of Binding
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},

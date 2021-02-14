@@ -88,6 +88,7 @@ _.Zones =
 				--	TODO: verify objectID when data is available
 					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
 					["questID"] = 61115,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 32.2, 37.1, 1536 },
 						{ 34.9, 30.9, 1536 },
@@ -96,6 +97,7 @@ _.Zones =
 				o(355038, {	-- Runebound Coffer
 					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
 					["questID"] = 61116,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 69.0, 27.6, 1536 },
 						{ 69.6, 33.5, 1536 },
@@ -120,6 +122,7 @@ _.Zones =
 						{ 65.8, 88.3, 1536 },
 						{ 68.4, 85.9, 1536 },
 						{ 70.4, 75.3, 1536 },
+						{ 72.1, 88.8, 1536 },
 					},
 					["g"] = {
 						i(181262),	-- Bubbling Pustule (PET!)
@@ -128,6 +131,7 @@ _.Zones =
 				}),
 				o(354853, {	-- Sprouting Growth
 					["questID"] = 61089,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 45.0, 35.5, 1536 },
 						{ 46.8, 31.7, 1536 },
@@ -140,6 +144,7 @@ _.Zones =
 				}),
 				o(354852, {	-- Sprouting Growth
 					["questID"] = 61090,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 73.5, 49.7, 1536 },
 						{ 75.6, 45.5, 1536 },
@@ -151,6 +156,7 @@ _.Zones =
 				}),
 				o(352596, {	-- Sprouting Growth
 					["questID"] = 60556,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 34.8, 55.0, 1536 },
 						{ 36.5, 49.9, 1536 },

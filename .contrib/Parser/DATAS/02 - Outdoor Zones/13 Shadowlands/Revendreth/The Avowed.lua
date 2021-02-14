@@ -303,6 +303,26 @@ _.Zones =
 								},
 							}),
 						}),
+					--	there are 10 different broken bells, 5 sets of 2 with the same name.  not sure what the difference is, as they are not tied to specific souls (i saw Khongordzolo with two different bells in a row)
+					--	just putting this info here because it doesn't really belong in a specific header, it's just buffs you can get to boost your faction rep.  will only show up in debug, but put tooltips on associated NPCs
+						n(176006, {	-- Caretaker Pancha
+							["description"] = "Pancha periodically brings out a soul to help it earn atonement.  When she has a soul and the broken bell next to her is present, you can repair it for 30 |cFFFFFFFFInfused Rubies|r.  Depending on which soul Caretaker Pancha has, you will get a 20-minute buff that helps you earn reputation with The Avowed.\n\nThe bell will be unavailable from :00 to :30, at which point Caretaker Pancha will bring out a new soul until the next hour begins.  Once the bell is repaired, anyone can ring it to get the buff, but it disappears a few minutes later.",
+						}),
+						n(176043, {	-- Gahiji the Tomb Raider
+							["description"] = "Repairing the Broken Bell when this soul is present will increase your chance to find |cFFFFFFFFAtonement Crypt Keys|r, but enemy venthyr will detect you from further away.",
+						}),
+						n(176051, {	-- Ick the Illiterate
+							["description"] = "Repairing the Broken Bell when this soul is present will increase the amount of |cFFFFFFFFSinstones|r you loot, but your damage will be reduced.",
+						}),
+						n(176050, {	-- Khongordzolo the Manipulator
+							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from killing mobs, but you will take more damage.\n\nCharacters who are Friendly or higher with The Avowed will get +1 Avowed reputation per kill and occasionally +50 with Court of Harvesters.",	-- TODO: can't figure out how the CoH rep works.  not sure if it's only for the ~5 minutes the bell is resonating or if you're in the area of the bell, or both, or something totally different
+						}),
+						n(176049, {	-- Werimu the Traitor-King
+							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from killing Inquisitors, but you will take more damage.",	-- TODO: add reputation info
+						}),
+						n(176004, {	-- Yevkek the Slaver
+							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from absolving Fugitive Souls, but enemy venthyr will detect you from further away.",	-- TODO: add reputation info
+						}),
 					},
 				}),
 			}),
