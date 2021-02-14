@@ -108,10 +108,10 @@ _.Zones =
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
 				q(57284, {	-- Blade of Blades
-					-- ["provider"] = { "n",  },	-- TODO
-					["coord"] = { 27.1, 51.7, 1536 },
-					-- ["sourceQuests"] = {  },	-- ?
+					["sourceQuests"] = { 57245 },	-- Ani-Matter Animator (while on quest or can get an orb from Synder after the quest is completed)
+					["provider"] = { "n", 157168 },	-- Stubborn Animate
 					["isDaily"] = true,
+					["coord"] = { 27.1, 51.7, 1536 },
 				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {

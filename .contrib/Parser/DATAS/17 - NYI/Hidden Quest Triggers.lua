@@ -2272,15 +2272,14 @@ _.HiddenQuestTriggers =
 		-- Quests
 		q(49179),	-- triggered after speaking to Witch Doctor Kejabu after killing Hir'eek, on quest "Upward and "Onward"
 		-- Various
-		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again".  i got it again on a character as a passing zandalari spirit said "what is happening?  i was sick in my bed... and now... where am i?" while standing at 36.5, 38.2.  the character has done 0 bfa quests
+		q(49367, {	-- Nazmir dialogue around the Necropolis: "What is happening?  I was sick in my bed... and now... where am I?"
 			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
-			["races"] = HORDE_ONLY,	-- presumably, based on the description provided
 		}),
-		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
+		q(49368, {	-- Nazmir dialogue around the Necropolis: "De voice... he is calling to us... we must obey!"
 			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
 		}),
-		q(49369, {	-- reported as appearing after clicking on a Saurolisk Tail in Nazmir.  It also was after two messages from NPCs shortly after the one from 49367, so it may actually be related to that ("De voice... he is calling to [...] we must obey!" and "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!") -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ
-			["isWorldQuest"] = true,
+		q(49369, {	-- Nazmir dialogue around the Necropolis: "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!"
+			["isWorldQuest"] = true, -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ
 		}),
 
 		--	Stormsong Valley

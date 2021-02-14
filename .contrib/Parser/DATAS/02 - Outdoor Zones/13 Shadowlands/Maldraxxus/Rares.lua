@@ -244,8 +244,8 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
-							["description"] = "You must be Necrolord and at least renown 32 for this mount to have a chance of dropping.",
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+							["description"] = "You must be Necrolord and at least Renown 32 for this mount to have a chance of dropping.",
 						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
@@ -365,6 +365,7 @@ _.Zones =
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
+					["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him).  Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
 					["questID"] = 59290,
 					["isDaily"] = true,
 					["coord"] = { 29.0, 51.6, 1536 },

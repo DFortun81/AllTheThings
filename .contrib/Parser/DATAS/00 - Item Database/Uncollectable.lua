@@ -377,6 +377,7 @@ i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues
 i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
+i(171206);	-- Forgotten Weapon
 i(173786);	-- Ghostly Pale Ale
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
@@ -468,3 +469,4 @@ i(150750);	-- Moonkissed Antidote
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
+i(153119);	-- Wyrmtongue Cache of Finery

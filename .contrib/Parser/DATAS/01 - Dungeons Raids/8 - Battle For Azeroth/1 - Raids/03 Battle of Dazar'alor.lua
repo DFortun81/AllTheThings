@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["order"] = "03",
 		["maps"] = {
-			1348,	-- Zandalari Treasury
+		--	1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
 			1352,	-- Port of Zandalar
 			1357,	-- The Zocalo
 			1353,	-- Halls of Opulence
