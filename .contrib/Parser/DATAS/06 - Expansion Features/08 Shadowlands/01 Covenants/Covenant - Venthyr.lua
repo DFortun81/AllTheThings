@@ -1190,8 +1190,6 @@ _.ExpansionFeatures =
 										crit(10),	-- Staff: Bastion Ambassador
 										crit(11),	-- Stock: Greeting Kits
 										crit(14),	-- Stock: Comfy Chairs
-										crit(16),	-- Third Guest List Page
-										crit(17),	-- Fourth Guest List Page
 									}),
 									ach(14724, {	-- People Pleaser
 										crit(1),	-- Baroness Vashj
@@ -1775,7 +1773,11 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
 									["g"] = {
-										i(181537),	-- Guest List Page
+										i(181537, {		-- Guest List Page											
+											crit(16, {		-- Third Guest List Page
+												["achievementID"] = 14679,
+											}),
+										}),
 									},
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
@@ -1848,6 +1850,18 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-964, {	-- Tier 4: Discerning Taste
+								q(61944, {	-- Discerning Taste
+									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
+									["provider"] = { "n", 165399 },	-- Lord Garridan
+									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
+									["g"] = {
+										i(181538, {		-- Guest List Page
+											crit(17, {		-- Fourth Guest List Page
+												["achievementID"] = 14679,
+											}),
+										}),
+									},
+								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
 							}),

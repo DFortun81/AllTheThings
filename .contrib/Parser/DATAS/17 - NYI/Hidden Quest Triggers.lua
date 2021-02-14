@@ -3622,6 +3622,8 @@ _.HiddenQuestTriggers =
 		q(59395),	-- when using "RSVP: Alexandros Morgraine"
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
+		q(59626),	-- when using 'Guest List Page' (181538)
+		q(61506),	-- when using 'Guest List Page' (181538)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
