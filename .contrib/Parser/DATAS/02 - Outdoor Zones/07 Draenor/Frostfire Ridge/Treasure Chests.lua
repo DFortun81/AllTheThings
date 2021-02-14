@@ -153,7 +153,8 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["modelScale"] = 10,
 					["questID"] = 33926,
-					["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
+					["model"] = 248066,
+					["modelScale"] = 1.5,
 					["coord"] = { 21.7, 9.61, 525 },
 					["g"] = {
 						i(108738, {	-- Giant Draenor Clam

@@ -147,7 +147,7 @@ _.Zones =
 						{ 53.3, 25.7, 535 },	-- Cave Entrance
 						{ 54.0, 27.6, 535 },	-- Ketya's Stash
 					},
-					["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+					["model"] = 446673,
 					["g"] = {
 						i(116121),	-- A Steamy Romance Novel: I'm In Love With a Robot
 						i(116402),	-- Stonegrinder
@@ -348,8 +348,8 @@ _.Zones =
 				o(227868, {	-- Sparkling Pool
 					["questID"] = 34207,
 					["description"] = "Requires Fishing.",
-					--["modelScale"] = 10,
-					--["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
+					["model"] = 219404,
+					["modelScale"] = 2,
 					["coord"] = { 39.2, 41.7, 535 },
 					["g"] = {
 						i(112623, {	-- Pack of Fishing Supplies
@@ -364,7 +364,8 @@ _.Zones =
 				o(230643, {	-- Teroclaw Nest
 					["description"] = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride.",
 					["questID"] = 35162,
-					["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
+					["model"] = 191835,
+					["modelScale"] = 2,
 					["g"] = {
 						i(112699),	-- Teroclaw Hatchling (PET!)
 					},

@@ -291,9 +291,9 @@ _.Zones =
 				o(282666, {	-- Urn of Agussu
 					["questID"] = 50888,
 					["coord"] = { 38.1, 57.6, 863 },
-					["model"] = "World\\Expansion07\\Doodads\\Zandalaritroll\\8tr_zandalari_graveyard_urn03.mdx",
+					["model"] = 1672878,
 					["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
-				 -- ["crs"] = { 135565 },	-- Guardian of Agussu
+					--["crs"] = { 135565 },	-- Guardian of Agussu
 					["g"] = {
 						crit(25, {	-- Urn of Agussu
 							["achievementID"] = 12942,	-- Adventurer of Nazmir

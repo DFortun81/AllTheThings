@@ -63,7 +63,7 @@ _.Zones =
 			["g"] = {
 				o(239901, {	-- Voidtalon Egg
 					["modelScale"] = 2,
-					["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
+					["model"] = 984888,
 					["g"] = {
 						i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
 					},

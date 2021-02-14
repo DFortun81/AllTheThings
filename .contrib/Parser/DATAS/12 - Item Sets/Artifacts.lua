@@ -2321,7 +2321,7 @@ _.GearSets =
 			}),
 			prof(FISHING, {
 				i(133755, {	-- Underlight Angler
-					["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+					["model"] = 1346321,
 					["modelScale"] = 1.25,
 					["modelRotation"] = 55,
 					["ignoreSource"] = true,

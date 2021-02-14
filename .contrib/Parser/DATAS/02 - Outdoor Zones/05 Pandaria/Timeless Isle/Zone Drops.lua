@@ -74,7 +74,7 @@ _.Zones =
 				}),
 				o(222685, {	-- Crane Nest
 					["modelScale"] = 2.3,
-					["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
+					["model"] = 191835,
 					["icon"] = "Interface\\Icons\\INV_Egg_07",
 					["g"] = {
 						i(104157, {	-- Azure Crane Chick (PET!)
