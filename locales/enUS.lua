@@ -23,9 +23,6 @@ app.L = {
 
 	-- Big new chunk from AllTheThings.lua
 
-	["PROGRESS"] = "Progress";
-	["TRACKING_PROGRESS"] = "Tracking Progress";
-	["COLLECTED_STRING"] = " Collected";
 	["PROVIDERS"] = "Provider(s)";
 	["COLLECTION_PROGRESS"] = "Collection Progress";
 	["CONTAINS"] = "Contains:";
@@ -4767,6 +4764,7 @@ app.L = {
 		[344588] = "Stewart's Stewpendous Stew",
 		[344726] = "Dark Sermon",
 		[345446] = "Great Horn of the Runestag",
+		[345455] = "Construct Supply Chest",
 		[345458] = "Prize Bag",
 		[348521] = "Strange Growth",
 		[348558] = "Notice",
@@ -4816,6 +4814,7 @@ app.L = {
 		[353234] = "Gilded Chest",
 		[353252] = "Silver Strongbox",
 		[353306] = "Decayed Husk",
+		[353314] = "Silver Strongbox",
 		[353323] = "Decayed Husk",
 		[353324] = "Decayed Husk",
 		[353325] = "Silver Strongbox",
@@ -4848,6 +4847,7 @@ app.L = {
 		[353797] = "Stone Legion Supplies",
 		[353869] = "Hidden Hoard",
 		[353870] = "Hidden Hoard",
+		[353871] = "Hidden Hoard",
 		[353872] = "Hidden Hoard",
 		[353873] = "Hidden Hoard",
 		[353876] = "Virtue of Penitence",

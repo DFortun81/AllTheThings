@@ -8,9 +8,16 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(353627, {	-- Battlefront Rations
+					["description"] = "To unlock it, you must obtain |cFF075ab2Battlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["questID"] = 60772,
+					["isDaily"] = true,
 					["coord"] = { 37.8, 45.6, 1536 },
 					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Ration Key
-					["questID"] = 60772,
+					["crs"] = {
+						157037,	-- Grabber Ga'shock <Supply Officer>
+						157036,	-- Pilfer Bur'tok <Supply Officer>
+						157028,	-- Thalrix the Slicer
+					},
 				}),
 				o(352086, {	-- Blackhound Cache
 					-- ["customCollect"] = "SL_COV_NEC",
@@ -57,6 +64,19 @@ _.Zones =
 						i(181171),	-- Luminous Webspinner (PET!)
 					},
 				}),
+				o(345455, {	-- Construct Supply Chest
+				--	TODO: see if chest has reset after 2/15 rollover
+					["description"] = "To unlock it, you must obtain |cFF075ab2Construct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["questID"] = 59243,
+					["isDaily"] = true,
+					["coord"] = { 38.8, 41.9, 1536 },
+					["cost"] = { { "i", 175757, 1 } },	-- Construct Supply Key
+					["crs"] = {
+						157037,	-- Grabber Ga'shock <Supply Officer>
+						157036,	-- Pilfer Bur'tok <Supply Officer>
+						157028,	-- Thalrix the Slicer
+					},
+				}),
 				spell(343124, {	-- Giant Cache of Epic Treasure
 					["questID"] = 62602,
 					["coord"] = { 41.4, 19.7, 1536 },
@@ -66,8 +86,9 @@ _.Zones =
 					},
 				}),
 				o(353626, {	-- Locked Toolbox
-					["description"] = "To unlock it, you must obtain |cFFFFFFFFLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["description"] = "To unlock it, you must obtain |cFF075ab2Locked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 60771,
+					["isDaily"] = true,
 					["coord"] = { 38.1, 42.6, 1536 },
 					["cost"] = { { "i", 180276, 1 } },	-- Locked Toolbox Key
 					["crs"] = {
