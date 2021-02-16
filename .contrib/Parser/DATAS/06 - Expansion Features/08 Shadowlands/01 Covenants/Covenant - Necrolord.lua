@@ -1238,13 +1238,13 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 42.2, 1698 },
 						["isWeekly"] = true,
 					}),
-					-- q(, {	-- Return Lost Souls (20 soul version)
+					q(62866, {	-- Return Lost Souls (20 soul version)
 						-- ["sourceQuests"] = {  },	-- TODO
-					-- 	["description"] = "Requires Renown 32.",
-					-- 	["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-					-- 	["coord"] = { 46.5, 42.2, 1698 },
-					-- 	["isWeekly"] = true,
-					-- }),
+						["description"] = "Requires Renown 32.",
+						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+						["coord"] = { 46.5, 42.2, 1698 },
+						["isWeekly"] = true,
+					}),
 				}),
 				n(RARES, {
 				}),
@@ -1590,6 +1590,13 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-927, {	-- Tier 3: Bring Them to Life
+								q(59043, {	-- Baker's Dozen
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, 1536 },
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
 								q(60342, {	-- Cut 'Em Down to Size
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
@@ -1605,6 +1612,13 @@ _.ExpansionFeatures =
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62261, {	-- Grinder
+									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
+									["provider"] = { "n", 159214 },	-- Guillotine
+									["coord"] = { 54.4, 67.9, 1536 },
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(60340, {	-- Hands on Approach
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
 									["coord"] = { 54.4, 67.9, 1536 },

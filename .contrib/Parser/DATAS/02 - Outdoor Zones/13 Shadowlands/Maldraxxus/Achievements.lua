@@ -251,6 +251,7 @@ _.Zones =
 								crit(2, {	-- Gelloh
 									["achievementID"] = 14721,	-- It's in the Mix
 								}),
+								i(182287),	-- Eternally Preserved Scarab
 							},
 						}),
 						n(157312, {	-- Oily Invertebrate

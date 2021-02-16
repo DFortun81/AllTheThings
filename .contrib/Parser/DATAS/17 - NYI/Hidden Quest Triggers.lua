@@ -3213,6 +3213,7 @@ _.HiddenQuestTriggers =
 		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
+		q(62586),	-- Triggered after restoring Lia the Curious
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended

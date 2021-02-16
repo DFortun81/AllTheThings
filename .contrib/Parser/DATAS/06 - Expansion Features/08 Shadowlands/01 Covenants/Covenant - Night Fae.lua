@@ -280,13 +280,13 @@ _.ExpansionFeatures =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
-					-- q(, {	-- Return Lost Souls (20 soul version)
-					-- 	["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-					-- 	["description"] = "Requires Renown 32.",
-					-- 	["provider"] = { "n", 158553 },	-- Flutterby
-					-- 	["coord"] = { 33.9, 43.5, 1565 },
-					-- 	["isWeekly"] = true,
-					-- }),
+					q(62860, {	-- Return Lost Souls (20 soul version)
+						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+						["description"] = "Requires Renown 32.",
+						["provider"] = { "n", 158553 },	-- Flutterby
+						["coord"] = { 33.9, 43.5, 1565 },
+						["isWeekly"] = true,
+					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 						["provider"] = { "n", 160262 },	-- Ysera
@@ -1204,6 +1204,11 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 62.0, 1662 },
 									["isDaily"] = true,
 								}),
+								q(62627, {	-- All Spirits Great and Small
+									["sourceQuests"] = { 62625 },	-- A Rare and Unusual Spirit (4)
+									["provider"] = { "n", 174511 },	-- Lia the Curious
+									["coord"] = { 26.0, 63.8, 1662 },
+								}),
 								q(60641, {	-- Blossoming of the Grove
 									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 									["provider"] = { "n", 166476 },	-- Warden Casad
@@ -1261,6 +1266,11 @@ _.ExpansionFeatures =
 								}),
 								q(62590, {	-- In Search of Inner Calm (4)
 									["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
+									["provider"] = { "n", 174508 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+								}),
+								q(62591, {	-- In Search of Inner Calm (5)
+									["sourceQuests"] = { 62590 },	-- In Search of Inner Calm (4)
 									["provider"] = { "n", 174508 },	-- Ohm of Meditation
 									["coord"] = { 25.6, 47.5, 1662 },
 								}),
