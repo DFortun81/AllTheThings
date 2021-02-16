@@ -1023,6 +1023,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56904, {	-- Crown of Prosperity
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["description"] = "In order to attain this quest, the Crown of Prosperity transmog needs to be owned.",
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
 				["g"] = {
@@ -1031,6 +1032,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56906, {	-- Crown of Good Fortune
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["description"] = "In order to attain this quest, the Crown of Good Fortune transmog needs to be owned.",
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
 				["g"] = {
@@ -1039,6 +1041,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56905, {	-- Crown of Dark Blossoms
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["description"] = "In order to attain this quest, the Crown of Dark Blossoms transmog needs to be owned.",
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
 				["g"] = {
@@ -1047,6 +1050,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56903, {	-- Crown of Courage
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["description"] = "In order to attain this quest, the Crown of Courage transmog needs to be owned.",
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
 				["g"] = {
