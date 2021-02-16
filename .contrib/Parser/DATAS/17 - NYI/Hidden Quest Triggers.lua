@@ -3449,6 +3449,8 @@ _.HiddenQuestTriggers =
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
+		q(59628),	-- triggered when leaving Ember Court
+		q(59630),	-- triggered when leaving Ember Court
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -3598,6 +3600,8 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
+		q(59382),	-- when using "RSVP: Baroness Vashj" - every time
+		q(59383),	-- when using "RSVP: Baroness Vashj" - first time
 		q(59406),	-- when using "RSVP: Choofa"
 		q(59407),	-- when using "RSVP: Choofa"
 		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
@@ -3606,6 +3610,8 @@ _.HiddenQuestTriggers =
 		q(59413),	-- when using "RSVP: Droman Aliothe"
 		q(59415),	-- when using "RSVP: Grandmaster Vole" - every time
 		q(59416),	-- when using "RSVP: Grandmaster Vole" - first time
+		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" - every time
+		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" - first time
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
 		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
@@ -3649,6 +3655,7 @@ _.HiddenQuestTriggers =
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
+		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

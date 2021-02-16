@@ -1223,6 +1223,7 @@ _.ExpansionFeatures =
 							}),
 							n(-908, {	-- Rewards
 							--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
+								i(181323),	-- Blightclutched Greatstaff (Plague Deviser Marileth's Extravagant Tribute)
 								i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
 								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)
 								i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
@@ -1788,6 +1789,14 @@ _.ExpansionFeatures =
 										i(176115),	-- RSVP: Alexandros Mograine
 									},
 								}),
+								q(61109, {	-- RSVP: Hunt-Captain Korayn
+									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
+									["coord"] = { 50.8, 70.4, 1565 },	-- Ardenweald
+									["g"] = {
+										i(176116),	-- RSVP: Hunt-Captain Korayn
+									},
+								}),
 								q(61123, {	-- RSVP: Polemarch Adrestes
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
@@ -1862,9 +1871,20 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(61174, {	-- RSVP: Baroness Vashj
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
+									["provider"] = { "n", 162487 },	-- Baroness Vashj
+									["coord"] = { 67.6, 45.9, 1536 },	-- Maldraxxus
+									["g"] = {
+										i(176097),	-- RSVP: Baroness Vashj
+									},
+								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
 							}),
+							-- Random, non-collectible items which go into your bags while in the Ember Court
+							i(180296),	-- Shrouded Necromancer Head
+							i(182211),	-- Stone Brick
 							n(VENDORS, {
 								n(165453, {	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth

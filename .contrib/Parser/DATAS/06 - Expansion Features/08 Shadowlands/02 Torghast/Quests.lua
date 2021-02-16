@@ -326,6 +326,7 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 173753 },	-- Velkein
+					-- Coldheart 8 / 5
 				}),
 				
 				--------------
