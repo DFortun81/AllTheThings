@@ -100,6 +100,7 @@ i(23766);	-- Stabilized Eternium Scope
 i(23820);	-- Critter Enlarger
 i(28421);	-- Adamantite Weightstone
 
+i(34258);	-- Love Rocket
 i(180686);	-- "Borrowed" Soulstone
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
