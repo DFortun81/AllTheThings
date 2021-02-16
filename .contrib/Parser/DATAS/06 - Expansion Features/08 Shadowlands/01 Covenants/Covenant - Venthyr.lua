@@ -932,13 +932,13 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 					}),
-					-- q(, {	-- Return Lost Souls (20)
+					q(62869, {	-- Return Lost Souls (20)
 						-- ["sourceQuests"] = {  },	-- TODO
-					-- 	["description"] = "Requires Renown 32.",
-					-- 	["provider"] = { "n", 164738 },	-- Tenaval
-					-- 	["isWeekly"] = true,
-					-- 	["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
-					-- }),
+						["description"] = "Requires Renown 32.",
+						["provider"] = { "n", 164738 },	-- Tenaval
+						["isWeekly"] = true,
+						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+					}),
 
 					-- q(, {	--
 					-- 	["sourceQuests"] = {  },	--
