@@ -245,7 +245,7 @@ _.Zones =
 						}),
 						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-							["description"] = "You must be Necrolord, at least Renown 32 & Abomination building construct "Neena" with you for this mount to have a chance of dropping.",
+							["description"] = "You must be Necrolord, at least Renown 32 & Abomination building construct \"Neena\" with you for this mount to have a chance of dropping.",
 						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
