@@ -1,0 +1,38 @@
+# This is a workflow to package and upload on Curseforge, WoWInterface and GitHub Releases using BigWigs/Packager
+
+name: Release
+
+# Controls when the action will run.
+on:
+  # Package alpha version at midnight UTC every day
+  schedule:
+    - cron: '0 0 * * FRI'
+  # Triggers the workflow on tag events
+  push:
+    tags: '*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "release"
+  release:
+    runs-on: ubuntu-latest
+
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      # Looks like ATT wasn't added to WoWInterface
+      #WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # checkout@v2 doesn't pull tags by default now, which results in super long auto changelog, so pull all history incl. tags
+          # alternative would be to use checkout@v1
+          fetch-depth: 0
+
+      # once cloned, we just run the GitHub Action for the packager project
+      - name: Package and release
+        # using my fork with the dirty hack until https://github.com/BigWigsMods/packager/issues/78 gets resolved one way or another
+        uses: Molkree/packager@changelog-title-hack
