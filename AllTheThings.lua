@@ -7613,7 +7613,7 @@ local appearanceFields = {
 	end,
 	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
 		return rawget(t, "modItemID");
 	end,
 	["link"] = function(t)
