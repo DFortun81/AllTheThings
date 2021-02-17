@@ -8,6 +8,7 @@ _.WorldDrops =
 		["description"] = "These items have a small chance of dropping from junkboxes.",
 		["icon"] = "Interface\\Icons\\inv_box_01",
 		["g"] = {
+			i(169475),	-- Barnacled Lockbox
 			i(16882, { 	-- Battered Junkbox
 				i(11968),	-- Amber Hoop
 				i(4999),	-- Azora's Will
@@ -41,6 +42,7 @@ _.WorldDrops =
 				i(5756),	-- Sliverblade
 				i(11967),	-- Zircon Band
 			}),
+			i(5760),	-- Eternium Lockbox
 			i(63349, { 	-- Flame-Scarred Junkbox
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
@@ -85,41 +87,6 @@ _.WorldDrops =
 				i(12015),	-- Swamp Ring
 				i(11989),	-- Vanadium Loop
 			}),
-			i(16884, { 	-- Sturdy Junkbox
-				i(11974),	-- Aquamarine Ring
-				i(12043),	-- Desert Choker
-				i(21947),	-- Design: Gem Studded Band
-				i(21945),	-- Design: The Aquamarine Ward
-				i(21944),	-- Design: Truesilver Boar
-				i(7552),	-- Falcon's Hook
-				i(12011),	-- Forest Loop
-				i(11225),	-- Formula: Enchant Bracer - Greater Stamina
-				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
-				i(2164),	-- Gut Ripper
-				i(11973),	-- Hematite Link
-				i(11987),	-- Iridium Circle
-				i(11999),	-- Lodestone  Hoop
-				i(12031),	-- Lodestone Necklace
-				i(12042),	-- Marsh Chain
-				i(12012),	-- Marsh Ring
-				i(12001),	-- Onyx Ring
-				i(8387),	-- Pattern: Big Voodoo Mask
-				i(8389),	-- Pattern: Big Voodoo Pants
-				i(8386),	-- Pattern: Big Voodoo Robe
-				i(10320),	-- Pattern: Red Mageweave Headband
-				i(8385),	-- Pattern: Turtle Scale Gloves
-				i(10301),	-- Pattern: White Bandit Mask
-				i(7990),	-- Plans: Heavy Mithril Helm
-				i(8029),	-- Plans: Wicked Mithril Blade
-				i(9298),	-- Recipe: Elixir of Giants
-				i(9295),	-- Recipe: Invisibility Potion
-				i(3395),	-- Recipe: Limited Invulnerability Potion
-				i(10603),	-- Schematic: Catseye Ultra Goggles
-				i(10606),	-- Schematic: Parachute Cloak
-				i(11988),	-- Tellurium Band
-				i(11975),	-- Topaz  Ring
-				i(12024),	-- Vanadium Talisman
-			}),
 			i(4634,	 {	-- Iron Lockbox
 				i(13063),	-- Starfaller
 				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
@@ -137,6 +104,10 @@ _.WorldDrops =
 				i(4416),	-- Schematic: Goblin Land Mine
 				i(4414),	-- Schematic: Portable Bronze Mortar
 			}),
+			i(180532),	-- Laestrite Lockbox
+			i(5758),	-- Mithril Lockbox
+			i(179311),	-- Oxxein Lockbox
+			i(180522),	-- Phaedrum Lockbox
 			i(43575, { 	-- Reinforced Junkbox
 				i(43613),	-- The Dusk Blade
 				i(43611),	-- Krol Cleaver
@@ -162,6 +133,7 @@ _.WorldDrops =
 				i(9295),	-- Recipe: Invisibility Potion
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 			}),
+			i(180533),	-- Solenium Lockbox
 			i(4637,  {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
 				i(11202),	-- Formula: Enchant Shield - Stamina
@@ -219,15 +191,45 @@ _.WorldDrops =
 				i(12695),	-- Swamp Pendant
 				i(12683),	-- Vermilion Necklace
 			}),
+			i(16884, { 	-- Sturdy Junkbox
+				i(11974),	-- Aquamarine Ring
+				i(12043),	-- Desert Choker
+				i(21947),	-- Design: Gem Studded Band
+				i(21945),	-- Design: The Aquamarine Ward
+				i(21944),	-- Design: Truesilver Boar
+				i(7552),	-- Falcon's Hook
+				i(12011),	-- Forest Loop
+				i(11225),	-- Formula: Enchant Bracer - Greater Stamina
+				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+				i(2164),	-- Gut Ripper
+				i(11973),	-- Hematite Link
+				i(11987),	-- Iridium Circle
+				i(11999),	-- Lodestone  Hoop
+				i(12031),	-- Lodestone Necklace
+				i(12042),	-- Marsh Chain
+				i(12012),	-- Marsh Ring
+				i(12001),	-- Onyx Ring
+				i(8387),	-- Pattern: Big Voodoo Mask
+				i(8389),	-- Pattern: Big Voodoo Pants
+				i(8386),	-- Pattern: Big Voodoo Robe
+				i(10320),	-- Pattern: Red Mageweave Headband
+				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(10301),	-- Pattern: White Bandit Mask
+				i(7990),	-- Plans: Heavy Mithril Helm
+				i(8029),	-- Plans: Wicked Mithril Blade
+				i(9298),	-- Recipe: Elixir of Giants
+				i(9295),	-- Recipe: Invisibility Potion
+				i(3395),	-- Recipe: Limited Invulnerability Potion
+				i(10603),	-- Schematic: Catseye Ultra Goggles
+				i(10606),	-- Schematic: Parachute Cloak
+				i(11988),	-- Tellurium Band
+				i(11975),	-- Topaz  Ring
+				i(12024),	-- Vanadium Talisman
+			}),
 			i(88165, { 	-- Vine-Cracked Junkbox
 				i(88149),	-- The Gloaming Blade
 				i(88150),	-- Krol Scimitar
 			}),
-			i(169475),	-- Barnacled Lockbox
-			i(180532),	-- Laestrite Lockbox
-			i(179311),	-- Oxxein Lockbox
-			i(180522),	-- Phaedrum Lockbox
-			i(180533),	-- Solenium Lockbox
 		},
 	}),
 };

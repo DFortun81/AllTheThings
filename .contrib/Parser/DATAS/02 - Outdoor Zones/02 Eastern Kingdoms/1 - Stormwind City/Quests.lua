@@ -1518,7 +1518,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 85,
 				}),
-				q(60120,   {	-- To Outland
+				q(60120,   {	-- Burning Crusade: To Outland!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
