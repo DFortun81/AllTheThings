@@ -889,9 +889,17 @@ _.WorldEvents =
 				["u"] = REMOVED_FROM_GAME,
 				["requireSkill"] = INSCRIPTION,
 			}),
-			q(7945, {	-- Your Fortune Awaits You...
+			q(7937, {	-- Your Fortune Awaits You...
+				["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
 				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(7944, {	-- Your Fortune Awaits You...
+				["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(7945, {	-- Your Fortune Awaits You...
 				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		}),
 	}),

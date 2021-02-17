@@ -118,7 +118,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20714)),	-- Sandstorm Boots
 					},
 				}),
-				q(8331, {	-- Aurel Goldleaf
+				q(8331,  {	-- Aurel Goldleaf
 					["u"] = REMOVED_FROM_GAME,
 					["minReputation"] = { 609, FRIENDLY },
 				}),
@@ -146,11 +146,11 @@ _.Zones =
 						i(20723),	-- Brann's Trusty Pick
 					},
 				}),
-				q(8349, {	-- Bor Wildmane
+				q(8349,  {	-- Bor Wildmane
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
-				q(8351, {	-- Bor Wishes to Speak
+				q(8351,  {	-- Bor Wishes to Speak
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
@@ -166,7 +166,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(8800, {	-- Cenarion Battlegear
+				q(8800,  {	-- Cenarion Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15540 },	-- Windcaller Kaldon
@@ -195,7 +195,7 @@ _.Zones =
 					["description"] = "This quest is invisible until you reach Cooking 285.",
 					["requireSkill"] = COOKING,
 				}),
-				q(8332, {	-- Dukes of the COuncil
+				q(8332,  {	-- Dukes of the COuncil
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 				}),
@@ -210,7 +210,7 @@ _.Zones =
 					["coord"] = { 46.4, 79.0, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
-				q(8343, {	-- Goldleaf's Discovery
+				q(8343,  {	-- Goldleaf's Discovery
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1126,  {	-- Hive in the Tower
@@ -231,7 +231,7 @@ _.Zones =
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
 					["requireSkill"] = COOKING,
 				}),
-				q(8341, {	-- Lords of the Council
+				q(8341,  {	-- Lords of the Council
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
@@ -254,7 +254,7 @@ _.Zones =
 					["coord"] = { 55.2, 36.1, 81 },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
-				q(8288, {	-- Only One May Rise
+				q(8288,  {	-- Only One May Rise
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
@@ -280,7 +280,7 @@ _.Zones =
 						})),
 					},
 				}),
-				q(9422, {	-- Scouring the Desert
+				q(9422,  {	-- Scouring the Desert
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17079 },	-- General Kirika
@@ -373,6 +373,125 @@ _.Zones =
 						}),
 					},
 				}),
+				q(8770,  {	-- Target: Hive'Ashi Defenders
+					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8771,  {	-- Target: Hive'Ashi Sandstalkers
+					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8501,  {	-- Target: Hive'Ashi Stingers
+					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8502,  {	-- Target: Hive'Ashi Workers
+					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8774,  {	-- Target: Hive'Regal Ambushers
+					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8777,  {	-- Target: Hive'Regal Burrowers
+					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8776,  {	-- Target: Hive'Regal Slavemakers
+					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8775,  {	-- Target: Hive'Regal Spitfires
+					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8539,  {	-- Target: Hive'Zora Hive Sisters
+					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8773,  {	-- Target: Hive'Zora Reavers
+					["provider"] = { "i", 21248 },	-- Combat Task Briefing VI
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8687,  {	-- Target: Hive'Zora Tunnelers
+					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8772,  {	-- Target: Hive'Zora Waywatchers
+					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8509,  {	-- The Alliance Needs Arthas' Tears!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8492,  {	-- The Alliance Needs Copper Bars!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8494,  {	-- The Alliance Needs Iron Bars!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8511,  {	-- The Alliance Needs Light Leather!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8517,  {	-- The Alliance Needs Linen Bandages!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8513,  {	-- The Alliance Needs Medium Leather!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8505,  {	-- The Alliance Needs Purple Lotus!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8524,  {	-- The Alliance Needs Rainbow Fin Albacore!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8526,  {	-- The Alliance Needs Roast Raptor!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8522,  {	-- The Alliance Needs Runecloth Bandages!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8520,  {	-- The Alliance Needs Silk Bandages!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8528,  {	-- The Alliance Needs Spotted Yellowtail!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8503,  {	-- The Alliance Needs Stranglekelp!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8515,  {	-- The Alliance Needs Thick Leather!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(8499,  {	-- The Alliance Needs Thorium Bars!
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(8315,  {	-- The Calling
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
@@ -434,7 +553,7 @@ _.Zones =
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, 81 },
 				}),
-				q(6844, {	-- Umber, Archivist
+				q(6844,  {	-- Umber, Archivist
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1126,	-- Hive in the Tower
@@ -482,7 +601,7 @@ _.Zones =
 						i(20647),	-- Black Crystal Dagger
 					},
 				}),
-				q(8286, {	-- What Tomorrow Brings
+				q(8286,  {	-- What Tomorrow Brings
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands

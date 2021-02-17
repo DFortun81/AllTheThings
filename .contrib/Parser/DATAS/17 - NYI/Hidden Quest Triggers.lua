@@ -3661,6 +3661,7 @@ _.HiddenQuestTriggers =
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
+		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
