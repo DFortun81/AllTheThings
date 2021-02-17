@@ -244,7 +244,7 @@ namespace ATT
                     case "isGround":
                     case "isJumping":
                     case "creatureID":
-                    case "ignoreBonus":
+                    //case "ignoreBonus":
                     case "displayID":
                     case "sourceText":
                     case "s":
@@ -268,7 +268,7 @@ namespace ATT
                     case "maxReputation":
                     case "provider":
                     case "providers":
-                    //case "lvl":
+                        //case "lvl":
                         {
                             return;
                         }
@@ -292,6 +292,7 @@ namespace ATT
                     case "isYearly":
                     case "isWorldQuest":
                     case "isToy":
+                    case "ignoreBonus":
                     case "ignoreSource":
                         {
                             item[field] = Convert.ToBoolean(value);
@@ -673,7 +674,7 @@ namespace ATT
                             if (data.ContainsKey("s") || data.ContainsKey("ignoreSource")) return;
 
                             // Determine which variant this data is using.
-                            int modID = 1;
+                            int modID = 0;
                             if (!data.ContainsKey("ignoreBonus") && data.TryGetValue("modID", out object variantObj))
                             {
                                 modID = Convert.ToInt32(variantObj);

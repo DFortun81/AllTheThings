@@ -8344,8 +8344,8 @@ app.CollectibleAsQuest = function(t)
 	and app.CheckCustomCollects(t)
 	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 	-- TODO: revisit if party sync option becomes a thing
-	and ((not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.Settings:Get("AccountMode"))));
+	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
@@ -10021,7 +10021,7 @@ end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
-	if not t.customCollect or app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") then return true; end
+	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
 	for k,c in ipairs(t.customCollect) do
 		if not app.CustomCollects[c] then
 			return false;
@@ -16733,7 +16733,17 @@ app.events.ARTIFACT_UPDATE = function(...)
 	end
 end
 app.events.VARIABLES_LOADED = function()
-	app.Version = GetAddOnMetadata("AllTheThings", "Version");
+	local v = GetAddOnMetadata("AllTheThings", "Version");
+	-- if placeholder exists as the Version tag, then assume we are not on the Release version
+	if string.match(v, "version") then
+		app.Version = "[Git]";
+		-- adjust the Setting screen version display since it was already set from metadata
+		if app.Settings.version then
+			app.Settings.version:SetText("[Git]");
+		end
+	else
+		app.Version = "v" .. v;
+	end
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
 		AllTheThingsAD = { };

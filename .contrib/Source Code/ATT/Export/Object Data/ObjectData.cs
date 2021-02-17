@@ -177,8 +177,8 @@ namespace ATT
             public virtual void Clean(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
             {
                 // Remove globally blacklisted fields.
-                fields.Remove("ignoreBonus");
-                fields.Remove("ignoreSource");
+                bool ignoreBonus = fields.Remove("ignoreBonus");
+                bool ignoreSource = fields.Remove("ignoreSource");
                 fields.Remove("timeline");
                 fields.Remove("ilvl");
                 fields.Remove("name");
@@ -194,13 +194,17 @@ namespace ATT
                 {
                     // Bonus ID <1 is default, so we don't need to write it.
                     // Additionally, there must be an itemID for the bonusID to be present.
-                    if (Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
+                    if (ignoreBonus || Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
                 }
                 if (data.TryGetValue("modID", out objRef))
                 {
-                    // Mod ID 1 is default, so we don't need to write it.
+                    // Mod ID 0 is default, so we don't need to write it.
                     // Additionally, there must be an itemID for the modID to be present.
-                    if (Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("modID");
+                    if (ignoreBonus || ignoreSource || Convert.ToInt32(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("modID");
+                }
+                if (data.TryGetValue("s", out objRef))
+                {
+                    if (ignoreSource) fields.Remove("s");
                 }
                 if (data.TryGetValue("f", out objRef))
                 {

@@ -74,6 +74,11 @@ namespace ATT
 #endif
             ;
 
+        /// <summary>
+        /// The maximum Player level in the game (both Retail and Classic match! how nice...)
+        /// </summary>
+        public const int MAX_LEVEL = 60;
+
         // These get loaded from _main.lua now.
         public static List<object> ALLIANCE_ONLY;
         public static List<object> HORDE_ONLY;
@@ -216,17 +221,18 @@ namespace ATT
             if (data.TryGetValue("modID", out object modIDRef))
             {
                 modID = Convert.ToInt32(modIDRef);
-                if (modID < 1) data["modID"] = modID = 1;
+                // don't use modID if there isn't one
+                if (modID < 0) data.Remove("modID");
             }
             else if (data.ContainsKey("ignoreBonus"))
             {
-                // Assign the modID, but set it back to 1.
-                data["modID"] = modID = 1;
+                data.Remove("modID");
             }
             else if (data.ContainsKey("itemID"))
             {
-                // Assign the modID, but only for items.
-                data["modID"] = modID;
+                // only modID if it's real
+                if (modID > 0)
+                    data["modID"] = modID;
             }
             if (data.TryGetValue("npcID", out int npcID))
             {
@@ -623,7 +629,7 @@ namespace ATT
                 else
                 {
                     var level = Convert.ToInt32(lvlRef);
-                    if (level <= minLevel) data.Remove("lvl");
+                    if (level <= minLevel || level > Framework.MAX_LEVEL) data.Remove("lvl");
                     else minLevel = level;
                 }
             }
@@ -782,14 +788,12 @@ namespace ATT
                 {
                     data.Remove("s");
                     data.Remove("modIDs");
+                    data.Remove("modID");
                 }
             }
 
             // Merge the Item Data into the Containers.
-            foreach (var container in Objects.AllContainers.Values)
-            {
-                Process(container, 1, 1);
-            }
+            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -1059,7 +1063,7 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers again.
-            foreach (var container in Objects.AllContainers.Values) Process(container, 1, 1);
+            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
 
             // If NOT Classic
             if (Items.GetNull(30000) != null)

@@ -17,10 +17,10 @@ namespace ATT
         {
             // Initialize all of the Object Types in order of Export Priority.
             ObjectData.Create("buildingID",         "gb",           "_.CreateGarrisonBuilding", "f", "spellID");
-            ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID");
-            ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID");
-            ObjectData.Create("mountID",            "mnt",          "_.CreateMount", "f", "spellID");
-            ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "spellID");
+            ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID", "modID");
+            ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID", "modID");
+            ObjectData.Create("mountID",            "mnt",          "_.CreateMount", "f", "spellID", "modID");
+            ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "spellID", "modID");
             ObjectData.Create("musicRollID",        "mr",           "_.CreateMusicRoll", "f", "spellID");
             ObjectData.Create("objectiveID",        "qo",           "_.CreateQuestObjective", "f");
             ObjectData.Create("instanceID",         "inst",         "_.CreateInstance", "f");
@@ -45,7 +45,7 @@ namespace ATT
             ObjectData.Create("talentID",           "gt",           "_.CreateGarrisonTalent", "f");
             ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
-            ObjectData.Create("recipeID",           "r",            "_.CreateRecipe", "f", "spellID");
+            ObjectData.Create("recipeID",           "r",            "_.CreateRecipe", "f", "spellID", "modID");
             ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");
             ObjectData.Create("setHeaderID",        "gsh",          "_.CreateGearSetHeader", "f");
@@ -56,9 +56,9 @@ namespace ATT
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
-            ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "f");
+            ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "f", "modID");
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
-            ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill");
+            ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("vignetteID",         "v",            "_.CreateVignette", "f");
             ObjectData.Create<NPCData>("creatureID", "n",           "_.CreateNPC", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");

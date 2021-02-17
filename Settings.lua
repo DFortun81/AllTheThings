@@ -236,7 +236,7 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = L["MODE"] .. " v" .. app.Version;		-- L["MODE"] = "Mode"
+	local mode = L["MODE"] .. " " .. app.Version;		-- L["MODE"] = "Mode"
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
 			mode = L["TITLE_COMPLETIONIST"] .. mode;	-- L["TITLE_COMPLETIONIST"] = "Completionist ";
@@ -561,6 +561,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.ShowIncompleteThings = app.NoFilter;
+		app.ItemTypeFilter = app.NoFilter;
+		app.ClassRequirementFilter = app.NoFilter;
+		app.RaceRequirementFilter = app.NoFilter;
+		app.RequiredSkillFilter = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
@@ -596,6 +600,9 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleTitles = true;
 		app.CollectibleToys = true;
 		app.CollectibleTransmog = true;
+
+		app.MODE_ACCOUNT = nil;
+		app.MODE_DEBUG = true;
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
@@ -649,17 +656,24 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleTitles = self:Get("Thing:Titles");
 		app.CollectibleToys = self:Get("Thing:Toys");
 		app.CollectibleTransmog = self:Get("Thing:Transmog");
-	end
-	if self:Get("AccountMode") then
-		app.ItemTypeFilter = app.NoFilter;
-		app.ClassRequirementFilter = app.NoFilter;
-		app.RaceRequirementFilter = app.NoFilter;
-		app.RequiredSkillFilter = app.NoFilter;
-	else
-		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
-		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
-		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+
+		if self:Get("AccountMode") then
+			app.ItemTypeFilter = app.NoFilter;
+			app.ClassRequirementFilter = app.NoFilter;
+			app.RaceRequirementFilter = app.NoFilter;
+			app.RequiredSkillFilter = app.NoFilter;
+
+			app.MODE_ACCOUNT = true;
+		else
+			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
+			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
+			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+
+			app.MODE_ACCOUNT = nil;
+		end
+
+		app.MODE_DEBUG = nil;
 	end
 	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;
