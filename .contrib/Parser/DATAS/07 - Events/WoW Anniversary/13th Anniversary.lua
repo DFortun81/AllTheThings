@@ -90,29 +90,39 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(110035, {	-- Historian Jupa [Horde]
+					["coord"] = { 36.6, 74.6, 85 },
 					["races"] = HORDE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 36.6, 74.6, 85 },
-					},
 					["g"] = {	-- WoW Anniversary
-						i(147885),	-- Bronze-Tinted Sunglasses
-						i(147883),	-- Celebration Wand - Quillboar
-						i(147882),	-- Celebration Wand - Trogg
-						i(147884),	-- Tranquil Mechanical Yeti Costume
+						i(147885, {	-- Bronze-Tinted Sunglasses
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
+						i(147883, {	-- Celebration Wand - Quillboar
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(147882, {	-- Celebration Wand - Trogg
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(147884, {	-- Tranquil Mechanical Yeti Costume
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 					},
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 84.61, 25.01, 13 },
-					},
+					["coord"] = { 84.6, 25.0, 13 },
 					["g"] = {	-- WoW Anniversary
-						i(147885),	-- Bronze-Tinted Sunglasses
-						i(147883),	-- Celebration Wand - Quillboar
-						i(147882),	-- Celebration Wand - Trogg
-						i(147884),	-- Tranquil Mechanical Yeti Costume
+						i(147885, {	-- Bronze-Tinted Sunglasses
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
+						i(147883, {	-- Celebration Wand - Quillboar
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(147882, {	-- Celebration Wand - Trogg
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(147884, {	-- Tranquil Mechanical Yeti Costume
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 					},
 				}),
 			})),

@@ -212,8 +212,8 @@ _.WorldEvents =
 							},
 						}),
 						i(129948, {	-- Commendation of Honor Hold
-							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 						}),
 						i(129951, {	-- Commendation of Lower City
 							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge

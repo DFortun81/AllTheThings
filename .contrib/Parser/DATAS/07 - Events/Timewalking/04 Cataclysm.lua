@@ -28,27 +28,57 @@ _.WorldEvents =
 					-- Commendations!!
 						i(133150, {	-- Commendation of the Dragonmaw Clan
 							["races"] = HORDE_ONLY,
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
 						}),
-						i(133159),	-- Commendation of the Earthen Ring
-						i(133152),	-- Commendation of the Guardians of Hyjal
-						i(133154),	-- Commendation of the Ramkahen
+						i(133159, {	-- Commendation of the Earthen Ring
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(133152, {	-- Commendation of the Guardians of Hyjal
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(133154, {	-- Commendation of the Ramkahen
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 						i(133151, {	-- Commendation of the Wildhammer Clan
 							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
 						}),
-						i(133160),	-- Commendation of Therazanae
+						i(133160, {	-- Commendation of Therazanae
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 					-- Toy!!
-						i(133511),	-- Gurboggle's Gleaming Bauble
-						i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
+						i(133511, {	-- Gurboggle's Gleaming Bauble
+							["cost"] = { { "c", 1166, 1500 } },	-- 1,500x Timewarped Badge
+						}),
+						i(133542, {	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
+							["cost"] = { { "c", 1166, 3000 } },	-- 3,000x Timewarped Badge
+						}),
 					-- Rings!!
-						i(133521),	-- Band of Reconstruction
-						i(133523),	-- Emergency Descent Loop
-						i(133520),	-- Seal of the Grand Architect
-						i(133524),	-- Signet of the Resolute
+						i(133521, {	-- Band of Reconstruction
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133523, {	-- Emergency Descent Loop
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133520, {	-- Seal of the Grand Architect
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133524, {	-- Signet of the Resolute
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
 					-- Trinkets!!
-						i(133538),	-- Bottled Wishes
-						i(133541),	-- Fire of the Deep
-						i(133537),	-- Kiroptric Sigil
-						i(133539),	-- Reflection of the Light
+						i(133538, {	-- Bottled Wishes
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(133541, {	-- Fire of the Deep
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(133537, {	-- Kiroptric Sigil
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(133539, {	-- Reflection of the Light
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 					-- Heirlooms!!
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
@@ -97,24 +127,51 @@ _.WorldEvents =
 							},
 						}),
 					-- Gear!!
-						i(133525),	-- Bones of the Damned
-						i(133526),	-- Lightwarper Vestments
-						i(133527),	-- Ghostworld Chestguard
-						i(133528),	-- Decaying Herbalist's Robes
-						i(133529),	-- Belt of Hidden Keys
-						i(133530),	-- Cord of Dragon Sinew
-						i(133531),	-- Blinding Girdle of Truth
-						i(133532),	-- Vestal's Irrepressible Girdle
-						i(133533),	-- Flashing Bracers of Warmth
-						i(133534),	-- Dragonbelly Bracers
-						i(133535),	-- Bracers of Manifold Pockets
-						i(133536),	-- Bracers of the Black Dream
+						i(133525, {	-- Bones of the Damned
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133526, {	-- Lightwarper Vestments
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133527, {	-- Ghostworld Chestguard
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133528, {	-- Decaying Herbalist's Robes
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133529, {	-- Belt of Hidden Keys
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133530, {	-- Cord of Dragon Sinew
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133531, {	-- Blinding Girdle of Truth
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133532, {	-- Vestal's Irrepressible Girdle
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133533, {	-- Flashing Bracers of Warmth
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133534, {	-- Dragonbelly Bracers
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133535, {	-- Bracers of Manifold Pockets
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(133536, {	-- Bracers of the Black Dream
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
 					-- Miscellaneous!!
 						i(67414, {	-- Bag of Shiny Things
-							i(44983),	-- Strand Crawler Pet
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
+							["cost"] = { { "c", 1166, 150 } },	-- 150x Timewarped Badge
+							["g"] = {
+								i(44983),	-- Strand Crawler Pet
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							},
 						}),
 					},
 				}),
