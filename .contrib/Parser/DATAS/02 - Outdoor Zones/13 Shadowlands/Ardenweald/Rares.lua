@@ -66,7 +66,7 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
-					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn. |cFFFFFFFF\nIf you loot Gormbore directly, it will only drop gray trash. If you accept a battleground queue or use some other method to get loot via Postmaster instead, then it will mail you the correct loot (possibly Lavender Nibbler).|r",
+					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn.",
 					["questID"] = 59006,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 75.8, 1565 },
@@ -134,7 +134,7 @@ _.Zones =
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
 						i(179596),	-- Drust Mask of Dominance
-					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna	
+					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna
 						i(180163),	-- Blackthorn Harvester
 						i(180143),	-- Darkreach Hacker
 						i(179593),	-- Darkreach Mask
