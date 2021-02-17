@@ -641,6 +641,13 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(60959, {	-- Burning Crusade: Onward to Adventure in Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Complete prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+				}),
 				q(29100, {	-- Bwemba's Spirit
 					["provider"] = { "n", 52654 },	-- Bwemba
 					["coord"] = { 25.9, 29.2, 84 },

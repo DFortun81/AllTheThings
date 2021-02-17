@@ -1071,6 +1071,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(11864)),	-- White Bone Spear
 					},
 				}),
+				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
+					["races"] = HORDE_ONLY,
+					["description"] = "Complete prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+				}),
 				q(29219, {	-- Bwemba's Spirit
 					["provider"] = { "n", 53081 },	-- Bwemba
 					["coord"] = { 32.6, 68.6, 85 },
@@ -2080,7 +2087,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
 				}),
-				q(60123, {	-- To Outland
+				q(60123, {	-- Burning Crusade: To Outland!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
