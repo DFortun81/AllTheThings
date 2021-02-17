@@ -3564,6 +3564,8 @@ app.BuildCrafted_IncludedItems = {};
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
+
+	-- TODO: similar to 'customCollect' showing in the BuildContains, add a property to items in the crafted contains which shows the crafting Profession
 	
 	-- track the starting item
 	tinsert(app.BuildCrafted_IncludedItems, itemID);

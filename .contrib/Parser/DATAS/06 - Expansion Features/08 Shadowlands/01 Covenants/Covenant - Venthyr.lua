@@ -1879,6 +1879,15 @@ _.ExpansionFeatures =
 										i(176097),	-- RSVP: Baroness Vashj
 									},
 								}),
+								q(61173, {	-- RSVP: Mikanikos
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
+									["provider"] = { "n", 171647 },	-- Mikanikos
+									["coord"] = { 50.1, 21.0, 1533 },	-- Bastion
+									["g"] = {
+										i(176113),	-- RSVP: Mikanikos
+										i(182114),	-- Assorted Parts and 'Things'
+									},
+								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
 							}),

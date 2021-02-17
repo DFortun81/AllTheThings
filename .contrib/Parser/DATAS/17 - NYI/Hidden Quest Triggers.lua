@@ -3615,6 +3615,8 @@ _.HiddenQuestTriggers =
 		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" - first time
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
+		q(59388),	-- when using "RSVP: Mikanikos" — every time
+		q(59389),	-- when using "RSVP: Mikanikos" — first time only
 		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
 		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124)
 		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117)
