@@ -6,6 +6,9 @@ _.Holidays = bubbleDown({["u"] = 18},
 {
 	holiday(235468, {	-- Love is in the Air
 		n(QUESTS, {
+			q(9029,  {	-- A Bubbling Cauldron
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(24635, {	-- A Cloudlet of Classy Cologne
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
@@ -334,6 +337,10 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["maps"] = { 85 },	-- Orgrimmar
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(9025,  {	-- Morgan's Discovery
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(24656, {	-- Pilfering Perfume (A)
 				["sourceQuests"] = { 24655 },	-- Something Stinks (A)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
@@ -374,15 +381,27 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
 			}),
-			q(8984,  {	-- The Source Revealed
+			q(9028,  {	-- The Source Revealed (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(8984,  {	-- The Source Revealed (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(8982,  {	-- Tracing the Source
+			q(9026,  {	-- Tracing the Source (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(9027,  {	-- Tracing the Source (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(8982,  {	-- Tracing the Source (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(8983,  {	-- Tracing the Source
+			q(8983,  {	-- Tracing the Source (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),

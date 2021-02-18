@@ -125,13 +125,19 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27282, {	-- Kranosh's Behest
-					["provider"] = { "n", 16648 },	-- Zanien
-					["coord"] = { 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
+					["providers"] = {
+						{ "n", 43881 },	-- Delano Morisett (Thunder Bluff)
+						{ "n", 4563 },	-- Kaal Soulreaper (Undercity)
+						{ "n", 16648 },	-- Zanien (Silvermoon City)
+					},
 					["classes"] = { WARLOCK },
-					["maps"] = { 88, 90, 110 },
-					["lvl"] = 20,
+					["coords"] = {
+						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
+						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
+						{ 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
 					["provider"] = { "n", 16658 },	-- Aldrae

@@ -244,6 +244,7 @@ i(169165);	-- Father's Sword
 i(128419);	-- Fel Essence (N)
 i(128420);	-- Fel Essence (H)
 i(128421);	-- Fel Essence (M)
+i(173028);	-- Flux Energized Servos
 i(169228);	-- Hazardous Container
 i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
@@ -263,9 +264,12 @@ i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
 i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
+i(122618);	-- Misprinted Draenic Coin
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
+i(172511);	-- Neural Accelerator
 i(168223);	-- Old Parchment
+i(173026);	-- Omni Electromagnetic Amplifier
 i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
