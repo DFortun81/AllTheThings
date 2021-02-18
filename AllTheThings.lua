@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local app = select(2, ...);
 local L = app.L;
@@ -1038,7 +1038,7 @@ local function VerifySourceID(item)
 	if item.link and not item.retries then
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
-		
+
 		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
@@ -2528,7 +2528,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						and (not group.achievementID or paramA == "creatureID")
 						-- not for things with a parent unless the parent has no difficultyID
 						and (not group.parent or not group.parent.difficultyID)
-						-- not for group which contains an artifact 
+						-- not for group which contains an artifact
 						and not group.g[1].artifactID
 						-- not for heirlooms
 						and not (group.filterID == 109)
@@ -3456,7 +3456,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									else
 										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 									end
-								end								
+								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
@@ -3484,7 +3484,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									else
 										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 									end
-								end								
+								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
@@ -3566,7 +3566,7 @@ app.BuildCrafted = function(item)
 	if not itemID then return; end
 
 	-- TODO: similar to 'customCollect' showing in the BuildContains, add a property to items in the crafted contains which shows the crafting Profession
-	
+
 	-- track the starting item
 	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -3660,7 +3660,7 @@ app.ExpandSubGroups_IncludedItems = {};
 app.ExpandSubGroups = function(item)
 	local itemID = item.modItemID or item.itemID;
 	if not itemID or itemID < 1 or not item.g then return; end
-	
+
 	-- print("ExpandSubGroups",itemID);
 	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
 		-- track the starting item
@@ -3674,7 +3674,7 @@ app.ExpandSubGroups = function(item)
 				modItemID = GetGroupItemIDWithModID(sub);
 				-- print("Search sub",modItemID)
 				-- find a reference to the item in the DB and add it to the group
-				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)				
+				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)
 				if clone then
 					if not clone.g then
 						clone.total = nil;
@@ -5046,7 +5046,7 @@ local function RefreshMountCollection(newMountID)
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
 		-- print("Refresh to check progress after collection...")
-		app:RefreshData(false, true);		
+		app:RefreshData(false, true);
 
 		-- Wait 2 frames before refreshing states.
 		coroutine.yield();
@@ -5295,7 +5295,7 @@ local function AttachTooltip(self)
 		end
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
-		if link then 
+		if link then
 			if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == link) then
 				return true
 			else
@@ -5303,24 +5303,24 @@ local function AttachTooltip(self)
 			end
 		else
 			 target = select(2, self:GetUnit());
-			if target then 
+			if target then
 				if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == target) then
 					return true
 				else
-					self.AllTheThingsProcessing = target	
+					self.AllTheThingsProcessing = target
 				end
 			else
 				spellID = select(2, self:GetSpell());
-				if spellID then 
+				if spellID then
 					if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == spellID) then
 						return true
-					else	
+					else
 						self.AllTheThingsProcessing = spellID
 					end
-				end	
+				end
 			end
 		end
-				
+
 		--[[--
 		-- Debug all of the available fields on the tooltip.
 		for i,j in pairs(self) do
@@ -9397,7 +9397,7 @@ end
 -- Verify no infinite parent recursion exists for a given group
 app.VerifyRecursion = function(group, checked)
 	if type(group) ~= "table" then return; end
-	if not checked then 
+	if not checked then
 		checked = { };
 		-- print("test",group.key,group[group.key]);
 	end
@@ -10700,7 +10700,7 @@ local function AdjustRowIndent(row, indentAdjust)
 	end
 	if row.Texture then
 		-- only ever LEFT point set
-		-- for i=1, row.Texture:GetNumPoints() do   
+		-- for i=1, row.Texture:GetNumPoints() do
 		-- 	print(row.Texture:GetPoint(i));
 		-- end
 		-- print("---")
@@ -15179,14 +15179,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				self:Update();
 			end
 			-- World Quests (Tasks)
-			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)	
+			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
 				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
 				-- print(#pois,"WQ in",mapID);
 				if pois then
 					for i,poi in ipairs(pois) do
-						-- only include Tasks on this actual mapID since each Zone mapID is checked individually						
+						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
 						if poi.mapID == mapID then
 							local questObject = GetPopulatedQuestObject(poi.questId);
 							if includeAll or
@@ -15205,7 +15205,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							end
 						end
 					end
-				end				
+				end
 			end
 			-- Storylines/Map Quest Icons
 			self.MergeStorylines = function(self, mapObject, includeAll, includePermanent, includeQuests)
@@ -15308,7 +15308,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 							-- Merge Storylines for Zone
 							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
-							
+
 							MergeObject(mapObject.g, subMapObject);
 						end
 					end
@@ -17409,7 +17409,7 @@ app.events.QUEST_LOG_UPDATE = function()
 	RefreshQuestCompletionState()
 end
 app.events.QUEST_ACCEPTED = function(questID)
-	if questID then		
+	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq;
 		if logIndex then

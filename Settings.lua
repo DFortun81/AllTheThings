@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local app = select(2, ...);
 local L = app.L;
@@ -36,9 +36,9 @@ settings.MostRecentTab = nil;
 settings.Tabs = {};
 settings.ModifierKeys = { "None", "Shift", "Ctrl", "Alt" };
 settings:SetBackdrop({
-	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = false, edgeSize = 16, 
+	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = false, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 });
 settings:SetBackdropColor(0, 0, 0, 1);
@@ -121,7 +121,7 @@ local GeneralSettingsBase = {
 };
 local FilterSettingsBase = {
 	__index = {
-		
+
 	},
 };
 local TooltipSettingsBase = {
@@ -196,13 +196,13 @@ settings.Initialize = function(self)
 	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
 	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
 	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
-	
+
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
-	
+
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -218,7 +218,7 @@ settings.Initialize = function(self)
 	OnClickForTab(self.Tabs[1]);
 	self:Refresh();
 	self:UpdateMode();
-	
+
 	if self:GetTooltipSetting("Auto:MainList") then
 		app:GetWindow("Prime"):Show();
 	end
@@ -252,7 +252,7 @@ settings.GetModeString = function(self)
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
 			mode = mode .. L["TITLE_MAIN_ONLY"];		-- L["TITLE_MAIN_ONLY"] = " (Main Only)";
 		end
-		
+
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
@@ -320,7 +320,7 @@ settings.GetShortModeString = function(self)
 			else
 				return style .. "U";
 			end
-		end		
+		end
 	end
 end
 settings.GetPersonal = function(self, setting)
@@ -565,7 +565,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
-		
+
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
 		app.AccountWideBattlePets = true;
@@ -581,7 +581,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideTitles = true;
 		app.AccountWideToys = true;
 		app.AccountWideTransmog = true;
-		
+
 		app.CollectibleAchievements = true;
 		app.CollectibleAzeriteEssences = true;
 		app.CollectibleBattlePets = true;
@@ -621,7 +621,7 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			app.ShowIncompleteThings = app.Filter;
 		end
-		
+
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
 		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
@@ -637,7 +637,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
-		
+
 		app.CollectibleAchievements = self:Get("Thing:Achievements");
 		app.CollectibleAzeriteEssences = self:Get("Thing:AzeriteEssences");
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
@@ -694,7 +694,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.RecipeChecker = app.GetDataSubMember;
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
-	end	
+	end
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -716,11 +716,11 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
-	
+
 	-- if auto-refresh
 	if doRefresh then
 		app:RefreshData(nil,nil,true);
-	end		
+	end
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -1746,7 +1746,7 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["FILTERS_TAB"]);
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -1847,7 +1847,7 @@ f:SetScript("OnClick", function(self)
 	app:RefreshData(nil,nil,true);
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1902,7 +1902,7 @@ f:SetScript("OnClick", function(self)
 	app:RefreshData(nil,nil,true);
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1927,7 +1927,7 @@ f:SetScript("OnClick", function(self)
 	app:RefreshData(nil,nil,true);
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1958,7 +1958,7 @@ end)();
 --[[
 (function()
 local tab = settings:CreateTab("Social");
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	-- We aren't ready yet. :(
 	PanelTemplates_DisableTab(settings, self:GetID());
 end;
@@ -1970,7 +1970,7 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["UNOBTAINABLES_TAB"]);
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -2032,8 +2032,8 @@ seasonalFrame:SetPoint("RIGHT", child, -4, 0);
 seasonalFrame:SetHeight(250);
 
 -- seasonal enable
-local seasonalEnable = child:CreateCheckBox(L["SEASONAL_ENABLE"], 
-function(self) 
+local seasonalEnable = child:CreateCheckBox(L["SEASONAL_ENABLE"],
+function(self)
 	self:SetChecked(app.GetDataMember("FilterSeasonal"));
 end,
 function(self)
@@ -2091,8 +2091,8 @@ local y = 5;
 local count = 0;
 for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] > 4 then
-		local seasonalFilter = child:CreateCheckBox(v[3], 
-		function(self) 
+		local seasonalFilter = child:CreateCheckBox(v[3],
+		function(self)
 			self:SetChecked(not app.GetDataMember("SeasonalFilters")[k]);
 			if not app.GetDataMember("FilterSeasonal") then
 				self:Disable();
@@ -2137,7 +2137,7 @@ unobtainableFrame:SetHeight(320);
 
 -- unobtainable enable
 local unobtainableEnable = child:CreateCheckBox(L["UNOBTAINABLE_ENABLE"],
-function(self) 
+function(self)
 	self:SetChecked(app.GetDataMember("FilterUnobtainableItems"));
 end,
 function(self)
@@ -2234,7 +2234,7 @@ local count = 0;
 for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1]  == 1 then
 		local filter = child:CreateCheckBox(v[3],
-		function(self) 
+		function(self)
 			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
 			if not app.GetDataMember("FilterUnobtainableItems") then
 				self:Disable();
@@ -2315,7 +2315,7 @@ local count = 0;
 for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
-		function(self) 
+		function(self)
 			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
 			if not app.GetDataMember("FilterUnobtainableItems") then
 				self:Disable();
@@ -3251,7 +3251,7 @@ local ids = {["achievementID"] = "Achievement ID",
 local last = nil;
 for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","iconPath"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)
@@ -3268,7 +3268,7 @@ end
 last = nil;
 for _,id in pairs({"illusionID","instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)

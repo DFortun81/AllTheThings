@@ -1312,7 +1312,7 @@ _.ExpansionFeatures =
 							-- Spirits/Transmog
 							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
 							n(-931, {		-- Lesser Spirit
-								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. Its possible to receive rewards from higher quality spirits of the same type as well.",
+								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. It's possible to receive rewards from higher quality spirits of the same type as well.",
 								["g"] = {
 									i(177698, {		--	Untamed Spirit Ardenweald (Uncommon)
 										i(179548),		-- Elderwood Gavel
