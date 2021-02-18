@@ -61,18 +61,22 @@ _.Holidays =
 							["u"] = 19,	-- Noblegarden Filter
 							["g"] = {
 								crit(1, {	-- Azure Watch
+									["races"] = ALLIANCE_ONLY,
 									["maps"] = { 97 },	-- Azuremyst Isle
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(2, {	-- Dolanaar
+									["races"] = ALLIANCE_ONLY,
 									["maps"] = { 57 },	-- Teldrassil
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(3, {	-- Goldshire
+									["races"] = ALLIANCE_ONLY,
 									["maps"] = { 37 },	-- Elwynn Forest
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(4, {	-- Kharanos
+									["races"] = ALLIANCE_ONLY,
 									["maps"] = { 27 },	-- Dun Morogh
 									["u"] = 19,	-- Noblegarden Filter
 								}),
@@ -83,18 +87,22 @@ _.Holidays =
 							["u"] = 19,	-- Noblegarden Filter
 							["g"] = {
 								crit(1, {	-- Bloodhoof Village
+									["races"] = HORDE_ONLY,
 									["maps"] = { 7 },	-- Bloodhoof Village
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(2, {	-- Brill
+									["races"] = HORDE_ONLY,
 									["maps"] = { 18 },	-- Tirisfal Glades
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(3, {	-- Falconwing Square
+									["races"] = HORDE_ONLY,
 									["maps"] = { 94 },	-- Eversong Woods
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(4, {	-- Razor Hill
+									["races"] = HORDE_ONLY,
 									["maps"] = { 1 },	-- Durotar
 									["u"] = 19,	-- Noblegarden Filter
 								}),
