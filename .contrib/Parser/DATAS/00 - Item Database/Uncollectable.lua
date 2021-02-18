@@ -369,6 +369,9 @@ i(171315); 	-- Reuse me (MTMM)
 -- "Toy"
 i(184505);	-- "Adorable Ascended" Costume
 i(180372);	-- Amalgamation of Sin
+i(180979);	-- Artisan's Large Satchel
+i(180976);	-- Artisan's Satchel
+i(180983);	-- Artisan's Stuffed Satchel
 i(173791);	-- Baguette
 i(181362);	-- Blob of Slime
 i(171209);	-- Blooded Satchel
@@ -388,6 +391,10 @@ i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
 i(173785);	-- Hidden Banana
 i(173784);	-- Hoppy Mead
+i(180980);	-- Journeyman's Large Satchel
+i(180988);	-- Journeyman's Overflowing Satchel
+i(180975);	-- Journeyman's Satchel
+i(180984);	-- Journeyman's Stuffed Satchel
 i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(184043);	-- Lost Scroll
@@ -395,6 +402,10 @@ i(173781);	-- Lost Watermelon
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(183734);	-- Mysteriously Thrumming Orb
+i(180981);	-- Novice's Large Satchel
+i(180989);	-- Novice's Overflowing Satchel
+i(180974);	-- Novice's Satchel
+i(180985);	-- Novice's Stuffed Satchel
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(179392);	-- Orb of Burgeoning Ambition
