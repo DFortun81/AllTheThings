@@ -47,6 +47,16 @@ _.WorldEvents =
 			}),
 			n(-544, {	-- WoW Collector's Edition
 				tier(1, {	-- Classic
+					q(8547, {	-- Welcome! (Blood Elf)
+						["provider"] = { "i", 20938 },	-- Falconwing Square Gift Voucher
+						["races"] = { BLOODELF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(9278, {	-- Welcome! (Draenei)
+						["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
+						["races"] = { DRAENEI },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(5841, {	-- Welcome! (Dwarf)
 						["provider"] = { "i", 14647 },	-- Kharanos Gift Voucher
 						["races"] = { DWARF },
@@ -148,8 +158,8 @@ _.WorldEvents =
 						["illusionID"] = 6162,	-- for some reason without this it wants to be ID #6258, which is Sinwrath's ID
 					})),
 					un(BLIZZARD_BALANCE, q(57686, {			-- The Eternal Traveler
-						["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 						["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+						["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 						["g"] = {
 							spell(309452, {	-- Vestments of the Eternal Traveler
 								i(172075),	-- Eternal Traveler's Guise

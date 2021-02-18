@@ -522,6 +522,10 @@ _.Zones =
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(9304,  {	-- Document from the Front
+					["provider"] = { "i", 22948 },	-- A Smudged Document
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(6135,  {	-- Duskwing, Oh How I Hate Thee...
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
@@ -540,6 +544,10 @@ _.Zones =
 						i(62999),	-- Corpseburner's Mantle
 						i(62990),	-- Bat Claw Legguards
 					},
+				}),
+				q(9301,  {	-- Envelope from the Front
+					["provider"] = { "i", 22930 },	-- A Bloodstained Envelope
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9222,  {	-- Epic Armaments of Battle - Friend of the Dawn
 					["repeatable"] = true,
@@ -873,10 +881,18 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
+				q(9302,  {	-- Missive from the Front
+					["provider"] = { "i", 22944 },	-- A Crumpled Missive
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27489, {	-- Nobody to Blame but Myself
 					["sourceQuests"] = { 27488 },	-- Impatience
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, 23 },
+				}),
+				q(9299,  {	-- Note from the Front
+					["provider"] = { "i", 22945 },	-- A Careworn Note
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5781,  {	-- Of Forgotten Memories
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
@@ -905,6 +921,10 @@ _.Zones =
 					},
 					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 60.6, 43.4, 23 },
+				}),
+				q(9300,  {	-- Page from the Front
+					["provider"] = { "i", 22946 },	-- A Ragged Page
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5149,  {	-- Pamela's Doll
 					["sourceQuests"] = {

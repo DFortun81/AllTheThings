@@ -622,6 +622,11 @@ _.Zones =
 					["coord"] = { 85.7, 32.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(9292,  {	-- Cracked Necrotic Crystal
+					["provider"] = { "n", 16531 },	-- Faint Necrotic Crystal
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(32469, {	-- Crystal Clarity
 					["sourceQuests"] = { 32470 },	-- Light Camera Action
 					["collectible"] = false,
