@@ -442,7 +442,7 @@ _.ExpansionFeatures =
 							59246,	-- Daughter of the Night Warrior (Horde)
 							59179,	-- Daughter of the Night Warrior (Alliance)
 						},
-						["provider"] = { "n", 164292 },	-- Shandris Feathermoon
+						["provider"] = { "n", 164277 },	-- Shandris Feathermoon
 						["coord"] = { 39.2, 67.2, 1670 },
 					}),
 					q(60508, {	-- On the Trail
