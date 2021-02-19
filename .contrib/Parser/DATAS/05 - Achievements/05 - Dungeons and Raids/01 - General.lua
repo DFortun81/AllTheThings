@@ -179,6 +179,15 @@ _.Achievements =
 			}),
 			ach(13315, {	-- Glory of the Dazar'alor Raider
 				i(166539),		-- Dazar'alor Windreaver
+				ach(13316),		-- Can I Get a Hek Hek Hek Yeah?
+				ach(13325),		-- Walk the Dinosaur
+				ach(13345),		-- Praise the Sunflower
+				ach(13383),		-- Barrel of Monkeys
+				ach(13410),		-- Snow Fun Allowed
+				ach(13401),		-- I Got Next!
+				ach(13431),		-- Hidden Dragon
+				ach(13430),		-- De Lurker Be'loa
+				ach(13425),		-- We Got Spirit, How About You?
 			}),
 			ach(9396, {		-- Glory of the Draenor Hero
 				i(116670),		-- Frostplains Battleboar
