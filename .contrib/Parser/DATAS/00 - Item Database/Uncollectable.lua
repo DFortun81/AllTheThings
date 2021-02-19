@@ -274,6 +274,7 @@ i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
 i(169325);	-- Petrified Ebony Scale
+i(171989);	-- Pouch of Spores
 i(174078);	-- Primrose's Pyrotechnic Powder
 i(169237);	-- Pulsating Marble
 i(168184);	-- Rare Metal
@@ -317,6 +318,7 @@ i(180207);	-- Spirit Cradle
 i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
 i(146682);	-- Suramari Soul-Wraps
+i(178033);	-- Talkative Spore
 i(169247);	-- Throwing Rocks
 i(146698);	-- Torn Bracers of the First War
 i(169226);	-- Torn Sheet Music
