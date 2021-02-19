@@ -47,7 +47,7 @@ _.Zones =
 					--[[
 				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
 					q(62289, {	-- Observing Conflict
-						["provider"] = { "n",  },	-- 
+						["provider"] = { "n",  },	--
 						["isWeekly"] = true,
 						["coord"] = { , , 1670 },
 						["_drop"] = { "g" },	-- drop anima trash
@@ -184,7 +184,7 @@ _.Zones =
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				q(60136, {	-- Into Torghast
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						63029,	-- The Highlord Calls (Kyrian)
 						63030,	-- The Highlord Calls (Night Fae)
 						63032,	-- The Highlord Calls (Necrolords)
@@ -212,9 +212,7 @@ _.Zones =
 					["coord"] = { 39.7, 66.1, 1670 },
 				}),
 				q(62935, {	-- Remnants of Hope
-				--	reputation requirement may change in the future, but this quest was unavailable to me until hitting Tentative (despite having met the SQ requirement + doing Torghast weeks before)
 					["sourceQuests"] = { 62932 },	-- Explore Torghast
-					["description"] = "Requires Tentative reputation with Ve'nari.",
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
@@ -445,7 +443,7 @@ _.Zones =
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 63209 },	-- Furthering the Purpose
 				}),
-				
+
 				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -545,7 +543,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62279 },	-- Revendreth
 				}),
-				
+
 				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
 				-- Ardenweald
 				q(62763, {	-- Support the Court
@@ -716,7 +714,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(60491, {	-- Among the Kyrian
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						57878,	-- Choosing Your Purpose [Story]
 						63211,	-- Report to Adrestes [Skip]
 					 },
@@ -735,7 +733,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(58609, {	-- Taking The Seat
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						57878,	-- Choosing Your Purpose [Story]
 						63212,	-- Report to Mevix [Skip]
 					},
@@ -745,7 +743,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				-- Revendreth
-				
+
 
 				--[[ quest was in beta but still has not been seen in game
 				q(60286, {	-- A Token of Our Admiration
