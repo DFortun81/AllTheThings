@@ -393,6 +393,7 @@ i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
 i(173785);	-- Hidden Banana
 i(173784);	-- Hoppy Mead
+i(183822);	-- Icecrown Survival Kit
 i(180980);	-- Journeyman's Large Satchel
 i(180988);	-- Journeyman's Overflowing Satchel
 i(180975);	-- Journeyman's Satchel
