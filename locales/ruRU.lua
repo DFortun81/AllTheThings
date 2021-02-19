@@ -628,7 +628,7 @@ for key,value in pairs({
 		[-149] = "Солнечная душа",
 		[-150] = "Искатель троп",
 		[-152] = "Гарнизонная кампания",
-		[-154] = "110-й Уровень",									-- Level 110 TODO: level
+		[-154] = "48-й Уровень",									-- Level 48 (old level 110)
 		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
 		[-158] = "Фералас - активирован",							-- Feralas Activated
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll

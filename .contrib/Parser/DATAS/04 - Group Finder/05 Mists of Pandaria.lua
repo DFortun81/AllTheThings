@@ -101,7 +101,6 @@ _.GroupFinder =
 			},
 		}),
 		i(98133, {	-- Greater Cache of Treasures
-			["lvl"] = 85,
 			["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 			["g"] = {
 				i(92821),	-- Bladesnap Breastplate
@@ -250,8 +249,6 @@ _.GroupFinder =
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
 			["u"] = REMOVED_FROM_GAME,
-			["lvl"] = 90,
-			-- ["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 			["g"] = {
 				i(92821),	-- Bladesnap Breastplate
 				i(92881),	-- Bladesnap Drape
@@ -387,8 +384,7 @@ _.GroupFinder =
 			},
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
-			["lvl"] = 90,
-			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario at 90.",
+			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
 			["g"] = {
 				i(98209),	-- Ale-Boiled Bindings
 				i(98203),	-- Ale-Boiled Boots

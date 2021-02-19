@@ -314,14 +314,13 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-10067,  {	-- Artifact
-						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = 110,
+					n(-10067, {	-- Artifact
+						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+						["lvl"] = { 45 },
 						["g"] = {
-							{	-- Luminous Pearl
-								["itemID"] = 133887,	-- Luminous Pearl (Item)
-								["questID"] = 40960,	-- Luminous Pearl (Quest)
-							}
+							q(40960, {	-- Luminous Pearl
+								["provider"] = { "i", 133887 },	-- Luminous Pearl
+							}),
 						},
 					}),
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
@@ -331,7 +330,7 @@ _.Zones =
 				}),
 				prof(HERBALISM, {
 					q(40013, {	-- Aethril Sample
-						["itemID"] = 129117,	-- Aethril Sample
+						i(129117),	-- Aethril Sample
 					}),
 					i(129135, {	-- Ragged Strips of Silk
 						q(40015),	-- Ragged Strips of Silk

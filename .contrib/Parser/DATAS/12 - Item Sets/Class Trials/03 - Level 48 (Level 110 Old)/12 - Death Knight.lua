@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 110
+		n(-154, {	-- Level 48
 			n(-142, {	-- Heart-Lesion
 				["classes"] = { DEATHKNIGHT },
 				["groups"] = {
