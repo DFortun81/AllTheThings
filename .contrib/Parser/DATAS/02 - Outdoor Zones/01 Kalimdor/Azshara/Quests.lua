@@ -8,49 +8,49 @@ _.Zones =
 		m(76, {	-- Azshara
 			n(QUESTS, {
 				q(3382,  {	-- A Crew Under Fire
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8380 },	-- Captain Vanessa Beltis
 					["repeatable"] = true,
+					["provider"] = { "n", 8380 },	-- Captain Vanessa Beltis
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14371, {	-- A Gigantic Snack
+					["sourceQuests"] = { 14310 },	-- Segmentation Fault: Core Dumped
 					["provider"] = { "n", 36077 },	-- Assistant Greely
 					["coord"] = { 50.4, 74.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14310,	-- Segmentation Fault: Core Dumped
 				}),
 				q(24458, {	-- A Hello to Arms
+					["sourceQuests"] = { 14388 },	-- Azsharite Experiment Number Two
 					["provider"] = { "n", 36379 },	-- Hobart Grapplehammer
 					["coord"] = { 50.3, 74.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14388,	-- Azsharite Experiment Number Two
 				}),
 				q(7486,  {	-- A Hero's Reward
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18399)),	-- Ocean's Breeze
 						un(REMOVED_FROM_GAME, i(18398)),	-- Tidal Loop
 					},
 				}),
 				q(5536,  {	-- A Land Filled with Hatred
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11548 },	-- Loh'atu
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14131, {	-- A Little Pick-me-up
+					["sourceQuests"] = { 14130 },	-- Friends Come in All Colors
 					["provider"] = { "n", 35142 },	-- Ergll
 					["coord"] = { 70.3, 36.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(3381,  {	-- A Meeting with the Master
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8395 },	-- Sanath Lim-yo
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14432, {	-- A Pale Brew
+					["sourceQuests"] = { 14431 },	-- The Blackmaw Scar
 					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist
 					["coord"] = { 42.4, 23.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
 				q(46177, {	-- A Portal Away
 					["sourceQuests"] = { 44924 },	-- The Archmage Accosted
@@ -63,7 +63,6 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.2, 37.9, 76 },
-					["lvl"] = 110,
 				}),
 				q(14197, {	-- A Quota to Meet
 					["provider"] = { "n", 35085 },	-- Foreman Fisk
@@ -71,28 +70,28 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14201, {	-- A Thousand Stories in the Sand
+					["sourceQuests"] = { 24453 },	-- Private Chat
 					["provider"] = { "n", 35087 },	-- Malynea Skyreaver
 					["coord"] = { 29.6, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24453,	-- Private Chat
 				}),
 				q(14323, {	-- Absorbent
+					["sourceQuests"] = { 14130 },	-- Friends Come in All Colors
 					["provider"] = { "n", 35142 },	-- Ergll
 					["coord"] = { 70.3, 36.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(6823,  {	-- Agent of Hydraxis
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 6822 },	-- The Molten Core
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
-					["sourceQuest"] = 6822,	-- The Molten Core
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24497, {	-- Airborne Again
+					["sourceQuests"] = { 14392 },	-- Farewell, Minnow
 					["provider"] = { "n", 37142 },	-- Gurlorn
 					["coord"] = { 52.9, 49.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14392,	-- Farewell, Minnow
 				}),
 				q(14428, {	-- Amberwind's Journal
 					["provider"] = { "n", 36596 },	-- Andorel Sunsworn
@@ -100,18 +99,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14468, {	-- Another Warm Body
-					["provider"] = { "n", 36752 },	-- Private Worcester
-					["coord"] = { 29.4, 66.8, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14197,	-- A Quota to Meet
 						14161,	-- Basilisk Bashin'
 						14194,	-- Refleshification
 					},
+					["provider"] = { "n", 36752 },	-- Private Worcester
+					["coord"] = { 29.4, 66.8, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(14155, {	-- Arborcide
+					["sourceQuests"] = { 14146 },	-- Defend the Gates!
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14146,	-- Defend the Gates!
 					["g"] = {
 						i(53452),	-- Woodchipper Dagger
 						i(53407),	-- Chopped Off Ancient Limb
@@ -119,11 +118,11 @@ _.Zones =
 					},
 				}),
 				q(14429, {	-- Arcane De-Construction
+					["sourceQuests"] = { 14428 },	-- Amberwind's Journal
+					["provider"] = { "o", 196832 },	-- Upper Scrying Stone
 					["model"] = 125825,
 					["coord"] = { 49.5, 28.7, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 196832 },	-- Upper Scrying Stone
-					["sourceQuest"] = 14428,	-- Amberwind's Journal
 				}),
 				q(14407, {	-- Azshara Blues
 					["provider"] = { "n", 36999 },	-- Teemo
@@ -131,26 +130,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3602,  {	-- Azsharite
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3511 },	-- The Name of the Beast
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
-					["sourceQuest"] = 3511,	-- The Name of the Beast
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14385, {	-- Azsharite Experiment Number One
+					["sourceQuests"] = { 14377 },	-- Befriending Giants
 					["provider"] = { "n", 36077 },	-- Assistant Greely
 					["coord"] = { 50.3, 74.3, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14377,	-- Befriending Giants
 				}),
 				q(14388, {	-- Azsharite Experiment Number Two
+					["sourceQuests"] = { 14385 },	-- Azsharite Experiment Number One
 					["provider"] = { "n", 36077 },	-- Assistant Greely
 					["coord"] = { 50.3, 74.3, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14385,	-- Azsharite Experiment Number One
 				}),
 				q(8575,  {	-- Azuregos's Magical Ledger
+					["provider"] = { "i", 20949 },	-- Magical Ledger -- part of the Scepter of Shifting Sands questline
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 20949 }	-- Magical Ledger -- part of the Scepter of Shifting Sands questline
 				}),
 				q(14322, {	-- Bad Science! Bad!
 					["provider"] = { "n", 36146 },	-- Twistex Happytongs
@@ -158,50 +157,46 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14161, {	-- Basilisk Bashin'
+					["sourceQuests"] = { 14162 },	-- Report to Horzak
 					["provider"] = { "n", 35091 },	-- Horzak Zignibble
 					["coord"] = { 29.1, 66.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14162,	-- Report to Horzak
 				}),
 				q(26337, {	-- Beating the Market
-					["lvl"] = 84,
-					["model"] = 365176,
+					["sourceQuests"] = { 26335 },	-- Ready the Navy
+					["provider"] = { "o", 204050 },	-- Foebreaker Blueprints
 					["coord"] = { 53.5, 47.5, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 204050 },	-- Foebreaker Blueprints
-					["sourceQuest"] = 26335,	-- Ready the Navy
+					["model"] = 365176,
 				}),
 				q(14377, {	-- Befriending Giants
-					["provider"] = { "n", 36077 },	-- Assistant Greely
-					["coord"] = { 50.4, 74.3, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14371,	-- A Gigantic Snack
 						14370,	-- Mysterious Azsharite
 					},
+					["provider"] = { "n", 36077 },	-- Assistant Greely
+					["coord"] = { 50.4, 74.3, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(3505,  {	-- Betrayed
+					["sourceQuests"] = { 3504 },	-- Betrayed
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
 					["coord"] = { 26.0, 76.0, 76 },
-					["sourceQuest"] = 3504,	-- Betrayed
 					["races"] = HORDE_ONLY,
-					["lvl"] = 44,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3506,  {	-- Betrayed
+					["sourceQuests"] = { 3505 },	-- Betrayed
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
 					["coord"] = { 26.0, 76.0, 76 },
-					["sourceQuest"] = 3505,	-- Betrayed
 					["races"] = HORDE_ONLY,
-					["lvl"] = 44,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3507,  {	-- Betrayed
+					["sourceQuests"] = { 3506 },	-- Betrayed
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
 					["coord"] = { 26.0, 76.0, 76 },
-					["sourceQuest"] = 3506,	-- Betrayed
 					["races"] = HORDE_ONLY,
-					["lvl"] = 44,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11120)),	-- Belgrom's Hammer
@@ -209,19 +204,19 @@ _.Zones =
 					},
 				}),
 				q(24430, {	-- Blacken the Skies
-					["provider"] = { "n", 36903 },	-- Jr. Bombardier Hackel
-					["coord"] = { 14.4, 65.7, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						24433,	-- Let Them Feast on Fear
 						14477,	-- Push the Button!
 					},
+					["provider"] = { "n", 36903 },	-- Jr. Bombardier Hackel
+					["coord"] = { 14.4, 65.7, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(3508,  {	-- Breaking the Ward
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3141 },	-- Loramus
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
-					["sourceQuest"] = 3141,	-- Loramus
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24434, {	-- Commando Drop
 					["provider"] = { "n", 36919 },	-- Andorel Sunsworn
@@ -229,62 +224,62 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14146, {	-- Defend the Gates!
+					["sourceQuests"] = { 14135 },	-- Up a Tree
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14135,	-- Up a Tree
 				}),
 				q(3542,  {	-- Delivery to Andron Gant
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
-					["sourceQuest"] = 3517,	-- Stealing Knowledge,
-				}),
-				q(3561, {	-- Delivery to Archmage Xylem
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+				}),
+				q(3561,  {	-- Delivery to Archmage Xylem
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge
 					["provider"] = { "n", 8587 },	-- Jediga
-					["sourceQuest"] = 3517,	-- Stealing Knowledge
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3542,  {	-- Delivery to Archmage Xylem
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
-					["sourceQuest"] = 3517,	-- Stealing Knowledge,
-				}),
-				q(3541, {	-- Delivery to Jes'rimon
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+				}),
+				q(3541,  {	-- Delivery to Jes'rimon
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge
 					["provider"] = { "n", 8587 },	-- Jediga
-					["sourceQuest"] = 3517,	-- Stealing Knowledge
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3542,  {	-- Delivery to Jes'rimon
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
-					["sourceQuest"] = 3517,	-- Stealing Knowledge
-				}),
-				q(3518, {	-- Delivery to Magatha
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+				}),
+				q(3518,  {	-- Delivery to Magatha
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge
 					["provider"] = { "n", 8587 },	-- Jediga
-					["sourceQuest"] = 3517,	-- Stealing Knowledge
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3542,  {	-- Delivery to Magatha
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3517 },	-- Stealing Knowledge,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
-					["sourceQuest"] = 3517,	-- Stealing Knowledge,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14433, {	-- Diplomacy by Another Means
+					["sourceQuests"] = { 14431 },	-- The Blackmaw Scar
 					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist
 					["coord"] = { 42.4, 23.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
 				q(14423, {	-- Dozercism
+					["sourceQuests"] = { 14209 },	-- Gunk in the Trunk
 					["provider"] = { "n", 35088 },	-- Custer Clubnik
 					["coord"] = { 29.5, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14209,	-- Gunk in the Trunk
 					["g"] = {
 						i(53447),	-- Standard Issue Airborne Belt
 						i(53405),	-- Bulldozer Vest
@@ -293,40 +288,40 @@ _.Zones =
 					},
 				}),
 				q(14340, {	-- Dressed to Impress
+					["sourceQuests"] = { 14345 },	-- Wash Out
 					["provider"] = { "n", 36210 },	-- Sorata Firespinner
 					["coord"] = { 42.6, 25.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14345,	-- Wash Out
 				}),
 				q(14390, {	-- Easy is Boring
+					["sourceQuests"] = { 14389 },	-- Wasn't it Obvious?
 					["coord"] = { 27.8, 41.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14389,	-- Wasn't it Obvious?
 				}),
 				q(14480, {	-- Extermination
+					["sourceQuests"] = { 24448 },	-- Field Promotion
 					["provider"] = { "n", 36895 },	-- Sergeant Zelks
 					["coord"] = { 34.4, 44.7, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24448,	-- Field Promotion
 					["g"] = {
 						i(53453),	-- Wrenchmen Belt
 						i(53418),	-- Honorary Gob Squad Shield
 					},
 				}),
 				q(6821,  {	-- Eye of the Emberseer
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
 					["sourceQuests"] = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
+					["provider"] = { "n", 13278 },	-- Duke Hydraxis
+					["coord"] = { 79.3, 73.7, 76 },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24467, {	-- Fade to Black
+					["sourceQuests"] = { 14391 },	-- Turning the Tables
 					["provider"] = { "n", 35867 },	-- Kalec
 					["coord"] = { 66.5, 20.3, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14391,	-- Turning the Tables
 					["g"] = {
 						i(53402),	-- Blue Hide Vest
 						i(53423),	-- Kalecgos' Gift
@@ -334,26 +329,26 @@ _.Zones =
 					},
 				}),
 				q(14392, {	-- Farewell, Minnow
+					["sourceQuests"] = {
+						24467,	-- Fade to Black
+						14261,	-- Ice Code
+						14297,	-- Pro-liberation
+					},
 					["provider"] = { "n", 36676 },	-- Azuregos
 					["coord"] = { 66.8, 20.5, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(53057),	-- Faded Wizard Hat
 					},
-					["sourceQuests"] = {
-						24467,	-- Fade to Black
-						14261,	-- Ice Code
-						14297,	-- Pro-liberation
-					},
 				}),
 				q(24448, {	-- Field Promotion
-					["provider"] = { "n", 36920 },	-- Lieutenant Drex
-					["coord"] = { 41.4, 53.6, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						24436,	-- Halo Drops
 						24435,	-- Mop Up
 					},
+					["provider"] = { "n", 36920 },	-- Lieutenant Drex
+					["coord"] = { 41.4, 53.6, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(24437, {	-- First Come, First Served
 					["provider"] = { "n", 36795 },	-- Ruckus
@@ -361,10 +356,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14471, {	-- First Degree Mortar
+					["sourceQuests"] = { 14468 },	-- Another Warm Body
 					["provider"] = { "n", 36746 },	-- Xiz "The Eye" Salvoblast
 					["coord"] = { 29.1, 57.9, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14468,	-- Another Warm Body
 					["g"] = {
 						i(53422),	-- Kaboom Leggings
 						i(53430),	-- Mortar-Slinger Belt
@@ -373,23 +368,23 @@ _.Zones =
 					},
 				}),
 				q(9364,  {	-- Fragmented Magic (removed with Cataclysm)
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 9362 },	-- Warlord Krellian
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
-					["sourceQuest"] = 9362,	-- Warlord Krellian
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						spell(28272),	-- Polymorph: Pig
 					},
 				}),
 				q(14130, {	-- Friends Come In All Colors
+					["sourceQuests"] = { 14407 },	-- Azshara Blues
 					["provider"] = { "n", 35867 },	-- Kalec
 					["coord"] = { 55.4, 52.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14407,	-- Azshara Blues
 				}),
 				q(14324, {	-- Full of Hot Water
+					["sourceQuests"] = { 14323 },	-- Absorbent
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14323,	-- Absorbent
 					["g"] = {
 						i(53445),	-- Spongy Vest
 						i(53438),	-- Scalding Gloves
@@ -402,17 +397,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14209, {	-- Gunk in the Trunk
+					["sourceQuests"] = { 14202 },	-- Survey the Lakeshore
 					["provider"] = { "n", 35088 },	-- Custer Clubnik
 					["coord"] = { 29.6, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14202,	-- Survey the Lakeshore
 				}),
 				q(14430, {	-- Hacking the Construct
-					["model"] = 125825,
+					["sourceQuests"] = { 14429 },	-- Arcane De-Construction
+					["provider"] = { "o", 196833 },	-- Lower Scrying Stone
 					["coord"] = { 52.9, 29.0, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 196833 },	-- Lower Scrying Stone
-					["sourceQuest"] = 14429,	-- Arcane De-Construction
+					["model"] = 125825,
 					["g"] = {
 						i(53426),	-- Mage Bracers
 						i(53414),	-- Hacker's Leggings
@@ -420,10 +415,10 @@ _.Zones =
 					},
 				}),
 				q(24436, {	-- Halo Drops
+					["sourceQuests"] = { 14479 },	-- There are Many Like It
 					["provider"] = { "n", 36921 },	-- Sergeant Hort
 					["coord"] = { 41.3, 53.9, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14479,	-- There are Many Like It
 					["g"] = {
 						i(53410),	-- Disposable Cloak
 						i(53419),	-- Hort's Axe
@@ -431,22 +426,22 @@ _.Zones =
 					},
 				}),
 				q(14469, {	-- Hand-me-downs
+					["sourceQuests"] = { 14468 },	-- Another Warm Body
 					["provider"] = { "n", 36749 },	-- Commander Molotov
 					["coord"] = { 29.4, 57.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14468,	-- Another Warm Body
 				}),
 				q(6824,  {	-- Hands of the Enemy
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 6823 },	-- Agent of Hydraxis
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
-					["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14486, {	-- Handling the Goods
+					["sourceQuests"] = { 24448 },	-- Field Promotion
 					["provider"] = { "n", 36894 },	-- Tora Halotrix
 					["coord"] = { 34.5, 44.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24448,	-- Field Promotion
 					["g"] = {
 						i(53411),	-- Eldarath Staff
 						i(53433),	-- Quick Buck Leggings
@@ -454,49 +449,48 @@ _.Zones =
 					},
 				}),
 				q(14484, {	-- Head of the Snake
+					["sourceQuests"] = { 24448 },	-- Field Promotion
 					["provider"] = { "n", 36895 },	-- Sergeant Zelks
 					["coord"] = { 34.4, 44.7, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24448,	-- Field Promotion
 				}),
 				q(14261, {	-- Ice Cold
+					["sourceQuests"] = { 14391 },	-- Turning the Tables
 					["provider"] = { "n", 37064 },	-- Feno Blastnoggin
 					["coord"] = { 66.5, 19.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14391,	-- Turning the Tables
 				}),
 				q(45570, {	-- In Safer Hands -- possibly legacy now that mage tower is unavailable?
 					["provider"] = { "n", 117252 },	-- Archmage Xylem
 					["coord"] = { 25.2, 38.0, 76 },
-					["lvl"] = 110,
-					["u"] = 41,		-- Was part of the quest to unlock appearance and can't get anymore
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14472, {	-- In The Face!
-					["provider"] = { "n", 36744 },	-- Glix Grindlock
-					["coord"] = { 29.3, 57.6, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14471,	-- First Degree Mortar
 						14469,	-- Hand-me-Downs
 						14470,	-- Military Breakthrough
 					},
+					["provider"] = { "n", 36744 },	-- Glix Grindlock
+					["coord"] = { 29.3, 57.6, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(14267, {	-- Investigating the Sea Shrine
+					["sourceQuests"] = { 14258 },	-- Mortar the Point
 					["provider"] = { "n", 35657 },	-- Torg Twocrush
 					["coord"] = { 50.6, 75.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14258,	-- Mortar the Point
 				}),
 				q(3601,  {	-- Kim'jael Indeed!
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8420 },	-- Kim'jael
 					["coord"] = { 53.5, 21.8, 76 },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5534,  {	-- Kim'jael's Missing Equipment
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3601 },	-- Kim'jael Indeed!
 					["provider"] = { "n", 8420 },	-- Kim'jael
 					["coord"] = { 53.5, 21.8, 76 },
-					["sourceQuest"] = 3601,	-- Kim'jael Indeed!
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24433, {	-- Let Them Feast on Fear
 					["provider"] = { "n", 36730 },	-- Chawg
@@ -504,10 +498,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14464, {	-- Lightning Strike Assassination
+					["sourceQuests"] = { 14462 },	-- Where's My Head?
 					["provider"] = { "n", 36729 },	-- Slinky Sharpshiv
 					["coord"] = { 12.5, 67.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14462,	-- Where's My Head?
 					["g"] = {
 						i(53425),	-- Low-Altitude Parachute
 						i(53412),	-- Gloves of Unmitigated Badassery
@@ -515,14 +509,12 @@ _.Zones =
 					},
 				}),
 				q(3141,  {	-- Loramus
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 2744 },	-- The Demon Hunter
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
-					["sourceQuest"] = 2744,	-- The Demon Hunter
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8250,  {	-- Magecraft
-					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 3047 },	-- Archmage Shymm <Mage Trainer>
 						{ "n", 7312 },	-- Dink <Mage Trainer>
@@ -530,44 +522,46 @@ _.Zones =
 						{ "n", 16652 },	-- Quithas <Mage Trainer>
 						{ "n", 7311 },	-- Uthel'nay
 					},
+					["classes"] = { MAGE },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8251,  {	-- Magic Dust
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14230, {	-- Manual Labor
-					["provider"] = { "n", 35756 },	-- Teresa Spireleaf
-					["coord"] = { 47.2, 21.2, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14250,	-- Renewable Resource
 						14249,	-- Shear Will
 						14263,	-- Waste of Thyme
 					},
+					["provider"] = { "n", 35756 },	-- Teresa Spireleaf
+					["coord"] = { 47.2, 21.2, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(3503,  {	-- Meeting with the Master
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8395 },	-- Sanath Lim-yo
 					["repeatable"] = true,
+					["provider"] = { "n", 8395 },	-- Sanath Lim-yo
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14215, {	-- Memories of the Dead
+					["sourceQuests"] = { 14201 },	-- A Thousand Stories in the Sand
 					["provider"] = { "n", 35087 },	-- Malynea Skyreaver
 					["coord"] = { 29.6, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14201,	-- A Thousand Stories in the Sand
 				}),
 				q(14470, {	-- Military Breakthrough
+					["sourceQuests"] = { 14468 },	-- Another Warm Body
 					["provider"] = { "n", 36744 },	-- Glix Grindlock
 					["coord"] = { 29.3, 57.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14468,	-- Another Warm Body
 				}),
 				q(24435, {	-- Mop Up
+					["sourceQuests"] = { 14479 },	-- There are Many Like It
 					["provider"] = { "n", 36920 },	-- Lieutenant Drex
 					["coord"] = { 41.5, 53.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14479,	-- There are Many Like It
 				}),
 				q(14258, {	-- Mortar the Point
 					["provider"] = { "n", 35817 },	-- Bombardier Captian Smooks
@@ -575,22 +569,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14442, {	-- My Favorite Subject
+					["sourceQuests"] = { 14322 },	-- Bad Science!  Bad!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36146 },	-- Twistex Happytongs
 					["coord"] = { 45.0, 75.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14322,	-- Bad Science!  Bad!
-					["isBreadcrumb"] = true,
 				}),
 				q(14370, {	-- Mysterious Azsharite
+					["sourceQuests"] = { 14310 },	-- Segmentation Fault: Core Dumped
 					["provider"] = { "n", 36077 },	-- Assistant Greely
 					["coord"] = { 50.4, 74.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14310,	-- Segmentation Fault: Core Dumped
 				}),
 				q(14216, {	-- Mystery of the Sarcen Stone
+					["sourceQuests"] = { 14215 },	-- Memories of the Dead
 					["coord"] = { 37.5, 74.5, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14215,	-- Memories of the Dead
 					["g"] = {
 						i(53404),	-- Bottom-Wader Boots
 						i(53435),	-- Restored Mennaran Plate
@@ -598,33 +592,33 @@ _.Zones =
 					},
 				}),
 				q(14424, {	-- Need More Science
+					["sourceQuests"] = { 14423 },	-- Dozercism
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 35088 },	-- Custer Clubnik
 					["coord"] = { 29.5, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14423,	-- Dozercism
-					["isBreadcrumb"] = true,
 				}),
 				q(14408, {	-- Nine's Plan
+					["sourceQuests"] = { 14442 },	-- My Favorite Subject
 					["provider"] = { "n", 36500 },	-- Subject Nine
 					["coord"] = { 42.2, 76.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14442,	-- My Favorite Subject
 				}),
 				q(14478, {	-- Operation Fishgut
-					["model"] = 333925,
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24452,	-- Profitability Scouting
-					["coords"] = {
-						{ 56.9, 50.1, 76 },	-- object 201578
-						{ 52.3, 50.2, 76 },	-- object 203755
-					},
+					["sourceQuests"] = { 24452 },	-- Profitability Scouting
 					["providers"] = {
 						{ "o", 201578 },	-- Wrenchman Recruitment Poster
 						{ "o", 203755 },	-- Wrenchman Recruitment Poster
 					},
+					["coords"] = {
+						{ 56.9, 50.1, 76 },	-- object 201578
+						{ 52.3, 50.2, 76 },	-- object 203755
+					},
+					["races"] = HORDE_ONLY,
+					["model"] = 333925,
 				}),
 				q(44920, {	-- Order of Incantations
-					["sourceQuest"] = 44915,	-- Professionally Good looking
+					["sourceQuests"] = { 44915 },	-- Professionally Good looking
 					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -634,40 +628,38 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
-					["lvl"] = 110,
 				}),
 				q(6804,  {	-- Poisoned Water
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["races"] = HORDE_ONLY,
 					["coord"] = { 79.3, 73.7, 76 },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26372, {	-- Pre-Flight Checklist
+					["sourceQuests"] = { 26361 },	-- Smoot's Samophlange
 					["provider"] = { "n", 42643 },	-- Fleep
-					["lvl"] = 84,
 					["coord"] = { 54.6, 51.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26361,	-- Smoot's Samophlange
 				}),
 				q(14192, {	-- Prismbreak
-					["model"] = 197760,
+					["sourceQuests"] = { 14190 },	-- The Perfect Prism
+					["provider"] = { "o", 195431 },	-- Headquarters Radio
 					["coord"] = { 20.2, 70.3, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 195431 },	-- Headquarters Radio
-					["sourceQuest"] = 14190,	-- The Perfect Prism
+					["model"] = 197760,
 				}),
 				q(24453, {	-- Private Chat
+					["sourceQuests"] = { 24452 },	-- Profitability Scouting
 					["provider"] = { "n", 36749 },	-- Commander Molotov
 					["coord"] = { 29.4, 57.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24452,	-- Profitability Scouting
 				}),
 				q(24463, {	-- Probing into Ashenvale
+					["sourceQuests"] = { 24439 },	-- The Conquest of Azshara
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36728 },	-- Kroum
 					["coord"] = { 14.3, 65.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24439,	-- The Conquest of Azshara
-					["isBreadcrumb"] = true,
 				}),
 				q(44915, {	-- Professionally Good Looking
 					["sourceQuests"] = {
@@ -686,13 +678,12 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
-					["lvl"] = 110,
 				}),
 				q(24452, {	-- Profitability Scouting
+					["sourceQuests"] = { 14472 },	-- In the Face!
 					["provider"] = { "n", 36749 },	-- Commander Molotov
 					["coord"] = { 29.4, 57.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14472,	-- In the Face!
 					["g"] = {
 						i(53429),	-- Molotov Gloves
 						i(53432),	-- Pricey Bracers
@@ -700,16 +691,16 @@ _.Zones =
 					},
 				}),
 				q(14297, {	-- Pro-liberation
+					["sourceQuests"] = { 14391 },	-- Turning the Tables
 					["provider"] = { "n", 37061 },	-- Jellix Fuselighter
 					["coord"] = { 66.3, 20.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14391,	-- Turning the Tables
 				}),
 				q(14477, {	-- Push the Button!
+					["sourceQuests"] = { 14476 },	-- Rigged to Blow
 					["provider"] = { "n", 36785 },	-- Bombardier Captain Smooks
 					["coord"] = { 14.4, 75.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14476,	-- Rigged to Blow
 					["g"] = {
 						i(53408),	-- Detonation Ring
 						i(53424),	-- Kroum's Signet
@@ -717,118 +708,115 @@ _.Zones =
 					},
 				}),
 				q(24455, {	-- Rapid Deployment
+					["sourceQuests"] = { 14478 },	-- Operation Fishgut
 					["provider"] = { "n", 36749 },	-- Commander Molotov
 					["coord"] = { 60.6, 50.6, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14478,	-- Operation Fishgut
 				}),
 				q(14422, {	-- Raptor Raptor Rocket
+					["sourceQuests"] = { 14408 },	-- Nine's Plan
 					["provider"] = { "n", 36500 },	-- Subject Nine
 					["coord"] = { 42.2, 76.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14408,	-- Nine's Plan
 				}),
 				q(26358, {	-- Ready the Air Force
+					["sourceQuests"] = { 26324 },	-- Where is My Warfleet?
 					["provider"] = { "n", 42640 },	-- Captain Krazz
-					["lvl"] = 84,
 					["coord"] = { 60, 50.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 				}),
 				q(26374, {	-- Ready the Ground Troops
+					["sourceQuests"] = { 26324 },	-- Where is My Warfleet?
 					["provider"] = { "n", 42641 },	-- Warlord Krogg
-					["lvl"] = 84,
 					["coord"] = { 60, 50.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 				}),
 				q(26335, {	-- Ready the Navy
+					["sourceQuests"] = { 26324 },	-- Where is My Warfleet?
 					["provider"] = { "n", 42641 },	-- Warlord Krogg
-					["lvl"] = 84,
 					["coord"] = { 60, 50.4, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 				}),
 				q(14194, {	-- Refleshification
-					["model"] = 196982,
+					["sourceQuests"] = { 14192 },	-- Prismbreak
+					["provider"] = { "o", 195435 },	-- Weapons Cabinet
 					["coord"] = { 20.0, 69.9, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 195435 },	-- Weapons Cabinet
-					["sourceQuest"] = 14192,	-- Prismbreak
+					["model"] = 196982,
 					["g"] = {
 						i(53449),	-- Stonifying Gun
 						i(53434),	-- Refleshified Bracers
 					},
 				}),
 				q(14250, {	-- Renewable Resource
+					["sourceQuests"] = { 14340 },	-- Dressed to Impress
 					["provider"] = { "n", 35755 },	-- Tharkul Ironskull
 					["coord"] = { 47.2, 21.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14340,	-- Dressed to Impress
 				}),
 				q(14162, {	-- Report to Horzak
+					["sourceQuests"] = { 14155 },	-- Arborcide
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 35086 },	-- Labor Captain Grabbit
 					["coord"] = { 26.9, 77.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14155,	-- Arborcide
-					["isBreadcrumb"] = true,
 				}),
 				q(14271, {	-- Report to Twocrush
-					["model"] = 198793,
+					["sourceQuests"] = { 14270 },	-- The Keystone Shard
+					["provider"] = { "o", 195642 },	-- Naga Power Stone
 					["coord"] = { 58.9, 71.8, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 195642 },	-- Naga Power Stone
-					["sourceQuest"] = 14270,	-- The Keystone Shard
+					["model"] = 198793,
 				}),
 				q(14127, {	-- Return of the Highborne?
 					["provider"] = { "i", 47039 },	-- Scout's Orders
-					["crs"] = { 35095 },	-- Talrendis Scout
 					["races"] = HORDE_ONLY,
+					["crs"] = { 35095 },	-- Talrendis Scout
 				}),
 				q(14128, {	-- Return of the Highborne?
+					["sourceQuests"] = { 14127 },	-- Return of the Highborne?
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
 					["coord"] = { 26.8, 76.9, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14127,	-- Return of the Highborne?
 				}),
 				q(3461,  {	-- Return to Tymor
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8392 },	-- Pilot Xiggs Fuselighter
 					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10707)),	-- Steelsmith Greaves
 						un(REMOVED_FROM_GAME, i(10708)),	-- Skullspell Orb
 					},
 				}),
 				q(3421,  {	-- Return Trip
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8399 },	-- Nyril
 					["repeatable"] = true,
+					["provider"] = { "n", 8399 },	-- Nyril
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14476, {	-- Rigged to Blow
+					["sourceQuests"] = { 14475 },	-- Grounded!
 					["provider"] = { "n", 36785 },	-- Bombardier Captain Smooks
 					["coord"] = { 14.4, 75.5, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14475,	-- Grounded!
 				}),
 				q(14129, {	-- Runaway Shredder!
+					["sourceQuests"] = { 28496 },	-- Warchief's Command: Azshara!
 					["provider"] = { "n", 35086 },	-- Labor Captain Grabbit
 					["coord"] = { 27.0, 77.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28496,	-- Warchief's Command: Azshara!
 				}),
 				q(14310, {	-- Segmentation Fault: Core Dumped
-					["model"] = 197760,
+					["sourceQuests"] = { 14308 },	-- When Science Attacks
+					["provider"] = { "o", 195676 },	-- Secret Lab Squawkbox
 					["coord"] = { 43.8, 77.3, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 195676 },	-- Secret Lab Squawkbox
-					["sourceQuest"] = 14308,	-- When Science Attacks
+					["model"] = 197760,
 				}),
 				q(14249, {	-- Shear Will
+					["sourceQuests"] = { 14340 },	-- Dressed to Impress
 					["provider"] = { "n", 35648 },	-- Will Robotronic
 					["coord"] = { 47.1, 21.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14340,	-- Dressed to Impress
 					["g"] = {
 						i(53439),	-- Scissor Blade
 						i(53413),	-- Glued Feather Boots
@@ -837,9 +825,6 @@ _.Zones =
 					},
 				}),
 				q(24449, {	-- Shore Leave
-					["provider"] = { "n", 36745 },	-- Captain Tork
-					["coord"] = { 34.3, 44.8, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14480,	-- Extermination
 						14486,	-- Handling the Goods
@@ -847,6 +832,9 @@ _.Zones =
 						14487,	-- Still Beating Heart
 						14485,	-- Ticker Required
 					},
+					["provider"] = { "n", 36745 },	-- Captain Tork
+					["coord"] = { 34.3, 44.8, 76 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(53403),	-- Bedlam Gun
 						i(53428),	-- Merger Boots
@@ -856,10 +844,10 @@ _.Zones =
 					},
 				}),
 				q(14295, {	-- Sisters of the Sea
+					["sourceQuests"] = { 14271 },	-- Report to Twocrush
 					["provider"] = { "n", 35657 },	-- Torg Twocrush
 					["coord"] = { 50.6, 75.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14271,	-- Report to Twocrush
 					["g"] = {
 						i(53440),	-- Sea Sister Vest
 						i(53441),	-- Serpent-Crusher Gloves
@@ -867,17 +855,16 @@ _.Zones =
 					},
 				}),
 				q(14487, {	-- Still Beating Heart
+					["sourceQuests"] = { 24448 },	-- Field Promotion
 					["provider"] = { "n", 36745 },	-- Captain Tork
 					["coord"] = { 34.3, 44.9, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24448,	-- Field Promotion
 				}),
 				q(26361, {	-- Smoot's Samophlange
+					["sourceQuests"] = { 26358 },	-- Ready the Air Force
 					["provider"] = { "n", 42643 },	-- Fleep
-					["lvl"] = 84,
 					["coord"] = { 54.6, 51.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26358,	-- Ready the Air Force
 					["g"] = {
 						i(63876),	-- Smoot-Smacking Shoulderpads
 						i(63875),	-- Waistguard of Calibrated Caliphracts
@@ -886,13 +873,13 @@ _.Zones =
 					},
 				}),
 				q(5535,  {	-- Spiritual Unrest
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11548 },	-- Loh'atu
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3517,  {	-- Stealing Knowledge
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14165, {	-- Stone Cold
 					["provider"] = { "n", 35091 },	-- Horzak Zignibble
@@ -900,24 +887,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(6805,  {	-- Stormers and Rumblers
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14202, {	-- Survey the Lakeshore
+					["sourceQuests"] = { 24453 },	-- Private Chat
 					["provider"] = { "n", 35088 },	-- Custer Clubnik
 					["coord"] = { 29.5, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24453,	-- Private Chat
 				}),
 				q(14132, {	-- That's Just Rude!
+					["sourceQuests"] = { 14130 },	-- Friends Come in All Colors
 					["provider"] = { "n", 35142 },	-- Ergll
 					["coord"] = { 70.3, 36.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(44924, {	-- The Archmage Accosted
-					["sourceQuest"] = 44920,	-- Order of Incantations
+					["sourceQuests"] = { 44920 },	-- Order of Incantations
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -926,16 +913,15 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.1, 38.5, 76 },
-					["lvl"] = 110,
 				}),
 				q(14435, {	-- The Blackmaw Doublecross
-					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist
-					["coord"] = { 42.4, 23.6, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14432,	-- A Pale Brew
 						14433,	-- Diplomacy by Another Means
 					},
+					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist
+					["coord"] = { 42.4, 23.6, 76 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(53450),	-- Treaty Breaker Gloves
 						i(53409),	-- Diplomatic Belt
@@ -949,14 +935,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14134, {	-- The Captain's Logs
+					["sourceQuests"] = { 14129 },	-- Runaway Shredder!
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14129,	-- Runaway Shredder!
 				}),
 				q(24439, {	-- The Conquest of Azshara
+					["sourceQuests"] = { 24430 },	-- Blacken the Skies
 					["provider"] = { "n", 36730 },	-- Chawg
 					["coord"] = { 14.0, 64.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24430,	-- Blacken the Skies
 					["g"] = {
 						i(53443),	-- Shield of Talrendis Point
 						i(53451),	-- Wind Rider Wand
@@ -974,140 +960,138 @@ _.Zones =
 					},
 				}),
 				q(3621,  {	-- The Formation of Felbane
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3602 },	-- Azsharite
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
-					["sourceQuest"] = 3602,	-- Azsharite
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14270, {	-- The Keystone Shard
-					["model"] = 198793,
+					["sourceQuests"] = { 14267 },	-- Investigating the Sea Shrine
+					["provider"] = { "o", 195642 },	-- Naga Power Stone
 					["coord"] = { 58.9, 71.8, 76 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 195642 },	-- Naga Power Stone
-					["sourceQuest"] = 14267,	-- Investigating the Sea Shrine
+					["model"] = 198793,
 				}),
 				q(6822,  {	-- The Molten Core
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 6821 },	-- Eye of the Emberseer
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
-					["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3509,  {	-- The Name of the Beast
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3508 },	-- Breaking the Ward
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
-					["sourceQuest"] = 3508,	-- Breaking the Ward
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3510,  {	-- The Name of the Beast
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3509 },	-- The Name of the Beast
 					["provider"] = { "n", 6134 },	-- Lord Arkkoroc
 					["coord"] = { 77.1, 42.8, 76 },
-					["sourceQuest"] = 3509,	-- The Name of the Beast
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3511,  {	-- The Name of the Beast
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3510 },	-- The Name of the Beast
 					["provider"] = { "n", 6134 },	-- Lord Arkkoroc
 					["coord"] = { 77.1, 42.8, 76 },
-					["sourceQuest"] = 3510,	-- The Name of the Beast
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14190, {	-- The Perfect Prism
+					["sourceQuests"] = { 14165 },	-- Stone Cold
 					["provider"] = { "n", 35091 },	-- Horzak Zignibble
 					["coord"] = { 29.1, 66.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14165,	-- Stone Cold
 				}),
 				q(14413, {	-- The Pinnacle of Learning
-					["provider"] = { "n", 35187 },	-- Image of Archmage Xylem
-					["coord"] = { 47.2, 20.8, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14230,	-- Manual Labor
 						14226,	-- Trouble Under Foot
 					},
+					["provider"] = { "n", 35187 },	-- Image of Archmage Xylem
+					["coord"] = { 47.2, 20.8, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(8252,  {	-- The Siren's Coral
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14383, {	-- The Terrible Tinkers of the Ruined Reaches
+					["sourceQuests"] = { 14377 },	-- Befriending Giants
 					["provider"] = { "n", 36379 },	-- Hobart Grapplehammer
 					["coord"] = { 50.5, 74.7, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14377,	-- Befriending Giants
 					["g"] = {
 						i(53417),	-- Hobart's Spare Hubcap
 						i(53446),	-- Spring Gadget
 					},
 				}),
 				q(14300, {	-- The Trial of Fire
+					["sourceQuests"] = { 14296 },	-- Watch Your Step
 					["provider"] = { "n", 36361 },	-- Image of Archmage Xylem
 					["coord"] = { 55.9, 12.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14296,	-- Watch Your Step
 				}),
 				q(24478, {	-- The Trial of Frost
+					["sourceQuests"] = { 14296 },	-- Watch Your Step
 					["provider"] = { "n", 36361 },	-- Image of Archmage Xylem
 					["coord"] = { 55.9, 12.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14296,	-- Watch Your Step
 				}),
 				q(24479, {	-- The Trial of Shadow
+					["sourceQuests"] = { 14296 },	-- Watch Your Step
 					["provider"] = { "n", 36361 },	-- Image of Archmage Xylem
 					["coord"] = { 55.9, 12.1, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14296,	-- Watch Your Step
 				}),
 				q(14479, {	-- There Are Many Like It
+					["sourceQuests"] = { 24455 },	-- Rapid Deployment
 					["provider"] = { "n", 36956 },	-- Captain Desoto
 					["coord"] = { 58.1, 52.3, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24455,	-- Rapid Deployment
 				}),
 				q(14485, {	-- Ticker Required
+					["sourceQuests"] = { 24448 },	-- Field Promotion
 					["provider"] = { "n", 36895 },	-- Sergeant Zelks
 					["coord"] = { 34.4, 44.7, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24448,	-- Field Promotion
 				}),
 				q(14262, {	-- To Gut a Fish
+					["sourceQuests"] = { 14258 },	-- Mortar the Point
 					["provider"] = { "n", 35657 },	-- Torg Twocrush
 					["coord"] = { 50.6, 75.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14258,	-- Mortar the Point
 				}),
 				q(14226, {	-- Trouble Under Foot
-					["provider"] = { "n", 35187 },	-- Image of Archmage Xylem
-					["coord"] = { 47.2, 20.8, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14250,	-- Renewable Rersource
 						14249,	-- Shear Will
 						14263,	-- Waste of Thyme
 					},
+					["provider"] = { "n", 35187 },	-- Image of Archmage Xylem
+					["coord"] = { 47.2, 20.8, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(14391, {	-- Turning the Tables
+					["sourceQuests"] = { 14390 },	-- Easy is Boring
 					["coord"] = { 27.8, 40.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14390,	-- Easy is Boring
 				}),
 				q(28849, {	-- Twilight Skies
-					["provider"] = { "n", 42640 },	-- Captain Krazz
-					["lvl"] = 84,
-					["coord"] = { 60, 50.4, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26337,	-- Beating the Marker
 						26372,	-- Pre-Flight Checklist
 						26374,	-- Ready the Ground Troops
 					},
+					["provider"] = { "n", 42640 },	-- Captain Krazz
+					["coord"] = { 60, 50.4, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26388, {	-- Twilight Skies
+					["sourceQuests"] = { 28849 },	-- Twilight Skies
 					["provider"] = { "n", 50367 },	-- Friz Groundspin
-					["lvl"] = 84,
 					["coord"] = { 50.6, 74.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28849,	-- Twilight Skies
 					["g"] = {
 						i(63870),	-- Hull-Shatter Shoulders
 						i(63869),	-- Bracers of the Lost Leader
@@ -1115,8 +1099,8 @@ _.Zones =
 					},
 				}),
 				q(14135, {	-- Up a Tree
+					["sourceQuests"] = { 14134 },	-- The Captain's Logs
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14134,	-- The Captain's Logs
 				}),
 				q(14231, {	-- Useless quest record
 					["u"] = NEVER_IMPLEMENTED,
@@ -1126,33 +1110,38 @@ _.Zones =
 					["coord"] = { 26.8, 76.9, 76 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(9362,  {	-- Warlord Krellian
+					["provider"] = { "n", 8379 },	-- Archmage Xylem
+					["classes"] = { MAGE },
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(14345, {	-- Wash Out
-					["provider"] = { "n", 35142 },	-- Ergll
-					["coord"] = { 70.3, 36.2, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14131,	-- A Little Pick-me-up
 						14324,	-- Full of Hot Water
 						14132,	-- That's Just Rude!
 					},
+					["provider"] = { "n", 35142 },	-- Ergll
+					["coord"] = { 70.3, 36.2, 76 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(14389, {	-- Wasn't It Obvious?
+					["sourceQuests"] = { 14299 },	-- Xylem's Asylum
 					["provider"] = { "n", 36372 },	-- Joanna
 					["coord"] = { 25.5, 37.9, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14299,	-- Xylem's Asylum
 				}),
 				q(14263, {	-- Waste of Thyme
+					["sourceQuests"] = { 14340 },	-- Dressed to Impress
 					["provider"] = { "n", 35754 },	-- Quarla Whistlebreak
 					["coord"] = { 47.0, 21.0, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14340,	-- Dressed to Impress
 				}),
 				q(14296, {	-- Watch Your Step
+					["sourceQuests"] = { 14413 },	-- The Pinnacle of Learning
 					["provider"] = { "n", 36334 },	-- Image of Archmage Xylem
 					["coord"] = { 55.7, 14.7, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14413,	-- The Pinnacle of Learning
 					["g"] = {
 						i(53406),	-- Charged Robes
 						i(53421),	-- Juicy Bracers
@@ -1160,17 +1149,16 @@ _.Zones =
 					},
 				}),
 				q(26294, {	-- Weapons of Mass Dysfunction
+					["sourceQuests"] = { 26293 },	-- Machines of War
 					["provider"] = { "n", 42672 },	-- Foreman Glibbs
-					["lvl"] = 84,
 					["coord"] = { 26.2, 78.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26293,	-- Machines of War
 				}),
 				q(14308, {	-- When Science Attacks
+					["sourceQuests"] = { 14424 },	-- Need More Science
 					["provider"] = { "n", 36077 },	-- Assistant Greely
 					["coord"] = { 50.4, 74.2, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14424,	-- Need More Science
 				}),
 				q(14462, {	-- Where's My Head?
 					["provider"] = { "n", 36730 },	-- Chawg
@@ -1178,14 +1166,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(14299, {	-- Xylem's Asylum
-					["provider"] = { "n", 36361 },	-- Image of Archmage Xylem
-					["coord"] = { 55.9, 12.1, 76 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14300,	-- The Trial of Fire
 						24478,	-- The Trial of Frost
 						24479,	-- The Trial of Shadow
 					},
+					["provider"] = { "n", 36361 },	-- Image of Archmage Xylem
+					["coord"] = { 55.9, 12.1, 76 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(53420),	-- Joanna's Sash
 						i(53401),	-- Asylum Shoes
@@ -1193,9 +1181,9 @@ _.Zones =
 					},
 				}),
 				q(3565,  {	-- Xylem's Payment to Jediga
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 3561 },	-- Delivery to Archmage Xylem
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
-					["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

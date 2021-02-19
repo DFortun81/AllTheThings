@@ -10,6 +10,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 16788 },	-- Festival Flamekeeper
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(9386,  {	-- A Light in Dark Places
+				["provider"] = { "n", 16788 },	-- Festival Flamekeeper
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(9365,  {	-- A Thief's Reward (A)
 				["sourceQuests"] = {
 					9324,	-- Stealing Orgrimmar's Flame
@@ -896,6 +900,20 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = { 121 },	-- Zul'Drak
 			}),
 		--	HORDE "DESECRATE THIS FIRE!" QUESTS END HERE.
+			q(9388,  {	-- Flickering Flames in Kalimdor
+				["providers"] = {
+					{ "n", 16817 },	-- Festival Loremaster (A)
+					{ "n", 16818 },	-- Festival Talespinner (H)
+				},
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(9389,  {	-- Flickering Flames in the Eastern Kingdoms
+				["providers"] = {
+					{ "n", 16817 },	-- Festival Loremaster (A)
+					{ "n", 16818 },	-- Festival Talespinner (H)
+				},
+				["u"] = REMOVED_FROM_GAME,
+			}),
 		--	ALLIANCE "HONOR THE FLAME" QUESTS START HERE.
 			q(11804, {	-- Honor the Flame — Arathi Highlands
 				["provider"] = { "n", 25887 },	-- Arathi Flame Warden
@@ -2183,6 +2201,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 			}),
 		--	q(11691),	-- Summon Ahune
+			q(9367,  {	-- The Festival of Fire (A)
+				["provider"] = { "n", 16817 },	-- Festival Loremaster
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(9368,  {	-- The Festival of Fire (H)
+				["provider"] = { "n", 16818 },	-- Festival Talespinner
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(11970, {	-- The Master of Summer Lore
 				["providers"] = {
 					{ "n", 18927 },	-- Human Commoner
