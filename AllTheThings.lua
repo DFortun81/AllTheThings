@@ -3894,17 +3894,13 @@ fieldConverters = {
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
 	end,
-	["itemID"] = function(group, value)
+	["itemID"] = function(group, value, raw)
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
-		-- TODO: when modID eventually gets all fixed to be accurate to in-game, adjust this logic
-		-- if not group.modID or group.modID < 2 then
-		-- cache with the modID as a decimal
-		CacheField(group, "itemID", GetGroupItemIDWithModID(group) or value);
-		-- else
-		-- 	-- cache items with modID differently so that we can use modID items as lookups to their proper results
-		-- 	-- print("mitemID-cache",value,group.modID)
-		-- 	CacheField(group, "itemID", tostring(value) .. ":" .. tostring(group.modID));
-		-- end
+		if raw then
+			CacheField(group, "itemID", value);
+		else
+			CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
+		end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -3969,7 +3965,7 @@ fieldConverters = {
 				if v[1] == "n" then
 					rawget(fieldConverters, "creatureID")(group, v[2]);
 				elseif v[1] == "i" then
-					rawget(fieldConverters, "itemID")(group, v[2]);
+					rawget(fieldConverters, "itemID")(group, v[2], true);
 				elseif v[1] == "o" then
 					rawget(fieldConverters, "objectID")(group, v[2]);
 				end
@@ -4005,7 +4001,7 @@ fieldConverters = {
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
-						CacheField(group, "itemID", v[2]);
+						rawget(fieldConverters, "itemID")(group, v[2], true);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyID", v[2]);
@@ -4030,20 +4026,15 @@ fieldConverters = {
 	end,
 };
 CacheFields = function(group)
-	-- local n = 0;
-	-- local clone = {};
-	-- for key,value in pairs(group) do
-	-- 	n = n + 1;
-	-- 	rawset(clone, n, key);
-	-- end
-	-- for i=1,n,1 do
-	-- 	_cache = rawget(fieldConverters, rawget(clone, i));
-	-- 	if _cache then _cache(group, rawget(group, rawget(clone, i))); end
-	-- end
-	-- iteration only moves across raw values
-	for key,value in pairs(group) do
+	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
+	local n, keys = 0, {};
+	for key,_ in pairs(group) do
+		n = n + 1;
+		rawset(keys, n, key);
+	end
+	for _,key in pairs(keys) do
 		_cache = rawget(fieldConverters, key);
-		if _cache then _cache(group, value); end
+		if _cache then _cache(group, rawget(group,key)); end
 	end
 end
 end)();
