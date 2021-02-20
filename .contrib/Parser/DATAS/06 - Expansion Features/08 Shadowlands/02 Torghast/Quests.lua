@@ -33,30 +33,33 @@ _.ExpansionFeatures =
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(62719, {	-- The Final Pieces
-					-- available without finishing the Ashes... not sure the specific SQ instead or if it was just time-gated
-					-- ["sourceQuests"] = { 62700 },    -- Ashes of the Tower
+					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["provider"] = { "n", 164937 },    -- Runecarver
 					["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 				}),
 				q(62800, {	-- The Vessels of Jewels
+					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["requireSkill"] = JEWELCRAFTING,
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Jewelcrafting",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(62798, {	-- The Vessels of Leather and Bone
+					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["requireSkill"] = LEATHERWORKING,
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Leatherworking",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(62797, {	-- The Vessels of Metal
+					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["requireSkill"] = BLACKSMITHING,
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Blacksmithing",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(62799, {	-- The Vessels of the Thread
+					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["requireSkill"] = TAILORING,
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
 					["provider"] = { "n", 164937 },	-- Runecarver
