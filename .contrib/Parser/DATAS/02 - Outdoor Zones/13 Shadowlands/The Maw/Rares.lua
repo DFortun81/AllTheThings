@@ -67,7 +67,7 @@ _.Zones =
 				n(170787, {	-- Akros <Death's Hammer>
 					["questID"] = 60920,
 					["isDaily"] = true,
-					["coord"] = { 26.0, 54.9, 1543 },
+					["coord"] = { 34.0, 74.6, 1543 },
 					["g"] = {
 						crit(10, {	-- Akros
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -98,8 +98,8 @@ _.Zones =
 					},
 				}),
 				n(171317, {	-- Conjured Death
-				--	["questID"] = ,
-				--	["isDaily"] = true,
+					["questID"] = 61106,
+					["isDaily"] = true,
 					["coord"] = { 27.8, 13.2, 1543 },
 					["g"] = {
 						crit(4, {	-- Conjured Death
@@ -117,14 +117,19 @@ _.Zones =
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
 						i(183070, {	-- Mawsworn Orders
-							["questID"] = 63164,
+							["questID"] = 63164,	-- Mawsworn Orders
+							["g"] = {
+								crit(22, {	-- Mawsworn Orders
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
 						}),
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
-				--	["questID"] = ,
+					["questID"] = 62281,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 61.0, 48.6, 1543 },
 					["g"] = {
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -132,9 +137,9 @@ _.Zones =
 					},
 				}),
 				n(158025, {	-- Darklord Taraxis
-				--	["questID"] = ,
+					["questID"] = 62282,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 49.0, 81.6, 1543 },
 					["g"] = {
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -153,7 +158,6 @@ _.Zones =
 						q(59230, {	-- Bonus Objective
 							["isDaily"] = true,
 						}),
-						i(183070),	-- Mawsworn Orders
 					},
 				}),
 				n(162844, {	-- Dath Rezara
@@ -164,6 +168,30 @@ _.Zones =
 						crit(18, {	-- Dath Rezara
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
 						q(61140, {	-- Bonus Objective
 							["isDaily"] = true,
 						}),
@@ -172,7 +200,7 @@ _.Zones =
 				n(170711, {	-- Dolos
 					["questID"] = 60909,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 28.6, 60.6, 1543 },
 					["g"] = {
 						crit(7, {	-- Dolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -218,7 +246,7 @@ _.Zones =
 				n(154330, {	-- Eternas the Tormentor
 					["questID"] = 57509,
 					["isDaily"] = true,
-					["coord"] = { 27.4, 49.4, 1543 },	-- TODO: verify coords, wowhead says 19.8, 46.0
+					["coord"] = { 19.3, 46.1, 1543 },
 					["g"] = {
 						crit(10, {	-- Eternas the Tormentor
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -227,41 +255,52 @@ _.Zones =
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
+					["description"] = "Summoned using |cff0070ddDomination's Calling|r.",
 					["questID"] = 62260,
 					["isDaily"] = true,
-					["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
 					["coord"] = { 21.0, 70.2, 1543 },
-					["description"] = "Summoned using |cff0070ddDomination's Calling|r",
+					["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
 					["g"] = {
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(182329, {	-- Domination's Calling
-							["description"] = "This is NOT consumed upon use",
-							["cost"] = {
-								{ "i", 182328, 1 },	-- Dominion Etching: Grief
-								{ "i", 182327, 1 },	-- Dominion Etching: Loss
-								{ "i", 182326, 1 },	-- Dominion Etching: Pain
+						i(184108),	-- Vorpal Amulet
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
 							},
 						}),
-						i(184108),	-- Vorpal Amulet
-					}
-				}),
-				n(174827, {	-- Gorged Shadehound
-					--["coord"] = { 27.3, 17.3, 1543 },
-					--["questID"] = 61125,	--
-					--["isDaily"] = true,
-					["g"] = {
-						i(184167),	-- Mawsworn Soulhunter
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
-				--	["questID"] = ,
+					["questID"] = 63385,
 					["isDaily"] = true,
 					["coord"] = { 60.1, 64.9, 1543 },
 					["g"] = {
 						crit(13, {	-- Houndmaster Vasanok
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(62209, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -276,9 +315,10 @@ _.Zones =
 					},
 				}),
 				n(175012, {	-- Ikras the Devourer
+					["description"] = "Flies along the gap between islands.",
 					["questID"] = 62788,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 35.6, 52.2, 1543 },
 					["g"] = {
 						crit(21, {	-- Ikras the Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -312,7 +352,7 @@ _.Zones =
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-					--["coord"] = { 27.4, 49.4, 1543 },
+					["coord"] = { 16.6, 50.6, 1543 },
 					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
@@ -323,9 +363,9 @@ _.Zones =
 					},
 				}),
 				n(158278, {	-- Nascent Devourer
-				--	["questID"] = ,
+					["questID"] = 57573,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 46.0, 74.2, 1543 },
 					["g"] = {
 						crit(13, {	-- Nascent Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -349,6 +389,14 @@ _.Zones =
 					["g"] = {
 						crit(16, {	-- Odalrik
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(183061, {	-- Wailing Coin
+							["questID"] = 63158,	-- Wailing Coin
+							["g"] = {
+								crit(21, {	-- Wailing Coin
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
 						}),
 						q(62618, {	-- Bonus Objective
 							["isDaily"] = true,
@@ -426,22 +474,50 @@ _.Zones =
 					},
 				}),
 				n(170634, {	-- Shadeweaver Zeris
-				--	["questID"] = ,
+					["questID"] = 60884,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 32.8, 66.6, 1543 },
 					["g"] = {
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(183066, {	-- Korrath's Grimoire: Aleketh
+							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
+							["g"] = {
+								crit(16, {	-- Korrath's Grimoire: Aleketh
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183067, {	-- Korrath's Grimoire: Belidir
+							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
+							["g"] = {
+								crit(15, {	-- Korrath's Grimoire: Belidir
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
+						i(183068, {	-- Korrath's Grimoire: Gyadrek
+							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
+							["g"] = {
+								crit(14, {	-- Korrath's Grimoire: Gyadrek
+									["achievementID"] = 14761,	-- Deciphering Death's Intentions
+								}),
+							},
+						}),
 					},
 				}),
 				n(172524, {	-- Skittering Broodmother
-				--	["questID"] = ,
+					["description"] = "Inside the cave.",
+					["questID"] = 63386,
 					["isDaily"] = true,
-					["coord"] = { 61.7, 77.6, 1543 },
+					["coord"] = { 59.2, 79.9, 1543 },
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(62211, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -497,7 +573,7 @@ _.Zones =
 				n(170731, {	-- Thanassos <Death's Voice>
 					["questID"] = 60914,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 27.6, 71.6, 1543 },
 					["g"] = {
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -505,6 +581,7 @@ _.Zones =
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
+					["description"] = "Click the runes in the correct order.",
 					["questID"] = 63387,
 					["isDaily"] = true,
 					["coord"] = { 40.8, 59.8, 1543 },
@@ -517,52 +594,22 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-904, {	-- Wrath of the Jailer
-					["isWeekly"] = true,
-					["questID"] = 63414,
-					["g"] = {
-						n(COMMON_BOSS_DROPS, {
-							i(183228),	-- Memory of Arcane Pulsars
-							i(184657),	-- Armguard of the Unseen Assailant
-							i(184661),	-- Bracers of the Tenebrous Retinue
-							i(184658),	-- Dread Harrier's Pauldrons
-							i(184660),	-- Dreadguard's Greathelm
-							i(184654),	-- Forgotten Shade's Shawl
-							i(184659),	-- Grips of the Dreadhound Tamer
-							i(184656),	-- Mawsworn Assassin's Doublet
-							i(184655),	-- Sash of the Ethereal Servant
-						}),
-						n(175846, {	-- Dathlane the Herald <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175877, {	-- Lumisende <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(175881, {	-- Naelcrotix <Torghast Executioner>
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-						n(176173, {	-- Zograthos <Torghast Executioner>
-							-- ["coord"] = { 35.1, 41.5, 1543 },
-							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-							["isWeekly"] = true,
-							["questID"] = 63414,
-						}),
-					},
-				}),
 				n(172862, {	-- Yero the Skittish
 					["questID"] = 61568,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 37.9, 61.4, 1543 },
 					["g"] = {
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+					},
+				}),
+				i(182329, {	-- Domination's Calling
+					["description"] = "This is NOT consumed upon use.",
+					["cost"] = {
+						{ "i", 182328, 1 },	-- Dominion Etching: Grief
+						{ "i", 182327, 1 },	-- Dominion Etching: Loss
+						{ "i", 182326, 1 },	-- Dominion Etching: Pain
 					},
 				}),
 			}),

@@ -35,17 +35,192 @@ _.Zones =
 							},
 						}),
 						crit(7, {	-- Castaways and Cutouts
-							["sourceQuests"] = { 	-- not sure if the commented-out ones are required, since i turned in 'blood in the tides' last.  'toxic community' and 'glimmering locket' definitely aren't.
+							["sourceQuests"] = { 	-- uncommented are definitely required (have turned both in as final quests to earn the criteria on separate playthroughs).  not sure if the commented-out ones are required.  'toxic community' and 'glimmering locket' definitely aren't required.
 								48421,	-- Blood in the Tides
+								49226,	-- Silencing the Sisters
 								--	49230,	-- Local Flavor
 								--	48505,	-- Lovesick and Lost
 								--	49178,	-- My Favorite Things
-								--	49226,	-- Silencing the Sisters
 							},
 						}),
 					},
 				}),
-				ach(12939),	-- Adventurer of Tiragarde Sound
+				ach(12939),		-- Adventurer of Tiragarde Sound
+				ach(13279, {	-- Family Battler
+					["collectible"] = false,
+					["g"] = {
+						ach(13280, {	-- Hobbyist Aquarist
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13270, {	-- Beast Mode
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13271, {	-- Critters with Huge Teeth
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13272, {	-- Dragons Make Everything Better
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13273, {	-- Element of Success
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13274, {	-- Fun With Flying
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13281, {	-- Human Resources
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13275, {	-- Magician's Secrets
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13277, {	-- Machine Learning
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+						ach(13278, {	-- Not Quite Dead Yet
+							["collectible"] = false,
+							["g"] = {
+								crit(8, {	-- Kwint
+									["creatureID"] = 141077,	-- Kwint
+									["coord"] = { 86.2, 38.6, 895 },
+								}),
+								crit(9, {	-- Delia Hanako
+									["creatureID"] = 141292,	-- Delia Hanako
+									["coord"] = { 59.6, 33.2, 895 },
+								}),
+								crit(10, {	-- Burly
+									["creatureID"] = 141479,	-- Burly
+									["coord"] = { 67.6, 12.8, 895 },
+								}),
+							},
+						}),
+					},
+				}),
 				ach(13058, {	-- Kul Tiran Up the Dance Floor
 					["coord"] = { 50.27, 25.11, 895 },
 				}),

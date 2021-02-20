@@ -43,6 +43,7 @@ _.Zones =
 					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
 					["g"] = {
 						i(93147, {	-- Pandaren Spirit Pet Supplies
+							i(37460),	-- Rope Pet Leash (37460) 
 							i(89139),	-- Chain Pet Leash
 							i(44820),	-- Red Ribbon Pet Leash
 							i(90173),	-- Pandaren Water Spirit

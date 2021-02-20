@@ -18,6 +18,7 @@ _.Zones =
 					["coord"] = { 36.7, 36.7, 1565 },
 				}),
 				fp(2587, {	-- Ardenweald, Heart of the Forest
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 					["coord"] = { 51.2, 7.8, 1701 },
 				}),
 				fp(2586, {	-- Ardenweald, Hibernal Hollow

@@ -15,21 +15,25 @@ i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
 i(183723);	-- Brimming Anima Orb
+i(181646);	-- Bound Failsafe Phylactery
 i(184374);	-- Cartel Exchange Vessel
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(181368);	-- Centurion Power Core
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
+i(184764);	-- Colossus Actuator
 i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
+i(181478);	-- Cornucopia of the Winter Court
 i(184151);	-- Counterfeit Ruby Brooch
 i(181548);	-- Darkhaven Soul Lantern
 i(181551);	-- Depleted Stoneborn Heart
 i(184383);	-- Duskfall Tuber
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
+i(184286);	-- Extinguished Soul Anima
 i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
@@ -38,6 +42,7 @@ i(184777);	-- Gravedredger's Shovel
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
+i(181621);	-- Hyper-Reactive Slime Sample
 i(181377);	-- Illustrated Combat Meditation Aid
 i(184774);	-- Juvenile Sporespindle
 i(184382);	-- Luminous Sylberry
@@ -45,6 +50,7 @@ i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
 i(181546);	-- Mature Cryptbloom
 i(184387);	-- Misty Shimmerleaf
+i(184763);	-- Mnemis Neural Network
 i(184315);	-- Multi-Modal Anima Container
 i(184360);	-- Musings on Repetition
 i(184386);	-- Nascent Sporepod
@@ -55,16 +61,20 @@ i(181743);	-- Plume of the Archon
 i(184388);	-- Plump Glitterroot
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
+i(184379);	-- Queen's Frozen Tear
 i(184362);	-- Reflections on Purity
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
+i(183727);	-- Resonance of Conflict
 i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
+i(181622);	-- Slightly Irradiated Slime Sample
 i(184389);	-- Slumbering Starseed
 i(184373);	-- Small Anima Globe
 i(184306);	-- Soulcatching Sludge
+i(181650);	-- Spellwarded Dissertation
 i(181647);	-- Stabilized Plague Strain
 i(184380);	-- Starblossom Nectar
 i(181479);	-- Starlight Catcher
@@ -74,6 +84,7 @@ i(184776);	-- Urn of Arena Soil
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
 i(181643);	-- Weeping Corpseshroom
+i(184149);	-- Widowbloom-Infused Fragrance
 i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet
@@ -89,25 +100,34 @@ i(23766);	-- Stabilized Eternium Scope
 i(23820);	-- Critter Enlarger
 i(28421);	-- Adamantite Weightstone
 
+i(34258);	-- Love Rocket
+i(180686);	-- "Borrowed" Soulstone
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
 i(139786);	-- Ancient Mana Crystal
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
+i(180715);	-- Bottled Wrath
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
+i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
+i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
+i(180661);	-- Darktower Parchments: Affliction Most Foul
+i(180660);	-- Darktower Parchments: Instant Polymorphist
+i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
 i(142262);	-- Electrified Key
 i(166972);	-- Emergency Powerpack
 i(166973);	-- Emergency Repair Kit
 i(168222);	-- Encrypted Black Market Radio
+i(182200);	-- Engorged Blood Burrower
 i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
@@ -137,11 +157,14 @@ i(138883);	-- Meryl's Conjured Refreshment
 i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
+i(180682);	-- Noble's Wardrobe
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(180710);	-- Pocket Repair Kit
 i(180170);	-- Pulsing Animacone
+i(180377);	-- Red Rum
 i(180008);	-- Resonating Anima Core
 i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
@@ -150,12 +173,14 @@ i(165699);	-- Scarlet Herring Lure
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
+i(180684);	-- Sentinel Stonewing
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
 i(15723);	-- Tea with Sugar
+i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop
 i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
@@ -179,8 +204,10 @@ i(168234);	-- Ancient Runestone
 i(182067);	-- Antique Duelist's Rapier
 i(182021);	-- Antique Kyrian Javelin
 i(182043);	-- Antique Necromancer's Staff
+i(181991);	-- Antique Stalker's Bow
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
+i(174741);	-- Bell of Remembrance
 i(169224);	-- Big Red Button
 i(147439);	-- Box of Completed Prime Wardenscale
 i(169248);	-- Broken Sandals
@@ -189,10 +216,12 @@ i(169292);	-- Charged Scale of the Blue Aspect
 i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
 i(146686);	-- Colorless Shroud of Xavius
+i(183042);	-- Colossal Power Core
 i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
+i(182955);	-- Cypher of Dampening
 i(182688);	-- Cypher of Obfuscation
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)
@@ -215,6 +244,7 @@ i(169165);	-- Father's Sword
 i(128419);	-- Fel Essence (N)
 i(128420);	-- Fel Essence (H)
 i(128421);	-- Fel Essence (M)
+i(173028);	-- Flux Energized Servos
 i(169228);	-- Hazardous Container
 i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
@@ -234,13 +264,17 @@ i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
 i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
+i(122618);	-- Misprinted Draenic Coin
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
+i(172511);	-- Neural Accelerator
 i(168223);	-- Old Parchment
+i(173026);	-- Omni Electromagnetic Amplifier
 i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
 i(169325);	-- Petrified Ebony Scale
+i(171989);	-- Pouch of Spores
 i(174078);	-- Primrose's Pyrotechnic Powder
 i(169237);	-- Pulsating Marble
 i(168184);	-- Rare Metal
@@ -274,6 +308,9 @@ i(168817);	-- Siphoning Crystal
 i(118384);	-- Sliver of Iron (N)
 i(118385);	-- Sliver of Iron (H)
 i(118388);	-- Sliver of Iron (M)
+i(182601);	-- Sludgefist's Head (N)
+i(182602);	-- Sludgefist's Head (H)
+i(182603);	-- Sludgefist's Head (M)
 i(128416);	-- Soul Remnant (N)
 i(128417);	-- Soul Remnant (H)
 i(128418);	-- Soul Remnant (M)
@@ -281,6 +318,7 @@ i(180207);	-- Spirit Cradle
 i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
 i(146682);	-- Suramari Soul-Wraps
+i(178033);	-- Talkative Spore
 i(169247);	-- Throwing Rocks
 i(146698);	-- Torn Bracers of the First War
 i(169226);	-- Torn Sheet Music
@@ -331,48 +369,71 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
-i(184631);	-- Adventurer's Enchanting Cache
-i(184634);	-- Adventurer's Herbalism Cache
-i(184635);	-- Adventurer's Mining Cache
+i(184505);	-- "Adorable Ascended" Costume
+i(180372);	-- Amalgamation of Sin
+i(180979);	-- Artisan's Large Satchel
+i(180976);	-- Artisan's Satchel
+i(180983);	-- Artisan's Stuffed Satchel
 i(173791);	-- Baguette
+i(181362);	-- Blob of Slime
+i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
+i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues
 i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
+i(171206);	-- Forgotten Weapon
 i(173786);	-- Ghostly Pale Ale
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
 i(173785);	-- Hidden Banana
 i(173784);	-- Hoppy Mead
+i(183822);	-- Icecrown Survival Kit
+i(180980);	-- Journeyman's Large Satchel
+i(180988);	-- Journeyman's Overflowing Satchel
+i(180975);	-- Journeyman's Satchel
+i(180984);	-- Journeyman's Stuffed Satchel
 i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
+i(184043);	-- Lost Scroll
 i(173781);	-- Lost Watermelon
+i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
+i(183734);	-- Mysteriously Thrumming Orb
+i(180981);	-- Novice's Large Satchel
+i(180989);	-- Novice's Overflowing Satchel
+i(180974);	-- Novice's Satchel
+i(180985);	-- Novice's Stuffed Satchel
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(179392);	-- Orb of Burgeoning Ambition
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(183987);	-- Prisoner Cage Key
 i(79104);	-- Rusty Watering Can
+i(171210);	-- Satchel of Nature's Bounty
 i(139590);	-- Scroll of Teleport: Ravenholdt
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
+i(179295);	-- Squeaky Bat
 i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
 i(181715);	-- Temel's Certificate of Completion
+i(171211);	-- Venthyr's Coin Purse
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
 i(160376);	-- Wilderbew Special
+i(180470);	-- Wild Fungus
 i(173773);	-- Yeasty Hunk
 
 i(4407);	-- Accurate Scope
@@ -427,3 +488,4 @@ i(150750);	-- Moonkissed Antidote
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
+i(153119);	-- Wyrmtongue Cache of Finery

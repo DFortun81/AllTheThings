@@ -6,9 +6,6 @@ _.Mounts =
 {
 	n(QUESTS, {
 		i(142436),		-- Arcanist's Manasaber
-		i(181820, {		-- Armored Chosen Tauralus
-			["races"] = HORDE_ONLY,
-		}),
 		i(181822),		-- Armored War-Bred Tauralus
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = { DEATHKNIGHT },
@@ -157,7 +154,9 @@ _.Mounts =
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
 		i(183615),		-- Warstitched Darkhound
-		i(182077),		-- War-Bred Tauralus
+		i(182077, {		--  War-Bred Tauralus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },

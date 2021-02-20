@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-				--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
+				--	!! NEED PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
 					ach(12510, {	-- Ready for War
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
@@ -477,16 +477,16 @@ _.ExpansionFeatures =
 							-- Hidden quest 53384 completes as Kelsey Steelspark runs up
 						}),
 						q(51331, {	-- Mole Machinations
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 51418,	-- Xibala
 						}),
 						q(51309, {	-- Rocks of Ragnaros
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 51418,	-- Xibala
 						}),
 						q(51359, {	-- Fragment of the Firelands
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
@@ -515,12 +515,11 @@ _.ExpansionFeatures =
 						}),
 					--	ALL 3 FOOTHOLDS END Here
 						q(51918, {	-- Uniting Kul Tiras - completed once per account
+							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["altQuests"] = { 52450 },	-- Uniting Kul Tiras
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["lvl"] = 120,
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["g"] = {
 								spell(273746),	-- World Quests
 								i(141605, {	-- Flight Master Whistle
@@ -528,12 +527,11 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 120
+						q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 50 - requires HoA and, afaik, nothing else
+							["sourceQuests"] = { 52428 },	-- Infusing the Heart
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["lvl"] = 120,
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["g"] = {
 								spell(273746),	-- World Quests
 								i(141605, {	-- Flight Master Whistle
@@ -661,19 +659,31 @@ _.ExpansionFeatures =
 						}),
 					--	CHASING DARKNESS STARTS HERE
 						q(52150, {	-- How to Kill a Dark Ranger
+							["sourceQuests"] = { 52147 },	-- Crippling the Horde
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 							["coord"] = { 61.9, 41.1, 863 },	-- Nazmir
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52147 },	-- Crippling the Horde
+						}),
+						q(52156, {	-- Tortollans in Distress
+							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
+							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
+							["coord"] = { 61.9, 41.2, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(52158, {	-- The Savage Hunt
+							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
+							["provider"] = { "n", 139609 },	-- John J. Keeshan
+							["coord"] = { 61.8, 41.3, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52170, {	-- Ending Areiel
-							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52158,	-- The Savage Hunt
 								52156,	-- Tortollans in Distress
 							},
+							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
+							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52171, {	-- One Option: Fire
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
@@ -797,63 +807,68 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(52489, {	-- Hunting Blood Prince Dreven
+							["sourceQuests"] = { 52308 },	-- Intercepted Orders
 							["provider"] = { "n", 141356 },	-- Shandris Feathermoon
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52308 },	-- Intercepted Orders
-							["maps"] = {
-								1156,	-- The Great Sea (scenario map)
-							},
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 					--	BLOOD IN THE WATER STARTS HERE
 						q(52490, {	-- Behind Enemy Boats
+							["sourceQuests"] = { 52489 },	-- Hunting Blood Prince Dreven
 							["provider"] = { "n", 141567 },	-- Shandris Feathermoon
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52489 },	-- Hunting Blood Prince Dreven
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52491, {	-- Broadside Bedlam
+							["sourceQuests"] = { 52490 },	-- Behind Enemy Boats
 							["coord"] = { 36.8, 52.4, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52490 },	-- Behind Enemy Boats
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52492, {	-- The Wildhammer Specialty
-							["provider"] = { "n", 141541 },	-- Falstad Wildhammer
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52490,	-- Behind Enemy Boats
 								52491,	-- Broadside Bedlam
 							},
+							["provider"] = { "n", 141541 },	-- Falstad Wildhammer
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(53131, {	-- Kings' Rest (Unlocks Kings' Rest)
-							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
-							["sourceQuest"] = 52492,	-- The Wildhammer Specialty
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52493, {	-- An Unnatural Crew
+							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 							["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52494, {	-- Foul Crystals for Foul People
+							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 							["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52495, {	-- Ending the San'layn Threat
-							["provider"] = { "n", 142232 },	-- Shandris Feathermoon
-							["coord"] = { 41.6, 55.3, 1156 },	-- The Great Sea
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52493,	-- An Unnatural Crew
 								52494,	-- Foul Crystals for Foul People
 							},
+							["provider"] = { "n", 142232 },	-- Shandris Feathermoon
+							["coord"] = { 41.6, 55.3, 1156 },	-- The Great Sea
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52496, {	-- A Clean Escape
+							["sourceQuests"] = { 52495 },	-- Ending the San'layn Threat
 							["provider"] = { "n", 141567 },	-- Shandris Feathermoon
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 52495 },	-- Ending the San'layn Threat
+							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 					--	BETWEEN BLOOD IN THE WATER AND THE STRIKE ON ZULDAZAR
 						q(53072, {	-- Operation: Heartstrike
@@ -993,10 +1008,10 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 53888 },	-- To Anglepoint
 						}),
 						q(53910, {	-- Repel the Horde
+							["sourceQuests"] = { 53896 },	-- Stand Fast
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 							["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 53896 },	-- Stand Fast
 						}),
 						q(54519, {	-- Squad Goals
 							["provider"] = { "n", 148015 },	-- Taelia Fordragon
@@ -1057,14 +1072,15 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(53919, {	-- Shots Fired
-							["provider"] = { "n", 145593 },	-- Rosaline Madison
-							["coord"] = { 37.5, 24.9, 895 },	-- Tiragarde Sound
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								54559,	-- Free Plumeria
 								53978,	-- Gunpowder Plots
 								54787,	-- Masking for a Friend
+								53910,	-- Repel the Horde
 							},
+							["provider"] = { "n", 145593 },	-- Rosaline Madison
+							["coord"] = { 37.5, 24.9, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53936, {	-- Stopping the Sappers
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
@@ -1195,24 +1211,28 @@ _.ExpansionFeatures =
 						}),
 					--	MISCHIEF MANAGED STARTS HERE	TODO: NEED TO DO ON CLOTH/LEATHER/PLATE
 						q(54169, {	-- The Treasury Heist
+							["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
 							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
+							["maps"] = { 1348 },	-- Zandalari Treasury
 						}),
 						q(54510, {	-- Mischief Managed
 							["sourceQuests"] = { 54169 },	-- The Treasury Heist
+							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 							["g"] = {
 								i(163339),	-- 7th Legionnaire's Hood
 								i(163337),	-- 7th Legionnaire's Amice
 								i(163248),	-- 7th Legionnaire's Robes
+								i(163380),	-- 7th Legionnaire's Visage
+								i(163377),	-- 7th Legionnaire's Mantle
+								i(163251),	-- 7th Legionnaire's Vest
 								i(163394),	-- 7th Legionnaire's Helm
 								i(163389),	-- 7th Legionnaire's Monnion
 								i(163398),	-- 7th Legionnaire's Chainmail
-								-- TODO: Need to do this criteria on leather and plate to get other rewards
+								-- TODO: Need to do this criteria on plate to get other rewards
 							},
 						}),
 					--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
@@ -1299,49 +1319,98 @@ _.ExpansionFeatures =
 						}),
 					--	AFTER TIDES OF VENGEANCE
 						q(54485, {	-- Battle of Dazar'alor
+							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 						}),
 						q(54163, {	-- As the Dust Settles
+							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 54485 },	-- Battle of Dazar'alor
 						}),
 						q(54183, {	-- Dead Reckoning
+							["sourceQuests"] = { 54163 },	-- As the Dust Settles
 							["provider"] = { "n", 147885 },	-- Anduin Wrynn
 							["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 54163 },	-- As the Dust Settles
+						}),
+						q(55118, {	-- Loose Ends
+							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["coord"] = { 69.5, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55033, {	-- Ashes to Ashvane
+							["sourceQuests"] = { 55118 },	-- Loose Ends
+							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
+							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55117, {	-- Correspondence Conundrum
+							["sourceQuests"] = { 55118 },	-- Loose Ends
+							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
+							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55116, {	-- Getting a Clue
+							["sourceQuests"] = {
+								55033,	-- Ashes to Ashvane
+								55117,	-- Correspondence Conundrum
+							},
+							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
+							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55119, {	-- Reporting In!
+							["sourceQuests"] = { 55116 },	-- Getting A Clue
+							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
+							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55044, {	-- Don't Shoot the Messenger
+							["sourceQuests"] = { 55119 },	-- Reporting In!
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55045, {	-- My Brother's Keeper
+							["sourceQuests"] = { 55044 },	-- Don't Shoot the Messenger
+							["provider"] = { "n", 150574 },	-- Lady Jaina Proudmoore
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55171, {	-- Spy Versus Spy
+							["sourceQuests"] = { 55045 },	-- My Brother's Keeper
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
 						}),
 						-- Night Warrior appearance unlock
 						q(53849, {	-- Waning Hope
+							["sourceQuests"] = { 53847 },	-- On Whispered Winds
+							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
 							["coord"] = { 86.6, 35.7, 84 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["sourceQuest"] = 53847,	-- On Whispered Winds
 						}),
 						q(53988, {	-- Shores of Fate
+							["sourceQuests"] = { 53849 },	-- Waning Hope
+							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
 							["coord"] = { 86.6, 35.7, 84 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["sourceQuest"] = 53849,	-- Waning Hope
 						}),
 						q(53989, {	-- Hope
-							["lvl"] = 120,
+							["sourceQuests"] = { 53988 },	-- Shores of Fate
+							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
 							["coord"] = { 11.5, 17.6, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
-							["sourceQuest"] = 53988,	-- Shores of Fate
 						}),
 						q(54041, {	-- No Survivors
-							["lvl"] = 120,
+							["sourceQuests"] = { 53988 },	-- Shores of Fate
+							["provider"] = { "n", 146375 },	-- Sira Moonwarden
 							["coord"] = { 11.4, 17.8, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 146375 },	-- Sira Moonwarden
-							["sourceQuest"] = 53988,	-- Shores of Fate
 						}),
 						q(53990, {	-- In Darkest Night
 							["coord"] = { 86.6, 35.7, 84 },
@@ -1353,10 +1422,10 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(54871, {	-- We Are Coming
+							["sourceQuests"] = { 53990 },	-- In Darkest Night
+							["provider"] = { "n", 149612 },	-- Shandris Feathermoon
 							["coord"] = { 69.5, 26.8, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 149612 },	-- Shandris Feathermoon
-							["sourceQuest"] = 53990,	-- In Darkest Night
 						}),
 					--	RISE OF AZSHARA (8.2)
 						q(55784, {	-- Payment in Kind

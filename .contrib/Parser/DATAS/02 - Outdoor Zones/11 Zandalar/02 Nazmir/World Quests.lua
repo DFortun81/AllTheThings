@@ -439,8 +439,18 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50468, {	-- Shul-Nagruth
-						["lvl"] = 120,
 						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["g"] = {
+							n(128610, {	-- Maw of Shul-Nagruth
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["questID"] = 50467,
+								["coord"] = { 49.8, 67.0, 863 },
+								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+									i(160973),	-- Accursed Tuskwand
+								}),
+							}),
+						},
 					}),
 					q(54707, {	-- Siegeotron (Faction Assault WQ)
 						["lvl"] = 110,

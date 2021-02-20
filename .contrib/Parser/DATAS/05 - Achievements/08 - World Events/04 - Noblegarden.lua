@@ -5,36 +5,26 @@
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		["groups"] = bubbleDown({["u"] = 19}, {
+		["g"] = bubbleDown({["u"] = 19}, {
 			n(-10017, {	-- Noblegarden
 				ach(2576),	-- Blushing Bride
 				ach(2418, {	-- Chocoholic [Eat 100]
 					ach(2417),	-- Chocolate Lover [Eat 25]
 				}),
 				ach(2436, {	-- Desert Rose
-					crit(1, {	-- The Badlands
-						["maps"] = { 15 },	-- The Badlands
-					}),
-					crit(2, {	-- Desolace
-						["maps"] = { 66 },	-- Desolace
-					}),
-					crit(3, {	-- Silithus
-						["maps"] = { 81 },	-- Silithus
-					}),
-					crit(4, {	-- Tanaris
-						["maps"] = { 71 },	-- Tanaris
-					}),
-					crit(5, {	-- Thousand Needles
-						["maps"] = { 64 },	-- Thousand Needles
-					}),
+					crit(1),	-- The Badlands
+					crit(2),	-- Desolace
+					crit(3),	-- Silithus
+					crit(4),	-- Tanaris
+					crit(5),	-- Thousand Needles
 				}),
 				ach(249),	-- Dressed for the Occasion
 				ach(2416),	-- Hard Boiled
 				ach(2676),	-- I Found One
-				ach(2421, {	-- Noble Garden [Alliance]
+				ach(2421, {	-- Noble Garden (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(2420, {	-- Noble Garden [Horde]
+				ach(2420, {	-- Noble Garden (H)
 					["races"] = HORDE_ONLY,
 				}),
 				ach(2422, {	-- Shake Your Bunny-Maker
@@ -54,35 +44,19 @@ _.Achievements =
 				ach(2419, {	-- Spring Fling [Alliance]
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1, {	-- Azure Watch
-							["maps"] = { 97 },	-- Azuremyst Isle
-						}),
-						crit(2, {	-- Dolanaar
-							["maps"] = { 57 },	-- Teldrassil
-						}),
-						crit(3, {	-- Goldshire
-							["maps"] = { 37 },	-- Elwynn Forest
-						}),
-						crit(4, {	-- Kharanos
-							["maps"] = { 27 },	-- Dun Morogh
-						}),
+						crit(1),	-- Azure Watch
+						crit(2),	-- Dolanaar
+						crit(3),	-- Goldshire
+						crit(4),	-- Kharanos
 					},
 				}),
 				ach(2497, {	-- Spring Fling [Horde]
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1, {	-- Bloodhoof Village
-							["maps"] = { 7 },	-- Bloodhoof Village
-						}),
-						crit(2, {	-- Brill
-							["maps"] = { 18 },	-- Tirisfal Glades
-						}),
-						crit(3, {	-- Falconwing Square
-							["maps"] = { 94 },	-- Eversong Woods
-						}),
-						crit(4, {	-- Razor Hill
-							["maps"] = { 1 },	-- Durotar
-						}),
+						crit(1),	-- Bloodhoof Village
+						crit(2),	-- Brill
+						crit(3),	-- Falconwing Square
+						crit(4),	-- Razor Hill
 					},
 				}),
 				ach(248, {	-- Sunday's Finest

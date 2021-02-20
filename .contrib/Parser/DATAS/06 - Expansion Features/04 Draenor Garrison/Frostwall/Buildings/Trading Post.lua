@@ -14,32 +14,44 @@ _.ExpansionFeatures =
 							q(37014, {	-- Auctioning for Parts
 								["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 								["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
-								["g"] = 
-									bubbleDown({["questID"] = 37014}, {	-- Auctioning for Parts
-									i(118375, {	-- Arcane Crystal Module
-										i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
-										i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
-										i(118346),	-- Arcane Crystal Amplifier [Part 3 of 4]
-										i(118347),	-- Arcane Crystal Lens [Part 4 of 4]
-									}),
-									i(118376, {	-- Auction Control Module
-										i(118197),	-- Auction Memory Socket [Part 1 of 3]
-										i(118331),	-- Auction Connecting Valve [Part 2 of 3]
-										i(118332),	-- Auction A.D.D.O.N.S Installer [Part 3 of 3]
-									}),
-									i(118379, {	-- Cyclical Power Module
-										i(118340),	-- Cyclical Power Converter [Part 1 of 4]
-										i(118341),	-- Cyclical Power Housing [Part 2 of 4]
-										i(118342),	-- Cyclical Power Framing [Part 3 of 4]
-										i(118343),	-- Cyclical Power Sequencer [Part 4 of 4]
-									}),
-									i(118378, {	-- Super Cooling Module
-										i(118336),	-- Super Cooling Regulator [Part 1 of 4]
-										i(118337),	-- Super Cooling Tubing [Part 2 of 4]
-										i(118338),	-- Super Cooling Coolant [Part 3 of 4]
-										i(118339),	-- Super Cooling Pump [Part 4 of 4]
-									}),
-								}),
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
+									{ "i", 118376, 1 },	-- 1x Auction Control Module
+									{ "i", 118379, 1 },	-- 1x Cyclical Power Module
+									{ "i", 118378, 1 },	-- 1x Super Cooling Module
+								},
+							}),
+							i(118375, {	-- Arcane Crystal Module
+								["cost"] = {
+									{ "i", 118344, 1 },	-- 1x Arcane Crystal Casing [Part 1 of 4]
+									{ "i", 118345, 1 },	-- 1x Arcane Crystal Conduit [Part 2 of 4]
+									{ "i", 118346, 1 },	-- 1x Arcane Crystal Amplifier [Part 3 of 4]
+									{ "i", 118347, 1 },	-- 1x Arcane Crystal Lens [Part 4 of 4]
+								},
+							}),
+							i(118376, {	-- Auction Control Module
+								["cost"] = {
+									{ "i", 118197, 1 },	-- 1x Auction Memory Socket [Part 1 of 3]
+									{ "i", 118331, 1 },	-- 1x Auction Connecting Valve [Part 2 of 3]
+									{ "i", 118332, 1 },	-- 1x Auction A.D.D.O.N.S Installer [Part 3 of 3]
+								},
+							}),
+							i(118379, {	-- Cyclical Power Module
+								["cost"] = {
+									{ "i", 118340, 1 },	-- 1x Cyclical Power Converter [Part 1 of 4]
+									{ "i", 118341, 1 },	-- 1x Cyclical Power Housing [Part 2 of 4]
+									{ "i", 118342, 1 },	-- 1x Cyclical Power Framing [Part 3 of 4]
+									{ "i", 118343, 1 },	-- 1x Cyclical Power Sequencer [Part 4 of 4]
+								},
+							}),
+							i(118378, {	-- Super Cooling Module
+								["cost"] = {
+									{ "i", 118336, 1 },	-- 1x Super Cooling Regulator [Part 1 of 4]
+									{ "i", 118337, 1 },	-- 1x Super Cooling Tubing [Part 2 of 4]
+									{ "i", 118338, 1 },	-- 1x Super Cooling Coolant [Part 3 of 4]
+									{ "i", 118339, 1 },	-- 1x Super Cooling Pump [Part 4 of 4]
+								},
 							}),
 						}),
 						n(VENDORS, {

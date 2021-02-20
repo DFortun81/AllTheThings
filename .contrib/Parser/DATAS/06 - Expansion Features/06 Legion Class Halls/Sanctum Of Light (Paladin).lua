@@ -50,9 +50,13 @@ _.ExpansionFeatures =
 					q(42770),	-- Seeking Guidance
 					q(42017),	-- Shrine of the Truthguard
 					q(43494),	-- Silver Hand Knights
+					--]]
 					q(42850),	-- Tech It Up a Notch
+					--[[
 					q(42846),	-- The Blood Matriarch
+					--]]
 					q(42890),	-- The Codex of Command
+					--[[
 					q(42885),	-- The Highlord's Command
 					q(42967, {	-- The Highlord's Command
 						["races"] = ALLIANCE_ONLY,

@@ -8,7 +8,7 @@ _.Zones =
 		m(102, {	-- Zangarmarsh
 			n(FACTIONS, {
 				faction(942, {	-- Cenarion Expedition
-					["creatureID"] = 17904,	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+					["crs"] = { 17904 },	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 					["g"] = {
 						n(QUESTS, {
 							q(9784, {	-- Identify Plant Parts
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				faction(970, {	-- Sporeggar
-					["creatureID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
+					["crs"] = { 18382 },	-- Mycah <Sporeggar Quartermaster>
 					["g"] = {
 						n(QUESTS, {
 							q(50130, {	-- A Friendly Gesture

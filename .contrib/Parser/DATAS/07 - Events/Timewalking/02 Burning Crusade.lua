@@ -8,10 +8,7 @@ _.WorldEvents =
 		["u"] = 42,	--  Timewalking
 		["g"] = {
 			tier(2, { 	-- Burning Crusade
-				["maps"] = {
-					111	-- Shattrath City
-				},
-				["lvl"] = 70,
+				["maps"] = { 111 },	-- Shattrath City
 				["g"] = {
 					q(47523, {	-- Disturbance Detected: Black Temple
 						["provider"] = { "n", 123252 },	-- Vormu
@@ -215,8 +212,8 @@ _.WorldEvents =
 							},
 						}),
 						i(129948, {	-- Commendation of Honor Hold
-							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 						}),
 						i(129951, {	-- Commendation of Lower City
 							["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
@@ -251,6 +248,7 @@ _.WorldEvents =
 								}),
 								i(34109, {	-- Weather-Beaten Journal
 									["collectible"] = false,	-- Does not track
+									["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
 								}),
 							},
 						}),

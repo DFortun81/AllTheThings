@@ -28,7 +28,7 @@ _.Zones =
 				},
 				["g"] = {
 					n(157300, {	-- Tunk
-						i(179362),	-- Tunk's Backscratcher
+						un(NEVER_IMPLEMENTED, i(179362)),	-- Tunk's Backscratcher
 						i(178163),	-- Tunk's Shinguard
 						i(178167),	-- Tunk's Lil' Whomper
 						i(178164),	-- Tunk's Needle

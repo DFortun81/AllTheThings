@@ -74,6 +74,7 @@ _.Toys =
 		i(104309),		-- Eternal Kiln
 		i(170198),		-- Eternal Palace Dining Set
 		i(86578),		-- Eternal Warrior's Sigil
+		i(184404),		-- Ever-Abundant Hearth
 		i(129113),		-- Faintly Glowing Flagon of Mead
 		i(140780),		-- Fal'dorei Egg
 		i(122304, {		-- Fandral's Seed Pouch (Druid Only)
@@ -86,7 +87,6 @@ _.Toys =
 		i(127659),		-- Ghostly Iron Buccaneer's Hat
 		i(117569),		-- Giant Deathweb Egg
 		i(161342),		-- Gem of Acquiescence
-		i(174445),		-- Glimmerfly Cocoon
 		i(119211),		-- Golden Hearthstone Card: Lord Jaraxxus
 		i(118716),		-- Goren Garb
 		i(119180),		-- Goren "Log" Roller

@@ -150,6 +150,14 @@ namespace ATT
 
             // Export all of the data for the Framework.
             Framework.Export();
+
+            // Update the .TOC with the Parser Run Date
+            //const string TOC_PATH = "..\\..\\AllTheThings.toc";
+            //if (File.Exists(TOC_PATH))
+            //{
+            //    string fullToc = File.ReadAllText(TOC_PATH);
+
+            //}
         }
     }
 }

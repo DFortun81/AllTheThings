@@ -6,15 +6,13 @@ local InfiniteTimereaver =
 {
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
-		["lvl"] = 65,
-		["groups"] = {
+		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["maps"] = TIMEWALKING_DUNGEON_MAP_IDS,
-				["groups"] = {
-					{
-						["itemID"] = 133543,	-- Reins of the Infinite Timereaver
+				["g"] = {
+					i(133543, {	-- Reins of the Infinite Timereaver
 						["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
-					},
+					}),
 				},
 			}),
 		},

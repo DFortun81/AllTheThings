@@ -21,12 +21,25 @@ _.Zones =
 					},
 				}),
 				n(159105, { -- Collector Kash
-					["coord"] = { 49.8, 24.6, 1536 },
 					["questID"] = 58005,
 					["isDaily"] = true,
+					["coord"] = { 49.8, 24.6, 1536 },
 					["g"] = {
-						ach(14308, crit(4)),	-- Adventurer of Maldraxxus / Collector Kash
+						crit(4, {	-- Collector Kash
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(184188),	-- Collector's Corpse Gambrel
+						i(183692, {	-- Jagged Bonesaw
+							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+							["g"] = {
+								crit(2, {	-- Jagged Bonesaw
+									["achievementID"] = 14763,	-- Crypt Couture
+								}),
+							},
+						}),
+						i(184181),	-- Kash's Favored Hook
+						i(184189),	-- Stained Fleshgorer
+						i(184182),	-- Strengthened Abomination Hook
 					},
 				}),
 				n(157058, { -- Corspecutter Moroc
@@ -34,9 +47,12 @@ _.Zones =
 					["questID"] = 58335,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(1)),	-- Adventurer of Maldraxxus / Corspecutter Moroc
+						crit(1, {	-- Corspecutter Moroc
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(184177),	-- Grotesque Goring Pick
 						i(184176),	-- Moroc's Boneslicing Warglaive
+						i(181797),	-- Strange Cloth
 					},
 				}),
 				n(162711, {	-- Deadly Dapperling
@@ -47,8 +63,9 @@ _.Zones =
 						crit(17, {	-- Deadly Dapperling
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
+						i(181263),	-- Shy Melvin (PET!)
 						i(184280),	-- Dapper Threads
-						i(181263),	-- Shy Melvin
+						i(184224),	-- Dapperling Seeds
 					},
 				}),
 				n(162797, {	-- Deepscar <Pit Hound>
@@ -81,9 +98,14 @@ _.Zones =
 					["coord"] = { 31.4, 35.4, 1536 },
 					["questID"] = 58872,
 					["isDaily"] = true,
-					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
+					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
 					["g"] = {
-						i(182080),	-- Predatory Plagueroc
+						i(182080, {	-- Predatory Plagueroc (MOUNT!)
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+						}),
+						i(184298),	-- Amalgamated Forsworn's Journal (has dropped twice from this rare)
+						i(181510),	-- Lingering Numbness [Monk] -- Maybe all Rares?
+						i(183754),	-- Stitchflesh's Design Notes
 					},
 				}),
 				n(162588, { -- Gristlebeak
@@ -107,8 +129,14 @@ _.Zones =
 					["questID"] = 58332,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(8)),	-- Adventurer of Maldraxxus / Indomitable Schmitd
+						crit(8, {	-- Indomitable Schmitd
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(182192),	-- Knee-Obstructing Legguards
+						i(174070, {	-- Indomitable Hide
+							["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
+							["questID"] = 58379,
+						}),
 					},
 				}),
 				n(174108, { -- Necromantic Anomaly
@@ -120,6 +148,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184174),	-- Clasp of Death
+						i(181810),	-- Phylactery of the Dead Conniver
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
@@ -130,18 +159,11 @@ _.Zones =
 						crit(16, {	-- Nerissa Heartless
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(182084),	-- Gorespine
-					},
-				}),
-				n(161857, { -- Nirvaska the Summoner
-					["questID"] = 58629,
-					["isDaily"] = true,
-					["coord"] = { 50.6, 63.2, 1536 },
-					["g"] = {
-						crit(9, {	-- Nirvaska the Summoner
-							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						i(182084),	-- Gorespine (MOUNT!)
+						i(184179),	-- Lichborn Commander's Boneblade
+						i(174076, {	-- Necromantic Oil
+							["questID"] = 58376,	-- Construct Part: Necromantic Oil
 						}),
-						i(183700),	-- Forgotten Summoner's Shoulderpads
 					},
 				}),
 				n(162767, {	-- Pesticide
@@ -150,7 +172,7 @@ _.Zones =
 					["coord"] = { 53.8, 61.0, 1536 },
 					["g"] = {
 						crit(19, {	-- Pesticide
-							["achievementID"] = 14308,	-- Adventurer of Bastion
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182205),	-- Scarab-Shell Faceguard
 					},
@@ -164,7 +186,22 @@ _.Zones =
 						crit(5, {	-- Ravenomous
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(181283),	-- Foulwing Hatchling
+						i(181283),	-- Foulwing Buzzer (PET!)
+						i(184184),	-- Ravenomous's Acid-Tipped Stinger
+					},
+				}),
+				n(158406, { -- Scunner
+					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
+					["questID"] = 58006,
+					["isDaily"] = true,
+					["coord"] = { 61.6, 76.4, 1536 },
+					["g"] = {
+						crit(2, {	-- Scunner
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(181267),	-- Writhing Spine (PET!)
+						i(183833),	-- Kash's Bag of Junk
+						i(184287),	-- Scum-Caked Epaulettes
 					},
 				}),
 				n(159886, { -- Sister Chelicerae
@@ -181,31 +218,21 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(181172),	-- Boneweave Hatchling (PET!)
-					},
-				}),
-				n(158406, { -- Scunner
-					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
-					["questID"] = 58006,
-					["isDaily"] = true,
-					["coord"] = { 61.6, 76.4, 1536 },
-					["g"] = {
-						crit(2, {	-- Scunner
-							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
-						}),
-						i(181267),	-- Writhing Spine (PET!)
-						i(184287),	-- Scum-Caked Epaulettes
+						i(184289),	-- Spindlefang Spellblade
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster
+					["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare.  Clicking the object will aggro all the Peaceful Bloodlice in the area.",
 					["questID"] = 58768,
 					["isDaily"] = true,
-					["coord"] = { 43.8, 53.2, 1536 },
+					["coord"] = { 42.5, 53.4, 1536 },
 					["g"] = {
 						crit(11, {	-- Smorgas the Feaster
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(181265),	-- Corpselouse Larva
 						i(181266),	-- Feasting Larva
+						i(184299),	-- Goresoaked Carapace
 					},
 				}),
 				n(162586, { -- Tahonta
@@ -216,16 +243,31 @@ _.Zones =
 						crit(12, {	-- Tahonta
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(182075),	-- Bonehoof Tauralus
+						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+							["description"] = "You must be Necrolord, at least Renown 32 & Abomination building construct \"Neena\" with you for this mount to have a chance of dropping.",
+						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
 				}),
 				n(160059, { -- Taskmaster Xox <Master Taskmaster>
-					--["coord"] = { 55.6, 22.4, 1536 },
-					--["questID"] = ,
+					["description"] = "Kill non-rare taskmasters (Bloata, Joyless, and Mortis) and Xox has a chance to spawn in their place.",
+					["questID"] = 58091,
 					["isDaily"] = true,
+					["coord"] = { 50.7, 20.1, 1536 },
+					["crs"] = {
+						160204,	-- Taskmaster Bloata
+						160230,	-- Taskmaster Joyless
+						160226,	-- Taskmaster Mortis
+					},
 					["g"] = {
-						ach(14308, crit(7)),	-- Adventurer of Maldraxxus / Taskmaster Xox <Master Taskmaster>
+						crit(7, {	-- Taskmaster Xox
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(184193),	-- Callus-Forged Hook
+						i(184186),	-- Flesh-Fishing Hook
+						i(184192),	-- Pristine Alabaster Gorer
+						i(184187),	-- Taskmaster's Tenderizer
 					},
 				}),
 				n(-922,   {	-- Theater of Pain
@@ -261,10 +303,11 @@ _.Zones =
 							}),
 						}),
 						n(168147, { -- Sabriel the Bonecleaver
-							["description"] = "Requires a member of the |cFF40bf40Necrolord Covenant|r to summon.",
+							["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
 							["isDaily"] = true,
-						--	["questID"] = ,
+							["questID"] = 58784,
 							["coord"] = { 50.4, 48.2, 1536 },
+							["crs"] = { 168148 },	-- Drolkrad
 							["g"] = {
 								crit(13, {	-- Sabriel the Bonecleaver
 									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -272,8 +315,10 @@ _.Zones =
 								crit(7, {	-- Sabriel the Bonecleaver
 									["achievementID"] = 14802,	-- Bloodsport
 								}),
-								i(182083),	-- Bonecleaver'S Skullboar
-								i(181815),	-- Armored Bonehoof Tauralus
+								i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
+									["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+								}),
+								i(184291),	-- Tempered Boneplate Waistguard
 							},
 						}),
 						n(162874, {	-- Ti'or
@@ -294,30 +339,50 @@ _.Zones =
 					},
 				}),
 				n(162180, { -- Thread Mistress Leeda
-					--["coord"] = { 50.6, 63.2, 1536 },
-					--["questID"] = ,
+					["description"] = "Kill the Razorthread Weavers in Leeda's room, and there is a chance that she will spawn in their place.",
+					["questID"] = 58678,
 					["isDaily"] = true,
+					["coord"] = { 24.0, 43.1, 1536 },
+					["crs"] = { 162220 },	-- Razorthread Weaver
 					["g"] = {
-						ach(14308, crit(10)),	-- Adventurer of Maldraxxus / Thread Mistress Leeda
+						crit(10, {	-- Thread Mistress Leeda
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(184180),	-- Leeda's Unrefined Mask
 					},
 				}),
 				n(162819, { -- Warbringer Mal'Korak
 					["questID"] = 58889,
 					["isDaily"] = true,
 					["coord"] = { 34.4, 79.4, 1536 },
+					["crs"] = { 162818 },	-- Wartusk
 					["g"] = {
 						crit(21, {	-- Warbringer Mal'Korak
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182085),	-- Blisterback Bloodtusk
+						i(184288),	-- Ruthless Warlord's Barrier
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
-					["coord"] = { 29.0, 51.6, 1536 },
-					["questID"] = 50290,
+					["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him).  Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
+					["questID"] = 59290,
 					["isDaily"] = true,
+					["coord"] = { 29.0, 51.6, 1536 },
 					["g"] = {
-						ach(14308, crit(3)),	-- Adventurer of Maldraxxus / Zargox the Reborn
+						crit(3, {	-- Zargox the Reborn
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(183690, {	-- Ashen Ink
+							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+							["g"] = {
+								crit(1, {	-- Ashen Ink
+									["achievementID"] = 14763,	-- Crypt Couture
+								}),
+							},
+						}),
+						i(184285),	-- Boneclutched Shackles
+						i(181804),	-- Trophy of the Reborn Bonelord
 					},
 				}),
 			}),

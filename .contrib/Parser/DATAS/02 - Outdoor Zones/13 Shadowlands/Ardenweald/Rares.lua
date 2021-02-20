@@ -41,10 +41,11 @@ _.Zones =
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
-					["description"] = "At the back of the cave.",
+					["description"] = "At the back of the cave.  Destroy |cFFFFFFFFQuivering Gorm Eggs|r and defeat the Angry Egg-Tenders until the rare spawns.",
 					["questID"] = 60266,
 					["isDaily"] = true,
 					["coord"] = { 58.5, 31.8, 1565 },
+					["crs"] = { 171827 },	-- Angry Egg-Tender
 					["g"] = {
 						crit(13, {	-- Egg-Tender Leh'go
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -65,6 +66,7 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
+					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn.",
 					["questID"] = 59006,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 75.8, 1565 },
@@ -72,7 +74,7 @@ _.Zones =
 						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(183196),	-- Lavender Nibbler (PET!)
+						i(183196), 	-- Lavender Nibbler (PET!)
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
@@ -80,11 +82,32 @@ _.Zones =
 					["questID"] = 59145,
 					["isDaily"] = true,
 					["coord"] = { 28.4, 55.3, 1565 },
+					["crs"] = { 164110 },	-- Chompy
 					["g"] = {
 						crit(4, {	-- Gormtamer Tizo
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180725),	-- Spinemaw Gladechewer
+						i(180725),	-- Spinemaw Gladechewer (MOUNT!)
+					},
+				}),
+				o(345446, {	-- Great Horn of the Runestag
+					["description"] = "The horn can randomly spawn at one of many locations in Ardenweald.  When the horn is used, the Mystic Rainbowhorn will spawn at |cFFFFFFFF65.7, 28.1|r.",
+					["g"] = {
+						n(164547, {	-- Mystic Rainbowhorn
+							["questID"] = 59235,
+							["isDaily"] = true,
+							["coord"] = { 65.7, 28.1, 1565 },
+							["g"] = {
+								crit(2, {	-- Mystic Rainbowhorn
+									["achievementID"] = 14309,	-- Adventurer of Ardenweald
+								}),
+								i(182179, {	-- Runestag Soul
+								--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file? [All soulshape forms are already in NF file; item needs to be here to see where it drops]
+									["questID"] = 62434,	-- Runestag Soul
+								}),
+								i(179586),	-- Elderwood Piercer
+							},
+						}),
 					},
 				}),
 				n(164112, {	-- Humon'gozz
@@ -111,12 +134,17 @@ _.Zones =
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
 						i(179596),	-- Drust Mask of Dominance
-					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna	
+					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna
 						i(180163),	-- Blackthorn Harvester
 						i(180143),	-- Darkreach Hacker
 						i(179593),	-- Darkreach Mask
+						i(180155),	-- Darkreach Splitter
 						i(180142),	-- Deadstone Hatchet
+						i(180153),	-- Drustwrought Executioner
+						i(180162),	-- Drustwrought Scythe
+						i(180156),	-- Witherscorn Greataxe
 						i(179594),	-- Witherscorn Guise
+						i(180145),	-- Witherscorn Handaxe
 						i(180165),	-- Witherscorn Reaper
 					},
 				}),
@@ -126,8 +154,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 32.9, 44.4, 1565 },	-- confirmed
+						{ 36.4, 48.1, 1565 },	-- confirmed
 						{ 47.9, 40.2, 1565 },	-- confirmed
-						{ 36.5, 47.9, 1565 },
 						{ 59.9, 29.4, 1565 },
 						{ 36.5, 47.9, 1565 },
 						{ 57.9, 29.3, 1565 },
@@ -140,7 +168,8 @@ _.Zones =
 					},
 				}),
 				n(165053, {	-- Mymaen
-				--	["questID"] = ,
+					["description"] = "Shared spawn with Rotbriar Scrappers.",
+					["questID"] = 59431,
 					["isDaily"] = true,
 					["coord"] = { 62.2, 24.8, 1565 },
 					["g"] = {
@@ -148,21 +177,6 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(179502),	-- Ripvine Barb
-					},
-				}),
-				n(164547, {	-- Mystic Rainbowhorn
-				--	["questID"] = ,
-					["isDaily"] = true,
-					["coord"] = { 50.0, 20.6, 1565 },
-					["g"] = {
-						crit(2, {	-- Mystic Rainbowhorn
-							["achievementID"] = 14309,	-- Adventurer of Ardenweald
-						}),
-						i(182179, {	-- Runestag Soul
-						--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file?
-							["questID"] = 62434,	-- Runestag Soul
-						}),
-						i(179586),	-- Elderwood Piercer
 					},
 				}),
 				n(164391, {	-- Old Ardeite
@@ -204,19 +218,19 @@ _.Zones =
 				}),
 				n(171699, {	-- Shimmermist Runner
 					["coords"] = {
-						{  31.04, 54.51, 1565 },	-- start
-						{  29.60, 55.76, 1565 },	-- 1
-						{  30.02, 57.49, 1565 },	-- 2
-						{  29.56, 57.91, 1565 },	-- 3
-						{  29.31, 59.10, 1565 },	-- 4
-						{  28.82, 58.71, 1565 },	-- 5
-						{  27.56, 57.85, 1565 },	-- 6
+						{  31.0, 54.5, 1565 },	-- start
+						{  29.6, 56.3, 1565 },	-- 1
+						{  29.8, 57.8, 1565 },	-- 2
+						{  29.2, 58.5, 1565 },	-- 3
+						{  28.9, 58.8, 1565 },	-- 4
+						{  28.1, 58.1, 1565 },	-- 5
+						{  27.5, 57.8, 1565 },	-- 6
 					},
-					["description"] = "Enter the Maze in Oaken Assembly on (31.04, 54.51).\n\n On the 1st intersection at (29.60, 55.76) go LEFT/SOUTH-EAST.\n\n On the 2nd intersection at (30.02, 57.49) go RIGHT/SOUTH-WEST.\n\n On the 3rd intersection at (29.56, 57.91) go LEFT/SOUTH.\n\n On the 4th intersection at (29.31, 59.10) go RIGHT/NORTH-WEST.\n\n On the 5th intersection at (28.82, 58.71) go FORWARD/NORTH-WEST.\n\n On the 6th and last intersection at (27.56, 57.85) go LEFT/WEST into the Area.\n\n You can now engage Shizgher.\n\n After defeating Shizgher you can click Shimmermist Runner and the mount Shimmermist Runner will be put in your bag.",
-					["crs"] = { 171767 },	-- Shizgher
+					["description"] = "To complete the maze correctly, follow the blue lanterns at every step.\n\n1. Enter Mistveil Tangle through the Oaken Assembly at |cFFFFFFFF31.0, 54.5|r.  Two blue lanterns hang on either side of a vine arch.\n\n2. Head down the hill and turn left at |cFFFFFFFF29.6, 56.3|r.  Again, two blue lanterns hang on either side of a vine arch.\n\n3. Turn right at |cFFFFFFFF29.8, 57.8|r.  A single blue lamp hangs from the vine arch.\n\n4. Turn left at |cFFFFFFFF29.2, 58.5|r.  A single blue lamp is on the ground.\n\n5. Immediately turn right through the arch at |cFFFFFFFF28.9, 58.8|r.  A single blue lamp hangs on the left side.\n\n6. Go through the arch at |cFFFFFFFF28.1, 58.1|r.  A single blue lamp is on the ground on the right side of the arch.\n\n7. Go straight to the area on the map where the Tame Gladerunner treasure is displayed.  If you've done the maze correctly Shizgher will not fade out of view.  Defeat him, and then click on the Shimmermist Runner to collect it.",
 					["questID"] = 61192,
+					["crs"] = { 171767 },	-- Shizgher
 					["g"] = {
-						i(180727),		-- Shimmermist Runner
+						i(180727),		-- Shimmermist Runner (MOUNT!)
 					},
 				}),
 				n(164415, {	-- Skuld Vit
@@ -228,13 +242,13 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(182183, {	-- Wolfhawk Soul
-							["questID"] = 62439,	-- Shadowstalker Soul
+							["questID"] = 62439,	-- Wolfhawk Soul
 						}),
 						i(180146),	-- Axe of Broken Wills
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
-				--	["questID"] = ,
+					["questID"] = 61177,
 					["isDaily"] = true,
 					["coord"] = { 72.4, 51.6, 1565 },
 					["g"] = {
@@ -247,6 +261,7 @@ _.Zones =
 				n(-934,   {	-- Star Lake Amphitheater
 					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
+					["isDaily"] = true,
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew
@@ -269,6 +284,7 @@ _.Zones =
 								crit(7, {	-- N'zoth
 									["achievementID"] = 14353,	-- Ardenweald's a Stage
 								}),
+								i(182453),	-- Twilight Bloom
 							},
 						}),
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
@@ -333,6 +349,7 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(175711),	-- Slumberwood Band
+						i(183828),	-- Friendly Bugs
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting
@@ -344,7 +361,9 @@ _.Zones =
 						crit(19, {	-- Valfir the Unrelenting
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
+						i(180730, {	-- Wild Glimmerfur Prowler (MOUNT!)
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
+						}),
 						i(180154),	-- Greataxe of Unrelenting Pursuit
 						i(182176, {	-- Shadowstalker Soul
 							["questID"] = 62431,	-- Shadowstalker Soul

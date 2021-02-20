@@ -9,7 +9,8 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
-					i(179593),	-- Darkreach Mask
+					i(181721),	-- Ascendant Valor Signet
+					i(179593),	-- Darkreach Mask	-- TODO: did this actually drop in Bastion? definitely very Ardenweald/Drust-themed
 					i(181603),	-- Forgehand's Chain
 					i(181591),	-- Forgehand's Chainmail
 					i(181596),	-- Forgehand's Handguards
@@ -18,7 +19,20 @@ _.Zones =
 					i(181594),	-- Forgehand's Sabatons
 					i(181602),	-- Forgehand's Spaulders
 					i(181604),	-- Forgehand's Wristguards
+					i(181635),	-- Honortoll Gavel
+					i(181630),	-- Honortoll Spear
+					i(184840),	-- Hymnal of the Path
+					i(184842),	-- Instructor's Divine Bell
+					i(181627),	-- Lifepath Crossbow
+					i(181637),	-- Lifepath Hammer
+					i(184841),	-- Lyre of Sacred Purpose
+					i(181628),	-- Memoria Glaive
+					i(181634),	-- Memoria Greatblade
+					i(181636),	-- Memoria Spellblade
+					i(184839);	-- Misfiring Centurion Controller
 					i(181631),	-- Requiem Chime
+					i(181632),	-- Requiem Handscythes
+					i(181702),	-- Sanctified Guardian's Signet
 					i(181605),	-- Shieldguard's Breastplate
 					i(181608),	-- Shieldguard's Gauntlets
 					i(181612),	-- Shieldguard's Girdle
@@ -28,6 +42,7 @@ _.Zones =
 					i(181614),	-- Shieldguard's Vambraces
 					i(181606),	-- Shieldguard's Warboots
 					i(181704),	-- Silvernote Cloak
+					i(181703),	-- Skychime Necklace
 					i(181587),	-- Soulbearer's Belt
 					i(181578),	-- Soulbearer's Boots
 					i(181589),	-- Soulbearer's Bracers
@@ -44,8 +59,8 @@ _.Zones =
 					i(181574),	-- Spiritmender's Mantle
 					i(181569),	-- Spiritmender's Robe
 					i(181570),	-- Spiritmender's Slippers
-					i(179594),	-- Witherscorn Guise
-					i(180165),	-- Witherscorn Reaper
+					i(181633),	-- Waylight Blade
+					i(181629),	-- Waylight Defender
 				},
 			}),
 		}),

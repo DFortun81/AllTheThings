@@ -47,6 +47,46 @@ _.WorldEvents =
 			}),
 			n(-544, {	-- WoW Collector's Edition
 				tier(1, {	-- Classic
+					q(8547, {	-- Welcome! (Blood Elf)
+						["provider"] = { "i", 20938 },	-- Falconwing Square Gift Voucher
+						["races"] = { BLOODELF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(9278, {	-- Welcome! (Draenei)
+						["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
+						["races"] = { DRAENEI },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5841, {	-- Welcome! (Dwarf)
+						["provider"] = { "i", 14647 },	-- Kharanos Gift Voucher
+						["races"] = { DWARF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5805, {	-- Welcome! (Human)
+						["provider"] = { "i", 14646 },	-- Goldshire Gift Voucher
+						["races"] = { HUMAN },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5842, {	-- Welcome! (Night Elf)
+						["provider"] = { "i", 14648 },	-- Dolanaar Gift Voucher
+						["races"] = { NIGHTELF },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5843, {	-- Welcome! (Orc)
+						["provider"] = { "i", 14649 },	-- Razor Hill Gift Voucher
+						["races"] = { ORC },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5844, {	-- Welcome! (Tauren)
+						["provider"] = { "i", 14650 },	-- Bloodhoof Village Gift Voucher
+						["races"] = { TAUREN },
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(5847, {	-- Welcome! (Undead)
+						["provider"] = { "i", 14651 },	-- Brill Gift Voucher
+						["races"] = { UNDEAD },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					un(REMOVED_FROM_GAME, ach(662, {		-- Collector's Edition: Mini-Diablo
 						un(REMOVED_FROM_GAME, i(13584)),	-- Diablo Stone (Mini-Diablo)
 					})),
@@ -114,10 +154,12 @@ _.WorldEvents =
 					un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
 					un(BLIZZARD_BALANCE, p(2779)),			-- Anima Wyrmling
 					un(BLIZZARD_BALANCE, i(172179)),		-- Eternal Traveler's Hearthstone
-					un(BLIZZARD_BALANCE, i(172177)),		-- Illusion: Wraithchill
+					un(BLIZZARD_BALANCE, i(172177, {		-- Illusion: Wraithchill
+						["illusionID"] = 6162,	-- for some reason without this it wants to be ID #6258, which is Sinwrath's ID
+					})),
 					un(BLIZZARD_BALANCE, q(57686, {			-- The Eternal Traveler
-						["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 						["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+						["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 						["g"] = {
 							spell(309452, {	-- Vestments of the Eternal Traveler
 								i(172075),	-- Eternal Traveler's Guise

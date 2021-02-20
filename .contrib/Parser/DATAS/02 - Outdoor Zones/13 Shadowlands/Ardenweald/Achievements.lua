@@ -8,12 +8,15 @@ _.Zones =
 		m(1565, {	-- Ardenweald
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				--	TODO: finish adding criteria here/in other zones as pets are found
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Briarpaw
 							["coord"] = { 34.2, 44.4, 1565 },
 							["crs"] = { 175778 },	-- Briarpaw
+						}),
+						crit(3, {	-- Chittermaw
+							["coord"] = { 26.6, 62.0, 1565 },
+							["crs"] = { 175779 },	-- Chittermaw
 						}),
 						crit(4, {	-- Mistwing
 							["coord"] = { 49.8, 41.6, 1565 },
@@ -23,23 +26,25 @@ _.Zones =
 				}),
 				ach(14774, {	-- Ardenweald Gourmand
 					["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
+					["coord"] = { 65.0, 19.6, 1565 },
+					["crs"] = { 164725 },	-- Tanor <Food & Drink>
 					["g"] = {
-						crit(1),		-- Glittersnap Snowpeas
-						crit(2),		-- Glazed Glowberries
-						crit(3),		-- Candied Brightbark
-						crit(4),		-- Torchberry Bundle
-						crit(5),		-- Grilled Slumbershrooms
-						crit(6),		-- Charred Runeflank
-						crit(7),		-- Poached Strider Egg
-						crit(8),		-- Flask of Ardendew
-						crit(9),		-- Mulled Faewine
-						crit(10),		-- Wintermelon Brandy
-						crit(11),		-- Honeyplum Pie
-						crit(12),		-- Sylberry Snowcake
-						crit(13),		-- Ripe Wintermelon
-						crit(14),		-- Wild Hunter's Stew
-						crit(15),		-- Steamed Gorm Tail
-						crit(16),		-- Midnight Starpepper
+						crit(1, {["cost"] = {{ "i", 178228, 1 }}}),	-- Glittersnap Snowpeas
+						crit(2, {["cost"] = {{ "i", 173761, 1 }}}),	-- Glazed Glowberries
+						crit(3, {["cost"] = {{ "i", 173759, 1 }}}),	-- Candied Brightbark
+						crit(4, {["cost"] = {{ "i", 178252, 1 }}}),	-- Torchberry Bundle
+						crit(5, {["cost"] = {{ "i", 178216, 1 }}}),	-- Grilled Slumbershrooms
+						crit(6, {["cost"] = {{ "i", 178226, 1 }}}),	-- Charred Runeflank
+						crit(7, {["cost"] = {{ "i", 178223, 1 }}}),	-- Poached Strider Egg
+						crit(8, {["cost"] = {{ "i", 173762, 1 }}}),	-- Flask of Ardendew
+						crit(9, {["cost"] = {{ "i", 178219, 1 }}}),	-- Mulled Faewine
+						crit(10, {["cost"] = {{ "i", 178218, 1 }}}),	-- Wintermelon Brandy
+						crit(11, {["cost"] = {{ "i", 178222, 1 }}}),	-- Honeyplum Pie
+						crit(12, {["cost"] = {{ "i", 173760, 1 }}}),	-- Sylberry Snowcake
+						crit(13, {["cost"] = {{ "i", 178247, 1 }}}),	-- Ripe Wintermelon
+						crit(14, {["cost"] = {{ "i", 178225, 1 }}}),	-- Wild Hunter's Stew
+						crit(15, {["cost"] = {{ "i", 178224, 1 }}}),	-- Steamed Gorm Tail
+						crit(16, {["cost"] = {{ "i", 178227, 1 }}}),	-- Midnight Starpepper
 					},
 				}),
 				ach(14353, {	-- Ardenweald's a Stage
@@ -77,6 +82,141 @@ _.Zones =
 					crit(8, {	-- Awaken the Dreamer
 						["sourceQuests"] = { 58724 },	-- The Queen's Request
 					}),
+				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(10, {	-- Glitterdust
+									["coord"] = { 58.2, 56.8, 1565 },
+									["cr"] = 173372,	-- Glitterdust
+								}),
+								crit(11, {	-- Faryl
+									["coord"] = { 51.2, 44.2, 1565 },
+									["cr"] = 173377,	-- Faryl
+								}),
+							},
+						}),
+					},
 				}),
 				ach(14788, {	-- Fractured Faerie Tales
 					-- TODO: fill in more coords; figure out if some of them have multiple spawn points
@@ -156,6 +296,7 @@ _.Zones =
 					["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
 					["crs"] = { 171690 },	-- Gwyncierw
 				}),
+				ach(14511),		-- Tour of Duty: Ardenweald
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
 						["questID"] = 61072,
@@ -359,6 +500,9 @@ _.Zones =
 						},
 						["questID"] = 61068,
 						["description"] = "Use the Mushroom at |cFFFFFFFF37.6, 61.5|r and jump into the broken tree.",
+						["g"] = {
+							i(180155),	-- Darkreach Splitter (potentially a ZR or ZD instead?)
+						},
 					}),
 				}),
 				ach(14779, {	-- Wild Hunting

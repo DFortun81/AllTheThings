@@ -17,11 +17,12 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179487),	-- Aethon's Horn
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
-				n(-940,   {	-- Ascendend Council
+				n(-940,   {	-- Ascended Council
 					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
+					["questID"] = 60977,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 53.5, 88.3, 1533 },	-- The Ascended Council
 						{ 33.3, 59.7, 1533 },	-- Vesper of Courage
@@ -31,23 +32,14 @@ _.Zones =
 						{ 32.1, 17.8, 1533 },	-- Vesper of Loyalty
 					},
 					["crs"] = { 
-						170834,	-- Champion of Purity
 						170835,	-- Champion of Courage	
-						170833,	-- Champion of Wisdom
 						170836,	-- Champion of Humility
+						170832,	-- Champion of Loyalty
+						170834,	-- Champion of Purity
+						170833,	-- Champion of Wisdom
 					},
 					["g"] = {
 						i(183741),	-- Ascended Skymane
-						n(170832, { -- Champion of Loyalty
-							--["coord"] = { 43.0, 82.6, 1533 },
-							--["questID"] = ,
-							["isDaily"] = true,
-							["g"] = {
-								crit(28, {	-- Champion of Loyalty
-									["achievementID"] = 14307,	-- Adventurer of Bastion
-								}),
-							},
-						}),
 					},
 				}),
 				n(171211, { -- Aspirant Eolis
@@ -119,7 +111,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179488),	-- Cloudtail's Paw
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(171014, { -- Collector Astorestes
@@ -188,6 +179,7 @@ _.Zones =
 						i(183604),	-- Piercing Timbre Crossbow
 						i(183609),	-- Re-Powered Golliath Fists
 						i(183607),	-- Uncertain Aspirant's Spear
+						i(183610),	-- Warrior Poet's Poniard
 					},
 				}),
 				n(163460, { -- Dionae
@@ -216,6 +208,7 @@ _.Zones =
 					},
 				}),
 				n(171009, { -- Enforcer Aegeon
+					["description"] = "Force the rare to spawn by killing mobs around the Eternal Forge.  Forge-Keeper Mnemis will periodically announce the threat level, and Aegeon will be dispatched when the threat level reaches Major.",
 					["questID"] = 60998,
 					["isDaily"] = true,
 					["coord"] = { 50.8, 19.6, 1533 },
@@ -256,10 +249,13 @@ _.Zones =
 				}),
 				n(156340, { -- Larionrider Orstus
 					["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+					["questID"] = 61634,
 					["isDaily"] = true,
 					["coord"] = { 24.5, 22.7, 1533 },
-					--["questID"] = ,
 					["g"] = {
+						crit(28, {	-- Orstus and Sotiros
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(184401),	-- Larion Pouncer (PET!)
 					},
 				}),
@@ -273,7 +269,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179485),	-- Fang of Nemaeus
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(160882, { -- Nikara Blackheart
@@ -288,13 +283,15 @@ _.Zones =
 					},
 				}),
 				n(171327, { -- Reekmonger
-					--["coord"] = { 46.8, 64.0, 1533 },
-					--["questID"] = ,
+					["description"] = "Killing the creatures in 'The Necrotic Wake' area will have a chance to make the dragon come down from the sky and become attackable.",
+					["coord"] = { 30.3, 55.2, 1533 },
+					["questID"] = 61108,
 					["isDaily"] = true,
 					["g"] = {
 						crit(25, {	-- Reekmonger
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(182749),	-- Regurgitated Kyrian Wings
 					},
 				}),
 				n(160985, {	-- Selena the Reborn
@@ -319,7 +316,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(179486),	-- Sigilback's Smashshell
-						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(170548, { -- Sundancer
@@ -363,7 +359,7 @@ _.Zones =
 							}),
 						}),
 						n(171013, { -- Embodied Hunger
-						--	["questID"] = ,
+							["questID"] = 61001,
 							["isDaily"] = true,
 							["g"] = {
 								crit(16, {	-- Embodied Hunger
@@ -372,7 +368,7 @@ _.Zones =
 							},
 						}),
 						n(171041, { -- Worldfeaster Chronn
-						--	["questID"] = ,
+							["questID"] = 61047,
 							["isDaily"] = true,
 							["g"] = {
 								crit(18, {	-- Worldfeaster Chronn
@@ -381,7 +377,7 @@ _.Zones =
 							},
 						}),
 						n(171040, { -- Xixin the Ravening
-						--	["questID"] = ,
+							["questID"] = 61046,
 							["isDaily"] = true,
 							["g"] = {
 								crit(17, {	-- Xixin the Ravening

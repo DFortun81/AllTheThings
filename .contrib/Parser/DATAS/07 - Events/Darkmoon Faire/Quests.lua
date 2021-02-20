@@ -862,6 +862,9 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(29465, {	-- Tools of Divination
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(37819, {	-- Welcome to the Darkmoon Races
 				["provider"] = { "n", 74056 },	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, 407 },
@@ -886,9 +889,17 @@ _.WorldEvents =
 				["u"] = REMOVED_FROM_GAME,
 				["requireSkill"] = INSCRIPTION,
 			}),
-			q(7945, {	-- Your Fortune Awaits You...
+			q(7937, {	-- Your Fortune Awaits You...
+				["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
 				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(7944, {	-- Your Fortune Awaits You...
+				["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			q(7945, {	-- Your Fortune Awaits You...
 				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		}),
 	}),

@@ -44,6 +44,7 @@ _.Achievements =
 					["_quests"] = { 51173 },	-- Sandfishing
 				}),
 			})),
+			ach(14161),		-- All Consuming
 			ach(13790, {	-- Armed for Action
 				crit(1),	-- Volatile Blaster
 				crit(2),	-- Ricket's Special Delivery
@@ -155,7 +156,6 @@ _.Achievements =
 					["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
 				}),
 			})),
-			ach(14161),		-- Get In My Belly!
 			ach(12918),		-- Have a Heart
 			h(ach(13542, {	-- How to Train Your Direhorn
 				crit(1),		-- Naptime

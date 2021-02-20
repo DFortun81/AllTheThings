@@ -124,7 +124,7 @@ _.Zones =
 							},
 						}),
 						n(66359, {	-- Master Tan <Fist Weapon Vendor>
-							["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 80 Monk quest 'Continue Your Training: Master Hsu'|r",
+							["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu'|r",
 							["g"] = {
 								i(89579),	-- Tiger Lord's Bladed Claws
 								i(89578),	-- Tiger Lord's Razor Claws

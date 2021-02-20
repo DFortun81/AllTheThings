@@ -17,9 +17,9 @@ _.PVP =
 				i(138486),	-- "Third Wind" Potion
 			},
 		}),
-		i(135539, {	-- Crate of Battlefield Goods 10-49	-- 9.0+
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-49 range.|r",
-			["lvl"] = { 10, 49 },
+		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-59 range.|r",
+			["lvl"] = { 10, 59 },
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*

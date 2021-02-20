@@ -10,25 +10,63 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["modID"] = 14,
 		["lvl"] = { 60 },
 		["g"] = {
-			e(2430, {	-- Valinor, the Light of Eons
-				["isWeekly"] = true,
-				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
-				["isRaid"] = true,
-				--["coord"] = { 62.0, 24.0, 895 },
-				["maps"] = {
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					167525,	-- Mortanis
+					167526,	-- Nurgash Muckformed
+					167527,	-- Oranomonos the Everbranching
+					167524,	-- Valinor, the Light of Eons
 				},
-				["cr"] = 167524,	-- Valinor, the Light of Eons
-				["g"] = bubbleDown({["modID"] = 3}, {
-					i(183325),	-- Memory of Archbishop Benedictus
-					i(183311),	-- Memory of the Final Verdict
-					i(183353),	-- Memory of the Windspeaker's Lava Resurgence
-					i(184136),	-- Anima-Charged Wristbanding
-					i(184170),	-- Doubtweaver's Handwraps
-					i(184132),	-- Oversized Centurion Helm
-					i(184125),	-- Servo-Chain Waistguard
-					i(184141),	-- Shroud of the Penitent
-					i(184139),	-- Valinor's Ground Pounders
-				}),
+				["g"] = {
+					i(181770),	-- Bone Marrow Hops
+					i(182706),	-- Brooding Pool
+					i(182292),	-- Brutal Grasp
+					i(182962),	-- Catastrophic Origin
+					i(183473),	-- Conflux of Elements
+					i(181974),	-- Courageous Ascension
+					i(183471),	-- Deep Allegiance
+					i(182651),	-- Destructive Reverberations
+					i(181539),	-- Discipline of the Grove
+					i(182345),	-- Elysian Dirge
+					i(182331),	-- Empowered Release
+					i(183474),	-- Endless Thirst
+					i(182321),	-- Enfeebled Mark
+					i(182347),	-- Essential Extraction
+					i(183472),	-- Evolved Swarm
+					i(182129),	-- Fae Fermata
+					i(182961),	-- Fatal Decimation
+					i(181981),	-- Festering Transfusion
+					i(181553),	-- Gift of the Lich
+					i(182777),	-- Hallowed Discernment
+					i(182463),	-- Harrowing Punishment
+					i(181774),	-- Imbued Reflections
+					i(182288),	-- Impenetrable Gloom
+					i(182685),	-- Increased Scrutiny
+					i(181600),	-- Ire of the Ascended
+					i(183495),	-- Lashing Scars
+					i(182348),	-- Lavish Harvest
+					i(182339),	-- Necrotic Barrage
+					i(182440),	-- Piercing Verdict
+					i(182295),	-- Proliferation
+					i(182646),	-- Repeat Decree
+					i(183492),	-- Reverberation
+					i(182770),	-- Righteous Might
+					i(182778),	-- Ringing Clarity
+					i(183494),	-- Septic Shock
+					i(182130),	-- Shattered Perceptions
+					i(181639),	-- Siphoned Malice
+					i(182964),	-- Soul Eater
+					i(182960),	-- Soul Tithe
+					i(182335),	-- Spirit Attunement
+					i(181759),	-- Strike with Clarity
+					i(183493),	-- Sudden Fractures
+					i(182767),	-- The Long Summer
+					i(182346),	-- Tumbling Waves
+					i(183463),	-- Unnatural Malice
+					i(182442),	-- Veteran's Respite
+					i(181775),	-- Way of the Fae
+					i(183199),	-- Withering Ground
+				},
 			}),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
@@ -36,7 +74,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isRaid"] = true,
 				["coord"] = { 32.1, 67.3, 1536 },
 				["maps"] = { 1536 },	-- Maldraxxus
-				["cr"] = 173104,	-- Mortanis
+				["cr"] = 167525,	-- Mortanis
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda
@@ -49,13 +87,31 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(184133),	-- Spine Crawler Waistcord
 				}),
 			}),
+			e(2433, {	-- Nurgash Muckformed
+				["isWeekly"] = true,
+				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
+				["isRaid"] = true,
+				["coord"] = { 27.2, 14.9, 1525 },
+				["maps"] = { 1525 },	-- Revendreth
+				["cr"] = 167526,	-- Nurgash Muckformed
+				["g"] = bubbleDown({["modID"] = 3}, {
+					i(182638),	-- Memory of a Frenzied Monstrosity
+					i(183215),	-- Memory of an Erratic Fel Core
+					i(183376),	-- Memory of Azj'Aqir's Madness
+					i(184131),	-- Comfortable Slumberwraps
+					i(184171),	-- Hardened Castle Crushers
+					i(184134),	-- Jingling Stone Stompers
+					i(184144),	-- Muckformed Chain Choker
+					i(184130),	-- Nurgash's Belt of Many Sinstones
+					i(184137),	-- Sinstone Shoulderpadding
+				}),
+			}),
 			e(2432, {	-- Oranomonos the Everbranching
 				["isWeekly"] = true,
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
-				--["coord"] = { 62.0, 24.0, 895 },
-				["maps"] = {
-				},
+				["coord"] = { 20.2, 63.6, 1565 },
+				["maps"] = { 1565 },	-- Ardenweald
 				["cr"] = 167527,	-- Oranomonos the Everbranching
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
@@ -69,24 +125,23 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(184142),	-- Twisted Witherroot Band
 				}),
 			}),
-			e(2433, {	-- Nurgash Muckformed
+			e(2430, {	-- Valinor, the Light of Eons
 				["isWeekly"] = true,
-				--["questID"] = ,	-- Nurgash Muckformed (WQ)
+				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
 				["isRaid"] = true,
-				--["coord"] = { 62.0, 24.0, 895 },
-				["maps"] = {
-				},
-				["cr"] = 167526,	-- Nurgash Muckformed
+				["coord"] = { 26.3, 22.4, 1533 },
+				["maps"] = { 1533 },	-- Bastion
+				["cr"] = 167524,	-- Valinor, the Light of Eons
 				["g"] = bubbleDown({["modID"] = 3}, {
-					i(182638),	-- Memory of a Frenzied Monstrosity
-					i(183215),	-- Memory of an Erratic Fel Core
-					i(183376),	-- Memory of Azj'Aqir's Madness
-					i(184131),	-- Comfortable Slumberwraps
-					i(184171),	-- Hardened Castle Crushers
-					i(184134),	-- Jingling Stone Stompers
-					i(184144),	-- Muckformed Chain Choker
-					i(184130),	-- Nurgash's Belt of Many Sinstones
-					i(184137),	-- Sinstone Shoulderpadding
+					i(183325),	-- Memory of Archbishop Benedictus
+					i(183311),	-- Memory of the Final Verdict
+					i(183353),	-- Memory of the Windspeaker's Lava Resurgence
+					i(184136),	-- Anima-Charged Wristbanding
+					i(184170),	-- Doubtweaver's Handwraps
+					i(184132),	-- Oversized Centurion Helm
+					i(184125),	-- Servo-Chain Waistguard
+					i(184141),	-- Shroud of the Penitent
+					i(184139),	-- Valinor's Ground Pounders
 				}),
 			}),
 		},

@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-99, {	-- Buildings
-				garrisonBuilding(164,  {	-- Goblin Workshop (rank 1: 162, rank 2: 163, rank 3: 164)
+				garrisonBuilding(164,  {	-- Gnomish Gearworks (rank 1: 162, rank 2: 163, rank 3: 164)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -30,7 +30,7 @@ _.ExpansionFeatures =
 						}),
 						n(QUESTS, {
 							q(37420, {	-- Fully Armed and Operational
-								-- marked as removed on wowhead, but a discord user picked it up on november 16, 2020
+								["description"] = "Requires Gnomish Gearworks Rank 3.",
 								["provider"] = { "n", 84286 },	-- Zee
 								["races"] = ALLIANCE_ONLY,
 							}),

@@ -52,7 +52,12 @@ _.Zones =
 					i(181684),	-- Gorewrought Wand
 					i(181692),	-- Gorewrought Warblade
 					i(181687),	-- Gorewrought Warglaive
+					i(184195),	-- Plague-Etched Gorer (AGI)
+					i(181865),	-- Plague-Etched Gorer (STR)
+					i(184194),	-- Plague-Etched Hacker (AGI)
+					i(181864),	-- Plague-Etched Hacker (STR)
 					i(181502),	-- Rejuvenating Serum
+					i(181205),	-- Soulstalker Epaulets
 					i(181653),	-- Steelcore Chestplate
 					i(181661),	-- Steelcore Gauntlets
 					i(181675),	-- Steelcore Girdle
@@ -61,6 +66,7 @@ _.Zones =
 					i(181672),	-- Steelcore Shoulders
 					i(181656),	-- Steelcore Warboots
 					i(181680),	-- Steelcore Wristwraps
+					i(181503),	-- Vial of Caustic Liquid
 				},
 			}),
 		}),

@@ -395,7 +395,7 @@ pet(104307, 1348);	-- Jadefire Spirit
 pet(104164, 1333);	-- Jademist Dancer
 pet(93041, 1156);	-- Jewel of Maddening Whispers (Mini Mindslayer)
 pet(94835, 1202);	-- Ji-Kun Hatchling
-pet(21308, 118);	-- Jingling Bell (WInter Reindeer)
+pet(21308, 118);	-- Jingling Bell (Winter Reindeer)
 pet(163821, 2453);	-- Juvenile Brineshell
 pet(174473, 2845);	-- K'uddly
 pet(120051, 1597);	-- Kaliri Hatchling
@@ -656,6 +656,7 @@ pet(136904, 1754);	-- Sewer-Pipe Jelly
 pet(166492, 2556);	-- Shadefeather Hatchling
 pet(151234, 2062);	-- Shadow
 pet(175049, 2872);	-- Shadowbarb Hatchling
+pet(178533, 2622);	-- Shaking Pet Carrier (Jingles)
 pet(128309, 1690);	-- Shard of Cyrukh
 pet(122106, 1624);	-- Shard of Supremus (Abyssius)
 pet(97552, 1230);	-- Shell of Tide-Calling (Tideskipper)
@@ -892,7 +893,6 @@ pet(180640, 2911);	-- Amber Glitterwing
 pet(180587, 2893);	-- Animated Tome
 pet(184221, 3054);	-- Archivist's Quill
 pet(183193, 3030);	-- Ashen Chomper
---pet(183853, );	-- Baby Sinfall Screecher
 pet(181268, 2958);	-- Backbone
 pet(183854, 3011);	-- Battie's Pendant // Battie
 pet(181315, 2965);	-- Bloodfeaster Spiderling
@@ -902,8 +902,7 @@ pet(181172, 2948);	-- Boneweave Hatchling
 pet(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
 pet(180815, 2931);	-- Brightscale Hatchling
 pet(181262, 2952);	-- Bubbling Pustule
-pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Sludge
-pet(180589, 2894);	-- Burdened soul
+pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Bogling
 pet(183114, 3025);	-- Carpal
 pet(180643, 2908);	-- Chirpy Valeshrieker
 pet(180642, 2909);	-- Cloudfeather Fledgling
@@ -939,17 +938,18 @@ pet(180635, 2916);	-- Hungry Burrower
 pet(180871, 2941);	-- Indigo
 pet(181270, 2960);	-- Invertebrate Oil
 pet(183515, 3045);	-- Iridescent Ooze
---pet(183601, );	-- Jiggles
+pet(183601, 3043);	-- Jiggles
 pet(184399, 3064);	-- Larion Cub
 pet(184401, 3063);	-- Larion Pouncer
 pet(183196, 3035);	-- Lavender Nibbler
 pet(182662, 3017);	-- Leafadore
 pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
 pet(184397, 3062);	-- Lost Featherling
---pet(3066);	-- Lucy
+pet(184507, 3066);	-- Lucy's Lost Collar // Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
 pet(183194, 3033);	-- Maw Stalker
+pet(181269, 2959);	-- Micromancer's Mystical Cowl // Micromancer
 pet(181282, 2963);	-- Mu'dud
 pet(181164, 2944);	-- Oonar's Arm
 pet(180628, 2923);	-- Pearlwing Heron
@@ -958,11 +958,12 @@ pet(180208, 2889);	-- PHA7-YNX
 pet(183107, 3024);	-- Pile of Ashen Dust // Char
 pet(173891, 2798);	-- Plagueborn Slime
 pet(181264, 2954);	-- Plaguelouse Larva
-pet(183395, 3036);	-- Projection of Remornia
+pet(183395, 3036);	-- Pommel Jewel of Remornia // Will of Remornia
 pet(180859, 2935);	-- Purity
 pet(182613, 3008);	-- Refilling Inkwell // Lost Quill
 pet(175114, 2878);	-- Renny
 pet(180644, 2907);	-- Rocky
+pet(184350, 3042);	-- Ruffle
 pet(182671, 3020);	-- Runelight Leaper
 pet(180814, 2933);	-- Sable
 pet(183117, 3028);	-- Severs
@@ -974,6 +975,7 @@ pet(181555, 2966);	-- Sinheart
 pet(182674, 3023);	-- Sir Reginald
 pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler
+pet(180589, 2894);	-- Soullocked Sinstone // Burdened Soul
 pet(183623, 3044);	-- Spinemaw Gormling
 pet(180872, 2942);	-- Spirited Skyfoal
 pet(184509, 3067);	-- Spriggan Trickster
@@ -982,7 +984,6 @@ pet(182664, 3019);	-- Stemmins
 pet(184398, 3061);	-- Steward Featherling
 pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup
 pet(183855, 3012);	-- Stony's Infused Ruby // Stony
-pet(181269, 2959);	-- Suspended Corpse
 pet(182612, 3009);	-- The Count's Pendant // The Count
 pet(180629, 2922);	-- Thumbbiter
 pet(181272, 2962);	-- Toenail
@@ -997,9 +998,3 @@ pet(180636, 2915);	-- Willowbreeze
 pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
--- pets in journal
-
--- Bastion	23
--- Mald		22
--- Arden	21
--- Raven	21

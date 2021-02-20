@@ -28,6 +28,13 @@ _.Zones =
 						i(175435),	-- Stoneforged Spaulders
 					},
 				}),
+				q(62046, {	-- A New Pack
+					["sourceQuests"] = { 62045 },	-- Ready for More
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182589),	-- Loyal Gorger (MOUNT!)
+					}
+				}),
 				q(58654, {	-- A Plea to the Harvesters
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
@@ -121,6 +128,11 @@ _.Zones =
 				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
 					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 					["coord"] = { 49.6, 75.9, 1525 },
+				}),
+				q(58717, {	-- Bell of Remembrance
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["provider"] = { "i", 174674 },	-- Bell of Remembrance
+					["crs"] = { 160716 },	-- Sinstone Rampager
 				}),
 				q(59644, {	-- Blinded By The Light
 					["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
@@ -247,6 +259,13 @@ _.Zones =
 						i(175432),	-- Soul Hunter's Leggings
 						i(175430),	-- Stoneforged Legguards
 					},
+				}),
+				q(61844, {	-- Hungry Hungry Gorger
+					["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182593),	-- Sinrunner Carving
+					}
 				}),
 				q(57929, {	-- Hunting an Inquisitor
 					["sourceQuests"] = {	-- didn't require turning in "Atonement Crypt Key"
@@ -387,7 +406,15 @@ _.Zones =
 						i(175424),	-- Stoneforged Grips
 					},
 				}),
+				q(61839, {	-- Nipping at the Undergrowth
+					["description"] = "Becomes available in the Endmire north of Darkhaven, after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182590),	-- Vinewormed Coin Pouch
+					}
+				}),
 				q(60509, {	-- Not My Job
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 158057 },	-- Rendle
 					["coord"] = { 67.5, 68.5, 1525 },
@@ -419,6 +446,15 @@ _.Zones =
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
 					["provider"] = { "n", 158615 },	-- Vorpalia
 					["coord"] = { 42.8, 43.5, 1525 },
+				}),
+				q(62045, {	-- Ready for More
+					["sourceQuests"] = { 62044 },	-- Standing Toe To Toe
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182586, {	-- A Venthyr Arm Holding a Cudgel
+							i(182587) -- Gorger Slobbered Cudgel
+						}),
+					}
 				}),
 				q(60128, {	-- Ready to Serve
 					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
@@ -497,6 +533,11 @@ _.Zones =
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(57724, {	-- Securing Sinfall
 					["sourceQuests"] = { 60566 },	-- Into the Light
 					["provider"] = { "n", 169105 },	-- Breakfist
@@ -533,6 +574,12 @@ _.Zones =
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, 1525 },
 				}),
+				q(58725, {	-- Sinkeeper
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 58717 },	-- Bell of Remembrance
+					["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
+					["coord"] = { 73.2, 34.0, 1525 },
+				}),
 				q(57176, {	-- Sinstone Delivery
 					["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
 					["provider"] = { "n", 164166 },	-- Echelon
@@ -541,6 +588,13 @@ _.Zones =
 				q(58327, {	-- Snacks for Stonehead
 					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 					["coord"] = { 39.2, 65.2, 1525 },
+				}),
+				q(62044, {	-- Standing Toe To Toe
+					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182594),	-- A Sparkling Ruby Necklace
+					}
 				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -715,6 +769,20 @@ _.Zones =
 					["provider"] = { "n", 157639 },	-- Theotar
 					["coord"] = { 38.0, 60.7, 1525 },
 				}),
+				q(61840, {	-- Vineroot on the Menu
+					["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182591),	-- Vinecovered Infused Rubies
+					}
+				}),
+				q(61842, {	-- Vineroot Will Not Do
+					["sourceQuests"] = { 61840 },	-- Vineroot on the Menu
+					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["g"] = {
+						i(182592),	-- Infused Endmire Fruit
+					}
+				}),
 				q(60277, {	-- WANTED: Aggregate of Doom
 					["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom
 					["coord"] = { 59.1, 69.2, 1525 },
@@ -792,42 +860,11 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
+				
 				q(56829, {	-- Bottom Feeders
 					["sourceQuests"] = { 57007 },	-- Invitation of the Master
 					["provider"] = { "n", 155668 },	-- Rendle
 					["coord"] = { 65.3, 66.2, 1525 },
-				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				currency(1830, {		-- Renown-Venthyr
-					-- Chapter 4 (Avarice)
-					q(58440, {	-- Mirror, Mirror...
-						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["g"] = {
-							i(180945),	-- Crypt Gargon
-						},
-					}),
-					-- Chapter 7 (Envy)
-					q(57771, {	-- An Unwelcome Incursion
-						--["provider"] = { "n", 170543 },	-- General Draven
-						["g"] = {
-							i(180947),	-- Tithe Collector's Vessel
-						},
-					}),
-					-- Chapter 8 (Dominion)
-					q(58407, {	-- The Medallion of Dominion
-						["provider"] = { "n", 170543 },	-- General Draven
-						["g"] = {
-							i(180948),	-- Battle Gargon Vrednic
-						},
-					}),
-					-- Mirror Network
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache
@@ -871,6 +908,10 @@ _.Zones =
 					},
 				}),
 				q(59211, {	-- Forgotten Village
+					["description"] = "This Bonus Objective is only available at level 58 or 59.",
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["lvl"] = { 58, 59 },
 				}),
 				q(62780, {	-- Parasites of Reality (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

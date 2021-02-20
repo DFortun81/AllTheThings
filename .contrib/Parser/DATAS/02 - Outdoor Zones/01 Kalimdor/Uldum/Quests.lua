@@ -9,7 +9,7 @@ _.Zones =
 			n(QUESTS, {
 				q(27761, {	-- A Disarming Distraction
 					["coord"] = { 74.1, 64.4, 249 },
-					["model"] = "World\\Goober\\g_gnometerminal.mdx",
+					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
 					["g"] = {
@@ -81,7 +81,7 @@ _.Zones =
 				q(27517, {	-- Be Prepared
 					["coord"] = { 65.1, 33.8, 249 },
 					["provider"] = { "o", 205540 },	-- Decrepit Skeleton
-					["model"] = "world\\generic\\darkirondwarf\\passive doodads\\skeletons\\skeletonsitting02.mdx",
+					["model"] = 200066,
 					["sourceQuest"] = 27196,	-- On to Something
 					["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
 					["g"] = {
@@ -128,13 +128,13 @@ _.Zones =
 				}),
 				q(27623, {	-- Colossal Guardians
 					["coord"] = { 39.6, 45.4, 249 },
-					["model"] = "World\\Generic\\Passivedoodads\\Plaque\\plaquestone01.mdx",
+					["model"] = 199989,
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27602,	-- The Prophet's Dying Words
 				}),
 				q(27777, {	-- Core Access Codes
 					["coord"] = { 74.1, 64.4, 249 },
-					["model"] = "World\\Goober\\g_gnometerminal.mdx",
+					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
 				}),
@@ -283,7 +283,7 @@ _.Zones =
 				}),
 				q(27778, {	-- Hacking the Wibson
 					["coord"] = { 74.1, 64.4, 249 },
-					["model"] = "World\\Goober\\g_gnometerminal.mdx",
+					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuests"] = {
 						27761,	-- A Disarming Distraction
@@ -358,7 +358,8 @@ _.Zones =
 				}),
 				q(27176, {	-- Just the Tip
 					["coord"] = { 64.8, 29.5, 249 },
-					["model"] = "World\\Expansion02\\Doodads\\Generic\\Titan\\ti_disc_01.mdx",
+					["model"] = 243678,
+					["modelScale"] = 30,
 					["provider"] = { "o", 205266 },	-- Elaborate Disc
 					["sourceQuests"] = {
 						28112,	-- Escape From the Lost City
@@ -786,7 +787,7 @@ _.Zones =
 				}),
 				q(27706, {	-- The Scepter of Orsis
 					["coord"] = { 39.6, 45.4, 249 },
-					["model"] = "World\\Generic\\Passivedoodads\\Plaque\\plaquestone01.mdx",
+					["model"] = 199989,
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27623,	-- Colossal Guardians
 					["g"] = {

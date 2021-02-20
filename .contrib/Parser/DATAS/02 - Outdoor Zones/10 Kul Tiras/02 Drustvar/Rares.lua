@@ -11,7 +11,7 @@ _.Zones =
 					["modelScale"] = 2,
 					["questID"] = 49137,
 					["coord"] = { 43.3, 36.3, 896 },	-- cave entrance
-					["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
+					["model"] = 446679,
 					["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 					["crs"] = { 128181 },	-- Vengeful Dead
 					["g"] = {
@@ -336,7 +336,7 @@ _.Zones =
 				o(277897, {	-- Seething Cache
 					["modelScale"] = 2,
 					["questID"] = 49341,
-					["model"] = "World\\Expansion07\\Doodads\\Witch\\8wi_witch_treasurechest02.mdx",
+					["model"] = 1721089,
 					["coord"] = { 68.6, 64.3, 896 },
 					["icon"] = "Interface\\Icons\\INV_Eng_Crate",
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {

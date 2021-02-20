@@ -63,7 +63,8 @@ profession(BLACKSMITHING, {
 							["recipeID"] = 182986--[[Demonsteel Helm]]
 						},
 						{	-- Demonsteel Pauldrons [Rank 3]
-							["recipeID"] = 182984--[[Demonsteel Pauldrons]]
+							["recipeID"] = 182984,
+							["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
 						},
 						{	-- Demonsteel Waistguard [Rank 3]
 							["recipeID"] = 182983--[[Demonsteel Waistguard]]

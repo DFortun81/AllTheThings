@@ -169,6 +169,7 @@ _.Toys =
 				i(172219),	-- Wild Holly
 				i(45057), 	-- Wind-Up Train Wrecker
 				i(17712), 	-- Winter Veil Disguise Kit
+				i(178530),	-- Wreath-A-Rang
 				i(116691), 	-- Zhevra Lounge Cushion
 			},
 		}),

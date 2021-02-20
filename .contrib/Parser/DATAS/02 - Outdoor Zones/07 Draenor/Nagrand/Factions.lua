@@ -8,7 +8,7 @@ _.Zones =
 		m(550, {	-- Nagrand (Draenor)
 			n(FACTIONS, {
 				faction(1711, {	-- Cenarion Expedition
-					["creatureID"] = 87394,	-- Kwilax Fuseshiv <Reputation Vendor>
+					["crs"] = { 87394 },	-- Kwilax Fuseshiv <Reputation Vendor>
 					["g"] = {
 						n(QUESTS, {
 							q(37125, {	-- A Rare Find

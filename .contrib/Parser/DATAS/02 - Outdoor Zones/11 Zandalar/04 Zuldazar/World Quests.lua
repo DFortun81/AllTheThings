@@ -516,8 +516,19 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50853, {	-- Umbra'rix
-						["lvl"] = 120,
 						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["g"] = {
+							n(134717, {	-- Umbra'rix
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["questID"] = 50673,
+								["isDaily"] = true,	-- this questID seems to reset / trigger again when you complete the WQ
+								["coord"] = { 49.0, 29.2, 862 },
+								["g"] = {
+									i(162617),	-- Shadraspawn Shoulderpads
+								},
+							}),
+						},
 					}),
 					q(51374, {	-- Unending Gorilla Warfare
 						["lvl"] = 120,

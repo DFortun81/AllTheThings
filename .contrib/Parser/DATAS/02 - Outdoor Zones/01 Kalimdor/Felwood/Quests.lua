@@ -736,6 +736,11 @@ _.Zones =
 						28333,	-- It's Time to Oil Up
 					},
 				}),
+				q(8485,  {	-- The Brokering of Peace
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 11555 },	-- Gorn One Eye
+					["races"] = HORDE_ONLY,
+				}),
 				q(28364, {	-- The Chieftain's Key
 					["provider"] = { "n", 47556 },	-- Drizle
 					["coord"] = { 60.5, 9.5, 77 },
@@ -804,7 +809,7 @@ _.Zones =
 						i(65280),	-- Shadow Hold Mace
 						i(65300),	-- Moonbow
 						i(65319),	-- Purified Jaedenar Amulet
-						i(156982),	-- Shadow Hold Dagger 
+						i(156982),	-- Shadow Hold Dagger
 					},
 				}),
 				q(28224, {	-- The Last Protector
@@ -951,7 +956,7 @@ _.Zones =
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64, 10.4, 77 },
 					["isBreadcrumb"] = true,
-					["description"] = "Only available between level 40 and 60.",
+					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
 				}),
 				q(28370, {	-- Wisp-napping
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer

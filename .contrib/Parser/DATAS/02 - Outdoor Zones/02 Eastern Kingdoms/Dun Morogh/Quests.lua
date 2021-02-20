@@ -215,15 +215,17 @@ _.Zones =
 				}),
 				q(32663, {	-- Learn To Ride
 					["races"] = { GNOME },
-					["description"] = "This quest is available to Gnomes upon reaching level 20.",
+					["description"] = "This quest is available to Gnomes upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(32662, {	-- Learn To Ride
 					["races"] = { DWARF },
-					["description"] = "This quest is available to Dwarves upon reaching level 20.",
+					["description"] = "This quest is available to Dwarves upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["u"] = REMOVED_FROM_GAME,
@@ -368,6 +370,7 @@ _.Zones =
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
 					["coord"] = { 75.9, 54.3, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["g"] = {
 						i(57570),	-- Gol'Bolar Miner's Belt
 						i(57568),	-- Senator's Dignified Pants

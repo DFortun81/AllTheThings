@@ -7,49 +7,32 @@ _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
 		n(-9997, {	-- Ashran
-			ach(9102),		-- Ashran Victory
-			{	-- Bounty Hunter
-				["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-				["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+			ach(9102),	-- Ashran Victory
+			ach(9104, {	-- Bounty Hunter (A)
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Pandaren Hide
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 1,			-- Pandaren Hide
-					},
-					{	-- Blood Elf Ear // Worgen Snout
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 2,			-- Blood Elf Ear // Worgen Snout
-					},
-					{	-- Tauren Hoof // Severed Night Elf Head
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 3,			-- Tauren Hoof // Severed Night Elf Head
-					},
-					{	-- Orc Tooth // Dwarf Spine
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 4,			-- Orc Tooth // Dwarf Spine
-					},
-					{	-- Troll Feet // Tuft of Gnome Hair
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 5,			-- Troll Feet // Tuft of Gnome Hair
-					},
-					{	-- Forsaken Brains // Human Bone Chip
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 6,			-- Forsaken Brains // Human Bone Chip
-					},
-					{	-- Goblin Nose // Draenei Tail
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 7,			-- Goblin Nose // Draenei Tail
-					},
+					crit(1),	-- Pandaren Hide
+					crit(2),	-- Blood Elf Ear
+					crit(3),	-- Tauren Hoof
+					crit(4),	-- Orc Tooth
+					crit(5),	-- Troll Feet
+					crit(6),	-- Forsaken Brains
+					crit(7),	-- Goblin Nose
 				},
-			},
-			ach(9222),		-- Divide and Conquer
+			}),
+			ach(9103, {	-- Bounty Hunter (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Pandaren Hide
+					crit(2),	-- Worgen Snout
+					crit(3),	-- Severed Night Elf Head
+					crit(4),	-- Dwarf Spine
+					crit(5),	-- Tuft of Gnome Hair
+					crit(6),	-- Human Bone Chip
+					crit(7),	-- Draenei Tail
+				},
+			}),
+			ach(9222),	-- Divide and Conquer
 			ach(9228, {	-- Down Goes Van Rook (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -141,15 +124,19 @@ _.Achievements =
 			ach(9473, {		-- Vol'jin's Spear
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					un(REMOVED_FROM_GAME, h(title(285))),	-- ,Spear of Vol'jin
-					faction(1681), 	-- Vol'jin's Spear
+					title(285, {	-- , Spear of Vol'jin
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 				},
 			}),
 			ach(9474, {		-- Wrynn's Vanguard
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					un(REMOVED_FROM_GAME, a(title(286))),	-- ,Sword of Wrynn
-					faction(1682),	-- Wyrnn's Vanguard
+					title(286, {	-- , Sword of Wrynn
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 				},
 			}),
 		}),

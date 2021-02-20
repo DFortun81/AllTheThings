@@ -397,6 +397,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 						},
 					}),
+					q(24912, {	-- Empowerment
+						["sourceQuest"] = 24548,	-- The Splintered Throne
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
 					q(24549, {	-- Shadowmourne...
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine

@@ -34,6 +34,9 @@ _.Zones =
 						i(160100),	-- Sea Raider's Shackles
 						i(158259),	-- Sea Raider's Handguards
 						i(158261),	-- Outrigger Handguards
+						i(161237, {	-- Jambani Bands
+							["races"] = HORDE_ONLY,	-- horde appearance with no other source, granted by learning Freebooter Bands
+						}),
 					},
 				}),
 				q(49869, {	-- A Desperate Defense
@@ -148,10 +151,9 @@ _.Zones =
 				}),
 				q(55647, {	-- A Quick Ear Hustle
 					["sourceQuests"] = { 55646 },	-- The Legend of Mechagon
+					["provider"] = { "n", 152578 },	-- Gazlowe
 					["coord"] = { 65.6, 64.6, 895 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 152578 },	-- Gazlowe
 				}),
 				q(49028, {	-- A Sweater for Rupert
 					["provider"] = { "o", 277199 },	-- Weathered Job List
@@ -217,9 +219,12 @@ _.Zones =
 				}),
 				q(48421, { 	-- Blood in the Tides (A)
 					["sourceQuests"] = { 47489 }, 	-- Stow and Go
-					["coord"] = { 85.61, 76.61, 895 },
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125342 },	-- Captain Keelson
+					["coords"] = {
+						{ 85.6, 76.6, 895 },
+						{ 86.3, 79.7, 895 },	-- not sure what causes this NPC to show up in this location instead of the other coord, but this is where it was for me
+					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155024),	-- Navigator's Sandals
 						i(155026),	-- Freebooter Boots
@@ -589,17 +594,15 @@ _.Zones =
 				}),
 				q(54945, {	-- Let's Get It Started (A)
 					["sourceQuests"] = { 55040 },	-- Looking Inside
+					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 65.8, 66.3, 895 },
-					["lvl"] = 120,
-					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 				}),
 				q(55630, {	-- Let's Get It Started (H)
 					["sourceQuests"] = { 55648 },	-- This is Our Vault Now
+					["provider"] = { "n", 149809 },	-- Gazlowe
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 149809 },	-- Gazlowe
 				}),
 				q(48606, {	-- Loaded for Bear
 					["sourceQuests"] = { 48539 },	-- Freehold
@@ -620,10 +623,9 @@ _.Zones =
 				}),
 				q(55040, {	-- Looking Inside
 					["sourceQuests"] = { 54088 },	-- The Legend of Mechagon
+					["provider"] = { "n", 149864 },	-- Tinkmaster Overspark
 					["coord"] = { 65.5, 65.0, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 149864 },	-- Tinkmaster Overspark
 				}),
 				q(48505, { 	-- Lovesick and Lost
 					["sourceQuests"] = { 48419 }, 	-- Lured and Allured
@@ -644,10 +646,9 @@ _.Zones =
 				}),
 				q(55649, {	-- Machinations for Mechagon
 					["sourceQuests"] = { 55632 },	-- You Must be This Height
+					["provider"] = { "n", 152652 },	-- Gazlowe
 					["coord"] = { 65.9, 66.4, 895 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 152652 },	-- Gazlowe
 				}),
 				q(49897, {	-- Making Mysteries
 					["coord"] = { 67.5, 55.7, 895 },
@@ -857,10 +858,9 @@ _.Zones =
 				}),
 				q(54946, {	-- Report to Gila
 					["sourceQuests"] = { 54087 },	-- You Must be This Height
+					["provider"] = { "n", 152864 },	-- Tinkmaster Overspark
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 152864 },	-- Tinkmaster Overspark
 				}),
 				q(49468, {	-- Required Webinar
 					["sourceQuests"] = { 48369 },	-- Emergent Strategy
@@ -1029,6 +1029,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122671 },	-- Cagney
 				}),
+				q(52311, {	-- Sweete's Strongbox
+				--	coords depend on where you finish the previous quest
+					["sourceQuests"] = { 52253 },	-- The Keys to Success in Freehold
+					["provider"] = { "n", 141032 },	-- Flynn Fairwind
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(48354, {	-- Tainted Shipments
 					["sourceQuests"] = {
 						49292,	-- Algae Shakes
@@ -1125,10 +1131,16 @@ _.Zones =
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
+					--	azerite
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
 						i(163862),	-- Bartered Vrykul Hood
 						i(163865),	-- Bartered Vrykul Warhelm
+					--	azewrong
+						i(180028),	-- Bartered Vrykul Cowl
+						i(180029),	-- Bartered Vrykul Facemask
+						i(180027),	-- Bartered Vrykul Hood
+						i(180030),	-- Bartered Vrykul Warhelm
 					},
 				}),
 				q(50544, {	-- The Hunters of Kennings Lodge
@@ -1154,12 +1166,17 @@ _.Zones =
 							i(155052),	-- Port-Ruffian's Cleaver
 						},
 				}),
+				q(52253, {	-- The Keys to Success in Freehold
+					["sourceQuests"] = { 52252 },	-- An Explosive Entrance
+					["provider"] = { "n", 140732 },	-- Flynn Fairwind
+					["coord"] = { 76.9, 82.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(49223, {	-- The Long Con
 					["sourceQuests"] = { 49523 },	-- A Bad Deal
+					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
 					["coord"] = { 79.7, 81.8, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
 				}),
 				q(48003, {	-- The Lord's Behest
 					["sourceQuests"] = {
@@ -1223,6 +1240,9 @@ _.Zones =
 						i(158279),	-- Freebooter Bindings
 						i(158278),	-- Outrigger Bindings
 						i(158277),	-- Sea Raider's Wristguards
+						i(158672, {	-- Jambani Bracers
+							["races"] = HORDE_ONLY,	-- horde appearance with no other source, granted by learning Freebooter Bindings
+						}),
 					},
 				}),
 				q(50058, {	-- The Witch's Pet
@@ -1242,10 +1262,9 @@ _.Zones =
 				}),
 				q(55648, {	-- This is Our Vault Now
 					["sourceQuests"] = { 55647 },	-- A Quick Ear Hustle
+					["provider"] = { "n", 152578 },	-- Gazlowe
 					["coord"] = { 65.6, 64.6, 895 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 152578 },	-- Gazlowe
 				}),
 				q(48367, {	-- Those Aren't Fish Eggs
 					["sourceQuests"] = { 48366 },	-- Paddle to Safety
@@ -1258,6 +1277,12 @@ _.Zones =
 					["coord"] = { 68.8, 19.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
+				}),
+				q(52445, {	-- Tol Dagor: The Fourth Key
+					["sourceQuests"] = { 52311 },	-- Sweete's Strongbox
+					["provider"] = { "n", 140732 },	-- Flynn Fairwind
+					["coord"] = { 75.3, 48.8, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48516, {	-- Toxic Community
 					["coord"] = { 82.7, 72.8, 895 },
@@ -1401,17 +1426,15 @@ _.Zones =
 				}),
 				q(54087, {	-- You Must be This Height (A)
 					["sourceQuests"] = { 54945 },	-- Let's Get It Started
+					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 				}),
 				q(55632, {	-- You Must Be This Height (H)
 					["sourceQuests"] = { 55630 },	-- Let's Get It Started
+					["provider"] = { "n", 149809 },	-- Gazlowe
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["provider"] = { "n", 149809 },	-- Gazlowe
 				}),
 				-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against

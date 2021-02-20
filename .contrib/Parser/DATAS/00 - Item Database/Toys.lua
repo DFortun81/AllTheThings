@@ -1,5 +1,7 @@
 _.ItemDB = {};
 local t = function(itemID)
+	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
+	-- So we cannot trust them and have to do it ourselves.
 	local item = { ["isToy"] = true, ["ignoreBonus"] = true };
 	_.ItemDB[itemID] = item;
 	return item;
@@ -281,6 +283,7 @@ t(86571);	-- Kang's Bindstone
 t(128462);	-- Karabor Councilor's Attire (Alliance)
 t(156833);	-- Katy's Stampwhistle
 t(88580);	-- Ken-Ken's Mask
+t(184447);	-- Kevin's Party Supplies
 t(95567);	-- Kirin Tor Beacon (Alliance)
 t(116125);	-- Klikixx's Webspinner
 t(163750);	-- Kovork Kostume
@@ -437,6 +440,7 @@ t(127669);	-- Skull of the Mad Chief
 t(138415);	-- Slightly-Chewed Insult Book
 t(17716);	-- Snowmaster 9000 (Engineering)
 t(137663);	-- Soft Foam Sword
+t(184415);	-- Soothing Vesper
 t(119182);	-- Soul Evacuation Crystal (Alliance)
 t(119163);	-- Soul Inhaler
 t(138202);	-- Sparklepony XL
@@ -682,6 +686,7 @@ t(183847);	-- Acolyte's Guise
 t(184292);	-- Ancient Elethium Coin
 t(180993);	-- Bat Visage Bobber
 t(183986);	-- Bondable Sinstone
+t(183988);	-- Bondable Val'kyr Diadem
 t(184312);	-- Borr-Geth's Fiery Brimstone
 t(183989);	-- Dredger Barrow Racer
 t(177951);	-- Glimmerflies on Strings
@@ -717,6 +722,13 @@ t(172924);	-- Wormhole Generator: Shadowlands
 -- PATCH 9.0.2 --
 -----------------
 t(184410);	-- Aspirant's Stretcher
+t(184318);	-- Battlecry of Krexus
+t(184404);	-- Ever-Abundant Hearth
+t(184487);	-- Gormling in a Bag
+t(184495);	-- Infested Arachnid Casing
 t(184449);	-- Jiggles's Favorite Toy
 t(184353);	-- Kyrian Hearthstone
+t(184396);	-- Malfunctioning Goliath Gauntlet
+t(184435);	-- Mark of Purity
 t(184476);	-- Regenerating Slime Vial
+t(178530);	-- Wreath-A-Rang

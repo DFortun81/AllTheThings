@@ -639,11 +639,9 @@ _.Zones =
 				q(6622,  {	-- Triage
 					["provider"] = { "n", 12920 },	--	Doctor Gregory Victor
 					["coord"] = { 68.4, 37.8, 14 },
-					["sourceQuest"] = 6623,	-- Horde Trauma
-					["description"] = "This quest requires a skill of 225 in First Aid.",
-					["requireSkill"] = FIRST_AID,
+					--["sourceQuest"] = 6623,	-- Horde Trauma (this was the sourceQuest when the quest was First Aid, but doesn't exist now that the quest is for Tailoring)
+					["requireSkill"] = TAILORING,
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(645,   {	-- Trol'kalar
 					["u"] = REMOVED_FROM_GAME,

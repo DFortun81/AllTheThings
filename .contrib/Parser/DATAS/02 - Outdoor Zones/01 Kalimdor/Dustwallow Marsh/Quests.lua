@@ -407,6 +407,10 @@ _.Zones =
 					["coord"] = { 55.4, 26.2, 70 },
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
 				}),
+				q(1133,  {	-- Journey to Astranaar
+					["provider"] = { "n", 4456 },	-- Fiora Longears
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(11206, {	-- Justice Dispensed
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha

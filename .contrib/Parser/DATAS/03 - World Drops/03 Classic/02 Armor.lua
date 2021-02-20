@@ -64,7 +64,6 @@ _.WorldDrops =
 				i(12039),	-- Tundra Necklace
 				i(12024),	-- Vanadium Talisman
 				i(12027),	-- Vermilion Necklace
-				i(16009),	-- Voice Amplification Modulator
 			}),
 			n(-321, {	-- Shoulder
 				i(13133),	-- Drakesfire Epaulets
@@ -473,27 +472,16 @@ _.WorldDrops =
 			}),
 			f(53,   {	-- Trinket
 				i(1713),	-- Ankh of Life
-				i(16022),	-- Arcanite Dragonling
 				i(2802),	-- Blazing Emblem
 				i(5079),	-- Cold Basilisk Eye
 				i(19288),	-- Darkmoon Card: Blue Dragon
 				i(19287),	-- Darkmoon Card: Heroism
 				i(19289),	-- Darkmoon Card: Maelstrom
 				i(19290),	-- Darkmoon Card: Twisting Nether
-				i(4397),	-- Gnomish Cloaking Device
-				i(10720),	-- Gnomish Net-o-Matic Projector
-				i(10716),	-- Gnomish Shrink Ray
-				i(7506),	-- Gnomish Universal Remote
-				i(10577),	-- Goblin Mortar
-				i(18634),	-- Gyrofreeze Ice Reflector
-				i(18638),	-- Hyper-Radiant Flame Reflector
-				i(833),	-- Lifestone
-				i(4396),	-- Mechanical Dragonling
-				i(10576),	-- Mithril Mechanical Dragonling
+				i(833),		-- Lifestone
 				i(7734),	-- Six Demon Bag
 				un(REMOVED_FROM_GAME, i(18665)),	-- The Eye of Shadow
 				un(REMOVED_FROM_GAME, i(14557)),	-- The Lion Horn of Stormwind
-				i(18639),	-- Ultra-Flash Shadow Reflector
 				i(11302),	-- Uther's Strength
 			}),
 		}),

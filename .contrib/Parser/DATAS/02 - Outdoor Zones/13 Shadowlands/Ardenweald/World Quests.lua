@@ -27,7 +27,17 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61595, {	-- Alchemy: Potion of Hibernal Rest
+					["requireSkill"] = ALCHEMY,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61949, {	-- Ardenweald's Tricksters
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61435, {	-- Blacksmithing: Stalker Arrowheads
+					["requireSkill"] = BLACKSMITHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -45,7 +55,12 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61983, {	-- Fishing: Speckled Flametail
+				q(61597, {	-- Engineering: Bug Zapifier
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61598, {	-- Fishing: Speckled Flametail
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -65,6 +80,16 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61303, {	-- It's Raining Sparkles
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61601, {	-- Jewelcrafting: Gem Studded Bangle
+					["requireSkill"] = JEWELCRAFTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61602, {	-- Leatherworking: Stalker's Leather Quiver
+					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -102,6 +127,11 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(60574, {	-- Shaking 'Shrooms
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61603, {	-- Skinning: Thick Gormhide
+					["requireSkill"] = SKINNING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -167,13 +197,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181430),	-- Evernight Drape
-				-- Runetender [Leather]
-				i(181413),	-- Runetender Headguard
-				i(181407),	-- Runetender Mitts
-				i(181417),	-- Runetender Pants
-				i(175713),	-- Sprigthistle Loop
-				i(175740),	-- Valeshroud Torque
 			}),
 		}),
 	}),

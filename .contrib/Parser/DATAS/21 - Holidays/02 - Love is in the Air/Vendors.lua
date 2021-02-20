@@ -19,7 +19,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				},
 				["g"] = {
 					i(49927, {	-- Love Token
-						["f"] = 999,	-- Event Item (custom filter for Love Tokens -- without it, hiding Miscellaneous hides everything you purchase with them)
+						-- ["f"] = 999,	-- Event Item (custom filter for Love Tokens -- without it, hiding Miscellaneous hides everything you purchase with them)
 						["g"] = {
 							-- Appearances --
 							i(50161, {	-- Dinner Suit Box

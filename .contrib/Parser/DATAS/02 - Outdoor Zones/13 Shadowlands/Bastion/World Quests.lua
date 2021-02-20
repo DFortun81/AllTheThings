@@ -27,6 +27,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61434, {	-- Alchemy: Flask of Measured Discipline
+					["requireSkill"] = ALCHEMY,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62235, {	-- Allay Their Fears
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -43,6 +48,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61564, {	-- Blacksmithing: Polished Kyrian Shield
+					["requireSkill"] = BLACKSMITHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62058, {	-- Centurions, Assemble!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -52,9 +62,13 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61439, {	-- Cooking: Steward Stew
+					["requireSkill"] = COOKING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = COOKING,
+				}),
+				q(60534, {	-- Disloyal Denizens
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(61549, {	-- Drought Conditions
 					["isWorldQuest"] = true,
@@ -66,6 +80,15 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61520, {	-- Enemy of My Mnemis
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61441, {	-- Engineering: Power Hammer
+					["requireSkill"] = ENGINEERING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59658, {	-- Express Dominance
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -91,9 +114,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61443, {	-- Herbalism: Windswept Rising Glory
+					["requireSkill"] = HERBALISM,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = HERBALISM,
 				}),
 				q(59771, {	-- History of Corruption
 					["isWorldQuest"] = true,
@@ -104,8 +127,17 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
+					["requireSkill"] = JEWELCRAFTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61449, {	-- Leatherworking: Steelhide Leather Harness
 					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59578, {	-- Let's Get Ready to Humble
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -122,11 +154,16 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61467, {	-- Mining: Luminous Solenium Cluster
+					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = MINING,
 				}),
 				q(61967, {	-- Remedial Lessons
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61468, {	-- Skinning: Plush Copperfur Pelts
+					["requireSkill"] = SKINNING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -135,15 +172,19 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61469, {	-- Tailoring: Woven Gossamer Tunic
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = TAILORING,
 				}),
 				q(61791, {	-- Thenia's Loyal Companions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(59717, {	-- Things Remembered
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59705, {	-- Things Remembered
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

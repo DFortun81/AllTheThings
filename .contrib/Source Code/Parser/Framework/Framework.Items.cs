@@ -154,6 +154,7 @@ namespace ATT
                 var itemsMissingData = new List<object>();
                 Objects.Filters filter = Objects.Filters.Invalid;
                 var filterGroups = new Dictionary<Objects.Filters, List<Dictionary<string, object>>>();
+                var builder2 = new StringBuilder();
                 foreach (var itemID in allItemIDs)
                 {
                     // Get the item.
@@ -177,9 +178,14 @@ namespace ATT
                     {
                         itemsMissingData.Add(item);
                     }
+                    else
+                    {
+                        builder2.Append(itemID).Append('\t').Append(item["name"]).AppendLine();
+                    }
                 }
 
                 // Export all of the Items to the Item DB folder.
+                File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString());
                 File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString());
                 File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString());
 
@@ -238,7 +244,7 @@ namespace ATT
                     case "isGround":
                     case "isJumping":
                     case "creatureID":
-                    case "ignoreBonus":
+                    //case "ignoreBonus":
                     case "displayID":
                     case "sourceText":
                     case "s":
@@ -286,6 +292,7 @@ namespace ATT
                     case "isYearly":
                     case "isWorldQuest":
                     case "isToy":
+                    case "ignoreBonus":
                     case "ignoreSource":
                         {
                             item[field] = Convert.ToBoolean(value);
@@ -295,7 +302,6 @@ namespace ATT
                     // String Data Type Fields
                     case "name":
                     case "description":
-                    case "customCollect":
                         {
                             item[field] = ATT.Export.ToString(value);
                             break;
@@ -337,7 +343,6 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
-                    case "reqlvl":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -351,6 +356,10 @@ namespace ATT
                         else if (value is Dictionary<object, object> dict)
                         {
                             Objects.MergeIntegerArrayData(item, field, dict.Values.ToList());
+                        }
+                        else
+                        {
+                            item[field] = Convert.ToInt32(value);
                         }
                         break;
 
@@ -380,6 +389,7 @@ namespace ATT
                         }
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
+                    case "customCollect":
                     case "timeline":
                         {
                             Objects.MergeStringArrayData(item, field, value);
@@ -644,7 +654,6 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
-                    case "reqlvl":
                         {
                             data[field] = value;
                             break;
@@ -665,7 +674,7 @@ namespace ATT
                             if (data.ContainsKey("s") || data.ContainsKey("ignoreSource")) return;
 
                             // Determine which variant this data is using.
-                            int modID = 1;
+                            int modID = 0;
                             if (!data.ContainsKey("ignoreBonus") && data.TryGetValue("modID", out object variantObj))
                             {
                                 modID = Convert.ToInt32(variantObj);

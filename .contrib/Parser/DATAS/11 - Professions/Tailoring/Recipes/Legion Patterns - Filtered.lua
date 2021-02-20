@@ -61,6 +61,12 @@ profession(TAILORING, {
 				},
 				{
 					["categoryID"] = 495--[[Cloth Armor]],
+					["g"] = {
+						{	-- Imbued Silkweave Epaulets [Rank 3]
+							["recipeID"] = 185956,
+							["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
+						},
+					},
 				},
 				{
 					["categoryID"] = 431--[[Cloaks]],

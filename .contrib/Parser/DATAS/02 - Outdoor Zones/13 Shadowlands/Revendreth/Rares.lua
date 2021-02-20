@@ -28,38 +28,24 @@ _.Zones =
 						crit(12, {	-- Amalgamation of Light
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180586),	-- Lightbinders
+						i(180586),	-- Lightbinders (PET!)
+						i(179925),	-- Light-Infused Breastplate
+						i(179653),	-- Light-Infused Hauberk
+						i(179924),	-- Light-Infused Jacket
+						i(179926),	-- Light-Infused Tunic
 						i(180688),	-- Infused Remnant of Light
 					},
 				}),
-				n(170434, {	-- Amalgamation of Sin
-					--["coord"] = { 49.8, 35.0, 1525 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						ach(14310, crit(23)),	-- Adventurer of Revendreth / Amalgamation of Sin
-					},
-				}),
 				n(166576, {	-- Azgar
-					["coord"] = { 36.0, 68.6, 1525 },
 					["questID"] = 59893,	-- TODO: also triggered 62464
 					["isDaily"] = true,
+					["coord"] = { 36.0, 68.6, 1525 },
 					["g"] = {
-						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
-						i(180691),	-- Obscuring Ash Cloud
-					},
-				}),
-				n(166292, {	-- Bog Beast
-					["description"] = "Only available when the 'Muck It Up' world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
-					["questID"] = 59823,
-					["isDaily"] = true,
-					["coord"] = { 35.8, 32.6, 1525 },
-					["g"] = {
-						crit(18, {	-- Bog Beast
+						crit(16, {	-- Azgar
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180588),	-- Bucket of Primordial Sludge (PET!)
-						i(180707),	-- Sticky Muck
+						i(180691),	-- Obscuring Ash Cloud
+						i(183731),	-- Smolder-Tempered Legplates
 					},
 				}),
 				n(165206, {	-- Endlurker
@@ -88,11 +74,16 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-					["coord"] = { 44.0, 51.0, 1525 },
-					--["questID"] = ,
+				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time 
+					["questID"] = 58441,
 					["isDaily"] = true,
+					["coord"] = { 44.0, 51.0, 1525 },
 					["g"] = {
-						ach(14310, crit(8)),	-- Adventurer of Revendreth / Executioner Adrastia
+						crit(8, {	-- Executioner Adrastia
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180502),	-- Adrastia's Executioner Gloves
+						i(182967),	-- Dredger's Long Sleeved Doublet
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
@@ -104,15 +95,19 @@ _.Zones =
 						crit(15, {	-- Famu the Infinite
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180582),	-- Endmire Flyer Tether
+						i(180582),	-- Endmire Flyer Tether (MOUNT!)
 						i(183739),	-- Endmire Wristwarmers
+						i(182972),	-- Critter Two-Thumbs Portrait
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
-					--["coord"] = { 31.0, 23.2, 1525 },
-					--["questID"] = ,
+					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
+					["questID"] = 61618,
 					["isDaily"] = true,
+					["coord"] = { 32.6, 14.7, 1525 },	-- Madalav's Hammer (to summon rare)
 					["g"] = {
+						i(180489),	-- Forgemaster's Many-Fold Rapier
+						i(180939),	-- Mantle of the Forgemaster's Dark Blades
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
@@ -130,47 +125,41 @@ _.Zones =
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
-					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
 					["questID"] = 59612,
 					["isDaily"] = true,
 					["coord"] = { 45.8, 79.0, 1525 },
 					["g"] = {
-						-- TODO: rearrange this probably...
-						n(165327, {	-- Wingsmash
+						q(59607, {	-- Takin' Down the Beast
+							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
+							["isDaily"] = true,
+							["crs"] = { 165327 },	-- Wingsmash
 							["coord"] = { 46.30, 77.86, 1525 },
-							["g"] = {
-								q(59607, {	-- Takin' Down the Beast
-									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-									["isDaily"] = true,
-									["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
-									["g"] = {										
-										i(176397, {	-- Dredhollow Bolt
-											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
-											["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
-											["crs"] = { 165324 },	-- Dredterror Ballista
-										}),
-									}
-								}),
-							},
+							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 						}),
-						n(165325, {	-- Muckborn Craftsman
-							["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
-							["g"] = {
-								-- TODO: do they offer a quest to repair the ballista? have never seen it...
-								-- i(176396, {			-- Dredhollow Tools
-								-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-								-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
-								-- 	["coords"] = {
-								-- 		{ 40.77, 72.70, 1525 },	-- Tool1
-								-- 		{ 41.18, 74.67, 1525 },	-- Tool2
-								-- 	},
-								-- 	["g"] = {
-								-- 	},
-								-- }),
-							},
+						i(176397, {	-- Dredhollow Bolt
+							["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
 						}),
+						-- TODO: do they offer a quest to repair the ballista? have never seen it...
+						-- n(165325, {	-- Muckborn Craftsman
+						-- 	["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+						-- 	["g"] = {
+						-- 		-- i(176396, {			-- Dredhollow Tools
+						-- 		-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+						-- 		-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
+						-- 		-- 	["coords"] = {
+						-- 		-- 		{ 40.77, 72.70, 1525 },	-- Tool1
+						-- 		-- 		{ 41.18, 74.67, 1525 },	-- Tool2
+						-- 		-- 	},
+						-- 		-- 	["g"] = {
+						-- 		-- 	},
+						-- 		-- }),
+						-- 	},
+						-- }),
 						i(180713),	-- Shrieker's Voicebox
-						i(180461),	-- Horrid Dredwing
+						i(180461, {	-- Horrid Dredwing (MOUNT!)
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+						}),
 						i(183720),	-- Dredbatskin Jerkin
 					},
 				}),
@@ -178,13 +167,15 @@ _.Zones =
 					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
 					["questID"] = 59900,
 					["isDaily"] = true,
-					["coord"] = { 51.2, 52.2, 1525 },
+					["coord"] = { 51.9, 51.8, 1525 },
 					["crs"] = { 166682 },	-- Large Prey
 					["g"] = {
 						crit(17, {	-- Hopecrusher
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180581),	-- Hopecrusher Gargon
+						i(180581, {	-- Hopecrusher Gargon (MOUNT!)
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
+						}),
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus
@@ -195,6 +186,10 @@ _.Zones =
 					["g"] = {
 						crit(20, {	-- Huntmaster Petrus
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180705, {	-- Gargon Training Manual
+							["questID"] = 61160,
+							["classes"] = { HUNTER },
 						}),
 					},
 				}),
@@ -207,7 +202,9 @@ _.Zones =
 						crit(3, {	-- Innervus
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(183735),	-- Rogue Sinstealer's Mantle
 						i(177223),	-- Scorched Crypt Key
+						i(183760),	-- Venthyr Spectacles
 					},
 				}),
 				n(165152, {	-- Leeched Soul
@@ -228,20 +225,15 @@ _.Zones =
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
+					["description"] = "Collect 4 |cFF075ab2Mortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
+					["questID"] = 58633,
+					["isDaily"] = true,
 					["coord"] = { 75.8, 61.4, 1525 },
-					--["questID"] = ,
-					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(9)),	-- Adventurer of Revendreth / Lord Mortegore
-					},
-				}),
-				n(170048, {	-- Manifestation of Wrath
-					["coord"] = { 49.8, 35.0, 1525 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						ach(14310, crit(22)),	-- Adventurer of Revendreth / Manifestation of Wrath
-						i(180591),	-- Vial of Roiling Emotions
+						crit(9, {	-- Lord Mortegore
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180501),	-- Skull-Formed Headcage
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua
@@ -258,15 +250,20 @@ _.Zones =
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder
-					["coord"] = { 67.4, 30.6, 1525 },
-					--["questID"] = ,
+					["description"] = "Click on the |cFFFFFFFFCatacombs Cache|r to spawn the rare.",
+					["questID"] = 62252,
 					["isDaily"] = true,
+					["coord"] = { 67.4, 30.6, 1525 },
+					["crs"] = { 162503 },	-- Catacombs Cache
 					["g"] = {
-						ach(14310, crit(24)),	-- Adventurer of Revendreth / Sinstone Hoarder
+						crit(24, {	-- Sinstone Hoarder
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(183732),	-- Sinstone-Linked Greaves
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
-					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on Crazed Ash Ghouls for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
+					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on any mobs in the area (ghouls/outcasts/etc.) for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
 					["questID"] = 58263,
 					["isDaily"] = true,
 					["coord"] = { 34.0, 55.5, 1525 },
@@ -293,6 +290,7 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180692),	-- Box of Stalker Traps
+						i(180490),	-- Soulstalker's Barbs
 					},
 				}),
 				n(159503, {	-- Stonefist
@@ -316,6 +314,7 @@ _.Zones =
 						}),
 						i(179363, {	-- Misplaced Anima Tolls
 							["questID"] = 60517,	-- The Toll of the Road
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -347,13 +346,6 @@ _.Zones =
 						}),
 						i(180583, {	-- Impressionable Gorger Spawn
 							i(182589),	-- Loyal Gorger (MOUNT!)
-						}),
-						i(173939, {	-- Enticing Anima
-							["description"] = "Used to summon the Worldedge Gorger",
-							["crs"] = {
-								159676,	-- Animus Mite
-								160815,	-- Encroaching Gorger
-							},
 						}),
 					},
 				}),

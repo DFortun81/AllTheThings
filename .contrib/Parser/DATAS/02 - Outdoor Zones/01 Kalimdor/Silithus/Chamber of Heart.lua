@@ -89,6 +89,21 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
+						q(53028, {	-- A Dying World
+						--	originally removed, then hotfixed back in for 50 characters
+						--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance, but it looks like that one was permanently removed.
+						--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
+							["providers"] = {
+								{ "n", 154464 },	-- Earthen Guardian (Alliance)
+								{ "n", 154465 },	-- Earthen Guardian (Horde)
+							},
+							["coords"] = {	-- i found it at the first one for Horde; apparently it can show up in both, but i'm not sure what governs which location it's available at
+								{ 75.0, 15.0, 1161 },	-- Boralus, Alliance
+								{ 50.3, 41.7, 1165 },	-- Dazar'alor, Horde
+								{ 51.0, 88.8, 1165 },	-- Dazar'alor, Horde
+							},
+							["_drop"] = { "r" },	-- API claims this is Horde-only, but it's neutral
+						}),
 						q(52428, {	-- Infusing the Heart
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },
@@ -122,6 +137,7 @@ _.Zones =
 							},
 						}),
 						q(51403, {	-- The Speaker's Imperative (A)
+							-- TODO: likely this is technically a breadcrumb as well, if someone tests heading to Stormwind after receiving their neck and not picking this up...
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
@@ -129,6 +145,8 @@ _.Zones =
 							["lvl"] = 110,
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
+							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
+							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
@@ -596,9 +614,6 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57373,	-- Descending Into Madness
-							["g"] = {
-								spell(315864),	-- Tenebrous Conduit (unlocks horrific visions)
-							},
 						}),
 						q(57373, {	-- Descending Into Madness
 							["lvl"] = 120,
@@ -638,9 +653,6 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
-							["g"] = {
-								spell(315863),	-- Archival Research Database (unlocks the Horrific Visions upgrades)
-							},
 						}),
 						q(57378, {	-- Remnants of a Shattered World (Rank 2)
 							["lvl"] = 120,

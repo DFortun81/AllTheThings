@@ -8,7 +8,7 @@ _.Zones =
 		m(108, {	-- Terokkar Forest
 			n(-38, {	-- Professions
 				prof(FISHING, {
-					i(27446, {	-- Mr Punchys Gift
+					i(27446, {	-- Mr. Pinchy's Gift
 						i(27388, {	-- Mr. Pinchy
 							i(27445, {	-- Magical Crawdad Box
 								["description"] = "Fish up Mr. Pinchy from Highland Mixed Schools.  You then have 3 chances at getting the pet.",

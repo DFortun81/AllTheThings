@@ -295,6 +295,12 @@ _.Zones =
 					},
 					-- Not required for "Drust Do It."
 				}),
+				q(52484, {	-- Buried Power
+					["sourceQuests"] = { 52482 },	-- The Old Bear
+					["provider"] = { "n", 141894 },	-- Ulfar
+					["coord"] = { 45.2, 45.8, 896 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(49803, {	-- Changing of the Guard
 					["provider"] = { "n", 129643 },	-- Marshal Everit Reade
 					["coord"] = { 36.9, 50.0, 896 },
@@ -489,6 +495,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 				}),
+				q(52485, {	-- Hatred's Focus
+					["sourceQuests"] = { 52482 },	-- The Old Bear
+					["provider"] = { "n", 141894 },	-- Ulfar
+					["coord"] = { 45.2, 45.8, 896 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50585, {	-- Hexecutioner
 					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.0, 20.2, 896 },
@@ -608,6 +620,12 @@ _.Zones =
 						-- Definitely requires "Matrons of the Crimsonwood;" may not require others.  Needs confirmation.
 					},
 				}),
+				q(52487, {	-- Into Darkness
+					["sourceQuests"] = { 52486 },	-- Waycrest Manor: Draining the Heartsbane
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
+					["coord"] = { 36.9, 50.1, 896 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50172, {	-- Into the Crimsonwood
 					["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 					["coord"] = { 25.1, 67.4, 896 },
@@ -697,6 +715,12 @@ _.Zones =
 					["coord"] = { 51.4, 23.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48793 },	-- The Adventurer's Society
+				}),
+				q(52483, {	-- Nightmare Catcher
+					["sourceQuests"] = { 52482 },	-- The Old Bear
+					["provider"] = { "n", 141894 },	-- Ulfar
+					["coord"] = { 45.2, 45.8, 896 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50306, {	-- Odds and Ends
 					["provider"] = { "n", 133126 },	-- Marten Webb
@@ -896,6 +920,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50457 },	-- Break on Through
 				}),
+				q(52488, {	-- Runic Resistance
+					["sourceQuests"] = { 52487 },	-- Into Darkness
+					["provider"] = { "n", 142287 },	-- Katherine Proudmoore
+					["coord"] = { 27.5, 58.8, 896 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50759, {	-- Running Late
 					["provider"] = { "n", 134953 },	-- Alexander Treadward
 					["coord"] = { 23.3, 12.5, 896 },
@@ -1093,10 +1123,16 @@ _.Zones =
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
+					--	azerite
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
 						i(163862),	-- Bartered Vrykul Hood
 						i(163865),	-- Bartered Vrykul Warhelm
+					--	azewrong
+						i(180028),	-- Bartered Vrykul Cowl
+						i(180029),	-- Bartered Vrykul Facemask
+						i(180027),	-- Bartered Vrykul Hood
+						i(180030),	-- Bartered Vrykul Warhelm
 					},
 				}),
 				o(277459, {	-- Pig Effigy
@@ -1212,6 +1248,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 47982 },	-- The Final Effigy
 				}),
+				q(52482, {	-- The Old Bear
+					["sourceQuests"] = { 52481 },	-- Of Myth and Fable
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
+					["coord"] = { 36.9, 50.1, 896 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(48946, {	-- The Order of Embers
 					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 42.5, 25.2, 896 },
@@ -1296,6 +1338,13 @@ _.Zones =
 						135902,	-- Bloodbough Fungalmancer
 						135901,	-- Bloodbough Funggarian
 					},
+				}),
+				q(51445, {	-- Thros, the Blighted Lands
+					["sourceQuests"] = { 52488 },	-- Runic Resistance
+					["provider"] = { "n", 141785 },	-- Katherine Proudmoore
+					["coord"] = { 27.5, 58.8, 896 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 1045 },	-- Thros, The Blighted Lands
 				}),
 				q(48504, {	-- Through the Old Roads
 					["provider"] = { "n", 135021 },	-- Inquisitor Cleardawn
@@ -1388,6 +1437,16 @@ _.Zones =
 						-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "The Order of Embers."
 						-- Not required for "Drust Do It."
 					}),
+				}),
+				q(52486, {	-- Waycrest Manor: Draining the Heartsbane
+					["sourceQuests"] = {
+						52484,	-- Buried Power
+						52485,	-- Hatred's Focus
+						52483,	-- Nightmare Catcher
+					},
+					["provider"] = { "n", 141159 },	-- Ulfar
+					["coord"] = { 45.2, 45.8, 896 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50639, {	-- Waycrest Manor: The Fallen Mother
 					["provider"] = { "n", 131638 },	-- Lucille Waycrest

@@ -118,6 +118,7 @@ _.PetJournal =
 		p(2089),			-- Infernal Pyreclaw
 		p(2852),			-- Jade Defender
 		p(2795),			-- Jenafur
+		un(29, p(2622)),	-- Jingles
 		p(699),				-- Jumping Spider
 		p(678),				-- Jungle Grub
 		p(438),				-- King Snake
@@ -219,7 +220,7 @@ _.PetJournal =
 		p(1763),			-- Spiketail Beaver
 		p(433),				-- Spiky Lizard
 		p(466),				-- Spiny Lizard
-		un(NEVER_IMPLEMENTED, p(2942)),			-- Spirited Skyfoal
+		p(2942),			-- Spirited Skyfoal
 		p(2914),			-- Starry Dreamfoal
 		p(2579),			-- Stoneclaw
 		p(432),				-- Stripe-Tailed Scorpid

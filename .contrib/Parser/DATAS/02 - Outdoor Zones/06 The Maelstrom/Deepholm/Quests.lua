@@ -18,7 +18,8 @@ _.Zones =
 					["provider"] = { "o", 204959 },	-- Gigantic Painite Cluster
 					["coord"] = { 66.3, 20.7, 207 },
 					["sourceQuests"] = { 26869 },	-- Depth of the Depths
-					["model"] = "world\\expansion03\\doodads\\deepholm\\deepholm_cluster.mdx",
+					["model"] = 383743,
+					["modelScale"] = 4,
 					["g"] = {
 						i(61427),	-- Gyreworm Waistguard
 						i(61428),	-- Helm of the Wormslayer
@@ -140,7 +141,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "o", 204274 },	-- Captain's Log
 					["sourceQuests"] = { 27123 },	-- Deepholm, Realm of Earth
-					["model"] = "World\\Goober\\g_booktraplightgood.mdx",
+					["model"] = 200908,
 				}),
 				q(26440, {	-- Clingy
 					["lvl"] = 82,
@@ -682,7 +683,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "o", 205134 },	-- Forgemaster's Log
 					["sourceQuests"] = { 26260 },	-- The Forgemaster's Log
-					["model"] = "World\\Goober\\g_booktraplightgood.mdx",
+					["model"] = 200908,
 				}),
 				q(26441, {	-- So Big, So Round...
 					["lvl"] = 82,

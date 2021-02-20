@@ -19,14 +19,14 @@ _.WorldEvents =
 				i(139284, {	-- Anniversary Gift
 					i(139285),	-- Celebration Package
 					i(139410, {	-- Letter from the Timewalker [Horde]
+						["isYearly"] = true,	 -- Resets each year even if you did it.
 						["questID"] = 43472,	-- The Historians
 						["races"] = HORDE_ONLY,
-						["isYearly"] = true,	 -- Resets each year even if you did it.
 					}),
 					i(139409, {	-- Letter from the Timewalker [Alliance]
+						["isYearly"] = true,	 -- Resets each year even if you did it.
 						["questID"] = 43471,	-- The Historians
 						["races"] = ALLIANCE_ONLY,
-						["isYearly"] = true,	 -- Resets each year even if you did it.
 					}),
 				}),
 			})),
@@ -34,9 +34,7 @@ _.WorldEvents =
 				q(43461, {	-- A Time to Reflect
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
-					["coords"] = {
-						{ 36.6, 74.6, 85 },
-					},
+					["coord"] = { 36.6, 74.6, 85 },
 					["races"] = HORDE_ONLY,
 					-- Note!! See Master List of quiz answers at the end in a better format
 					-- Was going to list it in description, but too many and terrible looking
@@ -44,9 +42,7 @@ _.WorldEvents =
 				q(43323, {	-- A Time to Reflect
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
-					["coords"] = {
-						{ 84.61, 25.01, 13 },
-					},
+					["coord"] = { 84.6, 25.0, 13 },
 					["races"] = ALLIANCE_ONLY,
 					-- Note!! See Master List of quiz answers at the end in a better format
 					-- Was going to list it in description, but too many and terrible looking
@@ -54,34 +50,50 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(110035, {	-- Historian Jupa [Horde]
+					["coords"] = { 36.6, 74.6, 85 },
 					["races"] = HORDE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 36.6, 74.6, 85 },
-					},
 					["g"] = {	-- WoW Anniversary
-						i(136925),	-- Corgi Pup
-						i(128506),	-- Celebration Wand - Gnoll
-						i(128505),	-- Celebration Wand - Murloc
-						i(128510),	-- Exquisite Costume Set: "Edwin VanCleef"
+						i(136925, {	-- Corgi Pup
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
+						i(128506, {	-- Celebration Wand - Gnoll
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(128505, {	-- Celebration Wand - Murloc
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							ach(10335),	-- Did Someone Say...?
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+							["g"] = {
+								ach(10335),	-- Did Someone Say...?
+							},
 						}),
 					},
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
+					["coord"] = { 84.6, 25.0, 13 },
 					["races"] = ALLIANCE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 84.61, 25.01, 13 },
-					},
 					["g"] = {	-- WoW Anniversary
-						i(136925),	-- Corgi Pup
-						i(128506),	-- Celebration Wand - Gnoll
-						i(128505),	-- Celebration Wand - Murloc
-						i(128510),	-- Exquisite Costume Set: "Edwin VanCleef"
+						i(136925, {	-- Corgi Pup
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
+						i(128506, {	-- Celebration Wand - Gnoll
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(128505, {	-- Celebration Wand - Murloc
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							ach(10335),	-- Did Someone Say...?
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+							["g"] = {
+								ach(10335),	-- Did Someone Say...?
+							},
 						}),
 					},
 				}),

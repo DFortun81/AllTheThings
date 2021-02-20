@@ -1711,13 +1711,13 @@ _.Zones =
 						i(78708, {	-- Blackfang Battleweave Legguards
 							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
 						}),
-						i(77027, {	-- Blackfang Battleweave Spaulders
+						i(78833, {	-- Blackfang Battleweave Spaulders
 							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
 						}),
-						i(78738, {	-- Blackfang Battleweave Spaulders
+						i(77027, {	-- Blackfang Battleweave Spaulders
 							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
 						}),
-						i(78833, {	-- Blackfang Battleweave Spaulders
+						i(78738, {	-- Blackfang Battleweave Spaulders
 							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
 						}),
 						i(78759, {	-- Blackfang Battleweave Tunic

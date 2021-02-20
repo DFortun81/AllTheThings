@@ -77,6 +77,9 @@ _.Craftables =
 				i(171443),	-- Shadowsteel Sabatons
 				i(171375),	-- Ceremonious Sabatons
 			}),
+			i(171436),		-- Porous Sharpening Stone
+			i(171437),		-- Shaded Sharpening Stone
+			i(171439),		-- Shaded Weightstone
 		}),
 	}),
 };

@@ -7,8 +7,8 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-299, { 	-- Missions
-				["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
 				["races"] = ALLIANCE_ONLY,
+				["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
 				["g"] = {
 					n(84698, {	-- Command Table
 						["modelScale"] = 2.5,
@@ -405,7 +405,7 @@ _.ExpansionFeatures =
 							i(114087, {	-- Grandiose Trinket
 								["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
-									i(114552),	-- Grandiose Carnge
+									i(114552),	-- Grandiose Carnage
 									i(114549),	-- Grandiose Plans
 									i(114550),	-- Grandiose Power
 									i(114551),	-- Grandiose Prescience
@@ -427,6 +427,28 @@ _.ExpansionFeatures =
 							i(128319, {	-- Void-Shrouded Satchel
 								i(128318),	-- Touch of the Void
 							}),
+							i(120301),	-- Armor Enhancement Token
+							i(118427),	-- Autographed Hearthstone Card
+							i(114128),	-- Balanced Weapon Enhancement
+							i(114806),	-- Blackrock Armor Set
+							i(114745),	-- Braced Armor Enhancement
+							i(123858),	-- Follower Retraining Scroll Case
+							i(118354),	-- Follower Retraining Certificate
+							i(114808),	-- Fortified Armor Enhancement
+							i(122583),	-- Grease Monkey Guide
+							i(114746),	-- Goredrenched Armor Set
+							i(114622),	-- Goredrenched Weaponry
+							i(118475),	-- Hearthstone Strategy Guide
+							i(114822),	-- Heavily Reinforced Armor Enhancement
+							i(128313),	-- Huge Ogre Cache
+							i(128315),	-- Medallion of the Legion
+							i(122580),	-- Ogre Buddy Handbook
+							i(114131),	-- Power Overrun Weapon Enhancement
+							i(122576),	-- Rush Order: Alchemy Lab
+							i(122594),	-- Rush Order: Tailoring Emporium
+							i(114616),	-- War Ravaged Weaponry
+							i(120302),	-- Weapon Enhancement Token
+							i(122584),	-- Winning with Wildlings
 						},
 					}),
 					n(94399, {	-- Fleet Command Table
@@ -494,7 +516,7 @@ _.ExpansionFeatures =
 							}),
 							i(128391, {	-- Iron Fleet Treasure Chest [Raid Finder]
 								["g"] = {
-									i(128194),	-- Snrlwood Recurve Bow
+									i(128194),	-- Snarlwood Recurve Bow
 									i(128079),	-- Boisterous Bellower's Hood
 									i(128134),	-- Demonbreaker Helm
 									i(128128),	-- Felfume Hood
@@ -552,8 +574,8 @@ _.ExpansionFeatures =
 							i(127855, {	-- Iron Fleet Treasure Chest [Mythic]
 								["sym"] = {{"select", "instanceID", 669}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "itemID", 139630 }},
 							}),
-							i(116769), 		-- Mudback Riverbeast
-							i(127856), 		-- Left Shark
+							i(116769),	-- Mudback Riverbeast
+							i(127856),	-- Left Shark
 							i(127781, {	-- Baleful Cloth Hood
 								i(124579),	-- Felcast Hood
 							}),

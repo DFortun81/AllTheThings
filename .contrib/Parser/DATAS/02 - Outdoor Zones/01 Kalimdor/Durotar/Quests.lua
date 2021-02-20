@@ -275,9 +275,9 @@ _.Zones =
 					["sourceQuest"] = 25446,	-- Frogs Away!
 				}),
 				q(32671, {	-- Learn To Ride
-					["lvl"] = 20,
+					["lvl"] = 10,
 					["races"] = { TROLL },
-					["description"] = "This quest is available to Trolls upon reaching level 20.",
+					["description"] = "This quest is available to Trolls upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 				}),

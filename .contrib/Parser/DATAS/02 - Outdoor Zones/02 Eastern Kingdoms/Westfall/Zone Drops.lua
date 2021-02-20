@@ -52,6 +52,9 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(816)),		-- Small Hand Blade
 					},
 				}),
+				i(820, {	-- Slicer Blade
+					["crs"] = { 831 },	-- Harvest Reaper
+				}),
 				i(2088, {	-- Long Crawler Limb
 					["crs"] = { 831 },	-- Sea Crawler
 				}),

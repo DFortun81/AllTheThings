@@ -813,6 +813,19 @@ _.Zones =
 					q(52299, {	-- Whiplash
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
+						["g"] = {
+							n(129803, {	-- Whiplash
+								["description"] = "This rare only spawns during its associated world quest.",
+								["repeatable"] = true,
+								["questID"] = 52299,	-- Whiplash
+								["coord"] = { 47.32, 65.81, 942 },
+								["g"] = {
+									crit(27, {	-- Whiplash
+										["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
+									}),
+								},
+							}),
+						},
 					}),
 					q(52459, {	-- Whirlwing
 						["isWorldQuest"] = true,

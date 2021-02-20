@@ -8,7 +8,6 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				--	TODO: finish adding criteria here + other SL zones
 					["collectible"] = false,
 					["g"] = {
 						crit(8, {	-- Gelatinous
@@ -47,11 +46,279 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(4,  {	-- Rotgut
+									["coord"] = { 34.0, 55.2, 1536 },
+									["cr"] = 173263,	-- Rotgut
+								}),
+								crit(5,  {	-- Dundley Stickyfingers
+									["coord"] = { 63.2, 46.8, 1536 },
+									["cr"] = 173267,	-- Dundley Stickyfingers
+								}),
+								crit(6,  {	-- Caregiver Maximillian
+									["coord"] = { 46.8, 50.0, 1536 },
+									["cr"] = 173257,	-- Caregiver Maximillian
+								}),
+							},
+						}),
+					},
+				}),
 				ach(14626, {	-- Harvester of Sorrow
 				--	TODO: figure out a better way to display these?  maybe secrets?  maybe in a treasures header?  maybe the 'special' header?
 				--	the 'harvester of sorrow' achievement is granted by looting 'sorrowbane,' the pet is granted by looting oonar's arm... both have similarly convoluted loot methods and, from what i can tell, the objects are connected to each other.  this WAS part of the 'treasures of maldraxxus' achievement, but was moved to be its own thing
 					i(181164),	-- Oonar's Arm (PET!)
 					i(180273),	-- Sorrowbane
+				}),
+				ach(14721, {	-- It's in the Mix
+					["description"] = "Spawns a mob based on the current combination of 30 slimes added to the pool.",
+					["coord"] = { 58.6, 74.2, 1536 },
+					["g"] = {
+						i(183903),	-- Smelly Jelly
+						n(157294, {	-- Pulsing Leech
+							["description"] = "Requires a majority of Red slime.",
+							["questID"] = 61718,
+							["isDaily"] = true;
+							["g"] = {
+								crit(1, {	-- Pulsing Leech
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184279),	-- Siphoning Blood-Drinker
+							},
+						}),
+						n(157307, {	-- Gelloh
+							["description"] = "Requires a majority of Yellow slime.",
+							["questID"] = 61721,
+							["isDaily"] = true;
+							["g"] = {
+								crit(2, {	-- Gelloh
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(182287),	-- Eternally Preserved Scarab
+							},
+						}),
+						n(157312, {	-- Oily Invertebrate
+							["description"] = "Requires an equal portion of Red, Blue & Yellow slime.",
+							["questID"] = 61724,
+							["isDaily"] = true;
+							["g"] = {
+								crit(3, {	-- Oily Invertebrate
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184155, {	-- Recovered Containment Pack
+								--	TODO: figure out if this is the best way to display this.  i haven't done it myself so i'm not 100% sure how it works other than "loot item > do quest > get reward."
+									["questID"] = 62804,	-- Filling the Tanks
+									["g"] = {
+										i(184156),	-- Pristine Containment Pack
+									},
+								}),
+								i(184300),	-- Fused Spineguard
+								i(181270),	-- Decaying Oozewalker
+							},
+						}),
+						n(157310, {	-- Boneslurp
+							["description"] = "Requires an equal majority of Blue & Yellow slime.",
+							["questID"] = 61722,
+							["isDaily"] = true;
+							["g"] = {
+								crit(4, {	-- Boneslurp
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184185),	-- Grunge-Caked Collarbone
+							}
+						}),
+						n(157309, {	-- Violet Mistake
+							["description"] = "Requires an equal majority of Red & Blue slime.",
+							["questID"] = 61720,
+							["isDaily"] = true;
+							["g"] = {
+								crit(5, {	-- Violet Mistake
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184301),	-- Twenty-Loop Violet Girdle
+								i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
+							},
+						}),
+						n(157311, {	-- Burnblister
+							["description"] = "Requires an equal majority of Red & Yellow slime.",
+							["questID"] = 61723,
+							["isDaily"] = true;
+							["g"] = {
+								crit(6, {	-- Burnblister
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184175),	-- Bone-Blistering Wand
+							},
+						}),
+						n(157308, {	-- Corrupted Sediment
+							["description"] = "Requires a majority of Blue slime.",
+							["questID"] = 61719,
+							["isDaily"] = true;
+							["g"] = {
+								crit(7, {	-- Corrupted Sediment
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184302),	-- Residue-Coated Muck Waders
+							},
+						}),
+					},
 				}),
 				ach(14634, {	-- Nine Afterlives
 					["collectible"] = false,
@@ -108,6 +375,7 @@ _.Zones =
 						["sourceQuests"] = { 58794 },	-- Stabbing Wasteward
 					}),
 				}),
+				ach(14513),		-- Tour of Duty: Maldraxxus
 				ach(14312, {	-- Treasures of Maldraxxus
 					crit(1, {	-- Ornate Bone Shield
 						["objectID"] = 347444,	-- Ornate Bone Shield
@@ -169,8 +437,17 @@ _.Zones =
 					}),
 					crit(7, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos
+						["description"] = "Accessible once unlocked via the Chain in the other room.\nTreasure will respawn about 5 minutes after being clicked by any player",
 						["coord"] = { 22.5, 30.5, 1536 },
-						--["questID"] = ,
+						["questID"] = 58710,
+						["g"] = {
+							o(1278968750, {	-- TODO: fix objectID Hanging Chain
+								["coord"] = { 25.8, 53.9, 1536 },
+								["description"] = "A clickable, hanging chain required to open the gate to the Forgotten Momentos treasure",
+								["questID"] = 58709,
+								["repeatable"] = true,
+							}),
+						},
 					}),
 					crit(8, {	-- Chest of Eyes
 						["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then just turn right and walk up the cliff to it.",
@@ -184,7 +461,7 @@ _.Zones =
 					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
 						["coord"] = { 62.4, 59.9, 1536 },
-						["questID"] = 59245,
+						["questID"] = 59245,	-- 60311 triggered for me on this treasure
 						["description"] = "On top of the mushroom.",
 					}),
 					crit(10, {	-- Glutharn's Stash
@@ -201,6 +478,9 @@ _.Zones =
 						},
 						["questID"] = 61491,
 						["description"] = "You need |cFFFFFFFF[Runespeaker's Key]|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
+						["g"] = {
+							i(183516),	-- Stained Bonefused Mantle
+						},
 					}),
 					crit(12, {	-- Plaguefallen Chest
 						["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleported to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
@@ -223,9 +503,6 @@ _.Zones =
 							}),
 						},
 					}),
-				}),
-				ach(14751, {	-- The Gang's All Here
-					i(182074),		-- Chosen Tauralus
 				}),
 			}),
 		}),

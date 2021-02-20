@@ -133,6 +133,16 @@ _.Instances = { tier(1, {	-- Classic
 					i(1930, {	-- Stonemason Cloak
 						["crs"] = { 48419 },	-- Defias Miner
 					}),
+					i(120138, {	-- Tome of Polymorph: Monkey
+						["spellID"] = 161354,	-- Polymorph(Monkey)
+						["classes"] = { MAGE },
+						["crs"] = {
+							48278,	-- Mining Monkey
+							48440,	-- Mining Monkey
+							48441,	-- Mining Monkey
+							48442,	-- Mining Monkey
+						},
+					}),
 					i(1926, {	-- Weighted Sap
 						["crs"] = { 48420 },	-- Defias Digger
 					}),

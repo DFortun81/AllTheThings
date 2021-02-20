@@ -4,9 +4,11 @@
 
 _.Zones =
 {
-	m(714, { -- Niskara
-		["maps"] = {
-			748,	-- Paladin/Priest Class Hall Campaign Map
-		},
+	m(619, {	-- The Broken Isles
+		m(714, { -- Niskara
+			["maps"] = {
+				748,	-- Paladin/Priest Class Hall Campaign Map
+			},
+		}),
 	}),
 };

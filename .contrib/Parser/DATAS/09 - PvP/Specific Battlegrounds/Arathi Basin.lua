@@ -17,7 +17,7 @@ _.PVP =
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 			["g"] = {
 				faction(510, {	-- The Defilers
-					["creatureID"] = 19905,
+					["crs"] = { 19905 },	-- The Black Bride <Arathi Basin Battlemaster>
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
 					["g"] = {
@@ -40,6 +40,21 @@ _.PVP =
 								["lvl"] = 35,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
+							}),
+							q(8169, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8170, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8171, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						}),
 						n(VENDORS, {
@@ -177,7 +192,7 @@ _.PVP =
 					},
 				}),
 				faction(509, {	-- The League of Arathor
-					["creatureID"] = 30231,
+					["crs"] = { 30231 },	-- Radulf Leder <Arathi Basin Battlemaster>
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
 					["g"] = {
@@ -200,6 +215,21 @@ _.PVP =
 								["lvl"] = 35,
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
+							}),
+							q(8166, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8167, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8168, {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						}),
 						n(VENDORS, {

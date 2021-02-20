@@ -80,23 +80,21 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(110035, {	-- Historian Jupa [Horde]
+					["coord"] = { 36.6, 74.6, 85 },
 					["races"] = HORDE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 36.6, 74.6, 85 },
-					},
 					["g"] = {
-						i(158149),	-- Overtuned Corgi Goggles
+						i(158149, {	-- Overtuned Corgi Goggles
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
 					},
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
+					["coord"] = { 84.6, 25.0, 13 },
 					["races"] = ALLIANCE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coords"] = {
-						{ 84.61, 25.01, 13 },
-					},
 					["g"] = {
-						i(158149),	-- Overtuned Corgi Goggles
+						i(158149, {	-- Overtuned Corgi Goggles
+							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						}),
 					},
 				}),
 			})),

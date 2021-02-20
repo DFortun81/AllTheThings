@@ -79,9 +79,13 @@ _.Zones =
 					},
 				}),
 				q(38915, {	-- Battle of Snowblind Mesa
-					["sourceQuests"] = { 39456 },	-- Unexpected Allies
-					["coord"] = { 54.0, 62.8, 652 },	-- Thunder Totem
+					["sourceQuests"] = {
+						39580,	-- The High Chieftain
+						39387,	-- The Skies of Highmountain
+						39456,	-- Unexpected Allies
+					},
 					["provider"] = { "n", 108434 },	-- Mayla Highmountain
+					["coord"] = { 54.0, 62.8, 652 },	-- Thunder Totem
 				}),
 				q(39776, {	-- Battle Worms
 					["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa
@@ -335,43 +339,39 @@ _.Zones =
 				}),
 				q(40112, {	-- Huln's War - Malorne's Favored
 					["sourceQuests"] = { 39983 },	-- Huln's War: The Arrival
-					["coord"] = { 29.5, 39.2, 697 },
-					["lvl"] = 98,
 					["provider"] = { "n", 97891 },	-- Unng Ak
-					["maps"] = { 652 },	-- Azshara (Scenario)
+					["coord"] = { 29.5, 39.2, 697 },	-- Azshara (scenario)
+					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39990, {	-- Huln's War - Reinforcements
 					["sourceQuests"] = { 39988 },	-- Huln's War - Stormrage
-					["coord"] = { 27.8, 51.6, 697 },
-					["lvl"] = 98,
 					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
-					["maps"] = { 652 },	-- Azshara (Scenario)
+					["coord"] = { 27.8, 51.6, 697 },	-- Azshara (scenario)
+					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(40388, {	-- Huln's War - Shadowsong
 					["sourceQuests"] = { 39990 },	-- Huln's War - Reinforcements
-					["coord"] = { 27.8, 51.7, 697 },
-					["lvl"] = 98,
 					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
-					["maps"] = { 652 },	-- Azshara (Scenario)
+					["coord"] = { 27.8, 51.7, 697 },	-- Azshara (scenario)
+					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39988, {	-- Huln's War - Stormrage
 					["sourceQuests"] = { 40112 },	-- Huln's War - Malorne's Favored
-					["coord"] = { 27.9, 47.2, 697 },
-					["lvl"] = 98,
 					["provider"] = { "n", 98794 },	-- Eche'ro
-					["maps"] = { 652 },	-- Azshara (Scenario)
+					["coord"] = { 27.9, 47.2, 697 },	-- Azshara (scenario)
+					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39983, {	-- Huln's War - The Arrival
 					["sourceQuests"] = { 40520 },	-- To See the Past
-					["coord"] = { 73.9, 74.5, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
+					["coord"] = { 73.9, 74.5, 652 },	-- Thunder Totem
+					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39992, {	-- Huln's War - The Nathrezim
 					["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
-					["coord"] = { 31.2, 52.4, 697 },
-					["lvl"] = 98,
 					["provider"] = { "n", 97903 },	-- Jarod Shadowsong
-					["maps"] = { 652 },	-- Azshara (Scenario)
+					["coord"] = { 31.2, 52.4, 697 },
+					["maps"] = { 697 },	-- Azshara (Scenario)
 					["g"] = {
 						i(130282),	-- Highmountain Trueshot Cape
 						i(130309),	-- Band of Malorne's Chosen

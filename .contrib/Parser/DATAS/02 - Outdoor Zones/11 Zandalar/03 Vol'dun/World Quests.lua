@@ -132,8 +132,19 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50848, {	-- Brgl-Lrgl the Basher
-						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["g"] = {
+							n(134643, {	-- Brgl-Lrgl the Basher
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["repeatable"] = true,
+								["questID"] = 50663,
+								["coord"] = { 29.78, 46.47, 864 },
+								["g"] = {
+									i(161044),	-- Tideflat Brute's Greatbelt
+								},
+							}),
+						},
 					}),
 					q(51155, {	-- Brgl-Lrgl the Basher
 						["lvl"] = { 50 },
@@ -222,8 +233,19 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51156, {	-- Fangcaller Xorreth
-						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["g"] = {
+							n(136323, {	-- Fangcaller Xorreth
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["repeatable"] = true,
+								["questID"] = 51065,
+								["coord"] = { 53.60, 35.01, 864 },
+								["g"] = {
+									i(162612),	-- Cobra Priest's Headdress
+								},
+							}),
+						},
 					}),
 					q(51285, {	-- Feeding Frenzy
 						["lvl"] = { 50 },
@@ -258,8 +280,21 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51157, {	-- Golanar
-						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["g"] = {
+							n(129027, {	-- Golanar
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["questID"] = 50362,
+								["coords"] = {
+									{ 57.6, 6.40, 864 },
+									{ 59.6, 8.80, 864 },
+								},
+								["g"] = {
+									i(160972),	-- Herculean Golden Sword
+								},
+							}),
+						},
 					}),
 					q(54646, {	-- Grand Marshal Fury (Faction Assault WQ)
 						["lvl"] = 110,
@@ -359,8 +394,19 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50851, {	-- Mor'fani the Exile
-						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["g"] = {
+							n(134694, {	-- Mor'fani the Exile
+								["description"] = "This rare is only up when its associated world quest is active.",
+								["repeatable"] = true,
+								["questID"] = 50666,
+								["coord"] = { 37.41, 88.71, 864 },
+								["g"] = {
+									i(162616),	-- Master Dinomancer's Tunic
+								},
+							}),
+						},
 					}),
 					q(51153, {	-- Mor'fani the Exile
 						["isWorldQuest"] = true,

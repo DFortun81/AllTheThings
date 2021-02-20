@@ -192,10 +192,21 @@ namespace ATT
             {
                 Dictionary<string, object> sourceObj = db[diffKey];
                 sourceObj[objectKey] = diffKey;
+                RemoveNullKeys(sourceObj);
                 dbList.Add(sourceObj);
             }
 
             return dbList;
+        }
+
+        private static void RemoveNullKeys(Dictionary<string, object> sourceObj)
+        {
+            if (sourceObj.Keys.Any(k => sourceObj[k] == null))
+            {
+                List<string> nullKeys = sourceObj.Keys.Where(k => sourceObj[k] == null).ToList();
+                foreach (string key in nullKeys)
+                    sourceObj.Remove(key);
+            }
         }
 
         private static void CreateSource(Dictionary<int, Dictionary<string, object>> source, string objectKey, List<object> dbObjects)
@@ -335,13 +346,11 @@ namespace ATT
                     compareKeys.Sort();
 
                     // Remove some common ones. (due to optimizations Crieve made to not include for default data)
-                    compareKeys.Remove("equippable");       // For NON-EQUIP types.
-                    compareKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    compareKeys.Remove("b");             // For NON-BOP types.
+                    RemoveKey(compareObj, compareKeys, "equippable", false);    // For NON-EQUIP types.
                     comma = false;
                     foreach (var key in compareKeys)
                     {
-                        if (!sourceObj.ContainsKey(key))
+                        if (!sourceObj.ContainsKey(key) || sourceObj[key] == null)
                         {
                             // see if a compare key will override an existing key
                             if (CheckOverrideKeys(sourceObj, key))
@@ -360,9 +369,7 @@ namespace ATT
 
                     var sourceKeys = sourceObj.Keys.ToList();
                     sourceKeys.Sort();
-                    sourceKeys.Remove("equippable");       // For NON-EQUIP types.
-                    sourceKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    sourceKeys.Remove("b");             // For NON-BOP types.
+                    RemoveKey(sourceObj, sourceKeys, "equippable", false);    // For NON-EQUIP types.
                     foreach (var key in sourceKeys)
                     {
                         if (!compareObj.ContainsKey(key) && CheckFirstReportForID(id, key))
@@ -384,6 +391,14 @@ namespace ATT
                                     missingKeysLine.Append(", ");
                                 missingKeysLine.Append(key);
                                 comma = true;
+                                // special cases where a missing key SHOULD remove the existing Source key
+                                switch(key)
+                                {
+                                    case "b":
+                                        RemovedObjectKey(sourceDB, id, key);
+                                        RemovedObjectKey(diffDB, id, key);
+                                        break;
+                                }
                             }
                             CaptureIDDifference(id, compareDBName, "- EMPTY: " + missingKeysLine.ToString());
                         }
@@ -417,6 +432,22 @@ namespace ATT
             }
 
             return new Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>>(diffDB, missDB);
+        }
+
+        /// <summary>
+        /// Removes a key from the set of keys if the Dictionary contains the provided value for that key
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="compareObj"></param>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        private static void RemoveKey(Dictionary<string, object> dict, List<string> keys, string key, object val)
+        {
+            if (dict == null || !dict.ContainsKey(key) || dict[key] != val)
+                return;
+
+            // dict contains a key with this value, so remove it from the keys list
+            keys.Remove(key);
         }
 
         /// <summary>
@@ -458,37 +489,51 @@ namespace ATT
         {
             if (OverrideKeys.ContainsKey(key))
                 return sourceObj.Remove(OverrideKeys[key]);
+
             return false;
         }
 
         /// <summary>
         /// Checks whether the sourceDB contains the sourceObj with the specified key and removes it if so, returning true
         /// </summary>
-        /// <param name="sourceDB"></param>
+        /// <param name="db"></param>
         /// <param name="id"></param>
         /// <param name="key"></param>
-        private static bool CheckOverrideKeys(Dictionary<int, Dictionary<string, object>> sourceDB, int id, string key)
+        private static bool CheckOverrideKeys(Dictionary<int, Dictionary<string, object>> db, int id, string key)
         {
-            if (sourceDB.TryGetValue(id, out Dictionary<string, object> sourceObj))
+            if (db.TryGetValue(id, out Dictionary<string, object> sourceObj))
                 return CheckOverrideKeys(sourceObj, key);
+
             return false;
         }
 
-        private static void NewObject(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<int, Dictionary<string, object>> compareDB)
+        private static void NewObject(Dictionary<int, Dictionary<string, object>> db, int id, Dictionary<int, Dictionary<string, object>> compareDB)
         {
-            if (!sourceDB.ContainsKey(id))
-            {
-                sourceDB.Add(id, compareDB[id]);
-            }
+            if (!db.ContainsKey(id))
+                db.Add(id, compareDB[id]);
         }
 
-        private static void DiffObjectKey(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<string, object> compareObj, string key)
+        private static void DiffObjectKey(Dictionary<int, Dictionary<string, object>> db, int id, Dictionary<string, object> compareObj, string key)
         {
-            if (!sourceDB.TryGetValue(id, out Dictionary<string, object> sourceObj))
-            {
-                sourceDB[id] = sourceObj = new Dictionary<string, object>();
-            }
+            if (!db.TryGetValue(id, out Dictionary<string, object> sourceObj))
+                db[id] = sourceObj = new Dictionary<string, object>();
+
             sourceObj[key] = compareObj[key];
+        }
+
+        /// <summary>
+        /// Removes the specified Key from the Id object in the DB
+        /// </summary>
+        /// <param name="db"></param>
+        /// <param name="id"></param>
+        /// <param name="key"></param>
+        private static void RemovedObjectKey(Dictionary<int, Dictionary<string, object>> db, int id, string key)
+        {
+            if (!db.TryGetValue(id, out Dictionary<string, object> sourceObj))
+                db[id] = sourceObj = new Dictionary<string, object>();
+
+            // specifically set to NULL so that the DIFF DB can include it
+            sourceObj[key] = null;
         }
 
         private static bool CompareValues(object oldValue, object newValue)

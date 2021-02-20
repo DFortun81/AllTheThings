@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						}),
 						i(151345, {	-- Gently Shaken Gift
 							["questID"] = 43364,
-							["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+							["description"] = "Gift from 2017.  You will receive only one faction's Hearthstation.  In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(151344, {	-- Hearthstation [H]
@@ -120,11 +120,19 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						}),
 						i(172225, {	-- Gently Shaken Gift
-							["questID"] = 57643,
 							["description"] = "Gift from 2019.",
+							["questID"] = 57643,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(172219)),	-- Wild Holly
 								un(29, i(128768)),	-- Candy Cane
+							},
+						}),
+						i(178529, {	-- Gently Shaken Gift
+							["description"] = "Gift from 2020.",
+							["questID"] = 60238,
+							["g"] = {
+								un(29, i(178530)),	-- Wreath-A-Rang
 							},
 						}),
 					},
@@ -271,12 +279,20 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						}),
 						i(172224, {	-- Winter Veil Gift
-							["questID"] = 57642,
 							["description"] = "Gift from 2019.",
+							["questID"] = 57642,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(13927),	-- Crashin' Splashin'
 								un(29, i(172223)),	-- Crashin' Thrashin' Battleship [A]
 								un(29, i(172222)),	-- Crashin' Thrashin' Juggernaught [H]
+							},
+						}),
+						i(178528, {	-- Winter Veil Gift
+							["description"] = "Gift from 2020.",
+							["questID"] = 60239,	-- A Winter Veil Gift
+							["g"] = {
+								un(29, i(178533)),	-- Shaking Pet Carrier
 							},
 						}),
 					},

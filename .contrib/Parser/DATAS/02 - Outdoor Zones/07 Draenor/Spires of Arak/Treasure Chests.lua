@@ -107,65 +107,55 @@ _.Zones =
 				}),
 				o(234618, {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36381,
 					["coord"] = { 61.1, 55.3, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					["model"] = 145256,
+					["modelScale"] = 0.4,
 					["g"] = {
 						i(118240),	-- Anzu's Scything Talon
 					},
 				}),
 				n(86961,  {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36386,
 					["coord"] = { 48.6, 44.4, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
-					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
+					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118237),	-- Anzu's Malice
 					},
 				}),
 				n(86941,  {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36388,
 					["coord"] = { 42.42, 26.69, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
-					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
+					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118242),	-- Anzu's Scorn
 					},
 				}),
 				n(86962,  {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36389,
 					["coord"] = { 46.9, 40.46, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
-					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
+					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118238),	-- Anzu's Reach
 					},
 				}),
 				n(86953,  {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36390,
 					["coord"] = { 57.01, 78.93, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
-					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
+					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118241),	-- Anzu's Piercing Talon
 					},
 				}),
 				n(86956,  {	-- Gift of Anzu
 					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
-					["modelScale"] = 4.5,
 					["questID"] = 36392,
 					["coord"] = { 52.0, 19.7, 542 },
-					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
-					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
+					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118239),	-- Anzu's Stoicism
 					},
@@ -195,7 +185,7 @@ _.Zones =
 				o(234147, {	-- Outcast's Belongings
 					["questID"] = 36243,
 					["coord"] = { 36.8, 17.2, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6AK_Outcasts_Basket01.mdx",
+					["model"] = 974207,
 					["g"] = {
 						-- Weapons
 						i(116593),	-- Bloodmane Axe
@@ -323,7 +313,7 @@ _.Zones =
 				o(235172, {	-- Outcast's Belongings
 					["questID"] = 36447,
 					["coord"] = { 42.1, 21.7, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6AK_Outcasts_Basket01.mdx",
+					["model"] = 974207,
 					["g"] = {
 						-- Weapons
 						i(116593),	-- Bloodmane Axe

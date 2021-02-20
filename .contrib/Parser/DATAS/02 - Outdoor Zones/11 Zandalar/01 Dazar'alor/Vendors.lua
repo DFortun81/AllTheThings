@@ -117,7 +117,7 @@ _.Zones =
 				n(161067, {	-- Captain Kitt
 					["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
 					["coord"] = { 44.4, 94.3, 1165 },
-					--["races"] = HORDE_ONLY,  -- Commenting out for now, this causes problems with the vendor tooltip for horde/alliance.
+					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["modID"] = 0}, {
 						n(-11, {	-- Common Box Drops
 							n(-160, {	-- Mounts

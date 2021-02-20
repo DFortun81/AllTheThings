@@ -10,7 +10,7 @@ _.Zones =
 				q(58163, {	-- A Desperate Solution
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "o", 349515 },	-- Battered Journal
-					["coord"] = { 70.3, 32.5, 1565 },
+					["coord"] = { 72.2, 33.9, 1565 },
 					["g"] = {
 						i(183851),	-- Withergrove Shardling
 					},
@@ -126,6 +126,11 @@ _.Zones =
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, 1565 },
 				}),
+				q(62458, {	-- De Other Side
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
+					["coord"] = { 64.8, 19.7, 1565 },
+				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["sourceQuests"] = { 57824 },	-- Collection Day
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
@@ -151,7 +156,7 @@ _.Zones =
 				}),
 				q(58473, {	-- Echoes of Tirna Noch
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
-					["providers"] = { "n", 160963 },	-- Ara'lon
+					["provider"] = { "n", 160963 },	-- Ara'lon
 					["coord"] = { 60.1, 52.8, 1565 },
 				}),
 				q(58593, {	-- End of the Dream
@@ -436,6 +441,11 @@ _.Zones =
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, 1565 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(60567, {	-- Shooing Wildlife
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
@@ -618,7 +628,7 @@ _.Zones =
 						60647,	-- Recovering the Animacones
 						60648,	-- Survivors of Heartwood Grove
 					},
-					["provider"] = { "n", 169686 },	-- Niya
+					["provider"] = { "n", 169868 },	-- Niya
 				}),
 				q(60062, {	-- The Shattered Harp
 					["sourceQuests"] = { 57661 },	-- Silk Shortage
@@ -652,8 +662,7 @@ _.Zones =
 					["coord"] = { 48.0, 24.3, 1565 },
 				}),
 				q(62371, {	-- Tirna Scithe: A Warning Silence
-				--	TODO: verify SQs
-					["sourceQuests"] = { 58723 },	-- The Court of Winter
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 168032 },	-- Flwngyrr
 					["coord"] = { 48.3, 50.5, 1565 },
 					["maps"] = { 1669 },	-- Mists of Tirna Scithe
@@ -751,7 +760,7 @@ _.Zones =
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
-					["provider"] = { "n", 170175 },	-- Featherlight
+					["provider"] = { "n", 170324 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, 1565 },
 				}),
 				q(59656, {	-- Well, Tell the Lady
@@ -804,6 +813,10 @@ _.Zones =
 				
 				-- Bonus Objectives
 				q(62773, {	-- Dreamshrine Basin (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
+				q(62720, {	-- The Fallen Tree (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),

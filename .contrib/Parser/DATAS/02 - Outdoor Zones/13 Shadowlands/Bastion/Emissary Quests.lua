@@ -14,6 +14,9 @@ _.Zones =
 					["lvl"] = { 60 },
 					["g"] = {
 						i(180647, {	-- Ascended Supplies
+							i(184399),	-- Larion Cub
+							i(184396),	-- Malfunctioning Goliath Gauntlet
+							i(184435),	-- Mark of Purity
 						}),
 					},
 				}),

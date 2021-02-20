@@ -12,17 +12,21 @@ _.Zones =
 					["provider"] = { "n", 158281 },	-- Greeter Mnemis
 					["coord"] = { 41.9, 78.0, 1533 },
 				}),
+				q(59554, {	-- A Fine Journey
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["isBreadcrumb"] = true,
+					["provider"] = { "o", 348558 },	-- Notice
+					["coord"] = { 51.9, 47.7, 1533 },
+				}),
 				q(57711, {	-- A Forge Gone Cold
 					["sourceQuests"] = { 57710 },	-- A Life of Service
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, 1533 },
 				}),
 				q(59674, {	-- A Friendly Rivalry
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						63068,	-- Settling Disputes
-					},
+					["altQuests"] = { 63068 },	-- Settling Disputes
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 57.4, 54.2, 1533 },
 				}),
@@ -234,6 +238,11 @@ _.Zones =
 						i(175718),	-- Ascended Defender's Crest
 					},
 				}),
+				q(60660, {	-- Flight Test
+					["sourceQuests"] = { 59263 },	-- Feathers of Flight
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+				}),
 				q(60056, {	-- Follow the Path
 					["sourceQuests"] = { 60055 },	-- A Time for Courage
 					["provider"] = { "n", 167583 },	-- Disciple Apolon
@@ -244,10 +253,18 @@ _.Zones =
 					["coord"] = { 53.2, 46.4, 1533 },
 				}),
 				q(57529, {	-- Garden in Turmoil
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 158005 },	-- Tamesis
 					["coord"] = { 52.3, 61.3, 1533 },
+				}),
+				q(59865, {	-- Glimmerflight
+					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.82, 42.73, 1533 },
+					["g"] = {
+						i(177951),	-- Glimmerflies on Strings (TOY!)
+					},
 				}),
 				q(59196, {	-- Go in Service
 					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
@@ -255,26 +272,25 @@ _.Zones =
 					["coord"] = { 54.4, 64.2, 1533 },
 				}),
 				q(62718, {	-- Hero's Rest
-					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
-						57715,	-- The Archon's Answer (Deathknight)
-						60217,	-- The Archon's Answer (Demonhunter)
-						60218,	-- The Archon's Answer (Druid)
-						60219,	-- The Archon's Answer (Hunter)
-						60220,	-- The Archon's Answer (Mage)
-						60221,	-- The Archon's Answer (Monk)
-						60222,	-- The Archon's Answer (Paladin)
-						60223,	-- The Archon's Answer (Priest)
-						60224,	-- The Archon's Answer (Rogue)
-						60225,	-- The Archon's Answer (Shaman)
-						60226,	-- The Archon's Answer (Warlock)
-						60229,	-- The Archon's Answer (Warror)
-					},
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["isBreadcrumb"] = true,
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
 				}),
 				q(57860, {	-- How to Become Forsworn
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 36.6, 37.6, 1533 },
+				}),
+				q(59311, {	-- How to Catch a Glimmerfly
+					["sourceQuests"] = {
+						59348,	-- More Wings!
+						59351,	-- Strings and Things
+					},
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+					["g"] = {
+						i(180839)	-- Helpful Glimmerfly (PET!)
+					},
 				}),
 				q(58979, {	-- I MADE You!
 					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
@@ -293,7 +309,7 @@ _.Zones =
 					["coord"] = { 55.5, 42.0, 1533 },
 				}),
 				q(57549, {	-- In Agthia's Memory
-				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
+					["sourceQuests"] = { 59554 },	-- A Fine Journey
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
 				}),
@@ -358,6 +374,11 @@ _.Zones =
 					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 47.8, 73.2, 1533 },
+				}),
+				q(59348, {	-- More Wings!
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(60057, {	-- Necrotic Wake: A Paragon's Plight
 					["sourceQuests"] = { 60055 },	-- A Time For Courage
@@ -477,6 +498,11 @@ _.Zones =
 					["provider"] = { "n", 167134 },	-- Thanikos
 					["coord"] = { 40.5, 55.2, 1533 },
 				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+				}),
 				q(57555, {	-- Shadow's Fall
 					["sourceQuests"] = {
 						57552,	-- Warriors of the Void
@@ -503,6 +529,11 @@ _.Zones =
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, 1533 },
+				}),
+				q(59351, {	-- Strings and Things
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(58185, {	-- Success Without Soul
 					["sourceQuests"] = { 58042 },	-- On Larion Wings
@@ -615,8 +646,8 @@ _.Zones =
 				}),
 				q(57709, {	-- The Aspirant's Crucible
 					["sourceQuests"] = {
-						57676,	-- The Things That Haunt Us
 						57677,	-- A Soulbind In Need
+						57676,	-- The Things That Haunt Us
 					},
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
@@ -710,8 +741,8 @@ _.Zones =
 				}),
 				q(60466, {	-- The Old Ways
 					["sourceQuests"] = {
+						57677,	-- A Soulbind in Need
 						57676,	-- The Things That Haunt Us
-						57677,	-- A Soulbind In Need
 					},
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
@@ -794,7 +825,7 @@ _.Zones =
 					["coord"] = { 42.2, 78.1, 1533 },
 				}),
 				q(60316, {	-- WANTED: Altered Sentinel
-					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
+					["sourceQuests"] = {
 						57715,	-- The Archon's Answer (Deathknight)
 						60217,	-- The Archon's Answer (Demonhunter)
 						60218,	-- The Archon's Answer (Druid)
@@ -812,7 +843,7 @@ _.Zones =
 					["coord"] = { 49.1, 72.8, 1533 },
 				}),
 				q(60366, {	-- WANTED: Darkwing
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -820,7 +851,7 @@ _.Zones =
 					},
 				}),
 				q(60315, {	-- WANTED: Gorgebeak
-				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -844,7 +875,8 @@ _.Zones =
 					["coord"] = { 54.7, 41.1, 1533 },
 				}),
 				q(59774, {	-- Welcome to Eternity
-					["sourceQuests"] = { 59773 },	-- Seek the Ascended
+				--	commenting SQs for the first quest in each SL zone to avoid chains that are like...hundreds of quests long
+				--	["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 166227 },	-- Kleia
 					["coord"] = { 37.3, 76.4, 1533 },
 				}),
@@ -890,85 +922,6 @@ _.Zones =
 					["coord"] = { 52.8, 47.8, 1533 },
 				}),
 
-
-
-
-
-
-				currency(1829, {		-- Renown-Kyrian
-					q(61697, {	-- A New Age
-						["provider"] = { "n", 174937 },	-- Adjutant Galos
-						["g"] = {
-							i(180766),	-- Eternal Phalynx of Courage
-							i(180633),	-- Grubby
-						},
-					}),
-					-- Phaetus, Genesis of Aeons
-					q(58181, {	-- Building the Base
-						["provider"] = { "n", 160280 },	-- Mikanikos <Forgelite Prime>
-						["g"] = {
-							i(180763),		-- Phalynx of Courage
-						},
-					}),
-				}),
-				-- The Temple of Courage
-				-- End of Zone Achievement Quests
-
-				-- An Act of Service
-				q(59554, {	-- A Fine Journey
-					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
-					["coord"] = { 51.5, 47.1, 1533 },
-				}),
-				q(60466, {	-- The Old Ways
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-				}),
-				q(62714, {	-- A Gift for An Acolyte
-					["sourceQuests"] = { 60466 },	-- The Old Ways
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-				}),
-				q(62715, {	-- More Than A Gift
-					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
-					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
-					["coord"] = { 53.8, 73.8, 1533 },
-				}),
-				-- Glimmerfly toy/pet questline
-				q(60660, {	-- Flight Test
-					["sourceQuests"] = { 59263 },	-- Feathers of Flight
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
-				q(59348, {	-- More Wings!
-					["sourceQuests"] = { 60660 },	-- Flight Test
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
-				q(59351, {	-- Strings and Things
-					["sourceQuests"] = { 60660 },	-- Flight Test
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-				}),
-				q(59311, {	-- How to Catch a Glimmerfly
-					["sourceQuests"] = {
-						59348,	-- More Wings!
-						59351,	-- Strings and Things
-					},
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.8, 42.7, 1533 },
-					["g"] = {
-						i(180839)	-- Helpful Glimmerfly
-					},
-				}),
-				q(59865, {	-- Glimmerflight
-					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-					["g"] = {
-						i(177951),	-- Glimmerflies on Strings
-					},
-				}),
-				
 				-- Bonus Objectives
 				q(62737, {	-- Aspirant For a Day (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

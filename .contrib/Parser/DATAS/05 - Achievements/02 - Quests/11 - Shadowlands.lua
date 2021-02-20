@@ -8,13 +8,38 @@ _.Achievements =
 		n(-10100, {	-- Shadowlands
 			ach(14672, {	-- A Bit of This, A Bit of That
 			--	["_quests"] = { 60475 },	-- We'll Workshop It
+				["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies, and talking to all 6 NPCs.",
 				["g"] = {
-					crit(1),		-- Faerie Pomander
-					crit(2),		-- Slumberweb
-					crit(3),		-- Vorkai War Paint
-					crit(4),		-- Gorm Whisperer
-					crit(5),		-- Tirnenn Resilience
-					crit(6),		-- Finnan's Luck
+					crit(1, {	-- Faerie Pomander
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 158345 },	-- Lady of the Falls
+						["coord"] = { 51.1, 33.9, 1565 },
+					}),
+					crit(2, {	-- Slumberweb
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165704 },	-- Elder Gwenna
+						["coord"] = { 50.4, 33.0, 1565 },
+					}),
+					crit(3, {	-- Vorkai War Paint
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 158519 },	-- Sorcha
+						["coord"] = { 51.1, 33.7, 1565 },
+					}),
+					crit(4, {	-- Gorm Whisperer
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165382 },	-- Gormsmith Cavina
+						["coord"] = { 51.6, 34.0, 1565 },
+					}),
+					crit(5, {	-- Tirnenn Resilience
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165705 },	-- Groonoomcrooek
+						["coord"] = { 51.8, 32.0, 1565 },
+					}),
+					crit(6, {	-- Finnan's Luck
+						["_quests"] = { 60475 },	-- We'll Workshop It
+						["crs"] = { 165703 },	-- Elder Finnan
+						["coord"] = { 51.7, 34.0, 1565 },
+					}),
 				},
 			}),
 			ach(14741, {	-- Aerial Ace
@@ -139,14 +164,30 @@ _.Achievements =
 			ach(14737, {	-- What Bastion Remembered
 			--	["_quests"] = { 59717 },	-- Things Remembered
 				["g"] = {
-					crit(1),		-- Eridia, Hand of Purity
-					crit(2),		-- Kalisthene
-					crit(3),		-- Chyrus, Paragon of Humility
-					crit(4),		-- Kleia
-					crit(5),		-- Pelagos
-					crit(6),		-- Forgelite Sophone
-					crit(7),		-- Uther
-					crit(8),		-- Mikanikos
+					crit(1, {	-- Eridia, Hand of Purity
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(2, {	-- Kalisthene
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(3, {	-- Chyrus, Paragon of Humility
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(4, {	-- Kleia
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(5, {	-- Pelagos
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(6, {	-- Forgelite Sophone
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(7, {	-- Uther
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
+					crit(8, {	-- Mikanikos
+						["_quests"] = { 59717, 59705 },	-- Things Remembered
+					}),
 				},
 			}),
 		}),

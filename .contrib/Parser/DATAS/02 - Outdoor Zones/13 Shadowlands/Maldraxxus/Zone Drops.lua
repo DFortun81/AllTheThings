@@ -58,6 +58,26 @@ _.Zones =
 				i(178946),	-- Gore-Smudged Sword
 				i(178952),	-- Gore-Smudged Warglaive
 				i(176798),	-- Larion Claw
+				i(183691, {	-- Mucosal Pigment
+					["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+					["crs"] = {
+						165014,	-- Animated Plague
+						161599,	-- Bubbling Sclerosis
+						165027,	-- Burning Extract
+						162732,	-- Clotting Mass
+						157509,	-- Compressed Plague
+						171745,	-- Congealed Plague
+						167935,	-- Contagious Droplet
+						166358,	-- Green Slime
+						160048,	-- Plaguedoused Remnant
+						166335,	-- Slime Giant
+					},
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 14763,	-- Crypt Couture
+						}),
+					},
+				}),
 				i(176987),	-- Ossein Scale Belt
 				i(176991),	-- Ossein Scale Cuffs
 				i(176973),	-- Ossein Scale Gauntlets
@@ -66,6 +86,9 @@ _.Zones =
 				i(176979),	-- Ossein Scale Leggings
 				i(176968),	-- Ossein Scale Sabatons
 				i(176984),	-- Ossein Scale Spaulders
+				i(183124, {	-- Simple Tome of Bone-Binding
+					["classes"] = { HUNTER },
+				}),
 				i(178947),	-- Steeljaw Crossbow
 				i(178951),	-- Vellum-Bound Tome
 				i(176988),	-- Warflesh Belt

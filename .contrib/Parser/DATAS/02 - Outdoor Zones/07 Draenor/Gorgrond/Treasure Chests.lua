@@ -837,7 +837,7 @@ _.Zones =
 				o(234054, {	-- Warm Goren Egg
 					["modelScale"] = 2,
 					["questID"] = 36203,
-					["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
+					["model"] = 974969,
 					["coord"] = { 48.9, 47.3, 543 },
 					["g"] = {
 						i(118705, {	-- Warm Goren Egg

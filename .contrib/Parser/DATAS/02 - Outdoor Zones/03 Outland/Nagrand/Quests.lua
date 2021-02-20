@@ -8,7 +8,7 @@ _.Zones =
 		m(107, {	-- Nagrand (Outland)
 			n(QUESTS, {
 				faction(932, {	-- The Aldor
-					["collectible"] = false,
+					["collectible"] = false,	-- Collectible in Shattrath
 					["g"] = {
 						n(QUESTS, {
 							q(10669, {	-- Against All Odds
@@ -52,7 +52,7 @@ _.Zones =
 					},
 				}),
 				faction(934,  {	-- The Scryers
-					["collectible"] = false,
+					["collectible"] = false,	-- Collectible in Shattrath
 					["g"] = {
 						n(QUESTS, {
 							q(10669, {	-- Against All Odds

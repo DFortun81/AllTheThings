@@ -101,4 +101,10 @@ profession(TAILORING, {
 			}),
 		},
 	}),
+	ach(5480, {	-- Preparing for Disaster
+		["requireSkill"] = TAILORING,
+	}),
+	ach(137, {	-- Stocking Up
+		["requireSkill"] = TAILORING,
+	}),
 });

@@ -43,6 +43,7 @@ _.Zones =
 							["cost"] = 17650000,	-- 1,765g
 						}),
 						i(183134, {	-- Illusion: Hunt's Favor
+							["questID"] = 62965,
 							["cost"] = 12500000,	-- 1,250g
 						}),
 						i(183242, {	-- Memory of Eonar
@@ -101,10 +102,12 @@ _.Zones =
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182175, {	-- Moose Soul
+								["customCollect"] = { "SL_COV_NFA" },
 								["questID"] = 62430,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 							i(181304, {	-- Winterwoven Branches
+								["customCollect"] = { "SL_COV_NFA" },
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
 						}),

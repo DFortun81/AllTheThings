@@ -306,6 +306,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = INSCRIPTION,
 					}),
+					q(52409, {	-- Work Order: Viridium
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 				}),
 			}),
 		}),

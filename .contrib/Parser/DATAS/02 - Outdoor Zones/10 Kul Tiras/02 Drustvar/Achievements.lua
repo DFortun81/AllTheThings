@@ -209,6 +209,221 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(13279, {	-- Family Battler
+					["collectible"] = false,
+					["g"] = {
+						ach(13280, {	-- Hobbyist Aquarist
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13270, {	-- Beast Mode
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13271, {	-- Critters with Huge Teeth
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13272, {	-- Dragons Make Everything Better
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13273, {	-- Element of Success
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13274, {	-- Fun With Flying
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13281, {	-- Human Resources
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13275, {	-- Magician's Secrets
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13277, {	-- Machine Learning
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+						ach(13278, {	-- Not Quite Dead Yet
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Captain Hermes
+									["creatureID"] = 139489,	-- Captain Hermes
+									["coord"] = { 21.4, 66.4, 896 },
+								}),
+								crit(3, {	-- Dilbert McClint
+									["creatureID"] = 140461,	-- Dilbert McClint
+									["coord"] = { 63.6, 59.6, 896 },
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
+									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+									["coord"] = { 38.1, 38.5, 896 },
+								}),
+								crit(5, {	-- Michael Skarn
+									["creatureID"] = 140880,	-- Michael Skarn
+									["coord"] = { 61.0, 17.6, 896 },
+								}),
+							},
+						}),
+					},
+				}),
 				ach(13087, {	-- Sausage Sampler
 					["description"] = "Can be completed as Horde by purchasing items on the AH.",
 					["g"] = {

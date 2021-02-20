@@ -20,8 +20,193 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14769, {	-- Bat!
+					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
+						{ 25.1, 37.5, 1525 },
+						{ 35.0, 35.0, 1525 },
+						{ 56.2, 62.2, 1525 },
+						{ 60.4, 61.1, 1525 },
+						{ 64.0, 62.0, 1525 },
+					},
+					["crs"] = { 161015 },	-- Dredbat Statue
+				}),
 				ach(14272, {	-- Best Bud With Benefits
 					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
+				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(1, {	-- Sylla
+									["coord"] = { 39.8, 52.4, 1525 },
+									["cr"] = 173315,	-- Sylla
+								}),
+								crit(2, {	-- Eyegor
+									["coord"] = { 67.6, 66.0, 1525 },
+									["cr"] = 173324,	-- Eyegor
+								}),
+								crit(3,  {	-- Addius the Tormentor
+									["coord"] = { 61.2, 41.0, 1525 },
+									["cr"] = 173331,	-- Addius the Tormentor
+								}),
+							},
+						}),
+					},
 				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
@@ -95,6 +280,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14512),		-- Tour of Duty: Revendreth
 				ach(14314, {	-- Treasures of Revendreth
 					crit(1, {	-- Lost Quill
 						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
@@ -126,12 +312,12 @@ _.Zones =
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless
-						--["objectID"] = ,	--
-						--["coord"] = { 52.9, 37.2, 1525 },
-						--["questID"] = 61065,
-						--["g"] = {
-						--	i(182689),	-- Rapier of the Fearless
-						--},
+						["questID"] = 62156,
+						["coord"] = { 80.0, 37.1, 1525 },
+						["crs"] = { 173603 },	-- Rapier of the Fearless
+						["g"] = {
+							i(182689),	-- Rapier of the Fearless
+						},
 					}),
 					crit(5, {	-- Vyrtha's Dredglaive
 						["objectID"] = 357584,	-- Vyrtha's Dredglaive
@@ -223,6 +409,7 @@ _.Zones =
 						["coord"] = { 75.2, 56.1, 1525 },
 						["crs"] = { 166680 },	-- Greedy Soul
 						["g"] = {
+							i(179390),	-- Tantalizingly Large Golden Plum (grey item but causes a permanent debuff while held)
 						},
 					}),
 					crit(16, {	-- Abandoned Curios
@@ -235,6 +422,24 @@ _.Zones =
 							i(182744),	-- Ornate Belt Buckle
 						},
 					}),
+				}),
+				ach(14770, {	-- What We Ride in the Shadows
+					["description"] = "Each ride costs 5 Infused Rubies.  Stay on the Sinrunner until you get credit for the ride.",
+					["crs"] = { 174032 },	-- Castle Sinrunner
+					["g"] = {
+						crit(1, {	-- Old Gate
+							["coord"] = { 60.3, 62.6, 1525 }
+						}),
+						crit(2, {	-- Hole in the Wall
+							["coord"] = { 41.2, 47.2, 1525 },
+						}),
+						crit(3, {	-- Dominance Gate Battlements
+							["coord"] = { 41.2, 47.2, 1525 },
+						}),
+						crit(4, {	-- Darkhaven
+							["coord"] = { 69.6, 58.0, 1525 },
+						}),
+					},
 				}),
 			}),
 		}),

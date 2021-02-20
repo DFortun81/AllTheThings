@@ -10,9 +10,14 @@ _.Zones =
 				ach(12891, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Kul Tourist
-						crit(2),	-- The Pride of Kul Tiras
-						crit(3),	-- A Nation United
+						crit(1),		-- Loremaster of Kul Tiras
+						ach(12997, {	-- The Pride of Kul Tiras
+							["sourceQuests"] = { 51445 },	-- Thros, the Blighted Lands
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(3, {	-- A Nation United
+							["sourceQuests"] = { 52151 },	-- A Nation United
+						}),
 					},
 				}),
 				ach(12759, {	-- Baiting the Enemy
@@ -56,9 +61,6 @@ _.Zones =
 							},
 						}),
 					},
-				}),
-				ach(12997, {	-- The Pride of Kul Tiras
-					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here

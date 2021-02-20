@@ -582,6 +582,12 @@ _.Zones =
 						i(155235),	-- Vineshaper's Grasp
 					},
 				}),
+				q(52512, {	-- Fate's End
+					["sourceQuests"] = { 52511 },	-- Opening the Way
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 21.3, 69.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50493, {	-- Fetching Wrex
 					["provider"] = { "n", 134028 },	-- Sam Robinson
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
@@ -890,6 +896,12 @@ _.Zones =
 					["coord"] = { 70.2, 36.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52513, {	-- Lost in Darkness
+					["sourceQuests"] = { 52512 },	-- Fate's End
+					["provider"] = { "n", 141223 },
+					["coord"] = { 6.64, 31.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(49791, {	-- Lost, Not Forgotten
 					["sourceQuests"] = {
 						49704,	-- Haywire Harvesters
@@ -1007,6 +1019,12 @@ _.Zones =
 				q(56107, {	-- One of the Hive
 					["u"] = NEVER_IMPLEMENTED, -- placeholder replaced with tracking quest
 				}),
+				q(52511, {	-- Opening the Way
+					["sourceQuests"] = { 52510 },	-- Shrine of the Storm: The Missing Ritual
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 21.3, 69.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50815, {	-- Orcs Versus Humans
 					["u"] = NEVER_IMPLEMENTED,
 				}),
@@ -1114,6 +1132,12 @@ _.Zones =
 					["coord"] = { 66.3, 56.6, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(52508, {	-- Ritual Effects
+					["sourceQuests"] = { 52453 },	-- A Forlorn Hope
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 70.3, 36.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50816, {	-- Roarke's Missing
 					["u"] = NEVER_IMPLEMENTED,
 				}),
@@ -1168,6 +1192,15 @@ _.Zones =
 				}),
 				q(49743, {	-- Shoot First, Questions Later
 					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(52510, {	-- Shrine of the Storm: The Missing Ritual
+					["sourceQuests"] = {
+						52508,	-- Ritual Effects
+						52509,	-- The Strength of the Storm
+					},
+					["provider"] = { "n", 137691 },	-- Brother Pike
+					["coord"] = { 78.3, 28.8, 942 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50825, {	-- Shrine of the Storm: Whispers Below
 					["sourceQuests"] = { 50824 },	-- Storm's End
@@ -1385,10 +1418,16 @@ _.Zones =
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
+					--	azerite
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
 						i(163862),	-- Bartered Vrykul Hood
 						i(163865),	-- Bartered Vrykul Warhelm
+					--	azewrong
+						i(180028),	-- Bartered Vrykul Cowl
+						i(180029),	-- Bartered Vrykul Facemask
+						i(180027),	-- Bartered Vrykul Hood
+						i(180030),	-- Bartered Vrykul Warhelm
 					},
 				}),
 				q(50743, {	-- The Immediate Problem
@@ -1453,6 +1492,12 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["provider"] = { "n", 135534 },	-- Brother Pike
 					["coord"] = { 63.1, 43.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52509, {	-- The Strength of the Storm
+					["sourceQuests"] = { 52453 },	-- A Forlorn Hope
+					["provider"] = { "n", 141223 },	-- Brother Pike
+					["coord"] = { 70.3, 36.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56111, {	-- The Usurper

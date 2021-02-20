@@ -39,7 +39,7 @@ _.PetJournal =
 		p(1540),			-- Brilliant Spore
 		p(2442),			-- Bumbles
 		un(BLIZZARD_BALANCE, p(2185)),	-- Cap'n Crackers
-		un(BLIZZARD_BALANCE, p(316)),		-- Cenarion Hatchling
+		un(REMOVED_FROM_GAME, p(316)),	-- Cenarion Hatchling
 		p(1586),			-- Cerulean Moth
 		p(1303),			-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),				-- Chi-Ji Kite
@@ -142,6 +142,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
+		p(3064),			-- Larion Cub
 		p(3063),			-- Larion Pouncer
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher

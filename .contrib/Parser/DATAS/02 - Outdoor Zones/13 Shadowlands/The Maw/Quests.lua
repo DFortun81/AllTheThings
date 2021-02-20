@@ -6,12 +6,95 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1543, {	-- The Maw
-		--	TODO: verify mapIDs for quests in the maw.  we had 1648 set to many of them, and that may be for a scenario version of the maw -- it looks like it's normally 1543, so anything that's 1648 may be incorrect
 			n(QUESTS, {
+				n(-229, {	-- Weekly
+					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
+					n(-909, {	-- Hunt: Death Elementals
+						["isWeekly"] = true,
+						["questID"] = 63198,
+						["crs"] = {
+							172962,	-- Tempered Stygia
+						},
+					}),
+					n(-910, {	-- Hunt: Alpha Devourers
+						["isWeekly"] = true,
+						["questID"] = 63199,
+						["crs"] = {
+							175851,	-- Alpha Anima Devourer
+						},
+					}),
+					n(-911, {	-- Hunt: Shadehounds
+						["isWeekly"] = true,
+						["questID"] = 63433,
+						["g"] = {
+							n(174861, {	-- Gorged Shadehound
+								["isWeekly"] = true,
+								["questID"] = 63433,
+								["coord"] = { 53.4, 79.3, 1543 },
+								["g"] = {
+									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
+									i(183057, {	-- Shadehound Armor Plating
+										["questID"] = 63154,	-- Shadehound Armor Plating
+										["g"] = {
+											crit(18, {	-- Shadehound Armor Plating
+												["achievementID"] = 14761,	-- Deciphering Death's Intentions
+											}),
+										},
+									}),
+								},
+							}),
+						},
+					}),
+					n(-912, {	-- Hunt: Winged Soul Eaters
+						["isWeekly"] = true,
+						["questID"] = 63194,
+						["crs"] = {
+							-- TODO: another NPC is part of the final objective
+							173195,	-- Undying Soulbinder
+						},
+					}),
+					n(-904, {	-- Wrath of the Jailer
+						["isWeekly"] = true,
+						["questID"] = 63414,
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								i(183228),	-- Memory of Arcane Pulsars
+								i(184657),	-- Armguard of the Unseen Assailant
+								i(184661),	-- Bracers of the Tenebrous Retinue
+								i(184658),	-- Dread Harrier's Pauldrons
+								i(184660),	-- Dreadguard's Greathelm
+								i(184654),	-- Forgotten Shade's Shawl
+								i(184659),	-- Grips of the Dreadhound Tamer
+								i(184656),	-- Mawsworn Assassin's Doublet
+								i(184655),	-- Sash of the Ethereal Servant
+							}),
+							n(175846, {	-- Dathlane the Herald <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(175877, {	-- Lumisende <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(175881, {	-- Naelcrotix <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+							n(176173, {	-- Zograthos <Torghast Executioner>
+								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+								["isWeekly"] = true,
+								["questID"] = 63414,
+							}),
+						},
+					}),
+				}),
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
+					["coord"] = { 32.9, 66.4, 1543 },
 				}),
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
@@ -34,11 +117,13 @@ _.Zones =
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 23.1, 31.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59752, {	-- A Fractured Blade
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59766, {	-- A Good Axe
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -47,6 +132,7 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(60271, {	-- A Grave Chance
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
@@ -57,6 +143,7 @@ _.Zones =
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
@@ -67,6 +154,21 @@ _.Zones =
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
+				}),
+				q(63166, {	-- A Shadowed Fate
+					["provider"] = { "n", 176029 },	-- Tormented Soul
+					["isDaily"] = true,
+					["coord"] = { 29.7, 20.9, 1543 },
+				}),
+				q(61075, {	-- A Spark of Light
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(60775, {	-- A Suitable Demise
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(63050, {	-- Acquisition: Blazing Ingots
 					["provider"] = { "o", 364932 },	-- Blazing Ingot
@@ -81,17 +183,24 @@ _.Zones =
 				q(63047, {	-- Acquisition: Runeforged Shackles
 					["provider"] = { "o", 364926 },	-- Runeforged Shackles
 					["isDaily"] = true,
-					["coord"] = { 25.6, 24.2, 1648 },
+					["coord"] = { 25.6, 24.2, 1543 },
+				}),
+				q(63072, {	-- Acquisition: Stygic Ore
+					-- ["provider"] = { "o", ? },	-- 
+					["isDaily"] = true,
+					["coord"] = { 48.2, 81.9, 1543 },
 				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(57690, {	-- Cages For All Occasions
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
@@ -108,13 +217,13 @@ _.Zones =
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.2, 55.7, 1648 },
+					["coord"] = { 36.2, 55.7, 1543 },
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
@@ -127,6 +236,7 @@ _.Zones =
 						59766,	-- A Good Axe
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63179, {	-- Drowned and Torn Asunder
 					["provider"] = { "n", 176144 },	-- Disciple Kimonas
@@ -135,7 +245,7 @@ _.Zones =
 				}),
 				q(60622, {	-- Eye of the Scryer
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(62932, {	-- Explore Torghast
@@ -155,6 +265,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 21.5, 41.7, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63045, {	-- Feed Your Soul
 					-- ["sourceQuests"] = {
@@ -162,15 +273,16 @@ _.Zones =
 					-- },
 					["isDaily"] = true,
 					["provider"] = { "n", 175866 },	-- Vengeful Soul
-					["coord"] = { 25.2, 66.6, 1648 },
+					["coord"] = { 25.2, 66.6, 1543 },
 				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62214, {	-- Forces of Perdition
-					-- Think this requires "Tentative" with Ve'nari
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
@@ -182,10 +294,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(63038, {	-- Guaranteed Delivery
@@ -195,16 +308,15 @@ _.Zones =
 					["coord"] = { 30.7, 58.3, 1543 },
 				}),
 				q(63040, {	-- Guaranteed Delivery
-				--	TODO: add literally everything
-				--	["sourceQuests"] = {  },	-- 
-				--	["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
-				--	["coord"] = { , , 1543 },
+					["coord"] = { 30.7, 58.3, 1543 },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.5, 50.7, 1648 },
+					["coord"] = { 36.5, 50.7, 1543 },
 				}),
 				q(62837, {	-- Hopeful News
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
@@ -229,21 +341,39 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
 					["isDaily"] = true,
-					["coord"] = { 24.6, 45.2, 1648 },
+					["coord"] = { 24.6, 45.2, 1543 },
+				}),
+				q(60646, {	-- Misery Business
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 22.2, 33.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
+				}),
+				q(62234, {	-- Power of the Colossus
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(62239, {	-- Rodent Removal
+				--	["provider"] = { "o",  },	-- Tormentor's Pike
+					["isDaily"] = true,
+					["coord"] = { 60.3, 72.1, 1543 },
 				}),
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 170624 },	-- Wilona Thorne
 					["coord"] = { 22.7, 51.9, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(60287, {	-- Rule 1: Have an Escape Plan
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
@@ -271,6 +401,34 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
+				q(60285, {	-- Rule 6: Concealment is Everything
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
+					["sourceQuests"] = {
+						60284,	-- Rule 5: Be Audacious
+						63060,	-- Rule 6 Footnote: Don't Forget Anything
+					},
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
+					["coord"] = { 56.9, 57.5, 1543 },
+				}),
+				q(60158, {	-- Rule 7: Betrayal is Inevitable
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Appreciative reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
 						62905,	-- Back into the Darkness (Venthyr)
@@ -284,6 +442,7 @@ _.Zones =
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(63206, {	-- Soulless Husks
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -293,11 +452,19 @@ _.Zones =
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
+					["maps"] = { 1648 },	-- pre-SL scenario
+				}),
+				q(62461, {	-- Stalking the Warrens
+				--	TODO: may also require 'rule 6 addendum,' not sure
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.6, 1543 },
 				}),
 				q(59770, {	-- Stand as One
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 42.3, 42.1, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
 					["isDaily"] = true,
@@ -312,36 +479,40 @@ _.Zones =
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59959, {	-- The Brand Holds the Key
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
 					["provider"] = { "o", 355798 },	-- Cage
-					["coord"] = { 38.3, 48.5, 1648 },
+					["coord"] = { 38.3, 48.5, 1543 },
 				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, 1543 },
 				}),
 				q(60622, {	-- The Jailer's Share
+				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(61079, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 46.8, 41.6, 1543 },
 				}),
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(59767, {	-- The Path to Salvation
 					["sourceQuests"] = { 60644 },	-- Draw Out the Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 29.4, 44.0, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 				q(61099, {	-- The Search for Baine
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -376,15 +547,19 @@ _.Zones =
 					},
 				}),
 				q(63062, {	-- Torment for the Taking
-					-- TODO: fill in provider and coord fields
-				--	["provider"] = 
+					["provider"] = { "o", 364937 },	-- Phasic Siphoner
 					["isDaily"] = true,
-				--	["coord"] = 
+					["coord"] = { 28.0, 47.0, 1543 },
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
+					["coord"] = { 32.9, 66.4, 1543 },
+				}),
+				q(63069, {	-- What They Know
+					["provider"] = { "o", 364987 },	-- Broker Journal
+					["isDaily"] = true,
+					["coord"] = { 46.4, 62.3, 1543 },
 				}),
 				q(61765, {	-- Words of Warding
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
@@ -399,6 +574,7 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
+					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
 
 
@@ -464,11 +640,13 @@ _.Zones =
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(60134, {	-- A Tauren in Trade
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 
 				-- Dailies
@@ -486,11 +664,7 @@ _.Zones =
 				}),
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well
-				}),
-				-- Bonus Objectives ?? Rares or WQ
-				q(59441, {	-- The Soulsmith
 					["isDaily"] = true,
-					["coord"] = { 36.2, 37.4, 1543 },
 				}),
 			}),
 		}),

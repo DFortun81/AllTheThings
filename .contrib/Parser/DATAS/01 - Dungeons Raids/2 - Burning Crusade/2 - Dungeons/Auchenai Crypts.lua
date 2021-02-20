@@ -109,7 +109,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27869),	-- Soulpriest's Ring of Resolve
 						i(27416),	-- Fetish of the Fallen
 						n(18478, {		-- Avatar of the Fallen
-							["description"] = "This mob will spawn if you slowly DPS Exarch to 30%.",
+							["description"] = "This mob will spawn if you slowly DPS Exarch to 25%.",
 							["groups"] = {
 								i(27876),	-- Will of the Fallen Exarch**
 								i(27877),	-- Draenic Wildstaff**

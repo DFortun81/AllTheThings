@@ -5,7 +5,19 @@
 _.NeverImplemented =
 {
 	n(QUESTS, {
-		q(12338, { -- Candy Bucket
+		q(3064,  {	-- <NYI> <TXT> Pirate Hats
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		q(241,   {	-- <TEST> HEY MISTER WILSON!
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		q(11179, {	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless
+			["u"] = NEVER_IMPLEMENTED,	-- can't find a history of a non-"temporarily deprecated" version of this quest
+		}),
+		q(39991, {	-- Blessing of Cenarius
+			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
+		}),
+		q(12338, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
 			["races"] = ALLIANCE_ONLY,
@@ -14,7 +26,7 @@ _.NeverImplemented =
 				i(37586), -- Handful of Treats
 			},
 		}),
-		q(12375, { -- Candy Bucket
+		q(12375, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
 			["races"] = HORDE_ONLY,
@@ -23,7 +35,7 @@ _.NeverImplemented =
 				i(37586), -- Handful of Treats
 			},
 		}),
-		q(12405, { -- Candy Bucket
+		q(12405, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
 			["u"] = NEVER_IMPLEMENTED,
@@ -31,7 +43,7 @@ _.NeverImplemented =
 				i(37586), -- Handful of Treats
 			},
 		}),
-		q(12410, { -- Candy Bucket
+		q(12410, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
 			["u"] = NEVER_IMPLEMENTED,
@@ -39,7 +51,7 @@ _.NeverImplemented =
 				i(37586), -- Handful of Treats
 			},
 		}),
-		q(28975, { -- Candy Bucket
+		q(28975, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
 			["races"] = HORDE_ONLY,

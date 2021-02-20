@@ -316,3 +316,10 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 
 -- NEUTRAL
 -- 1598, 2163	-- Tortollan Seekers Commendation
+
+-- Shadowlands
+-- TODO: these items are from quest #60256, "A Valuable Find: Halls of Atonement" -- they all say they award rep with "the denizens of [zone]," unsure if that means some can award rep for multiple factions
+i(178593, 2465);	-- Intricate Fae Groveweave (The Wild Hunt)
+i(178592, 2407);	-- Venerable Kyrian Defender (The Ascended)
+i(178590, 2410);	-- Storied Maldraxxian Boneblade (The Undying Army)
+i(178591, 2413);	-- Ancient Venthyr Relic (Court of Harvesters)

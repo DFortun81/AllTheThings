@@ -10,7 +10,7 @@ _.PVP =
 			i(170539),	-- Plunderer Supplies (Nazjartar and maybe Mechagnom)
 		}),
 		n(-488,	{	-- War Chest
-			["description"] = "Contains Dread Aspirant Gear if you are Level 110-119 and Sinister Aspirant Gear at Level 120.",
+			["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 		}),
 	}),
 };

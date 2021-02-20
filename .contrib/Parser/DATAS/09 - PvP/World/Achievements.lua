@@ -19,17 +19,6 @@ _.PVP =
 				crit(9),	-- Tour of Duty: Zuldazar
 				crit(3),	-- War Supplied
 			}),
-			ach(14520, {	-- Deathbringer
-				i(181817),	-- Deathbringer's Flayedwing
-				title(684),	-- Deathbringer
-				crit(1),	-- Covenant Combat
-				crit(2),	-- Impressing Zo'Sorg
-				crit(3),	-- Tour of Duty: Maldraxxus
-				crit(4),	-- Tour of Duty: Ardenweald
-				crit(5),	-- The Many Trials of Zo'Sorg
-				crit(6),	-- Tour of Duty: Bastion
-				crit(7),	-- Tour of Duty: Revendreth
-			})
 		}),
 	}),
 };

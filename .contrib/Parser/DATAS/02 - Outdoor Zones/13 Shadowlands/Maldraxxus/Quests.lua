@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				q(58623, {	-- A Complete Set
 					["sourceQuests"] = { 59994 },	-- Trust Fall
-					["provider"] = { "n", 166664 },	-- Ta'eran
+					["provider"] = { "n", 166806 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 				}),
 				q(57987, {	-- A Deadly Distraction
@@ -57,10 +57,10 @@ _.Zones =
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
 				q(57245, {	-- Ani-Matter Animator
-					-- TODO: is this Necrolord only, or available to anyone?
+				--	TODO: not necrolord only, picked up on a venthyr.  figure out SQs.  API says this is level 53... is it actually 60?
 					["provider"] = { "n", 157076 },	-- Synder Sixfold
-					["coord"] = { 26.3, 42.7, 1536 },
 					["isWeekly"] = true,
+					["coord"] = { 26.3, 42.7, 1536 },
 				}),
 				q(58031, {	-- Applied Science
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
@@ -107,14 +107,27 @@ _.Zones =
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
+				q(57284, {	-- Blade of Blades
+					["sourceQuests"] = { 57245 },	-- Ani-Matter Animator (while on quest or can get an orb from Synder after the quest is completed)
+					["provider"] = { "n", 157168 },	-- Stubborn Animate
+					["isDaily"] = true,
+					["coord"] = { 27.1, 51.7, 1536 },
+				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {
 						57986,	-- A Burden Worth Bearing
 						57987,	-- A Deadly Distraction
 						57985,	-- Give Them a Hand
 					},
-					["provider"] = { "n", 170018 },	-- Secutor Mevix
+					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
+				}),
+				q(57278, {	-- Bring Me Their Heads
+					["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+					-- ["provider"] = { "n",  },	-- TODO
+					["coord"] = { 29.8, 49.7, 1536 },
+					-- ["sourceQuests"] = {  },	-- ?
+					["isDaily"] = true,
 				}),
 				q(62605, {	-- Broker Business
 					-- TODO: verify SQs (multiple reports that this showed up after finishing the 'House of Constructs' criteria.  'Read Between the Lines' is available immediately as soon as the zone unlocks, so this breadcrumb is easy to miss if you explore before you start questing)
@@ -272,7 +285,7 @@ _.Zones =
 					["coord"] = { 39.2, 55.9, 1536 },
 				}),
 				q(59203, {	-- Leave Me a Loan
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["sourceQuests"] = { 59879 },	-- This Thing of Ours
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, 1536 },
 				}),
@@ -355,7 +368,7 @@ _.Zones =
 						62605,	-- Broker Business (breadcrumb?)
 						57425,	-- Land of Opportunity
 					},	
-					["provider"] = { "n", 162615 },	-- Ta'eran
+					["provider"] = { "n", 166657 },	-- Ta'eran
 					["coord"] = { 40.6, 33.0, 1536 },
 				}),
 				q(58621, {	-- Repeat After Me
@@ -365,6 +378,11 @@ _.Zones =
 					["g"] = {
 						i(175707),	-- Signet of the Learned
 					},
+				}),
+				q(51355, {	-- Secretest Fish
+					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
 				}),
 				q(58622, {	-- Secrets Among the Shelves
 					["sourceQuests"] = {
@@ -499,7 +517,7 @@ _.Zones =
 						60181,	-- Trench Warfare
 						60179,	-- Memory of Honor
 					},
-					["provider"] = { "n", 159065 },	-- Baroness Draka
+					["provider"] = { "n", 167535 },	-- Chosen Scrapper
 				}),
 				q(57316, {	-- The Ladder
 					["sourceQuests"] = { 58900 },	-- A Sure Bet
@@ -537,7 +555,7 @@ _.Zones =
 				}),
 				q(57984, {	-- The Ones in Charge
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-					["provider"] = { "n", 160211 },	-- Aspirant Thales
+					["provider"] = { "n", 161060 },	-- Aspirant Survivor
 					["g"] = {
 						i(175477),	-- Deceitful Agent's Wristwraps
 						i(175475),	-- Cruel Executioner's Wristwraps
@@ -578,7 +596,7 @@ _.Zones =
 					},
 				}),
 				q(59879, {	-- This Thing Of Ours
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["sourceQuests"] = { 58090 },	-- Side Effects
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, 1536 },
 				}),
@@ -601,6 +619,8 @@ _.Zones =
 				q(58095, {	-- Theater of Pain: Help Wanted
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
+					["_drop"] = { "g" },	-- drop anima trash
+					["maps"] = { 1683 },	-- Theater of Pain
 				}),
 				q(60181, {	-- Trench Warfare
 					["sourceQuests"] = {	-- TODO: verify SQs.  this didn't pop until i turned in Walk Among Death, but didn't require Memory of Honor
@@ -672,7 +692,7 @@ _.Zones =
 				}),
 				q(59206, {	-- Words of the Primus
 					["sourceQuests"] = { 60737 },	-- The Door to the Unknown
-					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["provider"] = { "n", 164545 },	-- Baroness Draka
 					["coord"] = { 39.1, 49.9, 1536 },
 				}),
 				q(59837, {	-- Working For The Living
@@ -682,38 +702,6 @@ _.Zones =
 					["maps"] = { 1691 },	-- Shattered Grove
 				}),
 
-
-
-
-
-				currency(1832, {		-- Renown-Necrolord
-					-- Renown 5
-					-- House of Eyes
-					q(59555, {	-- Enemy at the Door
-						["sourceQuests"] = { 62448 },	-- Securing the House
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.7, 1698 },
-						["g"] = {
-							i(182077),		-- War-Bred Tauralus
-						},
-					}),
-					-- Renown 22
-					-- House of Rituals
-					q(59020, {	-- The Third Fall of Kel'Thuzad
-						["provider"] = { "n", 168381 },	-- Baroness Draka
-						["coord"] = { 50.3, 67.7, 1536 },
-						["g"] = {
-							i(181822),		-- Armored War-Bred Tauralus
-						},
-					}),
-					q(61761, {	-- The Better Part of Valor
-						--["provider"] = { "n", 168381 },	-- Baroness Draka
-						--["coord"] = { 50.3, 67.7, 1536 },
-						["g"] = {
-							i(183847),		-- Acolyte's Guise
-						},
-					}),
-				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
 

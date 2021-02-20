@@ -16,12 +16,12 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-10067, { 	-- Artifact
-						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = 110,
-						["groups"] = {
-							i(133887, {	-- Luminous Pearl
-								["questID"] = 40960,	-- Luminous Pearl
+					n(-10067, {	-- Artifact
+						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+						["lvl"] = { 45 },
+						["g"] = {
+							q(40960, {	-- Luminous Pearl
+								["provider"] = { "i", 133887 },	-- Luminous Pearl
 							}),
 						},
 					}),

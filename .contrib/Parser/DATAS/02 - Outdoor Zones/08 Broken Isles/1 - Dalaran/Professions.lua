@@ -127,7 +127,7 @@ _.Zones =
 						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
 							["isWorldQuest"] = true,
 							["requireSkill"] = ALCHEMY,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["g"] = {
 								i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
 							},
@@ -321,7 +321,7 @@ _.Zones =
 						q(41638, {	-- Work Order: Leystone Gauntlets
 							["isWorldQuest"] = true,
 							["requireSkill"] = BLACKSMITHING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["g"] = {
 								i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
 							},
@@ -397,7 +397,7 @@ _.Zones =
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = ENCHANTING,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["g"] = {
 								i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
@@ -516,7 +516,7 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = ENGINEERING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
 							["g"] = {
@@ -527,24 +527,20 @@ _.Zones =
 				}),
 				prof(FISHING, {
 					n(-10067, { 	-- Artifact
-						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = 110,
+						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+						["lvl"] = { 45 },
 						["g"] = {
-							{
-								["questID"] = 40961,			-- The Dalaran Fountain
-								["sourceQuest"] = 40960,		-- (Source Quest: Luminous Pearl)
-								["provider"] = { "n", 90417 },					-- Quest Giver: Archmage Khadgar
-								["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
-							},
-							{
-								["questID"] = 41010,			-- Fish Frenzy
-								["sourceQuest"] = 40961,		-- (Source Quest: The Dalaran Fountain)
-								["provider"] = { "n", 102639 },				-- Quest Giver: Archmage Khadgar
+							q(40961, {	-- The Dalaran Fountain
+								["sourceQuest"] = 40960,	-- Luminous Pearl
+								["provider"] = { "n", 90417 },	-- Archmage Khadgar
+								["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
+							}),
+							q(41010, {	-- Fish Frenzy
+								["sourceQuest"] = 40961,	-- The Dalaran Fountain
+								["provider"] = { "n", 102639 },	-- Archmage Khadgar
 								["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
 								["g"] = {
-									{
-										["artifactID"] = 841,	-- Base Skin
-									},
+									artifact(841),	-- Base Skin
 									ach(11725, { 	-- Fisherfriend of the Isles
 										["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 										["providers"] = {
@@ -556,17 +552,13 @@ _.Zones =
 										},
 										["g"] = {
 											i(152583, {	-- Underlight Emerald
-												{
-													["artifactID"] = 988,	-- Fisherfriend of the Isles
-												},
-												{
-													["artifactID"] = 989,	-- Fisherfriend of the Isles
-												},
+												artifact(988),	-- Fisherfriend of the Isles
+												artifact(989),	-- Fisherfriend of the Isles
 											})
 										},
 									}),
 								},
-							},
+							}),
 						},
 					}),
 					faction(1975, {	-- Conjurer Margoss
@@ -576,7 +568,6 @@ _.Zones =
 						["g"] = {
 							q(42911, {	-- Drowned Mana
 								["provider"] = { "n", 108825 },	-- Conjurer Margoss
-								["lvl"] = 100,
 							}),
 							i(138811, {	-- Brinedeep Bottom Feeder (MOUNT!)
 								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
@@ -1002,7 +993,7 @@ _.Zones =
 					}),
 					n(-34, {	-- World Quests
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["requireSkill"] = INSCRIPTION,
 							["g"] = {
@@ -1126,35 +1117,35 @@ _.Zones =
 						q(46134, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(46135, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(46136, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(46137, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(46138, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(46139, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 						}),
 						q(41656,  {	-- Work Order: Azsunite Loop
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["g"] = {
 								i(137840),	-- Design: Azsunite Loop (Rank 3)
@@ -1298,7 +1289,7 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41644, {	-- Work Order: Warhide Gloves
 							["requireSkill"] = LEATHERWORKING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
 							["g"] = {
@@ -1559,7 +1550,7 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41650, {	-- Work Order: Silkweave Hood
 							["requireSkill"] = TAILORING,
-							["lvl"] = 110,
+							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["g"] = {
 								i(138013),	-- Pattern: Silkweave Hood (Rank 3)

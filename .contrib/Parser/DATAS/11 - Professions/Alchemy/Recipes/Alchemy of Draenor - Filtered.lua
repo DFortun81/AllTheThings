@@ -52,6 +52,16 @@ profession(ALCHEMY, {
 				},
 				{
 					["categoryID"] = 336--[[Trinkets and Trinket Upgrades]],
+					["g"] = {
+						{
+							["recipeID"] = 188676,	-- Elemental Distillate
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+						{
+							["recipeID"] = 188674,	-- Wildswater
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+					}
 				}
 			}
 		},

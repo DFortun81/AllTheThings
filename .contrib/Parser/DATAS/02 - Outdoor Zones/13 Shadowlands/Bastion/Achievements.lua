@@ -8,8 +8,6 @@ _.Zones =
 		m(1533, {	-- Bastion
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				--	TODO: finish adding criteria here + other SL zones
-					--	add ["crs"] for these as well!
 					["collectible"] = false,
 					["g"] = {
 						crit(1, {	-- Crystalsnap
@@ -23,6 +21,181 @@ _.Zones =
 						crit(9, {	-- Kostos
 							["coord"] = { 46.6, 49.4, 1533 },
 							["crs"] = { 175785 },	-- Kostos
+						}),
+					},
+				}),
+				ach(14879, {	-- Family Exorcist
+					["collectible"] = false,
+					["g"] = {
+						ach(14868, {	-- Aquatic Apparitions
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14869, {	-- Beast Busters
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14870, {	-- Creepy Critters
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14871, {	-- Deathly Dragonkin
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14872, {	-- Eerie Elementals
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14873, {	-- Flickering Fliers
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14874, {	-- Haunted Humanoids
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14875, {	-- Mummified Magics
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14876, {	-- Macabre Mechanicals
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
+						}),
+						ach(14877, {	-- Unholy Undead
+							["collectible"] = false,
+							["g"] = {
+								crit(7,  {	-- Zolla
+									["coord"] = { 51.4, 38.2, 1533 },
+									["cr"] = 173130,	-- Zolla
+								}),
+								crit(8,  {	-- Thenia
+									["coord"] = { 54.6, 56.0, 1533 },
+									["cr"] = 173129,	-- Thenia
+								}),
+								crit(9,  {	-- Stratios
+									["coord"] = { 34.8, 62.8, 1533 },
+									["cr"] = 173131,	-- Stratios
+								}),
+							},
 						}),
 					},
 				}),
@@ -268,7 +441,7 @@ _.Zones =
 							["coord"] = { 65.2, 42.8, 1533 },
 						}),
 						n(-1433911, {	-- Shard ##
-							["description"] = "Use the Anima Gateway at |cFFFFFFFF65.5, 71.9|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
+							["description"] = "Use the Anima Gateway at |cFFFFFFFF63.5, 72.4|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
 							["questID"] = 61249,
 							["coord"] = { 65.5, 71.9, 1533 },
 						}),
@@ -396,7 +569,8 @@ _.Zones =
 						["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
 						["objectID"] = 354275,	-- Experimental Construct Part
 						["questID"] = 61052,
-						["coord"] = { 42.3, 23.3, 1533 },
+						["coord"] = { 51.5, 18.0, 1533 },
+						["cost"] = { { "i", 180534, 1 } },	-- Unstable Construct Anima
 						["g"] = {
 							i(183609),	-- Re-Powered Golliath Fists
 						},
@@ -417,9 +591,10 @@ _.Zones =
 						["questID"] = 61150,
 					}),
 					crit(11, {	-- Gift of Agthia
+						["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it.  An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock.  Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
 						["objectID"] = 353942,	-- Gift of Agthia
-						["coord"] = { 35.1, 58.1, 1533 },
 						["questID"] = 60893,	-- 62847 also completed when opening
+						["coord"] = { 39.1, 54.4, 1533 },
 						["g"] = {
 							i(180063),	-- Unearthly Chime
 						},
@@ -434,19 +609,24 @@ _.Zones =
 						},
 					}),
 					crit(13, {	-- Gift of Chyrus
+						["description"] = "Kneel in front of the chest.",
 						["objectID"] = 353941,	-- Gift of Chyrus
-					--	["questID"] = ,
+						["questID"] = 60892,
 						["coord"] = { 70.4, 36.4, 1533 },
+						["g"] = {
+							i(183988),	-- Bondable Val'kyr Diadem (TOY!)
+						},
 					}),
 					crit(14, {	-- Gift of Thenios
+						["description"] = "Requires taking multiple transport pads on the |cFFFFFFFFPath of Wisdom|r and clicking on objects in the correct order.\n\n1. Incense of Patience\n2. Incense of Knowledge\n3. Incense of Insight\n4. Blue orb behind the first Incense of Judgment\n5. The orb will transport you to the real Incense of Judgment\n\nTake the transport pad after using the real Incense of Judgment and you will get the |cFFFFFFFFProof of Wisdom|r buff for a short time, allowing you to open the chest.",
 						["objectID"] = 353943,	-- Gift of Thenios
+						["questID"] = 60894,
 						["coords"] = {
 							{ 42.3, 23.3, 1533 },	-- Transport Pad
 							{ 40.6, 18.9, 1533 },	-- Treasure
 						},
-						["description"] = "Incense of Patience -> Incense of Knowledge -> Incense of Insight -> Blue Orb -> Incense of Judgement",
-						["questID"] = 60894,
 						["g"] = {
+							i(181290),	-- Harmonious Sigil of the Archon
 						},
 					}),
 					crit(15, {	-- Gift of Devos
@@ -479,6 +659,7 @@ _.Zones =
 					crit(4),		-- Vesper of Loyalty
 					crit(5),		-- Vesper of Purity
 				}),
+				ach(14514),		-- Tour of Duty: Bastion
 				ach(14768, {	-- What is that Melody?
 					crit(1),		-- Hymn of Purity
 					crit(2),		-- Hymn of Courage

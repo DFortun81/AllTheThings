@@ -4,14 +4,14 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(279, {	-- The Culling of Stratholme
-		["lvl"] = 65,
-		["mapID"] = 130,
-		["maps"] = { 131 },
 		["coords"] = {
 			{ 56.9, 82.4, 75 },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
-		["groups"] = {
+		["mapID"] = 130,
+		["maps"] = { 131 },
+		["lvl"] = 65,
+		["g"] = {
 			n(QUESTS, {
 				q(13149, {	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
@@ -20,8 +20,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(13151, {	-- A Royal Escort
+					["sourceQuests"] = { 13149 },	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
-					["sourceQuest"] = 13149,	-- Dispelling Illusions
 					["g"] = {
 						i(44396),	-- Gloves of the Time Guardian
 						i(44397),	-- Handwraps of Preserved History
@@ -98,10 +98,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				cr(26529, e(611, {	-- Meathook
-					{	-- The Culling of Stratholme: Meathook
+					crit(1, {	-- Meathook
 						["achievementID"] = 479,	-- The Culling of Stratholme
-						["criteriaID"] = 1,	-- Meathook
-					},
+					}),
 					i(37081),	-- Meathook's Slicer
 					i(37679),	-- Spaulders of the Abomination
 					i(37678),	-- Bile-Cured Gloves
@@ -112,10 +111,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37079),	-- Enchanted Wire Stitching
 				})),
 				cr(26530, e(612, {	-- Salramm the Fleshcrafter
-					{	-- The Culling of Stratholme: Salramm the Fleshcrafter
+					crit(3, {	-- Salramm the Fleshcrafter
 						["achievementID"] = 479,	-- The Culling of Stratholme
-						["criteriaID"] = 3,	-- Salramm the Fleshcrafter
-					},
+					}),
 					i(37681),	-- Gavel of the Fleshcrafter
 					i(37086),	-- Tome of Salramm
 					i(37684),	-- Forgotten Shadow Hood
@@ -127,10 +125,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(157563), 	-- Freshly Sewn Leggings
 				})),
 				cr(26532, e(613, {	-- Chrono-Lord Epoch
-					{	-- The Culling of Stratholme: Chrono-Lord Epoch
+					crit(2, {	-- Chrono-Lord Epoch
 						["achievementID"] = 479,	-- The Culling of Stratholme
-						["criteriaID"] = 2,	-- Chrono-Lord Epoch
-					},
+					}),
 					i(37099),	-- Sempiternal Staff
 					i(37096),	-- Necklace of the Chrono-Lord
 					i(37686),	-- Cracked Epoch Grasps
@@ -141,10 +138,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37685),	-- Mobius Band
 				})),
 				cr(26533, e(614, {	-- Mal'Ganis
-					{	-- The Culling of Stratholme: Mal'Ganis
+					crit(4, {	-- Mal'Ganis
 						["achievementID"] = 479,	-- The Culling of Stratholme
-						["criteriaID"] = 4,	-- Mal'Ganis
-					},
+					}),
 					i(37108),	-- Dreadlord's Blade
 					i(37112),	-- Beguiling Scepter
 					i(37693),	-- Greed
@@ -165,14 +161,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(2,   {	-- Heroic
-				["lvl"] = 80,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["lvl"] = 80,
+				["g"] = {
 					cr(26529, e(611, {	-- Meathook
-						{	-- Heroic: The Culling of Stratholme: Meathook
+						crit(1, {	-- Meathook
 							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-							["criteriaID"] = 1,	-- Meathook
-						},
+						}),
 						i(37081),	-- Meathook's Slicer
 						i(37679),	-- Spaulders of the Abomination
 						i(37678),	-- Bile-Cured Gloves
@@ -182,15 +177,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37082),	-- Slaughterhouse Sabatons
 						i(37079),	-- Enchanted Wire Stitching
 					})),
-					{	-- Zombiefest!
-						["achievementID"] = 1872,	-- Zombiefest!
-						["description"] = "Gather, but do not kill zombies, leading up to Meathook.\n\nKill Meathook and wait for zombies to respawn then gather more and kill zombies.",
-					},
+					ach(1872, {	-- Zombiefest!
+						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
+					}),
 					cr(26530, e(612, {	-- Salramm the Fleshcrafter
-						{	-- Heroic: The Culling of Stratholme: Salramm the Fleshcrafter
+						crit(3, {	-- Salramm the Fleshcrafter
 							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-							["criteriaID"] = 3,	-- Salramm the Fleshcrafter
-						},
+						}),
 						i(37681),	-- Gavel of the Fleshcrafter
 						i(37086),	-- Tome of Salramm
 						i(37684),	-- Forgotten Shadow Hood
@@ -202,10 +195,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(157563), 	-- Freshly Sewn Leggings
 					})),
 					cr(26532, e(613, {	-- Chrono-Lord Epoch
-						{	-- Heroic: The Culling of Stratholme: Chrono-Lord Epoch
+						crit(2, {	-- Chrono-Lord Epoch
 							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-							["criteriaID"] = 2,	-- Chrono-Lord Epoch
-						},
+						}),
 						i(37099),	-- Sempiternal Staff
 						i(37096),	-- Necklace of the Chrono-Lord
 						i(37686),	-- Cracked Epoch Grasps
@@ -216,22 +208,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37685),	-- Mobius Band
 					})),
 					n(32273, {	-- Infinite Corruptor
-						{	-- The Culling of Time
-							["achievementID"] = 1817,	-- The Culling of Time
-						},
-						{	-- Reins of the Bronze Drake
-							["itemID"] = 43951,	-- Reins of the Bronze Drake
-						},
+						ach(1817),	-- The Culling of Time
+						i(43951),	-- Reins of the Bronze Drake
 					}),
 					cr(26533, e(614, {	-- Mal'Ganis
-						{	-- Champion of the Frozen Wastes
+						crit(12, {	-- Mal'Ganis slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-							["criteriaID"] = 12,		-- Mal'Ganis slain
-						},
-						{	-- Heroic: The Culling of Stratholme: Mal'Ganis
+						}),
+						crit(4, {	-- Mal'Ganis
 							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-							["criteriaID"] = 4,	-- Mal'Ganis
-						},
+						}),
 						i(37108),	-- Dreadlord's Blade
 						i(37112),	-- Beguiling Scepter
 						i(37693),	-- Greed

@@ -43,33 +43,52 @@ _.Instances = { tier(9, {	-- Shadowlands
 						162059,	-- Kin-Tara
 					},
 					["g"] = {
+						i(183483),	-- Carnivorous Instinct
+						i(182610),	-- Ferocious Appetite
+						i(183231),	-- Memory of a Cat-eye Curio
+						i(182468),	-- Mortal Combo
+						i(182144),	-- Nature's Reach
+						i(183513),	-- Stiletto Staccato
 						i(180097),	-- Quarterstaff of Discordant Ethic
-						i(180109),	-- Kin-Tara's Baleful Cord
-						i(180103),	-- Winged Hunters' Gloves
-						i(180100),	-- Forsworn Stalker's Hauberk
-						i(180101),	-- Warboots of Ruthless Conviction
 						i(180115),	-- Azure-Venom Choker
+						i(180100),	-- Forsworn Stalker's Hauberk
+						i(180103),	-- Winged Hunters' Gloves
+						i(180109),	-- Kin-Tara's Baleful Cord
+						i(180101),	-- Warboots of Ruthless Conviction
 					},
 				}),
 				e(2416, {	-- Ventunax
 					["crs"] = { 162058 },	-- Ventunax
 					["g"] = {
+						i(183508),	-- Ambidexterity
+						i(181435),	-- Calculated Strikes
+						i(182478),	-- Corrupting Leer
+						i(182462),	-- Expurgation
+						i(183338),	-- Memory of Celerity
+						i(183365),	-- Memory of the Consuming Wrath
+						i(181389),	-- Shivering Core
 						i(180095),	-- Penitent Edge
-						i(180102),	-- Dark Stride Footwraps
-						i(180111),	-- Shadowhirl Waistwrap
-						i(180110),	-- Dark Praetorian's Clasp
 						i(180104),	-- Distorted Construct's Gauntlets
+						i(180110),	-- Dark Praetorian's Clasp
+						i(180111),	-- Shadowhirl Waistwrap
+						i(180102),	-- Dark Stride Footwraps
 						i(180116),	-- Overcharged Anima Battery
 					},
 				}),
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
 					["g"] = {
+						i(182187),	-- Meat Shield
+						i(183313),	-- Memory of the Lightbringer's Tempest
+						i(183392),	-- Memory of the Thunderlord
+						i(180944),	-- Merciless Bonegrinder
+						i(182753),	-- Royal Decree
+						i(182471),	-- Soul Furnace
 						i(180112),	-- The Philosopher
-						i(180107),	-- Purge Protocol Legwraps
 						i(180106),	-- Vicious Surge Faceguard
-						i(180105),	-- Absonant Construct's Handguards
 						i(180113),	-- Thunderous Echo Vambraces
+						i(180105),	-- Absonant Construct's Handguards
+						i(180107),	-- Purge Protocol Legwraps
 						i(180118),	-- Anima Field Emitter
 						i(180117),	-- Empyreal Ordnance
 					},
@@ -78,12 +97,21 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14326),	-- Spires of Ascension
+						i(182649),	-- Brutal Projectiles
+						i(182667),	-- Focused Light
+						i(182135),	-- Focused Lightning
+						i(182141),	-- Holy Oration
+						i(183290),	-- Ancient Teachings
+						i(183354),	-- Memory of the Doom Winds
+						i(183257),	-- Memory of the Rylakstalker's Fangs
+						i(183488),	-- Unstoppable Growth
+						i(181465),	-- Xuen's Bond
 						i(180096),	-- Devos' Cacophonous Poleaxe
 						i(180123),	-- Drape of Twisted Loyalties
-						i(180098),	-- Sinister Requiem Vestments
-						i(180108),	-- Abyssal Disharmony Breeches
-						i(180114),	-- Fallen Paragon's Armguards
 						i(180099),	-- Breastplate of Brutal Dissonance
+						i(180098),	-- Sinister Requiem Vestments
+						i(180114),	-- Fallen Paragon's Armguards
+						i(180108),	-- Abyssal Disharmony Breeches
 						i(180119),	-- Boon of the Archon
 					},
 				}),
@@ -97,33 +125,52 @@ _.Instances = { tier(9, {	-- Shadowlands
 							162059,	-- Kin-Tara
 						},
 						["g"] = {
+							i(183483),	-- Carnivorous Instinct
+							i(182610),	-- Ferocious Appetite
+							i(183231),	-- Memory of a Cat-eye Curio
+							i(182468),	-- Mortal Combo
+							i(182144),	-- Nature's Reach
+							i(183513),	-- Stiletto Staccato
 							i(180097),	-- Quarterstaff of Discordant Ethic
-							i(180109),	-- Kin-Tara's Baleful Cord
-							i(180103),	-- Winged Hunters' Gloves
-							i(180100),	-- Forsworn Stalker's Hauberk
-							i(180101),	-- Warboots of Ruthless Conviction
 							i(180115),	-- Azure-Venom Choker
+							i(180100),	-- Forsworn Stalker's Hauberk
+							i(180103),	-- Winged Hunters' Gloves
+							i(180109),	-- Kin-Tara's Baleful Cord
+							i(180101),	-- Warboots of Ruthless Conviction
 						},
 					}),
 					e(2416, {	-- Ventunax
 						["crs"] = { 162058 },	-- Ventunax
 						["g"] = {
+							i(183508),	-- Ambidexterity
+							i(181435),	-- Calculated Strikes
+							i(182478),	-- Corrupting Leer
+							i(182462),	-- Expurgation
+							i(183338),	-- Memory of Celerity
+							i(183365),	-- Memory of the Consuming Wrath
+							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
-							i(180102),	-- Dark Stride Footwraps
-							i(180111),	-- Shadowhirl Waistwrap
-							i(180110),	-- Dark Praetorian's Clasp
 							i(180104),	-- Distorted Construct's Gauntlets
+							i(180110),	-- Dark Praetorian's Clasp
+							i(180111),	-- Shadowhirl Waistwrap
+							i(180102),	-- Dark Stride Footwraps
 							i(180116),	-- Overcharged Anima Battery
 						},
 					}),
 					e(2414, {	-- Oryphrion
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
+							i(182187),	-- Meat Shield
+							i(183313),	-- Memory of the Lightbringer's Tempest
+							i(183392),	-- Memory of the Thunderlord
+							i(180944),	-- Merciless Bonegrinder
+							i(182753),	-- Royal Decree
+							i(182471),	-- Soul Furnace
 							i(180112),	-- The Philosopher
-							i(180107),	-- Purge Protocol Legwraps
 							i(180106),	-- Vicious Surge Faceguard
-							i(180105),	-- Absonant Construct's Handguards
 							i(180113),	-- Thunderous Echo Vambraces
+							i(180105),	-- Absonant Construct's Handguards
+							i(180107),	-- Purge Protocol Legwraps
 							i(180118),	-- Anima Field Emitter
 							i(180117),	-- Empyreal Ordnance
 						},
@@ -132,12 +179,21 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14324),	-- Heroic: Spires of Ascension
+							i(182649),	-- Brutal Projectiles
+							i(182667),	-- Focused Light
+							i(182135),	-- Focused Lightning
+							i(182141),	-- Holy Oration
+							i(183290),	-- Ancient Teachings
+							i(183354),	-- Memory of the Doom Winds
+							i(183257),	-- Memory of the Rylakstalker's Fangs
+							i(183488),	-- Unstoppable Growth
+							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe
 							i(180123),	-- Drape of Twisted Loyalties
-							i(180098),	-- Sinister Requiem Vestments
-							i(180108),	-- Abyssal Disharmony Breeches
-							i(180114),	-- Fallen Paragon's Armguards
 							i(180099),	-- Breastplate of Brutal Dissonance
+							i(180098),	-- Sinister Requiem Vestments
+							i(180114),	-- Fallen Paragon's Armguards
+							i(180108),	-- Abyssal Disharmony Breeches
 							i(180119),	-- Boon of the Archon
 						},
 					}),
@@ -156,22 +212,35 @@ _.Instances = { tier(9, {	-- Shadowlands
 							162059,	-- Kin-Tara
 						},
 						["g"] = {
+							i(183483),	-- Carnivorous Instinct
+							i(182610),	-- Ferocious Appetite
+							i(183231),	-- Memory of a Cat-eye Curio
+							i(182468),	-- Mortal Combo
+							i(182144),	-- Nature's Reach
+							i(183513),	-- Stiletto Staccato
 							i(180097),	-- Quarterstaff of Discordant Ethic
-							i(180109),	-- Kin-Tara's Baleful Cord
-							i(180103),	-- Winged Hunters' Gloves
-							i(180100),	-- Forsworn Stalker's Hauberk
-							i(180101),	-- Warboots of Ruthless Conviction
 							i(180115),	-- Azure-Venom Choker
+							i(180100),	-- Forsworn Stalker's Hauberk
+							i(180103),	-- Winged Hunters' Gloves
+							i(180109),	-- Kin-Tara's Baleful Cord
+							i(180101),	-- Warboots of Ruthless Conviction
 						},
 					}),
 					e(2416, {	-- Ventunax
 						["crs"] = { 162058 },	-- Ventunax
 						["g"] = {
+							i(183508),	-- Ambidexterity
+							i(181435),	-- Calculated Strikes
+							i(182478),	-- Corrupting Leer
+							i(182462),	-- Expurgation
+							i(183338),	-- Memory of Celerity
+							i(183365),	-- Memory of the Consuming Wrath
+							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
-							i(180102),	-- Dark Stride Footwraps
-							i(180111),	-- Shadowhirl Waistwrap
-							i(180110),	-- Dark Praetorian's Clasp
 							i(180104),	-- Distorted Construct's Gauntlets
+							i(180110),	-- Dark Praetorian's Clasp
+							i(180111),	-- Shadowhirl Waistwrap
+							i(180102),	-- Dark Stride Footwraps
 							i(180116),	-- Overcharged Anima Battery
 						},
 					}),
@@ -179,11 +248,17 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
 							ach(14331),	-- Goliath Offline
+							i(182187),	-- Meat Shield
+							i(183313),	-- Memory of the Lightbringer's Tempest
+							i(183392),	-- Memory of the Thunderlord
+							i(180944),	-- Merciless Bonegrinder
+							i(182753),	-- Royal Decree
+							i(182471),	-- Soul Furnace
 							i(180112),	-- The Philosopher
-							i(180107),	-- Purge Protocol Legwraps
 							i(180106),	-- Vicious Surge Faceguard
-							i(180105),	-- Absonant Construct's Handguards
 							i(180113),	-- Thunderous Echo Vambraces
+							i(180105),	-- Absonant Construct's Handguards
+							i(180107),	-- Purge Protocol Legwraps
 							i(180118),	-- Anima Field Emitter
 							i(180117),	-- Empyreal Ordnance
 						},
@@ -193,12 +268,21 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["g"] = {
 							ach(14325),	-- Mythic: Spires of Ascension
 							ach(14323),	-- ExSPEARiential
+							i(182649),	-- Brutal Projectiles
+							i(182667),	-- Focused Light
+							i(182135),	-- Focused Lightning
+							i(182141),	-- Holy Oration
+							i(183290),	-- Ancient Teachings
+							i(183354),	-- Memory of the Doom Winds
+							i(183257),	-- Memory of the Rylakstalker's Fangs
+							i(183488),	-- Unstoppable Growth
+							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe
 							i(180123),	-- Drape of Twisted Loyalties
-							i(180098),	-- Sinister Requiem Vestments
-							i(180108),	-- Abyssal Disharmony Breeches
-							i(180114),	-- Fallen Paragon's Armguards
 							i(180099),	-- Breastplate of Brutal Dissonance
+							i(180098),	-- Sinister Requiem Vestments
+							i(180114),	-- Fallen Paragon's Armguards
+							i(180108),	-- Abyssal Disharmony Breeches
 							i(180119),	-- Boon of the Archon
 						},
 					}),

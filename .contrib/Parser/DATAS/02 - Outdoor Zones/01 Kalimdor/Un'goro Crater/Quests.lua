@@ -267,6 +267,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(13917, {	-- Gorishi Grub
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(24699, {	-- Gormashh the Glutinous
 					["provider"] = { "n", 38276 },	-- Tara
 					["coord"] = { 43.1, 40.9, 78 },
@@ -300,6 +306,12 @@ _.Zones =
 					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+				}),
+				q(13915, {	-- Hungry, Hungry Hatchling
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24865, {	-- Is This Stuff Still Good?
 					["coord"] = { 68.5, 36.5, 78 },
@@ -393,6 +405,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(13916, {	-- Poached, Scrambled, Or Raw?
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(24715, {	-- Repairing A-Me 01
 					["provider"] = { "n", 9623 },	-- A-Me 01
 					["coord"] = { 63.8, 19.7, 78 },
@@ -438,6 +456,12 @@ _.Zones =
 					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+				}),
+				q(13914, {	-- Searing Roc Feathers
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24926, {	-- Serving A-Me 01
 					["provider"] = { "n", 9623 },	-- A-Me 01

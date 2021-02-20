@@ -57,12 +57,30 @@ _.Zones =
 						i(182746, {	-- All-In-One Belt Repair Kit
 							["cost"] = { { "c", 1820, 5 } },
 							["g"] = {
+								i(182741, {	-- Buckled Cloth Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),
+								i(182742, {	-- Buckled Leather Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),
 								i(182739, {	-- Buckled Chain Belt
 									["cost"] = {
 										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
 										{ "i", 182744, 1 },	-- Ornate Belt Buckle
 									},
 								}),
+								i(182741, {	-- Buckled Plate Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
+									},
+								}),															
 							},
 						}),
 					},
@@ -96,17 +114,11 @@ _.Zones =
 						}),
 					},
 				}),
-				n(165453, {	-- Lady Ilinca <Court Concierge>
-					["coord"] = { 28.6, 41.0, 1525 },
-					["g"] =  {
-						i(176850, {	-- Blank Invitation
-							["cost"] = { { "c", 1820, 15 } },
-						}),
-						i(177234, {	-- Rally Bell
-							["cost"] = { { "c", 1813, 25 } },
-						}),
-						i(183876, {	-- Quill of Correspondence
-							["cost"] = 5000000,	-- 500g
+				n(165419, {	-- Grand Marshal Mudrag
+					["coord"] = { 40.6, 46.9, 1525 },
+					["g"] = {
+						i(183989, {	-- Dredger Barrow Racer
+							["cost"] = { { "c", 1820, 50 } },	-- 50x Infused Ruby
 						}),
 					},
 				}),
@@ -164,9 +176,6 @@ _.Zones =
 						i(183839, {	-- Pattern: Heavy Desolate Hide
 							["cost"] = 17650000, -- 1,765g
 						}),
-						i(183865, {	-- Technique: Crafter's Mark III
-							["cost"] = 20000000, -- 2,000g
-						}),
 						i(183900, {	-- Sinvyr Tea Set
 							["cost"] = 13500000, -- 1,350g
 						}),
@@ -221,6 +230,18 @@ _.Zones =
 							i(183977, {	-- House Renathal Ceremonial Dagger
 								["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
 							}),
+						}),
+					},
+				}),
+				n(171808, {	-- Ta'tru
+					["coords"] = { 51.1, 78.8, 1525 },
+					["g"] = {
+						i(180973, {	-- Necklace of Dredbat Fangs
+							["description"] = "Take this to Trader Ta'bix in Bastion |cffffffff(33.4, 36.2)|r.",
+						}),
+						i(181799),	-- Extra Large Hat
+						i(182702, {	-- Phial of Black Muck Dye
+							["description"] = "Allows for repeatably dyeing the clothes of your Dredger Butler to Black.",
 						}),
 					},
 				}),

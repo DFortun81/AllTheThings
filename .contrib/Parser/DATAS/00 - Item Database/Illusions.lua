@@ -1,4 +1,6 @@
 _.IllusionDB = {
+-- This will print the name of a specific illusionID
+-- /script print(C_TransmogCollection.GetIllusionSourceInfo())
 	{
 		["visualID"] = 25,
 		["illusionID"] = 803,
@@ -423,5 +425,17 @@ _.IllusionDB = {
 		["illusionID"] = 6263,
 		["text"] = "Wild Soul",
 		--["questID"] = 57596,
+	},
+	{	-- Illusion: Devoted Spirit
+		["itemID"] = 184351,	-- Illusion: Devoted Spirit
+		["illusionID"] = 6256,
+		["text"] = "Devoted Spirit",
+	--	["questID"] = 63004,
+	},
+	{	-- Illusion: Transcendent Soul
+		["itemID"] = 184352,
+		["illusionID"] = 6257,
+		["text"] = "Transcendent Soul",
+	--	["questID"] = ,
 	},
 };

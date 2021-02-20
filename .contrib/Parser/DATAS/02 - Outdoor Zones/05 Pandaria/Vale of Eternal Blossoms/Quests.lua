@@ -94,11 +94,9 @@ _.Zones =
 					["coord"] = { 84.6, 63.6, 390 },
 					["races"] = ALLIANCE_ONLY
 				}),
-				q(31876, {	-- The Inkmasters of the Arboretum
-					["requireSkill"] = INSCRIPTION,
-					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
-					["isWeekly"] = true,
-					["coord"] = { 82.0, 29.4, 390 },
+				q(31097, {	-- Heart of the Mantid Swarm
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Heart of the Mantid Swarm|r achievement.",
+					["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
 				}),
 				q(33231, {	-- Journey to the Timeless Isle
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
@@ -178,6 +176,12 @@ _.Zones =
 					["coord"] = { 63.0, 22.2, 390 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64007 },	-- Weng the Merciful
+				}),
+				q(31876, {	-- The Inkmasters of the Arboretum
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
+					["isWeekly"] = true,
+					["coord"] = { 82.0, 29.4, 390 },
 				}),
 				q(32806, {	-- The King and the Council
 					["providers"] = {

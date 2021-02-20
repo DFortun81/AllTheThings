@@ -167,14 +167,13 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-10067, { 	-- Artifact
-						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = 110,
-						["groups"] = {
-							{
-								["itemID"] = 133887,	-- Luminous Pearl (Item)
-								["questID"] = 40960,	-- Luminous Pearl (Quest)
-							}
+					n(-10067, {	-- Artifact
+						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+						["lvl"] = { 45 },
+						["g"] = {
+							q(40960, {	-- Luminous Pearl
+								["provider"] = { "i", 133887 },	-- Luminous Pearl
+							}),
 						},
 					}),
 					ach(10596, {	-- Bigger Fish to Fry
@@ -286,7 +285,7 @@ _.Zones =
 								},
 							}),
 							i(133711, {		-- Swollen Murloc Egg
-								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+								["description"] = "This item will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
 								["groups"] = {
 									n(102339, {		-- Swamprock Tadpole
 										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",

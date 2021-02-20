@@ -105,10 +105,9 @@ _.Zones =
 								52946,	-- A Dying World
 								53028,	-- A Dying World
 							},
-							["coord"] = { 42.2, 44.2, 81 },
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["coord"] = { 42.2, 44.2, 81 },
 							["g"] = {
-								ach(12918),	-- Have a Heart
 								i(158075),	-- Heart of Azeroth
 							},
 						}),
@@ -188,7 +187,7 @@ _.Zones =
 					}),
 					n(RARES, {
 						n(132591, {	-- Ogmot the Mad
-							["questID"] = 50334,	-- also triggered 50225. First kill questID?
+							["questID"] = 50334,
 							["coord"] = { 28.9, 74.6, 81 },
 							["g"] = {
 								i(156852),	-- Ogmot's Dream Journal

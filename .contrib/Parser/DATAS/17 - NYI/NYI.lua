@@ -20,30 +20,110 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
+		un(NEVER_IMPLEMENTED, i(182083)),	-- Bonecleaver's Skullboar
 		-- Gear
-		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(171401)),	-- Phaeweald Rapier
+		un(NEVER_IMPLEMENTED, i(175999)),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176002)),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176003)),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178389)),	-- Sinful Gladiator's Recurve (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178392)),	-- Sinful Gladiator's Halberd (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178393)),	-- Sinful Gladiator's Spire (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183403)),	-- Sinful Gladiator's Battlehammer (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183406)),	-- Sinful Gladiator's Greatmaul (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183404)),	-- Sinful Gladiator's Spellblade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(183405)),	-- Sinful Gladiator's Mageblade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(175998)),	-- Sinful Gladiator's Axe (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176000)),	-- Sinful Gladiator's Blade (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176004)),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176009)),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178388)),	-- Sinful Gladiator's Handaxe (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178390)),	-- Sinful Gladiator's Dagger (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178394)),	-- Sinful Gladiator's Saber (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178399)),	-- Sinful Gladiator's Slicer (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176007)),	-- Sinful Gladiator's Shield (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(176008)),	-- Sinful Gladiator's Focus (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178397)),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(178398)),	-- Sinful Gladiator's Goblet (existed in beta; doesn't appear to exist in live)
+		un(NEVER_IMPLEMENTED, i(175941)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(175942)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(175943)),	-- Spiritual Alchemy Stone (171323 is the version in game)
+		un(NEVER_IMPLEMENTED, i(180425)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
+		un(NEVER_IMPLEMENTED, i(180426)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
+		un(NEVER_IMPLEMENTED, i(180427)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
+		un(NEVER_IMPLEMENTED, i(180428)),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
+		un(NEVER_IMPLEMENTED, i(180432)),	-- 9.0 PvP - PvP Reward - Tabard - 2
+		un(NEVER_IMPLEMENTED, i(180433)),	-- 9.0 PvP - PvP Reward - Tabard - 3
+		un(NEVER_IMPLEMENTED, i(180434)),	-- 9.0 PvP - PvP Reward - Tabard - 4
+		un(NEVER_IMPLEMENTED, i(180435)),	-- 9.0 PvP - PvP Reward - Tabard - 5
+		un(NEVER_IMPLEMENTED, i(175181)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(175213)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178302)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178307)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178312)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178314)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178318)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178323)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178326)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178330)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178480)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178665)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(183434)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(183431)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178488)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178489)),	-- Retrieving Data
+		un(NEVER_IMPLEMENTED, i(178673)),	-- Retrieving Data
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(181259)),	-- Clutch (wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(184461)),	-- Clutch (wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage (possibly in game? need more info)
-		un(NEVER_IMPLEMENTED, i(184399)),	-- Larion Cub (possibly in game? need more info)
-		un(NEVER_IMPLEMENTED, i(184401)),	-- Larion Pouncer (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(180590)),	-- Lost Soul (wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180860)),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180840)),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180861)),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180867)),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180813)),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
-		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)
-		un(NEVER_IMPLEMENTED, i(180872)),	-- Spirited Skyfoal (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(183853)),	-- Sinfall Screecher
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		-- Recipes
 		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
+		un(NEVER_IMPLEMENTED, i(183866)),	-- Formula: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183869)),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183871)),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183864)),	-- Plans: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183868)),	-- Recipe: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183867)),	-- Schematic: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(183865)),	-- Technique: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		un(NEVER_IMPLEMENTED, i(182665)),	-- Recipe: Sins to Virtue
+		un(NEVER_IMPLEMENTED, i(182669)),	-- Pattern: Loosened Belt
+		un(NEVER_IMPLEMENTED, i(182670)),	-- Plans: Reinforced Girdle
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+		un(NEVER_IMPLEMENTED, i(174445)),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
 		-- Other
 		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
+		un(NEVER_IMPLEMENTED, i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
+			["questID"] = 62012,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { HUNTER, SHAMAN },
+		})),
+		un(NEVER_IMPLEMENTED, i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
+			["questID"] = 62011,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+		})),
+		un(NEVER_IMPLEMENTED, i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
+			["questID"] = 62013,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+		})),
+		un(NEVER_IMPLEMENTED, i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+			["questID"] = 62014,
+			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+		})),
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
@@ -86,6 +166,224 @@ _.NeverImplemented =
 		-- patch 8.3 removed content
 		un(NEVER_IMPLEMENTED, i(173421)),	-- Black Empire Signet
 		un(NEVER_IMPLEMENTED, i(173426)),	-- Black Empire trinkets
+		
+		-- weapons with placeholder names from BFA section
+		un(NEVER_IMPLEMENTED, i(182564)),	-- NPE Weapon Dagger AGI
+		un(NEVER_IMPLEMENTED, i(182573)),	-- NPE Weapon Dagger AGI 2
+		un(NEVER_IMPLEMENTED, i(182350)),	-- Ardenweald Raid Mace STR
+		un(NEVER_IMPLEMENTED, i(182578)),	-- NPE Weapon 1H Mace AGI
+		un(NEVER_IMPLEMENTED, i(182566)),	-- NPE Weapon Staff AGI
+		un(NEVER_IMPLEMENTED, i(182572)),	-- NPE Weapon Staff INT
+		
+		-- armor with placeholder names from BFA section
+		un(NEVER_IMPLEMENTED, i(179615)),	-- Oribos Quest Mail Cloak
+		un(NEVER_IMPLEMENTED, i(179621)),	-- Ardenweald Covenant Mail Cloak
+		un(NEVER_IMPLEMENTED, i(179630)),	-- Ardenweald Covenant Mail Cloak
+		un(NEVER_IMPLEMENTED, i(179631)),	-- Ardenweald Covenant Mail Cloak
+		un(NEVER_IMPLEMENTED, i(179632)),	-- Ardenweald Covenant Mail Cloak
+		
+		-- all "Retrieving Data" in the BFA Cloth section
+		un(NEVER_IMPLEMENTED, i(175420)),	-- 
+		un(NEVER_IMPLEMENTED, i(175512)),	-- 
+		un(NEVER_IMPLEMENTED, i(175608)),	-- 
+		un(NEVER_IMPLEMENTED, i(175620)),	-- 
+		un(NEVER_IMPLEMENTED, i(175629)),	-- 
+		un(NEVER_IMPLEMENTED, i(175632)),	-- 
+		un(NEVER_IMPLEMENTED, i(175679)),	-- 
+		un(NEVER_IMPLEMENTED, i(175682)),	-- 
+		un(NEVER_IMPLEMENTED, i(175686)),	-- 
+		un(NEVER_IMPLEMENTED, i(175688)),	-- 
+		un(NEVER_IMPLEMENTED, i(175691)),	-- 
+		un(NEVER_IMPLEMENTED, i(175695)),	-- 
+		un(NEVER_IMPLEMENTED, i(175697)),	-- 
+		un(NEVER_IMPLEMENTED, i(175700)),	-- 
+		un(NEVER_IMPLEMENTED, i(179412)),	-- 
+		un(NEVER_IMPLEMENTED, i(179413)),	-- 
+		un(NEVER_IMPLEMENTED, i(179414)),	-- 
+		un(NEVER_IMPLEMENTED, i(179415)),	-- 
+		un(NEVER_IMPLEMENTED, i(179416)),	-- 
+		un(NEVER_IMPLEMENTED, i(179417)),	-- 
+		un(NEVER_IMPLEMENTED, i(179418)),	-- 
+		un(NEVER_IMPLEMENTED, i(179419)),	-- 
+		un(NEVER_IMPLEMENTED, i(179439)),	-- 
+		un(NEVER_IMPLEMENTED, i(179440)),	-- 
+		un(NEVER_IMPLEMENTED, i(179441)),	-- 
+		un(NEVER_IMPLEMENTED, i(179442)),	-- 
+		un(NEVER_IMPLEMENTED, i(179443)),	-- 
+		un(NEVER_IMPLEMENTED, i(179444)),	-- 
+		un(NEVER_IMPLEMENTED, i(179445)),	-- 
+		un(NEVER_IMPLEMENTED, i(179446)),	-- 
+		un(NEVER_IMPLEMENTED, i(179466)),	-- 
+		un(NEVER_IMPLEMENTED, i(179467)),	-- 
+		un(NEVER_IMPLEMENTED, i(179468)),	-- 
+		un(NEVER_IMPLEMENTED, i(179469)),	-- 
+		un(NEVER_IMPLEMENTED, i(179470)),	-- 
+		un(NEVER_IMPLEMENTED, i(179471)),	-- 
+		un(NEVER_IMPLEMENTED, i(179472)),	-- 
+		un(NEVER_IMPLEMENTED, i(179473)),	-- 
+		un(NEVER_IMPLEMENTED, i(179489)),	-- 
+		un(NEVER_IMPLEMENTED, i(179490)),	-- 
+		un(NEVER_IMPLEMENTED, i(179587)),	-- 
+		un(NEVER_IMPLEMENTED, i(179588)),	-- 
+		un(NEVER_IMPLEMENTED, i(179589)),	-- 
+		un(NEVER_IMPLEMENTED, i(179590)),	-- 
+		un(NEVER_IMPLEMENTED, i(179591)),	-- 
+		un(NEVER_IMPLEMENTED, i(179592)),	-- 
+		un(NEVER_IMPLEMENTED, i(179595)),	-- 
+		un(NEVER_IMPLEMENTED, i(179683)),	-- 
+		un(NEVER_IMPLEMENTED, i(179684)),	-- 
+		un(NEVER_IMPLEMENTED, i(179685)),	-- 
+		un(NEVER_IMPLEMENTED, i(179686)),	-- 
+		un(NEVER_IMPLEMENTED, i(179687)),	-- 
+		un(NEVER_IMPLEMENTED, i(179688)),	-- 
+		un(NEVER_IMPLEMENTED, i(179689)),	-- 
+		un(NEVER_IMPLEMENTED, i(179690)),	-- 
+		un(NEVER_IMPLEMENTED, i(179691)),	-- 
+		un(NEVER_IMPLEMENTED, i(179692)),	-- 
+		un(NEVER_IMPLEMENTED, i(179693)),	-- 
+		un(NEVER_IMPLEMENTED, i(179694)),	-- 
+		un(NEVER_IMPLEMENTED, i(179695)),	-- 
+		un(NEVER_IMPLEMENTED, i(179696)),	-- 
+		un(NEVER_IMPLEMENTED, i(179697)),	-- 
+		un(NEVER_IMPLEMENTED, i(179698)),	-- 
+		un(NEVER_IMPLEMENTED, i(179699)),	-- 
+		un(NEVER_IMPLEMENTED, i(179700)),	-- 
+		un(NEVER_IMPLEMENTED, i(179701)),	-- 
+		un(NEVER_IMPLEMENTED, i(179702)),	-- 
+		un(NEVER_IMPLEMENTED, i(179703)),	-- 
+		un(NEVER_IMPLEMENTED, i(179704)),	-- 
+		un(NEVER_IMPLEMENTED, i(179705)),	-- 
+		un(NEVER_IMPLEMENTED, i(179706)),	-- 
+		un(NEVER_IMPLEMENTED, i(179707)),	-- 
+		un(NEVER_IMPLEMENTED, i(179708)),	-- 
+		un(NEVER_IMPLEMENTED, i(179709)),	-- 
+		un(NEVER_IMPLEMENTED, i(179710)),	-- 
+		un(NEVER_IMPLEMENTED, i(179711)),	-- 
+		un(NEVER_IMPLEMENTED, i(179712)),	-- 
+		un(NEVER_IMPLEMENTED, i(179713)),	-- 
+		un(NEVER_IMPLEMENTED, i(179714)),	-- 
+		un(NEVER_IMPLEMENTED, i(179715)),	-- 
+		un(NEVER_IMPLEMENTED, i(179716)),	-- 
+		un(NEVER_IMPLEMENTED, i(179717)),	-- 
+		un(NEVER_IMPLEMENTED, i(179718)),	-- 
+		
+		-- all "Retrieving Data" in BFA cloak section
+		un(NEVER_IMPLEMENTED, i(173926)),	-- 
+		un(NEVER_IMPLEMENTED, i(174193)),	-- 
+		un(NEVER_IMPLEMENTED, i(174206)),	-- 
+		un(NEVER_IMPLEMENTED, i(177692)),	-- 
+		un(NEVER_IMPLEMENTED, i(179402)),	-- 
+		un(NEVER_IMPLEMENTED, i(179411)),	-- 
+		un(NEVER_IMPLEMENTED, i(179420)),	-- 
+		un(NEVER_IMPLEMENTED, i(179429)),	-- 
+		un(NEVER_IMPLEMENTED, i(179438)),	-- 
+		un(NEVER_IMPLEMENTED, i(179447)),	-- 
+		un(NEVER_IMPLEMENTED, i(179456)),	-- 
+		un(NEVER_IMPLEMENTED, i(179465)),	-- 
+		un(NEVER_IMPLEMENTED, i(179474)),	-- 
+		un(NEVER_IMPLEMENTED, i(179483)),	-- 
+		un(NEVER_IMPLEMENTED, i(179612)),	-- 
+		un(NEVER_IMPLEMENTED, i(179614)),	-- 
+		un(NEVER_IMPLEMENTED, i(179616)),	-- 
+		un(NEVER_IMPLEMENTED, i(179617)),	-- 
+		un(NEVER_IMPLEMENTED, i(179618)),	-- 
+		un(NEVER_IMPLEMENTED, i(179619)),	-- 
+		un(NEVER_IMPLEMENTED, i(179636)),	-- 
+		un(NEVER_IMPLEMENTED, i(179637)),	-- 
+		un(NEVER_IMPLEMENTED, i(179639)),	-- 
+		un(NEVER_IMPLEMENTED, i(179640)),	-- 
+		un(NEVER_IMPLEMENTED, i(179641)),	-- 
+		un(NEVER_IMPLEMENTED, i(179642)),	-- 
+		un(NEVER_IMPLEMENTED, i(179644)),	-- 
+		un(NEVER_IMPLEMENTED, i(179645)),	-- 
+		un(NEVER_IMPLEMENTED, i(179646)),	-- 
+		un(NEVER_IMPLEMENTED, i(179647)),	-- 
+		un(NEVER_IMPLEMENTED, i(179648)),	-- 
+		un(NEVER_IMPLEMENTED, i(179649)),	-- 
+		un(NEVER_IMPLEMENTED, i(179650)),	-- 
+		un(NEVER_IMPLEMENTED, i(179651)),	-- 
+		un(NEVER_IMPLEMENTED, i(179732)),	-- 
+		un(NEVER_IMPLEMENTED, i(179738)),	-- 
+		un(NEVER_IMPLEMENTED, i(180578)),	-- 
+		un(NEVER_IMPLEMENTED, i(181812)),	-- 
+		un(NEVER_IMPLEMENTED, i(181813)),	-- 
+		un(NEVER_IMPLEMENTED, i(181814)),	-- 
+		un(NEVER_IMPLEMENTED, i(181881)),	-- 
+		un(NEVER_IMPLEMENTED, i(181882)),	-- 
+		un(NEVER_IMPLEMENTED, i(181883)),	-- 
+		un(NEVER_IMPLEMENTED, i(181884)),	-- 
+		
+		-- all "Retrieving Data" in BFA weapons
+		-- Daggers
+		un(NEVER_IMPLEMENTED, i(177719)),	-- 
+		un(NEVER_IMPLEMENTED, i(177720)),	-- 
+		un(NEVER_IMPLEMENTED, i(177721)),	-- 
+		un(NEVER_IMPLEMENTED, i(177722)),	-- 
+		un(NEVER_IMPLEMENTED, i(177723)),	-- 
+		un(NEVER_IMPLEMENTED, i(177724)),	-- 
+		un(NEVER_IMPLEMENTED, i(179503)),	-- 
+		un(NEVER_IMPLEMENTED, i(179504)),	-- 
+		un(NEVER_IMPLEMENTED, i(179505)),	-- 
+		un(NEVER_IMPLEMENTED, i(179506)),	-- 
+		un(NEVER_IMPLEMENTED, i(179507)),	-- 
+		un(NEVER_IMPLEMENTED, i(180863)),	-- 
+		-- 1H Maces
+		un(NEVER_IMPLEMENTED, i(176012)),	-- 
+		un(NEVER_IMPLEMENTED, i(176013)),	-- 
+		un(NEVER_IMPLEMENTED, i(176014)),	-- 
+		un(NEVER_IMPLEMENTED, i(176015)),	-- 
+		un(NEVER_IMPLEMENTED, i(176016)),	-- 
+		un(NEVER_IMPLEMENTED, i(176007)),	-- 
+		un(NEVER_IMPLEMENTED, i(179007)),	-- 
+		un(NEVER_IMPLEMENTED, i(179550)),	-- 
+		un(NEVER_IMPLEMENTED, i(179551)),	-- 
+		un(NEVER_IMPLEMENTED, i(179552)),	-- 
+		un(NEVER_IMPLEMENTED, i(179553)),	-- 
+		un(NEVER_IMPLEMENTED, i(179554)),	-- 
+		un(NEVER_IMPLEMENTED, i(179555)),	-- 
+		-- Held In Off-Hand
+		un(NEVER_IMPLEMENTED, i(176042)),	-- 
+		un(NEVER_IMPLEMENTED, i(176043)),	-- 
+		un(NEVER_IMPLEMENTED, i(176044)),	-- 
+		un(NEVER_IMPLEMENTED, i(176045)),	-- 
+		un(NEVER_IMPLEMENTED, i(176046)),	-- 
+		un(NEVER_IMPLEMENTED, i(177725)),	-- 
+		un(NEVER_IMPLEMENTED, i(177726)),	-- 
+		un(NEVER_IMPLEMENTED, i(177727)),	-- 
+		un(NEVER_IMPLEMENTED, i(177728)),	-- 
+		un(NEVER_IMPLEMENTED, i(177729)),	-- 
+		un(NEVER_IMPLEMENTED, i(177730)),	-- 
+		-- Staves
+		un(NEVER_IMPLEMENTED, i(176841)),	-- 
+		un(NEVER_IMPLEMENTED, i(176842)),	-- 
+		un(NEVER_IMPLEMENTED, i(176843)),	-- 
+		un(NEVER_IMPLEMENTED, i(176844)),	-- 
+		un(NEVER_IMPLEMENTED, i(178117)),	-- 
+		un(NEVER_IMPLEMENTED, i(178118)),	-- 
+		un(NEVER_IMPLEMENTED, i(179519)),	-- 
+		un(NEVER_IMPLEMENTED, i(179520)),	-- 
+		un(NEVER_IMPLEMENTED, i(179521)),	-- 
+		un(NEVER_IMPLEMENTED, i(179522)),	-- 
+		un(NEVER_IMPLEMENTED, i(179523)),	-- 
+		un(NEVER_IMPLEMENTED, i(179524)),	-- 
+		un(NEVER_IMPLEMENTED, i(179994)),	-- 
+		un(NEVER_IMPLEMENTED, i(179995)),	-- 
+		un(NEVER_IMPLEMENTED, i(179996)),	-- 
+		un(NEVER_IMPLEMENTED, i(179997)),	-- 
+		un(NEVER_IMPLEMENTED, i(179998)),	-- 
+		un(NEVER_IMPLEMENTED, i(179999)),	-- 
+		un(NEVER_IMPLEMENTED, i(180157)),	-- 
+		un(NEVER_IMPLEMENTED, i(180158)),	-- 
+		un(NEVER_IMPLEMENTED, i(180159)),	-- 
+		un(NEVER_IMPLEMENTED, i(180160)),	-- 
+		un(NEVER_IMPLEMENTED, i(180161)),	-- 
+		-- Wands
+		un(NEVER_IMPLEMENTED, i(180012)),	-- 
+		un(NEVER_IMPLEMENTED, i(180013)),	-- 
+		un(NEVER_IMPLEMENTED, i(180014)),	-- 
+		un(NEVER_IMPLEMENTED, i(180015)),	-- 
+		un(NEVER_IMPLEMENTED, i(180016)),	-- 
+		un(NEVER_IMPLEMENTED, i(180017)),	-- 
 	}),
 	n(105, {	-- Achievements
 		un(NEVER_IMPLEMENTED, ach(14116)),	-- All Bridges Burned
@@ -1239,6 +1537,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(81000)),	-- Ringmail Armor of Eminent Domain (not added version)
 			un(NEVER_IMPLEMENTED, i(80996)),	-- Chain Armor of Eminent Domain (not added version)
 			un(NEVER_IMPLEMENTED, i(37454)),	-- HF28 Mail Physical Chest4
+			un(NEVER_IMPLEMENTED, i(2867)),		-- Rough Bronze Bracers (crafted by NYI pattern)
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
@@ -3781,10 +4080,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
-			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
-			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
-			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
-			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
 			un(NEVER_IMPLEMENTED, i(50251)),	-- Unknown
@@ -3888,10 +4183,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
-			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
-			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
-			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
-			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown
