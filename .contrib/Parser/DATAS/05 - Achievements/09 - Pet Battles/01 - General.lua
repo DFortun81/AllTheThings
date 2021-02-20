@@ -6,11 +6,11 @@ _.Achievements =
 {
 	n(-9963, {	-- Pet Battles
 		n(-9955, {	-- General
-			ach(8080),	-- Fabled Pandaren Tamer*
-			ach(7908, {	-- I Choose You*
+			ach(8080),		-- Fabled Pandaren Tamer*
+			ach(7908, {		-- I Choose You*
 				i(92744),	-- Heavy Sack of Gold
 			}),
-			ach(7936),	-- Pandaren Spirit Tamer*
+			ach(7936),		-- Pandaren Spirit Tamer*
 			ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
 				i(174830),	-- Shadowy Disguise
 			}),
@@ -26,9 +26,9 @@ _.Achievements =
 			ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
 				i(147543),	-- Son of Skum
 			}),
-			ach(12927),	-- Polished Pet Charmer*
-			ach(9712), 	-- Shiny Pet Charmer*
-			ach(6607, {	-- Taming Azeroth*
+			ach(12927),		-- Polished Pet Charmer*
+			ach(9712), 		-- Shiny Pet Charmer*
+			ach(6607,  {	-- Taming Azeroth*
 				title(207),	-- Tamer
 				crit(1),	-- Taming Outland
 				crit(2),	-- Taming Northrend
@@ -36,13 +36,13 @@ _.Achievements =
 				crit(4),	-- Taming Pandaria
 				crit(5),	-- Taming Eastern Kingdoms / Taming Kalimdor
 			}),
-			ach(7525, {	-- Taming Cataclysm*
+			ach(7525,  {	-- Taming Cataclysm*
 				crit(1),	-- Brok [Mount Hyjal)
 				crit(2),	-- Bordin Steadyfist [Deepholm)
 				crit(3),	-- Goz Banefury [Twilight Highlands)
 				crit(4),	-- Obalis [Uldum)
 			}),
-			ach(9724, {	-- Taming Draenor*
+			ach(9724,  {	-- Taming Draenor*
 				crit(1),	-- Ashlei [Shadowmoon Valley)
 				crit(2),	-- Cymre Brightblade [Gorgrond)
 				crit(3),	-- Gargra [Frostfire Ridge)
@@ -50,87 +50,55 @@ _.Achievements =
 				crit(5),	-- Tarr the Terrible [Nagrand)
 				crit(6),	-- Vesharr [Spires of Arak)
 			}),
-			{  -- Taming Eastern Kingdoms [Alliance] // Taming Kalimdor [Horde]
-				["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-				["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
+			ach(6603,  {	-- Taming Eastern Kingdoms
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Julia Stevens [Elwynn Forest] [Alliance] //  Zunta [Durotar] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 1,					-- Julia Stevens [Elwynn Forest] [Alliance] //  Zunta [Durotar] [Horde]
-					},
-					{	-- Old MacDonald [Westfall] [Alliance] //  Dagra the Fierce [Northern Barrens] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 2,					-- Old MacDonald [Westfall] [Alliance] //  Dagra the Fierce [Northern Barrens] [Horde]
-					},
-					{	-- Lindsay [Redridge Mountains] [Alliance] //  Analynn [Ashenvale] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 3,					-- Lindsay [Redridge Mountains] [Alliance] //  Analynn [Ashenvale] [Horde]
-					},
-					{	-- Eric Davidson [Duskwood] [Alliance] //  Zonya the Sadist [Stonetalon Mountains] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 4,					-- Eric Davidson [Duskwood] [Alliance] //  Zonya the Sadist [Stonetalon Mountains] [Horde]
-					},
-					{	-- Steven Lisbane [Northern Stranglethorn] [Alliance] //  Merda Stronghoo [Desolace] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 5,					-- Steven Lisbane [Northern Stranglethorn] [Alliance] //  Merda Stronghoo [Desolace] [Horde]
-					},
-					{	-- Bill Buckler [The Cape of Stranglethorn] [Alliance] //  Traitor Gluk [Feralas] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 6,					-- Bill Buckler [The Cape of Stranglethorn] [Alliance] //  Traitor Gluk [Feralas] [Horde]
-					},
-					{	-- David Kosse [The Hinterlands] [Alliance] //  Elena Flutterfly [Moonglade] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 7,					-- David Kosse [The Hinterlands] [Alliance] //  Elena Flutterfly [Moonglade] [Horde]
-					},
-					{	-- Deiza Plaguehorn [Eastern Plaguelands] [Alliance] //  Cassandra Kaboom [Southern Barrens] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 8,					-- Deiza Plaguehorn [Eastern Plaguelands] [Alliance] //  Cassandra Kaboom [Southern Barrens] [Horde]
-					},
-					{	-- Kortas Darkhammer [Searing Gorge] [Alliance] //  Grazzle the Great [Dustwallow Marsh] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 9,					-- Kortas Darkhammer [Searing Gorge] [Alliance] //  Grazzle the Great [Dustwallow Marsh] [Horde]
-					},
-					{	-- Durin Darkhammer [Burning Steppes] [Alliance] //  Zoltan [Felwood] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 10,				-- Durin Darkhammer [Burning Steppes] [Alliance] //  Zoltan [Felwood] [Horde]
-					},
-					{	-- Everessa [Swamp of Sorrows] [Alliance] //  Kela Grimtotem [Thousand Needles] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 11,				-- Everessa [Swamp of Sorrows] [Alliance] //  Kela Grimtotem [Thousand Needles] [Horde]
-					},
-					{	-- Lydia Accoste [Deadwind Pass] [Alliance] //  Stone Cold Trixxy [Winterspring] [Horde]
-						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [Alliance]
-						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [Horde]
-						["criteriaID"] = 12,				-- Lydia Accoste [Deadwind Pass] [Alliance] //  Stone Cold Trixxy [Winterspring] [Horde]
-					},
-				}
-			},
-			ach(6605, {	-- Taming Northrend*
+					crit(1),	-- Julia Stevens
+					crit(2),	-- Old MacDonald
+					crit(3),	-- Lindsay
+					crit(4),	-- Eric Davidson
+					crit(5),	-- Steven Lisbane
+					crit(6),	-- Bill Buckler
+					crit(7),	-- David Kosse
+					crit(8),	-- Deiza Plaguehorn
+					crit(9),	-- Kortas Darkhammer
+					crit(10),	-- Durin Darkhammer
+					crit(11),	-- Everessa
+					crit(12),	-- Lydia Accoste
+				},
+			}),
+			ach(6602,  {	-- Taming Kalimdor
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Zunta
+					crit(2),	-- Dagra the Fierce
+					crit(3),	-- Analynn
+					crit(4),	-- Zonya the Sadist
+					crit(5),	-- Merda Stronghoof
+					crit(6),	-- Traitor Gluk
+					crit(7),	-- Elena Flutterfly
+					crit(8),	-- Cassandra Kaboom
+					crit(9),	-- Grazzle the Great
+					crit(10),	-- Zoltan
+					crit(11),	-- Kela Grimtotem
+					crit(12),	-- Stone Cold Trixxy
+				},
+			}),
+			ach(6605,  {	-- Taming Northrend*
 				crit(1),	-- Beegle Blastfuse [Howling Fjord)
 				crit(2),	-- Nearly Headless Jacob [Crystalsong Forest)
 				crit(3),	-- Okrut Dragonwaste [Dragonblight)
 				crit(4),	-- Gutretch [Zul'Drak)
 				crit(5),	-- Major Payne [Icecrown)
 			}),
-			ach(6604, {	-- Taming Outland*
+			ach(6604,  {	-- Taming Outland*
 				crit(1),	-- Nicki Tinytech [Hellfire Peninsula)
 				crit(2),	-- Ras'an [Zangarmarsh)
 				crit(3),	-- Narrok [Nagrand)
 				crit(4),	-- Morulu The Elder [Shattrath City)
 				crit(5),	-- Bloodknight Antari [Shadowmoon Valley)
 			}),
-			ach(6606, {	-- Taming Pandaria*
+			ach(6606,  {	-- Taming Pandaria*
 				crit(1),	-- Hyuna of the Shrines [The Jade Forest)
 				crit(2),	-- Farmer Nishi [Valley of the Four Winds)
 				crit(3),	-- Mo'ruk [Krasarang Wilds)
@@ -139,7 +107,7 @@ _.Achievements =
 				crit(6),	-- Wastewalker Shu [Dread Wastes)
 				crit(7),	-- Aki the Chosen [Vale of Eternal Blossoms)
 			}),
-			ach(7499, {	-- Taming the World [40)*
+			ach(7499,  {	-- Taming the World (40)*
 				i(92738),	-- Safari Hat
 				ach(7498),	-- Taming the Great Outdoors [15)
 				ach(6601),	-- Taming the Wild [1)
@@ -147,7 +115,7 @@ _.Achievements =
 			ach(13695, {	-- Team Aquashock
 				i(169349),	-- Kelpfin
 			}),
-			ach(8348, {	-- The Longest Day*
+			ach(8348,  {	-- The Longest Day*
 				i(98715),	-- Marked Flawless Battle-Stone
 				crit(1),	-- Nicki Tinytech [Hellfire Peninsula)
 				crit(2),	-- Ras'an [Zangarmarsh)
@@ -199,7 +167,7 @@ _.Achievements =
 				crit(4),	-- Pet Battle Challenge: Stratholme
 				crit(5),	-- Pet Battle Challenge: Blackrock Depths
 			}),
-			ach(7521, {	-- Time to Open a Pet Store [400)*
+			ach(7521,  {	-- Time to Open a Pet Store [400)*
 				i(89686),	-- Jade Tentacle
 				ach(6600),	-- Ultimate Trainer [300)
 				ach(7483),	-- Battle Master [200)

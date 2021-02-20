@@ -7,7 +7,7 @@ _.Achievements =
 {
 	n(-9960, {	-- Professions
 		n(-9971, bubbleDown({ ["requireSkill"] = COOKING, }, {	-- Cooking
-			ach(2002, {		-- 100 Cooking Awards
+			ach(2002,  {	-- 100 Cooking Awards
 				ach(2001),		-- 50 Cooking Awards
 				ach(2000),		-- 25 Cooking Awards
 				ach(1999),		-- 10 Cooking Awards
@@ -16,7 +16,7 @@ _.Achievements =
 			ach(5845),		-- A Bunch of Lunch
 			ach(10591),		-- All Grown Up
 			ach(4916),		-- Cataclysmic Cook
-			ach(12747, {		-- Catering for Combat
+			ach(12747, {	-- Catering for Combat
 				["cost"] = {
 					{ "i", 156525, 1 },	-- 1x Galley Banquet
 					{ "i", 156526, 1 },	-- 1x Bountiful Captain's Feast
@@ -24,18 +24,18 @@ _.Achievements =
 					{ "i", 168315, 1 },	-- 1x Famine Evaluator And Snack Table
 				},
 			}),
-			ach(123, {		-- Classic Cook
+			ach(123,   {	-- Classic Cook
 				ach(122),		-- Expert Cook
 				ach(121),		-- Journeyman Cook
 			}),
 			ach(3296),		-- Cooking with Style
 			ach(9500),		-- Draenor Cook
 			ach(10593),		-- Everything Tastes Better
-			ach(1563, {		-- Hail to the Chef
+			ach(1563,  {	-- Hail to the Chef
 				title(52),		-- Chef
 				ach(125),		-- Northrend Cook
 				ach(877),		-- The Cake Is Not A Lie
-				ach(906, {		-- Kickin' It Up a Notch
+				ach(906,  {		-- Kickin' It Up a Notch
 					crit(1),		-- Revenge is Tasty
 					crit(2),		-- Super Hot Stew
 					crit(3),		-- Manalicious
@@ -97,20 +97,26 @@ _.Achievements =
 					crit(4, { ["cost"] = { { "i", 43490, 1 } } } ),		-- Tasty Cupcake
 				}),
 				ach(1781),		-- Critter Gitter
-				a(ach(1782, {	-- Our Daily Bread [A]
-					crit(1),	-- Infused Mushroom Meatloaf
-					crit(2),	-- Convention at the Legerdemain
-					crit(3),	-- Sewer Stew
-					crit(4),	-- Cheese for Glowergold
-					crit(5),	-- Mustard Dogs!
-				})),
-				h(ach(1783, {	-- Our Daily Bread [H]
-					crit(1),	-- Infused Mushroom Meatloaf
-					crit(2),	-- Convention at the Legerdemain
-					crit(3),	-- Sewer Stew
-					crit(4),	-- Cheese for Glowergold
-					crit(5),	-- Mustard Dogs!
-				})),
+				ach(1782, {		-- Our Daily Bread (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1),	-- Infused Mushroom Meatloaf
+						crit(2),	-- Convention at the Legerdemain
+						crit(3),	-- Sewer Stew
+						crit(4),	-- Cheese for Glowergold
+						crit(5),	-- Mustard Dogs!
+					},
+				}),
+				ach(1783, {		-- Our Daily Bread (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1),	-- Infused Mushroom Meatloaf
+						crit(2),	-- Convention at the Legerdemain
+						crit(3),	-- Sewer Stew
+						crit(4),	-- Cheese for Glowergold
+						crit(5),	-- Mustard Dogs!
+					},
+				}),
 				ach(1785, {		-- Dinner Impossible
 					crit(1),		-- Alterac Valley
 					crit(2),		-- Arathi Basin
@@ -147,111 +153,79 @@ _.Achievements =
 					crit(25),		-- Stewed Trout
 				}),
 			}),
-			ach(7328, {		-- Ironpaw Chef(240)
+			ach(7328,  {	-- Ironpaw Chef(240)
 				ach(5471),		-- Iron Chef (200)
 				ach(1799),		-- Chef de Cuisine (160)
-				ach(1798),		-- Sous Chef (1798)
+				ach(1798),		-- Sous Chef (100)
 				ach(1797),		-- Chef de Partie (75)
 				ach(1796),		-- Short Order Cook (50)
 				ach(1795),		-- Lunch Lady (25)
 			}),
-			a(ach(12742)),	-- Kul Tiran Cook [Alliance]
-			h(ach(12743)),	-- Zandalari Cook [Horde]
+			ach(12742, {	-- Kul Tiran Cook (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
 			ach(10589),		-- Legion Cook
-			{  -- Let's Do Lunch: Darnassus/Undercity
-				["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-				["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
+			ach(5842,  {	-- Let's Do Lunch: Darnassus
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{
-						["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-						["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
-						["criteriaID"] = 1,	-- The Secret to Perfect Kimchi [Alliance] // Fungus Among Us[Horde]
-					},
-					{
-						["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-						["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
-						["criteriaID"] = 2,	-- Remembering the Ancestors [Alliance] // Lily, Oh Lily [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-						["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
-						["criteriaID"] = 3,	-- Back to Basics [Alliance] // Escargot A Go-Go [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-						["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
-						["criteriaID"] = 4,	-- Ribs for the Sentinels [Alliance] // Roach Coach [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
-						["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
-						["criteriaID"] = 5,	-- Spice Bread Aplenty [Alliance] // Would You Like Some Flies With That? [Horde]
-					},
+					crit(1),	-- The Secret to Perfect Kimchi
+					crit(2),	-- Remembering the Ancestors
+					crit(3),	-- Back to Basics
+					crit(4),	-- Ribs for the Sentinels
+					crit(5),	-- Spice Bread Aplenty
 				},
-			},
-			{  -- Let's Do Lunch: Stormwind/Orgrimmar
-				["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-				["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
+			}),
+			ach(5841,  {	-- Let's Do Lunch: Ironforge
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{
-						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-						["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
-						["criteriaID"] = 1,	-- A Fisherman's Feast [Alliance] // Careful, This Fruit Bites Back[Horde]
-					},
-					{
-						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-						["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
-						["criteriaID"] = 2,	-- Feeling Crabby? [Alliance] // Crawfish Creole [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-						["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
-						["criteriaID"] = 3,	-- Orphans Like Cookies Too! [Alliance] // Even Thieves Get Hungry [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-						["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
-						["criteriaID"] = 4,	-- Penny's Pumpkin Pancakes [Alliance] // Everything Is Better with Bacon [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
-						["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
-						["criteriaID"] = 5,	-- The King's Cider [Alliance] // Stealing Credit [Horde]
-					},
+					crit(1),	-- A Round for the Guards
+					crit(2),	-- A Fowl Shortage
+					crit(3),	-- Keepin' the Haggis Flowin'
+					crit(4),	-- Can't Get Enough Spice Bread
+					crit(5),	-- I Need to Cask a Favor
 				},
-			},
-			{  -- Let's Do Lunch: Ironforge/Thunder Bluff
-				["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-				["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
+			}),
+			ach(5475,  {	-- Let's Do Lunch: Orgrimmar
+				["races"] = HORDE_ONLY,
 				["g"] = {
-					{
-						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-						["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
-						["criteriaID"] = 1,	-- A Round for the Guards [Alliance] // Pining for Nuts [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-						["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
-						["criteriaID"] = 2,	-- A Fowl Shortage [Alliance] // "Magic" Mushrooms [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-						["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
-						["criteriaID"] = 3,	-- Keepin' the Haggis Flowin' [Alliance] // Mulgore Spice Bread [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-						["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
-						["criteriaID"] = 4,	-- Can't Get Enough Spice Bread [Alliance] // Corn Mash [Horde]
-					},
-					{
-						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
-						["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
-						["criteriaID"] = 5,	-- I Need to Cask a Favor [Alliance] // Perfectly Picked Portions [Horde]
-					},
+					crit(1),	-- Careful, This Fruit Bites Back
+					crit(2),	-- Crawfish Creole
+					crit(3),	-- Even Thieves Get Hungry
+					crit(4),	-- Everything Is Better with Bacon
+					crit(5),	-- Stealing Credit
 				},
-			},
-			ach(7306, {		-- Master of Pandaren Cooking
+			}),
+			ach(5474,  {	-- Let's Do Lunch: Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(1),	-- A Fisherman's Feast
+					crit(2),	-- Feeling Crabby?
+					crit(3),	-- Orphans Like Cookies Too!
+					crit(4),	-- Penny's Pumpkin Pancakes
+					crit(5),	-- The King's Cider
+				},
+			}),
+			ach(5843,  {	-- Let's Do Lunch: Thunder Bluff
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Pining for Nuts
+					crit(2),	-- "Magic" Mushrooms
+					crit(3),	-- Mulgore Spice Bread
+					crit(4),	-- Corn Mash
+					crit(5),	-- Perfectly Picked Portions
+				},
+			}),
+			ach(5844,  {	-- Let's Do Lunch: Undercity
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Fungus Among Us
+					crit(2),	-- Lily, Oh Lily
+					crit(3),	-- Escargot A Go-Go
+					crit(4),	-- Roach Coach
+					crit(5),	-- Would You Like Some Flies With That?
+				},
+			}),
+			ach(7306,  {	-- Master of Pandaren Cooking
 				title(202),		-- , Master of the Ways
 				ach(7300),		-- Master of the Grill
 				ach(7301),		-- Master of the Wok
@@ -261,13 +235,13 @@ _.Achievements =
 				ach(7305),		-- Master of the Brew
 			}),
 			ach(10592),		-- Never A Day's Rest
-			ach(7325, {		-- Now I Am the Master
+			ach(7325,  {	-- Now I Am the Master
 				crit(1),		-- Obtain the Cooking School Bell
 				crit(2),		-- Train your student to become an Expert in Cooking (Exalted)
 			}),
 			ach(124),		-- Outland Cook
 			ach(14332),		-- Shadowlands Cook
-			ach(5473, {		-- The Cataclysmic Gourmet (30)
+			ach(5473,  {	-- The Cataclysmic Gourmet (30)
 				crit(1),		-- Baked Rockfish
 				crit(2),		-- Basilisk Liverdog
 				crit(3),		-- Beer-Basted Crocolisk
@@ -302,7 +276,7 @@ _.Achievements =
 				crit(32),		-- Whitecrest Gumbo
 				ach(5472),		-- The Cataclysmic Gourmet (15)
 			}),
-			ach(9501, {		-- The Draenor Gourmet
+			ach(9501,  {	-- The Draenor Gourmet
 				crit(1),		-- Blackrock Barbecue
 				crit(2),		-- Blackrock Ham
 				crit(3),		-- Braised Riverbeast
@@ -326,72 +300,23 @@ _.Achievements =
 				crit(21),		-- Sturgeon Stew
 				crit(22),		-- Talador Surf and Turf
 			}),
-			{ -- The Kul Tiran Menu/The Zandalari Menu
-				["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-				["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
+			ach(12744, {	-- The Kul Tiran Menu
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 1,	-- Bountiful Captain's Feast [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 2,	-- Galley Banquet [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 3,	-- Grilled Catfish [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 4,	-- Honey-Glazed Haunches [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 5,	-- Kul Tiramisu [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 6,	-- Loa Loaf [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 7,	-- Mon'Dazi [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 8,	-- Ravenberry Tarts [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 9,	-- Sailor's Pie [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 10, -- Seasoned Loins [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 11, -- Spiced Snapper [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 12744,	-- The Kul Tiran Menu [Alliance]
-						["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
-						["criteriaID"] = 12, -- Swamp Fish 'n Chips [Alliance] // [Horde]
-					},
+					crit(1),	-- Bountiful Captain's Feast
+					crit(2),	-- Galley Banquet
+					crit(3),	-- Grilled Catfish
+					crit(4),	-- Honey-Glazed Haunches
+					crit(5),	-- Kul Tiramisu
+					crit(6),	-- Loa Loaf
+					crit(7),	-- Mon'Dazi
+					crit(8),	-- Ravenberry Tarts
+					crit(9),	-- Sailor's Pie
+					crit(10),	-- Seasoned Loins
+					crit(11),	-- Spiced Snapper
+					crit(12),	-- Swamp Fish 'n Chips
 				},
-			},
+			}),
 			ach(10762, {	-- The Legion Menu
 				crit(1),		-- Salt and Pepper Shank
 				crit(2),		-- Deep-Fried Mossgill
@@ -415,7 +340,7 @@ _.Achievements =
 				crit(20),		-- Lavish Suramar Feast
 				crit(21),		-- Crispy Bacon
 			}),
-			ach(7327, {		-- The Pandaren Gourmet (30
+			ach(7327,  {	-- The Pandaren Gourmet (30
 				crit(1),		-- Black Pepper Ribs and Shrimp
 				crit(2),		-- Blanched Needle Mushrooms
 				crit(3),		-- Boiled Silkworm Pupa
@@ -460,7 +385,27 @@ _.Achievements =
 				crit(42),		-- Yak Cheese Curds
 				ach(7326),		-- The Pandaren Gourmet (15)
 			}),
+			ach(12746, {	-- The Zandalari Menu
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Bountiful Captain's Feast
+					crit(2),	-- Galley Banquet
+					crit(3),	-- Grilled Catfish
+					crit(4),	-- Honey-Glazed Haunches
+					crit(5),	-- Kul Tiramisu
+					crit(6),	-- Loa Loaf
+					crit(7),	-- Mon'Dazi
+					crit(8),	-- Ravenberry Tarts
+					crit(9),	-- Sailor's Pie
+					crit(10),	-- Seasoned Loins
+					crit(11),	-- Spiced Snapper
+					crit(12),	-- Swamp Fish 'n Chips
+				},
+			}),
 			ach(5779),		-- You'll Feel Right as Rain
+			ach(12743, {	-- Zandalari Cook (H)
+				["races"] = HORDE_ONLY,
+			}),
 			ach(6365),		-- Zen Master Cook
 		})),
 	}),

@@ -185,34 +185,45 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11469)),		-- The River Six
 			un(REMOVED_FROM_GAME, ach(11686)),		-- These Go To Eleven
 			un(REMOVED_FROM_GAME, ach(10993)),		-- Third Time's The Charm
-			{	-- Top Honors
-				["allianceAchievementID"] = 10988,	-- Top Honors [Alliance]
-				["hordeAchievementID"] = 10990,		-- Top Honors [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 8.0
-			},
-
+			ach(10988, {	-- Top Honors (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
+			}),
+			ach(10990, {	-- Top Honors (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
+			}),
 			un(REMOVED_FROM_GAME, ach(12109)),		-- Twenty-One Arms Salute
 			un(REMOVED_FROM_GAME, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8093))),	-- Tyrannical Conquest (Horde)
 			un(REMOVED_FROM_GAME, h(ach(445, {		-- Warlord
 				un(REMOVED_FROM_GAME, h(title(27))),	-- Warlord
 			}))),
-			{	-- Warmongering Conquest
-				["allianceAchievementID"] = 10091,	-- Warmongering Conquest [Alliance]
-				["hordeAchievementID"] = 10090,		-- Warmongering Conquest [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 7.0
-			},
+			ach(10091, {	-- Warmongering Conquest (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
+			}),
+			ach(10090, {	-- Warmongering Conquest (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
+			}),
 			un(REMOVED_FROM_GAME, ach(11690)),		-- When You're Fifteen
-			{	-- Wild Combatant
-				["allianceAchievementID"] = 10093,	-- Wild Combatant [Alliance]
-				["hordeAchievementID"] = 10092,		-- Wild Combatant [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 6.2.2
-			},
-			{	-- Wild Conquest
-				["allianceAchievementID"] = 10089,	-- Wild Conquest [Alliance]
-				["hordeAchievementID"] = 10088,		-- Wild Conquest [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 6.2.2
-			},
+			ach(10093, {	-- Wild Combatant (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10092, {	-- Wild Combatant (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10089, {	-- Wild Conquest (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10088, {	-- Wild Conquest (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
 			un(REMOVED_FROM_GAME, ach(11691)),		-- You Are Sixteen
 		}),
 	}),
