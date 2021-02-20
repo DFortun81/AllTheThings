@@ -12,6 +12,10 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(1766)),		-- Ancient Protector
 			un(REMOVED_FROM_GAME, ach(2189)),		-- Artillery Expert
 			un(REMOVED_FROM_GAME, ach(1763)),		-- Artillery Veteran
+			ach(611, {	-- Bleeding Bloodhoof
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, h(ach(449, {		-- Blood Guard
 				un(REMOVED_FROM_GAME, h(title(21))),	-- Blood Guard
 			}))),
@@ -57,6 +61,10 @@ _.Achievements =
 			}))),
 			un(REMOVED_FROM_GAME, ach(11471)),		-- Don't Hate, Grind to Eight
 			un(REMOVED_FROM_GAME, ach(12108)),		-- Double Decade of Dominance
+			ach(612, {	-- Downing the Dark Lady
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, ach(2190)),		-- Drop It Now!
 			un(REMOVED_FROM_GAME, ach(1764)),		-- Drop It!
 			un(REMOVED_FROM_GAME, ach(11693)),		-- Eighteen and Over
@@ -175,6 +183,10 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(title(20))),	-- Stone Guard
 			}))),
 			un(REMOVED_FROM_GAME, ach(1310)),		-- Storm the Beach
+			ach(615, {	-- Storming Stormwind
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, ach(1309, {		-- Strand of the Ancients Veteran
 					un(REMOVED_FROM_GAME, ach(1308)),	-- Strand of the Ancients Victory
 			})),

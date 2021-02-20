@@ -7,7 +7,7 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(543, {	-- Gorgrond
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
@@ -117,7 +117,7 @@ _.Zones =
 				ach(9654),		-- Mean and Green (Everbloom Wilds)
 				ach(9663),		-- Picky Palate (Everbloom Wilds)
 				ach(9658),		-- Pillars of Draenor (Everbloom Wilds)
-				ach(9402, {	-- Prove Your Strength
+				ach(9402,  {	-- Prove Your Strength
 					crit(1, {	-- Ancient Branch
 						["sourceQuests"] = { 36092, 36094 },	-- Proof of Strength: (A/H)
 					}),
@@ -152,7 +152,7 @@ _.Zones =
 						["sourceQuests"] = { 36098, 36101 },	-- Proof of Strength: (A/H)
 					}),
 				}),
-				ach(8923, {	-- Putting the Gore in Gorgrond (Alliance) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
+				ach(8923,  {	-- Putting the Gore in Gorgrond (A) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- We Need An Outpost
@@ -178,7 +178,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(8924, {	-- Putting the Gore in Gorgrond
+				ach(8924,  {	-- Putting the Gore in Gorgrond (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Your Base, Your Choice
@@ -204,22 +204,22 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(9564, 9562, {	-- Securing Draenor [A] / [H]
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					--["races"] = ALLIANCE_ONLY,
+				ach(9564,  {	-- Securing Draenor (A)
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(4),	-- Assault on the Pit  [A] / [H]
-						crit(5),	-- Assault on the Everbloom Wilds  [A] / [H]
+						crit(4),	-- Assault on the Pit
+						crit(5),	-- Assault on the Everbloom Wilds
 					},
 				}),
-				--[[ach(9562,  {	-- Securing Draenor (Horde)
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+				ach(9562,  {	-- Securing Draenor (H)
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(5),		-- Assault on the Everbloom Wilds
-						crit(4),		-- Assault on the Pit
+						crit(4),	-- Assault on the Pit
+						crit(5),	-- Assault on the Everbloom Wilds
 					},
-				}),]]
+				}),
 			}),
 		}),
 	}),
