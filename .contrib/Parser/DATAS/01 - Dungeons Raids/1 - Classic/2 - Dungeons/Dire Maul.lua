@@ -227,10 +227,6 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(18466)),	--Royal Seal of Eldre'Thalas
 							},
 						}),
-						q(27133, {	-- Eyes in the Sky
-							["provider"] = { "n", 3936 },	-- Shandris Feathermoon
-							["races"] = ALLIANCE_ONLY,
-						}),
 						q(8949, {	-- Falrin's Vendetta
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
