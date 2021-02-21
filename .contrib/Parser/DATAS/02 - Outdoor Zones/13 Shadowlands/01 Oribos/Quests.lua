@@ -396,8 +396,14 @@ _.Zones =
 				}),
 				q(62716, {	-- Re-Introductions
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
-					["coord"] = { 19.6, 50.2, 1670 },
+					["providers"] = {
+						{ "n", 174871 },	-- Fatescribe Roh-Tahl
+						{ "n", 164173 },	-- Fatescribe Roh-Tahl
+					},
+					["coords"] = {
+						{ 19.6, 50.2, 1670 },
+						{ 79.0, 49.2, 1670 },
+					},
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				}),
 				q(62000, {	-- Choosing Your Purpose
