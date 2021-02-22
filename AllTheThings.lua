@@ -14852,7 +14852,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true);
-					app.print(L["CHACED_RECIPES_1"] .. learned .. L["CHACHED_RECIPES_2"]);		-- L["CHACED_RECIPES_1"] = "Cached "; L["CHACHED_RECIPES_2"] = " known recipes!"
+					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);		-- L["CACHED_RECIPES_1"] = "Cached "; L["CACHED_RECIPES_2"] = " known recipes!"
 					wipe(searchCache);
 				end
 			end
