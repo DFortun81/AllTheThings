@@ -587,8 +587,8 @@ _.Achievements =
 				crit(5),	-- Canned Minnows
 				crit(6),	-- Vaultbot Key
 				crit(7),	-- Emergency Repair Kit
-				crit(7),	-- Emergency Powerpack
-				crit(8),	-- Mechano-Treat
+				crit(8),	-- Emergency Powerpack
+				crit(9),	-- Mechano-Treat
 				crit(10),	-- Ultrasafe Transporter: Mechagon
 				crit(11),	-- G99.99 Landshark
 				crit(12),	-- Rustbolt Gramophone
@@ -611,13 +611,12 @@ _.Achievements =
 				crit(29),	-- Blue Spraybot
 				crit(30),	-- Utility Mechanoclaw
 				crit(31),	-- Microbot XD
-				crit(32),	-- Vision of Perfection Rank 2
-				crit(33),	-- Anti-Gravity Pack
-				crit(34),	-- Rustbolt Pocket Turrent
-				crit(35),	-- Annoy-o-Tron Gang
-				crit(36),	-- Encrypted Black Market Radio
-				crit(37),	-- Re-Procedurally Generated Punchcard
-				crit(38),	-- S.P.A.R.E. Create
+				crit(32),	-- Anti-Gravity Pack
+				crit(33),	-- Rustbolt Pocket Turrent
+				crit(34),	-- Annoy-o-Tron Gang
+				crit(35),	-- Encrypted Black Market Radio
+				crit(36),	-- Re-Procedurally Generated Punchcard
+				crit(37),	-- S.P.A.R.E. Create
 			}),
 			ach(13474),		-- Junkyard Machinist
 			ach(13686, {	-- Junkyard Melomaniac
@@ -669,7 +668,12 @@ _.Achievements =
 				crit(3),		-- Portakillo killed
 				crit(4),		-- Toadcruel killed
 			}),
-			ach(13704, 13645),	-- Nautical Battlefield Training
+			ach(13704, {	-- Nautical Battlefield Training (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(13645, {	-- Nautical Battlefield Training (H)
+				["races"] = HORDE_ONLY,
+			}),
 			ach(13690, {	-- Nazjatarget Eliminated
 				crit(1, { 	-- Szun, Breaker of Slaves
 					["_quests"]  = { 55897 },

@@ -568,8 +568,8 @@ for key,value in pairs({
 	[236092] = "Versteckter Notfallrucksack",
 	[236096] = "Überreste von Balldir Tiefstein",
 	[236099] = "Sonnenbeschienener Speer",
-	[236139] = "Entdeckerkanister",
 	[236138] = "Vorratstruhe der Eisernen Horde",
+	[236139] = "Entdeckerkanister",
 	[236140] = "Gorentunnel",
 	[236141] = "Liegen gelassenes Bündel",
 	[236147] = "Hammer des Verteidigers",
@@ -624,7 +624,7 @@ for key,value in pairs({
 	[239828] = "Rand der Realität",
 	[239901] = "Leerenkrallenei",
 --	[239925] = GetSpellInfo(155346),	-- Ogrish Fortitude
---	[239926] = GetSpellInfo(155315),	-- Touched By Fire	
+--	[239926] = GetSpellInfo(155315),	-- Touched By Fire
 	[240003] = "Merkwürdiger Saphir",
 	[240289] = "Verwitterte Axt",
 	[240317] = "Iskars Foliant der Schatten",

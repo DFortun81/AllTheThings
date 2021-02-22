@@ -2975,7 +2975,7 @@ _.HiddenQuestTriggers =
 		q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
 		q(62550),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Alliance]
 		q(62551),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Horde]
-		q(62655),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Both]
+		q(62655),	-- Triggers after you activate your specialization (both NPE and non-NPE characters)
 		q(62802),	-- Triggered after going to Stormwind for An End to Beginnings
 		q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
 		q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras

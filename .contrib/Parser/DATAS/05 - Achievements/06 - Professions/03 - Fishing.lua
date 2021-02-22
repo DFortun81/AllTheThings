@@ -275,9 +275,6 @@ _.Achievements =
 			ach(12753, {	-- Kul Tiran Fisherman (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(12754, {	-- Zandalari Fisherman (H)
-				["races"] = HORDE_ONLY,
-			}),
 			ach(7274),		-- Learning from the Best
 			ach(10597),		-- Legion Aquaculture
 			ach(10594),		-- Legion Fisherman
@@ -679,6 +676,9 @@ _.Achievements =
 				crit(15),		-- Uther Lightbringer's Gold Coin
 			}),
 			ach(3218),		-- Turtles All the Way Down
+			ach(12754, {	-- Zandalari Fisherman (H)
+				["races"] = HORDE_ONLY,
+			}),
 			ach(6839),		-- Zen Master Fisherman
 		}),
 	}),

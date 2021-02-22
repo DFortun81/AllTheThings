@@ -1292,6 +1292,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, 84 },
+					["isBreadcrumb"] = true,
 				}),
 				q(29548, {	-- The Mission
 					["sourceQuests"] = {

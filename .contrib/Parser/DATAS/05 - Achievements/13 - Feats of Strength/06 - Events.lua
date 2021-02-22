@@ -42,12 +42,14 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(9618, {		-- The Iron Invasion
 				un(REMOVED_FROM_GAME,title(289)),		-- of the Iron Vanguard
 			})),
-			-- TODO:
-			{	-- Theramore's Fall
-				["allianceAchievementID"] = 7467,	-- Theramore's Fall [Alliance]
-				["hordeAchievementID"] = 7468,		-- Theramore's Fall [Horde]
-				["u"] = REMOVED_FROM_GAME,			-- Unobtainable after MoP Launch
-			},
+			ach(7467, {	-- Theramore's Fall (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
+			}),
+			ach(7468, {	-- Theramore's Fall (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
+			}),
 			un(REMOVED_FROM_GAME, ach(7852)),		-- They're Both Footballs?
 			un(REMOVED_FROM_GAME, ach(4887)),		-- Tripping the Rifts
 			un(REMOVED_FROM_GAME, ach(2456)),		-- Vampire Hunter
@@ -65,7 +67,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(6131)),		-- WoW's 8th Anniversary
 			un(REMOVED_FROM_GAME, ach(7853)),		-- WoW's 9th Anniversary
 			un(REMOVED_FROM_GAME, ach(8820, {		-- WoW's 10th Anniversary
-				i(115301),				-- Molten Corgi
+				i(115301),	-- Molten Corgi
 			})),
 			un(REMOVED_FROM_GAME, ach(10058)),		-- WoW's 11th Anniversary
 			un(REMOVED_FROM_GAME, ach(10741)),		-- WoW's 12th Anniversary

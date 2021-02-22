@@ -12,6 +12,10 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(1766)),		-- Ancient Protector
 			un(REMOVED_FROM_GAME, ach(2189)),		-- Artillery Expert
 			un(REMOVED_FROM_GAME, ach(1763)),		-- Artillery Veteran
+			ach(611, {	-- Bleeding Bloodhoof
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, h(ach(449, {		-- Blood Guard
 				un(REMOVED_FROM_GAME, h(title(21))),	-- Blood Guard
 			}))),
@@ -57,6 +61,10 @@ _.Achievements =
 			}))),
 			un(REMOVED_FROM_GAME, ach(11471)),		-- Don't Hate, Grind to Eight
 			un(REMOVED_FROM_GAME, ach(12108)),		-- Double Decade of Dominance
+			ach(612, {	-- Downing the Dark Lady
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, ach(2190)),		-- Drop It Now!
 			un(REMOVED_FROM_GAME, ach(1764)),		-- Drop It!
 			un(REMOVED_FROM_GAME, ach(11693)),		-- Eighteen and Over
@@ -175,6 +183,10 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(title(20))),	-- Stone Guard
 			}))),
 			un(REMOVED_FROM_GAME, ach(1310)),		-- Storm the Beach
+			ach(615, {	-- Storming Stormwind
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, ach(1309, {		-- Strand of the Ancients Veteran
 					un(REMOVED_FROM_GAME, ach(1308)),	-- Strand of the Ancients Victory
 			})),
@@ -185,34 +197,45 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11469)),		-- The River Six
 			un(REMOVED_FROM_GAME, ach(11686)),		-- These Go To Eleven
 			un(REMOVED_FROM_GAME, ach(10993)),		-- Third Time's The Charm
-			{	-- Top Honors
-				["allianceAchievementID"] = 10988,	-- Top Honors [Alliance]
-				["hordeAchievementID"] = 10990,		-- Top Honors [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 8.0
-			},
-
+			ach(10988, {	-- Top Honors (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
+			}),
+			ach(10990, {	-- Top Honors (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
+			}),
 			un(REMOVED_FROM_GAME, ach(12109)),		-- Twenty-One Arms Salute
 			un(REMOVED_FROM_GAME, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8093))),	-- Tyrannical Conquest (Horde)
 			un(REMOVED_FROM_GAME, h(ach(445, {		-- Warlord
 				un(REMOVED_FROM_GAME, h(title(27))),	-- Warlord
 			}))),
-			{	-- Warmongering Conquest
-				["allianceAchievementID"] = 10091,	-- Warmongering Conquest [Alliance]
-				["hordeAchievementID"] = 10090,		-- Warmongering Conquest [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 7.0
-			},
+			ach(10091, {	-- Warmongering Conquest (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
+			}),
+			ach(10090, {	-- Warmongering Conquest (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
+			}),
 			un(REMOVED_FROM_GAME, ach(11690)),		-- When You're Fifteen
-			{	-- Wild Combatant
-				["allianceAchievementID"] = 10093,	-- Wild Combatant [Alliance]
-				["hordeAchievementID"] = 10092,		-- Wild Combatant [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 6.2.2
-			},
-			{	-- Wild Conquest
-				["allianceAchievementID"] = 10089,	-- Wild Conquest [Alliance]
-				["hordeAchievementID"] = 10088,		-- Wild Conquest [Horde]
-				["u"] = REMOVED_FROM_GAME,							-- Removed in Patch 6.2.2
-			},
+			ach(10093, {	-- Wild Combatant (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10092, {	-- Wild Combatant (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10089, {	-- Wild Conquest (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
+			ach(10088, {	-- Wild Conquest (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
+			}),
 			un(REMOVED_FROM_GAME, ach(11691)),		-- You Are Sixteen
 		}),
 	}),

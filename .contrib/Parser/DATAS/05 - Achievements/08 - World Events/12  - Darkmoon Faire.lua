@@ -143,42 +143,28 @@ _.Achievements =
 				crit(4),		-- Tonk Battle
 				crit(5),		-- Whack-A-Gnoll
 			}),
-			{	-- Taking the Show on the Road [Alliance] // [Horde]
-				["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-				["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
+			ach(6030, {		-- Taking the Show on the Road (A)
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Dalaran [Alliance] // [Horde]
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 1,					-- Dalaran [Alliance] // [Horde]
-					},
-					{	-- Darnassus/Orgrimmar
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 2,					-- Darnassus/Orgrimmar
-					},
-					{	-- The Exodar/Shattrath City
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 3,					-- The Exodar/Shattrath City
-					},
-					{	-- Ironforge/Silvermoon City
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 4,					-- Ironforge/Silvermoon City
-					},
-					{	-- Shattrath City/Thunder Bluff
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 5,					-- Shattrath City/Thunder Bluff
-					},
-					{	-- Stormwind City/Undercity
-						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-						["criteriaID"] = 6,					-- Stormwind City/Undercity
-					},
-				}
-			},
+					crit(1),	-- Dalaran
+					crit(2),	-- Darnassus
+					crit(3),	-- The Exodar
+					crit(4),	-- Ironforge
+					crit(5),	-- Shattrath City
+					crit(6),	-- Stormwind City
+				},
+			}),
+			ach(6031, {		-- Taking the Show on the Road (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Dalaran
+					crit(2),	-- Orgrimmar
+					crit(3),	-- Shattrath City
+					crit(4),	-- Silvermoon City
+					crit(5),	-- Thunder Bluff
+					crit(6),	-- Undercity
+				},
+			}),
 			ach(11919, {	-- Taking this Show on the Road
 				crit(1),		-- Guitarist
 				crit(2),		-- Bassist

@@ -7,7 +7,7 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
 			n(ACHIEVEMENTS, {
-				ach(9069, {		-- An Awfully Big Adventure
+				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
@@ -17,9 +17,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(9635),		-- Bobbing for Orcs (Shattrath City)
-				ach(9634),		-- Charged Up (Shattrath City)
-				ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (Alliance) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
+				ach(9635),		-- Bobbing for Orcs
+				ach(9634),		-- Charged Up
+				ach(8920,  {	-- Don't Let the Tala-door Hit You on the Way Out (A) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Establishing your Outpost
@@ -39,7 +39,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(8919, {	-- Don't Let the Tala-door Hit You on the Way Out (Horde) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
+				ach(8919,  {	-- Don't Let the Tala-door Hit You on the Way Out (H) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Establishing your Armory
@@ -59,7 +59,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(9486),		-- Goodness Gracious (Shattrath City)
+				ach(9486),		-- Goodness Gracious
 				ach(10053, {	-- I Found Pepe!
 					["collectible"] = false,
 					["g"] = {
@@ -72,26 +72,20 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(10067, 10074, {	-- In Pursuit of Gul'dan(Garrison) [A] / [H]
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					["g"] = {
-						crit(5),	-- The Fate of Teron'gor [A] / [H]
-					},
-				}),
-				--[[ach(10067, {	-- In Pursuit of Gul'dan (Alliance) (Garrison)
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+				ach(10067, {	-- In Pursuit of Gul'dan (A)
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(5),	-- The Fate of Teron'gor
 					},
 				}),
-				ach(10074, {	-- In Pursuit of Gul'dan (Horde) (Garrison)
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+				ach(10074, {	-- In Pursuit of Gul'dan (H)
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(5),	-- The Fate of Teron'gor
 					},
-				}),]]
+				}),
 				ach(9674,  {	-- I Want More Talador
 					crit(1, {	-- Bonus Objective: Aruuna's Desolation
 						["sourceQuest"] = 34639,	-- Aruuna's Desolation
@@ -115,23 +109,23 @@ _.Zones =
 						["sourceQuest"] = 34660,	-- Zorkra's Fall
 					}),
 				}),
-				ach(9637),		-- Poor Communication (Shattrath City)
-				ach(9564,  {	-- Securing Draenor (Alliance)
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+				ach(9637),		-- Poor Communication
+				ach(9564,  {	-- Securing Draenor (A)
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(12),		-- Assault on Shattrath Harbor
+						crit(12),	-- Assault on Shattrath Harbor
 					},
 				}),
 				ach(9562,  {	-- Securing Draenor (Horde)
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(7),		-- Assault on Shattrath Harbor
+						crit(7),	-- Assault on Shattrath Harbor
 					},
 				}),
-				ach(9632),		-- The Power Is Yours (Shattrath City)
-				ach(9636),		-- United We Stand (Shattrath City)
+				ach(9632),		-- The Power Is Yours
+				ach(9636),		-- United We Stand
 			}),
 		}),
 	}),
