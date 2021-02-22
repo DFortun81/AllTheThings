@@ -14889,6 +14889,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
 				end
 				self:SetMovable(false);
+			-- Skillet compatibility
+			elseif SkilletFrame then
+				self:SetPoint("TOPLEFT", SkilletFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", SkilletFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(true);
 			elseif TradeSkillFrame then
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
