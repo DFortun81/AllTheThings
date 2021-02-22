@@ -2874,7 +2874,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -2957,7 +2957,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
 												tinsert(info, { left = text	.. " |CFFFF0000(INVALID BLIZZARD DATA - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
