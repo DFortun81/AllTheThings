@@ -14900,7 +14900,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true);
-					app.print(L["CHACED_RECIPES_1"] .. learned .. L["CHACHED_RECIPES_2"]);		-- L["CHACED_RECIPES_1"] = "Cached "; L["CHACHED_RECIPES_2"] = " known recipes!"
+					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);		-- L["CACHED_RECIPES_1"] = "Cached "; L["CACHED_RECIPES_2"] = " known recipes!"
 					wipe(searchCache);
 				end
 			end
@@ -14937,6 +14937,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
 				end
 				self:SetMovable(false);
+			-- Skillet compatibility
+			elseif SkilletFrame then
+				self:SetPoint("TOPLEFT", SkilletFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", SkilletFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(true);
 			elseif TradeSkillFrame then
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
