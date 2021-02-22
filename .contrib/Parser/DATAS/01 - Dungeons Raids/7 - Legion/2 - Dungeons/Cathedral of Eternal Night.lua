@@ -6,28 +6,27 @@ _.Instances = { tier(7, {	-- Legion
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, 646 },
 		["maps"] = { 845, 846, 847, 848, 849 },
-		["lvl"] = 110,
 		["g"] = {
 			n(-34,	{	-- World Quests
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
+					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
 				}),
 				q(46868, {	-- Cathedral of Eternal Night: Infernal Dead
+					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
 				}),
 				q(46844, {	-- Cathedral of Eternal Night: Mistress of Blades
+					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
 				}),
 				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
+					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
 				}),
 				q(46869, {	-- Cathedral of Eternal Night: Temptress of Pain
+					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
 				}),
 			}),
 			d(2,	{	-- Heroic
