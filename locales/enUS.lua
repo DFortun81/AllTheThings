@@ -508,6 +508,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
+	["SOURCE_ID_MISSING"] = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
