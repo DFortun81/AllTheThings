@@ -1,7 +1,7 @@
 ## Author: Crieve-Sargeras
 ## Interface: 90002
 ## X-Curse-Project-ID: 267285
-## Title: .|TInterface\Addons\AllTheThings\assets\logo_32x32:0|t AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
+## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionConfig, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
