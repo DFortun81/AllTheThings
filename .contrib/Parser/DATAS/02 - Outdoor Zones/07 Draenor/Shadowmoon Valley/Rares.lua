@@ -22,7 +22,7 @@ _.Zones =
 				n(86212, {	-- Aqualir
 					["questID"] = 37356,
 					["isDaily"] = true,
-					["coord"] = { 50.8, 79.0, 539 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 50.8, 79.0, 539 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119387),	-- Loop of Drowned Souls
 					},
@@ -82,7 +82,7 @@ _.Zones =
 				n(84911, {	-- Demidos <Devourer of Lights>
 					["questID"] = 37351,
 					["isDaily"] = true,
-					["coord"]= { 46.0, 71.8, 539 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"]= { 46.0, 71.8, 539 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119431), 	-- Servant of Demidos (PET!)
 						i(119377),	-- Void-Touched Diamond Necklace
@@ -205,7 +205,7 @@ _.Zones =
 					},
 				}),
 				n(50883, {	-- Pathrunner
-					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
+					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 45.8, 68.2, 539 },
 						{ 56.8, 52.2, 539 },
 						{ 54.0, 30.8, 539 },

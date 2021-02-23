@@ -745,6 +745,9 @@ _.HiddenQuestTriggers =
 		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
 		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
 		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
+		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
+		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
+		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
