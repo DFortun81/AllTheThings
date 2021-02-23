@@ -21,6 +21,9 @@ _.Craftables =
 				i(170362),	-- Uncanny Combatant's Bow [Alliance]
 				i(170363),	-- Uncanny Combatant's Bow [Horde]
 			}),
+			filter(55, {	-- Consumable
+				i(154167),	-- Drums of the Maelstrom
+			}),
 			filter(34, {	-- Fist Weapons
 				i(161970),	-- Coarse Leather Cestus [Alliance]
 				i(154161),	-- Coarse Leather Cestus [Horde]
