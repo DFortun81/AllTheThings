@@ -972,6 +972,7 @@ _.HiddenQuestTriggers =
 		q(36896),	-- Nemesis Flag, Pandaren (A/H)
 		q(36895),	-- Nemesis Flag, Worgen/Goblin
 		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
+		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
