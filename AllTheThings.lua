@@ -5014,33 +5014,72 @@ local function RefreshCollections()
 		RefreshAchievementCollection();
 		coroutine.yield();
 
-		-- Refresh Sources from Cache
-		local collectedSources = GetDataMember("CollectedSources");
-		if app.Settings:Get("Completionist") then
-			-- Completionist Mode can simply use the *fast* blizzard API.
-			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
+		-- Refresh Sources from Cache if tracking Transmog
+		if app.Settings:Get("Thing:Transmog") then
+			local collectedSources = GetDataMember("CollectedSources");
+			-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+			app.MaxSourceID = app.MaxSourceID or 0;
+			-- process through all known ATT SourceIDs if not yet processed
+			if app.MaxSourceID == 0 then
+				if app.Settings:Get("Completionist") then
+					-- Completionist Mode can simply use the *fast* blizzard API.
+					for id,_ in pairs(fieldCache["s"]) do
+						if rawget(collectedSources, id) ~= 1 then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+								rawset(collectedSources, id, 1);
+							end
+						end
+						-- track the max sourceID so we can evaluate sources not in ATT as well
+						if id > app.MaxSourceID then app.MaxSourceID = id; end
+					end
+				else
+					-- Unique Mode requires a lot more calculation.
+					for id,_ in pairs(fieldCache["s"]) do
+						if not rawget(collectedSources, id) then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+								rawset(collectedSources, id, 1);
+							else
+								_cache = C_TransmogCollection_GetSourceInfo(id);
+								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+									rawset(collectedSources, id, 2);
+								end
+							end
+						end
+						-- track the max sourceID so we can evaluate sources not in ATT as well
+						if id > app.MaxSourceID then app.MaxSourceID = id; end
 					end
 				end
+				-- print("Max SourceID",app.MaxSourceID);
 			end
-		else
-			-- Unique Mode requires a lot more calculation.
-			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(id);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, id, 2);
+			coroutine.yield();
+			if app.MaxSourceID > 0 then
+				-- Otherwise evaluate all SourceIDs under the maximum
+				if app.Settings:Get("Completionist") then
+					for s=1,app.MaxSourceID do
+						if rawget(collectedSources, s) ~= 1 then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+								rawset(collectedSources, s, 1);
+							end
+						end
+					end
+				else
+					for s=1,app.MaxSourceID do
+						if not rawget(collectedSources, s) then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+								rawset(collectedSources, s, 1);
+							else
+								_cache = C_TransmogCollection_GetSourceInfo(s);
+								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+									rawset(collectedSources, s, 2);
+								end
+							end
 						end
 					end
 				end
+				-- print("Finished SourceID",app.MaxSourceID);
 			end
+			coroutine.yield();
 		end
-		coroutine.yield();
 		app:RefreshData(false, false, true);
 
 		-- Wait for refresh to actually finish
