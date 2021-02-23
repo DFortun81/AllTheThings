@@ -209,6 +209,7 @@ app.L = {
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
 	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";

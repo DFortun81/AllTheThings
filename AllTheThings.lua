@@ -10595,7 +10595,7 @@ function app:CreateMiniListForGroup(group)
 						g = prereqs;
 						breakafter = breakafter + 1;
 						if breakafter >= 100 then
-							app.print("Likely just broke out of an infinite source quest loop.");
+							app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
 							app.report();
 							break;
 						end
