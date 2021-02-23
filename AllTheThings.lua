@@ -10948,7 +10948,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0, 0;
+		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -10976,7 +10976,9 @@ local function Refresh(self)
 		end
 
 		-- Readjust the indent of visible rows
-		if minIndent > 15 then
+		if not minIndent then
+			minIndent = 0;
+		elseif minIndent > 15 then
 			minIndent = minIndent - 16;
 		end
 		-- if there's actually an indent to adjust...
