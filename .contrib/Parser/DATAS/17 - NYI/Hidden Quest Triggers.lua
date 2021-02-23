@@ -3711,6 +3711,8 @@ _.HiddenQuestTriggers =
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
+		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
+		q(61211),	-- triggered when completing Thela's Memory Stone (61243)
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
 		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
 		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
