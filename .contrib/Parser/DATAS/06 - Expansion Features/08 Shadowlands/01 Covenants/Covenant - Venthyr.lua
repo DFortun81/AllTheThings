@@ -1233,6 +1233,8 @@ _.ExpansionFeatures =
 								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
 								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
+								i(181615),	-- Marching an Army (Alexandros Mograine's Tribute)
 								i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
 								i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
 								i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)

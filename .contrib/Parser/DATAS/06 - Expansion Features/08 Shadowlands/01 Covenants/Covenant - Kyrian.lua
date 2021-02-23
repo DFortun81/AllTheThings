@@ -1371,6 +1371,15 @@ _.ExpansionFeatures =
 										i(184812),	-- Apolon's Bounty
 									},
 								}),
+								q(62952, {	-- Path of Ascension: Pelagos
+									-- ["sourceQuests"] = {  },	-- TODO: ?
+									["provider"] = { "n", 168485 },	-- Apolon
+									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+									["isWeekly"] = true,
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
 							}),
 							n(-945, {	-- Tier 3: Continued Training
 							}),
