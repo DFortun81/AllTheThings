@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				n(166576, {	-- Azgar
-					["questID"] = 59893,	-- TODO: also triggered 62464
+					["questID"] = 59893,
 					["isDaily"] = true,
 					["coord"] = { 36.0, 68.6, 1525 },
 					["g"] = {
@@ -74,7 +74,7 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time 
+				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time
 					["questID"] = 58441,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 51.0, 1525 },

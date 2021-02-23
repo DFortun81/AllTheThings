@@ -139,6 +139,11 @@ _.Zones =
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 52.4, 39.2, 1525 },
 				}),
+				q(56829, {	-- Bottom Feeders
+					["sourceQuests"] = { 57007 },	-- Invitation of the Master
+					["provider"] = { "n", 155668 },	-- Rendle
+					["coord"] = { 65.3, 66.2, 1525 },
+				}),
 				q(57189, {	-- Breaking the Hopebreakers
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["provider"] = { "n", 168217 },	-- The Accuser
@@ -441,6 +446,13 @@ _.Zones =
 					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, 1525 },
+				}),
+				q(62189, {	-- Parasol Components
+					["provider"] = { "o", 349798 },	-- Smuggled Cache
+					["coord"] = { 31.1, 55.1, 1525 },
+					["g"] =  {
+						i(182738),	-- Bundle of Smuggled Parasol Components
+					},
 				}),
 				q(57689, {	-- Prince Renathal
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
@@ -860,21 +872,8 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
-				
-				q(56829, {	-- Bottom Feeders
-					["sourceQuests"] = { 57007 },	-- Invitation of the Master
-					["provider"] = { "n", 155668 },	-- Rendle
-					["coord"] = { 65.3, 66.2, 1525 },
-				}),
-				q(62189, {	-- Parasol Components
-					["provider"] = { "o", 349798 },	-- Smuggled Cache
-					["coord"] = { 31.1, 55.1, 1525 },
-					["g"] =  {
-						i(182738),	-- Bundle of Smuggled Parasol Components
-					},
-				}),
 				h(q(62653, {	-- Stop the Inquisition
-					-- ["provider"] = { "n", ### },	-- 
+					-- ["provider"] = { "n", ### },	--
 					-- ["coord"] = { ##, ##, 1525 },
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
