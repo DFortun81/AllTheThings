@@ -217,6 +217,16 @@ namespace ATT
                 if (itemID > MAX_ITEMID) return false;
             }
 
+            // Get the filter for this Item
+            if (data.TryGetValue("f", out int f))
+            {
+                // remove modID from things which shouldn't have it
+                if (f >= 56 && data.Remove("modID"))
+                {
+                    //Trace.WriteLine("Removed bad modID", data.GetString("itemID"));
+                    modID = 0;
+                }
+            }
             // Assign the modID if not already specified.
             if (data.TryGetValue("modID", out object modIDRef))
             {
@@ -228,11 +238,10 @@ namespace ATT
             {
                 data.Remove("modID");
             }
-            else if (data.ContainsKey("itemID"))
+            else if (itemID > 0 && modID > 0)
             {
-                // only modID if it's real
-                if (modID > 0)
-                    data["modID"] = modID;
+                // only modID if it's a real item and real modID
+                data["modID"] = modID;
             }
             if (data.TryGetValue("npcID", out int npcID))
             {
@@ -349,7 +358,7 @@ namespace ATT
 
             // Cache the Filter ID.
             Objects.Filters filter = Objects.Filters.Ignored;
-            if (data.TryGetValue("f", out int f))
+            if (f >= 0)
             {
                 // Parse it!
                 filter = (Objects.Filters)f;
@@ -450,6 +459,7 @@ namespace ATT
                         break;
                         */
                     case Objects.Filters.Consumable:
+                    case Objects.Filters.Faction:
                         data.Remove("heirloomID");
                         break;
                     default:
