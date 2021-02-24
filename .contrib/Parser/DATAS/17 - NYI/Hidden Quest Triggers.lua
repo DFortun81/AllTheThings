@@ -3609,40 +3609,43 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
-		q(59382),	-- when using "RSVP: Baroness Vashj" - every time
-		q(59383),	-- when using "RSVP: Baroness Vashj" - first time
-		q(59406),	-- when using "RSVP: Choofa"
-		q(59407),	-- when using "RSVP: Choofa"
+		q(59382),	-- when using "RSVP: Baroness Vashj" — every time
+		q(59383),	-- when using "RSVP: Baroness Vashj" — first time only
+		q(59406),	-- when using "RSVP: Choofa" — every time
+		q(59407),	-- when using "RSVP: Choofa" — first time only
 		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
 		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
-		q(59412),	-- when using "RSVP: Droman Aliothe"
-		q(59413),	-- when using "RSVP: Droman Aliothe"
-		q(59415),	-- when using "RSVP: Grandmaster Vole" - every time
-		q(59416),	-- when using "RSVP: Grandmaster Vole" - first time
-		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" - every time
-		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" - first time
+		q(59412),	-- when using "RSVP: Droman Aliothe" — every time
+		q(59413),	-- when using "RSVP: Droman Aliothe" — first time only
+		q(59415),	-- when using "RSVP: Grandmaster Vole" — every time
+		q(59416),	-- when using "RSVP: Grandmaster Vole" — first time only
+		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" — every time
+		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" — first time only
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
+		q(59385),	-- when using "RSVP: Lady Moonberry" — every time
+		q(59386),	-- when using "RSVP: Lady Moonberry" — first time only
 		q(59388),	-- when using "RSVP: Mikanikos" — every time
 		q(59389),	-- when using "RSVP: Mikanikos" — first time only
-		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
-		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124)
-		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117)
-		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117)
-		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118)
-		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118)
-		q(59424),	-- when using "RSVP: Sika"
-		q(59425),	-- when using "RSVP: Sika"
-		q(59618),	-- when using "RSVP: Stonehead"
-		q(59619),	-- when using "RSVP: Stonehead"
-		q(59394),	-- when using "RSVP: Alexandros Morgraine"
-		q(59395),	-- when using "RSVP: Alexandros Morgraine"
+		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124) — every time
+		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124) — first time only
+		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117) — every time
+		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117) — first time only
+		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118) — every time
+		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118) — first time only
+		q(59424),	-- when using "RSVP: Sika" — every time
+		q(59425),	-- when using "RSVP: Sika" — first time only
+		q(59618),	-- when using "RSVP: Stonehead" — every time
+		q(59619),	-- when using "RSVP: Stonehead" — first time only
+		q(59394),	-- when using "RSVP: Alexandros Morgraine" — every time
+		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(59626),	-- when using 'Guest List Page' (181538)
 		q(61506),	-- when using 'Guest List Page' (181538)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
+		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61494),	-- using Building: Guardhouse

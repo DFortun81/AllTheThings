@@ -1881,6 +1881,14 @@ _.ExpansionFeatures =
 										i(176097),	-- RSVP: Baroness Vashj
 									},
 								}),
+								q(61354, {	-- RSVP: Lady Moonberry
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
+									["provider"] = { "n", 172098 },	-- Lady Moonberry
+									["coord"] = { 48.9, 51.0, 1565 },	-- Ardenweald
+									["g"] = {
+										i(176112),	-- RSVP: Lady Moonberry
+									},
+								}),
 								q(61173, {	-- RSVP: Mikanikos
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171647 },	-- Mikanikos
