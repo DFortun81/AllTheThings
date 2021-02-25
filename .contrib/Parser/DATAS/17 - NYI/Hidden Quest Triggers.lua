@@ -557,6 +557,8 @@ _.HiddenQuestTriggers =
 		q(30647),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
 		q(31807),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
 		q(30453),	-- Binan Village Intro Event Tracking Event - triggered when I flew into Binan village through the Ancient Passage on my mount, even though I flew there using flight points AND I have already completed some quests there
+		q(30454),	-- Pandaren Alliance Tracking Quest
+		q(30455),	-- Pandaren Horde Tracking Quest
 		q(31123),	-- Townlong Steppes - Chose Arms Warrior
 		q(31124),	-- Townlong Steppes - Chose Brewmaster
 		q(31050),	-- Townlong Steppes - Chose Fire Mage
@@ -703,6 +705,7 @@ _.HiddenQuestTriggers =
 		q(32968),	-- Rope Drop Tracking Quest — looting treasure chest on top of pillar at (54.0, 47.2)
 		q(32957),	-- Sunken Hozen Treasure - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9) — this + below popped at same time
 		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9)
+		q(32956),	-- Tracking Quest - Spectral Pirate Treasure
 		-- VARIOUS
 		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
@@ -1361,6 +1364,9 @@ _.HiddenQuestTriggers =
 		q(40411),	-- Truthguard Chosen (Protection)
 		q(42496),	-- Truthguard Chosen (Protection)
 		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
+
+		q(40708),	-- Priest Order Hall - chosing Holy for first priest artifact weapon
+		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second

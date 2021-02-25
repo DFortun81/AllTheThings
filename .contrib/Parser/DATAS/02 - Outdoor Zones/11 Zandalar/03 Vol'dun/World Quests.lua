@@ -722,6 +722,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = JEWELCRAFTING,
 					}),
+					q(52408, {	-- Work Order: Kyanite
+						["lvl"] = { 50 },
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 					q(52338, {	-- Work Order: Potion of Concealment
 						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,

@@ -398,7 +398,7 @@ _.Craftables =
 				i(83090),	-- Sapphire Panther
 				i(83089),	-- Sunstone Panther
 			}),
-			filter(102, {	-- Toy
+			filter(101, {	-- Battle Pets
 				i(82774),	-- Jade Owl
 				i(82775),	-- Sapphire Cub
 			}),
