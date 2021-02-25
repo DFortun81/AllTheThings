@@ -1042,6 +1042,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
 						i(182169, {	-- Veilwing Soul
+							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
 							["questID"] = 62425,	-- Veilwing Soul
 						}),
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
@@ -1406,6 +1407,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
 						i(182169, {	-- Veilwing Soul
+							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
 							["questID"] = 62425,	-- Veilwing Soul
 						}),
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
