@@ -8,6 +8,7 @@ _.Craftables =
 		n(-182, {	-- Enchanting
 			filter(27, {	-- Wands
 				i(172462),	-- Enchanted Twilight Wand
+				i(172416),	-- Enchant Bracers - Shaded Hearthing
 			}),
 		}),
 	}),
