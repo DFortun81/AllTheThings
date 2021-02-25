@@ -3308,6 +3308,7 @@ _.HiddenQuestTriggers =
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
 		q(61128),	-- Triggered after getting Sorrowbane
+		q(62411),	-- First time turning in Ani-Matter Animator (57245)
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
@@ -3343,7 +3344,9 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
+		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
+		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
