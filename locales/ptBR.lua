@@ -573,8 +573,6 @@ do a[key] = value; end
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated NPCID's here
-
 	-- Commonly used
 		--TODO: [0] = ZONE.." "..BATTLE_PET_SOURCE_1,				-- Zone Drop
 		--TODO: [-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,	-- Common Boss Drop
@@ -589,7 +587,7 @@ for key,value in pairs({
 		--TODO: [-16] = BATTLE_PET_BREED_QUALITY4,					-- Rares
 
 		--TODO: [-40] = LFG_LIST_LEGACY,							-- Legacy
-		[-41] = "Cache of Madness",
+		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
 		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
 		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
@@ -1177,7 +1175,6 @@ do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated OBJECTID's here
 	[31] = "Estátua de Leão Antiga",
 	[34] = "Velho Garrafão",
 	[55] = "Corpo semi-devorado",
@@ -2561,9 +2558,9 @@ for key,value in pairs({
 	--TODO: [297906] = "Russel's Songbook",
 	--TODO: [297933] = "Dusty Songbook",
 	--TODO: [297934] = "Scoundrel's Songbook",
-	[298920] = "Baú da Voz-dos-espinhos Roubado",
-	[298858] = "Cartaz de Procura-se",
 	[298849] = "Cartaz de Procura-se",
+	[298858] = "Cartaz de Procura-se",
+	[298920] = "Baú da Voz-dos-espinhos Roubado",
 	[298921] = "Tabuleta Nazmani Ancestral",
 	[298963] = "Tabuleta Nazmani Gasta",
 	[298965] = "Tabuleta Rachada",
