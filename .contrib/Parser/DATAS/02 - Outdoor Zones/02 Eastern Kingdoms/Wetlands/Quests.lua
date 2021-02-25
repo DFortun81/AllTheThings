@@ -420,6 +420,7 @@ _.Zones =
 						26137,	-- Checking on the Boys
 						28565,	-- Hero's Call: Wetlands!
 					},
+					["isBreadcrumb"] = true,
 					["coord"] = { 49.9, 79.2, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41075 },	-- Mountaineer Rharen

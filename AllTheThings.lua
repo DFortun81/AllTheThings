@@ -2756,19 +2756,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if not paramB then
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
+					sourceID = GetSourceID(paramA);
+					-- print("Raw link SourceID",paramA,sourceID)
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
 					if itemID2 then
 						itemID = tonumber(itemID2);
 						paramA = "itemID";
 						paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+						-- print("ItemString Values",itemID,paramA,paramB)
 					end
+					-- print("#group",#group)
 					if #group > 0 then
 						for i,j in ipairs(group) do
-							if j.itemID == itemID then
-								if j.s then
-									sourceID = j.s;
-								end
+							-- print("check",j.modItemID,j.itemID,j.s)
+							if j.modItemID == paramB then
+								-- if j.s and not sourceID then
+								-- 	sourceID = j.s;
+								-- 	-- print("Set SourceID",itemID, paramB, j.modItemID, j.link, sourceID)
+								-- end
 								if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 								end
@@ -2795,43 +2801,75 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			elseif paramA == "itemID" then
-				itemID = paramB;
-				if #group > 0 then
-					for i,j in ipairs(group) do
-						if j.itemID == itemID and j.s then
-							sourceID = j.s;
-						end
-					end
-				end
+				-- itemID should only be the itemID, not including modID
+				itemID = GetItemIDAndModID(paramB) or paramB;
+				-- if #group > 0 then
+				-- 	for i,j in ipairs(group) do
+				-- 		if j.modItemID == paramB and j.s and not sourceID then
+				-- 			sourceID = j.s;
+				-- 			-- print("Set Known SourceID",itemID, paramB, j.modItemID, j.link, sourceID)
+				-- 		end
+				-- 	end
+				-- end
 			end
 
 			if itemID then
-				-- Show the unobtainable source text
+				-- grab the exact source group one time and use that afterwards
+				local sourceGroup;
+				-- Match the DB group including modID
 				for i,j in ipairs(group.g or group) do
-					if j.itemID == itemID then
-						if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
-							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
-							break;
+					if j.modItemID == paramB then
+						sourceGroup = j;
+						-- if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
+						-- 	tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
+						-- 	break;
+						-- end
+					end
+				end
+				-- Match the DB group by itemID if possible otherwise
+				if not sourceGroup then
+					for i,j in ipairs(group.g or group) do
+						if j.itemID == itemID then
+							sourceGroup = j;
+							-- if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
+							-- 	tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
+							-- 	break;
+							-- end
 						end
 					end
 				end
+				-- Show the unobtainable source text
+				if sourceGroup then
+					if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
+						tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
+					end
+				end
+				-- pull the SourceID for this item from the source DB group if it hasn't been determined from the search input
+				if not sourceID then
+					if sourceGroup and sourceGroup.link and not sourceID then
+						sourceID = GetSourceID(sourceGroup.link);
+						-- print("Set Unknown SourceID",itemID,paramB,sourceGroup.modItemID,sourceGroup.link,sourceID)
+					end
+				end
+				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
+				if not sourceGroup then sourceGroup = {["missing"] = true}; end
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
+					if sourceInfo and (sourceInfo.quality or 0) > 1 then
 						if app.Settings:GetTooltipSetting("SharedAppearances") then
 							local text;
 							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
-											local link = group[1].link;
+									if otherSourceID == sourceID and not sourceGroup.missing then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+											local link = sourceGroup.link;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											if group[1].u then
-												local texture = GetUnobtainableTexture(group[1]);
+											if sourceGroup.u then
+												local texture = GetUnobtainableTexture(sourceGroup);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
 												else
@@ -2840,7 +2878,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
 										end
 									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
@@ -2848,7 +2886,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											otherATTSource = otherATTSource[1];
 
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if (group[1].f == otherATTSource.f or group[1].f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
+											if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
 												local link = otherATTSource.link;
 												if not link then
 													link = RETRIEVING_DATA;
@@ -2874,7 +2912,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -2882,15 +2922,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
-											local link = group[1].link;
+									if otherSourceID == sourceID and not sourceGroup.missing then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+											local link = sourceGroup.link;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											if group[1].u then
-												local texture = GetUnobtainableTexture(group[1]);
+											if sourceGroup.u then
+												local texture = GetUnobtainableTexture(sourceGroup);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
 												else
@@ -2899,7 +2939,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
 										end
 									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
@@ -2927,7 +2967,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if group[1].f ~= otherATTSource.f then
+											if sourceGroup.f ~= otherATTSource.f then
 												-- This is NOT the same type. Therefore, no credit for you!
 												if #failText > 0 then failText = failText .. ", "; end
 												failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
@@ -2952,14 +2992,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 											if otherSource then
-												local name, link = GetItemInfo(string.format("item:%d:::::::::::%d:1:3524", otherSource.itemID, otherSource.modID));
+												local link = select(2, GetItemInfo(otherSource.itemID));
 												if not link then
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. (otherSource.itemModID and (":" .. otherSource.itemModID) or "") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(INVALID BLIZZARD DATA - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -2967,6 +3007,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 
+						if sourceGroup.missing then
+							tinsert(info, { left = Colorize(L["SOURCE_ID_MISSING"], "ffff0000") });
+							tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
+						end
 						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
 						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
@@ -4151,14 +4195,18 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
+			-- print("link-search",itemString)
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				-- print("sourceID",sourceID)
 				if sourceID then
 					_ = SearchForField("s", sourceID);
-					if _ then return _; end
+					-- print("direct s",_ and #_)
+					-- if _ then return _; end
+					return _;
 				end
 
 				-- Search for the item ID.
@@ -4966,33 +5014,72 @@ local function RefreshCollections()
 		RefreshAchievementCollection();
 		coroutine.yield();
 
-		-- Refresh Sources from Cache
-		local collectedSources = GetDataMember("CollectedSources");
-		if app.Settings:Get("Completionist") then
-			-- Completionist Mode can simply use the *fast* blizzard API.
-			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
+		-- Refresh Sources from Cache if tracking Transmog
+		if app.Settings:Get("Thing:Transmog") then
+			local collectedSources = GetDataMember("CollectedSources");
+			-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+			app.MaxSourceID = app.MaxSourceID or 0;
+			-- process through all known ATT SourceIDs if not yet processed
+			if app.MaxSourceID == 0 then
+				if app.Settings:Get("Completionist") then
+					-- Completionist Mode can simply use the *fast* blizzard API.
+					for id,_ in pairs(fieldCache["s"]) do
+						if rawget(collectedSources, id) ~= 1 then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+								rawset(collectedSources, id, 1);
+							end
+						end
+						-- track the max sourceID so we can evaluate sources not in ATT as well
+						if id > app.MaxSourceID then app.MaxSourceID = id; end
+					end
+				else
+					-- Unique Mode requires a lot more calculation.
+					for id,_ in pairs(fieldCache["s"]) do
+						if not rawget(collectedSources, id) then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+								rawset(collectedSources, id, 1);
+							else
+								_cache = C_TransmogCollection_GetSourceInfo(id);
+								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+									rawset(collectedSources, id, 2);
+								end
+							end
+						end
+						-- track the max sourceID so we can evaluate sources not in ATT as well
+						if id > app.MaxSourceID then app.MaxSourceID = id; end
 					end
 				end
+				-- print("Max SourceID",app.MaxSourceID);
 			end
-		else
-			-- Unique Mode requires a lot more calculation.
-			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(id);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, id, 2);
+			coroutine.yield();
+			if app.MaxSourceID > 0 then
+				-- Otherwise evaluate all SourceIDs under the maximum
+				if app.Settings:Get("Completionist") then
+					for s=1,app.MaxSourceID do
+						if rawget(collectedSources, s) ~= 1 then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+								rawset(collectedSources, s, 1);
+							end
+						end
+					end
+				else
+					for s=1,app.MaxSourceID do
+						if not rawget(collectedSources, s) then
+							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+								rawset(collectedSources, s, 1);
+							else
+								_cache = C_TransmogCollection_GetSourceInfo(s);
+								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+									rawset(collectedSources, s, 2);
+								end
+							end
 						end
 					end
 				end
+				-- print("Finished SourceID",app.MaxSourceID);
 			end
+			coroutine.yield();
 		end
-		coroutine.yield();
 		app:RefreshData(false, false, true);
 
 		-- Wait for refresh to actually finish
@@ -10588,7 +10675,7 @@ function app:CreateMiniListForGroup(group)
 						g = prereqs;
 						breakafter = breakafter + 1;
 						if breakafter >= 100 then
-							app.print("Likely just broke out of an infinite source quest loop.");
+							app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
 							app.report();
 							break;
 						end
@@ -10902,7 +10989,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0, 0;
+		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -10930,7 +11017,9 @@ local function Refresh(self)
 		end
 
 		-- Readjust the indent of visible rows
-		if minIndent > 15 then
+		if not minIndent then
+			minIndent = 0;
+		elseif minIndent > 15 then
 			minIndent = minIndent - 16;
 		end
 		-- if there's actually an indent to adjust...
@@ -14893,7 +14982,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true);
-					app.print(L["CHACED_RECIPES_1"] .. learned .. L["CHACHED_RECIPES_2"]);		-- L["CHACED_RECIPES_1"] = "Cached "; L["CHACHED_RECIPES_2"] = " known recipes!"
+					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);		-- L["CACHED_RECIPES_1"] = "Cached "; L["CACHED_RECIPES_2"] = " known recipes!"
 					wipe(searchCache);
 				end
 			end
@@ -14930,6 +15019,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
 				end
 				self:SetMovable(false);
+			-- Skillet compatibility
+			elseif SkilletFrame then
+				self:SetPoint("TOPLEFT", SkilletFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", SkilletFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(true);
 			elseif TradeSkillFrame then
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);

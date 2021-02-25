@@ -178,8 +178,8 @@ local L = app.L;
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
-	--TODO: L.CHACED_RECIPES_1 = "Cached ";
-	--TODO: L.CHACHED_RECIPES_2 = " known recipes!";
+	--TODO: L.CACHED_RECIPES_1 = "Cached ";
+	--TODO: L.CACHED_RECIPES_2 = " known recipes!";
 	--TODO: L.WORLD_QUESTS = "World Quests";
 	--TODO: L.WORLD_QUESTS_DESC = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
 	--TODO: L.UPDATE_WORLD_QUESTS = "Update World Quests Now";
@@ -197,6 +197,7 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
 
 -- Instructional Text
 	--TODO: L.MINIMAP_MOUSEOVER_TEXT = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
@@ -494,6 +495,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.SELFIE_FILTERS_HEADER = "Selfie Filters";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
+		--TODO: L.SOURCE_ID_MISSING = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";

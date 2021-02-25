@@ -22,6 +22,9 @@ _.Achievements =
 				1383,	-- Arathi Basin
 			},
 			["g"] = {
+				ach(711,  {	-- Knight of Arathor
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(1169, {	-- Master of Arathi Basin
 					ach(155, {	-- Arathi Basin Veteran
 						ach(154),	-- Arathi Basin Victory
@@ -47,9 +50,9 @@ _.Achievements =
 						crit(5),	-- Kill 5 people at the stables
 					}),
 				}),
-				ach(711, 710),	-- Knight of Arathor [A] / The Defiler [H]
-				--a(ach(711)),	-- Knight of Arathor
-				--h(ach(710)),	-- The Defiler
+				ach(710,  {	-- The Defiler
+					["races"] = HORDE_ONLY,
+				}),
 			},
 		}),
 	}),

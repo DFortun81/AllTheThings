@@ -106,7 +106,7 @@ _.Zones =
 				n(86571, {	-- Durp the Hated
 					["questID"] = 37366,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 23.8, 543 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 49.8, 23.8, 543 },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(3, {	-- Durp the Hated
@@ -232,7 +232,7 @@ _.Zones =
 				n(86574, {	-- Inventor Blammo
 					["questID"] = 37367,
 					["isDaily"] = true,
-					["coord"] = { 47.6, 30.8, 543 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 47.6, 30.8, 543 },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(4, {	-- Inventor Blammo

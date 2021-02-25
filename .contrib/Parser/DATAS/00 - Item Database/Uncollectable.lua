@@ -108,6 +108,7 @@ i(33932);	-- Amani Charm of the Witch Doctor
 i(139786);	-- Ancient Mana Crystal
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
+i(180690);	-- Bottled Ash Cloud
 i(180715);	-- Bottled Wrath
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red

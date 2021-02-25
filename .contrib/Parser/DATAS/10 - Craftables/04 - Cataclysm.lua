@@ -184,21 +184,6 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			filter(101, {	-- Pets
-				i(60216),	-- De-Weaponized Mechanical Companion*
-				i(59597),	-- Personal World Destroyer*
-			}),
-			filter(102, {	-- Toys
-				i(40727),	-- Gnomish Gravity Well*
-				i(60854),	-- Loot-A-Rang*
-			}),
-			n(-319, {	-- Weapons
-				i(71077),	-- Extreme-Impact Hole Puncher*
-				i(59598),	-- Finely-Tuned Throat Needler*
-				i(59367),	-- Kickback 5000*
-				i(59364),	-- Overpowered Chicken Splitter*
-				i(59599),	-- Volatile Thunderstick*
-			}),
 			n(-318, {	-- Armour
 				-- Head
 				i(59455),	-- Agile Bio-Optic Killshades*
@@ -214,6 +199,28 @@ _.Craftables =
 			filter(113, {	-- Bags
 				i(60217),	-- Elementium Toolbox*
 				i(60218),	-- Lure Master Tackle Box*
+			}),
+			filter(55, {	-- Consumable
+				i(67494, {	-- Electrostatic Condenser
+					["collectible"] = false,
+				}),
+				i(59595),	-- R19 Threatfinder
+				i(59596),	-- Safety Catch Removal Kit
+			}),
+			filter(101, {	-- Pets
+				i(60216),	-- De-Weaponized Mechanical Companion*
+				i(59597),	-- Personal World Destroyer*
+			}),
+			filter(102, {	-- Toys
+				i(40727),	-- Gnomish Gravity Well*
+				i(60854),	-- Loot-A-Rang*
+			}),
+			n(-319, {	-- Weapons
+				i(71077),	-- Extreme-Impact Hole Puncher*
+				i(59598),	-- Finely-Tuned Throat Needler*
+				i(59367),	-- Kickback 5000*
+				i(59364),	-- Overpowered Chicken Splitter*
+				i(59599),	-- Volatile Thunderstick*
 			}),
 		}),
 		n(-185, { 	-- Inscription

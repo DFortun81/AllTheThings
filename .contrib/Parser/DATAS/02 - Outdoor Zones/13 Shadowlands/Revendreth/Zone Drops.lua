@@ -18,6 +18,15 @@ _.Zones =
 				i(172957, {	-- Atonement Crypt Key
 					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
 				}),
+				i(182703, {	-- Bubbling Red Muck Dye
+					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
+					["crs"] = {
+						166292,	-- Bog Beast
+						166320,	-- Bog Dredger
+						166206,	-- Primordial Sludge
+						166305,	-- Primordial Sludge
+					},
+				}),
 				i(180602, {	-- Crimson Dredwing Pup (PET!)
 					["crs"] = {
 						159178,	-- Dire Evedweller
@@ -29,6 +38,38 @@ _.Zones =
 						165290,	-- Harika
 						158976,	-- Shrieking Evedweller
 						156395,	-- Starving Dredbat
+					},
+				}),
+				i(182972, {	-- Critter Two-Thumbs Portrait
+					["description"] = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
+					["crs"] = {
+						159676,	-- Animus Mite
+						160421,	-- Devourer Mite
+						156061,	-- Devourer Mite
+						175077,	-- Devourer Mite
+						155589,	-- Dread Gorger
+						165989,	-- Ebon Crawler
+						166005,	-- Ebon Crawler Hatchling
+						166487,	-- End Gorger
+						165206,	-- Endlurker
+						166521,	-- Famu the Infinite
+						173782,	-- Horrific Bonemauler
+						160521,	-- Manifestation of Envy
+						160455,	-- Manifestation of Gluttony
+						160476,	-- Manifestation of Pride
+						160477,	-- Manifestation of Rage
+						160454,	-- Ravenous Animite
+						160436,	-- Shackled Gorger
+						157698,	-- Unbidden Worldeater
+					},
+				}),
+				i(182704, {	-- Green Muck Dye
+					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r).  It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
+					["crs"] = {
+						157695,	-- Lurking Bonemauler
+						172888,	-- Lurking Alpha
+						172715,	-- Muckpool Investigator
+						172713,	-- Muckpool Vandal
 					},
 				}),
 				i(183420),	-- Hopebreaker's Right Boot
@@ -137,6 +178,18 @@ _.Zones =
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(180487),	-- Stonefist's Knuckle Cover
+				i(182705, {	-- Vial of Blue Muck Dye
+				--	may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
+					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
+				--[[ commenting until we know whether it's based on the mobs being in the specific area, or the mobs themselves, most of which are in multiple areas
+					["crs"] = {
+						157332,	-- Bonemauler Alpha
+						156077,	-- Fiendish Terrorwing
+						156596,	-- Horrific Bonemauler
+						157892,	-- Ravaging Devourer
+					},
+				--]]
+				}),
 				i(179334),	-- Wingblade Staff
 			}),
 		}),

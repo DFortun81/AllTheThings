@@ -15,6 +15,9 @@ _.Craftables =
 			filter(101, {	-- Battle Pets
 				i(165849),	-- Mechantula
 			}),
+			filter(55, {	-- Consumable
+				i(165738),	-- Makeshift Azerite Detector
+			}),
 			filter(102, {	-- Toys
 				i(168667, { -- Blingtron 7000
 					q(56042, { -- Blingtron 7000

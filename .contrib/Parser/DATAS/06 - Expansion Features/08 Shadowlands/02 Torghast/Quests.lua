@@ -67,9 +67,8 @@ _.ExpansionFeatures =
 				}),
 
 				-- Champion Unlocks
-				-- TODO: move to covenant files -- imo keep them in torghast file
 				q(61223, {	-- Champion: Ayeleth the Deprived [Venthyr]
-					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61259 },	-- Ayeleth's Hunger
 					["provider"] = { "n", 171918 },	-- Ayeleth
 					["g"] = {
@@ -77,7 +76,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61421, {	-- Champion: Blisswing [Night Fae]
-					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61427 },	-- Blisswing's Rescue
 					["provider"] = { "n", 172244 },	-- Blisswing
 					["g"] = {
@@ -85,7 +84,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61424, {	-- Champion: Chalkyth [Night Fae]
-					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61430 },	-- Chalkyth's Saber
 					["provider"] = { "n", 172240 },	-- Chalkyth
 					["g"] = {
@@ -93,7 +92,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(62999, {	-- Champion: Croman
-				--	picked up on a venthyr, is this for all or covenant-specific?
 					["sourceQuests"] = { 62993 },	-- The Riddle of Death
 					["provider"] = { "n", 175649 },	-- Croman
 					["g"] = {
@@ -101,7 +99,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61218, {	-- Champion: Dug Gravewell [Venthyr]
-					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
 					["provider"] = { "n", 171869 },	-- Dug Gravewell
 					["g"] = {
@@ -110,6 +108,7 @@ _.ExpansionFeatures =
 				}),
 				q(61422, {	-- Champion: Duskleaf [Night Fae]
 					-- found in Twisting Corridors
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61428 },	-- Duskleaf's Revenge
 					["provider"] = { "n", 172259 },	-- Duskleaf
 					["g"] = {
@@ -117,7 +116,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
-					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 173397 },	-- Gorgelimb
 					["g"] = {
@@ -125,19 +124,27 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
-					-- ["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
 					},
 				}),
+				q(61423, {	-- Champion: Karynmwylyann [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 61429 },	-- Karynmwylyann's Roots
+					["provider"] = { "n", 172239 },	-- Karynmwylyann
+					["g"] = {
+						follower(1279),	-- Karynmwylyann
+					},
+				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
-					-- ["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
-					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
+						follower(1222),	-- Kythekios
 					},
 				}),
 				q(60651, {	-- Champion: Meatball [ALL]
@@ -148,6 +155,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61219, {	-- Champion: Nerith Darkwing [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61262 },	-- Nerith's Vengeance
 					["provider"] = { "n", 171927 },	-- Nerith Darkwing
 					["g"] = {
@@ -155,6 +163,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
 					["provider"] = { "n", 171878 },	-- Stonehuck
 					["g"] = {
@@ -162,7 +171,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61959, {	-- Champion: Talethi [Necrolord]
-					-- ["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 173399 },	-- Talethi
 					["g"] = {
@@ -170,14 +179,23 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61317, {	-- Champion: Teliah [Kyrian]
-					-- ["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 172006 },	-- Teliah
 					["g"] = {
 						follower(1221),	-- Teliah
 					},
 				}),
+				q(61217, {	-- Champion: Thela Soulsipper [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 61243 },	-- Thela's Memory Stone
+					["provider"] = { "n", 171893 },	-- Thela Soulsipper
+					["g"] = {
+						follower(1213),	-- Thela Soulsipper
+					},
+				}),
 				q(61962, {	-- Champion: Velkein [Necrolord]
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 62231 },	-- Velkein's Blade
 					["provider"] = { "n", 173400 },	-- Velkein
 					["g"] = {
@@ -185,7 +203,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(61426, {	-- Champion: Yira'lya [Night Fae]
-					-- ["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					-- ["sourceQuests"] = { },	-- TODO
 					["provider"] = { "n", 172243 },	-- Yira'lya
 					["g"] = {
@@ -221,8 +239,6 @@ _.ExpansionFeatures =
 				
 				
 				-- Bonus Quests
-				-- TODO: are the ones that lead to the follower quest actually repeatable?
-				-- they appear to be, since I have them marked as incomplete yet have the corresponding follower
 				q(61259, {	-- Ayeleth's Hunger
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -278,6 +294,12 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157426 },	-- Indri the Treesinger
 				}),
+				q(61429, {	-- Karynmwylyann's Roots
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					-- ["provider"] = { "n",  },	-- Karynmwylyann
+					-- Fracture Chambers 4 / 2
+				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -287,6 +309,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 168979 },	-- Meatball
+				}),
+				q(61243, {	-- Thela's Memory Stone
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 171895 },	-- Thela Soulsipper
 				}),
 				q(61262, {	-- Nerith's Vengeance
 					["sourceQuests"] = { 60136 },	-- Into Torghast

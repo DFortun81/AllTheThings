@@ -17,6 +17,15 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(183729),	-- Filth-Splattered Headcover
+						i(182704, {	-- Green Muck Dye
+							["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r).  It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
+							["crs"] = {
+								157695,	-- Lurking Bonemauler
+								172888,	-- Lurking Alpha
+								172715,	-- Muckpool Investigator
+								172713,	-- Muckpool Vandal
+							},
+						}),
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
@@ -37,7 +46,7 @@ _.Zones =
 					},
 				}),
 				n(166576, {	-- Azgar
-					["questID"] = 59893,	-- TODO: also triggered 62464
+					["questID"] = 59893,
 					["isDaily"] = true,
 					["coord"] = { 36.0, 68.6, 1525 },
 					["g"] = {
@@ -74,7 +83,7 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time 
+				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time
 					["questID"] = 58441,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 51.0, 1525 },

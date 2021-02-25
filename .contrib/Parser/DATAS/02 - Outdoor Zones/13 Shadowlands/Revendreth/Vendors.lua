@@ -240,9 +240,7 @@ _.Zones =
 							["description"] = "Take this to Trader Ta'bix in Bastion |cffffffff(33.4, 36.2)|r.",
 						}),
 						i(181799),	-- Extra Large Hat
-						i(182702, {	-- Phial of Black Muck Dye
-							["description"] = "Allows for repeatably dyeing the clothes of your Dredger Butler to Black.",
-						}),
+						i(182702),	-- Phial of Black Muck Dye
 					},
 				}),
 			}),

@@ -188,7 +188,6 @@ namespace ATT
                     case 1:
                         switch (itemSubClass)
                         {
-#if CLASSIC
                             case 00: return Filters.Bag;    // Bags (Ignored!)
                             case 02: return Filters.Bag;    // Herb Bags (Ignored!)
                             case 03: return Filters.Bag;    // Enchanting Bags (Ignored!)
@@ -199,18 +198,6 @@ namespace ATT
                             case 08: return Filters.Bag;    // Inscription Bags (Ignored!)
                             case 09: return Filters.Bag;    // Fishing Bags (Ignored!)
                             case 10: return Filters.Bag;    // Cooking Bags (Ignored!)
-#else
-                            case 00: return Filters.Ignored;    // Bags (Ignored!)
-                            case 02: return Filters.Ignored;    // Herb Bags (Ignored!)
-                            case 03: return Filters.Ignored;    // Enchanting Bags (Ignored!)
-                            case 04: return Filters.Ignored;    // Engineering Bags (Ignored!)
-                            case 05: return Filters.Ignored;    // Jewelcrafting Bags (Ignored!)
-                            case 06: return Filters.Ignored;    // Mining Bags (Ignored!)
-                            case 07: return Filters.Ignored;    // Leatherworking Bags (Ignored!)
-                            case 08: return Filters.Ignored;    // Inscription Bags (Ignored!)
-                            case 09: return Filters.Ignored;    // Fishing Bags (Ignored!)
-                            case 10: return Filters.Ignored;    // Cooking Bags (Ignored!)
-#endif
                             default: return Filters.Invalid;
                         }
 
@@ -234,11 +221,7 @@ namespace ATT
                             case 13: return Filters.FistWeapon;
                             case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
                             case 15: return Filters.Dagger;
-#if CLASSIC
                             case 16: return Filters.Thrown;            // Thrown
-#else
-                            case 16: return Filters.Ignored;            // Thrown
-#endif
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
                             case 18: return Filters.Crossbow;
                             case 19: return Filters.Wand;
@@ -259,27 +242,20 @@ namespace ATT
                         switch (itemSubClass)
                         {
                             case 00:    // Miscellaneous
+                                switch (inventoryType)
                                 {
-                                    switch (itemSubClass)
-                                    {
-                                        case 00:
-                                            switch (inventoryType)
-                                            {
-                                                case 00: return Filters.Ignored;            // Tokens?
-                                                case 01: return Filters.Cosmetic;           // Head (no armor type specified - Cosmetic?)
-                                                case 03: return Filters.Cosmetic;           // Shoulder (no armor type specified - Cosmetic?)
-                                                case 05: return Filters.Cosmetic;           // Shirt (no armor type specified - Cosmetic?)
-                                                case 06: return Filters.Cosmetic;           // Waist (no armor type specified - Cosmetic?)
-                                                case 07: return Filters.Cosmetic;           // Legs (no armor type specified - Cosmetic?)
-                                                case 08: return Filters.Cosmetic;           // Boots (no armor type specified - Cosmetic?)
-                                                case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
-                                                case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
-                                                case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
-                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
-                                                default: return Filters.Invalid;
-                                            }
-                                        default: return Filters.Invalid;
-                                    }
+                                    case 00: return Filters.Ignored;            // Tokens?
+                                    case 01: return Filters.Cosmetic;           // Head (no armor type specified - Cosmetic?)
+                                    case 03: return Filters.Cosmetic;           // Shoulder (no armor type specified - Cosmetic?)
+                                    case 05: return Filters.Cosmetic;           // Shirt (no armor type specified - Cosmetic?)
+                                    case 06: return Filters.Cosmetic;           // Waist (no armor type specified - Cosmetic?)
+                                    case 07: return Filters.Cosmetic;           // Legs (no armor type specified - Cosmetic?)
+                                    case 08: return Filters.Cosmetic;           // Boots (no armor type specified - Cosmetic?)
+                                    case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
+                                    case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
+                                    case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
+                                                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                    default: return Filters.Invalid;
                                 }
                             case 01: return Filters.Cloth;
                             case 02: return Filters.Leather;
@@ -302,12 +278,7 @@ namespace ATT
 
                     // Arrows / Ammo
                     case 6:
-#if CLASSIC
                         return Filters.Ammo;
-#else
-                        return Filters.Ignored;
-#endif
-
 
                     // Crafting Reagents
                     case 7:
@@ -332,7 +303,6 @@ namespace ATT
                     case 8:
                         switch (itemSubClass)
                         {
-#if CLASSIC
                             case 01: return Filters.Consumable;    // Neck
                             case 02: return Filters.Consumable;    // Shoulders
                             case 03: return Filters.Consumable;    // Cloaks
@@ -348,24 +318,6 @@ namespace ATT
                             case 13: return Filters.Consumable;    // Shields
                             case 14: return Filters.Consumable;    // Shared Item Enhancements
                             case 16: return Filters.Consumable;    // Old Glyphs (TODO: Perhaps something we can track?)
-
-#else
-                            case 01: return Filters.Ignored;    // Neck
-                            case 02: return Filters.Ignored;    // Shoulders
-                            case 03: return Filters.Ignored;    // Cloaks
-                            case 04: return Filters.Ignored;    // Chest
-                            case 05: return Filters.Ignored;    // Bracers
-                            case 06: return Filters.Ignored;    // Gloves
-                            case 07: return Filters.Ignored;    // Belt
-                            case 08: return Filters.Ignored;    // Legs
-                            case 09: return Filters.Ignored;    // Boots
-                            case 10: return Filters.Ignored;    // Ring
-                            case 11: return Filters.Ignored;    // Weapons
-                            case 12: return Filters.Ignored;    // 2H-Weapons
-                            case 13: return Filters.Ignored;    // Shields
-                            case 14: return Filters.Ignored;    // Shared Item Enhancements
-                            case 16: return Filters.Ignored;    // Old Glyphs (TODO: Perhaps something we can track?)
-#endif
                             default: return Filters.Invalid;
                         }
 
@@ -386,11 +338,7 @@ namespace ATT
 
                     // Keys
                     case 13: 
-#if CLASSIC
                         return Filters.Key;
-#else
-                        return Filters.Ignored;
-#endif
 
                     // Miscellaneous
                     case 15:
@@ -412,11 +360,7 @@ namespace ATT
                                     case 21: return Filters.Cosmetic;           // Main Hand (no armor type specified - Cosmetic?)
                                     //case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                     case 24: // Projectiles
-#if CLASSIC
                                         return Filters.Ammo;
-#else
-                                        return Filters.Ignored;
-#endif
                                     default: return Filters.Invalid;
                                 }
                             case 01: return Filters.Ignored;     // Reagent (not filtered)

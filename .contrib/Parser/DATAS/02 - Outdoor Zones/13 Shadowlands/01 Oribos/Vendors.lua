@@ -77,7 +77,6 @@ _.Zones =
 							["cost"] = { { "c", 1816, 1000 } },
 						}),
 						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
 							i(180940, {	-- Ebony Crypt Keeper's Mantle
 								["cost"] = { { "c", 1816, 500 } },
 							}),
@@ -135,7 +134,6 @@ _.Zones =
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
 						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
-							-- These are only available to Necrolord covenant members
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),
@@ -188,7 +186,6 @@ _.Zones =
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
 						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
 							i(183708, {	-- Glittering Gold Sinstone Chain
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
@@ -515,7 +512,7 @@ _.Zones =
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					["coord"] = { 35.0, 57.6, 1670 },
 					["g"] = {
-						n(-939, {	-- Covenant: Kyrian
+						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 							-- These are only available to Kyrian covenant members
 							i(177851, {	-- Sinful Gladiator's Ceremonial Sword
 								["cost"] = { { "c", 1602, 1350 } },
@@ -559,8 +556,8 @@ _.Zones =
 							i(184547, {	-- Sinful Gladiator's Xiphos
 								["cost"] = { { "c", 1602, 900 } },
 							}),
-						}),
-						n(-920, {	-- Covenant: Necrolord
+						})),
+						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
 							-- These are only available to Necrolord covenant members
 							i(183446, {	-- Sinful Gladiator's Cleaver
 								["cost"] = { { "c", 1602, 1800 } },
@@ -598,8 +595,8 @@ _.Zones =
 							i(183441, {	-- Sinful Gladiator's Warglaive
 								["cost"] = { { "c", 1602, 900 } },
 							}),
-						}),
-						n(-929, {	-- Covenant: Night Fae
+						})),
+						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
 							-- These are only available to Night Fae covenant members
 							i(179543, {	-- Sinful Gladiator's Bludgeon
 								["cost"] = { { "c", 1602, 1800 } },
@@ -637,8 +634,8 @@ _.Zones =
 							i(180081, {	-- Sinful Gladiator's Warbow
 								["cost"] = { { "c", 1602, 1800 } },
 							}),
-						}),
-						n(-949, {	-- Covenant: Venthyr
+						})),
+						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
 							-- These are only available to Venthyr covenant members
 							i(182406, {	-- Sinful Gladiator's Battlestave
 								["cost"] = { { "c", 1602, 1800 } },
@@ -682,7 +679,7 @@ _.Zones =
 							i(182410, {	-- Sinful Gladiator's Wingglaive
 								["cost"] = { { "c", 1602, 900 } },
 							}),
-						}),
+						})),
 						i(181848, {	-- Accelerated Cold
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { DEATHKNIGHT },

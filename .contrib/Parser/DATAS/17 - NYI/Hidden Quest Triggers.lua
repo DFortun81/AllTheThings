@@ -745,6 +745,9 @@ _.HiddenQuestTriggers =
 		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
 		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
 		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
+		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
+		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
+		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
@@ -969,6 +972,7 @@ _.HiddenQuestTriggers =
 		q(36896),	-- Nemesis Flag, Pandaren (A/H)
 		q(36895),	-- Nemesis Flag, Worgen/Goblin
 		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
+		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -3321,6 +3325,8 @@ _.HiddenQuestTriggers =
 		q(61117),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61118),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61119),	-- interacting with runes to unlock a Runebound Coffer (61116)
+		q(60311),	-- triggered when opening Misplaced Supplies - i think i had already opened it?  so i'm not sure if it's somehow repeatable :\ but we have a different questID attached to the criteria
+		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57210),	-- triggered when completing the ballista at 37.6, 50.8 during #57205, "A Few Bumps Along the Way"
@@ -3418,6 +3424,7 @@ _.HiddenQuestTriggers =
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
 		-- Revendreth Rares
+		q(62464),	-- Azgar secondary quest
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
@@ -3575,7 +3582,6 @@ _.HiddenQuestTriggers =
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(62179),	-- When completing 'Dredging up a New Look' (62985) (Vial of Blue Muck Dye?)
 		q(61582),	-- When applying trimmed hair to your dredger
 		q(61573),	-- When applying the long sleeved doublet to your dredger
 		q(61575),	-- When applying Spikey Hair to your dredger
@@ -3603,40 +3609,43 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
-		q(59382),	-- when using "RSVP: Baroness Vashj" - every time
-		q(59383),	-- when using "RSVP: Baroness Vashj" - first time
-		q(59406),	-- when using "RSVP: Choofa"
-		q(59407),	-- when using "RSVP: Choofa"
+		q(59382),	-- when using "RSVP: Baroness Vashj" — every time
+		q(59383),	-- when using "RSVP: Baroness Vashj" — first time only
+		q(59406),	-- when using "RSVP: Choofa" — every time
+		q(59407),	-- when using "RSVP: Choofa" — first time only
 		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
 		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
-		q(59412),	-- when using "RSVP: Droman Aliothe"
-		q(59413),	-- when using "RSVP: Droman Aliothe"
-		q(59415),	-- when using "RSVP: Grandmaster Vole" - every time
-		q(59416),	-- when using "RSVP: Grandmaster Vole" - first time
-		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" - every time
-		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" - first time
+		q(59412),	-- when using "RSVP: Droman Aliothe" — every time
+		q(59413),	-- when using "RSVP: Droman Aliothe" — first time only
+		q(59415),	-- when using "RSVP: Grandmaster Vole" — every time
+		q(59416),	-- when using "RSVP: Grandmaster Vole" — first time only
+		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" — every time
+		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" — first time only
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
+		q(59385),	-- when using "RSVP: Lady Moonberry" — every time
+		q(59386),	-- when using "RSVP: Lady Moonberry" — first time only
 		q(59388),	-- when using "RSVP: Mikanikos" — every time
 		q(59389),	-- when using "RSVP: Mikanikos" — first time only
-		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
-		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124)
-		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117)
-		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117)
-		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118)
-		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118)
-		q(59424),	-- when using "RSVP: Sika"
-		q(59425),	-- when using "RSVP: Sika"
-		q(59618),	-- when using "RSVP: Stonehead"
-		q(59619),	-- when using "RSVP: Stonehead"
-		q(59394),	-- when using "RSVP: Alexandros Morgraine"
-		q(59395),	-- when using "RSVP: Alexandros Morgraine"
+		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124) — every time
+		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124) — first time only
+		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117) — every time
+		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117) — first time only
+		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118) — every time
+		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118) — first time only
+		q(59424),	-- when using "RSVP: Sika" — every time
+		q(59425),	-- when using "RSVP: Sika" — first time only
+		q(59618),	-- when using "RSVP: Stonehead" — every time
+		q(59619),	-- when using "RSVP: Stonehead" — first time only
+		q(59394),	-- when using "RSVP: Alexandros Morgraine" — every time
+		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(59626),	-- when using 'Guest List Page' (181538)
 		q(61506),	-- when using 'Guest List Page' (181538)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
+		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61494),	-- using Building: Guardhouse
@@ -3662,6 +3671,8 @@ _.HiddenQuestTriggers =
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
+		q(59685),	-- when using Rally Bell
+		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3710,6 +3721,8 @@ _.HiddenQuestTriggers =
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
+		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
+		q(61211),	-- triggered when completing Thela's Memory Stone (61243)
 		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
 		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
 		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"

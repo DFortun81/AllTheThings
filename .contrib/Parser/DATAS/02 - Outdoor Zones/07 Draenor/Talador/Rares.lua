@@ -352,7 +352,7 @@ _.Zones =
 					},
 				}),
 				n(51015, {	-- Silthide
-					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
+					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 62.0, 33.2, 535 },
 						{ 62.6, 46.0, 535 },
 						{ 80.4, 56.0, 535 },

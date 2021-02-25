@@ -141,7 +141,7 @@ _.Zones =
 					},
 				}),
 				n(50992, {	-- Gorok
-					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
+					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 64.6, 52.0, 525 },
 						{ 63.4, 79.6, 525 },
 					},
@@ -203,7 +203,7 @@ _.Zones =
 				n(82616, {	-- Jabberjaw
 					["questID"] = 37386,
 					["isDaily"] = true,
-					["coord"] = { 49.0, 24.0, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 49.0, 24.0, 525 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119390),	-- Rockworm Carapace Shield
 					},
@@ -239,7 +239,7 @@ _.Zones =
 				n(87351, {	-- Mother of Goren
 					["questID"] = 37381,
 					["isDaily"] = true,
-					["coord"] = { 72.6, 22.6, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 72.6, 22.6, 525 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119376),	-- Three-Egg Pendant Necklace
 					},
@@ -253,7 +253,7 @@ _.Zones =
 				n(87622, {	-- Ogom the Mangler
 					["questID"] = 37402,
 					["isDaily"] = true,
-					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
+					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 84.4, 48.0, 525 },
 						{ 86.6, 48.6, 525 },
 					},
@@ -299,7 +299,7 @@ _.Zones =
 				n(82620, {	-- Son of Goramal
 					["questID"] = 37383,
 					["isDaily"] = true,
-					["coord"] = { 38.4, 16.4, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 38.4, 16.4, 525 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119399),	-- Cudgel of the Son of Goramal
 					},
@@ -353,7 +353,7 @@ _.Zones =
 				n(87356, {	-- Vrok the Ancient
 					["questID"] = 37379,
 					["isDaily"] = true,
-					["coord"] = { 70.6, 39.0, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 70.6, 39.0, 525 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(119416),	-- Magnaron Heart
 					},

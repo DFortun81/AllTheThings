@@ -69,7 +69,7 @@ _.Zones =
 				n(87029, {	-- Giga Sentinel
 					["questID"] = 37393,
 					["isDaily"] = true,
-					["coord"] = { 71.6, 44.8, 542 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 71.6, 44.8, 542 },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(2, {	-- Giga Sentinel
@@ -138,7 +138,7 @@ _.Zones =
 				n(86621, {	-- Morphed Sentient
 					["questID"] = 37493,
 					["isDaily"] = true,
-					["coord"] = { 73.6, 45.0, 542 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 73.6, 45.0, 542 },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(1, {	-- Morphed Sentient

@@ -20,30 +20,42 @@ _.Achievements =
 			},
 			["g"] = {
 				ach(1172, {	-- Master of Warsong Gulch
-					ach(167, {		-- Warsong Gulch Veteran
+					ach(167,  {	-- Warsong Gulch Veteran
 						ach(166),	-- Warsong Gulch Victory
 					}),
-					ach(199),		-- Capture the Flag
-					ach(200),		-- Persistent Defender
-					ach(872), 		-- Frenzied Defender
-					ach(168), 		-- Warsong Gulch Perfection
-					ach(201), 		-- Warsong Expedience
-					ach(204), 		-- Ironman
-					ach(203, 1251),	-- Not in My House [A] / [H]
-					--a(ach(203)),	-- Not in My House (Alliance)
-					--h(ach(1251)),	-- Not in My House (Horde)
-					ach(202, 1502),	-- Quick Cap [A] / [H]
-					--a(ach(202)),	-- Quick Cap (Alliance)
-					--h(ach(1502)),	-- Quick Cap (Horde)
-					ach(206, 1252),	-- Supreme Defender [A] / [H]
-					--a(ach(206)),	-- Supreme Defender (Alliance)
-					--h(ach(1252)),	-- Supreme Defender (Horde)
-					ach(207), 		-- Save the Day
+					ach(199),	-- Capture the Flag
+					ach(200),	-- Persistent Defender
+					ach(872),	-- Frenzied Defender
+					ach(168),	-- Warsong Gulch Perfection
+					ach(201),	-- Warsong Expedience
+					ach(204),	-- Ironman
+					ach(203,  {	-- Not in My House (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(1251, {	-- Not in My House (H)
+						["races"] = HORDE_ONLY,
+					}),
+					ach(202,  {	-- Quick Cap (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(1502, {	-- Quick Cap (H)
+						["races"] = HORDE_ONLY,
+					}),
+					ach(206,  {	-- Supreme Defender (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(1252, {	-- Supreme Defender (H)
+						["races"] = HORDE_ONLY,
+					}),
+					ach(207),	-- Save the Day
 				}),
-				ach(1259), 		-- Not So Fast
-				ach(713, 712),	-- Silverwing Sentinel [A] / Warsong Outrider [H]
-				--a(ach(713)),	-- Silverwing Sentinel (Alliance)
-				--h(ach(712)),	-- Warsong Outrider (Horde)
+				ach(1259),	-- Not So Fast
+				ach(713,  {	-- Silverwing Sentinel (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(712,  {	-- Warsong Outrider (H)
+					["races"] = HORDE_ONLY,
+				}),
 			},
 		}),
 	}),

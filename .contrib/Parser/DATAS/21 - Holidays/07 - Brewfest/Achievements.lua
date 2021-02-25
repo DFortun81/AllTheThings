@@ -11,44 +11,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 				27,	-- Dun Morogh
 			},
 			["g"] = {
-				ach(1683, {	-- Brewmaster
-					title(101),	-- Brewmaster
-					ach(2796),	-- Brew of the Month
-					ach(295),	-- Direbrewfest
-					ach(1936),	-- Does Your Wolpertinger Linger?
-					ach(303),	-- Have Keg, Will Travel
-					ach(1185, {	-- The Brewfest Diet
-						["g"] = {
-							crit(1, {	-- Dried Sausage
-								["itemID"] = 34063,	-- Dried Sausage
-							}),
-							crit(2, {	-- Pickled Sausage
-								["itemID"] = 33024,	-- Pickled Sausage
-							}),
-							crit(3, {	-- Savory Sausage
-								["itemID"] = 33023,	-- Savory Sausage
-							}),
-							crit(4, {	-- Spiced Onion Cheese
-								["itemID"] = 34065,	-- Spiced Onion Cheese
-							}),
-							crit(5, {	-- Spicy Smoked Sausage
-								["itemID"] = 33025,	-- Spicy Smoked Sausage
-							}),
-							crit(6, {	-- Succulent Sausage
-								["itemID"] = 34064,	-- Succulent Sausage
-							}),
-							crit(7, {	-- The Essential Brewfest Pretzel
-								["itemID"] = 33043,	-- The Essential Brewfest Pretzel
-							}),
-							crit(8, {	-- The Golden Link
-								["itemID"] = 33026,	-- The Golden Link
-							}),
-						},
-					}),
-				}),
 				ach(1260),	-- Almost Blind Luck
-				un(REMOVED_FROM_GAME, ach(1293, {	-- Blue Brewfest Stein [Removed]
+				ach(1293, {	-- Blue Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(33016, {	-- Blue Brewfest Stein
 							i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear]
@@ -58,48 +24,85 @@ _.Holidays = bubbleDown({["u"] = 24},
 							i(33021),	-- Filled Blue Brewfest Stein [Jungle River
 						}),
 					}),
-				})),
+				}),
 				ach(1183, {	-- Brew of the Year
 					crit(1, {	-- Wild Winter Pilsner
-						["itemID"] = 37488,	-- Wild Winter Pilsner
+						["cost"] = { { "i", 37488, 1 } },	-- Wild Winter Pilsner
 					}),
 					crit(2, {	-- Stranglethorn Brew
-						["itemID"] = 37494,	-- Stranglethorn Brew
+						["cost"] = { { "i", 37494, 1 } },	-- Stranglethorn Brew
 					}),
 					crit(3, {	-- Springtime Stout
-						["itemID"] = 37492,	-- Springtime Stout
+						["cost"] = { { "i", 37492, 1 } },	-- Springtime Stout
 					}),
 					crit(4, {	-- Metok's Bubble Bock
-						["itemID"] = 37491,	-- Metok's Bubble Bock
+						["cost"] = { { "i", 37491, 1 } },	-- Metok's Bubble Bock
 					}),
 					crit(5, {	-- Lord of Frost's Private Label
-						["itemID"] = 37499,	-- Lord of Frost's Private Label
+						["cost"] = { { "i", 37499, 1 } },	-- Lord of Frost's Private Label
 					}),
 					crit(6, {	-- Izzard's Ever Flavor
-						["itemID"] = 37489,	-- Izzard's Ever Flavor
+						["cost"] = { { "i", 37489, 1 } },	-- Izzard's Ever Flavor
 					}),
 					crit(7, {	-- Draenic Pale Ale
-						["itemID"] = 37495,	-- Draenic Pale Ale
+						["cost"] = { { "i", 37495, 1 } },	-- Draenic Pale Ale
 					}),
 					crit(8, {	-- Blackrock Lager
-						["itemID"] = 37493,	-- Blackrock Lager
+						["cost"] = { { "i", 37493, 1 } },	-- Blackrock Lager
 					}),
 					crit(9, {	-- Binary Brew
-						["itemID"] = 37496,	-- Binary Brew
+						["cost"] = { { "i", 37496, 1 } },	-- Binary Brew
 					}),
 					crit(10, {	-- Bartlett's Bitter Brew
-						["itemID"] = 37498,	-- Bartlett's Bitter Brew
+						["cost"] = { { "i", 37498, 1 } },	-- Bartlett's Bitter Brew
 					}),
 					crit(11, {	-- Autmunal Acorn Ale
-						["itemID"] = 37497,	-- Autmunal Acorn Ale
+						["cost"] = { { "i", 37497, 1 } },	-- Autmunal Acorn Ale
 					}),
 					crit(12, {	-- Aromatic Honey Brew
-						["itemID"] = 37490,	-- Aromatic Honey Brew
+						["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
+					}),
+				}),
+				ach(1683, {	-- Brewmaster
+					title(101),	-- Brewmaster
+					ach(2796),	-- Brew of the Month
+					ach(295),	-- Direbrewfest
+					ach(1936),	-- Does Your Wolpertinger Linger?
+					ach(303),	-- Have Keg, Will Travel
+					ach(1185, {	-- The Brewfest Diet
+						crit(1, {	-- Dried Sausage
+							["cost"] = { { "i", 34063, 1 } },	-- Dried Sausage
+						}),
+						crit(2, {	-- Pickled Sausage
+							["cost"] = { { "i", 33024, 1 } },	-- Pickled Sausage
+						}),
+						crit(3, {	-- Savory Sausage
+							["cost"] = { { "i", 33023, 1 } },	-- Savory Sausage
+						}),
+						crit(4, {	-- Spiced Onion Cheese
+							["cost"] = { { "i", 34065, 1 } },	-- Spiced Onion Cheese
+						}),
+						crit(5, {	-- Spicy Smoked Sausage
+							["cost"] = { { "i", 33025, 1 } },	-- Spicy Smoked Sausage
+						}),
+						crit(6, {	-- Succulent Sausage
+							["cost"] = { { "i", 34064, 1 } },	-- Succulent Sausage
+						}),
+						crit(7, {	-- The Essential Brewfest Pretzel
+							["cost"] = { { "i", 33043, 1 } },	-- The Essential Brewfest Pretzel
+						}),
+						crit(8, {	-- The Golden Link
+							["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
+						}),
 					}),
 				}),
 				ach(293),	-- Disturbing the Peace
-				un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
-				un(REMOVED_FROM_GAME, ach(4782, {	-- Green Brewfest Stein [Removed]
+				ach(1186, {	-- Down With The Dark Iron
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(4782, {	-- Green Brewfest Stein [Removed]
+					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(37892, {	-- Green Brewfest Stein
 							i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear]
@@ -109,23 +112,38 @@ _.Holidays = bubbleDown({["u"] = 24},
 							i(37897),	-- Filled Green Brewfest Stein [Jungle River Water]
 						}),
 					}),
-					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
-				})),
-				ach(1184, 1203, {	-- Strange Brew (A, H)
+				}),
+				ach(1184, {	-- Strange Brew (A)
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Barleybrew Clear, Brewdoo Magic
-						crit(2),	-- Barleybrew Dark, Gordok Grog
-						crit(3),	-- Barleybrew Light, Jungle River Water
-						crit(4),	-- Gordok Grog, Long Stride Brew
-						crit(5),	-- Mudder's Milk, Mudder's Milk
-						crit(6),	-- Ogre Mead, Ogre Mead
-						crit(7),	-- Thunder 45, Path of Brew
-						crit(8),	-- Thunderbrew Ale, Small Step Brew
-						crit(9),	-- Thunderbrew Stout, Stout Shrunken Head
+						crit(1),	-- Barleybrew Clear
+						crit(2),	-- Barleybrew Dark
+						crit(3),	-- Barleybrew Light
+						crit(4),	-- Gordok Grog
+						crit(5),	-- Mudder's Milk
+						crit(6),	-- Ogre Mead
+						crit(7),	-- Thunder 45
+						crit(8),	-- Thunderbrew Ale
+						crit(9),	-- Thunderbrew Stout
 					},
 				}),
-				un(REMOVED_FROM_GAME, ach(1292, {	-- Yellow Brewfest Stein [Removed]
+				ach(1203, {	-- Strange Brew (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1),	-- Brewdoo Magic
+						crit(2),	-- Gordok Grog
+						crit(3),	-- Jungle River Water
+						crit(4),	-- Long Stride Brew
+						crit(5),	-- Mudder's Milk
+						crit(6),	-- Ogre Mead
+						crit(7),	-- Path of Brew
+						crit(8),	-- Small Step Brew
+						crit(9),	-- Stout Shrunken Head
+					},
+				}),
+				ach(1292, {	-- Yellow Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(32912, {	-- Yellow Brewfest Stein
 							i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear]
@@ -135,7 +153,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water]
 						}),
 					}),
-				})),
+				}),
 			},
 		}),
 	}),

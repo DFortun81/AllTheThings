@@ -182,8 +182,8 @@ local L = app.L;
 	L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 	L.PROFESSION_LIST = "Список Профессий";
 	L.PROFESSION_LIST_DESC = "Откройте Ваши профессии для кэширования.";
-	L.CHACED_RECIPES_1 = "Кэшировано ";
-	L.CHACHED_RECIPES_2 = " известных рецептов!";
+	L.CACHED_RECIPES_1 = "Кэшировано ";
+	L.CACHED_RECIPES_2 = " известных рецептов!";
 	L.WORLD_QUESTS = "Локальные Задания";
 	L.WORLD_QUESTS_DESC = "Эти Локальные Задания и другие ограниченные по времени Штучки сейчас доступны где-либо. Получи их!";
 	L.UPDATE_WORLD_QUESTS = "Обновить Локальные Задания";
@@ -201,6 +201,7 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": Успешно сканировано ";
 	L.AH_SCAN_SUCCESSFUL_2 = " предмет(ов).";
 	L.REAGENT_CACHE_OUT_OF_DATE = "Кэш реагентов устарел и будет обновлен, когда откроете Ваши профессии!";
+	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий."
 
 -- Instructional Text
 	L.MINIMAP_MOUSEOVER_TEXT = "Правый клик - Меню Настроек.\nЛевый клик - Основной список.\nCtrl + Левый клик - открыть Мини список.\nShift + Левый клик - Обновить Коллекцию.";
@@ -498,6 +499,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "Секреты";
 		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
+		L.SOURCE_ID_MISSING = "SourceID данной Штучки отсутствует в ATT.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.

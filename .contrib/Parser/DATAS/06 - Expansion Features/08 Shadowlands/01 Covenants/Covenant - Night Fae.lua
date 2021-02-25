@@ -1204,8 +1204,13 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 62.0, 1662 },
 									["isDaily"] = true,
 								}),
-								q(62627, {	-- All Spirits Great and Small
+								q(62627, {	-- All Spirits Great and Small (1)
 									["sourceQuests"] = { 62625 },	-- A Rare and Unusual Spirit (4)
+									["provider"] = { "n", 174511 },	-- Lia the Curious
+									["coord"] = { 26.0, 63.8, 1662 },
+								}),
+								q(62629, {	-- All Spirits Great and Small (2)
+									["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)
 									["provider"] = { "n", 174511 },	-- Lia the Curious
 									["coord"] = { 26.0, 63.8, 1662 },
 								}),
@@ -1274,6 +1279,14 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 174508 },	-- Ohm of Meditation
 									["coord"] = { 25.6, 47.5, 1662 },
 								}),
+								q(62592, {	-- Master of Inner Calm
+									["sourceQuests"] = { 62591 },	-- In Search of Inner Calm (5)
+									["provider"] = { "n", 174508 },	-- Ohm of Meditation
+									["coord"] = { 25.6, 47.5, 1662 },
+									["g"] = {
+										i(183856),	-- Mystical Orb of Meditation (TOY!)
+									},
+								}),
 								q(59999, {	-- Rebirth of the Grove
 									["sourceQuests"] = { 59873 },	-- Greeting a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
@@ -1303,11 +1316,6 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
 									["coord"] = { 56.0, 68.2, 1702 },
 								}),
-
-								-- TODO: everything past here is yet to be verified on retail
-								--q(xxxxx, {	-- Master of Inner Calm
-									i(183856),	-- Mystical Orb of Meditation (TOY!)
-								--}),
 							}),
 							-- Spirits/Transmog
 							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...

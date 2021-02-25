@@ -16,6 +16,3 @@ license-output: LICENSE.txt
 
 tools-used:
     - data-tools
-
-# Need this because title in .toc includes leading dot character
-changelog-title: AllTheThings

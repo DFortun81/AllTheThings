@@ -190,8 +190,8 @@ app.L = {
 	["NO_SEARCH_METHOD"] = "No search method specified.";
 	["PROFESSION_LIST"] = "Profession List";
 	["PROFESSION_LIST_DESC"] = "Open your professions to cache them.";
-	["CHACED_RECIPES_1"] = "Cached ";
-	["CHACHED_RECIPES_2"] = " known recipes!";
+	["CACHED_RECIPES_1"] = "Cached ";
+	["CACHED_RECIPES_2"] = " known recipes!";
 	["WORLD_QUESTS"] = "World Quests";
 	["WORLD_QUESTS_DESC"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
 	["UPDATE_WORLD_QUESTS"] = "Update World Quests Now";
@@ -209,6 +209,7 @@ app.L = {
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
 	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
@@ -508,6 +509,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
+	["SOURCE_ID_MISSING"] = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
@@ -4892,6 +4894,7 @@ app.L = {
 		[357237] = "Forgotten Chest",											-- A-2
 		[357238] = "Forgotten Chest",											-- A-3
 		[358315] = "Skeletal Hand Fragments",
+		[358318] = "R. Suavel Dredger Portrait",
 		[358319] = "Sorceror's Note",
 		[1278968750] = "Hanging Chain",
 		[1278968751] = "Lunarlight Pod",										-- TODO: fix objectID when data becomes available
