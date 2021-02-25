@@ -1583,6 +1583,7 @@ for key,value in pairs({
 	[220832] = "Tesouro afundado",
 	[221376] = "Fragmento de Letreiro Velho",
 	[221413] = "Pergaminho da Família Lin",
+	[221673] = "Baú Fulgurante",
 	[222685] = "Ninho de Garça",
 	[223533] = "Oferta de Paz",
 	[224228] = "Caldeirão Borbulhante",
@@ -2779,6 +2780,7 @@ for key,value in pairs({
 	--TODO: [357237] = "Forgotten Chest",							-- A-2
 	--TODO: [357238] = "Forgotten Chest",							-- A-3
 	--TODO: [358315] = "Skeletal Hand Fragments",
+	[358318] = "[R. Suavel Dredger Portrait]",
 	--TODO: [358319] = "Sorceror's Note",
 	--TODO: [1278968750] = "Hanging Chain",
 	--TODO: [1278968751] = "Lunarlight Pod",						-- TODO: fix objectID when data becomes available
