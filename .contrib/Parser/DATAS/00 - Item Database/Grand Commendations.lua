@@ -173,6 +173,19 @@ i(118660, 1711);	-- Thek'talon's Talon [Steamwheedle Preservation]
 i(118661, 1711);	-- Xelganak's Stinger [Steamwheedle Preservation]
 i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
 i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
+-- Timewalking Vendor Commendations
+i(167924, 1515);	-- Commendation of the Arakkoa Outcast
+i(167926, 1711);	-- Commendation of the Steamwheedle Preservation Society
+i(167925, 1849);	-- Commendation of the Order of the Awakened
+i(167927, 1850);	-- Commendation of the Saberstalkers
+-- Horde
+i(167928, 1445);	-- Commendation of the Frostwolf Orcs
+i(167930, 1708);	-- Commendation of the Laughing Skull Orcs
+i(168017, 1848);	-- Commendation of Vol'jin's Headhunters
+-- Alliance
+i(167929, 1731);	-- Commendation of the Council of Exarchs
+i(167932, 1710);	-- Commendation of the Sha'tari Defense
+i(168018, 1847);	-- Commendation of the Hand of the Prophet
 
 -- Legion
 i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
