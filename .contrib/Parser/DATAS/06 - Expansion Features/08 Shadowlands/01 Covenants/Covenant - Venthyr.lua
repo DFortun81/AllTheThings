@@ -1153,24 +1153,14 @@ _.ExpansionFeatures =
 									}),
 									ach(14681, {	-- Dredger Academy
 										crit(1),	-- Ardenweald Etiquette
-										crit(2),	-- Bastion Etiquette
 										crit(3),	-- Maldraxxus Etiquette
 										crit(4),	-- Revendreth Etiquette
 										crit(5),	-- Sinrunner Riding
 										crit(6),	-- Dredbat Riding
 									}),
-									-- TODO: comment entirely when sourced properly
 									ach(14683, {	-- Dredger Style
-										-- crit(1),	-- Black Muck Armor Dye
-										-- crit(2),	-- Blue Muck Armor Dye
-										crit(3),	-- Green Muck Armor Dye
-										-- crit(4),	-- Bubbling Muck Armor Dye
 										crit(5),	-- Thin Hair Cut
-										-- crit(6),	-- Spikey Hair Cut
-										crit(7),	-- Full Flowing Hair Cut
-										-- crit(8),	-- Dredger Lether Coif
 										crit(9),	-- Short Sleeved Doublet
-										-- crit(10),	-- Long Sleeved Doublet
 									}),
 									ach(14726, {	-- It's Certainly Never Boring
 										crit(1),	-- Messy
@@ -1234,18 +1224,22 @@ _.ExpansionFeatures =
 								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
+								i(183713),	-- Kassir's Crypt Mantle (Cryptkeeper Kassir's Extravagant Tribute - got when i hit Best Friend with him, not sure if that was just luck)
 								i(181615),	-- Marching an Army (Alexandros Mograine's Tribute)
 								i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
 								i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
 								i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 								i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
-									["description"] = "Possible reward when Sika gives an Extravagant Tribute.",
+									["description"] = "A possible reward from Sika's Extravagant Tribute.",
 								}),
 								i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
 								i(178897),	-- Stalwart Pauldron of Resolve (Polemarch Adrestes' Extravagant Tribute)
 								i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
 									["isWeekly"] = true,
 									["questID"] = 62628,	-- Vole's Voucher
+								}),
+								i(183863, {	-- The Proper Path and Etiquette for Aspirants (Kleia and Pelagos' Extravagant Tribute)
+									["description"] = "A possible reward from Kleia & Pelagos or Sika's Extravagant Tribute.",
 								}),
 								i(181229),	-- Tranquil's Censer (Sika's Extravagant Tribute)
 								i(178899),	-- Treecorn (Choofa's Extravagant Tribute)
@@ -1675,96 +1669,143 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help
-								q(61766, {	-- Homegrown Help
-									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
-									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.0, 1525 },	-- Revendreth
+								q(62174, {	-- A Proper Cover
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
+									["g"] = {
+										crit(8, {	-- Dredger Lether Coif
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
 								}),
-								q(61851, {	-- Shades of Muck
-									["sourceQuests"] = { 61766 },	-- Homegrown Help
-									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+								q(62207, {	-- Bastion Etiquette
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183863, 1 } },	-- The Proper Path and Etiquette for Aspirants
+									["g"] = {
+										crit(2, {	-- Bastion Etiquette
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
 								}),
-								q(61762, {	-- Making a Smarter Dredger
-									["sourceQuests"] = { 61851 },	-- Shades of Muck
-									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+								q(62178, {	-- Black Muck Dye
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
+									-- ["repeatable"] = true,
+									["g"] = {
+										crit(1, {	-- Black Muck Armor Dye
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(62179, {	-- Blue Muck Dye
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182705, 1 } },	-- Vial of Blue Muck Dye
+									["g"] = {
+										crit(2, {	-- Blue Muck Armor Dye
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(62181, {	-- Bubbling Red Muck Dye
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
+									-- ["repeatable"] = true,
+									["g"] = {
+										crit(4, {	-- Bubbling Muck Armor Dye
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(61764, {	-- Dredging up a Name
+									["sourceQuests"] = { 62361 },	-- Introductions are in Order
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+								}),
+								q(62985, {	-- Dredging up a New Look
+								--	you dye your Dredger Butler's clothes blue here, but you don't get achievement credit until you do the "Blue Muck Dye" quest.  the questID for it triggers when completing this, but doesn't count for the achievement.  thanks, blizz!
+									["sourceQuests"] = { 61764 },	-- Dredging up a Name
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 								}),
 								q(61763, {	-- Dredging Up an Assistant
 									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
 									["g"] = {
-										i(182683, {	-- Dredger Butler's Contract (pet)
-											["crs"] = {
-												172854,	-- Dredger Butler (summoned pet)
-											},
-											["g"] = {
-												q(62178, {	-- Black Muck Dye
-													["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
-													-- ["repeatable"] = true,
-													["g"] = {
-														crit(1, {	-- Black Muck Armor Dye
-															["achievementID"] = 14683,	-- Dredger Style
-														}),
-													},
-												}),
-												q(62181, {	-- Bubbling Red Muck Dye
-													["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
-													-- ["repeatable"] = true,
-													["g"] = {
-														crit(4, {	-- Bubbling Muck Armor Dye
-															["achievementID"] = 14683,	-- Dredger Style
-														}),
-													},
-												}),
-												q(62174, {	-- A Proper Cover
-													["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
-													-- ["repeatable"] = true,
-													["g"] = {
-														crit(8, {	-- Dredger Lether Coif
-															["achievementID"] = 14683,	-- Dredger Style
-														}),
-													},
-												}),
-												q(62176, {	-- The Spikey Look
-													["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
-													-- ["repeatable"] = true,
-													["g"] = {
-														crit(6, {	-- Spikey Hair Cut
-															["achievementID"] = 14683,	-- Dredger Style
-														}),
-													},
-												}),
-												q(62173, {	-- Long Sleeved Doublet
-													["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
-													-- ["repeatable"] = true,
-													["g"] = {
-														crit(10, {	-- Long Sleeved Doublet
-															["achievementID"] = 14683,	-- Dredger Style
-														}),
-													},
-												}),
-											},
+										i(182683),	-- Dredger Butler's Contract (PET!)
+									},
+								}),
+								q(62180, {	-- Green Muck Dye
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+								--	["repeatable"] = true,
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182704, 1 } },	-- Green Muck Dye
+									["g"] = {
+										crit(3, {	-- Green Muck Armor Dye
+											["achievementID"] = 14683,	-- Dredger Style
 										}),
 									},
+								}),
+								q(61766, {	-- Homegrown Help
+									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
+									["provider"] = { "n", 164966 },	-- Temel
+									["coord"] = { 27.9, 43.0, 1525 },	-- Revendreth
 								}),
 								q(62361, {	-- Introductions are in Order
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
 								}),
-								q(61764, {	-- Dredging up a Name
-									["sourceQuests"] = { 62361 },	-- Introductions are in Order
-									-- ["provider"] = { "n",  },	-- Dredger Butler
-									-- ["coord"] = {  },	-- your 'pet'
-								}),
-								q(62985, {	-- Dredging up a New Look
-									["sourceQuests"] = { 61764 },	-- Dredging up a Name
-									-- ["provider"] = { "n",  },	-- Dredger Butler
-									-- ["coord"] = {  },	-- your 'pet'
+								q(62173, {	-- Long Sleeved Doublet
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+								--	["repeatable"] = true,
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
 									["g"] = {
-										crit(2, {	-- Blue Muck Armor Dye
+										crit(10, {	-- Long Sleeved Doublet
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(62175, {	-- Looking Fabulous
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182971, 1 } },	-- Fabius's Portrait
+									["g"] = {
+										crit(7, {	-- Full Flowing Hair Cut
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(61762, {	-- Making a Smarter Dredger
+									["sourceQuests"] = { 61851 },	-- Shades of Muck
+									["provider"] = { "n", 157846 },	-- Rendle
+									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+								}),
+								q(61851, {	-- Shades of Muck
+									["sourceQuests"] = { 61766 },	-- Homegrown Help
+									["provider"] = { "n", 157846 },	-- Rendle
+									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+								}),
+								q(62176, {	-- The Spikey Look
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+								--	["repeatable"] = true,
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
+									["g"] = {
+										crit(6, {	-- Spikey Hair Cut
 											["achievementID"] = 14683,	-- Dredger Style
 										}),
 									},

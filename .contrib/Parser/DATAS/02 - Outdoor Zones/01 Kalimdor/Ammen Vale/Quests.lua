@@ -9,100 +9,100 @@ _.Zones =
 			n(QUESTS, {
 				q(9798,  {	-- Blood Elf Plans
 					["sourceQuests"] = { 9309 },	-- The Missing Scout
-					["crs"] = { 16522 },	-- Surveyor Candress
 					["provider"] = { "i", 24414 },	-- Blood Elf Plans
 					["coord"] = { 27.8, 80.4, 468 },
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 16522 },	-- Surveyor Candress
 				}),
 				q(9311,  {	-- Blood Elf Spy
+					["sourceQuests"] = { 10303 },	-- The Blood Elves
 					["provider"] = { "n", 16546 },	-- Tolaan
 					["coord"] = { 33.9, 69.4, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 10303,	-- The Blood Elves
 				}),
 				q(9799,  {	-- Botanical Legwork
+					["sourceQuests"] = { 10302 },	-- Volatile Mutations
 					["provider"] = { "n", 20233 },	-- Apprentice Vishael
 					["coord"] = { 49.7, 37.5, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 10302,	-- Volatile Mutations
 				}),
 				q(9371,  {	-- Botanist Taerix
+					["sourceQuests"] = { 9409 },	-- Urgent Delivery!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16477 },	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 9409,	-- Urgent Delivery!
-					["isBreadcrumb"] = true,
 				}),
 				q(26968, {	-- Frost Nova
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16500 },	-- Valaatu
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9294,  {	-- Healing the Lake
+					["sourceQuests"] = { 9293 },	-- What Must Be Done...
 					["provider"] = { "n", 16514 },	-- Botanist Taerix
 					["coord"] = { 49.9, 37.3, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 9293,	-- What Must Be Done...
 				}),
 				q(9288,  {	-- Hunter Training
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16499 },	-- Keilnei
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9303,  {	-- Inoculation
-					["provider"] = { "n", 16535 },	-- Vindicator Aldar
-					["coord"] = { 50.6, 48.7, 468 },
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "This quest is given if you turn-in Vindicator Aldar quest first.",
 					["sourceQuests"] = {
 						10302,	-- Volatile Mutations
 						10304,	-- Vindicator Aldar
 					},
-				}),
-				q(37444, {	-- Inoculation
+					["description"] = "This quest is given if you turn in the |cFFFFD700Vindicator Aldar|r quest first.",
 					["provider"] = { "n", 16535 },	-- Vindicator Aldar
 					["coord"] = { 50.6, 48.7, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "This quest is given if you pick-up before getting or turning in the 'Vindicator Aldar' quest.",
-					["sourceQuest"] = 10302,	-- Volatile Mutations
+				}),
+				q(37444, {	-- Inoculation
+					["sourceQuests"] = { 10302 },	-- Volatile Mutations
+					["description"] = "This quest is given if you pick up before getting or turning in the |cFFFFD700Vindicator Aldar|r' quest.",
+					["provider"] = { "n", 16535 },	-- Vindicator Aldar
+					["coord"] = { 50.6, 48.7, 468 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26970, {	-- Learning the Word
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16502 },	-- Zalduun
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9290,  {	-- Mage Training
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16500 },	-- Valaatu
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9287,  {	-- Paladin Training
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16501 },	-- Aurelon
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9291,  {	-- Priest Training
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16502 },	-- Zalduun
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26969, {	-- Primal Strike
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9280,  {	-- Replenishing the Healing Crystals
+					["sourceQuests"] = { 9279 },	-- You Survived!
 					["provider"] = { "n", 16477 },	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
 					["races"] = { DRAENEI },
-					["sourceQuest"] = 9279,
 				}),
 				q(9369,  {	-- Replenishing the Healing Crystals
 					["provider"] = { "n", 16477 },	-- Proenitus
@@ -110,121 +110,122 @@ _.Zones =
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
 				}),
 				q(9283,  {	-- Rescue the Survivors!
+					["sourceQuests"] = { 9409 },	-- Urgent Delivery!
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["coord"] = { 52.1, 42.4, 468 },
 					["races"] = { DRAENEI },
-					["sourceQuest"] = 9409,	-- Urgent Delivery!
 				}),
 				q(9421,  {	-- Shaman Training
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9305,  {	-- Spare Parts
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17071 },	-- Technician Zhanaa
 					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(37445, {	-- Spare Parts
+					["sourceQuests"] = { 10302 },	-- Volatile Mutations
 					["provider"] = { "n", 17071 },	-- Technician Zhanaa
 					["coord"] = { 50.7, 48.0 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 10302,	-- Volatile Mutations
 				}),
 				q(26963, {	-- Steadying Your Shot
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16499 },	-- Keilnei
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10303, {	-- The Blood Elves
+					["sourceQuests"] = { 9309 },	-- The Missing Scout
 					["provider"] = { "n", 16546 },	-- Tolaan
 					["coord"] = { 33.9, 69.4, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 9309,	-- The Missing Scout
 				}),
 				q(9312,  {	-- The Emitter
+					["sourceQuests"] = { 9311 },	-- Blood Elf Spy
 					["provider"] = { "n", 16535 },	-- Vindicator Aldar
 					["coord"] = { 50.6, 48.8, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 9311,	-- Blood Elf Spy
 				}),
 				q(26966, {	-- The Light's Power
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16501 },	-- Aurelon
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9309,  {	-- The Missing Scout
-					["provider"] = { "n", 16535 },	-- Vindicator Aldar
-					["coord"] = { 50.6, 48.7, 468 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						9303,	-- Inoculation
 						37444,	-- Inoculation
 					},
+					["provider"] = { "n", 16535 },	-- Vindicator Aldar
+					["coord"] = { 50.6, 48.7, 468 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31173, {	-- The Tiger Palm
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 63335 },	-- Mojo Stormstout
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MONK },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9313,  {	-- Travel to Azure Watch
+					["sourceQuests"] = { 9312 },	-- The Emitter
 					["provider"] = { "n", 17071 },	-- Technician Zhanaa
 					["coord"] = { 50.5, 47.9, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 9312,	-- The Emitter
 				}),
 				q(9409,  {	-- Urgent Delivery!
-					["provider"] = { "n", 16477 },	-- Proenitus
-					["coord"] = { 52.7, 35.9, 468 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						9369,	-- Replenishing the Healing Crystals (All other ally races)
 						9280,	-- Replenishing the Healing Crystals (Draenei)
 					},
+					["provider"] = { "n", 16477 },	-- Proenitus
+					["coord"] = { 52.7, 35.9, 468 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10304, {	-- Vindicator Aldar
+					["sourceQuests"] = { 9294 },	-- Healing the Lake
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16514 },	-- Botanist Taerix
 					["coord"] = { 49.9, 37.3, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				q(10302, {	-- Volatile Mutations
-					["provider"] = { "n", 16514 },	-- Botanist Taerix
-					["coord"] = { 49.9, 37.3, 468 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						9369,	-- Replenishing the Healing Crystal (All other ally races)
 						9280,	-- Replenishing the Healing Crystal (Draenei)
 						9371,	-- Botanist Taerix (breadcrumb)
 					},
-				}),
-				q(9289,  {	-- Warrior Training
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 16503 },	-- Kore
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-				}),
-				q(9293,  {	-- What Must Be Done...
 					["provider"] = { "n", 16514 },	-- Botanist Taerix
 					["coord"] = { 49.9, 37.3, 468 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 10302,	-- Volatile Mutations
+				}),
+				q(9289,  {	-- Warrior Training
+					["provider"] = { "n", 16503 },	-- Kore
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(9293,  {	-- What Must Be Done...
+					["sourceQuests"] = { 10302 },	-- Volatile Mutations
+					["provider"] = { "n", 16514 },	-- Botanist Taerix
+					["coord"] = { 49.9, 37.3, 468 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9279,  {	-- You Survived!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16475 },	-- Megelon
 					["coord"] = { 61.2, 29.5, 468 },
 					["races"] = { DRAENEI },
-					["isBreadcrumb"] = true,
 				}),
 				q(26958, {	-- Your First Lesson
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16503 },	-- Kore
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MONK },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

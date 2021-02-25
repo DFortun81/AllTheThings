@@ -133,6 +133,11 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
 				}),
+				o(358318, {	-- R. Suavel Dredger Portrait
+					i(182971, {	-- Fabius's Portrait
+						["description"] = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF59.2, 30.3|r.  Once inside Redelav Tower, head all the way to the top floor.  The portrait is on a small table at |cFFFFFFFF58.0, 27.7|r.",
+					}),
+				}),
 				o(353796, {	-- Reliquary of Remembrance
 				--	TODO: confirm that these are repeatable.  like parish chest (confirmed repeatable), there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",

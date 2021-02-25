@@ -4894,6 +4894,7 @@ app.L = {
 		[357237] = "Forgotten Chest",											-- A-2
 		[357238] = "Forgotten Chest",											-- A-3
 		[358315] = "Skeletal Hand Fragments",
+		[358318] = "R. Suavel Dredger Portrait",
 		[358319] = "Sorceror's Note",
 		[1278968750] = "Hanging Chain",
 		[1278968751] = "Lunarlight Pod",										-- TODO: fix objectID when data becomes available

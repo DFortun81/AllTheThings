@@ -3325,6 +3325,7 @@ _.HiddenQuestTriggers =
 		q(61117),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61118),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61119),	-- interacting with runes to unlock a Runebound Coffer (61116)
+		q(60311),	-- triggered when opening Misplaced Supplies - i think i had already opened it?  so i'm not sure if it's somehow repeatable :\ but we have a different questID attached to the criteria
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
@@ -3581,7 +3582,6 @@ _.HiddenQuestTriggers =
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(62179),	-- When completing 'Dredging up a New Look' (62985) (Vial of Blue Muck Dye?)
 		q(61582),	-- When applying trimmed hair to your dredger
 		q(61573),	-- When applying the long sleeved doublet to your dredger
 		q(61575),	-- When applying Spikey Hair to your dredger
@@ -3671,6 +3671,8 @@ _.HiddenQuestTriggers =
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
+		q(59685),	-- when using Rally Bell
+		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
