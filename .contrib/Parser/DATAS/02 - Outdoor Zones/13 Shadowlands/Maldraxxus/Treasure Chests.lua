@@ -27,6 +27,7 @@ _.Zones =
 					["coord"] = { 44.0, 39.8, 1536 },
 					["g"] = {
 						i(184318),	-- Battlecry of Krexus
+						i(183827),	-- Blacksteel Backplate
 						i(183619),	-- Everlasting Boneforged Greataxe
 						i(181800),	-- Standard of the Blackhound Warband
 					},
