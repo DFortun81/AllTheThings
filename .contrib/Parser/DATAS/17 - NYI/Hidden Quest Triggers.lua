@@ -3385,6 +3385,7 @@ _.HiddenQuestTriggers =
 		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
+		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -3739,8 +3740,10 @@ _.HiddenQuestTriggers =
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
 		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
+		q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
