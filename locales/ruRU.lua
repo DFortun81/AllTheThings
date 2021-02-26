@@ -513,7 +513,6 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	-- Enter translated ABBREVIATIONS's here
 	["Antorus, the Burning Throne"] = "Анторус";
 	["Expansion Pre"] = "Препатч";
 	["Expansion Features"] = "ОК";
@@ -546,8 +545,6 @@ L.CUSTOM_DIFFICULTIES[-4] = "Героический (5.4)";
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
-	-- Enter translated FILTER_ID_TYPES's here
-
 	-- "Armor Types"
 		[11] = "Артефакты";									-- Artifacts
 
@@ -567,8 +564,6 @@ do a[key] = value; end
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated NPCID's here
-
 	-- Commonly used
 		[0] = "Добыча локации",									-- Zone Drop
 		[-1] = "Общая добыча с боссов",							-- Common Boss Drop

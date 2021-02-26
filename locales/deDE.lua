@@ -552,8 +552,6 @@ L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
-	-- Enter translated FILTER_ID_TYPES's here
-
 	-- "Armor Types"
 		--TODO: [11] = "Artifacts";									-- Artifacts
 
@@ -573,8 +571,6 @@ do a[key] = value; end
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated NPCID's here
-
 	-- Commonly used
 		--TODO: [0] = ZONE.." "..BATTLE_PET_SOURCE_1,				-- Zone Drop
 		[-1] = "Gemeinsame Bossbeute",								-- Common Boss Drop

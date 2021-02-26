@@ -552,8 +552,6 @@ do a[key] = value; end
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
-	-- Enter translated FILTER_ID_TYPES's here
-
 	-- "Armor Types"
 		--TODO: [11] = "Artifacts";									-- Artifacts
 

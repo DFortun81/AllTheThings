@@ -552,8 +552,6 @@ do a[key] = value; end
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
-	-- Enter translated FILTER_ID_TYPES's here
-
 	-- "Armor Types"
 		--TODO: [11] = "Artifacts";									-- Artifacts
 
@@ -1175,7 +1173,6 @@ do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated OBJECTID's here
 	[31] = "Statue du vieux lion",
 	[34] = "Vieille cruche",
 	[55] = "Un corps à moitié dévoré",
