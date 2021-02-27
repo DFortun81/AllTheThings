@@ -130,6 +130,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
 					},
+					-- Skoldus Hall, Layer 3
 				}),
 				q(61423, {	-- Champion: Karynmwylyann [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
