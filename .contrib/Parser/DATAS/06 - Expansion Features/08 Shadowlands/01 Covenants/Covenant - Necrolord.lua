@@ -1332,6 +1332,8 @@ _.ExpansionFeatures =
 							n(-925, {	-- Tier 1: Build a Buddy
 								q(61510, {	-- A Bountiful Haul
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+									["provider"] = { "n", 161270 },    -- Chordy
+									["coord"] = { 55.1, 68.6, 1536 },	-- Maldraxxus
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),

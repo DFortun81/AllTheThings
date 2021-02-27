@@ -3252,7 +3252,6 @@ _.HiddenQuestTriggers =
 			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 		--	Bastion Rares
 		q(63422),	-- Aethon secondary quest
-		q(60933),	-- Ascended Council secondary quest (Cache of the Ascended)
 		q(62192),	-- Baedos secondary quest
 		q(62158),	-- Basilofos secondary quest
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
@@ -3389,6 +3388,7 @@ _.HiddenQuestTriggers =
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
+		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

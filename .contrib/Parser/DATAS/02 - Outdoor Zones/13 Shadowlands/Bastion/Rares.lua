@@ -21,7 +21,7 @@ _.Zones =
 				}),
 				n(-940,   {	-- Ascended Council
 					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
-					["questID"] = 60977,
+					["questID"] = 60933,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 53.5, 88.3, 1533 },	-- The Ascended Council
@@ -39,7 +39,13 @@ _.Zones =
 						170833,	-- Champion of Wisdom
 					},
 					["g"] = {
-						i(183741),	-- Ascended Skymane
+						o(354175, {	-- Cache of the Ascended
+							["questID"] = 60977,
+							["isDaily"] = true,
+							["g"] = {
+								i(183741),	-- Ascended Skymane
+							},
+						}),
 					},
 				}),
 				n(171211, { -- Aspirant Eolis
@@ -324,6 +330,9 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
 					["g"] = {
+						ach(14733, {	-- In the Hot Seat
+							["description"] = "Requires using the Skystrider Glider to bring Sundancer down. Being present for a kill will not grant credit.",
+						}),
 						crit(10, {	-- Sundancer
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
