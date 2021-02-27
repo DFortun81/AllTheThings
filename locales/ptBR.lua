@@ -552,8 +552,6 @@ do a[key] = value; end
 
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
-	-- Enter translated FILTER_ID_TYPES's here
-
 	-- "Armor Types"
 		--TODO: [11] = "Artifacts";									-- Artifacts
 
@@ -573,8 +571,6 @@ do a[key] = value; end
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated NPCID's here
-
 	-- Commonly used
 		--TODO: [0] = ZONE.." "..BATTLE_PET_SOURCE_1,				-- Zone Drop
 		--TODO: [-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,	-- Common Boss Drop
@@ -589,7 +585,7 @@ for key,value in pairs({
 		--TODO: [-16] = BATTLE_PET_BREED_QUALITY4,					-- Rares
 
 		--TODO: [-40] = LFG_LIST_LEGACY,							-- Legacy
-		[-41] = "Cache of Madness",
+		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
 		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
 		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
@@ -1177,7 +1173,6 @@ do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
-	-- Enter translated OBJECTID's here
 	[31] = "Estátua de Leão Antiga",
 	[34] = "Velho Garrafão",
 	[55] = "Corpo semi-devorado",
@@ -1270,10 +1265,10 @@ for key,value in pairs({
 	[177964] = "Pedra das Profundezas",
 	[179485] = "Armadilha Quebrada",
 	--TODO: [179501] = "Knot Thimblejack's Cache",
-	[179832] = "Travesseiro Ornado da Alma Fada",
 	[179564] = "Homenagem a Gordok",
 	[179697] = "Baú do Tesouro da Arena",
 	--TODO: [179827] = "Wanted/Missing/Lost & Found",
+	[179832] = "Travesseiro Ornado da Alma Fada",
 	--TODO: [180327] = "Brazier of Madness",
 	--TODO: [180366] = "Battered Tackle Box",
 	--TODO: [180368] = "Tablet of Madness",
@@ -1583,6 +1578,7 @@ for key,value in pairs({
 	[220832] = "Tesouro afundado",
 	[221376] = "Fragmento de Letreiro Velho",
 	[221413] = "Pergaminho da Família Lin",
+	[221673] = "Baú Fulgurante",
 	[222685] = "Ninho de Garça",
 	[223533] = "Oferta de Paz",
 	[224228] = "Caldeirão Borbulhante",
@@ -1757,12 +1753,12 @@ for key,value in pairs({
 	[233511] = "Kit do Aventureiro",
 	[233513] = "Depósito da Caveira Esquecido",
 	--TODO: [233520] = "Remains of Explorer Engineer Toldirk Ashlamp",
-	[233524] = "Ovo Petrificado Desconhecido",
-	[233525] = "Semente da Essência de Botani",
-	[233532] = "Adaga Esculpida em Osso",
 	[233522] = "Formação de Cristais de Obsidiana",
 	[233523] = "Vagem Petrificada Misteriosa",
+	[233524] = "Ovo Petrificado Desconhecido",
+	[233525] = "Semente da Essência de Botani",
 	[233526] = "Baú Titânico Antigo",
+	[233532] = "Adaga Esculpida em Osso",
 	--TODO: [233539] = "Genedar Debris",
 	--TODO: [233549] = "Genedar Debris",
 	[233550] = "Ovo Petrificado Desconhecido",
@@ -2352,8 +2348,8 @@ for key,value in pairs({
 	--TODO: [276489] = "Legion Tower Chest",
 	[276490] = "Baú de Emergência Krokul",
 	--TODO: [276491] = "Lost Krokul Chest",
-	[276515] = "Vara de Pescar",
 	[276513] = "Muçum Intacto",
+	[276515] = "Vara de Pescar",
 	[276735] = "Oferendas dos Escolhidos",
 	--TODO: [277204] = "Forgotten Legion Supplies",
 	[277205] = "Baú de Guerra da Legião Antigo",
@@ -2560,9 +2556,9 @@ for key,value in pairs({
 	--TODO: [297906] = "Russel's Songbook",
 	--TODO: [297933] = "Dusty Songbook",
 	--TODO: [297934] = "Scoundrel's Songbook",
-	[298920] = "Baú da Voz-dos-espinhos Roubado",
-	[298858] = "Cartaz de Procura-se",
 	[298849] = "Cartaz de Procura-se",
+	[298858] = "Cartaz de Procura-se",
+	[298920] = "Baú da Voz-dos-espinhos Roubado",
 	[298921] = "Tabuleta Nazmani Ancestral",
 	[298963] = "Tabuleta Nazmani Gasta",
 	[298965] = "Tabuleta Rachada",
@@ -2779,6 +2775,7 @@ for key,value in pairs({
 	--TODO: [357237] = "Forgotten Chest",							-- A-2
 	--TODO: [357238] = "Forgotten Chest",							-- A-3
 	--TODO: [358315] = "Skeletal Hand Fragments",
+	[358318] = "[R. Suavel Dredger Portrait]",
 	--TODO: [358319] = "Sorceror's Note",
 	--TODO: [1278968750] = "Hanging Chain",
 	--TODO: [1278968751] = "Lunarlight Pod",						-- TODO: fix objectID when data becomes available

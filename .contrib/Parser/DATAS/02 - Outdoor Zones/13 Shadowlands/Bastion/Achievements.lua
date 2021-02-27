@@ -500,21 +500,21 @@ _.Zones =
 					}),
 				}),
 				ach(14311, {	-- Treasures of Bastion
-					crit(1, {	-- Scroll of Aeons
+					crit(1,  {	-- Scroll of Aeons
+						["description"] = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
 						["objectID"] = 339601,	-- Scroll of Aeons
+						["questID"] = 58298,		-- triggers 58292, 58293 and 58294 too
 						["coords"] = {
 							{ 54.3, 81.8, 1533 },	-- Purian
 							{ 54.4, 83.8, 1533 },	-- Tribute
 							{ 56.1, 83.0, 1533 },	-- Tribute
 							{ 53.5, 80.4, 1533 },	-- Treasure
 						},
-						["questID"] = 58298,		-- triggers 58292, 58293 and 58294 too
-						["description"] = "Take the |cFFFFFFFF[Purian]|r from the bench at |cFFFFFFFF54.3, 81.8|r and place them on the Tribute at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r and follow the light to the Treasure at |cFFFFFFFF53.5, 80.4|r.",
 						["g"] = {
 							i(173984),	-- Scroll of Aeons
 						},
 					}),
-					crit(2, {	-- Vesper of Virtues
+					crit(2,  {	-- Vesper of Virtues
 						["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 						["objectID"] = 352428,	-- Vesper of Virtues
 						["questID"] = 60478,	-- 62841 triggered too
@@ -523,7 +523,7 @@ _.Zones =
 							i(179982),	-- Kyrian Bell
 						},
 					}),
-					crit(3, {	-- Purifying Draught
+					crit(3,  {	-- Purifying Draught
 						["objectID"] = 339641,	-- The Purifying Draught
 						["questID"] = 58329,
 						["coord"] = { 52.0, 86.0, 1533 },
@@ -531,7 +531,7 @@ _.Zones =
 							i(174007),	-- Purifying Draught
 						},
 					}),
-					crit(4, {	-- Lost Disciple's Notes
+					crit(4,  {	-- Lost Disciple's Notes
 						["objectID"] = 354213,	-- Lost Disciple's Notes
 						["questID"] = 61048,
 						["coord"] = { 59.3, 60.9, 1533 },
@@ -541,7 +541,7 @@ _.Zones =
 							}),
 						},
 					}),
-					crit(5, {	-- Larion Tamer's Harness
+					crit(5,  {	-- Larion Tamer's Harness
 						["description"] = "At the back of the cave.",
 						["objectID"] = 354214,	-- Larion Tamer's Harness
 						["questID"] = 61049,
@@ -551,7 +551,7 @@ _.Zones =
 							i(183126),	-- Kyrian Smith's Kit
 						},
 					}),
-					crit(6, {	-- Stolen Equipment
+					crit(6,  {	-- Stolen Equipment
 						["objectID"] = 354208,	-- Stolen Equipment
 						["questID"] = 61044,
 						["coord"] = { 40.5, 49.8, 1533 },
@@ -559,13 +559,13 @@ _.Zones =
 							i(182561),	-- Fallen Disciple's Cloak
 						},
 					}),
-					crit(7, {	-- Abandoned Stockpile
+					crit(7,  {	-- Abandoned Stockpile
 						["description"] = "Coordinates are for a cave entrance hidden by plants.",
 						["objectID"] = 354202,	-- Abandoned Stockpile
 						["questID"] = 61006,
 						["coord"] = { 46.4, 46.5, 1533 },
 					}),
-					crit(8, {	-- Experimental Construct Part
+					crit(8,  {	-- Experimental Construct Part
 						["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
 						["objectID"] = 354275,	-- Experimental Construct Part
 						["questID"] = 61052,
@@ -575,20 +575,26 @@ _.Zones =
 							i(183609),	-- Re-Powered Golliath Fists
 						},
 					}),
-					crit(9, {	-- Windsmith's Tools
+					crit(9,  {	-- Windsmith's Tools
+						["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure.  After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
 						["objectID"] = 354289,	-- Windsmith's Tools
+						["questID"] = 61053,
 						["coord"] = { 35.8, 48.1, 1533 },
 						["cost"] = { { "i", 180536, 1 } },	-- 1x Broken Kyrian Flute
-						["questID"] = 61053,
-						["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrm|r fying around the treasure after you got it use the |cFFFFFFFFWindsmith's Tools|r to restore the flute.",
+						["crs"] = { 170009 },	-- Unsettled Etherwyrm
 						["g"] = {
 							i(180064),	-- Ascended Flute
 						},
 					}),
 					crit(10, {	-- Memorial Offerings
+						["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest.  Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key to the chest.",
 						["objectID"] = 355286,	-- Memorial Offerings
-						["coord"] = { 56.5, 17.2, 1533 },
 						["questID"] = 61150,
+						["coord"] = { 56.5, 17.2, 1533 },
+						["cost"] = {
+							{ "i", 180788, 1 },	-- Memorial Wine
+							{ "i", 180797, 1 },	-- Memorial Offering Key
+						},
 					}),
 					crit(11, {	-- Gift of Agthia
 						["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it.  An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock.  Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
@@ -631,8 +637,8 @@ _.Zones =
 					}),
 					crit(15, {	-- Gift of Devos
 						["objectID"] = 353944,	-- Gift of Devos
-						["coord"] = { 27.6, 21.8, 1533 },
 						["questID"] = 60895,	-- TODO: also triggered 62842
+						["coord"] = { 27.6, 21.8, 1533 },
 						["g"] = {
 							i(179977),	-- Benevolent Gong
 						},
@@ -640,31 +646,81 @@ _.Zones =
 				}),
 				ach(14767, {	-- Count Your Blessings
 					crit(1, {		-- Purified Blessing of Grace
-						["coord"] = { 53.8, 28.9, 1533 },
 						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+						["coord"] = { 53.8, 28.9, 1533 },
 					}),
 					crit(2, {		-- Purified Blessing of Power
-						["coord"] = { 45.3, 59.8, 1533 },
 						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+						["coord"] = { 45.3, 59.8, 1533 },
 					}),
 					crit(3, {		-- Purified Blessing of Fortitude
-						["coord"] = { 34.7, 30.0, 1533 },
 						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+						["coord"] = { 34.7, 30.0, 1533 },
 					}),
 				}),
 				ach(14734, {	-- Rallying Cry of the Ascended
-					crit(1),		-- Vesper of Courage
-					crit(2),		-- Vesper of Wisdom
-					crit(3),		-- Vesper of Humility
-					crit(4),		-- Vesper of Loyalty
-					crit(5),		-- Vesper of Purity
+					crit(1, {		-- Vesper of Courage
+						["coord"] = { 33.3, 59.7, 1533 },
+					}),
+					crit(2, {		-- Vesper of Wisdom
+						["coord"] = { 39.1, 20.4, 1533 },
+					}),
+					crit(3, {		-- Vesper of Humility
+						["coord"] = { 71.8, 38.8, 1533 },
+					}),
+					crit(4, {		-- Vesper of Loyalty
+						["coord"] = { 32.1, 17.8, 1533 },
+					}),
+					crit(5, {		-- Vesper of Purity
+						["coord"] = { 64.3, 69.8, 1533 },
+					}),
 				}),
 				ach(14514),		-- Tour of Duty: Bastion
 				ach(14768, {	-- What is that Melody?
-					crit(1),		-- Hymn of Purity
-					crit(2),		-- Hymn of Courage
-					crit(3),		-- Hymn of Humility
-					crit(4),		-- Hymn of Wisdom
+					crit(1, {		-- Hymn of Purity
+						["description"] = "Triangular stacks of bundled scrolls, often found on tables and benches.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Purity.  Part of this temple is full of elite mobs.",
+						["coords"] = {
+							{ 57.8, 73.8, 1533 },
+							{ 57.8, 79.1, 1533 },
+							{ 60.6, 76.4, 1533 },
+							{ 61.0, 76.1, 1533 },
+							{ 62.8, 71.2, 1533 },
+							{ 63.8, 73.5, 1533 },
+						},
+					}),
+					crit(2, {		-- Hymn of Courage
+						["description"] = "Rolled scrolls that can be found on the ground.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Courage.  The transport pad to reach the area is located at |cFFFFFFFF39.2, 56.1|r.",
+						["coords"] = {
+							{ 29.7, 56.5, 1533 },
+							{ 30.8, 54.8, 1533 },
+							{ 31.9, 54.6, 1533 },
+							{ 32.1, 55.9, 1533 },
+							{ 33.6, 59.6, 1533 },
+							{ 34.1, 58.5, 1533 },
+							{ 35.4, 55.6, 1533 },
+						},
+					}),
+					crit(3, {		-- Hymn of Humility
+						["description"] = "Vertical scrolls that are often on tables.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Humility.",
+						["coords"] = {
+							{ 63.0, 42.8, 1533 },
+							{ 63.9, 44.1, 1533 },
+							{ 65.2, 43.1, 1533 },
+							{ 66.0, 40.8, 1533 },
+							{ 67.1, 43.3, 1533 },
+							{ 67.2, 43.1, 1533 },
+							{ 67.6, 43.4, 1533 },
+						},
+					}),
+					crit(4, {		-- Hymn of Wisdom
+						["description"] = "Vertical scrolls that are often pinned to monuments or walls.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Wisdom.",
+						["coords"] = {
+							{ 41.6, 24.2, 1533 },
+							{ 42.1, 23.7, 1533 },
+							{ 43.1, 28.1, 1533 },
+							{ 43.9, 25.9, 1533 },
+						},
+					}),
 				}),
 			}),
 		}),

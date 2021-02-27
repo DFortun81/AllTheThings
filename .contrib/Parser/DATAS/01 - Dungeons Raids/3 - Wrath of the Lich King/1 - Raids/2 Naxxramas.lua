@@ -15,16 +15,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(3, {	-- 10-Man
 				ach(578),	-- The Dedicated Few (10 player)
 				ach(576),	-- The Fall of Naxxramas (10 player)
-				{
-					["achievementID"] = 2187,	-- The Undying
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						{
-							["titleID"] = 109,	-- The Undying
-							["u"] = REMOVED_FROM_GAME,
-						},
-					},
-				},
+				un(REMOVED_FROM_GAME, ach(2187, {	-- The Undying
+					un(REMOVED_FROM_GAME, title(109)),	-- The Undying
+				})),
 				n(ZONEDROPS, {
 					i(39467, {	-- Minion Bracers
 						["crs"] = {

@@ -103,13 +103,8 @@ _.Zones =
 						["provider"] = { "n", 101492 },	-- Ms. Xiulan
 					}),
 					q(39566, {	-- The Search for Knowledge
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
-						["classes"] = {	-- not sure if this is a breadcrumb, or if it's mandatory for the classes/races below!
-							DEMONHUNTER,
-							PRIEST,
-							ROGUE,
-						},
-						["races"] = { NIGHTELF, VOIDELF, WORGEN },
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text

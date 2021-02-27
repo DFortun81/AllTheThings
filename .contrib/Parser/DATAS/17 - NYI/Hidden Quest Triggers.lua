@@ -557,6 +557,8 @@ _.HiddenQuestTriggers =
 		q(30647),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
 		q(31807),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
 		q(30453),	-- Binan Village Intro Event Tracking Event - triggered when I flew into Binan village through the Ancient Passage on my mount, even though I flew there using flight points AND I have already completed some quests there
+		q(30454),	-- Pandaren Alliance Tracking Quest
+		q(30455),	-- Pandaren Horde Tracking Quest
 		q(31123),	-- Townlong Steppes - Chose Arms Warrior
 		q(31124),	-- Townlong Steppes - Chose Brewmaster
 		q(31050),	-- Townlong Steppes - Chose Fire Mage
@@ -703,6 +705,7 @@ _.HiddenQuestTriggers =
 		q(32968),	-- Rope Drop Tracking Quest — looting treasure chest on top of pillar at (54.0, 47.2)
 		q(32957),	-- Sunken Hozen Treasure - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9) — this + below popped at same time
 		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9)
+		q(32956),	-- Tracking Quest - Spectral Pirate Treasure
 		-- VARIOUS
 		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
@@ -1361,6 +1364,9 @@ _.HiddenQuestTriggers =
 		q(40411),	-- Truthguard Chosen (Protection)
 		q(42496),	-- Truthguard Chosen (Protection)
 		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
+
+		q(40708),	-- Priest Order Hall - chosing Holy for first priest artifact weapon
+		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
@@ -3308,6 +3314,7 @@ _.HiddenQuestTriggers =
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
 		q(61128),	-- Triggered after getting Sorrowbane
+		q(62411),	-- First time turning in Ani-Matter Animator (57245)
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
@@ -3343,7 +3350,9 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
+		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
+		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
@@ -3376,6 +3385,7 @@ _.HiddenQuestTriggers =
 		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
+		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -3479,6 +3489,7 @@ _.HiddenQuestTriggers =
 		q(61939),	-- triggered when Ember Court began for the week (after the initial wave of "Quest accepted," after the pre-event when you can mingle with guests)
 		q(62130),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "A Quiet Moment" objective
 		q(62126),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Animal Rescue" objective
+		q(61942),	-- also triggered completed upon finishing the "Animal Rescue" objective
 		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment objective
 		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
 		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
@@ -3729,8 +3740,10 @@ _.HiddenQuestTriggers =
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
 		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
+		q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver

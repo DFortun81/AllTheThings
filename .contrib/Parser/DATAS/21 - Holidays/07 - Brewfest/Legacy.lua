@@ -135,7 +135,6 @@ _.Holidays =
 						["isYearly"] = true,
 					}),
 					q(11454, {	-- Seek the Saboteurs
-						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
 						["maps"] = {
 							1,	-- Durotar
 							27,	-- Dun Morogh

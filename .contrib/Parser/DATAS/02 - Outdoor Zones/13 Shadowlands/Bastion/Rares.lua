@@ -320,7 +320,7 @@ _.Zones =
 				}),
 				n(170548, { -- Sundancer
 					["coord"] = { 60.6, 93.2, 1533 },
-					--["questID"] = ,
+					["questID"] = 60862,
 					["isDaily"] = true,
 					["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
 					["g"] = {

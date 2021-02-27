@@ -40,7 +40,6 @@ _.Mounts =
 		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(181817),	-- Deathbringer's Flayedwing
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk

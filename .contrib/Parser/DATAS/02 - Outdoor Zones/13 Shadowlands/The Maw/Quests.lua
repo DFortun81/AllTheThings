@@ -557,6 +557,7 @@ _.Zones =
 					["coord"] = { 32.9, 66.4, 1543 },
 				}),
 				q(63069, {	-- What They Know
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "o", 364987 },	-- Broker Journal
 					["isDaily"] = true,
 					["coord"] = { 46.4, 62.3, 1543 },

@@ -425,7 +425,6 @@ _.Zones =
 						crit(15, {	-- Orophea
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(181794),	-- Orophea's Lyre
 						o(356555, {	-- Eurydea's Necklace
 							["coord"] = { 26.8, 29.3, 1543 },
 							["g"] = {

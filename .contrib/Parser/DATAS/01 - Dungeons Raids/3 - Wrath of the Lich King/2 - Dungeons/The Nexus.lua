@@ -141,9 +141,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 1,	-- Grand Magus Telestra
 						},
-						{	-- Split Personality
-							["achievementID"] = 2150,	-- Split Personality
-						},
+						ach(2150),	-- Split Personality
 						i(35617),	-- Wand of Shimmering Scales
 						i(37134),	-- Telestra's Journal
 						i(37135),	-- Arcane-Shielded Helm
@@ -153,9 +151,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(35605),	-- Belt of Draconic Runes
 					})),
 					cr(26763, e(619, {	-- Anomalus
-						{	-- Chaos Theory
-							["achievementID"] = 2037,	-- Chaos Theory
-						},
+						ach(2037),	-- Chaos Theory
 						{	-- Heroic: The Nexus: Anomalus
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 2,	-- Anomalus
@@ -191,9 +187,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 4,	-- Keristrasza
 						},
-						{	-- Intense Cold
-							["achievementID"] = 2036,	-- Intense Cold
-						},
+						ach(2036),	-- Intense Cold
 						i(35595),	-- Glacier Sharpened Vileblade
 						i(37169),	-- War Mace of Unrequited Love
 						i(37162),	-- Bulwark of the Noble Protector

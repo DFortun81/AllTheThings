@@ -646,7 +646,6 @@ _.Zones =
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
 				q(39799),	-- Our Next Move
-				q(41967),	-- Out of the Darkness
 				q(45824),	-- Paladin
 				q(46802),	-- Paragon of the Legionfall Armies
 				q(39832),	-- Plans and Preparations

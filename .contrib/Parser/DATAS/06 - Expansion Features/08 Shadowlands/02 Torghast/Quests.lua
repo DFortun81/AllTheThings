@@ -130,6 +130,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
 					},
+					-- Skoldus Hall, Layer 3
 				}),
 				q(61423, {	-- Champion: Karynmwylyann [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
@@ -154,6 +155,14 @@ _.ExpansionFeatures =
 						follower(1257),	-- Meatball
 					},
 				}),
+				q(61320, {	-- Champion: Molako [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 61347 },	-- Molako's Freedom
+					["provider"] = { "n", 172032 },	-- Molako
+					["g"] = {
+						follower(1268),	-- Molako
+					},
+				}),
 				q(61219, {	-- Champion: Nerith Darkwing [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61262 },	-- Nerith's Vengeance
@@ -176,6 +185,14 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173399 },	-- Talethi
 					["g"] = {
 						follower(1307),	-- Talethi
+					},
+				}),
+				q(61318, {	-- Champion: Telethakas [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 61340 },	-- Telethakas' Revenge
+					["provider"] = { "n", 172022 },	-- Telethakas
+					["g"] = {
+						follower(1223),	-- Telethakas
 					},
 				}),
 				q(61317, {	-- Champion: Teliah [Kyrian]
@@ -309,6 +326,16 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 168979 },	-- Meatball
+				}),
+				q(61347, {	-- Molako's Freedom
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 172031 },	-- Molako
+				}),
+				q(61340, {	-- Telethakas' Revenge
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 172024 },	-- Telethakas
 				}),
 				q(61243, {	-- Thela's Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast

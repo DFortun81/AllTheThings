@@ -15,6 +15,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				q(29563, {	-- Lost in Action
 					["provider"] = { "n", 54667 },	-- Watcher Jhang
 				}),
+				q(13431, {	-- The Cudgel of Kar'desh
+					-- This quest started showing up again after SL level squish
+					["sourceQuests"] = { 10900 },	-- The Mark of Vashj
+					["provider"] = { "n", 22421 },	-- Skar'this the Heretic
+				}),
 				q(29565, {	-- The Heart of the Matter
 					["provider"] = { "n", 54667 },	-- Watcher Jhang
 					["g"]	= {
@@ -22,6 +27,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
+				}),
+				q(10900, {	-- The Mark of Vashj
+					-- This quest started showing up again after SL level squish
+					["provider"] = { "n", 22421 },	-- Skar'this the Heretic
 				}),
 			}),
 			d(1, {	-- Normal

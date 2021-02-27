@@ -1228,6 +1228,7 @@ _.ExpansionFeatures =
 								i(181615),	-- Marching an Army (Alexandros Mograine's Tribute)
 								i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
 								i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
+								i(180814),	-- Sable (Kleia and Pelagos' Extravagant Tribute - got when i hit Best Friend, not sure if it was just luck)
 								i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
 								i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 									["description"] = "A possible reward from Sika's Extravagant Tribute.",
@@ -1470,6 +1471,15 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
+								q(62106, {	-- Restock: Enchantments
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, 1525 },
+									["cost"] = {
+										{ "i", 172416, 1 },	-- Enchant Bracers - Shaded Hearthing
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
+									},
+								}),
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,	-- it shows up as a blue ?
 									["provider"] = { "n", 165490 },	-- Picky Stefan
@@ -1609,8 +1619,8 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61139, {	-- RSVP: Choofa
-									["provider"] = { "n", 160814 },	-- Choofa
 									["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
+									["provider"] = { "n", 160814 },	-- Choofa
 									["isDaily"] = true,
 									["coord"] = { 63.6, 36.6, 1565 },	-- Ardenweald
 									["g"] = {

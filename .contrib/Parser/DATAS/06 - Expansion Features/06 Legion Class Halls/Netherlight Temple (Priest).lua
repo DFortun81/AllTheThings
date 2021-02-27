@@ -39,12 +39,10 @@ _.ExpansionFeatures =
 						}),
 						q(40706, {	-- A Legend You Can Hold
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 101314 },	-- Alonsus Faol
 						}),
 						q(43935, {	-- A Second Legend
 							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-							["races"] = HORDE_ONLY,
 							["coord"] = { 51.1, 48.2, 702 },
 							["lvl"] = 102,
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
@@ -52,7 +50,6 @@ _.ExpansionFeatures =
 						q(44407, {	-- The Third Legend
 							["sourceQuests"] = { 43935 },	-- A Second Legend
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
-							["races"] = HORDE_ONLY,
 						}),
 						i(128868, {	-- Light's Wrath
 							["g"] = {
@@ -92,27 +89,22 @@ _.ExpansionFeatures =
 							q(41957, {	-- The Vindicator's Plea
 								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 								["provider"] = { "n", 101314 },	-- Alonsus Faol
-								["races"] = HORDE_ONLY,
 							}),
 							q(41966, {	-- House Call
 								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
 								["provider"] = { "n", 105602 },	-- Vindicator Boros
-								["races"] = HORDE_ONLY,
 							}),
 							q(41967, {	-- Out of the Darkness
 								["sourceQuests"] = { 41966 },	-- House Call
 								["provider"] = { "n", 105603 },	-- Defender Barrem
-								["races"] = HORDE_ONLY,
 							}),
 							q(41993, {	-- Salvation From On High
 								["sourceQuests"] = { 41967 },	-- Out of the Darkness
 								["provider"] = { "n", 105684 },	-- Alora
-								["races"] = HORDE_ONLY,
 							}),
 							q(42074, {	-- Return of the Light
 								["sourceQuests"] = { 41993 },	-- Salvation From On High
 								["provider"] = { "n", 106011 },	-- Jace  Darkweaver
-								["races"] = HORDE_ONLY,
 							}),
 						}),
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
