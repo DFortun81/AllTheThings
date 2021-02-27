@@ -1912,6 +1912,7 @@ _.HiddenQuestTriggers =
 		q(53547),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
+		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
