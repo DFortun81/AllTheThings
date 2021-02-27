@@ -200,6 +200,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
+				n(-228, {	-- Flight Paths
+					fp(2548, {	-- Sinfall, Revendreth
+						["coord"] = { 67.1, 21.9, 1699 },	-- Sinfall Reaches
+					}),
+				}),
 				n(QUESTS, {
 					q(57889, {	-- "Accidental" Arson
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger

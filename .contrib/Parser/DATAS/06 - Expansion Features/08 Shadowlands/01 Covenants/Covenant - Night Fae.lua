@@ -204,6 +204,12 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
+				n(-228, {	-- Flight Paths
+					fp(2587, {	-- Ardenweald, Heart of the Forest
+						["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
+						["coord"] = { 51.2, 7.8, 1701 },
+					}),
+				}),
 				n(QUESTS, {
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams

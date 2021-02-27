@@ -194,6 +194,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
+				n(-228, {	-- Flight Paths
+					fp(2528, {	-- Bastion, Elysian Hold
+						["coord"] = { 65.6, 17.6, 1533 },
+					}),
+				}),
 				n(QUESTS, {
 					q(58997, {	-- A Bittersweet Prize
 						["provider"] = { "n", 163328 },	-- Pelagos
