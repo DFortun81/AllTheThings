@@ -700,12 +700,13 @@ _.HiddenQuestTriggers =
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
 		-- TREASURES
-		q(32969),	-- Pillar Hopping Tracking Quest — looting treasure chest on top of pillar at (49.7, 69.4)
-		q(32970),	-- Pirate Ship Mast Tracking Quest — looting treasure chest at (70.6, 80.8)
-		q(32968),	-- Rope Drop Tracking Quest — looting treasure chest on top of pillar at (54.0, 47.2)
-		q(32957),	-- Sunken Hozen Treasure - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9) — this + below popped at same time
-		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9)
-		q(32956),	-- Tracking Quest - Spectral Pirate Treasure
+		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
+		q(33216),	-- One-Time Chest - T1G1, secondary trigger
+		q(33217),	-- One-Time Chest - T1G2, secondary trigger
+		q(33218),	-- One-Time Chest - T1G3, secondary trigger
+		q(33219),	-- One-Time Chest - T1G4, secondary trigger
+		q(33220),	-- One-Time Chest - T2, secondary trigger
+		q(33221),	-- One-Time Chest - T3, secondary trigger
 		-- VARIOUS
 		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests

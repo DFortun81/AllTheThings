@@ -91,22 +91,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(71920,  {	-- Cursed Hozen Swabby
-					i(104015, {	-- Barnacle Encrusted Key
-						{
-							["objectID"] = 220832,	-- Sunken Treasure
-							["description"] = "In the belly of the sunken ship.",
-							["coord"] = { 40.4, 92.3, 544 },
-							["g"] = {
-								i(134024, {	-- Cursed Swabby Helmet
-									crit(1, {	-- Cursed Swabby Helmet
-										["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-									}),
-								}),
-							},
-						},
-					}),
-				}),
 				n(72771,  {	-- Damp Shambler
 					i(104312, {	-- Strange Glowing Mushroom
 						crit(19, {	-- Strange Glowing Mushroom
