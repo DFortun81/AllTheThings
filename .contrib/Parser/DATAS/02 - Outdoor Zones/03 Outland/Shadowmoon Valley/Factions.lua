@@ -412,15 +412,15 @@ _.Zones =
 						},
 					}),
 					q(11101, {	-- The Deadliest Trap Ever Laid
-						-- ["provider"] = { "n",  },	-- 
-						-- ["sourceQuests"] = {  },	-- 
+						-- ["provider"] = { "n",  },	--
+						-- ["sourceQuests"] = {  },	--
 						-- ["coord"] = { , 104 },
 						["isDaily"] = true,
 						["description"] = "For players aligned with the Aldor.",
 					}),
 					q(11097, {	-- The Deadliest Trap Ever Laid
-						-- ["provider"] = { "n",  },	-- 
-						-- ["sourceQuests"] = {  },	-- 
+						-- ["provider"] = { "n",  },	--
+						-- ["sourceQuests"] = {  },	--
 						-- ["coord"] = { , 104 },
 						["isDaily"] = true,
 						["description"] = "For players aligned with the Scryers.",
