@@ -120,38 +120,47 @@ _.Zones =
 					["g"] = {
 						q(10804, {	-- Kindness
 							["provider"] = { "n", 22113 },	-- Mordenai
+							["coord"] = { 59.3, 58.7, 104 },
 						}),
 						q(10811, {	-- Seek Out Neltharaku
 							["provider"] = { "n", 22113 },	-- Mordenai
 							["sourceQuests"] = { 10804 },	-- Kindness
+							["coord"] = { 59.3, 58.7, 104 },
 						}),
 						q(10814, {	-- Neltharaku's Tale
 							["provider"] = { "n", 21657 },	-- Neltharaku
 							["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
+							["coord"] = { 61.9, 60.0, 104 },
 						}),
 						q(10836, {	-- Infiltrating Dragonmaw Fortress
 							["provider"] = { "n", 21657 },	-- Neltharaku
 							["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
+							["coord"] = { 61.9, 60.0, 104 },
 						}),
 						q(10837, {	-- To Netherwing Ledge!
 							["provider"] = { "n", 21657 },	-- Neltharaku
 							["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
+							["coord"] = { 61.9, 60.0, 104 },
 						}),
 						q(10854, {	-- The Force of Neltharaku
 							["provider"] = { "n", 21657 },	-- Neltharaku
 							["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
+							["coord"] = { 61.9, 60.0, 104 },
 						}),
 						q(10858, {	-- Karynaku
 							["provider"] = { "n", 21657 },	-- Neltharaku
 							["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
+							["coord"] = { 61.9, 60.0, 104 },
 						}),
 						q(10866, {	-- Zuluhed the Whacked
 							["provider"] = { "n", 22112 },	-- Karynaku
 							["sourceQuests"] = { 10858 },	-- Karynaku
+							["coord"] = { 69.8, 61.4, 104 },
 						}),
-						q(10870, {	-- Ally of the Netherwing *** (may have awarded "Netherwing Ledge" criteria - "The First Death Knight" popped up again and "NL" wasn't checked off, but this is the quest that gives you Neutral with Netherwing)
+						q(10870, {	-- Ally of the Netherwing
 							["provider"] = { "n", 22112 },	-- Karynaku
 							["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
+							["coord"] = { 69.8, 61.4, 104 },
 							["g"] = {
 								i(31492),	-- Claw of the Netherwing Flight
 								i(31491),	-- Netherwing Defender's Shield
@@ -163,10 +172,12 @@ _.Zones =
 						q(11012, {	-- Blood Oath of the Netherwing
 							["provider"] = { "n", 22113 },	-- Mordenai
 							["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
+							["coord"] = { 59.3, 58.7, 104 },
 						}),
 						q(11013, {	-- In Service of the Illidari
 							["provider"] = { "n", 22113 },	-- Mordenai
 							["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
+							["coord"] = { 59.3, 58.7, 104 },
 						}),
 						q(11014, {	-- Enter the Taskmaster
 							["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
@@ -279,28 +290,21 @@ _.Zones =
 							["sourceQuests"] = { 11054 },	-- Overseeing and You: Making the Right Choices
 						}),
 						q(11063, {	-- Earning Your Wings... (all quests may be for both factions)
-							["races"] = HORDE_ONLY,
 						}),
 						q(11071, {	-- Dragonmaw Race: Captain Skyshatter
-							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(32863),	-- Skybreaker Whip
 							},
 						}),
 						q(11068, {	-- Dragonmaw Race: Corlok the Vet
-							["races"] = HORDE_ONLY,
 						}),
 						q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
-							["races"] = HORDE_ONLY,
 						}),
 						q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
-							["races"] = HORDE_ONLY,
 						}),
 						q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
-							["races"] = HORDE_ONLY,
 						}),
 						q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
-							["races"] = HORDE_ONLY,
 						}),
 						q(11089, {	-- The Soul Cannon of Reth'hedron
 							["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
