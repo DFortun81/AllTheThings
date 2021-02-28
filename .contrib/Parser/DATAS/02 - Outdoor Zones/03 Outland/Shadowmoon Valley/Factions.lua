@@ -116,280 +116,326 @@ _.Zones =
 					},
 				}),
 				faction(1015, {	-- Netherwing
-					["crs"] = { 23489 },	-- Drake Dealer Hurlunk
-					["g"] = {
-						q(10804, {	-- Kindness
-							["provider"] = { "n", 22113 },	-- Mordenai
-							["coord"] = { 59.3, 58.7, 104 },
-						}),
-						q(10811, {	-- Seek Out Neltharaku
-							["provider"] = { "n", 22113 },	-- Mordenai
-							["sourceQuests"] = { 10804 },	-- Kindness
-							["coord"] = { 59.3, 58.7, 104 },
-						}),
-						q(10814, {	-- Neltharaku's Tale
-							["provider"] = { "n", 21657 },	-- Neltharaku
-							["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
-							["coord"] = { 61.9, 60.0, 104 },
-						}),
-						q(10836, {	-- Infiltrating Dragonmaw Fortress
-							["provider"] = { "n", 21657 },	-- Neltharaku
-							["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
-							["coord"] = { 61.9, 60.0, 104 },
-						}),
-						q(10837, {	-- To Netherwing Ledge!
-							["provider"] = { "n", 21657 },	-- Neltharaku
-							["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
-							["coord"] = { 61.9, 60.0, 104 },
-						}),
-						q(10854, {	-- The Force of Neltharaku
-							["provider"] = { "n", 21657 },	-- Neltharaku
-							["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
-							["coord"] = { 61.9, 60.0, 104 },
-						}),
-						q(10858, {	-- Karynaku
-							["provider"] = { "n", 21657 },	-- Neltharaku
-							["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
-							["coord"] = { 61.9, 60.0, 104 },
-						}),
-						q(10866, {	-- Zuluhed the Whacked
-							["provider"] = { "n", 22112 },	-- Karynaku
-							["sourceQuests"] = { 10858 },	-- Karynaku
-							["coord"] = { 69.8, 61.4, 104 },
-						}),
-						q(10870, {	-- Ally of the Netherwing
-							["provider"] = { "n", 22112 },	-- Karynaku
-							["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
-							["coord"] = { 69.8, 61.4, 104 },
-							["g"] = {
-								i(31492),	-- Claw of the Netherwing Flight
-								i(31491),	-- Netherwing Defender's Shield
-								i(31490),	-- Netherwing Protector's Shield
-								i(31494),	-- Netherwing Sorceror's Charm
-								i(31493),	-- Netherwing Spiritualist's Charm
-							},
-						}),
-						q(11012, {	-- Blood Oath of the Netherwing
-							["provider"] = { "n", 22113 },	-- Mordenai
-							["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
-							["coord"] = { 59.3, 58.7, 104 },
-						}),
-						q(11013, {	-- In Service of the Illidari
-							["provider"] = { "n", 22113 },	-- Mordenai
-							["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
-							["coord"] = { 59.3, 58.7, 104 },
-						}),
-						q(11014, {	-- Enter the Taskmaster
-							["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
-							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
-						}),
-						q(11015, {	-- Netherwing Crystals
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["isDaily"] = true,
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-						}),
-						q(11018, {	-- Nethercite Ore
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["isDaily"] = true,
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = MINING,
-						}),
-						q(11016, {	-- Nethermine Flayer Hide
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["isDaily"] = true,
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = SKINNING,
-						}),
-						q(11017, {	-- Netherdust Pollen
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["isDaily"] = true,
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = HERBALISM,
-						}),
-						q(11019, {	-- Your Friend On The Inside
-							["provider"] = { "n", 23141 },	-- Yarzill the Merc
-							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
-						}),
-						q(11049, {	-- The Great Netherwing Egg Hunt
-							["provider"] = { "n", 23141 },	-- Yarzill the Merc
-							["repeatable"] = true,
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q(11050, {	-- Accepting All Eggs
-							["provider"] = { "n", 23141 },	-- Yarzill the Merc
-							["repeatable"] = true,
-							["sourceQuests"] = { 11049 },	-- The Great Netherwing Egg Hunt
-						}),
-						q(11020, {	-- A Slow Death
-							["provider"] = { "n", 23141 },	-- Yarzill the Merc
-							["isDaily"] = true,
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q(11035, {	-- The Not-So-Friendly Skies...
-							["provider"] = { "n", 23141 },	-- Yarzill the Merc
-							["isDaily"] = true,
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q(11041, {	-- A Job Unfinished... (may have awarded "Netherwing Ledge" criteria, "The First Death Knight" popped for a third time after this one but "NL" actually checked off)
-							["provider"] = { "n", 23267 },	-- Arvoar the Rapacious
-							-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
-							["g"] = {
-								i(32866),	-- Ascendant's Boots
-								i(32867),	-- Dragonmaw Augur's Cinch
-								i(32865),	-- Drake Tamer's Gloves
-								i(32868),	-- Skybreaker's Mantle
-							},
-						}),
-						q(11083, {	-- Crazed and Confused
-							["provider"] = { "n", 23166 },	-- Ronag the Slave Driver
-							["coord"] = { 71.6, 87.6, 104 },
-							["description"] = "Available once you reach Friendly with Netherwing.",
-						}),
-						i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)
-							["crs"] = { 23286 },	-- Black Blood of Draenor
-							["g"] = {
-								i(32726, {	-- Murkblood Escape Plans
-									["provider"] = { "n", 23286 },	-- Black Blood of Draenor
-									["questID"] = 11081,	-- The Great Murkblood Revolt
-									["coord"] = { 65.3, 89.9, 104 },	-- Entrance
-									["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
-								}),
-							},
-						}),
-						q(11082, {	-- Seeker of Truth
-							["provider"] = { "n", 23149 },	-- Mistress of the Mines
-							["coord"] = { 63.0, 87.8, 104 },
-							["sourceQuests"] = { 11081 },	-- The Great Murkblood Revolt
-						}),
-						q(11075, {	-- The Netherwing Mines
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["coord"] = { 66.0, 86.4, 104 },
-							["description"] = "Available once you reach Friendly with Netherwing.",
-						}),
-						q(11076, {	-- Picking Up The Pieces...
-							["provider"] = { "n", 23149 },	-- Mistress of the Mines
-							["coord"] = { 63.0, 87.8, 104 },
-							["isDaily"] = true,
-							["sourceQuests"] = { 11075 },	-- The Netherwing Mines
-						}),
-						q(11077, {	-- Dragons are the Least of Our Problems
-							["provider"] = { "n", 23376 },	-- Dragonmaw Foreman
-							["coord"] = { 63.4, 87.4, 104 },
-							["isDaily"] = true,
-							["description"] = "Available once you reach Friendly with Netherwing.",
-						}),
-						q(11054, {	-- Overseeing and You: Making the Right Choices
-							["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
-							["coord"] = { 66.8, 86.0, 104 },
-							["description"] = "Available once you reach Friendly with Netherwing.",
-						}),
-						q(11055, {	-- The Booterang: A Cure For The Common Worthless Peon
-							["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
-							["coord"] = { 66.8, 86.0, 104 },
-							["isDaily"] = true,
-							["sourceQuests"] = { 11054 },	-- Overseeing and You: Making the Right Choices
-						}),
-						q(11063, {	-- Earning Your Wings... (all quests may be for both factions)
-						}),
-						q(11071, {	-- Dragonmaw Race: Captain Skyshatter
-							["g"] = {
-								i(32863),	-- Skybreaker Whip
-							},
-						}),
-						q(11068, {	-- Dragonmaw Race: Corlok the Vet
-						}),
-						q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
-						}),
-						q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
-						}),
-						q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
-						}),
-						q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
-						}),
-						q(11089, {	-- The Soul Cannon of Reth'hedron
-							["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
-							["coord"] = { 66.2, 85.6, 104 },
-							-- Unknown reputation requirement.
-						}),
-						q(11090, {	-- Subdue the Subduer
-							["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
-							["coord"] = { 66.2, 85.6, 104 },
-							["sourceQuests"] = { 11089 },	-- The Soul Cannon of Reth'hedron
-							["g"] = {
-								i(32871),	-- Horns of the Illidari
-								i(32869),	-- Illidari Lord's Tunic
-								i(32872),	-- Illidari Rod of Discipline
-								i(32870),	-- Legguards of Contemplation
-							},
-						}),
-						q(11086, {	-- Disrupting the Twilight Portal
-							["isDaily"] = true,
-						}),
-						q(11099, {	-- Kill Them All! (Aldor)
-							["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
-							["coord"] = { 66.2, 85.6, 104 },
-							["description"] = "You must be Revered with Netherwing and Friendly with the Aldor to receive this quest.",
-						}),
-						q(11100, {	-- Commander Arcus
-							["provider"] = { "n", 21402 },	-- Anchorite Ceyla
-							["coord"] = { 62.4, 28.4, 104 },
-							["description"] = "For players aligned with the Aldor.",
-							["sourceQuests"] = { 11099 },	-- Kill Them All! (Aldor)
-						}),
-						q(11094, {	-- Kill Them All! (Scryers)
-							["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
-							["coord"] = { 66.2, 85.6, 104 },
-							["description"] = "You must be Revered with Netherwing and Friendly with the Scryers to receive this quest.",
-						}),
-						q(11095, {	-- Commander Hobb
-							["provider"] = { "n", 21955 },	-- Arcanist Thelis
-							["coord"] = { 56.2, 59.6, 104 },
-							["description"] = "For players aligned with the Scryers.",
-							["sourceQuests"] = { 11094 },	-- Kill Them All! (Scryers)
-						}),
-						q(11053, {	-- Rise, Overseer!
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["coord"] = { 66.0, 86.4, 104 },
-							["description"] = "Available once you reach Friendly with Netherwing.",
-							["g"] = {
-								i(32694),	-- Overseer's Badge
-							},
-						}),
-						q(11084, {	-- Stand Tall, Captain!
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["coord"] = { 66.0, 86.4, 104 },
-							["description"] = "Available once you reach Honored with Netherwing.",
-							["g"] = {
-								i(32695),	-- Captain's Badge
-							},
-						}),
-						q(11092, {	-- Hail, Commander!
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["coord"] = { 66.0, 86.4, 104 },
-							["description"] = "Available once you reach Revered with Netherwing.",
-							["g"] = {
-								i(32864),	-- Commander's Badge
-							},
-						}),
-						q(11101, {	-- The Deadliest Trap Ever Laid
-							["isDaily"] = true,
-							["description"] = "For players aligned with the Aldor.",
-						}),
-						q(11097, {	-- The Deadliest Trap Ever Laid
-							["isDaily"] = true,
-							["description"] = "For players aligned with the Scryers.",
-						}),
-						q(11107, {	-- Bow to the Highlord
-							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
-							["coord"] = { 66.0, 86.4, 104 },
-							["description"] = "Available once you reach Exalted with Netherwing.",
-						}),
-						q(11108, {	-- Lord Illidan Stormrage
-							["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
-							["coord"] = { 66.2, 85.6, 104 },
-							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						}),
-					},
+					q(10804, {	-- Kindness
+						["provider"] = { "n", 22113 },	-- Mordenai
+						["coord"] = { 59.3, 58.7, 104 },
+					}),
+					q(10811, {	-- Seek Out Neltharaku
+						["provider"] = { "n", 22113 },	-- Mordenai
+						["sourceQuests"] = { 10804 },	-- Kindness
+						["coord"] = { 59.3, 58.7, 104 },
+					}),
+					q(10814, {	-- Neltharaku's Tale
+						["provider"] = { "n", 21657 },	-- Neltharaku
+						["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
+						["coord"] = { 61.9, 60.0, 104 },
+					}),
+					q(10836, {	-- Infiltrating Dragonmaw Fortress
+						["provider"] = { "n", 21657 },	-- Neltharaku
+						["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
+						["coord"] = { 61.9, 60.0, 104 },
+					}),
+					q(10837, {	-- To Netherwing Ledge!
+						["provider"] = { "n", 21657 },	-- Neltharaku
+						["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
+						["coord"] = { 61.9, 60.0, 104 },
+					}),
+					q(10854, {	-- The Force of Neltharaku
+						["provider"] = { "n", 21657 },	-- Neltharaku
+						["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
+						["coord"] = { 61.9, 60.0, 104 },
+					}),
+					q(10858, {	-- Karynaku
+						["provider"] = { "n", 21657 },	-- Neltharaku
+						["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
+						["coord"] = { 61.9, 60.0, 104 },
+					}),
+					q(10866, {	-- Zuluhed the Whacked
+						["provider"] = { "n", 22112 },	-- Karynaku
+						["sourceQuests"] = { 10858 },	-- Karynaku
+						["coord"] = { 69.8, 61.4, 104 },
+					}),
+					q(10870, {	-- Ally of the Netherwing
+						["provider"] = { "n", 22112 },	-- Karynaku
+						["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
+						["coord"] = { 69.8, 61.4, 104 },
+						["g"] = {
+							i(31492),	-- Claw of the Netherwing Flight
+							i(31491),	-- Netherwing Defender's Shield
+							i(31490),	-- Netherwing Protector's Shield
+							i(31494),	-- Netherwing Sorceror's Charm
+							i(31493),	-- Netherwing Spiritualist's Charm
+						},
+					}),
+					q(11012, {	-- Blood Oath of the Netherwing
+						["provider"] = { "n", 22113 },	-- Mordenai
+						["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
+						["coord"] = { 59.3, 58.7, 104 },
+					}),
+					q(11013, {	-- In Service of the Illidari
+						["provider"] = { "n", 22113 },	-- Mordenai
+						["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
+						["coord"] = { 59.3, 58.7, 104 },
+					}),
+					q(11014, {	-- Enter the Taskmaster
+						["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
+						["sourceQuests"] = { 11013 },	-- In Service of the Illidari
+						["coord"] = { 66.2, 85.6, 104 },
+					}),
+					q(11015, {	-- Netherwing Crystals
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						["isDaily"] = true,
+					}),
+					q(11018, {	-- Nethercite Ore
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						["isDaily"] = true,
+						["requireSkill"] = MINING,
+					}),
+					q(11016, {	-- Nethermine Flayer Hide
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						["isDaily"] = true,
+						["requireSkill"] = SKINNING,
+					}),
+					q(11017, {	-- Netherdust Pollen
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						["isDaily"] = true,
+						["requireSkill"] = HERBALISM,
+					}),
+					q(11019, {	-- Your Friend On The Inside
+						["provider"] = { "n", 23141 },	-- Yarzill the Merc
+						["sourceQuests"] = { 11013 },	-- In Service of the Illidari
+						["coord"] = { 65.9, 86.4, 104 },
+					}),
+					q(11049, {	-- The Great Netherwing Egg Hunt
+						["provider"] = { "n", 23141 },	-- Yarzill the Merc
+						["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						["repeatable"] = true,
+						["coord"] = { 65.9, 86.4, 104 },
+					}),
+					q(11050, {	-- Accepting All Eggs
+						["provider"] = { "n", 23141 },	-- Yarzill the Merc
+						["sourceQuests"] = { 11049 },	-- The Great Netherwing Egg Hunt
+						["repeatable"] = true,
+						["coord"] = { 65.9, 86.4, 104 },
+					}),
+					q(11020, {	-- A Slow Death
+						["provider"] = { "n", 23141 },	-- Yarzill the Merc
+						["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						["isDaily"] = true,
+						["coord"] = { 65.9, 86.4, 104 },
+					}),
+					q(11035, {	-- The Not-So-Friendly Skies...
+						["provider"] = { "n", 23141 },	-- Yarzill the Merc
+						["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						["isDaily"] = true,
+						["coord"] = { 65.9, 86.4, 104 },
+					}),
+					q(11041, {	-- A Job Unfinished...
+						["provider"] = { "i", 32621 },	-- Partially Digested Hand
+						-- TODO: confirm source, but as it requires Neutral with Netherwing, this is the quest that sets you to Neutral
+						["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
+						["crs"] = 23267,	-- Arvoar the Rapacious
+						["coord"] = { 74.6, 86.5, 104 },
+						["minReputation"] = { 1015, NEUTRAL },
+						["g"] = {
+							i(32866),	-- Ascendant's Boots
+							i(32867),	-- Dragonmaw Augur's Cinch
+							i(32865),	-- Drake Tamer's Gloves
+							i(32868),	-- Skybreaker's Mantle
+						},
+					}),
+					q(11083, {	-- Crazed and Confused
+						["provider"] = { "n", 23166 },	-- Ronag the Slave Driver
+						["sourceQuests"] = { 11075 },	-- The Netherwing Mines
+						["coord"] = { 71.6, 87.6, 104 },
+						["description"] = "Available once you reach Friendly with Netherwing.",
+					}),
+					i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)
+						["crs"] = { 23286 },	-- Black Blood of Draenor
+						["coord"] = { 65.3, 89.9, 104 },	-- Entrance
+						["g"] = {
+							q(11081, {	-- The Great Murkblood Revolt
+								["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
+								-- ["sourceQuests"] = {  },	-- TODO: pretty sure this has a source quest... opened like 30 sludge objects once i hit friendly. later i did a couple other quests and got the plans after 2 objects
+								["minReputation"] = { 1015, FRIENDLY },
+								["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
+							}),
+						},
+					}),
+					q(11082, {	-- Seeker of Truth
+						["provider"] = { "n", 23149 },	-- Mistress of the Mines
+						["sourceQuests"] = { 11081 },	-- The Great Murkblood Revolt
+						["coord"] = { 63.0, 87.8, 104 },
+					}),
+					q(11075, {	-- The Netherwing Mines
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11053 },	-- Rise, Overseer!
+						["coord"] = { 66.0, 86.4, 104 },
+						["description"] = "Available once you reach Friendly with Netherwing.",
+					}),
+					q(11076, {	-- Picking Up The Pieces...
+						["provider"] = { "n", 23149 },	-- Mistress of the Mines
+						["sourceQuests"] = { 11075 },	-- The Netherwing Mines
+						["coord"] = { 63.0, 87.8, 104 },
+						["isDaily"] = true,
+					}),
+					q(11077, {	-- Dragons are the Least of Our Problems
+						["provider"] = { "n", 23376 },	-- Dragonmaw Foreman
+						["sourceQuests"] = { 11075 },	-- The Netherwing Mines
+						["coord"] = { 63.4, 87.4, 104 },
+						["isDaily"] = true,
+						["description"] = "Available once you reach Friendly with Netherwing.",
+					}),
+					q(11054, {	-- Overseeing and You: Making the Right Choices
+						["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
+						["sourceQuests"] = { 11053 },	-- Rise, Overseer!
+						["coord"] = { 66.8, 86.0, 104 },
+						["description"] = "Available once you reach Friendly with Netherwing.",
+					}),
+					q(11055, {	-- The Booterang: A Cure For The Common Worthless Peon
+						["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
+						["sourceQuests"] = { 11054 },	-- Overseeing and You: Making the Right Choices
+						["coord"] = { 66.8, 86.0, 104 },
+						["isDaily"] = true,
+					}),
+					q(11063, {	-- Earning Your Wings
+						["provider"] = { "n", 22433 } ,	-- Ja'y Nosliw
+						["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
+						["coord"] = { 65.9, 87.2, 104 },
+					}),
+					q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
+						["provider"] = { "n", 23340 } ,	-- Murg "Oldie" Muckjaw
+						["sourceQuests"] = { 11063 },	-- Earning Your Wings
+						["coord"] = { 65.2, 85.7, 104 },
+					}),
+					q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
+						["provider"] = { "n", 23342 } ,	-- Trope the Filth-Belcher
+						["sourceQuests"] = { 11064 },	-- Dragonmaw Race: The Ballad of Oldie McOld
+						["coord"] = { 65.2, 85.5, 104 },
+					}),
+					q(11068, {	-- Dragonmaw Race: Corlok the Vet
+						["provider"] = { "n", 23344 } ,	-- Corlok the Vet
+						["sourceQuests"] = { 11067 },	-- Dragonmaw Race: Trope the Filth-Belcher
+						["coord"] = { 65.2, 85.2, 104 },
+					}),
+					q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
+						["provider"] = { "n", 23345 } ,	-- Wing Commander Ichman
+						["sourceQuests"] = { 11068 },	-- Dragonmaw Race: Corlok the Vet
+						["coord"] = { 65.2, 85.1, 104 },
+					}),
+					q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
+						["provider"] = { "n", 23346 } ,	-- Wing Commander Mulverick
+						["sourceQuests"] = { 11069 },	-- Dragonmaw Race: Wing Commander Ichman
+						["coord"] = { 65.2, 84.9, 104 },
+					}),
+					q(11071, {	-- Dragonmaw Race: Captain Skyshatter
+						["provider"] = { "n", 23348 } ,	-- Captain Skyshatter
+						["sourceQuests"] = { 11070 },	-- Dragonmaw Race: Wing Commander Mulverick
+						["coord"] = { 65.5, 85.3, 104 },
+						["g"] = {
+							i(32863),	-- Skybreaker Whip
+						},
+					}),
+					q(11089, {	-- The Soul Cannon of Reth'hedron
+						["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
+						["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
+						["coord"] = { 66.2, 85.6, 104 },
+					}),
+					q(11090, {	-- Subdue the Subduer
+						["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
+						["sourceQuests"] = { 11089 },	-- The Soul Cannon of Reth'hedron
+						["coord"] = { 66.2, 85.6, 104 },
+						["g"] = {
+							i(32871),	-- Horns of the Illidari
+							i(32869),	-- Illidari Lord's Tunic
+							i(32872),	-- Illidari Rod of Discipline
+							i(32870),	-- Legguards of Contemplation
+						},
+					}),
+					q(11086, {	-- Disrupting the Twilight Portal
+						["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
+						["isDaily"] = true,
+					}),
+					q(11099, {	-- Kill Them All! (Aldor)
+						["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
+						["coord"] = { 66.2, 85.6, 104 },
+						["minReputation"] = { 1015, REVERED },	-- TODO: maybe eventually a way to show multiple rep requirements...
+						["description"] = "You must be Revered with Netherwing and Friendly with the Aldor to receive this quest.",
+					}),
+					q(11100, {	-- Commander Arcus
+						["provider"] = { "n", 21402 },	-- Anchorite Ceyla
+						["sourceQuests"] = { 11099 },	-- Kill Them All! (Aldor)
+						["coord"] = { 62.4, 28.4, 104 },
+						["description"] = "For players aligned with the Aldor.",
+					}),
+					q(11094, {	-- Kill Them All! (Scryers)
+						["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
+						["coord"] = { 66.2, 85.6, 104 },
+						["minReputation"] = { 1015, REVERED },	-- TODO: maybe eventually a way to show multiple rep requirements...
+						["description"] = "You must be Revered with Netherwing and Friendly with the Scryers to receive this quest.",
+					}),
+					q(11095, {	-- Commander Hobb
+						["provider"] = { "n", 21955 },	-- Arcanist Thelis
+						["sourceQuests"] = { 11094 },	-- Kill Them All! (Scryers)
+						["coord"] = { 56.2, 59.6, 104 },
+						["description"] = "For players aligned with the Scryers.",
+					}),
+					q(11053, {	-- Rise, Overseer!
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						["coord"] = { 66.0, 86.4, 104 },
+						["minReputation"] = { 1015, FRIENDLY },
+						["g"] = {
+							i(32694),	-- Overseer's Badge
+						},
+					}),
+					q(11084, {	-- Stand Tall, Captain!
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11053 },	-- Rise, Overseer!
+						["coord"] = { 66.0, 86.4, 104 },
+						["minReputation"] = { 1015, HONORED },
+						["g"] = {
+							i(32695),	-- Captain's Badge
+						},
+					}),
+					q(11092, {	-- Hail, Commander!
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
+						["coord"] = { 66.0, 86.4, 104 },
+						["minReputation"] = { 1015, REVERED },
+						["g"] = {
+							i(32864),	-- Commander's Badge
+						},
+					}),
+					q(11101, {	-- The Deadliest Trap Ever Laid
+						-- ["provider"] = { "n",  },	-- 
+						-- ["sourceQuests"] = {  },	-- 
+						-- ["coord"] = { , 104 },
+						["isDaily"] = true,
+						["description"] = "For players aligned with the Aldor.",
+					}),
+					q(11097, {	-- The Deadliest Trap Ever Laid
+						-- ["provider"] = { "n",  },	-- 
+						-- ["sourceQuests"] = {  },	-- 
+						-- ["coord"] = { , 104 },
+						["isDaily"] = true,
+						["description"] = "For players aligned with the Scryers.",
+					}),
+					q(11107, {	-- Bow to the Highlord
+						["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
+						["sourceQuests"] = { 11092 },	-- Hail, Commander!
+						["coord"] = { 66.0, 86.4, 104 },
+						["minReputation"] = { 1015, EXALTED },
+					}),
+					q(11108, {	-- Lord Illidan Stormrage
+						["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
+						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+						["coord"] = { 66.2, 85.6, 104 },
+					}),
 				}),
 				faction(934,  {	-- The Scryers
 					["collectible"] = false,	-- Collectible in Shattrath

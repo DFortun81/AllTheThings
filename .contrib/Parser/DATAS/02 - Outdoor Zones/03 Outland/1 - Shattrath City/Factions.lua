@@ -105,40 +105,51 @@ _.Zones =
 				}),
 				faction(1015, {	-- Netherwing
 					["collectible"] = false,	-- Netherwing isn't based in Shattrath, so shouldn't be collectible here.
-					["crs"] = { 23489 },	-- Drake Dealer Hurlunk
 					["g"] = {
 						q(11109, {	-- Jorus the Cobalt Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
 							},
 						}),
 						q(11110, {	-- Malfas the Purple Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32860),	-- Reins of the Purple Netherwing Drake Mount
 							},
 						}),
 						q(11111, {	-- Onyxien the Onyx Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
 							},
 						}),
 						q(11112, {	-- Suraku the Azure Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32858),	-- Reins of the Azure Netherwing Drake Mount
 							},
 						}),
 						q(11113, {	-- Voranaku the Violet Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32862),	-- Reins of the Violet Netherwing Drake Mount
 							},
 						}),
 						q(11114, {	-- Zoya the Veridian Netherwing Drake
+							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+							-- ["coord"] = { , 111 },
 							["g"] = {
 								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
 							},
