@@ -611,7 +611,7 @@ for key,value in pairs({
 		--TODO: [-101] = "Followers",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		--TODO: [-130] = "Duskwood "..GetSpellInfo(133137),			-- Duskwood Active
-		--TODO: [-131] = "The Hinterlands "..GetSpellInfo(133137),-- The Hinterlands Active
+		--TODO: [-131] = "The Hinterlands "..GetSpellInfo(133137),	-- The Hinterlands Active
 		--TODO: [-132] = "Feralas "..GetSpellInfo(133137),			-- Feralas Active
 		--TODO: [-133] = "Duskwood "..GetSpellInfo(78741),			-- Duskwood Activated
 	-- Invasions TODO: what levels?
@@ -1354,7 +1354,7 @@ for key,value in pairs({
 	[188365] = "Cœur des anciens",
 	--TODO: [188418] = "Wanted!",
 	[188419] = "Ancien Mana'loa",
-	 --TODO: [188649] = "Wanted Poster",
+	--TODO: [188649] = "Wanted Poster",
 	[188667] = "Ambregraine",
 	[189311] = "Tome relié de chair",
 	[189989] = "Débris de la taupe mécanique sombrefer",
@@ -1717,7 +1717,7 @@ for key,value in pairs({
 	[232589] = "Sac d’herbes de Veema",
 	[232590] = "Cristal imprégné du Vide",
 	[232591] = "Offrande du bien-aimé",
-	 --TODO: [232595] = "Steamwheedle Supplies",
+	--TODO: [232595] = "Steamwheedle Supplies",
 	[232596] = "Bardiche ancestrale",
 	--TODO: [232597] = "Goblin Pack",
 	--TODO: [232598] = "Steamwheedle Supplies",
