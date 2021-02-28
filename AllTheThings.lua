@@ -616,53 +616,91 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 		end
 	end
 end
+-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
+local function GetDisplayID(data, all)
+	if all then
+		local displayInfo, _ = {};
+		-- specific displayID
+		_ = data.displayID;
+		if _ then tinsert(displayInfo, _); return displayInfo; end
+
+		-- specific creatureID for displayID
+		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
+		if _ then tinsert(displayInfo, _); return displayInfo; end
+
+		-- loop through "n" providers
+		if data.providers then
+			for k,v in pairs(data.providers) do
+				-- if one of the providers is an NPC, we should show its texture regardless of other providers
+				if v[1] == "n" then
+					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
+					if _ then tinsert(displayInfo, _); end
+				end
+			end
+		end
+		if displayInfo[1] then return displayInfo; end
+
+		-- for quest givers (is this a thing still?)
+		if data.qgs then
+			for k,v in pairs(data.qgs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then tinsert(displayInfo, _); end
+			end
+		end
+		if displayInfo[1] then return displayInfo; end
+
+		-- for a generic header, use the attached crs if so
+		if data.creatureID and data.creatureID < 0 and data.crs then
+			for k,v in pairs(data.crs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then tinsert(displayInfo, _); end
+			end
+		end
+		if displayInfo[1] then return displayInfo; end
+	else
+		-- specific displayID
+		local _ = data.displayID;
+		if _ then return _; end
+
+		-- specific creatureID for displayID
+		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
+		if _ then return _; end
+
+		-- loop through "n" providers
+		if data.providers then
+			for k,v in pairs(data.providers) do
+				-- if one of the providers is an NPC, we should show its texture regardless of other providers
+				if v[1] == "n" then
+					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
+					if _ then return _; end
+				end
+			end
+		end
+
+		-- for quest givers (is this a thing still?)
+		if data.qgs then
+			for k,v in pairs(data.qgs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then return _; end
+			end
+		end
+
+		-- for a generic header, use the attached crs if so
+		if data.creatureID and data.creatureID < 0 and data.crs then
+			for k,v in pairs(data.crs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then return _; end
+			end
+		end
+	end
+end
 GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
 	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
-		local displayInfos = reference.displayInfo;
+		local displayInfos = reference.displayInfo or GetDisplayID(reference, true);
 		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
 			return true;
-		elseif reference.qgs then
-			if #reference.qgs > 1 then
-				displayInfos = {};
-				local markedKeys = {};
-				for i,creatureID in ipairs(reference.qgs) do
-					local displayID = app.NPCDisplayIDFromID[creatureID];
-					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfos, displayID);
-						markedKeys[displayID] = 1;
-					end
-				end
-				if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-					return true;
-				end
-			else
-				local displayID = app.NPCDisplayIDFromID[reference.qgs[1]];
-				if displayID then
-					self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-					self.Model:SetCamDistanceScale(reference.modelScale or 1);
-					self.Model:SetDisplayInfo(displayID);
-					self.Model:Show();
-					self:Show();
-					return true;
-				end
-			end
-		elseif reference.providers then
-			displayInfos = {}
-			local markedKeys = {}
-			for k,v in pairs(reference.providers) do
-				if v[1] == "n" and v[2] > 0 then
-					local displayID = app.NPCDisplayIDFromID[v[2]];
-					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfos, displayID);
-						markedKeys[displayID] = 1;
-					end
-				end
-			end
-			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-				return true;
-			end
 		end
 
 		if reference.displayID then
@@ -691,6 +729,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 		if s then
 			if reference.artifactID then
 				-- Okay, fine.
+				-- TODO: This doesn't work for variants
 			elseif reference.g and #reference.g > 0 then
 				local npc = reference.g[1];
 				if npc and npc.npcID and npc.npcID <= -5200 and npc.npcID >= -5206 then
@@ -1087,29 +1126,6 @@ app.IsComplete = function(o)
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
-local function GetDisplayID(data)
-	if data.displayID then
-		return data.displayID;
-	elseif data.creatureID then
-		local displayID = app.NPCDisplayIDFromID[data.creatureID];
-		if displayID then
-			return displayID;
-		end
-	end
-
-	if data.providers and #data.providers > 0 then
-		for k,v in pairs(data.providers) do
-			-- if one of the providers is an NPC, we should show its texture regardless of other providers
-			if v[1] == "n" then
-				return app.NPCDisplayIDFromID[v[2]]
-			end
-		end
-	end
-
-	if data.qgs and #data.qgs > 0 then
-		return app.NPCDisplayIDFromID[data.qgs[1]];
-	end
-end
 local function GetUnobtainableTexture(group)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
