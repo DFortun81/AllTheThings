@@ -15,7 +15,7 @@ _.Zones =
 					}),
 				}),
 				v(32961,  {	-- Angry Sprite & Scary Sprite
-					["description"] = "Click on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites.",
+					["description"] = "Click on the Neverending Spritewood (purple crystal) to transform and be able to attack the sprites.",
 					["isDaily"] = true,
 					["crs"] = {
 						71824,	-- Angry Sprite
@@ -77,6 +77,9 @@ _.Zones =
 					["model"] = 191835,
 					["icon"] = "Interface\\Icons\\INV_Egg_07",
 					["g"] = {
+						crit(3, {	-- Crane Nest
+							["achievementID"] = 8725,	-- Eyes on the Ground
+						}),
 						i(104157, {	-- Azure Crane Chick (PET!)
 							crit(55, {	-- Azure Crane Chick
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -621,11 +624,11 @@ _.Zones =
 				}),
 				i(104345, {	-- Timeless Lavalliere
 					i(103982, {	-- Burden of Eternity
-						i(101894),	-- Amaranthine Necklace [Timeless]
-						i(101884),	-- Cliffbreaker Neck [Timeless]
-						i(101944),	-- Elder Tortoiseshell Neck [Timeless]
-						i(101936),	-- Kiln-Stoker Collar [Timeless]
-						i(101916),	-- Warmsun Choker [Timeless]
+						i(101894),	-- Amaranthine Necklace
+						i(101884),	-- Cliffbreaker Neck
+						i(101944),	-- Elder Tortoiseshell Neck
+						i(101936),	-- Kiln-Stoker Collar
+						i(101916),	-- Warmsun Choker
 					}),
 					i(101805),	-- Amaranthine Necklace
 					i(101795),	-- Cliffbreaker Choker
@@ -635,11 +638,11 @@ _.Zones =
 				}),
 				i(102291, {	-- Timeless Signet
 					i(103982, {	-- Burden of Eternity
-						i(101898),	-- Amaranthine Signet [Timeless]
-						i(101887),	-- Cliffbreaker Seal [Timeless]
-						i(101947),	-- Elder Tortoiseshell Seal [Timeless]
-						i(101937),	-- Kiln-Stoker Ring [Timeless]
-						i(101918),	-- Warmsun Ring [Timeless]
+						i(101898),	-- Amaranthine Signet
+						i(101887),	-- Cliffbreaker Seal
+						i(101947),	-- Elder Tortoiseshell Seal
+						i(101937),	-- Kiln-Stoker Ring
+						i(101918),	-- Warmsun Ring
 					}),
 					i(101809),	-- Amaranthine Signet
 					i(101798),	-- Cliffbreaker Seal

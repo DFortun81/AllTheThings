@@ -55,7 +55,6 @@ _.Zones =
 				ach(8725, {	-- Eyes on the Ground
 					crit(1),	-- Giant Clam
 					crit(2),	-- Glinting Sand
-					crit(3),	-- Crane Nest
 					crit(4),	-- Eerie Crystal
 					crit(5),	-- Ordon Supplies
 					crit(6),	-- Firestorm Egg
@@ -162,6 +161,19 @@ _.Zones =
 				}),
 				ach(8724, {	-- Pilgrimage
 					["coords"] = {
+						{ 22.8, 29.3, 554 },
+						{ 26.7, 52.1, 554 },
+						{ 28.0, 72.0, 554 },
+						{ 30.2, 45.5, 554 },
+						{ 30.6, 62.5, 554 },
+						{ 35.0, 29.4, 554 },
+						{ 37.5, 74.2, 554 },
+						{ 43.4, 55.8, 554 },
+						{ 49.8, 70.1, 554 },
+						{ 53.0, 60.8, 554 },
+						{ 58.1, 46.6, 554 },
+						{ 63.9, 50.6, 554 },
+						{ 66.1, 72.3, 554 },
 					},
 					["g"] = {
 						crit(1),	-- Niuzao's Blessing Obtained
@@ -219,7 +231,9 @@ _.Zones =
 					crit(5),	-- 2/2 Smoldering Chests
 				}),
 				ach(8727),	-- Where There's Pirates, There's Booty
-				ach(8743),	-- Zarhym Altogether
+				ach(8743, {	-- Zarhym Altogether
+					["coord"] = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
+				}),
 			}),
 		}),
 	}),

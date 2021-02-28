@@ -8,8 +8,8 @@ _.Zones =
 		m(554, {	-- Timeless Isle
 			n(QUESTS, {
 				q(33211, {	-- A Timeless Question
-					["isDaily"] = true,
 					["provider"] = { "n", 73570 },	-- Senior Historian Evelyna <The Timewalkers>
+					["isDaily"] = true,
 				}),
 				q(33161, {	-- A Timeless Tour
 					["sourceQuests"] = {
@@ -19,64 +19,47 @@ _.Zones =
 					["provider"] = { "n", 72870 },	-- Kairoz
 				}),
 				q(33337, {	-- A Vision in Time
-					["sourceQuest"] = 33338,	-- Empowering the Hourglass
+					["sourceQuests"] = { 33338 },	-- Empowering the Hourglass
 					["provider"] = { "n", 72870 },	-- Kairoz
 					["g"] = {
-						{
-							["questID"] = 33337,	-- A Vision in Time
-							["itemID"] = 105930,	-- Vision of Time
-						},
+						i(105930),	-- Vision of Time
 					},
 				}),
 				q(33378, {	-- Courting Destiny
-					["sourceQuest"] = 33377,	-- Hidden Threads
+					["sourceQuests"] = { 33377 },	-- Hidden Threads
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
-						{
-							["questID"] = 33378,	-- Courting Destiny
-							["itemID"] = 105934,	-- Vision of Time
-						},
+					["g"] = {
+						i(105934),	-- Vision of Time
 					},
 				}),
-				{
-					["questID"] = 33342,	-- Drive Back The Flame
-					["sourceQuest"] = 33341,	-- Wayshrines Of The Celestials
+				q(33342, {	-- Drive Back The Flame
+					["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
 					["provider"] = { "n", 73303 },	-- Emperor Shaohao
-				},
-				{
-					["questID"] = 33338,	-- Empowering the Hourglass
-					["sourceQuest"] = 33336,	-- The Essence of Time
+				}),
+				q(33338, {	-- Empowering the Hourglass
+					["sourceQuests"] = { 33336 },	-- The Essence of Time
 					["provider"] = { "n", 72870 },	-- Kairoz
 					["isWeekly"] = true,
-				},
-				{
-					["questID"] = 33377,	-- Hidden Threads
-					["sourceQuest"] = 33376,	-- Seeking Fate
+				}),
+				q(33377, {	-- Hidden Threads
+					["sourceQuests"] = { 33376 },	-- Seeking Fate
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
-						{
-							["questID"] = 33377,	-- Hidden Threads
-							["itemID"] = 105933,	-- Vision of Time
-						},
+					["g"] = {
+						i(105933),	-- Vision of Time
 					},
-				},
-				{
-					["questID"] = 33332,	-- Hints From The Past
-					["sourceQuest"] = 33228,	-- Time In Your Hands
+				}),
+				q(33332, {	-- Hints From The Past
+					["sourceQuests"] = { 33228 },	-- Time In Your Hands
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
+					["g"] = {
 						i(103977),	-- Time-Worn Journal
 					},
-				},
-				{
-					["questID"] = 33222,	-- Little Tommy Newcomer
+				}),
+				q(33222, {	-- Little Tommy Newcomer
 					["provider"] = { "n", 73626 },			-- Little Tommy Newcomer
 					["isDaily"] = true,
-				},
-				{
-					["objectID"] = 221376,	-- Old Sign Fragment
-					["questID"] = 33018,	-- Noodle Secrets Long Forgotten
-					["description"] = "To receive this quest you have to have completed the first quest from each Way of Cooking trainer",
+				}),
+				q(33018, {	-- Noodle Secrets Long Forgotten
 					["sourceQuests"] = {
 						31471,	-- Agile as a Tiger
 						31477,	-- Endurance
@@ -85,155 +68,123 @@ _.Zones =
 						31474,	-- The Soup of Contemplation
 						31476,	-- The Spirit of Cooking
 					},
-				},
-				{
-					["questID"] = 33379,	-- One Final Turn
-					["sourceQuest"] = 33378,	-- Courting Destiny
+					["provider"] = { "o", 221376 },	-- Old Sign Fragment
+				}),
+				q(33379, {	-- One Final Turn
+					["sourceQuests"] = { 33378 },	-- Courting Destiny
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
-						{
-							["questID"] = 33379,	-- One Final Turn
-							["itemID"] = 105935,	-- Vision of Time
-						},
+					["g"] = {
+						i(105935),	-- Vision of Time
 					},
-				},
-				{
-					["questID"] = 33374,	-- Path of the Mistwalker
-					["sourceQuest"] = 33341,	-- Wayshrines Of The Celestials
+				}),
+				q(33374, {	-- Path of the Mistwalker
+					["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
 					["provider"] = { "n", 73303 },	-- Emperor Shaohao
-					["groups"] = {
+					["isDaily"] = true,
+					["g"] = {
 						i(103642),	-- Book of the Ages
 						i(103643),	-- Dew of Eternal Morning
 						i(103641),	-- Singing Crystal
 					},
-					["isDaily"] = true,
-				},
-				{
-					["questID"] = 33375,	-- Refining The Vision
-					["sourceQuest"] = 33337,	-- A Vision in Time
+				}),
+				q(33375, {	-- Refining The Vision
+					["sourceQuests"] = { 33337 },	-- A Vision in Time
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
-						{
-							["questID"] = 33375,	-- Refining The Vision
-							["itemID"] = 105931,	-- Vision of Time
-						},
+					["g"] = {
+						i(105931),	-- Vision of Time
 					},
-				},
-				{
-					["itemID"] = 102225,	-- Rolo's Riddle [Item]
-					["questID"] = 32974,	-- Rolo's Riddle [Quest]
-					["description"] = "Can be found in Glinting Sand. Solve the first clue by the stone columns.",
-					["coord"] = { 49.4, 69.4 },
-				},
-				{
-					["questID"] = 32975,	-- Rolo's Riddle [Part 2]
-					["sourceQuest"] = 32974,	-- Rolo's Riddle [Quest]
-					["description"] = "Solve the second clue at Three-Breeze Terrace.",
+				}),
+				q(32974, {	-- Rolo's Riddle #1
+					["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
+					["provider"] = { "i", 102225 },	-- Rolo's Riddle
+				}),
+				q(32975, {	-- Rolo's Riddle #2
+					["sourceQuests"] = { 32974 },	-- Rolo's Riddle
+					["description"] = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
 					["provider"] = { "n", 72751 },	-- Mound of Dirt
-					["coord"] = { 34.6, 26.7 },
-				},
-				{
-					["questID"] = 32976,	-- Rolo's Riddle [Part 3]
-					["sourceQuest"] = 32975,	-- Rolo's Riddle [Part 2]
-					["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives.\n\nTo get there use the Albatross Taxi Service: Move to 33.3 - 55.3 (the entrance of Celestial arena). Once there, check the sky and wait for a Highwind Albatross arriving. Hit the bird once then press Escape to stop autoattack. It will pick you up to the sky and transport above the whole isle.\n\nAt 64.5 - 27.5 above the Ruby Lake (the reddish tarn on the map) begin to attack your Albatross again. The bird will instantly dive and releases you as you kill it. Swim out of the red pool and go up to the tree. You'll find the final treasure right there.",
-					["coord"] = { 64.5, 27.5 },
-					["provider"] = { "n", 72755 },	-- Rolo's Treasure
-					["crs"] = {
-						72754,	-- Mound of Dirt
-					},
-					["groups"] = {
-						{
-							["achievementID"] = 8730,	-- Rolo's Riddle
-							["criteriaID"] = 1,	-- Rolo's Riddle Solved.
-						},
+					["coord"] = { 49.4, 69.3, 554 },
+				}),
+				q(32976, {	-- Rolo's Riddle #3
+					["sourceQuests"] = { 32975 },	-- Rolo's Riddle #2
+					["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+					["provider"] = { "n", 72754 },	-- Mound of Dirt
+					["coord"] = { 34.5, 26.5, 554 },
+					["g"] = {
 						i(104013),	-- Timeless Cloth Armor Cache
 						i(104012),	-- Timeless Leather Armor Cache
 						i(104010),	-- Timeless Mail Armor Cache
 						i(104009),	-- Timeless Plate Armor Cache
 					},
-				},
-				{
-					["questID"] = 33376,	-- Seeking Fate
-					["sourceQuest"] = 33375,	-- Refining The Vision
+				}),
+				q(33376, {	-- Seeking Fate
+					["sourceQuests"] = { 33375 },	-- Refining The Vision
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
-						{
-							["questID"] = 33376,	-- Seeking Fate
-							["itemID"] = 105932,	-- Vision of Time
-						},
+					["g"] = {
+						i(105932),	-- Vision of Time
 					},
-				},
-				{
-					["questID"] = 33334,	-- Strong Enough To Survive
-					["sourceQuest"] = 33333,	-- Timeless Treasures
+				}),
+				q(33334, {	-- Strong Enough To Survive
+					["sourceQuests"] = { 33333 },	-- Timeless Treasures
 					["provider"] = { "n", 72870 },	-- Kairoz
 					["isWeekly"] = true,
-				},
-				{
-					["questID"] = 33343,	-- The Archiereus Of Flame
+				}),
+				q(33343, {	-- The Archiereus Of Flame
 					["sourceQuests"] = {
 						33342,	-- Drive Back The Flame
 						33374,	-- Path of the Mistwalker
 					},
 					["provider"] = { "n", 73303 },	-- Emperor Shaohao
-					["groups"] = {
+					["g"] = {
 						i(103982),	-- Burden of Eternity
 					},
-				},
-				{
-					["questID"] = 33336,	-- The Essence of Time
-					["sourceQuest"] = 33161,	-- A Timeless Tour
+				}),
+				q(33336, {	-- The Essence of Time
+					["sourceQuests"] = { 33161 },	-- A Timeless Tour
 					["provider"] = { "n", 72870 },	-- Kairoz
-				},
-				{
-					["questID"] = 33335,	-- The Last Emperor
-					["sourceQuest"] = 33228,	-- Time In Your Hands
+				}),
+				q(33335, {	-- The Last Emperor
+					["sourceQuests"] = { 33228 },	-- Time In Your Hands
 					["provider"] = { "n", 72870 },	-- Kairoz
-				},
-				{
-					["questID"] = 33020,	-- The Lost Secret of the Secret Ingredient
-					["sourceQuest"] = 33018,	-- Noodle Secrets Long Forgotten
+				}),
+				q(33020, {	-- The Lost Secret of the Secret Ingredient
+					["sourceQuests"] = { 33018 },	-- Noodle Secrets Long Forgotten
 					["provider"] = { "n", 72426 },	-- Lin Chao-Wei
-				},
-				{
-					["questID"] = 33228,	-- Time In Your Hands
+				}),
+				q(33228, {	-- Time In Your Hands
 					["sourceQuests"] = {
 						33156,	-- Time Keeper Kairoz
 						33160,	-- Time Keeper Kairoz
 					},
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["groups"] = {
+					["g"] = {
 						i(104013),	-- Timeless Cloth Armor Cache
 						i(104012),	-- Timeless Leather Armor Cache
 						i(104010),	-- Timeless Mail Armor Cache
 						i(104009),	-- Timeless Plate Armor Cache
 					},
-				},
-				a({
-					["questID"] = 33160,	-- Time Keeper Kairoz
-					["sourceQuest"] = 33231,	-- Journey to the Timeless Isle
+				}),
+				q(33160, {	-- Time Keeper Kairoz
+					["sourceQuests"] = { 33231 },	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73348 },	-- Watcher Lara <The Timewalkers>
+					["races"] = ALLIANCE_ONLY,
 				}),
-				h({
-					["questID"] = 33156,	-- Time Keeper Kairoz
-					["sourceQuest"] = 33232,	-- Journey to the Timeless Isle
+				q(33156, {	-- Time Keeper Kairoz
+					["sourceQuests"] = { 33232 },	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73353 },	-- Watcher Alundra <The Timewalkers>
+					["races"] = HORDE_ONLY,
 				}),
-				{
-					["questID"] = 33340,	-- Timeless Nutriment
-					["sourceQuest"] = 33335,	-- The Last Emperor
+				q(33340, {	-- Timeless Nutriment
+					["sourceQuests"] = { 33335 },	-- The Last Emperor
 					["provider"] = { "n", 73303 },	-- Emperor Shaohao
-				},
-				{
-					["questID"] = 33333,	-- Timeless Treasures
+				}),
+				q(33333, {	-- Timeless Treasures
 					["sourceQuests"] = { 33332 },	-- Hints From The Past
 					["provider"] = { "n", 72870 },	-- Kairoz
-				},
-				{
-					["questID"] = 33341,	-- Wayshrines Of The Celestials
-					["sourceQuest"] = 33340,	-- Timeless Nutriment
+				}),
+				q(33341, {	-- Wayshrines Of The Celestials
+					["sourceQuests"] = { 33340 },	-- Timeless Nutriment
 					["provider"] = { "n", 73303 },	-- Emperor Shaohao
-				},
+				}),
 			}),
 		}),
 	}),
