@@ -27,8 +27,9 @@ _.Zones =
 					},
 				}),
 				n(122912, {	-- Commander Sathrenael
+					["altQuests"] = { 48509 },	-- WQ
+					["questID"] = 48562,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48562,
 					["coord"] = { 33.6, 75.2, 830 },
 					["g"] = {
 						crit(23, {	-- Commander Sathrenael

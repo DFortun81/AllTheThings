@@ -70,6 +70,7 @@ _.Zones =
 						i(153271),	-- Forgotten Conservatory Helm
 						i(153270),	-- Forgotten Conservatory Sash* — confirmed on Discord
 						i(153275),	-- Forgotten Conservatory Slippers
+						i(153277),	-- Forgotten Conservatory Wristwraps*
 						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 						i(153330),	-- Mac'Aree Lightseeker's Greaves
 						i(153335),	-- Mac'Aree Lightseeker's Handguards

@@ -52,19 +52,21 @@ _.Zones =
 					},
 				}),
 				n(126864, {	-- Feasel the Muffin Thief
+					["altQuests"] = { 48722 },	-- WQ
+					["questID"] = 48702,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48702,
 					["coord"] = { 41.8, 11.2, 882 },
 					["g"] = {
 						crit(31, {	-- Feasel the Muffin Thief
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(152998),	-- Carefully Hidden Muffin [Doesn't give anything useful....yet]
+						i(152998),	-- Carefully Hidden Muffin
 					},
 				}),
 				n(126896, {	-- Herald of Chaos
+					["altQuests"] = { 48731 },	-- WQ
+					["questID"] = 48711,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48711,
 					["coord"] = { 35.8, 58.8, 882 },
 					["g"] = {
 						crit(40, {	-- Herald of Chaos
@@ -73,9 +75,10 @@ _.Zones =
 					},
 				}),
 				n(126900, {	-- Instructor Tarahna
-					["isDaily"] = true,
-					["questID"] = 48718,
 					["modelScale"] = 0.85,
+					["altQuests"] = { 48737 },	-- WQ
+					["questID"] = 48718,	-- killID
+					["isDaily"] = true,
 					["coord"] = { 61.8, 50.2, 882 },
 					["g"] = {
 						crit(46, {	-- Instructor Tarahna
