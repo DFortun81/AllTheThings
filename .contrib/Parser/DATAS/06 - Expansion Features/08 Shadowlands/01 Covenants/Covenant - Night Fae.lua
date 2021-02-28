@@ -1131,6 +1131,7 @@ _.ExpansionFeatures =
 								i(181314, {	-- Gulper Soul
 									["questID"] = 62421,	-- Gulper Soul
 								}),
+								i(180628),	-- Pearlwing Heron
 								i(181313, {	-- Snapper Soul
 									["questID"] = 62420,	-- Snapper Soul
 								}),
