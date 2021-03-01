@@ -5384,13 +5384,11 @@ end
 npcQuestsCache = {}
 
 function app.GetQuestsForNPC(self, npc_id)
-	--local found = false
 	local group = {}
 
 	if (npcQuestsCache[npc_id]) then
 		group = npcQuestsCache[npc_id]
 	else
-	--print(tostring(npc_id))
 		group, _, _ = app.SearchForField("creatureID", npc_id);
 		if not group then return false; end
 		npcQuestsCache[npc_id] = group
@@ -5404,16 +5402,11 @@ function app.GetQuestsForNPC(self, npc_id)
 	end
 
 	for i,v in pairs(regroup) do
-		--print(tostring(i))
-		--for i2,v2 in pairs(v) do
-		--	print("    " .. tostring(i2)..":"..tostring(v2))
-		--end
 		if (v["visible"] ~= nil and v["visible"] == true) then
 			return true;
 		end
 	end
 
-	--print("---------------------------------")
 	return false
 end
 -- ARP End
