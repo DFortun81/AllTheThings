@@ -41,6 +41,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 164501 },	-- Mistcaller
 					["g"] = {
 						i(182185, {	-- Shrieker Soul
+							["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
 							["questID"] = 62436,	-- Shrieker Soul
 						}),
 						i(181462),	-- Coordinated Offensive
@@ -112,6 +113,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
 							i(182185, {	-- Shrieker Soul
+								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
 								["questID"] = 62436,	-- Shrieker Soul
 							}),
 							i(181462),	-- Coordinated Offensive
@@ -196,6 +198,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
 							i(182185, {	-- Shrieker Soul
+								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
 								["questID"] = 62436,	-- Shrieker Soul
 							}),
 							i(181462),	-- Coordinated Offensive

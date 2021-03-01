@@ -54,8 +54,17 @@ _.Zones =
 					},
 				}),
 				n(23489, {	-- Drake Dealer Hurlunk
+					["sourceQuests"] = {
+						11109,	-- Jorus the Cobalt Netherwing Drake
+						11110,	-- Malfas the Purple Netherwing Drake
+						11111,	-- Onyxien the Onyx Netherwing Drake
+						11112,	-- Suraku the Azure Netherwing Drake
+						11113,	-- Voranaku the Violet Netherwing Drake
+						11114,	-- Zoya the Veridian Netherwing Drake
+					},
+					["minReputation"] = { 1015, EXALTED },
 					["description"] = "To access this vendor, you must reach Exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
-					["coord"] = { 65.6, 86.0, 104 },
+					["coord"] = { 65.6, 85.9, 104 },
 					["g"] = {
 						i(32858),	-- Reins of the Azure Netherwing Drake Mount
 						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount

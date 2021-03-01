@@ -700,12 +700,13 @@ _.HiddenQuestTriggers =
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
 		-- TREASURES
-		q(32969),	-- Pillar Hopping Tracking Quest — looting treasure chest on top of pillar at (49.7, 69.4)
-		q(32970),	-- Pirate Ship Mast Tracking Quest — looting treasure chest at (70.6, 80.8)
-		q(32968),	-- Rope Drop Tracking Quest — looting treasure chest on top of pillar at (54.0, 47.2)
-		q(32957),	-- Sunken Hozen Treasure - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9) — this + below popped at same time
-		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9)
-		q(32956),	-- Tracking Quest - Spectral Pirate Treasure
+		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
+		q(33216),	-- One-Time Chest - T1G1, secondary trigger
+		q(33217),	-- One-Time Chest - T1G2, secondary trigger
+		q(33218),	-- One-Time Chest - T1G3, secondary trigger
+		q(33219),	-- One-Time Chest - T1G4, secondary trigger
+		q(33220),	-- One-Time Chest - T2, secondary trigger
+		q(33221),	-- One-Time Chest - T3, secondary trigger
 		-- VARIOUS
 		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
@@ -1912,6 +1913,7 @@ _.HiddenQuestTriggers =
 		q(53547),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
+		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -3252,7 +3254,6 @@ _.HiddenQuestTriggers =
 			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 		--	Bastion Rares
 		q(63422),	-- Aethon secondary quest
-		q(60933),	-- Ascended Council secondary quest (Cache of the Ascended)
 		q(62192),	-- Baedos secondary quest
 		q(62158),	-- Basilofos secondary quest
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
@@ -3302,6 +3303,7 @@ _.HiddenQuestTriggers =
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
+		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3389,6 +3391,7 @@ _.HiddenQuestTriggers =
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
+		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

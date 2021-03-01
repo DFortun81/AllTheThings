@@ -194,6 +194,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
+				n(-228, {	-- Flight Paths
+					fp(2528, {	-- Bastion, Elysian Hold
+						["coord"] = { 65.6, 17.6, 1533 },
+					}),
+				}),
 				n(QUESTS, {
 					q(58997, {	-- A Bittersweet Prize
 						["provider"] = { "n", 163328 },	-- Pelagos
@@ -1362,6 +1367,15 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-944, {	-- Tier 2: Sacred Trials
+								q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
+									-- ["sourceQuests"] = {  },	-- TODO: ?
+									["provider"] = { "n", 168485 },	-- Apolon
+									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+									["isWeekly"] = true,
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
 								q(62951, {	-- Path of Ascension: Kleia
 									-- ["sourceQuests"] = {  },	-- TODO: ?
 									["provider"] = { "n", 168485 },	-- Apolon

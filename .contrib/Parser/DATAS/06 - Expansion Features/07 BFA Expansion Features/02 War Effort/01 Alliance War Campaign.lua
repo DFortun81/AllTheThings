@@ -1387,6 +1387,57 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(55087, {	-- The Gathering Storm
+							["sourceQuests"] = { 55171 },	-- Spy Versus Spy
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55179, {	-- Retaliation Coordination
+							["sourceQuests"] = { 55087 },	-- The Gathering Storm
+							["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
+							["coord"] = { 45.3, 62.6, 1161 },	-- Boralus
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55088, {	-- Lost in the Field
+							["sourceQuests"] = { 55179 },	-- Retaliation Coordination
+							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
+							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55182, {	-- Reassembly Required
+							["sourceQuests"] = { 55179 },	-- Retaliation Coordination
+							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
+							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55183, {	-- Seeking Higher Ground
+							["sourceQuests"] = {
+								55088,	-- Lost in the Field
+								55182,	-- Reassembly Required
+							},
+							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
+							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55185, {	-- Listen Up!
+							["sourceQuests"] = { 55183 },	-- Seeking Higher Ground
+							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
+							["coord"] = { 52.1, 39.2, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55089, {	-- Shaw's Shank Redemption
+							["sourceQuests"] = { 55185 },	-- Listen Up!
+							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
+							["coord"] = { 52.1, 39.2, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(55090, {	-- A Gathering of Foes
+							["sourceQuests"] = { 55089 },	-- Shaw's Shank Redemption
+							["provider"] = { "n", 150640 },	-- Master Mathias Shaw
+							["coord"] = { 48.8, 32.8, 942 },	-- Stormsong Valley
+							["races"] = ALLIANCE_ONLY,
+						}),
 						-- Night Warrior appearance unlock
 						q(53849, {	-- Waning Hope
 							["sourceQuests"] = { 53847 },	-- On Whispered Winds

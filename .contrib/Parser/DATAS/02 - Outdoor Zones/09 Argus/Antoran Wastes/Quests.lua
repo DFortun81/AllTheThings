@@ -11,7 +11,7 @@ _.Zones =
 					["provider"] = { "n", 125343 },		-- Vorel
 					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["groups"] = {
+					["g"] = {
 						i(151736),	-- Design: Deadly Deep Chemirine
 						i(151738),	-- Design: Masterful Argulite
 						i(151737),	-- Design: Quick Lightsphene
@@ -24,32 +24,22 @@ _.Zones =
 					["sourceQuests"] = {
 						48075,	-- A Colorful Key
 					},
-					["groups"] = {
+					["g"] = {
 						i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)
 						i(151727),	-- Design: Empyrial Deep Crown (Rank 1)
 						i(151730),	-- Design: Empyrial Elemental Crown (Rank 1)
 						i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
 					},
 				}),
-				i(152940, {	-- Arc Circuit
-					["questID"] = 49007,	-- Commander on Deck!
-					["crs"] = {
-						127597,	-- Eredar War-Mind
-						126233,	-- Eredar War-Mind
-						127596,	-- Felsword Myrmidon
-						126168,	-- Felsword Myrmidon
+				q(49007, {	-- Commander on Deck!
+					["description"] = "Collect all four parts from mobs near the Terminus, and combine them to repair the Portal Generator.  This allows you to summon Squadron Commander Vishax.",
+					["provider"] = { "i", 152965 },	-- Vishax's Portal Generator
+					["cost"] = {
+						{ "i", 152890, 1 },	-- Smashed Portal Generator
+						{ "i", 152940, 1 },	-- Arc Circuit
+						{ "i", 152941, 1 },	-- Conductive Sheath
+						{ "i", 152891, 1 },	-- Power Cell
 					},
-					["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
-				}),
-				i(152940, {	-- Conductive Sheath
-					["questID"] = 49007,	-- Commander on Deck!
-					["crs"] = {
-						127597,	-- Eredar War-Mind
-						126233,	-- Eredar War-Mind
-						127596,	-- Felsword Myrmidon
-						126168,	-- Felsword Myrmidon
-					},
-					["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
 				}),
 				q(48448, {	-- Hindering the Legion War Machine
 					["sourceQuests"] = {
@@ -58,16 +48,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 					["coord"] = { 46.7, 24.6, 831 },
-				}),
-				i(152891, {	-- Power Cell
-					["questID"] = 49007,	-- Commander on Deck!
-					["crs"] = {
-						127597,	-- Eredar War-Mind
-						126233,	-- Eredar War-Mind
-						127596,	-- Felsword Myrmidon
-						126168,	-- Felsword Myrmidon
-					},
-					["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
 				}),
 				--[[
 				q(48605),	-- Commander's Downfall
@@ -101,40 +81,27 @@ _.Zones =
 				q(49027),	-- Targets of Opportunity: Terminus
 				q(49200),	-- Yet More Intact Demon Eyes
 --]]
-				i(152890, {	-- Smashed Portal Generator
-					["questID"] = 49007,	-- Commander on Deck!
-					["crs"] = {
-						127598,	-- Immortal Netherwalker
-						126244,	-- Immortal Netherwalker
-					},
-					["description"] = "You collect this piece, before you can gather the Arc Circuit, Conductive Sheath and Power Cell.\n\nThis item opens the portal to Squadron Commander Vishax.",
-				}),
 				q(48870, {	-- The Many-Faced Devourer
-					["lvl"] = 110,
-					["itemID"] = 152786,	-- Call of the Devourer
-					["description"] = "You need to collect three items from various locations around the zone. The bone pile will be repeatadly clickable after you have acquired all three and interacted with the bone pile once.\n\nYou must have this item in your inventory for the other items to drop.",
-					["crs"] = {
-						126193,	-- Antoran Defender
-						126171,	-- Tormented Ritualist
-					},
-					["groups"] = {
+					["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
+					["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
+					["g"] = {
 						i(152993, {	-- Ur'zul Bone
-							["description"] = "Next to the Altar.",
-							["coord"] = { 50.4, 56.1, 885 },
+							["description"] = "Next to the altar.",
 							["questID"] = 48870,
+							["coord"] = { 50.4, 56.1, 885 },
 						}),
 						i(152992, {	-- Imp Bone
-							["description"] = "Can be found inside imp cave.",
+							["description"] = "Can be found inside the imp cave.",
+							["questID"] = 48870,
 							["coords"] = {
 								{ 65.6, 26.3, 885 },	-- Entrance
-								{ 66, 20, 885 },	-- Imp Bone
+								{ 65.9, 19.4, 885 },	-- Imp Bone
 							},
-							["questID"] = 48870,
 						}),
 						i(152991, {	-- Fiend Bone
-							["description"] = "Next to black pillar left of the trap.",
-							["coord"] = { 52.4, 35.3, 885 },
+							["description"] = "Near Vrax'thul, on the east side of a black pillar.",
 							["questID"] = 48870,
+							["coord"] = { 52.4, 35.3, 885 },
 						}),
 					},
 				}),

@@ -537,6 +537,8 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
+					["coord"] = { 46.4, 36.9, 641 },
+					["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				}),
 				q(41992, {	-- Twisted Ash
 					["lvl"] = 110,

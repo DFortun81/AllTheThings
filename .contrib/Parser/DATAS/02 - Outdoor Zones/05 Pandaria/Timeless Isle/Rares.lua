@@ -60,13 +60,6 @@ _.Zones =
 						})
 					},
 				}),
-				o(221673, {	-- Blazing Chest
-					["questID"] = 33210,  -- One-Time Chest - Blazing Chest
-					["coord"] = { 47.3, 26.9, 554 },
-					["g"] = {
-						i(103982),	-- Burden of Eternity
-					},
-				}),
 				n(73171,  {	-- Champion of the Black Flame
 					["description"] = "This rare pats all the way down the pathway from the upper bridge to the lower one.",
 					["questID"] = 33299,
