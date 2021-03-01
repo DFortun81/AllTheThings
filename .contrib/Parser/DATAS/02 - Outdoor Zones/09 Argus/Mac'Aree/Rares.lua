@@ -8,8 +8,9 @@ _.Zones =
 		m(882, {	-- Mac'Aree
 			n(RARES, {
 				n(126887, {	-- Ataxon
+					["altQuests"] = { 48729 },	-- WQ
+					["questID"] = 48709,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48709,
 					["coord"] = { 30.6, 41.6, 882 },
 					["g"] = {
 						crit(38, {	-- Ataxon
@@ -20,9 +21,10 @@ _.Zones =
 					},
 				}),
 				n(126862, {	-- Baruut the Bloodthirsty
-					["isDaily"] = true,
-					["questID"] =  48700,
 					["modelScale"] = 0.75,
+					["altQuests"] = { 48701 },	-- WQ
+					["questID"] =  48700,	-- killID
+					["isDaily"] = true,
 					["coord"] = { 44.2, 59.4, 882 },
 					["g"] = {
 						crit(30, {	-- Baruut the Bloodthirsty
@@ -32,8 +34,9 @@ _.Zones =
 					},
 				}),
 				n(126869, {	-- Captain Faruq
+					["altQuests"] = { 48727 },	-- WQ
+					["questID"] = 48707,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48707,
 					["coord"] = { 27.6, 30.4, 882 },
 					["g"] = {
 						crit(36, {	-- Captain Faruq
@@ -42,8 +45,9 @@ _.Zones =
 					},
 				}),
 				n(126910, {	-- Commander Xethgar
+					["altQuests"] = { 48739 },	-- WQ
+					["questID"] = 48720,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48720,
 					["coord"] = { 56.4, 15.6, 882 },
 					["g"] = {
 						crit(48, {	-- Commander Xethgar
@@ -91,8 +95,9 @@ _.Zones =
 					},
 				}),
 				n(126899, {	-- Jed'hin Champion Vorusk
+					["altQuests"] = { 48733 },	-- WQ
+					["questID"] = 48713,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48713,
 					["coord"] = { 48.5, 40.9, 882 },
 					["g"] = {
 						crit(42, {	-- Jed'hin Champion Vorusk
@@ -102,9 +107,10 @@ _.Zones =
 					},
 				}),
 				n(126860, {	-- Kaara the Pale
-					["isDaily"] = true,
-					["questID"] = 48697,
 					["modelScale"] = 0.75,
+					["altQuests"] = { 48698 },	-- WQ
+					["questID"] = 48697,	-- killID
+					["isDaily"] = true,
 					["coord"] = { 37.8, 54.8, 882 },
 					["g"] = {
 						crit(29, {	-- Kaara the Pale
@@ -113,8 +119,9 @@ _.Zones =
 					},
 				}),
 				n(124440, {	-- Overseer Y'Beda
+					["altQuests"] = { 48734 },	-- WQ
+					["questID"] = 48714,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48714,
 					["coord"] = { 58.8, 37.8, 882 },
 					["g"] = {
 						crit(43, {	-- Overseer Y'Beda
@@ -124,9 +131,10 @@ _.Zones =
 					},
 				}),
 				n(125498, {	-- Overseer Y'Morna
+					["altQuests"] = { 48736 },	-- WQ
+					["questID"] = 48717,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48717,
-					["coord"] = { 60.89, 29.81, 882 },
+					["coord"] = { 60.9, 29.8, 882 },
 					["g"] = {
 						crit(45, {	-- Overseer Y'Morna
 							["achievementID"] = 12078,	-- Commander of Argus
@@ -135,8 +143,9 @@ _.Zones =
 					},
 				}),
 				n(125497, {	-- Overseer Y'Sorna
+					["altQuests"] = { 48735 },	-- WQ
+					["questID"] = 48716,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48716,
 					["coord"] = { 57.6, 30.8, 882 },
 					["g"] = {
 						crit(44, {	-- Overseer Y'Sorna
@@ -146,9 +155,10 @@ _.Zones =
 					},
 				}),
 				n(126898, {	-- Sabuul
-					["isDaily"] = true,
-					["questID"] = 48712,
 					["modelScale"] = 0.75,
+					["altQuests"] = { 48732 },	-- WQ
+					["questID"] = 48712,	-- killID
+					["isDaily"] = true,
 					["coord"] = { 44.0, 48.6, 882 },
 					["g"] = {
 						crit(41, {	-- Sabuul
@@ -167,8 +177,9 @@ _.Zones =
 					},
 				}),
 				n(122838, {	-- Shadowcaster Voruun
+					["altQuests"] = { 47833 },	-- WQ
+					["questID"] = 48692,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48692,
 					["coord"] = { 44.8, 71.4, 882 },
 					["g"] = {
 						crit(4, {	-- Shadowcaster Voruun
@@ -178,9 +189,10 @@ _.Zones =
 					},
 				}),
 				n(126912, {	-- Skreeg the Devourer
-					["isDaily"] = true,
-					["questID"] = 48721,
 					["modelScale"] = 0.80,
+					["altQuests"] = { 48740 },	-- WQ
+					["questID"] = 48721,	-- killID
+					["isDaily"] = true,
 					["coord"] = { 50.0, 9.4, 882 },
 					["g"] = {
 						crit(49, {	-- Skreeg the Devourer
@@ -190,8 +202,9 @@ _.Zones =
 					},
 				}),
 				n(126913, {	-- Slithon the Last
+					["altQuests"] = { 48936 },	-- WQ
+					["questID"] = 48935,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48935,
 					["coord"] = { 48.6, 53.6, 882 },
 					["g"] = {
 						crit(50, {	-- Slithon the Last
@@ -201,8 +214,9 @@ _.Zones =
 					},
 				}),
 				n(126889, {	-- Sorolis the Ill-Fated
+					["altQuests"] = { 48730 },	-- WQ
+					["questID"] = 48710,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48710,
 					["coord"] = { 70.2, 46.0, 882 },
 					["g"] = {
 						crit(39, {	-- Sorolis the Ill-Fated
@@ -212,8 +226,9 @@ _.Zones =
 					},
 				}),
 				n(126815, {	-- Soultwisted Monstrosity
+					["altQuests"] = { 48694 },	-- WQ
+					["questID"] = 48693,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48693,
 					["coord"] = { 53.0, 67.8, 882 },
 					["g"] = {
 						crit(27, {	-- Soultwisted Monstrosity
@@ -222,8 +237,9 @@ _.Zones =
 					},
 				}),
 				n(126868, {	-- Turek the Lucid
+					["altQuests"] = { 48726 },	-- WQ
+					["questID"]  = 48706,	-- killID
 					["isDaily"] = true,
-					["questID"]  = 48706,
 					["coord"] = { 38.6, 65.2, 882 },
 					["g"] = {
 						crit(35, {	-- Turek the Lucid
@@ -233,8 +249,9 @@ _.Zones =
 					},
 				}),
 				n(126885, {	-- Umbraliss <Voidstalker Matriarch>
+					["altQuests"] = { 48728 },	-- WQ
+					["questID"] = 48708,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48708,
 					["coord"] = { 34.8, 37.6, 882 },
 					["g"] = {
 						crit(37, {	-- Umbraliss
@@ -243,8 +260,9 @@ _.Zones =
 					},
 				}),
 				n(126867, {	-- Venomtail Skyfin
+					["altQuests"] = { 48725 },	-- WQ
+					["questID"] = 48705,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48705,
 					["coord"] = { 33.8, 47.4, 882 },
 					["g"] = {
 						crit(34, {	-- Venomtail Skyfin
@@ -254,8 +272,9 @@ _.Zones =
 					},
 				}),
 				n(126866, {	-- Vigilant Kuro
+					["altQuests"] = { 48724 },	-- WQ
+					["questID"] = 48704,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48704,
 					["coord"] = { 63.6, 64.6, 882 },
 					["g"] = {
 						crit(33, {	-- Vigilant Kuro
@@ -266,8 +285,9 @@ _.Zones =
 					},
 				}),
 				n(126865, {	-- Vigilant Thanos
+					["altQuests"] = { 48723 },	-- WQ
+					["questID"] = 48703,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48703,
 					["coord"] = { 36.6, 23.6, 882 },
 					["g"] = {
 						crit(32, {	-- Vigilant Thanos
@@ -278,8 +298,9 @@ _.Zones =
 					},
 				}),
 				n(126852, {	-- Wrangler Kravos
+					["altQuests"] = { 48696 },	-- WQ
+					["questID"] = 48695,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48695,
 					["coord"] = { 55.6, 60.6, 882 },
 					["g"] = {
 						crit(28, {	-- Wrangler Kravos
@@ -290,8 +311,9 @@ _.Zones =
 					},
 				}),
 				n(126908, {	-- Zul'tan the Numerous
+					["altQuests"] = { 48738 },	-- WQ
+					["questID"] = 48719,	-- killID
 					["isDaily"] = true,
-					["questID"] = 48719,
 					["coord"] = { 66.6, 28.6, 882 },
 					["g"] = {
 						crit(47, {	-- Zul'tan the Numerous
