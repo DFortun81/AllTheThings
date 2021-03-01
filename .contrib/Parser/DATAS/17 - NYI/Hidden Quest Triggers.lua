@@ -3222,7 +3222,8 @@ _.HiddenQuestTriggers =
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
-		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
+		q(62746),	-- Reaching Renown 19 Night Fae / unlocking Deepening Bond 4% stam increase
+		q(62747),	-- Reaching Renown 35 Night Fae / unlocking Deepening Bond 6% stam increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
