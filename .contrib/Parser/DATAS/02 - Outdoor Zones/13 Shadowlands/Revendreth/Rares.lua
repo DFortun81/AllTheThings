@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
-					["description"] = "When the rare is available, 3 light-reflecting mirrors will appear.  Move all 3 start the encounter.",
+					["description"] = "When the rare is available, 3 light-reflecting mirrors will appear.  Move all 3 to start the encounter.",
 					["questID"] = 59584,
 					["isDaily"] = true,
 					["coord"] = { 25.3, 48.5, 1525 },

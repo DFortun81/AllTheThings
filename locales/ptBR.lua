@@ -2782,6 +2782,7 @@ for key,value in pairs({
 	--TODO: [353793] = "Parish Chest",
 	--TODO: [353796] = "Reliquary of Remembrance",
 	--TODO: [353797] = "Stone Legion Supplies",
+	[353799] = "Mochila de Quebrafé",
 	--TODO: [353869] = "Hidden Hoard",
 	--TODO: [353870] = "Hidden Hoard",
 	--TODO: [353871] = "Hidden Hoard",

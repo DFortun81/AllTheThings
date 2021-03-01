@@ -4901,6 +4901,7 @@ app.L = {
 		[353793] = "Parish Chest",
 		[353796] = "Reliquary of Remembrance",
 		[353797] = "Stone Legion Supplies",
+		[353799] = "Hopebreaker Pack",
 		[353869] = "Hidden Hoard",
 		[353870] = "Hidden Hoard",
 		[353871] = "Hidden Hoard",
