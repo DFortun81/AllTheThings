@@ -1221,6 +1221,11 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 174511 },	-- Lia the Curious
 									["coord"] = { 26.0, 63.8, 1662 },
 								}),
+								q(62630, {	-- All Spirits Great and Small (3)
+									["sourceQuests"] = { 62629 },	-- All Spirits Great and Small (2)
+									["provider"] = { "n", 174511 },	-- Lia the Curious
+									["coord"] = { 26.0, 63.8, 1662 },
+								}),
 								q(60641, {	-- Blossoming of the Grove
 									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 									["provider"] = { "n", 166476 },	-- Warden Casad
