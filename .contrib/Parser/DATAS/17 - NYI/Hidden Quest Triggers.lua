@@ -3356,6 +3356,7 @@ _.HiddenQuestTriggers =
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
+		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
