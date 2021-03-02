@@ -1160,7 +1160,6 @@ _.ExpansionFeatures =
 										crit(1),	-- Ardenweald Etiquette
 										crit(3),	-- Maldraxxus Etiquette
 										crit(4),	-- Revendreth Etiquette
-										crit(5),	-- Sinrunner Riding
 										crit(6),	-- Dredbat Riding
 									}),
 									ach(14683, {	-- Dredger Style
@@ -1220,12 +1219,13 @@ _.ExpansionFeatures =
 							--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
 								i(181323),	-- Blightclutched Greatstaff (Plague Deviser Marileth's Extravagant Tribute)
 								i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
-								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)
+								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)/(Choofa's Substantial Tribute)
 								i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 								i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 								i(183107),	-- Char (pet)
+								i(181607),	-- Decree: Lady Moonberry's Esteem (Lady Moonberry's Substantial Tribute)
 								i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
-								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
+								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)/(Choofa's Substantial Tribute)
 								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
@@ -1801,6 +1801,17 @@ _.ExpansionFeatures =
 									["g"] = {
 										crit(7, {	-- Full Flowing Hair Cut
 											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(62221, {	-- My Own Death Pony!
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183842, 1 } },	-- Sinrunner Pony Reins
+									["g"] = {
+										crit(5, {	-- Sinrunner Riding
+											["achievementID"] = 14681,	-- Dredger Academy
 										}),
 									},
 								}),
