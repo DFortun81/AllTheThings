@@ -3691,6 +3691,7 @@ _.HiddenQuestTriggers =
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
+		q(62398),	-- learning Sinwrath illusion
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

@@ -137,6 +137,7 @@ i(139792);	-- Fruitful Bauble
 i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
+i(153188);	-- Greater Blessed Bandage
 i(19296);	-- Greater Darkmoon Prize
 i(62343);	-- Greater Inscription of Charged Lodestone
 i(62345);	-- Greater Inscription of Jagged Stone
