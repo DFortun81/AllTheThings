@@ -3676,8 +3676,12 @@ _.HiddenQuestTriggers =
 		q(59489),	-- using Contract: Lost Chalice Band
 		q(59518),	-- using Contract: Venthyr Volunteers
 		q(59519),	-- using Contract: Venthyr Volunteers
+		-- q(),		-- using Contract: Maldraxxian Army
+		-- q(),		-- using Contract: Maldraxxian Army
 		q(59500),	-- using Contract: Mushroom Surprise
 		q(59501),	-- using Contract: Mushroom Surprise
+		q(59479),	-- using Contract: Mystery Mirrors
+		q(59480),	-- using Contract: Mystery Mirrors
 		q(61499),	-- using Stock: Anima Samples
 		q(61502),	-- when using Invitation: Choofa
 		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
