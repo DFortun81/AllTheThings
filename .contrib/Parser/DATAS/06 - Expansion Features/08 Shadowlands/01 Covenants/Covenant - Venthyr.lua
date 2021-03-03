@@ -1203,15 +1203,6 @@ _.ExpansionFeatures =
 										crit(15),	-- Sika
 										crit(16),	-- Stonehead
 									}),
-									ach(14680, {	-- Something for Everyone
-									--	TODO: add remaining crit to the places From Whence They Come
-										crit(9, {	-- Mystery Mirrors
-										--	["achievementID"] = 14680,	-- Something for Everyone
-										}),
-										crit(12, {	-- Maldraxxian Army
-										--	["achievementID"] = 14680,	-- Something for Everyone
-										}),
-									}),
 									ach(14725),		-- We Happy Few
 								}),
 							}),
@@ -1341,6 +1332,18 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(61403, {	-- Ember Court: Maldraxxus Army
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 172964 },	-- Emeni
+									["coord"] = { 54.2, 69.3, 1536 },	-- Maldraxxus
+									["g"] = {
+										i(176140, {	-- Contract: Maldraxxian Army
+											crit(12, {	-- Maldraxxian Army
+												["achievementID"] = 14680,	-- Something for Everyone
+											}),
+										}),
+									},
+								}),
 								q(61399, {	-- Ember Court: Mortal Reminders
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
@@ -1360,6 +1363,18 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(176136, {	-- Contract: Mushroom Surprise!
 											crit(6, {	-- Mushroom Surprise
+												["achievementID"] = 14680,	-- Something for Everyone
+											}),
+										}),
+									},
+								}),
+								q(61400, {	-- Ember Court: Mystery Mirrors
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 172986 },	-- Simone
+									["coord"] = { 24.6, 50.2, 1525 },	-- Revendreth
+									["g"] = {
+										i(176127, {	-- Contract: Mystery Mirrors
+											crit(9, {	-- Mystery Mirrors
 												["achievementID"] = 14680,	-- Something for Everyone
 											}),
 										}),
