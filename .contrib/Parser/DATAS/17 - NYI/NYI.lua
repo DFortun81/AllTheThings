@@ -1877,7 +1877,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
 			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
 			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
-			un(NEVER_IMPLEMENTED, i(146795)),	-- Terrorfiend Greatcloak
 			un(NEVER_IMPLEMENTED, i(153397)),	-- Salt Starched Shawl
 			un(NEVER_IMPLEMENTED, i(156755)),	-- Drape of Revengeance
 			un(NEVER_IMPLEMENTED, i(154968)),	-- Drape of the Golden City
