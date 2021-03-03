@@ -229,13 +229,13 @@ _.Factions =
 	}),
 	tier(9, {	-- Shadowlands
 		faction(2413), 	-- Court of Harvesters
+		faction(2464), 	-- Court of Night
 		faction(2407),	-- The Ascended
 		faction(2439), 	-- The Avowed
 		faction(2410), 	-- The Undying Army
 		faction(2465),	-- The Wild Hunt
 		faction(2432),	-- Ve'nari
 		--[[ -- Single comments denote factions with collectible items tied to rep atm
-		--faction(2464), 	-- Court of Night
 		faction(2455),	-- Cryptkeeper Kassir
 		faction(2456), 	-- Droman Aliothe
 		faction(2457),	-- Grandmaster Vole

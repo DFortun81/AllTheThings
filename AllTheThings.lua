@@ -17478,14 +17478,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
--- app.events.COMPANION_LEARNED = function(...)
--- 	print("COMPANION_LEARNED", ...);
--- 	RefreshMountCollection();
--- end
--- app.events.COMPANION_UNLEARNED = function(...)
--- 	print("COMPANION_UNLEARNED", ...);
--- 	RefreshMountCollection();
--- end
 app.events.NEW_MOUNT_ADDED = function(...)
 	-- print("NEW_MOUNT_ADDED", ...);
 	RefreshMountCollection(...);

@@ -1178,12 +1178,10 @@ _.ExpansionFeatures =
 										crit(9),	-- Casual
 										crit(10),	-- Formal
 									}),
-									ach(14727),		-- Master of Ceremonies
+									ach(14727),	-- Master of Ceremonies
 									ach(14679, {	-- Party Palace
 										crit(9),	-- Staff: Maldraxxus Ambassador
 										crit(10),	-- Staff: Bastion Ambassador
-										crit(11),	-- Stock: Greeting Kits
-										crit(14),	-- Stock: Comfy Chairs
 									}),
 									ach(14724, {	-- People Pleaser
 										crit(1),	-- Baroness Vashj
@@ -1203,7 +1201,8 @@ _.ExpansionFeatures =
 										crit(15),	-- Sika
 										crit(16),	-- Stonehead
 									}),
-									ach(14725),		-- We Happy Few
+									ach(14680),	-- Something for Everyone
+									ach(14725),	-- We Happy Few
 								}),
 							}),
 							n(-908, {	-- Rewards
@@ -1262,6 +1261,18 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(181533, {	-- Stock: Anima Samples
 											crit(13, {	-- Stock: Anima Samples
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
+								q(61900, {	-- Comfy Chairs
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["g"] = {
+										i(181535, {	-- Stock: Comfy Chairs
+											crit(14, {	-- Stock: Comfy Chairs
 												["achievementID"] = 14679,	-- Party Palace
 											}),
 										}),
@@ -1454,6 +1465,18 @@ _.ExpansionFeatures =
 											crit(8, {	-- Staff: Ardenweald Ambassador
 												["achievementID"] = 14679,	-- Party Palace
 											}),
+										}),
+									},
+								}),
+								q(61894, {	-- Ember Court Ambassador 3 - ???
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["g"] = {
+										i(182342, {	-- Staff: Ambassador
+											-- crit(, {	-- Staff: ???
+											-- 	["achievementID"] = 14679,	-- Party Palace
+											-- }),
 										}),
 									},
 								}),
@@ -1696,6 +1719,18 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+								}),
+								q(61896, {	-- Undercover Security
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.0, 41.6, 1525 },	-- Revendreth
+									["g"] = {
+										i(181530, {	-- Stock: Greeting Kits
+											crit(11, {	-- Stock: Greeting Kits
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
 								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help

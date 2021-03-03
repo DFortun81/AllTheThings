@@ -1235,7 +1235,14 @@ _.ExpansionFeatures =
 										-- Quest starter created with Ascension crafting
 										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 									}),
+									i(180594),	-- Calloused Bone
+									i(180478),	-- Champion's Pelt
+									i(180479),	-- Charm of Fortitude
+									i(181145),	-- Charm of Persistence
 									i(181846),	-- Charm of Quickness
+									i(180477),	-- Elysian Feathers
+									i(180579),	-- Herald's Footpads
+									i(180595),	-- Nightforged Steel
 								},
 							}),
 							n(-943, {	-- Tier 1: First Steps
@@ -1376,6 +1383,15 @@ _.ExpansionFeatures =
 										i(184812),	-- Apolon's Bounty
 									},
 								}),
+								q(63171, {	-- Path of Ascension: Craven Corinth
+									-- ["sourceQuests"] = {  },	-- TODO: ?
+									["provider"] = { "n", 168485 },	-- Apolon
+									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+									["isWeekly"] = true,
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
 								q(62951, {	-- Path of Ascension: Kleia
 									-- ["sourceQuests"] = {  },	-- TODO: ?
 									["provider"] = { "n", 168485 },	-- Apolon
@@ -1394,10 +1410,55 @@ _.ExpansionFeatures =
 										i(184812),	-- Apolon's Bounty
 									},
 								}),
+								q(61371, {	-- Athanos
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating all available 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								-- q(, {	-- Mad Mortimer
+								-- 	-- TODO: not 100% sure of the requirements
+								-- 	["description"] = "Available after defeating all available 'Loyalty' difficulties.",
+								-- 	["provider"] = { "n", 168430 },	-- Dactylis
+								-- 	["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								-- }),
+								-- q(, {	-- [Follow up from Mad Mortimer]
+								-- 	["sourceQuests"] = {  },	-- Mad Mortimer
+								-- 	["provider"] = { "n", 168430 },	-- Dactylis
+								-- 	["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								-- }),
+								q(61367, {	-- Thran'tiok
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating all available 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								q(62052, {	-- Exiled by Paranoia
+									["sourceQuests"] = { 61367 },	-- Thran'tiok
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								}),
+								q(61478, {	-- Humble Beginnings
+									["sourceQuests"] = { 61371 },	-- Athanos
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+									["g"] = {
+										i(181471),	-- Humility's Guard (provided for quest)
+									},
+								}),
+								n(-908, {	-- Rewards
+									i(180815, {	-- Brightscale Hatchling
+										["description"] = "Defeat Nuuminuuru on 'Loyalty' difficulty.",
+									}),
+								}),
 							}),
 							n(-945, {	-- Tier 3: Continued Training
+								n(-908, {	-- Rewards
+								}),
 							}),
 							n(-946, {	-- Tier 4: Teachings of Wisdom
+								n(-908, {	-- Rewards
+								}),
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility
 								n(-908, {	-- Rewards
@@ -1716,13 +1777,6 @@ _.ExpansionFeatures =
 									},
 								}),
 							}),
-							-- TODO: do these need a sub-header?
-							i(180594),	-- Calloused Bone
-							i(180477),	-- Elysian Feathers
-							i(180478),	-- Champion's Pelt
-							i(180595),	-- Nightforged Steel
-							i(180579),	-- Herald's Footpads
-							i(180479),	-- Charm of Fortitude
 						},
 					}),
 					n(-948, {	-- Transport Network

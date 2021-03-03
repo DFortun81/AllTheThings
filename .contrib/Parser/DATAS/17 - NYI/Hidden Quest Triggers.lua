@@ -3300,6 +3300,7 @@ _.HiddenQuestTriggers =
 		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
 		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
+		q(61023),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty) + Received Phial of Serentiy Blueprint
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
@@ -3676,13 +3677,15 @@ _.HiddenQuestTriggers =
 		q(59489),	-- using Contract: Lost Chalice Band
 		q(59518),	-- using Contract: Venthyr Volunteers
 		q(59519),	-- using Contract: Venthyr Volunteers
-		-- q(),		-- using Contract: Maldraxxian Army
-		-- q(),		-- using Contract: Maldraxxian Army
+		q(59512),	-- using Contract: Maldraxxian Army
+		q(59513),	-- using Contract: Maldraxxian Army
 		q(59500),	-- using Contract: Mushroom Surprise
 		q(59501),	-- using Contract: Mushroom Surprise
 		q(59479),	-- using Contract: Mystery Mirrors
 		q(59480),	-- using Contract: Mystery Mirrors
 		q(61499),	-- using Stock: Anima Samples
+		q(61500),	-- using Stock: Comfy Chairs
+		q(61497),	-- using Stock: Greeting Kits
 		q(61502),	-- when using Invitation: Choofa
 		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
 		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
