@@ -1157,14 +1157,20 @@ _.ExpansionFeatures =
 										}),
 									}),
 									ach(14681, {	-- Dredger Academy
-										crit(1),	-- Ardenweald Etiquette
-										crit(3),	-- Maldraxxus Etiquette
-										crit(4),	-- Revendreth Etiquette
-										crit(6),	-- Dredbat Riding
+										crit(1, {	-- Ardenweald Etiquette
+										}),
+										crit(3, {	-- Maldraxxus Etiquette
+										}),
+										crit(4, {	-- Revendreth Etiquette
+										}),
+										crit(6, {	-- Dredbat Riding
+										}),
 									}),
 									ach(14683, {	-- Dredger Style
-										crit(5),	-- Thin Hair Cut
-										crit(9),	-- Short Sleeved Doublet
+										crit(5, {	-- Thin Hair Cut
+										}),
+										crit(9, {	-- Short Sleeved Doublet
+										}),
 									}),
 									ach(14726, {	-- It's Certainly Never Boring
 										crit(1),	-- Messy
@@ -1179,10 +1185,7 @@ _.ExpansionFeatures =
 										crit(10),	-- Formal
 									}),
 									ach(14727),	-- Master of Ceremonies
-									ach(14679, {	-- Party Palace
-										crit(9),	-- Staff: Maldraxxus Ambassador
-										crit(10),	-- Staff: Bastion Ambassador
-									}),
+									ach(14679),	-- Party Palace
 									ach(14724, {	-- People Pleaser
 										crit(1),	-- Baroness Vashj
 										crit(2),	-- Lady Moonberry
@@ -1228,6 +1231,7 @@ _.ExpansionFeatures =
 								i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 									["description"] = "A possible reward from Sika's Extravagant Tribute.",
 								}),
+								i(180961),	-- Silver-Bladed Ritual Dagger (Countess Extravagant Tribute)
 								i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
 								i(178897),	-- Stalwart Pauldron of Resolve (Polemarch Adrestes' Extravagant Tribute)
 								i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
@@ -1457,6 +1461,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
+									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["minReputation"] = { 2445, HONORED },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
@@ -1468,15 +1473,29 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
-								q(61894, {	-- Ember Court Ambassador 3 - ???
+								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
+									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
-										i(182342, {	-- Staff: Ambassador
-											-- crit(, {	-- Staff: ???
-											-- 	["achievementID"] = 14679,	-- Party Palace
-											-- }),
+										i(182342, {	-- Staff: Maldraxxus Ambassador
+											crit(9, {	-- Staff: Maldraxxus Ambassador
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
+								q(61895, {	-- Ember Court Ambassador 4 - Bastion
+									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["g"] = {
+										i(182343, {	-- Staff: Bastion Ambassador
+											crit(10, {	-- Staff: Bastion Ambassador
+												["achievementID"] = 14679,	-- Party Palace
+											}),
 										}),
 									},
 								}),
@@ -1508,6 +1527,11 @@ _.ExpansionFeatures =
 											i(184628),	-- Elder's Sacrificial Moonstone
 										}),
 									},
+								}),
+								q(62073, {	-- Restock: Band Shirts
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 								}),
 								q(62066, {	-- Restock: Dredger Pool
 									["repeatable"] = true,	-- it shows up as a blue ?

@@ -1438,6 +1438,11 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 168430 },	-- Dactylis
 									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
 								}),
+								q(62053, {	-- Necromantic Power
+									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
+									["provider"] = { "n", 173495 },	-- Karaxi the Defector
+									["coord"] = { 53.8, 48.8, 1536 },    -- Maldraxxus
+								}),
 								q(61478, {	-- Humble Beginnings
 									["sourceQuests"] = { 61371 },	-- Athanos
 									["provider"] = { "n", 168430 },	-- Dactylis

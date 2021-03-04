@@ -3621,6 +3621,8 @@ _.HiddenQuestTriggers =
 		q(59472),	-- when using "Contract: Traditional Theme"
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
+		q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
+		-- q( ),	-- when using "Staff: Ambassador" (Bastion)
 		q(59437),	-- when using "Staff: Bouncers"
 		q(59435),	-- when using "Staff: Dredger Decorators"
 		q(61498),	-- when using "Stock: Appetizers"
