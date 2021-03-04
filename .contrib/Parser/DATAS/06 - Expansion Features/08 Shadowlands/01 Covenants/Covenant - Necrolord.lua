@@ -61,7 +61,12 @@ _.ExpansionFeatures =
 							crit(31),	-- Drink to the Dead
 						}),
 						ach(14748, sharedData({["customCollect"] = "SL_COV_NEC" }, {	-- Wardrobe Makeover
-							crit(1),	-- Chef Hat
+							crit(1, {	-- Chef Hat
+								["cost"] = {
+									{ "i", 184039,  1 },	-- 1 Clean White Hat
+									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+								},
+							}),
 							crit(2, {	-- Dapper Top Hat
 								["cost"] = {
 									{ "i", 181799,  1 },	-- 1 Extra Large Hat
@@ -74,7 +79,12 @@ _.ExpansionFeatures =
 									{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 								},
 							}),
-							crit(4),	-- Egg Hat
+							crit(4, {	-- Egg Hat
+								["cost"] = {
+									{ "i", 184040, 1 },	-- 1 Broken Egg Shells
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(5, {	-- Flower Crown
 								["cost"] = {
 									{ "i", 183755, 1 },	-- 1 Aredenweald Wreath
@@ -140,7 +150,12 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(18),	-- Sticky Cat
+							crit(18, {	-- Sticky Cat
+								["cost"] = {
+									{ "i", 183829, 1 },	-- 1 Slime Cat
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(19),	-- Trained Corpselice
 							crit(20, {	-- Trustworthy Doll
 								["cost"] = {
@@ -148,15 +163,32 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(21),	-- Armor Plating
-							crit(22),	-- Back Mushrooms
+							crit(21, {	-- Armor Plating
+								["cost"] = {
+									{ "i", 183827, 1 },	-- 1 Blacksteel Backplate
+									{ "i", 171840, 5 },	-- 5 Porous Stone
+								},
+							}),
+							crit(22, {	-- Back Mushrooms
+								["cost"] = {
+									{ "i", 184224, 1 },	-- 1 Dapperling Seeds
+									{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
+									{ "i", 178061, 5 },	-- 5 Malleable Flesh
+								},
+							}),
 							crit(23, {	-- Collector Kash's Pack
 								["cost"] = {
 									{ "i", 183833, 1 },	-- 1 Kash's Bag of Junk
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(24),	-- Engineering Pack
+							crit(24, {	-- Engineering Pack
+								["cost"] = {
+									{ "i", 183752,  1 },	-- 1 Empty Nightcap Cask
+									{ "i", 180733, 10 },	-- 10 Luminous Flux
+									{ "i", 172934, 10 },	-- 10 Handful of Laestrite Bolts
+								},
+							}),
 							crit(25),	-- Plague Pack
 							crit(26, {	-- Safe Fall Pack
 								["cost"] = {
@@ -173,7 +205,12 @@ _.ExpansionFeatures =
 							crit(28),	-- Vestigial Wings
 							crit(29),	-- Barrel O' Fish
 							crit(30),	-- Underpowered Gravity Pack
-							crit(31),	-- Butterflies
+							crit(31, {	-- Butterflies
+								["cost"] = {
+									{ "i", 183828, 1 },	-- 1 Friendly Bugs
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(32),	-- Spare Weapon
 							crit(33, {	-- Faction Flag
 								["cost"] = {
@@ -215,7 +252,7 @@ _.ExpansionFeatures =
 						}),
 						ach(14753, {	-- It's a Wrap
 							["customCollect"] = "SL_COV_NEC",
-							["cost"] = { { "i", 178594, 100 } },
+							["cost"] = { { "i", 178594, 100 } },	-- 100 Anima-bound Wraps
 						}),
 					}),
 				}),
