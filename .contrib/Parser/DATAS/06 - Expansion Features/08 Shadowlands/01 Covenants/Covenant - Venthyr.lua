@@ -2360,7 +2360,7 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
 								}),
-								q(60147, {	-- Mirror Attunement: The Banewood
+								q(60160, {	-- Mirror Attunement: The Banewood
 									["sourceQuests"] = {
 										60060,	-- Mirror Attunement: Pridefall Hamlet
 										60147,	-- Mirror Attunement: The Eternal Terrace
