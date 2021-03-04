@@ -2022,6 +2022,54 @@ _.ExpansionFeatures =
 							i(180296),	-- Shrouded Necromancer Head
 							i(182211),	-- Stone Brick
 							n(VENDORS, {
+								n(174711, {	-- Freeman
+									["minReputation"] = { 2445, REVERED },
+									["coord"] = { 32.0, 41.2, 1525 },
+									["g"] = {
+										i(182371, {	-- Claws of the Court's Sentinels
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182380, {	-- Court Bodyguard's Cover
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182376, {	-- Court Guardian's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182377, {	-- Court Sinweaver's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182381, {	-- Court's Crystal
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182370, {	-- Crusader's Blade of the Ember Court
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182373, {	-- Ember Court Accuser's Stave
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(183974, {	-- Ember Court Ceremonial Dagger
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182375, {	-- Ember Court Duelist's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182372, {	-- Ember Court Gavel
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182379, {	-- Ember Court Sentry's Crossbow
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182369, {	-- Ornate Ember Court Dagger
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182374, {	-- Spiked Ember Court Stave
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182378, {	-- Winged Blade of the Ember Court
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+									},
+								}),
 								n(165453, {	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
