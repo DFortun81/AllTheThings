@@ -796,9 +796,11 @@ for key,value in pairs({
 			--TODO: [-922] = "Theater of Pain",						-- Theater of Pain
 			--TODO: [-923] = "Abomination Factory",					-- Abomination Factory (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			--TODO: [-925] = "Tier 1: Build A Buddy",				-- Abomination Factory (Necrolord) Tier 1
-			--TODO: [-926] = "Tier 2: Crafting Limbs",				-- Abomination Factory (Necrolord) Tier 2
-			--TODO: [-927] = "Tier 3: Bring Them to Life",			-- Abomination Factory (Necrolord) Tier 3
+			[-925] = "단계 1: 친구 만들기",							-- Abomination Factory (Necrolord) Tier 1
+			[-926] = "단계 2: 사지 제작",							-- Abomination Factory (Necrolord) Tier 2
+			[-927] = "단계 3: 생명의 탄생",							-- Abomination Factory (Necrolord) Tier 3
+			[-928] = "단계 4: 만들어낸 친구",							-- Abomination Factory (Necrolord) Tier 4
+			[-938] = "단계 5: 우정은 영원히",							-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
 			--TODO: [-929] = "Covenant: Night Fae",					-- Covenant: Night Fae

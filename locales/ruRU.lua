@@ -791,6 +791,8 @@ for key,value in pairs({
 			[-925] = "1-й уровень: Собери себе друга",				-- Abomination Factory (Necrolord) Tier 1
 			[-926] = "2-й уровень: А теперь добавим ножек",			-- Abomination Factory (Necrolord) Tier 2
 			[-927] = "3-й уровень: Встань и живи",					-- Abomination Factory (Necrolord) Tier 3
+			[-928] = "4-й уровень: Кованые друзья",					-- Abomination Factory (Necrolord) Tier 4
+			[-938] = "5-й уровень: Лучшие друзья навсегда",			-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
 			[-929] = "Ковенант: Ночной Народец",					-- Covenant: Night Fae

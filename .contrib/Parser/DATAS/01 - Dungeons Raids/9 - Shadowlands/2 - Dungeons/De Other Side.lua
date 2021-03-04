@@ -6,7 +6,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 	inst(1188, {	-- De Other Side
 		["coord"] = { 68.6, 66.5, 1565 },
 		["maps"] = {
-			1678,	-- De Other Side
+			1678,	-- De Other Side - Mechagon
 			1680,	-- De Other Side
 			1677,	-- The Heap
 			1679,	-- Zul'Gurub

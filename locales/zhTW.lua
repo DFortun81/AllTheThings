@@ -799,6 +799,8 @@ for key,value in pairs({
 			--TODO: [-925] = "Tier 1: Build A Buddy",				-- Abomination Factory (Necrolord) Tier 1
 			--TODO: [-926] = "Tier 2: Crafting Limbs",				-- Abomination Factory (Necrolord) Tier 2
 			--TODO: [-927] = "Tier 3: Bring Them to Life",			-- Abomination Factory (Necrolord) Tier 3
+			--TODO: [-928] = "Tier 4: Forged Friends",				-- Abomination Factory (Necrolord) Tier 4
+			--TODO: [-938] = "Tier 5: Best Fiends Forever",			-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
 			--TODO: [-929] = "Covenant: Night Fae",					-- Covenant: Night Fae
