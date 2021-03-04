@@ -1691,55 +1691,100 @@ _.ExpansionFeatures =
 									["description"] = "Becomes available after you research Abomination Factory Tier 3 in your sanctum.",
 								}),
 							}),
-							-- Tier 4: Forged Friends
-							-- Tier 5: Best Fiends Forever
+							n(-928, {	-- Tier 4: Forged Friends
+							}),
+							n(-938, {	-- Tier 5: Best Fiends Forever
+							}),
 						}),
 						n(-908, {	-- Rewards
-							["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
-							["g"] = {
-								i(184843, {	-- Salvaged Supplies
-									["description"] = "Rewarded by the Weekly Quests from your Constructs.",
-								}),
-								i(183744, {	-- Superior Parts
-									["description"] = "Rewarded by the Weekly Quests from your Constructs.",
-								}),
-								i(182507),	-- Stitched Conjurer's Cape
-								i(182505),	-- Stitched Conjurer's Cinch
-								i(182499),	-- Stitched Conjurer's Cowl
-								i(182502),	-- Stitched Conjurer's Gloves
-								i(182503),	-- Stitched Conjurer's Leggings
-								i(182504),	-- Stitched Conjurer's Mantle
-								i(182501),	-- Stitched Conjurer's Slippers
-								i(182500),	-- Stitched Conjurer's Tunic
-								i(182506),	-- Stitched Conjurer's Wristwraps
-								i(182482),	-- Stitched Harbinger's Chestguard
-								i(182484),	-- Stitched Harbinger's Crushers
-								i(182489),	-- Stitched Harbinger's Greatcloak
-								i(182481),	-- Stitched Harbinger's Greathelm
-								i(182485),	-- Stitched Harbinger's Greaves
-								i(182486),	-- Stitched Harbinger's Pauldrons
-								i(182483),	-- Stitched Harbinger's Stompers
-								i(182488),	-- Stitched Harbinger's Vambraces
-								i(182487),	-- Stitched Harbinger's Warbelt
-								i(182515),	-- Stitched Tactician's Bracers
-								i(182512),	-- Stitched Tactician's Chausses
-								i(182516),	-- Stitched Tactician's Drape
-								i(182508),	-- Stitched Tactician's Faceguard
-								i(182511),	-- Stitched Tactician's Gauntlets
-								i(182514),	-- Stitched Tactician's Girdle
-								i(182509),	-- Stitched Tactician's Hauberk
-								i(182510),	-- Stitched Tactician's Sabatons
-								i(182513),	-- Stitched Tactician's Spaulders
-								i(182497),	-- Stitched Wraith's Armguards
-								i(182496),	-- Stitched Wraith's Belt
-								i(182492),	-- Stitched Wraith's Boots
-								i(182494),	-- Stitched Wraith's Breeches
-								i(182498),	-- Stitched Wraith's Cloak
-								i(182491),	-- Stitched Wraith's Jerkin
-								i(182495),	-- Stitched Wraith's Shoulders
-								i(182493),	-- Stitched Wraith's Stranglers
-								i(182490),	-- Stitched Wraith's Visage
-							},
+							n(-925, {	-- Tier 1: Build a Buddy
+								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
+								["g"] = {
+									i(184843, {	-- Salvaged Supplies
+										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+									}),
+									i(183744, {	-- Superior Parts
+										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+									}),
+									i(182507),	-- Stitched Conjurer's Cape
+									i(182505),	-- Stitched Conjurer's Cinch
+									i(182499),	-- Stitched Conjurer's Cowl
+									i(182502),	-- Stitched Conjurer's Gloves
+									i(182503),	-- Stitched Conjurer's Leggings
+									i(182504),	-- Stitched Conjurer's Mantle
+									i(182501),	-- Stitched Conjurer's Slippers
+									i(182500),	-- Stitched Conjurer's Tunic
+									i(182506),	-- Stitched Conjurer's Wristwraps
+									i(182482),	-- Stitched Harbinger's Chestguard
+									i(182484),	-- Stitched Harbinger's Crushers
+									i(182489),	-- Stitched Harbinger's Greatcloak
+									i(182481),	-- Stitched Harbinger's Greathelm
+									i(182485),	-- Stitched Harbinger's Greaves
+									i(182486),	-- Stitched Harbinger's Pauldrons
+									i(182483),	-- Stitched Harbinger's Stompers
+									i(182488),	-- Stitched Harbinger's Vambraces
+									i(182487),	-- Stitched Harbinger's Warbelt
+									i(182515),	-- Stitched Tactician's Bracers
+									i(182512),	-- Stitched Tactician's Chausses
+									i(182516),	-- Stitched Tactician's Drape
+									i(182508),	-- Stitched Tactician's Faceguard
+									i(182511),	-- Stitched Tactician's Gauntlets
+									i(182514),	-- Stitched Tactician's Girdle
+									i(182509),	-- Stitched Tactician's Hauberk
+									i(182510),	-- Stitched Tactician's Sabatons
+									i(182513),	-- Stitched Tactician's Spaulders
+									i(182497),	-- Stitched Wraith's Armguards
+									i(182496),	-- Stitched Wraith's Belt
+									i(182492),	-- Stitched Wraith's Boots
+									i(182494),	-- Stitched Wraith's Breeches
+									i(182498),	-- Stitched Wraith's Cloak
+									i(182491),	-- Stitched Wraith's Jerkin
+									i(182495),	-- Stitched Wraith's Shoulders
+									i(182493),	-- Stitched Wraith's Stranglers
+									i(182490),	-- Stitched Wraith's Visage
+								},
+							}),
+							n(-938, {	-- Tier 5: Best Fiends Forever
+								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
+								["g"] = {
+									i(182543),	-- Duty-Bound Conjurer's Cape
+									i(182541),	-- Duty-Bound Conjurer's Cinch
+									i(182535),	-- Duty-Bound Conjurer's Cowl
+									i(182538),	-- Duty-Bound Conjurer's Gloves
+									i(182539),	-- Duty-Bound Conjurer's Leggings
+									i(182540),	-- Duty-Bound Conjurer's Mantle
+									i(182537),	-- Duty-Bound Conjurer's Slippers
+									i(182536),	-- Duty-Bound Conjurer's Tunic
+									i(182542),	-- Duty-Bound Conjurer's Wristwraps
+									i(182518),	-- Duty-Bound Harbinger's Chestguard
+									i(182520),	-- Duty-Bound Harbinger's Crushers
+									i(182525),	-- Duty-Bound Harbinger's Greatcloak
+									i(182517),	-- Duty-Bound Harbinger's Greathelm
+									i(182521),	-- Duty-Bound Harbinger's Greaves
+									i(182522),	-- Duty-Bound Harbinger's Pauldrons
+									i(182519),	-- Duty-Bound Harbinger's Stompers
+									i(182524),	-- Duty-Bound Harbinger's Vambraces
+									i(182523),	-- Duty-Bound Harbinger's Warbelt
+									i(182551),	-- Duty-Bound Tactician's Bracers
+									i(182548),	-- Duty-Bound Tactician's Chausses
+									i(182552),	-- Duty-Bound Tactician's Drape
+									i(182544),	-- Duty-Bound Tactician's Faceguard
+									i(182547),	-- Duty-Bound Tactician's Gauntlets
+									i(182550),	-- Duty-Bound Tactician's Girdle
+									i(182545),	-- Duty-Bound Tactician's Hauberk
+									i(182546),	-- Duty-Bound Tactician's Sabatons
+									i(182549),	-- Duty-Bound Tactician's Spaulders
+									i(182533),	-- Duty-Bound Wraith's Armguards
+									i(182532),	-- Duty-Bound Wraith's Belt
+									i(182528),	-- Duty-Bound Wraith's Boots
+									i(182530),	-- Duty-Bound Wraith's Breeches
+									i(182534),	-- Duty-Bound Wraith's Cloak
+									i(182527),	-- Duty-Bound Wraith's Jerkin
+									i(182531),	-- Duty-Bound Wraith's Shoulders
+									i(182529),	-- Duty-Bound Wraith's Stranglers
+									i(182526),	-- Duty-Bound Wraith's Visage
+								},
+							}),
 						}),
 					}),
 					n(-915, {	-- Anima Conductor
