@@ -106,6 +106,7 @@ i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
 i(139786);	-- Ancient Mana Crystal
+i(103644);	-- Blessed Bandage
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(180690);	-- Bottled Ash Cloud
