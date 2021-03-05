@@ -1571,6 +1571,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
+					["sourceQuests"] = { 60096 },	-- Wrath of the Lich King: To Northrend!
+					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
