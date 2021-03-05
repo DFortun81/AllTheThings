@@ -1176,10 +1176,18 @@ _.ExpansionFeatures =
 								["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 								["crs"] = { 168430 },	-- Dactylis
 								["g"] = {
+									q(62981, {	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184414 },	-- Blueprint: Artisan Tool Belt
+									}),
 									q(60946, {	-- Blueprint: Deep Echo Trident
 										-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
 										["description"] = "From defeating Kalisthene on 'Courage' difficulty.",
 										["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
+									}),
+									q(63000, {	-- Blueprint: Charm of Focus
+										-- Rewards: spell ?? (Crafting: Charm of Focus), unlocking ascension crafting recipe
+										["description"] = "From defeating Thran'tiok on 'Loyalty' difficulty.",
+										["provider"] = { "i", 181238 },	-- Blueprint: Charm of Fortitude
 									}),
 									q(60947, {	-- Blueprint: Charm of Fortitude
 										-- Rewards: spell 333266 (Crafting: Charm of Fortitude), unlocking ascension crafting recipe
@@ -1196,6 +1204,10 @@ _.ExpansionFeatures =
 										["description"] = "From defeating Alderyn and Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
 									}),
+									q(62971, {	-- Blueprint: Gilded Abacus
+										-- From defeating Echthra on Loyalty difficulty
+										["provider"] = { "i", 184411 },	-- Blueprint: Gilded Abacus
+									}),
 									q(62984, {	-- Blueprint: Medallion of Service
 										-- From defeating Echthra on Loyalty difficulty
 										["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
@@ -1203,6 +1215,10 @@ _.ExpansionFeatures =
 									q(60973, {	-- Blueprint: Phial of Serenity
 										-- From defeating Kalisthene on Loyalty difficulty
 										["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
+									}),
+									q(62928, {	-- Blueprint: Ring of Warding
+										-- Splinterbark Nightmare on Courage
+										["provider"] = { "i", 184348 },	-- Blueprint: Ring of Warding
 									}),
 									q(60975, {	-- Blueprint: Spiritforged Aegis
 										-- Quest starter is from defeating Craven Corinth on Courage difficulty
@@ -1212,6 +1228,10 @@ _.ExpansionFeatures =
 									q(62970, {	-- Blueprint: Steward Mail Pouch
 										-- From defeating Myn'ir and Alderyn on Loyalty difficulty
 										["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
+									}),
+									q(62997, {	-- Blueprint: Vial of Lichfrost
+										-- Thran'tiok on Courage
+										["provider"] = { "i", 184349 },	-- Blueprint: Vial of Lichfrost
 									}),
 									q(60945, {	-- Deep Echo Trident
 										["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
@@ -1235,8 +1255,13 @@ _.ExpansionFeatures =
 										-- Quest starter created with Ascension crafting
 										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 									}),
+									q(62996, {	-- Vial of Lichfrost
+										-- Quest starter created with Ascension crafting
+										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
+									}),
 									i(180594),	-- Calloused Bone
 									i(180478),	-- Champion's Pelt
+									i(181239),	-- Charm of Focus
 									i(180479),	-- Charm of Fortitude
 									i(181145),	-- Charm of Persistence
 									i(181846),	-- Charm of Quickness
@@ -1374,6 +1399,9 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-944, {	-- Tier 2: Sacred Trials
+								q(62223, {	-- Ascension Calling: Mikanikos
+									["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
+								}),
 								q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
 									-- ["sourceQuests"] = {  },	-- TODO: ?
 									["provider"] = { "n", 168485 },	-- Apolon
@@ -1410,26 +1438,50 @@ _.ExpansionFeatures =
 										i(184812),	-- Apolon's Bounty
 									},
 								}),
-								q(61371, {	-- Athanos
+								q(61373, {	-- Azaruux, the Realm Ender
 									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating all available 'Loyalty' difficulties.",
+									["description"] = "Available after defeating 9 'Courage' difficulties.",
 									["provider"] = { "n", 168430 },	-- Dactylis
 									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 								}),
-								-- q(, {	-- Mad Mortimer
-								-- 	-- TODO: not 100% sure of the requirements
-								-- 	["description"] = "Available after defeating all available 'Loyalty' difficulties.",
-								-- 	["provider"] = { "n", 168430 },	-- Dactylis
-								-- 	["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								-- }),
-								-- q(, {	-- [Follow up from Mad Mortimer]
-								-- 	["sourceQuests"] = {  },	-- Mad Mortimer
-								-- 	["provider"] = { "n", 168430 },	-- Dactylis
-								-- 	["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								-- }),
+								q(61371, {	-- Athanos
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								q(61478, {	-- Humble Beginnings
+									["sourceQuests"] = { 61371 },	-- Athanos
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+									["g"] = {
+										i(181471),	-- Humility's Guard (provided for quest)
+									},
+								}),
+								q(61372, {	-- Back to Him
+									["sourceQuests"] = { 61478 },	-- Humble Beginnings
+									["provider"] = { "n", 175295 },	-- Forgelite Sophone
+									["coord"] = { 51.6, 80.9, 1533 },    -- Bastion
+								}),
+								q(61363, {	-- Mad Mortimer
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								q(61436, {	-- Field Trip
+									["sourceQuests"] = { 61363 },	-- Mad Mortimer
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								}),
+								q(61364, {	-- Oozing with Oppotunity
+									["sourceQuests"] = { 61436 },	-- Field Trip
+									["provider"] = { "n", 172141 },	-- Mad Mortimer
+									["coord"] = { 59.2, 71.9, 1536 },    -- Maldraxxus
+								}),
 								q(61367, {	-- Thran'tiok
 									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating all available 'Loyalty' difficulties.",
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 									["provider"] = { "n", 168430 },	-- Dactylis
 									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 								}),
@@ -1443,17 +1495,17 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 173495 },	-- Karaxi the Defector
 									["coord"] = { 53.8, 48.8, 1536 },    -- Maldraxxus
 								}),
-								q(61478, {	-- Humble Beginnings
-									["sourceQuests"] = { 61371 },	-- Athanos
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-									["g"] = {
-										i(181471),	-- Humility's Guard (provided for quest)
-									},
+								q(61368, {	-- Filching Phylacteries
+									["sourceQuests"] = { 62053 },	-- Necromantic Power
+									["provider"] = { "n", 173495 },	-- Karaxi the Defector
+									["coord"] = { 59.7, 38.0, 1536 },    -- Maldraxxus
 								}),
 								n(-908, {	-- Rewards
 									i(180815, {	-- Brightscale Hatchling
 										["description"] = "Defeat Nuuminuuru on 'Loyalty' difficulty.",
+									}),
+									i(180761, {	-- Phalynx of Loyalty
+										["description"] = "Defeat Mad Mortimer on 'Loyalty' difficulty.",
 									}),
 								}),
 							}),

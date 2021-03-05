@@ -3290,17 +3290,26 @@ _.HiddenQuestTriggers =
 		q(60936),	-- Completed when crafting "Herald's Footpads" with Ascension Crafting
 		q(61054),	-- Completed when turning in quest 61473 (Sourcing Your Own Materials), Path of Ascension quest
 		q(60917),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Courage difficulty)
+		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
+		q(61023),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty) + Received Phial of Serentiy Blueprint
 		q(60918),	-- Looting Path of Ascension Victor's Chest (Echthra, Courage difficulty)
 		q(60919),	-- Looting Path of Ascension Victor's Chest (Alderyn and Myn'ir, Courage difficulty)
 		q(60921),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Courage difficulty)
-		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
-		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
 		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
-		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
+		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
+		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Pelagos)
+		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
+		q(61018),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Loyalty, Pelagos)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
 		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
-		q(61023),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty) + Received Phial of Serentiy Blueprint
+		q(60924),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Courage, Pelagos)
+		q(61017),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Loyalty, Pelagos)
+		q(60925),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Courage, Pelagos)
+		q(61016),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos)
+		q(63080),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos) [First time?]
+		q(60926),	-- Looting Path of Ascension Victor's Chest (Athanos, Courage, Pelagos)
+		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
@@ -3380,6 +3389,7 @@ _.HiddenQuestTriggers =
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
+		q(57603),	-- Triggered after recruiting Neena
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
