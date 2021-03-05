@@ -582,6 +582,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(29100, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29156 },	-- The Troll Incursion
@@ -993,6 +994,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1577,6 +1579,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

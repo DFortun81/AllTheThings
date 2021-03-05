@@ -987,6 +987,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29157 },	-- The Zandalari Menace
@@ -2218,6 +2219,7 @@ _.Zones =
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
+					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
