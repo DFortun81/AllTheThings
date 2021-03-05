@@ -3711,6 +3711,8 @@ _.HiddenQuestTriggers =
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 		q(62398),	-- learning Sinwrath illusion
+		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
+		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

@@ -1103,6 +1103,7 @@ _.ExpansionFeatures =
 						["maps"] = { 1644 },	-- Ember Court (scenario)
 						["g"] = {
 							n(ACHIEVEMENTS, {
+								ach(14749),	-- Rendle's Big Day
 								ach(14682, {	-- The Party Herald
 									title(433),	-- The Party Herald
 									ach(14723, {	-- Be Our Guest
@@ -1166,12 +1167,7 @@ _.ExpansionFeatures =
 										crit(6, {	-- Dredbat Riding
 										}),
 									}),
-									ach(14683, {	-- Dredger Style
-										crit(5, {	-- Thin Hair Cut
-										}),
-										crit(9, {	-- Short Sleeved Doublet
-										}),
-									}),
+									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
 										crit(1),	-- Messy
 										crit(2),	-- Clean
@@ -1184,8 +1180,8 @@ _.ExpansionFeatures =
 										crit(9),	-- Casual
 										crit(10),	-- Formal
 									}),
-									ach(14727),	-- Master of Ceremonies
-									ach(14679),	-- Party Palace
+									ach(14727),		-- Master of Ceremonies
+									ach(14679),		-- Party Palace
 									ach(14724, {	-- People Pleaser
 										crit(1),	-- Baroness Vashj
 										crit(2),	-- Lady Moonberry
@@ -1204,8 +1200,8 @@ _.ExpansionFeatures =
 										crit(15),	-- Sika
 										crit(16),	-- Stonehead
 									}),
-									ach(14680),	-- Something for Everyone
-									ach(14725),	-- We Happy Few
+									ach(14680),		-- Something for Everyone
+									ach(14725),		-- We Happy Few
 								}),
 							}),
 							n(-908, {	-- Rewards
@@ -1758,6 +1754,17 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help
+								q(62177, {	-- A Memorable Look
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182970, 1 } },	-- Burgleclipped Portrait
+									["g"] = {
+										crit(5, {	-- Thin Hair Cut
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
 								q(62174, {	-- A Proper Cover
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1899,6 +1906,17 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
 								}),
+								q(62172, {	-- Shortsleeved Doublet
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182712, 1 } },	-- Dredger's Short Sleeved Doublet
+									["g"] = {
+										crit(9, {	-- Short Sleeved Doublet
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
 								q(62176, {	-- The Spikey Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 								--	["repeatable"] = true,
@@ -1919,13 +1937,13 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(181537, {		-- Guest List Page											
 											crit(16, {		-- Third Guest List Page
-												["achievementID"] = 14679,
+												["achievementID"] = 14679,	-- Party Palace
 											}),
 										}),
 									},
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
 									["coord"] = { 50.3, 67.4, 1536 },	-- Maldraxxus
 									["g"] = {
@@ -1933,7 +1951,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61109, {	-- RSVP: Hunt-Captain Korayn
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
 									["coord"] = { 50.8, 70.4, 1565 },	-- Ardenweald
 									["g"] = {
@@ -1941,7 +1959,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61123, {	-- RSVP: Polemarch Adrestes
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
 									["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
 									["g"] = {
@@ -1949,55 +1967,68 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61059, {	-- RSVP: Rendle and Cudgelface
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
+									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests.  If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
 									["provider"] = { "n", 171190 },	-- Cudgelface
 									["coord"] = { 61.9, 77.0, 1700 },	-- Sinfall Depths
 									["g"] = {
+										q(62559, {	-- Sootible Hat: Crown of the Righteous
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
+											["g"] = {
+												crit(1, {	-- Crown of the Righteous
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62558, {	-- Sootible Hat: Fae Revel Masque
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
+											["g"] = {
+												crit(2, {	-- Fae Revel Masque
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62556, {	-- Sootible Hat: Pink Party Hat
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
+											["g"] = {
+												crit(3, {	-- Pink Party Hat
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62554, {	-- Sootible Hat: Red Noggin Candle
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
+											["g"] = {
+												crit(4, {	-- Red Noggin Candle
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
-									},
-								}),
-								q(62559, {	-- Sootible Hat: Crown of the Righteous
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(1, {	-- Crown of the Righteous
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62558, {	-- Sootible Hat: Fae Revel Masque
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(2, {	-- Fae Revel Masque
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62556, {	-- Sootible Hat: Pink Party Hat
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(3, {	-- Pink Party Hat
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62554, {	-- Sootible Hat: Red Noggin Candle
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(4, {	-- Red Noggin Candle
-											["achievementID"] = 14749,
-										}),
 									},
 								}),
 							}),
@@ -2554,7 +2585,7 @@ _.ExpansionFeatures =
 								q(60164, {	-- Mirror Attunement: Dominance Keep
 									["sourceQuests"] = {
 										60159,	-- Mirror Attunement: Halls of Atonement
-										60147,	-- Mirror Attunement: The Banewood
+										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
@@ -2562,7 +2593,7 @@ _.ExpansionFeatures =
 								q(60165, {	-- Mirror Attunement: Feeders' Thicket
 									["sourceQuests"] = {
 										60159,	-- Mirror Attunement: Halls of Atonement
-										60147,	-- Mirror Attunement: The Banewood
+										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
