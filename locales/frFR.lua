@@ -796,9 +796,11 @@ for key,value in pairs({
 			--TODO: [-922] = "Theater of Pain",						-- Theater of Pain
 			--TODO: [-923] = "Abomination Factory",					-- Abomination Factory (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			--TODO: [-925] = "Tier 1: Build A Buddy",				-- Abomination Factory (Necrolord) Tier 1
-			--TODO: [-926] = "Tier 2: Crafting Limbs",				-- Abomination Factory (Necrolord) Tier 2
-			--TODO: [-927] = "Tier 3: Bring Them to Life",			-- Abomination Factory (Necrolord) Tier 3
+			[-925] = "Palier 1: Partenaire recomposé",				-- Abomination Factory (Necrolord) Tier 1
+			[-926] = "Palier 2: Confection de membres",				-- Abomination Factory (Necrolord) Tier 2
+			[-927] = "Palier 3: Insufflation de vie",				-- Abomination Factory (Necrolord) Tier 3
+			[-928] = "Palier 4: Amis forgés de toutes pièces",		-- Abomination Factory (Necrolord) Tier 4
+			[-938] = "Palier 5: Meilleurs amis pour la vie",		-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
 			--TODO: [-929] = "Covenant: Night Fae",					-- Covenant: Night Fae

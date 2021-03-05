@@ -3222,7 +3222,8 @@ _.HiddenQuestTriggers =
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
 		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
-		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
+		q(62746),	-- Reaching Renown 19 Night Fae / unlocking Deepening Bond 4% stam increase
+		q(62747),	-- Reaching Renown 35 Night Fae / unlocking Deepening Bond 6% stam increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
@@ -3289,16 +3290,26 @@ _.HiddenQuestTriggers =
 		q(60936),	-- Completed when crafting "Herald's Footpads" with Ascension Crafting
 		q(61054),	-- Completed when turning in quest 61473 (Sourcing Your Own Materials), Path of Ascension quest
 		q(60917),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Courage difficulty)
+		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
+		q(61023),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty) + Received Phial of Serentiy Blueprint
 		q(60918),	-- Looting Path of Ascension Victor's Chest (Echthra, Courage difficulty)
 		q(60919),	-- Looting Path of Ascension Victor's Chest (Alderyn and Myn'ir, Courage difficulty)
 		q(60921),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Courage difficulty)
-		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
-		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
 		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
-		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
+		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
+		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Pelagos)
+		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
+		q(61018),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Loyalty, Pelagos)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
 		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
+		q(60924),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Courage, Pelagos)
+		q(61017),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Loyalty, Pelagos)
+		q(60925),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Courage, Pelagos)
+		q(61016),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos)
+		q(63080),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos) [First time?]
+		q(60926),	-- Looting Path of Ascension Victor's Chest (Athanos, Courage, Pelagos)
+		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
@@ -3355,6 +3366,7 @@ _.HiddenQuestTriggers =
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
+		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
@@ -3377,6 +3389,7 @@ _.HiddenQuestTriggers =
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
+		q(57603),	-- Triggered after recruiting Neena
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
@@ -3618,6 +3631,10 @@ _.HiddenQuestTriggers =
 		q(59472),	-- when using "Contract: Traditional Theme"
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
+		q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
+		-- q( ),	-- when using "Staff: Ambassador" (Bastion)
+		q(59437),	-- when using "Staff: Bouncers"
+		q(59435),	-- when using "Staff: Dredger Decorators"
 		q(61498),	-- when using "Stock: Appetizers"
 		q(59476),	-- when using "Contract: Mortal Reminders"
 		q(59477),	-- when using "Contract: Mortal Reminders"
@@ -3672,9 +3689,15 @@ _.HiddenQuestTriggers =
 		q(59489),	-- using Contract: Lost Chalice Band
 		q(59518),	-- using Contract: Venthyr Volunteers
 		q(59519),	-- using Contract: Venthyr Volunteers
+		q(59512),	-- using Contract: Maldraxxian Army
+		q(59513),	-- using Contract: Maldraxxian Army
 		q(59500),	-- using Contract: Mushroom Surprise
 		q(59501),	-- using Contract: Mushroom Surprise
+		q(59479),	-- using Contract: Mystery Mirrors
+		q(59480),	-- using Contract: Mystery Mirrors
 		q(61499),	-- using Stock: Anima Samples
+		q(61500),	-- using Stock: Comfy Chairs
+		q(61497),	-- using Stock: Greeting Kits
 		q(61502),	-- when using Invitation: Choofa
 		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
 		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
@@ -3687,6 +3710,9 @@ _.HiddenQuestTriggers =
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
+		q(62398),	-- learning Sinwrath illusion
+		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
+		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3742,6 +3768,7 @@ _.HiddenQuestTriggers =
 		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
+		q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
 		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"

@@ -137,6 +137,7 @@ i(139792);	-- Fruitful Bauble
 i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
+i(153188);	-- Greater Blessed Bandage
 i(19296);	-- Greater Darkmoon Prize
 i(62343);	-- Greater Inscription of Charged Lodestone
 i(62345);	-- Greater Inscription of Jagged Stone
@@ -177,6 +178,7 @@ i(141013);	-- Scroll of Town Portal: Shala'nir
 i(180684);	-- Sentinel Stonewing
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
+i(180410);	-- Simmiring Draft of Shadows
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner

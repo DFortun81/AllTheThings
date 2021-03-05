@@ -1002,32 +1002,31 @@ local function BuildGroups(parent, g, noRecur)
 	end
 end
 local function BuildSourceText(group, l)
-	if group.parent then
+	if group.sourceParent or group.parent then
 		if l < 1 then
-			return BuildSourceText(group.parent, l + 1);
+			return BuildSourceText(group.sourceParent or group.parent, l + 1);
 		else
-			return BuildSourceText(group.parent, l + 1) .. " > " .. (group.text or "*");
+			return BuildSourceText(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
 	end
 	return group.text or "*";
 end
 local function BuildSourceTextForChat(group, l)
-	if group.parent then
+	if group.sourceParent or group.parent then
 		if l < 1 then
-			return BuildSourceTextForChat(group.parent, l + 1);
+			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1);
 		else
-			return BuildSourceTextForChat(group.parent, l + 1) .. " -> " .. (group.text or "*");
+			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
-		return group.text or "*";
 	end
 	return "ATT";
 end
 local function BuildSourceTextForTSM(group, l)
-	if group.parent then
+	if group.sourceParent or group.parent then
 		if l < 1 or not group.text then
-			return BuildSourceTextForTSM(group.parent, l + 1);
+			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1);
 		else
-			return BuildSourceTextForTSM(group.parent, l + 1) .. "`" .. group.text;
+			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1) .. "`" .. group.text;
 		end
 	end
 	return L["TITLE"];
@@ -1042,7 +1041,7 @@ local function CloneData(data)
 		clone.g = {};
 		for i,group in ipairs(data.g) do
 			local child = CloneData(group);
-			-- child.parent = clone;
+			child.sourceParent = data;
 			rawset(child, "parent", clone);
 			tinsert(clone.g, child);
 		end
@@ -9107,6 +9106,7 @@ function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
 		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
 		if (item.f > 49 and item.f < 60) or	-- Misc. Filters on non-collectible items
+			item.f == 114 or				-- Key Items
 			item.f == 999 or				-- Event Items
 			app.Settings:GetFilter(item.f)	-- Filter applied via Settings (character-equippable or manually set)
 			then return true;
@@ -10405,9 +10405,10 @@ end
 local CreateRow;
 function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
+	local suffix = BuildSourceTextForChat(group, 1);-- .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
+	-- print("Popout Creation for",suffix)
 	-- clone initially so that nothing in the popout modifies the real data
 	local group = CloneData(group);
-	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
@@ -17512,14 +17513,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
--- app.events.COMPANION_LEARNED = function(...)
--- 	print("COMPANION_LEARNED", ...);
--- 	RefreshMountCollection();
--- end
--- app.events.COMPANION_UNLEARNED = function(...)
--- 	print("COMPANION_UNLEARNED", ...);
--- 	RefreshMountCollection();
--- end
 app.events.NEW_MOUNT_ADDED = function(...)
 	-- print("NEW_MOUNT_ADDED", ...);
 	RefreshMountCollection(...);

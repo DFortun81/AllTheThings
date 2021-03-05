@@ -33,6 +33,7 @@ _.Zones =
 								["repeatable"] = true,
 								["provider"] = { "n", 22429 },	-- Vekax
 								["coord"] = { 47.7, 18.8, 111 },
+								["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -51,6 +52,7 @@ _.Zones =
 								["repeatable"] = true,
 								["provider"] = { "n", 22429 },	-- Vekax
 								["coord"] = { 47.7, 18.8, 111 },
+								["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash

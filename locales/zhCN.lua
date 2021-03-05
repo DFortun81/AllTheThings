@@ -816,9 +816,11 @@ for key,value in pairs({
 			--TODO: [-922] = "Theater of Pain",						-- Theater of Pain
 			--TODO: [-923] = "Abomination Factory",					-- Abomination Factory (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			--TODO: [-925] = "Tier 1: Build A Buddy",				-- Abomination Factory (Necrolord) Tier 1
-			--TODO: [-926] = "Tier 2: Crafting Limbs",				-- Abomination Factory (Necrolord) Tier 2
-			--TODO: [-927] = "Tier 3: Bring Them to Life",			-- Abomination Factory (Necrolord) Tier 3
+			[-925] = "等级 1: 建造伙伴",								-- Abomination Factory (Necrolord) Tier 1
+			[-926] = "等级 2: 打造肢体",								-- Abomination Factory (Necrolord) Tier 2
+			[-927] = "等级 3: 给予生命",								-- Abomination Factory (Necrolord) Tier 3
+			[-928] = "等级 4: 铸就友谊",								-- Abomination Factory (Necrolord) Tier 4
+			[-938] = "等级 5: 永远的好魔友",							-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
 			--TODO: [-929] = "Covenant: Night Fae",					-- Covenant: Night Fae

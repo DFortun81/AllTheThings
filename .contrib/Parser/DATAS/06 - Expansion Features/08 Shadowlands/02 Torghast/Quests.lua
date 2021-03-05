@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 				}),
 				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 61248 },	-- Kaletar's Freedom
 					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 					["g"] = {
 						follower(1217),	-- Kaletar the Mender
@@ -142,10 +142,18 @@ _.ExpansionFeatures =
 				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 61322 },	-- Kythekios' Memory Stone
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
 						follower(1222),	-- Kythekios
+					},
+				}),
+				q(61425, {	-- Champion: Lloth'wellyn [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 61431 },	-- Lloth'wellyn's Breakthrough
+					["provider"] = { "n", 172241 },	-- Lloth'wellyn
+					["g"] = {
+						follower(1281),	-- Lloth'wellyn
 					},
 				}),
 				q(60651, {	-- Champion: Meatball [ALL]
@@ -311,16 +319,26 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157426 },	-- Indri the Treesinger
 				}),
+				q(61248, {	-- Kaletar's Freedom
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+				--	["provider"] = { "n", TODO },	-- Kaletar
+				}),
 				q(61429, {	-- Karynmwylyann's Roots
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-					-- ["provider"] = { "n",  },	-- Karynmwylyann
+					-- ["provider"] = { "n", TODO },	-- Karynmwylyann
 					-- Fracture Chambers 4 / 2
 				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-				--	["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n", TODO },	-- Kythekios
+				}),
+				q(61431, {	-- Lloth'wellyn's Breakthrough
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					-- ["provider"] = { "n", TODO },	-- Lloth'wellyn
 				}),
 				q(60573, {	-- Meatball's Revenge
 					["sourceQuests"] = { 60136 },	-- Into Torghast

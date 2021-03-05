@@ -1103,6 +1103,7 @@ _.ExpansionFeatures =
 						["maps"] = { 1644 },	-- Ember Court (scenario)
 						["g"] = {
 							n(ACHIEVEMENTS, {
+								ach(14749),	-- Rendle's Big Day
 								ach(14682, {	-- The Party Herald
 									title(433),	-- The Party Herald
 									ach(14723, {	-- Be Our Guest
@@ -1157,16 +1158,16 @@ _.ExpansionFeatures =
 										}),
 									}),
 									ach(14681, {	-- Dredger Academy
-										crit(1),	-- Ardenweald Etiquette
-										crit(3),	-- Maldraxxus Etiquette
-										crit(4),	-- Revendreth Etiquette
-										crit(5),	-- Sinrunner Riding
-										crit(6),	-- Dredbat Riding
+										crit(1, {	-- Ardenweald Etiquette
+										}),
+										crit(3, {	-- Maldraxxus Etiquette
+										}),
+										crit(4, {	-- Revendreth Etiquette
+										}),
+										crit(6, {	-- Dredbat Riding
+										}),
 									}),
-									ach(14683, {	-- Dredger Style
-										crit(5),	-- Thin Hair Cut
-										crit(9),	-- Short Sleeved Doublet
-									}),
+									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
 										crit(1),	-- Messy
 										crit(2),	-- Clean
@@ -1180,12 +1181,7 @@ _.ExpansionFeatures =
 										crit(10),	-- Formal
 									}),
 									ach(14727),		-- Master of Ceremonies
-									ach(14679, {	-- Party Palace
-										crit(9),	-- Staff: Maldraxxus Ambassador
-										crit(10),	-- Staff: Bastion Ambassador
-										crit(11),	-- Stock: Greeting Kits
-										crit(14),	-- Stock: Comfy Chairs
-									}),
+									ach(14679),		-- Party Palace
 									ach(14724, {	-- People Pleaser
 										crit(1),	-- Baroness Vashj
 										crit(2),	-- Lady Moonberry
@@ -1204,15 +1200,7 @@ _.ExpansionFeatures =
 										crit(15),	-- Sika
 										crit(16),	-- Stonehead
 									}),
-									ach(14680, {	-- Something for Everyone
-									--	TODO: add remaining crit to the places From Whence They Come
-										crit(9, {	-- Mystery Mirrors
-										--	["achievementID"] = 14680,	-- Something for Everyone
-										}),
-										crit(12, {	-- Maldraxxian Army
-										--	["achievementID"] = 14680,	-- Something for Everyone
-										}),
-									}),
+									ach(14680),		-- Something for Everyone
 									ach(14725),		-- We Happy Few
 								}),
 							}),
@@ -1220,12 +1208,13 @@ _.ExpansionFeatures =
 							--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
 								i(181323),	-- Blightclutched Greatstaff (Plague Deviser Marileth's Extravagant Tribute)
 								i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
-								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)
+								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)/(Choofa's Substantial Tribute)
 								i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
 								i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 								i(183107),	-- Char (pet)
+								i(181607),	-- Decree: Lady Moonberry's Esteem (Lady Moonberry's Substantial Tribute)
 								i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
-								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)
+								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)/(Choofa's Substantial Tribute)
 								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
 								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
@@ -1238,6 +1227,7 @@ _.ExpansionFeatures =
 								i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
 									["description"] = "A possible reward from Sika's Extravagant Tribute.",
 								}),
+								i(180961),	-- Silver-Bladed Ritual Dagger (Countess Extravagant Tribute)
 								i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
 								i(178897),	-- Stalwart Pauldron of Resolve (Polemarch Adrestes' Extravagant Tribute)
 								i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
@@ -1271,6 +1261,18 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(181533, {	-- Stock: Anima Samples
 											crit(13, {	-- Stock: Anima Samples
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
+								q(61900, {	-- Comfy Chairs
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["g"] = {
+										i(181535, {	-- Stock: Comfy Chairs
+											crit(14, {	-- Stock: Comfy Chairs
 												["achievementID"] = 14679,	-- Party Palace
 											}),
 										}),
@@ -1341,6 +1343,18 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(61403, {	-- Ember Court: Maldraxxus Army
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 172964 },	-- Emeni
+									["coord"] = { 54.2, 69.3, 1536 },	-- Maldraxxus
+									["g"] = {
+										i(176140, {	-- Contract: Maldraxxian Army
+											crit(12, {	-- Maldraxxian Army
+												["achievementID"] = 14680,	-- Something for Everyone
+											}),
+										}),
+									},
+								}),
 								q(61399, {	-- Ember Court: Mortal Reminders
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
@@ -1360,6 +1374,18 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(176136, {	-- Contract: Mushroom Surprise!
 											crit(6, {	-- Mushroom Surprise
+												["achievementID"] = 14680,	-- Something for Everyone
+											}),
+										}),
+									},
+								}),
+								q(61400, {	-- Ember Court: Mystery Mirrors
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 172986 },	-- Simone
+									["coord"] = { 24.6, 50.2, 1525 },	-- Revendreth
+									["g"] = {
+										i(176127, {	-- Contract: Mystery Mirrors
+											crit(9, {	-- Mystery Mirrors
 												["achievementID"] = 14680,	-- Something for Everyone
 											}),
 										}),
@@ -1431,12 +1457,39 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
+									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["minReputation"] = { 2445, HONORED },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
 										i(181524, {	-- Staff: Ambassador
 											crit(8, {	-- Staff: Ardenweald Ambassador
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
+								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
+									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["g"] = {
+										i(182342, {	-- Staff: Maldraxxus Ambassador
+											crit(9, {	-- Staff: Maldraxxus Ambassador
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
+								q(61895, {	-- Ember Court Ambassador 4 - Bastion
+									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["g"] = {
+										i(182343, {	-- Staff: Bastion Ambassador
+											crit(10, {	-- Staff: Bastion Ambassador
 												["achievementID"] = 14679,	-- Party Palace
 											}),
 										}),
@@ -1470,6 +1523,11 @@ _.ExpansionFeatures =
 											i(184628),	-- Elder's Sacrificial Moonstone
 										}),
 									},
+								}),
+								q(62073, {	-- Restock: Band Shirts
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 								}),
 								q(62066, {	-- Restock: Dredger Pool
 									["repeatable"] = true,	-- it shows up as a blue ?
@@ -1682,8 +1740,31 @@ _.ExpansionFeatures =
 									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
 								}),
+								q(61896, {	-- Undercover Security
+									["minReputation"] = { 2445, REVERED },
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.0, 41.6, 1525 },	-- Revendreth
+									["g"] = {
+										i(181530, {	-- Stock: Greeting Kits
+											crit(11, {	-- Stock: Greeting Kits
+												["achievementID"] = 14679,	-- Party Palace
+											}),
+										}),
+									},
+								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help
+								q(62177, {	-- A Memorable Look
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182970, 1 } },	-- Burgleclipped Portrait
+									["g"] = {
+										crit(5, {	-- Thin Hair Cut
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
 								q(62174, {	-- A Proper Cover
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1804,6 +1885,17 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(62221, {	-- My Own Death Pony!
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183842, 1 } },	-- Sinrunner Pony Reins
+									["g"] = {
+										crit(5, {	-- Sinrunner Riding
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 								q(61762, {	-- Making a Smarter Dredger
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
@@ -1813,6 +1905,17 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+								}),
+								q(62172, {	-- Shortsleeved Doublet
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 182712, 1 } },	-- Dredger's Short Sleeved Doublet
+									["g"] = {
+										crit(9, {	-- Short Sleeved Doublet
+											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
 								}),
 								q(62176, {	-- The Spikey Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1834,13 +1937,13 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(181537, {		-- Guest List Page											
 											crit(16, {		-- Third Guest List Page
-												["achievementID"] = 14679,
+												["achievementID"] = 14679,	-- Party Palace
 											}),
 										}),
 									},
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
 									["coord"] = { 50.3, 67.4, 1536 },	-- Maldraxxus
 									["g"] = {
@@ -1848,7 +1951,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61109, {	-- RSVP: Hunt-Captain Korayn
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
 									["coord"] = { 50.8, 70.4, 1565 },	-- Ardenweald
 									["g"] = {
@@ -1856,7 +1959,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61123, {	-- RSVP: Polemarch Adrestes
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
 									["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
 									["g"] = {
@@ -1864,55 +1967,68 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61059, {	-- RSVP: Rendle and Cudgelface
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
+									["sourceQuests"] = { 61943 },	-- Court Influencer
+									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests.  If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
 									["provider"] = { "n", 171190 },	-- Cudgelface
 									["coord"] = { 61.9, 77.0, 1700 },	-- Sinfall Depths
 									["g"] = {
+										q(62559, {	-- Sootible Hat: Crown of the Righteous
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
+											["g"] = {
+												crit(1, {	-- Crown of the Righteous
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62558, {	-- Sootible Hat: Fae Revel Masque
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
+											["g"] = {
+												crit(2, {	-- Fae Revel Masque
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62556, {	-- Sootible Hat: Pink Party Hat
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
+											["g"] = {
+												crit(3, {	-- Pink Party Hat
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
+										q(62554, {	-- Sootible Hat: Red Noggin Candle
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+										--	["sourceQuests"] = {  },	-- TODO: unknown
+											["repeatable"] = true,
+											["provider"] = { "n", 165302 },	-- Rendle
+											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
+											["g"] = {
+												crit(4, {	-- Red Noggin Candle
+													["achievementID"] = 14749,	-- Rendle's Big Day
+												}),
+											},
+										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
-									},
-								}),
-								q(62559, {	-- Sootible Hat: Crown of the Righteous
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(1, {	-- Crown of the Righteous
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62558, {	-- Sootible Hat: Fae Revel Masque
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(2, {	-- Fae Revel Masque
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62556, {	-- Sootible Hat: Pink Party Hat
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(3, {	-- Pink Party Hat
-											["achievementID"] = 14749,
-										}),
-									},
-								}),
-								q(62554, {	-- Sootible Hat: Red Noggin Candle
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
-									["provider"] = { "n", 165302 },	-- Rendle
-									["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
-									["repeatable"] = true,
-									["g"] = {
-										crit(4, {	-- Red Noggin Candle
-											["achievementID"] = 14749,
-										}),
 									},
 								}),
 							}),
@@ -1961,6 +2077,54 @@ _.ExpansionFeatures =
 							i(180296),	-- Shrouded Necromancer Head
 							i(182211),	-- Stone Brick
 							n(VENDORS, {
+								n(174711, {	-- Freeman
+									["minReputation"] = { 2445, REVERED },
+									["coord"] = { 32.0, 41.2, 1525 },
+									["g"] = {
+										i(182371, {	-- Claws of the Court's Sentinels
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182380, {	-- Court Bodyguard's Cover
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182376, {	-- Court Guardian's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182377, {	-- Court Sinweaver's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182381, {	-- Court's Crystal
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182370, {	-- Crusader's Blade of the Ember Court
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182373, {	-- Ember Court Accuser's Stave
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(183974, {	-- Ember Court Ceremonial Dagger
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182375, {	-- Ember Court Duelist's Blade
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182372, {	-- Ember Court Gavel
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182379, {	-- Ember Court Sentry's Crossbow
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182369, {	-- Ornate Ember Court Dagger
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182374, {	-- Spiked Ember Court Stave
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+										i(182378, {	-- Winged Blade of the Ember Court
+											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+										}),
+									},
+								}),
 								n(165453, {	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
@@ -2227,7 +2391,7 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
 								}),
-								q(60147, {	-- Mirror Attunement: The Banewood
+								q(60160, {	-- Mirror Attunement: The Banewood
 									["sourceQuests"] = {
 										60060,	-- Mirror Attunement: Pridefall Hamlet
 										60147,	-- Mirror Attunement: The Eternal Terrace
@@ -2421,7 +2585,7 @@ _.ExpansionFeatures =
 								q(60164, {	-- Mirror Attunement: Dominance Keep
 									["sourceQuests"] = {
 										60159,	-- Mirror Attunement: Halls of Atonement
-										60147,	-- Mirror Attunement: The Banewood
+										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
@@ -2429,7 +2593,7 @@ _.ExpansionFeatures =
 								q(60165, {	-- Mirror Attunement: Feeders' Thicket
 									["sourceQuests"] = {
 										60159,	-- Mirror Attunement: Halls of Atonement
-										60147,	-- Mirror Attunement: The Banewood
+										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches

@@ -179,30 +179,55 @@ _.Zones =
 					["questID"] = 60956,
 					["isDaily"] = true,
 					["coord"] = { 38.4, 29.8, 1525 },
+					["g"] = {
+						i(182712, {	-- Dredger's Short-Sleeved Doublet
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(354116, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60705,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 35.8, 67.5, 1525 },
+					["g"] = {
+						i(182712, {	-- Dredger's Short-Sleeved Doublet
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(354121, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60951,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
+					["g"] = {
+						i(182712, {	-- Dredger's Short-Sleeved Doublet
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(354122, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60952,
 					["isDaily"] = true,
 					["coord"] = { 66.6, 36.3, 1525 },
+					["g"] = {
+						i(182712, {	-- Dredger's Short-Sleeved Doublet
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(354123, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60953,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
+					["g"] = {
+						i(182712, {	-- Dredger's Short-Sleeved Doublet
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(358318, {	-- R. Suavel Dredger Portrait
 					i(182971, {	-- Fabius's Portrait
@@ -283,6 +308,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 27.7, 48.7, 1525 },
 					["crs"] = { 169993 },	-- Lord Scowl
+					["g"] = {
+						i(182970, {	-- Burgleclipped Portrait
+							["customCollect"] = "SL_COV_VEN",
+						}),
+					},
 				}),
 				o(353797, {	-- Stone Legion Supplies
 					--TODO: ["questID"] = xxxxx,

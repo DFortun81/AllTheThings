@@ -238,6 +238,7 @@ _.Zones =
 					["questID"] = 58633,
 					["isDaily"] = true,
 					["coord"] = { 75.8, 61.4, 1525 },
+					["cost"] = { { "i", 174378, 4 } },	-- 4 Mortegore Scroll
 					["g"] = {
 						crit(9, {	-- Lord Mortegore
 							["achievementID"] = 14310,	-- Adventurer of Revendreth

@@ -25,7 +25,21 @@ _.Zones =
 				i(178878),	-- Greater Martial Spirit (Epic)
 				i(180781, {	-- Pattern: Pink Party Hat
 					["crs"] = {
+						172389,	-- Acrid Runoff
 						165014,	-- Animated Plague
+						171292,	-- Blustery Boil
+						165027,	-- Burning Extract
+						165015,	-- Colossal Goo
+						166438,	-- Colossal Plasma
+						157509,	-- Compressed Plague
+						167923,	-- Diseased Remnant
+						157307,	-- Gelloh
+						166358,	-- Green Slime
+						167948,	-- Infectious Monstrosity
+						171142,	-- Prodigious Animate
+						166335,	-- Slime Giant
+						171289,	-- Turbulent Juice
+						157309,	-- Violet Mistake
 					},
 				}),
 				i(180532),	-- Laestrite Lockbox
