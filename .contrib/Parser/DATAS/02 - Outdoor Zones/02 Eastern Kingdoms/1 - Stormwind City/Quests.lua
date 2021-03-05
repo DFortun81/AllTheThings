@@ -869,6 +869,11 @@ _.Zones =
 					["description"] = "This quest is automatically granted to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
+				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(58909, {	-- License to Ride
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 58908 },	-- Finding Your Way (A)
