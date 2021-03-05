@@ -9072,6 +9072,7 @@ function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
 		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
 		if (item.f > 49 and item.f < 60) or	-- Misc. Filters on non-collectible items
+			item.f == 114 or				-- Key Items
 			item.f == 999 or				-- Event Items
 			app.Settings:GetFilter(item.f)	-- Filter applied via Settings (character-equippable or manually set)
 			then return true;
