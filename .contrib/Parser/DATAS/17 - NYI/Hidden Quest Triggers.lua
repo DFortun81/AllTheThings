@@ -3537,7 +3537,15 @@ _.HiddenQuestTriggers =
 		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
 		q(62111),	-- picked up when entering the Ember Court for the week — for "Drezgruda"
 		q(62134),	-- picked up when entering the Ember Court for the week — for "Lower Your Standards"
+		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"
+		q(62117),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
+		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
+		q(62128),	-- picked up when entering the Ember Court for the week — for "Concert Kick-Off"
+		q(62129),	-- picked up when entering the Ember Court for the week — for "Dance For Love"
+		q(62139),	-- picked up when entering the Ember Court for the week — for "Knockerbock"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60957),	-- "Ansel's Lucky Violin," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
@@ -3561,6 +3569,9 @@ _.HiddenQuestTriggers =
 		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62492),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
+		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
+		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
@@ -3708,6 +3719,7 @@ _.HiddenQuestTriggers =
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
+		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 		q(62398),	-- learning Sinwrath illusion

@@ -208,6 +208,7 @@ i(182067);	-- Antique Duelist's Rapier
 i(182021);	-- Antique Kyrian Javelin
 i(182043);	-- Antique Necromancer's Staff
 i(181991);	-- Antique Stalker's Bow
+i(183919);	-- Ashen Core
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(174741);	-- Bell of Remembrance
@@ -287,6 +288,7 @@ i(169252);	-- Resonant Pearl
 i(18149);	-- Rune of Recall
 i(146696);	-- Rusted Legplates of Mephistroth
 i(147437);	-- Satchel of Starweave and Shadowcloth
+i(183912);	-- Scorched Mirror Fragment
 i(157539);	-- Scroll of Storm Control
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
@@ -307,6 +309,7 @@ i(146905);	-- Sentinax Beacon of the Firestorm
 i(146911);	-- Sentinax Beacon of the Greater Firestorm
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
+i(182097);	-- Shrouded Mirror Shard
 i(168817);	-- Siphoning Crystal
 i(118384);	-- Sliver of Iron (N)
 i(118385);	-- Sliver of Iron (H)
@@ -374,6 +377,7 @@ i(171315); 	-- Reuse me (MTMM)
 -- "Toy"
 i(184505);	-- "Adorable Ascended" Costume
 i(180372);	-- Amalgamation of Sin
+i(180485);	-- Ansel's Lucky Violin
 i(180979);	-- Artisan's Large Satchel
 i(180976);	-- Artisan's Satchel
 i(180983);	-- Artisan's Stuffed Satchel
@@ -383,6 +387,7 @@ i(171209);	-- Blooded Satchel
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
+i(180486);	-- Chiu's Lute
 i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
@@ -408,6 +413,7 @@ i(173781);	-- Lost Watermelon
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(183734);	-- Mysteriously Thrumming Orb
+i(180484);	-- Noko's Flute
 i(180981);	-- Novice's Large Satchel
 i(180989);	-- Novice's Overflowing Satchel
 i(180974);	-- Novice's Satchel

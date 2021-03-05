@@ -1213,11 +1213,14 @@ _.ExpansionFeatures =
 								i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
 								i(183107),	-- Char (pet)
 								i(181607),	-- Decree: Lady Moonberry's Esteem (Lady Moonberry's Substantial Tribute)
-								i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)
-								i(179548),	-- Elderwood Gavel (Droman Aliothe's Extravagant Tribute)/(Choofa's Substantial Tribute)
+								i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)/(Hunt-Captain Korayn's Extravagant Tribute)
+								i(179548),	-- Elderwood Gavel (Choofa's Substantial Tribute)/(Droman Aliothe's Extravagant Tribute)/(Hunt-Captain Korayn's Extravagant Tribute)
 								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
 								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
+								i(181618),	-- Gorm Quishe Platter (Hunt-Captain Korayn's Extravagant Tribute)
+								i(179509),	-- Grove Warden's Edge (Hunt-Captain Korayn's Extravagant Tribute)
 								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
+								i(181620),	-- Hard Boiled Gorm Egg (Hunt-Captain Korayn's Extravagant Tribute)
 								i(183713),	-- Kassir's Crypt Mantle (Cryptkeeper Kassir's Extravagant Tribute - got when i hit Best Friend with him, not sure if that was just luck)
 								i(181615),	-- Marching an Army (Alexandros Mograine's Tribute)
 								i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
@@ -1457,8 +1460,8 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
-									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["minReputation"] = { 2445, HONORED },
+									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
@@ -1470,8 +1473,8 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
-									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["minReputation"] = { 2445, REVERED },
+									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
@@ -1483,8 +1486,8 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61895, {	-- Ember Court Ambassador 4 - Bastion
-									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["minReputation"] = { 2445, REVERED },
+									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
 									["g"] = {
