@@ -1619,6 +1619,7 @@ _.ExpansionFeatures =
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
 									["provider"] = { "n", 162151 },    -- Neena
+									["cost"] = { { "i", 184354, 1 } },	-- 1 Soul Harvester Key (for opening Neena's Cage)
 									["coord"] = { 69.3, 40.6, 1536 },
 								}),
 								q(62194, {	-- Fighting Words
@@ -1679,6 +1680,9 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
+							}),
+							i(184354, {-- Soul Harvester Key
+								["crs"] = { 175510 },	-- Soul Harvester Anka
 							}),
 						}),
 						n(-927, {	-- Tier 3: Bring Them to Life
