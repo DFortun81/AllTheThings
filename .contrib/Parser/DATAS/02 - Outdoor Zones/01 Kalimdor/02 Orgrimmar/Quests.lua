@@ -987,6 +987,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29157 },	-- The Zandalari Menace
@@ -1352,6 +1353,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is available to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_HORDE },
+				}),
+				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(60345, {	-- License to Ride
 					["customCollect"] = "NPE",	-- New Player Experience
@@ -2207,6 +2213,13 @@ _.Zones =
 						i(18798),	-- Horn of the Swift Gray Wolf
 						i(18797),	-- Horn of the Swift Timber Wolf
 					},
+				}),
+				q(60963, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
+					["sourceQuests"] = { 60097 },	-- Wrath of the Lich King: To Northrend!
+					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

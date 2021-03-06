@@ -497,7 +497,6 @@ _.Zones =
 						i(52970),	-- Fickle Belt
 						i(131846),	-- Fickle Cord
 						i(52941),	-- Jealousy's Edge
-						i(52938),	-- Jealousy's Edge [Yes, there are two.  Both are awarded on completion.]
 					},
 				}),
 				q(25203, {	-- What Kind of Name is Chip, Anyway? [Male Version]

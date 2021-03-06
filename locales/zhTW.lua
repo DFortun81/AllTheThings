@@ -1164,6 +1164,9 @@ for key,value in pairs({
 				--TODO: [-1433957] = "Broken Mirror C-1",			-- Broken Mirror
 				--TODO: [-1433958] = "Broken Mirror C-2",			-- Broken Mirror
 				--TODO: [-1433959] = "Broken Mirror C-3",			-- Broken Mirror
+				--TODO: [-1433960] = "Broken Mirror D-1",			-- Broken Mirror
+				--TODO: [-1433961] = "Broken Mirror D-2",			-- Broken Mirror
+				--TODO: [-1433962] = "Broken Mirror D-3",			-- Broken Mirror
 })
 do a[key] = value; end
 
@@ -2839,6 +2842,9 @@ for key,value in pairs({
 	--TODO: [357230] = "Forgotten Chest",							-- B-1
 	--TODO: [357231] = "Forgotten Chest",							-- B-2
 	--TODO: [357232] = "Forgotten Chest",							-- B-3
+	--TODO: [357233] = "Forgotten Chest",							-- D-1
+	--TODO: [357234] = "Forgotten Chest",							-- D-3
+	--TODO: [357235] = "Forgotten Chest",							-- D-2
 	--TODO: [357236] = "Forgotten Chest",							-- A-1
 	--TODO: [357237] = "Forgotten Chest",							-- A-2
 	--TODO: [357238] = "Forgotten Chest",							-- A-3
