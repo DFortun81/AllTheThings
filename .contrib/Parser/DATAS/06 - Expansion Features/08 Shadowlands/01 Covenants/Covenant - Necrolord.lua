@@ -1324,15 +1324,18 @@ _.ExpansionFeatures =
 									["title"] = "Construct Body: Flytrap",
 								}),
 								q(57608, {
+									["sourceQuests"] = { 61635 },	-- Troubled Souls
 									["title"] = "Construct Body: Gas Bag",
 								}),
 								q(58416, {
+									["sourceQuests"] = { 61635 },	-- Troubled Souls
 									["title"] = "Construct Body: Guillotine",
 								}),
 								q(58411, {
 									["title"] = "Construct Body: Iron Phillip",
 								}),
 								q(60216, {
+									["sourceQuests"] = { 61635 },	-- Troubled Souls
 									["title"] = "Construct Body: Mama Tomalin",
 								}),
 								q(57611, {
@@ -1365,8 +1368,8 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						n(QUESTS, {
-							n(-925, {	-- Tier 1: Build a Buddy
+						n(-925, {	-- Tier 1: Build a Buddy
+							n(QUESTS, {
 								q(61510, {	-- A Bountiful Haul
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },    -- Chordy
@@ -1556,7 +1559,56 @@ _.ExpansionFeatures =
 									["coord"] = { 24.2, 38.8, 1536 },
 								}),
 							}),
-							n(-926, {	-- Tier 2: Crafting Limbs
+							n(-908, {	-- Rewards
+								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
+								["g"] = {
+									i(184843, {	-- Salvaged Supplies
+										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+									}),
+									i(183744, {	-- Superior Parts
+										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+									}),
+									i(182507),	-- Stitched Conjurer's Cape
+									i(182505),	-- Stitched Conjurer's Cinch
+									i(182499),	-- Stitched Conjurer's Cowl
+									i(182502),	-- Stitched Conjurer's Gloves
+									i(182503),	-- Stitched Conjurer's Leggings
+									i(182504),	-- Stitched Conjurer's Mantle
+									i(182501),	-- Stitched Conjurer's Slippers
+									i(182500),	-- Stitched Conjurer's Tunic
+									i(182506),	-- Stitched Conjurer's Wristwraps
+									i(182482),	-- Stitched Harbinger's Chestguard
+									i(182484),	-- Stitched Harbinger's Crushers
+									i(182489),	-- Stitched Harbinger's Greatcloak
+									i(182481),	-- Stitched Harbinger's Greathelm
+									i(182485),	-- Stitched Harbinger's Greaves
+									i(182486),	-- Stitched Harbinger's Pauldrons
+									i(182483),	-- Stitched Harbinger's Stompers
+									i(182488),	-- Stitched Harbinger's Vambraces
+									i(182487),	-- Stitched Harbinger's Warbelt
+									i(182515),	-- Stitched Tactician's Bracers
+									i(182512),	-- Stitched Tactician's Chausses
+									i(182516),	-- Stitched Tactician's Drape
+									i(182508),	-- Stitched Tactician's Faceguard
+									i(182511),	-- Stitched Tactician's Gauntlets
+									i(182514),	-- Stitched Tactician's Girdle
+									i(182509),	-- Stitched Tactician's Hauberk
+									i(182510),	-- Stitched Tactician's Sabatons
+									i(182513),	-- Stitched Tactician's Spaulders
+									i(182497),	-- Stitched Wraith's Armguards
+									i(182496),	-- Stitched Wraith's Belt
+									i(182492),	-- Stitched Wraith's Boots
+									i(182494),	-- Stitched Wraith's Breeches
+									i(182498),	-- Stitched Wraith's Cloak
+									i(182491),	-- Stitched Wraith's Jerkin
+									i(182495),	-- Stitched Wraith's Shoulders
+									i(182493),	-- Stitched Wraith's Stranglers
+									i(182490),	-- Stitched Wraith's Visage
+								},
+							}),
+						}),
+						n(-926, {	-- Tier 2: Crafting Limbs
+							n(QUESTS, {
 								q(62244, {	-- Digging Around
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
@@ -1628,7 +1680,9 @@ _.ExpansionFeatures =
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 							}),
-							n(-927, {	-- Tier 3: Bring Them to Life
+						}),
+						n(-927, {	-- Tier 3: Bring Them to Life
+							n(QUESTS, {
 								q(59043, {	-- Baker's Dozen
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
@@ -1691,60 +1745,29 @@ _.ExpansionFeatures =
 									["description"] = "Becomes available after you research Abomination Factory Tier 3 in your sanctum.",
 								}),
 							}),
-							n(-928, {	-- Tier 4: Forged Friends
-							}),
-							n(-938, {	-- Tier 5: Best Fiends Forever
+							n(VENDORS, {
+								n(161678, {	-- Mana Tomalin
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["g"] = {
+										i(184040, {	-- Broken Egg Shells
+											["sourceQuests"] = { 59043 },	-- Baker's Dozen (assume first completion since daily)
+										}),
+										i(184039),	-- Clean White Hat
+										i(183790),	-- Platter Master Stue
+									},
+								})
 							}),
 						}),
-						n(-908, {	-- Rewards
-							n(-925, {	-- Tier 1: Build a Buddy
-								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
-								["g"] = {
-									i(184843, {	-- Salvaged Supplies
-										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
-									}),
-									i(183744, {	-- Superior Parts
-										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
-									}),
-									i(182507),	-- Stitched Conjurer's Cape
-									i(182505),	-- Stitched Conjurer's Cinch
-									i(182499),	-- Stitched Conjurer's Cowl
-									i(182502),	-- Stitched Conjurer's Gloves
-									i(182503),	-- Stitched Conjurer's Leggings
-									i(182504),	-- Stitched Conjurer's Mantle
-									i(182501),	-- Stitched Conjurer's Slippers
-									i(182500),	-- Stitched Conjurer's Tunic
-									i(182506),	-- Stitched Conjurer's Wristwraps
-									i(182482),	-- Stitched Harbinger's Chestguard
-									i(182484),	-- Stitched Harbinger's Crushers
-									i(182489),	-- Stitched Harbinger's Greatcloak
-									i(182481),	-- Stitched Harbinger's Greathelm
-									i(182485),	-- Stitched Harbinger's Greaves
-									i(182486),	-- Stitched Harbinger's Pauldrons
-									i(182483),	-- Stitched Harbinger's Stompers
-									i(182488),	-- Stitched Harbinger's Vambraces
-									i(182487),	-- Stitched Harbinger's Warbelt
-									i(182515),	-- Stitched Tactician's Bracers
-									i(182512),	-- Stitched Tactician's Chausses
-									i(182516),	-- Stitched Tactician's Drape
-									i(182508),	-- Stitched Tactician's Faceguard
-									i(182511),	-- Stitched Tactician's Gauntlets
-									i(182514),	-- Stitched Tactician's Girdle
-									i(182509),	-- Stitched Tactician's Hauberk
-									i(182510),	-- Stitched Tactician's Sabatons
-									i(182513),	-- Stitched Tactician's Spaulders
-									i(182497),	-- Stitched Wraith's Armguards
-									i(182496),	-- Stitched Wraith's Belt
-									i(182492),	-- Stitched Wraith's Boots
-									i(182494),	-- Stitched Wraith's Breeches
-									i(182498),	-- Stitched Wraith's Cloak
-									i(182491),	-- Stitched Wraith's Jerkin
-									i(182495),	-- Stitched Wraith's Shoulders
-									i(182493),	-- Stitched Wraith's Stranglers
-									i(182490),	-- Stitched Wraith's Visage
-								},
-							}),
-							n(-938, {	-- Tier 5: Best Fiends Forever
+						n(-928, {	-- Tier 4: Forged Friends
+							-- n(QUESTS, {
+							-- }),
+							-- n(VENDORS, {
+							-- }),
+						}),
+						n(-938, {	-- Tier 5: Best Fiends Forever
+							-- n(QUESTS, {
+							-- }),
+							n(-908, {	-- Rewards
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
 								["g"] = {
 									i(182543),	-- Duty-Bound Conjurer's Cape
@@ -1785,6 +1808,8 @@ _.ExpansionFeatures =
 									i(182526),	-- Duty-Bound Wraith's Visage
 								},
 							}),
+							-- n(VENDORS, {
+							-- }),
 						}),
 					}),
 					n(-915, {	-- Anima Conductor
