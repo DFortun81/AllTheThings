@@ -378,6 +378,7 @@ i(171315); 	-- Reuse me (MTMM)
 -- "Toy"
 i(184505);	-- "Adorable Ascended" Costume
 i(180372);	-- Amalgamation of Sin
+i(180374);	-- Amalgamation of Sin
 i(180485);	-- Ansel's Lucky Violin
 i(180979);	-- Artisan's Large Satchel
 i(180976);	-- Artisan's Satchel

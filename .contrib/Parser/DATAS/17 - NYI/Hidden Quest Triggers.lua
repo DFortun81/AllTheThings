@@ -3719,6 +3719,7 @@ _.HiddenQuestTriggers =
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
+		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"

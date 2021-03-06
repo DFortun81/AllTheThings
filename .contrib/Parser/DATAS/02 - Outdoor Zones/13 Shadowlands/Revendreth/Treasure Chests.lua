@@ -171,6 +171,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 38.4, 29.8, 1525 },
 					["g"] = {
+						i(182687),	-- Biggun Wollopper
 						i(182712, {	-- Dredger's Short-Sleeved Doublet
 							["customCollect"] = "SL_COV_VEN",
 						}),
@@ -182,6 +183,7 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 35.8, 67.5, 1525 },
 					["g"] = {
+						i(182687),	-- Biggun Wollopper
 						i(182712, {	-- Dredger's Short-Sleeved Doublet
 							["customCollect"] = "SL_COV_VEN",
 						}),
@@ -193,6 +195,7 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
 					["g"] = {
+						i(182687),	-- Biggun Wollopper
 						i(182712, {	-- Dredger's Short-Sleeved Doublet
 							["customCollect"] = "SL_COV_VEN",
 						}),
@@ -204,6 +207,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 66.6, 36.3, 1525 },
 					["g"] = {
+						i(182687),	-- Biggun Wollopper
 						i(182712, {	-- Dredger's Short-Sleeved Doublet
 							["customCollect"] = "SL_COV_VEN",
 						}),
@@ -215,6 +219,7 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
 					["g"] = {
+						i(182687),	-- Biggun Wollopper
 						i(182712, {	-- Dredger's Short-Sleeved Doublet
 							["customCollect"] = "SL_COV_VEN",
 						}),
@@ -300,6 +305,12 @@ _.Zones =
 					["coord"] = { 27.7, 48.7, 1525 },
 					["crs"] = { 169993 },	-- Lord Scowl
 					["g"] = {
+						i(180323),	-- Blackbale Neckpiece
+						i(180320),	-- Darkvein Choker
+						i(180321),	-- Primrose Pendant
+						i(180322),	-- Sinfang Choker
+						i(180325),	-- Redelev Pendant
+						i(180319),	-- Sourwine Pendant
 						i(182970, {	-- Burgleclipped Portrait
 							["customCollect"] = "SL_COV_VEN",
 						}),
