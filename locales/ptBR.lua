@@ -1164,6 +1164,9 @@ for key,value in pairs({
 				--TODO: [-1433957] = "Broken Mirror C-1",			-- Broken Mirror
 				--TODO: [-1433958] = "Broken Mirror C-2",			-- Broken Mirror
 				--TODO: [-1433959] = "Broken Mirror C-3",			-- Broken Mirror
+				--TODO: [-1433960] = "Broken Mirror D-1",			-- Broken Mirror
+				--TODO: [-1433961] = "Broken Mirror D-2",			-- Broken Mirror
+				--TODO: [-1433962] = "Broken Mirror D-3",			-- Broken Mirror
 })
 do a[key] = value; end
 
@@ -2830,14 +2833,17 @@ for key,value in pairs({
 	--TODO: [356818] = "Penitence of Purity",
 	--TODO: [356820] = "Large Lunarlight Pod",
 	--TODO: [356823] = "Cloudwalker's Coffer",
-	--TODO: [357228] = "Forgotten Chest",							-- C-3
-	--TODO: [357229] = "Forgotten Chest",							-- C-1
-	--TODO: [357230] = "Forgotten Chest",							-- B-1
-	--TODO: [357231] = "Forgotten Chest",							-- B-2
-	--TODO: [357232] = "Forgotten Chest",							-- B-3
-	--TODO: [357236] = "Forgotten Chest",							-- A-1
-	--TODO: [357237] = "Forgotten Chest",							-- A-2
-	--TODO: [357238] = "Forgotten Chest",							-- A-3
+	[357228] = "Baú Esquecido",										-- C-3
+	[357229] = "Baú Esquecido",										-- C-1
+	[357230] = "Baú Esquecido",										-- B-1
+	[357231] = "Baú Esquecido",										-- B-2
+	[357232] = "Baú Esquecido",										-- B-3
+	[357233] = "Baú Esquecido",										-- D-1
+	[357234] = "Baú Esquecido",										-- D-3
+	[357235] = "Baú Esquecido",										-- D-2
+	[357236] = "Baú Esquecido",										-- A-1
+	[357237] = "Baú Esquecido",										-- A-2
+	[357238] = "Baú Esquecido",										-- A-3
 	--TODO: [357246] = "Tattered Scroll",
 	--TODO: [357565] = "Forgotten Angler's Rod",
 	--TODO: [357584] = "Vyrtha's Dredglaive",
