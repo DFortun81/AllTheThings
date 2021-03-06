@@ -1106,33 +1106,10 @@ _.ExpansionFeatures =
 								ach(14749),	-- Rendle's Big Day
 								ach(14682, {	-- The Party Herald
 									title(433),	-- The Party Herald
-									ach(14723, {	-- Be Our Guest
-										crit(1),	-- Baroness Vashj
-										crit(2),	-- Lady Moonberry
-										crit(3),	-- Mikanikos
-										crit(4),	-- The Countess
-										crit(5),	-- Alexandros Mograine
-										crit(6),	-- Hunt-Captain Korayn
-										crit(7),	-- Polemarch Adrestes
-										crit(8),	-- Rendle and Cudgelface
-										crit(9),	-- Choofa
-										crit(10),	-- Cryptkeeper Kassir
-										crit(11),	-- Droman Aliothe
-										crit(12),	-- Grandmaster Vole
-										crit(13),	-- Kleia and Pelagos
-										crit(14),	-- Plague Deviser Marileth
-										crit(15),	-- Sika
-										crit(16),	-- Stonehead
-									}),
+									ach(14723),		-- Be Our Guest
 									ach(14678, {	-- Court Favors
 									--	TODO: add remaining crit to the places From Whence They Come
-										crit(1, {	-- Anima-Infused Water
-										}),
 										crit(3, {	-- Bewitched Wardrobe
-										}),
-										crit(4, {	-- Bounding Shroom Seeds
-										}),
-										crit(7, {	-- Dog Bone's Bone
 										}),
 										crit(8, {	-- Dredger Party Supplies
 										}),
@@ -1145,16 +1122,11 @@ _.ExpansionFeatures =
 										crit(13, {	-- Kyrian Arsenal
 										}),
 										crit(14, {	-- Night Fae Arsenal
+										-- possibly drops from Hunt-Captain Korayn's tribute at "Good Friend" (unsure if it requires rep, this is based on a wowhead comment.  or could also be any ardenweald guest at good friend, idk)
 										}),
 										crit(16, {	-- Vanity Mirror
 										}),
-										crit(17, {	-- Training Dummies
-										}),
-										crit(18, {	-- The Wild Drum
-										}),
 										crit(19, {	-- Protective Braziers
-										}),
-										crit(20, {	-- Slippery Muck
 										}),
 									}),
 									ach(14681, {	-- Dredger Academy
@@ -1182,66 +1154,321 @@ _.ExpansionFeatures =
 									}),
 									ach(14727),		-- Master of Ceremonies
 									ach(14679),		-- Party Palace
-									ach(14724, {	-- People Pleaser
-										crit(1),	-- Baroness Vashj
-										crit(2),	-- Lady Moonberry
-										crit(3),	-- Mikanikos
-										crit(4),	-- The Countess
-										crit(5),	-- Alexandros Mograine
-										crit(6),	-- Hunt-Captain Korayn
-										crit(7),	-- Polemarch Adrestes
-										crit(8),	-- Rendle and Cudgelface
-										crit(9),	-- Choofa
-										crit(10),	-- Cryptkeeper Kassir
-										crit(11),	-- Droman Aliothe
-										crit(12),	-- Grandmaster Vole
-										crit(13),	-- Kleia and Pelagos
-										crit(14),	-- Plague Deviser Marileth
-										crit(15),	-- Sika
-										crit(16),	-- Stonehead
-									}),
+									ach(14724),		-- People Pleaser
 									ach(14680),		-- Something for Everyone
 									ach(14725),		-- We Happy Few
 								}),
 							}),
 							n(-908, {	-- Rewards
-							--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
-								i(181323),	-- Blightclutched Greatstaff (Plague Deviser Marileth's Extravagant Tribute)
-								i(181315),	-- Bloodfeaster Spiderling (Rendle and Cudgelface's Tribute)
-								i(183883),	-- Bulging Collection of Random Bits (Choofa's Extravagant Tribute)/(Choofa's Substantial Tribute)
-								i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir's Extravagant Tribute)
-								i(180954),	-- Crypt Watcher's Spire (Cryptkeeper Kassir's Trifling Tribute)
-								i(183107),	-- Char (pet)
-								i(181607),	-- Decree: Lady Moonberry's Esteem (Lady Moonberry's Substantial Tribute)
-								i(179605),	-- Elderwood Barrier (Droman Aliothe's Extravagant Tribute)/(Hunt-Captain Korayn's Extravagant Tribute)
-								i(179548),	-- Elderwood Gavel (Choofa's Substantial Tribute)/(Droman Aliothe's Extravagant Tribute)/(Hunt-Captain Korayn's Extravagant Tribute)
-								i(180964),	-- Ember Court Barrier (Cryptkeeper Kassir's Extravagant Tribute)
-								i(181321),	-- Gem-Crowned Wand (Plague Deviser Marileth's Extravagant Tribute)
-								i(181618),	-- Gorm Quishe Platter (Hunt-Captain Korayn's Extravagant Tribute)
-								i(179509),	-- Grove Warden's Edge (Hunt-Captain Korayn's Extravagant Tribute)
-								i(181300),	-- Gruesome Flayedwing (Alexandros Mograine's Tribute)
-								i(181620),	-- Hard Boiled Gorm Egg (Hunt-Captain Korayn's Extravagant Tribute)
-								i(183713),	-- Kassir's Crypt Mantle (Cryptkeeper Kassir's Extravagant Tribute - got when i hit Best Friend with him, not sure if that was just luck)
-								i(181615),	-- Marching an Army (Alexandros Mograine's Tribute)
-								i(181331),	-- Marrowfused Shield (Alexandros Mograine's Disgruntled Gift)
-								i(181230),	-- Pugilist's Chakram (Kleia and Pelagos' Extravagant Tribute)
-								i(180814),	-- Sable (Kleia and Pelagos' Extravagant Tribute - got when i hit Best Friend, not sure if it was just luck)
-								i(181778),	-- Sack of Shinies (Rendle and Cudgelface's Tribute)
-								i(183886, {	-- Sika's Rare Ore Pouch (Sika's Extravagant Tribute)
-									["description"] = "A possible reward from Sika's Extravagant Tribute.",
-								}),
-								i(180961),	-- Silver-Bladed Ritual Dagger (Countess Extravagant Tribute)
-								i(181767),	-- Small Coin Purse (Grandmaster Vole's Tribute)
-								i(178897),	-- Stalwart Pauldron of Resolve (Polemarch Adrestes' Extravagant Tribute)
-								i(181761, {	-- The Grandmaster's Voucher (Grandmaster Vole's Extravagant Tribute)
-									["isWeekly"] = true,
-									["questID"] = 62628,	-- Vole's Voucher
-								}),
-								i(183863, {	-- The Proper Path and Etiquette for Aspirants (Kleia and Pelagos' Extravagant Tribute)
-									["description"] = "A possible reward from Kleia & Pelagos or Sika's Extravagant Tribute.",
-								}),
-								i(181229),	-- Tranquil's Censer (Sika's Extravagant Tribute)
-								i(178899),	-- Treecorn (Choofa's Extravagant Tribute)
+								["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
+								["g"] = {
+								--	TODO: the following tributes do not have any/much info on wowhead, check back and add more drops later:
+									-- alexandros mograine
+									-- baroness vashj
+									-- hunt-captain korayn
+									-- lady moonberry
+									-- mikanikos
+									-- polemarch adrestes
+									o(356697, {	-- Alexandros Mograine's Extravagant Tribute
+										["cr"] = 171833,	-- Alexandros Mograine <The Ashbringer>
+										["g"] = {
+											crit(5, {	-- Alexandros Mograine
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(5, {	-- Alexandros Mograine
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181300),	-- Gruesome Flayedwing (MOUNT!)
+											i(181331),	-- Marrowfused Shield
+											i(181615),	-- Marching an Army
+											i(181327),	-- Spineforged Tenderizer
+										},
+									}),
+									o(356693, {	-- Baroness Vashj's Extravagant Tribute
+										["cr"] = 168444,	-- Baroness Vashj <Matron of Spies>
+										["g"] = {
+											crit(1, {	-- Baroness Vashj
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(1, {	-- Baroness Vashj
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181322),	-- Bonebound Tome
+											i(178894),	-- Decree: Baroness Vashj's Boon
+											i(181327),	-- Spineforged Tenderizer
+										},
+									}),
+									o(356720, {	-- Choofa's Extravagant Tribute
+										["cr"] = 168449,	-- Choofa
+										["g"] = {
+											crit(9, {	-- Choofa
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(9, {	-- Choofa
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(178902),	-- Rejuvenating Sprig
+											i(178899),	-- Treecorn
+											i(178901),	-- Vineseed
+											i(183883),	-- Bulging Collection of Random Bits
+											i(179605),	-- Elderwood Barrier
+											i(179499),	-- Nightwillow Barb
+											i(177233, {	-- Bounding Shroom Seeds
+												crit(4, {	-- Bounding Shroom Seeds
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+											i(179548),	-- Elderwood Gavel
+											i(179563),	-- Heartwood Stem
+										},
+									}),
+									o(356752, {	-- Cryptkeeper Kassir's Extravagant Tribute
+										["cr"] = 168450,	-- Cryptkeeper Kassir
+										["g"] = {
+											crit(10, {	-- Cryptkeeper Kassir
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(10, {	-- Cryptkeeper Kassir
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(183713),	-- Kassir's Crypt Mantle - got when i hit Best Friend, not sure if that was just luck
+											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Revendreth-based tributes)
+											i(180954),	-- Crypt Watcher's Spire
+											i(180964),	-- Ember Court Barrier
+											i(180956),	-- Axeblade Blunderbuss
+											i(180957),	-- Batwing Glaive
+											i(180963),	-- Crypt Keeper's Vessel
+										},
+									}),
+									o(356716, {	-- Droman Aliothe's Extravagant Tribute
+										["cr"] = 171847,	-- Droman Aliothe <Court of Night>
+										["g"] = {
+											crit(11, {	-- Droman Aliothe
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(11, {	-- Droman Aliothe
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(179605),	-- Elderwood Barrier
+											i(179538),	-- Grove Warden's Maul
+											i(180628),	-- Pearlwing Heron (PET!)
+											i(179514),	-- Ripvine Saber
+											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Ardenweald-based tributes)
+											i(179548),	-- Elderwood Gavel
+											i(181438, {	-- The Wild Drum
+												crit(18, {	-- The Wild Drum
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+										},
+									}),
+									o(356700, {	-- Grandmaster Vole's Extravagant Tribute
+										["cr"] = 171848,	-- Grandmaster Vole
+										["g"] = {
+											crit(12, {	-- Grandmaster Vole
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(12, {	-- Grandmaster Vole
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181761, {	-- The Grandmaster's Voucher
+												["isWeekly"] = true,
+												["questID"] = 62628,	-- Vole's Voucher
+											}),
+										--	i(181765),	-- Marcel Mullby's Marker TODO: add related quest
+											i(181328),	-- Marrowfused Sword
+											i(181330),	-- Marrowfused Warglaive
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Maldraxxus-based tributes)
+											i(181329),	-- Marrowfused Claymore
+											i(181767),	-- Small Coin Purse
+											i(181327),	-- Spineforged Tenderizer
+										},
+									}),
+									o(356712, {	-- Hunt-Captain Korayn's Extravagant Tribute
+										["cr"] = 171836,	-- Hunt-Captain Korayn <The Wild Hunt>
+										["g"] = {
+											crit(6, {	-- Hunt-Captain Korayn
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(6, {	-- Hunt-Captain Korayn
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181618),	-- Gorm Quishe Platter
+											i(179509),	-- Grove Warden's Edge
+											i(179605),	-- Elderwood Barrier
+											i(181620),	-- Hard Boiled Gorm Egg
+											i(179548),	-- Elderwood Gavel
+										},
+									}),
+									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
+										["crs"] = {
+											171850,	-- Kleia
+											171851,	-- Pelagos
+										},
+										["g"] = {
+											crit(13, {	-- Kleia and Pelagos
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(13, {	-- Kleia and Pelagos
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181233),	-- Bellringer's Hammer
+											i(181230),	-- Pugilist's Chakram
+											i(180814),	-- Sable (PET!) - got when i hit Best Friend, not sure if it was just luck
+											i(183863),	-- The Proper Path and Etiquette for Aspirants
+											i(181226),	-- Bronze Dual-Bladed Glaive
+											i(181225),	-- Crossbow of Contemplative Calm
+											i(181232),	-- Cupbearer's Claymore
+										},
+									}),
+									o(356709, {	-- Lady Moonberry's Extravagant Tribute
+										["crs"] = {
+											171830,	-- Lady Moonberry <Court of Night>
+										--	171874,	-- Image of Lady Moonberry <Lady Moonberry's Conjuration> (not sure if/when this shows up)
+										},
+										["g"] = {
+											crit(2, {	-- Lady Moonberry
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(2, {	-- Lady Moonberry
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181607),	-- Decree: Lady Moonberry's Esteem
+										},
+									}),
+									o(356728, {	-- Mikanikos' Extravagant Tribute
+										["cr"] = 171831,	-- Mikanikos <Forgelite Prime>
+										["g"] = {
+											crit(3, {	-- Mikanikos
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(3, {	-- Mikanikos
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+										},
+									}),
+									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
+										["cr"] = 171852,	-- Plague Deviser Marileth
+										["g"] = {
+											crit(14, {	-- Plague Deviser Marileth
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(14, {	-- Plague Deviser Marileth
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181323),	-- Blightclutched Greatstaff
+											i(181326),	-- Bloodstained Hacksaw
+											i(181330),	-- Marrowfused Warglaive
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Maldraxxus-based tributes)
+											i(181321),	-- Gem-Crowned Wand
+											i(181327),	-- Spineforged Tenderizer
+											i(181437, {	-- Training Dummies
+												crit(17, {	-- Training Dummies
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+										},
+									}),
+									o(356725, {	-- Polemarch Adrestes' Extravagant Tribute
+										["cr"] = 168447,	-- Polemarch Adrestes
+										["g"] = {
+											crit(7, {	-- Polemarch Adrestes
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(7, {	-- Polemarch Adrestes
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(178897),	-- Stalwart Pauldron of Resolve
+											i(181230),	-- Pugilist's Chakram
+											i(181228),	-- Temple Guard's Partisan
+											i(181232),	-- Cupbearer's Claymore
+										},
+									}),
+									o(356744, {	-- Rendle and Cudgelface's Extravagant Tribute
+										["crs"] = {
+											171841,	-- Cudgelface
+											171839,	-- Rendle
+										},
+										["g"] = {
+											crit(8, {	-- Rendle and Cudgelface
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(8, {	-- Rendle and Cudgelface
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181780),	-- An Undelivered Tradesman's Shipment
+											i(180962),	-- Sterling-Silver Cudgel
+											i(181315),	-- Bloodfeaster Spiderling											
+											i(180959),	-- Dredger Anklebiter
+											i(180964),	-- Ember Court Barrier
+											i(180956),	-- Axeblade Blunderbuss
+											i(180957),	-- Batwing Glaive
+											i(181778),	-- Sack of Shinies
+										},
+									}),
+									o(356737, {	-- Sika's Extravagant Tribute
+										["cr"] = 171854,	-- Sika
+										["g"] = {
+											crit(15, {	-- Sika
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(15, {	-- Sika
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(183886),	-- Sika's Rare Ore Pouch
+											i(181230),	-- Pugilist's Chakram
+											i(183863),	-- The Proper Path and Etiquette for Aspirants
+											i(181229),	-- Tranquil's Censer
+											i(177230, {	-- Anima-Infused Water
+												crit(1, {	-- Anima-Infused Water
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+											i(181226),	-- Bronze Dual-Bladed Glaive
+											i(181232),	-- Cupbearer's Claymore
+										},
+									}),
+									o(356748, {	-- Stonehead's Extravagant Tribute
+										["cr"] = 171856,	-- Stonehead
+										["g"] = {
+											crit(16, {	-- Stonehead
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(16, {	-- Stonehead
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(183709),	-- Bronze-Bound Sinstone
+											i(180964),	-- Ember Court Barrier
+											i(180960),	-- Shiny-Metal Topped Basher
+											i(181771),	-- Stonehead's Best Bud Bracelet
+											i(180956),	-- Axeblade Blunderbuss
+											i(180957),	-- Batwing Glaive
+											i(181440, {	-- Slippery Muck
+												crit(20, {	-- Slippery Muck
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+											i(180955),	-- Stonewing Halberd
+										},
+									}),
+									o(356741, {	-- The Countess' Extravagant Tribute
+										["cr"] = 165269,	-- The Countess <Harvester of Desire>
+										["g"] = {
+											crit(4, {	-- The Countess
+												["achievementID"] = 14723,	-- Be Our Guest
+											}),
+											crit(4, {	-- The Countess
+												["achievementID"] = 14724,	-- People Pleaser
+											}),
+											i(181566),	-- Decree: The Countess's Boon
+											i(180961),	-- Silver-Bladed Ritual Dagger
+											i(180964),	-- Ember Court Barrier
+											i(182696),	-- The Countess's Parasol (TOY!)
+											i(180957),	-- Batwing Glaive
+										},
+									}),
+									i(183107),	-- Char (PET!) - it looks like this drops from Ashen Amalgamation, probably npcID 165686.  requires having Anima-Infused Waters from Sika's tribute and then putting out fires from the "traditional" decorations until the amalgamation spawns.  TODO: confirm that info and then figure out a way to convey it in ATT
+								},
 							}),
 							n(-961, {	-- Tier 1: A New Court
 							--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?

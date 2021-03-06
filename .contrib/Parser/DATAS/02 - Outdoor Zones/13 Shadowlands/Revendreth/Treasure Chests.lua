@@ -45,15 +45,6 @@ _.Zones =
 					["g"] = {
 					},
 				}),
-				--[[ Might be from the quest scenario
-				o(357565, {	-- Forgotten Angler's Rod
-					["npcID"] = 173634,	-- Muckribbon
-					["coord"] = { 69.3, 77.9, 1525 },
-					["questID"] = 62196,
-					["g"] = {
-						i(182969),	-- The Countess's Parasol
-					},
-				}),]]
 				-- TODO: treasure @ 68,64 questID = 59884
 				o(353799, {	-- Hopebreaker Pack
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
