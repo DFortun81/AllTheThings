@@ -3551,7 +3551,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 						local more = #entries - containCount;
-						tinsert(info, { left = "And " .. more .. " more..." });
+						tinsert(info, { left = L["AND_"] .. more .. L["_MORE"] .. "..." });
 					end
 				end
 			end

@@ -92,6 +92,7 @@ app.L = {
 	["MIN_MAX_STANDING"] = "Requires a standing between";
 	["AND_"] = "And ";
 	["_AND"] = " and";
+	["_MORE"] = " more";
 	["_OTHER_SOURCES"] = " other sources";
 	["DURING_WQ_ONLY"] = "This can be completed when the world quest is active.";
 	["COMPLETED_DAILY"] = "This can be completed daily.";
