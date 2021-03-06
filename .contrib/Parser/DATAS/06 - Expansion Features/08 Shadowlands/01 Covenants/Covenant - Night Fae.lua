@@ -2415,6 +2415,7 @@ _.ExpansionFeatures =
 									i(179787),	-- Conservator's Leather Crest
 									i(179796),	-- Conservator's Leather Mantle
 									i(179775),	-- Conservator's Leather Tunic
+									i(179793),	-- Conservator's Leather Vestment
 								},
 							}),
 							i(184113, {	-- Ensemble: Conservator's Regalia
