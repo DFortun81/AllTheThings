@@ -330,78 +330,123 @@ _.Zones =
 					["questID"] = 60938,
 					["isDaily"] = true,
 					["coord"] = { 43.8, 57.1, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354109, {	-- Stoneborn Satchel
 					["questID"] = 60944,
 					["isDaily"] = true,
 					["coord"] = { 57.7, 29.4, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354110, {	-- Stoneborn Satchel
 					["questID"] = 60943,
 					["isDaily"] = true,
 					["coord"] = { 80.4, 70.8, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354111, {	-- Stoneborn Satchel
 					["questID"] = 60942,
 					["isDaily"] = true,
 					["coord"] = { 55.3, 42.3, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354112, {	-- Stoneborn Satchel
 					["questID"] = 60941,
 					["isDaily"] = true,
 					["coord"] = { 75.4, 39.0, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354113, {	-- Stoneborn Satchel
 					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
 					["isDaily"] = true,
 					["coord"] = { 76.6, 51.0, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354114, {	-- Stoneborn Satchel
 					["questID"] = 60939,
 					["isDaily"] = true,
 					["coord"] = { 76.3, 64.1, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354186, {	-- Stoneborn Satchel
 					["questID"] = 60979,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 75.8, 77.3, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354187, {	-- Stoneborn Satchel
 					["questID"] = 60980,
 					["isDaily"] = true,
 					["coord"] = { 44.3, 77.9, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354188, {	-- Stoneborn Satchel
 					["questID"] = 60981,
 					["isDaily"] = true,
 					["coord"] = { 66.4, 65.4, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354189, {	-- Stoneborn Satchel
 					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
 					["questID"] = 60896,
 					["isDaily"] = true,
 					["coord"] = { 58.0, 67.2, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354190, {	-- Stoneborn Satchel
 					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 53.6, 57.3, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354191, {	-- Stoneborn Satchel
 					["questID"] = 60986,
 					["isDaily"] = true,
 					["coord"] = { 29.9, 37.4, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354192, {	-- Stoneborn Satchel
 					["questID"] = 60984,
 					["isDaily"] = true,
-					["coord"] = { 23.5, 48.8, 1525 }
+					["coord"] = { 23.5, 48.8, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(354193, {	-- Stoneborn Satchel
 					["questID"] = 60985,
 					["isDaily"] = true,
 					["coord"] = { 36.5, 51.5, 1525 },
+					["g"] = {
+						i(182716),	-- Messenger's Satchel
+					},
 				}),
 				o(352703, {	-- The Harvest
 				--	TODO: apparently this has multiple notes/locations, add them as they pop up
