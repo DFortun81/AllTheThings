@@ -82,6 +82,7 @@ local L = app.L;
 	--TODO: L.MIN_MAX_STANDING = "Requires a standing between";
 	--TODO: L.AND_ = "And ";
 	--TODO: L._AND = " and";
+	--TODO: L._MORE = " more";
 	--TODO: L._OTHER_SOURCES = " other sources";
 	L.DURING_WQ_ONLY = "这个可以在世界任务激活时完成.";
 	L.COMPLETED_DAILY = "这个可以每天完成.";
@@ -747,6 +748,7 @@ for key,value in pairs({
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
+			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
 

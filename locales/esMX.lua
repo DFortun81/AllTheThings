@@ -80,6 +80,7 @@ local L = app.L;
 	--TODO: L.MIN_MAX_STANDING = "Requires a standing between";
 	--TODO: L.AND_ = "And ";
 	--TODO: L._AND = " and";
+	--TODO: L._MORE = " more";
 	--TODO: L._OTHER_SOURCES = " other sources";
 	--TODO: L.DURING_WQ_ONLY = "This can be completed when the world quest is active.";
 	--TODO: L.COMPLETED_DAILY = "This can be completed daily.";
@@ -727,6 +728,7 @@ for key,value in pairs({
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
 			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
+			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
 			--TODO: [-661] = "Gladiator Gear",						-- Gladiator PvP Gear
 			--TODO: [-662] = "Elite Gear",							-- Elite PvP Gear
 
