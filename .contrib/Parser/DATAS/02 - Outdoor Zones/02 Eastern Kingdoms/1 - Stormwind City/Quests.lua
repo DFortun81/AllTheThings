@@ -582,6 +582,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(29100, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29156 },	-- The Troll Incursion
@@ -869,6 +870,11 @@ _.Zones =
 					["description"] = "This quest is automatically granted to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
+				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(58909, {	-- License to Ride
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 58908 },	-- Finding Your Way (A)
@@ -988,6 +994,7 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1565,6 +1572,14 @@ _.Zones =
 					["coord"] = { 39.0, 62.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
+					["sourceQuests"] = { 60096 },	-- Wrath of the Lich King: To Northrend!
+					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

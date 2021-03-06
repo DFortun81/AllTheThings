@@ -22,9 +22,12 @@ _.Zones =
 				}),
 				ach(14769, {	-- Bat!
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
+						{ 21.7, 50.2, 1525 },
 						{ 25.1, 37.5, 1525 },
+						{ 31.9, 59.2, 1525 },
 						{ 35.0, 35.0, 1525 },
 						{ 56.2, 62.2, 1525 },
+						{ 57.3, 61.3, 1525 },
 						{ 60.4, 61.1, 1525 },
 						{ 64.0, 62.0, 1525 },
 					},

@@ -2932,7 +2932,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -3000,7 +3000,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											elseif otherATTSource.nmr then
 												-- This is NOT for your race. Therefore, no credit for you!
 												if #failText > 1 then failText = failText .. ", "; end
-												failText = failText .. "Race Locked";
+												failText = failText .. L["RACE_LOCKED"];
 											else
 												-- Should be fine
 											end
@@ -3017,7 +3017,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -3106,7 +3106,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					-- don't use cost items as sources for the search
 					if not app.HasCost(j, paramA, paramB) then
 						local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-						if showUnsorted or (not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers")) then
+						if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source, replacement);
 							end
@@ -3142,7 +3142,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i=count,maximum + 1,-1 do
 						table.remove(listing, 1);
 					end
-					tinsert(listing, 1, "And " .. (count - maximum) .. " other sources...");
+					tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 				end
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);

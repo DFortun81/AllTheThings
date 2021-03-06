@@ -10,7 +10,6 @@ _.Zones =
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(181721),	-- Ascendant Valor Signet
-					i(179593),	-- Darkreach Mask	-- TODO: did this actually drop in Bastion? definitely very Ardenweald/Drust-themed
 					i(181603),	-- Forgehand's Chain
 					i(181591),	-- Forgehand's Chainmail
 					i(181596),	-- Forgehand's Handguards

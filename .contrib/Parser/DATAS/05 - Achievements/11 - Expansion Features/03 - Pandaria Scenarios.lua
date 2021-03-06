@@ -95,7 +95,7 @@ _.Achievements =
 			}),
 			ach(8010, {	-- Domination Point
 				["races"] = HORDE_ONLY,
-				["maps"] = 498,	-- Domination Point
+				["maps"] = { 498 },	-- Domination Point
 				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7257, {	-- Don't Shake the Keg
@@ -216,7 +216,7 @@ _.Achievements =
 			}),
 			ach(8013, {	-- Lion's Landing
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = 486,	-- Lion's Landing
+				["maps"] = { 486 },	-- Lion's Landing
 				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7239, {	-- Monkey in the Middle

@@ -103,7 +103,6 @@ _.Zones =
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
-					i(180323),	-- Blackbale Neckpiece
 					i(181360),	-- Brimming Ember Shard
 					i(181218),	-- Chalice Noble's Signet
 					i(181216),	-- Cinderwall Great Mace
@@ -137,7 +136,6 @@ _.Zones =
 					i(181358),	-- Master Duelist's Chit
 					i(181182),	-- Muck Waders
 					i(180401),	-- Noble Justice
-					i(180325),	-- Redelev Pendant
 					i(180339),	-- Shadow-Lined Chalice
 					i(181213),	-- Shard-Dusted Shank
 					i(181180),	-- Sincollector's Cord
