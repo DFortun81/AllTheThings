@@ -10371,8 +10371,10 @@ end
 local CreateRow;
 function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForChat(group, 1);-- .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
-	-- print("Popout Creation for",suffix)
+	local suffix = BuildSourceTextForChat(group, 1)
+		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
+		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL");
+	-- print("Popout for",suffix)
 	-- clone initially so that nothing in the popout modifies the real data
 	local group = CloneData(group);
 	local popout = app.Windows[suffix];
