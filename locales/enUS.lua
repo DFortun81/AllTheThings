@@ -1539,6 +1539,9 @@ app.L = {
 		[-1433957] = "3854020",															-- Broken Mirror
 		[-1433958] = "3854020",															-- Broken Mirror
 		[-1433959] = "3854020",															-- Broken Mirror
+		[-1433960] = "3854020",															-- Broken Mirror
+		[-1433961] = "3854020",															-- Broken Mirror
+		[-1433962] = "3854020",															-- Broken Mirror
 	};
 
 	["NPC_ID_NAMES"] = {
@@ -2561,6 +2564,9 @@ app.L = {
 		[-1433957] = "Broken Mirror C-1",										-- Broken Mirror
 		[-1433958] = "Broken Mirror C-2",										-- Broken Mirror
 		[-1433959] = "Broken Mirror C-3",										-- Broken Mirror
+		[-1433960] = "Broken Mirror D-1",										-- Broken Mirror
+		[-1433961] = "Broken Mirror D-2",										-- Broken Mirror
+		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
 	};
 
 	-- Descriptions which are common to a common NPCID
@@ -4957,6 +4963,9 @@ app.L = {
 		[357230] = "Forgotten Chest",											-- B-1
 		[357231] = "Forgotten Chest",											-- B-2
 		[357232] = "Forgotten Chest",											-- B-3
+		[357233] = "Forgotten Chest",											-- D-1
+		[357234] = "Forgotten Chest",											-- D-3
+		[357235] = "Forgotten Chest",											-- D-2
 		[357236] = "Forgotten Chest",											-- A-1
 		[357237] = "Forgotten Chest",											-- A-2
 		[357238] = "Forgotten Chest",											-- A-3

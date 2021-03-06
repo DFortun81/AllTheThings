@@ -2533,10 +2533,45 @@ _.ExpansionFeatures =
 											},
 										}),
 									}),
-									--[[
 									n(-971, {	-- Set D
+										n(-1433960, {	-- Broken Mirror D-1
+											["questID"] = 59236,
+											["isDaily"] = true,
+											["coord"] = { 20.7, 54.2, 1525 },	-- Revendreth
+											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+											["g"] = {
+												o(357233, {	-- Forgotten Chest
+													["questID"] = 60297,
+													["isDaily"] = true,
+												}),
+											},
+										}),
+										n(-1433961, {	-- Broken Mirror D-2
+											["questID"] = 61824,
+											["isDaily"] = true,
+											["coord"] = { 29.6, 25.8, 1525 },	-- Revendreth
+											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+											["g"] = {
+												o(357235, {	-- Forgotten Chest
+													["questID"] = 61829,
+													["isDaily"] = true,
+												}),
+											},
+										}),
+										n(-1433962, {	-- Broken Mirror D-3
+											["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the left.",
+											["questID"] = 61820,
+											["isDaily"] = true,
+											["coord"] = { 55.1, 34.7, 1525 },	-- Revendreth
+											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
+											["g"] = {
+												o(357234, {	-- Forgotten Chest
+													["questID"] = 61828,
+													["isDaily"] = true,
+												}),
+											},
+										}),
 									}),
-									--]]
 								}),
 								n(-908, {	-- Rewards
 								--	TODO: cloaks might need to be marked with armor spec classes, need to get one and then see if cloth set cloak can be used on a druid, for example.  there's no blizz text indicating that they're locked to users of a specific armor type so it needs verification i guess
