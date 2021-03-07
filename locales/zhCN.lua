@@ -589,7 +589,7 @@ for key,value in pairs({
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
 		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]",			-- Gordok Commons [North - Ogres] 戈多克议会
 		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]",			-- Capital Gardens [West - Elves] 中心花园
-		[-15] = "常规商人物品",				                		-- Common Vendor Items
+		[-15] = "常规商人物品",										-- Common Vendor Items
 		[-16] = "稀有",												-- Rares
 
 		[-40] = "绝版",												-- Legacy
@@ -627,8 +627,8 @@ for key,value in pairs({
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
 	-- Invasions TODO: what levels?
-		[-137] = "90级",	            							-- Level 90
-		[-138] = "100级",			            					-- Level 100
+		[-137] = "90级",												-- Level 90
+		[-138] = "100级",											-- Level 100
 	-- Class Trial Sets
 		[-140] = "共济",												-- Communal
 		[-141] = "邪魂",												-- Felsoul
@@ -642,7 +642,7 @@ for key,value in pairs({
 		[-149] = "阳魂",												-- Sunsoul
 		[-150] = "探路者",											-- Trailseeker
 		[-152] = "要塞战役",											-- Garrison Campaign
-		[-154] = "48级",	            							-- Level 48 (old level 110)
+		[-154] = "48级",												-- Level 48 (old level 110)
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
@@ -663,11 +663,11 @@ for key,value in pairs({
 		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		[-236] = "联盟阵营战役",										-- Alliance War Campaign
 		--TODO: [-242] = "Unrated",									-- Unrated
-		[-243] = "赏金任务",								    	-- Bounty
+		[-243] = "赏金任务",											-- Bounty
 		[-244] = "黑铁矮人",											-- Dark Iron Dwarf
 		[-245] = "玛格汉兽人",										-- Mag'har Orc
-		[-246] = "我之蜜糖",				                        -- Is Another Man's Treasure
-		[-247] = "潘达利亚的财富",					            	-- Riches of Pandaria
+		[-246] = "我之蜜糖",											-- Is Another Man's Treasure
+		[-247] = "潘达利亚的财富",									-- Riches of Pandaria
 		[-251] = "赞达拉巨魔",										-- Zandalari Troll
 		[-252] = "库尔提拉斯人",										-- Kul Tiran
 		[-253] = "部落阵营战役",										-- Horde War Campaign
@@ -682,17 +682,17 @@ for key,value in pairs({
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
-		[-379] = "垃圾场",						            		-- Junkyard
-		[-380] = "车间",		            						-- Workshop
+		[-379] = "垃圾场",											-- Junkyard
+		[-380] = "车间",												-- Workshop
 		[-388] = "主门",												-- Main Gate (Stratholme)
 		[-389] = "仆从入口",											-- Service Entrance (Stratholme)
 		--TODO: [-390] = "Smuggler's Den",							-- Smuggler's Den (Spires of Arak)
 		--TODO: [-391] = "Stoktron Brewery",						-- Stoktron Brewery (Spires of Arak)
 		--TODO: [-392] = "Hearthfire Tavern",						-- Hearthfire Tavern
-		[-393] = "进攻堡垒",	                    				-- Storming the Citadel
-		[-394] = "天灾工厂",		            					-- The Plagueworks
+		[-393] = "进攻堡垒",											-- Storming the Citadel
+		[-394] = "天灾工厂",											-- The Plagueworks
 		--TODO: [-395] = "The Crimson Halls",						-- The Crimson Halls
-		[-396] = "霜翼大厅",	                					-- The Frostwing Halls
+		[-396] = "霜翼大厅",											-- The Frostwing Halls
 		--TODO: [-397] = "Outposts",								-- Outposts
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
@@ -707,7 +707,7 @@ for key,value in pairs({
 		[-522] = "巫妖王之怒：Zombie Infestation",					-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "大地的裂变：Elemental Unrest",						-- Cataclysm: Elemental Unrest
 		[-525] = "德拉诺之王：Iron Horde Incursion",					-- Warlords of Draenor: Iron Horde Incursion
-		[-526] = "军团再临：军团入侵",					         	-- Legion: Legion Invasion
+		[-526] = "军团再临：军团入侵",								-- Legion: Legion Invasion
 		[-527] = "争霸艾泽拉斯：荆棘之战",							-- Battle for Azeroth: War of the Thorns
 		[-528] = "破碎群岛",											-- Broken Isles [Mole Machine]
 		[-531] = "2008年竞争之魂活动",
@@ -716,7 +716,7 @@ for key,value in pairs({
 		[-534] = "典藏版",											-- Collector's Edition
 
 		[-538] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary Promotion
-		[-539] = "流沙节杖",	        							-- The Scepter of the Shifting Sands
+		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
@@ -778,32 +778,32 @@ for key,value in pairs({
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",				                				-- Hivemind
+		[-807] = "主脑",												-- Hivemind
 
 	-- Mechagon
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "铁潮宝箱",											-- Irontide Chest
 
-		[-852] = "艾泽里特精华",			            			-- Azerite Essences
-		[-853] = "全部角色",				         				-- All Roles
+		[-852] = "艾泽里特精华",										-- Azerite Essences
+		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
-		[-855] = "治疗",			        						-- Healers
-		[-856] = "坦克",				        					-- Tanks
-		[-857] = "大秘境",				        					-- Mythic+
+		[-855] = "治疗",												-- Healers
+		[-856] = "坦克",												-- Tanks
+		[-857] = "大秘境",											-- Mythic+
 		--TODO: [-858] = "Rank 1",									-- Rank 1
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 
 	-- Shadowlands Header
-		[-900] = "盟约圣所",						                -- Covenant Sanctum
+		[-900] = "盟约圣所",											-- Covenant Sanctum
 		--TODO: [-901] = GetSpellInfo(339041),						-- Covenant Callings
 		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),		-- Renown (NYI)
-		[-903] = "区域奖励",				            			-- Zone Rewards
-		[-904] = "典狱长之怒",					                	-- Wrath of the Jailer
-		[-905] = "指挥台",				                			-- Command Table
-		[-906] = "等级 1: 战术洞察",		                 		-- Tier 1: Tactical Insight
-		[-907] = "死掉的布兰契",	         						-- Dead Blanchy
+		[-903] = "区域奖励",											-- Zone Rewards
+		[-904] = "典狱长之怒",										-- Wrath of the Jailer
+		[-905] = "指挥台",											-- Command Table
+		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
+		[-907] = "死掉的布兰契",										-- Dead Blanchy
 		--TODO: [-908] = "Rewards",									-- Rewards
 		--TODO: [-909] = "Hunt: Death Elementals",					-- Hunt: Death Elementals
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
@@ -811,18 +811,18 @@ for key,value in pairs({
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		--[-913] = ,												--
 		--TODO: [-914] = "Adventures",								-- Adventures
-		[-915] = "心能导流器",				            			-- Anima Conductor
-		[-916] = "等级 1: 流动卷须",		                		-- Tier 1: Flowing Tendrils
-		[-917] = "等级 2: 涌动丝缕",			                	-- Tier 2: Streaming Threads
-		[-918] = "等级 3: 流动能量",					            -- Tier 3: Flowing Power
-		[-919] = "梦魇骒马",			         					-- Night Mare
+		[-915] = "心能导流器",										-- Anima Conductor
+		[-916] = "等级 1: 流动卷须",									-- Tier 1: Flowing Tendrils
+		[-917] = "等级 2: 涌动丝缕",									-- Tier 2: Streaming Threads
+		[-918] = "等级 3: 流动能量",									-- Tier 3: Flowing Power
+		[-919] = "梦魇骒马",											-- Night Mare
 
 		-- SL Maldraxxus/Necrolord
-			[-920] = "盟约: 通灵领主",			            		-- Covenant: Necrolord
+			[-920] = "盟约: 通灵领主",								-- Covenant: Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
-			[-922] = "伤逝剧场",		             				-- Theater of Pain
-			[-923] = "憎恶工厂",		                			-- Abomination Factory (Necrolord)
-			[-924] = "传送网络",		                			-- Transport Network (Necrolord)
+			[-922] = "伤逝剧场",										-- Theater of Pain
+			[-923] = "憎恶工厂",										-- Abomination Factory (Necrolord)
+			[-924] = "传送网络",										-- Transport Network (Necrolord)
 			[-925] = "等级 1: 建造伙伴",								-- Abomination Factory (Necrolord) Tier 1
 			[-926] = "等级 2: 打造肢体",								-- Abomination Factory (Necrolord) Tier 2
 			[-927] = "等级 3: 给予生命",								-- Abomination Factory (Necrolord) Tier 3
@@ -830,51 +830,51 @@ for key,value in pairs({
 			[-938] = "等级 5: 永远的好魔友",							-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-929] = "盟约: 法夜",		                			-- Covenant: Night Fae
-			[-930] = "女王的温室",		        	            	-- Queen's Conservatory
+			[-929] = "盟约: 法夜",									-- Covenant: Night Fae
+			[-930] = "女王的温室",									-- Queen's Conservatory
 			--TODO: [-931] = GetSpellInfo(7851),					-- Lesser Spirit
 			--TODO: [-932] = GetSpellInfo(172153),					-- Spirit
 			--TODO: [-933] = GetSpellInfo(13826),					-- Greater Spirit
 			--TODO: [-934] = "Star Lake Amphitheater",				-- Star Lake Amphitheater
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-937] = "传送网络",	                				-- Transport Network (Night Fae)
+			[-937] = "传送网络",										-- Transport Network (Night Fae)
 
 		-- SL Bastion/Kyrian
-			[-939] = "盟约: 格里恩",				            	-- Covenant: Kyrian
-			[-940] = "晋升者议会",			                		-- Ascended Counil
+			[-939] = "盟约: 格里恩",									-- Covenant: Kyrian
+			[-940] = "晋升者议会",									-- Ascended Counil
 			--TODO: [-941] = "Sanctum Upgrades",					-- Sanctum Upgrades (Kyrian)
-			[-942] = "晋升之路",			                		-- Path of Ascension
-			[-943] = "等级 1: 牛刀小试",				        	-- Tier 1: First Steps
-			[-944] = "等级 2: 神圣试炼",	            			-- Tier 2: Sacred Trials
-			[-945] = "等级 3: 持续训练",			                -- Tier 3: Continued Teaching
-			[-946] = "等级 4: 智慧教导",		                	-- Tier 4: Teachings of Wisdom
-			[-947] = "等级 5: 谦逊试炼",	                		-- Tier 5: Trials of Humility
-			[-948] = "传送网络",		                			-- Transport Network (Kyrian)
-			[-3348] = "等级 1: 信仰之步",			            	-- Tier 1: Step of Faith
-			[-3349] = "等级 2: 力量之跃",	            			-- Tier 2: Leap of Power
-			[-3350] = "等级 3: 永恒之路",			            	-- Tier 3: Eternal Paths
+			[-942] = "晋升之路",										-- Path of Ascension
+			[-943] = "等级 1: 牛刀小试",								-- Tier 1: First Steps
+			[-944] = "等级 2: 神圣试炼",								-- Tier 2: Sacred Trials
+			[-945] = "等级 3: 持续训练",								-- Tier 3: Continued Teaching
+			[-946] = "等级 4: 智慧教导",								-- Tier 4: Teachings of Wisdom
+			[-947] = "等级 5: 谦逊试炼",								-- Tier 5: Trials of Humility
+			[-948] = "传送网络",										-- Transport Network (Kyrian)
+			[-3348] = "等级 1: 信仰之步",							-- Tier 1: Step of Faith
+			[-3349] = "等级 2: 力量之跃",							-- Tier 2: Leap of Power
+			[-3350] = "等级 3: 永恒之路",							-- Tier 3: Eternal Paths
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
 
 		-- SL Revendreth/Venthyr
-			[-949] = "盟约: 温西尔",		            			-- Covenant: Venthyr
-			[-950] = "传送网络",				                	-- Transport Network
+			[-949] = "盟约: 温西尔",									-- Covenant: Venthyr
+			[-950] = "传送网络",										-- Transport Network
 			--TODO: [-951] = "Tier 1: Mirror Mirror",				-- Tier 1: Mirror Mirror
-			[-952] = "等级 2: 通透镜面",		            		-- Tier 2: Looking Glass"
+			[-952] = "等级 2: 通透镜面",								-- Tier 2: Looking Glass"
 			--TODO: [-953] = "Tier 3: Mirror's Edge",				-- Tier 3: Mirror's Edge
 			--TODO: [-954] = "Inquisitors",							-- Inquisitors
 			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
 			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
 			--TODO: [-957] = "Sanctum Upgrades",					-- Sanctum Upgrades (Venthyr)
-			[-958] = "等级 2: 犒劳盛宴",		             		-- Tier 2: Deserved Feast
-			[-959] = "等级 3: 超强效率",	                		-- Tier 3: Superior Efficiency
-			[-960] = "灰烬王庭",		            				-- The Ember Court
-			[-961] = "等级 1: 全新王庭",	        				-- Tier 1: A New Court
-			[-962] = "等级 2: 家用帮手",	            			-- Tier 2: Homegrown Help
-			[-963] = "等级 3: 王庭明星",			                -- Tier 3: Court Influencer
-			[-964] = "等级 4: 敏锐的味觉",	                		-- Tier 4: Discerning Taste
-			[-965] = "等级 5: 专业人士",		                	-- Tier 5: The Professionals
-			[-967] = "破镜重圆",		                			-- "Mirror Restoration",
+			[-958] = "等级 2: 犒劳盛宴",								-- Tier 2: Deserved Feast
+			[-959] = "等级 3: 超强效率",								-- Tier 3: Superior Efficiency
+			[-960] = "灰烬王庭",										-- The Ember Court
+			[-961] = "等级 1: 全新王庭",								-- Tier 1: A New Court
+			[-962] = "等级 2: 家用帮手",								-- Tier 2: Homegrown Help
+			[-963] = "等级 3: 王庭明星",								-- Tier 3: Court Influencer
+			[-964] = "等级 4: 敏锐的味觉",							-- Tier 4: Discerning Taste
+			[-965] = "等级 5: 专业人士",								-- Tier 5: The Professionals
+			[-967] = "破镜重圆",										-- "Mirror Restoration",
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
@@ -969,15 +969,15 @@ for key,value in pairs({
 		[-3230] = "血链",											-- Bloodmail Regalia (Mail)
 		[-3231] = "亡骨",											-- Deathbone Guardian (Plate)
 	-- Cenarion Circle Set (Ruins of Ahn'Qiraj")
-		[-3232] = "无尽的智慧",		                         		-- Priest
+		[-3232] = "无尽的智慧",										-- Priest
 		[-3233] = "神秘套装",										-- Trappings of Vaulted Secrets (Mage)
-		[-3234] = "禁断的邪语",			                            -- Warlock
-		[-3235] = "不灭的生命",			                        	-- Druid
-		[-3236] = "笼罩之阴影",		                         		-- Rogue
-		[-3237] = "隐秘的通途",			                            -- Hunter
-		[-3238] = "聚集的风暴",		                            	-- Shaman
-		[-3239] = "永恒的公正",			                            -- Paladin
-		[-3240] = "坚定的力量",		                                -- Warrior
+		[-3234] = "禁断的邪语",										-- Warlock
+		[-3235] = "不灭的生命",										-- Druid
+		[-3236] = "笼罩之阴影",										-- Rogue
+		[-3237] = "隐秘的通途",										-- Hunter
+		[-3238] = "聚集的风暴",										-- Shaman
+		[-3239] = "永恒的公正",										-- Paladin
+		[-3240] = "坚定的力量",										-- Warrior
 	-- Cloth WQ Gear
 		[-3241] = "焦魔套装",
 		[-3242] = "骨语套装",
