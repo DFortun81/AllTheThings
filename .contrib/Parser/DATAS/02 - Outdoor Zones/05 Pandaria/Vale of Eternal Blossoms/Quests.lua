@@ -8,9 +8,14 @@ _.Zones =
 		m(390, {	-- Vale of Eternal Blossoms
 			n(QUESTS, {
 				q(33229, {	-- A Flash of Bronze...
-					["hordeQuestID"] = 33230,	-- A Flash of Bronze...
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(33230, {	-- A Flash of Bronze...
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(37188, {	-- A Flash of Bronze...
 					["isBreadcrumb"] = true,
