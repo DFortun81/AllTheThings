@@ -12,11 +12,9 @@ _.Zones =
 					["g"] = {
 						i(44221, {	-- Loaned Gryphon Reins
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(44229, {	-- Loaned Wind Rider Reins
-							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

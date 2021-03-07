@@ -7,14 +7,16 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
 			n(QUESTS, {
-				q(33229, {	-- A Flash of Bronze...
+				q(33229, {	-- A Flash of Bronze... (A)
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(33230, {	-- A Flash of Bronze...
+				q(33230, {	-- A Flash of Bronze... (H)
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(37188, {	-- A Flash of Bronze...
@@ -266,6 +268,13 @@ _.Zones =
 					["coord"] = { 62.0, 20.6, 390 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
+				}),
+				q(31015, {	-- Your Private Collection
+					["providers"] = {
+						{ "n", 61962 },	-- Lorewalker Cho
+						{ "n", 63577 },	-- Lorewalker Cho
+					},
+					["coord"] = { 83.2, 29.6, 390 },
 				}),
 				--[[
 				q(31383, {	-- Defense At Niuzao Temple
