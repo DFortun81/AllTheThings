@@ -84,6 +84,7 @@ local L = app.L;
 	L.MIN_MAX_STANDING = "Требуется отношение между";
 	L.AND_ = "И ";
 	L._AND = " и";
+	--TODO: L._MORE = " more";
 	L._OTHER_SOURCES = " другие источники";
 	L.DURING_WQ_ONLY = "Может быть выполнено, когда локальное задание активно.";
 	L.COMPLETED_DAILY = "Может быть выполнено ежедневно.";
@@ -720,6 +721,7 @@ for key,value in pairs({
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
+			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
 
