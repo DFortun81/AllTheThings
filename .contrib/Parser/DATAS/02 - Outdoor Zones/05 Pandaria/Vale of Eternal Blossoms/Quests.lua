@@ -235,6 +235,8 @@ _.Zones =
 				}),
 				q(32679, {	-- Thunder Calls (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 64610 },	-- Lyalia
+					["coord"] = { 84.0, 58.8, 390 },
 				}),
 				q(32678, {	-- Thunder Calls (H)
 					["coord"] = { 62.8, 28.0, 390 },
