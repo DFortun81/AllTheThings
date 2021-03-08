@@ -422,7 +422,28 @@ _.Zones =
 						["questID"] = 59888,
 						["coord"] = { 51.8, 59.5, 1525 },
 						["g"] = {
-							i(182744),	-- Ornate Belt Buckle
+							i(182744, {	-- Ornate Belt Buckle
+								i(182741, {	-- Buckled Cloth Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182742, {	-- Buckled Leather Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182739, {	-- Buckled Chain Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182741, {	-- Buckled Plate Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+							}),
 						},
 					}),
 				}),

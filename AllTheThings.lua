@@ -7559,7 +7559,8 @@ local itemFields = {
 	["collectible"] = function(t)
 		return (rawget(t, "s") and app.CollectibleTransmog)
 			or (rawget(t, "questID") and app.CollectibleAsQuest(t))
-			or (rawget(t, "factionID") and app.CollectibleReputations);
+			or (rawget(t, "factionID") and app.CollectibleReputations)
+			or app.CollectibleAsCost(t);
 	end,
 	["collected"] = function(t)
 		local cache = rawget(t, "s");
@@ -7707,7 +7708,7 @@ end
 local appearanceFields = {
 	["key"] = function(t) return "s"; end,
 	["collectible"] = function(t)
-		return app.CollectibleTransmog;
+		return app.CollectibleTransmog and app.GroupFilter(t);
 	end,
 	["collected"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
@@ -8447,6 +8448,36 @@ app.CollectibleAsQuest = function(t)
 	-- TODO: revisit if party sync option becomes a thing
 	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
+end
+app.CollectibleAsCost = function(t)
+	-- items can only be a cost via 'itemID'
+	if t.modItemID then
+		-- get all the Things referenced by this item 
+		local references = app.SearchForField("itemID", t.modItemID, true);
+		if references then
+			-- print(t.modItemID,"references:")
+			for _,ref in pairs(references) do
+				-- every item will reference itself in cache, so ignore that
+				if t.modItemID ~= ref.modItemID then
+					-- check each to see if any is un-collected and has this same item as a cost
+					-- print(ref.key,ref[ref.key],ref,t)
+					if ref.cost and type(ref.cost) == "table"	-- has a cost
+						and ref.collectible						-- is collectible
+						and not ref.collected					-- not collected
+						then
+						for _,c in pairs(ref.cost) do
+							-- check each cost element to see if it is an 'item' with the itemID of the object being checked
+							if c[1] == "i" and c[2] == t.modItemID then
+								-- return true: this item is required as a 'cost' to something else collectible which has not been collected
+								-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
+								return true;
+							end
+						end
+					end
+				end
+			end
+		end
+	end
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
@@ -9482,8 +9513,9 @@ app.ShowIncompleteThings = app.Filter;
 -- Recursive Checks
 app.VerifyCache = function()
 	if not fieldCache then return false; end
+	app.print("VerifyCache Starting...");
 	for i,keyCache in pairs(fieldCache) do
-		print("keyCache",i);
+		print("Cache",i);
 		for k,valueCache in pairs(keyCache) do
 			-- print("valueCache",k);
 			for o,group in pairs(valueCache) do
@@ -9495,6 +9527,7 @@ app.VerifyCache = function()
 			end
 		end
 	end
+	app.print("VerifyCache Completed");
 end
 -- Verify no infinite parent recursion exists for a given group
 app.VerifyRecursion = function(group, checked)
@@ -9504,14 +9537,14 @@ app.VerifyRecursion = function(group, checked)
 		-- print("test",group.key,group[group.key]);
 	end
 	for k,o in pairs(checked) do
-		if o == group then
-			print("Infinite .parent Recursion Found:");
+		if o.key ~= nil and o.key == group.key and o[o.key] == group[group.key] then
+			-- print("Infinite .parent Recursion Found:");
 			-- print the parent chain to the loop point
-			for a,b in pairs(checked) do
-				print(b.key,b[b.key],b,"=>");
-			end
-			print(group.key,group[group.key],group);
-			print("---");
+			-- for a,b in pairs(checked) do
+				-- print(b.key,b[b.key],b,"=>");
+			-- end
+			-- print(group.key,group[group.key],group);
+			-- print("---");
 			return;
 		end
 	end
@@ -12766,7 +12799,6 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-
 
 		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	end
