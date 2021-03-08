@@ -4,46 +4,51 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(313, { 	-- Temple of the Jade Serpent
-		["lvl"] = 85,
+		["lvl"] = { 10 },
 		["maps"] = { 429, 430 },
 		["groups"] = {
 			n(QUESTS, {
 				q(31356, {	-- Deep Doubts, Deep Wisdom
-					i(87283),	-- Windstrong Leggings
-					i(87284),	-- Leggings of the Fifth Sun
-					i(87285),	-- Legguards of the Tides
-					i(87286),	-- Legplates of Absolute Clarity
-					i(87287),	-- Leggings of Inner Peace
-					i(87288),	-- Lui's Leggings
-					i(87289),	-- Equilibrium Legwraps
-					i(87290),	-- Legguards of Ironclad Confidence
-					i(87291),	-- Legplates of Pure Purpose
+					["provider"] = { "n", 64399 },	-- Master Windstrong
+					["g"] = {
+						i(87283),	-- Windstrong Leggings
+						i(87284),	-- Leggings of the Fifth Sun
+						i(87285),	-- Legguards of the Tides
+						i(87286),	-- Legplates of Absolute Clarity
+						i(87287),	-- Leggings of Inner Peace
+						i(87288),	-- Lui's Leggings
+						i(87289),	-- Equilibrium Legwraps
+						i(87290),	-- Legguards of Ironclad Confidence
+						i(87291),	-- Legplates of Pure Purpose
+					},
 				}),
 				q(31355, {	-- Restoring Jade's Purity
-					i(87292),	-- Flameheart Wristguards
-					i(87293),	-- Defiant Archer's Bracers
-					i(87294),	-- Scrollkeeper's Cuffs
-					i(87295),	-- Summerpetal Cuffs
-					i(87296),	-- Coiled Serpent Armband
-					i(87297),	-- Wise Mari's Bracers
-					i(87298),	-- Bracers of Ancient Tales
-					i(87299),	-- Eversight Armplates
-					i(87300),	-- Armplates of the Jade Idol
+					["provider"] = { "n", 60578 },	-- Priestess Summerpetal
+					["g"] = {
+						i(87292),	-- Flameheart Wristguards
+						i(87293),	-- Defiant Archer's Bracers
+						i(87294),	-- Scrollkeeper's Cuffs
+						i(87295),	-- Summerpetal Cuffs
+						i(87296),	-- Coiled Serpent Armband
+						i(87297),	-- Wise Mari's Bracers
+						i(87298),	-- Bracers of Ancient Tales
+						i(87299),	-- Eversight Armplates
+						i(87300),	-- Armplates of the Jade Idol
+					},
 				}),
 			}),
 			d(1, {	-- Normal
 				n(QUESTS, {
-					{
-						["questID"] = 33107,		-- Bad Feeling, Worse Result
+					q(33107, {	-- Bad Feeling, Worse Result
 						["objectID"] = 221413,		-- Lin Family Scroll
-						["sourceQuest"] = 33020,	-- Source Quest: The Lost Secret of the Secret Ingredient
+						["sourceQuest"] = 33020,	-- The Lost Secret of the Secret Ingredient
 						["groups"] = {
 							{
 								["creatureID"] = 72726,		-- Ghost of Lin Da-Gu
 								["questID"] = 33107,		-- Bad Feeling, Worse Result
 							},
 						},
-					},
+					}),
 					o(221413, {	-- Lin Family Scroll
 						["model"] = 534984,
 						["modelScale"] = 2,
