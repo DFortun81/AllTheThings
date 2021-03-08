@@ -1844,9 +1844,7 @@ _.Zones =
 								i(162905),	-- Dread Aspirant's Plate Warboots
 							},
 						}),
-					
 					--	Dread Gladiator, Battle for Azeroth Season 1
-					--	TODO: add other sets, requires purchasing to verify which offset pieces are included (kill me)
 						i(184666, {	-- Arsenal: Dread Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
@@ -1928,7 +1926,6 @@ _.Zones =
 						}),
 					
 					--	Sinister Aspirant, Battle for Azeroth Season 2
-					--	TODO: probably a corresponding set cloak comes from the Sinister Aspirant ensembles, but i can't test because i already have the cloth set cloak.  figure out, add to each ensemble, remove "removed from game" tag in general pvp file
 						i(184672, {	-- Arsenal: Sinister Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
@@ -2004,7 +2001,6 @@ _.Zones =
 						}),
 					
 					--	Sinister Gladiator, Battle for Azeroth Season 2
-					--	TODO: add other sets, requires purchasing to verify which offset pieces are included (kill me)
 						i(184670, {	-- Arsenal: Sinister Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
@@ -2240,7 +2236,7 @@ _.Zones =
 							},
 						}),
 					
-					--	Corrupted Aspirant, Battle for Azeroth Season 4 (no ensembles for this yet!)
+					--	Corrupted Aspirant, Battle for Azeroth Season 4 (no ensembles for this yet!  Aspirant pieces sold individually in SW/Org)
 						i(184680, {	-- Arsenal: Corrupted Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
