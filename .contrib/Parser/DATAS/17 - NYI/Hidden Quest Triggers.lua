@@ -981,6 +981,7 @@ _.HiddenQuestTriggers =
 		q(36895),	-- Nemesis Flag, Worgen/Goblin
 		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
 		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
+		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -1204,6 +1205,7 @@ _.HiddenQuestTriggers =
 		q(41137),	-- Suramar - triggered when killing Cora'kar. Wowhead reports it as a quest, but there's no such quest ingame. Probably changed sometime during beta
 		q(43840),	-- Suramar - triggered when looting the chest at 48.6, 42.6 along with a different ID. This one appears to be a duplicate and/or a bug on blizzard's end
 		q(43566),	-- Suramar - Withered Progress
+		q(43141),	-- 7.0 Suramar Collapse Scenario - Treasure 03 - Army Size Increase 03
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
@@ -1692,6 +1694,7 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(39274),	-- Defend the Riverlands
 		q(39576),	-- Echoes of Deathwing
 		q(40050),	-- Shipwreck Cove
 		q(39317),	-- Siege of Crawliac
@@ -3236,6 +3239,7 @@ _.HiddenQuestTriggers =
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
+		q(62960),	-- triggered after questID #62459, "Go Beyond!"
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
