@@ -887,6 +887,9 @@ _.HiddenQuestTriggers =
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
 		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
 		q(39187),	-- learning Immaculate Stamina Taladite
+		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
+		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
+		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -986,6 +989,10 @@ _.HiddenQuestTriggers =
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
+		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1218,6 +1225,7 @@ _.HiddenQuestTriggers =
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
+		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7

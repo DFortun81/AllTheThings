@@ -212,6 +212,27 @@ _.Zones =
 						i(111814),	-- Gem Boutique, Level 1
 					},
 				}),
+				q(36419, {	-- Dyed in the Fur
+					["requireSkill"] = TAILORING,
+					["sourceQuests"] = { 36417 },	-- From Their Cold Dead Hands
+					["provider"] = { "n", 84689 },	-- Trega
+					["coord"] = { 20.4, 60.6, 525 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(115357, {	-- Draenor Tailoring
+							["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
+							["collectible"] = false,
+							["g"] = {
+								recipe(168835),	-- Hexweave Cloth
+								recipe(176058),	-- Secrets of Draenor Tailoring
+								recipe(168852),	-- Sumptuous Cowl
+								recipe(168854),	-- Sumptuous Leggings
+								recipe(168853),	-- Sumptuous Robes
+							},
+						}),
+						i(111816),	-- Tailoring Emporium, Level 1
+					},
+				}),
 				q(34292, {	-- Eliminate the Shadow Council
 					["provider"] = { "n", 72836 },	-- Cordana Felsong
 					["coord"] = { 31.8, 11.8, 525 },
@@ -241,6 +262,13 @@ _.Zones =
 					["coord"] = { 31.7, 11.8, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34227,	-- What Must Be Done
+				}),
+				q(36257, {	-- Failed Apprentice
+					["requireSkill"] = ENCHANTING,
+					["sourceQuests"] = { 36256 },	-- The Arakkoan Enchanter
+					["provider"] = { "n", 84739 },	-- Arcanist Delath
+					["coord"] = { 54.4, 51.8, 525 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(34325, {	-- Flames of the Earth
 					["provider"] = { "n", 77998 },	-- Molthron
@@ -281,6 +309,13 @@ _.Zones =
 						{ "n", 74507 },	-- Wor'gol Defender
 						{ "n", 79415 },	-- Durotan
 					},
+				}),
+				q(36417, {	-- From Their Cold Dead Hands
+					["requireSkill"] = TAILORING,
+					["sourceQuests"] = { 36301 },	-- Trega's Tailoring Kit
+					["provider"] = { "n", 84689 },	-- Trega
+					["coord"] = { 20.4, 60.6, 525 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(34501, {	-- Frostbite Hollow
 					["coord"] = { 66.1, 18.0, 525 },
@@ -550,6 +585,33 @@ _.Zones =
 						i(112687),	-- Chain of Biting Winds
 						i(112688),	-- Choker of Scalding Fire
 						i(112689),	-- Gorget of Flowing Earth
+					},
+				}),
+				q(36260, {	-- Oru'kai's Scepter
+					["requireSkill"] = ENCHANTING,
+					["sourceQuests"] = { 36257 },	-- Failed Apprentice
+					["provider"] = { "n", 84747 },	-- Torag Stonefury
+					["coord"] = { 55.8, 48.6, 525 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(111922, {		-- Draenor Enchanting
+							["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+							["collectible"] = false,
+							["g"] = {
+								recipe(177043),	-- Secrets of Draenor Enchanting
+								recipe(169092),	-- Temporal Crystal
+								recipe(169091),	-- Luminous Shard
+								recipe(162948),	-- Enchanted Dust
+								recipe(158907),	-- Breath of Critical Strike
+								recipe(158908),	-- Breath of Haste
+								recipe(158909),	-- Breath of Mastery
+								recipe(158896),	-- Breath of Versatility
+								un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
+								recipe(158911),	-- Breath of Versatility
+								recipe(159236),	-- Mark of the Shattered Hand
+							},
+						}),
+						i(111817),	-- Enchanter's Study, Level 1
 					},
 				}),
 				q(34281, {	-- Out of the Chains

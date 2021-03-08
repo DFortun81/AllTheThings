@@ -254,6 +254,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80078 },	-- Exarch Akama
 				}),
+				q(36313, {	-- Failed Apprentice
+					["requireSkill"] = ENCHANTING,
+					["sourceQuests"] = { 36310 },	-- The Arakkoan Enchanter
+					["provider"] = { "n", 84966 },	-- Arcanist Delath
+					["coord"] = { 37.4, 72.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(36185, {	-- Fair Trade
 					["provider"] = { "n", 84385 },	-- Fanara
 					["coord"] = { 44.2, 40.9, 539 },
@@ -421,6 +428,27 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 				}),
+				q(36269, {	-- Hexcloth
+					["requireSkill"] = TAILORING,
+					["sourceQuests"] = { 36266 },	-- The Clothes on Their Backs
+					["provider"] = { "n", 84523 },	-- Ameeka
+					["coord"] = { 58.2, 26.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(115357, {	-- Draenor Tailoring
+							["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
+							["collectible"] = false,
+							["g"] = {
+								recipe(168835),	-- Hexweave Cloth
+								recipe(176058),	-- Secrets of Draenor Tailoring
+								recipe(168852),	-- Sumptuous Cowl
+								recipe(168854),	-- Sumptuous Leggings
+								recipe(168853),	-- Sumptuous Robes
+							},
+						}),
+						i(111816),	-- Tailoring Emporium, Level 1
+					},
+				}),
 				q(33813, {	-- In Need of a Hero
 					["sourceQuests"] = { 33070 },	-- Think of the Children! (must have picked up)
 					["coord"] = { 52.0, 32.7, 539 },
@@ -484,6 +512,33 @@ _.Zones =
 					["coord"] = { 35.7, 36.8, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81176 },	-- Rangari Saa'to
+				}),
+				q(36315, {	-- Orukai's Staff
+					["requireSkill"] = ENCHANTING,
+					["sourceQuests"] = { 36313 },	-- Failed Apprentice
+					["provider"] = { "n", 84963 },	-- Deema
+					["coord"] = { 35.6, 72.2, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(111922, {		-- Draenor Enchanting
+							["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+							["collectible"] = false,
+							["g"] = {
+								recipe(177043),	-- Secrets of Draenor Enchanting
+								recipe(169092),	-- Temporal Crystal
+								recipe(169091),	-- Luminous Shard
+								recipe(162948),	-- Enchanted Dust
+								recipe(158907),	-- Breath of Critical Strike
+								recipe(158908),	-- Breath of Haste
+								recipe(158909),	-- Breath of Mastery
+								recipe(158896),	-- Breath of Versatility
+								un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
+								recipe(158911),	-- Breath of Versatility
+								recipe(159236),	-- Mark of the Shattered Hand
+							},
+						}),
+						i(111817),	-- Enchanter's Study, Level 1
+					},
 				}),
 				q(35006, {	-- Poison Paralysis
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
@@ -690,6 +745,13 @@ _.Zones =
 					["coord"] = { 40.6, 54.9, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79043 },	-- Prophet Velen
+				}),
+				q(36266, {	-- The Clothes on Their Backs
+					["requireSkill"] = TAILORING,
+					["sourceQuests"] = { 36262 },	-- Ameeka, Master Tailor
+					["provider"] = { "n", 84523 },	-- Ameeka
+					["coord"] = { 58.2, 26.6, 539 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34054, {	-- The Dark Side of the Moon
 					["sourceQuests"] = { 35032 },	-- Into Anguish
