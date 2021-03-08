@@ -3727,6 +3727,7 @@ _.HiddenQuestTriggers =
 		q(62398),	-- learning Sinwrath illusion
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
+		q(59687),	-- using "Dog Bone's Bone"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
