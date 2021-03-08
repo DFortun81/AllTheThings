@@ -128,6 +128,15 @@ _.NeverImplemented =
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
+		-- Leather Alliance
+		un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's Leather Tunic
+		un(NEVER_IMPLEMENTED, i(166947)),	-- Dread Gladiator's Leather Boots
+		un(NEVER_IMPLEMENTED, i(166948)),	-- Dread Gladiator's Leather Gloves
+		un(NEVER_IMPLEMENTED, i(166949)),	-- Dread Gladiator's Leather Helm
+		un(NEVER_IMPLEMENTED, i(166950)),	-- Dread Gladiator's Leather Legguards
+		un(NEVER_IMPLEMENTED, i(166951)),	-- Dread Gladiator's Leather Spaulders
+		un(NEVER_IMPLEMENTED, i(166952)),	-- Dread Gladiator's Leather Belt
+		un(NEVER_IMPLEMENTED, i(166953)),	-- Dread Gladiator's Leather Bindings
 		-- Leather Horde (you probably will learn both after learning one)
 		un(NEVER_IMPLEMENTED, i(166915)),	-- Dread Gladiator's leather tunic
 		un(NEVER_IMPLEMENTED, i(166916)),	-- Dread Gladiator's leather boots
@@ -140,7 +149,25 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163436)),	-- Honorbound Outrider's Faceguard
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
-
+		
+		-- Mail Alliance
+		un(NEVER_IMPLEMENTED, i(166954)),	-- Dread Gladiator's Chain Armor
+		un(NEVER_IMPLEMENTED, i(166955)),	-- Dread Gladiator's Chain Sabatons
+		un(NEVER_IMPLEMENTED, i(166956)),	-- Dread Gladiator's Chain Gauntlets
+		un(NEVER_IMPLEMENTED, i(166957)),	-- Dread Gladiator's Chain Helm
+		un(NEVER_IMPLEMENTED, i(166958)),	-- Dread Gladiator's Chain Leggings
+		un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain Spaulders
+		un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain Waistguard
+		un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain Armbands
+		-- Mail Horde
+		un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain Armor
+		un(NEVER_IMPLEMENTED, i(166924)),	-- Dread Gladiator's Chain Sabatons
+		un(NEVER_IMPLEMENTED, i(166925)),	-- Dread Gladiator's Chain Gauntlets
+		un(NEVER_IMPLEMENTED, i(166926)),	-- Dread Gladiator's Chain Helm
+		un(NEVER_IMPLEMENTED, i(166927)),	-- Dread Gladiator's Chain Leggings
+		un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain Spaulders
+		un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain Waistguard
+		un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain Armbands
 
 		-- Scrapped Lv20 Gear (??)
 		un(NEVER_IMPLEMENTED, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?

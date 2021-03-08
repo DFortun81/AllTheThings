@@ -2507,7 +2507,7 @@ _.ExpansionFeatures =
 										i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
 										i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
 										i(181441, {	-- Altar of Accomplishment
-											["cost"] = { { "c", 1816, 25 } },
+											["cost"] = { { "c", 1813, 25 } },	-- 25x Reservoir Anima
 											["g"] = {
 												crit(21, {	-- Altar of Accomplishment
 													["achievementID"] = 14678,	-- Court Favors
@@ -2515,7 +2515,7 @@ _.ExpansionFeatures =
 											},
 										}),
 										i(181517, {	-- Building: Dredger Pool
-											["cost"] = { { "c", 1816, 100 } },
+											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 											["g"] = {
 												crit(1, {	-- Building: Dredger Pool
 													["achievementID"] = 14679,	-- Party Palace
@@ -2523,7 +2523,7 @@ _.ExpansionFeatures =
 											},
 										}),
 										i(181518, {	-- Building: Guardhouse
-											["cost"] = { { "c", 1816, 100 } },
+											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 											["g"] = {
 												crit(2, {	-- Building: Guardhouse
 													["achievementID"] = 14679,	-- Party Palace

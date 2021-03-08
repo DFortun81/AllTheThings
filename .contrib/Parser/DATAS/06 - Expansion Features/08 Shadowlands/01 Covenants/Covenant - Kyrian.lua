@@ -1001,6 +1001,9 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62280, {	-- Limbo
+								["isWorldQuest"] = true,
+							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
 						}),

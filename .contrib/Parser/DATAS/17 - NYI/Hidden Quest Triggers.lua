@@ -699,6 +699,7 @@ _.HiddenQuestTriggers =
 		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
+		q(33385),	-- Kairoz Weekly Tracking Quest
 		-- TREASURES
 		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
 		q(33216),	-- One-Time Chest - T1G1, secondary trigger
@@ -3726,6 +3727,7 @@ _.HiddenQuestTriggers =
 		q(62398),	-- learning Sinwrath illusion
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
+		q(59687),	-- using "Dog Bone's Bone"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
