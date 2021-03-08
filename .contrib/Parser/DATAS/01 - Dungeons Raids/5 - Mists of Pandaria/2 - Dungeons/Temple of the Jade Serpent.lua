@@ -4,9 +4,9 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(313, { 	-- Temple of the Jade Serpent
-		["lvl"] = { 10 },
 		["maps"] = { 429, 430 },
-		["groups"] = {
+		["lvl"] = { 10 },
+		["g"] = {
 			n(QUESTS, {
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					["provider"] = { "n", 64399 },	-- Master Windstrong
@@ -40,24 +40,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(1, {	-- Normal
 				n(QUESTS, {
 					q(33107, {	-- Bad Feeling, Worse Result
-						["objectID"] = 221413,		-- Lin Family Scroll
-						["sourceQuest"] = 33020,	-- The Lost Secret of the Secret Ingredient
-						["groups"] = {
-							{
-								["creatureID"] = 72726,		-- Ghost of Lin Da-Gu
-								["questID"] = 33107,		-- Bad Feeling, Worse Result
-							},
-						},
-					}),
-					o(221413, {	-- Lin Family Scroll
-						["model"] = 534984,
+						["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
 						["modelScale"] = 2,
-						["g"] = {
-							q(33107, {	-- Bad Feeling, Worse Result
-								["requireSkill"] = COOKING,
-								["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
-							}),
-						},
+						["provider"] = { "o", 221413 },	-- Lin Family Scroll
+						["model"] = 534984,
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -118,7 +104,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 90,
-				["groups"] = {
+				["g"] = {
 					cr(56448, e(672, {	-- Wise Mari
 						ach(6460),	-- Hydrophobia
 						i(144017),	-- Waterburst Helm
@@ -143,11 +129,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(REMOVED_FROM_GAME, i(81073)),	-- Stonestep Boots (7.1 - Removed from Game!)
 					})),
 					cr(56732, e(658, {	-- Liu Flameheart
-						{	-- Polyformic Acid Science: Liu Flameheart
+						crit(2, {	-- Liu Flameheart
 							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["criteriaID"] = 2,	-- Liu Flameheart
 							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						},
+						}),
 						i(144090),	-- Firebelcher Hand Cannon
 						i(143971),	-- Serpentstrike Shoulderpads
 						i(144094),	-- Cape of Entaglement
@@ -190,7 +175,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 91,
-				["groups"] = {
+				["g"] = {
 					cr(56448, e(672, {	-- Wise Mari
 						i(144017),	-- Waterburst Helm
 						i(144111),	-- Wind-Soaked
