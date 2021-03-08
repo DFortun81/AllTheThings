@@ -33,6 +33,7 @@ _.Craftables =
 								i(41508),	-- Mechano-Hog Mount
 								i(44413),	-- Mekgineer's Chopper Mount
 								--i(115483),	-- Sky-Bo Pet -- one random report with no screenshot
+								i(21277),	-- Tranquil Mechanical Yeti Pet (confirmed 9.0.1)
 							}),
 						},
 					}),
