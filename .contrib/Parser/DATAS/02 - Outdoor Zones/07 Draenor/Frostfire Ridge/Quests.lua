@@ -160,13 +160,24 @@ _.Zones =
 					["sourceQuest"] = 34362,	-- The Shadow Gate
 				}),
 				q(36516, {	-- Cut 'Em Out!
+					["requireSkill"] = LEATHERWORKING,
+					["sourceQuests"] = { 36505 },	-- A Warrior's Shroud
 					["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
 					["coord"] = { 20.6, 60.2, 525 },
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
 						i(115358, {	-- Draenor Leatherworking
 							["collectible"] = false,
+							["g"] = {
+								recipe(171391),	-- Burnished Leather
+								i(116319),	-- Recipe: Journeying Helm
+								i(116320),	-- Recipe: Journeying Robes
+								i(116321),	-- Recipe: Journeying Slacks
+								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
+								i(116322),	-- Recipe: Traveling Helm
+								i(116324),	-- Recipe: Traveling Leggings
+								i(116323),	-- Recipe: Traveling Tunic
+							},
 						}),
 						i(117566),	-- Heavy Frostwolf Shroud
 						i(111818),	-- The Tannery, lvl 1

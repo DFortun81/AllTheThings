@@ -262,15 +262,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36185, {	-- Fair Trade
+					["requireSkill"] = LEATHERWORKING,
+					["sourceQuests"] = { 36177 },	-- Friendly Competition
 					["provider"] = { "n", 84385 },	-- Fanara
 					["coord"] = { 44.2, 40.9, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(111818),	-- The Tannery, Level 1
 						i(115358, {	-- Draenor Leatherworking
 							["collectible"] = false,
+							["g"] = {
+								recipe(171391),	-- Burnished Leather
+								i(116319),	-- Recipe: Journeying Helm
+								i(116320),	-- Recipe: Journeying Robes
+								i(116321),	-- Recipe: Journeying Slacks
+								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
+								i(116322),	-- Recipe: Traveling Helm
+								i(116324),	-- Recipe: Traveling Leggings
+								i(116323),	-- Recipe: Traveling Tunic
+							},
 						}),
+						i(111818),	-- The Tannery, Level 1
 					},
 				}),
 				q(33814, {	-- Fast Expansion
@@ -351,11 +362,11 @@ _.Zones =
 					},
 				}),
 				q(36177, {	-- Friendly Competition
+					["requireSkill"] = LEATHERWORKING,
+					["sourceQuests"] = { 36176 },	-- A Call for Huntsman
 					["provider"] = { "n", 84385 },	-- Fanara
 					["coord"] = { 44.2, 40.9, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 36176,	-- A Call for Huntsman
-					["requireSkill"] = LEATHERWORKING,
 				}),
 				q(37332, {	-- Fungal Bundle
 					["providers"] = {
