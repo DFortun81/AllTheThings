@@ -10529,9 +10529,10 @@ function app:CreateMiniListForGroup(group)
 			end;
 		elseif (group.key == "questID" and group.questID) or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
-				group = group.parent;
-			end
+			-- This causes a popout insertion into the Main list when a popout group has a parent (in Main list) with the same questID (#714)
+			-- if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
+			-- 	group = group.parent;
+			-- end
 			local root = group;
 			root.collectible = not root.repeatable;
 			local g = { root };
