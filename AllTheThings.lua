@@ -5262,6 +5262,11 @@ app.GetMapName = function(mapID)
 		return "Map ID #???";
 	end
 end
+app.GetMapLevel = function(mapID)
+	if mapID and mapID > 0 then
+		return select(1, C_Map.GetMapLevels(mapID))
+	end
+end
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
 end
@@ -7810,7 +7815,7 @@ app.BaseMap = {
 		elseif key == "icon" then
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
 		elseif key == "lvl" then
-			return select(1, C_Map.GetMapLevels(t.mapID));
+			return app.GetMapLevel(t.mapID);
 		elseif key == "sort" then
 			if t.order then return t.order .. app.GetMapName(t.mapID) end
 			if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
