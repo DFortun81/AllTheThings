@@ -1418,6 +1418,14 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109541)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(109543)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(109548)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(178356)),	-- Sinful Gladiator's Chain tunic
+			un(NEVER_IMPLEMENTED, i(178360)),	-- Sinful Gladiator's Chain boots
+			un(NEVER_IMPLEMENTED, i(178365)),	-- Sinful Gladiator's Chain handguards
+			un(NEVER_IMPLEMENTED, i(178367)),	-- Sinful Gladiator's Chain faceguard
+			un(NEVER_IMPLEMENTED, i(178371)),	-- Sinful Gladiator's Chain breeches
+			un(NEVER_IMPLEMENTED, i(178376)),	-- Sinful Gladiator's Chain shoulderguards
+			un(NEVER_IMPLEMENTED, i(178379)),	-- Sinful Gladiator's Chain girdle
+			un(NEVER_IMPLEMENTED, i(178384)),	-- Sinful Gladiator's Chain bracers
 			un(NEVER_IMPLEMENTED, i(158536)),	-- saurscale wristguards
 			un(NEVER_IMPLEMENTED, i(158537)),	-- saurscale gloves
 			un(NEVER_IMPLEMENTED, i(158538)),	-- saurscale leggings

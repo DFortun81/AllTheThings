@@ -147,16 +147,6 @@ _.PVP =
 
 				}),
 				n(-45,  {	-- Mail
-				--[[ TODO: move to NYI, yet again, i am lazy
-					i(178356),	-- Sinful Gladiator's Chain tunic
-					i(178360),	-- Sinful Gladiator's Chain boots
-					i(178365),	-- Sinful Gladiator's Chain handguards
-					i(178367),	-- Sinful Gladiator's Chain faceguard
-					i(178371),	-- Sinful Gladiator's Chain breeches
-					i(178376),	-- Sinful Gladiator's Chain shoulderguards
-					i(178379),	-- Sinful Gladiator's Chain girdle
-					i(178384),	-- Sinful Gladiator's Chain bracers
-					--]]
 					i(175914),	-- Sinful Gladiator's Chain Belt
 					i(178360),	-- Sinful Gladiator's Chain Boots
 					i(178384),	-- Sinful Gladiator's Chain Bracers
