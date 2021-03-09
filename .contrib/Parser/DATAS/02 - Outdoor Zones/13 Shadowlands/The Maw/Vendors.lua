@@ -35,6 +35,15 @@ _.Zones =
 							}),
 						},
 					}),
+					i(184901, {	-- Broker Traversal Enhancer
+						["questID"] = 63523,
+						["cost"] = { { "c", 1767, 875 } },
+						["g"] = {
+							crit(13, {
+								["achievementID"] = 14895,	-- 'Ghast Five
+							}),
+						},
+					}),
 					i(180817, {	-- Cypher of Relocation
 						["cost"] = { { "c", 1767, 60 } },
 					}),
