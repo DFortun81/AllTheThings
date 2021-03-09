@@ -102,6 +102,7 @@ i(28421);	-- Adamantite Weightstone
 
 i(34258);	-- Love Rocket
 i(180686);	-- "Borrowed" Soulstone
+i(181616);	-- A Treatise on the Great Battles of Lordaeron
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
@@ -399,6 +400,7 @@ i(2460);	-- Elixir of Tongues
 i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
 i(171206);	-- Forgotten Weapon
 i(173786);	-- Ghostly Pale Ale
+i(181369);	-- Giant Lungcap
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
 i(173785);	-- Hidden Banana
