@@ -12,9 +12,9 @@ _.Zones =
 					["coord"] = { 63.5, 59.3, 750 },
 				}),
 				n(95958, {	-- Floating Treasure
+					["description"] = "Can be found floating down the river.",
 					["questID"] = 39494,
 					["coord"] = { 39.2, 47.8, 650 },
-					["description"] = "Can be found floating down the river.",
 				}),
 				o(243698, {	-- Glimmering Treasure Chest
 					["questID"] = 39471,
@@ -90,9 +90,9 @@ _.Zones =
 					["coord"] = { 43.7, 72.7, 650 },
 				}),
 				o(255828, {	-- Small Treasure Chest
+					["description"] = "In an underwater cave.",
 					["questID"] = 44279,
 					["coord"] = { 45.2, 27.4, 650 },
-					["description"] = "In an underwater cave.",
 				}),
 				o(255829, {	-- Small Treasure Chest
 					["questID"] = 44280,
@@ -115,6 +115,11 @@ _.Zones =
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 						}),
 					},
+				}),
+				o(245548, {	-- Treasure Chest
+					["description"] = "Inside Mucksnout Den.  Cave entrance is at |cFFFFFFFF41.6, 46.9|r.",
+					["questID"] = 40494,
+					["coord"] = { 60.7, 25.2, 654 },	-- Mucksnout Den
 				}),
 				o(244494, {	-- Treasure Chest
 					["questID"] = 39812,

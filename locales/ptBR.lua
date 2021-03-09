@@ -2132,6 +2132,7 @@ for key,value in pairs({
 	--TODO: [245543] = "Treasure Chest",
 	--TODO: [245545] = "Small Treasure Chest",
 	--TODO: [245547] = "Small Treasure Chest",
+	[245548] = "Baú do Tesouro",
 	--TODO: [245550] = "Treasure Chest",
 	--TODO: [245551] = "Small Treasure Chest",
 	--TODO: [245553] = "Treasure Chest",

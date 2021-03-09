@@ -10,18 +10,27 @@ _.ExpansionFeatures =
 				garrisonBuilding(128,  {	-- Enchanter's Study (rank 1: 94, rank 2: 127, rank 3: 128)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						n(QUESTS, {
+							q(36262, {	-- Ameeka, Master Tailor
+								["requireSkill"] = TAILORING,
+								["sourceQuests"] = { 36236 },	-- The Cryptic Tome of Tailoring
+								["provider"] = { "n", 84776 },	-- Aerun
+								["races"] = ALLIANCE_ONLY,
+							}),
+						}),
 						n(VENDORS, {
 							n(77382, { 	-- Christopher Macdonald <Tailor>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(115357, {	-- Draenor Tailoring
+										["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 										["collectible"] = false,
 										["g"] = {
-											i(114868),	-- Pattern: Sumptuous Cowl
-											i(114870),	-- Pattern: Sumptuous Leggings
-											i(114869),	-- Pattern: Sumptuous Robes
-											i(114851),	-- Recipe: Hexweave Cloth
-											i(120128),	-- Recipe: Secrets of Draenor Tailoring
+											recipe(168835),	-- Hexweave Cloth
+											recipe(176058),	-- Secrets of Draenor Tailoring
+											recipe(168852),	-- Sumptuous Cowl
+											recipe(168854),	-- Sumptuous Leggings
+											recipe(168853),	-- Sumptuous Robes
 										},
 									}),
 									i(114863, {	-- Pattern: Brilliant Hexweave Cloak

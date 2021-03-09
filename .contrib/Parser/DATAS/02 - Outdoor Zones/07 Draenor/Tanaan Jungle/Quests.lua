@@ -45,9 +45,6 @@ _.Zones =
 				}),
 				q(38213),	-- Get a Clue
 				q(39129),	-- Ill Tempered
-				q(38599, {	-- Infrastructure Improvements
-					["races"] = HORDE_ONLY,
-				}),
 				q(37839, {	-- Light Be With You
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -334,6 +331,11 @@ _.Zones =
 				q(37934, {	-- In, Through, and Beyond!
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 37890,	-- Obstacle Course
+				}),
+				q(38599, {	-- Infrastructure Improvements
+					["provider"] = { "n", 90991 },	-- Lil' Trix
+					["coord"] = { 59.8, 47.5, 534 },
+					["races"] = HORDE_ONLY,
 				}),
 				o(240317, {	-- Iskar's Tome of Shadows
 					["g"] = {

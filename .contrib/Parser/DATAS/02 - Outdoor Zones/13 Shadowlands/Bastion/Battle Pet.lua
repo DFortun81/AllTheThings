@@ -11,6 +11,8 @@ _.Zones =
 					["crs"] = { 171702 },	-- Copperfur Kit
 				}),
 				p(2926, {	-- Fledgling Teroclaw
+					["description"] = "Inside one of the cartel's containment units, next to a few other Bastion animals.  The pet's respawn time is less than 5 minutes.",
+					["coord"] = { 31.6, 34.1, 1533 },
 					["crs"] = { 171567 },	-- Fledgling Teroclaw
 				}),
 				p(2927, {	-- Fluttering Glimmerfly

@@ -4258,6 +4258,7 @@ app.L = {
 		[245543] = "Treasure Chest",
 		[245545] = "Small Treasure Chest",
 		[245547] = "Small Treasure Chest",
+		[245548] = "Treasure Chest",
 		[245550] = "Treasure Chest",
 		[245551] = "Small Treasure Chest",
 		[245553] = "Treasure Chest",

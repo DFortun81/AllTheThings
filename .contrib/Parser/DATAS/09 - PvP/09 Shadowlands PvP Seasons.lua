@@ -147,16 +147,6 @@ _.PVP =
 
 				}),
 				n(-45,  {	-- Mail
-				--[[ TODO: move to NYI, yet again, i am lazy
-					i(178356),	-- Sinful Gladiator's Chain tunic
-					i(178360),	-- Sinful Gladiator's Chain boots
-					i(178365),	-- Sinful Gladiator's Chain handguards
-					i(178367),	-- Sinful Gladiator's Chain faceguard
-					i(178371),	-- Sinful Gladiator's Chain breeches
-					i(178376),	-- Sinful Gladiator's Chain shoulderguards
-					i(178379),	-- Sinful Gladiator's Chain girdle
-					i(178384),	-- Sinful Gladiator's Chain bracers
-					--]]
 					i(175914),	-- Sinful Gladiator's Chain Belt
 					i(178360),	-- Sinful Gladiator's Chain Boots
 					i(178384),	-- Sinful Gladiator's Chain Bracers
@@ -287,7 +277,7 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite Gear
-				["g"] = bubbleDown({["modID"] = 45, ["u"] = 14 }, {
+				["g"] = bubbleDown({["modID"] = 45, --[[["u"] = 14]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
 					n(-319, {	-- Weapons
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 							-- These are only available to Kyrian covenant members

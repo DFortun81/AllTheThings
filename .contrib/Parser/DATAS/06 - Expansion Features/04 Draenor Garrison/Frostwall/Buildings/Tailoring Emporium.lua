@@ -15,13 +15,14 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(115357, {	-- Draenor Tailoring
+										["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 										["collectible"] = false,
 										["g"] = {
-											i(114868),	-- Pattern: Sumptuous Cowl
-											i(114870),	-- Pattern: Sumptuous Leggings
-											i(114869),	-- Pattern: Sumptuous Robes
-											i(114851),	-- Recipe: Hexweave Cloth
-											i(120128),	-- Recipe: Secrets of Draenor Tailoring
+											recipe(168835),	-- Hexweave Cloth
+											recipe(176058),	-- Secrets of Draenor Tailoring
+											recipe(168852),	-- Sumptuous Cowl
+											recipe(168854),	-- Sumptuous Leggings
+											recipe(168853),	-- Sumptuous Robes
 										},
 									}),
 									i(114863, {	-- Pattern: Brilliant Hexweave Cloak

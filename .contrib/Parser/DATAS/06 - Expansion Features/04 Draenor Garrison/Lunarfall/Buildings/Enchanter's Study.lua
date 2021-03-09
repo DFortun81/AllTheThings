@@ -19,6 +19,12 @@ _.ExpansionFeatures =
 								["isDaily"] = true,
 								["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 							}),
+							q(36310, {	-- The Arakkoan Enchanter
+								["requireSkill"] = ENCHANTING,
+								["sourceQuests"] = { 36308 },	-- Enchanted Highmaul Bracer
+								["provider"] = { "n", 83491 },	-- Eileese Shadowsong
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(36645, {	-- Your First Enchanting Work Order
 								["provider"] = { "n", 77354 },	-- Ayada the White
 								["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust

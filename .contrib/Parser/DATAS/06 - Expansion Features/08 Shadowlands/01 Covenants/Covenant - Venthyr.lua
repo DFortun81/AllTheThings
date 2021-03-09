@@ -1345,6 +1345,8 @@ _.ExpansionFeatures =
 											crit(3, {	-- Mikanikos
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181227),	-- Bronze Ceremonial Targe
+											i(181564),	-- Decree: Mikanikos's Esteem
 										},
 									}),
 									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
