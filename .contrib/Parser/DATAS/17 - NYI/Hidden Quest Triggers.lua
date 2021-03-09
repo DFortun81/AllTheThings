@@ -3584,11 +3584,13 @@ _.HiddenQuestTriggers =
 		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
+		q(59632),	-- triggered when leaving Ember Court scenario
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
+		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
