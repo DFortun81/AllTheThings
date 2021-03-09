@@ -202,7 +202,7 @@ _.Mounts =
 		i(44086, {	-- Grand Ice Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
-		i(182332),	-- Gravestone Battle Armor
+		i(182332),	-- Gravestone Battle Armor -- TODO: maybe move to a different category?
 		i(29744),	-- Gray Elekk
 		i(15277),	-- Gray Kodo
 		i(5864),	-- Gray Ram
