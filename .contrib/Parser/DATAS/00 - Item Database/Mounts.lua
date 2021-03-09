@@ -369,3 +369,8 @@ i(183615, 341766);	-- Warstitched Darkhound
 i(180730, 334366);	-- Wild Glimmerfur Prowler
 i(180731, 334352);	-- Wildseed Cradle
 i(180415, 332245);	-- Winterborn Runestag
+
+-----------------
+-- PATCH 9.0.5 --
+-----------------
+i(184168, 344577);	-- Bound Shadehound

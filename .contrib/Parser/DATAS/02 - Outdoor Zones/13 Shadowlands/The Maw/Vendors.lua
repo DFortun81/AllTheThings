@@ -138,6 +138,10 @@ _.Zones =
 					i(184664, {	-- Sticky-Fingered Skeletal Hand
 						["cost"] = { { "c", 1767, 210 } },
 					}),
+					i(184870, {	-- Stygia Dowser
+						["description"] = "Used for Bound Shadehound secret mount. Only available to character with maxed Ven'ari reputation.",
+						["cost"] = { { "c", 1767, 1500 } },
+					}),
 					i(184359, {	-- Unbound Reality Fragment
 						["cost"] = { { "c", 1767, 1900 } },
 					}),
