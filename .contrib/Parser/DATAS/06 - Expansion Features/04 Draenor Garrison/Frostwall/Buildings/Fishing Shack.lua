@@ -26,6 +26,11 @@ _.ExpansionFeatures =
 									i(45992),	-- Jeweled Fishing Pole
 								},
 							}),
+							q(36611, {	-- A True Draenor Angler
+								["sourceQuests"] = { 36870, 36612 },	-- Luring Nat (A, H)
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+							}),
 							q(35075, {	-- Abyssal Gulper Eel
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
@@ -38,6 +43,14 @@ _.ExpansionFeatures =
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
+							}),
+							q(36616, {	-- An Angler on Our Team
+								["sourceQuests"] = { 36611 },	-- A True Draenor Angler
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["g"] = {
+									follower(202),	-- Nat Pagle
+								},
 							}),
 							q(35074, {	-- Blackwater Whiptail
 								["provider"] = { "n", 79892 },	-- Mak'jin

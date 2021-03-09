@@ -982,6 +982,8 @@ _.HiddenQuestTriggers =
 		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
 		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
 		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
+		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
+		q(46952),	-- Flag Garrison Dog Quest
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -994,6 +996,8 @@ _.HiddenQuestTriggers =
 		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
 		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
