@@ -448,6 +448,7 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
@@ -3734,7 +3735,7 @@ _.HiddenQuestTriggers =
 		q(59499),	-- selecting Refreshment: Mushroom Surprise for Embrt Court
 		q(59517),	-- selecting Security: Venthyr Volunteers for Embrt Court
 		q(59514),	-- selecting Security: Stoneborn Reserves for Embrt Court
-		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court 
+		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
