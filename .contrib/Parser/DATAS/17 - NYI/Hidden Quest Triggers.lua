@@ -3506,9 +3506,7 @@ _.HiddenQuestTriggers =
 		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
-		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
-		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
 		q(59440),	-- triggered when entering the Ember Court, Week 1
 		q(61924),	-- triggered when entering the Ember Court, Week 2
 		q(61928),	-- triggered when entering the Ember Court, Week 4
@@ -3639,8 +3637,6 @@ _.HiddenQuestTriggers =
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
-		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
-		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
@@ -3656,14 +3652,12 @@ _.HiddenQuestTriggers =
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
 		q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
-		-- q( ),	-- when using "Staff: Ambassador" (Bastion)
+		q(61888),	-- when using "Staff: Ambassador" (Bastion)
 		q(59437),	-- when using "Staff: Bouncers"
 		q(59435),	-- when using "Staff: Dredger Decorators"
 		q(61498),	-- when using "Stock: Appetizers"
 		q(59476),	-- when using "Contract: Mortal Reminders"
 		q(59477),	-- when using "Contract: Mortal Reminders"
-		q(59474),	-- when selecting Traditional decorations for the Ember Court
-		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
 		q(59382),	-- when using "RSVP: Baroness Vashj" — every time
 		q(59383),	-- when using "RSVP: Baroness Vashj" — first time only
 		q(59406),	-- when using "RSVP: Choofa" — every time
@@ -3723,10 +3717,18 @@ _.HiddenQuestTriggers =
 		q(61500),	-- using Stock: Comfy Chairs
 		q(61497),	-- using Stock: Greeting Kits
 		q(61502),	-- when using Invitation: Choofa
-		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
-		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
-		q(59517),	-- selecting Venthyr Volunteers as the security for the week
-		q(59514),	-- selecting Stoneborn Reserves as the security for the week
+		q(59474),	-- selecting Decoration: Traditional for Ember Court
+		q(59475),	-- selecting Decoration: Mortal Reminders for Ember Court
+		q(59478),	-- selecting Decoration: Mystery Mirrors for Ember Court
+		q(59493),	-- selecting Entertainment: Atoning Rituals for Ember Court
+		q(59490),	-- selecting Entertainment: Glimpse of the Wilds for Ember Court
+		q(59487),	-- selecting Entertainment: Lost Chalice Band for Ember Court
+		q(59505),	-- selecting Refreshment: Tubbins's Tea Party for Ember Court
+		q(59502),	-- selecting Refreshment: Divine Desserts for Embert Court
+		q(59499),	-- selecting Refreshment: Mushroom Surprise for Embrt Court
+		q(59517),	-- selecting Security: Venthyr Volunteers for Embrt Court
+		q(59514),	-- selecting Security: Stoneborn Reserves for Embrt Court
+		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court 
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
