@@ -29,6 +29,14 @@ _.Zones =
 						i(184869),	-- Cache of Nathrian Treasures
 					},
 				}),
+				q(62636, {	-- A Savage Path Through Time
+					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
+					["isWeekly"] = true,
+					["coord"] = { 64.9, 32.7, 1670 },
+					["g"] = {
+						i(184869),	-- Cache of Nathrian Treasures
+					},
+				}),
 				q(62634, {	-- A Shattered Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
