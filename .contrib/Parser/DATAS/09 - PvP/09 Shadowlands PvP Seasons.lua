@@ -27,23 +27,6 @@ _.PVP =
 					i(175883),	-- Sinful Aspirant's Leather Wristwraps
 				}),
 				n(-45,  {	-- Mail
-				--[[ TODO: move these to NYI i'm lazy
-					i(178268),	-- Sinful Aspirant's Chain tunic
-					i(178272),	-- Sinful Aspirant's Chain stompers
-					i(178277),	-- Sinful Aspirant's Chain handguards
-					i(178279),	-- Sinful Aspirant's Chain headguard
-					i(178283),	-- Sinful Aspirant's Chain wargrgreaves
-					i(178288),	-- Sinful Aspirant's Chain shoulderguards
-					i(178291),	-- Sinful Aspirant's Chain clasp
-					i(178296),	-- Sinful Aspirant's Chain bracer
-					i(178308),	-- Sinful Aspirant's Chain footguards
-					i(178313),	-- Sinful Aspirant's Chain grips
-					i(178315),	-- Sinful Aspirant's Chain helmet
-					i(178319),	-- Sinful Aspirant's Chain breeches
-					i(178324),	-- Sinful Aspirant's Chain monnion
-					i(178327),	-- Sinful Aspirant's Chain buckle
-					i(178332),	-- Sinful Aspirant's Chain coils
-				--]]
 					i(175877),	-- Sinful Aspirant's Chain Belt
 					i(175863),	-- Sinful Aspirant's Chain Gauntlets
 					i(175865),	-- Sinful Aspirant's Chain Helm
@@ -381,19 +364,8 @@ _.PVP =
 						i(175892),	-- Sinful Gladiator's Leather Vest
 						i(178385),	-- Sinful Gladiator's Leather Wristguards
 						i(175920),	-- Sinful Gladiator's Leather Wristwraps
-
 					}),
 					n(-45,  {	-- Mail
-					--[[ TODO: move to NYI, yet again, i am lazy
-						i(178356),	-- Sinful Gladiator's Chain tunic
-						i(178360),	-- Sinful Gladiator's Chain boots
-						i(178365),	-- Sinful Gladiator's Chain handguards
-						i(178367),	-- Sinful Gladiator's Chain faceguard
-						i(178371),	-- Sinful Gladiator's Chain breeches
-						i(178376),	-- Sinful Gladiator's Chain shoulderguards
-						i(178379),	-- Sinful Gladiator's Chain girdle
-						i(178384),	-- Sinful Gladiator's Chain bracers
-						--]]
 						i(175914),	-- Sinful Gladiator's Chain Belt
 						i(178360),	-- Sinful Gladiator's Chain Boots
 						i(178384),	-- Sinful Gladiator's Chain Bracers

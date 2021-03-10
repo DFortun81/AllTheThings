@@ -1418,14 +1418,21 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109541)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(109543)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(109548)),	-- unknown
-			un(NEVER_IMPLEMENTED, i(178356)),	-- Sinful Gladiator's Chain tunic
-			un(NEVER_IMPLEMENTED, i(178360)),	-- Sinful Gladiator's Chain boots
-			un(NEVER_IMPLEMENTED, i(178365)),	-- Sinful Gladiator's Chain handguards
-			un(NEVER_IMPLEMENTED, i(178367)),	-- Sinful Gladiator's Chain faceguard
-			un(NEVER_IMPLEMENTED, i(178371)),	-- Sinful Gladiator's Chain breeches
-			un(NEVER_IMPLEMENTED, i(178376)),	-- Sinful Gladiator's Chain shoulderguards
-			un(NEVER_IMPLEMENTED, i(178379)),	-- Sinful Gladiator's Chain girdle
-			un(NEVER_IMPLEMENTED, i(178384)),	-- Sinful Gladiator's Chain bracers
+			un(NEVER_IMPLEMENTED, i(178268)),	-- Sinful Aspirant's Chain tunic
+			un(NEVER_IMPLEMENTED, i(178272)),	-- Sinful Aspirant's Chain stompers
+			un(NEVER_IMPLEMENTED, i(178277)),	-- Sinful Aspirant's Chain handguards
+			un(NEVER_IMPLEMENTED, i(178279)),	-- Sinful Aspirant's Chain headguard
+			un(NEVER_IMPLEMENTED, i(178283)),	-- Sinful Aspirant's Chain Wargreaves
+			un(NEVER_IMPLEMENTED, i(178288)),	-- Sinful Aspirant's Chain shoulderguards
+			un(NEVER_IMPLEMENTED, i(178291)),	-- Sinful Aspirant's Chain clasp
+			un(NEVER_IMPLEMENTED, i(178296)),	-- Sinful Aspirant's Chain bracer
+			un(NEVER_IMPLEMENTED, i(178308)),	-- Sinful Aspirant's Chain footguards
+			un(NEVER_IMPLEMENTED, i(178313)),	-- Sinful Aspirant's Chain grips
+			un(NEVER_IMPLEMENTED, i(178315)),	-- Sinful Aspirant's Chain helmet
+			un(NEVER_IMPLEMENTED, i(178319)),	-- Sinful Aspirant's Chain breeches
+			un(NEVER_IMPLEMENTED, i(178324)),	-- Sinful Aspirant's Chain monnion
+			un(NEVER_IMPLEMENTED, i(178327)),	-- Sinful Aspirant's Chain buckle
+			un(NEVER_IMPLEMENTED, i(178332)),	-- Sinful Aspirant's Chain coils
 			un(NEVER_IMPLEMENTED, i(158536)),	-- saurscale wristguards
 			un(NEVER_IMPLEMENTED, i(158537)),	-- saurscale gloves
 			un(NEVER_IMPLEMENTED, i(158538)),	-- saurscale leggings
