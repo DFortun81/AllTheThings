@@ -1522,6 +1522,10 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(63685, {	-- Cryptkeeper Kassir's Best Friend
+									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+									["coord"] = { 70.1, 56.1, 1525 },	-- Revendreth
+								}),
 								q(61407, {	-- Ember Court: Atoning Rituals
 									["sourceQuests"] = {
 										61706,	-- Ember Court: Entertainment
@@ -1758,6 +1762,10 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.0, 56.2, 1525 },
+								}),
+								q(63697, {	-- Kleia and Pelagos's Best Friend
+									["provider"] = { "n", 174916 },	-- Kleia
+									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
 								}),
 								q(63213, {	-- Naladu the Elder
 									["provider"] = { "n", 176253 },	-- Elder Naladu
