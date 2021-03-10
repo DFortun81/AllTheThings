@@ -6105,13 +6105,13 @@ local fields = {
 		return { t.info[9], t.info[10], t.info[11], 1.0 };
 	end,
 	["model"] = function(t)
-		return t.parent and GetRelativeValue(t.parent, key);
+		return t.parent and GetRelativeValue(t.parent, "model");
 	end,
 	["modelScale"] = function(t)
-		return t.parent and GetRelativeValue(t.parent, key) or 0.95;
+		return t.parent and GetRelativeValue(t.parent, "modelScale") or 0.95;
 	end,
 	["modelRotation"] = function(t)
-		return t.parent and GetRelativeValue(t.parent, key) or 45;
+		return t.parent and GetRelativeValue(t.parent, "modelRotation") or 45;
 	end,
 	["info"] = function(t)
 		--[[
