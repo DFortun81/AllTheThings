@@ -3374,7 +3374,7 @@ _.HiddenQuestTriggers =
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
 
-		-- Maldraxxus Covenant
+		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
 		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
@@ -3420,6 +3420,7 @@ _.HiddenQuestTriggers =
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
+		q(62926),	-- Reaching Renown 39 Necrolord / unlocking Armored Plaguerot Tauralus
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
