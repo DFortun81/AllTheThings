@@ -6646,10 +6646,10 @@ local fields = {
 		return t.locks;
 	end,
 	["locks"] = function(t)
-		local locks = t.parent.locks;
+		local locks = t.parent and t.parent.locks;
 		if locks then
 			if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
-				rawset(t, key, locks.shared);
+				rawset(t, "locks", locks.shared);
 				return locks.shared;
 			else
 				-- Look for this difficulty's lockout.
@@ -6657,7 +6657,7 @@ local fields = {
 					if difficultyKey == "shared" then
 						-- ignore this one
 					elseif difficultyKey == t.difficultyID then
-						rawset(t, key, lock);
+						rawset(t, "locks", lock);
 						return lock;
 					end
 				end
