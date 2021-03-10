@@ -28,6 +28,7 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, i(151618)),	-- Stormwind Skychaser Mount
 		un(REMOVED_FROM_GAME, i(37719)),	-- Swift Zhevra
 		un(REMOVED_FROM_GAME, i(76755)),	-- Tyrael's Charger
+		mount(348162),						-- Wandering Ancient
 		un(REMOVED_FROM_GAME, i(54860)),	-- X-53 Touring Rocket
 	}),
 };

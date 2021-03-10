@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 90002
+## Interface: 90005
 ## X-Curse-Project-ID: 267285
 ## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
 ## Name: AllTheThings
@@ -27,6 +27,3 @@ AllTheThings.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
 db\Categories.lua
-# DEV ONLY START
-DevTools.lua
-# DEV ONLY END

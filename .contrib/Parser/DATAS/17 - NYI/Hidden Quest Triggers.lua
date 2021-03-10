@@ -448,6 +448,7 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
@@ -3244,6 +3245,7 @@ _.HiddenQuestTriggers =
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
 		q(62960),	-- triggered after questID #62459, "Go Beyond!"
+		q(62415),	-- hitting Renown 39 as Night Fae
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3332,6 +3334,7 @@ _.HiddenQuestTriggers =
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
+		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3372,7 +3375,7 @@ _.HiddenQuestTriggers =
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
 
-		-- Maldraxxus Covenant
+		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
 		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
@@ -3418,6 +3421,7 @@ _.HiddenQuestTriggers =
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
+		q(62926),	-- Reaching Renown 39 Necrolord / unlocking Armored Plaguerot Tauralus
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -3561,6 +3565,7 @@ _.HiddenQuestTriggers =
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60957),	-- "Ansel's Lucky Violin," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
 		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
@@ -3581,6 +3586,8 @@ _.HiddenQuestTriggers =
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
+		q(62508),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
+		q(62520),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
@@ -3701,6 +3708,7 @@ _.HiddenQuestTriggers =
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
+		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61494),	-- using Building: Guardhouse
@@ -3734,7 +3742,7 @@ _.HiddenQuestTriggers =
 		q(59499),	-- selecting Refreshment: Mushroom Surprise for Embrt Court
 		q(59517),	-- selecting Security: Venthyr Volunteers for Embrt Court
 		q(59514),	-- selecting Security: Stoneborn Reserves for Embrt Court
-		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court 
+		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time

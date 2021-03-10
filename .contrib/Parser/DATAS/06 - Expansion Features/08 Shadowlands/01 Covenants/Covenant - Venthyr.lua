@@ -954,6 +954,18 @@ _.ExpansionFeatures =
 				n(RARES, {
 					-- doubtful that any rares are specifically accessible to Venthyr without being taggable by others
 				}),
+				n(-908, sharedData({["customCollect"] = { "SL_COV_VEN" } },{	-- Rewards - Venthyr
+					i(182332, {	-- Gravestone Battle Armor
+						["description"] = "Requires Renown 39.",
+					}),
+					-- TODO: titles are dumb idk
+					-- title(682, {	-- Count
+					-- 	["description"] = "Requires Renown 40.",
+					-- }),
+					-- title(683, {	-- Countess
+					-- 	["description"] = "Requires Renown 40.",
+					-- }),
+				})),
 				n(-957, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
