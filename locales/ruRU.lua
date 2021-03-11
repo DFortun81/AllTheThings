@@ -505,7 +505,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "Секреты";
 		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
-		L.SOURCE_ID_MISSING = "Item Source not found in the database.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
+		L.SOURCE_ID_MISSING = "SourceID not found in the database.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
