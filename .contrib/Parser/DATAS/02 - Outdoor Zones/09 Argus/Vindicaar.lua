@@ -490,7 +490,6 @@ _.Zones =
 						i(152725),	-- Technique: Mass Mill Astral Glory
 					}),
 					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-						["modID"]  = 43,	-- Relinquished
 						["g"] = {
 							i(153211, {	-- Relinquished Hood
 								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite

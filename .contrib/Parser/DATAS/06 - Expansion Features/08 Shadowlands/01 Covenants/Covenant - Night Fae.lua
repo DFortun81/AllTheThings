@@ -1138,6 +1138,7 @@ _.ExpansionFeatures =
 								i(181302),	-- Spirit Tender's Branches
 								i(181306),	-- Spirit Tender's Bulb
 								i(181310),	-- Spirit Tender's Pack
+								i(180603),	-- Violet Dredwing Pup
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)
@@ -2415,6 +2416,7 @@ _.ExpansionFeatures =
 									i(179787),	-- Conservator's Leather Crest
 									i(179796),	-- Conservator's Leather Mantle
 									i(179775),	-- Conservator's Leather Tunic
+									i(179793),	-- Conservator's Leather Vestment
 								},
 							}),
 							i(184113, {	-- Ensemble: Conservator's Regalia

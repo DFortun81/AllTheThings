@@ -162,11 +162,10 @@ _.PVP =
 								["lvl"] = 51,
 							}),
 							q(7163,  {	-- Rise and Be Recognized
+								["sourceQuests"] = { 7161 },	-- Proving Grounds
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 7161 },	-- Proving Grounds
-								["lvl"] = 51,
 								["g"] = {
 									i(17905),	-- Frostwolf Insignia Rank 2
 								},
@@ -565,12 +564,10 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7172,  {	-- The Eye of Command
+								["sourceQuests"] = { 7171 },	-- Legendary Heroes
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 7171 },	-- Legendary Heroes
-								["lvl"] = 51,
-								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 								["g"] = {
 									i(17904),	-- Stormpike Insignia Rank 6
 								},

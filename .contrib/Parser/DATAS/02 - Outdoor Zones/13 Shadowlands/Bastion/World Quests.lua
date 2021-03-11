@@ -23,6 +23,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61220, {	-- AHHH! Real Monsters!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60929, {	-- Air Supremacy
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

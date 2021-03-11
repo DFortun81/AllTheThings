@@ -9,7 +9,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 			n(-34, {	-- World Quests
-				q(46209),	-- A Flare In The Dark
 				q(47061),	-- Apocron
 				q(46947),	-- Brutallus
 				q(45969),	-- Defense of the Ancient
@@ -20,9 +19,13 @@ _.Zones =
 				q(46945),	-- Si'vash
 			}),
 ]]--
+				q(46209, {	-- A Flare In The Dark
+					["isWorldQuest"] = true,
+					["classes"] = { HUNTER },
+					["lvl"] = { 45 },
+				}),
 				q(45473, {	-- A Giant Problem
 					["lvl"] = { 45 },
-					["isWorldQuest"] = true,
 				}),
 				q(46932, {	-- A Tad More Corruption
 					["lvl"] = { 45 },

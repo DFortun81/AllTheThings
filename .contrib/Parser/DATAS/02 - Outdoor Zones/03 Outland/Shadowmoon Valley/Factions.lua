@@ -238,7 +238,7 @@ _.Zones =
 						["provider"] = { "i", 32621 },	-- Partially Digested Hand
 						-- TODO: confirm source, but as it requires Neutral with Netherwing, this is the quest that sets you to Neutral
 						["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
-						["crs"] = 23267,	-- Arvoar the Rapacious
+						["crs"] = { 23267 },	-- Arvoar the Rapacious
 						["coord"] = { 74.6, 86.5, 104 },
 						["minReputation"] = { 1015, NEUTRAL },
 						["g"] = {

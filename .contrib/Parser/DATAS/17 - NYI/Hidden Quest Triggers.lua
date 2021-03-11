@@ -448,6 +448,7 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
@@ -699,6 +700,7 @@ _.HiddenQuestTriggers =
 		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
+		q(33385),	-- Kairoz Weekly Tracking Quest
 		-- TREASURES
 		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
 		q(33216),	-- One-Time Chest - T1G1, secondary trigger
@@ -886,6 +888,9 @@ _.HiddenQuestTriggers =
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
 		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
 		q(39187),	-- learning Immaculate Stamina Taladite
+		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
+		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
+		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -977,6 +982,9 @@ _.HiddenQuestTriggers =
 		q(36895),	-- Nemesis Flag, Worgen/Goblin
 		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
 		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
+		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
+		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
+		q(46952),	-- Flag Garrison Dog Quest
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -985,6 +993,12 @@ _.HiddenQuestTriggers =
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
+		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1196,6 +1210,7 @@ _.HiddenQuestTriggers =
 		q(41137),	-- Suramar - triggered when killing Cora'kar. Wowhead reports it as a quest, but there's no such quest ingame. Probably changed sometime during beta
 		q(43840),	-- Suramar - triggered when looting the chest at 48.6, 42.6 along with a different ID. This one appears to be a duplicate and/or a bug on blizzard's end
 		q(43566),	-- Suramar - Withered Progress
+		q(43141),	-- 7.0 Suramar Collapse Scenario - Treasure 03 - Army Size Increase 03
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
@@ -1217,6 +1232,7 @@ _.HiddenQuestTriggers =
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
+		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1254,7 +1270,12 @@ _.HiddenQuestTriggers =
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 
 		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
-
+		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
+		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
+		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
+		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
+		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
+		
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
 		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
@@ -1683,6 +1704,7 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(39274),	-- Defend the Riverlands
 		q(39576),	-- Echoes of Deathwing
 		q(40050),	-- Shipwreck Cove
 		q(39317),	-- Siege of Crawliac
@@ -3227,6 +3249,8 @@ _.HiddenQuestTriggers =
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
+		q(62960),	-- triggered after questID #62459, "Go Beyond!"
+		q(62415),	-- hitting Renown 39 as Night Fae
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3315,6 +3339,7 @@ _.HiddenQuestTriggers =
 		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
+		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3355,7 +3380,7 @@ _.HiddenQuestTriggers =
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
 
-		-- Maldraxxus Covenant
+		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
 		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
@@ -3401,6 +3426,7 @@ _.HiddenQuestTriggers =
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
 		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
+		q(62926),	-- Reaching Renown 39 Necrolord / unlocking Armored Plaguerot Tauralus
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -3493,9 +3519,7 @@ _.HiddenQuestTriggers =
 		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
-		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
-		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
 		q(59440),	-- triggered when entering the Ember Court, Week 1
 		q(61924),	-- triggered when entering the Ember Court, Week 2
 		q(61928),	-- triggered when entering the Ember Court, Week 4
@@ -3537,7 +3561,16 @@ _.HiddenQuestTriggers =
 		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
 		q(62111),	-- picked up when entering the Ember Court for the week — for "Drezgruda"
 		q(62134),	-- picked up when entering the Ember Court for the week — for "Lower Your Standards"
+		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"
+		q(62117),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
+		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
+		q(62128),	-- picked up when entering the Ember Court for the week — for "Concert Kick-Off"
+		q(62129),	-- picked up when entering the Ember Court for the week — for "Dance For Love"
+		q(62139),	-- picked up when entering the Ember Court for the week — for "Knockerbock"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60957),	-- "Ansel's Lucky Violin," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
 		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
@@ -3558,15 +3591,22 @@ _.HiddenQuestTriggers =
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
+		q(62508),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
+		q(62520),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62492),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
+		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
+		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
+		q(59632),	-- triggered when leaving Ember Court scenario
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
+		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
@@ -3615,8 +3655,6 @@ _.HiddenQuestTriggers =
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
-		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
-		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
@@ -3632,14 +3670,12 @@ _.HiddenQuestTriggers =
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
 		q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
-		-- q( ),	-- when using "Staff: Ambassador" (Bastion)
+		q(61888),	-- when using "Staff: Ambassador" (Bastion)
 		q(59437),	-- when using "Staff: Bouncers"
 		q(59435),	-- when using "Staff: Dredger Decorators"
 		q(61498),	-- when using "Stock: Appetizers"
 		q(59476),	-- when using "Contract: Mortal Reminders"
 		q(59477),	-- when using "Contract: Mortal Reminders"
-		q(59474),	-- when selecting Traditional decorations for the Ember Court
-		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
 		q(59382),	-- when using "RSVP: Baroness Vashj" — every time
 		q(59383),	-- when using "RSVP: Baroness Vashj" — first time only
 		q(59406),	-- when using "RSVP: Choofa" — every time
@@ -3677,6 +3713,7 @@ _.HiddenQuestTriggers =
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
+		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61494),	-- using Building: Guardhouse
@@ -3699,20 +3736,31 @@ _.HiddenQuestTriggers =
 		q(61500),	-- using Stock: Comfy Chairs
 		q(61497),	-- using Stock: Greeting Kits
 		q(61502),	-- when using Invitation: Choofa
-		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
-		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
-		q(59517),	-- selecting Venthyr Volunteers as the security for the week
-		q(59514),	-- selecting Stoneborn Reserves as the security for the week
+		q(59474),	-- selecting Decoration: Traditional for Ember Court
+		q(59475),	-- selecting Decoration: Mortal Reminders for Ember Court
+		q(59478),	-- selecting Decoration: Mystery Mirrors for Ember Court
+		q(59493),	-- selecting Entertainment: Atoning Rituals for Ember Court
+		q(59490),	-- selecting Entertainment: Glimpse of the Wilds for Ember Court
+		q(59487),	-- selecting Entertainment: Lost Chalice Band for Ember Court
+		q(59505),	-- selecting Refreshment: Tubbins's Tea Party for Ember Court
+		q(59502),	-- selecting Refreshment: Divine Desserts for Embert Court
+		q(59499),	-- selecting Refreshment: Mushroom Surprise for Embrt Court
+		q(59517),	-- selecting Security: Venthyr Volunteers for Embrt Court
+		q(59514),	-- selecting Security: Stoneborn Reserves for Embrt Court
+		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
+		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
+		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 		q(62398),	-- learning Sinwrath illusion
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
+		q(59687),	-- using "Dog Bone's Bone"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

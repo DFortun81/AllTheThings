@@ -22,9 +22,12 @@ _.Zones =
 				}),
 				ach(14769, {	-- Bat!
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
+						{ 21.7, 50.2, 1525 },
 						{ 25.1, 37.5, 1525 },
+						{ 31.9, 59.2, 1525 },
 						{ 35.0, 35.0, 1525 },
 						{ 56.2, 62.2, 1525 },
+						{ 57.3, 61.3, 1525 },
 						{ 60.4, 61.1, 1525 },
 						{ 64.0, 62.0, 1525 },
 					},
@@ -419,7 +422,28 @@ _.Zones =
 						["questID"] = 59888,
 						["coord"] = { 51.8, 59.5, 1525 },
 						["g"] = {
-							i(182744),	-- Ornate Belt Buckle
+							i(182744, {	-- Ornate Belt Buckle
+								i(182741, {	-- Buckled Cloth Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182742, {	-- Buckled Leather Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182739, {	-- Buckled Chain Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+								i(182741, {	-- Buckled Plate Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+									},
+								}),
+							}),
 						},
 					}),
 				}),

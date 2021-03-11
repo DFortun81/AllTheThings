@@ -1364,17 +1364,17 @@ _.Zones =
 							["coord"] = { 78.0, 53.7, 624 },
 							["g"] = {
 								i(111922, {		-- Draenor Enchanting
+									["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 									["collectible"] = false,
-									["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 									["g"] = {
 										recipe(177043),	-- Secrets of Draenor Enchanting
 										recipe(169092),	-- Temporal Crystal
 										recipe(169091),	-- Luminous Shard
 										recipe(162948),	-- Enchanted Dust
-										recipe(158907),	-- Breath of Critical Strike [Ring]
-										recipe(158908),	-- Breath of Haste [Ring]
+										recipe(158907),	-- Breath of Critical Strike
+										recipe(158908),	-- Breath of Haste
 										recipe(158909),	-- Breath of Mastery
-										recipe(158896),	-- Breath of Versatility [Neck]
+										recipe(158896),	-- Breath of Versatility
 										un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
 										recipe(158911),	-- Breath of Versatility
 										recipe(159236),	-- Mark of the Shattered Hand

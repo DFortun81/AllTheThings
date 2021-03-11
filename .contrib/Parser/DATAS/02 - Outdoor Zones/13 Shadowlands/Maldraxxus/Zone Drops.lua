@@ -21,6 +21,21 @@ _.Zones =
 					},
 				}),
 				i(178877),	-- Divine Martial Spirit (Rare)
+				i(177236, {	-- Dog Bone's Bone
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["crs"] = {
+						173509,	-- Animated Marrowhound
+						168453,	-- Animated Pointer
+						165960,	-- Blazing Forgehound
+						161390,	-- Darkhound Hunter
+					},
+					["g"] = {
+						crit(7, {	-- Dog Bone's Bone
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr
+							["achievementID"] = 14678,	-- Court Favors
+						}),
+					},
+				}),
 				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
 				i(178878),	-- Greater Martial Spirit (Epic)
 				i(180781, {	-- Pattern: Pink Party Hat
@@ -87,7 +102,7 @@ _.Zones =
 						166335,	-- Slime Giant
 					},
 					["g"] = {
-						crit(5, {
+						crit(5, {	-- Mucosal Pigment
 							["achievementID"] = 14763,	-- Crypt Couture
 						}),
 					},

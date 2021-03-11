@@ -8,7 +8,7 @@ _.GearSets =
 		n(-4191, {	-- Tournament Sets
 			["description"] = "These items were available during Warlords of Draenor, but only served as an ilvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
 			["u"] = REMOVED_FROM_GAME,
-			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["ignoreSource"] = 1}, {
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME }, {
 				i(117714),	-- Tournament Gladiator's Choker of Cruelty
 				i(117915),	-- Tournament Gladiator's Choker of Cruelty
 				i(120109),	-- Tournament Gladiator's Choker of Endurance

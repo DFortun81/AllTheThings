@@ -23,6 +23,7 @@ _.Mounts =
 		}),
 		i(180948),		-- Battle Gargon Vrednic
 		i(94290),		-- Bone-White Primal Raptor
+		i(184168),		-- Bound Shadehound
 		i(137579),		-- Brilliant Direbeak
 		mount(23214, {	-- Charger
 			["classes"] = { PALADIN },

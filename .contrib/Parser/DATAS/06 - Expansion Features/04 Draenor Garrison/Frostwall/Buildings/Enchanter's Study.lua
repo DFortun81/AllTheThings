@@ -19,6 +19,12 @@ _.ExpansionFeatures =
 								["isDaily"] = true,
 								["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 							}),
+							q(36256, {	-- The Arakkoan Enchanter
+								["requireSkill"] = ENCHANTING,
+								["sourceQuests"] = { 36255 },	-- Enchanted Highmaul Bracer
+								["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
+								["races"] = HORDE_ONLY,
+							}),
 							q(37570, {	-- Your First Enchanting Work Order
 								["provider"] = { "n", 79821 },	-- Yukla Greenshadow
 								["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust

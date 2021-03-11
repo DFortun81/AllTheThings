@@ -1,5 +1,43 @@
 -- Tailoring - Skill ID 197 / Spell ID 3908
 profession(TAILORING, {
+	n(ACHIEVEMENTS, {
+		ach(5480, {	-- Preparing for Disaster
+			["requireSkill"] = TAILORING,
+		}),
+		ach(137, {	-- Stocking Up
+			["requireSkill"] = TAILORING,
+		}),
+	}),
+	n(-26, {	-- Drop
+		q(36236, {	-- The Cryptic Tome of Tailoring
+			["requireSkill"] = TAILORING,
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
+			["races"] = ALLIANCE_ONLY,
+			["maps"] = {
+				525,	-- Frostfire Ridge
+				543,	-- Gorgrond
+				550,	-- Nagrand
+				539,	-- Shadowmoon Valley
+				542,	-- Spires of Arak
+				535,	-- Talador
+			},
+		}),
+		q(36301, {	-- Trega's Tailoring Kit
+			["requireSkill"] = TAILORING,
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
+			["races"] = HORDE_ONLY,
+			["maps"] = {
+				525,	-- Frostfire Ridge
+				543,	-- Gorgrond
+				550,	-- Nagrand
+				539,	-- Shadowmoon Valley
+				542,	-- Spires of Arak
+				535,	-- Talador
+			},
+		}),
+	}),
 	gb(128, {	-- Tailoring Emporium (Level 3)
 		["maps"] = {582, 590},	-- Both Garrisons
 		["g"] = {
@@ -8,8 +46,8 @@ profession(TAILORING, {
 				["g"] = {
 					i(115357, {	-- Draenor Tailoring
 						--["spellID"] = 0,
+						["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["collectible"] = false,
-						["description"] = "This is a quest reward for completing the Tailoring Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["g"] = {
 							recipe(168835),	-- Hexweave Cloth
 							recipe(176058),	-- Secrets of Draenor Tailoring
@@ -64,8 +102,8 @@ profession(TAILORING, {
 				["g"] = {
 					i(115357, {	-- Draenor Tailoring
 						--["spellID"] = 0,
+						["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["collectible"] = false,
-						["description"] = "This is a quest reward for completing the Tailoring Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["g"] = {
 							recipe(168835),	-- Hexweave Cloth
 							recipe(176058),	-- Secrets of Draenor Tailoring
@@ -100,11 +138,5 @@ profession(TAILORING, {
 				},
 			}),
 		},
-	}),
-	ach(5480, {	-- Preparing for Disaster
-		["requireSkill"] = TAILORING,
-	}),
-	ach(137, {	-- Stocking Up
-		["requireSkill"] = TAILORING,
 	}),
 });

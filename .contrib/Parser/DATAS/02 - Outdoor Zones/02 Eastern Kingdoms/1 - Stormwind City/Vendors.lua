@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
 			n(VENDORS, {
-				n(69334, {	-- Adherent Hanjun
+				n(69334,  {	-- Adherent Hanjun
 					["coord"] = { 68.0, 17.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -15,7 +15,7 @@ _.Zones =
 						i(83079),	-- Tushui Tabard
 					},
 				}),
-				n(1347, {	-- Alexandra Bolero
+				n(1347,   {	-- Alexandra Bolero
 					["coord" ] = { 53.2, 81.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -69,7 +69,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(175051, {	-- Alice Fisher
+				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 					["coord" ] = { 74.97, 67.35, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -274,7 +274,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(55285, {	-- Astrid Langstrump
+				n(55285,  {	-- Astrid Langstrump
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -283,7 +283,7 @@ _.Zones =
 						i(73839),	-- Swift Mountain Horse
 					},
 				}),
-				n(12777, {	-- Captain Dirgehammer (Legacy)
+				n(12777,  {	-- Captain Dirgehammer (Legacy)
 					["coord"] = { 75.0, 67.5, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -296,7 +296,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
 					},
 				}),
-				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
+				n(69975,  {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 					["coord"] = { 75.0, 67.5, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -383,7 +383,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16401)),	-- Knight-Lieutenant's Chain Boots
 					},
 				}),
-				n(49877, {	-- Captain Lancy Revshon
+				n(49877,  {	-- Captain Lancy Revshon
 					["coord"] = { 67.6, 72.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -394,7 +394,7 @@ _.Zones =
 						i(45574),	-- Stormwind Tabard
 					},
 				}),
-				n(34079, {	-- Captain O'Neal
+				n(34079,  {	-- Captain O'Neal
 					["coord"] = { 75.0, 66.7, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -414,7 +414,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(28960)),	    -- Grand Marshal's Heavy Crossbow
 					},
 				}),
-				n(1291, {	-- Carla Granger
+				n(1291,   {	-- Carla Granger
 					["coord"] = { 62.2, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -423,14 +423,14 @@ _.Zones =
 						i(16060),	-- Common White Shirt
 					},
 				}),
-				n(30713, {	-- Catarina Stanford
+				n(30713,  {	-- Catarina Stanford
 					["coord"] = { 49.8, 74.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(140566),	-- Technique: Songs of the Alliance
 					},
 				}),
-				n(5494, {	-- Catherine Leland
+				n(5494,   {	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -439,7 +439,7 @@ _.Zones =
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 					},
 				}),
-				n(1307, {	-- Charys Yserian
+				n(1307,   {	-- Charys Yserian
 					["coord"] = { 44.8, 86.2, 84 },
 					["description"] = "The items this vendor sells have all limited supply.",
 					["races"] = ALLIANCE_ONLY,
@@ -464,7 +464,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(52358, {	-- Craggle Wobbletop
+				n(52358,  {	-- Craggle Wobbletop
 					["coords"] = {
 						{ 66.6, 64.4, 84 },
 						{ 63.6, 61.2, 84 },
@@ -499,7 +499,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(1304, {	-- Darian Singh
+				n(1304,   {	-- Darian Singh
 					["coord"] = { 42.6, 76.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -508,7 +508,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(50669, {	-- Dawn Radue
+				n(50669,  {	-- Dawn Radue
 					["coord"] = { 64.8, 71.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -522,7 +522,7 @@ _.Zones =
 						i(67387),	-- "Carriage" Signature Bag
 					},
 				}),
-				n(52029, {	-- Edlan Halsing
+				n(52029,  {	-- Edlan Halsing
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 74.7, 68.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -531,7 +531,7 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
-				n(1286, {	-- Edna Mullby
+				n(1286,   {	-- Edna Mullby
 					["coord"] = { 64.6, 71.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -540,14 +540,14 @@ _.Zones =
 						}),
 					},
 				}),
-				n(5503, {	-- Eldraeith
+				n(5503,   {	-- Eldraeith
 					["coord"] = { 55.6, 85.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22250),	-- Herb Pouch
 					},
 				}),
-				n(5483, {	-- Erika Tate
+				n(5483,   {	-- Erika Tate
 					["coord"] = { 77.6, 53.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -555,7 +555,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(44245, {	-- Faldren Tillsdale
+				n(44245,  {	-- Faldren Tillsdale
 					["coord"] = { 76.07, 66.78, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1492,7 +1492,7 @@ _.Zones =
 						i(77150),	-- Zeherah's Dragonskull Crown
 					},
 				}),
-				n(56925, {	-- Farrah Facet
+				n(56925,  {	-- Farrah Facet
 					["coord"] = { 63.8, 61.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1699,7 +1699,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(1298, {	-- Frederick Stover
+				n(1298,   {	-- Frederick Stover
 					["coord"] = { 58.6, 69.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1714,7 +1714,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(50480, {	-- Isabel Jones
+				n(50480,  {	-- Isabel Jones
 					["coord"] = { 63.8, 61.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] ={
@@ -1984,7 +1984,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(1318, {	-- Jessara Cordell
+				n(1318,   {	-- Jessara Cordell
 					["coord"] = { 53.0, 74.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2034,7 +2034,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(5565, {	-- Jillian Tanner
+				n(5565,   {	-- Jillian Tanner
 					["coord"] = { 71.7, 62.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2175,7 +2175,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(49701, {	-- Jon Casper
+				n(49701,  {	-- Jon Casper
 					["coord"] = { 50.6, 71.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2268,7 +2268,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(55684, {	-- Jordan Smith
+				n(55684,  {	-- Jordan Smith
 					["coord"] = { 64.8, 48.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2376,7 +2376,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(5512, {	-- Kaita Deepforge
+				n(5512,   {	-- Kaita Deepforge
 					["coord"] = { 63.2, 37.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2487,7 +2487,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(43694, {	-- Katie Stokx
+				n(43694,  {	-- Katie Stokx
 					["coord"] = { 77.0, 67.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2500,7 +2500,7 @@ _.Zones =
 						i(18778),	-- Swift White Steed
 					},
 				}),
-				n(340, {	-- Kendor Kabonka
+				n(340,    {	-- Kendor Kabonka
 					["coord"] = { 76.4, 53.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2519,7 +2519,7 @@ _.Zones =
 						i(728),		-- Recipe: Westfall Stew
 					},
 				}),
-				n(40606, {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite / Old S11 <Ruthless Gladiator>
+				n(40606,  {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite / Old S11 <Ruthless Gladiator>
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -2724,7 +2724,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(69974, {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
+				n(69974,  {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -2736,7 +2736,7 @@ _.Zones =
 						{"where", "npcID", -661 },	-- Gladiator header.
 					},
 				}),
-				n(4730, {	-- Lelanai <Saber Handler>
+				n(4730,   {	-- Lelanai <Saber Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 55.0, 12.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -2750,7 +2750,7 @@ _.Zones =
 						i(18902),	-- Reins of the Swift Stormsaber
 					},
 				}),
-				n(2795, {	-- Lenny "Fingers" McCoy
+				n(2795,   {	-- Lenny "Fingers" McCoy
 					["coord"] = { 72.8, 58.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2758,7 +2758,7 @@ _.Zones =
 						i(138385),	-- Lucky Shirt
 					},
 				}),
-				n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
+				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 					["coord"] = { 75.2, 67.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2827,7 +2827,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(12783, {	-- Lieutenant Karter
+				n(12783,  {	-- Lieutenant Karter
 					["coord"] = { 76.2, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2852,7 +2852,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
 					},
 				}),
-				n(23446, {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor
+				n(23446,  {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor
 					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -2892,7 +2892,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
 					},
 				}),
-				n(51255, {	--Lieutenant Tristia >S9< Elite <Vicious Gladiator>
+				n(51255,  {	-- Lieutenant Tristia >S9< Elite <Vicious Gladiator>
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -3034,7 +3034,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(54660, {	-- Lieutenant Tristia <Vicious Gladiator>
+				n(54660,  {	-- Lieutenant Tristia <Vicious Gladiator>
 					-- The NPC ID got reused — she was also >S11< Elite Vendor
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3047,14 +3047,14 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
-				n(8666, {	-- Lil Timmy
+				n(8666,   {	-- Lil Timmy
 					["description"] = "The vendor wanders around Stormwind at random times. He is not always available.|r",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8489),	-- Cat Carrier (White Kitten) (PET!)
 					},
 				}),
-				n(52030, {	-- Liliana Emberfrost
+				n(52030,  {	-- Liliana Emberfrost
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 74.4, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3129,7 +3129,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(1299, {	-- Lisbeth Schneider
+				n(1299,   {	-- Lisbeth Schneider
 					["coord"] = { 58.2, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3138,7 +3138,7 @@ _.Zones =
 						i(3427),	-- Stylish Black Shirt
 					},
 				}),
-				n(50307, {	-- Lord Candren
+				n(50307,  {	-- Lord Candren
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.1, 13.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3150,7 +3150,7 @@ _.Zones =
 						i(64894),	-- Shroud of Gilneas
 					},
 				}),
-				n(44246, {	-- Magatha Silverton
+				n(44246,  {	-- Magatha Silverton
 					["coord"] = { 75.5, 66.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3728,7 +3728,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(1313, {	-- Maria Lumere
+				n(1313,   {	-- Maria Lumere
 					["coord"]= { 55.7, 85.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3737,7 +3737,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(12781, {	-- Master Sergeant Biggins
+				n(12781,  {	-- Master Sergeant Biggins
 					["coord"] = { 75.2, 66.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3781,7 +3781,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(44957)),	-- Greater Inscription of the Gladiator
 					},
 				}),
-				n(28347, {	-- Miles Sidney
+				n(28347,  {	-- Miles Sidney
 					["coord"] = {74.2, 58.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3790,7 +3790,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(50305, {	-- Moon Priestess Lasara
+				n(50305,  {	-- Moon Priestess Lasara
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.6, 13.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3802,7 +3802,7 @@ _.Zones =
 						i(64886),	-- Shroud of Darnassus
 					},
 				}),
-				n(73190, {	-- Necrolord Sipe
+				n(73190,  {	-- Necrolord Sipe
 					["coord"] = { 76.8, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3838,7 +3838,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(65068, {	-- Old Whitenose
+				n(65068,  {	-- Old Whitenose
 					["coord"] = { 67.8, 18.4, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3895,7 +3895,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(87501, {	-- Paulie
+				n(87501,  {	-- Paulie
 					["coord"] = { 73.0, 59.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -3917,7 +3917,7 @@ _.Zones =
 						i(175167),  -- Expeditionary Staff
 					},
 				}),
-				n(12785, {	-- Sergeant Major Clate
+				n(12785,  {	-- Sergeant Major Clate
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 75.4, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -4302,7 +4302,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(25829)),	-- Talisman of the Alliance
 					},
 				}),
-				n(8665, {	-- Shylenai
+				n(8665,   {	-- Shylenai
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.0, 3.22, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -4311,7 +4311,7 @@ _.Zones =
 						i(8501),	-- Hawk Owl (PET!)
 					},
 				}),
-				n(30730, {	-- Stanly McCormick
+				n(30730,  {	-- Stanly McCormick
 					["coord"] = { 49.6, 74.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -4320,7 +4320,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(43768, {	-- Tannec Stonebeak
+				n(43768,  {	-- Tannec Stonebeak
 					["coord"] = { 71.4, 72.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -4333,7 +4333,7 @@ _.Zones =
 						i(25527),	-- Swift Red Gryphon Mount
 					},
 				}),
-				n(44583, {	-- Terrance Denman
+				n(44583,  {	-- Terrance Denman
 					["coord"] = { 63.1, 61.5, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] ={
@@ -4603,7 +4603,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(58154, {	-- Toren Landow
+				n(58154,  {	-- Toren Landow
 					["coord"] = { 75.7, 65.9, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

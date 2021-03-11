@@ -275,6 +275,11 @@ _.Zones =
 					["provider"] = { "n", 175866 },	-- Vengeful Soul
 					["coord"] = { 25.2, 66.6, 1543 },
 				}),
+				q(63684, {	-- Feral Shadehound
+					["g"] = {
+						i(184168),	-- Bound Shadehound
+					},
+				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
