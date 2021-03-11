@@ -157,7 +157,7 @@ _.Zones =
 				}),
 				n(175563, { -- Courage
 					["description"] = "Requires a raid group of 9 people to simultaneously pet the Larion Cubs near Nemea (57.3, 39.2).",
-					--["questID"] = XXXXX,	-- fill this in later; think this is one-time per character and not daily
+					["questID"] = 60093,	-- think this is one-time per character and not repeatable
 					["crs"] = { 175760 },	-- Larion Cub
 					["coord"] = { 57.3, 39.2, 1533 },
 					["g"] = {
