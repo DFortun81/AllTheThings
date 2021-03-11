@@ -114,6 +114,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 86677 },	-- Kuros
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(36876, {	-- Warlord of Draenor
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(-153, {	-- Work Orders
 							n(86639, { 	-- Altar of Bones

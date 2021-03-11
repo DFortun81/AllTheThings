@@ -218,6 +218,13 @@ _.Zones =
 									i(93386),	-- Grand Wyvern (MOUNT!)
 								},
 							}),
+							q(32236, {	-- Bug Off!
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67554 },	-- Bixy Buzzsaw
+								["isDaily"] = true,
+								["coord"] = { 22.2, 60.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32242, {	-- Buried Secrets
 								["sourceQuests"] = { 32256 },	-- Rise Of An Empire
 								["provider"] = { "n", 67840 },	-- Garrosh Hellscream
@@ -391,6 +398,13 @@ _.Zones =
 								["sourceQuests"] = { 32411 },	-- The Remaining Sunreavers
 								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 								["coord"] = { 50.9, 48.0, 501 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32141, {	-- Power Metal
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67537 },	-- Daxil "The Gem" Oregrind
+								["isDaily"] = true,
+								["coord"] = { 22.4, 60.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32237, {	-- Precious Resource
@@ -631,6 +645,13 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							}),
 							q(32136, {	-- Work Order: Fuel
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
+								["isDaily"] = true,
+								["coord"] = { 12.9, 53.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32140, {	-- Work Order: Iron
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
 								["isDaily"] = true,

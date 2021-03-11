@@ -286,9 +286,20 @@ _.Zones =
 				ach(14731, {	-- To All the Squirrels I've Loved and Lost
 					["collectible"] = false,
 					["g"] = {
-						crit(10),	-- Shardling
-						crit(11),	-- Emaciated Bat
-						crit(12),	-- Creeper
+						crit(10, {	-- Shardling
+							["crs"] = { 174844 },	-- Shardling
+						}),
+						crit(11, {	-- Emaciated Bat
+							["crs"] = { 165767 },	-- Emaciated Bat
+						}),
+						crit(12, {	-- Creeper
+							["crs"] = {
+								174647,	-- Grimy Creeper
+								174646,	-- Murky Creeper
+								174640,	-- Nibbling Creeper
+								174645,	-- Slimy Creeper
+							},
+						}),
 					},
 				}),
 				ach(14512),		-- Tour of Duty: Revendreth
