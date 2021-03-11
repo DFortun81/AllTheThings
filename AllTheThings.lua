@@ -4232,31 +4232,6 @@ local function SearchForLink(link)
 				-- print("link-search",modItemID,itemID)
 				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 				-- print("found",_ and #_)
-				if _ and modID and modID ~= "" then
-					modID = tonumber(modID or "1");
-					if modID == 35 then modID = 23; end
-					local onlyMatchingModIDs = {};
-					for i,o in ipairs(_) do
-						if o.modID then
-							if o.modID == modID then
-								tinsert(onlyMatchingModIDs, o);
-							end
-						else
-							tinsert(onlyMatchingModIDs, o);
-						end
-					end
-					if #onlyMatchingModIDs > 0 then
-						return onlyMatchingModIDs;
-					else
-						local g = {};
-						for i,o in ipairs(_) do
-							o = CreateObject(o);
-							o.modID = modID;
-							MergeObject(g, o);
-						end
-						return g;
-					end
-				end
 				return _;
 			end
 		end
