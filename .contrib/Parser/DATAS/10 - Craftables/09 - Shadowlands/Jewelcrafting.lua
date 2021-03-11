@@ -7,7 +7,9 @@ _.Craftables =
 	tier(9, {	-- Shadowlands
 		n(-186, {	-- Jewelcrafting
 			n(-320, {	-- Head
-				i(180760),	-- Crown of the Righteous
+				i(180760, {	-- Crown of the Righteous
+					["modID"] = 13,
+				}),
 			}),
 			filter(51, {	-- Neck
 				i(178927),	-- Shadowghast Necklace
