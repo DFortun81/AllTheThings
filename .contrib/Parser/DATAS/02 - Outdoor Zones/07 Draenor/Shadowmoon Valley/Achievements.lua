@@ -92,6 +92,15 @@ _.Zones =
 					},
 				}),
 				ach(9435),	-- Take From Them Everything (Socrethar's Rise)
+				ach(14728, {	-- To All The Squirrels Through Time and Space
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Royal Moth
+						crit(2),	-- Moonshell Crab
+						crit(3),	-- Moon Snake
+						crit(4),	-- Mossbite Skitterer
+					},
+				}),
 				ach(9432),	-- Would You Like a Pamphlet? (Shadowmoon Enclave)
 				ach(9479),	-- You Can't Make a Giant Omelette... (Darktide Roost)
 				ach(9481),	-- You Have Been Rylakinated! (Darktide Roost)

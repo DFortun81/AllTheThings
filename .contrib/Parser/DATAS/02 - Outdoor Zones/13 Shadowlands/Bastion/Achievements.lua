@@ -675,6 +675,14 @@ _.Zones =
 						["coord"] = { 64.3, 69.8, 1533 },
 					}),
 				}),
+				ach(14731, {	-- To All the Squirrels I've Loved and Lost
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Dreadfur Kit
+						crit(2),	-- Darkened Wyrmling
+						crit(3),	-- Soulwing Flitter
+					},
+				}),
 				ach(14514),		-- Tour of Duty: Bastion
 				ach(14768, {	-- What is that Melody?
 					crit(1, {		-- Hymn of Purity

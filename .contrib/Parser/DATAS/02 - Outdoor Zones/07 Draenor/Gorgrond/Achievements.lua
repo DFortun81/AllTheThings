@@ -220,6 +220,13 @@ _.Zones =
 						crit(5),	-- Assault on the Everbloom Wilds
 					},
 				}),
+				ach(14728, {	-- To All The Squirrels Through Time and Space
+					["collectible"] = false,
+					["g"] = {
+						crit(10),	-- Twilight Wasp
+						crit(11),	-- Parched Lizard
+					},
+				}),
 			}),
 		}),
 	}),

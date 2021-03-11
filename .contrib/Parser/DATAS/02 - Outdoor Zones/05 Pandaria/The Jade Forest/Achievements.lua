@@ -48,6 +48,14 @@ _.Zones =
 						["coord"] = { 55.88, 56.84, 371 },
 					}),
 				}),
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(4),	-- Coral Adder
+						crit(9),	-- Leopard Tree Frog
+						crit(15),	-- Shrine Fly
+					},
+				}),
 				ach(6300, {	-- Upjade Complete (A)
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {

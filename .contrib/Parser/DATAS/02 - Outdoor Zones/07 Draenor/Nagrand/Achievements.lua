@@ -125,7 +125,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(8928, {	-- Nagrandeur (Horde)
+				ach(8928,  {	-- Nagrandeur (Horde)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- The Might of Steel and Blood
@@ -175,6 +175,12 @@ _.Zones =
 					crit(2),	-- Brutag Grimblade
 					crit(3),	-- Krahl Deadeye
 					crit(4),	-- Gortag Steelgrip
+				}),
+				ach(14728, {	-- To All The Squirrels Through Time and Space
+					["collectible"] = false,
+					["g"] = {
+						crit(15),	-- Leatherhide Runt
+					},
 				}),
 				ach(9615,  {	-- With a Nagrand Cherry On Top
 					crit(1, {	-- Bonus Objective: Hemet's Happy Hunting Grounds

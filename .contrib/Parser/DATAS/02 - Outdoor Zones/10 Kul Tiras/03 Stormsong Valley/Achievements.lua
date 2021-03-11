@@ -256,6 +256,13 @@ _.Zones =
 					},
 				}),
 				ach(13046),		-- These Hills Sing
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Honey Bee
+						crit(2),	-- Olivewing
+					},
+				}),
 				ach(12578),		-- Tour of Duty: Stormsong Valley
 				ach(12853, {	-- Treasures of Stormsong
 					o(293350, {	-- Carved Wooden Chest

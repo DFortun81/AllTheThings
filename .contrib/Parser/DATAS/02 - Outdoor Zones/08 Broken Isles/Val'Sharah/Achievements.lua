@@ -218,6 +218,14 @@ _.Zones =
 						["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
 					}),
 				}),
+				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+					["collectible"] = false,
+					["g"] = {
+						crit(6),	-- Gleamhoof Fawn
+						crit(7),	-- Auburn Ringtail
+						crit(8),	-- Blighthawk
+					},
+				}),
 			}),
 		}),
 	}),

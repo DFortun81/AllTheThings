@@ -419,6 +419,13 @@ _.Zones =
 					["sourceQuests"] = { 53782 },	-- Mysteries of Death
 					["races"] = HORDE_ONLY,
 				}),
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(9),	-- Nazmani Weevil
+						crit(10),	-- Bloodfever Tarantula
+					},
+				}),
 				ach(12574),		-- Tour of Duty: Nazmir
 				ach(12771, {	-- Treasures of Nazmir
 					crit(1,  {	-- Lucky Horace's Lucky Chest

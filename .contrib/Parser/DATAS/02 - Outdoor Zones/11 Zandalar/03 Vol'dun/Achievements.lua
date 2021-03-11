@@ -387,6 +387,12 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(12),	-- Vale Flutterby
+					},
+				}),
 				ach(12576),		-- Tour of Duty: Vol'dun
 				ach(12849, {	-- Treasures of Vol'dun
 					crit(1,  {	-- Ashvane Spoils

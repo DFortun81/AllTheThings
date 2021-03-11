@@ -285,6 +285,14 @@ _.Zones =
 				ach(11609, {	-- Power Unbound
 				--	q(45841),	-- A Triumphant Report
 				}),
+				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+					["collectible"] = false,
+					["g"] = {
+						crit(9),	-- Black-Footed Fox Kit
+						crit(10),	-- Long-Eared Owl
+						crit(13),	-- Echo Batling
+					},
+				}),
 			}),
 		}),
 	}),

@@ -21,8 +21,8 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7310),	-- Defender of Gods (Townlong Steppes)
-				ach(7309),	-- Fire in the Yaung-hole! (Townlong Steppes)
+				ach(7310),	-- Defender of Gods
+				ach(7309),	-- Fire in the Yaung-hole!
 				ach(7298, {	-- Getting Around with the Shado-Pan
 					crit(6),	-- Chao the Voice
 					crit(1),	-- Fei Li
@@ -58,7 +58,7 @@ _.Zones =
 					crit(5),	-- The Enemy of My Enemy... Is Still My Enemy!
 					crit(6),	-- Uruk!
 				}),
-				ach(7299, {	-- Loner and a Rebel (Townlong Steppes)
+				ach(7299, {	-- Loner and a Rebel
 					crit(3),	-- Blackguard Defenders
 					crit(1),	-- Omnia Mystics
 					crit(2),	-- Wu Kao Assassins
@@ -127,7 +127,14 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7307),	-- Silent Assassin (Townlong Steppes)
+				ach(7307),	-- Silent Assassin
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(13),	-- Mongoose
+						crit(17),	-- Yakrat
+					},
+				}),
 				ach(7288),	-- Yak Attack (Niuzao Temple)
 			}),
 		}),

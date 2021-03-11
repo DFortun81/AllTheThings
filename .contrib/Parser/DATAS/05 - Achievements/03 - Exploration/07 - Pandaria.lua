@@ -454,7 +454,7 @@ _.Achievements =
 				crit(6),	-- Fire Poppy
 				crit(7),	-- Southsea Firebrew
 			}),
-			ach(6350, {	-- To All the Squirrels I Once Caressed
+			ach(6350, {	-- To All the Squirrels I Once Caressed?
 				crit(1),	-- Amethyst Spiderling(Krasarang Wilds)
 				crit(2),	-- Bandicoon (Valley of the Four Winds)
 				crit(3),	-- Clouded Hedgehog (Dread Wastes)

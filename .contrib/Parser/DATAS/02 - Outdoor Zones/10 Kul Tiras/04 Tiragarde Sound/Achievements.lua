@@ -246,6 +246,13 @@ _.Zones =
 				ach(12087, {	-- The Reining Champion
 					["races"] = ALLIANCE_ONLY,
 				}),
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(3),	-- Fluttering Softwing
+						crit(5),	-- Tiragarde Gull
+					},
+				}),
 				ach(12577),		-- Tour of Duty: Tiragarde Sound
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]

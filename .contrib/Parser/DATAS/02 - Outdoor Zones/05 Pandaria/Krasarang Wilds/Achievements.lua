@@ -129,9 +129,16 @@ _.Zones =
 					},
 				}),
 				ach(6754, {	-- The Dark Heart of the Mogu
-					crit(2, {	-- The Lost Dynasty (Krasarang Wilds)
+					crit(2, {	-- The Lost Dynasty 
 						["coord"] = { 52.96, 27.42, 418 },
 					}),
+				}),
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Amethyst Spiderling
+						crit(10),	-- Luyu Moth
+					},
 				}),
 			}),
 		}),

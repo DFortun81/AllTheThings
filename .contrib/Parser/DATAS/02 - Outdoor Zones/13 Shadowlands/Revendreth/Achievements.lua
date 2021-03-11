@@ -283,6 +283,14 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14731, {	-- To All the Squirrels I've Loved and Lost
+					["collectible"] = false,
+					["g"] = {
+						crit(10),	-- Shardling
+						crit(11),	-- Emaciated Bat
+						crit(12),	-- Creeper
+					},
+				}),
 				ach(14512),		-- Tour of Duty: Revendreth
 				ach(14314, {	-- Treasures of Revendreth
 					crit(1, {	-- Lost Quill

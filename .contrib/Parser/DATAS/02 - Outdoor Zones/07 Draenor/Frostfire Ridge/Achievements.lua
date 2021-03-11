@@ -54,6 +54,13 @@ _.Zones =
 				}),
 				ach(9536),	-- Slagnarok (Magnarok)
 				ach(9535),	-- That Was Entirely Unnecessary (Magnarok)
+				ach(14728, {	-- To All The Squirrels Through Time and Space
+					["collectible"] = false,
+					["g"] = {
+						crit(8),	-- Frostfur Rat
+						crit(9),	-- Icespine Hatchling
+					},
+				}),
 				ach(9530, {	-- Writing in the Snow (A)
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35737,	-- Writing in the Snow

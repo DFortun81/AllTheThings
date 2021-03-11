@@ -421,6 +421,13 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(7),	-- Jungle Gulper
+						crit(8),	-- Crested Gekkota
+					},
+				}),
 				ach(12575),		-- Tour of Duty: Zuldazar
 				ach(12851, {	-- Treasures of Zuldazar
 					["collectible"] = false,

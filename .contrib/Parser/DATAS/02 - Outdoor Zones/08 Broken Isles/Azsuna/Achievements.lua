@@ -7,7 +7,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(ACHIEVEMENTS, {
-				ach(11261),		-- Adventurer of Azsuna
 				ach(10994, {	-- A Glorious Campaign
 					cl(PRIEST, {
 						["classes"] = { PRIEST },
@@ -100,6 +99,7 @@ _.Zones =
 						},
 					}),
 				}),
+				ach(11261),		-- Adventurer of Azsuna
 				ach(10763, {	-- Azsuna Matata
 					crit(1, {	-- Behind Legion Lines
 						["sourceQuests"] = { 37449 },	-- Dark Revelations
@@ -264,6 +264,15 @@ _.Zones =
 						crit(2, {	-- Tidestone of Golganneth
 							["sourceQuests"] = { 42213 },	-- Eye of Azshara: The Tidestone of Golganneth
 						}),
+					},
+				}),
+				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Felspider
+						crit(2),	-- Tenebrous Snake
+						crit(3),	-- Albatross Chick
+						crit(4),	-- Coastal Sandpiper
 					},
 				}),
 			}),

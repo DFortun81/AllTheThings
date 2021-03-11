@@ -7,7 +7,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
 			n(ACHIEVEMENTS, {
-				ach(7312, {	-- Amber is the Color of My Energy (Dread Wastes)
+				ach(7312, {	-- Amber is the Color of My Energy
 					crit(9, {	-- Hisek the Swarmkeeper
 						["sourceQuest"] = 31439,	-- Dropping Our Signal
 					}),
@@ -153,7 +153,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7316, {	-- Over Their Heads (Dread Wastes)
+				ach(7316, {	-- Over Their Heads
 					crit(4),	-- Amber-Shaper Un'sok
 					crit(6),	-- Amber Earthshaker
 					crit(7),	-- Amber Rocktunneler
@@ -171,7 +171,7 @@ _.Zones =
 					crit(2),	-- Wind Lord Mel'jarak
 				}),
 				ach(7321),	-- Spreading the Warmth
-				ach(7313, {	-- Stay Klaxxi (Dread Wastes)
+				ach(7313, {	-- Stay Klaxxi
 					crit(1),	-- Angel of Death
 					crit(9),	-- Children of the Grave
 					crit(10),	-- Battle Hymn
@@ -183,7 +183,15 @@ _.Zones =
 					crit(7),	-- Silent Lucidity
 					crit(8),	-- Speed King
 				}),
-				ach(7314),	-- Test Drive (Dread Wastes)
+				ach(7314),	-- Test Drive
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(3),	-- Clouded Hedgehog
+						crit(6),	-- Emperor Crab
+						crit(14),	-- Resilient Roach
+					},
+				}),
 			}),
 		}),
 	}),

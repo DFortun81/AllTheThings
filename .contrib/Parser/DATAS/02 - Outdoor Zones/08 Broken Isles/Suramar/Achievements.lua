@@ -353,6 +353,12 @@ _.Zones =
 					}),
 				}),
 				ach(11125),		-- Now You're Thinking With Portals
+				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+					["collectible"] = false,
+					["g"] = {
+						crit(5),	-- Glitterpool Frog
+					},
+				}),
 				ach(11260),		-- Treasures of Suramar
 				ach(11133, {	-- Why Can't I Hold All This Mana
 					["sourceQuests"] = {

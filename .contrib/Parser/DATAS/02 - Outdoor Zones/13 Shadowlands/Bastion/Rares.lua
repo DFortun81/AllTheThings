@@ -156,7 +156,7 @@ _.Zones =
 					},
 				}),
 				n(175563, { -- Courage
-					["description"] = "Requires a raid group of 9 people to simultaneously pet the Larion Cubs near Nemea (|cFFFFFFFF57.3, 39.2|r).",
+					["description"] = "Requires a group of 5 people to simultaneously pet Larion Cubs near Nemea (|cFFFFFFFF57.3, 39.2|r).",
 					["questID"] = 60093,	-- think this is one-time per character and not repeatable
 					["coord"] = { 57.3, 39.2, 1533 },
 					["crs"] = {

@@ -130,6 +130,15 @@ _.Zones =
 					["sourceQuests"] = { 30627 },	-- The Savior of Stoneplow
 				}),
 				ach(7293),	-- Till the Break of Dawn (Halfhill)
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(2),	-- Bandicoon
+						crit(11),	-- Malayan Quillrat
+						crit(12),	-- Marsh Fiddler
+						crit(16),	-- Sifang Otter
+					},
+				}),
 			}),
 		}),
 	}),
