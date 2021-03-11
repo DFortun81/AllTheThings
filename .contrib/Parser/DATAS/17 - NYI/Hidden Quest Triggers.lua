@@ -1270,7 +1270,12 @@ _.HiddenQuestTriggers =
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 
 		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
-
+		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
+		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
+		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
+		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
+		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
+		
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
 		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
