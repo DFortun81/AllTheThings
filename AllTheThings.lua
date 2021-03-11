@@ -8029,7 +8029,7 @@ end
 local appearanceFields = {
 	["key"] = function(t) return "s"; end,
 	["collectible"] = function(t)
-		return app.CollectibleTransmog and app.GroupFilter(t);
+		return app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
@@ -8796,7 +8796,7 @@ app.CollectibleAsCost = function(t)
 							if c[1] == "i" and c[2] == t.modItemID then
 								-- return true: this item is required as a 'cost' to something else collectible which has not been collected
 								-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
-								return true;
+								return app.RecursiveGroupRequirementsFilter(ref);	-- can be obtained on this character
 							end
 						end
 					end
