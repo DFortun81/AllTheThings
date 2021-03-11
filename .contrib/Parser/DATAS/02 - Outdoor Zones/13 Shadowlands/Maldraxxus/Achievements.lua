@@ -378,9 +378,15 @@ _.Zones =
 				ach(14731, {	-- To All the Squirrels I've Loved and Lost
 					["collectible"] = false,
 					["g"] = {
-						crit(7),	-- Chittering Claw
-						crit(8),	-- Writhing Rachis
-						crit(9),	-- Bubbling Refuse
+						crit(7, {	-- Chittering Claw
+							["crs"] = { 167353 },	-- Chittering Claw
+						}),
+						crit(8, {	-- Writhing Rachis
+							["crs"] = { 167354 },	-- Writhing Rachis
+						}),
+						crit(9, {	-- Bubbling Refuse
+							["crs"] = { 174650 },	-- Bubbling Refuse
+						}),
 					},
 				}),
 				ach(14513),		-- Tour of Duty: Maldraxxus

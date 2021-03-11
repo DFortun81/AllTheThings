@@ -678,9 +678,15 @@ _.Zones =
 				ach(14731, {	-- To All the Squirrels I've Loved and Lost
 					["collectible"] = false,
 					["g"] = {
-						crit(1),	-- Dreadfur Kit
-						crit(2),	-- Darkened Wyrmling
-						crit(3),	-- Soulwing Flitter
+						crit(1, {	-- Dreadfur Kit
+							["crs"] = { 170242 },	-- Dreadfur Kit
+						}),
+						crit(2, {	-- Darkened Wyrmling
+							["crs"] = { 170006 },	-- Darkened Wyrmling
+						}),
+						crit(3, {	-- Soulwing Flitter
+							["crs"] = { 168397 },	-- Soulwing Flitter
+						}),
 					},
 				}),
 				ach(14514),		-- Tour of Duty: Bastion

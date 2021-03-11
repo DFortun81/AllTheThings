@@ -29,15 +29,15 @@ _.Zones =
 					["coord"] = { 65.0, 19.6, 1565 },
 					["crs"] = { 164725 },	-- Tanor <Food & Drink>
 					["g"] = {
-						crit(1, {["cost"] = {{ "i", 178228, 1 }}}),	-- Glittersnap Snowpeas
-						crit(2, {["cost"] = {{ "i", 173761, 1 }}}),	-- Glazed Glowberries
-						crit(3, {["cost"] = {{ "i", 173759, 1 }}}),	-- Candied Brightbark
-						crit(4, {["cost"] = {{ "i", 178252, 1 }}}),	-- Torchberry Bundle
-						crit(5, {["cost"] = {{ "i", 178216, 1 }}}),	-- Grilled Slumbershrooms
-						crit(6, {["cost"] = {{ "i", 178226, 1 }}}),	-- Charred Runeflank
-						crit(7, {["cost"] = {{ "i", 178223, 1 }}}),	-- Poached Strider Egg
-						crit(8, {["cost"] = {{ "i", 173762, 1 }}}),	-- Flask of Ardendew
-						crit(9, {["cost"] = {{ "i", 178219, 1 }}}),	-- Mulled Faewine
+						crit(1,  {["cost"] = {{ "i", 178228, 1 }}}),	-- Glittersnap Snowpeas
+						crit(2,  {["cost"] = {{ "i", 173761, 1 }}}),	-- Glazed Glowberries
+						crit(3,  {["cost"] = {{ "i", 173759, 1 }}}),	-- Candied Brightbark
+						crit(4,  {["cost"] = {{ "i", 178252, 1 }}}),	-- Torchberry Bundle
+						crit(5,  {["cost"] = {{ "i", 178216, 1 }}}),	-- Grilled Slumbershrooms
+						crit(6,  {["cost"] = {{ "i", 178226, 1 }}}),	-- Charred Runeflank
+						crit(7,  {["cost"] = {{ "i", 178223, 1 }}}),	-- Poached Strider Egg
+						crit(8,  {["cost"] = {{ "i", 173762, 1 }}}),	-- Flask of Ardendew
+						crit(9,  {["cost"] = {{ "i", 178219, 1 }}}),	-- Mulled Faewine
 						crit(10, {["cost"] = {{ "i", 178218, 1 }}}),	-- Wintermelon Brandy
 						crit(11, {["cost"] = {{ "i", 178222, 1 }}}),	-- Honeyplum Pie
 						crit(12, {["cost"] = {{ "i", 173760, 1 }}}),	-- Sylberry Snowcake
@@ -299,9 +299,15 @@ _.Zones =
 				ach(14731, {	-- To All the Squirrels I've Loved and Lost
 					["collectible"] = false,
 					["g"] = {
-						crit(4),	-- Starmoth
-						crit(5),	-- Timber Kit
-						crit(6),	-- Runewood Hoarder
+						crit(4, {	-- Starmoth
+							["crs"] = { 164701, 165857, 169979 },	-- Starmoth
+						}),
+						crit(5, {	-- Timber Kit
+							["crs"] = { 166973 },	-- Timber Kit
+						}),
+						crit(6,	{	-- Runewood Hoarder
+							["crs"] = { 174837 },	-- Runewood Hoarder
+						}),
 					},
 				}),
 				ach(14511),		-- Tour of Duty: Ardenweald
