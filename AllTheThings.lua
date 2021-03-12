@@ -2932,7 +2932,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -3017,7 +3017,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -3026,7 +3026,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 
 						if sourceGroup.missing then
-							tinsert(info, { left = Colorize(L["SOURCE_ID_MISSING"], "ffff0000") });
+							tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 						end
 						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
@@ -8753,7 +8753,7 @@ end
 app.CollectibleAsCost = function(t)
 	-- items can only be a cost via 'itemID'
 	if t.modItemID then
-		-- get all the Things referenced by this item 
+		-- get all the Things referenced by this item
 		local references = app.SearchForField("itemID", t.modItemID, true);
 		if references then
 			-- print(t.modItemID,"references:")

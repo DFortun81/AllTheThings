@@ -23,8 +23,6 @@ local L = app.L;
 	L.FLIGHT_PATHS = "飞行路线";
 	L.KNOWN_BY = "已知 ";
 	L["REQUIRES"] = "要求" -- Requires
-	L.INVALID_BLIZZARD_DATA = "无效的暴雪数据 ";
-	L.MISSING_IN_ATT = "在ATT中缺失 ";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
@@ -503,7 +501,7 @@ local L = app.L;
 		L["SECRETS_HEADER"] = "解密"
 		L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 		L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
-		L.SOURCE_ID_MISSING = "数据库中未找到物品来源.\n请在#errors中向ATT Discord报告此物品及其获取地点!";
+		L.SOURCE_ID_MISSING = "请在#errors中向ATT Discord报告此物品及其获取地点!";
 
 	-- Filter Text
 		L["ACHIEVEMENT_ID"] = "成就ID"

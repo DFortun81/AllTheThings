@@ -33,8 +33,6 @@ app.L = {
 	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by ";
 	["REQUIRES"] = "Requires";
-	["INVALID_BLIZZARD_DATA"] = "INVALID BLIZZARD DATA ";
-	["MISSING_IN_ATT"] = "MISSING IN ATT ";
 	["RACE_LOCKED"] = "Race Locked";
 	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
@@ -515,7 +513,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	["SOURCE_ID_MISSING"] = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
+	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";

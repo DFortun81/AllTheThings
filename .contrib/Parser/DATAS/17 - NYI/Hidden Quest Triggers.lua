@@ -131,8 +131,8 @@ _.HiddenQuestTriggers =
 		q(54630),	-- Paragon of Talanji's Expedition
 		q(54631),	-- Paragon of the Voldunai
 		q(54632),	-- Paragon of the Zandalari Empire
-		
-	--	PVP quests	
+
+	--	PVP quests
 		q(38109, {	-- Vanilla 10-19
 			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
 		}),
@@ -1319,7 +1319,7 @@ _.HiddenQuestTriggers =
 		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
 		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
 		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
-		
+
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
 		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen

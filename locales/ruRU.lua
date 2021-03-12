@@ -25,8 +25,6 @@ local L = app.L;
 	L.FLIGHT_PATHS = "Пути Полётов";
 	L.KNOWN_BY = "Изучено ";
 	L.REQUIRES = "Требуется";
-	L.INVALID_BLIZZARD_DATA = "INVALID BLIZZARD DATA ";
-	L.MISSING_IN_ATT = "MISSING IN ATT ";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #errors! Спасибо!";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
@@ -505,7 +503,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "Секреты";
 		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
-		L.SOURCE_ID_MISSING = "SourceID not found in the database.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
+		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #errors на нашем сервере Discord, где Вы нашли эту вещь!";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.

@@ -21,8 +21,6 @@ local L = app.L;
 	--TODO: L.FLIGHT_PATHS = "Flight Paths";
 	--TODO: L.KNOWN_BY = "Known by ";
 	--TODO: L.REQUIRES = "Requires";
-	--TODO: L.INVALID_BLIZZARD_DATA = "INVALID BLIZZARD DATA ";
-	--TODO: L.MISSING_IN_ATT = "MISSING IN ATT ";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
@@ -501,7 +499,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.SELFIE_FILTERS_HEADER = "Selfie Filters";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-		--TODO: L.SOURCE_ID_MISSING = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
+		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
