@@ -25,8 +25,8 @@ local L = app.L;
 	L.FLIGHT_PATHS = "Пути Полётов";
 	L.KNOWN_BY = "Изучено ";
 	L.REQUIRES = "Требуется";
-	L.INVALID_BLIZZARD_DATA = "НЕВЕРНЫЕ ДАННЫЕ BLIZZARD ";
-	L.MISSING_IN_ATT = "ОТСУТСТВУЕТ В ATT ";
+	L.INVALID_BLIZZARD_DATA = "INVALID BLIZZARD DATA ";
+	L.MISSING_IN_ATT = "MISSING IN ATT ";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #errors! Спасибо!";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
@@ -84,7 +84,7 @@ local L = app.L;
 	L.MIN_MAX_STANDING = "Требуется отношение между";
 	L.AND_ = "И ";
 	L._AND = " и";
-	--TODO: L._MORE = " more";
+	L._MORE = " ещё";
 	L._OTHER_SOURCES = " другие источники";
 	L.DURING_WQ_ONLY = "Может быть выполнено, когда локальное задание активно.";
 	L.COMPLETED_DAILY = "Может быть выполнено ежедневно.";
@@ -114,7 +114,7 @@ local L = app.L;
 	L.HIDDEN_QUEST_TRIGGERS = "Скрытые Триггеры Заданий";
 	L.HIDDEN_QUEST_TRIGGERS_DESC = "Эти Задания, которые срабатывают основываясь на определённых критериях, в основном используются внутри игры в целях отслеживания";
 	L.UNSORTED_DESC_2 = "Эти предметы существуют в игре и могут быть доступны игрокам, но ещё не были отсортированы в корректную секцию в ATT";
-	L.BOUNTY_DESC = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все филльты игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.";
+	L.BOUNTY_DESC = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.";
 	L.OPEN_AUTOMATICALLY = "Открывается автоматически";
 	L.OPEN_AUTOMATICALLY_DESC = "Если вы не разработчик Blizzard, то может быть хорошей идей отключить эту функцию. Это было сделано для того, чтобы заставить Blizzard исправить и/или признать данные баги.";
 	L.TWO_CLOAKS = "|cffFF0000Эти два плаща имеют крайне ограниченные подтверждения о получении, если таковые имеются, поэтому считаются сломанными!|r";
@@ -505,7 +505,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "Секреты";
 		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
-		L.SOURCE_ID_MISSING = "SourceID данной Штучки отсутствует в ATT.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
+		L.SOURCE_ID_MISSING = "SourceID not found in the database.\nПожалуйста, сообщите, где Вы её нашли в канале #errors на нашем сервере Discord!";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
@@ -674,7 +674,7 @@ for key,value in pairs({
 		[-389] = "Вход для слуг",									-- Service Entrance (Stratholme)
 		[-390] = "Контрабандный путь",								-- Smuggler's Den (Spires of Arak)
 		[-391] = "Пивоварня Стоктрона",								-- Stoktron Brewery (Spires of Arak)
-		[-392] = "Hearthfire Tavern",								-- TODO: Hearthfire Tavern
+		[-392] = "Таверна \"Домашний очаг\"",						-- Hearthfire Tavern
 		[-393] = "Штурм цитадели",									-- Storming the Citadel
 		[-394] = "Чумодельня",										-- The Plagueworks
 		[-395] = "Багровый зал",									-- The Crimson Halls
@@ -721,12 +721,12 @@ for key,value in pairs({
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
+			[-694] = "Доспехи Дуэлянта",							-- Duelist Gear (SL)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
 
 		-- Classic PvP Seasons
-			[-663] = "Classic Pre-Season Gear",						-- TODO: Classic Pre-Season PvP Gear (need a icon)
+			[-663] = "Классические Предсезонные Доспехи",			-- Classic Pre-Season PvP Gear (need a icon)
 
 		-- The Burning Crusade PvP Seasons
 			[-664] = select(2, GetAchievementInfo(2091))..": Сезон 1",	-- Gladiator: Season 1
@@ -2836,10 +2836,10 @@ for key,value in pairs({
 	[355798] = "Клетка",
 	[356555] = "Ожерелье Эвридии",
 	[356693] = "Экстравагантные дары баронессы Вайш",
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",
+	[356697] = "Экстравагантные дары Александроса Могрейна",
 	[356700] = "Экстравагантные дары великого мастера Воула",
 	[356705] = "Экстравагантные дары изобретателя чумы Марилета",
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",
+	[356709] = "Экстравагантные дары Леди Лунной Ягоды",
 	[356712] = "Экстравагантные дары капитана-егеря Корейн",
 	[356716] = "Экстравагантные дары дромана Алиот",
 	[356720] = "Экстравагантные дары Чуфы",
