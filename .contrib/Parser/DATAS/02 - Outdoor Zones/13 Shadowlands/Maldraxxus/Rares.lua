@@ -247,7 +247,7 @@ _.Zones =
 						}),
 						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-							["description"] = "You must be Necrolord, at least Renown 31 & Abomination building construct \"Neena\" with you for this mount to have a chance of dropping.",
+							["description"] = "You must be a Necrolord, completed 9/9 story chapters & the Abomination building construct \"Neena\" with you for this mount to have a chance of dropping. Its not required to use the extra action button to loot Tahonta.",
 						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
