@@ -1474,6 +1474,7 @@ _.ExpansionFeatures =
 											crit(4, {	-- The Countess
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(182209),	-- Desire's Battle Gargon (MOUNT!)
 											i(181566),	-- Decree: The Countess's Boon
 											i(180961),	-- Silver-Bladed Ritual Dagger
 											i(180964),	-- Ember Court Barrier
