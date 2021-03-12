@@ -249,8 +249,12 @@ _.Zones =
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {
-						crit(3),	-- Fluttering Softwing
-						crit(5),	-- Tiragarde Gull
+						crit(3, {	-- Fluttering Softwing
+							["crs"] = { 126546 },	-- Fluttering Softwing
+						}),
+						crit(5, {	-- Tiragarde Gull
+							["crs"] = { 126519 },	-- Tiragarde Gull
+						}),
 					},
 				}),
 				ach(12577),		-- Tour of Duty: Tiragarde Sound

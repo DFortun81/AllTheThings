@@ -390,7 +390,9 @@ _.Zones =
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {
-						crit(12),	-- Vale Flutterby
+						crit(12, {	-- Vale Flutterby
+							["crs"] = { 134700 },	-- Vale Flutterby
+						}),
 					},
 				}),
 				ach(12576),		-- Tour of Duty: Vol'dun

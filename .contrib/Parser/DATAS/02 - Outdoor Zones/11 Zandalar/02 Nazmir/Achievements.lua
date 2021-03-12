@@ -422,8 +422,12 @@ _.Zones =
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {
-						crit(9),	-- Nazmani Weevil
-						crit(10),	-- Bloodfever Tarantula
+						crit(9,  {	-- Nazmani Weevil
+							["crs"] = { 130217 },	-- Nazmani Weevil
+						}),
+						crit(10, {	-- Bloodfever Tarantula
+							["crs"] = { 131017 },	-- Bloodfever Tarantula
+						}),
 					},
 				}),
 				ach(12574),		-- Tour of Duty: Nazmir

@@ -471,8 +471,12 @@ _.Zones =
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {
-						crit(4),	-- Drustbat
-						crit(6),	-- Bramble Hare
+						crit(4, {	-- Drustbat
+							["crs"] = { 129791 },	-- Drustbat
+						}),
+						crit(6, {	-- Bramble Hare
+							["crs"] = { 128798 },	-- Bramble Hare
+						}),
 					},
 				}),
 				ach(12579),		-- Tour of Duty: Drustvar

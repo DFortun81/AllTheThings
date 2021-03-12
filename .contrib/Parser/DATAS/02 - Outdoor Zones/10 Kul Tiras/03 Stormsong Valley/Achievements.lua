@@ -259,8 +259,12 @@ _.Zones =
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {
-						crit(1),	-- Honey Bee
-						crit(2),	-- Olivewing
+						crit(1, {	-- Honey Bee
+							["crs"] = { 131376 },	-- Honey Bee
+						}),
+						crit(2, {	-- Olivewing
+							["crs"] = { 143220 },	-- Olivewing
+						}),
 					},
 				}),
 				ach(12578),		-- Tour of Duty: Stormsong Valley
