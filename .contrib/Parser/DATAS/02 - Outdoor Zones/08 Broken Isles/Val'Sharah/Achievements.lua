@@ -221,9 +221,15 @@ _.Zones =
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {
-						crit(6),	-- Gleamhoof Fawn
-						crit(7),	-- Auburn Ringtail
-						crit(8),	-- Blighthawk
+						crit(6, {	-- Gleamhoof Fawn
+							["crs"] = { 109818 },	-- Gleamhoof Fawn
+						}),
+						crit(7, {	-- Auburn Ringtail
+							["crs"] = { 95626 },	-- Auburn Ringtail
+						}),
+						crit(8, {	-- Blighthawk
+							["crs"] = { 98090 },	-- Blighthawk
+						}),
 					},
 				}),
 			}),

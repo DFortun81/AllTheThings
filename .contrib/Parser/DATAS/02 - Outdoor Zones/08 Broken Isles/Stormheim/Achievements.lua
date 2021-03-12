@@ -197,8 +197,12 @@ _.Zones =
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {
-						crit(11),	-- Golden Eaglet
-						crit(12),	-- Tiny Apparition
+						crit(11, {	-- Golden Eaglet
+							["crs"] = { 97722 },	-- Golden Eaglet
+						}),
+						crit(12, {	-- Tiny Apparition
+							["crs"] = { 97953 },	-- Tiny Apparition
+						}),
 					},
 				}),
 				ach(10790, {	-- Vrykul Story, Bro

@@ -131,6 +131,50 @@ _.HiddenQuestTriggers =
 		q(54630),	-- Paragon of Talanji's Expedition
 		q(54631),	-- Paragon of the Voldunai
 		q(54632),	-- Paragon of the Zandalari Empire
+		
+	--	PVP quests	
+		q(38109, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38120, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38110, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38121, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62298, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62299, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38111, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38122, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38112, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38123, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62347, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62353, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62357, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62348, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
 
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)

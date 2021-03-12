@@ -161,7 +161,9 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(5),	-- Bloodbeak
+						crit(5, {	-- Bloodbeak
+							["crs"] = { 88998 },	-- Bloodbeak
+						}),
 					},
 				}),
 			}),

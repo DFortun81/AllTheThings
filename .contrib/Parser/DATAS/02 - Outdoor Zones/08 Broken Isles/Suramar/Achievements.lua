@@ -356,7 +356,9 @@ _.Zones =
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {
-						crit(5),	-- Glitterpool Frog
+						crit(5, {	-- Glitterpool Frog
+							["crs"] = { 102492 },	-- Glitterpool Frog
+						}),
 					},
 				}),
 				ach(11260),		-- Treasures of Suramar

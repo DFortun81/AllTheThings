@@ -128,9 +128,15 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(6),	-- Brilliant Bloodfeather
-						crit(7),	-- Flat-Tooth Calf
-						crit(12),	-- Shadow Sporebat
+						crit(6,  {	-- Brilliant Bloodfeather
+							["crs"] = { 88994 },	-- Brilliant Bloodfeather
+						}),
+						crit(7,  {	-- Flat-Tooth Calf
+							["crs"] = { 88983 },	-- Flat-Tooth Calf
+						}),
+						crit(12, {	-- Shadow Sporebat
+							["crs"] = { 88996 },	-- Shadow Sporebat
+						}),
 					},
 				}),
 				ach(9636),		-- United We Stand

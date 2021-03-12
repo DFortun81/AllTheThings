@@ -269,10 +269,18 @@ _.Zones =
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {
-						crit(1),	-- Felspider
-						crit(2),	-- Tenebrous Snake
-						crit(3),	-- Albatross Chick
-						crit(4),	-- Coastal Sandpiper
+						crit(1, {	-- Felspider
+							["crs"] = { 113345 },	-- Felspider
+						}),
+						crit(2, {	-- Tenebrous Snake
+							["crs"] = { 113278 },	-- Tenebrous Snake
+						}),
+						crit(3, {	-- Albatross Chick
+							["crs"] = { 97020 },	-- Albatross Chick
+						}),
+						crit(4, {	-- Coastal Sandpiper
+							["crs"] = { 89380 },	-- Coastal Sandpiper
+						}),
 					},
 				}),
 			}),
