@@ -138,6 +138,7 @@ _.WorldEvents =
 					["coord"] = { 72.7, 68.4, 500 },
 				}),
 				q(55022, {	-- Solving the Mystery
+					["u"] = REMOVED_FROM_GAME,	-- whole file is marked REMOVED_FROM_GAME but had to put this here to make it stop showing up in Netherstorm minilist
 					["provider"] = { "n", 150320 },	-- Bizmo
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["coord"] = { 31.1, 66.5, 109 },
