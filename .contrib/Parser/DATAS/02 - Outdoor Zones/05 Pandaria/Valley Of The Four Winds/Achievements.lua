@@ -22,7 +22,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Waterspeakers
-							["coord"] = { 61.52, 34.88, 376 },
+							["coord"] = { 61.5, 34.8, 376 },
 						}),
 					},
 				}),
@@ -30,7 +30,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(3, {	-- Embracing the Passions
-							["coord"] = { 83.22, 21.16, 376 },
+							["coord"] = { 83.2, 21.1, 376 },
 						}),
 					},
 				}),
@@ -133,10 +133,18 @@ _.Zones =
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(2),	-- Bandicoon
-						crit(11),	-- Malayan Quillrat
-						crit(12),	-- Marsh Fiddler
-						crit(16),	-- Sifang Otter
+						crit(2,  {	-- Bandicoon
+							["crs"] = { 64782 },	-- Bandicoon
+						}),
+						crit(11, {	-- Malayan Quillrat
+							["crs"] = { 64784 },	-- Malayan Quillrat
+						}),
+						crit(12, {	-- Marsh Fiddler
+							["crs"] = { 64786 },	-- Marsh Fiddler
+						}),
+						crit(16, {	-- Sifang Otter
+							["crs"] = { 64787 },	-- Sifang Otter
+						}),
 					},
 				}),
 			}),

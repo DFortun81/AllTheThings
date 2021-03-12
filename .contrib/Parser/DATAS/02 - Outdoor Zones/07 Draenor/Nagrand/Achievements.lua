@@ -179,7 +179,9 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(15),	-- Leatherhide Runt
+						crit(15, {	-- Leatherhide Runt
+							["crs"] = { 83617 },	-- Leatherhide Runt
+						}),
 					},
 				}),
 				ach(9615,  {	-- With a Nagrand Cherry On Top

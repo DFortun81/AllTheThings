@@ -131,8 +131,12 @@ _.Zones =
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(13),	-- Mongoose
-						crit(17),	-- Yakrat
+						crit(13, {	-- Mongoose
+							["crs"] = { 65191 },	-- Mongoose
+						}),
+						crit(17, {	-- Yakrat
+							["crs"] = { 64802 },	-- Yakrat
+						}),
 					},
 				}),
 				ach(7288),	-- Yak Attack (Niuzao Temple)

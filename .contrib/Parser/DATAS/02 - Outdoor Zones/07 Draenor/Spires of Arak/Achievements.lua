@@ -147,8 +147,12 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(13),	-- Thicket Skitterer
-						crit(14),	-- Mud Jumper
+						crit(13, {	-- Thicket Skitterer
+							["crs"] = { 88462 },	-- Thicket Skitterer
+						}),
+						crit(14, {	-- Mud Jumper
+							["crs"] = { 83674 },	-- Mud Jumper
+						}),
 					},
 				}),
 				ach(9432),		-- Would You Like a Pamphlet? (Shadowmoon Enclave)

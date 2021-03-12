@@ -136,8 +136,12 @@ _.Zones =
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(1),	-- Amethyst Spiderling
-						crit(10),	-- Luyu Moth
+						crit(1,  {	-- Amethyst Spiderling
+							["crs"] = { 64798 },	-- Amethyst Spiderling
+						}),
+						crit(10, {	-- Luyu Moth
+							["crs"] = { 63289 },	-- Luyu Moth
+						}),
 					},
 				}),
 			}),

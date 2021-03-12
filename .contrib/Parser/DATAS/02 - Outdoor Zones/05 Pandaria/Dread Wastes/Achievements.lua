@@ -187,9 +187,15 @@ _.Zones =
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(3),	-- Clouded Hedgehog
-						crit(6),	-- Emperor Crab
-						crit(14),	-- Resilient Roach
+						crit(3,  {	-- Clouded Hedgehog
+							["crs"] = { 64803 },	-- Clouded Hedgehog
+						}),
+						crit(6,  {	-- Emperor Crab
+							["crs"] = { 63329 },	-- Emperor Crab
+						}),
+						crit(14, {	-- Resilient Roach
+							["crs"] = { 64807 },	-- Resilient Roach
+						}),
 					},
 				}),
 			}),

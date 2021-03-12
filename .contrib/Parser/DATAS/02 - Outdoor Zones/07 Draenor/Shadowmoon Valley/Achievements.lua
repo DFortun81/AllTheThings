@@ -95,10 +95,18 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(1),	-- Royal Moth
-						crit(2),	-- Moonshell Crab
-						crit(3),	-- Moon Snake
-						crit(4),	-- Mossbite Skitterer
+						crit(1, {	-- Royal Moth
+							["crs"] = { 88975 },	-- Royal Moth
+						}),
+						crit(2, {	-- Moonshell Crab
+							["crs"] = { 88976 },	-- Moonshell Crab
+						}),
+						crit(3, {	-- Moon Snake
+							["crs"] = { 75475 },	-- Moon Snake
+						}),
+						crit(4, {	-- Mossbite Skitterer
+							["crs"] = { 88463 },	-- Mossbite Skitterer
+						}),
 					},
 				}),
 				ach(9432),	-- Would You Like a Pamphlet? (Shadowmoon Enclave)

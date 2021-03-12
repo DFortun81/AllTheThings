@@ -41,9 +41,15 @@ _.Zones =
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(5),	-- Dancing Water Skimmer
-						crit(7),	-- Gilded Moth
-						crit(8),	-- Golden Civet
+						crit(5, {	-- Dancing Water Skimmer
+							["crs"] = { 65209 },	-- Dancing Water Skimmer
+						}),
+						crit(7, {	-- Gilded Moth
+							["crs"] = { 65205 },	-- Gilded Moth
+						}),
+						crit(8, {	-- Golden Civet
+							["crs"] = { 65206 },	-- Golden Civet
+						}),
 					},
 				}),
 			}),

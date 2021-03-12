@@ -38,22 +38,28 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(3, {	-- Spirit Binders
-							["coord"] = { 42.26, 17.46, 371 },
+							["coord"] = { 42.2, 17.4, 371 },
 						}),
 					},
 				}),
 				ach(6855, {	-- The Seven Burdens of Shaohao
 					crit(1),	-- The Emperor's Burden - Part 1
 					crit(3, {	-- The Emperor's Burden - Part 3
-						["coord"] = { 55.88, 56.84, 371 },
+						["coord"] = { 55.8, 56.8, 371 },
 					}),
 				}),
 				ach(6350, {	-- To All the Squirrels I Once Caressed?
 					["collectible"] = false,
 					["g"] = {
-						crit(4),	-- Coral Adder
-						crit(9),	-- Leopard Tree Frog
-						crit(15),	-- Shrine Fly
+						crit(4,  {	-- Coral Adder
+							["crs"] = { 59356 },	-- Coral Adder
+						}),
+						crit(9,  {	-- Leopard Tree Frog
+							["crs"] = { 64774 },	-- Leopard Tree Frog
+						}),
+						crit(15, {	-- Shrine Fly
+							["crs"] = { 59770 },	-- Shrine Fly
+						}),
 					},
 				}),
 				ach(6300, {	-- Upjade Complete (A)

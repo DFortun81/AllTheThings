@@ -57,8 +57,12 @@ _.Zones =
 				ach(14728, {	-- To All The Squirrels Through Time and Space
 					["collectible"] = false,
 					["g"] = {
-						crit(8),	-- Frostfur Rat
-						crit(9),	-- Icespine Hatchling
+						crit(8, {	-- Frostfur Rat
+							["crs"] = { 88985 },	-- Frostfur Rat
+						}),
+						crit(9, {	-- Icespine Hatchling
+							["crs"] = { 88441 },	-- Icespine Hatchling
+						}),
 					},
 				}),
 				ach(9530, {	-- Writing in the Snow (A)
