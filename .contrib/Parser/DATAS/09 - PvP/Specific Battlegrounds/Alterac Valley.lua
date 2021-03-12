@@ -188,12 +188,10 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 							}),
 							q(7167,  {	-- The Eye of Command
+								["sourceQuests"] = { 7166 },	-- Legendary Heroes
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 7166 },	-- Legendary Heroes
-								["lvl"] = 51,
-								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 								["g"] = {
 									i(17909),	-- Frostwolf Insignia Rank 6
 								},

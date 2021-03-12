@@ -1033,16 +1033,15 @@ _.Zones =
 							i(30334),	-- Starcaller's Plated Stompers
 						},
 					}),
-					i(29738, {	-- Vial of Void Horror Ooze
-						q(10413, {	-- The Horrors of Pollution
-							["provider"] = { "n", 20779 },	-- Congealed Void Horror
-							["coord"] = { 54.6, 44.1, 109 },
-							["groups"] = {
-								i(30338),	-- Diviner's Cloak
-								i(30339),	-- Protectorate Assassin's Ring
-								i(30340),	-- Starkiller's Bauble
-							},
-						}),
+					q(10413, {	-- The Horrors of Pollution
+						["provider"] = { "i", 29738 },	-- Vial of Void Horror Ooze
+						["crs"] = { 20779 },	-- Congealed Void Horror
+						["coord"] = { 54.6, 44.1, 109 },
+						["groups"] = {
+							i(30338),	-- Diviner's Cloak
+							i(30339),	-- Protectorate Assassin's Ring
+							i(30340),	-- Starkiller's Bauble
+						},
 					}),
 					q(10924, {	-- Bloody Imp-ossible!
 						["provider"] = { "n", 22479 },	-- Sab'aoth
