@@ -3341,7 +3341,6 @@ _.HiddenQuestTriggers =
 		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion Treasures
-		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
 		q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)

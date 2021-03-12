@@ -2798,6 +2798,7 @@ for key,value in pairs({
 	--TODO: [353796] = "Reliquary of Remembrance",
 	--TODO: [353797] = "Stone Legion Supplies",
 	--TODO: [353799] = "Hopebreaker Pack",
+	--TODO: [353868] = "Hidden Hoard",	-- currently no localization available on wowhead for this object, it's just listed as [Hidden Hoard]
 	--TODO: [353869] = "Hidden Hoard",
 	--TODO: [353870] = "Hidden Hoard",
 	--TODO: [353871] = "Hidden Hoard",
