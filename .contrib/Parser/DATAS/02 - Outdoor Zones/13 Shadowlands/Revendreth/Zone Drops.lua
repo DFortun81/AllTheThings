@@ -73,35 +73,47 @@ _.Zones =
 					},
 				}),
 				i(183420, {	-- Hopebreaker's Right Boot
-					i(183418, {	-- Hopebreaker's Boots
-						["cost"] = {
-							{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
-						},
-					}),
+					["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },
+					["g"] = {
+						i(183418, {	-- Hopebreaker's Boots
+							["cost"] = {
+								{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
+							},
+						}),
+					},
 				}),
 				i(183417, {	-- Mail Courier's Right Runner
-					i(182719, {	-- Mail Courier's Runners
-						["cost"] = {
-							{ "i", 183416, 1 },	-- Mail Courier's Left Runner
-						},
-					}),
+					["classes"] = { HUNTER, SHAMAN },
+					["g"] = {
+						i(182719, {	-- Mail Courier's Runners
+							["cost"] = {
+								{ "i", 183416, 1 },	-- Mail Courier's Left Runner
+							},
+						}),
+					},
 				}),
 				i(183430, {	-- Researcher's Right Slipper
-					i(183425, {	-- Researcher's Slippers
-						["cost"] = {
-							{ "i", 183427, 1 },	-- Researcher's Left Slipper
-						},
-					})
-				,}),
+					["classes"] = { MAGE, PRIEST, WARLOCK },
+					["g"] = {
+						i(183425, {	-- Researcher's Slippers
+							["cost"] = {
+								{ "i", 183427, 1 },	-- Researcher's Left Slipper
+							},
+						}),
+					},
+				}),
 				i(183970, {	-- Royal Arcanist's Ritual Blade
 					["crs"] = { 165270 },	-- Royal Arcanist
 				}),
 				i(183423, {	-- Stone Legion Right Sabaton
-					i(183421, {	-- Stone Legion Sabatons
-						["cost"] = {
-							{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						},
-					}),
+					["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+					["g"] = {
+						i(183421, {	-- Stone Legion Sabatons
+							["cost"] = {
+								{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
+							},
+						}),
+					},
 				}),
 				i(177772),	-- Avowed Tormenter's Cord
 				i(177769),	-- Avowed Tormenter's Handwraps

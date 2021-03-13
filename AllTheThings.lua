@@ -8752,7 +8752,8 @@ app.CollectibleAsQuest = function(t)
 end
 app.CollectibleAsCost = function(t)
 	-- items can only be a cost via 'itemID'
-	if t.modItemID then
+	-- ignore anything which is directly under something which is 'saved' == 1, since that means the character cannot obtain it currently
+	if t.modItemID and (not t.parent or t.parent.saved ~= 1) then
 		-- get all the Things referenced by this item
 		local references = app.SearchForField("itemID", t.modItemID, true);
 		if references then
@@ -8771,7 +8772,11 @@ app.CollectibleAsCost = function(t)
 							if c[1] == "i" and c[2] == t.modItemID then
 								-- return true: this item is required as a 'cost' to something else collectible which has not been collected
 								-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
-								return app.RecursiveGroupRequirementsFilter(ref);	-- can be obtained on this character
+								-- if can be obtained on this character
+								if app.RecursiveGroupRequirementsFilter(ref) then
+									-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
+									return true;	-- this item is a cost for something collectible on this character
+								end
 							end
 						end
 					end
