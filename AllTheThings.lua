@@ -1053,9 +1053,6 @@ end
 local function VerifySourceID(item)
 	-- ignore things which arent items
 	if not item.itemID then return true; end
-	-- ignore items that dont meet the customHarvest range if specified
-	if app.customHarvestMin and app.customHarvestMin > item.itemID then return true; end
-	if app.customHarvestMax and app.customHarvestMax < item.itemID then return true; end
 	-- no source at all, try to get it
 	if not item.s or item.s == 0 then return; end
 	-- unobtainable item, don't change the sourceID
@@ -1077,7 +1074,7 @@ local function VerifySourceID(item)
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
 
-		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
+		local linkInfoSourceID = app.GetSourceID(item.link);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
 			return;
@@ -14020,6 +14017,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 			self.initialized = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.Settings:Get("DebugMode") then
+				app.print("Enabled Debug Mode");
+				self.forcedDebug = true;
 				app.Settings:ToggleDebugMode();
 			end
 			-- clear any previously saved harvest data
@@ -14035,32 +14034,61 @@ app:GetWindow("Harvester", UIParent, function(self)
 			db.total = 0;
 			db.back = 1;
 
-			local mID;
-			local modIDs = {};
-			local bonusIDs = {};
+			local _;
+			local harvested = {};
+			-- local modIDs = {};
+			-- local bonusIDs = {};
+			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
 			app.MaximumItemInfoRetries = 40;
+			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
-				-- clean any cached modID from the itemID
-				itemID = GetItemIDAndModID(itemID);
-				for i,group in ipairs(groups) do
-					if group.bonusID and not bonusIDs[group.bonusID] then
-						bonusIDs[group.bonusID] = true;
-						if (not VerifySourceID(group)) then
-							tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-						end
-					else
-						mID = group.modID or 0;
-						if not modIDs[mID] then
-							modIDs[mID] = true;
-							if (not VerifySourceID(group)) then
-								tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+				-- ignore items that dont meet the customHarvest range if specified
+				if (not minID or minID < itemID) and (not maxID or itemID < maxID) then
+					-- clean any cached modID from the itemID
+					itemID = GetItemIDAndModID(itemID);
+					-- print("Checking for Source",itemID)
+					for i,group in ipairs(groups) do
+						-- only use the matching cached Item
+						if group.itemID == itemID and not harvested[group.modItemID or itemID] then
+							harvested[group.modItemID or itemID] = true;
+							if group.bonusID then
+								-- Harvest using a BonusID?
+								_ = group.bonusID;
+								-- if not bonusIDs[_] then
+									-- print("Check w/ Bonus",itemID,_)
+									-- bonusIDs[_] = true;
+									if (not VerifySourceID(group)) then
+										-- print("Harvest w/ Bonus",itemID,_)
+										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
+									end
+								-- end
+							elseif group.modID then
+								-- Harvest using a ModID?
+								_ = group.modID;
+								-- if not modIDs[_] then
+									-- print("Check w/ Mod",itemID,_)
+									-- modIDs[_] = true;
+									if (not VerifySourceID(group)) then
+										-- print("Harvest w/ Mod",itemID,_)
+										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
+									end
+								-- end
+							else
+								-- Harvest with no special ID?
+								-- print("Check",itemID)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest",itemID)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}, app.BaseItem));
+								end								
 							end
+						-- else print("Cached skip",group.key,group[group.key]);
 						end
 					end
+					-- wipe(modIDs);
+					-- wipe(bonusIDs);
 				end
-				wipe(modIDs);
-				wipe(bonusIDs);
 			end
+			wipe(harvested);
 			-- remove the custom harvest flags
 			app.customHarvestMin = nil;
 			app.customHarvestMax = nil;
@@ -14098,6 +14126,12 @@ app:GetWindow("Harvester", UIParent, function(self)
 						end
 					else
 						table.sort(AllTheThingsHarvestItems);
+						-- revert Debug if it was enabled by the harvester
+						if self.forcedDebug then
+							app.print("Reverted Debug Mode");
+							app.Settings:ToggleDebugMode();
+							self.forcedDebug = nil;
+						end
 						app.print("Source Harvest Complete!");
 						self.UpdateDone = nil;
 					end

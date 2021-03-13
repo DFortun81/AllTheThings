@@ -238,7 +238,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(8703, {	-- Signet of Expertise
 							un(REMOVED_FROM_GAME, i(8708, {	-- Hammer of Expertise
-								["ignoreSource"] = true,
+								["collectible"] = false,
 							})),
 						})),
 					},

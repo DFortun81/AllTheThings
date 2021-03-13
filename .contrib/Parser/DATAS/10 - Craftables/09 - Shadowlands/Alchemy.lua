@@ -7,9 +7,7 @@ _.Craftables =
 	tier(9, {	-- Shadowlands
 		n(-180, {	-- Alchemy
 			n(-320, {	-- Head
-				i(180751, {	-- Red Noggin Candle
-					["modID"] = 13,
-				}),
+				i(180751),	-- Red Noggin Candle
 			}),
 			filter(53, {	-- Trinkets
 				i(171323, {	-- Spiritual Alchemy Stone

@@ -7,9 +7,7 @@ _.Craftables =
 	tier(9, {	-- Shadowlands
 		n(-185, {	-- Inscription
 			n(-320, {	-- Head
-				i(180755, {	-- Fae Revel Masque
-					["modID"] = 13,
-				}),
+				i(180755),	-- Fae Revel Masque
 			}),
 			filter(1, {	-- Off-hand
 				i(173050),	-- Newly Departed Codex
