@@ -13261,7 +13261,7 @@ function app:BuildSearchResponse(groups, field, value)
 		local t;
 		if type(field) == "function" then
 			for i,group in ipairs(groups) do
-				if field(group) then
+				if field(group) and group.collectible then
 					if not t then t = {}; end
 					tinsert(t, CloneData(group));
 				elseif group.g then
@@ -13275,7 +13275,7 @@ function app:BuildSearchResponse(groups, field, value)
 		else
 			for i,group in ipairs(groups) do
 				local v = group[field];
-				if v and v == value then
+				if v and v == value and group.collectible then
 					if not t then t = {}; end
 					tinsert(t, CloneData(group));
 				elseif group.g then
