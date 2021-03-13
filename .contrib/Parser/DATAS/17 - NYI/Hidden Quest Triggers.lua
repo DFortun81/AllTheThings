@@ -1130,6 +1130,9 @@ _.HiddenQuestTriggers =
 		q(43172),	-- Warmongering Gladiator's Scaled Armor (Horde, Paladin)
 		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
 		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
+		
+		q(60689),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
+		q(63572),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
 
 		-------------------
 		--    Legion     --
