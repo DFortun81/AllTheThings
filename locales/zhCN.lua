@@ -776,7 +776,8 @@ for key,value in pairs({
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",												-- Hivemind
+		[-807] = "主脑",											-- Hivemind
+		[-808] = "被缚的影犬",										-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
@@ -785,8 +786,8 @@ for key,value in pairs({
 		[-852] = "艾泽里特精华",										-- Azerite Essences
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
-		[-855] = "治疗",												-- Healers
-		[-856] = "坦克",												-- Tanks
+		[-855] = "治疗",											-- Healers
+		[-856] = "坦克",											-- Tanks
 		[-857] = "大秘境",											-- Mythic+
 		--TODO: [-858] = "Rank 1",									-- Rank 1
 		--TODO: [-859] = "Rank 2",									-- Rank 2

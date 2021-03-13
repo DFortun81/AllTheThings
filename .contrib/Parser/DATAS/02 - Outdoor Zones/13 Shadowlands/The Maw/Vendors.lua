@@ -83,6 +83,10 @@ _.Zones =
 					i(181245, {	-- Oil of Ethereal Force
 						["cost"] = { { "c", 1767, 165 } },
 					}),
+					i(185350, {	-- Partial Rune Codex
+						["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
+						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+					}),
 					i(184652, {	-- Phantasmic Infuser
 						["cost"] = { { "c", 1767, 3760 } },
 					}),
@@ -139,7 +143,7 @@ _.Zones =
 						["cost"] = { { "c", 1767, 210 } },
 					}),
 					i(184870, {	-- Stygia Dowser
-						["description"] = "Used for Bound Shadehound secret mount. Only available to character with maxed Ven'ari reputation.",
+						["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
 						["cost"] = { { "c", 1767, 1500 } },
 					}),
 					i(184359, {	-- Unbound Reality Fragment

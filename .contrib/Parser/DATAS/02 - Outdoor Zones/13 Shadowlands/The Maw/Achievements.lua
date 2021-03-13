@@ -92,6 +92,7 @@ _.Zones =
 						175897,	-- Aimless Soul
 						174182,	-- Caged Soul
 						176149,	-- Imprisoned Soul
+						175910,	-- Scavenged Soul
 					--	TODO: add interactable souls' IDs
 					},
 				}),

@@ -750,6 +750,7 @@ for key,value in pairs({
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "Часовой пояс",									-- Waist of Time
 		[-807] = "Коллективный разум",								-- Hivemind
+		[-808] = "Подчиненная темная гончая",						-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "Механизированный сундук",							-- Mechanized Chest

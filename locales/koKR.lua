@@ -757,6 +757,7 @@ for key,value in pairs({
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
+		[-808] = "결속된 그늘사냥개",									-- Bound Shadehound
 
 	-- Mechagon
 		--TODO: [-850] = "Mechanized Chest",						-- Mechanized Chest

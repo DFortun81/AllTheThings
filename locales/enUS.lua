@@ -1082,6 +1082,7 @@ app.L = {
 		[-805] = "Interface\\Icons\\inv_demongoat",											-- Baa'l
 		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",						-- Waist of Time
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
+		[-808] = 2998185,																	-- Bound Shadehound
 		[-850] = "Interface\\Icons\\INV_Eng_Crate2",										-- Mechanized Chest
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Irontide Chest
 		[-852] = "Interface\\Icons\\inv_heartofazeroth",									-- Azerite Essences
@@ -1963,6 +1964,7 @@ app.L = {
 		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = "Hivemind",													-- Hivemind
+		[-808] = "Bound Shadehound",											-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
