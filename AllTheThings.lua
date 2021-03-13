@@ -5093,18 +5093,22 @@ local function RefreshMountCollection(newMountID)
 
 		-- Cache current counts
 		local previousProgress = app:GetDataCache().progress or 0;
-		-- print("Previous Progress",previousProgress)
+		-- print("Previous Progress",previousProgress)		
 
 		-- Refresh Mounts
 		local collectedSpells = GetDataMember("CollectedSpells", {});
 		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		-- specific mount collected
 		if newMountID then
+			-- print("newmount",newMountID)
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
-				-- print("collected spellID",spellID);
+				-- print("collected spellID",spellID)
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
+
+				-- update the lists where this mount exists
+				UpdateSearchResults(SearchForField("spellID", spellID));
 			end
 		-- or just check all mounts
 		else
@@ -5114,18 +5118,22 @@ local function RefreshMountCollection(newMountID)
 					-- print("collected spellID",spellID);
 					collectedSpells[spellID] = 1;
 					collectedSpellsPerCharacter[spellID] = 1;
+
+					-- update the lists where this mount exists
+					UpdateSearchResults(SearchForField("spellID", spellID));
 				end
 			end
+
+			-- TODO: refreshing the entire data source might not be necessary...
+			-- Wait a frame before harvesting item collection status.
+			coroutine.yield();
+			-- print("Refresh to check progress after collection...")
+			app:RefreshData(false, true);
+
+			-- Wait 2 frames before refreshing states.
+			coroutine.yield();
+			coroutine.yield();
 		end
-
-		-- Wait a frame before harvesting item collection status.
-		coroutine.yield();
-		-- print("Refresh to check progress after collection...")
-		app:RefreshData(false, true);
-
-		-- Wait 2 frames before refreshing states.
-		coroutine.yield();
-		coroutine.yield();
 
 		-- Compare progress
 		local progress = app:GetDataCache().progress or 0;
