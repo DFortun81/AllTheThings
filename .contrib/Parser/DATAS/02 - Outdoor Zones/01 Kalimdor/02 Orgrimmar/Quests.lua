@@ -621,7 +621,7 @@ _.Zones =
 				}),
 				q(28457, {	-- A Dangerous Alliance
 					["sourceQuests"] = { 28290 },	-- Meet with Grezz Ragefist
-					["provider"] = { "n", 3353 },	-- Grezz Ragefist
+					["provider"] = { "n", 168596 },	-- Gormok Ogrefist
 					["classes"] = { WARRIOR },
 					["coord"] = { 73.6, 45.6, 85 },
 					["races"] = HORDE_ONLY,
@@ -672,7 +672,7 @@ _.Zones =
 				}),
 				q(27365, {	-- A Fitting Weapon
 					["sourceQuests"] = { 27281 },	-- Grezz Ragefist
-					["provider"] = { "n", 3353 },	-- Grezz Ragefist
+					["provider"] = { "n", 168596 },	-- Gormok Ogrefist
 					["classes"] = { WARRIOR },
 					["coord"] = { 73.6, 45.6, 85 },
 					["races"] = HORDE_ONLY,

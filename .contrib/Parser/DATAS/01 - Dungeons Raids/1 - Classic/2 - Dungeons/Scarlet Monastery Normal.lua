@@ -54,6 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 109221 }, -- Thassarian
 					["classes"] = { DEATHKNIGHT },
 					["sourceQuest"] = 42823, -- The Scarlet Commander
+					["maps"] = { 805 },
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
 					["provider"] = { "n", 64854 },	-- Blade of the Anointed
