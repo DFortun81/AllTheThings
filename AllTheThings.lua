@@ -7519,7 +7519,7 @@ app.BaseHeirloomLevel = {
 							return itemName;
 						end
 					else
-						t.retries = 1;
+						t.retries = nil;
 					end
 				end
 			end
@@ -7945,7 +7945,7 @@ local itemFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", 1);
+					rawset(t, "retries", nil);
 				end
 			end
 		end
@@ -8054,7 +8054,7 @@ local appearanceFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", 1);
+					rawset(t, "retries", nil);
 				end
 			end
 		end
@@ -11752,7 +11752,7 @@ RowOnEnter = function (self)
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
-		elseif reference.retries then
+		elseif reference.questID and reference.retries then
 			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);		-- L["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. "
 		end
 		if reference.lvl then
