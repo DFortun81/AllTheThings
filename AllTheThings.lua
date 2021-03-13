@@ -4215,20 +4215,27 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
-				-- print("sourceID",sourceID)
-				if sourceID then
-					_ = SearchForField("s", sourceID);
-					-- print("direct s",_ and #_)
-					-- if _ then return _; end
-					return _;
-				end
 
 				-- Search for the item ID.
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				-- print("link-search",modItemID,itemID)
+				-- accuracy of finding the correct ATT entry:
+				-- ItemID + modID
+				-- ItemID
+				-- SourceID
 				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 				-- print("found",_ and #_)
+				-- if the specific item was not found for whatever reason (modID which changes stats but not appearance [M+, PvP, etc.])
+				if not _ then
+					local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+					-- print("sourceID",sourceID)
+					if sourceID then
+						_ = SearchForField("s", sourceID);
+						-- print("direct s",_ and #_)
+						-- if _ then return _; end
+						-- return _;
+					end
+				end
 				return _;
 			end
 		end
