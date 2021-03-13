@@ -7,7 +7,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			n(ACHIEVEMENTS, {
-				ach(9696, {	-- Family Familiar
+				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["groups"] = {
@@ -191,6 +191,17 @@ _.Zones =
 					["groups"] = {
 						crit(1, {	-- Aegis of Aggramar
 							["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
+						}),
+					},
+				}),
+				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+					["collectible"] = false,
+					["g"] = {
+						crit(11, {	-- Golden Eaglet
+							["crs"] = { 97722 },	-- Golden Eaglet
+						}),
+						crit(12, {	-- Tiny Apparition
+							["crs"] = { 97953 },	-- Tiny Apparition
 						}),
 					},
 				}),

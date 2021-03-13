@@ -25,6 +25,7 @@ _.Zones =
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
 					["coord"] = { 42.2, 29.3, 895 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 125922 },	-- Brother Therold
 					["g"] = {
 						i(160097),	-- Navigator's Wristwraps
 						i(158260),	-- Navigator's Grips
@@ -45,15 +46,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 141078 },	-- Vigil Hill Refugee
 				}),
-				q(49290, {	-- Aged to Perfection
-					["sourceQuests"] = {
-						48773,	-- Papers, Please
-						48558,	-- The Irontide Crew
-					},
-					["coord"] = { 79.7, 81.8, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
-				}),
 				q(48873, {	-- A Grizzly End
 					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
 					["coord"] = { 75.8, 65.7, 895 },
@@ -65,18 +57,6 @@ _.Zones =
 					["coord"] = { 75.8, 65.7, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127646 },	-- Lord Kennings
-				}),
-				q(48540, {	-- Aiding the Wharf
-					["sourceQuests"] = { 48347 },	-- Anglepoint Wharf
-					["coord"] = { 42.3, 29.3, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 125922 },	-- Brother Therold
-				}),
-				q(49737, {	-- Air Raid
-					["sourceQuests"] = { 49869 },	-- A Desperate Defense
-					["coord"] = { 56.7, 61.1, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 				}),
 				q(49716, {	-- A Lesson on Trust
 					["sourceQuests"] = {
@@ -92,16 +72,6 @@ _.Zones =
 					["coord"] = { 65.8, 50.1, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129956 },	-- Dockmaster Tyndall
-				}),
-				q(49292, {	-- Algae Shakes
-					["sourceQuests"] = {
-						48352,	-- A Cure from the Sea
-						49268,	-- Sharks in the Water
-						48348,	-- Stinging Barbs
-					},
-					["coord"] = { 42.2, 29.3, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49234, {	-- A Marine Out of Water
 					["sourceQuests"] = { 50700 },	-- Drust in Time
@@ -119,36 +89,6 @@ _.Zones =
 						i(158250),	-- Sea Raider's Legguards
 					},
 				}),
-				q(48080, {	-- An Element of Danger
-					["sourceQuests"] = { 48070 },	-- The Norwington Festival
-					["coord"] = { 55.4, 24.6, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 125398 },	-- Harold Beckett
-				}),
-				q(50542, {	-- An Explosive Opportunity
-					["isBreadcrumb"] = true,
-					["coord"] = { 66.6, 49.9, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
-				}),
-				q(48347, {	-- Anglepoint Wharf
-					["isBreadcrumb"] = true,
-					["provider"] = { "o", 281718 },	-- HELP WANTED
-					["coord"] = { 53.0, 28.3, 895 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49710, {	-- An Offering of Eggs
-					["sourceQuests"] = { 49394 },	-- Hold Still
-					["coord"] = { 42.4, 22.6, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 129170 },	-- Rulf
-				}),
-				q(50349, {	-- An Overrun Mine
-					["isBreadcrumb"] = true,
-					["coord"] = { 75.6, 50.6, 895 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 133550 },	-- Junior Miner Joe
-				}),
 				q(55647, {	-- A Quick Ear Hustle
 					["sourceQuests"] = { 55646 },	-- The Legend of Mechagon
 					["provider"] = { "n", 152578 },	-- Gazlowe
@@ -165,6 +105,67 @@ _.Zones =
 					["coord"] = { 50.2, 37.1, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 123415 },	-- Henry Hardwick
+				}),
+				q(49290, {	-- Aged to Perfection
+					["sourceQuests"] = {
+						48773,	-- Papers, Please
+						48558,	-- The Irontide Crew
+					},
+					["coord"] = { 79.7, 81.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
+				}),
+				q(48540, {	-- Aiding the Wharf
+					["sourceQuests"] = { 48347 },	-- Anglepoint Wharf
+					["coord"] = { 42.3, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 125922 },	-- Brother Therold
+				}),
+				q(49737, {	-- Air Raid
+					["sourceQuests"] = { 49869 },	-- A Desperate Defense
+					["coord"] = { 56.7, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
+				}),
+				q(49292, {	-- Algae Shakes
+					["sourceQuests"] = {
+						48352,	-- A Cure from the Sea
+						49268,	-- Sharks in the Water
+						48348,	-- Stinging Barbs
+					},
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 125922 },	-- Brother Therold
+				}),
+				q(48080, {	-- An Element of Danger
+					["sourceQuests"] = { 48070 },	-- The Norwington Festival
+					["coord"] = { 55.4, 24.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 125398 },	-- Harold Beckett
+				}),
+				q(50542, {	-- An Explosive Opportunity
+					["isBreadcrumb"] = true,
+					["coord"] = { 66.6, 49.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
+				}),
+				q(49710, {	-- An Offering of Eggs
+					["sourceQuests"] = { 49394 },	-- Hold Still
+					["coord"] = { 42.4, 22.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 129170 },	-- Rulf
+				}),
+				q(50349, {	-- An Overrun Mine
+					["isBreadcrumb"] = true,
+					["coord"] = { 75.6, 50.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 133550 },	-- Junior Miner Joe
+				}),
+				q(48347, {	-- Anglepoint Wharf
+					["isBreadcrumb"] = true,
+					["provider"] = { "o", 281718 },	-- HELP WANTED
+					["coord"] = { 53.0, 28.3, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49260, {	-- Backup While I Pack Up
 					["sourceQuests"] = { 49225 },	-- Chasing the Leader
@@ -971,6 +972,7 @@ _.Zones =
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
 					["coord"] = { 42.2, 29.3, 895 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(52258, {	-- She Sells Seashells
 					["coord"] = { 60.9, 30.8, 895 },
@@ -1011,6 +1013,7 @@ _.Zones =
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
 					["coord"] = { 42.2, 29.3, 895 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 128680 },	-- Okri Putterwrench
 				}),
 				q(48778, {	-- Stone Soup
 					["provider"] = { "o", 276837 },	-- Recipe Rock

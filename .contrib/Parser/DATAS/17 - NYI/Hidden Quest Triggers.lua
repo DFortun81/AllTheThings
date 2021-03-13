@@ -132,6 +132,50 @@ _.HiddenQuestTriggers =
 		q(54631),	-- Paragon of the Voldunai
 		q(54632),	-- Paragon of the Zandalari Empire
 
+	--	PVP quests
+		q(38109, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38120, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38110, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38121, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62298, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62299, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38111, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38122, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38112, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38123, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62347, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62353, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62357, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62348, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
@@ -1086,6 +1130,9 @@ _.HiddenQuestTriggers =
 		q(43172),	-- Warmongering Gladiator's Scaled Armor (Horde, Paladin)
 		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
 		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
+		
+		q(60689),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
+		q(63572),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
 
 		-------------------
 		--    Legion     --
@@ -1270,6 +1317,11 @@ _.HiddenQuestTriggers =
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 
 		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
+		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
+		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
+		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
+		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
+		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
 
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
@@ -3292,7 +3344,6 @@ _.HiddenQuestTriggers =
 		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion Treasures
-		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
 		q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)

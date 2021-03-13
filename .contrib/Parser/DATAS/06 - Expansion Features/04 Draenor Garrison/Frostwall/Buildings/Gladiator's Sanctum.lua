@@ -111,6 +111,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 86629 },	-- Raza'kul
 								["races"] = HORDE_ONLY,
 							}),
+							q(36874, {	-- Warlord of Draenor
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 						n(-153, {	-- Work Orders
 							n(86639, {	-- Altar of Bones

@@ -148,6 +148,7 @@ i(62333);	-- Greater Inscription of Unbreakable Quartz
 i(43626);	-- Happy Pet Snack
 i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
+i(173793);	-- Inquisitor Sinstone (WQ reward, not actually the item you receive, but it rolls a random green Sinstone and you get that instead)
 i(18284);	-- Kreeg's Stout Beatdown
 i(180696);	-- Legion Wing Insignia
 i(19297);	-- Lesser Darkmoon Prize

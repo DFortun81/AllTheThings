@@ -396,27 +396,69 @@ _.Achievements =
 				crit(16),	-- Raptor Ridge
 			}),
 			ach(1206, {	-- To All The Squirrels I've Loved Before
-				crit(1),	-- Borean Frog (Borean Tundra)
-				crit(2),	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
-				crit(3),	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
-				crit(4),	-- Cow (Elwynn Forest, Stormwind City, Arathi Highlands, Redridge Mountains)
-				crit(5),	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
-				crit(6),	-- Ewe (Ruins of Gilneas, Shattrath City)
-				crit(7),	-- Fawn (Teldrassil, Elwynn Forest, Grizzly Hills)
-				crit(8),	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
-				crit(9),	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
-				crit(10),	-- Hare (Durotar, The Hinterlands)
-				crit(11),	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
-				crit(12),	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
-				crit(13),	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				crit(14),	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
-				crit(15),	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
-				crit(16),	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
-				crit(17),	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
-				crit(18),	-- Steam Frog (Borean Tundra)
-				crit(19),	-- Swine (Durotar, Northern Barrens)
-				crit(20),	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
-				crit(21),	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
+				crit(1,  {	-- Borean Frog (Borean Tundra)
+					["crs"] = { 25677 },	-- Borean Frog
+				}),
+				crit(2,  {	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
+					["crs"] = { 6368 },	-- Cat
+				}),
+				crit(3,  {	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
+					["crs"] = { 620 },	-- Chicken
+				}),
+				crit(4,  {	-- Cow (Elwynn Forest, Stormwind City, Arathi Highlands, Redridge Mountains)
+					["crs"] = { 2442 },	-- Cow
+				}),
+				crit(5,  {	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
+					["crs"] = { 883 },	-- Deer
+				}),
+				crit(6,  {	-- Ewe (Ruins of Gilneas, Shattrath City)
+					["crs"] = { 19665 },	-- Ewe
+				}),
+				crit(7,  {	-- Fawn (Teldrassil, Elwynn Forest, Grizzly Hills)
+					["crs"] = { 890 },	-- Fawn
+				}),
+				crit(8,  {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
+					["crs"] = { 13321 },	-- Small Frog
+				}),
+				crit(9,  {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
+					["crs"] = { 4166 },	-- Gazelle
+				}),
+				crit(10, {	-- Hare (Durotar, The Hinterlands)
+					["crs"] = { 5951 },	-- Hare
+				}),
+				crit(11, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
+					["crs"] = { 9600 },	-- Parrot
+				}),
+				crit(12, {	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
+					["crs"] = { 100153 },	-- Rabbit
+				}),
+				crit(13, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
+					["crs"] = { 2098 },	-- Ram
+				}),
+				crit(14, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
+					["crs"] = { 1933 },	-- Sheep
+				}),
+				crit(15, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
+					["crs"] = { 61158 },	-- Shore Crab
+				}),
+				crit(16, {	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
+					["crs"] = { 17467 },	-- Skunk
+				}),
+				crit(17, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
+					["crs"] = { 100151, 100152, 144846 },	-- Squirrel
+				}),
+				crit(18, {	-- Steam Frog (Borean Tundra)
+					["crs"] = { 25679 },	-- Steam Frog
+				}),
+				crit(19, {	-- Swine (Durotar, Northern Barrens)
+					["crs"] = { 10685 },	-- Swine
+				}),
+				crit(20, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
+					["crs"] = { 1420 },	-- Toad
+				}),
+				crit(21, {	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
+					["crs"] = { 2620 },	-- Prairie Dog
+				}),
 			}),
 		}),
 	}),

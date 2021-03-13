@@ -23,8 +23,6 @@ local L = app.L;
 	L.FLIGHT_PATHS = "飞行路线";
 	L.KNOWN_BY = "已知 ";
 	L["REQUIRES"] = "要求" -- Requires
-	L.INVALID_BLIZZARD_DATA = "无效的暴雪数据 ";
-	L.MISSING_IN_ATT = "在ATT中缺失 ";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
@@ -503,7 +501,7 @@ local L = app.L;
 		L["SECRETS_HEADER"] = "解密"
 		L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 		L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
-		L.SOURCE_ID_MISSING = "数据库中未找到物品来源.\n请在#errors中向ATT Discord报告此物品及其获取地点!";
+		L.SOURCE_ID_MISSING = "请在#errors中向ATT Discord报告此物品及其获取地点!";
 
 	-- Filter Text
 		L["ACHIEVEMENT_ID"] = "成就ID"
@@ -778,7 +776,8 @@ for key,value in pairs({
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",												-- Hivemind
+		[-807] = "主脑",											-- Hivemind
+		[-808] = "被缚的影犬",										-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
@@ -787,8 +786,8 @@ for key,value in pairs({
 		[-852] = "艾泽里特精华",										-- Azerite Essences
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
-		[-855] = "治疗",												-- Healers
-		[-856] = "坦克",												-- Tanks
+		[-855] = "治疗",											-- Healers
+		[-856] = "坦克",											-- Tanks
 		[-857] = "大秘境",											-- Mythic+
 		--TODO: [-858] = "Rank 1",									-- Rank 1
 		--TODO: [-859] = "Rank 2",									-- Rank 2
@@ -2822,6 +2821,7 @@ for key, value in pairs({
 	--TODO: [353796] = "Reliquary of Remembrance",
 	--TODO: [353797] = "Stone Legion Supplies",
 	[353799] = "灭愿者背包",
+	--TODO: [353868] = "Hidden Hoard",	-- currently no localization available on wowhead for this object, it's just listed as [Hidden Hoard]
 	--TODO: [353869] = "Hidden Hoard",
 	--TODO: [353870] = "Hidden Hoard",
 	--TODO: [353871] = "Hidden Hoard",

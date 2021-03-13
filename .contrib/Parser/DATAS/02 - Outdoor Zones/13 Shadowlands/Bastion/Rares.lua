@@ -155,6 +155,18 @@ _.Zones =
 						i(180651),	-- Discarded Phalynx Core (so the item is associated with the rare)
 					},
 				}),
+				n(175563, { -- Courage
+					["description"] = "Requires a group of 5 people to simultaneously pet Larion Cubs near Nemea (|cFFFFFFFF57.3, 39.2|r).",
+					["questID"] = 60093,	-- think this is one-time per character and not repeatable
+					["coord"] = { 57.3, 39.2, 1533 },
+					["crs"] = {
+						175776,	-- Courage
+						175760,	-- Larion Cub
+					},
+					["g"] = {
+						i(184400),	-- Courage (PET!)
+					},
+				}),
 				n(170623, { -- Dark Watcher
 					["description"] = "If the rare is up, you will get a debuff called Ominous Gaze when you are close to it.  To start the encounter, you need to die and speak to the NPC.",
 					["questID"] = 60883,

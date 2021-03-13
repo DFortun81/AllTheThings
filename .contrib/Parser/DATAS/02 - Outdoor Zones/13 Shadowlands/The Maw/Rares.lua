@@ -529,6 +529,10 @@ _.Zones =
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(183141),	-- Stygic Magma
+						i(185473, {	-- Soulforger's Tools
+							["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
+							["questID"] = 63667,
+						}),
 					},
 				}),
 				n(165047, {	-- Soulsmith Yol-Mattar

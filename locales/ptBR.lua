@@ -21,8 +21,6 @@ local L = app.L;
 	--TODO: L.FLIGHT_PATHS = "Flight Paths";
 	--TODO: L.KNOWN_BY = "Known by ";
 	--TODO: L.REQUIRES = "Requires";
-	--TODO: L.INVALID_BLIZZARD_DATA = "INVALID BLIZZARD DATA ";
-	--TODO: L.MISSING_IN_ATT = "MISSING IN ATT ";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
@@ -258,7 +256,7 @@ local L = app.L;
 		--TODO: L.BATTLE_PETS_CHECKBOX = "Battle Pets / Companions";
 		--TODO: L.BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.";
 		--TODO: L.FLIGHT_PATHS_CHECKBOX = "Flight Paths / Ferry Stations";
-		--TODO: L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
+		--TODO: L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
 		--TODO: L.FOLLOWERS_CHECKBOX = "Followers / Champions";
 		--TODO: L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 		--TODO: L.HEIRLOOMS_CHECKBOX = "Heirlooms";
@@ -501,7 +499,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.SELFIE_FILTERS_HEADER = "Selfie Filters";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-		--TODO: L.SOURCE_ID_MISSING = "Item Source not found in the database.\nPlease report this Item and where it was acquired to the ATT Discord in #errors!";
+		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -759,6 +757,7 @@ for key,value in pairs({
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
+		[-808] = "Canaz-sombra Cingido",							-- Bound Shadehound
 
 	-- Mechagon
 		--TODO: [-850] = "Mechanized Chest",						-- Mechanized Chest
@@ -2796,11 +2795,12 @@ for key,value in pairs({
 	--TODO: [353796] = "Reliquary of Remembrance",
 	--TODO: [353797] = "Stone Legion Supplies",
 	[353799] = "Mochila de Quebrafé",
-	--TODO: [353869] = "Hidden Hoard",
-	--TODO: [353870] = "Hidden Hoard",
-	--TODO: [353871] = "Hidden Hoard",
-	--TODO: [353872] = "Hidden Hoard",
-	--TODO: [353873] = "Hidden Hoard",
+	[353868] = "Tesouro Escondido",
+	[353869] = "Tesouro Escondido",
+	[353870] = "Tesouro Escondido",
+	[353871] = "Tesouro Escondido",
+	[353872] = "Tesouro Escondido",
+	[353873] = "Tesouro Escondido",
 	--TODO: [353876] = "Virtue of Penitence",
 	--TODO: [353948] = "Medallion of Desire",
 	--TODO: [353949] = "Medallion of Avarice",

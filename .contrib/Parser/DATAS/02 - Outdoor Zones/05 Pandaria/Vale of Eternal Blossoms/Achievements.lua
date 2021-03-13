@@ -33,8 +33,22 @@ _.Zones =
 				ach(6754, {	-- The Dark Heart of the Mogu
 					["collectible"] = false,
 					["g"] = {
-						crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
+						crit(4, {	-- The Thunder King
 							["coord"] = { 40.1, 75.6, 390 },
+						}),
+					},
+				}),
+				ach(6350, {	-- To All the Squirrels I Once Caressed?
+					["collectible"] = false,
+					["g"] = {
+						crit(5, {	-- Dancing Water Skimmer
+							["crs"] = { 65209 },	-- Dancing Water Skimmer
+						}),
+						crit(7, {	-- Gilded Moth
+							["crs"] = { 65205 },	-- Gilded Moth
+						}),
+						crit(8, {	-- Golden Civet
+							["crs"] = { 65206 },	-- Golden Civet
 						}),
 					},
 				}),

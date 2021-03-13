@@ -397,7 +397,7 @@ _.Zones =
 					["provider"] = { "n", 15398 },	-- Larianna Riverwind
 					["coord"] = { 34.0, 80.0, 94 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 15409,	-- Old Whitebark's Pendant
+					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 				}),
 				q(8890,  {	-- Word from the Spire
 					["provider"] = { "n", 15924 },	-- Apprentice Loralthalis
