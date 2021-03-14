@@ -201,9 +201,9 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 					q(58997, {	-- A Bittersweet Prize
+						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
 						["coord"] = { 45.2, 65.4, 1565 },
-						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 					}),
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
@@ -221,6 +221,7 @@ _.ExpansionFeatures =
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
 					q(61697, {	-- A New Age
+						["sourceQuests"] = { 61135 },	-- Heart of the Crest
 						["provider"] = { "n", 174177 },	-- Polemarch Adrestes
 						["coord"] = { 43.7, 66.6, 1707 },
 						["g"] = {
@@ -425,16 +426,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 167745 },    -- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 						["g"] = {
-							i(178156),	-- Selfless Watcher's Gauntlets
 							i(177053),	-- Selfless Bearer's Hands
-							i(179942),	-- Selfless Forgelite's Gloves
 							i(174292),	-- Selfless Collector's Gauntlets
+							i(179942),	-- Selfless Forgelite's Gloves
+							i(178156),	-- Selfless Watcher's Gauntlets
 						},
 					}),
 					q(58937, {	-- Evil Grubbies
+						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 						["provider"] = { "n", 162392 },	-- Willowblossom
 						["coord"] = { 50.5, 68.9, 1565 },
-						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 						["g"] = {
 							i(179941),	-- Selfless Forgelite's Boots
 							i(178155),	-- Selfless Watcher's Warboots
@@ -502,9 +503,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 162679 },	-- Willowblossom
 					}),
 					q(58938, {	-- Gorm Ruin Everything
-						-- ["provider"] = { "n",  },	-- Willowblossom
-						["coord"] = { 50.5, 68.9, 1565 },
 						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
+						["provider"] = { "n", 162392 },	-- Willowblossom
+						["coord"] = { 50.5, 68.9, 1565 },
 					}),
 					q(58560, {	-- Gothic Fashion
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
@@ -517,9 +518,10 @@ _.ExpansionFeatures =
 						["coord"] = { 28.6, 37.6, 1536 },	-- Maldraxxus
 					}),
 					q(61135, {	-- Heart of the Crest
+						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 },
-						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
+						["_drop"] = { "g" },	-- fix Grubby showing up as a reward when it is not a reward for this quest
 					}),
 					q(57124, {	-- Her Will, Inflicted
 						["sourceQuests"] = {
@@ -529,14 +531,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 170375 },	-- Kleia
 						-- ["coord"] = { 30.1, 61.9, 1543 },	-- The Maw (your pet)
 						["g"] = {
+							i(177051),	-- Selfless Bearer's Chest
+							i(174290),	-- Selfless Collector's Chestplate
+							i(179940),	-- Selfless Forgelite's Vest
 							i(178154),	-- Selfless Watcher's Chestplate
-							-- TODO: Leather/Mail/Plate
 						},
 					}),
 					q(58995, {	-- I Dreamed A Dream
+						["sourceQuests"] = { 58857 },	-- Seeds Away!
 						["provider"] = { "n", 163328 },	-- Pelagos
 						["coord"] = { 45.2, 65.4, 1565 },
-						["sourceQuests"] = { 58857 },	-- Seeds Away!
 					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -552,12 +556,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62796 },	-- Return to Adrestes
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 },	-- Archon's Rise
-						["g"] = {
-							i(178156),	-- Selfless Watcher's Gauntlets
-							i(177053),	-- Selfless Bearer's Hands
-							i(179942),	-- Selfless Forgelite's Gloves
-							i(174292),	-- Selfless Collector's Gauntlets
-						},
+						["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
 					}),
 					q(61771, {	-- Justice from Above
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
@@ -648,10 +647,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 162544 },	-- Achillon
 						["coord"] = { 33.2, 26.2, 1533 },	-- Bastion
 						["g"] = {
-							i(174297),	-- Selfless Collector's Greatcloak
 							i(177058),	-- Selfless Bearer's Cloak
-							i(178161),	-- Selfless Watcher's Cloak
+							i(174297),	-- Selfless Collector's Greatcloak
 							i(179948),	-- Selfless Forgelite's Drape
+							i(178161),	-- Selfless Watcher's Cloak
 						},
 					}),
 					i(183054, {	-- Mysterious Soul Mirror
@@ -698,16 +697,15 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160280 },	-- Mikanikos
 						["coord"] = { 50.1, 20.5, 1533 },
 						["g"] = {
-							i(179947),	-- Selfless Forgelite's Wristwraps
-							-- TODO: verify cloth leather and plate rewards
-							i(178160),	-- Selfless Watcher's Wristwraps
 							i(177057),	-- Selfless Bearer's Wrists
 							i(174296),	-- Selfless Collector's Wristguards
+							i(179947),	-- Selfless Forgelite's Wristwraps
+							i(178160),	-- Selfless Watcher's Wristwraps
 						},
 					}),
 					q(58905, {	-- Picking Up Pelagos
-						["provider"] = { "n", 162679 },	-- Willowblossom
 						["sourceQuests"] = { 58816 },	-- Getting Backstage
+						["provider"] = { "n", 162679 },	-- Willowblossom
 						-- no coords, is your 'pet'
 					}),
 					q(61780, {	-- Power of the Chosen
@@ -785,15 +783,15 @@ _.ExpansionFeatures =
 						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
 					}),
 					q(58857, {	-- Seeds Away!
-						["provider"] = { "n", 162392 },	-- Willowblossom
 						["sourceQuests"] = { 58939 },	-- The Blue Seed
+						["provider"] = { "n", 162392 },	-- Willowblossom
 						-- no coords, is your 'pet'
 					}),
 					q(58561, {	-- Shards of the Countess
 						["sourceQuests"] = {
-							58558,	-- Overhead Intelligence
 							58559,	-- Eyes of the Master
 							58560,	-- Gothic Fashion
+							58558,	-- Overhead Intelligence
 						},
 						["provider"] = { "n", 161540 },	-- Kleia
 						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
@@ -853,11 +851,11 @@ _.ExpansionFeatures =
 						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
 					}),
 					q(58939, {	-- The Blue Seed
-						["provider"] = { "n", 165110 },	-- Pelagos
 						["sourceQuests"] = {
 							58938,	-- Gorm Ruin Everything
 							58937,	-- Evil Grubbies
 						},
+						["provider"] = { "n", 165110 },	-- Pelagos
 						-- no coords, is your 'pet'
 					}),
 					q(61770, {	-- The Butchers of Bastion
@@ -879,8 +877,8 @@ _.ExpansionFeatures =
 					q(58569, {	-- The Folly of Envy
 						["sourceQuests"] = {
 							58566,	-- Actions Speak Louder than Words
-							58567,	-- Skulking in the Darkness
 							58568,	-- Light Respite
+							58567,	-- Skulking in the Darkness
 						},
 						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
@@ -915,8 +913,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 162149 },	-- Mikanikos
 						["coord"] = { 45.7, 56.5, 1707 },	-- Elysian Hold
 						["g"] = {
+							i(177050),	-- Selfless Bearer's Head
+							i(174289),	-- Selfless Collector's GreatHelm
+							i(179943),	-- Selfless Forgelite's Helm
 							i(178153),	-- Selfless Watcher's Helm
-							-- TODO: Confirm Leather/Mail/Plate
 						}
 					}),
 					q(58798, {	-- The Spires of Ascension
@@ -955,9 +955,9 @@ _.ExpansionFeatures =
 						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
 					}),
 					q(58832, {	-- Trinkle Trinkle Little Twerp
+						["sourceQuests"] = { 58775 },	-- Meet the Queen
 						["description"] = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
 						["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
-						["sourceQuests"] = { 58775 },	-- Meet the Queen
 					}),
 					q(61776, {	-- Trouble on the Western Front
 						["sourceQuests"] = {
@@ -974,16 +974,10 @@ _.ExpansionFeatures =
 						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
 					q(58856, {	-- Who Are You Fooling?
+						["sourceQuests"] = { 58775 },	-- Meet the Queen
 						["provider"] = { "n", 162392 },	-- Willowblossom
 						["coord"] = { 44.0, 51.8, 1565 },
-						["sourceQuests"] = { 58775 },	-- Meet the Queen
 					}),
-
-					-- q(, {	--
-					-- 	["sourceQuests"] = {  },	--
-					-- 	["provider"] = { "n",  },	--
-					-- 	["coord"] = {  },	--
-					-- }),
 				}),
 				n(RARES, {
 				}),
