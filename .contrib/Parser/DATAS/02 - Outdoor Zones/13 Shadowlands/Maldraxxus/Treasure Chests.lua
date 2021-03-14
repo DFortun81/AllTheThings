@@ -8,7 +8,7 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(353627, {	-- Battlefront Rations
-					["description"] = "To unlock it, you must obtain |cFF075ab2Battlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["description"] = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 60772,
 					["isDaily"] = true,
 					["coord"] = { 37.8, 45.6, 1536 },
@@ -68,7 +68,7 @@ _.Zones =
 				}),
 				o(345455, {	-- Construct Supply Chest
 				--	TODO: see if chest has reset after 2/15 rollover
-					["description"] = "To unlock it, you must obtain |cFF075ab2Construct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["description"] = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 59243,
 					["isDaily"] = true,
 					["coord"] = { 38.8, 41.9, 1536 },
@@ -88,7 +88,7 @@ _.Zones =
 					},
 				}),
 				o(353626, {	-- Locked Toolbox
-					["description"] = "To unlock it, you must obtain |cFF075ab2Locked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+					["description"] = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 60771,
 					["isDaily"] = true,
 					["coord"] = { 38.1, 42.6, 1536 },

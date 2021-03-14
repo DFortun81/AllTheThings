@@ -149,12 +149,16 @@ _.Zones =
 						["sourceQuest"] = 28785,	-- Join the Battle!
 					}),
 					q(29082, {	-- Fear No Evil
-						-- got credit for 63447 in 9.0.5 on a Night Elf Druid along with credit for all the ones above (maybe we can narrow this down later), 29082 was the version in my quest log
-						["altQuests"] = { 63447 },
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
 						["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
+					}),
+					q(63447, {	-- Fear No Evil
+						["sourceQuests"] = { 29080 },	-- Join the Battle
+						["provider"] = { "n", 951 },	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { KULTIRAN },
 					}),
 					q(29080, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride

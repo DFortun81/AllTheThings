@@ -234,7 +234,7 @@ _.Zones =
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
-					["description"] = "Collect 4 |cFF075ab2Mortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
+					["description"] = "Collect 4 |cFF0070ddMortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
 					["questID"] = 58633,
 					["isDaily"] = true,
 					["coord"] = { 75.8, 61.4, 1525 },

@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 		n(QUESTS, {
 			q(56903, {	-- Crown of Courage
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
-				["description"] = "To pick up this quest, you must have collected the |cFF16be0dCrown of Courage|r transmog.",
+				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["u"] = 17,	-- Lunar Festival
@@ -18,7 +18,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56905, {	-- Crown of Dark Blossoms
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
-				["description"] = "To pick up this quest, you must have collected the |cFF16be0dCrown of Dark Blossoms|r transmog.",
+				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["u"] = 17,	-- Lunar Festival
@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56906, {	-- Crown of Good Fortune
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
-				["description"] = "To pick up this quest, you must have collected the |cFF16be0dCrown of Good Fortune|r transmog.",
+				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["u"] = 17,	-- Lunar Festival
@@ -38,7 +38,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56904, {	-- Crown of Prosperity
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
-				["description"] = "To pick up this quest, you must have collected the |cFF16be0dCrown of Prosperity|r transmog.",
+				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["u"] = 17,	-- Lunar Festival
