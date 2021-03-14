@@ -244,7 +244,11 @@ _.Zones =
 						["sourceQuests"] = { 47104 },	-- Imprisoned Inquisitor
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 						["coord"] = { 43.2, 25.5, 831 },
-						["lvl"] = 110,
+						["maps"] = {
+							889,	-- Arcatraz
+							890,	-- Arcatraz
+						},
+						-- ["lvl"] = 110,
 					}),
 					q(47994, {	-- Forming a Bond
 						["sourceQuests"] = { 47993 },	-- Lord of the Spire
