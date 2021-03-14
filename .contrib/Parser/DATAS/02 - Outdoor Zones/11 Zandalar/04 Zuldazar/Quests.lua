@@ -1923,6 +1923,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135890 },		-- King Rastakhan
 					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
+					["maps"] = { 1181 },
 				}),
 				q(51513, {	-- Zalazane Returns
 					["minReputation"] = { 2103, REVERED },

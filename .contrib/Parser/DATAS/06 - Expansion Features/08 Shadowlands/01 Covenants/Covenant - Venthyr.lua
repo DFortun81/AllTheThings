@@ -1889,7 +1889,7 @@ _.ExpansionFeatures =
 								}),
 								q(61092, {	-- RSVP: Grandmaster Vole
 									["minReputation"] = { 2445, FRIENDLY },
-									["description"] = "|cFF16be0dInvitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus

@@ -561,7 +561,7 @@ _.Zones =
 					},
 				}),
 				q(10076, {	-- Oshu'gun Crystal Powder (A)
-					["provider"] = { "n", 18816 },	-- Chief Researcher Amereldine
+					["provider"] = { "n", 18817 },	-- Chief Researcher Kartos
 					["coord"] = { 41.2, 44.2, 107 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is only accessible when the Alliance controls Halaa.",
@@ -570,7 +570,7 @@ _.Zones =
 					},
 				}),
 				q(10077, {	-- Oshu'gun Crystal Powder (A)
-					["provider"] = { "n", 18816 },	-- Chief Researcher Amereldine
+					["provider"] = { "n", 18817 },	-- Chief Researcher Kartos
 					["coord"] = { 41.2, 44.2, 107 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)

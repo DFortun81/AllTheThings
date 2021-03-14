@@ -221,7 +221,7 @@ _.Zones =
 					["lvl"] = { 60 },
 					["g"] = {
 						n(170434, {	-- Amalgamation of Sin
-							["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF075ab2Amalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
+							["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
 							["questID"] = 60836,
 							["isDaily"] = true,
 							["coord"] = { 66.0, 33.2, 1525 },

@@ -5093,7 +5093,7 @@ local function RefreshMountCollection(newMountID)
 
 		-- Cache current counts
 		local previousProgress = app:GetDataCache().progress or 0;
-		-- print("Previous Progress",previousProgress)		
+		-- print("Previous Progress",previousProgress)
 
 		-- Refresh Mounts
 		local collectedSpells = GetDataMember("CollectedSpells", {});
@@ -14094,7 +14094,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 								if (not VerifySourceID(group)) then
 									-- print("Harvest",itemID)
 									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}, app.BaseItem));
-								end								
+								end
 							end
 						-- else print("Cached skip",group.key,group[group.key]);
 						end
