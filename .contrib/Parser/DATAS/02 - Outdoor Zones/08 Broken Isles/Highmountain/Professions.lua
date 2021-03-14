@@ -400,6 +400,13 @@ _.Zones =
 						},
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 					}),
+					q(40186, {	-- Drogbar Durability
+						["g"] = {
+							recipe(128878),	-- Recipe: Warhide Gloves (Rank 1)
+							recipe(128883),	-- Recipe: Warhide Bindings (Rank 1)
+						},
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+					}),
 					q(40191, {	-- Stamped Stories
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
