@@ -65,6 +65,12 @@ _.Zones =
 					["coord"] = { 38.8, 77.4, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47574, {	-- All Webbed Up
+					["sourceQuests"] = { 47965 },	-- The Ruined Temple
+					["provider"] = { "n", 134134 },	-- Tulu
+					["coord"] = { 58.5, 11.8, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(49139, {	-- An Army's Arsenal
 					["sourceQuests"] = {
 						49001,	-- Inconvenient Spirits
@@ -174,10 +180,31 @@ _.Zones =
 					["coord"] = { 43.3, 75.4, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(48329, {	-- Beaten But Not Broken
+					["sourceQuests"] = { 50746 },	-- Crater Conquered
+					["provider"] = { "i", 158909 },	-- Beastbreaker Cage Key
+					["coord"] = { 49.1, 38.3, 864 },	-- Vol'dun
+					["races"] = HORDE_ONLY,
+					["cr"] = 130603,	-- Beastbreaker Hakid
+				}),
+				q(47581, {	-- Blessing of Kimbul
+					["sourceQuests"] = { 47965 },	-- The Ruined Temple
+					["provider"] = { "n", 134133 },	-- Teekcha
+					["coord"] = { 58.5, 11.8, 864 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155450),	-- Ring of Tides
+					},
+				}),
 				q(50641, {	-- Break Their Ranks
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
 					["coord"] = { 27.2, 53.8, 864 },	-- Terrace of the Devoted (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				q(49333, {	-- Building Our Arsenal
+					["provider"] = { "n", 128691 },	-- Izarn
+					["coord"] = { 32.3, 48.3, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50771, {	-- Calldown: Cleaner
@@ -237,6 +264,12 @@ _.Zones =
 					["coord"] = { 53.6, 91.6, 864 },	-- Temple of Akunda (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
+				q(47943, {	-- Crab Trapping
+					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
+					["provider"] = { "n", 134128 },	-- Churka
+					["coord"] = { 61.9, 22.1, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(49261, {	-- Crabby Crew Stew
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
@@ -273,6 +306,12 @@ _.Zones =
 					["provider"] = { "n", 135154 },	-- Kiro
 					["coord"] = { 47.0, 75.5, 864 },	-- Zul'Ahjin (Vol'dun)
 					["races"] = HORDE_ONLY,
+				}),
+				q(51145, {	-- Curse of Jani
+					["sourceQuests"] = { 51142 },	-- Pests
+					["provider"] = { "n", 136559 },	-- Jani
+					["coord"] = { 36.2, 36.8, 864 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47870, {	-- Dead Men Tell No Tales
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
@@ -502,6 +541,12 @@ _.Zones =
 					["coord"] = { 40.4, 55.3, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47570, {	-- Hidden Motives
+					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
+					["provider"] = { "n", 134098 },	-- Torka
+					["coord"] = { 61.9, 22.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48315, {	-- Hollow, Empty Eyes
 					["sourceQuests"] = { 50539 },	-- The Secrets of Zul'Ahjin
 					["provider"] = { "o", 281639 },	-- Crumbling Statue
@@ -514,8 +559,25 @@ _.Zones =
 					["coord"] = { 43.3, 75.3, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(56250, {	-- I Am the Trashmaster
+					--["sourceQuests"] = { },
+					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
+					["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
+					["coord"] = { 36.2, 36.8, 864 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(169394), 	-- Richly Appointed Drape
+						title(324),	-- Trashmaster
+					},
+				}),
 				q(48530, {	-- I Heard You Lost the Herd
 					["sourceQuests"] = { 51573 },	-- I've Got Your Back
+					["provider"] = { "n", 126576 },	-- Razgaji
+					["coord"] = { 43.3, 75.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(51573, {	-- I've Got Your Back
+					["sourceQuests"] = { 50794 },	-- Seeking Shelter
 					["provider"] = { "n", 126576 },	-- Razgaji
 					["coord"] = { 43.3, 75.3, 864 },
 					["races"] = HORDE_ONLY,
@@ -543,6 +605,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
 				}),
+				q(52023, {	-- Informing the Horde
+					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+					["provider"] = { "n", 135133 },	-- Warguard Rakera
+					["coord"] = { 27.0, 52.5, 864 },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(52024, {	-- Informing the Horde
+					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+					["provider"] = { "n", 135133 },	-- Warguard Rakera
+					["coord"] = { 27.0, 52.5, 864 },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(50750, {	-- Infuriating the Emperor
 					["sourceQuests"] = { 49003 },	-- Vengeance From Above
 					["provider"] = { "n", 135111 },	-- Vorrik
@@ -559,10 +635,10 @@ _.Zones =
 					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
-				q(51573, {	-- I've Got Your Back
-					["sourceQuests"] = { 50794 },	-- Seeking Shelter
-					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.3, 864 },
+				q(47573, {	-- Jungleweb Infestation
+					["sourceQuests"] = { 47965 },	-- The Ruined Temple
+					["provider"] = { "n", 134134 },	-- Tulu
+					["coord"] = { 58.5, 11.8, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50979, {	-- Just a Nip
@@ -633,6 +709,12 @@ _.Zones =
 					["coord"] = { 46.1, 33.2, 864 },	-- Crater of Conquerors (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
+				q(47578, {	-- Mark of the Loa
+					["sourceQuests"] = { 47576 },	-- Wrath of the Tiger
+					["provider"] = { "n", 123052 },	-- Kimbul
+					["coord"] = { 56.6, 10.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(51057, {	-- Maroon 'em with Fire
 					["sourceQuests"] = {
 						51056,	-- My Last Day Alive
@@ -642,7 +724,7 @@ _.Zones =
 					["coord"] = { 35.3, 83.1, 864 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(47497, {	-- Meet the Goldtusk Gang -- aa
+				q(47497, {	-- Meet the Goldtusk Gang
 					["sourceQuests"] = { 48327 },	-- A Strange Delivery (breadcrumb)
 					["provider"] = { "n", 122723 },	-- Rhan'ka
 					["coord"] = { 43.5, 60.1, 864 },
@@ -717,6 +799,16 @@ _.Zones =
 					["coord"] = { 47.0, 75.5, 864 },	-- Zul'Ahjin (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
+				q(47928, {	-- Offering for the Loa
+					["sourceQuests"] = {
+						47574,	-- All Webbed Up
+						47581,	-- Blessing of Kimbul
+						47573,	-- Jungleweb Infestation
+					},
+					["provider"] = { "n", 134133 },	-- Teekcha
+					["coord"] = { 58.5, 11.8, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48684, {	-- On the Move
 					["sourceQuests"] = {
 						48550,	-- Stolen Satchels
@@ -737,6 +829,11 @@ _.Zones =
 					["provider"] = { "n", 128261 },	-- First Mate Jamboya
 					["coord"] = { 35.4, 83.7, 864 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(51142, {	-- Pests
+					["provider"] = { "n", 136562 },	-- Quartermaster Alfin
+					["coord"] = { 36.6, 32.4, 864 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49677, {	-- Plans for Attack
 					-- no coords for this one. you pick it up from Nisha anywhere in the Abandoned Burrows
@@ -844,6 +941,11 @@ _.Zones =
 					["coord"] = { 43.5, 60.2, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50656, {	-- Risky Rescue
+					["provider"] = { "n", 134611 },	-- Seriah
+					["coord"] = { 32.6, 48.4, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48840, {	-- Ruins-Level Marketing
 					["sourceQuests"] = { 48322 },	-- A Goldtusk Greeting
 					["isBreadcrumb"] = true,
@@ -920,6 +1022,12 @@ _.Zones =
 						i(161274),	-- Exiled Veteran's Bindings
 					},
 				}),
+				q(53113, {	-- Shimmering Shell
+					["repeatable"] = true,
+					["provider"] = { "n", 135804 },	-- Hoarder Jena
+					["coord"] = { 56.6, 49.7, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48331, {	-- Siphoning Souls
 					["sourceQuests"] = {
 						49001,	-- Inconvenient Spirits
@@ -928,6 +1036,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 129450 },	-- Tacha
 					["coord"] = { 45.3, 46.2, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(49335, {	-- Skycaller Slaughter
+					["provider"] = { "n", 134611 },	-- Seriah
+					["coord"] = { 32.6, 48.4, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48534, {	-- Snarltooth's Last Laugh
@@ -1033,10 +1146,25 @@ _.Zones =
 					["coord"] = { 43.6, 76.7, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47580, {	-- The Curse of Mepjila
+					["sourceQuests"] = { 47928 },	-- Offering for the Loa
+					["provider"] = { "n", 123052 },	-- Kimbul
+					["coord"] = { 56.6, 10.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(51053, {	-- The Day the Port Fell
 					["sourceQuests"] = { 48324 },	-- Lost in Zem'lan
 					["provider"] = { "n", 128261 },	-- First Mate Jamboya
 					["coord"] = { 35.4, 83.7, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(47571, {	-- The Elder's Wisdom
+					["sourceQuests"] = {
+						47570,	-- Hidden Motives
+						47577,	-- They Came From The Sea
+					},
+					["provider"] = { "n", 134098 },	-- Torka
+					["coord"] = { 61.9, 22.3, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50550, {	-- The Fall of Emperor Korthek
@@ -1088,6 +1216,22 @@ _.Zones =
 						i(161178),	-- Lastwind Handlers
 						i(161179),	-- Exiled Veteran's Handlers
 						i(161180),	-- Scorching Sands Handlers
+					},
+				}),
+				q(53476, {	-- The Great Sea Scrolls -- TODO: redo
+					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+					["g"] = {
+					--	azerite
+						i(163863),	-- Bartered Vrykul Cowl
+						i(163864),	-- Bartered Vrykul Facemask
+						i(163862),	-- Bartered Vrykul Hood
+						i(163865),	-- Bartered Vrykul Warhelm
+					--	azewrong
+						i(180028),	-- Bartered Vrykul Cowl
+						i(180029),	-- Bartered Vrykul Facemask
+						i(180027),	-- Bartered Vrykul Hood
+						i(180030),	-- Bartered Vrykul Warhelm
 					},
 				}),
 				q(47499, {	-- The Grinning Idols
@@ -1148,6 +1292,12 @@ _.Zones =
 					["coord"] = { 52.8, 89.2, 864 },	-- Temple of Akunda (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
+				q(47965, {	-- The Ruined Temple
+					["sourceQuests"] = { 47571 },	-- The Elder's Wisdom
+					["provider"] = { "n", 123063 },	-- Elder Kuppaka
+					["coord"] = { 61.6, 20.5, 864 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(50539, {	-- The Secrets of Zul'Ahjin
 					["sourceQuests"] = { 50770 },	-- Effective Antivenom
 					["provider"] = { "n", 134533 },	-- Serrik
@@ -1203,6 +1353,12 @@ _.Zones =
 					["sourceQuests"] = { 51054 },	-- Overdue Mutiny
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
 					["coord"] = { 35.3, 83.1, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(47577, {	-- They Came From The Sea
+					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
+					["provider"] = { "n", 134098 },	-- Torka
+					["coord"] = { 61.9, 22.3, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48657, {	-- They Might Be Delicious
@@ -1321,6 +1477,10 @@ _.Zones =
 					["coord"] = { 43.6, 59.9, 864 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(51165, {	-- WANTED: Sandscout Vesarik
+					["provider"] = { "o", 287441 },	-- Wanted: Sandscout Vesarik
+					["coord"] = { 26.9, 52.7, 864 },	-- Terrace of the Devoted
+				}),
 				q(51162, {	-- WANTED: Taz'raka the Traitor
 					["provider"] = { "o", 287440 },	-- Wanted: Taz'raka
 					["coord"] = { 38.8, 77.0, 864 },
@@ -1351,6 +1511,19 @@ _.Zones =
 					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
+				q(47576, {	-- Wrath of the Tiger
+					["sourceQuests"] = { 47580 },	-- The Curse of Mepjila
+					["provider"] = { "n", 123052 },	-- Kimbul
+					["coord"] = { 56.6, 10.3, 864 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(161183),	-- Honorable Tiger's Cloak
+						i(161184),	-- Scorching Sands Leggings
+						i(161185),	-- Resilient Outcast's Legplates
+						i(161186),	-- Lastwind Pants
+						i(161187),	-- Exiled Veteran's Leg Armor
+					},
+				}),
 				q(48330, {	-- Zandalari Treasure Trove
 					["sourceQuests"] = {
 						49139,	-- An Army's Arsenal
@@ -1373,180 +1546,6 @@ _.Zones =
 						i(155430),	-- Trapped Soul Warmace
 						i(161301),	-- Storm's Wake Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
 						i(161304),	-- Mad-Butcher's Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
-					},
-				}),
-				q(47574, {	-- All Webbed Up
-					["provider"] = { "n", 134134 },	-- Tulu
-					["coord"] = { 58.5, 11.8, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47965 },	-- The Ruined Temple
-				}),
-				q(48329, {	-- Beaten But Not Broken
-					["cr"] = 130603,	-- Beastbreaker Hakid
-					["coord"] = { 49.1, 38.3, 864 },	-- Vol'dun
-					["races"] = HORDE_ONLY,
-					["provider"] = { "i", 158909 },	-- Beastbreaker Cage Key
-					["sourceQuests"] = { 50746 },	-- Crater Conquered
-				}),
-				q(47581, {	-- Blessing of Kimbul
-					["provider"] = { "n", 134133 },	-- Teekcha
-					["coord"] = { 58.5, 11.8, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47965 },	-- The Ruined Temple
-					["g"] = {
-						i(155450),	-- Ring of Tides
-					},
-				}),
-				q(49333, {	-- Building Our Arsenal -- aa
-					["coord"] = { 32.3, 48.3, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 128691 },	-- Izarn
-				}),
-				q(47943, {	-- Crab Trapping -- aa
-					["coord"] = { 61.9, 22.1, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 134128 },	-- Churka
-					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
-				}),
-				q(51145, {	-- Curse of Jani [Alliance]
-					["provider"] = { "n", 136559 },	-- Jani
-					["coord"] = { 36.2, 36.8, 864 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 51142 },	-- Pests
-				}),
-				q(47570, {	-- Hidden Motives -- aa
-					["provider"] = { "n", 134098 },	-- Torka
-					["coord"] = { 61.9, 22.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
-				}),
-				q(56250, {	-- I Am the Trashmaster
-					--["sourceQuests"] = { },
-					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
-					["coord"] = { 36.2, 36.8, 864 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
-					["g"] = {
-						i(169394), 	-- Richly Appointed Drape
-						title(324),	-- Trashmaster
-					},
-				}),
-				q(52024, {	-- Informing the Horde
-					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 27.0, 52.5, 864 },
-					["provider"] = { "n", 135133 },	-- Warguard Rakera
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-				}),
-				q(52023, {	-- Informing the Horde
-					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 27.0, 52.5, 864 },
-					["provider"] = { "n", 135133 },	-- Warguard Rakera
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-				}),
-				q(47573, {	-- Jungleweb Infestation
-					["provider"] = { "n", 134134 },	-- Tulu
-					["coord"] = { 58.5, 11.8, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47965 },	-- The Ruined Temple
-				}),
-				q(47578, {	-- Mark of the Loa
-					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47576 },	-- Wrath of the Tiger
-				}),
-				q(47928, {	-- Offering for the Loa
-					["provider"] = { "n", 134133 },	-- Teekcha
-					["coord"] = { 58.5, 11.8, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						47574,	-- All Webbed Up
-						47581,	-- Blessing of Kimbul
-						47573,	-- Jungleweb Infestation
-					},
-				}),
-				q(51142, {	-- Pests
-					["provider"] = { "n", 136562 },	-- Quartermaster Alfin
-					["coord"] = { 36.6, 32.4, 864 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50656, {	-- Risky Rescue -- aa
-					["coord"] = { 32.6, 48.4, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 134611 },	-- Seriah
-				}),
-				q(53113, {	-- Shimmering Shell
-					["provider"] = { "n", 135804 },	-- Hoarder Jena
-					["lvl"] = 120,
-					["coord"] = { 56.68, 49.74, 864 },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-				}),
-				q(49335, {	-- Skycaller Slaughter -- aa
-					["coord"] = { 32.6, 48.4, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 134611 },	-- Seriah
-				}),
-				q(47580, {	-- The Curse of Mepjila
-					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47928 },	-- Offering for the Loa
-				}),
-				q(47571, {	-- The Elder's Wisdom
-					["provider"] = { "n", 134098 },	-- Torka
-					["coord"] = { 61.9, 22.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						47570,	-- Hidden Motives
-						47577,	-- They Came From The Sea
-					},
-				}),
-				q(53476, {	-- The Great Sea Scrolls -- TODO: redo
-					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
-					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
-					--	azewrong
-						i(180028),	-- Bartered Vrykul Cowl
-						i(180029),	-- Bartered Vrykul Facemask
-						i(180027),	-- Bartered Vrykul Hood
-						i(180030),	-- Bartered Vrykul Warhelm
-					},
-				}),
-				q(47965, {	-- The Ruined Temple
-					["provider"] = { "n", 123063 },	-- Elder Kuppaka
-					["coord"] = { 61.6, 20.5, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47571 },	-- The Elder's Wisdom
-				}),
-				q(47577, {	-- They Came From The Sea -- aa
-					["coord"] = { 61.9, 22.3, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 134098 },	-- Torka
-					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
-				}),
-				q(51165, {	-- WANTED: Sandscout Vesarik
-					["coord"] = { 26.9, 52.7, 864 },	-- Terrace of the Devoted
-					["provider"] = { "o", 287441 },	-- Wanted: Sandscout Vesarik
-				}),
-				q(47576, {	-- Wrath of the Tiger
-					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47580 },	-- The Curse of Mepjila
-					["g"] = {
-						i(161183),	-- Honorable Tiger's Cloak
-						i(161184),	-- Scorching Sands Leggings
-						i(161185),	-- Resilient Outcast's Legplates
-						i(161186),	-- Lastwind Pants
-						i(161187),	-- Exiled Veteran's Leg Armor
 					},
 				}),
 			}),

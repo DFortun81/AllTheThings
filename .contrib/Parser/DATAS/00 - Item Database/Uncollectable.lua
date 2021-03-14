@@ -397,6 +397,7 @@ i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
+i(118265);	-- Echoing Betrayal
 i(2460);	-- Elixir of Tongues
 i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
 i(171206);	-- Forgotten Weapon
