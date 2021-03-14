@@ -378,7 +378,7 @@ _.Zones =
 					q(40192, {	-- Claw of the Land
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
-							i(137869),	-- Recipe: Warhide Belt (Rank 2)
+							i(194695),	-- Recipe: Warhide Belt (Rank 2)
 							i(137868),	-- Recipe: Warhide Bindings (Rank 2)
 						},
 					}),
@@ -402,8 +402,8 @@ _.Zones =
 					}),
 					q(40186, {	-- Drogbar Durability
 						["g"] = {
-							recipe(128878),	-- Recipe: Warhide Gloves (Rank 1)
-							recipe(128883),	-- Recipe: Warhide Bindings (Rank 1)
+							recipe(194700),	-- Recipe: Warhide Gloves (Rank 1)
+							recipe(194695),	-- Recipe: Warhide Bindings (Rank 1)
 						},
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 					}),
