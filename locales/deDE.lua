@@ -2361,7 +2361,7 @@ for key,value in pairs({
 	[272422] = "Sanftmuts Zauberbuch",
 	[272455] = "Kriegsvorräte der Eredar",
 	[272456] = "Kriegsvorräte der Eredar",
-	[272487] = "Seltsam gefärbtes Ei",
+	[272487] = "|cFFFFFFFFSchritt 14:|r Seltsam gefärbtes Ei",
 	[272768] = "Empyriumvorkommen",
 	[272770] = "Kriegsvorräte der Eredar",
 	[272771] = "Kriegsvorräte der Eredar",
@@ -2452,14 +2452,14 @@ for key,value in pairs({
 	[280727] = "Verkohlte Nachricht",
 	[280751] = "Kleine Schatztruhe",
 	[280755] = "Quintins Beutel",
-	[280815] = "Brief von Frau Graham",
-	[280836] = "Brief von Frau Graham",
-	[280837] = "Brief von Frau Graham",
-	[280838] = "Brief von Frau Graham",
-	[280842] = "Brief von Frau Graham",
-	[280843] = "Brief von Frau Graham",
-	[280844] = "Brief von Frau Graham",
-	[280845] = "Geschenk von Frau Graham",
+	[280815] = "|cFFFFFFFFSchritt 1:|r Brief von Frau Graham I",
+	[280836] = "|cFFFFFFFFSchritt 2:|r Brief von Frau Graham II",
+	[280837] = "|cFFFFFFFFSchritt 3:|r Brief von Frau Graham III",
+	[280838] = "|cFFFFFFFFSchritt 4:|r Brief von Frau Graham IV",
+	[280842] = "|cFFFFFFFFSchritt 5:|r Brief von Frau Graham V",
+	[280843] = "|cFFFFFFFFSchritt 6:|r Brief von Frau Graham VI",
+	[280844] = "|cFFFFFFFFSchritt 7:|r Brief von Frau Graham VII",
+	[280845] = "|cFFFFFFFFSchritt 8:|r Geschenk von Frau Graham",
 	[280883] = "Sonnengebleichte Truhe",
 	[280886] = "Sternenberührte Truhe",
 	[280951] = "Aschenwindschätze",
@@ -2701,7 +2701,7 @@ for key,value in pairs({
 	[332220] = "Leuchtende arkane Truhe",
 	[332569] = "Kristallkatzenstatuette",
 	[332570] = "Kristallkatzenstatuette",
-	[332571] = "Kristallkatzenstatuette",					-- Need to be confirmed
+	[332571] = "Kristallkatzenstatuette",							-- Need to be confirmed
 	[332572] = "Kristallkatzenstatuette",
 	[332573] = "Kristallkatzenstatuette",
 	[332574] = "Kristallkatzenstatuette",
@@ -2710,7 +2710,7 @@ for key,value in pairs({
 	--TODO: [332577] = "Crystalline Cat Figurine",					-- Need to be confirmed
 	[332704] = "Verderbte Truhe",
 	[336415] = "Weggeworfene Schriftrolle",
-	[339211] = "Leerer Teller",
+	[339211] = "|cFFFFFFFFSchritt 2:|r Leerer Teller",
 	[339283] = "Truhe des vergessenen Adligen",
 	[339770] = "Herrenlose Schatztruhe",
 	[343611] = "Leerenberührtes Ei",
@@ -2749,7 +2749,7 @@ for key,value in pairs({
 	[351887] = "Gesucht: Lord Darion",
 	[351888] = "Gesucht: Beschwörer Marcelis",
 	[351889] = "Gesucht: Der fahle Schrecken",
-	[351948] = "Vergessene Truhe",							-- C-2
+	[351948] = "Vergessene Truhe",									-- C-2
 	[352027] = "Steckbriefschriftrolle",
 	[352028] = "Steckbriefschriftrolle",
 	[352086] = "Schwarzhundtruhe",
@@ -2833,7 +2833,7 @@ for key,value in pairs({
 	--TODO: [354852] = "Sprouting Growth",
 	--TODO: [354853] = "Sprouting Growth",
 	[354856] = "Schleimbedeckte Kiste",
-	[355035] = "Runenlade der Auserwählten",				-- Chosen Runecoffer
+	[355035] = "Runenlade der Auserwählten",						-- Chosen Runecoffer
 	[355037] = "Runengebundene Lade",
 	[355038] = "Runengebundene Lade",
 	[355296] = "Kopfgeld: Wildtierkontrolle",

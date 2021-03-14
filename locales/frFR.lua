@@ -2361,7 +2361,7 @@ for key,value in pairs({
 	[272422] = "Grimoire d’Héléna",
 	[272455] = "Fournitures de guerre érédars",
 	[272456] = "Fournitures de guerre érédars",
-	[272487] = "Œuf de couleur étrange",
+	[272487] = "|cFFFFFFFFStep 14:|r Œuf de couleur étrange",		-- TODO: translate "step"
 	[272768] = "Gisement d'empyrium",
 	[272770] = "Fournitures de guerre érédars",
 	[272771] = "Fournitures de guerre érédars",
@@ -2452,14 +2452,14 @@ for key,value in pairs({
 	[280727] = "Note calcinée",
 	[280751] = "Petit coffre au trésor",
 	[280755] = "Sacoche de Quentin",
-	[280815] = "Lettre de Mme Graham",
-	[280836] = "Lettre de Mme Graham",
-	[280837] = "Lettre de Mme Graham",
-	[280838] = "Lettre de Mme Graham",
-	[280842] = "Lettre de Mme Graham",
-	[280843] = "Lettre de Mme Graham",
-	[280844] = "Lettre de Mme Graham",
-	[280845] = "Cadeau de Mme Graham",
+	[280815] = "|cFFFFFFFFStep 1:|r Lettre de Mme Graham I",		-- TODO: translate "step"
+	[280836] = "|cFFFFFFFFStep 2:|r Lettre de Mme Graham II",		-- TODO: translate "step"
+	[280837] = "|cFFFFFFFFStep 3:|r Lettre de Mme Graham III",		-- TODO: translate "step"
+	[280838] = "|cFFFFFFFFStep 4:|r Lettre de Mme Graham IV",		-- TODO: translate "step"
+	[280842] = "|cFFFFFFFFStep 5:|r Lettre de Mme Graham V",		-- TODO: translate "step"
+	[280843] = "|cFFFFFFFFStep 6:|r Lettre de Mme Graham VI",		-- TODO: translate "step"
+	[280844] = "|cFFFFFFFFStep 7:|r Lettre de Mme Graham VII",		-- TODO: translate "step"
+	[280845] = "|cFFFFFFFFStep 8:|r Cadeau de Mme Graham",			-- TODO: translate "step"
 	[280883] = "Coffre abîmé par le soleil",
 	[280886] = "Coffre touché par les étoiles",
 	[280951] = "Butin corsandre",
@@ -2701,7 +2701,7 @@ for key,value in pairs({
 	[332220] = "Malle arcanique luisante",
 	[332569] = "Figurine de chat en cristal",
 	[332570] = "Figurine de chat en cristal",
-	[332571] = "Figurine de chat en cristal",					-- Need to be confirmed
+	[332571] = "Figurine de chat en cristal",						-- Need to be confirmed
 	[332572] = "Figurine de chat en cristal",
 	[332573] = "Figurine de chat en cristal",
 	[332574] = "Figurine de chat en cristal",
@@ -2710,7 +2710,7 @@ for key,value in pairs({
 	--TODO: [332577] = "Crystalline Cat Figurine",					-- Need to be confirmed
 	[332704] = "Coffre corrompu",
 	[336415] = "Parchemin abandonné",
-	[339211] = "Assiette vide",
+	[339211] = "|cFFFFFFFFStep 2:|r Assiette vide",					-- TODO: translate "step"
 	[339283] = "Coffre de noble oublié",
 	[339770] = "Coffre au trésor abandonné",
 	[343611] = "Œuf touché par le Vide",
@@ -2749,7 +2749,7 @@ for key,value in pairs({
 	[351887] = "Avis de recherche : seigneur Darion",
 	[351888] = "Avis de recherche : invocateur Marcélis",
 	[351889] = "Avis de recherche : le Fléau blafard",
-	[351948] = "Coffre oublié",							-- C-2
+	[351948] = "Coffre oublié",										-- C-2
 	[352027] = "Avis de recherche",
 	[352028] = "Avis de recherche",
 	[352086] = "Cache de Noir-Mâtin",
@@ -2833,7 +2833,7 @@ for key,value in pairs({
 	--TODO: [354852] = "Sprouting Growth",
 	--TODO: [354853] = "Sprouting Growth",
 	[354856] = "Caisse couverte de vase",
-	[355035] = "Malle runique des Élus",				-- Chosen Runecoffer
+	[355035] = "Malle runique des Élus",							-- Chosen Runecoffer
 	[355037] = "Malle runeliée",
 	[355038] = "Malle runeliée",
 	[355296] = "Prime : régulation de la faune",

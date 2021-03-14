@@ -2361,7 +2361,7 @@ for key,value in pairs({
 	[272422] = "Libro de hechizos de Gentle",
 	[272455] = "Suministros bélicos eredar",
 	[272456] = "Suministros bélicos eredar",
-	[272487] = "Huevo de color raro",
+	[272487] = "|cFFFFFFFFStep 14:|r Huevo de color raro",			-- TODO: translate "step"
 	[272768] = "Depósito de empirium",
 	[272770] = "Suministros bélicos eredar",
 	[272771] = "Suministros bélicos eredar",
@@ -2452,14 +2452,14 @@ for key,value in pairs({
 	[280727] = "Nota carbonizada",
 	[280751] = "Arqueta pequeña",
 	[280755] = "Bolsa de Quintin",
-	[280815] = "Carta de la señora Graham",
-	[280836] = "Carta de la señora Graham",
-	[280837] = "Carta de la señora Graham",
-	[280838] = "Carta de la señora Graham",
-	[280842] = "Carta de la señora Graham",
-	[280843] = "Carta de la señora Graham",
-	[280844] = "Carta de la señora Graham",
-	[280845] = "Regalo de la señora Graham",
+	[280815] = "|cFFFFFFFFStep 1:|r Carta de la señora Graham I",	-- TODO: translate "step"
+	[280836] = "|cFFFFFFFFStep 2:|r Carta de la señora Graham II",	-- TODO: translate "step"
+	[280837] = "|cFFFFFFFFStep 3:|r Carta de la señora Graham III",	-- TODO: translate "step"
+	[280838] = "|cFFFFFFFFStep 4:|r Carta de la señora Graham IV",	-- TODO: translate "step"
+	[280842] = "|cFFFFFFFFStep 5:|r Carta de la señora Graham V",	-- TODO: translate "step"
+	[280843] = "|cFFFFFFFFStep 6:|r Carta de la señora Graham VI",	-- TODO: translate "step"
+	[280844] = "|cFFFFFFFFStep 7:|r Carta de la señora Graham VII",	-- TODO: translate "step"
+	[280845] = "|cFFFFFFFFStep 8:|r Regalo de la señora Graham",	-- TODO: translate "step"
 	[280883] = "Cofre descolorido por el sol",
 	[280886] = "Cofre tocado por las estrellas",
 	[280951] = "Botín de Aspafresno",
@@ -2701,7 +2701,7 @@ for key,value in pairs({
 	--TODO: [332220] = "Glowing Arcane Trunk",
 	[332569] = "Figurilla de gato cristalina",
 	[332570] = "Figurilla de gato cristalina",
-	[332571] = "Figurilla de gato cristalina",					-- Need to be confirmed
+	[332571] = "Figurilla de gato cristalina",						-- Need to be confirmed
 	[332572] = "Figurilla de gato cristalina",
 	[332573] = "Figurilla de gato cristalina",
 	[332574] = "Figurilla de gato cristalina",
@@ -2710,7 +2710,7 @@ for key,value in pairs({
 	--TODO: [332577] = "Crystalline Cat Figurine",					-- Need to be confirmed
 	[332704] = "Cofre corrupto",
 	[336415] = "Pergamino desechado",
-	[339211] = "Plato vacío",
+	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",					-- TODO: translate "step"
 	[339283] = "Cofre de noble olvidado",
 	[339770] = "Arqueta abandonada",
 	[343611] = "Huevo tocado por el Vacío",
@@ -2749,7 +2749,7 @@ for key,value in pairs({
 	[351887] = "Se busca: lord Darion",
 	[351888] = "Se busca: invocador Marcelis",
 	[351889] = "Se busca: Condenación Pálida",
-	[351948] = "Cofre olvidado",							-- C-2
+	[351948] = "Cofre olvidado",									-- C-2
 	[352027] = "Pergamino de Se busca",
 	[352028] = "Pergamino de Se busca",
 	[352086] = "Alijo Sabueso Negro",
@@ -2833,7 +2833,7 @@ for key,value in pairs({
 	--TODO: [354852] = "Sprouting Growth",
 	--TODO: [354853] = "Sprouting Growth",
 	[354856] = "Cajón cubierto de baba",
-	[355035] = "Arca rúnica de los Elegidos",				-- Chosen Runecoffer
+	[355035] = "Arca rúnica de los Elegidos",						-- Chosen Runecoffer
 	[355037] = "Arca vincularrunas",
 	[355038] = "Arca vincularrunas",
 	[355296] = "Recompensa: control de bestias",
