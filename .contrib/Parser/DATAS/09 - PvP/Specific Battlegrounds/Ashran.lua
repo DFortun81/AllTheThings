@@ -486,7 +486,7 @@ _.PVP =
 						},
 					}),
 					i(112113, {	-- Pandaren Hide
-						["allianceQuestID"] = 36038,	-- Pandaren Hide (A)
+						["allianceQuestID"] = 35942,	-- Pandaren Hide (A)
 						["hordeQuestID"] = 36038,	-- Pandaren Hide (H)
 						["repeatable"] = true,
 						["g"] = {
