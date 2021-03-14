@@ -307,6 +307,7 @@ _.Zones =
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuests"] = {
+						26999,	-- A New Era for the Plaguelands
 						27002,	-- An Audience with the Highlord
 						27017,	-- Memories from a Lost Past
 						26957,	-- The Long Trip Home
