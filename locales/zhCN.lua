@@ -2094,7 +2094,7 @@ for key, value in pairs({
 	[242959] = "宝箱",
 	[243334] = "干枯的草药",
 	--TODO: [243392] = "Alchemy Book",
-	[243668] = "宝箱",
+	[243688] = "宝箱",
 	[243773] = "宝箱",
 	[243698] = "闪闪发光的宝箱",
 	[243798] = "潮湿的珠宝盒",
@@ -2715,13 +2715,13 @@ for key, value in pairs({
 	--TODO: [332220] = "Glowing Arcane Trunk",
 	[332569] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332570] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
-	[332571] = "水晶猫咪雕像",										-- Crystalline Cat Figurine	-- Need to be confirmed
+	[332571] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332572] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332573] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332574] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332575] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	[332576] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
-	[332577] = "水晶猫咪雕像",										-- Crystalline Cat Figurine	-- Need to be confirmed
+	[332568] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	--TODO: [332704] = "Corrupted Chest",
 	[336415] = "丢弃的卷轴",
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",

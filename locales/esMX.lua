@@ -2072,7 +2072,7 @@ for key,value in pairs({
 	[242959] = "Arqueta",
 	[243334] = "Hierba marchita",
 	[243392] = "Libro de alquimia",
-	--TODO: [243668] = "Treasure Chest",
+	--TODO: [243688] = "Treasure Chest",
 	[243773] = "Arqueta",
 	[243698] = "Arqueta brillante",
 	[243798] = "El joyero tórrido",
@@ -2693,13 +2693,13 @@ for key,value in pairs({
 	--TODO: [332220] = "Glowing Arcane Trunk",
 	[332569] = "Figurilla de gato cristalina",
 	[332570] = "Figurilla de gato cristalina",
-	[332571] = "Figurilla de gato cristalina",						-- Need to be confirmed
+	[332571] = "Figurilla de gato cristalina",
 	[332572] = "Figurilla de gato cristalina",
 	[332573] = "Figurilla de gato cristalina",
 	[332574] = "Figurilla de gato cristalina",
 	[332575] = "Figurilla de gato cristalina",
 	[332576] = "Figurilla de gato cristalina",
-	--TODO: [332577] = "Crystalline Cat Figurine",					-- Need to be confirmed
+	[332568] = "Figurilla de gato cristalina",
 	[332704] = "Cofre corrupto",
 	[336415] = "Pergamino desechado",
 	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",					-- TODO: translate "step"

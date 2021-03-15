@@ -2072,7 +2072,7 @@ for key,value in pairs({
 	[242959] = "Coffre au trésor",
 	[243334] = "Herbe flétrie",
 	[243392] = "Livre d’alchimie",
-	--TODO: [243668] = "Treasure Chest",
+	--TODO: [243688] = "Treasure Chest",
 	[243773] = "Coffre au trésor",
 	[243698] = "Coffre au trésor scintillant",
 	[243798] = "Boîte à bijoux torride",
@@ -2693,13 +2693,13 @@ for key,value in pairs({
 	[332220] = "Malle arcanique luisante",
 	[332569] = "Figurine de chat en cristal",
 	[332570] = "Figurine de chat en cristal",
-	[332571] = "Figurine de chat en cristal",						-- Need to be confirmed
+	[332571] = "Figurine de chat en cristal",
 	[332572] = "Figurine de chat en cristal",
 	[332573] = "Figurine de chat en cristal",
 	[332574] = "Figurine de chat en cristal",
 	[332575] = "Figurine de chat en cristal",
 	[332576] = "Figurine de chat en cristal",
-	--TODO: [332577] = "Crystalline Cat Figurine",					-- Need to be confirmed
+	[332568] = "Figurine de chat en cristal",
 	[332704] = "Coffre corrompu",
 	[336415] = "Parchemin abandonné",
 	[339211] = "|cFFFFFFFFStep 2:|r Assiette vide",					-- TODO: translate "step"
