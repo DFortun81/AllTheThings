@@ -230,6 +230,12 @@ _.Zones =
 						["coord"] = { 69.2, 40.6, 634 },
 					}),
 				}),
+				prof(ENCHANTING, {
+					q(40265, {	-- Runes Within the Ruins
+						["sourceQuests"] = { 39903 },	-- Mysterious Messages
+						["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+					}),
+				}),
 				prof(SKINNING, {
 					q(40149, {	-- Drakol'nir Must Die
 						["sourceQuests"] = {
