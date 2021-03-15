@@ -1427,15 +1427,14 @@ _.HiddenQuestTriggers =
 		q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
 		q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
 
-		-- Paladin class campaign
-		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
-		q(40409),	-- Ashbringer Chosen (Retribution)
-		q(42495),	-- Ashbringer Chosen (Retribution)
-		q(40410),	-- Silver Hand Chosen (Holy)
-		q(42497),	-- Silver Hand Chosen (Holy)
-		q(40411),	-- Truthguard Chosen (Protection)
-		q(42496),	-- Truthguard Chosen (Protection)
-		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
+		q(38713),	-- Paladin Order Hall - The Crusade Calls. Triggered with An Urgent Gathering 38710
+		q(40409),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+		q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+		q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+		q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+		q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+		q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 
 		q(40708),	-- Priest Order Hall - chosing Holy for first priest artifact weapon
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
@@ -1471,7 +1470,8 @@ _.HiddenQuestTriggers =
 		q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
 		q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
 		q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
-		q(43946),	-- Shaman Order Hall - Enhancement Chosen
+		q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
+		q(41329),	-- Shaman Order Hall - Elemental Chosen First
 		q(43947),	-- Shaman Order Hall - Elemental Chosen
 		q(43948),	-- Shaman Order Hall - Restoration Chosen
 		q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
@@ -1507,6 +1507,11 @@ _.HiddenQuestTriggers =
 
 		q(40686),	-- Warlock Order Hall - Affliction chosen first
 		q(40514),	-- Warlock Order Hall - Revil convinced
+		q(43982),	-- Warlock Order Hall - Demonology chosen second
+		q(44389),	-- Warlock Order Hall - Affliction chosen third
+		q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
+		q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
+		
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)

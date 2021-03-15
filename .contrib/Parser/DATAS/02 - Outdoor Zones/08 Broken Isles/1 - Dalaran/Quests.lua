@@ -1187,14 +1187,7 @@ _.Zones =
 					},
 					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
-					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(43254, {	-- Ritual Ruination
-					["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
-					["classes"] = { WARLOCK },
-					["coord"] = { 73.8, 42.9, 627 },
-					["provider"] = { "n", 109838 },	-- Calydus
 				}),
 				q(44204, {	-- Seal their Fates
 					["classes"] = { ROGUE },

@@ -92,9 +92,19 @@ _.Zones =
 					cl(WARLOCK, {
 						["classes"] = { WARLOCK },
 						["g"] = {
-							q(39179),	-- Bloodstone Bandit
+							q(39179, {	-- Bloodstone Bandit
+								["sourceQuests"] = { 41759 },	-- An Unlikely Ally
+								["classes"] = { WARLOCK },
+								["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+								["provider"] = { "n", 105816 },	-- Kira Iresoul
+							}),
 							q(45024),	-- Cult Culling
-							q(40218),	-- Debt Repaid
+							q(40218, {	-- Debt Repaid
+								["sourceQuests"] = { 39142 },	-- Testing a Theory
+								["classes"] = { WARLOCK },
+								["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+								["provider"] = { "n", 105816 },	-- Kira Iresoul
+							}),
 							q(45026),	-- Expending Fel Energy
 						},
 					}),

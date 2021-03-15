@@ -61,11 +61,30 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				n(QUESTS, {
+					q(41767, {	-- A Daring Rescue
+						["sourceQuests"] = { 40218 },	-- Debt Repaid
+						["classes"] = { WARLOCK },
+						["coord"] = { 55.2, 37.0, 717 },
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
+						["maps"] = { 748 },
+					}),
 					q(44089, {	-- A Greater Arsenal
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.9, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
+					}),
+					q(44099, {	-- A Mutual Friend
+						--["sourceQuests"] = {  },	--
+						["classes"] = { WARLOCK },
+						--["coord"] = { , , 717 },
+						--["provider"] = { "n",  },	-- 
+					}),
+					q(43153, {	-- An Eye for a Scepter
+						["sourceQuest"] = 43100,	-- Finding the Scepter
+						["classes"] = { WARLOCK },
+						["coord"] = { 69.2, 79.0, 22 },	-- Western Plaguelands
+						["provider"] = { "n", 109698 },	-- Calydus
 					}),
 					q(41759, {	-- An Unlikely Ally
 						["sourceQuests"] = { 42097 },	-- Searching the Archives
@@ -76,6 +95,15 @@ _.ExpansionFeatures =
 					q(45989, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
+					q(42098, {	-- Black Rook Hold: An Unclaimed Soul
+						["sourceQuests"] = { 
+							41752,	-- Champion: Zinnin Smythe
+							41753,	-- Champion: Jubeka Shadowbreaker
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 55.2, 37.0, 717 },
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
@@ -83,6 +111,15 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 						["g"] = {
 							follower(616),	-- Calydus
+						},
+					}),
+					q(41753, {	-- Champion: Jubeka Shadowbreaker
+						["sourceQuests"] = { 41767 },	-- A Daring Rescue
+						["classes"] = { WARLOCK },
+						["coord"] = { 56.6, 34.0, 717 },
+						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
+						["g"] = {
+							follower(619),	-- Jubeka Shadowbreaker
 						},
 					}),
 					q(41748, {	-- Champion: Ritssyn Flamescowl
@@ -94,12 +131,30 @@ _.ExpansionFeatures =
 							follower(589),	-- Ritssyn Flamescowl
 						},
 					}),
+					q(41752, {	-- Champion: Zinnin Smythe
+						["sourceQuests"] = { 41767 },	-- A Daring Rescue
+						["classes"] = { WARLOCK },
+						["coord"] = { 57.6, 35.0, 717 },
+						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
+						["g"] = {
+							follower(618),	-- Zinnin Smythe
+						},
+					}),
 					q(40604, {	-- Disturbing the Past
 						["sourceQuest"] = 40588,	-- Following the Curse
 						["classes"] = { WARLOCK },
 						["coord"] = { 52.3, 34.5, 42 },
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
+					}),
+					q(42100, {	-- Empowering the Soul
+						["sourceQuests"] = { 
+							41752,	-- Champion: Zinnin Smythe
+							41753,	-- Champion: Jubeka Shadowbreaker
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 55.2, 37.0, 717 },
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
 					q(43100, {	-- Finding the Scepter
 						["sourceQuests"] = {
@@ -123,7 +178,9 @@ _.ExpansionFeatures =
 					}),
 					q(44254, {	-- Gazing Into Oblivion
 						["sourceQuest"] = 40823,	-- Rebuilding the Council
-						--["races"] = HORDE_ONLY,
+						["classes"] = { WARLOCK },
+						["coord"] = { 58.7, 32.7, 717 },
+						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
 					}),
 					q(43887, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
@@ -140,6 +197,12 @@ _.ExpansionFeatures =
 					q(45990, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
+					q(39389, {	-- It Hungers for Blood
+						["sourceQuests"] = { 39179 },	-- Bloodstone Bandit
+						["classes"] = { WARLOCK },
+						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
+					}),
 					q(46131, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -148,6 +211,15 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
+					}),
+					q(41798, {	-- Recruiting More Troops
+						["sourceQuests"] = { 
+							41752,	-- Champion: Zinnin Smythe
+							41753,	-- Champion: Jubeka Shadowbreaker
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 66.3, 46.2, 717 },
+						["provider"] = { "n", 106199 },	-- Ritssyn Flamescowl
 					}),
 					q(41797, {	-- Recruiting The Troops
 						["sourceQuests"] = { 42603 },	-- Information at Any Cost
@@ -160,6 +232,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.8, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
+					}),
+					q(43254, {	-- Ritual Ruination
+						["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
+						["classes"] = { WARLOCK },
+						["coord"] = { 73.8, 42.9, 627 },	-- Dalaran
+						["provider"] = { "n", 109838 },	-- Calydus
 					}),
 					q(42128, {	-- Ritual Reagents
 						["sourceQuests"] = {
@@ -182,6 +260,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(39142, {	-- Testing a Theory
+						["sourceQuests"] = { 39389 },	-- It Hungers for Blood
+						["classes"] = { WARLOCK },
+						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(40623, {	-- The Dark Riders
 						["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
@@ -217,6 +301,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 					}),
 					q(43984, {	-- The Tome Opens Again
+						["sourceQuests"] = { 44099 },	-- A Mutual Friend
+						["classes"] = { WARLOCK },
+						["coord"] = { 37.7, 31.8, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(40606, {	-- To Point the Way
@@ -259,9 +346,6 @@ _.ExpansionFeatures =
 					}),
 
 
-
-
-
 --[[
 						["sourceQuests"] = {  },	--
 						["classes"] = { WARLOCK },
@@ -270,31 +354,15 @@ _.ExpansionFeatures =
 					}),
 --]]
 
-
-
-
-
 				--	TODO: not organized/sourced yet.
-					q(41767),	-- A Daring Rescue
 					q(43414),	-- A Hero's Weapon
-					q(44099),	-- A Mutual Friend
 					q(45021),	-- Answers Unknown
-					q(42098),	-- Black Rook Hold: An Unclaimed Soul
 					q(46237),	-- Bloodbringer's Missive
-					q(41784),	-- Borrowed Time
 					q(44228),	-- Champion Armaments
-					q(41756),	-- Champion: Eredar Twins
-					q(41753),	-- Champion: Jubeka Shadowbreaker
 					q(46316),	-- Champion: Kanrethad Ebonlocke
-					q(46047),	-- Champion: Kanrethad Ebonlocke
-					q(41751),	-- Champion: Kira Iresoul
-					q(41755),	-- Champion: Lulubelle Fizzlebang
-					q(41754),	-- Champion: Shinfel Blightsworn
-					q(41752),	-- Champion: Zinnin Smythe
 					q(46020),	-- Crystal Containment
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
-					q(42100),	-- Empowering the Soul
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
 					q(46784),	-- Further Advancement
@@ -306,11 +374,8 @@ _.ExpansionFeatures =
 					q(41769),	-- Mad Ernie the Alchemist
 					q(42102),	-- One Who's Worthy
 					q(40821),	-- Power Overwhelming
-					q(41798),	-- Recruiting More Troops
 					q(42517),	-- Ritual of Doom
-					q(43254),	-- Ritual Ruination
 					q(43895),	-- Sealing Fate: Gold
-					q(41796),	-- Selecting a Sixth
 					q(41768),	-- Soul Beacon
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
@@ -351,12 +416,6 @@ _.ExpansionFeatures =
 							follower(621),	-- Eredar Twins
 						},
 					}),
-					q(41753, {	-- Champion: Jubeka Shadowbreaker
-						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
-						["g"] = {
-							follower(619),	-- Jubeka Shadowbreaker
-						},
-					}),
 					q(46047, {	-- Champion: Kanrethad Ebonlocke
 					--q(46316)  Diff quest text if you completed green fire quest.  Same result from both quests.
 						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
@@ -380,12 +439,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["g"] = {
 							follower(620),	-- Shinfel Blightsworn
-						},
-					}),
-					q(41752, {	-- Champion: Zinnin Smythe
-						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
-						["g"] = {
-							follower(618),	-- Zinnin Smythe
 						},
 					}),
 				}),
