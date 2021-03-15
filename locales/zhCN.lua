@@ -1342,7 +1342,7 @@ for key, value in pairs({
 	[183284] = "通缉布告",
 	--TODO: [183770] = "B'naar Control Console",
 	[183811] = "通缉布告",
-	--TODO: [184300] = "Necromantic Focus",
+	[184300] = "Necromantic Focus",
 	[184465] = "军团宝箱",
 	[184660] = "通缉布告",
 	[184825] = "拉什鸦巢宝典",
