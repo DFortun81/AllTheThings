@@ -94,6 +94,7 @@ _.Zones =
 							10461,  -- Restorer's Pledge [Healer]
 							10463,  -- Sage's Pledge [Caster]
 						},
+						["sourceQuest"] = 13432,	-- The Vials of Eternity
 						["provider"] = { "n", 19936 },	-- Arazmodu
 						["g"] = {
 							i(29298),	-- Band of Eternity
@@ -161,6 +162,7 @@ _.Zones =
 							10461,  -- Restorer's Pledge [Healer]
 							10463,  -- Sage's Pledge [Caster]
 						},
+						["sourceQuest"] = 13432,	-- The Vials of Eternity
 						["provider"] = { "n", 19936 },	-- Arazmodu
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER },
 						["g"] = {
@@ -225,6 +227,7 @@ _.Zones =
 							10463,  -- Sage's Pledge [Caster]
 						},
 						["provider"] = { "n", 19936 },	-- Arazmodu
+						["sourceQuest"] = 13432,	-- The Vials of Eternity
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 						["g"] = {
 							i(29307),	-- Band of Eternity
@@ -288,6 +291,7 @@ _.Zones =
 							10461,  -- Restorer's Pledge [Healer]
 							-- 10463,  -- Sage's Pledge [Caster]
 						},
+						["sourceQuest"] = 13432,	-- The Vials of Eternity
 						["provider"] = { "n", 19936 },	-- Arazmodu
 						["g"] = {
 							i(29302),	-- Band of Eternity
