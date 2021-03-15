@@ -15,6 +15,12 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
+				prof(ENCHANTING, {
+					q(40265, {	-- A Touch of Magic
+						["sourceQuests"] = { 39903 },	-- An Enchanting Home
+						["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+					}),
+				}),
 				prof(FISHING, {
 					n(-10067, {	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -228,12 +234,6 @@ _.Zones =
 						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 						["coord"] = { 69.2, 40.6, 634 },
-					}),
-				}),
-				prof(ENCHANTING, {
-					q(40265, {	-- Runes Within the Ruins
-						["sourceQuests"] = { 39903 },	-- Mysterious Messages
-						["provider"] = { "n", 98367 },	-- Tigrid the Charmer
 					}),
 				}),
 				prof(SKINNING, {

@@ -1212,8 +1212,6 @@ _.Zones =
 				}),
 				q(40614),	-- A Feast Fit for Odyn
 				q(40078),	-- A Heavy Burden
-				q(40265),	-- A Touch of Magic
-				q(39903),	-- An Enchanting Home
 				q(41162),	-- And Into the Fel Fire
 				q(45482),	-- Arcane: Fate of the Tideskorn
 				q(46006),	-- Arkuthaz
