@@ -34,18 +34,18 @@ def get_todo_lines(lines):
           print(f"Found ending at line {last_obj_line}!")
           break
         if "--TODO: " in line:
-          todo_dict[ind] = line
+          obj_id = re.search("\d+", line).group()
+          if int(obj_id) > 9000000: # custom objects
+            ind += 1
+            continue
+          todo_dict[ind] = obj_id
         ind += 1
       break
   return todo_dict
 
 def get_localized_names(todo_dict, lang_code):
   localized_dict = {}
-  for obj_line_ind, obj_line in todo_dict.items():
-    obj_id = re.search("\d+", obj_line).group()
-    if int(obj_id) > 9000000: # custom objects
-      continue
-
+  for obj_line_ind, obj_id in todo_dict.items():
     localized_obj_name = get_localized_obj_name(obj_id, lang_code)
 
     # not localized names look like [en_obj_name] on wowhead
@@ -75,10 +75,8 @@ def localize_objects(filename, lang_code):
     line_ind = fileinput.filelineno() - 1 # filelineno() indexing starts from 1
     if line_ind in localized_dict:
       obj_name = localized_dict[line_ind]
-      new_line = re.sub('\".*\"', f'"{obj_name}"', line)
-      if new_line != line:
-        line = new_line
-        line = re.sub('--TODO: ', '', line)
+      line = re.sub('\".*\"', f'"{obj_name}"', line)
+      line = re.sub('--TODO: ', '', line)
     print(line, end='') # this writes to file
 
 localize_objects('../../locales/deDE.lua', 'de')
