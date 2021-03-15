@@ -2467,7 +2467,7 @@ for key, value in pairs({
 	[280727] = "烧焦的笔记",
 	[280751] = "小宝箱",
 	--TODO: [280755] = "Quintin's Satchel",
-	[280815] = "|cFFFFFFFFStep 2:|r 格拉汉姆女士的信 I",				-- TODO: translate "step"
+	[280815] = "|cFFFFFFFFStep 1:|r 格拉汉姆女士的信 I",				-- TODO: translate "step"
 	[280836] = "|cFFFFFFFFStep 2:|r 格拉汉姆女士的信 II",				-- TODO: translate "step"
 	[280837] = "|cFFFFFFFFStep 3:|r 格拉汉姆女士的信 III",			-- TODO: translate "step"
 	[280838] = "|cFFFFFFFFStep 4:|r 格拉汉姆女士的信 IV",				-- TODO: translate "step"
@@ -2813,7 +2813,7 @@ for key, value in pairs({
 	[353796] = "追忆圣匣",
 	[353797] = "顽石军团补给品",
 	[353799] = "灭愿者背包",
-	--TODO: [353868] = "Hidden Hoard",	-- currently no localization available on wowhead for this object, it's just listed as [Hidden Hoard]
+	[353868] = "隐秘宝藏",
 	[353869] = "隐秘宝藏",
 	[353870] = "隐秘宝藏",
 	[353871] = "隐秘宝藏",
