@@ -194,18 +194,42 @@ _.Achievements =
 				crit(8),	-- The Schools of Arcane Magic - Transmutation
 			}),
 			ach(2557, {	-- To All The Squirrels Who Shared My Life
-				crit(1),	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
-				crit(2),	-- Borean Marmot (Borean Tundra)
-				crit(3),	-- Fjord Penguin (Howling Fjord)
-				crit(4),	-- Fjord Turkey (Howling Fjord)
-				crit(5),	-- Glacier Penguin (Icecrown)
-				crit(6),	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
-				crit(7),	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
-				crit(8),	-- Lava Crab (Searing Gorge, Burning Steppes)
-				crit(9),	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
-				crit(10),	-- Scalawag Frog (Howling Fjord)
-				crit(11),	-- Sholazar Tickbird (Sholazar Basin)
-				crit(12),	-- Tundra Penguin (Borean Tundra)
+				crit(1,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+					["crs"] = { 29328 },	-- Arctic Hare
+				}),
+				crit(2,  {	-- Borean Marmot (Borean Tundra)
+					["crs"] = { 31685 },	-- Borean Marmot
+				}),
+				crit(3,  {	-- Fjord Penguin (Howling Fjord)
+					["crs"] = { 28407 },	-- Fjord Penguin
+				}),
+				crit(4,  {	-- Fjord Turkey (Howling Fjord)
+					["crs"] = { 24746 },	-- Fjord Turkey
+				}),
+				crit(5,  {	-- Glacier Penguin (Icecrown)
+					["crs"] = { 32498 },	-- Glacier Penguin
+				}),
+				crit(6,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
+					["crs"] = { 62818 },	-- Grizzly Squirrel
+				}),
+				crit(7,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
+					["crs"] = { 6653 },	-- Huge Toad
+				}),
+				crit(8,  {	-- Lava Crab (Searing Gorge, Burning Steppes)
+					["crs"] = { 9700 },	-- Lava Crab
+				}),
+				crit(9,  {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
+					["crs"] = { 31890 },	-- Mountain Skunk
+				}),
+				crit(10, {	-- Scalawag Frog (Howling Fjord)
+					["crs"] = { 26503 },	-- Scalawag Frog
+				}),
+				crit(11, {	-- Sholazar Tickbird (Sholazar Basin)
+					["crs"] = { 28093 },	-- Sholazar Tickbird
+				}),
+				crit(12, {	-- Tundra Penguin (Borean Tundra)
+					["crs"] = { 28440 },	-- Tundra Penguin
+				}),
 			}),
 		}),
 	}),

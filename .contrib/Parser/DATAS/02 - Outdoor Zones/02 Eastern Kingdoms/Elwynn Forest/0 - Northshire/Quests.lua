@@ -154,6 +154,12 @@ _.Zones =
 						["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
+					q(63447, {	-- Fear No Evil
+						["sourceQuests"] = { 29080 },	-- Join the Battle
+						["provider"] = { "n", 951 },	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { KULTIRAN },
+					}),
 					q(29080, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },

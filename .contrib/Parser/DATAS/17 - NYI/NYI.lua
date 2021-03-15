@@ -79,7 +79,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(181259)),	-- Clutch (wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(184461)),	-- Clutch (wild pet in game, item was never used)
-		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage (possibly in game? need more info)
 		un(NEVER_IMPLEMENTED, i(180590)),	-- Lost Soul (wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180860)),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180840)),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)

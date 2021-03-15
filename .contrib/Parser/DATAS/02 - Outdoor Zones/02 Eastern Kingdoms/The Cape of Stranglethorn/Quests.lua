@@ -216,7 +216,7 @@ _.Zones =
 				}),
 				q(26678, {	-- Doublerum
 					["sourceQuests"] = { 26665 },	-- Call of Booty
-					["coord"] = { 41.1, 73.1, 1355 },
+					["coord"] = { 41.1, 73.1, 210 },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26649, {	-- Drive-By Piracy
@@ -616,7 +616,7 @@ _.Zones =
 					},
 				}),
 				q(26634, {	-- The Bane of Many A Pirate
-					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
+					["sourceQuests"] = { 26633 },	-- Swabbing Duty
 					["coord"] = { 44.4, 92.0, 210 },
 					["provider"] = { "n", 2549 },	-- Garr Salthoof
 				}),

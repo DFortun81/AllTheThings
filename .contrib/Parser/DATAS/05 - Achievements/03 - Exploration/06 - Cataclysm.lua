@@ -193,19 +193,45 @@ _.Achievements =
 				crit(13),	-- Ruins of Southshore in Hillsbrad Foothills
 			}),
 			ach(5548, {	-- To All the Squirrels Who Cared for Me
-				crit(1),	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
-				crit(2),	-- Baradin Fox Kit (Tol Barad)
-				crit(3),	-- Grotto Vole (Mount Hyjal)
-				crit(4),	-- Highlands Turkey (Twilight Highlands)
-				crit(5),	-- Mac Frog (Uldum)
-				crit(6),	-- Oasis Moth(Uldum, Lost City of the Tol'vir)
-				crit(7),	-- Rattlesnake (Twilight Highlands, Tanaris)
-				crit(8),	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
-				crit(9),	-- Rockchewer Whelk (Shimmering Expanse)
-				crit(10),	-- Sassy Cat (Tol Barad)
-				crit(11),	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
-				crit(12),	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
-				crit(13),	-- Yellow-Bellied Marmot (Twilight Highlands)
+				crit(1,  {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
+					["crs"] = { 49779 },	-- Alpine Chipmunk
+				}),
+				crit(2,  {	-- Baradin Fox Kit (Tol Barad)
+					["crs"] = { 48630 },	-- Baradin Fox Kit
+				}),
+				crit(3,  {	-- Grotto Vole (Mount Hyjal)
+					["crs"] = { 50419 },	-- Grotto Vole
+				}),
+				crit(4,  {	-- Highlands Turkey (Twilight Highlands)
+					["crs"] = { 48706 },	-- Highlands Turkey
+				}),
+				crit(5,  {	-- Mac Frog (Uldum)
+					["crs"] = { 50491 },	-- Mac Frog
+				}),
+				crit(6,  {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
+					["crs"] = { 50496 },	-- Oasis Moth
+				}),
+				crit(7,  {	-- Rattlesnake (Twilight Highlands, Tanaris)
+					["crs"] = { 48686 },	-- Rattlesnake
+				}),
+				crit(8,  {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
+					["crs"] = { 50481 },	-- Rock Viper
+				}),
+				crit(9,  {	-- Rockchewer Whelk (Shimmering Expanse)
+					["crs"] = { 48848 },	-- Rockchewer Whelk
+				}),
+				crit(10, {	-- Sassy Cat (Tol Barad)
+					["crs"] = { 47682 },	-- Sassy Cat
+				}),
+				crit(11, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
+					["crs"] = { 48802 },	-- Sea Cucumber
+				}),
+				crit(12, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
+					["crs"] = { 47667 },	-- Wharf Rat
+				}),
+				crit(13, {	-- Yellow-Bellied Marmot (Twilight Highlands)
+					["crs"] = { 48683 },	-- Yellow-Bellied Marmot
+				}),
 			}),
 		}),
 	}),

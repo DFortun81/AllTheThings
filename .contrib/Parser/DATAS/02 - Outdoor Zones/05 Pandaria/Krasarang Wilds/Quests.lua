@@ -1060,20 +1060,8 @@ _.Zones =
 				}),
 --[[
 				The following quests have all been removed from the game
-				q(32236, {	-- Bug Off!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(32141, {	-- Power Metal
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
 				q(30677, {	-- Shuttle Service
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(32140, {	-- Work Order: Iron
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
 				}),
 ]]--
 			}),

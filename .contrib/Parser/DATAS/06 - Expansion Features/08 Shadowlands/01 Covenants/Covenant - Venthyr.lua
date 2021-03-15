@@ -666,12 +666,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 					}),
-					q(62069, {	-- Restock: Sinstones
-						["provider"] = { "n", 165494 },	-- Hips <Entertainment>
-						["repeatable"] = true,
-						-- no rewards, ignore cost
-						["coord"] = { 30.6, 41.8, 1525 },	-- Sinfall Reaches
-					}),
 					q(58584, {	-- Right our Wrongs
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
 						["provider"] = { "n", 161526 },	-- General Draven
@@ -1474,6 +1468,7 @@ _.ExpansionFeatures =
 											crit(4, {	-- The Countess
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(182209),	-- Desire's Battle Gargon (MOUNT!)
 											i(181566),	-- Decree: The Countess's Boon
 											i(180961),	-- Silver-Bladed Ritual Dagger
 											i(180964),	-- Ember Court Barrier
@@ -1805,6 +1800,15 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
+								q(62070, {	-- Restock: Fragrant Flowers
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["cost"] = {
+										{ "i", 170554, 1 },		-- 1x Vigil's Torch
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
 									["repeatable"] = true,	-- it shows up as a blue ?
@@ -1888,7 +1892,7 @@ _.ExpansionFeatures =
 								}),
 								q(61092, {	-- RSVP: Grandmaster Vole
 									["minReputation"] = { 2445, FRIENDLY },
-									["description"] = "|cFF16be0dInvitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
@@ -2823,14 +2827,15 @@ _.ExpansionFeatures =
 									}),
 								}),
 								n(-908, {	-- Rewards
-								--	TODO: cloaks might need to be marked with armor spec classes, need to get one and then see if cloth set cloak can be used on a druid, for example.  there's no blizz text indicating that they're locked to users of a specific armor type so it needs verification i guess
 									i(183798),	-- Silessa's Battle Harness (MOUNT!)
 									i(183855),	-- Stony's Infused Ruby (PET!)
 									i(181064),	-- Burnished Death Shroud Belt
 									i(181065),	-- Burnished Death Shroud Bindings
 									i(181059),	-- Burnished Death Shroud Boots
 									i(181062),	-- Burnished Death Shroud Breeches
-									i(181066),	-- Burnished Death Shroud Cloak
+									i(181066, {	-- Burnished Death Shroud Cloak
+										["classes"] = { DRUID, MONK, ROGUE, DEMONHUNTER },
+									}),
 									i(181060),	-- Burnished Death Shroud Gloves
 									i(181061),	-- Burnished Death Shroud Hood
 									i(181063),	-- Burnished Death Shroud Spaulders
@@ -2838,7 +2843,9 @@ _.ExpansionFeatures =
 									i(183711),	-- Burnished Crypt Keeper's Mantle
 									i(183710),	-- Burnished Sinstone Chain
 									i(181023),	-- Dread Sentinel's Burnished Chestplate
-									i(181030),	-- Dread Sentinel's Burnished Cloak
+									i(181030, {	-- Dread Sentinel's Burnished Cloak
+										["classes"] = { DEATHKNIGHT, WARRIOR, PALADIN },
+									}),
 									i(181028),	-- Dread Sentinel's Burnished Girdle
 									i(181024),	-- Dread Sentinel's Burnished Greatboots
 									i(181025),	-- Dread Sentinel's Burnished Grips
@@ -2848,7 +2855,9 @@ _.ExpansionFeatures =
 									i(181029),	-- Dread Sentinel's Burnished Vambraces
 									i(181091),	-- Fearstalker's Burnished Belt
 									i(181092),	-- Fearstalker's Burnished Bracers
-									i(181093),	-- Fearstalker's Burnished Cloak
+									i(181093, {	-- Fearstalker's Burnished Cloak
+										["classes"] = { HUNTER, SHAMAN },
+									}),
 									i(181087),	-- Fearstalker's Burnished Gauntlets
 									i(181085),	-- Fearstalker's Burnished Hauberk
 									i(181088),	-- Fearstalker's Burnished Helm
@@ -2856,7 +2865,9 @@ _.ExpansionFeatures =
 									i(181090),	-- Fearstalker's Burnished Monnion
 									i(181086),	-- Fearstalker's Burnished Sabatons
 									i(183707),	-- Mantle of Burnished Blades
-									i(181129),	-- Soulbreaker's Burnished Drape
+									i(181129, {	-- Soulbreaker's Burnished Drape
+										["classes"] = { MAGE, PRIEST, WARLOCK },
+									}),
 									i(181123),	-- Soulbreaker's Burnished Handwraps
 									i(181124),	-- Soulbreaker's Burnished Hood
 									i(181125),	-- Soulbreaker's Burnished Leggings

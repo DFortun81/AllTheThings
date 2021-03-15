@@ -1139,6 +1139,7 @@ _.ExpansionFeatures =
 								i(181306),	-- Spirit Tender's Bulb
 								i(181310),	-- Spirit Tender's Pack
 								i(180603),	-- Violet Dredwing Pup
+								i(180815),	-- Brightscale Hatchling
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)

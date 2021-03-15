@@ -375,6 +375,20 @@ _.Zones =
 						["sourceQuests"] = { 58794 },	-- Stabbing Wasteward
 					}),
 				}),
+				ach(14731, {	-- To All the Squirrels I've Loved and Lost
+					["collectible"] = false,
+					["g"] = {
+						crit(7, {	-- Chittering Claw
+							["crs"] = { 167353 },	-- Chittering Claw
+						}),
+						crit(8, {	-- Writhing Rachis
+							["crs"] = { 167354 },	-- Writhing Rachis
+						}),
+						crit(9, {	-- Bubbling Refuse
+							["crs"] = { 174650 },	-- Bubbling Refuse
+						}),
+					},
+				}),
 				ach(14513),		-- Tour of Duty: Maldraxxus
 				ach(14312, {	-- Treasures of Maldraxxus
 					crit(1, {	-- Ornate Bone Shield

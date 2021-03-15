@@ -5,12 +5,6 @@
 _.PetBattles =
 {
 	n(-34, {	-- World Quests
-		tier(7, {	-- Legion
-			i(116415),	-- Shining Pet Charm
-		}),
-		tier(8, {	-- BFA
-			i(163036),	-- Polished pet charm
-		}),
 		i(86143),	-- Battle Pet Bandage
 	}),
 	i(94207, {	-- Fabled Pandaren Pet Supplies

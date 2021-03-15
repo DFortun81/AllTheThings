@@ -103,6 +103,14 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14730, {	-- To All The Squirrels I Set Sail to See
+					["collectible"] = false,
+					["g"] = {
+						crit(11, {	-- Temple Beetle
+							["crs"] = { 130441 },	-- Temple Beetle
+						}),
+					},
+				}),
 				ach(12851, {	-- Treasures of Zuldazar
 					["collectible"] = false,
 					["g"] = {

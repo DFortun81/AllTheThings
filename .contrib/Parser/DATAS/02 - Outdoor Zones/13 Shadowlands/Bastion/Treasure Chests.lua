@@ -48,6 +48,12 @@ _.Zones =
 						i(184418),	-- Acrobatic Steward (TOY!)
 					}
 				}),
+				o(353868, {	-- Hidden Hoard
+					["description"] = "The coordinates are for a cliffside cave entrance.",
+					["questID"] = 60875,	-- only questID that triggers for this one, no specific secondary quest to link
+					["isDaily"] = true,
+					["coord"] = { 59.5, 13.3, 1533 },
+				}),
 				o(353869, {	-- Hidden Hoard
 					["questID"] = 60880,
 					["isDaily"] = true,
@@ -61,12 +67,12 @@ _.Zones =
 				}),
 				o(353871, {	-- Hidden Hoard
 					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff.  You'll have to walk along a ledge halfway up the cliffside to access it.",
-					["questID"] = 60878,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
+					["questID"] = 60878,	-- also 60875
 					["isDaily"] = true,
 					["coord"] = { 47.7, 35.1, 1533 },
 				}),
 				o(353872, {	-- Hidden Hoard
-					["questID"] = 60877,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
+					["questID"] = 60877,	-- also 60875
 					["isDaily"] = true,
 					["coord"] = { 61.6, 37.2, 1533 }
 				}),

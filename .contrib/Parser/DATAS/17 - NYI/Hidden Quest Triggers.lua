@@ -132,6 +132,50 @@ _.HiddenQuestTriggers =
 		q(54631),	-- Paragon of the Voldunai
 		q(54632),	-- Paragon of the Zandalari Empire
 
+	--	PVP quests
+		q(38109, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38120, {	-- Vanilla 10-19
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38110, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38121, {	-- Classic 20-29
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62298, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62299, {	-- Classic 20-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38111, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38122, {	-- Classic 30-39
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38112, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(38123, {	-- Classic 40-49
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62347, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62353, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62357, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+		q(62348, {	-- Shadowlands (51-59) E
+			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
+		}),
+
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
@@ -1086,6 +1130,11 @@ _.HiddenQuestTriggers =
 		q(43172),	-- Warmongering Gladiator's Scaled Armor (Horde, Paladin)
 		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
 		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
+		
+		q(47352),	-- Fierce Combatant's Satin Armor
+		q(47365),	-- Fierce Gladiator's Satin Armor
+		q(60689),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
+		q(63572),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
 
 		-------------------
 		--    Legion     --
@@ -1275,7 +1324,7 @@ _.HiddenQuestTriggers =
 		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
 		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
 		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
-		
+
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
 		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
@@ -3297,7 +3346,6 @@ _.HiddenQuestTriggers =
 		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion Treasures
-		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
 		q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)
@@ -3610,6 +3658,7 @@ _.HiddenQuestTriggers =
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
+		q(61889),	-- revoking invitations (3rd in a row, perhaps tracker for the 3rd free revoke per week from Staff: Ambassasdors items)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"

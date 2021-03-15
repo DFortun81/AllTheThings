@@ -29,7 +29,7 @@ _.Mounts =
 			["classes"] = { PALADIN },
 			["races"] = { HUMAN, DWARF },
 		}),
-		i(166724),		-- Bruce
+		un(REMOVED_FROM_GAME, i(166724)),	-- Bruce
 		i(168408),		-- Child of Torcali
 		i(183617),		-- Chittering Animite
 		i(128311),		-- Coalfist Gronnling

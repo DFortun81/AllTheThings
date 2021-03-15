@@ -1053,9 +1053,6 @@ end
 local function VerifySourceID(item)
 	-- ignore things which arent items
 	if not item.itemID then return true; end
-	-- ignore items that dont meet the customHarvest range if specified
-	if app.customHarvestMin and app.customHarvestMin > item.itemID then return true; end
-	if app.customHarvestMax and app.customHarvestMax < item.itemID then return true; end
 	-- no source at all, try to get it
 	if not item.s or item.s == 0 then return; end
 	-- unobtainable item, don't change the sourceID
@@ -1077,7 +1074,7 @@ local function VerifySourceID(item)
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
 
-		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
+		local linkInfoSourceID = app.GetSourceID(item.link);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
 			return;
@@ -2932,7 +2929,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -3017,7 +3014,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and L["INVALID_BLIZZARD_DATA"] or L["MISSING_IN_ATT"]) .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -3026,7 +3023,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 
 						if sourceGroup.missing then
-							tinsert(info, { left = Colorize(L["SOURCE_ID_MISSING"], "ffff0000") });
+							tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 						end
 						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
@@ -4218,20 +4215,27 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
-				-- print("sourceID",sourceID)
-				if sourceID then
-					_ = SearchForField("s", sourceID);
-					-- print("direct s",_ and #_)
-					-- if _ then return _; end
-					return _;
-				end
 
 				-- Search for the item ID.
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				-- print("link-search",modItemID,itemID)
+				-- accuracy of finding the correct ATT entry:
+				-- ItemID + modID
+				-- ItemID
+				-- SourceID
 				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 				-- print("found",_ and #_)
+				-- if the specific item was not found for whatever reason (modID which changes stats but not appearance [M+, PvP, etc.])
+				if not _ then
+					local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+					-- print("sourceID",sourceID)
+					if sourceID then
+						_ = SearchForField("s", sourceID);
+						-- print("direct s",_ and #_)
+						-- if _ then return _; end
+						-- return _;
+					end
+				end
 				return _;
 			end
 		end
@@ -5096,11 +5100,15 @@ local function RefreshMountCollection(newMountID)
 		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		-- specific mount collected
 		if newMountID then
+			-- print("newmount",newMountID)
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
-				-- print("collected spellID",spellID);
+				-- print("collected spellID",spellID)
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
+
+				-- update the lists where this mount exists
+				UpdateSearchResults(SearchForField("spellID", spellID));
 			end
 		-- or just check all mounts
 		else
@@ -5110,18 +5118,22 @@ local function RefreshMountCollection(newMountID)
 					-- print("collected spellID",spellID);
 					collectedSpells[spellID] = 1;
 					collectedSpellsPerCharacter[spellID] = 1;
+
+					-- update the lists where this mount exists
+					UpdateSearchResults(SearchForField("spellID", spellID));
 				end
 			end
+
+			-- TODO: refreshing the entire data source might not be necessary...
+			-- Wait a frame before harvesting item collection status.
+			coroutine.yield();
+			-- print("Refresh to check progress after collection...")
+			app:RefreshData(false, true);
+
+			-- Wait 2 frames before refreshing states.
+			coroutine.yield();
+			coroutine.yield();
 		end
-
-		-- Wait a frame before harvesting item collection status.
-		coroutine.yield();
-		-- print("Refresh to check progress after collection...")
-		app:RefreshData(false, true);
-
-		-- Wait 2 frames before refreshing states.
-		coroutine.yield();
-		coroutine.yield();
 
 		-- Compare progress
 		local progress = app:GetDataCache().progress or 0;
@@ -7548,7 +7560,7 @@ app.BaseHeirloomLevel = {
 							return itemName;
 						end
 					else
-						t.retries = 1;
+						t.retries = nil;
 					end
 				end
 			end
@@ -7974,7 +7986,7 @@ local itemFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", 1);
+					rawset(t, "retries", nil);
 				end
 			end
 		end
@@ -8083,7 +8095,7 @@ local appearanceFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", 1);
+					rawset(t, "retries", nil);
 				end
 			end
 		end
@@ -8785,8 +8797,9 @@ app.CollectibleAsQuest = function(t)
 end
 app.CollectibleAsCost = function(t)
 	-- items can only be a cost via 'itemID'
-	if t.modItemID then
-		-- get all the Things referenced by this item 
+	-- ignore anything which is directly under something which is 'saved' == 1, since that means the character cannot obtain it currently
+	if t.modItemID and (not t.parent or t.parent.saved ~= 1) then
+		-- get all the Things referenced by this item
 		local references = app.SearchForField("itemID", t.modItemID, true);
 		if references then
 			-- print(t.modItemID,"references:")
@@ -8804,7 +8817,11 @@ app.CollectibleAsCost = function(t)
 							if c[1] == "i" and c[2] == t.modItemID then
 								-- return true: this item is required as a 'cost' to something else collectible which has not been collected
 								-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
-								return app.RecursiveGroupRequirementsFilter(ref);	-- can be obtained on this character
+								-- if can be obtained on this character
+								if app.RecursiveGroupRequirementsFilter(ref) then
+									-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
+									return true;	-- this item is a cost for something collectible on this character
+								end
 							end
 						end
 					end
@@ -11777,7 +11794,7 @@ RowOnEnter = function (self)
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
-		elseif reference.retries then
+		elseif reference.questID and reference.retries then
 			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);		-- L["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. "
 		end
 		if reference.lvl then
@@ -13290,7 +13307,7 @@ function app:BuildSearchResponse(groups, field, value)
 		local t;
 		if type(field) == "function" then
 			for i,group in ipairs(groups) do
-				if field(group) then
+				if field(group) and group.collectible then
 					if not t then t = {}; end
 					tinsert(t, CloneData(group));
 				elseif group.g then
@@ -13304,7 +13321,7 @@ function app:BuildSearchResponse(groups, field, value)
 		else
 			for i,group in ipairs(groups) do
 				local v = group[field];
-				if v and v == value then
+				if v and v == value and group.collectible then
 					if not t then t = {}; end
 					tinsert(t, CloneData(group));
 				elseif group.g then
@@ -14049,6 +14066,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 			self.initialized = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.Settings:Get("DebugMode") then
+				app.print("Enabled Debug Mode");
+				self.forcedDebug = true;
 				app.Settings:ToggleDebugMode();
 			end
 			-- clear any previously saved harvest data
@@ -14064,32 +14083,61 @@ app:GetWindow("Harvester", UIParent, function(self)
 			db.total = 0;
 			db.back = 1;
 
-			local mID;
-			local modIDs = {};
-			local bonusIDs = {};
+			local _;
+			local harvested = {};
+			-- local modIDs = {};
+			-- local bonusIDs = {};
+			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
 			app.MaximumItemInfoRetries = 40;
+			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
-				-- clean any cached modID from the itemID
-				itemID = GetItemIDAndModID(itemID);
-				for i,group in ipairs(groups) do
-					if group.bonusID and not bonusIDs[group.bonusID] then
-						bonusIDs[group.bonusID] = true;
-						if (not VerifySourceID(group)) then
-							tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-						end
-					else
-						mID = group.modID or 0;
-						if not modIDs[mID] then
-							modIDs[mID] = true;
-							if (not VerifySourceID(group)) then
-								tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+				-- ignore items that dont meet the customHarvest range if specified
+				if (not minID or minID < itemID) and (not maxID or itemID < maxID) then
+					-- clean any cached modID from the itemID
+					itemID = GetItemIDAndModID(itemID);
+					-- print("Checking for Source",itemID)
+					for i,group in ipairs(groups) do
+						-- only use the matching cached Item
+						if group.itemID == itemID and not harvested[group.modItemID or itemID] then
+							harvested[group.modItemID or itemID] = true;
+							if group.bonusID then
+								-- Harvest using a BonusID?
+								_ = group.bonusID;
+								-- if not bonusIDs[_] then
+									-- print("Check w/ Bonus",itemID,_)
+									-- bonusIDs[_] = true;
+									if (not VerifySourceID(group)) then
+										-- print("Harvest w/ Bonus",itemID,_)
+										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
+									end
+								-- end
+							elseif group.modID then
+								-- Harvest using a ModID?
+								_ = group.modID;
+								-- if not modIDs[_] then
+									-- print("Check w/ Mod",itemID,_)
+									-- modIDs[_] = true;
+									if (not VerifySourceID(group)) then
+										-- print("Harvest w/ Mod",itemID,_)
+										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
+									end
+								-- end
+							else
+								-- Harvest with no special ID?
+								-- print("Check",itemID)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest",itemID)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}, app.BaseItem));
+								end
 							end
+						-- else print("Cached skip",group.key,group[group.key]);
 						end
 					end
+					-- wipe(modIDs);
+					-- wipe(bonusIDs);
 				end
-				wipe(modIDs);
-				wipe(bonusIDs);
 			end
+			wipe(harvested);
 			-- remove the custom harvest flags
 			app.customHarvestMin = nil;
 			app.customHarvestMax = nil;
@@ -14127,6 +14175,12 @@ app:GetWindow("Harvester", UIParent, function(self)
 						end
 					else
 						table.sort(AllTheThingsHarvestItems);
+						-- revert Debug if it was enabled by the harvester
+						if self.forcedDebug then
+							app.print("Reverted Debug Mode");
+							app.Settings:ToggleDebugMode();
+							self.forcedDebug = nil;
+						end
 						app.print("Source Harvest Complete!");
 						self.UpdateDone = nil;
 					end

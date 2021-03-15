@@ -148,6 +148,7 @@ i(62333);	-- Greater Inscription of Unbreakable Quartz
 i(43626);	-- Happy Pet Snack
 i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
+i(173793);	-- Inquisitor Sinstone (WQ reward, not actually the item you receive, but it rolls a random green Sinstone and you get that instead)
 i(18284);	-- Kreeg's Stout Beatdown
 i(180696);	-- Legion Wing Insignia
 i(19297);	-- Lesser Darkmoon Prize
@@ -396,6 +397,7 @@ i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
+i(118265);	-- Echoing Betrayal
 i(2460);	-- Elixir of Tongues
 i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
 i(171206);	-- Forgotten Weapon

@@ -54,6 +54,7 @@ _.Mounts =
 		i(163583),  -- Craghorn Chasm-Leaper
 		i(152905),	-- Crimson Slavermaw
 		i(152843),	-- Darkspore Mana Ray Mount
+		i(182209),	-- Desire's Battle Gargon
 		i(174641),	-- Drake of the Four Winds
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind

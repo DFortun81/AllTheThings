@@ -10,7 +10,9 @@ _.Craftables =
 				i(180751),	-- Red Noggin Candle
 			}),
 			filter(53, {	-- Trinkets
-				i(171323),	-- Spiritual Alchemy Stone
+				i(171323, {	-- Spiritual Alchemy Stone
+					["collectible"] = false,
+				}),
 			}),
 		}),
 	}),
