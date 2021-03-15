@@ -582,7 +582,6 @@ _.Zones =
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash
 				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
-				q(46247),	-- Defending Broken Isles
 				q(45828),	-- Demon Hunter
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
@@ -609,7 +608,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46720),	-- Frozen Memories
-				q(46789),	-- Further Advancement
 				q(47045),	-- Further Progress
 				q(46125),	-- Furthering Knowledge
 				q(46320),	-- Hope For a Cure

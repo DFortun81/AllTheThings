@@ -1282,6 +1282,7 @@ _.HiddenQuestTriggers =
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
+		q(47255), 	-- Triggers after completing "Mark of the Sentinax" (47139)
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
