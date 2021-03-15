@@ -1222,7 +1222,6 @@ for key,value in pairs({
 	--TODO: [21042] = "Theramore Guard Badge",
 	--TODO: [35251] = "Karnitol's Chest",
 	--TODO: [112948] = "Intrepid's Locked Strongbox",
-	--TODO: [113768] = GetSpellInfo(61820),
 	--TODO: [123329] = "Baelog's Chest",
 	--TODO: [131474] = "The Discs of Norgannon",
 	--TODO: [131979] = "Large Darkwood Chest",
@@ -1665,8 +1664,6 @@ for key,value in pairs({
 	--TODO: [225501] = "Peaceful Offering",
 	--TODO: [225502] = "Peaceful Offering",
 	--TODO: [225503] = "Peaceful Offering",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	--TODO: [226831] = "Astrologer's Box",
 	--TODO: [226854] = "Armored Elekk Tusk",
 	--TODO: [226861] = "Ronokk's Belongings",
@@ -1728,7 +1725,6 @@ for key,value in pairs({
 	--TODO: [230402] = "Lucky Coin",
 	--TODO: [230424] = "Snow-Covered Strongbox",
 	--TODO: [230425] = "Gnawed Bone",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	--TODO: [230611] = "Pale Loot Sack",
 	--TODO: [230643] = "Teroclaw Nest",
 	--TODO: [230664] = "The Crystal Blade of Torvath",
@@ -1799,7 +1795,6 @@ for key,value in pairs({
 	--TODO: [233206] = "Abandoned Cargo",
 	--TODO: [233218] = "Adventurer's Pack",
 	--TODO: [233241] = "Glowing Cave Mushroom",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	--TODO: [233391] = "Weaponization Orders",
 	--TODO: [233452] = "A Pile of Dirt",
 	--TODO: [233455] = "Aged Stone Container",
@@ -1947,8 +1942,6 @@ for key,value in pairs({
 	--TODO: [239803] = "Treasure Chest",
 	--TODO: [239828] = "Edge of Reality",
 	--TODO: [239901] = "Voidtalon Egg",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	--TODO: [240003] = "Strange Sapphire",
 	--TODO: [240289] = "Weathered Axe",
 	--TODO: [240317] = "Iskar's Tome of Shadows",
@@ -2481,7 +2474,6 @@ for key,value in pairs({
 	--TODO: [282457] = "Brambleguard Totem",
 	--TODO: [282478] = "Empty Crate",
 	--TODO: [282498] = "Desert Flute",
-	--TODO: [282628] = GetSpellInfo(245476),						-- Sand Pile
 	--TODO: [282666] = "Urn of Agussu",
 	--TODO: [284426] = "Buried Mining Machine",
 	--TODO: [284448] = "Hidden Scholar's Chest",

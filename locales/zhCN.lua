@@ -1244,7 +1244,6 @@ for key, value in pairs({
 	[21042] = "塞拉摩卫兵徽章",
 	--TODO: [35251] = "Karnitol's Chest",
 	[112948] = "保险箱",
-	--TODO: [113768] = GetSpellInfo(61820),
 	[123329] = "巴尔洛戈的箱子",
 	[131474] = "诺甘农圆盘",
 	[131979] = "大型黑木箱",
@@ -1687,8 +1686,6 @@ for key, value in pairs({
 	[225501] = "和平祭礼",
 	[225502] = "和平祭礼",
 	[225503] = "和平祭礼",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	--TODO: [226831] = "Astrologer's Box",
 	[226854] = "装甲雷象獠牙",
 	[226861] = "罗诺克的物品",
@@ -1750,7 +1747,6 @@ for key, value in pairs({
 	--TODO: [230402] = "Lucky Coin",
 	--TODO: [230424] = "Snow-Covered Strongbox",
 	--TODO: [230425] = "Gnawed Bone",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	[230611] = "一袋白鬼战利品",
 	[230643] = "恐爪鸟巢穴",
 	--TODO: [230664] = "The Crystal Blade of Torvath",
@@ -1821,7 +1817,6 @@ for key, value in pairs({
 	[233206] = "被遗弃的货箱",
 	[233218] = "冒险者的包裹",
 	--TODO: [233241] = "Glowing Cave Mushroom",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	[233391] = "武器装配员的命令",
 	[233452] = "一堆泥土",
 	[233455] = "古老的石质容器",
@@ -1969,8 +1964,6 @@ for key, value in pairs({
 	[239803] = "宝箱",
 	--TODO: [239828] = "Edge of Reality",
 	--TODO: [239901] = "Voidtalon Egg",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "古怪的蓝宝石",
 	[240289] = "风化的斧子",
 	[240317] = "艾斯卡的暗影之书",
@@ -2503,7 +2496,6 @@ for key, value in pairs({
 	[282457] = "棘卫图腾",
 	[282478] = "空箱子",
 	[282498] = "沙漠之笛",
-	--TODO: [282628] = GetSpellInfo(245476),						-- Sand Pile
 	--TODO: [282666] = "Urn of Agussu",
 	[284426] = "埋藏的采矿机",
 	[284448] = "隐蔽的学者宝箱",										-- Hidden Scholar's Chest

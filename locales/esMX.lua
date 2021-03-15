@@ -1222,7 +1222,6 @@ for key,value in pairs({
 	[21042] = "Identificación de guardia de Theramore",
 	[35251] = "Cofre de Karnitol",
 	[112948] = "Caja fuerte de El Intrépido cerrada",
-	[113768] = "Huevo de colores vivos",
 	[123329] = "Cofre de Baelog",
 	[131474] = "Los Discos de Norgannon",
 	[131979] = "Cofre grande de Leñoscuro",
@@ -1665,8 +1664,6 @@ for key,value in pairs({
 	[225501] = "Ofrenda pacífica",
 	[225502] = "Ofrenda pacífica",
 	[225503] = "Ofrenda pacífica",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	[226831] = "Caja de astrólogo",
 	[226854] = "Colmillo de elekk acorazado",
 	[226861] = "Pertenencias de Ronokk",
@@ -1728,7 +1725,6 @@ for key,value in pairs({
 	[230402] = "Moneda de la suerte",
 	[230424] = "Caja fuerte cubierta de nieve",
 	[230425] = "Hueso mordisqueado",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	[230611] = "Saco de botín mediocre",
 	[230643] = "Nido de garráptero",
 	[230664] = "La espada de cristal de Torvath",
@@ -1799,7 +1795,6 @@ for key,value in pairs({
 	[233206] = "Cargamento abandonado",
 	[233218] = "Paquete de aventurero",
 	[233241] = "Champiñón de cueva resplandeciente",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	[233391] = "Órdenes de armamentización",
 	[233452] = "Un montón de tierra",
 	[233455] = "Contenedor de piedra envejecida",
@@ -1947,8 +1942,6 @@ for key,value in pairs({
 	[239803] = "Arqueta",
 	[239828] = "Acantilado de la Realidad",
 	--TODO: [239901] = "Voidtalon Egg",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "Zafiro extraño",
 	[240289] = "Hacha desgastada",
 	[240317] = "Escrito de las Sombras de Iskar",
@@ -2481,7 +2474,6 @@ for key,value in pairs({
 	[282457] = "Tótem guardazarza",
 	[282478] = "Cajón vacío",
 	[282498] = "Flauta del desierto",
-	[282628] = "Montón de arena",
 	[282666] = "Urna de Agussu",
 	[284426] = "Máquina minera enterrada",
 	[284448] = "Cofre de erudito oculto",

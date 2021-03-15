@@ -1222,7 +1222,6 @@ for key,value in pairs({
 	[21042] = "Abzeichen der Wache von Theramore",
 	[35251] = "Karnitols Truhe",
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",
-	[113768] = "Bunt gefärbtes Ei",
 	[123329] = "Baelogs Truhe",
 	[131474] = "Die Scheiben von Norgannon",
 	[131979] = "Große Dunkelholztruhe",
@@ -1665,8 +1664,6 @@ for key,value in pairs({
 	[225501] = "Friedliche Opfergabe",
 	[225502] = "Friedliche Opfergabe",
 	[225503] = "Friedliche Opfergabe",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	[226831] = "Kiste des Astrologen",
 	[226854] = "Gepanzerter Elekkstoßzahn",
 	[226861] = "Ronokks Habseligkeiten",
@@ -1728,7 +1725,6 @@ for key,value in pairs({
 	[230402] = "Glücksmünze",
 	[230424] = "Schneebedeckte Schließkassette",
 	[230425] = "Abgenagter Knochen",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	[230611] = "Beutesack der Fahlen",
 	[230643] = "Terokrallennest",
 	[230664] = "Torvaths Kristallklinge",
@@ -1799,7 +1795,6 @@ for key,value in pairs({
 	[233206] = "Zurückgelassene Fracht",
 	[233218] = "Bündel eines Abenteurers",
 	[233241] = "Leuchtender Höhlenpilz",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	[233391] = "Gronnkontrollbefehle",
 	[233452] = "Ein Haufen Dreck",
 	[233455] = "Abgenutzte Steintruhe",
@@ -1947,8 +1942,6 @@ for key,value in pairs({
 	[239803] = "Schatztruhe",
 	[239828] = "Rand der Realität",
 	[239901] = "Leerenkrallenei",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "Merkwürdiger Saphir",
 	[240289] = "Verwitterte Axt",
 	[240317] = "Iskars Foliant der Schatten",
@@ -2481,7 +2474,6 @@ for key,value in pairs({
 	[282457] = "Dornenwachentotem",
 	[282478] = "Leere Kiste",
 	[282498] = "Wüstenflöte",
-	[282628] = "Sandhaufen",
 	[282666] = "Urne von Agussu",
 	[284426] = "Vergrabene Abbaumaschine",
 	[284448] = "Versteckte Truhe eines Gelehrten",

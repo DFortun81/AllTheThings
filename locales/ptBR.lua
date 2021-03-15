@@ -1219,7 +1219,6 @@ for key,value in pairs({
 	[21042] = "Insígnia da Guarda de Theramore",
 	[35251] = "Baú de Karnitol",
 	[112948] = "Cofre Trancado do Intrépido",
-	[113768] = "Ovo Colorido Brilhante",
 	[123329] = "Baú de Baelog",
 	[131474] = "Os Discos de Norgannon",
 	[131979] = "Baú de Lenhanegra Grande",
@@ -1661,8 +1660,6 @@ for key,value in pairs({
 	[225501] = "Oferta de Paz",
 	[225502] = "Oferta de Paz",
 	[225503] = "Oferta de Paz",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	[226831] = "Caixa do Astrólogo",
 	[226854] = "Presa de Elekk Blindado",
 	[226861] = "Pertences de Ronokk",
@@ -1724,7 +1721,6 @@ for key,value in pairs({
 	[230402] = "Moeda da Sorte",
 	[230424] = "Caixa-forte Coberta de Neve",
 	[230425] = "Osso Roído",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	[230611] = "Saco de Tesouro Desbotado",
 	[230643] = "Ninho de Terogarra",
 	[230664] = "A Lâmina de Cristal de Torvath",
@@ -1795,7 +1791,6 @@ for key,value in pairs({
 	[233206] = "Carga Abandonada",
 	[233218] = "Kit do Aventureiro",
 	[233241] = "Cogumelo da Caverna Brilhante",
-	--TODO: [233263] = GetSpellInfo(154253),		-- Blessing of the Wolf
 	[233391] = "Ordens de Armamento",
 	[233452] = "Monte de Terra",
 	[233455] = "Recipiente de Pedra Antigo",
@@ -1943,8 +1938,6 @@ for key,value in pairs({
 	[239803] = "Baú do Tesouro",
 	[239828] = "Gume da Realidade",
 	[239901] = "Ovo de Rasga-caos",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "Safira Estranha",
 	[240289] = "Machado Desgastado",
 	[240317] = "Tomo das Sombras de Iskar",
@@ -2477,7 +2470,6 @@ for key,value in pairs({
 	[282457] = "Totem de Guarda Espinhoso",
 	[282478] = "Caixote Vazio",
 	[282498] = "Flauta do Deserto",
-	[282628] = "Pilha de Areia",
 	[282666] = "Urna de Agussu",
 	[284426] = "Máquina de Mineração Enterrada",
 	[284448] = "Baú Escondido do Erudito",

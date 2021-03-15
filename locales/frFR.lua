@@ -1222,7 +1222,6 @@ for key,value in pairs({
 	[21042] = "Ecusson de la garde de Theramore",
 	[35251] = "Coffre de Karnitol",
 	[112948] = "Coffre verrouillé de l'Intrépide",
-	[113768] = "Œuf vivement coloré",
 	[123329] = "Coffre de Baelog",
 	[131474] = "Les disques de Norgannon",
 	[131979] = "Grand coffre de sombrebois",
@@ -1665,8 +1664,6 @@ for key,value in pairs({
 	[225501] = "Offrande pacifique",
 	[225502] = "Offrande pacifique",
 	[225503] = "Offrande pacifique",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	[226831] = "Boîte d’astrologue",
 	[226854] = "Défense d’elekk cuirassé",
 	[226861] = "Affaires de Ronokk",
@@ -1728,7 +1725,6 @@ for key,value in pairs({
 	[230402] = "Pièce porte-bonheur",
 	[230424] = "Coffre renforcé couvert de neige",
 	[230425] = "Os rongé",
-	--TODO:[230544] = GetSpellInfo(155334),							-- Touched By Ice
 	[230611] = "Sac de butin de blafard",
 	[230643] = "Nid de terogriffe",
 	[230664] = "La lame de cristal de Torvath",
@@ -1799,7 +1795,6 @@ for key,value in pairs({
 	[233206] = "Chargement abandonné",
 	[233218] = "Sac à dos de l’aventurier",
 	[233241] = "Champignon luminescent de la caverne",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	[233391] = "Ordres d’armement",
 	[233452] = "Un tas de terre",
 	[233455] = "Vieux caveau en pierre",
@@ -1947,8 +1942,6 @@ for key,value in pairs({
 	[239803] = "Coffre au trésor",
 	[239828] = "Frontière du réel",
 	[239901] = "Œuf de serre du Vide",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "Saphir étrange",
 	[240289] = "Hache abîmée",
 	[240317] = "Tome des ombres d’Iskar",
@@ -2481,7 +2474,6 @@ for key,value in pairs({
 	[282457] = "Totem roncegarde",
 	[282478] = "Caisse vide",
 	[282498] = "Flûte du désert",
-	[282628] = "Tas de sable",
 	[282666] = "Urne d’Agussu",
 	[284426] = "Engin d’extraction enfoui",
 	[284448] = "Coffre d’érudit caché",

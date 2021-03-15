@@ -1222,7 +1222,6 @@ for key,value in pairs({
 	[21042] = "Distintivo della Guardia di Theramore",
 	[35251] = "Cassa di Karnitol",
 	[112948] = "Forziere Chiuso dell'Intrepida",
-	[113768] = "Uovo Decorato",
 	[123329] = "Cassa di Baelog",
 	[131474] = "Dischi di Norgannon",
 	[131979] = "Grossa Cassa di Legnoscuro",
@@ -1665,8 +1664,6 @@ for key,value in pairs({
 	[225501] = "Offerte di Pace",
 	[225502] = "Offerte di Pace",
 	[225503] = "Offerte di Pace",
-	--TODO: [226468] = GetSpellInfo(155344),						-- Buffeting Galefury
-	--TODO: [226469] = GetSpellInfo(154259),						-- Spirit of the Wolf
 	[226831] = "Scatola dell'Astrologo",
 	[226854] = "Zanna di Elekk Corazzata",
 	[226861] = "Effetti Personali di Ronokk",
@@ -1728,7 +1725,6 @@ for key,value in pairs({
 	[230402] = "Moneta Fortunata",
 	[230424] = "Forziere Coperto di Neve",
 	[230425] = "Osso Spolpato",
-	--TODO: [230544] = GetSpellInfo(155334),						-- Touched By Ice
 	[230611] = "Sacco del Bottino dei Pallidi",
 	[230643] = "Nido di Grinfiafurente",
 	[230664] = "Lama di Cristallo di Torvath",
@@ -1799,7 +1795,6 @@ for key,value in pairs({
 	[233206] = "Merce Abbandonata",
 	[233218] = "Zaino dell'Avventuriero",
 	[233241] = "Fungo di Caverna Luminoso",
-	--TODO: [233263] = GetSpellInfo(154253),						-- Blessing of the Wolf
 	[233391] = "Ordini sugli Armamenti",
 	[233452] = "Mucchio di Terra",
 	[233455] = "Contenitore di Pietra Vecchio",
@@ -1947,8 +1942,6 @@ for key,value in pairs({
 	[239803] = "Cassa del Tesoro",
 	[239828] = "Confini della Realtà",
 	--TODO: [239901] = "Voidtalon Egg",
-	--TODO: [239925] = GetSpellInfo(155346),						-- Ogrish Fortitude
-	--TODO: [239926] = GetSpellInfo(155315),						-- Touched By Fire
 	[240003] = "Strano Zaffiro",
 	[240289] = "Ascia Logora",
 	[240317] = "Tomo delle Ombre di Iskar",
@@ -2481,7 +2474,6 @@ for key,value in pairs({
 	[282457] = "Totem della Guardia dei Rovi",
 	[282478] = "Cassa Vuota",
 	[282498] = "Flauto del Deserto",
-	[282628] = "Cumulo di Sabbia",
 	[282666] = "Urna di Agussu",
 	[284426] = "Macchina da Estrazione Sepolta",
 	[284448] = "Cassa Nascosta dello Studioso",
