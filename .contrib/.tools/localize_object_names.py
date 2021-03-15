@@ -9,13 +9,12 @@ def get_localized_obj_name(obj_id, lan):
   URL = f'https://{lan}.wowhead.com/object={obj_id}'
   page = requests.get(URL)
   if 'notFound' in page.url:
-    print(f"Can't find {obj_id} on wowhead!")
+    print(f"Can't find {obj_id} on Wowhead!")
     return ''
   soup = BeautifulSoup(page.content, 'html.parser')
-  main_contents = soup.find(id="main-contents")
-  heading = main_contents.find('h1', class_='heading-size-1')
+  heading = soup.find('h1', class_='heading-size-1')
   if heading is None:
-    print(f"Can't find heading-size-1 for {obj_id} on wowhead!")
+    print(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
     return ''
   return heading.text
 
@@ -48,7 +47,7 @@ def get_localized_names(todo_dict, lang_code):
   for obj_line_ind, obj_id in todo_dict.items():
     localized_obj_name = get_localized_obj_name(obj_id, lang_code)
 
-    # not localized names look like [en_obj_name] on wowhead
+    # not localized names look like [en_obj_name] on Wowhead
     if localized_obj_name.startswith('['):
       print(f"No localization for {obj_id}: {localized_obj_name}")
       continue
