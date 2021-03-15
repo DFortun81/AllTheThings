@@ -7,6 +7,20 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
 			n(-38,  {	-- Profession
+				prof(ENCHANTING, {
+					q(39884, { -- No longer worty
+						["provider"] = {"n", 98156}, -- Nalamya
+						["sourceQuests"] = {39883}, -- Cloaked In Tradition
+					}),
+					q(39889, { -- Led Astray
+						["provider"] = {"n", 98156}, -- Nalamya
+						["sourceQuests"] = {39883}, -- Cloaked In Tradition
+					}),
+					q(39882, { -- Darkheart Thicket: The Glamour Has Faded
+						["provider"] = {"n", 98156}, -- Nalamya
+						["sourceQuests"] = {39884, 39889}, -- No longer worthy and Led Astray.
+					}),
+				}),
 				prof(ALCHEMY, {
 					q(39338, {	-- Return the Filter
 						["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
