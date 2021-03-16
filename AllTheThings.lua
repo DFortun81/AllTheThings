@@ -1074,7 +1074,7 @@ local function VerifySourceID(item)
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
 
-		local linkInfoSourceID = app.GetSourceID(item.link);
+		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
 			return;
@@ -4215,6 +4215,14 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				-- print("sourceID",sourceID)
+				if sourceID then
+					_ = SearchForField("s", sourceID);
+					-- print("direct s",_ and #_)
+					-- if _ then return _; end
+					return _;
+				end
 
 				-- Search for the item ID.
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
