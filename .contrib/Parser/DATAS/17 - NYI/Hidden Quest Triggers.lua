@@ -3770,6 +3770,8 @@ _.HiddenQuestTriggers =
 		q(59619),	-- when using "RSVP: Stonehead" — first time only
 		q(59394),	-- when using "RSVP: Alexandros Morgraine" — every time
 		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
+		q(59391),	-- when using "RSVP: The Countess" — every time
+		q(59392),	-- when using "RSVP: The Countess" — first time only
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(59626),	-- when using 'Guest List Page' (181538)
