@@ -3565,7 +3565,6 @@ _.HiddenQuestTriggers =
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
-		q(59628),	-- triggered when leaving Ember Court
 		q(59630),	-- triggered when leaving Ember Court
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
@@ -3654,17 +3653,21 @@ _.HiddenQuestTriggers =
 		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59632),	-- triggered when leaving Ember Court scenario
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
+		q(59628),	-- Guest Selected for Ember Court: Mikanikos
+		q(59629),	-- Guest Selected for Ember Court: The Countess
+		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
 		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
+		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
 		q(61889),	-- revoking invitations (3rd in a row, perhaps tracker for the 3rd free revoke per week from Staff: Ambassasdors items)
+		q(61890),	-- revoking invitation (4th free revoke in the week?)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
