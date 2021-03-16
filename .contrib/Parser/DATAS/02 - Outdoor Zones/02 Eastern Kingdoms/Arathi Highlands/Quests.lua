@@ -13,7 +13,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26033,	-- Trol'kalar
 					["g"] = {
-						i(59194),	-- Sandals of Satisfaction
+						i(59194),	-- Sandals of SatisfactionO 
 						i(59195),	-- Bracers of Sensations
 						i(59196),	-- Alina's Gloves
 						i(59197),	-- Lordaeron-Made Breastplate
@@ -158,7 +158,6 @@ _.Zones =
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
 				}),
 				q(26117, {	-- For Southshore
 					["provider"] = { "n", 2712 },	-- Quae
