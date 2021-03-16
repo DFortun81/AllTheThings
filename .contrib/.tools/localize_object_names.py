@@ -19,18 +19,14 @@ def get_localized_obj_name(obj_id, lan):
   return heading.text
 
 def get_todo_lines(lines):
-  first_obj_line = 0
-  last_obj_line = 0
   todo_dict = {}
   for ind, line in enumerate(lines):
     if line == "local a = L.OBJECT_ID_NAMES;\n":
-      first_obj_line = ind + 2
-      print(f"Found beginning at line {first_obj_line}!")
+      print(f"Found beginning at line {ind + 2}!")
       while True:
         line = lines[ind]
         if line == "})\n":
-          last_obj_line = ind -1
-          print(f"Found ending at line {last_obj_line}!")
+          print(f"Found ending at line {ind -1}!")
           break
         if "--TODO: " in line:
           obj_id = re.search("\d+", line).group()
