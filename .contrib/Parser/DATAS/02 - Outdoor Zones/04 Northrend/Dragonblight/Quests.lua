@@ -19,13 +19,6 @@ _.Zones =
 					["provider"] = { "n", 27350 },	-- Agent Skully
 					["sourceQuest"] = 12260,	-- The Perfect Dissemblance
 				}),
-				q(41627, {	-- A Forgotten Enemy (Priest)
-					["lvl"] = 98,
-					["coord"] = { 56.7, 69.1, 115 },
-					["model"] = 192568,
-					["classes"] = { PRIEST },
-					["provider"] = { "o", 248398 },	-- Ethereal Communication Device
-				}),
 				q(12067, {	-- A Letter for Home (A)
 					["crs"] = { 26762 },	-- Captain Emmy Malin
 					["coord"] = { 26.3, 64.9, 115 },

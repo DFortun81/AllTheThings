@@ -1212,7 +1212,6 @@ _.Zones =
 				}),
 				q(40614),	-- A Feast Fit for Odyn
 				q(40078),	-- A Heavy Burden
-				q(41162),	-- And Into the Fel Fire
 				q(45482),	-- Arcane: Fate of the Tideskorn
 				q(46006),	-- Arkuthaz
 				q(47051),	-- Assassination: Fate of the Tideskorn
@@ -1228,11 +1227,8 @@ _.Zones =
 				q(42412),	-- Champion: Huntsman Blake
 				q(41788),	-- Coercing a Confession
 				q(40540),	-- Come at Me, Brul
-				q(41157),	-- Corrupted Studies
-				q(41166),	-- Dark Secrets
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(47767),	-- Death Metal Knight
-				q(41165),	-- Deciphering Demonology
 				q(39125),	-- Demon Destroyer
 				q(47049),	-- Demonology: Fate of the Tideskorn
 				q(40110),	-- Disrupt the Inkbinders

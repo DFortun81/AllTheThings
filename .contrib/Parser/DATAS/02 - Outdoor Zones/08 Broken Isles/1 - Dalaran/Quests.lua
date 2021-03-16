@@ -200,11 +200,6 @@ _.Zones =
 					["lvl"] = 101,
 					["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 				}),
-				q(41626, {	-- A New Threat
-					["sourceQuests"] = { 41625 },	-- The Light's Wrath
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105081 },	-- Archmage Kalec
-				}),
 				q(40715, {	-- A Pact of Necessity
 					["sourceQuests"] = { 40714 },	-- The Call to War
 					["classes"] = { DEATHKNIGHT },
@@ -1404,18 +1399,10 @@ _.Zones =
 						i(139739),	-- Chestguard of the Uncrowned
 					},
 				}),
-				q(40938, {	-- The Light and the Void
-					["sourceQuests"] = { 40710 },	-- Blade in Twilight
-					["classes"] = { PRIEST },	-- Priest
-					["coord"] = { 46.6, 20.9, 627 },
-					["provider"] = { "n", 101313 },	-- Prophet Velen
-				}),
 				q(41625, {	-- The Light's Wrath
+					["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
 					["classes"] = { PRIEST },
-					["providers"] = {
-						{ "n", 101314 },	-- Alonsus Faol
-						{ "n", 110564 },	-- Alonsus Faol
-					},
+					["provider"] = { "n", 110564 },	-- Alonsus Faol
 				}),
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,

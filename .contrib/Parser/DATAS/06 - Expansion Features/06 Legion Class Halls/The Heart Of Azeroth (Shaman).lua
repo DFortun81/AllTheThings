@@ -347,10 +347,10 @@ _.ExpansionFeatures =
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(42184, {	-- Mission: Elemental Diplomacy
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(42200, {	-- Mission: Investigating Deepholm
 						["classes"] = { SHAMAN },
@@ -487,10 +487,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41740, {	-- Tech It Up A Notch
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41741 },	-- Troops in the Field
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(44206, {	-- The Ascended
 						["classes"] = { SHAMAN },

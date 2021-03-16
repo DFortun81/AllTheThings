@@ -273,6 +273,7 @@ _.Zones =
 			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
 				["lvl"] = 80,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29391, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
@@ -305,6 +306,7 @@ _.Zones =
 			}),
 			q(28559, {	-- Hero's Call: Bloodmyst Isle
 				["isBreadcrumb"] = true,
+				["description"] = "Obtained from the Adventure Guide while in Cataclysm Chromie Time.",
 				["lvl"] = 10,
 			}),
 			q(28709, {	-- Hero's Call: Borean Tundra!
@@ -392,8 +394,7 @@ _.Zones =
 			}),
 			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 				["isBreadcrumb"] = true,
-				["lvl"] = 80,
-				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 29386 },
 			}),
 			q(39197, {	-- Hero's Call: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
@@ -557,7 +558,7 @@ _.Zones =
 			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,
-				["lvl"] = 90,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29156, {	-- The Troll Incursion
 				["isBreadcrumb"] = true,

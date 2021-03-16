@@ -104,6 +104,12 @@ _.ExpansionFeatures =
 						["coord"] = { 55.2, 37.0, 717 },
 						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
+					q(39179, {	-- Bloodstone Bandit
+						["sourceQuests"] = { 41759 },	-- An Unlikely Ally
+						["classes"] = { WARLOCK },
+						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
@@ -139,6 +145,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(618),	-- Zinnin Smythe
 						},
+					}),
+					q(40218, {	-- Debt Repaid
+						["sourceQuests"] = { 39142 },	-- Testing a Theory
+						["classes"] = { WARLOCK },
+						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(40604, {	-- Disturbing the Past
 						["sourceQuest"] = 40588,	-- Following the Curse
@@ -206,6 +218,12 @@ _.ExpansionFeatures =
 					q(46131, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(41769, {	-- Mad Ernie the Alchemist
+						["sourceQuests"] = { 41768 },	-- Soul Beacon
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.0, 36.2, 717 },
+						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
+					}),
 					q(40823, {	-- Rebuilding the Council
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["classes"] = { WARLOCK },
@@ -254,6 +272,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 65.6, 47.2, 717 },
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
+					}),
+					q(41768, {	-- Soul Beacon
+						["sourceQuests"] = { 42100 },	-- Empowering the Soul
+						["classes"] = { WARLOCK },
+						["coord"] = { 55.3, 37.1, 717 },
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
@@ -371,12 +395,10 @@ _.ExpansionFeatures =
 					q(45794),	-- Informing the Council
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
-					q(41769),	-- Mad Ernie the Alchemist
 					q(42102),	-- One Who's Worthy
 					q(40821),	-- Power Overwhelming
 					q(42517),	-- Ritual of Doom
 					q(43895),	-- Sealing Fate: Gold
-					q(41768),	-- Soul Beacon
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
 					q(46242),	-- The Dreadlord's Calling

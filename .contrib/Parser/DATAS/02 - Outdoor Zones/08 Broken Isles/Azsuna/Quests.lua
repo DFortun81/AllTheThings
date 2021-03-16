@@ -811,21 +811,7 @@ _.Zones =
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
 		--[[ TODO: These quests will be organized soon™
-				q(41173),	-- A Beacon of Hope
-				q(46205),	-- A Conduit No More
 				q(43514),	-- A Vainglorious Past
-				q(38953),	-- Advanced Needlework
-				q(41162),	-- And Into the Fel Fire
-				q(46199),	-- Battle for Azsuna
-				q(47193),	-- Battle for Azsuna
-				q(43193),	-- Calamitous Intent
-				q(41157),	-- Corrupted Studies
-				q(41166),	-- Dark Secrets
-				q(41169),	-- Darkheart Thicket: Through the Fog
-				q(41165),	-- Deciphering Demonology
-				q(40058),	-- Defense Symbology
-				q(41172),	-- Echoes of My Ancestors
-				q(41178),	-- Explosive Results
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
 				q(41167),	-- Fel Fragments
 				q(40527),	-- Finishing Touches

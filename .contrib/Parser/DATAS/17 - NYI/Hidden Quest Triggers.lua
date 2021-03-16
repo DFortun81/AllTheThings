@@ -1436,7 +1436,9 @@ _.HiddenQuestTriggers =
 		q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 
-		q(40708),	-- Priest Order Hall - chosing Holy for first priest artifact weapon
+		q(40708),	-- Priest Order Hall - Holy chosen first
+		q(40709),	-- Priest Order Hall - Discipline chosen first
+		q(43941), 	-- Priest Order Hall - Discipline chosen second
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
@@ -1511,7 +1513,11 @@ _.HiddenQuestTriggers =
 		q(44389),	-- Warlock Order Hall - Affliction chosen third
 		q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
 		q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
-		
+		q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
+		q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
+		q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
+		q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
+		q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
