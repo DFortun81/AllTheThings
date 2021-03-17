@@ -1864,6 +1864,7 @@ _.ExpansionFeatures =
 						["coord"] = { 60.2, 78.2, 1533 },	-- Bastion
 						["g"] = {
 							i(180762),	-- Phalynx of Humility (MOUNT!)
+							i(184296),	-- Purity's Edge Greatblade
 						},
 					}),
 				}),
