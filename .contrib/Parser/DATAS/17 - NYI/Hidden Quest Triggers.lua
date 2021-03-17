@@ -3469,12 +3469,14 @@ _.HiddenQuestTriggers =
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57598),	-- Triggered after recruiting Gas Bag
 		q(57859),	-- Triggered after recruiting Guillotine
+		q(57610),	-- Triggered after recruiting Iron Phillip
 		q(57578),	-- Triggered after recruiting Marz
+		q(57575),	-- Triggered after recruiting Naxx
+		q(57603),	-- Triggered after recruiting Neena
 		q(57606),	-- Triggered after recruiting Roseboil
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
-		q(57603),	-- Triggered after recruiting Neena
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time

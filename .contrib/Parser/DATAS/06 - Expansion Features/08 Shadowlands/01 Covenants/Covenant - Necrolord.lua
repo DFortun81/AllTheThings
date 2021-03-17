@@ -1763,8 +1763,27 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-928, {	-- Tier 4: Forged Friends
-							-- n(QUESTS, {
-							-- }),
+							n(QUESTS, {
+								q(57634, {	-- Bring Your Own
+									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
+									["provider"] = { "n", 159199 },    -- Iron Phillip
+									["coord"] = { 55.5, 68.4, 1536 },	-- Maldraxxus
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(62276, {	-- Drink to the Dead
+									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
+									["provider"] = { "n", 158298 },    -- Naxx
+									["coord"] = { 54.8, 68.7, 1536 },	-- Maldraxxus
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(61638, {	-- Iron Solution
+									["provider"] = { "n", 167150 },	-- Rathan
+									["coord"] = { 55.1, 68.8, 1536 },
+									["description"] = "Becomes available after you research Abomination Factory Tier 4 in your sanctum.",
+								}),
+							}),
 							-- n(VENDORS, {
 							-- }),
 						}),
