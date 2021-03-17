@@ -3955,11 +3955,11 @@ fieldConverters = {
 	end,
 	["itemID"] = function(group, value, raw)
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
-		if raw then
-			CacheField(group, "itemID", value);
-		else
+		if not raw then
 			CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
 		end
+		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
+		CacheField(group, "itemID", value);
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
