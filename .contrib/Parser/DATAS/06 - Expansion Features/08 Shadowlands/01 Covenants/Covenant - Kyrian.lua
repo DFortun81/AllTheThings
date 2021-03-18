@@ -434,12 +434,16 @@ _.ExpansionFeatures =
 					}),
 					q(58937, {	-- Evil Grubbies
 						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
-						["provider"] = { "n", 162392 },	-- Willowblossom
+						["providers"] = {
+							{ "n", 162392 },	-- Willowblossom
+							{ "n", 163060 },	-- Willowblossom
+						},
 						["coord"] = { 50.5, 68.9, 1565 },
 						["g"] = {
 							i(179941),	-- Selfless Forgelite's Boots
 							i(178155),	-- Selfless Watcher's Warboots
-							-- TODO: leather and plate boot rewards
+							i(174291),	-- Selfless Collector's Warboots
+							i(177052),	-- Selfless Bearer's Feet
 						},
 					}),
 					q(58559, {	-- Eyes of the Master
@@ -504,7 +508,10 @@ _.ExpansionFeatures =
 					}),
 					q(58938, {	-- Gorm Ruin Everything
 						["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
-						["provider"] = { "n", 162392 },	-- Willowblossom
+						["providers"] = {
+							{ "n", 162392 },	-- Willowblossom
+							{ "n", 163060 },	-- Willowblossom
+						},
 						["coord"] = { 50.5, 68.9, 1565 },
 					}),
 					q(58560, {	-- Gothic Fashion

@@ -929,6 +929,13 @@ _.Zones =
 					["coord"] = { 52.6, 88.2, 85 },
 					["races"] = { BLOODELF },
 				}),
+				q(60361, {	-- Battle for Azeroth: Mission Statement (Shadowlands version)
+					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
+					["altQuests"] = { 51443 },	-- Mission Statement
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, 85 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(3504,  {	-- Betrayed
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 					["coord"] = { 75.0, 34.0, 85 },
@@ -984,10 +991,16 @@ _.Zones =
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 					["sourceQuests"] = { 60123 },	-- Burning Crusade: To Outland!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
+				}),
+				q(60123, {	-- Burning Crusade: To Outland!
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29157 },	-- The Zandalari Menace
@@ -1016,6 +1029,12 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(32468, {	-- Crystal Clarity
 					["sourceQuests"] = { 32471 },	-- Light Camera Action
@@ -1355,6 +1374,7 @@ _.Zones =
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
@@ -1440,16 +1460,16 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				q(60361, {	-- Mission Statement (Shadowlands version)
-					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
-					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, 85 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(26803, {	-- Missing Reports
 					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = { GOBLIN },
+				}),
+				q(60126, {	-- Mists of Pandaria: To Pandaria!
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
@@ -1482,11 +1502,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43062 },	-- Bort
 					["coord"] = { 51.2, 56.2, 85 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26642, {	-- Preserving the Barrens
@@ -1944,16 +1959,6 @@ _.Zones =
 					["coord"] = { 32.6, 68.2, 85 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(60123, {	-- Burning Crusade: To Outland!
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60126, {	-- To Pandaria!
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(28816, {	-- To the Depths
 					["sourceQuests"] = { 28805 },	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
@@ -2222,6 +2227,7 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 				}),

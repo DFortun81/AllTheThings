@@ -302,39 +302,45 @@ _.Zones =
 			m(30, {	-- New Tinkertown (below)
 				n(QUESTS, {
 					q(27635, {	-- Decontamination
+						["sourceQuests"] = { 28169 },	-- Withdraw to the Loading Room!
 						["provider"] = { "n", 46274 },	-- Gaffer Coilspring
 						["coord"] = { 53.0, 82.3, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
-						["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
 					}),
 					q(27670, {	-- Pinned Down
 						["provider"] = { "n", 45966 },	-- Nevin Twistwrench
 						["coord"] = { 34.1, 32.2, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
 					}),
 					q(28167, {	-- Report to Carvo Blastbolt
+						["sourceQuests"] = { 27670 },	-- Pinned Down
 						["provider"] = { "n", 45966 },	-- Nevin Twistwrench
 						["coord"] = { 34.0, 32.2, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
-						["sourceQuest"] = 27670,	-- Pinned Down
 					}),
 					q(27671, {	-- See to the Survivors
+						["sourceQuests"] = { 28167 },	-- Report to Carvo Blastbolt
 						["provider"] = { "n", 47250 },	-- Carvo Blastbolt
 						["coord"] = { 50.9, 31.9, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
-						["sourceQuest"] = 28167,	-- Report to Carvo Blastbolt
 					}),
 					q(27674, {	-- To the Surface
+						["sourceQuests"] = { 27635 },	-- Decontamination
 						["provider"] = { "n", 46255 },	-- Technician Braggle
 						["coord"] = { 66.3, 81.6, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
-						["sourceQuest"] = 27635,	-- Decontamination
 					}),
 					q(28169, {	-- Withdraw to the Loading Room!
+						["sourceQuests"] = { 27671 },	-- See to the Survivors
 						["provider"] = { "n", 47250 },	-- Carvo Blastbolt
 						["coord"] = { 50.9, 31.9, 30 },
+						["_drop"] = { "races" },	-- drop Mechagnome
 						["races"] = { GNOME },
-						["sourceQuest"] = 27671,	-- See to the Survivors
 					}),
 				}),
 			}),

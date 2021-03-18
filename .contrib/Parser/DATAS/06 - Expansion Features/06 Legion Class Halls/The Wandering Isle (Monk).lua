@@ -12,8 +12,8 @@ _.ExpansionFeatures =
 			["g"] = {
 				gt(254, {	-- Brewhouse
 					["description"] = "Click this once per day.",
-					["coord"] = { 55, 56.5, 709 },
 					["questID"] = 43974,
+					["coord"] = { 55, 56.5, 709 },
 					["g"] = {
 						i(139561, {	-- Legend of the Monkey King
 							artifact(959),	-- Brewmater Monk Hidden Appearance

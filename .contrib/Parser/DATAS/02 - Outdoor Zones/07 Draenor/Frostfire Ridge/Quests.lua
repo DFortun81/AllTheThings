@@ -95,15 +95,29 @@ _.Zones =
 						34093,	-- Getting the Points
 					},
 				}),
-				q(35103, {	-- Avenge and Reclaim
+				q(35106, {	-- Avenge and Reclaim
+					["sourceQuests"] = { 35104 },	-- The Apprentice
+					["requireSkill"] = ALCHEMY,
+					["provider"] = { "n", 81210 },	-- Ang'kra
 					["coord"] = { 37.8, 47.4, 525 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 81210 },	-- Ang'kra
-					["sourceQuest"] = 35104,	-- The Apprentice
-					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(109558, {	-- A Treatise on the Alchemy of Draenor
+						i(109558, {		-- A Treatise on the Alchemy of Draenor
+							["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 							["collectible"] = false,
+							["spellID"] = 0,
+							["g"] = {
+								recipe(156587),	-- Alchemical Catalyst
+								recipe(156585),	-- Crescent Oil
+								recipe(175865),	-- Draenic Invisibility Potion
+								recipe(175867),	-- Draenic Living Action Potion
+								recipe(156582),	-- Draenic Mana Potion
+								recipe(175853),	-- Draenic Swiftness Potion
+								recipe(175866),	-- Draenic Water Breathing Elixir
+								recipe(175869),	-- Draenic Water Walking Elixir
+								recipe(175868),	-- Pure Rage Potion
+								recipe(175880),	-- Secrets of Draenor Alchemy
+							},
 						}),
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
@@ -808,12 +822,12 @@ _.Zones =
 						34093,	-- Getting the Points
 					},
 				}),
-				q(35103, {	-- The Apprentice
+				q(35104, {	-- The Apprentice
+					["sourceQuests"] = { 35103 },	-- The Alchemist
+					["requireSkill"] = ALCHEMY,
+					["provider"] = { "n", 81209 },	-- Kadar
 					["coord"] = { 38.0, 47.4, 525 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 81209 },	-- Kadar
-					["sourceQuest"] = 35103,	-- The Alchemist
-					["requireSkill"] = ALCHEMY,
 				}),
 				q(34124, {	-- The Battle of Thunder Pass
 					["provider"] = { "n", 76487 },	-- Lokra

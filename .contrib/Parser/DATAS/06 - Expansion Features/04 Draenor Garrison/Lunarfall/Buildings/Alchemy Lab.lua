@@ -18,6 +18,21 @@ _.ExpansionFeatures =
 								},
 								["isDaily"] = true,
 							}),
+							q(35342, {	-- The Mysterious Flask
+								["requireSkill"] = ALCHEMY,
+								["provider"] = { "i", 113103 },	-- Mysterious Flask
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(35343, {	-- The Young Alchemist
+								["sourceQuests"] = { 35342 },	-- The Mysterious Flask
+								["requireSkill"] = ALCHEMY,
+								["provider"] = { "n", 82466 },	-- Aenir
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36641, {	-- Your First Alchemy Work Order
+								["provider"] = { "n", 77363 },	-- Mary Kearie
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 					},
 				}),

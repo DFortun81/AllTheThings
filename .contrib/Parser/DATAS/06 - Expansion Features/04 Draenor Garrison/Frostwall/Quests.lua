@@ -926,16 +926,16 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(35103, {	-- The Alchemist
+						["sourceQuests"] = { 35058 },	-- The Mysterious Flask
+						["requireSkill"] = ALCHEMY,
+						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
 						["coord"] = { 45.4, 50.4, 590 },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
-						["sourceQuest"] = 35058,	-- The Mysterious Flask
-						["requireSkill"] = ALCHEMY,
 					}),
 					q(35058, {	-- The Mysterious Flask
-						["races"] = HORDE_ONLY,
-						["provider"] = { "i", 112566 },	-- Mysterious Flask
 						["requireSkill"] = ALCHEMY,
+						["provider"] = { "i", 112566 },	-- Mysterious Flask
+						["races"] = HORDE_ONLY,
 					}),
 					q(36314, {	-- The Intricate Pendant
 						["races"] = HORDE_ONLY,

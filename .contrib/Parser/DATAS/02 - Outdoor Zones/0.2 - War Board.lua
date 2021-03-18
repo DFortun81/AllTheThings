@@ -394,7 +394,9 @@ _.Zones =
 			}),
 			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 				["isBreadcrumb"] = true,
-				["altQuests"] = { 29386 },
+			}),
+			q(29386, {	-- Hero's Call: Mount Hyjal!
+				["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
 			}),
 			q(39197, {	-- Hero's Call: Nagrand! (Outland)
 				["isBreadcrumb"] = true,

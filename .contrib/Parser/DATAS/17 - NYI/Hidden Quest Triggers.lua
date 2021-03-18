@@ -365,6 +365,12 @@ _.HiddenQuestTriggers =
 		q(35534),	-- The Steamvault heroic completion
 		q(35559),	-- The Underbog normal completion
 		q(35560),	-- The Underbog heroic completion
+		q(24887, {	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
+		}),
+		q(24895, {	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
+		}),
 
 		-------------------
 		--     WOTLK     --
@@ -1043,6 +1049,10 @@ _.HiddenQuestTriggers =
 		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
 		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
 		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1870,6 +1880,7 @@ _.HiddenQuestTriggers =
 		q(48649),	-- Maiden of Vigilance
 		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
 		q(48650),	-- Fallen Avatar
+		q(48082),	-- Kil'jaeden (LFR)
 		q(48083),	-- Kil'jaeden
 		q(48085),	-- Kil'jaeden (Mythic)
 		q(48651),	-- Kil'jaeden (Mythic)
@@ -3620,6 +3631,7 @@ _.HiddenQuestTriggers =
 		q(62127),	-- picked up when entering the Ember Court for the week — for "Ride on the Wild Side" - the description for this is "Ride Gorm" so i guess... you can ride a gorm somehow.  k
 		q(62120),	-- picked up when entering the Ember Court for the week — for "Stolen Mementos"
 		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
+		q(62136),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing "Clumpdump" event
 		q(62111),	-- picked up when entering the Ember Court for the week — for "Drezgruda"
 		q(62134),	-- picked up when entering the Ember Court for the week — for "Lower Your Standards"
 		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"

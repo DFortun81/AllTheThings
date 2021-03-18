@@ -11,6 +11,10 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(QUESTS, {
+							q(36646, {	-- Your First Engineering Work Order
+								["provider"] = { "n", 77365 },	-- Zaren Hoffle
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(VENDORS, {
 							n(88607, {	-- Engineering Follower <Engineering Entrepreneur>
