@@ -16,14 +16,19 @@ _.PVP =
 					ach(9104, {	-- Bounty Hunter (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							crit(1),	-- Pandaren Hide
+							crit(2),	-- Blood Elf Ear
 							crit(3),	-- Tauren Hoof
 							crit(4),	-- Orc Tooth
 							crit(5),	-- Troll Feet
+							crit(6),	-- Forsaken Brains
+							crit(7),	-- Goblin Nose
 						},
 					}),
 					ach(9103, {	-- Bounty Hunter (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							crit(1),	-- Pandaren Hide
 							crit(2),	-- Worgen Snout
 							crit(3),	-- Severed Night Elf Head
 							crit(4),	-- Dwarf Spine
