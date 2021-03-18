@@ -7,8 +7,6 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {
-				--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
-				--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
 					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
@@ -1418,11 +1416,15 @@ _.Zones =
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(163863),	-- Bartered Vrykul Cowl
+									i(163864),	-- Bartered Vrykul Facemask
+									i(163862),	-- Bartered Vrykul Hood
+									i(163865),	-- Bartered Vrykul Warhelm
+								},
+						}),
 					--	azewrong
 						i(180028),	-- Bartered Vrykul Cowl
 						i(180029),	-- Bartered Vrykul Facemask

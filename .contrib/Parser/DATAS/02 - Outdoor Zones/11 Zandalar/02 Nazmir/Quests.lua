@@ -1332,11 +1332,15 @@ _.Zones =
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(163863),	-- Bartered Vrykul Cowl
+									i(163864),	-- Bartered Vrykul Facemask
+									i(163862),	-- Bartered Vrykul Hood
+									i(163865),	-- Bartered Vrykul Warhelm
+								},
+						}),
 					--	azewrong
 						i(180028),	-- Bartered Vrykul Cowl
 						i(180029),	-- Bartered Vrykul Facemask
