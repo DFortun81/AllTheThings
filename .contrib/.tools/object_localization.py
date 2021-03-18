@@ -171,7 +171,7 @@ def sync_objects(objects, filename, lan):
     if localized_ind == len(localized_objects): # new objects in tail
       new_tail = True
       break
-    localized_obj_id, _ = localized_objects[localized_ind]
+    localized_obj_id, _, _ = localized_objects[localized_ind]
     if obj_id < localized_obj_id: # new object
       new_object = get_new_object_line(obj_id, obj_name, lan)
       localized_objects.insert(localized_ind, (obj_id, obj_name, new_object))
@@ -180,7 +180,7 @@ def sync_objects(objects, filename, lan):
       while obj_id > localized_obj_id:
         print(f'Deleted object {localized_obj_id}')
         del localized_objects[localized_ind]
-        localized_obj_id, _ = localized_objects[localized_ind]
+        localized_obj_id, _, _ = localized_objects[localized_ind]
       localized_ind += 1
     else:
       localized_ind += 1
