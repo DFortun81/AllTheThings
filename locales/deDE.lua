@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "Kristallkatzenstatuette",
 	[332704] = "Verderbte Truhe",
 	[336415] = "Weggeworfene Schriftrolle",
+	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
 	[339211] = "|cFFFFFFFFSchritt 2:|r Leerer Teller",
 	[339283] = "Truhe des vergessenen Adligen",
 	[339770] = "Herrenlose Schatztruhe",

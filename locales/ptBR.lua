@@ -1205,8 +1205,10 @@ for key,value in pairs({
 	[2688] = "Pedra-chave",
 	[2701] = "Fragmentos Iridescentes",
 	[2702] = "Pedra da União Interna",
+	--TODO: [2703] = "Trollbane's Tomb",	-- Trollbane's Tomb
 	[2713] = "Quadro de Procurados",
 	[2908] = "Caixote de Suprimentos Lacrado",
+	--TODO: [3238] = "Chen's Empty Keg",	-- Chen's Empty Keg
 	[3972] = "PROCURA-SE",
 	[4141] = "Painel de Controle",
 	[6751] = "Planta Frutífera Estranha",
@@ -1216,6 +1218,7 @@ for key,value in pairs({
 	--TODO: [20805] = "Rizzle's Unguarded Plans",
 	[20985] = "Terra Solta",
 	[20992] = "Escudo Negro",
+	--TODO: [21015] = "Hoofprints",	-- Hoofprints
 	[21042] = "Insígnia da Guarda de Theramore",
 	[35251] = "Baú de Karnitol",
 	[112948] = "Cofre Trancado do Intrépido",
@@ -1230,6 +1233,7 @@ for key,value in pairs({
 	[142195] = "Mapa de Batalha de Patábua",
 	[142343] = "Pedestal de Uldum",
 	[142487] = "A Brastematic 5200",
+	[142702] = "Garrafa de Peçonha",	-- Venom Bottle
 	[144063] = "Monolito de Equinex",
 	[148502] = "|cFFFFFFFFStep 1:|r Página 9",
 	[148504] = "Lápide Evidente",
@@ -2698,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "Estatueta de Gato Cristalina",
 	[332704] = "Baú Corrompido",
 	[336415] = "Pergaminho Descartado",
+	[337237] = "Cofre Perdido",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "Baú de Nobre Esquecido",
 	[339770] = "Baú do Tesouro Abandonado",

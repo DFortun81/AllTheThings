@@ -2724,6 +2724,7 @@ for key, value in pairs({
 	[332576] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	--TODO: [332704] = "Corrupted Chest",
 	[336415] = "丢弃的卷轴",
+	--TODO: [337237] = "Lost Vault",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "被遗忘的贵族宝箱",
 	--TODO: [339770] = "Abandoned Treasure Chest",

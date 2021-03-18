@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "Figurilla de gato cristalina",
 	[332704] = "Cofre corrupto",
 	[336415] = "Pergamino desechado",
+	[337237] = "Cámara perdida",	-- Lost Vault
 	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",					-- TODO: translate "step"
 	[339283] = "Cofre de noble olvidado",
 	[339770] = "Arqueta abandonada",

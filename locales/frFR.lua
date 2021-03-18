@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "Figurine de chat en cristal",
 	[332704] = "Coffre corrompu",
 	[336415] = "Parchemin abandonné",
+	[337237] = "Caveau perdu",	-- Lost Vault
 	[339211] = "|cFFFFFFFFStep 2:|r Assiette vide",					-- TODO: translate "step"
 	[339283] = "Coffre de noble oublié",
 	[339770] = "Coffre au trésor abandonné",
