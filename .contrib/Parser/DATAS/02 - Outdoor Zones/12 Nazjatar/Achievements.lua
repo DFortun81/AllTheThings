@@ -269,7 +269,7 @@ _.Zones =
 						},
 						["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
 					}),
-					o(332577, {	-- Crystalline Cat Figurine
+					o(332568, {	-- Crystalline Cat Figurine
 						["questID"] = 56985,
 						["coord"] = { 59.1, 30.4, 1355 },
 						["description"] = "In a coral outcropping at the back of a small cave filled with water elementals.",
