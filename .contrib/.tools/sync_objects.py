@@ -4,7 +4,7 @@
 Object synchronization when adding/removing objects in enUS.
 """
 
-from object_localization import get_objects, sync_objects
+from object_localization import get_objects_info, sync_objects
 
 objects = get_objects_info('../../locales/enUS.lua')[0]
 
