@@ -32,6 +32,7 @@ _.Zones =
 						i(180783, {	-- Design: Crown of the Righteous
 							["requireSkill"] = JEWELCRAFTING,
 						}),
+						i(183756),	-- Floating Circlet
 					},
 				}),
 				o(353234, {	-- Gilded Chest

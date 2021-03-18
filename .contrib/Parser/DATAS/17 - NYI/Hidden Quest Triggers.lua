@@ -3460,9 +3460,11 @@ _.HiddenQuestTriggers =
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
+		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
+		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
@@ -3472,7 +3474,7 @@ _.HiddenQuestTriggers =
 		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
 		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
 		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
-		q(62570),	-- triggered after crafting Collector Kash's Pack
+		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"

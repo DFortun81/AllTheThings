@@ -87,11 +87,16 @@ _.ExpansionFeatures =
 							}),
 							crit(5, {	-- Flower Crown
 								["cost"] = {
-									{ "i", 183755, 1 },	-- 1 Aredenweald Wreath
+									{ "i", 183755, 1 },	-- 1 Ardenweald Wreath
 									{ "i", 170554, 5 },	-- 5 Vigil's Torch
 								},
 							}),
-							crit(6),	-- Halo of Purity
+							crit(6, {	-- Halo of Purity
+								["cost"] = {
+									{ "i", 183756, 1 },	-- 1 Floating Circlet
+									{ "i", 173110, 3 },	-- 3 Umbryl
+								},
+							}),
 							crit(7, {	-- Holiday Hat
 								["cost"] = {
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
@@ -142,8 +147,17 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(15),	-- Hitchhiker
-							crit(16),	-- Lovely Candle Display
+							crit(15, {	-- Hitchhiker
+								["cost"] = {
+									{ "i", 184225, 1 },	-- 1 Small Posable Skeleton
+									{ "i", 178061, 5 },	-- 5 Malleable Flesh
+								},
+							}),
+							crit(16, {	-- Lovely Candle Display
+								["cost"] = {
+									{ "i", 184037, 1 },	-- 1 Maldraxxus Candles
+								},
+							}),
 							crit(17, {	-- Shoulder Sprouts
 								["cost"] = {
 									{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
@@ -156,7 +170,12 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(19),	-- Trained Corpselice
+							crit(19, {	-- Trained Corpselice
+								["cost"] = {
+									{ "i", 184038, 1 },	-- 1 Trained Corpselice
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(20, {	-- Trustworthy Doll
 								["cost"] = {
 									{ "i", 181798, 1 },	-- 1 Stuffed Construct
@@ -189,7 +208,11 @@ _.ExpansionFeatures =
 									{ "i", 172934, 10 },	-- 10 Handful of Laestrite Bolts
 								},
 							}),
-							crit(25),	-- Plague Pack
+							crit(25, {	-- Plague Pack
+								["cost"] = {
+									{ "i", 183744, 5 },	-- 5 Superior Parts
+								},
+							}),
 							crit(26, {	-- Safe Fall Pack
 								["cost"] = {
 									{ "i", 183831,  1 },	-- 1 Safe Fall Kit
@@ -202,16 +225,40 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(28),	-- Vestigial Wings
-							crit(29),	-- Barrel O' Fish
-							crit(30),	-- Underpowered Gravity Pack
+							crit(28, {	-- Vestigial Wings
+								["cost"] = {
+									{ "i", 183744,  3 },	-- 3 Superior Parts
+									{ "i", 178061, 10 },	-- 10 Malleable Flesh
+									{ "i", 172054, 30 },	-- 30 Raw Seraphic Wing
+								},
+							}),
+							crit(29, {	-- Barrel O' Fish
+								["cost"] = {
+									{ "i", 173032, 5 },	-- 5 Lost Sole
+									{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
+									{ "i", 173034, 5 },	-- 5 Silvergill Pike
+									{ "i", 173035, 5 },	-- 5 Pocked Bonefish
+									{ "i", 173036, 5 },	-- 5 Spinefin Piranha
+								},
+							}),
+							crit(30, {	-- Underpowered Gravity Pack
+								["description"] = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
+								["cost"] = {
+									{ "i", 169610,  3 },	-- 3 S.P.A.R.E. Crate
+									{ "i", 166970, 10 },	-- 10 Energy Cell
+								},
+							}),
 							crit(31, {	-- Butterflies
 								["cost"] = {
 									{ "i", 183828, 1 },	-- 1 Friendly Bugs
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(32),	-- Spare Weapon
+							crit(32, {	-- Spare Weapon
+								["cost"] = {
+									{ "i", 183824, 1 },	-- 1 Cache of Spare Weapons
+								},
+							}),
 							crit(33, {	-- Faction Flag
 								["cost"] = {
 									{ "i", 183830,  1 },	-- 1 Do It Yourself Flag Kit
@@ -1301,14 +1348,14 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 178061, 5 },	-- Malleable Flesh
 										{ "i", 172092, 1 },	-- Pallid Bone
-										{ "c", 1813, 750 },	-- 750x Anima (not shown in-game)
+										{ "c", 1813, 750 },	-- 750 Reservoir Anima
 									},
 								}),
 								i(181282, {	-- Mu'dud (PET!)
 									["cost"] = {
 										{ "i", 178061, 10 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
-										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
+										{ "c", 1813, 1250 },	-- 1250 Reservoir Anima
 									},
 								}),
 								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
@@ -2012,6 +2059,9 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 1000 } },
 							}),
 							i(180277),	-- Battlefront Ration Key
+							i(184037, {	-- Maldraxxus Candles
+								["description"] = "These become available after you build rank 5 Abomination table.",
+							}),
 							i(178547),	-- Questionable Fried Poultry
 							i(178546),	-- Questionable Meat Product
 							i(178535),	-- Suspicious Slime Shot

@@ -4833,6 +4833,7 @@ app.L = {
 		[332577] = "Crystalline Cat Figurine",									-- Need to be confirmed
 		[332704] = "Corrupted Chest",
 		[336415] = "Discarded Scroll",
+		[337237] = "Lost Vault",
 		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 		[339283] = "Forgotten Noble's Chest",
 		[339770] = "Abandoned Treasure Chest",

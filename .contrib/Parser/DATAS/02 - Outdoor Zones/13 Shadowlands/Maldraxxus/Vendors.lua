@@ -83,6 +83,12 @@ _.Zones =
 						}),
 					},
 				}),
+				n(169964, {	-- One-Eyed Joby <Unusual Wares>
+					["coord"] = { 53.2, 41.2, 1536 },
+					["g"] = {
+						i(181798),	-- Stuffed Construct
+					},
+				}),
 			}),
 		}),
 	}),
