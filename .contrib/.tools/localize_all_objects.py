@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+"""
+This will attempt to localize all objects marked with TODO in every locale.
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -21,12 +25,12 @@ def get_localized_obj_name(obj_id, lan):
 def get_todo_lines(lines):
   todo_dict = {}
   for ind, line in enumerate(lines):
-    if line == "local a = L.OBJECT_ID_NAMES;\n":
+    if 'OBJECT_ID_NAMES' in line:
       print(f"Found beginning at line {ind + 2}!")
       while True:
         line = lines[ind]
-        if line == "})\n":
-          print(f"Found ending at line {ind -1}!")
+        if '}' in line:
+          print(f"Found ending at line {ind - 1}!")
           break
         if "--TODO: " in line:
           obj_id = re.search("\d+", line).group()
@@ -77,6 +81,8 @@ def localize_objects(filename, lang_code):
 localize_objects('../../locales/deDE.lua', 'de')
 
 localize_objects('../../locales/esES.lua', 'es')
+
+# TODO: copy esES results to esMX
 
 localize_objects('../../locales/frFR.lua', 'fr')
 
