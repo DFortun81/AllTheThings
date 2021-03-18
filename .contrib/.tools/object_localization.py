@@ -20,6 +20,10 @@ def get_localized_obj_name(obj_id, lan):
   if heading is None:
     print(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
     return ''
+  # not localized names look like [en_obj_name] on Wowhead
+  if heading.text.startswith('['):
+    print(f"No localization for {obj_id}: {heading.text}")
+    return ''
   return heading.text
 
 def get_todo_lines(lines):
@@ -47,11 +51,7 @@ def get_localized_names(todo_dict, lang_code):
   for obj_line_ind, obj_id in todo_dict.items():
     localized_obj_name = get_localized_obj_name(obj_id, lang_code)
 
-    # not localized names look like [en_obj_name] on Wowhead
-    if localized_obj_name.startswith('['):
-      print(f"No localization for {obj_id}: {localized_obj_name}")
-      continue
-    if localized_obj_name == '': # no obj_id found or no heading found
+    if localized_obj_name == '': # no obj_id found, no heading found or no localization
       continue
 
     localized_dict[obj_line_ind] = localized_obj_name
@@ -167,7 +167,7 @@ def sync_objects(objects, filename, lan):
 
   new_tail = False
   localized_ind = 0
-  for ind, (obj_id, obj_name, _) in enumerate(localized_objects):
+  for ind, (obj_id, obj_name, _) in enumerate(objects):
     if localized_ind == len(localized_objects): # new objects in tail
       new_tail = True
       break
