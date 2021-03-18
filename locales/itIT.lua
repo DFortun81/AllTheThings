@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "Statuetta Felina Cristallina",
 	[332704] = "Cassa Corrotta",
 	[336415] = "Pergamena Scartata",
+	[337237] = "Segrete Perdute",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "Cassa dei Nobili Dimenticata",
 	[339770] = "Cassa del Tesoro Abbandonata",

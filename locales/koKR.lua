@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	[332576] = "수정 호랑이 조각상",
 	--TODO: [332704] = "Corrupted Chest",
 	[336415] = "버려진 두루마리",
+	[337237] = "잃어버린 금고",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "잊힌 귀족의 상자",
 	[339770] = "버려진 보물 상자",

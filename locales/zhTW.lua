@@ -2702,6 +2702,7 @@ for key,value in pairs({
 	--TODO: [332576] = "Crystalline Cat Figurine",
 	--TODO: [332704] = "Corrupted Chest",
 	--TODO: [336415] = "Discarded Scroll",
+	--TODO: [337237] = "Lost Vault",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	--TODO: [339283] = "Forgotten Noble's Chest",
 	--TODO: [339770] = "Abandoned Treasure Chest",
