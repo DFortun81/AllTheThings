@@ -1447,7 +1447,7 @@ _.Zones =
 						864, 	-- voldun
 						895,	-- tirisgarde
 						942,	-- stormsong valley
-					--	862,	-- zuldazar
+						862,	-- zuldazar
 						896,	-- drustvar
 					},
 				}),
