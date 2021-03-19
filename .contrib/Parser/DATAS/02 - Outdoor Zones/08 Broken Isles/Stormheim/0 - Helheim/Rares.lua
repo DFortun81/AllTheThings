@@ -24,7 +24,6 @@ _.Zones =
 						["coord"] = { 32.9, 43.2, 649 },
 						["g"] = {
 							i(144437, {	-- Lost Legend of the Valarjar
-								["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior in any spec.",
 								["classes"] = { WARRIOR },
 								["g"] = {
 									q(46229, {	-- Valarjar Lore Unlock 1
