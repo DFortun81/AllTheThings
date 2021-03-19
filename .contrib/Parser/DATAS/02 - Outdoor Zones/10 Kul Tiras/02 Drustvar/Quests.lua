@@ -1119,25 +1119,6 @@ _.Zones =
 						i(160262),	-- Relic of the Makers
 					},
 				}),
-				q(53476, {	-- The Great Sea Scrolls
-					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
-					["g"] = {
-						n(-862, {	-- Hearth of Azeroth
-							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-								["g"] = {
-									i(163863),	-- Bartered Vrykul Cowl
-									i(163864),	-- Bartered Vrykul Facemask
-									i(163862),	-- Bartered Vrykul Hood
-									i(163865),	-- Bartered Vrykul Warhelm
-								},
-						}),					--	azewrong
-						i(180028),	-- Bartered Vrykul Cowl
-						i(180029),	-- Bartered Vrykul Facemask
-						i(180027),	-- Bartered Vrykul Hood
-						i(180030),	-- Bartered Vrykul Warhelm
-					},
-				}),
 				o(277459, {	-- Pig Effigy
 					q(47949, {	-- That's Not My Fetish
 						["coord"] = { 63.3, 30.1, 896 },

@@ -1442,6 +1442,14 @@ _.Zones =
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
+					["maps"] = { 
+						863, 	-- nazmir
+						864, 	-- voldun
+						895,	-- tirisgarde
+						942,	-- stormsong valley
+					--	862,	-- zuldazar
+						896,	-- drustvar
+					},
 				}),
 				q(50297, {	-- The Head of Her Enemy
 					["sourceQuests"] = { 49870 },	-- Size Matters
