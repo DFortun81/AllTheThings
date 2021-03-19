@@ -82,125 +82,439 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32301),	-- Design: Timeless Shadowsong Amethyst
 				}),
 				n(23381, {	-- Tydormu
-					-- Azgalor Tokens
-					i(31092, {	-- Gloves of the Forgotten Conqueror
-						i(31060),	-- Gloves of Absolution
-						i(31050),	-- Gloves of the Malefic
-						i(31061),	-- Handguards of Absolution
-						i(30982),	-- Lightbringer Gauntlets
-						i(30983),	-- Lightbringer Gloves
-						i(30985),	-- Lightbringer Handguards
+					-- Druid
+					i(31042, {	-- Thunderheart Chestguard
+						["cost"] = {
+							{ "i", 31090, 1 },	-- Chestguard of the Forgotten Vanquisher
+						},
 					}),
-					i(31094, {	-- Gloves of the Forgotten Protector
-						i(31001),	-- Gronnstalker's Gloves
-						i(30969),	-- Onslaught Gauntlets
-						i(30970),	-- Onslaught Handguards
-						i(31008),	-- Skyshatter Gauntlets
-						i(31007),	-- Skyshatter Gloves
-						i(31011),	-- Skyshatter Grips
+					i(31039, {	-- Thunderheart Cover
+						["cost"] = {
+							{ "i", 31096, 1 },	-- Helm of the Forgotten Vanquisher
+						},
 					}),
-					i(31093, {	-- Gloves of the Forgotten Vanquisher
-						i(31055),	-- Gloves of the Tempest
-						i(31026),	-- Slayer's Handguards
-						i(31034),	-- Thunderheart Gauntlets
-						i(31032),	-- Thunderheart Gloves
-						i(31035),	-- Thunderheart Handguards
+					i(31034, {	-- Thunderheart Gauntlets
+						["cost"] = {
+							{ "i", 31093, 1 },	-- Gloves of the Forgotten Vanquisher
+						},
 					}),
-					-- Arch Tokens
-					i(31097, {	-- Helm of the Forgotten Conqueror
-						i(31063),	-- Cowl of Absolution
-						i(31064),	-- Hood of Absolution
-						i(31051),	-- Hood of the Malefic
-						i(30987),	-- Lightbringer Faceguard
-						i(30988),	-- Lightbringer Greathelm
-						i(30989),	-- Lightbringer War-Helm
+					i(31032, {	-- Thunderheart Gloves
+						["cost"] = {
+							{ "i", 31093, 1 },	-- Gloves of the Forgotten Vanquisher
+						},
 					}),
-					i(31095, {	-- Helm of the Forgotten Protector
-						i(31003),	-- Gronnstalker's Helmet
-						i(30972),	-- Onslaught Battle-Helm
-						i(30974),	-- Onslaught Greathelm
-						i(31015),	-- Skyshatter Cover
-						i(31014),	-- Skyshatter Headguard
-						i(31012),	-- Skyshatter Helmet
+					i(31035, {	-- Thunderheart Handguards
+						["cost"] = {
+							{ "i", 31093, 1 },	-- Gloves of the Forgotten Vanquisher
+						},
 					}),
-					i(31096, {	-- Helm of the Forgotten Vanquisher
-						i(31056),	-- Cowl of the Tempest
-						i(31027),	-- Slayer's Helm
-						i(31039),	-- Thunderheart Cover
-						i(31040),	-- Thunderheart Headguard
-						i(31037),	-- Thunderheart Helmet
+					i(31040, {	-- Thunderheart Headguard
+						["cost"] = {
+							{ "i", 31096, 1 },	-- Helm of the Forgotten Vanquisher
+						},
 					}),
-					-- Mother Shahraz Tokens
-					i(31101, {	-- Pauldrons of the Forgotten Conqueror
-						i(30996),	-- Lightbringer Pauldrons
-						i(30997),	-- Lightbringer Shoulderbraces
-						i(30998),	-- Lightbringer Shoulderguards
-						i(31069),	-- Mantle of Absolution
-						i(31054),	-- Mantle of the Malefic
-						i(31070),	-- Shoulderpads of Absolution
+					i(31037, {	-- Thunderheart Helmet
+						["cost"] = {
+							{ "i", 31096, 1 },	-- Helm of the Forgotten Vanquisher
+						},
 					}),
-					i(31103, {	-- Pauldrons of the Forgotten Protector
-						i(31006),	-- Gronnstalker's Spaulders
-						i(30979),	-- Onslaught Shoulderblades
-						i(30980),	-- Onslaught Shoulderguards
-						i(31023),	-- Skyshatter Mantle
-						i(31024),	-- Skyshatter Pauldrons
-						i(31022),	-- Skyshatter Shoulderpads
+					i(31044, {	-- Thunderheart Leggings
+						["cost"] = {
+							{ "i", 31099, 1 },	-- Leggings of the Forgotten Vanquisher
+						},
 					}),
-					i(31102, {	-- Pauldrons of the Forgotten Vanquisher
-						i(31059),	-- Mantle of the Tempest
-						i(31030),	-- Slayer's Shoulderpads
-						i(31048),	-- Thunderheart Pauldrons
-						i(31049),	-- Thunderheart Shoulderpads
-						i(31047),	-- Thunderheart Spaulders
+					i(31045, {	-- Thunderheart Legguards
+						["cost"] = {
+							{ "i", 31099, 1 },	-- Leggings of the Forgotten Vanquisher
+						},
 					}),
-					-- The Illidari Council Tokens
-					i(31098, {	-- Leggings of the Forgotten Conqueror
-						i(31068),	-- Breeches of Absolution
-						i(31067),	-- Leggings of Absolution
-						i(31053),	-- Leggings of the Malefic
-						i(30993),	-- Lightbringer Greaves
-						i(30994),	-- Lightbringer Leggings
-						i(30995),	-- Lightbringer Legguards
+					i(31046, {	-- Thunderheart Pants
+						["cost"] = {
+							{ "i", 31099, 1 },	-- Leggings of the Forgotten Vanquisher
+						},
 					}),
-					i(31100, {	-- Leggings of the Forgotten Protector
-						i(31005),	-- Gronnstalker's Leggings
-						i(30977),	-- Onslaught Greaves
-						i(30978),	-- Onslaught Legguards
-						i(31019),	-- Skyshatter Leggings
-						i(31020),	-- Skyshatter Legguards
-						i(31021),	-- Skyshatter Pants
+					i(31048, {	-- Thunderheart Pauldrons
+						["cost"] = {
+							{ "i", 31102, 1 },	-- Pauldrons of the Forgotten Vanquisher
+						},
 					}),
-					i(31099, {	-- Leggings of the Forgotten Vanquisher
-						i(31058),	-- Leggings of the Tempest
-						i(31029),	-- Slayer's Legguards
-						i(31044),	-- Thunderheart Leggings
-						i(31045),	-- Thunderheart Legguards
-						i(31046),	-- Thunderheart Pants
+					i(31049, {	-- Thunderheart Shoulderpads
+						["cost"] = {
+							{ "i", 31102, 1 },	-- Pauldrons of the Forgotten Vanquisher
+						},
 					}),
-					-- Illidan Stormrage Tokens
-					i(31089, {	-- Chestguard of the Forgotten Conqueror
-						i(30990),	-- Lightbringer Breastplate
-						i(30991),	-- Lightbringer Chestguard
-						i(30992),	-- Lightbringer Chestpiece
-						i(31052),	-- Robe of the Malefic
-						i(31065),	-- Shroud of Absolution
-						i(31066),	-- Vestments of Absolution
+					i(31047, {	-- Thunderheart Spaulders
+						["cost"] = {
+							{ "i", 31102, 1 },	-- Pauldrons of the Forgotten Vanquisher
+						},
 					}),
-					i(31091, {	-- Chestguard of the Forgotten Protector
-						i(31004),	-- Gronnstalker's Chestguard
-						i(30975),	-- Onslaught Breastplate
-						i(30976),	-- Onslaught Chestguard
-						i(31017),	-- Skyshatter Breastplate
-						i(31016),	-- Skyshatter Chestguard
-						i(31018),	-- Skyshatter Tunic
+					i(31041, {	-- Thunderheart Tunic
+						["cost"] = {
+							{ "i", 31090, 1 },	-- Chestguard of the Forgotten Vanquisher
+						},
 					}),
-					i(31090, {	-- Chestguard of the Forgotten Vanquisher
-						i(31057),	-- Robes of the Tempest
-						i(31028),	-- Slayer's Chestguard
-						i(31042),	-- Thunderheart Chestguard
-						i(31041),	-- Thunderheart Tunic
-						i(31043),	-- Thunderheart Vest
+					i(31043, {	-- Thunderheart Vest
+						["cost"] = {
+							{ "i", 31090, 1 },	-- Chestguard of the Forgotten Vanquisher
+						},
+					}),
+					-- Hunter
+					i(31004, {	-- Gronnstalker's Chestguard
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					i(31001, {	-- Gronnstalker's Gloves
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(31003, {	-- Gronnstalker's Helmet
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(31005, {	-- Gronnstalker's Leggings
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(31006, {	-- Gronnstalker's Spaulders
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
+					}),
+					-- Mage
+					i(31056, {	-- Cowl of the Tempest
+						["cost"] = {
+							{ "i", 31096, 1 },	-- Helm of the Forgotten Vanquisher
+						},
+					}),
+					i(31055, {	-- Gloves of the Tempest
+						["cost"] = {
+							{ "i", 31093, 1 },	-- Gloves of the Forgotten Vanquisher
+						},
+					}),
+					i(31058, {	-- Leggings of the Tempest
+						["cost"] = {
+							{ "i", 31099, 1 },	-- Leggings of the Forgotten Vanquisher
+						},
+					}),
+					i(31059, {	-- Mantle of the Tempest
+						["cost"] = {
+							{ "i", 31102, 1 },	-- Pauldrons of the Forgotten Vanquisher
+						},
+					}),
+					i(31057, {	-- Robes of the Tempest
+						["cost"] = {
+							{ "i", 31090, 1 },	-- Chestguard of the Forgotten Vanquisher
+						},
+					}),
+					-- Paladin
+					i(30990, {	-- Lightbringer Breastplate
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					i(30991, {	-- Lightbringer Chestguard
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					i(30992, {	-- Lightbringer Chestpiece
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					i(30987, {	-- Lightbringer Faceguard
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					i(30982, {	-- Lightbringer Gauntlets
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(30983, {	-- Lightbringer Gloves
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(30988, {	-- Lightbringer Greathelm
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					i(30993, {	-- Lightbringer Greaves
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(30985, {	-- Lightbringer Handguards
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(30994, {	-- Lightbringer Leggings
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(30995, {	-- Lightbringer Legguards
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(30996, {	-- Lightbringer Pauldrons
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(30997, {	-- Lightbringer Shoulderbraces
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(30998, {	-- Lightbringer Shoulderguards
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(30989, {	-- Lightbringer War-Helm
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					-- Priest
+					i(31068, {	-- Breeches of Absolution
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(31063, {	-- Cowl of Absolution
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					i(31060, {	-- Gloves of Absolution
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(31061, {	-- Handguards of Absolution
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(31064, {	-- Hood of Absolution
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					i(31067, {	-- Leggings of Absolution
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(31069, {	-- Mantle of Absolution
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(31070, {	-- Shoulderpads of Absolution
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(31065, {	-- Shroud of Absolution
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					i(31066, {	-- Vestments of Absolution
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					-- Rogue
+					i(31028, {	-- Slayer's Chestguard
+						["cost"] = {
+							{ "i", 31090, 1 },	-- Chestguard of the Forgotten Vanquisher
+						},
+					}),
+					i(31026, {	-- Slayer's Handguards
+						["cost"] = {
+							{ "i", 31093, 1 },	-- Gloves of the Forgotten Vanquisher
+						},
+					}),
+					i(31027, {	-- Slayer's Helm
+						["cost"] = {
+							{ "i", 31096, 1 },	-- Helm of the Forgotten Vanquisher
+						},
+					}),
+					i(31029, {	-- Slayer's Legguards
+						["cost"] = {
+							{ "i", 31099, 1 },	-- Leggings of the Forgotten Vanquisher
+						},
+					}),
+					i(31030, {	-- Slayer's Shoulderpads
+						["cost"] = {
+							{ "i", 31102, 1 },	-- Pauldrons of the Forgotten Vanquisher
+						},
+					}),
+					-- Shaman
+					i(31017, {	-- Skyshatter Breastplate
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					i(31018, {	-- Skyshatter Chestguard
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					i(31015, {	-- Skyshatter Cover
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(31008, {	-- Skyshatter Gauntlets
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(31007, {	-- Skyshatter Gloves
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(31011, {	-- Skyshatter Grips
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(31014, {	-- Skyshatter Headguard
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(31012, {	-- Skyshatter Helmet
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(31019, {	-- Skyshatter Leggings
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(31020, {	-- Skyshatter Legguards
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(31023, {	-- Skyshatter Mantle
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
+					}),
+					i(31021, {	-- Skyshatter Pants
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(31024, {	-- Skyshatter Pauldrons
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
+					}),
+					i(31022, {	-- Skyshatter Shoulderpads
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
+					}),
+					i(31019, {	-- Skyshatter Tunic
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					-- Warlock
+					i(31050, {	-- Gloves of the Malefic
+						["cost"] = {
+							{ "i", 31092, 1 },	-- Gloves of the Forgotten Conqueror
+						},
+					}),
+					i(31051, {	-- Hood of the Malefic
+						["cost"] = {
+							{ "i", 31097, 1 },	-- Helm of the Forgotten Conqueror
+						},
+					}),
+					i(31053, {	-- Leggings of the Malefic
+						["cost"] = {
+							{ "i", 31098, 1 },	-- Leggings of the Forgotten Conqueror
+						},
+					}),
+					i(31054, {	-- Mantle of the Malefic
+						["cost"] = {
+							{ "i", 31101, 1 },	-- Pauldrons of the Forgotten Conqueror
+						},
+					}),
+					i(31052, {	-- Robe of the Malefic
+						["cost"] = {
+							{ "i", 31089, 1 },	-- Chestguard of the Forgotten Conqueror
+						},
+					}),
+					-- Warrior
+					i(30972, {	-- Onslaught Battle-Helm
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(30975, {	-- Onslaught Breastplate
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					i(30976, {	-- Onslaught Chestguard
+						["cost"] = {
+							{ "i", 31091, 1 },	-- Chestguard of the Forgotten Protector
+						},
+					}),
+					i(30969, {	-- Onslaught Gauntlets
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(30974, {	-- Onslaught Greathelm
+						["cost"] = {
+							{ "i", 31095, 1 },	-- Helm of the Forgotten Protector
+						},
+					}),
+					i(30977, {	-- Onslaught Greaves
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(30970, {	-- Onslaught Handguards
+						["cost"] = {
+							{ "i", 31094, 1 },	-- Gloves of the Forgotten Protector
+						},
+					}),
+					i(30978, {	-- Onslaught Legguards
+						["cost"] = {
+							{ "i", 31100, 1 },	-- Leggings of the Forgotten Protector
+						},
+					}),
+					i(30979, {	-- Onslaught Shoulderblades
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
+					}),
+					i(30980, {	-- Onslaught Shoulderguards
+						["cost"] = {
+							{ "i", 31103, 1 },	-- Pauldrons of the Forgotten Protector
+						},
 					}),
 				})
 			}),
