@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			m(74, {	-- Caverns of Time Entrance
+			m(75, {	-- Caverns of Time 
 				n(VENDORS, {
 					n(21643,  {	-- Alurmi <Keepers of Time Quartermaster>
 						["coord"] = { 40.0, 77.2, 74 },
