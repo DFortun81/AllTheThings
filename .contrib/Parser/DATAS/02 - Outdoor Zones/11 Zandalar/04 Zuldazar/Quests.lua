@@ -1426,6 +1426,7 @@ _.Zones =
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+					["_drop"] = { "g" },
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
 							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
