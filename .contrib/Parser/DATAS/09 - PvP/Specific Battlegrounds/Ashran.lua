@@ -9,20 +9,26 @@ _.PVP =
 			["achievementID"] = 9102,	-- Ashran Victory
 			["description"] = "|cff66ccffAshran is a 40v40 epic battleground found in eastern Draenor.|r",
 			["maps"] = { 588 },	-- Ashran
+			["lvl"] = { 25 },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(9102),	-- Ashran Victory
 					ach(9104, {	-- Bounty Hunter (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							crit(1),	-- Pandaren Hide
+							crit(2),	-- Blood Elf Ear
 							crit(3),	-- Tauren Hoof
 							crit(4),	-- Orc Tooth
 							crit(5),	-- Troll Feet
+							crit(6),	-- Forsaken Brains
+							crit(7),	-- Goblin Nose
 						},
 					}),
 					ach(9103, {	-- Bounty Hunter (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							crit(1),	-- Pandaren Hide
 							crit(2),	-- Worgen Snout
 							crit(3),	-- Severed Night Elf Head
 							crit(4),	-- Dwarf Spine
@@ -389,9 +395,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -407,6 +415,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -422,6 +431,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -434,9 +444,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -449,9 +461,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -467,6 +481,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -479,9 +494,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -498,13 +515,16 @@ _.PVP =
 								["achievementID"] = 9103,	-- Bounty Hunter (H)
 								["races"] = HORDE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -520,6 +540,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -532,9 +553,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -547,9 +570,11 @@ _.PVP =
 								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
 							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -565,6 +590,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -580,6 +606,7 @@ _.PVP =
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -1794,9 +1821,14 @@ _.PVP =
 				i(128213),	-- Dented Ashmaul Strongbox A S2
 				i(128214),	-- Dented Ashmaul Strongbox H S2
 				i(128215, {	-- Dented Ashmaul Strongbox H S3
-					i(134705),	-- Surging Chain Leggings
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(134705),	-- Surging Chain Leggings
+					},
 				}),
-				i(128216),	-- Dented Ashmaul Strongbox A S3
+				i(128216, {	-- Dented Ashmaul Strongbox A S3
+					["u"] = REMOVED_FROM_GAME,
+				}),
 			},
 		}),
 	}),

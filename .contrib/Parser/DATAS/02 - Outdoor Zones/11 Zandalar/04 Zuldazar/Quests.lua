@@ -1426,17 +1426,30 @@ _.Zones =
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+					["_drop"] = { "g" },
 					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(163863),	-- Bartered Vrykul Cowl
+									i(163864),	-- Bartered Vrykul Facemask
+									i(163862),	-- Bartered Vrykul Hood
+									i(163865),	-- Bartered Vrykul Warhelm
+								},
+						}),
 					--	azewrong
 						i(180028),	-- Bartered Vrykul Cowl
 						i(180029),	-- Bartered Vrykul Facemask
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
+					},
+					["maps"] = { 
+						863, 	-- nazmir
+						864, 	-- voldun
+						895,	-- tirisgarde
+						942,	-- stormsong valley
+						862,	-- zuldazar
+						896,	-- drustvar
 					},
 				}),
 				q(50297, {	-- The Head of Her Enemy

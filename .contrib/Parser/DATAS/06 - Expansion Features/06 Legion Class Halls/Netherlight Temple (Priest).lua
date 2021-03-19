@@ -28,23 +28,10 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 						}),
-						q(40705, {	-- Priestly Matters
-							-- Quest is actually picked up in Dalaran.
-							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
-							["classes"] = { PRIEST },
-							["providers"] = {
-								{ "n", 101344 },	-- Hooded Priestess (Horde)
-								{ "n", 102333 },	-- Hooded Priestess (Alliance)
-							},
-						}),
-						q(40706, {	-- A Legend You Can Hold
-							["sourceQuests"] = { 40705 },	-- Priestly Matters
-							["provider"] = { "n", 101314 },	-- Alonsus Faol
-						}),
 						q(43935, {	-- A Second Legend
-							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+							["classes"] = { PRIEST },
 							["coord"] = { 51.1, 48.2, 702 },
-							["lvl"] = 102,
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 						}),
 						q(44407, {	-- The Third Legend
@@ -53,21 +40,6 @@ _.ExpansionFeatures =
 						}),
 						i(128868, {	-- Light's Wrath
 							["g"] = {
-								q(41625, {	-- The Light's Wrath
-									["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
-									["classes"] = { PRIEST },
-									["provider"] = { "n", 101314 },	-- Alonsus Faol
-								}),
-								q(41626, {	-- A New Threat
-									["sourceQuests"] = { 41625 } ,	-- The Light's Wrath
-									["provider"] = { "n", 101314 },	-- Alonsus Faol
-								}),
-								q(41627, {	-- A Forgotten Enemy
-									["sourceQuests"] = { 41626 } ,	-- A New Threat
-								}),
-								q(41628, {	-- Eyes of the Dragon
-									["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
-								}),
 								q(41629, {	-- Harnessing the Holy Fire
 									["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
 								}),
@@ -88,22 +60,32 @@ _.ExpansionFeatures =
 						i(128825, {	-- T'uure, Beacon of the Naaru
 							q(41957, {	-- The Vindicator's Plea
 								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+								["classes"] = { PRIEST },
+								["coord"] = { 78.9, 41.0, 18},
 								["provider"] = { "n", 101314 },	-- Alonsus Faol
 							}),
 							q(41966, {	-- House Call
 								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
+								["classes"] = { PRIEST },
+								["coord"] = { 37.7, 36.7, 627 },	-- Dalaran
 								["provider"] = { "n", 105602 },	-- Vindicator Boros
 							}),
 							q(41967, {	-- Out of the Darkness
 								["sourceQuests"] = { 41966 },	-- House Call
+								["classes"] = { PRIEST },
+								["coord"] = { 37.5, 35.5, 627 },	-- Dalaran
 								["provider"] = { "n", 105603 },	-- Defender Barrem
 							}),
 							q(41993, {	-- Salvation From On High
 								["sourceQuests"] = { 41967 },	-- Out of the Darkness
+								["classes"] = { PRIEST },
+								["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
 								["provider"] = { "n", 105684 },	-- Alora
 							}),
 							q(42074, {	-- Return of the Light
 								["sourceQuests"] = { 41993 },	-- Salvation From On High
+								["classes"] = { PRIEST },
+								["coord"] = { 33.5, 33.1, 646 },	-- Broken Shore
 								["provider"] = { "n", 106011 },	-- Jace  Darkweaver
 							}),
 						}),
@@ -237,11 +219,30 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
+					q(41627, {	-- A Forgotten Enemy
+						["sourceQuests"] = { 41626 },	-- A New Threat
+						["classes"] = { PRIEST },
+						["coord"] = { 56.7, 69.1, 115 },
+						["model"] = 192568,
+						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
+					}),
+					q(40706, {	-- A Legend You Can Hold
+						["sourceQuests"] = { 40705 },	-- Priestly Matters
+						["classes"] = { PRIEST },
+						["coord"] = { 78.9, 41.0, 18 },	-- Eastern Kingdom
+						["provider"] = { "n", 101314 },	-- Alonsus Faol
+					}),
+					q(41626, {	-- A New Threat
+						["sourceQuests"] = { 41625 },	-- The Light's Wrath
+						["classes"] = { PRIEST },
+						["coord"] = { 28.7, 49.9, 627 },	-- Dalaran
+						["provider"] = { "n", 105081 },	-- Archmage Kalec
+					}),
 					q(41019, {	-- Actions on Azeroth
+						["sourceQuests"] = { 40938 },	-- The Light and the Void
+						["classes"] = { PRIEST },
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
-						["classes"] = { PRIEST },
-						["sourceQuests"] = { 40938 },	-- The Light and the Void
 					}),
 					n(46028, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -267,6 +268,7 @@ _.ExpansionFeatures =
 					}),
 					q(43271, {	-- Champion: Calia Menethil
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["classes"] = { PRIEST },
 						["coord"] = { 51.6, 50.0, 702 },
 						["provider"] = { "n", 110596 },	-- Calia Menethil
 						["g"] = {
@@ -275,6 +277,7 @@ _.ExpansionFeatures =
 					}),
 					q(43272, {	-- Champion: High Priestess Ishanah
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["classes"] = { PRIEST },
 						["coord"] = { 57.4, 26.9, 702 },
 						["provider"] = { "n", 110598 },	-- High Priestess Ishanah
 						["g"] = {
@@ -311,6 +314,10 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 					}),
+					q(41628, {	-- Eyes of the Dragon
+						["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
+						["classes"] = { PRIEST },
+					}),
 					q(43390, {	-- Forgotten Shadows
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
@@ -343,6 +350,15 @@ _.ExpansionFeatures =
 							i(139757),	-- Miter of the High Priest
 						},
 					}),
+					q(40705, {	-- Priestly Matters
+						-- Quest is actually picked up in Dalaran.
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+						["classes"] = { PRIEST },
+						["providers"] = {
+							{ "n", 101344 },	-- Hooded Priestess (Horde)
+							{ "n", 102333 },	-- Hooded Priestess (Alliance)
+						},
+					}),
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
@@ -353,36 +369,31 @@ _.ExpansionFeatures =
 					q(43275, {	-- Recruiting the Troops
 						["sourceQuests"] = { 43273 },	-- Spread the Word
 						["classes"] = { PRIEST },
-						["coord"] = { 51.2, 48.3, 702 },
-						["lvl"] = 101,
+						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43371, {	-- Relieving the Front Lines
 						["sourceQuests"] = { 43277 },	-- Tech It Up A Notch
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
-						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43270, {	-- Rise, Champions
-						["sourceQuests"] = { 44100 },	-- Proper Introductions
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.2, 702 },
-						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.3, 702 },
-						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43277, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 43276 },	-- Troops in the Field
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
-						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43372, {	-- The Best and Brightest
@@ -391,6 +402,18 @@ _.ExpansionFeatures =
 						["coord"] = { 48.2, 48.2, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110557 },	-- Prophet Velen
+					}),
+					q(40938, {	-- The Light and the Void
+						["sourceQuests"] = { 40710 },	-- Blade in Twilight
+						["classes"] = { PRIEST },
+						["coord"] = { 46.6, 20.9, 627 },	-- Dalaran
+						["provider"] = { "n", 101313 },	-- Prophet Velen
+					}),
+					q(41625, {	-- The Light's Wrath
+						["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
+						["classes"] = { PRIEST },
+						["coord"] = { 51.5, 47.9, 702 },
+						["provider"] = { "n", 101314 },	-- Alonsus Faol
 					}),
 					q(45789, {	-- The Sunken Vault
 						["classes"] = { PRIEST },
@@ -402,8 +425,7 @@ _.ExpansionFeatures =
 					q(43276, {	-- Troops in the Field
 						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
 						["classes"] = { PRIEST },
-						["coord"] = { 51.2, 48.3, 702 },
-						["lvl"] = 101,
+						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(46940, {	-- Using Lost Knowledge

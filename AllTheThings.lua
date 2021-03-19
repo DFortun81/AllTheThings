@@ -1074,7 +1074,7 @@ local function VerifySourceID(item)
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
 
-		local linkInfoSourceID = app.GetSourceID(item.link);
+		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
 			return;
@@ -3955,11 +3955,11 @@ fieldConverters = {
 	end,
 	["itemID"] = function(group, value, raw)
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
-		if raw then
-			CacheField(group, "itemID", value);
-		else
+		if not raw then
 			CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
 		end
+		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
+		CacheField(group, "itemID", value);
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -4215,27 +4215,37 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				-- print("sourceID",sourceID)
+				if sourceID then
+					_ = SearchForField("s", sourceID);
+					-- print("direct s",_ and #_)
+					-- if _ then return _; end
+					return _;
+				end
 
 				-- Search for the item ID.
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				-- print("link-search",modItemID,itemID)
 				-- accuracy of finding the correct ATT entry:
+				-- TODO: since SourceID consolidates the accuracy of ItemID + ModID/BonusID, the search results will also need to 
+				-- pull in ItemID based search results which are NOT the same ItemID as the SourceID
 				-- ItemID + modID
 				-- ItemID
 				-- SourceID
 				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 				-- print("found",_ and #_)
 				-- if the specific item was not found for whatever reason (modID which changes stats but not appearance [M+, PvP, etc.])
-				if not _ then
-					local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
-					-- print("sourceID",sourceID)
-					if sourceID then
-						_ = SearchForField("s", sourceID);
-						-- print("direct s",_ and #_)
-						-- if _ then return _; end
-						-- return _;
-					end
-				end
+				-- if not _ then
+				-- 	local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				-- 	-- print("sourceID",sourceID)
+				-- 	if sourceID then
+				-- 		_ = SearchForField("s", sourceID);
+				-- 		-- print("direct s",_ and #_)
+				-- 		-- if _ then return _; end
+				-- 		-- return _;
+				-- 	end
+				-- end
 				return _;
 			end
 		end

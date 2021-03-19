@@ -52,6 +52,23 @@ _.Zones =
 						}),
 					}),
 				}),
+				prof(ENCHANTING, {
+					q(39884, {	-- No Longer Worthy
+						["provider"] = { "n", 98156 },	-- Nalamya
+						["sourceQuests"] = { 39883 },	-- Cloaked In Tradition
+					}),
+					q(39889, {	-- Led Astray
+						["provider"] = { "n", 98156 },	-- Nalamya
+						["sourceQuests"] = { 39883 },	-- Cloaked In Tradition
+					}),
+					q(39882, {	-- Darkheart Thicket: The Glamour Has Faded
+						["provider"] = { "n", 98156 },	-- Nalamya
+						["sourceQuests"] = {
+							39884,	-- No Longer Worthy
+							39889,	-- Led Astray
+						},
+					}),
+				}),
 				prof(FISHING, {
 					n(-10067, {	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

@@ -170,6 +170,12 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43928, -- Aggregates of Anguish
 					}),
+					q(46789, {	-- Further Advancement
+						["provider"] = { "n", 93568 },	-- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45103, -- We Ride!
+					}),
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
 					}),

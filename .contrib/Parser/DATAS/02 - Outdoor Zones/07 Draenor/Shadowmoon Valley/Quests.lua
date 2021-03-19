@@ -652,14 +652,28 @@ _.Zones =
 					},
 				}),
 				q(35345, {	-- Shocking Assistance
+					["sourceQuests"] = { 35344 },	-- The Missing Father
+					["requireSkill"] = ALCHEMY,
+					["provider"] = { "n", 82496 },	-- Telos
 					["coord"] = { 54.0, 45.6, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 82496 },	-- Telos
-					["sourceQuest"] = 35344,	-- The Missing Father
-					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(109558, {	-- A Treatise on the Alchemy of Draenor
+						i(109558, {		-- A Treatise on the Alchemy of Draenor
+							["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 							["collectible"] = false,
+							["spellID"] = 0,
+							["g"] = {
+								recipe(156587),	-- Alchemical Catalyst
+								recipe(156585),	-- Crescent Oil
+								recipe(175865),	-- Draenic Invisibility Potion
+								recipe(175867),	-- Draenic Living Action Potion
+								recipe(156582),	-- Draenic Mana Potion
+								recipe(175853),	-- Draenic Swiftness Potion
+								recipe(175866),	-- Draenic Water Breathing Elixir
+								recipe(175869),	-- Draenic Water Walking Elixir
+								recipe(175868),	-- Pure Rage Potion
+								recipe(175880),	-- Secrets of Draenor Alchemy
+							},
 						}),
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
@@ -836,11 +850,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35344, {	-- The Missing Father
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 35343 },	-- The Young Alchemist
+					["provider"] = { "n", 82497 },	-- Abatha
 					["coord"] = { 55.8, 41.2, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 82497 },	-- Abatha
-					["sourceQuest"] = 35343,	-- The Young Alchemist
-					["requireSkill"] = ALCHEMY,
 				}),
 				q(36241, {	-- The Power of Preservation
 					["sourceQuests"] = { 36240 },	-- Slow and Steady

@@ -666,12 +666,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
 					}),
-					q(62069, {	-- Restock: Sinstones
-						["provider"] = { "n", 165494 },	-- Hips <Entertainment>
-						["repeatable"] = true,
-						-- no rewards, ignore cost
-						["coord"] = { 30.6, 41.8, 1525 },	-- Sinfall Reaches
-					}),
 					q(58584, {	-- Right our Wrongs
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
 						["provider"] = { "n", 161526 },	-- General Draven
@@ -1806,6 +1800,15 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
+								q(62070, {	-- Restock: Fragrant Flowers
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["cost"] = {
+										{ "i", 170554, 1 },		-- 1x Vigil's Torch
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
 									["repeatable"] = true,	-- it shows up as a blue ?
@@ -2323,8 +2326,21 @@ _.ExpansionFeatures =
 										i(182114),	-- Assorted Parts and 'Things'
 									},
 								}),
+								q(60948, {	-- RSVP: The Countess
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
+									["provider"] = { "n", 171106 },	-- The Countess
+									["coord"] = { 58.0, 27.4, 1525 },	-- Revendreth
+									["g"] = {
+										i(176114),	-- RSVP: The Countess
+									},
+								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
+								q(61945, {	-- The Professionals
+									-- ["sourceQuests"] = {  },	-- TODO
+									["provider"] = { "n", 164966 },	-- Temel
+									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								}),
 							}),
 							-- Random, non-collectible items which go into your bags while in the Ember Court
 							i(180296),	-- Shrouded Necromancer Head

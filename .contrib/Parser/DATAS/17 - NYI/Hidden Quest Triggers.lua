@@ -365,6 +365,12 @@ _.HiddenQuestTriggers =
 		q(35534),	-- The Steamvault heroic completion
 		q(35559),	-- The Underbog normal completion
 		q(35560),	-- The Underbog heroic completion
+		q(24887, {	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
+		}),
+		q(24895, {	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
+		}),
 
 		-------------------
 		--     WOTLK     --
@@ -1043,6 +1049,10 @@ _.HiddenQuestTriggers =
 		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
 		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
 		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1282,6 +1292,7 @@ _.HiddenQuestTriggers =
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
+		q(47255), 	-- Triggers after completing "Mark of the Sentinax" (47139)
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1426,17 +1437,18 @@ _.HiddenQuestTriggers =
 		q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
 		q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
 
-		-- Paladin class campaign
-		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
-		q(40409),	-- Ashbringer Chosen (Retribution)
-		q(42495),	-- Ashbringer Chosen (Retribution)
-		q(40410),	-- Silver Hand Chosen (Holy)
-		q(42497),	-- Silver Hand Chosen (Holy)
-		q(40411),	-- Truthguard Chosen (Protection)
-		q(42496),	-- Truthguard Chosen (Protection)
-		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
+		q(38713),	-- Paladin Order Hall - The Crusade Calls. Triggered with An Urgent Gathering 38710
+		q(40409),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+		q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+		q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+		q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+		q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+		q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 
-		q(40708),	-- Priest Order Hall - chosing Holy for first priest artifact weapon
+		q(40708),	-- Priest Order Hall - Holy chosen first
+		q(40709),	-- Priest Order Hall - Discipline chosen first
+		q(43941), 	-- Priest Order Hall - Discipline chosen second
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
@@ -1470,7 +1482,8 @@ _.HiddenQuestTriggers =
 		q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
 		q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
 		q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
-		q(43946),	-- Shaman Order Hall - Enhancement Chosen
+		q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
+		q(41329),	-- Shaman Order Hall - Elemental Chosen First
 		q(43947),	-- Shaman Order Hall - Elemental Chosen
 		q(43948),	-- Shaman Order Hall - Restoration Chosen
 		q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
@@ -1506,6 +1519,15 @@ _.HiddenQuestTriggers =
 
 		q(40686),	-- Warlock Order Hall - Affliction chosen first
 		q(40514),	-- Warlock Order Hall - Revil convinced
+		q(43982),	-- Warlock Order Hall - Demonology chosen second
+		q(44389),	-- Warlock Order Hall - Affliction chosen third
+		q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
+		q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
+		q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
+		q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
+		q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
+		q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
+		q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
@@ -1858,6 +1880,7 @@ _.HiddenQuestTriggers =
 		q(48649),	-- Maiden of Vigilance
 		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
 		q(48650),	-- Fallen Avatar
+		q(48082),	-- Kil'jaeden (LFR)
 		q(48083),	-- Kil'jaeden
 		q(48085),	-- Kil'jaeden (Mythic)
 		q(48651),	-- Kil'jaeden (Mythic)
@@ -3437,9 +3460,11 @@ _.HiddenQuestTriggers =
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
+		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
+		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
@@ -3449,7 +3474,7 @@ _.HiddenQuestTriggers =
 		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
 		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
 		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
-		q(62570),	-- triggered after crafting Collector Kash's Pack
+		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
@@ -3457,12 +3482,14 @@ _.HiddenQuestTriggers =
 		q(57577),	-- Triggered after recruiting Flytrap
 		q(57598),	-- Triggered after recruiting Gas Bag
 		q(57859),	-- Triggered after recruiting Guillotine
+		q(57610),	-- Triggered after recruiting Iron Phillip
 		q(57578),	-- Triggered after recruiting Marz
+		q(57575),	-- Triggered after recruiting Naxx
+		q(57603),	-- Triggered after recruiting Neena
 		q(57606),	-- Triggered after recruiting Roseboil
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
-		q(57603),	-- Triggered after recruiting Neena
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
@@ -3559,7 +3586,6 @@ _.HiddenQuestTriggers =
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
-		q(59628),	-- triggered when leaving Ember Court
 		q(59630),	-- triggered when leaving Ember Court
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
@@ -3607,6 +3633,7 @@ _.HiddenQuestTriggers =
 		q(62127),	-- picked up when entering the Ember Court for the week — for "Ride on the Wild Side" - the description for this is "Ride Gorm" so i guess... you can ride a gorm somehow.  k
 		q(62120),	-- picked up when entering the Ember Court for the week — for "Stolen Mementos"
 		q(62121),	-- picked up when entering the Ember Court for the week — for "Cartel Ta Justice"
+		q(62136),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing "Clumpdump" event
 		q(62111),	-- picked up when entering the Ember Court for the week — for "Drezgruda"
 		q(62134),	-- picked up when entering the Ember Court for the week — for "Lower Your Standards"
 		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"
@@ -3648,16 +3675,21 @@ _.HiddenQuestTriggers =
 		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59632),	-- triggered when leaving Ember Court scenario
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
+		q(59628),	-- Guest Selected for Ember Court: Mikanikos
+		q(59629),	-- Guest Selected for Ember Court: The Countess
+		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
 		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
+		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
+		q(61889),	-- revoking invitations (3rd in a row, perhaps tracker for the 3rd free revoke per week from Staff: Ambassasdors items)
+		q(61890),	-- revoking invitation (4th free revoke in the week?)
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
@@ -3754,6 +3786,8 @@ _.HiddenQuestTriggers =
 		q(59619),	-- when using "RSVP: Stonehead" — first time only
 		q(59394),	-- when using "RSVP: Alexandros Morgraine" — every time
 		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
+		q(59391),	-- when using "RSVP: The Countess" — every time
+		q(59392),	-- when using "RSVP: The Countess" — first time only
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(59626),	-- when using 'Guest List Page' (181538)

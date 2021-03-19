@@ -939,7 +939,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(24439, {	-- The Conquest of Azshara
-					["sourceQuests"] = { 24430 },	-- Blacken the Skies
+					["sourceQuests"] = {
+						24430,	-- Blacken the Skies
+						14464,	-- Lightning Strike Assassination
+					},
 					["provider"] = { "n", 36730 },	-- Chawg
 					["coord"] = { 14.0, 64.8, 76 },
 					["races"] = HORDE_ONLY,

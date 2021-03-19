@@ -29,28 +29,26 @@ _.Zones =
 					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(24581, {	-- Mark of Thrallmar
-							i(27832, {	-- Band of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-							}),
-							i(63697, {	-- Bold Blood Garnet
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-							}),
-							i(27777, {	-- Brilliant Blood Garnet
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-							}),
-							i(27830, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-							}),
-							i(28360, {	-- Delicate Blood Garnet
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-							}),
-							i(27786, {	-- Jagged Deep Peridot
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-							}),
-							i(24522, {	-- Thrallmar Favor
-								["cost"] = { { "i", 24581, 5 }, },	-- 5x Mark of Thrallmar
-							}),
+						i(27832, {	-- Band of the Victor
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+						}),
+						i(63697, {	-- Bold Blood Garnet
+							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+						}),
+						i(27777, {	-- Brilliant Blood Garnet
+							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+						}),
+						i(27830, {	-- Circlet of the Victor
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+						}),
+						i(28360, {	-- Delicate Blood Garnet
+							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+						}),
+						i(27786, {	-- Jagged Deep Peridot
+							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+						}),
+						i(24522, {	-- Thrallmar Favor
+							["cost"] = { { "i", 24581, 5 }, },	-- 5x Mark of Thrallmar
 						}),
 					},
 				}),
@@ -386,22 +384,20 @@ _.Zones =
 					["coord"] = { 56.4, 62.8, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(24579, {	-- Mark of Honor Hold
-							i(27833, {	-- Band of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-							}),
-							i(27812, {	-- Brilliant Blood Garnet
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-							}),
-							i(27834, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-							}),
-							i(28361, {	-- Delicate Blood Garnet
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-							}),
-							i(27809, {	-- Jagged Deep Peridot
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-							}),
+						i(27833, {	-- Band of the Victor
+							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+						}),
+						i(27812, {	-- Brilliant Blood Garnet
+							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+						}),
+						i(27834, {	-- Circlet of the Victor
+							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+						}),
+						i(28361, {	-- Delicate Blood Garnet
+							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+						}),
+						i(27809, {	-- Jagged Deep Peridot
+							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
 						}),
 					},
 				}),

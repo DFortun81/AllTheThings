@@ -10,6 +10,20 @@ _.ExpansionFeatures =
 				garrisonBuilding(118, {	-- The Forge (rank 1: 60, rank 2: 117, rank 3: 118)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						n(QUESTS, {
+							q(35168, {	-- Your First Blacksmithing Work Order
+								["provider"] = { "n", 77359 },	-- Auria Irondreamer
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(37564, {	-- Your First Blacksmithing Work Order
+								["_drop"] = { "g" },	-- drop Truesteel Ingot
+								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in 'your first blacksmithing work order' quests
+							}),
+							q(36635, {	-- Your First Work Order
+								["_drop"] = { "g" },	-- drop Truesteel Ingot
+								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in various 'first work order' quests
+							}),
+						}),
 						n(VENDORS, {
 							n(77359, {	-- Auria Irondreamer <Blacksmith>
 								["races"] = ALLIANCE_ONLY,

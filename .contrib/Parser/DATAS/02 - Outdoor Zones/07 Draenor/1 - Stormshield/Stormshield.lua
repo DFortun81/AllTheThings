@@ -1467,9 +1467,9 @@ _.Zones =
 							["coord"] = { 36.7, 68.6, 622 },
 							["g"] = {
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
+									["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 									["collectible"] = false,
 									["spellID"] = 0,
-									["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 									["g"] = {
 										recipe(156587),	-- Alchemical Catalyst
 										recipe(156585),	-- Crescent Oil

@@ -117,6 +117,15 @@ _.Zones =
 						i(180375),	-- Hopebreaker's Pack
 					},
 				}),
+				o(337237, {	-- Lost Vault
+					-- TODO: ["coords"] = {},
+					["g"] = {
+						i(180400),	-- Inquisitions Final Judgment
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180339),	-- Shadow-Lined Chalice
+						i(184225),	-- Small Posable Skeleton
+					},
+				}),
 				o(353793, {	-- Parish Chest
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
 					["coords"] = {

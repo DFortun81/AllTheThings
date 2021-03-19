@@ -26,6 +26,7 @@ _.Zones =
 				}),
 				q(45473, {	-- A Giant Problem
 					["lvl"] = { 45 },
+					["isWorldQuest"] = true,
 				}),
 				q(46932, {	-- A Tad More Corruption
 					["lvl"] = { 45 },

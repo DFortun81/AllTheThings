@@ -35,3 +35,4 @@ obj/
 .contrib/Harvesters/DBs/
 .contrib/Harvesters/*.log
 .contrib/Harvesters/*.bat
+__pycache__

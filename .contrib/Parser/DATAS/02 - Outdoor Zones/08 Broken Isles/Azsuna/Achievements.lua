@@ -92,9 +92,7 @@ _.Zones =
 					cl(WARLOCK, {
 						["classes"] = { WARLOCK },
 						["g"] = {
-							q(39179),	-- Bloodstone Bandit
 							q(45024),	-- Cult Culling
-							q(40218),	-- Debt Repaid
 							q(45026),	-- Expending Fel Energy
 						},
 					}),

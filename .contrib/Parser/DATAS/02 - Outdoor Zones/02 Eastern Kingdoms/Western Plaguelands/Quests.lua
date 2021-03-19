@@ -129,13 +129,6 @@ _.Zones =
 					["coord"] = { 48.1, 32.3, 22 },
 					["sourceQuest"] = 27001,	-- This Means WAR (Wild Arachnid Roundup)
 				}),
-				q(43153, {	-- An Eye for a Scepter
-					["sourceQuest"] = 43100,	-- Finding the Scepter
-					["classes"] = { WARLOCK },
-					["coord"] = { 69.2, 79.0, 22 },
-					["lvl"] = 98,
-					["provider"] = { "n", 109698 },	-- Calydus
-				}),
 				q(27090, {	-- Andorhal, Once and For All
 					["provider"] = { "n", 45129 },	-- Lurid
 					["coord"] = { 39.3, 70.5, 22 },
@@ -307,6 +300,7 @@ _.Zones =
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuests"] = {
+						26999,	-- A New Era for the Plaguelands
 						27002,	-- An Audience with the Highlord
 						27017,	-- Memories from a Lost Past
 						26957,	-- The Long Trip Home

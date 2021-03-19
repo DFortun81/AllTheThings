@@ -196,6 +196,7 @@ _.Zones =
 							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 							["coord"] = { 32.0, 64.1, 109 },
 							["isBreadcrumb"] = true,
+							["sourceQuests"] = { 10186 },	-- You're Hired!
 						}),
 						q(10652, {	-- Behind Enemy Lines
 							["provider"] = { "n", 20162 },	-- Veronia
