@@ -10,8 +10,8 @@ import re
 import fileinput
 from collections import namedtuple
 
-def get_localized_obj_name(obj_id, lan):
-  URL = f'https://{lan}.wowhead.com/object={obj_id}'
+def get_localized_obj_name(obj_id, lang_code):
+  URL = f'https://{lang_code}.wowhead.com/object={obj_id}'
   page = requests.get(URL)
   if 'notFound' in page.url:
     print(f"Can't find {obj_id} on Wowhead!")
@@ -31,11 +31,11 @@ def get_todo_lines(lines):
   todo_dict = {}
   for ind, line in enumerate(lines):
     if 'OBJECT_ID_NAMES' in line:
-      print(f"Found beginning at line {ind + 2}!")
+      # print(f"Found beginning at line {ind + 2}!")
       while True:
         line = lines[ind]
         if '}' in line:
-          print(f"Found ending at line {ind - 1}!")
+          # print(f"Found ending at line {ind - 1}!")
           break
         if "--TODO: " in line:
           obj_id = re.search("\d+", line).group()
@@ -61,7 +61,7 @@ def get_localized_names(todo_dict, lang_code):
   return localized_dict
 
 def localize_objects(filename, lang_code):
-  print(f"Starting {filename} file!")
+  print(f"Starting {lang_code}!")
   file = open(filename, 'r')
   lines = file.readlines()
 
@@ -89,7 +89,7 @@ def sort_objects(filename):
     if 'OBJECT_ID_NAMES' in line:
       first_obj_line = ind + 2
       ind += 2
-      if filename.startswith('en'):
+      if 'enUS' in filename:
         first_obj_line -= 1
         ind -= 1
       # print(f"Found beginning at line {first_obj_line}!")
@@ -155,10 +155,10 @@ def get_objects_info(filename):
 
   return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
-def get_new_object_line(obj_id, obj_name, lan):
+def get_new_object_line(obj_id, obj_name, lang_code):
   print(f'New object {obj_id}: {obj_name}')
-  localized_obj_name = get_localized_obj_name(obj_id, lan)
-  if lan == 'tw' or localized_obj_name == '': # no translation on Wowhead
+  localized_obj_name = get_localized_obj_name(obj_id, lang_code)
+  if lang_code == 'tw' or localized_obj_name == '': # no translation on Wowhead
     new_object = f'\t--TODO: [{obj_id}] = \"{obj_name}\",\t-- {obj_name}\n'
   else: # all good
     new_object = f'\t[{obj_id}] = \"{localized_obj_name}\",\t-- {obj_name}\n'
@@ -166,7 +166,8 @@ def get_new_object_line(obj_id, obj_name, lan):
   print(new_object)
   return new_object
 
-def sync_objects(objects, filename, lan):
+def sync_objects(objects, filename, lang_code):
+  print(f'Syncing {lang_code}!')
   localized_objects, first_obj_line, last_obj_line = get_objects_info(filename)
 
   new_tail = False
@@ -177,22 +178,19 @@ def sync_objects(objects, filename, lan):
       break
     localized_obj_id = localized_objects[localized_ind].object_id
     if obj_id < localized_obj_id: # new object
-      new_object = get_new_object_line(obj_id, obj_name, lan)
+      new_object = get_new_object_line(obj_id, obj_name, lang_code)
       localized_objects.insert(localized_ind, Object(obj_id, obj_name, new_object))
-      localized_ind += 1
     elif obj_id > localized_obj_id: # deleted object
       while obj_id > localized_obj_id:
         print(f'Deleted object {localized_obj_id}')
         del localized_objects[localized_ind]
         localized_obj_id = localized_objects[localized_ind].object_id
-      localized_ind += 1
-    else:
-      localized_ind += 1
+    localized_ind += 1
 
   if new_tail:
     for i in range(ind, len(objects)):
       obj_id, obj_name = objects[i]
-      new_object = get_new_object_line(obj_id, obj_name, lan)
+      new_object = get_new_object_line(obj_id, obj_name, lang_code)
       localized_objects.append(Object(obj_id, obj_name, new_object))
   if localized_ind < len(localized_objects): # we need to delete objects in tail
     print('Deleted objects ')
