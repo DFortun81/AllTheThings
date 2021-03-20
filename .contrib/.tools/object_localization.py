@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import fileinput
+from collections import namedtuple
 
 def get_localized_obj_name(obj_id, lan):
   URL = f'https://{lan}.wowhead.com/object={obj_id}'
@@ -114,6 +115,9 @@ def sort_objects(filename):
       obj_ind += 1
     print(line, end='') # this writes to file
 
+ObjectsInfo = namedtuple('ObjectsInfo', 'objects first_obj_line last_obj_line')
+Object = namedtuple('Object', 'object_id object_name line')
+
 def get_objects_info(filename):
   sort_objects(filename)
   file = open(filename, 'r')
@@ -145,11 +149,11 @@ def get_objects_info(filename):
         if len(obj_name) == 0: # skip GetSpellInfo lines
           ind += 1
           continue
-        objects.append((int(obj_id), obj_name[0], line))
+        objects.append(Object(int(obj_id), obj_name[0], line))
         ind += 1
       break
 
-  return objects, first_obj_line, last_obj_line
+  return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
 def get_new_object_line(obj_id, obj_name, lan):
   print(f'New object {obj_id}: {obj_name}')
@@ -171,16 +175,16 @@ def sync_objects(objects, filename, lan):
     if localized_ind == len(localized_objects): # new objects in tail
       new_tail = True
       break
-    localized_obj_id, _, _ = localized_objects[localized_ind]
+    localized_obj_id = localized_objects[localized_ind].object_id
     if obj_id < localized_obj_id: # new object
       new_object = get_new_object_line(obj_id, obj_name, lan)
-      localized_objects.insert(localized_ind, (obj_id, obj_name, new_object))
+      localized_objects.insert(localized_ind, Object(obj_id, obj_name, new_object))
       localized_ind += 1
     elif obj_id > localized_obj_id: # deleted object
       while obj_id > localized_obj_id:
         print(f'Deleted object {localized_obj_id}')
         del localized_objects[localized_ind]
-        localized_obj_id, _, _ = localized_objects[localized_ind]
+        localized_obj_id = localized_objects[localized_ind].object_id
       localized_ind += 1
     else:
       localized_ind += 1
@@ -189,7 +193,7 @@ def sync_objects(objects, filename, lan):
     for i in range(ind, len(objects)):
       obj_id, obj_name = objects[i]
       new_object = get_new_object_line(obj_id, obj_name, lan)
-      localized_objects.append((obj_id, obj_name, new_object))
+      localized_objects.append(Object(obj_id, obj_name, new_object))
   if localized_ind < len(localized_objects): # we need to delete objects in tail
     print('Deleted objects ')
     for del_obj in localized_objects[localized_ind:]: print(del_obj)
@@ -198,8 +202,20 @@ def sync_objects(objects, filename, lan):
   f = open(filename, "r")
   contents = f.readlines()
   f.close()
-  localized_obj_lines = [i[2] for i in localized_objects]
+  localized_obj_lines = [i.line for i in localized_objects]
   contents[first_obj_line:last_obj_line + 1] = localized_obj_lines
   f = open(filename, "w")
+  f.writelines(contents)
+  f.close()
+
+def copy_esES_objects_to_esMX():
+  es_objects = get_objects_info('../../locales/esES.lua').objects
+  _, esMX_start, esMX_end = get_objects_info('../../locales/esMX.lua')
+  f = open('../../locales/esMX.lua', "r")
+  contents = f.readlines()
+  f.close()
+  localized_obj_lines = [i.line for i in es_objects]
+  contents[esMX_start:esMX_end + 1] = localized_obj_lines
+  f = open('../../locales/esMX.lua', "w")
   f.writelines(contents)
   f.close()

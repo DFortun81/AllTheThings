@@ -6,13 +6,13 @@ Object synchronization when adding/removing objects in enUS.
 
 from object_localization import get_objects_info, sync_objects
 
-objects = get_objects_info('../../locales/enUS.lua')[0]
+objects = get_objects_info('../../locales/enUS.lua').objects
 
 sync_objects(objects, '../../locales/deDE.lua', 'de')
 
 sync_objects(objects, '../../locales/esES.lua', 'es')
 
-# TODO: copy esES results to esMX
+copy_esES_objects_to_esMX()
 
 sync_objects(objects, '../../locales/frFR.lua', 'fr')
 
