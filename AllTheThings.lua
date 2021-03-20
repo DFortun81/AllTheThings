@@ -15245,12 +15245,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				end
 
 				-- Cache learned recipes
-				local learned = 0;
+				local learned, recipeID = 0;
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
 					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
 					if spellRecipeInfo then
+						recipeID = spellRecipeInfo.recipeID;
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
@@ -15261,36 +15262,46 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						end
 						if spellRecipeInfo.learned then
 							if spellRecipeInfo.disabled then
-								if GetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-									SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
-									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+								if GetTempDataSubMember("CollectedSpells", recipeID) then
+									SetTempDataSubMember("CollectedSpells", recipeID, nil);
+									SetDataSubMember("CollectedSpells", recipeID, nil);
 								end
 							else
-								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								SetTempDataSubMember("CollectedSpells", recipeID, 1);
+								if not GetDataSubMember("CollectedSpells", recipeID) then
+									SetDataSubMember("CollectedSpells", recipeID, 1);
 									learned = learned + 1;
 								end
 							end
 						end
-						if not skillCache[spellRecipeInfo.recipeID] then
+						if not skillCache[recipeID] then
 							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[spellRecipeInfo.recipeID] = { {} };
+							skillCache[recipeID] = { {} };
 						end
-						-- TODO: Abom Stitching lvl 3 Table causes an error here I think, likely because no actual Item is being created?
-						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
-						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
-							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
-							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
-							-- print(spellRecipeInfo.recipeID, itemID, "=",reagentCount,">", craftedItemID);
+						
+						local recipeLink = C_TradeSkillUI.GetRecipeItemLink(recipeID);
+						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
+						if craftedItemID then
+							local reagentLink, itemID, reagentCount;
+							for i=1,C_TradeSkillUI.GetRecipeNumReagents(recipeID) do
+								reagentCount = select(3, C_TradeSkillUI.GetRecipeReagentInfo(recipeID, i));
+								reagentLink = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, i);
+								itemID = reagentLink and GetItemInfoInstant(reagentLink);
+								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
 
-							-- Make sure a cache table exists for this item.
-							-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-							-- Index 2: The Crafted Item IDs => reagentCount
-							-- TODO: potentially re-design this structure
-							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-							reagentCache[itemID][1][spellRecipeInfo.recipeID] = { craftedItemID, reagentCount };
-							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								-- Make sure a cache table exists for this item.
+								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+								-- Index 2: The Crafted Item IDs => reagentCount
+								-- TODO: potentially re-design this structure
+								if itemID then
+									if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+									reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
+									-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+									reagentCache[itemID][2][craftedItemID] = reagentCount;
+								end
+							end
+						-- else
+						-- 	print("recipe does not craft an item",recipeLink)
 						end
 					end
 				end
@@ -15329,9 +15340,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								self.data.expanded = true;
 								ExpandGroupsRecursively(self.data, true);
 							end
-							if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-								self:SetVisible(true);
-							end
 						end
 					end
 				end
@@ -15353,6 +15361,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						coroutine.yield();
 					end
 					self:CacheRecipes();
+					self:Update();
 				end);
 			end
 		end
@@ -15428,7 +15437,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self:SetTSMCraftingVisible(false);
 				end
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-					self:SetVisible(true);
+					-- Check to see if ATT has information about this profession.
+					local tradeSkillID = app.GetTradeSkillLine();
+					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+						self:SetVisible(false);
+					else
+						self:SetVisible(true);
+					end
 				end
 				self:RefreshRecipes();
 			elseif e == "NEW_RECIPE_LEARNED" then
