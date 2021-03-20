@@ -15,27 +15,9 @@ _.PVP =
 					ach(9102),	-- Ashran Victory
 					ach(9104, {	-- Bounty Hunter (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1),	-- Pandaren Hide
-							crit(2),	-- Blood Elf Ear
-							crit(3),	-- Tauren Hoof
-							crit(4),	-- Orc Tooth
-							crit(5),	-- Troll Feet
-							crit(6),	-- Forsaken Brains
-							crit(7),	-- Goblin Nose
-						},
 					}),
 					ach(9103, {	-- Bounty Hunter (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1),	-- Pandaren Hide
-							crit(2),	-- Worgen Snout
-							crit(3),	-- Severed Night Elf Head
-							crit(4),	-- Dwarf Spine
-							crit(5),	-- Tuft of Gnome Hair
-							crit(6),	-- Human Bone Chip
-							crit(7),	-- Draenei Tail
-						},
 					}),
 					ach(9222),	-- Divide and Conquer
 					ach(9228, {	-- Down Goes Van Rook (A)
@@ -46,15 +28,33 @@ _.PVP =
 						ach(9218),	-- Grand Theft, 1st Degree
 					}),
 					ach(9216, {	-- High-value Targets
-						crit(1),	-- Elder Darkweaver Kath
-						crit(2),	-- Ancient Inferno
-						crit(3),	-- Panthora
-						crit(4),	-- Mandragoraster
-						crit(5),	-- Titarus
-						crit(6),	-- Brickhouse
-						crit(7),	-- Korthall Soulgorger
-						crit(8),	-- Oraggro
-						crit(9),	-- Goregore
+						crit(1, {	-- Elder Darkweaver Kath
+							["cr"] = 85771,	-- Elder Darkweaver Kath
+						}),
+						crit(2, {	-- Goregore
+							["cr"] = 84893,	-- Goregore
+						}),
+						crit(3, {	-- Ancient Inferno
+							["cr"] = 84875,	-- Ancient Inferno
+						}),
+						crit(4, {	-- Panthora
+							["cr"] = 83691,	-- Panthora
+						}),
+						crit(5, {	-- Mandragoraster
+							["cr"] = 83683,	-- Mandragoraster
+						}),
+						crit(6, {	-- Titarus
+							["cr"] = 83713,	-- Titarus
+						}),
+						crit(7, {	-- Brickhouse
+							["cr"] = 83819,	-- Brickhouse
+						}),
+						crit(8, {	-- Korthall Soulgorger
+							["cr"] = 84110,	-- Korthall Soulgorger
+						}),
+						crit(9, {	-- Oraggro
+							["cr"] = 84904,	-- Oraggro
+						}),
 					}),
 					ach(9106),	-- Just for Me
 					ach(9408, {	-- Operation Counterattack (A)
@@ -66,52 +66,114 @@ _.PVP =
 					ach(9256, {	-- Rescue Operation (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(1),	-- Kommandant Jobby Kurzsicht
-							crit(2),	-- Marschall Andrea DeSousa
-							crit(3),	-- Feldmarschall Kerwin
+							crit(1, {	-- Commander Jobby Shortsight
+								["cr"] = 85670,	-- Commander Jobby Shortsight
+							}),
+							crit(2, {	-- Marshal Andrea DeSousa
+								["cr"] = 85669,	-- Marshal Andrea DeSousa
+							}),
+							crit(3, {	-- Field Marshal Kerwin
+								["cr"] = 85668,	-- Field Marshal Kerwin
+							}),
 						},
 					}),
 					ach(9257, {	-- Rescue Operation (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(1),	-- Warlord Jugan
-							crit(2),	-- General Lizzie Heartbane
-							crit(3),	-- Marshal Lyrdrea Daybreaker
+							crit(1, {	-- Warlord Jugan
+								["cr"] = 85672,	-- Warlord Jugan
+							}),
+							crit(2, {	-- General Lizzie Heartbane
+								["cr"] = 85673,	-- General Lizzie Heartbane
+							}),
+							crit(3, {	-- Marshal Lyrdrea Daybreaker
+								["cr"] = 85671,	-- Marshal Lyrdrea Daybreaker
+							}),
 						},
 					}),
 					ach(9225, {	-- Take Them Out (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(1),	-- Captain Hoodrych
-							crit(2),	-- Elementalist Novo
-							crit(3),	-- Elliott Van Rook
-							crit(4),	-- Jared V. Hellstrike
-							crit(5),	-- Kaz Endsky
-							crit(6),	-- Lord Mes
-							crit(7),	-- Mindbender Talbadar
-							crit(8),	-- Mor'riz
-							crit(9),	-- Necrolord Azael
-							crit(10),	-- Soulbrewer Nadagast
-							crit(11),	-- Razor Guerra
-							crit(12),	-- Rifthunter Yoske
-							crit(13),	-- Vanguard Samuelle
+							crit(1,  {	-- Captain Hoodrych
+								["cr"] = 79900,	-- Captain Hoodrych
+							}),
+							crit(2,  {	-- Elementalist Novo
+								["cr"] = 80491,	-- Elementalist Novo
+							}),
+							crit(3,  {	-- Elliott Van Rook
+								["cr"] = 80493,	-- Elliott Van Rook
+							}),
+							crit(4,  {	-- Jared V. Hellstrike
+								["cr"] = 85131,	-- Jared V. Hellstrike
+							}),
+							crit(5,  {	-- Kaz Endsky
+								["cr"] = 87690,	-- Kaz Endsky
+							}),
+							crit(6,  {	-- Lord Mes
+								["cr"] = 80497,	-- Lord Mes
+							}),
+							crit(7,  {	-- Mindbender Talbadar
+								["cr"] = 80490,	-- Mindbender Talbadar
+							}),
+							crit(8,  {	-- Mor'riz
+								["cr"] = 85133,	-- Mor'riz
+							}),
+							crit(9,  {	-- Necrolord Azael
+								["cr"] = 80486,	-- Necrolord Azael
+							}),
+							crit(10, {	-- Soulbrewer Nadagast
+								["cr"] = 80489,	-- Soulbrewer Nadagast
+							}),
+							crit(11, {	-- Razor Guerra
+								["cr"] = 85138,	-- Razor Guerra
+							}),
+							crit(12, {	-- Rifthunter Yoske
+								["cr"] = 80496,	-- Rifthunter Yoske
+							}),
+							crit(13, {	-- Vanguard Samuelle
+								["cr"] = 80492,	-- Vanguard Samuelle
+							}),
 						},
 					}),
 					ach(9224, {	-- Take Them Out (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(1),	-- Alune Windmane
-							crit(2),	-- Anne Otther
-							crit(3),	-- Avenger Turley
-							crit(4),	-- Chani Malflame
-							crit(5),	-- Hildie Hackerguard
-							crit(6),	-- Jackson Bajheera
-							crit(7),	-- John Swifty
-							crit(8),	-- Malda Brewbelly
-							crit(9),	-- Mathias Zunn
-							crit(10),	-- Shani Freezewind
-							crit(11),	-- Taylor Dewland
-							crit(12),	-- Tosan Galaxyfist
+							crit(1,  {	-- Alune Windmane
+								["cr"] = 80488,	-- Alune Windmane
+							}),
+							crit(2,  {	-- Anne Otther
+								["cr"] = 85140,	-- Anne Otther
+							}),
+							crit(3,  {	-- Avenger Turley
+								["cr"] = 80499,	-- Avenger Turley
+							}),
+							crit(4,  {	-- Chani Malflame
+								["cr"] = 85129,	-- Chani Malflame
+							}),
+							crit(5,  {	-- Hildie Hackerguard
+								["cr"] = 80495,	-- Hildie Hackerguard
+							}),
+							crit(6,  {	-- Jackson Bajheera
+								["cr"] = 80484,	-- Jackson Bajheera
+							}),
+							crit(7,  {	-- John Swifty
+								["cr"] = 79902,	-- John Swifty
+							}),
+							crit(8,  {	-- Malda Brewbelly
+								["cr"] = 85122,	-- Malda Brewbelly
+							}),
+							crit(9,  {	-- Mathias Zunn
+								["cr"] = 85137,	-- Mathias Zunn
+							}),
+							crit(10, {	-- Shani Freezewind
+								["cr"] = 80485,	-- Shani Freezewind
+							}),
+							crit(11, {	-- Taylor Dewland
+								["cr"] = 80500,	-- Taylor Dewland
+							}),
+							crit(12, {	-- Tosan Galaxyfist
+								["cr"] = 80494,	-- Tosan Galaxyfist
+							}),
 						},
 					}),
 					ach(9714, {	-- Thy Kingdom Come (A)

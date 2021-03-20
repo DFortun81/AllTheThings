@@ -108,7 +108,6 @@ _.Zones =
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
-							["lvl"] = 110,
 							["g"] = {
 								i(160909),	-- Crown of the Champion
 								i(160913),	-- Crown of the Champion
@@ -142,7 +141,6 @@ _.Zones =
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 110,
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
 							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
@@ -151,19 +149,18 @@ _.Zones =
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = HORDE_ONLY,
-							["lvl"] = 110,
 						}),
 						q(61872, {	-- To Current Matters (A)
+							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
+							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
-							["sourceQuest"] = 54964,	-- A One-Way Ticket to the Heart
-							["lvl"] = { 50 },
 						}),
 						q(61871, {	-- To Current Matters (H)
+							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
+							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
-							["sourceQuest"] = 54964,	-- A One-Way Ticket to the Heart
-							["lvl"] = { 50 },
 						}),
 						-- Unlock Heartforge / Essences
 						q(55533, {	-- MOTHER Knows Best

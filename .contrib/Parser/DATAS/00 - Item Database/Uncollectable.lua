@@ -189,6 +189,7 @@ i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
+i(119216);	-- Super Sticky Glitter Bomb
 i(15723);	-- Tea with Sugar
 i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop

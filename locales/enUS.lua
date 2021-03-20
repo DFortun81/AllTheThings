@@ -1075,6 +1075,7 @@ app.L = {
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = "236539",																	-- Duelist
+		[-799] = "775461",																	-- Burden of Eternity
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
@@ -1955,6 +1956,8 @@ app.L = {
 
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
+		
+		[-799] = "Burden of Eternity",											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
