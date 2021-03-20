@@ -754,6 +754,8 @@ for key,value in pairs({
 			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 
+	[-799] = "Last der Ewigkeit",									-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
@@ -2702,7 +2704,7 @@ for key,value in pairs({
 	[332576] = "Kristallkatzenstatuette",
 	[332704] = "Verderbte Truhe",
 	[336415] = "Weggeworfene Schriftrolle",
-	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
+	[337237] = "Verlorene Schatztruhe",								-- Lost Vault
 	[339211] = "|cFFFFFFFFSchritt 2:|r Leerer Teller",
 	[339283] = "Truhe des vergessenen Adligen",
 	[339770] = "Herrenlose Schatztruhe",

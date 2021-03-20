@@ -754,6 +754,8 @@ for key,value in pairs({
 			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 
+	[-799] = "Fardello dell'Eternità",								-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
@@ -2702,7 +2704,7 @@ for key,value in pairs({
 	[332576] = "Statuetta Felina Cristallina",
 	[332704] = "Cassa Corrotta",
 	[336415] = "Pergamena Scartata",
-	[337237] = "Segrete Perdute",	-- Lost Vault
+	[337237] = "Segrete Perdute",									-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "Cassa dei Nobili Dimenticata",
 	[339770] = "Cassa del Tesoro Abbandonata",

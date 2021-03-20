@@ -754,6 +754,8 @@ for key,value in pairs({
 			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 
+	[-799] = "영원의 짐",											-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
@@ -2702,7 +2704,7 @@ for key,value in pairs({
 	[332576] = "수정 호랑이 조각상",
 	--TODO: [332704] = "Corrupted Chest",
 	[336415] = "버려진 두루마리",
-	[337237] = "잃어버린 금고",	-- Lost Vault
+	[337237] = "잃어버린 금고",										-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "잊힌 귀족의 상자",
 	[339770] = "버려진 보물 상자",

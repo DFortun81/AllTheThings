@@ -774,6 +774,8 @@ for key,value in pairs({
 			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
 
+	[-799] = "不朽之责",												-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "钟示贤德腰带",										-- Waist of Time
 		[-807] = "主脑",												-- Hivemind
@@ -2724,7 +2726,7 @@ for key, value in pairs({
 	[332576] = "水晶猫咪雕像",										-- Crystalline Cat Figurine
 	--TODO: [332704] = "Corrupted Chest",
 	[336415] = "丢弃的卷轴",
-	--TODO: [337237] = "Lost Vault",	-- Lost Vault
+	--TODO: [337237] = "Lost Vault",								-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "被遗忘的贵族宝箱",
 	--TODO: [339770] = "Abandoned Treasure Chest",
@@ -2939,13 +2941,13 @@ for key, value in pairs({
 	[9999988] = "宝箱",												-- Use these until objectID is found
 	[9999989] = "宝箱",												-- Use these until objectID is found
 	[9999990] = "宝箱",												-- Use these until objectID is found
-	[10000000] = "阿玛赛特圣箱",						-- Temporary
-	[10000001] = "阿玛赛特圣箱",						-- Temporary
-	[11000000] = "阿玛赛特之箱",							-- Temporary
-	[11000001] = "阿玛赛特之箱",							-- Temporary
-	[11000002] = "阿玛赛特之箱",							-- Temporary
-	[11000003] = "阿玛赛特之箱",							-- Temporary
-	[11000004] = "阿玛赛特之箱",							-- Temporary
+	[10000000] = "阿玛赛特圣箱",										-- Temporary
+	[10000001] = "阿玛赛特圣箱",										-- Temporary
+	[11000000] = "阿玛赛特之箱",										-- Temporary
+	[11000001] = "阿玛赛特之箱",										-- Temporary
+	[11000002] = "阿玛赛特之箱",										-- Temporary
+	[11000003] = "阿玛赛特之箱",										-- Temporary
+	[11000004] = "阿玛赛特之箱",										-- Temporary
 	--TODO: [12000000] = "Black Empire Cache",						-- Temporary
 	--TODO: [12000001] = "Black Empire Cache",						-- Temporary
 	--TODO: [12000002] = "Black Empire Cache",						-- Temporary
@@ -2986,7 +2988,7 @@ for key, value in pairs({
 	--TODO: [13000031] = "Red Crystal Monocle",
 	--TODO: [13000032] = "|cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)",
 	[1278968750] = "悬挂的锁链",
-	[1278968751] = "月光之荚",						-- TODO: fix objectID when data becomes available
+	[1278968751] = "月光之荚",										-- TODO: fix objectID when data becomes available
 	--[1278968752] = "",											-- ***REUSE ME***
 	--[1278968753] = "",											-- ***REUSE ME***
 	--[1278968754] = "",											-- ***REUSE ME***
@@ -3000,9 +3002,9 @@ for key, value in pairs({
 	--[1278968762] = "",											-- ***REUSE ME***
 	--[1278968763] = "",											-- ***REUSE ME***
 	--[1278968764] = "",											-- ***REUSE ME***
-	[1278968766] = "符文",									-- TODO: fix objectID when data becomes available
-	[1278968767] = "符文",									-- TODO: fix objectID when data becomes available
-	[1278968768] = "符文",									-- TODO: fix objectID when data becomes available
+	[1278968766] = "符文",											-- TODO: fix objectID when data becomes available
+	[1278968767] = "符文",											-- TODO: fix objectID when data becomes available
+	[1278968768] = "符文",											-- TODO: fix objectID when data becomes available
 	--[1278968769] = "",											-- ***REUSE ME***
 	--[1278968770] = "",											-- ***REUSE ME***
 })

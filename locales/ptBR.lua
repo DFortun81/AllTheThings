@@ -754,6 +754,8 @@ for key,value in pairs({
 			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 
+	[-799] = "Fardo da Eternidade",									-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		--TODO: [-806] = "Waist of Time",							-- Waist of Time
 		--TODO: [-807] = "Hivemind",								-- Hivemind
@@ -2702,7 +2704,7 @@ for key,value in pairs({
 	[332576] = "Estatueta de Gato Cristalina",
 	[332704] = "Baú Corrompido",
 	[336415] = "Pergaminho Descartado",
-	[337237] = "Cofre Perdido",	-- Lost Vault
+	[337237] = "Cofre Perdido",										-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "Baú de Nobre Esquecido",
 	[339770] = "Baú do Tesouro Abandonado",

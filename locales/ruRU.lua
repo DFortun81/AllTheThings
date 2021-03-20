@@ -743,6 +743,8 @@ for key,value in pairs({
 			[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 
+	[-799] = "Бремя вечности",										-- Burden of Eternity
+
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-806] = "Часовой пояс",									-- Waist of Time
 		[-807] = "Коллективный разум",								-- Hivemind
@@ -2697,7 +2699,7 @@ for key,value in pairs({
 	[332576] = "Кристальная статуэтка кошки",
 	[332704] = "Зараженный сундук",
 	[336415] = "Выброшенный свиток",
-	[337237] = "Утерянное хранилище",	-- Lost Vault
+	[337237] = "Утерянное хранилище",								-- Lost Vault
 	[339211] = "|cFFFFFFFFШаг 2:|r Пустая миска",
 	[339283] = "Позабытый сундук аристократа",
 	[339770] = "Брошенный сундук с сокровищами",
