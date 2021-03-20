@@ -396,8 +396,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(4409),	-- Schematic: Small Seaforium Charge
 			})),
 			n(113621, {			-- Endgineer Omegaplugg
-				["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Kill the last boss in Gnomeregan.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the room's entrance, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health is based on your level (110: 1.8M, 120: 8.65M).|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in a counterclockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!",
-				["lvl"] = 110,
+				["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Kill the last boss in Gnomeregan.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the room's entrance, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health scales to max level.|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in a counterclockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!",
 				["g"] = {
 					i(141331),	-- Vial of Green Goo (TOY!)
 				},
