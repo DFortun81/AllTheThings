@@ -1141,6 +1141,8 @@ _.HiddenQuestTriggers =
 		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
 		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
 		
+		q(43233),	-- Arsenal: Wild Combatant's Weapons
+		
 		q(47352),	-- Fierce Combatant's Satin Armor
 		q(47365),	-- Fierce Gladiator's Satin Armor
 		q(60689),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor

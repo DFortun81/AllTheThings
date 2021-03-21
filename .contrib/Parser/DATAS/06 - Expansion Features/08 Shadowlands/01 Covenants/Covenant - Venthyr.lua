@@ -1119,8 +1119,6 @@ _.ExpansionFeatures =
 										}),
 										crit(8, {	-- Dredger Party Supplies
 										}),
-										crit(9, {	-- Generous Gift
-										}),
 										crit(11, {	-- Necrolord Arsenal
 										}),
 										crit(12, {	-- Venthyr Arsenal
@@ -1389,7 +1387,13 @@ _.ExpansionFeatures =
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
+											
 											i(181232),	-- Cupbearer's Claymore
+											i(177238, {	-- Generous Gift
+												crit(9, {	-- Generous Gift
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356744, {	-- Rendle and Cudgelface's Extravagant Tribute
