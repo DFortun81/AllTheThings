@@ -1063,7 +1063,7 @@ _.Zones =
 				}),
 				q(13842, {	-- Dread Head Redemption
 					["sourceQuests"] = { 13841 },	-- All Apologies
-					["provider"] = { "n", 14720 },	-- Eitrigg
+					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 49.2, 72.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
