@@ -941,6 +941,7 @@ _.Zones =
 				q(24439, {	-- The Conquest of Azshara
 					["sourceQuests"] = {
 						24430,	-- Blacken the Skies
+						24434,	-- Commando Drop
 						14464,	-- Lightning Strike Assassination
 					},
 					["provider"] = { "n", 36730 },	-- Chawg
