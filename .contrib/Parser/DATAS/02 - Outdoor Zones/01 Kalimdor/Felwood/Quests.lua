@@ -487,10 +487,7 @@ _.Zones =
 				q(28119, {	-- Purity From Corruption
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
-					["sourceQuests"] = {
-						28116,	-- Crying Violet
-						28121,	-- Forces of Jaedenar
-					},
+					["sourceQuests"] = { 28116 },	-- Crying Violet
 				}),
 				q(28228, {	-- Rejoining the Forest
 					["provider"] = { "n", 48044 },	-- Flourishing Protector
