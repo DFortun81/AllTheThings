@@ -27,6 +27,9 @@ _.Zones =
 				}),
 				n(8217, { 	-- Mith'rethis the Enchanter
 					["coord"] = { 64.8, 81.6, 26 },
+					["g"] = {
+						i(17050),	-- Chan's Imperial Robes
+					},
 				}),
 				n(8211, { 	-- Old Cliff Jumper
 					["coord"] = { 13.6, 53.8, 26 },
