@@ -419,22 +419,27 @@ WOD_CRAFTED_ITEM = function(id)
 			{
 				["itemID"] = id,
 				["bonusID"] = 558,
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					{
 						["itemID"] = id,
 						["bonusID"] = 559,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 594,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 619,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 620,
+						["u"] = REMOVED_FROM_GAME,
 					}
 				}
 			}
