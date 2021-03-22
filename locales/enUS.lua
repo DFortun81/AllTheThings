@@ -4153,6 +4153,7 @@ app.L = {
 		[241601] = "Scout's Belongings",
 		[241605] = "Crystalized Essence of the Elements",
 		[241656] = "Overgrown Relic",
+		[241657] = "Jeweled Arakkoa Effigy",
 		[241664] = "Borrowed Enchanted Spyglass",
 		[241665] = "Treasure Chest",
 		[241671] = "Forgotten Shard of the Cipher",

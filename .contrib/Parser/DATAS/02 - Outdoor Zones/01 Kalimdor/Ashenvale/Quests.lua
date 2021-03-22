@@ -335,6 +335,7 @@ _.Zones =
 				}),
 				q(13806, {	-- Demon Duty
 					["provider"] = { "n", 11820 },	-- Locke Okarr
+					["coord"] = { 73.8, 61.6, 63 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26449,	-- Never Again!
 				}),
