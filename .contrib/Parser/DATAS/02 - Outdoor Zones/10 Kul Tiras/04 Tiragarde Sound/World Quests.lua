@@ -52,11 +52,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
 					}),
-					q(52404, {	-- Work Order: Solstone
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-						["races"] = ALLIANCE_ONLY,
-					}),
 					]]--
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
 						["lvl"] = 110,

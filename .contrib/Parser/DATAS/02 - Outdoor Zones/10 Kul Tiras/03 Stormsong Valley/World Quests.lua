@@ -953,6 +953,11 @@ _.Zones =
 							i(162295),	-- Recipe: Sailor's Pie (Rank 3)
 						},
 					}),
+					q(52404, {	-- Work Order: Solstone
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(50982, {	-- Work Order: Star Moss
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
