@@ -1387,7 +1387,6 @@ _.ExpansionFeatures =
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
-											
 											i(181232),	-- Cupbearer's Claymore
 											i(177238, {	-- Generous Gift
 												crit(9, {	-- Generous Gift
@@ -1410,7 +1409,7 @@ _.ExpansionFeatures =
 											}),
 											i(181780),	-- An Undelivered Tradesman's Shipment
 											i(180962),	-- Sterling-Silver Cudgel
-											i(181315),	-- Bloodfeaster Spiderling											
+											i(181315),	-- Bloodfeaster Spiderling
 											i(180959),	-- Dredger Anklebiter
 											i(180964),	-- Ember Court Barrier
 											i(180956),	-- Axeblade Blunderbuss
@@ -2204,7 +2203,7 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
 									["g"] = {
-										i(181537, {		-- Guest List Page											
+										i(181537, {		-- Guest List Page
 											crit(16, {		-- Third Guest List Page
 												["achievementID"] = 14679,	-- Party Palace
 											}),

@@ -29,3 +29,4 @@ jobs:
           commit-message: Sync localization
           title: Sync localization
           branch: auto_localization
+          delete-branch: true
