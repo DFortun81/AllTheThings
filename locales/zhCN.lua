@@ -2046,6 +2046,7 @@ for key, value in pairs({
 	[241601] = "斥候的财物",
 	[241605] = "晶化元素精华",
 	[241656] = "巨型遗物",
+	[241657] = "鸦人嵌宝雕像",	-- Jeweled Arakkoa Effigy
 	[241664] = "“借来”的魔法望远镜",
 	[241665] = "宝箱",
 	--TODO: [241671] = "Forgotten Shard of the Cipher",

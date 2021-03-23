@@ -2024,6 +2024,7 @@ for key,value in pairs({
 	[241601] = "Pertences do Batedor",
 	[241605] = "Essência dos Elementos Cristalizada",
 	[241656] = "Relíquia Gigante",
+	[241657] = "Efígie Arakkoa Decorada",	-- Jeweled Arakkoa Effigy
 	[241664] = "Luneta Encantada \"Emprestada\"",
 	[241665] = "Baú do Tesouro",
 	[241671] = "Fragmento da Cifra Esquecido",

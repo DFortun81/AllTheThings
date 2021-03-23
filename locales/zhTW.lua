@@ -2024,6 +2024,7 @@ for key,value in pairs({
 	--TODO: [241601] = "Scout's Belongings",
 	--TODO: [241605] = "Crystalized Essence of the Elements",
 	--TODO: [241656] = "Overgrown Relic",
+	--TODO: [241657] = "Jeweled Arakkoa Effigy",	-- Jeweled Arakkoa Effigy
 	--TODO: [241664] = "Borrowed Enchanted Spyglass",
 	--TODO: [241665] = "Treasure Chest",
 	--TODO: [241671] = "Forgotten Shard of the Cipher",
