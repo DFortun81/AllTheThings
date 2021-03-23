@@ -175,11 +175,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(160091, {	-- Ta'ruca
+					["coord"] = { 51.1, 78.5, 1525 },	-- Revendreth
+					["g"] = {
+						i(180774),	-- Preserved Berries
+					},
+				}),
 				n(171808, {	-- Ta'tru
-					["coords"] = { 51.1, 78.8, 1525 },
+					["coord"] = { 51.1, 78.8, 1525 },	-- Revendreth
 					["g"] = {
 						i(180973, {	-- Necklace of Dredbat Fangs
-							["description"] = "Take this to Trader Ta'bix in Bastion |cffffffff(33.4, 36.2)|r.",
+							["description"] = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",
 						}),
 						i(181799),	-- Extra Large Hat
 						i(182702),	-- Phial of Black Muck Dye

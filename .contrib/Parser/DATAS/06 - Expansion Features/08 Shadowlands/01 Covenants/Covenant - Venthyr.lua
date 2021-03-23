@@ -1865,6 +1865,15 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62108, {	-- Restock: Strategic Codices
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, 1525 },
+									["cost"] = {
+										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(60236, {	-- RSVP: Cryptkeeper Kassir
 									["sourceQuests"] = {
 										57928,	-- Atonement Crypt Key
