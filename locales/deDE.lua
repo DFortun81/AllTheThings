@@ -2024,6 +2024,7 @@ for key,value in pairs({
 	[241601] = "Hab und Gut eines Spähers",
 	[241605] = "Kristallisierte Essenz der Elemente",
 	[241656] = "Überwuchertes Relikt",
+	[241657] = "Juwelenbesetzte Arakkoaeffigie",	-- Jeweled Arakkoa Effigy
 	[241664] = "\"Geborgtes\" verzaubertes Fernglas",
 	[241665] = "Schatztruhe",
 	[241671] = "Vergessener Splitter der Litanei",

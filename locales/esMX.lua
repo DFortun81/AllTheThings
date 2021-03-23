@@ -2024,6 +2024,7 @@ for key,value in pairs({
 	[241601] = "Pertenencias del explorador",
 	[241605] = "Esencia de los elementos cristalizada",
 	[241656] = "Reliquia envuelta en raíces",
+	[241657] = "Efigie arakkoa con joyas",	-- Jeweled Arakkoa Effigy
 	[241664] = "Catalejo encantado \"prestado\"",
 	[241665] = "Arqueta",
 	[241671] = "Fragmento de la clave olvidado",

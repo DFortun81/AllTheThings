@@ -2024,6 +2024,7 @@ for key,value in pairs({
 	[241601] = "Effets personnels de l’éclaireur",
 	[241605] = "Essence des éléments cristallisée",
 	[241656] = "Relique recouverte par la végétation",
+	[241657] = "Effigie arakkoa ornée de joyaux",	-- Jeweled Arakkoa Effigy
 	[241664] = "Longue-vue enchantée « empruntée »",
 	[241665] = "Coffre au trésor",
 	[241671] = "Fragment de formule oublié",
