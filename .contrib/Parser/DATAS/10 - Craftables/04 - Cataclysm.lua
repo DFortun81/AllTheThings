@@ -303,8 +303,7 @@ _.Craftables =
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
 				i(52489, {	-- Rhinestone Sunglasses
-					["u"] = 15,
-					["description"] = "To learn this specific item you will need to buy the Black Market AH version",
+					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
 			}),
 			filter(51, {	-- Neck
