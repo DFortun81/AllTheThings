@@ -73,6 +73,7 @@ _.Zones =
 					["crs"] = { 17591 },	-- Blood Elf Bandit
 				}),
 				q(9560,  {	-- Beasts of the Apocalypse!
+					["sourceQuests"] = { 9544 },	-- The Prophecy of Akida
 					["provider"] = { "n", 17442 },	-- Moordo
 					["coord"] = { 44.8, 23.8, 97 },
 					["races"] = ALLIANCE_ONLY,
@@ -202,6 +203,7 @@ _.Zones =
 					["coord"] = { 24.4, 54.5, 97 },
 				}),
 				q(9562,  {	-- Murlocs... Why Here? Why Now?
+					["sourceQuests"] = { 9544 },	-- The Prophecy of Akida
 					["provider"] = { "n", 17441 },	-- Gurf
 					["coord"] = { 44.6, 23.4, 97 },
 					["races"] = ALLIANCE_ONLY,
