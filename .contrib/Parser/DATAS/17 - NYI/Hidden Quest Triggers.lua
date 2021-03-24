@@ -224,6 +224,9 @@ _.HiddenQuestTriggers =
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
 		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
+		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
+		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
+		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
 
 		-- Darkmoon Faire
 		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
