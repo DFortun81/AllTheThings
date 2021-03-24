@@ -3447,6 +3447,7 @@ _.HiddenQuestTriggers =
 		q(60311),	-- triggered when opening Misplaced Supplies - i think i had already opened it?  so i'm not sure if it's somehow repeatable :\ but we have a different questID attached to the criteria
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
+		q(62946),	-- "learning" the quest items while on #61612, "Jewelcrafting: Carved Crystal Ring"
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57210),	-- triggered when completing the ballista at 37.6, 50.8 during #57205, "A Few Bumps Along the Way"
 		q(57241),	-- triggered when completing the ballista at 38.8, 48.6 during #57205, "A Few Bumps Along the Way"
