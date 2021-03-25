@@ -10381,7 +10381,7 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 		local nextPercent = math.ceil(originalPercent * 100);
 		local roundedPercent = nextPercent * 0.01;
 		local diff = math.ceil(total * (roundedPercent - originalPercent));
-		if diff < 1 then
+		if diff < 1 or nextPercent == 100 then
 			return "|c" .. GetProgressColor(1) .. (total - progress) .. L["THINGS_UNTIL"] .. "100%|r";
 		elseif diff == 1 then
 			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THING_UNTIL"] .. nextPercent .. "%|r";
