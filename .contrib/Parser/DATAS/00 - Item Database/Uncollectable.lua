@@ -123,6 +123,7 @@ i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
 i(180661);	-- Darktower Parchments: Affliction Most Foul
 i(180660);	-- Darktower Parchments: Instant Polymorphist
+i(181563);	-- Decree: Mikanikos's Boon
 i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
@@ -424,6 +425,7 @@ i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(184043);	-- Lost Scroll
 i(173781);	-- Lost Watermelon
+i(182212);	-- Magical Curio
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(183734);	-- Mysteriously Thrumming Orb

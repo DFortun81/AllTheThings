@@ -1183,7 +1183,9 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
+											i(181325),	-- Marrowfused Dagger
 											i(181331),	-- Marrowfused Shield
+											i(181330),	-- Marrowfused Warglaive
 											i(181615),	-- Marching an Army
 											i(181327),	-- Spineforged Tenderizer
 										},
@@ -1199,6 +1201,7 @@ _.ExpansionFeatures =
 											}),
 											i(181322),	-- Bonebound Tome
 											i(178894),	-- Decree: Baroness Vashj's Boon
+											i(181330),	-- Marrowfused Warglaive
 											i(181327),	-- Spineforged Tenderizer
 										},
 									}),
@@ -1299,8 +1302,11 @@ _.ExpansionFeatures =
 											}),
 											i(181618),	-- Gorm Quishe Platter
 											i(179509),	-- Grove Warden's Edge
+											i(179533),	-- Grove Warden's Harvester
 											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
+											i(179605),	-- Elderwood Barrier
+											i(179585),	-- Nightwillow Shortbow
 											i(179548),	-- Elderwood Gavel
 										},
 									}),
@@ -1338,6 +1344,9 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181607),	-- Decree: Lady Moonberry's Esteem
+											i(179516),	-- Songwood Staff
+											i(179605),	-- Elderwood Barrier
+											i(179548),	-- Elderwood Gavel
 										},
 									}),
 									o(356728, {	-- Mikanikos' Extravagant Tribute
@@ -1351,6 +1360,10 @@ _.ExpansionFeatures =
 											}),
 											i(181227),	-- Bronze Ceremonial Targe
 											i(181564),	-- Decree: Mikanikos's Esteem
+											i(181235),	-- Final Arbiter's Gavel
+											i(181230),	-- Pugilist's Chakram
+											i(181226),	-- Bronze Dual-Bladed Glaive
+											i(181232),	-- Cupbearer's Claymore
 										},
 									}),
 									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
@@ -1387,6 +1400,7 @@ _.ExpansionFeatures =
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
+											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
 											i(177238, {	-- Generous Gift
 												crit(9, {	-- Generous Gift
