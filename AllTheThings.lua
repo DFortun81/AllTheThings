@@ -10719,15 +10719,15 @@ function app:CreateMiniListForGroup(group)
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
 		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL");
-	-- print("Popout for",suffix)
-	-- clone initially so that nothing in the popout modifies the real data
-	local group = CloneData(group);
 	local popout = app.Windows[suffix];
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
-	-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
-	if group.cost then app.BuildCost(group); end
+	-- print("Popout for",suffix)
 	if not popout then
+		-- clone initially so that nothing in the popout modifies the real data
+		group = CloneData(group);
+		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
+		if group.cost then app.BuildCost(group); end
 		popout = app:GetWindow(suffix);
 		popout.shouldFullRefresh = true;
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
@@ -13164,6 +13164,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
+		-- print("Creating new Window Frame for",suffix)
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
