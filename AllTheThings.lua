@@ -10720,9 +10720,10 @@ function app:CreateMiniListForGroup(group)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
 		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL");
 	local popout = app.Windows[suffix];
+	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
-	-- print("Popout for",suffix)
+	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone initially so that nothing in the popout modifies the real data
 		group = CloneData(group);
@@ -10869,7 +10870,7 @@ function app:CreateMiniListForGroup(group)
 				app.GroupVisibilityFilter = GroupVisibilityFilter;
 				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
 			end;
-		elseif (group.key == "questID" and group.questID) or group.sourceQuests then
+		elseif showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			-- This causes a popout insertion into the Main list when a popout group has a parent (in Main list) with the same questID (#714)
 			-- if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
@@ -10881,18 +10882,19 @@ function app:CreateMiniListForGroup(group)
 
 			-- Check to see if Source Quests are listed elsewhere.
 			if group.questID and not group.sourceQuests then
+				local questID = group.questID;
 				local qs = SearchForField("questID", group.questID);
 				if qs and #qs > 1 then
 					local i, sq = #qs;
 					while not sq and i > 0 do
-						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+						-- found another group with this questID that has sourceQuests listed
+						if qs[i].questID == questID and qs[i].sourceQuests then sq = qs[i]; end
 						i = i - 1;
 					end
 					if sq then
-						local searchResult = CloneData(sq);
-						searchResult.collectible = true;
-						searchResult.g = g;
-						root = searchResult;
+						root = CloneData(sq);
+						root.collectible = true;
+						root.g = g;
 						g = { root };
 					end
 				end
