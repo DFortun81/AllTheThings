@@ -139,43 +139,39 @@ profession(HERBALISM, {
 			},
 		}),
 		i(124104, {	-- Fjarnskaggl
-			{
-				["itemID"] = 129120,	-- Fjarnskaggl Sample
-				["questID"] = 40029,	-- Fjarnskaggl Sample
-				["groups"] = {
+			q(40029, {	-- Fjarnskaggl Sample
+				["requireSkill"] = HERBALISM,
+				["provider"] = { "i", 129120 },	-- Fjarnskaggl Sample
+				["g"] = {
 					recipe(193301),	-- Fjarnskaggl [Rank 1]
 				},
-			},
-			{
-				["itemID"] = 129138,	-- Ram's-Horn Trowel
-				["questID"] = 40030,	-- Ram's-Horn Trowel
+			}),
+			q(40030, {	-- Ram's-Horn Trowel
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40029,	-- Fjarnskaggl Sample
-				["groups"] = {
-					{
-						["questID"] = 40031,	-- Vrykul Herblore
-						["sourceQuest"] = 40030,	-- Ram's-Horn Trowel
-						["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
-						["groups"] = {
-							recipe(193302),	-- Fjarnskaggl [Rank 2]
-						},
-					},
+				["provider"] = { "i", 129138 },	-- Ram's-Horn Trowel
+			}),
+			q(40031, {	-- Vrykul Herblore
+				["requireSkill"] = HERBALISM,
+				["sourceQuest"] = 40030,	-- Ram's-Horn Trowel
+				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["g"] = {
+					recipe(193302),	-- Fjarnskaggl [Rank 2]
 				},
-			},
-			{
-				["itemID"] = 129142,	-- Runed Journal Page
-				["questID"] = 40032,	-- The Missing Page
+			}),
+			q(40032, {	-- The Missing Page
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40031,	-- Vrykul Herblore
-				["groups"] = {
-					{
-						["questID"] = 40033,	-- Fjarnskaggl
-						["sourceQuest"] = 40032,	-- The Missing Page
-						["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
-						["groups"] = {
-							recipe(193303),	-- Fjarnskaggl [Rank 3]
-						},
-					},
+				["provider"] = { "i", 129142 },		-- Runed Journal Page
+			}),
+			q(40033, {	-- Fjarnskaggl
+				["requireSkill"] = HERBALISM,
+				["sourceQuest"] = 40032,	-- The Missing Page
+				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["g"] = {
+					recipe(193303),	-- Fjarnskaggl [Rank 3]
 				},
-			},
+			}),
 		}),
 		i(124103, {	-- Foxflower
 			{

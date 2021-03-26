@@ -4074,6 +4074,7 @@ _.HiddenQuestTriggers =
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
+		q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
 		q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
