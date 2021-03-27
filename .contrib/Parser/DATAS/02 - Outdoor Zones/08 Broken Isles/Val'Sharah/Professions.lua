@@ -270,28 +270,24 @@ _.Zones =
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					i(129141, {	-- Blight-Choked Herb
-						["questID"] = 40022,	-- Choked By Nightmare
+					q(40018, {	-- Dreamleaf Sample
 						["requireSkill"] = HERBALISM,
-						["sourceQuests"] = {
-							40021,	-- One Dead Plant is One Too Many
-						},
+						["provider"] = { "i", 129118 },	-- Dreamleaf Sample
 					}),
-					i(129136, {	-- Blight-Twisted Herb
-						["questID"] = 40020,	-- Twisted to Death
+					q(40020, {	-- Twisted to Death
 						["requireSkill"] = HERBALISM,
-						["sourceQuests"] = {
-							40019,	-- An Empathetic Herb
-						},
+						["sourceQuest"] = 40019,	-- An Empathetic Herb
+						["provider"] = { "i", 129136 },	-- Blight-Twisted Herb
 					}),
-					i(129118, {	-- Dreamleaf Sample
-						["questID"] = 40018,	-- Dreamleaf Sample
+					q(40022, {	-- Choked by Nightmare
 						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40021,	-- One Dead Plant is One Too Many
+						["provider"] = { "i", 129141 },	-- Blight-Choked Herb
 					}),
-					i(129122, {	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
+					q(40040, {	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
-						["groups"] = {
+						["provider"] = { "i", 129122 },	-- Felwort Sample
+						["g"] = {
 							recipe(193307),	-- Felwort [Rank 1]
 						},
 					}),

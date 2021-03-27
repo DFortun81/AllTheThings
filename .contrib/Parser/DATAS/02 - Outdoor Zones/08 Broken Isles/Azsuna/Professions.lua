@@ -330,20 +330,27 @@ _.Zones =
 				}),
 				prof(HERBALISM, {
 					q(40013, {	-- Aethril Sample
-						i(129117),	-- Aethril Sample
+						["requireSkill"] = HERBALISM,
+						["provider"] = { "i", 129117 },	-- Aethril Sample
 					}),
-					i(129135, {	-- Ragged Strips of Silk
-						q(40015),	-- Ragged Strips of Silk
+					q(40015, {	-- Ragged Strips of Silk
+						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40014,	-- Spayed by the Spade
+						["provider"] = { "i", 129135 },	-- Ragged Strips of Silk
 					}),
 					q(40017, {	-- A Slip of the Hand
-						--recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)(Spell cast on you to learn the following recipe.  Not collectible)
-						recipe(193294), -- Herbalism Technique: Aethril (Rank 3)
+						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40016,	-- Desperation Breeds Ingenuity
+						["g"] = {
+							recipe(193294),	-- Aethril (Rank 3)
+						},
 					}),
-					i(129122, {	-- Felwort Sample
-						q(40040, { --Felwort Sample
-							--recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)(Spell cast on you to learn the following recipe.  Not collectible)
-							recipe(193307),	-- Herbalism Technique: Felwort (Rank 1)
-						}),
+					q(40040, {	-- Felwort Sample
+						["requireSkill"] = HERBALISM,
+						["provider"] = { "i", 129122 },	-- Felwort Sample
+						["g"] = {
+							recipe(193307),	-- Felwort [Rank 1]
+						},
 					}),
 				}),
 				prof(INSCRIPTION, {

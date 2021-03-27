@@ -179,33 +179,29 @@ _.Zones =
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					i(129122, {	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
+					q(40040, {	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
-						["groups"] = {
+						["provider"] = { "i", 129122 },	-- Felwort Sample
+						["g"] = {
 							recipe(193307),	-- Felwort [Rank 1]
 						},
 					}),
-					i(129120, {	-- Fjarnskaggl Sample
-						["questID"] = 40029,	-- Fjarnskaggl Sample
+					q(40029, {	-- Fjarnskaggl Sample
 						["requireSkill"] = HERBALISM,
-						["groups"] = {
+						["provider"] = { "i", 129120 },	-- Fjarnskaggl Sample
+						["g"] = {
 							recipe(193301),	-- Fjarnskaggl [Rank 1]
 						},
 					}),
-					i(129138, {	-- Ram's-Horn Trowel
-						["questID"] = 40030,	-- Ram's-Horn Trowel
-						["sourceQuests"] = {
-							40029,	-- Fjarnskaggl Sample
-						},
+					q(40030, {	-- Ram's-Horn Trowel
 						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40029,	-- Fjarnskaggl Sample
+						["provider"] = { "i", 129138 },	-- Ram's-Horn Trowel
 					}),
-					i(129142, {	-- Runed Journal Page
-						["questID"] = 40032,	-- The Missing Page
-						["sourceQuests"] = {
-							40031,	-- Vrykul Herblore
-						},
+					q(40032, {	-- The Missing Page
 						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40031,	-- Vrykul Herblore
+						["provider"] = { "i", 129142 },		-- Runed Journal Page
 					}),
 				}),
 				prof(INSCRIPTION, {
