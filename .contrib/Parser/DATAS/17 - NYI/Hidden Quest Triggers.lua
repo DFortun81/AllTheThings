@@ -2622,6 +2622,24 @@ _.HiddenQuestTriggers =
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
 		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
+		
+		-- MISSIONS
+		q(53743),	-- Hillcrest Pasture completed
+		q(53745),	-- Mudfisher Cove completed
+		q(53740),	-- Stonefist Watch completed
+		q(53742),	-- Stonetusk Watch completed
+		q(53744),	-- Swiftwind Post completed
+		q(54304),	-- Upgrade: Arom's Stand started
+		q(54261),	-- Upgrade: Brennadam started
+		q(54283),	-- Upgrade: Castaway Point started
+		q(54226),	-- Upgrade: The Great Seal started
+		q(54294),	-- Upgrade: The Great Seal completed
+		q(54259),	-- Upgrade: Vulpera Hideaway started
+		q(54296),	-- Upgrade: Vulpera Hideaway completed
+		q(54238),	-- Upgrade: Zul'jan Ruins started
+		q(54297),	-- Upgrade: Zul'jan Ruins completed
+		q(53741),	-- Windfall Cavern completed
+		q(53739),	-- Wolf's Den completed
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley

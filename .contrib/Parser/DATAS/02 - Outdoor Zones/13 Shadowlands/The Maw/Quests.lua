@@ -99,15 +99,17 @@ _.Zones =
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = {
-						1681,	-- Icecrown Citadel
-						1682,	-- Icecrown Citadel
+						1681,	-- Icecrown Citadel (Lower Acherus)
+						1682,	-- Icecrown Citadel (Upper Acherus)
+						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
 				}),
 				q(61874, {	-- A Chilling Summons (H)
 					["races"] = HORDE_ONLY,
 					["maps"] = {
-						1681,	-- Icecrown Citadel
-						1682,	-- Icecrown Citadel
+						1681,	-- Icecrown Citadel (Lower Acherus)
+						1682,	-- Icecrown Citadel (Upper Acherus)
+						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
 				}),
 				q(59960, {	-- A Cooling Trail
