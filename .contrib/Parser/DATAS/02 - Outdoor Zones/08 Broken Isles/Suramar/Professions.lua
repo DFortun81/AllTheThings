@@ -286,27 +286,6 @@ _.Zones =
 					}),
 					q(40213),	-- Hounds Abound
 				}),
-				prof(MINING, {
-					q(38798, {	-- A Shred of Your Humanity
-						["coord"] = { 30.0, 53.2, 680 },
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = MINING,
-						["sourceQuest"] = 38901,	-- The Felsmiths
-					}),
-					q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
-						["coord"] = { 30.0, 53.2, 680 },
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = MINING,
-						["sourceQuest"] = 38798,	-- A Shred of Your Humanity
-					}),
-					q(38804),	-- Lyrelle
-					q(38801),	-- Lyrelle's Right Arm
-					q(38805),	-- Ondri
-					q(38802),	-- Ondri's Still-Beating Heart
-					q(38794),	-- Rethu's Sacrifice
-					q(38803),	-- Rin'thissa
-					q(38800),	-- Rin'thissa's Eye
-				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
