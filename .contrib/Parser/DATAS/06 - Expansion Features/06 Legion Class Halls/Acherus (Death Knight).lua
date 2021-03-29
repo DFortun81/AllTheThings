@@ -48,6 +48,12 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42537, -- The King Rises
 					}),
+					q(46719, {	-- Amal'thazad's Message
+						["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
+						["coord"] = { 43.4, 62.7, 646 },	-- Broken Shore
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 46246, -- Strike Them Down
+					}),
 					q(46030, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
@@ -164,11 +170,23 @@ _.ExpansionFeatures =
 							follower(838),	-- Thoras Trollbane
 						},
 					}),
+					q(46812, {	-- Draconic Secrets
+						["coord"] = { 44.7, 4.4, 118 },	-- Icecrown
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 46720, -- Frozen Memories
+						["maps"] = { 860 },
+					}),
 					q(44282, {	-- Eye of Azshara: The Frozen Soul
 						["provider"] = { "n", 93555 }, -- Amal'thazad
 						["coord"] = { 58.1, 31.1, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43928, -- Aggregates of Anguish
+					}),
+					q(46720, {	-- Frozen Memories
+						["provider"] = { "n", 93555 },	-- Amal'thazadd
+						["coord"] = { 58.1, 31.1, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 46719, -- Amal'thazad's Message
 					}),
 					q(46789, {	-- Further Advancement
 						["provider"] = { "n", 93568 },	-- Siouxsie the Banshee
@@ -218,7 +236,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46813, {	-- The Lost Glacier
-						i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
+						["provider"] = { "n", 121752 },	-- Slimy
+						["coord"] = { 54.7, 28.2, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 46812, -- Draconic Secrets
+						["g"] = {
+							i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
+						},
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,

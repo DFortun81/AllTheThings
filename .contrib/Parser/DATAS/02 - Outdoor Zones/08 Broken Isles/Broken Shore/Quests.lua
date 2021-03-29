@@ -553,17 +553,10 @@ _.Zones =
 				--[[
 				q(45343),	-- A Curious Contagion
 				q(46336),	-- A Golden Ticket
-				q(43407),	-- A Hero's Weapon
 				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
-				q(39761),	-- Advanced Runecarving
-				q(43573),	-- Advancing the War Effort
-				q(43928),	-- Aggregates of Anguish
-				q(46719),	-- Amal'thazad's Message
 				q(45021),	-- Answers Unknown
-				q(43962),	-- Blades of Destiny
-				q(44550),	-- Called to Acherus
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
@@ -607,7 +600,6 @@ _.Zones =
 				q(45182, {	-- Frost: The Twisted Twin
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(46720),	-- Frozen Memories
 				q(47045),	-- Further Progress
 				q(46125),	-- Furthering Knowledge
 				q(46320),	-- Hope For a Cure
