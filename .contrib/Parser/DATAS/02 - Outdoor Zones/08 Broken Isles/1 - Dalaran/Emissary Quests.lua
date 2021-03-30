@@ -21,7 +21,7 @@ _.Zones =
 						i(152956),	-- Greater Army of the Light Insignia
 						i(152961),	-- Greater Argussian Reach Insignia
 						i(157828, {	-- Kirin Tor Chest
-							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+							un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 							i(141349, {	-- Strange Humming Crystal
 								q(44412,  {	-- Enemies Everywhere
 									["provider"] = { "n", 90417 },	-- Archmage Khadgar

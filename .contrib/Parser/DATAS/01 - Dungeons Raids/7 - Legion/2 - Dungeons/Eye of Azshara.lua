@@ -110,7 +110,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137877),	-- Recipe: Warhide Pants (Rank 3)
 					i(136705),	-- Technique: Aqual Mark
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 					i(134532),	-- Band of Fused Coral
 					i(134237),	-- Brinewashed Leather Boots
 					i(137378),	-- Bottled Hurricane
@@ -189,7 +189,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137877),	-- Recipe: Warhide Pants (Rank 3)
 						i(136705),	-- Technique: Aqual Mark
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots
 						i(137378),	-- Bottled Hurricane
@@ -272,7 +272,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137877),	-- Recipe: Warhide Pants (Rank 3)
 						i(136705),	-- Technique: Aqual Mark
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots
 						i(137378),	-- Bottled Hurricane

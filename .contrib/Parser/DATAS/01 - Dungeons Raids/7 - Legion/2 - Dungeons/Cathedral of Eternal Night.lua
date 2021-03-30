@@ -81,7 +81,7 @@ _.Instances = { tier(7, {	-- Legion
 					ach(11700),	-- Cathedral of Eternal Night
 					ach(11701),	-- Heroic: Cathedral of Eternal Night
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 					i(144478),	-- Band of Dark Solitude
 					i(144486),	-- Cerulean Shadowfade Belt
 					i(144501),	-- Dread Commander's Pauldrons
@@ -197,7 +197,7 @@ _.Instances = { tier(7, {	-- Legion
 					ach(11703),	-- Master of Shadows
 					ach(11702),	-- Mythic: Cathedral of Eternal Night
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 					i(144478),	-- Band of Dark Solitude
 					i(144486),	-- Cerulean Shadowfade Belt
 					i(144501),	-- Dread Commander's Pauldrons

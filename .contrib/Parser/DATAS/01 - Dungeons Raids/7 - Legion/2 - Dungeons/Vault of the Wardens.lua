@@ -90,7 +90,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(95888, e(1470, {	-- Cordana Felsong
 					ach(10801),	-- Vault of the Wardens
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 					i(137522),	-- Bracers of Twisted Revelation
 					i(137514),	-- Chestguard of Insidious Desire
 					i(137531),	-- Cloak of Enthralling Darkness
@@ -167,7 +167,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
 						i(137930),	-- Recipe: Gravenscale Treads (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(137522),	-- Bracers of Twisted Revelation
 						i(137514),	-- Chestguard of Insidious Desire
 						i(137531),	-- Cloak of Enthralling Darkness
@@ -253,7 +253,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
 						i(137930),	-- Recipe: Gravenscale Treads (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(137522),	-- Bracers of Twisted Revelation
 						i(137514),	-- Chestguard of Insidious Desire
 						i(137531),	-- Cloak of Enthralling Darkness

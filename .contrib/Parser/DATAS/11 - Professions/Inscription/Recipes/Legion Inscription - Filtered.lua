@@ -462,14 +462,15 @@ profession(INSCRIPTION, {
 						{	-- Unwritten Legend
 							["recipeID"] = 222408--[[Unwritten Legend]]
 						},
-						{	-- Codex of the Tranquil Mind
-							["recipeID"] = 227240--[[Codex of the Tranquil Mind]]
+						{	-- Codex of the Tranquil Mind (Rank 1)
+							["recipeID"] = 226248,
 						},
-						{	-- Codex of the Tranquil Mind
-							["recipeID"] = 227239--[[Codex of the Tranquil Mind]]
+						{	-- Codex of the Tranquil Mind (Rank 2)
+							["recipeID"] = 227239,
 						},
-						{	-- Codex of the Tranquil Mind
-							["recipeID"] = 226248--[[Codex of the Tranquil Mind]]
+						{	-- Codex of the Tranquil Mind (Rank 3)
+							["recipeID"] = 227240,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Scroll of Forgotten Knowledge
 							["recipeID"] = 192802--[[Scroll of Forgotten Knowledge]]

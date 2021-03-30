@@ -127,7 +127,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 					i(137912),	-- Recipe: Battlebound Treads (Rank 3)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -196,7 +196,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
@@ -267,7 +267,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
