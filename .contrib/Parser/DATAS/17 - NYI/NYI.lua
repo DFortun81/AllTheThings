@@ -1087,7 +1087,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(54673)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(54677)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(54680)),	-- Unknown
-			un(NEVER_IMPLEMENTED, i(7187)),		-- VanCleef's Boots (Leather)
 			un(NEVER_IMPLEMENTED, i(41757)),	-- Vest of Unyielding Companionship (was in Wrath beta)
 			un(NEVER_IMPLEMENTED, i(26029)),	-- Watchman's Bracers
 			un(NEVER_IMPLEMENTED, i(54711)),	-- Wendigo Collar
