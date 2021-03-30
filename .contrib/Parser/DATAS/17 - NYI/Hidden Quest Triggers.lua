@@ -4225,7 +4225,6 @@ _.HiddenQuestTriggers =
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
-		q(59630),	-- triggered when leaving Ember Court
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -4320,18 +4319,21 @@ _.HiddenQuestTriggers =
 		q(62529),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
 		q(59639),	-- triggered when leaving Ember Court (week 3)
-		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
+		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
 		q(59627),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
 		q(59628),	-- Guest Selected for Ember Court: Mikanikos
 		q(59629),	-- Guest Selected for Ember Court: The Countess
+		q(59630),	-- Guest Selected for Ember Court: Alexandros Morgraine
+		q(59631),	-- Guest Selected for Ember Court: Hunt-Captain Korayn
 		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
+		q(59637),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
 		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
 		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
 		-- Leaving Ember Court: 59627, 59638, ??, ??, 	   => Next RSVPs: CryptKeeper/Klei&Pel/PoleAdres/LadyMoon
+		-- Leaving Ember Court: 59626, 59633, 59634, 59637 => Next RSVPs: Choofa/GMVole/Rendle&Cudgelface/BaronVash
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
 		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
@@ -4383,6 +4385,7 @@ _.HiddenQuestTriggers =
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
+		q(61531),	-- either due to Acquaintence with The Countess, or from the auto-use of "Decree: The Countess's Boon" when opening The Countess's Extravagant Tribute
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -4437,7 +4440,6 @@ _.HiddenQuestTriggers =
 		q(59392),	-- when using "RSVP: The Countess" — first time only
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
-		q(59626),	-- when using 'Guest List Page' (181538)
 		q(61506),	-- when using 'Guest List Page' (181538)
 		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)

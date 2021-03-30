@@ -1138,8 +1138,6 @@ _.ExpansionFeatures =
 										}),
 										crit(3, {	-- Maldraxxus Etiquette
 										}),
-										crit(4, {	-- Revendreth Etiquette
-										}),
 										crit(6, {	-- Dredbat Riding
 										}),
 									}),
@@ -2207,6 +2205,16 @@ _.ExpansionFeatures =
 									["g"] = {
 										crit(6, {	-- Spikey Hair Cut
 											["achievementID"] = 14683,	-- Dredger Style
+										}),
+									},
+								}),
+								q(62205, {	-- Venthyr Etiquette
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183862, 1 } },	-- 1x A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
+									["g"] = {
+										crit(4, {	-- Revendreth Etiquette
+											["achievementID"] = 14681,	-- Dredger Academy
 										}),
 									},
 								}),
