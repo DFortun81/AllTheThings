@@ -98,7 +98,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 					i(136700),	-- Schematic: "The Felic"
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(140037),	-- Technique: Unwritten Legend
 					i(134436),	-- Armbands of Slaughter
 					i(134482),	-- Cinch of Frozen Fear
@@ -124,7 +124,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 					i(136700),	-- Schematic: "The Felic"
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(140037),	-- Technique: Unwritten Legend
 					i(134466),	-- Begrudging Trudgers
 					i(137456),	-- Belt of Mighty Links
@@ -226,7 +226,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(140037),	-- Technique: Unwritten Legend
 						i(134436),	-- Armbands of Slaughter
 						i(134482),	-- Cinch of Frozen Fear
@@ -252,7 +252,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(140037),	-- Technique: Unwritten Legend
 						i(134466),	-- Begrudging Trudgers
 						i(137456),	-- Belt of Mighty Links
@@ -357,7 +357,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(140037),	-- Technique: Unwritten Legend
 						i(134436),	-- Armbands of Slaughter
 						i(134482),	-- Cinch of Frozen Fear
@@ -383,7 +383,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(140037),	-- Technique: Unwritten Legend
 						i(134466),	-- Begrudging Trudgers
 						i(137456),	-- Belt of Mighty Links

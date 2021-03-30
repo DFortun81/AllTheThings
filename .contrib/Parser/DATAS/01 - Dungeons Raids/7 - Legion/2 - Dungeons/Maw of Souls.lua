@@ -54,7 +54,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(96759, e(1663, {	-- Helya
 					ach(10807),	-- Maw of Souls
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -114,7 +114,7 @@ _.Instances = { tier(7, {	-- Legion
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -183,7 +183,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle

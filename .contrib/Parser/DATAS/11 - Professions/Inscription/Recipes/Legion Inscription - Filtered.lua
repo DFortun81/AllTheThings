@@ -470,7 +470,6 @@ profession(INSCRIPTION, {
 						},
 						{	-- Codex of the Tranquil Mind (Rank 3)
 							["recipeID"] = 227240,
-							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Scroll of Forgotten Knowledge
 							["recipeID"] = 192802--[[Scroll of Forgotten Knowledge]]

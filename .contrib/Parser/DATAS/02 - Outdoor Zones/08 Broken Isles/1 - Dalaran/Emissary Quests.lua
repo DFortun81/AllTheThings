@@ -21,7 +21,9 @@ _.Zones =
 						i(152956),	-- Greater Army of the Light Insignia
 						i(152961),	-- Greater Argussian Reach Insignia
 						i(157828, {	-- Kirin Tor Chest
-							un(REMOVED_FROM_GAME, i(141592)),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+							i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3)
+								["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. If you get it from a dungeon boss please let us know on the ATT discord (#unobtainables)!",
+							}),
 							i(141349, {	-- Strange Humming Crystal
 								q(44412,  {	-- Enemies Everywhere
 									["provider"] = { "n", 90417 },	-- Archmage Khadgar
