@@ -377,7 +377,6 @@ _.Zones =
 					["coord"] = { 40.0, 64.8, 1670 },
 				}),
 
-
 				-- Skip Quests
 				q(62801, {	-- The Call of Fate
 					-- TODO: how does this even get completed?
@@ -387,12 +386,17 @@ _.Zones =
 				}),
 				q(62704, {	-- The Threads of Fate
 					-- Completing this Quest is what actually flags the character as a skip character (62713) if they chose that option
-					-- TODO: does anything weird happen when choosing the Story option?
+					-- choosing the story option completes 62704 and picks up 60129 (stranger in an even stranger land) + 63771 (fate's reminder)
 					-- Only available to 'alts' i.e. another character has completed (??)
 					["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 					["coord"] = { 19.6, 50.2, 1670 },
 					["sourceQuests"] = { 59770 },	-- Stand as One
+				}),
+				q(62713, {	-- Fate's Reminder
+				--	no coords, automatically offered
+					["sourceQuests"] = { 62704 },	-- The Threads of Fate
+					["isBreadcrumb"] = true,	-- optional quest reminding you that you can switch to being a skip character at any time - turning in the quest does not activate skip, it just points you to the NPC that does
 				}),
 				q(62716, {	-- Re-Introductions
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

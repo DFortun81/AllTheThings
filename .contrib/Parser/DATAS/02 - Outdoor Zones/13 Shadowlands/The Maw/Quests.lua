@@ -536,8 +536,9 @@ _.Zones =
 					},
 					["provider"] = { "n", 169076 },	-- Highlord Bolvar Fordragon
 					["maps"] = {
-						1681,	-- Icecrown Citadel
-						1682,	-- Icecrown Citadel
+						1681,	-- Icecrown Citadel (Lower Acherus)
+						1682,	-- Icecrown Citadel (Upper Acherus)
+						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
 				}),
 				q(57693, {	-- Torghast, Tower of the Damned

@@ -46,6 +46,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 					ach(13286, {	-- Siege of Dazar'alor (A)
 						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor (H)
+						["crs"] = {
+							177193,	-- Kiku
+							177208,	-- Eppu
+						},
 						["g"] = {
 							e(2344, {	-- Champion of the Light	-- 2333 Horde
 								["crs"] = {
@@ -141,6 +145,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 					ach(13287, {	-- Empire's Fall (A)
 						["hordeAchievementID"] = 13290,	-- Death's Bargain (H)
+						["crs"] = {
+							177193,	-- Kiku
+							177208,	-- Eppu
+						},
 						["g"] = {
 							e(2342, {	-- Opulence
 								["crs"] = {
@@ -239,6 +247,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 					ach(13288, {	-- Might of the Alliance (A)
 						["hordeAchievementID"] = 13291,	-- Victory or Death (H)
+						["crs"] = {
+							177193,	-- Kiku
+							177208,	-- Eppu
+						},
 						["g"] = {
 							e(2334, {	-- High Tinker Mekkatorque
 								["crs"] = { 144796 },	-- High Tinker Mekkatorque

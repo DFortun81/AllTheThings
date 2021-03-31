@@ -2064,6 +2064,10 @@ _.ExpansionFeatures =
 						i(174370),	-- Pattern: Unsettling Seaweave Gloves
 						i(171317),	-- Plans: Unsettling Osmenite Girdle
 						i(171316),	-- Plans: Unsettling Osmenite Legguards
+						i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
+						i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles
+						i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics
+						i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
 					}),
 				}),
 			},
