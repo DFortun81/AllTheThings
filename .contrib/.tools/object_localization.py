@@ -27,8 +27,9 @@ def get_localized_obj_name(obj_id, lang_code):
     return ''
   return heading.text
 
-def get_todo_lines(lines):
+def get_todo_lines_and_og_names(lines):
   todo_dict = {}
+  original_obj_names = {}
   for ind, line in enumerate(lines):
     if 'OBJECT_ID_NAMES' in line:
       # print(f"Found beginning at line {ind + 2}!")
@@ -43,9 +44,10 @@ def get_todo_lines(lines):
             ind += 1
             continue
           todo_dict[ind] = obj_id
+          original_obj_names[ind] = re.search(r'\"(.*?)\"', line).group(1)
         ind += 1
       break
-  return todo_dict
+  return todo_dict, original_obj_names
 
 def get_localized_names(todo_dict, lang_code):
   localized_dict = {}
@@ -65,7 +67,7 @@ def localize_objects(filename, lang_code):
   file = open(filename, 'r')
   lines = file.readlines()
 
-  todo_dict = get_todo_lines(lines)
+  todo_dict, original_obj_names = get_todo_lines_and_og_names(lines)
 
   print(f"Names to localize: {len(todo_dict)}")
 
@@ -77,6 +79,7 @@ def localize_objects(filename, lang_code):
       obj_name = localized_dict[line_ind]
       line = re.sub('\".*\"', f'"{obj_name}"', line)
       line = re.sub('--TODO: ', '', line)
+      line = re.sub('\n', f'\t-- {original_obj_names[line_ind]}\n', line)
     print(line, end='') # this writes to file
 
 def sort_objects(filename):

@@ -1980,7 +1980,7 @@ for key, value in pairs({
 	--TODO: [240616] = "Frozen Supplies",
 	--TODO: [240617] = "Lost Sentinel's Pouch",
 	[240619] = "小宝箱",
-	--TODO: [240622] = "Warden's Spellcase",
+	--TODO: [240622] = "Warden's Scroll Case",						-- Warden's Scroll Case
 	[240623] = "希尔瓦娜斯的保险箱",
 	--TODO: [240624] = "Faerie Dragon Nest",
 	--TODO: [240625] = "High Priestess' Reliquary",
