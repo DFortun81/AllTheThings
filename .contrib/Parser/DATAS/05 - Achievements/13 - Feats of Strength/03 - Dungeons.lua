@@ -168,6 +168,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),
+			ach(14938, {	-- Shadowlands Keystone Explorer: Season One
+				-- There's no criteria here because it's messed up in-game as of 9.0.5 (only 2-6 work, the others are blank or give error msgs).  Blame Blizz.
+			}),
 			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
 				title(431),	-- 'the Proud'
 				crit(1),	-- Necrotic Wake
