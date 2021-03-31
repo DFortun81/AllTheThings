@@ -2849,7 +2849,7 @@ for key,value in pairs({
 	--TODO: [356728] = "Mikanikos' Extravagant Tribute",
 	[356733] = "Tribut extravagant de Kléia et Pélagos",
 	[356737] = "Tribut extravagant de Sika",
-	--TODO: [356741] = "The Countess' Extravagant Tribute",
+	[356741] = "Tribut extravagant de la comtesse",	-- The Countess' Extravagant Tribute
 	[356744] = "Tribut extravagant de Rondel et Férul",
 	[356748] = "Tribut extravagant de Tête-de-Caillasse",
 	[356752] = "Tribut extravagant du gardien de la crypte Kassir",
