@@ -2327,7 +2327,7 @@ for key,value in pairs({
 	[257545] = "보물 상자",
 	[257546] = "보물 상자",
 	[257999] = "각인 기법: 고요한 정신의 고서",
-	--TODO: [258690] = "Small Treasure Chest",
+	[258690] = "작은 보물 상자",	-- Small Treasure Chest
 	[258978] = "물에 젖은 고서",
 	[258980] = "저주받은 고서",
 	[265532] = "이동술 신호 장치",
@@ -2365,7 +2365,7 @@ for key,value in pairs({
 	--TODO: [273222] = "Eredar War Supplies",
 	--TODO: [273301] = "Ancient Eredar Cache",
 	--TODO: [273407] = "Ancient Eredar Cache",
-	--TODO: [273412] = "Ancient Eredar Cache",
+	[273412] = "고대 에레다르 보관함",	-- Ancient Eredar Cache
 	--TODO: [273414] = "Ancient Eredar Cache",
 	[273415] = "고대 에레다르 보관함",
 	[273439] = "고대 에레다르 보관함",
@@ -2709,7 +2709,7 @@ for key,value in pairs({
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "잊힌 귀족의 상자",
 	[339770] = "버려진 보물 상자",
-	--TODO: [343611] = "Voidtouched Egg",
+	[343611] = "공허에 물든 알",	-- Voidtouched Egg
 	[344588] = "스튜어트의 기막힌 스튜",
 	[344726] = "어둠의 설교",
 	[345446] = "룬수사슴의 위대한 뿔",
@@ -2769,7 +2769,7 @@ for key,value in pairs({
 	[353325] = "은 금고",
 	[353326] = "부패한 껍데기",
 	--TODO: [353327] = "Decayed Husk",
-	--TODO: [353329] = "Faerie Stash",
+	[353329] = "페어리 보관함",	-- Faerie Stash
 	[353330] = "페어리 보관함",
 	[353331] = "페어리 보관함",
 	[353332] = "페어리 보관함",

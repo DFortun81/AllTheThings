@@ -2849,8 +2849,8 @@ for key,value in pairs({
 	--TODO: [356728] = "Mikanikos' Extravagant Tribute",
 	[356733] = "Tributo exorbitante de Kleia y Pelagos",
 	[356737] = "Tributo exorbitante de Sika",
-	--TODO: [356741] = "The Countess' Extravagant Tribute",
-	--TODO: [356744] = "Rendle and Cudgelface's Extravagant Tribute",
+	[356741] = "Tributo exorbitante de la condesa",	-- The Countess' Extravagant Tribute
+	[356744] = "Tributo exorbitante de Rendle y Caragarrote",	-- Rendle and Cudgelface's Extravagant Tribute
 	[356748] = "Tributo exorbitante de Cabeza Pétrea",
 	[356752] = "Tributo exorbitante del guardacriptas Kassir",
 	[356757] = "Deseo de avaricia",
