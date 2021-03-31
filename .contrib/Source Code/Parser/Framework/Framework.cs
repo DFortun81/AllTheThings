@@ -214,7 +214,12 @@ namespace ATT
             // Items that were added to the game after the current expansion shouldn't be included in the game.
             if (data.TryGetValue("itemID", out int itemID))
             {
-                if (itemID > MAX_ITEMID) return false;
+                if (itemID > MAX_ITEMID)
+                {
+                    Trace.Write("Excluding Item #");
+                    Trace.WriteLine(itemID);
+                    return false;
+                }
             }
 
             // Get the filter for this Item
@@ -488,7 +493,12 @@ namespace ATT
                         {
                             case "i":
                                 itemID = decimal.ToInt32(Convert.ToDecimal(c[1]));
-                                if (itemID > MAX_ITEMID) cost.RemoveAt(i);
+                                if (itemID > MAX_ITEMID)
+                                {
+                                    Trace.Write("Excluding Item #");
+                                    Trace.WriteLine(itemID);
+                                    cost.RemoveAt(i);
+                                }
                                 else
                                 {
                                     var item = Items.GetNull(itemID);
