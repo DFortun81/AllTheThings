@@ -7,6 +7,9 @@
 local name, app = ...;
 function app:GetName() return name; end
 _G["AllTheThings"] = app;
+app.asset = function(path)
+	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+end
 
 -- Create an Event Processor.
 local events = {};

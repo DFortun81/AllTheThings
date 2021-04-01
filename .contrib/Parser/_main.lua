@@ -572,6 +572,14 @@ isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 
+-- Asset Path Helper Functions
+asset = function(path)
+	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+end
+icon = function(path)
+	return "Interface\\Icons\\" .. path;
+end
+
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
