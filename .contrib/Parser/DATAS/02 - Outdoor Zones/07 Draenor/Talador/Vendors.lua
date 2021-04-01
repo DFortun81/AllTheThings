@@ -88,9 +88,9 @@ _.Zones =
 				n(86949, {	-- Zooti Fizzlefury
 					["coord"] = { 85.0, 31.0, 535 },
 					["g"] = {
-						currency(1191, {	-- Valor
-							un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
-						}),
+						-- currency(1191, {	-- Valor
+						un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+						-- }),
 						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
 						un(REMOVED_FROM_GAME, i(118291)),	-- Solium Band of Wisdom
 						un(REMOVED_FROM_GAME, i(118292)),	-- Solium Band of Dexterity
