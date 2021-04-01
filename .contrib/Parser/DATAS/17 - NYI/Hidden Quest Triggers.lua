@@ -2063,6 +2063,7 @@ _.HiddenQuestTriggers =
 		q(40709),	-- Priest Order Hall - Discipline chosen first
 		q(43941), 	-- Priest Order Hall - Discipline chosen second
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
+		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second

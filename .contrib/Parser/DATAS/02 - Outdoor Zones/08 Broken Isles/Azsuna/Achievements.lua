@@ -11,13 +11,6 @@ _.Zones =
 					cl(PRIEST, {
 						["classes"] = { PRIEST },
 						["g"] = {
-							q(43375, {	-- An Ample Supply
-								["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
-								["classes"] = { PRIEST },
-								["coord"] = { 58.5, 37.2, 630 },
-								["lvl"] = 103,
-								["provider"] = { "n", 110686 },	-- Zabra Hexx
-							}),
 							q(42137, {	-- Champion: Yalia Sagewhisper
 								["sourceQuests"] = { 43376 },	-- Problem Salver
 								["classes"] = { PRIEST },
@@ -45,13 +38,6 @@ _.Zones =
 								},
 								["classes"] = { PRIEST },
 								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
-							}),
-							q(43374, {	-- Murloc Mind Control
-								["sourceQuests"] = { 43372 },	-- The Best and Brightest
-								["classes"] = { PRIEST },
-								["coord"] = { 58.5, 37.2, 630 },
-								["lvl"] = 103,
-								["provider"] = { "n", 110686 },	-- Zabra Hexx
 							}),
 							q(43376, {	-- Problem Salver
 								["sourceQuests"] = {

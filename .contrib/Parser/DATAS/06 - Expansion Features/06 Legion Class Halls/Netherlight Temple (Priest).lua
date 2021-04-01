@@ -244,6 +244,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
 					}),
+					q(43375, {	-- An Ample Supply
+						["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
+						["classes"] = { PRIEST },
+						["coord"] = { 58.5, 37.2, 630 },
+						["provider"] = { "n", 110686 },	-- Zabra Hexx
+					}),
 					n(46028, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
@@ -342,6 +348,12 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { PRIEST },
 					}),
+					q(43374, {	-- Murloc Mind Control
+						["sourceQuests"] = { 43372 },	-- The Best and Brightest
+						["classes"] = { PRIEST },
+						["coord"] = { 58.5, 37.2, 630 },
+						["provider"] = { "n", 110686 },	-- Zabra Hexx
+					}),					
 					q(44251, {	-- Power Word: Armor
 						["classes"] = { PRIEST },
 						["coord"] = { 38.9, 24.4, 702 },
@@ -400,7 +412,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43372 },	-- Whispers in the Void
 						["classes"] = { PRIEST },
 						["coord"] = { 48.2, 48.2, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
 					q(40938, {	-- The Light and the Void
@@ -444,7 +455,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
 						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.7, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					--[[ Artifact Appearance Quests Commented Out For Now
