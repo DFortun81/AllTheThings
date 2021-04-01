@@ -2117,7 +2117,7 @@ subroutines = {
 			{"select", "instanceID", 1002},	-- Tol Dagor
 			{"select", "instanceID", 1021},	-- Waycrest Manor
 
-			-- Process the Dungeons, Heroic Mode Only Loot for the azerite pieces.
+			-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
 			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
 			{"where", "difficultyID", 1},	-- Select only the Normal Difficulty Headers.
 			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
