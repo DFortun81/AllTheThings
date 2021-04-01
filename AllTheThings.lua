@@ -6673,45 +6673,6 @@ local fields = {
 	end,
 };
 app.BaseDifficulty = app.BaseObjectFields(fields);
--- app.BaseDifficulty = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "difficultyID";
--- 		elseif key == "text" then
--- 			return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
--- 		elseif key == "icon" then
--- 			return app.DifficultyIcons[t.difficultyID];
--- 		elseif key == "saved" then
--- 			return t.locks;
--- 		elseif key == "locks" and t.parent then
--- 			local locks = t.parent.locks;
--- 			if locks then
--- 				if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
--- 					rawset(t, key, locks.shared);
--- 					return locks.shared;
--- 				else
--- 					-- Look for this difficulty's lockout.
--- 					for difficultyKey, lock in pairs(locks) do
--- 						if difficultyKey == "shared" then
--- 							-- ignore this one
--- 						elseif difficultyKey == t.difficultyID then
--- 							rawset(t, key, lock);
--- 							return lock;
--- 						end
--- 					end
--- 				end
--- 			end
--- 		elseif key == "u" then
--- 			if t.difficultyID == 24 or t.difficultyID == 33 then
--- 				return 42;
--- 			end
--- 		elseif key == "description" then
--- 			if t.difficultyID == 24 or t.difficultyID == 33 then
--- 				return L["WE_JUST_HATE_TIMEWALKING"];		--L["WE_JUST_HATE_TIMEWALKING"] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one."
--- 			end
--- 		end
--- 	end
--- };
 app.CreateDifficulty = function(id, t)
 	return setmetatable(constructor(id, t, "difficultyID"), app.BaseDifficulty);
 end
