@@ -2119,12 +2119,12 @@ subroutines = {
 
 			-- Process the Dungeons, Heroic Mode Only Loot for the azerite pieces.
 			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 2},	-- Select only the Heroic Difficulty Headers.
+			{"where", "difficultyID", 1},	-- Select only the Normal Difficulty Headers.
 			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
 			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
 			{"is", "itemID"},	-- Only Items!
 			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"modID", 2},	-- Heroic
+			{"modID", 1},	-- Normal
 		};
 	end,
 	["bfa_azerite_armor_chest_warfront"] = function()
