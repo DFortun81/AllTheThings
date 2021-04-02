@@ -21,10 +21,12 @@ namespace ATT
         private static readonly int[] CURRENT_VERSION_ARR = new int[]
         {
 #if CLASSIC
-            1, 13, 3, 28211
+            1, 13, 6, 37497
+#elif TBC
+            2, 5, 1, 38169
 #else
             // BFA
-            8, 3, 0, 30918
+            9, 0, 5, 38134
 #endif
         };
 
@@ -68,7 +70,20 @@ namespace ATT
         /// </summary>
         public static readonly long MAX_ITEMID =
 #if CLASSIC
-            24358
+            99999999//24358 // NOTE: This was not an ideal solution. Moving forward, use the Phase Identifiers.
+#else
+            99999999
+#endif
+            ;
+
+        /// <summary>
+        /// The maximum available Phase Identifier.
+        /// </summary>
+        public static readonly long MAX_PHASE_ID =
+#if CLASSIC
+            16
+#elif TBC
+            22
 #else
             99999999
 #endif
@@ -210,6 +225,18 @@ namespace ATT
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
+
+            // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
+            if (data.TryGetValue("u", out int phase))
+            {
+                if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
+                {
+                    data.Remove("g");
+                    //Trace.Write("Excluding ");
+                    //Trace.WriteLine(MiniJSON.Json.Serialize(data));
+                    return false;
+                }
+            }
 
             // Items that were added to the game after the current expansion shouldn't be included in the game.
             if (data.TryGetValue("itemID", out int itemID))

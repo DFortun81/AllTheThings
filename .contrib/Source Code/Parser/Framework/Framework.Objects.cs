@@ -1460,7 +1460,7 @@ namespace ATT
                         {
                             MergeIntegerArrayData(item, field, dict.Values.ToList());
                         }
-#if CLASSIC
+#if CRIEVE
                         else item[field] = Convert.ToInt32(value);
 #endif
                         break;
@@ -1742,12 +1742,26 @@ namespace ATT
                     costsList.Add(costsObjs);
                 }
 
-                foreach (var cost in costsList)
+                for(int i = costsList.Count - 1;i >= 0;--i)
                 {
+                    var cost = costsList[i];
                     string costType = cost[0].ToString();
                     // ensure the cost has the appropriate number of objects based on type
-                    if ((costType == "i" || costType == "c") && cost.Count != 3)
-                        Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                    if (costType == "i" || costType == "c")
+                    {
+                        if(cost.Count == 4)
+                        {
+                            var phase = long.Parse(cost[3].ToString());
+                            if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
+                            {
+                                costsList.RemoveAt(i);
+                                //Trace.Write("Excluding Cost ");
+                                //Trace.WriteLine(MiniJSON.Json.Serialize(cost));
+                                continue;
+                            }
+                        }
+                        else if(cost.Count != 3) Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                    }
 
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                     if (costType == "i")
