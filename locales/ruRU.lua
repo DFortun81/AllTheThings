@@ -465,6 +465,7 @@ local L = app.L;
 		L.TOGGLE_ACCOUNT_MODE = "Переключить режим Аккаунта";
 		L.TOGGLE_COMPLETIONIST_MODE = "Переключить режим Собирателя";
 		L.TOGGLE_DEBUG_MODE = "Переключить режим Отладки";
+		--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 		L.PREFERENCES = "Настройки";
 		L.TOGGLE_COMPLETEDTHINGS = "Переключить Собранные Предметы (Все)";
 		L.TOGGLE_COMPLETEDGROUPS = "Переключить Собранные Группы";

@@ -465,6 +465,7 @@ local L = app.L;
 		--TODO: L.TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
 		--TODO: L.TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
 		--TODO: L.TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
+		--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 		--TODO: L.PREFERENCES = "Preferences";
 		--TODO: L.TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
 		--TODO: L.TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";

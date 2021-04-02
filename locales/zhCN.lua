@@ -467,6 +467,7 @@ local L = app.L;
 		L["TOGGLE_ACCOUNT_MODE"] = "切换账号模式"
 		L["TOGGLE_COMPLETIONIST_MODE"] = "切换完美主义者模式"
 		L["TOGGLE_DEBUG_MODE"] = "切换调试模式"
+		--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 		L["PREFERENCES"] = "偏好"
 		L["TOGGLE_COMPLETEDTHINGS"] = "隐藏/显示已完成组和项"
 		L["TOGGLE_COMPLETEDGROUPS"] = "隐藏/显示已完成组"

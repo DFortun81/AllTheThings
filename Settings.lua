@@ -11,6 +11,7 @@ BINDING_HEADER_ALLTHETHINGS = L["TITLE"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L["TOGGLE_COMPLETIONIST_MODE"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
+BINDING_NAME_ALLTHETHINGS_TOGGLEFACTIONMODE = L["TOGGLE_FACTION_MODE"];
 
 BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L["PREFERENCES"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
@@ -79,6 +80,7 @@ local GeneralSettingsBase = {
 		["Completionist"] = true,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
+		["FactionMode"] = false,
 		["Repeatable"] = false,
 		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
@@ -248,7 +250,11 @@ settings.GetModeString = function(self)
 		mode = L["TITLE_DEBUG"] .. mode;		-- L["TITLE_DEBUG"] = "Debug "
 	else
 		if self:Get("AccountMode") then
-			mode = L["TITLE_ACCOUNT"] .. mode;		-- L["TITLE_ACCOUNT"] = "Account ";
+			if self:Get("FactionMode") then
+				mode = FACTION .. " " .. mode;
+			else
+				mode = L["TITLE_ACCOUNT"] .. mode;		-- L["TITLE_ACCOUNT"] = "Account ";
+			end
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
 			mode = mode .. L["TITLE_MAIN_ONLY"];		-- L["TITLE_MAIN_ONLY"] = " (Main Only)";
 		end
@@ -494,6 +500,13 @@ end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
 end
+settings.SetFactionMode = function(self, factionMode)
+	self:Set("FactionMode", factionMode);
+	self:UpdateMode(1);
+end
+settings.ToggleFactionMode = function(self)
+	self:SetFactionMode(not self:Get("FactionMode"));
+end
 settings.SetMainOnlyMode = function(self, mainOnly)
 	self:Set("MainOnly", mainOnly);
 	self:SetCompletionistMode(self:Get("Completionist"));
@@ -660,10 +673,13 @@ settings.UpdateMode = function(self, doRefresh)
 		if self:Get("AccountMode") then
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
-			app.RaceRequirementFilter = app.NoFilter;
 			app.RequiredSkillFilter = app.NoFilter;
-
 			app.MODE_ACCOUNT = true;
+			if self:Get("FactionMode") then
+				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
+			else
+				app.RaceRequirementFilter = app.NoFilter;
+			end
 		else
 			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
@@ -867,6 +883,23 @@ function(self)
 end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
 AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
+
+local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
+function(self)
+	self:SetChecked(settings:Get("FactionMode"));
+	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFactionMode(self:GetChecked());
+end);
+FactionModeCheckBox:SetATTTooltip("Turn this setting on if you want to see Account Mode data for all classes of your current faction.");
+FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 170, 0);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
