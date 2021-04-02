@@ -41,8 +41,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			d(2,  {	-- Heroic
 				e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 					-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
-					["crs"] = { 128650 },	-- Chopper Redhook
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 128650 },	-- Chopper Redhook
 					["g"] = {
 						i(159972),	-- Mutineer's Fate
 						i(159973),	-- Boarder's Billy Club
@@ -56,8 +56,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2133, {	-- Sergeant Bainbridge [1st Encounter - Horde]
 					-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
-					["crs"] = { 144158 },	-- Sergeant Bainbridge
 					["races"] = HORDE_ONLY,
+					["crs"] = { 128649 },	-- Sergeant Bainbridge
 					["g"] = {
 						i(159647),	-- Siegebreaker's Halberd
 						i(159648),	-- Bainbridge's Blackjack
@@ -108,6 +108,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159416),	-- Harpooner's Plate Cuirass
 						i(159362),	-- Tri-Heart Chestguard
 						i(159256),	-- Iron-Kelp Wristwraps
+						i(168130),	-- Essence of the Depths
 					},
 				}),
 			}),
@@ -130,8 +131,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
-						["crs"] = { 128650 },	-- Chopper Redhook
 						["races"] = ALLIANCE_ONLY,
+						["crs"] = { 128650 },	-- Chopper Redhook
 						["g"] = {
 							i(159972),	-- Mutineer's Fate
 							i(159973),	-- Boarder's Billy Club
@@ -145,8 +146,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2133, {	-- Sergeant Bainbridge [1st Encounter - Horde]
 						-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
-						["crs"] = { 144158 },	-- Sergeant Bainbridge
 						["races"] = HORDE_ONLY,
+						["crs"] = { 128649 },	-- Sergeant Bainbridge
 						["g"] = {
 							i(159647),	-- Siegebreaker's Halberd
 							i(159648),	-- Bainbridge's Blackjack
@@ -199,6 +200,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159416),	-- Harpooner's Plate Cuirass
 							i(159362),	-- Tri-Heart Chestguard
 							i(159256),	-- Iron-Kelp Wristwraps
+							i(168130),	-- Essence of the Depths
 						},
 					}),
 				},

@@ -17,7 +17,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(8, {	-- Rezan Respected
-							["npcID"] = 122963,	-- Rezan
+							["cr"] = 122963,	-- Rezan
 						}),
 					},
 				}),
@@ -91,6 +91,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158303),	-- Devilsaur Worshiper's Sandals
 						i(159458),	-- Seal of the Regal Loa
 						i(158712),	-- Rezan's Gleaning Eye
+						i(168128),	-- Essence of the Regal Loa
 					}),
 				}),
 				e(2030, {	-- Yazma
@@ -155,6 +156,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
 							i(158712),	-- Rezan's Gleaning Eye
+							i(168128),	-- Essence of the Regal Loa
 						},
 					}),
 					e(2030, {	-- Yazma
@@ -244,6 +246,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
 							i(158712),	-- Rezan's Gleaning Eye
+							i(168128),	-- Essence of the Regal Loa
 						},
 					}),
 					e(2030, {	-- Yazma

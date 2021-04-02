@@ -2623,6 +2623,7 @@ _.HiddenQuestTriggers =
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
 		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
+		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		
 		-- MISSIONS
 		q(53743),	-- Hillcrest Pasture completed

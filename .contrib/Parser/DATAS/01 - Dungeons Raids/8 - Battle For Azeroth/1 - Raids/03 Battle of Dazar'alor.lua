@@ -241,6 +241,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165578),	-- Mirror of Entwined Fate
 									i(165696),	-- Formula: Enchanted Tiki Mask
 									i(165703),	-- Breath of Bwonsamdi
+									i(168129),	-- Essence of the Troll Dynasty
 								},
 							}),
 						},
@@ -546,6 +547,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165577),	-- Bwonsamdi's Bargain
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
+							i(168129),	-- Essence of the Troll Dynasty
 						},
 					}),
 					e(2334, {	-- High Tinker Mekkatorque
@@ -842,6 +844,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165577),	-- Bwonsamdi's Bargain
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
+							i(168129),	-- Essence of the Troll Dynasty
 						},
 					}),
 					e(2334, {	-- High Tinker Mekkatorque
@@ -1151,6 +1154,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165577),	-- Bwonsamdi's Bargain
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
+							i(168129),	-- Essence of the Troll Dynasty
 						},
 					}),
 					e(2334, {	-- High Tinker Mekkatorque
