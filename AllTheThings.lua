@@ -6860,7 +6860,7 @@ app.BaseFaction = {
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
 				or L["FACTION_ID_ICONS"][t.factionID]
 				or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
-				or "Interface\\Addons\\AllTheThings\\assets\\factions";
+				or app.asset("Category_Factions");
 		elseif key == "isFriend" then
 			if select(1, GetFriendshipReputation(t.factionID)) then
 				rawset(t, "isFriend", true);
@@ -12463,17 +12463,16 @@ function app:GetDataCache()
 		db.g = app.Categories.Instances;
 		db.expanded = false;
 		db.text = GROUP_FINDER;
-		db.icon = "Interface\\Addons\\AllTheThings\\assets\\D&R";
+		db.icon = app.asset("Category_D&R");
 		table.insert(g, db);
 
 		-- Zones
 		if app.Categories.Zones then
 			db = {};
 			db.g = app.Categories.Zones;
-			-- db = app.CreateAchievement(46, app.Categories.Zones);
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\zones"
+			db.icon = app.asset("Category_Zones")
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12484,8 +12483,7 @@ function app:GetDataCache()
 			db.g = app.Categories.WorldDrops;
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
-			--db.text = ITEM_BIND_ON_EQUIP;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\wdrop";
+			db.icon = app.asset("Category_WorldDrops");
 			table.insert(g, db);
 		end
 
@@ -12493,10 +12491,9 @@ function app:GetDataCache()
 		if app.Categories.GroupFinder then
 			db = {};
 			db.g = app.Categories.GroupFinder;
-			-- db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\grpf"
+			db.icon = app.asset("Category_GroupFinder")
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12505,10 +12502,9 @@ function app:GetDataCache()
 		if app.Categories.Achievements then
 			db = {};
 			db.g = app.Categories.Achievements;
-			-- db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\ach"
+			db.icon = app.asset("Category_Achievements")
 			db.npcID = -4;
 			db.collectible = false;
 			table.insert(g, db);
@@ -12521,7 +12517,7 @@ function app:GetDataCache()
 			db.lvl = 10;
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\xpacf";
+			db.icon = app.asset("Category_ExpansionFeatures");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12529,7 +12525,7 @@ function app:GetDataCache()
 		-- Events
 		if app.Categories.WorldEvents then
 			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\event";
+			db.icon = app.asset("Category_Event");
 			db.expanded = false;
 			db.collectible = false;
 			table.insert(g, db);
@@ -12539,8 +12535,7 @@ function app:GetDataCache()
 		if app.Categories.Holidays then
 			db = {};
 			db.g = app.Categories.Holidays;
-			-- db = app.CreateAchievement(2144, app.Categories.Holidays);
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Hol";
+			db.icon = app.asset("Category_Holidays");
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			db.npcID = -3;
@@ -12572,19 +12567,18 @@ function app:GetDataCache()
 			self.g = cache;
 		end;
 		db.OnUpdate(db);
-		db.text = L["FLIGHT_PATHS"];		-- L["FLIGHT_PATHS"] = "Flight Paths";
-		db.icon = "Interface\\Addons\\AllTheThings\\assets\\fpl";
+		db.text = L["FLIGHT_PATHS"];
+		db.icon = app.asset("Category_FlightPaths");
 		table.insert(g, db);
 
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = {};
 			db.g = app.Categories.PetBattles;
-			-- db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\petb"
+			db.icon = app.asset("Category_PetBattles")
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12595,7 +12589,7 @@ function app:GetDataCache()
 			db.g = app.Categories.PVP;
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\pvp";
+			db.icon = app.asset("Category_PvP");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12604,10 +12598,9 @@ function app:GetDataCache()
 		if app.Categories.Craftables then
 			db = {};
 			db.g = app.Categories.Craftables;
-			-- db = app.CreateAchievement(5035, {});
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\craft";
+			db.icon = app.asset("Category_Crafting");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12616,10 +12609,9 @@ function app:GetDataCache()
 		if app.Categories.Professions then
 			db = {};
 			db.g = app.Categories.Professions;
-			-- db = app.CreateAchievement(10583, {});
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\prof";
+			db.icon = app.asset("Category_Professions");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12631,7 +12623,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.description = "Naughty secrets...";
 			db.text = L["SECRETS_HEADER"];
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\secrets";
+			db.icon = app.asset("Category_Secrets");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12642,7 +12634,7 @@ function app:GetDataCache()
 			db.g = app.Categories.SelfieFilters;
 			db.expanded = false;
 			db.text = L["SELFIE_FILTERS_HEADER"];
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Selfc";
+			db.icon = app.asset("Category_SelfieFilters");
 			db.lvl = 40;	-- used to be 100
 			table.insert(g, db);
 		end
@@ -12651,10 +12643,9 @@ function app:GetDataCache()
 		if app.Categories.GearSets then
 			db = {};
 			db.g = app.Categories.GearSets;
-			-- db = app.CreateAchievement(11761, app.Categories.GearSets);
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\isets";
+			db.icon = app.asset("Category_ItemSets");
 			table.insert(g, db);
 		end
 
@@ -12664,7 +12655,7 @@ function app:GetDataCache()
 			db.g = app.Categories.InGameShop;
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\gshop";
+			db.icon = app.asset("Category_InGameShop");
 			table.insert(g, db);
 		end
 
@@ -12681,11 +12672,10 @@ function app:GetDataCache()
 		if app.Categories.Factions then
 			db = {};
 			db.g = app.Categories.Factions;
-			db.npcID = -6013;	-- Factions, for 'mapping' tech on Factions to work properly
-			-- db = app.CreateAchievement(11177, app.Categories.Factions);
+			db.npcID = -6013;
 			db.expanded = false;
-			db.text = L["FACTIONS"];		-- L["FACTIONS"] = "Factions"
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\factions";
+			db.text = L["FACTIONS"];
+			db.icon = app.asset("Category_Factions");
 			table.insert(g, db);
 		end
 
@@ -12693,10 +12683,9 @@ function app:GetDataCache()
 		if app.Categories.Mounts then
 			db = {};
 			db.g = app.Categories.Mounts;
-			-- db = app.CreateAchievement(app.FactionID == Enum.FlightPathFaction.Horde and 12934 or 12933, app.Categories.Mounts);
 			db.expanded = false;
 			db.text = MOUNTS;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\mounts"
+			db.icon = app.asset("Category_Mounts");
 			table.insert(g, db);
 		end
 
@@ -12704,11 +12693,10 @@ function app:GetDataCache()
 		if app.Categories.PetJournal then
 			db = {};
 			db.g = app.Categories.PetJournal;
-			-- db = app.CreateAchievement(12958, app.Categories.PetJournal);
 			db.f = 101;
 			db.expanded = false;
 			db.text = PET_JOURNAL;
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\petj";
+			db.icon = app.asset("Category_PetJournal");
 			table.insert(g, db);
 		end
 
@@ -12716,7 +12704,6 @@ function app:GetDataCache()
 		if app.Categories.Titles then
 			db = {};
 			db.g = app.Categories.Titles;
-			-- db = app.CreateAchievement(2188, app.Categories.Titles);
 			db.expanded = false;
 			db.text = "Titles";
 			table.insert(g, db);
@@ -12726,8 +12713,7 @@ function app:GetDataCache()
 		if app.Categories.Toys then
 			db = {};
 			db.g = app.Categories.Toys;
-			-- db = app.CreateAchievement(12996, app.Categories.Toys);
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\toy";
+			db.icon = app.asset("Category_ToyBox");
 			db.expanded = false;
 			db.f = 102;
 			db.text = TOY_BOX;
@@ -15290,7 +15276,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
 							response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = "Interface\\Addons\\AllTheThings\\assets\\ach",g=response});  end
+							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
