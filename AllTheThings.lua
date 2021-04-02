@@ -12445,7 +12445,7 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.icon = app.asset("content");
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
@@ -13027,7 +13027,7 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.icon = app.asset("content");
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
@@ -17721,7 +17721,7 @@ app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
-		icon = "Interface\\Addons\\AllTheThings\\assets\\logo_32x32",
+		icon = app.asset("logo_32x32"),
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,

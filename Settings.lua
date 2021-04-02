@@ -55,21 +55,21 @@ end
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
-	"Interface\\AddOns\\AllTheThings\\assets\\complete1.ogg",
+	app.asset("complete1.ogg"),
 };
 settings.AUDIO_FANFARE_TABLE = {
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare1.ogg",
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare2.ogg",
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare3.ogg",
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare4.ogg",
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare5.ogg",
-	"Interface\\AddOns\\AllTheThings\\assets\\fanfare6.ogg",
+	app.asset("fanfare1.ogg"),
+	app.asset("fanfare2.ogg"),
+	app.asset("fanfare3.ogg"),
+	app.asset("fanfare4.ogg"),
+	app.asset("fanfare5.ogg"),
+	app.asset("fanfare6.ogg"),
 };
 settings.AUDIO_RAREFIND_TABLE = {
-	"Interface\\AddOns\\AllTheThings\\assets\\rarefind1.ogg",
+	app.asset("rarefind1.ogg"),
 };
 settings.AUDIO_REMOVE_TABLE = {
-	"Interface\\AddOns\\AllTheThings\\assets\\remove1.ogg",
+	app.asset("remove1.ogg"),
 };
 
 -- Settings Class
