@@ -541,14 +541,14 @@ local L = app.L;
 		L["TRADEABLE"] = "可交易"
 
 	-- Icons and Collection Text
-		L["COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abff已收集|r" -- Acquired the colors and icon from CanIMogIt.
-		L["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abff已收集*|r" -- Acquired the colors and icon from CanIMogIt.
-		L["NOT_COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333未收集|r" -- Acquired the colors and icon from CanIMogIt.
-		L["COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47已完成|r" -- Acquired the colors and icon from CanIMogIt.
-		L["COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47已完成*|r";		-- Acquired the colors and icon from CanIMogIt.
-		L["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
-		L["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abff当前角色已习得|r"
-		L["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333当前角色未习得|r"
+		L["COLLECTED"] = "|T" .. app.asset("known") .. ":0|t |cff15abff已收集|r" -- Acquired the colors and icon from CanIMogIt.
+		L["COLLECTED_APPEARANCE"] = "|T" .. app.asset("known_circle") .. ":0|t |cff15abff已收集*|r" -- Acquired the colors and icon from CanIMogIt.
+		L["NOT_COLLECTED"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未收集|r" -- Acquired the colors and icon from CanIMogIt.
+		L["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r" -- Acquired the colors and icon from CanIMogIt.
+		L["COMPLETE_OTHER"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";		-- Acquired the colors and icon from CanIMogIt.
+		L["INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
+		L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已习得|r"
+		L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未习得|r"
 
 L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";

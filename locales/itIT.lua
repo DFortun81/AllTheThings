@@ -508,14 +508,14 @@ local L = app.L;
 		--TODO: L.TRADEABLE = "Tradeable";
 
 	-- Icons and Collection Text
-		--TODO: L.COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.COLLECTED_APPEARANCE = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.NOT_COLLECTED = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Not Collected|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\incomplete:0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffKnown on current character|r";
-		--TODO: L.UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Unknown on current character|r";
+		--TODO: L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.COMPLETE_OTHER"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
+		--TODO: L.KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abffKnown on current character|r";
+		--TODO: L.UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({

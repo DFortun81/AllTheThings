@@ -7101,12 +7101,12 @@ end)();
 				local faction = t.info.faction;
 				if faction and faction > 0 then
 					if faction == Enum.FlightPathFaction.Horde then
-						return "Interface\\Addons\\AllTheThings\\assets\\fp_horde";
+						return app.asset("fp_horde");
 					else
-						return "Interface\\Addons\\AllTheThings\\assets\\fp_alliance";
+						return app.asset("fp_alliance");
 					end
 				end
-				return "Interface\\Addons\\AllTheThings\\assets\\fp_neutral";
+				return app.asset("fp_neutral");
 			else
 				-- Something that isn't dynamic.
 				return rawget(t.info, key);
@@ -11207,9 +11207,9 @@ local function SetRowData(self, row, data)
 		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.repeatable then
-				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
+				row.Indicator:SetTexture(app.asset("known"));
 			else
-				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
+				row.Indicator:SetTexture(app.asset("known_green"));
 			end
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
@@ -13200,7 +13200,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 
 		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
 		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture("Interface\\AddOns\\AllTheThings\\assets\\grip");
+		grip:SetTexture(app.asset("grip"));
 		grip:SetSize(16, 16);
 		grip:SetTexCoord(0,1,0,1);
 		grip:SetPoint("BOTTOMRIGHT", -5, 5);

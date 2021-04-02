@@ -7,6 +7,6 @@ _.Holidays = bubbleDown({["u"] = 19},
 	{	-- Noblegarden
 		["holidayID"] = 235477,	-- Noblegarden
 		["u"] = 19,				-- Noblegarden Filter
-		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\noblegarden",
+		["icon"] = asset("noblegarden"),
 	},
 });

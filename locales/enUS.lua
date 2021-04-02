@@ -554,20 +554,20 @@ app.L = {
 
 
 	-- Icons and Collection Text
-	["LOGO_SMALL"] = "Interface\\Addons\\AllTheThings\\assets\\logo_tiny";	-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
-	["COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t";	-- Acquired the colors and icon from CanIMogIt.
-	["COLLECTED_APPEARANCE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t";	-- Acquired the colors and icon from CanIMogIt.
-	["COMPLETE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t";	-- Acquired the colors and icon from CanIMogIt.
-	["INCOMPLETE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\incomplete:0|t";	-- Acquired the colors and icon from CanIMogIt.
-	["NOT_COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t";	-- Acquired the colors and icon from CanIMogIt.
-	["COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
-	["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
-	["NOT_COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Not Collected|r";	-- Acquired the colors and icon from CanIMogIt.
-	["COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete|r";	-- Acquired the colors and icon from CanIMogIt.
-	["COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
-	["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\incomplete:0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
-	["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffKnown on current character|r";
-	["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Unknown on current character|r";
+	["LOGO_SMALL"] = app.asset("logo_tiny");	-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
+	["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	["COLLECTED_APPEARANCE_ICON"] = "|T" .. app.asset("known_circle") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	["COMPLETE_ICON"] = "|T" .. app.asset("known_green") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	["INCOMPLETE_ICON"] = "|T" .. app.asset("incomplete") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	["NOT_COLLECTED_ICON"] = "|T" .. app.asset("unknown") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	["COLLECTED"] = "|T" .. app.asset("known") .. ":0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
+	["COLLECTED_APPEARANCE"] = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
+	["NOT_COLLECTED"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";	-- Acquired the colors and icon from CanIMogIt.
+	["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";	-- Acquired the colors and icon from CanIMogIt.
+	["COMPLETE_OTHER"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
+	["INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
+	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abffKnown on current character|r";
+	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
@@ -792,7 +792,7 @@ app.L = {
 		[-55] = "Interface\\Icons\\inv_helmet_66",											-- Pirates' Day",
 		[-56] = "Interface\\Icons\\achievement_worldevent_brewmaster",						-- Brewfest
 		[-57] = "Interface\\Icons\\INV_Holiday_Thanksgiving_Cornucopia",					-- Harvest Festival
-		[-58] = "Interface\\Addons\\AllTheThings\\assets\\hallows_end",						-- Hallow's End
+		[-58] = app.asset("hallows_end"),													-- Hallow's End
 		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",							-- Day of the Dead
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
