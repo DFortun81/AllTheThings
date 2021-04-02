@@ -106,7 +106,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(96759, e(1663, {	-- Helya
 					ach(10808),	-- Heroic: Maw of Souls
 					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
-					i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
+				--	i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3) (Not confirmed)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(136696, {	-- Recipe: Terrorspike
 						["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
