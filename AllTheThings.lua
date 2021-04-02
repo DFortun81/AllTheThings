@@ -4256,7 +4256,7 @@ local function SearchForLink(link)
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				-- print("link-search",modItemID,itemID)
 				-- accuracy of finding the correct ATT entry:
-				-- TODO: since SourceID consolidates the accuracy of ItemID + ModID/BonusID, the search results will also need to 
+				-- TODO: since SourceID consolidates the accuracy of ItemID + ModID/BonusID, the search results will also need to
 				-- pull in ItemID based search results which are NOT the same ItemID as the SourceID
 				-- ItemID + modID
 				-- ItemID
@@ -9073,7 +9073,7 @@ end)();
 			["lvl"] = 10,
 		},
 		{	-- Wrath of the Lich King
-			["icon"] = app.asset("Expansion_WOLK"),
+			["icon"] = app.asset("Expansion_WOTLK"),
 			["description"] = L["WOTLK_TIER_DESC"],
 			["lvl"] = 10,
 		},
@@ -9097,7 +9097,7 @@ end)();
 			["description"] = L["LEGION_TIER_DESC"],
 			["lvl"] = 10,
 		},
-		{	-- Battle of Azeroth
+		{	-- Battle for Azeroth
 			["icon"] = app.asset("Expansion_BFA"),
 			["description"] = L["BFA_TIER_DESC"],
 			["lvl"] = 10,
@@ -15288,7 +15288,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
 							skillCache[recipeID] = { {} };
 						end
-						
+
 						local recipeLink = C_TradeSkillUI.GetRecipeItemLink(recipeID);
 						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
 						if craftedItemID then
@@ -16921,7 +16921,7 @@ app.OpenAuctionModule = function(self)
 							["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
 							["description"] = "Click this button to toggle faction mode to show everything for your faction!",
 							["visible"] = true,
-							["OnClick"] = function() 
+							["OnClick"] = function()
 								app.Settings:ToggleFactionMode();
 							end,
 							['OnUpdate'] = function(data)

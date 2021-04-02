@@ -898,7 +898,7 @@ end,
 function(self)
 	settings:SetFactionMode(self:GetChecked());
 end);
-FactionModeCheckBox:SetATTTooltip("Turn this setting on if you want to see Account Mode data for all classes of your current faction.");
+FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
 FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 170, 0);
 
 -- This creates the "Precision" slider.
