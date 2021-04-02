@@ -4150,33 +4150,11 @@ local function SearchForFieldRecursively(group, field, value)
 			else
 				return { group };
 			end
-		-- elseif group[field] and #group[field] > 0 then
-			-- for i,v in ipairs(group[field]) do
-				-- if v == value then
-				-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
-					-- if first then
-						-- return tinsert(first, group);
-					-- else
-						-- return { group };
-					-- end
-				-- end
-			-- end
 		end
 		return first;
 	elseif group[field] == value then
 		-- OH BOY, WE FOUND IT!
 		return { group };
-	-- elseif group[field] and #group[field] > 0 then
-		-- for i,v in ipairs(group[field]) do
-			-- if v == value then
-			-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
-				-- if first then
-					-- return tinsert(first, group);
-				-- else
-					-- return { group };
-				-- end
-			-- end
-		-- end
 	end
 end
 local function SearchForFieldContainer(field)
