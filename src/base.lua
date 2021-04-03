@@ -104,7 +104,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	if not popup then
 		popup = {
 			button1 = "Okay",
-			timeout = timeout or 10,
+			timeout = timeout,
 			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,

@@ -459,7 +459,7 @@ settings.CreateDropdown = function(self, opts, OnRefresh)
     return dropdown
 end
 settings.ShowCopyPasteDialog = function(self)
-	app:ShowPopupDialogWithEditBox(nil, self:GetText());
+	app:ShowPopupDialogWithEditBox(nil, self:GetText(), nil, 10);
 end
 
 settings.SetAccountMode = function(self, accountMode)
