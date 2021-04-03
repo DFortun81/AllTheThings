@@ -111,8 +111,8 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 			enterClicksFirstButton = true,
 			hasEditBox = true,
 			OnAccept = function(self)
-				if self.callback then
-					self.callback(self.editBox:GetText());
+				if popup.callback then
+					popup.callback(self.editBox:GetText());
 				end
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
