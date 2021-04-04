@@ -6518,6 +6518,85 @@ app.CreateCurrencyClass = function(id, t)
 end
 end)();
 
+-- Death Tracker Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "deaths";
+	end,
+	["text"] = function(t)
+		return "Total Deaths";
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Deaths");
+	end,
+	["progress"] = function(t)
+		if t.visible then
+			-- TODO: Add Death Tracking as a Module.
+			-- (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or 
+			return math.min(1000, GetDataMember("Deaths", 0));
+		else
+			return 0;
+		end
+	end,
+	["total"] = function(t)
+		if t.visible then
+			return 1000;
+		else
+			return 0;
+		end
+	end,
+	["description"] = function(t)
+		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
+	end,
+	["OnTooltip"] = function(t)
+		local c = {};
+		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+		if deathsPerCharacter then
+			local characters = GetDataMember("Characters");
+			for guid,deaths in pairs(deathsPerCharacter) do
+				if guid and deaths and deaths > 0 then
+					table.insert(c, {
+						["name"] = characters[guid] or guid or "???",
+						["deaths"] = deaths or 0
+					});
+				end
+			end
+		end
+		if #c > 0 then
+			GameTooltip:AddLine(" ");
+			GameTooltip:AddLine("Deaths Per Character:");
+			table.sort(c, function(a, b)
+				return a.deaths > b.deaths;
+			end);
+			for i,data in ipairs(c) do
+				GameTooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
+			end
+		end
+	end,
+	["OnUpdate"] = function(t)
+		t.visible = app.Settings:Get("DebugMode");
+		if t.visible then
+			local deaths = tonumber(select(1, GetStatistic(60)) or "0");
+			if deaths > 0 then
+				local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+				local oldDeaths = deathsPerCharacter[app.GUID] or 0;
+				if deaths > oldDeaths then
+					deathsPerCharacter[app.GUID] = deaths;
+					SetDataMember("Deaths", GetDataMember("Deaths", 0) + (deaths - oldDeaths));
+				end
+			end
+			t.parent.progress = t.parent.progress + t.progress;
+			t.parent.total = t.parent.total + t.total;
+		end
+	end,
+};
+app.BaseDeathClass = app.BaseObjectFields(fields);
+app.CreateDeathClass = function()
+	return setmetatable({}, app.BaseDeathClass);
+end
+end)();
+
 -- Difficulty Lib
 (function()
 app.DifficultyColors = {
@@ -12194,6 +12273,8 @@ RowOnEnter = function (self)
 				end
 			end
 		end
+		
+		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 
 		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 			if reference.g then
@@ -12943,6 +13024,9 @@ function app:GetDataCache()
 			return db;
 		end)());
 		--]]
+		
+		-- Track Deaths!
+		table.insert(g, app:CreateDeathClass());
 
 		-- Yourself.
 		table.insert(g, app.CreateUnit("player", {
@@ -17228,6 +17312,11 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
+	
+	-- Cache your character's deaths.
+	local totalDeaths = GetDataMember("Deaths", 0);
+	local deaths = GetDataMember("DeathsPerCharacter", {});
+	deaths[app.GUID] = deaths[app.GUID] or 0;
 
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -17395,6 +17484,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedTitlesPerCharacter",
 		"CollectedToys",
 		"CustomCollectibility",
+		"Deaths",
+		"DeathsPerCharacter",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"LockedWindows",
