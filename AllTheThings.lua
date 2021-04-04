@@ -6427,31 +6427,6 @@ local fields = {
 	end,
 };
 app.BaseCharacterClass = app.BaseObjectFields(fields);
--- app.BaseCharacterClass = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "classID";
--- 		elseif key == "text" then
--- 			local text = GetClassInfo(t.classID);
--- 			if t.mapID then
--- 				text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
--- 			elseif t.maps then
--- 				text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
--- 			end
--- 			text = "|c" .. t.classColors.colorStr .. text .. "|r";
--- 			rawset(t, "text", text);
--- 			return text;
--- 		elseif key == "icon" then
--- 			return classIcons[t.classID];
--- 		elseif key == "c" then
--- 			local c = { t.classID };
--- 			rawset(t, "c", c);
--- 			return c;
--- 		elseif key == "classColors" then
--- 			return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
--- 		end
--- 	end
--- };
 app.CreateCharacterClass = function(id, t)
 	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
@@ -6464,17 +6439,29 @@ local unitFields = {
 		local name, realm = UnitName(t.unit);
 		if name then
 			if realm and realm ~= "" then name = name .. "-" .. realm; end
-			local classID = select(3, UnitClass(t.unit));
-			if classID then
-				name = "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(classID))].colorStr .. name .. "|r";
+			local _, classFile, classID = UnitClass(t.unit);
+			if classFile then
+				rawset(t, "classID", classID);
+				name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r";
 			end
-			rawset(t, "text", name);
 			return name;
 		end
 		return t.unit;
 	end,
 	["icon"] = function(t)
-		if t.classID then return classIcons[t.classID]; end
+		if t.classID and not app.Settings:GetTooltipSetting("Models") then return classIcons[t.classID]; end
+	end,
+	["name"] = function(t)
+		return UnitName(t.unit);
+	end,
+	["guid"] = function(t)
+		return UnitGUID(t.unit);
+	end,
+	["title"] = function(t)
+		if IsInGroup() then
+			if rawget(t, "isML") then return MASTER_LOOTER; end
+			if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
+		end
 	end,
 	["isGUID"] = function(t)
 		local a = strsplit("-", t.unit);
@@ -6483,8 +6470,8 @@ local unitFields = {
 			if name then
 				if realm and realm ~= "" then name = name .. "-" .. realm; end
 				if classID then
+					rawset(t, "classID", class_id_cache[classID]);
 					name = "|c" .. RAID_CLASS_COLORS[classID].colorStr .. name .. "|r";
-					t.classID = class_id_cache[classID];
 				end
 				rawset(t, "text", name);
 			end
@@ -6494,52 +6481,8 @@ local unitFields = {
 			rawset(t, "isGUID", false);
 		end
 	end,
-	["collectible"] = function(t)
-		if t.unit == "player" and app.Settings:Get("DebugMode") then return true; end
-	end,
 };
 app.BaseUnit = app.BaseObjectFields(unitFields);
--- app.BaseUnit = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "unit";
--- 		elseif key == "text" then
--- 			if t.isGUID then return nil; end
--- 			local name, realm = UnitName(t.unit);
--- 			if name then
--- 				if realm and realm ~= "" then name = name .. "-" .. realm; end
--- 				local classID = select(3, UnitClass(t.unit));
--- 				if classID then
--- 					name = "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(classID))].colorStr .. name .. "|r";
--- 				end
--- 				rawset(t, "text", name);
--- 				return name;
--- 			end
--- 			return t.unit;
--- 		elseif key == "icon" then
--- 			if t.classID then return classIcons[t.classID]; end
--- 		elseif key == "isGUID" then
--- 			local a = strsplit("-", t.unit);
--- 			if a == "Player" then
--- 				local className, classID, raceName, raceId, gender, name, realm = GetPlayerInfoByGUID(t.unit);
--- 				if name then
--- 					if realm and realm ~= "" then name = name .. "-" .. realm; end
--- 					if classID then
--- 						name = "|c" .. RAID_CLASS_COLORS[classID].colorStr .. name .. "|r";
--- 						t.classID = class_id_cache[classID];
--- 					end
--- 					rawset(t, "text", name);
--- 				end
--- 				rawset(t, "isGUID", true);
--- 				return true;
--- 			else
--- 				rawset(t, "isGUID", false);
--- 			end
--- 		elseif key == "collectible" then
--- 			if t.unit == "player" and app.Settings:Get("DebugMode") then return true; end
--- 		end
--- 	end
--- };
 app.CreateUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
@@ -13015,11 +12958,20 @@ function app:GetDataCache()
 
 		-- Yourself.
 		table.insert(g, app.CreateUnit("player", {
-			["collected"] = 1,
 			["description"] = L["DEBUG_LOGIN"],		-- L["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode."
-			["races"] = { app.RaceID },
+			["races"] = { app.RaceIndex },
 			["c"] = { app.ClassIndex },
-			["factionID"] = app.FactionID,
+			["r"] = app.FactionID,
+			["collected"] = 1,
+			["nmr"] = false,
+			["OnUpdate"] = function(self)
+				self.lvl = app.Level;
+				if app.Settings:Get("DebugMode") then
+					self.collectible = true;
+				else
+					self.collectible = false;
+				end
+			end
 		}));
 
 		-- The Main Window's Data
