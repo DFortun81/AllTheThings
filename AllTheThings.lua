@@ -6981,16 +6981,19 @@ end)();
 	local arrOfNodes = {
 		1,		-- Durotar (All of Kalimdor)
 		36,		-- Burning Steppes (All of Eastern Kingdoms)
-		94,     -- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-		97,     -- Azuremyst Isle (and Bloodmyst)
+		94,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+		97,		-- Azuremyst Isle (and Bloodmyst)
 		100,	-- Hellfire Peninsula (All of Outland)
 		118,	-- Icecrown (All of Northrend)
 		422,	-- Dread Wastes (All of Pandaria)
 		525,	-- Frostfire Ridge (All of Draenor)
 		630,	-- Azsuna (All of Broken Isles)
 		882,	-- Mac'Aree (All of Argus)
-		862,	-- Zuldazar (All of Zuldazar)
-		896,	-- Drustvar (All of Kul Tiras)
+		862,	-- Zuldazar
+		896,	-- Drustvar
+		1355,	-- Nazjatar
+		1550,	-- The Shadowlands
+		1409,	-- Exile's Reach
 	};
 	app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
@@ -7003,8 +7006,16 @@ end)();
 							node.name = nodeData.name;
 						else
 							node = {};
-							node.name = nodeData.name .. " *NEW*";
-							node.faction = nodeData.faction;
+							node.name = "*NEW* " .. nodeData.name;
+							if nodeData.faction then
+								node.faction = nodeData.faction;
+							elseif nodeData.atlasName then
+								if nodeData.atlasName == "TaxiNode_Alliance" then
+									node.faction = 2;
+								elseif nodeData.atlasName == "TaxiNode_Horde" then
+									node.faction = 1;
+								end
+							end
 							app.FlightPathDB[nodeData.nodeID] = node;
 						end
 					end
@@ -7012,7 +7023,7 @@ end)();
 			end
 		end
 	end
-	app.CacheFlightPathDataForCurrentNode = function()
+	app.events.TAXIMAP_OPENED = function()
 		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 		if allNodeData then
 			local knownNodeIDs = {};
@@ -7049,7 +7060,6 @@ end)();
 			end
 		end
 	end
-	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
 	app.BaseFlightPath = {
 		__index = function(t, key)
 			if key == "key" then
@@ -12536,23 +12546,16 @@ function app:GetDataCache()
 		db.fps = {};
 		app.CacheFlightPathData();
 		db.OnUpdate = function(self)
-			local cache = self.g;
-			table.wipe(cache);
-			-- Uncomment to harvest flight path data.
-			-- SetDataMember("FlightPathData", app.FlightPathDB);
 			for i,fp in pairs(app.FlightPathDB) do
-				local id = tonumber(i);
-				local fp = self.fps[id];
-				if not fp then
-					fp = app.CreateFlightPath(id);
-					self.fps[id] = fp;
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					tinsert(self.g, fp);
 				end
-				tinsert(cache, fp);
 			end
-			table.sort(cache, function(a, b)
+			table.sort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
-			self.g = cache;
 		end;
 		db.OnUpdate(db);
 		db.text = L["FLIGHT_PATHS"];
