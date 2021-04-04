@@ -6371,19 +6371,6 @@ local fields = {
 	end,
 };
 app.BaseCategory = app.BaseObjectFields(fields);
--- app.BaseCategory = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "categoryID";
--- 		elseif key == "name" then
--- 			return app.GetDataSubMember("Categories", t.categoryID) or "Open your Professions to Cache";
--- 		elseif key == "text" then
--- 			return app.TryColorizeName(t, t.name);
--- 		elseif key == "icon" then
--- 			return "Interface/ICONS/INV_Garrison_Blueprints1";
--- 		end
--- 	end
--- };
 app.CreateCategory = function(id, t)
 	return setmetatable(constructor(id, t, "categoryID"), app.BaseCategory);
 end
@@ -6431,6 +6418,9 @@ local fields = {
 		local c = { t.classID };
 		rawset(t, "c", c);
 		return c;
+	end,
+	["nmc"] = function(t)
+		return t.classID ~= app.ClassIndex;
 	end,
 	["classColors"] = function(t)
 		return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
