@@ -6630,7 +6630,7 @@ app.DifficultyIcons = {
 	[15] = app.asset("Difficulty_Heroic"),
 	[16] = app.asset("Difficulty_Mythic"),
 	[17] = app.asset("Difficulty_LFR"),
-	[18] = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	[18] = app.asset("Category_Event"),
 	[23] = app.asset("Difficulty_Mythic"),
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
@@ -6694,13 +6694,13 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
+		return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
+		return select(2, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["link"] = function(t)
-		return select(5, EJ_GetEncounterInfo(t.encounterID)) or "";
+		return select(5, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["displayID"] = function(t)
 		-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
@@ -6719,9 +6719,7 @@ local fields = {
 		return displayInfos;
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID] or
-			app.DifficultyIcons[GetRelativeValue(t, "difficultyID")] or
-			"Interface\\Icons\\INV_Misc_Head_Human_01";
+		return app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 	end,
 	["trackable"] = function(t)
 		return t.questID;
@@ -6735,46 +6733,6 @@ local fields = {
 	end,
 };
 app.BaseEncounter = app.BaseObjectFields(fields);
--- app.BaseEncounter = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "encounterID";
--- 		elseif key == "text" then
--- 			return app.TryColorizeName(t, t.name);
--- 		elseif key == "name" then
--- 			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
--- 		elseif key == "description" then
--- 			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
--- 		elseif key == "link" then
--- 			return select(5, EJ_GetEncounterInfo(t.encounterID)) or "";
--- 		elseif key == "displayID" then
--- 			-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
--- 			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
--- 		elseif key == "displayInfo" then
--- 			local displayInfos, displayInfo = {};
--- 			for i=1,MAX_CREATURES_PER_ENCOUNTER do
--- 				displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
--- 				if displayInfo then
--- 					tinsert(displayInfos, displayInfo);
--- 				else
--- 					break;
--- 				end
--- 			end
--- 			return displayInfos;
--- 		elseif key == "icon" then
--- 			return app.DifficultyIcons[t.difficultyID] or
--- 				app.DifficultyIcons[GetRelativeValue(t, "difficultyID")] or
--- 				"Interface\\Icons\\INV_Misc_Head_Human_01";
--- 		elseif key == "trackable" then
--- 			return t.questID;
--- 		elseif key == "saved" then
--- 			-- only consider encounters saved if saved for the current character
--- 			return IsQuestFlaggedCompletedForObject(t) == 1;
--- 		elseif key == "index" then
--- 			return 1;
--- 		end
--- 	end
--- };
 app.CreateEncounter = function(id, t)
 	return setmetatable(constructor(id, t, "encounterID"), app.BaseEncounter);
 end
@@ -8327,9 +8285,7 @@ local npcFields = {
 		return L["NPC_ID_ICONS"][t.npcID]
 			or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)))
 			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
-			or app.DifficultyIcons[t.difficultyID]
-			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID")]
-			or "Interface\\Worldmap\\Skull_64Green";
+			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 	end,
 	["link"] = function(t)
 		_cache = rawget(t, "achievementID");
@@ -12239,12 +12195,16 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);		-- L["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest."
 			end
 		end
-
-		-- Show lockout information
-		if reference.instanceID then
-			-- Contains information about an Instance (Raid or Dungeon)
-			local locks = reference.locks;
-			if locks then
+		
+		-- Show lockout information about an Instance (Raid or Dungeon)
+		local locks = reference.locks;
+		if locks then
+			if locks.encounters then
+				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));
+				for encounterIter,encounter in pairs(locks.encounters) do
+					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+				end
+			else
 				if reference.isLockoutShared and locks.shared then
 					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
 					for encounterIter,encounter in pairs(locks.shared.encounters) do
@@ -12261,15 +12221,6 @@ RowOnEnter = function (self)
 							end
 						end
 					end
-				end
-			end
-		elseif reference.difficultyID then
-			-- Contains information about a Difficulty
-			local locks = reference.locks;
-			if locks then
-				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));
-				for encounterIter,encounter in pairs(locks.encounters) do
-					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 				end
 			end
 		end
@@ -15891,7 +15842,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
 						elseif isTimeWalker then
-							header.icon = app.DifficultyIcons[24];
+							header.icon = app.asset("Difficulty_Timewalking");
 						end
 						for rewardIndex=1,numRewards,1 do
 							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
