@@ -135,9 +135,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 		f:SetPoint("CENTER")
 		f:SetSize(600, 500)
 		f:SetBackdrop({
-			bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-			edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-			tile = true, tileSize = 16, edgeSize = 16, 
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			tile = true, tileSize = 16, edgeSize = 16,
 			insets = { left = 4, right = 4, top = 4, bottom = 4 }
 		})
 		f:SetBackdropColor(0, 0, 0, 1);
@@ -149,14 +149,14 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 			end
 		end)
 		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
-		
+
 		-- ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", ATTEditBox, "UIPanelScrollFrameTemplate")
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
 		sf:SetPoint("TOP", 0, -16)
 		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 0)
-		
+
 		-- EditBox
 		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", ATTEditBoxScrollFrame)
 		eb:SetSize(sf:GetSize())
@@ -171,19 +171,19 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 			self:GetParent():Hide();
 		end);
 		sf:SetScrollChild(eb)
-		
+
 		-- Resizable
 		f:SetResizable(true)
 		f:SetMinResize(150, 100)
-		
+
 		local rb = CreateFrame("Button", "ATTEditBoxResizeButton", ATTEditBox)
 		rb:SetPoint("BOTTOMRIGHT", -6, 7)
 		rb:SetSize(16, 16)
-		
+
 		rb:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
 		rb:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
 		rb:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
-		
+
 		rb:SetScript("OnMouseDown", function(self, button)
 			if button == "LeftButton" then
 				f:StartSizing("BOTTOMRIGHT")

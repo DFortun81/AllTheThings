@@ -6529,7 +6529,7 @@ local fields = {
 	["progress"] = function(t)
 		if t.visible then
 			-- TODO: Add Death Tracking as a Module.
-			-- (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or 
+			-- (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or
 			return math.min(1000, GetDataMember("Deaths", 0));
 		else
 			return 0;
@@ -6871,17 +6871,17 @@ local fields = {
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
-		
+
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
 			return 2;
 		end
-		
+
 		-- If your reputation is higher than the maximum for a different faction, return partial completion.
 		if t.maxReputation and t.maxReputation[1] ~= factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
 			return 2;
 		end
-		
+
 		-- If this can be completed by completing a different achievement, return partial completion.
 		if t.altAchievements then
 			for i,achID in ipairs(t.altAchievements) do
@@ -7001,7 +7001,7 @@ app.CacheFlightPathData = function()
 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 		if allNodeData then
 			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.name then 
+				if nodeData.name then
 					local node = app.FlightPathDB[nodeData.nodeID];
 					if node then
 						node.name = nodeData.name;
@@ -12197,18 +12197,18 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);		-- L["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest."
 			end
 		end
-		
+
 		-- Show lockout information about an Instance (Raid or Dungeon)
 		local locks = reference.locks;
 		if locks then
 			if locks.encounters then
-				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));
+				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));	-- TODO: localize this with format string, not just single word
 				for encounterIter,encounter in pairs(locks.encounters) do
 					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 				end
 			else
 				if reference.isLockoutShared and locks.shared then
-					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
+					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));	-- TODO: localize this with format string, not just single word
 					for encounterIter,encounter in pairs(locks.shared.encounters) do
 						GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 					end
@@ -12226,7 +12226,7 @@ RowOnEnter = function (self)
 				end
 			end
 		end
-		
+
 		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 
 		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
@@ -12970,7 +12970,7 @@ function app:GetDataCache()
 			return db;
 		end)());
 		--]]
-		
+
 		-- Track Deaths!
 		table.insert(g, app:CreateDeathClass());
 
@@ -17258,7 +17258,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
-	
+
 	-- Cache your character's deaths.
 	local totalDeaths = GetDataMember("Deaths", 0);
 	local deaths = GetDataMember("DeathsPerCharacter", {});
