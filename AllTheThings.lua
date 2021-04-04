@@ -5292,12 +5292,8 @@ app.TryColorizeName = function(group, name)
 	-- raid headers
 	elseif group.isRaid then
 		return Colorize(name, "ffff8000");
-	-- faction standings
 	elseif group.factionID and group.standing then
-		-- use 'completed' color for Exalted faction
-		if group.saved then return "|c" .. GetProgressColor(1) .. name .. "|r"; end
-		local rgb = FACTION_BAR_COLORS[group.standing + (group.isFriend and 2 or 0)];
-		return Colorize(name, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
 	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))
 	then
@@ -6740,6 +6736,40 @@ end)();
 
 -- Faction Lib
 (function()
+local StandingByID = {
+	{	-- 1: HATED
+		["color"] = GetProgressColor(0),
+		["threshold"] = -42000,
+	},
+	{	-- 2: HOSTILE
+		["color"] = "00FF0000",
+		["threshold"] = -6000,
+	},
+	{	-- 3: UNFRIENDLY
+		["color"] = "00EE6622",
+		["threshold"] = -3000,
+	},
+	{	-- 4: NEUTRAL
+		["color"] = "00FFFF00",
+		["threshold"] = 0,
+	},
+	{	-- 5: FRIENDLY
+		["color"] = "0000FF00",
+		["threshold"] = 3000,
+	},
+	{	-- 6: HONORED
+		["color"] = "0000FF88",
+		["threshold"] = 9000,
+	},
+	{	-- 7: REVERED
+		["color"] = "0000FFCC",
+		["threshold"] = 21000,
+	},
+	{	-- 8: EXALTED
+		["color"] = GetProgressColor(1),
+		["threshold"] = 42000,
+	},
+};
 app.FACTION_RACES = {
 	[1] = {
 		1,	-- Human
@@ -6770,152 +6800,160 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
-local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000;
-app.BaseFaction = {
-	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
-	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
-	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "factionID";
-		elseif key == "filterID" then
-			return 112;
-		elseif key == "trackable" or key == "collectible" then
-			return app.CollectibleReputations;
-		elseif key == "saved" or key == "collected" then
-			return app.GetFactionCollected(t.factionID,t.altAchievements) or t.achievementID and select(4, GetAchievementInfo(t.achievementID));
-			-- -- this character is exalted
-			-- if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			-- -- another character exalted with account-wide
-			-- if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
-			-- if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
-			-- 	SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-			-- 	SetDataSubMember("CollectedFactions", t.factionID, 1);
-			-- 	return 1;
-			-- end
-			-- if t.altAchievements then
-			-- 	for i,achID in ipairs(t.altAchievements) do
-			-- 		if select(4, GetAchievementInfo(achID)) then
-			-- 			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-			-- 			SetDataSubMember("CollectedFactions", t.factionID, 1);
-			-- 			return 2;
-			-- 		end
-			-- 	end
-			-- end
-			-- if t.achievementID then
-			-- 	return select(4, GetAchievementInfo(t.achievementID));
-			-- end
-		elseif key == "name" then
-			return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID);
-		elseif key == "text" then
-			return app.TryColorizeName(t, t.name);
-		elseif key == "title" then
-			return t.isFriend and select(7, GetFriendshipReputation(t.factionID)) or _G["FACTION_STANDING_LABEL" .. t.standing];
-		elseif key == "description" then
-			return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];		-- L["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player."
-		elseif key == "link" then
-			return t.achievementID and GetAchievementLink(t.achievementID);
-		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
-				or L["FACTION_ID_ICONS"][t.factionID]
-				or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
-				or app.asset("Category_Factions");
-		elseif key == "isFriend" then
-			if select(1, GetFriendshipReputation(t.factionID)) then
-				rawset(t, "isFriend", true);
-				return true;
-			else
-				rawset(t, "isFriend", false);
-				return false;
-			end
-		elseif key == "standing" then
-			return select(3, GetFactionInfoByID(t.factionID)) or 4;
-		end
+app.ColorizeStandingText = function(standingID, text)
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
+	else
+		local rgb = FACTION_BAR_COLORS[standingID];
+		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 	end
-};
-app.CreateFaction = function(id, t)
-	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 app.GetFactionStanding = function(reputationPoints)
-	-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
-	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
-	if not reputationPoints then return 0, 0
-	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
-	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
-	elseif reputationPoints < NEUTRAL then return 3, UNFRIENDLY - reputationPoints
-	elseif reputationPoints < FRIENDLY then return 4, reputationPoints - NEUTRAL
-	elseif reputationPoints < HONORED then return 5, reputationPoints - FRIENDLY
-	elseif reputationPoints < REVERED then return 6, reputationPoints - HONORED
-	elseif reputationPoints < EXALTED then return 7, reputationPoints - REVERED
-	elseif reputationPoints >= EXALTED then return 8, 0
-	else return 0
-	end
-end
-app.GetFactionStandingText = function(standingId, colorCode)
-	local text = getglobal("FACTION_STANDING_LABEL"..standingId)
-	if text then
-		if standingId == 1 and colorCode then return "|c00CC2222" .. text .. "|r"
-		elseif standingId == 2 and colorCode then return "|c00FF0000" .. text .. "|r"
-		elseif standingId == 3 and colorCode then return "|c00EE6622" .. text .. "|r"
-		elseif standingId == 4 and colorCode then return "|c00FFFF00" .. text .. "|r"
-		elseif standingId == 5 and colorCode then return "|c0000FF00" .. text .. "|r"
-		elseif standingId == 6 and colorCode then return "|c0000FF88" .. text .. "|r"
-		elseif standingId == 7 and colorCode then return "|c0000FFCC" .. text .. "|r"
-		elseif standingId == 8 and colorCode then return "|c0000FFFF" .. text .. "|r"
+	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+	if reputationPoints then
+		for i=#StandingByID,1,-1 do
+			local threshold = StandingByID[i].threshold;
+			if reputationPoints >= threshold then
+				return i, threshold < 0 and (threshold - reputationPoints) or (reputationPoints - threshold);
+			end
 		end
 	end
-	return "|cCC222200UNKNOWN|r"
+	return 1, 0
 end
--- Returns whether the given factionID is considered 'collected' for the current character with the current settings, including altAchievements for factions which are
--- considered completed via an achievement which requires completing multiple
-app.GetFactionCollected = function(factionID, altAchievements)
-	if factionID then
-		local factionName = GetFactionInfoByID(factionID);
-		-- print("check factionID",factionID,factionName)
-		-- this character is cached exalted
+app.GetFactionStandingText = function(standingID)
+	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
+end
+local fields = {
+	["key"] = function(t)
+		return "factionID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+	end,
+	["icon"] = function(t)
+		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
+			or L["FACTION_ID_ICONS"][t.factionID]
+			or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
+			or app.asset("Category_Factions");
+	end,
+	["link"] = function(t)
+		return t.achievementID and GetAchievementLink(t.achievementID);
+	end,
+	["achievementID"] = function(t)
+		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
+		end
+	end,
+	["filterID"] = function(t)
+		return 112;
+	end,
+	["trackable"] = function(t)
+		return app.CollectibleReputations;
+	end,
+	["saved"] = function(t)
+		local factionID = t.factionID;
 		if GetTempDataSubMember("CollectedFactions", factionID) then return 1; end
-		-- print("character not exalted")
-		-- another character cached exalted with account-wide
 		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
-		-- print("not account-wide exalted")
-		-- character is freshly exalted
-		if select(3, GetFactionInfoByID(factionID)) == 8 then
-			-- print("fresh exalted")
+		if t.standing >= t.maxstanding then
 			SetTempDataSubMember("CollectedFactions", factionID, 1);
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
-		-- is a 'friendship' reputation
 		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
 		if friendID and not nextFriendThreshold then
-			-- print("fresh exalted friendship")
 			SetTempDataSubMember("CollectedFactions", factionID, 1);
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
-		-- reputation is 'completed' via completion of an achievement (i.e. 2 conflicting exalted reps achieve)
-		if altAchievements then
-			for i,achID in ipairs(altAchievements) do
+		
+		-- If there's an associated achievement, return partial completion.
+		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
+			return 2;
+		end
+		
+		-- If your reputation is higher than the maximum for a different faction, return partial completion.
+		if t.maxReputation and t.maxReputation[1] ~= factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+			return 2;
+		end
+		
+		-- If this can be completed by completing a different achievement, return partial completion.
+		if t.altAchievements then
+			for i,achID in ipairs(t.altAchievements) do
 				if select(4, GetAchievementInfo(achID)) then
-					-- print("completed via ach",achID)
-					SetTempDataSubMember("CollectedFactions", factionID, 1);
-					SetDataSubMember("CollectedFactions", factionID, 1);
-					-- return 2 since it's not 'technically' completed reputation currently for this character
 					return 2;
 				end
 			end
 		end
-		-- print("incomplete rep")
-		-- not sure when this is useful?
-		-- if t.achievementID then
-		-- 	return select(4, GetAchievementInfo(t.achievementID));
-		-- end
-	end
+	end,
+	["title"] = function(t)
+		if t.isFriend then
+			local reputation = t.reputation;
+			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+			local title = select(7, GetFriendshipReputation(t.factionID));
+			if ceiling then
+				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
+				if reputation < 42000 then
+					return title .. " (" .. (42000 - reputation) .. ")";
+				end
+			end
+			return title;
+		else
+			local reputation = t.reputation;
+			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+			local title = _G["FACTION_STANDING_LABEL" .. t.standing];
+			if ceiling then
+				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
+				if reputation < 42000 then
+					return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
+				end
+			end
+			return title;
+		end
+	end,
+	["isFriend"] = function(t)
+		if select(1, GetFriendshipReputation(t.factionID)) then
+			rawset(t, "isFriend", true);
+			return true;
+		else
+			rawset(t, "isFriend", false);
+			return false;
+		end
+	end,
+	["reputation"] = function(t)
+		return select(6, GetFactionInfoByID(t.factionID));
+	end,
+	["ceiling"] = function(t)
+		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
+		return ma and m and (ma - m);
+	end,
+	["standing"] = function(t)
+		return select(3, GetFactionInfoByID(t.factionID)) or 1;
+	end,
+	["maxstanding"] = function(t)
+		if t.minReputation and t.minReputation[1] == t.factionID then
+			return app.GetFactionStanding(t.minReputation[2]);
+		end
+		return 8;
+	end,
+	["description"] = function(t)
+		if t.isFriend then
+			return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+				.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
+		end
+		return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
+	end,
+};
+fields.collectible = fields.trackable;
+fields.collected = fields.saved;
+app.BaseFaction = app.BaseObjectFields(fields);
+app.CreateFaction = function(id, t)
+	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 end)();
 
@@ -7505,23 +7543,8 @@ app.BaseHeirloom = {
 			-- heirloom for a faction (grand commendation/rep item/etc.)
 			if t.factionID then
 				if t.repeatable then
-					return app.GetFactionCollected(t.factionID);
-					-- -- This is used by reputation tokens.
-					-- if app.AccountWideReputations then
-					-- 	if GetDataSubMember("CollectedFactions", t.factionID) then
-					-- 		return 1;
-					-- 	end
-					-- else
-					-- 	if GetTempDataSubMember("CollectedFactions", t.factionID) then
-					-- 		return 1;
-					-- 	end
-					-- end
-
-					-- if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
-					-- 	SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-					-- 	SetDataSubMember("CollectedFactions", t.factionID, 1);
-					-- 	return 1;
-					-- end
+					return (GetTempDataSubMember("CollectedFactions", t.factionID) and 1)
+						or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
 				else
 					-- This is used for the Grand Commendations unlocking Bonus Reputation
 					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
@@ -7814,28 +7837,9 @@ local itemFields = {
 		if cache then
 			if t.repeatable then
 				-- This is used by reputation-granting items.
-				return app.GetFactionCollected(cache);
-				-- if app.AccountWideReputations then
-				-- 	print("account-wide reps")
-				-- 	if GetDataSubMember("CollectedFactions", cache) then
-				-- 		print("collected")
-				-- 		return 1;
-				-- 	end
-				-- else
-				-- 	if GetTempDataSubMember("CollectedFactions", cache) then
-				-- 		print("collected")
-				-- 		return 1;
-				-- 	end
-				-- end
-
-				-- if select(1, GetFriendshipReputation(cache)) and not select(9, GetFriendshipReputation(cache)) or select(3, GetFactionInfoByID(cache)) == 8 then
-				-- 	SetTempDataSubMember("CollectedFactions", cache, 1);
-				-- 	SetDataSubMember("CollectedFactions", cache, 1);
-				-- 	return 1;
-				-- end
-				-- print("incomplete rep")
+				return (GetTempDataSubMember("CollectedFactions", cache) and 1)
+					or (GetDataSubMember("CollectedFactions", cache) and 2);
 			else
-				-- print("non-repeatable reputaiton item")
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if GetDataSubMember("CollectedFactionBonusReputation", cache) then return 1; end
 				if select(15, GetFactionInfoByID(cache)) then
@@ -11773,7 +11777,7 @@ RowOnEnter = function (self)
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = L["MINUMUM_STANDING"]	-- L["MINUMUM_STANDING"] = "Requires a minimum standing of"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. L["_WITH_"] .. factionName .. "."		-- L["_WITH_"] = " with "
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."		-- L["_WITH_"] = " with "
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
@@ -11781,7 +11785,7 @@ RowOnEnter = function (self)
 			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
 			local msg = L["MAXIMUM_STANDING"]	-- L["MAXIMUM_STANDING"] = "Requires a standing lower than"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. L["_WITH_"] .. factionName .. "."
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
@@ -11790,9 +11794,9 @@ RowOnEnter = function (self)
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = L["MIN_MAX_STANDING"]		-- L["MIN_MAX_STANDING"] = "Requires a standing between"
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. L["_AND"]		-- L["_AND"] = " and"
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]		-- L["_AND"] = " and"
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. L["_WITH_"] .. factionName .. ".";
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 			GameTooltip:AddLine(msg);
 		end
 		if reference.followerID and app.Settings:GetTooltipSetting("followerID") then GameTooltip:AddDoubleLine(L["FOLLOWER_ID"], tostring(reference.followerID)); end
