@@ -6495,36 +6495,24 @@ local fields = {
 		return "currencyID";
 	end,
 	["text"] = function(t)
-		local text = C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
-		if text then rawset(t, "text", text); end
-		if not text then text = C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).name; end
-		if text then rawset(t, "text", text); end
-		if not text then rawset(t, "text", "Currency #" .. tostring(t.currencyID)) end
-		return rawget(t, "text");
+		return t.link or t.name;
 	end,
 	["icon"] = function(t)
-		rawset(t, "icon", C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).iconFileID);
-		return rawget(t, "icon");
+		local info = t.info;
+		return info and info.iconFileID;
+	end,
+	["info"] = function(t)
+		return C_CurrencyInfo.GetCurrencyInfo(t.currencyID);
+	end,
+	["link"] = function(t)
+		return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
+	end,
+	["name"] = function(t)
+		local info = t.info;
+		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields);
--- app.BaseCurrencyClass = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "currencyID";
--- 		elseif key == "text" then
--- 			local text = C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
--- 			if text then rawset(t, "text", text); end
--- 			if not text then text = C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).name; end
--- 			if text then rawset(t, "text", text); end
--- 			if not text then rawset(t, "text", "Currency #" .. tostring(t.currencyID)) end
--- 			return rawget(t, "text");
--- 		elseif key == "icon" then
--- 			rawset(t, "icon", C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).iconFileID);
--- 			return rawget(t, "icon");
--- 		end
--- 	end
--- };
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
