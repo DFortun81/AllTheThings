@@ -6957,6 +6957,25 @@ app.CreateFaction = function(id, t)
 end
 end)();
 
+-- Filter Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "filterID";
+	end,
+	["text"] = function(t)
+		return L["FILTER_ID_TYPES"][t.filterID];
+	end,
+	["icon"] = function(t)
+		return L["FILTER_ID_ICONS"][t.filterID];
+	end,
+};
+app.BaseFilter = app.BaseObjectFields(fields);
+app.CreateFilter = function(id, t)
+	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
+end
+end)();
+
 -- Flight Path Lib
 (function()
 	local arrOfNodes = {
@@ -7119,22 +7138,6 @@ end)();
 		return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 	end
 end)();
-
--- Filter Lib
-app.BaseFilter = {
-	__index = function(t, key)
-		if key == "key" then
-			return "filterID";
-		elseif key == "text" then
-			return L["FILTER_ID_TYPES"][t.filterID];
-		elseif key == "icon" then
-			return L["FILTER_ID_ICONS"][t.filterID];
-		end
-	end
-};
-app.CreateFilter = function(id, t)
-	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
-end
 
 -- Follower Lib
 app.BaseFollower = {
