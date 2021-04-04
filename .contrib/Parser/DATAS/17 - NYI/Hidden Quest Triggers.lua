@@ -195,8 +195,12 @@ _.HiddenQuestTriggers =
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
-		q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
-		q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(36143, {	-- LFGDungeons - Lich King - Dungeon Normal 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(36149, {	-- LFGDungeons - Lich King - Dungeon Normal Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
 		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
 		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
 		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
@@ -2624,6 +2628,7 @@ _.HiddenQuestTriggers =
 		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
+		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		
 		-- MISSIONS
 		q(53743),	-- Hillcrest Pasture completed

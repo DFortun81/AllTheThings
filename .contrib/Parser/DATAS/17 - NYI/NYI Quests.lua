@@ -26,6 +26,14 @@ _.NeverImplemented =
 				i(37586), -- Handful of Treats
 			},
 		}),
+		q(38294, {	-- Sumptuous Fur
+		--	added in 9.0.1 but has WoD title/rewards, is "engineering" category but tailoring rewards?????  move if this quest is ever found
+			["description"] = "Category: |cFFf09f26Engineering|r",
+			["isDaily"] = 1,
+			["_drop"] = { "g" },	-- drop Hexweave Cloth / Primal Spirit
+			["lvl"] = 10,
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		q(12375, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
 			["isYearly"] = true,
