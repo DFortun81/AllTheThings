@@ -6978,175 +6978,160 @@ end)();
 
 -- Flight Path Lib
 (function()
-	local arrOfNodes = {
-		1,		-- Durotar (All of Kalimdor)
-		36,		-- Burning Steppes (All of Eastern Kingdoms)
-		94,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-		97,		-- Azuremyst Isle (and Bloodmyst)
-		100,	-- Hellfire Peninsula (All of Outland)
-		118,	-- Icecrown (All of Northrend)
-		422,	-- Dread Wastes (All of Pandaria)
-		525,	-- Frostfire Ridge (All of Draenor)
-		630,	-- Azsuna (All of Broken Isles)
-		882,	-- Mac'Aree (All of Argus)
-		862,	-- Zuldazar
-		896,	-- Drustvar
-		1355,	-- Nazjatar
-		1550,	-- The Shadowlands
-		1409,	-- Exile's Reach
-	};
-	app.CacheFlightPathData = function()
-		for i,mapID in ipairs(arrOfNodes) do
-			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for j,nodeData in ipairs(allNodeData) do
-					if nodeData.name then
-						local node = app.FlightPathDB[nodeData.nodeID];
-						if node then
-							node.name = nodeData.name;
-						else
-							node = {};
-							node.name = "*NEW* " .. nodeData.name;
-							if nodeData.faction then
-								node.faction = nodeData.faction;
-							elseif nodeData.atlasName then
-								if nodeData.atlasName == "TaxiNode_Alliance" then
-									node.faction = 2;
-								elseif nodeData.atlasName == "TaxiNode_Horde" then
-									node.faction = 1;
-								end
-							end
-							app.FlightPathDB[nodeData.nodeID] = node;
-						end
-					end
-				end
-			end
-		end
-	end
-	app.events.TAXIMAP_OPENED = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
+local arrOfNodes = {
+	1,		-- Durotar (All of Kalimdor)
+	36,		-- Burning Steppes (All of Eastern Kingdoms)
+	94,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+	97,		-- Azuremyst Isle (and Bloodmyst)
+	100,	-- Hellfire Peninsula (All of Outland)
+	118,	-- Icecrown (All of Northrend)
+	422,	-- Dread Wastes (All of Pandaria)
+	525,	-- Frostfire Ridge (All of Draenor)
+	630,	-- Azsuna (All of Broken Isles)
+	882,	-- Mac'Aree (All of Argus)
+	862,	-- Zuldazar
+	896,	-- Drustvar
+	1355,	-- Nazjatar
+	1550,	-- The Shadowlands
+	1409,	-- Exile's Reach
+};
+app.CacheFlightPathData = function()
+	local newNodes = {};
+	for i,mapID in ipairs(arrOfNodes) do
+		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 		if allNodeData then
-			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.state and nodeData.state < 2 then
-					table.insert(knownNodeIDs, nodeData.nodeID);
-				end
-				if nodeData.name then
+				if nodeData.name then 
 					local node = app.FlightPathDB[nodeData.nodeID];
-					if not node then
+					if node then
+						node.name = nodeData.name;
+					elseif true then	-- Turn this off when you're done harvesting.
 						node = {};
-						node.name = nodeData.name .. " *NEW*";
-						node.faction = nodeData.faction;
-						app.FlightPathDB[nodeData.nodeID] = node;
-					end
-				end
-			end
-			if app.AccountWideFlightPaths then
-				for i,nodeID in ipairs(knownNodeIDs) do
-					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-					if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-						SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			else
-				for i,nodeID in ipairs(knownNodeIDs) do
-					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-					if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-						SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			end
-		end
-	end
-	app.BaseFlightPath = {
-		__index = function(t, key)
-			if key == "key" then
-				return "flightPathID";
-			elseif key == "collectible" then
-				return app.CollectibleFlightPaths;
-			elseif key == "collected" then
-				if app.AccountWideFlightPaths then
-					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						return 1;
-					end
-				end
-				if t.altQuests then
-					for i,questID in ipairs(t.altQuests) do
-						if IsQuestFlaggedCompleted(questID) then
-							return 1;
+						node.name = "*NEW* " .. nodeData.name;
+						if nodeData.faction then
+							node.faction = nodeData.faction;
+						elseif nodeData.atlasName then
+							if nodeData.atlasName == "TaxiNode_Alliance" then
+								node.faction = 2;
+							elseif nodeData.atlasName == "TaxiNode_Horde" then
+								node.faction = 1;
+							end
 						end
+						app.FlightPathDB[nodeData.nodeID] = node;
+						newNodes[nodeData.nodeID] = node;
+						SetDataMember("NewFlightPathData", newNodes);
 					end
 				end
-			elseif key == "name" then
-				return t.info.name or L["VISIT_FLIGHT_MASTER"];		-- L["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache."
-			elseif key == "text" then
-				return app.TryColorizeName(t, t.name);
-			elseif key == "u" then
-				return t.info.u;
-			elseif key == "coord" then
-				return t.info.coord;
-			elseif key == "crs" then
-				local qg = t.info.qg;
-				if qg then return { qg }; end
-			elseif key == "mapID" then
-				return t.info.mapID;
-			elseif key == "r" then
-				return t.info.faction;
-			elseif key == "nmc" then
-				local c = t.info.c;
-				if c and not containsValue(c, app.ClassIndex) then
-					rawset(t, "nmc", true); -- "Not My Class"
-					return true;
-				end
-				rawset(t, "nmc", false); -- "My Class"
-				return false;
-			elseif key == "nmr" then
-				local faction = t.info.faction;
-				if faction and faction > 0 then
-					return faction ~= app.FactionID;
-				end
-			elseif key == "info" then
-				local info = app.FlightPathDB[t.flightPathID];
-				if info then
-					rawset(t, key, info);
-					if info.mapID then CacheField(t, "mapID", info.mapID); end
-					if info.qg then CacheField(t, "creatureID", info.qg); end
-					return info;
-				end
-				return {};
-			elseif key == "description" then
-				local description = t.info.description;
-				if description then
-					description = description .."\n\n";
-				else
-					description = "";
-				end
-				return description .. L["FLIGHT_PATHS_DESC"];		-- L["FLIGHT_PATHS_DESC"] = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve"
-			elseif key == "icon" then
-				local faction = t.info.faction;
-				if faction and faction > 0 then
-					if faction == Enum.FlightPathFaction.Horde then
-						return app.asset("fp_horde");
-					else
-						return app.asset("fp_alliance");
-					end
-				end
-				return app.asset("fp_neutral");
-			else
-				-- Something that isn't dynamic.
-				return rawget(t.info, key);
 			end
 		end
-	};
-	app.CreateFlightPath = function(id, t)
-		return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 	end
+end
+local fields = {
+	["key"] = function(t)
+		return "flightPathID";
+	end,
+	["info"] = function(t)
+		local info = app.FlightPathDB[t.flightPathID];
+		if info then
+			rawset(t, "info", info);
+			if info.mapID then CacheField(t, "mapID", info.mapID); end
+			if info.qg then CacheField(t, "creatureID", info.qg); end
+			return info;
+		end
+		return {};
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		return t.info.name or L["VISIT_FLIGHT_MASTER"];
+	end,
+	["icon"] = function(t)
+		local r = t.r;
+		if r then
+			if r == Enum.FlightPathFaction.Horde then
+				return app.asset("fp_horde");
+			else
+				return app.asset("fp_alliance");
+			end
+		end
+		return app.asset("fp_neutral");
+	end,
+	["description"] = function(t)
+		local description = t.info.description;
+		return (description and (description .."\n\n") or "") .. L["FLIGHT_PATHS_DESC"];
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleFlightPaths;
+	end,
+	["collected"] = function(t)
+		if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then return 1; end
+		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				if IsQuestFlaggedCompleted(questID) then
+					return 2;
+				end
+			end
+		end
+	end,
+	["coord"] = function(t)
+		return t.info.coord;
+	end,
+	["c"] = function(t)
+		return t.info.c;
+	end,
+	["r"] = function(t)
+		local faction = t.info.faction;
+		if faction and faction > 0 then
+			return faction;
+		end
+	end,
+	["u"] = function(t)
+		return t.info.u;
+	end,
+	["crs"] = function(t)
+		return t.info.qg and { t.info.qg };
+	end,
+	["mapID"] = function(t)
+		return t.info.mapID;
+	end,
+	["nmc"] = function(t)
+		local c = t.c;
+		if c and not containsValue(c, app.ClassIndex) then
+			rawset(t, "nmc", true); -- "Not My Class"
+			return true;
+		end
+		rawset(t, "nmc", false); -- "My Class"
+		return false;
+	end,
+	["nmr"] = function(t)
+		local r = t.r;
+		return r and r ~= app.FactionID;
+	end,
+};
+app.BaseFlightPath = app.BaseObjectFields(fields);
+app.CreateFlightPath = function(id, t)
+	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+end
+app.events.TAXIMAP_OPENED = function()
+	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
+	if allNodeData then
+		local knownNodeIDs = {};
+		for j,nodeData in ipairs(allNodeData) do
+			if nodeData.state and nodeData.state < 2 then
+				table.insert(knownNodeIDs, nodeData.nodeID);
+			end
+		end
+		for i,nodeID in ipairs(knownNodeIDs) do
+			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+			end
+		end
+	end
+end
 end)();
 
 -- Follower Lib
@@ -7804,7 +7789,7 @@ app.BaseInstance = {
 		elseif key == "locks" then
 			local locks = GetTempDataSubMember("lockouts", t.name);
 			if locks then
-				rawset(t, key, locks);
+				rawset(t, "locks", locks);
 				return locks;
 			end
 		elseif key == "isLockoutShared" then
