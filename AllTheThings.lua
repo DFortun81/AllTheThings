@@ -15316,23 +15316,23 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							self.data = CloneData(group);
 							local requireSkill = self.data.requireSkill;
 							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
+							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
 							response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=TRANSMOG_SOURCE_4,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+							if response then tinsert(self.data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green",g=response});  end
+							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
-							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = "Interface\\Icons\\inv_misc_celebrationcake_01",g=response}));  end
+							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
 							response = app:BuildSearchResponse(app.Categories.Craftables, function(o)
 								if (o.npcID and o.npcID < 0 and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
 									return true;
 								end
 							end);
-							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
+							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 
 							self.data.indent = 0;
 							self.data.visible = true;
