@@ -203,8 +203,18 @@ _.HiddenQuestTriggers =
 		}),
 		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
 		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(36147, {	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(36139, {	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(31618, {	-- LFGDungeons - Mists - Normal Random - 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(31619, {	-- LFGDungeons - Mists - Normal Random - Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
 		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
 		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
