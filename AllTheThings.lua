@@ -7066,105 +7066,107 @@ app.CreateFollower = function(id, t)
 end
 end)();
 
--- /dump C_Garrison.GetBuildingInfo(1)
--- Garrison Building Lib
--- id, name, texPrefix, icon, description, rank, currencyID, currencyQty, goldQty, buildTime, needsPlan, isPrebuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot = C_Garrison.GetBuildingInfo(BuildingID)
--- https://wow.gamepedia.com/API_C_Garrison.GetBuildingInfo
-app.BaseGarrisonBuilding = {
-	__index = function(t, key)
-		if key == "key" then
-			return "buildingID";
-		elseif key == "filterID" then
-			if t.itemID then return 200; end
-		elseif key == "text" then
-			return t.link or select(2, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			return select(4, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-		elseif key == "description" then
-			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "collectible" then
-			return t.itemID and app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.AccountWideRecipes then
-				if GetDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
-			end
-			if not select(11, C_Garrison.GetBuildingInfo(t.buildingID)) then
-				SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
-				SetDataSubMember("CollectedBuildings", t.buildingID, 1);
-				return 1;
+-- Garrison Lib
+(function()
+local C_Garrison_GetBuildingInfo = C_Garrison.GetBuildingInfo;
+local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
+local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
+local fields = {
+	["key"] = function(t)
+		return "buildingID";
+	end,
+	["text"] = function(t)
+		return t.link or select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+	end,
+	["filterID"] = function(t)
+		return t.itemID and 200;
+	end,
+	["collectible"] = function(t)
+		return t.itemID and app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
+		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
+			SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
+			SetDataSubMember("CollectedBuildings", t.buildingID, 1);
+			return 1;
+		end
+		if app.AccountWideRecipes and GetDataSubMember("CollectedBuildings", t.buildingID) then return 2; end
+	end,
+	["description"] = function(t)
+		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
+	end,
+	["icon"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				rawset(t, "icon", icon);
+				rawset(t, "link", link);
+				return icon;
 			end
 		end
-	end
+		return select(4, C_Garrison_GetBuildingInfo(t.buildingID));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				rawset(t, "icon", icon);
+				rawset(t, "link", link);
+				return link;
+			end
+		end
+	end,
 };
+app.BaseGarrisonBuilding = app.BaseObjectFields(fields);
 app.CreateGarrisonBuilding = function(id, t)
 	return setmetatable(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
 end
 
--- Garrison Mission Lib
-app.BaseGarrisonMission = {
-	__index = function(t, key)
-		if key == "key" then
-			return "missionID";
-		elseif key == "text" then
-			return C_Garrison.GetMissionName(t.missionID);
-		elseif key == "icon" then
-			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-		end
-	end
+local fields = {
+	["key"] = function(t)
+		return "missionID";
+	end,
+	["text"] = function(t)
+		return C_Garrison_GetMissionName(t.missionID);
+	end,
+	["icon"] = function(t)
+		return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+	end,
 };
+app.BaseGarrisonMission = app.BaseObjectFields(fields);
 app.CreateGarrisonMission = function(id, t)
 	return setmetatable(constructor(id, t, "missionID"), app.BaseGarrisonMission);
 end
 
--- Garrison Talent Lib
-app.BaseGarrisonTalent = {
-	__index = function(t, key)
-		if key == "key" then
-			return "talentID";
-		elseif key == "text" then
-			local info = t.info;
-			if info.name then return info.name; end
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			if t.questID then return IsQuestFlaggedCompleted(t.questID); end
-			local info = t.info;
-			if info.researched then return info.researched; end
-		elseif key == "icon" then
-			local info = t.info;
-			if info.icon then return info.icon; end
-			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-		elseif key == "description" then
-			local info = t.info;
-			if info.description then return info.description; end
-		elseif key == "info" then
-			-- TODO: Add "perkSpellID"
-			return C_Garrison.GetTalentInfo(t.talentID);
-		end
-	end
+local fields = {
+	["key"] = function(t)
+		return "talentID";
+	end,
+	["info"] = function(t)
+		return C_Garrison_GetTalentInfo(t.talentID) or {};
+	end,
+	["text"] = function(t)
+		return t.info.name;
+	end,
+	["icon"] = function(t)
+		return t.info.icon or "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+	end,
+	["description"] = function(t)
+		return t.info.description;
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["saved"] = function(t)
+		return t.questID and IsQuestFlaggedCompleted(t.questID) or t.info.researched;
+	end,
 };
+app.BaseGarrisonTalent = app.BaseObjectFields(fields);
 app.CreateGarrisonTalent = function(id, t)
 	return setmetatable(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
 end
+end)();
 
 -- Gear Set Lib
 app.BaseGearSet = {
