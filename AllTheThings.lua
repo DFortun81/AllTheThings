@@ -5911,6 +5911,7 @@ local fields = {
 			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
 			return 1;
 		end
+		if app.AccountWideAchievements and SetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
 	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
@@ -5970,7 +5971,7 @@ local criteriaFields = {
 			end
 		end
 		if t.encounterID then
-			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
+			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
 		local m = GetAchievementNumCriteria(t.achievementID);
 		if m and t.criteriaID <= m then
@@ -5980,7 +5981,7 @@ local criteriaFields = {
 	end,
 	["description"] = function(t)
 		if t.encounterID then
-			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
+			return select(2, EJ_GetEncounterInfo(t.encounterID));
 		end
 	end,
 	["link"] = function(t)
@@ -6018,22 +6019,10 @@ local criteriaFields = {
 		return true;
 	end,
 	["collected"] = function(t)
-		if t.criteriaID then
-			local achCollected = 0
-			if app.Settings:Get("AccountWide:Achievements") then
-				achCollected = GetDataSubMember("CollectedAchievements", t.achievementID);
-			else
-				achCollected = select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
-			end
-
-			if achCollected then
-				return true
-			else
-				local m = GetAchievementNumCriteria(t.achievementID);
-				if m and t.criteriaID <= m then
-					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
-				end
-			end
+		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
+		if app.AccountWideAchievements and SetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
+		if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(t.achievementID) or -1) then
+			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
 		end
 	end,
 	["index"] = function(t)
@@ -8143,10 +8132,10 @@ app.BaseMusicRoll = {
 		end
 	end
 };
-end)();
 app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
+end)();
 
 -- NPC Lib
 (function()
