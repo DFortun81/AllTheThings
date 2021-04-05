@@ -7598,28 +7598,30 @@ local function GetHolidayCache()
 	end
 	return cache;
 end
-app.BaseHoliday = {
-	__index = function(t, key)
-		if key == "key" then
-			return "holidayID";
-		elseif key == "icon" then
-			if t.holidayID == 235466 then return 235465; end
-			return t.holidayID;
-		elseif key == "text" then
-			return t.info and t.info.name;
-		elseif key == "eventType" then
-			return 4294967295;
-		elseif key == "texcoord" then
-			return { 0.0, 0.7109375, 0.0, 0.7109375 };
-		elseif key == "info" then
-			local info = GetHolidayCache()[t.holidayID];
-			if info then
-				rawset(t, "info", info);
-				return info;
-			end
+local texcoord = { 0.0, 0.7109375, 0.0, 0.7109375 };
+local fields = {
+	["key"] = function(t)
+		return "holidayID";
+	end,
+	["info"] = function(t)
+		local info = GetHolidayCache()[t.holidayID];
+		if info then
+			rawset(t, "info", info);
+			return info;
 		end
-	end
+		return {};
+	end,
+	["text"] = function(t)
+		return t.info.name;
+	end,
+	["icon"] = function(t)
+		return t.holidayID == 235466 and 235465 or t.holidayID;
+	end,
+	["texcoord"] = function(t)
+		return not rawget(t, "icon") and texcoord;
+	end,
 };
+app.BaseHoliday = app.BaseObjectFields(fields);
 app.CreateHoliday = function(id, t)
 	return setmetatable(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
