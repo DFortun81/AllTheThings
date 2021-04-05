@@ -23,7 +23,6 @@ local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllus
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
-local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
 local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
@@ -7169,137 +7168,174 @@ end
 end)();
 
 -- Gear Set Lib
-app.BaseGearSet = {
-	__index = function(t, key)
-		if key == "key" then
-			return "setID";
-		elseif key == "info" then
-			return C_TransmogSets_GetSetInfo(t.setID);
-		elseif key == "text" then
-			local info = t.info;
-			if info then return info.name; end
-		elseif key == "description" then
-			local info = t.info;
-			if info then
-				if info.description then
-					if info.label then return info.label .. " (" .. info.description .. ")"; end
-					return info.description;
-				end
-				return info.label;
-			end
-		elseif key == "title" then
-			local info = t.info;
-			if info then return info.requiredFaction; end
-		elseif key == "icon" then
-			if t.sources then
-				for sourceID, value in pairs(t.sources) do
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and sourceInfo.invType == 2 then
-						local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-						if icon then rawset(t, "icon", icon); end
-						return icon;
-					end
+(function()
+local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
+local C_TransmogSets_GetSetSources = C_TransmogSets.GetSetSources;
+local fields = {
+	["key"] = function(t)
+		return "setID";
+	end,
+	["info"] = function(t)
+		return C_TransmogSets_GetSetInfo(t.setID) or {};
+	end,
+	["text"] = function(t)
+		return t.info.name;
+	end,
+	["icon"] = function(t)
+		local sources = t.sources;
+		if sources then
+			for sourceID, value in pairs(sources) do
+				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+				if sourceInfo and sourceInfo.invType == 2 then
+					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
+					if icon then rawset(t, "icon", icon); end
+					return icon;
 				end
 			end
-			return QUESTION_MARK_ICON;
-		elseif key == "sources" then
-			local sources = C_TransmogSets.GetSetSources(t.setID);
-			if sources then
-				rawset(t, "sources", sources);
-				return sources;
-			end
-		elseif key == "header" then
-			local info = t.info;
-			if info then return info.label; end
-		elseif key == "subheader" then
-			local info = t.info;
-			if info then return info.description; end
 		end
-	end
+		return QUESTION_MARK_ICON;
+	end,
+	["description"] = function(t)
+		local info = t.info;
+		if info.description then
+			if info.label then return info.label .. " (" .. info.description .. ")"; end
+			return info.description;
+		end
+		return info.label;
+	end,
+	["header"] = function(t)
+		return t.info.label;
+	end,
+	["subheader"] = function(t)
+		return t.info.description;
+	end,
+	["title"] = function(t)
+		return t.info.requiredFaction;
+	end,
+	["sources"] = function(t)
+		local sources = C_TransmogSets_GetSetSources(t.setID);
+		if sources then
+			rawset(t, "sources", sources);
+			return sources;
+		end
+	end,
 };
+app.BaseGearSet = app.BaseObjectFields(fields);
 app.CreateGearSet = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
 end
-app.BaseGearSource = {
-	__index = function(t, key)
-		if key == "collectible" then
-			return true;
-		elseif key == "info" then
-			return C_TransmogCollection_GetSourceInfo(t.s);
-		elseif key == "itemID" then
-			local info = t.info;
-			if info then
-				rawset(t, "itemID", info.itemID);
-				return info.itemID;
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-			return rawget(t, "modItemID");
-		elseif key == "text" then
-			return select(2, GetItemInfo(t.itemID));
-		elseif key == "link" then
-			return select(2, GetItemInfo(t.itemID));
-		elseif key == "invType" then
-			local info = t.info;
-			if info then return info.invType; end
-			return 99;
-		elseif key == "icon" then
-			return select(5, GetItemInfoInstant(t.itemID));
-		elseif key == "specs" then
-			return GetFixedItemSpecInfo(t.itemID);
+
+local fields = {
+	["key"] = function(t)
+		return "s";
+	end,
+	["info"] = function(t)
+		return C_TransmogCollection_GetSourceInfo(rawget(t, "s")) or {};
+	end,
+	["itemID"] = function(t)
+		local itemID = t.info.itemID;
+		if itemID then
+			rawset(t, "itemID", itemID);
+			return itemID;
 		end
-	end
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["link"] = function(t)
+		return t.itemID and select(2, GetItemInfo(t.itemID));
+	end,
+	["name"] = function(t)
+		return t.itemID and select(1, GetItemInfo(t.itemID));
+	end,
+	["icon"] = function(t)
+		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
+	end,
+	["collectible"] = function(t)
+		return rawget(t, "s");
+	end,
+	["collected"] = function(t)
+		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+	end,
+	["modItemID"] = function(t)
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		-- Crieve question: What is this and why does it exist?
+		local modItemID = GetGroupItemIDWithModID(t);
+		if modItemID then
+			rawset(t, "modItemID", modItemID);
+			return modItemID;
+		end
+	end,
+	["specs"] = function(t)
+		return t.itemID and GetFixedItemSpecInfo(t.itemID);
+	end,
+	["invType"] = function(t)
+		return t.info.invType or 99;
+	end,
 };
+app.BaseGearSource = app.BaseObjectFields(fields);
 app.CreateGearSource = function(id)
 	return setmetatable({ s = id}, app.BaseGearSource);
 end
-app.BaseGearSetHeader = {
-	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "setHeaderID";
-		elseif key == "text" then
-			local info = C_TransmogSets_GetSetInfo(t.setHeaderID);
-			if info then return info.label; end
-		elseif key == "link" then
-			return t.achievementID and GetAchievementLink(t.achievementID);
-		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+
+local fields = {
+	["key"] = function(t)
+		return "setID";
+	end,
+	["info"] = function(t)
+		return C_TransmogSets_GetSetInfo(t.setID) or {};
+	end,
+	["text"] = function(t)
+		return t.info.label;
+	end,
+	["icon"] = function(t)
+		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+	end,
+	["link"] = function(t)
+		return t.achievementID and GetAchievementLink(t.achievementID);
+	end,
+	["achievementID"] = function(t)
+		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
 		end
-	end
+	end,
 };
+app.BaseGearSetHeader = app.BaseObjectFields(fields);
 app.CreateGearSetHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setHeaderID"), app.BaseGearSetHeader);
+	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetHeader);
 end
-app.BaseGearSetSubHeader = {
-	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "setSubHeaderID";
-		elseif key == "text" then
-			local info = C_TransmogSets_GetSetInfo(t.setSubHeaderID);
-			if info then return info.description; end
-		elseif key == "link" then
-			return t.achievementID and GetAchievementLink(t.achievementID);
-		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+
+local fields = {
+	["key"] = function(t)
+		return "setID";
+	end,
+	["info"] = function(t)
+		return C_TransmogSets_GetSetInfo(t.setID) or {};
+	end,
+	["text"] = function(t)
+		return t.info.description;
+	end,
+	["icon"] = function(t)
+		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+	end,
+	["link"] = function(t)
+		return t.achievementID and GetAchievementLink(t.achievementID);
+	end,
+	["achievementID"] = function(t)
+		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
 		end
-	end
+	end,
 };
+app.BaseGearSetSubHeader = app.BaseObjectFields(fields);
 app.CreateGearSetSubHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setSubHeaderID"), app.BaseGearSetSubHeader);
+	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetSubHeader);
 end
+end)();
 
 -- Heirloom Lib
 (function()
@@ -11691,8 +11727,6 @@ RowOnEnter = function (self)
 		if reference.spellID and app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
 		if reference.tierID and app.Settings:GetTooltipSetting("tierID") then GameTooltip:AddDoubleLine(L["EXPANSION_ID"], tostring(reference.tierID)); end
 		if reference.setID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setID)); end
-		if reference.setHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setHeaderID)); end
-		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setSubHeaderID)); end
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
@@ -12811,7 +12845,7 @@ function app:GetDataCache()
 							if headers[header] then
 								lastHeader = headers[header];
 							else
-								lastHeader = setmetatable({ ["setHeaderID"] = gearSet.setID, ["subheaders"] = {}, ["g"] = {} }, app.BaseGearSetHeader);
+								lastHeader = setmetatable({ ["setID"] = gearSet.setID, ["subheaders"] = {}, ["g"] = {} }, app.BaseGearSetHeader);
 								tinsert(cache, lastHeader);
 								lastHeader = lastHeader;
 								headers[header] = lastHeader;
@@ -12830,13 +12864,13 @@ function app:GetDataCache()
 								if lastHeader.subheaders[subheader] then
 									lastSubHeader = lastHeader.subheaders[subheader];
 								else
-									lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
+									lastSubHeader = setmetatable({ ["setID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
 									tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
 									lastSubHeader = lastSubHeader;
 									lastHeader.subheaders[subheader] = lastSubHeader;
 								end
 							else
-								lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
+								lastSubHeader = setmetatable({ ["setID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
 								tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
 								lastSubHeader = lastSubHeader;
 							end
