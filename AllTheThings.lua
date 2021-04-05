@@ -6020,7 +6020,7 @@ local criteriaFields = {
 	end,
 	["collected"] = function(t)
 		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
-		if app.AccountWideAchievements and SetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
+		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
 		if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(t.achievementID) or -1) then
 			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
 		end
