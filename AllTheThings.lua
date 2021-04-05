@@ -5906,11 +5906,11 @@ local fields = {
 		return app.CollectibleAchievements;
 	end,
 	["collected"] = function(t)
-		if app.Settings:Get("AccountWide:Achievements") then
-			local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
-			return ach == 1
-		else
-			return select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
+		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
+		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
+			SetTempDataSubMember("CollectedAchievements", t.achievementID, 1);
+			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
+			return 1;
 		end
 	end,
 	["statistic"] = function(t)
@@ -6061,6 +6061,16 @@ local fields = {
 	["key"] = function(t)
 		return "artifactID";
 	end,
+	["info"] = function(t)
+		--[[
+		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
+			uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
+			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
+		]]--
+		local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
+		rawset(t, "info", info);
+		return info;
+	end,
 	["f"] = function(t)
 		return 11;
 	end,
@@ -6112,16 +6122,6 @@ local fields = {
 	["modelRotation"] = function(t)
 		return t.parent and GetRelativeValue(t.parent, "modelRotation") or 45;
 	end,
-	["info"] = function(t)
-		--[[
-		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
-			uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
-			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
-		]]--
-		local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
-		rawset(t, "info", info);
-		return info;
-	end,
 	["silentLink"] = function(t)
 		local itemID = t.silentItemID;
 		if itemID then return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))); end
@@ -6154,84 +6154,6 @@ local fields = {
 	end,
 };
 app.BaseArtifact = app.BaseObjectFields(fields);
--- app.BaseArtifact = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "artifactID";
--- 		elseif key == "f" then
--- 			return 11;
--- 		elseif key == "collectible" then
--- 			return app.CollectibleTransmog;
--- 		elseif key == "collected" then
--- 			_cache = t.s;
--- 			if _cache and GetDataSubMember("CollectedSources", _cache) then return 1; end
--- 			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
--- 			if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
--- 				SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
--- 				return 1;
--- 			end
--- 		elseif key == "text" then
--- 			return t.parent and t.parent.itemID and t.variantText or t.appearanceText;
--- 		elseif key == "title" then
--- 			return t.parent and t.parent.itemID and t.appearanceText or t.variantText;
--- 		elseif key == "variantText" then
--- 			return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
--- 		elseif key == "appearanceText" then
--- 			return "|cffe6cc80" .. (t.info[3] or "???") .. "|r";
--- 		elseif key == "description" then
--- 			return t.info[6] or L["ARTIFACT_INTRO_REWARD"];		-- L["ARTIFACT_INTRO_REWARD"] = "Awarded for completing the introductory quest for this Artifact."
--- 		elseif key == "atlas" then
--- 			return "Forge-ColorSwatchBorder";
--- 		elseif key == "atlas-background" then
--- 			return "Forge-ColorSwatchBackground";
--- 		elseif key == "atlas-border" then
--- 			return "Forge-ColorSwatch";
--- 		elseif key == "atlas-color" then
--- 			return { t.info[9], t.info[10], t.info[11], 1.0 };
--- 		elseif key == "model" then
--- 			return t.parent and GetRelativeValue(t.parent, key);
--- 		elseif key == "modelScale" then
--- 			return t.parent and GetRelativeValue(t.parent, key) or 0.95;
--- 		elseif key == "modelRotation" then
--- 			return t.parent and GetRelativeValue(t.parent, key) or 45;
--- 		elseif key == "info" then
--- 			--[[
--- 			local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
--- 				uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
--- 				modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
--- 			]]--
--- 			local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
--- 			rawset(t, "info", info);
--- 			return info;
--- 		elseif key == "silentLink" then
--- 			local itemID = t.silentItemID;
--- 			if itemID then return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))); end
--- 		elseif key == "silentItemID" then
--- 			local itemID = artifactItemIDs[t.artifactID];
--- 			if itemID then
--- 				return itemID;
--- 			elseif t.parent and t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
--- 				return GetRelativeValue(t.parent, "itemID");
--- 			end
--- 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
--- 		elseif key == "modItemID" then
--- 			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
--- 			return rawget(t, "modItemID");
--- 		elseif key == "s" then
--- 			local s = t.silentLink;
--- 			if s then
--- 				s = app.GetSourceID(s, t.silentItemID);
--- 				if s and s > 0 then
--- 					rawset(t, "s", s);
--- 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
--- 						SetDataSubMember("CollectedSources", s, 1);
--- 					end
--- 					return s;
--- 				end
--- 			end
--- 		end
--- 	end
--- };
 app.CreateArtifact = function(id, t)
 	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
 end
@@ -6242,6 +6164,9 @@ end)();
 local fields = {
 	["key"] = function(t)
 		return "azeriteEssenceID";
+	end,
+	["info"] = function(t)
+		return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID) or {};
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAzeriteEssences;
@@ -6276,75 +6201,19 @@ local fields = {
 		return 50;
 	end,
 	["icon"] = function(t)
-		local info = t.info;
-		if info then return info.icon; end
-		return "Interface/ICONS/INV_Glowing Azerite Spire";
+		return t.info.icon or "Interface/ICONS/INV_Glowing Azerite Spire";
 	end,
 	["name"] = function(t)
-		local info = t.info;
-		if info then return info.name; end
+		return t.info.name;
 	end,
 	["link"] = function(t)
-		return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.rank or 0);
+		return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.rank);
 	end,
 	["rank"] = function(t)
-		local info = t.info;
-		if info then return info.rank; end
-	end,
-	["info"] = function(t)
-		return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
+		return t.info.rank or 0;
 	end,
 };
 app.BaseAzeriteEssence = app.BaseObjectFields(fields);
--- app.BaseAzeriteEssence = {
--- 	__index = function(t, key)
--- 		if key == "key" then
--- 			return "azeriteEssenceID";
--- 		elseif key == "collectible" then
--- 			return app.CollectibleAzeriteEssences;
--- 		elseif key == "collected" then
--- 			if (GetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0) >= t.rank then
--- 				return 1;
--- 			end
-
--- 			local accountRank = GetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0;
--- 			local info = t.info;
--- 			if info and info.unlocked then
--- 				if t.rank and info.rank then
--- 					if info.rank >= t.rank then
--- 						SetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank);
--- 						if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
--- 						return 1;
--- 					end
--- 				else
--- 					return 1;
--- 				end
--- 			end
-
--- 			if app.AccountWideAzeriteEssences and accountRank >= t.rank then
--- 				return 2;
--- 			end
--- 		elseif key == "text" then
--- 			return t.link;
--- 		elseif key == "lvl" then
--- 			return 50;
--- 		elseif key == "icon" then
--- 			local info = t.info;
--- 			if info then return info.icon; end
--- 			return "Interface/ICONS/INV_Glowing Azerite Spire";
--- 		elseif key == "name" then
--- 			local info = t.info;
--- 			if info then return info.name; end
--- 		elseif key == "link" then
--- 			return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.rank or 0);
--- 		elseif key == "rank" then
--- 			local info = t.info;
--- 			if info then return info.rank; end
--- 		elseif key == "info" then
--- 			return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
--- 		end
--- 	end
--- };
 app.CreateAzeriteEssence = function(id, t)
 	return setmetatable(constructor(id, t, "azeriteEssenceID"), app.BaseAzeriteEssence);
 end
@@ -6859,7 +6728,6 @@ local fields = {
 	["saved"] = function(t)
 		local factionID = t.factionID;
 		if GetTempDataSubMember("CollectedFactions", factionID) then return 1; end
-		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
 		if t.standing >= t.maxstanding then
 			SetTempDataSubMember("CollectedFactions", factionID, 1);
 			SetDataSubMember("CollectedFactions", factionID, 1);
@@ -6871,6 +6739,7 @@ local fields = {
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
+		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
@@ -7135,55 +7004,67 @@ end
 end)();
 
 -- Follower Lib
-app.BaseFollower = {
-	__index = function(t, key)
-		if key == "key" then
-			return "followerID";
-		elseif key == "collectible" then
-			return app.CollectibleFollowers;
-		elseif key == "collected" then
-			if app.AccountWideFollowers then
-				if GetDataSubMember("CollectedFollowers", t.followerID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
-			end
-			if C_Garrison.IsFollowerCollected(t.followerID) then
-				SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
-				SetDataSubMember("CollectedFollowers", t.followerID, 1);
-				return 1;
-			end
-		elseif key == "text" then
-			local info = t.info;
-			return info and info.name;
-		elseif key == "link" then
-			if GetTempDataSubMember("CollectedFollowers", t.followerID) then
-				return C_Garrison.GetFollowerLink(t.followerID);
-			else
-				return C_Garrison.GetFollowerLinkByID(t.followerID);
-			end
-		elseif key == "description" then
-			return L["FOLLOWERS_COLLECTION_DESC"];		-- L["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected Account Wide. Unlocking them on one toon will count as collected across all your characters in ATT. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected."
-		elseif key == "info" then
-			-- https://wow.gamepedia.com/API_C_Garrison.GetFollowerInfo
-			return C_Garrison.GetFollowerInfo(t.followerID);
-		elseif key == "icon" then
-			local info = t.info;
-			return info and info.portraitIconID;
-		elseif key == "lvl" then
-			local info = t.info;
-			return info and info.level or 35;
-		elseif key == "title" then
-			local info = t.info;
-			return info and info.className;
-		elseif key == "displayID" then
-			local info = t.info;
-			return info and info.displayIDs and #info.displayIDs > 0 and info.displayIDs[1].id;
+(function()
+local C_Garrison_GetFollowerInfo = C_Garrison.GetFollowerInfo;
+local C_Garrison_GetFollowerLink = C_Garrison.GetFollowerLink;
+local C_Garrison_GetFollowerLinkByID = C_Garrison.GetFollowerLinkByID;
+local C_Garrison_IsFollowerCollected = C_Garrison.IsFollowerCollected;
+local fields = {
+	["key"] = function(t)
+		return "followerID";
+	end,
+	["info"] = function(t)
+		local info = C_Garrison_GetFollowerInfo(t.followerID);
+		if info then
+			rawset(t, "info", info);
+			return info;
 		end
-	end
+		return {};
+	end,
+	["text"] = function(t)
+		return t.info.name;
+	end,
+	["icon"] = function(t)
+		return t.info.portraitIconID;
+	end,
+	["link"] = function(t)
+		if GetTempDataSubMember("CollectedFollowers", t.followerID) then
+			return C_Garrison_GetFollowerLink(t.followerID);
+		else
+			return C_Garrison_GetFollowerLinkByID(t.followerID);
+		end
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleFollowers;
+	end,
+	["collected"] = function(t)
+		if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
+		if C_Garrison_IsFollowerCollected(t.followerID) then
+			SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
+			SetDataSubMember("CollectedFollowers", t.followerID, 1);
+			return 1;
+		end
+		if app.AccountWideFollowers and GetDataSubMember("CollectedFollowers", t.followerID) then return 2; end
+	end,
+	["description"] = function(t)
+		return L["FOLLOWERS_COLLECTION_DESC"];
+	end,
+	["lvl"] = function(t)
+		return t.info.level;
+	end,
+	["title"] = function(t)
+		return t.info.className;
+	end,
+	["displayID"] = function(t)
+		local displayIDs = t.info.displayIDs;
+		return displayIDs and #displayIDs > 0 and displayIDs[1].id;
+	end,
 };
+app.BaseFollower = app.BaseObjectFields(fields);
 app.CreateFollower = function(id, t)
 	return setmetatable(constructor(id, t, "followerID"), app.BaseFollower);
 end
+end)();
 
 -- /dump C_Garrison.GetBuildingInfo(1)
 -- Garrison Building Lib
