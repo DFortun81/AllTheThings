@@ -5911,7 +5911,7 @@ local fields = {
 			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
 			return 1;
 		end
-		if app.AccountWideAchievements and SetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
+		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
 	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
