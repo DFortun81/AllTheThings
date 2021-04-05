@@ -7684,45 +7684,54 @@ end
 end)();
 
 -- Instance Lib
-app.BaseInstance = {
-	__index = function(t, key)
-		if key == "key" then
-			return "instanceID";
-		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "name" then
-			return select(1, EJ_GetInstanceInfo(t.instanceID)) or "";
-		elseif key == "description" then
-			return select(2, EJ_GetInstanceInfo(t.instanceID)) or "";
-		elseif key == "icon" then
-			return select(6, EJ_GetInstanceInfo(t.instanceID)) or "";
-		--elseif key == "link" then
-		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
-		elseif key == "saved" then
-			return t.locks;
-		elseif key == "back" then
-			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
-				return 1;
-			end
-		elseif key == "locks" then
-			local locks = GetTempDataSubMember("lockouts", t.name);
-			if locks then
-				rawset(t, "locks", locks);
-				return locks;
-			end
-		elseif key == "isLockoutShared" then
-			return false;
-		elseif key == "sort" then
-			if t.order then return t.order .. t.name end
-			if t.isRaid then return "50" .. t.name end
-			return "51" .. t.name;
+(function()
+local fields = {
+	["key"] = function(t)
+		return "instanceID";
+	end,
+	["text"] = function(t)
+		local name = t.name;
+		if name then return rawget(t, "isRaid") and ("|cffff8000" .. name .. "|r") or name; end
+	end,
+	["icon"] = function(t)
+		return select(6, EJ_GetInstanceInfo(t.instanceID));
+	end,
+	["name"] = function(t)
+		return select(1, EJ_GetInstanceInfo(t.instanceID));
+	end,
+	["description"] = function(t)
+		return select(2, EJ_GetInstanceInfo(t.instanceID));
+	end,
+	["link"] = function(t)
+		return select(8, EJ_GetInstanceInfo(t.instanceID));
+	end,
+	["back"] = function(t)
+		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+			return 1;
 		end
-	end
+	end,
+	["saved"] = function(t)
+		return t.locks;
+	end,
+	["locks"] = function(t)
+		local locks = GetTempDataSubMember("lockouts", t.name);
+		if locks then
+			rawset(t, "locks", locks);
+			return locks;
+		end
+	end,
+	["isLockoutShared"] = function(t)
+		return false;
+	end,
+	["sort"] = function(t)
+		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
+	end,
 };
+app.BaseInstance = app.BaseObjectFields(fields);
 app.CreateInstance = function(id, t)
 	return setmetatable(constructor(id, t, "instanceID"), app.BaseInstance);
 end
+end)();
 
 -- Item Lib
 (function()
