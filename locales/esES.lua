@@ -692,7 +692,6 @@ for key,value in pairs({
 		--TODO: [-488] = "War Chest",								-- Daily War Chest
 		--TODO: [-489] = "Weekly PVP Chest",						-- Weekly Conquest Point Cap Chest
 		--TODO: [-491] = "Tarot Cards",
-		--TODO: [-492] = "Illusions",
 		--TODO: [-498] = "Круговерть Пустоты",						-- Twisting Nether (Demon Hunter Order Hall advancement)
 
 		--TODO: [-520] = "Expansion Pre-Launch",

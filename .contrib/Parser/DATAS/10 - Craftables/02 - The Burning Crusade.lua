@@ -343,6 +343,15 @@ _.Craftables =
 				i(32402),	-- Shadesteel Sabots
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138789, {	-- Tome of Illusions: Outland
+					ill(5390),	-- Battlemaster
+					ill(2674),	-- Spellsurge
+					ill(5864),	-- Netherflame
+				}),
+			}),
+		}),
 		n(-183, { 	-- Engineering
 			filter(100, {	-- Mounts
 				i(34060),	-- Flying Machine*

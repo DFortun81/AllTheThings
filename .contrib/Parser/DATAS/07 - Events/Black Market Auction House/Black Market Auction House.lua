@@ -35,7 +35,7 @@ _.WorldEvents =
 			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["g"] = {
-			n(-492, {	-- Illusions
+			filter(103, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
 				un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 				un(29, i(128649)),	-- Illusion: Winter's Grasp

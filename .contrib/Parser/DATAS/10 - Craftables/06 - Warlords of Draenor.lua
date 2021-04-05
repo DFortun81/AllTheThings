@@ -46,6 +46,14 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138795, {	-- Tome of Illusions: Draenor
+					ill(5334),	-- Mark of the Frostwolf
+					ill(5330),	-- Mark of the Thunderlord
+				}),
+			}),
+		}),
 		n(-183, { 	-- Engineering
 			filter(101, {	-- Pets
 				i(112057),	-- Lifelike Mechanical Frostboar*

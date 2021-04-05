@@ -342,6 +342,13 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138787, {	-- Tome of Illusions: Azeroth
+					ill(803),	-- Fiery Weapon
+					ill(1899),	-- Unholy Weapon
+					ill(5863),	-- Coldlight
+				}),
+			}),
 			filter(27, {	-- Wands
 				i(11288),	-- Greater Magic Wand
 				i(11290),	-- Greater Mystic Wand

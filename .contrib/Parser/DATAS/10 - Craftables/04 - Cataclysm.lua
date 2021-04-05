@@ -178,6 +178,18 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138791, {	-- Tome of Illusions: Cataclysm
+					ill(4098),	-- Windwalk
+					ill(4084),	-- Heartsong
+					ill(5867),	-- Light of the Earth-Warder
+				}),
+				i(138792, {	-- Tome of Illusions: Elemental Lords
+					ill(4067),	-- Avalanche
+					ill(4099),	-- Landslide
+					ill(4074),	-- Elemental Slayer
+				}),
+			}),
 			filter(101, { 	-- Pet Battle
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp

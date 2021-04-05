@@ -248,6 +248,19 @@ _.Craftables =
 				i(82925),	-- Masterwork Spiritguard Boots
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138793, {	-- Tome of Illusions: Pandaria
+					ill(4441),	-- Windsong
+					ill(4443),	-- Elemental Force
+					ill(5868),	-- Breath of Yu'lon
+				}),
+				i(138794, {	-- Tome of Illusions: Secrets of the Shado-Pan
+					ill(4446),	-- River's Song
+					ill(4444),	-- Dancing Steel
+				}),
+			}),
+		}),
 		n(-183, { 	-- Engineering
 			filter(100, {	-- Mounts
 				i(87250),	-- Depleted-Kyparium Rocket*

@@ -681,7 +681,6 @@ for key,value in pairs({
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 		[-489] = "Еженедельный PVP Сундук",							-- Weekly Conquest Point Cap Chest
 		[-491] = "Карты таро",
-		[-492] = "Иллюзии",
 		[-498] = "Круговерть Пустоты",								-- Twisting Nether (Demon Hunter Order Hall advancement)
 
 		[-520] = "Препатч",

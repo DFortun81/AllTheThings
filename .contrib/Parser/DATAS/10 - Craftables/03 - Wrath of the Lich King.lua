@@ -184,6 +184,15 @@ _.Craftables =
 				i(45561),	-- Treads of Destiny
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			filter(103, {	-- Illusions
+				i(138790, {	-- Tome of Illusions: Northrend
+					ill(5391),	-- Berserking
+					ill(5388),	-- Greater Spellpower
+					ill(1894),	-- Icy Chill
+				}),
+			}),
+		}),
 		n(-183, { 	-- Engineering
 			filter(100, {	-- Mounts
 				i(41508),	-- Mechano-Hog*

@@ -7628,48 +7628,60 @@ end
 end)();
 
 -- Illusion Lib
-app.BaseIllusion = {
-	__index = function(t, key)
-		if key == "key" then
-			return "illusionID";
-		elseif key == "filterID" then
-			return 103;
-		elseif key == "collectible" then
-			return app.CollectibleIllusions;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedIllusions", t.illusionID);
-		elseif key == "text" then
-			if t.itemID then
-				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.text = "|cffff80ff[" .. name .. "]|r";
-					return t.text;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "illusionID";
+	end,
+	["filterID"] = function(t)
+		return 103;
+	end,
+	["text"] = function(t)
+		if t.itemID then
+			local name, link = GetItemInfo(t.itemID);
+			if link then
+				name = "|cffff80ff[" .. name .. "]|r";
+				rawset(t, "link", link);
+				rawset(t, "text", name);
+				return name;
 			end
-			return t.silentLink;
-		elseif key == "link" then
-			if t.itemID then
-				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-			return rawget(t, "modItemID");
-		elseif key == "silentLink" then
-			return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
-		elseif key == "icon" then
-			return "Interface/ICONS/INV_Enchant_Disenchant";
 		end
-	end
+		return t.silentLink;
+	end,
+	["icon"] = function(t)
+		return "Interface/ICONS/INV_Enchant_Disenchant";
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local name, link = GetItemInfo(t.itemID);
+			if link then
+				name = "|cffff80ff[" .. name .. "]|r";
+				rawset(t, "link", link);
+				rawset(t, "text", name);
+				return link;
+			end
+		end
+	end,
+	["modItemID"] = function(t)
+		local modItemID = GetGroupItemIDWithModID(t);
+		rawset(t, "modItemID", modItemID);
+		return modItemID;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleIllusions;
+	end,
+	["collected"] = function(t)
+		return GetDataSubMember("CollectedIllusions", t.illusionID);
+	end,
+	["silentLink"] = function(t)
+		return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
+	end,
 };
+app.BaseIllusion = app.BaseObjectFields(fields);
 app.CreateIllusion = function(id, t)
 	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
+end)();
 
 -- Instance Lib
 app.BaseInstance = {
@@ -12677,7 +12689,7 @@ function app:GetDataCache()
 				cache = {};
 				SetTempDataMember("ILLUSION_CACHE", cache);
 				for i=1,10000,1 do
-					local visualID = select(1, C_TransmogCollection.GetIllusionSourceInfo(i));
+					local visualID = select(1, C_TransmogCollection_GetIllusionSourceInfo(i));
 					if visualID and visualID > 0 then
 						tinsert(cache, app.CreateIllusion(i));
 					end
