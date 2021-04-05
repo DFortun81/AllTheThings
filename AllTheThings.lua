@@ -7252,7 +7252,7 @@ local fields = {
 		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
 	end,
 	["collectible"] = function(t)
-		return rawget(t, "s");
+		return rawget(t, "s") and app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
@@ -7339,7 +7339,39 @@ end)();
 
 -- Heirloom Lib
 (function()
-local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
+local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
+local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
+local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
+local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
+local fields = {
+	["text"] = function(t)
+		return L["HEIRLOOM_TEXT"];
+	end,
+	["icon"] = function(t)
+		return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
+	end,
+	["description"] = function(t)
+		return L["HEIRLOOM_TEXT_DESC"];
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleHeirlooms;
+	end,
+	["collected"] = function(t)
+		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["u"] = function(t)
+		return t.parent.u;
+	end,
+	["f"] = function(t)
+		return t.parent.f;
+	end,
+};
+fields.saved = collected;
+app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
+
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
@@ -7352,188 +7384,153 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_112",
 	"Interface/ICONS/inv_weapon_shortblade_111"
 };
-app.BaseHeirloomUnlocked = {
-	__index = function(t, key)
-		if key == "collectible" then
-			return app.CollectibleHeirlooms;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collected" or key == "saved" then
-			return t.parent.itemID and C_Heirloom.PlayerHasHeirloom(t.parent.itemID);
-		elseif key == "text" then
-			return L["HEIRLOOM_TEXT"];		-- L["HEIRLOOM_TEXT"] = "Unlocked Heirloom"
-		elseif key == "description" then
-			return L["HEIRLOOM_TEXT_DESC"];		-- L["HEIRLOOM_TEXT_DESC"] = "This indicates whether or not you have acquired or purchased the heirloom yet."
-		elseif key == "icon" then
-			return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
-		end
-	end
-};
-app.BaseHeirloomLevel = {
-	__index = function(t, key)
-		if key == "collectible" then
-			return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collected" or key == "saved" then
-			if not t.parent.itemID then return; end
-			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
-			if t.level <= level then return true; end
-			level = select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID));
+local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
+local fields = {
+	["level"] = function(t)
+		return 1;
+	end,
+	["text"] = function(t)
+		return "Upgrade Level " .. t.level;
+	end,
+	["icon"] = function(t)
+		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
+	end,
+	["description"] = function(t)
+		return L["HEIRLOOMS_UPGRADES_DESC"];
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
+	end,
+	["collected"] = function(t)
+		local itemID = t.parent.itemID;
+		if itemID then
+			if t.level <= GetDataSubMember("HeirloomUpgradeRanks", itemID, 0) then return 1; end
+			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
 			if level then
-				SetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, level);
-				if t.level <= level then return true; end
+				SetDataSubMember("HeirloomUpgradeRanks", itemID, level);
+				if t.level <= level then return 1; end
 			end
-		elseif key == "text" then
-			return t.link or ("Upgrade Level " .. t.level);
-		elseif key == "link" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
-					else
-						itemLink = string.format("item:%d:::::::::::::", itemLink);
-					end
-				elseif t.modID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
-				end
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					t.retries = nil;
-					return link;
-				else
-					if t.retries then
-						t.retries = t.retries + 1;
-						if t.retries > app.MaximumItemInfoRetries then
-							local itemName = "Item #" .. t.itemID .. "*";
-							t.title = L["FAILED_ITEM_INFO"];		-- L["FAILED_ITEM_INFO"] = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet."
-							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							t.link = "";
-							t.s = nil;
-							t.text = itemName;
-							return itemName;
-						end
-					else
-						t.retries = nil;
-					end
-				end
-			end
-		elseif key == "description" then
-			return L["HEIRLOOMS_UPGRADES_DESC"];		-- L["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve"
-		elseif key == "icon" then
-			if t.isWeapon then
-				return weaponTextures[t.level];
-			else
-				return armorTextures[t.level];
-			end
-		elseif key == "level" then
-			return 0;
-		elseif key == "isWeapon" then
-			if t.parent.f and contains(isWeapon, t.parent.f) then
-				rawset(t, "isWeapon", true);
-				return true;
-			end
-			rawset(t, "isWeapon", false);
-			return false;
 		end
-	end
-};
-app.BaseHeirloom = {
-	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "filterID" then
-			return 109;
-		elseif key == "collectible" then
-			if t.factionID then return app.CollectibleReputations; end
-			return t.s and t.s > 0 and app.CollectibleTransmog;
-		elseif key == "trackable" then
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["isWeapon"] = function(t)
+		if t.parent.f and contains(isWeapon, t.parent.f) then
+			rawset(t, "isWeapon", true);
 			return true;
-		elseif key == "collected" or key == "saved" then
-			-- heirloom with sourceID
-			if t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s) then return 1; end
-			-- heirloom without sourceID (trinket,ring,etc.)
-			if t.itemID and C_Heirloom.PlayerHasHeirloom(t.itemID) then return 1; end
-			-- heirloom for a faction (grand commendation/rep item/etc.)
-			if t.factionID then
-				if t.repeatable then
-					return (GetTempDataSubMember("CollectedFactions", t.factionID) and 1)
-						or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
-				else
-					-- This is used for the Grand Commendations unlocking Bonus Reputation
-					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
-					if select(15, GetFactionInfoByID(t.factionID)) then
-						SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-						SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-						return 1;
-					end
-				end
-			end
-		-- elseif key == "modID" then
-		-- 	return 1;
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-			return rawget(t, "modItemID");
-		elseif key == "b" then
-			return 2;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "link" then
-			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
-		elseif key == "g" then
-			if app.CollectibleHeirlooms then
-				local g = {};
-				local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
-				if total then
-					SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
-					local armorTokens = {
-						app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
-						app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
-						app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-						app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-					};
-					local weaponTokens = {
-						app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
-						app.CreateItem(151615),	-- Weathered Heirloom Scabbard
-						app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-						app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-					};
-					for i,item in ipairs(armorTokens) do
-						CacheFields(item);
-						item.g = {};
-					end
-					for i,item in ipairs(weaponTokens) do
-						CacheFields(item);
-						item.g = {};
-					end
-					local heirhashpre = "hl" .. tostring(t.itemID)
-					tinsert(g, setmetatable({ ["parent"] = t, ["hash"] = heirhashpre }, app.BaseHeirloomUnlocked));
-					for i=1,total,1 do
-						local hLvlhash = heirhashpre .. ":" .. tostring(i);
-						local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
-						local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
-						if l.isWeapon then
-							tinsert(weaponTokens[total + 1 - i].g, c);
-						else
-							tinsert(armorTokens[total + 1 - i].g, c);
-						end
-						tinsert(g, l);
-					end
-					BuildGroups(t, g);
-					app.UpdateGroups(t, g);
-				end
-				rawset(t, "g", g);
-				return g;
-			end
-		elseif key == "icon" then
-			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
 		end
-	end
+		rawset(t, "isWeapon", false);
+		return false;
+	end,
+	["u"] = function(t)
+		return t.parent.u;
+	end,
+	["f"] = function(t)
+		return t.parent.f;
+	end,
 };
+fields.saved = collected;
+app.BaseHeirloomLevel = app.BaseObjectFields(fields);
+
+local fields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
+	["filterID"] = function(t)
+		return 109;
+	end,
+	["modItemID"] = function(t)
+		local modItemID = GetGroupItemIDWithModID(t);
+		rawset(t, "modItemID", modItemID);
+		return modItemID;
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID));
+	end,
+	["link"] = function(t)
+		return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
+	end,
+	["collectible"] = function(t)
+		if t.factionID then return app.CollectibleReputations; end
+		return t.s and app.CollectibleTransmog;
+	end,
+	["collected"] = function(t)
+		if t.factionID then
+			if t.repeatable then
+				return (GetTempDataSubMember("CollectedFactions", t.factionID) and 1)
+					or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
+			else
+				-- This is used for the Grand Commendations unlocking Bonus Reputation
+				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if select(15, GetFactionInfoByID(t.factionID)) then
+					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					return 1;
+				end
+			end
+		end
+		if t.s and GetDataSubMember("CollectedSources", t.s) then return 1; end
+		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["g"] = function(t)
+		if app.CollectibleHeirlooms then
+			local g = {};
+			local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID);
+			if total then
+				SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
+				local armorTokens = {
+					app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+					app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+					app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+					app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+				};
+				local weaponTokens = {
+					app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+					app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+					app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+					app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+				};
+				for i,item in ipairs(armorTokens) do
+					CacheFields(item);
+					item.g = {};
+				end
+				for i,item in ipairs(weaponTokens) do
+					CacheFields(item);
+					item.g = {};
+				end
+				local heirhashpre = "hl" .. tostring(t.itemID)
+				tinsert(g, setmetatable({ ["parent"] = t, ["hash"] = heirhashpre }, app.BaseHeirloomUnlocked));
+				for i=1,total,1 do
+					local hLvlhash = heirhashpre .. ":" .. tostring(i);
+					local l = setmetatable({ ["level"] = i, ["parent"] = t, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
+					local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
+					if l.isWeapon then
+						tinsert(weaponTokens[total + 1 - i].g, c);
+					else
+						tinsert(armorTokens[total + 1 - i].g, c);
+					end
+					tinsert(g, l);
+				end
+				BuildGroups(t, g);
+				app.UpdateGroups(t, g);
+			end
+			rawset(t, "g", g);
+			return g;
+		end
+	end,
+};
+fields.saved = collected;
+app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
