@@ -5,7 +5,13 @@
 _.WorldDrops =
 {
 	tier(2, {	-- Burning Crusade
-		n(-491, {	-- Tarot Cards
+		n(QUESTS, {
+			i(29739, {	-- Arcane Tome
+				["altAchievements"] = { 1205 },	-- Hero of Shattrath
+			}),
+			i(29740, {	-- Fel Armament
+				["altAchievements"] = { 1205 },	-- Hero of Shattrath
+			}),
 			-- Blessings Deck
 			i(31882),	-- Ace of Blessings
 			i(31889),	-- Two of Blessings

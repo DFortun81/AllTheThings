@@ -7867,12 +7867,6 @@ local itemFields = {
 };
 itemFields.text = itemFields.link;
 app.BaseItem = app.BaseObjectFields(itemFields);
--- app.BaseItem = {
--- 	__index = function(t, key)
--- 		_cache = rawget(itemFields, key);
--- 		return _cache and _cache(t);
--- 	end
--- };
 app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
@@ -7944,12 +7938,6 @@ appearanceFields.modID = itemFields.modID;
 appearanceFields.specs = itemFields.specs;
 appearanceFields.text = appearanceFields.link;
 app.BaseItemSource = app.BaseObjectFields(appearanceFields);
--- app.BaseItemSource = {
--- 	__index = function(t, key)
--- 		_cache = rawget(appearanceFields, key);
--- 		return _cache and _cache(t);
--- 	end
--- };
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
 	t.itemID = itemID;
