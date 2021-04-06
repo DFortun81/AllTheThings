@@ -7877,7 +7877,12 @@ local itemFields = {
 				if o.questID then return 104; end
 			end
 		end
-		if not t.g then return 50; end
+		local results = SearchForField("itemIDAsCost", t.itemID);
+		if results then
+			for i,o in ipairs(results) do
+				if o.questID then return 104; end
+			end
+		end
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
