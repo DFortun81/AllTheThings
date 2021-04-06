@@ -1075,6 +1075,13 @@ local function CloneData(data)
 	end
 	return clone;
 end
+local function RawCloneData(data)
+	local clone = {};
+	for key,value in pairs(data) do
+		rawset(clone, key, value);
+	end
+	return clone;
+end
 -- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
 -- based on the itemID and modID of the item
 local function VerifySourceID(item)
@@ -3934,6 +3941,7 @@ fieldCache["flightPathID"] = {};
 fieldCache["followerID"] = {};
 fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
+fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["questID"] = {};
@@ -4086,6 +4094,7 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
+					CacheField(group, "itemIDAsCost", v[2]);
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
 						rawget(fieldConverters, "itemID")(group, v[2], true);
 					end
@@ -7735,61 +7744,89 @@ end)();
 
 -- Item Lib
 (function()
-local itemFields = {
-	["key"] = function(t) return "itemID"; end,
-	-- ["achievementID"] = function(t)
-		-- local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
-		-- if achievementID then
-			-- rawset(t, "achievementID", achievementID);
-			-- return achievementID;
-		-- end
-	-- end,
-	["b"] = function(t)
-		return 2;
-	end,
-	["collectible"] = function(t)
-		return (rawget(t, "s") and app.CollectibleTransmog)
-			or (rawget(t, "questID") and app.CollectibleAsQuest(t))
-			or (rawget(t, "factionID") and app.CollectibleReputations)
-			or app.CollectibleAsCost(t);
-	end,
-	["collected"] = function(t)
-		local cache = rawget(t, "s");
-		if cache and cache ~= 0 and GetDataSubMember("CollectedSources", cache) then
-			return 1;
-		end
-		cache = rawget(t, "factionID");
-		-- if the item is collectible because it's tied to a factionID
-		if cache then
-			if t.repeatable then
-				-- This is used by reputation-granting items.
-				return (GetTempDataSubMember("CollectedFactions", cache) and 1)
-					or (GetDataSubMember("CollectedFactions", cache) and 2);
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", cache) then return 1; end
-				if select(15, GetFactionInfoByID(cache)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", cache, 1);
-					SetDataSubMember("CollectedFactionBonusReputation", cache, 1);
-					return 1;
+local CollectedAsCostPerItemID = setmetatable({}, { __index = function(t, id)
+	local results = app.SearchForField("itemIDAsCost", id, true);
+	if results and #results > 0 then
+		local collected, count = true, 0;
+		for _,ref in pairs(results) do
+			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				if ref.collectible then
+					count = count + 1;
+					if not ref.collected then
+						collected = false;
+					end
 				end
 			end
 		end
-		return t.saved;
+		if count > 0 then
+			return collected;
+		end
+		return false;
+	else
+		rawset(t, id, false);
+		return false;
+	end
+end });
+local CollectibleAsCostPerItemID = setmetatable({}, { __index = function(t, id)
+	local results = app.SearchForField("itemIDAsCost", id, true);
+	if results and #results > 0 then
+		for _,ref in pairs(results) do
+			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				if ref.collectible then
+					return true;
+				end
+			end
+		end
+		return false;
+	else
+		rawset(t, id, false);
+		return false;
+	end
+end });
+app.ParseItemID = function(itemName)
+	if type(itemName) == "number" then
+		return itemName;
+	else
+		local itemID = tonumber(itemName);
+		if string.match(tostring(itemID), itemName) then
+			-- This was actually an item ID.
+			return itemID;
+		else
+			-- The itemID given was actually the name or a link.
+			itemID = select(1, GetItemInfoInstant(itemName));
+			if itemID then
+				-- Oh good, it was cached by WoW.
+				return itemID;
+			else
+				-- Oh no, gonna need to work for it.
+				local iCache = fieldCache["itemID"];
+				for id,_ in pairs(iCache) do
+					local text = BestItemLinkPerItemID[id];
+					if text and string.match(text, itemName) then
+						return id;
+					end
+				end
+			end
+		end
+	end
+end
+
+local itemFields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["text"] = function(t)
+		return t.link;
 	end,
 	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID or 0));
+		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = rawget(t, "bonusID");
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
+			if bonusID and bonusID > 0 then
+				itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
 			else
 				bonusID = t.modID;
 				if bonusID then
@@ -7803,7 +7840,6 @@ local itemFields = {
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
 				rawset(t, "q", quality);
-				if icon then rawset(t, "icon", icon); end
 				return link;
 			else
 				if rawget(t, "retries") then
@@ -7813,7 +7849,7 @@ local itemFields = {
 						rawset(t, "title", L["FAILED_ITEM_INFO"]);
 						rawset(t, "text", itemName);
 						rawset(t, "retries", nil);
-						rawset(t, "link", "");
+						rawset(t, "link", nil);
 						rawset(t, "s", nil);
 						return itemName;
 					end
@@ -7823,40 +7859,32 @@ local itemFields = {
 			end
 		end
 	end,
-	-- ["modID"] = function(t)
-	-- 	return 1;
-	-- end,
-	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-		return rawget(t, "modItemID");
-	end,
 	["name"] = function(t)
 		local link = t.link;
 		return link and GetItemInfo(link);
 	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-	end,
-	["trackable"] = function(t)
-		return rawget(t, "questID");
-	end,
-	["saved"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
 	["specs"] = function(t)
 		return GetFixedItemSpecInfo(t.itemID);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
+	["f"] = function(t)
+		if t.questID then return 104; end
+		local results = SearchForField("itemID", t.itemID);
+		if results then
+			for i,o in ipairs(results) do
+				if o.questID then return 104; end
+			end
+		end
+		if not t.g then return 50; end
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
-			if bonusID then
-				if bonusID> 0 then
-					return string.format("i:%d:0:1:%d", itemLink, bonusID);
-				else
-					return string.format("i:%d", itemLink);
-				end
+			if bonusID and bonusID > 0 then
+				return string.format("i:%d:0:1:%d", itemLink, bonusID);
 			--elseif t.modID then
 				-- NOTE: At this time, TSM3 does not support modID. (RIP)
 				--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
@@ -7864,84 +7892,141 @@ local itemFields = {
 			return string.format("i:%d", itemLink);
 		end
 	end,
-};
-itemFields.text = itemFields.link;
-app.BaseItem = app.BaseObjectFields(itemFields);
-app.CreateItem  = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
-end
-
--- Appearance Lib (Item Source)
-local appearanceFields = {
-	["key"] = function(t) return "s"; end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
+	end,
+	["modItemID"] = function(t)
+		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
+		local modItemID = GetGroupItemIDWithModID(t);
+		rawset(t, "modItemID", modItemID);
+		return modItemID;
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
 	["collectible"] = function(t)
+		return t.collectibleAsCost;
+	end,
+	["collectibleAsAchievement"] = function(t)
+		return app.CollectedAchievements or t.collectibleAsCost;
+	end,
+	["collectibleAsCost"] = function(t)
+		return CollectibleAsCostPerItemID[t.itemID];
+	end,
+	["collectibleAsFaction"] = function(t)
+		return app.CollectibleReputations or t.collectibleAsCost;
+	end,
+	["collectibleAsFactionOrQuest"] = function(t)
+		return app.CollectibleReputations or t.collectibleAsQuest;
+	end,
+	["collectibleAsTransmog"] = function(t)
 		return app.CollectibleTransmog;
 	end,
+	["collectibleAsQuest"] = function(t)
+		if app.CollectibleQuests then
+			return (not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID);
+		end
+		return t.collectibleAsCost;
+	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+		return t.collectedAsCost;
 	end,
-	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-		return rawget(t, "modItemID");
+	["collectedAsCost"] = function(t)
+		return CollectedAsCostPerItemID[t.itemID];
 	end,
-	["link"] = function(t)
-		local itemLink = t.itemID;
-		if itemLink then
-			local bonusID = rawget(t, "bonusID");
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
+	["collectedAsFaction"] = function(t)
+		return t.collectedAsFactionOnly or t.collectedAsCost;
+	end,
+	["collectedAsFactionOnly"] = function(t)
+		if t.factionID then
+			if t.repeatable then
+				-- This is used by reputation tokens. (turn in items)
+				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+				if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
+					SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+					SetDataSubMember("CollectedFactions", t.factionID, 1);
+					return 1;
 				end
 			else
-				bonusID = t.modID;
-				if bonusID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
-			end
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-			if link then
-				rawset(t, "retries", nil);
-				rawset(t, "link", link);
-				if icon then rawset(t, "icon", icon); end
-				return link;
-			else
-				if rawget(t, "retries") then
-					rawset(t, "retries", rawget(t, "retries") + 1);
-					if t.retries > app.MaximumItemInfoRetries then
-						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", L["FAILED_ITEM_INFO"]);
-						rawset(t, "text", itemName);
-						rawset(t, "retries", nil);
-						rawset(t, "link", "");
-						return itemName;
-					end
-				else
-					rawset(t, "retries", nil);
+				-- This is used for the Grand Commendations unlocking Bonus Reputation
+				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if select(15, GetFactionInfoByID(t.factionID)) then
+					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					return 1;
 				end
 			end
 		end
 	end,
-	["s"] = function(t)
-		return 0;
+	["collectedAsFactionOrQuest"] = function(t)
+		return t.collectedAsFactionOnly or t.collectedAsQuest;
+	end,
+	["collectedAsQuest"] = function(t)
+		return t.saved or t.collectedAsCost;
+	end,
+	["collectedAsTransmog"] = function(t)
+		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+	end,
+	["savedAsQuest"] = function(t) 
+		return IsQuestFlaggedCompletedForObject(t);
 	end,
 };
-appearanceFields.b = itemFields.b;
-appearanceFields.tsm = itemFields.tsm;
-appearanceFields.icon = itemFields.icon;
-appearanceFields.name = itemFields.name;
-appearanceFields.modID = itemFields.modID;
-appearanceFields.specs = itemFields.specs;
-appearanceFields.text = appearanceFields.link;
-app.BaseItemSource = app.BaseObjectFields(appearanceFields);
+app.BaseItem = app.BaseObjectFields(itemFields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsAchievement;
+fields.collected = itemFields.collectedAsAchievement;
+app.BaseItemWithAchievementID = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsFaction;
+fields.collected = itemFields.collectedAsFaction;
+app.BaseItemWithFactionID = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsQuest;
+fields.collected = itemFields.collectedAsQuest;
+fields.trackable = itemFields.trackableAsQuest;
+fields.saved = itemFields.savedAsQuest;
+app.BaseItemWithQuestID = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsFactionOrQuest;
+fields.collected = itemFields.collectedAsFactionOrQuest;
+fields.trackable = itemFields.trackableAsQuest;
+fields.saved = itemFields.savedAsQuest;
+app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
+
+-- Appearance Lib (Item Source)
+local fields = RawCloneData(itemFields);
+fields.key = function(t) return "s"; end;
+fields.collectible = itemFields.collectibleAsTransmog;
+fields.collected = itemFields.collectedAsTransmog;
+app.BaseItemSource = app.BaseObjectFields(fields);
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
 	t.itemID = itemID;
 	return t;
+end
+app.CreateItem = function(id, t)
+	if t then
+		if rawget(t, "s") then
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemSource);
+		elseif rawget(t, "factionID") then
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
+			else
+				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
+			end
+		elseif rawget(t, "questID") then
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
+		elseif rawget(t, "achID") then
+			rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithAchievementID);
+		end
+	end
+	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 end)();
 
@@ -8328,6 +8413,7 @@ end
 local SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
+	[261] = 5149,	-- Beast Training
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
 	[333] = 7411,	-- Enchanting
@@ -8342,6 +8428,7 @@ local SkillIDToSpellID = setmetatable({
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
 	[960] = 53428,  -- Runeforging
+	[40] = 2842,	-- Poison
 
 	-- Specializations
 	[20219] = 20219,	-- Gnomish Engineering
@@ -8351,6 +8438,9 @@ local SkillIDToSpellID = setmetatable({
 	[17041] = 17041,	-- Master Axesmith
 	[17040] = 17040,	-- Master Hammersmith
 	[17039] = 17039,	-- Master Swordsmith
+	[10656] = 10656,	-- Dragonscale Leatherworking
+	[10658] = 10658,	-- Elemental Leatherworking
+	[10660] = 10660,	-- Tribal Leatherworking
 }, {__index = function(t,k) return(106727) end})
 app.BaseProfession = {
 	__index = function(t, key)
@@ -8616,7 +8706,7 @@ end
 app.CollectibleAsCost = function(t)
 	-- items can only be a cost via 'itemID'
 	-- ignore anything which is directly under something which is 'saved' == 1, since that means the character cannot obtain it currently
-	if t.modItemID and (not t.parent or t.parent.saved ~= 1) then
+	if t.modItemID and (not t.parent or not t.parent.saved) then
 		-- get all the Things referenced by this item
 		local references = app.SearchForField("itemID", t.modItemID, true);
 		if references then
