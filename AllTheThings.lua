@@ -8703,41 +8703,6 @@ app.CollectibleAsQuest = function(t)
 	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
 end
-app.CollectibleAsCost = function(t)
-	-- items can only be a cost via 'itemID'
-	-- ignore anything which is directly under something which is 'saved' == 1, since that means the character cannot obtain it currently
-	if t.modItemID and (not t.parent or not t.parent.saved) then
-		-- get all the Things referenced by this item
-		local references = app.SearchForField("itemID", t.modItemID, true);
-		if references then
-			-- print(t.modItemID,"references:")
-			for _,ref in pairs(references) do
-				-- every item will reference itself in cache, so ignore that
-				if t.modItemID ~= ref.modItemID then
-					-- check each to see if any is un-collected and has this same item as a cost
-					-- print(ref.key,ref[ref.key],ref,t)
-					if ref.cost and type(ref.cost) == "table"	-- has a cost
-						and ref.collectible						-- is collectible
-						and not ref.collected					-- not collected
-						then
-						for _,c in pairs(ref.cost) do
-							-- check each cost element to see if it is an 'item' with the itemID of the object being checked
-							if c[1] == "i" and c[2] == t.modItemID then
-								-- return true: this item is required as a 'cost' to something else collectible which has not been collected
-								-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
-								-- if can be obtained on this character
-								if app.RecursiveGroupRequirementsFilter(ref) then
-									-- print(t.modItemID,"Item Required as Cost for",ref.key,ref[ref.key]);
-									return true;	-- this item is a cost for something collectible on this character
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
 		CompletedQuests[questID] = true;
