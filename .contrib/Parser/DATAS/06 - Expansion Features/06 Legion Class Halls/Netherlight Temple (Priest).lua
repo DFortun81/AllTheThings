@@ -309,6 +309,24 @@ _.ExpansionFeatures =
 							follower(872),	-- Sol
 						},
 					}),
+					q(42137, {	-- Champion: Yalia Sagewhisper
+						["sourceQuests"] = { 43376 },	-- Problem Salver
+						["classes"] = { PRIEST },
+						["coord"] = { 47.1, 43.9, 630 },
+						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
+						["g"] = {
+							follower(871),	-- Yalia Sagewhisper
+						},
+					}),
+					q(42138, {	-- Champion: Zabra Hexx
+						["sourceQuests"] = { 43376 },	-- Problem Salver
+						["classes"] = { PRIEST },
+						["coord"] = { 47.1, 43.9, 630 },
+						["provider"] = { "n", 110686 },	-- Zabra Hexx
+						["g"] = {
+							follower(870),	-- Zabra Hexx
+						},
+					}),
 					q(44229, { -- Champion Armaments
 						["description"] = "Requires researching the Order Advancement for Armaments of Light.",
 						["classes"] = { PRIEST },
@@ -319,6 +337,15 @@ _.ExpansionFeatures =
 						["coord"] = { 48.9, 48.7, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
+					}),
+					q(43378, {	-- Eye of Azshara: Looking Through the Lens
+						["sourceQuests"] = {
+							42137,	-- Champion: Yalia Sagewhisper
+							42138,	-- Champion: Zabra Hexx
+						},
+						["classes"] = { PRIEST },
+						["coord"] = { 47.1, 43.9, 630 },
+						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 					}),
 					q(41628, {	-- Eyes of the Dragon
 						["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
@@ -370,6 +397,15 @@ _.ExpansionFeatures =
 							{ "n", 101344 },	-- Hooded Priestess (Horde)
 							{ "n", 102333 },	-- Hooded Priestess (Alliance)
 						},
+					}),
+					q(43376, {	-- Problem Salver
+						["sourceQuests"] = {
+							43375,	-- An Ample Supply
+						--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
+						},
+						["classes"] = { PRIEST },
+						["coord"] = { 58.5, 37.2, 630 },
+						["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 					}),
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision

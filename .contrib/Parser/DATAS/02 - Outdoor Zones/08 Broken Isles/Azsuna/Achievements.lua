@@ -8,60 +8,11 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(ACHIEVEMENTS, {
 				ach(10994, {	-- A Glorious Campaign
-					cl(PRIEST, {
-						["classes"] = { PRIEST },
-						["g"] = {
-							q(42137, {	-- Champion: Yalia Sagewhisper
-								["sourceQuests"] = { 43376 },	-- Problem Salver
-								["classes"] = { PRIEST },
-								["coord"] = { 47.1, 43.9, 630 },
-								["lvl"] = 103,
-								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
-								["g"] = {
-									follower(871),	-- Yalia Sagewhisper
-								},
-							}),
-							q(42138, {	-- Champion: Zabra Hexx
-								["sourceQuests"] = { 43376 },	-- Problem Salver
-								["classes"] = { PRIEST },
-								["coord"] = { 47.1, 43.9, 630 },
-								["lvl"] = 103,
-								["provider"] = { "n", 110686 },	-- Zabra Hexx
-								["g"] = {
-									follower(870),	-- Zabra Hexx
-								},
-							}),
-							q(43378, {	-- Eye of Azshara: Looking Through the Lens
-								["sourceQuests"] = {
-									42137,	-- Champion: Yalia Sagewhisper
-									42138,	-- Champion: Zabra Hexx
-								},
-								["classes"] = { PRIEST },
-								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
-							}),
-							q(43376, {	-- Problem Salver
-								["sourceQuests"] = {
-									43375,	-- An Ample Supply
-								--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
-								},
-								["classes"] = { PRIEST },
-								["coord"] = { 58.5, 37.2, 630 },
-								["lvl"] = 103,
-								["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
-							}),
-						},
-					}),
 					cl(PALADIN, {
 						["classes"] = { PALADIN },
 						["g"] = {
 							q(43490),	-- Aponi's Trail
 							q(42888),	-- Communication Orbs
-						},
-					}),
-					cl(MAGE, {
-						["classes"] = { MAGE },
-						["g"] = {
-							q(42222),	-- Empyrean Society Report
 						},
 					}),
 					cl(ROGUE, {

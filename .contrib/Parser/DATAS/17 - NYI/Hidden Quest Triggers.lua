@@ -1810,8 +1810,8 @@ _.HiddenQuestTriggers =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -2113,7 +2113,7 @@ _.HiddenQuestTriggers =
 		q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
 		q(41329),	-- Shaman Order Hall - Elemental Chosen First
 		q(43947),	-- Shaman Order Hall - Elemental Chosen
-		q(43948),	-- Shaman Order Hall - Restoration Chosen
+		q(43948),	-- Shaman Order Hall - Restoration Chosen Third
 		q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
 		q(44397),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 2
 		q(44398),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 3
@@ -2121,6 +2121,7 @@ _.HiddenQuestTriggers =
 		q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
 		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+		q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
 
 		q(40582),	-- Warrior Order Hall - Arms chosen first
 		q(43952),	-- Warrior Order Hall - Arms chosen second
