@@ -1161,6 +1161,28 @@ _.ExpansionFeatures =
 									ach(14725),		-- We Happy Few
 								}),
 							}),
+							n(QUESTS, {
+								-- q(TODO, {	-- Lord Garridan's Egg
+								-- 	["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
+								-- 	["repeatable"] = true,
+								-- 	["u"] = 19,	-- Noblegarden
+								-- }),
+								-- q(TODO, {	-- Prince Renethal's Egg
+								-- 	["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
+								-- 	["repeatable"] = true,
+								-- 	["u"] = 19,	-- Noblegarden
+								-- }),
+								-- q(TODO, {	-- Theotar's Egg
+								-- 	["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
+								-- 	["repeatable"] = true,
+								-- 	["u"] = 19,	-- Noblegarden
+								-- }),
+								q(63719, {	-- Temel's Egg
+									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+							}),
 							n(-908, {	-- Rewards
 								["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 								["g"] = {

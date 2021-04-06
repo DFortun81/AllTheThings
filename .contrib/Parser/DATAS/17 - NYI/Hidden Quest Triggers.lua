@@ -4241,7 +4241,6 @@ _.HiddenQuestTriggers =
 		q(60305),	-- Channeling Anima Conduit to Court of the Harvesters
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
-		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -4305,7 +4304,6 @@ _.HiddenQuestTriggers =
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
-		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
@@ -4336,26 +4334,30 @@ _.HiddenQuestTriggers =
 		q(62529),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
-		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
-		q(59627),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
+		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
 		q(59628),	-- Guest Selected for Ember Court: Mikanikos
 		q(59629),	-- Guest Selected for Ember Court: The Countess
 		q(59630),	-- Guest Selected for Ember Court: Alexandros Morgraine
 		q(59631),	-- Guest Selected for Ember Court: Hunt-Captain Korayn
 		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
+		q(59633),	-- Guest Selected for Ember Court: Rendle and Cudgelface
+		q(59635),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
+		q(59636),	-- Guest Selected for Ember Court: Droman Aliothe
 		q(59637),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
+		q(59638),	-- Guest Selected for Ember Court: Kleia and Pelagos
+		q(59639),	-- Guest Selected for Ember Court: Plague Deviser Marileth
+		q(59640),	-- Guest Selected for Ember Court: Sika
 		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
 		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
 		-- Leaving Ember Court: 59627, 59638, ??, ??, 	   => Next RSVPs: CryptKeeper/Klei&Pel/PoleAdres/LadyMoon
 		-- Leaving Ember Court: 59626, 59633, 59634, 59637 => Next RSVPs: Choofa/GMVole/Rendle&Cudgelface/BaronVash
-		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
-		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
-		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
-		q(61889),	-- revoking invitations (3rd in a row, perhaps tracker for the 3rd free revoke per week from Staff: Ambassasdors items)
-		q(61890),	-- revoking invitation (4th free revoke in the week?)
+		-- Leaving Ember Court: 59628, 60319, ??, ??,		=> Next RSVPs: Choofa/Stonehead/Hunt-Captain/Mikanikos
+		q(61389),	-- 1st free revoke RSVP per week
+		q(61390),	-- 2nd free revoke RSVP per week
+		q(61889),	-- 3rd free revoke RSVP per week
+		q(61890),	-- 4th free revoke RSVP per week
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
@@ -4455,7 +4457,6 @@ _.HiddenQuestTriggers =
 		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
 		q(59391),	-- when using "RSVP: The Countess" — every time
 		q(59392),	-- when using "RSVP: The Countess" — first time only
-		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(61506),	-- when using 'Guest List Page' (181538)
 		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
