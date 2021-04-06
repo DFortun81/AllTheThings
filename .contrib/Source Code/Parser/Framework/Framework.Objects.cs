@@ -52,7 +52,7 @@ namespace ATT
             }
 
             /// <summary>
-            /// All of the Quests that are in the database.
+            /// All of the Quests that are in the database. This is solely used to add information to breadcrumb quests.
             /// </summary>
             public static IDictionary<int, Dictionary<string, object>> AllQuests { get; } = new Dictionary<int, Dictionary<string, object>>();
 
@@ -60,6 +60,16 @@ namespace ATT
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
             public static IDictionary<object, List<Tuple<string, int>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, int>>>();
+
+            /// <summary>
+            /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
+            /// </summary>
+            public static bool ProcessingSourceData = false;
+
+            /// <summary>
+            /// The set of Quests which the Parser has notified about being listed in multiple locations in Source
+            /// </summary>
+            public static HashSet<int> DuplicateSourceQuests = new HashSet<int>();
 
             #endregion
             #region Filters
@@ -337,7 +347,7 @@ namespace ATT
                     case 12: return Filters.Quest;
 
                     // Keys
-                    case 13: 
+                    case 13:
                         return Filters.Key;
 
                     // Miscellaneous
@@ -1742,14 +1752,14 @@ namespace ATT
                     costsList.Add(costsObjs);
                 }
 
-                for(int i = costsList.Count - 1;i >= 0;--i)
+                for (int i = costsList.Count - 1; i >= 0; --i)
                 {
                     var cost = costsList[i];
                     string costType = cost[0].ToString();
                     // ensure the cost has the appropriate number of objects based on type
                     if (costType == "i" || costType == "c")
                     {
-                        if(cost.Count == 4)
+                        if (cost.Count == 4)
                         {
                             var phase = long.Parse(cost[3].ToString());
                             if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
@@ -1760,7 +1770,7 @@ namespace ATT
                                 continue;
                             }
                         }
-                        else if(cost.Count != 3) Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                        else if (cost.Count != 3) Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
                     }
 
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
@@ -2141,9 +2151,32 @@ namespace ATT
                         Merge(entry, dbQuest);
                     }
 
+                    // add this quest entry to the set of AllQuests in case it is referenced by a breadcrumb or another sourceQuest
                     if (!AllQuests.ContainsKey(questID))
                     {
                         AllQuests.Add(questID, entry);
+                    }
+                    else
+                    {
+                        Dictionary<string, object> quest = AllQuests[questID];
+                        // Copy in any additional pertinent data due to the quest information being listed in another location as well
+                        if (entry.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                        {
+                            Merge(quest, "sourceQuests", sourceQuests);
+                        }
+                        if (entry.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
+                        {
+                            Merge(quest, "isBreadcrumb", isBreadcrumb);
+                        }
+
+                        // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
+                        if (ProcessingSourceData)
+                        {
+                            if (IsImportantQuestListing(quest) || IsImportantQuestListing(entry))
+                            {
+                                DuplicateSourceQuests.Add(questID);
+                            }
+                        }
                     }
                 }
                 //else if (entry.TryGetValue("altQuestID", out int altQuestID))
@@ -2178,6 +2211,21 @@ namespace ATT
                 //    PreMerge(entry, npc);
                 //    Merge(entry, npc);
                 //}
+            }
+
+            private static bool IsImportantQuestListing(Dictionary<string, object> quest)
+            {
+                return
+                    // not tied to an Item
+                    !quest.ContainsKey("itemID") &&
+                    // not repeatable
+                    !quest.ContainsKey("repeatable") &&
+                    !quest.ContainsKey("isDaily") &&
+                    !quest.ContainsKey("isWeekly") &&
+                    !quest.ContainsKey("isMonthly") &&
+                    !quest.ContainsKey("isYearly") &&
+                    // not unobtainable
+                    (!quest.ContainsKey("u") || Convert.ToInt32(quest["u"]) > 3);
             }
 
             /// <summary>

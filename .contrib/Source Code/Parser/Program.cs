@@ -20,7 +20,7 @@ namespace ATT
             // Load all of the RAW JSON Data into the database.
             var files = Directory.EnumerateFiles(".", "*.json", SearchOption.AllDirectories).ToList();
             files.Sort();
-            foreach(var fileName in files)
+            foreach (var fileName in files)
             {
                 Trace.Write(fileName);
                 Trace.Write("... ");
@@ -63,10 +63,10 @@ namespace ATT
             {
                 var list = new List<object>();
                 var dict = new Dictionary<object, bool>();
-                foreach(var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
+                foreach (var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
                 {
                     var race = Convert.ToInt32(keyValue);
-                    if(!dict.ContainsKey(race))
+                    if (!dict.ContainsKey(race))
                     {
                         dict[race] = true;
                         list.Add(race);
@@ -91,12 +91,13 @@ namespace ATT
                 Framework.HORDE_ONLY = list;
                 Framework.HORDE_ONLY_DICT = dict;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.WriteLine(e);
                 Trace.WriteLine("Press Enter once you have resolved the issue.");
                 Console.ReadLine();
             }
+            Framework.Objects.ProcessingSourceData = true;
             foreach (var fileName in luaFiles)
             {
                 //Trace.WriteLine(fileName);
@@ -109,7 +110,7 @@ namespace ATT
                         Framework.Merge(lua, lua.GetTable("AllTheThings"));
                         break;
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Trace.WriteLine(fileName);
                         Trace.WriteLine(e.Message);
@@ -120,6 +121,7 @@ namespace ATT
                 while (true);
             }
             Trace.WriteLine("Done parsing LUA files...");
+            Framework.Objects.ProcessingSourceData = false;
 
             do
             {
@@ -150,6 +152,17 @@ namespace ATT
 
             // Export all of the data for the Framework.
             Framework.Export();
+
+            // Notify of duplicate Quest listings
+            if (Framework.Objects.DuplicateSourceQuests.Count > 0)
+            {
+                System.Text.StringBuilder dupeQuests = new System.Text.StringBuilder();
+                foreach (int questID in Framework.Objects.DuplicateSourceQuests.OrderBy(q => q))
+                {
+                    dupeQuests.Append(questID.ToString()).Append(",");
+                }
+                Trace.Write("Duplicate Quest Listings: " + dupeQuests.ToString());
+            }
 
             // Update the .TOC with the Parser Run Date
             //const string TOC_PATH = "..\\..\\AllTheThings.toc";
