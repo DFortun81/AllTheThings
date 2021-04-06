@@ -25,7 +25,7 @@ namespace ATT
                 if (data.TryGetValue("f", out int f))
                 {
 #if CLASSIC || TBC
-                    if (f <= 0) fields.Remove("f");  // Invalid Filter
+                    if (f <= 0 || f == 104 || f == 56) fields.Remove("f");  // Quest Items, Reagents, and Invalid Filters
 #else
                     if (f == 104 || f == 0) fields.Remove("f");  // Quest Items
 #endif
