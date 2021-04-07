@@ -409,7 +409,7 @@ _.WorldEvents =
 			i(112935),	-- Tusk of Mannoroth
 			i(141006),	-- The First Satyr's Spaulders
 			i(169430, {	--  Unclaimed Black Market Container
-				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 169430}},
+				["sym"] = {{"select", "headerID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
 			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},

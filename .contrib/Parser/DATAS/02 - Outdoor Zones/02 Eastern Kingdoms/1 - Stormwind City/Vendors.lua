@@ -302,7 +302,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(31640)),	-- Grand Marshal's Ringmail Chestguard
@@ -2729,11 +2729,11 @@ _.Zones =
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "npcID", -9979 },	-- Select the Cataclysm header.
+						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
 						{"pop"},	-- Discard header and acquire the children.
-						{"where", "npcID", -673 },	-- Ruthless Gladiator header.
+						{"where", "headerID", -673 },	-- Ruthless Gladiator header.
 						{"pop"},	-- Discard header and acquire the children.
-						{"where", "npcID", -661 },	-- Gladiator header.
+						{"where", "headerID", -661 },	-- Gladiator header.
 					},
 				}),
 				n(4730,   {	-- Lelanai <Saber Handler>
@@ -3041,7 +3041,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 						{"sub", "pvp_gear_base", -9979, -674, -662 },	-- Cataclysmic Gladiator: Season 11 Elite Gear
 						{"pop"},	-- Discard the Set header and acquire the children.

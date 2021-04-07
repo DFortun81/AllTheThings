@@ -251,7 +251,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -673, -661 },	-- Ruthless Gladiator: Season 10 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(54659,  {	-- Blood Guard Zar'shi >S10< Elite / Old S11 (Same name, different npc)
@@ -792,7 +792,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 						{"sub", "pvp_gear_base", -9979, -674, -662 },	-- Cataclysmic Gladiator: Season 11 Elite Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -4013,7 +4013,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(28926)),	-- High Warlord's Quickblade

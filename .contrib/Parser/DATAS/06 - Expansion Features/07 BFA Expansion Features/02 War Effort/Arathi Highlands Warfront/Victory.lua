@@ -12,11 +12,11 @@ _.ExpansionFeatures =
 					["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 					--[[ -- As it turns out, these items have different sourceIDs AND different appearances! RIP.
 					["sym"] = {
-						{"select", "npcID", -10057},	-- War Effort
+						{"select", "headerID", -10057},	-- War Effort
 						{"pop"},	-- Discard the War Effort Header and acquire the children.
 						{"where", "mapID", 14},	-- Arathi Highlands
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
+						{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 						{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 						{"modID", 3},	-- Set the ModID to 3.

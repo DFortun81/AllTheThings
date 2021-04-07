@@ -493,9 +493,9 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9914, -660 },
 								{"pop"},
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(88155, {	-- Challenger Savina
@@ -1217,9 +1217,9 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -661 },
 								{"pop"},
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 							},
 							["g"] = {
 								i(116776, {	-- Pale Thorngrazer
@@ -1585,14 +1585,14 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 },
 								{"pop"},
-								{"exclude", "npcID", -320 },	-- Exclude Head Header
-								{"exclude", "npcID", -321 },	-- Exclude Shoulder Header
-								{"exclude", "npcID", -323 },	-- Exclude Chest Header
-								{"exclude", "npcID", -327 },	-- Exclude Hands Header
-								{"exclude", "npcID", -329 },	-- Exclude Legs Header
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -320 },	-- Exclude Head Header
+								{"exclude", "headerID", -321 },	-- Exclude Shoulder Header
+								{"exclude", "headerID", -323 },	-- Exclude Chest Header
+								{"exclude", "headerID", -327 },	-- Exclude Hands Header
+								{"exclude", "headerID", -329 },	-- Exclude Legs Header
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>

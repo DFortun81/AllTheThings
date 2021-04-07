@@ -14,7 +14,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -9983 },	-- Deadly Gladiator: Season 5 Honor Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 }, -- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 }, -- Exclude Neck, Finger and Trinkets
 						},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
@@ -43,7 +43,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -661 },	-- Deadly Gladiator: Season 5 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 					}),
 					n(29538, { 	-- Hexil Garrot <Tools of the Trade>
@@ -77,7 +77,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 					}),
 					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor>
@@ -85,7 +85,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
@@ -273,7 +273,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -671, -661 },	-- Wrathful Gladiator: Season 8 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 					}),
 					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
@@ -282,7 +282,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 					}),
 					n(54651, {	-- Zom Bocom (Same name, different npc)
@@ -290,7 +290,7 @@ _.Zones =
 						["sym"] = {
 							{"sub", "pvp_gear_base", -9979, -673, -661 },	-- Ruthless Gladiator: Season 10 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 						["g"] = {
 							n(-4178, {	-- Old Season 11 (Header Missing, need new Header)

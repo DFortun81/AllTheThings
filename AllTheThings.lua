@@ -755,8 +755,8 @@ GameTooltipModel.TrySetModel = function(self, reference)
 				-- Okay, fine.
 				-- TODO: This doesn't work for variants
 			elseif reference.g and #reference.g > 0 then
-				local npc = reference.g[1];
-				if npc and npc.npcID and npc.npcID <= -5200 and npc.npcID >= -5206 then
+				local header = reference.g[1];
+				if header and header.headerID and header.headerID <= -5200 and header.headerID >= -5206 then
 					-- Okay, we're good.
 				else
 					s = nil;
@@ -1601,7 +1601,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"followerID",
 	"illusionID",
 	"unit",
-	"dungeonID"
+	"headerID"
 };
 local function GetKey(t)
 	for i,key in ipairs(keysByPriority) do
@@ -1725,6 +1725,8 @@ CreateObject = function(t)
 				t = app.CreateCharacterClass(t.classID, t);
 			elseif t.npcID or t.creatureID then
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
+			elseif t.headerID then
+				t = app.CreateNPC(t.headerID, t);
 			elseif t.questID then
 				if t.isVignette then
 					t = app.CreateVignette(t.questID, t);
@@ -1882,32 +1884,32 @@ local subroutines;
 subroutines = {
 	["pvp_gear_base"] = function(headerID1, headerID2, headerID3)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 		};
 	end,
 	["pvp_gear_faction_base"] = function(headerID1, headerID2, headerID3, headerID4)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID3 },	-- Select the Faction header
 			{"pop"},	-- Discard the Faction header and acquire the children.
-			{"where", "npcID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID4 },	-- Select the Set header
 		};
 	end,
 	-- Set Gear
 	["pvp_set_ensemble"] = function(headerID1, headerID2, headerID3, classID)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -1915,15 +1917,15 @@ subroutines = {
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
 		};
 	end,
-		["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
+	["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID3 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID4 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -1934,13 +1936,13 @@ subroutines = {
 	-- Weapons
 	["pvp_weapons_ensemble"] = function(headerID1, headerID2, headerID3)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "npcID", -319 },	-- Select the "Weapons" header.
+			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
@@ -1948,15 +1950,15 @@ subroutines = {
 	end,
 	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
 		return {
-			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"select", "headerID", headerID1 },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID2 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID3 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "npcID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID4 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "npcID", -319 },	-- Select the "Weapons" header.
+			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
@@ -1965,15 +1967,15 @@ subroutines = {
 	-- Island Expeditions Sets
 	["islandexpeditions_sets"] = function(headerID1, headerID2)
 		return {
-			{"select", "npcID", -3338 },	-- Select the Island Expeditions header
+			{"select", "headerID", -3338 },	-- Select the Island Expeditions header
 			{"pop"},	-- Discard the Island Expeditions header and acquire the children.
-			{"where", "npcID", -6015 },	-- Select the Rewards header
+			{"where", "headerID", -6015 },	-- Select the Rewards header
 			{"pop"},	-- Discard the Rewards header and acquire the children.
-			{"where", "npcID", -3339 },	-- Select the Item Sets header
+			{"where", "headerID", -3339 },	-- Select the Item Sets header
 			{"pop"},	-- Discard the Item Sets header and acquire the children.
-			{"where", "npcID", headerID1 },	-- Select the Armor Typ header
+			{"where", "headerID", headerID1 },	-- Select the Armor Type header
 			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "npcID", headerID2 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 		};
 	end,
 	["legion_relinquished_base"] = function()
@@ -1990,10 +1992,10 @@ subroutines = {
 			-- PVP Gear
 			--[[
 			-- Demonic Combatant & Gladiator Season 7 Gear
-			{"select", "npcID", -688},	-- Demonic Gladiator Season 7
+			{"select", "headerID", -688},	-- Demonic Gladiator Season 7
 			{"pop"},	-- Remove Season Header and push the children into the processing queue.
 			{"pop"},	-- Remove Faction Header and push the children into the processing queue.
-			{"contains", "npcID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
+			{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
 			{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
 			{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
 			{"finalize"},	-- Push the items to the finalized list.
@@ -2106,9 +2108,9 @@ subroutines = {
 
 			-- Process the World Quest Rewards
 			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "npcID", -34},	-- Select only the World Quest Headers
+			{"where", "headerID", -34},	-- Select only the World Quest Headers
 			{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-			{"is", "npcID"},	-- Only use the item sets themselves, no zone drops.
+			{"is", "headerID"},	-- Only use the item sets themselves, no zone drops.
 			{"pop"},	-- Discard the item set Headers and acquire all of their children.
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 
@@ -2160,11 +2162,11 @@ subroutines = {
 	end,
 	["bfa_azerite_armor_chest_warfront"] = function()
 		return {
-			{"select", "npcID", -10057},	-- War Effort
+			{"select", "headerID", -10057},	-- War Effort
 			{"pop"},	-- Discard the War Effort Header and acquire the children.
 			{"where", "mapID", 14},	-- Arathi Highlands
 			{"pop"},	-- Discard the Map Header and acquire the children.
-			{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+			{"where", "headerID", -1 },	-- Select the Common Boss Drop Header.
 			{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			{"is", "itemID"},	-- Only Items!
@@ -2184,9 +2186,9 @@ subroutines = {
 
 			-- Process the World Quest Rewards
 			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "npcID", -34},	-- Select only the World Quest Headers
+			{"where", "headerID", -34},	-- Select only the World Quest Headers
 			{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-			{"is", "npcID"},	-- Only use the item sets themselves, no zone drops.
+			{"is", "headerID"},	-- Only use the item sets themselves, no zone drops.
 			{"pop"},	-- Discard the item set Headers and acquire all of their children.
 
 			-- Process the the headers for the Azerite Armor pieces.
@@ -2690,13 +2692,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 					local subgroup = {};
 					table.sort(group, function(a, b)
-						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+						return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 					end);
 					for i,j in ipairs(group) do
 						-- always include the root quest/item when it's contained
 						if j.questID or j.itemID then
 							tinsert(subgroup, j);
-						elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
+						elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
 							for k,l in ipairs(j.g) do
 								tinsert(subgroup, l);
 							end
@@ -3187,7 +3189,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			--[[
 			Basically need to merge up any group which is in the cache for field(a[b]) where the key of that group matches paramA and the value matches paramB
 			This way things which are cached under themselves are merged into the root group, and things which are tagged with another things (i.e. NPCs with MoH)
-			will not be treated as the same group as MoH and NOT be merged up (because their key will be 'npcID' instead of 'itemID')
+			will not be treated as the same group as MoH and NOT be merged up (because their key will be 'creatureID' instead of 'itemID')
 			if group.key == paramA and group[group.key] == paramB then
 			MergeObject(merged)
 			]]
@@ -3248,7 +3250,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if not root then root = CreateObject({ [paramA] = paramB }); end
-			-- Ensure the param values are consistent with the new root object values (basically only affects npcID/creatureID)
+			-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 			paramA, paramB = root.key, root[root.key];
 			-- Special Case for itemID, need to use the modItemID for accuracy in item matching
 			if paramA == "itemID" then
@@ -3936,6 +3938,7 @@ fieldCache["currencyID"] = {};
 fieldCache["encounterID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["followerID"] = {};
+fieldCache["headerID"] = {};
 fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
@@ -3981,6 +3984,9 @@ fieldConverters = {
 	end,
 	["followerID"] = function(group, value)
 		CacheField(group, "followerID", value);
+	end,
+	["headerID"] = function(group, value)
+		CacheField(group, "headerID", value);
 	end,
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
@@ -4540,12 +4546,7 @@ local function PopulateQuestObject(questObject)
 			_cache = SearchForField("creatureID", qg, true);
 			if _cache then
 				for _,data in ipairs(_cache) do
-					if GetRelativeField(data, "npcID", -16) then	-- Rares only!
-						-- for key,value in pairs(data) do
-						-- 	if not (key == "g" or key == "parent") then
-						-- 		questObject[key] = value;
-						-- 	end
-						-- end
+					if GetRelativeField(data, "headerID", -16) then	-- Rares only!
 						MergeProperties(questObject, data);
 						if data.g then
 							for _,entry in ipairs(data.g) do
@@ -6000,7 +6001,7 @@ local fields = {
 		local itemID = artifactItemIDs[t.artifactID];
 		if itemID then
 			return itemID;
-		elseif t.parent and t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
+		elseif t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
 			return GetRelativeValue(t.parent, "itemID");
 		end
 	end,
@@ -7984,7 +7985,7 @@ app.BaseMapWithAchievementID = app.BaseObjectFields(fields);
 app.CreateMap = function(id, t)
 	t = constructor(id, t, "mapID");
 	if rawget(t, "achID") then
-		rawset(t, "achievementID", (rawget(t, "altAchID") and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID) or rawget(t, "achID"));
+		rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
@@ -8225,7 +8226,7 @@ local npcModelHarvester = CreateFrame("DressUpModel", nil, UIParent);
 npcModelHarvester:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 0);
 npcModelHarvester:SetSize(1, 1);
 npcModelHarvester:Hide();
-local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
+app.NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	if id > 0 then
 		npcModelHarvester:SetDisplayInfo(0);
 		npcModelHarvester:SetUnit("none");
@@ -8238,83 +8239,164 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local npcFields = {
-	["key"] = function(t) return "npcID"; end,
-	["achievementID"] = function(t)
-		local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
-		if achievementID then
-			rawset(t, "achievementID", achievementID);
-			return achievementID;
-		end
-	end,
-	["collectible"] = function(t)
-		return rawget(t, "questID") and app.CollectibleAsQuest(t);
-	end,
-	["collected"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
-	["altcollected"] = function(t)
-		local found;
-		-- determine if an altQuest is considered completed for this quest for this character
-		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
-				-- any altQuest completed on this character, mark the altQuestID
-				if not found and IsQuestFlaggedCompleted(questID) then
-					found = questID;
-					-- print("complete altquest found",questID,"=>",t.questID);
-				end
-			end
-		end
-		if found then rawset(t, "altcollected", found); end
-		return rawget(t, "altcollected");
-	end,
-	["creatureID"] = function(t) return t.npcID; end,
-	["displayID"] = function(t) return NPCDisplayIDFromID[t.npcID]; end,
-	["icon"] = function(t)
-		return L["NPC_ID_ICONS"][t.npcID]
-			or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)))
-			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
-			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-	end,
-	["link"] = function(t)
-		_cache = rawget(t, "achievementID");
-		return _cache and GetAchievementLink(_cache);
-	end,
-	["name"] = function(t)
-		_cache = rawget(t, "npcID");
-		return NPCNameFromID[_cache];
-	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
+	["key"] = function(t)
+		return "npcID";
 	end,
 	["text"] = function(t)
 		return app.TryColorizeName(t, t.name);
 	end,
-	["title"] = function(t)
-		_cache = rawget(t, "npcID");
-		if _cache > 0 then return NPCTitlesFromID[_cache]; end
+	["name"] = function(t)
+		return NPCNameFromID[t.npcID];
 	end,
-	["trackable"] = function(t)
-		return rawget(t, "questID");
+	["title"] = function(t)
+		return NPCTitlesFromID[t.npcID];
+	end,
+	["displayID"] = function(t)
+		return app.NPCDisplayIDFromID[t.npcID];
+	end,
+	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+		return t.npcID;
 	end,
 	["sort"] = function(t)
-		if t.order then return t.order .. t.name end
-		return "51" .. t.name;
+		return (t.order or "51") .. t.name;
+	end,
+	
+	["iconAsDefault"] = function(t)
+		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+	end,
+	["nameAsAchievement"] = function(t)
+		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
+	end,
+	["iconAsAchievement"] = function(t)
+		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
+	end,
+	["linkAsAchievement"] = function(t)
+		return GetAchievementLink(t.achievementID);
+	end,
+	["collectibleAsQuest"] = function(t)
+		return app.CollectibleAsQuest(t);
+	end,
+	["collectedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
+	["repeatableAsQuest"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
+	end,
+	["altcollectedAsQuest"] = function(t)
+		-- determine if an altQuest is considered completed for this quest for this character
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				-- any altQuest completed on this character, mark the altQuestID
+				if IsQuestFlaggedCompleted(questID) then
+					-- print("complete altquest found",questID,"=>",t.questID);
+					rawset(t, "altcollected", questID);
+					return questID;
+				end
+			end
+		end
 	end,
 };
+npcFields.icon = npcFields.iconAsDefault;
 npcFields.saved = npcFields.collected;
-app.NPCDisplayIDFromID = NPCDisplayIDFromID;
-app.BaseNPC = {
-	__index = function(t, key)
-		_cache = rawget(npcFields, key);
-		return _cache and _cache(t);
-	end
+app.BaseNPC = app.BaseObjectFields(npcFields);
+
+local fields = RawCloneData(npcFields);
+fields.icon = npcFields.iconAsAchievement;
+--fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center -> 
+app.BaseNPCWithAchievement = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(npcFields);
+fields.altcollected = npcFields.altcollectedAsQuest;
+fields.collectible = npcFields.collectibleAsQuest;
+fields.collected = npcFields.collectedAsQuest;
+fields.trackable = npcFields.trackableAsQuest;
+fields.repeatable = npcFields.repeatableAsQuest;
+app.BaseNPCWithQuest = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(npcFields);
+fields.icon = npcFields.iconAsAchievement;
+--fields.link = npcFields.linkAsAchievement;
+fields.altcollected = npcFields.altcollectedAsQuest;
+fields.collectible = npcFields.collectibleAsQuest;
+fields.collected = npcFields.collectedAsQuest;
+fields.trackable = npcFields.trackableAsQuest;
+fields.repeatable = npcFields.repeatableAsQuest;
+app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields);
+
+local headerFields = {
+	["key"] = function(t)
+		return "headerID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		return L["NPC_ID_NAMES"][t.headerID];
+	end,
+	["icon"] = function(t)
+		return L["NPC_ID_ICONS"][t.headerID];
+	end,
+	["sort"] = function(t)
+		return (t.order or "50") .. t.name;
+	end,
+	["nameAsAchievement"] = function(t)
+		return L["NPC_ID_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
+	end,
+	["iconAsAchievement"] = function(t)
+		return L["NPC_ID_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
+	end,
+	["linkAsAchievement"] = function(t)
+		return GetAchievementLink(t.achievementID);
+	end,
 };
+app.BaseHeader = app.BaseObjectFields(headerFields);
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsAchievement;
+fields.icon = headerFields.iconAsAchievement;
+--fields.link = headerFields.linkAsAchievement;
+app.BaseHeaderWithAchievement = app.BaseObjectFields(fields);
 app.CreateNPC = function(id, t)
-	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+	if t then
+		if id < 1 then
+			if rawget(t, "achID") then
+				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+				if rawget(t, "questID") then
+					print("Uh, someone is using a questID on a Header Object.. Don't do that!", id, t.questID);
+				end
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
+			else
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+			end
+		else
+			if rawget(t, "achID") then
+				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+				if rawget(t, "questID") then
+					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievementAndQuest);
+				else
+					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievement);
+				end
+			else
+				if rawget(t, "questID") then
+					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
+				else
+					return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+				end
+			end
+		end
+	elseif id > 1 then
+		return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+	else
+		return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+	end
 end
 end)();
 
 -- Object Lib (as in "World Object")
+(function()
 app.BaseObject = {
 	__index = function(t, key)
 		if key == "key" then
@@ -8357,6 +8439,7 @@ app.BaseObject = {
 app.CreateObject = function(id, t)
 	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
 end
+end)();
 
 -- Pet Ability Lib
 app.BasePetAbility = {
@@ -8487,7 +8570,7 @@ app.BaseQuest = {
 			if rawget(t, "title") then
 				rawset(t, "name", rawget(t, "title"));
 				t.title = nil;
-			elseif t.retries and t.retries > 120 then
+			elseif t.retries and t.retries > 120 and t.npcID then
 				return NPCNameFromID[t.npcID];
 			end
 			return app.TryColorizeName(t, t.name);
@@ -11720,7 +11803,7 @@ RowOnEnter = function (self)
 		if app.Settings:GetTooltipSetting("creatureID") then
 			if reference.creatureID then
 				GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(reference.creatureID));
-			elseif reference.npcID and reference.npcID > 0 then
+			elseif reference.npcID then
 				GameTooltip:AddDoubleLine(L["NPC_ID"], tostring(reference.npcID));
 			end
 		end
@@ -12444,7 +12527,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.icon = app.asset("Category_Achievements")
-			db.npcID = -4;
+			db.headerID = -4;
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12477,7 +12560,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_Holidays");
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
-			db.npcID = -3;
+			db.headerID = -3;
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -12604,7 +12687,7 @@ function app:GetDataCache()
 		if app.Categories.Factions then
 			db = {};
 			db.g = app.Categories.Factions;
-			db.npcID = -6013;
+			db.headerID = -6013;
 			db.expanded = false;
 			db.text = L["FACTIONS"];
 			db.icon = app.asset("Category_Factions");
@@ -13497,14 +13580,14 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					group = CloneData(group);
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
-					local difficultyID = not GetRelativeField(group, "npcID", -496) and GetRelativeValue(group, "difficultyID");
+					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
 					-- local first = false;
 
 					-- can probably re-factor this logic at some point to implicitly merge into the proper existing group instead of
 					-- ALWAYS creating the shared group, and then merging into the entire set of groups...
 
 					-- If this is relative to a holiday, let's do something special
-					if GetRelativeField(group, "npcID", -3) then
+					if GetRelativeField(group, "headerID", -3) then
 						if group.achievementID then
 							if group.criteriaID then
 								if group.parent.achievementID then
@@ -13537,22 +13620,22 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 						local holidayID = GetRelativeValue(group, "holidayID");
 						local u = group.u or GetRelativeValue(group, "u");
-						if group.key == "npcID" then
-							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
-								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "npcID", -16) then	-- It's a Rare.
-								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group }, u = u  }); end
-							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
-								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group }, u = u  }); end
-							elseif GetRelativeField(group, "npcID", -6013) then	-- It's a Faction.
-								if group.npcID ~= -6013 then group = app.CreateNPC(-6013, { g = { group }, u = u  }); end
+						if group.key == "headerID" then
+							if GetRelativeField(group, "headerID", -4) then	-- It's an Achievement. (non-Holiday)
+								if group.headerID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewalking vendor)
+								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
+								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "headerID", -16) then	-- It's a Rare.
+								if group.headerID ~= -16 then group = app.CreateNPC(-16, { g = { group }, u = u  }); end
+							elseif GetRelativeField(group, "headerID", -212) then	-- It's a Treasure.
+								if group.headerID ~= -212 then group = app.CreateNPC(-212, { g = { group }, u = u  }); end
+							elseif GetRelativeField(group, "headerID", -6013) then	-- It's a Faction.
+								if group.headerID ~= -6013 then group = app.CreateNPC(-6013, { g = { group }, u = u  }); end
 							end
 						elseif group.key == "questID" then
-							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+							if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
 						end
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
 						MergeObject(holiday, group);
@@ -13564,12 +13647,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						-- Category > Divider? > Mapped-Thing
 						-- Zone:
 						-- Divider? > Category > Mapped-Thing
-						-- if group.npcID and group.npcID < 0 then
+						-- if group.headerID then
 						-- 	for i,topGroup in ipairs(groups) do
-						-- 		if topGroup.npcID
-						-- 		and topGroup.npcID < 0
-						-- 		and (topGroup.npcID == group.npcID
-						-- 			or (group.parent and topGroup.npcID == group.parent.npcID)) then
+						-- 		if topGroup.headerID
+						-- 		and (topGroup.headerID == group.headerID
+						-- 			or (group.parent and topGroup.headerID == group.parent.headerID)) then
 						-- 			if not topGroup.g then
 						-- 				topGroup.g = {};
 						-- 			end
@@ -13603,18 +13685,18 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group } }) } });
 						else
 							-- special cases to source the mapped-categories
-							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
-								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -16) then	-- It's a Rare.
-								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
-								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -6013) then	-- It's a Faction.
-								if group.npcID ~= -6013 then group = app.CreateNPC(-6013, { g = { group } }); end
+							if GetRelativeField(group, "headerID", -4) then	-- It's an Achievement. (non-Holiday)
+								if group.headerID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewalking vendor)
+								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
+								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -16) then	-- It's a Rare.
+								if group.headerID ~= -16 then group = app.CreateNPC(-16, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -212) then	-- It's a Treasure.
+								if group.headerID ~= -212 then group = app.CreateNPC(-212, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -6013) then	-- It's a Faction.
+								if group.headerID ~= -6013 then group = app.CreateNPC(-6013, { g = { group } }); end
 							end
 						end
 
@@ -13650,7 +13732,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						else
 							-- Attempt to scan for the main holiday header.
 							local done = false;
-							for j,o in ipairs(SearchForField("npcID", -3)) do
+							for j,o in ipairs(SearchForField("headerID", -3)) do
 								if o.g and #o.g > 5 and o.g[1].holidayID then
 									for k,group in ipairs(o.g) do
 										if group.holidayID and group.u == u then
@@ -13677,7 +13759,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							-- Look for a Common Boss Drop header.
 							local cbdIndex = -1;
 							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == -1 then
+								if subgroup.headerID and subgroup.headerID == -1 then
 									cbdIndex = j;
 									break;
 								end
@@ -13691,7 +13773,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							-- Look for a Zone Drop header.
 							cbdIndex = -1;
 							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == 0 then
+								if subgroup.headerID and subgroup.headerID == 0 then
 									cbdIndex = j;
 									break;
 								end
@@ -15222,7 +15304,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
 							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
 							response = app:BuildSearchResponse(app.Categories.Craftables, function(o)
-								if (o.npcID and o.npcID < 0 and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
+								if (o.headerID and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
 									return true;
 								end
 							end);
@@ -16572,11 +16654,11 @@ local ProcessAuctionData = function()
 			["priority"] = 1,
 		}, app.BaseFilter),
 		["s"] = setmetatable({			-- Appearances
-			["npcID"] = -10032,
+			["headerID"] = -10032,
 			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
-			["description"] = L["ALL_APPEARANCES_DESC"],		-- L["ALL_THE_APPEARANCES_DESC"] = "All appearances that you need are displayed here."
+			["description"] = L["ALL_APPEARANCES_DESC"],
 			["priority"] = 2,
-		}, app.BaseNPC),
+		}, app.BaseHeader),
 		["mountID"] = setmetatable({	-- Mounts
 			["filterID"] = 100,
 			["description"] = L["ALL_THE_MOUNTS_DESC"],		-- L["ALL_THE_MOUNTS_DESC"] = "All mounts that you have not collected yet are displayed here."
@@ -16589,11 +16671,11 @@ local ProcessAuctionData = function()
 			["priority"] = 4,
 		}, app.BaseFilter),
 		["questID"] = setmetatable({	-- Quests
-			["npcID"] = -9956,
+			["headerID"] = -9956,
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
-			["description"] = L["ALL_THE_QUESTS_DESC"],		-- L["ALL_THE_QUESTS_DESC"] = "All quests that have objective or starting items that can be sold on the auction house are displayed here."
+			["description"] = L["ALL_THE_QUESTS_DESC"],
 			["priority"] = 5,
-		}, app.BaseNPC),
+		}, app.BaseHeader),
 		["recipeID"] = setmetatable({	-- Recipes
 			["filterID"] = 200,
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
@@ -17801,10 +17883,13 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	RefreshQuestCompletionState(questID)
+	RefreshQuestCompletionState(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	RefreshQuestCompletionState()
+	RefreshQuestCompletionState();
+end
+app.events.QUEST_FINISHED = function()
+	RefreshQuestCompletionState();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then

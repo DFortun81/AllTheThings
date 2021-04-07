@@ -183,7 +183,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(8131,	  {	-- Blizrik Buckshot <Gunsmith>
@@ -200,7 +200,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(40589,  {	-- Dirge Quikcleave <Butcher>
@@ -296,7 +296,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>

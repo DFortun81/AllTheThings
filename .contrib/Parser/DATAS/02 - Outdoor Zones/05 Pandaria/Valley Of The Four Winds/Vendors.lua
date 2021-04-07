@@ -1488,7 +1488,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10041, -675, -661 },	-- Malevolent Gladiator: Season 12
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
