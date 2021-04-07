@@ -7803,7 +7803,7 @@ local itemFields = {
 		return app.CollectibleTransmog;
 	end,
 	["collectibleAsQuest"] = function(t)
-		return app.CollectibleAsQuest(t) or C_QuestLog.IsOnQuest(t.questID) or t.collectibleAsCost;
+		return app.CollectibleAsQuest(t) or t.collectibleAsCost;
 	end,
 	["collected"] = function(t)
 		return t.collectedAsCost;
@@ -8278,6 +8278,9 @@ local npcFields = {
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
 	["trackableAsQuest"] = function(t)
 		return true;
 	end,
@@ -8299,7 +8302,6 @@ local npcFields = {
 	end,
 };
 npcFields.icon = npcFields.iconAsDefault;
-npcFields.saved = npcFields.collected;
 app.BaseNPC = app.BaseObjectFields(npcFields);
 
 local fields = RawCloneData(npcFields);
@@ -8313,6 +8315,7 @@ fields.collectible = npcFields.collectibleAsQuest;
 fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
 app.BaseNPCWithQuest = app.BaseObjectFields(fields);
 
 local fields = RawCloneData(npcFields);
@@ -8323,6 +8326,7 @@ fields.collectible = npcFields.collectibleAsQuest;
 fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields);
 
 local headerFields = {
@@ -8412,8 +8416,10 @@ app.BaseObject = {
 			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 		elseif key == "trackable" then
 			return t.questID;
-		elseif key == "saved" or key == "collected" then
+		elseif key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "saved" then
+			return IsQuestFlaggedCompletedForObject(t) == 1;
 		elseif key == "altcollected" then
 			local found;
 			-- determine if an altQuest is considered completed for this quest for this character
@@ -8763,13 +8769,16 @@ app.CollectibleAsQuest = function(t)
 	-- must treat Quests as collectible
 	app.CollectibleQuests
 	-- must not be repeatable, unless considering repeatable quests as trackable
-	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+	and (((not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
 	-- must match custom collectibility if set as well
 	and app.CheckCustomCollects(t)
 	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 	-- TODO: revisit if party sync option becomes a thing
 	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
+		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+		
+	-- If you are currently on the quest.
+	or (t.questID and C_QuestLog.IsOnQuest(t.questID)));
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
