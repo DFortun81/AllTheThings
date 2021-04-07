@@ -16,7 +16,6 @@ local C_AuctionHouse_GetNumReplicateItems = _G.C_AuctionHouse.GetNumReplicateIte
 local C_AuctionHouse_GetReplicateItemInfo = _G.C_AuctionHouse.GetReplicateItemInfo;
 local C_AuctionHouse_GetReplicateItemLink = _G.C_AuctionHouse.GetReplicateItemLink;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
@@ -5083,69 +5082,6 @@ local function RefreshCollections()
 		app.print("Done refreshing collection.");
 	end);
 end
-local function RefreshMountCollection(newMountID)
-	StartCoroutine("RefreshMountCollection", function()
-		-- print("Mount Collected",newMountID)
-		while InCombatLockdown() do coroutine.yield(); end
-
-		-- Cache current counts
-		local previousProgress = app:GetDataCache().progress or 0;
-		-- print("Previous Progress",previousProgress)
-
-		-- Refresh Mounts
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		-- specific mount collected
-		if newMountID then
-			-- print("newmount",newMountID)
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
-			if spellID and isCollected then
-				-- print("collected spellID",spellID)
-				collectedSpells[spellID] = 1;
-				collectedSpellsPerCharacter[spellID] = 1;
-
-				-- update the lists where this mount exists
-				UpdateSearchResults(SearchForField("spellID", spellID));
-			end
-		-- or just check all mounts
-		else
-			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-				if spellID and isCollected then
-					-- print("collected spellID",spellID);
-					collectedSpells[spellID] = 1;
-					collectedSpellsPerCharacter[spellID] = 1;
-
-					-- update the lists where this mount exists
-					UpdateSearchResults(SearchForField("spellID", spellID));
-				end
-			end
-
-			-- TODO: refreshing the entire data source might not be necessary...
-			-- Wait a frame before harvesting item collection status.
-			coroutine.yield();
-			-- print("Refresh to check progress after collection...")
-			app:RefreshData(false, true);
-
-			-- Wait 2 frames before refreshing states.
-			coroutine.yield();
-			coroutine.yield();
-		end
-
-		-- Compare progress
-		local progress = app:GetDataCache().progress or 0;
-		-- print("New Progress",progress)
-		-- decrease in progress and not a specific mount ID added
-		if progress < previousProgress and not newMountID then
-			-- print("Play Remove")
-			app:PlayRemoveSound();
-		-- increase in progress or new mount ID specifically added
-		elseif progress > previousProgress or newMountID then
-			-- print("Play Rare Find",newMountID)
-			app:PlayRareFindSound();
-		end
-	end);
-end
 local function GetGroupSortValue(group)
 	if group.g then
 		if group.total and group.total > 1 then
@@ -5450,14 +5386,7 @@ local function AttachTooltip(self)
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 		if self.AllTheThingsProcessing and spellID then
-			-- print("Search spellID",spellID);
 			AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
-			-- self:Show();
-			-- this evals to true for mount journal tooltips
-			-- if owner and owner.ActiveTexture then
-				-- print("Stop Processing");
-				-- self.AllTheThingsProcessing = nil;
-			-- end
 			return true;
 		end
 
@@ -8091,78 +8020,134 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
 -- Mount Lib
-app.BaseMount = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "filterID" then
-			return 100;
-		elseif key == "collectible" then
-			return app.CollectibleMounts;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "b" then
-			return (t.parent and t.parent.b) or 1;
-		elseif key == "text" then
-			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
-			--return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
-		elseif key == "description" then
-			local mountID = t.mountID;
-			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
-		elseif key == "link" then
-			if t.itemID then
-				local link = select(2, GetItemInfo(t.itemID));
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "displayID" then
-			local mountID = t.mountID;
-			if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
-		elseif key == "mountID" then
-			local temp = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID");
-			if not temp then
-				-- Harvest the Spell IDs for Conversion.
-				temp = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
-				for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-					local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
-					if spellID then temp[spellID] = mountID; end
-				end
-
-				-- Assign to the temporary data container.
-				SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", temp);
-			end
-
-			local mountID = temp[t.spellID];
-			if mountID then return mountID; end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			-- mounts ignore modID even if applied in source
-			rawset(t, "modItemID", t.itemID);
-			return rawget(t, "modItemID");
-		elseif key == "name" then
-			local mountID = t.mountID;
-			if mountID then return C_MountJournal_GetMountInfoByID(mountID); end
-		elseif key == "tsm" then
-			if t.itemID then return string.format("i:%d", t.itemID); end
-			if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
+(function()
+local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
+local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
+	local allMountIDs = C_MountJournal.GetMountIDs();
+	if allMountIDs and #allMountIDs > 0 then
+		for i,mountID in ipairs(allMountIDs) do
+			local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
+			if spellID then rawset(t, spellID, mountID); end
 		end
+		setmetatable(t, nil);
+		return rawget(t, id);
 	end
+end });
+local mountFields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["text"] = function(t)
+		return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["filterID"] = function(t)
+		return 100;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleMounts;
+	end,
+	["collected"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["b"] = function(t)
+		return (t.parent and t.parent.b) or 1;
+	end,
+	["mountID"] = function(t)
+		return SpellIDToMountID[t.spellID];
+	end,
+	["description"] = function(t)
+		local mountID = t.mountID;
+		if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
+	end,
+	["displayID"] = function(t)
+		local mountID = t.mountID;
+		if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
+	end,
+	["name"] = function(t)
+		local mountID = t.mountID;
+		if mountID then return C_MountJournal_GetMountInfoByID(mountID); end
+	end,
+	["modItemIDForItem"] = function(t)
+		return t.itemID;	-- mounts ignore modID even if applied in source
+	end,
+	["tsmForItem"] = function(t)
+		if t.itemID then return string.format("i:%d", t.itemID); end
+		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
+	end,
+	["linkForItem"] = function(t)
+		return select(2, GetItemInfo(t.itemID)) or select(1, GetSpellLink(t.spellID));
+	end,
 };
+app.BaseMount = app.BaseObjectFields(mountFields);
+
+local fields = RawCloneData(mountFields);
+fields.modItemID = mountFields.modItemIDForItem;
+fields.link = mountFields.linkForItem;
+fields.tsm = mountFields.tsmForItem;
+app.BaseMountWithItemID = app.BaseObjectFields(fields);
 app.CreateMount = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
+	if t and rawget(t, "itemID") then
+		return setmetatable(constructor(id, t, "spellID"), app.BaseMountWithItemID);
+	else
+		return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
+	end
 end
+
+app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
+	-- print("NEW_MOUNT_ADDED", newMountID, ...);
+	StartCoroutine("RefreshMountCollection" .. (newMountID or "ALL"), function()
+		while InCombatLockdown() do coroutine.yield(); end
+		
+		-- Refresh Mounts
+		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
+		if newMountID then
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+			if spellID and isCollected then
+				if not collectedSpells[spellID] then
+					collectedSpells[spellID] = 1;
+					collectedSpellsPerCharacter[spellID] = 1;
+					UpdateSearchResults(SearchForField("spellID", spellID));
+					app:PlayRareFindSound();
+				end
+			end
+		else
+			local anyNewMounts = false;
+			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+				if spellID and isCollected then
+					if not collectedSpells[spellID] then
+						collectedSpells[spellID] = 1;
+						collectedSpellsPerCharacter[spellID] = 1;
+						anyNewMounts = true;
+					end
+				end
+			end
+			
+			if anyNewMounts then
+				-- Wait a frame before harvesting item collection status.
+				coroutine.yield();
+				app:PlayRareFindSound();
+				app:RefreshData(false, true);
+			end
+		end
+	end);
+end
+app:RegisterEvent("NEW_MOUNT_ADDED");
+end)();
 
 -- Music Roll Lib
 (function()
@@ -12751,14 +12736,6 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 
-		-- Mounts (Dynamic)
-		--[[
-		db = app.CreateAchievement(app.FactionID == Enum.FlightPathFaction.Horde and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
-		db.expanded = false;
-		db.text = "Mounts (Dynamic)";
-		table.insert(g, db);
-		--]]
-
 		--[[
 		-- SUPER SECRETTTT!
 		-- Artifacts (Dynamic)
@@ -14925,9 +14902,9 @@ app:GetWindow("Random", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["MOUNT"],		-- L["MOUNT"] = "Mount"
+						['text'] = L["MOUNT"],
 						['icon'] = "Interface\\Icons\\Ability_Mount_AlliancePVPMount",
-						['description'] = L["MOUNT_DESC"],		-- L["MOUNT_DESC"] = "Click this button to select a random mount based on what you're missing."
+						['description'] = L["MOUNT_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Mount");
@@ -17112,7 +17089,6 @@ app:RegisterEvent("VARIABLES_LOADED");
 -- app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
 -- app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
 app:RegisterEvent("NEW_PET_ADDED");
-app:RegisterEvent("NEW_MOUNT_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
@@ -17436,15 +17412,11 @@ app.events.VARIABLES_LOADED = function()
 	app:GetDataCache();
 
 	Push(app, "WaitOnMountData", function()
-		-- Detect how many pets there are. If 0, Blizzard isn't ready yet.
-		-- OBSOLETE - commenting this out instead of removing it for now. If a player has both the 'Collected' and 'Not Collected' filters off
-		-- 			  then this condition will always fail causing the main list to never render. There doesn't appear to be any value in doing this check anyway [Pr3vention]
-		--if C_PetJournal.GetNumPets() < 1 then return true; end
-
 		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
 		local counter = 300;
 		local mountIDs = C_MountJournal.GetMountIDs();
 		while counter > 0 and (not mountIDs or #mountIDs < 1) do
+			for i=10,1,-1 do coroutine.yield(); end
 			counter = counter - 1;
 			mountIDs = C_MountJournal.GetMountIDs();
 		end
@@ -17791,10 +17763,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
-end
-app.events.NEW_MOUNT_ADDED = function(...)
-	-- print("NEW_MOUNT_ADDED", ...);
-	RefreshMountCollection(...);
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	RefreshQuestCompletionState()
