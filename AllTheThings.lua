@@ -8151,47 +8151,60 @@ end)();
 
 -- Music Roll Lib
 (function()
-app.BaseMusicRoll = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "filterID" then
-			return 108;
-		elseif key == "collectible" or key == "trackable" then
-			return app.CollectibleMusicRolls;
-		elseif key == "collected" or key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) then
-					return 1;
-				end
-			if app.AccountWideMusicRolls then
-				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
-					return 2;
-				end
-			end
-		elseif key == "lvl" then
-			return 40;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "link" then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-			return rawget(t, "modItemID");
-		elseif key == "description" then
-			local description = L["MUSIC_ROLLS_DESC"];		-- L["MUSIC_ROLLS_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected."
-			if not IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-				description = description .. L["MUSIC_ROLLS_DESC_2"];		-- L["MUSIC_ROLLS_DESC_2"] = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop."
-			end
-			return description;
+local fields = {
+	["key"] = function(t)
+		return "questID";
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["link"] = function(t)
+		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			rawset(t, "link", link);
+			rawset(t, "icon", icon);
+			return link;
 		end
-	end
+	end,
+	["icon"] = function(t)
+		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			rawset(t, "link", link);
+			rawset(t, "icon", icon);
+			return icon;
+		end
+	end,
+	["description"] = function(t)
+		-- Check to make sure music rolls are unlocked for this character.
+		if not IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
+			return L["MUSIC_ROLLS_DESC"] .. L["MUSIC_ROLLS_DESC_2"];
+		end
+		return L["MUSIC_ROLLS_DESC"];
+	end,
+	["filterID"] = function(t)
+		return 108;
+	end,
+	["modItemID"] = function(t)
+		return t.itemID;
+	end,
+	["lvl"] = function(t)
+		return 40;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleMusicRolls;
+	end,
+	["trackable"] = function(t)
+		return app.CollectibleMusicRolls;
+	end,
+	["collected"] = function(t)
+		return t.saved;
+	end,
+	["saved"] = function(t)
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		if app.AccountWideMusicRolls and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
+	end,
 };
+app.BaseMusicRoll = app.BaseObjectFields(fields);
 app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
