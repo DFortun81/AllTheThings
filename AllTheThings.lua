@@ -8531,8 +8531,10 @@ app.BaseQuest = {
 			return app.CollectibleAsQuest(t);
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
-		elseif key == "saved" or key == "collected" then
+		elseif key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "saved" then
+			return t.collected == 1;
 		elseif key == "altcollected" then
 			local found;
 			-- determine if an altQuest is considered completed for this quest for this character
