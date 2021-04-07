@@ -25,8 +25,6 @@ local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
-local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
-local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local SetPortraitTexture = _G["SetPortraitTexture"];
@@ -4773,31 +4771,6 @@ local function GetPopulatedQuestObject(questID)
 	PopulateQuestObject(questObject);
 	return questObject;
 end
--- Returns a mapObject containing basic map information
-local function GetPopulatedMapObject(mapID)
-	local mapObject = { mapID=mapID,g={},progress=0,total=0};
-	_cache = fieldCache["mapID"][mapID];
-	if _cache then
-		for _,data in ipairs(_cache) do
-			if data.mapID and data.icon then
-				mapObject.text = data.text;
-				mapObject.icon = data.icon;
-				mapObject.lvl = data.lvl;
-				mapObject.description = data.description;
-				break;
-			end
-		end
-	end
-
-	if not mapObject.text then
-		local mapInfo = C_Map_GetMapInfo(mapID);
-		if mapInfo then
-			mapObject.text = mapInfo.name;
-		end
-	end
-
-	return mapObject;
-end
 local function ExportDataRecursively(group, indent)
 	if group.itemID then return ""; end
 	if group.g then
@@ -5256,36 +5229,7 @@ app.SortGroups = function(a,b)
 	return a.sort < b.sort;
 end
 app.SortGroup = SortGroup;
-app.GetCurrentMapID = function()
-	local uiMapID = C_Map_GetBestMapForUnit("player");
-	if uiMapID then
-		local map = C_Map_GetMapInfo(uiMapID);
-		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
-			-- Onyxia's Lair fix
-			local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
-			if text_to_mapID then
-				local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
-				if otherMapID then uiMapID = otherMapID; end
-			end
-		end
-		-- print("Current UI Map ID: ", uiMapID);
-		app.CurrentMapID = uiMapID;
-	end
-	return uiMapID;
-end
-app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
-		local info = C_Map_GetMapInfo(mapID);
-		return (info and info.name) or ("Map ID #" .. mapID);
-	else
-		return "Map ID #???";
-	end
-end
-app.GetMapLevel = function(mapID)
-	if mapID and mapID > 0 then
-		return select(1, C_Map.GetMapLevels(mapID))
-	end
-end
+
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
 end
@@ -8037,83 +7981,113 @@ end)();
 
 -- Map Lib
 (function()
-local fields = {
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			rawset(t, "achievementID", achievementID);
-			return achievementID;
+local C_Map_GetMapLevels = C_Map.GetMapLevels;
+local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+app.GetCurrentMapID = function()
+	local uiMapID = C_Map_GetBestMapForUnit("player");
+	if uiMapID then
+		local map = C_Map_GetMapInfo(uiMapID);
+		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
+			-- Onyxia's Lair fix
+			local ZONE_TEXT_TO_MAP_ID = app.L["ZONE_TEXT_TO_MAP_ID"];
+			local real = GetRealZoneText();
+			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
+			if otherMapID then
+				uiMapID = otherMapID;
+			else
+				local zone = GetSubZoneText();
+				if zone then
+					otherMapID = ZONE_TEXT_TO_MAP_ID[zone];
+					if otherMapID then uiMapID = otherMapID; end
+				end
+			end
 		end
-	end,
+		-- print("Current UI Map ID: ", uiMapID);
+		app.CurrentMapID = uiMapID;
+	end
+	return uiMapID;
+end
+app.GetMapName = function(mapID)
+	if mapID and mapID > 0 then
+		local info = C_Map_GetMapInfo(mapID);
+		return (info and info.name) or ("Map ID #" .. mapID);
+	else
+		return "Map ID #???";
+	end
+end
+local mapFields = {
 	["key"] = function(t)
 		return "mapID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return app.GetMapName(t.mapID);
 	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
+	["icon"] = function(t)
+		return app.asset("Category_Zones");
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 			return 1;
 		end
 	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
-	end,
 	["lvl"] = function(t)
-		return app.GetMapLevel(t.mapID);
+		return select(1, C_Map_GetMapLevels(t.mapID));
 	end,
 	["sort"] = function(t)
-		if t.order then return t.order .. app.GetMapName(t.mapID) end
-		if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
-		return "51" .. app.GetMapName(t.mapID);
+		return (t.order or (t.isRaid and "50") or "51") .. t.name;
+	end,
+	["iconForAchievement"] = function(t)
+		return select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
+	end,
+	["linkForAchievement"] = function(t)
+		return t.achievementID and GetAchievementLink(t.achievementID);
 	end,
 };
-app.BaseMap = app.BaseObjectFields(fields);
--- app.BaseMap = {
--- 	__index = function(t, key)
--- 		if key == "achievementID" then
--- 			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
--- 			if achievementID then
--- 				rawset(t, "achievementID", achievementID);
--- 				return achievementID;
--- 			end
--- 		elseif key == "key" then
--- 			return "mapID";
--- 		elseif key == "name" then
--- 			return app.GetMapName(t.mapID);
--- 		elseif key == "text" then
--- 			return app.TryColorizeName(t, t.name);
--- 		elseif key == "back" then
--- 			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
--- 				return 1;
--- 			end
--- 		elseif key == "link" then
--- 			return t.achievementID and GetAchievementLink(t.achievementID);
--- 		elseif key == "icon" then
--- 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
--- 		elseif key == "lvl" then
--- 			return app.GetMapLevel(t.mapID);
--- 		elseif key == "sort" then
--- 			if t.order then return t.order .. app.GetMapName(t.mapID) end
--- 			if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
--- 			return "51" .. app.GetMapName(t.mapID);
--- 		end
--- 	end
--- };
+app.BaseMap = app.BaseObjectFields(mapFields);
+
+local fields = RawCloneData(mapFields);
+fields.icon = mapFields.iconForAchievement;
+fields.link = mapFields.linkForAchievement;
+app.BaseMapWithAchievementID = app.BaseObjectFields(fields);
 app.CreateMap = function(id, t)
-	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
-	if map.ordered and map.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		-- Only need to order groups alphabetically in non-english locales
-		table.sort(map.g, app.SortGroups);
+	t = constructor(id, t, "mapID");
+	if rawget(t, "achID") then
+		rawset(t, "achievementID", (rawget(t, "altAchID") and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID) or rawget(t, "achID"));
+		t = setmetatable(t, app.BaseMapWithAchievementID);
+	else
+		t = setmetatable(t, app.BaseMap);
 	end
-	return map;
+	if t.ordered and t.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+		-- Only need to order groups alphabetically in non-english locales
+		table.sort(t.g, app.SortGroups);
+	end
+	return t;
 end
+app.CreateMapWithStyle = function(id)
+	local mapObject = app.CreateMap(id, {g={},progress=0,total=0});
+	for _,data in ipairs(fieldCache["mapID"][id] or {}) do
+		if data.mapID and data.icon then
+			mapObject.text = data.text;
+			mapObject.icon = data.icon;
+			mapObject.lvl = data.lvl;
+			mapObject.description = data.description;
+			break;
+		end
+	end
+	return mapObject;
+end
+
+app.events.ZONE_CHANGED_INDOORS = function()
+	app.GetCurrentMapID();
+end
+app.events.ZONE_CHANGED_NEW_AREA = function()
+	app.GetCurrentMapID();
+end
+app:RegisterEvent("ZONE_CHANGED_INDOORS");
+app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
 -- Mount Lib
@@ -8688,8 +8662,8 @@ app.BaseQuestObjective = {
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
-local function GetQuestsCompleted(t)
-	if not t then t = CompletedQuests end
+local function QueryCompletedQuests()
+	local t = CompletedQuests;
 	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
 	end
@@ -8709,10 +8683,10 @@ app.CollectibleAsQuest = function(t)
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
 end
 local function RefreshQuestCompletionState(questID)
-	if questID ~= nil then
-		CompletedQuests[questID] = true;
+	if not questID then
+		QueryCompletedQuests();
 	else
-		GetQuestsCompleted(CompletedQuests);
+		CompletedQuests[questID] = true;
 	end
 
 	for questID,completed in pairs(DirtyQuests) do
@@ -15672,7 +15646,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					-- print("WQ.WorldMapIDs." .. tostring(mapID))
 					-- start fetching the data while other stuff is setup
 					C_QuestLine.RequestQuestLinesForMap(mapID);
-					local mapObject = GetPopulatedMapObject(mapID);
+					local mapObject = app.CreateMapWithStyle(mapID);
 
 					-- Merge Tasks for Zone
 					self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
@@ -15689,7 +15663,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
 									if timeLeft and timeLeft > 0 then
 										local mapID = arr[1];
-										local subMapObject = GetPopulatedMapObject(mapID);
+										local subMapObject = app.CreateMapWithStyle(mapID);
 										local questObject = GetPopulatedQuestObject(questID);
 
 										-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
@@ -15721,7 +15695,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						for i,mapInfo in ipairs(mapChildInfos) do
 							-- start fetching the data while other stuff is setup
 							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
-							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
+							local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
 
 							-- Merge Tasks for Zone
 							self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
@@ -15748,7 +15722,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				for _,pair in ipairs(emissaryMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
-					local mapObject = GetPopulatedMapObject(mapID);
+					local mapObject = app.CreateMapWithStyle(mapID);
 					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
@@ -15768,7 +15742,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				-- Heroic Deeds
 				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
-					local mapObject = GetPopulatedMapObject(424);
+					local mapObject = app.CreateMapWithStyle(424);
 					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901, true);
 					if _cache then
 						for _,data in ipairs(_cache) do
@@ -17145,7 +17119,6 @@ app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
-app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.ACHIEVEMENT_EARNED = function(achievementID)
@@ -17543,7 +17516,7 @@ app.events.VARIABLES_LOADED = function()
 		end
 
 		-- Mark all previously completed quests.
-		GetQuestsCompleted(CompletedQuests);
+		QueryCompletedQuests();
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
@@ -17813,14 +17786,6 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
-end
-app.events.ZONE_CHANGED_INDOORS = function()
-	RefreshQuestCompletionState()
-	app.GetCurrentMapID();
-end
-app.events.ZONE_CHANGED_NEW_AREA = function()
-	RefreshQuestCompletionState()
-	app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D
