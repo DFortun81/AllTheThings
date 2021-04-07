@@ -7840,7 +7840,7 @@ local itemFields = {
 		return t.collectedAsFactionOnly or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
-		return t.saved or t.collectedAsCost;
+		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
