@@ -7803,10 +7803,7 @@ local itemFields = {
 		return app.CollectibleTransmog;
 	end,
 	["collectibleAsQuest"] = function(t)
-		if app.CollectibleQuests then
-			return (not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID);
-		end
-		return t.collectibleAsCost;
+		return app.CollectibleAsQuest(t) or C_QuestLog.IsOnQuest(t.questID) or t.collectibleAsCost;
 	end,
 	["collected"] = function(t)
 		return t.collectedAsCost;
@@ -7849,7 +7846,7 @@ local itemFields = {
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
 	end,
 	["savedAsQuest"] = function(t) 
-		return IsQuestFlaggedCompletedForObject(t);
+		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
