@@ -7996,7 +7996,8 @@ app.CreateMap = function(id, t)
 	return t;
 end
 app.CreateMapWithStyle = function(id)
-	local mapObject = app.CreateMap(id, {g={},progress=0,total=0});
+	local mapObject = { mapID=id,g={},progress=0,total=0}; -- this works
+	--local mapObject = app.CreateMap(id, {g={},progress=0,total=0});	-- this doesn't TODO: Look into this.
 	for _,data in ipairs(fieldCache["mapID"][id] or {}) do
 		if data.mapID and data.icon then
 			mapObject.text = data.text;
@@ -8006,6 +8007,13 @@ app.CreateMapWithStyle = function(id)
 			break;
 		end
 	end
+
+    if not mapObject.text then
+        local mapInfo = C_Map_GetMapInfo(mapID);
+        if mapInfo then
+            mapObject.text = mapInfo.name;
+        end
+    end
 	return mapObject;
 end
 
