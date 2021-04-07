@@ -8009,7 +8009,7 @@ app.CreateMapWithStyle = function(id)
 	end
 
     if not mapObject.text then
-        local mapInfo = C_Map_GetMapInfo(mapID);
+        local mapInfo = C_Map_GetMapInfo(id);
         if mapInfo then
             mapObject.text = mapInfo.name;
         end
