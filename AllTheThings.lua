@@ -1601,6 +1601,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"followerID",
 	"illusionID",
 	"unit",
+	"dungeonID",
 	"headerID"
 };
 local function GetKey(t)
