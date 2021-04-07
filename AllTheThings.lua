@@ -7971,7 +7971,7 @@ local mapFields = {
 		return select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
 	end,
 	["linkForAchievement"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
+		return GetAchievementLink(t.achievementID);
 	end,
 };
 app.BaseMap = app.BaseObjectFields(mapFields);
@@ -13677,7 +13677,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							-- print("--")
 							-- header.key = group.key;
 							-- header[group.key] = group[group.key];
-							MergeProperties(header, group);
+							MergeProperties(header, group, true);
 							if group.g then
 								MergeObjects(groups, group.g);
 							end
@@ -13835,7 +13835,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				setmetatable(self.data,
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
-					or app.BaseMap);
+					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
 				-- Check to see completion...
 				-- print("build groups");
