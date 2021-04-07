@@ -1276,7 +1276,7 @@ end
 -- Ex. 87654 (ModID 23)=> 87654.23
 local function GetGroupItemIDWithModID(group, rawItemID, rawModID)
 	if group and group.itemID then
-		if group.modID and group.modID > 0 then
+		if group.modID and group.modID > 1 then
 			return group.itemID + (group.modID / 100);
 		else
 			return group.itemID;
