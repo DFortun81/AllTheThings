@@ -674,7 +674,7 @@ local function GetDisplayID(data, all)
 		if displayInfo[1] then return displayInfo; end
 
 		-- for a generic header, use the attached crs if so
-		if data.creatureID and data.creatureID < 0 and data.crs then
+		if data.headerID and data.headerID < 0 and data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
@@ -710,7 +710,7 @@ local function GetDisplayID(data, all)
 		end
 
 		-- for a generic header, use the attached crs if so
-		if data.creatureID and data.creatureID < 0 and data.crs then
+		if data.headerID and data.headerID < 0 and data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then return _; end
@@ -17734,8 +17734,8 @@ app.events.VARIABLES_LOADED = function()
 				[-193] = 129,	-- First Aid
 				[-194] = 356,	-- Fishing
 			};
-			for npcID,skillID in pairs(skillIDMap) do
-				local searchResults = app.SearchForField("creatureID", npcID);
+			for headerID,skillID in pairs(skillIDMap) do
+				local searchResults = app.SearchForField("headerID", headerID);
 				if searchResults then
 					for i,o in ipairs(searchResults) do
 						o.skillID = skillID;
