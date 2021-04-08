@@ -8522,44 +8522,49 @@ app.CreateObject = function(id, t)
 end
 end)();
 
--- Pet Ability Lib
-app.BasePetAbility = {
-	__index = function(t, key)
-		if key == "key" then
-			return "petAbilityID";
-		elseif key == "text" then
-			return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-		elseif key == "icon" then
-			return select(3, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-		elseif key == "description" then
-			return select(5, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-		end
-	end
+-- Pet Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "petAbilityID";
+	end,
+	["text"] = function(t)
+		return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
+	["icon"] = function(t)
+		return select(3, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
+	["description"] = function(t)
+		return select(5, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
 };
+app.BasePetAbility = app.BaseObjectFields(fields);
 app.CreatePetAbility = function(id, t)
 	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
 end
 
--- Pet Type Lib
-app.BasePetType = {
-	__index = function(t, key)
-		if key == "key" then
-			return "petTypeID";
-		elseif key == "filterID" then
-			return 101;
-		elseif key == "text" then
-			return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-		elseif key == "icon" then
-			return "Interface\\Icons\\Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID];
-		end
-	end
+local fields = {
+	["key"] = function(t)
+		return "petTypeID";
+	end,
+	["text"] = function(t)
+		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID];
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
 };
+app.BasePetType = app.BaseObjectFields(fields);
 app.CreatePetType = function(id, t)
 	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
 end
+end)();
 
 -- Profession Lib
-local SkillIDToSpellID = setmetatable({
+app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
 	[261] = 5149,	-- Beast Training
@@ -8604,7 +8609,7 @@ app.BaseProfession = {
 			if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
 			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
 		elseif key == "spellID" then
-			return SkillIDToSpellID[t.requireSkill];
+			return app.SkillIDToSpellID[t.requireSkill];
 		elseif key == "skillID" then
 			return t.requireSkill;
 		elseif key == "sort" then
@@ -11875,7 +11880,7 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0))); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
