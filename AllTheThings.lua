@@ -7717,8 +7717,12 @@ local itemFields = {
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = rawget(t, "bonusID");
-			if bonusID and bonusID > 0 then
-				itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+			if bonusID then
+				if bonusID > 0 then
+                    itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+                else
+                    itemLink = string.format("item:%d:::::::::::::", itemLink);
+                end
 			else
 				bonusID = t.modID;
 				if bonusID then
