@@ -8860,7 +8860,7 @@ app.CollectibleAsQuest = function(t)
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
 		
 	-- If you are currently on the quest.
-	or (t.questID and C_QuestLog.IsOnQuest(t.questID)));
+	or (t.questID and not t.isWorldQuest and C_QuestLog.IsOnQuest(t.questID)));
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
