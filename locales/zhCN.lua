@@ -577,7 +577,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_NAMES;
+local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[0] = ZONE .. BATTLE_PET_SOURCE_1,							-- Zone Drop 地区掉落
@@ -1201,7 +1201,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_DESCRIPTIONS;
+local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-34] = "世界任务是有时间限制的任务, 可在特定地点进行, 奖励不一.\n\n一定要经常查看ATT世界任务窗口(/attwq), 看看有什么限时的东西你应该去收集!",
 })

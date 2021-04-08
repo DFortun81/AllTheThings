@@ -575,7 +575,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_NAMES;
+local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		--TODO: [0] = ZONE.." "..BATTLE_PET_SOURCE_1,				-- Zone Drop
@@ -1179,7 +1179,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_DESCRIPTIONS;
+local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 })

@@ -748,7 +748,7 @@ app.L = {
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
-	["NPC_ID_ICONS"] = {
+	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
 		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",							-- Zone Drop
 		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
@@ -1552,8 +1552,7 @@ app.L = {
 		[-1433961] = "3854020",															-- Broken Mirror
 		[-1433962] = "3854020",															-- Broken Mirror
 	};
-
-	["NPC_ID_NAMES"] = {
+	["HEADER_NAMES"] = {
 -- Commonly used
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
@@ -2580,9 +2579,7 @@ app.L = {
 		[-1433961] = "Broken Mirror D-2",										-- Broken Mirror
 		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
 	};
-
-	-- Descriptions which are common to a common NPCID
-	["NPC_ID_DESCRIPTIONS"] = {
+	["HEADER_DESCRIPTIONS"] = {
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 	};
 

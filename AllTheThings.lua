@@ -1545,7 +1545,7 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 			return title;
 		end
 	else
-		local title = L["NPC_ID_NAMES"][id];
+		local title = L["HEADER_NAMES"][id];
 		rawset(t, id, title);
 		return title;
 	end
@@ -1626,13 +1626,12 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
-		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID; end
-		if key == "creatureID" then
+		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
+		elseif key == "creatureID" then
 			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
 			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
-		end
-		if key == "encounterID" then
-			if t.creatureID or t.npcID then hash = hash .. ":" .. (t.creatureID or t.npcID); end
+		elseif key == "encounterID" then
+			if t.creatureID then hash = hash .. ":" .. t.creatureID; end
 			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
 			if t.crs then
 				local numCrs = #t.crs;
@@ -3987,6 +3986,12 @@ fieldConverters = {
 		CacheField(group, "followerID", value);
 	end,
 	["headerID"] = function(group, value)
+		-- WARNING: DEV ONLY START
+		if not L["HEADER_NAMES"][value] then
+			print("Header Missing Name ", value);
+			L["HEADER_NAMES"][value] = "Header #" .. value;
+		end
+		-- WARNING: DEV ONLY END
 		CacheField(group, "headerID", value);
 	end,
 	["instanceID"] = function(group, value)
@@ -4009,6 +4014,12 @@ fieldConverters = {
 		end
 	end,
 	["objectID"] = function(group, value)
+		-- WARNING: DEV ONLY START
+		if not L["OBJECT_ID_NAMES"][value] then
+			print("Object Missing Name ", value);
+			L["OBJECT_ID_NAMES"][value] = "Object #" .. value;
+		end
+		-- WARNING: DEV ONLY END
 		CacheField(group, "objectID", value);
 	end,
 	["questID"] = function(group, value)
@@ -4065,6 +4076,12 @@ fieldConverters = {
 				elseif v[1] == "i" then
 					rawget(fieldConverters, "itemID")(group, v[2], true);
 				elseif v[1] == "o" then
+					-- WARNING: DEV ONLY START
+					if not L["OBJECT_ID_NAMES"][v[2]] then
+						print("Object Missing Name ", v[2]);
+						L["OBJECT_ID_NAMES"][v[2]] = "Object #" .. v[2];
+					end
+					-- WARNING: DEV ONLY END
 					rawget(fieldConverters, "objectID")(group, v[2]);
 				end
 			end
@@ -8337,19 +8354,22 @@ local headerFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return L["NPC_ID_NAMES"][t.headerID];
+		return L["HEADER_NAMES"][t.headerID];
 	end,
 	["icon"] = function(t)
-		return L["NPC_ID_ICONS"][t.headerID];
+		return L["HEADER_ICONS"][t.headerID];
+	end,
+	["description"] = function(t)
+		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
 	["sort"] = function(t)
 		return (t.order or "50") .. t.name;
 	end,
 	["nameAsAchievement"] = function(t)
-		return L["NPC_ID_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
+		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
 	["iconAsAchievement"] = function(t)
-		return L["NPC_ID_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
+		return L["HEADER_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
 	end,
 	["linkAsAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
@@ -8399,49 +8419,106 @@ end)();
 
 -- Object Lib (as in "World Object")
 (function()
-app.BaseObject = {
-	__index = function(t, key)
-		if key == "key" then
-			return "objectID";
-		elseif key == "name" then
-			rawset(t, "name", L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID));
-			return rawget(t, "name");
-		elseif key == "text" then
-			return app.TryColorizeName(t, t.name);
-		elseif key == "icon" then
-			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleAsQuest(t);
-		elseif key == "repeatable" then
-			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "collected" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t) == 1;
-		elseif key == "altcollected" then
-			local found;
-			-- determine if an altQuest is considered completed for this quest for this character
-			if t.altQuests then
-				for i,questID in ipairs(t.altQuests) do
-					-- any altQuest completed on this character, mark the altQuestID
-					if not found and IsQuestFlaggedCompleted(questID) then
-						found = questID;
-						-- print("complete altquest found",questID,"=>",t.questID);
-					end
+local objectFields = {
+	["key"] = function(t)
+		return "objectID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		return L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
+	end,
+	["icon"] = function(t)
+		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+	end,
+	["sort"] = function(t)
+		return (t.order or "51") .. t.name;
+	end,
+	
+	["nameAsAchievement"] = function(t)
+		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
+	end,
+	["iconAsAchievement"] = function(t)
+		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
+	end,
+	["linkAsAchievement"] = function(t)
+		return GetAchievementLink(t.achievementID);
+	end,
+	["collectibleAsQuest"] = function(t)
+		return app.CollectibleAsQuest(t);
+	end,
+	["collectedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
+	["repeatableAsQuest"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
+	end,
+	["altcollectedAsQuest"] = function(t)
+		-- determine if an altQuest is considered completed for this quest for this character
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				-- any altQuest completed on this character, mark the altQuestID
+				if IsQuestFlaggedCompleted(questID) then
+					-- print("complete altquest found",questID,"=>",t.questID);
+					rawset(t, "altcollected", questID);
+					return questID;
 				end
 			end
-			if found then rawset(t, "altcollected", found); end
-			return rawget(t, "altcollected");
-		elseif key == "sort" then
-			if t.order then return t.order .. t.text end
-			return "51" .. t.text;
 		end
-	end
+	end,
 };
+app.BaseObject = app.BaseObjectFields(objectFields);
+
+local fields = RawCloneData(objectFields);
+fields.icon = objectFields.iconAsAchievement;
+--fields.link = objectFields.linkAsAchievement;
+app.BaseObjectWithAchievement = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(objectFields);
+fields.altcollected = objectFields.altcollectedAsQuest;
+fields.collectible = objectFields.collectibleAsQuest;
+fields.collected = objectFields.collectedAsQuest;
+fields.trackable = objectFields.trackableAsQuest;
+fields.repeatable = objectFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
+app.BaseObjectWithQuest = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(objectFields);
+fields.icon = objectFields.iconAsAchievement;
+--fields.link = objectFields.linkAsAchievement;
+fields.altcollected = objectFields.altcollectedAsQuest;
+fields.collectible = objectFields.collectibleAsQuest;
+fields.collected = objectFields.collectedAsQuest;
+fields.trackable = objectFields.trackableAsQuest;
+fields.repeatable = objectFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
+app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields);
 app.CreateObject = function(id, t)
-	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+	if t then
+		if rawget(t, "achID") then
+			rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievementAndQuest);
+			else
+				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievement);
+			end
+		else
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
+			else
+				return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+			end
+		end
+	else
+		return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+	end
 end
 end)();
 
@@ -9315,7 +9392,7 @@ app.BaseVignette = {
 						return t.name;
 					end
 				else
-					t.name = L["NPC_ID_NAMES"][t.creatureID];
+					t.name = L["HEADER_NAMES"][t.creatureID];
 					return t.name;
 				end
 			end
@@ -11913,12 +11990,6 @@ RowOnEnter = function (self)
 					end
 				end
 				if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
-			end
-			if reference.npcID then
-				local commonDesc = L["NPC_ID_DESCRIPTIONS"][reference.npcID];
-				if commonDesc then
-					GameTooltip:AddLine(commonDesc, 0.4, 0.8, 1, 1);
-				end
 			end
 		end
 		if not reference.itemID then

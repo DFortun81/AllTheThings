@@ -564,7 +564,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_NAMES;
+local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[0] = "Добыча локации",									-- Zone Drop
@@ -1174,7 +1174,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.NPC_ID_DESCRIPTIONS;
+local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-34] = "Локальные задания – это ограниченные по времени задания, доступные в определённых местах с переменными наградами.\n\nЧаще проверяйте окно локальных заданий ATT (/attwq), чтобы увидеть какие ограниченные по времени Штучки можно собрать!",
 })
