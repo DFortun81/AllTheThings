@@ -891,7 +891,7 @@ namespace ATT
 
                 // Load in the Locale File and Warn about Unused Custom NPC IDs.
                 var content = File.ReadAllText("./../../locales/enUS.lua");
-                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"NPC_ID_NAMES\"]")));
+                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"HEADER_NAMES\"]")));
                 content = content.Substring(0, content.IndexOf('}'));
 
                 // Scan through for NPC IDs. (we don't care about the actual name)
