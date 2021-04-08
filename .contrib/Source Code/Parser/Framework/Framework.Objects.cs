@@ -889,37 +889,109 @@ namespace ATT
                     File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
                 }
 
-                // Load in the Locale File and Warn about Unused Custom NPC IDs.
+                // Load in the Locale File and Warn about Unused Header IDs.
                 var content = File.ReadAllText("./../../locales/enUS.lua");
                 content = content.Substring(content.IndexOf("{", content.IndexOf("[\"HEADER_NAMES\"]")));
                 content = content.Substring(0, content.IndexOf('}'));
 
-                // Scan through for NPC IDs. (we don't care about the actual name)
+                // Scan through for Header Localization. (we don't care about the actual name)
                 int npcID;
                 int index = 0;
-                var allLocalizedNPCIDs = new Dictionary<int, bool>();
+                var allLocalizedHeaders = new Dictionary<int, bool>();
                 while ((index = content.IndexOf('[', index)) > -1)
                 {
                     ++index;
                     int endIndex = content.IndexOf(']', index);
                     if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out npcID))
                     {
-                        allLocalizedNPCIDs[npcID] = true;
+                        allLocalizedHeaders[npcID] = true;
                     }
                 }
 
-                // Determine if any of the localized NPC IDs have no references.
-                if (allLocalizedNPCIDs.Any())
+                // Determine if any of the localized Headers have no references.
+                if (allLocalizedHeaders.Any())
                 {
-                    var sortedNPCIDs = allLocalizedNPCIDs.Keys.ToList();
-                    sortedNPCIDs.Sort();
-                    sortedNPCIDs.Reverse();
-                    foreach (int sortedNPCID in sortedNPCIDs)
+                    var sortedHeaderIDs = allLocalizedHeaders.Keys.ToList();
+                    sortedHeaderIDs.Sort();
+                    sortedHeaderIDs.Reverse();
+                    foreach (int sortedHeaderID in sortedHeaderIDs)
                     {
-                        if (NPCS_WITH_REFERENCES.ContainsKey(sortedNPCID)) continue;
-                        Trace.Write("Custom NPC ID [");
-                        Trace.Write(sortedNPCID);
+                        if (NPCS_WITH_REFERENCES.ContainsKey(sortedHeaderID)) continue;
+                        Trace.Write("Header [");
+                        Trace.Write(sortedHeaderID);
                         Trace.WriteLine("] has no reference and should be removed.");
+                    }
+
+                    var missingHeaderLocalization = new List<int>();
+                    foreach (var pair in NPCS_WITH_REFERENCES)
+                    {
+                        if (pair.Key < 1)
+                        {
+                            if (allLocalizedHeaders.ContainsKey(pair.Key)) continue;
+                            missingHeaderLocalization.Add(pair.Key);
+                        }
+                    }
+                    if (missingHeaderLocalization.Any())
+                    {
+                        Trace.WriteLine("Missing Localization for Headers:");
+                        missingHeaderLocalization.Sort();
+                        missingHeaderLocalization.Reverse();
+                        foreach (int id in missingHeaderLocalization)
+                        {
+                            Trace.WriteLine(id);
+                        }
+                    }
+                }
+
+                // Lazily do the same thing, but for Objects.
+                content = File.ReadAllText("./../../locales/enUS.lua");
+                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"OBJECT_ID_NAMES\"]")));
+                content = content.Substring(0, content.IndexOf('}'));
+
+                // Scan through for Header Localization. (we don't care about the actual name)
+                int objectID;
+                index = 0;
+                var allLocalizedObjects = new Dictionary<int, bool>();
+                while ((index = content.IndexOf('[', index)) > -1)
+                {
+                    ++index;
+                    int endIndex = content.IndexOf(']', index);
+                    if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out objectID))
+                    {
+                        allLocalizedObjects[objectID] = true;
+                    }
+                }
+
+                // Determine if any of the localized objects have no references.
+                if (allLocalizedObjects.Any())
+                {
+                    var sortedObjectIDs = allLocalizedObjects.Keys.ToList();
+                    sortedObjectIDs.Sort();
+                    sortedObjectIDs.Reverse();
+                    foreach (int sortedObjectID in sortedObjectIDs)
+                    {
+                        if (OBJECTS_WITH_REFERENCES.ContainsKey(sortedObjectID)) continue;
+                        Trace.Write("Object [");
+                        Trace.Write(sortedObjectID);
+                        Trace.WriteLine("] has no reference and should be removed.");
+                    }
+
+                    var missingLocalization = new List<int>();
+                    foreach (var pair in OBJECTS_WITH_REFERENCES)
+                    {
+                        if (allLocalizedObjects.ContainsKey(pair.Key)) continue;
+                        missingLocalization.Add(pair.Key);
+                    }
+                    if (missingLocalization.Any())
+                    {
+                        Trace.WriteLine("Missing Localization for Objects:");
+                        missingLocalization.Sort();
+                        foreach (int id in missingLocalization)
+                        {
+                            Trace.Write("\t\t[");
+                            Trace.Write(id);
+                            Trace.WriteLine("] = \"\",");
+                        }
                     }
                 }
             }
@@ -1841,6 +1913,14 @@ namespace ATT
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             if (newProvider.Item1 == "i")
                                 Items.MarkItemAsReferenced(newProvider.Item2);
+                            else if(newProvider.Item1 == "n")
+                            {
+                                NPCS_WITH_REFERENCES[newProvider.Item2] = true;
+                            }
+                            else if(newProvider.Item1 == "o")
+                            {
+                                OBJECTS_WITH_REFERENCES[newProvider.Item2] = true;
+                            }
                         }
                     }
                     catch

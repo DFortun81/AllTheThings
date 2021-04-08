@@ -106,6 +106,11 @@ namespace ATT
         private static IDictionary<int, bool> NPCS_WITH_REFERENCES = new Dictionary<int, bool>();
 
         /// <summary>
+        /// All of the Object IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static IDictionary<int, bool> OBJECTS_WITH_REFERENCES = new Dictionary<int, bool>();
+
+        /// <summary>
         /// All of the species that have been parsed sorted by Species ID.
         /// </summary>
         private static IDictionary<int, Dictionary<string, object>> SPECIES = new Dictionary<int, Dictionary<string, object>>();
@@ -294,6 +299,10 @@ namespace ATT
             if (data.TryGetValue("crs", out qgs))
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+            }
+            if(data.TryGetValue("objectID", out npcID))
+            {
+                OBJECTS_WITH_REFERENCES[npcID] = true;
             }
 
             // Check to see what patch this data was made relevant for.
