@@ -36,3 +36,4 @@ obj/
 .contrib/Harvesters/*.log
 .contrib/Harvesters/*.bat
 __pycache__
+.contrib/Parser/localizedObjects.txt
