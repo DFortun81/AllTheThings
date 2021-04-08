@@ -1143,10 +1143,6 @@ _.ExpansionFeatures =
 							["coord"] = { 65.9, 72.9, 1527 },
 							["isWorldQuest"] = true,
 						}),
-						q(57359, {	-- Call of the Void
-							["lvl"] = 120,
-							["isWorldQuest"] = true,
-						}),
 						q(57522, {	-- Call of the Void
 							["lvl"] = 120,
 							["isWorldQuest"] = true,

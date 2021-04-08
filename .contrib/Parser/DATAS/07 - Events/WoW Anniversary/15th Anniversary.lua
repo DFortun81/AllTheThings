@@ -681,8 +681,6 @@ _.WorldEvents =
 			n(-9959, {	-- Dungeons & Raids
 				n(157113, {	-- Chromie
 					--	inst(2235, {	-- doesn't show up in-game
-					["isWeekly"] = true,
-					["questID"] = 57298,	-- How Things "Really" Happened...
 					["maps"] = {
 						1553,	-- Caverns of Time (instanced)
 						--	BC
