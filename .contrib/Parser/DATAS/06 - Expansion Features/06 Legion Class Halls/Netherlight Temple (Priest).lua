@@ -7,100 +7,14 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(PRIEST, {
 			["classes"] = { PRIEST },
-			["lvl"] = 98,
 			["mapID"] = 702,	-- Netherlight Temple (Priest)
 			["g"] =  {
-		--[[	n(102589, {	-- Command Map
-					["g"] = {
-						-- Blank for Class Only Missions in the future
-					},
-					["achievementID"] = 11217,
-					["modelScale"] = 1.5,
-				}),		]]--
 				n(QUESTS, {
-					--[[
-						q(43797),	-- Aiding the Conclave
-						q(43397),	-- United As One
-					]]--
 					n(-10067, {	-- Artifact Quests
 						q(43386, {	-- Onslaught Envoy
 							["lvl"] = 110,
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
-						}),
-						q(43935, {	-- A Second Legend
-							["sourceQuests"] = { 41019 },	-- Actions on Azeroth
-							["classes"] = { PRIEST },
-							["coord"] = { 51.1, 48.2, 702 },
-							["provider"] = { "n", 110564 },	-- Alonsus Faol
-						}),
-						q(44407, {	-- The Third Legend
-							["sourceQuests"] = { 43935 },	-- A Second Legend
-							["provider"] = { "n", 110564 },	-- Alonsus Faol
-						}),
-						i(128868, {	-- Light's Wrath
-							["g"] = {
-								q(41629, {	-- Harnessing the Holy Fire
-									["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
-								}),
-								q(41630, {	-- Unleashing Judgment
-									["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
-									["provider"] = { "n", 105917 },	-- Image of Kalec
-								}),
-								q(41631, {	-- The Nexus Vault
-									["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
-									["provider"] = { "n", 105917 },	-- Image of Kalec
-								}),
-								q(41632, {	-- A Gift of Time
-									["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
-									["provider"] = { "n", 105081 },	-- Archmage Kalec
-								}),
-							},
-						}),
-						i(128825, {	-- T'uure, Beacon of the Naaru
-							q(41957, {	-- The Vindicator's Plea
-								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-								["classes"] = { PRIEST },
-								["coord"] = { 78.9, 41.0, 18},
-								["provider"] = { "n", 101314 },	-- Alonsus Faol
-							}),
-							q(41966, {	-- House Call
-								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
-								["classes"] = { PRIEST },
-								["coord"] = { 37.7, 36.7, 627 },	-- Dalaran
-								["provider"] = { "n", 105602 },	-- Vindicator Boros
-							}),
-							q(41967, {	-- Out of the Darkness
-								["sourceQuests"] = { 41966 },	-- House Call
-								["classes"] = { PRIEST },
-								["coord"] = { 37.5, 35.5, 627 },	-- Dalaran
-								["provider"] = { "n", 105603 },	-- Defender Barrem
-							}),
-							q(41993, {	-- Salvation From On High
-								["sourceQuests"] = { 41967 },	-- Out of the Darkness
-								["classes"] = { PRIEST },
-								["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
-								["provider"] = { "n", 105684 },	-- Alora
-							}),
-							q(42074, {	-- Return of the Light
-								["sourceQuests"] = { 41993 },	-- Salvation From On High
-								["classes"] = { PRIEST },
-								["coord"] = { 33.5, 33.1, 646 },	-- Broken Shore
-								["provider"] = { "n", 106011 },	-- Jace  Darkweaver
-							}),
-						}),
-						i(128827, {	-- Xal'atah, Blade of the Black Empire
-							i(133958),	-- Secrets of the Void
-							q(40710, {	-- Blade in Twilight
-								["providers"] = {
-									{ "n", 101314 },	-- Alonsus Faol
-									{ "n", 110564 },	-- Alonsus Faol
-								},
-								["lvl"] = 98,
-								["coord"] = { 79.0, 40.9, 18 },
-								["classes"] = { PRIEST },
-								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-							}),
 						}),
 						i(141332, {	-- The Annals of Light and Shadow
 							["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
@@ -226,6 +140,15 @@ _.ExpansionFeatures =
 						["model"] = 192568,
 						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 					}),
+					q(41632, {	-- A Gift of Time
+						["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105081 },	-- Archmage Kalec
+						["coord"] = { 28.6, 49.9, 627 },	-- Dalaran
+					}),
+					q(43420, {	-- A Hero's Weapon
+						["classes"] = { PRIEST },
+					}),
 					q(40706, {	-- A Legend You Can Hold
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 						["classes"] = { PRIEST },
@@ -253,12 +176,26 @@ _.ExpansionFeatures =
 					n(46028, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
+					q(43935, {	-- A Second Legend
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+						["classes"] = { PRIEST },
+						["coord"] = { 51.1, 48.2, 702 },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
 					q(43383, {	-- Awakening the Light
 						["sourceQuests"] = { 43377 },	-- Halls of Valor: The Light Within
 						["classes"] = { PRIEST },
-						["coord"] = { 75.7, 40.7, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 102587 },	-- Saa'ra
+						["coord"] = { 75.7, 40.7, 702 },
+					}),
+					q(40710, {	-- Blade in Twilight
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+						["classes"] = { PRIEST },
+						["providers"] = {
+							{ "n", 101314 },	-- Alonsus Faol
+							{ "n", 110564 },	-- Alonsus Faol
+						},
+						["coord"] = { 51.5, 47.6, 702 },
 					}),
 					q(46034, {	-- Champion: Aelthalyste
 						["provider"] = { "n", 120842 },	-- Aelthalyste
@@ -275,8 +212,8 @@ _.ExpansionFeatures =
 					q(43271, {	-- Champion: Calia Menethil
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["classes"] = { PRIEST },
-						["coord"] = { 51.6, 50.0, 702 },
 						["provider"] = { "n", 110596 },	-- Calia Menethil
+						["coord"] = { 51.6, 50.0, 702 },
 						["g"] = {
 							follower(856),	-- Calia Menethil
 						},
@@ -304,6 +241,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43380, {	-- Champion: Sol
+						["sourceQuests"] = { 43383 },	-- Awakening the Light
+						["classes"] = { PRIEST },
+						["coord"] = { 73.9, 40.8, 702 },
 						["provider"] = { "n", 110457 },	-- Sol
 						["g"] = {
 							follower(872),	-- Sol
@@ -335,7 +275,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
 						["coord"] = { 48.9, 48.7, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 					}),
 					q(43378, {	-- Eye of Azshara: Looking Through the Lens
@@ -344,12 +283,13 @@ _.ExpansionFeatures =
 							42138,	-- Champion: Zabra Hexx
 						},
 						["classes"] = { PRIEST },
-						["coord"] = { 47.1, 43.9, 630 },
 						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
+						["coord"] = { 47.1, 43.9, 630 },
 					}),
 					q(41628, {	-- Eyes of the Dragon
 						["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
 						["classes"] = { PRIEST },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
 					q(43390, {	-- Forgotten Shadows
 						["classes"] = { PRIEST },
@@ -358,15 +298,25 @@ _.ExpansionFeatures =
 					q(43377, {	-- Halls of Valor: The Light Within
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
-						["coord"] = { 50.9, 46.8, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
+					}),
+					q(41629, {	-- Harnessing the Holy Fire
+						["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
 					q(43402, {	-- High Priest of Netherlight
 						i(139759),	-- Chest
 					}),
 					q(43884, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(41966, {	-- House Call
+						["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105602 },	-- Vindicator Boros
+						["coord"] = { 37.7, 36.7, 627 },	-- Dalaran
 					}),
 					q(46029, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -381,6 +331,12 @@ _.ExpansionFeatures =
 						["coord"] = { 58.5, 37.2, 630 },
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 					}),					
+					q(41967, {	-- Out of the Darkness
+						["sourceQuests"] = { 41966 },	-- House Call
+						["classes"] = { PRIEST },
+						["coord"] = { 37.5, 35.5, 627 },	-- Dalaran
+						["provider"] = { "n", 105603 },	-- Defender Barrem
+					}),
 					q(44251, {	-- Power Word: Armor
 						["classes"] = { PRIEST },
 						["coord"] = { 38.9, 24.4, 702 },
@@ -401,7 +357,7 @@ _.ExpansionFeatures =
 					q(43376, {	-- Problem Salver
 						["sourceQuests"] = {
 							43375,	-- An Ample Supply
-						--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
+							43374,	-- Murloc Mind Control
 						},
 						["classes"] = { PRIEST },
 						["coord"] = { 58.5, 37.2, 630 },
@@ -410,9 +366,8 @@ _.ExpansionFeatures =
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
-						["coord"] = { 50.9, 46.8, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 109776 },	-- Moira Thaurissan
+						["coord"] = { 50.9, 46.8, 702 },
 					}),
 					q(43275, {	-- Recruiting the Troops
 						["sourceQuests"] = { 43273 },	-- Spread the Word
@@ -426,11 +381,23 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
+					q(42074, {	-- Return of the Light
+						["sourceQuests"] = { 41993 },	-- Salvation From On High
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 106011 },	-- Jace  Darkweaver
+						["coord"] = { 33.5, 33.1, 646 },	-- Broken Shore
+					}),
 					q(43270, {	-- Rise, Champions
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.2, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
+					q(41993, {	-- Salvation From On High
+						["sourceQuests"] = { 41967 },	-- Out of the Darkness
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105684 },	-- Alora
+						["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
@@ -444,7 +411,7 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
-					q(43372, {	-- The Best and Brightest
+					q(43373, {	-- The Best and Brightest
 						["sourceQuests"] = { 43372 },	-- Whispers in the Void
 						["classes"] = { PRIEST },
 						["coord"] = { 48.2, 48.2, 702 },
@@ -462,6 +429,12 @@ _.ExpansionFeatures =
 						["coord"] = { 51.5, 47.9, 702 },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
 					}),
+					q(41631, {	-- The Nexus Vault
+						["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["maps"] = { 736 },	-- The Nexus Vault
+					}),
 					q(45789, {	-- The Sunken Vault
 						["classes"] = { PRIEST },
 						["lvl"] = 110,
@@ -469,23 +442,37 @@ _.ExpansionFeatures =
 							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
 						},
 					}),
+					q(44407, {	-- The Third Legend
+						["sourceQuests"] = { 41632 },	-- A Gift of Time
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 51.5, 47.6, 702 },
+					}),
+					q(41957, {	-- The Vindicator's Plea
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 101314 },	-- Alonsus Faol
+						["coord"] = { 78.9, 41.0, 18},
+					}),
 					q(43276, {	-- Troops in the Field
 						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
+					q(41630, {	-- Unleashing Judgment
+						["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43379, {	-- Velen's Vision
-						-- awarded third criteria for "fighting with style: classic" achievement
-						-- not sure if that should be here or on the achievement as a SQ or anything like that.
 						["sourceQuests"] = { 43378 },	-- Eye of Azshara: Through the Lens
 						["classes"] = { PRIEST },
-						["coord"] = { 48.3, 47.8, 702 },
-						["lvl"] = 103,
 						["provider"] = { "n", 110557 },	-- Prophet Velen
+						["coord"] = { 48.3, 47.8, 702 },
 					}),
 					q(43372, {	-- Whispers in the Void
 						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
@@ -493,11 +480,6 @@ _.ExpansionFeatures =
 						["coord"] = { 51.2, 48.7, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
-					--[[ Artifact Appearance Quests Commented Out For Now
-					q(43420, {	-- A Hero's Weapon
-						sp(219663)	-- Heroic Weapons [No item associated]
-					}),
-					--]]
 				}),
 				n(VENDORS, {
 					n(112401, {	-- Meridelle Lightspark <Logistics>
