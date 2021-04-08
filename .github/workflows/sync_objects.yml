@@ -1,5 +1,5 @@
-# This is a workflow to sync object names from enUS to all other locales
-# using Wowhead data
+# This is a workflow to add object names to new objects in enUS
+# and sync them to all other locales using Wowhead data
 
 name: Sync objects
 
@@ -17,8 +17,8 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v2
-          with:
-            python-version: '3.x'
+        with:
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
