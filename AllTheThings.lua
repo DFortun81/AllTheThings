@@ -8643,28 +8643,47 @@ end
 end)();
 
 -- PVP Ranks
-app.BasePVPRank = {
-	__index = function(t, key)
-		if key == "key" then
-			return "pvpRankID";
-		elseif key == "text" then
-			return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.s or 0)];
-		elseif key == "icon" then
-			return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
-		elseif key == "description" then
-			return L["OPPOSITE_FACTION_EQ"] .. _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.s == 1 and 0 or 1))];		-- L["OPPOSITE_FACTION_EQ"] = "Opposite faction equivalent: "
-		elseif key == "title" then
-			return RANK .. " " .. t.pvpRankID;
-		elseif key == "r" then
-			return t.parent.r or app.FactionID;
-		elseif key == "s" then
-			return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
-		end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "pvpRankID";
+	end,
+	["text"] = function(t)
+		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
+	end,
+	["icon"] = function(t)
+		return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
+	end,
+	["title"] = function(t)
+		return RANK .. " " .. t.pvpRankID .. DESCRIPTION_SEPARATOR ..  _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.inverseR == 1 and 0 or 1))] .. " (" .. (t.r == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE) .. ")";
+	end,
+	["description"] = function(t)
+		return "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
+	end,
+	["r"] = function(t)
+		return t.parent.r or app.FactionID;
+	end,
+	["inverseR"] = function(t)
+		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
+	end,
+	["lifetimeRank"] = function(t)
+		return select(3, GetPVPLifetimeStats());
+	end,
+	["collectible"] = function(t)
+		return false;	-- TODO?
+	end,
+	["collected"] = function(t)
+		return t.lifetimeRank >= t.pvpRankID;
+	end,
+	["OnTooltip"] = function(t)
+		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
 	end
 };
+app.BasePVPRank = app.BaseObjectFields(fields);
 app.CreatePVPRank = function(id, t)
 	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
 end
+end)();
 
 -- Quest Lib
 app.BaseQuest = {
@@ -8961,47 +8980,59 @@ app.CreateRecipe = function(id, t)
 end
 
 -- Selfie Filters Lib
-app.BaseSelfieFilter = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "link" then
-			return "quest:" .. t.questID;
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return app.CollectibleSelfieFilters;
-		elseif key == "saved" or key == "collected" then
-			if IsQuestFlaggedCompleted(t.questID) then
-					return 1;
-				end
-			if app.AccountWideSelfieFilters then
-				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
-					return 2;
-				end
-				if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-					return 2;
-				end
+(function()
+local SelfieCameraMkII = { { "i", 122674 } };
+local fields = {
+	["key"] = function(t)
+		return "questID";
+	end,
+	["text"] = function(t)
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		return "quest:" .. t.questID;
+	end,
+	["description"] = function(t)
+		if t.crs and #t.crs > 0 then
+			for i,id in ipairs(t.crs) do
+				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (NPCNameFromID[id] or "???")
+				.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
 			end
-		elseif key == "description" then
-			if t.crs and #t.crs > 0 then
-				for i,id in ipairs(t.crs) do
-					return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (NPCNameFromID[id] or "???")
-					.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");		-- L["SELFIE_DESC"] = "Take a selfie using your ";  L["SELFIE_DESC_2"] = " with |cffff8000"
-				end
-			end
-		elseif key == "lvl" then
-			return 40;
 		end
-	end
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleSelfieFilters;
+	end,
+	["collected"] = function(t)
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		if app.AccountWideSelfieFilters then
+			if GetDataSubMember("CollectedQuests", t.questID) then
+				return 2;
+			end
+			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+				return 2;
+			end
+		end
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["saved"] = function(t)
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+	end,
+	["lvl"] = function(t)
+		return 40;
+	end,
 };
+app.BaseSelfieFilter = app.BaseObjectFields(fields);
 app.CreateSelfieFilter = function(id, t)
+	t.providers = SelfieCameraMkII;
 	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
+end)();
 
 -- Spell Lib
 app.BaseSpell = {
