@@ -3432,12 +3432,6 @@ _.HiddenQuestTriggers =
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 		q(56307),	-- Opened the mechanized supply chest
-		q(57387),	-- Balnazzar data anomaly
-		q(57389),	-- Baron Gedden data anomaly
-		q(57388),	-- Baron Kazum data anomaly
-		q(57387),	-- Captain Kromcrush data anomaly
-		q(57388),	-- Crowd Pummeler 9-60 data anomaly
-		q(57385),	-- Razorclaw the Butcher data anomaly
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
@@ -3966,7 +3960,7 @@ _.HiddenQuestTriggers =
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
-		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
+		-- q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
 		q(62746),	-- Reaching Renown 19 Night Fae / unlocking Deepening Bond 4% stam increase
 		q(62747),	-- Reaching Renown 35 Night Fae / unlocking Deepening Bond 6% stam increase
@@ -4071,7 +4065,6 @@ _.HiddenQuestTriggers =
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
-		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
 		q(61128),	-- Triggered after getting Sorrowbane
@@ -4086,7 +4079,6 @@ _.HiddenQuestTriggers =
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus Treasures
-		q(61720),	-- when opening Plaguefallen Chest (61474)
 		q(61120),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		q(61121),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		q(61122),	-- interacting with runes to unlock a Runebound Coffer (61115)
@@ -4107,9 +4099,6 @@ _.HiddenQuestTriggers =
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
-		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
-		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
-		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 		q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
@@ -4519,11 +4508,9 @@ _.HiddenQuestTriggers =
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
-		q(63177),	-- Triggered after using Encased Riftwalker Essence
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
-		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds
@@ -4558,7 +4545,6 @@ _.HiddenQuestTriggers =
 		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
-		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)

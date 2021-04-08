@@ -1118,10 +1118,11 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-34, {	-- World Quests
-						q(57585, {	-- Abyssal Santuary
-							["lvl"] = 120,
-							["isWorldQuest"] = true,
-						}),
+						-- TODO: this is the wrong questID, and also this quest title doesn't exist on Wowhead...
+						-- q(57585, {	-- Abyssal Santuary
+						-- 	["lvl"] = 120,
+						-- 	["isWorldQuest"] = true,
+						-- }),
 						q(57157, {	-- Assault: The Black Empire
 							["lvl"] = 120,
 							["isWorldQuest"] = true,

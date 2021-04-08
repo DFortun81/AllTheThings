@@ -63,11 +63,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61610, {	-- Fishing: Skeletal Mudskipper
-					["requireSkill"] = FISHING,
-					["isWorldQuest"] = true,
-					["lvl"] = { 60 },
-				}),
 				q(61477, {	-- Calling the Champions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

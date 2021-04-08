@@ -393,7 +393,7 @@ _.Zones =
 					["coord"] = { 19.6, 50.2, 1670 },
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
-				q(62713, {	-- Fate's Reminder
+				q(63771, {	-- Fate's Reminder
 				--	no coords, automatically offered
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 					["isBreadcrumb"] = true,	-- optional quest reminding you that you can switch to being a skip character at any time - turning in the quest does not activate skip, it just points you to the NPC that does
