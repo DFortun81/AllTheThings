@@ -158,6 +158,7 @@ def get_objects_info(filename):
         if len(obj_name) == 0 and int(obj_id) < custom_objects_const: # new entry, need to get the name
           obj_name = get_localized_obj_name(obj_id)
           line = re.sub('\".*\"', f'"{obj_name}"', line)
+          print(f'New object {obj_id}: {obj_name}')
         objects.append(Object(int(obj_id), obj_name, line))
         ind += 1
       break
