@@ -1153,6 +1153,12 @@ _.Zones =
 						i(45819),	-- Spiked Battleguard Choker
 					},
 				}),
+				n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
+					["coord"] = { 69.73, 45.45, 125 },
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
+					},
+				}),
 				n(35498,  {	-- Horace Hunderland <Plate Armor Merchant>
 					["coord"] = { 46.6, 27.1, 125 },
 					["g"] = {

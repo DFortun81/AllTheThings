@@ -6,7 +6,6 @@ _.WorldDrops =
 {
 	tier(3, {	-- Wrath of the Lich King
 		f(200, {	-- Recipes
-			un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
 			prof(ALCHEMY, {
 				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
