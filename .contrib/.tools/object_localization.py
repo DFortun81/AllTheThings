@@ -10,7 +10,9 @@ import re
 import fileinput
 from collections import namedtuple
 
-def get_localized_obj_name(obj_id, lang_code):
+custom_objects_const = 9000000
+
+def get_localized_obj_name(obj_id, lang_code='en'):
   URL = f'https://{lang_code}.wowhead.com/object={obj_id}'
   page = requests.get(URL)
   if 'notFound' in page.url:
@@ -40,7 +42,7 @@ def get_todo_lines_and_og_names(lines):
           break
         if "--TODO: " in line:
           obj_id = re.search("\d+", line).group()
-          if int(obj_id) > 9000000: # custom objects
+          if int(obj_id) > custom_objects_const: # custom objects
             ind += 1
             continue
           todo_dict[ind] = obj_id
@@ -148,13 +150,23 @@ def get_objects_info(filename):
 
         obj_id = re.search("\d+", line).group()
 
-        obj_name = re.findall('"([^"]*)"', line)
-        if len(obj_name) == 0: # skip GetSpellInfo lines
+        if 'GetSpellInfo' in line: # skip GetSpellInfo lines
           ind += 1
           continue
-        objects.append(Object(int(obj_id), obj_name[0], line))
+        obj_name = re.findall('"([^"]*)"', line)[0]
+        if len(obj_name) == 0 and int(obj_id) < custom_objects_const: # new entry, need to get the name
+          obj_name = get_localized_obj_name(obj_id)
+          line = re.sub('\".*\"', f'"{obj_name}"', line)
+        objects.append(Object(int(obj_id), obj_name, line))
         ind += 1
       break
+
+  # replace all lines because we might have localized new objects
+  localized_obj_lines = [i.line for i in objects]
+  lines[first_obj_line:last_obj_line + 1] = localized_obj_lines
+  file = open(filename, 'w')
+  file.writelines(lines)
+  file.close()
 
   return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
