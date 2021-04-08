@@ -8167,7 +8167,7 @@ end
 app:RegisterEvent("NEW_MOUNT_ADDED");
 end)();
 
--- Music Roll Lib
+-- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
 local fields = {
 	["key"] = function(t)
@@ -8195,9 +8195,9 @@ local fields = {
 	["description"] = function(t)
 		-- Check to make sure music rolls are unlocked for this character.
 		if not IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-			return L["MUSIC_ROLLS_DESC"] .. L["MUSIC_ROLLS_DESC_2"];
+			return L["MUSIC_ROLLS_AND_SELFIE_DESC"] .. L["MUSIC_ROLLS_AND_SELFIE_DESC_2"];
 		end
-		return L["MUSIC_ROLLS_DESC"];
+		return L["MUSIC_ROLLS_AND_SELFIE_DESC"];
 	end,
 	["filterID"] = function(t)
 		return 108;
@@ -8227,6 +8227,63 @@ app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
 end)();
+
+-- Music Rolls & Selfie Filter Lib: Selfie Filter
+
+(function()
+local SelfieCameraMkII = { { "i", 122674 } };
+local fields = {
+	["key"] = function(t)
+		return "questID";
+	end,
+	["text"] = function(t)
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		return "quest:" .. t.questID;
+	end,
+	["description"] = function(t)
+		if t.crs and #t.crs > 0 then
+			for i,id in ipairs(t.crs) do
+				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (NPCNameFromID[id] or "???")
+				.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
+			end
+		end
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleSelfieFilters;
+	end,
+	["collected"] = function(t)
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		if app.AccountWideSelfieFilters then
+			if GetDataSubMember("CollectedQuests", t.questID) then
+				return 2;
+			end
+			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+				return 2;
+			end
+		end
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["saved"] = function(t)
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+	end,
+	["lvl"] = function(t)
+		return 40;
+	end,
+};
+app.BaseSelfieFilter = app.BaseObjectFields(fields);
+app.CreateSelfieFilter = function(id, t)
+	t.providers = SelfieCameraMkII;
+	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
+end
+end)();
+
 
 -- NPC Lib
 (function()
@@ -8978,61 +9035,6 @@ app.BaseRecipe = {
 app.CreateRecipe = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
-
--- Selfie Filters Lib
-(function()
-local SelfieCameraMkII = { { "i", 122674 } };
-local fields = {
-	["key"] = function(t)
-		return "questID";
-	end,
-	["text"] = function(t)
-		return select(1, GetSpellLink(t.spellID));
-	end,
-	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
-	end,
-	["link"] = function(t)
-		return "quest:" .. t.questID;
-	end,
-	["description"] = function(t)
-		if t.crs and #t.crs > 0 then
-			for i,id in ipairs(t.crs) do
-				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (NPCNameFromID[id] or "???")
-				.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
-			end
-		end
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleSelfieFilters;
-	end,
-	["collected"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideSelfieFilters then
-			if GetDataSubMember("CollectedQuests", t.questID) then
-				return 2;
-			end
-			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-				return 2;
-			end
-		end
-	end,
-	["trackable"] = function(t)
-		return true;
-	end,
-	["saved"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-	end,
-	["lvl"] = function(t)
-		return 40;
-	end,
-};
-app.BaseSelfieFilter = app.BaseObjectFields(fields);
-app.CreateSelfieFilter = function(id, t)
-	t.providers = SelfieCameraMkII;
-	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
-end
-end)();
 
 -- Spell Lib
 app.BaseSpell = {
