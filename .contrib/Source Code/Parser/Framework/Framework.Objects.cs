@@ -897,14 +897,16 @@ namespace ATT
                 // Scan through for Header Localization. (we don't care about the actual name)
                 int npcID;
                 int index = 0;
-                var allLocalizedHeaders = new Dictionary<int, bool>();
+                var allLocalizedHeaders = new Dictionary<int, string>();
                 while ((index = content.IndexOf('[', index)) > -1)
                 {
                     ++index;
                     int endIndex = content.IndexOf(']', index);
                     if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out npcID))
                     {
-                        allLocalizedHeaders[npcID] = true;
+                        int dataStartIndex = content.IndexOf('=', endIndex) + 1;
+                        int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
+                        allLocalizedHeaders[npcID] = content.Substring(dataStartIndex, dataEndIndex - dataStartIndex).Trim();
                     }
                 }
 
@@ -938,7 +940,8 @@ namespace ATT
                         missingHeaderLocalization.Reverse();
                         foreach (int id in missingHeaderLocalization)
                         {
-                            Trace.WriteLine(id);
+                            Trace.Write(id);
+                            Trace.Write(',');
                         }
                     }
                 }
@@ -951,14 +954,16 @@ namespace ATT
                 // Scan through for Header Localization. (we don't care about the actual name)
                 int objectID;
                 index = 0;
-                var allLocalizedObjects = new Dictionary<int, bool>();
+                var allLocalizedObjects = new Dictionary<int, string>();
                 while ((index = content.IndexOf('[', index)) > -1)
                 {
                     ++index;
                     int endIndex = content.IndexOf(']', index);
                     if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out objectID))
                     {
-                        allLocalizedObjects[objectID] = true;
+                        int dataStartIndex = content.IndexOf('=', endIndex) + 1;
+                        int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
+                        allLocalizedObjects[objectID] = content.Substring(dataStartIndex, dataEndIndex - dataStartIndex).Trim();
                     }
                 }
 
@@ -988,10 +993,19 @@ namespace ATT
                         missingLocalization.Sort();
                         foreach (int id in missingLocalization)
                         {
-                            Trace.Write("\t\t[");
+                            allLocalizedObjects[id] = "\"\",";
                             Trace.Write(id);
-                            Trace.WriteLine("] = \"\",");
+                            Trace.Write(',');
                         }
+
+                        var allLocalizationIDs = allLocalizedObjects.Keys.ToList();
+                        allLocalizationIDs.Sort();
+                        var builder = new StringBuilder();
+                        foreach(var id in allLocalizationIDs)
+                        {
+                            builder.Append("\t\t[").Append(id).Append("] = ").Append(allLocalizedObjects[id]).AppendLine();
+                        }
+                        File.WriteAllText("localizedObjects.txt", builder.ToString());
                     }
                 }
             }
