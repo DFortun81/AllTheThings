@@ -828,7 +828,7 @@ _.Zones =
 					["coord"] = { 44.7, 62.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(56500, {	-- Storming the Battlefields
+				q(56499, {	-- Storming the Battlefields
 					["provider"] = { "n", 143560 },	-- Marshal Gabriel
 					["coord"] = { 56.2, 25.7, 1161 },
 					["races"] = ALLIANCE_ONLY,

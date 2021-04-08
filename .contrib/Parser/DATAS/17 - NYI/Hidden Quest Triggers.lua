@@ -3310,7 +3310,7 @@ _.HiddenQuestTriggers =
 		q(56595),	-- Oronu first kill
 		q(56594),	-- Prince Typhonus first kill
 		q(56593),	-- Prince Vortran first kill
-		q(56287),	-- Reefwalker first kill
+		-- q(56287),	-- Reefwalker first kill
 		q(56592),	-- Rockweed Shambler first kill
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
