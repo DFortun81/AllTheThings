@@ -121,7 +121,7 @@ def sort_objects(filename):
     print(line, end='') # this writes to file
 
 ObjectsInfo = namedtuple('ObjectsInfo', 'objects first_obj_line last_obj_line')
-Object = namedtuple('Object', 'object_id object_name line')
+Object = namedtuple('Object', 'id name line')
 
 def get_objects_info(filename):
   sort_objects(filename)
@@ -152,6 +152,7 @@ def get_objects_info(filename):
 
         if 'GetSpellInfo' in line: # skip GetSpellInfo lines
           ind += 1
+          objects.append(Object(int(obj_id), 'GetSpellInfo', line))
           continue
         obj_name = re.findall('"([^"]*)"', line)[0]
         if len(obj_name) == 0 and int(obj_id) < custom_objects_const: # new entry, need to get the name
@@ -168,12 +169,16 @@ def get_objects_info(filename):
   file.writelines(lines)
   file.close()
 
+  objects = [obj for obj in objects if obj.name != 'GetSpellInfo']
+
   return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
 def get_new_object_line(obj_id, obj_name, lang_code):
   print(f'New object {obj_id}: {obj_name}')
   localized_obj_name = get_localized_obj_name(obj_id, lang_code)
-  if lang_code == 'tw' or localized_obj_name == '': # no translation on Wowhead
+  if obj_name == '': # those weird objects that don't have page in enUS even
+    new_object = f'\t--TODO: [{obj_id}] = \"\",\t--\n'
+  elif lang_code == 'tw' or localized_obj_name == '': # no translation on Wowhead
     new_object = f'\t--TODO: [{obj_id}] = \"{obj_name}\",\t-- {obj_name}\n'
   else: # all good
     new_object = f'\t[{obj_id}] = \"{localized_obj_name}\",\t-- {obj_name}\n'
@@ -191,7 +196,7 @@ def sync_objects(objects, filename, lang_code):
     if localized_ind == len(localized_objects): # new objects in tail
       new_tail = True
       break
-    localized_obj_id = localized_objects[localized_ind].object_id
+    localized_obj_id = localized_objects[localized_ind].id
     if obj_id < localized_obj_id: # new object
       new_object = get_new_object_line(obj_id, obj_name, lang_code)
       localized_objects.insert(localized_ind, Object(obj_id, obj_name, new_object))
@@ -199,7 +204,7 @@ def sync_objects(objects, filename, lang_code):
       while obj_id > localized_obj_id:
         print(f'Deleted object {localized_obj_id}')
         del localized_objects[localized_ind]
-        localized_obj_id = localized_objects[localized_ind].object_id
+        localized_obj_id = localized_objects[localized_ind].id
     localized_ind += 1
 
   if new_tail:
