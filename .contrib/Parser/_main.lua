@@ -177,11 +177,14 @@ BLACKSMITHING = 164;
 COOKING = 185;
 ENCHANTING = 333;
 ENGINEERING = 202;
+GOBLIN_ENGINEERING = 20222;
+GNOMISH_ENGINEERING = 20219;
 FIRST_AID = 129;
 FISHING = 356;
 HERBALISM = 182;
 INSCRIPTION = 773;
 JEWELCRAFTING = 755;
+JUNKYARD_TINKERING = 2720;
 LEATHERWORKING = 165;
 MINING = 186;
 SKINNING = 393;
@@ -746,7 +749,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t));
+	local p = prof(skillID, t);-- bubbleDown({ ["requireSkill"] = skillID, }, t)); (don't do this...)
 	_.Professions = { p };
 	return p;
 end

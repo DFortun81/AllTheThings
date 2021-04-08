@@ -500,6 +500,7 @@ end
 		local cache = GetTempDataMember("PROFESSION_CACHE");
 		if not cache or invalidate then
 			cache = {};
+			cache[2720] = true;
 			SetTempDataMember("PROFESSION_CACHE", cache);
 			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 			for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
@@ -1242,32 +1243,18 @@ local function GetRelativeDifficulty(group, difficultyID)
 end
 local function GetRelativeMap(group, currentMapID)
 	if group then
-		if group.mapID then return group.mapID; end
-		if group.maps then
-			if contains(group.maps, currentMapID) then
-				return currentMapID;
-			else
-				return group.maps[1];
-			end
-		end
-		if group.parent then return GetRelativeMap(group.parent, currentMapID); end
+		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.parent, currentMapID);
 	end
 	return currentMapID;
 end
 local function GetRelativeField(group, field, value)
 	if group then
-		if group[field] then
-			if group[field] == value then
-				return true;
-			end
-		end
-		if group.parent then return GetRelativeField(group.parent, field, value); end
+		return group[field] == value or GetRelativeField(group.parent, field, value);
 	end
 end
 local function GetRelativeValue(group, field)
 	if group then
-		if group[field] then return group[field]; end
-		if group.parent then return GetRelativeValue(group.parent, field); end
+		return group[field] or GetRelativeValue(group.parent, field);
 	end
 end
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100
@@ -3944,8 +3931,8 @@ fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
 fieldCache["objectID"] = {};
+fieldCache["professionID"] = {};
 fieldCache["questID"] = {};
-fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
@@ -4022,11 +4009,14 @@ fieldConverters = {
 		-- WARNING: DEV ONLY END
 		CacheField(group, "objectID", value);
 	end,
+	["professionID"] = function(group, value)
+		CacheField(group, "professionID", value);
+	end,
 	["questID"] = function(group, value)
 		CacheField(group, "questID", value);
 	end,
 	["requireSkill"] = function(group, value)
-		CacheField(group, "requireSkill", value);
+		CacheField(group, "professionID", value);
 	end,
 	["s"] = function(group, value)
 		CacheField(group, "s", value);
@@ -8568,6 +8558,7 @@ end
 end)();
 
 -- Profession Lib
+(function()
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
@@ -8581,6 +8572,7 @@ app.SkillIDToSpellID = setmetatable({
 	[182] = 2366,	-- Herb Gathering
 	[773] = 45357,	-- Inscription
 	[755] = 25229,	-- Jewelcrafting
+	--[2720] = 2720,	-- Junkyard Tinkering [Does not have a spellID]
 	[165] = 2108,	-- Leatherworking
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
@@ -8599,32 +8591,56 @@ app.SkillIDToSpellID = setmetatable({
 	[10656] = 10656,	-- Dragonscale Leatherworking
 	[10658] = 10658,	-- Elemental Leatherworking
 	[10660] = 10660,	-- Tribal Leatherworking
-}, {__index = function(t,k) return(106727) end})
-app.BaseProfession = {
-	__index = function(t, key)
-		if key == "key" then
-			return "requireSkill";
-		elseif key == "text" then
-			if app.GetSpecializationBaseTradeSkill(t.requireSkill) then return select(1, GetSpellInfo(t.requireSkill)); end
-			if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
-			return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
-		elseif key == "icon" then
-			if app.GetSpecializationBaseTradeSkill(t.requireSkill) then return select(3, GetSpellInfo(t.requireSkill)); end
-			if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
-			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
-		elseif key == "spellID" then
-			return app.SkillIDToSpellID[t.requireSkill];
-		elseif key == "skillID" then
-			return t.requireSkill;
-		elseif key == "sort" then
-			if t.order then return t.order .. t.text end
-			return "51" .. t.text;
-		end
-	end
-};
-app.CreateProfession = function(id, t)
-	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
+}, {__index = function(t,k) end})
+app.SpellIDToSkillID = {};
+for skillID,spellID in pairs(app.SkillIDToSpellID) do
+	app.SpellIDToSkillID[spellID] = skillID;
 end
+app.SpecializationSpellIDs = setmetatable({
+	[20219] = 4036,	-- Gnomish Engineering
+	[20222] = 4036,	-- Goblin Engineering
+	[9788] = 2018,	-- Armorsmith
+	[9787] = 2018,	-- Weaponsmith
+	[17041] = 2018,	-- Master Axesmith
+	[17040] = 2018,	-- Master Hammersmith
+	[17039] = 2018,	-- Master Swordsmith
+	[10656] = 2108,	-- Dragonscale Leatherworking
+	[10658] = 2108,	-- Elemental Leatherworking
+	[10660] = 2108,	-- Tribal Leatherworking
+}, {__index = function(t,k) return k; end})
+
+local fields = {
+	["key"] = function(t)
+		return "professionID";
+	end,
+	["text"] = function(t)
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(1, GetSpellInfo(t.professionID)); end
+		if t.professionID == 129 then return select(1, GetSpellInfo(t.spellID)); end
+		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+	end,
+	["icon"] = function(t)
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
+		if t.professionID == 129 then return select(3, GetSpellInfo(t.spellID)); end
+		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+	end,
+	["spellID"] = function(t)
+		return app.SkillIDToSpellID[t.professionID];
+	end,
+	["skillID"] = function(t)
+		return t.professionID;
+	end,
+	["requireSkill"] = function(t)
+		return t.professionID;
+	end,
+	["sort"] = function(t)
+		return (t.order or "51") .. t.text;
+	end,
+};
+app.BaseProfession = app.BaseObjectFields(fields);
+app.CreateProfession = function(id, t)
+	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
+end
+end)();
 
 -- PVP Ranks
 app.BasePVPRank = {
@@ -9472,7 +9488,7 @@ function app.FilterItemClass(item)
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item.requireSkill)
+			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item);
 	end
@@ -9541,8 +9557,9 @@ function app.FilterItemClass_RequireBinding(item)
 		return true;
 	end
 end
-function app.FilterItemClass_RequiredSkill(requireSkill)
-	if requireSkill then
+function app.FilterItemClass_RequiredSkill(item)
+	local requireSkill = item.requireSkill;
+	if requireSkill and (not item.professionID or GetRelativeValue(item, "EnforceSkillRequirements")) then
 		return app.GetTradeSkillCache()[requireSkill];
 	else
 		return true;
@@ -11884,7 +11901,7 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0))); end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
@@ -12582,7 +12599,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
 			db.icon = app.asset("Category_Zones")
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12603,7 +12619,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
 			db.icon = app.asset("Category_GroupFinder")
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12615,7 +12630,6 @@ function app:GetDataCache()
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.icon = app.asset("Category_Achievements")
 			db.headerID = -4;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12627,7 +12641,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
 			db.icon = app.asset("Category_ExpansionFeatures");
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12636,7 +12649,6 @@ function app:GetDataCache()
 			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
 			db.icon = app.asset("Category_Event");
 			db.expanded = false;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12648,7 +12660,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			db.headerID = -3;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12681,7 +12692,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 			db.icon = app.asset("Category_PetBattles")
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12692,7 +12702,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
 			db.icon = app.asset("Category_PvP");
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12703,7 +12712,6 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 			db.icon = app.asset("Category_Crafting");
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -12714,7 +12722,8 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
 			db.icon = app.asset("Category_Professions");
-			db.collectible = false;
+			db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
+			db.EnforceSkillRequirements = true;
 			table.insert(g, db);
 		end
 
@@ -12726,7 +12735,6 @@ function app:GetDataCache()
 			db.description = "Naughty secrets...";
 			db.text = L["SECRETS_HEADER"];
 			db.icon = app.asset("Category_Secrets");
-			db.collectible = false;
 			table.insert(g, db);
 		end
 
@@ -13347,31 +13355,16 @@ end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
-		if type(field) == "function" then
-			for i,group in ipairs(groups) do
-				if field(group) and group.collectible then
+		for i,group in ipairs(groups) do
+			local v = group[field];
+			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				if not t then t = {}; end
+				tinsert(t, CloneData(group));
+			elseif group.g then
+				local response = app:BuildSearchResponse(group.g, field, value);
+				if response then
 					if not t then t = {}; end
-					tinsert(t, CloneData(group));
-				elseif group.g then
-					local response = app:BuildSearchResponse(group.g, field, value);
-					if response then
-						if not t then t = {}; end
-						tinsert(t, setmetatable({g=response}, { __index = group }));
-					end
-				end
-			end
-		else
-			for i,group in ipairs(groups) do
-				local v = group[field];
-				if v and v == value and group.collectible then
-					if not t then t = {}; end
-					tinsert(t, CloneData(group));
-				elseif group.g then
-					local response = app:BuildSearchResponse(group.g, field, value);
-					if response then
-						if not t then t = {}; end
-						tinsert(t, setmetatable({g=response}, { __index = group }));
-					end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
 				end
 			end
 		end
@@ -15390,11 +15383,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
 							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
-							response = app:BuildSearchResponse(app.Categories.Craftables, function(o)
-								if (o.headerID and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
-									return true;
-								end
-							end);
+							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 
 							self.data.indent = 0;
@@ -15490,7 +15479,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 
 					-- Check to see if ATT has information about this profession.
 					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+					if not tradeSkillID or not fieldCache["professionID"][tradeSkillID] then
 						self:SetVisible(false);
 						return false;
 					end
@@ -15504,7 +15493,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
 					-- Check to see if ATT has information about this profession.
 					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+					if not tradeSkillID or not fieldCache["professionID"][tradeSkillID] then
 						self:SetVisible(false);
 					else
 						self:SetVisible(true);
@@ -17709,38 +17698,6 @@ app.events.VARIABLES_LOADED = function()
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
 				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				needRefresh = true;
-			end
-		end
-
-		-- apply the skillIDs to NPCIDs
-		if not app.AppliedSkillIDToNPCIDs then
-			app.AppliedSkillIDToNPCIDs = true;
-			local skillIDMap = {
-				[-178] = 20222,	-- Goblin Engineering
-				[-179] = 20219,	-- Gnomish Engineering
-				[-180] = 171,	-- Alchemy
-				[-181] = 164,	-- Blacksmithing
-				[-182] = 333,	-- Enchanting
-				[-183] = 202,	-- Engineering
-				[-184] = 182,	-- Herbalism
-				[-185] = 773,	-- Inscription
-				[-186] = 755,	-- Jewelcrafting
-				[-187] = 165,	-- Leatherworking
-				[-188] = 186,	-- Mining
-				[-189] = 393,	-- Skinning
-				[-190] = 197,	-- Tailoring
-				[-191] = 794,	-- Archaeology
-				[-192] = 185,	-- Cooking
-				[-193] = 129,	-- First Aid
-				[-194] = 356,	-- Fishing
-			};
-			for headerID,skillID in pairs(skillIDMap) do
-				local searchResults = app.SearchForField("headerID", headerID);
-				if searchResults then
-					for i,o in ipairs(searchResults) do
-						o.skillID = skillID;
-					end
-				end
 			end
 		end
 

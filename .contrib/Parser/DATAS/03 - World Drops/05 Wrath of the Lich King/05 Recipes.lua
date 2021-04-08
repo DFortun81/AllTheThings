@@ -7,10 +7,10 @@ _.WorldDrops =
 	tier(3, {	-- Wrath of the Lich King
 		f(200, {	-- Recipes
 			un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
-			n(-180, {	-- Alchemy
+			prof(ALCHEMY, {
 				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
-			n(-182, {	-- Enchanting
+			prof(ENCHANTING, {
 				i(37341, {	-- Formula: Enchant Boots - Superior Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
@@ -33,12 +33,12 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 			}),
-			n(-185, { 	-- Inscription
+			prof(INSCRIPTION, {
 				i(45912, {	-- Book of Glyph Mastery
 					["collectible"] = false,
 				}),
 			}),
-			n(-186, { 	-- Jewelcrafting
+			prof(JEWELCRAFTING, {
 				i(41818, {	-- Design: Accurate Twilight Opal
 					["crs"] = {
 						28851,	-- Enraged Mammoth
@@ -66,10 +66,7 @@ _.WorldDrops =
 				i(41784),	-- Design: Sovereign Twilight Opal
 				i(41787),	-- Design: Thundering Skyflare Diamond
 			}),
-			n(-350, {	-- Spell Book
-				i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
-			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(43876),	-- A Guide to Northern Cloth Scavenging
 				i(42173),	-- Pattern: Blue Lumberjack Shirt
 				i(42176),	-- Pattern: Blue Workman's Shirt

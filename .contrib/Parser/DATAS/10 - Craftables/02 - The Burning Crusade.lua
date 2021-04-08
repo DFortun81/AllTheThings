@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(2, {	-- The Burning Crusade
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(13503),	-- Alchemist Stone
 				i(35751),	-- Assassin's Alchemist Stone
@@ -15,7 +15,7 @@ _.Craftables =
 				i(31080),	-- Mercurial Stone
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(23504),	-- Adamantite Dagger
 				i(23555),	-- Dirge
@@ -343,7 +343,7 @@ _.Craftables =
 				i(32402),	-- Shadesteel Sabots
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(103, {	-- Illusions
 				i(138789, {	-- Tome of Illusions: Outland
 					ill(5390),	-- Battlemaster
@@ -352,7 +352,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(34060),	-- Flying Machine*
 				i(34061),	-- Turbo-Charged Flying Machine*
@@ -415,7 +415,7 @@ _.Craftables =
 				i(23774),	-- Fel Iron Toolbox
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			n(-491, {	-- Tarot Cards
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings
@@ -462,7 +462,7 @@ _.Craftables =
 				i(43666),	-- Hellfire Tome
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			n(-320, {		-- Head
 				i(24123),	-- Circlet of Arcane Might
 				i(24122),	-- Coronet of Verdant Flame
@@ -522,7 +522,7 @@ _.Craftables =
 				i(24127),	-- Figurine - Talasite Owl
 			}),
 		}),
-		n(-187, { 	-- Leatherworking
+		prof(LEATHERWORKING, {
 			filter(113, {	-- Bags
 				i(34490),	-- Bag of Many Hides
 				i(34099, {	-- Knothide Ammo Pouch
@@ -735,7 +735,7 @@ _.Craftables =
 				i(29509),	-- Windstrike Gloves
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(24270),	-- Bag of Jewels
 				i(22249),	-- Big Bag of Enchantment

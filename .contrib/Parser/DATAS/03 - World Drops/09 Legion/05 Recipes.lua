@@ -6,11 +6,11 @@ _.WorldDrops =
 {
 	tier(7, {	-- Legion
 		f(200, {	-- Recipes
-			n(-180, {	-- Alchemy
+			prof(ALCHEMY, {
 				i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)
 				i(127925),	-- Recipe: Infernal Alchemist Stone (Rank 2)
 			}),
-			n(-181, {	-- Blacksmithing
+			prof(BLACKSMITHING, {
 				i(136709, {	-- Recipe: Demonsteel Stirrups
 					["crs"] = {
 						104815,	-- Jojo the Palestrider
@@ -22,7 +22,7 @@ _.WorldDrops =
 					},
 				}),
 			}),
-			n(-182, {	-- Enchanting
+			prof(ENCHANTING, {
 				i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 3)
 				i(128610),	-- Formula: Enchant Neck - Mark of the Claw (Rank 3)
 				i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
@@ -33,7 +33,7 @@ _.WorldDrops =
 				}),
 				i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 3)
 			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(142077, {	-- Pattern: Imbued Silkweave Bag (Rank 2)
 					["description"] = "Drops from ghosts in any Broken Isles zone."
 				}),

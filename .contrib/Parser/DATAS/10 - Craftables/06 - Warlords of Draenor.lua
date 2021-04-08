@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(6, {	-- Warlords of Draneor
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(109262),	-- Draenic Philosopher's Stone
 				i(122601),	-- Stone of Wind
@@ -20,7 +20,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			-- Cleaned up by Crieve, 2019-07-03. Do NOT touch this. The previous version was an abomination.
 			i(119328),	-- Soul of the Forge
 			i(116426),	-- Smoldering Helm
@@ -46,7 +46,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(103, {	-- Illusions
 				i(138795, {	-- Tome of Illusions: Draenor
 					ill(5334),	-- Mark of the Frostwolf
@@ -54,7 +54,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			filter(101, {	-- Pets
 				i(112057),	-- Lifelike Mechanical Frostboar*
 				i(111402),	-- Mechanical Axebeak*
@@ -103,7 +103,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			n(-491, {	-- Tarot Cards
 				sp(163294, {	-- Darkmoon Card of Draenor
 					i(112303, {	-- Iron Deck
@@ -139,7 +139,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(51, {	-- Neck
 				i(115990),					-- Glowing Iron Choker
 				WOD_CRAFTED_ITEM(115799),	-- Glowing Taladite Pendant
@@ -160,7 +160,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 			}),
 		}),
-		n(-187, { 	-- Leatherworking
+		prof(LEATHERWORKING, {
 			filter(113, {	-- Bags
 				i(116261),	-- Burnished Inscription Bag
 				i(116259),	-- Burnished Leather Bag
@@ -204,7 +204,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(114821),	-- Hexweave Bag
 			}),

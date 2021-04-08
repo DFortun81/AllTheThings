@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(5, {	-- Mists of Pandaria
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 --[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
 			n(-37, {	-- Discovery
 				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
@@ -49,7 +49,7 @@ _.Craftables =
 				i(75274),	-- Zen Alchemist Stone
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(82967),	-- Ghost Shard
 				i(82974),	-- Masterwork Ghost Shard
@@ -248,7 +248,7 @@ _.Craftables =
 				i(82925),	-- Masterwork Spiritguard Boots
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(103, {	-- Illusions
 				i(138793, {	-- Tome of Illusions: Pandaria
 					ill(4441),	-- Windsong
@@ -261,7 +261,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(87250),	-- Depleted-Kyparium Rocket*
 				i(87251),	-- Geosynchronous World Spinner*
@@ -323,7 +323,7 @@ _.Craftables =
 				i(89992),    -- Schematic: Serpent's Heart Firework
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			n(-491, {	-- Tarot Cards
 				sp(111830, {	-- Darkmoon Card of Mists
 					i(79299, {["f"] = 55}),    -- Ace of Crane
@@ -403,7 +403,7 @@ _.Craftables =
 				i(79339),	-- Rain Poppy Staff
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(100, {	-- Mount
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
@@ -438,7 +438,7 @@ _.Craftables =
 				i(90471),	-- Design: Sapphire Cub
 			}),
 		}),
-		n(-187, { 	-- Leatherworking
+		prof(LEATHERWORKING, {
 			n(-322, { 	-- Cloak
 				i(85851),	-- Misthide Drape
 				i(85852),	-- Quick Strike Cloak
@@ -693,7 +693,7 @@ _.Craftables =
 				i(85848),	-- Stormscale Shoulders
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(101, { 	-- Pet Battle
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth

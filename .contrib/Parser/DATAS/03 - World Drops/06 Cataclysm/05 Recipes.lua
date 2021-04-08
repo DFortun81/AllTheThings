@@ -6,12 +6,12 @@ _.WorldDrops =
 {
 	tier(4, {	-- Cataclysm
 		f(200, {	-- Recipes
-			n(-182, {	-- Enchanting
+			prof(ENCHANTING, {
 				i(68787),	-- Formula: Enchant Bracer - Agility
 				i(68788),	-- Formula: Enchant Bracer - Major Strength
 				i(68789),	-- Formula: Enchant Bracer - Mighty Intellect
 			}),
-			n(-186, { 	-- Jewelcrafting
+			prof(JEWELCRAFTING, {
 				i(68781),	-- Design: Agile Shadowspirit Diamond
 				i(68783),	-- Design: Burning Shadowspirit Diamond
 				i(52372),	-- Design: Deadly Hessonite
@@ -47,7 +47,7 @@ _.WorldDrops =
 				i(52365),	-- Design: Subtle Alicite
 				i(52388),	-- Design: Zen Jasper
 			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(67541),	-- Pattern: High Society Top Hat (drops from rare elites)
 			}),
 		}),

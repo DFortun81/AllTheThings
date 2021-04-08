@@ -12,7 +12,7 @@ _.WorldEvents =
 			p(1062, {	-- Darkmoon Glowfly
 				["crs"] = { 67329 },	-- Darkmoon Glowfly
 			}),
-			n(-194, {	-- Fishing
+			prof(FISHING, {
 				i(73953),	-- Sea Pony
 			}),
 			q(36471, {	-- A New Darkmoon Challenger!

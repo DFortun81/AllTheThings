@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
-		n(-186, {	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(28, {	-- Staves
 				i(159939),	-- Honorable Combatant's Staff of Intuition
 				i(153639),	-- Laribole Staff of Alacrity

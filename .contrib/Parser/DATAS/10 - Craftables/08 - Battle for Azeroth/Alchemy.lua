@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			filter(101, {	-- Battle Pets
 				i(160324, {	-- Grumbling Sac
 					i(163859),	-- Baby Crawg

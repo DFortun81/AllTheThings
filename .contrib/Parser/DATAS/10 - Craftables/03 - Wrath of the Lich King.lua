@@ -5,14 +5,14 @@
 _.Craftables =
 {
 	tier(3, {	-- Wrath of the Lich King
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
 				i(44322),	-- Mercurial Alchemist Stone
 				i(44324),	-- Mighty Alchemist Stone
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(41183),	-- Saronite Ambusher
 				i(41184),	-- Saronite Shiv
@@ -184,7 +184,7 @@ _.Craftables =
 				i(45561),	-- Treads of Destiny
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(103, {	-- Illusions
 				i(138790, {	-- Tome of Illusions: Northrend
 					ill(5391),	-- Berserking
@@ -193,7 +193,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(41508),	-- Mechano-Hog*
 				i(44413),	-- Mekgineer's Chopper*
@@ -232,7 +232,7 @@ _.Craftables =
 				i(23775),	-- Titanium Toolbox*
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			filter(111, {	-- Glyphs
 				i(40919, {	-- Glyph of the Orca
 					["questID"] = 62673,
@@ -298,7 +298,7 @@ _.Craftables =
 				i(45849),	-- Twilight Tome
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(51, {	-- Neck
 				i(42339),	-- Blood Sun Necklace
 				i(43245),	-- Crystal Chalcedony Amulet
@@ -339,7 +339,7 @@ _.Craftables =
 				i(42395),	-- Figurine - Twilight Serpent
 			}),
 		}),
-		n(-187, { 	-- Leatherworking
+		prof(LEATHERWORKING, {
 			filter(113, {	-- Bags
 				i(38347),			-- Mammoth Mining Bag
 				i(38399),			-- Trapper's Traveling Pack
@@ -493,7 +493,7 @@ _.Craftables =
 				i(43130),	-- Virulent Spaulders
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(41597),	-- Abyssal Bag
 				i(45773),	-- Emerald Bag

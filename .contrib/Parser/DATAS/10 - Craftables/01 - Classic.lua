@@ -5,12 +5,12 @@
 _.Craftables =
 {
 	tier(1, {	-- Classic
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			filter(53, {	-- Trinket
 				i(9149),	-- Philosopher's Stone
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(3848),	-- Big Bronze Knife
 				i(19166),	-- Black Amnesty
@@ -341,7 +341,7 @@ _.Craftables =
 				i(12409),	-- Thorium Boots
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(103, {	-- Illusions
 				i(138787, {	-- Tome of Illusions: Azeroth
 					ill(803),	-- Fiery Weapon
@@ -359,7 +359,7 @@ _.Craftables =
 				i(11811),	-- Smoking Heart of the Mountain
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			filter(200, {	-- Recipes
 				i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 					["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
@@ -451,7 +451,7 @@ _.Craftables =
 				i(18639),	-- Ultra-Flash Shadow Reflector*
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			filter(111, {	-- Glyphs
 				i(89868, {	-- Glyph of the Cheetah
 					["questID"] = 62677,
@@ -662,7 +662,7 @@ _.Craftables =
 				i(43654),	-- Tome of the Dawn
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(34, {	-- Fist Weapons
 				i(20954),	-- Heavy Iron Knuckles
 			}),
@@ -739,7 +739,7 @@ _.Craftables =
 				i(21760),	-- Figurine - Truesilver Crab
 			}),
 		}),
-		n(-187, {	-- Leatherworking
+		prof(LEATHERWORKING, {
 			filter(113, {	-- Bags
 				un(REMOVED_FROM_GAME, i(7372)),	-- Heavy Leather Ammo Pouch
 				un(REMOVED_FROM_GAME, i(7371)),	-- Heavy Quiver
@@ -991,7 +991,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(5765),	-- Black Silk Pack
 				i(14156),	-- Bottomless Bag
