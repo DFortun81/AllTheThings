@@ -547,8 +547,15 @@ exclude = function(data, t)
 	local t2 = {};
 	if type(data) == "table" then
 		-- Group of Values (You shouldn't be excluding a complex object if that's what you're trying to do)
-		for i,o in ipairs(t) do
-			if not contains(data, o) then
+		if #data > 0 then
+			for i,o in ipairs(t) do
+				if not contains(data, o) then
+					table.insert(t2, o);
+				end
+			end
+		else
+			-- Just create a clone
+			for i,o in ipairs(t) do
 				table.insert(t2, o);
 			end
 		end
@@ -561,6 +568,9 @@ exclude = function(data, t)
 		end
 	end
 	return t2;
+end
+excludeMany = function(t, ...)
+	return exclude({...}, t);
 end
 merge = function(...)
 	local t = {};
