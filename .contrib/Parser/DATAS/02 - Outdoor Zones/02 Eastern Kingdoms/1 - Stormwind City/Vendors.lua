@@ -294,7 +294,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16397)),	-- Knight-Lieutenant's Dragonhide Gloves
 						un(REMOVED_FROM_GAME, i(16423)),	-- Lieutenant Commander's Dragonhide Epaulets
 						un(REMOVED_FROM_GAME, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
-						
 						un(REMOVED_FROM_GAME, i(31640)),	-- Grand Marshal's Ringmail Chestguard
 						un(REMOVED_FROM_GAME, i(31641)),	-- Grand Marshal's Ringmail Gloves
 						un(REMOVED_FROM_GAME, i(31642)),	-- Grand Marshal's Ringmail Headpiece
