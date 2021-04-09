@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				q(27372, {	-- A Gift For Fiona
-					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+					["sourceQuests"] = { 27371 },	-- What I Do Best
 					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 8.9, 66.5, 23 },
 					["g"] = {
@@ -343,7 +343,7 @@ _.Zones =
 				q(27466, {	-- Argent Call: Northdale
 					["sourceQuests"] = { 27465 },	-- Argent Call: The Noxious Glade
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
-					["coord"] = { 42.5, 91.2, 23 },
+					["coord"] = { 61.6, 43.24, 23 },
 				}),
 				q(27465, {	-- Argent Call: The Noxious Glade
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
@@ -657,7 +657,7 @@ _.Zones =
 				}),
 				q(27526, {	-- Gidwin's Fate Revealed
 					["sourceQuests"] = {
-						27525,	-- Guardians of Stratholme
+						27524,	-- Blind Fury
 						27551,	-- The Baroness' Missive
 					},
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
