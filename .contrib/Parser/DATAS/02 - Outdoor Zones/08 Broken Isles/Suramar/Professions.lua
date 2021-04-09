@@ -249,9 +249,7 @@ _.Zones =
 						},
 					}),
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
-					{	-- Schematic: Reaves Module: Wormhole Generator Mode
-						["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
-					},
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
 					q(40040, {	-- Felwort Sample
