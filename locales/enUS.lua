@@ -2551,6 +2551,7 @@ app.L = {
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
+		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	};
 
 	["OBJECT_ID_ICONS"] = {
