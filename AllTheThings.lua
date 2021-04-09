@@ -4240,37 +4240,25 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
-				-- print("sourceID",sourceID)
-				if sourceID then
-					_ = SearchForField("s", sourceID);
-					-- print("direct s",_ and #_)
-					-- if _ then return _; end
-					return _;
-				end
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				_ = sourceID and SearchForField("s", sourceID);
+				-- print("sourceID search",sourceID,_ and #_)
 
-				-- Search for the item ID.
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				-- print("link-search",modItemID,itemID)
-				-- accuracy of finding the correct ATT entry:
-				-- TODO: since SourceID consolidates the accuracy of ItemID + ModID/BonusID, the search results will also need to
-				-- pull in ItemID based search results which are NOT the same ItemID as the SourceID
-				-- ItemID + modID
-				-- ItemID
-				-- SourceID
-				_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
+
+				if not _ then
+					-- Search for the item ID since it was not found using sourceID
+					-- local iSearch = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
+					-- print("item search",iSearch and #iSearch);
+					_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID) or {};
+				end
+
+				-- include anything which this item is used as a cost for
+				-- local costSearch = SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
+				-- print("cost search",costSearch and #costSearch);
+				MergeObjects(_, SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID) or {});
 				-- print("found",_ and #_)
-				-- if the specific item was not found for whatever reason (modID which changes stats but not appearance [M+, PvP, etc.])
-				-- if not _ then
-				-- 	local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
-				-- 	-- print("sourceID",sourceID)
-				-- 	if sourceID then
-				-- 		_ = SearchForField("s", sourceID);
-				-- 		-- print("direct s",_ and #_)
-				-- 		-- if _ then return _; end
-				-- 		-- return _;
-				-- 	end
-				-- end
 				return _;
 			end
 		end
