@@ -5190,6 +5190,8 @@ local function AttachTooltipRawSearchResults(self, group)
 				end
 				rightSide:Show();
 			end
+		elseif group.encounterID then
+			self:Show();
 		end
 
 		self.AttachComplete = not group.working;
