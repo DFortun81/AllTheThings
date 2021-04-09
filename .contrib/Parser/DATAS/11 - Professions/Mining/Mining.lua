@@ -254,6 +254,7 @@ profession(MINING, {
 			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 		}),
 		q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 39817,	-- The Brimstone's Secret
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["maps"] = { 627 },	-- Dalaran
@@ -262,6 +263,7 @@ profession(MINING, {
 			},
 		}),
 		q(38807, {	-- Infernal Brimstone Analysis
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 38806,	-- Infernal Brimstone Sample
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["maps"] = { 627 },	-- Dalaran
@@ -270,11 +272,13 @@ profession(MINING, {
 			},
 		}),
 		q(39790, {	-- Infernal Brimstone Theory
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 38807,	-- Infernal Brimstone Analysis
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["maps"] = { 627 },	-- Dalaran
 		}),
 		q(39817, {	-- The Brimstone's Secret
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 39763,	-- For Whom the Fel Tolls
 			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 			["maps"] = { 627 },	-- Dalaran
@@ -285,6 +289,7 @@ profession(MINING, {
 				38796,	-- Felslate Seam Sample
 				38797	-- Living Felslate Sample
 			},
+			["requireSkill"] = MINING,
 			["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["maps"] = { 627 },	-- Dalaran
@@ -295,6 +300,7 @@ profession(MINING, {
 				38784,	-- Leystone Seam Sample
 				38785	-- Living Leystone Sample
 			},
+			["requireSkill"] = MINING,
 			["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["maps"] = { 627 },	-- Dalaran
