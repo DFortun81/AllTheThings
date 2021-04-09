@@ -62,17 +62,19 @@ profession(MINING, {
 					},
 				}),
 				q(38800, {	-- Rin'thissa's Eye
-					["provider"] = { "i", 124499 },	-- Ore-Bound Eye
 					["sourceQuests"] = {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38795,	-- Felslate Deposit Sample
 					},
+					["requireSkill"] = MINING,
+					["provider"] = { "i", 124499 },	-- Ore-Bound Eye
 					["maps"] = { 680 },	-- Suramar
 					["g"] = {
 						recipe(184493),	-- Felslate Deposit [Rank 2]
 					},
 				}),
 				q(38803, {	-- Rin'thissa
+					["requireSkill"] = MINING,
 					["sourceQuest"] = 38800,	-- Rin'thissa's Eye
 					["provider"] = { "n", 93893 },	-- Rin'thissa
 					["maps"] = { 680 },	-- Suramar
@@ -96,12 +98,14 @@ profession(MINING, {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38796,	-- Felslate Seam Sample
 					},
+					["requireSkill"] = MINING,
 					["maps"] = { 680 },	-- Suramar
 					["g"] = {
 						recipe(184497),	-- Felslate Seam [Rank 2]
 					},
 				}),
 				q(38804, {	-- Lyrelle
+					["requireSkill"] = MINING,
 					["sourceQuest"] = 38801,	-- Lyrelle's Right Arm
 					["provider"] = { "n", 93776 },	-- Lyrelle
 					["maps"] = { 680 },	-- Suramar
@@ -125,12 +129,14 @@ profession(MINING, {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38797,	-- Living Felslate Sample
 					},
+					["requireSkill"] = MINING,
 					["maps"] = { 680 },	-- Suramar
 					["g"] = {
 						recipe(184501),	-- Living Felslate [Rank 2]
 					},
 				}),
 				q(38805, {	-- Ondri
+					["requireSkill"] = MINING,
 					["sourceQuest"] = 38802,	-- Ondri's Still-Beating Heart
 					["provider"] = { "n", 93777 },	-- Ondri
 					["maps"] = { 680 },	-- Suramar
@@ -228,11 +234,13 @@ profession(MINING, {
 	}),
 	n(QUESTS, {
 		q(38798, {	-- A Shred of Your Humanity
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 38901,	-- The Felsmiths
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 			["maps"] = { 680 },	-- Suramar
 		}),
 		q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
+			["requireSkill"] = MINING,
 			["sourceQuest"] = 38798,	-- A Shred of Your Humanity
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 			["maps"] = { 680 },	-- Suramar
