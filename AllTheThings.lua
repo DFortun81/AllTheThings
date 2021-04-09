@@ -3188,15 +3188,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local uniques = {};
 			for i,o in ipairs(group) do
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if not contains(uniques, tostring(o)) then
-					tinsert(uniques, tostring(o));
-					-- tinsert(temp_orig,o);
-					-- if o.g then
-					-- 	for k,v in ipairs(o.g) do
-					-- 		tinsert(temp_orig,v);
-					-- 	end
-					-- end
-					-- print("Clone",o,"=>",c);
+				if not uniques[tostring(o)] then
+					uniques[tostring(o)] = true;
 					tinsert(cloned, CloneData(o));
 				end
 			end
@@ -3342,7 +3335,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("achieve nocrits",#group.g)
 			end
 
-
+			
 			-- local preMergeTotal = #group;
 			-- -- First add only groups which meet the current filters
 			-- -- print("-final group-",#group,paramA,paramB)
@@ -3575,7 +3568,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 
 		-- If the item is a recipe, then show which characters know this recipe.
-		if group.collectible and group.spellID and group.filterID ~= 100 and app.Settings:GetTooltipSetting("KnownBy") then
+		if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
 			for key,value in pairs(recipes) do
 				if value[group.spellID] then
@@ -4105,8 +4098,8 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
-					CacheField(group, "itemIDAsCost", v[2]);
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
+						CacheField(group, "itemIDAsCost", v[2]);
 						rawget(fieldConverters, "itemID")(group, v[2], true);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
@@ -7620,7 +7613,12 @@ local CollectedAsCostPerItemID = setmetatable({}, { __index = function(t, id)
 		local collected, count = true, 0;
 		for _,ref in pairs(results) do
 			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.collectible then
+				if ref.total and ref.total > 0 then
+					count = count + 1;
+					if ref.progress < ref.total then
+						collected = false;
+					end
+				elseif ref.collectible then
 					count = count + 1;
 					if not ref.collected then
 						collected = false;
@@ -7642,7 +7640,7 @@ local CollectibleAsCostPerItemID = setmetatable({}, { __index = function(t, id)
 	if results and #results > 0 then
 		for _,ref in pairs(results) do
 			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.collectible then
+				if ref.collectible or (ref.total and ref.total > 0) then
 					return true;
 				end
 			end
@@ -8267,7 +8265,6 @@ app.CreateSelfieFilter = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 end)();
-
 
 -- NPC Lib
 (function()
