@@ -27,6 +27,8 @@ def get_localized_obj_name(obj_id, lang_code='en'):
   if heading.text.startswith('['):
     print(f"No localization for {obj_id}: {heading.text}")
     return ''
+  if '"' in heading.text:
+    return heading.text.replace('"', '\\"')
   return heading.text
 
 def get_todo_lines_and_og_names(lines):
