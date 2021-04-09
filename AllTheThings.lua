@@ -8209,28 +8209,24 @@ local fields = {
 		return 40;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleMusicRolls;
+		return app.CollectibleMusicRollsAndSelfieFilters;
 	end,
 	["trackable"] = function(t)
-		return app.CollectibleMusicRolls;
+		return true;
 	end,
 	["collected"] = function(t)
-		return t.saved;
+		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
 	end,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRolls and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
 	end,
 };
 app.BaseMusicRoll = app.BaseObjectFields(fields);
 app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
-end)();
 
--- Music Rolls & Selfie Filter Lib: Selfie Filter
-
-(function()
 local SelfieCameraMkII = { { "i", 122674 } };
 local fields = {
 	["key"] = function(t)
@@ -8254,11 +8250,11 @@ local fields = {
 		end
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleSelfieFilters;
+		return app.CollectibleMusicRollsAndSelfieFilters;
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideSelfieFilters then
+		if app.AccountWideMusicRollsSelfieFilters then
 			if GetDataSubMember("CollectedQuests", t.questID) then
 				return 2;
 			end

@@ -319,18 +319,17 @@ local L = app.L;
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE = "战网范围";
-		L.ACCOUNT_WIDE_1_TOOLTIP = "成就追踪通常是在整个战网范围内进行的, 但有一些特定职业和种族的专属成就, 你无法在你的主账号上获得.";
-		L.ACCOUNT_WIDE_2_TOOLTIP = "幻象外观仅在战网范围内进行追踪, 无法禁用.";
-		L.ACCOUNT_WIDE_3_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收集和使用, 但如果你只关心收集你的主角色那么你可能更喜欢在整个战网上追踪它们.";
-		L.ACCOUNT_WIDE_5_TOOLTIP = "飞行路径追踪对每个角色都非常有用, 但是你真的想要在所有50个角色上收集它们吗?";
-		L.ACCOUNT_WIDE_6_TOOLTIP = "随从通常是每个角色的, 但是你真的想以每周1个的速度在一个角色上收集243个随从吗?\n\n我想不行, 好好先生.";
-		L.ACCOUNT_WIDE_7_TOOLTIP = "追踪战网范围的传家宝.";
-		L.ACCOUNT_WIDE_10_TOOLTIP = "在暴雪的数据库中, 乐谱通常不会被战网范围追踪, 但我们可以这样做.\n\n注意: 你只能使用你在当前角色上收集的点唱机玩具播放音乐.";
-		L.ACCOUNT_WIDE_11_TOOLTIP = "任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
-		L.ACCOUNT_WIDE_12_TOOLTIP = "在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
-		L.ACCOUNT_WIDE_13_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
-		L.ACCOUNT_WIDE_14_TOOLTIP = "在暴雪的数据库中, 自拍滤镜通常不会被战网范围追踪, 但我们可以这样做.\n\n注意: 你必须使用S.E.L.F.I.E相机玩具拍摄自拍照!";
-		L.ACCOUNT_WIDE_15_TOOLTIP = "大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
+		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个战网范围内进行的, 但有一些特定职业和种族的专属成就, 你无法在你的主账号上获得.";
+		L.ACCOUNT_WIDE_TRANSMOG_TOOLTIP = "幻象外观仅在战网范围内进行追踪, 无法禁用.";
+		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收集和使用, 但如果你只关心收集你的主角色那么你可能更喜欢在整个战网上追踪它们.";
+		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飞行路径追踪对每个角色都非常有用, 但是你真的想要在所有50个角色上收集它们吗?";
+		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "随从通常是每个角色的, 但是你真的想以每周1个的速度在一个角色上收集243个随从吗?\n\n我想不行, 好好先生.";
+		L.ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP = "追踪战网范围的传家宝.";
+		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "在Blizzard的数据库中，通常不会在整个帐户范围内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：您只能使用自动点唱机玩具播放音乐劳斯莱斯或使用您在当前角色上收集的S.E.L.F.I.E相机玩具捕捉自拍。";
+		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
+		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
+		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
+		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
 
 	-- Filters tab
 		L.FILTERS_TAB = "过滤";

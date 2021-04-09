@@ -91,11 +91,10 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
-		["AccountWide:MusicRolls"] = true,
+		["AccountWide:MusicRollsAndSelfieFilters"] = true,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
-		["AccountWide:SelfieFilters"] = true,
 		["AccountWide:Titles"] = true,
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
@@ -108,12 +107,11 @@ local GeneralSettingsBase = {
 		["Thing:HeirloomUpgrades"] = true,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
-		["Thing:MusicRolls"] = true,
+		["Thing:MusicRollsAndSelfieFilters"] = true,
 		["Thing:Quests"] = false,
 		["Thing:QuestBreadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
-		["Thing:SelfieFilters"] = true,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = true,
@@ -586,7 +584,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideFollowers = true;
 		app.AccountWideIllusions = true;
 		app.AccountWideMounts = true;
-		app.AccountWideMusicRolls = true;
+		app.AccountWideMusicRollsAndSelfieFilters = true;
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
@@ -604,12 +602,11 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleHeirloomUpgrades = true;
 		app.CollectibleIllusions = true;
 		app.CollectibleMounts = true;
-		app.CollectibleMusicRolls = true;
+		app.CollectibleMusicRollsAndSelfieFilters = true;
 		app.CollectibleQuests = true;
 		app.CollectibleBreadcrumbs = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
-		app.CollectibleSelfieFilters = true;
 		app.CollectibleTitles = true;
 		app.CollectibleToys = true;
 		app.CollectibleTransmog = true;
@@ -642,11 +639,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideFollowers = self:Get("AccountWide:Followers");
 		app.AccountWideIllusions = self:Get("AccountWide:Illusions");
 		app.AccountWideMounts = self:Get("AccountWide:Mounts");
-		app.AccountWideMusicRolls = self:Get("AccountWide:MusicRolls");
+		app.AccountWideMusicRollsAndSelfieFilters = self:Get("AccountWide:MusicRollsAndSelfieFilters");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
-		app.AccountWideSelfieFilters = self:Get("AccountWide:SelfieFilters");
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
@@ -660,12 +656,11 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
 		app.CollectibleMounts = self:Get("Thing:Mounts");
-		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
+		app.CollectibleMusicRollsAndSelfieFilters = self:Get("Thing:MusicRollsAndSelfieFilters");
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
-		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
 		app.CollectibleTitles = self:Get("Thing:Titles");
 		app.CollectibleToys = self:Get("Thing:Toys");
 		app.CollectibleTransmog = self:Get("Thing:Transmog");
@@ -1013,7 +1008,7 @@ function(self)
 	settings:Set("AccountWide:Achievements", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_1_TOOLTIP"]);
+AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"]);
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
 
 local TransmogCheckBox = settings:CreateCheckBox(L["TMOG_CHECKBOX"],
@@ -1046,7 +1041,7 @@ function(self)
 	self:SetAlpha(0.2);
 end,
 function(self)
-	print(L["ACCOUNT_WIDE_2_TOOLTIP"]);
+	print(L["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"]);
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
 
@@ -1083,7 +1078,7 @@ function(self)
 	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_3_TOOLTIP"]);
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
 AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
 
 local BattlePetsCheckBox = settings:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
@@ -1146,7 +1141,7 @@ function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FlightPathsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_5_TOOLTIP"]);
+FlightPathsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"]);
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
 local FollowersCheckBox = settings:CreateCheckBox(L["FOLLOWERS_CHECKBOX"],
@@ -1182,7 +1177,7 @@ function(self)
 	settings:Set("AccountWide:Followers", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_6_TOOLTIP"]);
+FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"]);
 FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
 
 local HeirloomsCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
@@ -1229,7 +1224,7 @@ function(self)
 	self:SetAlpha(0.2);
 end,
 nil);
-HeirloomsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_7_TOOLTIP"]);
+HeirloomsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP"]);
 HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
 
 local IllusionsCheckBox = settings:CreateCheckBox(L["ILLUSIONS_CHECKBOX"],
@@ -1288,9 +1283,9 @@ function(self)
 end);
 MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
 
-local MusicRollsCheckBox = settings:CreateCheckBox(L["MUSIC_ROLLS_CHECKBOX"],
+local MusicRollsAndSelfieFiltersCheckBox = settings:CreateCheckBox(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Thing:MusicRolls"));
+	self:SetChecked(settings:Get("Thing:MusicRollsAndSelfieFilters"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1300,16 +1295,16 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:MusicRolls", self:GetChecked());
+	settings:Set("Thing:MusicRollsAndSelfieFilters", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-MusicRollsCheckBox:SetATTTooltip(L["MUSIC_ROLLS_CHECKBOX_TOOLTIP"]);
-MusicRollsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
+MusicRollsAndSelfieFiltersCheckBox:SetATTTooltip(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"]);
+MusicRollsAndSelfieFiltersCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MusicRollsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local MusicRollsAndSelfieFiltersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
-	self:SetChecked(settings:Get("AccountWide:MusicRolls"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRolls") then
+	self:SetChecked(settings:Get("AccountWide:MusicRollsAndSelfieFilters"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRollsAndSelfieFilters") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1318,11 +1313,11 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("AccountWide:MusicRolls", self:GetChecked());
+	settings:Set("AccountWide:MusicRollsAndSelfieFilters", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-MusicRollsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_10_TOOLTIP"]);
-MusicRollsAccountWideCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "TOPLEFT", 220, 0);
+MusicRollsAndSelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"]);
+MusicRollsAndSelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "TOPLEFT", 220, 0);
 
 local QuestsCheckBox = settings:CreateCheckBox(L["QUESTS_CHECKBOX"],
 function(self)
@@ -1341,7 +1336,7 @@ function(self)
 end);
 QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
 QuestsCheckBox.Text:SetWidth(50);
-QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestBreadcrumbsCheckBox = settings:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
 function(self)
@@ -1377,7 +1372,7 @@ function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_11_TOOLTIP"]);
+QuestsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_QUESTS_TOOLTIP"]);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
 local RecipesCheckBox = settings:CreateCheckBox(L["RECIPES_CHECKBOX"],
@@ -1413,7 +1408,7 @@ function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-RecipesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_12_TOOLTIP"]);
+RecipesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RECIPES_TOOLTIP"]);
 RecipesAccountWideCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "TOPLEFT", 220, 0);
 
 local ReputationsCheckBox = settings:CreateCheckBox(L["REPUTATIONS_CHECKBOX"],
@@ -1449,44 +1444,8 @@ function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_13_TOOLTIP"]);
+ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"]);
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
-
-local SelfieFiltersCheckBox = settings:CreateCheckBox(L["SELFIE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:SelfieFilters"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:SelfieFilters", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SelfieFiltersCheckBox:SetATTTooltip(L["SELFIE_CHECKBOX_TOOLTIP"]);
-SelfieFiltersCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local SelfieFiltersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:SelfieFilters"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:SelfieFilters") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:SelfieFilters", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_14_TOOLTIP"]);
-SelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "TOPLEFT", 220, 0);
 
 local TitlesCheckBox = settings:CreateCheckBox(L["TITLES_CHECKBOX"],
 function(self)
@@ -1504,7 +1463,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
-TitlesCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
@@ -1521,7 +1480,7 @@ function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-TitlesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_15_TOOLTIP"]);
+TitlesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_TITLES_TOOLTIP"]);
 TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
 
 local ToysCheckBox = settings:CreateCheckBox(L["TOYS_CHECKBOX"],

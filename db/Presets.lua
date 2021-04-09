@@ -42,6 +42,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -96,6 +97,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -150,6 +152,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -204,6 +207,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[106] = true,
 		[101] = true,
 		[103] = true,
@@ -258,6 +262,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -312,6 +317,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -366,6 +372,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -425,6 +432,7 @@ select(2, ...).Presets = {
 		[113] = false,
 		[35] = false,
 		[57] = true,
+		[60] = true,
 	},
 	["ROGUE"] = {
 		true, -- [1]
@@ -464,6 +472,7 @@ select(2, ...).Presets = {
 		false, -- [35]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -493,6 +502,7 @@ select(2, ...).Presets = {
 		true, -- [11]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[31] = false,
 		[32] = false,
 		[33] = false,
@@ -543,6 +553,7 @@ select(2, ...).Presets = {
 		[34] = false,
 		[35] = false,
 		[57] = true,
+		[60] = true,
 		[101] = true,
 		[103] = true,
 		[20] = true,
@@ -605,6 +616,7 @@ select(2, ...).Presets = {
 		true, -- [36]
 		[50] = true,
 		[57] = true,
+		[60] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,

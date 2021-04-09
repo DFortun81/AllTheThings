@@ -4,9 +4,15 @@
 
 _.SelfieFilters =
 {
+	i(122674, {	-- S.E.L.F.I.E. Camera MkII
+		["cost"] = {
+			{ "i", 122637, 1 },	-- S.E.L.F.I.E. Camera
+			{ "i", 122661, 1 },	-- S.E.L.F.I.E. Lens Upgrade Kit
+		},
+	}),
 	spell(258803, {	-- Argus Filter
 		["questID"] = 49762,	-- Completed
-		["f"] = 108,				-- Music Rolls & Selfie Filter
+		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 		["cr"] = 124828,		-- Argus the Unmaker
 		["maps"] = {	-- Antorus
 			909,
@@ -26,7 +32,7 @@ _.SelfieFilters =
 	}),
 	spell(258749, {	-- Firelands Filter
 		["questID"] = 49761,	-- Completed
-		["f"] = 108,				-- Music Rolls & Selfie Filter
+		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 		["cr"] = 52409,		-- Ragnaros
 		["maps"] = {	-- Firelands
 			367,
@@ -36,7 +42,7 @@ _.SelfieFilters =
 	}),
 	spell(258750, {	-- Frostmourne Filter
 		["questID"] = 49760,	-- Completed
-		["f"] = 108,				-- Music Rolls & Selfie Filter
+		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 		["cr"] = 36597,		-- The Lich King
 		["maps"] = {	-- Icecrown Citadel
 			186,
@@ -52,7 +58,7 @@ _.SelfieFilters =
 	}),
 	spell(258751, {	-- Sha Filter
 		["questID"] = 49763,	-- Completed
-		["f"] = 108,				-- Music Rolls & Selfie Filter
+		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 		["cr"] = 60999,		-- Sha of Fear
 		["maps"] = {	-- Terrace of Endless Spring
 			456,
@@ -60,7 +66,7 @@ _.SelfieFilters =
 	}),
 	spell(258752, {	-- Twilight Filter
 		["questID"] = 49764,	-- Completed
-		["f"] = 108,				-- Music Rolls & Selfie Filter
+		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 		["cr"] = 43324,		-- Cho'gall
 		["maps"] = {	-- Bastion of Twilight
 			294,

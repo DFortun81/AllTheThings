@@ -1043,9 +1043,7 @@ _.Zones =
 					["coord"] = { 34.5, 70.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
-							i(122674),	-- S.E.L.F.I.E. Camera MkII
-						}),
+						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
 					},
 				}),
 				q(49855, {	-- Disaster at Mount Hyjal
@@ -1390,10 +1388,15 @@ _.Zones =
 					},
 				}),
 				q(32471, {	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, 85 },
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 155856, 1 },	-- Iron Box
+						{ "i", 4406, 1 },	-- Standard Scope
+						{ "i", 3593, 1 },	-- Russet Belt
+					},
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},

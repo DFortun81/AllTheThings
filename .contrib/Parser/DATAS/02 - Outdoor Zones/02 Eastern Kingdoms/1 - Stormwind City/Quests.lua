@@ -648,15 +648,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32469, {	-- Crystal Clarity
-					["sourceQuests"] = { 32470 },	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
+					["sourceQuests"] = { 32470 },	-- Light Camera Action
 					["coord"] = { 61.2, 22.8, 84 },
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
-							i(122674),	-- S.E.L.F.I.E. Camera MkII
-						}),
+						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
 					},
 				}),
 				q(44463, {	-- Demons Among Them
@@ -906,10 +904,15 @@ _.Zones =
 					},
 				}),
 				q(32470, {	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
 					["coord"] = { 61.2, 22.8, 84 },
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 155856, 1 },	-- Iron Box
+						{ "i", 4406, 1 },	-- Standard Scope
+						{ "i", 3593, 1 },	-- Russet Belt
+					},
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
