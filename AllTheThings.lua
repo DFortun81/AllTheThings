@@ -13665,7 +13665,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 						local holidayID = GetRelativeValue(group, "holidayID");
 						local u = group.u or GetRelativeValue(group, "u");
-						if group.key == "headerID" then
+						if group.key == "npcID" or group.key == "headerID" then
 							if GetRelativeField(group, "headerID", -4) then	-- It's an Achievement. (non-Holiday)
 								if group.headerID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
 							elseif GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewalking vendor)
