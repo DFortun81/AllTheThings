@@ -3584,13 +3584,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				table.sort(knownBy);
-				local desc = L["KNOWN_BY"];		-- L["KNOWN_BY"] = "Known by "
+				local desc = L["KNOWN_BY"];
 				local characters = GetDataMember("Characters");
 				for i,key in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
 					desc = desc .. (characters[key] or key);
 				end
-				tinsert(info, { left = desc, wrap = true, color = "ff66ccff" });
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 			end
 		end
 
