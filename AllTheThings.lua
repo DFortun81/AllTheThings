@@ -9576,7 +9576,7 @@ function app.FilterItemClass_RequireBinding(item)
 end
 function app.FilterItemClass_RequiredSkill(item)
 	local requireSkill = item.requireSkill;
-	if requireSkill and (not item.professionID or GetRelativeValue(item, "EnforceSkillRequirements")) then
+	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or item.b == 1) then
 		return app.GetTradeSkillCache()[requireSkill];
 	else
 		return true;
@@ -12726,6 +12726,7 @@ function app:GetDataCache()
 		if app.Categories.Craftables then
 			db = {};
 			db.g = app.Categories.Craftables;
+			db.DontEnforceSkillRequirements = true;
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 			db.icon = app.asset("Category_Crafting");
@@ -12740,7 +12741,6 @@ function app:GetDataCache()
 			db.text = TRADE_SKILLS;
 			db.icon = app.asset("Category_Professions");
 			db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
-			db.EnforceSkillRequirements = true;
 			table.insert(g, db);
 		end
 
