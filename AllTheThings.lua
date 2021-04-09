@@ -3818,21 +3818,22 @@ app.BuildCurrencies = function(group)
 end
 -- check if the group has a cost which includes the given parameters
 app.HasCost = function(group, idType, id)
-	-- only checking for item/currency costs
-	if not (idType == "itemID" or idType == "currencyID") then return false; end
-	-- group doesn't have a valid cost at all
-	if not group.cost or type(group.cost) ~= "table" then return false; end
-	-- print("HasCost",group,idType,id)
-	-- local idStr, split = tostring(id);
-	for i,c in ipairs(group.cost) do
-		if ((idType == "itemID" and c[1] == "i") or (idType == "currencyID" and c[1] == "c")) then
-			-- return true if exact cost is found
-			if c[2] == id then return true; end
-			-- cost itemID can also be a string, so check the first portion if it matches
-			-- split = strsplit(":",c[2]);
-			-- if split == idStr then return true; end
+	if group.cost and type(group.cost) == "table" then
+		if idType == "itemID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "i" then
+					return true;
+				end
+			end
+		elseif idType == "currencyID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "c" then
+					return true;
+				end
+			end
 		end
 	end
+	return false;
 end
 app.PrintGroup = function(group,depth)
 	if not depth then depth = 0; end
