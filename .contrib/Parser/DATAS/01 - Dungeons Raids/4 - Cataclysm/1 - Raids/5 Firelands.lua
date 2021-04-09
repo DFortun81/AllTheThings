@@ -562,57 +562,82 @@ _.Instances = { tier(4, {	-- Cataclysm
 						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
 							["g"] = {
-								i(71617, {	-- Crystallized Firestone
-									["description"] = "This item drops from the Firelands bosses. You can trade this with one of the BoEs below and she will upgrade it to the Heroic version attached below.",
-									["crs"] = {
-										53691,	-- Shannox
-										52498,	-- Beth'tilac <The Red Widow>
-										52530,	-- Alysrazor
-										52558,	-- Lord Rhyolith
-										53494,	-- Baleroc <The Gatekeeper>
-										52571,	-- Majordomo Staghelm <Archdruid of the Flame>
-										52409,	-- Ragnaros
+								i(69113, {	-- Apparatus of Khaz'goroth
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 68972, 1 },	-- Apparatus of Khaz'goroth
 									},
-									["g"] = {
-										i(68972, { 	-- Apparatus of Khaz'goroth
-											i(69113),	-- Apparatus of Khaz'goroth
-										}),
-										i(71359, {	-- Chelley's Sterilized Scalpel
-											i(71560),	-- Chelley's Sterilized Scalpel
-										}),
-										i(70929, {  -- Firebound Gorget
-											i(71563),	-- Firebound Gorget
-										}),
-										i(71365, {	-- Hide-Bound Chains
-											i(71561),	-- Hide-Bound Chains
-										}),
-										i(71366, {	-- Lava Bolt Crossbow
-											i(71558),	-- Lava Bolt Crossbow
-										}),
-										i(71362, {	-- Obsidium Cleaver
-											i(71562),	-- Obsidium Cleaver
-										}),
-										i(71361, {	-- Ranseur of Hatred
-											i(71557),	-- Ranseur of Hatred
-										}),
-										i(71640, {	-- Riplimb's Lost Collar
-											i(71641),	-- Riplimb's Lost Collar
-										}),
-										i(68915, { 	-- Scales of Life
-											i(69109),	-- Scales of Life
-										}),
-										i(71150, {	-- Scorchvine Wand
-											i(71579),	-- Scorchvine Wand
-										}),
-										i(71360, {	-- Spire of Scarlet Pain
-											i(71559),	-- Spire of Scarlet Pain
-										}),
-										i(71367, {	-- Theck's Emberseal
-											i(71564),	-- Theck's Emberseal
-										}),
-										i(71151, {	-- Trail of Embers
-											i(71575),	-- Trail of Embers
-										}),
+								}),
+								i(71560, {	-- Chelley's Sterilized Scalpel
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71359, 1 },	-- Chelley's Sterilized Scalpel
+									},
+								}),
+								i(71563, {	-- Firebound Gorget
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 70929, 1 },	-- Firebound Gorget
+									},
+								}),
+								i(71561, {	-- Hide-Bound Chains
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71365, 1 },	-- Hide-Bound Chains
+									},
+								}),
+								i(71558, {	-- Lava Bolt Crossbow
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71366, 1 },	-- Lava Bolt Crossbow
+									},
+								}),
+								i(71562, {	-- Obsidium Cleaver
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71362, 1 },	-- Obsidium Cleaver
+									},
+								}),
+								i(71557, {	-- Ranseur of Hatred
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71361, 1 },	-- Ranseur of Hatred
+									},
+								}),
+								i(71641, {	-- Riplimb's Lost Collar
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71640, 1 },	-- Riplimb's Lost Collar
+									},
+								}),
+								i(69109, {	-- Scales of Life
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 68915, 1 },	-- Scales of Life
+									},
+								}),
+								i(71579, {	-- Scorchvine Wand
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71150, 1 },	-- Scorchvine Wand
+									},
+								}),
+								i(71559, {	-- Spire of Scarlet Pain
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71360, 1 },	-- Spire of Scarlet Pain
+									},
+								}),
+								i(71564, {	-- Theck's Emberseal
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71367, 1 },	-- Theck's Emberseal
+									},
+								}),
+								i(71575, {	-- Trail of Embers
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71151, 1 },	-- Trail of Embers
 									},
 								}),
 							},
@@ -637,6 +662,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71774),	-- Smoldering Censer of Purity
 							i(71781),	-- Zoid's Firelit Greatsword
 							i(69237),	-- Living Ember
+							i(71617, {	-- Crystallized Firestone
+								["description"] = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
+							}),
 						},
 					}),
 					e(192, {	-- Beth'tilac
