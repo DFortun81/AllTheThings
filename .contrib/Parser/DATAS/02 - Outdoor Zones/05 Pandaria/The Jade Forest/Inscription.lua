@@ -30,7 +30,6 @@ _.Zones =
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["isWeekly"] = true,
 					["coord"] = { 54.8, 45.2, 371 },
-					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						recipe(127475),	-- Incarnadine Ink
 					},
