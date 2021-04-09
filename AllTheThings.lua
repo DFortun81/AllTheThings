@@ -2622,7 +2622,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not group then group = {}; end
 		if a then paramA = a; end
 		if b then paramB = b; end
-		-- print("Raw Search",#group,paramA,paramB);
+		--print("Raw Search", paramA, paramB, #group);
 
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
@@ -2833,8 +2833,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 
 			if itemID then
-				print("ITEM ID SEARCH", itemID, floor(itemID));
-				
 				-- Grab the best matching source group.
 				local sourceGroup;
 				for i,j in ipairs(group.g or group) do
@@ -4050,7 +4048,6 @@ fieldConverters = {
 				if v[1] == "i" and v[2] > 0 then
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
 						CacheField(group, "itemIDAsCost", v[2]);
-						rawget(fieldConverters, "itemID")(group, v[2], true);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyID", v[2]);
@@ -4182,25 +4179,28 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
-				_ = sourceID and SearchForField("s", sourceID);
-				-- print("sourceID search",sourceID,_ and #_)
-
-				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
-				-- print("link-search",modItemID,itemID)
-
-				if not _ then
-					-- Search for the item ID since it was not found using sourceID
-					-- local iSearch = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
-					-- print("item search",iSearch and #iSearch);
-					_ = SearchForField("itemID", modItemID) or SearchForField("itemID", itemID) or {};
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				if sourceID then
+					-- Search for the Source ID. (an appearance)
+					--print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
+					_ = SearchForField("s", sourceID);
+				else
+					-- Search for the Item ID. (an item without an appearance)
+					--print("SEARCHING FOR ITEM LINK ", link, itemID);
+					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
 				end
-
-				-- include anything which this item is used as a cost for
-				-- local costSearch = SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
-				-- print("cost search",costSearch and #costSearch);
-				MergeObjects(_, SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID) or {});
-				-- print("found",_ and #_)
+				
+				-- Merge together the cost search results as well.
+				local searchResultsAsCost = SearchForField("itemIDAsCost", itemID);
+				if searchResultsAsCost and #searchResultsAsCost > 0 then
+					if not _ then
+						_ = searchResultsAsCost;
+					else
+						for i,o in ipairs(searchResultsAsCost) do
+							table.insert(_, o);
+						end
+					end
+				end
 				return _;
 			end
 		end
