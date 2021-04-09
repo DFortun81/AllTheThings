@@ -294,17 +294,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16397)),	-- Knight-Lieutenant's Dragonhide Gloves
 						un(REMOVED_FROM_GAME, i(16423)),	-- Lieutenant Commander's Dragonhide Epaulets
 						un(REMOVED_FROM_GAME, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
-					},
-				}),
-				n(69975,  {	-- Captain Dirgehammer <Cataclysmic Gladiator>
-					["coord"] = { 75.0, 67.5, 84 },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-					},
-					["g"] = {
+						
 						un(REMOVED_FROM_GAME, i(31640)),	-- Grand Marshal's Ringmail Chestguard
 						un(REMOVED_FROM_GAME, i(31641)),	-- Grand Marshal's Ringmail Gloves
 						un(REMOVED_FROM_GAME, i(31642)),	-- Grand Marshal's Ringmail Headpiece
@@ -381,6 +371,17 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16403)),	-- Knight-Lieutenant's Chain Gauntlets
 						un(REMOVED_FROM_GAME, i(16426)),	-- Knight-Captain's Chain Leggings
 						un(REMOVED_FROM_GAME, i(16401)),	-- Knight-Lieutenant's Chain Boots
+					},
+				}),
+				n(69975,  {	-- Captain Dirgehammer <Cataclysmic Gladiator>
+					["coord"] = { 75.0, 67.5, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
+						{"pop"},	-- Discard header and acquire the children.
+						{"where", "headerID", -674 },	-- Cataclysmic Gladiator header.
+						{"pop"},	-- Discard header and acquire the children.
+						{"where", "headerID", -661 },	-- Gladiator header.
 					},
 				}),
 				n(49877,  {	-- Captain Lancy Revshon
@@ -2524,208 +2525,208 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -673, -662 },	-- Ruthless Gladiator: Season 10 Elite Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
+						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
+						{"pop"},	-- Discard header and acquire the children.
+						{"where", "headerID", -673 },	-- Ruthless Gladiator header.
+						{"pop"},	-- Discard header and acquire the children.
+						{"where", "headerID", -662 },	-- Elite header.
 					},
 					["g"] = {
-						n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
-							cl(DEATHKNIGHT, {
-								un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
-								un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
-								un(REMOVED_FROM_GAME, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
-								un(REMOVED_FROM_GAME, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
-								un(REMOVED_FROM_GAME, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
-							}),
-							cl(DRUID, {
-								un(REMOVED_FROM_GAME, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
-								un(REMOVED_FROM_GAME, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
-								un(REMOVED_FROM_GAME, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
-								un(REMOVED_FROM_GAME, i(72340)), -- Ruthless Gladiator's Dragonhide Robes
-								un(REMOVED_FROM_GAME, i(72341)), -- Ruthless Gladiator's Dragonhide Spaulders
-								un(REMOVED_FROM_GAME, i(72345)), -- Ruthless Gladiator's Kodohide Gloves
-								un(REMOVED_FROM_GAME, i(72346)), -- Ruthless Gladiator's Kodohide Helm
-								un(REMOVED_FROM_GAME, i(72347)), -- Ruthless Gladiator's Kodohide Legguards
-								un(REMOVED_FROM_GAME, i(72348)), -- Ruthless Gladiator's Kodohide Robes
-								un(REMOVED_FROM_GAME, i(72349)), -- Ruthless Gladiator's Kodohide Spaulders
-								un(REMOVED_FROM_GAME, i(72353)), -- Ruthless Gladiator's Wyrmhide Gloves
-								un(REMOVED_FROM_GAME, i(72354)), -- Ruthless Gladiator's Wyrmhide Helm
-								un(REMOVED_FROM_GAME, i(72355)), -- Ruthless Gladiator's Wyrmhide Legguards
-								un(REMOVED_FROM_GAME, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
-								un(REMOVED_FROM_GAME, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
-							}),
-							cl(HUNTER, {
-								un(REMOVED_FROM_GAME, i(72368)), -- Ruthless Gladiator's Chain Armor
-								un(REMOVED_FROM_GAME, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
-								un(REMOVED_FROM_GAME, i(72370)), -- Ruthless Gladiator's Chain Helm
-								un(REMOVED_FROM_GAME, i(72371)), -- Ruthless Gladiator's Chain Leggings
-								un(REMOVED_FROM_GAME, i(72372)), -- Ruthless Gladiator's Chain Spaulders
-							}),
-							cl(MAGE, {
-								un(REMOVED_FROM_GAME, i(72373)), -- Ruthless Gladiator's Silk Handguards
-								un(REMOVED_FROM_GAME, i(72374)), -- Ruthless Gladiator's Silk Cowl
-								un(REMOVED_FROM_GAME, i(72375)), -- Ruthless Gladiator's Silk Trousers
-								un(REMOVED_FROM_GAME, i(72376)), -- Ruthless Gladiator's Silk Robe
-								un(REMOVED_FROM_GAME, i(72377)), -- Ruthless Gladiator's Silk Amice
-							}),
-							cl(PALADIN, {
-								un(REMOVED_FROM_GAME, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
-								un(REMOVED_FROM_GAME, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
-								un(REMOVED_FROM_GAME, i(72380)), -- Ruthless Gladiator's Scaled Helm
-								un(REMOVED_FROM_GAME, i(72381)), -- Ruthless Gladiator's Scaled Legguards
-								un(REMOVED_FROM_GAME, i(72382)), -- Ruthless Gladiator's Scaled Shoulders
-								un(REMOVED_FROM_GAME, i(72389)), -- Ruthless Gladiator's Ornamented Chestguard
-								un(REMOVED_FROM_GAME, i(72390)), -- Ruthless Gladiator's Ornamented Gloves
-								un(REMOVED_FROM_GAME, i(72391)), -- Ruthless Gladiator's Ornamented Headcover
-								un(REMOVED_FROM_GAME, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
-								un(REMOVED_FROM_GAME, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
-							}),
-							cl(PRIEST, {
-								un(REMOVED_FROM_GAME, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
-								un(REMOVED_FROM_GAME, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
-								un(REMOVED_FROM_GAME, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
-								un(REMOVED_FROM_GAME, i(72403)), -- Ruthless Gladiator's Mooncloth Robe
-								un(REMOVED_FROM_GAME, i(72404)), -- Ruthless Gladiator's Mooncloth Mantle
-								un(REMOVED_FROM_GAME, i(72405)), -- Ruthless Gladiator's Satin Gloves
-								un(REMOVED_FROM_GAME, i(72406)), -- Ruthless Gladiator's Satin Hood
-								un(REMOVED_FROM_GAME, i(72407)), -- Ruthless Gladiator's Satin Leggings
-								un(REMOVED_FROM_GAME, i(72408)), -- Ruthless Gladiator's Satin Robe
-								un(REMOVED_FROM_GAME, i(72409)), -- Ruthless Gladiator's Satin Mantle
-							}),
-							cl(ROGUE, {
-								un(REMOVED_FROM_GAME, i(72422)), -- Ruthless Gladiator's Leather Tunic
-								un(REMOVED_FROM_GAME, i(72423)), -- Ruthless Gladiator's Leather Gloves
-								un(REMOVED_FROM_GAME, i(72424)), -- Ruthless Gladiator's Leather Helm
-								un(REMOVED_FROM_GAME, i(72425)), -- Ruthless Gladiator's Leather Legguards
-								un(REMOVED_FROM_GAME, i(72426)), -- Ruthless Gladiator's Leather Spaulders
-							}),
-							cl(SHAMAN, {
-								un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
-								un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
-								un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
-								un(REMOVED_FROM_GAME, i(72435)),	-- Ruthless Gladiator's Ringmail Legs
-								un(REMOVED_FROM_GAME, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Armor
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked gauntlets
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Helm
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Legs
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Spaulders
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Armor
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail gauntlets
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Helm
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Legs
-								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
-							}),
-							cl(WARLOCK, {
-								un(REMOVED_FROM_GAME, i(72459)), -- Ruthless Gladiator's Felweave Handguards
-								un(REMOVED_FROM_GAME, i(72460)), -- Ruthless Gladiator's Felweave Cowl
-								un(REMOVED_FROM_GAME, i(72461)), -- Ruthless Gladiator's Felweave Trousers
-								un(REMOVED_FROM_GAME, i(72462)), -- Ruthless Gladiator's Felweave Raiment
-								un(REMOVED_FROM_GAME, i(72463)), -- Ruthless Gladiator's Felweave Amice
-							}),
-							cl(WARRIOR, {
-								un(REMOVED_FROM_GAME, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
-								un(REMOVED_FROM_GAME, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
-								un(REMOVED_FROM_GAME, i(72466)), -- Ruthless Gladiator's Plate Helm
-								un(REMOVED_FROM_GAME, i(72467)), -- Ruthless Gladiator's Plate Legguards
-								un(REMOVED_FROM_GAME, i(72468)), -- Ruthless Gladiator's Plate Shoulders
-							}),
-							n(-322, {	-- Back
-								un(REMOVED_FROM_GAME, i(72305)), -- Ruthless Gladiator's Cape of Cruelty
-								un(REMOVED_FROM_GAME, i(72306)), -- Ruthless Gladiator's Cape of Prowess
-								un(REMOVED_FROM_GAME, i(72322)), -- Ruthless Gladiator's Drape of Prowess
-								un(REMOVED_FROM_GAME, i(72323)), -- Ruthless Gladiator's Drape of Diffusion
-								un(REMOVED_FROM_GAME, i(72324)), -- Ruthless Gladiator's Drape of Meditation
-								un(REMOVED_FROM_GAME, i(72451)), -- Ruthless Gladiator's Cloak of Alacrity
-								un(REMOVED_FROM_GAME, i(72452)), -- Ruthless Gladiator's Cloak of Prowess
-							}),
-							n(-326, {	-- Wrists
-								un(REMOVED_FROM_GAME, i(72319)), -- Ruthless Gladiator's Cuffs of Accuracy
-								un(REMOVED_FROM_GAME, i(72320)), -- Ruthless Gladiator's Cuffs of Prowess
-								un(REMOVED_FROM_GAME, i(72321)), -- Ruthless Gladiator's Cuffs of Meditation
-								un(REMOVED_FROM_GAME, i(72344)), -- Ruthless Gladiator's Bindings of Meditation
-								un(REMOVED_FROM_GAME, i(72352)), -- Ruthless Gladiator's Bindings of Prowess
-								un(REMOVED_FROM_GAME, i(72366)), -- Ruthless Gladiator's Wristguards of Alacrity
-								un(REMOVED_FROM_GAME, i(72367)), -- Ruthless Gladiator's Wristguards of Accuracy
-								un(REMOVED_FROM_GAME, i(72387)), -- Ruthless Gladiator's Bracers of Prowess
-								un(REMOVED_FROM_GAME, i(72388)), -- Ruthless Gladiator's Bracers of Meditation
-								un(REMOVED_FROM_GAME, i(72398)), -- Ruthless Gladiator's Armplates of Proficiency
-								un(REMOVED_FROM_GAME, i(72399)), -- Ruthless Gladiator's Armplates of Alacrity
-								un(REMOVED_FROM_GAME, i(72420)), -- Ruthless Gladiator's Armwraps of Alacrity
-								un(REMOVED_FROM_GAME, i(72421)), -- Ruthless Gladiator's Armwraps of Accuracy
-								un(REMOVED_FROM_GAME, i(72430)), -- Ruthless Gladiator's Armbands of Prowess
-								un(REMOVED_FROM_GAME, i(72431)), -- Ruthless Gladiator's Armbands of Meditation
-							}),
-							n(-328, {	-- Waist
-								un(REMOVED_FROM_GAME, i(72313)), -- Ruthless Gladiator's Cord of Cruelty
-								un(REMOVED_FROM_GAME, i(72314)), -- Ruthless Gladiator's Cord of Accuracy
-								un(REMOVED_FROM_GAME, i(72315)), -- Ruthless Gladiator's Cord of Meditation
-								un(REMOVED_FROM_GAME, i(72342)), -- Ruthless Gladiator's Belt of Meditation
-								un(REMOVED_FROM_GAME, i(72350)), -- Ruthless Gladiator's Belt of Cruelty
-								un(REMOVED_FROM_GAME, i(72362)), -- Ruthless Gladiator's Links of Cruelty
-								un(REMOVED_FROM_GAME, i(72363)), -- Ruthless Gladiator's Links of Accuracy
-								un(REMOVED_FROM_GAME, i(72383)), -- Ruthless Gladiator's Clasp of Cruelty
-								un(REMOVED_FROM_GAME, i(72384)), -- Ruthless Gladiator's Clasp of Meditation
-								un(REMOVED_FROM_GAME, i(72394)), -- Ruthless Gladiator's Girdle of Accuracy
-								un(REMOVED_FROM_GAME, i(72395)), -- Ruthless Gladiator's Girdle of Prowess
-								un(REMOVED_FROM_GAME, i(72416)), -- Ruthless Gladiator's Waistband of Cruelty
-								un(REMOVED_FROM_GAME, i(72417)), -- Ruthless Gladiator's Waistband of Accuracy
-								un(REMOVED_FROM_GAME, i(72427)), -- Ruthless Gladiator's Waistguard of Meditation
-								un(REMOVED_FROM_GAME, i(72442)), -- Ruthless Gladiator's Waistguard of Cruelty
-							}),
-							n(-330, {	-- Feet
-								un(REMOVED_FROM_GAME, i(72316)), -- Ruthless Gladiator's Treads of Cruelty
-								un(REMOVED_FROM_GAME, i(72317)), -- Ruthless Gladiator's Treads of Alacrity
-								un(REMOVED_FROM_GAME, i(72318)), -- Ruthless Gladiator's Treads of Meditation
-								un(REMOVED_FROM_GAME, i(72343)), -- Ruthless Gladiator's Footguards of Meditation
-								un(REMOVED_FROM_GAME, i(72351)), -- Ruthless Gladiator's Footguards of Alacrity
-								un(REMOVED_FROM_GAME, i(72364)), -- Ruthless Gladiator's Sabatons of Cruelty
-								un(REMOVED_FROM_GAME, i(72365)), -- Ruthless Gladiator's Sabatons of Alacrity
-								un(REMOVED_FROM_GAME, i(72385)), -- Ruthless Gladiator's Greaves of Alacrity
-								un(REMOVED_FROM_GAME, i(72386)), -- Ruthless Gladiator's Greaves of Meditation
-								un(REMOVED_FROM_GAME, i(72396)), -- Ruthless Gladiator's Warboots of Cruelty
-								un(REMOVED_FROM_GAME, i(72397)), -- Ruthless Gladiator's Warboots of Alacrity
-								un(REMOVED_FROM_GAME, i(72418)), -- Ruthless Gladiator's Boots of Cruelty
-								un(REMOVED_FROM_GAME, i(72419)), -- Ruthless Gladiator's Boots of Alacrity
-								un(REMOVED_FROM_GAME, i(72428)), -- Ruthless Gladiator's Sabatons of Alacrity
-								un(REMOVED_FROM_GAME, i(72429)), -- Ruthless Gladiator's Sabatons of Meditation
-							}),
-							n(-384,	{	-- Neck
-								un(REMOVED_FROM_GAME, i(72307)), -- Ruthless Gladiator's Necklace of Proficiency
-								un(REMOVED_FROM_GAME, i(72308)), -- Ruthless Gladiator's Necklace of Prowess
-								un(REMOVED_FROM_GAME, i(72325)), -- Ruthless Gladiator's Pendant of Alacrity
-								un(REMOVED_FROM_GAME, i(72326)), -- Ruthless Gladiator's Pendant of Diffusion
-								un(REMOVED_FROM_GAME, i(72327)), -- Ruthless Gladiator's Pendant of Meditation
-								un(REMOVED_FROM_GAME, i(72453)), -- Ruthless Gladiator's Choker of Proficiency
-								un(REMOVED_FROM_GAME, i(72454)), -- Ruthless Gladiator's Choker of Accuracy
-							}),
-							n(-385,	{	-- Finger
-								un(REMOVED_FROM_GAME, i(72311)), -- Ruthless Gladiator's Ring of Cruelty
-								un(REMOVED_FROM_GAME, i(72312)), -- Ruthless Gladiator's Ring of Accuracy
-								un(REMOVED_FROM_GAME, i(72329)), -- Ruthless Gladiator's Band of Cruelty
-								un(REMOVED_FROM_GAME, i(72330)), -- Ruthless Gladiator's Band of Accuracy
-								un(REMOVED_FROM_GAME, i(72331)), -- Ruthless Gladiator's Band of Meditation
-								un(REMOVED_FROM_GAME, i(72457)), -- Ruthless Gladiator's Signet of Cruelty
-								un(REMOVED_FROM_GAME, i(72458)), -- Ruthless Gladiator's Signet of Accuracy
-							}),
-							n(-386,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(72304)), -- Ruthless Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(72309)), -- Ruthless Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(72359)), -- Ruthless Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(72360)), -- Ruthless Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(72361)), -- Ruthless Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(72448)), -- Ruthless Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(72449)), -- Ruthless Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(72450)), -- Ruthless Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(72455)), -- Ruthless Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(72411)), -- Ruthless Gladiator's Medallion of Cruelty (Alliance)
-								un(REMOVED_FROM_GAME, i(72412)), -- Ruthless Gladiator's Medallion of Tenacity (Alliance)
-								un(REMOVED_FROM_GAME, i(72414)), -- Ruthless Gladiator's Medallion of Meditation (Alliance)
-							}),
+						cl(DEATHKNIGHT, {
+							un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
+							un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
+							un(REMOVED_FROM_GAME, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
+							un(REMOVED_FROM_GAME, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
+							un(REMOVED_FROM_GAME, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
+						}),
+						cl(DRUID, {
+							un(REMOVED_FROM_GAME, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
+							un(REMOVED_FROM_GAME, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
+							un(REMOVED_FROM_GAME, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
+							un(REMOVED_FROM_GAME, i(72340)), -- Ruthless Gladiator's Dragonhide Robes
+							un(REMOVED_FROM_GAME, i(72341)), -- Ruthless Gladiator's Dragonhide Spaulders
+							un(REMOVED_FROM_GAME, i(72345)), -- Ruthless Gladiator's Kodohide Gloves
+							un(REMOVED_FROM_GAME, i(72346)), -- Ruthless Gladiator's Kodohide Helm
+							un(REMOVED_FROM_GAME, i(72347)), -- Ruthless Gladiator's Kodohide Legguards
+							un(REMOVED_FROM_GAME, i(72348)), -- Ruthless Gladiator's Kodohide Robes
+							un(REMOVED_FROM_GAME, i(72349)), -- Ruthless Gladiator's Kodohide Spaulders
+							un(REMOVED_FROM_GAME, i(72353)), -- Ruthless Gladiator's Wyrmhide Gloves
+							un(REMOVED_FROM_GAME, i(72354)), -- Ruthless Gladiator's Wyrmhide Helm
+							un(REMOVED_FROM_GAME, i(72355)), -- Ruthless Gladiator's Wyrmhide Legguards
+							un(REMOVED_FROM_GAME, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
+							un(REMOVED_FROM_GAME, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
+						}),
+						cl(HUNTER, {
+							un(REMOVED_FROM_GAME, i(72368)), -- Ruthless Gladiator's Chain Armor
+							un(REMOVED_FROM_GAME, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
+							un(REMOVED_FROM_GAME, i(72370)), -- Ruthless Gladiator's Chain Helm
+							un(REMOVED_FROM_GAME, i(72371)), -- Ruthless Gladiator's Chain Leggings
+							un(REMOVED_FROM_GAME, i(72372)), -- Ruthless Gladiator's Chain Spaulders
+						}),
+						cl(MAGE, {
+							un(REMOVED_FROM_GAME, i(72373)), -- Ruthless Gladiator's Silk Handguards
+							un(REMOVED_FROM_GAME, i(72374)), -- Ruthless Gladiator's Silk Cowl
+							un(REMOVED_FROM_GAME, i(72375)), -- Ruthless Gladiator's Silk Trousers
+							un(REMOVED_FROM_GAME, i(72376)), -- Ruthless Gladiator's Silk Robe
+							un(REMOVED_FROM_GAME, i(72377)), -- Ruthless Gladiator's Silk Amice
+						}),
+						cl(PALADIN, {
+							un(REMOVED_FROM_GAME, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
+							un(REMOVED_FROM_GAME, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
+							un(REMOVED_FROM_GAME, i(72380)), -- Ruthless Gladiator's Scaled Helm
+							un(REMOVED_FROM_GAME, i(72381)), -- Ruthless Gladiator's Scaled Legguards
+							un(REMOVED_FROM_GAME, i(72382)), -- Ruthless Gladiator's Scaled Shoulders
+							un(REMOVED_FROM_GAME, i(72389)), -- Ruthless Gladiator's Ornamented Chestguard
+							un(REMOVED_FROM_GAME, i(72390)), -- Ruthless Gladiator's Ornamented Gloves
+							un(REMOVED_FROM_GAME, i(72391)), -- Ruthless Gladiator's Ornamented Headcover
+							un(REMOVED_FROM_GAME, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
+							un(REMOVED_FROM_GAME, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
+						}),
+						cl(PRIEST, {
+							un(REMOVED_FROM_GAME, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
+							un(REMOVED_FROM_GAME, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
+							un(REMOVED_FROM_GAME, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
+							un(REMOVED_FROM_GAME, i(72403)), -- Ruthless Gladiator's Mooncloth Robe
+							un(REMOVED_FROM_GAME, i(72404)), -- Ruthless Gladiator's Mooncloth Mantle
+							un(REMOVED_FROM_GAME, i(72405)), -- Ruthless Gladiator's Satin Gloves
+							un(REMOVED_FROM_GAME, i(72406)), -- Ruthless Gladiator's Satin Hood
+							un(REMOVED_FROM_GAME, i(72407)), -- Ruthless Gladiator's Satin Leggings
+							un(REMOVED_FROM_GAME, i(72408)), -- Ruthless Gladiator's Satin Robe
+							un(REMOVED_FROM_GAME, i(72409)), -- Ruthless Gladiator's Satin Mantle
+						}),
+						cl(ROGUE, {
+							un(REMOVED_FROM_GAME, i(72422)), -- Ruthless Gladiator's Leather Tunic
+							un(REMOVED_FROM_GAME, i(72423)), -- Ruthless Gladiator's Leather Gloves
+							un(REMOVED_FROM_GAME, i(72424)), -- Ruthless Gladiator's Leather Helm
+							un(REMOVED_FROM_GAME, i(72425)), -- Ruthless Gladiator's Leather Legguards
+							un(REMOVED_FROM_GAME, i(72426)), -- Ruthless Gladiator's Leather Spaulders
+						}),
+						cl(SHAMAN, {
+							un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
+							un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
+							un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
+							un(REMOVED_FROM_GAME, i(72435)),	-- Ruthless Gladiator's Ringmail Legs
+							un(REMOVED_FROM_GAME, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Armor
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked gauntlets
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Helm
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Legs
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Spaulders
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Armor
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail gauntlets
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Helm
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Legs
+							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
+						}),
+						cl(WARLOCK, {
+							un(REMOVED_FROM_GAME, i(72459)), -- Ruthless Gladiator's Felweave Handguards
+							un(REMOVED_FROM_GAME, i(72460)), -- Ruthless Gladiator's Felweave Cowl
+							un(REMOVED_FROM_GAME, i(72461)), -- Ruthless Gladiator's Felweave Trousers
+							un(REMOVED_FROM_GAME, i(72462)), -- Ruthless Gladiator's Felweave Raiment
+							un(REMOVED_FROM_GAME, i(72463)), -- Ruthless Gladiator's Felweave Amice
+						}),
+						cl(WARRIOR, {
+							un(REMOVED_FROM_GAME, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
+							un(REMOVED_FROM_GAME, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
+							un(REMOVED_FROM_GAME, i(72466)), -- Ruthless Gladiator's Plate Helm
+							un(REMOVED_FROM_GAME, i(72467)), -- Ruthless Gladiator's Plate Legguards
+							un(REMOVED_FROM_GAME, i(72468)), -- Ruthless Gladiator's Plate Shoulders
+						}),
+						n(-322, {	-- Back
+							un(REMOVED_FROM_GAME, i(72305)), -- Ruthless Gladiator's Cape of Cruelty
+							un(REMOVED_FROM_GAME, i(72306)), -- Ruthless Gladiator's Cape of Prowess
+							un(REMOVED_FROM_GAME, i(72322)), -- Ruthless Gladiator's Drape of Prowess
+							un(REMOVED_FROM_GAME, i(72323)), -- Ruthless Gladiator's Drape of Diffusion
+							un(REMOVED_FROM_GAME, i(72324)), -- Ruthless Gladiator's Drape of Meditation
+							un(REMOVED_FROM_GAME, i(72451)), -- Ruthless Gladiator's Cloak of Alacrity
+							un(REMOVED_FROM_GAME, i(72452)), -- Ruthless Gladiator's Cloak of Prowess
+						}),
+						n(-326, {	-- Wrists
+							un(REMOVED_FROM_GAME, i(72319)), -- Ruthless Gladiator's Cuffs of Accuracy
+							un(REMOVED_FROM_GAME, i(72320)), -- Ruthless Gladiator's Cuffs of Prowess
+							un(REMOVED_FROM_GAME, i(72321)), -- Ruthless Gladiator's Cuffs of Meditation
+							un(REMOVED_FROM_GAME, i(72344)), -- Ruthless Gladiator's Bindings of Meditation
+							un(REMOVED_FROM_GAME, i(72352)), -- Ruthless Gladiator's Bindings of Prowess
+							un(REMOVED_FROM_GAME, i(72366)), -- Ruthless Gladiator's Wristguards of Alacrity
+							un(REMOVED_FROM_GAME, i(72367)), -- Ruthless Gladiator's Wristguards of Accuracy
+							un(REMOVED_FROM_GAME, i(72387)), -- Ruthless Gladiator's Bracers of Prowess
+							un(REMOVED_FROM_GAME, i(72388)), -- Ruthless Gladiator's Bracers of Meditation
+							un(REMOVED_FROM_GAME, i(72398)), -- Ruthless Gladiator's Armplates of Proficiency
+							un(REMOVED_FROM_GAME, i(72399)), -- Ruthless Gladiator's Armplates of Alacrity
+							un(REMOVED_FROM_GAME, i(72420)), -- Ruthless Gladiator's Armwraps of Alacrity
+							un(REMOVED_FROM_GAME, i(72421)), -- Ruthless Gladiator's Armwraps of Accuracy
+							un(REMOVED_FROM_GAME, i(72430)), -- Ruthless Gladiator's Armbands of Prowess
+							un(REMOVED_FROM_GAME, i(72431)), -- Ruthless Gladiator's Armbands of Meditation
+						}),
+						n(-328, {	-- Waist
+							un(REMOVED_FROM_GAME, i(72313)), -- Ruthless Gladiator's Cord of Cruelty
+							un(REMOVED_FROM_GAME, i(72314)), -- Ruthless Gladiator's Cord of Accuracy
+							un(REMOVED_FROM_GAME, i(72315)), -- Ruthless Gladiator's Cord of Meditation
+							un(REMOVED_FROM_GAME, i(72342)), -- Ruthless Gladiator's Belt of Meditation
+							un(REMOVED_FROM_GAME, i(72350)), -- Ruthless Gladiator's Belt of Cruelty
+							un(REMOVED_FROM_GAME, i(72362)), -- Ruthless Gladiator's Links of Cruelty
+							un(REMOVED_FROM_GAME, i(72363)), -- Ruthless Gladiator's Links of Accuracy
+							un(REMOVED_FROM_GAME, i(72383)), -- Ruthless Gladiator's Clasp of Cruelty
+							un(REMOVED_FROM_GAME, i(72384)), -- Ruthless Gladiator's Clasp of Meditation
+							un(REMOVED_FROM_GAME, i(72394)), -- Ruthless Gladiator's Girdle of Accuracy
+							un(REMOVED_FROM_GAME, i(72395)), -- Ruthless Gladiator's Girdle of Prowess
+							un(REMOVED_FROM_GAME, i(72416)), -- Ruthless Gladiator's Waistband of Cruelty
+							un(REMOVED_FROM_GAME, i(72417)), -- Ruthless Gladiator's Waistband of Accuracy
+							un(REMOVED_FROM_GAME, i(72427)), -- Ruthless Gladiator's Waistguard of Meditation
+							un(REMOVED_FROM_GAME, i(72442)), -- Ruthless Gladiator's Waistguard of Cruelty
+						}),
+						n(-330, {	-- Feet
+							un(REMOVED_FROM_GAME, i(72316)), -- Ruthless Gladiator's Treads of Cruelty
+							un(REMOVED_FROM_GAME, i(72317)), -- Ruthless Gladiator's Treads of Alacrity
+							un(REMOVED_FROM_GAME, i(72318)), -- Ruthless Gladiator's Treads of Meditation
+							un(REMOVED_FROM_GAME, i(72343)), -- Ruthless Gladiator's Footguards of Meditation
+							un(REMOVED_FROM_GAME, i(72351)), -- Ruthless Gladiator's Footguards of Alacrity
+							un(REMOVED_FROM_GAME, i(72364)), -- Ruthless Gladiator's Sabatons of Cruelty
+							un(REMOVED_FROM_GAME, i(72365)), -- Ruthless Gladiator's Sabatons of Alacrity
+							un(REMOVED_FROM_GAME, i(72385)), -- Ruthless Gladiator's Greaves of Alacrity
+							un(REMOVED_FROM_GAME, i(72386)), -- Ruthless Gladiator's Greaves of Meditation
+							un(REMOVED_FROM_GAME, i(72396)), -- Ruthless Gladiator's Warboots of Cruelty
+							un(REMOVED_FROM_GAME, i(72397)), -- Ruthless Gladiator's Warboots of Alacrity
+							un(REMOVED_FROM_GAME, i(72418)), -- Ruthless Gladiator's Boots of Cruelty
+							un(REMOVED_FROM_GAME, i(72419)), -- Ruthless Gladiator's Boots of Alacrity
+							un(REMOVED_FROM_GAME, i(72428)), -- Ruthless Gladiator's Sabatons of Alacrity
+							un(REMOVED_FROM_GAME, i(72429)), -- Ruthless Gladiator's Sabatons of Meditation
+						}),
+						n(-384,	{	-- Neck
+							un(REMOVED_FROM_GAME, i(72307)), -- Ruthless Gladiator's Necklace of Proficiency
+							un(REMOVED_FROM_GAME, i(72308)), -- Ruthless Gladiator's Necklace of Prowess
+							un(REMOVED_FROM_GAME, i(72325)), -- Ruthless Gladiator's Pendant of Alacrity
+							un(REMOVED_FROM_GAME, i(72326)), -- Ruthless Gladiator's Pendant of Diffusion
+							un(REMOVED_FROM_GAME, i(72327)), -- Ruthless Gladiator's Pendant of Meditation
+							un(REMOVED_FROM_GAME, i(72453)), -- Ruthless Gladiator's Choker of Proficiency
+							un(REMOVED_FROM_GAME, i(72454)), -- Ruthless Gladiator's Choker of Accuracy
+						}),
+						n(-385,	{	-- Finger
+							un(REMOVED_FROM_GAME, i(72311)), -- Ruthless Gladiator's Ring of Cruelty
+							un(REMOVED_FROM_GAME, i(72312)), -- Ruthless Gladiator's Ring of Accuracy
+							un(REMOVED_FROM_GAME, i(72329)), -- Ruthless Gladiator's Band of Cruelty
+							un(REMOVED_FROM_GAME, i(72330)), -- Ruthless Gladiator's Band of Accuracy
+							un(REMOVED_FROM_GAME, i(72331)), -- Ruthless Gladiator's Band of Meditation
+							un(REMOVED_FROM_GAME, i(72457)), -- Ruthless Gladiator's Signet of Cruelty
+							un(REMOVED_FROM_GAME, i(72458)), -- Ruthless Gladiator's Signet of Accuracy
+						}),
+						n(-386,	{	-- Trinket
+							un(REMOVED_FROM_GAME, i(72304)), -- Ruthless Gladiator's Badge of Conquest
+							un(REMOVED_FROM_GAME, i(72309)), -- Ruthless Gladiator's Insignia of Conquest
+							un(REMOVED_FROM_GAME, i(72359)), -- Ruthless Gladiator's Emblem of Cruelty
+							un(REMOVED_FROM_GAME, i(72360)), -- Ruthless Gladiator's Emblem of Tenacity
+							un(REMOVED_FROM_GAME, i(72361)), -- Ruthless Gladiator's Emblem of Meditation
+							un(REMOVED_FROM_GAME, i(72448)), -- Ruthless Gladiator's Badge of Dominance
+							un(REMOVED_FROM_GAME, i(72449)), -- Ruthless Gladiator's Insignia of Dominance
+							un(REMOVED_FROM_GAME, i(72450)), -- Ruthless Gladiator's Badge of Victory
+							un(REMOVED_FROM_GAME, i(72455)), -- Ruthless Gladiator's Insignia of Victory
+							un(REMOVED_FROM_GAME, i(72411)), -- Ruthless Gladiator's Medallion of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(72412)), -- Ruthless Gladiator's Medallion of Tenacity (Alliance)
+							un(REMOVED_FROM_GAME, i(72414)), -- Ruthless Gladiator's Medallion of Meditation (Alliance)
 						}),
 					},
 				}),
 				n(69974,  {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
