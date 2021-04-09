@@ -2792,24 +2792,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
 					sourceID = GetSourceID(paramA);
-					-- print("Raw link SourceID",paramA,sourceID)
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
 					if itemID2 then
 						itemID = tonumber(itemID2);
 						paramA = "itemID";
 						paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
-						-- print("ItemString Values",itemID,paramA,paramB)
 					end
-					-- print("#group",#group)
 					if #group > 0 then
 						for i,j in ipairs(group) do
-							-- print("check",j.modItemID,j.itemID,j.s)
 							if j.modItemID == paramB then
-								-- if j.s and not sourceID then
-								-- 	sourceID = j.s;
-								-- 	-- print("Set SourceID",itemID, paramB, j.modItemID, j.link, sourceID)
-								-- end
 								if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 								end
@@ -2838,56 +2830,43 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			elseif paramA == "itemID" then
 				-- itemID should only be the itemID, not including modID
 				itemID = GetItemIDAndModID(paramB) or paramB;
-				-- if #group > 0 then
-				-- 	for i,j in ipairs(group) do
-				-- 		if j.modItemID == paramB and j.s and not sourceID then
-				-- 			sourceID = j.s;
-				-- 			-- print("Set Known SourceID",itemID, paramB, j.modItemID, j.link, sourceID)
-				-- 		end
-				-- 	end
-				-- end
 			end
 
 			if itemID then
-				-- grab the exact source group one time and use that afterwards
+				print("ITEM ID SEARCH", itemID, floor(itemID));
+				
+				-- Grab the best matching source group.
 				local sourceGroup;
-				-- Match the DB group including modID
 				for i,j in ipairs(group.g or group) do
 					if j.modItemID == paramB then
 						sourceGroup = j;
-						-- if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
-						-- 	tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
-						-- 	break;
-						-- end
 					end
 				end
+				
 				-- Match the DB group by itemID if possible otherwise
 				if not sourceGroup then
 					for i,j in ipairs(group.g or group) do
 						if j.itemID == itemID then
 							sourceGroup = j;
-							-- if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
-							-- 	tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
-							-- 	break;
-							-- end
 						end
 					end
 				end
-				-- Show the unobtainable source text
+				
+				-- Show the unobtainable source text, if necessary.
 				if sourceGroup then
 					if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
 						tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 					end
-				end
-				-- pull the SourceID for this item from the source DB group if it hasn't been determined from the search input
-				if not sourceID then
-					if sourceGroup and sourceGroup.link and not sourceID then
+					
+					-- Acquire the SourceID if it hadn't been determined yet.
+					if not sourceID and sourceGroup.link then
 						sourceID = GetSourceID(sourceGroup.link);
-						-- print("Set Unknown SourceID",itemID,paramB,sourceGroup.modItemID,sourceGroup.link,sourceID)
 					end
+				else
+					-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
+					sourceGroup = { ["missing"] = true };
 				end
-				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
-				if not sourceGroup then sourceGroup = {["missing"] = true}; end
+				
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo and (sourceInfo.quality or 0) > 1 then
@@ -3437,21 +3416,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			group.total = 0;
 			group.progress = 0;
-			-- ensure the root of the group has no parent which would pass-thru to the metatable of the root which might be a source group
-			group.parent = false;
-			-- print("pre-BuildGroups")
-			-- for k,v in pairs(temp_orig) do
-			-- 	print(k,tostring(v),tostring(v.parent));
-			-- end
-			-- print("--");
-			-- only adjust the parents of the top-level group results since all sub-levels already reference their respective parents from CloneData
-			-- (recursively setting the .parent keys somehow replaces the .parent values on the Source groups in some cases... makes no sense)
+			group.parent = nil;
 			BuildGroups(group, group.g, true);
-			-- print("pre-UpdateGroups")
-			-- for k,v in pairs(temp_orig) do
-			-- 	print(k,tostring(v),tostring(v.parent));
-			-- end
-			-- print("--");
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
@@ -3459,9 +3425,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group.progress = group.progress + 1;
 				end
 			end
-
-			-- TEMP: save the final result as a top-level variable for debug /dump purposes
-			-- app.SearchResultGroup = CloneData(group);
 		end
 
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
@@ -3614,18 +3577,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group.working = working;
 		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
-		-- dont need to cache the raw version of literally everything since it will be rare that a raw search will be performed
-		-- print("Cached Search Group:",search)
-		-- app.PrintGroup(group)
-		-- print("---")
-		-- -- also cache the raw version of this search result
-		-- if group.key and group[group.key] then
-		-- 	local cacheKey = group.key .. ":" .. group[group.key];
-		-- 	if not searchCache[cacheKey] then
-		-- 		print("Cached Raw Search Group:",cacheKey)
-		-- 		searchCache[cacheKey] = { now, (working and 0.01) or 100000000, group };
-		-- 	end
-		-- end
 		return group;
 	end
 end
@@ -4227,7 +4178,6 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
-			-- print("link-search",itemString)
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
