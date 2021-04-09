@@ -3119,23 +3119,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 			local abbrevs = L["ABBREVIATIONS"];
 			for i,j in ipairs(group.g or group) do
-				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) then
-					-- don't use cost items as sources for the search
-					if not app.HasCost(j, paramA, paramB) then
-						local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-						if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
-							for source,replacement in pairs(abbrevs) do
-								text = string.gsub(text, source, replacement);
-							end
-							if j.u then
-								tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-							elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-							elseif not app.RecursiveUnobtainableFilter(j.parent) then
-								tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-							else
-								tinsert(temp, text);
-							end
+				-- Crieve NOTE: What do you mean don't show cost sources in the source list?
+				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) --[[and not app.HasCost(j, paramA, paramB)]] then
+					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+					if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
+						for source,replacement in pairs(abbrevs) do
+							text = string.gsub(text, source, replacement);
+						end
+						if j.u then
+							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						elseif not app.RecursiveUnobtainableFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						else
+							tinsert(temp, text);
 						end
 					end
 				end
