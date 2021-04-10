@@ -14,13 +14,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37, -- Elwynn Forest
 				},
@@ -251,9 +251,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12333, {	-- Candy Bucket — Azuremyst Isle, Azure Watch, Alliance
 				["isYearly"] = true,
-				["coord"] = { 48.5, 49.1, 97 },
+				["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2137,9 +2137,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
-				["coord"] = { 49.2, 51.4, 97 },	-- Azuremyst Isle
+				["coord"] = { 49.2, 51.4, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2341,13 +2341,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37  -- Elwynn Forest
 				},
@@ -2422,13 +2422,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37  -- Elwynn Forest
 				},
@@ -2487,7 +2487,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["maps"] = {
-					97,	-- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
 				},

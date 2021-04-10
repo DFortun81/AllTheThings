@@ -494,10 +494,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11735, {	-- Desecrate this Fire! — Azuremyst Isle
 				["isYearly"] = true,
 				["provider"] = { "o", 187917 },	-- Alliance Bonfire
-				["coord"] = { 44.7, 52.5, 97 },
+				["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 			}),
 			q(28912, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
@@ -932,9 +932,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11806, {	-- Honor the Flame — Azuremyst Isle
 				["provider"] = { "n", 25888 },	-- Azuremyst Isle Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 44.0, 53.0, 97 },
+				["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 			}),
 			q(28925, {	-- Honor the Flame — Badlands
 				["provider"] = { "n", 51585 },	-- Badlands Flame Warden
@@ -1925,7 +1925,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					70,		-- Dustwallow Marsh
 					71,		-- Tanaris
 					83,		-- Winterspring
-					97,		-- Azuremyst Isle
+					AZUREMYST_ISLE,
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
 					TEROKKAR_FOREST,

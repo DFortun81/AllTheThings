@@ -520,8 +520,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 63 },	-- Ashenvale
 										}),
 										crit(2,  {	-- Azuremyst Isle, Azure Watch
-											["coord"] = { 48.5, 49.1, 97 },
-											["maps"] = { 97 },	-- Azuremyst Isle
+											["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
+											["maps"] = { AZUREMYST_ISLE },
 										}),
 										crit(3,  {	-- Bloodmyst Isle, Blood Watch
 											["coord"] = { 55.7, 59.9, 106 },

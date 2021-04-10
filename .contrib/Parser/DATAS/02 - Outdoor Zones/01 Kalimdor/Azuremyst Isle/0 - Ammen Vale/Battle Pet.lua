@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(97, {	-- Azuremyst Isle
+		m(AZUREMYST_ISLE, {
 			m(468, {	-- Ammen Vale
 				filter(101, {	-- Pet Battle
 					p(464, {	-- Grey Moth

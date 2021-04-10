@@ -62,7 +62,7 @@ _.Holidays =
 							["g"] = {
 								crit(1, {	-- Azure Watch
 									["races"] = ALLIANCE_ONLY,
-									["maps"] = { 97 },	-- Azuremyst Isle
+									["maps"] = { AZUREMYST_ISLE },
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(2, {	-- Dolanaar

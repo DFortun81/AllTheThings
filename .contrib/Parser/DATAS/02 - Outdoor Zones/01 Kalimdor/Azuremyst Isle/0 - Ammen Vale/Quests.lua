@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(97, {	-- Azuremyst Isle
+		m(AZUREMYST_ISLE, {
 			m(468, {	-- Ammen Vale
 				n(QUESTS, {
 					q(9798,  {	-- Blood Elf Plans

@@ -204,6 +204,7 @@ EVERSONG_WOODS = 94;	-- Confirmed!
 GHOSTLANDS = 95;	-- Confirmed!
 ISLE_OF_QUELDANAS = 122;	-- Confirmed!
 SILVERMOON_CITY = 110;	-- Confirmed!
+AZUREMYST_ISLE = 97;	-- Confirmed!
 HELLFIRE_PENINSULA = 100;	-- Confirmed!
 ZANGARMARSH = 102;	-- Confirmed!
 NAGRAND = 107;	-- Confirmed!

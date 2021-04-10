@@ -9,9 +9,9 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
 				["provider"] = { "n", 34484 },	-- Cheerful Draenei Spirit
 				["isYearly"] = true,
-				["coord"] = { 47.6, 55.8, 97 },
+				["coord"] = { 47.6, 55.8, AZUREMYST_ISLE },
 				["races"] = { DRAENEI },
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

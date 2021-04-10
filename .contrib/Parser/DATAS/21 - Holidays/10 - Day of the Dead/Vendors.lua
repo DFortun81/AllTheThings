@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 		n(VENDORS, {
 			n(34382, {	-- Chapman
 				["coords"] = {
-					{ 47.8, 55.9, 97 },		-- Azuremyst Isle
+					{ 47.8, 55.9, AZUREMYST_ISLE },
 					{ 33.9, 39.3, 627 },	-- Dalaran: Broken Isles
 					{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
 					{ 69.4, 40.5, 89 },		-- Darnassus
@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 					{ 62.2, 67.4, 18 },		-- Tirisfal Glades
 				},
 				["maps"] = {
-					97,		-- Azuremyst Isle [Exodar]
+					AZUREMYST_ISLE,
 					627,	-- Dalaran: Broken Isles
 					125,	-- Dalaran: Northrend
 					89,		-- Darnassus

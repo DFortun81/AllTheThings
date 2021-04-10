@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(97, {	-- Azuremyst Isle
+		m(AZUREMYST_ISLE, {
 			n(VENDORS, {
 				n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
-					["coord"] = { 46.6, 70.6, 97 },
+					["coord"] = { 46.6, 70.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight

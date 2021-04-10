@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(97, {	-- Azuremyst Isle
+		m(AZUREMYST_ISLE, {
 			filter(101, {	-- Pet Battle
 				p(464, {	-- Grey Moth
 					["crs"] = { 62050 },	-- Grey Moth
@@ -19,7 +19,7 @@ _.Zones =
 					["crs"] = { 61081 },	-- Squirrel
 				}),
 				n(63077, {	-- Lehna
-					["coord"] = { 49.2, 52.0, 97 },
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
@@ -52,25 +52,25 @@ _.Zones =
 				}),
 				q(31569, {	-- Got one!
 					["provider"] = { "n", 63077 },	-- Lehna
-					["coord"] = { 49.2, 52.0, 97 },
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31825,	-- Level Up!
 				}),
 				q(31556, {	-- Learning the Ropes
 					["provider"] = { "n", 63077 },	-- Lehna
-					["coord"] = { 49.2, 52.0, 97 },
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31825, {	-- Level Up!
 					["provider"] = { "n", 63077 },	-- Lehna
-					["coord"] = { 49.2, 52.0, 97 },
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31568,	-- On The Mend
 				}),
 				q(31568, {	-- On The Mend
 					["provider"] = { "n", 63077 },	-- Lehna
-					["coord"] = { 49.2, 52.0, 97 },
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31556,	-- Learning the Ropes
 				}),

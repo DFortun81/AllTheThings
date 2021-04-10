@@ -12,7 +12,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["u"] = 19,				-- Noblegarden Filter
 				["provider"] = { "n", 32836 },	-- Noblegarden Vendor
 				["coords"] = {
-					{ 49.01, 51.19, 97 },	-- Azure Watch, Azuremyst Isle
+					{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 					{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
 					{ 43.03, 65.32, 37 },	-- Goldshire, Elwynn Forest
 					{ 54.11, 50.81, 27 },	-- Kharanos, Dun Morogh
@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
 					57,	-- Teldrassil
-					97,	-- Azuremyst Isle
+					AZUREMYST_ISLE,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -201,7 +201,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["isDaily"] = true,
 				["provider"] = { "n", 32799 },	-- Spring Collector
 				["coords"] = {
-					{ 49.07, 51.25, 97 },	-- Azure Watch, Azuremyst Isle
+					{ 49.07, 51.25, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 					{ 55.59, 51.36, 57 },	-- Dolanaar, Teldrassil
 					{ 42.98, 65.40, 37 },	-- Goldshire, Elwynn Forest
 					{ 53.99, 50.70, 27 },	-- Kharanos, Dun Morogh
@@ -210,7 +210,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
 					57,	-- Teldrassil
-					97,	-- Azuremyst Isle
+					AZUREMYST_ISLE,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
