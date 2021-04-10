@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(100, {	-- Hellfire Peninsula
+		m(HELLFIRE_PENINSULA, {
 			n(QUESTS, {
 				q(10864, {	-- A Burden of Souls
 					["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
-					["coord"] = { 52.2, 36.4, 100 },
+					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9442,  {	-- A Debilitating Sickness
@@ -22,7 +22,7 @@ _.Zones =
 				q(9355,  {	-- A Job for an Intelligent Man
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 16837 },	-- Foreman Biggums
-					["coord"] = { 52.0, 62.5, 100 },
+					["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25785),	-- Adept's Band
@@ -32,7 +32,7 @@ _.Zones =
 				q(9376,  {  -- A Pilgrim's Plight
 					["sourceQuests"] = { 9375 },	-- The Road to Falcon Watch
 					["provider"] = { "n", 17015 },
-					["coord"] = { 27.1, 61.9, 100 },
+					["coord"] = { 27.1, 61.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25783),	-- Pilgrim's Cover
@@ -43,19 +43,19 @@ _.Zones =
 				q(9410,  {	-- A Spirit Guide
 					["sourceQuests"] = { 9405 },	-- The Warchief's Mandate
 					["provider"] = { "n", 16574 },	-- Far Seer Regulkut
-					["coord"] = { 54.2, 37.8, 100 },
+					["coord"] = { 54.2, 37.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9401,  {	-- A Strange Weapon
 					["sourceQuests"] = { 9400 },	-- The Assassin
 					["provider"] = { "n", 17062 },	-- Fel Orc Corpse
-					["coord"] = { 33.6, 43.5, 100 },
+					["coord"] = { 33.6, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10367, {	-- A Traitor Among Us
 					["sourceQuests"] = { 10403 },	-- Naladu
 					["provider"] = { "n", 19361 },	-- Naladu
-					["coord"] = { 16.2, 65.0, 100 },
+					["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 				}),
 				q(9447,  {	-- Administering the Salve
 					["sourceQuests"] = { 9442 },	-- A Debilitating Sickness
@@ -71,46 +71,46 @@ _.Zones =
 				}),
 				q(29689, {	-- Advancing the Campaign (A)
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, 100 },
+					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29688, {	-- Advancing the Campaign (H)
 					["provider"] = { "n", 16575 },	-- Shadow Hunter Ty'jin
-					["coord"] = { 55.0, 36.3, 100 },
+					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9383,  {	-- An Ambitious Plan
 					["provider"] = { "n", 17006 },	-- Elsaana
-					["coord"] = { 23.2, 36.6, 100 },
+					["coord"] = { 23.2, 36.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10058, {	-- An Old Gift
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 16825 },	-- Father Malgor Devidicus
-					["coord"] = { 54.2, 63.5, 100 },
+					["coord"] = { 54.2, 63.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10835, {	-- Apothecary Antonivich
 					["sourceQuests"] = { 10538 },	-- Boiling Blood
 					["provider"] = { "n", 21279 },	-- Apothecary Albreck
-					["coord"] = { 61.1, 81.7, 100 },
+					["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10449, {	-- Apothecary Zelana
 					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
-					["coord"] = { 55.1, 36.3, 100 },
+					["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9374,  {	-- Arelion's Journal
 					["provider"] = { "n", 16793 },	-- Magistrix Carinda
-					["coord"] = { 26.3, 60.3, 100 },
+					["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9472,  {	-- Arelion's Mistress
 					["sourceQuests"] = { 10287 },	-- The Mistress Revealed
 					["provider"] = { "n", 16793 },
-					["coord"] = { 26.3, 60.3, 100 },
+					["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25505),	-- Carinda's Wedding Band
@@ -119,41 +119,41 @@ _.Zones =
 				q(10286, {	-- Arelion's Secret
 					["sourceQuests"] = { 9374 },	-- Arelion's Journal
 					["provider"] = { "n", 16793 },
-					["coord"] = { 26.3, 60.3, 100 },
+					["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10288, {	-- Arrival in Outland (A)
 					["sourceQuests"] = { 49862 },	-- To Outland [Breadcrumb]
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 19229 },	-- Commander Duron
-					["coord"] = { 87.3, 50.7, 100 },
+					["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10120, {	-- Arrival in Outland (H)
 					["sourceQuests"] = { 49816 },	-- To Outland [Breadcrumb]
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 19253 },	-- Lieutenant General Orion
-					["coord"] = { 87.3, 49.8, 100 },
+					["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10369, {	-- Arzeth's Demise
 					["sourceQuests"] = { 10368 },	-- The Dreghood Elders
 					["provider"] = { "n", 19361 },	-- Naladu
-					["coord"] = { 16.2, 65.0, 100 },
+					["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 				}),
 				q(9543,  {	-- Atonement
 					["sourceQuests"] = { 9424 },	-- Makuru's Vengeance
 					["provider"] = { "n", 16834 },	-- Anchorite Obadei
-					["coord"] = { 23.0, 40.3, 100 },
+					["coord"] = { 23.0, 40.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9418,  {	-- Avruu's Orb
 					["provider"] = { "i", 23580 },	-- Avruu's Orb
 					["coords"] = {
-						{ 25.57, 76.45, 100 },
-						{ 25.57, 76.33, 100 },
-						{ 25.53, 75.92, 100 },
-						{ 25.64, 75.25, 100 },
+						{ 25.57, 76.45, HELLFIRE_PENINSULA },
+						{ 25.57, 76.33, HELLFIRE_PENINSULA },
+						{ 25.53, 75.92, HELLFIRE_PENINSULA },
+						{ 25.64, 75.25, HELLFIRE_PENINSULA },
 					},
 					["crs"] = { 17084 },	-- Avruu
 					["g"] = {
@@ -165,7 +165,7 @@ _.Zones =
 				q(10630, {	-- Beneath Thrallmar
 					["sourceQuests"] = { 10629 },	-- Shizz Work
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
-					["coord"] = { 51.3, 30.5, 100 },
+					["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(30857),	-- Deep Core Lantern
 						i(30855),	-- Shatterstone Pick
@@ -177,18 +177,18 @@ _.Zones =
 				}),
 				q(9397,  {	-- Birds of a Feather
 					["provider"] = { "n", 16790 },
-					["coord"] = { 27.7, 60.3, 100 },
+					["coord"] = { 27.7, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(11516, {	-- Blast the Gateway
 					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 					["isDaily"] = true,
-					["coord"] = { 58.2, 17.6, 100 },
+					["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 				}),
 				q(11515, {	-- Blood for Blood
 					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 					["isDaily"] = true,
-					["coord"] = { 58.2, 17.6, 100 },
+					["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
 					["classes"] = { DEATHKNIGHT },
@@ -198,18 +198,18 @@ _.Zones =
 				q(10250, {	-- Bloody Vengeance
 					["sourceQuests"] = { 10230 },	-- The Battle Horn
 					["provider"] = { "n", 19736 },	-- Althen the Historian
-					["coord"] = { 61.7, 81.7, 100 },
+					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10538, {	-- Boiling Blood
 					["sourceQuests"] = { 10242 },	-- Spinebreaker Post
 					["provider"] = { "n", 21279 },	--Apothecary Albreck
-					["coord"] = { 61.1, 81.7, 100 },
+					["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10450, {	-- Bonechewer Blood
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
-					["coord"] = { 55.1, 36.3, 100 },
+					["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29919),	-- Adamantine Kite Shield
@@ -226,7 +226,7 @@ _.Zones =
 				q(10087, {	-- Burn It Up... For the Horde!
 					["sourceQuests"] = { 10086 },	-- Work For the Horde
 					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
-					["coord"] = { 55.1, 38.7, 100 },
+					["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29934),	-- Helm of Affinity
@@ -238,13 +238,13 @@ _.Zones =
 				q(10391, {	-- Cannons of Rage
 					["sourceQuests"] = { 10390 },	-- Forge Camp: Mageddon
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9427,  {  -- Cleansing the Waters
 					["sourceQuests"] = { 9426 },	-- The Pools of Aggonar
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
-					["coord"] = { 23.4, 36.5, 100 },
+					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25485),	-- Amaan's Signet
@@ -254,7 +254,7 @@ _.Zones =
 				}),
 				q(10132, {	-- Colossal Menace
 					["provider"] = { "n", 19293 },	-- Tola'thion
-					["coord"] = { 15.6, 52.0, 100 },
+					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(28062),	-- Expedition Repeater
 						i(28063),	-- Survivalist's Wand
@@ -269,13 +269,13 @@ _.Zones =
 				}),
 				q(9399,  {	-- Cruel Taskmasters
 					["provider"] = { "n", 16799 },	-- Ikan
-					["coord"] = { 23.0, 40.2, 100 },
+					["coord"] = { 23.0, 40.2, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10136, {	-- Cruel's Intentions
 					["sourceQuests"] = { 10392 },	-- Doorway to the Abyss
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(28041),	-- Bladefist's Breadth
@@ -286,7 +286,7 @@ _.Zones =
 				q(10484, {	-- Cursed Talismans
 					["sourceQuests"] = { 10483 },	-- Ill Omens
 					["provider"] = { "n", 21133 },	-- Corporal Ironridge
-					["coord"] = { 70.9, 63.3, 100 },
+					["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45843, {	-- Dark Omens
@@ -299,7 +299,7 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["coord"] = { 85.2, 50.1, 100 },
+					["coord"] = { 85.2, 50.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9587,  {	-- Dark Tidings (A)
@@ -314,7 +314,7 @@ _.Zones =
 				}),
 				q(9398,  {	-- Deadly Predators
 					["provider"] = { "n", 16797 },	-- Scout Vanura
-					["coord"] = { 23.3, 38.1, 100 },
+					["coord"] = { 23.3, 38.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10229, {	-- Decipher the Tome
@@ -329,12 +329,12 @@ _.Zones =
 						10442,	-- Helping the Cenarion Post (H)
 					},
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
-					["coord"] = { 15.6, 52.0, 100 },
+					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 				}),
 				q(10916, {	-- Digging for Prayer Beads
 					["sourceQuests"] = { 10903 },	-- Return to Honor Hold
 					["provider"] = { "n", 22430 },	-- Assistant Klatu
-					["coord"] = { 54.3, 63.6, 100 },
+					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10139, {	-- Dispatching the Commander
@@ -352,7 +352,7 @@ _.Zones =
 				q(10144, {	-- Disrupt Their Reinforcements (A)
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
-					["coord"] = { 71.3, 62.7, 100 },
+					["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29932),	-- Arcane Ringed Tunic
@@ -365,7 +365,7 @@ _.Zones =
 				q(10208, {	-- Disrupt Their Reinforcements (H)
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["provider"] = { "n", 19273 },	-- Forward Commander To'arch
-					["coord"] = { 65.8, 43.5, 100 },
+					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29932),	-- Arcane Ringed Tunic
@@ -378,19 +378,19 @@ _.Zones =
 				q(10394, {	-- Disruption - Forge Camp: Mageddon
 					["sourceQuests"] = { 10382 },	-- Go to the Front
 					["provider"] = { "n", 20793 },	-- Field Marshal Brock
-					["coord"] = { 68.2, 28.5, 100 },
+					["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10392, {	-- Doorway to the Abyss
 					["sourceQuests"] = { 10391 },	-- Cannons of Rage
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10937, {  -- Drill the Drillmaster
 					["sourceQuests"] = { 10936 },	-- Trollbane is Looking for You
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, 100 },
+					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(31720),	-- Battlemaster's Breastplate
@@ -406,7 +406,7 @@ _.Zones =
 				q(10396, {	-- Enemy of my Enemy...
 					["sourceQuests"] = { 10394 },	-- Disruption - Forge Camp: Mageddon
 					["provider"] = { "n", 20793 },	-- Field Marshal Brock
-					["coord"] = { 68.2, 28.5, 100 },
+					["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9441,  {	-- Envoy to the Mag'har
@@ -417,20 +417,20 @@ _.Zones =
 				}),
 				q(10121, {	-- Eradicate the Burning Legion
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10143, {	-- Expedition Point
 					["sourceQuests"] = { 10142 },	-- The Path of Anguish
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus
-					["coord"] = { 61.7, 60.9, 100 },
+					["coord"] = { 61.7, 60.9, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9498,  {	-- Falcon Watch
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
-					["coord"] = { 55.1, 39.1, 100 },
+					["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 				}),
 				q(9499,  {	-- Falcon Watch
@@ -443,13 +443,13 @@ _.Zones =
 					["sourceQuests"] = { 10903 },	-- Return to Honor Hold
 					["description"] = "Part of the |cFFFFD700Digging for Prayer Beads|r quest.",
 					["repeatable"] = true,
-					["coord"] = { 56.4, 62.9, 100 },
+					["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10482, {	-- Fel Orc Scavengers
 					["sourceQuests"] = { 10160 },	-- Know Your Enemy
 					["provider"] = { "n", 16820 },	-- Lieutenant Amadi
-					["coord"] = { 50.9, 60.1, 100 },
+					["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29919),	-- Adamantine Kite Shield
@@ -462,13 +462,13 @@ _.Zones =
 				q(10909, {	-- Fel Spirits
 					["sourceQuests"] = { 10903 },	-- Return to Honor Hold
 					["provider"] = { "n", 22430 },	-- Assistant Klatu
-					["coord"] = { 54.3, 63.6, 100 },
+					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10123, {	-- Felspark Ravine
 					["sourceQuests"] = { 10121 },	-- Eradicate the Burning Legion
 					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29911),	-- Agamaggan's Quill
@@ -481,13 +481,13 @@ _.Zones =
 				q(10254, {	-- Force Commander Danath
 					["sourceQuests"] = { 10140 },	-- Journey to Honor Hold
 					["provider"] = { "n", 19308 },	-- Marshal Isildor
-					["coord"] = { 54.6, 62.7, 100 },
+					["coord"] = { 54.6, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10390, {	-- Forge Camp: Mageddon
 					["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9408,  {	-- Forgotten Heroes
@@ -496,7 +496,7 @@ _.Zones =
 				q(10124, {	-- Forward Base: Reaver's Fall
 					["sourceQuests"] = { 10123 },	-- Felspark Ravine
 					["provider"] = { "n", 19256 },	-- Sergeeant Shatterskull
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10207, {	-- Forward Base: Reaver's Fall REUSE (NYI)
@@ -505,7 +505,7 @@ _.Zones =
 				q(10295, {  -- From the Abyss
 					["sourceQuests"] = { 10294 },	-- Void Ridge
 					["provider"] = { "n", 19683 },	-- Ogath the Mad
-					["coord"] = { 61.8, 81.5, 100 },
+					["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29400),	-- Abyssal Shroud
@@ -515,7 +515,7 @@ _.Zones =
 				}),
 				q(9563,  {	-- Gaining Mirren's Trust
 					["provider"] = { "n", 16851 },	-- Mirren Longbeard
-					["coord"] = { 23.9, 72.3, 100 },
+					["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45413, {	-- Gathering Information
@@ -524,7 +524,7 @@ _.Zones =
 				q(10382, {	-- Go to the Front
 					["sourceQuests"] = { 10163 },	-- Mission: The Abyssal Shelf
 					["provider"] = { "n", 20232 },	-- Wing Commander Gryphongar
-					["coord"] = { 79.3, 33.8, 100 },
+					["coord"] = { 79.3, 33.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10762, {	-- Grand Master Dumphry (removed, old BT key questline)
@@ -540,7 +540,7 @@ _.Zones =
 				q(10834, {  -- Grillok "Darkeye"
 					["sourceQuests"] = { 10813 },	-- The Eyes of Grillok
 					["provider"] = { "n", 22231 },	-- Zezzak
-					["coord"] = { 61.6, 81.8, 100 },
+					["coord"] = { 61.6, 81.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
@@ -563,7 +563,7 @@ _.Zones =
 				q(9361,  {	-- Helboar, the Other White Meat
 					["sourceQuests"] = { 9349 },	-- Ravager Egg Roundup
 					["provider"] = { "n", 19344 },	-- Legassi
-					["coord"] = { 49.2, 74.8, 100 },
+					["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
 				}),
 				q(10106, {	-- Hellfire Fortifications (A)
 					["sourceQuests"] = {
@@ -572,7 +572,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 18266 },	-- Warrant Officer Tracy Proudwell
 					["isDaily"] = true,
-					["coord"] = { 56.3, 62.8, 100 },
+					["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13410, {	-- Hellfire Fortifications (A)
@@ -580,14 +580,14 @@ _.Zones =
 					["provider"] = { "n", 18266 },	-- Warrant Officer Tracy Proudwell
 					["classes"] = { DEATHKNIGHT },
 					["isDaily"] = true,
-					["coord"] = { 56.3, 62.8, 100 },
+					["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13408, {	-- Hellfire Fortifications (A)
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 18266 },	-- Warrant Officer Tracy Proudwell
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
-					["coord"] = { 56.3, 62.8, 100 },
+					["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(40476),	-- Insignia of the Alliance
@@ -602,7 +602,7 @@ _.Zones =
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
-					["coord"] = { 55.9, 39.2, 100 },
+					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(40477),	-- Insignia of the Horde
@@ -612,7 +612,7 @@ _.Zones =
 					["sourceQuests"] = { 13409 },	-- Hellfire Fortifications
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["isDaily"] = true,
-					["coord"] = { 55.9, 39.2, 100 },
+					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(24581),	-- Mark of Thrallmar
@@ -621,19 +621,19 @@ _.Zones =
 				q(10443, {	-- Helping the Cenarion Post (A)
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
-					["coord"] = { 23.4, 36.5, 100 },
+					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10442, {	-- Helping the Cenarion Post (H)
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
-					["coord"] = { 27.7, 60.3, 100 },
+					["coord"] = { 27.7, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10258, {  -- Honor the Fallen
 					["sourceQuests"] = { 10250 },	-- Bloody Vengeance
 					["provider"] = { "n", 19736 },	-- Althen the Historian
-					["coord"] = { 61.7, 81.7, 100 },
+					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29108),	-- Blade of the Unyielding
@@ -653,11 +653,11 @@ _.Zones =
 				q(10238, {	-- How to Serve Goblins
 					["sourceQuests"] = { 10236 },	-- Outland Sucks!
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
-					["coord"] = { 51.3, 30.5, 100 },
+					["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 				}),
 				q(10086, {	-- I Work... For the Horde!
 					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
-					["coord"] = { 55.1, 38.7, 100 },
+					["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29938),	-- Battle Seeker Chesguard
@@ -669,12 +669,12 @@ _.Zones =
 				q(10483, {	-- Ill Omens
 					["sourceQuests"] = { 10482 },	-- Fel Orc Scavengers
 					["provider"] = { "n", 16820 },	-- Lieutenant Amadi
-					["coord"] = { 50.9, 60.1, 100 },
+					["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10161, {  -- In Case of Emergency...
 					["provider"] = { "n", 19367 },
-					["coord"] = { 49.1, 74.8, 100 },
+					["coord"] = { 49.1, 74.8, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(25980),	-- Aerodynamic Scaled Vest
 						i(25981),	-- Dirigible Crash Helmet
@@ -683,63 +683,63 @@ _.Zones =
 				}),
 				q(9366,  {	-- In Need of Felblood
 					["provider"] = { "n", 16791 },	-- Ryathen the Somber
-					["coord"] = { 26.9, 59.5, 100 },
+					["coord"] = { 26.9, 59.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9390,  {	-- In Search of Sedai
 					["provider"] = { "n", 16834 },	-- Anchorite Obadei
-					["coord"] = { 23.0, 40.3, 100 },
+					["coord"] = { 23.0, 40.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29543, {	-- Invading the Citadel (A)
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus
-					["coord"] = { 61.6, 60.7, 100 },
+					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29542, {	-- Invading the Citadel (H)
 					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
-					["coord"] = { 58.0, 41.2, 100 },
+					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10397, {	-- Invasion Point: Annihilator
 					["sourceQuests"] = { 10396 },	-- Enemy of my Enemy...
 					["provider"] = { "n", 20793 },	-- Field Marshal Brock
-					["coord"] = { 68.2, 28.5, 100 },
+					["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10213, {	-- Investigate the Crash
 					["sourceQuests"] = { 9345 },	-- Preparing the Salve
 					["provider"] = { "n", 16858 },	-- Grelag
-					["coord"] = { 60.9, 81.6, 100 },
+					["coord"] = { 60.9, 81.6, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10140, {	-- Journey to Honor Hold
 					["sourceQuests"] = { 10288 },	-- Arrival in Outland
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 18931 },	-- Amish Wildhammer
-					["coord"] = { 87.3, 52.4, 100 },
+					["coord"] = { 87.3, 52.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10289, {	-- Journey to Thrallmar
 					["sourceQuests"] = { 10120 },	-- Arrival in Outlanad
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 18930 },	-- Vlagga Freyfeather
-					["coord"] = { 87.3, 48.1, 100 },
+					["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10159, {	-- Keep Thornfang Hill Clear!
 					["provider"] = { "n", 16888 },	-- Mahuram Stouthoof
-					["coord"] = { 15.9, 52.1, 100 },
+					["coord"] = { 15.9, 52.1, HELLFIRE_PENINSULA },
 				}),
 				q(10160, {	-- Know Your Enemy
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, 100 },
+					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10078, {	-- Laying Waste to the Unwanted
 					["sourceQuests"] = { 10055 },	-- Waste Not, Want Not
 					["provider"] = { "n", 21209 },	-- Dumphry
-					["coord"] = { 51.2, 60.3, 100 },
+					["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29934),	-- Helm of Affinity
@@ -752,7 +752,7 @@ _.Zones =
 					["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 					["collectible"] = false,
 					["repeatable"] = true,
-					["coord"] = { 27.2, 62.0, 100 },
+					["coord"] = { 27.2, 62.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10062, {	-- Looking to the Leadership (NYI from beta)
@@ -761,7 +761,7 @@ _.Zones =
 				q(10057, {	-- Looking to the Leadership
 					["sourceQuests"] = { 10050 },	-- Unyielding Souls
 					["provider"] = { "n", 16827 },	-- Honor Guard Wesilow
-					["coord"] = { 50.8, 60.3, 100 },
+					["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25989),	-- Draenethyst Chaplet
@@ -771,18 +771,18 @@ _.Zones =
 				}),
 				q(9396,  {	-- Magic of the Arakkoa
 					["provider"] = { "n", 16792 },	-- Arcanist Calesthris Dawnstar
-					["coord"] = { 27.0, 59.7, 100 },
+					["coord"] = { 27.0, 59.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10220, {	-- Make Them Listen
 					["provider"] = { "n", 19682 },	-- Emissary Mordiba
-					["coord"] = { 61.7, 81.7, 100 },
+					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9424,  {  -- Makuru's Vengeance
 					["sourceQuests"] = { 9423 },	-- Return to Obadei
 					["provider"] = { "n", 16833 },	-- Makuru
-					["coord"] = { 23.1, 40.1, 100 },
+					["coord"] = { 23.1, 40.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25920),	-- Sedai's Blade
@@ -793,7 +793,7 @@ _.Zones =
 				q(9391,  {  -- Marking the Path
 					["sourceQuests"] = { 9340 },	-- The Great Fissure
 					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
-					["coord"] = { 28.4, 60.2, 100 },
+					["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25503),	-- Flamehandler's Gloves
@@ -826,7 +826,7 @@ _.Zones =
 				q(10146, {	-- Mission: Gateways Murketh and Shaadraz (A)
 					["sourceQuests"] = { 10144 },	-- Disrupt Their Reinforcements
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
-					["coord"] = { 71.3, 62.7, 100 },
+					["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29942),	-- Battle Scarred Leggings
@@ -838,7 +838,7 @@ _.Zones =
 				q(10129, {	-- Mission: Gateways Murketh and Shaadraz (H)
 					["sourceQuests"] = { 10208 },	-- Disrupt Their Reinforcements
 					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
-					["coord"] = { 65.8, 43.5, 100 },
+					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29942),	-- Battle Scarred Leggings
@@ -850,7 +850,7 @@ _.Zones =
 				q(10163, {	-- Mission: The Abyssal Shelf (A)
 					["sourceQuests"] = { 10344 },	-- Wing Commander Gryphongar
 					["provider"] = { "n", 20232 },	-- Wing Commander Gryphongar
-					["coord"] = { 79.3, 33.8, 100 },
+					["coord"] = { 79.3, 33.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29933),	-- Arcane Ringed Greaves
@@ -862,7 +862,7 @@ _.Zones =
 				q(10162, {	-- Mission: The Abyssal Shelf (H)
 					["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz
 					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
-					["coord"] = { 65.8, 43.5, 100 },
+					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29933),	-- Arcane Ringed Greaves
@@ -879,15 +879,15 @@ _.Zones =
 						{ "n", 20677 },	-- Morod the Windstirrer
 					},
 					["coords"] = {
-						{ 15.5, 58.7, 100 },	-- Akoru the Firecaller
-						{ 13.0, 58.4, 100 },	-- Aylaan the Waterwaker
-						{ 13.1, 61.0, 100 },	-- Morod the Windstirrer
+						{ 15.5, 58.7, HELLFIRE_PENINSULA },	-- Akoru the Firecaller
+						{ 13.0, 58.4, HELLFIRE_PENINSULA },	-- Aylaan the Waterwaker
+						{ 13.1, 61.0, HELLFIRE_PENINSULA },	-- Morod the Windstirrer
 					},
 				}),
 				q(10351, {	-- Natural Remedies
 					["sourceQuests"] = { 10349 },	-- The Earthbinder
 					["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
-					["coord"] = { 15.9, 51.5, 100 },
+					["coord"] = { 15.9, 51.5, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(28075),	-- Destroyer's Mantle
 						i(28069),	-- Golden Cenarion Greaves
@@ -897,12 +897,12 @@ _.Zones =
 				}),
 				q(10236, {	-- Outland Sucks!
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
-					["coord"] = { 51.3, 30.5, 100 },
+					["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 				}),
 				q(10400, {	-- Overlord
 					["sourceQuests"] = { 10395 },	-- The Dark Missive
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, 100 },
+					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28041),	-- Bladefist's Breadth
@@ -912,7 +912,7 @@ _.Zones =
 				}),
 				q(9345,  {	-- Preparing the Salve
 					["provider"] = { "n", 16858 },	-- Grelag
-					["coord"] = { 60.9, 81.6, 100 },
+					["coord"] = { 60.9, 81.6, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior)
@@ -927,62 +927,62 @@ _.Zones =
 				}),
 				q(9385,  {	-- Rampaging Ravagers
 					["provider"] = { "n", 16850 },	-- Gremni Longbeard
-					["coord"] = { 23.8, 72.1, 100 },
+					["coord"] = { 23.8, 72.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9349,  {	-- Ravager Egg Roundup
 					["provider"] = { "n", 19344 },	-- Legassi
-					["coord"] = { 49.2, 74.8, 100 },
+					["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
 				}),
 				q(10875, {	-- Report to Nazgrel
 					["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
-					["coord"] = { 52.2, 36.4, 100 },
+					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10291, {	-- Report to Nazgrel
 					["sourceQuests"] = { 10289 },	-- Journey to Thrallmar
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 19255 },	-- General Krakork
-					["coord"] = { 55.8, 36.8, 100 },
+					["coord"] = { 55.8, 36.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10103, {	-- Report to Zurai
 					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
-					["coord"] = { 28.4, 60.2, 100 },
+					["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10903, {	-- Return to Honor Hold
 					["sourceQuests"] = { 10485 },	-- Warlord of the Bleeding Hollow
 					["provider"] = { "n", 21133 },	-- Corporal Ironridge
-					["coord"] = { 70.9, 63.3, 100 },
+					["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9423,  {	-- Return to Obadei
 					["sourceQuests"] = { 9390 },	-- In Search of Sedai
 					["provider"] = { "n", 16852 },	-- Sedai's Corpse
-					["coord"] = { 26.8, 37.4, 100 },
+					["coord"] = { 26.8, 37.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10346, {	-- Return to the Abyssal Shelf (A)
 					["sourceQuests"] = { 10163 },	-- Mission: The Abyssal Shelf
 					["repeatable"] = true,
 					["provider"] = { "n", 20235 },	-- Gryphoneer Windbellow
-					["coord"] = { 78.2, 34.4, 100 },
+					["coord"] = { 78.2, 34.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10347, {	-- Return to the Abyssal Shelf (H)
 					["sourceQuests"] = { 10162 },	-- Mission: The Abyssal Shelf
 					["repeatable"] = true,
 					["provider"] = { "n", 19401 },	-- Wing Commander Brack
-					["coord"] = { 66.0, 43.7, 100 },
+					["coord"] = { 66.0, 43.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9732,  {	-- Return to the Marsh
 					["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
-					["coord"] = { 16.0, 52.1, 100 },
+					["coord"] = { 16.0, 52.1, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(25524),	-- Cenarion Expedition Boots
 						i(25522),	-- Marshstrider's Spaulders
@@ -999,8 +999,8 @@ _.Zones =
 						{ "n", 16576 },	-- Overlord Hun Maimfist
 					},
 					["coords"] = {
-						{ 65.8, 43.5, 100 },	-- To'arch
-						{ 65.0, 44.2, 100 },	-- Overlord Hun Maimfist
+						{ 65.8, 43.5, HELLFIRE_PENINSULA },	-- To'arch
+						{ 65.0, 44.2, HELLFIRE_PENINSULA },	-- Overlord Hun Maimfist
 					},
 					["races"] = HORDE_ONLY,
 				}),
@@ -1013,31 +1013,31 @@ _.Zones =
 				q(9430,  {	-- Sha'naar Relics
 					["sourceQuests"] = { 9543 },	-- Atonement
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
-					["coord"] = { 23.4, 36.5, 100 },
+					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10340, {	-- Shatter Point
 					["sourceQuests"] = { 10146 },	-- Mission: The Murketh and Shaadraz Gateways
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
-					["coord"] = { 71.3, 62.7, 100 },
+					["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10629, {	-- Shizz Work
 					["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
-					["coord"] = { 51.3, 30.5, 100 },
+					["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 				}),
 				q(9356,  {	-- Smooth as Butter
 					["sourceQuests"] = { 9361 },	-- Helboar, the Other White Meat
 					["provider"] = { "n", 19344 },	-- Legassi
-					["coord"] = { 49.2, 74.8, 100 },
+					["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(27684),	-- Recipe: Buzzard Bites
 					},
 				}),
 				q(9387,  {  -- Source of the Corruption
 					["provider"] = { "n", 16794 },	-- Apothecary Azethen
-					["coord"] = { 26.7, 59.7, 100 },
+					["coord"] = { 26.7, 59.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25914),	-- Broken Choker
@@ -1048,13 +1048,13 @@ _.Zones =
 				q(10242, {	-- Spinebreaker Post
 					["sourceQuests"] = { 10449 },	-- Apothecary Zelana
 					["provider"] = { "n", 21257 },	-- Apothecary Zelana
-					["coord"] = { 66.1, 41.9, 100 },
+					["coord"] = { 66.1, 41.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10255, {	-- Testing the Antidote
 					["sourceQuests"] = { 9372 },	-- Demonic Contamination
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
-					["coord"] = { 15.6, 52.0, 100 },
+					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(25985),	-- Cenarion Naturalist's Staff
 						i(25986),	-- Dreadtusk's Fury
@@ -1064,25 +1064,25 @@ _.Zones =
 				q(10389, {	-- The Agony and the Darkness
 					["sourceQuests"] = { 10392 },	-- Doorway to the Abyss
 					["provider"] = { "n", 21175 },	-- Magister Bloodhawk
-					["coord"] = { 55.1, 36.0, 100 },
+					["coord"] = { 55.1, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9417,  {	-- The Arakkoa Threat
 					["sourceQuests"] = { 9558 },	-- The Longbeards
 					["provider"] = { "n", 16850 },	-- Gremni Longbeard
-					["coord"] = { 23.8, 72.1, 100 },
+					["coord"] = { 23.8, 72.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9400,  {	-- The Assassin
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10230, {	-- The Battle Horn
 					["sourceQuests"] = { 10229 },	-- Decipher the Tome
 					["provider"] = { "n", 19736 },	-- Althen the Historian
-					["coord"] = { 61.7, 81.7, 100 },
+					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9590,  {	-- The Blood is Life
@@ -1099,12 +1099,12 @@ _.Zones =
 				q(9912,  {	-- The Cenarion Expedition
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
-					["coord"] = { 16.0, 52.1, 100 },
+					["coord"] = { 16.0, 52.1, HELLFIRE_PENINSULA },
 				}),
 				q(9370,  {  -- The Cleansing Must Be Stopped
 					["sourceQuests"] = { 9366 },	-- In Need of Felblood
 					["provider"] = { "n", 16791 },	-- Ryathen the Somber
-					["coord"] = { 26.9, 59.5, 100 },
+					["coord"] = { 26.9, 59.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25499),	-- Felblood Band
@@ -1114,14 +1114,14 @@ _.Zones =
 				}),
 				q(10395, {	-- The Dark Missive
 					["provider"] = { "i", 29588 },	-- Burning Legion Missive
-					["coord"] = { 53.0, 26.7, 100 },
+					["coord"] = { 53.0, 26.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 19298 },	-- Warbringer Arix'Amal
 				}),
 				q(10838, {	-- The Demonaic Scryer
 					["sourceQuests"] = { 10864 },	-- A Burden of Souls
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivichk
-					["coord"] = { 52.2, 36.4, 100 },
+					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(31715),	-- Demoniac Soul Prison
@@ -1130,12 +1130,12 @@ _.Zones =
 				q(10368, {	-- The Dreghood Elders
 					["sourceQuests"] = { 10367 },	-- A Traitor Among Us
 					["provider"] = { "n", 19361 },
-					["coord"] = { 16.2, 65.0, 100 },
+					["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 				}),
 				q(10349, {	-- The Earthbinder
 					["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 					["provider"] = { "n", 19293 },	-- Tola'thion
-					["coord"] = { 15.6, 52.0, 100 },
+					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 				}),
 				q(10935, {	-- The Exorcism of Colonel Jules
 					["sourceQuests"] = {
@@ -1143,13 +1143,13 @@ _.Zones =
 						10909,	-- Fel Spirits
 					},
 					["provider"] = { "n", 22430 },	-- Assistant Klatu
-					["coord"] = { 54.3, 63.6, 100 },
+					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10813, {	-- The Eyes of Grillok
 					["sourceQuests"] = { 10792 },	-- Zeth'Gor Must Burn!
 					["provider"] = { "n", 22231 },	-- Zezzak
-					["coord"] = { 61.6, 81.8, 100 },
+					["coord"] = { 61.6, 81.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10386, {	-- The Fel Reaver Slayer (NYI)
@@ -1161,7 +1161,7 @@ _.Zones =
 				q(9420,  {  -- The Finest Down
 					["sourceQuests"] = { 9563 },	-- Gaining Mirren's Trust
 					["provider"] = { "n", 16851 },	-- Mirren Longbeard
-					["coord"] = { 23.9, 72.3, 100 },
+					["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23587),	-- Mirren's Drinking Hat
@@ -1170,7 +1170,7 @@ _.Zones =
 				q(10876, {	-- The Foot of the Citadel
 					["sourceQuests"] = { 10875 },	-- Report to Nazgrel
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(31720),	-- Battlemaster's Breastplate
@@ -1185,31 +1185,31 @@ _.Zones =
 						9499,	-- Falcon Watch (blood elves only)
 					},
 					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
-					["coord"] = { 28.4, 60.2, 100 },
+					["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10399, {	-- The Heart of Darkness
 					["sourceQuests"] = { 10395 },	-- The Dark Missive
 					["provider"] = { "n", 16839 },	-- Warp-Scryer Kryv
-					["coord"] = { 56.6, 66.5, 100 },
+					["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10141, {	-- The Legion Reborn
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, 100 },
+					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9558,  {	-- The Longbeards
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16826 },	-- Sid Limbardi
-					["coord"] = { 54.2, 63.5, 100 },
+					["coord"] = { 54.2, 63.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9406,  {	-- The Mag'har
 					["sourceQuests"] = { 9410 },	-- A Spirit Guide
 					["provider"] = { "n", 16845 },	-- Gorkan Bloodfish
-					["coord"] = { 31.9, 27.7, 100 },
+					["coord"] = { 31.9, 27.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25510),	-- Ceremonial Robes
@@ -1221,7 +1221,7 @@ _.Zones =
 				q(10099, {  -- The Mastermind
 					["sourceQuests"] = { 10079 },	-- When This Mine's a-Rockin'
 					["provider"] = { "n", 16837 },	-- Foreman Biggums
-					["coord"] = { 52.0, 62.5, 100 },
+					["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25982),	-- Foreman's Sash
@@ -1233,17 +1233,17 @@ _.Zones =
 					["sourceQuests"] = { 10286 },	-- Arelion's Secret
 					["provider"] = { "n", 20159 },	-- Megister Aledis
 					["coords"] = {
-						{ 10.3, 50.3, 100 },
-						{ 15.7, 50.0, 100 },
-						{ 20.0, 50.0, 100 },
-						{ 24.8, 49.3, 100 },
+						{ 10.3, 50.3, HELLFIRE_PENINSULA },
+						{ 15.7, 50.0, HELLFIRE_PENINSULA },
+						{ 20.0, 50.0, HELLFIRE_PENINSULA },
+						{ 24.8, 49.3, HELLFIRE_PENINSULA },
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				q(10142, {	-- The Path of Anguish
 					["sourceQuests"] = { 10141 },	-- The Legion Reborn
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus
-					["coord"] = { 61.6, 60.7, 100 },
+					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29911),	-- Agamaggan's Quill
@@ -1256,22 +1256,22 @@ _.Zones =
 				q(10047, {	-- The Path of Glory
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 16839 },	-- Warp-Scryer Kryv
-					["coord"] = { 56.6, 66.5, 100 },
+					["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9426,  {	-- The Pools of Aggonar
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
-					["coord"] = { 23.4, 36.5, 100 },
+					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9375,  {	-- The Road to Falcon Watch
 					["provider"] = { "n", 16993 },	-- Wounded Blood Elf Pilgrim
-					["coord"] = { 24.5, 76.0, 100 },
+					["coord"] = { 24.5, 76.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9490,  {  -- The Rock Flayer Matriarch
 					["provider"] = { "n", 16799 },	-- Ikan
-					["coord"] = { 23.0, 40.2, 100 },
+					["coord"] = { 23.0, 40.2, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25479),	-- Boots of the Earthcaller
@@ -1282,7 +1282,7 @@ _.Zones =
 				q(9545,  {  -- The Seer's Relic
 					["sourceQuests"] = { 9430 },	-- Sha'naar Relics
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
-					["coord"] = { 23.4, 36.5, 100 },
+					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25507),	-- Leggings of Telhamat
@@ -1293,7 +1293,7 @@ _.Zones =
 				q(10093, {	-- The Temple of Telhamat
 					["sourceQuests"] = { 10047 },	-- The Path of Glory
 					["provider"] = { "n", 16839 },	-- Warp-Scryer Kryv
-					["coord"] = { 56.6, 66.5, 100 },
+					["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10061, {	-- The Unyielding (NYI, replaced by Unyielding Souls in beta)
@@ -1302,12 +1302,12 @@ _.Zones =
 				q(9405,  {	-- The Warchief's Mandate
 					["sourceQuests"] = { 9401 },	-- The Warchief's Mandate
 					["provider"] = { "n", 3230 },	-- Nazgrel
-					["coord"] = { 55.0, 35.9, 100 },
+					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10278, {	-- The Warp Rifts
 					["provider"] = { "n", 19683 },	-- Ogath the Mad
-					["coord"] = { 61.8, 81.5, 100 },
+					["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49816, {	-- To Outland!
@@ -1323,18 +1323,18 @@ _.Zones =
 				q(10936, {	-- Trollbane is Looking for You
 					["sourceQuests"] = { 10935 },	-- The Exorcism of Colonel Jules
 					["provider"] = { "n", 22430 },	-- Assistant Klatu
-					["coord"] = { 54.3, 63.6, 100 },
+					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9381,  {	-- Trueflight Arrows
 					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
-					["coord"] = { 27.7, 60.3, 100 },
+					["coord"] = { 27.7, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10050, {	-- Unyielding Souls
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 16827 },	-- Honor Guard Wesilow
-					["coord"] = { 50.8, 60.3, 100 },
+					["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
@@ -1349,13 +1349,13 @@ _.Zones =
 				q(10294, {	-- Void Ridge
 					["sourceQuests"] = { 10278 },	-- The Warp Rifts
 					["provider"] = { "n", 19683 },	-- Ogath the Mad
-					["coord"] = { 61.8, 81.5, 100 },
+					["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9351,  {	-- Voidwalkers Gone Wild
 					["sourceQuests"] = { 10161 },	-- In Case of Emergency...
 					["provider"] = { "n", 19367 },	-- "Screaming" Screed Luckheed
-					["coord"] = { 49.1, 74.8, 100 },
+					["coord"] = { 49.1, 74.8, HELLFIRE_PENINSULA },
 					["g"] = {
 						i(25787),	-- Charm of Alacrity
 						i(25786),	-- Hypnotist's Watch
@@ -1363,7 +1363,7 @@ _.Zones =
 				}),
 				q(9466,  {	-- Wanted: Blacktalon the Savage
 					["provider"] = { "o", 181638 },
-					["coord"] = { 28.0, 60.3, 100 },
+					["coord"] = { 28.0, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25483),	-- Fine Sash
@@ -1374,18 +1374,18 @@ _.Zones =
 				q(10809, {	-- Wanted: Worg Master Kruush
 					["sourceQuests"] = { 10449 },	-- Apothecary Zelana (TODO:: verify this. It isn't always available, but first seen while on "Spinebreaker Post")
 					["provider"] = { "o", 185166 },	-- Wanted Poster
-					["coord"] = { 61.2, 80.5, 100 },
+					["coord"] = { 61.2, 80.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10485, {	-- Warlord of the Bleeding Hollow
 					["sourceQuests"] = { 10484 },	-- Cursed Talismans
 					["provider"] = { "n", 21133 },	-- Corporal Ironridge
-					["coord"] = { 70.9, 63.3, 100 },
+					["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10055, {	-- Waste Not, Want Not
 					["provider"] = { "n", 21209 },	-- Dumphry
-					["coord"] = { 51.2, 60.3, 100 },
+					["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29938),	-- Battle Seeker Chesguard
@@ -1408,7 +1408,7 @@ _.Zones =
 				q(10079, {	-- When This Mine's a-Rockin'
 					["sourceQuests"] = { 10143 },	-- Expedition Point
 					["provider"] = { "n", 16837 },	-- Foreman Biggums
-					["coord"] = { 52.0, 62.5, 100 },
+					["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10088, {	-- When This Mine's a-Rockin' (NYI?)
@@ -1421,12 +1421,12 @@ _.Zones =
 					["sourceQuests"] = { 10340 },	-- Shatter Point
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20234 },	-- Runetog Wildhammer
-					["coord"] = { 78.4, 34.9, 100 },
+					["coord"] = { 78.4, 34.9, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10895, {	-- Zeth'Gor Must Burn! (A)
 					["provider"] = { "n", 19409 },	-- Wing Commander Dabir'ee
-					["coord"] = { 71.4, 62.4, 100 },
+					["coord"] = { 71.4, 62.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
@@ -1439,7 +1439,7 @@ _.Zones =
 				q(10792, {	-- Zeth'Gor Must Burn! (H)
 					["sourceQuests"] = { 10809 },	-- WANTED: Worg Master Kruush
 					["provider"] = { "n", 22107 },	-- Captain Darkhowl
-					["coord"] = { 61.2, 81.3, 100 },
+					["coord"] = { 61.2, 81.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27732),	-- Infiltrator's Cloak

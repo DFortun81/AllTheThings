@@ -853,36 +853,36 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 				["isYearly"] = true,
-				["coord"] = { 26.9, 59.6, 100 },
+				["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12352, {	-- Candy Bucket — Hellfire Peninsula, Honor Hold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.3, 63.6, 100 },
+				["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12353, {	-- Candy Bucket — Hellfire Peninsula, Temple of Telhamat, Alliance
 				["isYearly"] = true,
-				["coord"] = { 23.4, 36.5, 100 },
+				["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12388, {	-- Candy Bucket — Hellfire Peninsula, Thrallmar, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.8, 37.5, 100 },
+				["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

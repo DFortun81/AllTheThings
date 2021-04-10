@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(259, {	-- The Shattered Halls
 		["lvl"] = 65,
 		["mapID"] = 246,
-		["coord"] = { 47.66, 51.98, 100 },	-- The Shattered Halls, Hellfire Peninsula
+		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		["g"] = {
 			n(QUESTS, {
 				{	-- A Very Special Cloth

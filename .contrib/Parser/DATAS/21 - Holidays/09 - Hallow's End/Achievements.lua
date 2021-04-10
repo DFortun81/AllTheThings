@@ -766,12 +766,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 105 },	-- Blade's Edge Mountains
 										}),
 										crit(4,  {	-- Hellfire Peninsula, Honor Hold
-											["coord"] = { 54.3, 63.6, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(5,  {	-- Hellfire Peninsula, Temple of Telhamat
-											["coord"] = { 23.4, 36.5, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6,  {	-- Nagrand, Telaar
 											["coord"] = { 54.2, 75.8, 107 },
@@ -837,12 +837,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 105 },	-- Blade's Edge Mountain
 										}),
 										crit(4, {	-- Hellfire Peninsula, Falcon Watch
-											["coord"] = { 26.9, 59.6, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(5, {	-- Hellfire Peninsula, Thrallmar
-											["coord"] = { 56.8, 37.5, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6, {	-- Nagrand, Garadar
 											["coord"] = { 56.7, 34.6, 107 },

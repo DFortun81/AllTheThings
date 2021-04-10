@@ -212,10 +212,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11775, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
 				["provider"] = { "o", 187963 },	-- Horde Bonfire
-				["coord"] = { 57.3, 41.8, 100 },
+				["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
@@ -638,10 +638,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11747, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
 				["provider"] = { "o", 187930 },	-- Alliance Bonfire
-				["coord"] = { 61.9, 58.5, 100 },
+				["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(13444, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
@@ -1065,9 +1065,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11818, {	-- Honor the Flame — Hellfire Peninsula
 				["provider"] = { "n", 25900 },	-- Hellfire Peninsula Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 62.0, 58.0, 100 },
+				["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(13488, {	-- Honor the Flame — Howling Fjord
 				["provider"] = { "n", 32804 },	-- Howling Fjord Flame Warden
@@ -1445,9 +1445,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11851, {	-- Honor the Flame — Hellfire Peninsula
 				["provider"] = { "n", 25934 },	-- Hellfire Peninsula Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 55.0, 40.0, 100 },
+				["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
@@ -1926,7 +1926,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					71,		-- Tanaris
 					83,		-- Winterspring
 					97,		-- Azuremyst Isle
-					100,	-- Hellfire Peninsula
+					HELLFIRE_PENINSULA,
 					102,	-- Zangarmarsh
 					108,	-- Terokkar Forest
 					109,	-- Netherstorm
@@ -1959,7 +1959,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					78,		-- Un'goro Crater
 					83,		-- Winterspring
 					94,		-- Eversong Woods
-					100,	-- Hellfire Peninsula
+					HELLFIRE_PENINSULA,
 					102,	-- Zangarmarsh
 					117,	-- Howling Fjord
 					119,	-- Sholazar Basin

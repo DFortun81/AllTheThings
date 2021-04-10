@@ -13,8 +13,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["description"] = "Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",
 				["modelScale"] = 3.8,
 				["isRaid"] = true,
-				["coord"] = { 63.2, 16.0, 100 },
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["coord"] = { 63.2, 16.0, HELLFIRE_PENINSULA },
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(30732),	-- Exodar Life-Staff
 					i(30733),	-- Hope Ender

@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(248, { 	-- Hellfire Ramparts
 		["lvl"] = 57,
 		["mapID"] = 347,
-		["coord"] = { 47.65, 53.57, 100 },	-- Hellfire Ramparts, Hellfire Peninsula
+		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["g"] = {
 			n(QUESTS, {
 				q(29529, {	-- Demons in the Citadel

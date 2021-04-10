@@ -191,9 +191,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 105 },	-- Blade's Edge Mountains
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 62.0, 58.0, 100 },
+										["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
 										["coord"] = { 51.0, 34.0, 107 },
@@ -461,9 +461,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 105 },	-- Blade's Edge Mountains
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 57.3, 41.8, 100 },
+										["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
 										["coord"] = { 51.1, 34.2, 107 },
@@ -887,9 +887,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 105 },	-- Blade's Edge Mountains
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 55.0, 40.0, 100 },
+										["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
 										["coord"] = { 51.0, 34.0, 107 },
@@ -1167,9 +1167,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 105 },	-- Blade's Edge Mountains
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 61.9, 58.5, 100 },
+										["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
 										["coord"] = { 49.7, 69.6, 107 },

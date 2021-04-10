@@ -208,7 +208,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					1,		-- Durotar
 					18,		-- Tirisfal Glades
 					94,		-- Eversong Woods
-					100,	-- Hellfire Peninsula
+					HELLFIRE_PENINSULA,
 				},
 			}),
 			q(14037, {	-- Spice Bread Stuffing (Horde)

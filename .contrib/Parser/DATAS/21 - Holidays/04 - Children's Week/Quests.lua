@@ -21,10 +21,10 @@ _.Holidays =
 							10943, 	-- Children's Week
 						},
 						["coords"] = {
-							{ 88.56, 50.23, 100 },
+							{ 88.56, 50.23, HELLFIRE_PENINSULA },
 						},
 						["maps"] = {
-							100,	-- Hellfire Peninsula
+							HELLFIRE_PENINSULA,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -39,10 +39,10 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 88.56, 50.23, 100 },
+							{ 88.56, 50.23, HELLFIRE_PENINSULA },
 						},
 						["maps"] = {
-							100,	-- Hellfire Peninsula
+							HELLFIRE_PENINSULA,
 							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,

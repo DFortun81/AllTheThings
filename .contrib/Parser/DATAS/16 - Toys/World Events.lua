@@ -35,10 +35,10 @@ _.Toys =
 					{ 66.2, 26.3, 105 },  -- Blade's Edge Mountains (Outand) Gruul's Lair 50.82 31.43
 
 					{ 70.3, 54.5, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' Dark Portal 70.3 54.53
-					{ 80.4, 51.6, 100 },  -- Hellfire Peninsula (Outland) The Path of Glory Dark Portal 80.38 51.6
+					{ 80.4, 51.6, HELLFIRE_PENINSULA },  -- Hellfire Peninsula (Outland) The Path of Glory Dark Portal 80.38 51.6
 
 					{ 49.6, 50.7, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' HFC 49.56 50.73
-					{ 55.0, 48.9, 100 },  -- Hellfire Peninsula (Outland) The Path of Glory HFC 54.97 48.9
+					{ 55.0, 48.9, HELLFIRE_PENINSULA },  -- Hellfire Peninsula (Outland) The Path of Glory HFC 54.97 48.9
 
 					{ 60.0, 48.4, 539 },  -- Shadowmoon Valley (Draenor) Path of Light 'Crossroad' 60.02 48.37
 					{ 61.5, 46.1, 104 },  -- Shadowmoon Valley (Outland) The Warden's Cage 61.53 46.07

@@ -131,7 +131,7 @@ _.Achievements =
 					["coord"] = { 50.2, 59.0, 127 },
 				}),
 				crit(28, {	-- Nicki Tinytech (Hellfire Peninsula)
-					["coord"] = { 64.4, 49.2, 100 },
+					["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 				}),
 				crit(29, {	-- Obalis (Uldum)
 					["coord"] = { 56.6, 41.8, 249 },

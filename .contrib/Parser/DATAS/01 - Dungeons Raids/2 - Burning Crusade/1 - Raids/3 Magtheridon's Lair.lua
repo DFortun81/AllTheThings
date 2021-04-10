@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
 		["mapID"] = 331,
-		["coord"] = { 47.51, 52.08, 100 },	-- Magtheridon's Lair, Hellfire Peninsula
+		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
 		["g"] = {
 			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)

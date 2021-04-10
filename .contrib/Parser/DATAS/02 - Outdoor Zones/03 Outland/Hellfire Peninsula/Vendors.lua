@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(100, {	-- Hellfire Peninsula
+		m(HELLFIRE_PENINSULA, {
 			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
-					["coord"] = { 53.8, 65.8, 100 },
+					["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(16588, {	-- Apothecary Antonivich <Alchemy Trainer>
-					["coord"] = { 52.2, 36.4, 100 },
+					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(18267, {	-- Battlecryer Blackeye
-					["coord"] = { 55.9, 39.2, 100 },
+					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27832, {	-- Band of the Victor
@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
-					["coord"] = { 54.2, 41.6, 100 },
+					["coord"] = { 54.2, 41.6, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25475),	-- Blue Wind Rider Mount
@@ -66,14 +66,14 @@ _.Zones =
 					},
 				}),
 				n(16585, {	-- Cookie One-Eye <Food & Drink>
-					["coord"] = { 54.6, 41.0, 100 },
+					["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
-					["coord"] = { 26.4, 60.2, 100 },
+					["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
@@ -85,7 +85,7 @@ _.Zones =
 					},
 				}),
 				n(18753, {	-- Felannia <Enchanting Trainer>
-					["coord"] = { 52.2, 36.0, 100 },
+					["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				n(16602, {	-- Floyd Pinkus <Innkeeper>
-					["coord"] = { 56.7, 37.5, 100 },
+					["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30744),	-- Draenic Leather Pack
@@ -114,7 +114,7 @@ _.Zones =
 					},
 				}),
 				n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>
-					["coord"] = { 54.2, 62.6, 100 },
+					["coord"] = { 54.2, 62.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25471),	-- Ebon Gryphon Mount
@@ -127,7 +127,7 @@ _.Zones =
 					},
 				}),
 				n(18773, {	-- Johan Barnes <Enchanting Trainer>
-					["coord"] = { 53.6, 66.0, 100 },
+					["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -186,7 +186,7 @@ _.Zones =
 					},
 				}),
 				n(18775, {	-- Lebowski <Engineering Trainer>
-					["coord"] = { 55.6, 65.6, 100 },
+					["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23803, {	-- Schematic: Cogspinner Goggles
@@ -198,7 +198,7 @@ _.Zones =
 					},
 				}),
 				n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
-					["coord"] = { 56.6, 62.6, 100 },
+					["coord"] = { 56.6, 62.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29153),	-- Blade of the Archmage
@@ -240,7 +240,7 @@ _.Zones =
 					},
 				}),
 				n(19836, {	-- Mixie Farshot <Gun Merchant>
-					["coord"] = { 61.1, 81.4, 100 },
+					["coord"] = { 61.1, 81.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
@@ -252,7 +252,7 @@ _.Zones =
 					},
 				}),
 				n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
-					["coord"] = { 54.9, 37.8, 100 },
+					["coord"] = { 54.9, 37.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29168),	-- Ancestral Band
@@ -294,7 +294,7 @@ _.Zones =
 					},
 				}),
 				n(16583, {	-- Rohok
-					["coord"] = { 53.2, 38.2, 100 },
+					["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod
@@ -304,14 +304,14 @@ _.Zones =
 					},
 				}),
 				n(16826, {	-- Sid Limbardi <Innkeeper>
-					["coord"] = { 54.2, 63.6, 100 },
+					["coord"] = { 54.2, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(19436, {	-- Supply Master Broog
-					["coord"] = { 87.9, 48.3, 100 },
+					["coord"] = { 87.9, 48.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30744, {	-- Draenic Leather Pack
@@ -320,7 +320,7 @@ _.Zones =
 					},
 				}),
 				n(19001, {	-- Talaara <Weapon Merchant>
-					["coord"] = { 23.2, 40.0, 100 },
+					["coord"] = { 23.2, 40.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
@@ -381,7 +381,7 @@ _.Zones =
 					},
 				}),
 				n(18266, {	-- Warrant Officer Tracy Proudwell
-					["coord"] = { 56.4, 62.8, 100 },
+					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27833, {	-- Band of the Victor

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(100, {	-- Hellfire Peninsula
+		m(HELLFIRE_PENINSULA, {
 			n(ZONEDROPS, {
 				["maps"] = {
 					347,	-- Hellfire Ramparts
