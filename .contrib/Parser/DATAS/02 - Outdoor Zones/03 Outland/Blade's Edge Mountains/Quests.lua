@@ -784,7 +784,7 @@ _.Zones =
 				}),
 				q(11047, {	-- The Apprentice's Request
 					["provider"] = { "n", 23280 },	-- Agadai
-					["coord"] = { 52.0, 54.4, 107 },
+					["coord"] = { 52.0, 54.4, NAGRAND },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),

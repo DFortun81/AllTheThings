@@ -774,8 +774,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6,  {	-- Nagrand, Telaar
-											["coord"] = { 54.2, 75.8, 107 },
-											["maps"] = { 107 },	-- Nagrand
+											["coord"] = { 54.2, 75.8, NAGRAND },
+											["maps"] = { NAGRAND },
 										}),
 										crit(7,  {	-- Netherstorm, Area 52
 											["coord"] = { 32.0, 64.4, 109 },
@@ -845,8 +845,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6, {	-- Nagrand, Garadar
-											["coord"] = { 56.7, 34.6, 107 },
-											["maps"] = { 107 },	-- Nagrand
+											["coord"] = { 56.7, 34.6, NAGRAND },
+											["maps"] = { NAGRAND },
 										}),
 										crit(7, {	-- Netherstorm, Area 52
 											["coord"] = { 32.0, 64.4, 109 },

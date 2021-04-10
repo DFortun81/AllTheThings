@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(107, {	-- Nagrand (Outland)
+		m(NAGRAND, {
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(31924, { 	-- Narrok
 					["isDaily"] = true,
-					["coord"] = { 61.0, 49.4, 107 },
+					["coord"] = { 61.0, 49.4, NAGRAND },
 					["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
 					["g"] = {
 						i(89125)	-- Sack of Pet Supplies

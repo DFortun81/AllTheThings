@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(107, {	-- Nagrand (Outland)
+		m(NAGRAND, {
 			n(VENDORS, {
 				n(21485, {	-- Aldraan <Blade Merchant>
 					["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
-					["coord"] = { 42.8, 42.6, 107 },
+					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(24208, {	-- Design: Mystic Dawnstone
@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(19017, {	-- Borto <Trade Supplies>
-					["coord"] = { 53.2, 71.8, 107 },
+					["coord"] = { 53.2, 71.8, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21894, {	-- Pattern: Bolt of Soulcloth
@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				n(21474, {	-- Coreiel <Blade Merchant>
 					["description"] = "This vendor is only accessible when the Horde controls Halaa.",
-					["coord"] = { 42.8, 42.6, 107 },
+					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30570, {	-- Arkadian Claymore
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
-					["coord"] = { 60.6, 22.1, 107 },
+					["coord"] = { 60.6, 22.1, NAGRAND },
 					["g"] = {
 						i(136934, {	-- Raging Elemental Stone (TOY!)
 							["classes"] = { SHAMAN },
@@ -103,8 +103,8 @@ _.Zones =
 				n(19015, {	-- Mathar G'ochar <Trade Supplies>
 					["description"] = "This vendor pats around Garadar.",
 					["coords"] = {
-						{ 55.2, 37.0, 107 },
-						{ 57.0, 40.0, 107 },
+						{ 55.2, 37.0, NAGRAND },
+						{ 57.0, 40.0, NAGRAND },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -118,7 +118,7 @@ _.Zones =
 					},
 				}),
 				n(20097, {	-- Nula the Butcher <Cooking Supplies>
-					["coord"] = { 58.0, 35.6, 107 },
+					["coord"] = { 58.0, 35.6, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27697),	-- Recipe: Grilled Mudfish
@@ -129,7 +129,7 @@ _.Zones =
 				}),
 				n(18822, {	-- Quartermaster Davian Vaclav
 					["description"] = "This NPC is only accessible when the Alliance controls Halaa.",
-					["coord"] = { 41.2, 44.2, 107 },
+					["coord"] = { 41.2, 44.2, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27654, {	-- Avenger's Legplates
@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				n(18821, {	-- Quartermaster Jaffrey Noreliqe
 					["description"] = "This NPC is only accessible when the Horde controls Halaa.",
-					["coord"] = { 41.2, 44.2, 107 },
+					["coord"] = { 41.2, 44.2, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["g"]= {
 						i(27654, {	-- Avenger's Legplates
@@ -328,7 +328,7 @@ _.Zones =
 					},
 				}),
 				n(20096, {		-- Uriku <Cooking Supplies>
-					["coord"] = { 56.2, 73.2, 107 },
+					["coord"] = { 56.2, 73.2, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27697),	-- Recipe: Grilled Mudfish

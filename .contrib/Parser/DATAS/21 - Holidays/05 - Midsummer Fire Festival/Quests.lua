@@ -244,10 +244,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11778, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187966 },	-- Horde Bonfire
-				["coord"] = { 51.1, 34.2, 107 },
+				["coord"] = { 51.1, 34.2, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(54746, {	-- Desecrate this Fire! — Nazmir
 				["isYearly"] = true,
@@ -662,10 +662,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187933 },	-- Alliance Bonfire
-				["coord"] = { 49.7, 69.6, 107 },
+				["coord"] = { 49.7, 69.6, NAGRAND },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(11759, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
@@ -1093,9 +1093,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11821, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 51.0, 34.0, 107 },
+				["coord"] = { 51.0, 34.0, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(11830, {	-- Honor the Flame — Netherstorm
 				["provider"] = { "n", 25913 },	-- Netherstorm Flame Warden
@@ -1480,9 +1480,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11854, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25937 },	-- Nagrand Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.0, 34.0, 107 },
+				["coord"] = { 51.0, 34.0, NAGRAND },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(54747, {	-- Honor the Flame — Nazmir
 				["provider"] = { "n", 148950 },    -- Nazmir Flame Keeper

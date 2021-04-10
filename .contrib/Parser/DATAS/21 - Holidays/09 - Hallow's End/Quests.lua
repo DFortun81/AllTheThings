@@ -1225,18 +1225,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12392, {	-- Candy Bucket — Nagrand, Garadar, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.7, 34.6, 107 },
+				["coord"] = { 56.7, 34.6, NAGRAND },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12357, {	-- Candy Bucket — Nagrand, Telaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.2, 75.8, 107 },
+				["coord"] = { 54.2, 75.8, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

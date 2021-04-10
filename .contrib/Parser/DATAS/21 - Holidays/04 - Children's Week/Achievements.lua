@@ -131,9 +131,9 @@ _.Holidays =
 										["coords"] = {
 											{ 53.32, 79.27, 85 },	-- Alowicious Czervik [Orgrimmar]
 											{ 69.87, 85.18, 64 },	-- Brivelthwerp [Thousand Needles]
-											{ 54.22, 76.11, 107 },	-- Caregiver Isel [Nagrand]
+											{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel [Nagrand]
 											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
-											{ 56.73, 34.51, 107 },	-- Matron Tikkit [Nagrand]
+											{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit [Nagrand]
 											-- { },	-- Rachelle Gothena	[Orgrimmar]		Note!! Only shows up during Hallow's End
 											{ 53.66, 53.01, 85 },	-- Snack-O-Matic IV
 										},
@@ -142,7 +142,7 @@ _.Holidays =
 											84,		-- Stormwind City
 											85,		-- Orgrimmar
 											86,		-- Orgrimmar
-											107,	-- Nagrand
+											NAGRAND,
 										},
 									},
 								},

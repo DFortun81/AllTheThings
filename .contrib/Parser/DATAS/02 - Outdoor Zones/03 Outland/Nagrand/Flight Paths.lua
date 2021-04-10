@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(107, {	-- Nagrand (Outland)
+		m(NAGRAND, {
 			n(-228, {	-- Flight Paths
 				fp(120, {	-- Garadar, Nagrand
-					["coord"] = { 57.2, 35.2, 107 },
+					["coord"] = { 57.2, 35.2, NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(119, {	-- Telaar, Nagrand
-					["coord"] = { 54.2, 75.0, 107 },
+					["coord"] = { 54.2, 75.0, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

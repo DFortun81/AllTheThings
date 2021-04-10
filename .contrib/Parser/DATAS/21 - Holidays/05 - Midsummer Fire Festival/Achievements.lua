@@ -196,9 +196,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.0, 34.0, 107 },
+										["coord"] = { 51.0, 34.0, NAGRAND },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
 										["coord"] = { 31.0, 63.0, 109 },
@@ -466,9 +466,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.1, 34.2, 107 },
+										["coord"] = { 51.1, 34.2, NAGRAND },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
 										["coord"] = { 32.3, 68.4, 109 },
@@ -892,9 +892,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.0, 34.0, 107 },
+										["coord"] = { 51.0, 34.0, NAGRAND },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
 										["coord"] = { 32.0, 68.0, 109 },
@@ -1172,9 +1172,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 49.7, 69.6, 107 },
+										["coord"] = { 49.7, 69.6, NAGRAND },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
 										["coord"] = { 31.1, 62.7, 109 },

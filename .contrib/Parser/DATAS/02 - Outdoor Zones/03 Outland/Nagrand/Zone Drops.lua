@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(107, {	-- Nagrand (Outland)
+		m(NAGRAND, {
 			n(ZONEDROPS, {
 				i(23608, {	-- Plans: Khorium Belt
 					["crs"] = { 18203 },	-- Murkblood Raider

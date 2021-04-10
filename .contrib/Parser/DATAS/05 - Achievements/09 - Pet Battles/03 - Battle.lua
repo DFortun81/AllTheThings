@@ -125,7 +125,7 @@ _.Achievements =
 					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				}),
 				crit(26, {	-- Narrok (Nagrand, Outland)
-					["coord"] = { 61.0, 49.4, 107 },
+					["coord"] = { 61.0, 49.4, NAGRAND },
 				}),
 				crit(27, {	-- Nearly Headless Jacob (Crystalsong Forest)
 					["coord"] = { 50.2, 59.0, 127 },

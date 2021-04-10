@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(107, {	-- Nagrand (Outland)
+		m(NAGRAND, {
 			n(FACTIONS, {
 				faction(933, {	-- The Consortium
 					["crs"] = { 23007 },	-- Paulsta'ats <Consortium Quartermaster>
@@ -15,14 +15,14 @@ _.Zones =
 							q(9914, {	-- A Head Full of Ivory
 								--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 								["provider"] = { "n", 18333 },	-- Shadrek
-								["coord"] = { 31.8, 56.8, 107 },
+								["coord"] = { 31.8, 56.8, NAGRAND },
 								["isBreadcrumb"] = true,
 								["minReputation"] = { 933, NEUTRAL },
 								["maxReputation"] = { 933, FRIENDLY },
 							}),
 							q(9886, {	-- Membership Benefits
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["isMonthly"] = true,
 								["minReputation"] = { 933, NEUTRAL },
 								["maxReputation"] = { 933, FRIENDLY },
@@ -32,7 +32,7 @@ _.Zones =
 							}),
 							q(9884, {	-- Membership Benefits
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["isMonthly"] = true,
 								["minReputation"] = { 933, FRIENDLY },
 								["maxReputation"] = { 933, HONORED },
@@ -42,7 +42,7 @@ _.Zones =
 							}),
 							q(9885, {	-- Membership Benefits
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["isMonthly"] = true,
 								["minReputation"] = { 933, HONORED },
 								["maxReputation"] = { 933, REVERED },
@@ -52,7 +52,7 @@ _.Zones =
 							}),
 							q(9887, {	-- Membership Benefits
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["isMonthly"] = true,
 								["minReputation"] = { 933, REVERED },
 								["g"] = {
@@ -61,7 +61,7 @@ _.Zones =
 							}),
 							q(9883, {	-- More Crystal Fragments
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["sourceQuest"] = 9882,	-- Stealing from Thieves
 								["repeatable"] = true,
 								["minReputation"] = { 933, NEUTRAL },
@@ -69,7 +69,7 @@ _.Zones =
 							}),
 							q(9915, {	-- More Heads Full of Ivory
 								["provider"] = { "n", 18333 },	-- Shadrek
-								["coord"] = { 31.8, 56.8, 107 },
+								["coord"] = { 31.8, 56.8, NAGRAND },
 								["sourceQuest"] = 9914,	-- A Head Full of Ivory
 								["repeatable"] = true,
 								["minReputation"] = { 933, NEUTRAL },
@@ -77,28 +77,28 @@ _.Zones =
 							}),
 							q(9892, {	-- More Obsidian Warbeads
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["sourceQuest"] = 9893,	-- Obsidian Warbeads
 								["repeatable"] = true,
 								["minReputation"] = { 933, FRIENDLY },
 							}),
 							q(9893, {	-- Obsidian Warbeads
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["minReputation"] = { 933, FRIENDLY },
 							}),
 							q(9882, {	-- Stealing from Thieves
 								--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 								["isBreadcrumb"] = true,
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
-								["coord"] = { 31.4, 57.8, 107 },
+								["coord"] = { 31.4, 57.8, NAGRAND },
 								["minReputation"] = { 933, NEUTRAL },
 								["maxReputation"] = { 933, FRIENDLY },
 							}),
 						}),
 						n(VENDORS, {
 							n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
-								["coord"] = { 30.5, 56.9, 107 },
+								["coord"] = { 30.5, 56.9, NAGRAND },
 								["g"] = {
 									i(29115),	-- Consortium Blaster
 									i(31776),	-- Consortium Tabard
@@ -159,22 +159,21 @@ _.Zones =
 						n(QUESTS, {
 							q(10478, {	-- More Warbeads!
 								["provider"] = { "n", 18407 },	-- Warden Bullrok
-								["coord"] = { 55.8, 37.8, 107 },
+								["coord"] = { 55.8, 37.8, NAGRAND },
 								["sourceQuest"] = 10479,	-- Proving Your Strength
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(10479, {	-- Proving Your Strength
 								["provider"] = { "n", 18407 },	-- Warden Bullrok
-								["coord"] = { 55.8, 37.8, 107 },
+								["coord"] = { 55.8, 37.8, NAGRAND },
 								["races"] = HORDE_ONLY,
 							}),
 						}),
 						n(VENDORS, {
 							n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
 								["coords"] = {
-									{ 53.4, 36.8, 107 },	-- matches Wowhead
-									{ 55.8, 37.8, 107 },
+									{ 55.8, 37.8, NAGRAND },
 								},
 								["g"] = {
 									i(29145),	-- Band of Ancestral Spirits
@@ -215,12 +214,12 @@ _.Zones =
 						n(QUESTS, {
 							q(10476, {	-- Fierce Enemies
 								["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
-								["coord"] = { 54.8, 70.8, 107 },
+								["coord"] = { 54.8, 70.8, NAGRAND },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(10477, {	-- More Warbeads!
 								["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
-								["coord"] = { 54.8, 70.8, 107 },
+								["coord"] = { 54.8, 70.8, NAGRAND },
 								["sourceQuest"] = 10476,	-- Fierce Enemies
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
@@ -228,7 +227,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
-								["coord"] = { 54.5, 75.1, 107 },
+								["coord"] = { 54.5, 75.1, NAGRAND },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(29138),	-- Arechron's Gift

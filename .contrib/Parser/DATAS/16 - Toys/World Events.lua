@@ -11,13 +11,13 @@ _.Toys =
 				["description"] = "Go to the waypoint and use the toy.\nIt will spawn a portal between the two continents.\nUse this to quickly get to raids or zones you need to clear.\nA few portals of note are listed below:\n\nBRF<--->Gruul's Lair\nWoD Nagrand(north most)<--->SSC\nWoD SMV(right most)<--->Black Temple\nTanaan Jungle(HFC)<--->Magtheridon's Lair",
 				["coords"] = {
 					{ 50.3, 57.2, 550 },  --Nagrand (Draenor) Oshugun Spirit Woods 50.35 57.21
-					{ 41.3, 59.0, 107 },  -- Nagrand (Outland) Oshugun Spirit Fields 41.27 59.04
+					{ 41.3, 59.0, NAGRAND },  -- Nagrand (Outland) Oshugun Spirit Fields 41.27 59.04
 
 					{ 88.3, 22.8, 550 },  -- Nagrand (Draenor) Zangar Shore 88.30 22.84
 					{ 68.2, 88.5, ZANGARMARSH },  -- Zangarmarsh (Outland) Entrance to Nagrand 68.2 88.46
 
 					{ 71.4, 21.9, 550 },  -- Nagrand (Draenor) Throne of the Elements 71.41 21.94
-					{ 60.4, 25.6, 107 },  -- Nagrand (Outland) Throne of the Elements 60.36 25.56
+					{ 60.4, 25.6, NAGRAND },  -- Nagrand (Outland) Throne of the Elements 60.36 25.56
 
 					{ 81.1, 09.0, 550 },  -- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
 					{ 49.2, 55.4, ZANGARMARSH },  -- Zangarmarsh (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37

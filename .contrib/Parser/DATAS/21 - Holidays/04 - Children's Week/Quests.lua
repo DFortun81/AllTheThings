@@ -810,11 +810,11 @@ _.Holidays =
 							10943, 	-- Children's Week
 						},
 						["coords"] = {
-							{ 31.44, 57.46, 107 },	-- Dornaa taken to Aeris Landing
-							{ 31.49, 57.61, 107 },	-- Speak to Jheel
+							{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
+							{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
 						},
 						["maps"] = {
-							107,	-- Nagrand [Outlands]
+							NAGRAND,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1626,11 +1626,11 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 60.39, 23.36, 107 },	-- Salandria taken to the Throne of Elements
-							{ 60.65, 22.11, 107 },	-- Speak to Elementalist Sharvak
+							{ 60.39, 23.36, NAGRAND },	-- Salandria taken to the Throne of Elements
+							{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
 						},
 						["maps"] = {
-							107,	-- Nagrand [Outlands]
+							NAGRAND,
 							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
