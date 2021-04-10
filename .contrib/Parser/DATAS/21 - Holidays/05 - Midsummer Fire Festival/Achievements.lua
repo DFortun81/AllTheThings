@@ -326,7 +326,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 36 },	-- Burning Steppes
 									}),
 									crit(5,  {	-- Eversong Woods
-										["coord"] = { 46.3, 50.3, 94 },
+										["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 94 },	-- Eversong Woods
 									}),
@@ -752,7 +752,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 36 },	-- Burning Steppes
 									}),
 									crit(5,  {	-- Eversong Woods
-										["coord"] = { 46.4, 50.6, 94 },
+										["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 										["races"] = HORDE_ONLY,
 										["maps"] = { 94 },	-- Eversong Woods
 									}),

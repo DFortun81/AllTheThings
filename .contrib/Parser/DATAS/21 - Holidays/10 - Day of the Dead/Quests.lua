@@ -105,7 +105,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				["provider"] = { "n", 34483 },	-- Cheerful Blood Elf Spirit
 				["isYearly"] = true,
 				["races"] = { BLOODELF, NIGHTBORNE },
-				["coord"] = { 47.9, 49.4, 94 },
+				["coord"] = { 47.9, 49.4, EVERSONG_WOODS },
 				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)

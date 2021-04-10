@@ -38,7 +38,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["coords"] = {
 					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
-					{ 47.64, 47.31, 94 },	-- Falconwing Square, Eversong Woods
+					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
 					{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
 				},
 				["maps"] = {
@@ -231,7 +231,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["coords"] = {
 					{ 46.92, 59.53, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.63, 53.12, 18 },	-- Brill, Tirisfal Glades
-					{ 47.77, 47.12, 94 },	-- Falconwing Square, Eversong Woods
+					{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
 					{ 51.82, 42.06, 1 },	-- Razor Hill, Durotar
 				},
 				["maps"] = {

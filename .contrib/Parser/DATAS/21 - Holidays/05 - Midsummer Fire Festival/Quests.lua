@@ -172,7 +172,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11772, {	-- Desecrate this Fire! — Eversong Woods
 				["isYearly"] = true,
 				["provider"] = { "o", 187960 },	-- Horde Bonfire
-				["coord"] = { 46.3, 50.3, 94 },
+				["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 94 },	-- Eversong Woods
@@ -1410,7 +1410,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11848, {	-- Honor the Flame — Eversong Woods
 				["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 46.4, 50.6, 94 },
+				["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
 			}),

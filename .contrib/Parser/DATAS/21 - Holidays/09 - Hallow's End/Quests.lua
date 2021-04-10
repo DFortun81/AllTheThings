@@ -38,7 +38,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
@@ -719,7 +719,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12365, {	-- Candy Bucket — Eversong Woods, Fairbreeze Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 43.7, 71.1, 94 },
+				["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
@@ -728,7 +728,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12364, {	-- Candy Bucket — Eversong Woods, Falconwing Square, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.1, 47.8, 94 },
+				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
@@ -808,7 +808,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.1, 47.8, 94 },
+				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 95 },	-- Ghostlands
 				["g"] = {
@@ -2177,7 +2177,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11450, {	-- Fire Training (Eversong Woods)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 47.2, 46.6, 94 },	-- Eversong Woods
+				["coord"] = { 47.2, 46.6, EVERSONG_WOODS },	-- Eversong Woods
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
@@ -2360,7 +2360,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
@@ -2400,7 +2400,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,

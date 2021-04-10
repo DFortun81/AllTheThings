@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(94, {	-- Eversong Woods
+		m(EVERSONG_WOODS, {
 			n(VENDORS, {
 				n(18951, {	-- Erilia <Enchanting Vendor>
-					["coord"] = { 56.2, 54.6, 94 },
+					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(16860, {	-- Jilanne
-					["coord"] = { 44.8, 71.6, 94 },
+					["coord"] = { 44.8, 71.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29953),	-- Golden Dragonhawk Hatchling (PET!)
@@ -27,14 +27,14 @@ _.Zones =
 					},
 				}),
 				n(16262, {	-- Landraelanis <Tradesman>
-					["coord"] = { 49.0, 47.0, 94 },
+					["coord"] = { 49.0, 47.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27685),	-- Recipe: Lynx Steak
 					},
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>
-					["coord"] = { 54.2, 50.8, 94 },
+					["coord"] = { 54.2, 50.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(64915),	-- Cape of Silvermoon
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				n(16264, {	-- Winaestra <Hawkstrider Breeder>
-					["coord"] = { 61.0, 54.6, 94 },
+					["coord"] = { 61.0, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29221),	-- Black Hawkstrider (MOUNT!)

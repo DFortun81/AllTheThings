@@ -13,7 +13,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				{ 69.4, 40.5, 89 },		-- Darnassus
 				{ 61.0, 36.9, 27 },		-- Dun Morogh [IF]
 				{ 47.2, 17.8, 1 },		-- Durotar [Org]
-				{ 47.7, 49.7, 94 },		-- Eversong Woods [SMC]
+				{ 47.7, 49.7, EVERSONG_WOODS },		-- Eversong Woods [SMC]
 				{ 46.6, 25.8, 84 },		-- Stormwind City
 				{ 56.4, 18.4, 88 },		-- Thunder Bluff
 				{ 39.9, 21.8, 108 },	-- Terokkar Forest [Shatt]

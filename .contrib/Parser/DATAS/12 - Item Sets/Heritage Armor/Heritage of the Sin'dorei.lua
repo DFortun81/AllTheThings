@@ -62,7 +62,7 @@ _.GearSets =
 			q(53738, {	-- Defense of Qual'Danas
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["sourceQuest"] = 53737,	-- The Day Hope Died
-				["coord"] = { 51.1, 68.8, 94 },
+				["coord"] = { 51.1, 68.8, EVERSONG_WOODS },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { 94 },	-- Eversong Woods

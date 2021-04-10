@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(94, {	-- Eversong Woods
+		m(EVERSONG_WOODS, {
 			filter(101, {	-- Pet Battle
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				n(63080, {	-- Jarson Eversong
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
-					["coord"] = { 47.2, 47.2, 94 },
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 					["g"] = {
 						p(75, {	-- Black Kingsnake
 							["races"] = { ORC, TROLL },
@@ -48,25 +48,25 @@ _.Zones =
 				}),
 				q(31581, {	-- Got one!
 					["provider"] = { "n", 63080 },	-- Jarson Everlong
-					["coord"] = { 47.2, 47.2, 94 },
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31830,	-- Level Up!
 				}),
 				q(31579, {	-- Learning the Ropes
 					["provider"] = { "n", 63080 },	-- Jarson Everlong
-					["coord"] = { 47.2, 47.2, 94 },
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31824, {	-- Level Up!
 					["provider"] = { "n", 63080 },	-- Jarson Everlong
-					["coord"] = { 47.2, 47.2, 94 },
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31572,	-- On The Mend
 				}),
 				q(31580, {	-- On The Mend
 					["provider"] = { "n", 63080 },	-- Jarson Everlong
-					["coord"] = { 47.2, 47.2, 94 },
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31571,	-- Learning the Ropes
 				}),

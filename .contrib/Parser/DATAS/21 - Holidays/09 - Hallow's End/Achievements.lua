@@ -435,11 +435,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 23 },	-- Eastern Plaguelands
 										}),
 										crit(8,  {	-- Eversong Woods, Fairbreeze Village
-											["coord"] = { 43.7, 71.1, 94 },
+											["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
 											["maps"] = { 94 },	-- Eversong Woods
 										}),
 										crit(9,  {	-- Eversong Woods, Falconwing Square
-											["coord"] = { 48.1, 47.8, 94 },
+											["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 											["maps"] = { 94 },	-- Eversong Woods
 										}),
 										crit(10, {	-- Ghostlands, Tranquillien
