@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			n(RARES, {
 				n(54318, {	-- Ankha

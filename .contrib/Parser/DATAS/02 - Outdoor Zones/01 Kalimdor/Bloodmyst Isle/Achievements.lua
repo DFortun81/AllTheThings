@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(BLOODMYST_ISLE, {
 			n(ACHIEVEMENTS, {
 				ach(4926, {	-- Bloodmyst Isle Quests

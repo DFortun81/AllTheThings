@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(69, {	-- Feralas
 			n(RARES, {
 				n(5347, {	-- Antilus the Soarer

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(66, {	-- Desolace
 			n(FLIGHT_PATHS, {
 				fp(370, {	-- Ethel Rethor, Desolace

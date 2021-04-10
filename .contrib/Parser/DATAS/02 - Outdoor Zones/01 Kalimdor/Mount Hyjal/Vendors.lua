@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			n(VENDORS, {
 				n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>

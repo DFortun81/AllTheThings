@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(77, {	-- Felwood
 			n(ACHIEVEMENTS, {
 				ach(4931, {	-- Felwood Quests

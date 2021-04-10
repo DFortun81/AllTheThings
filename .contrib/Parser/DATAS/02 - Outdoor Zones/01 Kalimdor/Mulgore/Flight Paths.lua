@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(7, {	-- Mulgore
 			n(FLIGHT_PATHS, {
 				fp(402, {	-- Bloodhoof Village, Mulgore

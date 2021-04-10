@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(76, {	-- Azshara
 			n(ZONEDROPS, {
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility

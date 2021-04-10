@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(76, {	-- Azshara
 			n(RARES, {
 				n(6648, {	-- Antilos

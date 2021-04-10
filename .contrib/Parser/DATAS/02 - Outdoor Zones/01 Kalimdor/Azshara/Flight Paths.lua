@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(76, {	-- Azshara
 			n(FLIGHT_PATHS, {
 				fp(44, {	-- Bilgewater Harbor, Azshara

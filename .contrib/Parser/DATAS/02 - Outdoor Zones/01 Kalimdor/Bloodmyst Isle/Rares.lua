@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(BLOODMYST_ISLE, {
 			n(RARES, {
 				n(22060, {	-- Fenissa the Assassin

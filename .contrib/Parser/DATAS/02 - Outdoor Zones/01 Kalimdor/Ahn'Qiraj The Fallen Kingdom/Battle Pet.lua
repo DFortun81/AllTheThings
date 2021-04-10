@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
 			filter(101, {	-- Pet Battle
 				p(513, {	-- Qiraji Guardling

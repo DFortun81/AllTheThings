@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			n(FLIGHT_PATHS, {
 				fp(55, {	-- Brackenwall Village, Dustwallow Marsh

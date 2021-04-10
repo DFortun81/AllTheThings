@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(BLOODMYST_ISLE, {
 			n(QUESTS, {
 				q(9624,  {	-- A Favorite Treat

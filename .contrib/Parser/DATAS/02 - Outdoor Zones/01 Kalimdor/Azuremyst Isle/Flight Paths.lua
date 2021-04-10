@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZUREMYST_ISLE, {
 			n(FLIGHT_PATHS, {
 				fp(624, {	-- Azure Watch, Azuremyst Isle [Alliance]

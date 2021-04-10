@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(76, {	-- Azshara
 			n(ACHIEVEMENTS, {
 				ach(4927, {	-- Azshara Quests

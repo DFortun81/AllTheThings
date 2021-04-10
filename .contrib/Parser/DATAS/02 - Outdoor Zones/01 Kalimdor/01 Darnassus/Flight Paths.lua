@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(89, {	-- Darnassus
 			n(FLIGHT_PATHS, {
 				fp(457, {	-- Darnassus, Teldrassil [Alliance]

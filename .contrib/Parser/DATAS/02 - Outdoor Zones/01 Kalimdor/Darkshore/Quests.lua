@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(62, {	-- Darkshore
 			n(QUESTS, {
 				q(13554, {	-- A Cure In The Dark

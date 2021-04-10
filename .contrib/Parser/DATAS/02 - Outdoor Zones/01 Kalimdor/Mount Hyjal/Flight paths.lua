@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			n(FLIGHT_PATHS, {
 				fp(616, {	-- Gates of Sothann, Hyjal

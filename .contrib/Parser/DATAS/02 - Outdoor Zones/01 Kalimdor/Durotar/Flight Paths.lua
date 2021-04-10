@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(1, {	-- Durotar
 			n(FLIGHT_PATHS, {
 				fp(537, {	-- Razor Hill, Durotar

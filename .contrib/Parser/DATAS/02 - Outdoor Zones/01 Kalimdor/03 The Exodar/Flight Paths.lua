@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_EXODAR, {
 			n(FLIGHT_PATHS, {
 				fp(94, {	-- The Exodar

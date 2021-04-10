@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			n(ZONEDROPS, {
 				i(34535),	-- Azure Whelpling

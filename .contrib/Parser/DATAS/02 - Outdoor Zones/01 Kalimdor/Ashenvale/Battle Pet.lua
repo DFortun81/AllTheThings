@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(63, {	-- Ashenvale
 			filter(101, {	-- Pet Battle
 				p(478, {	-- Forest Moth

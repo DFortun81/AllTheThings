@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(199, {	-- Southern Barrens
 			n(VENDORS, {
 				n(44283, {	-- Camran <Mail Armor>

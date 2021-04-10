@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(88, {	-- Thunder Bluff
 			n(FLIGHT_PATHS, {
 				fp(22, {	-- Thunder Bluff, Mulgore

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(85, {	-- Orgrimmar
 			["description"] = "|cff66ccffOrgrimmar is the capital city of the Horde, with large settlements of trolls, orcs, tauren, and goblins.|r",
 			["isRaid"] = true,

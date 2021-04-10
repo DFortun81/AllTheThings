@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(63, {	-- Ashenvale
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand

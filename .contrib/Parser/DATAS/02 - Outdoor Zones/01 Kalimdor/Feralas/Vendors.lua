@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(69, {	-- Feralas
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>

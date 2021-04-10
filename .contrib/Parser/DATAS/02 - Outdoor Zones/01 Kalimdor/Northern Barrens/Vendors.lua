@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(10, {	-- Northern Barrens
 			n(VENDORS, {
 				n(3495,	{	-- Gagsprocket <Engineering Supplies>

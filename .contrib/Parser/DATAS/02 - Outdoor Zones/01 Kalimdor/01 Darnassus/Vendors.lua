@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(89, {	-- Darnassus
 			n(VENDORS, {
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>

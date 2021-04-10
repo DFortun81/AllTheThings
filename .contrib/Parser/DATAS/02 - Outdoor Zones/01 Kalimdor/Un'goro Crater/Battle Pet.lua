@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(78, {	-- Un'Goro Crater
 			filter(101, {	-- Pet Battle
 				p(632, {	-- Ash Lizard

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(BLOODMYST_ISLE, {
 			n(FLIGHT_PATHS, {
 				fp(93, {	-- Blood Watch, Bloodmyst Isle [Alliance]

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(80, {	-- Moonglade
 			n(QUESTS, {
 				q(5527,  {	-- A Reliquary of Purity

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(62, {	-- Darkshore
 			n(ZONEDROPS, {
 				i(5773, {	-- Pattern: Robes of Arcana

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(BLOODMYST_ISLE, {
 			filter(101, {	-- Pet Battle
 				p(628, {	-- Infected Fawn

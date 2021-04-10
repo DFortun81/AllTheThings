@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(81, {	-- Silithus
 			filter(101, {	-- Pet Battle
 				p(406, {	-- Beetle

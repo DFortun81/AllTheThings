@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(7, {	-- Mulgore
 			n(QUESTS, {
 				q(6361,  {	-- A Bundle of Hides

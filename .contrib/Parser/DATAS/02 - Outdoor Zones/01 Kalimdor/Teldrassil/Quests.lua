@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(57, {	-- Teldrassil
 			n(QUESTS, {
 				q(475,   {	-- A Troubling Breeze

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZUREMYST_ISLE, {
 			n(VENDORS, {
 				n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_EXODAR, {
 			filter(101, {	-- Pet Battle
 				p(464, {	-- Grey Moth

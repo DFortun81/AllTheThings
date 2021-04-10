@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_EXODAR, {
 			n(QUESTS, {
 				q(27225, {	-- A Summons from Ander Germaine

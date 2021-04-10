@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(66, {	-- Desolace
 			n(QUESTS, {
 				q(14284, {	-- A Revenant's Vengeance

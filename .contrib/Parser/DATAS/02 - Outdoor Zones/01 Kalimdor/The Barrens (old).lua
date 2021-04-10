@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 _.Zones = {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(10, {	-- Northern Barrens -- NOTE:: using this map for legacy barrens quests since they reused the mapID
 			n(QUESTS, {
 				q(6626, {	-- A Host of Evil

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(62, {	-- Darkshore
 			n(FLIGHT_PATHS, {
 				fp(339, {	-- Grove of the Ancients, Darkshore

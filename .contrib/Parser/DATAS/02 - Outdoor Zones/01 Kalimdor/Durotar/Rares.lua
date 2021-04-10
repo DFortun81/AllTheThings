@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(1, {	-- Durotar
 			n(RARES, {
 				n(5824, {	-- Captain Flat Tusk -- NO TRANSMOGGABLE LOOT!

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZUREMYST_ISLE, {
 			m(AMMEN_VALE, {
 				filter(101, {	-- Pet Battle

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

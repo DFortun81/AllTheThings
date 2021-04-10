@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			n(QUESTS, {
 				q(11144, {	-- [DEPRECATED]Confirming the Suspicion

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(89, {	-- Darnassus
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary

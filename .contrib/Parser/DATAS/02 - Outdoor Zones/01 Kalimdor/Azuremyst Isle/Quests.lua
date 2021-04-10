@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZUREMYST_ISLE, {
 			n(QUESTS, {
 				q(9528,  {	-- A Cry For Help

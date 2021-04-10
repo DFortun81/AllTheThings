@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(10, {	-- Northern Barrens
 			n(-38, {	-- Profession
 				prof(FISHING, {

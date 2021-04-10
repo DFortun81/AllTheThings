@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			n(RARES, {
 				n(50784,  {	-- Anith

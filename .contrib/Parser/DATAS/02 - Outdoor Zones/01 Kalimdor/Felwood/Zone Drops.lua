@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(77, {	-- Felwood
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, i(15752, {	-- Pattern: Living Leggings

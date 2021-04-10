@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_EXODAR, {
 			n(VENDORS, {
 				n(16705, {	-- Altaa <Alchemy Supplies>

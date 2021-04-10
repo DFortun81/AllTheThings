@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(77, {	-- Felwood
 			n(VENDORS, {
 				n(48577, {	-- Ciana <Weaponsmith>

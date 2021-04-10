@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(249, {	-- Uldum
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar, Uldum

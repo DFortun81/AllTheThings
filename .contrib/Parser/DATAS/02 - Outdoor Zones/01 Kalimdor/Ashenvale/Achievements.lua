@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(63, {	-- Ashenvale
 			n(ACHIEVEMENTS, {
 				ach(4925, {	-- Ashenvale Quests

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(71, {	-- Tanaris
 			n(FLIGHT_PATHS, {
 				fp(539, {	-- Bootlegger Outpost, Tanaris

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(65, {	-- Stonetalon Mountains
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(249, {	-- Uldum
 			filter(101, {	-- Pet Battle
 				p(484, {	-- Desert Spider

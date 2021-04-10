@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(81, {	-- Silithus
 			m(1021, {	-- Chamber of Heart
 				["achievementID"] = 12918,	-- Have a Heart

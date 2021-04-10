@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(85, {	-- Orgrimmar
 			n(RARES, {
 				n(130911, {	-- Charles Gastly
