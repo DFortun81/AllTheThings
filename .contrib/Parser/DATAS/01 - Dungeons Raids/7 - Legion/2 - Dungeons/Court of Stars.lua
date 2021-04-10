@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 761, 762, 763 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

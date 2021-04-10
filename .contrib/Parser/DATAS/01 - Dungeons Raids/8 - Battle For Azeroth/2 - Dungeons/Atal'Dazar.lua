@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(ACHIEVEMENTS,  {	-- Achievements
+			n(ACHIEVEMENTS,  {
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
@@ -34,7 +34,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(49888, {	-- Atal'Dazar: A Little Mojo
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

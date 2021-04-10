@@ -36,7 +36,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42723, {	-- Eye of Azshara: A Tough Shell
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

@@ -41,7 +41,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 96763 },	-- Saris Swifthammer
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41634, {	-- Work Order: Leystone Armguards
 							["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
 							["lvl"] = 110,

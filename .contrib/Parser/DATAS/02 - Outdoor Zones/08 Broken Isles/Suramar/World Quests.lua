@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(42859, {	-- A Draught of Hope
 						["lvl"] = 110,

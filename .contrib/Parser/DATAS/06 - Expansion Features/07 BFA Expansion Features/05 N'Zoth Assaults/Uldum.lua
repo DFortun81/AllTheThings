@@ -1117,7 +1117,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						-- TODO: this is the wrong questID, and also this quest title doesn't exist on Wowhead...
 						-- q(57585, {	-- Abyssal Santuary
 						-- 	["lvl"] = 120,

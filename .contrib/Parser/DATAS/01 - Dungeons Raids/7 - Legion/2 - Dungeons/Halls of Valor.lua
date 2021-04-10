@@ -25,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42241, {	-- Halls of Valor: A Worthy Challenge
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

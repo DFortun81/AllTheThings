@@ -169,6 +169,7 @@ QUESTS = -17;
 RARES = -16;
 TREASURES = -212;
 VENDORS = -2;
+WORLD_QUESTS = -34;
 ZONEDROPS = 0;
 
 -- Professions

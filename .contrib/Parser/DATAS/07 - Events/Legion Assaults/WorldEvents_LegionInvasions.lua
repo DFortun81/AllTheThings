@@ -116,7 +116,7 @@ _.WorldEvents =
 					["provider"] = { "n", 116868 },	-- Vethir
 				}),
 			}),
-			n(-34, { 	-- World Quests
+			n(WORLD_QUESTS, {
 				i(146766),  -- Nethercaller Cloak
 				i(146786),	-- Vileweave Cap
 				i(146791),	-- Vileweave Amice

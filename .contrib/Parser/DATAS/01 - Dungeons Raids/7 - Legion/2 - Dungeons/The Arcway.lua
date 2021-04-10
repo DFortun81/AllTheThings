@@ -7,7 +7,7 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 749,
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(43639, {	-- The Arcway: Arcanist Down
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

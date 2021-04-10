@@ -68,7 +68,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(41866, {	-- Neltharion's Lair: Blighted Bat
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

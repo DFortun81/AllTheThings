@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52798, {	-- A Few More Charges
 						["lvl"] = { 50 },

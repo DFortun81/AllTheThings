@@ -37,7 +37,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-34, {	-- World Quests
+				n(WORLD_QUESTS, {
 					q(43805, {	-- Aquatic Assassination
 						["lvl"] = 110,
 						["isWorldQuest"] = true,

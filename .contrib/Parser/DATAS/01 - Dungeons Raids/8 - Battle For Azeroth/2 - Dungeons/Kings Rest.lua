@@ -10,7 +10,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 120,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51502, {	-- King's Rest: Kingsguard
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

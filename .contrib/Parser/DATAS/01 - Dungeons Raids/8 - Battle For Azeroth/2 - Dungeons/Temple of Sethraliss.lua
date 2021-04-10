@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51378, {	-- Temple of Sethraliss: A Bazaar Menagerie
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

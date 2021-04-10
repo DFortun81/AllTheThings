@@ -16,7 +16,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51287, {	-- Tol Dagor: Sealed Supplies
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 706, 707, 708 },
 		["coord"] = { 52.5, 45.3, 634 },	-- Maw of Souls, Stormheim
 		["groups"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

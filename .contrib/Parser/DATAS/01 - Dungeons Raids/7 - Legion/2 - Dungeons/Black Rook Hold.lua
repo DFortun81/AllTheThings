@@ -32,7 +32,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(43711, {	-- Black Rook Hold: ... With Fire!
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

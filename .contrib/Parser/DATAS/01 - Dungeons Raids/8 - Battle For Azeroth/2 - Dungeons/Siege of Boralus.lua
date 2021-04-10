@@ -21,7 +21,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(52761, {	-- Siege of Boralus: Blood Money
 					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,

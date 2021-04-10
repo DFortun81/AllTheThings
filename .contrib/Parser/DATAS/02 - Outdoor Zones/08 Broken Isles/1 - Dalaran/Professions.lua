@@ -312,7 +312,7 @@ _.Zones =
 						["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
 							["isWorldQuest"] = true,
 							["requireSkill"] = ALCHEMY,
@@ -506,7 +506,7 @@ _.Zones =
 						["sourceQuest"] = 44449,	-- Advanced Quenching
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41638, {	-- Work Order: Leystone Gauntlets
 							["isWorldQuest"] = true,
 							["requireSkill"] = BLACKSMITHING,
@@ -582,7 +582,7 @@ _.Zones =
 						["sourceQuests"] = { 39905 },	-- Ringing True
 						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = ENCHANTING,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
@@ -702,7 +702,7 @@ _.Zones =
 							recipe(235775),	-- Rechargeable Reaves Battery
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = ENGINEERING,
 							["lvl"] = { 45 },
@@ -1011,7 +1011,7 @@ _.Zones =
 							recipe(209660),	-- Mass Mill Foxflower
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
@@ -1133,7 +1133,7 @@ _.Zones =
 							recipe(195850),	-- Versatile Skystone
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(46134, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
@@ -1306,7 +1306,7 @@ _.Zones =
 							recipe(194702),	-- Warhide Jerkin (Rank 1)
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41644, {	-- Work Order: Warhide Gloves
 							["requireSkill"] = LEATHERWORKING,
 							["lvl"] = { 45 },
@@ -1510,7 +1510,7 @@ _.Zones =
 					q(38954, {	-- Where's Lyndras?
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41650, {	-- Work Order: Silkweave Hood
 							["requireSkill"] = TAILORING,
 							["lvl"] = { 45 },

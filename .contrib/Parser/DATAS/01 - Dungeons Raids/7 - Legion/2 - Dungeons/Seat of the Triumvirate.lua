@@ -108,7 +108,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(48959, {	-- Seat of the Triumvirate: Dark Fissures
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

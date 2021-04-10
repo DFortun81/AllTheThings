@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 59.0, 31.3, 641 },
 		["lvl"] = 98,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42745, {	-- Darkheart Thicket: A Burden to Bear
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(48285, {	-- Aerial Superiority
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },

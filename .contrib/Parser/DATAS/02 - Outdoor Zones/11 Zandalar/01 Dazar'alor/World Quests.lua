@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52251, {	-- Compromised Reconnaissance
 						["lvl"] = 120,

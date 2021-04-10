@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
 			m(14, {	-- Arathi Highlands
-				n(QUESTS, {	-- [Tier 2]
+				n(QUESTS, {
 					q(53198, {	-- Back to Boralus
 						["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 						["sourceQuest"] = 53197,	-- Touring the Front
