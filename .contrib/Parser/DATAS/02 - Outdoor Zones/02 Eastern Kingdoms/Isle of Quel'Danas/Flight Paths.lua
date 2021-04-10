@@ -8,7 +8,7 @@ _.Zones =
 		m(122, {	-- Isle of Quel'Danas
 			n(-228, {	-- Flight Paths
 				fp(213, {	-- Shattered Sun Stage Area
-					["coord"] = { 48.4, 25.2, 122 },
+					["coord"] = { 48.4, 25.2, ISLE_OF_QUELDANAS },
 				}),
 			}),
 		}),

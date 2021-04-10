@@ -71,25 +71,25 @@ _.GearSets =
 			q(53725, {	-- A People Shattered
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53738,	-- Defense of Qual'Danas
-				["coord"] = { 48.3, 36.0, 122 },
+				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 122 },	-- Isle of Quel'danas
+				["maps"] = { ISLE_OF_QUELDANAS },
 				["lvl"] = 120,
 			}),
 			q(53853, {	-- The Setting Sun
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53725,	-- A People Shattered
-				["coord"] = { 48.3, 36.0, 122 },
+				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 122 },	-- Isle of Quel'danas
+				["maps"] = { ISLE_OF_QUELDANAS },
 				["lvl"] = 120,
 			}),
 			q(54096, {	-- The Fall of the Sunwell
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53853,	-- The Setting Sun
-				["coord"] = { 48.3, 36.0, 122 },
+				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = {
