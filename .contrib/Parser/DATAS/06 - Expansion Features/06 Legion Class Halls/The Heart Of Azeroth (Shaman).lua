@@ -56,11 +56,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 					}),
 					q(41900, {	-- A Promise of Earth
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 42065 },	-- The Twilight Master
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 						["g"] = {
 							i(139705),	-- Farseer's Wristwraps
 						},
@@ -86,8 +85,8 @@ _.ExpansionFeatures =
 					}),
 					q(44253, {	-- A Vision of Triumph
 						["classes"] = { SHAMAN },
-						["lvl"] = 110,
 						["provider"] = { "n", 112318 },	-- Flamesmith Lanying
+						["coord"] = { 30.3, 60.6, 726 },
 						["g"] = {
 							i(139701),	-- Farseer's Mask
 						},
@@ -165,10 +164,10 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 					}),
 					q(41747, {	-- Champion: Avalanchion
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
+						["coord"] = { 34.6, 34.0, 726 },
 						["g"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
@@ -202,9 +201,9 @@ _.ExpansionFeatures =
 					}),
 					q(41746, {	-- Champion: Muln Earthfury
 						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
+						["coord"] = { 32.0, 43.8, 726 },
 						["g"] = {
 							follower(614),	-- Muln Earthfury
 						},
@@ -265,11 +264,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
 					}),
 					q(41777, {	-- Destroying the Cult
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = { 42068 },	-- The Return of Twilight
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["coord"] = { 64.0, 70.5, 207 },	-- Deepholm
 					}),
 					q(45767, {	-- Elemental Cores
 						["classes"] = { SHAMAN },
@@ -313,13 +311,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41899, {	-- Held Captive!
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(45971, {	-- Infernal Phenomena
@@ -347,13 +344,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(42200, {	-- Mission: Investigating Deepholm
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = {
 							42986,	-- Enemies of Air
 							42984,	-- Eye of Azshara: The Scepter of Storms
 						},
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(42983, {	-- Mistral Essence
 						["sourceQuests"] = { 42996 },	-- The Maelstrom Pillar: Air
@@ -423,10 +420,10 @@ _.ExpansionFeatures =
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(42208, {	-- Return to the Firelands
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(42383, {	-- Rise, Champions
 						["sourceQuests"] = { 42114 },	-- The Ritual of Tides
@@ -543,14 +540,13 @@ _.ExpansionFeatures =
 						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41775, {	-- The Great Stonemother
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = {
 							40224,	-- The Hammer in the Deep
 							42200,	-- Mission: Investigating Deepholm
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(40224, {	-- The Hammer in the Deep
 						["sourceQuests"] = { 42937 },	-- Needlerock Beatdown
@@ -572,17 +568,16 @@ _.ExpansionFeatures =
 						["coord"] = { 33.0, 60.4, 726 },
 					}),
 					q(42997, {	-- The Maelstrom Pillar: Earth
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(41897, {	-- The Master's Plan
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = { 42068 },	-- The Return of Twilight
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["coord"] = { 64.0, 70.5, 207 },	-- Deepholm
 					}),
 					q(45706, {	-- The Power of Thousands
 						["classes"] = { SHAMAN },
@@ -591,11 +586,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45652 },	-- A "Humble" Request
 					}),
 					q(42068, {	-- The Return of Twilight
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 41775 },	-- The Great Stonemother
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42114, {	-- The Ritual of Tides
 						["sourceQuests"] = { 42188 },	-- Nobundo Awaits
@@ -619,14 +613,14 @@ _.ExpansionFeatures =
 						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42065, {	-- The Twilight Master
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = {
 							41899,	-- Held Captive!
 							41898,	-- Unleashing the Elements
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						
+						["maps"] = { 207, 209 },	-- Deepholm
 					}),
 					q(39771, {	-- The Voice of Thunder (awards The Fist of Ra-Den elemental artifact)
 						["sourceQuests"] = { 43338 },	-- The Codex of Ra
@@ -660,14 +654,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(41898, {	-- Unleashing the Elements
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["maps"] = { 207, 209 },	-- Deepholm
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -691,10 +684,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96539 },	-- Stormcaller Mylra
 					}),
 					q(42988, {	-- Worldmender
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(44006, {	-- Your Fullest Potential
 						["sourceQuests"] = { 40224 },	-- The Hammer in the Deep
