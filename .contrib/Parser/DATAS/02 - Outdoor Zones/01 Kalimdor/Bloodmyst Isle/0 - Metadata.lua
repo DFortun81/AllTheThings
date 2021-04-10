@@ -4,9 +4,9 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(106, {	-- Bloodmyst Isle
+		m(BLOODMYST_ISLE, {
 			["achievementID"] = 861,
-			["description"] = "|cff66ccffBloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.|r",							
+			["description"] = "Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",							
 			["lvl"] = 10,
 		}),
 	}),

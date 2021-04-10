@@ -367,9 +367,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12341, {	-- Candy Bucket — Bloodmyst Isle, Blood Watch, Alliance
 				["isYearly"] = true,
-				["coord"] = { 55.7, 59.9, 106 },
+				["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -526,10 +526,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11738, {	-- Desecrate this Fire! — Bloodmyst Isle
 				["isYearly"] = true,
 				["provider"] = { "o", 187921 },	-- Alliance Bonfire
-				["coord"] = { 56.0, 68.5, 106 },
+				["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 			}),
 			q(13440, {	-- Desecrate this Fire! — Borean Tundra
 				["isYearly"] = true,
@@ -960,9 +960,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11809, {	-- Honor the Flame — Bloodmyst Isle
 				["provider"] = { "n", 25891 },	-- Bloodmyst Isle Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 55.0, 69.0, 106 },
+				["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 			}),
 			q(13485, {	-- Honor the Flame — Borean Tundra
 				["provider"] = { "n", 32801 },	-- Borean Tundra Flame Warden

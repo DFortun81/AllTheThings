@@ -71,7 +71,7 @@ _.Secrets =
 				["sourceQuests"] = { 50104 },	-- Step 7: Finding Nuu
 				["description"] = "Take Uuna to Blood Watch on Bloodmyst Isle.",
 				["name"] = "Step 8: Shooting Stars",
-				["coord"] = { 56.4, 56.6, 106 },
+				["coord"] = { 56.4, 56.6, BLOODMYST_ISLE },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50106, {	-- Step 9: Flower Crown

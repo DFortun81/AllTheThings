@@ -121,9 +121,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { AZUREMYST_ISLE },
 									}),
 									crit(3,  {	-- Bloodmyst Isle
-										["coord"] = { 55.0, 69.0, 106 },
+										["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 106 },	-- Bloodmyst Isle
+										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
 										["coord"] = { 49.0, 23.0, 62 },
@@ -1097,9 +1097,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { AZUREMYST_ISLE },
 									}),
 									crit(3,  {	-- Bloodmyst Isle
-										["coord"] = { 56.0, 68.5, 106 },
+										["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 106 },	-- Bloodmyst Isle
+										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
 										["coord"] = { 49.0, 22.5, 62 },
