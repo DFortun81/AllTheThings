@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(241, {	-- Twilight Highlands
 			n(QUESTS, {
 				q(28001, {	-- A Coward's Due

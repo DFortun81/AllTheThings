@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(14, {	-- Arathi Highlands
 			n(ZONEDROPS, {
 				i(5624,  {	-- Circlet of the Order

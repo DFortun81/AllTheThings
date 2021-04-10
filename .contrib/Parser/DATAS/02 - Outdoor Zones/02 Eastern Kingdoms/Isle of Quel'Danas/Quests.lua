@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(ISLE_OF_QUELDANAS, {
 			n(QUESTS, {
 				q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)

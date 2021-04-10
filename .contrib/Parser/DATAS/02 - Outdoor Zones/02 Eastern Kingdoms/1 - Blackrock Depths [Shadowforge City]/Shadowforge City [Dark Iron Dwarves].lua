@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdom
+	m(EASTERN_KINGDOMS, {
 		m(1186, {	-- Blackrock Depths: Shadowforge City
 			q(51486, {	-- Fer the Alliance
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan

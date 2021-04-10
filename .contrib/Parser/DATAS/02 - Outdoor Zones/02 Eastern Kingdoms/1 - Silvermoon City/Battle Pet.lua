@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(110, { 	-- Silvermoon City
+	m(EASTERN_KINGDOMS, {
+		m(SILVERMOON_CITY, {
 			filter(101, { 	-- Pet Battle
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(17, {	-- Blasted Lands
 			n(ZONEDROPS, {
 				i(10593, {	-- Imperfect Draenethyst Fragment

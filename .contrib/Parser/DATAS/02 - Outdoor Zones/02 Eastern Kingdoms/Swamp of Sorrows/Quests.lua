@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(51, {	-- Swamp of Sorrows
 			n(QUESTS, {
 				q(2801,  {	-- A Tale of Sorrow

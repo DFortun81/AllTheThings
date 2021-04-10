@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(GHOSTLANDS, {
 			n(QUESTS, {
 				q(10372, {	-- A Discreet Inquiry

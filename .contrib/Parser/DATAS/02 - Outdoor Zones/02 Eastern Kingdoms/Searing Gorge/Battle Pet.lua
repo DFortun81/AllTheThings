@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(32, {	-- Searing Gorge
 			filter(101, {	-- Pet Battle
 				p(427, {	-- Ash Spiderling

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(49, {	-- Redridge Mountains
 			n(ACHIEVEMENTS, {
 				ach(4902, {	-- Redridge Mountain Quests

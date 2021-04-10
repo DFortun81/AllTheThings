@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(GHOSTLANDS, {
 			n(RARES, {
 				n(22062, {	-- Dr. Whitherlimb

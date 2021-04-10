@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(52, {	-- Westfall
 			n(ZONEDROPS, {
 				i(1959, {	-- Cold Iron Pick

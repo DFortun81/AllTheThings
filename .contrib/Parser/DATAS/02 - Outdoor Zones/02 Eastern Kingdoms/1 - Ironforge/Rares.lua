@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(87, {	-- Ironforge
 			n(RARES, {
 				n(51596, {	-- Wildhammer Fact Checker

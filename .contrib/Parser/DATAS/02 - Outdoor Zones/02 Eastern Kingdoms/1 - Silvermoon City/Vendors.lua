@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(SILVERMOON_CITY, {
 			n(VENDORS, {
 				["races"] = HORDE_ONLY,

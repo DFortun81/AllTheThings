@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(EVERSONG_WOODS, {
 			filter(101, {	-- Pet Battle
 				p(459, {	-- Cat

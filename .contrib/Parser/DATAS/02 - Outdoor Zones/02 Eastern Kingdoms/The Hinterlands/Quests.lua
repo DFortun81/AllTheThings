@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(26, {	-- The Hinterlands
 			n(QUESTS, {
 				q(26486, {	-- 99 Bottles of Booze on the Beach

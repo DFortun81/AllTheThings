@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(32, {	-- Searing Gorge
 			n(ZONEDROPS, {
 				i(10463, {	-- Pattern: Shadoweave Mask

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(GHOSTLANDS, {
 			n(FLIGHT_PATHS, {
 				fp(83, {	-- Tranquillien, Ghostlands

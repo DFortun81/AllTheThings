@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(56, {	-- Wetlands
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(241, {	-- Twilight Highlands
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

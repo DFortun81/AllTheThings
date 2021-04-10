@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(21, {	-- Silverpine Forest
 			n(RARES, {
 				n(1920,  {	-- Ambermill Spellscribe

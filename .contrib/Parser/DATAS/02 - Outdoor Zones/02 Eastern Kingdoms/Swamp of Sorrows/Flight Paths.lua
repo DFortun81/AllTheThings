@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(51, {	-- Swamp of Sorrows
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows

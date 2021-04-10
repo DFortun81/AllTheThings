@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(ISLE_OF_QUELDANAS, {
 			n(FLIGHT_PATHS, {
 				fp(213, {	-- Shattered Sun Stage Area

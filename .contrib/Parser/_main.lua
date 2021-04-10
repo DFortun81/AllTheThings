@@ -203,6 +203,9 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 -- Kalimdor
 KALIMDOR = 12;	-- Confirmed!
 
+-- Eastern Kingdoms
+EASTERN_KINGDOMS = 13;	-- Confirmed!
+
 -- Outland & TBC Additions
 OUTLAND = 101;	-- Confirmed!
 EVERSONG_WOODS = 94;	-- Confirmed!

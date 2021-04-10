@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(26, {	-- The Hinterlands
 			n(FLIGHT_PATHS, {
 				fp(43, {	-- Aerie Peak, The Hinterlands

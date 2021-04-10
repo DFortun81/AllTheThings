@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(84, {	-- Stormwind City
 			n(VENDORS, {
 				n(69334,  {	-- Adherent Hanjun

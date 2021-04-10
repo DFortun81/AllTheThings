@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(EVERSONG_WOODS, {
 			n(VENDORS, {
 				n(18951, {	-- Erilia <Enchanting Vendor>

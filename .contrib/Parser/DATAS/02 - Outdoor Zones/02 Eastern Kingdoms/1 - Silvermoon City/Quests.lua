@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(110, { 	-- Silvermoon City
+	m(EASTERN_KINGDOMS, {
+		m(SILVERMOON_CITY, {
 			n(QUESTS, {
 				q(9725,  {	-- A Demonstration of Loyalty
 					["u"] = REMOVED_FROM_GAME,

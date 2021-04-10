@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(90, {	-- Undercity
 			n(FLIGHT_PATHS, {
 				fp(11, {	-- Undercity, Tirisfal [Horde]

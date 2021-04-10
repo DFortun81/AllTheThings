@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(47, {	-- Duskwood
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift

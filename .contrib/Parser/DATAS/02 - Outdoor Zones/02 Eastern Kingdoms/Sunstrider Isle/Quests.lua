@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(467, {	-- Sunstrider Isle
 			n(QUESTS, {
 				q(8336, {	-- A Fistful of Slivers

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(87, {	-- Ironforge
 			n(VENDORS, {
 				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
