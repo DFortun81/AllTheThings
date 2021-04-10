@@ -63,6 +63,7 @@ _.Zones =
 								{"where", "headerID", -34 },	-- Select the World Quest header.
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
+								{"exclude", "headerID", -17 },	-- Exclude Quests Header
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137565, {	-- Warden's Field Kit
