@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
 		["mapID"] = 330,
-		["coord"] = { 69.31, 23.67, 105 },	-- Gruul's Lair, Blade's Edge Mountain
+		["coord"] = { 69.31, 23.67, BLADES_EDGE_MOUNTAINS },	-- Gruul's Lair, Blade's Edge Mountain
 		["groups"] = {
 			e(1564, {	-- High King Maulgar
 				["creatureID"] = 18831,

@@ -23,16 +23,16 @@ _.Toys =
 					{ 49.2, 55.4, 102 },  -- Zangarmarsh (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
 
 					{ 21.8, 45.3, 525 },  -- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
-					{ 46.4, 64.1, 105 },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 46.4 64.66
+					{ 46.4, 64.1, BLADES_EDGE_MOUNTAINS },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 46.4 64.66
 
 					{ 37.5, 60.7, 525 },  -- Frostfire Ridge (Draenor) The Burning Glacier 37.53 60.71
-					{ 39.6, 77.4, 105 },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 39.63 77.39
+					{ 39.6, 77.4, BLADES_EDGE_MOUNTAINS },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 39.63 77.39
 
 					{ 49.4, 73.7, 543 },  -- Gorgrond (Draenor) Razor Bloom 49.41 73.66
-					{ 59.1, 71.7, 105 },  -- Blade's Edge Mountains (Outland) Razor Ridge 59.11 71.69
+					{ 59.1, 71.7, BLADES_EDGE_MOUNTAINS },  -- Blade's Edge Mountains (Outland) Razor Ridge 59.11 71.69
 
 					{ 50.8, 31.4, 543 },  -- Gorgrond (Draenor) Outside BRF 50.82 31.43
-					{ 66.2, 26.3, 105 },  -- Blade's Edge Mountains (Outand) Gruul's Lair 50.82 31.43
+					{ 66.2, 26.3, BLADES_EDGE_MOUNTAINS },  -- Blade's Edge Mountains (Outand) Gruul's Lair 50.82 31.43
 
 					{ 70.3, 54.5, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' Dark Portal 70.3 54.53
 					{ 80.4, 51.6, HELLFIRE_PENINSULA },  -- Hellfire Peninsula (Outland) The Path of Glory Dark Portal 80.38 51.6

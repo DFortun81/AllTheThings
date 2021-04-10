@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(105, {	-- Blade's Edge Mountains
+		m(BLADES_EDGE_MOUNTAINS, {
 			["achievementID"] = 865,
 			["description"] = "|cff66ccffBlade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.|r",
 		}),

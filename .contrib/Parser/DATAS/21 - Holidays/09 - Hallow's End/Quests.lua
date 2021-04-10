@@ -296,44 +296,44 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12406, {	-- Candy Bucket — Blade's Edge Mountains, Evergrove, neutral
 				["isYearly"] = true,
-				["coord"] = { 62.9, 38.3, 105 },
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12394, {	-- Candy Bucket — Blade's Edge Mountains, Mok'Nathal Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 76.2, 60.4, 105 },
+				["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12358, {	-- Candy Bucket — Blade's Edge Mountains, Sylvanaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 35.8, 63.8, 105 },
+				["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12393, {	-- Candy Bucket — Blade's Edge Mountains, Thunderlord Stronghold, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.4, 55.5, 105 },
+				["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12359, {	-- Candy Bucket — Blade's Edge Mountains, Toshley's Station, Alliance
 				["isYearly"] = true,
-				["coord"] = { 61.0, 68.1, 105 },
+				["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

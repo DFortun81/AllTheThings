@@ -754,16 +754,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Blade's Edge Mountains, Evergrove
-											["coord"] = { 62.9, 38.3, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(2,  {	-- Blade's Edge Mountains, Sylvanaar
-											["coord"] = { 35.8, 63.8, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(3,  {	-- Blade's Edge Mountains, Toshley's Station
-											["coord"] = { 61.0, 68.1, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(4,  {	-- Hellfire Peninsula, Honor Hold
 											["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
@@ -825,16 +825,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1, {	-- Blade's Edge Mountains, Evergrove
-											["coord"] = { 62.9, 38.3, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(2, {	-- Blade's Edge Mountains, Mok'Nathal Village
-											["coord"] = { 76.2, 60.4, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(3, {	-- Blade's Edge Mountains, Thunderlord Stronghold
-											["coord"] = { 53.4, 55.5, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(4, {	-- Hellfire Peninsula, Falcon Watch
 											["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },

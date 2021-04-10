@@ -100,10 +100,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11767, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187955 },	-- Horde Bonfire
-				["coord"] = { 49.9, 59.0, 105 },
+				["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(28917, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
@@ -510,10 +510,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187919 },	-- Alliance Bonfire
-				["coord"] = { 41.8, 65.9, 105 },
+				["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(11737, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
@@ -946,9 +946,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25889 },	-- Blade's Edge Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 42.0, 66.0, 105 },
+				["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(11808, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 25890 },	-- Blasted Lands Flame Warden
@@ -1340,9 +1340,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11843, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25926 },	-- Blade's Edge Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 50.0, 59.0, 105 },
+				["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(28930, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper

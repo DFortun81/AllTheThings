@@ -186,9 +186,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 42.0, 66.0, 105 },
+										["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
 										["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
@@ -456,9 +456,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 49.9, 59.0, 105 },
+										["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
 										["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
@@ -882,9 +882,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 50.0, 59.0, 105 },
+										["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
 										["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
@@ -1162,9 +1162,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 41.8, 65.9, 105 },
+										["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
 										["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },

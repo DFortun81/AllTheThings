@@ -107,10 +107,10 @@ _.Zones =
 						n(-508, {	-- Skald [Outlands]
 							["collectible"] = true,
 							["questID"] = 53597,
-							["coord"] = { 72.41, 17.65, 105 },
+							["coord"] = { 72.41, 17.65, BLADES_EDGE_MOUNTAINS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 105 },	-- Blade's Edge Mountain
+							["maps"] = { BLADES_EDGE_MOUNTAINS },
 						}),
 					},
 				}),

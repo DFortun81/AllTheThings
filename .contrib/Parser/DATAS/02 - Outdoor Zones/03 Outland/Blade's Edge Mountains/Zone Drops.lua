@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(105, {	-- Blade's Edge Mountains
+		m(BLADES_EDGE_MOUNTAINS, {
 			n(ZONEDROPS, {
 				i(29750, {	-- Ethereum Stasis Chamber Key (required to summon/"release" mobs)(5x prison keys)
 					["description"] = "Requires 5 Ethereum Prison Keys to purchase.",
 					["coords"] = {
-						{ 52.8, 14.9, 105 },	-- Image of Commander Ameer <The Protectorate>
-						{ 51.2, 11.6, 105 },	-- Ethereum Prisoner (Group Energy Ball)
-						{ 49.6, 15.8, 105 },	-- Ethereum Prisoner (Group Energy Ball)
-						{ 49.6, 21.2, 105 },	-- Ethereum Prisoner (Group Energy Ball)
-						{ 52.6, 20.0, 105 },	-- Ethereum Prisoner (Group Energy Ball)
+						{ 52.8, 14.9, BLADES_EDGE_MOUNTAINS },	-- Image of Commander Ameer <The Protectorate>
+						{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
+						{ 49.6, 15.8, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
+						{ 49.6, 21.2, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
+						{ 52.6, 20.0, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 					},
 					["crs"] = { 22919 },	-- Image of Commander Ameer <The Protectorate>
 					["g"] = {
@@ -361,31 +361,31 @@ _.Zones =
 				}),
 				i(23612, {	-- Plans: Ragesteel Helm
 					["coords"] = {
-						{ 72.8, 40.6, 105 },
-						{ 72.8, 41.6, 105 },
-						{ 73.6, 38.4, 105 },
-						{ 73.6, 39.6, 105 },
-						{ 73.6, 43.6, 105 },
-						{ 74.2, 41.6, 105 },
+						{ 72.8, 40.6, BLADES_EDGE_MOUNTAINS },
+						{ 72.8, 41.6, BLADES_EDGE_MOUNTAINS },
+						{ 73.6, 38.4, BLADES_EDGE_MOUNTAINS },
+						{ 73.6, 39.6, BLADES_EDGE_MOUNTAINS },
+						{ 73.6, 43.6, BLADES_EDGE_MOUNTAINS },
+						{ 74.2, 41.6, BLADES_EDGE_MOUNTAINS },
 					},
 					["crs"] = { 16952 },	-- Anger Guard
 				}),
 				i(23800, {	-- Schematic: Felsteel Boomstick
 					["coords"] = {
-						{ 73.4, 40.6, 105 },
-						{ 73.8, 40.6, 105 },
-						{ 73.8, 42.4, 105 },
-						{ 74.8, 40.8, 105 },
-						{ 74.8, 41.6, 105 },
+						{ 73.4, 40.6, BLADES_EDGE_MOUNTAINS },
+						{ 73.8, 40.6, BLADES_EDGE_MOUNTAINS },
+						{ 73.8, 42.4, BLADES_EDGE_MOUNTAINS },
+						{ 74.8, 40.8, BLADES_EDGE_MOUNTAINS },
+						{ 74.8, 41.6, BLADES_EDGE_MOUNTAINS },
 					},
 					["crs"] = { 19960 },	-- Doomforge Engineer
 				}),
 				i(34114, {	-- Schematic: Field Repair Bot 110G
 					["coords"] = {
-						{ 27.6, 69.0, 105 },
-						{ 29.0, 47.2, 105 },
-						{ 32.0, 63.2, 105 },
-						{ 33.6, 52.6, 105 },
+						{ 27.6, 69.0, BLADES_EDGE_MOUNTAINS },
+						{ 29.0, 47.2, BLADES_EDGE_MOUNTAINS },
+						{ 32.0, 63.2, BLADES_EDGE_MOUNTAINS },
+						{ 33.6, 52.6, BLADES_EDGE_MOUNTAINS },
 					},
 					["crs"] = {
 						23385,	-- Gan'arg Analyzer
@@ -394,25 +394,25 @@ _.Zones =
 				}),
 				i(22925, {	-- Recipe: Major Holy Protection Potion
 					["coords"] = {
-						{ 26.6, 83.6, 105 },
-						{ 28.0, 82.2, 105 },
-						{ 28.8, 85.6, 105 },
-						{ 29.8, 77.0, 105 },
-						{ 30.8, 80.8, 105 },
+						{ 26.6, 83.6, BLADES_EDGE_MOUNTAINS },
+						{ 28.0, 82.2, BLADES_EDGE_MOUNTAINS },
+						{ 28.8, 85.6, BLADES_EDGE_MOUNTAINS },
+						{ 29.8, 77.0, BLADES_EDGE_MOUNTAINS },
+						{ 30.8, 80.8, BLADES_EDGE_MOUNTAINS },
 					},
 					["crs"] = { 19973 },	-- Abyssal Flamebringer
 				}),
 				i(22534, {	-- Formula: Enchant Bracer - Spellpower
 					["coords"] = {
-						{ 43.8, 70.6, 105 },
-						{ 45.6, 79.4, 105 },
-						{ 46.0, 78.0, 105 },
-						{ 46.0, 80.0, 105 },
-						{ 46.4, 76.8, 105 },
-						{ 46.6, 74.8, 105 },
-						{ 46.8, 79.6, 105 },
-						{ 47.0, 76.6, 105 },
-						{ 47.2, 78.0, 105 },
+						{ 43.8, 70.6, BLADES_EDGE_MOUNTAINS },
+						{ 45.6, 79.4, BLADES_EDGE_MOUNTAINS },
+						{ 46.0, 78.0, BLADES_EDGE_MOUNTAINS },
+						{ 46.0, 80.0, BLADES_EDGE_MOUNTAINS },
+						{ 46.4, 76.8, BLADES_EDGE_MOUNTAINS },
+						{ 46.6, 74.8, BLADES_EDGE_MOUNTAINS },
+						{ 46.8, 79.6, BLADES_EDGE_MOUNTAINS },
+						{ 47.0, 76.6, BLADES_EDGE_MOUNTAINS },
+						{ 47.2, 78.0, BLADES_EDGE_MOUNTAINS },
 					},
 					["crs"] = { 19952 },	-- Bloodmaul Geomancer
 				}),
@@ -420,7 +420,7 @@ _.Zones =
 					["description"]	= "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
 					["g"] = {
 						n(23261, {	-- Furywing
-							["coord"] = { 66.7, 14.5, 105 },
+							["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
 							["g"] = {
 								i(32683, {	-- Jet Scale of Furywing
 									i(31942),	-- Deathwing Brood Cloak
@@ -428,7 +428,7 @@ _.Zones =
 							},
 						}),
 						n(23281, {	-- Insidio
-							["coord"] = { 62.7, 7.3, 105 },
+							["coord"] = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
 							["g"] = {
 								i(32684, {	-- Insidion's Ebony Scale
 									i(31942),	-- Deathwing Brood Cloak
@@ -436,7 +436,7 @@ _.Zones =
 							},
 						}),
 						n(23061, {	-- Rivendark
-							["coord"] = { 27.2, 64.9, 105 },
+							["coord"] = { 27.2, 64.9, BLADES_EDGE_MOUNTAINS },
 							["g"] = {
 								i(32681, {	-- Onyx Scale of Rivendark
 									i(31942),	-- Deathwing Brood Cloak
@@ -444,7 +444,7 @@ _.Zones =
 							},
 						}),
 						n(23282, {	-- Obsidia
-							["coord"] = { 34.0, 54.7, 105 },
+							["coord"] = { 34.0, 54.7, BLADES_EDGE_MOUNTAINS },
 							["g"] = {
 								i(32682, {	-- Obsidia Scale
 									i(31942),	-- Deathwing Brood Cloak

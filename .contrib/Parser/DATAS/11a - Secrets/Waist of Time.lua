@@ -21,7 +21,7 @@ _.Secrets =
 			66,
 			69,
 			104,
-			105,
+			BLADES_EDGE_MOUNTAINS,
 			108,
 			121,
 			125,
@@ -67,7 +67,7 @@ _.Secrets =
 				["questID"] = 52899,
 				["sourceQuests"] = { 52898 },
 				["description"] = "Blades Edge Mountains\n\nOn the ground next to a crystal.  \n\nThe Brittle Bone reads:\n\n\"<Something is written here.>\n\nRage, Shank Sever\"",
-				["coord"] = { 33.6, 58.2, 105 },	-- Brittle Bone
+				["coord"] = { 33.6, 58.2, BLADES_EDGE_MOUNTAINS },	-- Brittle Bone
 			}),
 			o(294100, { 	-- Misplaced Candle
 				["model"] = 1307043,
