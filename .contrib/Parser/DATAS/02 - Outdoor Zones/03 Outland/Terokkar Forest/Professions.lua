@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(108, {	-- Terokkar Forest
+		m(TEROKKAR_FOREST, {
 			n(-38, {	-- Professions
 				prof(FISHING, {
 					i(27446, {	-- Mr. Pinchy's Gift
@@ -18,7 +18,7 @@ _.Zones =
 					n(QUESTS, {
 						q(11665,  {  -- Crocolisks in the City
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, 108 },
+							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 							["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
@@ -38,7 +38,7 @@ _.Zones =
 						}),
 						q(11669, {	-- Felblood Fillet
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, 108 },
+							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["g"] = {
@@ -52,7 +52,7 @@ _.Zones =
 						}),
 						q(11668, {	-- Shrimpin' Ain't Easy
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, 108 },
+							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["g"] = {
@@ -66,7 +66,7 @@ _.Zones =
 						}),
 						q(11667, {	-- The One That Got Away
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, 108 },
+							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 						}),
 						q(11666, {	-- Bait Bandits
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, 108 },
+							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["g"] = {

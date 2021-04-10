@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 							27,	-- Dun Morogh
 							37,	-- Elwynn Forest
 							57,	-- Teldrassil
-							94,	-- Eversong Woods
+							EVERSONG_WOODS,
 							97,	-- Azuremyst Isle
 						},
 						["g"] = {

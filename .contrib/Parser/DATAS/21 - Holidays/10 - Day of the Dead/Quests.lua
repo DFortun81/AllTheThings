@@ -124,8 +124,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
 				["provider"] = { "n", 35260 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-				["coord"] = { 40.1, 22.2, 108 },
-				["maps"] = { 108 },	-- Terokkar Forest
+				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -133,8 +133,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
 				["provider"] = { "n", 35261 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-				["coord"] = { 40.1, 22.2, 108 },
-				["maps"] = { 108 },	-- Terokkar Forest
+				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

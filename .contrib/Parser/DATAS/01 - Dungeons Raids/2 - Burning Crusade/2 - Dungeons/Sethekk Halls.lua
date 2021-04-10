@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			258,	-- Veil Sethekk
 			259,	-- Halls of Mourning
 		},
-		["coord"] = { 44.93, 65.61, 108 },	-- Sethekk Halls, Terokkar Forest
+		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["groups"] = {
 			n(ZONEDROPS, {
 				i(25731, {	-- Pattern: Stylin' Crimson Hat

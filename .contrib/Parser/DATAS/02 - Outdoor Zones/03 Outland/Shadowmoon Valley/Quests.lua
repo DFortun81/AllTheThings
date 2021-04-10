@@ -184,7 +184,7 @@ _.Zones =
 				}),
 				q(10627, {	-- Capture the Weapons (H)
 					["provider"] = { "n", 19333 },	-- Grokom Deatheye
-					["coord"] = { 29.8, 31.2, 108 },
+					["coord"] = { 29.8, 31.2, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10623,	-- Illidari Bane-Shard
 					["g"] = {
@@ -202,13 +202,13 @@ _.Zones =
 				}),
 				q(10663, {	-- The Hermit Smith (H)
 					["provider"] = { "n", 19333 },	-- Grokom Deatheye
-					["coord"] = { 29.8, 31.2, 108 },
+					["coord"] = { 29.8, 31.2, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10627,	-- Capture the Weapons
 				}),
 				q(10664, {	-- Additional Materials
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuests"] = {
 						10662,	-- The Hermit Smith (A)
 						10663,	-- The Hermit Smith (H)
@@ -216,17 +216,17 @@ _.Zones =
 				}),
 				q(10665, {	-- Fresh from the Mechanar
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10664,	-- Additional Materials
 				}),
 				q(10666, {	-- The Lexicon Demonica
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10664,	-- Additional Materials
 				}),
 				q(10667, {	-- Underworld Loam
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuests"] = {
 						10665,	-- Fresh From the Mechanar
 						10666,	-- The Lexicon Demonica
@@ -234,7 +234,7 @@ _.Zones =
 				}),
 				q(10670, {	-- Tear of the Earthmother
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuests"] = {
 						10665,	-- Fresh From the Mechanar
 						10666,	-- The Lexicon Demonica
@@ -242,7 +242,7 @@ _.Zones =
 				}),
 				q(10676, {	-- Bane of the Illidari
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuests"] = {
 						10670,	-- Tear of the Earthmother
 						10667,	-- Underworld Loam
@@ -250,7 +250,7 @@ _.Zones =
 				}),
 				q(10679, {	-- Quenching the Blade
 					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, 108 },
+					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10676,	-- Bane of the Illidari
 					["g"] = {
 						i(30788),	-- Illidari-Bane Broadsword

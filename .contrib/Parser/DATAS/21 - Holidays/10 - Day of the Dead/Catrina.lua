@@ -13,10 +13,10 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				{ 69.4, 40.5, 89 },		-- Darnassus
 				{ 61.0, 36.9, 27 },		-- Dun Morogh [IF]
 				{ 47.2, 17.8, 1 },		-- Durotar [Org]
-				{ 47.7, 49.7, EVERSONG_WOODS },		-- Eversong Woods [SMC]
+				{ 47.7, 49.7, EVERSONG_WOODS },
 				{ 46.6, 25.8, 84 },		-- Stormwind City
 				{ 56.4, 18.4, 88 },		-- Thunder Bluff
-				{ 39.9, 21.8, 108 },	-- Terokkar Forest [Shatt]
+				{ 39.9, 21.8, TEROKKAR_FOREST },
 				{ 62.2, 67.4, 18 },		-- Tirisfal Glades [UC]
 			},
 			["maps"] = {
@@ -26,10 +26,10 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				89,		-- Darnassus
 				27,		-- Dun Morogh [IF]
 				1,		-- Durotar [Org]
-				94,		-- Eversong Woods [SMC]
+				EVERSONG_WOODS,
 				84,		-- Stormwind City
 				88,		-- Thunder Bluff
-				108,	-- Terokkar Forest [Shatt]
+				TEROKKAR_FOREST,
 				18,		-- Tirisfal Glades [UC]
 			},
 			["g"] = {

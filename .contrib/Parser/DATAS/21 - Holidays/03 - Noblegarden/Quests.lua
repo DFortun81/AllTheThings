@@ -45,7 +45,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					1,	-- Durotar
 					7,	-- Mulgore
 					18,	-- Tirisfal Glades
-					94,	-- Eversong Woods
+					EVERSONG_WOODS,
 				},
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -238,7 +238,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					1,	-- Durotar
 					7,	-- Mulgore
 					18,	-- Tirisfal Glades
-					94,	-- Eversong Woods
+					EVERSONG_WOODS,
 				},
 				["races"] = HORDE_ONLY,
 				["g"] = {

@@ -215,7 +215,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						85,	-- Orgrimmar
 						88,	-- Thunder Bluff
 						90,	-- Undercity
-						94,	-- Eversong Woods
+						EVERSONG_WOODS,
 						NETHERSTORM,
 						SILVERMOON_CITY,
 						SHATTRATH_CITY,

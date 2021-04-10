@@ -22,7 +22,7 @@ _.Secrets =
 			69,
 			104,
 			BLADES_EDGE_MOUNTAINS,
-			108,
+			TEROKKAR_FOREST,
 			121,
 			125,
 			241,
@@ -177,7 +177,7 @@ _.Secrets =
 				["questID"] = 52913,
 				["sourceQuests"] = { 52912 },
 				["description"] = "Terrokar Forrest\n\nInside the crate, inside the tent, near the Shadow Labs entrance.\n\nThe Musty Cloth reads:\n\n\"<Something is written here.>\n\nScarce odds, still.\"",
-				["coord"] = { 40.2, 72.5, 108 },	-- Musty Cloth
+				["coord"] = { 40.2, 72.5, TEROKKAR_FOREST },	-- Musty Cloth
 			}),
 			o(294114, { 	-- Broken Tablet
 				["model"] = 202596,

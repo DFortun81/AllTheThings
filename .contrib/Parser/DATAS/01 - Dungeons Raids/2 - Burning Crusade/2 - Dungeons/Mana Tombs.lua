@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(250, { 	-- Mana Tombs
 		["lvl"] = 61,
 		["mapID"] = 272,
-		["coord"] = { 39.63, 57.67, 108 },	-- Mana-Tombs, Terokkar Forest
+		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["groups"] = {
 			n(QUESTS, {
 				q(10216,  {	-- Safety is Job One

@@ -804,8 +804,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Allerian Stronghold
-											["coord"] = { 56.6, 53.2, 108 },
-											["maps"] = { 108 },	-- Terrokar Forest
+											["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
+											["maps"] = { TEROKKAR_FOREST },
 										}),
 										crit(13, {	-- Zangarmarsh, Cenarion Refuge
 											["coord"] = { 78.5, 62.9, ZANGARMARSH },
@@ -875,8 +875,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Stonebreaker Hold
-											["coord"] = { 48.8, 45.2, 108 },
-											["maps"] = { 108 },	-- Terrokar Forest
+											["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
+											["maps"] = { TEROKKAR_FOREST },
 										}),
 										crit(13, {	-- Zangarmarsh, Zabra'jin
 											["coord"] = { 30.7, 50.9, ZANGARMARSH },

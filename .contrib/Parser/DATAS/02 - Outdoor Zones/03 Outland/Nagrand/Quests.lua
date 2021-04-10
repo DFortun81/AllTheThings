@@ -172,7 +172,7 @@ _.Zones =
 				}),
 				q(9891,  {	-- Because Kilrath is a Coward
 					["provider"] = { "n", 18273 },	-- Kilrath
-					["coord"] = { 19.6, 60.8, 108 },
+					["coord"] = { 19.6, 60.8, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9890,	-- Success!
 				}),
@@ -301,7 +301,7 @@ _.Zones =
 				}),
 				q(9889,  {	-- Don't Kill the Fat One
 					["provider"] = { "n", 18273 },	-- Kilrath
-					["coord"] = { 19.6, 60.8, 108 },
+					["coord"] = { 19.6, 60.8, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9888,	-- The Impotent Leader
 				}),
@@ -661,7 +661,7 @@ _.Zones =
 				}),
 				q(9890,  {	-- Success!
 					["provider"] = { "n", 18262 },	-- Unkor the Ruthless
-					["coord"] = { 20.0, 63.3, 108 },
+					["coord"] = { 20.0, 63.3, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9889,	-- Don't Kill the Fat One
 				}),
@@ -981,7 +981,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10167,	-- Auchindoun...
 					["coords"] = {
-						{ 34.3, 65.6, 108 },
+						{ 34.3, 65.6, TEROKKAR_FOREST },
 						{ 73.8, 57.0, 257 },
 					},
 				}),

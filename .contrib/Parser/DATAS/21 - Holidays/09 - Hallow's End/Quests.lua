@@ -38,14 +38,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94 -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18 -- Tirisfal Glades
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -111,7 +111,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					85,  -- Orgrimmar
 					88,  -- Thunder Bluff
 					90,  -- Undercity
-					94,  -- Eversong Woods
+					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
@@ -1641,18 +1641,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12356, {	-- Candy Bucket — Terokkar Forest, Allerian Stronghold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 56.6, 53.2, 108 },
+				["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 108 },	-- Terrokar Forest
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12391, {	-- Candy Bucket — Terokkar Forest, Stonebreaker Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.8, 45.2, 108 },
+				["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 108 },	-- Terrokar Forest
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2177,7 +2177,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11450, {	-- Fire Training (Eversong Woods)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 47.2, 46.6, EVERSONG_WOODS },	-- Eversong Woods
+				["coord"] = { 47.2, 46.6, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
 				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
@@ -2278,7 +2278,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					85,  -- Orgrimmar
 					88,  -- Thunder Bluff
 					90,  -- Undercity
-					94,  -- Eversong Woods
+					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
@@ -2360,14 +2360,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94, -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18, -- Tirisfal Glades
 				},
 				["g"] = {
 					i(34077),	-- Crudely Wrapped Gift
@@ -2400,14 +2400,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, EVERSONG_WOODS },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94, -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18, -- Tirisfal Glades
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -2497,7 +2497,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["maps"] = {
 					1,	-- Durotar
-					94,	-- Eversong Woods
+					EVERSONG_WOODS,
 					18,	-- Tirisfal Glades
 				},
 			}),

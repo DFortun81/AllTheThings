@@ -364,10 +364,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11782, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
 				["provider"] = { "o", 187970 },	-- Horde Bonfire
-				["coord"] = { 51.9, 43.3, 108 },
+				["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
@@ -790,10 +790,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11754, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
 				["provider"] = { "o", 187937 },	-- Alliance Bonfire
-				["coord"] = { 54.2, 55.4, 108 },
+				["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
@@ -1205,9 +1205,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11825, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25907 },	-- Terokkar Forest Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 55.0, 55.0, 108 },
+				["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11832, {	-- Honor the Flame — The Cape of Stranglethorn
 				["provider"] = { "n", 25915 },	-- Cape of Stranglethorn Flame Warden
@@ -1585,9 +1585,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11858, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25942 },	-- Terokkar Forest Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 52.0, 43.0, 108 },
+				["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11837, {	-- Honor the Flame — The Cape of Stranglethorn
 				["provider"] = { "n", 25920 },	-- Cape of Stranglethorn Flame Keeper
@@ -1928,7 +1928,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					97,		-- Azuremyst Isle
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
-					108,	-- Terokkar Forest
+					TEROKKAR_FOREST,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					114,	-- Borean Tundra
@@ -1958,7 +1958,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					76,		-- Azshara
 					78,		-- Un'goro Crater
 					83,		-- Winterspring
-					94,		-- Eversong Woods
+					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
 					117,	-- Howling Fjord
@@ -2254,7 +2254,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					94,		-- Eversong Woods
+					EVERSONG_WOODS,
 					NETHERSTORM,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,

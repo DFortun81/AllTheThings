@@ -211,9 +211,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 104 },	-- Shadowmoon Valley
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 55.0, 55.0, 108 },
+										["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
 										["coord"] = { 69.0, 52.0, ZANGARMARSH },
@@ -481,9 +481,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 104 },	-- Shadowmoon Valley
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 51.9, 43.3, 108 },
+										["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
 										["coord"] = { 35.6, 51.9, ZANGARMARSH },
@@ -907,9 +907,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 104 },	-- Shadowmoon Valley
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 52.0, 43.0, 108 },
+										["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
 										["coord"] = { 35.0, 51.0, ZANGARMARSH },
@@ -1187,9 +1187,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 104 },	-- Shadowmoon Valley
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 54.2, 55.4, 108 },
+										["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
 										["coord"] = { 68.6, 52.0, ZANGARMARSH },

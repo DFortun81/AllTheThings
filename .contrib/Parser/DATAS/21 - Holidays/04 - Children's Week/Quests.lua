@@ -295,13 +295,13 @@ _.Holidays =
 						},
 						["isYearly"] = true,
 						["coords"] = {
-							{ 44.17, 58.84, 108 },	-- Path to Ring
-							{ 40.76, 60.39, 108 },	-- Tunnel Exit
-							{ 43.11, 63.94, 108 },	-- Tunnel Exit
-							{ 39.57, 64.41, 108 },	-- Dornaa taken to Ring of Observance
+							{ 44.17, 58.84, TEROKKAR_FOREST },	-- Path to Ring
+							{ 40.76, 60.39, TEROKKAR_FOREST },	-- Tunnel Exit
+							{ 43.11, 63.94, TEROKKAR_FOREST },	-- Tunnel Exit
+							{ 39.57, 64.41, TEROKKAR_FOREST },	-- Dornaa taken to Ring of Observance
 						},
 						["maps"] = {
-							108,	-- Terrokar Forest
+							TEROKKAR_FOREST,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,

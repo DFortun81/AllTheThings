@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(108, {	-- Terokkar Forest
+		m(TEROKKAR_FOREST, {
 			n(VENDORS, {
 				n(19296, {	-- Innkeeper Biribi <Innkeeper>
-					["coord"] = { 56.6, 53.2, 108 },
+					["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27699),	-- Recipe: Golden Fish Sticks
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(18957, {	-- Innkeeper Grilka <Innkeeper>
-					["coord"] = { 48.8, 45.0, 108 },
+					["coord"] = { 48.8, 45.0, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27690),	-- Recipe: Blackened Basilisk
@@ -24,7 +24,7 @@ _.Zones =
 					},
 				}),
 				n(19042, {	-- Leeli Longhaggle <Trade Goods>
-					["coord"] = { 57.6, 53.4, 108 },
+					["coord"] = { 57.6, 53.4, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22911, {	-- Recipe: Major Dreamless Sleep Potion
@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(18960, {	-- Rungor <Trade Goods>
-					["coord"] = { 48.8, 46.0, 108 },
+					["coord"] = { 48.8, 46.0, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27699),	-- Recipe: Golden Fish Sticks
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(19772, {	-- Spirit Sage Gartok
-					["coord"] = { 49.8, 46.6, 108 },
+					["coord"] = { 49.8, 46.6, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(28553, {	-- Band of the Exorcist
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				n(19773, {	-- Spirit Sage Zran
-					["coord"] = { 56.0, 53.6, 108 },
+					["coord"] = { 56.0, 53.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28553, {	-- Band of the Exorcist
@@ -134,7 +134,7 @@ _.Zones =
 					},
 				}),
 				n(19038, {	-- Supply Officer Mills <Rations>
-					["coord"] = { 55.8, 53.0, 108 },
+					["coord"] = { 55.8, 53.0, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(27690),	-- Recipe: Blackened Basilisk

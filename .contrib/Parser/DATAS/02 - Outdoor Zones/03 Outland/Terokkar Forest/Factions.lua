@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(108, {	-- Terokkar Forest
+		m(TEROKKAR_FOREST, {
 			n(FACTIONS, {
 				faction(1031, {	-- Sha'tari Skyguard
 					["crs"] = { 23367 },	-- Grella <Skyguard Quartermaster>
@@ -14,7 +14,7 @@ _.Zones =
 						n(QUESTS, {
 							q(11885, {	-- Adversarial Blood
 								["provider"] = { "n", 23306 },	-- Hazzik
-								["coord"] = { 64.2, 66.9, 108 },
+								["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11029,	-- A Shabby Disguise
 								["g"] = {
 									i(32720),	-- Time-Lost Offering
@@ -22,7 +22,7 @@ _.Zones =
 							}),
 							q(11072, {	-- Adversarial Blood (was replaced by Adversarial Blood (ID 11885)
 								["provider"] = { "n", 23306 },	-- Hazzik
-								["coord"] = { 64.2, 66.9, 108 },
+								["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11029,	-- A Shabby Disguise
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
@@ -31,12 +31,12 @@ _.Zones =
 							}),
 							q(11029, {	-- A Shabby Disguise
 								["provider"] = { "n", 23306 },	-- Hazzik
-								["coord"] = { 64.2, 66.9, 108 },
+								["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11056,	-- Hazzik's Bargain
 							}),
 							q(11024, {	-- An Ally in Lower City
 								["provider"] = { "n", 23038 },	-- Sky Commander Adaris
-								["coord"] = { 64.1, 66.9, 108 },
+								["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11021,	-- Ishaal's Almanac
 							}),
 							q(11028, {	-- Countdown to Doom
@@ -46,13 +46,13 @@ _.Zones =
 							}),
 							q(11085, {	-- Escape from Skettis
 								["provider"] = { "n", 23383 },	-- Skyguard Prisoner
-								["coord"] = { 61.1, 75.5, 108 },
+								["coord"] = { 61.1, 75.5, TEROKKAR_FOREST },
 								["repeatable"] = true,
 							}),
 							q(11008, {	-- Fires Over Skettis
 								["sourceQuest"] = 11098,	-- To Skettis!
 								["isDaily"] = true,
-								["coord"] = { 64.5, 66.7, 108 },
+								["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
 								["provider"] = { "n", 23048 },	-- Sky Sergeant Doryn
 								["g"] = {
 									ach(1275),	-- Bombs Away
@@ -60,22 +60,22 @@ _.Zones =
 							}),
 							q(11056, {	-- Hazzik's Bargain
 								["provider"] = { "n", 23306 },	-- Hazzik
-								["coord"] = { 64.2, 66.9, 108 },
+								["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11028,	-- Countdown to Doom
 							}),
 							q(11093, {	-- Hungry Nether Rays
 								["provider"] = { "n", 23415 },	-- Skyguard Prisoner
-								["coord"] = { 63.6, 65.8, 108 },
+								["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
 							}),
 							i(32523, {	-- Ishaal's Almanac
 								q(11021, {	-- Ishaal's Almanac
 									["provider"] = { "n", 23066 },	-- Talonpriest Ishaal
-									["coord"] = { 69.2, 75.2, 108 },
+									["coord"] = { 69.2, 75.2, TEROKKAR_FOREST },
 								}),
 							}),
 							q(11006, {	-- More Shadow Dust
 								["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
-								["coord"] = { 64.1, 66.9, 108 },
+								["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11004,	-- World of Shadows
 								["repeatable"] = true,
 								["g"] = {
@@ -84,12 +84,12 @@ _.Zones =
 							}),
 							q(11005, {	-- Secrets of the Talonpriests
 								["provider"] = { "n", 23038 },	-- Sky Commander Adaris
-								["coord"] = { 64.1, 66.9, 108 },
+								["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11004,	-- World of Shadows
 							}),
 							q(11074, {	-- Tokens of the Descendants
 								["provider"] = { "n", 23306 },	-- Hazzik
-								["coord"] = { 64.2, 66.9, 108 },
+								["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11885,	-- Adversarial Blood
 								["repeatable"] = true,
 								["g"] = {
@@ -98,7 +98,7 @@ _.Zones =
 							}),
 							q(11073,  {  -- Terokk's Downfall
 								["provider"] = { "n", 23038 },	-- Sky Commander Adaris
-								["coord"] = { 64.1, 66.9, 108 },
+								["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 								["sourceQuest"] = 11885,	-- Adversarial Blood
 								["g"] = {
 									i(32831),	-- Jeweled Rod
@@ -108,7 +108,7 @@ _.Zones =
 							}),
 							q(11004, {	-- World of Shadows
 								["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
-								["coord"] = { 64.1, 66.9, 108 },
+								["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 								["g"] = {
 									i(32446),	-- Elixir of Shadows
 								},
@@ -116,7 +116,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(23367, {	-- Grella <Skyguard Quartermaster>
-								["coord"] = { 64.3, 66.2, 108 },
+								["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
 								["g"] = {
 									i(32771),	-- Airman's Ribbon Gallantry
 									i(32319),	-- Blue Riding Nether Ray (MOUNT!)

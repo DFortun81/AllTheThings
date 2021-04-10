@@ -192,7 +192,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					94,		-- Eversong Woods
+					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
@@ -207,7 +207,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["maps"] = {
 					1,		-- Durotar
 					18,		-- Tirisfal Glades
-					94,		-- Eversong Woods
+					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 				},
 			}),

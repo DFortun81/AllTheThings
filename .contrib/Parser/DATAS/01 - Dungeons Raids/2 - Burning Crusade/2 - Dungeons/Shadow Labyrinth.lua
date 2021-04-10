@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["maps"] = {
 			260,	-- Shadow Labyrinth
 		},
-		["coord"] = { 39.63, 73.55, 108 },	-- Shadow Labyrinth, Terokkar Forest
+		["coord"] = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		["g"] = {
 			n(QUESTS, {
 				["g"] = {
