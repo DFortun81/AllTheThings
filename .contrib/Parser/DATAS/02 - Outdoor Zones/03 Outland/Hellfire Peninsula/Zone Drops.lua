@@ -11,7 +11,7 @@ _.Zones =
 					347,	-- Hellfire Ramparts
 					261,	-- The Blood Furnace
 					246,	-- The Shattered Halls
-					102,	-- Zangarmarsh	!!Note Some spillover to this zone as well, but not completely.  So we'll link with maps instead of duplicating
+					ZANGARMARSH,
 				},
 				["g"] = {
 				--[[	i(25296),	-- Absorption Dagger

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(102, {	-- Zangarmarsh
+		m(ZANGARMARSH, {
 			n(ZONEDROPS, {
 				i(29960, {	-- Captured Firefly
 					["crs"] = { 20197 },	-- Bogflare Needler

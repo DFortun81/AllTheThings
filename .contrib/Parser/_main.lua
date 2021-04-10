@@ -205,6 +205,7 @@ GHOSTLANDS = 95;	-- Confirmed!
 ISLE_OF_QUELDANAS = 122;	-- Confirmed!
 SILVERMOON_CITY = 110;	-- Confirmed!
 HELLFIRE_PENINSULA = 100;	-- Confirmed!
+ZANGARMARSH = 102;	-- Confirmed!
 SHATTRATH_CITY = 111;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 

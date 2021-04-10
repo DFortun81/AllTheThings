@@ -140,7 +140,7 @@ _.Achievements =
 					["coord"] = { 59.0, 77.0, 115 },
 				}),
 				crit(31, {	-- Ras'an (Zangarmarsh)
-					["coord"] = { 17.2, 50.6, 102 },
+					["coord"] = { 17.2, 50.6, ZANGARMARSH },
 				}),
 				crit(32, {	-- Seeker Zusshi (Townlong Steppes)
 					["coord"] = { 36.2, 52.2, 388 },

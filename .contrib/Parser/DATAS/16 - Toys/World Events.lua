@@ -14,13 +14,13 @@ _.Toys =
 					{ 41.3, 59.0, 107 },  -- Nagrand (Outland) Oshugun Spirit Fields 41.27 59.04
 
 					{ 88.3, 22.8, 550 },  -- Nagrand (Draenor) Zangar Shore 88.30 22.84
-					{ 68.2, 88.5, 102 },  -- Zangarmarsh (Outland) Entrance to Nagrand 68.2 88.46
+					{ 68.2, 88.5, ZANGARMARSH },  -- Zangarmarsh (Outland) Entrance to Nagrand 68.2 88.46
 
 					{ 71.4, 21.9, 550 },  -- Nagrand (Draenor) Throne of the Elements 71.41 21.94
 					{ 60.4, 25.6, 107 },  -- Nagrand (Outland) Throne of the Elements 60.36 25.56
 
 					{ 81.1, 09.0, 550 },  -- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
-					{ 49.2, 55.4, 102 },  -- Zangarmarsh (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
+					{ 49.2, 55.4, ZANGARMARSH },  -- Zangarmarsh (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
 
 					{ 21.8, 45.3, 525 },  -- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
 					{ 46.4, 64.1, BLADES_EDGE_MOUNTAINS },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 46.4 64.66
@@ -56,7 +56,7 @@ _.Toys =
 					{ 35.3, 12.5, 108 },  -- Terokkar Forest (Outland) Shattrath City 'Old' 35.27 12.51
 
 					{ 68.4, 09.3, 535 },  -- Talador (Draenor) 'Path of Glory' 68.42 9.32
-					{ 82.6, 66.1, 102 },  -- Zangarmarsh/Hellfire Peninsula (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
+					{ 82.6, 66.1, ZANGARMARSH },  -- Zangarmarsh/Hellfire Peninsula (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
 				}
 			}),
 			i(151016), 	-- Fractured Necrolyte Skull

@@ -1973,35 +1973,35 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12403, {	-- Candy Bucket — Zangarmarsh, Cenarion Refuge, neutral
 				["isYearly"] = true,
-				["coord"] = { 78.5, 62.9, 102 },
-				["maps"] = { 102 },	-- Zangarmarsh
+				["coord"] = { 78.5, 62.9, ZANGARMARSH },
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12355, {	-- Candy Bucket — Zangarmarsh, Orebor Harborage, Alliance
 				["isYearly"] = true,
-				["coord"] = { 41.9, 26.2, 102 },
+				["coord"] = { 41.9, 26.2, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12354, {	-- Candy Bucket — Zangarmarsh, Telredor, Alliance
 				["isYearly"] = true,
-				["coord"] = { 67.2, 49.0, 102 },
+				["coord"] = { 67.2, 49.0, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12390, {	-- Candy Bucket — Zangarmarsh, Zabra'jin, Horde
 				["isYearly"] = true,
-				["coord"] = { 30.7, 50.9, 102 },
+				["coord"] = { 30.7, 50.9, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

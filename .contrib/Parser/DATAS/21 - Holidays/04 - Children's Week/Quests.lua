@@ -750,11 +750,11 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 19.43, 51.31, 102 },	-- Salandria taken to Sporeggar
-							{ 19.28, 51.34, 102 },	-- Speak to Hch'uu
+							{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
+							{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
 						},
 						["maps"] = {
-							102,	-- Zangarmarsh
+							ZANGARMARSH,
 							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,

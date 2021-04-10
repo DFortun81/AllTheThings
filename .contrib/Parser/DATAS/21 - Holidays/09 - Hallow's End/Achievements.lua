@@ -808,16 +808,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 108 },	-- Terrokar Forest
 										}),
 										crit(13, {	-- Zangarmarsh, Cenarion Refuge
-											["coord"] = { 78.5, 62.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 78.5, 62.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(14, {	-- Zangarmarsh, Orebor Harborage
-											["coord"] = { 41.9, 26.2, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 41.9, 26.2, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(15, {	-- Zangarmarsh, Telredor
-											["coord"] = { 67.2, 49.0, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 67.2, 49.0, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 									},
 								}),
@@ -879,12 +879,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 108 },	-- Terrokar Forest
 										}),
 										crit(13, {	-- Zangarmarsh, Zabra'jin
-											["coord"] = { 30.7, 50.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 30.7, 50.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(14, {	-- Zangarmarsh, Cenarion Refuge
-											["coord"] = { 78.5, 62.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 78.5, 62.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 									},
 								}),

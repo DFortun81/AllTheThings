@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(262, { 	-- The Underbog
 		["lvl"] = 60,
 		["mapID"] = 262,
-		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
+		["coord"] = { 54.24, 34.45, ZANGARMARSH },	-- The Underbog, Zangarmarsh
 		["g"] = {
 			n(QUESTS, {
 				q(29568, {	-- A Necessary Evil

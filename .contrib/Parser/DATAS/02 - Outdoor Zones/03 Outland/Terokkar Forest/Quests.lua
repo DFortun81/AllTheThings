@@ -737,13 +737,13 @@ _.Zones =
 				}),
 				q(9961,  {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18459 },	-- Jenai Starwhisper
-					["coord"] = { 57.0, 53.6, 102 },
+					["coord"] = { 57.0, 53.6, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(9960,  {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18447 },	-- Tooki
-					["coord"] = { 50.0, 45.8, 102 },
+					["coord"] = { 50.0, 45.8, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

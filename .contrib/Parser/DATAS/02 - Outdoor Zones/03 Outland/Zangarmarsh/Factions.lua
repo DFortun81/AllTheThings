@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(102, {	-- Zangarmarsh
+		m(ZANGARMARSH, {
 			n(FACTIONS, {
 				faction(942, {	-- Cenarion Expedition
 					["crs"] = { 17904 },	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
@@ -13,7 +13,7 @@ _.Zones =
 						n(QUESTS, {
 							q(9784, {	-- Identify Plant Parts
 								["provider"] = { "n", 17909 },	-- Lauranna Thar'well
-								["coord"] = { 80.3, 64.2, 102 },
+								["coord"] = { 80.3, 64.2, ZANGARMARSH },
 								["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 								["repeatable"] = true,
 								["maxReputation"] = { 942, HONORED },
@@ -32,7 +32,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
-								["coord"] = { 79.25, 63.66, 102 },
+								["coord"] = { 79.25, 63.66, ZANGARMARSH },
 								["g"] = {
 									i(29172),	-- Ashyen's Gift
 									i(31804),	-- Cenarion Expedition Tabard
@@ -93,7 +93,7 @@ _.Zones =
 							q(50130, {	-- A Friendly Gesture
 								["isBreadcrumb"] = true,
 								["provider"] = { "n", 17924 },	-- Msshi'fn
-								["coord"] = { 19.7, 52.1, 102 },
+								["coord"] = { 19.7, 52.1, ZANGARMARSH },
 								["sourceQuest"] = 50131,	-- An Outside Perspective
 								["minReputation"] = { 970, NEUTRAL },
 								["maxReputation"] = { 970, HONORED },
@@ -101,7 +101,7 @@ _.Zones =
 							q(50131, {	-- An Outside Perspective
 								["isBreadcrumb"] = true,
 								["provider"] = { "n", 17923 },	-- Fahssn
-								["coord"] = { 19.0, 63.4, 102 },
+								["coord"] = { 19.0, 63.4, ZANGARMARSH },
 								["minReputation"] = { 970, NEUTRAL },
 								["maxReputation"] = { 970, FRIENDLY },
 								["sourceQuests"] = {
@@ -111,35 +111,35 @@ _.Zones =
 							}),
 							q(9807, {	-- More Fertile Spores
 								["provider"] = { "n", 17925 },	-- Gshaff
-								["coord"] = { 19.1, 49.4, 102 },
+								["coord"] = { 19.1, 49.4, ZANGARMARSH },
 								["sourceQuest"] = 9806,	-- Fertile Spores
 								["repeatable"] = true,
 								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9809, {	-- More Glowcaps
 								["provider"] = { "n", 17924 },	-- Mshii'fn
-								["coord"] = { 19.7, 52.1, 102 },
+								["coord"] = { 19.7, 52.1, ZANGARMARSH },
 								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 								["repeatable"] = true,
 								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9742, {	-- More Spore Sacs
 								["provider"] = { "n", 17923 },	-- Fahssn
-								["coord"] = { 19.0, 63.4, 102 },
+								["coord"] = { 19.0, 63.4, ZANGARMARSH },
 								["sourceQuest"] = 9739,	-- The Sporelings' Plight
 								["repeatable"] = true,
 								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9744, {	-- More Tendrils!
 								["provider"] = { "n", 17923 },	-- Fahssn
-								["coord"] = { 19.0, 63.4, 102 },
+								["coord"] = { 19.0, 63.4, ZANGARMARSH },
 								["sourceQuest"] = 9743,	-- Natural Enemies
 								["repeatable"] = true,
 								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9727, {	-- Now That We're Still Friends...
 								["provider"] = { "n", 17856 },	-- Gzhun'tt
-								["coord"] = { 19.5, 50.0, 102 },
+								["coord"] = { 19.5, 50.0, ZANGARMARSH },
 								["sourceQuest"] = 9726,	-- Now That We're Friends...
 								["minReputation"] = { 970, FRIENDLY },
 								["repeatable"] = true,
@@ -147,7 +147,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(18382, {	-- Mycah <Sporeggar Quartermaster>
-								["coord"] = { 18.27, 51.12, 102 },
+								["coord"] = { 18.27, 51.12, ZANGARMARSH },
 								["g"] = {
 									i(34478, {	-- Tiny Sporebat
 										["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap

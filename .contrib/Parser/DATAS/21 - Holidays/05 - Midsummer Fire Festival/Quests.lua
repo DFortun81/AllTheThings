@@ -452,10 +452,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11787, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187975 },	-- Horde Bonfire
-				["coord"] = { 35.6, 51.9, 102 },
+				["coord"] = { 35.6, 51.9, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(54744, {	-- Desecrate this Fire! — Zuldazar
 				["isYearly"] = true,
@@ -886,10 +886,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11758, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187941 },	-- Alliance Bonfire
-				["coord"] = { 68.6, 52.0, 102 },
+				["coord"] = { 68.6, 52.0, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(13449, {	-- Desecrate this Fire! — Zul'Drak
 				["isYearly"] = true,
@@ -1296,9 +1296,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11829, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25912 },	-- Zangarmarsh Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 69.0, 52.0, 102 },
+				["coord"] = { 69.0, 52.0, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(13492, {	-- Honor the Flame — Zul'Drak
 				["provider"] = { "n", 32808 },	-- Zul'Drak Flame Warden
@@ -1669,9 +1669,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11863, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25947 },	-- Zangarmarsh Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 35.3, 51.6, 102 },
+				["coord"] = { 35.3, 51.6, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(54745, {	-- Honor the Flame — Zuldazar
 				["provider"] = { "n", 148944 },	-- Zuldazar Flame Keeper
@@ -1927,7 +1927,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					83,		-- Winterspring
 					97,		-- Azuremyst Isle
 					HELLFIRE_PENINSULA,
-					102,	-- Zangarmarsh
+					ZANGARMARSH,
 					108,	-- Terokkar Forest
 					109,	-- Netherstorm
 					SHATTRATH_CITY,
@@ -1960,7 +1960,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					83,		-- Winterspring
 					94,		-- Eversong Woods
 					HELLFIRE_PENINSULA,
-					102,	-- Zangarmarsh
+					ZANGARMARSH,
 					117,	-- Howling Fjord
 					119,	-- Sholazar Basin
 					249,	-- Uldum

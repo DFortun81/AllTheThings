@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(102, {	-- Zangarmarsh
+		m(ZANGARMARSH, {
 			n(-38, {	-- Professions
 				prof(FISHING, {
 					o(182952, {	-- Steam Pump Flotsam

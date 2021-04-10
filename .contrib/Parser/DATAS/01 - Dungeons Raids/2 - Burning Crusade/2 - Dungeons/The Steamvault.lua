@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			263,	-- The Steamvault
 			264,	-- The Cooling Pools
 		},
-		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
+		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["g"] = {
 			n(QUESTS, {
 				q(29613, {	-- A Proper Fate
