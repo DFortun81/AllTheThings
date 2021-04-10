@@ -56,7 +56,7 @@ _.Zones =
 				}),
 				q(27277, {	-- An Audience with Ureda
 					["provider"] = { "n", 16653 },	-- Inethven
-					["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
+					["coord"] = { 53.0, 19.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -71,7 +71,7 @@ _.Zones =
 				}),
 				q(27334, {	-- Dark Cleric Cecille
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
@@ -83,13 +83,13 @@ _.Zones =
 				}),
 				q(9621,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
-					["coords"] = { 54.0, 20.4, 110 },
+					["coords"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
 					["races"] = { BLOODELF },
 				}),
 				q(9812,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
-					["coords"] = { 54.0, 20.4, 110 },
+					["coords"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
 					["races"] = HORDE_ONLY,
 				}),
@@ -102,7 +102,7 @@ _.Zones =
 				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
-					["coord"] = { 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
+					["coord"] = { 81.0, 37.8, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -110,7 +110,7 @@ _.Zones =
 				}),
 				q(27278, {	-- Grimshot's Call
 					["provider"] = { "n", 16674 },	-- Zandine
-					["coord"] = { 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
+					["coord"] = { 84.4, 28.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { HUNTER },
@@ -118,7 +118,7 @@ _.Zones =
 				}),
 				q(27335, {	-- Journey to Orgrimmar
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
@@ -135,13 +135,13 @@ _.Zones =
 					["coords"] = {
 						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
 						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
-						{ 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien (Silvermoon City)
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { GOBLIN },
 					["classes"] = { PRIEST },
@@ -149,7 +149,7 @@ _.Zones =
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
@@ -157,7 +157,7 @@ _.Zones =
 				}),
 				q(28298, {	-- Meet with Gordul
 					["provider"] = { "n", 16684 },	-- Zelanis
-					["coord"] = { 79.4, 52.0, 110 },	-- Zelanis (Silvermoon City)
+					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
@@ -165,7 +165,7 @@ _.Zones =
 				}),
 				q(28290, {	-- Meet with Grezz Ragefist
 					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
-					["coord"] = { 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
+					["coord"] = { 81.0, 37.8, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -173,7 +173,7 @@ _.Zones =
 				}),
 				q(28299, {	-- Meet with Kranosh
 					["provider"] = { "n", 16648 },	-- Zanien
-					["coord"] = { 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
+					["coord"] = { 73.2, 45.2, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -181,7 +181,7 @@ _.Zones =
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
 					["provider"] = { "n", 16681 },	-- Champion Bachi
-					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
+					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
@@ -189,7 +189,7 @@ _.Zones =
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 16674 },	-- Zandine
-					["coord"] = { 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
+					["coord"] = { 84.4, 28.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { HUNTER },
@@ -197,7 +197,7 @@ _.Zones =
 				}),
 				q(28309, {	-- Meet with Shadow-Walker Zuru
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
@@ -205,7 +205,7 @@ _.Zones =
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
 					["provider"] = { "n", 16661 },	-- Gez'li
-					["coord"] = { 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
+					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
@@ -213,7 +213,7 @@ _.Zones =
 				}),
 				q(28307, {	-- Meet with Tyelis
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
@@ -221,7 +221,7 @@ _.Zones =
 				}),
 				q(28300, {	-- Meet with Ureda
 					["provider"] = { "n", 16653 },	-- Inethven
-					["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
+					["coord"] = { 53.0, 19.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -236,7 +236,7 @@ _.Zones =
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 16681 },	-- Champion Bachi
-					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
+					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
@@ -244,7 +244,7 @@ _.Zones =
 				}),
 				q(27332, {	-- Seek the Shadow-Walker
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
@@ -252,7 +252,7 @@ _.Zones =
 				}),
 				q(9134,  {	-- Skymistress Gloaming
 					["provider"] = { "n", 16191 },	-- Sathren Azuredawn
-					["coord"] = { 53.9, 71.0, 110 },
+					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
 					["races"] = { BLOODELF },
 				}),
@@ -268,7 +268,7 @@ _.Zones =
 				}),
 				q(27280, {	-- The Earthbreaker Calls
 					["provider"] = { "n", 16661 },	-- Gez'li
-					["coord"] = { 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
+					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
@@ -303,7 +303,7 @@ _.Zones =
 				}),
 				q(27331, {	-- The Seer's Call
 					["provider"] = { "n", 16658 },	-- Aldrae
-					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
+					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = { TAUREN },
 					["classes"] = { PRIEST },
@@ -311,7 +311,7 @@ _.Zones =
 				}),
 				q(27279, {	-- The Shattered Hand
 					["provider"] = { "n", 16684 },	-- Zelanis
-					["coord"] = { 79.4, 52.0, 110 },	-- Zelanis (Silvermoon City)
+					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },

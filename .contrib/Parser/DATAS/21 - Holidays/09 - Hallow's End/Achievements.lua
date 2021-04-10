@@ -471,12 +471,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 32 },	-- Searing Gorge
 										}),
 										crit(17, {	-- Silvermoon City, The Bazaar
-											["coord"] = { 67.6, 73.2, 110 },
-											["maps"] = { 110 },	-- Silvermoon City
+											["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
+											["maps"] = { SILVERMOON_CITY },
 										}),
 										crit(18, {	-- Silvermoon City, The Royal Exchange
-											["coord"] = { 79.6, 57.9, 110 },
-											["maps"] = { 110 },	-- Silvermoon City
+											["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
+											["maps"] = { SILVERMOON_CITY },
 										}),
 										crit(19, {	-- Silverpine Forest, Forsaken Rear Guard
 											["coord"] = { 44.3, 20.4, 21 },

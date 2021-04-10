@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(110, {	-- Silvermoon City
+		m(SILVERMOON_CITY, {
 			n(-40, {	-- Legacy
 				n(QUESTS, {
 					q(9489, {	-- Cleansing the Scar

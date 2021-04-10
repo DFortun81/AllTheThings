@@ -16,7 +16,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 					{ 45.0, 57.4, 89 },		-- Darnassus
 					{ 33.8, 66.6, 87 },		-- Ironforge
 					{ 52.8, 77.0, 85 },		-- Orgrimmar
-					{ 64.2, 67.2, 110 },	-- Silvermoon City
+					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },		-- Stormwind
 					{ 74.0, 56.2, 103 },	-- The Exodar
 					{ 43.6, 53.4, 88 },		-- Thunder Bluff
@@ -86,7 +86,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 			q(24615, {	-- A Gift for the Regent Lord of Quel'Thalas
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 64.2, 66.4, 110 },	-- Silvermoon City
+				["coord"] = { 64.2, 66.4, SILVERMOON_CITY },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24629, {	-- A Perfect Puff of Perfume
@@ -96,7 +96,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 					{ 45.0, 57.4, 89 },		-- Darnassus
 					{ 33.8, 66.6, 87 },		-- Ironforge
 					{ 52.8, 77.0, 85 },		-- Orgrimmar
-					{ 64.2, 67.2, 110 },	-- Silvermoon City
+					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },		-- Stormwind
 					{ 74.0, 56.2, 103 },	-- The Exodar
 					{ 43.6, 53.4, 88 },		-- Thunder Bluff
@@ -114,7 +114,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 					{ 45.0, 57.4, 89 },		-- Darnassus
 					{ 33.8, 66.6, 87 },		-- Ironforge
 					{ 52.8, 77.0, 85 },		-- Orgrimmar
-					{ 64.2, 67.2, 110 },	-- Silvermoon City
+					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },		-- Stormwind
 					{ 74.0, 56.2, 103 },	-- The Exodar
 					{ 43.6, 53.4, 88 },		-- Thunder Bluff
@@ -419,7 +419,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 38295 },	-- Junior Detective
 				["coords"] = {
-					{ 64.2, 70.0, 110 },	-- Silvermoon City
+					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, 88 },	-- Thunder Bluff
 					{ 64.6, 37.4, 90 },		-- Undercity
 				},

@@ -1386,18 +1386,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12370, {	-- Candy Bucket — Silvermoon City, The Bazaar, Horde
 				["isYearly"] = true,
-				["coord"] = { 67.6, 73.2, 110 },
+				["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12369, {	-- Candy Bucket — Silvermoon City, The Royal Exchange, Horde
 				["isYearly"] = true,
-				["coord"] = { 79.6, 57.9, 110 },
+				["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

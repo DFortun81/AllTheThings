@@ -16,11 +16,11 @@ _.GearSets =
 			}),
 			q(53734, {	-- Walk Among Ghosts
 				["provider"] = { "n", 16802 },	-- Lor'themar Theron
-				["coord"] = { 53.8, 20.2, 110 },
+				["coord"] = { 53.8, 20.2, SILVERMOON_CITY },
 				["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 				["lvl"] = 120,
 			}),
 			q(53882, {	-- Writing on the Wall

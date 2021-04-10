@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(110, {	-- Silvermoon City
-			["description"] = "|cff66ccffSilvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.|r",
-			["isRaid"] = true,
+		m(SILVERMOON_CITY, {
+			["description"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_bloodelf",
+			["isRaid"] = true,
 		}),
 	}),
 };

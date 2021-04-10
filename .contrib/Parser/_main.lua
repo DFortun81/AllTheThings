@@ -203,6 +203,7 @@ OUTLAND = 101;	-- Confirmed!
 EVERSONG_WOODS = 94;	-- Confirmed!
 GHOSTLANDS = 95;	-- Confirmed!
 ISLE_OF_QUELDANAS = 122;	-- Confirmed!
+SILVERMOON_CITY = 110;	-- Confirmed!
 
 ItemClassInfo = {
 	{

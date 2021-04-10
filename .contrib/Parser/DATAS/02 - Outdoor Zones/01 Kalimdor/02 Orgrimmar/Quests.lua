@@ -158,13 +158,13 @@ _.Zones =
 									q(49354, {	-- Remember the Sunwell
 										["sourceQuests"] = { 49613 },	-- Silvermoon City
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
-										["coord"] = { 58.2, 19.4, 110 },
+										["coord"] = { 58.2, 19.4, SILVERMOON_CITY },
 										["races"] = HORDE_ONLY,
 									}),
 									q(49614, {	-- The Nightborne
 										["sourceQuests"] = { 49354 },	-- Remember the Sunwell
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
-										["coord"] = { 58.2, 19.4, 110 },
+										["coord"] = { 58.2, 19.4, SILVERMOON_CITY },
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											ach(12244),	-- Allied Races: Nightborne

@@ -992,11 +992,11 @@ _.Holidays =
 							10953,	-- Visit the Throne of the Elements
 						},
 						["coords"] = {
-							{ 76.61, 81.23, 110 },	-- Elite Tauren Chieftain
+							{ 76.61, 81.23, SILVERMOON_CITY },
 						},
 						["maps"] = {
-							110,	-- Silvermoon City
 							111,	-- Shattrath City
+							SILVERMOON_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 			89,		-- Darnassus
 			87,		-- Ironforge
 			85,		-- Orgrimmar
-			110,	-- Silvermoon City
+			SILVERMOON_CITY,
 			84,		-- Stormwind
 			103,	-- The Exodar
 			88,		-- Thunder Bluff

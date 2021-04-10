@@ -48,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 				["g"] = {
@@ -1780,7 +1780,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 47.8, 38.4, 85 },		-- Orgrimmar
 					{ 21.4, 27.8, 88 },		-- Thunder Bluff
 					{ 67.4, 8.00, 90 },		-- Undercity
-					{ 70.0, 42.8, 110 },	-- Silvermoon City
+					{ 70.0, 42.8, SILVERMOON_CITY },
 					{ 62.0, 32.2, 111 },	-- Shattrath City
 				},
 				["races"] = HORDE_ONLY,
@@ -1788,7 +1788,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2033,10 +2033,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["provider"] = { "o", 188129 },	-- Flame of
 			--	["itemID"] = 35568,	-- Flame of Silvermoon
-				["coord"] = { 69.7, 42.7, 110 },
+				["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 			}),
 			q(11917, {	-- Striking Back
 				["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
@@ -2050,7 +2050,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2061,7 +2061,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2077,7 +2077,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2088,7 +2088,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2104,7 +2104,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2115,7 +2115,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2131,7 +2131,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2142,7 +2142,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2158,7 +2158,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2169,7 +2169,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2185,7 +2185,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2196,7 +2196,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),
@@ -2256,7 +2256,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					90,		-- Undercity
 					94,		-- Eversong Woods
 					109,	-- Netherstorm
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)
@@ -2339,7 +2339,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
 					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
+					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, 111 },	-- Shattrath City
 				},
 				["maps"] = {
@@ -2350,7 +2350,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					90,		-- Undercity
 					103,	-- The Exodar
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					111,	-- Shattrath City
 				},
 			}),

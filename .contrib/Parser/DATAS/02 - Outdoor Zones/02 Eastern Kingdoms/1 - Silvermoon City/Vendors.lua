@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(110, {	-- Silvermoon City
+		m(SILVERMOON_CITY, {
 			n(VENDORS, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(16631, {	-- Andra <Clothier>
-						["coord"] = { 65.2, 47.2, 110 },
+						["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 						["g"] = {
 							i(16059),	-- Common Brown Shirt
 							i(3428),	-- Common Gray Shirt
@@ -18,7 +18,7 @@ _.Zones =
 						},
 					}),
 					n(16638, {	-- Deynna <Tailoring Supplies>
-						["coord"] = { 56.0, 51.8, 110 },
+						["coord"] = { 56.0, 51.8, SILVERMOON_CITY },
 						["g"] = {
 							i(54601, {	-- Pattern: Belt of the Depths
 								["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
@@ -71,7 +71,7 @@ _.Zones =
 						},
 					}),
 					n(16670, {	-- Eriden <Blacksmithing Supplies>
-						["coord"] = { 80.6, 37.0, 110 },
+						["coord"] = { 80.6, 37.0, SILVERMOON_CITY },
 						["g"] = {
 							i(23591, {	-- Plans: Adamantite Cleaver
 								["isLimited"] = true,
@@ -190,7 +190,7 @@ _.Zones =
 						},
 					}),
 					n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
-						["coord"] = { 90.8, 73.6, 110 },
+						["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
 						["g"] = {
 							i(52409, {	-- Design: Accurate Demonseye
 								["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
@@ -471,7 +471,7 @@ _.Zones =
 						},
 					}),
 					n(16635, {	-- Lyna <Enchanting Supplies>
-						["coord"] = { 70.0, 24.6, 110 },
+						["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 						["g"] = {
 							i(64411, {	-- Formula: Enchant Boots - Assassin's Step
 								["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
@@ -529,7 +529,7 @@ _.Zones =
 						},
 					}),
 					n(16641, {	-- Melaris <Alchemy Supplies>
-						["coord"] = { 67.0, 19.2, 110 },
+						["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 						["g"] = {
 							i(22900, {	-- Recipe: Elixir of Camouflage
 								["isLimited"] = true,
@@ -540,14 +540,14 @@ _.Zones =
 						},
 					}),
 					n(16677, {	-- Quelis <Cooking Supplies>
-						["coord"] = { 69.6, 71.2, 110 },
+						["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
 					}),
 					n(16782, {	-- Yatheon <Engineering Supplies>
-						["coord"] = { 75.8, 40.6, 110 },
+						["coord"] = { 75.8, 40.6, SILVERMOON_CITY },
 						["g"] = {
 							i(23799, {	-- Schematic: Adamantite Rifle
 								["isLimited"] = true,
@@ -561,13 +561,13 @@ _.Zones =
 						},
 					}),
 					n(30710, {	-- Zantasia <Inscription Trainer>
-						["coord"] = { 69.6, 23.6, 110 },
+						["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
 						["g"] = {
 							n(137789),	-- Technique: Songs of the Legion
 						},
 					}),
 					n(16689, {	-- Zaralda <Leatherworking Supplies>
-						["coord"] = { 84.6, 78.8, 110 },
+						["coord"] = { 84.6, 78.8, SILVERMOON_CITY },
 						["g"] = {
 							i(67095, {	-- Pattern: Assassin's Chestplate
 								["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
@@ -710,7 +710,7 @@ _.Zones =
 						},
 					}),
 					n(16623, {	-- Zyandrel <Cloth Armor Merchant>
-						["coord"] = { 64.8, 48.6, 110 },
+						["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 						["g"] = {
 							i(16059),	-- Common Brown Shirt
 							i(3428),	-- Common Gray Shirt

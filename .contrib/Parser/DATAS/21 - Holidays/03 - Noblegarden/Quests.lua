@@ -154,12 +154,12 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 58.11, 46.17, 111 },	-- Shattrath City [Goblin]
 					{ 58.96, 57.96, 111 },	-- Shattrath City [Goblin]
 					{ 63.52, 39.64, 111 },	-- Shattrath City [Goblin]
-					{ 54.15, 50.76, 110 },	-- Silvermoon City [Blood Elf]
-					{ 59.07, 60.87, 110 },	-- Silvermoon City [Blood Elf]
-					{ 62.54, 73.87, 110 },	-- Silvermoon City [Blood Elf]
-					{ 78.01, 57.53, 110 },	-- Silvermoon City [Blood Elf]
-					{ 89.57, 49.01, 110 },	-- Silvermoon City [Blood Elf]
-					{ 90.27, 57.51, 110 },	-- Silvermoon City [Blood Elf]
+					{ 54.15, 50.76, SILVERMOON_CITY },	-- Blood Elf
+					{ 59.07, 60.87, SILVERMOON_CITY },	-- Blood Elf
+					{ 62.54, 73.87, SILVERMOON_CITY },	-- Blood Elf
+					{ 78.01, 57.53, SILVERMOON_CITY },	-- Blood Elf
+					{ 89.57, 49.01, SILVERMOON_CITY },	-- Blood Elf
+					{ 90.27, 57.51, SILVERMOON_CITY },	-- Blood Elf
 					{ 50.92, 30.09, 71 },	-- Tanaris [Goblin]
 					{ 51.51, 26.68, 71 },	-- Tanaris [Goblin]
 					{ 51.99, 29.36, 71 },	-- Tanaris [Goblin]
@@ -184,7 +184,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					85,		-- Orgrimmar
 					86,		-- Orgrimmar
 					111,	-- Shattrath City
-					110,	-- Silvermoon City
+					SILVERMOON_CITY,
 					71,		-- Tanaris
 					210,	-- The Cape of Stranglethorn
 					120,	-- The Storm Peaks
