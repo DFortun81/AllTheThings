@@ -3890,9 +3890,6 @@ fieldConverters = {
 	["altAchID"] = function(group, value)
 		CacheField(group, "achievementID", value);
 	end,
-	["altQuestID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
 	["azeriteEssenceID"] = function(group, value)
 		CacheField(group, "azeriteEssenceID", value);
 	end,
@@ -4693,15 +4690,6 @@ local function PopulateQuestObject(questObject)
 		(questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly) then
 			questObject.repeatable = true;
 	end
-
-	-- Query quest name if not existing
-	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
-	-- if not questObject.text then
-		-- local harvestedName = QuestTitleFromID[questObject.questID];
-		-- if harvestedName and harvestedName ~= RETRIEVING_DATA then
-			-- -- questObject.text = harvestedName;
-		-- end
-	-- end
 end
 -- Returns a questObject containing a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
@@ -8191,13 +8179,8 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsSelfieFilters then
-			if GetDataSubMember("CollectedQuests", t.questID) then
-				return 2;
-			end
-			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-				return 2;
-			end
+		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
+			return 2;
 		end
 	end,
 	["trackable"] = function(t)
@@ -8288,12 +8271,9 @@ local npcFields = {
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
 	end,
 	["altcollectedAsQuest"] = function(t)
-		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
-				-- any altQuest completed on this character, mark the altQuestID
 				if IsQuestFlaggedCompleted(questID) then
-					-- print("complete altquest found",questID,"=>",t.questID);
 					rawset(t, "altcollected", questID);
 					return questID;
 				end
@@ -8444,12 +8424,9 @@ local objectFields = {
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
 	end,
 	["altcollectedAsQuest"] = function(t)
-		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
-				-- any altQuest completed on this character, mark the altQuestID
 				if IsQuestFlaggedCompleted(questID) then
-					-- print("complete altquest found",questID,"=>",t.questID);
 					rawset(t, "altcollected", questID);
 					return questID;
 				end
@@ -8675,194 +8652,246 @@ end
 end)();
 
 -- Quest Lib
-app.BaseQuest = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			if t.retries and t.retries > 120 and t.npcID then
-				return NPCNameFromID[t.npcID];
-			end
-			return app.TryColorizeName(t, t.name);
-		elseif key == "questName" or key == "name" then
-			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
-			return QuestTitleFromID[questID];
-		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
-			-- this generates a link but it doesn't actually allow it to post in a chat channel...
-			-- return "\124cffffff00\124Hquest:".. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID) ..":".. (type(t.lvl) == "table" and t.lvl[1] or t.lvl or "0") .."\124h[".. t.questName .. "]\124h\124r";
-		elseif key == "icon" or key == "preview" then
-			if t.providers then
-				for k,v in pairs(t.providers) do
-					if v[2] > 0 then
-						if v[1] == "o" then
-							return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10"
-						elseif v[1] == "i" then
-							local _,_,_,_,icon = GetItemInfoInstant(v[2]);
-							if icon then
-								return icon
-							end
-						end
+(function()
+local questFields = {
+	["key"] = function(t)
+		return "questID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		return QuestTitleFromID[t.questID];
+	end,
+	["icon"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
+					elseif v[1] == "i" then
+						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
 					end
 				end
 			end
-			if key == "preview" then
-				if t.repeatable then
-					return "Interface\\Icons\\Achievement_Quests_Completed_Daily_08";
-				end
-				return "Interface\\Icons\\Achievement_Quests_Completed_08";
-			elseif t.isDaily or t.isWeekly then
-				return "Interface\\GossipFrame\\DailyQuestIcon";
-			elseif t.repeatable then
-				return "Interface\\GossipFrame\\DailyActiveQuestIcon";
-			else
-				return "Interface\\GossipFrame\\AvailableQuestIcon";
-			end
-		elseif key == "trackable" then
+		end
+		if t.isWorldQuest then
+			return "Interface\\GossipFrame\\DailyActiveQuestIcon";
+		elseif t.repeatable then
+			return "Interface\\GossipFrame\\DailyQuestIcon";
+		else
+			return "Interface\\GossipFrame\\AvailableQuestIcon";
+		end
+	end,
+	["link"] = function(t)
+		return "quest:" .. t.questID;
+	end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleAsQuest(t);
+	end,
+	["collected"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["saved"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	
+	["collectibleAsReputation"] = function(t)
+		return app.CollectibleAsQuest(t) or (app.CollectibleReputations and t.maxReputation);
+	end,
+	["collectedAsReputation"] = function(t)
+		if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
 			return true;
-		elseif key == "collectible" then
-			return app.CollectibleAsQuest(t);
-		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
-		elseif key == "collected" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "saved" then
-			return t.collected == 1;
-		elseif key == "altcollected" then
-			local found;
-			-- determine if an altQuest is considered completed for this quest for this character
-			if t.altQuests then
-				for i,questID in ipairs(t.altQuests) do
-					-- any altQuest completed on this character, mark the altQuestID
-					if not found and IsQuestFlaggedCompleted(questID) then
-						-- print(t.questID,"locked by",questID,"alt-quest");
-						found = questID;
-					end
+		end
+		return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
+	end,
+	
+	-- Questionable Fields... TODO: Investigate if necessary.
+	["altcollected"] = function(t)
+		-- determine if an altQuest is considered completed for this quest for this character
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				if IsQuestFlaggedCompleted(questID) then
+					rawset(t, "altcollected", questID);
+					return questID;
 				end
 			end
-			if found then rawset(t, "altcollected", found); end
-			return rawget(t, "altcollected");
+		end
+	end,
+	["breadcrumbLockedBy"] = function(t)
 		-- returns nil if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
 		-- TODO: change to 'isLockedBy' property for all quests
-		elseif key == "breadcrumbLockedBy" then
-			-- do not consider a completed breadcrumb as being locked from being collectible
-			if IsQuestFlaggedCompleted(t.questID) then return nil; end
+		-- do not consider a completed breadcrumb as being locked from being collectible
+		if not IsQuestFlaggedCompleted(t.questID) then
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
-			local found;
 			if t.isBreadcrumb and t.nextQuests then
-				local nq;
 				for i,questID in ipairs(t.nextQuests) do
-					-- any nextQuests completed specifically on this character, mark the nextQuestsID
-					if not found and IsQuestFlaggedCompleted(questID) then
-						-- print(t.questID,"locked by",questID,"directly");
-						found = questID;
-					elseif not found then
+					if IsQuestFlaggedCompleted(questID) then
+						rawset(t, "breadcrumbLockedBy", questID);
+						return questID;
+					else
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						nq = app.SearchForObjectClone("questID", questID);
-						-- check the quests cached under this questID for the correct quest group
-						if nq then
-							if IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy then
-								-- print(t.questID,"locked by",questID,"locked by",nq.breadcrumbLockedBy);
-								found = questID;
-							end
+						local nq = app.SearchForObjectClone("questID", questID);
+						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
+							rawset(t, "breadcrumbLockedBy", questID);
+							return questID;
 						end
 					end
 				end
-			end
-			-- only cache if it's no longer available, but not if it is available currently, since that can change
-			if found then rawset(t, "breadcrumbLockedBy", found); end
-			return rawget(t, "breadcrumbLockedBy");
-		elseif key == "sourceQuestsCompleted" then
-			if t.sourceQuests and #t.sourceQuests > 0 then
-				local anySourceIncomplete = false;
-				local sq;
-				local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
-				for i,sourceQuestID in ipairs(t.sourceQuests) do
-					if not anySourceIncomplete and not IsQuestFlaggedCompleted(sourceQuestID) then
-						if includeBreadcrumbs then
-							-- consider the breadcrumb as an actual sq since the user is tracking them
-							anySourceIncomplete = true;
-						else
-							-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
-							sq = app.SearchForObjectClone("questID", sourceQuestID);
-							-- print(sq.questID,sq.isBreadcrumb,sq.breadcrumbLockedBy,sq.altcollected);
-							anySourceIncomplete = not sq or not sq.isBreadcrumb or sq.breadcrumbLockedBy or sq.altcollected;
-						end
-					end
-				end
-				return not anySourceIncomplete;
 			end
 		end
-	end
+	end,
+	["sourceQuestsCompleted"] = function(t)
+		if t.sourceQuests and #t.sourceQuests > 0 then
+			local completed = true;
+			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
+			for i,sourceQuestID in ipairs(t.sourceQuests) do
+				if not IsQuestFlaggedCompleted(sourceQuestID) then
+					if includeBreadcrumbs then
+						-- consider the breadcrumb as an actual sq since the user is tracking them
+						completed = false;
+					else
+						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
+						local sq = app.SearchForObjectClone("questID", sourceQuestID);
+						if sq then
+							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
+								completed = false;
+							end
+						else
+							completed = false;
+						end
+					end
+				end
+			end
+			return completed;
+		end
+	end,
 };
+app.BaseQuest = app.BaseObjectFields(questFields);
+
+local fields = RawCloneData(questFields);
+fields.collectible = questFields.collectibleAsReputation;
+fields.collected = questFields.collectedAsReputation;
+app.BaseQuestWithReputation = app.BaseObjectFields(fields);
 app.CreateQuest = function(id, t)
+	if t and rawget(t, "maxReputation") then
+		return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
-app.BaseQuestObjective = {
-	__index = function(t, key)
-		if key == "key" then
-			return "objectiveID";
-		elseif key == "text" then
-			local questID = t.parent.questID;
-			if questID then
-				local objectives = C_QuestLog.GetQuestObjectives(questID);
-				if objectives then
-					local objective = objectives[t.objectiveID];
-					if objective then
-						return objective.text;
-					end
-				end
-				return RETRIEVING_DATA;
-			end
-			return "INVALID: Must be relative to a Quest Object.";
-		elseif key == "questID" then
-			return t.parent.questID;
-		elseif key == "objectiveID" then
-			return 1;
-		elseif key == "icon" then
-			if t.providers then
-				for k,v in pairs(t.providers) do
-					if v[2] > 0 then
-						if v[1] == "o" then
-							return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Worldmap\\Gear_64Grey"
-						elseif v[1] == "i" then
-							local _,_,_,_,icon = GetItemInfoInstant(v[2]);
-							if icon then
-								return icon
-							end
-						end
-					end
-				end
-			end
-			return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return false;
-		elseif key == "repeatable" then
-			return t.parent.repeatable;
-		elseif key == "saved" then
-			-- If the parent is saved, return immediately.
-			local saved = t.parent.saved;
-			if saved then return saved; end
 
-			-- Check to see if the objective was completed.
-			local questID = t.parent.questID;
-			if questID then
-				local objectives = C_QuestLog.GetQuestObjectives(questID);
-				if objectives then
-					local objective = objectives[t.objectiveID];
-					if objective then
-						return objective.finished and 1;
+local fields = {
+	["key"] = function(t)
+		return "objectiveID";
+	end,
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
+	["name"] = function(t)
+		local questID = t.questID;
+		if questID then
+			local objectives = C_QuestLog.GetQuestObjectives(questID);
+			if objectives then
+				local objective = objectives[t.objectiveID];
+				if objective then
+					return objective.text;
+				end
+			end
+			return RETRIEVING_DATA;
+		end
+		return "INVALID: Must be relative to a Quest Object.";
+	end,
+	["icon"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Worldmap\\Gear_64Grey";
+					elseif v[1] == "i" then
+						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
 					end
 				end
 			end
 		end
-	end
+		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+	end,
+	["objectiveID"] = function(t)
+		return 1;
+	end,
+	["questID"] = function(t)
+		return t.parent.questID;
+	end,
+	["isDaily"] = function(t)
+		return t.parent.isDaily;
+	end,
+	["isWeekly"] = function(t)
+		return t.parent.isWeekly;
+	end,
+	["isMonthly"] = function(t)
+		return t.parent.isMonthly;
+	end,
+	["isYearly"] = function(t)
+		return t.parent.isYearly;
+	end,
+	["isWorldQuest"] = function(t)
+		return t.parent.isWorldQuest;
+	end,
+	["repeatable"] = function(t)
+		return t.parent.repeatable;
+	end,
+	["collectible"] = function(t)
+		return false;
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["collected"] = function(t)
+		-- If the parent is collected, return immediately.
+		local collected = t.parent.collected;
+		if collected then return collected; end
+		
+		-- Check to see if the objective was completed.
+		local questID = t.questID;
+		if questID then
+			local objectives = C_QuestLog.GetQuestObjectives(questID);
+			if objectives then
+				local objective = objectives[t.objectiveID];
+				if objective then
+					return objective.finished and 1;
+				end
+			end
+		end
+	end,
+	["saved"] = function(t)
+		-- If the parent is saved, return immediately.
+		local saved = t.parent.saved;
+		if saved then return saved; end
+		
+		-- Check to see if the objective was completed.
+		local questID = t.questID;
+		if questID then
+			local objectives = C_QuestLog.GetQuestObjectives(questID);
+			if objectives then
+				local objective = objectives[t.objectiveID];
+				if objective then
+					return objective.finished and 1;
+				end
+			end
+		end
+	end,
 };
+app.BaseQuestObjective = app.BaseObjectFields(fields);
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
+end)();
+
 local function QueryCompletedQuests()
 	local t = CompletedQuests;
 	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
@@ -9382,11 +9411,11 @@ app.BaseVignette = {
 					return t.name;
 				end
 			end
-			return t.questName;
-		elseif key == "questName" then
-			return QuestTitleFromID[t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID];
+			return t.name;
+		elseif key == "name" then
+			return QuestTitleFromID[t.questID];
 		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
+			return "quest:" .. t.questID;
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
@@ -10996,34 +11025,6 @@ function app:CreateMiniListForGroup(group)
 									sq = sq.parent;
 								end
 								found = sq;
-								-- print("is-valid sq",sq.key,sq[sq.key]);
-								-- if app.GroupFilter(sq) then
-									-- if app.RecursiveClassAndRaceFilter(sq) then
-										-- if not found or (not found.sourceQuests and sq.sourceQuests) then
-											-- print("found-questID",sq.questID);
-											-- found = sq;
-										-- end
-									-- elseif sq.altQuests then
-										-- for i,altQuestID in sq.altQuests do
-											-- -- Alt Quest IDs are always Horde.
-											-- if app.FactionID == Enum.FlightPathFaction.Horde then
-												-- if sq.altQuestID == sourceQuestID then
-													-- if not found or (not found.sourceQuests and sq.sourceQuests) then
-														-- print("found-HaltQuestID",sq.altQuestID);
-														-- found = sq;
-													-- end
-												-- end
-											-- -- elseif sq.questID == sourceQuestID then
-												-- -- if not found or (not found.sourceQuests and sq.sourceQuests) then
-													-- -- print("found-altQuestID",sq.questID);
-													-- -- found = sq;
-												-- -- end
-											-- end
-										-- end
-									-- end
-								-- else
-									-- print("skip-sq",sq.isBreadcrumb,sq.collected,sq.saved);
-								-- end
 							end
 							if found and not found.isBreadcrumb then
 								sourceQuest = CloneData(found);
@@ -12227,41 +12228,61 @@ RowOnEnter = function (self)
 		if reference.sourceQuests and (not reference.saved or isDebug) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if sourceQuestID > 0 then
-					local qs = SearchForField("questID", sourceQuestID);
-					-- check the quests cached under this questID for the correct quest group
-					if qs and #qs > 0 then
-						local i, sq = #qs;
-						while not sq and i > 0 do
-							if qs[i].questID == sourceQuestID then sq = qs[i]; end
-							i = i - 1;
-						end
-						if sq and (isDebug or (app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq))) then
-							if IsQuestFlaggedCompletedForObject(sq) ~= 1 or isDebug then
-								if sq.isBreadcrumb then
-									table.insert(bc, sq);
-								else
-									table.insert(prereqs, sq);
+				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
+					local sqs = SearchForField("questID", sourceQuestID);
+					if sqs and #sqs > 0 then
+						local bestMatch = nil;
+						for j,sq in ipairs(sqs) do
+							if sq.questID == sourceQuestID then
+								if isDebugMode or (app.RecursiveClassAndRaceFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
+									if sq.sourceQuests then
+										-- Always prefer the source quest with additional source quest data.
+										bestMatch = sq;
+									elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
+										-- Otherwise try to find the version of the quest that isn't an item.
+										bestMatch = sq;
+									end
 								end
 							end
 						end
-					elseif not IsQuestFlaggedCompleted(sourceQuestID) or isDebug then
-						table.insert(prereqs, {questID = sourceQuestID});
+						if bestMatch then
+							if bestMatch.isBreadcrumb then
+								table.insert(bc, bestMatch);
+							else
+								table.insert(prereqs, bestMatch);
+							end
+						end
+					else
+						table.insert(prereqs, app.CreateQuest(questID));
 					end
 				end
 			end
 			if prereqs and #prereqs > 0 then
-				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);		-- L["PREREQUISITE_QUESTS"] = "There are prerequisite quests that must be completed before this may be obtained:"
+				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
 				for i,prereq in ipairs(prereqs) do
-					-- TODO: adding a call to GetCollectionIcon() instead of GetCompletionIcon() instead  causes the 'more than 60 upvalues' error...
-					-- GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]) .. " " .. GetCollectionIcon(IsQuestFlaggedCompletedForObject(prereq)));
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]) .. " " .. GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					if prereq.mapID then
+						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
+					elseif prereq.maps then
+						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
+					elseif prereq.coords then
+						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
+					end
+					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
 			if bc and #bc > 0 then
-				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);		-- L["BREADCRUMBS_WARNING"] = "There are breadcrumb quests that may be not be obtainable after completing this:"
+				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
 				for i,prereq in ipairs(bc) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]));
+					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					if prereq.mapID then
+						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
+					elseif prereq.maps then
+						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
+					elseif prereq.coords then
+						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
+					end
+					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
 		end
@@ -12279,7 +12300,7 @@ RowOnEnter = function (self)
 						if nq then
 							table.insert(nextq, nq);
 						else
-							table.insert(nextq, {questID = nextQuestID});
+							table.insert(nextq, app.CreateQuest(questID));
 						end
 						if IsQuestFlaggedCompleted(nextQuestID) then
 							isBreadcrumbAvailable = false;
@@ -12294,7 +12315,7 @@ RowOnEnter = function (self)
 					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);		-- L["BREADCRUMB_PARTYSYNC_2"] = "This may be obtained via Party Sync with another character that has not completed any of these quests:"
 				end
 				for i,nquest in ipairs(nextq) do
-					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. (nquest.text or QuestTitleFromID[nquest.questID]));
+					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. nquest.text);
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
@@ -12356,7 +12377,7 @@ RowOnEnter = function (self)
 		-- DEBUGGING
 		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
 		-- GameTooltip:AddDoubleLine("LUA Parent Table ID",tostring(reference.parent));
-		-- GameTooltip:AddDoubleLine("Completed AltQuestID",tostring(reference.altcompleted));
+		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
 		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
 		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
 
