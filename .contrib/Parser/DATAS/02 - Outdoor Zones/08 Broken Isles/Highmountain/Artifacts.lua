@@ -14,12 +14,12 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Spell_Warrior_DragonCharge",
 					["groups"] = {
 						q(44311, {	-- Burning Plate of the Worldbreaker Available
-							["title"] = "Burning Plate of the Worldbreaker Available",
+							["name"] = "Burning Plate of the Worldbreaker Available",
 							["description"] = "This quest indicates if the appearance spawns and can be looted.",
 						}),
 						q(44312, {	-- Burning Plate of the Worldbreaker Denied
 							["isDaily"] = true,
-							["title"] = "Burning Plate of the Worldbreaker Denied",
+							["name"] = "Burning Plate of the Worldbreaker Denied",
 							["description"] = "This quest apparently makes you unable to see/obtain the container while it is true.",
 						}),
 						i(139580, {	-- Burning Plate of the Worldbreaker

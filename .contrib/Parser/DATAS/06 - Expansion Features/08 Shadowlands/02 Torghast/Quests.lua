@@ -411,205 +411,205 @@ _.ExpansionFeatures =
 				-- Coldheart
 				q(58198, {	-- Coldheart Interstitia, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 1",
+					["name"] = "Coldheart Interstitia, Layer 1",
 				}),
 				q(58199, {	-- Coldheart Interstitia, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 2",
+					["name"] = "Coldheart Interstitia, Layer 2",
 				}),
 				q(58200, {	-- Coldheart Interstitia, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 3",
+					["name"] = "Coldheart Interstitia, Layer 3",
 				}),
 				q(58201, {	-- Coldheart Interstitia, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 4",
+					["name"] = "Coldheart Interstitia, Layer 4",
 				}),
 				q(58202, {	-- Coldheart Interstitia, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 5",
+					["name"] = "Coldheart Interstitia, Layer 5",
 				}),
 				q(58203, {	-- Coldheart Interstitia, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 6",
+					["name"] = "Coldheart Interstitia, Layer 6",
 				}),
 				q(61975, {	-- Coldheart Interstitia, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 7",
+					["name"] = "Coldheart Interstitia, Layer 7",
 				}),
 				q(61976, {	-- Coldheart Interstitia, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Coldheart Interstitia, Layer 8",
+					["name"] = "Coldheart Interstitia, Layer 8",
 				}),
 				
 				-- Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 1",
+					["name"] = "Fracture Chambers, Layer 1",
 				}),
 				q(58187, {	-- Fracture Chambers, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 2",
+					["name"] = "Fracture Chambers, Layer 2",
 				}),
 				q(58188, {	-- Fracture Chambers, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 3",
+					["name"] = "Fracture Chambers, Layer 3",
 				}),
 				q(58189, {	-- Fracture Chambers, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 4",
+					["name"] = "Fracture Chambers, Layer 4",
 				}),
 				q(58190, {	-- Fracture Chambers, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 5",
+					["name"] = "Fracture Chambers, Layer 5",
 				}),
 				q(58191, {	-- Fracture Chambers, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 6",
+					["name"] = "Fracture Chambers, Layer 6",
 				}),
 				q(61971, {	-- Fracture Chambers, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 7",
+					["name"] = "Fracture Chambers, Layer 7",
 				}),
 				q(61972, {	-- Fracture Chambers, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Fracture Chambers, Layer 8",
+					["name"] = "Fracture Chambers, Layer 8",
 				}),
 				
 				-- Mort'regar
 				q(58204, {	-- Mort'regar, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 1",
+					["name"] = "Mort'regar, Layer 1",
 				}),
 				q(58205, {	-- Mort'regar, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 2",
+					["name"] = "Mort'regar, Layer 2",
 				}),
 				q(59326, {	-- Mort'regar, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 3",
+					["name"] = "Mort'regar, Layer 3",
 				}),
 				q(59334, {	-- Mort'regar, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 4",
+					["name"] = "Mort'regar, Layer 4",
 				}),
 				q(59335, {	-- Mort'regar, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 5",
+					["name"] = "Mort'regar, Layer 5",
 				}),
 				q(59336, {	-- Mort'regar, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 6",
+					["name"] = "Mort'regar, Layer 6",
 				}),
 				q(61977, {	-- Mort'regar, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 7",
+					["name"] = "Mort'regar, Layer 7",
 				}),
 				q(61978, {	-- Mort'regar, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Mort'regar, Layer 8",
+					["name"] = "Mort'regar, Layer 8",
 				}),
 				
 				-- Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 1",
+					["name"] = "Skoldus Hall, Layer 1",
 				}),
 				q(59329, {	-- Skoldus Hall, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 2",
+					["name"] = "Skoldus Hall, Layer 2",
 				}),
 				q(59330, {	-- Skoldus Hall, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 3",
+					["name"] = "Skoldus Hall, Layer 3",
 				}),
 				q(59331, {	-- Skoldus Hall, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 4",
+					["name"] = "Skoldus Hall, Layer 4",
 				}),
 				q(59332, {	-- Skoldus Hall, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 5",
+					["name"] = "Skoldus Hall, Layer 5",
 				}),
 				q(59333, {	-- Skoldus Hall, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 6",
+					["name"] = "Skoldus Hall, Layer 6",
 				}),
 				q(61969, {	-- Skoldus Hall, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 7",
+					["name"] = "Skoldus Hall, Layer 7",
 				}),
 				q(61970, {	-- Skoldus Hall, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Skoldus Hall, Layer 8",
+					["name"] = "Skoldus Hall, Layer 8",
 				}),
 				
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 1",
+					["name"] = "Soulforges, Layer 1",
 				}),
 				q(58193, {	-- Soulforges, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 2",
+					["name"] = "Soulforges, Layer 2",
 				}),
 				q(58194, {	-- Soulforges, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 3",
+					["name"] = "Soulforges, Layer 3",
 				}),
 				q(58195, {	-- Soulforges, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 4",
+					["name"] = "Soulforges, Layer 4",
 				}),
 				q(58196, {	-- Soulforges, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 5",
+					["name"] = "Soulforges, Layer 5",
 				}),
 				q(58197, {	-- Soulforges, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 6",
+					["name"] = "Soulforges, Layer 6",
 				}),
 				q(61973, {	-- Soulforges, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 7",
+					["name"] = "Soulforges, Layer 7",
 				}),
 				q(61974, {	-- Soulforges, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Soulforges, Layer 8",
+					["name"] = "Soulforges, Layer 8",
 				}),
 				
 				-- Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 1",
+					["name"] = "Upper Reaches, Layer 1",
 				}),
 				q(61101, {	-- Upper Reaches, Layer 2
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 2",
+					["name"] = "Upper Reaches, Layer 2",
 				}),
 				q(61131, {	-- Upper Reaches, Layer 3
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 3",
+					["name"] = "Upper Reaches, Layer 3",
 				}),
 				q(61132, {	-- Upper Reaches, Layer 4
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 4",
+					["name"] = "Upper Reaches, Layer 4",
 				}),
 				q(61133, {	-- Upper Reaches, Layer 5
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 5",
+					["name"] = "Upper Reaches, Layer 5",
 				}),
 				q(61134, {	-- Upper Reaches, Layer 6
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 6",
+					["name"] = "Upper Reaches, Layer 6",
 				}),
 				q(61979, {	-- Upper Reaches, Layer 7
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 7",
+					["name"] = "Upper Reaches, Layer 7",
 				}),
 				q(61980, {	-- Upper Reaches, Layer 8
 					["isWeekly"] = true,
-					["title"] = "Upper Reaches, Layer 8",
+					["name"] = "Upper Reaches, Layer 8",
 				}),
 			}),
 		}),

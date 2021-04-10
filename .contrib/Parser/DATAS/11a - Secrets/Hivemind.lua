@@ -38,7 +38,7 @@ _.Secrets =
 				["g"] = {
 					q(50181,    {	-- Blue Crystal Monocle
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
-						["title"] = "Blue Crystal Monocle",
+						["name"] = "Blue Crystal Monocle",
 						["description"] = "Obtaining this monocle requires reading many letters spread around Azeroth.\n\n***You need to interact with all letters in the order listed to progress through the puzzle!***\n",
 						["g"] = {
 							o(280815, {	-- Letter 1: Shattrath City
@@ -102,7 +102,7 @@ _.Secrets =
 					}),
 					q(50185,    {	-- Green Crystal Monocle
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
-						["title"] = "Green Crystal Monocle",
+						["name"] = "Green Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Skyreach|r in |cFFFFD700Spires of Arak|r. Behind the final boss of the instance, |cFFFFD700High Sage Viryx|r, you will find a console that you are able to interact with. Use the four glowing yellow balls to move the sun across the board (the north ball, for instance, makes the sun move up).\n\nThe directions and order in which you must move the sun are:\n\n|cFFFFFFFFRight -> Up -> Down -> Up -> Right -> Right -> Up -> Left -> Down -> Up -> Left -> Down|r\n\nLoot the chest that spawns to obtain the |cFFFFFFFFGreen Crystal Monocle|r\n",
 						["coord"] = { 35.3, 33.6, 542 },	-- Skyreach
 						["g"] = {
@@ -247,7 +247,7 @@ _.Secrets =
 					}),
 					q(50183,    {	-- Yellow Crystal Monocle
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
-						["title"] = "Yellow Crystal Monocle",
+						["name"] = "Yellow Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",
 						["g"] = {
 							o(280886, {	-- Star-Touched Chest

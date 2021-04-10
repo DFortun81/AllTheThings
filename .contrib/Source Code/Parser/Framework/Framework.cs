@@ -623,7 +623,13 @@ namespace ATT
                         NAMES_BY_TYPE[objectData.ObjectType] = names;
                     }
                     names[id] = name;
-                    data.Remove("name");
+
+                    // Keep the name field for quests, so long as they don't have an item.
+                    // They are generally manually assigned in the database.
+                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
+                    {
+                        data.Remove("name");
+                    }
                 }
             }
 

@@ -23,22 +23,22 @@ _.Secrets =
 		["g"] = {
 			q(50098, {	-- Steps 1-4: A New Friend
 				["description"] = "1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",
-				["title"] = "Steps 1-4: A New Friend",
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				["name"] = "Steps 1-4: A New Friend",
+				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 				["g"] = {
 					q(50099, {	-- /whistle at Uuna
 						["sourceQuests"] = { 50098 },	-- Steps 1-4: A New Friend
-						["title"] = "2. /whistle at Uuna",
+						["name"] = "2. /whistle at Uuna",
 						["description"] = "2. |cffffffff/whistle|r at Uuna.\n",
 					}),
 					q(50100, {	-- /roar at Uuna
 						["sourceQuests"] = { 50098 },	-- Steps 1-4: A New Friend
-						["title"] = "3. /roar at Uuna",
+						["name"] = "3. /roar at Uuna",
 						["description"] = "3. When she asks you questions, |cffffffff/roar|r at her.\n",
 					}),
 					q(50101, {	-- /cry at Uuna
 						["sourceQuests"] = { 50098 },	-- Steps 1-4: A New Friend
-						["title"] = "4. /cry at Uuna",
+						["name"] = "4. /cry at Uuna",
 						["description"] = "4. Resummon Uuna and |cffffffff/cry|r at her.  She will tell you that she wishes she could see you better, but it's too dark where she is.",
 					}),
 				},
@@ -46,14 +46,14 @@ _.Secrets =
 			q(50102, {	-- Step 5: Bright Lights
 				["sourceQuests"] = { 50098 },	-- Steps 1-4: A New Friend
 				["description"] = "Take Uuna to A'dal in Shattrath City.  The light of the Naaru is too bright, and she will run away.",
-				["title"] = "Step 5: Bright Lights",
+				["name"] = "Step 5: Bright Lights",
 				["coord"] = { 54.0, 44.7, 111 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50103, {	-- Step 6: Wanna be Friends?
 				["sourceQuests"] = { 50102 },	-- Step 5: Bright Lights
 				["description"] = "Take Uuna to the moonlight by Ashenvale's Lake Falathim.",
-				["title"] = "Step 6: Wanna be Friends?",
+				["name"] = "Step 6: Wanna be Friends?",
 				["coord"] = { 18.9, 41.6, 63 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
@@ -64,39 +64,39 @@ _.Secrets =
 					{ 32.6, 74.9, 882 },	-- house with Nuu
 					{ 25.1, 59.8, 882 },	-- first little rock to jump to
 				},
-				["title"] = "Step 7: Finding Nuu",
+				["name"] = "Step 7: Finding Nuu",
 				["icon"] = "Interface\\Icons\\inv_misc_bag_07_red",
 			}),
 			q(50105, {	-- Step 8: Shooting Stars
 				["sourceQuests"] = { 50104 },	-- Step 7: Finding Nuu
 				["description"] = "Take Uuna to Blood Watch on Bloodmyst Isle.",
-				["title"] = "Step 8: Shooting Stars",
+				["name"] = "Step 8: Shooting Stars",
 				["coord"] = { 56.4, 56.6, 106 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50106, {	-- Step 9: Flower Crown
 				["sourceQuests"] = { 50105 },	-- Step 8: Shooting Stars
 				["description"] = "Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley.  She will pick up the flower crown that is resting on one of the chairs around the campfire.",
-				["title"] = "Step 9: Flower Crown",
+				["name"] = "Step 9: Flower Crown",
 				["coord"] = { 55.9, 41.1, 539 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50107, {	-- Step 10: Uuna Gets Kidnapped
 				["sourceQuests"] = { 50106 },	-- Step 9: Flower Crown
 				["description"] = "Wait for a little while after Uuna picks up the flower crown.  Void tendrils will eventually erupt from the ground and take her captive.",
-				["title"] = "Step 10: Uuna Gets Kidnapped",
+				["name"] = "Step 10: Uuna Gets Kidnapped",
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50108, {	-- Step 11: Spirit Healer
 				["sourceQuests"] = { 50107 },-- Step 10: Uuna Gets Kidnapped
 				["description"] = "Die and ask a Spirit Healer if they have seen Uuna.  The Spirit Healer will give you permission to enter the spirit realm to try to find her.  Resurrect (no need to do it through the Spirit Healer, just return to your corpse) and continue to the next step.",
-				["title"] = "Step 11: Spirit Healer",
+				["name"] = "Step 11: Spirit Healer",
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50109, {	-- Step 12: A Dark Place
 				["sourceQuests"] = { 50108 },	-- Step 11: Spirit Healer
 				["description"] = "Click on the Shadow Tear in Dragonblight's Emerald Dragonshrine to look for Uuna in the spirit realm.  Once inside, do the following:\n\n1. |cffffffff/cheer|r at Uuna.\n2. Place a |cffffffffCooking Fire|r next to her.\n3. Survive the gauntlet for 3 minutes, running into the |cff883325Soul-Eaters|r to scare them away.\n4. When Uuna wraps her arms around herself and cries, |cffffffff/hug|r her.",
-				["title"] = "Step 12: A Dark Place",
+				["name"] = "Step 12: A Dark Place",
 				["coord"] = { 66.1, 74.5, 115 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
@@ -106,44 +106,44 @@ _.Secrets =
 				["g"] = {
 					q(50140, {	-- Step 1: Gate of the Setting Sun
 						["sourceQuests"] = { 50109 },	-- Step 12: A Dark Place
-						["title"] = "Step 1: Gate of the Setting Sun",
+						["name"] = "Step 1: Gate of the Setting Sun",
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 						["coord"] = { 8.00, 59.0, 390 },
 					}),
 					q(50141, {	-- Step 2: Nighthold
 						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
-						["title"] = "Step 2: Nighthold",
+						["name"] = "Step 2: Nighthold",
 						["coord"] = { 62.3, 83.7, 680 },
 						["maps"] = { 680 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran
 						["sourceQuests"] = { 50141 },	-- Step 2: Nighthold
-						["title"] = "Step 3: Krasus Landing, Legion Dalaran",
+						["name"] = "Step 3: Krasus Landing, Legion Dalaran",
 						["coord"] = { 72.4, 45.9, 627 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50143, {	-- Step 4: Dragonblight
 						["sourceQuests"] = { 50142 },	-- Step 3: Krasus Landing, Legion Dalaran
-						["title"] = "Step 4: Dragonblight",
+						["name"] = "Step 4: Dragonblight",
 						["coord"] = { 57.8, 54.6, 115 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50144, {	-- Step 5: Mount Hyjal
 						["sourceQuests"] = { 50143 },	-- Step 4: Dragonblight
-						["title"] = "Step 5: Mount Hyjal",
+						["name"] = "Step 5: Mount Hyjal",
 						["coord"] = { 59.0, 24.1, 198 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50145, {	-- Step 6: Kun-Lai Summit
 						["sourceQuests"] = { 50144 },	-- Step 5: Mount Hyjal
-						["title"] = "Step 6: Kun-Lai Summit",
+						["name"] = "Step 6: Kun-Lai Summit",
 						["coord"] = { 44.8, 52.3, 379 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50146, {	-- Step 7: Blackrock Mountain
 						["sourceQuests"] = { 50145 },	-- Step 6: Kun-Lai Summit
-						["title"] = "Step 7: Blackrock Mountain",
+						["name"] = "Step 7: Blackrock Mountain",
 						["coords"] = {
 							{ 37.5, 67.4, 33 },	-- Inside Blackrock Mountain
 							{ 21.1, 38.4, 36 },	-- Burning Steppes
@@ -152,7 +152,7 @@ _.Secrets =
 					}),
 					q(50147, {	-- Step 8: Temple of Karabor
 						["sourceQuests"] = { 50146 },	-- Step 7: Blackrock Mountain
-						["title"] = "Step 8: Temple of Karabor",
+						["name"] = "Step 8: Temple of Karabor",
 						["coord"] = { 70.7, 46.7, 539 },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),

@@ -207,7 +207,7 @@ _.Secrets =
 				},
 			}),
 			q(52917, { 	-- Grimmy Dialogue
-				["title"] = "Grimmy Dialogue",
+				["name"] = "Grimmy Dialogue",
 				["provider"] = { "n", 138578 },	-- Grimmy
 				["sourceQuests"] = { 52916 },
 				["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",

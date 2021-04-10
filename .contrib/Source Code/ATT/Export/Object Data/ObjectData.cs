@@ -181,7 +181,6 @@ namespace ATT
                 bool ignoreSource = fields.Remove("ignoreSource");
                 fields.Remove("timeline");
                 fields.Remove("ilvl");
-                fields.Remove("name");
                 fields.Remove("q");
 
                 // Conditionally remove certain fields.
@@ -210,6 +209,13 @@ namespace ATT
                 {
                     // If invalid, then don't write the field.
                     if (Convert.ToInt32(objRef) < 0) fields.Remove("f");
+                }
+                
+                // Keep the name field for quests, so long as they don't have an item.
+                // They are generally manually assigned in the database.
+                if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
+                {
+                    fields.Remove("name");
                 }
 
                 // Remove Blacklisted Fields for this object type.

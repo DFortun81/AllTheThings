@@ -1048,7 +1048,12 @@ namespace ATT
                     {
                         if (entry.TryGetValue("name", out object entryName))
                         {
-                            entry.Remove("name");
+                            // Keep the name field for quests, so long as they don't have an item.
+                            // They are generally manually assigned in the database.
+                            if (!entry.ContainsKey("questID") || entry.ContainsKey("itemID"))
+                            {
+                                entry.Remove("name");
+                            }
                         }
                         else if (entry.TryGetValue("text", out entryName))
                         {

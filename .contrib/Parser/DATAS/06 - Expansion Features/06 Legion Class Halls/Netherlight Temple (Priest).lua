@@ -37,25 +37,25 @@ _.ExpansionFeatures =
 							},
 							["g"] = {
 								q(44342, {	-- Volume VI
-									["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
+									["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
 									["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
 									["provider"] = { "n", 111119 },	-- Archivist Inkforge
 									["coord"] = { 62.5, 36.3, 702 },
 								}),
 								q(44339, {	-- Volume I
-									["title"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
+									["name"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
 									["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
 									["provider"] = { "n", 113873 },	-- Archivist Elysiana <Curator>
 									["coord"] = { 30.6, 50.8, 627 },
 								}),
 								q(44340, {	-- Volume II
-									["title"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
+									["name"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
 									["description"] = "High Priestess Ishanah is on the other side of the alcove, and next to her is a Draenei Anchorite.\n\nWorld Spawn - might be on cooldown!",
 									["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
 									["coord"] = { 58.4, 25.1, 702 },
 								}),
 								q(44341, {	-- Volume III
-									["title"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
+									["name"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
 									["description"] = "Book is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\nWorld Spawn - might be on cooldown (60-minute respawn).",
 									["icon"] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
 									["coords"] = {
@@ -64,13 +64,13 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(44344, {	-- Volume IV
-									["title"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
+									["name"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
 									["description"] = "On the left side of Meridelle Lightspark there is a shelf. On the lower board, there are some stacked books, and this volume is on the right side of those.\n\nWorld Spawn - might be on cooldown!",
 									["provider"] = { "n", 112401 },	-- Meridelle Lightspark <Logistics>
 									["coord"] = { 37.2, 25.0, 702 },
 								}),
 								q(44343, {	-- Volume V
-									["title"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
+									["name"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
 									["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
 									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(44345, {	-- Volume VII
-									["title"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
+									["name"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
 									["description"] = "Run through the instance to Flameweaver Koegler's room. on the left-hand side of the room there's a table with a candelabra. Volume 7 is on the bench between the table and the bookshelf.",
 									["provider"] = { "n", 59150 },	-- Flameweaver Koegler
 									["coords"] = {
@@ -88,19 +88,19 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(44350, {	-- Volume VIII
-									["title"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
+									["name"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 90139 },	-- Inquisitor Ernstenbok
 									["coord"] = { 63.6, 74.4, 634 },
 								}),
 								q(44347, {	-- Volume IX
-									["title"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
+									["name"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 106351 },	-- Artificer Lothaire
 									["coord"] = { 33.8, 15.0, 680 },
 								}),
 								q(44348, {	-- Volume X
-									["title"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
+									["name"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
 									["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
 									["provider"] = { "n", 98542 },	-- Amalgam of Souls
 									["coords"] = {
@@ -109,7 +109,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(44349, {	-- Volume XI
-									["title"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
+									["name"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
 									["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
 									["provider"] = { "n", 15691 },	-- The Curator
 									["coords"] = {
@@ -118,7 +118,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(44346, {	-- Volume XII
-									["title"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
+									["name"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
 									["description"] = "Fly to Shackle's Den and head east.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 106990 },	-- Chief Bitterbrine
 									["coord"] = { 65.6, 56.8, 630 },

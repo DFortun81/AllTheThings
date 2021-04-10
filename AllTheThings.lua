@@ -8680,11 +8680,7 @@ app.BaseQuest = {
 		if key == "key" then
 			return "questID";
 		elseif key == "text" then
-			-- Quests may have hard-coded 'title' set in Source for when the game does not return the information for the Quest
-			if rawget(t, "title") then
-				rawset(t, "name", rawget(t, "title"));
-				t.title = nil;
-			elseif t.retries and t.retries > 120 and t.npcID then
+			if t.retries and t.retries > 120 and t.npcID then
 				return NPCNameFromID[t.npcID];
 			end
 			return app.TryColorizeName(t, t.name);
