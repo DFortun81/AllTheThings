@@ -8710,7 +8710,7 @@ local questFields = {
 		return "quest:" .. t.questID;
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAsQuest(t);
