@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1451, {	-- Anchorite's Sojourn, Talador
 					["coord"] = { 80.0, 56.6, 535 },
 				["races"] = ALLIANCE_ONLY,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands
 					["description"] = "Dreadmaul Hold, Blasted Lands\n\nSpeak to Zidormi to visit the past to access this point.",
 					["coord"] = { 43.6, 14.2, 17 },

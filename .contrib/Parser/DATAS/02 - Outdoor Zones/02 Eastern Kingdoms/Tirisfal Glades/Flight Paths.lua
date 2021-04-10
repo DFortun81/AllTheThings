@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(460, {	-- Brill, Tirisfal Glades [Horde]
 					["coord"] = { 58.8, 51.8, 18 },
 				}),

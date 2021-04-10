@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1052, {	-- Grassy Cline, Valley of the Four Winds
 					["coord"] = { 70.8, 24.2, 376 },
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(669, {	-- Eastpoint Tower, Hillsbrad
 					["coord"] = { 59.6, 63.2, 25 },
 					["races"] = HORDE_ONLY,

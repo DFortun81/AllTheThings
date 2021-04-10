@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
 					["coord"] = { 52.4, 50.6, 15 },
 				}),

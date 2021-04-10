@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms
 					["coord"] = { 14.2, 79.2, 390 },
 				}),

@@ -16,7 +16,7 @@ _.Zones =
 					["creatureID"] = 91483,	-- Fen Tao
 					["coord"] = { 46.9, 45.2, 624 },
 				}),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, 624 },
 					}),

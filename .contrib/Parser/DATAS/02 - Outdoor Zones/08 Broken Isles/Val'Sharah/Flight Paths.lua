@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1713, {	-- Bradensbrook, Val'sharah
 					["coord"] = { 42.2, 58.4 },
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2052, {	-- Anglepoint Wharf, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 42.0, 30.6, 895 },
 					["races"] = ALLIANCE_ONLY,

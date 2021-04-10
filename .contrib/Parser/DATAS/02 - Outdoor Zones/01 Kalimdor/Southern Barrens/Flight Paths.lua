@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(391, {	-- Desolation Hold, Southern Barrens
 					["coord"] = { 41.2, 70.8, 199 },
 				}),

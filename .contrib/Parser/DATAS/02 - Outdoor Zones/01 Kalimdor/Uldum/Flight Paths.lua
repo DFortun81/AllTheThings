@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar, Uldum
 					["coord"] = { 26.6, 8.2, 249 },
 				}),

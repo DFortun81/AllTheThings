@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(166, {	-- Emerald Sanctuary, Felwood
 					["coord"] = { 51.4, 80.8, 77 },
 				}),

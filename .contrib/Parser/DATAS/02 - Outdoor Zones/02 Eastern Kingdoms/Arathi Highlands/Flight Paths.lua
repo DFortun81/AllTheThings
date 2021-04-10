@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(601, {	-- Galen's Fall, Arathi
 					["coord"] = { 13.4, 34.8, 14 },
 					["races"] = HORDE_ONLY,

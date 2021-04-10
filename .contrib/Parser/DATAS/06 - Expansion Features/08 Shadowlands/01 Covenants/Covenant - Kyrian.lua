@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(2528, {	-- Bastion, Elysian Hold
 						["coord"] = { 65.6, 17.6, 1533 },
 					}),

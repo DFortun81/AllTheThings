@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(205, {	-- Shimmering Expanse
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(525, {	-- Legion's Rest, Vashj'ir
 						["coord"] = { 50.8, 63.4, 205 },
 					}),

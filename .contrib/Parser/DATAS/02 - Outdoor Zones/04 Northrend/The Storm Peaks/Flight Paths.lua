@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(327, {	-- Bouldercrag's Refuge, The Storm Peaks
 					["coord"] = { 30.6, 36.4, 120 },
 				}),

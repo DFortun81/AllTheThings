@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
 			m(217, {	-- Ruins of Gilneas
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(646, {	-- Forsaken Forward Command, Gilneas
 						["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
 						["coord"] = { 57.2, 17.8, 217 },

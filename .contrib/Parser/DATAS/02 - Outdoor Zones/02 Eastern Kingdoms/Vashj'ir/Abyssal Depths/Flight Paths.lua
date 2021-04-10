@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(204, {	-- Abyssal Depths
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(524, {	-- Daybreak Cove, Vashj'ir
 						["coord"]	= { 56.8, 75.4, 204 },
 					}),

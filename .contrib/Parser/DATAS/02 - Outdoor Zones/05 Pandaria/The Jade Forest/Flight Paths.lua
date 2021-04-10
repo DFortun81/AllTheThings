@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(895, {	-- Dawn's Blossom, Jade Forest
 					["coord"] = { 47.0, 46.2, 371 },
 				}),

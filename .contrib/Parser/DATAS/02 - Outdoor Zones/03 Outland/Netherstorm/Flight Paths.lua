@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(NETHERSTORM, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(122, {	-- Area 52, Netherstorm
 					["coord"] = { 33.8, 64.0, NETHERSTORM },
 				}),

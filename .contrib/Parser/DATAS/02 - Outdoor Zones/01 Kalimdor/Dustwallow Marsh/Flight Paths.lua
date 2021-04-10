@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(55, {	-- Brackenwall Village, Dustwallow Marsh
 					["coord"] = { 35.6, 31.8, 70 },
 				}),

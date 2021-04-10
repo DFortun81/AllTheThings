@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(315, {	-- Acherus: The Ebon Hold
 					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 83.8, 50.2, 23 },

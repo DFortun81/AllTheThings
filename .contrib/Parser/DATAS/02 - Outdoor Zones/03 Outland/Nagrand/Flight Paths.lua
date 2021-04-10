@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(NAGRAND, {
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(120, {	-- Garadar, Nagrand
 					["coord"] = { 57.2, 35.2, NAGRAND },
 					["races"] = HORDE_ONLY,

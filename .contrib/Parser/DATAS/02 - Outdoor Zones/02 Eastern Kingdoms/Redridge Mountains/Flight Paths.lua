@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge
 					["coord"] = { 52.8, 54.6, 49 },
 				}),

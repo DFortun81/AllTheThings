@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands
 					["coord"] = { 50.0, 18.4, 56 },
 				}),

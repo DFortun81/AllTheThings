@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
 					["coord"] = { 57.8, 8.80, 21 },
 				}),

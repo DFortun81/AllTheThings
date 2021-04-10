@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(GHOSTLANDS, {
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(83, {	-- Tranquillien, Ghostlands
 					["coord"] = { 45.4, 30.6, GHOSTLANDS },
 				}),

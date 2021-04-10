@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1957, {	-- Port of Zandalar, Zuldazar [Horde]
 					["description"] = "Port of Zandalar, Zuldazar",
 					["coord"] = { 52.0, 90.0, 1165 },

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
 					["coord"] = { 54.0, 42.2, 241 },
 					["races"] = HORDE_ONLY,

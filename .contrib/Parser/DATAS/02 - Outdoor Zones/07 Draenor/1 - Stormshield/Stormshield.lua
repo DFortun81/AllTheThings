@@ -16,7 +16,7 @@ _.Zones =
 					["creatureID"] = 91483,	-- Fen Tao
 					["coord"] = { 45.3, 70.6, 622 },
 				}),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(1420, {	-- Stormshield (Alliance), Ashran
 						["coord"] = { 30.6, 48.4, 622 },
 					}),

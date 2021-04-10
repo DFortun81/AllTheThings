@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(1070, {	-- Klaxxi'vess, Dread Wastes
 					["coord"] = { 55.8, 34.8, 422 },
 				}),

@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-228, {	-- Flight Point
+			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
 					["coord"] = { 72.6, 22.6, 118 },
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(539, {	-- Bootlegger Outpost, Tanaris
 					["coord"] = { 55.8, 60.6, 71 },
 				}),

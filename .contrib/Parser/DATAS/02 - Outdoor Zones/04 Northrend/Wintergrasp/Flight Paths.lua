@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(303, {	-- Valiance Landing Camp, Wintergrasp
 					["coord"] = { 72.0, 31.0, 123 },
 				}),

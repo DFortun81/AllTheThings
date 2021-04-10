@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(SHADOWMOON_VALLEY, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 					["altQuests"] = { 10553 },	-- Voren'thal the Seer
 					["coord"] = { 63.2, 30.4, SHADOWMOON_VALLEY },

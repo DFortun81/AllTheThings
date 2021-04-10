@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2003, {	-- City Center, Mac'Aree
 					["coord"] = { 47, 55.4 },
 				}),

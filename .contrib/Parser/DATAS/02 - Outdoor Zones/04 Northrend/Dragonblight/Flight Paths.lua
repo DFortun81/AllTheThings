@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(256, {	-- Agmar's Hammer
 					["coord"] = { 37.4, 45.6, 115 },
 				}),

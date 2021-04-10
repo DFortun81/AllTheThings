@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(201, {	-- Kelp'thar Forest
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(607, {	-- Sandy Beach, Vashj'ir
 						["coord"] = { 42.4, 66.2, 201 },
 					}),

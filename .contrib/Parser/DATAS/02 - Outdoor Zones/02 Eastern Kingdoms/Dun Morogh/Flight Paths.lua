@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
 					["coord"] = { 75.8, 54.4, 27 },
 				}),

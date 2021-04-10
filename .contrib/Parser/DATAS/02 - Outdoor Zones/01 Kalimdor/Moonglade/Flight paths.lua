@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor		
 		m(80, {	-- Moonglade
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade
 					["coord"] = { 48.0, 67.2, 80 },
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(TEROKKAR_FOREST, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(121, {	-- Allerian Stronghold, Terokkar Forest
 					["coord"] = { 59.4, 55.4, TEROKKAR_FOREST },
 				}),

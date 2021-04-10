@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2519, {	-- Bastion, Aspirant's Rest
 					["coord"] = { 48.1, 74.2, 1533 },
 				}),

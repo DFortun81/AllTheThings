@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
 					["coord"] = { 79, 71.8, 64 },
 				}),

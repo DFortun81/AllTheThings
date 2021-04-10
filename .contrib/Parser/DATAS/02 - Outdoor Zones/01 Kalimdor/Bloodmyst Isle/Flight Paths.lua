@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(BLOODMYST_ISLE, {
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(93, {	-- Blood Watch, Bloodmyst Isle [Alliance]
 					["description"] = "Blood Watch, Bloodmyst Isle - Alliance Only",
 					["coord"] = { 57.6, 54.0, BLOODMYST_ISLE },

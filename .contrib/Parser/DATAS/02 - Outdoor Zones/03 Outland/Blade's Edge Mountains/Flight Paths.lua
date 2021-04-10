@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(BLADES_EDGE_MOUNTAINS, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(160, {	-- Evergrove, Blade's Edge Mountains
 					["coord"] = { 61.6, 39.6, BLADES_EDGE_MOUNTAINS },
 				}),

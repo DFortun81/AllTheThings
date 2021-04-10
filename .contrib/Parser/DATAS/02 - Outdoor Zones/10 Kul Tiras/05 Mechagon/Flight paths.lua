@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2442, {	-- Overspark Expedition Camp
 					["coord"] = { 77.8, 40.9, 1462 },
 					["races"] = ALLIANCE_ONLY,

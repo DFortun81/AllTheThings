@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(339, {	-- Grove of the Ancients, Darkshore
 					["coord"] = { 44.4, 75.4, 62 },
 					["races"] = ALLIANCE_ONLY,

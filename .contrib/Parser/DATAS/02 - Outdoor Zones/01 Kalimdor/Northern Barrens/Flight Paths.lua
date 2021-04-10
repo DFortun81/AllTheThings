@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(458, {	-- Nozzlepot's Outpost, Northern Barrens
 					["coord"] = { 62.4, 17.2, 10 },
 				}),

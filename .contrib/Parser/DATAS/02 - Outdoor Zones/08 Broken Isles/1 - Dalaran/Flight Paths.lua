@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(627, {	-- Dalaran
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(1774, {	-- Dalaran
 					["coord"] = { 69.8, 50.8, 627 },
 				}),

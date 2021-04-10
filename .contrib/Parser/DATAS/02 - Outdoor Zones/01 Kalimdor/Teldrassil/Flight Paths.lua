@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil
 					["coord"] = { 55.4, 50.4, 57 },
 				}),

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-228, {	-- Flight Paths
+		n(FLIGHT_PATHS, {
 			fp(2410, {	-- Ashen Strand
 				["coord"] = { 31.8, 38.1, 1355 },
 				["races"] = ALLIANCE_ONLY,

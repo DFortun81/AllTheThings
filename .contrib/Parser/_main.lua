@@ -164,6 +164,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
 FACTIONS = -6013;
+FLIGHT_PATHS = -228;
 QUESTS = -17;
 RARES = -16;
 TREASURES = -212;

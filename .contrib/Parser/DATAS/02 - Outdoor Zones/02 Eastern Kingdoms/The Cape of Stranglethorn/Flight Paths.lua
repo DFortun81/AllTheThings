@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(18, {	-- Booty Bay, Stranglethorn
 					["coord"] = { 40.6, 73.2, 210 },
 				}),

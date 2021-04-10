@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1613, {	-- Azurewing Repose, Azsuna
 					["coord"] = { 48.4, 28.0, 630 },
 				}),

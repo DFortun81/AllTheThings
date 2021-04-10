@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(HELLFIRE_PENINSULA, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(102, {	-- Falcon Watch, Hellfire Peninsula
 					["coord"] = { 27.8, 60.0, HELLFIRE_PENINSULA },
 				}),

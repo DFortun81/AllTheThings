@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(66, {	-- Desolace
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(370, {	-- Ethel Rethor, Desolace
 					["coord"] = { 39.0, 27.0, 66 },
 				}),

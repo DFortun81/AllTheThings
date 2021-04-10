@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan
 					["coord"] = { 81.8, 64.2, 48 },
 				}),

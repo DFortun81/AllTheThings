@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1988, {	-- Hope's Landing, Antoran Wastes
 					["description"] = "Hope's Landing, Antoran Wastes",
 					["coord"] = { 73, 50.4 },

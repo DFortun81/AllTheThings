@@ -200,7 +200,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(2548, {	-- Sinfall, Revendreth
 						["coord"] = { 67.1, 21.9, 1699 },	-- Sinfall Reaches
 					}),

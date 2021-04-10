@@ -17,7 +17,7 @@ _.Zones =
 						["crs"] = { 97283 },	-- Juvenile Scuttleback
 					}),
 				}),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(1870, {	-- Eye of Azshara, Azsuna
 						["coord"] = { 38.2, 46.0, 790 },
 					}),

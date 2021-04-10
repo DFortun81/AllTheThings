@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(649, {	-- Andorhal, Western Plaguelands
 					["coord"] = { 46.6, 64.6, 22 },
 				}),

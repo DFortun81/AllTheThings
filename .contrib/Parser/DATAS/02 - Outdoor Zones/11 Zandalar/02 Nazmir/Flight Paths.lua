@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1956, {	-- Forlorn Ruins, Nazmir
 					["description"] = "Forlorn Ruins, Nazmir",
 					["coord"] = { 82.1, 26.6, 863 },

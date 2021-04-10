@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(ZANGARMARSH, {
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(164, {	-- Orebor Harborage, Zangarmarsh
 					["coord"] = { 41.2, 28.8, ZANGARMARSH },
 				}),

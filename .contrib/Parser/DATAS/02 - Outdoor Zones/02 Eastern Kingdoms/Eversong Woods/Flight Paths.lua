@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(EVERSONG_WOODS, {
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(625, {	-- Fairbreeze Village, Eversong Woods [Horde]
 					["coord"] = { 44.0, 70.0, EVERSONG_WOODS },
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2086, {	-- Brennadam, Stormsong Valley [Alliance]
 					["description"] = "Brennadam, Stormsong Valley",
 					["coord"] = { 59.73, 70.57, 942 },

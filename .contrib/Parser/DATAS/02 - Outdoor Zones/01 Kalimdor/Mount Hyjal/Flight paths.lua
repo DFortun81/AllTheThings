@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(616, {	-- Gates of Sothann, Hyjal
 					["coord"] = { 71.6, 75.3, 198 },
 				}),
