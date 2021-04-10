@@ -1077,10 +1077,7 @@ local function BuildSourceTextForTSM(group, l)
 end
 -- does not actually Clone Data, but rather returns a new table whose __index is the source table
 local function CloneData(data)
-	-- local cloneSource = tostring(data);
-	local clone = setmetatable({
-		-- ["cloneSource"] = cloneSource,
-		}, { __index = data });
+	local clone = setmetatable({ [data.key] = data[data.key] }, { __index = data });
 	if data.g then
 		clone.g = {};
 		for i,group in ipairs(data.g) do
