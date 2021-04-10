@@ -6,32 +6,32 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(AZUREMYST_ISLE, {
-			m(468, {	-- Ammen Vale
+			m(AMMEN_VALE, {
 				n(QUESTS, {
 					q(9798,  {	-- Blood Elf Plans
 						["sourceQuests"] = { 9309 },	-- The Missing Scout
 						["provider"] = { "i", 24414 },	-- Blood Elf Plans
-						["coord"] = { 27.8, 80.4, 468 },
+						["coord"] = { 27.8, 80.4, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = { 16522 },	-- Surveyor Candress
 					}),
 					q(9311,  {	-- Blood Elf Spy
 						["sourceQuests"] = { 10303 },	-- The Blood Elves
 						["provider"] = { "n", 16546 },	-- Tolaan
-						["coord"] = { 33.9, 69.4, 468 },
+						["coord"] = { 33.9, 69.4, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9799,  {	-- Botanical Legwork
 						["sourceQuests"] = { 10302 },	-- Volatile Mutations
 						["provider"] = { "n", 20233 },	-- Apprentice Vishael
-						["coord"] = { 49.7, 37.5, 468 },
+						["coord"] = { 49.7, 37.5, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9371,  {	-- Botanist Taerix
 						["sourceQuests"] = { 9409 },	-- Urgent Delivery!
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 16477 },	-- Proenitus
-						["coord"] = { 52.7, 35.9, 468 },
+						["coord"] = { 52.7, 35.9, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(26968, {	-- Frost Nova
@@ -43,7 +43,7 @@ _.Zones =
 					q(9294,  {	-- Healing the Lake
 						["sourceQuests"] = { 9293 },	-- What Must Be Done...
 						["provider"] = { "n", 16514 },	-- Botanist Taerix
-						["coord"] = { 49.9, 37.3, 468 },
+						["coord"] = { 49.9, 37.3, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9288,  {	-- Hunter Training
@@ -59,14 +59,14 @@ _.Zones =
 						},
 						["description"] = "This quest is given if you turn in the |cFFFFD700Vindicator Aldar|r quest first.",
 						["provider"] = { "n", 16535 },	-- Vindicator Aldar
-						["coord"] = { 50.6, 48.7, 468 },
+						["coord"] = { 50.6, 48.7, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37444, {	-- Inoculation
 						["sourceQuests"] = { 10302 },	-- Volatile Mutations
 						["description"] = "This quest is given if you pick up before getting or turning in the |cFFFFD700Vindicator Aldar|r' quest.",
 						["provider"] = { "n", 16535 },	-- Vindicator Aldar
-						["coord"] = { 50.6, 48.7, 468 },
+						["coord"] = { 50.6, 48.7, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(26970, {	-- Learning the Word
@@ -102,18 +102,18 @@ _.Zones =
 					q(9280,  {	-- Replenishing the Healing Crystals
 						["sourceQuests"] = { 9279 },	-- You Survived!
 						["provider"] = { "n", 16477 },	-- Proenitus
-						["coord"] = { 52.7, 35.9, 468 },
+						["coord"] = { 52.7, 35.9, AMMEN_VALE },
 						["races"] = { DRAENEI },
 					}),
 					q(9369,  {	-- Replenishing the Healing Crystals
 						["provider"] = { "n", 16477 },	-- Proenitus
-						["coord"] = { 52.7, 35.9, 468 },
+						["coord"] = { 52.7, 35.9, AMMEN_VALE },
 						["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
 					}),
 					q(9283,  {	-- Rescue the Survivors!
 						["sourceQuests"] = { 9409 },	-- Urgent Delivery!
 						["provider"] = { "n", 16502 },	-- Zalduun
-						["coord"] = { 52.1, 42.4, 468 },
+						["coord"] = { 52.1, 42.4, AMMEN_VALE },
 						["races"] = { DRAENEI },
 					}),
 					q(9421,  {	-- Shaman Training
@@ -142,13 +142,13 @@ _.Zones =
 					q(10303, {	-- The Blood Elves
 						["sourceQuests"] = { 9309 },	-- The Missing Scout
 						["provider"] = { "n", 16546 },	-- Tolaan
-						["coord"] = { 33.9, 69.4, 468 },
+						["coord"] = { 33.9, 69.4, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9312,  {	-- The Emitter
 						["sourceQuests"] = { 9311 },	-- Blood Elf Spy
 						["provider"] = { "n", 16535 },	-- Vindicator Aldar
-						["coord"] = { 50.6, 48.8, 468 },
+						["coord"] = { 50.6, 48.8, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(26966, {	-- The Light's Power
@@ -163,7 +163,7 @@ _.Zones =
 							37444,	-- Inoculation
 						},
 						["provider"] = { "n", 16535 },	-- Vindicator Aldar
-						["coord"] = { 50.6, 48.7, 468 },
+						["coord"] = { 50.6, 48.7, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31173, {	-- The Tiger Palm
@@ -175,7 +175,7 @@ _.Zones =
 					q(9313,  {	-- Travel to Azure Watch
 						["sourceQuests"] = { 9312 },	-- The Emitter
 						["provider"] = { "n", 17071 },	-- Technician Zhanaa
-						["coord"] = { 50.5, 47.9, 468 },
+						["coord"] = { 50.5, 47.9, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9409,  {	-- Urgent Delivery!
@@ -184,14 +184,14 @@ _.Zones =
 							9280,	-- Replenishing the Healing Crystals (Draenei)
 						},
 						["provider"] = { "n", 16477 },	-- Proenitus
-						["coord"] = { 52.7, 35.9, 468 },
+						["coord"] = { 52.7, 35.9, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10304, {	-- Vindicator Aldar
 						["sourceQuests"] = { 9294 },	-- Healing the Lake
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 16514 },	-- Botanist Taerix
-						["coord"] = { 49.9, 37.3, 468 },
+						["coord"] = { 49.9, 37.3, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10302, {	-- Volatile Mutations
@@ -201,7 +201,7 @@ _.Zones =
 							9371,	-- Botanist Taerix (breadcrumb)
 						},
 						["provider"] = { "n", 16514 },	-- Botanist Taerix
-						["coord"] = { 49.9, 37.3, 468 },
+						["coord"] = { 49.9, 37.3, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9289,  {	-- Warrior Training
@@ -213,13 +213,13 @@ _.Zones =
 					q(9293,  {	-- What Must Be Done...
 						["sourceQuests"] = { 10302 },	-- Volatile Mutations
 						["provider"] = { "n", 16514 },	-- Botanist Taerix
-						["coord"] = { 49.9, 37.3, 468 },
+						["coord"] = { 49.9, 37.3, AMMEN_VALE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9279,  {	-- You Survived!
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 16475 },	-- Megelon
-						["coord"] = { 61.2, 29.5, 468 },
+						["coord"] = { 61.2, 29.5, AMMEN_VALE },
 						["races"] = { DRAENEI },
 					}),
 					q(26958, {	-- Your First Lesson
