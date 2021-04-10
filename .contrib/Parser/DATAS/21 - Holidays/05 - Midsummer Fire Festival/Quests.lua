@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 				["g"] = {
 					un(21, i(23323)),	-- Crown of the Fire Festival
@@ -1799,7 +1799,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.6, 72.0, 84 },		-- Stormwind City
 					{ 64.0, 25.8, 87 },		-- Ironforge
 					{ 62.2, 48.6, 89 },		-- Darnassus
-					{ 41.4, 25.2, 103 },	-- The Exodar
+					{ 41.4, 25.2, THE_EXODAR },
 					{ 61.2, 32.2, SHATTRATH_CITY },
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -1807,7 +1807,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 					SHATTRATH_CITY,
 				},
 			}),
@@ -1834,14 +1834,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11925, {	-- More Torch Catching (H)
@@ -1870,14 +1870,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11926, {	-- More Torch Tossing (H)
@@ -1979,10 +1979,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["provider"] = { "o", 188128 },	-- Flame of the Exodar
 			--	["itemID"] = 35569,	-- Flame of the Exodar
-				["coord"] = { 40.8, 26.3, 103 },
+				["coord"] = { 40.8, 26.3, THE_EXODAR },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 103 },	-- The Exodar
+				["maps"] = { THE_EXODAR },
 			}),
 			q(9331,  {	-- Stealing Ironforge's Flame
 				["isYearly"] = true,
@@ -2049,7 +2049,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2060,7 +2060,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2076,7 +2076,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2087,7 +2087,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2103,7 +2103,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2114,7 +2114,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2130,7 +2130,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2141,7 +2141,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2157,7 +2157,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2168,7 +2168,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2184,7 +2184,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2195,7 +2195,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -2229,7 +2229,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 					NETHERSTORM,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
@@ -2270,14 +2270,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11923, {	-- Torch Catching (H)
@@ -2303,14 +2303,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11922, {	-- Torch Tossing (H)
@@ -2338,7 +2338,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
+					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
@@ -2349,7 +2349,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
+					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},

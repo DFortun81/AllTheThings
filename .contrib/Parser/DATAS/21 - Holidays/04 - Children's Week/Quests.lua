@@ -629,12 +629,12 @@ _.Holidays =
 							10962,	-- Time to Visit the Caverns
 						},
 						["coords"] = {
-							{ 27.10, 29.86, 103 },	-- Path to Farseer Nobundo
-							{ 30.67, 27.87, 103 },	-- Visit Farseer Nobundo
-							{ 31.30, 27.65, 103 },	-- Speak to Farseer Nobundo
+							{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
+							{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
+							{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
 						},
 						["maps"] = {
-							103,	-- The Exodar
+							THE_EXODAR,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1496,11 +1496,11 @@ _.Holidays =
 							10954,	-- Jheel is at Aeris Landing!
 						},
 						["coords"] = {
-							{ 56.87, 40.77, 103 },	-- Seat of the Naaru
-							{ 58.04, 41.50, 103 },	-- Speak to O'ros
+							{ 56.87, 40.77, THE_EXODAR },	-- Seat of the Naaru
+							{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
 						},
 						["maps"] = {
-							103,	-- The Exodar
+							THE_EXODAR,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,

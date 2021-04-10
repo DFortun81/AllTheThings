@@ -548,8 +548,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 70 },	-- Dustwallow Marsh
 										}),
 										crit(9,  {	-- Exodar, Seat of the Naaru
-											["coord"] = { 59.3, 19.2, 103 },
-											["maps"] = { 103 },	-- The Exodar
+											["coord"] = { 59.3, 19.2, THE_EXODAR },
+											["maps"] = { THE_EXODAR },
 										}),
 										crit(10, {	-- Felwood - Talonbranch Glade
 											["coord"] = { 61.8, 26.7, 77 },

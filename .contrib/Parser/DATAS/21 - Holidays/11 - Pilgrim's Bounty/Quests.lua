@@ -24,7 +24,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks

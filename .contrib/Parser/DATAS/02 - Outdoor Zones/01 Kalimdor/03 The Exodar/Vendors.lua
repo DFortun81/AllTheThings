@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(103, {	-- The Exodar
+		m(THE_EXODAR, {
 			n(VENDORS, {
 				n(16705, {	-- Altaa <Alchemy Supplies>
-					["coord"] = { 27.8, 61.8, 103 },
+					["coord"] = { 27.8, 61.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(16713, {	-- Arras <Blacksmithing Supplies>
-					["coord"] = { 61.0, 89.0, 103 },
+					["coord"] = { 61.0, 89.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
@@ -140,7 +140,7 @@ _.Zones =
 					},
 				}),
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
-					["coord"] = { 45.6, 25.0, 103 },
+					["coord"] = { 45.6, 25.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52409, {	-- Design: Accurate Demonseye
@@ -422,7 +422,7 @@ _.Zones =
 					},
 				}),
 				n(16722, {	-- Egomis <Enchanting Supplies>
-					["coord"] = { 39.8, 39.8, 103 },
+					["coord"] = { 39.8, 39.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
@@ -481,7 +481,7 @@ _.Zones =
 					},
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
-					["coord"] = { 53.0, 90.0, 103 },
+					["coord"] = { 53.0, 90.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
@@ -496,7 +496,7 @@ _.Zones =
 					},
 				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
-					["coord"] = { 71.0, 91.4, 103 },
+					["coord"] = { 71.0, 91.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3428),	-- Common Grey Shirt
@@ -505,7 +505,7 @@ _.Zones =
 					},
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
-					["coord"] = { 66.6, 74.0, 103 },
+					["coord"] = { 66.6, 74.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67095, {	-- Pattern: Assassin's Chestplate
@@ -649,7 +649,7 @@ _.Zones =
 					},
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
-					["coord"] = { 54.8, 36.8, 103 },
+					["coord"] = { 54.8, 36.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64889),	-- Mantle of Exodar
@@ -660,7 +660,7 @@ _.Zones =
 					},
 				}),
 				n(16767, {	-- Neii <Tailoring Supplies>
-					["coord"] = { 64.6, 68.6, 103 },
+					["coord"] = { 64.6, 68.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(54601, {	-- Pattern: Belt of the Depths
@@ -714,7 +714,7 @@ _.Zones =
 					},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
-					["coord"] = { 54.6, 26.6, 103 },
+					["coord"] = { 54.6, 26.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -722,7 +722,7 @@ _.Zones =
 					},
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
-					["coord"] = { 30.4, 34.6, 103 },
+					["coord"] = { 30.4, 34.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29901),	-- Blue Moth Egg Pet
@@ -731,14 +731,14 @@ _.Zones =
 					},
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
-					["coord"] = { 39.78, 38.87, 103 },
+					["coord"] = { 39.78, 38.87, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(137789),	-- Technique: Songs of the Legion
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
-					["coord"] = { 81.6, 52.6, 103 },
+					["coord"] = { 81.6, 52.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(29745),	-- Great Blue Elekk Mount

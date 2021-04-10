@@ -11,7 +11,7 @@ _.Factions =
 			{ 56.8, 88.6, 85 },		-- Kim Horn [Orgrimmar]
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia [Silvermoon]
 			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
-			{ 53.6, 69.6, 103 },	-- Nuri [The Exodar]
+			{ 53.6, 69.6, THE_EXODAR },	-- Nuri [The Exodar]
 			{ 70.2, 14.7, 1161 },	-- Perry Charlton [Boralus]
 			{ 37.1, 63.3, 88 },		-- Randah Songhorn [Thunder Bluff]
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha [Shattrath]
@@ -27,7 +27,7 @@ _.Factions =
 			1361,	-- Old Ironforge
 			85,		-- Orgrimmar
 			86,		-- Orgrimmar: The Drag
-			103,	-- The Exodar
+			THE_EXODAR,
 			SHATTRATH_CITY,
 			SILVERMOON_CITY,
 			84,		-- Stormwind

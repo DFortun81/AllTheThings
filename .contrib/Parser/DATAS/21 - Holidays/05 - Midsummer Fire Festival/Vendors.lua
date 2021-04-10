@@ -11,14 +11,14 @@ _.Holidays =
 					{ 49.2, 71.8, 84 },		-- Stormwind City
 					{ 64.6, 26.6, 87 },		-- Ironforge
 					{ 62.0, 48.6, 89 },		-- Darnassus
-					{ 42.6, 25.6, 103 },	-- The Exodar
+					{ 42.6, 25.6, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 				["g"] = {
 					n(-3199, { -- Midsummer Reveler Set

@@ -97,7 +97,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
-					{ 51.87, 42.59, 103 },	-- The Exodar [Draenei]
+					{ 51.87, 42.59, THE_EXODAR },	-- Draenei
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
 					{ 58.75, 48.42, 83 },	-- Winterspring [Goblin]
 					{ 59.77, 49.67, 83 },	-- Winterspring [Goblin]
@@ -114,7 +114,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					SHATTRATH_CITY,
 					71,		-- Tanaris
 					210,	-- The Cape of Stranglethorn
-					103,	-- The Exodar
+					THE_EXODAR,
 					120,	-- The Storm Peaks
 					83,		-- Winterspring
 				},

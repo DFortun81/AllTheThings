@@ -79,7 +79,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
-					103,	-- The Exodar
+					THE_EXODAR,
 					SHATTRATH_CITY,
 					125,	-- Dalaran: Northrend
 					390,	-- Vale of Eternal Blossoms
@@ -154,7 +154,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
-					103,	-- The Exodar
+					THE_EXODAR,
 					SHATTRATH_CITY,
 					125,	-- Dalaran: Northrend
 					390,	-- Vale of Eternal Blossoms

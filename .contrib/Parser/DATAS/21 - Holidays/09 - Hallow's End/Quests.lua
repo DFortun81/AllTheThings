@@ -85,7 +85,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					87,  -- Ironforge
 					84,  -- Stormwind City
 					89,  -- Darnassus
-					103, -- The Exodar
+					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
@@ -737,9 +737,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12337, {	-- Candy Bucket — Exodar, Seat of the Naaru, Alliance
 				["isYearly"] = true,
-				["coord"] = { 59.3, 19.2, 103 },
+				["coord"] = { 59.3, 19.2, THE_EXODAR },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 103 },	-- The Exodar
+				["maps"] = { THE_EXODAR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2087,7 +2087,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					87,  -- Ironforge
 					84,  -- Stormwind City
 					89,  -- Darnassus
-					103, -- The Exodar
+					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
