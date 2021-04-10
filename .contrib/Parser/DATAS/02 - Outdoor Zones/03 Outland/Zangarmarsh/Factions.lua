@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(102, {	-- Zangarmarsh
 			n(FACTIONS, {
 				faction(942, {	-- Cenarion Expedition

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(109, {	-- Netherstorm
 			filter(101, {	-- Pet Battle
 				p(521, {	-- Fledgling Nether Ray

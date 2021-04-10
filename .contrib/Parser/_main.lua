@@ -198,6 +198,9 @@ BLIZZARD_BALANCE = 35;
 -- Map IDs used in ATT-Classic which don't exist in Live
 STRANGLETHORN_VALE = nil;	-- 1434 Classic
 
+-- Outland & TBC Additions
+OUTLAND = 101;	-- Confirmed!
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]

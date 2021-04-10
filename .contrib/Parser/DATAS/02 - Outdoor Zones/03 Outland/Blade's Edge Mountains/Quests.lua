@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(105, {	-- Blade's Edge Mountains
 			n(QUESTS, {
 				q(10713, {	-- ...and a Time for Action

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(111, {	-- Shattrath City
 			n(QUESTS, {
 				q(12753, {	-- A Desperate Alliance

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(108, {	-- Terokkar Forest
 			n(RARES, {
 				n(18689, {	-- Crippler

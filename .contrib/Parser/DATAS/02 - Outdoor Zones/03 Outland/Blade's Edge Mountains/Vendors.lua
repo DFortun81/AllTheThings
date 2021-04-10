@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(105, {	-- Blade's Edge Mountains
 			n(VENDORS, {
 				n(23245, {	-- Aether-tech Master

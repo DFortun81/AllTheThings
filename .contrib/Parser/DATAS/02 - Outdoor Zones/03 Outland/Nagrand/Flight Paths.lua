@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(107, {	-- Nagrand (Outland)
 			n(-228, {	-- Flight Paths
 				fp(120, {	-- Garadar, Nagrand

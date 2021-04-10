@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(102, {	-- Zangarmarsh
 			filter(101, {	-- Pet Battle
 				p(419, {	-- Small Frog

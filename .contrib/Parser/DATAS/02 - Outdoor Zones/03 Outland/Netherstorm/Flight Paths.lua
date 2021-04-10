@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(109, {	-- Netherstorm
 			n(-228, {	-- Flight Master
 				fp(122, {	-- Area 52, Netherstorm

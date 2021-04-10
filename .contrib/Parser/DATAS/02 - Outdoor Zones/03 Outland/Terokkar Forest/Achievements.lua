@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(108, {	-- Terokkar Forest
 			n(ACHIEVEMENTS, {
 				ach(1191, {	-- Terror of Terokkar (A)

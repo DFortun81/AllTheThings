@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(109, {	-- Netherstorm
 			n(VENDORS, {
 				n(19540,  {	-- Asarnan <Enchanting Trainer>

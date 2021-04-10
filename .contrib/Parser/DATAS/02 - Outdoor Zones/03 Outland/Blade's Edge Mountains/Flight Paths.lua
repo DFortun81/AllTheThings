@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(105, {	-- Blade's Edge Mountains
 			n(-228, {	-- Flight Master
 				fp(160, {	-- Evergrove, Blade's Edge Mountains

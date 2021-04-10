@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(111, {	-- Shattrath City
 			n(VENDORS, {
 				n(19662,  {	-- Aaron Hollman <Blacksmithing Supplies>

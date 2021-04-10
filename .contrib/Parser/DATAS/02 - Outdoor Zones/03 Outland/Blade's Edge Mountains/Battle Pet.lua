@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(105, {	-- Blade's Edge Mountains
 			filter(101, {	-- Pet Battle
 				p(1164, {	-- Cogblade Raptor

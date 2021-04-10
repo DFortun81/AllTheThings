@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(109, {	-- Netherstorm
 			n(ZONEDROPS, {
 				i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)

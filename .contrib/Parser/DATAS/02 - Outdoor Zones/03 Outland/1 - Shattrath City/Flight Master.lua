@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(111, {	-- Shattrath City
 			n(-228, {	-- Flight Master
 				fp(128, {	-- Shattrath, Terokkar Forest

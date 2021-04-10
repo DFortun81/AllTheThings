@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(100, {	-- Hellfire Peninsula
 			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>

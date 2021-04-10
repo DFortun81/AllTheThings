@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(107, {	-- Nagrand (Outland)
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

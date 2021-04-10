@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(100, {	-- Hellfire Peninsula
 			n(RARES, {
 				n(18678, {	-- Fulgore

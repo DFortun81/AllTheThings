@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(107, {	-- Nagrand (Outland)
 			n(VENDORS, {
 				n(21485, {	-- Aldraan <Blade Merchant>

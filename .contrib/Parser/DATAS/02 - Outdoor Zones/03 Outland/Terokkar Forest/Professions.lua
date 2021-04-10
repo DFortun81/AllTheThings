@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(108, {	-- Terokkar Forest
 			n(-38, {	-- Professions
 				prof(FISHING, {

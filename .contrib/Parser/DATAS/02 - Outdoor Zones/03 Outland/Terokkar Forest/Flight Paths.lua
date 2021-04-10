@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(108, {	-- Terokkar Forest
 			n(-228, {	-- Flight Master
 				fp(121, {	-- Allerian Stronghold, Terokkar Forest

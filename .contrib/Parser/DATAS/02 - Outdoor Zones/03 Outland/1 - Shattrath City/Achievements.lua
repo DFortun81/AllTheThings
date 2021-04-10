@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(111, {	-- Shattrath City
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

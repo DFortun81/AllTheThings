@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(105, {	-- Blade's Edge Mountains
 			n(ZONEDROPS, {
 				i(29750, {	-- Ethereum Stasis Chamber Key (required to summon/"release" mobs)(5x prison keys)

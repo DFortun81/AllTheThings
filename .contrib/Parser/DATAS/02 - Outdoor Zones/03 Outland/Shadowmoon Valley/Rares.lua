@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(104, {	-- Shadowmoon Valley (Outland)
 			n(RARES, {
 				n(18695, {	-- Ambassador Jerrikar

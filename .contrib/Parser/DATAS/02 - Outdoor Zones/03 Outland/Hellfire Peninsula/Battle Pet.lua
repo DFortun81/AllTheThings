@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(100, {	-- Hellfire Peninsula
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder

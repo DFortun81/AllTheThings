@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(111, {	-- Shattrath City
 			filter(101, {	-- Pet Battle
 				q(31925, {	-- Morulu The Elder

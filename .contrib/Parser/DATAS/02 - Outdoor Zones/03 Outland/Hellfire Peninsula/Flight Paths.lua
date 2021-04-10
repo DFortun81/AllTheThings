@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
+	m(OUTLAND, {
 		m(100, {	-- Hellfire Peninsula
 			n(-228, {	-- Flight Master
 				fp(102, {	-- Falcon Watch, Hellfire Peninsula
