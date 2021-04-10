@@ -1339,28 +1339,28 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(12409, {	-- Candy Bucket — Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars, neutral
 				["isYearly"] = true,
 				["coords"] = {
-					{ 30.3, 27.8, 104 },	-- Scryer
-					{ 61.0, 28.2, 104 },	-- Aldor
+					{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+					{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 				},
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12395, {	-- Candy Bucket — Shadowmoon Valley, Shadowmoon Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 30.3, 27.8, 104 },
+				["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12360, {	-- Candy Bucket — Shadowmoon Valley, Wildhammer Stronghold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 37.1, 58.2, 104 },
+				["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

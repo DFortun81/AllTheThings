@@ -30,7 +30,6 @@ _.WorldEvents =
 			}),
 			cat(773, {	-- Trinkets (Decks)
 				["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_twistingnether_01",
-				["f"] = 104,	-- Quest Items
 				["g"] = {
 					q(7906,  {	-- Darkmoon Cards - Beast (NYI?)
 						["u"] = NEVER_IMPLEMENTED,

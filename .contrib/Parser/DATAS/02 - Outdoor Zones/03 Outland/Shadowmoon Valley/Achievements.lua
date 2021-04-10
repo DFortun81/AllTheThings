@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(104, {	-- Shadowmoon Valley (Outland)
+		m(SHADOWMOON_VALLEY, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(5, {	-- Bloodknight Antari
-							["coord"] = { 30.6, 41.8, 104 },
+							["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 							["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
 						}),
 					},

@@ -20,7 +20,7 @@ _.Secrets =
 			51,
 			66,
 			69,
-			104,
+			SHADOWMOON_VALLEY,
 			BLADES_EDGE_MOUNTAINS,
 			TEROKKAR_FOREST,
 			121,
@@ -90,7 +90,7 @@ _.Secrets =
 				["questID"] = 52902,
 				["sourceQuests"] = { 52901 },
 				["description"] = "Outland SMV\n\nOn top of the mountain.\n\nThe Interesting Rock reads:\n\n\"<Something is written here.>\n\nThe BIG Bull\"",
-				["coord"] = { 51.6, 43.8, 104 },	-- Interesting Rock
+				["coord"] = { 51.6, 43.8, SHADOWMOON_VALLEY },	-- Interesting Rock
 			}),
 			o(294103, { 	-- Blooming Lily
 				["model"] = 343460,

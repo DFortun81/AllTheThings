@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(104, {	-- Shadowmoon Valley (Outland)
+		m(SHADOWMOON_VALLEY, {
 			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
-					["coord"] = { 55.8, 58.2, 104 },
+					["coord"] = { 55.8, 58.2, SHADOWMOON_VALLEY },
 					["g"] = {
 						i(21900, { 	-- Pattern: Imbued Netherweave Robe
 							["isLimited"] = true,
@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				n(20510, {	-- Brunn Flamebeard <Gryphon Keeper>
-					["coord"] = { 37.6, 56.0, 104 },
+					["coord"] = { 37.6, 56.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25471),	-- Ebon Gryphon Mount
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				n(19351, {	-- Daggle Ironshaper
-					["coord"] = { 36.8, 54.4, 104 },
+					["coord"] = { 36.8, 54.4, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
@@ -41,7 +41,7 @@ _.Zones =
 					},
 				}),
 				n(20494, {	-- Dama Wildmane <Wind Rider Keeper>
-					["coord"] = { 29.0, 29.4, 104 },
+					["coord"] = { 29.0, 29.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25475),	-- Blue Wind Rider Mount
@@ -64,7 +64,7 @@ _.Zones =
 					},
 					["minReputation"] = { 1015, EXALTED },
 					["description"] = "To access this vendor, you must reach Exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
-					["coord"] = { 65.6, 85.9, 104 },
+					["coord"] = { 65.6, 85.9, SHADOWMOON_VALLEY },
 					["g"] = {
 						i(32858),	-- Reins of the Azure Netherwing Drake Mount
 						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
@@ -75,7 +75,7 @@ _.Zones =
 					},
 				}),
 				n(19526, {	-- Dunaman <Weapons Vendor>
-					["coord"] = { 63.2, 30.6, 104 },
+					["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
 					["g"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
@@ -86,7 +86,7 @@ _.Zones =
 					},
 				}),
 				n(19333, {	-- Grokom Deatheye <Weaponsmith>
-					["coord"] = { 29.8, 31.2, 104 },
+					["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
@@ -99,7 +99,7 @@ _.Zones =
 
 				}),
 				n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
-					["coord"] = { 29.2, 31.0, 104 },
+					["coord"] = { 29.2, 31.0, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23596, {	-- Plans: Adamantite Breastplate
@@ -114,7 +114,7 @@ _.Zones =
 					},
 				}),
 				n(19373, {	-- Mari Stonehand
-					["coord"] = { 36.8, 55.0, 104 },
+					["coord"] = { 36.8, 55.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod

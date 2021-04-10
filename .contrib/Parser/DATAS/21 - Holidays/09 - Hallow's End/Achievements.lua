@@ -787,14 +787,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 										crit(9,  {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {
-												{ 30.3, 27.8, 104 },	-- Scryer
-												{ 61.0, 28.2, 104 },	-- Aldor
+												{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+												{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 											},
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(10, {	-- Shadowmoon Valley, Wildhammer Stronghold
-											["coord"] = { 37.1, 58.2, 104 },
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {
@@ -858,14 +858,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 										crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {
-												{ 30.3, 27.8, 104 },	-- Scryer
-												{ 61.0, 28.2, 104 },	-- Aldor
+												{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+												{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 											},
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(10, {	-- Shadowmoon Valley, Shadowmoon Village
-											["coord"] = { 30.3, 27.8, 104 },
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {

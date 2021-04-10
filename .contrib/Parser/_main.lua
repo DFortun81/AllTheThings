@@ -211,6 +211,7 @@ NETHERSTORM = 109;	-- Confirmed!
 TEROKKAR_FOREST = 108;	-- Confirmed!
 SHATTRATH_CITY = 111;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
+SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
 ItemClassInfo = {
 	{

@@ -31,8 +31,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(17711, { 	-- Doomwalker
 				["description"] = "Doomwalker is a powerful Fel Reaver sent by Kil'jaeden to assault the gates of the Black Temple in Shadowmoon Valley.",
 				["isRaid"] = true,
-				["coord"] = { 71.4, 43.8, 104 },
-				["maps"] = { 104 },	-- Shadowmoon Valley (Outland)
+				["coord"] = { 71.4, 43.8, SHADOWMOON_VALLEY },
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(30724),	-- Barrel-Blade Longrifle
 					i(30722),	-- Ethereum Nexus-Reaver

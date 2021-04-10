@@ -206,9 +206,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 40.0, 55.0, 104 },
+										["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
 										["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
@@ -476,9 +476,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 33.6, 30.3, 104 },
+										["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
 										["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
@@ -902,9 +902,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 33.0, 30.0, 104 },
+										["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
 										["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
@@ -1182,9 +1182,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 39.6, 54.3, 104 },
+										["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
 										["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },

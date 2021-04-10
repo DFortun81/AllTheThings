@@ -99,10 +99,10 @@ _.Zones =
 						n(-507, {	-- The Hand of Gul'dan [Outlands]
 							["collectible"] = true,
 							["questID"] = 53599,
-							["coord"] = { 50.77, 35.28, 104 },
+							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 104 },	-- Shadowmoon Valley [Outlands]
+							["maps"] = { SHADOWMOON_VALLEY },
 						}),
 						n(-508, {	-- Skald [Outlands]
 							["collectible"] = true,

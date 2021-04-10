@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(104, {	-- Shadowmoon Valley (Outland)
+		m(SHADOWMOON_VALLEY, {
 			n(ZONEDROPS, {
 				i(34689, {	-- Design: Chaotic Skyfire Diamond
 					["crs"] = { 19768 },  -- Coilskar Siren
@@ -71,7 +71,7 @@ _.Zones =
 				}),
 				o(240622, {	-- Warden's Scroll Case
 					["description"] = "|cff66ccffLoot the Warden's Scroll Case inside the Warden's Cage (underground).|r",
-					["coord"] = { 57.3, 47.1, 104 },
+					["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 					["modelScale"] = .5,
 					["model"] = 521201,
 					["g"] = {

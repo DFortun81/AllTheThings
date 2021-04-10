@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(104, {	-- Shadowmoon Valley (Outland)
+		m(SHADOWMOON_VALLEY, {
 			n(QUESTS, {
 				q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 44.0, 104 },
+					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -20,7 +20,7 @@ _.Zones =
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
 					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 43.9, 104 },
+					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
 					["g"] = {
 						i(32649),	-- Medallion of Karabor
 					},
@@ -29,19 +29,19 @@ _.Zones =
 					["provider"] = { "n", 21774 },	-- Zorus the Judicator
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {	-- questgiver pats
-						{ 36.6, 55.4, 104 },
-						{ 36.6, 56.6, 104 },
-						{ 37.2, 55.8, 104 },
+						{ 36.6, 55.4, SHADOWMOON_VALLEY },
+						{ 36.6, 56.6, SHADOWMOON_VALLEY },
+						{ 37.2, 55.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10702, {	-- A Grunt's Work... -- aa
 					["provider"] = { "n", 21769 },	-- Overlord Or'barokh
-					["coord"] = { 28.4, 26.4, 104 },
+					["coord"] = { 28.4, 26.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10624, {	-- A Haunted History -- aa
 					["provider"] = { "n", 21772 },	-- Chief Apothecary Hildagard
-					["coord"] = { 29.9, 27.6, 104 },
+					["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10515, {	-- A Lesson Learned
@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				q(10947, {	-- An Artifact From the Past
 					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.2, 104 },
+					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10946 },	-- Ruse of the Ashtongue
 				}),
 				q(10527, {	-- Ar'tor, Son of Oronok
@@ -60,9 +60,9 @@ _.Zones =
 				q(10777, {	-- Asghar's Totem
 					["provider"] = { "n", 22024 },	-- Parshah
 					["coords"] = {	-- questgiver pats up and down the road
-						{ 35.4, 37.6, 104 },
-						{ 35.2, 40.4, 104 },
-						{ 35.4, 41.8, 104 },
+						{ 35.4, 37.6, SHADOWMOON_VALLEY },
+						{ 35.2, 40.4, SHADOWMOON_VALLEY },
+						{ 35.4, 41.8, SHADOWMOON_VALLEY },
 					},
 					["sourceQuests"] = {
 						10759,	-- Find the Deserter (Alliance)
@@ -70,7 +70,7 @@ _.Zones =
 					},
 				}),
 				q(10781, {	-- Battle of the Crimson Watch
-					["coord"] = { 51.4, 72.7, 104 },
+					["coord"] = { 51.4, 72.7, SHADOWMOON_VALLEY },
 					["model"] = 192011,
 					["provider"] = { "o", 185126 },	-- Crystal Prison
 					["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
@@ -85,19 +85,19 @@ _.Zones =
 				}),
 				q(10562, {	-- Besieged! (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49550 },	-- Hero's Call: Shadowmoon Valley!
 				}),
 				q(10595, {	-- Besieged! (H) -- aa
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 49532 },	-- Warchief's Command: Shadowmoon Valley!
 				}),
 				q(10564, {	-- Blast the Infernals! (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10572 },	-- Setting Up the Bomb
 					["g"] = {
@@ -109,7 +109,7 @@ _.Zones =
 				}),
 				q(10598, {	-- Blast the Infernals! (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10597 },	-- Setting Up the Bomb
 					["g"] = {
@@ -142,7 +142,7 @@ _.Zones =
 				}),
 				q(10586, {	-- Bring Down the Warbringer! (A)
 					["provider"] = { "n", 21471 },	-- Stormer Ewan Wildwing
-					["coord"] = { 40.4, 41.2, 104 },
+					["coord"] = { 40.4, 41.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						10583,	-- The Fate of Flanis
@@ -151,7 +151,7 @@ _.Zones =
 				}),
 				q(10603, {	-- Bring Down the Warbringer! (H)
 					["provider"] = { "n", 21475 },	-- Scout Zagran
-					["coord"] = { 38.5, 38.1, 104 },
+					["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						10601,	-- The Fate of Kagrosh
@@ -160,19 +160,19 @@ _.Zones =
 				}),
 				q(10621, {	-- Illidari Bane-Shard (A)
 					["cr"] = 21499,	-- Overseer Ripsaw
-					["coord"] = { 23.0, 35.6, 104 },
+					["coord"] = { 23.0, 35.6, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 30756 },	-- Illidari Bane-Shard (Alliance)
 				}),
 				q(10623, {	-- Illidari Bane-Shard (H) -- aa
 					["cr"] = 21499,	-- Overseer Ripsaw
-					["coord"] = { 23.0, 35.6, 104 },
+					["coord"] = { 23.0, 35.6, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 30579 },	-- Illidari Bane-Shard (Horde)
 				}),
 				q(10626, {	-- Capture the Weapons (A)
 					["provider"] = { "n", 19370 },	-- Ordinn Thunderfist
-					["coord"] = { 36.8, 54.8, 104 },
+					["coord"] = { 36.8, 54.8, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10621,	-- Illidari Bane-Shard
 					["g"] = {
@@ -196,7 +196,7 @@ _.Zones =
 				}),
 				q(10662, {	-- The Hermit Smith (A)
 					["provider"] = { "n", 19370 },	-- Ordinn Thunderfist
-					["coord"] = { 36.8, 54.8, 104 },
+					["coord"] = { 36.8, 54.8, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10627,	-- Capture the Weapons
 				}),
@@ -288,22 +288,22 @@ _.Zones =
 				}),
 				q(10634, {	-- Divination: Gorefiend's Armor
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
-					["coord"] = { 58.2, 70.8, 104 },
+					["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 				}),
 				q(10635, {	-- Divination: Gorefiend's Cloak
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
-					["coord"] = { 58.2, 70.8, 104 },
+					["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10644, 10633 },	-- Teron Gorefiend - Lore and Legend (A/H)
 				}),
 				q(10636, {	-- Divination: Gorefiend's Truncheon
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
-					["coord"] = { 58.2, 70.8, 104 },
+					["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 				}),
 				q(10481, {	-- Enraged Spirits of Air
 					["provider"] = { "n", 21024 },	-- Earthmender Torlok
-					["coord"] = { 42.1, 45.0, 104 },
+					["coord"] = { 42.1, 45.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10480 },	-- Enraged Spirits of Water
 					["g"] = {
 						i(30953),	-- Boots of the Skybreaker
@@ -314,12 +314,12 @@ _.Zones =
 				}),
 				q(10458, {	-- Enraged Spirits of Fire and Earth -- aa
 					["provider"] = { "n", 21024 },	-- Earthmender Torlok
-					["coord"] = { 42.2, 45.0, 104 },
+					["coord"] = { 42.2, 45.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
 				}),
 				q(10480, {	-- Enraged Spirits of Water
 					["provider"] = { "n", 21024 },	-- Earthmender Torlok
-					["coord"] = { 42.1, 45.0, 104 },
+					["coord"] = { 42.1, 45.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 				}),
 				q(10754, {	-- Entry Into the Citadel (removed, old BT key questline)
@@ -336,7 +336,7 @@ _.Zones =
 				}),
 				q(10451, {	-- Escape from Coilskar Cistern
 					["provider"] = { "n", 21027 },	-- Earthmender Wilda
-					["coord"] = { 52.1, 18.8, 104 },
+					["coord"] = { 52.1, 18.8, SHADOWMOON_VALLEY },
 					["description"] = "Questgiver only becomes interactable after you kill Keeper of the Cistern at the back of the cave.",
 					["g"] = {
 						i(30927),	-- Earthmender's Bracer of Shattering
@@ -352,7 +352,7 @@ _.Zones =
 				}),
 				q(10759, {	-- Find the Deserter
 					["provider"] = { "n", 22042 },	-- Gryphonrider Kieran
-					["coord"] = { 38.7, 54.2, 104 },
+					["coord"] = { 38.7, 54.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10569 },	-- The Sketh'lon Wreckage
 				}),
@@ -368,13 +368,13 @@ _.Zones =
 				}),
 				q(10589, {	-- Gaining Access (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10586 },	-- Bring Down the Warbringer
 				}),
 				q(10604, {	-- Gaining Access (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10603 },	-- Bring Down the Warbringer!
 				}),
@@ -387,29 +387,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10642 },	-- A Ghost in the Machine
 					["coords"] = {	-- questgiver pats
-						{ 36.6, 55.4, 104 },
-						{ 36.6, 56.6, 104 },
-						{ 37.2, 55.8, 104 },
+						{ 36.6, 55.4, SHADOWMOON_VALLEY },
+						{ 36.6, 56.6, SHADOWMOON_VALLEY },
+						{ 37.2, 55.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10782, {	-- Imbuing the Headpiece
 					["provider"] = { "n", 22024 },	-- Parshah
 					["sourceQuests"] = { 10780 },	-- Sketh'lon Feathers
 					["coords"] = {	-- questgiver pats up and down the road
-						{ 35.4, 37.6, 104 },
-						{ 35.2, 40.4, 104 },
-						{ 35.4, 41.8, 104 },
+						{ 35.4, 37.6, SHADOWMOON_VALLEY },
+						{ 35.2, 40.4, SHADOWMOON_VALLEY },
+						{ 35.4, 41.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10766, {	-- Invasion Point: Cataclysm (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10589 },	-- Gaining Access
 				}),
 				q(10767, {	-- Invasion Point: Cataclysm (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10604 },	-- Gaining Access
 				}),
@@ -433,19 +433,19 @@ _.Zones =
 				}),
 				q(10582, {	-- Minions of the Shadow Council (A)
 					["provider"] = { "n", 21471 },	-- Stormer Ewan Wildwing
-					["coord"] = { 40.4, 41.3, 104 },
+					["coord"] = { 40.4, 41.3, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10573 },	-- The Deathforge
 				}),
 				q(10600, {	-- Minions of the Shadow Council (H)
 					["provider"] = { "n", 21475 },	-- Scout Zagran
-					["coord"] = { 38.5, 38.1, 104 },
+					["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10599 },	-- The Deathforge
 				}),
 				q(10744, {	-- News of Victory (awarded "Wildhammer Stronghold" criteria)
 					["provider"] = { "n", 21790 },	-- Plexi
-					["coord"] = { 40.8, 22.2, 104 },
+					["coord"] = { 40.8, 22.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10612 },	-- The Fel and the Furious
 					["g"] = {
@@ -455,7 +455,7 @@ _.Zones =
 				}),
 				q(10745, {	-- News of Victory
 					["provider"] = { "n", 21789 },	-- Nakansi
-					["coord"] = { 27.4, 21.2, 104 },
+					["coord"] = { 27.4, 21.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10613 },	-- The Fel and the Furious
 					["g"] = {
@@ -473,17 +473,17 @@ _.Zones =
 				}),
 				q(10703, {	-- Put On Yer Kneepads...
 					["provider"] = { "n", 21773 },	-- Thane Yoregar
-					["coord"] = { 36.2, 57.0, 104 },
+					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10946, {	-- Ruse of the Ashtongue
 					["sourceQuests"] = { 10944 },	-- The Secret Compromised
 					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.0, 48.2, 104 },
+					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
 				}),
 				q(10958, {	-- Seek Out the Ashtongue
 					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 44.0, 104 },
+					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = {
 						10985,	-- A Distraction for Akama (Alliance)
 						13429,	-- A Distraction for Akama (Horde)
@@ -491,13 +491,13 @@ _.Zones =
 				}),
 				q(10572, {	-- Setting Up the Bomb (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10563 },	-- To Legion Hold
 				}),
 				q(10597, {	-- Setting Up the Bomb (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10596 },	-- To Legion Hold
 				}),
@@ -505,20 +505,20 @@ _.Zones =
 					["provider"] = { "n", 22024 },	-- Parshah
 					["sourceQuests"] = { 10778 },	-- The Rod of Lianthe
 					["coords"] = {	-- questgiver pats up and down the road
-						{ 35.4, 37.6, 104 },
-						{ 35.2, 40.4, 104 },
-						{ 35.4, 41.8, 104 },
+						{ 35.4, 37.6, SHADOWMOON_VALLEY },
+						{ 35.2, 40.4, SHADOWMOON_VALLEY },
+						{ 35.4, 41.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10625, {	-- Spectrecles
 					["provider"] = { "n", 21772 },	-- Chief Apothecary Hildagard
-					["coord"] = { 29.9, 27.6, 104 },
+					["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10624 },	-- A Haunted History
 				}),
 				q(10661, {	-- Spleendid!
 					["provider"] = { "n", 21777 },	-- Gnomus
-					["coord"] = { 36.5, 55.2, 104 },
+					["coord"] = { 36.5, 55.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10815, {	-- The Journal of Val'zareq: Portends of War (NYI - never left Beta)
@@ -526,13 +526,13 @@ _.Zones =
 				}),
 				q(10677, {	-- The Second Course...
 					["provider"] = { "n", 21777 },	-- Gnomus
-					["coord"] = { 36.5, 55.2, 104 },
+					["coord"] = { 36.5, 55.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10661 },	-- Spleendid!
 				}),
 				q(10775, {	-- Tabards of the Illidari (A)
 					["provider"] = { "n", 22059 },	-- Wildhammer Gryphon Rider
-					["coord"] = { 52.4, 68.4, 104 },
+					["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10774 },	-- Blood Elf + Giant = ???
 				}),
@@ -543,7 +543,7 @@ _.Zones =
 				}),
 				q(10645, {	-- Teron Gorefiend, I am... (A)
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
-					["coord"] = { 58.2, 70.7, 104 },
+					["coord"] = { 58.2, 70.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						10634,	-- Divination: Gorefiend's Armor
@@ -561,7 +561,7 @@ _.Zones =
 				}),
 				q(10639, {	-- Teron Gorefiend, I am... (H)
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
-					["coord"] = { 58.2, 70.7, 104 },
+					["coord"] = { 58.2, 70.7, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						10634,	-- Divination: Teron Gorefiend's Armor
@@ -582,33 +582,33 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10643 },	-- Harbingers of Shadowmoon
 					["coords"] = {	-- questgiver pats
-						{ 36.6, 55.4, 104 },
-						{ 36.6, 56.6, 104 },
-						{ 37.2, 55.8, 104 },
+						{ 36.6, 55.4, SHADOWMOON_VALLEY },
+						{ 36.6, 56.6, SHADOWMOON_VALLEY },
+						{ 37.2, 55.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10633, {	-- Teron Gorefiend - Lore and Legend (H)
 					["provider"] = { "n", 21772 },	-- Chief Apothecary Hildagard
-					["coord"] = { 29.9, 27.6, 104 },
+					["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10625 },	-- Spectrecles
 				}),
 				q(10606, {	-- The Art of Fel Reaver Maintenance (A)
 					["provider"] = { "n", 21790 },	-- Plexi
-					["coord"] = { 40.8, 22.2, 104 },
+					["coord"] = { 40.8, 22.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10766 },	-- Invasion Point: Cataclysm
 				}),
 				q(10611, {	-- The Art of Fel Reaver Maintenance (H)
 					["provider"] = { "n", 21789 },	-- Nakansi
-					["coord"] = { 27.4, 21.2, 104 },
+					["coord"] = { 27.4, 21.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10767 },	-- Invasion Point: Cataclysm
 				}),
 				q(10588, {	-- The Cipher of Damnation
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10523, 10541, 10579 },	-- The Cipher of Damnation, the First/Second/Third Fragment Recovered
-					["coord"] = { 53.8, 23.4, 104 },
+					["coord"] = { 53.8, 23.4, SHADOWMOON_VALLEY },
 					["g"] = {
 						i(31073),	-- Borak's Reminder
 						i(31071),	-- Grom'tor's Charge
@@ -670,55 +670,55 @@ _.Zones =
 				}),
 				q(10573, {	-- The Deathforge (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10564 },	-- Blast the Infernals!
 				}),
 				q(10599, {	-- The Deathforge (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10598 },	-- Blast the Infernals!
 				}),
 				q(10583, {	-- The Fate of Flanis
 					["provider"] = { "n", 21471 },	-- Stormer Ewan Wildwing
-					["coord"] = { 40.4, 41.2, 104 },
+					["coord"] = { 40.4, 41.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10582 },	-- Minions of the Shadow Council
 				}),
 				q(10601, {	-- The Fate of Kagrosh
 					["provider"] = { "n", 21475 },	-- Scout Zagran
-					["coord"] = { 38.5, 38.1, 104 },
+					["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10600 },	-- Minions of the Shadow Council
 				}),
 				q(10612, {	-- The Fel and the Furious (A)
 					["provider"] = { "n", 21790 },	-- Plexi
-					["coord"] = { 40.8, 22.2, 104 },
+					["coord"] = { 40.8, 22.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10606 },	-- The Art of Fel Reaver Maintenance
 				}),
 				q(10613, {	-- The Fel and the Furious (H)
 					["provider"] = { "n", 21789 },	-- Nakansi
-					["coord"] = { 27.5, 21.2, 104 },
+					["coord"] = { 27.5, 21.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10611 },	-- The Art of Fel Reaver Maintenance
 				}),
 				q(10680, {	-- The Hand of Gul'dan (A)
 					["provider"] = { "n", 21937 },	-- Earthmender Sophurus
-					["coord"] = { 36.3, 56.9, 104 },
+					["coord"] = { 36.3, 56.9, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 				}),
 				q(10681, {	-- The Hand of Gul'dan (H) -- aa
 					["provider"] = { "n", 21938 },	-- Earthmender Splinthoof
-					["coord"] = { 28.4, 26.5, 104 },
+					["coord"] = { 28.4, 26.5, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 				}),
 				q(10662, {	-- The Hermit Smith (A)
 					["provider"] = { "n", 19370 },	-- Ordinn Thunderfist
-					["coord"] = { 36.8, 54.8, 104 },
+					["coord"] = { 36.8, 54.8, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10626 },	-- Capture the Weapons
 				}),
@@ -729,42 +729,42 @@ _.Zones =
 				}),
 				q(10948, {	-- The Hostage Soul
 					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.2, 104 },
+					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10947 },	-- An Artifact From the Past
 				}),
 				q(10793, { 	-- The Journal of Val'zareq: Portends of War
 					["provider"] = { "n", 21979 },	-- Val'zareq the Conqueror
 					["itemID"] = 31345,	-- The Journal of Val'zareq
 					["coords"] = {	-- NPC pats
-						{ 50.2, 58.6, 104 },
-						{ 53.2, 60.2, 104 },
-						{ 52.8, 68.6, 104 },
-						{ 51.6, 64.0, 104 },
+						{ 50.2, 58.6, SHADOWMOON_VALLEY },
+						{ 53.2, 60.2, SHADOWMOON_VALLEY },
+						{ 52.8, 68.6, SHADOWMOON_VALLEY },
+						{ 51.6, 64.0, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10678, {	-- The Main Course!
 					["provider"] = { "n", 21777 },	-- Gnomus
-					["coord"] = { 36.5, 55.2, 104 },
+					["coord"] = { 36.5, 55.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10677 },	-- The Second Course...
 				}),
 				q(10772, {	-- The Path of Conquest (A)
 					["provider"] = { "n", 21773 },	-- Thane Yoregar
-					["coord"] = { 36.2, 57.0, 104 },
+					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10750, {	-- The Path of Conquest (H)
 					["provider"] = { "n", 21769 },	-- Overlord Or'barokh
-					["coord"] = { 28.4, 26.4, 104 },
+					["coord"] = { 28.4, 26.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10778, {	-- The Rod of Lianthe
 					["provider"] = { "n", 22024 },	-- Parshah
 					["sourceQuests"] = { 10777 },	-- Asghar's Totem
 					["coords"] = {	-- questgiver pats up and down the road
-						{ 35.4, 37.6, 104 },
-						{ 35.2, 40.4, 104 },
-						{ 35.4, 41.8, 104 },
+						{ 35.4, 37.6, SHADOWMOON_VALLEY },
+						{ 35.2, 40.4, SHADOWMOON_VALLEY },
+						{ 35.4, 41.8, SHADOWMOON_VALLEY },
 					},
 				}),
 				q(10576, {	-- The Shadowmoon Shuffle
@@ -773,23 +773,23 @@ _.Zones =
 				}),
 				q(10569, {	-- The Sketh'lon Wreckage (A)
 					["provider"] = { "n", 22042 },	-- Gryphonrider Kieran
-					["coord"] = { 38.7, 54.2, 104 },
+					["coord"] = { 38.7, 54.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10760, {	-- The Sketh'lon Wreckage (H) -- aa
 					["provider"] = { "n", 22043 },	-- Sergeant Kargrul
-					["coord"] = { 31.0, 29.7, 104 },
+					["coord"] = { 31.0, 29.7, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10585, {	-- The Summoning Chamber (A)
 					["provider"] = { "n", 21471 },	-- Stormer Ewan Wildwing
-					["coord"] = { 40.4, 41.2, 104 },
+					["coord"] = { 40.4, 41.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10582 },	-- Minions of the Shadow Council
 				}),
 				q(10602, {	-- The Summoning Chamber (H)
 					["provider"] = { "n", 21475 },	-- Scout Zagran
-					["coord"] = { 38.5, 38.1, 104 },
+					["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10600 },	-- Minions of the Shadow Council
 				}),
@@ -797,9 +797,9 @@ _.Zones =
 					["provider"] = { "n", 22024 },	-- Parshah
 					["sourceQuests"] = { 10782 },	-- Imbuing the Headpiece
 					["coords"] = {	-- questgiver pats up and down the road
-						{ 35.4, 37.6, 104 },
-						{ 35.2, 40.4, 104 },
-						{ 35.4, 41.8, 104 },
+						{ 35.4, 37.6, SHADOWMOON_VALLEY },
+						{ 35.2, 40.4, SHADOWMOON_VALLEY },
+						{ 35.4, 41.8, SHADOWMOON_VALLEY },
 					},
 					["g"] = {
 						i(30941),	-- Ash Tempered Legguards
@@ -814,18 +814,18 @@ _.Zones =
 				}),
 				q(10563, {	-- To Legion Hold (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
-					["coord"] = { 39.5, 53.7, 104 },
+					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10562 },	-- Besieged!
 				}),
 				q(10596, {	-- To Legion Hold (H)
 					["provider"] = { "n", 21359 },	-- Blood Guard Gulmok
-					["coord"] = { 30.4, 32.4, 104 },
+					["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10595 },	-- Besieged!
 				}),
 				q(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon (A) -- aa
-					["coord"] = { 38.2, 53.9, 104 },
+					["coord"] = { 38.2, 53.9, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["model"] = 199476,
 					["provider"] = { "o", 184946 },	-- Wanted Poster
@@ -837,7 +837,7 @@ _.Zones =
 					},
 				}),
 				q(10647, {	-- Wanted: Uvuros, Scourge of Shadowmoon (H) -- aa
-					["coord"] = { 30.4, 30.8, 104 },
+					["coord"] = { 30.4, 30.8, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["model"] = 199475,
 					["provider"] = { "o", 184945 },	-- Wanted Poster
@@ -854,7 +854,7 @@ _.Zones =
 				}),
 				q(10660, {	-- What Strange Creatures... -- aa
 					["provider"] = { "n", 21770 },	-- Researcher Tiorus
-					["coord"] = { 30.0, 28.2, 104 },
+					["coord"] = { 30.0, 28.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10765, {	-- When Worlds Collide...

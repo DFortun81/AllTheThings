@@ -29,7 +29,7 @@ _.Achievements =
 					--["coord"] = { 34.8, 59.6, 554 },
 				}),
 				crit(5,  {	-- Sewer Creeper
-					--["coord"] = { 30.6, 41.8, 104 },
+					--["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- The Countess
 					--["coord"] = { 49.8, 57.0, 207 },
@@ -62,7 +62,7 @@ _.Achievements =
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
 				crit(5,  {	-- Bloodknight Antari (Shadowmoon Valley, Outland)
-					["coord"] = { 30.6, 41.8, 104 },
+					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- Bordin Steadyfist (Deepholm)
 					["coord"] = { 49.8, 57.0, 207 },

@@ -284,10 +284,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187967 },	-- Horde Bonfire
-				["coord"] = { 33.6, 30.3, 104 },
+				["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(13450, {	-- Desecrate this Fire! — Sholazar Basin
 				["isYearly"] = true,
@@ -694,10 +694,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11752, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187935 },	-- Alliance Bonfire
-				["coord"] = { 39.6, 54.3, 104 },
+				["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(44582, {	-- Desecrate this Fire! — Shadowmoon Valley (WoD)
 				["isYearly"] = true,
@@ -1121,9 +1121,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11823, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25905 },	-- Shadowmoon Valley Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 40.0, 55.0, 104 },
+				["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(44579, {	-- Honor the Flame — Shadowmoon Valley (WoD)
 				["provider"] = { "n", 114500 },	-- Shadowmoon Valley Flame Warden
@@ -1515,9 +1515,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25938 },	-- Shadowmoon Valley Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 33.0, 30.0, 104 },
+				["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(13494, {	-- Honor the Flame — Sholazar Basin
 				["provider"] = { "n", 32810 },	-- Sholazar Basin Flame Keeper
