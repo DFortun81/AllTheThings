@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(122, {	-- Isle of Quel'Danas
+		m(ISLE_OF_QUELDANAS, {
 			n(VENDORS, {
 			-- TODO: Olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>

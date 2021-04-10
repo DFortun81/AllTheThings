@@ -93,7 +93,7 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = {
-					122,	-- Isle of Quel'danas
+					ISLE_OF_QUELDANAS,
 					973,	-- The Sunwell: Shrine of the Eclipse (Scenario)
 				 },
 				["lvl"] = 120,

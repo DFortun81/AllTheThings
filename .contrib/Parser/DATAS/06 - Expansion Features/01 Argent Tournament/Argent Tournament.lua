@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 						183,	-- The Forge of Souls
 						184,	-- Pit of Saron
 						185,	-- Halls of Reflection
-						122,	-- Isle of Quel'Danas
+						ISLE_OF_QUELDANAS,
 					},
 					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
 					["g"] = {
