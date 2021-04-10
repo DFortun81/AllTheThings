@@ -1162,21 +1162,21 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(QUESTS, {
-								-- q(TODO, {	-- Lord Garridan's Egg
-								-- 	["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
-								-- 	["repeatable"] = true,
-								-- 	["u"] = 19,	-- Noblegarden
-								-- }),
-								-- q(TODO, {	-- Prince Renethal's Egg
-								-- 	["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
-								-- 	["repeatable"] = true,
-								-- 	["u"] = 19,	-- Noblegarden
-								-- }),
-								-- q(TODO, {	-- Theotar's Egg
-								-- 	["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
-								-- 	["repeatable"] = true,
-								-- 	["u"] = 19,	-- Noblegarden
-								-- }),
+								q(63721, {	-- Lord Garridan's Egg
+									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+								q(63720, {	-- Prince Renethal's Egg
+									["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+								q(63718, {	-- Theotar's Egg
+									["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
 								q(63719, {	-- Temel's Egg
 									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 									["repeatable"] = true,
@@ -1202,6 +1202,7 @@ _.ExpansionFeatures =
 											crit(5, {	-- Alexandros Mograine
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181616),	-- A Treatise on the Great Battles of Lordaeron
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181325),	-- Marrowfused Dagger
 											i(181331),	-- Marrowfused Shield
@@ -1379,6 +1380,7 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181227),	-- Bronze Ceremonial Targe
+											i(181563),	-- Decree: Mikanikos's Boon
 											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181235),	-- Final Arbiter's Gavel
 											i(181230),	-- Pugilist's Chakram
@@ -1789,6 +1791,11 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
 									["provider"] = { "n", 167863 },	-- Tubbins
 									["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
+								}),
+								q(63696, {	-- Grandmaster Vole's Best Friend
+									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
+									["provider"] = { "n", 163019 },	-- Grandmaster Vole
+									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
 								}),
 								q(61880, {	-- Honored Attendance
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir

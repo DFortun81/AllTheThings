@@ -4272,6 +4272,7 @@ _.HiddenQuestTriggers =
 		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
 		q(61929),	-- also completed when finishing "Theotar's Toast" objective
+		q(62112),	-- completed when killing Rare 'Sloppy' in Ember Court
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
 		q(62118),	-- picked up when entering the Ember Court for the week — for "Traditional Candles"
 		q(62119),	-- picked up when entering the Ember Court for the week – for "Roaring Fires"
@@ -4325,9 +4326,7 @@ _.HiddenQuestTriggers =
 		q(62505),	-- ""
 		q(62529),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
-		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59634),	-- triggered upon actually leaving the Ember Court
-		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
+		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
 		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
 		q(59628),	-- Guest Selected for Ember Court: Mikanikos
 		q(59629),	-- Guest Selected for Ember Court: The Countess
@@ -4335,17 +4334,14 @@ _.HiddenQuestTriggers =
 		q(59631),	-- Guest Selected for Ember Court: Hunt-Captain Korayn
 		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
 		q(59633),	-- Guest Selected for Ember Court: Rendle and Cudgelface
+		q(59634),	-- Guest Selected for Ember Court: Choofa
 		q(59635),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
 		q(59636),	-- Guest Selected for Ember Court: Droman Aliothe
-		q(59637),	-- Guest Selected for Ember Court: Baroness Vashj OR Grandmaster Vole TODO
+		q(59637),	-- Guest Selected for Ember Court: Grandmaster Vole
 		q(59638),	-- Guest Selected for Ember Court: Kleia and Pelagos
 		q(59639),	-- Guest Selected for Ember Court: Plague Deviser Marileth
 		q(59640),	-- Guest Selected for Ember Court: Sika
-		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
-		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
-		-- Leaving Ember Court: 59627, 59638, ??, ??, 	   => Next RSVPs: CryptKeeper/Klei&Pel/PoleAdres/LadyMoon
-		-- Leaving Ember Court: 59626, 59633, 59634, 59637 => Next RSVPs: Choofa/GMVole/Rendle&Cudgelface/BaronVash
-		-- Leaving Ember Court: 59628, 60319, ??, ??,		=> Next RSVPs: Choofa/Stonehead/Hunt-Captain/Mikanikos
+		q(60319),	-- Guest Selected for Ember Court: Stonehead
 		q(61389),	-- 1st free revoke RSVP per week
 		q(61390),	-- 2nd free revoke RSVP per week
 		q(61889),	-- 3rd free revoke RSVP per week
