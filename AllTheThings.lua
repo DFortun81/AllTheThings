@@ -7745,7 +7745,7 @@ local itemFields = {
 		return app.CollectedAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		return CollectibleAsCostPerItemID[t.itemID];
+		return (not t.parent or not t.parent.saved) and CollectibleAsCostPerItemID[t.modItemID or t.itemID];
 	end,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsCost;
