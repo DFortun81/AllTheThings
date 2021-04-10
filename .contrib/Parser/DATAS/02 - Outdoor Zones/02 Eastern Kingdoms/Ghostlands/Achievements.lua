@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(95, {	-- Ghostlands
+		m(GHOSTLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4908, {	-- Ghostlands Quests
 					["races"] = HORDE_ONLY,

@@ -436,15 +436,15 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 										crit(8,  {	-- Eversong Woods, Fairbreeze Village
 											["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
-											["maps"] = { 94 },	-- Eversong Woods
+											["maps"] = { EVERSONG_WOODS },
 										}),
 										crit(9,  {	-- Eversong Woods, Falconwing Square
 											["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
-											["maps"] = { 94 },	-- Eversong Woods
+											["maps"] = { EVERSONG_WOODS },
 										}),
 										crit(10, {	-- Ghostlands, Tranquillien
-											["coord"] = { 48.6, 32.0, 95 },
-											["maps"] = { 95 },	-- Ghostlands
+											["coord"] = { 48.6, 32.0, GHOSTLANDS },
+											["maps"] = { GHOSTLANDS },
 										}),
 										crit(11, {	-- Hillsbrad Foothills, Eastpoint Tower
 											["coord"] = { 60.3, 63.8, 25 },

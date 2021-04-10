@@ -98,7 +98,7 @@ _.Holidays =
 								}),
 								crit(3, {	-- Falconwing Square
 									["races"] = HORDE_ONLY,
-									["maps"] = { 94 },	-- Eversong Woods
+									["maps"] = { EVERSONG_WOODS },
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(4, {	-- Razor Hill

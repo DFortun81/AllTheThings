@@ -25,38 +25,38 @@ _.GearSets =
 			}),
 			q(53882, {	-- Writing on the Wall
 				["provider"] = { "n", 145015 },	-- Lor'themar Theron
-				["coord"] = { 46.2, 31.8, 95 },
+				["coord"] = { 46.2, 31.8, GHOSTLANDS },
 				["sourceQuest"] = 53734,	-- Walk Among Ghosts
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["lvl"] = 120,
 			}),
 			q(53735, {	-- The First to Fall
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
-				["coord"] = { 47.5, 84.1, 95 },
+				["coord"] = { 47.5, 84.1, GHOSTLANDS },
 				["sourceQuest"] = 53882,	-- Writing on the Wall
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["lvl"] = 120,
 			}),
 			q(53736, {	-- Lament of the Highborne
 				["provider"] = { "n", 145005 },		-- Lor'themar Theron
-				["coord"] = { 37.2, 66.4, 95 },	-- Pickup Quest
+				["coord"] = { 37.2, 66.4, GHOSTLANDS },	-- Pickup Quest
 				["sourceQuest"] = 53735,	-- The First to Fall
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["lvl"] = 120,
 			}),
 			q(53737, {	-- The Day Hope Died
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
-				["coord"] = { 12.7, 56.9, 95 },	-- Pickup Quest
+				["coord"] = { 12.7, 56.9, GHOSTLANDS },	-- Pickup Quest
 				["sourceQuest"] = 53736,	-- Lament of the Highborne
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["lvl"] = 120,
 			}),
 			q(53738, {	-- Defense of Qual'Danas
@@ -65,7 +65,7 @@ _.GearSets =
 				["coord"] = { 51.1, 68.8, EVERSONG_WOODS },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["lvl"] = 120,
 			}),
 			q(53725, {	-- A People Shattered

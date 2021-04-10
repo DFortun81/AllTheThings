@@ -328,12 +328,12 @@ _.Holidays = bubbleDown({["u"] = 21},
 									crit(5,  {	-- Eversong Woods
 										["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 94 },	-- Eversong Woods
+										["maps"] = { EVERSONG_WOODS },
 									}),
 									crit(6,  {	-- Ghostlands
-										["coord"] = { 47.0, 25.9, 95 },
+										["coord"] = { 47.0, 25.9, GHOSTLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 95 },	-- Ghostlands
+										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
 										["coord"] = { 54.5, 50.1, 25 },
@@ -754,12 +754,12 @@ _.Holidays = bubbleDown({["u"] = 21},
 									crit(5,  {	-- Eversong Woods
 										["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 94 },	-- Eversong Woods
+										["maps"] = { EVERSONG_WOODS },
 									}),
 									crit(6,  {	-- Ghostlands
-										["coord"] = { 46.6, 26.3, 95 },
+										["coord"] = { 46.6, 26.3, GHOSTLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 95 },	-- Ghostlands
+										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
 										["coord"] = { 54.7, 50.1, 25 },

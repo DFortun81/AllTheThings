@@ -201,6 +201,7 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 -- Outland & TBC Additions
 OUTLAND = 101;	-- Confirmed!
 EVERSONG_WOODS = 94;	-- Confirmed!
+GHOSTLANDS = 95;	-- Confirmed!
 
 ItemClassInfo = {
 	{

@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(95, {	-- Ghostlands
+		m(GHOSTLANDS, {
 			n(RARES, {
 				n(22062, {	-- Dr. Whitherlimb
 					["coords"] = {
-						{ 34.6, 47.6, 95 },
-						{ 40.6, 49.6, 95 },
-						{ 29.6, 88.8, 95 },
-						{ 35.6, 89.6, 95 },
+						{ 34.6, 47.6, GHOSTLANDS },
+						{ 40.6, 49.6, GHOSTLANDS },
+						{ 29.6, 88.8, GHOSTLANDS },
+						{ 35.6, 89.6, GHOSTLANDS },
 					},
 					["g"] = {
 						i(31270),	-- Banshee Rod

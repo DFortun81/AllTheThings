@@ -175,7 +175,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 			}),
 			q(11773, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
@@ -196,10 +196,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11774, {	-- Desecrate this Fire! — Ghostlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187962 },	-- Horde Bonfire
-				["coord"] = { 47.0, 25.9, 95 },
+				["coord"] = { 47.0, 25.9, GHOSTLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 			}),
 			q(13454, {	-- Desecrate this Fire! — Grizzly Hills
 				["isYearly"] = true,
@@ -1412,7 +1412,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 			}),
 			q(11849, {	-- Honor the Flame — Feralas
 				["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
@@ -1431,9 +1431,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11850, {	-- Honor the Flame — Ghostlands
 				["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 46.9, 26.3, 95 },
+				["coord"] = { 46.9, 26.3, GHOSTLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 			}),
 			q(13497, {	-- Honor the Flame — Grizzly Hills
 				["provider"] = { "n", 32813 },	-- Grizzly Hills Flame Keeper

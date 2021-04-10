@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
-		m(95, {	-- Ghostlands
+		m(GHOSTLANDS, {
 			n(VENDORS, {
 				n(16268, {	-- Eralan <Poison Supplies>
-					["coord"] = { 47.0, 34.2, 95 },
+					["coord"] = { 47.0, 34.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29583, {	-- Sinister Scimitar
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(16253, {	-- Master Chef Mouldier <Cooking Trainer & Supplies>
-					["coord"] = { 48.4, 31.0, 95 },
+					["coord"] = { 48.4, 31.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27687),	-- Recipe: Bat Bites
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(16528, {	-- Provisioner Vredigar
-					["coord"] = { 47.6, 32.2, 95 },
+					["coord"] = { 47.6, 32.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22986),	-- Apothecary's Robe
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(16224, {	-- Rathis Tomber <Trade Supplies>
-					["coord"] = { 47.2, 28.6, 95 },
+					["coord"] = { 47.2, 28.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5771, {	-- Pattern: Red Linen Bag

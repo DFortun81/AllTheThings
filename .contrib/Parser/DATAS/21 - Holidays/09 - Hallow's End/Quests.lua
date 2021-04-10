@@ -721,7 +721,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isYearly"] = true,
 				["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -730,7 +730,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isYearly"] = true,
 				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -810,7 +810,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isYearly"] = true,
 				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2179,7 +2179,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["coord"] = { 47.2, 46.6, EVERSONG_WOODS },	-- Eversong Woods
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
