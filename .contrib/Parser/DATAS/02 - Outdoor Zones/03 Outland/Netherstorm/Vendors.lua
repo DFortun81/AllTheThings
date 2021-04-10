@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(109, {	-- Netherstorm
+		m(NETHERSTORM, {
 			n(VENDORS, {
 				n(19540,  {	-- Asarnan <Enchanting Trainer>
-					["coord"] = { 44.2, 33.6, 109 },
+					["coord"] = { 44.2, 33.6, NETHERSTORM },
 					["g"] = {
 						i(20753),    -- Formula: Lesser Wizard Oil
 						i(20752),    -- Formula: Minor Mana Oil
@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
-					["coord"] = { 33.2, 64.0, 109 },
+					["coord"] = { 33.2, 64.0, NETHERSTORM },
 					["g"] = {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
@@ -96,7 +96,7 @@ _.Zones =
 				}),
 				n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 33.2, 64.0, 109 },
+					["coord"] = { 33.2, 64.0, NETHERSTORM },
 					["g"] = {
 						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -623,7 +623,7 @@ _.Zones =
 					},
 				}),
 				n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
-					["coord"] = { 44.0, 36.6, 109 },
+					["coord"] = { 44.0, 36.6, NETHERSTORM },
 					["g"] = {
 						i(29380, {	-- Ethereum Phase Blade
 							["isLimited"] = true,
@@ -647,7 +647,7 @@ _.Zones =
 					},
 				}),
 				n(19537,  {	-- Dealer Malij <Enchanting Supplies>
-					["coord"] = { 44.2, 34.0, 109 },
+					["coord"] = { 44.2, 34.0, NETHERSTORM },
 					["g"] = {
 						i(20753),    -- Formula: Lesser Wizard Oil
 						i(20752),    -- Formula: Minor Mana Oil
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				n(20980,  {	-- Dealer Rashaad <Exotic Creatures>
-					["coord"] = { 43.4, 35.2, 109 },
+					["coord"] = { 43.4, 35.2, NETHERSTORM },
 					["g"] = {
 						i(29958),	-- Blue Dragonhawk Hatchling (PET!)
 						i(29364),	-- Brown Rabbit Crate (PET!)
@@ -695,7 +695,7 @@ _.Zones =
 				}),
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
-					["coord"] = { 33.0, 64.0, 109 },
+					["coord"] = { 33.0, 64.0, NETHERSTORM },
 					["g"] = {
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
@@ -800,19 +800,19 @@ _.Zones =
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 33.0, 64.2, 109 },
+					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["sym"] = { {"sub", "pvp_gear_base", -10003, -665, -661 }, },	-- Merciless Gladiator: Season 2 Gladiator Gear
 				}),
 				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
 					["requireSkill"] = 20222,	-- Goblin Engineering
 					["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
-					["coord"] = { 32.9, 63.7, 109 },
+					["coord"] = { 32.9, 63.7, NETHERSTORM },
 					["g"] = {
 						recipe(36954),	-- Dimensional Ripper - Area 52
 					},
 				}),
 				n(20242,  {	-- Karaaz <Consortium Quartermaster>
-					["coord"] = { 43.6, 34.4, 109 },
+					["coord"] = { 43.6, 34.4, NETHERSTORM },
 					["g"] = {
 						i(29115),	-- Consortium Blaster
 						i(31776),	-- Consortium Tabard
@@ -862,7 +862,7 @@ _.Zones =
 				}),
 				n(54650,  {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 33.0, 64.2, 109 },
+					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["g"] = {
 						i(146615, {	-- Gladiator's Satin Armor
 							["classes"] = { PRIEST },
@@ -1184,7 +1184,7 @@ _.Zones =
 				}),
 				n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 33.0, 64.2, 109 },
+					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["g"] = {
 						i(146649),	-- Arsenal: Vengeful Gladiator's Weapons
 						i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
@@ -1484,7 +1484,7 @@ _.Zones =
 				}),
 				n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
-					["coord"] = { 33.0, 64.0, 109 },
+					["coord"] = { 33.0, 64.0, NETHERSTORM },
 					["g"] = {
 						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 						i(77673),	-- Replica Field Marshal's Chain Spaulders
@@ -1564,7 +1564,7 @@ _.Zones =
 				}),
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
-					["coord"] = { 33.0, 64.0, 109 },
+					["coord"] = { 33.0, 64.0, NETHERSTORM },
 					["g"] = {
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
 						i(77880),	-- Replica Warlord's Chain Shoulders
@@ -1642,7 +1642,7 @@ _.Zones =
 				}),
 				n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
-					["coord"] = { 33.0, 64.2, 109 },
+					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["g"] = {
 						i(77900),	-- Replica Warlord's Satin Cowl
 						i(77874),	-- Replica Warlord's Dragonhide Helmet
@@ -1748,7 +1748,7 @@ _.Zones =
 					},
 				}),
 				n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
-					["coord"] = { 34.6, 37.8, 109 },
+					["coord"] = { 34.6, 37.8, NETHERSTORM },
 					["g"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,

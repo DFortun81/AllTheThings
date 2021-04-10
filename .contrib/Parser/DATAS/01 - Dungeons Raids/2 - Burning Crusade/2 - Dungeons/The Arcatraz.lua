@@ -10,13 +10,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			270,	-- Stasis Block: Maximus
 			271,	-- Containment Core
 		},
-		["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
+		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["g"] = {
 			n(QUESTS, {
 				q(29675, {	-- Hey There Dalliah
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 74.4, 57.7, 109 },	-- The Arcatraz, Netherstorm
+					["coord"] = { 74.4, 57.7, NETHERSTORM },	-- The Arcatraz, Netherstorm
 				}),
 				q(29681, {	-- Maximum Security Breakout
 					["sourceQuest"] = 29675,	-- Hey There Dalliah

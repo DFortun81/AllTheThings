@@ -207,6 +207,7 @@ SILVERMOON_CITY = 110;	-- Confirmed!
 HELLFIRE_PENINSULA = 100;	-- Confirmed!
 ZANGARMARSH = 102;	-- Confirmed!
 NAGRAND = 107;	-- Confirmed!
+NETHERSTORM = 109;	-- Confirmed!
 SHATTRATH_CITY = 111;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 

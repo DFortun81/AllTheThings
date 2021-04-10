@@ -201,9 +201,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 31.0, 63.0, 109 },
+										["coord"] = { 31.0, 63.0, NETHERSTORM },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
 										["coord"] = { 40.0, 55.0, 104 },
@@ -471,9 +471,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 32.3, 68.4, 109 },
+										["coord"] = { 32.3, 68.4, NETHERSTORM },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
 										["coord"] = { 33.6, 30.3, 104 },
@@ -897,9 +897,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 32.0, 68.0, 109 },
+										["coord"] = { 32.0, 68.0, NETHERSTORM },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
 										["coord"] = { 33.0, 30.0, 104 },
@@ -1177,9 +1177,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 31.1, 62.7, 109 },
+										["coord"] = { 31.1, 62.7, NETHERSTORM },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
 										["coord"] = { 39.6, 54.3, 104 },

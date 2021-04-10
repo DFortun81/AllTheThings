@@ -86,7 +86,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					84,  -- Stormwind City
 					89,  -- Darnassus
 					103, -- The Exodar
-					109, -- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
@@ -112,7 +112,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					88,  -- Thunder Bluff
 					90,  -- Undercity
 					94,  -- Eversong Woods
-					109, -- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
@@ -1243,16 +1243,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12407, {	-- Candy Bucket — Netherstorm, Area 52, neutral
 				["isYearly"] = true,
-				["coord"] = { 32.0, 64.4, 109 },
-				["maps"] = { 109 },	-- Netherstorm
+				["coord"] = { 32.0, 64.4, NETHERSTORM },
+				["maps"] = { NETHERSTORM },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12408, {	-- Candy Bucket — Netherstorm, The Stormspire, neutral
 				["isYearly"] = true,
-				["coord"] = { 43.4, 36.1, 109 },
-				["maps"] = { 109 },	-- Netherstorm
+				["coord"] = { 43.4, 36.1, NETHERSTORM },
+				["maps"] = { NETHERSTORM },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2088,7 +2088,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					84,  -- Stormwind City
 					89,  -- Darnassus
 					103, -- The Exodar
-					109, -- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
@@ -2279,7 +2279,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					88,  -- Thunder Bluff
 					90,  -- Undercity
 					94,  -- Eversong Woods
-					109, -- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn

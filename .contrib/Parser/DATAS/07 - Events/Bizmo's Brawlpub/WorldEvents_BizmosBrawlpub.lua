@@ -141,9 +141,9 @@ _.WorldEvents =
 					["u"] = REMOVED_FROM_GAME,	-- whole file is marked REMOVED_FROM_GAME but had to put this here to make it stop showing up in Netherstorm minilist
 					["provider"] = { "n", 150320 },	-- Bizmo
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
-					["coord"] = { 31.1, 66.5, 109 },
+					["coord"] = { 31.1, 66.5, NETHERSTORM },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 109 },	-- Netherstorm
+					["maps"] = { NETHERSTORM },
 					["lvl"] = 120,
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)

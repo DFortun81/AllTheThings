@@ -25,7 +25,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					87,		-- Ironforge
 					89,		-- Darnassus
 					103,	-- The Exodar
-					109,	-- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
@@ -193,7 +193,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					94,		-- Eversong Woods
-					109,	-- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)

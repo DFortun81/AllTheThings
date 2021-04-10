@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(109, {	-- Netherstorm
+		m(NETHERSTORM, {
 			n(ACHIEVEMENTS, {
 				ach(1194, {		-- Into the Nether
 					["g"] = {

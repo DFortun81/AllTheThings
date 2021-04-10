@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(257, { 	-- The Botanica
 		["lvl"] = 65,
 		["mapID"] = 266,
-		["coord"] = { 71.74, 54.95, 109 },	-- The Botanica, Netherstorm
+		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
 		["groups"] = {
 			n(QUESTS, {
 				q(29669, {	-- A Most Somber Task

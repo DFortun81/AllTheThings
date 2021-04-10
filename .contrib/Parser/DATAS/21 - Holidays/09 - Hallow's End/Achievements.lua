@@ -778,12 +778,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { NAGRAND },
 										}),
 										crit(7,  {	-- Netherstorm, Area 52
-											["coord"] = { 32.0, 64.4, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 32.0, 64.4, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(8,  {	-- Netherstorm, The Stormspire
-											["coord"] = { 43.4, 36.1, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 43.4, 36.1, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(9,  {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {
@@ -849,12 +849,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { NAGRAND },
 										}),
 										crit(7, {	-- Netherstorm, Area 52
-											["coord"] = { 32.0, 64.4, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 32.0, 64.4, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(8, {	-- Netherstorm, The Stormspire
-											["coord"] = { 43.4, 36.1, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 43.4, 36.1, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {

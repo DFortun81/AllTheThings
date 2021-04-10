@@ -260,10 +260,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11799, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
 				["provider"] = { "o", 187949 },	-- Horde Bonfire
-				["coord"] = { 32.3, 68.4, 109 },
+				["coord"] = { 32.3, 68.4, NETHERSTORM },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(11783, {	-- Desecrate this Fire! — Northern Barrens
 				["isYearly"] = true,
@@ -670,10 +670,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11759, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
 				["provider"] = { "o", 187942 },	-- Alliance Bonfire
-				["coord"] = { 31.1, 62.7, 109 },
+				["coord"] = { 31.1, 62.7, NETHERSTORM },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
@@ -1100,9 +1100,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11830, {	-- Honor the Flame — Netherstorm
 				["provider"] = { "n", 25913 },	-- Netherstorm Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 31.0, 63.0, 109 },
+				["coord"] = { 31.0, 63.0, NETHERSTORM },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(28922, {	-- Honor the Flame — Northern Stranglethorn
 				["provider"] = { "n", 51574 },	-- Northern Stranglethorn Flame Warden
@@ -1494,9 +1494,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11835, {	-- Honor the Flame — Netherstorm
 				["provider"] = { "n", 25918 },	-- Netherstorm Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 32.0, 68.0, 109 },
+				["coord"] = { 32.0, 68.0, NETHERSTORM },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(11859, {	-- Honor the Flame — Northern Barrens
 				["provider"] = { "n", 25943 },	-- The Northern Barrens Flame Keeper
@@ -1929,7 +1929,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
 					108,	-- Terokkar Forest
-					109,	-- Netherstorm
+					NETHERSTORM,
 					SHATTRATH_CITY,
 					114,	-- Borean Tundra
 					115,	-- Dragonblight
@@ -2230,7 +2230,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					87,		-- Ironforge
 					89,		-- Darnassus
 					103,	-- The Exodar
-					109,	-- Netherstorm
+					NETHERSTORM,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
 					504,	-- Isle of Thunder
@@ -2255,7 +2255,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					94,		-- Eversong Woods
-					109,	-- Netherstorm
+					NETHERSTORM,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks

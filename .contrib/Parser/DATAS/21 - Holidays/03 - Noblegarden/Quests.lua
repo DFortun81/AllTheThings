@@ -73,9 +73,9 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 44.74, 52.77, 89 },	-- Darnassus [Night Elf]
 					{ 30.85, 72.17, 87 },	-- Ironforge [Dwarf]
 					{ 58.14, 49.35, 87 },	-- Ironforge [Gnome]
-					{ 32.29, 64.81, 109 },	-- Netherstorm [Goblin]
-					{ 32.92, 66.71, 109 },	-- Netherstorm [Goblin]
-					{ 33.83, 64.11, 109 },	-- Netherstorm [Goblin]
+					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
+					{ 32.92, 66.71, NETHERSTORM },	-- Goblin
+					{ 33.83, 64.11, NETHERSTORM },	-- Goblin
 					{ 67.53, 74.19, 10 },	-- Northern Barrens [Goblin]
 					{ 68.18, 71.37, 10 },	-- Northern Barrens [Goblin]
 					{ 69.06, 70.69, 10 },	-- Northern Barrens [Goblin]
@@ -109,7 +109,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					126,	-- Dalaran: Northrend
 					89,		-- Darnassus
 					87,		-- Ironforge
-					109,	-- Netherstorm
+					NETHERSTORM,
 					10,		-- Northern Barrens
 					SHATTRATH_CITY,
 					71,		-- Tanaris
@@ -136,9 +136,9 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
 					{ 50.79, 22.37, 125 },	-- Dalaran: Northrend [Blood Elf]
 					{ 62.62, 30.34, 125 },	-- Dalaran: Northrend [Blood Elf]
-					{ 32.29, 64.81, 109 },	-- Netherstorm [Goblin]
-					{ 32.92, 66.71, 109 },	-- Netherstorm [Goblin]
-					{ 33.83, 64.11, 109 },	-- Netherstorm [Goblin]
+					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
+					{ 32.92, 66.71, NETHERSTORM },	-- Goblin
+					{ 33.83, 64.11, NETHERSTORM },	-- Goblin
 					{ 67.53, 74.19, 10 },	-- Northern Barrens [Goblin]
 					{ 68.18, 71.37, 10 },	-- Northern Barrens [Goblin]
 					{ 69.06, 70.69, 10 },	-- Northern Barrens [Goblin]
@@ -179,7 +179,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["maps"] = {
 					125,	-- Dalaran: Northrend
 					126,	-- Dalaran: Northrend
-					109,	-- Netherstorm
+					NETHERSTORM,
 					10,		-- Northern Barrens
 					85,		-- Orgrimmar
 					86,		-- Orgrimmar
