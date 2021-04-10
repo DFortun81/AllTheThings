@@ -1519,6 +1519,7 @@ _.ExpansionFeatures =
 							}),
 							n(-946, {	-- Tier 4: Teachings of Wisdom
 								n(-908, {	-- Rewards
+									i(180871),	-- Indigo
 								}),
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility

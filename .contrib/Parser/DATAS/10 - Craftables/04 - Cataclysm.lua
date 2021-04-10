@@ -314,9 +314,7 @@ _.Craftables =
 				i(52486, {	-- Jeweler's Sapphire Monocle
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
-				i(52489, {	-- Rhinestone Sunglasses
-					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-				}),
+				i(52489),  	-- Rhinestone Sunglasses
 			}),
 			filter(51, {	-- Neck
 				i(52307, {	-- Alicite Pendant
