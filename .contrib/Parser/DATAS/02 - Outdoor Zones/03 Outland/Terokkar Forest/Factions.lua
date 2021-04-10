@@ -41,7 +41,7 @@ _.Zones =
 							}),
 							q(11028, {	-- Countdown to Doom
 								["provider"] = { "n", 22292 },	-- Rilak the Redeemed
-								["coord"] = { 52.6, 21.0, 111 },
+								["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 								["sourceQuest"] = 11024,	-- An Ally in Lower City
 							}),
 							q(11085, {	-- Escape from Skettis

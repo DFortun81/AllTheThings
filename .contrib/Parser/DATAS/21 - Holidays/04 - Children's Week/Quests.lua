@@ -25,7 +25,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							100,	-- Hellfire Peninsula
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -43,7 +43,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							100,	-- Hellfire Peninsula
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -302,7 +302,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							108,	-- Terrokar Forest
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
@@ -318,11 +318,9 @@ _.Holidays =
 							10968,	-- Call on the Farseer
 						},
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Elekk Training Collar
@@ -397,11 +395,9 @@ _.Holidays =
 							10963,	-- Time to Visit the Caverns
 						},
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							{	-- Elekk Training Collar
@@ -639,7 +635,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							103,	-- The Exodar
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -649,11 +645,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -691,11 +685,9 @@ _.Holidays =
 						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
 					},
@@ -763,7 +755,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							102,	-- Zangarmarsh
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -823,7 +815,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							107,	-- Nagrand [Outlands]
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -995,8 +987,8 @@ _.Holidays =
 							{ 76.61, 81.23, SILVERMOON_CITY },
 						},
 						["maps"] = {
-							111,	-- Shattrath City
 							SILVERMOON_CITY,
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1509,7 +1501,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							103,	-- The Exodar
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1594,7 +1586,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							71,		-- Tanaris
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1617,7 +1609,7 @@ _.Holidays =
 						["maps"] = {
 							71,		-- Tanaris
 							75,		-- Tanaris: Caverns of Time
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1639,7 +1631,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							107,	-- Nagrand [Outlands]
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

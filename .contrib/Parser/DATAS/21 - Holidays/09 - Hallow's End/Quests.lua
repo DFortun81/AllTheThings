@@ -87,7 +87,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					89,  -- Darnassus
 					103, -- The Exodar
 					109, -- Netherstorm
-					111, -- Shattrath City
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -113,7 +113,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					90,  -- Undercity
 					94,  -- Eversong Woods
 					109, -- Netherstorm
-					111, -- Shattrath City
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -1368,10 +1368,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(12404, {	-- Candy Bucket — Shattrath City, Aldor Rise or Scryer's Tier, neutral
 				["isYearly"] = true,
 				["coords"] = {
-					{ 56.2, 81.8, 111 },	-- Scryer
-					{ 28.1, 49.0, 111 },	-- Aldor
+					{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+					{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 				},
-				["maps"] = { 111 },	-- Shattrath City
+				["maps"] = { SHATTRATH_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2089,7 +2089,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					89,  -- Darnassus
 					103, -- The Exodar
 					109, -- Netherstorm
-					111, -- Shattrath City
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -2280,7 +2280,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					90,  -- Undercity
 					94,  -- Eversong Woods
 					109, -- Netherstorm
-					111, -- Shattrath City
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend

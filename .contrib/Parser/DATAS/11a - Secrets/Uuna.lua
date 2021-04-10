@@ -11,7 +11,7 @@ _.Secrets =
 		["maps"] = {
 			33,
 			36,
-			111,
+			SHATTRATH_CITY,
 			115,
 			198,
 			379,
@@ -47,7 +47,7 @@ _.Secrets =
 				["sourceQuests"] = { 50098 },	-- Steps 1-4: A New Friend
 				["description"] = "Take Uuna to A'dal in Shattrath City.  The light of the Naaru is too bright, and she will run away.",
 				["name"] = "Step 5: Bright Lights",
-				["coord"] = { 54.0, 44.7, 111 },
+				["coord"] = { 54.0, 44.7, SHATTRATH_CITY },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50103, {	-- Step 6: Wanna be Friends?

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(111, {	-- Shattrath City
+		m(SHATTRATH_CITY, {
 			n(FACTIONS, {
 				faction(1011, {	-- Lower City
 					["crs"] = { 21655 },	-- Nakodu <Lower City Quartermaster>
@@ -13,7 +13,7 @@ _.Zones =
 						n(QUESTS, {
 							q(10917,  {  -- The Outcast's Plight
 								["provider"] = { "n", 22429 },	-- Vekax
-								["coord"] = { 47.7, 18.8, 111 },
+								["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -32,7 +32,7 @@ _.Zones =
 								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
 								["repeatable"] = true,
 								["provider"] = { "n", 22429 },	-- Vekax
-								["coord"] = { 47.7, 18.8, 111 },
+								["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 								["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
@@ -51,7 +51,7 @@ _.Zones =
 								["minReputation"] = { 1011, HONORED },
 								["repeatable"] = true,
 								["provider"] = { "n", 22429 },	-- Vekax
-								["coord"] = { 47.7, 18.8, 111 },
+								["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 								["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
@@ -69,7 +69,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(21655, {	-- Nakodu <Lower City Quartermaster>
-								["coord" ] = { 62.6, 69.0, 111 },
+								["coord" ] = { 62.6, 69.0, SHATTRATH_CITY },
 								["g"] = {
 									i(35405),	-- Crusader's Ornamented Leggings
 									i(35412),	-- Crusader's Scaled Chestpiece
@@ -111,7 +111,7 @@ _.Zones =
 						q(11109, {	-- Jorus the Cobalt Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
 							},
@@ -119,7 +119,7 @@ _.Zones =
 						q(11110, {	-- Malfas the Purple Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32860),	-- Reins of the Purple Netherwing Drake Mount
 							},
@@ -127,7 +127,7 @@ _.Zones =
 						q(11111, {	-- Onyxien the Onyx Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
 							},
@@ -135,7 +135,7 @@ _.Zones =
 						q(11112, {	-- Suraku the Azure Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32858),	-- Reins of the Azure Netherwing Drake Mount
 							},
@@ -143,7 +143,7 @@ _.Zones =
 						q(11113, {	-- Voranaku the Violet Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32862),	-- Reins of the Violet Netherwing Drake Mount
 							},
@@ -151,7 +151,7 @@ _.Zones =
 						q(11114, {	-- Zoya the Veridian Netherwing Drake
 							-- ["provider"] = { "n",  },	-- 
 							["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-							-- ["coord"] = { , 111 },
+							-- ["coord"] = { , SHATTRATH_CITY },
 							["g"] = {
 								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
 							},
@@ -164,13 +164,13 @@ _.Zones =
 					["g"] = {
 						q(10984, {	-- Speak with the Ogre
 							["isBreadcrumb"] = true,
-							["coord"] = { 56.4, 49.2, 111 },
+							["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
 							["provider"] = { "n", 22497 },	-- V'eru
 						}),
 						q(10983, {	-- Mog'dorg the Wizened
 							["isBreadcrumb"] = true,
 							["sourceQuest"] = 10984,	-- Speak with the Ogre
-							["coord"] = { 65.0, 68.4, 111 },
+							["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
 							["provider"] = { "n", 22940 },	-- Grok
 						}),
 					},
@@ -180,12 +180,12 @@ _.Zones =
 					["crs"] = { 23367 },	-- Grella <Skyguard Quartermaster>
 					["g"] = {
 						q(11096, {	-- Threat from Above
-							["coord"] = { 64.0, 42.0, 111 },
+							["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
 							["provider"] = { "n", 23449 },	-- Yuula
 						}),
 						q(11098, {	-- To Skettis!
 							["sourceQuest"] = 11096,	-- Threat From Above
-							["coord"] = { 64.0, 42.0, 111 },
+							["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
 							["provider"] = { "n", 23449 },	-- Yuula
 						}),
 					},
@@ -211,12 +211,12 @@ _.Zones =
 							["sourceQuests"] = { 11534 },	-- Report to Nasuun
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
 							["isDaily"] = true,
-							["coord"] = { 49.8, 42.6, 111 },
+							["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(11514, {	-- Maintaining the Sunwell Portal
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
-							["coord"] = { 49.8, 42.6, 111 },
+							["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 							["repeatable"] = true,
 						}),
 					},
@@ -230,67 +230,67 @@ _.Zones =
 						n(QUESTS, {
 							q(10551, {	-- Allegiance to the Aldor
 								["sourceQuest"] = 10211,	-- City of Light
-								["coord"] = { 54.7, 44.3, 111 },
+								["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10554, {	-- Ishanah
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["coord"] = { 54.7, 44.3, 111 },
+								["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10021, {	-- Restoring the Light
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["coord"] = { 24.2, 29.8, 111 },
+								["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10325, {	-- Marks of Kil'jaeden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10327, {	-- Single Mark of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["repeatable"] = true,
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10326, {	-- More Marks of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["repeatable"] = true,
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10653, {	-- Marks of Sargeras
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10655, {	-- Single Mark of Sargeras
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 								["repeatable"] = true,
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10654, {	-- More Marks of Sargeras
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 								["repeatable"] = true,
-								["coord"] = { 30.7, 34.6, 111 },
+								["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10420, {	-- A Cleansing Light
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["coord"] = { 24.2, 29.8, 111 },
+								["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10421, {	-- Fel Armaments
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10420,	-- A Cleansing Light
 								["repeatable"] = true,
-								["coord"] = { 24.2, 29.8, 111 },
+								["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10020, {	-- A Cure for Zahlia
@@ -306,8 +306,8 @@ _.Zones =
 								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coords"] = {
-									{ 35.0, 32.6, 111 },
-									{ 47.4, 26.4, 111 },
+									{ 35.0, 32.6, SHATTRATH_CITY },
+									{ 47.4, 26.4, SHATTRATH_CITY },
 								},
 								["providers"] = {
 									{ "n", 23271 },	-- Vindicator Kaan
@@ -328,7 +328,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
-								["coord"] = { 23.6, 32.6, 111 },
+								["coord"] = { 23.6, 32.6, SHATTRATH_CITY },
 								["g"] = {
 									i(29093, {	-- Antlers of Malorne
 										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -588,7 +588,7 @@ _.Zones =
 								},
 							}),
 							n(23484, {	-- Haldor the Compulsive
-								["coord"] = { 48.0, 26.8, 111 },
+								["coord"] = { 48.0, 26.8, SHATTRATH_CITY },
 								["g"] = {
 									i(35717, {	-- Shattrath Flask of Blinding Light
 										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
@@ -611,7 +611,7 @@ _.Zones =
 								},
 							}),
 							n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
-								["coord"] = { 24.8, 27.0, 111 },
+								["coord"] = { 24.8, 27.0, SHATTRATH_CITY },
 								["g"] = {
 									i(30153, {	-- Breeches of the Avatar
 										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
@@ -871,7 +871,7 @@ _.Zones =
 								},
 							}),
 							n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
-								["coord"] = { 48.0, 26.6, 111 },
+								["coord"] = { 48.0, 26.6, SHATTRATH_CITY },
 								["g"] = {
 									i(31779),	-- Aldor Tabard
 									i(29129),	-- Anchorite's Robes
@@ -910,7 +910,7 @@ _.Zones =
 								},
 							}),
 							n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
-								["coord"] = { 48.6, 26.6, 111 },
+								["coord"] = { 48.6, 26.6, SHATTRATH_CITY },
 								["g"] = {
 									i(28886, {	-- Greater Inscription of Discipline
 										["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
@@ -950,70 +950,70 @@ _.Zones =
 						n(QUESTS, {
 							q(10552, {	-- Allegiance to the Scryers
 								["sourceQuest"] = 10211,	-- City of Light
-								["coord"] = { 54.7, 44.3, 111 },
+								["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10553, {	-- Voren'thal the Seer
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-								["coord"] = { 54.7, 44.3, 111 },
+								["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10412, {	-- Firewing Signets
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10414, {	-- Single Firewing Signet
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10412,	-- Firewing Signets
 								["repeatable"] = true,
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10415, {	-- More Firewing Signets
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10412,	-- Firewing Signets
 								["repeatable"] = true,
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10656, {	-- Sunfury Signets
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10659, {	-- Single Sunfury Signet
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10656,	-- Sunfury Signets
 								["repeatable"] = true,
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10658, {	-- More Sunfury Signets
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10656,	-- Sunfury Signets
 								["repeatable"] = true,
-								["coord"] = { 45.1, 81.4, 111 },
+								["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10416, {	-- Synthesis of Power
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-								["coord"] = { 42.6, 91.4, 111 },
+								["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18530 },	-- Voren'thal the Seer
 							}),
 							q(10419, {	-- Arcane Tomes
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10416,	-- Synthesis of Power
 								["repeatable"] = true,
-								["coord"] = { 42.6, 91.4, 111 },
+								["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 								["provider"] = { "n", 18530 },	-- Voren'thal the Seer
 							}),
 							q(11039, {	-- Report to Spymaster Thalodien
 								["isBreadcrumb"] = true,	-- for Manaforge B'naar
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 								["coords"] = {
-									{ 44.6, 76.2, 111 },
-									{ 60.6, 63.2, 111 },
+									{ 44.6, 76.2, SHATTRATH_CITY },
+									{ 60.6, 63.2, SHATTRATH_CITY },
 								},
 								["providers"] = {
 									{ "n", 23273 }, 	-- Arcanist Raestan
@@ -1035,13 +1035,13 @@ _.Zones =
 								["minReputation"] = { 934, FRIENDLY },
 								["isBreadcrumb"] = true,
 								["provider"] = { "n", 18594 },	-- Dathris Sunstriker
-								["coord"] = { 54.6, 80.8, 111 },
+								["coord"] = { 54.6, 80.8, SHATTRATH_CITY },
 								["lvl"] = 70,
 							}),
 						}),
 						n(VENDORS, {
 							n(23483, {	-- Arcanist Xorith
-								["coord"] = { 60.6, 63.6, 111 },
+								["coord"] = { 60.6, 63.6, SHATTRATH_CITY },
 								["g"] = {
 									i(35717, {	-- Shattrath Flask of Blinding Light
 										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
@@ -1064,7 +1064,7 @@ _.Zones =
 								},
 							}),
 							n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
-								["coord"] = { 42.6, 90.6, 111 },
+								["coord"] = { 42.6, 90.6, SHATTRATH_CITY },
 								["g"] = {
 									i(29093, {	-- Antlers of Malorne
 										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -1324,7 +1324,7 @@ _.Zones =
 								},
 							}),
 							n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
-								["coord" ] = { 60.6, 64.2, 111 },
+								["coord" ] = { 60.6, 64.2, SHATTRATH_CITY },
 								["g"] = {
 									i(23133),	-- Design: Brilliant Blood Garnet
 									i(24176),	-- Design: Pendant of Withering
@@ -1352,7 +1352,7 @@ _.Zones =
 								},
 							}),
 							n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
-								["coord"] = { 60.0, 64.6, 111 },
+								["coord"] = { 60.0, 64.6, SHATTRATH_CITY },
 								["g"] = {
 									i(28910, {	-- Greater Inscription of the Blade
 										["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
@@ -1382,7 +1382,7 @@ _.Zones =
 							}),
 							n(19238, {	-- Urumir Stavebright <Staff Vendor>
 								["minReputation"] = { 934, NEUTRAL },
-								["coord"] = { 49.6, 79.0, 111 },
+								["coord"] = { 49.6, 79.0, SHATTRATH_CITY },
 								["g"] = {
 									i(12252, {	-- Staff of Protection
 										["isLimited"] = true,
@@ -1390,7 +1390,7 @@ _.Zones =
 								},
 							}),
 							n(21905,  {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
-								["coord"] = {44.8, 91.6, 111 },
+								["coord"] = {44.8, 91.6, SHATTRATH_CITY },
 								["g"] = {
 									i(30153, {	-- Breeches of the Avatar
 										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
@@ -1669,7 +1669,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(21432, {	-- Almaador <Sha'tari Quartermaster>
-								["coord"] = { 51.6, 41.6, 111 },
+								["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
 								["g"] = {
 									i(29177),	-- Adal's Command
 									i(29180),	-- Blessed Scale Girdle

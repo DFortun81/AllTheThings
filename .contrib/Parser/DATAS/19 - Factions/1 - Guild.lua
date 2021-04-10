@@ -14,7 +14,7 @@ _.Factions =
 			{ 53.6, 69.6, 103 },	-- Nuri [The Exodar]
 			{ 70.2, 14.7, 1161 },	-- Perry Charlton [Boralus]
 			{ 37.1, 63.3, 88 },		-- Randah Songhorn [Thunder Bluff]
-			{ 58.7, 46.4, 111 },	-- Riha [Shattrath]
+			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha [Shattrath]
 			{ 64.1, 77.0, 84 },		-- Shay Pressler [Stormwind]
 			{ 36.3, 85.7, 87 },		-- Steeg Haskell [Ironforge]
 			{ 64.7, 37.6, 89 },		-- Velia Moonbow [Darnassus]
@@ -28,7 +28,7 @@ _.Factions =
 			85,		-- Orgrimmar
 			86,		-- Orgrimmar: The Drag
 			103,	-- The Exodar
-			111,	-- Shattrath
+			SHATTRATH_CITY,
 			SILVERMOON_CITY,
 			84,		-- Stormwind
 			88,		-- Thunder Bluff

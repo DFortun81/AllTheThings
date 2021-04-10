@@ -122,7 +122,7 @@ _.Achievements =
 					["coord"] = { 65.0, 42.7, 418 },
 				}),
 				crit(25, {	-- Morulu The Elder (Shattrath City)
-					["coord"] = { 59.0, 70.0, 111 },
+					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				}),
 				crit(26, {	-- Narrok (Nagrand, Outland)
 					["coord"] = { 61.0, 49.4, 107 },

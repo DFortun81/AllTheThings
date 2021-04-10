@@ -166,7 +166,7 @@ _.Zones =
 				}),
 				q(10167, {	-- Auchindoun...
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 53.9, 44.8, 111 },
+					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10102,	-- A Secret Revealed
 				}),
@@ -275,7 +275,7 @@ _.Zones =
 				}),
 				q(10009, {	-- Crackin' Some Skulls
 					["provider"] = { "n", 18584 },	-- Sal'salabim
-					["coord"] = { 77.2, 34.8, 111 },
+					["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 					["sourceQuest"] = 10004,	-- Patience and Understanding
 				}),
 				q(29571, {	-- Defending the Wilds
@@ -419,7 +419,7 @@ _.Zones =
 				}),
 				q(10010, {	-- It's Just That Easy?
 					["provider"] = { "n", 18584 },	-- Sal'salabim
-					["coord"] = { 77.2, 34.8, 111 },
+					["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 					["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 				}),
 				q(11048, {	-- Kroghan's Report

@@ -109,8 +109,8 @@ _.Holidays =
 					},
 				}),
 				n(150945, {	-- Selis Silksong
-					["coord"] = { 67.7, 27.7, 111 },
-					["maps"] = { 111 },	-- Shattrath
+					["coord"] = { 67.7, 27.7, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY },
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167222)),	-- Selis' Silk Shirt

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(111, {	-- Shattrath City
+		m(SHATTRATH_CITY, {
 			n(VENDORS, {
 				n(19662,  {	-- Aaron Hollman <Blacksmithing Supplies>
-					["coord" ] = { 64.0, 71.8, 111 },
+					["coord" ] = { 64.0, 71.8, SHATTRATH_CITY },
 					["g"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["isLimited"] = true,
@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				n(19043,  {	-- Ahemen <Staff Vendor>
 					-- may require neutral (not aligned with alder/scryers) or positive reputation with aldor to interact with this vendor -- need to test
-					["coord"] = { 34.2, 20.0, 111 },
+					["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
 					["g"] = {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,
@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				n(22212,  {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
-					["coord"] = { 66.6, 68.6, 111 },
+					["coord"] = { 66.6, 68.6, SHATTRATH_CITY },
 					["g"] = {
 						i(21915),	-- Pattern: Ebon Shadowbag
 						i(21914),	-- Pattern: Frozen Shadoweave Boots
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(27667,  {	-- Anwehu <Weapons & Armorsmith>
-					["coord"] = { 48.8, 42.8, 111 },
+					["coord"] = { 48.8, 42.8, SHATTRATH_CITY },
 					["g"] = {
 						i(34925),	-- Adorned Supernal Legwraps
 						i(34935),	-- Aftershock Waistguard
@@ -109,7 +109,7 @@ _.Zones =
 					},
 				}),
 				n(19196,  {	-- Cro Threadstrong <Leatherworking Supplies>
-					["coord"] = { 67.2, 67.6, 111 },
+					["coord"] = { 67.2, 67.6, SHATTRATH_CITY },
 					["g"] = {
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
@@ -118,7 +118,7 @@ _.Zones =
 					},
 				}),
 				n(19213,  {	-- Eiin <Specialty Tailoring Supplies>
-					["coord"] = { 66.2, 68.8, 111 },
+					["coord"] = { 66.2, 68.8, SHATTRATH_CITY },
 					["g"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21893),	-- Pattern: Imbued Netherweave Bag
@@ -127,7 +127,7 @@ _.Zones =
 					},
 				}),
 				n(33633,  {	-- Enchantress Andiala <Enchanting Trainer>
-					["coord"] = { 56.2, 74.4, 111 },
+					["coord"] = { 56.2, 74.4, SHATTRATH_CITY },
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -136,7 +136,7 @@ _.Zones =
 					},
 				}),
 				n(18525,  {	-- G'eras
-					["coord"] = { 50.8, 42.4, 111 },
+					["coord"] = { 50.8, 42.4, SHATTRATH_CITY },
 					["g"] = {
 						i(33585), 	-- Achromic Trousers of the Naaru
 						i(33810), 	-- Amani Mask of Death
@@ -266,7 +266,7 @@ _.Zones =
 					},
 				}),
 				n(22213,  {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
-					["coord"] = { 66.6, 68.6, 111 },
+					["coord"] = { 66.6, 68.6, SHATTRATH_CITY },
 					["g"] = {
 						i(24316),	-- Pattern: Spellcloth
 						i(21911),	-- Pattern: Spellfire Bag
@@ -276,7 +276,7 @@ _.Zones =
 					},
 				}),
 				n(18756,  {	-- Haris Pilton <Socialite>
-					["coord"] = { 75.6, 30.6, 111 },
+					["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 					["g"] = {
 						i(38082, {	-- "Gigantique" Bag
 							["cost"] = 12000000,	-- 1,200g
@@ -293,7 +293,7 @@ _.Zones =
 					},
 				}),
 				n(19065,  {	-- Inessera <Jewelcrafting Supplies Vendor>
-					["coord"] = { 35.6, 19.8, 111 },
+					["coord"] = { 35.6, 19.8, SHATTRATH_CITY },
 					["g"] = {
 						i(47010, {	-- Design: Accurate Dreadstone
 							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
@@ -542,14 +542,14 @@ _.Zones =
 					},
 				}),
 				n(19195,  {	-- Jim Saltit <Cooking Supplies>
-					["coord"] = { 63.4, 68.6, 111 },
+					["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
 				n(33637,  {	-- Kirembri Silvermane <Jewelcrafting Trainer>
-					["coord"] = { 58.6, 75.2, 111 },
+					["coord"] = { 58.6, 75.2, SHATTRATH_CITY },
 					["g"] = {
 						i(47010, {	-- Design: Accurate Dreadstone
 							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
@@ -799,7 +799,7 @@ _.Zones =
 				}),
 				n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 					["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
-					["coord"] = { 64.2, 71.4, 111 },
+					["coord"] = { 64.2, 71.4, SHATTRATH_CITY },
 					["g"] = {
 						i(142287),	-- Plans: Great Earthforged Hammer
 						i(142286),	-- Plans: Lavaforged Warhammer
@@ -810,7 +810,7 @@ _.Zones =
 					},
 				}),
 				n(19663,  {	-- Madame Ruby <Enchanting Supplies>
-					["coord"] = { 63.6, 70.0, 111 },
+					["coord"] = { 63.6, 70.0, SHATTRATH_CITY },
 					["g"] = {
 						i(28282, {	-- Formula: Enchant Shield - Major Stamina
 							["isLimited"] = true,
@@ -831,7 +831,7 @@ _.Zones =
 					},
 				}),
 				n(22208,  {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
-					["coord"] = { 66.4, 69.0, 111 },
+					["coord"] = { 66.4, 69.0, SHATTRATH_CITY },
 					["g"] = {
 						i(21895),	-- Pattern: Primal Mooncloth
 						i(21919),	-- Pattern: Primal Mooncloth Bag
@@ -841,7 +841,7 @@ _.Zones =
 					},
 				}),
 				n(33680,  {	-- Nemiha <Jewelcrafting Trainer>
-					["coord"] = { 36.2, 47.0, 111 },
+					["coord"] = { 36.2, 47.0, SHATTRATH_CITY },
 					["g"] = {
 						i(47010, {	-- Design: Accurate Dreadstone
 							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
@@ -1090,7 +1090,7 @@ _.Zones =
 					},
 				}),
 				n(27666,  {	-- Ontuvo <Jewelcrafting Supplies>
-					["coord"] = { 48.8, 41.8, 111 },
+					["coord"] = { 48.8, 41.8, SHATTRATH_CITY },
 					["g"] = {
 						i(35244),	-- Design: Bold Crimson Spinel
 						i(35248),	-- Design: Brilliant Crimson Spinel
@@ -1173,7 +1173,7 @@ _.Zones =
 					},
 				}),
 				n(19074,  {	-- Skreah <Alchemy Supplies>
-					["coord"] = { 45.8, 20.8, 111 },
+					["coord"] = { 45.8, 20.8, SHATTRATH_CITY },
 					["g"] = {
 						i(23574, {	-- Recipe: Transmute Primal Might
 							["isLimited"] = true,
@@ -1181,7 +1181,7 @@ _.Zones =
 					},
 				}),
 				n(19661,  {	-- Viggz Shinesparked <Engineering Supplies>
-					["coord"] = { 64.8, 69.6, 111 },
+					["coord"] = { 64.8, 69.6, SHATTRATH_CITY },
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["isLimited"] = true,
@@ -1193,7 +1193,7 @@ _.Zones =
 					},
 				}),
 				n(18484,  {	-- Wind Trader Lathrai
-					["coord"] = { 72.6, 31.6, 111 },
+					["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 					["g"] = {
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["isLimited"] = true,
@@ -1204,7 +1204,7 @@ _.Zones =
 					},
 				}),
 				n(19234,  {	-- Yurial Soulwater <Enchanting Supplies>
-					["coord"] = { 44.6, 96.8, 111 },
+					["coord"] = { 44.6, 96.8, SHATTRATH_CITY },
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -1213,7 +1213,7 @@ _.Zones =
 					},
 				}),
 				n(33676,  {	-- Zurii <Enchanting Trainer>
-					["coord"] = { 36.4, 44.6, 111 },
+					["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil

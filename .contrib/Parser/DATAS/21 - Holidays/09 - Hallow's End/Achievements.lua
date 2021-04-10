@@ -798,10 +798,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {
-												{ 56.2, 81.8, 111 },	-- Scryer
-												{ 28.1, 49.0, 111 },	-- Aldor
+												{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+												{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 											},
-											["maps"] = { 111 },	-- Shattrath City
+											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Allerian Stronghold
 											["coord"] = { 56.6, 53.2, 108 },
@@ -869,10 +869,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {
-												{ 56.2, 81.8, 111 },	-- Scryer
-												{ 28.1, 49.0, 111 },	-- Aldor
+												{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+												{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 											},
-											["maps"] = { 111 },	-- Shattrath City
+											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Stonebreaker Hold
 											["coord"] = { 48.8, 45.2, 108 },

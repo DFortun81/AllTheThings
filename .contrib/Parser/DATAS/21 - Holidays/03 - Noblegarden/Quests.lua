@@ -79,12 +79,12 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 67.53, 74.19, 10 },	-- Northern Barrens [Goblin]
 					{ 68.18, 71.37, 10 },	-- Northern Barrens [Goblin]
 					{ 69.06, 70.69, 10 },	-- Northern Barrens [Goblin]
-					{ 49.11, 31.48, 111 },	-- Shattrath City [Goblin]
-					{ 53.09, 50.95, 111 },	-- Shattrath City [Goblin]
-					{ 54.87, 38.59, 111 },	-- Shattrath City [Goblin]
-					{ 58.11, 46.17, 111 },	-- Shattrath City [Goblin]
-					{ 58.96, 57.96, 111 },	-- Shattrath City [Goblin]
-					{ 63.52, 39.64, 111 },	-- Shattrath City [Goblin]
+					{ 49.11, 31.48, SHATTRATH_CITY },	-- Goblin
+					{ 53.09, 50.95, SHATTRATH_CITY },	-- Goblin
+					{ 54.87, 38.59, SHATTRATH_CITY },	-- Goblin
+					{ 58.11, 46.17, SHATTRATH_CITY },	-- Goblin
+					{ 58.96, 57.96, SHATTRATH_CITY },	-- Goblin
+					{ 63.52, 39.64, SHATTRATH_CITY },	-- Goblin
 					{ 49.73, 90.03, 84 },	-- Stormwind City [Human]
 					{ 61.68, 74.19, 84 },	-- Stormwind City [Human]
 					{ 63.77, 32.04, 84 },	-- Stormwind City [Human]
@@ -111,7 +111,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					87,		-- Ironforge
 					109,	-- Netherstorm
 					10,		-- Northern Barrens
-					111,	-- Shattrath City
+					SHATTRATH_CITY,
 					71,		-- Tanaris
 					210,	-- The Cape of Stranglethorn
 					103,	-- The Exodar
@@ -148,12 +148,12 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{ 49.08, 61.54, 85 },	-- Orgrimmar [Troll]
 					{ 51.55, 75.19, 85 },	-- Orgrimmar [Orc]
 					{ 69.93, 49.45, 85 },	-- Orgrimmar [Orc]
-					{ 49.11, 31.48, 111 },	-- Shattrath City [Goblin]
-					{ 53.09, 50.95, 111 },	-- Shattrath City [Goblin]
-					{ 54.87, 38.59, 111 },	-- Shattrath City [Goblin]
-					{ 58.11, 46.17, 111 },	-- Shattrath City [Goblin]
-					{ 58.96, 57.96, 111 },	-- Shattrath City [Goblin]
-					{ 63.52, 39.64, 111 },	-- Shattrath City [Goblin]
+					{ 49.11, 31.48, SHATTRATH_CITY },	-- Goblin
+					{ 53.09, 50.95, SHATTRATH_CITY },	-- Goblin
+					{ 54.87, 38.59, SHATTRATH_CITY },	-- Goblin
+					{ 58.11, 46.17, SHATTRATH_CITY },	-- Goblin
+					{ 58.96, 57.96, SHATTRATH_CITY },	-- Goblin
+					{ 63.52, 39.64, SHATTRATH_CITY },	-- Goblin
 					{ 54.15, 50.76, SILVERMOON_CITY },	-- Blood Elf
 					{ 59.07, 60.87, SILVERMOON_CITY },	-- Blood Elf
 					{ 62.54, 73.87, SILVERMOON_CITY },	-- Blood Elf
@@ -183,7 +183,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					10,		-- Northern Barrens
 					85,		-- Orgrimmar
 					86,		-- Orgrimmar
-					111,	-- Shattrath City
+					SHATTRATH_CITY,
 					SILVERMOON_CITY,
 					71,		-- Tanaris
 					210,	-- The Cape of Stranglethorn

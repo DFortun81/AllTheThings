@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(OUTLAND, {
-		m(111, {	-- Shattrath City
+		m(SHATTRATH_CITY, {
 			n(QUESTS, {
 				q(12753, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				q(10210, {	-- A'dal
 					["provider"] = { "n", 19684 },	-- Haggard War Veteran
-					["coord"] = { 59.6, 41.4, 111 },
+					["coord"] = { 59.6, 41.4, SHATTRATH_CITY },
 				}),
 				q(11216, {	-- Archmage Alturus
 					["u"] = REMOVED_FROM_GAME,
@@ -37,7 +37,7 @@ _.Zones =
 				}),
 				q(10211, {	-- City of Light
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
-					["coord"] = { 54.7, 44.3, 111 },
+					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10210 },	-- A'dal
 				}),
 				q(10167, {	-- Auchindoun...
@@ -56,7 +56,7 @@ _.Zones =
 				}),
 				q(44863, {	-- Clearing the Air
 					["requireSkill"] = BLACKSMITHING,
-					["coord"] = { 64.1, 71.5, 111 },
+					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 					["provider"] = { "n", 115546 },	-- Lunelli
 					["g"] = {
 						i(142279),	-- Plans: Windforged Rapier
@@ -101,7 +101,7 @@ _.Zones =
 				}),
 				q(41160, {	-- Earth to Earth
 					["requireSkill"] = BLACKSMITHING,
-					["coord"] = { 64.1, 71.5, 111 },
+					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 					["provider"] = { "n", 115546 },	-- Lunelli
 					["g"] = {
 						i(142284),	-- Plans: Stoneforged Claymore
@@ -111,7 +111,7 @@ _.Zones =
 				}),
 				q(10949, {	-- Entry Into the Black Temple
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 54.3, 44.3, 111 },
+					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
 				}),
 				q(10882, {	-- Harbinger of Doom
@@ -125,7 +125,7 @@ _.Zones =
 				}),
 				q(10704, {	-- How to Break Into the Arcatraz
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 53.7, 44.6, 111 },
+					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
 					["g"] = {
 						i(31465),	-- Sha'tari Achorite's Cloak
@@ -284,7 +284,7 @@ _.Zones =
 				q(10550, {	-- The Bundle of Bloodthistle
 					["provider"] = { "n", 21411 },	-- Tobias the Filth Gorger
 					["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
-					["coord"] = { 63.8, 69.7, 111 },
+					["coord"] = { 63.8, 69.7, SHATTRATH_CITY },
 				}),
 				q(12776, {	-- The Exodar
 					["u"] = REMOVED_FROM_GAME,
@@ -293,7 +293,7 @@ _.Zones =
 					["sourceQuest"] = 12777,	-- A Desperate Alliance
 				}),
 				q(10251, {	-- The Master's Grand Design?
-					["coord"] = { 43.6, 29.6, 111 },
+					["coord"] = { 43.6, 29.6, SHATTRATH_CITY },
 					["provider"] = { "n", 19720 },	-- "Dirty" Larry <Ruffian>
 					["sourceQuest"] = 10231,	-- What Book? I Don't See Any Book.
 				}),
@@ -403,7 +403,7 @@ _.Zones =
 					},
 				}),
 				q(10231, {	-- What Book? I Don't See Any Book.
-					["coord"] = { 59.3, 35.6, 111 },
+					["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
 					["provider"] = { "n", 19715 },	-- Ezekiel
 					["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
 					["sourceQuest"] = 10228,	-- Ezekiel

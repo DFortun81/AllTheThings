@@ -212,11 +212,10 @@ _.Holidays =
 					{	-- Veteran Nanny
 						["achievementID"] = 275,	-- Veteran Nanny
 						["u"] = 20,					-- Children's Week Filter
-						["maps"] = {
-							111,	-- Shattrah City
-						},
+						["cr"] = 22819,	-- Orphan Matron Mercy
+						["maps"] = { SHATTRATH_CITY },
 						["coords"] = {
-							{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
+							{ 75.09, 47.86, SHATTRATH_CITY },
 						},
 						["g"] = {
 							{	-- Egbert
@@ -224,27 +223,18 @@ _.Holidays =
 								["criteriaID"] = 3,			-- Egbert
 								["itemID"] = 32616,			-- Egbert's Egg
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 							{	-- Peanut
 								["achievementID"] = 275,	-- Veteran Nanny
 								["criteriaID"] = 1,			-- Peanut
 								["itemID"] = 32622,			-- Elekk Training Collar
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 							{	-- Willy
 								["achievementID"] = 275,	-- Veteran Nanny
 								["criteriaID"] = 2,			-- Willy
 								["itemID"] = 32617,			-- Sleepy Willy
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 						},
 					},

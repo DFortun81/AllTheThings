@@ -156,7 +156,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 				i(104324),	-- Foot Ball
 			}),
 			n(23064, {	-- Eebee Jinglepocket
-				["coord"] = { 51.3, 29.7, 111 },	-- Shattrath City
+				["coord"] = { 51.3, 29.7, SHATTRATH_CITY },
 				["g"] = {
 					-- Cooking
 					i(34413),	-- Recipe: Hot Apple Cider

@@ -14,8 +14,8 @@ _.Zones =
 				}),
 				q(10112, {	-- A Personal Favor
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
-					["maps"] = { 111 },	-- Shattrath
-					["coord"] = { 72.2, 30.7, 111 },
+					["maps"] = { SHATTRATH_CITY },
+					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 					["g"] = {
 						i(31724),	-- Arakkoa Divining Rod
@@ -212,8 +212,8 @@ _.Zones =
 				}),
 				q(9990,  {	-- Investigate Tuurem
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
-					["maps"] = { 111 },	-- Shattrath
-					["coord"] = { 72.2, 30.7, 111 },
+					["maps"] = { SHATTRATH_CITY },
+					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 10112,	-- A Personal Favor
 				}),
 				q(9951,  {	-- It's Watching You! -- aa
@@ -364,7 +364,7 @@ _.Zones =
 				}),
 				q(10849, {	-- Seek Out Kirrik
 					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
-					["coord"] = { 52.5, 21.0, 111 },
+					["coord"] = { 52.5, 21.0, SHATTRATH_CITY },
 					["sourceQuest"] = 10847,	-- The Eyes of Skettis
 				}),
 				q(10898, {	-- Skywing -- aa
@@ -483,8 +483,8 @@ _.Zones =
 				}),
 				q(10847, {	-- The Eyes of Skettis -- aa
 					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
-					["maps"] = { 111 },	-- Shattrath City
-					["coord"] = { 52.6, 21.0, 111 },
+					["maps"] = { SHATTRATH_CITY },
+					["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 					["sourceQuests"] = {
 						10863,	-- Secrets of the Arakkoa
 						10908,	-- Speak with Rilak the Redeemed
@@ -561,8 +561,8 @@ _.Zones =
 				}),
 				q(10879, {	-- The Skettis Offensive
 					["provider"] = { "n", 22373 },	-- Defender Grashna
-					["coord"] = { 51.8, 20.8, 111 },
-					["maps"] = { 111 },	-- Shattrath City
+					["coord"] = { 51.8, 20.8, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY },
 					["sourceQuest"] = 10889,	-- Return to Shattrath
 					["g"] = {
 						i(31727),	-- Choker of Bloodied Feathers

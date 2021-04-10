@@ -45,7 +45,7 @@ _.Zones =
 						}),
 						q(10409, {	-- Deathblow to the Legion
 							["provider"] = { "n", 18538 },	-- Ishanah
-							["coord"] = { 24.2, 29.8, 111 },
+							["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 							["sourceQuest"] = 10410,	-- Ishanah's Help
 							["g"] = {
 								i(30369),	-- Cleansed Fel Pauldrons
@@ -289,7 +289,7 @@ _.Zones =
 						}),
 						q(10507, {	-- Turning Point
 							["provider"] = { "n", 18530 },	-- Voren'thal the Seer
-							["coord"] = { 42.6, 91.4, 111 },
+							["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 							["sourceQuest"] = 10509,	-- Bound for Glory
 							["g"] = {
 								i(30375),	-- Gauntlets of the Vanquisher
