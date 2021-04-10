@@ -1027,14 +1027,33 @@ local function BuildGroups(parent, g, noRecur)
 	end
 end
 local function BuildSourceText(group, l)
-	if group.sourceParent or group.parent then
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID)) 
+			and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
+			return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
+		end
+		if group.headerID then
+			if group.headerID == 0 then
+				if group.crs and #group.crs == 1 then
+					return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
+				end
+				return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+			if parent.parent then
+				return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+		end
+		if parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
+			return BuildSourceText(parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+		end
 		if l < 1 then
-			return BuildSourceText(group.sourceParent or group.parent, l + 1);
+			return BuildSourceText(parent, l + 1);
 		else
-			return BuildSourceText(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
+			return BuildSourceText(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
 		end
 	end
-	return group.text or "*";
+	return group.text or RETRIEVING_DATA;
 end
 local function BuildSourceTextForChat(group, l)
 	if group.sourceParent or group.parent then
