@@ -893,6 +893,7 @@ _.Zones =
 					["maps"] = { 862 },	-- Zuldazar
 				}),
 				q(52131, {	-- We Need Each Other
+				--	TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde.  i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal.  is this a breadcrumb/was it removed/does it require having HoA?
 					["sourceQuests"] = {
 						52139,	-- To Matters at Hand (legacy)
 						46931,	-- Speaker of the Horde

@@ -1448,11 +1448,12 @@ _.Zones =
 				}),
 				q(51443, {	-- Mission Statement (BfA version)
 					-- available to a level 47, pre-9.0 character during patch 9.0
+				--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
 					["sourceQuests"] = {
 						-- This quest was not completed for me, but 52428 was completed... maybe it's a breadcrumb technically?
 						53031,	-- The Speaker's Imperative
 						52428,	-- Infusing the Heart
-					},
+					},	--]]
 					["providers"] = {
 						{ "n", 140176 },	-- Nathanos Blightcaller
 						{ "n", 49750 },	-- Warchief's Herald
