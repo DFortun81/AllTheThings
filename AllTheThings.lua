@@ -1084,6 +1084,8 @@ local function CloneData(data)
 		for key,value in pairs(data) do
 			if key ~= "parent" then
 				rawset(clone, key, value);
+			else
+				rawset(clone, "sourceParent", value);
 			end
 		end
 	end
@@ -1091,7 +1093,7 @@ local function CloneData(data)
 		clone.g = {};
 		for i,group in ipairs(data.g) do
 			local child = CloneData(group);
-			child.sourceParent = data;
+			-- child.sourceParent = data;
 			rawset(child, "parent", clone);
 			tinsert(clone.g, child);
 		end
@@ -3511,6 +3513,33 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									else
 										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 									end
+								end
+							end
+							-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+							if item.group.itemID then
+								-- Add the Zone name
+								local field, id;
+								for _,v in ipairs({"mapID","maps","instanceID","questID","headerID"}) do
+									if not field then
+										id = app.RecursiveFirstParentWithField(item.group, v);
+										-- print("check",v,id)
+										if id then field = v; end
+									end
+								end
+								-- convert maps to a MapID
+								if field == "maps" then
+									field = "mapID";
+									id = id[1];
+								end
+								local nestedMapGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+								local nestedMapName = nestedMapGroup and nestedMapGroup.name;
+								-- print("contains info",item.group.itemID,field,id,nestedMapGroup,nestedMapName)
+								-- Add the immediate parent group Vendor name
+								if item.group.sourceParent and item.group.sourceParent.name then
+									right = item.group.sourceParent.name .. " " .. right;
+								end
+								if nestedMapName then
+									right = nestedMapName .. " > " .. right;
 								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
@@ -10017,8 +10046,8 @@ app.RecursiveFirstParentWithField = function(group, field)
 		if group[field] then
 			return group[field];
 		else
-			if group.parent then
-				return app.RecursiveFirstParentWithField(group.parent, field)
+			if group.sourceParent or group.parent then
+				return app.RecursiveFirstParentWithField(group.sourceParent or group.parent, field)
 			end
 		end
 	end
