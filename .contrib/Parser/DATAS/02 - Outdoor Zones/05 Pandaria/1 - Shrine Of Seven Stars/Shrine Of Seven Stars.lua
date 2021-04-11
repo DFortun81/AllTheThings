@@ -37,7 +37,7 @@ _.Zones =
 					}),
 					q(33248, {	-- Proving Grounds
 						["coord"] = { 47.23, 49.71, 393 },
-						["lvl"] = 90,
+						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 					}),
 					q(32683, {	-- So You Want to Be a Blacksmith...

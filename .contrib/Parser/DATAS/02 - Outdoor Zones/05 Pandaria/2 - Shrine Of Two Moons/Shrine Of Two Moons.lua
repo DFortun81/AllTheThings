@@ -46,6 +46,7 @@ _.Zones =
 					q(31279),	-- Everything I Know About Cooking
 					--]]
 					q(32901, {	-- Heroic Deeds
+						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
@@ -59,18 +60,17 @@ _.Zones =
 							}),
 						},
 					}),
+					q(33249, {	-- Proving Grounds
+						["coord"] = { 46.6, 56.5, 392 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker
+					}),
 					q(32726, {	-- So You Want to Be a Blacksmith...
 						["provider"] = { "n", 64058 },	-- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = BLACKSMITHING,
 					}),
 --[[
-					q(33249, {	-- Proving Grounds
-						["races"] = HORDE_ONLY,
-					}),
-					q(32726, {	-- So You Want to Be a Blacksmith...
-						["races"] = HORDE_ONLY,
-					}),
 					q(31391, {	-- The Klaxxi
 						["races"] = HORDE_ONLY,
 					}),

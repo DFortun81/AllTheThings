@@ -4153,6 +4153,7 @@ app.L = {
 		[240003] = "Strange Sapphire",
 		[240289] = "Weathered Axe",
 		[240317] = "Iskar's Tome of Shadows",
+		[240354] = "Genuinely Unguarded Treasure",
 		[240519] = "Small Treasure Chest",
 		[240577] = "The Blade of Kra'nak",
 		[240580] = "Jewel of Hellfire",
