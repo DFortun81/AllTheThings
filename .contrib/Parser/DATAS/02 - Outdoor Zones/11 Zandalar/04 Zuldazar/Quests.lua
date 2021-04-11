@@ -1731,7 +1731,7 @@ _.Zones =
 				q(50394, {	-- Your Problem Now
 					["sourceQuests"] = { 50393 },	-- A Child of Pa'ku
 					["provider"] = { "n", 127377 },	-- Pa'ku
-					["coord"] = { 71.4, 49.2 },
+					["coord"] = { 71.4, 49.2, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),

@@ -348,7 +348,6 @@ _.Zones =
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(51465, {	-- A Load of Scrap
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
@@ -438,22 +437,19 @@ _.Zones =
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 					["coord"] = { 58.0, 62.6, 862 },	-- technically Zuldazar, but on the Dazar'alor docks, so it makes more sense to be here
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(47423, {	-- Forbidden Practices
 					["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+					["provider"] = { "n", 126560 },	-- Wardruid Loti
 					["coord"] = { 45.0, 23.9, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
 				q(47439, {	-- Gonk, Lord of the Pack
 					["sourceQuests"] = { 47438 },	-- Picking a Side
+					["altQuests"] = { 47440 },	-- Pa'ku, Master of Winds
+					["provider"] = { "n", 126560 },	-- Wardruid Loti
 					["coord"] = { 42.4, 9.00, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126560 },	-- Wardruid Loti
-					["altQuests"] = {
-						47440,	-- Pa'ku, Master of Winds
-					},
 				}),
 				q(49421, {	-- Hunting Zul
 					["sourceQuests"] = {	-- one or the other
@@ -738,9 +734,9 @@ _.Zones =
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 				}),
 				q(48897, {	-- The Bargain is Struck (Gonk)
+					["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 					["coord"] = { 49.9, 33.5, 1165 },
-					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
 					["races"] = HORDE_ONLY,
 				}),
 				q(47199, {	-- The Blood Gate
@@ -846,13 +842,11 @@ _.Zones =
 					["provider"] = { "n", 138949 },	-- Throk
 					["coord"] = { 52.9, 94.4, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(54042, {	-- Trouble in Darkshore
 					["provider"] = { "n", 149471 },	-- Dark Ranger Velonara
 					["coord"] = { 53.0, 94.3, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(49615, {	-- Trust of a King
 					["sourceQuests"] = { 47514 },	-- Zuldazar
@@ -883,7 +877,6 @@ _.Zones =
 					["provider"] = { "n", 138949 },	-- Throk
 					["coord"] = { 53.0, 94.3, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
@@ -1012,7 +1005,6 @@ _.Zones =
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["races"] = HORDE_ONLY,
 					["coord"] = { 71.4, 30.2, 862 },
-					["lvl"] = 120,
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 				}),
@@ -1031,7 +1023,6 @@ _.Zones =
 				}),
 				i(165668, {	-- The Azsharan Medallion
 					["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
-					["lvl"] = 120,
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						144778,	-- Darktide Champion
