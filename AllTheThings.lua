@@ -4160,21 +4160,45 @@ local function SearchForField(field, id, onlyCached)
 	end
 end
 app.SearchForField = SearchForField;
+-- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned
+app.SearchForObject = function(field, id, onlyCached)
+	local fcache = SearchForField(field, id, onlyCached);
+	if fcache and #fcache > 0 then
+		-- find a filter-match object first
+		local fcacheObj;
+		for i=1,#fcache,1 do
+			fcacheObj = fcache[i];
+			if fcacheObj[field] == id and app.RecursiveGroupRequirementsFilter(fcacheObj) then
+				return fcacheObj;
+			end
+		end
+		-- otherwise just find the first matching object
+		for i=1,#fcache,1 do
+			fcacheObj = fcache[i];
+			if fcacheObj[field] == id then
+				return fcacheObj;
+			end
+		end
+	end
+end
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
 -- will attempt to return a filtered clone as a priority
 app.SearchForObjectClone = function(field, id, onlyCached)
 	local fcache = SearchForField(field, id, onlyCached);
 	if fcache and #fcache > 0 then
 		-- find a filter-match object first
+		local fcacheObj;
 		for i=1,#fcache,1 do
-			if fcache[i][field] == id and app.RecursiveGroupRequirementsFilter(fcache[i]) then
-				return CloneData(fcache[i]);
+			fcacheObj = fcache[i];
+			if fcacheObj[field] == id and app.RecursiveGroupRequirementsFilter(fcacheObj) then
+				return CloneData(fcacheObj);
 			end
 		end
 		-- otherwise just find the first matching object
 		for i=1,#fcache,1 do
-			if fcache[i][field] == id then
-				return CloneData(fcache[i]);
+			fcacheObj = fcache[i];
+			if fcacheObj[field] == id then
+				return CloneData(fcacheObj);
 			end
 		end
 	end
@@ -8722,6 +8746,13 @@ local questFields = {
 	["name"] = function(t)
 		return QuestTitleFromID[t.questID];
 	end,
+	["description"] = function(t)
+		-- Provide a fall-back description as to collectibility of a Quest due to granting reputation
+		if app.CollectibleReputations and t.maxReputation and t.collectibleAsReputation then
+			local factionID = t.maxReputation[1];
+			return L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
+		end
+	end,
 	["icon"] = function(t)
 		if t.providers then
 			for k,v in ipairs(t.providers) do
@@ -8762,10 +8793,25 @@ local questFields = {
 	end,
 	
 	["collectibleAsReputation"] = function(t)
-		return app.CollectibleAsQuest(t) or (app.CollectibleReputations and t.maxReputation);
+		-- If Collectible purely by being a Quest
+		if app.CollectibleAsQuest(t) then return true; end
+		-- If Collectible otherwise by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
+		if (app.CollectibleReputations and t.maxReputation) then
+			local factionID = t.maxReputation[1];
+			local factionRef = app.SearchForObject("factionID", factionID, true);
+			return factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2];
+		end
 	end,
 	["collectedAsReputation"] = function(t)
-		if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
+		local factionID = t.maxReputation[1];
+		-- Do not consider Quests for a Faction as collectible due to the Faction if the Faction itself is considered collected
+		local factionRef = app.SearchForObject("factionID", factionID, true);
+		if factionRef and factionRef.collected then
+			-- Only consider collectiblity of the Quest portion since the Faction is collected
+			return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
+		end
+		-- Otherwise check whether this Quest provides Rep towards the incomplete Faction
+		if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(factionID)) or 0) >= t.maxReputation[2] then
 			return true;
 		end
 		return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
