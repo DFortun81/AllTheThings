@@ -3489,91 +3489,64 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #entries > 0 then
 					-- print("#entries",#entries);
 					tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
-					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
-					if #entries < containCount + 1 then
-						for i,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+					local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+					for i=1,containCount do
+						item = entries[i];
+						group = item.group;
+						left = group.text or RETRIEVING_DATA;
+						if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+						if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
 
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									right = "|T" .. icon .. ":0|t " .. right;
-								end
+						-- If this group has specialization requirements, let's attempt to show the specialization icons.
+						right = item.right;
+						local specs = group.specs;
+						if specs and #specs > 0 then
+							for i,spec in ipairs(specs) do
+								local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+								right = "|T" .. icon .. ":0|t " .. right;
 							end
-							-- If this group has customCollect requirements, list them for clarity
-							if item.group.customCollect then
-								for i,c in ipairs(item.group.customCollect) do
-									if i > 1 then
-										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
-									else
-										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
-									end
-								end
-							end
-							-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-							if item.group.itemID then
-								-- Add the Zone name
-								local field, id;
-								for _,v in ipairs({"mapID","maps","instanceID","questID","headerID"}) do
-									if not field then
-										id = app.RecursiveFirstParentWithField(item.group, v);
-										-- print("check",v,id)
-										if id then field = v; end
-									end
-								end
-								-- convert maps to a MapID
-								if field == "maps" then
-									field = "mapID";
-									id = id[1];
-								end
-								local nestedMapGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
-								local nestedMapName = nestedMapGroup and nestedMapGroup.name;
-								-- print("contains info",item.group.itemID,field,id,nestedMapGroup,nestedMapName)
-								-- Add the immediate parent group Vendor name
-								if item.group.sourceParent and item.group.sourceParent.name then
-									right = item.group.sourceParent.name .. " " .. right;
-								end
-								if nestedMapName then
-									right = nestedMapName .. " > " .. right;
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
 						end
-					else
-						for i=1,containCount do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									right = "|T" .. icon .. ":0|t " .. right;
+						-- If this group has customCollect requirements, list them for clarity
+						if group.customCollect then
+							for i,c in ipairs(group.customCollect) do
+								if i > 1 then
+									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+								else
+									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 								end
 							end
-							-- If this group has customCollect requirements, list them for clarity
-							if item.group.customCollect then
-								for i,c in ipairs(item.group.customCollect) do
-									if i > 1 then
-										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
-									else
-										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
-									end
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
 						end
-						local more = #entries - containCount;
-						tinsert(info, { left = L["AND_"] .. more .. L["_MORE"] .. "..." });
+						-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+						if group.itemID then
+							-- Add the Zone name
+							local field, id;
+							for _,v in ipairs({"mapID","maps","instanceID","questID","headerID"}) do
+								if not field then
+									id = app.RecursiveFirstParentWithField(group, v);
+									-- print("check",v,id)
+									if id then field = v; end
+								end
+							end
+							-- convert maps to a MapID
+							if field == "maps" then
+								field = "mapID";
+								id = id[1];
+							end
+							local nestedMapGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+							local nestedMapName = nestedMapGroup and nestedMapGroup.name;
+							-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
+							-- Add the immediate parent group Vendor name
+							if group.sourceParent and group.sourceParent.name then
+								right = group.sourceParent.name .. " " .. right;
+							end
+							if nestedMapName then
+								right = nestedMapName .. " > " .. right;
+							end
+						end
+						tinsert(info, { left = item.prefix .. left, right = right });
+					end
+					if #entries - containCount > 0 then
+						tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 					end
 				end
 			end
