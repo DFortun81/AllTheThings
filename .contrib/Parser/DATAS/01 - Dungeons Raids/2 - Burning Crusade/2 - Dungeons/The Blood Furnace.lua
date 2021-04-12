@@ -160,7 +160,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				}
 			}),
-			n(ZONEDROPS),	-- Note!! Blank so when map merges into the list it's in this spot rather than top
 		},
 	}),
 })};

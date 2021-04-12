@@ -24,6 +24,27 @@ _.Zones =
 					["sourceQuest"] = 10720,	-- The Smallest Creatures
 					["races"] = HORDE_ONLY,
 				}),
+				q(11060, {	-- A Crystalforged Darkrune
+					["provider"] = { "n", 23300 },	-- Gahk
+					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
+					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+					["isDaily"] = true,
+					["timeline"] = {
+						"added 3.3.0.10772",
+						"removed 4.1.0.7272",
+					},
+					["cost"] = {
+						{ "i", 32643, 1 },	-- Darkrune
+					},
+					["groups"] = {
+						i(32602, {	-- Crystalforged Darkrune
+							["timeline"] = {
+								"added 3.3.0.10772",
+								"removed 4.1.0.7272",
+							},
+						}),
+					},
+				}),
 				q(10544, {	-- A Curse Upon Both of Your Clans!
 					["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
 					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
@@ -79,15 +100,29 @@ _.Zones =
 				}),
 				q(11051, {	-- Banish More Demons
 					["provider"] = { "n", 23253 },	-- Kronk
-					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 11026,	-- Banish the Demons
+					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la
-					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 32696, 1 },	-- Banishing Crystal
+					},
+					["isDaily"] = true,
+					["groups"] = {
+						i(32569),	-- Apexis Shard
+						i(32777),	-- Kronk's Grab Bag
+					},
 				}),
 				q(11026, {	-- Banish the Demons
 					["provider"] = { "n", 23253 },	-- Kronk
 					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la
+					["cost"] = {
+						{ "i", 32696, 1 },	-- Banishing Crystal
+					},
+					["groups"] = {
+						i(32569),	-- Apexis Shard
+						i(32777),	-- Kronk's Grab Bag
+					},
 				}),
 				q(10783, {	-- Baron Sablemane
 					["provider"] = { "n", 21984 },	-- Rexxar
@@ -607,7 +642,13 @@ _.Zones =
 					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
+					["cost"] = {
+						{ "i", 29460, 5 },	-- Ethereum Prison Key
+					},
 					["repeatable"] = true,
+					["groups"] = {
+						i(29750),	-- Ethereum Stasis Chamber Key
+					},
 				}),
 				q(10709, {	-- Reunion
 					["provider"] = { "n", 22004 },	-- Leoroxx
@@ -980,10 +1021,13 @@ _.Zones =
 				}),
 				q(11078, {	-- To Rule The Skies
 					["provider"] = { "n", 23334 },	-- Sky Commander Keller
-					["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
 					["sourceQuests"] = {
 						11010,	-- Bombing Run
 						11065,	-- Wrangle Some Aether Rays!
+					},
+					["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32732, 1 },	-- 	Dragon Teeth
 					},
 				}),
 				q(10674, {	-- Trapping the Light Fantastic
@@ -1086,6 +1130,28 @@ _.Zones =
 						i(31792),	-- Evergrove Ranger's Cloak
 						i(31790),	-- Expedition Pendant
 						i(31791),	-- Wildlord's Band
+					},
+				}),
+				q(11027, {	-- Yous Have Da Darkrune?
+					["provider"] = { "n", 23300 },	-- Gahk
+					["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
+					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
+					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+					["isDaily"] = true,
+					["timeline"] = {
+						"added 3.3.0.10772",
+						"removed 4.1.0.7272",
+					},
+					["cost"] = {
+						{ "i", 32643, 1 },	-- Darkrune
+					},
+					["groups"] = {
+						i(32602, {	-- Crystalforged Darkrune
+							["timeline"] = {
+								"added 3.3.0.10772",
+								"removed 4.1.0.7272",
+							},
+						}),
 					},
 				}),
 			}),

@@ -764,7 +764,7 @@ app.L = {
 		[-15] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-16] = "Interface\\Icons\\Spell_Shadow_DeathScream",								-- Rare
 		[-17] = "Interface\\Icons\\inv_misc_book_07",										-- Quests
-		[-18] = "Interface\\Icons\\icon_scenarios",											-- Scenarios
+		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
 		[-19] = "Interface\\Icons\\achievement_scenario_arenaofannihilation",				-- Arena of Annihilation
 		[-21] = "Interface\\Icons\\inv_misc_enggizmos_17",									-- Containers
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green",									-- Drop
@@ -1554,6 +1554,7 @@ app.L = {
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4,										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
+		[-18] = QUEST_REWARDS, 													-- Rewards
 		[-21] = AUCTION_CATEGORY_CONTAINERS,									-- Containers
 
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop

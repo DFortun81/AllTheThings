@@ -8,7 +8,7 @@ _.Zones =
 		m(ZANGARMARSH, {
 			n(ZONEDROPS, {
 				i(29960, {	-- Captured Firefly
-					["crs"] = { 20197 },	-- Bogflare Needler
+					["cr"] = 20197,	-- Bogflare Needler
 				}),
 			}),
 		}),

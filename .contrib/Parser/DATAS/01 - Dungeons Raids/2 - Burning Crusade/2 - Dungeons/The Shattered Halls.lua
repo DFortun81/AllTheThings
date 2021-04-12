@@ -76,6 +76,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				},
 			}),
+			n(ZONEDROPS, {
+				i(22554, {	-- Formula: Enchant 2H Weapon - Savagery
+					["cr"] = 17465,	-- Shattered Hand Centurion
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(16807, e(566, {	-- Grand Warlock Nethekurse
 					i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
@@ -86,17 +91,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27529),	-- Figurine of the Colossus
 					i(24312),	-- Pattern: Spellstrike Hood
 				})),
-				--[[ -- This mob does not exist on Normal Mode... :(
-					 -- Meaning you can only get these appearances from Heroic Mode.
-				cr(20923, e(728, {	-- Blood Guard Porung
-					i(30705),	-- Spaulders of Slaughter
-					i(27474),	-- Beast Lord Handguards  (7.3.5 - Moved from Warchief Kargath Bladefist)
-					i(27536),	-- Hallowed Handwraps  (7.3.5 - Moved from Warchief Kargath Bladefist)
-					i(30708),	-- Belt of Flowing Thought
-					i(30709),	-- Pantaloons of Flaming Wrath
-					i(30707),	-- Nimble-Foot Treads
-				})),
-				]]--
 				cr(16809, e(568, {	-- Warbringer O'mrogg
 					i(27524),	-- Firemaul of Destruction
 					i(27868),	-- Runesong Dagger
@@ -221,16 +215,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(123993),	-- Wastewalker Gloves
 						i(123990),	-- Greaves of the Shatterer
 					})),
-				},
-			}),
-			n(ZONEDROPS, {
-				["g"] = {
-					{	-- Formula: Enchant 2H Weapon - Savagery
-						["itemID"] = 22554,	-- Formula: Enchant 2H Weapon - Savagery
-						["crs"] = {
-							17465,	-- Shattered Hand Centurion
-						},
-					},
 				},
 			}),
 		},

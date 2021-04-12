@@ -50,6 +50,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
+				i(29460),	-- Ethereum Prison Key
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
 					["crs"] = { 20880 },	-- Eredar Deathbringer
 				}),

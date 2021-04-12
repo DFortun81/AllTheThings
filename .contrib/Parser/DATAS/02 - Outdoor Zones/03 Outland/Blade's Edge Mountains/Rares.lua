@@ -7,6 +7,16 @@ _.Zones =
 	m(OUTLAND, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(RARES, {
+				n(23261, {	-- Furywing
+					["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32569, 35 },	-- Apexis Shard
+					},
+					["g"] = {
+						i(32732),	-- Dragon Teeth
+						i(32683),	-- Jet Scale of Furywing
+					},
+				}),
 				n(18692, {	-- Hemathion
 					["coords"] = {
 						{ 30.0, 45.4, BLADES_EDGE_MOUNTAINS },
@@ -34,6 +44,16 @@ _.Zones =
 						i(31157),	-- Drakehide Tunic
 					},
 				}),
+				n(23281, {	-- Insidio
+					["coord"] = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32569, 35 },	-- Apexis Shard
+					},
+					["g"] = {
+						i(32732),	-- Dragon Teeth
+						i(32684),	-- Insidion's Ebony Scale
+					},
+				}),
 				n(18690, {	-- Morcrush
 					["coords"] = {
 						{ 60.4, 24.8, BLADES_EDGE_MOUNTAINS },
@@ -53,14 +73,48 @@ _.Zones =
 						i(31162),	-- Felstone Mantle
 					},
 				}),
+				n(23282, {	-- Obsidia
+					["coord"] = { 34.0, 54.7, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32569, 35 },	-- Apexis Shard
+					},
+					["g"] = {
+						i(32732),	-- Dragon Teeth
+						i(32682),	-- Obsidia Scale
+					},
+				}),
+				n(23061, {	-- Rivendark
+					["coord"] = { 27.2, 64.9, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32569, 35 },	-- Apexis Shard
+					},
+					["g"] = {
+						i(32732),	-- Dragon Teeth
+						i(32681),	-- Onyx Scale of Rivendark
+					},
+				}),
 				n(23230, {	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 31.85, 46.68, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32602, 1 },	-- Crystalforged Darkrune
+					},
+					["isDaily"] = true,
+					["timeline"] = {
+						"added 2.2.0.7272",
+						"removed 4.1.0.7272",
+					},
 					["g"] = {
 						i(32941, {	-- Corruptor's Signet
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = {
+								"added 2.2.0.7272",
+								"removed 4.1.0.7272",
+							},
 						}),
 						i(32942, {	-- Ring of the Overseer
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = {
+								"added 2.2.0.7272",
+								"removed 4.1.0.7272",
+							},
 						}),
 					},
 				}),
