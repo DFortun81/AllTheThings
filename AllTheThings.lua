@@ -1093,7 +1093,7 @@ local function CloneData(data)
 		clone.g = {};
 		for i,group in ipairs(data.g) do
 			local child = CloneData(group);
-			-- child.sourceParent = data;
+			rawset(child, "sourceParent", nil);
 			rawset(child, "parent", clone);
 			tinsert(clone.g, child);
 		end
