@@ -1261,7 +1261,7 @@ local function GetRelativeDifficulty(group, difficultyID)
 			return false;
 		end
 		if group.parent then
-			return GetRelativeDifficulty(group.parent, difficultyID);
+			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
 		else
 			return true;
 		end
@@ -1269,18 +1269,18 @@ local function GetRelativeDifficulty(group, difficultyID)
 end
 local function GetRelativeMap(group, currentMapID)
 	if group then
-		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.parent, currentMapID);
+		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.sourceParent or group.parent, currentMapID);
 	end
 	return currentMapID;
 end
 local function GetRelativeField(group, field, value)
 	if group then
-		return group[field] == value or GetRelativeField(group.parent, field, value);
+		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
 	end
 end
 local function GetRelativeValue(group, field)
 	if group then
-		return group[field] or GetRelativeValue(group.parent, field);
+		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100
