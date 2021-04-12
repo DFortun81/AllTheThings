@@ -3163,6 +3163,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 				end
 				for i,text in ipairs(listing) do
+					if text:find(RETRIEVING_DATA) then working = true; end
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 					tinsert(info, 1, { left = left, right = right, wrap = wrap });
 				end
