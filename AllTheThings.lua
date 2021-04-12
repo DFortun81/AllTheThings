@@ -3889,6 +3889,7 @@ fieldCache["azeriteEssenceID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
 fieldCache["encounterID"] = {};
+fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["followerID"] = {};
 fieldCache["headerID"] = {};
@@ -3928,6 +3929,9 @@ fieldConverters = {
 	end,
 	["encounterID"] = function(group, value)
 		CacheField(group, "encounterID", value);
+	end,
+	["factionID"] = function(group, value)
+		CacheField(group, "factionID", value);
 	end,
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
