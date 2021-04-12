@@ -8379,6 +8379,12 @@ local headerFields = {
 	["linkAsAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
 	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
 local fields = RawCloneData(headerFields);
@@ -8386,6 +8392,10 @@ fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
 --fields.link = headerFields.linkAsAchievement;
 app.BaseHeaderWithAchievement = app.BaseObjectFields(fields);
+local fields = RawCloneData(headerFields);
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = headerFields.trackableAsQuest;
+app.BaseHeaderWithQuest = app.BaseObjectFields(fields);
 app.CreateNPC = function(id, t)
 	if t then
 		if id < 1 then
@@ -8396,7 +8406,11 @@ app.CreateNPC = function(id, t)
 				end
 				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
 			else
-				return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+				if rawget(t, "questID") then
+					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
+				else
+					return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+				end
 			end
 		else
 			if rawget(t, "achID") then
