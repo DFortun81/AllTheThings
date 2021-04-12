@@ -1104,7 +1104,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(47241, {	-- The Shadow of Death
-					["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+					["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					["provider"] = { "n", 121288 },	-- Princess Talanji
 					["coord"] = { 39.2, 79.0, 863 },
 					["races"] = HORDE_ONLY,
@@ -1145,7 +1145,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(49902, {	-- To Gloom Hollow
-					["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+					["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
 					["provider"] = { "n", 127958 },	-- Kisha
 					["coord"] = { 56.5, 26.7, 863 },
 					["races"] = HORDE_ONLY,
