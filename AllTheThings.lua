@@ -1082,9 +1082,8 @@ local function CloneData(data)
 	if data then
 		clone = setmetatable(clone, getmetatable(data));
 		for key,value in pairs(data) do
-			if key ~= "parent" then
-				rawset(clone, key, value);
-			else
+			rawset(clone, key, value);
+			if key == "parent" then
 				rawset(clone, "sourceParent", value);
 			end
 		end
