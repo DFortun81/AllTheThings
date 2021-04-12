@@ -968,17 +968,21 @@ _.Zones =
 					["sourceQuests"] = { 47512 },	-- Nazmir
 				}),
 				q(47512, {	-- Nazmir
+				--	TODO: not a SQ during my April 2021 playthrough, unsure of requirements
+				--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+					["provider"] = { "n", 135775 },	-- Scouting Map
 					["coord"] = { 41.8, 69.4, 1164 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135775 },	-- Scouting Map
-					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
+					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 					["isBreadcrumb"] = true,
+					["provider"] = { "n", 126549 },
 					["coord"] = { 51.6, 41.2, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126549 },
-					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
+					["g"] = {
+						i(179383),	-- Royal Zandalari Pendant
+					},
 				}),
 				q(47433, {	-- Offensively Defensive
 					["provider"] = { "n", 126564 },	-- Hexlord Raal
