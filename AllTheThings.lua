@@ -3517,10 +3517,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 						-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-						if group.itemID then
+						if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 							-- Add the Zone name
 							local field, id;
-							for _,v in ipairs({"mapID","maps","instanceID","questID","headerID"}) do
+							for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
 								if not field then
 									id = app.RecursiveFirstParentWithField(group, v);
 									-- print("check",v,id)
@@ -3532,15 +3532,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								field = "mapID";
 								id = id[1];
 							end
-							local nestedMapGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
-							local nestedMapName = nestedMapGroup and nestedMapGroup.name;
+							local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+							local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 							-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
-							-- Add the immediate parent group Vendor name
-							if group.sourceParent and group.sourceParent.name then
-								right = group.sourceParent.name .. " " .. right;
-							end
-							if nestedMapName then
-								right = nestedMapName .. " > " .. right;
+							if locationName then
+								-- Add the immediate parent group Vendor name
+								local parent = group.parent;
+								if parent and paramB ~= parent[parent.key] and parent.name then
+									right = locationName .. " > " .. parent.name .. " " .. right;
+								else
+									right = locationName .. " " .. right;
+								end
 							end
 						end
 						tinsert(info, { left = item.prefix .. left, right = right });
@@ -3609,9 +3611,6 @@ app.BuildCrafted_IncludedItems = {};
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
-
-	-- TODO: similar to 'customCollect' showing in the BuildContains, add a property to items in the crafted contains which shows the crafting Profession
-
 	-- track the starting item
 	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
