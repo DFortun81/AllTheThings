@@ -5739,7 +5739,7 @@ local fields = {
 		return select(10, GetAchievementInfo(t.achievementID));
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleAchievements;
+		return app.CollectibleAchievements and app.CheckCustomCollects(t);
 	end,
 	["collected"] = function(t)
 		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
