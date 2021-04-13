@@ -344,6 +344,7 @@ _.Zones =
 				}),
 				q(11369, {	-- Wanted: A Black Stalker Egg
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
 					["isDaily"] = true,
 				}),
 				q(11389, {	-- Wanted: Arcatraz Sentinels
@@ -365,6 +366,15 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
+					},
+				}),
+				q(11354, {	-- WANTED: Nazan's Riding Crop
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["maps"] = { HELLFIRE_RAMPARTS },
+					["isDaily"] = true,
+					["cost"] = {
+						{ "i", 33833, 1 },	-- Nazan's Riding Crop
 					},
 				}),
 				q(11383, {	-- Wanted: Rift Lords

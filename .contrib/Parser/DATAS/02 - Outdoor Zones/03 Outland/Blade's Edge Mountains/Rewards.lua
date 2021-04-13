@@ -25,6 +25,12 @@ _.Zones =
 						},
 					}),
 				}),
+				i(32601, {	-- Unstable Flask of the Sorcerer
+					["coord"] = { 54, 11, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						 { "i", 32569, 10 },	-- Apexis Shard
+					},
+				}),
 			}),
 		}),
 	}),

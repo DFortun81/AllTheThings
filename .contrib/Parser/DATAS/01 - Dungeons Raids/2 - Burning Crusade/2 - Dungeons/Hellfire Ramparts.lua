@@ -167,6 +167,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(529, {	-- Vazruden the Herald
 						["creatureID"] = 17307,
 						["g"] = {
+							n(17536, {	-- Nazan
+								i(33833),	-- Nazan's Riding Crop
+							}),
 							o(185168, { 	-- Reinforced Fel Iron Chest
 								["model"] = 196989,
 								["g"] = {

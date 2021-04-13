@@ -70,8 +70,11 @@ _.Zones =
 				}),
 				q(11061, {	-- A Father's Duty
 					["provider"] = { "n", 23316 },	-- Torkus
-					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
+					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 32601, 1 },	-- Unstable Flask of the Sorcerer
+					},
 				}),
 				q(11079, {	-- A Fel Whip For Gahk
 					["provider"] = { "n", 23300 },	-- Gahk

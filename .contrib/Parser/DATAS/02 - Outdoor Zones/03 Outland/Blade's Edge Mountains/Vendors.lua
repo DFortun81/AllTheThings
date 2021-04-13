@@ -164,8 +164,11 @@ _.Zones =
 					},
 				}),
 				n(22099, {	-- Wyrmcult Provisioner
-					["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.|r",
+					["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.",
 					["coord"] = { 33.8, 34.6, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 31122, 1 },	-- Overseer Disguise
+					},
 					["g"] = {
 						i(31341),	-- Wyrmcultist's Cloak
 					},

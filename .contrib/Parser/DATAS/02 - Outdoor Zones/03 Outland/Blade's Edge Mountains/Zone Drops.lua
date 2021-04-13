@@ -26,6 +26,22 @@ _.Zones =
 						{ "i", 32569, 50 },	-- Apexis Shard
 					},
 				}),
+				i(32578, {	-- Charged Crystal Focus
+					["cost"] = {
+						{ "i", 32576, 1 },	-- Depleted Crystal Focus
+						{ "i", 32569, 10 },	-- Apexis Shard
+					},
+				}),
+				i(31121, {	-- Costume Scraps
+					["crs"] = {
+						22308,	-- Wyrmcult Hunter
+						21809,	-- Wyrmcult Poacher
+						21637,	-- Wyrmcult Scout
+						21382,	-- Wyrmcult Zealot
+						21383,	-- Wyrmcult Acolyte
+						21810,	-- Wyrmcult Hewer
+					},
+				}),
 				i(32660, {	-- Crystal Forged Sword
 					["cost"] = {
 						{ "i", 32674, 1 },	-- Depleted Sword
@@ -85,6 +101,26 @@ _.Zones =
 						23355,	-- Zarcsin
 					},
 				}),
+				i(32677, {	-- Depleted Cloak
+					["crs"] = {
+						19973,	-- Abyssal Flamebringer
+						22181,	-- Aether Ray
+						22175,	-- Apexis Flayer
+						22275,	-- Apexis Guardian
+						22242,	-- Bash'ir Spell-Thief
+						23353,	-- Braxxus
+						22204,	-- Fear Fiend
+						22291,	-- Furnace Guard
+						23261,	-- Furywing
+						22281,	-- Galvanoth
+						23281,	-- Insidion
+						23354,	-- Mo'arg Incinerator
+						23282,	-- Obsidia
+						23061,	-- Rivendark
+						20557,	-- Wrath Hound
+						23355,	-- Zarcsin
+					},
+				}),
 				i(32676, {	-- Depleted Cloth Bracers
 					["crs"] = {
 						22181,	-- Aether Ray
@@ -105,6 +141,7 @@ _.Zones =
 						23355,	-- Zarcsin
 					},
 				}),
+				i(32576),	-- Depleted Crystal Focus
 				i(32673, {	-- Depleted Dagger
 					["crs"] = {
 						19973,	-- Abyssal Flamebringer
@@ -249,26 +286,6 @@ _.Zones =
 						23355,	-- Zarcsin
 					},
 				}),
-				i(32677, {	-- Depleted Cloak
-					["crs"] = {
-						19973,	-- Abyssal Flamebringer
-						22181,	-- Aether Ray
-						22175,	-- Apexis Flayer
-						22275,	-- Apexis Guardian
-						22242,	-- Bash'ir Spell-Thief
-						23353,	-- Braxxus
-						22204,	-- Fear Fiend
-						22291,	-- Furnace Guard
-						23261,	-- Furywing
-						22281,	-- Galvanoth
-						23281,	-- Insidion
-						23354,	-- Mo'arg Incinerator
-						23282,	-- Obsidia
-						23061,	-- Rivendark
-						20557,	-- Wrath Hound
-						23355,	-- Zarcsin
-					},
-				}),
 				i(31874, {	-- Design: Deadly Flame Spessarite
 					["crs"] = {
 						22275,	-- Apexis Guardian
@@ -404,6 +421,11 @@ _.Zones =
 						22243,	-- Bash'ir Arcanist
 						22241,	-- Bash'ir Raider
 						22242,	-- Bash'ir Spell-Thief
+					},
+				}),
+				i(31122, {	-- Overseer Disguise
+					["cost"] = {
+						{ "i", 31121, 5 },	-- Costume Scraps
 					},
 				}),
 				i(23612, {	-- Plans: Ragesteel Helm

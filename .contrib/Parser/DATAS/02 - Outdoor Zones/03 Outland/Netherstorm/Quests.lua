@@ -149,10 +149,13 @@ _.Zones =
 						}),
 						q(10972, {	-- Ethereum Prisoner I.D. Catalogue
 							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["coord"] = { 59.5, 32.4, NETHERSTORM },
-							["repeatable"] = true,
-							["description"] = "Gives reputation through Exalted.",
 							["sourceQuest"] = 10971,	-- Ethereum Secrets
+							["coord"] = { 59.5, 32.4, NETHERSTORM },
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+							["cost"] = {
+								{ "i", 31957, 1 },	-- Ethereum Prisoner I.D. Tag
+							},
 						}),
 						q(10971, {	-- Ethereum Secrets
 							["provider"] = { "n", 20448 },	-- Commander Ameer
