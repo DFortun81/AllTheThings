@@ -12,14 +12,12 @@ _.Zones =
 				-- figure out if "'til death do us part" is available any earlier than turning in "a tribute for death."  it wasn't available w/0 prereqs, just need to make sure we have the availability trigger correct.
 				-- verify SQ for "the forlorn soul" also, picked up at the same time as above.  actual non-breadcrumb SQ seems to be "A Tribute for Death," but could be something else?
 				-- verify SQ for "a poisonous touch."  it wasn't available w/0 prereqs and i didn't see it until after turning in "staying hidden," but it may be available earlier.
-				-- verify SQ for "a chance sighting."  i didn't see it until after i turned in "krag'wa's aid," but it may be available earlier
 				-- verify whether or not "crawg free zone" is needed for "it seems you've made a friend" by turning it in last of the 4 quests.  i turned it in second to last, and the previous person who quested through turned in "bad juju"/"off with her head" last, so it seems those 3 are required)
 				-- MAIL AZERITE REWARDS MISSING for #50087, "Ateena's Fall"
 				-- figure out if "what rots beneath" is a breadcrumb
 				-- this question is also in the dazar'alor file, but verify SQ for "the blood gate."  it may become available after "ateena's fall," not "halting the empire's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
 				q(50934, {	-- A Chance Sighting
-					--	SQ needs verification.  may be available earlier.
-					["sourceQuests"] = { 47697 },	-- Kragwa's Aid
+					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131993 },	-- Yash
 					["coord"] = { 66.9, 41.9, 863 },
@@ -40,9 +38,9 @@ _.Zones =
 				q(47493, {	-- A Lonely Spirit
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
+						49348,	-- A Desecrated Temple
 						47247,	-- That Which Haunts the Dead
 						47491,	-- Remnants of the Damned
-						47248, 	-- 'Til Death Do Us Part
 					},
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["coord"] = { 39.5, 24.7, 863 },
@@ -328,7 +326,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(49569, {	-- Down by the Riverside
-					["sourceQuests"] = { 47602 },	-- Ready For Action
+					["sourceQuests"] = {
+						47602,	-- Ready For Action
+						49985,	-- Return to Gloom Hollow
+					},
 					["provider"] = { "n", 126213 },	-- Princess Talanji
 					["coord"] = { 67.4, 42.2, 863 },
 					["races"] = HORDE_ONLY,
@@ -904,7 +905,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(49932, {	-- Slumber No More
-					["sourceQuests"] = { 47602 },	-- Ready For Action
+					["sourceQuests"] = {
+						47697,	-- Krag'wa's Aid
+						47602,	-- Ready For Action
+					},
 					["provider"] = { "n", 131978 },	-- Lashk
 					["coord"] = { 67.4, 41.9 , 863 },
 					["races"] = HORDE_ONLY,
@@ -919,9 +923,9 @@ _.Zones =
 					["sourceQuests"] = {
 						49432,	-- The Forlorn Soul
 						49348,	-- A Desecrated Temple
-						--	may also require these other 2 quests.  definitely doesn't require "'til death do us part"
+						47491,	-- Remnants of the Damned
+						--	may also require this quest.  definitely doesn't require "'til death do us part"
 						--	47247,	-- That Which Haunts the Dead
-						--	47491,	-- Remnants of the Damned
 					},
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["coord"] = { 39.5, 24.7, 863 },
