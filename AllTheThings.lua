@@ -17800,13 +17800,13 @@ app.events.VARIABLES_LOADED = function()
 			if cc == nil then
 				-- print("first check");
 				-- check if the current MapID is in Exile's Reach
-				local maps = { 1409, 1609, 1610, 1611, 1726, 1727 };
+				local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
 				while not app.CurrentMapID do
 					app.GetCurrentMapID();
 				end
 				-- print("map check",app.CurrentMapID);
 				-- this is an NPE character, so flag the GUID
-				if contains(maps, app.CurrentMapID) then
+				if maps[app.CurrentMapID] then
 					-- print("on map");
 					return true;
 				-- if character has completed the first NPE quest
