@@ -2614,11 +2614,13 @@ select(2, ...).FlightPathDB = {
 	[2401] = {
 		["name"] = "Alliance Outpost, Exile's Reach Outpost",
 		["faction"] = 2,
+		["u"] = NEVER_IMPLEMENTED,
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
 	},
 	[2402] = {
 		["name"] = "Ogre Citadel, Exile's Reach Island",
 		["faction"] = 2,
+		["u"] = NEVER_IMPLEMENTED,
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
 	},
 };
