@@ -1211,6 +1211,12 @@ _.ExpansionFeatures =
 											i(181327),	-- Spineforged Tenderizer
 										},
 									}),
+									n(165686, {	-- Ashen Amalgamation
+										["description"] = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court.  Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water.  Put out enough fires, and the rare will spawn.",
+										["g"] = {
+											i(183107),	-- Char (PET!)
+										},
+									}),
 									o(356693, {	-- Baroness Vashj's Extravagant Tribute
 										["cr"] = 168444,	-- Baroness Vashj <Matron of Spies>
 										["g"] = {
@@ -1515,7 +1521,6 @@ _.ExpansionFeatures =
 											i(180957),	-- Batwing Glaive
 										},
 									}),
-									i(183107),	-- Char (PET!) - it looks like this drops from Ashen Amalgamation, probably npcID 165686.  requires having Anima-Infused Waters from Sika's tribute and then putting out fires from the "traditional" decorations until the amalgamation spawns.  TODO: confirm that info and then figure out a way to convey it in ATT
 								},
 							}),
 							n(-961, {	-- Tier 1: A New Court
@@ -2003,6 +2008,10 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
 								}),
+								q(63699, {	-- Sika's Best Friend
+									["provider"] = { "n", 166577 },	-- Sika
+									["coord"] = { 52.6, 82.5, 1533 },	-- Bastion
+								}),
 								q(61898, {	-- Small Bites
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 165490 },	-- Picky Stefan
@@ -2249,6 +2258,10 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-963, {	-- Tier 3: Court Influencer
+								q(63690, {	-- Alexandros Mograine's Best Friend
+									["provider"] = { "n", 171933 },	-- Alexandros Mograine
+									["coord"] = { 50.4, 67.4, 1536 },	-- Maldraxxus
+								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
