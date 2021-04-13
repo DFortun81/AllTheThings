@@ -369,6 +369,7 @@ _.Zones =
 					},
 				}),
 				n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
+					["description"] = "You can use either of the keys listed below to open an Ethereum Stasis Chamber.",
 					["coords"] = {
 						{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 						{ 49.6, 15.8, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
@@ -376,9 +377,11 @@ _.Zones =
 						{ 52.6, 20.0, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 					},
 					["cost"] = {
+						{ "i", 32773, 1 },	-- Bash'ir's Skeleton Key
 						{ "i", 29750, 1 },	-- Ethereum Stasis Chamber Key
 					},
 					["groups"] = {
+						i(31941),	-- Mark of the Nexus-King
 						i(31569, {	-- Mistshroud Shoulders
 							["cr"] = 22827,	-- Gorgolon the All-Seeing
 						}),

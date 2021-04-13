@@ -7,6 +7,31 @@ _.Zones =
 	m(OUTLAND, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(RARES, {
+				n(23391, {	-- Bash'ir
+					["coords"] = {
+						{ 52.8, 13.0, BLADES_EDGE_MOUNTAINS },
+						{ 53.6, 16.6, BLADES_EDGE_MOUNTAINS },
+					},
+					["cost"] = {
+						{ "i", 32759, 1 },	-- Accelerator Module
+					},
+					["g"] = {
+						i(32572),	-- Apexis Crystal
+					},
+				}),
+				n(23390, {	-- Bash'ir's Harbinger
+					["coords"] = {
+						{ 51.6, 13.6, BLADES_EDGE_MOUNTAINS },
+						{ 53.0, 13.0, BLADES_EDGE_MOUNTAINS },
+					},
+					["cost"] = {
+						{ "i", 32759, 1 },	-- Accelerator Module
+					},
+					["g"] = {
+						i(32572),	-- Apexis Crystal
+						i(32773),	-- Bash'ir's Skeleton Key
+					},
+				}),
 				n(23261, {	-- Furywing
 					["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
