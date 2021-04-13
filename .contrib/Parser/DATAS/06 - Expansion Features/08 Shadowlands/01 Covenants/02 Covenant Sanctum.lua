@@ -6,8 +6,53 @@ _.ExpansionFeatures =
 {
 	tier(9, {	-- Shadowlands
 		n(-900, {	-- Covenant Sanctum
-			["description"] = "These rewards are shared between each Covenant.",
+			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(14835),		-- A Resolute Bond
+					ach(14636),		-- Adventurer in Chief
+					ach(14843),		-- Adventures: Harmony of Purpose
+					ach(14844, {	-- Adventures: Into the Breach
+						crit(1),	-- Breach the Planes
+						crit(2),	-- Ghelak's Revenge
+						crit(3),	-- Coalescing Stygia
+						crit(4),	-- Topple the Giants
+						crit(5),	-- Dark Skies, Darker Prospects
+						crit(6),	-- Dravok's Plot
+						crit(7),	-- Grandiose Designs
+						crit(8),	-- Cutting the Threads
+						crit(9),	-- Shades of Despair
+						crit(10),	-- Krala, Wings of Woe
+					}),
+					ach(14847, {	-- Adventures: Protector of the Shadowlands
+						ach(14845),	-- Adventures: A Step in the Right Direction
+						ach(14846),	-- Adventures: Leaves in the Forest
+					}),
+					ach(14842, {	-- Adventures: Strength and Resilience
+						ach(14840),	-- Adventures: Learning the Ropes
+						ach(14841),	-- Adventures: Now You're Cooking
+					}),
+					ach(14839),		-- Bound to Adventure
+					ach(14834),		-- Bound with Purpose
+					ach(14627),		-- Choosing your Purpose
+					ach(14631, {	-- Champion of the Covenant
+						ach(14628),	-- The Road to Renown
+						ach(14629),	-- Gaining Respect
+						ach(14630),	-- Becoming a Hero
+					}),
+					ach(14632),		-- Conducting Anima
+					ach(14639),		-- Dedication to the Restoration
+					ach(14633),		-- Master Navigator
+					ach(14837),		-- Nexus of Bonds
+					ach(14777),		-- Restoration Expert
+					ach(15025, {	-- Sanctum Superior
+						ach(15023),	-- We Can Rebuild
+						ach(15024),	-- Denying the Drought
+					}),
+					ach(14638),		-- The Anima Must Flow
+					ach(14836),		-- Unwavering Bond
+					ach(14637),		-- Your Covenant's Flavor
+				}),
 				n(-914, {	-- Adventures
 					["crs"] = {
 						154527,	-- Command Table [Kyrian]

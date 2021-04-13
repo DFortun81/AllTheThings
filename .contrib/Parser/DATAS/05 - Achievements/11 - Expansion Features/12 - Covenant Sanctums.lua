@@ -8,9 +8,9 @@ _.Achievements =
 		n(-10104, {	-- Covenant Sanctums
 			n(-9955, {	-- General
 				-- These are available to all players regardless of covenant
-				ach(14835),	-- A Resolute Bond
-				ach(14636),	-- Adventurer in Chief
-				ach(14843),	-- Adventures: Harmony of Purpose
+				ach(14835),		-- A Resolute Bond
+				ach(14636),		-- Adventurer in Chief
+				ach(14843),		-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
 					crit(1),	-- Breach the Planes
 					crit(2),	-- Ghelak's Revenge
@@ -31,23 +31,26 @@ _.Achievements =
 					ach(14840),	-- Adventures: Learning the Ropes
 					ach(14841),	-- Adventures: Now You're Cooking
 				}),
-				ach(14839),	-- Bound to Adventure
-				ach(14834),	-- Bound with Purpose
-				ach(14627),	-- Choosing your Purpose
+				ach(14839),		-- Bound to Adventure
+				ach(14834),		-- Bound with Purpose
+				ach(14627),		-- Choosing your Purpose
 				ach(14631, {	-- Champion of the Covenant
 					ach(14628),	-- The Road to Renown
 					ach(14629),	-- Gaining Respect
 					ach(14630),	-- Becoming a Hero
 				}),
-				ach(14632),	-- Conducting Anima
-				ach(14639),	-- Dedication to the Restoration
-				ach(14633),	-- Master Navigator
-				ach(14837),	-- Nexus of Bonds
-				ach(14502),	-- Pursuing Loyalty
-				ach(14777),	-- Restoration Expert
-				ach(14638),	-- The Anima Must Flow
-				ach(14836),	-- Unwavering Bond
-				ach(14637),	-- Your Covenant's Flavor
+				ach(14632),		-- Conducting Anima
+				ach(14639),		-- Dedication to the Restoration
+				ach(14633),		-- Master Navigator
+				ach(14837),		-- Nexus of Bonds
+				ach(14777),		-- Restoration Expert
+				ach(15025, {	-- Sanctum Superior
+					ach(15023),	-- We Can Rebuild
+					ach(15024),	-- Denying the Drought
+				}),
+				ach(14638),		-- The Anima Must Flow
+				ach(14836),		-- Unwavering Bond
+				ach(14637),		-- Your Covenant's Flavor
 			}),
 			n(-939, {	-- Covenant: Kyrian
 				-- These are only available to Kyrian covenant members
@@ -121,6 +124,7 @@ _.Achievements =
 					crit(10),	-- Azaruux
 				}),
 				ach(14864),	-- Personal Nightmare
+				ach(14502),	-- Pursuing Loyalty
 				ach(14852),	-- The Hoot of the Issue
 				ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
 					ach(14340),	-- The Path Towards Ascension 1
