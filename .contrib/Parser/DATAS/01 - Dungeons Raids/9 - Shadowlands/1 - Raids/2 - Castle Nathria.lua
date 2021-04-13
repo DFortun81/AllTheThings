@@ -35,7 +35,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						166970,	-- The Council of Blood — Lord Stavros
 						168938,	-- Sire Denathrius
 						164407,	-- Sludgefist
-						172145,	-- Shriekwing
+						164406,	-- Shriekwing
 					},
 				}),
 			}),
@@ -230,7 +230,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -402,7 +402,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -753,7 +753,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1105,7 +1105,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
