@@ -7,16 +7,9 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(14, {	-- Arathi Highlands
 			n(FLIGHT_PATHS, {
-				fp(601, {	-- Galen's Fall, Arathi
-					["coord"] = { 13.4, 34.8, 14 },
-					["races"] = HORDE_ONLY,
-				}),
-				fp(17, {	-- Hammerfall, Arathi
-					["coord"] = { 68.2, 33.4, 14 },
-				}),
-				fp(16, {	-- Refuge Pointe, Arathi
-					["coord"] = { 39.8, 47.4, 14 },
-				}),
+				fp(601),	-- Galen's Fall, Arathi
+				fp(17),	-- Hammerfall, Arathi
+				fp(16),	-- Refuge Pointe, Arathi
 			}),
 		}),
 	}),

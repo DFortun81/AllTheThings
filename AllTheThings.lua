@@ -6779,6 +6779,9 @@ local fields = {
 		end
 		return app.asset("fp_neutral");
 	end,
+	["altQuests"] = function(t)
+		return t.info.altQuests;
+	end,
 	["description"] = function(t)
 		local description = t.info.description;
 		return (description and (description .."\n\n") or "") .. L["FLIGHT_PATHS_DESC"];
@@ -6831,6 +6834,9 @@ local fields = {
 	["nmr"] = function(t)
 		local r = t.r;
 		return r and r ~= app.FactionID;
+	end,
+	["sourceQuests"] = function(t)
+		return t.info.sourceQuests;
 	end,
 };
 app.BaseFlightPath = app.BaseObjectFields(fields);
@@ -12758,16 +12764,15 @@ function app:GetDataCache()
 		db.OnUpdate = function(self)
 			for i,fp in pairs(app.FlightPathDB) do
 				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					self.fps[i] = fp;
-					tinsert(self.g, fp);
+					self.fps[i] = true;
+					tinsert(self.g, app.CreateFlightPath(tonumber(i)));
 				end
 			end
 			table.sort(self.g, function(a, b)
-				return a.text < b.text;
+				return a.name < b.name;
 			end);
 		end;
-		db.OnUpdate(db);
+		db:OnUpdate();
 		db.text = L["FLIGHT_PATHS"];
 		db.icon = app.asset("Category_FlightPaths");
 		table.insert(g, db);
@@ -17764,7 +17769,6 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_ACCEPTED");
 		RefreshSaves();
 
-		app.CacheFlightPathData();
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");

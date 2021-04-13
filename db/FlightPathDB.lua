@@ -47,10 +47,12 @@ select(2, ...).FlightPathDB = {
 	{
 		["name"] = "Refuge Pointe, Arathi",
 		["faction"] = 2,
+		["coord"] = { 39.8, 47.4, 14 },
 	}, -- [16]
 	{
 		["name"] = "Hammerfall, Arathi",
 		["faction"] = 1,
+		["coord"] = { 68.2, 33.4, 14 },
 	}, -- [17]
 	{
 		["name"] = "Booty Bay, Stranglethorn",
@@ -148,7 +150,12 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Bilgewater Harbor, Azshara",
 		["faction"] = 1,
 	}, -- [44]
-	nil, -- [45]
+	{
+		["name"] = "Nethergarde Keep, Blasted Lands",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 61.2, 21.6, 17 },
+		["faction"] = 2,
+	}, -- [45]
 	nil, -- [46]
 	nil, -- [47]
 	nil, -- [48]
@@ -227,10 +234,14 @@ select(2, ...).FlightPathDB = {
 	}, -- [71]
 	{
 		["name"] = "Cenarion Hold, Silithus",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 52.8, 34.6, 81 },
 		["faction"] = 1,
 	}, -- [72]
 	{
 		["name"] = "Cenarion Hold, Silithus",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 54.4, 32.8, 81 },
 		["faction"] = 2,
 	}, -- [73]
 	{
@@ -622,6 +633,30 @@ select(2, ...).FlightPathDB = {
 		["name"] = "The Harborage, Swamp of Sorrows",
 		["faction"] = 2,
 	},
+	[601] = {
+		["name"] = "Galen's Fall, Arathi",
+		["coord"] = { 13.4, 34.8, 14 },
+		["faction"] = 1,
+		-- TODO: requires sourceQuests/altQuests as it is not collectible for my main
+	},
+	[602] = { 
+		["name"] = "Surwich, Blasted Lands",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 47.0, 89.2, 17 },
+		["faction"] = 2,
+	},
+	[603] = {
+		["name"] = "Sunveil Excursion, Blasted Lands",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 50.8, 72.8, 17 },
+		["faction"] = 1,
+	},
+	[604] = {
+		["name"] = "Dreadmaul Hold, Blasted Lands",
+		["description"] = "Speak to Zidormi to visit the past to access this point.",
+		["coord"] = { 43.6, 14.2, 17 },
+		["faction"] = 1,
+	},
 	[2398] = {
 		["name"] = "Bleak Redoubt, Maldraxxus",
 	},
@@ -872,11 +907,12 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 1,
 	},
 	[646] = {
-		["altQuests"] = {
-			27438, -- [1]
-		},
 		["name"] = "Forsaken Forward Command, Gilneas",
 		["faction"] = 1,
+		["altQuests"] = { 27438 }, -- The Great Escape
+		["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
+		["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
+		["coord"] = { 57.2, 17.8, 217 },
 	},
 	[1293] = {
 		["name"] = "Tushui Landing, Timeless Isle",
@@ -1392,10 +1428,14 @@ select(2, ...).FlightPathDB = {
 	},
 	[1537] = {
 		["name"] = "Shattered Landing, Blasted Lands",
+		["description"] = "Must be in the current version of Blasted Lands to access this point.",
+		["coord"] = { 73.0, 48.6, 17 },
 		["faction"] = 1,
 	},
 	[1538] = {
 		["name"] = "Shattered Beachhead, Blasted Lands",
+		["description"] = "Must be in the current version of Blasted Lands to access this point.",
+		["coord"] = { 67.6, 28.0, 17 },
 		["faction"] = 2,
 	},
 	[2053] = {
@@ -2570,5 +2610,15 @@ select(2, ...).FlightPathDB = {
 	[1054] = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
+	},
+	[2401] = {
+		["name"] = "Alliance Outpost, Exile's Reach Outpost",
+		["faction"] = 2,
+		-- TODO: likely requires customCollect/sourceQuests/altQuests?
+	},
+	[2402] = {
+		["name"] = "Ogre Citadel, Exile's Reach Island",
+		["faction"] = 2,
+		-- TODO: likely requires customCollect/sourceQuests/altQuests?
 	},
 };
