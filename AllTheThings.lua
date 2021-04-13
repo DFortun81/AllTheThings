@@ -6789,6 +6789,7 @@ local fields = {
 	["collected"] = function(t)
 		if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then return 1; end
 		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
+		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
