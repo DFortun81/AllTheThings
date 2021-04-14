@@ -18,10 +18,16 @@ namespace ATT
             try
             {
                 // Prepare console output to a file.
+#if ANYCLASSIC
+                var databaseRootFolder = "../.db";
+#else
+                var databaseRootFolder = ".";
+#endif
+
                 Directory.CreateDirectory("../Debugging");
 
                 // Load all of the RAW JSON Data into the database.
-                var files = Directory.EnumerateFiles(".", "*.json", SearchOption.AllDirectories).ToList();
+                var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
                 files.Sort();
                 foreach (var fileName in files)
                 {
@@ -43,10 +49,11 @@ namespace ATT
                 Trace.WriteLine("Done parsing JSON files...");
 
                 // Load all of the Lua files into the database.
-                var luaFiles = Directory.GetFiles(".", "*.lua", SearchOption.AllDirectories).ToList();
-                if (luaFiles.Contains(".\\_main.lua"))
+                var mainFileName = $"{databaseRootFolder}\\_main.lua";
+                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+                if (luaFiles.Contains(mainFileName))
                 {
-                    luaFiles.Remove(".\\_main.lua"); // Do not iterate over the header file.
+                    luaFiles.Remove(mainFileName); // Do not iterate over the header file.
                     luaFiles.Sort();
                 }
                 else
@@ -59,7 +66,7 @@ namespace ATT
                 }
 
                 Lua lua = new Lua();
-                ProcessLuaFile(lua, "./_main.lua");
+                ProcessLuaFile(lua, mainFileName);
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
