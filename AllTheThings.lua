@@ -5931,9 +5931,10 @@ local fields = {
 		return app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		_cache = t.s;
-		if _cache and GetDataSubMember("CollectedSources", _cache) then return 1; end
+		-- _cache = t.s;
+		-- if _cache and GetDataSubMember("CollectedSources", _cache) then print("collected via sourceID",t.artifactID,_cache) return 1; end
 		if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
+		-- This artifact is listed for the current class
 		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
 			SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
 			return 1;
@@ -17683,6 +17684,15 @@ app.events.VARIABLES_LOADED = function()
 		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
+
+	-- Verify artifact cache is the correct version/clear known old bad data
+	local artifactCache, artifactCacheVer = app.GetDataMember("CollectedArtifacts", {}), 1;
+	if not artifactCache["V"] or artifactCache["V"] ~= artifactCacheVer then
+		wipe(artifactCache);
+		artifactCache["V"] = artifactCacheVer;
+		C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+	end
+
 	app:GetDataCache();
 
 	Push(app, "WaitOnMountData", function()

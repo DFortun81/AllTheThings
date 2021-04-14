@@ -213,6 +213,7 @@ app.L = {
 	["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned ";
 	["AH_SCAN_SUCCESSFUL_2"] = " item(s).";
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 
 	-- Instructional Text
