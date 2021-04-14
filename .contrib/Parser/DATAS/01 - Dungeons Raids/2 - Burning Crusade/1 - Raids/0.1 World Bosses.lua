@@ -11,10 +11,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["g"] = {
 			n(18728, { 	-- Doom Lord Kazzak
 				["description"] = "Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",
-				["modelScale"] = 3.8,
-				["isRaid"] = true,
 				["coord"] = { 63.2, 16.0, HELLFIRE_PENINSULA },
 				["maps"] = { HELLFIRE_PENINSULA },
+				["modelScale"] = 3.8,
+				["isRaid"] = true,
 				["g"] = {
 					i(30732),	-- Exodar Life-Staff
 					i(30733),	-- Hope Ender
@@ -30,9 +30,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(17711, { 	-- Doomwalker
 				["description"] = "Doomwalker is a powerful Fel Reaver sent by Kil'jaeden to assault the gates of the Black Temple in Shadowmoon Valley.",
-				["isRaid"] = true,
 				["coord"] = { 71.4, 43.8, SHADOWMOON_VALLEY },
 				["maps"] = { SHADOWMOON_VALLEY },
+				["isRaid"] = true,
 				["g"] = {
 					i(30724),	-- Barrel-Blade Longrifle
 					i(30722),	-- Ethereum Nexus-Reaver

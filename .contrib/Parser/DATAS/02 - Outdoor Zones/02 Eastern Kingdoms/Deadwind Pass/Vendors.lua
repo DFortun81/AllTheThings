@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(42, {	-- Deadwind Pass
+		m(DEADWIND_PASS, {
 			n(VENDORS, {
 				n(18255, {  -- Mage Darius
 					["coord"] = { 47.2, 75.0, 42 },

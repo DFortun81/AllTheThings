@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(42, {	-- Deadwind Pass
+		m(DEADWIND_PASS, {
 			n(ZONEDROPS, {
 				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
 					["crs"] = {
