@@ -821,6 +821,196 @@ _.Zones =
 							i(118038),	-- Steamfury Signet
 						},
 					}),
+					q(36092, {	-- Proof of Strength: Ancient Branch (A)
+						["provider"] = { "i", 114029 },	-- Ancient Branch
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					q(36094, {	-- Proof of Strength: Ancient Branch (H)
+						["provider"] = { "i", 114030 },	-- Ancient Branch
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					q(36103, {	-- Proof of Strength: Basilisk Scale (A)
+						["provider"] = { "i", 114035 },	-- Basilisk Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					q(36104, {	-- Proof of Strength: Basilisk Scale (H)
+						["provider"] = { "i", 114036 },	-- Basilisk Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					q(36084, {	-- Proof of Strength: Botani Bloom (A)
+						["provider"] = { "i", 114024 },	-- Botani Bloom
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					q(36086, {	-- Proof of Strength: Botani Bloom (H)
+						["provider"] = { "i", 114025 },	-- Botani Bloom
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					q(36105, {	-- Proof of Strength: Elemental Crystal (A)
+						["provider"] = { "i", 114037 },	-- Elemental Crystal
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					q(36106, {	-- Proof of Strength: Elemental Crystal (H)
+						["provider"] = { "i", 114038 },	-- Elemental Crystal
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					q(35944, {	-- Proof of Strength: Goren Tooth (A)
+						["provider"] = { "i", 113586 },	-- Acid-Stained Goren Tooth
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					q(35948, {	-- Proof of Strength: Goren Tooth (H)
+						["provider"] = { "i", 113590 },	-- Acid-Stained Goren Tooth
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					q(36081, {	-- Proof of Strength: Gronn Eye (A)
+						["provider"] = { "i", 114022 },	-- Gronn Eye
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					q(36083, {	-- Proof of Strength: Gronn Eye (H)
+						["provider"] = { "i", 114023 },	-- Gronn Eye
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					q(36078, {	-- Proof of Strength: Gronnling Scale (A)
+						["provider"] = { "i", 114020 },	-- Gronnling Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					q(36080, {	-- Proof of Strength: Gronnling Scale (H)
+						["provider"] = { "i", 114021 },	-- Gronnling Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					q(36075, {	-- Proof of Strength: Ogron Horn (A)
+						["provider"] = { "i", 114018 },	-- Worn Ogron Horn
+						["crs"] = { 81240 },	-- Ogron Spinecrusher
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36076, {	-- Proof of Strength: Ogron Horn (H)
+						["provider"] = { "i", 114019 },	-- Worn Ogron Horn
+						["crs"] = { 81240 },	-- Ogron Spinecrusher
+						["races"] = HORDE_ONLY,
+					}),
+					q(36090, {	-- Proof of Strength: Orc Thorn (A)
+						["provider"] = { "i", 114026 },	-- Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36091, {	-- Proof of Strength: Orc Thorn (H)
+						["provider"] = { "i", 114027 },	-- Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = HORDE_ONLY,
+					}),
+					q(36096, {	-- Proof of Strength: Ravager Claw (A)
+						["provider"] = { "i", 114031 },	-- Ravager Claw
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					q(36097, {	-- Proof of Strength: Ravager Claw (H)
+						["provider"] = { "i", 114032 },	-- Ravager Claw
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					q(36098, {	-- Proof of Strength: Wasp Stinger (A)
+						["provider"] = { "i", 114033 },	-- Wasp Stinger
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							84852,	-- Heartsting Pollinator
+							85695,	-- Mistcreep Stinger
+							83520,	-- Stoneshard Hunter
+						},
+					}),
+					q(36101, {	-- Proof of Strength: Wasp Stinger (H)
+						["provider"] = { "i", 114034 },	-- Wasp Stinger
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							84852,	-- Heartsting Pollinator
+							85695,	-- Mistcreep Stinger
+							83520,	-- Stoneshard Hunter
+						},
+					}),
 					q(35686,  {	-- Rage and Wisdom (A)
 						["provider"] = { "n", 75127 },	-- Vindicator Maraad
 						["coord"] = { 52.8, 59.6, 543 },
@@ -1010,197 +1200,6 @@ _.Zones =
 							36208,	-- The Crystal Shard
 						},
 					}),
-					---
-					i(114029, {	-- Ancient Branch (A)
-						["questID"] = 36092,	-- Proof of Strength: Ancient Branch
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
-						},
-					}),
-					i(114030, {	-- Ancient Branch (H)
-						["questID"] = 36094,	-- Proof of Strength: Ancient Branch
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
-						},
-					}),
-					i(114035, {	-- Basilisk Scale (A)
-						["questID"] = 36103,	-- Proof of Strength: Basilisk Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					i(114036, {	-- Basilisk Scale (H)
-						["questID"] = 36104,	-- Proof of Strength: Basilisk Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					i(114024, {	-- Botani Bloom (A)
-						["questID"] = 36084,	-- Proof of Strength: Botani Bloom
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					i(114025, {	-- Botani Bloom (H)
-						["questID"] = 36086,	-- Proof of Strength: Botani Bloom
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					i(114037, {	-- Elemental Crystal (A)
-						["questID"] = 36105,	-- Proof of Strength: Elemental Crystal
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					i(114038, {	-- Elemental Crystal (H)
-						["questID"] = 36106,	-- Proof of Strength: Elemental Crystal
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					i(113586, {	-- Goren Tooth (A)
-						["questID"] = 35944,	-- Proof of Strength: Goren Tooth
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					i(113590, {	-- Goren Tooth (H)
-						["questID"] = 35948,	-- Proof of Strength: Goren Tooth
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					i(114022, {	-- Gronn Eye (A)
-						["questID"] = 36081,	-- Proof of Strength: Gronn Eye
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					i(114023, {	-- Gronn Eye (H)
-						["questID"] = 36083,	-- Proof of Strength: Gronn Eye
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					i(114020, {	-- Gronnling Scale (A)
-						["questID"] = 36078,	-- Proof of Strength: Gronnling Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					i(114021, {	-- Gronnling Scale (H)
-						["questID"] = 36080,-- Proof of Strength: Gronnling Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					i(114026, {	-- Orc Thorn (A)
-						["questID"] = 36090,	-- Proof of Strength: Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(114027, {	-- Orc Thorn (H)
-						["questID"] = 36091,	-- Proof of Strength: Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = HORDE_ONLY,
-					}),
-					i(114031, {	-- Ravager Claw (A)
-						["questID"] = 36096,	-- Proof of Strength: Ravager Claw
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					i(114032, {	-- Ravager Claw (H)
-						["questID"] = 36097,	-- Proof of Strength: Ravager Claw
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					i(114033, {	-- Wasp Stinger (A)
-						["questID"] = 36098,	-- Proof of Strength: Wasp Stinger
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							84852,	-- Heartsting Pollinator
-							85695,	-- Mistcreep Stinger
-							83520,	-- Stoneshard Hunter
-						},
-					}),
-					i(114034, {	-- Wasp Stinger (H)
-						["questID"] = 36101,	-- Proof of Strength: Wasp Stinger
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							84852,	-- Heartsting Pollinator
-							85695,	-- Mistcreep Stinger
-							83520,	-- Stoneshard Hunter
-						},
-					}),
-					i(114018, {	-- Worn Ogron Horn (A)
-						["questID"] = 36075,	-- Proof of Strength: Ogron Horn
-						["crs"] = { 81240 },	-- Ogron Spinecrusher
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(114019, {	-- Worn Ogron Horn (H)
-						["questID"] = 36076,	-- Proof of Strength: Ogron Horn
-						["crs"] = { 81240 },	-- Ogron Spinecrusher
-						["races"] = HORDE_ONLY,
-					}),
 				}),
 				q(36037, {	-- A Centurion Without a Cause
 					["provider"] = { "n", 83820 },	-- High Centurion Tormmok
@@ -1304,26 +1303,6 @@ _.Zones =
 				q(36603, {	-- Brimstone Springs (bonus objectives)
 					["coord"] = { 40.4, 54.6, 543 },
 				}),
-				i(113449, {	-- Chunk of Crater Lord (A)
-					["questID"] = 35812,	-- Trophy of Glory: Crater Lord Igneous
-					["crs"] = { 81528 },	-- Crater Lord Igneous
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-					["coords"] = {
-						{ 42.9, 59.3, 543 },
-						{ 43.9, 59.8, 543 },
-					},
-				}),
-				i(113448, {	-- Chunk of Crater Lord (H)
-					["questID"] = 35811,	-- Trophy of Glory: Crater Lord Igneous
-					["crs"] = { 81528 },	-- Crater Lord Igneous
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					["coords"] = {
-						{ 42.9, 59.3, 543 },
-						{ 43.9, 59.8, 543 },
-					},
-				}),
 				q(37921, {	-- Clearing the Way (A) (bonus objective)
 					["lvl"] = 100,
 					["races"] = ALLIANCE_ONLY,
@@ -1350,20 +1329,6 @@ _.Zones =
 						i(112598),	-- Wildwood Wrangler Gauntlets
 					},
 				}),
-				i(113445, {	-- Crystalized Steam (A)
-					["questID"] = 35808,	-- Trophy of Glory: Erosian
-					["coord"] = { 51.8, 41.6, 543 },
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = { 81540 },	-- Erosian the Violent
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-				}),
-				i(113444, {	-- Crystalized Steam (H)
-					["questID"] = 35807,	-- Trophy of Glory: Erosian
-					["coord"] = { 51.8, 41.6, 543 },
-					["races"] = HORDE_ONLY,
-					["crs"] = { 81540 },	-- Erosian the Violent
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-				}),
 				q(38254, {	-- Derailment (A)
 					["provider"] = { "n", 90180 },	-- Exarch Naielle
 					["coord"] = { 52.5, 9.8, 543 },
@@ -1375,28 +1340,6 @@ _.Zones =
 					["coord"] = { 52.5, 9.8, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38568,	-- We Need a Shipwright
-				}),
-				i(113458, {	-- Ebony Feather (A)
-					["questID"] = 35817,	-- Trophy of Glory: Roardan the Sky Terror
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = { 77093 },	-- Roardan the Sky Terror
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-					["coords"] = {
-						{ 61.7, 61.7, 543 },
-						{ 53.0, 63.1, 543 },
-						{ 50.8, 67.6, 543 },
-					},
-				}),
-				i(113459, {	-- Ebony Feather (H)
-					["questID"] = 35818,	-- Trophy of Glory: Roardan the Sky Terror
-					["races"] = HORDE_ONLY,
-					["crs"] = { 77093 },	-- Roardan the Sky Terror
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					["coords"] = {
-						{ 61.7, 61.7, 543 },
-						{ 53.0, 63.1, 543 },
-						{ 50.8, 67.6, 543 },
-					},
 				}),
 				q(36504, {	-- Evermorn Springs (bonus objective)
 					["coord"] = { 43.0, 79.9, 543 },
@@ -1414,28 +1357,6 @@ _.Zones =
 						i(118033),	-- Wildwood Wrangler Gloves
 					},
 				}),
-				i(113457, {	-- Fang of the Doomwing (A)
-					["questID"] = 35816,	-- Trophy of Glory: Charl Doomwing
-					["crs"] = { 81548 },	-- Charl Doomwing
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-					["coords"] = {
-						{ 47.9, 46.3, 543 },
-						{ 46.1, 46.8, 543 },
-						{ 45.2, 51.9, 543 },
-					},
-				}),
-				i(113456, {	-- Fang of the Doomwing (H)
-					["questID"] = 35815,	-- Trophy of Glory: Charl Doomwing
-					["crs"] = { 81548 },	-- Charl Doomwing
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					["coords"] = {
-						{ 47.9, 46.3, 543 },
-						{ 46.1, 46.8, 543 },
-						{ 45.2, 51.9, 543 },
-					},
-				}),
 				q(34335, {	-- Garrison Campaign: Crows In The Field
 					["provider"] = { "n", 78192 },	-- Choluna
 					["races"] = HORDE_ONLY,
@@ -1448,31 +1369,6 @@ _.Zones =
 					["g"] = {
 						follower(212),	-- Spirit of Bony Xuk
 					},
-				}),
-				i(113446, {	-- Globe of Dead Water (A)
-					["questID"] = 35809,	-- Trophy of Glory: Dessicus
-					["coord"] = { 38.8, 51.1, 543 },
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = { 81529 },	-- Dessicus
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-				}),
-				i(113447, {	-- Globe of Dead Water (H)
-					["questID"] = 35810,	-- Trophy of Glory: Dessicus
-					["coord"] = { 38.8, 51.1, 543 },
-					["races"] = HORDE_ONLY,
-					["crs"] = { 81529 },	-- Dessicus
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-				}),
-				i(113260, {	-- Glowing Red Pod (A)
-					["questID"] = 35642,	-- Mysterious Pod
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = { 80714 },	-- Fungal Lurcher
-					["description"] = "Must have accepted |cFFFFD700Scout Forensics|r for this to drop.",
-				}),
-				i(112378, {	-- Glowing Red Pod (H)
-					["questID"] = 35021,	-- Mysterious Pod
-					["races"] = HORDE_ONLY,
-					["crs"] = { 80714 },	-- Fungal Lurcher
 				}),
 				q(33544, {	-- Goren, Goren, Gone!
 					["provider"] = { "n", 84176 },	-- Ripfist
@@ -1621,6 +1517,17 @@ _.Zones =
 				q(36563, {	-- Mistcreep Mire (bonus objective)
 					["coord"] = { 51.9, 66.6, 543 },
 				}),
+				q(35642, {	-- Mysterious Pod (A)
+					["provider"] = { "i", 113260 },	-- Glowing Red Pod
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 80714 },	-- Fungal Lurcher
+					["description"] = "Must have accepted |cFFFFD700Scout Forensics|r for this to drop.",
+				}),
+				q(35021, {	-- Mysterious Pod (H)
+					["provider"] = { "i", 112378 },	-- Glowing Red Pod
+					["races"] = HORDE_ONLY,
+					["crs"] = { 80714 },	-- Fungal Lurcher
+				}),
 				q(34463, {	-- Mysterious Ring
 					--["objectID"] = 229330,	-- Mysterious Ring
 					["coord"] = { 39.6, 39.9, 543 },
@@ -1684,20 +1591,6 @@ _.Zones =
 						i(118035),	-- Steamburst Waistwrap
 						i(118036),	-- Wildwood Wrangler Links
 					},
-				}),
-				i(113453, {	-- Precious Mushroom (A)
-					["questID"] = 35813,	-- Trophy of Glory: Fungal Praetorian
-					["coord"] = { 58.0, 63.7, 543 },
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = { 80785 },	-- Fungal Praetorian
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-				}),
-				i(113454, {	-- Precious Mushroom (H)
-					["questID"] = 35814,	-- Trophy of Glory: Fungal Praetorian
-					["coord"] = { 58.0, 63.7, 543 },
-					["races"] = HORDE_ONLY,
-					["crs"] = { 80785 },	-- Fungal Praetorian
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(36341, {	-- Primal Fury (A)
 					["provider"] = { "n", 84185 },	-- Thisalee Crow
@@ -1796,36 +1689,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["isBreadcrumb"] = true,
-				}),
-				i(113461, {	-- Shimmering Scale (A)
-					["questID"] = 35820,	-- Trophy of Glory: Khargax the Devourer
-					["crs"] = { 81537 },	-- Khargax the Devourer
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-					["coords"] = {
-						{ 52.3, 67.9, 543 },
-						{ 51.5, 67.1, 543 },
-						{ 50.8, 66.3, 543 },
-						{ 51.6, 65.6, 543 },
-						{ 53.1, 65.8, 543 },
-						{ 52.9, 67.4, 543 },
-						{ 52.6, 68.0, 543 },
-					},
-				}),
-				i(113460, {	-- Shimmering Scale (H)
-					["questID"] = 35819,	-- Trophy of Glory: Khargax the Devourer
-					["crs"] = { 81537 },	-- Khargax the Devourer
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					["coords"] = {
-						{ 52.3, 67.9, 543 },
-						{ 51.5, 67.1, 543 },
-						{ 50.8, 66.3, 543 },
-						{ 51.6, 65.6, 543 },
-						{ 53.1, 65.8, 543 },
-						{ 52.9, 67.4, 543 },
-						{ 52.6, 68.0, 543 },
-					},
 				}),
 				q(35017, {	-- Skulltaker's Revenge
 					["provider"] = { "n", 81185 },	-- Dying Skulltaker
@@ -1975,6 +1838,166 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38570,	-- Derailment
 				}),
+				q(36502, {	-- Trophy of Glory: Biolante (A)
+					["provider"] = { "i", 116159 },	-- Writhing Green Tendril
+					["crs"] = { 75207 },	-- Biolante
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["coords"] = {
+						{ 60.5, 54.4, 543 },
+						{ 61.4, 53.0, 543 },
+						{ 62.4, 52.8, 543 },
+						{ 63.1, 54.4, 543 },
+					},
+				}),
+				q(36503, {	-- Trophy of Glory: Biolante (H)
+					["provider"] = { "i", 116160 },	-- Writhing Green Tendril
+					["crs"] = { 75207 },	-- Biolante
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					["coords"] = {
+						{ 60.5, 54.4, 543 },
+						{ 61.4, 53.0, 543 },
+						{ 62.4, 52.8, 543 },
+						{ 63.1, 54.4, 543 },
+					},
+				}),
+				q(35816, {	-- Trophy of Glory: Charl Doomwing (A)
+					["provider"] = { "i", 113457 },	-- Fang of the Doomwing
+					["crs"] = { 81548 },	-- Charl Doomwing
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["coords"] = {
+						{ 47.9, 46.3, 543 },
+						{ 46.1, 46.8, 543 },
+						{ 45.2, 51.9, 543 },
+					},
+				}),
+				q(35815, {	-- Trophy of Glory: Charl Doomwing (H)
+					["provider"] = { "i", 113456 },	-- Fang of the Doomwing
+					["crs"] = { 81548 },	-- Charl Doomwing
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					["coords"] = {
+						{ 47.9, 46.3, 543 },
+						{ 46.1, 46.8, 543 },
+						{ 45.2, 51.9, 543 },
+					},
+				}),
+				q(35812, {	-- Trophy of Glory: Crater Lord Igneous (A)
+					["provider"] = { "i", 113449 },	-- Chunk of Crater Lord
+					["crs"] = { 81528 },	-- Crater Lord Igneous
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["coords"] = {
+						{ 42.9, 59.3, 543 },
+						{ 43.9, 59.8, 543 },
+					},
+				}),
+				q(35811, {	-- Trophy of Glory: Crater Lord Igneous (H)
+					["provider"] = { "i", 113448 },	-- Chunk of Crater Lord
+					["crs"] = { 81528 },	-- Crater Lord Igneous
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					["coords"] = {
+						{ 42.9, 59.3, 543 },
+						{ 43.9, 59.8, 543 },
+					},
+				}),
+				q(35809, {	-- Trophy of Glory: Dessicus (A)
+					["provider"] = { "i", 113446 },	-- Globe of Dead Water
+					["coord"] = { 38.8, 51.1, 543 },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 81529 },	-- Dessicus
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+				}),
+				q(35810, {	-- Trophy of Glory: Dessicus (H)
+					["provider"] = { "i", 113447 },	-- Globe of Dead Water
+					["coord"] = { 38.8, 51.1, 543 },
+					["races"] = HORDE_ONLY,
+					["crs"] = { 81529 },	-- Dessicus
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+				}),
+				q(35808, {	-- Trophy of Glory: Erosian (A)
+					["provider"] = { "i", 113445 },	-- Crystalized Steam
+					["coord"] = { 51.8, 41.6, 543 },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 81540 },	-- Erosian the Violent
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+				}),
+				q(35807, {	-- Trophy of Glory: Erosian (H)
+					["provider"] = { "i", 113444 },	-- Crystalized Steam
+					["coord"] = { 51.8, 41.6, 543 },
+					["races"] = HORDE_ONLY,
+					["crs"] = { 81540 },	-- Erosian the Violent
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+				}),
+				q(35813, {	-- Trophy of Glory: Fungal Praetorian (A)
+					["provider"] = { "i", 113453 },	-- Precious Mushroom
+					["coord"] = { 58.0, 63.7, 543 },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 80785 },	-- Fungal Praetorian
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+				}),
+				q(35814, {	-- Trophy of Glory: Fungal Praetorian (H)
+					["provider"] = { "i", 113454 },	-- Precious Mushroom
+					["coord"] = { 58.0, 63.7, 543 },
+					["races"] = HORDE_ONLY,
+					["crs"] = { 80785 },	-- Fungal Praetorian
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+				}),
+				q(35820, {	-- Trophy of Glory: Khargax the Devourer (A)
+					["provider"] = { "i", 113461 },	-- Shimmering Scale
+					["crs"] = { 81537 },	-- Khargax the Devourer
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["coords"] = {
+						{ 52.3, 67.9, 543 },
+						{ 51.5, 67.1, 543 },
+						{ 50.8, 66.3, 543 },
+						{ 51.6, 65.6, 543 },
+						{ 53.1, 65.8, 543 },
+						{ 52.9, 67.4, 543 },
+						{ 52.6, 68.0, 543 },
+					},
+				}),
+				q(35819, {	-- Trophy of Glory: Khargax the Devourer (H)
+					["provider"] = { "i", 113460 },	-- Shimmering Scale
+					["crs"] = { 81537 },	-- Khargax the Devourer
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					["coords"] = {
+						{ 52.3, 67.9, 543 },
+						{ 51.5, 67.1, 543 },
+						{ 50.8, 66.3, 543 },
+						{ 51.6, 65.6, 543 },
+						{ 53.1, 65.8, 543 },
+						{ 52.9, 67.4, 543 },
+						{ 52.6, 68.0, 543 },
+					},
+				}),
+				q(35817, {	-- Trophy of Glory: Roardan the Sky Terror (A)
+					["provider"] = { "i", 113458 },	-- Ebony Feather
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 77093 },	-- Roardan the Sky Terror
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["coords"] = {
+						{ 61.7, 61.7, 543 },
+						{ 53.0, 63.1, 543 },
+						{ 50.8, 67.6, 543 },
+					},
+				}),
+				q(35818, {	-- Trophy of Glory: Roardan the Sky Terror (H)
+					["provider"] = { "i", 113459 },	-- Ebony Feather
+					["races"] = HORDE_ONLY,
+					["crs"] = { 77093 },	-- Roardan the Sky Terror
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					["coords"] = {
+						{ 61.7, 61.7, 543 },
+						{ 53.0, 63.1, 543 },
+						{ 50.8, 67.6, 543 },
+					},
+				}),
 				q(36480, {	-- Valley of Destruction (bonus objective)
 					["coord"] = { 46.4, 47.2, 543 },
 				}),
@@ -2049,30 +2072,6 @@ _.Zones =
 				}),
 				q(35653, {	-- Wood is Wood -- never went live
 					["u"] = NEVER_IMPLEMENTED,
-				}),
-				i(116159, {	-- Writhing Green Tendril (A)
-					["questID"] = 36502,	-- Trophy of Glory: Biolante
-					["crs"] = { 75207 },	-- Biolante
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35063,	-- We Need an Outpost
-					["coords"] = {
-						{ 60.5, 54.4, 543 },
-						{ 61.4, 53.0, 543 },
-						{ 62.4, 52.8, 543 },
-						{ 63.1, 54.4, 543 },
-					},
-				}),
-				i(116160, {	-- Writhing Green Tendril (H)
-					["questID"] = 36503,	-- Trophy of Glory: Biolante
-					["crs"] = { 75207 },	-- Biolante
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					["coords"] = {
-						{ 60.5, 54.4, 543 },
-						{ 61.4, 53.0, 543 },
-						{ 62.4, 52.8, 543 },
-						{ 63.1, 54.4, 543 },
-					},
 				}),
 				q(35151, {	-- Your Base, Your Choice
 					["provider"] = { "n", 74594 },	-- Durotan
