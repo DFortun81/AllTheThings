@@ -11426,8 +11426,8 @@ local function SetRowData(self, row, data)
 			row.Indicator:Show();
 		end
 		if SetPortraitIcon(row.Texture, data) then
-			row.Texture.Background:SetPoint("LEFT", leftmost, relative, x, 0);
-			row.Texture.Border:SetPoint("LEFT", leftmost, relative, x, 0);
+			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
+			row.Texture.Border:SetPoint("TOPLEFT", row.Texture);
 			row.Texture:SetPoint("LEFT", leftmost, relative, x, 0);
 			row.Texture:Show();
 			leftmost = row.Texture;
