@@ -446,13 +446,13 @@ _.Zones =
 						},
 					}),
 					q(35216,  {	-- Super Seeds (A)
-						--["objectID"] = 235129,	-- Enriched Seeds
+						["provider"] = { "o", 235129 },	-- Enriched Seeds
 						["coord"] = { 49.4, 70.9, 543 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35063,	-- We Need an Outpost
 					}),
 					q(35406,  {	-- Super Seeds (H)
-						--["objectID"] = 235129,	-- Enriched Seeds
+						["provider"] = { "o", 235129 },	-- Enriched Seeds
 						["coord"] = { 49.4, 70.9, 543 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
@@ -537,7 +537,7 @@ _.Zones =
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					}),
 					q(35215,  {	-- The Voice of Iyu (A)
-						--["objectID"] = 231903,	-- Razzlebeard's Report
+						["provider"] = { "o", 231903 },	-- Razzlebeard's Report
 						["coord"] = { 47.6, 72.7, 543 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35063,	-- We Need an Outpost
@@ -1529,7 +1529,7 @@ _.Zones =
 					["crs"] = { 80714 },	-- Fungal Lurcher
 				}),
 				q(34463, {	-- Mysterious Ring
-					--["objectID"] = 229330,	-- Mysterious Ring
+					["provider"] = { "o", 229330 },	-- Mysterious Ring
 					["coord"] = { 39.6, 39.9, 543 },
 					["icon"] = "Interface\\Icons\\inv_jewelry_ring_10",
 				}),
