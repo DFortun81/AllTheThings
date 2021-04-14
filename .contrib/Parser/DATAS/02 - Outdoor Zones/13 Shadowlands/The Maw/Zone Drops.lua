@@ -21,6 +21,7 @@ _.Zones =
 					},
 				}),
 				-- PTR ZONE DROPS
+				-- TODO: figure out other greens, there's probably a full set for each armor type
 				i(186138),	-- Mawsworn Darkcaster's Shoulderpads
 			}),
 		}),

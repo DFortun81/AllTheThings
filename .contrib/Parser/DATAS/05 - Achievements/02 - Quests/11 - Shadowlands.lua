@@ -191,9 +191,8 @@ _.Achievements =
 				},
 			}),
 		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
-			--[[
-			ach(, {	-- Breaking The Chains
-				ach(, {	-- Taking the Tremaculum
+			ach(15035, {	-- Breaking The Chains
+				ach(15033, {	-- Taking the Tremaculum
 					crit(1),	-- Terrorizing the Tremaculum
 					crit(2),	-- Weapons of the Tremaculum
 					crit(3),	-- That's a Good Trick
@@ -205,7 +204,7 @@ _.Achievements =
 					crit(9),	-- The Skyhunt
 					crit(10),	-- Wrath of the Party Herald
 				}),
-				ach(, {	-- Breaking Their Hold
+				ach(15032, {	-- Breaking Their Hold
 					crit(1),	-- Dead On Their Feet
 					crit(2),	-- Here's an Axe, Get to Work!
 					crit(3),	-- You and What Army
@@ -217,7 +216,7 @@ _.Achievements =
 					crit(9),	-- Get to the Point
 					crit(10),	-- Somebody Feed Kevin
 				}),
-				ach(, {	-- Wings Against the Flames
+				ach(15034, {	-- Wings Against the Flames
 					crit(1),	-- Mine's Bigger
 					crit(2),	-- Heart and Soul
 					crit(3),	-- No One Floats Down Here
@@ -225,11 +224,11 @@ _.Achievements =
 					crit(5),	-- Courage of the Soul
 					crit(6),	-- Saved By The Bells
 					crit(7),	-- United In Pride
-					crit(8),	-- The Ember Court
+					crit(8),	-- The Ember Count
 					crit(9),	-- Kill The Flame
 					crit(10),	-- The Dreadful Blend
 				}),
-				ach(, {	-- Rooting Out The Evil
+				ach(15036, {	-- Rooting Out The Evil
 					crit(1),	-- Clean Out the Crucible
 					crit(2),	-- Looming Darkness
 					crit(3),	-- No Soul Left Behind
@@ -242,16 +241,15 @@ _.Achievements =
 					crit(10),	-- Heavy Handed Tactics
 				}),
 			}),
-			ach(),	-- Jailer's Personal Stash
-			ach(),	-- The Zovaal Shuffle
-			ach(, {	-- United Front
+			ach(15001),		-- Jailer's Personal Stash
+			ach(15041),		-- The Zovaal Shuffle
+			ach(15000, {	-- United Front
 				crit(1),	-- Necrolord Assault
 				crit(2),	-- Venthyr Assault
 				crit(3),	-- Night Fae Assault
 				crit(4),	-- Kyrian Assault
 			}),
-			ach(),	-- Up For Grabs
-			--]]
+			ach(15039),		-- Up For Grabs
 		}),
 	}),
 };

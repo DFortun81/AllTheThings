@@ -10,6 +10,15 @@ _.Zones =
 				ach(14744, {	-- Better to Be Lucky Than Dead
 					ach(14743),	-- Deadly Serious
 				}),
+				ach(14961, {	-- Chains of Domination
+				--	TODO: this is in korthia.  if korthia/maw proper are separated, move this
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Maw Walkers
+							["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+						}),
+					},
+				}),
 				ach(14761, {	-- Deciphering Death's Intentions
 					["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
 					["collectible"] = false,

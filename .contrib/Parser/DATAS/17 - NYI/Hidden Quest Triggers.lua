@@ -4592,5 +4592,14 @@ _.HiddenQuestTriggers =
 		q(62878),	-- Sludgefist
 		q(62879),	-- Stone Legion Generals
 		q(62880),	-- Sire Denthrius
+		
+		-- 9.1 PTR
+		q(63820),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
+		q(64077),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
+		q(64153),	-- dancing near a forge for The Zovaal Shuffle
+		q(64154),	-- dancing near a forge for The Zovaal Shuffle
+		q(64155),	-- dancing near a forge for The Zovaal Shuffle
+		q(64161),	-- dancing near a forge for The Zovaal Shuffle
+		q(64158),	-- dancing near a forge for The Zovaal Shuffle
 	}),
 };

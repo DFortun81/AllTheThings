@@ -582,14 +582,6 @@ _.Zones =
 				}),
 
 			--	PTR - TODO: merge with regular quests once this stuff makes it to live
-				--[[
-				q(, {	-- A Matter of Urgency
-				-- i think this showed up on map after turning in Ease of Passage
-				}),
-				q(, {	-- Interrupt the Interrogations
-				-- i think this showed up on map after turning in Ease of Passage
-				}),
-				--]]
 				q(63811, {	-- A Hate, Hate Relationship
 					["sourceQuests"] = { 63764 },	-- Claim the Sky
 					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
@@ -668,11 +660,24 @@ _.Zones =
 					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
 					["coord"] = { 35.8, 32.2, 1961 },	-- Korthia
 				}),
+				q(63901, {	-- Focusing the Eye
+					["sourceQuests"] = {
+						63867,	-- Anger Management
+						63896,	-- Tears of the Damned
+					},
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 37.4, 27.0, 1543 },
+				}),
 				q(63831, {	-- Fury Given Voice
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63902, {	-- Good News, Everyone!
+					["sourceQuests"] = { 63901 },	-- Focusing the Eye
+					["provider"] = { "n", 178950 },	-- Danica
+					["coord"] = { 40.9, 21.9, 1543 },
 				}),
 				q(63895, {	-- Grab Bag
 					["sourceQuests"] = { 63855 },	-- Ease of Passage
@@ -790,27 +795,20 @@ _.Zones =
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 			
-			--	PTR - Death's Advance repeatable quests
-				-- Assault quests (seems similar to Mogu/Mantid etc. assaults from Uldum/Vale, it's an automatically-started zone quest that lasts a few days)
-				q(63824, {	-- Kyrian Assault
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["g"] = {
-					--	TODO: figure out the contents of this chest and how/where to display it
-						i(185993),	-- Ascended War Chest
-					},
-				}),
-				-- Weekly
+				--	PTR - Death's Advance repeatable quests
+				-- Korthia Weekly
 				q(63949, {	-- Shaping Fate
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["isWeekly"] = true,
 					["coord"] = { 62.7, 24.8, 1961 },	-- Korthia
 					["g"] = {
-					--	TODO: figure out the contents of this chest and how/where to display it
+					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
 						i(186196),	-- Death's Advance War Chest
 					},
 				}),
-				-- Daily
+				
+				-- Korthia Daily
 				q(63789, {	-- Continued Efforts: Scholar's Den
 				--	quest has a Necrolord provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
