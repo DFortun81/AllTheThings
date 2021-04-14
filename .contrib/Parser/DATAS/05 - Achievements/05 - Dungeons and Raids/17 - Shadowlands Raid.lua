@@ -38,6 +38,12 @@ _.Achievements =
 			ach(14619),	-- Pour Decision Making
 			ach(14617),	-- Private Stock
 			ach(14523),	-- Taking Care of Business
+		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
+			--[[
+			ach(),	-- Name A Better Duo, I'll Wait
+			ach(),	-- Retrograde Fate
+			ach(),	-- To the Nines
+			--]]
 		}),
 	}),
 };

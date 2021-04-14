@@ -510,6 +510,8 @@ _.Achievements =
 				crit(11),		-- Roving Gladechewer
 				crit(12),		-- Wild Gormling
 			}),
+		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
+		--	ach(),	-- Guarmageddon
 		}),
 	}),
 };

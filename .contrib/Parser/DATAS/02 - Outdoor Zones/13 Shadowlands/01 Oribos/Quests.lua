@@ -753,6 +753,45 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				-- Revendreth
+				
+				
+				-- PTR - TODO: move into alphabetized quests once we know there aren't changes/everything has made it to live.  keeping them in one place for now for ease of culling any data if necessary
+				q(63856, {	-- A Gathering of Covenants
+					["sourceQuests"] = { 63576 },	-- The First Move
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+				}),
+				q(63661, {	-- Link to the Maw
+					["sourceQuests"] = { 63660 },	-- Opening the Maw
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+				}),
+				q(63660, {	-- Opening the Maw
+					["sourceQuests"] = { 63639 },	-- Report to Oribos
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+				}),
+				q(63578, {	-- The Battle of Ardenweald
+					["sourceQuests"] = { 63857 },	-- Voices of the Eternal
+					["provider"] = { "n", 177141 },	-- Lady Moonberry
+					["coord"] = { 40.9, 66.2, 1670 },	-- Ring of Fates
+					["maps"] = { 2005 },	-- Ardenweald (scenario)
+					["g"] = {	-- TODO: add additional rewards
+						i(179498),	-- Faesworn Barb
+						i(179564),	-- Faesworn Channeling Root
+						i(182322),	-- Faesworn Gavel
+						i(182323),	-- Faesworn Spellblade
+						i(179546),	-- Faesworn Warclub
+					},
+				}),
+				q(63576, {	-- The First Move
+					--	TODO: ascertain whether there are specific SQs for this.  it was in my quest log when i logged in to the 9.1 ptr
+				}),
+				q(63857, {	-- Voices of the Eternal
+					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants
+					["provider"] = { "n", 159475 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 50.5, 45.1, 1673 },	-- The Crucible
+				}),
 
 
 				--[[ quest was in beta but still has not been seen in game

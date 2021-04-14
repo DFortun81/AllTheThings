@@ -190,6 +190,68 @@ _.Achievements =
 					}),
 				},
 			}),
+		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
+			--[[
+			ach(, {	-- Breaking The Chains
+				ach(, {	-- Taking the Tremaculum
+					crit(1),	-- Terrorizing the Tremaculum
+					crit(2),	-- Weapons of the Tremaculum
+					crit(3),	-- That's a Good Trick
+					crit(4),	-- Fangcrack's Fan Club
+					crit(5),	-- A Tea for Every Occasion
+					crit(6),	-- Duelist's Challenge
+					crit(7),	-- If Even One is Worthy
+					crit(8),	-- They Grow Up So Quickly
+					crit(9),	-- The Skyhunt
+					crit(10),	-- Wrath of the Party Herald
+				}),
+				ach(, {	-- Breaking Their Hold
+					crit(1),	-- Dead On Their Feet
+					crit(2),	-- Here's an Axe, Get to Work!
+					crit(3),	-- You and What Army
+					crit(4),	-- An Embarrassment of Corpses
+					crit(5),	-- Putting a Plan Together
+					crit(6),	-- Centurions March!
+					crit(7),	-- Pulling His Chain
+					crit(8),	-- Splash Damage
+					crit(9),	-- Get to the Point
+					crit(10),	-- Somebody Feed Kevin
+				}),
+				ach(, {	-- Wings Against the Flames
+					crit(1),	-- Mine's Bigger
+					crit(2),	-- Heart and Soul
+					crit(3),	-- No One Floats Down Here
+					crit(4),	-- Encouraging Words
+					crit(5),	-- Courage of the Soul
+					crit(6),	-- Saved By The Bells
+					crit(7),	-- United In Pride
+					crit(8),	-- The Ember Court
+					crit(9),	-- Kill The Flame
+					crit(10),	-- The Dreadful Blend
+				}),
+				ach(, {	-- Rooting Out The Evil
+					crit(1),	-- Clean Out the Crucible
+					crit(2),	-- Looming Darkness
+					crit(3),	-- No Soul Left Behind
+					crit(4),	-- Snail Stomping
+					crit(5),	-- Just Don't Ask Me to Spell It
+					crit(6),	-- Double Dromans
+					crit(7),	-- Needless Needlers
+					crit(8),	-- The Soul Blade
+					crit(9),	-- A Shady Place
+					crit(10),	-- Heavy Handed Tactics
+				}),
+			}),
+			ach(),	-- Jailer's Personal Stash
+			ach(),	-- The Zovaal Shuffle
+			ach(, {	-- United Front
+				crit(1),	-- Necrolord Assault
+				crit(2),	-- Venthyr Assault
+				crit(3),	-- Night Fae Assault
+				crit(4),	-- Kyrian Assault
+			}),
+			ach(),	-- Up For Grabs
+			--]]
 		}),
 	}),
 };

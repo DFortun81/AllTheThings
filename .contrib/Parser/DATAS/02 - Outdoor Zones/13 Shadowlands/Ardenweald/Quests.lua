@@ -811,6 +811,24 @@ _.Zones =
 					["coord"] = { 65.0, 19.5, 1565 },
 				}),
 				
+				-- PTR - TODO: merge with regular quest list once this stuff makes it to live
+				q(63638, {	-- Can't Turn Our Backs
+					["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
+					["provider"] = { "n", 177148 },	-- Lady Moonberry
+					["coord"] = { 49.6, 43.0, 1565 },
+				}),
+				q(63639, {	-- Report to Oribos
+				--	granted "battle of ardenweald" criteria upon turning in to tal-inara in oribos.  add achievement to oribos if they all are earned there, i guess?
+					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.0, 48.5, 1565 },
+				}),
+				q(63904, {	-- The Heart of Ardenweald
+					["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.0, 48.5, 1565 },
+				}),
+				
 				-- Bonus Objectives
 				q(62773, {	-- Dreamshrine Basin (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
