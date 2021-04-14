@@ -653,6 +653,21 @@ _.Zones =
 					["provider"] = { "n", 178470 },	-- Ve'nari
 					["coord"] = { 65.9, 23.0, 1961 },	-- Korthia
 				}),
+				q(63760, {	-- Echoes of Fate
+					["sourceQuests"] = { 63759 },	-- Redirect the Search
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.9, 22.3, 1961 },	-- Korthia
+				}),
+				q(63738, {	-- Establishing the Archive
+					["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
+					["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
+					["coord"] = { 36.0, 32.3, 1961 },	-- Korthia
+				}),
+				q(63737, {	-- Finding One's True Purpose
+					["sourceQuests"] = { 63739 },	-- Hope Ascending
+					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
+					["coord"] = { 35.8, 32.2, 1961 },	-- Korthia
+				}),
 				q(63831, {	-- Fury Given Voice
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
@@ -668,6 +683,14 @@ _.Zones =
 					["sourceQuests"] = { 63895 },	-- Grab Bag
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 61.6, 59.0, 1543 },
+				}),
+				q(63739, {	-- Hope Ascending
+					["sourceQuests"] = {
+						63736,	-- An Infusion of Anima
+						63740,	-- Consulting the Experts
+					},
+					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+					["coord"] = { 39.4, 51.3, 1961 },	-- Korthia
 				}),
 				q(63732, {	-- Interrupt the Interrogations
 				--	TODO: verify SQ.  i saw the ! on the map at the same time as "a matter of urgency," but it's possible this is available sooner.  the NPC is cloaked and only shows up when you get pretty close to it, so look for the map !
@@ -716,6 +739,11 @@ _.Zones =
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.2, 38.8, 1961 },	-- Korthia
 				}),
+				q(63761, {	-- Revenge Delayed
+					["sourceQuests"] = { 63759 },	-- Redirect the Search
+					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
+					["coord"] = { 55.6, 22.2, 1961 },	-- Korthia
+				}),
 				q(63896, {	-- Tears of the Damned
 					["sourceQuests"] = { 64014 },	-- Mawsplaining
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -741,6 +769,11 @@ _.Zones =
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, 1961 },	-- Korthia
+				}),
+				q(63762, {	-- Under the Illusion
+					["sourceQuests"] = { 63760 },	-- Echoes of Fate
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.5, 17.4, 1961 },	-- Korthia
 				}),
 				q(63994, {	-- Who is the Maw Walker?
 					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
@@ -778,8 +811,16 @@ _.Zones =
 					},
 				}),
 				-- Daily
+				q(63789, {	-- Continued Efforts: Scholar's Den
+				--	quest has a Necrolord provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178807 },	-- Alexandros Mograine
+					["isDaily"] = true,
+					["coord"] = { 60.4, 28.5, 1961 },	-- Korthia
+				}),
 				q(63785, {	-- Continued Efforts: Seeker's Quorum
 				--	quest has a Night Fae provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
+				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
@@ -787,26 +828,54 @@ _.Zones =
 				}),
 				q(64080, {	-- Down to Earth
 				--	quest has a Night Fae provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
+				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, 1961 },	-- Korthia
 				}),
 				q(63776, {	-- Encrypted Databanks
+				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
+				q(63960, {	-- Encrypted Databanks
+				--	second version of above quest, not sure if there are multiple versions or if this is a PTR change
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
+				q(63950, {	-- Slitherwing Talons
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178837 },	-- Lord Herne
+					["isDaily"] = true,
+					["coord"] = { 61.3, 21.3, 1961 },	-- Korthia
+					["g"] = {
+					--	TODO: unsure if this reward is static/if it should be linked here
+						i(186017),	-- Progenian Fragment
+					},
+				}),
 				q(63784, {	-- Gold's No Object
 				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
+				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, 1961 },	-- Korthia
 				}),
+				q(64089, {	-- Teas and Tinctures
+				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179218 },	-- Theotar
+					["isDaily"] = true,
+					["coord"] = { 61.6, 25.7, 1961 },	-- Korthia
+				}),
 				q(64101, {	-- The Proper Procedures
 				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
+				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,

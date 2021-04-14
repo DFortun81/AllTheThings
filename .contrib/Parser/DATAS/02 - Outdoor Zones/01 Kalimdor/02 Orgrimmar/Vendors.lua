@@ -263,7 +263,7 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 					["g"] = {
-						n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
+					--	n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
 							cl(DEATHKNIGHT, {
 								un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
 								un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
@@ -459,7 +459,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(72413)), -- Ruthless Gladiator's Medallion of Tenacity (Horde)
 								un(REMOVED_FROM_GAME, i(72415)), -- Ruthless Gladiator's Medallion of Meditation (Horde)
 							}),
-						}),
+					--	}),
 					},
 				}),
 				n(3364,   {	-- Borya <Tailoring Supplies>
@@ -655,7 +655,7 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 					["g"] = {
-						n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
+					--	n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
 							un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
 							un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
@@ -782,7 +782,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
 							un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
 							un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
-						}),
+					--	}),
 					},
 				}),
 				n(54657,  {	-- Doris Volanthius <Vicious Gladiator>

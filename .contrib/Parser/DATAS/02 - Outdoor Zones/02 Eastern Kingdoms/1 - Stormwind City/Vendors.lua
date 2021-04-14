@@ -2901,7 +2901,7 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 					["g"] = {
-						n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
+					--	n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
 							un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
 							un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
@@ -3031,7 +3031,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
 							un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
 							un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
-						}),
+					--	}),
 					},
 				}),
 				n(54660,  {	-- Lieutenant Tristia <Vicious Gladiator>
