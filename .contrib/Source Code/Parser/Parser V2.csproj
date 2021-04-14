@@ -34,7 +34,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;RETAIL</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;RETAIL;SHADOWLANDS</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -46,7 +46,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Classic|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CLASSIC;CRIEVE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;CLASSIC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -57,7 +57,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_beta_\Interface\AddOns\ATT-Classic\.contrib\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC;CLASSICBETA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PTR|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Parser\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RETAIL;SHADOWLANDS;PTR</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <LangVersion>7.3</LangVersion>

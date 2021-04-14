@@ -340,6 +340,42 @@ namespace ATT
 #else
                         return false;
 #endif
+                    case "RETAIL":
+#if RETAIL
+                        return true;
+#else
+                        return false;
+#endif
+                    case "ANYCLASSIC":
+#if ANYCLASSIC
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CRIEVE":
+#if CRIEVE
+                        return true;
+#else
+                        return false;
+#endif
+                    case "PTR":
+#if PTR
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CLASSICPTR":
+#if CLASSICPTR
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CLASSICBETA":
+#if CLASSICBETA
+                        return true;
+#else
+                        return false;
+#endif
                     default:
                         // Potentially a more complicated pre-processed if statement?
                         if (command.Length == 4)     // "IF" "PHASE" ">" "5"

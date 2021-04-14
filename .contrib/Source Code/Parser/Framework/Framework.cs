@@ -2142,8 +2142,29 @@ namespace ATT
         /// </summary>
         public static void Export()
         {
+#if PTR
+            // We want PTR builds of ATT to build the database to the AllTheThings PTR folder.
+            string addonRootFolder = "../../../../../../_ptr_/Interface/AddOns/AllTheThings";
+#elif CLASSICPTR
+            // We want Classic PTR builds of ATT to build the database to the ATT-Classic Classic PTR folder.
+            string addonRootFolder = "../../../../../../_classic_ptr_/Interface/AddOns/ATT-Classic";
+#elif CLASSICBETA
+            // NOTE: TBC currently points to this in the config.
+            // We want Classic Beta builds of ATT to build the database to the ATT-Classic Classic Beta folder.
+            string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
+#elif TBC
+            // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
+            string addonRootFolder = "../../../../../../_classic_tbc_/Interface/AddOns/ATT-Classic";
+#elif CLASSIC
+            // We want Classic builds of ATT to build the database to the ATT-Classic Classic folder.
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
+#else
+            // Default is relative to where the executable is. (.contrib/Parser)
+            string addonRootFolder = "../..";
+#endif
+
             // DEBUGGING: Output Parsed Data
-            var debugFolder = Directory.CreateDirectory("../Debugging");
+            var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
             if (debugFolder.Exists)
             {
                 // Export various debug information to the Debugging folder.
@@ -2153,7 +2174,7 @@ namespace ATT
             }
 
             // Setup the output folder (/db)
-            var outputFolder = Directory.CreateDirectory("../../db");
+            var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db");
             if (outputFolder.Exists)
             {
                 // Export various debug information to the output folder.
