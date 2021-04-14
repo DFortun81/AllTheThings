@@ -20,6 +20,8 @@ _.Zones =
 						}),
 					},
 				}),
+				-- PTR ZONE DROPS
+				i(186138),	-- Mawsworn Darkcaster's Shoulderpads
 			}),
 		}),
 	}),

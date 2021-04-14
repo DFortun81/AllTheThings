@@ -761,6 +761,11 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
 				}),
+				q(64007, {	-- Charge of the Covenants
+					["sourceQuests"] = { 63665 },	-- Opening to Oribos
+					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
+				}),
 				q(63661, {	-- Link to the Maw
 					["sourceQuests"] = { 63660 },	-- Opening the Maw
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -786,6 +791,7 @@ _.Zones =
 				}),
 				q(63576, {	-- The First Move
 					--	TODO: ascertain whether there are specific SQs for this.  it was in my quest log when i logged in to the 9.1 ptr
+					--	possible this has renown requirements, idk
 				}),
 				q(63857, {	-- Voices of the Eternal
 					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants
