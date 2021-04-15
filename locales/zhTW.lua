@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	--TODO: [240003] = "Strange Sapphire",
 	--TODO: [240289] = "Weathered Axe",
 	--TODO: [240317] = "Iskar's Tome of Shadows",
+	--TODO: [240354] = "Genuinely Unguarded Treasure",	-- Genuinely Unguarded Treasure
 	--TODO: [240519] = "Small Treasure Chest",
 	--TODO: [240577] = "The Blade of Kra'nak",
 	--TODO: [240580] = "Jewel of Hellfire",

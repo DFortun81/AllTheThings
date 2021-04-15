@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	[240003] = "Strano Zaffiro",
 	[240289] = "Ascia Logora",
 	[240317] = "Tomo delle Ombre di Iskar",
+	[240354] = "Tesoro Non Sorvegliato",	-- Genuinely Unguarded Treasure
 	[240519] = "Cassa del Tesoro Piccola",
 	[240577] = "Lama di Kra'nak",
 	[240580] = "Gioiello del Fuoco Infernale",

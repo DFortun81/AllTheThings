@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	[240003] = "Merkwürdiger Saphir",
 	[240289] = "Verwitterte Axt",
 	[240317] = "Iskars Foliant der Schatten",
+	[240354] = "Tatsächlich unbehüteter Schatz",	-- Genuinely Unguarded Treasure
 	[240519] = "Kleine Schatztruhe",
 	[240577] = "Die Klinge von Kra'nak",
 	[240580] = "Höllenfeuerjuwel",
