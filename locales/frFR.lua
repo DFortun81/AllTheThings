@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	[240003] = "Saphir étrange",
 	[240289] = "Hache abîmée",
 	[240317] = "Tome des ombres d’Iskar",
+	[240354] = "Trésor vraiment pas gardé",	-- Genuinely Unguarded Treasure
 	[240519] = "Petit coffre au trésor",
 	[240577] = "Lame de Kra’nak",
 	[240580] = "Joyau des Flammes infernales",

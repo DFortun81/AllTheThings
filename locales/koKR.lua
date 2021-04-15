@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	[240003] = "이상한 사파이어",
 	--TODO: [240289] = "Weathered Axe",
 	[240317] = "이스카르의 어둠의 고서",
+	--TODO: [240354] = "Genuinely Unguarded Treasure",	-- Genuinely Unguarded Treasure
 	[240519] = "작은 보물 상자",
 	[240577] = "크라나크의 칼날",
 	[240580] = "지옥불 보석",
