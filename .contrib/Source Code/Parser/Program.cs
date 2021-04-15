@@ -75,7 +75,7 @@ namespace ATT
                     var dict = new Dictionary<object, bool>();
                     foreach (var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
                     {
-                        var race = Convert.ToInt32(keyValue);
+                        var race = Convert.ToInt64(keyValue);
                         if (!dict.ContainsKey(race))
                         {
                             dict[race] = true;
@@ -90,7 +90,7 @@ namespace ATT
                     dict = new Dictionary<object, bool>();
                     foreach (var keyValue in lua.GetTable("HORDE_ONLY").Values)
                     {
-                        var race = Convert.ToInt32(keyValue);
+                        var race = Convert.ToInt64(keyValue);
                         if (!dict.ContainsKey(race))
                         {
                             dict[race] = true;

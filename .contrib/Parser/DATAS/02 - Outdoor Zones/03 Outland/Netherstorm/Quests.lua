@@ -421,7 +421,7 @@ _.Zones =
 				}),
 				q(10422, {	-- Captain Tyralius
 					["provider"] = { "n", 20450 },	-- Flesh Handler Viridius
-					["crs"] = 20770,	-- Warden Icoshock
+					["cr"] = 20770,	-- Warden Icoshock
 					["coords"] = {
 						{ 58.6, 31.7, NETHERSTORM },
 						{ 59.4, 32.0, NETHERSTORM },

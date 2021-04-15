@@ -28,7 +28,7 @@ namespace ATT
                 // Rings, Necks, and Trinkets by default will 
                 if (data.TryGetValue("f", out object fObj))
                 {
-                    var f = Convert.ToInt32(fObj);
+                    var f = Convert.ToInt64(fObj);
                     if (f == 51 || f == 52 || f == 53) fields.Remove("f");
                 }
             }

@@ -149,29 +149,29 @@ namespace ATT
         /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<int, bool> NPCS_WITH_REFERENCES = new Dictionary<int, bool>();
+        private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<int, bool> OBJECTS_WITH_REFERENCES = new Dictionary<int, bool>();
+        private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
         /// All of the species that have been parsed sorted by Species ID.
         /// </summary>
-        private static IDictionary<int, Dictionary<string, object>> SPECIES = new Dictionary<int, Dictionary<string, object>>();
+        private static IDictionary<long, Dictionary<string, object>> SPECIES = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
         /// All of the quests that have been parsed sorted by Quest ID.
         /// </summary>
-        private static IDictionary<int, Dictionary<string, object>> QUESTS = new Dictionary<int, Dictionary<string, object>>();
+        private static IDictionary<long, Dictionary<string, object>> QUESTS = new Dictionary<long, Dictionary<string, object>>();
 
-        private static IDictionary<int, bool> QUESTS_WITH_REFERENCES = new Dictionary<int, bool>();
+        private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
         /// All of the names stored for each data type.
         /// </summary>
-        private static IDictionary<string, Dictionary<int, object>> NAMES_BY_TYPE = new Dictionary<string, Dictionary<int, object>>();
+        private static IDictionary<string, Dictionary<long, object>> NAMES_BY_TYPE = new Dictionary<string, Dictionary<long, object>>();
 
         /// <summary>
         /// Represents the current parent group when processing the 'g' subgroup
@@ -221,7 +221,7 @@ namespace ATT
                 {
                     if (pair.Value is Dictionary<string, object> dict)
                     {
-                        int questID = Convert.ToInt32(pair.Key);
+                        long questID = Convert.ToInt64(pair.Key);
                         if (!QUESTS.TryGetValue(questID, out Dictionary<string, object> quest))
                         {
                             QUESTS[questID] = quest = new Dictionary<string, object>();
@@ -248,7 +248,7 @@ namespace ATT
                 {
                     if (quest is Dictionary<string, object> dict)
                     {
-                        if (dict.TryGetValue("questID", out int questID))
+                        if (dict.TryGetValue("questID", out long questID))
                         {
                             if (!QUESTS.TryGetValue(questID, out Dictionary<string, object> cachedQuest))
                             {
@@ -272,13 +272,13 @@ namespace ATT
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
         /// <returns>Whether or not the data is valid.</returns>
-        private static bool Process(Dictionary<string, object> data, int modID, int minLevel)
+        private static bool Process(Dictionary<string, object> data, long modID, long minLevel)
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
 
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
-            if (data.TryGetValue("u", out int phase))
+            if (data.TryGetValue("u", out long phase))
             {
                 if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
                 {
@@ -290,10 +290,10 @@ namespace ATT
             }
 
             // Items that were added to the game after the current expansion shouldn't be included in the game.
-            data.TryGetValue("itemID", out int itemID);
+            data.TryGetValue("itemID", out long itemID);
 
             // Get the filter for this Item
-            if (data.TryGetValue("f", out int f))
+            if (data.TryGetValue("f", out long f))
             {
                 // remove modID from things which shouldn't have it
                 if (f >= 56 && data.Remove("modID"))
@@ -305,7 +305,7 @@ namespace ATT
             // Assign the modID if not already specified.
             if (data.TryGetValue("modID", out object modIDRef))
             {
-                modID = Convert.ToInt32(modIDRef);
+                modID = Convert.ToInt64(modIDRef);
                 // don't use modID if there isn't one
                 if (modID < 0) data.Remove("modID");
             }
@@ -318,7 +318,7 @@ namespace ATT
                 // only modID if it's a real item and real modID
                 data["modID"] = modID;
             }
-            if (data.TryGetValue("npcID", out int npcID))
+            if (data.TryGetValue("npcID", out long npcID))
             {
                 NPCS_WITH_REFERENCES[npcID] = true;
             }
@@ -332,11 +332,11 @@ namespace ATT
             }
             if (data.TryGetValue("qgs", out List<object> qgs))
             {
-                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
             }
             if (data.TryGetValue("crs", out qgs))
             {
-                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
             }
             if(data.TryGetValue("objectID", out npcID))
             {
@@ -449,7 +449,7 @@ namespace ATT
             }
 
             // Mark the achievement as referenced
-            if (data.TryGetValue("achID", out int achID))
+            if (data.TryGetValue("achID", out long achID))
             {
                 // Remove itself from the list of altAchievements
                 if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
@@ -459,7 +459,7 @@ namespace ATT
             }
 
             // Mark the quest as referenced
-            if (data.TryGetValue("questID", out int questID))
+            if (data.TryGetValue("questID", out long questID))
             {
                 QUESTS_WITH_REFERENCES[questID] = true;
 
@@ -571,12 +571,12 @@ namespace ATT
                         switch (c[0].ToString())
                         {
                             case "i":
-                                itemID = decimal.ToInt32(Convert.ToDecimal(c[1]));
+                                itemID = decimal.ToInt64(Convert.ToDecimal(c[1]));
                                 var item = Items.GetNull(itemID);
                                 if (item != null)
                                 {
                                     // The item was classified as never being implemented or being completely removed from the game.
-                                    if (item.TryGetValue("u", out int u) && u == 1)
+                                    if (item.TryGetValue("u", out long u) && u == 1)
                                     {
                                         cost.RemoveAt(i);
                                     }
@@ -588,15 +588,16 @@ namespace ATT
                 }
             }
 
-            if (data.TryGetValue("requireSkill", out object requiredSkill))
+            if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
-                if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out object newRequiredSkill))
+                if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
                 {
                     data["requireSkill"] = newRequiredSkill;
+                    requiredSkill = newRequiredSkill;
                 }
                 else
                 {
-                    switch (Convert.ToInt32(requiredSkill))
+                    switch (Convert.ToInt64(requiredSkill))
                     {
                         // https://www.wowhead.com/skill=
                         case 40:    // Rogue Poisons
@@ -608,6 +609,7 @@ namespace ATT
                             {
                                 // Ignore! (and remove!)
                                 data.Remove("requireSkill");
+                                requiredSkill = 0;
                                 break;
                             }
                         default:
@@ -622,10 +624,10 @@ namespace ATT
                 }
 
                 // if this data has a recipeID, cache the information
-                if (data.TryGetValue("recipeID", out int recipeID))
+                if (data.TryGetValue("recipeID", out long recipeID))
                 {
                     Items.TryGetName(data, out string recipeName);
-                    Objects.AddRecipe(newRequiredSkill ?? requiredSkill, recipeName, recipeID);
+                    Objects.AddRecipe(requiredSkill, recipeName, recipeID);
                 }
                 // otherwise see if we can associate a recipeID
                 else
@@ -649,12 +651,12 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out int id))
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out long id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
-                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> names))
+                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
                     {
-                        names = new Dictionary<int, object>();
+                        names = new Dictionary<long, object>();
                         NAMES_BY_TYPE[objectData.ObjectType] = names;
                     }
                     names[id] = name;
@@ -693,7 +695,7 @@ namespace ATT
             Items.TryGetName(data, out string name);
 
             // see if a matching recipe name exists for this skill, and use that recipeID
-            if (Objects.FindRecipeByName(requiredSkill, name, out int recipeID))
+            if (Objects.FindRecipeByName(requiredSkill, name, out long recipeID))
                 data["recipeID"] = recipeID;
         }
 
@@ -703,7 +705,7 @@ namespace ATT
         /// <param name="data"></param>
         /// <param name="minLevel"></param>
         /// <returns></returns>
-        private static int LevelConsolidation(Dictionary<string, object> data, int minLevel)
+        private static long LevelConsolidation(Dictionary<string, object> data, long minLevel)
         {
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
@@ -713,7 +715,7 @@ namespace ATT
                     // only remove the lvl reqs if it's not a range
                     if (lvls.Count < 2)
                     {
-                        var level = Convert.ToInt32(lvls[0]);
+                        var level = Convert.ToInt64(lvls[0]);
                         if (level <= minLevel) data.Remove("lvl");
                         else
                         {
@@ -725,7 +727,7 @@ namespace ATT
                 }
                 else
                 {
-                    var level = Convert.ToInt32(lvlRef);
+                    var level = Convert.ToInt64(lvlRef);
                     if (level <= minLevel) data.Remove("lvl");
                     else minLevel = level;
                 }
@@ -739,15 +741,15 @@ namespace ATT
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        private static int? GetDataMinLevel(Dictionary<string, object> data)
+        private static long? GetDataMinLevel(Dictionary<string, object> data)
         {
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
             {
                 if (lvlRef is List<object> lvls && lvls.Count > 0)
-                    return Convert.ToInt32(lvls[0]);
+                    return Convert.ToInt64(lvls[0]);
                 else if (lvlRef is int)
-                    return Convert.ToInt32(lvlRef);
+                    return Convert.ToInt64(lvlRef);
             }
             return null;
         }
@@ -811,7 +813,7 @@ namespace ATT
             {
                 try
                 {
-                    int groupIDint = Convert.ToInt32(dupeGroupID);
+                    long groupIDint = Convert.ToInt64(dupeGroupID);
                     switch (type)
                     {
                         case "quest":
@@ -856,7 +858,7 @@ namespace ATT
         /// <param name="list">The data container list.</param>
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
-        private static void Process(List<object> list, int modID, int minLevel)
+        private static void Process(List<object> list, long modID, long minLevel)
         {
             // Check to make sure the data is valid.
             if (list == null) return;
@@ -898,18 +900,18 @@ namespace ATT
 
             // Build the Unsorted Container.
             List<object> listing;
-            int requireSkill;
+            long requireSkill;
             var unsorted = new List<object>();
             Objects.AllContainers["Unsorted"] = unsorted;
             if (Items.GetNull(30000) == null) // Classic, no Tier Objects
             {
-                Dictionary<int, List<object>> FilteredLists = new Dictionary<int, List<object>>();
-                Dictionary<int, List<object>> ProfessionLists = new Dictionary<int, List<object>>();
+                Dictionary<long, List<object>> FilteredLists = new Dictionary<long, List<object>>();
+                Dictionary<long, List<object>> ProfessionLists = new Dictionary<long, List<object>>();
                 foreach (var item in Items.AllItemsWithoutReferences)
                 {
                     if (item.TryGetValue("f", out object objRef))
                     {
-                        int filterID = Convert.ToInt32(objRef);
+                        long filterID = Convert.ToInt64(objRef);
                         if (filterID >= 0 && (filterID < 56 || filterID > 90))
                         {
                             switch ((Objects.Filters)filterID)
@@ -935,7 +937,7 @@ namespace ATT
                                         }
                                         if (item.TryGetValue("requireSkill", out object requireSkillRef))
                                         {
-                                            requireSkill = Convert.ToInt32(requireSkillRef);
+                                            requireSkill = Convert.ToInt64(requireSkillRef);
                                             if (!ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
                                             {
                                                 listing.Add(new Dictionary<string, object>
@@ -965,7 +967,7 @@ namespace ATT
                                             }
                                         }
 
-                                        if (item.TryGetValue("itemID", out int itemID))
+                                        if (item.TryGetValue("itemID", out long itemID))
                                         {
                                             var newItem = new Dictionary<string, object>
                                         {
@@ -979,7 +981,7 @@ namespace ATT
                                 default:
                                     {
                                         item.Remove("spellID");
-                                        if ((item.TryGetValue("q", out objRef) && Convert.ToInt32(objRef) >= 2)
+                                        if ((item.TryGetValue("q", out objRef) && Convert.ToInt64(objRef) >= 2)
                                         || (filterID == 101 || filterID == 102 || filterID == 100 || filterID == 108 || filterID == 10))
                                         {
                                             if (!FilteredLists.TryGetValue(filterID, out listing))
@@ -991,7 +993,7 @@ namespace ATT
                                             });
                                             }
 
-                                            if (item.TryGetValue("itemID", out int itemID))
+                                            if (item.TryGetValue("itemID", out long itemID))
                                             {
                                                 var newItem = new Dictionary<string, object>
                                             {
@@ -1042,7 +1044,7 @@ namespace ATT
                         // else try to sort by itemID
                         else if (item.TryGetValue("itemID", out object itemIDRef))
                         {
-                            var itemID = Convert.ToInt32(itemIDRef);
+                            var itemID = Convert.ToInt64(itemIDRef);
                             if (itemID < 22727) tier = tierLists[1]; // Classic
                             else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
                             else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
@@ -1059,7 +1061,7 @@ namespace ATT
 
                     if (item.TryGetValue("f", out object objRef))
                     {
-                        int filterID = Convert.ToInt32(objRef);
+                        long filterID = Convert.ToInt64(objRef);
                         if (filterID >= 0 && (filterID < 56 || filterID > 90))
                         {
                             switch ((Objects.Filters)filterID)
@@ -1085,7 +1087,7 @@ namespace ATT
                                         }
                                         if (item.TryGetValue("requireSkill", out object requireSkillRef))
                                         {
-                                            requireSkill = Convert.ToInt32(requireSkillRef);
+                                            requireSkill = Convert.ToInt64(requireSkillRef);
                                             if (!tier.ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
                                             {
                                                 listing.Add(new Dictionary<string, object>
@@ -1115,7 +1117,7 @@ namespace ATT
                                             }
                                         }
 
-                                        if (item.TryGetValue("itemID", out int itemID))
+                                        if (item.TryGetValue("itemID", out long itemID))
                                         {
                                             var newItem = new Dictionary<string, object>
                                         {
@@ -1129,7 +1131,7 @@ namespace ATT
                                 default:
                                     {
                                         item.Remove("spellID");
-                                        if ((item.TryGetValue("q", out objRef) && Convert.ToInt32(objRef) >= 2)
+                                        if ((item.TryGetValue("q", out objRef) && Convert.ToInt64(objRef) >= 2)
                                         || (filterID == 101 || filterID == 102 || filterID == 100 || filterID == 108 || filterID == 10))
                                         {
                                             if (!tier.FilteredLists.TryGetValue(filterID, out listing))
@@ -1141,7 +1143,7 @@ namespace ATT
                                             });
                                             }
 
-                                            if (item.TryGetValue("itemID", out int itemID))
+                                            if (item.TryGetValue("itemID", out long itemID))
                                             {
                                                 var newItem = new Dictionary<string, object>
                                             {
@@ -1193,7 +1195,7 @@ namespace ATT
                 {
                     foreach (var sourceQuestRef in sourceQuests)
                     {
-                        var sourceQuestID = Convert.ToInt32(sourceQuestRef);
+                        var sourceQuestID = Convert.ToInt64(sourceQuestRef);
                         if (Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
                         {
                             if (sourceQuest.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
@@ -1227,7 +1229,7 @@ namespace ATT
             if (QUESTS.Any())
             {
                 var unsortedQuests = new List<object>();
-                int maxQuestID = QUESTS.Max(x => x.Key);
+                long maxQuestID = QUESTS.Max(x => x.Key);
                 for (int i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not referenced but includes more than just a questID into the Unsorted category
@@ -1282,8 +1284,8 @@ namespace ATT
 
         private class TierList
         {
-            public Dictionary<int, List<object>> FilteredLists = new Dictionary<int, List<object>>();
-            public Dictionary<int, List<object>> ProfessionLists = new Dictionary<int, List<object>>();
+            public Dictionary<long, List<object>> FilteredLists = new Dictionary<long, List<object>>();
+            public Dictionary<long, List<object>> ProfessionLists = new Dictionary<long, List<object>>();
             public List<object> Groups = new List<object>();
 
         }
@@ -1356,10 +1358,10 @@ namespace ATT
             if (b == null) return 1;
 
             // If a contains a name, then try to get it.
-            if (a.TryGetValue("itemID", out object aRef) && Items.Get(Convert.ToInt32(aRef)).TryGetValue("name", out aRef))
+            if (a.TryGetValue("itemID", out object aRef) && Items.Get(Convert.ToInt64(aRef)).TryGetValue("name", out aRef))
             {
                 // If b contains a name, then try to get it.
-                if (b.TryGetValue("itemID", out object bRef) && Items.Get(Convert.ToInt32(bRef)).TryGetValue("name", out bRef))
+                if (b.TryGetValue("itemID", out object bRef) && Items.Get(Convert.ToInt64(bRef)).TryGetValue("name", out bRef))
                 {
                     // Both have a name, compare them!
                     var first = aRef.ToString().CompareTo(bRef);
@@ -1373,7 +1375,7 @@ namespace ATT
                             if (b.TryGetValue("bonusID", out bRef))
                             {
                                 // Both have a bonusID, compare them!
-                                return Convert.ToInt32(aRef).CompareTo(bRef);
+                                return Convert.ToInt64(aRef).CompareTo(bRef);
                             }
                         }
 
@@ -1384,7 +1386,7 @@ namespace ATT
                             if (b.TryGetValue("modID", out bRef))
                             {
                                 // Both have a modID, compare them!
-                                return Convert.ToInt32(aRef).CompareTo(bRef);
+                                return Convert.ToInt64(aRef).CompareTo(bRef);
                             }
                         }
 
@@ -1395,7 +1397,7 @@ namespace ATT
                             if (b.TryGetValue("cost", out bRef))
                             {
                                 // Both have a cost, compare them!
-                                return Convert.ToInt32(aRef).CompareTo(bRef);
+                                return Convert.ToInt64(aRef).CompareTo(bRef);
                             }
                         }
                     }
@@ -1920,7 +1922,7 @@ namespace ATT
                                 // KEY: Item ID, VALUE: Data (generic object field/value pairs)
                                 if (o.Value is Dictionary<object, object> entry)
                                 {
-                                    Items.Merge(Convert.ToInt32(o.Key), entry);
+                                    Items.Merge(Convert.ToInt64(o.Key), entry);
                                 }
                             }
                             break;
@@ -1971,6 +1973,8 @@ namespace ATT
                         }
                     case "System.Boolean":
                     case "System.Double":
+                    case "System.Int32":
+                    case "System.Int64":
                     case "System.String":
                         {
                             dict[field] = v;

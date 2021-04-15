@@ -54,12 +54,12 @@ namespace ATT
             /// <summary>
             /// All of the Quests that are in the database. This is solely used to add information to breadcrumb quests.
             /// </summary>
-            public static IDictionary<int, Dictionary<string, object>> AllQuests { get; } = new Dictionary<int, Dictionary<string, object>>();
+            public static IDictionary<long, Dictionary<string, object>> AllQuests { get; } = new Dictionary<long, Dictionary<string, object>>();
 
             /// <summary>
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
-            public static IDictionary<object, List<Tuple<string, int>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, int>>>();
+            public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
 
             /// <summary>
             /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
@@ -69,7 +69,7 @@ namespace ATT
             /// <summary>
             /// The set of Quests which the Parser has notified about being listed in multiple locations in Source
             /// </summary>
-            public static HashSet<int> DuplicateSourceQuests = new HashSet<int>();
+            public static HashSet<long> DuplicateSourceQuests = new HashSet<long>();
 
             #endregion
             #region Filters
@@ -156,7 +156,7 @@ namespace ATT
             /// <param name="itemSubClass">The item subclass. (IE: Cloth/Mail/Plate/Wands)</param>
             /// <param name="inventoryType">The inventory type. (IE: Shirt, Tabard, Main Hand)</param>
             /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
-            private static Filters CalculateFilter(int itemClass, int itemSubClass, int inventoryType)
+            private static Filters CalculateFilter(long itemClass, long itemSubClass, long inventoryType)
             {
                 // https://wow.gamepedia.com/Enum.InventoryType
                 // Inventory Types
@@ -418,42 +418,42 @@ namespace ATT
                 if (data.ContainsKey("achID")) return Filters.Achievement;
 
                 // Calculate the Filter ID based on Item Class, Sub Class, and Inventory Type
-                int itemClass = -1, itemSubClass = -1, inventoryType = -1;
-                if (data.TryGetValue("class", out object temp)) itemClass = Convert.ToInt32(temp);
-                if (data.TryGetValue("subclass", out temp)) itemSubClass = Convert.ToInt32(temp);
-                if (data.TryGetValue("inventoryType", out temp)) inventoryType = Convert.ToInt32(temp);
+                long itemClass = -1, itemSubClass = -1, inventoryType = -1;
+                if (data.TryGetValue("class", out object temp)) itemClass = Convert.ToInt64(temp);
+                if (data.TryGetValue("subclass", out temp)) itemSubClass = Convert.ToInt64(temp);
+                if (data.TryGetValue("inventoryType", out temp)) inventoryType = Convert.ToInt64(temp);
                 return CalculateFilter(itemClass, itemSubClass, inventoryType);
             }
 
-            internal static void AddRecipe(object requiredSkill, string recipeName, int recipeID)
+            internal static void AddRecipe(long requiredSkill, string recipeName, long recipeID)
             {
                 // only add recipes with a name and requiredSkill
                 if (recipeName == null || requiredSkill == null)
                     return;
 
                 // ensure skill bucket exists
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, int>> skillRecipes))
-                    AllRecipes[requiredSkill] = skillRecipes = new List<Tuple<string, int>>();
+                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
+                    AllRecipes[requiredSkill] = skillRecipes = new List<Tuple<string, long>>();
 
                 // do not add matching recipeID
                 if (skillRecipes.Any(sr => sr.Item2 == recipeID))
                     return;
 
                 // add the recipe info
-                skillRecipes.Add(new Tuple<string, int>(recipeName, recipeID));
+                skillRecipes.Add(new Tuple<string, long>(recipeName, recipeID));
             }
 
-            internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out int recipeID)
+            internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out long recipeID)
             {
                 recipeID = 0;
                 if (recipeItemName == null)
                     return false;
 
                 // find skill bucket
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, int>> skillRecipes))
+                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
                     return false;
 
-                foreach (Tuple<string, int> recipeInfo in skillRecipes)
+                foreach (Tuple<string, long> recipeInfo in skillRecipes)
                 {
                     // perfect recipe - item match!
                     if (recipeItemName.Contains(recipeInfo.Item1))
@@ -474,10 +474,10 @@ namespace ATT
             public static void AssignFilterID(Dictionary<string, object> data)
             {
                 // If an object already has a filter ID assigned and the ID is valid, ignore it.
-                if (data.TryGetValue("f", out int f) && f > 0) return;
+                if (data.TryGetValue("f", out long f) && f > 0) return;
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
-                f = (int)CalculateFilter(data);
+                f = (long)CalculateFilter(data);
                 data["f"] = f;
                 //if (f == 0)
                 //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
@@ -486,7 +486,7 @@ namespace ATT
             /// <summary>
             /// This table is used for Skill ID conversions from the new style BFA Skill IDs to the original style.
             /// </summary>
-            public static readonly Dictionary<object, object> SKILL_ID_CONVERSION_TABLE = new Dictionary<object, object>
+            public static readonly Dictionary<long, long> SKILL_ID_CONVERSION_TABLE = new Dictionary<long, long>
             {
 	            // Alchemy Skills
 	            {171, 171},	    // Alchemy [7.3.5]
@@ -785,7 +785,7 @@ namespace ATT
                 {
                     if (entry is Dictionary<string, object> o)
                     {
-                        if (o.TryGetValue("itemID", out int itemID))
+                        if (o.TryGetValue("itemID", out long itemID))
                         {
                             var itemData = Items.GetNull(itemID);
                             if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
@@ -825,11 +825,11 @@ namespace ATT
                         }
                         return 0;
                     });
-                    var bindingSpecification = new Dictionary<int, Dictionary<int, List<string>>>();
+                    var bindingSpecification = new Dictionary<long, Dictionary<long, List<string>>>();
                     StringBuilder builder2 = new StringBuilder(), itemNameBuilder = new StringBuilder();
                     foreach (var item in sortedList)
                     {
-                        if (item.TryGetValue("itemID", out int itemID))
+                        if (item.TryGetValue("itemID", out long itemID))
                         {
                             itemNameBuilder.Clear().Append("i(").Append(itemID).Append("),");
                             if (item.TryGetValue("name", out string name)) itemNameBuilder.Append("\t-- ").Append(name.Replace("]", "").Replace("[", ""));
@@ -837,13 +837,13 @@ namespace ATT
                             builder2.Append(itemNameBuilder);
 
                             // Determine the Binding and Filter Types
-                            if (!item.TryGetValue("b", out int b)) b = 0;
-                            if (!item.TryGetValue("f", out int f)) f = 0;
+                            if (!item.TryGetValue("b", out long b)) b = 0;
+                            if (!item.TryGetValue("f", out long f)) f = 0;
 
                             // Write the Item Name to the correct Binding Filtered Dictionary List.
-                            if (!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
+                            if (!bindingSpecification.TryGetValue(b, out Dictionary<long, List<string>> filterSpecification))
                             {
-                                bindingSpecification[b] = filterSpecification = new Dictionary<int, List<string>>();
+                                bindingSpecification[b] = filterSpecification = new Dictionary<long, List<string>>();
                             }
                             if (!filterSpecification.TryGetValue(f, out List<string> listOfItems))
                             {
@@ -895,14 +895,14 @@ namespace ATT
                 content = content.Substring(0, content.IndexOf('}'));
 
                 // Scan through for Header Localization. (we don't care about the actual name)
-                int npcID;
+                long npcID;
                 int index = 0;
-                var allLocalizedHeaders = new Dictionary<int, string>();
+                var allLocalizedHeaders = new Dictionary<long, string>();
                 while ((index = content.IndexOf('[', index)) > -1)
                 {
                     ++index;
                     int endIndex = content.IndexOf(']', index);
-                    if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out npcID))
+                    if (endIndex > -1 && long.TryParse(content.Substring(index, endIndex - index), out npcID))
                     {
                         int dataStartIndex = content.IndexOf('=', endIndex) + 1;
                         int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
@@ -924,7 +924,7 @@ namespace ATT
                         Trace.WriteLine("] has no reference and should be removed.");
                     }
 
-                    var missingHeaderLocalization = new List<int>();
+                    var missingHeaderLocalization = new List<long>();
                     foreach (var pair in NPCS_WITH_REFERENCES)
                     {
                         if (pair.Key < 1)
@@ -952,14 +952,14 @@ namespace ATT
                 content = content.Substring(0, content.IndexOf('}'));
 
                 // Scan through for Header Localization. (we don't care about the actual name)
-                int objectID;
+                long objectID;
                 index = 0;
-                var allLocalizedObjects = new Dictionary<int, string>();
+                var allLocalizedObjects = new Dictionary<long, string>();
                 while ((index = content.IndexOf('[', index)) > -1)
                 {
                     ++index;
                     int endIndex = content.IndexOf(']', index);
-                    if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out objectID))
+                    if (endIndex > -1 && long.TryParse(content.Substring(index, endIndex - index), out objectID))
                     {
                         int dataStartIndex = content.IndexOf('=', endIndex) + 1;
                         int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
@@ -981,7 +981,7 @@ namespace ATT
                         Trace.WriteLine("] has no reference and should be removed.");
                     }
 
-                    var missingLocalization = new List<int>();
+                    var missingLocalization = new List<long>();
                     foreach (var pair in OBJECTS_WITH_REFERENCES)
                     {
                         if (allLocalizedObjects.ContainsKey(pair.Key)) continue;
@@ -1022,12 +1022,12 @@ namespace ATT
             }
             #endregion
             #region Export DB
-            private static Dictionary<int, bool> BLACKLISTED_NPC_IDS = new Dictionary<int, bool>
+            private static Dictionary<long, bool> BLACKLISTED_NPC_IDS = new Dictionary<long, bool>
             {
                 { -1, true },   // Zone Drops?
             };
-            private static Dictionary<int, Dictionary<string, object>> ITEM_DB = new Dictionary<int, Dictionary<string, object>>();
-            private static Dictionary<int, Dictionary<string, object>> NPC_DB = new Dictionary<int, Dictionary<string, object>>();
+            private static Dictionary<long, Dictionary<string, object>> ITEM_DB = new Dictionary<long, Dictionary<string, object>>();
+            private static Dictionary<long, Dictionary<string, object>> NPC_DB = new Dictionary<long, Dictionary<string, object>>();
 
             public static void ExportDB(string directory)
             {
@@ -1036,7 +1036,7 @@ namespace ATT
                 ExportDB(directory, "NPCDB", NPC_DB);
             }
 
-            public static void ExportDB(string directory, string name, Dictionary<int, Dictionary<string, object>> db)
+            public static void ExportDB(string directory, string name, Dictionary<long, Dictionary<string, object>> db)
             {
                 var builder = new StringBuilder("AllTheThings.").Append(name).Append("={");
                 var keys = db.Keys.ToList();
@@ -1084,12 +1084,12 @@ namespace ATT
                 if (data.TryGetValue("g", out object g)) ProcessDB(g as List<object>);
 
                 // We were silly and used both... sigh.
-                if (data.TryGetValue("creatureID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
-                if (data.TryGetValue("npcID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
-                if (data.TryGetValue("itemID", out g)) ProcessItemData(Convert.ToInt32(g), data);
+                if (data.TryGetValue("creatureID", out g)) ProcessNPCData(Convert.ToInt64(g), data);
+                if (data.TryGetValue("npcID", out g)) ProcessNPCData(Convert.ToInt64(g), data);
+                if (data.TryGetValue("itemID", out g)) ProcessItemData(Convert.ToInt64(g), data);
             }
 
-            private static void ProcessItemData(int itemID, Dictionary<string, object> data)
+            private static void ProcessItemData(long itemID, Dictionary<string, object> data)
             {
                 // Acquire the current Item Data and add to it.
                 if (!ITEM_DB.TryGetValue(itemID, out Dictionary<string, object> itemData))
@@ -1114,15 +1114,15 @@ namespace ATT
 
                         case "s":
                             {
-                                int modID = 1;
-                                if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt32(modIDRef);
+                                long modID = 1;
+                                if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt64(modIDRef);
                                 if (itemData.TryGetValue("m", out object sourceIDRefs))
                                 {
-                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value;
+                                    (sourceIDRefs as Dictionary<long, object>)[modID] = pair.Value;
                                 }
                                 else
                                 {
-                                    itemData["m"] = new Dictionary<int, object>
+                                    itemData["m"] = new Dictionary<long, object>
                                     {
                                         { modID, pair.Value }
                                     };
@@ -1153,7 +1153,7 @@ namespace ATT
                     }
                 }
             }
-            private static void ProcessNPCData(int npcID, Dictionary<string, object> data)
+            private static void ProcessNPCData(long npcID, Dictionary<string, object> data)
             {
                 // Do not include information about blacklisted npc data.
                 if (BLACKLISTED_NPC_IDS.TryGetValue(npcID, out bool blacklisted) && blacklisted) return;
@@ -1294,20 +1294,20 @@ namespace ATT
                 // item with quest attached, item has diff reqlvl than the quest reqlvl, you end up with the item having a lvl range instead of the highest value
                 if (field == "lvl")
                 {
-                    int? oldmin = null, oldmax = null, newmin = null, newmax = null;
+                    long? oldmin = null, oldmax = null, newmin = null, newmax = null;
                     if (oldList.Count > 0)
-                        oldmin = Convert.ToInt32(oldList[0]);
+                        oldmin = Convert.ToInt64(oldList[0]);
                     if (newList.Count > 0)
-                        newmin = Convert.ToInt32(newList[0]);
+                        newmin = Convert.ToInt64(newList[0]);
                     if (oldList.Count > 1)
-                        oldmax = Convert.ToInt32(oldList[1]);
+                        oldmax = Convert.ToInt64(oldList[1]);
                     if (newList.Count > 1)
-                        newmax = Convert.ToInt32(newList[1]);
+                        newmax = Convert.ToInt64(newList[1]);
 
-                    newmin = Math.Max(oldmin ?? int.MinValue, newmin ?? int.MinValue);
-                    newmax = Math.Min(oldmax ?? int.MaxValue, newmax ?? int.MaxValue);
+                    newmin = Math.Max(oldmin ?? long.MinValue, newmin ?? long.MinValue);
+                    newmax = Math.Min(oldmax ?? long.MaxValue, newmax ?? long.MaxValue);
 
-                    if (newmax > 0 && newmax < int.MaxValue)
+                    if (newmax > 0 && newmax < long.MaxValue)
                     {
                         oldList.Clear();
                         oldList.Add(newmin);
@@ -1324,7 +1324,7 @@ namespace ATT
                     // Merge the new list of data into the old data and ensure there are no duplicate values.
                     foreach (var entry in newList)
                     {
-                        var index = Convert.ToInt32(entry);
+                        var index = Convert.ToInt64(entry);
                         if (oldList.Contains(index)) continue;
                         oldList.Add(index);
                     }
@@ -1444,7 +1444,7 @@ namespace ATT
                             {
                                 item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             }
-                            else item[field] = Convert.ToInt32(value);
+                            else item[field] = Convert.ToInt64(value);
                             break;
                         }
 
@@ -1496,7 +1496,7 @@ namespace ATT
                     case "q":
                     case "r":
                         {
-                            item[field] = Convert.ToInt32(value);
+                            item[field] = Convert.ToInt64(value);
                             break;
                         }
 
@@ -1506,7 +1506,7 @@ namespace ATT
                             // Convert a single sourceQuest to a sourceQuests list.
                             Merge(item, "sourceQuests", new List<object>
                             {
-                                Convert.ToInt32(value)
+                                Convert.ToInt64(value)
                             });
                             break;
                         }
@@ -1514,7 +1514,7 @@ namespace ATT
                         // Convert a single altQuestID into an altQuests list.
                         Merge(item, "altQuests", new List<object>
                             {
-                                Convert.ToInt32(value)
+                                Convert.ToInt64(value)
                             });
                         break;
                     case "qg":
@@ -1522,7 +1522,7 @@ namespace ATT
                             // Convert a single qg to a qgs list.
                             Merge(item, "qgs", new List<object>
                             {
-                                Convert.ToInt32(value)
+                                Convert.ToInt64(value)
                             });
                             break;
                         }
@@ -1531,7 +1531,7 @@ namespace ATT
                             // Convert a single cr to a crs list.
                             Merge(item, "crs", new List<object>
                             {
-                                Convert.ToInt32(value)
+                                Convert.ToInt64(value)
                             });
                             break;
                         }
@@ -1562,7 +1562,7 @@ namespace ATT
                             MergeIntegerArrayData(item, field, dict.Values.ToList());
                         }
 #if CRIEVE
-                        else item[field] = Convert.ToInt32(value);
+                        else item[field] = Convert.ToInt64(value);
 #endif
                         break;
 
@@ -1575,20 +1575,20 @@ namespace ATT
                             if (newDict == null) return;
 
                             // Attempt to get the old list data.
-                            Dictionary<int, int> oldDict;
+                            Dictionary<long, long> oldDict;
                             if (item.TryGetValue(field, out object oldData))
                             {
                                 // Convert the old data to a dictionary of ints.
-                                oldDict = oldData as Dictionary<int, int>;
+                                oldDict = oldData as Dictionary<long, long>;
                             }
                             else
                             {
                                 // Create a new data dictionary of ints.
-                                item[field] = oldDict = new Dictionary<int, int>();
+                                item[field] = oldDict = new Dictionary<long, long>();
                             }
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
+                            foreach (var pair in newDict) oldDict[Convert.ToInt64(pair.Key)] = Convert.ToInt64(pair.Value);
                             break;
                         }
 
@@ -1646,7 +1646,7 @@ namespace ATT
                                 else return;
                             }
                             var newRep = new List<object>();
-                            foreach (var repArg in newList) newRep.Add(Convert.ToInt32(repArg));
+                            foreach (var repArg in newList) newRep.Add(Convert.ToInt64(repArg));
                             if (newRep.Count > 0)
                             {
                                 item[field] = newRep;
@@ -1776,7 +1776,7 @@ namespace ATT
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
-                                item[field] = Convert.ToInt32(value);
+                                item[field] = Convert.ToInt64(value);
                                 return;
                             }
 
@@ -1868,7 +1868,7 @@ namespace ATT
                     if (costType == "i")
                     {
                         // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(decimal.ToInt32(Convert.ToDecimal(cost[1])));
+                        Items.MarkItemAsReferenced(Convert.ToInt64(Convert.ToDecimal(cost[1])));
                     }
                 }
 
@@ -1890,7 +1890,7 @@ namespace ATT
                 var newProvider = new List<object>()
                 {
                     newList[0],
-                    Convert.ToInt32(newList[1])
+                    Convert.ToInt64(newList[1])
                 };
                 MergeField_providers(item, new List<object>() { newProvider });
             }
@@ -1906,14 +1906,14 @@ namespace ATT
                     var newMergeProvider = ConvertToList(item, field, mergeProvider);
                     try
                     {
-                        Tuple<string, int> newProvider = new Tuple<string, int>(newMergeProvider[0]?.ToString(), Convert.ToInt32(newMergeProvider[1]));
+                        Tuple<string, long> newProvider = new Tuple<string, long>(newMergeProvider[0]?.ToString(), Convert.ToInt64(newMergeProvider[1]));
                         if (item.TryGetValue(field, out object providersRef) && providersRef is List<object> providers)
                         {
                             foreach (var providerRef in providers)
                             {
                                 if (providerRef is List<object> oldprovider)
                                 {
-                                    Tuple<string, int> oldProvider = new Tuple<string, int>(oldprovider[0]?.ToString(), Convert.ToInt32(oldprovider[1]));
+                                    Tuple<string, long> oldProvider = new Tuple<string, long>(oldprovider[0]?.ToString(), Convert.ToInt64(oldprovider[1]));
                                     if (oldProvider.Item1 == newProvider.Item1 && oldProvider.Item2 == newProvider.Item2)
                                     {
                                         match = true;
@@ -2034,7 +2034,7 @@ namespace ATT
                 {
                     // Cache the ID of the data we're merging into the container.
                     string mostSignificantID = objectData.ObjectType;
-                    var id = Convert.ToInt32(data2[mostSignificantID]);
+                    var id = Convert.ToInt64(data2[mostSignificantID]);
 
                     // Iterate through the list and search for an entry that matches the data
                     if (mostSignificantID == "itemID")
@@ -2043,7 +2043,7 @@ namespace ATT
                         if (data2.TryGetValue("rank", out object fieldRef))
                         {
                             // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                            var rank = Convert.ToInt32(fieldRef);
+                            var rank = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2064,7 +2064,7 @@ namespace ATT
                         else if (data2.TryGetValue("bonusID", out fieldRef))
                         {
                             // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
-                            var bonusID = Convert.ToInt32(fieldRef);
+                            var bonusID = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2085,7 +2085,7 @@ namespace ATT
                         else if (data2.TryGetValue("modID", out fieldRef))
                         {
                             // The data we're merging has a Mod ID. (we only want to merge them if they're the same!)
-                            var modID = Convert.ToInt32(fieldRef);
+                            var modID = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2127,7 +2127,7 @@ namespace ATT
                         if (data2.TryGetValue("itemID", out object fieldRef))
                         {
                             // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
-                            var achievementID = Convert.ToInt32(fieldRef);
+                            var achievementID = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2148,7 +2148,7 @@ namespace ATT
                         else if (data2.TryGetValue("achID", out fieldRef))
                         {
                             // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
-                            var achievementID = Convert.ToInt32(fieldRef);
+                            var achievementID = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2173,7 +2173,7 @@ namespace ATT
                         if (data2.TryGetValue("rank", out object fieldRef))
                         {
                             // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                            var rank = Convert.ToInt32(fieldRef);
+                            var rank = Convert.ToInt64(fieldRef);
                             foreach (var entryRef in container)
                             {
                                 // Cache the container entry for comparisons.
@@ -2241,7 +2241,7 @@ namespace ATT
                 Merge(entry, data2);
 
                 // Add quest entry to AllQuest collection
-                if (entry.TryGetValue("questID", out int questID))
+                if (entry.TryGetValue("questID", out long questID))
                 {
                     // merge any quest information from the quest DB
                     if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
@@ -2324,7 +2324,7 @@ namespace ATT
                     !quest.ContainsKey("isMonthly") &&
                     !quest.ContainsKey("isYearly") &&
                     // not unobtainable
-                    (!quest.ContainsKey("u") || Convert.ToInt32(quest["u"]) > 3);
+                    (!quest.ContainsKey("u") || Convert.ToInt64(quest["u"]) > 3);
             }
 
             /// <summary>

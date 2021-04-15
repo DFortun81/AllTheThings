@@ -94,7 +94,7 @@ namespace ATT
                 {
                     if (data.TryGetValue(objectType.ObjectType, out object objRef))
                     {
-                        if (Convert.ToInt32(objRef) == 0) defaultValue = objectType;
+                        if (Convert.ToInt64(objRef) == 0) defaultValue = objectType;
                         else
                         {
                             objectData = objectType;
@@ -120,7 +120,7 @@ namespace ATT
                 {
                     if (data.TryGetValue(objectType.ObjectType, out object objRef))
                     {
-                        if (Convert.ToInt32(objRef) == 0) defaultValue = objectType;
+                        if (Convert.ToInt64(objRef) == 0) defaultValue = objectType;
                         else
                         {
                             objectData = objectType;
@@ -187,19 +187,19 @@ namespace ATT
                 if (data.TryGetValue("b", out object objRef))
                 {
                     // If not BoP, then don't write the field.
-                    if (Convert.ToInt32(objRef) < 1) fields.Remove("b");
+                    if (Convert.ToInt64(objRef) < 1) fields.Remove("b");
                 }
                 if (data.TryGetValue("bonusID", out objRef))
                 {
                     // Bonus ID <1 is default, so we don't need to write it.
                     // Additionally, there must be an itemID for the bonusID to be present.
-                    if (ignoreBonus || Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
+                    if (ignoreBonus || Convert.ToInt64(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
                 }
                 if (data.TryGetValue("modID", out objRef))
                 {
                     // Mod ID 0 is default, so we don't need to write it.
                     // Additionally, there must be an itemID for the modID to be present.
-                    if (ignoreBonus || ignoreSource || Convert.ToInt32(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("modID");
+                    if (ignoreBonus || ignoreSource || Convert.ToInt64(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("modID");
                 }
                 if (data.TryGetValue("s", out objRef))
                 {
@@ -208,7 +208,7 @@ namespace ATT
                 if (data.TryGetValue("f", out objRef))
                 {
                     // If invalid, then don't write the field.
-                    if (Convert.ToInt32(objRef) < 0) fields.Remove("f");
+                    if (Convert.ToInt64(objRef) < 0) fields.Remove("f");
                 }
                 
                 // Keep the name field for quests, so long as they don't have an item.

@@ -123,7 +123,7 @@ namespace ATT
                         {
                             // Always follow each piece of data with a comma for consistency
                             builder.Append(',');
-                            int dataVal = Convert.ToInt32(pair.Value);
+                            long dataVal = Convert.ToInt64(pair.Value);
                             string factionRaces = dataVal == 1 ? "HORDE_ONLY" : "ALLIANCE_ONLY";
 
                             // Append the Sub-Indent and the Field Name
@@ -151,7 +151,7 @@ namespace ATT
                 {
                     case "itemID":
                         {
-                            var item = Items.GetNull(Convert.ToInt32(pair.Value));
+                            var item = Items.GetNull(Convert.ToInt64(pair.Value));
                             if (item != null && item.TryGetValue("name", out object nameRef))
                             {
                                 builder.Append("--[[").Append(nameRef).Append("]]");
@@ -160,7 +160,7 @@ namespace ATT
                         }
                     case "f":
                         {
-                            builder.Append("--[[").Append(((Objects.Filters)Convert.ToInt32(pair.Value)).ToString()).Append("]]");
+                            builder.Append("--[[").Append(((Objects.Filters)Convert.ToInt64(pair.Value)).ToString()).Append("]]");
                             continue;
                         }
                     default: break;
@@ -170,7 +170,7 @@ namespace ATT
                     && NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> dict3))
                 {
                     if (data2.TryGetValue(objectData.ObjectType, out object idObj)
-                        && dict3.TryGetValue(Convert.ToInt32(idObj), out object nameRef))
+                        && dict3.TryGetValue(Convert.ToInt64(idObj), out object nameRef))
                     {
                         builder.Append("--[[").Append(nameRef).Append("]]");
                     }
