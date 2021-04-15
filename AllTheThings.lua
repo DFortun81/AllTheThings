@@ -6850,13 +6850,20 @@ app.events.TAXIMAP_OPENED = function()
 				table.insert(knownNodeIDs, nodeData.nodeID);
 			end
 		end
+		local updates, searchResults = {};
 		for i,nodeID in ipairs(knownNodeIDs) do
 			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				searchResults = SearchForField("flightPathID", nodeID);
+				if searchResults then
+					for j,searchResult in ipairs(searchResults) do
+						table.insert(updates, searchResult);
+					end
+				end
 			end
 		end
+		if #updates > 0 then UpdateSearchResults(updates); end
 	end
 end
 end)();
