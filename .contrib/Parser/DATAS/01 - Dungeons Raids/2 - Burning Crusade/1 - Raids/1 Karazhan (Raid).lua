@@ -3,13 +3,10 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, {	-- Burning Crusade
-	inst(745, { 	-- Karazhan (Raid)
-		["order"] = "01",
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 68,
+	inst(745, {	-- Karazhan (Raid)
+		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
 		["maps"] = {
-			350,	-- Servant's Quarters
+			KARAZHAN,	-- Servant's Quarters (350)
 			351,	-- Upper Livery Stables
 			352,	-- The Banquet Hall
 			353,	-- The Guest Chambers
@@ -27,7 +24,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			365,	-- The Power Station
 			366,	-- Netherspace
 		},
-		["coord"] = { 46.87, 74.69, 42 },	-- Karazhan, Deadwind Pass
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["order"] = "01",
+		["lvl"] = 68,
 		["groups"] = {
 			ach(960),	-- The Violet Eye
 			n(VENDORS, {
@@ -48,14 +48,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
-				n(16406, {	-- Phantom Attendant
-					i(21903),	-- Pattern: Soulcloth Shoulders
+				i(22545, {	-- Formula: Enchant Boots - Surefooted
+					["cr"] = 16472,	-- Phantom Stagehand
 				}),
-				n(16472, {	-- Phantom Stagehand
-					i(22545),	-- Formula: Enchant Boots - Surefooted [From 1 Drop - Done]
+				i(21903, {	-- Pattern: Soulcloth Shoulders
+					["cr"] = 16406,	-- Phantom Attendant
 				}),
-				n(16408, {	-- Phantom Valet
-					i(21904),	-- Pattern: Soulcloth Vest
+				i(21904, {	-- Pattern: Soulcloth Vest
+					["cr"] = 16408,	-- Phantom Valet
 				}),
 				i(30642),	-- Drape of the Righteous
 				i(30668),	-- Grasp of the Dead
@@ -67,7 +67,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(30674),	-- Zierhut's Lost Treads
 				i(30667),	-- Ring of Unrelenting Storms
 			}),
-			e(1552, {			-- Servant's Quarters
+			e(1552, {	-- Servant's Quarters
 				n(16181, {	-- Rokad the Ravager
 					["description"] = "This boss is repeatable if you dont kill any other bosses in raid. Reset the raid after killing.",
 					["groups"] = {
@@ -96,7 +96,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			e(1553, {			-- Attumen The Huntsman
+			e(1553, {	-- Attumen The Huntsman
 				["crs"] = {
 					16152,	-- Attumen the Huntsman
 					16151,	-- Midnight
@@ -119,7 +119,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(23809),	-- Schematic: Stabilized Eternium Scope
 				},
 			}),
-			e(1554, {			-- Moroes
+			e(1554, {	-- Moroes
 				["creatureID"] = 15687,
 				["groups"] = {
 					i(22559),	-- Formula: Enchant Weapon - Mongoose
@@ -137,7 +137,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28528),	-- Moroes' Lucky Pocket Watch
 				},
 			}),
-			e(1555, {			-- Maiden of Virtue
+			e(1555, {	-- Maiden of Virtue
 				["creatureID"] = 16457,
 				["groups"] = {
 					i(28522),	-- Shard of the Virtuous
@@ -178,7 +178,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28590),	-- Ribbon of Sacrifice
 					},
 				}),
-				n(17521, {		-- The Big Bad Wolf [Red Riding Hood]
+				n(17521, {	-- The Big Bad Wolf [Red Riding Hood]
 					["description"] = "The Big Bad Wolf is initially a harmless Grandmother, but speaking to her will reveal the truth...\n\n\"Run away, little girl!\"",
 					["crs"] = {
 						17603,	-- Grandmother
@@ -191,7 +191,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28582),	-- Red Riding Hood's Cloak
 					},
 				}),
-				n(17534, {		-- Julianne [Romulo and Julianne]
+				n(17534, {	-- Julianne [Romulo and Julianne]
 					["description"] = "Julianne will appear first alone.  After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
 					["crs"] = {
 						17533,	-- Romulo
@@ -203,7 +203,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28579),	-- Romulo's Poison Vial
 					},
 				}),
-				n(18168, {		-- The Crone [Wizard of Oz]
+				n(18168, {	-- The Crone [Wizard of Oz]
 					["description"] = "She spawns shortly after Dorothee, Dorothee's pet Tito, Roar, Strawman, and Tinhead are defeated.",
 					["crs"] = {
 						17535,	-- Dorothee
@@ -220,7 +220,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			})),
-			n(17225, {			-- Nightbane
+			n(17225, {	-- Nightbane
 				i(28604),	-- Nightstaff of the Everliving
 				i(28611),	-- Dragonheart Flameshield
 				i(28606),	-- Shield of Impenetrable Darkness
@@ -234,7 +234,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(28610),	-- Ferocious Swift-Kickers
 				i(28608),	-- Ironstriders of Urgency
 			}),
-			e(1557, {			-- The Curator
+			e(1557, {	-- The Curator
 				["creatureID"] = 15691,
 				["groups"] = {
 					i(29757, {	-- Gloves of the Fallen Champion
@@ -286,7 +286,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28649),	-- Garona's Signet Ring
 				},
 			}),
-			e(1560, {			-- Terestian Illhoof
+			e(1560, {	-- Terestian Illhoof
 				["creatureID"] = 15688,
 				["groups"] = {
 					i(22561),	-- Formula: Enchant Weapon - Soulfrost
@@ -305,7 +305,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28785),	-- The Lightning Capacitor
 				},
 			}),
-			e(1559, {			-- Shade of Aran
+			e(1559, {	-- Shade of Aran
 				["creatureID"] = 16524,
 				["groups"] = {
 					i(22560),	-- Formula: Enchant Weapon - Sunfire
@@ -324,7 +324,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28727),	-- Pendant of the Violet Eye
 				},
 			}),
-			e(1561, {			-- Netherspite
+			e(1561, {	-- Netherspite
 				["creatureID"] = 15689,
 				["groups"] = {
 					i(28729),	-- Spiteblade
@@ -339,12 +339,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28740),	-- Rip-Flayer Leggings
 					i(28741),	-- Skulker's Greaves
 					i(28730),	-- Mithril Band of the Unscarred
-					{	-- Netheriwng Egg
-						["itemID"] = 32506,	-- Netherwing Egg
-					},
+					i(32506),	-- Netherwing Egg
 				},
 			}),
-			e(1562, {			-- Chess Event
+			e(1562, {	-- Chess Event
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["groups"] = {
 					i(28749),	-- King's Defender
@@ -361,7 +359,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28753),	-- Ring of Recurrence
 				},
 			}),
-			e(1563, {			-- Prince Malchezaar
+			e(1563, {	-- Prince Malchezaar
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690),	-- Karazhan

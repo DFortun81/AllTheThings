@@ -4153,19 +4153,16 @@ end
 -- provided field type and key id
 -- Meaning, when using this function, the results must be filtered to ensure the expected group(s) are being utilized
 -- i.e. "questID" & 55780 will return groups for 55780 AND 55781 (which is an altquest of 55780)
-local function SearchForField(field, id, onlyCached)
+local function SearchForField(field, id)
 	if field and id then
 		_cache = rawget(fieldCache, field);
-		if _cache then return rawget(_cache, id), field, id; end
-		if onlyCached then return nil, field, id; end
-		-- print("Recursive Search!",field,id);
-		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
+		return (_cache and rawget(_cache, id)), field, id;
 	end
 end
 app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned
-app.SearchForObject = function(field, id, onlyCached)
-	local fcache = SearchForField(field, id, onlyCached);
+app.SearchForObject = function(field, id)
+	local fcache = SearchForField(field, id);
 	if fcache and #fcache > 0 then
 		-- find a filter-match object first
 		local fcacheObj;
@@ -4186,8 +4183,8 @@ app.SearchForObject = function(field, id, onlyCached)
 end
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
 -- will attempt to return a filtered clone as a priority
-app.SearchForObjectClone = function(field, id, onlyCached)
-	local fcache = SearchForField(field, id, onlyCached);
+app.SearchForObjectClone = function(field, id)
+	local fcache = SearchForField(field, id);
 	if fcache and #fcache > 0 then
 		-- find a filter-match object first
 		local fcacheObj;
@@ -4233,19 +4230,19 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					--print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
+					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
 					_ = SearchForField("s", sourceID);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					--print("SEARCHING FOR ITEM LINK ", link, itemID);
+					-- print("SEARCHING FOR ITEM LINK ", link, itemID);
 					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
 				end
 				
 				-- Merge together the cost search results as well.
-				local searchResultsAsCost = SearchForField("itemIDAsCost", itemID);
+				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
@@ -4497,7 +4494,7 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	_cache = SearchForField("questID",questObject.questID, true);
+	_cache = SearchForField("questID",questObject.questID);
 	if _cache then
 		for _,data in ipairs(_cache) do
 			-- only merge into the WQ quest object properties from an object in cache with this questID
@@ -4535,7 +4532,7 @@ local function PopulateQuestObject(questObject)
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
-			_cache = SearchForField("creatureID", qg, true);
+			_cache = SearchForField("creatureID", qg);
 			if _cache then
 				for _,data in ipairs(_cache) do
 					if GetRelativeField(data, "headerID", -16) then	-- Rares only!
@@ -4617,7 +4614,7 @@ local function PopulateQuestObject(questObject)
 				else
 					-- Take the best guess at what this is... No clue.
 					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-					_cache = SearchForField("itemID", itemID, true);
+					_cache = SearchForField("itemID", itemID);
 					local item = { ["itemID"] = itemID, ["expanded"] = false, };
 					if _cache then
 						local ACKCHUALLY;
@@ -4691,7 +4688,7 @@ local function PopulateQuestObject(questObject)
 			if currencyID then
 				currencyID = tonumber(currencyID);
 				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-				_cache = SearchForField("currencyID", currencyID, true);
+				_cache = SearchForField("currencyID", currencyID);
 				if _cache then
 					for _,data in ipairs(_cache) do
 						-- if data.f then
@@ -5934,9 +5931,10 @@ local fields = {
 		return app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		_cache = t.s;
-		if _cache and GetDataSubMember("CollectedSources", _cache) then return 1; end
+		-- _cache = t.s;
+		-- if _cache and GetDataSubMember("CollectedSources", _cache) then print("collected via sourceID",t.artifactID,_cache) return 1; end
 		if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
+		-- This artifact is listed for the current class
 		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
 			SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
 			return 1;
@@ -6855,13 +6853,20 @@ app.events.TAXIMAP_OPENED = function()
 				table.insert(knownNodeIDs, nodeData.nodeID);
 			end
 		end
+		local updates, searchResults = {};
 		for i,nodeID in ipairs(knownNodeIDs) do
 			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				searchResults = SearchForField("flightPathID", nodeID);
+				if searchResults then
+					for j,searchResult in ipairs(searchResults) do
+						table.insert(updates, searchResult);
+					end
+				end
 			end
 		end
+		if #updates > 0 then UpdateSearchResults(updates); end
 	end
 end
 end)();
@@ -7720,11 +7725,21 @@ local itemFields = {
 	end,
 	["collectibleAsCost"] = function(t)
 		if t.parent and t.parent.saved then return false; end
-		local id = t.itemID;
-		local results = app.SearchForField("itemIDAsCost", id, true);
+		local id, results;
+		-- Search by modItemID if possible for accuracy
+		if t.modItemID then
+			id = t.modItemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
+		-- If no results, search by plain itemID
+		if not results and t.itemID then
+			id = t.itemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
-				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				-- different itemID, OR same itemID with different modID is allowed
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
 					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
@@ -7755,12 +7770,22 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
-		local id = t.itemID;
-		local results = app.SearchForField("itemIDAsCost", id, true);
+		local id, results;
+		-- Search by modItemID if possible for accuracy
+		if t.modItemID then
+			id = t.modItemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
+		-- If no results, search by plain itemID
+		if not results and t.itemID then
+			id = t.itemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
 		if results and #results > 0 then
 			local collected, count = true, 0;
 			for _,ref in pairs(results) do
-				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				-- different itemID, OR same itemID with different modID is allowed
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
 					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
 						count = count + 1;
 						if ref.progress < ref.total then
@@ -11429,8 +11454,8 @@ local function SetRowData(self, row, data)
 			row.Indicator:Show();
 		end
 		if SetPortraitIcon(row.Texture, data) then
-			row.Texture.Background:SetPoint("LEFT", leftmost, relative, x, 0);
-			row.Texture.Border:SetPoint("LEFT", leftmost, relative, x, 0);
+			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
+			row.Texture.Border:SetPoint("TOPLEFT", row.Texture);
 			row.Texture:SetPoint("LEFT", leftmost, relative, x, 0);
 			row.Texture:Show();
 			leftmost = row.Texture;
@@ -12109,7 +12134,7 @@ RowOnEnter = function (self)
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
-			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID, true);
+			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID and app.Settings:GetTooltipSetting("questID") then
 			GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
@@ -15997,7 +16022,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Heroic Deeds
 				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = app.CreateMapWithStyle(424);
-					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901, true);
+					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901);
 					if _cache then
 						for _,data in ipairs(_cache) do
 							data = CreateObject(data);
@@ -16045,7 +16070,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
 								local item = { ["itemID"] = itemID, ["expanded"] = false };
-								_cache = SearchForField("itemID", itemID, true);
+								_cache = SearchForField("itemID", itemID);
 								if _cache then
 									local ACKCHUALLY;
 									for _,data in ipairs(_cache) do
@@ -16100,7 +16125,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							elseif rewardType == "currency" then
 								if showCurrencies then
 									local item = { ["currencyID"] = itemID, ["expanded"] = false, };
-									_cache = SearchForField("currencyID", itemID, true);
+									_cache = SearchForField("currencyID", itemID);
 									if _cache then
 										for _,data in ipairs(_cache) do
 											local lvl;
@@ -17686,6 +17711,15 @@ app.events.VARIABLES_LOADED = function()
 		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
+
+	-- Verify artifact cache is the correct version/clear known old bad data
+	local artifactCache, artifactCacheVer = app.GetDataMember("CollectedArtifacts", {}), 1;
+	if not artifactCache["V"] or artifactCache["V"] ~= artifactCacheVer then
+		wipe(artifactCache);
+		artifactCache["V"] = artifactCacheVer;
+		C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+	end
+
 	app:GetDataCache();
 
 	Push(app, "WaitOnMountData", function()

@@ -3,12 +3,57 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using NLua;
 
 namespace ATT
 {
     class Program
     {
+        /// <summary>
+        /// All of the Release Phases that can be used as part of a conditional.
+        /// </summary>
+        static Dictionary<string, int> RELEASE_PHASES = new Dictionary<string, int>
+        {
+            // Key-Value Pair   // Classic Release Phase
+            { "UNKNOWN", 0 },   // Unknown, invalid data.
+            { "CLASSIC", 11 },  // PHASE_ONE
+            { "TBC", 17 },      // TBC_PHASE_ONE
+            { "WRATH", 30 },    // WRATH_PHASE_ONE
+            { "CATA", 40 },     // CATA_PHASE_ONE
+            { "MOP", 50 },      // MOP_PHASE_ONE
+            { "WOD", 60 },      // WOD_PHASE_ONE
+            { "LEGION", 70 },   // LEGION_PHASE_ONE
+            { "BFA", 80 },      // BFA_PHASE_ONE
+            { "SHADOWLANDS", 80 },      // SHADOWLANDS_PHASE_ONE
+        };
+
+        static string CURRENT_RELEASE_PHASE_NAME = 
+#if SHADOWLANDS
+                "SHADOWLANDS"
+#elif BFA
+                "BFA"
+#elif LEGION
+                "LEGION"
+#elif WOD
+                "WOD"
+#elif MOP
+                "MOP"
+#elif CATA
+                "CATA"
+#elif WRATH
+                "WRATH"
+#elif TBC
+                "TBC"
+#elif CLASSIC
+                "CLASSIC"
+#else
+                "UKNOWN"
+#endif
+            ;
+
+        static int CURRENT_RELEASE_PHASE = RELEASE_PHASES[CURRENT_RELEASE_PHASE_NAME];
+
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -17,10 +62,16 @@ namespace ATT
             try
             {
                 // Prepare console output to a file.
+#if ANYCLASSIC
+                var databaseRootFolder = "../.db";
+#else
+                var databaseRootFolder = ".";
+#endif
+
                 Directory.CreateDirectory("../Debugging");
 
                 // Load all of the RAW JSON Data into the database.
-                var files = Directory.EnumerateFiles(".", "*.json", SearchOption.AllDirectories).ToList();
+                var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
                 files.Sort();
                 foreach (var fileName in files)
                 {
@@ -42,10 +93,11 @@ namespace ATT
                 Trace.WriteLine("Done parsing JSON files...");
 
                 // Load all of the Lua files into the database.
-                var luaFiles = Directory.GetFiles(".", "*.lua", SearchOption.AllDirectories).ToList();
-                if (luaFiles.Contains(".\\_main.lua"))
+                var mainFileName = $"{databaseRootFolder}\\_main.lua";
+                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+                if (luaFiles.Contains(mainFileName))
                 {
-                    luaFiles.Remove(".\\_main.lua"); // Do not iterate over the header file.
+                    luaFiles.Remove(mainFileName); // Do not iterate over the header file.
                     luaFiles.Sort();
                 }
                 else
@@ -58,7 +110,7 @@ namespace ATT
                 }
 
                 Lua lua = new Lua();
-                lua.DoFile("./_main.lua");
+                ProcessLuaFile(lua, mainFileName);
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
@@ -108,7 +160,7 @@ namespace ATT
                         try
                         {
                             lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                            lua.DoFile(fileName);
+                            ProcessLuaFile(lua, fileName);
                             Framework.Merge(lua, lua.GetTable("AllTheThings"));
                             break;
                         }
@@ -178,6 +230,217 @@ namespace ATT
             {
                 Trace.WriteLine(e);
             }
+        }
+
+        static void ProcessLuaFile(Lua lua, string filename)
+        {
+            // Old:
+            //lua.DoFile(filename);
+
+            // New:
+            // We are now pre-processing the files based on parser version.
+            lua.DoString(ProcessContent(File.ReadAllText(filename)));
+        }
+
+        /// <summary>
+        /// Process the content of the file for command blocks.
+        /// </summary>
+        /// <param name="content">The content of the file.</param>
+        /// <returns>The processed content of the file.</returns>
+        static string ProcessContent(string content)
+        {
+            // If it doesn't contain an IF statement, just skip processing it.
+            if (content.Contains("-- #if"))
+            {
+                int startIndex = 0;
+                var builder = new StringBuilder();
+                ProcessContent(builder, content, ref startIndex, startIndex, content.Length);
+                var newContent = builder.ToString();
+
+                /*
+                // For debugging, uncomment and put a break point on the return.
+                File.WriteAllText("D://OldContent.txt", content);
+                File.WriteAllText("D://NewContent.txt", newContent);
+                */
+
+                return newContent;
+            }
+            return content;
+        }
+
+        /// <summary>
+        /// Process the content in the string for command blocks and write the valid command block data to the builder.
+        /// </summary>
+        /// <param name="builder">The string builder.</param>
+        /// <param name="content">The content of the file.</param>
+        /// <param name="index">The current index of the file.</param>
+        /// <param name="previousIndex">The previous index of the file.</param>
+        /// <param name="length">The total length of the string content.</param>
+        static void ProcessContent(StringBuilder builder, string content, ref int index, int previousIndex, int length)
+        {
+            while ((index = content.IndexOf("-- #", previousIndex)) > -1)
+            {
+                builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
+                ProcessInitialCommandBlock(builder, content, ref index, length);
+                previousIndex = index;
+            }
+            if (previousIndex < index) builder.Append(content.Substring(previousIndex, index - previousIndex));
+            else if (previousIndex < length) builder.Append(content.Substring(previousIndex, length - previousIndex));
+        }
+
+        static void ProcessInitialCommandBlock(StringBuilder builder, string content, ref int index, int length)
+        {
+            // Attempt to parse a command that initiates a command block.
+            int newLineIndex = content.IndexOf('\n', index += 4);
+            var command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().ToUpper().Split(' ');
+            index = newLineIndex;
+            switch (command[0])
+            {
+                case "IF":
+                    // This is an IF. It is the start of a new internal command block.
+                    ProcessInternalCommandBlock(command, builder, content, ref index, length);
+                    break;
+                default:
+                    throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'");
+            }
+        }
+
+        static bool ProcessCommand(string[] command)
+        {
+            if (command.Length == 1)
+            {
+                switch (command[0])
+                {
+                    case "ELSE":
+                        // This is an ELSE.
+                        return true;
+                    case "IF":
+                    case "ELIF":    // Requires at least 2
+                    case "ELSEIF":  // Requires at least 2
+                    case "ENDIF":   // Requires at least 1 command before it.
+                        throw new Exception($"Malformed command statement. '{string.Join(" ", command)}'");
+                    default:
+                        throw new Exception($"Unknown command statement. '{string.Join(" ", command)}'");
+                }
+            }
+            else if (command.Length > 1)
+            {
+                switch (command[1])
+                {
+                    case "NOT":
+                        // Skip the "NOT" and parse the command without it and then flip the state.
+                        int j = 0;
+                        var newCommand = new string[command.Length - 1];
+                        newCommand[0] = command[0];
+                        for (int i = 2;i < command.Length; ++i)
+                        {
+                            newCommand[++j] = command[i];
+                        }
+                        return !ProcessCommand(newCommand);
+                    case "BEFORE":
+                        if (command.Length == 3)    // Example: "IF" "BEFORE" "WOD"
+                        {
+                            return RELEASE_PHASES.TryGetValue(command[2], out int phase) && CURRENT_RELEASE_PHASE < phase;
+                        }
+                        throw new Exception($"Malformed #IF BEFORE statement. '{string.Join(" ", command)}'");
+                    case "AFTER":
+                        if (command.Length == 3)    // Example: "IF" "AFTER" "WOD"
+                        {
+                            return RELEASE_PHASES.TryGetValue(command[2], out int phase) && CURRENT_RELEASE_PHASE >= phase;
+                        }
+                        throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
+                    case "RETAIL":
+#if RETAIL
+                        return true;
+#else
+                        return false;
+#endif
+                    case "ANYCLASSIC":
+#if ANYCLASSIC
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CRIEVE":
+#if CRIEVE
+                        return true;
+#else
+                        return false;
+#endif
+                    case "PTR":
+#if PTR
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CLASSICPTR":
+#if CLASSICPTR
+                        return true;
+#else
+                        return false;
+#endif
+                    case "CLASSICBETA":
+#if CLASSICBETA
+                        return true;
+#else
+                        return false;
+#endif
+                    default:
+                        // If the command matches the name of a possible release phase, then return it.
+                        if (RELEASE_PHASES.ContainsKey(command[1])) return CURRENT_RELEASE_PHASE_NAME == command[1];
+
+                        // Potentially a more complicated pre-processed if statement?
+                        if (command.Length == 4)     // "IF" "PHASE" ">" "5"
+                        {
+                            // TODO
+                        }
+                        return false;
+                }
+            }
+            else throw new Exception($"Malformed #IF statement. '{string.Join(" ", command)}'");
+        }
+
+        static bool ProcessInternalCommandBlock(string[] command, StringBuilder builder, string content, ref int index, int length)
+        {
+            // Parse the next command in the block
+            int previousIndex = index;
+            var ConditionalSatisfied = ProcessCommand(command);
+            while ((index = content.IndexOf("-- #", previousIndex)) > -1)
+            {
+                // Write the portion of the statement prior to the next command to the buffer.
+                if (ConditionalSatisfied) builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
+
+                // Move forward 4 characters and parse the command.
+                index += 4;
+
+                // Determine what the next command says.
+                int newLineIndex = content.IndexOf('\n', index);
+                command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().ToUpper().Split(' ');
+                index = newLineIndex;
+
+                switch (command[0])
+                {
+                    case "IF":
+                        // This is a nested IF. It is the start of a new internal command block.
+                        ProcessInternalCommandBlock(command, ConditionalSatisfied ? builder : new StringBuilder(), content, ref index, length);
+                        previousIndex = index;
+                        break;
+                    case "ELSE":
+                    case "ELIF":
+                    case "ELSEIF":
+                        // This is an ELSE/IF.
+                        if (ProcessInternalCommandBlock(command, !ConditionalSatisfied ? builder : new StringBuilder(), content, ref index, length)) return true;
+                        previousIndex = index;
+                        break;
+                    default:
+                        // Break the loop.
+                        return true;
+                }
+            }
+
+            // Reset the index to the previous index.
+            index = previousIndex;
+            return false;
         }
     }
 }

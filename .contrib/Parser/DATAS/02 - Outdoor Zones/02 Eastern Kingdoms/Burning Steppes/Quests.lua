@@ -840,7 +840,10 @@ _.Zones =
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 28252 },	-- The Kodocaller's Horn
+					["sourceQuests"] = {
+						28252,	-- The Kodocaller's Horn
+						28246,	-- Strategic Cuts
+					},	
 					["g"] = {
 						i(64517),	-- Helm of Serendipity
 						i(64516),	-- Improvised Breastplate

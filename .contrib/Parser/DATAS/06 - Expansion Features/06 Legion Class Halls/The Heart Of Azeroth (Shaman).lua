@@ -7,7 +7,6 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(SHAMAN, {	-- The Heart of Azeroth (Shaman)
 			["classes"] = { SHAMAN },
-			["lvl"] = 98,
 			["maps"] = {
 				725,	-- The Maelstrom (scenario?)
 				726,	-- The Maelstrom
@@ -77,11 +76,10 @@ _.ExpansionFeatures =
 						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42995, {	-- A Taste For Blood
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
 						["sourceQuests"] = { 42989 },	-- Ma'haat the Indomitable
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
+						["coord"] = { 56.9, 14.2, 207 },	-- Deepholm
 					}),
 					q(44253, {	-- A Vision of Triumph
 						["classes"] = { SHAMAN },
@@ -331,11 +329,10 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 					}),
 					q(42989, {	-- Ma'haat the Indomitable
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 42997 },	-- The Maelstrom Pillar: Earth
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = { 29.4, 77.8, 207 },	-- Deepholm
 					}),
 					q(42184, {	-- Mission: Elemental Diplomacy
 						["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
@@ -370,10 +367,10 @@ _.ExpansionFeatures =
 						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42990, {	-- Neltharion's Lair: The Earthen Amulet
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 43003 },	-- Return to Janai
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = {29.4, 77.8, 207 },
 						["maps"] = { 731 },	-- Neltharion's Lair
 					}),
 					q(42188, {	-- Nobundo Awaits
@@ -413,11 +410,10 @@ _.ExpansionFeatures =
 						["coord"] = { 52.1, 81.9, 737 },	-- The Vortex Pinnacle
 					}),
 					q(43003, {	-- Return to Janai
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
 						["sourceQuests"] = { 42995 },	-- A Taste For Blood
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
+						["coord"] = { 56.9, 14.2, 207 },	-- Deepholm
 					}),
 					q(42208, {	-- Return to the Firelands
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
@@ -428,8 +424,8 @@ _.ExpansionFeatures =
 					q(42383, {	-- Rise, Champions
 						["sourceQuests"] = { 42114 },	-- The Ritual of Tides
 						["classes"] = { SHAMAN },
-						["coord"] = { 34.1, 31.3, 726 },
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
+						["coord"] = { 34.1, 31.3, 726 },
 					}),
 					q(42977, {	-- Servant of the Windseeker
 						["sourceQuests"] = { 42184 },	-- Mission: Elemental Diplomacy
@@ -464,7 +460,6 @@ _.ExpansionFeatures =
 					}),
 					q(44101, {	-- Supply Dropped
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
 						["provider"] = { "o", 254010 },	-- Earthen Ring Supplies
 						["repeatable"] = true,
 						["g"] = {

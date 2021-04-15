@@ -813,15 +813,17 @@ _.Zones =
 						i(113055),	-- Serrated Sawblade Axe
 					},
 				}),
-				q(34709, {	-- Every Bit Counts
+				q(34709, {	-- Every Bit Counts (A)
 					["provider"] = { "n", 79689 },	-- Aeun
 					["coord"] = { 56.0, 68.3, 535 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
-				q(34710, {	-- Every Bit Counts
+				q(34710, {	-- Every Bit Counts (H)
 					["provider"] = { "n", 79696 },	-- Ranger Belonis
 					["coord"] = { 55.3, 66.7, 535 },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(35994, {	-- Eyes of the Archmage
 					["u"] = REMOVED_FROM_GAME,

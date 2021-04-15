@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(42, {	-- Deadwind Pass
+		m(DEADWIND_PASS, {
 			n(QUESTS, {
 				q(40933, {	-- A Grisly Task
 					["provider"] = { "n", 100729 },	-- Revil Kost

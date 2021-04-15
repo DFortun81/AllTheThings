@@ -198,6 +198,9 @@ NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
+-- Raids (TBC)
+KARAZHAN = 350;
+
 -- Map IDs used in ATT-Classic which don't exist in Live
 STRANGLETHORN_VALE = nil;	-- 1434 Classic
 
@@ -206,6 +209,7 @@ KALIMDOR = 12;	-- Confirmed!
 
 -- Eastern Kingdoms
 EASTERN_KINGDOMS = 13;	-- Confirmed!
+DEADWIND_PASS = 42;	-- Confirmed!
 
 -- Outland & TBC Additions
 OUTLAND = 101;	-- Confirmed!

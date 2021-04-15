@@ -1041,10 +1041,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(182169, {	-- Veilwing Soul
-							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
-							["questID"] = 62425,	-- Veilwing Soul
-						}),
+						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896),	-- Abominable Anima Spherule
 						i(184587),	-- Ambuscade
@@ -1406,10 +1403,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(182169, {	-- Veilwing Soul
-							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
-							["questID"] = 62425,	-- Veilwing Soul
-						}),
+						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896),	-- Abominable Anima Spherule
 						i(184587),	-- Ambuscade

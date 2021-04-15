@@ -318,6 +318,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105602 },	-- Vindicator Boros
 						["coord"] = { 37.7, 36.7, 627 },	-- Dalaran
 					}),
+					q(43385, {	-- Infiltrating Our Enemies
+						["sourceQuests"] = { 43380 },	-- Champion: Sol
+						["lvl"] = 45,
+						["classes"] = { PRIEST },
+						["coord"] = { 51.5, 47.7, 702 },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),	
 					q(46029, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
@@ -339,8 +346,9 @@ _.ExpansionFeatures =
 					}),
 					q(44251, {	-- Power Word: Armor
 						["classes"] = { PRIEST },
+						["lvl"] = 45,
+						["provider"] = { "n", 112401 },	-- Meridelle Lightspark
 						["coord"] = { 38.9, 24.4, 702 },
-						["lvl"] = 110,
 						["g"] = {
 							i(139757),	-- Miter of the High Priest
 						},
