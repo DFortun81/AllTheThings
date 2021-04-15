@@ -16,83 +16,129 @@ namespace ATT
     {
         #region Database
         /// <summary>
-        /// The current version of Retail WoW.
+        /// The very first Phase ID as indicated in _main.lua.
         /// </summary>
-        private static readonly int[] CURRENT_VERSION_ARR = new int[]
+        public static readonly Dictionary<string, int> FIRST_EXPANSION_PHASE = new Dictionary<string, int>
         {
-#if CLASSIC
-            1, 13, 6, 37497
-#elif TBC
-            2, 5, 1, 38169
-#else
-            // BFA
-            9, 0, 5, 38134
-#endif
+            // Key-Value Pair   // Classic Release Phase
+            { "UNKNOWN", 0 },   // Unknown, invalid data.
+            { "CLASSIC", 11 },  // PHASE_ONE
+            { "TBC", 17 },      // TBC_PHASE_ONE
+            { "WRATH", 30 },    // WRATH_PHASE_ONE
+            { "CATA", 40 },     // CATA_PHASE_ONE
+            { "MOP", 50 },      // MOP_PHASE_ONE
+            { "WOD", 60 },      // WOD_PHASE_ONE
+            { "LEGION", 70 },   // LEGION_PHASE_ONE
+            { "BFA", 80 },      // BFA_PHASE_ONE
+            { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
         };
 
         /// <summary>
-        /// The current version of Retail WoW. [Format: ABBBCCCFFFFFF]
+        /// The very last Phase ID (inclusive) as indicated in _main.lua.
         /// </summary>
-        private static readonly long CURRENT_VERSION = CURRENT_VERSION_ARR.ConvertVersion();
+        public static readonly Dictionary<string, int> LAST_EXPANSION_PHASE = new Dictionary<string, int>
+        {
+            // Key-Value Pair   // Classic Release Phase
+            { "UNKNOWN", 10 },   // Unknown, invalid data.
+            { "CLASSIC", 16 },  // PHASE_SIX
+            { "TBC", 29 },      // TBC_PHASE_SIX?
+            { "WRATH", 39 },    // WRATH_PHASE_SIX?
+            { "CATA", 49 },     // CATA_PHASE_SIX?
+            { "MOP", 59 },      // MOP_PHASE_SIX?
+            { "WOD", 69 },      // WOD_PHASE_SIX?
+            { "LEGION", 79 },   // LEGION_PHASE_SIX?
+            { "BFA", 89 },      // BFA_PHASE_SIX?
+            { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
+        };
 
         /// <summary>
-        /// The initial build version for the Burning Crusade Expansion.
+        /// The very first patch used by each content expansion.
+        /// https://wowpedia.fandom.com/wiki/Patch
         /// </summary>
-        private static readonly int[] BURNING_CRUSADE_VERSION_ARR = new int[] { 2, 0, 1, 18471 };
+        public static readonly Dictionary<string, int[]> FIRST_EXPANSION_PATCH = new Dictionary<string, int[]>
+        {
+            // Key-Value Pair   // Classic Release Version
+            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },   // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },
+            { "TBC", new int[] { 2, 0, 1, 22248 } },
+            { "WRATH", new int[] { 3, 0, 2, 22248 } },
+            { "CATA", new int[] { 4, 0, 1, 22248 } },
+            { "MOP", new int[] { 5, 0, 4, 22248 } },
+            { "WOD", new int[] { 6, 0, 2, 22248 } },
+            { "LEGION", new int[] { 7, 0, 3, 22248 } },
+            { "BFA", new int[] { 8, 3, 7, 22248 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+        };
 
         /// <summary>
-        /// The initial build version for the Burning Crusade Expansion.
+        /// The very last patch used by each content expansion.
+        /// NOTE: Classic usually follows this build number.
+        /// https://wowpedia.fandom.com/wiki/Patch
         /// </summary>
-        private static readonly long BURNING_CRUSADE_VERSION = BURNING_CRUSADE_VERSION_ARR.ConvertVersion();
+        public static readonly Dictionary<string, int[]> LAST_EXPANSION_PATCH = new Dictionary<string, int[]>
+        {
+            // Key-Value Pair   // Classic Release Version
+            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },   // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 13, 7, 22248 } },
+            { "TBC", new int[] { 2, 4, 3, 22248 } },
+            { "WRATH", new int[] { 3, 3, 5, 22248 } },
+            { "CATA", new int[] { 4, 3, 4, 22248 } },
+            { "MOP", new int[] { 5, 4, 8, 22248 } },
+            { "WOD", new int[] { 6, 2, 4, 22248 } },
+            { "LEGION", new int[] { 7, 3, 5, 22248 } },
+            { "BFA", new int[] { 8, 3, 7, 22248 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+        };
 
-        /// <summary>
-        /// The initial build version for the Warlords of Draenor Expansion.
-        /// </summary>
-        private static readonly int[] WARLORDS_VERSION_ARR = new int[] { 6, 0, 1, 18471 };
-
-        /// <summary>
-        /// The initial build version for the Warlords of Draenor Expansion.
-        /// </summary>
-        private static readonly long WARLORDS_VERSION = WARLORDS_VERSION_ARR.ConvertVersion();
-
-        /// <summary>
-        /// The initial build version for the Legion Expansion.
-        /// </summary>
-        private static readonly int[] LEGION_VERSION_ARR = new int[] { 7, 0, 3, 22248 };
-
-        /// <summary>
-        /// The initial build version for the Legion Expansion.
-        /// </summary>
-        private static readonly long LEGION_VERSION = LEGION_VERSION_ARR.ConvertVersion();
-
-        /// <summary>
-        /// The maximum ItemID available to a given distribution type.
-        /// </summary>
-        public static readonly long MAX_ITEMID =
-#if CLASSIC
-            99999999//24358 // NOTE: This was not an ideal solution. Moving forward, use the Phase Identifiers.
+        public static readonly string CURRENT_RELEASE_PHASE_NAME =
+#if SHADOWLANDS
+                "SHADOWLANDS"
+#elif BFA
+                "BFA"
+#elif LEGION
+                "LEGION"
+#elif WOD
+                "WOD"
+#elif MOP
+                "MOP"
+#elif CATA
+                "CATA"
+#elif WRATH
+                "WRATH"
+#elif TBC
+                "TBC"
+#elif CLASSIC
+                "CLASSIC"
 #else
-            99999999
+                "UKNOWN"
 #endif
             ;
+
+        /// <summary>
+        /// The current phase release ID of the current build type.
+        /// </summary>
+        public static readonly int CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
+
+        /// <summary>
+        /// The last patch version of the current build type. [Format: ABBBCCCFFFFFF]
+        /// </summary>
+        public static readonly long CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
+
+        /// <summary>
+        /// The first patch they added Transmog as something you could collect.
+        /// </summary>
+        private static readonly long ADDED_TRANSMOG_VERSION = FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion();
 
         /// <summary>
         /// The maximum available Phase Identifier.
         /// </summary>
         public static readonly long MAX_PHASE_ID =
-#if CLASSIC
-            16
-#elif TBC
-            22
+#if ANYCLASSIC
+            LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME]
 #else
             99999999
 #endif
             ;
-
-        /// <summary>
-        /// The maximum Player level in the game (both Retail and Classic match! how nice...)
-        /// </summary>
-        public const int MAX_LEVEL = 60;
 
         // These get loaded from _main.lua now.
         public static List<object> ALLIANCE_ONLY;
@@ -244,15 +290,7 @@ namespace ATT
             }
 
             // Items that were added to the game after the current expansion shouldn't be included in the game.
-            if (data.TryGetValue("itemID", out int itemID))
-            {
-                if (itemID > MAX_ITEMID)
-                {
-                    Trace.Write("Excluding Item #");
-                    Trace.WriteLine(itemID);
-                    return false;
-                }
-            }
+            data.TryGetValue("itemID", out int itemID);
 
             // Get the filter for this Item
             if (data.TryGetValue("f", out int f))
@@ -322,7 +360,8 @@ namespace ATT
                     {
                         case "created":
                             {
-                                removed = 1;
+                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
+                                else removed = 1;
                                 break;
                             }
                         case "added":
@@ -331,27 +370,31 @@ namespace ATT
                                 if (index == 0)
                                 {
                                     firstVersion = version;
-                                    if (CURRENT_VERSION < version) removed = 1;
+                                    if (CURRENT_RELEASE_VERSION < version)
+                                    {
+                                        return false;    // Invalid
+                                    }
+                                    else removed = 0;
                                 }
                                 else
                                 {
-                                    if (CURRENT_VERSION >= version) removed = 0;
+                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
                                 }
                                 break;
                             }
                         case "deleted":
                             {
-                                if (CURRENT_VERSION >= version) removed = 4;
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
                                 break;
                             }
                         case "removed":
                             {
-                                if (CURRENT_VERSION >= version) removed = 2;
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
                                 break;
                             }
                         case "blackmarket":
                             {
-                                if (CURRENT_VERSION >= version) removed = 3;
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
                                 break;
                             }
                     }
@@ -466,7 +509,7 @@ namespace ATT
             }
             if (data.TryGetValue("s", out f))
             {
-                if (f < 1 || CURRENT_VERSION < LEGION_VERSION) data.Remove("s");
+                if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION) data.Remove("s");
             }
 
             minLevel = LevelConsolidation(data, minLevel);
@@ -529,22 +572,13 @@ namespace ATT
                         {
                             case "i":
                                 itemID = decimal.ToInt32(Convert.ToDecimal(c[1]));
-                                if (itemID > MAX_ITEMID)
+                                var item = Items.GetNull(itemID);
+                                if (item != null)
                                 {
-                                    Trace.Write("Excluding Item #");
-                                    Trace.WriteLine(itemID);
-                                    cost.RemoveAt(i);
-                                }
-                                else
-                                {
-                                    var item = Items.GetNull(itemID);
-                                    if (item != null)
+                                    // The item was classified as never being implemented or being completely removed from the game.
+                                    if (item.TryGetValue("u", out int u) && u == 1)
                                     {
-                                        // The item was classified as never being implemented or being completely removed from the game.
-                                        if (item.TryGetValue("u", out int u) && u == 1)
-                                        {
-                                            cost.RemoveAt(i);
-                                        }
+                                        cost.RemoveAt(i);
                                     }
                                 }
                                 break;
@@ -570,6 +604,7 @@ namespace ATT
                         case 150:   // Tiger Riding
                         case 762:   // Riding
                         case 849:   // Warlock
+                        case 0: // Explicitly ignoring.
                             {
                                 // Ignore! (and remove!)
                                 data.Remove("requireSkill");
@@ -691,7 +726,7 @@ namespace ATT
                 else
                 {
                     var level = Convert.ToInt32(lvlRef);
-                    if (level <= minLevel || level > Framework.MAX_LEVEL) data.Remove("lvl");
+                    if (level <= minLevel) data.Remove("lvl");
                     else minLevel = level;
                 }
             }

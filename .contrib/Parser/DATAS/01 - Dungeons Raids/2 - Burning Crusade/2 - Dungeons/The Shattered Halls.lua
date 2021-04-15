@@ -133,6 +133,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27521),	-- Telaari Hunting Girdle
 						i(27529),	-- Figurine of the Colossus
 						i(24312),	-- Pattern: Spellstrike Hood
+						i(25462, {	-- Tome of Dusk
+							["timeline"] = { "removed 7.1.0.1233" },
+						}),
 					})),
 					cr(20923, e(728, {	-- Blood Guard Porung
 						i(30710),	-- Blood Guard's Necklace of Ferocity

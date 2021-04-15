@@ -87,6 +87,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27919),	-- Light-Woven Slippers
 						i(27914),	-- Moonstrider Boots
 						i(27915),	-- Sky-Hunter Swift Boots
+						i(25461, {	-- Book of Forgotten Names
+							["timeline"] = { "removed 7.1.0.1233" },
+						}),
 					})),
 					cr(23035, e(542, {	-- Anzu
 						i(32768, {	-- Reins of the Raven Lord (MOUNT!)

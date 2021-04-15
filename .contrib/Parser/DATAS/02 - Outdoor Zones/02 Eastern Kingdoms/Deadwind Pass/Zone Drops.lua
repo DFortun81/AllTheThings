@@ -13,6 +13,16 @@ _.Zones =
 						7372,	-- Deadwind Warlock
 					},
 				}),
+				i(24480, {	-- Ghostly Essence
+					["timeline"] = { "removed 7.1.0.1233" },
+					["crs"] = {
+						12378,	-- Damned Soul
+						7370,	-- Restless Shade
+						12379,	-- Unliving Caretaker
+						12380,	-- Unliving Resident
+						12377,	-- Wailing Spectre
+					},
+				}),
 			}),
 		}),
 	}),

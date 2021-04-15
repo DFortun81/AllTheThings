@@ -33,6 +33,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(22533, {	-- Formula: Enchant Bracer - Fortitude
 					["crs"] = { 17803 },	-- Coilfang Oracle
 				}),
+				i(24487, {	-- Second Key Fragment
+					["coord"] = { 59.0, 24.8, 263 },
+					["cr"] = 22891,	-- Second Fragment Guardian
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(17797, e(573, {	-- Hydromancer Thespia
