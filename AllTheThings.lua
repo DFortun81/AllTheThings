@@ -5177,6 +5177,14 @@ app.TryColorizeName = function(group, name)
 			elseif group.r == Enum.FlightPathFaction.Alliance then
 				return Colorize(name, "ff407fbf");
 			end
+		-- specific races
+		elseif group.races then
+			-- this group requires a horde-only race
+			if containsAny(group.races, HORDE_ONLY) then
+				return Colorize(name, "ffcc6666");
+			else -- assuming no other factions exist and that .races will only ever have horde or alliance races
+				return Colorize(name, "ff407fbf");
+			end
 		-- un-acquirable color
 		-- TODO: grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
 		-- elseif not app.FilterItemClass(group) then
