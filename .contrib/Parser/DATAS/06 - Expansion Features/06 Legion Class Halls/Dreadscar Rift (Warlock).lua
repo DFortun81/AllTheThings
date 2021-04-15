@@ -159,6 +159,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
 					}),
+					q(41780, {	-- Doom and Gloom
+						["sourceQuest"] = 41781,	-- Herding Goats
+						["classes"] = { WARLOCK },
+						["coord"] = { 39.1, 62.6, 641 },
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
+					}),
 					q(42100, {	-- Empowering the Soul
 						["sourceQuests"] = { 
 							41752,	-- Champion: Zinnin Smythe
@@ -193,6 +199,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 58.7, 32.7, 717 },
 						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
+					}),
+					q(41781, {	-- Herding Goats
+						["sourceQuest"] = 41769,	-- Mad Ernie the Alchemist
+						["classes"] = { WARLOCK },
+						["coord"] = { 39.1, 62.6, 641 },
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 					}),
 					q(43887, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
