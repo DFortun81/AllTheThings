@@ -16,6 +16,11 @@ namespace ATT
     {
         #region Database
         /// <summary>
+        /// Whether or not Debug Mode is turned on.
+        /// </summary>
+        public static bool DebugMode = false;
+
+        /// <summary>
         /// The very first Phase ID as indicated in _main.lua.
         /// </summary>
         public static readonly Dictionary<string, int> FIRST_EXPANSION_PHASE = new Dictionary<string, int>
@@ -2203,13 +2208,16 @@ namespace ATT
 #endif
 
             // DEBUGGING: Output Parsed Data
-            var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
-            if (debugFolder.Exists)
+            if (DebugMode)
             {
-                // Export various debug information to the Debugging folder.
-                Items.ExportDebug(debugFolder.FullName);
-                Objects.ExportDebug(debugFolder.FullName);
-                Objects.ExportDB(debugFolder.FullName);
+                var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
+                if (debugFolder.Exists)
+                {
+                    // Export various debug information to the Debugging folder.
+                    Items.ExportDebug(debugFolder.FullName);
+                    Objects.ExportDebug(debugFolder.FullName);
+                    Objects.ExportDB(debugFolder.FullName);
+                }
             }
 
             // Setup the output folder (/db)

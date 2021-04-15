@@ -15,6 +15,15 @@ namespace ATT
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
 
+            // Determine if running in Debug Mode or not.
+            if (args != null && args.Length > 0)
+            {
+                foreach(var arg in args)
+                {
+                    if (arg == "debug") Framework.DebugMode = true;
+                }
+            }
+
             try
             {
                 // Prepare console output to a file.

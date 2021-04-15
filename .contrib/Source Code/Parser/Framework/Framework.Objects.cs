@@ -428,7 +428,7 @@ namespace ATT
             internal static void AddRecipe(long requiredSkill, string recipeName, long recipeID)
             {
                 // only add recipes with a name and requiredSkill
-                if (recipeName == null || requiredSkill == null)
+                if (recipeName == null || requiredSkill == 0)
                     return;
 
                 // ensure skill bucket exists
