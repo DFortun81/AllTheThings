@@ -3558,24 +3558,27 @@ _.ExpansionFeatures =
 					n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 55.2, 54.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+						["g"] = bubbleDown({
+							["modID"] = 3,	-- Normal
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182425, {	-- Builwark of the Stone Legion
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(182416, {	-- Claws of the Stone Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182414, {	-- Crimson Court Backstabber
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182422, {	-- Dread Inquisitor's Spine
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182424, {	-- Dredbat Repeating Crossbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182398, {	-- Dredfang Ironspitter
 								--["cost"] = { { "x", yyyy, zzzz } },
@@ -3590,7 +3593,7 @@ _.ExpansionFeatures =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(182417, {	-- Mace of Enveloping Sins
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
 								--["cost"] = { { "x", yyyy, zzzz } },
@@ -3602,10 +3605,10 @@ _.ExpansionFeatures =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(182420, {	-- Nathrian Duelist's Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182419, {	-- Nathrian Torchbearer's Stave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182393, {	-- Rod of the Stone Sentinels
 								--["cost"] = { { "x", yyyy, zzzz } },
@@ -3617,7 +3620,7 @@ _.ExpansionFeatures =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(182415, {	-- Stoneborn Goliath's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182395, {	-- Stoneborn Terrorblade
 								--["cost"] = { { "x", yyyy, zzzz } },
@@ -3632,10 +3635,10 @@ _.ExpansionFeatures =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(182418, {	-- Torch of Fiery Atonement
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 							i(182423, {	-- Wingdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.03, 1 } },
 							}),
 						}),
 					}),
@@ -3644,7 +3647,10 @@ _.ExpansionFeatures =
 						-- ^ i'm not having this issue, but the modID doesn't seem to be picking up at all.  looking at the individual items shows the 'normal' version of the currencies instead of the LFR version
 						-- and when you look at the currencies in the dungeon journal or in an ATT list, none of the things they buy show up (doesn't appear on LFR or normal currency)
 						["coord"] = { 55.1, 46.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+						["g"] = bubbleDown({
+							["modID"] = 4,	-- LFR
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
@@ -3728,7 +3734,10 @@ _.ExpansionFeatures =
 					n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 45.4, 65.0, 1700 },
-						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+						["g"] = bubbleDown({
+							["modID"] = 5,	-- Heroic
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
@@ -3812,7 +3821,10 @@ _.ExpansionFeatures =
 					n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 40.3, 46.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+						["g"] = bubbleDown({
+							["modID"] = 6,	-- Mythic
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),

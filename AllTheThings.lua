@@ -4227,19 +4227,19 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
+				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					--print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
+					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
 					_ = SearchForField("s", sourceID);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					--print("SEARCHING FOR ITEM LINK ", link, itemID);
+					-- print("SEARCHING FOR ITEM LINK ", link, itemID);
 					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
 				end
 				
 				-- Merge together the cost search results as well.
-				local searchResultsAsCost = SearchForField("itemIDAsCost", itemID);
+				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
@@ -7722,11 +7722,21 @@ local itemFields = {
 	end,
 	["collectibleAsCost"] = function(t)
 		if t.parent and t.parent.saved then return false; end
-		local id = t.itemID;
-		local results = app.SearchForField("itemIDAsCost", id);
+		local id, results;
+		-- Search by modItemID if possible for accuracy
+		if t.modItemID then
+			id = t.modItemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
+		-- If no results, search by plain itemID
+		if not results and t.itemID then
+			id = t.itemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
-				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				-- different itemID, OR same itemID with different modID is allowed
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
 					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
@@ -7757,12 +7767,22 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
-		local id = t.itemID;
-		local results = app.SearchForField("itemIDAsCost", id);
+		local id, results;
+		-- Search by modItemID if possible for accuracy
+		if t.modItemID then
+			id = t.modItemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
+		-- If no results, search by plain itemID
+		if not results and t.itemID then
+			id = t.itemID;
+			results = app.SearchForField("itemIDAsCost", id);
+		end
 		if results and #results > 0 then
 			local collected, count = true, 0;
 			for _,ref in pairs(results) do
-				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				-- different itemID, OR same itemID with different modID is allowed
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
 					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
 						count = count + 1;
 						if ref.progress < ref.total then

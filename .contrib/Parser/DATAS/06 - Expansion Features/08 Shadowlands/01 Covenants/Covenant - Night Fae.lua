@@ -1548,7 +1548,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
-				n(-936, {	-- Soulshape Forms
+				n(-936, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {	-- Soulshape Forms
 					-- TODO: fill in remaining quests that are as yet unknown
 					q(62422, {	-- Ardenmoth Soul
 						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
@@ -1626,7 +1626,7 @@ _.ExpansionFeatures =
 						["description"] = "Drops from random battlegrounds.",
 						["provider"] = { "i", 182184 },	-- Wyvern Soul
 					}),
-				}),
+				})),
 				n(TREASURES, {
 					o(356820, {	-- Large Lunarlight Pod
 						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
