@@ -1130,8 +1130,6 @@ _.ExpansionFeatures =
 										}),
 										crit(16, {	-- Vanity Mirror
 										}),
-										crit(19, {	-- Protective Braziers
-										}),
 									}),
 									ach(14681, {	-- Dredger Academy
 										crit(1, {	-- Ardenweald Etiquette
@@ -1387,11 +1385,16 @@ _.ExpansionFeatures =
 											}),
 											i(181227),	-- Bronze Ceremonial Targe
 											i(181563),	-- Decree: Mikanikos's Boon
-											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181235),	-- Final Arbiter's Gavel
+											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181230),	-- Pugilist's Chakram
 											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
+											i(181439, {	-- Protective Braziers
+												crit(19, {	-- Protective Braziers
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
