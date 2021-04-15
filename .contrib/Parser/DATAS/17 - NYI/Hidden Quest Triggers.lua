@@ -4254,6 +4254,7 @@ _.HiddenQuestTriggers =
 		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
 		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+		q(62145),	-- picked up when entering the Ember Court for the week — for "Crime of Fashion"
 		q(62142),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Ember Skyterror" objective
 		q(61450),	-- also part of the "Ember Skyterror" objective, for turning the seed in to Renathal
 		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
@@ -4286,12 +4287,15 @@ _.HiddenQuestTriggers =
 		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"
 		q(62117),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
 		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
+		q(62113),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
+		q(61162),	-- for the #62113 version of "Party Crashers"
 		q(62128),	-- picked up when entering the Ember Court for the week — for "Concert Kick-Off"
 		q(62129),	-- picked up when entering the Ember Court for the week — for "Dance For Love"
 		q(62139),	-- picked up when entering the Ember Court for the week — for "Knockerbock"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60957),	-- "Ansel's Lucky Violin," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60955),	-- "Noko's Flute," same as above
 		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
 		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
@@ -4500,6 +4504,7 @@ _.HiddenQuestTriggers =
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 		q(59687),	-- using "Dog Bone's Bone"
 		q(59681),	-- using "Anima-Infused Water"
+		q(61455),	-- using "Protective Braziers"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

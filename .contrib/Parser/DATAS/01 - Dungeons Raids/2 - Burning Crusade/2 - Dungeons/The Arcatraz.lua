@@ -60,6 +60,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(23606, {	-- Plans: Felsteel Leggings
 					["crs"] = { 20900 },	-- Unchained Doombringer
 				}),
+				i(24488, {	-- Third Key Fragment
+					["coord"] = { 59.0, 24.8, 270 },
+					["cr"] = 22892,	-- Third Fragment Guardian
+				}),
 			}),
 			d(1,  {	-- Normal
 				cr(20870, e(548, {	-- Zereketh the Unbound

@@ -38,6 +38,16 @@ _.Zones =
 					["crs"] = { 7428 },	-- Frostmaul Giant
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				i(18665, {	-- The Eye of Shadow
+					["classes"] = { PRIEST },
+					-- #if NOT ANYCLASSIC
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["crs"] = {
+						7461,	-- Hederine Initiate
+						7463,	-- Hederine Slayer
+					},
+				}),
 			}),
 		}),
 	}),

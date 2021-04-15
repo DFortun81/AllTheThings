@@ -118,6 +118,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28810),	-- Windshear Boots					-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 					i(28830),	-- Dragonspine Trophy
 					i(28823),	-- Eye of Grull						-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
+					i(31750),	-- Earthen Signet
 				},
 			})
 		},

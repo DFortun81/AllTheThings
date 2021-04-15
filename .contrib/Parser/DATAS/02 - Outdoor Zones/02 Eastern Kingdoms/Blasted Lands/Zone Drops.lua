@@ -132,9 +132,34 @@ _.Zones =
 						}),
 					},
 				}),
+				i(4213, {	-- Grimoire of Doom
+					-- #if ANYCLASSIC
+					["recipeID"] = 18540,	-- Ritual of Doom
+					-- #else
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						12396,	-- Doomguard Commander
+						8716,	-- Dreadlord
+					},
+				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest
 					["crs"] = { 6005 },	-- Shadowsworn Thug
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				i(18665, {	-- The Eye of Shadow
+					["classes"] = { PRIEST },
+					-- #if NOT ANYCLASSIC
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["crs"] = {
+						12396,	-- Doomguard Commander
+						8716,	-- Dreadlord
+						8717,	-- Felguard Elite
+						12397,	-- Lord Kazzak
+						8718,	-- Manahound
+					},
 				}),
 				i(118675, {	-- Time-Locked Box (PET!)
 					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",

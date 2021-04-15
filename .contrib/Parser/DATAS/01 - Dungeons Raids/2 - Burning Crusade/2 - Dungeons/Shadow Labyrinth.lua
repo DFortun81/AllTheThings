@@ -11,58 +11,60 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		["g"] = {
 			n(QUESTS, {
-				["g"] = {
-					q(29645, {	-- Ambassador Hellmaw
-						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
-					}),
-					q(29640, {	-- Find Spy To'gun
-						["provider"] = { "n", 54891 },	-- Spy Grik'tha
-					}),
-					q(10095,  {	-- Into the Heart of the Labyrinth
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "o", 182947 },	-- The Codex of Blood
-					}),
-					q(29644, {	-- Into the Heart of the Labyrinth
-						["provider"] = { "o", 182947 },	-- The Codex of Blood
-						["icon"] = "Interface\\Icons\\ability_warlock_ancientgrimoire",
-						["sourceQuests"] = { 29643 },	-- The Codex of Blood
-						["g"] = {
-							i(28179),	-- Shattrath Jumpers
-							i(28178),	-- Spymistress' Boots
-							i(28177),	-- Auchenai Boots
-							i(28176),	-- Sha'tari Wrought Greaves
-						},
-					}),
-					q(10094,  {	-- The Codex of Blood
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 19542 },	-- Field Commander Mahfuun
-					}),
-					q(29643, {	-- The Codex of Blood
-						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
-					}),
-					q(10091,  {	-- The Soul Devices
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 18891 },	-- Spy To'gun
-						["g"] = {
-							i(28174),	-- Shattrath Wraps
-							i(28171),	-- Spymistress' Wristguards
-							i(28170),	-- Auchenai Bracers
-							i(28167),	-- Sha'tari Wrought Armguards
-						},
-					}),
-					q(29641, {	-- The Soul Devices
-						["provider"] = { "n", 18891 },	-- Spy To'gun
-						["sourceQuests"] = { 29640 },	-- Find Spy To'gun
-						["g"] = {
-							i(28174),	-- Shattrath Wraps
-							i(28171),	-- Spymistress' Wristguards
-							i(28170),	-- Auchenai Bracers
-							i(28167),	-- Sha'tari Wrought Armguards
-						},
-					}),
-				},
+				q(29645, {	-- Ambassador Hellmaw
+					["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
+				}),
+				q(29640, {	-- Find Spy To'gun
+					["provider"] = { "n", 54891 },	-- Spy Grik'tha
+				}),
+				q(10095,  {	-- Into the Heart of the Labyrinth
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "o", 182947 },	-- The Codex of Blood
+				}),
+				q(29644, {	-- Into the Heart of the Labyrinth
+					["provider"] = { "o", 182947 },	-- The Codex of Blood
+					["icon"] = "Interface\\Icons\\ability_warlock_ancientgrimoire",
+					["sourceQuests"] = { 29643 },	-- The Codex of Blood
+					["g"] = {
+						i(28179),	-- Shattrath Jumpers
+						i(28178),	-- Spymistress' Boots
+						i(28177),	-- Auchenai Boots
+						i(28176),	-- Sha'tari Wrought Greaves
+					},
+				}),
+				q(10094,  {	-- The Codex of Blood
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 19542 },	-- Field Commander Mahfuun
+				}),
+				q(29643, {	-- The Codex of Blood
+					["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
+				}),
+				q(10091,  {	-- The Soul Devices
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 18891 },	-- Spy To'gun
+					["g"] = {
+						i(28174),	-- Shattrath Wraps
+						i(28171),	-- Spymistress' Wristguards
+						i(28170),	-- Auchenai Bracers
+						i(28167),	-- Sha'tari Wrought Armguards
+					},
+				}),
+				q(29641, {	-- The Soul Devices
+					["provider"] = { "n", 18891 },	-- Spy To'gun
+					["sourceQuests"] = { 29640 },	-- Find Spy To'gun
+					["g"] = {
+						i(28174),	-- Shattrath Wraps
+						i(28171),	-- Spymistress' Wristguards
+						i(28170),	-- Auchenai Bracers
+						i(28167),	-- Sha'tari Wrought Armguards
+					},
+				}),
 			}),
 			n(ZONEDROPS, {
+				i(24514, {	-- First Key Fragment
+					["coord"] = { 82.6, 30.8, 260 },
+					["cr"] = 22890,	-- First Fragment Guardian
+				}),
 				i(23607, {	-- Plans: Felsteel Helm
 					["crs"] = { 18830 },	-- Cabal Fanatic
 				}),

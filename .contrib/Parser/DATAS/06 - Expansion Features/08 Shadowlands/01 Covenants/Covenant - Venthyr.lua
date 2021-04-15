@@ -1130,8 +1130,6 @@ _.ExpansionFeatures =
 										}),
 										crit(16, {	-- Vanity Mirror
 										}),
-										crit(19, {	-- Protective Braziers
-										}),
 									}),
 									ach(14681, {	-- Dredger Academy
 										crit(1, {	-- Ardenweald Etiquette
@@ -1387,11 +1385,16 @@ _.ExpansionFeatures =
 											}),
 											i(181227),	-- Bronze Ceremonial Targe
 											i(181563),	-- Decree: Mikanikos's Boon
-											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181235),	-- Final Arbiter's Gavel
+											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181230),	-- Pugilist's Chakram
 											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
+											i(181439, {	-- Protective Braziers
+												crit(19, {	-- Protective Braziers
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
@@ -1909,6 +1912,12 @@ _.ExpansionFeatures =
 										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
+								}),
+								q(62104, {	-- Restock: Stoneborn Reserves
+									["repeatable"] = true,
+									["provider"] = { "n", 165496 },
+									["coord"] = { 32.1, 41.6, 1525 },	-- Revendreth
+								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
 								}),
 								q(62108, {	-- Restock: Strategic Codices
 									["repeatable"] = true,	-- it shows up as a blue ?

@@ -24,14 +24,6 @@ _.Zones =
 					["coord"] = { 50.3, 74.4, 76 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(7486,  {	-- A Hero's Reward
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(18399)),	-- Ocean's Breeze
-						un(REMOVED_FROM_GAME, i(18398)),	-- Tidal Loop
-					},
-				}),
 				q(5536,  {	-- A Land Filled with Hatred
 					["provider"] = { "n", 11548 },	-- Loh'atu
 					["u"] = REMOVED_FROM_GAME,
@@ -80,12 +72,6 @@ _.Zones =
 					["provider"] = { "n", 35142 },	-- Ergll
 					["coord"] = { 70.3, 36.2, 76 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(6823,  {	-- Agent of Hydraxis
-					["sourceQuests"] = { 6822 },	-- The Molten Core
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24497, {	-- Airborne Again
 					["sourceQuests"] = { 14392 },	-- Farewell, Minnow
@@ -308,15 +294,6 @@ _.Zones =
 						i(53418),	-- Honorary Gob Squad Shield
 					},
 				}),
-				q(6821,  {	-- Eye of the Emberseer
-					["sourceQuests"] = {
-						6804,	-- Poisoned Water
-						6805,	-- Stormers and Rumblers
-					},
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(24467, {	-- Fade to Black
 					["sourceQuests"] = { 14391 },	-- Turning the Tables
 					["provider"] = { "n", 35867 },	-- Kalec
@@ -430,12 +407,6 @@ _.Zones =
 					["provider"] = { "n", 36749 },	-- Commander Molotov
 					["coord"] = { 29.4, 57.6, 76 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(6824,  {	-- Hands of the Enemy
-					["sourceQuests"] = { 6823 },	-- Agent of Hydraxis
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14486, {	-- Handling the Goods
 					["sourceQuests"] = { 24448 },	-- Field Promotion
@@ -628,12 +599,6 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
-				}),
-				q(6804,  {	-- Poisoned Water
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["races"] = HORDE_ONLY,
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26372, {	-- Pre-Flight Checklist
 					["sourceQuests"] = { 26361 },	-- Smoot's Samophlange
@@ -886,11 +851,6 @@ _.Zones =
 					["coord"] = { 29.1, 66.2, 76 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(6805,  {	-- Stormers and Rumblers
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(14202, {	-- Survey the Lakeshore
 					["sourceQuests"] = { 24453 },	-- Private Chat
 					["provider"] = { "n", 35088 },	-- Custer Clubnik
@@ -975,12 +935,6 @@ _.Zones =
 					["coord"] = { 58.9, 71.8, 76 },
 					["races"] = HORDE_ONLY,
 					["model"] = 198793,
-				}),
-				q(6822,  {	-- The Molten Core
-					["sourceQuests"] = { 6821 },	-- Eye of the Emberseer
-					["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					["coord"] = { 79.3, 73.7, 76 },
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3509,  {	-- The Name of the Beast
 					["sourceQuests"] = { 3508 },	-- Breaking the Ward
