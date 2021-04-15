@@ -232,11 +232,16 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 
 -- Kalimdor
 KALIMDOR = 12;	-- Confirmed!
+ASHENVALE = 63;	-- Confirmed!
+FERALAS = 69;	-- Confirmed!
 
 -- Eastern Kingdoms
+BLASTED_LANDS = 17;	-- Confirmed!
 EASTERN_KINGDOMS = 13;	-- Confirmed!
 ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
 DEADWIND_PASS = 42;	-- Confirmed!
+DUSKWOOD = 47;	-- Confirmed!
+THE_HINTERLANDS = 26;	-- Confirmed!
 
 -- Outland & TBC Additions
 OUTLAND = 101;	-- Confirmed!

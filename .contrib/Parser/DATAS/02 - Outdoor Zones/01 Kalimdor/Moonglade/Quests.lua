@@ -64,10 +64,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18536)),	-- Milli's Lexicon
 					},
 				}),
-				q(8446, {	-- Shrouded in Nightmare
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 20644 },	-- Nightmare Engulfed Object
-				}),
 				q(28343, {	-- The Breath of Cenarius
 					["sourceQuests"] = { 28289 },	-- Moonglade Calls
 					["provider"] = { "n", 12042 },	-- Loganaar
@@ -127,15 +123,6 @@ _.Zones =
 					["lvl"] = 85,
 					["coord"] = { 51.6, 44.8, 80 },
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
-				}),
-				q(8447,  {	-- Waking Legends
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11832 },	-- Keeper Remulos
-					["lvl"] = 60,
-					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20600)),	-- Malfurion's Signet Ring
-					},
 				}),
 				q(1124,  {	-- Wasteland
 					["u"] = REMOVED_FROM_GAME,
