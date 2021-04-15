@@ -639,7 +639,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 1,
 		-- TODO: requires sourceQuests/altQuests as it is not collectible for my main
 	},
-	[602] = { 
+	[602] = {
 		["name"] = "Surwich, Blasted Lands",
 		["description"] = "Speak to Zidormi to visit the past to access this point.",
 		["coord"] = { 47.0, 89.2, 17 },

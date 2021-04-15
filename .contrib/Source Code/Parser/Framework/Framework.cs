@@ -110,7 +110,7 @@ namespace ATT
 #elif CLASSIC
                 "CLASSIC"
 #else
-                "UKNOWN"
+                "UNKNOWN"
 #endif
             ;
 
