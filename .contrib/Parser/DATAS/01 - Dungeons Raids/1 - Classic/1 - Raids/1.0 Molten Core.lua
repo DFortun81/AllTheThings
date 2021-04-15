@@ -734,7 +734,6 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
 					["classes"] = { PRIEST },
 					["u"] = REMOVED_FROM_GAME,
 				}),

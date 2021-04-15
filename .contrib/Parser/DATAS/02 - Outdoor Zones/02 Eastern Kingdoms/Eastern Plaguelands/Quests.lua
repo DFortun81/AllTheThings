@@ -1120,6 +1120,38 @@ _.Zones =
 						i(62966),	-- Emissary's Watch
 					},
 				}),
+				q(7622, {	-- The Balance of Light and Shadow
+					["qg"] = 14494,	-- Eris Havenfire
+					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST },
+					-- #if NOT ANYCLASSIC
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 60,
+					["g"] = {
+						i(18659, {	-- Splinter of Nordrassil
+							-- #if NOT ANYCLASSIC
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+							["cost"] = {
+								{ "i", 18646, 1 },	-- The Eye of Divinity
+								{ "i", 18665, 1 },	-- The Eye of Shadow
+							},
+							["groups"] = {
+								i(18609, {	-- Anathema
+									-- #if NOT ANYCLASSIC
+									["u"] = REMOVED_FROM_GAME,
+									-- #endif
+								}),
+								i(18608, {	-- Benediction
+									-- #if NOT ANYCLASSIC
+									["u"] = REMOVED_FROM_GAME,
+									-- #endif
+								}),
+							},
+						}),
+					},
+				}),
 				q(27551, {	-- The Baroness' Missive
 					["sourceQuests"] = { 27525 },	-- Guardians of Stratholme
 					["provider"] = { "i", 61378 },	-- The Baroness' Missive

@@ -24,20 +24,6 @@ _.Zones =
 					n(8302,  { 	-- Deatheye
 						["coord"] = { 53.2, 26.8, 17 },
 					}),
-					n(12396, { 	-- Doomguard Commander
-						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
-						},
-					}),
-					n(8716,  { 	-- Dreadlord
-						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
-						},
-					}),
 					n(8304,  { 	-- Dreadscorn
 						["coord"] = { 37.0, 29.6, 17 },
 					}),

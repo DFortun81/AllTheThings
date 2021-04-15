@@ -480,7 +480,6 @@ _.WorldDrops =
 				i(19290),	-- Darkmoon Card: Twisting Nether
 				i(833),		-- Lifestone
 				i(7734),	-- Six Demon Bag
-				un(REMOVED_FROM_GAME, i(18665)),	-- The Eye of Shadow
 				un(REMOVED_FROM_GAME, i(14557)),	-- The Lion Horn of Stormwind
 				i(11302),	-- Uther's Strength
 			}),
