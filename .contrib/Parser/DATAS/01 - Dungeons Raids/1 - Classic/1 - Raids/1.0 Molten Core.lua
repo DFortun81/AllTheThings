@@ -4,428 +4,261 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
-		["order"] = "01",
-		["isRaid"] = true,
+		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
+		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["sharedLockout"] = 1,
-		["lvl"] = 50,
+		["isRaid"] = true,
 		["maps"] = {
 			232,
 			1160,	-- Dark Iron Dwarf: Unlock Scenario Map
 		},
-		["crs"] = {
-			14387,	-- Lothos Riftwaker
-		},
-		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
-		["g"] = {
+		["lvl"] = 50,
+		["groups"] = {
+			faction(749, { 	-- Hydraxian Waterlords
+				["qg"] = 13278,	-- Duke Hydraxis
+				["coord"] = { 79.2, 73.6, AZSHARA },
+				["maps"] = { AZSHARA },
+			}),
 			n(QUESTS, {
-				q(7848, {	-- Attunement to the Core
-					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
-					["altQuests"] = { 7487 },	-- Attunement to the Core [Original??]
-					["provider"] = { "n", 14387 },	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, 35 },	-- Blackrock Mountain
+				q(7486, {	-- A Hero's Reward
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
+					["groups"] = {
+						i(18399, {	-- Ocean's Breeze
+							-- #if AFTER WRATH
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+						}),
+						i(18398, {	-- Tidal Loop
+							-- #if AFTER WRATH
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+						}),
+					},
+				}),
+				q(6823, {	-- Agent of Hydraxis
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6822,	-- The Molten Core
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
+				}),
+				q(7633, {	-- An Introduction
+					["qg"] = 14524,	-- Vartrus the Ancient
+					["sourceQuest"] = 7632,	-- The Ancient Leaf
+					["coord"] = { 47, 24.48, FELWOOD },
+					["maps"] = { FELWOOD },
+					["classes"] = { HUNTER },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 60,
+				}),
+				q(7848, {	-- Attunement to the Core
+					["qg"] = 14387,	-- Lothos Riftwaker
+					["altQuests"] = { 7487 },	-- Attunement to the Core [Original??]
+					-- #if BEFORE WRATH
+					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					-- #else
+					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+					["coord"] = { 54.2, 83.3, 35 },	-- Blackrock Mountain
+					-- #endif
 					["maps"] = {
 						242, 243,	-- Blackrock Depths
 						35,			-- Blackrock Mountain
 					},
+					["cost"] = {
+						{ "i", 18412, 1 },	-- Core Fragment
+					},
+					["lvl"] = 55,
 				}),
 				q(7785, {	-- Examine the Vessel
+					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-					["provider"] = { "n", 14347 },	-- Highlord Demitrian
-					["coord"] = { 29.6, 10.6, 81 },	-- Silithus
-					["maps"] = { 81 },	-- Silithus
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					["coord"] = { 29.6, 10.6, 81 },
+					["maps"] = { 81 },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
-					},
-					["g"] = {
-						i(19016, {	-- Vessel of Rebirth
-							["questID"] = 7785,	-- Examine the Vessel
-						}),
 					},
 				}),
-				q(7786, {	-- Thunderaan the Windseeker
-					["sourceQuest"] = 7785,	-- Examine the Vessel
-					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
-					["provider"] = { "n", 14347 },	-- Highlord Demitrian
-					["coord"] = { 29.6, 10.6, 81 },	-- Silithus
-					["maps"] = { 81 },	-- Silithus
-					["lvl"] = 60,
+				q(6821, {	-- Eye of the Emberseer
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuests"] = {
+						6804,	-- Poisoned Water
+						6805,	-- Stormers and Rumblers
+					},
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 17771, 10 },	-- Elementium Bar x10
-						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
-						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
-						{ "i", 19017, 1 },	-- Essence of the Firelord
+						{ "i", 17322, 1 },	-- Eye of the Emberseer
 					},
-					["g"] = {
-						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-							["description"] = "This is a 40-man raid boss. He will drop as many Dormant Wind Kissed Blades as there are people with the quest.",
-							["g"] = {
-								i(19018, {	-- Dormant Wind Kissed Blade
-									["questID"] = 7787,	-- Rise, Thunderfury!
-								}),
-							},
-						}),
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
+				}),
+				q(6824, {	-- Hands of the Enemy
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["cost"] = {
+						{ "i", 17331, 1 },	-- Hand of Gehennas
+						{ "i", 17329, 1 },	-- Hand of Lucifron
+						{ "i", 17332, 1 },	-- Hand of Shazzrah
+						{ "i", 17330, 1 },	-- Hand of Sulfuron
 					},
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
+				}),
+				q(6804, {	-- Poisoned Water
+					["qg"] = 13278,	-- Duke Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 17310, 1 },	-- Aspect of Neptulon
+						{ "i", 17309, 12 },	-- Discordant Bracers
+					},
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
 				}),
 				q(7787, {	-- Rise, Thunderfury!
+					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["provider"] = { "n", 14347 },	-- Highlord Demitrian
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
 					["lvl"] = 60,
-					["g"] = {
+					["groups"] = {
 						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
+				q(6805, {	-- Stormers and Rumblers
+					["qg"] = 13278,	-- Duke Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, SILITHUS },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
+				}),
+				q(7632, {	-- The Ancient Leaf
+					["qg"] = 14524,	-- Vartrus the Ancient
+					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					["coord"] = { 47, 24.48, FELWOOD },
+					["maps"] = { FELWOOD },
+					["classes"] = { HUNTER },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["cost"] = {
+						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
+					},
+					["lvl"] = 60,
+				}),
+				q(6822, {	-- The Molten Core
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 55,
+				}),
+				q(7786, {	-- Thunderaan the Windseeker
+					["qg"] = 14347,	-- Highlord Demitrian
+					["sourceQuest"] = 7785,	-- Examine the Vessel
+					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+					["coord"] = { 29.6, 10.6, 81 },	-- Silithus
+					["maps"] = { 81 },	-- Silithus
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					["cost"] = {
+						{ "i", 17771, 10 },	-- Elementium Bar x10
+						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
+						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
+						{ "i", 19017, 1 },	-- Essence of the Firelord
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
+							["description"] = "This is a 40-man raid boss.",
+							["groups"] = {
+								i(19018),	-- Dormant Wind Kissed Blade
+							},
+						}),
+					},
+				}),
+			}),
+			n(REWARDS, {
+				i(17333, {	-- Aqual Quintessence
+					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				}),
+				i(22754, {	-- Eternal Quintessence
+					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #else
+					["u"] = PHASE_THREE,
+					-- #endif
+				}),
 			}),
 			n(ZONEDROPS, {
-				i(16802, {	-- Arcanist Belt (Mage)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
+				i(20951, {	-- Narain's Scrying Goggles
+					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #elseif ANYCLASSIC
+					["u"] = PHASE_FIVE,
+					-- #endif
 				}),
-				i(16799, {	-- Arcanist Bindings (Mage)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16864, {	-- Belt of Might (Warrior)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16861, {	-- Bracers of Might (Warrior)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16828, {	-- Cenarion Belt (Druid)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16830, {	-- Cenarion Bracers (Druid)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16838, {	-- Earthfury Belt (Shaman)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16840, {	-- Earthfury Bracers (Shaman)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16806, {	-- Felheart Belt (Warlock)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16804, {	-- Felheart Bracers (Warlock)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16851, {	-- Giantstalker's Belt (Hunter)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16850, {	-- Giantstalker's Bracers (Hunter)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16817, {	-- Girdle of Prophecy (Priest)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16858, {	-- Lawbringer Belt (Paladin)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16857, {	-- Lawbringer Bracers (Paladin)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16827, {	-- Nightslayer Belt (Rogue)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16825, {	-- Nightslayer Bracelets (Rogue)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
-				i(16819, {	-- Vambraces of Prophecy (Priest)
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11668,	-- Firelord
-						11666,	-- Firewalker
-						11667,	-- Flameguard
-						11661,	-- Flamewaker
-						11664,	-- Flamewaker Elite
-						11663,	-- Flamewaker Healer
-						11662,	-- Flamewaker Priest
-						12119,	-- Flamewaker Protector
-						11665,	-- Lava Annihilator
-						12076,	-- Lava Elemental
-						12100,	-- Lava Reaver
-						12101,	-- Lava Surger
-						11659,	-- Molten Destroyer
-						11658,	-- Molten Giant
-					},
-				}),
+				i(16802),	-- Arcanist Belt (Mage)
+				i(16799),	-- Arcanist Bindings (Mage)
+				i(16864),	-- Belt of Might (Warrior)
+				i(16861),	-- Bracers of Might (Warrior)
+				i(16828),	-- Cenarion Belt (Druid)
+				i(16830),	-- Cenarion Bracers (Druid)
+				i(16838),	-- Earthfury Belt (Shaman)
+				i(16840),	-- Earthfury Bracers (Shaman)
+				i(16806),	-- Felheart Belt (Warlock)
+				i(16804),	-- Felheart Bracers (Warlock)
+				i(16851),	-- Giantstalker's Belt (Hunter)
+				i(16850),	-- Giantstalker's Bracers (Hunter)
+				i(16817),	-- Girdle of Prophecy (Priest)
+				i(16858),	-- Lawbringer Belt (Paladin)
+				i(16857),	-- Lawbringer Bracers (Paladin)
+				i(16827),	-- Nightslayer Belt (Rogue)
+				i(16825),	-- Nightslayer Bracelets (Rogue)
+				i(16819),	-- Vambraces of Prophecy (Priest)
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
@@ -539,7 +372,22 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
+			prof(SKINNING, {
+				["crs"] = {
+					11673,	-- Ancient Core Hound
+					11982,	-- Magmadar
+				},
+				["groups"] = {
+					i(17012),	-- Core Leather
+				},
+			}),
 			cr(12118, e(1519, {	-- Lucifron
+				{
+					["itemID"] = 17329,	-- Hand of Lucifron
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -557,16 +405,26 @@ _.Instances = { tier(1, {	-- Classic
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-			--	un(REMOVED_FROM_GAME, i(16665, {	-- Tome of Tranquilizing Shot
-			--		["class"] = { 3 },
-			--		["collectible"] = false,
-			--	})),
+				{
+					["itemID"] = 16665,		-- Tome of Tranquilizing Shot
+					["classes"] = { HUNTER },
+					-- #if BEFORE WRATH
+					["recipeID"] = 19801,	-- Tranquilizing Shot
+					-- #else
+					["spellID"] = 0,
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
 			})),
 			cr(11982, e(1520, {	-- Magmadar
-				i(93034),	-- Blazing Rune (Pet)
+				i(93034, {	-- Blazing Rune (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
+				-- #if AFTER CATA
 				i(18202),	-- Eskhandar's Left Claw
+				-- #endif
 				i(18203),	-- Eskhandar's Right Claw
 				i(17069),	-- Striker's Mark
 				i(19142),	-- Fire Runed Grimoire
@@ -591,6 +449,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12259, e(1521, {	-- Gehennas
+				{
+					["itemID"] = 17331,	-- Hand of Gehennas
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -610,7 +474,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12057, e(1522, {	-- Garr
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -636,9 +500,19 @@ _.Instances = { tier(1, {	-- Classic
 				i(19144),	-- Sabatons of the Flamewalker
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
+				-- #if ANYCLASSIC
+				un(NEVER_IMPLEMENTED, i(17782)),	-- Talisman of Binding Shard
+				-- #else
 				un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
+				-- #endif
 			})),
 			cr(12264, e(1523, {	-- Shazzrah
+				{
+					["itemID"] = 17332,	-- Hand of Shazzrah
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -658,7 +532,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12056, e(1524, {	-- Baron Geddon
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
@@ -679,7 +553,15 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12098, e(1525, {	-- Sulfuron Harbinger
-				i(93033),	-- Mark of Flame (Pet)
+				{
+					["itemID"] = 17330,	-- Hand of Sulfuron
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
+				i(93033, {	-- Mark of Flame (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17074),	-- Shadowstrike
 				i(17223),	-- Thunderstrike
 				i(18878),	-- Sorcerous Dagger
@@ -698,7 +580,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(11988, e(1526, {	-- Golemagg the Incinerator
-				i(93035),	-- Core of Hardened Ash (Pet)
+				i(93035, {	-- Core of Hardened Ash (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17203),	-- Sulfuron Ingot
 				i(18822),	-- Obsidian Edged Blade
 				i(18842),	-- Staff of Dominance
@@ -729,13 +613,17 @@ _.Instances = { tier(1, {	-- Classic
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
 					["classes"] = { HUNTER },
-					["lvl"] = 60,
+					-- #if AFTER CATA
 					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 60,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
 					["classes"] = { PRIEST },
+					-- #if AFTER CATA
 					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
@@ -750,27 +638,25 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(11502, e(1528, {	-- Ragnaros
 				ach(686),	-- Molten Core
-				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 				}),
 				i(17204, {	-- Eye of Sulfuras
-					["classes"] = {
-						DEATHKNIGHT,
-						DRUID,
-						PALADIN,
-						SHAMAN,
-						WARRIOR,
-					},
+					["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 					["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
 					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
-					["g"] = {
-						i(17182, {	-- Sulfuras, Hand of Ragnaros
-							ach(429),	-- Sulfuras, Hand of Ragnaros
-						}),
+					["groups"] = {
+						ach(429),	-- Sulfuras, Hand of Ragnaros
+						i(17182),	-- Sulfuras, Hand of Ragnaros
 					},
 				}),
-				i(138833),	-- Illusion: Flametongue (Shaman)
+				i(138018, {	-- Clothes Chest Pattern: Molten Core
+					["timeline"] = { "added 7.0.3.22248" },
+				}),
+				i(138833, {	-- Illusion: Flametongue (Shaman)
+					["timeline"] = { "added 7.0.3.22248" },
+				}),
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper
 				i(18816),	-- Perdition's Blade
@@ -793,7 +679,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
+				-- #if ANYCLASSIC
+				un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
+				-- #else
 				un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
+				-- #endif
 			})),
 		},
 	}),
