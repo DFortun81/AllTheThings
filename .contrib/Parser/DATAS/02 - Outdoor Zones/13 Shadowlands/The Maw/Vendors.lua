@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1543, {	-- The Maw
 			n(VENDORS, {
+				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
+				--	TODO: move to korthia if we wind up separating maps
+					["coord"] = { 63.5, 23.3, 1961 },	-- Korthia
+					["g"] = {
+						i(186453),	-- Vault Anima Tracker
+						i(186647),	-- Amber Shardhide (MOUNT!)
+						i(186648),	-- Soaring Razorwing (MOUNT!)
+					},
+				}),
 				n(162804, {	-- Ve'nari
 					i(180949, {	-- Animaflow Stabilizer
 						["questID"] = 61600,

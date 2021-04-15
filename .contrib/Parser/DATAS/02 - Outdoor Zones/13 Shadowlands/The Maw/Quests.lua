@@ -809,6 +809,17 @@ _.Zones =
 				}),
 				
 				-- Korthia Daily
+				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
+				--	quest has a Kyrian provider but seems to be covenant-agnostic
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178800 },	-- Voitha
+					["isDaily"] = true,
+					["coord"] = { 61.7, 23.7, 1961 },	-- Korthia
+					["g"] = {
+					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
+						i(185857),	-- Korthian Caretaker's Handwraps
+					},
+				}),
 				q(63789, {	-- Continued Efforts: Scholar's Den
 				--	quest has a Necrolord provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -833,18 +844,29 @@ _.Zones =
 					["coord"] = { 60.9, 21.7, 1961 },	-- Korthia
 				}),
 				q(63776, {	-- Encrypted Databanks
-				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
 				q(63960, {	-- Encrypted Databanks
-				--	second version of above quest, not sure if there are multiple versions or if this is a PTR change
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
+				q(63962, {	-- Encrypted Databanks
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
+				q(63782, {	-- Mawsworn Rituals
+				--	quest has a Kyrian provider but seems to be covenant-agnostic
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178799 },	-- Arios Riftbearer
+					["isDaily"] = true,
+					["coord"] = { 61.5, 23.5, 1961 },	-- Korthia
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -879,7 +901,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, 1961 },	-- Korthia
 				}),
-
+				q(64043, {	-- We Need a Healer - You!
+				--	quest has a Kyrian provider but seems to be covenant-agnostic
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.2, 1961 },	-- Korthia
+				}),
 
 
 

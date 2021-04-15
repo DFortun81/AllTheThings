@@ -11,6 +11,7 @@ _.Zones =
 				-- seems similar to Mogu/Mantid etc. assaults from Uldum/Vale, it's an automatically-started zone quest that lasts a few days
 				-- the quest was automatically on the map, but you had to speak to Xandria to ~activate it, and then all the other quests popped up.  weird system
 				-- everything after "Kyrian Assault" requires speaking to Xandria to show up.  these are probably periodically repeatable, like potentially up every time the kyrian assault is active
+				-- TODO: test doing all 4 quests for the assault but not completing it, letting the daily reset occur, and going back the next day to see if the quests have changed/if any new quests are available.  currently it appears that once you complete the assault fully there are no quests for the remainder of the days it's up
 				n(ACHIEVEMENTS, {
 					ach(15035, {	-- Breaking The Chains
 						ach(15033, {	-- Taking the Tremaculum
