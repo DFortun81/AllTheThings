@@ -829,7 +829,6 @@ _.Zones =
 					},
 				}),
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, 85 },
 					["g"] = {
