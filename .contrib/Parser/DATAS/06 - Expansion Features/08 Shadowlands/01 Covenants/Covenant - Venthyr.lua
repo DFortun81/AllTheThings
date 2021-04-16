@@ -3657,8 +3657,8 @@ _.ExpansionFeatures =
 						-- and when you look at the currencies in the dungeon journal or in an ATT list, none of the things they buy show up (doesn't appear on LFR or normal currency)
 						["coord"] = { 55.1, 46.1, 1700 },
 						["g"] = bubbleDown({
+							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
 							["modID"] = 4,	-- LFR
-							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
 						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
