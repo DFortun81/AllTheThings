@@ -59,6 +59,15 @@ namespace ATT
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
 
+            // Determine if running in Debug Mode or not.
+            if (args != null && args.Length > 0)
+            {
+                foreach(var arg in args)
+                {
+                    if (arg == "debug") Framework.DebugMode = true;
+                }
+            }
+
             try
             {
                 // Prepare console output to a file.
@@ -119,7 +128,7 @@ namespace ATT
                     var dict = new Dictionary<object, bool>();
                     foreach (var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
                     {
-                        var race = Convert.ToInt32(keyValue);
+                        var race = Convert.ToInt64(keyValue);
                         if (!dict.ContainsKey(race))
                         {
                             dict[race] = true;
@@ -134,7 +143,7 @@ namespace ATT
                     dict = new Dictionary<object, bool>();
                     foreach (var keyValue in lua.GetTable("HORDE_ONLY").Values)
                     {
-                        var race = Convert.ToInt32(keyValue);
+                        var race = Convert.ToInt64(keyValue);
                         if (!dict.ContainsKey(race))
                         {
                             dict[race] = true;

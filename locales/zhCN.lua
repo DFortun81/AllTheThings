@@ -2076,6 +2076,7 @@ for key, value in pairs({
 	[240003] = "古怪的蓝宝石",
 	[240289] = "风化的斧子",
 	[240317] = "艾斯卡的暗影之书",
+	--TODO: [240354] = "Genuinely Unguarded Treasure",	-- Genuinely Unguarded Treasure
 	[240519] = "小宝箱",
 	[240577] = "卡纳克之刃",
 	[240580] = "地狱火珠宝",

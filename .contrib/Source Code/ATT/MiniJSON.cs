@@ -303,7 +303,7 @@ namespace MiniJSON
                                         hex[i] = NextChar;
                                     }
 
-                                    s.Append((char)Convert.ToInt32(new string(hex), 16));
+                                    s.Append((char)Convert.ToInt64(new string(hex), 16));
                                     break;
                             }
                             break;
@@ -578,7 +578,7 @@ namespace MiniJSON
                             builder.Append("\\t");
                             break;
                         default:
-                            int codepoint = Convert.ToInt32(c);
+                            long codepoint = Convert.ToInt64(c);
                             if ((codepoint >= 32) && (codepoint <= 126))
                             {
                                 builder.Append(c);

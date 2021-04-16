@@ -2054,6 +2054,7 @@ for key,value in pairs({
 	[240003] = "Zafiro extraño",
 	[240289] = "Hacha desgastada",
 	[240317] = "Escrito de las Sombras de Iskar",
+	[240354] = "Tesoro realmente sin vigilancia",	-- Genuinely Unguarded Treasure
 	[240519] = "Arqueta pequeña",
 	[240577] = "La Espada de Kra'nak",
 	[240580] = "Joya de Fuego infernal",

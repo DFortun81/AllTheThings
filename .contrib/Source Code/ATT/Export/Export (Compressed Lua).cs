@@ -23,8 +23,7 @@ namespace ATT
             else if (data is Dictionary<object, object> objdict) ExportCompressedLua(builder, objdict);
             else if (data is Dictionary<int, object> intdict) ExportCompressedLua(builder, intdict);
             else if (data is Dictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
-            else if (data is Dictionary<int, int> intintdict) ExportCompressedLua(builder, intintdict);
-            else if (data is Dictionary<long, int> longintdict) ExportCompressedLua(builder, longintdict);
+            else if (data is Dictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
             else if (data is Dictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
             else if (data is List<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
             else
@@ -207,7 +206,7 @@ namespace ATT
                         ExportCompressedLua(subbuilder, list[i]);
 
                         // Determine if this is higher than the current max value.
-                        //value = Convert.ToInt32(list[i]);
+                        //value = Convert.ToInt64(list[i]);
                         //if (value > maxValue) maxValue = value;
                     }
 

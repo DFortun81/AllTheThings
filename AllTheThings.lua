@@ -1416,10 +1416,9 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		return 1;
 	end
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
-	local accountMode = app.Settings:Get("AccountMode");
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not accountMode and t.altcollected then
+	if not app.MODE_ACCOUNT and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1429,7 +1428,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not accountMode and t.altQuests and #t.altQuests > 0 then
+		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,questID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1446,7 +1445,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not accountMode and t.altQuests and #t.altQuests > 0 then
+			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
@@ -1473,7 +1472,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not accountMode and t.altQuests and #t.altQuests > 0 then
+			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -1849,7 +1848,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- it is not a 'saved' thing for this character or account mode is active
-				(not group.saved or group.saved ~= 1 or app.Settings:Get("AccountMode")))
+				(not group.saved or group.saved ~= 1 or app.MODE_ACCOUNT))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
@@ -2680,9 +2679,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 
-				if not app.Settings:Get("DebugMode") then
+				if not app.MODE_DEBUG then
 					local regroup = {};
-					if app.Settings:Get("AccountMode") then
+					if app.MODE_ACCOUNT then
 						for i,j in ipairs(group) do
 							if app.RecursiveUnobtainableFilter(j) then
 								tinsert(regroup, j);
@@ -2729,7 +2728,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Don't do anything for things linked to maps.
 			local regroup = {};
 			local criteriaID = ...;
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
 						if j.mapID or j.parent == nil or j.parent.parent == nil then
@@ -2755,7 +2754,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "azeriteEssenceID" then
 			local regroup = {};
 			local rank = ...;
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
 						if j.mapID or j.parent == nil or j.parent.parent == nil then
@@ -2781,7 +2780,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
@@ -2799,7 +2798,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "followerID" then
 			-- Don't do anything
 			local regroup = {};
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
@@ -3143,7 +3142,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.Settings:Get("DebugMode") then
+			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
@@ -3174,21 +3173,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Create an unlinked version of the object.
 		if not group.g then
-			-- local merged = {};
 			local skipped = {};
-			-- TODO: make this work for everything. clearly.
-			--[[
-			Basically need to merge up any group which is in the cache for field(a[b]) where the key of that group matches paramA and the value matches paramB
-			This way things which are cached under themselves are merged into the root group, and things which are tagged with another things (i.e. NPCs with MoH)
-			will not be treated as the same group as MoH and NOT be merged up (because their key will be 'creatureID' instead of 'itemID')
-			if group.key == paramA and group[group.key] == paramB then
-			MergeObject(merged)
-			]]
-
-			-- print("unlinked group params",paramA,paramB);
 			-- Clone all the groups so that things don't get modified in the Source
 			local cloned = {};
-			-- local temp_orig = {};
 			local uniques = {};
 			for i,o in ipairs(group) do
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
@@ -3200,13 +3187,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			wipe(uniques);
 			-- replace the Source references with the cloned references
 			group = cloned;
-
-			-- print("test1")
-			-- for k,v in pairs(temp_orig) do
-			-- 	print(k,tostring(v),tostring(v.parent));
-			-- end
-			-- print("--");
-
 			-- Find or Create the root group for the search results
 			local root;
 			-- print("Find Root for",paramA,paramB);
@@ -3214,7 +3194,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- If the obj "is" the root obj
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
 				if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
-				-- if (o.key == paramA and (o.modItemID or o[o.key]) == paramB) then
 					-- object meets filter criteria and is exactly what is being searched
 					if app.RecursiveGroupRequirementsFilter(o) then
 						-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
@@ -3250,8 +3229,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- If the obj "is" the root obj via bi-directional key
 				-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
 				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-				-- if GroupMatchesParams(o, paramA, paramB) then
-				-- if (o.key == paramA and o[o.key] == paramB) then
 					-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
 					MergeProperties(root, o);
 					-- Merge the g of the obj into the merged results
@@ -3339,104 +3316,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("achieve nocrits",#group.g)
 			end
 
-			
-			-- local preMergeTotal = #group;
-			-- -- First add only groups which meet the current filters
-			-- -- print("-final group-",#group,paramA,paramB)
-			-- for i,o in ipairs(group) do
-			-- 	-- print(o.key,o[o.key])
-			-- 	-- do not include the exact matching group as part of the set contained by the search group if it contains things itself
-			-- 	if o[paramA] ~= paramB and o.g then
-			-- 		if app.RecursiveGroupRequirementsFilter(o) then
-			-- 			MergeObject(merged, CreateObject(o));
-			-- 			-- print("add",o.hash);
-			-- 			-- print("total merged",#merged);
-			-- 		else
-			-- 			-- print("skip",o.hash);
-			-- 			tinsert(skipped, o);
-			-- 		end
-			-- 	-- the exact matching group contains things itself
-			-- 	elseif o.g then
-			-- 		-- pull the 'g' objects out of the matching group into the set of things it contains
-			-- 		for gi=1,#o.g do
-			-- 			if app.RecursiveGroupRequirementsFilter(o.g[gi]) then
-			-- 				MergeObject(merged, CreateObject(o.g[gi]));
-			-- 			else
-			-- 				tinsert(skipped, o.g[gi]);
-			-- 			end
-			-- 		end
-			-- 	-- a single object met the criteria, then just use that one object
-			-- 	elseif preMergeTotal == 1 then
-			-- 		tinsert(merged,o);
-			-- 	end
-			-- end
-			-- -- print("---")
-			-- -- then merge any skipped groups
-			-- for i,o in ipairs(skipped) do
-			-- 	MergeObject(merged, CreateObject(o));
-			-- 	-- print("merge",o.hash);
-			-- end
-			-- First add only groups which meet the current filters
-			-- for i,o in ipairs(group) do
-			-- 	if app.RecursiveGroupRequirementsFilter(o) then
-			-- 		MergeObject(merged, CreateObject(o));
-			-- 		-- print("add",o.hash);
-			-- 		-- print("total merged",#merged);
-			-- 	else
-			-- 		-- print("skip",o.hash);
-			-- 		tinsert(skipped, o);
-			-- 	end
-			-- end
-			-- -- then merge any skipped groups
-			-- for i,o in ipairs(skipped) do
-			-- 	MergeObject(merged, CreateObject(o));
-			-- 	-- print("merge",o.hash);
-			-- end
-			-- print("total merged",#merged);
-			-- if #merged == 1 and merged[1][paramA] == paramB then
-			-- 	group = merged[1];
-			-- 	local symbolicLink = ResolveSymbolicLink(group);
-			-- 	if symbolicLink then
-			-- 		if group.g and #group.g >= 0 then
-			-- 			for j=1,#symbolicLink,1 do
-			-- 				MergeObject(group.g, CreateObject(symbolicLink[j]));
-			-- 			end
-			-- 		else
-			-- 			for j=#symbolicLink,1,-1 do
-			-- 				symbolicLink[j] = CreateObject(symbolicLink[j]);
-			-- 			end
-			-- 			group.g = symbolicLink;
-			-- 		end
-			-- 	end
-			-- else
-			-- 	for i,o in ipairs(merged) do
-			-- 		local symbolicLink = ResolveSymbolicLink(o);
-			-- 		if symbolicLink then
-			-- 			o.symbolized = true;
-			-- 			if o.g and #o.g >= 0 then
-			-- 				for j=1,#symbolicLink,1 do
-			-- 					MergeObject(o.g, CreateObject(symbolicLink[j]));
-			-- 				end
-			-- 			else
-			-- 				for j=#symbolicLink,1,-1 do
-			-- 					symbolicLink[j] = CreateObject(symbolicLink[j]);
-			-- 				end
-			-- 				o.g = symbolicLink;
-			-- 			end
-			-- 		end
-			-- 	end
-			-- 	group = CreateObject({ [paramA] = paramB });
-			-- 	group.g = merged;
-			-- 	-- print("multi-merge",#group.g)
-			-- end
-
 			-- Append any crafted things using this group
 			app.BuildCrafted(group);
 
-			-- Expand any things requiring this group if this group does not already have sub-groups
-			-- if not group.g then
+			-- Expand any things requiring this group
 			app.ExpandSubGroups(group);
-			-- end
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
@@ -3619,7 +3503,7 @@ app.BuildCrafted = function(item)
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
-		local filterSkill = not app.Settings:Get("DebugMode") and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
+		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
 		local clone;
 		-- item is BoP
@@ -3740,8 +3624,8 @@ app.ExpandSubGroups = function(item)
 end
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
-		-- Pop out the cost objects into their own sub-groups for accessibility
-		-- Gold cost currently ignored
+	-- Pop out the cost objects into their own sub-groups for accessibility
+	-- Gold cost currently ignored
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
 				["text"] = L["COST"],		-- L["COST"] = "Cost"
@@ -4103,12 +3987,11 @@ fieldConverters = {
 };
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local n, keys = 0, {};
+	local keys = {};
 	for key,_ in pairs(group) do
-		n = n + 1;
-		rawset(keys, n, key);
+		table.insert(keys, key);
 	end
-	for _,key in pairs(keys) do
+	for _,key in ipairs(keys) do
 		_cache = rawget(fieldConverters, key);
 		if _cache then _cache(group, rawget(group,key)); end
 	end
@@ -4368,7 +4251,7 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto, recur)
-	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
+	if TomTom and (group.visible or (group.objectiveID and not group.saved) or app.MODE_DEBUG) then
 		if group.coords or group.coord then
 			local opt = {
 				title = group.text or group.name or group.link,
@@ -4691,9 +4574,6 @@ local function PopulateQuestObject(questObject)
 				_cache = SearchForField("currencyID", currencyID);
 				if _cache then
 					for _,data in ipairs(_cache) do
-						-- if data.f then
-						-- 	item.f = data.f;
-						-- end
 						-- print("_cached",data.key,data[data.key])
 						-- cache record is the item itself
 						if data.key == "currencyID" and data[data.key] == currencyID then
@@ -4705,18 +4585,11 @@ local function PopulateQuestObject(questObject)
 								item.g = {};
 								item.progress = 0;
 								item.total = 0;
-								-- item.OnUpdate = OnUpdateForItem;
 							end
 							-- print("Clone cached item")
 							MergeObject(item.g, CloneData(data));
 						end
 					end
-					-- if not item.g then
-					-- 	item.g = {};
-					-- 	item.progress = 0;
-					-- 	item.total = 0;
-					-- 	-- item.OnUpdate = OnUpdateForItem;
-					-- end
 					MergeObject(questObject.g, item);
 				end
 			else
@@ -5164,7 +5037,7 @@ app.TryColorizeName = function(group, name)
 	elseif group.factionID and group.standing then
 		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
 	then
 		-- class color
 		if group.classID then
@@ -5178,6 +5051,14 @@ app.TryColorizeName = function(group, name)
 				return Colorize(name, "ffcc6666");
 			-- blue for Alliance
 			elseif group.r == Enum.FlightPathFaction.Alliance then
+				return Colorize(name, "ff407fbf");
+			end
+		-- specific races
+		elseif group.races then
+			-- this group requires a horde-only race
+			if containsAny(group.races, HORDE_ONLY) then
+				return Colorize(name, "ffcc6666");
+			else -- assuming no other factions exist and that .races will only ever have horde or alliance races
 				return Colorize(name, "ff407fbf");
 			end
 		-- un-acquirable color
@@ -5244,29 +5125,8 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
--- local function CheckAttachTooltip(self, elapsed)
-	-- -- print("OnUpdate",elapsed);
-	-- -- run the UpdateTooltip if it exists
-	-- if self.UpdateTooltip then
-		-- -- only allow OnUpdate to process 4x per second, very slow
-		-- self.NextUpdate = (self.NextUpdate or .25) - elapsed;
-		-- -- print("NextUpdate",self.NextUpdate);
-		-- if self.NextUpdate > 0 then return; end
-		-- -- reset update frequency
-		-- self.NextUpdate = nil;
-		-- self.AllTheThingsProcessing = nil;
-		-- print(":UpdateTooltip()");
-		-- self:UpdateTooltip();
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self:UpdateTooltip(self);
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self.UpdateTooltip(self);
-	-- end
--- end
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
-	-- if not self.AllTheThingsProcessing then
-	-- 	self.AllTheThingsProcessing = true;
 	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
 		local numLines = self:NumLines();
 		if numLines < 1 then
@@ -5329,11 +5189,6 @@ local function AttachTooltip(self)
 				end
 			end
 		end
-
-		--if not owner or not owner.UpdateTooltip then
-			-- print("Attach-SetSelfUpdate");
-			--self.UpdateTooltip = AttachTooltip;
-		--end
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target then
@@ -5469,23 +5324,9 @@ local function AttachTooltip(self)
 				self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
 				self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
 				self:AddLine(reference.description, 0.4, 0.8, 1, 1);
-				--self.AttachComplete = true;
 				return true;
 			end
 		end
-
-		-- end
-
-			--self.AttachComplete = true
-			--if self.AttachComplete then
-				-- print("AttachTooltip-Complete");
-				--self.UpdateTooltip = nil;
-				-- self.AllTheThingsProcessing = nil;
-			-- else
-				-- print("AttachTooltip-Working");
-				-- self.AllTheThingsProcessing = false;
-			--end
-		--end
 		-- print("AttachTooltip-Return");
 	end
 end
@@ -5525,7 +5366,6 @@ local function ClearTooltip(self)
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
-	-- return nil + 1;
 end
 
 -- Tooltip Hooks
@@ -6294,7 +6134,7 @@ local fields = {
 		end
 	end,
 	["OnUpdate"] = function(t)
-		t.visible = app.Settings:Get("DebugMode");
+		t.visible = app.MODE_DEBUG;
 		if t.visible then
 			local deaths = tonumber(select(1, GetStatistic(60)) or "0");
 			if deaths > 0 then
@@ -7678,19 +7518,23 @@ local itemFields = {
 		return 2;
 	end,
 	["f"] = function(t)
-		if t.questID then return 104; end
-		local results = SearchForField("itemID", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
-		end
-		local results = SearchForField("itemIDAsCost", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
-		end
+		-- TODO: this logic causes tons of lag. why do we need to determine if an item is a quest item for filtering?
+		-- if t.questID then return 104; end
+		-- local results = SearchForField("itemID", t.itemID);
+		-- if results then
+		-- 	for i,o in ipairs(results) do
+		-- 		if o.questID then return 104; end
+		-- 	end
+		-- end
+		-- local results = SearchForField("itemIDAsCost", t.itemID);
+		-- if results then
+		-- 	for i,o in ipairs(results) do
+		-- 		if o.questID then return 104; end
+		-- 	end
+		-- end
+		-- Unknown item type after Parser, so make sure we save the filter for later references
+		rawset(t, "f", 50);
+		return rawget(t, "t");
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
@@ -8245,7 +8089,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
+		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
 	end,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
@@ -8283,7 +8127,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
+		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
 		end
 	end,
@@ -9052,7 +8896,7 @@ app.CollectibleAsQuest = function(t)
 	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
 		
-	-- If you are currently on the quest.
+	-- If it is an item or used for an active quest.
 	or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
 end
 local function RefreshQuestCompletionState(questID)
@@ -9578,7 +9422,7 @@ end
 -- Filtering
 function app.Filter()
 	-- Meaning "Don't display."
-	return false;
+	-- Nothing needs to return
 end
 function app.NoFilter()
 	-- Meaning "Display as expected."
@@ -9628,15 +9472,12 @@ function app.FilterItemClass_RequireClasses(item)
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
+		local f = item.f;
 		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
-		if (item.f > 49 and item.f < 60) or	-- Misc. Filters on non-collectible items
-			item.f == 114 or				-- Key Items
-			item.f == 999 or				-- Event Items
-			app.Settings:GetFilter(item.f)	-- Filter applied via Settings (character-equippable or manually set)
-			then return true;
-		else
-			return false;
-		end
+		return (f > 49 and f < 60) or	-- Misc. Filters on non-collectible items
+			f == 114 or				-- Key Items
+			f == 999 or				-- Event Items
+			app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -10251,7 +10092,7 @@ UpdateGroups = function(parent, g, defaultVis)
 		if not parent.progress then parent.progress = 0; end
 		-- default visibility for group updates is debug mode itself
 		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.Settings:Get("DebugMode");
+		local defaultVisibility = defaultVis or app.MODE_DEBUG;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
 			app:CheckYieldHelper();
@@ -10501,9 +10342,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 				print(format(L["ITEM_ID_ADDED_MISSING"], "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
 			end
 		end
-
 		-- If the item isn't in the list, then don't bother refreshing the data.
-		-- app:RefreshData(true, true);
 	end
 end
 function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
@@ -10676,6 +10515,7 @@ function app:CheckYieldHelper()
 		if app.nextYield < time() then
 			app.nextYield = time();
 			-- print("yieldHelper",app.nextYield);
+			-- app:UpdateWindows();
 			coroutine.yield();
 		end
 	end
@@ -11355,10 +11195,6 @@ local function AdjustRowIndent(row, indentAdjust)
 	end
 	if row.Texture then
 		-- only ever LEFT point set
-		-- for i=1, row.Texture:GetNumPoints() do
-		-- 	print(row.Texture:GetPoint(i));
-		-- end
-		-- print("---")
 		local _, _, _, x = row.Texture:GetPoint(2);
 		-- print("row texture at",x)
 		row.Texture:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
@@ -11800,7 +11636,7 @@ local function RowOnClick(self, button)
 
 					elseif button == "LeftButton" then
 						-- Default behaviour is to Refresh Collections.
-						RefreshCollections(reference);
+						RefreshCollections();
 					end
 					return true;
 				end
@@ -12364,8 +12200,8 @@ RowOnEnter = function (self)
 		end
 
 		-- Show Quest Prereqs
-		local isDebug = app.Settings:Get("DebugMode");
-		if reference.sourceQuests and (not reference.saved or isDebug) then
+		local isDebugMode = app.MODE_DEBUG;
+		if reference.sourceQuests and (not reference.saved or isDebugMode) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
@@ -12787,20 +12623,16 @@ function app:GetDataCache()
 
 		db = {};
 		db.g = {};
-		db.fps = {};
 		app.CacheFlightPathData();
-		db.OnUpdate = function(self)
+		db.LoadFlightPaths = function(self)
 			for i,fp in pairs(app.FlightPathDB) do
-				if not self.fps[i] then
-					self.fps[i] = true;
-					tinsert(self.g, app.CreateFlightPath(tonumber(i)));
-				end
+				tinsert(self.g, app.CreateFlightPath(tonumber(i)));
 			end
 			table.sort(self.g, function(a, b)
 				return a.name < b.name;
 			end);
 		end;
-		db:OnUpdate();
+		db:LoadFlightPaths();
 		db.text = L["FLIGHT_PATHS"];
 		db.icon = app.asset("Category_FlightPaths");
 		table.insert(g, db);
@@ -13231,7 +13063,7 @@ function app:GetDataCache()
 			["nmr"] = false,
 			["OnUpdate"] = function(self)
 				self.lvl = app.Level;
-				if app.Settings:Get("DebugMode") then
+				if app.MODE_DEBUG then
 					self.collectible = true;
 				else
 					self.collectible = false;
@@ -13695,30 +13527,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.openedOnLogin = false;
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
-		local IsSameMap = function(data, results)
-			if data.mapID then
-				-- Exact same map?
-				if data.mapID == results.mapID then
-					return true;
-				end
-
-				-- Does the result map have an array of associated maps and this map is in there?
-				if results.maps and contains(results.maps, data.mapID) then
-					return true;
-				end
-			end
-			if data.maps then
-				-- Does the old map data contain this map?
-				if contains(data.maps, results.mapID) then
-					return true;
-				end
-
-				-- Does the result map have an array of associated maps and this map is in there?
-				if results.maps and containsAny(results.maps, data.maps) then
-					return true;
-				end
-			end
-		end
 		self.IsSameMapData = function(self)
 			local data = self.data;
 			if data.mapID then
@@ -13753,36 +13561,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Simplify the returned groups
 				local groups, holiday = {}, {};
 				local header = app.CreateMap(self.mapID, { g = groups });
-				-- local mergeGroups;
 				for i, group in ipairs(results) do
-					-- mergeGroups = nil;
-					-- print(group.key,group[group.key]);
-					-- clone the information from the group so it can be adjusted in the list without changing the source
-					-- local clone = {};
-					-- for key,value in pairs(group) do
-					-- 	if key == "maps" then
-					-- 		local maps = {};
-					-- 		for i,mapID in ipairs(value) do
-					-- 			tinsert(maps, mapID);
-					-- 		end
-					-- 		clone[key] = maps;
-					-- 	elseif key == "g" then
-					-- 		local g = {};
-					-- 		for i,o in ipairs(value) do
-					-- 			tinsert(g, CloneData(o));
-					-- 		end
-					-- 		clone[key] = g;
-					-- 	else
-					-- 		clone[key] = value;
-					-- 	end
-					-- end
-					-- setmetatable(clone, getmetatable(group));
-					-- group = clone;
 					group = CloneData(group);
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
-					-- local first = false;
 
 					-- can probably re-factor this logic at some point to implicitly merge into the proper existing group instead of
 					-- ALWAYS creating the shared group, and then merging into the entire set of groups...
@@ -13862,21 +13645,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						-- end
 
 						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-							-- print("merge map object into header",group.key,group[group.key])
-							-- for k,v in pairs(group) do
-							-- 	if k ~= "g" then
-							-- 		print("-merge",k,v);
-							-- 	end
-							-- end
-							-- print("--")
-							-- header.key = group.key;
-							-- header[group.key] = group[group.key];
 							MergeProperties(header, group, true);
 							if group.g then
 								MergeObjects(groups, group.g);
 							end
 							group = nil;
-							-- MergeObject({header}, group);
 						elseif group.key == "speciesID" then
 							group = app.CreateNPC(-25, { g = { group } });
 						elseif group.key == "questID" then
@@ -13991,39 +13764,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Swap out the map data for the header.
 				results = header;
 
-				-- If we have determined that we want to expand this section, then do it
-				-- if results.g then
-					-- print("weird section?");
-					-- local bottom = {};
-					-- local top = {};
-					-- for i=#results.g,1,-1 do
-						-- local o = results.g[i];
-						-- if o.difficultyID then
-							-- table.remove(results.g, i);
-							-- table.insert(bottom, 1, o);
-						-- -- this section appears to do nothing of value but appears to be responsible for preventing zone headers from collapsing/expanding
-						-- --elseif o.isRaid then
-						-- --	table.remove(results.g, i);
-						-- --	table.insert(top, o);
-						-- end
-					-- end
-					-- for i,o in ipairs(top) do
-						-- table.insert(results.g, 1, o);
-					-- end
-					-- for i,o in ipairs(bottom) do
-						-- table.insert(results.g, o);
-					-- end
-				-- end
-
 				if self.data then wipe(self.data); end
-				-- for key,value in pairs(self.data) do
-					-- self.data[key] = nil;
-				-- end
 				self.data = results;
-				-- for key,value in pairs(results) do
-					-- self.data[key] = value;
-				-- end
-
 				self.data.u = nil;
 				self.data.mapID = self.mapID;
 				setmetatable(self.data,
@@ -14220,7 +13962,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			-- ensure Debug is enabled to fully capture all information
-			if not app.Settings:Get("DebugMode") then
+			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
 				self.forcedDebug = true;
 				app.Settings:ToggleDebugMode();
@@ -14240,8 +13982,6 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			-- local modIDs = {};
-			-- local bonusIDs = {};
 			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
 			app.MaximumItemInfoRetries = 40;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
@@ -14258,25 +13998,19 @@ app:GetWindow("Harvester", UIParent, function(self)
 							if group.bonusID then
 								-- Harvest using a BonusID?
 								_ = group.bonusID;
-								-- if not bonusIDs[_] then
-									-- print("Check w/ Bonus",itemID,_)
-									-- bonusIDs[_] = true;
-									if (not VerifySourceID(group)) then
-										-- print("Harvest w/ Bonus",itemID,_)
-										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
-									end
-								-- end
+								-- print("Check w/ Bonus",itemID,_)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest w/ Bonus",itemID,_)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
+								end
 							elseif group.modID then
 								-- Harvest using a ModID?
 								_ = group.modID;
-								-- if not modIDs[_] then
-									-- print("Check w/ Mod",itemID,_)
-									-- modIDs[_] = true;
-									if (not VerifySourceID(group)) then
-										-- print("Harvest w/ Mod",itemID,_)
-										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
-									end
-								-- end
+								-- print("Check w/ Mod",itemID,_)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest w/ Mod",itemID,_)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
+								end
 							else
 								-- Harvest with no special ID?
 								-- print("Check",itemID)
@@ -14288,8 +14022,6 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- else print("Cached skip",group.key,group[group.key]);
 						end
 					end
-					-- wipe(modIDs);
-					-- wipe(bonusIDs);
 				end
 			end
 			wipe(harvested);
@@ -15830,12 +15562,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				},
 				{ 13 },		-- Eastern Kingdoms
 			};
-			-- local OnUpdateForItem = function(self)
-				-- print("update on group",self.key, self[self.key]);
-				-- for i,o in ipairs(self.g) do
-					-- o.visible = false;
-				-- end
-			-- end;
 			local function UnsetNotCollectible(o)
 				if o.collectible == false then o.collectible = nil; end
 				if o.g then
@@ -15914,7 +15640,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				self.retry = nil;
 				local temp = {};
 				-- options when refreshing the list
-				local includeAll = app.Settings:Get("DebugMode");
+				local includeAll = app.MODE_DEBUG;
 				local includeQuests = app.CollectibleQuests;
 				local includePermanent = IsAltKeyDown() or includeAll;
 				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
@@ -16165,6 +15891,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				if self.retry then
 					-- print("Missing API quest data on this World Quest refresh");
+					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
 					self.retry = nil;
 					return true;
 				end
@@ -16699,10 +16426,6 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
--- local ProcessAuctions = function()
--- 	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
--- end
-
 local ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
 	if not AllTheThingsAuctionData then return end;
@@ -17051,7 +16774,7 @@ app.OpenAuctionModule = function(self)
 							end,
 							['OnUpdate'] = function(data)
 								data.visible = true;
-								if app.Settings:Get("DebugMode") then
+								if app.MODE_DEBUG then
 									-- Novaplane made me do it
 									data.trackable = true;
 									data.saved = true;
@@ -17072,7 +16795,7 @@ app.OpenAuctionModule = function(self)
 							end,
 							['OnUpdate'] = function(data)
 								data.visible = true;
-								if app.Settings:Get("AccountMode") then
+								if app.MODE_ACCOUNT then
 									data.trackable = true;
 									data.saved = true;
 								else
@@ -17090,7 +16813,7 @@ app.OpenAuctionModule = function(self)
 								app.Settings:ToggleFactionMode();
 							end,
 							['OnUpdate'] = function(data)
-								if app.Settings:Get("DebugMode") or not app.Settings:Get("AccountMode") then
+								if app.MODE_DEBUG or not app.MODE_ACCOUNT then
 									data.visible = false;
 								else
 									data.visible = true;

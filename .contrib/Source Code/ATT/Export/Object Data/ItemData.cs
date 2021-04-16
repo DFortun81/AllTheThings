@@ -22,7 +22,7 @@ namespace ATT
             /// <param name="fields">The fields.</param>
             public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
             {
-                if (data.TryGetValue("f", out int f))
+                if (data.TryGetValue("f", out long f))
                 {
                     if (f <= 0 || f == 104 || f == 56) fields.Remove("f");  // Quest Items, Reagents, and Invalid Filters
                     else if (f == 60)   // Selfies
