@@ -8,11 +8,9 @@ _.Zones =
 		m(DEADWIND_PASS, {
 			n(ZONEDROPS, {
 				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
-					["crs"] = {
-						7371,	-- Deadwind Mauler
-						7372,	-- Deadwind Warlock
-					},
+					["cr"] = 7372,	-- Deadwind Warlock
 				}),
+				-- #if AFTER CLASSIC
 				i(24480, {	-- Ghostly Essence
 					["timeline"] = { "removed 7.1.0.1233" },
 					["crs"] = {
@@ -23,6 +21,7 @@ _.Zones =
 						12377,	-- Wailing Spectre
 					},
 				}),
+				-- #endif
 			}),
 		}),
 	}),
