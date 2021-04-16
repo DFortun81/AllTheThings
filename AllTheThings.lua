@@ -1413,10 +1413,9 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		return 1;
 	end
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
-	local accountMode = app.Settings:Get("AccountMode");
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not accountMode and t.altcollected then
+	if not app.MODE_ACCOUNT and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1426,7 +1425,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not accountMode and t.altQuests and #t.altQuests > 0 then
+		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,questID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1443,7 +1442,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not accountMode and t.altQuests and #t.altQuests > 0 then
+			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
@@ -1470,7 +1469,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not accountMode and t.altQuests and #t.altQuests > 0 then
+			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -1846,7 +1845,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- it is not a 'saved' thing for this character or account mode is active
-				(not group.saved or group.saved ~= 1 or app.Settings:Get("AccountMode")))
+				(not group.saved or group.saved ~= 1 or app.MODE_ACCOUNT))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
@@ -2677,9 +2676,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 
-				if not app.Settings:Get("DebugMode") then
+				if not app.MODE_DEBUG then
 					local regroup = {};
-					if app.Settings:Get("AccountMode") then
+					if app.MODE_ACCOUNT then
 						for i,j in ipairs(group) do
 							if app.RecursiveUnobtainableFilter(j) then
 								tinsert(regroup, j);
@@ -2726,7 +2725,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Don't do anything for things linked to maps.
 			local regroup = {};
 			local criteriaID = ...;
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
 						if j.mapID or j.parent == nil or j.parent.parent == nil then
@@ -2752,7 +2751,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "azeriteEssenceID" then
 			local regroup = {};
 			local rank = ...;
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
 						if j.mapID or j.parent == nil or j.parent.parent == nil then
@@ -2778,7 +2777,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
@@ -2796,7 +2795,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "followerID" then
 			-- Don't do anything
 			local regroup = {};
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
@@ -3140,7 +3139,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.Settings:Get("DebugMode") then
+			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
@@ -3501,7 +3500,7 @@ app.BuildCrafted = function(item)
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
-		local filterSkill = not app.Settings:Get("DebugMode") and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
+		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
 		local clone;
 		-- item is BoP
@@ -3985,12 +3984,11 @@ fieldConverters = {
 };
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local n, keys = 0, {};
+	local keys = {};
 	for key,_ in pairs(group) do
-		n = n + 1;
-		rawset(keys, n, key);
+		table.insert(keys, key);
 	end
-	for _,key in pairs(keys) do
+	for _,key in ipairs(keys) do
 		_cache = rawget(fieldConverters, key);
 		if _cache then _cache(group, rawget(group,key)); end
 	end
@@ -4250,7 +4248,7 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto, recur)
-	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
+	if TomTom and (group.visible or (group.objectiveID and not group.saved) or app.MODE_DEBUG) then
 		if group.coords or group.coord then
 			local opt = {
 				title = group.text or group.name or group.link,
@@ -5036,7 +5034,7 @@ app.TryColorizeName = function(group, name)
 	elseif group.factionID and group.standing then
 		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
 	then
 		-- class color
 		if group.classID then
@@ -6133,7 +6131,7 @@ local fields = {
 		end
 	end,
 	["OnUpdate"] = function(t)
-		t.visible = app.Settings:Get("DebugMode");
+		t.visible = app.MODE_DEBUG;
 		if t.visible then
 			local deaths = tonumber(select(1, GetStatistic(60)) or "0");
 			if deaths > 0 then
@@ -8088,7 +8086,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
+		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
 	end,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
@@ -8126,7 +8124,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
+		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
 		end
 	end,
@@ -12199,8 +12197,8 @@ RowOnEnter = function (self)
 		end
 
 		-- Show Quest Prereqs
-		local isDebug = app.Settings:Get("DebugMode");
-		if reference.sourceQuests and (not reference.saved or isDebug) then
+		local isDebugMode = app.MODE_DEBUG;
+		if reference.sourceQuests and (not reference.saved or isDebugMode) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
@@ -13062,7 +13060,7 @@ function app:GetDataCache()
 			["nmr"] = false,
 			["OnUpdate"] = function(self)
 				self.lvl = app.Level;
-				if app.Settings:Get("DebugMode") then
+				if app.MODE_DEBUG then
 					self.collectible = true;
 				else
 					self.collectible = false;
@@ -13961,7 +13959,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			-- ensure Debug is enabled to fully capture all information
-			if not app.Settings:Get("DebugMode") then
+			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
 				self.forcedDebug = true;
 				app.Settings:ToggleDebugMode();
@@ -15639,7 +15637,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				self.retry = nil;
 				local temp = {};
 				-- options when refreshing the list
-				local includeAll = app.Settings:Get("DebugMode");
+				local includeAll = app.MODE_DEBUG;
 				local includeQuests = app.CollectibleQuests;
 				local includePermanent = IsAltKeyDown() or includeAll;
 				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
@@ -16773,7 +16771,7 @@ app.OpenAuctionModule = function(self)
 							end,
 							['OnUpdate'] = function(data)
 								data.visible = true;
-								if app.Settings:Get("DebugMode") then
+								if app.MODE_DEBUG then
 									-- Novaplane made me do it
 									data.trackable = true;
 									data.saved = true;
@@ -16794,7 +16792,7 @@ app.OpenAuctionModule = function(self)
 							end,
 							['OnUpdate'] = function(data)
 								data.visible = true;
-								if app.Settings:Get("AccountMode") then
+								if app.MODE_ACCOUNT then
 									data.trackable = true;
 									data.saved = true;
 								else
@@ -16812,7 +16810,7 @@ app.OpenAuctionModule = function(self)
 								app.Settings:ToggleFactionMode();
 							end,
 							['OnUpdate'] = function(data)
-								if app.Settings:Get("DebugMode") or not app.Settings:Get("AccountMode") then
+								if app.MODE_DEBUG or not app.MODE_ACCOUNT then
 									data.visible = false;
 								else
 									data.visible = true;
