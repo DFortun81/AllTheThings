@@ -4606,6 +4606,17 @@ local function PopulateQuestObject(questObject)
 					MergeObjects(item.g, resolved);
 				end
 			end
+			if item.g then
+				for k,o in ipairs(item.g) do
+					if o.itemID == 140495 then	-- Torn Invitation
+						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
+ 						if searchResults and #searchResults > 0 then
+							if not o.g then o.g = {}; end
+							MergeObjects(o.g, CreateObject(searchResults));
+						end
+					end
+				end
+			end
 		end
 	end
 
