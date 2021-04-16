@@ -809,8 +809,20 @@ _.Zones =
 				}),
 				
 				-- Korthia Daily
+				q(63934, {	-- Assail Mail
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178802 },	-- Messenger Mnemis
+					["isDaily"] = true,
+					["coord"] = { 61.4, 22.4, 1961 },
+				}),
+				q(63964, {	-- Broker's Bounty: Grimtalon
+				--	TODO: add object localization
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },
+				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
-				--	quest has a Kyrian provider but seems to be covenant-agnostic
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178800 },	-- Voitha
 					["isDaily"] = true,
@@ -821,23 +833,18 @@ _.Zones =
 					},
 				}),
 				q(63789, {	-- Continued Efforts: Scholar's Den
-				--	quest has a Necrolord provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178807 },	-- Alexandros Mograine
 					["isDaily"] = true,
 					["coord"] = { 60.4, 28.5, 1961 },	-- Korthia
 				}),
 				q(63785, {	-- Continued Efforts: Seeker's Quorum
-				--	quest has a Night Fae provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
-				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, 1961 },	-- Korthia
 				}),
 				q(64080, {	-- Down to Earth
-				--	quest has a Night Fae provider but the quest appears to be covenant-agnostic, i picked it up as Venthyr
-				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
@@ -861,8 +868,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
+				q(63784, {	-- Gold's No Object
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179221 },	-- Rendle
+					["isDaily"] = true,
+					["coord"] = { 61.6, 26.0, 1961 },	-- Korthia
+				}),
 				q(63782, {	-- Mawsworn Rituals
-				--	quest has a Kyrian provider but seems to be covenant-agnostic
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
@@ -878,13 +890,11 @@ _.Zones =
 						i(186017),	-- Progenian Fragment
 					},
 				}),
-				q(63784, {	-- Gold's No Object
-				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
-				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
+				q(63786, {	-- Sweep the Windswept Aerie
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 179221 },	-- Rendle
+					["provider"] = { "n", 178794 },	-- General Draven
 					["isDaily"] = true,
-					["coord"] = { 61.6, 26.0, 1961 },	-- Korthia
+					["coord"] = { 61.5, 25.2, 1961 },	-- Korthia
 				}),
 				q(64089, {	-- Teas and Tinctures
 				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
@@ -894,15 +904,12 @@ _.Zones =
 					["coord"] = { 61.6, 25.7, 1961 },	-- Korthia
 				}),
 				q(64101, {	-- The Proper Procedures
-				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
-				--	quest disappeared from my log and was replaced with a different quest after a series of DCs/lua error shenanigans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, 1961 },	-- Korthia
 				}),
 				q(64043, {	-- We Need a Healer - You!
-				--	quest has a Kyrian provider but seems to be covenant-agnostic
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
