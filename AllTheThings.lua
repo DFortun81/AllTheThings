@@ -3171,21 +3171,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Create an unlinked version of the object.
 		if not group.g then
-			-- local merged = {};
 			local skipped = {};
-			-- TODO: make this work for everything. clearly.
-			--[[
-			Basically need to merge up any group which is in the cache for field(a[b]) where the key of that group matches paramA and the value matches paramB
-			This way things which are cached under themselves are merged into the root group, and things which are tagged with another things (i.e. NPCs with MoH)
-			will not be treated as the same group as MoH and NOT be merged up (because their key will be 'creatureID' instead of 'itemID')
-			if group.key == paramA and group[group.key] == paramB then
-			MergeObject(merged)
-			]]
-
-			-- print("unlinked group params",paramA,paramB);
 			-- Clone all the groups so that things don't get modified in the Source
 			local cloned = {};
-			-- local temp_orig = {};
 			local uniques = {};
 			for i,o in ipairs(group) do
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
@@ -3197,13 +3185,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			wipe(uniques);
 			-- replace the Source references with the cloned references
 			group = cloned;
-
-			-- print("test1")
-			-- for k,v in pairs(temp_orig) do
-			-- 	print(k,tostring(v),tostring(v.parent));
-			-- end
-			-- print("--");
-
 			-- Find or Create the root group for the search results
 			local root;
 			-- print("Find Root for",paramA,paramB);
@@ -3211,7 +3192,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- If the obj "is" the root obj
 				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
 				if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
-				-- if (o.key == paramA and (o.modItemID or o[o.key]) == paramB) then
 					-- object meets filter criteria and is exactly what is being searched
 					if app.RecursiveGroupRequirementsFilter(o) then
 						-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
@@ -3247,8 +3227,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- If the obj "is" the root obj via bi-directional key
 				-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
 				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-				-- if GroupMatchesParams(o, paramA, paramB) then
-				-- if (o.key == paramA and o[o.key] == paramB) then
 					-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
 					MergeProperties(root, o);
 					-- Merge the g of the obj into the merged results
@@ -3336,104 +3314,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("achieve nocrits",#group.g)
 			end
 
-			
-			-- local preMergeTotal = #group;
-			-- -- First add only groups which meet the current filters
-			-- -- print("-final group-",#group,paramA,paramB)
-			-- for i,o in ipairs(group) do
-			-- 	-- print(o.key,o[o.key])
-			-- 	-- do not include the exact matching group as part of the set contained by the search group if it contains things itself
-			-- 	if o[paramA] ~= paramB and o.g then
-			-- 		if app.RecursiveGroupRequirementsFilter(o) then
-			-- 			MergeObject(merged, CreateObject(o));
-			-- 			-- print("add",o.hash);
-			-- 			-- print("total merged",#merged);
-			-- 		else
-			-- 			-- print("skip",o.hash);
-			-- 			tinsert(skipped, o);
-			-- 		end
-			-- 	-- the exact matching group contains things itself
-			-- 	elseif o.g then
-			-- 		-- pull the 'g' objects out of the matching group into the set of things it contains
-			-- 		for gi=1,#o.g do
-			-- 			if app.RecursiveGroupRequirementsFilter(o.g[gi]) then
-			-- 				MergeObject(merged, CreateObject(o.g[gi]));
-			-- 			else
-			-- 				tinsert(skipped, o.g[gi]);
-			-- 			end
-			-- 		end
-			-- 	-- a single object met the criteria, then just use that one object
-			-- 	elseif preMergeTotal == 1 then
-			-- 		tinsert(merged,o);
-			-- 	end
-			-- end
-			-- -- print("---")
-			-- -- then merge any skipped groups
-			-- for i,o in ipairs(skipped) do
-			-- 	MergeObject(merged, CreateObject(o));
-			-- 	-- print("merge",o.hash);
-			-- end
-			-- First add only groups which meet the current filters
-			-- for i,o in ipairs(group) do
-			-- 	if app.RecursiveGroupRequirementsFilter(o) then
-			-- 		MergeObject(merged, CreateObject(o));
-			-- 		-- print("add",o.hash);
-			-- 		-- print("total merged",#merged);
-			-- 	else
-			-- 		-- print("skip",o.hash);
-			-- 		tinsert(skipped, o);
-			-- 	end
-			-- end
-			-- -- then merge any skipped groups
-			-- for i,o in ipairs(skipped) do
-			-- 	MergeObject(merged, CreateObject(o));
-			-- 	-- print("merge",o.hash);
-			-- end
-			-- print("total merged",#merged);
-			-- if #merged == 1 and merged[1][paramA] == paramB then
-			-- 	group = merged[1];
-			-- 	local symbolicLink = ResolveSymbolicLink(group);
-			-- 	if symbolicLink then
-			-- 		if group.g and #group.g >= 0 then
-			-- 			for j=1,#symbolicLink,1 do
-			-- 				MergeObject(group.g, CreateObject(symbolicLink[j]));
-			-- 			end
-			-- 		else
-			-- 			for j=#symbolicLink,1,-1 do
-			-- 				symbolicLink[j] = CreateObject(symbolicLink[j]);
-			-- 			end
-			-- 			group.g = symbolicLink;
-			-- 		end
-			-- 	end
-			-- else
-			-- 	for i,o in ipairs(merged) do
-			-- 		local symbolicLink = ResolveSymbolicLink(o);
-			-- 		if symbolicLink then
-			-- 			o.symbolized = true;
-			-- 			if o.g and #o.g >= 0 then
-			-- 				for j=1,#symbolicLink,1 do
-			-- 					MergeObject(o.g, CreateObject(symbolicLink[j]));
-			-- 				end
-			-- 			else
-			-- 				for j=#symbolicLink,1,-1 do
-			-- 					symbolicLink[j] = CreateObject(symbolicLink[j]);
-			-- 				end
-			-- 				o.g = symbolicLink;
-			-- 			end
-			-- 		end
-			-- 	end
-			-- 	group = CreateObject({ [paramA] = paramB });
-			-- 	group.g = merged;
-			-- 	-- print("multi-merge",#group.g)
-			-- end
-
 			-- Append any crafted things using this group
 			app.BuildCrafted(group);
 
-			-- Expand any things requiring this group if this group does not already have sub-groups
-			-- if not group.g then
+			-- Expand any things requiring this group
 			app.ExpandSubGroups(group);
-			-- end
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
@@ -3737,8 +3622,8 @@ app.ExpandSubGroups = function(item)
 end
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
-		-- Pop out the cost objects into their own sub-groups for accessibility
-		-- Gold cost currently ignored
+	-- Pop out the cost objects into their own sub-groups for accessibility
+	-- Gold cost currently ignored
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
 				["text"] = L["COST"],		-- L["COST"] = "Cost"
@@ -4688,9 +4573,6 @@ local function PopulateQuestObject(questObject)
 				_cache = SearchForField("currencyID", currencyID);
 				if _cache then
 					for _,data in ipairs(_cache) do
-						-- if data.f then
-						-- 	item.f = data.f;
-						-- end
 						-- print("_cached",data.key,data[data.key])
 						-- cache record is the item itself
 						if data.key == "currencyID" and data[data.key] == currencyID then
@@ -4702,18 +4584,11 @@ local function PopulateQuestObject(questObject)
 								item.g = {};
 								item.progress = 0;
 								item.total = 0;
-								-- item.OnUpdate = OnUpdateForItem;
 							end
 							-- print("Clone cached item")
 							MergeObject(item.g, CloneData(data));
 						end
 					end
-					-- if not item.g then
-					-- 	item.g = {};
-					-- 	item.progress = 0;
-					-- 	item.total = 0;
-					-- 	-- item.OnUpdate = OnUpdateForItem;
-					-- end
 					MergeObject(questObject.g, item);
 				end
 			else
@@ -5249,29 +5124,8 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
--- local function CheckAttachTooltip(self, elapsed)
-	-- -- print("OnUpdate",elapsed);
-	-- -- run the UpdateTooltip if it exists
-	-- if self.UpdateTooltip then
-		-- -- only allow OnUpdate to process 4x per second, very slow
-		-- self.NextUpdate = (self.NextUpdate or .25) - elapsed;
-		-- -- print("NextUpdate",self.NextUpdate);
-		-- if self.NextUpdate > 0 then return; end
-		-- -- reset update frequency
-		-- self.NextUpdate = nil;
-		-- self.AllTheThingsProcessing = nil;
-		-- print(":UpdateTooltip()");
-		-- self:UpdateTooltip();
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self:UpdateTooltip(self);
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self.UpdateTooltip(self);
-	-- end
--- end
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
-	-- if not self.AllTheThingsProcessing then
-	-- 	self.AllTheThingsProcessing = true;
 	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
 		local numLines = self:NumLines();
 		if numLines < 1 then
@@ -5334,11 +5188,6 @@ local function AttachTooltip(self)
 				end
 			end
 		end
-
-		--if not owner or not owner.UpdateTooltip then
-			-- print("Attach-SetSelfUpdate");
-			--self.UpdateTooltip = AttachTooltip;
-		--end
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target then
@@ -5474,23 +5323,9 @@ local function AttachTooltip(self)
 				self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
 				self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
 				self:AddLine(reference.description, 0.4, 0.8, 1, 1);
-				--self.AttachComplete = true;
 				return true;
 			end
 		end
-
-		-- end
-
-			--self.AttachComplete = true
-			--if self.AttachComplete then
-				-- print("AttachTooltip-Complete");
-				--self.UpdateTooltip = nil;
-				-- self.AllTheThingsProcessing = nil;
-			-- else
-				-- print("AttachTooltip-Working");
-				-- self.AllTheThingsProcessing = false;
-			--end
-		--end
 		-- print("AttachTooltip-Return");
 	end
 end
@@ -5530,7 +5365,6 @@ local function ClearTooltip(self)
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
-	-- return nil + 1;
 end
 
 -- Tooltip Hooks
@@ -9061,7 +8895,7 @@ app.CollectibleAsQuest = function(t)
 	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
 		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
 		
-	-- If you are currently on the quest.
+	-- If it is an item or used for an active quest.
 	or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
 end
 local function RefreshQuestCompletionState(questID)
@@ -10507,9 +10341,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 				print(format(L["ITEM_ID_ADDED_MISSING"], "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
 			end
 		end
-
 		-- If the item isn't in the list, then don't bother refreshing the data.
-		-- app:RefreshData(true, true);
 	end
 end
 function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
@@ -10682,6 +10514,7 @@ function app:CheckYieldHelper()
 		if app.nextYield < time() then
 			app.nextYield = time();
 			-- print("yieldHelper",app.nextYield);
+			-- app:UpdateWindows();
 			coroutine.yield();
 		end
 	end
@@ -11361,10 +11194,6 @@ local function AdjustRowIndent(row, indentAdjust)
 	end
 	if row.Texture then
 		-- only ever LEFT point set
-		-- for i=1, row.Texture:GetNumPoints() do
-		-- 	print(row.Texture:GetPoint(i));
-		-- end
-		-- print("---")
 		local _, _, _, x = row.Texture:GetPoint(2);
 		-- print("row texture at",x)
 		row.Texture:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
@@ -13697,30 +13526,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.openedOnLogin = false;
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
-		local IsSameMap = function(data, results)
-			if data.mapID then
-				-- Exact same map?
-				if data.mapID == results.mapID then
-					return true;
-				end
-
-				-- Does the result map have an array of associated maps and this map is in there?
-				if results.maps and contains(results.maps, data.mapID) then
-					return true;
-				end
-			end
-			if data.maps then
-				-- Does the old map data contain this map?
-				if contains(data.maps, results.mapID) then
-					return true;
-				end
-
-				-- Does the result map have an array of associated maps and this map is in there?
-				if results.maps and containsAny(results.maps, data.maps) then
-					return true;
-				end
-			end
-		end
 		self.IsSameMapData = function(self)
 			local data = self.data;
 			if data.mapID then
@@ -13755,36 +13560,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Simplify the returned groups
 				local groups, holiday = {}, {};
 				local header = app.CreateMap(self.mapID, { g = groups });
-				-- local mergeGroups;
 				for i, group in ipairs(results) do
-					-- mergeGroups = nil;
-					-- print(group.key,group[group.key]);
-					-- clone the information from the group so it can be adjusted in the list without changing the source
-					-- local clone = {};
-					-- for key,value in pairs(group) do
-					-- 	if key == "maps" then
-					-- 		local maps = {};
-					-- 		for i,mapID in ipairs(value) do
-					-- 			tinsert(maps, mapID);
-					-- 		end
-					-- 		clone[key] = maps;
-					-- 	elseif key == "g" then
-					-- 		local g = {};
-					-- 		for i,o in ipairs(value) do
-					-- 			tinsert(g, CloneData(o));
-					-- 		end
-					-- 		clone[key] = g;
-					-- 	else
-					-- 		clone[key] = value;
-					-- 	end
-					-- end
-					-- setmetatable(clone, getmetatable(group));
-					-- group = clone;
 					group = CloneData(group);
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
-					-- local first = false;
 
 					-- can probably re-factor this logic at some point to implicitly merge into the proper existing group instead of
 					-- ALWAYS creating the shared group, and then merging into the entire set of groups...
@@ -13864,21 +13644,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						-- end
 
 						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-							-- print("merge map object into header",group.key,group[group.key])
-							-- for k,v in pairs(group) do
-							-- 	if k ~= "g" then
-							-- 		print("-merge",k,v);
-							-- 	end
-							-- end
-							-- print("--")
-							-- header.key = group.key;
-							-- header[group.key] = group[group.key];
 							MergeProperties(header, group, true);
 							if group.g then
 								MergeObjects(groups, group.g);
 							end
 							group = nil;
-							-- MergeObject({header}, group);
 						elseif group.key == "speciesID" then
 							group = app.CreateNPC(-25, { g = { group } });
 						elseif group.key == "questID" then
@@ -13993,39 +13763,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Swap out the map data for the header.
 				results = header;
 
-				-- If we have determined that we want to expand this section, then do it
-				-- if results.g then
-					-- print("weird section?");
-					-- local bottom = {};
-					-- local top = {};
-					-- for i=#results.g,1,-1 do
-						-- local o = results.g[i];
-						-- if o.difficultyID then
-							-- table.remove(results.g, i);
-							-- table.insert(bottom, 1, o);
-						-- -- this section appears to do nothing of value but appears to be responsible for preventing zone headers from collapsing/expanding
-						-- --elseif o.isRaid then
-						-- --	table.remove(results.g, i);
-						-- --	table.insert(top, o);
-						-- end
-					-- end
-					-- for i,o in ipairs(top) do
-						-- table.insert(results.g, 1, o);
-					-- end
-					-- for i,o in ipairs(bottom) do
-						-- table.insert(results.g, o);
-					-- end
-				-- end
-
 				if self.data then wipe(self.data); end
-				-- for key,value in pairs(self.data) do
-					-- self.data[key] = nil;
-				-- end
 				self.data = results;
-				-- for key,value in pairs(results) do
-					-- self.data[key] = value;
-				-- end
-
 				self.data.u = nil;
 				self.data.mapID = self.mapID;
 				setmetatable(self.data,
@@ -14242,8 +13981,6 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			-- local modIDs = {};
-			-- local bonusIDs = {};
 			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
 			app.MaximumItemInfoRetries = 40;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
@@ -14260,25 +13997,19 @@ app:GetWindow("Harvester", UIParent, function(self)
 							if group.bonusID then
 								-- Harvest using a BonusID?
 								_ = group.bonusID;
-								-- if not bonusIDs[_] then
-									-- print("Check w/ Bonus",itemID,_)
-									-- bonusIDs[_] = true;
-									if (not VerifySourceID(group)) then
-										-- print("Harvest w/ Bonus",itemID,_)
-										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
-									end
-								-- end
+								-- print("Check w/ Bonus",itemID,_)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest w/ Bonus",itemID,_)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = _}, app.BaseItem));
+								end
 							elseif group.modID then
 								-- Harvest using a ModID?
 								_ = group.modID;
-								-- if not modIDs[_] then
-									-- print("Check w/ Mod",itemID,_)
-									-- modIDs[_] = true;
-									if (not VerifySourceID(group)) then
-										-- print("Harvest w/ Mod",itemID,_)
-										tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
-									end
-								-- end
+								-- print("Check w/ Mod",itemID,_)
+								if (not VerifySourceID(group)) then
+									-- print("Harvest w/ Mod",itemID,_)
+									tinsert(db.g, setmetatable({visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = _}, app.BaseItem));
+								end
 							else
 								-- Harvest with no special ID?
 								-- print("Check",itemID)
@@ -14290,8 +14021,6 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- else print("Cached skip",group.key,group[group.key]);
 						end
 					end
-					-- wipe(modIDs);
-					-- wipe(bonusIDs);
 				end
 			end
 			wipe(harvested);
@@ -15832,12 +15561,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				},
 				{ 13 },		-- Eastern Kingdoms
 			};
-			-- local OnUpdateForItem = function(self)
-				-- print("update on group",self.key, self[self.key]);
-				-- for i,o in ipairs(self.g) do
-					-- o.visible = false;
-				-- end
-			-- end;
 			local function UnsetNotCollectible(o)
 				if o.collectible == false then o.collectible = nil; end
 				if o.g then
@@ -16167,6 +15890,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				if self.retry then
 					-- print("Missing API quest data on this World Quest refresh");
+					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
 					self.retry = nil;
 					return true;
 				end
@@ -16700,10 +16424,6 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 	self.Tooltip:Show();
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
-
--- local ProcessAuctions = function()
--- 	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
--- end
 
 local ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
