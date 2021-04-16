@@ -15555,9 +15555,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 1527, 6486, { 57157 }},	-- Assault: The Black Empire
 						{ 1527, 6488, { 56308 }},	-- Assault: Aqir Unearthed
 						{ 1527, 6487, { 55350 }},	-- Assault: Amathet Advance
+						{ 62 },	-- Darkshore
 					},
 				},
-				{ 13 },		-- Eastern Kingdoms
+				{	13,		-- Eastern Kingdoms
+					{
+						{ 14 },	-- Arathi Highlands
+					},
+				},
 			};
 			local function UnsetNotCollectible(o)
 				if o.collectible == false then o.collectible = nil; end
@@ -15660,33 +15665,38 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					local mapIDPOIPairs = pair[2];
 					if mapIDPOIPairs then
 						for i,arr in ipairs(mapIDPOIPairs) do
-							for j,questID in ipairs(arr[3]) do
-								if not IsQuestFlaggedCompleted(questID) then
-									local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
-									if timeLeft and timeLeft > 0 then
-										local mapID = arr[1];
-										local subMapObject = app.CreateMapWithStyle(mapID);
-										local questObject = GetPopulatedQuestObject(questID);
+							if #arr >= 3 then
+								for j,questID in ipairs(arr[3]) do
+									if not IsQuestFlaggedCompleted(questID) then
+										local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
+										if timeLeft and timeLeft > 0 then
+											local mapID = arr[1];
+											local subMapObject = app.CreateMapWithStyle(mapID);
+											local questObject = GetPopulatedQuestObject(questID);
 
-										-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
-										if not questObject.timeRemaining then
-											local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
-											if timeLeft < 30 then
-												description = "|cFFFF0000" .. description .. "|r";
-											elseif timeLeft < 60 then
-												description = "|cFFFFFF00" .. description .. "|r";
+											-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
+											if not questObject.timeRemaining then
+												local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
+												if timeLeft < 30 then
+													description = "|cFFFF0000" .. description .. "|r";
+												elseif timeLeft < 60 then
+													description = "|cFFFFFF00" .. description .. "|r";
+												end
+												if not questObject.description then
+													questObject.description = description;
+												else
+													questObject.description = questObject.description .. "\n\n" .. description;
+												end
 											end
-											if not questObject.description then
-												questObject.description = description;
-											else
-												questObject.description = questObject.description .. "\n\n" .. description;
-											end
+
+											MergeObject(subMapObject.g, questObject);
+											MergeObject(mapObject.g, subMapObject);
 										end
-
-										MergeObject(subMapObject.g, questObject);
-										MergeObject(mapObject.g, subMapObject);
 									end
 								end
+							else
+								local subMapObject = app.CreateMapWithStyle(arr[1]);
+								MergeObject(mapObject.g, subMapObject);
 							end
 						end
 					end
