@@ -478,22 +478,24 @@ settings.ToggleCompletionistMode = function(self)
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
-	self:UpdateMode();
 	if debugMode then
-		if not self:Get("Thing:Transmog") then
-			wipe(app.GetDataMember("CollectedSources"));
-			app.RefreshCollections();
-		end
 		-- cache the current settings to re-apply after
 		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"));
 		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"));
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
+		if not self:Get("Thing:Transmog") then
+			wipe(app.GetDataMember("CollectedSources"));
+			app.RefreshCollections();
+			debugMode = "R";
+		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
-	app:RefreshData(nil,nil,true);
+	if not debugMode or debugMode ~= "R" then
+		self:UpdateMode(1);
+	end
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
@@ -540,12 +542,7 @@ settings.ToggleCollectedThings = function(self)
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
-	if checked then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-	else
-		app.RequireBindingFilter = app.NoFilter;
-	end
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
@@ -1563,7 +1560,6 @@ end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
 	settings:Set("Cache:CollectedThings", self:GetChecked());
-	settings:UpdateMode(1);
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);

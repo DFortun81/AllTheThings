@@ -7683,19 +7683,23 @@ local itemFields = {
 		return 2;
 	end,
 	["f"] = function(t)
-		if t.questID then return 104; end
-		local results = SearchForField("itemID", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
-		end
-		local results = SearchForField("itemIDAsCost", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
-		end
+		-- TODO: this logic causes tons of lag. why do we need to determine if an item is a quest item for filtering?
+		-- if t.questID then return 104; end
+		-- local results = SearchForField("itemID", t.itemID);
+		-- if results then
+		-- 	for i,o in ipairs(results) do
+		-- 		if o.questID then return 104; end
+		-- 	end
+		-- end
+		-- local results = SearchForField("itemIDAsCost", t.itemID);
+		-- if results then
+		-- 	for i,o in ipairs(results) do
+		-- 		if o.questID then return 104; end
+		-- 	end
+		-- end
+		-- Unknown item type after Parser, so make sure we save the filter for later references
+		rawset(t, "f", 50);
+		return rawget(t, "t");
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
@@ -9583,7 +9587,7 @@ end
 -- Filtering
 function app.Filter()
 	-- Meaning "Don't display."
-	return false;
+	-- Nothing needs to return
 end
 function app.NoFilter()
 	-- Meaning "Display as expected."
@@ -9633,15 +9637,12 @@ function app.FilterItemClass_RequireClasses(item)
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
+		local f = item.f;
 		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
-		if (item.f > 49 and item.f < 60) or	-- Misc. Filters on non-collectible items
-			item.f == 114 or				-- Key Items
-			item.f == 999 or				-- Event Items
-			app.Settings:GetFilter(item.f)	-- Filter applied via Settings (character-equippable or manually set)
-			then return true;
-		else
-			return false;
-		end
+		return (f > 49 and f < 60) or	-- Misc. Filters on non-collectible items
+			f == 114 or				-- Key Items
+			f == 999 or				-- Event Items
+			app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -10256,7 +10257,7 @@ UpdateGroups = function(parent, g, defaultVis)
 		if not parent.progress then parent.progress = 0; end
 		-- default visibility for group updates is debug mode itself
 		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.Settings:Get("DebugMode");
+		local defaultVisibility = defaultVis or app.MODE_DEBUG;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
 			app:CheckYieldHelper();
@@ -11805,7 +11806,7 @@ local function RowOnClick(self, button)
 
 					elseif button == "LeftButton" then
 						-- Default behaviour is to Refresh Collections.
-						RefreshCollections(reference);
+						RefreshCollections();
 					end
 					return true;
 				end
@@ -12792,20 +12793,16 @@ function app:GetDataCache()
 
 		db = {};
 		db.g = {};
-		db.fps = {};
 		app.CacheFlightPathData();
-		db.OnUpdate = function(self)
+		db.LoadFlightPaths = function(self)
 			for i,fp in pairs(app.FlightPathDB) do
-				if not self.fps[i] then
-					self.fps[i] = true;
-					tinsert(self.g, app.CreateFlightPath(tonumber(i)));
-				end
+				tinsert(self.g, app.CreateFlightPath(tonumber(i)));
 			end
 			table.sort(self.g, function(a, b)
 				return a.name < b.name;
 			end);
 		end;
-		db:OnUpdate();
+		db:LoadFlightPaths();
 		db.text = L["FLIGHT_PATHS"];
 		db.icon = app.asset("Category_FlightPaths");
 		table.insert(g, db);
