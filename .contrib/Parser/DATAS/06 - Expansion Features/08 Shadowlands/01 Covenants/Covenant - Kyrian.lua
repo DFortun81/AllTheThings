@@ -288,6 +288,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 55.6, 42.0, 1707 }, -- Archon's Rise
+						["g"] = {
+							follower(1258),	-- Mikanikos
+						},
 					}),
 					q(61785, {	-- An Expected Visitor
 						["description"] = "Requires Renown 11.",
