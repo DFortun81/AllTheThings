@@ -2601,15 +2601,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
-						-- TODO: Fill in coords
-						--["coord"] = { x.x, y.y, zzzz },
-						-- TODO: Fill in "cost" for each item
+						["coord"] = { 66.4, 22.0, 1533 },	-- Bastion (it's in Elysian Hold but the maps are haunted)
 						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
 							i(177872, {	-- Archon's Guiding Glaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184272, {	-- Ascended Gladius of Glory
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(175254, {	-- Burning Beacon of Hope
 								--["cost"] = { { "x", yyyy, zzzz } },
@@ -2618,76 +2616,76 @@ _.ExpansionFeatures =
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(184270, {	-- Disciple's Peacebound Poniard
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(174298, {	-- Dutiful Disciple's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(174310, {	-- Elysian Sentinel's Aegis
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(177865, {	-- Faithful Sidearm
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(175251, {	-- Forked Blade of Fortitude
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(180312, {	-- Guarding Cudgel of the Goliath
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(174302, {	-- Labrys of the Loyal Larion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(175279, {	-- Lost Soul Xiphos
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(177850, {	-- Meditation's Muse
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184230, {	-- Pike of the Honored Peltast
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(180315, {	-- Polemarch's Scepter of Faith
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184243, {	-- Praetorian Wingblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184273, {	-- Puremind Piercer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184274, {	-- Reaver of Renewed Resolve
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184275, {	-- Sacred Sparrer's Edge
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(177860, {	-- Silvered Recurve of Reconciliation
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(177849, {	-- Soulbearer's Blade of Salvation
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(177855, {	-- Spellblade of Antiquity
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(178973, {	-- Symphonic Chimekeeper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(177870, {	-- Thenios's Beacon of Foresight
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
 							i(176098, {	-- Truthseeker Longbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(178975, {	-- Vesiphone's Vesper of Reflection
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184236, {	-- Warglaive of Devoted Might
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(184271, {	-- Xandria's Kopis of Courage
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 						}),
 					}),

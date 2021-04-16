@@ -3664,7 +3664,7 @@ _.ExpansionFeatures =
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(182425, {	-- Bulwark of the Stone Legion
-								["cost"] = { { "i", 182426.04, 1 } },	-- LFR Apogee Anima Bead
+								["cost"] = { { "i", 183888.04, 1 } },	-- LFR Apogee Anima Bead
 							}),
 							i(182416, {	-- Claws of the Stone Generals
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
@@ -3694,7 +3694,7 @@ _.ExpansionFeatures =
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
-								["cost"] = { { "i", 182426.04, 1 } },	-- LFR Apogee Anima Bead
+								["cost"] = { { "i", 183888.04, 1 } },	-- LFR Apogee Anima Bead
 							}),
 							i(182388, {	-- Nathrian Assassin's Backbiter
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
@@ -3724,10 +3724,10 @@ _.ExpansionFeatures =
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
 							}),
 							i(182426, {	-- Stonewright's Infused Stonecarver
-								["cost"] = { { "i", 182426.04, 1 } },	-- LFR Apogee Anima Bead
+								["cost"] = { { "i", 183888.04, 1 } },	-- LFR Apogee Anima Bead
 							}),
 							i(182399, {	-- Stonewrought Gargoyles Barrier
-								["cost"] = { { "i", 182426.04, 1 } },	-- LFR Apogee Anima Bead
+								["cost"] = { { "i", 183888.04, 1 } },	-- LFR Apogee Anima Bead
 							}),
 							i(182390, {	-- Talons of the Legion Generals
 								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
