@@ -724,7 +724,6 @@ _.ExpansionFeatures =
 					--]]
 
 					--[[
-					q(44057),	-- A "Noble" Event
 					q(46024),	-- An Urgent Warning
 					q(44239),	-- Echo of a Celestial
 					q(46320),	-- Hope For a Cure

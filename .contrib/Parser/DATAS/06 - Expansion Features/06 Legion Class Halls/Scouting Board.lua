@@ -30,6 +30,12 @@ _.ExpansionFeatures =
 					n(QUESTS, {
 						q(44057, {	-- A "Noble" Event
 							["provider"] = { "i", 140495 },	-- Torn Invitation
+							["cost"] = {
+								{ "i", 140562, 1 },	-- First Half of the Map
+								{ "i", 140496, 1 },	-- Fox Hunt Invitation
+								{ "i", 140561, 1 },	-- List of Invited Nobles
+								{ "i", 140563, 1 },	-- Second Half of the Map
+							},
 						}),
 						un(REMOVED_FROM_GAME, q(43557, {	-- Assault on Violet Hold: Into the Violet Hold(Normal)
 							un(REMOVED_FROM_GAME, i(141164)),	-- Violet Hold Contraband Locker (Normal)
@@ -153,7 +159,21 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 						})),
 						q(44058,  {  -- Volpin the Elusive
-							["sourceQuests"] = { 44057 },	-- A "Noble" Event
+							["qgs"] = {
+								96746,	-- Advisor Sevel <The Earthen Ring>
+								110564,	-- Alonsus Faol <Bishop of Secrets>
+								108515,	-- Archmage Melis <Mistress of Flame>
+								106199,	-- Gakin the Darkbinder <Mission Strategist>
+								90250,	-- Lord Grayson Shadowbreaker <Mission Specialist>
+								98092,	-- Nikki the Gossip <Tales of Adventure and Profit>
+								93568,	-- Siouxsie the Banshee <Mission Specialist>
+								98002,	-- Skylord Omnuron <Mission Specialist>
+								100635,	-- Skyseer Ghrent
+								103023,	-- Tactician Tinderfell <Unseen Path>
+								103732,	-- Tylos Darksight <Illidari Helmsman>
+							},
+							["sourceQuest"] = 44057,	-- A "Noble" Event
+							["coord"] = { 17.4, 31.4, 680 },	-- Suramar
 							["g"] = {
 								i(137573),	-- Reins of the Llothien Prowler
 							},
