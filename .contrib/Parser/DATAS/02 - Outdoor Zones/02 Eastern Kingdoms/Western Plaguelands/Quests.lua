@@ -821,7 +821,7 @@ _.Zones =
 					["sourceQuests"] = {
 						27167,	-- A Mighty Hunger
 						27166,	-- Go Fletch!
-						26926,	-- Victory, For Now
+						27165,	-- Victory, For Now
 					},
 				}),
 				q(27201, {	-- Val'kyr Incursion
