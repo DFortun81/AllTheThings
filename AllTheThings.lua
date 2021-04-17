@@ -7510,7 +7510,7 @@ local itemFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", nil);
+					rawset(t, "retries", 1);
 				end
 			end
 		end
