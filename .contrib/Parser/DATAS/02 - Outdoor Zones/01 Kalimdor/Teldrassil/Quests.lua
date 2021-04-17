@@ -37,12 +37,6 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1581,  {	-- Elixirs for the Bladeleafs
-					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
-					["coord"] = { 55.8, 50.4, 57 },
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ALCHEMY,
-				}),
 				q(2459,  {	-- Ferocitas the Dream Eater
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, 57 },

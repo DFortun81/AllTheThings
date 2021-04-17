@@ -12237,7 +12237,7 @@ RowOnEnter = function (self)
 							end
 						end
 					else
-						table.insert(prereqs, app.CreateQuest(questID));
+						table.insert(prereqs, app.CreateQuest(sourceQuestID));
 					end
 				end
 			end
