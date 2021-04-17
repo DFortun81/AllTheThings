@@ -809,18 +809,27 @@ _.Zones =
 				}),
 				
 				-- Korthia Daily
+				q(63783, {	-- Anima Reclaimation
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.6, 1961 },	-- Korthia
+					["g"] = {
+						i(186017),	-- Progenian Fragment
+					},
+				}),
 				q(63934, {	-- Assail Mail
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178802 },	-- Messenger Mnemis
 					["isDaily"] = true,
-					["coord"] = { 61.4, 22.4, 1961 },
+					["coord"] = { 61.4, 22.4, 1961 },	-- Korthia
 				}),
 				q(63964, {	-- Broker's Bounty: Grimtalon
 				--	TODO: add object localization
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, 1961 },
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
 				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -879,6 +888,12 @@ _.Zones =
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, 1961 },	-- Korthia
+				}),
+				q(63937, {	-- Nasty, Big, Pointy Teeth
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178805 },	-- Emeni
+					["isDaily"] = true,
+					["coord"] = { 59.9, 27.0, 1961 },	-- Korthia
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
