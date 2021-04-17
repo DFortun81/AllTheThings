@@ -1786,11 +1786,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28149,	-- Whispers in the Wind
 				}),
-				ql(q(29934, {	-- To Ravenholdt
-					["provider"] = { "n", 55488 },	-- Corastrasza
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 29802 },	-- A Hidden Message
-				})),
 				q(27299, {	-- Torn Ground
 					["sourceQuests"] = {
 						27374,	-- The Maw of Madness (A)

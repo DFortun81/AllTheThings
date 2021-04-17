@@ -155,12 +155,6 @@ _.Zones =
 						28096,	-- Welcome to the Machine
 					},
 				}),
-				ql(q(30107, {	-- Cluster Clutch
-					["provider"] = { "n", 57777 },	-- Wrathion
-					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 30106 },	-- The Deed is Done
-				})),
 				q(28146, {	-- Coastal Delicacies!
 					["provider"] = { "n", 47551 },	-- Spider-Handler Sarus
 					["coord"] = { 33.2, 73.6, 25 },
@@ -568,18 +562,6 @@ _.Zones =
 						28096,	-- Welcome to the Machine
 					},
 				}),
-				ql(q(30092, {	-- Our Man in Gilneas
-					["provider"] = { "n", 57777 },	-- Wrathion
-					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 29847 },	-- To Catch a Thief
-				})),
-				ql(q(30108, {	-- Our Man in Karazhan
-					["provider"] = { "n", 57777 },	-- Wrathion
-					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 30107 },	-- Cluster Clutch
-				})),
 				q(28115, {	-- Past Their Prime
 					["provider"] = { "n", 47432 },	-- Apothecary Underhill
 					["coord"] = { 29.2, 64.0, 25 },
@@ -627,12 +609,6 @@ _.Zones =
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 1066,	-- Blood of Innocents
 				}),
-				ql(q(30116, {	-- Sharpening Your Fangs
-					["provider"] = { "n", 57777 },	-- Wrathion
-					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 30113 },	-- Victory in the Depths
-				})),
 				q(28636, {	-- Silence of the Dwarves
 					["provider"] = { "n", 49240 },	-- Captain Ironhill's Ghost
 					["coord"] = { 61.6, 84.0, 25 },
@@ -864,12 +840,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2214 },	-- Deathstalker Lesh
 				}),
-				ql(q(29847, {	-- To Catch a Thief
-					["provider"] = { "n", 56375 },	-- Mostrasz
-					["coord"] = { 67.8, 45.2, 25 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 29934 },	-- To Ravenholdt
-				})),
 				q(28330, {	-- Trail of Filth
 					["coord"] = { 48.8, 71.2, 25 },
 					["races"] = HORDE_ONLY,

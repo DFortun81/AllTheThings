@@ -22,11 +22,6 @@ _.Zones =
 					["provider"] = { "n", 113986 },	--
 				}),
 --]]
-				ql(q(30109, {	-- Blood of the Betrayer
-					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 30108 },	-- Our Man in Karazhan
-				})),
 				q(44865, {	-- Butler to the Great
 					["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
 					["lvl"] = 110,
@@ -193,15 +188,6 @@ _.Zones =
 					["coord"] = { 46.9, 75.2, 42 },
 					["sourceQuest"] = 44764,	-- Demon in Disguise
 				}),
-				ql(q(30113, {	-- Victory in the Depths
-					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["classes"] = { ROGUE },
-					["sourceQuest"] = 30109,	-- Blood of the Betrayer
-					["g"] = {
-						i(77947),	-- The Sleeper
-						i(77948),	-- The Dreamer
-					},
-				})),
 				q(44487, {	-- Waterlogged Tome
 					["lvl"] = 110,
 					["coord"] = { 39.1, 73.7, 45 },
