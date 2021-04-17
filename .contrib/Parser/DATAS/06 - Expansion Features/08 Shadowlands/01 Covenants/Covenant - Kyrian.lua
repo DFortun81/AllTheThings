@@ -2612,16 +2612,16 @@ _.ExpansionFeatures =
 									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
 									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
 
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 
 									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
 									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
 
-									{ "i", 183895.04, 1 },	-- LFR Apogee Anima Bead - 194
-									{ "i", 183894.04, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
 									--]]
 						
 							i(177872, {	-- Archon's Guiding Glaive
