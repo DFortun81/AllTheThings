@@ -667,16 +667,16 @@ _.PVP =
 					}),
 					i(31979, {	-- Merciless Gladiator's Felweave Amice
 						["cost"] = {
-							{ "i", 137642, 3 },	-- 3x Mark of Honor
-							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
-							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
+							{ "i", 137642, 2 },	-- 2x Mark of Honor
+							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
+							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
 						},
 					}),
 					i(31980, {	-- Merciless Gladiator's Felweave Cowl
 						["cost"] = {
-							{ "i", 137642, 2 },	-- 2x Mark of Honor
-							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
-							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
+							{ "i", 137642, 3 },	-- 3x Mark of Honor
+							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
+							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
 						},
 					}),
 					i(31981, {	-- Merciless Gladiator's Felweave Handguards

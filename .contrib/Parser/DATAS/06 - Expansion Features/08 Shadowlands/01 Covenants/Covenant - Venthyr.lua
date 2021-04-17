@@ -200,7 +200,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(2548, {	-- Sinfall, Revendreth
 						["coord"] = { 67.1, 21.9, 1699 },	-- Sinfall Reaches
 					}),
@@ -1119,8 +1119,6 @@ _.ExpansionFeatures =
 										}),
 										crit(8, {	-- Dredger Party Supplies
 										}),
-										crit(9, {	-- Generous Gift
-										}),
 										crit(11, {	-- Necrolord Arsenal
 										}),
 										crit(12, {	-- Venthyr Arsenal
@@ -1132,15 +1130,11 @@ _.ExpansionFeatures =
 										}),
 										crit(16, {	-- Vanity Mirror
 										}),
-										crit(19, {	-- Protective Braziers
-										}),
 									}),
 									ach(14681, {	-- Dredger Academy
 										crit(1, {	-- Ardenweald Etiquette
 										}),
 										crit(3, {	-- Maldraxxus Etiquette
-										}),
-										crit(4, {	-- Revendreth Etiquette
 										}),
 										crit(6, {	-- Dredbat Riding
 										}),
@@ -1165,6 +1159,28 @@ _.ExpansionFeatures =
 									ach(14725),		-- We Happy Few
 								}),
 							}),
+							n(QUESTS, {
+								q(63721, {	-- Lord Garridan's Egg
+									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+								q(63720, {	-- Prince Renethal's Egg
+									["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+								q(63718, {	-- Theotar's Egg
+									["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+								q(63719, {	-- Temel's Egg
+									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
+									["repeatable"] = true,
+									["u"] = 19,	-- Noblegarden
+								}),
+							}),
 							n(-908, {	-- Rewards
 								["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 								["g"] = {
@@ -1184,10 +1200,19 @@ _.ExpansionFeatures =
 											crit(5, {	-- Alexandros Mograine
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181616),	-- A Treatise on the Great Battles of Lordaeron
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
+											i(181325),	-- Marrowfused Dagger
 											i(181331),	-- Marrowfused Shield
+											i(181330),	-- Marrowfused Warglaive
 											i(181615),	-- Marching an Army
 											i(181327),	-- Spineforged Tenderizer
+										},
+									}),
+									n(165686, {	-- Ashen Amalgamation
+										["description"] = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court.  Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water.  Put out enough fires, and the rare will spawn.",
+										["g"] = {
+											i(183107),	-- Char (PET!)
 										},
 									}),
 									o(356693, {	-- Baroness Vashj's Extravagant Tribute
@@ -1201,6 +1226,7 @@ _.ExpansionFeatures =
 											}),
 											i(181322),	-- Bonebound Tome
 											i(178894),	-- Decree: Baroness Vashj's Boon
+											i(181330),	-- Marrowfused Warglaive
 											i(181327),	-- Spineforged Tenderizer
 										},
 									}),
@@ -1301,8 +1327,11 @@ _.ExpansionFeatures =
 											}),
 											i(181618),	-- Gorm Quishe Platter
 											i(179509),	-- Grove Warden's Edge
+											i(179533),	-- Grove Warden's Harvester
 											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
+											i(179605),	-- Elderwood Barrier
+											i(179585),	-- Nightwillow Shortbow
 											i(179548),	-- Elderwood Gavel
 										},
 									}),
@@ -1340,6 +1369,9 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181607),	-- Decree: Lady Moonberry's Esteem
+											i(179516),	-- Songwood Staff
+											i(179605),	-- Elderwood Barrier
+											i(179548),	-- Elderwood Gavel
 										},
 									}),
 									o(356728, {	-- Mikanikos' Extravagant Tribute
@@ -1352,7 +1384,17 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181227),	-- Bronze Ceremonial Targe
+											i(181563),	-- Decree: Mikanikos's Boon
+											i(181235),	-- Final Arbiter's Gavel
 											i(181564),	-- Decree: Mikanikos's Esteem
+											i(181230),	-- Pugilist's Chakram
+											i(181226),	-- Bronze Dual-Bladed Glaive
+											i(181232),	-- Cupbearer's Claymore
+											i(181439, {	-- Protective Braziers
+												crit(19, {	-- Protective Braziers
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
@@ -1389,7 +1431,13 @@ _.ExpansionFeatures =
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
+											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
+											i(177238, {	-- Generous Gift
+												crit(9, {	-- Generous Gift
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356744, {	-- Rendle and Cudgelface's Extravagant Tribute
@@ -1406,7 +1454,7 @@ _.ExpansionFeatures =
 											}),
 											i(181780),	-- An Undelivered Tradesman's Shipment
 											i(180962),	-- Sterling-Silver Cudgel
-											i(181315),	-- Bloodfeaster Spiderling											
+											i(181315),	-- Bloodfeaster Spiderling
 											i(180959),	-- Dredger Anklebiter
 											i(180964),	-- Ember Court Barrier
 											i(180956),	-- Axeblade Blunderbuss
@@ -1476,7 +1524,6 @@ _.ExpansionFeatures =
 											i(180957),	-- Batwing Glaive
 										},
 									}),
-									i(183107),	-- Char (PET!) - it looks like this drops from Ashen Amalgamation, probably npcID 165686.  requires having Anima-Infused Waters from Sika's tribute and then putting out fires from the "traditional" decorations until the amalgamation spawns.  TODO: confirm that info and then figure out a way to convey it in ATT
 								},
 							}),
 							n(-961, {	-- Tier 1: A New Court
@@ -1753,6 +1800,11 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 167863 },	-- Tubbins
 									["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
 								}),
+								q(63696, {	-- Grandmaster Vole's Best Friend
+									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
+									["provider"] = { "n", 163019 },	-- Grandmaster Vole
+									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+								}),
 								q(61880, {	-- Honored Attendance
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
@@ -1861,6 +1913,21 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62104, {	-- Restock: Stoneborn Reserves
+									["repeatable"] = true,
+									["provider"] = { "n", 165496 },
+									["coord"] = { 32.1, 41.6, 1525 },	-- Revendreth
+								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
+								}),
+								q(62108, {	-- Restock: Strategic Codices
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, 1525 },
+									["cost"] = {
+										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(60236, {	-- RSVP: Cryptkeeper Kassir
 									["sourceQuests"] = {
 										57928,	-- Atonement Crypt Key
@@ -1949,6 +2016,10 @@ _.ExpansionFeatures =
 								q(63065, {	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
+								}),
+								q(63699, {	-- Sika's Best Friend
+									["provider"] = { "n", 166577 },	-- Sika
+									["coord"] = { 52.6, 82.5, 1533 },	-- Bastion
 								}),
 								q(61898, {	-- Small Bites
 									["minReputation"] = { 2445, FRIENDLY },
@@ -2184,14 +2255,28 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(62205, {	-- Venthyr Etiquette
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183862, 1 } },	-- 1x A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
+									["g"] = {
+										crit(4, {	-- Revendreth Etiquette
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 							}),
 							n(-963, {	-- Tier 3: Court Influencer
+								q(63690, {	-- Alexandros Mograine's Best Friend
+									["provider"] = { "n", 171933 },	-- Alexandros Mograine
+									["coord"] = { 50.4, 67.4, 1536 },	-- Maldraxxus
+								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
 									["g"] = {
-										i(181537, {		-- Guest List Page											
+										i(181537, {		-- Guest List Page
 											crit(16, {		-- Third Guest List Page
 												["achievementID"] = 14679,	-- Party Palace
 											}),
@@ -2326,8 +2411,21 @@ _.ExpansionFeatures =
 										i(182114),	-- Assorted Parts and 'Things'
 									},
 								}),
+								q(60948, {	-- RSVP: The Countess
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
+									["provider"] = { "n", 171106 },	-- The Countess
+									["coord"] = { 58.0, 27.4, 1525 },	-- Revendreth
+									["g"] = {
+										i(176114),	-- RSVP: The Countess
+									},
+								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
+								q(61945, {	-- The Professionals
+									-- ["sourceQuests"] = {  },	-- TODO
+									["provider"] = { "n", 164966 },	-- Temel
+									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								}),
 							}),
 							-- Random, non-collectible items which go into your bags while in the Ember Court
 							i(180296),	-- Shrouded Necromancer Head
@@ -3469,336 +3567,841 @@ _.ExpansionFeatures =
 					n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 55.2, 54.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+						["g"] = bubbleDown({
+							["modID"] = 3,	-- Normal
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
-							i(182425, {	-- Builwark of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+							i(182425, {	-- Bulwark of the Stone Legion
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(182416, {	-- Claws of the Stone Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182414, {	-- Crimson Court Backstabber
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182422, {	-- Dread Inquisitor's Spine
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182424, {	-- Dredbat Repeating Crossbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182398, {	-- Dredfang Ironspitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182394, {	-- Dredwing Barbed Swordbreaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182396, {	-- Hungering Ritualist's Animablade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182397, {	-- Legion General's Glaivewing
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182417, {	-- Mace of Enveloping Sins
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(182388, {	-- Nathrian Assassin's Backbiter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182389, {	-- Nathrian Crusader's Bastard Sword
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182420, {	-- Nathrian Duelist's Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182419, {	-- Nathrian Torchbearer's Stave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182393, {	-- Rod of the Stone Sentinels
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182392, {	-- Sinbearer's Absolution Staff
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182391, {	-- Sinstealer's Sentencing Gavel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182415, {	-- Stoneborn Goliath's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182395, {	-- Stoneborn Terrorblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182426, {	-- Stonewright's Infused Stonecarver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(182399, {	-- Stonewrought Gargoyles Barrier
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(182390, {	-- Talons of the Legion Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(182418, {	-- Torch of Fiery Atonement
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(182423, {	-- Wingdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 						}),
 					}),
 					n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						-- ^ i'm not having this issue, but the modID doesn't seem to be picking up at all.  looking at the individual items shows the 'normal' version of the currencies instead of the LFR version
+						-- and when you look at the currencies in the dungeon journal or in an ATT list, none of the things they buy show up (doesn't appear on LFR or normal currency)
 						["coord"] = { 55.1, 46.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+						["g"] = bubbleDown({
+							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
+							["modID"] = 4,	-- LFR
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
-							i(182425, {	-- Builwark of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+							i(182425, {	-- Bulwark of the Stone Legion
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(182416, {	-- Claws of the Stone Generals
-								["cost"] = { { "i", 183891.04, 1 } },	-- LFR Venerated Anima Spherule
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182414, {	-- Crimson Court Backstabber
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182422, {	-- Dread Inquisitor's Spine
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182424, {	-- Dredbat Repeating Crossbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182398, {	-- Dredfang Ironspitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182394, {	-- Dredwing Barbed Swordbreaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182396, {	-- Hungering Ritualist's Animablade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182397, {	-- Legion General's Glaivewing
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182417, {	-- Mace of Enveloping Sins
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(182388, {	-- Nathrian Assassin's Backbiter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182389, {	-- Nathrian Crusader's Bastard Sword
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182420, {	-- Nathrian Duelist's Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182419, {	-- Nathrian Torchbearer's Stave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182393, {	-- Rod of the Stone Sentinels
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182392, {	-- Sinbearer's Absolution Staff
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182391, {	-- Sinstealer's Sentencing Gavel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182415, {	-- Stoneborn Goliath's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182395, {	-- Stoneborn Terrorblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182426, {	-- Stonewright's Infused Stonecarver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(182399, {	-- Stonewrought Gargoyles Barrier
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(182390, {	-- Talons of the Legion Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(182418, {	-- Torch of Fiery Atonement
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(182423, {	-- Wingdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 						}),
 					}),
 					n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 45.4, 65.0, 1700 },
-						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+						["g"] = bubbleDown({
+							["modID"] = 5,	-- Heroic
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
-							i(182425, {	-- Builwark of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+							i(182425, {	-- Bulwark of the Stone Legion
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(182416, {	-- Claws of the Stone Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182414, {	-- Crimson Court Backstabber
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182422, {	-- Dread Inquisitor's Spine
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182424, {	-- Dredbat Repeating Crossbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182398, {	-- Dredfang Ironspitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182394, {	-- Dredwing Barbed Swordbreaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182396, {	-- Hungering Ritualist's Animablade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182397, {	-- Legion General's Glaivewing
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182417, {	-- Mace of Enveloping Sins
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(182388, {	-- Nathrian Assassin's Backbiter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182389, {	-- Nathrian Crusader's Bastard Sword
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182420, {	-- Nathrian Duelist's Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182419, {	-- Nathrian Torchbearer's Stave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182393, {	-- Rod of the Stone Sentinels
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182392, {	-- Sinbearer's Absolution Staff
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182391, {	-- Sinstealer's Sentencing Gavel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182415, {	-- Stoneborn Goliath's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182395, {	-- Stoneborn Terrorblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182426, {	-- Stonewright's Infused Stonecarver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(182399, {	-- Stonewrought Gargoyles Barrier
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(182390, {	-- Talons of the Legion Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(182418, {	-- Torch of Fiery Atonement
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(182423, {	-- Wingdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 						}),
 					}),
 					n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 40.3, 46.1, 1700 },
-						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+						["g"] = bubbleDown({
+							["modID"] = 6,	-- Mythic
+							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
+						}, {
 							i(182421, {	-- Barbed-Edge of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
-							i(182425, {	-- Builwark of the Stone Legion
-								--["cost"] = { { "x", yyyy, zzzz } },
+							i(182425, {	-- Bulwark of the Stone Legion
+								["cost"] = {
+									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
+									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+								},
 							}),
 							i(182416, {	-- Claws of the Stone Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182414, {	-- Crimson Court Backstabber
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182422, {	-- Dread Inquisitor's Spine
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182424, {	-- Dredbat Repeating Crossbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182398, {	-- Dredfang Ironspitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182394, {	-- Dredwing Barbed Swordbreaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182396, {	-- Hungering Ritualist's Animablade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182397, {	-- Legion General's Glaivewing
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182417, {	-- Mace of Enveloping Sins
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182400, {	-- Master Stonewright's Chisel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
+									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+								},
 							}),
 							i(182388, {	-- Nathrian Assassin's Backbiter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182389, {	-- Nathrian Crusader's Bastard Sword
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182420, {	-- Nathrian Duelist's Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182419, {	-- Nathrian Torchbearer's Stave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182393, {	-- Rod of the Stone Sentinels
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182392, {	-- Sinbearer's Absolution Staff
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182391, {	-- Sinstealer's Sentencing Gavel
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182415, {	-- Stoneborn Goliath's Cleaver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182395, {	-- Stoneborn Terrorblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182426, {	-- Stonewright's Infused Stonecarver
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
+									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+								},
 							}),
 							i(182399, {	-- Stonewrought Gargoyles Barrier
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
+									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+								},
 							}),
 							i(182390, {	-- Talons of the Legion Generals
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(182418, {	-- Torch of Fiery Atonement
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(182423, {	-- Wingdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 						}),
 					}),

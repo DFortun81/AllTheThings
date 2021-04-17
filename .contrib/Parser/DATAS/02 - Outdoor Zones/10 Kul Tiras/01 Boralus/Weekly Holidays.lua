@@ -168,9 +168,9 @@ _.Zones =
 					["g"] = {
 						i(154992, {	-- Brawler's Footlocker
 							["sym"] = {
-								{"select", "npcID", -692},	-- BFA Season 4
+								{"select", "headerID", -692},	-- BFA Season 4
 								{"pop"},	-- Discard the header and acquire the children.
-								{"where", "npcID", -661},	-- Gladiator Gear
+								{"where", "headerID", -661},	-- Gladiator Gear
 								{"pop"},	-- Discard the header and acquire the children.
 							},
 						}),

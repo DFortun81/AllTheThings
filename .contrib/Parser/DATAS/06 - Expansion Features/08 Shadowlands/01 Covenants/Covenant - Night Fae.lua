@@ -204,7 +204,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				})),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(2587, {	-- Ardenweald, Heart of the Forest
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 						["coord"] = { 51.2, 7.8, 1701 },
@@ -252,6 +252,8 @@ _.ExpansionFeatures =
 					}),
 					q(62546, {	-- No Wisp Left Behind (1)
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday (similar to 62536 a couple weeks earlier).
+						-- possibly a Venari requirement? Currently Apprehensive + Rule 4 completed
+						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.6, 39.0, 1701 },
 					}),
@@ -295,6 +297,7 @@ _.ExpansionFeatures =
 					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
+						["sourceQuests"] = { 62544 },	-- From a Dark Place
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.6, 39.0, 1701 },
 					}),
@@ -1110,7 +1113,7 @@ _.ExpansionFeatures =
 								filter(100, {	-- Mounts
 									["coord"] = { 43.4, 33.6, 1565 },
 									-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
-									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7003|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 									["g"] = {
 										i(181317),	-- Dauntless Duskrunner
 										i(180723),	-- Enchanted Wakener's Runestag
@@ -1128,9 +1131,9 @@ _.ExpansionFeatures =
 								}),
 								i(181315),	-- Bloodfeaster Spiderling
 								i(180639),	-- Dusty Sporeflutterer
-								i(181314, {	-- Gulper Soul
-									["questID"] = 62421,	-- Gulper Soul
-								}),
+								--i(181314, {	-- Gulper Soul
+								--	["questID"] = 62421,	-- Gulper Soul
+								--}),
 								i(180628),	-- Pearlwing Heron
 								i(181313, {	-- Snapper Soul
 									["questID"] = 62420,	-- Snapper Soul
@@ -1395,6 +1398,7 @@ _.ExpansionFeatures =
 										i(180959),		-- Dredger Anklebiter
 										i(180960),		-- Shiny-Metal Topped Basher
 										i(180954),		-- Ember Court Barrier
+										i(181316),		-- Silvertip Dredwing
 									}),
 								},
 							}),
@@ -1544,7 +1548,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
-				n(-936, {	-- Soulshape Forms
+				n(-936, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {	-- Soulshape Forms
 					-- TODO: fill in remaining quests that are as yet unknown
 					q(62422, {	-- Ardenmoth Soul
 						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
@@ -1622,7 +1626,7 @@ _.ExpansionFeatures =
 						["description"] = "Drops from random battlegrounds.",
 						["provider"] = { "i", 182184 },	-- Wyvern Soul
 					}),
-				}),
+				})),
 				n(TREASURES, {
 					o(356820, {	-- Large Lunarlight Pod
 						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",

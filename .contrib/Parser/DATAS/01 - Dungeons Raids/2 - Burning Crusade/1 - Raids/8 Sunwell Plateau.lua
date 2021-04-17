@@ -12,7 +12,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			335,	-- Sunwell Plateau
 			336,	-- Shrine of the Eclipse
 		},
-		["coord"] = { 44.28, 45.71, 122 },	-- Sunwell Plateau, Isle of Quel'Danas
+		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
 		["g"] = {
 			n(ZONEDROPS, {
 				--Note!! All items are CRS'ed as of October 25, 2018

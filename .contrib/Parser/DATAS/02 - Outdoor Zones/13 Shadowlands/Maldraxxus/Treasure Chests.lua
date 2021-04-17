@@ -28,7 +28,9 @@ _.Zones =
 					["g"] = {
 						i(184318),	-- Battlecry of Krexus
 						i(183827),	-- Blacksteel Backplate
-						i(183824),	-- Cache of Spare Weapons
+						i(183824, {	-- Cache of Spare Weapons
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+						}),
 						i(183619),	-- Everlasting Boneforged Greataxe
 						i(181800),	-- Standard of the Blackhound Warband
 					},

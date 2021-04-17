@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(105, {	-- Blade's Edge Mountains
+	m(OUTLAND, {
+		m(BLADES_EDGE_MOUNTAINS, {
 			n(ACHIEVEMENTS, {
 				ach(896),	-- A Quest a Day Keeps the Ogres at Bay
 				ach(1276),	-- Blade's Edge Bomberman

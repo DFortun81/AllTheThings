@@ -6,9 +6,9 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 --[[
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(47061),	-- Apocron
 				q(46947),	-- Brutallus
 				q(45969),	-- Defense of the Ancient
@@ -26,6 +26,7 @@ _.Zones =
 				}),
 				q(45473, {	-- A Giant Problem
 					["lvl"] = { 45 },
+					["isWorldQuest"] = true,
 				}),
 				q(46932, {	-- A Tad More Corruption
 					["lvl"] = { 45 },

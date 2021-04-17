@@ -4,15 +4,24 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(42, {	-- Deadwind Pass
+	m(EASTERN_KINGDOMS, {
+		m(DEADWIND_PASS, {
 			n(ZONEDROPS, {
 				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
+					["cr"] = 7372,	-- Deadwind Warlock
+				}),
+				-- #if AFTER TBC
+				i(24480, {	-- Ghostly Essence
+					["timeline"] = { "removed 7.1.0.1233" },
 					["crs"] = {
-						7371,	-- Deadwind Mauler
-						7372,	-- Deadwind Warlock
+						12378,	-- Damned Soul
+						7370,	-- Restless Shade
+						12379,	-- Unliving Caretaker
+						12380,	-- Unliving Resident
+						12377,	-- Wailing Spectre
 					},
 				}),
+				-- #endif
 			}),
 		}),
 	}),

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(10, {	-- Northern Barrens
 			n(ACHIEVEMENTS, {
 				ach(4933, {	-- Northern Barrens Quests

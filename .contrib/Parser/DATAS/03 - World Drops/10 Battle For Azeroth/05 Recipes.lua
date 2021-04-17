@@ -6,13 +6,13 @@ _.WorldDrops =
 {
 	tier(8, {	-- Battle for Azeroth
 		f(200, {	-- Recipes
-			n(-181, {	-- Blacksmithing
+			prof(BLACKSMITHING, {
 				i(166260),	-- Recipe: Monel-Hardened Hoofplates (Rank 3)
 			}),
-			n(-187, {	-- Leatherworking
+			prof(LEATHERWORKING, {
 				i(166313),	-- Recipe: Coarse Leather Barding (Rank 3)
 			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(163027, {	-- Pattern: Embroidered Deep Sea Bag (Rank 1)
 					["description"] = "Dropped by naga.",
 				}),

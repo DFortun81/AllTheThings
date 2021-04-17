@@ -1,7 +1,12 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
-
+-- Everything in this file hasn't been implemented yet.
+local oldI, oldQ, oldAch, oldP = i, q, ach, p;
+i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
+q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
+ach = function(...) return un(NEVER_IMPLEMENTED, oldAch(...)); end
+p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
 _.NeverImplemented =
 {
 	n(QUESTS, {
@@ -23,8 +28,16 @@ _.NeverImplemented =
 			["races"] = ALLIANCE_ONLY,
 			["u"] = NEVER_IMPLEMENTED,
 			["g"] = {
-				i(37586), -- Handful of Treats
+				--i(37586), -- Handful of Treats
 			},
+		}),
+		q(38294, {	-- Sumptuous Fur
+		--	added in 9.0.1 but has WoD title/rewards, is "engineering" category but tailoring rewards?????  move if this quest is ever found
+			["description"] = "Category: |cFFf09f26Engineering|r",
+			["isDaily"] = 1,
+			["_drop"] = { "g" },	-- drop Hexweave Cloth / Primal Spirit
+			["lvl"] = 10,
+			["u"] = NEVER_IMPLEMENTED,
 		}),
 		q(12375, {	-- Candy Bucket
 			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
@@ -32,7 +45,7 @@ _.NeverImplemented =
 			["races"] = HORDE_ONLY,
 			["u"] = NEVER_IMPLEMENTED,
 			["g"] = {
-				i(37586), -- Handful of Treats
+				--i(37586), -- Handful of Treats
 			},
 		}),
 		q(12405, {	-- Candy Bucket
@@ -40,7 +53,7 @@ _.NeverImplemented =
 			["isYearly"] = true,
 			["u"] = NEVER_IMPLEMENTED,
 			["g"] = {
-				i(37586), -- Handful of Treats
+				--i(37586), -- Handful of Treats
 			},
 		}),
 		q(12410, {	-- Candy Bucket
@@ -48,7 +61,7 @@ _.NeverImplemented =
 			["isYearly"] = true,
 			["u"] = NEVER_IMPLEMENTED,
 			["g"] = {
-				i(37586), -- Handful of Treats
+				--i(37586), -- Handful of Treats
 			},
 		}),
 		q(28975, {	-- Candy Bucket
@@ -57,7 +70,7 @@ _.NeverImplemented =
 			["races"] = HORDE_ONLY,
 			["u"] = NEVER_IMPLEMENTED,
 			["g"] = {
-				i(37586), -- Handful of Treats
+				--i(37586), -- Handful of Treats
 			},
 		}),
 		q(31806, {	-- Test Quest
@@ -67,3 +80,6 @@ _.NeverImplemented =
 		}),
 	}),
 };
+
+-- Restore original functionality.
+i, q, ach, p = oldI, oldQ, oldAch, oldP;

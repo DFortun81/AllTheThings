@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(27, {	-- Dun Morogh
 			n(VENDORS, {
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>

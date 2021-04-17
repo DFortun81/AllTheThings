@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(52237, {	-- The Underrot: Restless Horror
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

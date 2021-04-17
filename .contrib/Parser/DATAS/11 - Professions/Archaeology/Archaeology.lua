@@ -1826,7 +1826,7 @@ profession(ARCHAEOLOGY, {
 			i(160753),	-- Sanguinating Totem
 		}),
 	}),
-	n(VENDORS, {	-- These don't actually show in the list for some reason but cause tooltips on the Crate items in vendor windows. Nice!
+	n(VENDORS, {
 		i(142113, {	-- Crate of Arakkoa Archaeology Fragments
 			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 			["g"] = {

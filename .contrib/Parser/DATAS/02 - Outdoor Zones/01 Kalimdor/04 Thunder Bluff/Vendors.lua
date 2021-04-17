@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(88, {	-- Thunder Bluff
 			n(VENDORS, {
 				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>

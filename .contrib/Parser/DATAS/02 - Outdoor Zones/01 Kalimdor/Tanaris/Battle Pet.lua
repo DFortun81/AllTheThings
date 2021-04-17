@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(71, {	-- Tanaris
 			filter(101, {	-- Pet Battle
 				p(484, {	-- Desert Spider
@@ -12,10 +12,6 @@ _.Zones =
 				}),
 				p(430, {	-- Gold Beetle
 					["crs"] = { 61438 },	-- Gold Beetle
-				}),
-				p(1161, {	-- Infinite Whelpling
-					["crs"] = { 68820 },	-- Infinite Whelpling
-					["description"] = "Caverns of Time is located in Eastern Tanaris. This pet can be found within the main cavern and the pathway leading to it.",
 				}),
 				p(431, {	-- Rattlesnake
 					["crs"] = { 61439 },	-- Rattlesnake

@@ -123,6 +123,7 @@ i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
 i(180661);	-- Darktower Parchments: Affliction Most Foul
 i(180660);	-- Darktower Parchments: Instant Polymorphist
+i(181563);	-- Decree: Mikanikos's Boon
 i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
@@ -162,6 +163,7 @@ i(138883);	-- Meryl's Conjured Refreshment
 i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
+i(118425);	-- Nesingwary's Lost Horn
 i(180682);	-- Noble's Wardrobe
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
@@ -175,6 +177,8 @@ i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
 i(180405);	-- Rusty Gargon Chain
 i(165699);	-- Scarlet Herring Lure
+i(116411);	-- Scroll of Protection
+i(116410);	-- Scroll of Speed
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
@@ -182,9 +186,11 @@ i(180684);	-- Sentinel Stonewing
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(180410);	-- Simmiring Draft of Shadows
+i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
+i(119216);	-- Super Sticky Glitter Bomb
 i(15723);	-- Tea with Sugar
 i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop
@@ -195,6 +201,8 @@ i(143855);	-- Twilight Cultist Robe
 i(182198);	-- Undulating Blood Burrower
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
+i(117016);	-- Wand of Arcane Imprisonment
+i(117013);	-- Wand of Lightning Shield
 i(180697);	-- Wing Commanders Insignia
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
@@ -392,6 +400,7 @@ i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
 i(180486);	-- Chiu's Lute
+i(181364);	-- Cluster of Seeds
 i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
@@ -416,6 +425,7 @@ i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(184043);	-- Lost Scroll
 i(173781);	-- Lost Watermelon
+i(182212);	-- Magical Curio
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(183734);	-- Mysteriously Thrumming Orb
@@ -441,6 +451,7 @@ i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
+i(184759);	-- Tasty Purian
 i(181715);	-- Temel's Certificate of Completion
 i(171211);	-- Venthyr's Coin Purse
 i(80513);	-- Vintage Bug Sprayer

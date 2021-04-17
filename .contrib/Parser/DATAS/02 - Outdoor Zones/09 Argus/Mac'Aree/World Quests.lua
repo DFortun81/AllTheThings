@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(48729, {	-- Ataxon
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },

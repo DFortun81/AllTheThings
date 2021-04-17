@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(122, {	-- Isle of Quel'Danas
+	m(EASTERN_KINGDOMS, {
+		m(ISLE_OF_QUELDANAS, {
 			["groups"] = {
 				n(-38, {	-- Profession
 					prof(FISHING, {

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(108, {	-- Terokkar Forest
+	m(OUTLAND, {
+		m(TEROKKAR_FOREST, {
 			n(ACHIEVEMENTS, {
 				ach(1191, {	-- Terror of Terokkar (A)
 					["races"] = ALLIANCE_ONLY,

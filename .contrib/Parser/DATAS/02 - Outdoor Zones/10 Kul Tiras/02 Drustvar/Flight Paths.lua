@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2127, {	-- Anyport, Drustvar [N]
 					["description"] = "Anyport, Drustvar",
 					["coord"] = { 19.2, 43.2, 896 },

@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(1, {	-- Durotar
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(537, {	-- Razor Hill, Durotar
 					["coord"] = { 53.0, 43.6, 1 },
 				}),

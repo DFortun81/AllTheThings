@@ -1330,7 +1330,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out incase they fix their bug, but this is currently obtainable
-					n(-228, {	-- Flight Paths
+					n(FLIGHT_PATHS, {
 						fp(2544, {	-- Mistfall Village
 							["lvl"] = 120,
 							["coord"] = { 38.9, 72.8, 1530 },
@@ -1505,6 +1505,20 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
+					}),
+					n(ZONEDROPS, {
+						i(174368),	-- Pattern: Unsettling Cragscale Boots
+						i(174369),	-- Pattern: Unsettling Cragscale Greaves
+						i(174366),	-- Pattern: Unsettling Dredged Leather Boots
+						i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
+						i(174371),	-- Pattern: Unsettling Seaweave Breeches
+						i(174370),	-- Pattern: Unsettling Seaweave Gloves
+						i(171317),	-- Plans: Unsettling Osmenite Girdle
+						i(171316),	-- Plans: Unsettling Osmenite Legguards
+						i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
+						i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles
+						i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics
+						i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
 					}),
 				}),
 			},

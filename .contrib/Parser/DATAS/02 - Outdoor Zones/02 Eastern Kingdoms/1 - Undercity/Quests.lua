@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(90, {	-- Undercity
 			n(QUESTS, {
 				q(4294,  {	-- ... and a Batch of Ooze
@@ -285,7 +285,7 @@ _.Zones =
 					["coords"] = {
 						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
 						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
-						{ 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien (Silvermoon City)
 					},
 					["races"] = HORDE_ONLY,
 				}),

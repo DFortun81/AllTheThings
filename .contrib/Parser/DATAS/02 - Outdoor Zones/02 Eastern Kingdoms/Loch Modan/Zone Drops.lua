@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(48, {	-- Loch Modan
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, n(1222, {	-- Dark Iron Sapper

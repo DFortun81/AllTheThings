@@ -9,9 +9,9 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
 				["provider"] = { "n", 34484 },	-- Cheerful Draenei Spirit
 				["isYearly"] = true,
-				["coord"] = { 47.6, 55.8, 97 },
+				["coord"] = { 47.6, 55.8, AZUREMYST_ISLE },
 				["races"] = { DRAENEI },
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -105,8 +105,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				["provider"] = { "n", 34483 },	-- Cheerful Blood Elf Spirit
 				["isYearly"] = true,
 				["races"] = { BLOODELF, NIGHTBORNE },
-				["coord"] = { 47.9, 49.4, 94 },
-				["maps"] = { 94 },	-- Eversong Woods
+				["coord"] = { 47.9, 49.4, EVERSONG_WOODS },
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -124,8 +124,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
 				["provider"] = { "n", 35260 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-				["coord"] = { 40.1, 22.2, 108 },
-				["maps"] = { 108 },	-- Terokkar Forest
+				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -133,8 +133,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
 				["provider"] = { "n", 35261 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-				["coord"] = { 40.1, 22.2, 108 },
-				["maps"] = { 108 },	-- Terokkar Forest
+				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(32, {	-- Searing Gorge
 			n(ACHIEVEMENTS, {
 				ach(4910, {	-- Searing Gorge Quests

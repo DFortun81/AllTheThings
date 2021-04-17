@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1850, {	-- Eastern Highmountain (Eagle)
 					["classes"] = { HUNTER },
 					["coord"] = { 56.6, 67.8 },

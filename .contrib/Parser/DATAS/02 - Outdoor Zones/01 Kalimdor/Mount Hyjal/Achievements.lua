@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

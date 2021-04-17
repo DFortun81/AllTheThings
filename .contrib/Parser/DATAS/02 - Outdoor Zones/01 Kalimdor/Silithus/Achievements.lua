@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(81, {	-- Silithus
 			n(ACHIEVEMENTS, {
 				ach(4934, {	-- Silithus Quests

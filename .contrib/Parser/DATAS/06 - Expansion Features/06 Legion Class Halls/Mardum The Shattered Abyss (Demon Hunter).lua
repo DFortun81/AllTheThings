@@ -775,7 +775,6 @@ _.ExpansionFeatures =
 
 
 					-- unconfirmed/unsourced
-					q(44057),	-- A "Noble" Event
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["provider"] = { "n", 108239 },	-- Akama

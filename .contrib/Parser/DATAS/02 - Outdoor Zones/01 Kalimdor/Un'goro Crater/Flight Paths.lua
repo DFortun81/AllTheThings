@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(78, {	-- Un'Goro Crater
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(79, {	-- Marshal's Stand, Un'Goro Crater
 					["coord"] = { 56, 64, 78 },
 				}),

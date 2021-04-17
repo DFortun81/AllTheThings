@@ -30,15 +30,16 @@ _.Zones =
 						}),
 					},
 				}),
-				i(103684, {	-- Scroll of Challenge
-					n(73666, {	-- Archiereus of Flame
-						["description"] = "This is the summonable version of this rare. It drops more things.",
-						["coord"] = { 34.6, 31.6, 554 },
-						["g"] = {
-							i(103982),	-- Burden of Eternity
-							un(REMOVED_FROM_GAME, i(86574)),	-- Elixir of Ancient Knowledge
-						},
-					}),
+				n(73666, {	-- Archiereus of Flame
+					["description"] = "This is the summonable version of this rare. It drops more things.",
+					["coord"] = { 34.6, 31.6, 554 },
+					["cost"] = {
+						{ "i", 103684, 1 },	-- Scroll of Challenge
+					},
+					["g"] = {
+						i(103982),	-- Burden of Eternity
+						un(REMOVED_FROM_GAME, i(86574)),	-- Elixir of Ancient Knowledge
+					},
 				}),
 				n(72775,  {	-- Bufo
 					["questID"] = 33301,

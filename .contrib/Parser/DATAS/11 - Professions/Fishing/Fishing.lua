@@ -102,7 +102,8 @@ profession(FISHING, {
 			i(139406, {	-- Sea Dog Boots
 				["bonusID"] = 1812,
 			}),
-			i(7188),	--  Stormwind Guard Shield
+			i(7188),	-- Stormwind Guard Shield
+			i(7187),	-- VanCleef's Boots
 		}
 	}),
 	n(-217,   {	-- Lures

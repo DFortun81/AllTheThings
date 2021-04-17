@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(95, {	-- Ghostlands
+	m(EASTERN_KINGDOMS, {
+		m(GHOSTLANDS, {
 			filter(101, {	-- Pet Battle
 				p(461, {	-- Larva
 					["crs"] = { 62022 },	-- Larva

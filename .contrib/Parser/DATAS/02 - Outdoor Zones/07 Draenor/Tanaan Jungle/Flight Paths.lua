@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1643, {	-- Aktar's Post, Tanaan Jungle
 					["coord"] = { 26.0, 38.8, 534 },
 				}),

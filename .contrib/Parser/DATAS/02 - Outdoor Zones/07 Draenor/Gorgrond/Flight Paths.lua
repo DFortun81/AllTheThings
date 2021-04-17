@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(543, {	-- Gorgrond
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(1511, {	-- Bastion Rise, Gorgrond
 					["coord"] = { 46.4, 92.4, 543 },
 				}),

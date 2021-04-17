@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(32, {	-- Searing Gorge
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
 					["coord"] = { 41.0, 68.6, 32 },
 				}),

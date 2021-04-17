@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(100, {	-- Hellfire Peninsula
+	m(OUTLAND, {
+		m(HELLFIRE_PENINSULA, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(28, {	-- Nicki Tinytech
-							["coord"] = { 64.4, 49.2, 100 },
+							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 							["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
 						}),
 					},

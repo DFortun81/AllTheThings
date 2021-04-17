@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(89, {	-- Darnassus
 			filter(101, {	-- Pet Battle
 				p(479, {	-- Elfin Rabbit

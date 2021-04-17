@@ -4,17 +4,17 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(94, {	-- Eversong Woods
-			n(-228, {	-- Flight Paths
+	m(EASTERN_KINGDOMS, {
+		m(EVERSONG_WOODS, {
+			n(FLIGHT_PATHS, {
 				fp(625, {	-- Fairbreeze Village, Eversong Woods [Horde]
-					["coord"] = { 44.0, 70.0, 94 },
+					["coord"] = { 44.0, 70.0, EVERSONG_WOODS },
 				}),
 				fp(631, {	-- Falconwing Square, Eversong Woods [Horde]
-					["coord"] = { 46.2, 46.8, 94 },
+					["coord"] = { 46.2, 46.8, EVERSONG_WOODS },
 				}),
 				fp(82, {	-- Silvermoon City [Horde]
-					["coord"] = { 54.4, 50.8, 94 },
+					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
 				}),
 			}),
 		}),

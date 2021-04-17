@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					--[[	raw quest list to check against
 					-- Unknown
@@ -51,11 +51,6 @@ _.Zones =
 					q(53281, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
-					}),
-					q(52404, {	-- Work Order: Solstone
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-						["races"] = ALLIANCE_ONLY,
 					}),
 					]]--
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
@@ -752,7 +747,7 @@ _.Zones =
 					["sym"] = {
 						{"select", "mapID", 895},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
@@ -768,9 +763,9 @@ _.Zones =
 
 						{"select", "mapID", 895},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
-						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.

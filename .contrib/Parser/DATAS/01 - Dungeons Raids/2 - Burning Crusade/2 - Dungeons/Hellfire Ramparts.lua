@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(248, { 	-- Hellfire Ramparts
 		["lvl"] = 57,
 		["mapID"] = 347,
-		["coord"] = { 47.65, 53.57, 100 },	-- Hellfire Ramparts, Hellfire Peninsula
+		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["g"] = {
 			n(QUESTS, {
 				q(29529, {	-- Demons in the Citadel
@@ -167,6 +167,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(529, {	-- Vazruden the Herald
 						["creatureID"] = 17307,
 						["g"] = {
+							n(17536, {	-- Nazan
+								i(33833),	-- Nazan's Riding Crop
+							}),
 							o(185168, { 	-- Reinforced Fel Iron Chest
 								["model"] = 196989,
 								["g"] = {
@@ -200,7 +203,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				}
 			}),
-			n(ZONEDROPS),	-- Note!! Blank so when map merges into the list it's in this spot rather than top
 		},
 	}),
 })};

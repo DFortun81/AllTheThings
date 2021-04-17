@@ -87,11 +87,16 @@ _.ExpansionFeatures =
 							}),
 							crit(5, {	-- Flower Crown
 								["cost"] = {
-									{ "i", 183755, 1 },	-- 1 Aredenweald Wreath
+									{ "i", 183755, 1 },	-- 1 Ardenweald Wreath
 									{ "i", 170554, 5 },	-- 5 Vigil's Torch
 								},
 							}),
-							crit(6),	-- Halo of Purity
+							crit(6, {	-- Halo of Purity
+								["cost"] = {
+									{ "i", 183756, 1 },	-- 1 Floating Circlet
+									{ "i", 173110, 3 },	-- 3 Umbryl
+								},
+							}),
 							crit(7, {	-- Holiday Hat
 								["cost"] = {
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
@@ -142,8 +147,17 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(15),	-- Hitchhiker
-							crit(16),	-- Lovely Candle Display
+							crit(15, {	-- Hitchhiker
+								["cost"] = {
+									{ "i", 184225, 1 },	-- 1 Small Posable Skeleton
+									{ "i", 178061, 5 },	-- 5 Malleable Flesh
+								},
+							}),
+							crit(16, {	-- Lovely Candle Display
+								["cost"] = {
+									{ "i", 184037, 1 },	-- 1 Maldraxxus Candles
+								},
+							}),
 							crit(17, {	-- Shoulder Sprouts
 								["cost"] = {
 									{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
@@ -156,7 +170,12 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(19),	-- Trained Corpselice
+							crit(19, {	-- Trained Corpselice
+								["cost"] = {
+									{ "i", 184038, 1 },	-- 1 Trained Corpselice
+									{ "i", 178061, 3 },	-- 3 Malleable Flesh
+								},
+							}),
 							crit(20, {	-- Trustworthy Doll
 								["cost"] = {
 									{ "i", 181798, 1 },	-- 1 Stuffed Construct
@@ -189,7 +208,11 @@ _.ExpansionFeatures =
 									{ "i", 172934, 10 },	-- 10 Handful of Laestrite Bolts
 								},
 							}),
-							crit(25),	-- Plague Pack
+							crit(25, {	-- Plague Pack
+								["cost"] = {
+									{ "i", 183744, 5 },	-- 5 Superior Parts
+								},
+							}),
 							crit(26, {	-- Safe Fall Pack
 								["cost"] = {
 									{ "i", 183831,  1 },	-- 1 Safe Fall Kit
@@ -202,16 +225,40 @@ _.ExpansionFeatures =
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(28),	-- Vestigial Wings
-							crit(29),	-- Barrel O' Fish
-							crit(30),	-- Underpowered Gravity Pack
+							crit(28, {	-- Vestigial Wings
+								["cost"] = {
+									{ "i", 183744,  3 },	-- 3 Superior Parts
+									{ "i", 178061, 10 },	-- 10 Malleable Flesh
+									{ "i", 172054, 30 },	-- 30 Raw Seraphic Wing
+								},
+							}),
+							crit(29, {	-- Barrel O' Fish
+								["cost"] = {
+									{ "i", 173032, 5 },	-- 5 Lost Sole
+									{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
+									{ "i", 173034, 5 },	-- 5 Silvergill Pike
+									{ "i", 173035, 5 },	-- 5 Pocked Bonefish
+									{ "i", 173036, 5 },	-- 5 Spinefin Piranha
+								},
+							}),
+							crit(30, {	-- Underpowered Gravity Pack
+								["description"] = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
+								["cost"] = {
+									{ "i", 169610,  3 },	-- 3 S.P.A.R.E. Crate
+									{ "i", 166970, 10 },	-- 10 Energy Cell
+								},
+							}),
 							crit(31, {	-- Butterflies
 								["cost"] = {
 									{ "i", 183828, 1 },	-- 1 Friendly Bugs
 									{ "i", 178061, 3 },	-- 3 Malleable Flesh
 								},
 							}),
-							crit(32),	-- Spare Weapon
+							crit(32, {	-- Spare Weapon
+								["cost"] = {
+									{ "i", 183824, 1 },	-- 1 Cache of Spare Weapons
+								},
+							}),
 							crit(33, {	-- Faction Flag
 								["cost"] = {
 									{ "i", 183830,  1 },	-- 1 Do It Yourself Flag Kit
@@ -1301,70 +1348,70 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 178061, 5 },	-- Malleable Flesh
 										{ "i", 172092, 1 },	-- Pallid Bone
-										{ "c", 1813, 750 },	-- 750x Anima (not shown in-game)
+										{ "c", 1813, 750 },	-- 750 Reservoir Anima
 									},
 								}),
 								i(181282, {	-- Mu'dud (PET!)
 									["cost"] = {
 										{ "i", 178061, 10 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
-										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
+										{ "c", 1813, 1250 },	-- 1250 Reservoir Anima
 									},
 								}),
-								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
+								-- Note: have to use ["name"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
 								-- This section is kinda redundant with achievement 14751, but if they add more followers later that aren't added to the achieve, then
 								-- they can be added here.  Also think this is more useful than just having all these quests in the HQT file.
 								q(58410, {
-									["title"] = "Construct Body: Atticus",
+									["name"] = "Construct Body: Atticus",
 								}),
 								q(60041, {	-- Chordy is different from the others in that there is no specific quest with his name on it, but we want to have him in the list of constructs, and 60041 (Build-A-Bomination) is the one that gives you Chordy
-									["title"] = "Construct Body: Chordy",
+									["name"] = "Construct Body: Chordy",
 								}),
 								q(57597, {
-									["title"] = "Construct Body: Flytrap",
+									["name"] = "Construct Body: Flytrap",
 								}),
 								q(57608, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Gas Bag",
+									["name"] = "Construct Body: Gas Bag",
 								}),
 								q(58416, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Guillotine",
+									["name"] = "Construct Body: Guillotine",
 								}),
 								q(58411, {
-									["title"] = "Construct Body: Iron Phillip",
+									["name"] = "Construct Body: Iron Phillip",
 								}),
 								q(60216, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Mama Tomalin",
+									["name"] = "Construct Body: Mama Tomalin",
 								}),
 								q(57611, {
-									["title"] = "Construct Body: Marz",
+									["name"] = "Construct Body: Marz",
 								}),
 								q(58415, {
-									["title"] = "Construct Body: Miru",
+									["name"] = "Construct Body: Miru",
 								}),
 								q(58413, {
-									["title"] = "Construct Body: Naxx",
+									["name"] = "Construct Body: Naxx",
 								}),
 								q(57604, {
 									["sourceQuests"] = { 59615 },	-- Every Dog Has Its Day
-									["title"] = "Construct Body: Neena",
+									["name"] = "Construct Body: Neena",
 								}),
 								q(57601, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Professor",
+									["name"] = "Construct Body: Professor",
 								}),
 								q(57605, {
-									["title"] = "Construct Body: Roseboil",
+									["name"] = "Construct Body: Roseboil",
 								}),
 								q(57600, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Sabrina",
+									["name"] = "Construct Body: Sabrina",
 								}),
 								q(58414, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Toothpick",
+									["name"] = "Construct Body: Toothpick",
 								}),
 							},
 						}),
@@ -1763,8 +1810,27 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-928, {	-- Tier 4: Forged Friends
-							-- n(QUESTS, {
-							-- }),
+							n(QUESTS, {
+								q(57634, {	-- Bring Your Own
+									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
+									["provider"] = { "n", 159199 },    -- Iron Phillip
+									["coord"] = { 55.5, 68.4, 1536 },	-- Maldraxxus
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(62276, {	-- Drink to the Dead
+									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
+									["provider"] = { "n", 158298 },    -- Naxx
+									["coord"] = { 54.8, 68.7, 1536 },	-- Maldraxxus
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(61638, {	-- Iron Solution
+									["provider"] = { "n", 167150 },	-- Rathan
+									["coord"] = { 55.1, 68.8, 1536 },
+									["description"] = "Becomes available after you research Abomination Factory Tier 4 in your sanctum.",
+								}),
+							}),
 							-- n(VENDORS, {
 							-- }),
 						}),
@@ -1993,6 +2059,9 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 1000 } },
 							}),
 							i(180277),	-- Battlefront Ration Key
+							i(184037, {	-- Maldraxxus Candles
+								["description"] = "These become available after you build rank 5 Abomination table.",
+							}),
 							i(178547),	-- Questionable Fried Poultry
 							i(178546),	-- Questionable Meat Product
 							i(178535),	-- Suspicious Slime Shot

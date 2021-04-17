@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
 			n(RARES, {
 				-- n(50747, {	-- Tix

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(17, {	-- Blasted Lands
 			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests

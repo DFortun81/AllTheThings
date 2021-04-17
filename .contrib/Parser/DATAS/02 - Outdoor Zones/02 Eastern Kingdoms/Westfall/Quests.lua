@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(52, {	-- Westfall
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message

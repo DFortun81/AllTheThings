@@ -21,11 +21,11 @@ _.Holidays =
 							10943, 	-- Children's Week
 						},
 						["coords"] = {
-							{ 88.56, 50.23, 100 },
+							{ 88.56, 50.23, HELLFIRE_PENINSULA },
 						},
 						["maps"] = {
-							100,	-- Hellfire Peninsula
-							111,	-- Shattrath City
+							HELLFIRE_PENINSULA,
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -39,11 +39,11 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 88.56, 50.23, 100 },
+							{ 88.56, 50.23, HELLFIRE_PENINSULA },
 						},
 						["maps"] = {
-							100,	-- Hellfire Peninsula
-							111,	-- Shattrath City
+							HELLFIRE_PENINSULA,
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -295,14 +295,14 @@ _.Holidays =
 						},
 						["isYearly"] = true,
 						["coords"] = {
-							{ 44.17, 58.84, 108 },	-- Path to Ring
-							{ 40.76, 60.39, 108 },	-- Tunnel Exit
-							{ 43.11, 63.94, 108 },	-- Tunnel Exit
-							{ 39.57, 64.41, 108 },	-- Dornaa taken to Ring of Observance
+							{ 44.17, 58.84, TEROKKAR_FOREST },	-- Path to Ring
+							{ 40.76, 60.39, TEROKKAR_FOREST },	-- Tunnel Exit
+							{ 43.11, 63.94, TEROKKAR_FOREST },	-- Tunnel Exit
+							{ 39.57, 64.41, TEROKKAR_FOREST },	-- Dornaa taken to Ring of Observance
 						},
 						["maps"] = {
-							108,	-- Terrokar Forest
-							111,	-- Shattrath City
+							TEROKKAR_FOREST,
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
@@ -318,11 +318,9 @@ _.Holidays =
 							10968,	-- Call on the Farseer
 						},
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Elekk Training Collar
@@ -397,11 +395,9 @@ _.Holidays =
 							10963,	-- Time to Visit the Caverns
 						},
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							{	-- Elekk Training Collar
@@ -633,13 +629,13 @@ _.Holidays =
 							10962,	-- Time to Visit the Caverns
 						},
 						["coords"] = {
-							{ 27.10, 29.86, 103 },	-- Path to Farseer Nobundo
-							{ 30.67, 27.87, 103 },	-- Visit Farseer Nobundo
-							{ 31.30, 27.65, 103 },	-- Speak to Farseer Nobundo
+							{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
+							{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
+							{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
 						},
 						["maps"] = {
-							103,	-- The Exodar
-							111,	-- Shattrath City
+							THE_EXODAR,
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -649,11 +645,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -691,11 +685,9 @@ _.Holidays =
 						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["coords"] = {
-							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+							{ 75.08, 47.87, SHATTRATH_CITY },
 						},
-						["maps"] = {
-							111,	-- Shattrath City
-						},
+						["maps"] = { SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
 					},
@@ -758,12 +750,12 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 19.43, 51.31, 102 },	-- Salandria taken to Sporeggar
-							{ 19.28, 51.34, 102 },	-- Speak to Hch'uu
+							{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
+							{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
 						},
 						["maps"] = {
-							102,	-- Zangarmarsh
-							111,	-- Shattrath City
+							ZANGARMARSH,
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -818,12 +810,12 @@ _.Holidays =
 							10943, 	-- Children's Week
 						},
 						["coords"] = {
-							{ 31.44, 57.46, 107 },	-- Dornaa taken to Aeris Landing
-							{ 31.49, 57.61, 107 },	-- Speak to Jheel
+							{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
+							{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
 						},
 						["maps"] = {
-							107,	-- Nagrand [Outlands]
-							111,	-- Shattrath City
+							NAGRAND,
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -992,11 +984,11 @@ _.Holidays =
 							10953,	-- Visit the Throne of the Elements
 						},
 						["coords"] = {
-							{ 76.61, 81.23, 110 },	-- Elite Tauren Chieftain
+							{ 76.61, 81.23, SILVERMOON_CITY },
 						},
 						["maps"] = {
-							110,	-- Silvermoon City
-							111,	-- Shattrath City
+							SILVERMOON_CITY,
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1504,12 +1496,12 @@ _.Holidays =
 							10954,	-- Jheel is at Aeris Landing!
 						},
 						["coords"] = {
-							{ 56.87, 40.77, 103 },	-- Seat of the Naaru
-							{ 58.04, 41.50, 103 },	-- Speak to O'ros
+							{ 56.87, 40.77, THE_EXODAR },	-- Seat of the Naaru
+							{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
 						},
 						["maps"] = {
-							103,	-- The Exodar
-							111,	-- Shattrath City
+							THE_EXODAR,
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1594,7 +1586,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							71,		-- Tanaris
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1617,7 +1609,7 @@ _.Holidays =
 						["maps"] = {
 							71,		-- Tanaris
 							75,		-- Tanaris: Caverns of Time
-							111,	-- Shattrath City
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1634,12 +1626,12 @@ _.Holidays =
 							10942,	-- Children's Week
 						},
 						["coords"] = {
-							{ 60.39, 23.36, 107 },	-- Salandria taken to the Throne of Elements
-							{ 60.65, 22.11, 107 },	-- Speak to Elementalist Sharvak
+							{ 60.39, 23.36, NAGRAND },	-- Salandria taken to the Throne of Elements
+							{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
 						},
 						["maps"] = {
-							107,	-- Nagrand [Outlands]
-							111,	-- Shattrath City
+							NAGRAND,
+							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

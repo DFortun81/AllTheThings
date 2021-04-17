@@ -1451,7 +1451,7 @@ _.Zones =
 					["sourceQuest"] = 12955,	-- Eliminate the Competition
 				}),
 				q(13082, {	-- The Boon of A'dal
-					["maps"] = { 111 },	-- Shattrath City
+					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 53.9, 44.7, 80 },
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuest"] = 13081,	-- The Will of the Naaru

@@ -740,11 +740,11 @@ _.Zones =
 							["g"] = {
 								i(164577, {	-- Warfronts Equipment Cache
 									["sym"] = {
-										{"select", "npcID", -10057},	-- War Effort
+										{"select", "headerID", -10057},	-- War Effort
 										{"pop"},	-- Discard the War Effort Header and acquire the children.
 										{"where", "mapID", 14},	-- Arathi Highlands
 										{"pop"},	-- Discard the Map Header and acquire the children.
-										{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
+										{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 										{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 										{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 										{"modID", 6},	-- iLvl 370
@@ -760,11 +760,11 @@ _.Zones =
 						i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 							["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 							["sym"] = {
-								{"select", "npcID", -10057},	-- War Effort
+								{"select", "headerID", -10057},	-- War Effort
 								{"pop"},	-- Discard the War Effort Header and acquire the children.
 								{"where", "mapID", 14},	-- Arathi Highlands
 								{"pop"},	-- Discard the Map Header and acquire the children.
-								{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
+								{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 								{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								{"modID", 5},	-- iLvl 340

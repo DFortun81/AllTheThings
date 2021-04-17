@@ -69,10 +69,11 @@ _.Zones =
 				n(136393, {	-- Bloodwing Bonepicker
 					["questID"] = 51079,
 					["coords"] = {
-						{ 56.7, 56.0, 864 },	-- start of path if in the future we have a way to attach description coords
-						{ 59.5, 50.8, 864 },	-- start of another path up the mountain
+					--	{ 56.7, 56.0, 864 },	-- start of path if in the future we have a way to attach description coords
+					--	{ 59.5, 50.8, 864 },	-- start of another path up the mountain
 						{ 56.0, 53.5, 864 },	-- actual rare/nest coord
 					},
+					["cr"] = 136390,	-- Enormous Egg
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(6, {	-- Bloodwing Bonepicker
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			n(ACHIEVEMENTS, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)

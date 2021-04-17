@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2589, {	-- Ardenweald, Claw's Edge
 					["coord"] = { 51.3, 71.3, 1565 },
 				}),

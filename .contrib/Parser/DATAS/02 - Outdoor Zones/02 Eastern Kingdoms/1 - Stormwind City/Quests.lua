@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(84, {	-- Stormwind City
 			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
@@ -429,11 +429,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(58496, {	-- An Unwelcome Advisor
-					["description"] = "This quest is automatically offered.",
-					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47202, {	-- A Personal Message
 					["sourceQuests"] = { 46275 },	-- A Kingdom's Heart
 					["provider"] = { "n", 119357 },	-- Anduin Wrynn
@@ -524,6 +519,11 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(58496, {	-- An Unwelcome Advisor
+					["description"] = "This quest is automatically offered.",
+					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(58912, {	-- An Urgent Meeting
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is
@@ -548,6 +548,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9516)),	-- Astral Knot Blouse
 						un(REMOVED_FROM_GAME, i(7511)),	-- Astral Knot Robe
 					},
+				}),
+				q(58983, {	-- Battle for Azeroth: Tides of War (Shadowlands version)
+					["sourceQuests"] = { 58912 },	-- An Urgent Meeting
+					["altQuests"] = { 46727 },	-- Tides of War
+					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["coord"] = { 85.2, 32.1, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27353, {	-- Blessings of the Elements
 					["sourceQuests"] = { 27270 },	-- An Audience with the Farseer
@@ -579,10 +586,16 @@ _.Zones =
 				q(60959, {	-- Burning Crusade: Onward to Adventure in Outland
 					["sourceQuests"] = { 60120 },	-- Burning Crusade: To Outland!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
+				}),
+				q(60120, {	-- Burning Crusade: To Outland!
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29100, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29156 },	-- The Troll Incursion
@@ -607,6 +620,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = NEVER_IMPLEMENTED,
 				}),
+				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(168,   {	-- Collecting Memories
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
 					["coord"] = { 65.2, 21.2, 84 },
@@ -629,15 +648,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32469, {	-- Crystal Clarity
-					["sourceQuests"] = { 32470 },	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
+					["sourceQuests"] = { 32470 },	-- Light Camera Action
 					["coord"] = { 61.2, 22.8, 84 },
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
-							i(122674),	-- S.E.L.F.I.E. Camera MkII
-						}),
+						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
 					},
 				}),
 				q(44463, {	-- Demons Among Them
@@ -871,6 +888,7 @@ _.Zones =
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -886,10 +904,15 @@ _.Zones =
 					},
 				}),
 				q(32470, {	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
 					["coord"] = { 61.2, 22.8, 84 },
+					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 155856, 1 },	-- Iron Box
+						{ "i", 4406, 1 },	-- Standard Scope
+						{ "i", 3593, 1 },	-- Russet Belt
+					},
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
@@ -974,6 +997,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(63926)),	-- Reconstructing Hauberk
 						un(REMOVED_FROM_GAME, i(63925)),	-- Scavenger Bracers
 					},
+				}),
+				q(60125, {	-- Mists of Pandaria: To Pandaria!
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
@@ -1376,12 +1405,6 @@ _.Zones =
 					["coord"] = { 27.6, 21.2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(58983, {	-- Tides of War (Shadowlands version)
-					["sourceQuests"] = { 58912 },	-- An Urgent Meeting
-					["provider"] = { "n", 163219 },	-- Captain Garrick
-					["coord"] = { 85.2, 32.1, 84 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(42782, {	-- To Be Prepared
 					["sourceQuests"] = { 40519 },	-- The Legion Returns
 					["provider"] = { "n", 107934 },	-- Recruiter Lee
@@ -1394,16 +1417,6 @@ _.Zones =
 				q(29102, {	-- To Fort Livingston
 					["provider"] = { "n", 52654 },	-- Bwemba
 					["coord"] = { 25.9, 29.2, 84 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(60120, {	-- Burning Crusade: To Outland!
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.26, 17.32, 84 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(60125, {	-- To Pandaria!
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28827, {	-- To the Depths
@@ -1576,12 +1589,13 @@ _.Zones =
 				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
 					["sourceQuests"] = { 60096 },	-- Wrath of the Lich King: To Northrend!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(25, {	-- Hillsbrad Foothills
 			n(VENDORS, {
 				n(2480,  {	-- Bro'kin <Alchemy Supplies>

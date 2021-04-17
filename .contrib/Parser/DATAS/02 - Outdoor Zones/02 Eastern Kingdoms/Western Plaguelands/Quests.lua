@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(22, {	-- Western Plaguelands
 			n(QUESTS, {
 				q(5093, {	-- A Call to Arms: The Plaguelands!
@@ -128,13 +128,6 @@ _.Zones =
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, 22 },
 					["sourceQuest"] = 27001,	-- This Means WAR (Wild Arachnid Roundup)
-				}),
-				q(43153, {	-- An Eye for a Scepter
-					["sourceQuest"] = 43100,	-- Finding the Scepter
-					["classes"] = { WARLOCK },
-					["coord"] = { 69.2, 79.0, 22 },
-					["lvl"] = 98,
-					["provider"] = { "n", 109698 },	-- Calydus
 				}),
 				q(27090, {	-- Andorhal, Once and For All
 					["provider"] = { "n", 45129 },	-- Lurid
@@ -828,7 +821,7 @@ _.Zones =
 					["sourceQuests"] = {
 						27167,	-- A Mighty Hunger
 						27166,	-- Go Fletch!
-						26926,	-- Victory, For Now
+						27165,	-- Victory, For Now
 					},
 				}),
 				q(27201, {	-- Val'kyr Incursion

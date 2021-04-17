@@ -22,7 +22,7 @@ namespace ATT
             /// <param name="fields">The fields.</param>
             public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
             {
-                if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
+                if (data.TryGetValue("f", out object fObj) && Convert.ToInt64(fObj) == 60)
                 {
                     WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
                     ExportField(builder, data, fields, "questID");

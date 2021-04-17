@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(27, {	-- Dun Morogh
 			m(469,  {	-- New Tinkertown [Above]
 				n(RARES, {

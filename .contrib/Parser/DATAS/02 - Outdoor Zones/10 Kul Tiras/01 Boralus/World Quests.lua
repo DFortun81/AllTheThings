@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52047, {	-- Against the Storm
 						["lvl"] = 120,

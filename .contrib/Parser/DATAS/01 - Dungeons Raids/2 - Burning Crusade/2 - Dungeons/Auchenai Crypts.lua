@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			256,	-- Halls of Hereafter
 			257,	-- Bridge of Souls
 		},
-		["coord"] = { 34.34, 65.61, 108 },	-- Auchenai Crypts, Terokkar Forest
+		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
 		["g"] = {
 			n(QUESTS, {
 				["g"] = {

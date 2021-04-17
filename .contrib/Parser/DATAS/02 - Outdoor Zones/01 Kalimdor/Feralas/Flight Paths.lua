@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(69, {	-- Feralas
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(568, {	-- Camp Ataya, Feralas
 					["coord"] = { 41.4, 15.4, 69 },
 				}),

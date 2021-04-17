@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(63, {	-- Ashenvale
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
@@ -335,6 +335,7 @@ _.Zones =
 				}),
 				q(13806, {	-- Demon Duty
 					["provider"] = { "n", 11820 },	-- Locke Okarr
+					["coord"] = { 73.8, 61.6, 63 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26449,	-- Never Again!
 				}),
@@ -496,7 +497,7 @@ _.Zones =
 					["provider"] = { "n", 34242 },	-- Guardian Gurtar
 					["races"] = HORDE_ONLY,
 					["coord"] = { 89.5, 48.6, 63 },
-					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
+					--	["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					["g"] = {
 						i(56655),	-- Bloodcup Slippers
 						i(56656),	-- Faithful Treads

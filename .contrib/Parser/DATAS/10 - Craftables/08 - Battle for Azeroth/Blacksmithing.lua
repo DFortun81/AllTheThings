@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
-		n(-181, {	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(100, {	-- Mounts
 				i(158887, {	-- Monelite Reinforced Chassis
 					i(153594),	-- Xiwyllag ATV

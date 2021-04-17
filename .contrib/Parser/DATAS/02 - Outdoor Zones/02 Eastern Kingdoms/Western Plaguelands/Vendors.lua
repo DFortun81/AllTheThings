@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(22, {	-- Western Plaguelands
 			n(VENDORS, {
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>

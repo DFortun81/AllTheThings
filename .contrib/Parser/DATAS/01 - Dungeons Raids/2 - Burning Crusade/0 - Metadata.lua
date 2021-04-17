@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(2,
-			{	-- Burning Crusade
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(2, {	-- Burning Crusade
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+	}),
+}

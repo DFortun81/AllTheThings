@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(210, {	-- The Cape of Stranglethorn
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers

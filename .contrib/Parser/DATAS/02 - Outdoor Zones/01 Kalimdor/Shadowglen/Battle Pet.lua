@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(57, {	-- Teldrassil
 			m(460, {	-- Shadowglen
 				filter(101, {	-- Pet Battle

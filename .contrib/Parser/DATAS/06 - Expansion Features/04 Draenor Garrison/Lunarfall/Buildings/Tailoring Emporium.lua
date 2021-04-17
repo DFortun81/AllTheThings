@@ -17,6 +17,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 84776 },	-- Aerun
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(36643, {	-- Your First Tailoring Work Order
+								["provider"] = { "n", 77382 },	-- Christopher Macdonald
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(VENDORS, {
 							n(77382, { 	-- Christopher Macdonald <Tailor>

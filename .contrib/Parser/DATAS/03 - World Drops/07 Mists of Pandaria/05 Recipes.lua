@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(5, {	-- Mists of Pandaria
 		f(200, {	-- Recipes
-			n(-181, {	-- Blacksmithing
+			prof(BLACKSMITHING, {
 				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses
 					["spellID"] = 0,
 					["g"] = {
@@ -15,7 +15,7 @@ _.WorldDrops =
 					},
 				}),
 			}),
-			n(-183, {	-- Engineering
+			prof(ENGINEERING, {
 				i(100910, { 	-- Schematic: Chief Engineer Jard's Journal
 					recipe(139197),	-- Advanced Refrigeration Unit
 					recipe(139176),	-- Jard's Peculiar Energy Source
@@ -24,14 +24,14 @@ _.WorldDrops =
 					recipe(139192),	-- Sky Golem
 				}),
 			}),
-			n(-185, {	-- Inscription
+			prof(INSCRIPTION, {
 				i(102534),	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
 				i(104228),	-- Technique: Glyph of Angels
 				i(104234),	-- Technique: Glyph of Spirit Raptors
 				i(104229),	-- Technique: Glyph of the Sha
 				i(104223),	-- Technique: Glyph of the Unbound Elemental
 			}),
-			n(-186, {	-- Jewelcrafting
+			prof(JEWELCRAFTING, {
 				i(83811),	-- Design: Agile Primal Diamond
 				i(83815),	-- Design: Austere Primal Diamond
 				i(83825),	-- Design: Burning Primal Diamond
@@ -49,7 +49,7 @@ _.WorldDrops =
 				i(83926),	-- Design: Revitalizing Primal Diamond
 				i(95470),	-- Design: Serpent's Heart
 			}),
-			n(-187, {	-- Leatherworking
+			prof(LEATHERWORKING, {
 				i(102513, {	-- Pattern: Drums of Rage
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 				}),
@@ -59,7 +59,7 @@ _.WorldDrops =
 				i(95467),	-- Pattern: Magnificence of Leather
 				i(95468),	-- Pattern: Magnificence of Scales
 			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(100863, {	-- Pattern: Celestial Cloth and Its Uses
 					["spellID"] = 0,	-- Not learnable.
 					["g"] = {

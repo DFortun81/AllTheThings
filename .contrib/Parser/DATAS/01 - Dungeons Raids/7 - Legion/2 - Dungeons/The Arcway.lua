@@ -7,7 +7,7 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 749,
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(43639, {	-- The Arcway: Arcanist Down
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
@@ -94,7 +94,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard
@@ -177,7 +177,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard

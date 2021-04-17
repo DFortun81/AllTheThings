@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 59.0, 31.3, 641 },
 		["lvl"] = 98,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42745, {	-- Darkheart Thicket: A Burden to Bear
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
@@ -78,7 +78,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
 					i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
 					i(134405),	-- Cloak of Fading Echoes
@@ -149,7 +149,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
 						i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes
@@ -223,7 +223,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
 						i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes

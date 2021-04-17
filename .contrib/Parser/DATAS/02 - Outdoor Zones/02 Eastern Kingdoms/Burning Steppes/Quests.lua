@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(36, {	-- Burning Steppes
 			n(QUESTS, {
 				q(28316, {	-- A Deal With a Dragon
@@ -840,7 +840,10 @@ _.Zones =
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 28252 },	-- The Kodocaller's Horn
+					["sourceQuests"] = {
+						28252,	-- The Kodocaller's Horn
+						28246,	-- Strategic Cuts
+					},	
 					["g"] = {
 						i(64517),	-- Helm of Serendipity
 						i(64516),	-- Improvised Breastplate

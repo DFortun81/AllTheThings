@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-228, {	-- Flight Master
+			n(FLIGHT_PATHS, {
 				fp(1574, {	-- Joz's Rylaks, Nagrand
 					["coord"] = { 62.2, 32.8, 550 },
 				}),

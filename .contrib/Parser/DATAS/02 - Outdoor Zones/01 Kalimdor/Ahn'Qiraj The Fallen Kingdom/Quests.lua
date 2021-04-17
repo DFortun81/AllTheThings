@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
 			n(QUESTS, {
 				q(8700, {	-- Band of Unending Life

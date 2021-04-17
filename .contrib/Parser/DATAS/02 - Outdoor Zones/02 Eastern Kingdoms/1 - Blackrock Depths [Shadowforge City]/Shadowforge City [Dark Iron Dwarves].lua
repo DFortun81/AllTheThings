@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdom
+	m(EASTERN_KINGDOMS, {
 		m(1186, {	-- Blackrock Depths: Shadowforge City
 			q(51486, {	-- Fer the Alliance
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
@@ -99,18 +99,18 @@ _.Zones =
 						n(-507, {	-- The Hand of Gul'dan [Outlands]
 							["collectible"] = true,
 							["questID"] = 53599,
-							["coord"] = { 50.77, 35.28, 104 },
+							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 104 },	-- Shadowmoon Valley [Outlands]
+							["maps"] = { SHADOWMOON_VALLEY },
 						}),
 						n(-508, {	-- Skald [Outlands]
 							["collectible"] = true,
 							["questID"] = 53597,
-							["coord"] = { 72.41, 17.65, 105 },
+							["coord"] = { 72.41, 17.65, BLADES_EDGE_MOUNTAINS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 105 },	-- Blade's Edge Mountain
+							["maps"] = { BLADES_EDGE_MOUNTAINS },
 						}),
 					},
 				}),

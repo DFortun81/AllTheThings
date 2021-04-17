@@ -565,6 +565,7 @@ _.Zones =
 					["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
 					["coord"] = { 36.2, 36.8, 864 },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
 						i(169394), 	-- Richly Appointed Drape
 						title(324),	-- Trashmaster
@@ -1216,22 +1217,6 @@ _.Zones =
 						i(161178),	-- Lastwind Handlers
 						i(161179),	-- Exiled Veteran's Handlers
 						i(161180),	-- Scorching Sands Handlers
-					},
-				}),
-				q(53476, {	-- The Great Sea Scrolls -- TODO: redo
-					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
-					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
-					--	azewrong
-						i(180028),	-- Bartered Vrykul Cowl
-						i(180029),	-- Bartered Vrykul Facemask
-						i(180027),	-- Bartered Vrykul Hood
-						i(180030),	-- Bartered Vrykul Warhelm
 					},
 				}),
 				q(47499, {	-- The Grinning Idols

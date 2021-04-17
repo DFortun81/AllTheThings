@@ -35,7 +35,7 @@ _.WorldEvents =
 			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["g"] = {
-			n(-492, {	-- Illusions
+			filter(103, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
 				un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 				un(29, i(128649)),	-- Illusion: Winter's Grasp
@@ -400,16 +400,12 @@ _.WorldEvents =
 				},
 				["itemID"] = 105751,
 			},
-			un(9, i(142000, {	-- Rhinestone Sunglasses
-				["groups"] = {
-				},
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item.",
-			})),
+			un(9, i(142000)),	-- Rhinestone Sunglasses
 			i(14617),	-- Sawbones Shirt
 			i(112935),	-- Tusk of Mannoroth
 			i(141006),	-- The First Satyr's Spaulders
 			i(169430, {	--  Unclaimed Black Market Container
-				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 169430}},
+				["sym"] = {{"select", "headerID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
 			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},

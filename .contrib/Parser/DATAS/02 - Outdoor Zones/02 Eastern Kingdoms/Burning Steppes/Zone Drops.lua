@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(36, {	-- Burning Steppes
 			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling (PET!)

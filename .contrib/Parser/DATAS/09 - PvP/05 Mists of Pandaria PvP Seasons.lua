@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10041, {	-- Mists of Pandaria
-		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\MoP",
+		["icon"] = asset("Expansion_MOP"),
 		["g"] = {
 			n(-675, {	-- Malevolent Gladiator: Season 12
 				n(-661, {	-- Gladiator PvP Gear

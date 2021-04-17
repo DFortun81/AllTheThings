@@ -54,35 +54,6 @@ namespace ATT
         }
 
         /// <summary>
-        /// Get an integer from the dictionary.
-        /// </summary>
-        /// <param name="dict">The dictionary.</param>
-        /// <param name="key">The key.</param>
-        /// <returns>The integer.</returns>
-        public static int GetInt(this Dictionary<string, object> dict, string key)
-        {
-            return dict.TryGetValue(key, out object o) ? Convert.ToInt32(o) : 0;
-        }
-
-        /// <summary>
-        /// Try to get an integer from the dictionary.
-        /// </summary>
-        /// <param name="dict">The dictionary.</param>
-        /// <param name="key">The key.</param>
-        /// <param name="value">The variable to write to.</param>
-        /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out int value)
-        {
-            if (dict.TryGetValue(key, out object o))
-            {
-                value = Convert.ToInt32(o);
-                return true;
-            }
-            value = 0;
-            return false;
-        }
-
-        /// <summary>
         /// Try to get a long from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>

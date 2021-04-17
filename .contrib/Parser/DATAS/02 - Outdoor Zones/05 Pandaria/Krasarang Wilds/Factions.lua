@@ -641,7 +641,7 @@ _.Zones =
 							q(32330, {	-- What's in the Box?
 								["sourceQuests"] = { 32329 },	-- Get My Results!
 								["provider"] = { "n", 16802 },	-- Lor'themar Theron
-								["coords"] = { 54.0, 20.4, 110 },
+								["coords"] = { 54.0, 20.4, SILVERMOON_CITY },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32136, {	-- Work Order: Fuel

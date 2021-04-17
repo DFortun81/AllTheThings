@@ -16,14 +16,14 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["coords"] = {
 							{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
 							{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
-							{ 47.64, 47.31, 94 },	-- Falconwing Square, Eversong Woods
+							{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
 							{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
 						},
 						["maps"] = {
 							1,	-- Durotar
 							7,	-- Mulgore
 							18,	-- Tirisfal Glades
-							94,	-- Eversong Woods
+							EVERSONG_WOODS,
 						},
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -138,7 +138,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{	-- Noblegarden Vendor
 						["npcID"] = 32836,	-- Noblegarden Vendor
 						["coords"] = {
-							{ 49.01, 51.19, 97 },	-- Azure Watch, Azuremyst Isle
+							{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 							{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
 							{ 43.03, 65.32, 37 },	-- Goldshire, Elwynn Forest
 							{ 54.11, 50.81, 27 },	-- Kharanos, Dun Morogh
@@ -147,7 +147,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 							27,	-- Dun Morogh
 							37,	-- Elwynn Forest
 							57,	-- Teldrassil
-							97,	-- Azuremyst Isle
+							AZUREMYST_ISLE,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {

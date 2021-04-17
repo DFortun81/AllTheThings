@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(69, {	-- Feralas
 			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
@@ -86,7 +86,10 @@ _.Zones =
 				q(25423, {	-- Ancient Suffering
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, 69 },
-					["description"] = "You need to pick up |cFFFFD700The Lost Apprentice|r for this quest to appear.",
+					["sourceQuests"] = {
+						25643,	-- The Darkmist Ruins
+						25350,	-- Lost Apprentice
+					},
 				}),
 				q(2979, {	-- Dark Ceremony
 					["u"] = REMOVED_FROM_GAME,
@@ -697,7 +700,10 @@ _.Zones =
 				q(25422, {	-- The Darkmist Legacy
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, 69 },
-					["description"] = "You need to pick up |cFFFFD700The Lost Apprentice|r for this quest to appear.",
+					["sourceQuests"] = {
+						25643,	-- The Darkmist Ruins
+						25350,	-- Lost Apprentice
+					},
 				}),
 				q(25643, {	-- The Darkmist Ruins
 					["provider"] = { "n", 5390 },	-- Sage Palerunner

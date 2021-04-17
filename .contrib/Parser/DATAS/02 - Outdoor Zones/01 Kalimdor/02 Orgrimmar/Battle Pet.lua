@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(85, {	-- Orgrimmar
 			filter(101, {	-- Pet Battle
 				p(467, {	-- Dung Beetle

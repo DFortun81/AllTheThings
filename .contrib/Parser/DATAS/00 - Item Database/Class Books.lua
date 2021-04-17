@@ -185,3 +185,6 @@ i(147580);	-- Tome of the Hybrid Beast
 i(147770);	-- Tome of the PTR Beast
 i(136790);	-- Tome of the Wilds: Track Beasts
 i(16665);	-- Tome of Tranquilizing Shot
+
+-- 9.0
+i(184901);	-- Broker Traversal Enhancer

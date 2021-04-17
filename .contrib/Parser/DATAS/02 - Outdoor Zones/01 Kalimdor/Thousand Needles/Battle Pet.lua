@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(64, {	-- Thousand Needles
 			filter(101, {	-- Pet Battle
 				p(398, {	-- Black Rat

@@ -419,7 +419,6 @@ _.ExpansionFeatures =
 								i(112802),	-- Seal of Sullied Mending
 								i(112801),	-- Signet of Durable Dreams
 							}),
-							i(122674),	-- S.E.L.F.I.E. Cameria MkII
 							i(118191),	-- Archmage Vargoth's Spare Toy
 							i(128310),	-- Burning Blad
 							i(128311),	-- Coaalfist Gronnling

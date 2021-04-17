@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(64, {	-- Thousand Needles
 			n(RARES, {
 				n(5933,  {	-- Achellios the Banished

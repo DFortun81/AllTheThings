@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(260, { 	-- The Slave Pens
 		["lvl"] = 59,
 		["mapID"] = 265,
-		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
+		["coord"] = { 48.95, 35.84, ZANGARMARSH },	-- The Slave Pens, Zangarmarsh
 		["g"] = {
 			n(QUESTS, {
 				q(29564, {	-- A Brother Betrayed

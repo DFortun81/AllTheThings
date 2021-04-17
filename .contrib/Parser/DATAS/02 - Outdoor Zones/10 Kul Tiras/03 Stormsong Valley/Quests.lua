@@ -7,8 +7,6 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {
-				--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
-				--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
 					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
@@ -1261,13 +1259,13 @@ _.Zones =
 									i(155187),	-- Dread Corsair Shoulderplates
 									i(155178),	-- Tidespeaker Circlet
 									i(155188),	-- Tidespeaker Mantle
-									i(155189),	-- Stormchaser Pauldrons	
+									i(155189),	-- Stormchaser Pauldrons
 									i(155179),	-- Stormchaser Coif
 								},
 						}),
 						i(175303),	-- Tidespeaker Circlet (no azerite version)
 						i(175328),	-- Tidespeaker Mantle (no azerite version)
-						i(175304),	-- Stormchaser Coif (no azerite version)	
+						i(175304),	-- Stormchaser Coif (no azerite version)
 						i(175329),	-- Stormchaser Pauldrons (no azerite version)
 						i(175305),	-- Darkwater Hood (no azerite version)
 						i(175326),	-- Darkwater Shoulderpads (no azerite version)
@@ -1299,7 +1297,7 @@ _.Zones =
 								},
 						}),
 						i(175364),	-- Darkwater Tunic (no azerite version)
-						i(175343),	-- Darkwater Shoulderguards (no azerite version) 
+						i(175343),	-- Darkwater Shoulderguards (no azerite version)
 						i(175362),	-- Dread Corsair Breastplate (no azerite version)
 						i(175345),	-- Dread Corsair Pauldrons (no azerite version)
 						i(175342),	-- Tidespeaker Amice (no azerite version)
@@ -1417,17 +1415,30 @@ _.Zones =
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+					["_drop"] = { "g" },
 					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(163863),	-- Bartered Vrykul Cowl
+									i(163864),	-- Bartered Vrykul Facemask
+									i(163862),	-- Bartered Vrykul Hood
+									i(163865),	-- Bartered Vrykul Warhelm
+								},
+						}),
 					--	azewrong
 						i(180028),	-- Bartered Vrykul Cowl
 						i(180029),	-- Bartered Vrykul Facemask
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
+					},
+					["maps"] = {
+						863, 	-- Nazmir
+						864, 	-- Vol'dun
+						895,	-- Tiragarde Sound
+						--942,	-- Stormsong Valley
+						862,	-- Zuldazar
+						896,	-- Drustvar
 					},
 				}),
 				q(50743, {	-- The Immediate Problem

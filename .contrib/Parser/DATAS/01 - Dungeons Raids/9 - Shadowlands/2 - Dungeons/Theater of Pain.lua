@@ -14,7 +14,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 		["lvl"] = { 50 },
 		["g"] = {
-			--n(-34, {	-- World Quests
+			--n(WORLD_QUESTS, {
 			--}),
 			n(QUESTS, {
 			--	keep quests section here for ["maps"] organization

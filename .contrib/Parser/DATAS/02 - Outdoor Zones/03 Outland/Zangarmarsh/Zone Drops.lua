@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(102, {	-- Zangarmarsh
+	m(OUTLAND, {
+		m(ZANGARMARSH, {
 			n(ZONEDROPS, {
 				i(29960, {	-- Captured Firefly
-					["crs"] = { 20197 },	-- Bogflare Needler
+					["cr"] = 20197,	-- Bogflare Needler
 				}),
 			}),
 		}),

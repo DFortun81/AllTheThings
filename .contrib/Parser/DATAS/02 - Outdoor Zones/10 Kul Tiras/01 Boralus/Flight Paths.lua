@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2278, {	-- Mariner's Row, Tiragarde Sound [Alliance]
 					["description"] = "Mariner's Row, Tiragarde Sound",
 					["coord"] = { 76.6, 72.6, 1161 },

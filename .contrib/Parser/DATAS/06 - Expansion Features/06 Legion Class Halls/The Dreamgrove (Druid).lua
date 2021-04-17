@@ -907,7 +907,6 @@ _.ExpansionFeatures =
 						}),
 					}),
 
-					q(44057),	-- A "Noble" Event
 					q(44237),	-- Ancients of War
 					q(44235),	-- Essence of Fate
 					q(44236),	-- Essence of Fate

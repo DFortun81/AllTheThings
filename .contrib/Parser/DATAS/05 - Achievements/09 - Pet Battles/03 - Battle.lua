@@ -29,7 +29,7 @@ _.Achievements =
 					--["coord"] = { 34.8, 59.6, 554 },
 				}),
 				crit(5,  {	-- Sewer Creeper
-					--["coord"] = { 30.6, 41.8, 104 },
+					--["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- The Countess
 					--["coord"] = { 49.8, 57.0, 207 },
@@ -62,7 +62,7 @@ _.Achievements =
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
 				crit(5,  {	-- Bloodknight Antari (Shadowmoon Valley, Outland)
-					["coord"] = { 30.6, 41.8, 104 },
+					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- Bordin Steadyfist (Deepholm)
 					["coord"] = { 49.8, 57.0, 207 },
@@ -122,16 +122,16 @@ _.Achievements =
 					["coord"] = { 65.0, 42.7, 418 },
 				}),
 				crit(25, {	-- Morulu The Elder (Shattrath City)
-					["coord"] = { 59.0, 70.0, 111 },
+					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				}),
 				crit(26, {	-- Narrok (Nagrand, Outland)
-					["coord"] = { 61.0, 49.4, 107 },
+					["coord"] = { 61.0, 49.4, NAGRAND },
 				}),
 				crit(27, {	-- Nearly Headless Jacob (Crystalsong Forest)
 					["coord"] = { 50.2, 59.0, 127 },
 				}),
 				crit(28, {	-- Nicki Tinytech (Hellfire Peninsula)
-					["coord"] = { 64.4, 49.2, 100 },
+					["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 				}),
 				crit(29, {	-- Obalis (Uldum)
 					["coord"] = { 56.6, 41.8, 249 },
@@ -140,7 +140,7 @@ _.Achievements =
 					["coord"] = { 59.0, 77.0, 115 },
 				}),
 				crit(31, {	-- Ras'an (Zangarmarsh)
-					["coord"] = { 17.2, 50.6, 102 },
+					["coord"] = { 17.2, 50.6, ZANGARMARSH },
 				}),
 				crit(32, {	-- Seeker Zusshi (Townlong Steppes)
 					["coord"] = { 36.2, 52.2, 388 },

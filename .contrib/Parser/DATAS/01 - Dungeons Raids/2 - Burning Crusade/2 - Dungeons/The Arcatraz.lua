@@ -10,13 +10,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			270,	-- Stasis Block: Maximus
 			271,	-- Containment Core
 		},
-		["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
+		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["g"] = {
 			n(QUESTS, {
 				q(29675, {	-- Hey There Dalliah
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 74.4, 57.7, 109 },	-- The Arcatraz, Netherstorm
+					["coord"] = { 74.4, 57.7, NETHERSTORM },	-- The Arcatraz, Netherstorm
 				}),
 				q(29681, {	-- Maximum Security Breakout
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
@@ -50,6 +50,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
+				i(29460),	-- Ethereum Prison Key
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
 					["crs"] = { 20880 },	-- Eredar Deathbringer
 				}),
@@ -58,6 +59,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				i(23606, {	-- Plans: Felsteel Leggings
 					["crs"] = { 20900 },	-- Unchained Doombringer
+				}),
+				i(24488, {	-- Third Key Fragment
+					["coord"] = { 59.0, 24.8, 270 },
+					["cr"] = 22892,	-- Third Fragment Guardian
 				}),
 			}),
 			d(1,  {	-- Normal

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(248, {	-- Apothecary Camp, Howling Fjord
 					["coord"] = { 26.0, 25.0, 117 },
 				}),

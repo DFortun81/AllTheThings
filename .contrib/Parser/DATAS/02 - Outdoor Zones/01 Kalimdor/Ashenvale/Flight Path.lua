@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(63, {	-- Ashenvale
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(28,  {	-- Astranaar, Ashenvale
 					["coord"] = { 34.41, 47.99, 63 },
 				}),

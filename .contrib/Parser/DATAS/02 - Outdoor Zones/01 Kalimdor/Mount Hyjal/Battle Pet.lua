@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk

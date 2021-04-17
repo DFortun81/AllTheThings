@@ -232,9 +232,13 @@ _.Zones =
 						crit(11, {	-- Smorgas the Feaster
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
-						i(181265),	-- Corpselouse Larva
-						i(181266),	-- Feasting Larva
+						i(181265),	-- Corpselouse Larva (PET!)
+						i(181266),	-- Feasting Larva (PET!)
 						i(184299),	-- Goresoaked Carapace
+						i(184038, {	-- Trained Corpselice
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+							["description"] = "This will only drop for Necrolords that have built the rank 4 Abomination table.",
+						}),
 					},
 				}),
 				n(162586, { -- Tahonta

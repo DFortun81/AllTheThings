@@ -16,7 +16,7 @@ _.Zones =
 					["creatureID"] = 91483,	-- Fen Tao
 					["coord"] = { 46.9, 45.2, 624 },
 				}),
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, 624 },
 					}),
@@ -1420,7 +1420,7 @@ _.Zones =
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
 									["collectible"] = false,
 									["spellID"] = 0,
-									["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
+									["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 									["g"] = {
 										recipe(156587),	-- Alchemical Catalyst
 										recipe(156585),	-- Crescent Oil
@@ -1516,9 +1516,9 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9913, -661 },
 								{"pop"},
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 							},
 							["g"] = {
 								i(116775, {	-- Breezestrider Stallion
@@ -1757,9 +1757,9 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9913, -660 },
 								{"pop"},
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
@@ -1767,16 +1767,16 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 },
 								{"pop"},
-								{"exclude", "npcID", -320 },	-- Exclude Head Header
-								{"exclude", "npcID", -321 },	-- Exclude Shoulder Header
-								{"exclude", "npcID", -323 },	-- Exclude Chest Header
-								{"exclude", "npcID", -327 },	-- Exclude Hands Header
-								{"exclude", "npcID", -329 },	-- Exclude Legs Header
-								{"exclude", "npcID", -384 },	-- Exclude Neck
-								{"exclude", "npcID", -385 },	-- Exclude Finger
-								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								{"exclude", "headerID", -320 },	-- Exclude Head Header
+								{"exclude", "headerID", -321 },	-- Exclude Shoulder Header
+								{"exclude", "headerID", -323 },	-- Exclude Chest Header
+								{"exclude", "headerID", -327 },	-- Exclude Hands Header
+								{"exclude", "headerID", -329 },	-- Exclude Legs Header
+								{"exclude", "headerID", -384 },	-- Exclude Neck
+								{"exclude", "headerID", -385 },	-- Exclude Finger
+								{"exclude", "headerID", -386 },	-- Exclude Tinket
 								-- Need to exclude the back slot because Blizzard messed it up and put the Wild Combatant's Gear on this vendor too instead of Warmongering Combatant's Gear
-								{"exclude", "npcID", -322 },	-- Exclude Back Header
+								{"exclude", "headerID", -322 },	-- Exclude Back Header
 							},
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>

@@ -12,8 +12,8 @@ _.ExpansionFeatures =
 			["g"] = {
 				gt(254, {	-- Brewhouse
 					["description"] = "Click this once per day.",
-					["coord"] = { 55, 56.5, 709 },
 					["questID"] = 43974,
+					["coord"] = { 55, 56.5, 709 },
 					["g"] = {
 						i(139561, {	-- Legend of the Monkey King
 							artifact(959),	-- Brewmater Monk Hidden Appearance
@@ -724,7 +724,6 @@ _.ExpansionFeatures =
 					--]]
 
 					--[[
-					q(44057),	-- A "Noble" Event
 					q(46024),	-- An Urgent Warning
 					q(44239),	-- Echo of a Celestial
 					q(46320),	-- Hope For a Cure

@@ -116,6 +116,19 @@ _.Zones =
 					["questID"] = 38679,
 					["coord"] = { 58.5, 25.3, 534 },
 				}),
+				o(241657, {	-- Jeweled Arakkoa Effigy
+					["questID"] = 38732,
+					["coord"] = { 31.4, 31.1, 534 },
+					["g"] = {
+						i(127413, {	-- Jeweled Arakkoa Effigy
+							["g"] = {
+								i(127415),	-- Eye of Anzu
+								i(127414),	-- Eye of Rukhmar
+								i(127416),	-- Eye of Sethe
+							},
+						}),
+					},
+				}),
 				o(241434, {	-- Lodged Hunting Spear
 					["questID"] = 38593,
 					["coord"] = { 54.8, 69.31, 534 },

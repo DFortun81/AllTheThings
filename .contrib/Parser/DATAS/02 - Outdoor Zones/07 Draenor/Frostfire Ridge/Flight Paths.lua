@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1387, {	-- Bladespire Citadel, Frostfire Ridge
 					["coord"] = { 24.4, 37.2, 525 },
 				}),

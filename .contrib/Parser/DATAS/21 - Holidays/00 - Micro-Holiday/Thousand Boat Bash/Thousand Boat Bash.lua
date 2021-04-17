@@ -9,7 +9,7 @@ _.Holidays =
 		["u"] = 22,	-- Micro-Holiday Filter
 		["maps"] = { 64 },	-- Thousand Needles
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(45808),	-- Beach Ball Bash
 				q(45806),	-- Boat Tour
 				q(45807),	-- Garbage Fishing

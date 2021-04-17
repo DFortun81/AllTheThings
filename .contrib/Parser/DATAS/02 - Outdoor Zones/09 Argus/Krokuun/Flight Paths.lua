@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1976, {	-- Destiny Point, Krokruun
 					["description"] = "Destiny Point, Krokruun",
 					["coord"] = { 62.7, 49.1 },

@@ -356,7 +356,7 @@ _.Zones =
 							recipe(193300),	-- Foxflower (Rank 3)
 						},
 					}),
-					q(40025, {	-- Teeeny Bite Marks
+					q(40025, {	-- Teeny Bite Marks
 						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = { 40024 },	-- Foxflower Sample
 						["provider"] = { "i", 129137 },	-- Nibbled Foxflower Stem

@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 706, 707, 708 },
 		["coord"] = { 52.5, 45.3, 634 },	-- Maw of Souls, Stormheim
 		["groups"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -54,7 +54,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(96759, e(1663, {	-- Helya
 					ach(10807),	-- Maw of Souls
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -106,7 +106,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(96759, e(1663, {	-- Helya
 					ach(10808),	-- Heroic: Maw of Souls
 					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
-					i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
+				--	i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3) (Not confirmed)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(136696, {	-- Recipe: Terrorspike
 						["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
@@ -114,7 +114,7 @@ _.Instances = { tier(7, {	-- Legion
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -183,7 +183,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle

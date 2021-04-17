@@ -1,5 +1,7 @@
 root = true
 
+trim_trailing_whitespace = true
+
 [*.lua]
 end_of_line = crlf
 insert_final_newline = true

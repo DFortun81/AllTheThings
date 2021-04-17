@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(17, {	-- Blasted Lands
 			n(QUESTS, {
 				q(26172, {	-- A Bloodmage's Gotta Eat Too

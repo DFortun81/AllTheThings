@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(88, {	-- Thunder Bluff
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(22, {	-- Thunder Bluff, Mulgore
 					["coord"] = { 47.06, 49.59, 88 },
 					["races"] = HORDE_ONLY,

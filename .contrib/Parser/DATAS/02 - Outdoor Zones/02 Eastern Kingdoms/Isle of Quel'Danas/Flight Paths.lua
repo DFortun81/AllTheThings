@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(122, {	-- Isle of Quel'Danas
-			n(-228, {	-- Flight Paths
+	m(EASTERN_KINGDOMS, {
+		m(ISLE_OF_QUELDANAS, {
+			n(FLIGHT_PATHS, {
 				fp(213, {	-- Shattered Sun Stage Area
-					["coord"] = { 48.4, 25.2, 122 },
+					["coord"] = { 48.4, 25.2, ISLE_OF_QUELDANAS },
 				}),
 			}),
 		}),

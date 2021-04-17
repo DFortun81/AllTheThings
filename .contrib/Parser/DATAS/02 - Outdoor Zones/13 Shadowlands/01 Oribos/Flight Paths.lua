@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2395, {	-- Oribos
 					["coord"] = { 60.7, 68.6, 1670 },
 				}),

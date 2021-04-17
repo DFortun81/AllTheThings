@@ -15,6 +15,12 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
+				prof(ENCHANTING, {
+					q(40265, {	-- A Touch of Magic
+						["sourceQuests"] = { 39903 },	-- An Enchanting Home
+						["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+					}),
+				}),
 				prof(FISHING, {
 					n(-10067, {	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -173,33 +179,29 @@ _.Zones =
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					i(129122, {	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
+					q(40040, {	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
-						["groups"] = {
+						["provider"] = { "i", 129122 },	-- Felwort Sample
+						["g"] = {
 							recipe(193307),	-- Felwort [Rank 1]
 						},
 					}),
-					i(129120, {	-- Fjarnskaggl Sample
-						["questID"] = 40029,	-- Fjarnskaggl Sample
+					q(40029, {	-- Fjarnskaggl Sample
 						["requireSkill"] = HERBALISM,
-						["groups"] = {
+						["provider"] = { "i", 129120 },	-- Fjarnskaggl Sample
+						["g"] = {
 							recipe(193301),	-- Fjarnskaggl [Rank 1]
 						},
 					}),
-					i(129138, {	-- Ram's-Horn Trowel
-						["questID"] = 40030,	-- Ram's-Horn Trowel
-						["sourceQuests"] = {
-							40029,	-- Fjarnskaggl Sample
-						},
+					q(40030, {	-- Ram's-Horn Trowel
 						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40029,	-- Fjarnskaggl Sample
+						["provider"] = { "i", 129138 },	-- Ram's-Horn Trowel
 					}),
-					i(129142, {	-- Runed Journal Page
-						["questID"] = 40032,	-- The Missing Page
-						["sourceQuests"] = {
-							40031,	-- Vrykul Herblore
-						},
+					q(40032, {	-- The Missing Page
 						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40031,	-- Vrykul Herblore
+						["provider"] = { "i", 129142 },		-- Runed Journal Page
 					}),
 				}),
 				prof(INSCRIPTION, {

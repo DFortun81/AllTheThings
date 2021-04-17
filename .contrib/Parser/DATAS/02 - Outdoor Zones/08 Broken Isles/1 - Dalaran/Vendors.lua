@@ -647,10 +647,10 @@ _.Zones =
 						i(157796, {	-- Purified Titan Essence
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {
-								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+								{ "select", "creatureID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 								{ "pop" },	-- Discard the header and acquire the children.
 								{ "is", "itemID" },	-- Select the Items.
-								{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
+								{ "exclude", "itemID", 154879, 157796, 151709 },	-- Exclude the Purified Titan Essence, Awoken Titan Essence, and Recipe: Felslate Anchor
 							},
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]

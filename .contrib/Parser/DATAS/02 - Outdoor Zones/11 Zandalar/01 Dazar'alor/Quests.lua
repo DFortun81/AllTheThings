@@ -17,77 +17,71 @@ _.Zones =
 					["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
 						i(165728, {	-- Outpost Upgrade: The Great Seal
-							["questID"] = 54226,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable
 							["g"] = {
 								mi(2106, {	-- Upgrade: The Great Seal
-									["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
-									["questID"] = 54294,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(54225, {	-- Mission Report: The Great Seal
-									["sourceQuests"] = { 54294 },	-- Upgrade: The Great Seal Mission Complete
-									["provider"] = { "n", 138706 },		-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+									["g"] = {
+										q(54225, {	-- Mission Report: The Great Seal
+											["provider"] = { "n", 138706 },	-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+										}),
+									},
 								}),
 								q(54231, {	-- Outpost Upgrade: The Great Seal
 									["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
 									["coord"] = { 58.4, 62.6, 862 },
 								}),
 							},
 						}),
 						i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
-							["questID"] = 54259,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2108, {	-- Upgrade: Vulpera Hideaway
-									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 54259 },	-- Mission Start Trigger
-								}),
-								q(54258, {	-- Mission Report: Vulpera Hideaway
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = { },	-- Upgrade: Vulpera Hideaway Mission Complete
+									["g"] = {
+										q(54258, {	-- Mission Report: Vulpera Hideaway
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+										}),
+									},
 								}),
 								q(54260, {	-- Outpost Upgrade: Vulpera Hideaway
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 54258 },	-- Mission Report: Vulpera Hideaway
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 54258 },		-- Mission Report: Vulpera Hideaway
+									["coord"] = { 58.4, 62.6, 862 },
 								}),
 							},
 						}),
 						i(165750, {	-- Outpost Upgrade: Zul'jan Ruins
-							["questID"] = 54238,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2107, {	-- Upgrade: Zul'jan Ruins
-									["questID"] = 54297,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 54238 },	-- Mission Start Trigger
-								}),
-								q(54239, {	-- Mission Report: Zul'jan Ruins
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									["sourceQuests"] = { 54297 },	-- Upgrade: Zul'jan Ruins Mission Complete
+									["g"] = {
+										q(54239, {	-- Mission Report: Zul'jan Ruins
+											["provider"] = { "n", 138704 },		-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+										}),
+									},
 								}),
 								q(54240, {	-- Outpost Upgrade: Zul'jan Ruins
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 54239 },	-- Mission Report: Zul'jan Ruins
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 54239 },		-- Mission Report: Zul'jan Ruins
+									["coord"] = { 58.4, 62.6, 862 },
 								}),
 							},
 						}),
@@ -97,14 +91,14 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1967, {	-- Hillcrest Pasture
-									["questID"] = 53743,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52478, {	-- Mission Report: Hillcrest Pasture
-									["sourceQuests"] = { 53743 },	-- Hillcrest Pasture Mission Complete
-									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
-									["races"] = HORDE_ONLY,
+									["g"] = {
+										q(52478, {	-- Mission Report: Hillcrest Pasture
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(52479, {	-- Hillcrest Pasture
 									["sourceQuests"] = { 52478 },	-- Mission Report: Hillcrest Pasture
@@ -120,16 +114,15 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1965, {	-- Mudfisher Cove
-									["altQuests"] = { 53125 },	-- Mission Report: Into The Wicker
-									["questID"] = 53745,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52313, {	-- Mission Report: Mudfisher Cove
-								--	["sourceQuests"] = { 53745 },	-- Mudfisher Cove Mission Complete
-									["altQuests"] = { 53125 },	-- Mission Report: Into The Wicker
-									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
-									["races"] = HORDE_ONLY,
+									["g"] = {
+										q(52313, {	-- Mission Report: Mudfisher Cove
+											["altQuests"] = { 53125 },	-- Mission Report: Into The Wicker
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(52314, {	-- Mudfisher Cove
 								--	["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
@@ -144,7 +137,7 @@ _.Zones =
 									["g"] = {
 										q(53125, {	-- Mission Report: Into The Wicker
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -163,16 +156,15 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1963, {	-- Stonefist Watch
-									["altQuests"] = { 53081 },	-- Mission Report: Spare Parts
-									["questID"] = 53740,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52221, {	-- Mission Report: Stonefist Watch
-								--	["sourceQuests"] = { 53740 },	-- Stonefist Watch Mission Complete
-									["altQuests"] = { 53081 },	-- Mission Report: Spare Parts
-									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
-									["races"] = HORDE_ONLY,
+									["g"] = {
+										q(52221, {	-- Mission Report: Stonefist Watch
+											["altQuests"] = { 53081 },	-- Mission Report: Spare Parts
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(52222, {	-- Stonefist Watch
 								--	["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
@@ -187,7 +179,7 @@ _.Zones =
 									["g"] = {
 										q(53081, {	-- Mission Report: Spare Parts
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -201,22 +193,20 @@ _.Zones =
 							},
 						}),
 						i(162534, {	-- Scouting Report: Stonetusk Watch
-							--["questID"] = ,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2067, {	-- Stonetusk Watch
-									["altQuests"] = { 53100 },	-- Giant Slaying
-									["questID"] = 53742,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52776, {	-- Mission Report: Stonetusk Watch
-								--	["sourceQuests"] = { 53742 },	-- Stonetusk Watch Mission Complete
-									["altQuests"] = { 53100 },	-- Giant Slaying
-									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+									["g"] = {
+										q(52776, {	-- Mission Report: Stonetusk Watch
+											["altQuests"] = { 53100 },	-- Giant Slaying
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+										}),
+									},
 								}),
 								q(52777, {	-- Stonetusk Watch
 								--	["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
@@ -231,7 +221,7 @@ _.Zones =
 									["g"] = {
 										q(53100, {	-- Mission Report: Giant Slaying
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -245,23 +235,20 @@ _.Zones =
 							},
 						}),
 						i(162536, {	-- Scouting Report: Swiftwind Post
-							--["questID"] = ,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1964, {	-- Swiftwind Post
-									["altQuests"] = { 53102 },	-- Mission Report: Nature Calls
-									["questID"] = 53744,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
-								}),
-								q(52275, {	-- Mission Report: Swiftwind Post
-								--	["sourceQuests"] = { 53744 },	-- Swiftwind Post Mission Complete
-									["altQuests"] = { 53102 },	-- Mission Report: Nature Calls
-									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+									["g"] = {
+										q(52275, {	-- Mission Report: Swiftwind Post
+											["altQuests"] = { 53102 },	-- Mission Report: Nature Calls
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
+										}),
+									},
 								}),
 								q(52276, {	-- Swiftwind Post
 								--	["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
@@ -277,7 +264,7 @@ _.Zones =
 										q(53102, {	-- Mission Report: Nature Calls
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -290,26 +277,25 @@ _.Zones =
 							},
 						}),
 						i(162532, {	-- Scouting Report: Windfall Cavern
-							--["questID"] = ,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1966, {	-- Windfall Cavern
-									["questID"] = 53741,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52319, {	-- Mission Report: Windfall Cavern
-									["sourceQuests"] = { 53741 },	-- Windfall Cavern Mission Complete
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
-									["races"] = HORDE_ONLY,
+									["g"] = {
+										q(52319, {	-- Mission Report: Windfall Cavern
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(52320, {	-- Windfall Cavern
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 52319 },	-- Mission Report: Windfall Cavern
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 52319 },		-- Mission Report: Windfall Cavern
+									["coord"] = { 58.4, 62.6, 862 },
 								}),
 							},
 						}),
@@ -320,14 +306,14 @@ _.Zones =
 							["g"] = {
 							--	initial outpost setup
 								mi(1880, {	-- Wolf's Den
-									["questID"] = 53739,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-								}),
-								q(52005, {	-- Mission Report: Wolf's Den
-									["sourceQuests"] = { 53739 },	-- Wolf's Den Mission Complete
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
-									["races"] = HORDE_ONLY,
+									["g"] = {
+										q(52005, {	-- Mission Report: Wolf's Den
+											["provider"] = { "n", 138704 },		-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(52127, {	-- Wolf's Den
 									["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
@@ -336,7 +322,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								mi(1957, {	-- Wolves For The Den
-								--	there was no quest triggered when i completed this mission, so i've nested the quest it starts inside for visibility/to hopefully make it clearer that to get the next quest you have to start this mission from the command table.
 									["sourceQuests"] = { 52127 },	-- Wolf's Den
 									["races"] = HORDE_ONLY,
 									["cr"] = 138706,	-- Mission Command Table
@@ -344,7 +329,7 @@ _.Zones =
 										q(53151, {	-- Mission Report: Wolves For The Den
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -363,7 +348,6 @@ _.Zones =
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(51465, {	-- A Load of Scrap
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
@@ -453,22 +437,19 @@ _.Zones =
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 					["coord"] = { 58.0, 62.6, 862 },	-- technically Zuldazar, but on the Dazar'alor docks, so it makes more sense to be here
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(47423, {	-- Forbidden Practices
 					["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+					["provider"] = { "n", 126560 },	-- Wardruid Loti
 					["coord"] = { 45.0, 23.9, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
 				q(47439, {	-- Gonk, Lord of the Pack
 					["sourceQuests"] = { 47438 },	-- Picking a Side
+					["altQuests"] = { 47440 },	-- Pa'ku, Master of Winds
+					["provider"] = { "n", 126560 },	-- Wardruid Loti
 					["coord"] = { 42.4, 9.00, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126560 },	-- Wardruid Loti
-					["altQuests"] = {
-						47440,	-- Pa'ku, Master of Winds
-					},
 				}),
 				q(49421, {	-- Hunting Zul
 					["sourceQuests"] = {	-- one or the other
@@ -486,6 +467,7 @@ _.Zones =
 					["coord"] = { 35.3, 7.70, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
+					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
 						i(169394), 	-- Richly Appointed Drape
 						title(324),	-- Trashmaster
@@ -752,9 +734,9 @@ _.Zones =
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 				}),
 				q(48897, {	-- The Bargain is Struck (Gonk)
+					["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 					["coord"] = { 49.9, 33.5, 1165 },
-					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
 					["races"] = HORDE_ONLY,
 				}),
 				q(47199, {	-- The Blood Gate
@@ -860,13 +842,11 @@ _.Zones =
 					["provider"] = { "n", 138949 },	-- Throk
 					["coord"] = { 52.9, 94.4, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(54042, {	-- Trouble in Darkshore
 					["provider"] = { "n", 149471 },	-- Dark Ranger Velonara
 					["coord"] = { 53.0, 94.3, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(49615, {	-- Trust of a King
 					["sourceQuests"] = { 47514 },	-- Zuldazar
@@ -897,7 +877,6 @@ _.Zones =
 					["provider"] = { "n", 138949 },	-- Throk
 					["coord"] = { 53.0, 94.3, 1165 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
@@ -907,6 +886,7 @@ _.Zones =
 					["maps"] = { 862 },	-- Zuldazar
 				}),
 				q(52131, {	-- We Need Each Other
+				--	TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde.  i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal.  is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
 					["sourceQuests"] = {
 						52139,	-- To Matters at Hand (legacy)
 						46931,	-- Speaker of the Horde
@@ -943,10 +923,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(47514, {	-- Zuldazar
+				--	"we need each other" did not pop up at all during my playthrough on April 11, 2021 -- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
+				--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
+					["provider"] = { "n", 135775 },	-- Scouting Map
 					["coord"] = { 40.1, 69.1, 1164 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135775 },	-- Scouting Map
-					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 
 			-- TODO: unsorted
@@ -986,17 +968,21 @@ _.Zones =
 					["sourceQuests"] = { 47512 },	-- Nazmir
 				}),
 				q(47512, {	-- Nazmir
+				--	TODO: not a SQ during my April 2021 playthrough, unsure of requirements
+				--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+					["provider"] = { "n", 135775 },	-- Scouting Map
 					["coord"] = { 41.8, 69.4, 1164 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135775 },	-- Scouting Map
-					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
+					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 					["isBreadcrumb"] = true,
+					["provider"] = { "n", 126549 },
 					["coord"] = { 51.6, 41.2, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126549 },
-					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
+					["g"] = {
+						i(179383),	-- Royal Zandalari Pendant
+					},
 				}),
 				q(47433, {	-- Offensively Defensive
 					["provider"] = { "n", 126564 },	-- Hexlord Raal
@@ -1023,7 +1009,6 @@ _.Zones =
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["races"] = HORDE_ONLY,
 					["coord"] = { 71.4, 30.2, 862 },
-					["lvl"] = 120,
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 				}),
@@ -1042,7 +1027,6 @@ _.Zones =
 				}),
 				i(165668, {	-- The Azsharan Medallion
 					["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
-					["lvl"] = 120,
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						144778,	-- Darktide Champion

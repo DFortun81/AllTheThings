@@ -1117,11 +1117,12 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34, {	-- World Quests
-						q(57585, {	-- Abyssal Santuary
-							["lvl"] = 120,
-							["isWorldQuest"] = true,
-						}),
+					n(WORLD_QUESTS, {
+						-- TODO: this is the wrong questID, and also this quest title doesn't exist on Wowhead...
+						-- q(57585, {	-- Abyssal Santuary
+						-- 	["lvl"] = 120,
+						-- 	["isWorldQuest"] = true,
+						-- }),
 						q(57157, {	-- Assault: The Black Empire
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -1140,10 +1141,6 @@ _.ExpansionFeatures =
 						q(57541, {	-- Call of the Void
 							["lvl"] = 120,
 							["coord"] = { 65.9, 72.9, 1527 },
-							["isWorldQuest"] = true,
-						}),
-						q(57359, {	-- Call of the Void
-							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
 						q(57522, {	-- Call of the Void
@@ -2064,6 +2061,10 @@ _.ExpansionFeatures =
 						i(174370),	-- Pattern: Unsettling Seaweave Gloves
 						i(171317),	-- Plans: Unsettling Osmenite Girdle
 						i(171316),	-- Plans: Unsettling Osmenite Legguards
+						i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
+						i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles
+						i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics
+						i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
 					}),
 				}),
 			},

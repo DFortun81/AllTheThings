@@ -153,7 +153,6 @@ _.Zones =
 						["q"] = 3,
 						["ilvl"] = 120,
 						["factionID"] = 2164,
-						["f"] = 104,	-- Quest
 						["g"] = {
 							i(166298),	-- Champions of Azeroth Supplies
 						},

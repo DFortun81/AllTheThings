@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(1, {	-- Classic
 		f(200, {	-- Recipes
-			n(-180, {	-- Alchemy
+			prof(ALCHEMY, {
 				i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
 				i(9297),	-- Recipe: Elixir of Dream Vision
 				i(3830),	-- Recipe: Elixir of Fortitude
@@ -31,7 +31,7 @@ _.WorldDrops =
 				i(13487),	-- Recipe: Transmute Water to Undeath
 				i(9294),	-- Recipe: Wildvine Potion
 			}),
-			n(-181, { 	-- Blacksmithing
+			prof(BLACKSMITHING, {
 				i(7992),	-- Plans: Blue Glittering Axe
 				i(3609),	-- Plans: Copper Chain Vest
 				i(12698),	-- Plans: Dawnbringer Shoulders
@@ -91,7 +91,7 @@ _.WorldDrops =
 				i(8029),	-- Plans: Wicked Mithril Blade
 				i(12691),	-- Plans: Wildthorn Mail
 			}),
-			n(-182, {	-- Enchanting
+			prof(ENCHANTING, {
 				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
 				i(16245, {	-- Formula: Enchant Boots - Greater Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
@@ -117,7 +117,7 @@ _.WorldDrops =
 				i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 				i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
 			}),
-			n(-183, {	-- Engineering
+			prof(ENGINEERING, {
 				i(16055),	-- Schematic: Arcane Bomb
 				i(10601),	-- Schematic: Bright-Eye Goggles
 				i(10603),	-- Schematic: Catseye Ultra Goggles
@@ -142,7 +142,7 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 			}),
-			n(-186, { 	-- Jewelcrafting
+			prof(JEWELCRAFTING, {
 				i(20976),	-- Design: Citrine Pendant of Golden Healing
 				i(21953),	-- Design: Emerald Owl
 				i(21947),	-- Design: Gem Studded Band
@@ -152,7 +152,7 @@ _.WorldDrops =
 				i(21945),	-- Design: The Aquamarine Ward
 				i(21944),	-- Design: Truesilver Boar
 			}),
-			n(-187, {	-- Leatherworking
+			prof(LEATHERWORKING, {
 				i(4301),	-- Pattern: Barbaric Belt
 				i(4297),	-- Pattern: Barbaric Gloves
 				i(8390),	-- Pattern: Big Voodoo Cloak
@@ -191,7 +191,7 @@ _.WorldDrops =
 				i(2407),	-- Pattern: White Leather Jerkin
 				un(REMOVED_FROM_GAME, i(15757)),	-- Pattern: Wicked Leather Pants (now taught by trainer)
 			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(7085),	-- Pattern: Azure Shoulders
 				i(5775),	-- Pattern: Black Silk Pack
 				i(4352),	-- Pattern: Boots of the Enchanter

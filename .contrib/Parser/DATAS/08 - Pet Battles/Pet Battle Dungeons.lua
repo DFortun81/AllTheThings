@@ -52,14 +52,10 @@ _.PetBattles =
 			}),
 			q(33136, {	-- The Rainy Day is Here
 				["provider"] = { "n", 73082 },	-- Master Li
-				["coord"] = { 34.8, 59.6, 554 },
 				["sourceQuest"] = 33137,	-- The Celestial Tournament
 				["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+				["coord"] = { 34.8, 59.6, 554 },
 				["lvl"] = 90,
-				["maps"] = {
-					554,	-- Timeless Isle
-					571,	-- Pet Dungeon
-				},
 				["g"] = {
 					i(101529),	-- Celestial Coin
 				},

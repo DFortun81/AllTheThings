@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(89, {	-- Darnassus
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(457, {	-- Darnassus, Teldrassil [Alliance]
 					["description"] = "Darnassus, Teldrassil - Alliance Only",
 					["coord"] = { 36.61, 47.82, 89 },

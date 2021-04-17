@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
 			m(14, {		-- Arathi Highlands
-				n(-34, {	-- World Quests
+				n(WORLD_QUESTS, {
 					q(54573, {	-- Beastrider Kama (A)
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,

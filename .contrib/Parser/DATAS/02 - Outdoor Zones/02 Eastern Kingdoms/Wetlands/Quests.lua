@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(56, {	-- Wetlands
 			n(QUESTS, {
 				q(25726, {	-- A Dumpy Job

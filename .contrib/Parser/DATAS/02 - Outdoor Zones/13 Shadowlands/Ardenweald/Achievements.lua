@@ -406,19 +406,19 @@ _.Zones =
 						["crs"] = { 171206 },	-- Playful Vulpin
 						["g"] = {
 							q(61080, {	-- /curious
-								["title"] = "/curious",
+								["name"] = "/curious",
 							}),
 							q(61081, {	-- /sit
-								["title"] = "/sit",
+								["name"] = "/sit",
 							}),
 							q(61084, {	-- /sing
-								["title"] = "/sing",
+								["name"] = "/sing",
 							}),
 							q(61085, {	-- /dance
-								["title"] = "/dance",
+								["name"] = "/dance",
 							}),
 							q(61078, {	-- /pet
-								["title"] = "/pet",
+								["name"] = "/pet",
 							}),
 							i(180645),	-- Dodger
 						},

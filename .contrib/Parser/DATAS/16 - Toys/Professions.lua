@@ -5,7 +5,7 @@
 _.Toys =
 {
 	n(-38, {	-- Profession
-		n(-191, {	-- Archaeology
+		prof(ARCHAEOLOGY, {
 			i(89614),		-- Anatomical Dummy
 			i(69776),		-- Ancient Amber
 			i(64456),		-- Arrival of the Naaru
@@ -25,14 +25,14 @@ _.Toys =
 			i(69775),		-- Vrykul Drinking Horn
 			i(64651),		-- Wisp Amulet
 		}),
-		n(-192, {	-- Cooking
+		prof(COOKING, {
 			i(134020),		-- Chef's Hat
 			i(88801),		-- Flippable Table
 		}),
-		n(-182, {	-- Enchanting
+		prof(ENCHANTING, {
 			i(128536),		-- Leylight Brazier
 		}),
-		n(-183, {	-- Engineering
+		prof(ENGINEERING, {
 			i(87214),		-- Blingtron 4000
 			i(111821),		-- Blingtron 5000
 			i(168667),		-- Blingtron 7000
@@ -51,19 +51,19 @@ _.Toys =
 			i(87215),		-- Wormhole Generator: Pandaria
 			i(172924),		-- Wormhole Generator: Shadowlands
 			i(168808),		-- Wormhole Generator: Zandalar
-			n(-178, {		-- Goblin Engineering
+			prof(GOBLIN_ENGINEERING, bubbleDown({["requireSkill"] = GOBLIN_ENGINEERING }, {
 				i(30542),		-- Dimensional Ripper - Area 52
 				i(18984),		-- Dimensional Ripper - Everlook
-			}),
-			n(-179, {	-- Gnomish Engineering
+			})),
+			prof(GNOMISH_ENGINEERING, bubbleDown({["requireSkill"] = GNOMISH_ENGINEERING }, {
 				i(40727),		-- Gnomish Gravity Well
 				i(40895),		-- Gnomish X-Ray Specs
 				i(18986),		-- Ultrasafe Transporter: Gadgetzan
 				i(30544),		-- Ultrasafe Transporter: Toshley's Station
 				i(18660),		-- World Enlarger
-			}),
+			})),
 		}),
-		n(-194, {	-- Fishing
+		prof(FISHING, {
 			i(85500),		-- Anglers Fishing Raft
 			i(85973),		-- Ancient Pandaren Fishing Charm
 			i(147307),		-- Carved Wooden Helm
@@ -85,18 +85,18 @@ _.Toys =
 			i(152556),		-- Trawler Totem
 			i(45984),		-- Unusual Compass
 		}),
-		n(-185, {	-- Inscription
+		prof(INSCRIPTION, {
 			i(129211),		-- Steamy Romance Novel Kit
 		}),
-		n(-186, {	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			i(115503),		-- Blazing Diamond Pendant (Horde)
 			i(130254),		-- Chatterstone
 			i(130251),		-- JewelCraft
 		}),
-		n(-175, {	-- Junkyard Tinkering
+		prof(JUNKYARD_TINKERING, {
 			i(168907),		-- Holographic Digitalization Hearthstone
 		}),
-		n(-187, {	-- Leatherworking
+		prof(LEATHERWORKING, {
 			i(129961),		-- Flaming Hoop
 			i(129956),		-- Leather Love Seat
 			i(129960),		-- Leather Pet Bed

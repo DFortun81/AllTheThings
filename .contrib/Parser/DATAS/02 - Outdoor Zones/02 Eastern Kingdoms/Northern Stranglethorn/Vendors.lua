@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(50, {	-- Northern Stranglethorn
 			n(VENDORS, {
 				n(734, {	-- Corporal Bluth <Camp Trader>

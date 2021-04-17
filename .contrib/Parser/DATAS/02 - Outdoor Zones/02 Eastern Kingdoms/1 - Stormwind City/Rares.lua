@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(84, {	-- Stormwind City
 			n(RARES, {
 				n(130828, {	-- Gordon MacKellar

@@ -10,8 +10,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 68,
 		["mapID"] = 332,
 		["coords"] = {
-			{ 50.2, 41.0, 102 },	-- underwater entrance
-			{ 51.9, 32.9, 102 },	-- pipe entrance
+			{ 50.2, 41.0, ZANGARMARSH },	-- underwater entrance
+			{ 51.9, 32.9, ZANGARMARSH },	-- pipe entrance
 		},
 		["g"] = {
 			n(QUESTS, {

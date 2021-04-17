@@ -330,7 +330,7 @@ _.WorldEvents =
 							}),
 						}),
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						["maps"] = { 62 },	-- Darkshore; Let's attach the map to this zone since all the WQ's are here.
 						["g"] = {
 							n(QUESTS, {

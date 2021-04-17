@@ -556,17 +556,13 @@ _.ExpansionFeatures =
 			}),
 			n(-38, {	-- Profession
 				prof(FISHING, {
-					o(207724, {	-- Shipwreck Debris
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["spellID"] = 28271,	-- Polymorph (Turtle)
-							["classes"] = { MAGE },
-						}),
-					}),
-					o(202780, {	-- Fathom Eel Swarm
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["spellID"] = 28271,	-- Polymorph (Turtle)
-							["classes"] = { MAGE },
-						}),
+					i(22739, {	-- Tome of Polymorph: Turtle
+						["providers"] = {
+							{ "o", 202780 },	-- Fathom Eel Swarm
+							{ "o", 207724 },	-- Shipwreck Debris
+						},
+						["spellID"] = 28271,	-- Polymorph (Turtle)
+						["classes"] = { MAGE },
 					}),
 				}),
 				prof(MINING, {

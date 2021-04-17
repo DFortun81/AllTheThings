@@ -1426,17 +1426,30 @@ _.Zones =
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+					["_drop"] = { "g" },
 					["g"] = {
-					--	azerite
-						i(163863),	-- Bartered Vrykul Cowl
-						i(163864),	-- Bartered Vrykul Facemask
-						i(163862),	-- Bartered Vrykul Hood
-						i(163865),	-- Bartered Vrykul Warhelm
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(163863),	-- Bartered Vrykul Cowl
+									i(163864),	-- Bartered Vrykul Facemask
+									i(163862),	-- Bartered Vrykul Hood
+									i(163865),	-- Bartered Vrykul Warhelm
+								},
+						}),
 					--	azewrong
 						i(180028),	-- Bartered Vrykul Cowl
 						i(180029),	-- Bartered Vrykul Facemask
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
+					},
+					["maps"] = {
+						863, 	-- Nazmir
+						864, 	-- Vol'dun
+						895,	-- Tiragarde Sound
+						942,	-- Stormsong Valley
+						862,	-- Zuldazar
+						896,	-- Drustvar
 					},
 				}),
 				q(50297, {	-- The Head of Her Enemy
@@ -1718,7 +1731,7 @@ _.Zones =
 				q(50394, {	-- Your Problem Now
 					["sourceQuests"] = { 50393 },	-- A Child of Pa'ku
 					["provider"] = { "n", 127377 },	-- Pa'ku
-					["coord"] = { 71.4, 49.2 },
+					["coord"] = { 71.4, 49.2, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),

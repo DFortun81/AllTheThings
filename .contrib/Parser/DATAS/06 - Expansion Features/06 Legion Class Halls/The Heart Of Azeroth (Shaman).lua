@@ -7,29 +7,28 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(SHAMAN, {	-- The Heart of Azeroth (Shaman)
 			["classes"] = { SHAMAN },
-			["lvl"] = 98,
 			["maps"] = {
 				725,	-- The Maelstrom (scenario?)
 				726,	-- The Maelstrom
 			},
 			["g"] = {
 				n(103004, {	-- Puzzlemaster Lo <The Earthen Ring>
-					["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+					["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, C, F, H, J, L, P, R, T, V, W\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
 					["g"] = {
 						q(41071, {	-- Puzzle 01 Solved
-							["title"] = "Puzzle 1 Solved",
+							["name"] = "Puzzle 1 Solved",
 						}),
 						q(41072, {	-- Puzzle 02 Solved
-							["title"] = "Puzzle 2 Solved",
+							["name"] = "Puzzle 2 Solved",
 						}),
 						q(41073, {	-- Puzzle 03 Solved
-							["title"] = "Puzzle 3 Solved",
+							["name"] = "Puzzle 3 Solved",
 						}),
 						q(41074, {	-- Puzzle 04 Solved
-							["title"] = "Puzzle 4 Solved",
+							["name"] = "Puzzle 4 Solved",
 						}),
 						q(41075, {	-- Puzzle 05 Solved
-							["title"] = "Puzzle 5 Solved",
+							["name"] = "Puzzle 5 Solved",
 							["g"] = {
 								i(140632),	-- Lava Fountain
 							},
@@ -56,37 +55,36 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 					}),
 					q(41900, {	-- A Promise of Earth
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 42065 },	-- The Twilight Master
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 						["g"] = {
 							i(139705),	-- Farseer's Wristwraps
 						},
 					}),
 					q(40225, {	-- A Ring Reforged
+						["sourceQuests"] = { 39771 },	-- The Voice of Thunder
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
+						["coord"] = { 34.0, 76.6, 726 },
 						["provider"] = { "n", 96539 },	-- Stormcaller Mylra
 					}),
 					q(39746, {	-- A Ring Unbroken
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
 						["provider"] = { "n", 91731 },	-- Thrall
 						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42995, {	-- A Taste For Blood
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
 						["sourceQuests"] = { 42989 },	-- Ma'haat the Indomitable
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
+						["coord"] = { 56.9, 14.2, 207 },	-- Deepholm
 					}),
 					q(44253, {	-- A Vision of Triumph
 						["classes"] = { SHAMAN },
-						["lvl"] = 110,
 						["provider"] = { "n", 112318 },	-- Flamesmith Lanying
+						["coord"] = { 30.3, 60.6, 726 },
 						["g"] = {
 							i(139701),	-- Farseer's Mask
 						},
@@ -103,8 +101,9 @@ _.ExpansionFeatures =
 						["maps"] = { 64 },	-- Thousand Needles
 					}),
 					q(44406, {	-- Aggra's Guidance
+						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
 						["classes"] = { SHAMAN },
-						["lvl"] = 102,
+						["coord"] = { 30.3, 51.6, 726 },
 						["providers"] = {
 							{ "n", 96528 },	-- Farseer Nobundo
 							{ "n", 106519 },	-- Farseer Nobundo
@@ -128,18 +127,16 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42208 },	-- Return to the Firelands
 					}),
 					q(41510, {	-- Azeroth Needs You
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
+						["classes"] = { SHAMAN },
+						["coord"] = { 29.0, 69.1, 726 },
+						["provider"] = { "n", 96528 },	-- Farseer Nobundo					
 					}),
 					q(43002, {	-- Blessed Blade of the Windseeker
+						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
 						["classes"] = { SHAMAN },
-						["lvl"] = 103,
 						["provider"] = { "n", 14347 },	-- Highlord Demitrian
 						["coord"] = { 29.6, 10.6, 81 },
-						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
-						["maps"] = { 81 },	-- Silithus
 						["g"] = {
 							i(139000),	-- Damaged Thunderfury
 						},
@@ -165,28 +162,28 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 					}),
 					q(41747, {	-- Champion: Avalanchion
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
+						["coord"] = { 34.6, 34.0, 726 },
 						["g"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
 					}),
 					q(41742, {	-- Champion: Celestos
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
+						["coord"] = { 28.2, 45.0, 726 },
 						["g"] = {
 							follower(610),	-- Consular Celestos
 						},
 					}),
 					q(42197, {	-- Champion: Duke Hydraxis
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
+						["classes"] = { SHAMAN },
+						["coord"] = { 29.6, 34.0, 726 },
+						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
 						["g"] = {
 							follower(609),	-- Duke Hydraxis
 						},
@@ -202,18 +199,18 @@ _.ExpansionFeatures =
 					}),
 					q(41746, {	-- Champion: Muln Earthfury
 						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
+						["coord"] = { 32.0, 43.8, 726 },
 						["g"] = {
 							follower(614),	-- Muln Earthfury
 						},
 					}),
 					q(41743, {	-- Champion: Nobundo
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
+						["coord"] = { 30.2, 51.6, 726 },
 						["g"] = {
 							follower(611),	-- Farseer Nobundo
 						},
@@ -237,23 +234,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42198, {	-- Champion: Stormcaller Mylra
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 106312 },	-- Stormcaller Mylra
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
+						["classes"] = { SHAMAN },
+						["coord"] = { 34.4, 32.4, 726 },
+						["provider"] = { "n", 106312 },	-- Stormcaller Mylra
 						["g"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
 					}),
 					q(42936, {	-- Clutch Play
+						["sourceQuests"] = { 42932 },	-- What the Stonemother Knows
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
 						["provider"] = { "n", 42465 },	-- Therazane
-						["sourceQuests"] = {
-							42935,	-- Stone Drake Rescue
-							42933,	-- The Troggs that Fel to Earth
-						},
-						["maps"] = { 207 },	-- Deepholm
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(45769, {	-- Conflagration
 						["classes"] = { SHAMAN },
@@ -269,11 +262,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
 					}),
 					q(41777, {	-- Destroying the Cult
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = { 42068 },	-- The Return of Twilight
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["coord"] = { 64.0, 70.5, 207 },	-- Deepholm
 					}),
 					q(45767, {	-- Elemental Cores
 						["classes"] = { SHAMAN },
@@ -283,22 +275,22 @@ _.ExpansionFeatures =
 						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42986, {	-- Enemies of Air
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.4, 726 },
 					}),
 					q(43945, {	-- Expanding Your Horizons
-						["classes"] = { SHAMAN },
-						["lvl"] = 102,
-						["provider"] = { "n", 99531 },	-- Aggra
 						["sourceQuests"] = { 44406 },	-- Aggra's Guidance
+						["classes"] = { SHAMAN },
+						["coord"] = { 36.1, 80.0, 726 },
+						["provider"] = { "n", 99531 },	-- Aggra
 					}),
 					q(42984, {	-- Eye of Azshara: The Scepter of Storms
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 42983 },	-- Mistral Essence
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = { 29.4, 77.9, 726 },
 						["maps"] = { 713 },	-- Eye of Azshara
 					}),
 					q(46781, {	-- Further Advancement
@@ -317,13 +309,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41899, {	-- Held Captive!
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(45971, {	-- Infernal Phenomena
@@ -338,115 +329,109 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 					}),
 					q(42989, {	-- Ma'haat the Indomitable
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 42997 },	-- The Maelstrom Pillar: Earth
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = { 29.4, 77.8, 207 },	-- Deepholm
 					}),
 					q(42184, {	-- Mission: Elemental Diplomacy
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(42200, {	-- Mission: Investigating Deepholm
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = {
 							42986,	-- Enemies of Air
 							42984,	-- Eye of Azshara: The Scepter of Storms
 						},
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(42983, {	-- Mistral Essence
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 42996 },	-- The Maelstrom Pillar: Air
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = { 29.4, 77.9, 726 },
 						["maps"] = { 737 },	-- The Vortex Pinnacle
 					}),
 					q(42937, {	-- Needlerock Beatdown
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = {
 							42936,	-- Clutch Play
 							42935,	-- Stone Drake Rescue
 							42933,	-- The Troggs that Fel to Earth
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42990, {	-- Neltharion's Lair: The Earthen Amulet
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 109464 },	-- Elementalist Janai
 						["sourceQuests"] = { 43003 },	-- Return to Janai
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 109464 },	-- Elementalist Janai
+						["coord"] = {29.4, 77.8, 207 },
 						["maps"] = { 731 },	-- Neltharion's Lair
 					}),
 					q(42188, {	-- Nobundo Awaits
+						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
 						["classes"] = { SHAMAN },
-						["lvl"] = 101,
+						["coord"] = { 33.0, 60.4, 726 },
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["sourceQuests"] = { 44544 },	-- Call of the Earthen Ring
 					}),
 					q(41901, {	-- Oath of the Windlord
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 104788 },	-- Thunderaan
 						["sourceQuests"] = { 41776 },	-- Return of the Windlord
-						["maps"] = { 737 },	-- The Vortex Pinnacle
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 104788 },	-- Thunderaan
+						["coord"] = { 52.4, 79.3, 737 },	-- The Vortex Pinnacle
 					}),
 					q(41771, {	-- Recharging the Blade
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 104797 },	-- Consular Celestos
 						["sourceQuests"] = { 41770 },	-- The Skies Above
-						["maps"] = { 737 },	-- The Vortex Pinnacle
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 104797 },	-- Consular Celestos
+						["coord"] = { 55.2, 18.4, 737 },	-- The Vortex Pinnacle
 					}),
 					q(44465, {	-- Recruiting Earthcallers
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.4, 726 },
 					}),
 					q(42142, {	-- Recruiting the Troops
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 42141 },	-- Summoner Morn
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(41776, {	-- Return of the Windlord
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 113340 },	-- Consular Celestos
 						["sourceQuests"] = { 41771 },	-- Recharging the Blade
-						["maps"] = { 737 },	-- The Vortex Pinnacle
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 113340 },	-- Consular Celestos
+						["coord"] = { 52.1, 81.9, 737 },	-- The Vortex Pinnacle
 					}),
 					q(43003, {	-- Return to Janai
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
 						["sourceQuests"] = { 42995 },	-- A Taste For Blood
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
+						["coord"] = { 56.9, 14.2, 207 },	-- Deepholm
 					}),
 					q(42208, {	-- Return to the Firelands
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(42383, {	-- Rise, Champions
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["sourceQuests"] = { 42114 },	-- The Ritual of Tides
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96528 },	-- Farseer Nobundo
+						["coord"] = { 34.1, 31.3, 726 },
 					}),
 					q(42977, {	-- Servant of the Windseeker
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 42184 },	-- Mission: Elemental Diplomacy
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(45724, {	-- Snakes and Stones
 						["classes"] = { SHAMAN },
@@ -462,21 +447,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
 					}),
 					q(42935, {	-- Stone Drake Rescue
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 42932 },	-- What the Stonemother Knows
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42141, {	-- Summoner Morn
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(44101, {	-- Supply Dropped
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
 						["provider"] = { "o", 254010 },	-- Earthen Ring Supplies
 						["repeatable"] = true,
 						["g"] = {
@@ -485,10 +468,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41740, {	-- Tech It Up A Notch
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41741 },	-- Troops in the Field
+						["classes"] = { SHAMAN },
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
 					q(44206, {	-- The Ascended
 						["classes"] = { SHAMAN },
@@ -509,16 +492,16 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45769 },	-- Conflagration
 					}),
 					q(43338, {	-- The Codex of Ra
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 60968 },	-- Xuen
 						["sourceQuests"] = { 43334 },	-- The Coming Storm
+						["classes"] = { SHAMAN },
+						["coord"] = { 66.9, 56.2, 379 },	-- Kun-Lai Summit
+						["provider"] = { "n", 60968 },	-- Xuen
 					}),
 					q(43334, {	-- The Coming Storm
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 						["sourceQuests"] = { 41335 },	-- The Elements Call...
+						["classes"] = { SHAMAN },
+						["coord"] = { 34.1, 74.3, 725 },
+						["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 					}),
 					q(45723, {	-- The Crone's Wrath
 						["classes"] = { SHAMAN },
@@ -528,10 +511,10 @@ _.ExpansionFeatures =
 						["maps"] = { 64 },	-- Thousand Needles
 					}),
 					q(41335, {	-- The Elements Call...
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96527 },	-- Thrall
 						["sourceQuests"] = { 39746 },	-- A Ring Unbroken
+						["classes"] = { SHAMAN },
+						["coord"] = { 36.1, 74.9, 725 },
+						["provider"] = { "n", 96527 },	-- Thrall
 					}),
 					q(41773, {	-- The Firelord's Command
 						["classes"] = { SHAMAN },
@@ -552,24 +535,20 @@ _.ExpansionFeatures =
 						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41775, {	-- The Great Stonemother
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = {
 							40224,	-- The Hammer in the Deep
 							42200,	-- Mission: Investigating Deepholm
 						},
-						["maps"] = { 207 },	-- Deepholm
-					}),
-					q(40224, {	-- The Hammer in the Deep (awards Doomhammer enhancement artifact)
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96527 },	-- Thrall
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
+					}),
+					q(40224, {	-- The Hammer in the Deep
 						["sourceQuests"] = { 42937 },	-- Needlerock Beatdown
-						["maps"] = {
-							729,	-- Crumbling Depths
-							207,	-- Deepholm
-						},
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96527 },	-- Thrall
+						["coord"] = { 56.5, 12.9, 207 },
+						["maps"] = { 729 },	-- Crumbling Depths
 					}),
 					q(40276, {	-- The Maelstrom Beckons
 						["u"] = REMOVED_FROM_GAME,
@@ -578,23 +557,22 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 					}),
 					q(42996, {	-- The Maelstrom Pillar: Air
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.4, 726 },
 					}),
 					q(42997, {	-- The Maelstrom Pillar: Earth
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(41897, {	-- The Master's Plan
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = { 42068 },	-- The Return of Twilight
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["coord"] = { 64.0, 70.5, 207 },	-- Deepholm
 					}),
 					q(45706, {	-- The Power of Thousands
 						["classes"] = { SHAMAN },
@@ -603,113 +581,114 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45652 },	-- A "Humble" Request
 					}),
 					q(42068, {	-- The Return of Twilight
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 41775 },	-- The Great Stonemother
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42114, {	-- The Ritual of Tides
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["sourceQuests"] = { 42188 },	-- Nobundo Awaits
+						["classes"] = { SHAMAN },
+						["coord"] = { 34.1, 31.4, 726 },
+						["providers"] = {
+							{ "n", 96528 },	-- Farseer Nobundo
+							{ "n", 106316 }	-- Farseer Nobundo
+						},	
 					}),
 					q(41770, {	-- The Skies Above
-						["classes"] = { SHAMAN },
-						["lvl"] = 103,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 43002 },	-- Blessed Blade of the Windseeker
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(42933, {	-- The Troggs that Fel to Earth
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 42932 },	-- What the Stonemother Knows
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 42465 },	-- Therazane
+						["coord"] = { 56.3, 12.2, 207 },	-- Deepholm
 					}),
 					q(42065, {	-- The Twilight Master
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["sourceQuests"] = {
 							41899,	-- Held Captive!
 							41898,	-- Unleashing the Elements
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						
+						["maps"] = { 207, 209 },	-- Deepholm
 					}),
 					q(39771, {	-- The Voice of Thunder (awards The Fist of Ra-Den elemental artifact)
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 						["sourceQuests"] = { 43338 },	-- The Codex of Ra
+						["classes"] = { SHAMAN },
+						["coord"] = { 47.0, 83.0, 395 },	-- Guo-Lai Halls, Vale of Eternal Blossom
+						["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 					}),
 					q(40341, {	-- Throne of the Tides: Azshara's Power (awards Sharas'dal, Scepter of Tides resto artifact)
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 						["sourceQuests"] = { 43645 },	-- Wavespeaker's Trail
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
+						["coord"] = { 43.6, 63.2, 205 },	-- Shimmering Expanse
 						["maps"] = {
 							742,	-- Abyssal Maw
 							743,	-- Abyssal Maw
-							205,	-- Shimmering Expanse
 						},
 					}),
 					q(43644, {	-- To the Deeps
+						["sourceQuests"] = {
+							41335,	-- The Elements Call...
+							44006,	-- Your Fullest Potential
+						},
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
 						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
-						["sourceQuests"] = { 41335 },	-- The Elements Call...
+						["coord"] = { 33.7, 79.2, 726 },
 					}),
 					q(41741, {	-- Troops in the Field
-						["classes"] = { SHAMAN },
-						["lvl"] = 101,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 42142 },	-- Recruiting the Troops
-					}),
-					q(41898, {	-- Unleashing the ELements
 						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["coord"] = { 33.0, 60.3, 726 },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+					}),
+					q(41898, {	-- Unleashing the Elements
 						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["maps"] = { 207, 209 },	-- Deepholm
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43645, {	-- Wavespeaker's Trail
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 						["sourceQuests"] = { 43644 },	-- To the Deeps
-						["maps"] = { 205 },	-- Shimmering Expanse
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
+						["coord"] = { 43.6, 63.2, 205 },	-- Shimmering Expanse
 					}),
 					q(42932, {	-- What the Stonemother Knows
-						["classes"] = { SHAMAN },
-						["lvl"] = 98,
-						["provider"] = { "n", 96527 },	-- Thrall
 						["sourceQuests"] = { 42931 },	-- Where the Hammer Falls
-						["maps"] = { 207 },	-- Deepholm
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96527 },	-- Thrall
+						["coord"] = { 47.1, 52.0, 207 },	-- Deepholm
 					}),
 					q(42931, {	-- Where the Hammer Falls
+						["sourceQuests"] = { 43945 },	-- Expanding Your Horizons
 						["classes"] = { SHAMAN },
-						["lvl"] = 98,
+						["coord"] = { 34.5, 76.1, 726 },
 						["provider"] = { "n", 96539 },	-- Stormcaller Mylra
-						["sourceQuests"] = { 41335 },	-- The Elements Call...
 					}),
 					q(42988, {	-- Worldmender
-						["classes"] = { SHAMAN },
-						["lvl"] = 110,
-						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.3, 726 },
 					}),
 					q(44006, {	-- Your Fullest Potential
+						["sourceQuests"] = { 40224 },	-- The Hammer in the Deep
 						["classes"] = { SHAMAN },
-						["lvl"] = 102,
 						["provider"] = { "n", 99531 },	-- Aggra
+						["coord"] = { 36.1, 80.0, 726 },
 					}),
 				}),
 				n(99428, {	-- Scouting Map

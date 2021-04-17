@@ -55,7 +55,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						84,		-- Stormwind City
 						87,		-- Ironforge
 						89,		-- Darnassus
-						103,	-- The Exodar
+						THE_EXODAR,
 						504,	-- Isle of Thunder
 					},
 					["isYearly"] = true,
@@ -215,10 +215,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 						85,	-- Orgrimmar
 						88,	-- Thunder Bluff
 						90,	-- Undercity
-						94,	-- Eversong Woods
-						109,	-- Netherstorm
-						110,	-- Silvermoon City
-						111,	-- Shattrath City
+						EVERSONG_WOODS,
+						NETHERSTORM,
+						SILVERMOON_CITY,
+						SHATTRATH_CITY,
 						120,	-- The Storm Peaks
 						125,	-- Dalaran (Northrend)
 						210,	-- The Cape of Stranglethorn

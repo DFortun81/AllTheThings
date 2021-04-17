@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(309, {	-- Nesingwary Base Camp, Sholazar Basin
 					["coord"] = { 25.2, 58.4, 119 },
 				}),

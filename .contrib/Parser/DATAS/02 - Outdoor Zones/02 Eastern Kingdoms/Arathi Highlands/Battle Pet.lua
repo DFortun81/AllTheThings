@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(14, {	-- Arathi Highlands
 			filter(101, {	-- Pet Battle
 				p(443, {	-- Grasslands Cottontail

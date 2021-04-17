@@ -190,20 +190,11 @@ _.Zones =
 					["coord"] = { 28.8, 48.8, 627 },
 					["lvl"] = 110,
 				}),
-				q(41632, {	-- A Gift of Time
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105081 },	-- Archmage Kalec
-				}),
 				q(44099, {	-- A Mutual Friend
 					["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 					["classes"] = { WARLOCK },
 					["lvl"] = 101,
 					["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
-				}),
-				q(41626, {	-- A New Threat
-					["sourceQuests"] = { 41625 },	-- The Light's Wrath
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105081 },	-- Archmage Kalec
 				}),
 				q(40715, {	-- A Pact of Necessity
 					["sourceQuests"] = { 40714 },	-- The Call to War
@@ -472,6 +463,7 @@ _.Zones =
 				q(43394, {	-- Crossing Legion Lines
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 111044 },	-- Lord Maxwell Tyrosus
+					["maps"] = { 748 },
 				}),
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
@@ -1187,14 +1179,7 @@ _.Zones =
 					},
 					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
-					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(43254, {	-- Ritual Ruination
-					["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
-					["classes"] = { WARLOCK },
-					["coord"] = { 73.8, 42.9, 627 },
-					["provider"] = { "n", 109838 },	-- Calydus
 				}),
 				q(44204, {	-- Seal their Fates
 					["classes"] = { ROGUE },
@@ -1337,10 +1322,6 @@ _.Zones =
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 				}),
-				q(43373, {	-- The Best and Brightest
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 110557 },	-- Prophet Velen
-				}),
 				q(42377, {	-- The Brother's Trail
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 106337 },	-- Travard
@@ -1411,18 +1392,10 @@ _.Zones =
 						i(139739),	-- Chestguard of the Uncrowned
 					},
 				}),
-				q(40938, {	-- The Light and the Void
-					["sourceQuests"] = { 40710 },	-- Blade in Twilight
-					["classes"] = { PRIEST },	-- Priest
-					["coord"] = { 46.6, 20.9, 627 },
-					["provider"] = { "n", 101313 },	-- Prophet Velen
-				}),
 				q(41625, {	-- The Light's Wrath
+					["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
 					["classes"] = { PRIEST },
-					["providers"] = {
-						{ "n", 101314 },	-- Alonsus Faol
-						{ "n", 110564 },	-- Alonsus Faol
-					},
+					["provider"] = { "n", 110564 },	-- Alonsus Faol
 				}),
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,

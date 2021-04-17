@@ -130,6 +130,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					["g"] = {
 						i(45087),	-- Runed Orb
+						i(46027),	-- Formula: Enchant Weapon - Blade Ward
+						i(46348),	-- Formula: Enchant Weapon - Blood Draining
 						i(45100),	-- Pattern: Belt of Arctic Life
 						i(45094),	-- Pattern: Belt of Dragons
 						i(45096),	-- Pattern: Blue Belt of Chaos
@@ -347,8 +349,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45112),	-- The Leviathan's Coil
 					i(45292),	-- Energy Siphon
 					i(45286),	-- Pyrite Infuser
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
 					crit(3, {	-- Ignis the Furnace Master
@@ -382,8 +382,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45168),	-- Pyrelight Circle
 					i(45313),	-- Furnace Stone
 					i(45158),	-- Heart of Iron
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(33186, e(1639, {	-- Razorscale
 					crit(2, {	-- Razorscale
@@ -459,8 +457,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45250),	-- Crazed Construct Ring
 					i(45675),	-- Power Enhancing Loop
 					i(45247),	-- Signet of the Earthshaker
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32871, e(1650, {	-- Algalon the Observer
 					ach(12399, {	-- Observed
@@ -580,8 +576,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45232),	-- Runed Ironhide Boots
 					i(45418),	-- Lady Maye's Sapphire Ring
 					i(45235),	-- Radiant Seal
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32930, e(1642, {	-- Kologarn
 					crit(2, {	-- Kologarn
@@ -647,8 +641,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45326),	-- Platinum Band of the Aesir
 					i(45438),	-- Ring of the Faithful Servant
 					i(45866),	-- Elemental Focus Stone
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					crit(1, {	-- Hodir
@@ -1044,8 +1036,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46010),	-- Darkstone Ring
 					i(45503),	-- Metallic Loop of the Sufferer
 					i(45515),	-- Ring of the Vacant Eye
-					i(46027),	-- Formula: Enchant Weapon - Blade Ward
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 					i(45507),	-- The General's Heart
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron

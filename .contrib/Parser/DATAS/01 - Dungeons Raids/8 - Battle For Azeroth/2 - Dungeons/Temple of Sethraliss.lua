@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51378, {	-- Temple of Sethraliss: A Bazaar Menagerie
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
@@ -87,6 +87,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159257),	-- Robes of the Reborn Serpent
 						i(159337),	-- Grips of Electrified Defense
 						i(158368),	-- Fangs of Intertwined Essence
+						i(168131),	-- Essence of the Sands
 					}),
 				}),
 			}),
@@ -154,6 +155,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159257),	-- Robes of the Reborn Serpent
 							i(159337),	-- Grips of Electrified Defense
 							i(158368),	-- Fangs of Intertwined Essence
+							i(168131),	-- Essence of the Sands
 						},
 					}),
 				},
@@ -231,6 +233,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159257),	-- Robes of the Reborn Serpent
 							i(159337),	-- Grips of Electrified Defense
 							i(158368),	-- Fangs of Intertwined Essence
+							i(168131),	-- Essence of the Sands
 						},
 					}),
 				},

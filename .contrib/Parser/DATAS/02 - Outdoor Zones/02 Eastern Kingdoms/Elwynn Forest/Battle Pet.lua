@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(37, {	-- Elwynn Forest
 			filter(101, {	-- Pet Battle
 				p(374, {	-- Black Lamb

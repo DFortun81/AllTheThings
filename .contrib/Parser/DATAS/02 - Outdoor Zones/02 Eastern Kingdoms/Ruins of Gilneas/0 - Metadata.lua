@@ -4,11 +4,8 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(21, {	-- Silverpine Forest
-			m(217, {	-- Ruins of Gilneas
-				-- TODO: This is a subzone to Silverpine Forest. Deserves its own icon and flavor text
-			}),
+	m(EASTERN_KINGDOMS, {
+		m(217, {	-- Ruins of Gilneas
 		}),
 	}),
 };

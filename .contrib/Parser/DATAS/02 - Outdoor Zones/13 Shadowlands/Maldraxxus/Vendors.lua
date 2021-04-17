@@ -25,6 +25,12 @@ _.Zones =
 						i(179939),	-- Wriggling Spider Sac
 					},
 				}),
+				n(168429, {	-- Melody Madcap <Fungus and Drinks>
+					["coord"] = { 40.2, 41.2, 1536 },
+					["g"] = {
+						i(184203),	-- Fungal Hair Tonic
+					},
+				}),
 				n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 					["coord"] = { 50.6, 53.4, 1536 },
 					["g"] = {
@@ -81,6 +87,12 @@ _.Zones =
 								["cost"] = 5000000, -- 500g
 							}),
 						}),
+					},
+				}),
+				n(169964, {	-- One-Eyed Joby <Unusual Wares>
+					["coord"] = { 53.2, 41.2, 1536 },
+					["g"] = {
+						i(181798),	-- Stuffed Construct
 					},
 				}),
 			}),

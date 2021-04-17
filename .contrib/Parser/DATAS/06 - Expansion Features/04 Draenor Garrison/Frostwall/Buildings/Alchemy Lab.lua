@@ -18,6 +18,10 @@ _.ExpansionFeatures =
 								},
 								["isDaily"] = true,
 							}),
+							q(37568, {	-- Your First Alchemy Work Order
+								["provider"] = { "n", 79813 },	-- Albert de Hyde
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 					},
 				}),

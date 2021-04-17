@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["maps"] = {
 			334,	-- The Eye
 		},
-		["coord"] = { 73.73, 63.71, 109 },	-- The Eye, Netherstorm
+		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["groups"] = {
 			n(ZONEDROPS, {
 				["crs"] = {

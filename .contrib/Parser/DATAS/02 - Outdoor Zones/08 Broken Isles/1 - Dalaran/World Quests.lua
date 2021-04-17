@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(627, { 	-- Dalaran
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(42442, {	-- Fight Night: Amalia
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet

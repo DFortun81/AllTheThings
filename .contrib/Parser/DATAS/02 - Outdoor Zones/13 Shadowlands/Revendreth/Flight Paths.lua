@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2488, {	-- Revendreth, Darkhaven
 					["coord"] = { 60.4, 60.6, 1525 },
 				}),

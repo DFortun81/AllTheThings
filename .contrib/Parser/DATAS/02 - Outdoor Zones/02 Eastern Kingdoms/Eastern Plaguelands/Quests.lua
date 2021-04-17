@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(23, {	-- Eastern Plaguelands
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				q(27372, {	-- A Gift For Fiona
-					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+					["sourceQuests"] = { 27371 },	-- What I Do Best
 					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 8.9, 66.5, 23 },
 					["g"] = {
@@ -343,7 +343,7 @@ _.Zones =
 				q(27466, {	-- Argent Call: Northdale
 					["sourceQuests"] = { 27465 },	-- Argent Call: The Noxious Glade
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
-					["coord"] = { 42.5, 91.2, 23 },
+					["coord"] = { 61.6, 43.24, 23 },
 				}),
 				q(27465, {	-- Argent Call: The Noxious Glade
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
@@ -657,7 +657,7 @@ _.Zones =
 				}),
 				q(27526, {	-- Gidwin's Fate Revealed
 					["sourceQuests"] = {
-						27525,	-- Guardians of Stratholme
+						27524,	-- Blind Fury
 						27551,	-- The Baroness' Missive
 					},
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
@@ -1118,6 +1118,38 @@ _.Zones =
 						i(62968),	-- Dawnbringer Legguards
 						i(62967),	-- Rohan's Mask
 						i(62966),	-- Emissary's Watch
+					},
+				}),
+				q(7622, {	-- The Balance of Light and Shadow
+					["qg"] = 14494,	-- Eris Havenfire
+					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST },
+					-- #if NOT ANYCLASSIC
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["lvl"] = 60,
+					["g"] = {
+						i(18659, {	-- Splinter of Nordrassil
+							-- #if NOT ANYCLASSIC
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+							["cost"] = {
+								{ "i", 18646, 1 },	-- The Eye of Divinity
+								{ "i", 18665, 1 },	-- The Eye of Shadow
+							},
+							["groups"] = {
+								i(18609, {	-- Anathema
+									-- #if NOT ANYCLASSIC
+									["u"] = REMOVED_FROM_GAME,
+									-- #endif
+								}),
+								i(18608, {	-- Benediction
+									-- #if NOT ANYCLASSIC
+									["u"] = REMOVED_FROM_GAME,
+									-- #endif
+								}),
+							},
+						}),
 					},
 				}),
 				q(27551, {	-- The Baroness' Missive

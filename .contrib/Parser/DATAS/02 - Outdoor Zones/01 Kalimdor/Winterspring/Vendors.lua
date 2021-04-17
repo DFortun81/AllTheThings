@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			n(VENDORS, {
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>

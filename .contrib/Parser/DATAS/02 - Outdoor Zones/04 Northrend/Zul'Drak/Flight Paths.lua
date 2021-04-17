@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(305, {	-- Ebon Watch, Zul'Drak
 					["coord"] = { 14.0, 73.6, 121 },
 				}),
