@@ -200,15 +200,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(2694)),	-- Settler's Leggings
 					},
 				}),
-				q(862,   {	-- Dig Rat Stew
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3443 },	-- Grub
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10919)),	-- Apothecary Gloves
-						i(5487),	-- Recipe: Dig Rat Stew -- NOTE: This recipe is still available, only quest was retired
-					},
-				}),
 				q(26878, {	-- Disciples of Naralex
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["coord"] = { 49.5, 58.6, 10 },

@@ -13,13 +13,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27405 },	-- Fall Back!
 				}),
-				ql(q(30093, {	-- Assassinate Creed
-					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["coord"] = { 70.0, 40.8, 21 },
-					["classes"] = { ROGUE },
-					["lvl"] = 85,
-					["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
-				})),
 				q(27349, {	-- Break in Communications: Dreadwatch Outpost
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, 217 },
@@ -89,17 +82,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27405 },	-- Fall Back!
 				}),
-				ql(q(30106, {	-- The Deed is Done
-					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["lvl"] = 85,
-					["coord"] = { 70.0, 40.8, 21 },
-					["classes"] = { ROGUE },
-					["sourceQuests"] = { 30093 },	-- Assassinate Creed
-					["g"] = {
-						i(77945),	-- Fear
-						i(77946),	-- Vengeance
-					},
-				})),
 				q(27345, {	-- The F.C.D.
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, 217 },

@@ -72,15 +72,6 @@ _.Zones =
 						27885,	-- The Warden's Game
 					},
 				}),
-				q(2258,  {	-- Badlands Reagent Run II
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 2202 },	-- Source Quest: Uldaman Reagent Run
-					["g"] = {
-						un(REMOVED_FROM_GAME, recipe(11452)),	-- Restorative Potion
-					},
-				}),
 				q(27834, {	-- Baelog, the Glass Cannon
 					["providers"] = {
 						{ "n", 46853 },	-- Baelog
@@ -197,13 +188,6 @@ _.Zones =
 					["provider"] = { "n", 46654 },	-- Rhea
 					["coord"] = { 66.3, 55.4, 15 },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
-				}),
-				q(1559, {	-- Flash Bomb Recipe
-					["requireSkill"] = ENGINEERING,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						i(6672),	-- Schematic: Flash Bomb
-					},
 				}),
 				q(27878, {	-- Forcible Acquisition
 					["provider"] = { "n", 46758 },	-- Aoren Sunglow

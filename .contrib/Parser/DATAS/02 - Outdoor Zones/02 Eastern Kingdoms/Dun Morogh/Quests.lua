@@ -43,14 +43,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(2218)),	-- Craftsman's Dagger
 					},
 				}),
-				q(384,   {	-- Beer Basted Boar Ribs
-					["provider"] = { "n", 1267 },	-- Ragnar Thunderbrew
-					["coord"] = { 53.9, 50.6, 27 },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(2889),	-- Recipe: Beer Basted Boar Ribs
-					},
-				}),
 				q(7674,  {	-- Black Ram Exchange
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill

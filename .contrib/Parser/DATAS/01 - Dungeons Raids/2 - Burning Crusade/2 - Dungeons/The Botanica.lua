@@ -22,9 +22,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
-				model(17819, n(18422, {	-- Sunseeker Botanist
-					i(24172),	-- Design: Coronet of Verdant Flame
-				})),
+				i(24172, {	-- Design: Coronet of Verdant Flame
+					["cr"] = 18422,	-- Sunseeker Botanist
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(17976, e(558, {	-- Commander Sarannis
@@ -44,6 +44,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28318),	-- Obsidian Clodstompers
 					i(23617),	-- Plans: Earthpeace Breastplate
 					i(28315),	-- Stormreaver Warblades
+					i(31744),	-- Botanist's Field Guide
 				})),
 				cr(17978, e(560, {	-- Thorngrin the Tender
 					i(28327),	-- Arcane Netherband
@@ -104,6 +105,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28318),	-- Obsidian Clodstompers
 						i(23617),	-- Plans: Earthpeace Breastplate
 						i(28315),	-- Stormreaver Warblades
+						i(31744),	-- Botanist's Field Guide
 					})),
 					cr(17978, e(560, {	-- Thorngrin the Tender
 						i(28327),	-- Arcane Netherband

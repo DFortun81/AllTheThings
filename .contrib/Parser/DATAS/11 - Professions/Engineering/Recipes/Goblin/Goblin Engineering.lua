@@ -197,4 +197,88 @@ profession(20222, {	-- Goblin Engineering
 			}
 		},
 	}),
+	n(QUESTS, {
+		q(3644, {	-- Membership Card Renewal
+			["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+			["sourceQuest"] = 3639,	-- Show Your Work
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 54.4, 27.2, TANARIS },
+			["requireSkill"] = ENGINEERING,
+			["maps"] = { TANARIS },
+			["cost"] = { { "g", 20000 } },	-- 2g
+			["timeline"] = { "removed 4.0.3.2000" },
+			["repeatable"] = true,
+			["lvl"] = 30,
+			["g"] = {
+				i(10791),	-- Goblin Engineer Membership Card
+			},
+		}),
+		q(3646, {	-- Membership Card Renewal
+			["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
+			["sourceQuest"] = 3639,	-- Show Your Work
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 62.6, 36.2, THE_BARRENS },
+			["requireSkill"] = ENGINEERING,
+			["maps"] = { THE_BARRENS },
+			["cost"] = { { "g", 20000 } },	-- 2g
+			["timeline"] = { "removed 4.0.3.2000" },
+			["repeatable"] = true,
+			["lvl"] = 30,
+			["g"] = {
+				i(10791),	-- Goblin Engineer Membership Card
+			},
+		}),
+		q(3639, {	-- Show Your Work
+			["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+			["sourceQuest"] = 3638,	-- The Pledge of Secrecy
+			["altQuests"] = {
+				3641,	-- Show Your Work
+				3643,	-- Show Your Work
+			},
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 54.4, 27.2, TANARIS },
+			["requireSkill"] = ENGINEERING,
+			["maps"] = { TANARIS },
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+				{ "i", 10559, 6 },	-- Mithril Tube
+			},
+			["lvl"] = 30,
+		}),
+		q(3638, {	-- The Pledge of Secrecy
+			["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+			["sourceQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3633,	-- Goblin Engineering
+				4181,	-- Goblin Engineering
+			},
+			["altQuests"] = {
+				3640,	-- The Pledge of Secrecy
+				3642,	-- The Pledge of Secrecy
+			},
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 54.4, 27.2, TANARIS },
+			["requireSkill"] = ENGINEERING,
+			["maps"] = { TANARIS },
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 10792, 1 },	-- Nixx's Pledge of Secrecy
+			},
+			["lvl"] = 30,
+		}),
+	}),
+	n(REWARDS, {
+		i(11422, {	-- Goblin Engineer's Renewal Gift
+			["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+			["timeline"] = { "removed 4.0.3.2000" },
+			["groups"] = {
+				i(4417),	-- Schematic: Large Seaforium Charge
+				i(11828),	-- Schematic: Pet Bombling
+				i(4416),	-- Schematic: Goblin Land Mine
+			},
+		}),
+	}),
 });

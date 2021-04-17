@@ -22,6 +22,10 @@ _.Zones =
 					},
 				}),
 				-- #endif
+				i(77954, {	-- Vial of Black Dragonsblood
+					["cr"] = 57910,	-- Nalice <Leader of the Blackwyrm Cult>
+					["coord"] = { 54.0, 91.4, DEADWIND_PASS },
+				}),
 			}),
 		}),
 	}),
