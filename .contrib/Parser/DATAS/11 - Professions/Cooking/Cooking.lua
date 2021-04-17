@@ -650,7 +650,6 @@ profession(COOKING, {
 		}),
 		q(6611, {	-- To Gadgetzan You Go!
 			["qg"] = 3399,	-- Zamja
-			["coord"] = { , ORGRIMMAR },
 			-- #if AFTER CATA
 			["coord"] = { 32.2, 69.4, ORGRIMMAR },
 			-- #else
