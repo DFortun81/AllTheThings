@@ -135,28 +135,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(ENGINEERING, {
-					n(QUESTS, {
-						q(29477, {	-- Gnomish Engineering
-							["provider"] = { "n", 52651 },	-- Engineer Palehoof
-							["coord"] = { 36.8, 59.6, 88 },
-							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-						q(29475, {	-- Goblin Engineering
-							["provider"] = { "n", 52651 },	-- Engineer Palehoof
-							["coord"] = { 36.8, 59.6, 88 },
-							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-					}),
-				}),
 				prof(FISHING, {
 					n(ACHIEVEMENTS, {
 						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff

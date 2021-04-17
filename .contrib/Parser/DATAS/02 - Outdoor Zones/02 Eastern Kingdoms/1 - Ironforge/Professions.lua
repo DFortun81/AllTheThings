@@ -159,26 +159,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(ENGINEERING, {
-					n(QUESTS, {
-						q(29477, {	-- Gnomish Engineering
-							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
-							["coord"] = { 68.8, 45.2, 87 },
-							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-						q(29475, {	-- Goblin Engineering
-							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
-							["coord"] = { 68.8, 45.2, 87 },
-							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-					}),
-				}),
 				prof(FISHING, {
 					n(ACHIEVEMENTS, {
 						ach(5847, {	-- Fish or Cut Bait: Ironforge

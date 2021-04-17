@@ -189,13 +189,6 @@ _.Zones =
 					["coord"] = { 66.3, 55.4, 15 },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
-				q(1559, {	-- Flash Bomb Recipe
-					["requireSkill"] = ENGINEERING,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						i(6672),	-- Schematic: Flash Bomb
-					},
-				}),
 				q(27878, {	-- Forcible Acquisition
 					["provider"] = { "n", 46758 },	-- Aoren Sunglow
 					["coord"] = { 52.1, 51.5, 15 },
