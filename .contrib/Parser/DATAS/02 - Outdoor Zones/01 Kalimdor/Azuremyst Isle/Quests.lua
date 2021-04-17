@@ -84,11 +84,13 @@ _.Zones =
 						i(131257),	-- Ravager Scale Pants
 					},
 				}),
-				q(9603,  {	-- Beds, Bandages, and Beyond
-					["provider"] = { "n", 16553 },	-- Caregiver Chellan
-					["coord"] = { 48.3, 49.1, AZUREMYST_ISLE },
-					["races"] = { DRAENEI },
-				}),
+				-- #if AFTER CATA
+					q(9603,  {	-- Beds, Bandages, and Beyond (Quest moved here from Bloodmyst Isle 4.0.3a)
+						["provider"] = { "n", 16553 },	-- Caregiver Chellan
+						["coord"] = { 48.3, 49.1, AZUREMYST_ISLE },
+						["races"] = { DRAENEI },
+					}),
+				-- #endif
 				q(10350, {	-- Behomat
 					["sourceQuests"] = { 9582 },	-- Strength of One
 					["provider"] = { "n", 17480 },	-- Ruada
@@ -214,12 +216,14 @@ _.Zones =
 					["coord"] = { 47.1, 50.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9604,  {	-- On the Wings of a Hippogryph
-					["sourceQuests"] = { 9603 },	-- Beds, Bandages, and Beyond
-					["provider"] = { "n", 43991 },	-- Zaldaan
-					["coord"] = { 49.7, 49.1, AZUREMYST_ISLE },
-					["races"] = { DRAENEI },
-				}),
+				-- #if AFTER CATA
+					q(9604,  {	-- On the Wings of a Hippogryph (Quest moved here from Bloodmyst Isle 4.0.3a)
+						["sourceQuests"] = { 9603 },	-- Beds, Bandages, and Beyond
+						["provider"] = { "n", 43991 },	-- Zaldaan
+						["coord"] = { 49.7, 49.1, AZUREMYST_ISLE },
+						["races"] = { DRAENEI },
+					}),
+				-- #endif
 				q(9523,  {	-- Precious and Fragile Things Need Special Handling
 					["provider"] = { "n", 17242 },	-- Archaeologist Adamant Ironheart
 					["coord"] = { 47.2, 70.0, AZUREMYST_ISLE },
