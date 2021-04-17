@@ -1,40 +1,73 @@
 AllTheThings = {};
 _ = AllTheThings;
 
--- Used by the Harvester
-function Harvest(things)
-	if not _.ItemDB then _.ItemDB = {}; end
-	local thing;
-	for i,j in pairs(things) do
-		thing = _.ItemDB[i];
-		if not thing then
-			thing = {};
-			thing.mods = {};
-			thing.bonuses = {};
-			_.ItemDB[i] = thing;
-		else
-			if not thing.mods then thing.mods = {} end
-			if not thing.bonuses then thing.bonuses = {} end
-		end
-		if j.mods then
-			for l,modID in ipairs(j.mods) do
-				thing.mods[l] = modID;
-			end
-			for l,modID in pairs(j.mods) do
-				thing.mods[l] = modID;
-			end
-		end
-		if j.bonuses then
-			for l,bonusID in pairs(j.bonuses) do
-				thing.bonuses[l] = bonusID;
-			end
-		end
-	end
-end
-
 -- Static values for minReputation/maxReputation properties.
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
+
+-- Raids (TBC)
+KARAZHAN = 350;
+GRUULS_LAIR = 330;	-- Confirmed!
+MAGTHERIDONS_LAIR = 331;	-- Confirmed!
+SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
+TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
+THE_BATTLE_FOR_MOUNT_HYJAL = 329;
+THE_BLACK_TEMPLE = 339;	-- Confirmed!
+SUNWELL_PLATEAU = 335;
+ZULAMAN = 333;
+
+-- Dungeons (TBC)
+AUCHINDOUN_AUCHENAI_CRYPTS = 256;	-- Confirmed! 257 also
+AUCHINDOUN_MANA_TOMBS = 272;	-- Confirmed!
+AUCHINDOUN_SETHEKK_HALLS = 258;	-- Confirmed! 259 also
+AUCHINDOUN_SHADOW_LABYRINTH = 260;	-- Confirmed!
+CAVERNS_OF_TIME_BLACK_MORASS = 273;
+CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS = 274;
+COILFANG_RESERVOIR_SLAVE_PENS = 265;	-- Confirmed!
+COILFANG_RESERVOIR_STEAMVAULT = 263;	-- Confirmed!
+COILFANG_RESERVOIR_UNDERBOG = 262;	-- Confirmed!
+HELLFIRE_CITADEL_BLOOD_FURNACE = 261;	-- Confirmed!
+HELLFIRE_CITADEL_RAMPARTS = 347;	-- Confirmed!
+HELLFIRE_CITADEL_SHATTERED_HALLS = 246;	-- Confirmed!
+MAGISTERS_TERRACE = 348;
+TEMPEST_KEEP_ARCATRAZ = 269;	-- Confirmed! 270, 271 also
+TEMPEST_KEEP_BOTANICA = 266;	-- Confirmed!
+TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
+
+-- Map IDs used in ATT-Classic which don't exist in Live
+STRANGLETHORN_VALE = nil;	-- 1434 Classic
+
+-- Kalimdor
+KALIMDOR = 12;	-- Confirmed!
+ASHENVALE = 63;	-- Confirmed!
+FERALAS = 69;	-- Confirmed!
+
+-- Eastern Kingdoms
+BLASTED_LANDS = 17;	-- Confirmed!
+EASTERN_KINGDOMS = 13;	-- Confirmed!
+ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
+DEADWIND_PASS = 42;	-- Confirmed!
+DUSKWOOD = 47;	-- Confirmed!
+THE_HINTERLANDS = 26;	-- Confirmed!
+
+-- Outland & TBC Additions
+OUTLAND = 101;	-- Confirmed!
+EVERSONG_WOODS = 94;	-- Confirmed!
+GHOSTLANDS = 95;	-- Confirmed!
+ISLE_OF_QUELDANAS = 122;	-- Confirmed!
+SILVERMOON_CITY = 110;	-- Confirmed!
+AZUREMYST_ISLE = 97;	-- Confirmed!
+BLOODMYST_ISLE = 106;	-- Confirmed!
+AMMEN_VALE = 468;
+THE_EXODAR = 103;	-- Confirmed!
+HELLFIRE_PENINSULA = 100;	-- Confirmed!
+ZANGARMARSH = 102;	-- Confirmed!
+NAGRAND = 107;	-- Confirmed!
+NETHERSTORM = 109;	-- Confirmed!
+TEROKKAR_FOREST = 108;	-- Confirmed!
+SHATTRATH_CITY = 111;	-- Confirmed!
+BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
+SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
 -- Helper Tables
 local DifficultyDB = {
@@ -160,7 +193,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DEMONHUNTER,
 };
 
--- Common Custom NPCs used for headers
+-- Headers
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
 FACTIONS = -6013;
@@ -197,70 +230,6 @@ TAILORING = 197;
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
-
--- Raids (TBC)
-KARAZHAN = 350;
-GRUULS_LAIR = 330;	-- Confirmed!
-MAGTHERIDONS_LAIR = 331;	-- Confirmed!
-SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
-TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
-THE_BATTLE_FOR_MOUNT_HYJAL = 329;
-THE_BLACK_TEMPLE = 339;	-- Confirmed!
-SUNWELL_PLATEAU = 335;
-ZULAMAN = 333;
-
--- Dungeons (TBC)
-AUCHINDOUN_AUCHENAI_CRYPTS = 256;	-- Confirmed! 257 also
-AUCHINDOUN_MANA_TOMBS = 272;	-- Confirmed!
-AUCHINDOUN_SETHEKK_HALLS = 258;	-- Confirmed! 259 also
-AUCHINDOUN_SHADOW_LABYRINTH = 260;	-- Confirmed!
-CAVERNS_OF_TIME_BLACK_MORASS = 273;
-CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS = 274;
-COILFANG_RESERVOIR_SLAVE_PENS = 265;	-- Confirmed!
-COILFANG_RESERVOIR_STEAMVAULT = 263;	-- Confirmed!
-COILFANG_RESERVOIR_UNDERBOG = 262;	-- Confirmed!
-HELLFIRE_CITADEL_BLOOD_FURNACE = 261;	-- Confirmed!
-HELLFIRE_CITADEL_RAMPARTS = 347;	-- Confirmed!
-HELLFIRE_CITADEL_SHATTERED_HALLS = 246;	-- Confirmed!
-MAGISTERS_TERRACE = 348;
-TEMPEST_KEEP_ARCATRAZ = 269;	-- Confirmed! 270, 271 also
-TEMPEST_KEEP_BOTANICA = 266;	-- Confirmed!
-TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
-
--- Map IDs used in ATT-Classic which don't exist in Live
-STRANGLETHORN_VALE = nil;	-- 1434 Classic
-
--- Kalimdor
-KALIMDOR = 12;	-- Confirmed!
-ASHENVALE = 63;	-- Confirmed!
-FERALAS = 69;	-- Confirmed!
-
--- Eastern Kingdoms
-BLASTED_LANDS = 17;	-- Confirmed!
-EASTERN_KINGDOMS = 13;	-- Confirmed!
-ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
-DEADWIND_PASS = 42;	-- Confirmed!
-DUSKWOOD = 47;	-- Confirmed!
-THE_HINTERLANDS = 26;	-- Confirmed!
-
--- Outland & TBC Additions
-OUTLAND = 101;	-- Confirmed!
-EVERSONG_WOODS = 94;	-- Confirmed!
-GHOSTLANDS = 95;	-- Confirmed!
-ISLE_OF_QUELDANAS = 122;	-- Confirmed!
-SILVERMOON_CITY = 110;	-- Confirmed!
-AZUREMYST_ISLE = 97;	-- Confirmed!
-BLOODMYST_ISLE = 106;	-- Confirmed!
-AMMEN_VALE = 468;
-THE_EXODAR = 103;	-- Confirmed!
-HELLFIRE_PENINSULA = 100;	-- Confirmed!
-ZANGARMARSH = 102;	-- Confirmed!
-NAGRAND = 107;	-- Confirmed!
-NETHERSTORM = 109;	-- Confirmed!
-TEROKKAR_FOREST = 108;	-- Confirmed!
-SHATTRATH_CITY = 111;	-- Confirmed!
-BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
-SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
 ItemClassInfo = {
 	{
@@ -921,8 +890,6 @@ h = function(t) -- Flag as Horde Only
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
-
-
 -- BEGIN UNFINISHED SECTION:
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
   if not t then t = {};
@@ -941,10 +908,33 @@ model = function(displayID, t)
 	return t;
 end
 
--- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
-ql = function(t)							-- Gives a quest the Legendary Description
-	t.description = "This quest is part of a legendary quest line.";
-	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
-	return t;
+-- Used by the Harvester (Parser)
+function Harvest(things)
+	if not _.ItemDB then _.ItemDB = {}; end
+	local thing;
+	for i,j in pairs(things) do
+		thing = _.ItemDB[i];
+		if not thing then
+			thing = {};
+			thing.mods = {};
+			thing.bonuses = {};
+			_.ItemDB[i] = thing;
+		else
+			if not thing.mods then thing.mods = {} end
+			if not thing.bonuses then thing.bonuses = {} end
+		end
+		if j.mods then
+			for l,modID in ipairs(j.mods) do
+				thing.mods[l] = modID;
+			end
+			for l,modID in pairs(j.mods) do
+				thing.mods[l] = modID;
+			end
+		end
+		if j.bonuses then
+			for l,bonusID in pairs(j.bonuses) do
+				thing.bonuses[l] = bonusID;
+			end
+		end
+	end
 end
--- End Specific Quest Types

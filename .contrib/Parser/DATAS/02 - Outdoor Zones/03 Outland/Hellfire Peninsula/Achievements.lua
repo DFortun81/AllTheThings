@@ -1,25 +1,27 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
 	m(OUTLAND, {
 		m(HELLFIRE_PENINSULA, {
 			n(ACHIEVEMENTS, {
+				-- #if AFTER MOP
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
-					["g"] = {
+					["groups"] = {
 						crit(28, {	-- Nicki Tinytech
 							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 							["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
 						}),
 					},
 				}),
+				-- #endif
 				ach(1189, {	-- To Hellfire and Back [Alliance Version]
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Disrupt the Burning Legion
 							["sourceQuest"] = 10397,	-- Invasion Point: Annihilator
 						}),
@@ -64,7 +66,7 @@ _.Zones =
 				}),
 				ach(1271, {	-- To Hellfire and Back [Horde Version]
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Disrupt the Burning Legion
 							["sourceQuest"] = 10388,	-- Return to Thrallmar
 						}),
@@ -119,3 +121,4 @@ _.Zones =
 		}),
 	}),
 };
+-- #endif

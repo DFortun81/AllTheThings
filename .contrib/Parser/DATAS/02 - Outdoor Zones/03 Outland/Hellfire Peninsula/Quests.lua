@@ -24,7 +24,7 @@ _.Zones =
 					["provider"] = { "n", 16837 },	-- Foreman Biggums
 					["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25785),	-- Adept's Band
 						i(25784),	-- Imbued Chain
 					},
@@ -34,7 +34,7 @@ _.Zones =
 					["provider"] = { "n", 17015 },
 					["coord"] = { 27.1, 61.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25783),	-- Pilgrim's Cover
 						i(25781),	-- Segmented Breastplate
 						i(25782),	-- Sunstrider Legguards
@@ -62,7 +62,7 @@ _.Zones =
 					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(25492)),	-- Earthcaller's Mace
 						un(REMOVED_FROM_GAME, i(25496)),	-- Mag'har Bow
 						un(REMOVED_FROM_GAME, i(25494)),	-- Totemic Staff
@@ -112,7 +112,7 @@ _.Zones =
 					["provider"] = { "n", 16793 },
 					["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25505),	-- Carinda's Wedding Band
 					},
 				}),
@@ -156,7 +156,7 @@ _.Zones =
 						{ 25.64, 75.25, HELLFIRE_PENINSULA },
 					},
 					["crs"] = { 17084 },	-- Avruu
-					["g"] = {
+					["groups"] = {
 						i(25489),	-- Windtalker's Cloak
 						i(25487),	-- Wind Dancer's Pendant
 						i(25488),	-- Signet of Aeranas
@@ -166,7 +166,7 @@ _.Zones =
 					["sourceQuests"] = { 10629 },	-- Shizz Work
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 					["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(30857),	-- Deep Core Lantern
 						i(30855),	-- Shatterstone Pick
 						i(30856),	-- Underworld Helm
@@ -211,7 +211,7 @@ _.Zones =
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29919),	-- Adamantine Kite Shield
 						i(29915),	-- Desolation Rod
 						i(29914),	-- Hellfire Skiver
@@ -228,7 +228,7 @@ _.Zones =
 					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
 					["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29934),	-- Helm of Affinity
 						i(29930),	-- Nature-Stitched Kilt
 						i(29941),	-- Scale Brand Breastplate
@@ -246,7 +246,7 @@ _.Zones =
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
 					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25485),	-- Amaan's Signet
 						i(25486), 	-- Demonslayer's Wristguards
 						i(25484),	-- Telhamat Pendant
@@ -255,7 +255,7 @@ _.Zones =
 				q(10132, {	-- Colossal Menace
 					["provider"] = { "n", 19293 },	-- Tola'thion
 					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(28062),	-- Expedition Repeater
 						i(28063),	-- Survivalist's Wand
 					},
@@ -277,7 +277,7 @@ _.Zones =
 					["provider"] = { "n", 3230 },	-- Nazgrel
 					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28041),	-- Bladefist's Breadth
 						i(28042),	-- Regal Protectorate
 						i(28040),	-- Vengeance of the Illidari
@@ -332,15 +332,18 @@ _.Zones =
 					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 				}),
 				q(10916, {	-- Digging for Prayer Beads
-					["sourceQuests"] = { 10903 },	-- Return to Honor Hold
-					["provider"] = { "n", 22430 },	-- Assistant Klatu
+					["qg"] = 22430,	-- Assistant Klatu
+					["sourceQuest"] = 10903,	-- Return to Honor Hold
 					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 31795, 1 },	-- Draenei Prayer Beads
+					},
 				}),
 				q(10139, {	-- Dispatching the Commander
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
 						un(NEVER_IMPLEMENTED, i(28054)),	-- Fleshripper's Bladed Chestplate
 						i(28055),	-- Gilded Crimson Chestplate
@@ -354,7 +357,7 @@ _.Zones =
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
 					["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29932),	-- Arcane Ringed Tunic
 						i(29939),	-- Flayer-Hide Leggings
 						i(29935),	-- Fore Scarred Breastplate
@@ -367,7 +370,7 @@ _.Zones =
 					["provider"] = { "n", 19273 },	-- Forward Commander To'arch
 					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29932),	-- Arcane Ringed Tunic
 						i(29939),	-- Flayer-Hide Leggings
 						i(29935),	-- Fore Scarred Breastplate
@@ -392,7 +395,7 @@ _.Zones =
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31720),	-- Battlemaster's Breastplate
 						i(31718),	-- Darkstorm Tunic
 						i(31717),	-- Shadowcast Tunic
@@ -440,18 +443,29 @@ _.Zones =
 					["races"] = { BLOODELF },
 				}),
 				q(10919, {	-- Fei Fei's Treat
-					["sourceQuests"] = { 10903 },	-- Return to Honor Hold
-					["description"] = "Part of the |cFFFFD700Digging for Prayer Beads|r quest.",
-					["repeatable"] = true,
+					["qg"] = 20206,	-- Fei Fei
+					["sourceQuest"] = 10903,	-- Return to Honor Hold
+					-- #if BEFORE WRATH
+					["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
+					-- #else
+					["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for a Silken Thread.\n\nSilken Thread can be found upstairs in the inn from the Grand Master Tailor.",
+					-- #endif
 					["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 31799, 1 },	-- Fei Fei Doggy Treat
+					},
+					["repeatable"] = true,
+					["groups"] = {
+						i(31795),	-- Draenei Prayer Beads
+					},
 				}),
 				q(10482, {	-- Fel Orc Scavengers
 					["sourceQuests"] = { 10160 },	-- Know Your Enemy
 					["provider"] = { "n", 16820 },	-- Lieutenant Amadi
 					["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29919),	-- Adamantine Kite Shield
 						i(29915),	-- Desolation Rod
 						i(29914),	-- Hellfire Skiver
@@ -470,7 +484,7 @@ _.Zones =
 					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
 					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29911),	-- Agamaggan's Quill
 						i(29913),	-- Foe Reaver
 						i(29908),	-- Rage Reaver
@@ -507,7 +521,7 @@ _.Zones =
 					["provider"] = { "n", 19683 },	-- Ogath the Mad
 					["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29400),	-- Abyssal Shroud
 						i(29398),	-- Circle of Banishing
 						i(29399),	-- Rod of the Void Caller
@@ -542,7 +556,7 @@ _.Zones =
 					["provider"] = { "n", 22231 },	-- Zezzak
 					["coord"] = { 61.6, 81.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
 						i(28055),	-- Gilded Crimson Chestplate
 						i(28052),	-- Goldweave Tunic
@@ -589,7 +603,7 @@ _.Zones =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(40476),	-- Insignia of the Alliance
 					},
 				}),
@@ -604,7 +618,7 @@ _.Zones =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(40477),	-- Insignia of the Horde
 					},
 				}),
@@ -614,7 +628,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(24581),	-- Mark of Thrallmar
 					},
 				}),
@@ -635,7 +649,7 @@ _.Zones =
 					["provider"] = { "n", 19736 },	-- Althen the Historian
 					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29108),	-- Blade of the Unyielding
 						i(29109),	-- Rod of the Unyielding
 					},
@@ -659,7 +673,7 @@ _.Zones =
 					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
 					["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29938),	-- Battle Seeker Chesguard
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
@@ -675,7 +689,7 @@ _.Zones =
 				q(10161, {  -- In Case of Emergency...
 					["provider"] = { "n", 19367 },
 					["coord"] = { 49.1, 74.8, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(25980),	-- Aerodynamic Scaled Vest
 						i(25981),	-- Dirigible Crash Helmet
 						i(25979),	-- Flintlocke's Piloting Pants
@@ -741,7 +755,7 @@ _.Zones =
 					["provider"] = { "n", 21209 },	-- Dumphry
 					["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29934),	-- Helm of Affinity
 						i(29930),	-- Nature-Stitched Kilt
 						i(29941),	-- Scale Brand Breastplate
@@ -763,7 +777,7 @@ _.Zones =
 					["provider"] = { "n", 16827 },	-- Honor Guard Wesilow
 					["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25989),	-- Draenethyst Chaplet
 						i(25992),	-- Enforcer's Chain
 						i(25993),	-- Finely Wrought Chain
@@ -784,7 +798,7 @@ _.Zones =
 					["provider"] = { "n", 16833 },	-- Makuru
 					["coord"] = { 23.1, 40.1, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25920),	-- Sedai's Blade
 						i(25919),	-- Sedai's Necklace
 						i(25921),	-- Sedai's Ring
@@ -795,7 +809,7 @@ _.Zones =
 					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
 					["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25503),	-- Flamehandler's Gloves
 						i(25502),	-- Lightbearer's Gauntlets
 						i(25504),	-- Pilgrim's Belt
@@ -828,7 +842,7 @@ _.Zones =
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
 					["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29942),	-- Battle Scarred Leggings
 						i(29937),	-- Helm of Infinite Visions
 						i(29944),	-- Protectorate Breastplate
@@ -840,7 +854,7 @@ _.Zones =
 					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29942),	-- Battle Scarred Leggings
 						i(29937),	-- Helm of Infinite Visions
 						i(29944),	-- Protectorate Breastplate
@@ -852,7 +866,7 @@ _.Zones =
 					["provider"] = { "n", 20232 },	-- Wing Commander Gryphongar
 					["coord"] = { 79.3, 33.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29933),	-- Arcane Ringed Greaves
 						i(29936),	-- Skyfire Greaves
 						i(29940),	-- Veteran's Skullcap
@@ -864,7 +878,7 @@ _.Zones =
 					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29933),	-- Arcane Ringed Greaves
 						i(29936),	-- Skyfire Greaves
 						i(29940),	-- Veteran's Skullcap
@@ -888,7 +902,7 @@ _.Zones =
 					["sourceQuests"] = { 10349 },	-- The Earthbinder
 					["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
 					["coord"] = { 15.9, 51.5, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(28075),	-- Destroyer's Mantle
 						i(28069),	-- Golden Cenarion Greaves
 						i(28074),	-- Studded Green Anklewraps
@@ -904,7 +918,7 @@ _.Zones =
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28041),	-- Bladefist's Breadth
 						i(28042),	-- Regal Protectorate
 						i(28040),	-- Vengeance of the Illidari
@@ -983,7 +997,7 @@ _.Zones =
 					["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
 					["coord"] = { 16.0, 52.1, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(25524),	-- Cenarion Expedition Boots
 						i(25522),	-- Marshstrider's Spaulders
 						i(25523),	-- Windcaller's Gauntlets
@@ -1031,7 +1045,7 @@ _.Zones =
 					["sourceQuests"] = { 9361 },	-- Helboar, the Other White Meat
 					["provider"] = { "n", 19344 },	-- Legassi
 					["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(27684),	-- Recipe: Buzzard Bites
 					},
 				}),
@@ -1039,7 +1053,7 @@ _.Zones =
 					["provider"] = { "n", 16794 },	-- Apothecary Azethen
 					["coord"] = { 26.7, 59.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25914),	-- Broken Choker
 						i(25915),	-- Fallen Vindicator's Blade
 						i(25913),	-- Ring of the Slain Anchorite
@@ -1055,7 +1069,7 @@ _.Zones =
 					["sourceQuests"] = { 9372 },	-- Demonic Contamination
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
 					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(25985),	-- Cenarion Naturalist's Staff
 						i(25986),	-- Dreadtusk's Fury
 						i(25987),	-- Helboar Carving Blade
@@ -1089,7 +1103,7 @@ _.Zones =
 					["provider"] = { "n", 17558 },	-- Caza'rez
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { -- NOTE: rewards are available in a different quest
+					["groups"] = { -- NOTE: rewards are available in a different quest
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
 						i(25710),	-- Moonkin Headdress
@@ -1106,7 +1120,7 @@ _.Zones =
 					["provider"] = { "n", 16791 },	-- Ryathen the Somber
 					["coord"] = { 26.9, 59.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25499),	-- Felblood Band
 						i(25500),	-- Felforce Medallion
 						i(25501),	-- Lost Anchorite's Cloak
@@ -1123,7 +1137,7 @@ _.Zones =
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivichk
 					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31715),	-- Demoniac Soul Prison
 					},
 				}),
@@ -1163,7 +1177,7 @@ _.Zones =
 					["provider"] = { "n", 16851 },	-- Mirren Longbeard
 					["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23587),	-- Mirren's Drinking Hat
 					},
 				}),
@@ -1172,7 +1186,7 @@ _.Zones =
 					["provider"] = { "n", 3230 },	-- Nazgrel
 					["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31720),	-- Battlemaster's Breastplate
 						i(31718),	-- Darkstorm Tunic
 						i(31717),	-- Shadowcast Tunic
@@ -1211,7 +1225,7 @@ _.Zones =
 					["provider"] = { "n", 16845 },	-- Gorkan Bloodfish
 					["coord"] = { 31.9, 27.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25510),	-- Ceremonial Robes
 						i(25512),	-- Tribal Hauberk
 						i(25511),	-- Thunderforge Leggings
@@ -1223,7 +1237,7 @@ _.Zones =
 					["provider"] = { "n", 16837 },	-- Foreman Biggums
 					["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25982),	-- Foreman's Sash
 						i(25983),	-- Heavy Miner's Belt
 						i(25984),	-- Miner's Brace
@@ -1245,7 +1259,7 @@ _.Zones =
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus
 					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29911),	-- Agamaggan's Quill
 						i(29913),	-- Foe Reaver
 						i(29908),	-- Rage Reaver
@@ -1273,7 +1287,7 @@ _.Zones =
 					["provider"] = { "n", 16799 },	-- Ikan
 					["coord"] = { 23.0, 40.2, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25479),	-- Boots of the Earthcaller
 						i(25478),	-- Defender's Gauntlets
 						i(25480),	-- Wastewalker's Sash
@@ -1284,7 +1298,7 @@ _.Zones =
 					["provider"] = { "n", 16796 },	-- Amaan the Wise
 					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25507),	-- Leggings of Telhamat
 						i(25508),	-- Omenai Vest
 						i(25506),	-- Vindicator's Chain Helm
@@ -1356,7 +1370,7 @@ _.Zones =
 					["sourceQuests"] = { 10161 },	-- In Case of Emergency...
 					["provider"] = { "n", 19367 },	-- "Screaming" Screed Luckheed
 					["coord"] = { 49.1, 74.8, HELLFIRE_PENINSULA },
-					["g"] = {
+					["groups"] = {
 						i(25787),	-- Charm of Alacrity
 						i(25786),	-- Hypnotist's Watch
 					},
@@ -1365,7 +1379,7 @@ _.Zones =
 					["provider"] = { "o", 181638 },
 					["coord"] = { 28.0, 60.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25483),	-- Fine Sash
 						i(25482),	-- Venn'ren's Boots
 						i(25481),	-- Sunstrider's Gauntlets
@@ -1387,7 +1401,7 @@ _.Zones =
 					["provider"] = { "n", 21209 },	-- Dumphry
 					["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29938),	-- Battle Seeker Chesguard
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
@@ -1398,7 +1412,7 @@ _.Zones =
 					["provider"] = { "n", 17493 },	-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { -- NOTE: rewards now available from a different quest
+					["groups"] = { -- NOTE: rewards now available from a different quest
 						i(25716),	-- Handguards of Precision
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
@@ -1428,7 +1442,7 @@ _.Zones =
 					["provider"] = { "n", 19409 },	-- Wing Commander Dabir'ee
 					["coord"] = { 71.4, 62.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
 						i(28055),	-- Gilded Crimson Chestplate
 						i(28052),	-- Goldweave Tunic
@@ -1441,7 +1455,7 @@ _.Zones =
 					["provider"] = { "n", 22107 },	-- Captain Darkhowl
 					["coord"] = { 61.2, 81.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27732),	-- Infiltrator's Cloak
 						i(27731),	-- Vindicator's Cloak
 					},

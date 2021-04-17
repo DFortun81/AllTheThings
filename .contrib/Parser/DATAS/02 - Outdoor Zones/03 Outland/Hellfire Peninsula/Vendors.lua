@@ -10,7 +10,7 @@ _.Zones =
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
 					["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
 						}),
@@ -19,7 +19,7 @@ _.Zones =
 				n(16588, {	-- Apothecary Antonivich <Alchemy Trainer>
 					["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
 						}),
@@ -28,12 +28,13 @@ _.Zones =
 				n(18267, {	-- Battlecryer Blackeye
 					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27832, {	-- Band of the Victor
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 						}),
 						i(63697, {	-- Bold Blood Garnet
 							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+							["timeline"] = { "added 4.0.1.12941" },
 						}),
 						i(27777, {	-- Brilliant Blood Garnet
 							["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
@@ -55,7 +56,7 @@ _.Zones =
 				n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
 					["coord"] = { 54.2, 41.6, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
@@ -68,14 +69,14 @@ _.Zones =
 				n(16585, {	-- Cookie One-Eye <Food & Drink>
 					["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
 					["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -87,7 +88,7 @@ _.Zones =
 				n(18753, {	-- Felannia <Enchanting Trainer>
 					["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
@@ -97,7 +98,7 @@ _.Zones =
 				n(16602, {	-- Floyd Pinkus <Innkeeper>
 					["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30744),	-- Draenic Leather Pack
 						i(30748, {	-- Enchanter's Satchel
 							["isLimited"] = true,
@@ -116,7 +117,7 @@ _.Zones =
 				n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>
 					["coord"] = { 54.2, 62.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25471),	-- Ebon Gryphon Mount
 						i(25470),	-- Golden Gryphon Mount
 						i(25472),	-- Snowy Gryphon Mount
@@ -129,7 +130,7 @@ _.Zones =
 				n(18773, {	-- Johan Barnes <Enchanting Trainer>
 					["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
@@ -138,7 +139,7 @@ _.Zones =
 				}),
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
@@ -188,7 +189,7 @@ _.Zones =
 				n(18775, {	-- Lebowski <Engineering Trainer>
 					["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							["isLimited"] = true,
 						}),
@@ -200,7 +201,7 @@ _.Zones =
 				n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 					["coord"] = { 56.6, 62.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29153),	-- Blade of the Archmage
 						i(35476),	-- Crusader's Ornamented Spaulders
 						i(35477),	-- Crusader's Scaled Gauntlets
@@ -242,7 +243,7 @@ _.Zones =
 				n(19836, {	-- Mixie Farshot <Gun Merchant>
 					["coord"] = { 61.1, 81.4, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
 							["isLimited"] = true,
 						}),
@@ -254,7 +255,7 @@ _.Zones =
 				n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
 					["coord"] = { 54.9, 37.8, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29168),	-- Ancestral Band
 						i(29167),	-- Blackened Spear
 						i(35406),	-- Crusader's Ornamented Spaulders
@@ -296,7 +297,7 @@ _.Zones =
 				n(16583, {	-- Rohok
 					["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["isLimited"] = true,
@@ -306,14 +307,14 @@ _.Zones =
 				n(16826, {	-- Sid Limbardi <Innkeeper>
 					["coord"] = { 54.2, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(19436, {	-- Supply Master Broog
 					["coord"] = { 87.9, 48.3, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30744, {	-- Draenic Leather Pack
 							["cost"] = 120000,	-- 12g
 						}),
@@ -322,7 +323,7 @@ _.Zones =
 				n(19001, {	-- Talaara <Weapon Merchant>
 					["coord"] = { 23.2, 40.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -333,7 +334,7 @@ _.Zones =
 				}),
 				n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
@@ -383,9 +384,13 @@ _.Zones =
 				n(18266, {	-- Warrant Officer Tracy Proudwell
 					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27833, {	-- Band of the Victor
 							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+						}),
+						i(63696, {	-- Bold Blood Garnet
+							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+							["timeline"] = { "added 4.0.1.12941" },
 						}),
 						i(27812, {	-- Brilliant Blood Garnet
 							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
@@ -398,6 +403,18 @@ _.Zones =
 						}),
 						i(27809, {	-- Jagged Deep Peridot
 							["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+						}),
+						i(24520, {	-- Honor Hold Favor
+							["cost"] = { { "i", 24579, 5 }, },	-- 5x Mark of Honor Hold
+						}),
+						i(31799, {	-- Fei Fei Doggy Treat
+							["cost"] = {
+								-- #if BEFORE WRATH
+								{ "i", 28464, 1 },	-- Sparkling Zircon
+								{ "i", 2931, 1 },	-- Maiden's Anguish
+								-- #endif
+								{ "i", 4291, 1 },	-- Silken Thread
+							},
 						}),
 					},
 				}),
