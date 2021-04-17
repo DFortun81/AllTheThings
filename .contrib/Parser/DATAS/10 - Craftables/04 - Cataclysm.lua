@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(4, {	-- Cataclysm
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			n(-160, {	-- Mounts
 				i(65891),	-- Vial of the Sands
 			}),
@@ -28,7 +28,7 @@ _.Craftables =
 				i(68775),	-- Volatile Alchemist Stone
 			}),
 		}),
-		n(-181, { 	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(70155),	-- Brainsplinter
 				i(55044),	-- Cold-Forged Shank
@@ -177,13 +177,25 @@ _.Craftables =
 				i(69946),	-- Warboots of Mighty Lords
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
+			filter(103, {	-- Illusions
+				i(138791, {	-- Tome of Illusions: Cataclysm
+					ill(4098),	-- Windwalk
+					ill(4084),	-- Heartsong
+					ill(5867),	-- Light of the Earth-Warder
+				}),
+				i(138792, {	-- Tome of Illusions: Elemental Lords
+					ill(4067),	-- Avalanche
+					ill(4099),	-- Landslide
+					ill(4074),	-- Elemental Slayer
+				}),
+			}),
 			filter(101, { 	-- Pet Battle
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
 		}),
-		n(-183, { 	-- Engineering
+		prof(ENGINEERING, {
 			n(-318, {	-- Armour
 				-- Head
 				i(59455),	-- Agile Bio-Optic Killshades*
@@ -223,7 +235,7 @@ _.Craftables =
 				i(59599),	-- Volatile Thunderstick*
 			}),
 		}),
-		n(-185, { 	-- Inscription
+		prof(INSCRIPTION, {
 			n(-491, {	-- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
 					i(61988, {["f"] = 55}),    -- Ace of embers
@@ -287,7 +299,7 @@ _.Craftables =
 				i(87561),	-- Silver Inlaid Staff
 			}),
 		}),
-		n(-186, { 	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(34, {	-- Fist Weapons
 				i(52492),	-- Carnelian Spikes
 				i(52493),	-- The Perforator
@@ -302,10 +314,7 @@ _.Craftables =
 				i(52486, {	-- Jeweler's Sapphire Monocle
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
-				i(52489, {	-- Rhinestone Sunglasses
-					["u"] = 15,
-					["description"] = "To learn this specific item you will need to buy the Black Market AH version",
-				}),
+				i(52489),  	-- Rhinestone Sunglasses
 			}),
 			filter(51, {	-- Neck
 				i(52307, {	-- Alicite Pendant
@@ -345,7 +354,7 @@ _.Craftables =
 				i(75067),	-- Vicious Sapphire Ring
 			}),
 		}),
-		n(-187, { 	-- Leatherworking
+		prof(LEATHERWORKING, {
 			filter(113, {	-- Bags
 				i(70136),			-- Royal Scribe's Satchel
 				i(70137),			-- Triple-Reinforced Mining Bag
@@ -503,7 +512,7 @@ _.Craftables =
 				i(75116),	-- Vicious Dragonscale Shoulders
 			}),
 		}),
-		n(-190, { 	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(54443),	-- Embersilk Bag
 				i(54446),	-- Hyjal Expedition Bag

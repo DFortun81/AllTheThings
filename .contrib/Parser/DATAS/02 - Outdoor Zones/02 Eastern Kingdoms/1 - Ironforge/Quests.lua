@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(87, {	-- Ironforge
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity

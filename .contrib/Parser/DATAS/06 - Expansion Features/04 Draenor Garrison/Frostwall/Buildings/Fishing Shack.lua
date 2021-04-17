@@ -8,6 +8,7 @@ _.ExpansionFeatures =
 		m(590, {	-- Frostwall
 			n(-99, {	-- Buildings
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
+					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {

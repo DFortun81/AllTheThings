@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1569, {	-- Akeeta's Hovel, Shadowmoon Valley
 					["coord"] = { 65.6, 17.6, 539 },
 				}),

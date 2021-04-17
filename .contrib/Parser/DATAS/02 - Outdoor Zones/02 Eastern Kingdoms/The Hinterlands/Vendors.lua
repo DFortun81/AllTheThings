@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(26, {	-- The Hinterlands
 			n(VENDORS, {
 				n(12040, {	-- Brannik Ironbelly <Armorsmith>

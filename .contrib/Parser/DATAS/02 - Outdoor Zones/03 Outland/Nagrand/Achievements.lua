@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(107, {	-- Nagrand (Outland)
+	m(OUTLAND, {
+		m(NAGRAND, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(26, {	-- Narrok
-							["coord"] = { 61.0, 49.4, 107 },
+							["coord"] = { 61.0, 49.4, NAGRAND },
 							["cr"] = 66552,	-- Narrok <Master Pet Tamer>
 						}),
 					},

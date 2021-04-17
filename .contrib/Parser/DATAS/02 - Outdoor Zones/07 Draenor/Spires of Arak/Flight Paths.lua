@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1513, {	-- Apexis Excavation, Spires of Arak
 					["coord"] = { 37.0, 24.6, 542 },
 				}),

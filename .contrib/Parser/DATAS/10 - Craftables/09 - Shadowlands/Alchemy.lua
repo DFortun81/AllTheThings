@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			n(-320, {	-- Head
 				i(180751),	-- Red Noggin Candle
 			}),

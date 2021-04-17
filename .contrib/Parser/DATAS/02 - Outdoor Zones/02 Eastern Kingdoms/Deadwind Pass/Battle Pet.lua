@@ -1,11 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(42, {	-- Deadwind Pass
+	m(EASTERN_KINGDOMS, {
+		m(DEADWIND_PASS, {
 			filter(101, {	-- Pet Battle
 				p(1160, {	-- Arcane Eye
 					["crs"] = { 68819 },	-- Arcane Eye

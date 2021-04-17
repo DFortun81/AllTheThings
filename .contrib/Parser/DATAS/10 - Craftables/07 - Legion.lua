@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(7, {	-- Legion
-		n(-180, {	-- Alchemy
+		prof(ALCHEMY, {
 			n(-37, {	-- Discovery
 				["requireSkill"] = ALCHEMY,
 				["groups"] = {
@@ -128,7 +128,7 @@ _.Craftables =
 				i(127842),	-- Infernal Alchemist Stone
 			}),
 		}),
-		n(-181, {	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(100, {	-- Mounts
 				i(137686),	-- Steelbound Harness
 			}),
@@ -173,7 +173,7 @@ _.Craftables =
 				i(123892),	-- Leystone Boots
 			}),
 		}),
-		n(-182, { 	-- Enchanting
+		prof(ENCHANTING, {
 			filter(101, { 	-- Pet Battle
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
@@ -183,7 +183,7 @@ _.Craftables =
 				i(128536),	-- Leylight Brazier
 			}),
 		}),
-		n(-183, {	-- Engineering
+		prof(ENGINEERING, {
 			filter(101, {	-- Pets
 				i(132519),	-- Trigger*
 			}),
@@ -266,7 +266,7 @@ _.Craftables =
 				},
 			},
 		}),
-		n(-185, {	-- Inscription
+		prof(INSCRIPTION, {
 			filter(111, {	-- Glyphs
 				i(140630, {	-- Glyph of the Doe
 					["questID"] = 62678,
@@ -307,7 +307,7 @@ _.Craftables =
 				i(136693),	-- Straszan Mark
 			}),
 		}),
-		n(-186, {	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			filter(102, {	-- Toy
 				i(130254),	-- Chatterstone
 				i(130251),	-- JewelCraft
@@ -347,7 +347,7 @@ _.Craftables =
 				i(130224),	-- Skystone Loop
 			}),
 		}),
-		n(-187, {	-- Leatherworking
+		prof(LEATHERWORKING, {
 			n(-349, { 	-- Cosmetic
 				un(29, i(151791)),	-- Winter Boots
 			}),
@@ -425,7 +425,7 @@ _.Craftables =
 				i(146668),	-- Vigilance Perch
 			}),
 		}),
-		n(-190, {	-- Tailoring
+		prof(TAILORING, {
 			filter(113, {	-- Bags
 				i(142075),	-- Imbued Silkweave Bag
 				i(127035),	-- Silkweave Satchel

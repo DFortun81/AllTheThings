@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(108, {	-- Terokkar Forest
-			n(-228, {	-- Flight Master
+	m(OUTLAND, {
+		m(TEROKKAR_FOREST, {
+			n(FLIGHT_PATHS, {
 				fp(121, {	-- Allerian Stronghold, Terokkar Forest
-					["coord"] = { 59.4, 55.4, 108 },
+					["coord"] = { 59.4, 55.4, TEROKKAR_FOREST },
 				}),
 				fp(127, {	-- Stonebreaker Hold, Terokkar Forest
-					["coord"] = { 49.2, 43.4, 108 },
+					["coord"] = { 49.2, 43.4, TEROKKAR_FOREST },
 				}),
 			}),
 		}),

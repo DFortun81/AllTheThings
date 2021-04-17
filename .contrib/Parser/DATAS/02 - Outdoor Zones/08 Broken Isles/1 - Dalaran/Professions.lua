@@ -1,6 +1,200 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local ALCHEMICAL_BONDING_AGENT = 138961;	-- Alchemical Bonding Agent
+local AURIPHAGIC_SARDINE = 138957;			-- Auriphagic Sardine
+local GLOB_OF_REALLY_STICKY_GLUE = 138958;	-- Glob of Really Sticky Glue
+local HYPERMAGNETIC_LURE = 138956;			-- Hypermagnetic Lure
+local MICRO_VORTEX_GENERATOR = 138959;		-- Micro-Vortex Generator
+local STARFISH_ON_A_STRING = 138962;		-- Starfish on a String
+local TINY_LITTLE_GRABBING_APPARATUS = 138963;	-- Tiny Little Grabbing Apparatus
+local WISH_CRYSTAL = 138960;				-- Wish Crystal
+local ALL_LURES = {
+	ALCHEMICAL_BONDING_AGENT,	
+	AURIPHAGIC_SARDINE,
+	GLOB_OF_REALLY_STICKY_GLUE,
+	HYPERMAGNETIC_LURE,
+	MICRO_VORTEX_GENERATOR,
+	STARFISH_ON_A_STRING,
+	TINY_LITTLE_GRABBING_APPARATUS,
+	WISH_CRYSTAL,
+};
+local COST_BY_EXCLUDING_LURES = function(...)
+	local cost = {};
+	for i,lure in ipairs(excludeMany(ALL_LURES, ...)) do
+		table.insert(cost, { "i", lure, 1});
+	end
+	if #cost > 0 then
+		return cost;
+	end
+end
+local COIN_BY_LURE = function(index, itemID, ...)
+	local coin = { ["cost"] = COST_BY_EXCLUDING_LURES(...) };
+	if itemID then rawset(coin, "itemID", itemID); end
+	return crit(index, coin);
+end
+
+-- NOT CATABLE FOR EACH LURE
+-- ALCHEMICAL_BONDING_AGENT
+--[[
+Advisor Vandros' Coin
+Cyana Nightglaive's Coin
+Falara Nightsong's Coin
+Gallywix's Coin-on-a-String
+Genn Greymane's Coin
+God-King Skovald's Fel-Tainted Coin
+Malfurion's Coin
+Nathanos Blightcaller's Coin
+Okuna Longtusk's Doubloon
+Queen Azshara's Royal Seal
+Senegos' Ancient Coin
+Spiritwalker Ebonhorn's Coin
+]]
+-- AURIPHAGIC_SARDINE 
+--[[
+Blingtron's Botcoin
+First Arcanist Thalyssra's Coin
+Gallywix's Coin-on-a-String
+Kayn Sunfury's Coin
+Lunara's Coin
+Malfurion's Coin
+Spiritwalker Ebonhorn's Coin
+]]
+-- GLOB_OF_REALLY_STICKY_GLUE
+--[[
+Addie Fizzlebog's Coin
+Advisor Vandros' Coin
+Altruis the Sufferer's Coin
+Blingtron's Botcoin
+Gallywix's Coin-on-a-String
+Genn Greymane's Coin
+God-King Skovald's Fel-Tainted Coin
+Jace Darkweaver's Coin
+Jarod Shadowsong's Coin
+Koda's Sigil
+Magistrix Elisande's Coin
+Murky's Coin
+Oculeth's Vanishing Coin
+Penelope Heathrow's Allowance
+Tyrande's Coin
+]]
+-- HYPERMAGNETIC_LURE
+--[[
+Lunara's Coin
+Senegos' Ancient Coin
+]]
+-- MICRO_VORTEX_GENERATOR
+--[[
+Blingtron's Botcoin
+First Arcanist Thalyssra's Coin
+Hemet Nesingwary's Bullet
+Izal Whitemoon's Coin
+King Mrgl-Mrgl's Coin
+Magistrix Elisande's Coin
+Prince Farondis's Royal Seal
+Senegos' Ancient Coin
+Torok Bloodtotem's Coin
+]]
+-- STARFISH_ON_A_STRING
+--[[
+Blingtron's Botcoin
+Gul'dan's Coin
+Korvas Bloodthorn's Coin
+Kur'talos Ravencrest's Spectral Coin
+Murky's Coin
+Remulos' Sigil
+Sir Finley Mrrgglton's Coin
+]]
+-- TINY_LITTLE_GRABBING_APPARATUS
+--[[
+Tyrande's Coin
+Kur'talos Ravencrest's Spectral Coin
+Gul'dan's Coin
+Hemet Nesingwary's Bullet
+Illidan's Coin
+Jace Darkweaver's Coin
+Jarod Shadowsong's Coin
+Nathanos Blightcaller's Coin
+Genn Greymane's Coin 
+]]
+-- WISH_CRYSTAL
+--[[
+Advisor Vandros' Coin
+Cyana Nightglaive's Coin
+Hemet Nesingwary's Bullet
+Illidan's Coin
+Jace Darkweaver's Coin
+Jarod Shadowsong's Coin
+Kayn Sunfury's Coin
+King Mrgl-Mrgl's Coin
+Kur'talos Ravencrest's Spectral Coin
+Nathanos Blightcaller's Coin
+Oculeth's Vanishing Coin
+Stellagosa's Silver Coin
+The Coin
+Torok Bloodtotem's Coin
+Tyrande's Coin
+Vydhar's Wooden Nickel
+]]
+
+local THE_WISH_REMOVER = {
+	COIN_BY_LURE(1, 138894, WISH_CRYSTAL),	-- Stellagosa's Silver Coin
+	COIN_BY_LURE(2, 138892, MICRO_VORTEX_GENERATOR),	-- Prince Farondis's Royal Seal
+	COIN_BY_LURE(3, 138893),	-- Runas' Last Copper
+	COIN_BY_LURE(4, 138895, ALCHEMICAL_BONDING_AGENT, HYPERMAGNETIC_LURE, MICRO_VORTEX_GENERATOR),	-- Senegos' Ancient Coin
+	COIN_BY_LURE(5, 138896, ALCHEMICAL_BONDING_AGENT),	-- Okuna Longtusk's Doubloon
+	COIN_BY_LURE(6, 138897),	-- Ooker's Dookat
+	COIN_BY_LURE(7, 138898),	-- Coin of Golk the Rumble
+	COIN_BY_LURE(8, 138899),	-- Daglop's Infernal Copper Coin
+	COIN_BY_LURE(9, 138901, GLOB_OF_REALLY_STICKY_GLUE, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Tyrande's Coin
+	COIN_BY_LURE(10, 138902, ALCHEMICAL_BONDING_AGENT, AURIPHAGIC_SARDINE),	-- Malfurion's Coin
+	COIN_BY_LURE(11, 138903, STARFISH_ON_A_STRING, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Kur'talos Ravencrest's Spectral Coin
+	COIN_BY_LURE(12, 138904, GLOB_OF_REALLY_STICKY_GLUE, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Jarod Shadowsong's Coin
+	COIN_BY_LURE(13, 138905, GLOB_OF_REALLY_STICKY_GLUE),	-- Penelope Heathrow's Allowance
+	COIN_BY_LURE(14, 138906, STARFISH_ON_A_STRING),	-- Remulos' Sigil
+	COIN_BY_LURE(15, 138907),	-- Elothir's Golden Leaf
+	COIN_BY_LURE(16, 138908, GLOB_OF_REALLY_STICKY_GLUE),	-- Koda's Sigil
+	COIN_BY_LURE(17, 138909, MICRO_VORTEX_GENERATOR, WISH_CRYSTAL),	-- King Mrgl-Mrgl's Coin
+	COIN_BY_LURE(18, 138910, MICRO_VORTEX_GENERATOR, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Hemet Nesingwary's Bullet
+	COIN_BY_LURE(19, 138911, GLOB_OF_REALLY_STICKY_GLUE, STARFISH_ON_A_STRING),	-- Murky's Coin
+	COIN_BY_LURE(20, 138912, ALCHEMICAL_BONDING_AGENT, AURIPHAGIC_SARDINE),	-- Spiritwalker Ebonhorn's Coin
+	COIN_BY_LURE(21, 138913, GLOB_OF_REALLY_STICKY_GLUE),	-- Addie Fizzlebog's Coin
+	COIN_BY_LURE(22, 138914),	-- Boomboom Brullingsworth's Coin
+	COIN_BY_LURE(23, 138915),	-- The Candleking's Candlecoin
+	COIN_BY_LURE(24, 138916, MICRO_VORTEX_GENERATOR, WISH_CRYSTAL),	-- Torok Bloodtotem's Coin
+	COIN_BY_LURE(25, 138917, ALCHEMICAL_BONDING_AGENT, GLOB_OF_REALLY_STICKY_GLUE),	-- God-King Skovald's Fel-Tainted Coin
+	COIN_BY_LURE(26, 138918, ALCHEMICAL_BONDING_AGENT, GLOB_OF_REALLY_STICKY_GLUE, TINY_LITTLE_GRABBING_APPARATUS),	-- Genn Greymane's Coin
+	COIN_BY_LURE(27, 138919, ALCHEMICAL_BONDING_AGENT, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Nathanos Blightcaller's Coin
+	COIN_BY_LURE(28, 138920),	-- Helya's Coin
+	COIN_BY_LURE(29, 138921, STARFISH_ON_A_STRING),	-- Sir Finley Mrrgglton's Coin
+	COIN_BY_LURE(30, 138922),	-- Havi's Coin
+	COIN_BY_LURE(31, 138923, WISH_CRYSTAL),	-- Vydhar's Wooden Nickel
+	COIN_BY_LURE(32, 138924),	-- Rax Sixtrigger's Gold-Painted Copper Coin
+	COIN_BY_LURE(33, 138925, AURIPHAGIC_SARDINE, MICRO_VORTEX_GENERATOR),	-- First Arcanist Thalyssra's Coin
+	COIN_BY_LURE(34, 138926, GLOB_OF_REALLY_STICKY_GLUE, MICRO_VORTEX_GENERATOR),	-- Magistrix Elisande's Coin
+	COIN_BY_LURE(35, 138927, GLOB_OF_REALLY_STICKY_GLUE, WISH_CRYSTAL),	-- Oculeth's Vanishing Coin
+	COIN_BY_LURE(36, 138928),	-- Ly'leth Lunastre's Family Crest
+	COIN_BY_LURE(37, 138929),	-- Pearlhunter Phin's Soggy Coin
+	COIN_BY_LURE(38, 138930, ALCHEMICAL_BONDING_AGENT, GLOB_OF_REALLY_STICKY_GLUE, WISH_CRYSTAL),	-- Advisor Vandros' Coin
+	COIN_BY_LURE(39, 138931, STARFISH_ON_A_STRING, TINY_LITTLE_GRABBING_APPARATUS),	-- Gul'dan's Coin
+	COIN_BY_LURE(40, 138932),	-- Yowlon's Mark
+	COIN_BY_LURE(41, 138933),	-- Allari the Souleater's Coin
+	COIN_BY_LURE(42, 138934, GLOB_OF_REALLY_STICKY_GLUE),	-- Altruis the Sufferer's Coin
+	COIN_BY_LURE(43, 138935, ALCHEMICAL_BONDING_AGENT, WISH_CRYSTAL),	-- Cyana Nightglaive's Coin
+	COIN_BY_LURE(44, 138936, ALCHEMICAL_BONDING_AGENT),	-- Falara Nightsong's Coin
+	COIN_BY_LURE(45, 138937, MICRO_VORTEX_GENERATOR),	-- Izal Whitemoon's Coin
+	COIN_BY_LURE(46, 138938, GLOB_OF_REALLY_STICKY_GLUE, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Jace Darkweaver's Coin
+	COIN_BY_LURE(47, 138939, AURIPHAGIC_SARDINE, WISH_CRYSTAL),	-- Kayn Sunfury's Coin
+	COIN_BY_LURE(48, 138940, STARFISH_ON_A_STRING),	-- Kor'vas Bloodthorn's Coin
+	COIN_BY_LURE(49, 138941, WISH_CRYSTAL),	-- The Coin
+	COIN_BY_LURE(50, 138942, AURIPHAGIC_SARDINE, GLOB_OF_REALLY_STICKY_GLUE, MICRO_VORTEX_GENERATOR, STARFISH_ON_A_STRING),	-- Blingtron's Botcoin
+	COIN_BY_LURE(51, 138943),	-- Lady Liadrin's Coin
+	COIN_BY_LURE(52, 138944, AURIPHAGIC_SARDINE, HYPERMAGNETIC_LURE),	-- Lunara's Coin
+	COIN_BY_LURE(53, 138945, TINY_LITTLE_GRABBING_APPARATUS, WISH_CRYSTAL),	-- Illidan's Coin
+	COIN_BY_LURE(54, 138946, ALCHEMICAL_BONDING_AGENT),	-- Queen Azshara's Royal Seal
+	COIN_BY_LURE(55, 138947, ALCHEMICAL_BONDING_AGENT, AURIPHAGIC_SARDINE, GLOB_OF_REALLY_STICKY_GLUE),	-- Gallywix's Coin-on-a-String
+	COIN_BY_LURE(56, 138948),	-- Li Li's Coin
+};
 
 _.Zones =
 {
@@ -118,7 +312,7 @@ _.Zones =
 						["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
 							["isWorldQuest"] = true,
 							["requireSkill"] = ALCHEMY,
@@ -312,7 +506,7 @@ _.Zones =
 						["sourceQuest"] = 44449,	-- Advanced Quenching
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41638, {	-- Work Order: Leystone Gauntlets
 							["isWorldQuest"] = true,
 							["requireSkill"] = BLACKSMITHING,
@@ -388,7 +582,7 @@ _.Zones =
 						["sourceQuests"] = { 39905 },	-- Ringing True
 						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = ENCHANTING,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
@@ -508,7 +702,7 @@ _.Zones =
 							recipe(235775),	-- Rechargeable Reaves Battery
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = ENGINEERING,
 							["lvl"] = { 45 },
@@ -585,176 +779,7 @@ _.Zones =
 						ach(10722, { 	-- The Wish Remover
 							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 							["requireSkill"] = FISHING,
-							["g"] = {
-								crit(1, {	-- Stellagosa's Silver Coin
-									["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
-								}),
-								crit(2, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(3, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(4, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(5, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(6, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(7, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(8, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(9, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(10, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(11, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(12, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(13, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(14, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(15, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(16, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(17, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(18, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(19, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(20, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(21, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(22, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(23, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(24, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(25, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(26, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(27, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(28, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(29, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(30, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(31, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(32, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(33, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(34, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(35, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(36, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(37, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(38, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(39, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(40, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(41, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(42, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(43, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(44, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(45, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(46, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(47, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(48, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(49, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(50, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(51, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(52, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(53, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(54, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(55, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-								crit(56, {	-- TODO
-									--["itemID"] = ,	-- TODO (Item)
-								}),
-							},
+							["g"] = THE_WISH_REMOVER,
 						}),
 					}),
 					q(41010, {	-- Fish Frenzy
@@ -986,7 +1011,7 @@ _.Zones =
 							recipe(209660),	-- Mass Mill Foxflower
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
@@ -1108,7 +1133,7 @@ _.Zones =
 							recipe(195850),	-- Versatile Skystone
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(46134, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
 							["requireSkill"] = JEWELCRAFTING,
@@ -1281,7 +1306,7 @@ _.Zones =
 							recipe(194702),	-- Warhide Jerkin (Rank 1)
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41644, {	-- Work Order: Warhide Gloves
 							["requireSkill"] = LEATHERWORKING,
 							["lvl"] = { 45 },
@@ -1291,63 +1316,6 @@ _.Zones =
 								i(137879),	-- Recipe: Warhide Gloves (Rank 3)
 							},
 						}),
-					}),
-				}),
-				prof(MINING, {
-					q(38795, {	-- Felslate Deposit Sample
-						["provider"] = { "i", 124496 },	-- Felslate Deposit Sample
-					}),
-					q(38796, {	-- Felslate Seam Sample
-						["provider"] = { "i", 124497 },	-- Felslate Seam Sample
-					}),
-					q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
-						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { WARRIOR, HUNTER },
-						["provider"] = { "n", 93189 },	-- Mama Diggs
-						["g"] = {
-							recipe(191970),	-- Infernal Brimstone (Rank 3)
-						},
-					}),
-					q(38807, {	-- Infernal Brimstone Analysis
-						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { PALADIN, HUNTER },
-						["provider"] = { "n", 93189 },	-- Mama Diggs
-						["g"] = {
-							recipe(184505),	-- Infernal Brimstone (Rank 2)
-						},
-					}),
-					q(38806, {	-- Infernal Brimstone Sample
-						["provider"] = { "i", 124502 },	-- Infernal Brimstone Sample
-					}),
-					q(39790, {	-- Infernal Brimstone Theory
-						["coord"] = { 46.1, 26.6, 627 },
-						["sourceQuests"] = { 38807 },	-- Infernal Brimstone Analysis
-						["provider"] = { "n", 93189 },	-- Mama Diggs
-					}),
-					q(38777, {	-- Leystone Deposit Sample
-						["provider"] = { "i", 124489 },	-- Leystone Deposit Sample
-					}),
-					q(38784, {	-- Leystone Seam Sample
-						["provider"] = { "i", 124490 },	-- Leystone Seam Sample
-					}),
-					q(38797, {	-- Living Felslate Sample
-						["provider"] = { "i", 124498 },	-- Living Felslate Sample
-					}),
-					q(38785, {	-- Living Leystone Sample
-						["provider"] = { "i", 124491 },	-- Living Leystone Sample
-					}),
-					q(39817, {	-- The Brimstone's Secret
-						["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
-						["provider"] = { "n", 97360 },	-- Matthew Rabis
-					}),
-					q(38901, {	-- The Felsmiths -- TODO: verify if this also requires 38795 and 38796
-						["coord"] = { 46.1, 26.6, 627 },
-						["provider"] = { "n", 93189 },	-- Mama Diggs
-						["sourceQuest"] = 38797,	-- Living Felslate Sample
-					}),
-					q(38888, {	-- The Highmountain Tauren
-						["coord"] = { 46.1, 26.6, 627 },
-						["provider"] = { "n", 93189 },	-- Mama Diggs
 					}),
 				}),
 				prof(SKINNING, {
@@ -1542,7 +1510,7 @@ _.Zones =
 					q(38954, {	-- Where's Lyndras?
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					n(-34, {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(41650, {	-- Work Order: Silkweave Hood
 							["requireSkill"] = TAILORING,
 							["lvl"] = { 45 },

@@ -32,9 +32,15 @@ _.Zones =
 					["coord"] = { 43.4, 22.4, 630 },
 				}),
 				o(253994, {	-- Seemingly Unguarded Treasure
-					["questID"] = 38239,
+					["coord"] = { 65.1, 69.8, 630 },
 					["g"] = {
-						i(129070),	-- Ring of the Dread Pirate Bob
+						o(240354, {	-- Genuinely Unguarded Treasure
+							["questID"] = 38239,
+							["coord"] = { 65.1, 69.8, 630 },
+							["g"] = {
+								i(129070),	-- Ring of the Dread Pirate Bob
+							},
+						}),
 					},
 				}),
 				o(269064, {	-- Small Treasure Chest (need to verify objectID)

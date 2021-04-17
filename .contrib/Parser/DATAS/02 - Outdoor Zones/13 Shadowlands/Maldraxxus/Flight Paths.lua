@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2398, {	-- Bleak Redoubt, Maldraxxus
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
 					["coord"] = { 52.4, 67.7, 1536 },

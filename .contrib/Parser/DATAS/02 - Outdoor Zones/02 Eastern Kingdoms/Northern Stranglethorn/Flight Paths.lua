@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(50, {	-- Northern Stranglethorn
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(593, {	-- Bambala, Stranglethorn
 					["coord"] = { 62.4, 39.2, 50 },
 					["races"] = HORDE_ONLY,

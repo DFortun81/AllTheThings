@@ -5,7 +5,7 @@
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(77, { 	-- Zul'Aman
 		["mapID"] = 333,
-		["coord"] = { 81.8, 64.3, 95 },	-- Zul'Aman, Ghostlands
+		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["groups"] = {
 			d(2, {	-- Heroic
 				["lvl"] = 85,

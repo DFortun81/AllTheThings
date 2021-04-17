@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(57, {	-- Teldrassil
 			n(RARES, {
 				n(2162, {	-- Agal

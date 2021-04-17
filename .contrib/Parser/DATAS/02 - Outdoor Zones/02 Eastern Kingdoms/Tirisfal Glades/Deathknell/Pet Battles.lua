@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(18, {	-- Tirisfal Glades
 			m(465, {	-- Deathknell
 				filter(101, {	-- Pet Battle

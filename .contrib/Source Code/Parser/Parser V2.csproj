@@ -34,9 +34,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;RETAIL</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;RETAIL;SHADOWLANDS</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
@@ -45,20 +45,44 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Classic|x86'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CLASSIC</DefineConstants>
+    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CLASSIC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC;CLASSICBETA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PTR|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Parser\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RETAIL;SHADOWLANDS;PTR</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KeraLua">
+    <Reference Include="KeraLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=04d04586786c6f34, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\KeraLua.dll</HintPath>
     </Reference>
-    <Reference Include="NLua">
+    <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\NLua.dll</HintPath>
     </Reference>
     <Reference Include="System" />

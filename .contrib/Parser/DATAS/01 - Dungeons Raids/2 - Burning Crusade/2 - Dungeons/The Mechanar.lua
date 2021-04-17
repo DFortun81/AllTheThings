@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			267,	-- The Mechanar
 			268,	-- Calculation Chamber
 		},
-		["coord"] = { 70.61, 69.75, 109 },	-- The Mechanar, Netherstorm
+		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
 		["groups"] = {
 			n(QUESTS, {
 				q(29659, {	-- Lost Treasure

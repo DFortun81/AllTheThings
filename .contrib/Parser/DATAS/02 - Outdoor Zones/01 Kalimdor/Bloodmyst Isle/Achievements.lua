@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
-		m(106, {	-- Bloodmyst Isle
+	m(KALIMDOR, {
+		m(BLOODMYST_ISLE, {
 			n(ACHIEVEMENTS, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["races"] = ALLIANCE_ONLY,

@@ -164,10 +164,13 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
 FACTIONS = -6013;
+FLIGHT_PATHS = -228;
 QUESTS = -17;
 RARES = -16;
+REWARDS = -18;
 TREASURES = -212;
 VENDORS = -2;
+WORLD_QUESTS = -34;
 ZONEDROPS = 0;
 
 -- Professions
@@ -177,11 +180,14 @@ BLACKSMITHING = 164;
 COOKING = 185;
 ENCHANTING = 333;
 ENGINEERING = 202;
+GOBLIN_ENGINEERING = 20222;
+GNOMISH_ENGINEERING = 20219;
 FIRST_AID = 129;
 FISHING = 356;
 HERBALISM = 182;
 INSCRIPTION = 773;
 JEWELCRAFTING = 755;
+JUNKYARD_TINKERING = 2720;
 LEATHERWORKING = 165;
 MINING = 186;
 SKINNING = 393;
@@ -192,8 +198,69 @@ NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
+-- Raids (TBC)
+KARAZHAN = 350;
+GRUULS_LAIR = 330;	-- Confirmed!
+MAGTHERIDONS_LAIR = 331;	-- Confirmed!
+SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
+TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
+THE_BATTLE_FOR_MOUNT_HYJAL = 329;
+THE_BLACK_TEMPLE = 339;	-- Confirmed!
+SUNWELL_PLATEAU = 335;
+ZULAMAN = 333;
+
+-- Dungeons (TBC)
+AUCHINDOUN_AUCHENAI_CRYPTS = 256;	-- Confirmed! 257 also
+AUCHINDOUN_MANA_TOMBS = 272;	-- Confirmed!
+AUCHINDOUN_SETHEKK_HALLS = 258;	-- Confirmed! 259 also
+AUCHINDOUN_SHADOW_LABYRINTH = 260;	-- Confirmed!
+CAVERNS_OF_TIME_BLACK_MORASS = 273;
+CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS = 274;
+COILFANG_RESERVOIR_SLAVE_PENS = 265;	-- Confirmed!
+COILFANG_RESERVOIR_STEAMVAULT = 263;	-- Confirmed!
+COILFANG_RESERVOIR_UNDERBOG = 262;	-- Confirmed!
+HELLFIRE_CITADEL_BLOOD_FURNACE = 261;	-- Confirmed!
+HELLFIRE_CITADEL_RAMPARTS = 347;	-- Confirmed!
+HELLFIRE_CITADEL_SHATTERED_HALLS = 246;	-- Confirmed!
+MAGISTERS_TERRACE = 348;
+TEMPEST_KEEP_ARCATRAZ = 269;	-- Confirmed! 270, 271 also
+TEMPEST_KEEP_BOTANICA = 266;	-- Confirmed!
+TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
+
 -- Map IDs used in ATT-Classic which don't exist in Live
 STRANGLETHORN_VALE = nil;	-- 1434 Classic
+
+-- Kalimdor
+KALIMDOR = 12;	-- Confirmed!
+ASHENVALE = 63;	-- Confirmed!
+FERALAS = 69;	-- Confirmed!
+
+-- Eastern Kingdoms
+BLASTED_LANDS = 17;	-- Confirmed!
+EASTERN_KINGDOMS = 13;	-- Confirmed!
+ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
+DEADWIND_PASS = 42;	-- Confirmed!
+DUSKWOOD = 47;	-- Confirmed!
+THE_HINTERLANDS = 26;	-- Confirmed!
+
+-- Outland & TBC Additions
+OUTLAND = 101;	-- Confirmed!
+EVERSONG_WOODS = 94;	-- Confirmed!
+GHOSTLANDS = 95;	-- Confirmed!
+ISLE_OF_QUELDANAS = 122;	-- Confirmed!
+SILVERMOON_CITY = 110;	-- Confirmed!
+AZUREMYST_ISLE = 97;	-- Confirmed!
+BLOODMYST_ISLE = 106;	-- Confirmed!
+AMMEN_VALE = 468;
+THE_EXODAR = 103;	-- Confirmed!
+HELLFIRE_PENINSULA = 100;	-- Confirmed!
+ZANGARMARSH = 102;	-- Confirmed!
+NAGRAND = 107;	-- Confirmed!
+NETHERSTORM = 109;	-- Confirmed!
+TEROKKAR_FOREST = 108;	-- Confirmed!
+SHATTRATH_CITY = 111;	-- Confirmed!
+BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
+SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
 ItemClassInfo = {
 	{
@@ -419,22 +486,27 @@ WOD_CRAFTED_ITEM = function(id)
 			{
 				["itemID"] = id,
 				["bonusID"] = 558,
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					{
 						["itemID"] = id,
 						["bonusID"] = 559,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 594,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 619,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 620,
+						["u"] = REMOVED_FROM_GAME,
 					}
 				}
 			}
@@ -539,8 +611,15 @@ exclude = function(data, t)
 	local t2 = {};
 	if type(data) == "table" then
 		-- Group of Values (You shouldn't be excluding a complex object if that's what you're trying to do)
-		for i,o in ipairs(t) do
-			if not contains(data, o) then
+		if #data > 0 then
+			for i,o in ipairs(t) do
+				if not contains(data, o) then
+					table.insert(t2, o);
+				end
+			end
+		else
+			-- Just create a clone
+			for i,o in ipairs(t) do
 				table.insert(t2, o);
 			end
 		end
@@ -554,6 +633,9 @@ exclude = function(data, t)
 	end
 	return t2;
 end
+excludeMany = function(t, ...)
+	return exclude({...}, t);
+end
 merge = function(...)
 	local t = {};
 	for i,groups in ipairs({...}) do
@@ -565,6 +647,14 @@ merge = function(...)
 end
 isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
+
+-- Asset Path Helper Functions
+asset = function(path)
+	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+end
+icon = function(path)
+	return "Interface\\Icons\\" .. path;
 end
 
 -- SHORTCUTS for Object Class Types
@@ -733,7 +823,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t));
+	local p = prof(skillID, t);-- bubbleDown({ ["requireSkill"] = skillID, }, t)); (don't do this...)
 	_.Professions = { p };
 	return p;
 end

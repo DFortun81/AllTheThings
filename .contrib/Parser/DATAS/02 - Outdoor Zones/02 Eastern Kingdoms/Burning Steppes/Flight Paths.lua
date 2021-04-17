@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(36, {	-- Burning Steppes
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(676, {	-- Chiselgrip, Burning Steppes
 					["coord"] = { 46, 41.8, 36 },
 				}),

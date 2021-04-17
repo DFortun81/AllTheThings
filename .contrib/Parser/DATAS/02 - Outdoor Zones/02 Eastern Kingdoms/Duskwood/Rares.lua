@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(47, {	-- Duskwood
 			n(RARES, {
 				n(45785, {	-- Carved One

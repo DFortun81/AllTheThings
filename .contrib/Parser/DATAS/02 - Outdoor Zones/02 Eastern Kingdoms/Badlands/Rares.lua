@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(15, {	-- Badlands
 			n(RARES, {
 				n(14224, { 	-- 7:XT

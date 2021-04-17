@@ -12,9 +12,9 @@ _.Zones =
 			125,	-- Dalaran: Northrend
 			627,	-- Dalaran: Broken Isles
 			85,		-- Orgrimmar
-			103,	-- The Exodar
-			110,	-- Silvermoon City
-			111,	-- Shattrath City
+			THE_EXODAR,
+			SILVERMOON_CITY,
+			SHATTRATH_CITY,
 			87,		-- Ironforge
 			90,		-- Undercity
 			84,		-- Stormwind City
@@ -25,9 +25,9 @@ _.Zones =
 			{ 51.07, 54.91, 125 },	-- Elizabeth Ross [Dalaran: Northrend]
 			{ 50.55, 55.14, 627 },	-- Elizabeth Ross [Dalaran: Broken Isles]
 			{ 47.62, 74.74, 85 },	-- Garyl [Orgrimmar]
-			{ 53.71, 68.53, 103 },	-- Issca [The Exodar]
-			{ 78.64, 84.73, 110 },	-- Kredis [Silvermoon City]
-			{ 59.01, 46.58, 111 },	-- Linsa [Shattrath City]
+			{ 53.71, 68.53, THE_EXODAR },	-- Issca [The Exodar]
+			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis [Silvermoon City]
+			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa [Shattrath City]
 			{ 36.45, 85.32, 87 },	-- Lyesa Steelbrow [Ironforge]
 			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
 			{ 64.06, 77.41, 84 },	-- Rebecca Laughlin [Stormwind City]

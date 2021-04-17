@@ -9,7 +9,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 186,
-		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 698, 699, 1359, 1360 },
+		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 698, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
 		["coord"] = { 53.7, 87.0, 118 },	-- Icecrown Citadel, Icecrown
 		["g"] = {
 			faction(1156, {	-- The Ashen Verdict

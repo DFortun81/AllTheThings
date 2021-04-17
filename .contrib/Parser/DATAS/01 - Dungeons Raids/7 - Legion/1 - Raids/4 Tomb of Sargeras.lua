@@ -19,7 +19,7 @@ _.Instances = { tier(7, {	-- Legion
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(46503, {	-- Tomb of Sargeras: A Lesson in Pain
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

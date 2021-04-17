@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(71, {	-- Tanaris
 			["achievementID"] = 851,
 			["description"] = "|cff66ccffTanaris is a desert in southern Kalimdor. Players will find both Gadgetzan, a major city of the Steamwheedle cartel, and the Caverns of Time, where the bronze dragonflight made their ancestral home.|r",

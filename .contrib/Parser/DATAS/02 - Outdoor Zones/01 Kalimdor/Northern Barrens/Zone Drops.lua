@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(10, {	-- Northern Barrens
 			n(ZONEDROPS, {
 				i(5107, {	-- Deckhand's Shirt

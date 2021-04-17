@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(111, {	-- Shattrath City
+	m(OUTLAND, {
+		m(SHATTRATH_CITY, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(25, {	-- Morolu the Elder
-							["coord"] = { 59.0, 70.0, 111 },
+							["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 							["cr"] = 66553,	-- Morulu The Elder <Master Pet Tamer>
 						}),
 					},

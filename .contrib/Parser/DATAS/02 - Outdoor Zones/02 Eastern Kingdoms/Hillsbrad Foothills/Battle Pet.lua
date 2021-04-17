@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(25, {	-- Hillsbrad Foothills
 			filter(101, {	-- Pet Battle
 				p(646, { 	-- Chicken

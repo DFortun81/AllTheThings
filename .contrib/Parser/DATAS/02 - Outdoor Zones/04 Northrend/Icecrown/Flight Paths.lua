@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(335, {	-- Crusaders' Pinnacle, Icecrown
 					["coord"] = { 79.4, 72.2, 118 },
 				}),

@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(256, { 	-- The Blood Furnace
 		["lvl"] = 58,
 		["mapID"] = 261,
-		["coord"] = { 46.06, 51.74, 100 },	-- The Blood Furnace, Hellfire Peninsula
+		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["g"] = {
 			n(QUESTS, {
 				q(29539, {	-- Heart of Rage (A)
@@ -160,7 +160,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				}
 			}),
-			n(ZONEDROPS),	-- Note!! Blank so when map merges into the list it's in this spot rather than top
 		},
 	}),
 })};

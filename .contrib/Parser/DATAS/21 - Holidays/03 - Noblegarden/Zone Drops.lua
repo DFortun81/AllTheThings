@@ -21,8 +21,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 							27,	-- Dun Morogh
 							37,	-- Elwynn Forest
 							57,	-- Teldrassil
-							94,	-- Eversong Woods
-							97,	-- Azuremyst Isle
+							EVERSONG_WOODS,
+							AZUREMYST_ISLE,
 						},
 						["g"] = {
 							--Note!! Only achievementID/criteriaID's are listed on items that are otherwise ---.  Collectible items don't need them as they auto check the achievement at the same time.

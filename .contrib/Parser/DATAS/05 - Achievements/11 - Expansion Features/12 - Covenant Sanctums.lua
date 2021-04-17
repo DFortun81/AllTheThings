@@ -8,9 +8,9 @@ _.Achievements =
 		n(-10104, {	-- Covenant Sanctums
 			n(-9955, {	-- General
 				-- These are available to all players regardless of covenant
-				ach(14835),	-- A Resolute Bond
-				ach(14636),	-- Adventurer in Chief
-				ach(14843),	-- Adventures: Harmony of Purpose
+				ach(14835),		-- A Resolute Bond
+				ach(14636),		-- Adventurer in Chief
+				ach(14843),		-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
 					crit(1),	-- Breach the Planes
 					crit(2),	-- Ghelak's Revenge
@@ -31,23 +31,26 @@ _.Achievements =
 					ach(14840),	-- Adventures: Learning the Ropes
 					ach(14841),	-- Adventures: Now You're Cooking
 				}),
-				ach(14839),	-- Bound to Adventure
-				ach(14834),	-- Bound with Purpose
-				ach(14627),	-- Choosing your Purpose
+				ach(14839),		-- Bound to Adventure
+				ach(14834),		-- Bound with Purpose
+				ach(14627),		-- Choosing your Purpose
 				ach(14631, {	-- Champion of the Covenant
 					ach(14628),	-- The Road to Renown
 					ach(14629),	-- Gaining Respect
 					ach(14630),	-- Becoming a Hero
 				}),
-				ach(14632),	-- Conducting Anima
-				ach(14639),	-- Dedication to the Restoration
-				ach(14633),	-- Master Navigator
-				ach(14837),	-- Nexus of Bonds
-				ach(14502),	-- Pursuing Loyalty
-				ach(14777),	-- Restoration Expert
-				ach(14638),	-- The Anima Must Flow
-				ach(14836),	-- Unwavering Bond
-				ach(14637),	-- Your Covenant's Flavor
+				ach(14632),		-- Conducting Anima
+				ach(14639),		-- Dedication to the Restoration
+				ach(14633),		-- Master Navigator
+				ach(14837),		-- Nexus of Bonds
+				ach(14777),		-- Restoration Expert
+				ach(15025, {	-- Sanctum Superior
+					ach(15023),	-- We Can Rebuild
+					ach(15024),	-- Denying the Drought
+				}),
+				ach(14638),		-- The Anima Must Flow
+				ach(14836),		-- Unwavering Bond
+				ach(14637),		-- Your Covenant's Flavor
 			}),
 			n(-939, {	-- Covenant: Kyrian
 				-- These are only available to Kyrian covenant members
@@ -121,6 +124,7 @@ _.Achievements =
 					crit(10),	-- Azaruux
 				}),
 				ach(14864),	-- Personal Nightmare
+				ach(14502),	-- Pursuing Loyalty
 				ach(14852),	-- The Hoot of the Issue
 				ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
 					ach(14340),	-- The Path Towards Ascension 1
@@ -245,22 +249,131 @@ _.Achievements =
 			}),
 			n(-949, {	-- Covenant: Venthyr
 				-- These are only available to Venthyr covenant members
-				ach(14749),	-- Rendle's Big Day
+				ach(14749, {	-- Rendle's Big Day
+					crit(1),	-- Crown of the Righteous
+					crit(2),	-- Fae Revel Masque
+					crit(3),	-- Pink Party Hat
+					crit(4),	-- Red Noggin Candle
+				}),
 				ach(14682, {	-- The Party Herald
 					title(433),	-- <Name>, the Party Herald
-					ach(14680),	-- Something for Everyone
-					ach(14679),	-- Party Palace
-					ach(14678),	-- Court Favors
-					ach(14723),	-- Be Our Guest
-					ach(14724),	-- People Pleaser
+					ach(14680, {	-- Something for Everyone
+						crit(1),	-- Atoning Rituals
+						crit(2),	-- Glimpse of the Wilds
+						crit(3),	-- Lost Chalice Band
+						crit(4),	-- Tubbins's Tea Party
+						crit(5),	-- Divine Desserts
+						crit(6),	-- Mushroom Surprise
+						crit(7),	-- Traditional Decorations
+						crit(8),	-- Mortal Reminders
+						crit(9),	-- Mystery Mirrors
+						crit(10),	-- Venthyr Volunteers
+						crit(11),	-- Stoneborn Reserves
+						crit(12),	-- Maldraxxian Army
+					}),
+					ach(14679, {	-- Party Palace
+						crit(1),	-- Building: Dredger Pool
+						crit(2),	-- Building: Guardhouse
+						crit(3),	-- Staff: Dredger Decorators
+						crit(4),	-- Staff: Stage Crew
+						crit(5),	-- Staff: Waiters
+						crit(6),	-- Staff: Bouncers
+						crit(7),	-- Staff: Revendreth Ambassador
+						crit(8),	-- Staff: Ardenweald Ambassador
+						crit(9),	-- Staff: Maldraxxus Ambassador
+						crit(10),	-- Staff: Bastion Ambassador
+						crit(11),	-- Stock: Greeting Kits
+						crit(12),	-- Stock: Appetizers
+						crit(13),	-- Stock: Anima Samples
+						crit(14),	-- Stock: Comfy Chairs
+						crit(15),	-- Second Guest List Page
+						crit(16),	-- Third Guest List Page
+						crit(17),	-- Fourth Guest List Page
+					}),
+					ach(14678, {	-- Court Favors
+						crit(1),	-- Anima-Infused Water
+						crit(2),	-- Crown of Honor
+						crit(3),	-- Bewitched Wardrobe
+						crit(4),	-- Bounding Shroom Seeds
+						crit(5),	-- Rally Bell
+						crit(6),	-- Tubbins's Lucky Teapot
+						crit(7),	-- Dog Bone's Bone
+						crit(8),	-- Dredger Party Supplies
+						crit(9),	-- Generous Gift
+						crit(10),	-- Racing Permit
+						crit(11),	-- Necrolord Arsenal
+						crit(12),	-- Venthyr Arsenal
+						crit(13),	-- Kyrian Arsenal
+						crit(14),	-- Night Fae Arsenal
+						crit(15),	-- Maldraxxi Challenge Banner
+						crit(16),	-- Vanity Mirror
+						crit(17),	-- Training Dummies
+						crit(18),	-- The Wild Drum
+						crit(19),	-- Protective Braziers
+						crit(20),	-- Slippery Muck
+						crit(21),	-- Altar of Accomplishment
+					}),
+					ach(14723, {	-- Be Our Guest
+						crit(1),	-- Baroness Vashj
+						crit(2),	-- Lady Moonberry
+						crit(3),	-- Mikanikos
+						crit(4),	-- The Countess
+						crit(5),	-- Alexandros Mograine
+						crit(6),	-- Hunt-Captain Korayn
+						crit(7),	-- Polemarch Adrestes
+						crit(8),	-- Rendle and Cudgelface
+						crit(9),	-- Choofa
+						crit(10),	-- Cryptkeeper Kassir
+						crit(11),	-- Droman Aliothe
+						crit(12),	-- Grandmaster Vole
+						crit(13),	-- Kleia and Pelagos
+						crit(14),	-- Plague Deviser Marileth
+						crit(15),	-- Sika
+						crit(16),	-- Stonehead
+					}),
+					ach(14724, {	-- People Pleaser
+						crit(1),	-- Baroness Vashj
+						crit(2),	-- Lady Moonberry
+						crit(3),	-- Mikanikos
+						crit(4),	-- The Countess
+						crit(5),	-- Alexandros Mograine
+						crit(6),	-- Hunt-Captain Korayn
+						crit(7),	-- Polemarch Adrestes
+						crit(8),	-- Rendle and Cudgelface
+						crit(9),	-- Choofa
+						crit(10),	-- Cryptkeeper Kassir
+						crit(11),	-- Droman Aliothe
+						crit(12),	-- Grandmaster Vole
+						crit(13),	-- Kleia and Pelagos
+						crit(14),	-- Plague Deviser Marileth
+						crit(15),	-- Sika
+						crit(16),	-- Stonehead
+					}),
 					ach(14725),	-- We Happy Few
-					ach(14726),	-- It's Certainly Never Boring
+					ach(14726, {	-- It's Certainly Never Boring
+						crit(1),	-- Messy
+						crit(2),	-- Clean
+						crit(3),	-- Safe
+						crit(4),	-- Dangerous
+						crit(5),	-- Humble
+						crit(6),	-- Decadent
+						crit(7),	-- Relaxing
+						crit(8),	-- Exciting
+						crit(9),	-- Casual
+						crit(10),	-- Formal
+					}),
 					ach(14727),	-- Master of Ceremonies
-					ach(14681),	-- Dredger Academy
+					ach(14681, {	-- Dredger Academy
+						crit(1),	-- Ardenweald Etiquette
+						crit(2),	-- Bastion Etiquette
+						crit(3),	-- Maldraxxus Etiquette
+						crit(4),	-- Revendreth Etiquette
+						crit(5),	-- Sinrunner Riding
+						crit(6),	-- Dredbat Riding
+					}),
 					ach(14683),	-- Dredger Style
 				}),
 			}),
-			
 		}),
 	}),
 };

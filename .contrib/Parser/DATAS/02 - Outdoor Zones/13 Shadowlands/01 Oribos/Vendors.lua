@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 61.7, 72.3, 1670 },
 					["g"] = {
 						i(180970, {	-- Teregeer Crystal
-							["description"] = "Take this to Au'larrynar in Maldraxxus |cffffffff(53.6, 47.9)|r.",
+							["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 						}),
 					},
 				}),

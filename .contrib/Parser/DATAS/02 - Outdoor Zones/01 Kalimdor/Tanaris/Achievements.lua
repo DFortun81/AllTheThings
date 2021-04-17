@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(71, {	-- Tanaris
 			n(ACHIEVEMENTS, {
 				ach(4935, {	-- Tanaris Quests

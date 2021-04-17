@@ -678,7 +678,7 @@ _.Zones =
 					["sym"] = {
 						{"select", "mapID", 862},	-- Zuldazar
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
@@ -693,9 +693,9 @@ _.Zones =
 
 						{"select", "mapID", 862},	-- Zuldazar
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
-						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.

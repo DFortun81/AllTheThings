@@ -1259,13 +1259,13 @@ _.Zones =
 									i(155187),	-- Dread Corsair Shoulderplates
 									i(155178),	-- Tidespeaker Circlet
 									i(155188),	-- Tidespeaker Mantle
-									i(155189),	-- Stormchaser Pauldrons	
+									i(155189),	-- Stormchaser Pauldrons
 									i(155179),	-- Stormchaser Coif
 								},
 						}),
 						i(175303),	-- Tidespeaker Circlet (no azerite version)
 						i(175328),	-- Tidespeaker Mantle (no azerite version)
-						i(175304),	-- Stormchaser Coif (no azerite version)	
+						i(175304),	-- Stormchaser Coif (no azerite version)
 						i(175329),	-- Stormchaser Pauldrons (no azerite version)
 						i(175305),	-- Darkwater Hood (no azerite version)
 						i(175326),	-- Darkwater Shoulderpads (no azerite version)
@@ -1297,7 +1297,7 @@ _.Zones =
 								},
 						}),
 						i(175364),	-- Darkwater Tunic (no azerite version)
-						i(175343),	-- Darkwater Shoulderguards (no azerite version) 
+						i(175343),	-- Darkwater Shoulderguards (no azerite version)
 						i(175362),	-- Dread Corsair Breastplate (no azerite version)
 						i(175345),	-- Dread Corsair Pauldrons (no azerite version)
 						i(175342),	-- Tidespeaker Amice (no azerite version)
@@ -1432,13 +1432,13 @@ _.Zones =
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
-					["maps"] = { 
-						863, 	-- nazmir
-						864, 	-- voldun
-						895,	-- tirisgarde
-					--	942,	-- stormsong valley
-						862,	-- zuldazar
-						896,	-- drustvar
+					["maps"] = {
+						863, 	-- Nazmir
+						864, 	-- Vol'dun
+						895,	-- Tiragarde Sound
+						--942,	-- Stormsong Valley
+						862,	-- Zuldazar
+						896,	-- Drustvar
 					},
 				}),
 				q(50743, {	-- The Immediate Problem

@@ -565,6 +565,7 @@ _.Zones =
 					["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
 					["coord"] = { 36.2, 36.8, 864 },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
 						i(169394), 	-- Richly Appointed Drape
 						title(324),	-- Trashmaster

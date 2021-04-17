@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			n(ZONEDROPS, {
 				i(34535),	-- Azure Whelpling
@@ -37,6 +37,16 @@ _.Zones =
 				i(13495, {	-- Recipe: Greater Frost Protection Potion
 					["crs"] = { 7428 },	-- Frostmaul Giant
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				i(18665, {	-- The Eye of Shadow
+					["classes"] = { PRIEST },
+					-- #if NOT ANYCLASSIC
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+					["crs"] = {
+						7461,	-- Hederine Initiate
+						7463,	-- Hederine Slayer
+					},
 				}),
 			}),
 		}),

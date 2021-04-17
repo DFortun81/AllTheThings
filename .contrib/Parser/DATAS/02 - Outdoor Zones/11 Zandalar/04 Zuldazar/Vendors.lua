@@ -334,15 +334,9 @@ _.Zones =
 					["coord"] = { 66.8, 41.6, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(157781, {	-- Extra-Chunky Dino Food
-							["f"] = 104,
-						}),
-						i(157780, {	-- Free-Range Dino Chow
-							["f"] = 104,
-						}),
-						i(157779, {	-- Infant Dino Kibble
-							["f"] = 104,
-						}),
+						i(157781),	-- Extra-Chunky Dino Food
+						i(157780),	-- Free-Range Dino Chow
+						i(157779),	-- Infant Dino Kibble
 					},
 				}),
 				n(142839, {	-- Old Jen'tay

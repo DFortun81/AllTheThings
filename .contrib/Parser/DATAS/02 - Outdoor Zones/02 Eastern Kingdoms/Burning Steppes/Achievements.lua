@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(36, {	-- Burning Steppes
 			n(ACHIEVEMENTS, {
 				ach(4901, {	-- Burning Steppes Quests

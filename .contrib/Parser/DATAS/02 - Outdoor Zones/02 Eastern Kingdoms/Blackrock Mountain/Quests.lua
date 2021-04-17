@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(35, {	-- Blackrock Mountain
 			n(QUESTS, {
 				q(8961, {	-- Three Kings of Flame

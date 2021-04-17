@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(198, {	-- Mount Hyjal
 			n(QUESTS, {
 				q(25731, {	-- A Bird in Hand

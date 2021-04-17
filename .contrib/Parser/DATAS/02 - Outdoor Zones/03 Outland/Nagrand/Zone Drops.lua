@@ -4,19 +4,17 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(107, {	-- Nagrand (Outland)
+	m(OUTLAND, {
+		m(NAGRAND, {
 			n(ZONEDROPS, {
 				i(23608, {	-- Plans: Khorium Belt
-					["crs"] = { 18203 },	-- Murkblood Raider
+					["cr"] = 18203,	-- Murkblood Raider
 				}),
 				i(23611, {	-- Plans: Ragesteel Gloves
-					["crs"] = {
-						17136,	-- Boulderfist Warrior
-					},
+					["cr"] = 17136,	-- Boulderfist Warrior
 				}),
 				i(22923, {	-- Recipe: Major Arcane Protection Potion
-					["crs"] = { 17150 },	-- Vir'aani Arcanist
+					["cr"] = 17150,	-- Vir'aani Arcanist
 				}),
 			}),
 		}),

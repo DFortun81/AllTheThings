@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			258,	-- Veil Sethekk
 			259,	-- Halls of Mourning
 		},
-		["coord"] = { 44.93, 65.61, 108 },	-- Sethekk Halls, Terokkar Forest
+		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["groups"] = {
 			n(ZONEDROPS, {
 				i(25731, {	-- Pattern: Stylin' Crimson Hat
@@ -87,6 +87,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27919),	-- Light-Woven Slippers
 						i(27914),	-- Moonstrider Boots
 						i(27915),	-- Sky-Hunter Swift Boots
+						i(25461, {	-- Book of Forgotten Names
+							["timeline"] = { "removed 7.1.0.1233" },
+						}),
 					})),
 					cr(23035, e(542, {	-- Anzu
 						i(32768, {	-- Reins of the Raven Lord (MOUNT!)

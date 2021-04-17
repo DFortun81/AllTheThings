@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(77, {	-- Felwood
 			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold

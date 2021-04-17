@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(249, {	-- Uldum
 			n(VENDORS, {
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>

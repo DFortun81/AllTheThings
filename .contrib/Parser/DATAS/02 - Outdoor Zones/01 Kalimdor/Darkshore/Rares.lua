@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(62, {	-- Darkshore
 			n(RARES, {
 				n(2186, {	-- Carnivous the Breaker

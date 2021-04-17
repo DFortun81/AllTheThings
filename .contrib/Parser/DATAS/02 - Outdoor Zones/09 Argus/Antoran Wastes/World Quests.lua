@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(48832, {	-- Admiral Rel'var
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },

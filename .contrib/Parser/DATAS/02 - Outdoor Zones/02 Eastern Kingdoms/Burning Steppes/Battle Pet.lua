@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(36, {	-- Burning Steppes
 			filter(101, {	-- Pet Battle
 				p(425, {	-- Ash Viper

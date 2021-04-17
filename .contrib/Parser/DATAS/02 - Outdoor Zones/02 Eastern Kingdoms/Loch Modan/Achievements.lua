@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(48, {	-- Loch Modan
 			n(ACHIEVEMENTS, {
 				ach(4899, {	-- Loch Modan Quests

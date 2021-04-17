@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["maps"] = { 1010 },	-- The Motherlode
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
 					["lvl"] = 120,
 					["isWorldQuest"] = true,

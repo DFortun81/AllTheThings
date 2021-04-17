@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(42119, {	-- A Cleansing Cocktail
 						["lvl"] = 110,

@@ -14,10 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install beautifulsoup4
+          pip install requests beautifulsoup4
 
       - name: Localize all objects
         working-directory: .contrib/.tools
@@ -28,3 +33,4 @@ jobs:
           commit-message: Sync localization
           title: Sync localization
           branch: auto_localization
+          delete-branch: true

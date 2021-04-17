@@ -123,6 +123,7 @@ i(178124);	-- Dancing Motes of Light
 i(173810);	-- Darksight Potion
 i(180661);	-- Darktower Parchments: Affliction Most Foul
 i(180660);	-- Darktower Parchments: Instant Polymorphist
+i(181563);	-- Decree: Mikanikos's Boon
 i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
@@ -189,6 +190,7 @@ i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
+i(119216);	-- Super Sticky Glitter Bomb
 i(15723);	-- Tea with Sugar
 i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop
@@ -423,6 +425,7 @@ i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(184043);	-- Lost Scroll
 i(173781);	-- Lost Watermelon
+i(182212);	-- Magical Curio
 i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(183734);	-- Mysteriously Thrumming Orb

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(179, {	-- Gilneas
 			m(202, {	-- Gilneas City
 				n(QUESTS, {

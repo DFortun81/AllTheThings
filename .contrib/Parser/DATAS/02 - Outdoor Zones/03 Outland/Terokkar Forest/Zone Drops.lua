@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(108, {	-- Terokkar Forest
+	m(OUTLAND, {
+		m(TEROKKAR_FOREST, {
 			n(ZONEDROPS, {
 				i(34491, {    -- Pattern: Bag of Many Hides
 					["crs"] = {

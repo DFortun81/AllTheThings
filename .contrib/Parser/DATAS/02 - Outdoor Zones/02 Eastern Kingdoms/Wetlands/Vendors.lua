@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(56, {	-- Wetlands
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>

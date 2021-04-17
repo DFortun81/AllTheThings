@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(22, {	-- Western Plaguelands
 			n(RARES, {
 				n(50345, { 	-- Alit

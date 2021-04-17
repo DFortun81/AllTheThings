@@ -24,9 +24,9 @@ _.Holidays = bubbleDown({["u"] = 28},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
-					109,	-- Netherstorm
-					111,	-- Shattrath City
+					THE_EXODAR,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
 					504,	-- Isle of Thunder
@@ -192,9 +192,9 @@ _.Holidays = bubbleDown({["u"] = 28},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					94,		-- Eversong Woods
-					109,	-- Netherstorm
-					111,	-- Shattrath City
+					EVERSONG_WOODS,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)
 					210,	-- The Cape of Stranglethorn
@@ -207,8 +207,8 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["maps"] = {
 					1,		-- Durotar
 					18,		-- Tirisfal Glades
-					94,		-- Eversong Woods
-					100,	-- Hellfire Peninsula
+					EVERSONG_WOODS,
+					HELLFIRE_PENINSULA,
 				},
 			}),
 			q(14037, {	-- Spice Bread Stuffing (Horde)

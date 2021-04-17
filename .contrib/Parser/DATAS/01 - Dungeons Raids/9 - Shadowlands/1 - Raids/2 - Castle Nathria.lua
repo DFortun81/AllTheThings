@@ -35,7 +35,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						166970,	-- The Council of Blood — Lord Stavros
 						168938,	-- Sire Denathrius
 						164407,	-- Sludgefist
-						172145,	-- Shriekwing
+						164406,	-- Shriekwing
 					},
 				}),
 			}),
@@ -230,7 +230,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -290,7 +290,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
-						i(183895),	-- Apogee Anima Bead
+						i(183895, {	-- Apogee Anima Bead
+							["modID"] = 83,
+						}),
 						i(181838),	-- Charitable Soul
 						i(183076),	-- Diabolic Bloodstone
 						i(182304),	-- Divine Call
@@ -314,7 +316,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
-						i(183894),	-- Thaumaturgic Anima Bead
+						i(183894, {	-- Thaumaturgic Anima Bead
+							["modID"] = 83,
+						}),
 						i(182108),	-- Thunderous Paws
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
@@ -338,7 +342,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
-						i(183896),	-- Abominable Anima Spherule
+						i(183896, {	-- Abominable Anima Spherule
+							["modID"] = 83,
+						}),
 						i(184587),	-- Ambuscade
 						i(182105),	-- Astral Projection
 						i(183500),	-- Fade to Nothing
@@ -360,12 +366,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183384),	-- Memory of the Exploiter
 						i(183279),	-- Memory of the Freezing Winds
 						i(183310),	-- Memory of the Vanguard's Momentum
-						i(183897),	-- Mystic Anima Spherule
+						i(183897, {	-- Mystic Anima Spherule
+							["modID"] = 83,
+						}),
 						i(181624),	-- Swift Transference
 						i(183465),	-- Ursine Vigor
-						i(183898),	-- Venerated Anima Spherule
+						i(183898, {	-- Venerated Anima Spherule
+							["modID"] = 83,
+						}),
 						i(182318),	-- Viscous Ink
-						i(183899),	-- Zenith Anima Spherule
+						i(183899, {	-- Zenith Anima Spherule
+							["modID"] = 83,
+						}),
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -402,7 +414,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -641,7 +653,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14525),	-- Feed Me, Seymour!
-						i(183895),	-- Apogee Anima Bead
+						i(183895, {	-- Apogee Anima Bead
+							["modID"] = 82,
+						}),
 						i(181838),	-- Charitable Soul
 						i(183076),	-- Diabolic Bloodstone
 						i(182304),	-- Divine Call
@@ -665,7 +679,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
-						i(183894),	-- Thaumaturgic Anima Bead
+						i(183894, {	-- Thaumaturgic Anima Bead
+							["modID"] = 82,
+						}),
 						i(182108),	-- Thunderous Paws
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
@@ -690,7 +706,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
-						i(183896),	-- Abominable Anima Spherule
+						i(183896, {	-- Abominable Anima Spherule
+							["modID"] = 82,
+						}),
 						i(184587),	-- Ambuscade
 						i(182105),	-- Astral Projection
 						i(183500),	-- Fade to Nothing
@@ -712,12 +730,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183384),	-- Memory of the Exploiter
 						i(183279),	-- Memory of the Freezing Winds
 						i(183310),	-- Memory of the Vanguard's Momentum
-						i(183897),	-- Mystic Anima Spherule
+						i(183897, {	-- Mystic Anima Spherule
+							["modID"] = 82,
+						}),
 						i(181624),	-- Swift Transference
 						i(183465),	-- Ursine Vigor
-						i(183898),	-- Venerated Anima Spherule
+						i(183898, {	-- Venerated Anima Spherule
+							["modID"] = 82,
+						}),
 						i(182318),	-- Viscous Ink
-						i(183899),	-- Zenith Anima Spherule
+						i(183899, {	-- Zenith Anima Spherule
+							["modID"] = 82,
+						}),
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -753,7 +777,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -992,7 +1016,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14525),	-- Feed Me, Seymour!
-						i(183895),	-- Apogee Anima Bead
+						i(183895, {	-- Apogee Anima Bead
+							["modID"] = 84,
+						}),
 						i(181838),	-- Charitable Soul
 						i(183076),	-- Diabolic Bloodstone
 						i(182304),	-- Divine Call
@@ -1016,7 +1042,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
-						i(183894),	-- Thaumaturgic Anima Bead
+						i(183894, {	-- Thaumaturgic Anima Bead
+							["modID"] = 84,
+						}),
 						i(182108),	-- Thunderous Paws
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
@@ -1041,12 +1069,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(182169, {	-- Veilwing Soul
-							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
-							["questID"] = 62425,	-- Veilwing Soul
-						}),
+						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
-						i(183896),	-- Abominable Anima Spherule
+						i(183896, {	-- Abominable Anima Spherule
+							["modID"] = 84,
+						}),
 						i(184587),	-- Ambuscade
 						i(182105),	-- Astral Projection
 						i(183500),	-- Fade to Nothing
@@ -1068,12 +1095,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183384),	-- Memory of the Exploiter
 						i(183279),	-- Memory of the Freezing Winds
 						i(183310),	-- Memory of the Vanguard's Momentum
-						i(183897),	-- Mystic Anima Spherule
+						i(183897, {	-- Mystic Anima Spherule
+							["modID"] = 84,
+						}),
 						i(181624),	-- Swift Transference
 						i(183465),	-- Ursine Vigor
-						i(183898),	-- Venerated Anima Spherule
+						i(183898, {	-- Venerated Anima Spherule
+							["modID"] = 84,
+						}),
 						i(182318),	-- Viscous Ink
-						i(183899),	-- Zenith Anima Spherule
+						i(183899, {	-- Zenith Anima Spherule
+							["modID"] = 84,
+						}),
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -1105,7 +1138,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 172145 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
@@ -1353,7 +1386,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						}),
 						ach(14364),	-- Mythic: Stone Legion Generals
 						ach(14525),	-- Feed Me, Seymour!
-						i(183895),	-- Apogee Anima Bead
+						i(183895, {	-- Apogee Anima Bead
+							["modID"] = 85,
+						}),
 						i(181838),	-- Charitable Soul
 						i(183076),	-- Diabolic Bloodstone
 						i(182304),	-- Divine Call
@@ -1377,7 +1412,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
-						i(183894),	-- Thaumaturgic Anima Bead
+						i(183894, {	-- Thaumaturgic Anima Bead
+							["modID"] = 85,
+						}),
 						i(182108),	-- Thunderous Paws
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
@@ -1406,12 +1443,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179358, {	-- Remornia
 							["questID"] = 60501,	-- Redemption for the Redeemer
 						}),
-						i(182169, {	-- Veilwing Soul
-							["customCollect"] = { "SL_COV_NFA", },	-- Night Fae Covenant
-							["questID"] = 62425,	-- Veilwing Soul
-						}),
+						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
-						i(183896),	-- Abominable Anima Spherule
+						i(183896, {	-- Abominable Anima Spherule
+							["modID"] = 85,
+						}),
 						i(184587),	-- Ambuscade
 						i(182105),	-- Astral Projection
 						i(183500),	-- Fade to Nothing
@@ -1433,12 +1469,18 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183384),	-- Memory of the Exploiter
 						i(183279),	-- Memory of the Freezing Winds
 						i(183310),	-- Memory of the Vanguard's Momentum
-						i(183897),	-- Mystic Anima Spherule
+						i(183897, {	-- Mystic Anima Spherule
+							["modID"] = 85,
+						}),
 						i(181624),	-- Swift Transference
 						i(183465),	-- Ursine Vigor
-						i(183898),	-- Venerated Anima Spherule
+						i(183898, {	-- Venerated Anima Spherule
+							["modID"] = 85,
+						}),
 						i(182318),	-- Viscous Ink
-						i(183899),	-- Zenith Anima Spherule
+						i(183899, {	-- Zenith Anima Spherule
+							["modID"] = 85,
+						}),
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality

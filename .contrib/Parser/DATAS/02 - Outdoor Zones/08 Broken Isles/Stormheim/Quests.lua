@@ -389,10 +389,25 @@ _.Zones =
 						38618,	-- Above the Winter Moonlight (Horde)
 					},
 				}),
+				q(39904, {	-- Halls of Valor: Revenge of the Enchantress
+					["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+					["requireSkill"] = ENCHANTING,
+					["g"] = {
+						i(128623),	-- Formula: Enchanted Pen
+					},
+				}),
 				q(40072, {	-- Halls of Valor: Securing the Aegis
 					["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 					["coord"] = { 70.2, 69.1, 634 },
 					["provider"] = { "n", 97988 },	-- Havi
+				}),
+				q(38974, {	-- Halls of Valor: The Right Question
+					["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
+					["coord"] = { 65.6, 56.2, 634 },
+					["requireSkill"] = TAILORING,
+					["g"] = {
+						i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+					},
 				}),
 				q(38331, {	-- Havi's Test
 					["provider"] = { "n", 96254 },	-- Havi
@@ -498,6 +513,13 @@ _.Zones =
 						i(140619),	-- Helbreaker Epaulets
 						i(140620),	-- Helbreaker Spaulders
 						i(140621),	-- Helbreaker Pauldrons
+					},
+				}),
+				q(40546, {	-- Mysteries of Nature
+					["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+					["requireSkill"] = JEWELCRAFTING,
+					["g"] = {
+						recipe(195883),	-- Chatterstone
 					},
 				}),
 				q(42445, {	-- Nithogg's Tribute
@@ -913,6 +935,14 @@ _.Zones =
 						i(121560),	-- Signet of the Watcher's Guile
 					},
 				}),
+				q(40866, {	-- The Shell, You Say?
+					["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+					["requireSkill"] = ENGINEERING,
+					["g"] = {
+						-- recipe(201596),	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
+						recipe(200466),	-- Schematic: Sonic Environment Enhancer
+					},
+				}),
 				q(39803, {	-- The Trials Continue
 					["sourceQuests"] = { 38624 },	-- Cry Thunder!
 					["coord"] = { 47.9, 54.6, 634 },
@@ -1109,6 +1139,17 @@ _.Zones =
 					["coord"] = { 71.5, 59.9, 634 },
 					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
+				q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
+					["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+					["requireSkill"] = ENGINEERING,
+					["sourceQuests"] = {
+						40866,	-- The Shell, You Say?
+						40867,	-- Bubble Baubles
+					},
+					["g"] = {
+						sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
+					},
+				}),
 				q(38473, {	-- Will of the Thorignir (Alliance)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
 					["races"] = ALLIANCE_ONLY,
@@ -1147,64 +1188,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
-				}),
-				n(-38, {	-- Professions
-					n(-182, {	-- Enchanting
-						["requireSkill"] = ENCHANTING,
-						["g"] = {
-							q(39904, {	-- Halls of Valor: Revenge of the Enchantress
-								["provider"] = { "n", 98367 },	-- Tigrid the Charmer
-								["g"] = {
-									i(128623),	-- Formula: Enchanted Pen
-								},
-							}),
-						},
-					}),
-					n(-183, {	-- Engineering
-						["requireSkill"] = ENGINEERING,
-						["g"] = {
-							q(40866, {	-- The Shell, You Say?
-								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
-								["g"] = {
-									-- recipe(201596),	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
-									recipe(200466),	-- Schematic: Sonic Environment Enhancer
-								},
-							}),
-							q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-								["sourceQuests"] = {
-									40866,	-- The Shell, You Say?
-									40867,	-- Bubble Baubles
-								},
-								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
-								["g"] = {
-									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
-								},
-							}),
-						},
-					}),
-					n(-186, {	-- Jewelcrafting
-						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
-							q(40546, {
-								["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-								["g"] = {
-									recipe(195883),	-- Chatterstone
-								},
-							}),
-						},
-					}),
-					n(-190, {	-- Tailoring
-						["requireSkill"] = TAILORING,
-						["g"] = {
-							q(38974, {	-- Halls of Valor: The Right Question
-								["coord"] = { 65.6, 56.2, 634 },
-								["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
-								["g"] = {
-									i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
-								},
-							}),
-						},
-					}),
 				}),
 			--[[ TODO: These quests will be organized soon™
 				q(45534, {	-- A Common Enemy

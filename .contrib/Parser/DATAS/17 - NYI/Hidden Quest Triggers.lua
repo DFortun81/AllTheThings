@@ -195,12 +195,26 @@ _.HiddenQuestTriggers =
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
-		q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
-		q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(36143, {	-- LFGDungeons - Lich King - Dungeon Normal 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(36149, {	-- LFGDungeons - Lich King - Dungeon Normal Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
 		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
 		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(36147, {	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(36139, {	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(31618, {	-- LFGDungeons - Mists - Normal Random - 1st
+			["_drop"] = { "g" },	-- drop satchel
+		}),
+		q(31619, {	-- LFGDungeons - Mists - Normal Random - Nth
+			["_drop"] = { "g" },	-- drop satchel
+		}),
 		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
 		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
@@ -224,6 +238,23 @@ _.HiddenQuestTriggers =
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
 		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
+		
+		-- Trial of Style
+		q(48058),	-- Ensemble: Mana-Etched Regalia
+		q(48059),	-- Ensemble: Der'izu Armor
+		q(48060),	-- Ensemble: Righteous Battleplate
+		q(48061),	-- Ensemble: Obsidian Prowler's Garb
+		q(50344),	-- Ensemble: Mindwrack Raimnet
+		q(50345),	-- Ensemble: Tundraspite Armor
+		q(50346),	-- Ensemble: Crimson Sentinel Garb
+		q(50347),	-- Ensemble: Goldspine Plate
+		q(55559),	-- Ensemble: Armor of the Amaranthine Path
+		q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
+		q(55572),	-- Ensemble: Restless Dreambound Battlegear
+		q(55587),	-- Ensemble: Tranquil Spiritbind Regalia
+		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
+		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
+		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
 
 		-- Darkmoon Faire
 		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
@@ -1111,40 +1142,636 @@ _.HiddenQuestTriggers =
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 
-		--	PvP Set Completed
-		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
-		q(43093),	-- Primal Combatant's Felweave Armor (Horde, Warlock)
-		q(43094),	-- Primal Combatant's Satin Armor (Alliance, Priest)
-		q(43095),	-- Primal Combatant's Satin Armor (Horde, Priest)
-		q(43096),	-- Primal Combatant's Silk Armor (Alliance, Mage)
-		q(43097),	-- Primal Combatant's Silk Armor (Horde, Mage)
+		--	PvP Ensembles
+		q(42975),   -- Wild Combatant's Chain Armor (Hunter - Alliance)
+		q(42992),   -- Wild Combatant's Chain Armor (Hunter - Horde)
+		q(42993),   -- Wild Combatant's Ringmail Armor (Shaman - Alliance)
+		q(42994),   -- Wild Combatant's Ringmail Armor (Shaman - Horde)
+		q(43004),   -- Wild Combatant's Dreadplate Armor (Death Knight - Alliance)
+		q(43005),   -- Wild Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(43005),   -- Wild Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(43006),   -- Wild Combatant's Scaled Armor (Paladin - Alliance)
+		q(43008),   -- Wild Combatant's Scaled Armor (Paladin - Horde)
+		q(43009),   -- Wild Combatant's Plate Armor (Warrior - Alliance)
+		q(43010),   -- Wild Combatant's Plate Armor (Warrior - Horde)
+		q(43011),   -- Wild Combatant's Leather Armor (Rogue - Alliance)
+		q(43012),   -- Wild Combatant's Leather Armor (Rogue - Horde)
+		q(43017),   -- Wild Combatant's Dragonhide Armor (Druid - Alliance)
+		q(43018),   -- Wild Combatant's Dragonhide Armor (Druid - Horde)
+		q(43019),   -- Wild Combatant's Ironskin Armor (Monk - Alliance)
+		q(43020),   -- Wild Combatant's Ironskin Armor (Monk - Horde)
+		q(43021),   -- Wild Combatant's Silk Armor (Mage - Alliance)
+		q(43022),   -- Wild Combatant's Silk Armor (Mage - Horde)
+		q(43023),   -- Wild Combatant's Satin Armor (Priest - Alliance)
+		q(43024),   -- Wild Combatant's Satin Armor (Priest - Horde)
+		q(43025),   -- Wild Combatant's Felweave Armor (Warlock - Alliance)
+		q(43026),   -- Wild Combatant's Felweave Armor (Warlock - Horde)
+		q(43028),   -- Warmongering Combatant's Chain Armor (Hunter - Alliance)
+		q(43029),   -- Warmongering Combatant's Chain Armor (Hunter - Horde)
+		q(43030),   -- Warmongering Combatant's Ringmail Armor (Shaman - Alliance)
+		q(43031),   -- Warmongering Combatant's Ringmail Armor (Shaman - Horde)
+		q(43032),   -- Warmongering Combatant's Dragonhide Armor (Druid - Alliance)
+		q(43033),   -- Warmongering Combatant's Dragonhide Armor (Druid - Horde)
+		q(43034),   -- Warmongering Combatant's Leather Armor (Rogue - Alliance)
+		q(43035),   -- Warmongering Combatant's Leather Armor (Rogue - Horde)
+		q(43036),   -- Warmongering Combatant's Ironskin Armor (Monk - Alliance)
+		q(43037),   -- Warmongering Combatant's Ironskin Armor (Monk - Horde)
+		q(43038),   -- Warmongering Combatant's Dreadplate Armor (Death Knight - Alliance)
+		q(43039),   -- Warmongering Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(43041),   -- Warmongering Combatant's Scaled Armor (Paladin - Alliance)
+		q(43042),   -- Warmongering Combatant's Scaled Armor (Paladin - Horde)
+		q(43043),   -- Warmongering Combatant's Plate Armor (Warrior - Alliance)
+		q(43044),   -- Warmongering Combatant's Plate Armor (Warrior - Horde)
+		q(43045),   -- Warmongering Combatant's Satin Armor (Priest - Alliance)
+		q(43046),   -- Warmongering Combatant's Satin Armor (Priest - Horde)
+		q(43047),   -- Warmongering Combatant's Silk Armor (Mage - Alliance)
+		q(43048),   -- Warmongering Combatant's Silk Armor (Mage - Horde)
+		q(43049),   -- Warmongering Combatant's Felweave Armor (Warlock - Alliance)
+		q(43050),   -- Warmongering Combatant's Felweave Armor (Warlock - Horde)
+		q(43073),   -- Primal Combatant's Chain Armor (Hunter - Alliance)
+		q(43074),   -- Primal Combatant's Chain Armor (Hunter - Horde)
+		q(43075),   -- Primal Combatant's Ringmail Armor (Shaman - Alliance)
+		q(43076),   -- Primal Combatant's Ringmail Armor (Shaman - Horde)
+		q(43077),   -- Primal Combatant's Dragonhide Armor (Druid - Alliance)
+		q(43078),   -- Primal Combatant's Dragonhide Armor (Druid - Horde)
+		q(43080),   -- Primal Combatant's Leather Armor (Rogue - Horde)
+		q(43081),   -- Primal Combatant's Leather Armor (Rogue - Alliance)
+		q(43082),   -- Primal Combatant's Ironskin Armor (Monk - Alliance)
+		q(43083),   -- Primal Combatant's Ironskin Armor (Monk - Horde)
+		q(43084),   -- Primal Combatant's Dreadplate Armor (Death Knight - Alliance)
+		q(43085),   -- Primal Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(43086),   -- Primal Combatant's Scaled Armor (Paladin - Alliance)
+		q(43087),   -- Primal Combatant's Scaled Armor (Paladin - Horde)
+		q(43088),   -- Primal Combatant's Plate Armor (Warrior - Alliance)
+		q(43089),   -- Primal Combatant's Plate Armor (Warrior - Horde)
+		q(43089),   -- Primal Gladiator's Plate Armor (Warrior - Horde)
+		q(43092),   -- Primal Combatant's Felweave Armor (Warlock - Alliance)
+		q(43093),   -- Primal Combatant's Felweave Armor (Warlock - Horde)
+		q(43094),   -- Primal Combatant's Satin Armor (Priest - Alliance)
+		q(43095),   -- Primal Combatant's Satin Armor (Priest - Horde)
+		q(43096),   -- Primal Combatant's Silk Armor (Mage - Alliance)
+		q(43097),   -- Primal Combatant's Silk Armor (Mage - Horde)
+		q(43102),   -- Wild Gladiator's Chain Armor (Hunter - Alliance)
+		q(43103),   -- Wild Gladiator's Chain Armor (Hunter - Horde)
+		q(43104),   -- Wild Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(43105),   -- Wild Gladiator's Ringmail Armor (Shaman - Horde)
+		q(43107),   -- Wild Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(43108),   -- Wild Gladiator's Dragonhide Armor (Druid - Horde)
+		q(43109),   -- Wild Gladiator's Leather Armor (Rogue - Alliance)
+		q(43110),   -- Wild Gladiator's Leather Armor (Rogue - Horde)
+		q(43112),   -- Wild Gladiator's Ironskin Armor (Monk - Alliance)
+		q(43113),   -- Wild Gladiator's Ironskin Armor (Monk - Horde)
+		q(43114),   -- Wild Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(43116),   -- Wild Gladiator's Plate Armor (Warrior - Alliance)
+		q(43117),   -- Wild Gladiator's Plate Armor (Warrior - Horde)
+		q(43118),   -- Wild Gladiator's Scaled Paladin (Paladin - Alliance)
+		q(43119),   -- Wild Gladiator's Scaled Armor (Paladin - Horde)
+		q(43122),   -- Wild Gladiator's Felweave Armor (Warlock - Alliance)
+		q(43123),   -- Wild Gladiator's Felweave Armor (Warlock - Horde)
+		q(43124),   -- Wild Gladiator's Satin Armor (Priest - Alliance)
+		q(43125),   -- Wild Gladiator's Satin Armor (Priest - Horde)
+		q(43126),   -- Wild Gladiator's Silk Armor (Mage - Alliance)
+		q(43127),   -- Wild Gladiator's Silk Armor (Mage - Horde)
+		q(43136),   -- Warmongering Gladiator's Chain Armor (Hunter - Alliance)
+		q(43137),   -- Warmongering Gladiator's Chain Armor (Hunter - Horde)
+		q(43138),   -- Warmongering Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(43139),   -- Warmongering Gladiator's Ringmail Armor (Shaman - Horde)
+		q(43154),   -- Warmongering Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(43155),   -- Warmongering Gladiator's Dragonhide Armor (Druid - Horde)
+		q(43156),   -- Warmongering Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(43157),   -- Warmongering Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(43160),   -- Warmongering Gladiator's Felweave Armor (Warlock - Alliance)
+		q(43161),   -- Warmongering Gladiator's Felweave Armor (Warlock - Horde)
+		q(43163),   -- Warmongering Gladiator's Ironskin Armor (Monk - Alliance)
+		q(43164),   -- Warmongering Gladiator's Ironskin Armor (Monk - Horde)
+		q(43165),   -- Warmongering Gladiator's Leather Armor (Rogue - Alliance)
+		q(43166),   -- Warmongering Gladiator's Leather Armor (Rogue - Horde)
+		q(43167),   -- Warmongering Gladiator's Plate Armor (Warrior - Alliance)
+		q(43168),   -- Warmongering Gladiator's Plate Armor (Warrior - Horde)
+		q(43169),   -- Warmongering Gladiator's Satin Armor (Priest - Alliance)
+		q(43170),   -- Warmongering Gladiator's Satin Armor (Priest - Horde)
+		q(43171),   -- Warmongering Gladiator's Scaled Armor (Paladin - Alliance)
+		q(43172),   -- Warmongering Gladiator's Scaled Armor (Paladin - Horde)
+		q(43173),   -- Warmongering Gladiator's Silk Armor (Mage - Alliance)
+		q(43174),   -- Warmongering Gladiator's Silk Armor (Mage - Horde)
+		q(43197),   -- Primal Gladiator's Chain Armor (Hunter - Alliance)
+		q(43198),   -- Primal Gladiator's Chain Armor (Hunter - Horde)
+		q(43199),   -- Primal Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(43200),   -- Primal Gladiator's Dragonhide Armor (Druid - Horde)
+		q(43201),   -- Primal Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(43202),   -- Primal Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(43203),   -- Primal Gladiator's Felweave Armor (Warlock - Alliance)
+		q(43204),   -- Primal Gladiator's Felweave Armor (Warlock - Horde)
+		q(43209),   -- Primal Gladiator's Ironskin Armor (Monk - Alliance)
+		q(43210),   -- Primal Gladiator's Ironskin Armor (Monk - Horde)
+		q(43211),   -- Primal Gladiator's Leather Armor (Rogue - Alliance)
+		q(43212),   -- Primal Gladiator's Leather Armor (Rogue - Horde)
+		q(43213),   -- Primal Gladiator's Plate Armor (Warrior - Alliance)
+		q(43216),   -- Primal Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(43217),   -- Primal Gladiator's Ringmail Armor (Shaman - Horde)
+		q(43218),   -- Primal Gladiator's Satin Armor (Priest - Alliance)
+		q(43219),   -- Primal Gladiator's Satin Armor (Priest - Horde)
+		q(43220),   -- Primal Gladiator's Scaled Armor (Paladin - Alliance)
+		q(43221),   -- Primal Gladiator's Scaled Armor (Paladin - Horde)
+		q(43222),   -- Primal Gladiator's Silk Armor (Mage - Alliance)
+		q(43223),   -- Primal Gladiator's Silk Armor (Mage - Horde)
+		q(45583),   -- Dreadful Gladiator's Chain Armor (Hunter)
+		q(45584),   -- Dreadful Gladiator's Dragonhide Armor (Druid)
+		q(45585),   -- Dreadful Gladiator's Dreadplate Armor (Death Knight)
+		q(45593),   -- Dreadful Gladiator's Felweave Armor (Warlock)
+		q(45594),   -- Dreadful Gladiator's Ironskin Armor (Monk)
+		q(45595),   -- Dreadful Gladiator's Leather Armor (Rogue)
+		q(45596),   -- Dreadful Gladiator's Plate (Warrior)
+		q(45597),   -- Dreadful Gladiator's Ringmail Armor (Shaman)
+		q(45598),   -- Dreadful Gladiator's Satin Armor (Priest)
+		q(45599),   -- Dreadful Gladiator's Scaled Armor (Paladin)
+		q(45600),   -- Dreadful Gladiator's Silk Armor (Mage)
+		q(45601),   -- Grievous Gladiator's Chain Armor (Hunter - Horde)
+		q(45602),   -- Grievous Gladiator's Chain Armor (Hunter - Alliance)
+		q(45603),   -- Grievous Gladiator's Dragonhide Armor (Druid - Horde)
+		q(45604),   -- Grievous Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(45605),   -- Grievous Gladiator's Felweave Armor (Warlock - Horde)
+		q(45607),   -- Grievous Gladiator's Ironskin Armor (Monk - Horde)
+		q(45608),   -- Grievous Gladiator's Leather Armor (Rogue - Horde)
+		q(45609),   -- Grievous Gladiator's Plate Armor (Warrior - Horde)
+		q(45610),   -- Grievous Gladiator's Ringmail Armor (Shaman - Horde)
+		q(45611),   -- Grievous Gladiator's Satin Armor (Priest - Horde)
+		q(45612),   -- Grievous Gladiator's Scaled Armor (Paladin - Horde)
+		q(45613),   -- Grievous Gladiator's Silk Armor (Mage - Horde)
+		q(45616),   -- Grievous Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(45617),   -- Grievous Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(45618),   -- Grievous Gladiator's Felweave Armor (Warlock - Alliance)
+		q(45619),   -- Grievous Gladiator's Ironskin Armor (Monk - Alliance)
+		q(45620),   -- Grievous Gladiator's Leather Armor (Rogue - Alliance)
+		q(45621),   -- Grievous Gladiator's Plate Armor (Warrior - Alliance)
+		q(45622),   -- Grievous Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(45623),   -- Grievous Gladiator's Satin Armor (Priest - Alliance)
+		q(45624),   -- Grievous Gladiator's Scaled Armor (Paladin - Alliance)
+		q(45625),   -- Grievous Gladiator's Silk Armor (Mage - Alliance)
+		q(45884),   -- Prideful Gladiator's Chain Armor (Hunter - Alliance)
+		q(45885),   -- Prideful Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(45886),   -- Prideful Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(45887),   -- Prideful Gladiator's Felweave Armor (Warlock - Alliance)
+		q(45888),   -- Prideful Gladiator's Ironskin Armor (Monk - Alliance)
+		q(45889),   -- Prideful Gladiator's Leather Armor (Rogue - Alliance)
+		q(45891),   -- Prideful Gladiator's Plate Armor (Warrior - Alliance)
+		q(45892),   -- Prideful Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(45893),   -- Prideful Gladiator's Satin Armor (Priest - Alliance)
+		q(45894),   -- Prideful Gladiator's Scaled Armor (Paladin - Alliance)
+		q(45895),   -- Prideful Gladiator's Silk Armor (Mage - Alliance)
+		q(45896),   -- Prideful Gladiator's Chain Armor (Hunter - Horde)
+		q(45897),   -- Prideful Gladiator's Dragonhide Armor (Druid - Horde)
+		q(45898),   -- Prideful Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(45899),   -- Prideful Gladiator's Felweave Armor (Warlock - Horde)
+		q(45900),   -- Prideful Gladiator's Ironskin Armor (Monk - Horde)
+		q(45901),   -- Prideful Gladiator's Plate Armor (Warrior - Horde)
+		q(45903),   -- Prideful Gladiator's Ringmail Armor (Shaman - Horde)
+		q(45907),   -- Prideful Gladiator's Satin Armor (Priest - Horde)
+		q(45911),   -- Prideful Gladiator's Scaled Armor (Paladin - Horde)
+		q(45912),   -- Prideful Gladiator's Silk Armor (Mage - Horde)
+		q(45935),   -- Tyrannical Gladiator's Chain Armor (Hunter - Horde)
+		q(45936),   -- Tyrannical Gladiator's Dragonhide Armor (Druid - Horde)
+		q(45937),   -- Tyrannical Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(45938),   -- Tyrannical Gladiator's Felweave Armor (Warlock - Horde)
+		q(45939),   -- Tyrannical Gladiator's Satin Armor (Priest - Horde)
+		q(45940),   -- Tyrannical Gladiator's Ironskin Armor (Monk - Horde)
+		q(45942),   -- Tyrannical Gladiator's Leather Armor (Rogue - Horde)
+		q(45943),   -- Tyrannical Gladiator's Plate Armor (Warrior - Horde)
+		q(45944),   -- Tyrannical Gladiator's Ringmail Shaman (Shaman - Horde)
+		q(45945),   -- Tyrannical Gladiator's Scaled Armor (Paladin - Horde)
+		q(45946),   -- Tyrannical Gladiator's Silk Armor (Mage - Horde)
+		q(45947),   -- Tyrannical Gladiator's Chain Armor (Hunter - Alliance)
+		q(45948),   -- Tyrannical Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(45949),   -- Tyrannical Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(45950),   -- Tyrannical Gladiator's Felweave Armor (Warlock - Alliance)
+		q(45951),   -- Tyrannical Gladiator's Ironskin Armor (Monk - Alliance)
+		q(45952),   -- Tyrannical Gladiator's Leather Armor (Rogue - Alliance)
+		q(45953),   -- Tyrannical Gladiator's Plate Armor (Warrior - Alliance)
+		q(45954),   -- Tyrannical Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(45955),   -- Tyrannical Gladiator's Satin Armor (Priest - Alliance)
+		q(45956),   -- Tyrannical Gladiator's Scaled Armor (Paladin - Alliance)
+		q(45957),   -- Tyrannical Gladiator's Silk Armor (Mage - Alliance)
+		q(45958),   -- Malevolent Gladiator's Silk Armor (Mage)
+		q(45959),   -- Malevolent Gladiator's Scaled Armor (Paladin)
+		q(45960),   -- Malevolent Gladiator's Plate Armor (Warrior)
+		q(45961),   -- Malevolent Gladiator's Ironskin Armor (Monk)
+		q(45962),   -- Malevolent Gladiator's Leather Armor (Rogue)
+		q(45963),   -- Malevolent Gladiator's Dragonhide Armor (Druid)
+		q(45964),   -- Malevolent Gladiator's Satin Armor (Priest)
+		q(45965),   -- Malevolent Gladiator's Felweave Armor (Warlock)
+		q(45966),   -- Malevolent Gladiator's Ringmail Armor (Shaman)
+		q(45967),   -- Malevolent Gladiator's Dreadplate Armor (Death Knight)
+		q(45968),   -- Malevolent Gladiator's Chain Armor (Hunter)
+		q(46315),   -- Prideful Gladiator's Leather Armor (Rogue - Horde)
+		q(46352),   -- Vindictive Combatant's Chain Armor (Hunter - Alliance)
+		q(46354),   -- Vindictive Combatant's Chain Armor (Hunter - Horde)
+		q(46355),   -- Cataclysmic Gladiator's Chain Armor (Hunter)
+		q(46356),   -- Vindictive Combatant's Dragonhide Armor (Druid - Alliance)
+		q(46357),   -- Vindictive Combatant's Dragonhide Armor (Druid - Horde)
+		q(46359),   -- Vindictive Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(46361),   -- Vindictive Combatant's Ironskin Armor (Monk - Alliance)
+		q(46362),   -- Vindictive Combatant's Ironskin Armor (Monk - Horde)
+		q(46363),   -- Vindictive Combatant's Leather Armor (Rogue - Alliance)
+		q(46364),   -- Vindictive Combatant's Leather Armor (Rogue - Horde)
+		q(46365),   -- Vindictive Combatant's Plate Armor (Warrior - Horde)
+		q(46366),   -- Vindictive Combatant's Plate Armor (Warrior - Alliance)
+		q(46367),   -- Vindictive Combatant's Ringmail Armor (Shaman - Alliance)
+		q(46368),   -- Vindictive Combatant's Ringmail Armor (Shaman - Horde)
+		q(46369),   -- Vindictive Combatant's Satin Armor (Priest - Horde)
+		q(46370),   -- Vindictive Combatant's Satin Armor (Priest - Alliance)
+		q(46371),   -- Vindictive Combatant's Scaled Armor (Paladin - Horde)
+		q(46372),   -- Vindictive Combatant's Scaled Armor (Paladin - Alliance)
+		q(46373),   -- Vindictive Combatant's Silk Armor (Mage - Horde)
+		q(46374),   -- Vindictive Combatant's Silk Armor (Mage - Alliance)
+		q(46377),   -- Vindictive Gladiator's Chain Armor (Hunter - Horde)
+		q(46378),   -- Vindictive Gladiator's Chain Armor (Hunter - Alliance)
+		q(46379),   -- Vindictive Gladiator's Dragonhide Armor (Druid - Horde)
+		q(46380),   -- Vindictive Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(46381),   -- Vindictive Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(46382),   -- Vindictive Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(46383),   -- Vindictive Gladiator's Felweave Armor (Warlock - Alliance)
+		q(46384),   -- Vindictive Gladiator's Felweave Armor (Warlock - Horde)
+		q(46385),   -- Vindictive Gladiator's Ironskin Armor (Monk - Horde)
+		q(46386),   -- Vindictive Gladiator's Ironskin Armor (Monk - Alliance)
+		q(46387),   -- Vindictive Gladiator's Leather Armor (Rogue - Alliance)
+		q(46388),   -- Vindictive Gladiator's Leather Armor (Rogue - Horde)
+		q(46389),   -- Vindictive Gladiator's Plate Armor (Warrior - Alliance)
+		q(46390),   -- Vindictive Gladiator's Plate Armor (Warrior - Horde)
+		q(46391),   -- Vindictive Gladiator's Ringmail Armor (Shaman - Horde)
+		q(46392),   -- Vindictive Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(46393),   -- Vindictive Gladiator's Satin Armor (Priest - Horde)
+		q(46394),   -- Vindictive Gladiator's Satin Armor (Priest - Alliance)
+		q(46395),   -- Vindictive Gladiator's Scaled Armor (Paladin - Horde)
+		q(46396),   -- Vindictive Gladiator's Scaled Armor (Paladin - Alliance)
+		q(46397),   -- Vindictive Gladiator's Silk Armor (Mage - Horde)
+		q(46398),   -- Vindictive Gladiator's Silk Armor (Mage - Alliance)
+		q(46399),   -- Vindictive Gladiator's Felskin Armor (Demon Hunter - Alliance)
+		q(46400),   -- Vindictive Gladiator's Felskin Armor (Demon Hunter - Horde)
+		q(46401),   -- Vindictive Gladiator's Chain Armor (Hunter)
+		q(46402),   -- Vindictive Gladiator's Chain Armor (Hunter)
+		q(46403),   -- Vindictive Gladiator's Dragonhide Armor (Druid)
+		q(46404),   -- Vindictive Gladiator's Dragonhide Armor (Druid)
+		q(46405),   -- Vindictive Gladiator's Dreadplate Armor (Death Knight)
+		q(46406),   -- Vindictive Gladiator's Dreadplate Armor (Death Knight)
+		q(46407),   -- Vindictive Gladiator's Felweave Armor (Warlock)
+		q(46408),   -- Vindictive Gladiator's Felweave Armor (Warlock)
+		q(46409),   -- Vindictive Gladiator's Ironskin Armor (Monk)
+		q(46410),   -- Vindictive Gladiator's Ironskin Armor (Monk)
+		q(46411),   -- Vindictive Gladiator's Leather Armor (Rogue)
+		q(46412),   -- Vindictive Gladiator's Leather Armor (Rogue)
+		q(46413),   -- Vindictive Gladiator's Plate Armor (Warrior)
+		q(46414),   -- Vindictive Gladiator's Plate Armor (Warrior)
+		q(46415),   -- Vindictive Gladiator's Ringmail Armor (Shaman)
+		q(46416),   -- Vindictive Gladiator's Ringmail Armor (Shaman)
+		q(46417),   -- Vindictive Gladiator's Satin Armor (Priest)
+		q(46418),   -- Vindictive Gladiator's Satin Armor (Priest)
+		q(46419),   -- Vindictive Gladiator's Scaled Armor (Paladin)
+		q(46420),   -- Vindictive Gladiator's Scaled Armor (Paladin)
+		q(46421),   -- Vindictive Gladiator's Silk Armor (Mage)
+		q(46422),   -- Vindictive Gladiator's Silk Armor (Mage)
+		q(46423),   -- Vindictive Gladiator's Felskin Armor (Demon Hunter)
+		q(46424),   -- Vindictive Gladiator's Felskin Armor (Demon Hunter)
+		q(46447),   -- Cruel Gladiator's Chain Armor (Hunter - Horde)
+		q(46448),   -- Cruel Gladiator's Chain Armor (Hunter - Alliance)
+		q(46449),   -- Cruel Gladiator's Dragonhide Armor (Druid - Horde)
+		q(46450),   -- Cruel Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(46451),   -- Cruel Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(46452),   -- Cruel Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(46453),   -- Cruel Gladiator's Felweave Armor (Warlock - Alliance)
+		q(46454),   -- Cruel Gladiator's Felweave Armor (Warlock - Horde)
+		q(46455),   -- Cruel Gladiator's Ironskin Armor (Monk - Horde)
+		q(46456),   -- Cruel Gladiator's Ironskin Armor (Monk - Alliance)
+		q(46457),   -- Cruel Gladiator's Leather Armor (Rogue - Alliance)
+		q(46458),   -- Cruel Gladiator's Leather Armor (Rogue - Horde)
+		q(46459),   -- Cruel Gladiator's Plate Armor (Warrior - Alliance)
+		q(46460),   -- Cruel Gladiator's Plate Armor (Warrior - Horde)
+		q(46461),   -- Cruel Gladiator's Ringmail Armor (Shaman - Horde)
+		q(46462),   -- Cruel Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(46463),   -- Cruel Gladiator's Satin Armor (Priest - Horde)
+		q(46464),   -- Cruel Gladiator's Satin Armor (Priest - Alliance)
+		q(46465),   -- Cruel Gladiator's Scaled Armor (Paladin - Horde)
+		q(46466),   -- Cruel Gladiator's Scaled Armor (Paladin - Alliance)
+		q(46467),   -- Cruel Gladiator's Silk Armor (Mage - Horde)
+		q(46468),   -- Cruel Gladiator's Silk Armor (Mage - Alliance)
+		q(46471),   -- Cruel Gladiator's Chain Armor (Hunter)
+		q(46472),   -- Cruel Gladiator's Chain Armor (Hunter)
+		q(46473),   -- Cruel Gladiator's Dragonhide Armor (Druid)
+		q(46474),   -- Cruel Gladiator's Dragonhide Armor (Druid)
+		q(46475),   -- Cruel Gladiator's Dreadplate Armor (Death Knight)
+		q(46476),   -- Cruel Gladiator's Dreadplate Armor (Death Knight)
+		q(46477),   -- Cruel Gladiator's Felweave Armor (Warlock)
+		q(46478),   -- Cruel Gladiator's Felweave Armor (Warlock)
+		q(46479),   -- Cruel Gladiator's Ironskin Armor (Monk)
+		q(46480),   -- Cruel Gladiator's Ironskin Armor (Monk)
+		q(46481),   -- Cruel Gladiator's Leather Armor (Rogue)
+		q(46482),   -- Cruel Gladiator's Leather Armor (Rogue)
+		q(46483),   -- Cruel Gladiator's Plate Armor (Warrior)
+		q(46484),   -- Cruel Gladiator's Plate Armor (Warrior)
+		q(46485),   -- Cruel Gladiator's Ringmail Armor (Shaman)
+		q(46486),   -- Cruel Gladiator's Ringmail Armor (Shaman)
+		q(46487),   -- Cruel Gladiator's Satin Armor (Priest)
+		q(46488),   -- Cruel Gladiator's Satin Armor (Priest)
+		q(46489),   -- Cruel Gladiator's Scaled Armor (Paladin)
+		q(46490),   -- Cruel Gladiator's Scaled Armor (Paladin)
+		q(46491),   -- Cruel Gladiator's Silk Armor (Mage)
+		q(46492),   -- Cruel Gladiator's Silk Armor (Mage)
+		q(46495),   -- Vindictive Combatant's Felweave Armor (Warlock - Alliance)
+		q(46496),   -- Vindictive Combatant's Felweave Armor (Warlock - Horde)
+		q(46512),   -- Bloodthirsty Gladiator's Chain Armor (Hunter)
+		q(46513),   -- Bloodthirsty Gladiator's Dragonhide Armor (Druid)
+		q(46514),   -- Bloodthirsty Gladiator's Dreadplate Armor (Death Knight)
+		q(46515),   -- Bloodthirsty Gladiator's Felweave Armor (Warlock)
+		q(46516),   -- Bloodthirsty Gladiator's Leather Armor (Rogue)
+		q(46517),   -- Bloodthirsty Gladiator's Plate Armor (Warrior)
+		q(46518),   -- Bloodthirsty Gladiator's Ringmail Armor (Shaman)
+		q(46519),   -- Bloodthirsty Gladiator's Satin Armor (Priest)
+		q(46520),   -- Bloodthirsty Gladiator's Scaled Armor (Paladin)
+		q(46521),   -- Bloodthirsty Gladiator's Silk Armor (Mage)
+		q(46523),   -- Cataclysmic Gladiator's Dragonhide Armor (Druid)
+		q(46524),   -- Cataclysmic Gladiator's Dreadplate Armor (Death Knight)
+		q(46525),   -- Cataclysmic Gladiator's Felweave Armor (Warlock)
+		q(46526),   -- Cataclysmic Gladiator's Leather Armor (Rogue)
+		q(46527),   -- Cataclysmic Gladiator's Plate Armor (Warrior)
+		q(46528),   -- Cataclysmic Gladiator's Ringmail Armor (Shaman)
+		q(46529),   -- Cataclysmic Gladiator's Satin Armor (Priest)
+		q(46530),   -- Cataclysmic Gladiator's Scaled Armor (Paladin)
+		q(46531),   -- Cataclysmic Gladiator's Silk Armor (Mage)
+		q(46533),   -- Vicious Gladiator's Chain Armor (Hunter)
+		q(46534),   -- Vicious Gladiator's Dragonhide Armor (Druid)
+		q(46535),   -- Vicious Gladiator's Dreadplate Armor (Death Knight)
+		q(46536),   -- Vicious Gladiator's Felweave Armor (Warlock)
+		q(46537),   -- Vicious Gladiator's Leather Armor (Rogue)
+		q(46538),   -- Vicious Gladiator's Plate Armor (Warrior)
+		q(46539),   -- Vicious Gladiator's Ringmail Armor (Shaman)
+		q(46540),   -- Vicious Gladiator's Satin Armor (Priest)
+		q(46541),   -- Vicious Gladiator's Scaled Armor (Paladin)
+		q(46542),   -- Vicious Gladiator's Silk Armor (Mage)
+		q(46544),   -- Ruthless Gladiator's Chain Armor (Hunter)
+		q(46545),   -- Ruthless Gladiator's Dragonhide Armor (Druid)
+		q(46546),   -- Ruthless Gladiator's Dreadplate Armor (Death Knight)
+		q(46547),   -- Ruthless Gladiator's Felweave Armor (Warlock)
+		q(46548),   -- Ruthless Gladiator's Leather Armor (Rogue)
+		q(46549),   -- Ruthless Gladiator's Plate Armor (Warrior)
+		q(46550),   -- Ruthless Gladiator's Ringmail Armor (Shaman)
+		q(46551),   -- Ruthless Gladiator's Satin Armor (Priest)
+		q(46552),   -- Ruthless Gladiator's Scaled Armor (Paladin)
+		q(46553),   -- Ruthless Gladiator's Silk Armor (Mage)
+		q(46555),   -- Savage Gladiator's Chain Armor (Hunter)
+		q(46556),   -- Savage Gladiator's Dragonhide Armor (Druid)
+		q(46557),   -- Savage Gladiator's Dreadplate Armor (Death Knight)
+		q(46558),   -- Savage Gladiator's Felweave Armor (Warlock)
+		q(46559),   -- Savage Gladiator's Leather Armor (Rogue)
+		q(46560),   -- Savage Gladiator's Plate Armor (Warrior)
+		q(46561),   -- Savage Gladiator's Ringmail Armor (Shaman)
+		q(46562),   -- Savage Gladiator's Satin Armor (Priest)
+		q(46563),   -- Savage Gladiator's Scaled Armor (Paladin)
+		q(46564),   -- Savage Gladiator's Silk Armor (Mage)
+		q(46566),   -- Deadly Gladiator's Chain Armor (Hunter)
+		q(46567),   -- Deadly Gladiator's Dragonhide Armor (Druid)
+		q(46568),   -- Deadly Gladiator's Dreadplate Armor (Death Knight)
+		q(46569),   -- Deadly Gladiator's Felweave Armor (Warlock)
+		q(46570),   -- Deadly Gladiator's Leather Armor (Rogue)
+		q(46571),   -- Deadly Gladiator's Plate Armor (Warrior)
+		q(46572),   -- Deadly Gladiator's Ringmail Armor (Shaman)
+		q(46573),   -- Deadly Gladiator's Satin Armor (Priest)
+		q(46574),   -- Deadly Gladiator's Scaled Armor (Paladin)
+		q(46575),   -- Deadly Gladiator's Silk Armor (Mage)
+		q(46577),   -- Wrathful Gladiator's Chain Armor (Hunter)
+		q(46578),   -- Wrathful Gladiator's Dragonhide Armor (Druid)
+		q(46579),   -- Wrathful Gladiator's Dreadplate Armor (Death Knight)
+		q(46580),   -- Wrathful Gladiator's Felweave Armor (Warlock)
+		q(46581),   -- Wrathful Gladiator's Leather Armor (Rogue)
+		q(46582),   -- Wrathful Gladiator's Plate Armor (Warrior)
+		q(46583),   -- Wrathful Gladiator's Ringmail Armor (Shaman)
+		q(46584),   -- Wrathful Gladiator's Satin Armor (Priest)
+		q(46585),   -- Wrathful Gladiator's Scaled Armor (Paladin)
+		q(46586),   -- Wrathful Gladiator's Silk Armor (Mage)
+		q(46588),   -- Hateful Gladiator's Chain Armor (Hunter)
+		q(46589),   -- Hateful Gladiator's Dragonhide Armor (Druid)
+		q(46590),   -- Hateful Gladiator's Dreadplate Armor (Death Knight)
+		q(46591),   -- Hateful Gladiator's Felweave Armor (Warlock)
+		q(46592),   -- Hateful Gladiator's Leather Armor (Rogue)
+		q(46593),   -- Hateful Gladiator's Plate Armor (Warrior)
+		q(46594),   -- Hateful Gladiator's Ringmail Armor (Shaman)
+		q(46595),   -- Hateful Gladiator's Satin Armor (Priest)
+		q(46596),   -- Hateful Gladiator's Scaled Armor (Paladin)
+		q(46597),   -- Hateful Gladiator's Silk Armor (Mage)
+		q(46599),   -- Furious Gladiator's Chain Armor (Hunter)
+		q(46600),   -- Furious Gladiator's Dragonhide Armor (Druid)
+		q(46601),   -- Furious Gladiator's Dreadplate Armor (Death Knight)
+		q(46602),   -- Furious Gladiator's Felweave Armor (Warlock)
+		q(46603),   -- Furious Gladiator's Leather Armor (Rogue)
+		q(46604),   -- Furious Gladiator's Plate Armor (Warrior)
+		q(46605),   -- Furious Gladiator's Ringmail Armor (Shaman)
+		q(46606),   -- Furious Gladiator's Satin Armor (Priest)
+		q(46607),   -- Furious Gladiator's Scaled Armor (Paladin)
+		q(46608),   -- Furious Gladiator's Silk Armor (Mage)
+		q(46610),   -- Relentless Gladiator's Chain Armor (Hunter)
+		q(46611),   -- Relentless Gladiator's Dragonhide Armor (Druid)
+		q(46612),   -- Relentless Gladiator's Dreadplate Armor (Death Knight)
+		q(46613),   -- Relentless Gladiator's Felweave Armor (Warlock)
+		q(46614),   -- Relentless Gladiator's Leather Armor (Rogue)
+		q(46615),   -- Relentless Gladiator's Plate Armor (Warrior)
+		q(46616),   -- Relentless Gladiator's Ringmail Armor (Shaman)
+		q(46617),   -- Relentless Gladiator's Satin Armor (Priest)
+		q(46618),   -- Relentless Gladiator's Scaled Armor (Paladin)
+		q(46619),   -- Relentless Gladiator's Silk Armor (Mage)
+		q(46621),   -- Gladiator's Chain Armor (Hunter)
+		q(46622),   -- Gladiator's Dragonhide Armor (Druid)
+		q(46623),   -- Gladiator's Felweave Armor (Warlock)
+		q(46624),   -- Gladiator's Leather Armor (Rogue)
+		q(46625),   -- Gladiator's Plate Armor (Warrior)
+		q(46626),   -- Gladiator's Ringmail Armor (Shaman)
+		q(46627),   -- Gladiator's Satin Armor (Priest)
+		q(46628),   -- Gladiator's Scaled Armor (Paladin)
+		q(46629),   -- Gladiator's Silk Armor (Mage)
+		q(46631),   -- Brutal Gladiator's Chain Armor (Hunter)
+		q(46632),   -- Brutal Gladiator's Dragonhide Armor (Druid)
+		q(46633),   -- Brutal Gladiator's Felweave Armor (Warlock)
+		q(46634),   -- Brutal Gladiator's Leather Armor (Rogue)
+		q(46635),   -- Brutal Gladiator's Plate Armor (Warrior)
+		q(46636),   -- Brutal Gladiator's Ringmail Armor (Shaman)
+		q(46637),   -- Brutal Gladiator's Satin Armor (Priest)
+		q(46638),   -- Brutal Gladiator's Scaled Armor (Paladin)
+		q(46639),   -- Brutal Gladiator's Silk Armor (Mage)
+		q(46641),   -- Vengeful Gladiator's Chain Armor (Hunter)
+		q(46642),   -- Vengeful Gladiator's Dragonhide Armor (Druid)
+		q(46643),   -- Vengeful Gladiator's Felweave Armor (Warlock)
+		q(46644),   -- Vengeful Gladiator's Leather Armor (Rogue)
+		q(46645),   -- Vengeful Gladiator's Plate Armor (Warrior)
+		q(46646),   -- Vengeful Gladiator's Ringmail Armor (Shaman)
+		q(46647),   -- Vengeful Gladiator's Satin Armor (Priest)
+		q(46648),   -- Vengeful Gladiator's Scaled Armor (Paladin)
+		q(46649),   -- Vengeful Gladiator's Silk Armor (Mage)
+		q(46651),   -- Merciless Gladiator's Chain Armor (Hunter)
+		q(46652),   -- Merciless Gladiator's Dragonhide Armor (Druid)
+		q(46653),   -- Merciless Gladiator's Felweave Armor (Warlock)
+		q(46654),   -- Merciless Gladiator's Leather Armor (Rogue)
+		q(46655),   -- Merciless Gladiator's Plate Armor (Warrior)
+		q(46656),   -- Merciless Gladiator's Ringmail Armor (Shaman)
+		q(46657),   -- Merciless Gladiator's Satin Armor (Priest)
+		q(46658),   -- Merciless Gladiator's Scaled Armor (Paladin)
+		q(46659),   -- Merciless Gladiator's Silk Armor (Mage)
+		q(47060),   -- Brutal Gladiator's Dreadplate Armor (Death Knight)
+		q(47080),   -- Cruel Gladiator's Felskin Armor (Demon Hunter)
+		q(47081),   -- Cruel Gladiator's Felskin Armor (Demon Hunter)
+		q(47082),   -- Cruel Gladiator's Felskin Armor (Demon Hunter - Alliance)
+		q(47083),   -- Cruel Gladiator's Felskin Armor (Demon Hunter - Horde)
+		q(47150),   -- Cruel Combatant's Silk Armor (Mage - Alliance)
+		q(47151),   -- Cruel Combatant's Silk Armor (Mage - Horde)
+		q(47152),   -- Cruel Combatant's Scaled Armor (Paladin - Alliance)
+		q(47153),   -- Cruel Combatant's Scaled Armor (Paladin - Horde)
+		q(47154),   -- Cruel Combatant's Satin Armor (Priest - Alliance)
+		q(47155),   -- Cruel Combatant's Satin Armor (Priest - Horde)
+		q(47156),   -- Cruel Combatant's Ringmail Armor (Shaman - Alliance)
+		q(47157),   -- Cruel Combatant's Ringmail Armor (Shaman - Horde)
+		q(47158),   -- Cruel Combatant's Plate Armor (Warrior - Horde)
+		q(47159),   -- Cruel Combatant's Plate Armor (Warrior - Alliance)
+		q(47160),   -- Cruel Combatant's Leather Armor (Rogue - Alliance)
+		q(47161),   -- Cruel Combatant's Leather Armor (Rogue - Horde)
+		q(47162),   -- Cruel Combatant's Ironskin Armor (Monk - Horde)
+		q(47163),   -- Cruel Combatant's Ironskin Armor (Monk - Alliance)
+		q(47164),   -- Cruel Combatant's Felweave Armor (Warlock - Horde)
+		q(47165),   -- Cruel Combatant's Felweave Armor (Warlock - Alliance)
+		q(47166),   -- Cruel Combatant's Felskin Armor (Demon Hunter - Alliance)
+		q(47167),   -- Cruel Combatant's Felskin Armor (Demon Hunter - Horde)
+		q(47168),   -- Cruel Combatant's Dreadplate Armor (Death Knight - Alliance)
+		q(47169),   -- Cruel Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(47170),   -- Cruel Combatant's Dragonhide Armor (Druid - Alliance)
+		q(47171),   -- Cruel Combatant's Dragonhide Armor (Druid - Horde)
+		q(47172),   -- Cruel Combatant's Chain Armor (Hunter - Alliance)
+		q(47173),   -- Cruel Combatant's Chain Armor (Hunter - Horde)
+		q(47333),   -- Fierce Combatant's Chain Armor (Hunter - Horde)
+		q(47334),   -- Fierce Combatant's Chain Armor (Hunter - Alliance)
+		q(47335),   -- Fierce Combatant's Dragonhide Armor (Druid - Horde)
+		q(47336),   -- Fierce Combatant's Dragonhide Armor (Druid - Alliance)
+		q(47337),   -- Fierce Combatant's Dreadplate Armor (Death Knight - Horde)
+		q(47338),   -- Fierce Combatant's Dreadplate Armor (Death Knight - Alliance)
+		q(47339),   -- Fierce Combatant's Felskin Armor (Demon Hunter - Horde)
+		q(47340),   -- Fierce Combatant's Felskin Armor (Demon Hunter - Alliance)
+		q(47341),   -- Fierce Combatant's Felweave Armor (Warlock - Alliance)
+		q(47342),   -- Fierce Combatant's Felweave Armor (Warlock - Horde)
+		q(47343),   -- Fierce Combatant's Ironskin Armor (Monk - Alliance)
+		q(47344),   -- Fierce Combatant's Ironskin Armor (Monk - Horde)
+		q(47345),   -- Fierce Combatant's Leather Armor (Rogue - Horde)
+		q(47346),   -- Fierce Combatant's Leather Armor (Rogue - Alliance)
+		q(47347),   -- Fierce Combatant's Plate Armor (Warrior - Alliance)
+		q(47348),   -- Fierce Combatant's Plate Armor (Warrior - Horde)
+		q(47349),   -- Fierce Combatant's Ringmail Armor (Shaman - Horde)
+		q(47350),   -- Fierce Combatant's Ringmail Armor (Shaman - Alliance)
+		q(47351),   -- Fierce Combatant's Satin Armor (Priest - Horde)
+		q(47352),   -- Fierce Combatant's Satin Armor (Priest - Alliance)
+		q(47353),   -- Fierce Combatant's Scaled Armor (Paladin - Horde)
+		q(47354),   -- Fierce Combatant's Scaled Armor (Paladin - Alliance)
+		q(47355),   -- Fierce Combatant's Silk Armor (Mage - Horde)
+		q(47356),   -- Fierce Combatant's Silk Armor (Mage - Alliance)
+		q(47357),   -- Fierce Gladiator's Felskin Armor (Demon Hunter - Horde)
+		q(47358),   -- Fierce Gladiator's Felskin Armor (Demon Hunter - Alliance)
+		q(47361),   -- Fierce Gladiator's Silk Armor (Mage - Alliance)
+		q(47362),   -- Fierce Gladiator's Silk Armor (Mage - Horde)
+		q(47363),   -- Fierce Gladiator's Scaled Armor (Paladin - Alliance)
+		q(47364),   -- Fierce Gladiator's Scaled Armor (Paladin - Horde)
+		q(47365),   -- Fierce Gladiator's Satin Armor (Priest - Alliance)
+		q(47366),   -- Fierce Gladiator's Satin Armor (Priest - Horde)
+		q(47367),   -- Fierce Gladiator's Ringmail Armor (Shaman - Alliance)
+		q(47368),   -- Fierce Gladiator's Ringmail Armor (Shaman - Horde)
+		q(47369),   -- Fierce Gladiator's Plate Armor (Warrior - Horde)
+		q(47370),   -- Fierce Gladiator's Plate Armor (Warrior - Alliance)
+		q(47371),   -- Fierce Gladiator's Leather Armor (Rogue - Horde)
+		q(47372),   -- Fierce Gladiator's Leather Armor (Rogue - Alliance)
+		q(47373),   -- Fierce Gladiator's Ironskin Armor (Monk - Alliance)
+		q(47374),   -- Fierce Gladiator's Ironskin Armor (Monk - Horde)
+		q(47375),   -- Fierce Gladiator's Felweave Armor (Warlock - Horde)
+		q(47376),   -- Fierce Gladiator's Felweave Armor (Warlock - Alliance)
+		q(47377),   -- Fierce Gladiator's Dreadplate Armor (Death Knight - Alliance)
+		q(47378),   -- Fierce Gladiator's Dreadplate Armor (Death Knight - Horde)
+		q(47379),   -- Fierce Gladiator's Dragonhide Armor (Druid - Alliance)
+		q(47380),   -- Fierce Gladiator's Dragonhide Armor (Druid - Horde)
+		q(47381),   -- Fierce Gladiator's Chain Armor (Hunter - Alliance)
+		q(47382),   -- Fierce Gladiator's Chain Armor (Hunter - Horde)
+		q(47383),   -- Fierce Gladiator's Felskin Armor (Demon Hunter)
+		q(47384),   -- Fierce Gladiator's Felskin Armor (Demon Hunter)
+		q(47387),   -- Fierce Gladiator's Silk Armor (Mage)
+		q(47388),   -- Fierce Gladiator's Silk Armor (Mage)
+		q(47389),   -- Fierce Gladiator's Scaled Armor (Paladin)
+		q(47390),   -- Fierce Gladiator's Scaled Armor (Paladin)
+		q(47391),   -- Fierce Gladiator's Satin Armor (Priest)
+		q(47392),   -- Fierce Gladiator's Satin Armor (Priest)
+		q(47393),   -- Fierce Gladiator's Ringmail Armor (Shaman)
+		q(47394),   -- Fierce Gladiator's Ringmail Armor (Shaman)
+		q(47395),   -- Fierce Gladiator's Plate Armor (Warrior)
+		q(47396),   -- Fierce Gladiator's Plate Armor (Warrior)
+		q(47397),   -- Fierce Gladiator's Leather Armor (Rogue)
+		q(47398),   -- Fierce Gladiator's Leather Armor (Rogue)
+		q(47399),   -- Fierce Gladiator's Ironskin Armor (Monk)
+		q(47400),   -- Fierce Gladiator's Ironskin Armor (Monk)
+		q(47401),   -- Fierce Gladiator's Felweave Armor (Warlock)
+		q(47402),   -- Fierce Gladiator's Felweave Armor (Warlock)
+		q(47403),   -- Fierce Gladiator's Dreadplate Armor (Death Knight)
+		q(47404),   -- Fierce Gladiator's Dreadplate Armor (Death Knight)
+		q(47405),   -- Fierce Gladiator's Dragonhide Armor (Druid)
+		q(47406),   -- Fierce Gladiator's Dragonhide Armor (Druid)
+		q(47407),   -- Fierce Gladiator's Chain Armor (Hunter)
+		q(47408),   -- Fierce Gladiator's Chain Armor (Hunter)
+		q(47444),   -- Vindictive Combatant's Felskin Armor (Demon Hunter - Alliance)
+		q(47446),   -- Vindictive Combatant's Felskin Armor (Demon Hunter - Horde)
+		q(60674),   -- Dread Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60675),   -- Dread Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60676),   -- Dread Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60677),   -- Dread Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60678),   -- Dread Aspirant's Chain (Hunter, Shaman)
+		q(60679),   -- Dread Aspirant's Chain (Hunter, Shaman)
+		q(60681),   -- Dread Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60682),   -- Dread Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60683),   -- Sinister Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60684),   -- Sinister Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60685),   -- Sinister Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60686),   -- Sinister Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60687),   -- Sinister Aspirant's Chain (Hunter, Shaman)
+		q(60688),   -- Sinister Aspirant's Chain (Hunter, Shaman)
+		q(60689),   -- Sinister Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60690),   -- Sinister Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60691),   -- Notorious Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60692),   -- Notorious Aspirant's Vestment (Priest, Mage, Warlock)
+		q(60694),   -- Notorious Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60695),   -- Notorious Aspirant's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60696),   -- Notorious Aspirant's Chain (Hunter, Shaman)
+		q(60697),   -- Notorious Aspirant's Chain (Hunter, Shaman)
+		q(60698),   -- Notorious Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60699),   -- Notorious Aspirant's Plate (Warrior, Paladin, Death Knight)
+		q(60700),   -- Corrupted Gladiator's Vestment (Priest, Mage, Warlock)
+		q(60702),   -- Corrupted Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(60704),   -- Corrupted Gladiator's Chain (Hunter, Shaman)
+		q(60706),   -- Corrupted Gladiator's Plate (Warrior, Paladin, Death Knight)
+		q(63552),   -- Notorious Gladiator's Vestment (Priest, Mage, Warlock)
+		q(63553),   -- Notorious Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(63554),   -- Notorious Gladiator's Chain (Hunter, Shaman)
+		q(63555),   -- Notorious Gladiator's Plate (Warrior, Paladin, Death Knight)
+		q(63556),   -- Notorious Gladiator's Plate (Warrior, Paladin, Death Knight)
+		q(63557),   -- Notorious Gladiator's Chain (Hunter, Shaman)
+		q(63558),   -- Notorious Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(63559),   -- Notorious Gladiator's Vestment (Priest, Mage, Warlock)
+		q(63560),   -- Sinister Gladiator's Vestment (Priest, Mage, Warlock)
+		q(63561),   -- Sinister Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(63562),   -- Sinister Gladiator's Chain (Hunter, Shaman)
+		q(63563),   -- Sinister Gladiator's Plate (Warrior, Paladin, Death Knight)
+		q(63564),   -- Sinister Gladiator's Vestment (Priest, Mage, Warlock)
+		q(63565),   -- Sinister Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter)
+		q(63566),   -- Sinister Gladiator's Chain (Hunter, Shaman)
+		q(63567),   -- Sinister Gladiator's Plate (Warrior, Paladin, Death Knight)
+		q(63568),   -- Dread Gladiator's Plate (Warrior, Paladin, Death Knight - Horde)
+		q(63569),   -- Dread Gladiator's Chain (Hunter, Shaman - Horde)
+		q(63570),   -- Dread Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter - Horde)
+		q(63571),   -- Dread Gladiator's Vestment (Priest, Mage, Warlock - Horde)
+		q(63572),   -- Dread Gladiator's Plate (Warrior, Paladin, Death Knight - Alliance)
+		q(63573),   -- Dread Gladiator's Chain (Hunter, Shaman - Alliance)
+		q(63574),   -- Dread Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter - Alliance)
+		q(63575),   -- Dread Gladiator's Vestment (Priest, Mage, Warlock - Alliance)
 
-		q(43045),	-- Warmongering Combatant's Satin Armor (Alliance, Priest)
-		q(43046),	-- Warmongering Combatant's Satin Armor (Horde, Priest)
-		q(43047),	-- Warmongering Combatant's Silk Armor (Alliance, Mage)
-		q(43048),	-- Warmongering Combatant's Silk Armor (Horde, Mage)
-		q(43049),	-- Warmongering Combatant's Felweave Armor (Alliance, Warlock)
-		q(43050),	-- Warmongering Combatant's Felweave Armor (Horde, Warlock)
 
-		q(43138),	-- Warmongering Gladiator's Ringmail Armor (Alliance, Shaman)
-		q(43139),	-- Warmongering Gladiator's Ringmail Armor (Horde, Shaman)
 
-		q(43160),	-- Warmongering Gladiator's Felweave Armor (Alliance, Warlock)
-		q(43161),	-- Warmongering Gladiator's Felweave Armor (Horde, Warlock)
 
-		q(43167),	-- Warmongering Gladiator's Plate Armor (Alliance, Warrior)
-		q(43168),	-- Warmongering Gladiator's Plate Armor (Horde, Warrior)
-		q(43169),	-- Warmongering Gladiator's Satin Armor (Alliance, Priest)
-		q(43170),	-- Warmongering Gladiator's Satin Armor (Horde, Priest)
-		q(43171),	-- Warmongering Gladiator's Scaled Armor (Alliance, Paladin)
-		q(43172),	-- Warmongering Gladiator's Scaled Armor (Horde, Paladin)
-		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
-		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
-		
-		q(47352),	-- Fierce Combatant's Satin Armor
-		q(47365),	-- Fierce Gladiator's Satin Armor
-		q(60689),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
-		q(63572),	-- either Dread Gladiator's Plate Armor or Sinister Aspirant's Plate Armor
+		q(43233),	-- Arsenal: Wild Combatant's Weapons
 
 		-------------------
 		--    Legion     --
@@ -1183,8 +1810,8 @@ _.HiddenQuestTriggers =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1449,8 +2076,11 @@ _.HiddenQuestTriggers =
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
 		q(43941), 	-- Priest Order Hall - Discipline chosen second
+		q(44408),	-- Priest Order Hall - Shadow chosen third
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
-
+		q(43507), 	-- Priest Order Hall - Looting the priest altar
+		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
+		
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
@@ -1485,7 +2115,7 @@ _.HiddenQuestTriggers =
 		q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
 		q(41329),	-- Shaman Order Hall - Elemental Chosen First
 		q(43947),	-- Shaman Order Hall - Elemental Chosen
-		q(43948),	-- Shaman Order Hall - Restoration Chosen
+		q(43948),	-- Shaman Order Hall - Restoration Chosen Third
 		q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
 		q(44397),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 2
 		q(44398),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 3
@@ -1493,6 +2123,7 @@ _.HiddenQuestTriggers =
 		q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
 		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+		q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
 
 		q(40582),	-- Warrior Order Hall - Arms chosen first
 		q(43952),	-- Warrior Order Hall - Arms chosen second
@@ -2008,6 +2639,27 @@ _.HiddenQuestTriggers =
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
 		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
+		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
+		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
+		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
+		
+		-- MISSIONS
+		q(53743),	-- Hillcrest Pasture completed
+		q(53745),	-- Mudfisher Cove completed
+		q(53740),	-- Stonefist Watch completed
+		q(53742),	-- Stonetusk Watch completed
+		q(53744),	-- Swiftwind Post completed
+		q(54304),	-- Upgrade: Arom's Stand started
+		q(54261),	-- Upgrade: Brennadam started
+		q(54283),	-- Upgrade: Castaway Point started
+		q(54226),	-- Upgrade: The Great Seal started
+		q(54294),	-- Upgrade: The Great Seal completed
+		q(54259),	-- Upgrade: Vulpera Hideaway started
+		q(54296),	-- Upgrade: Vulpera Hideaway completed
+		q(54238),	-- Upgrade: Zul'jan Ruins started
+		q(54297),	-- Upgrade: Zul'jan Ruins completed
+		q(53741),	-- Windfall Cavern completed
+		q(53739),	-- Wolf's Den completed
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -2052,9 +2704,9 @@ _.HiddenQuestTriggers =
 		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
 		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
-		q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
-		q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played)
+		-- q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
+		-- q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
+		-- q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played)
 		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
 		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
 		q(56910),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
@@ -2660,7 +3312,7 @@ _.HiddenQuestTriggers =
 		q(56595),	-- Oronu first kill
 		q(56594),	-- Prince Typhonus first kill
 		q(56593),	-- Prince Vortran first kill
-		q(56287),	-- Reefwalker first kill
+		-- q(56287),	-- Reefwalker first kill
 		q(56592),	-- Rockweed Shambler first kill
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
@@ -2782,12 +3434,6 @@ _.HiddenQuestTriggers =
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 		q(56307),	-- Opened the mechanized supply chest
-		q(57387),	-- Balnazzar data anomaly
-		q(57389),	-- Baron Gedden data anomaly
-		q(57388),	-- Baron Kazum data anomaly
-		q(57387),	-- Captain Kromcrush data anomaly
-		q(57388),	-- Crowd Pummeler 9-60 data anomaly
-		q(57385),	-- Razorclaw the Butcher data anomaly
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
@@ -3257,6 +3903,8 @@ _.HiddenQuestTriggers =
 		q(63318),	-- Necrolord
 		q(63316),	-- Night Fae
 		q(63319),	-- Venthyr
+		-- Maw adventures
+		q(63449),	-- i believe this was Topple the Giants
 
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3314,7 +3962,7 @@ _.HiddenQuestTriggers =
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
 		q(62957),	-- Triggered after completing second Into The Unknown quest (60153)
-		q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
+		-- q(62959),	-- Triggered after completing third Into The Unknown quest (62382)
 		q(62956),	-- Triggered after completing fourth Into The Unknown quest (62453)
 		q(62746),	-- Reaching Renown 19 Night Fae / unlocking Deepening Bond 4% stam increase
 		q(62747),	-- Reaching Renown 35 Night Fae / unlocking Deepening Bond 6% stam increase
@@ -3419,7 +4067,6 @@ _.HiddenQuestTriggers =
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
-		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
 		q(61128),	-- Triggered after getting Sorrowbane
@@ -3434,7 +4081,6 @@ _.HiddenQuestTriggers =
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus Treasures
-		q(61720),	-- when opening Plaguefallen Chest (61474)
 		q(61120),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		q(61121),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		q(61122),	-- interacting with runes to unlock a Runebound Coffer (61115)
@@ -3444,6 +4090,7 @@ _.HiddenQuestTriggers =
 		q(60311),	-- triggered when opening Misplaced Supplies - i think i had already opened it?  so i'm not sure if it's somehow repeatable :\ but we have a different questID attached to the criteria
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
+		q(62946),	-- "learning" the quest items while on #61612, "Jewelcrafting: Carved Crystal Ring"
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57210),	-- triggered when completing the ballista at 37.6, 50.8 during #57205, "A Few Bumps Along the Way"
 		q(57241),	-- triggered when completing the ballista at 38.8, 48.6 during #57205, "A Few Bumps Along the Way"
@@ -3454,11 +4101,10 @@ _.HiddenQuestTriggers =
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
-		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
-		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
-		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 		q(60781),	-- Daily channeling anima [Necrolord]
 		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
+		q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
+		q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
@@ -3475,6 +4121,8 @@ _.HiddenQuestTriggers =
 		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
 		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
 		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
+		q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
+		q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
@@ -3585,8 +4233,6 @@ _.HiddenQuestTriggers =
 		q(60305),	-- Channeling Anima Conduit to Court of the Harvesters
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
-		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal" — also triggered when leaving the Ember Court scenario, Week 2 / Week 6
-		q(59630),	-- triggered when leaving Ember Court
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
@@ -3608,6 +4254,7 @@ _.HiddenQuestTriggers =
 		q(62141),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Blustery Boil" objective (turned in the Blob of Slime to Prince Renathal)
 		q(61448),	-- triggered completed upon turning in the Blob of Slime to Prince Renathal for the "Blustery Boil" objective (assume this is the "release the slime" option since the other one is... sort of a real quest)
 		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+		q(62145),	-- picked up when entering the Ember Court for the week — for "Crime of Fashion"
 		q(62142),	-- picked up when entering the Ember Court for the week – triggered completed upon finishing the "Ember Skyterror" objective
 		q(61450),	-- also part of the "Ember Skyterror" objective, for turning the seed in to Renathal
 		q(62148),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "It's Raining Anima" objective
@@ -3626,6 +4273,7 @@ _.HiddenQuestTriggers =
 		q(62171),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
 		q(62137),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Theotar's Toast" objective in Ember Court
 		q(61929),	-- also completed when finishing "Theotar's Toast" objective
+		q(62112),	-- completed when killing Rare 'Sloppy' in Ember Court
 		q(62140),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Venthyr Provocateur" objective
 		q(62118),	-- picked up when entering the Ember Court for the week — for "Traditional Candles"
 		q(62119),	-- picked up when entering the Ember Court for the week – for "Roaring Fires"
@@ -3639,18 +4287,20 @@ _.HiddenQuestTriggers =
 		q(62116),	-- picked up when entering the Ember Court for the week — for "Kedu"
 		q(62117),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
 		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
+		q(62113),	-- picked up when entering the Ember Court for the week — for "Party Crashers"
+		q(61162),	-- for the #62113 version of "Party Crashers"
 		q(62128),	-- picked up when entering the Ember Court for the week — for "Concert Kick-Off"
 		q(62129),	-- picked up when entering the Ember Court for the week — for "Dance For Love"
 		q(62139),	-- picked up when entering the Ember Court for the week — for "Knockerbock"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60957),	-- "Ansel's Lucky Violin," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
+		q(60955),	-- "Noko's Flute," same as above
 		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
 		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
-		q(59640),	-- triggered when Ember Court Scenario ended (tutorial one I think it was)
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
@@ -3668,28 +4318,38 @@ _.HiddenQuestTriggers =
 		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
 		q(62508),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62520),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
+		q(62490),	-- Ember Court End - (Droman Aliothe:Elated / Cryptkeeper Kassir:Elated / Polemarch Adrestes:Elated / The Countess:Elated)
 		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62492),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
+		q(62506),	-- Ember Court End - (Droman Aliothe:Elated / Cryptkeeper Kassir:Elated / Polemarch Adrestes:Elated / The Countess:Elated)
 		q(62509),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
-		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
-		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
-		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
-		q(59639),	-- triggered when leaving Ember Court (week 3)
-		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
-		q(59634),	-- triggered upon actually leaving the Ember Court
+		q(62489),	-- Ember Court End - (Kleia&Pelagos / Mikanikos / Alexandros / Sika, all elated - Mikanikos only one i hadn't done before.  also got We Happy Few, so possibly one of these is related to that) - next week's automatic assigned pickups were Choofa, Droman Aliothe, Rendle and Cudgelface, and Lady Moonberry
+		q(62505),	-- ""
+		q(62529),	-- ""
+		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
+		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
+		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
 		q(59628),	-- Guest Selected for Ember Court: Mikanikos
 		q(59629),	-- Guest Selected for Ember Court: The Countess
+		q(59630),	-- Guest Selected for Ember Court: Alexandros Morgraine
+		q(59631),	-- Guest Selected for Ember Court: Hunt-Captain Korayn
 		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
-		-- Leaving Ember Court: 59626, 59632, 59637, 59639 => Next RSVPs: PlagueDevMar/GMVole/PoleAdres/BaronVash
-		-- Leaving Ember Court: 59627, 59632, 59635, 59636 => Next RSVPs: CryptKeeper/Droman/PoleAdres/LadyMoon
-		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
-		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
-		q(61390),	-- triggered when rescinding invitations (i did a bunch, so not sure if it has to do with a specific one - 59635, 59638, and 61389 all also triggered in the process
-		q(61889),	-- revoking invitations (3rd in a row, perhaps tracker for the 3rd free revoke per week from Staff: Ambassasdors items)
-		q(61890),	-- revoking invitation (4th free revoke in the week?)
+		q(59633),	-- Guest Selected for Ember Court: Rendle and Cudgelface
+		q(59634),	-- Guest Selected for Ember Court: Choofa
+		q(59635),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
+		q(59636),	-- Guest Selected for Ember Court: Droman Aliothe
+		q(59637),	-- Guest Selected for Ember Court: Grandmaster Vole
+		q(59638),	-- Guest Selected for Ember Court: Kleia and Pelagos
+		q(59639),	-- Guest Selected for Ember Court: Plague Deviser Marileth
+		q(59640),	-- Guest Selected for Ember Court: Sika
+		q(60319),	-- Guest Selected for Ember Court: Stonehead
+		q(61389),	-- 1st free revoke RSVP per week
+		q(61390),	-- 2nd free revoke RSVP per week
+		q(61889),	-- 3rd free revoke RSVP per week
+		q(61890),	-- 4th free revoke RSVP per week
 		q(61504),	-- triggered when using item #181536, "Guest List Page"
 		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
 		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
@@ -3736,6 +4396,7 @@ _.HiddenQuestTriggers =
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
+		q(61531),	-- either due to Acquaintence with The Countess, or from the auto-use of "Decree: The Countess's Boon" when opening The Countess's Extravagant Tribute
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -3788,10 +4449,9 @@ _.HiddenQuestTriggers =
 		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
 		q(59391),	-- when using "RSVP: The Countess" — every time
 		q(59392),	-- when using "RSVP: The Countess" — first time only
-		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
-		q(59626),	-- when using 'Guest List Page' (181538)
 		q(61506),	-- when using 'Guest List Page' (181538)
+		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
@@ -3843,17 +4503,17 @@ _.HiddenQuestTriggers =
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 		q(59687),	-- using "Dog Bone's Bone"
+		q(59681),	-- using "Anima-Infused Water"
+		q(61455),	-- using "Protective Braziers"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
-		q(63177),	-- Triggered after using Encased Riftwalker Essence
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
-		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds
@@ -3888,7 +4548,6 @@ _.HiddenQuestTriggers =
 		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
-		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 		q(61420),	-- Triggered when freeing Yira'lya
 		q(61215),	-- triggered when completing Champion: Kaletar
 		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)

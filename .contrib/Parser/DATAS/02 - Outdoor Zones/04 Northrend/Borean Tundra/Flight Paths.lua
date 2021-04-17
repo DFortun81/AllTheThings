@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(289, {	-- Amber Ledge, Borean Tundra
 					["coord"] = { 45.2, 34.4, 114 },
 				}),

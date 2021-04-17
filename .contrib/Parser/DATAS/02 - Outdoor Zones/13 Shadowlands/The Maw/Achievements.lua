@@ -93,6 +93,10 @@ _.Zones =
 						174182,	-- Caged Soul
 						176149,	-- Imprisoned Soul
 						175910,	-- Scavenged Soul
+						176145,	-- Stone Prison (for Imprisoned Souls)
+						176175,	-- Tormented Soul
+						174158,	-- Wailing Soul
+						175804,	-- Wounded Soul
 					--	TODO: add interactable souls' IDs
 					},
 				}),

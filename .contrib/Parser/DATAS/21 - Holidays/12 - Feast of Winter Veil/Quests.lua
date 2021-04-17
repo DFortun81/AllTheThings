@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					103,	-- The Exodar
+					THE_EXODAR,
 					579,	-- Lunarfall
 				},
 				["races"] = ALLIANCE_ONLY,

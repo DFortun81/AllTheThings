@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
-		n(-183, {	-- Engineering
+		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(161134),	-- Mecha-Mogul Mk2
 				i(158886, {	-- Super-Charged Engine

@@ -879,7 +879,6 @@ _.Zones =
 				q(38957),	-- Taking Inspiration
 				q(43518),	-- Tempering Darkness
 				q(41163),	-- The Apocalypse Bringer
-				q(43373),	-- The Best and Brightest
 				q(43520),	-- The Emerald Nightmare: In Nightmares
 				q(45028),	-- The Fate of Kanrethad
 				q(38963),	-- The Final Lesson?

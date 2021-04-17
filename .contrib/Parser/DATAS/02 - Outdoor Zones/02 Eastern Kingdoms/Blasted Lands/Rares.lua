@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(17, {	-- Blasted Lands
 			n(RARES, {
 				["description"] = "If you are above level 90 and need to go to the low-level Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
@@ -23,20 +23,6 @@ _.Zones =
 					}),
 					n(8302,  { 	-- Deatheye
 						["coord"] = { 53.2, 26.8, 17 },
-					}),
-					n(12396, { 	-- Doomguard Commander
-						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
-						},
-					}),
-					n(8716,  { 	-- Dreadlord
-						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
-						},
 					}),
 					n(8304,  { 	-- Dreadscorn
 						["coord"] = { 37.0, 29.6, 17 },

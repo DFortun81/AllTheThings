@@ -265,7 +265,7 @@ _.PVP =
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 							-- These are only available to Kyrian covenant members
 							i(177851),	-- Sinful Gladiator's Ceremonial Sword
-							i(177866),	-- Sinful Gladiator's Chalice
+						--	i(177866),	-- Sinful Gladiator's Chalice (Not ingame // Shared with Normal Pvp Gear // Gold 16.04.2021)
 							i(184549),	-- Sinful Gladiator's Dory
 							i(177846),	-- Sinful Gladiator's Gladius
 							i(180313),	-- Sinful Gladiator's Greatmallet

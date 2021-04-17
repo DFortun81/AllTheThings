@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
-		n(-181, {	-- Blacksmithing
+		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(171390),	-- Ceremonious Blade
 				i(171385),	-- Ceremonious Shanker

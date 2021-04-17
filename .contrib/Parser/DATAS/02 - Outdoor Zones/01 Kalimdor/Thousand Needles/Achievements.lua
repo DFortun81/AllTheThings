@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(64, {	-- Thousand Needles
 			n(ACHIEVEMENTS, {
 				ach(4938, {	-- Thousand Needles Quests

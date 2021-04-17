@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(15, {	-- Badlands
 			n(VENDORS, {
 				n(49918, {	-- Buckslappy <Engineering Supply Specialist>

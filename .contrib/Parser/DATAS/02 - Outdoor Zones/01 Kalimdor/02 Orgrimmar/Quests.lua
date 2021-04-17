@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(85, {	-- Orgrimmar
 			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
@@ -158,13 +158,13 @@ _.Zones =
 									q(49354, {	-- Remember the Sunwell
 										["sourceQuests"] = { 49613 },	-- Silvermoon City
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
-										["coord"] = { 58.2, 19.4, 110 },
+										["coord"] = { 58.2, 19.4, SILVERMOON_CITY },
 										["races"] = HORDE_ONLY,
 									}),
 									q(49614, {	-- The Nightborne
 										["sourceQuests"] = { 49354 },	-- Remember the Sunwell
 										["provider"] = { "n", 130133 },	-- Lady Liadrin
-										["coord"] = { 58.2, 19.4, 110 },
+										["coord"] = { 58.2, 19.4, SILVERMOON_CITY },
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											ach(12244),	-- Allied Races: Nightborne
@@ -1043,9 +1043,7 @@ _.Zones =
 					["coord"] = { 34.5, 70.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
-							i(122674),	-- S.E.L.F.I.E. Camera MkII
-						}),
+						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
 					},
 				}),
 				q(49855, {	-- Disaster at Mount Hyjal
@@ -1063,7 +1061,7 @@ _.Zones =
 				}),
 				q(13842, {	-- Dread Head Redemption
 					["sourceQuests"] = { 13841 },	-- All Apologies
-					["provider"] = { "n", 14720 },	-- Eitrigg
+					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 49.2, 72.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1390,10 +1388,15 @@ _.Zones =
 					},
 				}),
 				q(32471, {	-- Light Camera Action
-					["collectible"] = false,
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, 85 },
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 155856, 1 },	-- Iron Box
+						{ "i", 4406, 1 },	-- Standard Scope
+						{ "i", 3593, 1 },	-- Russet Belt
+					},
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
@@ -1445,11 +1448,12 @@ _.Zones =
 				}),
 				q(51443, {	-- Mission Statement (BfA version)
 					-- available to a level 47, pre-9.0 character during patch 9.0
+				--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
 					["sourceQuests"] = {
 						-- This quest was not completed for me, but 52428 was completed... maybe it's a breadcrumb technically?
 						53031,	-- The Speaker's Imperative
 						52428,	-- Infusing the Heart
-					},
+					},	--]]
 					["providers"] = {
 						{ "n", 140176 },	-- Nathanos Blightcaller
 						{ "n", 49750 },	-- Warchief's Herald

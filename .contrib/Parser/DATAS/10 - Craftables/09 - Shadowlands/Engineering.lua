@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
-		n(-183, {	-- Engineering
+		prof(ENGINEERING, {
 			filter(101, {	-- Battle Pets
 				i(180208),	-- PHA7-YNX
 			}),

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(1, {	-- Durotar
 			n(QUESTS, {
 				q(2161, {	-- A Peon's Budren

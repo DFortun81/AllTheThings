@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(78, {	-- Un'Goro Crater
 			n(ZONEDROPS, {
 				i(142377, {	-- Badly Broken Dark Spear

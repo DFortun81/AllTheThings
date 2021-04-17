@@ -8,6 +8,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
 		AllTheThings.Settings:ToggleDebugMode();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEFACTIONMODE" category="ADDONS">
+		AllTheThings.Settings:ToggleFactionMode();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="ADDONS">
 		AllTheThings.Settings:ToggleCompletedThings();
 	</Binding>

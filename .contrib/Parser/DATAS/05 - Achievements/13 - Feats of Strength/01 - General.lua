@@ -228,7 +228,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(106)),	-- Obsidian Slayer
 			})),
 			un(REMOVED_FROM_GAME, ach(6829)),	-- Realm First! Pandaren Ambassador
-			ach(14662),	-- Realm First! Shadowlands Keystone Master
+			un(REMOVED_FROM_GAME, ach(14662)),	-- Realm First! Shadowlands Keystone Master
 			un(REMOVED_FROM_GAME, ach(6859)),	-- Realm First! Zen Master Alchemist
 			un(REMOVED_FROM_GAME, ach(6865)),	-- Realm First! Zen Master Angler
 			un(REMOVED_FROM_GAME, ach(6873)),	-- Realm First! Zen Master Archaeologist

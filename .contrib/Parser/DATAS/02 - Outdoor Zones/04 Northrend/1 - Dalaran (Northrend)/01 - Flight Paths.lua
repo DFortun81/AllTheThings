@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(310, {	-- Dalaran
 					["coord"] = { 72.1, 45.7, 125 },
 				}),

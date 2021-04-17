@@ -131,9 +131,9 @@ _.Holidays =
 										["coords"] = {
 											{ 53.32, 79.27, 85 },	-- Alowicious Czervik [Orgrimmar]
 											{ 69.87, 85.18, 64 },	-- Brivelthwerp [Thousand Needles]
-											{ 54.22, 76.11, 107 },	-- Caregiver Isel [Nagrand]
+											{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel [Nagrand]
 											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
-											{ 56.73, 34.51, 107 },	-- Matron Tikkit [Nagrand]
+											{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit [Nagrand]
 											-- { },	-- Rachelle Gothena	[Orgrimmar]		Note!! Only shows up during Hallow's End
 											{ 53.66, 53.01, 85 },	-- Snack-O-Matic IV
 										},
@@ -142,7 +142,7 @@ _.Holidays =
 											84,		-- Stormwind City
 											85,		-- Orgrimmar
 											86,		-- Orgrimmar
-											107,	-- Nagrand
+											NAGRAND,
 										},
 									},
 								},
@@ -212,11 +212,10 @@ _.Holidays =
 					{	-- Veteran Nanny
 						["achievementID"] = 275,	-- Veteran Nanny
 						["u"] = 20,					-- Children's Week Filter
-						["maps"] = {
-							111,	-- Shattrah City
-						},
+						["cr"] = 22819,	-- Orphan Matron Mercy
+						["maps"] = { SHATTRATH_CITY },
 						["coords"] = {
-							{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
+							{ 75.09, 47.86, SHATTRATH_CITY },
 						},
 						["g"] = {
 							{	-- Egbert
@@ -224,27 +223,18 @@ _.Holidays =
 								["criteriaID"] = 3,			-- Egbert
 								["itemID"] = 32616,			-- Egbert's Egg
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 							{	-- Peanut
 								["achievementID"] = 275,	-- Veteran Nanny
 								["criteriaID"] = 1,			-- Peanut
 								["itemID"] = 32622,			-- Elekk Training Collar
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 							{	-- Willy
 								["achievementID"] = 275,	-- Veteran Nanny
 								["criteriaID"] = 2,			-- Willy
 								["itemID"] = 32617,			-- Sleepy Willy
 								["u"] = 20,					-- Children's Week Filter
-								["coords"] = {
-									{ 75.09, 47.86, 111 },	-- Orphan Mtron Mercy
-								},
 							},
 						},
 					},

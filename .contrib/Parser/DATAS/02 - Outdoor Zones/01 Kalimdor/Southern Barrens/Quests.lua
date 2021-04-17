@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(199, {	-- Southern Barrens
 			n(QUESTS, {
 				q(25183, {	-- ...And Bury the Rest

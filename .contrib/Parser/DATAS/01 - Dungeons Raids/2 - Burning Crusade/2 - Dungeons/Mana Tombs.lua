@@ -6,7 +6,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(250, { 	-- Mana Tombs
 		["lvl"] = 61,
 		["mapID"] = 272,
-		["coord"] = { 39.63, 57.67, 108 },	-- Mana-Tombs, Terokkar Forest
+		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["groups"] = {
 			n(QUESTS, {
 				q(10216,  {	-- Safety is Job One
@@ -35,11 +35,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
-				n(18317, {	-- Ethereal Priest
-					i(22543),	-- Formula: Enchant Boots - Fortitude
+				i(29460),	-- Ethereum Prison Key
+				i(22543, {	-- Formula: Enchant Boots - Fortitude
+					["cr"] = 18317,	-- Ethereal Priest
 				}),
-				n(18314, {	-- Nexus Stalker
-					i(23615),	-- Plans: Swiftsteel Gloves
+				i(23615, {	-- Plans: Swiftsteel Gloves
+					["cr"] = 18314,	-- Nexus Stalker
 				}),
 			}),
 			d(1, {	-- Normal

@@ -141,7 +141,7 @@ _.WorldEvents =
 					["sourceQuests"] = { 53934 },	-- A Clue from Area 52
 					["provider"] = { "n", 149808 },	-- Boss Bazzelflange
 					["races"] = HORDE_ONLY,
-					["maps"] = { 109 },	-- Netherstorm
+					["maps"] = { NETHERSTORM },
 					["lvl"] = 120,
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)

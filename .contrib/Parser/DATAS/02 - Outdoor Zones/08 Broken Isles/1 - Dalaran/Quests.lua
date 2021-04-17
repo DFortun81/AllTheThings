@@ -190,10 +190,6 @@ _.Zones =
 					["coord"] = { 28.8, 48.8, 627 },
 					["lvl"] = 110,
 				}),
-				q(41632, {	-- A Gift of Time
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105081 },	-- Archmage Kalec
-				}),
 				q(44099, {	-- A Mutual Friend
 					["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 					["classes"] = { WARLOCK },
@@ -1325,10 +1321,6 @@ _.Zones =
 				q(44172, {	-- The Arena Calls
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
-				}),
-				q(43373, {	-- The Best and Brightest
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 110557 },	-- Prophet Velen
 				}),
 				q(42377, {	-- The Brother's Trail
 					["classes"] = { PALADIN },

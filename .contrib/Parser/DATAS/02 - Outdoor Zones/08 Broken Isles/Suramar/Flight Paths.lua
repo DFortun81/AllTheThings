@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1879, {	-- Crimson Thicket, Suramar
 					["coord"] = { 64.2, 42.0, 680 },
 				}),

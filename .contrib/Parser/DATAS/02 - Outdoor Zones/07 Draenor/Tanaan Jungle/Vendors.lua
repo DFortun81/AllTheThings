@@ -22,9 +22,9 @@ _.Zones =
 								follower(582),  -- Solar Priest Vayx
 							},
 						}),
-						currency(1191, {	-- Valor
-							un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
-						}),
+						-- currency(1191, {	-- Valor
+						un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+						-- }),
 						i(128502, {	-- Hunter's Seeking Crystal
 							["cost"] = 10000000,	-- 1,000g
 						}),

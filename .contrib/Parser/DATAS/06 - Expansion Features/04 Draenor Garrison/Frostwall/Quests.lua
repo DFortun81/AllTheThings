@@ -843,7 +843,6 @@ _.ExpansionFeatures =
 					q(36862, {	-- Pinchwhistle Gearworks
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
-						["altQuestID"] = 35620,
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
 						["coords"] = {
 							{ 50.8, 50.7, 590 },	-- lvl 1 garrison

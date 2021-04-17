@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1942, {	-- Aalgen Point, Broken Shore
 					["coord"] = { 70.6, 47.6, 646 },
 				}),

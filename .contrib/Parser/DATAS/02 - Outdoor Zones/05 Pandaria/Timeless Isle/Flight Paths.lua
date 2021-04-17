@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(554, {	-- Timeless Isle
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1294, {	-- Huojin Landing, Timeless Isle
 					["coord"] = { 21.8, 39.8, 554 },
 				}),

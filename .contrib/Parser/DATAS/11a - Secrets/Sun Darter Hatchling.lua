@@ -139,7 +139,7 @@ _.Secrets =
 							}),
 							n(16224, {	-- Rathis Tomber <Trade Supplies>
 								["description"] = "Ghostlands",
-								["coord"] = { 47.2, 28.6, 95 },
+								["coord"] = { 47.2, 28.6, GHOSTLANDS },
 								["races"] = HORDE_ONLY,
 							}),
 							n(4581, {	-- Rathis Tomber <Trade Supplies>

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(249, {	-- Uldum
 			n(QUESTS, {
 				q(27761, {	-- A Disarming Distraction

@@ -5,7 +5,7 @@
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
-		n(-190, {	-- Tailoring
+		prof(TAILORING, {
 			n(-320,	{ 		-- Head
 				i(173245),	-- Grim-Veiled Hood
 				i(173218),	-- Shadowlace Cowl

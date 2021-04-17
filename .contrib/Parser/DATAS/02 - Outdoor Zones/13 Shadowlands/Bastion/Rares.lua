@@ -270,11 +270,13 @@ _.Zones =
 					["questID"] = 61634,
 					["isDaily"] = true,
 					["coord"] = { 24.5, 22.7, 1533 },
+					["crs"] = { 156339 },	-- Eliminator Sotiros
 					["g"] = {
 						crit(28, {	-- Orstus and Sotiros
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(184401),	-- Larion Pouncer (PET!)
+						i(184365),	-- Aegis of Salvation
 					},
 				}),
 				n(161529, { -- Nemaeus

@@ -69,22 +69,27 @@ _.ExpansionFeatures =
 						}),
 						mi(2158, {	-- Investigating the Rumors
 							["questID"] = 56528,	-- procs when completing Investigating the Rumors on Alliance
+							["sourceQuest"] = 56533,	-- Worldvein Rumors
 							["g"] = {
 								i(171985),	-- Captured Documents
 							},
 						}),
 						mi(2161, {	-- Finding a Key
 							["questID"] = 56529,	-- procs when completing Finding a Key on Alliance
+							["sourceQuest"] = 56528,	-- Investigating the Rumors
 							["g"] = {
-								i(171986, {	-- Resonance Locator
-									mi(2162, {	-- Tracking the Worldvein
-										i(168617, {	-- Fluctuating Worldvein (Rank 3)
-											["modID"] = 14,
-											["g"] = {
-												az(4, 3),	-- Worldvein Resonance (Rank 3)
-											},
-										}),
-									}),
+								i(171986),	-- Resonance Locator
+							},
+						}),
+						mi(2162, {	-- Tracking the Worldvein
+							["questID"] = 56530,
+							["sourceQuest"] = 56529,	-- Investigating the Rumors
+							["g"] = {
+								i(168617, {	-- Fluctuating Worldvein (Rank 3)
+									["modID"] = 14,
+									["g"] = {
+										az(4, 3),	-- Worldvein Resonance (Rank 3)
+									},
 								}),
 							},
 						}),
@@ -111,23 +116,28 @@ _.ExpansionFeatures =
 							["questID"] = 56534,	-- Worldvein Rumors
 						}),
 						mi(2159, {	-- Investigating the Rumors
-						--	["questID"] = ,	-- procs when completing Investigating the Rumors on Horde
+							-- ["questID"] = ,	-- procs when completing Investigating the Rumors on Horde
+							["sourceQuest"] = 56534,	-- Worldvein Rumors
 							["g"] = {
 								i(171985),	-- Captured Documents
 							},
 						}),
 						mi(2161, {	-- Finding a Key
-						--	["questID"] = ,	-- procs when completing Finding a Key on Horde
+							-- ["questID"] = ,	-- procs when completing Finding a Key on Horde
+							-- ["sourceQuest"] = ,	-- Investigating the Rumors
 							["g"] = {
-								i(171986, {	-- Resonance Locator
-									mi(2162, {	-- Tracking the Worldvein
-										i(168617, {	-- Fluctuating Worldvein (Rank 3)
-											["modID"] = 14,
-											["g"] = {
-												az(4, 3),	-- Worldvein Resonance (Rank 3)
-											},
-										}),
-									}),
+								i(171986),	-- Resonance Locator
+							},
+						}),
+						mi(2162, {	-- Tracking the Worldvein
+							-- ["questID"] = ,	-- procs when completing Tracking the Worldvein on Horde
+							-- ["sourceQuest"] = ,	-- Finding a Key
+							["g"] = {
+								i(168617, {	-- Fluctuating Worldvein (Rank 3)
+									["modID"] = 14,
+									["g"] = {
+										az(4, 3),	-- Worldvein Resonance (Rank 3)
+									},
 								}),
 							},
 						}),

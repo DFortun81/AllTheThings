@@ -4,20 +4,20 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(102, {	-- Zangarmarsh
-			n(-228, {	-- Flight Master
+	m(OUTLAND, {
+		m(ZANGARMARSH, {
+			n(FLIGHT_PATHS, {
 				fp(164, {	-- Orebor Harborage, Zangarmarsh
-					["coord"] = { 41.2, 28.8, 102 },
+					["coord"] = { 41.2, 28.8, ZANGARMARSH },
 				}),
 				fp(151, {	-- Swamprat Post, Zangarmarsh
-					["coord"] = { 84.8, 55.0, 102 },
+					["coord"] = { 84.8, 55.0, ZANGARMARSH },
 				}),
 				fp(117, {	-- Telredor, Zangarmarsh
-					["coord"] = { 67.8, 51.4, 102 },
+					["coord"] = { 67.8, 51.4, ZANGARMARSH },
 				}),
 				fp(118, {	-- Zabra'jin, Zangarmarsh
-					["coord"] = { 33.0, 51.0, 102 },
+					["coord"] = { 33.0, 51.0, ZANGARMARSH },
 				}),
 			}),
 		}),

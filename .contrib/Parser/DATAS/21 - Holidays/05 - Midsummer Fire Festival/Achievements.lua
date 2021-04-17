@@ -116,14 +116,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 63 },	-- Ashenvale
 									}),
 									crit(2,  {	-- Azuremyst Isle
-										["coord"] = { 44.0, 53.0, 97 },
+										["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 97 },	-- Azuremyst Isle
+										["maps"] = { AZUREMYST_ISLE },
 									}),
 									crit(3,  {	-- Bloodmyst Isle
-										["coord"] = { 55.0, 69.0, 106 },
+										["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 106 },	-- Bloodmyst Isle
+										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
 										["coord"] = { 49.0, 23.0, 62 },
@@ -186,39 +186,39 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 42.0, 66.0, 105 },
+										["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 62.0, 58.0, 100 },
+										["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.0, 34.0, 107 },
+										["coord"] = { 51.0, 34.0, NAGRAND },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 31.0, 63.0, 109 },
+										["coord"] = { 31.0, 63.0, NETHERSTORM },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 40.0, 55.0, 104 },
+										["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 55.0, 55.0, 108 },
+										["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
-										["coord"] = { 69.0, 52.0, 102 },
+										["coord"] = { 69.0, 52.0, ZANGARMARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 102 },	-- Zangarmarsh
+										["maps"] = { ZANGARMARSH },
 									}),
 								},
 							}),
@@ -326,14 +326,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 36 },	-- Burning Steppes
 									}),
 									crit(5,  {	-- Eversong Woods
-										["coord"] = { 46.3, 50.3, 94 },
+										["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 94 },	-- Eversong Woods
+										["maps"] = { EVERSONG_WOODS },
 									}),
 									crit(6,  {	-- Ghostlands
-										["coord"] = { 47.0, 25.9, 95 },
+										["coord"] = { 47.0, 25.9, GHOSTLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 95 },	-- Ghostlands
+										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
 										["coord"] = { 54.5, 50.1, 25 },
@@ -456,39 +456,39 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 49.9, 59.0, 105 },
+										["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 57.3, 41.8, 100 },
+										["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.1, 34.2, 107 },
+										["coord"] = { 51.1, 34.2, NAGRAND },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 32.3, 68.4, 109 },
+										["coord"] = { 32.3, 68.4, NETHERSTORM },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 33.6, 30.3, 104 },
+										["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 51.9, 43.3, 108 },
+										["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
-										["coord"] = { 35.6, 51.9, 102 },
+										["coord"] = { 35.6, 51.9, ZANGARMARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 102 },	-- Zangarmarsh
+										["maps"] = { ZANGARMARSH },
 									}),
 								},
 							}),
@@ -752,14 +752,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 36 },	-- Burning Steppes
 									}),
 									crit(5,  {	-- Eversong Woods
-										["coord"] = { 46.4, 50.6, 94 },
+										["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 94 },	-- Eversong Woods
+										["maps"] = { EVERSONG_WOODS },
 									}),
 									crit(6,  {	-- Ghostlands
-										["coord"] = { 46.6, 26.3, 95 },
+										["coord"] = { 46.6, 26.3, GHOSTLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 95 },	-- Ghostlands
+										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
 										["coord"] = { 54.7, 50.1, 25 },
@@ -882,39 +882,39 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 50.0, 59.0, 105 },
+										["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 55.0, 40.0, 100 },
+										["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 51.0, 34.0, 107 },
+										["coord"] = { 51.0, 34.0, NAGRAND },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 32.0, 68.0, 109 },
+										["coord"] = { 32.0, 68.0, NETHERSTORM },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 33.0, 30.0, 104 },
+										["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 52.0, 43.0, 108 },
+										["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
-										["coord"] = { 35.0, 51.0, 102 },
+										["coord"] = { 35.0, 51.0, ZANGARMARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 102 },	-- Zangarmarsh
+										["maps"] = { ZANGARMARSH },
 									}),
 								},
 							}),
@@ -1092,14 +1092,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 63 },	-- Ashenvale
 									}),
 									crit(2,  {	-- Azuremyst Isle
-										["coord"] = { 44.7, 52.5, 97 },
+										["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 97 },	-- Azuremyst Isle
+										["maps"] = { AZUREMYST_ISLE },
 									}),
 									crit(3,  {	-- Bloodmyst Isle
-										["coord"] = { 56.0, 68.5, 106 },
+										["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 106 },	-- Bloodmyst Isle
+										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
 										["coord"] = { 49.0, 22.5, 62 },
@@ -1162,39 +1162,39 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1, {	-- Blade's Edge Mountains
-										["coord"] = { 41.8, 65.9, 105 },
+										["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 105 },	-- Blade's Edge Mountains
+										["maps"] = { BLADES_EDGE_MOUNTAINS },
 									}),
 									crit(2, {	-- Hellfire Peninsula
-										["coord"] = { 61.9, 58.5, 100 },
+										["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 100 },	-- Hellfire Peninsula
+										["maps"] = { HELLFIRE_PENINSULA },
 									}),
 									crit(3, {	-- Nagrand
-										["coord"] = { 49.7, 69.6, 107 },
+										["coord"] = { 49.7, 69.6, NAGRAND },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 107 },	-- Nagrand
+										["maps"] = { NAGRAND },
 									}),
 									crit(4, {	-- Netherstorm
-										["coord"] = { 31.1, 62.7, 109 },
+										["coord"] = { 31.1, 62.7, NETHERSTORM },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 109 },	-- Netherstorm
+										["maps"] = { NETHERSTORM },
 									}),
 									crit(5, {	-- Shadowmoon Valley
-										["coord"] = { 39.6, 54.3, 104 },
+										["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 104 },	-- Shadowmoon Valley
+										["maps"] = { SHADOWMOON_VALLEY },
 									}),
 									crit(6, {	-- Terokkar Forest
-										["coord"] = { 54.2, 55.4, 108 },
+										["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 108 },	-- Terokkar Forest
+										["maps"] = { TEROKKAR_FOREST },
 									}),
 									crit(7, {	-- Zangarmarsh
-										["coord"] = { 68.6, 52.0, 102 },
+										["coord"] = { 68.6, 52.0, ZANGARMARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 102 },	-- Zangarmarsh
+										["maps"] = { ZANGARMARSH },
 									}),
 								},
 							}),

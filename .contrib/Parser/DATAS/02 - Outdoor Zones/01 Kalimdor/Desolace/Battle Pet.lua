@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(66, {	-- Desolace
 			filter(101, {	-- Pet Battle
 				p(838, {	-- Amethyst Shale Hatchling

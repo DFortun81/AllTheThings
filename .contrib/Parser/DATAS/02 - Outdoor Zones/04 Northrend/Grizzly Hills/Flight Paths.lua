@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(-228, {	-- Flight Points
+			n(FLIGHT_PATHS, {
 				fp(253, {	-- Amberpine Lodge, Grizzly Hills
 					["coord"] = { 31.2, 59.2, 116 },
 				}),

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(62, {	-- Darkshore
 			n(ACHIEVEMENTS, {
 				ach(4928, {	-- Darkshore Quests

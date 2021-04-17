@@ -18,10 +18,10 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", 650},	-- Select Highmountain
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "npcID", -34 },	-- Select the World Quest header.
+								{"where", "headerID", -34 },	-- Select the World Quest header.
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"not", "npcID", QUESTS},	-- Not the 'Quests' header
-								{"is", "npcID"},	-- Ignore all of the non-npcID entries. (set headers only)
+								{"not", "headerID", QUESTS},	-- Not the 'Quests' header
+								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 							["groups"] = {
 								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)

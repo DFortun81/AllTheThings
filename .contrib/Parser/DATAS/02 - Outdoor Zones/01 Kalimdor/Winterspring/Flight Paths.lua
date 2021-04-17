@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(52, {	-- Everlook, Winterspring
 					["coord"] = { 61, 48.6, 83 },
 				}),

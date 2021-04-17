@@ -38,10 +38,9 @@ _.Achievements =
 				ach(4436,  {	-- BB King (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Baine Bloodhoof
-						crit(2),	-- Lady Sylvanas Windrunner
-						crit(3),	-- Lor'themar Theron
-						crit(4),	-- High Overlord Saurfang
+						crit(1),	-- Lady Sylvanas Windrunner
+						crit(2),	-- Lor'themar Theron
+						crit(3),	-- Eitrigg
 					},
 				}),
 				ach(4437,  {	-- BB King (H)
@@ -50,7 +49,6 @@ _.Achievements =
 						crit(1),	-- Muradin Bronzebeard
 						crit(2),	-- Prophet Velen
 						crit(3),	-- Tyrande Whisperwind
-						crit(4),	-- Anduin Wrynn
 					},
 				}),
 				ach(1686, {	-- Bros. Before Ho Ho Ho's (A)

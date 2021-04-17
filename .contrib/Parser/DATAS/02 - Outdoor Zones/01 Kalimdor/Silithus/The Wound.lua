@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(81, {	-- Silithus
 			n(-93, {	-- Silithus (The Wound)
 				["lvl"] = 110,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(2046, {	-- Atal'dazar, Zuldazar [Horde]
 					["description"] = "Atal'dazar, Zuldazar",
 					["coord"] = { 46.0, 35.8, 862 },

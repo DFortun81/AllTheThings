@@ -5,6 +5,6 @@
 _.Holidays = bubbleDown({["u"] = 26},
 {
 	holiday(235462, {	-- Hallow's End
-		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\hallows_end",
+		["icon"] = asset("hallows_end"),
 	}),
 });

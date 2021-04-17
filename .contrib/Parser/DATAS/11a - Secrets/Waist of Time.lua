@@ -20,9 +20,9 @@ _.Secrets =
 			51,
 			66,
 			69,
-			104,
-			105,
-			108,
+			SHADOWMOON_VALLEY,
+			BLADES_EDGE_MOUNTAINS,
+			TEROKKAR_FOREST,
 			121,
 			125,
 			241,
@@ -67,7 +67,7 @@ _.Secrets =
 				["questID"] = 52899,
 				["sourceQuests"] = { 52898 },
 				["description"] = "Blades Edge Mountains\n\nOn the ground next to a crystal.  \n\nThe Brittle Bone reads:\n\n\"<Something is written here.>\n\nRage, Shank Sever\"",
-				["coord"] = { 33.6, 58.2, 105 },	-- Brittle Bone
+				["coord"] = { 33.6, 58.2, BLADES_EDGE_MOUNTAINS },	-- Brittle Bone
 			}),
 			o(294100, { 	-- Misplaced Candle
 				["model"] = 1307043,
@@ -90,7 +90,7 @@ _.Secrets =
 				["questID"] = 52902,
 				["sourceQuests"] = { 52901 },
 				["description"] = "Outland SMV\n\nOn top of the mountain.\n\nThe Interesting Rock reads:\n\n\"<Something is written here.>\n\nThe BIG Bull\"",
-				["coord"] = { 51.6, 43.8, 104 },	-- Interesting Rock
+				["coord"] = { 51.6, 43.8, SHADOWMOON_VALLEY },	-- Interesting Rock
 			}),
 			o(294103, { 	-- Blooming Lily
 				["model"] = 343460,
@@ -177,7 +177,7 @@ _.Secrets =
 				["questID"] = 52913,
 				["sourceQuests"] = { 52912 },
 				["description"] = "Terrokar Forrest\n\nInside the crate, inside the tent, near the Shadow Labs entrance.\n\nThe Musty Cloth reads:\n\n\"<Something is written here.>\n\nScarce odds, still.\"",
-				["coord"] = { 40.2, 72.5, 108 },	-- Musty Cloth
+				["coord"] = { 40.2, 72.5, TEROKKAR_FOREST },	-- Musty Cloth
 			}),
 			o(294114, { 	-- Broken Tablet
 				["model"] = 202596,
@@ -207,7 +207,7 @@ _.Secrets =
 				},
 			}),
 			q(52917, { 	-- Grimmy Dialogue
-				["title"] = "Grimmy Dialogue",
+				["name"] = "Grimmy Dialogue",
 				["provider"] = { "n", 138578 },	-- Grimmy
 				["sourceQuests"] = { 52916 },
 				["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",

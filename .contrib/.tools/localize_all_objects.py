@@ -4,13 +4,13 @@
 This will attempt to localize all objects marked with TODO in every locale.
 """
 
-from object_localization import localize_objects
+from object_localization import localize_objects, copy_esES_objects_to_esMX
 
 localize_objects('../../locales/deDE.lua', 'de')
 
 localize_objects('../../locales/esES.lua', 'es')
 
-# TODO: copy esES results to esMX
+copy_esES_objects_to_esMX()
 
 localize_objects('../../locales/frFR.lua', 'fr')
 

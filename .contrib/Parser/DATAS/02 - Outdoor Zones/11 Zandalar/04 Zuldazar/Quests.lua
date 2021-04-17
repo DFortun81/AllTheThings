@@ -1443,13 +1443,13 @@ _.Zones =
 						i(180027),	-- Bartered Vrykul Hood
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
-					["maps"] = { 
-						863, 	-- nazmir
-						864, 	-- voldun
-						895,	-- tirisgarde
-						942,	-- stormsong valley
-						862,	-- zuldazar
-						896,	-- drustvar
+					["maps"] = {
+						863, 	-- Nazmir
+						864, 	-- Vol'dun
+						895,	-- Tiragarde Sound
+						942,	-- Stormsong Valley
+						862,	-- Zuldazar
+						896,	-- Drustvar
 					},
 				}),
 				q(50297, {	-- The Head of Her Enemy
@@ -1731,7 +1731,7 @@ _.Zones =
 				q(50394, {	-- Your Problem Now
 					["sourceQuests"] = { 50393 },	-- A Child of Pa'ku
 					["provider"] = { "n", 127377 },	-- Pa'ku
-					["coord"] = { 71.4, 49.2 },
+					["coord"] = { 71.4, 49.2, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),

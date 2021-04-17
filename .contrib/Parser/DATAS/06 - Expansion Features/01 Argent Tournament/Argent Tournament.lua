@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 						183,	-- The Forge of Souls
 						184,	-- Pit of Saron
 						185,	-- Halls of Reflection
-						122,	-- Isle of Quel'Danas
+						ISLE_OF_QUELDANAS,
 					},
 					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
 					["g"] = {
@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-228, {	-- Flight Point
+			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
 					["coord"] = { 72.6, 22.6, 118 },
 				}),

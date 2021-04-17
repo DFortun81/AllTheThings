@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(102, {	-- Zangarmarsh
+	m(OUTLAND, {
+		m(ZANGARMARSH, {
 			filter(101, {	-- Pet Battle
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
@@ -18,7 +18,7 @@ _.Zones =
 				}),
 				q(31923, {	-- Ras'an
 					["isDaily"] = true,
-					["coord"] = { 17.2, 50.5, 102 },
+					["coord"] = { 17.2, 50.5, ZANGARMARSH },
 					["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
 				}),
 			}),

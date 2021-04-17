@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(23, {	-- Eastern Plaguelands
 			m(124, {	-- The Scarlet Enclave
 				n(ZONEDROPS, {

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1017, {	-- Binan Village, Kun-Lai Summit
 					["coord"] = { 72.4, 94.0, 379 },
 				}),

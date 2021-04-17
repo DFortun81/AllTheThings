@@ -32,7 +32,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			n(QUESTS, {
 				-- please don't delete this header!  a quest is linked here from outside, and with the header missing the category ports to the bottom of the list below all 3 instance difficulties
 			}),
-			--n(-34, {	-- World Quests
+			--n(WORLD_QUESTS, {
 			--}),
 			d(1, {	-- Normal
 				e(2395, {	-- Blightbone

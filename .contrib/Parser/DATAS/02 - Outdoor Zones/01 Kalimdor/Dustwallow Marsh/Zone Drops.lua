@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling

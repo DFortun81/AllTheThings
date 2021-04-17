@@ -18,7 +18,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			346,	-- Temple Summit
 			759,	-- Black Temple (used in DH scenario for "Confrontation at the Black Temple" quest)
 		},
-		["coord"] = { 71.0, 46.5, 104 },	-- Black Temple, Shadowmoon Valley
+		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
 		["g"] = {
 			faction(1012, {	-- Ashtongue Deathsworn
 				["provider"] = { "n", 23159 },	-- Okuno <Ashtongue Deathsworn Quartermaster>

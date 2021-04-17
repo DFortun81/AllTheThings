@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(48, {	-- Loch Modan
 			n(VENDORS, {
 				n(1214, {	-- Aldren Cordon <Clothier>

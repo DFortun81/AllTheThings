@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
-		m(103, {	-- The Exodar
-			n(-228, {	-- Flight Paths
+	m(KALIMDOR, {
+		m(THE_EXODAR, {
+			n(FLIGHT_PATHS, {
 				fp(94, {	-- The Exodar
-					["coord"] = { 54.5, 36.3, 103 },
+					["coord"] = { 54.5, 36.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

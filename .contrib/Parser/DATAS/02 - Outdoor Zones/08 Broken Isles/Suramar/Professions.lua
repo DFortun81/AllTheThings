@@ -249,40 +249,29 @@ _.Zones =
 						},
 					}),
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
-					{	-- Schematic: Reaves Module: Wormhole Generator Mode
-						["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
-					},
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
+					q(40040, {	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
+						["provider"] = { "i", 129122 },	-- Felwort Sample
 						["g"] = {
-							{	-- Felwort [Rank 1]
-								["recipeID"] = 193307,	-- Felwort [Rank 1]
-							},
+							recipe(193307),	-- Felwort [Rank 1]
 						},
-					},
-					{	-- Jeweled Spade Handle [Starlight Rose II]
-						["itemID"] = 129140,	-- Jeweled Spade Handle
-						["questID"] = 40036,	-- Jeweled Spade Handle
-						["sourceQuests"] = {
-							40035,	-- The Gentlest Touch
-						},
-						["requireSkill"] = HERBALISM,
-					},
-					{	-- Scribbled Ramblings [Starlight Rose III]
-						["itemID"] = 129143,	-- Scribbled Ramblings
-						["questID"] = 40038,	-- Insame Ramblings
-						["requireSkill"] = HERBALISM,
-						["sourceQuests"] = {
-							40037,	-- The Spade's Blade
-						},
-					},
+					}),
 					q(40034, {	-- Starlight Rosedust
 						["requireSkill"] = HERBALISM,
-						["itemID"] = 129121,	-- Starlight Rosedust
+						["provider"] = { "i", 129121 },	-- Starlight Rosedust
+					}),
+					q(40036, {	-- Jeweled Spade Handle
+						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40035,	-- The Gentlest Touch
+						["provider"] = { "i", 129140 },	-- Jeweled Spade Handle
+					}),
+					q(40038, {	-- Insane Ramblings
+						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 40037,	-- The Spade's Blade
+						["provider"] = { "i", 129143 },	-- Scribbled Ramblings
 					}),
 				}),
 				prof(LEATHERWORKING, {
@@ -294,27 +283,6 @@ _.Zones =
 						},
 					}),
 					q(40213),	-- Hounds Abound
-				}),
-				prof(MINING, {
-					q(38798, {	-- A Shred of Your Humanity
-						["coord"] = { 30.0, 53.2, 680 },
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = MINING,
-						["sourceQuest"] = 38901,	-- The Felsmiths
-					}),
-					q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
-						["coord"] = { 30.0, 53.2, 680 },
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = MINING,
-						["sourceQuest"] = 38798,	-- A Shred of Your Humanity
-					}),
-					q(38804),	-- Lyrelle
-					q(38801),	-- Lyrelle's Right Arm
-					q(38805),	-- Ondri
-					q(38802),	-- Ondri's Still-Beating Heart
-					q(38794),	-- Rethu's Sacrifice
-					q(38803),	-- Rin'thissa
-					q(38800),	-- Rin'thissa's Eye
 				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different

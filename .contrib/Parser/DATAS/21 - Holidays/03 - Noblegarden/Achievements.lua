@@ -62,7 +62,7 @@ _.Holidays =
 							["g"] = {
 								crit(1, {	-- Azure Watch
 									["races"] = ALLIANCE_ONLY,
-									["maps"] = { 97 },	-- Azuremyst Isle
+									["maps"] = { AZUREMYST_ISLE },
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(2, {	-- Dolanaar
@@ -98,7 +98,7 @@ _.Holidays =
 								}),
 								crit(3, {	-- Falconwing Square
 									["races"] = HORDE_ONLY,
-									["maps"] = { 94 },	-- Eversong Woods
+									["maps"] = { EVERSONG_WOODS },
 									["u"] = 19,	-- Noblegarden Filter
 								}),
 								crit(4, {	-- Razor Hill

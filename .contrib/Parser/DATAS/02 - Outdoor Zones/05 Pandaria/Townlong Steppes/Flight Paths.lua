@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-228, {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1054, {	-- Gao-Ran Battlefront, Townlong Steppes
 					["coord"] = { 74.4, 81.4, 388 },
 				}),

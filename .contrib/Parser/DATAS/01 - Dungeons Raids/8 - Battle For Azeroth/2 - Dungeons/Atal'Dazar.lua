@@ -11,13 +11,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(ACHIEVEMENTS,  {	-- Achievements
+			n(ACHIEVEMENTS,  {
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(8, {	-- Rezan Respected
-							["npcID"] = 122963,	-- Rezan
+							["cr"] = 122963,	-- Rezan
 						}),
 					},
 				}),
@@ -34,7 +34,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(49888, {	-- Atal'Dazar: A Little Mojo
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
@@ -91,6 +91,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158303),	-- Devilsaur Worshiper's Sandals
 						i(159458),	-- Seal of the Regal Loa
 						i(158712),	-- Rezan's Gleaning Eye
+						i(168128),	-- Essence of the Regal Loa
 					}),
 				}),
 				e(2030, {	-- Yazma
@@ -155,6 +156,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
 							i(158712),	-- Rezan's Gleaning Eye
+							i(168128),	-- Essence of the Regal Loa
 						},
 					}),
 					e(2030, {	-- Yazma
@@ -244,6 +246,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
 							i(158712),	-- Rezan's Gleaning Eye
+							i(168128),	-- Essence of the Regal Loa
 						},
 					}),
 					e(2030, {	-- Yazma

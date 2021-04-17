@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(95, {	-- Ghostlands
-			n(-228, {	-- Flight Paths
+	m(EASTERN_KINGDOMS, {
+		m(GHOSTLANDS, {
+			n(FLIGHT_PATHS, {
 				fp(83, {	-- Tranquillien, Ghostlands
-					["coord"] = { 45.4, 30.6, 95 },
+					["coord"] = { 45.4, 30.6, GHOSTLANDS },
 				}),
 				fp(205, {	-- Zul'Aman, Ghostlands
-					["coord"] = { 74.6, 67.0, 95 },
+					["coord"] = { 74.6, 67.0, GHOSTLANDS },
 				}),
 			}),
 		}),

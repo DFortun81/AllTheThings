@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(70, {	-- Dustwallow Marsh
 			filter(101, {	-- Pet Battle
 				p(398, {	-- Black Rat

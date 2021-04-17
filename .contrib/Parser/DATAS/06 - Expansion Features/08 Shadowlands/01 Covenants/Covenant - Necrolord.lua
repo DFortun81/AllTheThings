@@ -1358,60 +1358,60 @@ _.ExpansionFeatures =
 										{ "c", 1813, 1250 },	-- 1250 Reservoir Anima
 									},
 								}),
-								-- Note: have to use ["title"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
+								-- Note: have to use ["name"] for the quest trackers so that it shows names in list instead of Quest #xxxxx
 								-- This section is kinda redundant with achievement 14751, but if they add more followers later that aren't added to the achieve, then
 								-- they can be added here.  Also think this is more useful than just having all these quests in the HQT file.
 								q(58410, {
-									["title"] = "Construct Body: Atticus",
+									["name"] = "Construct Body: Atticus",
 								}),
 								q(60041, {	-- Chordy is different from the others in that there is no specific quest with his name on it, but we want to have him in the list of constructs, and 60041 (Build-A-Bomination) is the one that gives you Chordy
-									["title"] = "Construct Body: Chordy",
+									["name"] = "Construct Body: Chordy",
 								}),
 								q(57597, {
-									["title"] = "Construct Body: Flytrap",
+									["name"] = "Construct Body: Flytrap",
 								}),
 								q(57608, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Gas Bag",
+									["name"] = "Construct Body: Gas Bag",
 								}),
 								q(58416, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Guillotine",
+									["name"] = "Construct Body: Guillotine",
 								}),
 								q(58411, {
-									["title"] = "Construct Body: Iron Phillip",
+									["name"] = "Construct Body: Iron Phillip",
 								}),
 								q(60216, {
 									["sourceQuests"] = { 61635 },	-- Troubled Souls
-									["title"] = "Construct Body: Mama Tomalin",
+									["name"] = "Construct Body: Mama Tomalin",
 								}),
 								q(57611, {
-									["title"] = "Construct Body: Marz",
+									["name"] = "Construct Body: Marz",
 								}),
 								q(58415, {
-									["title"] = "Construct Body: Miru",
+									["name"] = "Construct Body: Miru",
 								}),
 								q(58413, {
-									["title"] = "Construct Body: Naxx",
+									["name"] = "Construct Body: Naxx",
 								}),
 								q(57604, {
 									["sourceQuests"] = { 59615 },	-- Every Dog Has Its Day
-									["title"] = "Construct Body: Neena",
+									["name"] = "Construct Body: Neena",
 								}),
 								q(57601, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Professor",
+									["name"] = "Construct Body: Professor",
 								}),
 								q(57605, {
-									["title"] = "Construct Body: Roseboil",
+									["name"] = "Construct Body: Roseboil",
 								}),
 								q(57600, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Sabrina",
+									["name"] = "Construct Body: Sabrina",
 								}),
 								q(58414, {
 									["sourceQuests"] = { 60230 },	-- More the Merrier
-									["title"] = "Construct Body: Toothpick",
+									["name"] = "Construct Body: Toothpick",
 								}),
 							},
 						}),

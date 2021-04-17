@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(199, {	-- Southern Barrens
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder

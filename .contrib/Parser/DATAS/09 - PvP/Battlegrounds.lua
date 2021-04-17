@@ -320,7 +320,7 @@ _.PVP =
 		i(165714, {	-- Gold Strongbox - Win (A)
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{ "select", "npcID", -304 },	-- Battlegrounds
+				{ "select", "headerID", -304 },	-- Battlegrounds
 				{ "pop" },	-- Discard all headers and acquire the children.
 				{ "where", "filterID", 55 },	-- Consumables
 				{ "pop" },	-- Discard all headers and acquire the children.
@@ -329,7 +329,7 @@ _.PVP =
 		i(165711, {	-- Gold Strongbox - Win (H)
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{ "select", "npcID", -304 },	-- Battlegrounds
+				{ "select", "headerID", -304 },	-- Battlegrounds
 				{ "pop" },	-- Discard all headers and acquire the children.
 				{ "where", "filterID", 55 },	-- Consumables
 				{ "pop" },	-- Discard all headers and acquire the children.

@@ -23,3 +23,7 @@ i(152095);		--[[Krokul Ridgestalker]]
 i(152096);		--[[Void-Purged Krokul]]
 i(152097);		--[[Lightforged Bulwark]]
 i(152098);		--[[Lightforged Warframe]]
+
+i(157781);	-- Extra-Chunky Dino Food
+i(157780);	-- Free-Range Dino Chow
+i(157779);	-- Infant Dino Kibble

@@ -25,7 +25,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			n(QUESTS, {
 				-- do not delete header!
 			}),
-			--n(-34, {	-- World Quests
+			--n(WORLD_QUESTS, {
 			--}),
 			d(1, {	-- Normal
 				e(2419, {	-- Globgrog

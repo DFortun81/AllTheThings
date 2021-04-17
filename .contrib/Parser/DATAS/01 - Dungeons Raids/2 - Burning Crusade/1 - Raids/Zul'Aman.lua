@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["isRaid"] = true,
 		["lvl"] = 68,
 		["maps"] = { 333 },
-		["coord"] = { 81.8, 64.3, 95 },	-- Zul'Aman, Ghostlands
+		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["groups"] = {
 			d(1, {	-- Normal (Legacy)
 				["u"] = REMOVED_FROM_GAME,

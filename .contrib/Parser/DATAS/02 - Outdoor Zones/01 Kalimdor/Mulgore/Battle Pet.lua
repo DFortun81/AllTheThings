@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(7, {	-- Mulgore
 			filter(101, {	-- Pet Battle
 				p(477, {	-- Gazelle Fawn

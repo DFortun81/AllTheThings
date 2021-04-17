@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(57, {	-- Teldrassil
 			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>

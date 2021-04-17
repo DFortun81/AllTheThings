@@ -23,12 +23,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
-				["classes"] = { ROGUE },
 				["title"] = "Fangs of the Father",
 				["icon"] = "Interface\\Icons\\ability_backstab",
+				["classes"] = { ROGUE },
 				["isRaid"] = true,
 				["lvl"] = 85,
---[[					["maps"] = {
+				["maps"] = {
 					25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
 					74,	-- Tanaris: Caverns of Time Entrance
 					75,	-- Tanaris: Caverns of Time
@@ -38,48 +38,166 @@ _.Instances = { tier(4, {	-- Cataclysm
 					129,	-- The Nexus
 					198,	-- Mount Hyjal
 					114,	-- Borean Tundra
+					DEADWIND_PASS,
 				},
---]]					["groups"] = {
-					q(30118, {	-- Patricide
-						["provider"] = { "n", 57777 },	-- Wrathion <The Black Prince>
-						["description"] = "This quest only requires looting the final boss, so make sure to pick it up before finishing the raid for the week.",
-						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
+				["groups"] = bubbleDown({ ["classes"] = { ROGUE } }, {
+					q(29802, {	-- A Hidden Message
+						["qg"] = 55476,	-- Lord Afrasastrasz
+						["sourceQuest"] = 29801,	-- Proving Your Worth
+						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
+						-- ["maps"] = { TWILIGHT_HIGHLANDS },
+						["cost"] = {
+							{ "i", 74752, 1 },	-- Solved Cipher
+						},
 						["groups"] = {
-							i(78352, {	-- Fragment of Deathwing's Jaw
-								["questID"] = 30118,
-								["crs"] = {
-									56173,	-- Madness of Deathwing
+							i(74749, {	-- Charging Decoder Ring
+								["description"] = "Just log out for 12 hours. Read a book or something!",
+								["qgs"] = {
+									57801,	-- Thaumaturge Altha
+									57800,	-- Thaumaturge Rafir
+								},
+								["coords"] = {
+									{ 57.6, 65.6, ORGRIMMAR },	-- Thaumaturge Altha
+									{ 50.6, 61.0, STORMWIND_CITY },	-- Thaumaturge Rafir
+								},
+								["cost"] = {
+									{ "g", 100000000 },	-- 10k gold
+									{ "i", 74246, 1 },	-- Cryptomancer's Decoder Ring
+								},
+								["groups"] = {
+									i(74748),	-- Charged Decoder Ring
 								},
 							}),
-							i(77949, {	-- Golad, Twilight of Aspects
-								["questID"] = 30118,
+							i(74750, {	-- Singed Cipher
+								["qg"] = 55488,	-- Corastrasza
+								["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
+								["cost"] = {
+									{ "i", 74748, 1 },	-- Charged Decoder Ring
+								},
+								["groups"] = {
+									i(74752),	-- Solved Cipher
+								},
 							}),
-							i(77950, {	-- Tiriosh, Nightmare of Ages
-								["questID"] = 30118,
-							}),
+						},
+					}),
+					q(30093, {	-- Assassinate Creed
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
+						["sourceQuest"] = 30092,	-- Our Man in Gilneas
+						--["maps"] = { RUINS_OF_GILNEAS },
+						["cr"] = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
+					}),
+					q(30109, {	-- Blood of the Betrayer
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["sourceQuest"] = 30108,	-- Our Man in Karazhan
+						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
+						--["maps"] = { DEADWIND_PASS },
+						["cost"] = {
+							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
+						},
+					}),
+					q(30107, {	-- Cluster Clutch
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["sourceQuest"] = 30106,	-- The Deed is Done
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						--["maps"] = { HILLSBRAD_FOOTHILLS },
+						["cost"] = {
+							{ "i", 77951, 333 },	-- Shadowy Gem
+						},
+					}),
+					q(30092, {	-- Our Man in Gilneas
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["sourceQuest"] = 29847,	-- To Catch a Thief
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						--["maps"] = { HILLSBRAD_FOOTHILLS },
+					}),
+					q(30108, {	-- Our Man in Karazhan
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["sourceQuest"] = 30107,	-- Cluster Clutch
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						--["maps"] = { HILLSBRAD_FOOTHILLS, DEADWIND_PASS },
+					}),
+					q(30118, {	-- Patricide
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						--["maps"] = { HILLSBRAD_FOOTHILLS },
+						["cost"] = {
+							{ "i", 78352, 1 },	-- Fragment of Deathwing's Jaw
+							{ "i", 77947, 1 },	-- The Sleeper
+							{ "i", 77948, 1 },	-- The Dreamer
+						},
+						["groups"] = {
+							i(77949),	-- Golad, Twilight of Aspects
+							i(77950),	-- Tiriosh, Nightmare of Ages
+						},
+					}),
+					q(29801, {	-- Proving Your Worth
+						["qg"] = 55476,	-- Lord Afrasastrasz
+						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
+						["cost"] = {
+							{ "i", 74246, 1 },	-- Cryptomancer's Decoder Ring
 						},
 					}),
 					q(30116, {	-- Sharpening Your Fangs
-						["provider"] = { "n", 57777 },	-- Wrathion <The Black Prince>
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
-						["sourceQuests"] = { 30113 },	-- Victory in the Depths
-						["groups"] = {
-							i(77952, {	-- Elementium Gem Cluster
-								["questID"] = 30116,
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-									53879,	-- Spine of Deathwing
-									56173,	-- Madness of Deathwing
-								},
-							}),
+						["sourceQuest"] = 30113,	-- Victory in the Depths
+						["cost"] = {
+							{ "i", 77952, 60 },	-- Elementium Gem Cluster
 						},
 					}),
-				},
+					q(30106, {	-- The Deed is Done
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
+						["sourceQuest"] = 30093,	-- Assassinate Creed
+						["groups"] = {
+							i(77945),	-- Fear
+							i(77946),	-- Vengeance
+						},
+					}),
+					q(29847, {	-- To Catch a Thief
+						["qg"] = 56375,	-- Mostrasz
+						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
+						["sourceQuest"] = 29934,	-- To Ravenholdt
+						-- ["maps"] = { HILLSBRAD_FOOTHILLS },
+					}),
+					q(29934, {	-- To Ravenholdt
+						["qg"] = 55488,	-- Corastrasza
+						["sourceQuest"] = 29802,	-- A Hidden Message
+						["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
+						-- ["maps"] = { TWILIGHT_HIGHLANDS },
+					}),
+					q(30113, {	-- Victory in the Depths
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["sourceQuest"] = 30109,	-- Blood of the Betrayer
+						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
+						--["maps"] = { DEADWIND_PASS },
+						["cost"] = {
+							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
+							{ "i", 77945, 1 },	-- Fear
+							{ "i", 77946, 1 },	-- Vengeance
+						},
+						["g"] = {
+							i(77947),	-- The Sleeper
+							i(77948),	-- The Dreamer
+						},
+					}),
+				}),
+			}),
+			n(VENDORS, {
+				n(58153, {	-- Dasnurimi <Geologist & Conservator>
+					i(78890, {	-- Crystalline Geode
+						["cost"] = {
+							{ "c", 614, 1 },	-- Mote of Darkness
+						},
+					}),
+					i(78891, {	-- Elementium-coated Geode
+						["cost"] = {
+							{ "c", 615, 1 },	-- Essence of Corrupted Deathwing
+						},
+					}),
+				}),
 			}),
 			d(7, {	-- LFR
 				["ignoreBonus"] = true,
@@ -345,164 +463,35 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 				},
 			}),
-			d(1, {	-- Normal [Lucetia Note: Do not change the dungeon # here unless you let Crieve or myself know]
+			d(1, {	-- Normal
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(QUESTS, {
-						ql(q(29802, {	-- A Hidden Message
-							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { ROGUE },
-							["sourceQuests"] = { 29801 },	-- Proving Your Worth
-						})),
-						ql(q(29801, {	-- Proving Your Worth
-							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { ROGUE },
-						})),
-					}),
 					n(COMMON_BOSS_DROPS, {
-						["g"] = {
-							{	-- Breathstealer Band
-								["itemID"] =  77230,	-- Breathstealer Band
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Hardheart Ring
-								["itemID"] = 77232,	-- Hardheart Ring
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Infinite Loop
-								["itemID"] = 77228,	-- Infinite Loop
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Seal of Primordial Shadow
-								["itemID"] = 77231,	-- Seal of Primordial Shadow
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Signet of Suturing
-								["itemID"] = 77229,	-- Signet of Suturing
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Bone-Link Fetish
-								["itemID"] = 77210,	-- Bone-Link Fetish
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Cunning of the Cruel
-								["itemID"] = 77208,	-- Cunning of the Cruel
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Indomitable Pride
-								["itemID"] = 77211,	-- Indomitable Pride
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Vial of Shadows
-								["itemID"] = 77207,	-- Vial of Shadows
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Windward Heart
-								["itemID"] = 77209,	-- Windward Heart
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Essence of Corrupted Deathwing
-								["currencyID"] = 615,	-- Essence of Deathwing
-								["crs"] = {
-									56173,	-- Madness of Deathwing
-								},
-							},
-							{	-- Essence of Destruction
-								["itemID"] = 71998,	-- Essence of Destruction
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-									53879,	-- Spine of Deathwing
-									56173,	-- Madness of Deathwing
-								},
-							},
-							{	-- Mote of Darkness
-								["currencyID"] = 614,	-- Mote of Darkness
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-									53879,	-- Spine of Deathwing
-								},
-							},
+						["crs"] = {
+							55265,	-- Morchok
+							55308,	-- Warlord	Zon'ozz
+							55312,	-- Yor'sahj the Unsleeping
+							55689,	-- Hagara the Stormbinder
+							55294,	-- Ultraxion
+							56427,	-- Warmaster Blackthorn
+						},
+						["groups"] = {
+							i(77230),	-- Breathstealer Band
+							i(77232),	-- Hardheart Ring
+							i(77228),	-- Infinite Loop
+							i(77231),	-- Seal of Primordial Shadow
+							i(77229),	-- Signet of Suturing
+							i(77210),	-- Bone-Link Fetish
+							i(77208),	-- Cunning of the Cruel
+							i(77211),	-- Indomitable Pride
+							i(77207),	-- Vial of Shadows
+							i(77209),	-- Windward Heart
+							i(71998),	-- Essence of Destruction
+							currency(614),	-- Mote of Darkness
+							i(77952, {	-- Elementium Gem Cluster
+								i(77951),	-- Shadowy Gem
+							}),
 						},
 					}),
 					n(ZONEDROPS, {
@@ -554,9 +543,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(78889),	-- Waistplate of the Desecrated Future
 						},
 					}),
-					{	-- Siege of Wyrmrest Temple
-						["achievementID"] = 6106,	-- Siege of Wyrmrest Temple
-					},
 					cr(55265, e(311, {	-- Morchok
 						{	-- Don't Stand So Close to Me
 							["achievementID"] = 6174,	-- Don't Stand So Close to Me
@@ -706,6 +692,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(77251),	-- Treads of Dormant Dreams
 						i(78012),	-- Ring of the Riven
 						i(78011),	-- Signet of Grasping Mouths
+						i(74246, {	-- Cryptomancer's Decoder Ring
+							["description"] = "You need to pickpocket this from the boss.",
+						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
 						{	-- Fall of Deathwing: Ultraxion
@@ -860,6 +849,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(77193),	-- Souldrinker
 						i(78359),	-- Vishanka, Jaws of the Earth
 						i(122198),	-- Music Roll: The Shattering
+						i(78352),	-- Fragment of Deathwing's Jaw
+						currency(615),	-- Essence of Corrupted Deathwing
 					})),
 				},
 			}),
@@ -867,160 +858,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(QUESTS, {
-						ql(q(29802, {	-- A Hidden Message
-							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { ROGUE },
-							["sourceQuests"] = { 29801 },	-- Proving Your Worth
-						})),
-						ql(q(29801, {	-- Proving Your Worth
-							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { ROGUE },
-						})),
-					}),
 					n(COMMON_BOSS_DROPS, {
-						["g"] = {
-							{	-- Breathstealer Band
-								["itemID"] =  78492,	-- Breathstealer Band
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Hardheart Ring
-								["itemID"] = 78493,	-- Hardheart Ring
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Infinite Loop
-								["itemID"] = 78490,	-- Infinite Loop
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Seal of Primordial Shadow
-								["itemID"] = 78489,	-- Seal of Primordial Shadow
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Signet of Suturing
-								["itemID"] = 78491,	-- Signet of Suturing
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Bone-Link Fetish
-								["itemID"] = 78002,	-- Bone-Link Fetish
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Cunning of the Cruel
-								["itemID"] = 78000,	-- Cunning of the Cruel
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Indomitable Pride
-								["itemID"] = 78003,	-- Indomitable Pride
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Vial of Shadows
-								["itemID"] = 77999,	-- Vial of Shadows
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Windward Heart
-								["itemID"] = 78001,	-- Windward Heart
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-								},
-							},
-							{	-- Essence of Corrupted Deathwing
-								["currencyID"] = 615,	-- Essence of Deathwing
-								["crs"] = {
-									56173,	-- Madness of Deathwing
-								},
-							},
-							{	-- Essence of Destruction
-								["itemID"] = 71998,	-- Essence of Destruction
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-									53879,	-- Spine of Deathwing
-									56173,	-- Madness of Deathwing
-								},
-							},
-							{	-- Mote of Darkness
-								["currencyID"] = 614,	-- Mote of Darkness
-								["crs"] = {
-									55265,	-- Morchok
-									55308,	-- Warlord	Zon'ozz
-									55312,	-- Yor'sahj the Unsleeping
-									55689,	-- Hagara the Stormbinder
-									55294,	-- Ultraxion
-									56427,	-- Warmaster Blackthorn
-									53879,	-- Spine of Deathwing
-								},
-							},
+						["crs"] = {
+							55265,	-- Morchok
+							55308,	-- Warlord	Zon'ozz
+							55312,	-- Yor'sahj the Unsleeping
+							55689,	-- Hagara the Stormbinder
+							55294,	-- Ultraxion
+							56427,	-- Warmaster Blackthorn
+						},
+						["groups"] = {
+							i(78492),	-- Breathstealer Band
+							i(78493),	-- Hardheart Ring
+							i(78490),	-- Infinite Loop
+							i(78489),	-- Seal of Primordial Shadow
+							i(78491),	-- Signet of Suturing
+							i(78002),	-- Bone-Link Fetish
+							i(78000),	-- Cunning of the Cruel
+							i(78003),	-- Indomitable Pride
+							i(77999),	-- Vial of Shadows
+							i(78001),	-- Windward Heart
+							i(71998),	-- Essence of Destruction
+							currency(614),	-- Mote of Darkness
+							i(77952, {	-- Elementium Gem Cluster
+								i(77951),	-- Shadowy Gem
+							}),
 						},
 					}),
 					n(ZONEDROPS, {
@@ -1073,9 +935,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(78889),	-- Waistplate of the Desecrated Future
 						},
 					}),
-					{	-- Siege of Wyrmrest Temple
-						["achievementID"] = 6106,	-- Siege of Wyrmrest Temple
-					},
 					cr(55265, e(311, {	-- Morchok
 						{	-- Don't Stand So Close to Me
 							["achievementID"] = 6174,	-- Don't Stand So Close to Me
@@ -1237,6 +1096,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(78415),	-- Treads of Dormant Dreams
 						i(78419),	-- Ring of the Riven
 						i(78413),	-- Signet of Grasping Mouths
+						i(74246, {	-- Cryptomancer's Decoder Ring
+							["description"] = "You need to pickpocket this from the boss.",
+						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
 						{	-- Fall of Deathwing: Ultraxion
@@ -1409,14 +1271,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(78479),	-- Souldrinker
 						i(78471),	-- Vishanka, Jaws of the Earth
 						i(122198),	-- Music Roll: The Shattering
+						i(78352),	-- Fragment of Deathwing's Jaw
+						currency(615),	-- Essence of Corrupted Deathwing
 					})),
 				},
-			}),
-			n(VENDORS, {
-				n(58153, {	-- Dasnurimi <Geologist & Conservator>
-					i(78890),	-- Crystalline Geode
-					i(78891),	-- Elementium-coated Geode
-				}),
 			}),
 		},
 	}),

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(100, {	-- Hellfire Peninsula
+	m(OUTLAND, {
+		m(HELLFIRE_PENINSULA, {
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -15,7 +15,7 @@ _.Zones =
 				}),
 				q(31922, {	-- Nicki Tinytech
 					["provider"] = { "n", 66550 },	-- Nicki Tinytech
-					["coord"] = { 64.3, 49.3, 100 },
+					["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
 					["isDaily"] = true,
 				}),
 			}),

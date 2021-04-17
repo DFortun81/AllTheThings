@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
-		m(42, {	-- Deadwind Pass
+	m(EASTERN_KINGDOMS, {
+		m(DEADWIND_PASS, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,

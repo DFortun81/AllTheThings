@@ -4,7 +4,7 @@
 
 _.PetBattles =
 {
-	n(-34, {	-- World Quests
+	n(WORLD_QUESTS, {
 		i(86143),	-- Battle Pet Bandage
 	}),
 	i(94207, {	-- Fabled Pandaren Pet Supplies

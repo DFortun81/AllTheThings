@@ -3,7 +3,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
     -CRIEVE
 ]]--
-profession(2720, {	-- Junkyard Tinkering
+profession(JUNKYARD_TINKERING, {
 	filter(200, {
 		{
 			["name"] = "Junkyard Tinkering",

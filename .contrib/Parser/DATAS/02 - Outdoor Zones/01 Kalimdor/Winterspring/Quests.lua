@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(83, {	-- Winterspring
 			n(QUESTS, {
 				q(28782, {	-- A Bird of Legend (granted automatically. Coords are relative to player position)

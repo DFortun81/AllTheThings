@@ -37,7 +37,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51213, {	-- Waycrest Manor: No need to Hag-gle
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

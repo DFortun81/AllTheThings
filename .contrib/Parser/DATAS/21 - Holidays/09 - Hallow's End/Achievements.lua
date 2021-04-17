@@ -435,16 +435,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 23 },	-- Eastern Plaguelands
 										}),
 										crit(8,  {	-- Eversong Woods, Fairbreeze Village
-											["coord"] = { 43.7, 71.1, 94 },
-											["maps"] = { 94 },	-- Eversong Woods
+											["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
+											["maps"] = { EVERSONG_WOODS },
 										}),
 										crit(9,  {	-- Eversong Woods, Falconwing Square
-											["coord"] = { 48.1, 47.8, 94 },
-											["maps"] = { 94 },	-- Eversong Woods
+											["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
+											["maps"] = { EVERSONG_WOODS },
 										}),
 										crit(10, {	-- Ghostlands, Tranquillien
-											["coord"] = { 48.6, 32.0, 95 },
-											["maps"] = { 95 },	-- Ghostlands
+											["coord"] = { 48.6, 32.0, GHOSTLANDS },
+											["maps"] = { GHOSTLANDS },
 										}),
 										crit(11, {	-- Hillsbrad Foothills, Eastpoint Tower
 											["coord"] = { 60.3, 63.8, 25 },
@@ -471,12 +471,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 32 },	-- Searing Gorge
 										}),
 										crit(17, {	-- Silvermoon City, The Bazaar
-											["coord"] = { 67.6, 73.2, 110 },
-											["maps"] = { 110 },	-- Silvermoon City
+											["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
+											["maps"] = { SILVERMOON_CITY },
 										}),
 										crit(18, {	-- Silvermoon City, The Royal Exchange
-											["coord"] = { 79.6, 57.9, 110 },
-											["maps"] = { 110 },	-- Silvermoon City
+											["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
+											["maps"] = { SILVERMOON_CITY },
 										}),
 										crit(19, {	-- Silverpine Forest, Forsaken Rear Guard
 											["coord"] = { 44.3, 20.4, 21 },
@@ -520,12 +520,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 63 },	-- Ashenvale
 										}),
 										crit(2,  {	-- Azuremyst Isle, Azure Watch
-											["coord"] = { 48.5, 49.1, 97 },
-											["maps"] = { 97 },	-- Azuremyst Isle
+											["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
+											["maps"] = { AZUREMYST_ISLE },
 										}),
 										crit(3,  {	-- Bloodmyst Isle, Blood Watch
-											["coord"] = { 55.7, 59.9, 106 },
-											["maps"] = { 106 },	-- Bloodmyst Isle
+											["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
+											["maps"] = { BLOODMYST_ISLE },
 										}),
 										crit(4,  {	-- Darkshore, Lor'danel
 											["coord"] = { 50.8, 18.8, 62 },
@@ -548,8 +548,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 70 },	-- Dustwallow Marsh
 										}),
 										crit(9,  {	-- Exodar, Seat of the Naaru
-											["coord"] = { 59.3, 19.2, 103 },
-											["maps"] = { 103 },	-- The Exodar
+											["coord"] = { 59.3, 19.2, THE_EXODAR },
+											["maps"] = { THE_EXODAR },
 										}),
 										crit(10, {	-- Felwood - Talonbranch Glade
 											["coord"] = { 61.8, 26.7, 77 },
@@ -754,70 +754,70 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Blade's Edge Mountains, Evergrove
-											["coord"] = { 62.9, 38.3, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(2,  {	-- Blade's Edge Mountains, Sylvanaar
-											["coord"] = { 35.8, 63.8, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(3,  {	-- Blade's Edge Mountains, Toshley's Station
-											["coord"] = { 61.0, 68.1, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountains
+											["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(4,  {	-- Hellfire Peninsula, Honor Hold
-											["coord"] = { 54.3, 63.6, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(5,  {	-- Hellfire Peninsula, Temple of Telhamat
-											["coord"] = { 23.4, 36.5, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6,  {	-- Nagrand, Telaar
-											["coord"] = { 54.2, 75.8, 107 },
-											["maps"] = { 107 },	-- Nagrand
+											["coord"] = { 54.2, 75.8, NAGRAND },
+											["maps"] = { NAGRAND },
 										}),
 										crit(7,  {	-- Netherstorm, Area 52
-											["coord"] = { 32.0, 64.4, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 32.0, 64.4, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(8,  {	-- Netherstorm, The Stormspire
-											["coord"] = { 43.4, 36.1, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 43.4, 36.1, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(9,  {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {
-												{ 30.3, 27.8, 104 },	-- Scryer
-												{ 61.0, 28.2, 104 },	-- Aldor
+												{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+												{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 											},
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(10, {	-- Shadowmoon Valley, Wildhammer Stronghold
-											["coord"] = { 37.1, 58.2, 104 },
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {
-												{ 56.2, 81.8, 111 },	-- Scryer
-												{ 28.1, 49.0, 111 },	-- Aldor
+												{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+												{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 											},
-											["maps"] = { 111 },	-- Shattrath City
+											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Allerian Stronghold
-											["coord"] = { 56.6, 53.2, 108 },
-											["maps"] = { 108 },	-- Terrokar Forest
+											["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
+											["maps"] = { TEROKKAR_FOREST },
 										}),
 										crit(13, {	-- Zangarmarsh, Cenarion Refuge
-											["coord"] = { 78.5, 62.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 78.5, 62.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(14, {	-- Zangarmarsh, Orebor Harborage
-											["coord"] = { 41.9, 26.2, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 41.9, 26.2, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(15, {	-- Zangarmarsh, Telredor
-											["coord"] = { 67.2, 49.0, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 67.2, 49.0, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 									},
 								}),
@@ -825,66 +825,66 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1, {	-- Blade's Edge Mountains, Evergrove
-											["coord"] = { 62.9, 38.3, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(2, {	-- Blade's Edge Mountains, Mok'Nathal Village
-											["coord"] = { 76.2, 60.4, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(3, {	-- Blade's Edge Mountains, Thunderlord Stronghold
-											["coord"] = { 53.4, 55.5, 105 },
-											["maps"] = { 105 },	-- Blade's Edge Mountain
+											["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
+											["maps"] = { BLADES_EDGE_MOUNTAINS },
 										}),
 										crit(4, {	-- Hellfire Peninsula, Falcon Watch
-											["coord"] = { 26.9, 59.6, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(5, {	-- Hellfire Peninsula, Thrallmar
-											["coord"] = { 56.8, 37.5, 100 },
-											["maps"] = { 100 },	-- Hellfire Peninsula
+											["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
+											["maps"] = { HELLFIRE_PENINSULA },
 										}),
 										crit(6, {	-- Nagrand, Garadar
-											["coord"] = { 56.7, 34.6, 107 },
-											["maps"] = { 107 },	-- Nagrand
+											["coord"] = { 56.7, 34.6, NAGRAND },
+											["maps"] = { NAGRAND },
 										}),
 										crit(7, {	-- Netherstorm, Area 52
-											["coord"] = { 32.0, 64.4, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 32.0, 64.4, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(8, {	-- Netherstorm, The Stormspire
-											["coord"] = { 43.4, 36.1, 109 },
-											["maps"] = { 109 },	-- Netherstorm
+											["coord"] = { 43.4, 36.1, NETHERSTORM },
+											["maps"] = { NETHERSTORM },
 										}),
 										crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 											["coords"] = {
-												{ 30.3, 27.8, 104 },	-- Scryer
-												{ 61.0, 28.2, 104 },	-- Aldor
+												{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+												{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 											},
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(10, {	-- Shadowmoon Valley, Shadowmoon Village
-											["coord"] = { 30.3, 27.8, 104 },
-											["maps"] = { 104 },	-- Shadowmoon Valley
+											["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
+											["maps"] = { SHADOWMOON_VALLEY },
 										}),
 										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
 											["coords"] = {
-												{ 56.2, 81.8, 111 },	-- Scryer
-												{ 28.1, 49.0, 111 },	-- Aldor
+												{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+												{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 											},
-											["maps"] = { 111 },	-- Shattrath City
+											["maps"] = { SHATTRATH_CITY },
 										}),
 										crit(12, {	-- Terokkar Forest, Stonebreaker Hold
-											["coord"] = { 48.8, 45.2, 108 },
-											["maps"] = { 108 },	-- Terrokar Forest
+											["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
+											["maps"] = { TEROKKAR_FOREST },
 										}),
 										crit(13, {	-- Zangarmarsh, Zabra'jin
-											["coord"] = { 30.7, 50.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 30.7, 50.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 										crit(14, {	-- Zangarmarsh, Cenarion Refuge
-											["coord"] = { 78.5, 62.9, 102 },
-											["maps"] = { 102 },	-- Zangarmarsh
+											["coord"] = { 78.5, 62.9, ZANGARMARSH },
+											["maps"] = { ZANGARMARSH },
 										}),
 									},
 								}),

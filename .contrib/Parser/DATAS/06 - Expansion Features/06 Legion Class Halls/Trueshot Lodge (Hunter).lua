@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			["lvl"] = 98,
 			["mapID"] = 739,
 			["g"] = {
-				n(-228, {	-- Flight Paths
+				n(FLIGHT_PATHS, {
 					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8 },
 						["classes"] = { HUNTER },

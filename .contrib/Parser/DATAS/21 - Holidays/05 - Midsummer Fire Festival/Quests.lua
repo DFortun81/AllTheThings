@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 				["g"] = {
 					un(21, i(23323)),	-- Crown of the Fire Festival
@@ -48,8 +48,8 @@ _.Holidays = bubbleDown({["u"] = 21},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 				["g"] = {
 					un(21, i(23323)),	-- Crown of the Fire Festival
@@ -100,10 +100,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11767, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187955 },	-- Horde Bonfire
-				["coord"] = { 49.9, 59.0, 105 },
+				["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(28917, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
@@ -172,10 +172,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11772, {	-- Desecrate this Fire! — Eversong Woods
 				["isYearly"] = true,
 				["provider"] = { "o", 187960 },	-- Horde Bonfire
-				["coord"] = { 46.3, 50.3, 94 },
+				["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 			}),
 			q(11773, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
@@ -196,10 +196,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11774, {	-- Desecrate this Fire! — Ghostlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187962 },	-- Horde Bonfire
-				["coord"] = { 47.0, 25.9, 95 },
+				["coord"] = { 47.0, 25.9, GHOSTLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 			}),
 			q(13454, {	-- Desecrate this Fire! — Grizzly Hills
 				["isYearly"] = true,
@@ -212,10 +212,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11775, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
 				["provider"] = { "o", 187963 },	-- Horde Bonfire
-				["coord"] = { 57.3, 41.8, 100 },
+				["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
@@ -244,10 +244,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11778, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187966 },	-- Horde Bonfire
-				["coord"] = { 51.1, 34.2, 107 },
+				["coord"] = { 51.1, 34.2, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(54746, {	-- Desecrate this Fire! — Nazmir
 				["isYearly"] = true,
@@ -260,10 +260,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11799, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
 				["provider"] = { "o", 187949 },	-- Horde Bonfire
-				["coord"] = { 32.3, 68.4, 109 },
+				["coord"] = { 32.3, 68.4, NETHERSTORM },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(11783, {	-- Desecrate this Fire! — Northern Barrens
 				["isYearly"] = true,
@@ -284,10 +284,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187967 },	-- Horde Bonfire
-				["coord"] = { 33.6, 30.3, 104 },
+				["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(13450, {	-- Desecrate this Fire! — Sholazar Basin
 				["isYearly"] = true,
@@ -364,10 +364,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11782, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
 				["provider"] = { "o", 187970 },	-- Horde Bonfire
-				["coord"] = { 51.9, 43.3, 108 },
+				["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
@@ -452,10 +452,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11787, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187975 },	-- Horde Bonfire
-				["coord"] = { 35.6, 51.9, 102 },
+				["coord"] = { 35.6, 51.9, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(54744, {	-- Desecrate this Fire! — Zuldazar
 				["isYearly"] = true,
@@ -494,10 +494,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11735, {	-- Desecrate this Fire! — Azuremyst Isle
 				["isYearly"] = true,
 				["provider"] = { "o", 187917 },	-- Alliance Bonfire
-				["coord"] = { 44.7, 52.5, 97 },
+				["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 			}),
 			q(28912, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
@@ -510,10 +510,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187919 },	-- Alliance Bonfire
-				["coord"] = { 41.8, 65.9, 105 },
+				["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(11737, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
@@ -526,10 +526,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11738, {	-- Desecrate this Fire! — Bloodmyst Isle
 				["isYearly"] = true,
 				["provider"] = { "o", 187921 },	-- Alliance Bonfire
-				["coord"] = { 56.0, 68.5, 106 },
+				["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 			}),
 			q(13440, {	-- Desecrate this Fire! — Borean Tundra
 				["isYearly"] = true,
@@ -638,10 +638,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11747, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
 				["provider"] = { "o", 187930 },	-- Alliance Bonfire
-				["coord"] = { 61.9, 58.5, 100 },
+				["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(13444, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
@@ -662,18 +662,18 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187933 },	-- Alliance Bonfire
-				["coord"] = { 49.7, 69.6, 107 },
+				["coord"] = { 49.7, 69.6, NAGRAND },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(11759, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
 				["provider"] = { "o", 187942 },	-- Alliance Bonfire
-				["coord"] = { 31.1, 62.7, 109 },
+				["coord"] = { 31.1, 62.7, NETHERSTORM },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
@@ -694,10 +694,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11752, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["provider"] = { "o", 187935 },	-- Alliance Bonfire
-				["coord"] = { 39.6, 54.3, 104 },
+				["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(44582, {	-- Desecrate this Fire! — Shadowmoon Valley (WoD)
 				["isYearly"] = true,
@@ -790,10 +790,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11754, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
 				["provider"] = { "o", 187937 },	-- Alliance Bonfire
-				["coord"] = { 54.2, 55.4, 108 },
+				["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
@@ -886,10 +886,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11758, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187941 },	-- Alliance Bonfire
-				["coord"] = { 68.6, 52.0, 102 },
+				["coord"] = { 68.6, 52.0, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(13449, {	-- Desecrate this Fire! — Zul'Drak
 				["isYearly"] = true,
@@ -932,9 +932,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11806, {	-- Honor the Flame — Azuremyst Isle
 				["provider"] = { "n", 25888 },	-- Azuremyst Isle Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 44.0, 53.0, 97 },
+				["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 			}),
 			q(28925, {	-- Honor the Flame — Badlands
 				["provider"] = { "n", 51585 },	-- Badlands Flame Warden
@@ -946,9 +946,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25889 },	-- Blade's Edge Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 42.0, 66.0, 105 },
+				["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(11808, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 25890 },	-- Blasted Lands Flame Warden
@@ -960,9 +960,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11809, {	-- Honor the Flame — Bloodmyst Isle
 				["provider"] = { "n", 25891 },	-- Bloodmyst Isle Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 55.0, 69.0, 106 },
+				["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 			}),
 			q(13485, {	-- Honor the Flame — Borean Tundra
 				["provider"] = { "n", 32801 },	-- Borean Tundra Flame Warden
@@ -1065,9 +1065,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11818, {	-- Honor the Flame — Hellfire Peninsula
 				["provider"] = { "n", 25900 },	-- Hellfire Peninsula Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 62.0, 58.0, 100 },
+				["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(13488, {	-- Honor the Flame — Howling Fjord
 				["provider"] = { "n", 32804 },	-- Howling Fjord Flame Warden
@@ -1093,16 +1093,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11821, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 51.0, 34.0, 107 },
+				["coord"] = { 51.0, 34.0, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(11830, {	-- Honor the Flame — Netherstorm
 				["provider"] = { "n", 25913 },	-- Netherstorm Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 31.0, 63.0, 109 },
+				["coord"] = { 31.0, 63.0, NETHERSTORM },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(28922, {	-- Honor the Flame — Northern Stranglethorn
 				["provider"] = { "n", 51574 },	-- Northern Stranglethorn Flame Warden
@@ -1121,9 +1121,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11823, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25905 },	-- Shadowmoon Valley Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 40.0, 55.0, 104 },
+				["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(44579, {	-- Honor the Flame — Shadowmoon Valley (WoD)
 				["provider"] = { "n", 114500 },	-- Shadowmoon Valley Flame Warden
@@ -1205,9 +1205,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11825, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25907 },	-- Terokkar Forest Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 55.0, 55.0, 108 },
+				["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11832, {	-- Honor the Flame — The Cape of Stranglethorn
 				["provider"] = { "n", 25915 },	-- Cape of Stranglethorn Flame Warden
@@ -1296,9 +1296,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11829, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25912 },	-- Zangarmarsh Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 69.0, 52.0, 102 },
+				["coord"] = { 69.0, 52.0, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(13492, {	-- Honor the Flame — Zul'Drak
 				["provider"] = { "n", 32808 },	-- Zul'Drak Flame Warden
@@ -1340,9 +1340,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11843, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25926 },	-- Blade's Edge Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 50.0, 59.0, 105 },
+				["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountains
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			q(28930, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper
@@ -1410,9 +1410,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11848, {	-- Honor the Flame — Eversong Woods
 				["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 46.4, 50.6, 94 },
+				["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 			}),
 			q(11849, {	-- Honor the Flame — Feralas
 				["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
@@ -1431,9 +1431,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11850, {	-- Honor the Flame — Ghostlands
 				["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 46.9, 26.3, 95 },
+				["coord"] = { 46.9, 26.3, GHOSTLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 			}),
 			q(13497, {	-- Honor the Flame — Grizzly Hills
 				["provider"] = { "n", 32813 },	-- Grizzly Hills Flame Keeper
@@ -1445,9 +1445,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11851, {	-- Honor the Flame — Hellfire Peninsula
 				["provider"] = { "n", 25934 },	-- Hellfire Peninsula Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 55.0, 40.0, 100 },
+				["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 			}),
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
@@ -1480,9 +1480,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11854, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25937 },	-- Nagrand Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.0, 34.0, 107 },
+				["coord"] = { 51.0, 34.0, NAGRAND },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 			}),
 			q(54747, {	-- Honor the Flame — Nazmir
 				["provider"] = { "n", 148950 },    -- Nazmir Flame Keeper
@@ -1494,9 +1494,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11835, {	-- Honor the Flame — Netherstorm
 				["provider"] = { "n", 25918 },	-- Netherstorm Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 32.0, 68.0, 109 },
+				["coord"] = { 32.0, 68.0, NETHERSTORM },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 109 },	-- Netherstorm
+				["maps"] = { NETHERSTORM },
 			}),
 			q(11859, {	-- Honor the Flame — Northern Barrens
 				["provider"] = { "n", 25943 },	-- The Northern Barrens Flame Keeper
@@ -1515,9 +1515,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25938 },	-- Shadowmoon Valley Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 33.0, 30.0, 104 },
+				["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 			}),
 			q(13494, {	-- Honor the Flame — Sholazar Basin
 				["provider"] = { "n", 32810 },	-- Sholazar Basin Flame Keeper
@@ -1585,9 +1585,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11858, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25942 },	-- Terokkar Forest Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 52.0, 43.0, 108 },
+				["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 108 },	-- Terokkar Forest
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(11837, {	-- Honor the Flame — The Cape of Stranglethorn
 				["provider"] = { "n", 25920 },	-- Cape of Stranglethorn Flame Keeper
@@ -1669,9 +1669,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11863, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25947 },	-- Zangarmarsh Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 35.3, 51.6, 102 },
+				["coord"] = { 35.3, 51.6, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 			}),
 			q(54745, {	-- Honor the Flame — Zuldazar
 				["provider"] = { "n", 148944 },	-- Zuldazar Flame Keeper
@@ -1780,16 +1780,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 47.8, 38.4, 85 },		-- Orgrimmar
 					{ 21.4, 27.8, 88 },		-- Thunder Bluff
 					{ 67.4, 8.00, 90 },		-- Undercity
-					{ 70.0, 42.8, 110 },	-- Silvermoon City
-					{ 62.0, 32.2, 111 },	-- Shattrath City
+					{ 70.0, 42.8, SILVERMOON_CITY },
+					{ 62.0, 32.2, SHATTRATH_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11964, {	-- Incense for the Summer Scorchlings
@@ -1799,16 +1799,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.6, 72.0, 84 },		-- Stormwind City
 					{ 64.0, 25.8, 87 },		-- Ironforge
 					{ 62.2, 48.6, 89 },		-- Darnassus
-					{ 41.4, 25.2, 103 },	-- The Exodar
-					{ 61.2, 32.2, 111 },	-- Shattrath City
+					{ 41.4, 25.2, THE_EXODAR },
+					{ 61.2, 32.2, SHATTRATH_CITY },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(29092, {	-- Inform the Elder (A)
@@ -1834,14 +1834,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11925, {	-- More Torch Catching (H)
@@ -1852,14 +1852,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 46.6, 37.2, 85 },		-- Orgrimmar
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
-					{ 69.6, 42.4, 111 },	-- Silvermoon City
+					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					111,	-- Silvermoon City
+					SILVERMOON_CITY,
 				},
 			}),
 			q(11921, {	-- More Torch Tossing (A)
@@ -1870,14 +1870,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11926, {	-- More Torch Tossing (H)
@@ -1888,14 +1888,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 46.6, 37.2, 85 },		-- Orgrimmar
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
-					{ 69.6, 42.4, 111 },	-- Silvermoon City
+					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					111,	-- Silvermoon City
+					SILVERMOON_CITY,
 				},
 			}),
 			q(11882, {	-- Playing with Fire (A)
@@ -1925,12 +1925,12 @@ _.Holidays = bubbleDown({["u"] = 21},
 					70,		-- Dustwallow Marsh
 					71,		-- Tanaris
 					83,		-- Winterspring
-					97,		-- Azuremyst Isle
-					100,	-- Hellfire Peninsula
-					102,	-- Zangarmarsh
-					108,	-- Terokkar Forest
-					109,	-- Netherstorm
-					111,	-- Shattrath City
+					AZUREMYST_ISLE,
+					HELLFIRE_PENINSULA,
+					ZANGARMARSH,
+					TEROKKAR_FOREST,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					114,	-- Borean Tundra
 					115,	-- Dragonblight
 					116,	-- Grizzly Hills
@@ -1958,9 +1958,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					76,		-- Azshara
 					78,		-- Un'goro Crater
 					83,		-- Winterspring
-					94,		-- Eversong Woods
-					100,	-- Hellfire Peninsula
-					102,	-- Zangarmarsh
+					EVERSONG_WOODS,
+					HELLFIRE_PENINSULA,
+					ZANGARMARSH,
 					117,	-- Howling Fjord
 					119,	-- Sholazar Basin
 					249,	-- Uldum
@@ -1979,10 +1979,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["provider"] = { "o", 188128 },	-- Flame of the Exodar
 			--	["itemID"] = 35569,	-- Flame of the Exodar
-				["coord"] = { 40.8, 26.3, 103 },
+				["coord"] = { 40.8, 26.3, THE_EXODAR },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 103 },	-- The Exodar
+				["maps"] = { THE_EXODAR },
 			}),
 			q(9331,  {	-- Stealing Ironforge's Flame
 				["isYearly"] = true,
@@ -2033,10 +2033,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["provider"] = { "o", 188129 },	-- Flame of
 			--	["itemID"] = 35568,	-- Flame of Silvermoon
-				["coord"] = { 69.7, 42.7, 110 },
+				["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 			}),
 			q(11917, {	-- Striking Back
 				["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
@@ -2049,9 +2049,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2060,9 +2060,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11947, {	-- Striking Back
@@ -2076,9 +2076,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2087,9 +2087,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11948, {	-- Striking Back
@@ -2103,9 +2103,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2114,9 +2114,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11952, {	-- Striking Back
@@ -2130,9 +2130,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2141,9 +2141,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11953, {	-- Striking Back
@@ -2157,9 +2157,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2168,9 +2168,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(11954, {	-- Striking Back
@@ -2184,9 +2184,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2195,9 +2195,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 		--	q(11691),	-- Summon Ahune
@@ -2229,8 +2229,8 @@ _.Holidays = bubbleDown({["u"] = 21},
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
-					109,	-- Netherstorm
+					THE_EXODAR,
+					NETHERSTORM,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
 					504,	-- Isle of Thunder
@@ -2254,10 +2254,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					94,		-- Eversong Woods
-					109,	-- Netherstorm
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					EVERSONG_WOODS,
+					NETHERSTORM,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)
 					210,	-- The Cape of Stranglethorn
@@ -2270,14 +2270,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11923, {	-- Torch Catching (H)
@@ -2287,14 +2287,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 46.6, 37.2, 85 },		-- Orgrimmar
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
-					{ 69.6, 42.4, 111 },	-- Silvermoon City
+					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					111,	-- Silvermoon City
+					SILVERMOON_CITY,
 				},
 			}),
 			q(11731, {	-- Torch Tossing (A)
@@ -2303,14 +2303,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 49.8, 72.0, 84 },		-- Stormwind City
 					{ 65.2, 25.4, 87 },		-- Ironforge
 					{ 63.0, 47.6, 89 },		-- Darnassus
-					{ 41.2, 24.4, 103 },	-- The Exodar
+					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
-					103,	-- The Exodar
+					THE_EXODAR,
 				},
 			}),
 			q(11922, {	-- Torch Tossing (H)
@@ -2319,14 +2319,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 46.6, 37.2, 85 },		-- Orgrimmar
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
-					{ 69.6, 42.4, 111 },	-- Silvermoon City
+					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					85,		-- Orgrimmar
 					88,		-- Thunder Bluff
 					90,		-- Undercity
-					111,	-- Silvermoon City
+					SILVERMOON_CITY,
 				},
 			}),
 			q(11886, {	-- Unusual Activity
@@ -2338,9 +2338,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
-					{ 43.2, 25.8, 103 },	-- The Exodar
-					{ 68.8, 42.6, 110 },	-- Silvermoon City
-					{ 60.4, 30.8, 111 },	-- Shattrath City
+					{ 43.2, 25.8, THE_EXODAR },
+					{ 68.8, 42.6, SILVERMOON_CITY },
+					{ 60.4, 30.8, SHATTRATH_CITY },
 				},
 				["maps"] = {
 					84,		-- Stormwind City
@@ -2349,9 +2349,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
 					90,		-- Undercity
-					103,	-- The Exodar
-					110,	-- Silvermoon City
-					111,	-- Shattrath City
+					THE_EXODAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
 				},
 			}),
 			q(9322,  {	-- Wild Fires in Kalimdor

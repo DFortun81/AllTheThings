@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-34, {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(42859, {	-- A Draught of Hope
 						["lvl"] = 110,
@@ -587,9 +587,7 @@ _.Zones =
 								i(136914),	-- Leyline Broodling
 							}),
 							n(109564, {	-- Glimmering Treasure Chest
-								i(140495, {	-- Torn Invitation [Fox Mount Quest]
-									i(137573),	-- Reins of the Llothien Prowler
-								}),
+								i(140495),	-- Torn Invitation [Fox Mount Quest]
 								i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
 									artifact(720),	-- Find Hidden Artifact Skin
 								}),

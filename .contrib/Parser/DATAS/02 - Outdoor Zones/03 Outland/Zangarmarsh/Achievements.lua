@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(101, {	-- Outland
-		m(102, {	-- Zangarmarsh
+	m(OUTLAND, {
+		m(ZANGARMARSH, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(31, {	-- Ras'an
-							["coord"] = { 17.2, 50.6, 102 },
+							["coord"] = { 17.2, 50.6, ZANGARMARSH },
 							["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
 						}),
 					},

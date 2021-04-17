@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
 		["mapID"] = 330,
-		["coord"] = { 69.31, 23.67, 105 },	-- Gruul's Lair, Blade's Edge Mountain
+		["coord"] = { 69.31, 23.67, BLADES_EDGE_MOUNTAINS },	-- Gruul's Lair, Blade's Edge Mountain
 		["groups"] = {
 			e(1564, {	-- High King Maulgar
 				["creatureID"] = 18831,
@@ -118,6 +118,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28810),	-- Windshear Boots					-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 					i(28830),	-- Dragonspine Trophy
 					i(28823),	-- Eye of Grull						-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
+					i(31750),	-- Earthen Signet
 				},
 			})
 		},

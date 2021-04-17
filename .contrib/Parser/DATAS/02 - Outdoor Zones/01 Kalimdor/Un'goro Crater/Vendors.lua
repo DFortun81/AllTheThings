@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(78, {	-- Un'Goro Crater
 			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>

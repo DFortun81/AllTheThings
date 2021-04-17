@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
-		n(-34, {	-- World Quests
+		n(WORLD_QUESTS, {
 			["order"] = "03",
 			["lvl"] = 110,
 			["g"] = {			

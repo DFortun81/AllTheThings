@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(47, {	-- Duskwood
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(12, {	-- Darkshire, Duskwood
 					["coord"] = { 77.4, 44.2, 47 },
 				}),

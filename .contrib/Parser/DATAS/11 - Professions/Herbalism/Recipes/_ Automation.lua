@@ -3,7 +3,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
     -CRIEVE
 ]]--
-profession(182, {	-- Herbalism
+profession(HERBALISM, {
 	filter(200, {
 		{
 			["name"] = "Kul Tiran Herbalism",

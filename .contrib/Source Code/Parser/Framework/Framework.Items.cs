@@ -22,12 +22,12 @@ namespace ATT
             /// <summary>
             /// All of the items that have been parsed sorted by Item ID.
             /// </summary>
-            private static IDictionary<int, Dictionary<string, object>> ITEMS = new Dictionary<int, Dictionary<string, object>>();
+            private static IDictionary<long, Dictionary<string, object>> ITEMS = new Dictionary<long, Dictionary<string, object>>();
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
             /// </summary>
-            private static IDictionary<int, bool> ITEMS_WITH_REFERENCES = new Dictionary<int, bool>();
+            private static IDictionary<long, bool> ITEMS_WITH_REFERENCES = new Dictionary<long, bool>();
 
             /// <summary>
             /// A list of fields that have already warned the programmer.
@@ -37,7 +37,7 @@ namespace ATT
             /// <summary>
             /// All of the item IDs that are in the database.
             /// </summary>
-            public static ICollection<int> AllIDs
+            public static ICollection<long> AllIDs
             {
                 get
                 {
@@ -63,7 +63,7 @@ namespace ATT
             {
                 get
                 {
-                    var keys = new List<int>();
+                    var keys = new List<long>();
                     foreach (var itemID in ITEMS.Keys)
                     {
                         if (ITEMS_WITH_REFERENCES.ContainsKey(itemID)) continue;
@@ -89,7 +89,7 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static Dictionary<string, object> Get(int itemID)
+            public static Dictionary<string, object> Get(long itemID)
             {
                 // Attempt to get an existing item dictionary.
                 if (ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj))
@@ -111,7 +111,7 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static Dictionary<string, object> GetNull(int itemID)
+            public static Dictionary<string, object> GetNull(long itemID)
             {
                 // Attempt to get an existing item dictionary.
                 return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
@@ -129,7 +129,7 @@ namespace ATT
 
                 if (name == null)
                 {
-                    data.TryGetValue("itemID", out int itemID);
+                    data.TryGetValue("itemID", out long itemID);
                     if (itemID > 0)
                         Get(itemID).TryGetValue("name", out name);
                 }
@@ -163,7 +163,7 @@ namespace ATT
                     allItems.Add(item);
 
                     // If an item already has a filter ID assigned and the ID is valid, ignore it.
-                    if (item.TryGetValue("f", out object rawObjectData)) filter = (Objects.Filters)rawObjectData;
+                    if (item.TryGetValue("f", out long rawObjectData)) filter = (Objects.Filters)rawObjectData;
                     else filter = Objects.Filters.Invalid;
 
                     // Add the item to the filter group
@@ -332,7 +332,7 @@ namespace ATT
                     case "ilvl":
                     case "q":
                         {
-                            item[field] = Convert.ToInt32(value);
+                            item[field] = Convert.ToInt64(value);
                             break;
                         }
 
@@ -359,7 +359,7 @@ namespace ATT
                         }
                         else
                         {
-                            item[field] = Convert.ToInt32(value);
+                            item[field] = Convert.ToInt64(value);
                         }
                         break;
 
@@ -371,20 +371,20 @@ namespace ATT
                             if (!(value is Dictionary<object, object> newDict)) return;
 
                             // Attempt to get the old list data.
-                            Dictionary<int, int> oldDict;
+                            Dictionary<long, long> oldDict;
                             if (item.TryGetValue(field, out object oldData))
                             {
                                 // Convert the old data to a dictionary of ints.
-                                oldDict = oldData as Dictionary<int, int>;
+                                oldDict = oldData as Dictionary<long, long>;
                             }
                             else
                             {
                                 // Create a new data dictionary of ints.
-                                item[field] = oldDict = new Dictionary<int, int>();
+                                item[field] = oldDict = new Dictionary<long, long>();
                             }
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
+                            foreach (var pair in newDict) oldDict[Convert.ToInt64(pair.Key)] = Convert.ToInt64(pair.Value);
                             break;
                         }
 
@@ -489,7 +489,7 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The item ID to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(int itemID, Dictionary<object, object> data)
+            public static void Merge(long itemID, Dictionary<object, object> data)
             {
                 // Ignore this for Artifacts.
                 if (data.ContainsKey("artifactID")) return;
@@ -504,7 +504,7 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The item ID to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(int itemID, Dictionary<string, object> data)
+            public static void Merge(long itemID, Dictionary<string, object> data)
             {
                 // Ignore this for Artifacts.
                 if (data.ContainsKey("artifactID")) return;
@@ -523,15 +523,15 @@ namespace ATT
                 // Attempt to extra the itemID from the data table.
                 if (data.TryGetValue("itemID", out object itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
                 else if (data.TryGetValue("itemId", out itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
                 else if (data.TryGetValue("toyID", out itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
             }
 
@@ -545,15 +545,15 @@ namespace ATT
                 // Attempt to extra the itemID from the data table.
                 if (data.TryGetValue("itemID", out object itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
                 else if (data.TryGetValue("itemId", out itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
                 else if (data.TryGetValue("toyID", out itemIDRef))
                 {
-                    Merge(Convert.ToInt32(itemIDRef), data);
+                    Merge(Convert.ToInt64(itemIDRef), data);
                 }
             }
 
@@ -568,15 +568,15 @@ namespace ATT
             //    // Attempt to extra the itemID from the data table.
             //    if (data.TryGetValue("itemID", out object itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else if (data.TryGetValue("itemId", out itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else if (data.TryGetValue("toyID", out itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else itemID = -1;
             //}
@@ -592,15 +592,15 @@ namespace ATT
             //    // Attempt to extra the itemID from the data table.
             //    if (data.TryGetValue("itemID", out object itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else if (data.TryGetValue("itemId", out itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else if (data.TryGetValue("toyID", out itemIDRef))
             //    {
-            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
             //    }
             //    else itemID = -1;
             //}
@@ -614,7 +614,7 @@ namespace ATT
             /// <param name="data">The data dictionary to merge into.</param>
             /// <param name="field">The name of the field being merged.</param>
             /// <param name="value">The value of the merged field.</param>
-            public static void MergeInto(int itemID, Dictionary<string, object> data, string field, object value)
+            public static void MergeInto(long itemID, Dictionary<string, object> data, string field, object value)
             {
                 switch (field)
                 {
@@ -674,18 +674,18 @@ namespace ATT
                             if (data.ContainsKey("s") || data.ContainsKey("ignoreSource")) return;
 
                             // Determine which variant this data is using.
-                            int modID = 0;
+                            long modID = 0;
                             if (!data.ContainsKey("ignoreBonus") && data.TryGetValue("modID", out object variantObj))
                             {
-                                modID = Convert.ToInt32(variantObj);
+                                modID = Convert.ToInt64(variantObj);
                             }
 
                             // Attempt to get the variants from the item
-                            var variants = value as Dictionary<int, int>;
+                            var variants = value as Dictionary<long, long>;
                             if (variants == null) return;
 
                             // Attempt to get the Source ID for this variant of the item.
-                            if (variants.TryGetValue(modID, out int sourceID))
+                            if (variants.TryGetValue(modID, out long sourceID))
                             {
                                 data["s"] = sourceID;
                             }
@@ -700,11 +700,11 @@ namespace ATT
                             if (data.TryGetValue("bonusID", out object variantObj))
                             {
                                 // Attempt to get the variants from the item
-                                var variants = value as Dictionary<int, int>;
+                                var variants = value as Dictionary<long, long>;
                                 if (variants == null) return;
 
                                 // Attempt to get the Source ID for this variant of the item.
-                                if (variants.TryGetValue(Convert.ToInt32(variantObj), out int sourceID))
+                                if (variants.TryGetValue(Convert.ToInt64(variantObj), out long sourceID))
                                 {
                                     data["s"] = sourceID;
                                 }
@@ -727,7 +727,7 @@ namespace ATT
             /// <param name="itemID">The item ID being merged.</param>
             /// <param name="item">The item dictionary to merge into the data table.</param>
             /// <param name="data">The data dictionary to receive the merged data.</param>
-            public static void MergeInto(int itemID, Dictionary<string, object> item, Dictionary<string, object> data)
+            public static void MergeInto(long itemID, Dictionary<string, object> item, Dictionary<string, object> data)
             {
                 foreach (var pair in item) MergeInto(itemID, data, pair.Key, pair.Value);
             }
@@ -738,7 +738,7 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The item ID to merge with.</param>
             /// <param name="data">The data dictionary to receive the merged data.</param>
-            public static void MergeInto(int itemID, Dictionary<string, object> data)
+            public static void MergeInto(long itemID, Dictionary<string, object> data)
             {
                 // Get the item dictionary, if it exists.
                 var item = GetNull(itemID);
@@ -767,7 +767,7 @@ namespace ATT
             public static void MergeInto(Dictionary<string, object> data)
             {
                 // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out int itemID))
+                if (data.TryGetValue("itemID", out long itemID))
                 {
                     MergeInto(itemID, data);
                 }
@@ -783,7 +783,7 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data dictionary to receive the merged data.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void MergeInto(Dictionary<string, object> data, out int itemID)
+            public static void MergeInto(Dictionary<string, object> data, out long itemID)
             {
                 // Attempt to extra the itemID from the data table.
                 if (data.TryGetValue("itemID", out itemID))
@@ -798,7 +798,7 @@ namespace ATT
             }
             #endregion
             #region Utility
-            public static void MarkItemAsReferenced(int itemID)
+            public static void MarkItemAsReferenced(long itemID)
             {
                 ITEMS_WITH_REFERENCES[itemID] = true;
             }

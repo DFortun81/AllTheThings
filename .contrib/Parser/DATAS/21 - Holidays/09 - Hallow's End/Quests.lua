@@ -14,13 +14,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37, -- Elwynn Forest
 				},
@@ -38,14 +38,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94 -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18 -- Tirisfal Glades
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -85,9 +85,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 					87,  -- Ironforge
 					84,  -- Stormwind City
 					89,  -- Darnassus
-					103, -- The Exodar
-					109, -- Netherstorm
-					111, -- Shattrath City
+					THE_EXODAR,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -111,9 +111,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 					85,  -- Orgrimmar
 					88,  -- Thunder Bluff
 					90,  -- Undercity
-					94,  -- Eversong Woods
-					109, -- Netherstorm
-					111, -- Shattrath City
+					EVERSONG_WOODS,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -251,9 +251,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12333, {	-- Candy Bucket — Azuremyst Isle, Azure Watch, Alliance
 				["isYearly"] = true,
-				["coord"] = { 48.5, 49.1, 97 },
+				["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -296,44 +296,44 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12406, {	-- Candy Bucket — Blade's Edge Mountains, Evergrove, neutral
 				["isYearly"] = true,
-				["coord"] = { 62.9, 38.3, 105 },
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12394, {	-- Candy Bucket — Blade's Edge Mountains, Mok'Nathal Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 76.2, 60.4, 105 },
+				["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12358, {	-- Candy Bucket — Blade's Edge Mountains, Sylvanaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 35.8, 63.8, 105 },
+				["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12393, {	-- Candy Bucket — Blade's Edge Mountains, Thunderlord Stronghold, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.4, 55.5, 105 },
+				["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12359, {	-- Candy Bucket — Blade's Edge Mountains, Toshley's Station, Alliance
 				["isYearly"] = true,
-				["coord"] = { 61.0, 68.1, 105 },
+				["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 105 },	-- Blade's Edge Mountain
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -367,9 +367,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12341, {	-- Candy Bucket — Bloodmyst Isle, Blood Watch, Alliance
 				["isYearly"] = true,
-				["coord"] = { 55.7, 59.9, 106 },
+				["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 106 },	-- Bloodmyst Isle
+				["maps"] = { BLOODMYST_ISLE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -719,27 +719,27 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12365, {	-- Candy Bucket — Eversong Woods, Fairbreeze Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 43.7, 71.1, 94 },
+				["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12364, {	-- Candy Bucket — Eversong Woods, Falconwing Square, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.1, 47.8, 94 },
+				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12337, {	-- Candy Bucket — Exodar, Seat of the Naaru, Alliance
 				["isYearly"] = true,
-				["coord"] = { 59.3, 19.2, 103 },
+				["coord"] = { 59.3, 19.2, THE_EXODAR },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 103 },	-- The Exodar
+				["maps"] = { THE_EXODAR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -808,9 +808,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.1, 47.8, 94 },
+				["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 95 },	-- Ghostlands
+				["maps"] = { GHOSTLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -853,36 +853,36 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 				["isYearly"] = true,
-				["coord"] = { 26.9, 59.6, 100 },
+				["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12352, {	-- Candy Bucket — Hellfire Peninsula, Honor Hold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.3, 63.6, 100 },
+				["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12353, {	-- Candy Bucket — Hellfire Peninsula, Temple of Telhamat, Alliance
 				["isYearly"] = true,
-				["coord"] = { 23.4, 36.5, 100 },
+				["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12388, {	-- Candy Bucket — Hellfire Peninsula, Thrallmar, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.8, 37.5, 100 },
+				["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 100 },	-- Hellfire Peninsula
+				["maps"] = { HELLFIRE_PENINSULA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1225,34 +1225,34 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12392, {	-- Candy Bucket — Nagrand, Garadar, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.7, 34.6, 107 },
+				["coord"] = { 56.7, 34.6, NAGRAND },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12357, {	-- Candy Bucket — Nagrand, Telaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.2, 75.8, 107 },
+				["coord"] = { 54.2, 75.8, NAGRAND },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 107 },	-- Nagrand
+				["maps"] = { NAGRAND },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12407, {	-- Candy Bucket — Netherstorm, Area 52, neutral
 				["isYearly"] = true,
-				["coord"] = { 32.0, 64.4, 109 },
-				["maps"] = { 109 },	-- Netherstorm
+				["coord"] = { 32.0, 64.4, NETHERSTORM },
+				["maps"] = { NETHERSTORM },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12408, {	-- Candy Bucket — Netherstorm, The Stormspire, neutral
 				["isYearly"] = true,
-				["coord"] = { 43.4, 36.1, 109 },
-				["maps"] = { 109 },	-- Netherstorm
+				["coord"] = { 43.4, 36.1, NETHERSTORM },
+				["maps"] = { NETHERSTORM },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1339,28 +1339,28 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(12409, {	-- Candy Bucket — Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars, neutral
 				["isYearly"] = true,
 				["coords"] = {
-					{ 30.3, 27.8, 104 },	-- Scryer
-					{ 61.0, 28.2, 104 },	-- Aldor
+					{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+					{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 				},
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12395, {	-- Candy Bucket — Shadowmoon Valley, Shadowmoon Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 30.3, 27.8, 104 },
+				["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12360, {	-- Candy Bucket — Shadowmoon Valley, Wildhammer Stronghold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 37.1, 58.2, 104 },
+				["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 104 },	-- Shadowmoon Valley
+				["maps"] = { SHADOWMOON_VALLEY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1368,10 +1368,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(12404, {	-- Candy Bucket — Shattrath City, Aldor Rise or Scryer's Tier, neutral
 				["isYearly"] = true,
 				["coords"] = {
-					{ 56.2, 81.8, 111 },	-- Scryer
-					{ 28.1, 49.0, 111 },	-- Aldor
+					{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+					{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 				},
-				["maps"] = { 111 },	-- Shattrath City
+				["maps"] = { SHATTRATH_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1386,18 +1386,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12370, {	-- Candy Bucket — Silvermoon City, The Bazaar, Horde
 				["isYearly"] = true,
-				["coord"] = { 67.6, 73.2, 110 },
+				["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12369, {	-- Candy Bucket — Silvermoon City, The Royal Exchange, Horde
 				["isYearly"] = true,
-				["coord"] = { 79.6, 57.9, 110 },
+				["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 110 },	-- Silvermoon City
+				["maps"] = { SILVERMOON_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1641,18 +1641,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12356, {	-- Candy Bucket — Terokkar Forest, Allerian Stronghold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 56.6, 53.2, 108 },
+				["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 108 },	-- Terrokar Forest
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12391, {	-- Candy Bucket — Terokkar Forest, Stonebreaker Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.8, 45.2, 108 },
+				["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 108 },	-- Terrokar Forest
+				["maps"] = { TEROKKAR_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1973,35 +1973,35 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12403, {	-- Candy Bucket — Zangarmarsh, Cenarion Refuge, neutral
 				["isYearly"] = true,
-				["coord"] = { 78.5, 62.9, 102 },
-				["maps"] = { 102 },	-- Zangarmarsh
+				["coord"] = { 78.5, 62.9, ZANGARMARSH },
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12355, {	-- Candy Bucket — Zangarmarsh, Orebor Harborage, Alliance
 				["isYearly"] = true,
-				["coord"] = { 41.9, 26.2, 102 },
+				["coord"] = { 41.9, 26.2, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12354, {	-- Candy Bucket — Zangarmarsh, Telredor, Alliance
 				["isYearly"] = true,
-				["coord"] = { 67.2, 49.0, 102 },
+				["coord"] = { 67.2, 49.0, ZANGARMARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12390, {	-- Candy Bucket — Zangarmarsh, Zabra'jin, Horde
 				["isYearly"] = true,
-				["coord"] = { 30.7, 50.9, 102 },
+				["coord"] = { 30.7, 50.9, ZANGARMARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 102 },	-- Zangarmarsh
+				["maps"] = { ZANGARMARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2087,9 +2087,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 					87,  -- Ironforge
 					84,  -- Stormwind City
 					89,  -- Darnassus
-					103, -- The Exodar
-					109, -- Netherstorm
-					111, -- Shattrath City
+					THE_EXODAR,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -2137,9 +2137,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
-				["coord"] = { 49.2, 51.4, 97 },	-- Azuremyst Isle
+				["coord"] = { 49.2, 51.4, AZUREMYST_ISLE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 97 },	-- Azuremyst Isle
+				["maps"] = { AZUREMYST_ISLE },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2177,9 +2177,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11450, {	-- Fire Training (Eversong Woods)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 47.2, 46.6, 94 },	-- Eversong Woods
+				["coord"] = { 47.2, 46.6, EVERSONG_WOODS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 94 },	-- Eversong Woods
+				["maps"] = { EVERSONG_WOODS },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2278,9 +2278,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 					85,  -- Orgrimmar
 					88,  -- Thunder Bluff
 					90,  -- Undercity
-					94,  -- Eversong Woods
-					109, -- Netherstorm
-					111, -- Shattrath City
+					EVERSONG_WOODS,
+					NETHERSTORM,
+					SHATTRATH_CITY,
 					120, -- The Storm Peaks
 					210, -- The Cape of Stranglethorn
 					125, -- Dalaran: Northrend
@@ -2341,13 +2341,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37  -- Elwynn Forest
 				},
@@ -2360,14 +2360,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94, -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18, -- Tirisfal Glades
 				},
 				["g"] = {
 					i(34077),	-- Crudely Wrapped Gift
@@ -2400,14 +2400,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
-					{ 47.2, 46.4, 94 },	-- Eversong Woods
+					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
-					27, -- Eversong Woods
-					94, -- Tirisfal Glades
+					EVERSONG_WOODS,
+					18, -- Tirisfal Glades
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -2422,13 +2422,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, 27 },	-- Dun Morogh
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					97, -- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27, -- Dun Morogh
 					37  -- Elwynn Forest
 				},
@@ -2487,7 +2487,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["maps"] = {
-					97,	-- Azuremyst Isle
+					AZUREMYST_ISLE,
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
 				},
@@ -2497,7 +2497,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["maps"] = {
 					1,	-- Durotar
-					94,	-- Eversong Woods
+					EVERSONG_WOODS,
 					18,	-- Tirisfal Glades
 				},
 			}),

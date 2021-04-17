@@ -56,10 +56,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(60531, {	-- Chosen Champions
-					["isWorldQuest"] = true,
-					["lvl"] = { 60 },
-				}),
 				q(61621, {	-- Cooking: Skewered Meats
 					["requireSkill"] = COOKING,
 					["isWorldQuest"] = true,

@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(52, {	-- Westfall
-			n(-228, {	-- Flight Path
+			n(FLIGHT_PATHS, {
 				fp(584, {	-- Furlbrow's Pumpkin Farm, Westfall
 					["coord"] = { 49.8, 18.8, 52 },
 				}),

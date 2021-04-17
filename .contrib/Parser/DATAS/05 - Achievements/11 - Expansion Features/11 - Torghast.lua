@@ -84,7 +84,8 @@ _.Achievements =
 			ach(14754),	-- The Forgotten One
 			ach(14478),	-- The Soulforges
 			ach(14493),	-- The Upper Reaches
-			ach(14571, {	-- Twisting Corridors: Layer 9
+			ach(14570, {	-- Twisting Corridors: Layer 8
+				i(184166),	-- Corridor Creeper
 				ach(14468),	-- Twisting Corridors: Layer 1
 				ach(14469, {	-- Twisting Corridors: Layer 2
 					i(183412),		-- Death Seeker (PET!)
@@ -98,9 +99,6 @@ _.Achievements =
 					title(438),	-- Spirestalker
 				}),
 				ach(14569),	-- Twisting Corridors: Layer 7
-				ach(14570, {	-- Twisting Corridors: Layer 8
-					i(184166),	-- Corridor Creeper
-				}),
 			}),
 
 

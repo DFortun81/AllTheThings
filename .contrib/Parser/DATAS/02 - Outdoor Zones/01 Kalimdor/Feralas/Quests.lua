@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(69, {	-- Feralas
 			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
@@ -89,7 +89,6 @@ _.Zones =
 					["sourceQuests"] = {
 						25643,	-- The Darkmist Ruins
 						25350,	-- Lost Apprentice
-						
 					},
 				}),
 				q(2979, {	-- Dark Ceremony
@@ -704,7 +703,6 @@ _.Zones =
 					["sourceQuests"] = {
 						25643,	-- The Darkmist Ruins
 						25350,	-- Lost Apprentice
-						
 					},
 				}),
 				q(25643, {	-- The Darkmist Ruins

@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(2, {	-- Burning Crusade
 		f(200, {	-- Recipes
-			n(-180, {	-- Alchemy
+			prof(ALCHEMY, {
 				i(22914),	-- Recipe: Destruction Potion
 				i(22926),	-- Recipe: Elixir of Empowerment (BoE version)
 				i(22919),	-- Recipe: Elixir of Major Mageblood
@@ -15,7 +15,7 @@ _.WorldDrops =
 				i(22912),	-- Recipe: Heroic Potion
 				i(22903),	-- Recipe: Insane Strength Potion
 			}),
-			n(-181, {	-- Blacksmithing
+			prof(BLACKSMITHING, {
 				i(33186),	-- Plans: Adamantite Weapon Chain (BoE version)
 				i(23626),	-- Plans: Black Felsteel Bracers
 				i(23628),	-- Plans: Blessed Bracers
@@ -37,7 +37,7 @@ _.WorldDrops =
 				i(23622),	-- Plans: Steelgrip Gauntlets
 				i(23623),	-- Plans: Storm Helm
 			}),
-			n(-182, {	-- Enchanting
+			prof(ENCHANTING, {
 				i(28280),	-- Formula: Enchant Boots - Boar's Speed (BoE version)
 				i(28279),	-- Formula: Enchant Boots - Cat's Swiftness (BoE version)
 				i(22542),	-- Formula: Enchant Boots - Vitality
@@ -49,7 +49,7 @@ _.WorldDrops =
 				i(22553),	-- Formula: Enchant Weapon - Potency
 				i(22558),	-- Formula: Enchant Weapon - Spellsurge
 			}),
-			n(-183, {	-- Engineering
+			prof(ENGINEERING, {
 				i(23802),	-- Schematic: Ornate Khorium Rifle
 				i(23804),	-- Schematic: Power Amplification Goggles
 				i(23810),	-- Schematic: Crashin' Thrashin' Robot
@@ -57,7 +57,7 @@ _.WorldDrops =
 				i(23884),	-- Schematic: Mana Potion Injector (BoE version)
 				i(25887),	-- Schematic: Purple Smoke Flare
 			}),
-			n(-186, { 	-- Jewelcrafting
+			prof(JEWELCRAFTING, {
 				i(24193),	-- Design: Bold Living Ruby
 				i(24168),	-- Design: Braided Eternium Chain
 				i(24196),	-- Design: Brilliant Living Ruby
@@ -137,7 +137,7 @@ _.WorldDrops =
 				i(24211),	-- Design: Timeless Nightseye
 				i(31878),	-- Design: Veiled Nightseye
 			}),
-			n(-187, {	-- Leatherworking
+			prof(LEATHERWORKING, {
 				i(29724),	-- Pattern: Cobrascale Gloves (BoE version)
 				i(29723),	-- Pattern: Cobrascale Hood
 				un(REMOVED_FROM_GAME, i(29714)),	-- Pattern: Drums of Restoration (BoE version was removed from game)
@@ -153,10 +153,7 @@ _.WorldDrops =
 				i(29728),	-- Pattern: Windslayer Wraps
 				i(29731),	-- Pattern: Windstrike Gloves (BoE version)
 			}),
-			n(-350, {	-- Spell Book
-				i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
-			}),
-			n(-190, {	-- Tailoring
+			prof(TAILORING, {
 				i(24298),	-- Pattern: Blackstrike Bracers
 				i(24304),	-- Pattern: Black Belt of Knowledge
 				i(24297),	-- Pattern: Bracers of Havok

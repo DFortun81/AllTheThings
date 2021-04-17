@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(12, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(71, {	-- Tanaris
 			m(75, {	-- Caverns of Time
 			--	m(74, {	-- Caverns of Time Entrance
