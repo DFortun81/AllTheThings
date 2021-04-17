@@ -9,7 +9,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				i(78342, {	-- Plump Dig Rat
 					["spellID"] = 0,	-- Filter: No Spell ID plox
-					["crs"] = { 3444 },	-- Dig Rat
+					["cr"] = 3444,	-- Dig Rat
 					["g"] = {
 						recipe(6417),	-- Dig Rat Stew
 					},

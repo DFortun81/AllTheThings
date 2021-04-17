@@ -626,23 +626,6 @@ _.Zones =
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 				}),
-				q(555,   {	-- Soothing Turtle Bisque
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 2430 },	-- Chef Jessen
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(3737)),	-- Recipe: Soothing Turtle Bisque
-					},
-				}),
-				q(7321, {	-- [DEPRECATED] Soothing Turtle Bisque
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2393 },	-- Christoph Jeffcoat
-					["requireSkill"] = COOKING,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(3737)),	-- Recipe: Soothing Turtle Bisque
-					},
-				}),
 				q(546,   {	-- [DEPRECATED] Souvenirs of Death
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
