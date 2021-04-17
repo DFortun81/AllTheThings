@@ -151,30 +151,6 @@ _.Zones =
 					["provider"] = { "n", 18584 },	-- Sal'salabim
 					["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 				}),
-				q(11380, {	-- Manalicious
-					["provider"] = { "n", 24393 },	-- The Rokk
-					["isDaily"] = true,
-					["g"] = {
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-						crit(3, {	-- Manalicious
-							["achievementID"] = 906,	-- Kickin' It Up a Notch
-						}),
-					},
-				}),
 				q(12785, {	-- Orgrimmar (Troll)
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { TROLL },
@@ -193,89 +169,17 @@ _.Zones =
 						i(25978)	-- Seth's Graphite Fishing Pole
 					},
 				}),
-				q(11377, {	-- Revenge is Tasty
-					["isDaily"] = true,
-					["provider"] = { "n", 24393 },	-- The Rokk
-					["g"] = {
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-						crit(1, {	-- Revenge is Tasty
-							["achievementID"] = 906,	-- Kickin' It Up a Notch
-						}),
-					},
-				}),
 				q(12788, {	-- Silvermoon
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { BLOODELF },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12782,	-- Desperate Research
 				}),
-				q(11381, {	-- Soup for the Soul
-					["isDaily"] = true,
-					["provider"] = { "n", 24393 },	-- The Rokk
-					["g"] = {
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-						crit(4, {	-- Soup for the Soul
-							["achievementID"] = 906,	-- Kickin' It Up a Notch
-						}),
-					},
-				}),
 				q(12774, {	-- Stormwind
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { HUMAN },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12775,	-- A Desperate Alliance
-				}),
-				q(11379, {	-- Super Hot Stew
-					["isDaily"] = true,
-					["provider"] = { "n", 24393 },	-- The Rokk
-					["g"] = {
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-						crit(2, {	-- Super Hot Stew
-							["achievementID"] = 906,	-- Kickin' It Up a Notch
-						}),
-					},
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["provider"] = { "n", 18481 },	-- A'dal

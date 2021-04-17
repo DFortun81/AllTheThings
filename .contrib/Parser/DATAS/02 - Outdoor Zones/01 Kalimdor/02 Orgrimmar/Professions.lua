@@ -183,13 +183,6 @@ _.Zones =
 								currency(81),	-- Epicurean's Award
 							},
 						}),
-						q(6611, {	-- To Gadgetzan You Go!
-							["provider"] = { "n", 3399 },	-- Zamja
-							["coord"] = { 32.2, 69.4, 85 },
-							["races"] = HORDE_ONLY,
-							["requireSkill"] = COOKING,
-							["isBreadcrumb"] = true,
-						}),
 						q(26233, {	-- Stealing From Our Own
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },

@@ -119,14 +119,6 @@ _.Zones =
 								currency(81),	-- Epicurean's Award
 							},
 						}),
-						q(6612, {	-- I Know A Guy...
-							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
-							["requireSkill"] = COOKING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },

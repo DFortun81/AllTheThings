@@ -212,26 +212,6 @@ _.Zones =
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
-				q(13825, {	-- Clamlette Surprise
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
-					["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
-					["requireSkill"] = COOKING,
-					["g"] = {
-						recipe(64054),	-- Clamlette Magnifique
-					},
-				}),
-				q(6610,  {	-- Clamlette Surprise
-					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
-					["coord"] = { 52.4, 29.0, 71 },
-					["sourceQuests"] = {
-						6611,	-- To Gadgetzan You Go!
-					},
-					["requireSkill"] = COOKING,
-					["g"] = {
-						recipe(64054),	-- Clamlette Magnifique
-					},
-				}),
 				q(8181,  {	-- Confront Yeh'kinya
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10460 },	-- Prospector Ironboot
