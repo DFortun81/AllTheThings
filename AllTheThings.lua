@@ -135,6 +135,20 @@ local function StartCoroutine(name, method, delaySec)
 		-- print("skipped coroutine",name);/
 	end
 end
+-- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
+local function Callback(method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = true;
+		local newCallback = function(...)
+			method(...);
+			app.__callbacks[method] = nil;
+		end;
+		C_Timer.After(0, newCallback);
+	end
+end
 local constructor = function(id, t, typeID)
 	if t then
 		if not rawget(t, "g") and rawget(t, 1) then
@@ -11420,31 +11434,16 @@ local function Refresh(self)
 		totalRowCount = totalRowCount + 1;
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
 
-		-- If the rows need to be processed again, do so next update.
-		if self.processingLinks then
-			StartCoroutine(self:GetName(), function()
-				while self.processingLinks do
-					self.processingLinks = nil;
-					coroutine.yield();
-					self:Refresh();
-				end
-				if self.UpdateDone then
-					StartCoroutine(self:GetName()..":UpdateDone", function()
-						coroutine.yield();
-						StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-							coroutine.yield();
-							self:UpdateDone();
-						end);
-					end);
-				end
+		-- If this window has an UpdateDone method which should process after the Refresh is complete
+		if self.UpdateDone then
+			Callback(function()
+				self:UpdateDone();
 			end);
-		elseif self.UpdateDone then
-			StartCoroutine(self:GetName()..":UpdateDone", function()
-				coroutine.yield();
-				StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-					coroutine.yield();
-					self:UpdateDone();
-				end);
+		-- If the rows need to be processed again, do so next update.
+		elseif self.processingLinks then
+			Callback(function()
+				self.processingLinks = nil;
+				self:Refresh();
 			end);
 		end
 	else
@@ -12474,7 +12473,7 @@ local function ProcessGroup(data, object)
 end
 local function Update(self, force, got)
 	if self.data then
-		--print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		-- print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
 		if force or self:IsVisible() then
 			if not self.rowData then
 				self.rowData = {};
@@ -13990,8 +13989,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
-			app.MaximumItemInfoRetries = 40;
+			local minID,maxID,oldRetries = app.customHarvestMin,app.customHarvestMax,app.MaximumItemInfoRetries;
+			app.MaximumItemInfoRetries = 10;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
@@ -14077,10 +14076,12 @@ app:GetWindow("Harvester", UIParent, function(self)
 							self.forcedDebug = nil;
 						end
 						app.print("Source Harvest Complete!");
+						-- revert the number of retries to retrieve item information
+						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
 					end
 				end
-				self:Refresh();
+				Callback(function() self:Refresh(); end);
 			end
 		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
