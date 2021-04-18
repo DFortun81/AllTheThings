@@ -13990,14 +13990,14 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			self:Update();
+			Callback(function() self:Update(); end);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocationCoroutine()
 			-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
-			while not app.InWorld or InCombatLockdown() do coroutine.yield(); end
+			while InCombatLockdown() do coroutine.yield(); end
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
 			while not mapID or mapID < 0 do
@@ -14015,7 +14015,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+			if app.InWorld and app.IsReady and app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
 			end
 		end
@@ -14026,7 +14026,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- print("LocationTrigger",e,...);
 			LocationTrigger();
 		end);
-		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
@@ -17542,10 +17541,11 @@ app.events.VARIABLES_LOADED = function()
 	end
 
 	Push(app, "WaitOnMountData", function()
-		while not app.InWorld do coroutine.yield(); end
-
 		-- First, load the addon data
 		app:GetDataCache();
+
+		-- Then wait for the player to actually be 'in the game' to do further logic
+		while not app.InWorld do coroutine.yield(); end
 
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
@@ -17657,9 +17657,8 @@ app.events.VARIABLES_LOADED = function()
 			app:RefreshData(false);
 		end
 
-		-- fire a late location trigger to make sure the minilist syncs to the current zone
-		-- so that addon-loading doesn't interfere with map info
-		C_Timer.After(2, app.LocationTrigger);
+		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
+		Callback(app.LocationTrigger);
 	end);
 end
 app.events.PLAYER_LOGIN = function(...)
@@ -17678,6 +17677,8 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	app.InWorld = true;
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
+	-- send a location trigger now that the character is 'in the world'
+	Callback(app.LocationTrigger);
 end
 app.events.ADDON_LOADED = function(addonName)
 	-- print("ADDON_LOADED",addonName)
