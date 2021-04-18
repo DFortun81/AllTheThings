@@ -7648,28 +7648,20 @@ local itemFields = {
 			results = app.SearchForField("itemIDAsCost", id);
 		end
 		if results and #results > 0 then
-			local collected, count = true, 0;
 			for _,ref in pairs(results) do
 				-- different itemID, OR same itemID with different modID is allowed
 				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
-						count = count + 1;
-						if ref.progress < ref.total then
-							collected = false;
-						end
-					elseif ref.collectible then
-						count = count + 1;
-						if not ref.collected then
-							collected = false;
-						end
+					-- Used as a cost for something which has a total greater than its progress and is not a parent of the cost group itself
+					if ref.total and ref.total > 0 and ref.progress < ref.total and not GetRelativeField(t, "parent", ref) then
+						return false;
+					-- Used as a cost for something which is collectible itself and not collected
+					elseif ref.collectible and not ref.collected then
+						return false;
 					end
 				end
 			end
-			if count > 0 then
-				return collected;
-			end
-			return false;
 		end
+		return true;
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
 		
@@ -8906,20 +8898,30 @@ local function QueryCompletedQuests()
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
+	-- if t.questID == 11381 then
+	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
+	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
+	-- end
 	return
 	-- must treat Quests as collectible
 	app.CollectibleQuests
-	-- must not be repeatable, unless considering repeatable quests as trackable
-	and (((not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-	-- must match custom collectibility if set as well
-	and app.CheckCustomCollects(t)
-	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-	-- TODO: revisit if party sync option becomes a thing
-	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-		
-	-- If it is an item or used for an active quest.
-	or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
+	and (
+			(
+			-- must not be repeatable, unless considering repeatable quests as trackable
+			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must match custom collectibility if set as well
+			and app.CheckCustomCollects(t)
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
+			-- TODO: revisit if party sync option becomes a thing
+			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			)
+			
+		-- If it is an item or used for an active quest.
+		or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
