@@ -2220,8 +2220,12 @@ _.ExpansionFeatures =
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
 						["coord"] = { 56.1, 84.5, 1707 },	-- Archon's Rise
-						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["modID"] = 3,	-- Normal
+						}, {
 							i(177872, {	-- Archon's Guiding Glaive
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2244,12 +2248,14 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(174315, {	-- Chyrus's Crest of Hope
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
 									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
 								},
 							}),
 							i(184270, {	-- Disciple's Peacebound Poniard
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2272,6 +2278,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177865, {	-- Faithful Sidearm
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2296,6 +2303,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(174302, {	-- Labrys of the Loyal Larion
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2328,6 +2336,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(180315, {	-- Polemarch's Scepter of Faith
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2336,6 +2345,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184243, {	-- Praetorian Wingblade
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2352,6 +2362,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184274, {	-- Reaver of Renewed Resolve
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2368,6 +2379,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177860, {	-- Silvered Recurve of Reconciliation
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2376,6 +2388,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177849, {	-- Soulbearer's Blade of Salvation
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2384,6 +2397,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177855, {	-- Spellblade of Antiquity
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2400,6 +2414,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177870, {	-- Thenios's Beacon of Foresight
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
 									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
@@ -2414,6 +2429,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(178975, {	-- Vesiphone's Vesper of Reflection
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2430,6 +2446,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184271, {	-- Xandria's Kopis of Courage
+								["modID"] = 82,
 								["cost"] = {
 									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
 									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
@@ -2731,12 +2748,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
-						["coord"] = { 66.4, 22.0, 1533 },	-- Bastion (it's in Elysian Hold but the maps are haunted)
+						["coord"] = { 55.0, 82.9, 1707 },	-- Archon's Rise
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 4,	-- LFR
 						}, {
 							i(177872, {	-- Archon's Guiding Glaive
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2759,12 +2777,14 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(174315, {	-- Chyrus's Crest of Hope
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183895.04, 1 },	-- LFR Apogee Anima Bead - 194
 									{ "i", 183894.04, 1 },	-- LFR Thaumaturgic Anima Bead - 194
 								},
 							}),
 							i(184270, {	-- Disciple's Peacebound Poniard
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2787,6 +2807,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177865, {	-- Faithful Sidearm
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2811,6 +2832,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(174302, {	-- Labrys of the Loyal Larion
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2843,6 +2865,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(180315, {	-- Polemarch's Scepter of Faith
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2851,6 +2874,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184243, {	-- Praetorian Wingblade
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2867,6 +2891,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184274, {	-- Reaver of Renewed Resolve
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2883,6 +2908,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177860, {	-- Silvered Recurve of Reconciliation
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2891,6 +2917,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177849, {	-- Soulbearer's Blade of Salvation
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2899,6 +2926,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177855, {	-- Spellblade of Antiquity
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2915,6 +2943,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(177870, {	-- Thenios's Beacon of Foresight
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183895.04, 1 },	-- LFR Apogee Anima Bead - 194
 									{ "i", 183894.04, 1 },	-- LFR Thaumaturgic Anima Bead - 194
@@ -2929,6 +2958,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(178975, {	-- Vesiphone's Vesper of Reflection
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2945,6 +2975,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184271, {	-- Xandria's Kopis of Courage
+								["modID"] = 83,
 								["cost"] = {
 									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
 									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
@@ -2955,10 +2986,11 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
-						-- TODO: Fill in coords
-						--["coord"] = { x.x, y.y, zzzz },
-						-- TODO: Fill in "cost" for each item
-						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+						["coord"] = { 57.0, 79.8, 1707 },	-- Archon's Rise
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["modID"] = 5,	-- Heroic
+						}, {
 							i(177872, {	-- Archon's Guiding Glaive
 								--["cost"] = { { "x", yyyy, zzzz } },
 							}),
