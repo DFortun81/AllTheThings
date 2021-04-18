@@ -366,6 +366,7 @@ _.Zones =
 			q(39207, {	-- Hero's Call: Grizzly Hills!
 				["isBreadcrumb"] = true,
 				["lvl"] = 63,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49551, {	-- Hero's Call: Howling Fjord!
 				["isBreadcrumb"] = true,
