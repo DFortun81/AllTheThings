@@ -135,6 +135,20 @@ local function StartCoroutine(name, method, delaySec)
 		-- print("skipped coroutine",name);/
 	end
 end
+-- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
+local function Callback(method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = true;
+		local newCallback = function(...)
+			method(...);
+			app.__callbacks[method] = nil;
+		end;
+		C_Timer.After(0, newCallback);
+	end
+end
 local constructor = function(id, t, typeID)
 	if t then
 		if not rawget(t, "g") and rawget(t, 1) then
@@ -7513,7 +7527,7 @@ local itemFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", nil);
+					rawset(t, "retries", 1);
 				end
 			end
 		end
@@ -10557,7 +10571,81 @@ app.CheckCustomCollects = function(t)
 	end
 	return true;
 end
+-- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
+app.RefreshCustomCollectibility = function()
+	-- print("app.RefreshCustomCollectibility")
+	-- do one-time per character custom visibility check(s)
+	-- Exile's Reach (New Player Experience)
+	app.SetCustomCollectibility("NPE", function(cc)
+		-- character is not checked
+		if cc == nil then
+			-- print("first check");
+			-- check if the current MapID is in Exile's Reach
+			local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
+			while not app.CurrentMapID do
+				app.GetCurrentMapID();
+			end
+			-- print("map check",app.CurrentMapID);
+			-- this is an NPE character, so flag the GUID
+			if maps[app.CurrentMapID] then
+				-- print("on map");
+				return true;
+			-- if character has completed the first NPE quest
+			elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
+					-- but not finished the NPE chain
+					and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
+				-- print("incomplete NPE chain");
+				return true;
+			end
+			-- otherwise character is not NPE
+			return false;
+		-- character has previously been flagged
+		elseif cc then
+			-- finished the NPE chain
+			if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
+				-- print("complete NPE chain");
+				return false;
+			end
+		end
+		return cc;
+	end);
+	-- Shadowlands Skip
+	app.SetCustomCollectibility("SL_SKIP", function(cc)
+		-- character is not checked
+		if cc == nil then
+			-- print("first check of SL_SKIP");
+			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+			cc = IsQuestFlaggedCompleted(62713) or false;
+		-- character is not a skip character, check if the status has changed
+		elseif not cc then
+			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+			cc = IsQuestFlaggedCompleted(62713);
+		end
+		-- no apparent way to revert this choice, so no logic to revert the CC value
+		-- print("isSkip",cc);
+		return cc;
+	end);
 
+	local SLCovenantId = C_Covenants.GetActiveCovenantID();
+	-- print("Current Covenant",SLCovenantId);
+	-- Show all Covenants if not yet selected
+	-- Shadowlands Covenant: Kyrian
+	app.SetCustomCollectibility("SL_COV_KYR", function()
+		return SLCovenantId == 1 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Venthyr
+	app.SetCustomCollectibility("SL_COV_VEN", function()
+		return SLCovenantId == 2 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Night Fae
+	app.SetCustomCollectibility("SL_COV_NFA", function()
+		return SLCovenantId == 3 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Necrolord
+	app.SetCustomCollectibility("SL_COV_NEC", function()
+		return SLCovenantId == 4 or SLCovenantId == 0;
+	end);
+end
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		app.Settings:Open();
@@ -11423,31 +11511,16 @@ local function Refresh(self)
 		totalRowCount = totalRowCount + 1;
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
 
-		-- If the rows need to be processed again, do so next update.
-		if self.processingLinks then
-			StartCoroutine(self:GetName(), function()
-				while self.processingLinks do
-					self.processingLinks = nil;
-					coroutine.yield();
-					self:Refresh();
-				end
-				if self.UpdateDone then
-					StartCoroutine(self:GetName()..":UpdateDone", function()
-						coroutine.yield();
-						StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-							coroutine.yield();
-							self:UpdateDone();
-						end);
-					end);
-				end
+		-- If this window has an UpdateDone method which should process after the Refresh is complete
+		if self.UpdateDone then
+			Callback(function()
+				self:UpdateDone();
 			end);
-		elseif self.UpdateDone then
-			StartCoroutine(self:GetName()..":UpdateDone", function()
-				coroutine.yield();
-				StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-					coroutine.yield();
-					self:UpdateDone();
-				end);
+		-- If the rows need to be processed again, do so next update.
+		elseif self.processingLinks then
+			Callback(function()
+				self.processingLinks = nil;
+				self:Refresh();
 			end);
 		end
 	else
@@ -12020,12 +12093,14 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str = "";
+			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				-- TODO: causes 60 upvalue error...
-				-- str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr)
-				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				if colors then
+					str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr);
+				else
+					str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
@@ -12042,7 +12117,13 @@ RowOnEnter = function (self)
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
 				end
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+				if reference.r == 2 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, "ff407fbf") or ITEM_REQ_ALLIANCE);
+				elseif reference.r == 1 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, "ffcc6666") or ITEM_REQ_HORDE);
+				else
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
+				end
 			end
 		end
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
@@ -12477,7 +12558,7 @@ local function ProcessGroup(data, object)
 end
 local function Update(self, force, got)
 	if self.data then
-		--print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		-- print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
 		if force or self:IsVisible() then
 			if not self.rowData then
 				self.rowData = {};
@@ -13434,13 +13515,15 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
+			-- print("Refreshed Bounties")
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
 				self.data.g[1].saved = true;
 				self:SetVisible(true);
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			StartCoroutine("RefreshBounties", RefreshBounties, 1);
+			self:UnregisterEvent("VARIABLES_LOADED");
+			Callback(RefreshBounties);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 	end
@@ -13910,24 +13993,21 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			self:Update();
+			Callback(function() self:Update(); end);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocationCoroutine()
-			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-
-				-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
-				while not app.IsReady or InCombatLockdown() do coroutine.yield(); end
-				-- Acquire the new map ID.
-				local mapID = app.GetCurrentMapID();
-				while not mapID or mapID < 0 do
-					coroutine.yield();
-					mapID = app.GetCurrentMapID();
-				end
-				OpenMiniList(mapID);
+			-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
+			while InCombatLockdown() do coroutine.yield(); end
+			-- Acquire the new map ID.
+			local mapID = app.GetCurrentMapID();
+			while not mapID or mapID < 0 do
+				coroutine.yield();
+				mapID = app.GetCurrentMapID();
 			end
+			OpenMiniList(mapID);
 		end
 		local function ToggleMiniListForCurrentZone()
 			local self = app:GetWindow("CurrentInstance");
@@ -13938,7 +14018,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			if app.InWorld and app.IsReady and app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			end
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
@@ -13947,7 +14029,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- print("LocationTrigger",e,...);
 			LocationTrigger();
 		end);
-		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
@@ -13993,8 +14074,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
-			app.MaximumItemInfoRetries = 40;
+			local minID,maxID,oldRetries = app.customHarvestMin,app.customHarvestMax,app.MaximumItemInfoRetries;
+			app.MaximumItemInfoRetries = 10;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
@@ -14080,10 +14161,12 @@ app:GetWindow("Harvester", UIParent, function(self)
 							self.forcedDebug = nil;
 						end
 						app.print("Source Harvest Complete!");
+						-- revert the number of retries to retrieve item information
+						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
 					end
 				end
-				self:Refresh();
+				Callback(function() self:Refresh(); end);
 			end
 		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
@@ -17131,9 +17214,8 @@ app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
+app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
--- app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
--- app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -17431,9 +17513,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Refresh Achievements
 	RefreshAchievementCollection();
 
-	-- Set the Current Map ID
-	app.GetCurrentMapID();
-
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
@@ -17464,17 +17543,12 @@ app.events.VARIABLES_LOADED = function()
 		C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
 	end
 
-	app:GetDataCache();
-
 	Push(app, "WaitOnMountData", function()
-		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
-		local counter = 300;
-		local mountIDs = C_MountJournal.GetMountIDs();
-		while counter > 0 and (not mountIDs or #mountIDs < 1) do
-			for i=10,1,-1 do coroutine.yield(); end
-			counter = counter - 1;
-			mountIDs = C_MountJournal.GetMountIDs();
-		end
+		-- First, load the addon data
+		app:GetDataCache();
+
+		-- Then wait for the player to actually be 'in the game' to do further logic
+		while not app.InWorld do coroutine.yield(); end
 
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
@@ -17574,77 +17648,6 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 
-		-- do one-time per character custom visibility check(s)
-		-- Exile's Reach (New Player Experience)
-		app.SetCustomCollectibility("NPE", function(cc)
-			-- character is not checked
-			if cc == nil then
-				-- print("first check");
-				-- check if the current MapID is in Exile's Reach
-				local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
-				while not app.CurrentMapID do
-					app.GetCurrentMapID();
-				end
-				-- print("map check",app.CurrentMapID);
-				-- this is an NPE character, so flag the GUID
-				if maps[app.CurrentMapID] then
-					-- print("on map");
-					return true;
-				-- if character has completed the first NPE quest
-				elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
-						-- but not finished the NPE chain
-						and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
-					-- print("incomplete NPE chain");
-					return true;
-				end
-				-- otherwise character is not NPE
-				return false;
-			-- character has previously been flagged
-			elseif cc then
-				-- finished the NPE chain
-				if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
-					-- print("complete NPE chain");
-					return false;
-				end
-			end
-			return cc;
-		end);
-		-- Shadowlands Skip
-		app.SetCustomCollectibility("SL_SKIP", function(cc)
-			-- character is not checked
-			if cc == nil then
-				-- print("first check of SL_SKIP");
-				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-				cc = IsQuestFlaggedCompleted(62713) or false;
-			-- character is not a skip character, check if the status has changed
-			elseif not cc then
-				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-				cc = IsQuestFlaggedCompleted(62713);
-			end
-			-- no apparent way to revert this choice, so no logic to revert the CC value
-			-- print("isSkip",cc);
-			return cc;
-		end);
-		local SLCovenantId = C_Covenants.GetActiveCovenantID();
-		-- print("Current Covenant",SLCovenantId);
-		-- Show all Covenants if not yet selected
-		-- Shadowlands Covenant: Kyrian
-		app.SetCustomCollectibility("SL_COV_KYR", function()
-			return SLCovenantId == 1 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Venthyr
-		app.SetCustomCollectibility("SL_COV_VEN", function()
-			return SLCovenantId == 2 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Night Fae
-		app.SetCustomCollectibility("SL_COV_NFA", function()
-			return SLCovenantId == 3 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Necrolord
-		app.SetCustomCollectibility("SL_COV_NEC", function()
-			return SLCovenantId == 4 or SLCovenantId == 0;
-		end);
-
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
@@ -17657,12 +17660,12 @@ app.events.VARIABLES_LOADED = function()
 			app:RefreshData(false);
 		end
 
-		-- fire a late location trigger to make sure the minilist syncs to the current zone
-		-- so that addon-loading doesn't interfere with map info
-		C_Timer.After(2, app.LocationTrigger);
+		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
+		Callback(app.LocationTrigger);
 	end);
 end
-app.events.PLAYER_LOGIN = function()
+app.events.PLAYER_LOGIN = function(...)
+	-- print("PLAYER_LOGIN",...)
 	app:UnregisterEvent("PLAYER_LOGIN");
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
@@ -17672,7 +17675,16 @@ app.events.PLAYER_LOGIN = function()
 		OnLeave = MinimapButtonOnLeave,
 	});
 end
+app.events.PLAYER_ENTERING_WORLD = function(...)
+	-- print("PLAYER_ENTERING_WORLD",...)
+	app.InWorld = true;
+	-- refresh any custom collects for this character
+	app.RefreshCustomCollectibility();
+	-- send a location trigger now that the character is 'in the world'
+	Callback(app.LocationTrigger);
+end
 app.events.ADDON_LOADED = function(addonName)
+	-- print("ADDON_LOADED",addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then
 		app.Blizzard_AuctionHouseUILoaded = true;
 		app:UnregisterEvent("ADDON_LOADED");
@@ -17680,8 +17692,8 @@ app.events.ADDON_LOADED = function(addonName)
 			app:OpenAuctionModule();
 		end
 	elseif addonName == "Blizzard_AchievementUI" then
-		RefreshAchievementCollection()
-		app:RefreshData(false, true);
+		RefreshAchievementCollection();
+		-- no point to try to refresh data yet... nothing to see
 	end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)

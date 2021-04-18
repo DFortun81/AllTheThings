@@ -525,8 +525,11 @@ profession(COOKING, {
 						{ "i", 33838, 1 },	-- Giant Kaliri Wing
 					},
 					["groups"] = {
-						i(33839),	-- Kaliri Stew
+						i(33839, {	-- Kaliri Stew
+							["collectible"] = false
+						}),
 					},
+					["collectible"] = false,
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
@@ -610,8 +613,11 @@ profession(COOKING, {
 						{ "i", 27658, 4 },	-- Roasted Clefthoof
 					},
 					["groups"] = {
-						i(33850),	-- Spiritual Soup
+						i(33850, {	-- Spiritual Soup
+							["collectible"] = false
+						}),
 					},
+					["collectible"] = false,
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
@@ -641,8 +647,11 @@ profession(COOKING, {
 						{ "i", 31673, 1 },	-- Crunchy Serpent
 					},
 					["groups"] = {
-						i(33848),	-- Demon Broiled Surprise
+						i(33848, {	-- Demon Broiled Surprise
+							["collectible"] = false
+						}),
 					},
+					["collectible"] = false,
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat

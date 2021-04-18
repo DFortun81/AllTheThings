@@ -32,10 +32,14 @@ _.Zones =
 					["coord"] = { 32.4, 48.0, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(23805, {	-- Schematic: Ultra-Spectroscopic Detection Goggles
+						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
+							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
+							["spellID"] = 30341,	-- White Smoke Flare
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 					},

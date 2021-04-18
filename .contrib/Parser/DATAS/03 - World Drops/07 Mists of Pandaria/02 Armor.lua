@@ -109,6 +109,7 @@ _.WorldDrops =
 			}),
 			f(52,   {	-- Finger
 				i(87437),	-- Anaxo's Multi-Layered Seal
+				i(87440),	-- Band of Pricking Needles
 				i(82228),	-- Bejeweled Ring
 				i(82063),	-- Gemmed Ring
 				i(82173),	-- Grummle Ring

@@ -420,6 +420,9 @@ _.ExpansionFeatures =
 				q(13684, {	-- A Valiant Of Stormwind
 					["coord"] = { 76.5, 19.4, 118 },
 					["races"] = { HUMAN },
+					["altQuests"] = {
+						13690,	-- A Valiant Of The Exodar
+					},
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13690, {	-- A Valiant Of The Exodar

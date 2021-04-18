@@ -192,6 +192,7 @@ profession(ALCHEMY, {
 		q(1581, {	-- Elixirs for the Bladeleafs
 			["qg"] = 2083,	-- Syral Bladeleaf
 			["requireSkill"] = ALCHEMY,
+			["coord"] = { 55.8, 50.4, TELDRASSIL },
 			["maps"] = { TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {

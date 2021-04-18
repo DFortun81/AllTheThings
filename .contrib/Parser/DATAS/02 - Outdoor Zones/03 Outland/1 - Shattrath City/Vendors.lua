@@ -1184,11 +1184,19 @@ _.Zones =
 					["coord"] = { 64.8, 69.6, SHATTRATH_CITY },
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
+							["spellID"] = 30313,	-- Adamantite Rifle
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["spellID"] = 0,
-							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
+							["spellID"] = 39895,	-- Fused Wiring
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							-- #if AFTER MOP
+							["u"] = REMOVED_FROM_GAME,
+							-- #else
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 						}),
 					},
 				}),
@@ -1196,9 +1204,13 @@ _.Zones =
 					["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 					["g"] = {
 						i(23816, {	-- Schematic: Fel Iron Toolbox
+							["spellID"] = 30348,	-- Fel Iron Toolbox
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
+							["spellID"] = 30341,	-- White Smoke Flare
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 					},

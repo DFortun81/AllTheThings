@@ -89,6 +89,11 @@ _.Zones =
 					["coord"] = { 51.0, 57.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(22900, {	-- Recipe: Elixir of Camouflage
+							["spellID"] = 28543,	-- Elixir of Camouflage
+							["requireSkill"] = ALCHEMY,
+							["isLimited"] = true,
+						}),
 						i(22909, {	-- Recipe: Elixir of Major Defense
 							["isLimited"] = true,
 						}),
