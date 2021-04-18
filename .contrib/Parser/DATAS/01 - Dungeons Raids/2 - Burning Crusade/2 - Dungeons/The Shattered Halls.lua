@@ -4,9 +4,9 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(259, {	-- The Shattered Halls
-		["lvl"] = 65,
-		["mapID"] = 246,
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
+		["mapID"] = 246,
+		["lvl"] = 65,
 		["g"] = {
 			n(QUESTS, {
 				{	-- A Very Special Cloth
@@ -122,8 +122,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE MOP
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30622, 1 },	-- Flamewrought Key [A]
+					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+				},
+				-- #endif
 				["ignoreBonus"] = true,
+				["lvl"] = 70,
 				["g"] = {
 					cr(16807, e(566, {	-- Grand Warlock Nethekurse
 						i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)

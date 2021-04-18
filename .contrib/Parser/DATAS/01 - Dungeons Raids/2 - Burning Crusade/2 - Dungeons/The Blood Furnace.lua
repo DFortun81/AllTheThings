@@ -4,9 +4,9 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(256, { 	-- The Blood Furnace
-		["lvl"] = 58,
-		["mapID"] = 261,
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
+		["mapID"] = 261,
+		["lvl"] = 58,
 		["g"] = {
 			n(QUESTS, {
 				q(29539, {	-- Heart of Rage (A)
@@ -107,8 +107,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}))
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE MOP
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30622, 1 },	-- Flamewrought Key [A]
+					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+				},
+				-- #endif
 				["ignoreBonus"] = true,
+				["lvl"] = 70,
 				["g"] = {
 					cr(17381, e(555, {	-- The Maker
 						i(24384),	-- Diamond-Core Sledgemace

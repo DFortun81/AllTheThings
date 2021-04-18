@@ -4,9 +4,9 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(248, { 	-- Hellfire Ramparts
-		["lvl"] = 57,
-		["mapID"] = 347,
 		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
+		["mapID"] = 347,
+		["lvl"] = 57,
 		["g"] = {
 			n(QUESTS, {
 				q(29529, {	-- Demons in the Citadel
@@ -122,8 +122,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})
 			}),
 			d(2, {		-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE MOP
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30622, 1 },	-- Flamewrought Key [A]
+					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+				},
+				-- #endif
 				["ignoreBonus"] = true,
+				["lvl"] = 70,
 				["g"] = {
 					ach(667),	-- Heroic: Hellfire Ramparts
 					e(527, {	-- Watchkeeper Gargolmar
