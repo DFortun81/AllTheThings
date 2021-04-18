@@ -1635,80 +1635,206 @@ _.ExpansionFeatures =
 				}),
 				n(VENDORS, {
 					n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 48.1, 53.5, 1702 },
-						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+							["modID"] = 3,	-- Normal
+						}, {
 							i(179544, {	-- Ashcarved Sledgehammer
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(180000, {	-- Staff of the Penitent
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 						}),
 					}),
