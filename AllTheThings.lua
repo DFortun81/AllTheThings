@@ -12090,12 +12090,14 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str = "";
+			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				-- TODO: causes 60 upvalue error...
-				-- str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr)
-				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				if colors then
+					str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr);
+				else
+					str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
@@ -12112,7 +12114,13 @@ RowOnEnter = function (self)
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
 				end
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+				if reference.r == 2 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, "ff407fbf") or ITEM_REQ_ALLIANCE);
+				elseif reference.r == 1 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, "ffcc6666") or ITEM_REQ_HORDE);
+				else
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
+				end
 			end
 		end
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
