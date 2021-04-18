@@ -14,9 +14,7 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(ACHIEVEMENTS,{
 					ach(14775, {	-- Mush Appreciated
-						["maps"] = {
-							1819,	-- Fungal Terminus
-						},
+						["maps"] = { 1819 },	-- Fungal Terminus
 						["g"] = {
 							title(435),	-- Fun Guy / Fun Gal
 						},
@@ -1641,76 +1639,76 @@ _.ExpansionFeatures =
 						["coord"] = { 48.1, 53.5, 1702 },
 						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
 							i(179544, {	-- Ashcarved Sledgehammer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180000, {	-- Staff of the Penitent
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 						}),
 					}),
@@ -2121,76 +2119,76 @@ _.ExpansionFeatures =
 						["coord"] = { 49.4, 54.4, 1702 },
 						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
 							i(179544, {	-- Ashcarved Sledgehammer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180000, {	-- Staff of the Penitent
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 						}),
 					}),
@@ -2462,80 +2460,206 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 46.9, 54.3, 1702 },
-						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+						["coord"] = { 46.9, 54.3, 1702 },	-- The Roots
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+							["modID"] = 4,	-- LFR
+						}, {
 							i(179544, {	-- Ashcarved Sledgehammer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(180000, {	-- Staff of the Penitent
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 						}),
 					}),
@@ -2683,76 +2807,76 @@ _.ExpansionFeatures =
 						["coord"] = { 49.4, 54.4, 1702 },
 						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
 							i(179544, {	-- Ashcarved Sledgehammer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180000, {	-- Staff of the Penitent
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 						}),
 					}),
