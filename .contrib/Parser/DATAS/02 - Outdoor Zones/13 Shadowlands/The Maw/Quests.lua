@@ -9,29 +9,45 @@ _.Zones =
 			n(QUESTS, {
 				n(-229, {	-- Weekly
 					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
-					n(-909, {	-- Hunt: Death Elementals
+					-- TODO: add icon for "weekly" header (can't figure out where the blue ! comes from on daily quests)
+					-- ^ added 'cr' to shadehound hunt because it was the only one without an icon and i couldn't get a model to work :(
+					n(-909,  {	-- Hunt: Death Elementals
 						["isWeekly"] = true,
 						["questID"] = 63198,
 						["crs"] = {
 							172962,	-- Tempered Stygia
 						},
+						["g"] = {
+							crit(3, {	-- Death Elementals
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
 					}),
-					n(-910, {	-- Hunt: Alpha Devourers
+					n(-910,  {	-- Hunt: Alpha Devourers
 						["isWeekly"] = true,
 						["questID"] = 63199,
 						["crs"] = {
 							175851,	-- Alpha Anima Devourer
 						},
+						["g"] = {
+							crit(2, {	-- Soul Eaters
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
 					}),
-					n(-911, {	-- Hunt: Shadehounds
+					n(-911,  {	-- Hunt: Shadehounds
 						["isWeekly"] = true,
 						["questID"] = 63433,
+						["cr"] = 174861,	-- Gorged Shadehound
 						["g"] = {
 							n(174861, {	-- Gorged Shadehound
 								["isWeekly"] = true,
 								["questID"] = 63433,
 								["coord"] = { 53.4, 79.3, 1543 },
 								["g"] = {
+									crit(1, {	-- Shadehounds
+										["achievementID"] = 14738,	-- Hunting Party
+									}),
 									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 									i(183057, {	-- Shadehound Armor Plating
 										["questID"] = 63154,	-- Shadehound Armor Plating
@@ -45,12 +61,38 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-912, {	-- Hunt: Winged Soul Eaters
+					n(-912,  {	-- Hunt: Winged Soul Eaters
 						["isWeekly"] = true,
 						["questID"] = 63194,
 						["crs"] = {
 							-- TODO: another NPC is part of the final objective
 							173195,	-- Undying Soulbinder
+						},
+						["g"] = {
+							crit(4, {	-- Winged Soul Eaters
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
+					}),
+					q(63708, {	-- Phantasmagoria
+						["provider"] = { "i", 185756 },	-- Warped Phantasma
+						["isWeekly"] = true,
+					}),
+					n(-913,  {	-- Tormentors of Torghast
+						["isWeekly"] = true,
+						["questID"] = 63854,
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								["crs"] = {
+									178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+								},
+								["g"] = {
+									i(185974),	-- Bahmeht Chain Link
+									i(185972, {	-- Tormentor's Cache
+										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
+									}),
+								},
+							}),
 						},
 					}),
 					n(-904, {	-- Wrath of the Jailer
@@ -58,15 +100,23 @@ _.Zones =
 						["questID"] = 63414,
 						["g"] = {
 							n(COMMON_BOSS_DROPS, {
-								i(183228),	-- Memory of Arcane Pulsars
-								i(184657),	-- Armguard of the Unseen Assailant
-								i(184661),	-- Bracers of the Tenebrous Retinue
-								i(184658),	-- Dread Harrier's Pauldrons
-								i(184660),	-- Dreadguard's Greathelm
-								i(184654),	-- Forgotten Shade's Shawl
-								i(184659),	-- Grips of the Dreadhound Tamer
-								i(184656),	-- Mawsworn Assassin's Doublet
-								i(184655),	-- Sash of the Ethereal Servant
+								["crs"] = {
+									175846,	-- Dathlane the Herald <Torghast Executioner>
+									175877,	-- Lumisende <Torghast Executioner>
+									175881,	-- Naelcrotix <Torghast Executioner>
+									176173,	-- Zograthos <Torghast Executioner>
+								},
+								["g"] = {
+									i(183228),	-- Memory of Arcane Pulsars
+									i(184657),	-- Armguard of the Unseen Assailant
+									i(184661),	-- Bracers of the Tenebrous Retinue
+									i(184658),	-- Dread Harrier's Pauldrons
+									i(184660),	-- Dreadguard's Greathelm
+									i(184654),	-- Forgotten Shade's Shawl
+									i(184659),	-- Grips of the Dreadhound Tamer
+									i(184656),	-- Mawsworn Assassin's Doublet
+									i(184655),	-- Sash of the Ethereal Servant
+								},
 							}),
 							n(175846, {	-- Dathlane the Herald <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
@@ -804,7 +854,10 @@ _.Zones =
 					["coord"] = { 62.7, 24.8, 1961 },	-- Korthia
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
-						i(186196),	-- Death's Advance War Chest
+						i(186196, {	-- Death's Advance War Chest
+							i(185860),	-- Korthian Caretaker's Cinch
+							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
+						}),
 					},
 				}),
 				
@@ -830,6 +883,23 @@ _.Zones =
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
+				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
+				--	TODO: add object localization
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
+				q(63787, {	-- Continued Efforts: Mauler's Outlook
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179149 },	-- Baroness Vashj
+					["isDaily"] = true,
+					["coord"] = { 60.9, 28.0, 1961 },	-- Korthia
+					["g"] = {
+					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
+						i(185900),	-- Korthian Caretaker's Stave
+					},
 				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -894,6 +964,12 @@ _.Zones =
 					["provider"] = { "n", 178805 },	-- Emeni
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, 1961 },	-- Korthia
+				}),
+				q(64103, {	-- Old Tricks Work Best
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178808 },	-- Baroness Draka
+					["isDaily"] = true,
+					["coord"] = { 60.7, 27.9, 1961 },	-- Korthia
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

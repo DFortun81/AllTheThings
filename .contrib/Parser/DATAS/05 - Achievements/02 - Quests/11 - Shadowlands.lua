@@ -243,6 +243,13 @@ _.Achievements =
 			}),
 			ach(15001),		-- Jailer's Personal Stash
 			ach(15041),		-- The Zovaal Shuffle
+			ach(15037, {	-- This Army
+				crit(1),	-- Cutter Fin
+				crit(2),	-- Kearnen the Blade
+				crit(3),	-- Winslow Swan
+				crit(4),	-- Boil Master Yetch
+				crit(5),	-- Flytrap
+			}),
 			ach(15000, {	-- United Front
 				crit(1),	-- Necrolord Assault
 				crit(2),	-- Venthyr Assault

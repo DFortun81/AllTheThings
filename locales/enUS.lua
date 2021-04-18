@@ -1092,6 +1092,7 @@ app.L = {
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
 		[-908] = 901746,																	-- Rewards
+		[-913] = "Interface\\Icons\\ui_torghast",											-- Tormentors of Torghast
 
 		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
 		[-916] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 1: Flowing Tendrils
@@ -1975,7 +1976,7 @@ app.L = {
 		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
 		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
 		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
-		--[-913] = ,															--
+		[-913] = "Tormentors of Torghast",										-- Tormentors of Torghast
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils

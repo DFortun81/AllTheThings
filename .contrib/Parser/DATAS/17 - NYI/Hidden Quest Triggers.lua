@@ -4608,5 +4608,9 @@ _.HiddenQuestTriggers =
 		q(64155),	-- dancing near a forge for The Zovaal Shuffle
 		q(64161),	-- dancing near a forge for The Zovaal Shuffle
 		q(64158),	-- dancing near a forge for The Zovaal Shuffle
+		q(63806),	-- selecting Flytrap to accompany you on You and What Army
+		q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
+		q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
+		q(64147),	-- triggered when turning in #63621, "Pulling His Chain"
 	}),
 };

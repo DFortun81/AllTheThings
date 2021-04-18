@@ -83,6 +83,7 @@ _.Zones =
 						176390,	-- Bridled Shadehound (random spawn?  found one up around 44, 45.  you just click to ride and it doesn't have a cast bar to hop on)
 					},
 				}),
+				ach(14738),		-- Hunting Party
 				ach(14334, {	-- Into the Maw
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
