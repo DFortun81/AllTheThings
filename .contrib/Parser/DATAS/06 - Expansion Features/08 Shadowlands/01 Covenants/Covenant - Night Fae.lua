@@ -2243,78 +2243,205 @@ _.ExpansionFeatures =
 					n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 49.4, 54.4, 1702 },
-						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+							["modID"] = 5,	-- Heroic
+						}, {
 							i(179544, {	-- Ashcarved Sledgehammer
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179557, {	-- Baron's Oaken Scepter
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179611, {	-- Bulwark of the Unbowed
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(179541, {	-- Colossal Sludgepounder
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(180260, {	-- Deathdancer's Warglaive
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179610, {	-- Dredge-Giant's Warshield
-								
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(180258, {	-- Faeweald Fleshrender
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(179497, {	-- Fang of the Winged Sentry
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179527, {	-- Gargon-Tamer's Spear
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179570, {	-- Harp of the Sanguine Courts
-								
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(180073, {	-- Heartstalker's Longbow
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179579, {	-- Jaws of the Hungerer
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(179492, {	-- Keepcrawler's Gutripper
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(179566, {	-- Lyre of Decadent Frivolity
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(182351, {	-- Mace of the Unburdened
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(179530, {	-- Nightwatch Eviscerator
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(180022, {	-- Rootbulb of the Sinless
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(179561, {	-- Rootspinner's Bloodbough
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(180071, {	-- Shrieking Sinseeker
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(180002, {	-- Spire of the Long Dark
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(180000, {	-- Staff of the Penitent
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184241, {	-- Stone-Sentinel Breaker
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(179577, {	-- Stonesnap Mandibles
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(180023, {	-- Wand of Arboreal Artifice
-								
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 						}),
 					}),
@@ -2931,7 +3058,10 @@ _.ExpansionFeatures =
 					n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 49.4, 54.4, 1702 },
-						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+							["modID"] = 6,	-- Mythic
+						}, {
 							i(179544, {	-- Ashcarved Sledgehammer
 								
 							}),
