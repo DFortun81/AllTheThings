@@ -2160,7 +2160,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
 								["cost"] = {
@@ -2179,7 +2182,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
 								["cost"] = {
@@ -2208,7 +2215,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
 							}),
 							i(184259, {	-- Grasp from the Grave
 								["modID"] = 83,
@@ -2254,7 +2264,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
 							}),
 							i(184251, {	-- Ossified Broadaxe
 								["cost"] = {
@@ -2364,7 +2378,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
 								["cost"] = {
@@ -2383,7 +2400,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
 								["cost"] = {
@@ -2412,7 +2433,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
 							}),
 							i(184259, {	-- Grasp from the Grave
 								["modID"] = 82,
@@ -2458,7 +2482,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
 							}),
 							i(184251, {	-- Ossified Broadaxe
 								["cost"] = {
@@ -2569,7 +2597,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								
+								["cost"] = {
+									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
+									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+								},
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
 								["cost"] = {
@@ -2588,7 +2619,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
+									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+								},
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
 								["cost"] = {
@@ -2617,7 +2652,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								
+								["cost"] = {
+									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
+									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+								},
 							}),
 							i(184259, {	-- Grasp from the Grave
 								["modID"] = 85,
@@ -2663,7 +2701,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
+									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+								},
 							}),
 							i(184251, {	-- Ossified Broadaxe
 								["cost"] = {
@@ -3303,7 +3345,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
 								["cost"] = {
@@ -3322,7 +3367,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
 								["cost"] = {
@@ -3351,7 +3400,10 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
 							}),
 							i(184259, {	-- Grasp from the Grave
 								["modID"] = 84,
@@ -3397,7 +3449,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
 							}),
 							i(184251, {	-- Ossified Broadaxe
 								["cost"] = {
