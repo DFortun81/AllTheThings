@@ -7,9 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = {
-				1698,	-- Seat of the Primus
-			},
+			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(14763),		-- Crypt Couture
@@ -2117,236 +2115,615 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 60.8, 44.3, 1698 },
-						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+							["modID"] = 4,	-- LFR
+						}, {
+						
+						--[[ LFR
+								["cost"] = {
+									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
+									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+								},
+
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
+									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+								},
+									--]]
+									
 							i(184253, {	-- Abdomen Chopper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184265, {	-- Abdomen Splitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184252, {	-- Aranakk Torture Device
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184248, {	-- Blightforged Twinblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184262, {	-- Deadeye Cannon
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184266, {	-- Fleshscourge Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184259, {	-- Grasp from the Grave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184261, {	-- Greatstaff of the Lichsworn General
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184247, {	-- Grip of the Dead
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184255, {	-- Gristlegore Hacker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184264, {	-- Krexus's Bloodletting Polearm
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184251, {	-- Ossified Broadaxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184263, {	-- Ossified Greataxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184254, {	-- Plaguespine Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184267, {	-- Skullcleaver of the Merciless One
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184249, {	-- Staff of the Lichsworn Lieutenant
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
+									{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
+									{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
+									{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+								},
 							}),
 							i(184256, {	-- Vicious Goreripper Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 							i(184260, {	-- Warglaive of the Hidden Fiend
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 83,
+								["cost"] = {
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+								},
 							}),
 						}),
 					}),
 					n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 61.1, 45.7, 1698 },
-						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+							["modID"] = 3,	-- Normal
+						}, {
+						
+						--[[ NORMAL
+								["cost"] = {
+									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
+									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+								},
+
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
+									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+								},
+									--]]
+									
 							i(184253, {	-- Abdomen Chopper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184265, {	-- Abdomen Splitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184252, {	-- Aranakk Torture Device
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184248, {	-- Blightforged Twinblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184262, {	-- Deadeye Cannon
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184266, {	-- Fleshscourge Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184259, {	-- Grasp from the Grave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184261, {	-- Greatstaff of the Lichsworn General
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184247, {	-- Grip of the Dead
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184255, {	-- Gristlegore Hacker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184264, {	-- Krexus's Bloodletting Polearm
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184251, {	-- Ossified Broadaxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184263, {	-- Ossified Greataxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184254, {	-- Plaguespine Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184267, {	-- Skullcleaver of the Merciless One
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184249, {	-- Staff of the Lichsworn Lieutenant
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
+									{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
+									{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
+									{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+								},
 							}),
 							i(184256, {	-- Vicious Goreripper Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 							i(184260, {	-- Warglaive of the Hidden Fiend
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 82,
+								["cost"] = {
+									{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
+									{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
+									{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
+									{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+								},
 							}),
 						}),
 					}),
 					n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 60.5, 48.6, 1698 },
-						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+							["modID"] = 6,	-- Mythic
+						}, {
+						
+						--[[ MYTHIC
+								["cost"] = {
+									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
+									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+								},
+
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
+									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+								},
+							--]]
+							
 							i(184253, {	-- Abdomen Chopper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184265, {	-- Abdomen Splitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184252, {	-- Aranakk Torture Device
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184248, {	-- Blightforged Twinblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184262, {	-- Deadeye Cannon
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184266, {	-- Fleshscourge Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184259, {	-- Grasp from the Grave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184261, {	-- Greatstaff of the Lichsworn General
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184247, {	-- Grip of the Dead
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184255, {	-- Gristlegore Hacker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184264, {	-- Krexus's Bloodletting Polearm
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184251, {	-- Ossified Broadaxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184263, {	-- Ossified Greataxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184254, {	-- Plaguespine Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184267, {	-- Skullcleaver of the Merciless One
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184249, {	-- Staff of the Lichsworn Lieutenant
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
+									{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
+									{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
+									{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+								},
 							}),
 							i(184256, {	-- Vicious Goreripper Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 							i(184260, {	-- Warglaive of the Hidden Fiend
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 85,
+								["cost"] = {
+									{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
+									{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
+									{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
+									{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+								},
 							}),
 						}),
 					}),
@@ -2881,80 +3258,206 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 61.2, 47.4, 1698 },
-						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+						["g"] = bubbleDown({
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+							["modID"] = 5,	-- Heroic
+						}, {
+							
+							--[[ HEROIC
+								["cost"] = {
+									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
+									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+								},
+
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
+									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+								},
+							--]]
+							
 							i(184253, {	-- Abdomen Chopper
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184265, {	-- Abdomen Splitter
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184252, {	-- Aranakk Torture Device
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184245, {	-- Barrier of the Chosen
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184244, {	-- Biting Gutsliver Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184248, {	-- Blightforged Twinblade
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184257, {	-- Burden of the Protectorate
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184250, {	-- Deadeye Blunderbuss
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184262, {	-- Deadeye Cannon
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184266, {	-- Fleshscourge Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184246, {	-- Frigid Invoker's Focus
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184259, {	-- Grasp from the Grave
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184261, {	-- Greatstaff of the Lichsworn General
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184247, {	-- Grip of the Dead
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184255, {	-- Gristlegore Hacker
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184264, {	-- Krexus's Bloodletting Polearm
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184258, {	-- Malevolent Invoker's Crystal
-								--["cost"] = { { "x", yyyy, zzzz } },
+								
 							}),
 							i(184251, {	-- Ossified Broadaxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184263, {	-- Ossified Greataxe
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184254, {	-- Plaguespine Sickle
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184267, {	-- Skullcleaver of the Merciless One
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184249, {	-- Staff of the Lichsworn Lieutenant
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["cost"] = {
+									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
+									{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
+									{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
+									{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+								},
 							}),
 							i(184256, {	-- Vicious Goreripper Shank
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 							i(184260, {	-- Warglaive of the Hidden Fiend
-								--["cost"] = { { "x", yyyy, zzzz } },
+								["modID"] = 84,
+								["cost"] = {
+									{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
+									{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
+									{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
+									{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+								},
 							}),
 						}),
 					}),
