@@ -10116,7 +10116,7 @@ UpdateGroups = function(parent, g, defaultVis)
 		if not parent.progress then parent.progress = 0; end
 		-- default visibility for group updates is debug mode itself
 		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.MODE_DEBUG;
+		local defaultVisibility = defaultVis or app.MODE_DEBUG or false;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
 			app:CheckYieldHelper();
