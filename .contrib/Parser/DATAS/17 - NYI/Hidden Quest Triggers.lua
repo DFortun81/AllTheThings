@@ -4097,6 +4097,8 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
+		-- Plaguefall dungeon
+		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount
 
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
