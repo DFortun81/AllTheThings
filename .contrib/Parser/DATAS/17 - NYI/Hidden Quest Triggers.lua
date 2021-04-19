@@ -4059,6 +4059,7 @@ _.HiddenQuestTriggers =
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
+		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)

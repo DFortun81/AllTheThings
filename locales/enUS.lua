@@ -1153,6 +1153,10 @@ app.L = {
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
+		[-972] = "3536185",																	-- Courage
+		[-973] = "3536186",																	-- Loyalty
+		[-974] = "3536184",																	-- Wisdom
+		[-975] = "3536187",																	-- Humility
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -2020,6 +2024,10 @@ app.L = {
 		[-3349] = "Tier 2: Leap of Power",										-- Tier 2: Leap of Power
 		[-3350] = "Tier 3: Eternal Paths",										-- Tier 3: Eternal Paths
 		[-966] = "Blueprints & Crafting",										-- Blueprints (for Path of Ascension)
+		[-972] = "Courage",														-- Courage
+		[-973] = "Loyalty",														-- Loyalty
+		[-974] = "Wisdom",														-- Wisdom
+		[-975] = "Humility",													-- Humility
 
 	-- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
