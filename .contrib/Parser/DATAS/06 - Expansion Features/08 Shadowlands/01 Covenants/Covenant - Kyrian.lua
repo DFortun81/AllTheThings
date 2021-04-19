@@ -1092,36 +1092,15 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-942, {	-- Path of Ascension
-						["maps"] = {
-							1711,	-- Path of Ascension Coliseum
-						},
+						["maps"] = { 1711 },	-- Path of Ascension Coliseum
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(14853),	-- All The Colors of the Painbow
 								ach(14860),	-- Bare Necessities
 								ach(14851),	-- Bastion of Protection
 								ach(14856),	-- Charmed, I'm Sure
-								ach(14858),	-- Curse of Thirst
 								ach(14863),	-- Death Foursworn
 								ach(14865, {	-- Disciple of Humility
-									crit(1),	-- Defeat Kalisthene as Pelagos
-									crit(2),	-- Defeat Kalisthene as Kleia
-									crit(3),	-- Defeat Kalisthene as Mikanikos
-									crit(4),	-- Defeat Echthra as Pelagos
-									crit(5),	-- Defeat Echthra as Kleia
-									crit(6),	-- Defeat Echthra as Mikanikos
-									crit(7),	-- Defeat Alderyn and Myn'ir as Pelagos
-									crit(8),	-- Defeat Alderyn and Myn'ir as Kleia
-									crit(9),	-- Defeat Alderyn and Myn'ir as Mikanikos
-									crit(10),	-- Defeat Nuuminuuru as Pelagos
-									crit(11),	-- Defeat Nuuminuuru as Kleia
-									crit(12),	-- Defeat Nuuminuuru as Mikanikos
-									crit(13),	-- Defeat Craven Corinth as Pelagos
-									crit(14),	-- Defeat Craven Corinth as Kleia
-									crit(15),	-- Defeat Craven Corinth as Mikanikos
-									crit(16),	-- Defeat Splinterbark Nightmare as Pelagos
-									crit(17),	-- Defeat Splinterbark Nightmare as Kleia
-									crit(18),	-- Defeat Splinterbark Nightmare as Mikanikos
 									crit(19),	-- Defeat Thran'tiok as Pelagos
 									crit(20),	-- Defeat Thran'tiok as Kleia
 									crit(21),	-- Defeat Thran'tiok as Mikanikos
@@ -1144,12 +1123,15 @@ _.ExpansionFeatures =
 									crit(5),	-- Ring of Warding
 									crit(6),	-- Spiritforged Aegis
 								}),
-								ach(14854),	-- It's Not What You Wear
-								ach(14857),	-- Itsy Bitsy Fighters
+								ach(14854, {	-- It's Not What You Wear
+									crit(1),	-- Herald's Footpads
+									crit(2),	-- Deep Echo Trident
+									crit(3),	-- Vial of Lichfrost
+									crit(4),	-- Phial of Serenity
+									crit(5),	-- Ring of Warding
+									crit(6),	-- Spiritforged Aegis
+								}),
 								ach(14861, {	-- Learning from the Masters
-									crit(1),	-- Defeat Kalisthene as Pelagos
-									crit(2),	-- Defeat Kalisthene as Kleia
-									crit(3),	-- Defeat Kalisthene as Mikanikos
 									crit(4),	-- Defeat Athanos as Pelagos
 									crit(5),	-- Defeat Athanos as Kleia
 									crit(6),	-- Defeat Athanos as Mikanikos
@@ -1168,7 +1150,8 @@ _.ExpansionFeatures =
 								}),
 								ach(14864),	-- Personal Nightmare
 								ach(14852),	-- The Hoot of the Issue
-								ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
+								--[[ weird hidden tracking achievement that exists in the background but is not visible in the achievement window
+								ach(14351, {	-- The Path Towards Ascension 39
 									ach(14340),	-- The Path Towards Ascension 1
 									ach(14342),	-- The Path Towards Ascension 3
 									ach(14343),	-- The Path Towards Ascension 5
@@ -1178,6 +1161,260 @@ _.ExpansionFeatures =
 									ach(14348),	-- The Path Towards Ascension 20
 									ach(14349),	-- The Path Towards Ascension 24
 								}),
+								--]]
+							}),
+							n(-908, {	-- Rewards
+								n(172408, {	-- Alderyn [& Myn'ir]
+									["crs"] = { 172409 },	-- Myn'ir
+									["g"] = {
+										n(-972, {	-- Courage
+											i(182162, {	-- Blueprint: Charm of Quickness
+												["questID"] = 61713,	-- Blueprint: Charm of Quickness
+											}),
+										}),
+										n(-973, {	-- Loyalty
+											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
+											["g"] = {
+												crit(1, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+													["achievementID"] = 14852,	-- The Hoot of the Issue
+												}),
+												i(184407, {	-- Blueprint: Steward Mail Pouch
+												--	this quest showed as complete for me before i did it... not sure what's up there.
+													["questID"] = 62970,	-- Blueprint: Steward Mail Pouch
+												}),
+											},
+										}),
+										n(-974, {	-- Wisdom
+											i(180871),	-- Indigo
+										}),
+										n(-975, {	-- Humility
+											crit(7, {	-- Defeat Alderyn and Myn'ir as Pelagos
+												["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(8, {	-- Defeat Alderyn and Myn'ir as Kleia
+												["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(9, {	-- Defeat Alderyn and Myn'ir as Mikanikos
+												["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											i(177208),	-- Reverent Bearer's Legguards
+											i(180243),	-- Reverent Collector's Legguards
+											i(179972),	-- Reverent Forgelite's Breeches
+											i(178192),	-- Reverent Watcher's Legguards
+										}),
+									},
+								}),
+								n(172412, {	-- Craven Corinth
+									crit(2, {	-- Defeat Craven Corinth with Spiritforged Aegis
+										["achievementID"] = 14851,	-- Bastion of Protection
+									}),
+									n(-972, {	-- Courage
+										i(180494, {	-- Blueprint: Spiritforged Aegis
+											["questID"] = 60975,	-- Blueprint: Spiritforged Aegis
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										["description"] = "Requires upgrading to Tier 2; defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
+										["g"] = {
+											i(184411, {	-- Blueprint: Gilded Abacus
+												["questID"] = 62971,	-- Blueprint: Gilded Abacus
+											}),
+										},
+									}),
+									n(-974, {	-- Wisdom
+										ach(14858),	-- Curse of Thirst
+										i(181293),	-- Reverent Sigil of the Archon
+									}),
+									n(-975, {	-- Humility
+										crit(13, {	-- Defeat Craven Corinth as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(14, {	-- Defeat Craven Corinth as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(15, {	-- Defeat Craven Corinth as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(177207),	-- Reverent Bearer's Gauntlets
+										i(180242),	-- Reverent Collector's Gauntlets
+										i(179970),	-- Reverent Forgelite's Gloves
+										i(178191),	-- Reverent Watcher's Gauntlets
+									}),
+								}),
+								n(172177, {	-- Echthra
+									ach(14857),	-- Itsy Bitsy Fighters
+									n(-972, {	-- Courage
+										i(180482, {	-- Blueprint: Charm of Fortitude
+											["questID"] = 60947,	-- Blueprint: Charm of Fortitude
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
+										["g"] = {
+											i(184445, {	-- Blueprint: Medallion of Service
+												["questID"] = 62984,	-- Blueprint: Medallion of Service
+											}),
+										},
+									}),
+									n(-974, {	-- Wisdom
+										i(184474, {	-- Arsenal: Wisdom's Weapon Cache
+											i(181231),	-- Broadbladed Severer
+											i(181227),	-- Bronze Ceremonial Targe
+											i(181235),	-- Final Arbiter's Gavel
+											i(181233),	-- Bellringer's Hammer
+											i(181230),	-- Pugilist's Chakram
+											i(181228),	-- Temple Guard's Partisan
+											i(181229),	-- Tranquil's Censer
+											i(181226),	-- Bronze Dual-Bladed Glaive
+											i(181225),	-- Crossbow of Contemplative Calm
+											i(181232),	-- Cupbearer's Claymore
+											i(181234),	-- Dutybound Spellblade
+										}),
+									}),
+									n(-975, {	-- Humility
+										crit(4, {	-- Defeat Echthra as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(5, {	-- Defeat Echthra as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(6, {	-- Defeat Echthra as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(177210),	-- Reverent Bearer's Girdle
+										i(180245),	-- Reverent Collector's Girdle
+										i(179974),	-- Reverent Forgelite's Belt
+										i(178194),	-- Reverent Watcher's Girdle
+									}),
+								}),
+								n(170654, {	-- Kalisthene
+									crit(1, {	-- Defeat Kalisthene with Spiritforged Aegis
+										["achievementID"] = 14851,	-- Bastion of Protection
+									}),
+									n(-972, {	-- Courage
+										i(180472, {	-- Blueprint: Deep Echo Trident
+											["questID"] = 60946,	-- Blueprint: Deep Echo Trident
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
+										["g"] = {
+											i(180495, {	-- Blueprint: Phial of Serenity
+												["questID"] = 60973,	-- Blueprint: Phial of Serenity
+											}),
+										},
+									}),
+									n(-974, {	-- Wisdom
+										crit(1, {	-- Defeat Kalisthene as Pelagos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(2, {	-- Defeat Kalisthene as Kleia
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(3, {	-- Defeat Kalisthene as Mikanikos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										i(183761, {	-- Blueprint: Skystrider Glider
+											["questID"] = 62477,	-- BLueprint: Skystrider Glider
+										}),
+									}),
+									n(-975, {	-- Humility
+										crit(1, {	-- Defeat Kalisthene as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(2, {	-- Defeat Kalisthene as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(3, {	-- Defeat Kalisthene as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(179971),	-- Reverent Forgelite's Helm
+										i(180239),	-- Reverent Collector's Helm
+										i(177204),	-- Reverent Bearer's Helm
+										i(178188),	-- Reverent Watcher's Helm
+									}),
+								}),
+								n(172410, {	-- Nuuminuuru
+									n(-972, {	-- Courage
+										q(60907, {	-- Ascension Calling: Kleia
+											["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
+										["g"] = {
+											i(180815),	-- Brightscale Hatchling (PET!)
+										},
+									}),
+									n(-974, {	-- Wisdom
+										i(180639),	-- Dusty Sporeflutter (PET!)
+									}),
+									n(-975, {	-- Humility
+										crit(10, {	-- Defeat Nuuminuuru as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(11, {	-- Defeat Nuuminuuru as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(12, {	-- Defeat Nuuminuuru as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(177206),	-- Reverent Bearer's Warboots
+										i(180241),	-- Reverent Collector's Warboots
+										i(179969),	-- Reverent Forgelite's Boots
+										i(178190),	-- Reverent Watcher's Warboots
+									}),
+								}),
+								n(172682, {	-- Splinterbark Nightmare
+									n(-972, {	-- Courage
+										i(181147, {	-- Blueprint: Charm of Persistence
+											["questID"] = 61269,	-- Blueprint: Charm of Persistence
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										["description"] = "Requires upgrading to Tier 2; defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
+										["g"] = {
+											crit(2, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+												["achievementID"] = 14852,	-- The Hoot of the Issue
+											}),
+											i(184348, {	-- Blueprint: Ring of Warding
+												["questID"] = 62928,	-- Blueprint: Ring of Warding
+											}),
+										},
+									}),
+									n(-974, {	-- Wisdom
+										i(184450, {	-- Blueprint: Vesper of Calling
+											["questID"] = 62986,	-- Blueprint: Vesper of Calling
+										}),
+									}),
+									n(-975, {	-- Humility
+										crit(16, {	-- Defeat Splinterbark Nightmare as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(17, {	-- Defeat Splinterbark Nightmare as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(18, {	-- Defeat Splinterbark Nightmare as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(177209),	-- Reverent Bearer's Shoulders
+										i(180244),	-- Reverent Collector's Shoulders
+										i(179973),	-- Reverent Forgelite's Spaulders
+										i(178193),	-- Reverent Watcher's Shoulders
+									}),
+								}),
+								--[[
+								n(, {	-- 
+									n(-972, {	-- Courage
+									}),
+									n(-973, {	-- Loyalty
+									}),
+									n(-974, {	-- Wisdom
+									}),
+									n(-975, {	-- Humility
+									}),
+								}),
+								--]]
 							}),
 							n(-966, {	-- Blueprints & Crafting
 								["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
@@ -1186,55 +1423,10 @@ _.ExpansionFeatures =
 									q(62981, {	-- Blueprint: Artisan Tool Belt
 										["provider"] = { "i", 184414 },	-- Blueprint: Artisan Tool Belt
 									}),
-									q(60946, {	-- Blueprint: Deep Echo Trident
-										-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
-										["description"] = "From defeating Kalisthene on 'Courage' difficulty.",
-										["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
-									}),
 									q(63000, {	-- Blueprint: Charm of Focus
 										-- Rewards: spell ?? (Crafting: Charm of Focus), unlocking ascension crafting recipe
 										["description"] = "From defeating Thran'tiok on 'Loyalty' difficulty.",
 										["provider"] = { "i", 181238 },	-- Blueprint: Charm of Fortitude
-									}),
-									q(60947, {	-- Blueprint: Charm of Fortitude
-										-- Rewards: spell 333266 (Crafting: Charm of Fortitude), unlocking ascension crafting recipe
-										["description"] = "From defeating Echthra on 'Courage' difficulty.",
-										["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
-									}),
-									q(61269, {	-- Blueprint: Charm of Persistence
-										-- Quest starter is from defeating Splinterbark Nightmare on Courage difficulty
-										-- Rewards spell 335605 (Crafting: Charm of Persistence)
-										["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
-									}),
-									q(61713, {	-- Blueprint: Charm of Quickness
-										-- Rewards: spell 346669 (Crafting: Charm of Quickness) unlocking ascension crafting recipe
-										["description"] = "From defeating Alderyn and Myn'ir on 'Courage' difficulty.",
-										["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
-									}),
-									q(62971, {	-- Blueprint: Gilded Abacus
-										-- From defeating Echthra on Loyalty difficulty
-										["provider"] = { "i", 184411 },	-- Blueprint: Gilded Abacus
-									}),
-									q(62984, {	-- Blueprint: Medallion of Service
-										-- From defeating Echthra on Loyalty difficulty
-										["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
-									}),
-									q(60973, {	-- Blueprint: Phial of Serenity
-										-- From defeating Kalisthene on Loyalty difficulty
-										["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
-									}),
-									q(62928, {	-- Blueprint: Ring of Warding
-										-- Splinterbark Nightmare on Courage
-										["provider"] = { "i", 184348 },	-- Blueprint: Ring of Warding
-									}),
-									q(60975, {	-- Blueprint: Spiritforged Aegis
-										-- Quest starter is from defeating Craven Corinth on Courage difficulty
-										-- Rewards spell 346676 (Crafting: Spiritforged Aegis)
-										["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
-									}),
-									q(62970, {	-- Blueprint: Steward Mail Pouch
-										-- From defeating Myn'ir and Alderyn on Loyalty difficulty
-										["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
 									}),
 									q(62997, {	-- Blueprint: Vial of Lichfrost
 										-- Thran'tiok on Courage
@@ -1251,11 +1443,11 @@ _.ExpansionFeatures =
 										["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
 									}),
 									q(60974, {	-- Phial of Serenity
-										-- Quest starter crafted with Ascension crafting
+										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
 										["provider"] = { "i", 184478 },	-- Phial of Serenity
 									}),
 									q(62995, {	-- Spiritforged Aegis
-										-- Quest starter crafted with Ascension crafting
+										["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
 										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 									}),
 									q(62483, {	-- Steward Mail Pouch
@@ -1292,10 +1484,6 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 									["provider"] = { "n", 168430 },	-- Dactylis
 									["coord"] = { 29.9, 38.8, 1707 },
-								}),
-								q(60907, {	-- Ascension Calling: Kleia
-									-- Quest starter is from defeating Nuuminuuru on Courage difficulty
-									["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
 								}),
 								q(61963, {	-- Called to the Hunt
 									["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
@@ -1508,9 +1696,6 @@ _.ExpansionFeatures =
 									["coord"] = { 59.7, 38.0, 1536 },    -- Maldraxxus
 								}),
 								n(-908, {	-- Rewards
-									i(180815, {	-- Brightscale Hatchling
-										["description"] = "Defeat Nuuminuuru on 'Loyalty' difficulty.",
-									}),
 									i(180761, {	-- Phalynx of Loyalty
 										["description"] = "Defeat Mad Mortimer on 'Loyalty' difficulty.",
 									}),
@@ -1522,7 +1707,6 @@ _.ExpansionFeatures =
 							}),
 							n(-946, {	-- Tier 4: Teachings of Wisdom
 								n(-908, {	-- Rewards
-									i(180871),	-- Indigo
 								}),
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility
@@ -1530,44 +1714,19 @@ _.ExpansionFeatures =
 								--	TODO: cloaks may need to be tagged with classes based on armor proficiency (like if leather users can't learn/use the 'cloth' set cloak)
 								--	*not sure about 3 items marked with asterisk
 									i(181287),	-- Halo of the Reverent*
-									i(181293),	-- Reverent Sigil of the Archon*
 									i(181297),	-- Reverent Wings of the Ascended*
 									--
 									i(177205),	-- Reverent Bearer's Chestplate
 									i(177221),	-- Reverent Bearer's Cloak
-									i(177207),	-- Reverent Bearer's Gauntlets
-									i(177210),	-- Reverent Bearer's Girdle
-									i(177204),	-- Reverent Bearer's Helm
-									i(177208),	-- Reverent Bearer's Legguards
-									i(177209),	-- Reverent Bearer's Shoulders
-									i(177206),	-- Reverent Bearer's Warboots
 									i(177211),	-- Reverent Bearer's Wristwraps
 									i(180240),	-- Reverent Collector's Chestplate
 									i(180247),	-- Reverent Collector's Cloak
-									i(180242),	-- Reverent Collector's Gauntlets
-									i(180245),	-- Reverent Collector's Girdle
-									i(180239),	-- Reverent Collector's Helm
-									i(180243),	-- Reverent Collector's Legguards
-									i(180244),	-- Reverent Collector's Shoulders
-									i(180241),	-- Reverent Collector's Warboots
 									i(180246),	-- Reverent Collector's Wristwraps
-									i(179974),	-- Reverent Forgelite's Belt
-									i(179969),	-- Reverent Forgelite's Boots
-									i(179972),	-- Reverent Forgelite's Breeches
 									i(179976),	-- Reverent Forgelite's Cloak
-									i(179970),	-- Reverent Forgelite's Gloves
-									i(179971),	-- Reverent Forgelite's Helm
-									i(179973),	-- Reverent Forgelite's Spaulders
 									i(179968),	-- Reverent Forgelite's Vest
 									i(179975),	-- Reverent Forgelite's Wristwraps
 									i(178189),	-- Reverent Watcher's Chestplate
 									i(178196),	-- Reverent Watcher's Cloak
-									i(178191),	-- Reverent Watcher's Gauntlets
-									i(178194),	-- Reverent Watcher's Girdle
-									i(178188),	-- Reverent Watcher's Helm
-									i(178192),	-- Reverent Watcher's Legguards
-									i(178193),	-- Reverent Watcher's Shoulders
-									i(178190),	-- Reverent Watcher's Warboots
 									i(178195),	-- Reverent Watcher's Wristwraps
 								}),
 							}),

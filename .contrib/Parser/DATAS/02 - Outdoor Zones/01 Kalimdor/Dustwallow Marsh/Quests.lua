@@ -962,7 +962,7 @@ _.Zones =
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["coord"] = { 37.1, 33.0, 70 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27414,	-- The Brood of Onyxia (#1)
+					["sourceQuest"] = 27417,	-- The Brood of Onyxia (#2)
 					["g"] = {
 						i(57836),	-- Encarmine Spaulders
 						i(57841),	-- Wyrmbog Amulet

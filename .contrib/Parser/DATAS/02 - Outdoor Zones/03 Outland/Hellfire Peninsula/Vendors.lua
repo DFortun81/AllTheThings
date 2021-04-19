@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- The following recipes and gems go through a lot of changes between TBC and Cata.
 local JEWELCRAFTING_PATTERNS = {
 	i(23131, {	-- Design: Bold Blood Garnet (Both)
@@ -249,7 +250,7 @@ _.Zones =
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = 
+					["groups"] =
 						-- #if BEFORE WRATH
 						JEWELCRAFTING_PATTERNS,
 						-- #else

@@ -261,12 +261,20 @@ local function GetTempDataSubMember(member, submember, default)
 		return default;
 	end
 end
+local function ReturnTrue()
+	return true;
+end
+local function ReturnFalse()
+	return false;
+end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
+app.ReturnTrue = ReturnTrue;
+app.ReturnFalse = ReturnFalse;
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
@@ -7651,27 +7659,19 @@ local itemFields = {
 			results = app.SearchForField("itemIDAsCost", id);
 		end
 		if results and #results > 0 then
-			local collected, count = true, 0;
 			for _,ref in pairs(results) do
 				-- different itemID, OR same itemID with different modID is allowed
 				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
-						count = count + 1;
-						if ref.progress < ref.total then
-							collected = false;
-						end
-					elseif ref.collectible then
-						count = count + 1;
-						if not ref.collected then
-							collected = false;
-						end
+					-- Used as a cost for something which has a total greater than its progress and is not a parent of the cost group itself
+					if ref.total and ref.total > 0 and ref.progress < ref.total and not GetRelativeField(t, "parent", ref) then
+						return false;
+					-- Used as a cost for something which is collectible itself and not collected
+					elseif ref.collectible and not ref.collected then
+						return false;
 					end
 				end
 			end
-			if count > 0 then
-				return collected;
-			end
-			return false;
+			return true;
 		end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
@@ -8909,20 +8909,34 @@ local function QueryCompletedQuests()
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
+	-- if t.questID == 11381 then
+	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
+	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
+	-- end
 	return
 	-- must treat Quests as collectible
 	app.CollectibleQuests
-	-- must not be repeatable, unless considering repeatable quests as trackable
-	and (((not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-	-- must match custom collectibility if set as well
-	and app.CheckCustomCollects(t)
-	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-	-- TODO: revisit if party sync option becomes a thing
-	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-		
-	-- If it is an item or used for an active quest.
-	or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
+	and (
+			(
+			-- must have a questID associated
+			t.questID
+			-- must not be repeatable, unless considering repeatable quests as collectible
+			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must match custom collectibility if set as well
+			and app.CheckCustomCollects(t)
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
+			-- TODO: revisit if party sync option becomes a thing
+			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			)
+			
+			-- If it is an item and associated to an active quest.
+			-- TODO: add t.requiredForQuestID
+			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID))
+		);
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
@@ -8938,120 +8952,141 @@ local function RefreshQuestCompletionState(questID)
 end
 
 -- Recipe Lib
-app.BaseRecipe = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "filterID" then
-			return 200;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "key";
+	end,
+	["filterID"] = function(t)
+		return 200;
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
-		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "collectible" then
-			return app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
-		elseif key == "b" then
-			return t.itemID and app.AccountWideRecipes and 2;
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
 		end
-	end
+		return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
+			end
+		end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if IsSpellKnown(t.spellID) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
+	["b"] = function(t)
+		return t.itemID and app.AccountWideRecipes and 2;
+	end,
+	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+		return rawget(t, "modItemID");
+	end,
 };
+app.BaseRecipe = app.BaseObjectFields(fields);
 app.CreateRecipe = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
+end)();
 
 -- Spell Lib
-app.BaseSpell = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "link" then
-			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return false;
-		elseif key == "collected" or key == "saved" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
 		end
-	end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["trackable"] = app.ReturnTrue,
+	["collectible"] = app.ReturnFalse,
+	["collected"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if IsSpellKnown(t.spellID) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
 };
+fields.saved = fields.collected;
+app.BaseSpell = app.BaseObjectFields(fields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
+end)();
 
 -- Species Lib
 (function()
@@ -9066,6 +9101,62 @@ local meta = {
 	end
 };
 local collectedSpecies = setmetatable({}, meta);
+local fields = {
+	["key"] = function(t)
+		return "speciesID";
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleBattlePets;
+	end,
+	["collected"] = function(t)
+		if collectedSpecies[t.speciesID] then
+			return 1;
+		end
+		local altSpeciesID = t.altSpeciesID;
+		if altSpeciesID and collectedSpecies[altSpeciesID]then
+			return 2;
+		end
+	end,
+	["text"] = function(t)
+		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["description"] = function(t)
+		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["displayID"] = function(t)
+		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["name"] = function(t)
+		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local link = select(2, GetItemInfo(t.itemID));
+			if link then
+				t.link = link;
+				return link;
+			end
+		end
+	end,
+	-- ["modItemID"] = function(t)	-- TODO: verify and probably remove, don't think any battle pet is affected by modID, and Parser removes it from battle pet info
+	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+	-- 	return rawget(t, "modItemID");
+	-- end,
+	["tsm"] = function(t)
+		return string.format("p:%d:1:3", t.speciesID);
+	end,
+};
+app.BaseSpecies = app.BaseObjectFields(fields);
+app.CreateSpecies = function(id, t)
+	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
+end
+
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	-- print("NEW_PET_ADDED", petID, speciesID);
@@ -9094,54 +9185,8 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	if atLeastOne then
 		app:PlayRemoveSound();
 		app:RefreshData(false, true);
-		-- wipe(searchCache); -- handled by refresth data
+		-- wipe(searchCache); -- handled by refresh data
 	end
-end
-app.BaseSpecies = {
-	__index = function(t, key)
-		if key == "key" then
-			return "speciesID";
-		elseif key == "filterID" then
-			return 101;
-		elseif key == "collectible" then
-			return app.CollectibleBattlePets;
-		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] then
-				return 1;
-			end
-			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID and collectedSpecies[altSpeciesID]then
-				return 2;
-			end
-		elseif key == "text" then
-			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
-		elseif key == "icon" then
-			return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "description" then
-			return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "displayID" then
-			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "name" then
-			return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "link" then
-			if t.itemID then
-				local link = select(2, GetItemInfo(t.itemID));
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
-		elseif key == "tsm" then
-			return string.format("p:%d:1:3", t.speciesID);
-		end
-	end
-};
-app.CreateSpecies = function(id, t)
-	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
 end)();
 
@@ -10117,7 +10162,7 @@ UpdateGroups = function(parent, g, defaultVis)
 		if not parent.progress then parent.progress = 0; end
 		-- default visibility for group updates is debug mode itself
 		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.MODE_DEBUG;
+		local defaultVisibility = defaultVis or app.MODE_DEBUG or false;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
 			app:CheckYieldHelper();
