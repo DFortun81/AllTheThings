@@ -7660,8 +7660,8 @@ local itemFields = {
 					end
 				end
 			end
+			return true;
 		end
-		return true;
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
 		
@@ -8910,8 +8910,10 @@ app.CollectibleAsQuest = function(t)
 	app.CollectibleQuests
 	and (
 			(
-			-- must not be repeatable, unless considering repeatable quests as trackable
-			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must have a questID associated
+			t.questID
+			-- must not be repeatable, unless considering repeatable quests as collectible
+			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
 			-- must match custom collectibility if set as well
 			and app.CheckCustomCollects(t)
 			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
@@ -8920,8 +8922,10 @@ app.CollectibleAsQuest = function(t)
 				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
 			)
 			
-		-- If it is an item or used for an active quest.
-		or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
+			-- If it is an item and associated to an active quest.
+			-- TODO: add t.requiredForQuestID
+			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID))
+		);
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
