@@ -9270,99 +9270,108 @@ end
 end)();
 
 -- Title Lib
-app.BaseTitle = {
-	__index = function(t, key)
-		if key == "key" then
-			return "titleID";
-		elseif key == "filterID" then
-			return 110;
-		elseif key == "icon" then
-			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
-		elseif key == "description" then
-			return L["TITLES_DESC"];		-- L["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character."
-		elseif key == "text" then
-			local name = t.playerTitle;
-			if name then
-				name = "|cff00ccff" .. name .. "|r";
-				rawset(t, "name", name);
-				return name;
+(function()
+local fields = {
+	["key"] = function(t)
+		return "titleID";
+	end,
+	["filterID"] = function(t)
+		return 110;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
+	end,
+	["description"] = function(t)
+		return L["TITLES_DESC"];
+	end,
+	["text"] = function(t)
+		local name = t.playerTitle;
+		if name then
+			name = "|cff00ccff" .. name .. "|r";
+			rawset(t, "name", name);
+			return name;
+		end
+	end,
+	["playerTitle"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local style = t.style;
+			if style == 0 then
+				-- Prefix
+				return name .. UnitName("player");
+			elseif style == 1 then
+				-- Player Name First
+				return UnitName("player") .. name;
+			elseif style == 2 then
+				-- Player Name First (with space)
+				return UnitName("player") .. " " .. name;
+			elseif style == 3 then
+				-- Comma Separated
+				return UnitName("player") .. ", " .. name;
 			end
-		elseif key == "playerTitle" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local style = t.style;
-				if style == 0 then
-					-- Prefix
-					return name .. UnitName("player");
-				elseif style == 1 then
-					-- Player Name First
-					return UnitName("player") .. name;
-				elseif style == 2 then
-					-- Player Name First (with space)
-					return UnitName("player") .. " " .. name;
-				elseif style == 3 then
-					-- Comma Separated
-					return UnitName("player") .. ", " .. name;
-				end
-			end
-		elseif key == "style" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local first = string.sub(name, 1, 1);
-				if first == " " then
-					-- Suffix
-					first = string.sub(name, 2, 2);
-					if first == string.upper(first) then
-						-- Comma Separated
-						return 3;
-					end
-
-					-- Player Name First
-					return 1;
-				else
-					local last = string.sub(name, -1);
-					if last == " " then
-						-- Prefix
-						return 0;
-					end
-
-					-- Suffix
-					if first == string.lower(first) then
-						-- Player Name First with a space
-						return 2;
-					end
-
+		end
+	end,
+	["style"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local first = string.sub(name, 1, 1);
+			if first == " " then
+				-- Suffix
+				first = string.sub(name, 2, 2);
+				if first == string.upper(first) then
 					-- Comma Separated
 					return 3;
 				end
-			end
 
-			return 1;	-- Player Name First
-		elseif key == "collectible" then
-			return app.CollectibleTitles;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" or key == "collected" then
-			if app.AccountWideTitles then
-				if GetDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
-				end
+				-- Player Name First
+				return 1;
 			else
-				if GetTempDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
+				local last = string.sub(name, -1);
+				if last == " " then
+					-- Prefix
+					return 0;
 				end
+
+				-- Suffix
+				if first == string.lower(first) then
+					-- Player Name First with a space
+					return 2;
+				end
+
+				-- Comma Separated
+				return 3;
 			end
-			if IsTitleKnown(t.titleID) then
-				SetTempDataSubMember("CollectedTitles", t.titleID, 1);
-				SetDataSubMember("CollectedTitles", t.titleID, 1);
+		end
+
+		return 1;	-- Player Name First
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleTitles;
+	end,
+	["trackable"] = app.ReturnTrue,
+	["collected"] = function(t)
+		if app.AccountWideTitles then
+			if GetDataSubMember("CollectedTitles", t.titleID) then
+				return 1;
+			end
+		else
+			if GetTempDataSubMember("CollectedTitles", t.titleID) then
 				return 1;
 			end
 		end
-	end
+		if IsTitleKnown(t.titleID) then
+			SetTempDataSubMember("CollectedTitles", t.titleID, 1);
+			SetDataSubMember("CollectedTitles", t.titleID, 1);
+			return 1;
+		end
+	end,
 };
+fields.saved = fields.collected;
+app.BaseTitle = app.BaseObjectFields(fields);
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
 end
+end)();
 
 -- Toy Lib
 app.BaseToy = {
