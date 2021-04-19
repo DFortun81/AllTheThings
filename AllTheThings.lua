@@ -261,12 +261,20 @@ local function GetTempDataSubMember(member, submember, default)
 		return default;
 	end
 end
+local function ReturnTrue()
+	return true;
+end
+local function ReturnFalse()
+	return false;
+end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
+app.ReturnTrue = ReturnTrue;
+app.ReturnFalse = ReturnFalse;
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
@@ -9019,55 +9027,63 @@ end
 end)();
 
 -- Spell Lib
-app.BaseSpell = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "link" then
-			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return false;
-		elseif key == "collected" or key == "saved" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
 		end
-	end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["trackable"] = app.ReturnTrue,
+	["collectible"] = app.ReturnFalse,
+	["collected"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if IsSpellKnown(t.spellID) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
 };
+fields.saved = fields.collected;
+app.BaseSpell = app.BaseObjectFields(fields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
+end)();
 
 -- Species Lib
 (function()
