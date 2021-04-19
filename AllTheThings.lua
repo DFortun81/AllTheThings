@@ -9411,102 +9411,110 @@ end
 end)();
 
 -- Vignette Lib
-app.BaseVignette = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			if t.qgs then
-				local all = true;
-				for i,qg in ipairs(t.qgs) do
-					if not NPCNameFromID[qg] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.qgs;
-					for i=1,count,1 do
-						local qg = t.qgs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-						else
-							t.name = NPCNameFromID[qg];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[qg];
-						end
-					end
-					return t.name;
-				end
-			elseif t.crs then
-				local all = true;
-				for i,cr in ipairs(t.crs) do
-					if not NPCNameFromID[cr] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.crs;
-					for i=1,count,1 do
-						local cr = t.crs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-						else
-							t.name = NPCNameFromID[cr];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[cr];
-						end
-					end
-					return t.name;
-				end
-			elseif t.qg then
-				if NPCNameFromID[t.qg] then
-					t.name = NPCNameFromID[t.qg];
-					if not t.title then
-						t.title = NPCTitlesFromID[t.qg];
-					end
-					return t.name;
-				end
-			elseif t.creatureID then
-				if t.creatureID > 0 then
-					if NPCNameFromID[t.creatureID] then
-						t.name = NPCNameFromID[t.creatureID];
-						if not t.title then
-							t.title = NPCTitlesFromID[t.creatureID];
-						end
-						return t.name;
-					end
-				else
-					t.name = L["HEADER_NAMES"][t.creatureID];
-					return t.name;
+(function()
+local fields = {
+	["key"] = function(t)
+		return "questID";
+	end,
+	["text"] = function(t)
+		if t.qgs then
+			local all = true;
+			for i,qg in ipairs(t.qgs) do
+				if not NPCNameFromID[qg] then
+					all = false;
 				end
 			end
-			return t.name;
-		elseif key == "name" then
-			return QuestTitleFromID[t.questID];
-		elseif key == "link" then
-			return "quest:" .. t.questID;
-		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleAsQuest(t);
-		elseif key == "collected" then
-			return t.collectible and t.saved;
-		elseif key == "repeatable" then
-			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "isVignette" then
-			return true;
+			if all then
+				t.name = nil;
+				local count = #t.qgs;
+				for i=1,count,1 do
+					local qg = t.qgs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+					else
+						t.name = NPCNameFromID[qg];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[qg];
+					end
+				end
+				return t.name;
+			end
+		elseif t.crs then
+			local all = true;
+			for i,cr in ipairs(t.crs) do
+				if not NPCNameFromID[cr] then
+					all = false;
+				end
+			end
+			if all then
+				t.name = nil;
+				local count = #t.crs;
+				for i=1,count,1 do
+					local cr = t.crs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+					else
+						t.name = NPCNameFromID[cr];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[cr];
+					end
+				end
+				return t.name;
+			end
+		elseif t.qg then
+			if NPCNameFromID[t.qg] then
+				t.name = NPCNameFromID[t.qg];
+				if not t.title then
+					t.title = NPCTitlesFromID[t.qg];
+				end
+				return t.name;
+			end
+		elseif t.creatureID then
+			if t.creatureID > 0 then
+				if NPCNameFromID[t.creatureID] then
+					t.name = NPCNameFromID[t.creatureID];
+					if not t.title then
+						t.title = NPCTitlesFromID[t.creatureID];
+					end
+					return t.name;
+				end
+			else
+				t.name = L["HEADER_NAMES"][t.creatureID];
+				return t.name;
+			end
 		end
-	end
+		return t.name;
+	end,
+	["name"] = function(t)
+		return QuestTitleFromID[t.questID];
+	end,
+	["link"] = function(t)
+		return "quest:" .. t.questID;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleAsQuest(t);
+	end,
+	["collected"] = function(t)
+		return t.collectible and t.saved;	-- TODO: review this...
+	end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
+	end,
+	["saved"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	["isVignette"] = app.ReturnTrue,
 };
+app.BaseVignette = app.BaseObjectFields(fields);
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
+end)();
 
 -- Filtering
 function app.Filter()
