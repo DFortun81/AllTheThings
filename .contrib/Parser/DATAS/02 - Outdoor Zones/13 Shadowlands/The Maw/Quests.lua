@@ -923,6 +923,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, 1961 },	-- Korthia
 				}),
+				q(63775, {	-- Cryptograms and Keys
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179082 },	-- Tal-Rahl
+					["isDaily"] = true,
+					["coord"] = { 64.1, 23.0, 1961 },
+				}),
+				q(63936, {	-- Devoured Anima
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178797 },	-- Sika
+					["isDaily"] = true,
+					["coord"] = { 61.7, 23.9, 1961 },
+				}),
 				q(64080, {	-- Down to Earth
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
@@ -970,6 +982,12 @@ _.Zones =
 					["provider"] = { "n", 178808 },	-- Baroness Draka
 					["isDaily"] = true,
 					["coord"] = { 60.7, 27.9, 1961 },	-- Korthia
+				}),
+				q(63780, {	-- See How THEY Like It!
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178838 },	-- Lady Moonberry
+					["isDaily"] = true,
+					["coord"] = { 61.2, 21.2, 1961 },
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

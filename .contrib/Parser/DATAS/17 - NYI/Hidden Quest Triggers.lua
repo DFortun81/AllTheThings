@@ -4613,5 +4613,6 @@ _.HiddenQuestTriggers =
 		q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
 		q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
 		q(64147),	-- triggered when turning in #63621, "Pulling His Chain"
+		q(63544),	-- triggered when completing #63543, "Necrolord Assault"
 	}),
 };
