@@ -823,6 +823,10 @@ for key,value in pairs({
 			[-3349] = "2-й уровень: Прыжок силы",					-- Tier 2: Leap of Power
 			[-3350] = "3-й уровень: Вечные пути",					-- Tier 3: Eternal Paths
 			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
+			[-972] = "Отвага",										-- Courage
+			[-973] = "Верность",									-- Loyalty
+			[-974] = "Мудрость",									-- Wisdom
+			[-975] = "Смирение",									-- Humility
 
 		-- SL Revendreth/Venthyr
 			[-949] = "Ковенант: Вентиры",							-- Covenant: Venthyr

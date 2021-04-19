@@ -855,6 +855,10 @@ for key,value in pairs({
 			[-3349] = "等级 2: 力量之跃",							-- Tier 2: Leap of Power
 			[-3350] = "等级 3: 永恒之路",							-- Tier 3: Eternal Paths
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
+			--TODO: [-972] = "Courage",								-- Courage
+			--TODO: [-973] = "Loyalty",								-- Loyalty
+			--TODO: [-974] = "Wisdom",								-- Wisdom
+			--TODO: [-975] = "Humility",							-- Humility
 
 		-- SL Revendreth/Venthyr
 			[-949] = "盟约: 温西尔",									-- Covenant: Venthyr
