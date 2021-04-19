@@ -9098,6 +9098,62 @@ local meta = {
 	end
 };
 local collectedSpecies = setmetatable({}, meta);
+local fields = {
+	["key"] = function(t)
+		return "speciesID";
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleBattlePets;
+	end,
+	["collected"] = function(t)
+		if collectedSpecies[t.speciesID] then
+			return 1;
+		end
+		local altSpeciesID = t.altSpeciesID;
+		if altSpeciesID and collectedSpecies[altSpeciesID]then
+			return 2;
+		end
+	end,
+	["text"] = function(t)
+		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["description"] = function(t)
+		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["displayID"] = function(t)
+		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["name"] = function(t)
+		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local link = select(2, GetItemInfo(t.itemID));
+			if link then
+				t.link = link;
+				return link;
+			end
+		end
+	end,
+	-- ["modItemID"] = function(t)	-- TODO: verify and probably remove, don't think any battle pet is affected by modID, and Parser removes it from battle pet info
+	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+	-- 	return rawget(t, "modItemID");
+	-- end,
+	["tsm"] = function(t)
+		return string.format("p:%d:1:3", t.speciesID);
+	end,
+};
+app.BaseSpecies = app.BaseObjectFields(fields);
+app.CreateSpecies = function(id, t)
+	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
+end
+
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	-- print("NEW_PET_ADDED", petID, speciesID);
@@ -9126,54 +9182,8 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	if atLeastOne then
 		app:PlayRemoveSound();
 		app:RefreshData(false, true);
-		-- wipe(searchCache); -- handled by refresth data
+		-- wipe(searchCache); -- handled by refresh data
 	end
-end
-app.BaseSpecies = {
-	__index = function(t, key)
-		if key == "key" then
-			return "speciesID";
-		elseif key == "filterID" then
-			return 101;
-		elseif key == "collectible" then
-			return app.CollectibleBattlePets;
-		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] then
-				return 1;
-			end
-			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID and collectedSpecies[altSpeciesID]then
-				return 2;
-			end
-		elseif key == "text" then
-			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
-		elseif key == "icon" then
-			return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "description" then
-			return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "displayID" then
-			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "name" then
-			return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "link" then
-			if t.itemID then
-				local link = select(2, GetItemInfo(t.itemID));
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
-		elseif key == "tsm" then
-			return string.format("p:%d:1:3", t.speciesID);
-		end
-	end
-};
-app.CreateSpecies = function(id, t)
-	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
 end)();
 
