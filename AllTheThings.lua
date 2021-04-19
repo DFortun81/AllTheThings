@@ -9189,71 +9189,84 @@ end)();
 
 -- Tier Lib
 (function()
-	local tiers = {
-		{	-- Classic
-			["icon"] = app.asset("Expansion_CLASSIC"),
-			["description"] = L["CLASSIC_TIER_DESC"],
-		},
-		{	-- Burning Crusade
-			["icon"] = app.asset("Expansion_TBC"),
-			["description"] = L["TBC_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Wrath of the Lich King
-			["icon"] = app.asset("Expansion_WOTLK"),
-			["description"] = L["WOTLK_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Cataclysm
-			["icon"] = app.asset("Expansion_CATA"),
-			["description"] = L["CATA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Mists of Pandaria
-			["icon"] = app.asset("Expansion_MOP"),
-			["description"] = L["MOP_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Warlords of Draenor
-			["icon"] = app.asset("Expansion_WOD"),
-			["description"] = L["WOD_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Legion
-			["icon"] = app.asset("Expansion_LEGION"),
-			["description"] = L["LEGION_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Battle for Azeroth
-			["icon"] = app.asset("Expansion_BFA"),
-			["description"] = L["BFA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Shadowlands
-			["icon"] = app.asset("Expansion_SL"),
-			["description"] = L["SL_TIER_DESC"],
-			["lvl"] = 50,
-		},
-	};
-	app.BaseTier = {
-		__index = function(t, key)
-			if key == "key" then
-				return "tierID";
-			elseif key == "text" then
-				return EJ_GetTierInfo(t.tierID);
-			else
-				local info = rawget(tiers, t.tierID);
-				return info and rawget(info, key);
-			end
-		end
-	};
-	app.CreateTier = function(id, t)
-		local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-		if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-			table.sort(tier.g, app.SortGroups);
-		end
-		return tier
+local tiers = {
+	{	-- Classic
+		["icon"] = app.asset("Expansion_CLASSIC"),
+		["description"] = L["CLASSIC_TIER_DESC"],
+	},
+	{	-- Burning Crusade
+		["icon"] = app.asset("Expansion_TBC"),
+		["description"] = L["TBC_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Wrath of the Lich King
+		["icon"] = app.asset("Expansion_WOTLK"),
+		["description"] = L["WOTLK_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Cataclysm
+		["icon"] = app.asset("Expansion_CATA"),
+		["description"] = L["CATA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Mists of Pandaria
+		["icon"] = app.asset("Expansion_MOP"),
+		["description"] = L["MOP_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Warlords of Draenor
+		["icon"] = app.asset("Expansion_WOD"),
+		["description"] = L["WOD_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Legion
+		["icon"] = app.asset("Expansion_LEGION"),
+		["description"] = L["LEGION_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Battle for Azeroth
+		["icon"] = app.asset("Expansion_BFA"),
+		["description"] = L["BFA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Shadowlands
+		["icon"] = app.asset("Expansion_SL"),
+		["description"] = L["SL_TIER_DESC"],
+		["lvl"] = 50,
+	},
+};
+local function GetTierInfo(tierID, key)
+	if rawget(tiers, tierID) then
+		return rawget(rawget(tiers, tierID), key);
 	end
+end
+local fields = {
+	["key"] = function(t)
+		return "tierID";
+	end,
+	["text"] = function(t)
+		return EJ_GetTierInfo(t.tierID);
+	end,
+	-- Keyed values from 'tiers' data
+	["icon"] = function(t)
+		return GetTierInfo(t.tierID, "icon");
+	end,
+	["description"] = function(t)
+		return GetTierInfo(t.tierID, "description");
+	end,
+	["lvl"] = function(t)
+		return GetTierInfo(t.tierID, "lvl");
+	end,
+};
+
+app.BaseTier = app.BaseObjectFields(fields);
+app.CreateTier = function(id, t)
+	local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+	if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+		table.sort(tier.g, app.SortGroups);
+	end
+	return tier
+end
 end)();
 
 -- Title Lib
