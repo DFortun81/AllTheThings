@@ -9141,10 +9141,6 @@ local fields = {
 			end
 		end
 	end,
-	-- ["modItemID"] = function(t)	-- TODO: verify and probably remove, don't think any battle pet is affected by modID, and Parser removes it from battle pet info
-	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-	-- 	return rawget(t, "modItemID");
-	-- end,
 	["tsm"] = function(t)
 		return string.format("p:%d:1:3", t.speciesID);
 	end,
@@ -9374,41 +9370,45 @@ end
 end)();
 
 -- Toy Lib
-app.BaseToy = {
-	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "filterID" then
-			return 102;
-		elseif key == "collectible" then
-			return app.CollectibleToys;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedToys", t.itemID);
-		elseif key == "isToy" then
-			return true;
-		elseif key == "text" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "link" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "icon" then
-			return select(3, C_ToyBox_GetToyInfo(t.itemID));
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			-- toys don't use modIDs
-			rawset(t, "modItemID", t.itemID);
-			return rawget(t, "modItemID");
-		elseif key == "name" then
-			return select(2, C_ToyBox_GetToyInfo(t.itemID));
-		elseif key == "tsm" then
-			return string.format("i:%d", t.itemID);
-		elseif key == "b" then
-			return 2;
-		end
-	end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["filterID"] = function(t)
+		return 102;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleToys;
+	end,
+	["collected"] = function(t)
+		return GetDataSubMember("CollectedToys", t.itemID);
+	end,
+	["isToy"] = app.ReturnTrue,
+	["text"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["link"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["icon"] = function(t)
+		return select(3, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["name"] = function(t)
+		return select(2, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["tsm"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
 };
+app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
+end)();
 
 -- Vignette Lib
 app.BaseVignette = {
