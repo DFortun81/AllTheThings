@@ -8941,69 +8941,82 @@ local function RefreshQuestCompletionState(questID)
 end
 
 -- Recipe Lib
-app.BaseRecipe = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "filterID" then
-			return 200;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "key";
+	end,
+	["filterID"] = function(t)
+		return 200;
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
-		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "collectible" then
-			return app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
-		elseif key == "b" then
-			return t.itemID and app.AccountWideRecipes and 2;
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
 		end
-	end
+		return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
+			end
+		end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if IsSpellKnown(t.spellID) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
+	["b"] = function(t)
+		return t.itemID and app.AccountWideRecipes and 2;
+	end,
+	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+		return rawget(t, "modItemID");
+	end,
 };
+app.BaseRecipe = app.BaseObjectFields(fields);
 app.CreateRecipe = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
+end)();
 
 -- Spell Lib
 app.BaseSpell = {
