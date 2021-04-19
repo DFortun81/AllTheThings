@@ -230,7 +230,7 @@ local L = app.L;
 			--TODO: L.TITLE_INSANE = "Insane ";
 			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
 			L.TITLE_LEVEL = "等级 ";
-			--TODO: L._BETA_LABEL = " |CFF4AA7FF[Beta]|R";
+			L._BETA_LABEL = " |CFF4AA7FF[测试]|R";
 
 		L.GENERAL_TAB = "常规";
 		L.TWITCH_BUTTON_TOOLTIP = "单击按钮复制url到我的Twitch频道.\n\n可以在我直播的时候问问题, 我会尽力回答!";
