@@ -61,7 +61,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27277, {	-- An Audience with Ureda
+				q(27277, {	-- An Audience with Feenix Arcshine
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
 					["classes"] = { MAGE },
@@ -379,7 +379,7 @@ _.Zones =
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["races"] = { BLOODELF },
 				}),
-				q(28300, {	-- Meet with Ureda
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
 					["classes"] = { MAGE },
