@@ -1,1 +1,0 @@
-["description"] = "|cFFfe040fVenthyr Covenant|r only.",

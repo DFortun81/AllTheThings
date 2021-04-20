@@ -669,11 +669,11 @@ local function GetDisplayID(data, all)
 		local displayInfo, _ = {};
 		-- specific displayID
 		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -685,33 +685,33 @@ local function GetDisplayID(data, all)
 				end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 	else
 		-- specific displayID
-		local _ = data.displayID;
+		local _ = data.displayID or data.fetchedDisplayID;
 		if _ then return _; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then return _; end
+		if _ then rawset(data,"fetchedDisplayID",_); return _; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -719,24 +719,24 @@ local function GetDisplayID(data, all)
 				-- if one of the providers is an NPC, we should show its texture regardless of other providers
 				if v[1] == "n" then
 					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then return _; end
+					if _ then rawset(data,"fetchedDisplayID",_); return _; end
 				end
 			end
 		end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 	end
@@ -5753,9 +5753,7 @@ local criteriaFields = {
 			return displayInfos;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
 		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
@@ -6278,6 +6276,26 @@ end)();
 
 -- Encounter Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		idcache["link"]
+			= EJ_GetEncounterInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "encounterID";
@@ -6286,13 +6304,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
+		return GetCached(t, "name") or RETRIEVING_DATA;
+		-- return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["link"] = function(t)
-		return select(5, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "link");
+		-- return select(5, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["displayID"] = function(t)
 		-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
@@ -6420,6 +6441,23 @@ end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"]
+			= GetFactionInfoByID(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "factionID";
@@ -6428,7 +6466,8 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		return GetCached(t, "name") or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		-- return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
@@ -6539,10 +6578,13 @@ local fields = {
 	end,
 	["description"] = function(t)
 		if t.isFriend then
-			return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			return (GetCached(t, "description") or L["FACTION_SPECIFIC_REP"])
 				.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
+			-- return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			-- 	.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
 		end
-		return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
+		return GetCached(t, "description") or L["FACTION_SPECIFIC_REP"];
+		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
 fields.collectible = fields.trackable;
@@ -6896,9 +6938,7 @@ local fields = {
 	["description"] = function(t)
 		return t.info.description;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return t.questID and IsQuestFlaggedCompleted(t.questID) or t.info.researched;
 	end,
@@ -7101,9 +7141,7 @@ local fields = {
 	["collected"] = function(t)
 		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["u"] = function(t)
 		return t.parent.u;
 	end,
@@ -7111,7 +7149,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
 
 local armorTextures = {
@@ -7154,9 +7192,7 @@ local fields = {
 			end
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
 		if t.parent.f and contains(isWeapon, t.parent.f) then
 			rawset(t, "isWeapon", true);
@@ -7172,7 +7208,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloomLevel = app.BaseObjectFields(fields);
 
 local fields = {
@@ -7221,9 +7257,7 @@ local fields = {
 		if t.s and GetDataSubMember("CollectedSources", t.s) then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["g"] = function(t)
 		if app.CollectibleHeirlooms then
 			local g = {};
@@ -7271,7 +7305,7 @@ local fields = {
 		end
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
@@ -7438,25 +7472,51 @@ end)();
 
 -- Instance Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		_,
+		idcache["icon"],
+		_,
+		idcache["link"]
+			= EJ_GetInstanceInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "instanceID";
 	end,
 	["text"] = function(t)
-		local name = t.name;
-		if name then return rawget(t, "isRaid") and ("|cffff8000" .. name .. "|r") or name; end
+		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return select(6, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "icon");
+		-- return select(6, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "name");
+		-- return select(1, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["link"] = function(t)
-		return select(8, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "link");
+		-- return select(8, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
@@ -7473,9 +7533,7 @@ local fields = {
 			return locks;
 		end
 	end,
-	["isLockoutShared"] = function(t)
-		return false;
-	end,
+	["isLockoutShared"] = app.ReturnFalse,
 	["sort"] = function(t)
 		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
 	end,
@@ -7591,9 +7649,7 @@ local itemFields = {
 		rawset(t, "modItemID", modItemID);
 		return modItemID;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		return t.collectibleAsCost;
 	end,
@@ -7628,9 +7684,7 @@ local itemFields = {
 			return false;
 		end
 	end,
-	["collectibleAsCostAfterFailure"] = function(t)
-		return false;
-	end,
+	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsCost;
 	end,
@@ -8109,9 +8163,7 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleMusicRollsAndSelfieFilters;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
 		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
@@ -8156,9 +8208,7 @@ local fields = {
 			return 2;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
 	end,
@@ -8237,9 +8287,7 @@ local npcFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8313,9 +8361,7 @@ local headerFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
 local fields = RawCloneData(headerFields);
@@ -8404,9 +8450,7 @@ local objectFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8622,9 +8666,7 @@ local fields = {
 	["lifetimeRank"] = function(t)
 		return select(3, GetPVPLifetimeStats());
 	end,
-	["collectible"] = function(t)
-		return false;	-- TODO?
-	end,
+	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		return t.lifetimeRank >= t.pvpRankID;
 	end,
@@ -8689,9 +8731,7 @@ local questFields = {
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
@@ -8740,13 +8780,14 @@ local questFields = {
 		if not IsQuestFlaggedCompleted(t.questID) then
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			if t.isBreadcrumb and t.nextQuests then
+				local nq;
 				for i,questID in ipairs(t.nextQuests) do
 					if IsQuestFlaggedCompleted(questID) then
 						rawset(t, "breadcrumbLockedBy", questID);
 						return questID;
 					else
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local nq = app.SearchForObjectClone("questID", questID);
+						nq = app.SearchForObject("questID", questID);
 						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
 							rawset(t, "breadcrumbLockedBy", questID);
 							return questID;
@@ -8760,6 +8801,7 @@ local questFields = {
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local completed = true;
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
+			local sq;
 			for i,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					if includeBreadcrumbs then
@@ -8767,7 +8809,7 @@ local questFields = {
 						completed = false;
 					else
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
-						local sq = app.SearchForObjectClone("questID", sourceQuestID);
+						sq = app.SearchForObject("questID", sourceQuestID);
 						if sq then
 							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
 								completed = false;
@@ -8854,12 +8896,8 @@ local fields = {
 	["repeatable"] = function(t)
 		return t.parent.repeatable;
 	end,
-	["collectible"] = function(t)
-		return false;
-	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		-- If the parent is collected, return immediately.
 		local collected = t.parent.collected;
@@ -9144,10 +9182,6 @@ local fields = {
 			end
 		end
 	end,
-	-- ["modItemID"] = function(t)	-- TODO: verify and probably remove, don't think any battle pet is affected by modID, and Parser removes it from battle pet info
-	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-	-- 	return rawget(t, "modItemID");
-	-- end,
 	["tsm"] = function(t)
 		return string.format("p:%d:1:3", t.speciesID);
 	end,
@@ -9192,312 +9226,321 @@ end)();
 
 -- Tier Lib
 (function()
-	local tiers = {
-		{	-- Classic
-			["icon"] = app.asset("Expansion_CLASSIC"),
-			["description"] = L["CLASSIC_TIER_DESC"],
-		},
-		{	-- Burning Crusade
-			["icon"] = app.asset("Expansion_TBC"),
-			["description"] = L["TBC_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Wrath of the Lich King
-			["icon"] = app.asset("Expansion_WOTLK"),
-			["description"] = L["WOTLK_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Cataclysm
-			["icon"] = app.asset("Expansion_CATA"),
-			["description"] = L["CATA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Mists of Pandaria
-			["icon"] = app.asset("Expansion_MOP"),
-			["description"] = L["MOP_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Warlords of Draenor
-			["icon"] = app.asset("Expansion_WOD"),
-			["description"] = L["WOD_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Legion
-			["icon"] = app.asset("Expansion_LEGION"),
-			["description"] = L["LEGION_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Battle for Azeroth
-			["icon"] = app.asset("Expansion_BFA"),
-			["description"] = L["BFA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Shadowlands
-			["icon"] = app.asset("Expansion_SL"),
-			["description"] = L["SL_TIER_DESC"],
-			["lvl"] = 50,
-		},
-	};
-	app.BaseTier = {
-		__index = function(t, key)
-			if key == "key" then
-				return "tierID";
-			elseif key == "text" then
-				return EJ_GetTierInfo(t.tierID);
-			else
-				local info = rawget(tiers, t.tierID);
-				return info and rawget(info, key);
-			end
-		end
-	};
-	app.CreateTier = function(id, t)
-		local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-		if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-			table.sort(tier.g, app.SortGroups);
-		end
-		return tier
+local tiers = {
+	{	-- Classic
+		["icon"] = app.asset("Expansion_CLASSIC"),
+		["description"] = L["CLASSIC_TIER_DESC"],
+	},
+	{	-- Burning Crusade
+		["icon"] = app.asset("Expansion_TBC"),
+		["description"] = L["TBC_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Wrath of the Lich King
+		["icon"] = app.asset("Expansion_WOTLK"),
+		["description"] = L["WOTLK_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Cataclysm
+		["icon"] = app.asset("Expansion_CATA"),
+		["description"] = L["CATA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Mists of Pandaria
+		["icon"] = app.asset("Expansion_MOP"),
+		["description"] = L["MOP_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Warlords of Draenor
+		["icon"] = app.asset("Expansion_WOD"),
+		["description"] = L["WOD_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Legion
+		["icon"] = app.asset("Expansion_LEGION"),
+		["description"] = L["LEGION_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Battle for Azeroth
+		["icon"] = app.asset("Expansion_BFA"),
+		["description"] = L["BFA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Shadowlands
+		["icon"] = app.asset("Expansion_SL"),
+		["description"] = L["SL_TIER_DESC"],
+		["lvl"] = 50,
+	},
+};
+local function GetTierInfo(tierID, key)
+	if rawget(tiers, tierID) then
+		return rawget(rawget(tiers, tierID), key);
 	end
+end
+local fields = {
+	["key"] = function(t)
+		return "tierID";
+	end,
+	["text"] = function(t)
+		return EJ_GetTierInfo(t.tierID);
+	end,
+	-- Keyed values from 'tiers' data
+	["icon"] = function(t)
+		return GetTierInfo(t.tierID, "icon");
+	end,
+	["description"] = function(t)
+		return GetTierInfo(t.tierID, "description");
+	end,
+	["lvl"] = function(t)
+		return GetTierInfo(t.tierID, "lvl");
+	end,
+};
+
+app.BaseTier = app.BaseObjectFields(fields);
+app.CreateTier = function(id, t)
+	local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+	if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+		table.sort(tier.g, app.SortGroups);
+	end
+	return tier
+end
 end)();
 
 -- Title Lib
-app.BaseTitle = {
-	__index = function(t, key)
-		if key == "key" then
-			return "titleID";
-		elseif key == "filterID" then
-			return 110;
-		elseif key == "icon" then
-			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
-		elseif key == "description" then
-			return L["TITLES_DESC"];		-- L["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character."
-		elseif key == "text" then
-			local name = t.playerTitle;
-			if name then
-				name = "|cff00ccff" .. name .. "|r";
-				rawset(t, "name", name);
-				return name;
+(function()
+local fields = {
+	["key"] = function(t)
+		return "titleID";
+	end,
+	["filterID"] = function(t)
+		return 110;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
+	end,
+	["description"] = function(t)
+		return L["TITLES_DESC"];
+	end,
+	["text"] = function(t)
+		local name = t.playerTitle;
+		if name then
+			name = "|cff00ccff" .. name .. "|r";
+			rawset(t, "name", name);
+			return name;
+		end
+	end,
+	["playerTitle"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local style = t.style;
+			if style == 0 then
+				-- Prefix
+				return name .. UnitName("player");
+			elseif style == 1 then
+				-- Player Name First
+				return UnitName("player") .. name;
+			elseif style == 2 then
+				-- Player Name First (with space)
+				return UnitName("player") .. " " .. name;
+			elseif style == 3 then
+				-- Comma Separated
+				return UnitName("player") .. ", " .. name;
 			end
-		elseif key == "playerTitle" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local style = t.style;
-				if style == 0 then
-					-- Prefix
-					return name .. UnitName("player");
-				elseif style == 1 then
-					-- Player Name First
-					return UnitName("player") .. name;
-				elseif style == 2 then
-					-- Player Name First (with space)
-					return UnitName("player") .. " " .. name;
-				elseif style == 3 then
-					-- Comma Separated
-					return UnitName("player") .. ", " .. name;
-				end
-			end
-		elseif key == "style" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local first = string.sub(name, 1, 1);
-				if first == " " then
-					-- Suffix
-					first = string.sub(name, 2, 2);
-					if first == string.upper(first) then
-						-- Comma Separated
-						return 3;
-					end
-
-					-- Player Name First
-					return 1;
-				else
-					local last = string.sub(name, -1);
-					if last == " " then
-						-- Prefix
-						return 0;
-					end
-
-					-- Suffix
-					if first == string.lower(first) then
-						-- Player Name First with a space
-						return 2;
-					end
-
+		end
+	end,
+	["style"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local first = string.sub(name, 1, 1);
+			if first == " " then
+				-- Suffix
+				first = string.sub(name, 2, 2);
+				if first == string.upper(first) then
 					-- Comma Separated
 					return 3;
 				end
-			end
 
-			return 1;	-- Player Name First
-		elseif key == "collectible" then
-			return app.CollectibleTitles;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" or key == "collected" then
-			if app.AccountWideTitles then
-				if GetDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
-				end
+				-- Player Name First
+				return 1;
 			else
-				if GetTempDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
+				local last = string.sub(name, -1);
+				if last == " " then
+					-- Prefix
+					return 0;
 				end
+
+				-- Suffix
+				if first == string.lower(first) then
+					-- Player Name First with a space
+					return 2;
+				end
+
+				-- Comma Separated
+				return 3;
 			end
-			if IsTitleKnown(t.titleID) then
-				SetTempDataSubMember("CollectedTitles", t.titleID, 1);
-				SetDataSubMember("CollectedTitles", t.titleID, 1);
+		end
+
+		return 1;	-- Player Name First
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleTitles;
+	end,
+	["trackable"] = app.ReturnTrue,
+	["collected"] = function(t)
+		if app.AccountWideTitles then
+			if GetDataSubMember("CollectedTitles", t.titleID) then
+				return 1;
+			end
+		else
+			if GetTempDataSubMember("CollectedTitles", t.titleID) then
 				return 1;
 			end
 		end
-	end
+		if IsTitleKnown(t.titleID) then
+			SetTempDataSubMember("CollectedTitles", t.titleID, 1);
+			SetDataSubMember("CollectedTitles", t.titleID, 1);
+			return 1;
+		end
+	end,
 };
+fields.saved = fields.collected;
+app.BaseTitle = app.BaseObjectFields(fields);
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
 end
+end)();
 
 -- Toy Lib
-app.BaseToy = {
-	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "filterID" then
-			return 102;
-		elseif key == "collectible" then
-			return app.CollectibleToys;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedToys", t.itemID);
-		elseif key == "isToy" then
-			return true;
-		elseif key == "text" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "link" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "icon" then
-			return select(3, C_ToyBox_GetToyInfo(t.itemID));
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			-- toys don't use modIDs
-			rawset(t, "modItemID", t.itemID);
-			return rawget(t, "modItemID");
-		elseif key == "name" then
-			return select(2, C_ToyBox_GetToyInfo(t.itemID));
-		elseif key == "tsm" then
-			return string.format("i:%d", t.itemID);
-		elseif key == "b" then
-			return 2;
-		end
-	end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["filterID"] = function(t)
+		return 102;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleToys;
+	end,
+	["collected"] = function(t)
+		return GetDataSubMember("CollectedToys", t.itemID);
+	end,
+	["isToy"] = app.ReturnTrue,
+	["text"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["link"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["icon"] = function(t)
+		return select(3, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["name"] = function(t)
+		return select(2, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["tsm"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
 };
+app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
+end)();
 
 -- Vignette Lib
-app.BaseVignette = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			if t.qgs then
-				local all = true;
-				for i,qg in ipairs(t.qgs) do
-					if not NPCNameFromID[qg] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.qgs;
-					for i=1,count,1 do
-						local qg = t.qgs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-						else
-							t.name = NPCNameFromID[qg];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[qg];
-						end
-					end
-					return t.name;
-				end
-			elseif t.crs then
-				local all = true;
-				for i,cr in ipairs(t.crs) do
-					if not NPCNameFromID[cr] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.crs;
-					for i=1,count,1 do
-						local cr = t.crs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-						else
-							t.name = NPCNameFromID[cr];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[cr];
-						end
-					end
-					return t.name;
-				end
-			elseif t.qg then
-				if NPCNameFromID[t.qg] then
-					t.name = NPCNameFromID[t.qg];
-					if not t.title then
-						t.title = NPCTitlesFromID[t.qg];
-					end
-					return t.name;
-				end
-			elseif t.creatureID then
-				if t.creatureID > 0 then
-					if NPCNameFromID[t.creatureID] then
-						t.name = NPCNameFromID[t.creatureID];
-						if not t.title then
-							t.title = NPCTitlesFromID[t.creatureID];
-						end
-						return t.name;
-					end
-				else
-					t.name = L["HEADER_NAMES"][t.creatureID];
-					return t.name;
+(function()
+local fields = {
+	["text"] = function(t)
+		if t.qgs then
+			local all = true;
+			for i,qg in ipairs(t.qgs) do
+				if not NPCNameFromID[qg] then
+					all = false;
 				end
 			end
-			return t.name;
-		elseif key == "name" then
-			return QuestTitleFromID[t.questID];
-		elseif key == "link" then
-			return "quest:" .. t.questID;
-		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleAsQuest(t);
-		elseif key == "collected" then
-			return t.collectible and t.saved;
-		elseif key == "repeatable" then
-			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "isVignette" then
-			return true;
+			if all then
+				t.name = nil;
+				local count = #t.qgs;
+				for i=1,count,1 do
+					local qg = t.qgs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+					else
+						t.name = NPCNameFromID[qg];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[qg];
+					end
+				end
+				return t.name;
+			end
+		elseif t.crs then
+			local all = true;
+			for i,cr in ipairs(t.crs) do
+				if not NPCNameFromID[cr] then
+					all = false;
+				end
+			end
+			if all then
+				t.name = nil;
+				local count = #t.crs;
+				for i=1,count,1 do
+					local cr = t.crs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+					else
+						t.name = NPCNameFromID[cr];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[cr];
+					end
+				end
+				return t.name;
+			end
+		elseif t.qg then
+			if NPCNameFromID[t.qg] then
+				t.name = NPCNameFromID[t.qg];
+				if not t.title then
+					t.title = NPCTitlesFromID[t.qg];
+				end
+				return t.name;
+			end
+		elseif t.creatureID then
+			if t.creatureID > 0 then
+				if NPCNameFromID[t.creatureID] then
+					t.name = NPCNameFromID[t.creatureID];
+					if not t.title then
+						t.title = NPCTitlesFromID[t.creatureID];
+					end
+					return t.name;
+				end
+			else
+				t.name = L["HEADER_NAMES"][t.creatureID];
+				return t.name;
+			end
 		end
-	end
+		return t.name;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+	end,
+	["isVignette"] = app.ReturnTrue,
 };
+app.BaseVignette = setmetatable(app.BaseObjectFields(fields), app.BaseQuest);
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
+end)();
 
 -- Filtering
-function app.Filter()
-	-- Meaning "Don't display."
-	-- Nothing needs to return
-end
-function app.NoFilter()
-	-- Meaning "Display as expected."
-	return true;
-end
+-- Meaning "Don't display." - Returns false
+app.Filter = app.ReturnFalse;
+-- Meaning "Display as expected" - Returns true
+app.NoFilter = app.ReturnTrue;
 function app.FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
 	if group.lvl then
@@ -11101,6 +11144,7 @@ function app:CreateMiniListForGroup(group)
 			local root = group;
 			root.collectible = not root.repeatable;
 			local g = { root };
+			popout.isQuestChain = true;
 
 			-- Check to see if Source Quests are listed elsewhere.
 			if group.questID and not group.sourceQuests then
@@ -11291,14 +11335,29 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Clone the data and then insert it into the Raw Data table.
-		-- popout.data = popout.data or group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
 		popout.data.indent = 0;
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
+		-- Adjust some update logic if this is a Quest Chain window
+		if popout.isQuestChain then
+			local oldUpdate = popout.Update;
+			popout.Update = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldUpdate(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+			-- also immediately run the adjusted logic for Update
+			local oldQuestTracking = app.AccountWideQuests;
+			app.AccountWideQuests = false;
+			UpdateGroups(popout.data, popout.data.g);
+			app.AccountWideQuests = oldQuestTracking;
+		else
+			UpdateGroups(popout.data, popout.data.g);
+		end
 		table.insert(app.RawData, popout.data);
 	end
 	if not popout.data.expanded then
