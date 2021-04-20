@@ -687,7 +687,7 @@ local function GetDisplayID(data, all)
 		end
 		if displayInfo[1] then return displayInfo; end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
@@ -696,8 +696,8 @@ local function GetDisplayID(data, all)
 		end
 		if displayInfo[1] then return displayInfo; end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
@@ -724,7 +724,7 @@ local function GetDisplayID(data, all)
 			end
 		end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
@@ -732,8 +732,8 @@ local function GetDisplayID(data, all)
 			end
 		end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then return _; end
@@ -5750,9 +5750,7 @@ local criteriaFields = {
 			return displayInfos;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
 		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
@@ -6893,9 +6891,7 @@ local fields = {
 	["description"] = function(t)
 		return t.info.description;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return t.questID and IsQuestFlaggedCompleted(t.questID) or t.info.researched;
 	end,
@@ -7098,9 +7094,7 @@ local fields = {
 	["collected"] = function(t)
 		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["u"] = function(t)
 		return t.parent.u;
 	end,
@@ -7151,9 +7145,7 @@ local fields = {
 			end
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
 		if t.parent.f and contains(isWeapon, t.parent.f) then
 			rawset(t, "isWeapon", true);
@@ -7218,9 +7210,7 @@ local fields = {
 		if t.s and GetDataSubMember("CollectedSources", t.s) then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["g"] = function(t)
 		if app.CollectibleHeirlooms then
 			local g = {};
@@ -7470,9 +7460,7 @@ local fields = {
 			return locks;
 		end
 	end,
-	["isLockoutShared"] = function(t)
-		return false;
-	end,
+	["isLockoutShared"] = app.ReturnFalse,
 	["sort"] = function(t)
 		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
 	end,
@@ -7588,9 +7576,7 @@ local itemFields = {
 		rawset(t, "modItemID", modItemID);
 		return modItemID;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		return t.collectibleAsCost;
 	end,
@@ -7625,9 +7611,7 @@ local itemFields = {
 			return false;
 		end
 	end,
-	["collectibleAsCostAfterFailure"] = function(t)
-		return false;
-	end,
+	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsCost;
 	end,
@@ -8106,9 +8090,7 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleMusicRollsAndSelfieFilters;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
 		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
@@ -8153,9 +8135,7 @@ local fields = {
 			return 2;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
 	end,
@@ -8234,9 +8214,7 @@ local npcFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8310,9 +8288,7 @@ local headerFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
 local fields = RawCloneData(headerFields);
@@ -8401,9 +8377,7 @@ local objectFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8686,9 +8660,7 @@ local questFields = {
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
@@ -8851,12 +8823,8 @@ local fields = {
 	["repeatable"] = function(t)
 		return t.parent.repeatable;
 	end,
-	["collectible"] = function(t)
-		return false;
-	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		-- If the parent is collected, return immediately.
 		local collected = t.parent.collected;
@@ -9413,9 +9381,6 @@ end)();
 -- Vignette Lib
 (function()
 local fields = {
-	["key"] = function(t)
-		return "questID";
-	end,
 	["text"] = function(t)
 		if t.qgs then
 			local all = true;
@@ -9487,44 +9452,22 @@ local fields = {
 		end
 		return t.name;
 	end,
-	["name"] = function(t)
-		return QuestTitleFromID[t.questID];
-	end,
-	["link"] = function(t)
-		return "quest:" .. t.questID;
-	end,
 	["icon"] = function(t)
 		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 	end,
-	["collectible"] = function(t)
-		return app.CollectibleAsQuest(t);
-	end,
-	["collected"] = function(t)
-		return t.collectible and t.saved;	-- TODO: review this...
-	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-	end,
-	["saved"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
-	end,
 	["isVignette"] = app.ReturnTrue,
 };
-app.BaseVignette = app.BaseObjectFields(fields);
+app.BaseVignette = setmetatable(app.BaseObjectFields(fields), app.BaseQuest);
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
 end)();
 
 -- Filtering
-function app.Filter()
-	-- Meaning "Don't display."
-	-- Nothing needs to return
-end
-function app.NoFilter()
-	-- Meaning "Display as expected."
-	return true;
-end
+-- Meaning "Don't display." - Returns false
+app.Filter = app.ReturnFalse;
+-- Meaning "Display as expected" - Returns true
+app.NoFilter = app.ReturnTrue;
 function app.FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
 	if group.lvl then
