@@ -5,7 +5,6 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
 		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
-		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["maps"] = {
