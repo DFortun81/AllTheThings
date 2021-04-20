@@ -6273,6 +6273,26 @@ end)();
 
 -- Encounter Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		idcache["link"]
+			= EJ_GetEncounterInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "encounterID";
@@ -6281,13 +6301,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
+		return GetCached(t, "name") or RETRIEVING_DATA;
+		-- return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["link"] = function(t)
-		return select(5, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "link");
+		-- return select(5, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["displayID"] = function(t)
 		-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
@@ -7102,7 +7125,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
 
 local armorTextures = {
@@ -7161,7 +7184,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloomLevel = app.BaseObjectFields(fields);
 
 local fields = {
@@ -7258,7 +7281,7 @@ local fields = {
 		end
 	end,
 };
-fields.saved = collected;
+fields.saved = fields.collected;
 app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
@@ -7427,7 +7450,7 @@ end)();
 (function()
 local cache = {};
 local function GetCached(t, field)
-	if not t or not t["key"] or not t[t["key"]] then return nil; end
+	if not t[t["key"]] then return nil; end
 	local id, _ = t[t["key"]];
 	local idcache = rawget(cache, id);
 	if not idcache then 
