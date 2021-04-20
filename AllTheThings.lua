@@ -669,11 +669,11 @@ local function GetDisplayID(data, all)
 		local displayInfo, _ = {};
 		-- specific displayID
 		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -685,7 +685,7 @@ local function GetDisplayID(data, all)
 				end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- for quest givers
 		if data.qgs then
@@ -694,7 +694,7 @@ local function GetDisplayID(data, all)
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- otherwise use the attached crs if so
 		if data.crs then
@@ -703,15 +703,15 @@ local function GetDisplayID(data, all)
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 	else
 		-- specific displayID
-		local _ = data.displayID;
+		local _ = data.displayID or data.fetchedDisplayID;
 		if _ then return _; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then return _; end
+		if _ then rawset(data,"fetchedDisplayID",_); return _; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -719,7 +719,7 @@ local function GetDisplayID(data, all)
 				-- if one of the providers is an NPC, we should show its texture regardless of other providers
 				if v[1] == "n" then
 					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then return _; end
+					if _ then rawset(data,"fetchedDisplayID",_); return _; end
 				end
 			end
 		end
@@ -728,7 +728,7 @@ local function GetDisplayID(data, all)
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 
@@ -736,7 +736,7 @@ local function GetDisplayID(data, all)
 		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 	end
@@ -7425,25 +7425,51 @@ end)();
 
 -- Instance Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t or not t["key"] or not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		_,
+		idcache["icon"],
+		_,
+		idcache["link"]
+			= EJ_GetInstanceInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "instanceID";
 	end,
 	["text"] = function(t)
-		local name = t.name;
-		if name then return rawget(t, "isRaid") and ("|cffff8000" .. name .. "|r") or name; end
+		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return select(6, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "icon");
+		-- return select(6, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "name");
+		-- return select(1, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["link"] = function(t)
-		return select(8, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "link");
+		-- return select(8, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
