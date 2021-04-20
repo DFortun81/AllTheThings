@@ -8990,7 +8990,7 @@ end
 (function()
 local fields = {
 	["key"] = function(t)
-		return "key";
+		return "spellID";
 	end,
 	["filterID"] = function(t)
 		return 200;
