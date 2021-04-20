@@ -998,3 +998,10 @@ pet(180636, 2915);	-- Willowbreeze
 pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+pet(185919, 3097);	-- Flawless Amethyst Baubleworm
+pet(186537, 3104);	-- Ruby Baubleworm
+pet(186535, 3106);	-- Topaz Baubleworm
+pet(186536, 3105);	-- Turquoise Baubleworm

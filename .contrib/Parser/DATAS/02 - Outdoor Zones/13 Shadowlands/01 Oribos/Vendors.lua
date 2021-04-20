@@ -198,6 +198,36 @@ _.Zones =
 						i(180136),	-- The Brokers Angle'r
 					},
 				}),
+				n(156769, {	-- Keeper Ta'hult <Pet Vendor>
+					["coord"] = { 64.9, 67.3, 1670 },
+					["g"] = {
+					--	TODO: verify costs if these make it to live
+						i(185919, {	-- Flawless Amethyst Baubleworm
+							["cost"] = { { "i", 163036, 10000 } },	-- 10,000x Polished Pet Charm
+						}),
+						i(186537, {	-- Ruby Baubleworm
+							["cost"] = {
+								{ "i", 36812, 1 },	-- Ground Gear
+								{ "i", 62072, 1 },	-- Robble's Wobbly Staff
+								{ "i", 67410, 1 },	-- Very Unlucky Rock
+							},
+						}),
+						i(186535, {	-- Topaz Baubleworm
+							["cost"] = {
+								{ "i", 11406, 1 },	-- Rotting Bear Carcass
+								{ "i", 11944, 1 },	-- Dark Iron Baby Booties
+								{ "i", 25402, 1 },	-- The Stoppable Force
+							},
+						}),
+						i(186536, {	-- Turquoise Baubleworm
+							["cost"] = {
+								{ "i", 3300, 1 },	-- Rabbit's Foot
+								{ "i", 3670, 1 },	-- Large Slimy Bone
+								{ "i", 6150, 1 },	-- A Frayed Knot
+							},
+						}),
+					},
+				}),
 				n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
 					["coord"] = { 47.0, 76.8, 1670 },
 					["g"] = {

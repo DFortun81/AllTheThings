@@ -927,13 +927,13 @@ _.Zones =
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179082 },	-- Tal-Rahl
 					["isDaily"] = true,
-					["coord"] = { 64.1, 23.0, 1961 },
+					["coord"] = { 64.1, 23.0, 1961 },	-- Korthia
 				}),
 				q(63936, {	-- Devoured Anima
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178797 },	-- Sika
 					["isDaily"] = true,
-					["coord"] = { 61.7, 23.9, 1961 },
+					["coord"] = { 61.7, 23.9, 1961 },	-- Korthia
 				}),
 				q(64080, {	-- Down to Earth
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -965,6 +965,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, 1961 },	-- Korthia
 				}),
+				q(63781, {	-- Mawsworn Battle Plans
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.1, 1961 },	-- Korthia
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
@@ -983,11 +989,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.7, 27.9, 1961 },	-- Korthia
 				}),
+				q(63935, {	-- Precious Roots
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 60.9, 21.3, 1961 },
+					["isDaily"] = true,
+					["coord"] = { 60.9, 21.3, 1961 },	-- Korthia
+					["g"] = {
+					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
+						i(185886),	-- Korthian Caretaker's Shoulderpads
+					},
+				}),
 				q(63780, {	-- See How THEY Like It!
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178838 },	-- Lady Moonberry
 					["isDaily"] = true,
-					["coord"] = { 61.2, 21.2, 1961 },
+					["coord"] = { 61.2, 21.2, 1961 },	-- Korthia
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
