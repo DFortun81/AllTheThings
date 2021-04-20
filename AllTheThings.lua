@@ -8663,9 +8663,7 @@ local fields = {
 	["lifetimeRank"] = function(t)
 		return select(3, GetPVPLifetimeStats());
 	end,
-	["collectible"] = function(t)
-		return false;	-- TODO?
-	end,
+	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		return t.lifetimeRank >= t.pvpRankID;
 	end,
@@ -8779,13 +8777,14 @@ local questFields = {
 		if not IsQuestFlaggedCompleted(t.questID) then
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			if t.isBreadcrumb and t.nextQuests then
+				local nq;
 				for i,questID in ipairs(t.nextQuests) do
 					if IsQuestFlaggedCompleted(questID) then
 						rawset(t, "breadcrumbLockedBy", questID);
 						return questID;
 					else
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local nq = app.SearchForObjectClone("questID", questID);
+						nq = app.SearchForObject("questID", questID);
 						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
 							rawset(t, "breadcrumbLockedBy", questID);
 							return questID;
@@ -8799,6 +8798,7 @@ local questFields = {
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local completed = true;
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
+			local sq;
 			for i,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					if includeBreadcrumbs then
@@ -8806,7 +8806,7 @@ local questFields = {
 						completed = false;
 					else
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
-						local sq = app.SearchForObjectClone("questID", sourceQuestID);
+						sq = app.SearchForObject("questID", sourceQuestID);
 						if sq then
 							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
 								completed = false;
@@ -11141,6 +11141,7 @@ function app:CreateMiniListForGroup(group)
 			local root = group;
 			root.collectible = not root.repeatable;
 			local g = { root };
+			popout.isQuestChain = true;
 
 			-- Check to see if Source Quests are listed elsewhere.
 			if group.questID and not group.sourceQuests then
@@ -11331,14 +11332,29 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Clone the data and then insert it into the Raw Data table.
-		-- popout.data = popout.data or group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
 		popout.data.indent = 0;
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
+		-- Adjust some update logic if this is a Quest Chain window
+		if popout.isQuestChain then
+			local oldUpdate = popout.Update;
+			popout.Update = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldUpdate(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+			-- also immediately run the adjusted logic for Update
+			local oldQuestTracking = app.AccountWideQuests;
+			app.AccountWideQuests = false;
+			UpdateGroups(popout.data, popout.data.g);
+			app.AccountWideQuests = oldQuestTracking;
+		else
+			UpdateGroups(popout.data, popout.data.g);
+		end
 		table.insert(app.RawData, popout.data);
 	end
 	if not popout.data.expanded then
