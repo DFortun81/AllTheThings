@@ -477,6 +477,10 @@ _.ExpansionFeatures =
 										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
 										["provider"] = { "i", 184478 },	-- Phial of Serenity
 									}),
+									q(62998, {	-- Ring of Warding
+									--	["sourceQuests"] = { 60975 },	-- Blueprint: Ring of Warding
+										["provider"] = { "i", 184481 },	-- Ring of Warding
+									}),
 									q(62995, {	-- Spiritforged Aegis
 										["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
 										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
