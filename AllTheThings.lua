@@ -6438,6 +6438,23 @@ end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then 
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"]
+			= GetFactionInfoByID(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "factionID";
@@ -6446,7 +6463,8 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		return GetCached(t, "name") or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		-- return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
@@ -6557,10 +6575,13 @@ local fields = {
 	end,
 	["description"] = function(t)
 		if t.isFriend then
-			return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			return (GetCached(t, "description") or L["FACTION_SPECIFIC_REP"])
 				.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
+			-- return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			-- 	.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
 		end
-		return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
+		return GetCached(t, "description") or L["FACTION_SPECIFIC_REP"];
+		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
 fields.collectible = fields.trackable;
