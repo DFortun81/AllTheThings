@@ -832,7 +832,6 @@ _.Zones =
 				q(40873),	-- Keep Yer Powder Dry
 				q(42689),	-- Knowing Our Enemy
 				q(42691),	-- Leyworm Lure
-				q(40187),	-- Links in the Chain
 				q(38785),	-- Living Leystone Sample
 				q(45073),	-- Loot and Plunder!
 				q(43519),	-- Lucid Strength

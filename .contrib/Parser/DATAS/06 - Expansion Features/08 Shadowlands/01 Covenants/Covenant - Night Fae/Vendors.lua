@@ -8,8 +8,9 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest
+				1701,	-- Heart of the Forest (The Trunk)
 				1702,	-- Heart of the Forest (The Roots)
+				1703,	-- Heart of the Forest (The Canopy
 			},
 			["g"] = {
 				n(VENDORS, {
@@ -1034,7 +1035,8 @@ _.ExpansionFeatures =
 									i(181937),	-- Conservator's Scale Guise
 									i(181936),	-- Conservator's Scale Legguards
 									i(181935),	-- Conservator's Scale Spaulders
-									i(181978),	-- Conservator's Scale Vestments
+									i(181978),	-- Conservator's Scale Vestments (might not be ingame)
+									i(181940),	-- Conservator's Scale Hauberk (might not be ingame)
 								},
 							}),
 							i(184112, {	-- Ensemble: Conservator's Raiment

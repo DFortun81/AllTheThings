@@ -512,8 +512,41 @@ _.ExpansionFeatures =
 							-- }),
 						}),
 						n(-938, {	-- Tier 5: Best Fiends Forever
-							-- n(QUESTS, {
-							-- }),
+							n(QUESTS, {
+								q(57634, {	-- Bring Your Own
+									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
+									["provider"] = { "n", 159199 },    -- Iron Phillip
+									["coord"] = { 55.5, 68.4, 1536 },	-- Maldraxxus
+									-- Tier 5 is required to have the item sometimes show up.
+									["g"] = {
+										i(181806),	-- Regrown Osteowings
+									},
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(62276, {	-- Drink to the Dead
+									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
+									["provider"] = { "n", 158298 },    -- Naxx
+									["coord"] = { 54.8, 68.7, 1536 },	-- Maldraxxus
+									-- Tier 5 is required to have the item sometimes show up.
+									["g"] = {
+										i(181802),	-- Standard of Death's Chosen
+									},
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(58992, {	-- Pie Not?
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, 1536 },
+									-- Tier 5 is required to have the item sometimes show up.
+									["g"] = {
+										i(181809),	-- Tomalin's Seasoning Crystal
+									},
+									["isWeekly"] = true,
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+							}),
 							n(-908, {	-- Rewards
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
 								["g"] = {

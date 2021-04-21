@@ -8,15 +8,17 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest
+				1701,	-- Heart of the Forest (The Trunk)
 				1702,	-- Heart of the Forest (The Roots)
+				1703,	-- Heart of the Forest (The Canopy
 			},
 			["g"] = {
 				n(QUESTS, {
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
-						-- No idea what triggers this because they added the quest weeks after I already had Dreamweaver.
+						-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level
 						-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
+						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160482 },	-- Dreamweaver
 						["coord"] = { 33.7, 47.6, 1701 },
 						["g"] = {
@@ -99,9 +101,10 @@ _.ExpansionFeatures =
 					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
-						["sourceQuests"] = { 62544 },	-- From a Dark Place
+						-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there
+						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, 1701 },	-- The Trunk
 					}),
 
 					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
@@ -236,25 +239,25 @@ _.ExpansionFeatures =
 					}),
 
 					-- Chapter 3: The Night Warrior (Renown 5 required to start)
-					q(59246, {	-- Daughter of the Night Warrior (Horde)
-						["sourceQuests"] = { 60272 },	-- The Weak Link
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1701 },
-						["races"] = HORDE_ONLY,
-					}),
-					q(59179, {	-- Daughter of the Night Warrior (Alliance)
+					q(59179, {	-- Daughter of the Night Warrior (A)
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.9, 38.8, 1701 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(59246, {	-- Daughter of the Night Warrior (H)
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.9, 38.8, 1701 },
+						["races"] = HORDE_ONLY,
+					}),
 					q(59181, {	-- Into the Maw
 						["sourceQuests"] = {
-							59246,	-- Daughter of the Night Warrior (Horde)
-							59179,	-- Daughter of the Night Warrior (Alliance)
+							59179,	-- Daughter of the Night Warrior (A)
+							59246,	-- Daughter of the Night Warrior (H)
 						},
 						["provider"] = { "n", 164277 },	-- Shandris Feathermoon
-						["coord"] = { 39.2, 67.2, 1670 },
+						["coord"] = { 39.2, 67.2, 1670 },	-- Oribos
 					}),
 					q(60508, {	-- On the Trail
 						["sourceQuests"] = { 59181 },	-- Into the Maw
@@ -290,13 +293,15 @@ _.ExpansionFeatures =
 					-- Chapter 4: Da Boss (Renown 8 required to start)
 					q(59809, {	-- On De Other Side
 						["sourceQuests"] = { 59242 },	-- Their New Home
-						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
 						["description"] = "Requires Renown 8.",
+						["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+						["maps"] = { 1917 },	-- De Other Side (scenario)
 					}),
 					q(59811, {	-- Taking Inventory
 						["sourceQuests"] = { 59809 },	-- On De Other Side
 						["provider"] = { "n", 166281 },	-- Bwonsamdi
-						["coord"] = { 50.4, 25.3, 1917 },
+						["coord"] = { 50.4, 25.3, 1917 },	-- De Other Side (scenario)
+						["maps"] = { 1917 },	-- De Other Side (scenario)
 					}),
 					q(59812, {	-- Following the Trail
 						["sourceQuests"] = { 59811 },	-- Taking Inventory
@@ -326,12 +331,12 @@ _.ExpansionFeatures =
 					q(59818, {	-- Gathering The Hunt
 						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
 						["provider"] = { "n", 156634 },	-- Winter Queen
-						["coord"] = { 50.9, 29.4, 1703 },
+						["coord"] = { 50.9, 29.4, 1703 },	-- The Canopy
 					}),
 					q(59819, {	-- Cleansing the Forest
 						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
 						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 66.6, 55.6, 1565 },
+						["coord"] = { 66.6, 55.6, 1565 },	-- Ardenweald
 					}),
 					q(59821, {	-- Report to the Queen
 						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
@@ -344,7 +349,7 @@ _.ExpansionFeatures =
 					q(58610, {	-- The Speaker of Elune
 						["sourceQuests"] = { 59821 },	-- Report to the Queen
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },
+						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
 					}),
 					q(58647, {	-- Broken Webs
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
@@ -378,32 +383,32 @@ _.ExpansionFeatures =
 					q(58871, {	-- Broken Harts
 						["sourceQuests"] = { 58704 },	-- The Garden of Night
 						["provider"] = { "n", 161785 },	-- Thiernax
-						["coord"] = { 39.0, 59.4, 1565 },
+						["coord"] = { 39.0, 59.4, 1565 },	-- Ardenweald
 					}),
 					q(59725, {	-- Archivist on the Edge
 						["sourceQuests"] = { 58871 },	-- Broken Harts
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },
+						["coord"] = { 44.0, 37.1, 1701 }, -- The Trunk
 					}),
 					q(59063, {	-- Curses!
 						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
 						["provider"] = { "n", 165867 },	-- Archivist Dreyden
-						["coord"] = { 63.6, 22.6, 1565 },
+						["coord"] = { 63.6, 22.6, 1565 },	-- Ardenweald
 					}),
 					q(59068, {	-- A Secret Never Spoken
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },
+						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
 					}),
 					q(59070, {	-- A Sacrifice of Anima
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },
+						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
 					}),
 					q(59069, {	-- A Token of Lost Love
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },
+						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
 					}),
 					q(59071, {	-- Mending a Broken Hart
 						["sourceQuests"] = {
@@ -412,16 +417,14 @@ _.ExpansionFeatures =
 							59069,	-- A Token of Lost Love
 						},
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },
+						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
 						["g"] = {
 							i(181301),	-- Faewoven Branches
-							i(182172, {	-- Equine Soul
-								["questID"] = 62428,	-- Equine Soul
-							}),
+							i(182172),	-- Equine Soul
 						},
 					}),
 					q(62560, {	-- Growing in Power
-					--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock?
+					--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock? - quest text says "you have gathered enough anima," so maybe tied to turning in anima weeklies or something?
 						["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
 						["coord"] = { 47.4, 36.1, 1701 },
@@ -431,7 +434,7 @@ _.ExpansionFeatures =
 					q(60898, {	-- The Fate of Ara'lon
 						["sourceQuests"] = { 62560 },	-- Growing in Power
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 40.9, 72.4, 1701 },
+						["coord"] = { 40.9, 72.4, 1701 },	-- The Trunk
 					}),
 					q(60910, {	-- Masks of Deception
 						["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
@@ -710,9 +713,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 60194 },	-- The Call of the Hunt
 						["provider"] = { "n", 172091 },	-- Lord Herne
 						["coord"] = { 39.0, 63.4, 1565 },
-						["maps"] = {
-							1703,	-- Heart of the Forest
-						},
 						["g"] = {
 							i(180721),	-- Enchanted Dreamlight Runestag (MOUNT!)
 							i(182165, {	-- Ardenmoth Soul
