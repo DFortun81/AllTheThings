@@ -2556,22 +2556,18 @@ ResolveSymbolicLink = function(o)
 end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
-	local total = 0;
-	local progress = 0;
+	-- local total = 0;
+	-- local progress = 0;
 	-- using pairs since some index values may get set to nil prior to this
 	for i,group in pairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.modItemID,group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- dont list itself under Contains
-		-- if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		-- no need to filter recursively of things when we already have a set of groups which we want to show in the Contains...
-		-- if app.RecursiveGroupRequirementsFilter(group) then
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			-- print("display")
 			local right = nil;
 			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
-				total = total + group.total;
-				progress = progress + (group.progress or 0);
+				-- total = total + group.total;
+				-- progress = progress + (group.progress or 0);
 				if app.GroupVisibilityFilter(group) then
 					right = GetProgressColorText(group.progress, group.total);
 				-- the group itself may be a trackable thing
@@ -2588,9 +2584,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			else
 				if group.collectible then
-					total = total + 1;
+					-- total = total + 1;
 					if group.collected then
-						progress = progress + 1;
+						-- progress = progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
 							right = GetCollectionIcon(group.collected);
 						end
@@ -2663,12 +2659,12 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			-- end
 		end
 	end
-	if (total > 0) then
-		local data = {};
-		data.total = total;
-		data.progress = progress;
-		return data;
-	end
+	-- if (total > 0) then
+	-- 	local data = {};
+	-- 	data.total = total;
+	-- 	data.progress = progress;
+	-- 	return data;
+	-- end
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
@@ -3397,7 +3393,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	end
 
-	local collectionData;
+	-- local collectionData;
 	if group.g and #group.g > 0 then
 		--[[
 		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
@@ -3411,7 +3407,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
 			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
-			collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
 				-- print("#entries",#entries);
@@ -3502,11 +3498,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- print("Info for tooltip")
-	-- app.PrintTable(group)
 	-- print(group.collectible,group.collected,group.spellID,info and #info)
+	-- app.PrintTable(collectionData or group)
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(collectionData or group);
+		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
+		-- print(group.collectionText)
 	end
 
 	-- If there was any informational text generated, then attach that info.
@@ -10140,6 +10137,10 @@ UpdateGroup = function(parent, group, defaultVisibility)
 		-- Check if this is a group
 		if group.g then
 			-- If this item is collectible, then mark it as such.
+			-- TODO: items which are flagged as a 'cost' become collectible. But if they are also containers, then their total will be inaccurate
+			-- if the contained groups are the same as those for which the 'cost' has been applied
+			-- (i.e. tier tokens creating their tier piece + vendor selling tier peice for token cost)
+			-- feel like cost collectibility needs to remain a separate check to base collectibility
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.collected and 1 or 0;
