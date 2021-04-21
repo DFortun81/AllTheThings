@@ -101,10 +101,7 @@ _.Zones =
 								crit(2, {	-- Mystic Rainbowhorn
 									["achievementID"] = 14309,	-- Adventurer of Ardenweald
 								}),
-								i(182179, {	-- Runestag Soul
-								--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file? [All soulshape forms are already in NF file; item needs to be here to see where it drops]
-									["questID"] = 62434,	-- Runestag Soul
-								}),
+								i(182179),	-- Runestag Soul
 								i(179586),	-- Elderwood Piercer
 							},
 						}),
@@ -241,9 +238,7 @@ _.Zones =
 						crit(9, {	-- Skuld Vit
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(182183, {	-- Wolfhawk Soul
-							["questID"] = 62439,	-- Wolfhawk Soul
-						}),
+						i(182183),	-- Wolfhawk Soul
 						i(180146),	-- Axe of Broken Wills
 					},
 				}),
@@ -365,9 +360,7 @@ _.Zones =
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
 						}),
 						i(180154),	-- Greataxe of Unrelenting Pursuit
-						i(182176, {	-- Shadowstalker Soul
-							["questID"] = 62431,	-- Shadowstalker Soul
-						}),
+						i(182176),	-- Shadowstalker Soul
 					},
 				}),
 				n(164147, {	-- Wrigglemortis

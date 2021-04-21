@@ -8,8 +8,9 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest
+				1701,	-- Heart of the Forest (The Trunk)
 				1702,	-- Heart of the Forest (The Roots)
+				1703,	-- Heart of the Forest (The Canopy
 			},
 			["g"] = {
 				n(FLIGHT_PATHS, {
