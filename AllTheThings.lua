@@ -1677,6 +1677,22 @@ local function CreateHash(t)
 					hash = hash .. t.crs[1] .. t.crs[2] .. t.crs[3];
 				end
 			end
+		elseif key == "headerID" then
+			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
+			-- Separate if using Class requirements
+			if t.c then
+				for _,class in pairs(t.c) do
+					hash = "C" .. class .. hash;
+				end
+			end
+			-- Separate if using Faction/Race requirements
+			if t.r then
+				hash = "F" .. t.r .. hash;
+			elseif t.races then
+				for _,race in pairs(t.races) do
+					hash = "R" .. race .. hash;
+				end
+			end
 		end
 		rawset(t, "hash", hash);
 		return hash;
