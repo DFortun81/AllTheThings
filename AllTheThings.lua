@@ -11363,13 +11363,6 @@ function app:CreateMiniListForGroup(group)
 				oldUpdate(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
-			-- also immediately run the adjusted logic for Update
-			local oldQuestTracking = app.AccountWideQuests;
-			app.AccountWideQuests = false;
-			UpdateGroups(popout.data, popout.data.g);
-			app.AccountWideQuests = oldQuestTracking;
-		else
-			UpdateGroups(popout.data, popout.data.g);
 		end
 		table.insert(app.RawData, popout.data);
 	end
