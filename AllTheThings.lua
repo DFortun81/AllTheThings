@@ -1311,7 +1311,7 @@ end
 -- Ex. 87654 (ModID 23)=> 87654.23
 local function GetGroupItemIDWithModID(group, rawItemID, rawModID)
 	if group and group.itemID then
-		if group.modID and group.modID > 1 then
+		if group.modID and group.modID > 0 then
 			return group.itemID + (group.modID / 100);
 		else
 			return group.itemID;
@@ -1333,10 +1333,12 @@ end
 local function GroupMatchesParams(group, key, value, ignoreModID)
 	if not group then return false; end
 	if key == "itemID" then
-		if ignoreModID then
+		if group.modItemID == value then
+			return true;
+		elseif ignoreModID then
 			value = GetItemIDAndModID(value);
+			return group.itemID == value;
 		end
-		return group.modItemID == value;
 	end
 	-- exact specific match for other keys
 	if group[key] == value then return true; end
@@ -2669,360 +2671,299 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	end
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if search then
-		local now = time();
-		local cache = searchCache[search];
-		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+	if not search then return nil; end
+	local now = time();
+	local cache = searchCache[search];
+	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
 
-		-- Determine if this tooltip needs more work the next time it refreshes.
-		if not paramA then paramA = ""; end
-		local working, info = false, {};
-		cache = { now, 100000000 };
-		searchCache[search] = cache;
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	if not paramA then paramA = ""; end
+	local working, info = false, {};
+	cache = { now, 100000000 };
+	searchCache[search] = cache;
 
-		-- Call to the method to search the database.
-		local group, a, b = method(paramA, paramB, ...);
-		if not group then group = {}; end
-		if a then paramA = a; end
-		if b then paramB = b; end
-		--print("Raw Search", paramA, paramB, #group);
+	-- Call to the method to search the database.
+	local group, a, b = method(paramA, paramB, ...);
+	if not group then group = {}; end
+	if a then paramA = a; end
+	if b then paramB = b; end
+	-- print("Raw Search", paramA, paramB, #group);
 
-		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
-		if paramA == "creatureID" or paramA == "encounterID" then
-			if group and #group > 0 then
-				if IsInInstance() then
-					local difficultyID = select(3, GetInstanceInfo());
-					if difficultyID and difficultyID > 0 then
-						local subgroup = {};
-						for i,j in ipairs(group) do
-							if GetRelativeDifficulty(j, difficultyID) then
-								tinsert(subgroup, j);
-							end
-						end
-						group = subgroup;
-					end
-				elseif paramA == "encounterID" then
-					local difficultyID = EJ_GetDifficulty();
-					if difficultyID and difficultyID > 0 then
-						local subgroup = {};
-						for i,j in ipairs(group) do
-							if GetRelativeDifficulty(j, difficultyID) then
-								tinsert(subgroup, j);
-							end
-						end
-						group = subgroup;
-					end
-				end
-
-				if not app.MODE_DEBUG then
-					local regroup = {};
-					if app.MODE_ACCOUNT then
-						for i,j in ipairs(group) do
-							if app.RecursiveUnobtainableFilter(j) then
-								tinsert(regroup, j);
-							end
-						end
-					else
-						for i,j in ipairs(group) do
-							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-								tinsert(regroup, j);
-							end
-						end
-					end
-					group = regroup;
-				end
-				if #group > 0 then
-					-- collect descriptions from all search groups and insert into the info for the search
-					if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
-						for i,j in ipairs(group) do
-							if j.description and j[paramA] and j[paramA] == paramB then
-								tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-							end
-						end
-					end
+	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
+	if paramA == "creatureID" or paramA == "encounterID" then
+		if group and #group > 0 then
+			if IsInInstance() then
+				local difficultyID = select(3, GetInstanceInfo());
+				if difficultyID and difficultyID > 0 then
 					local subgroup = {};
-					table.sort(group, function(a, b)
-						return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
-					end);
 					for i,j in ipairs(group) do
-						-- always include the root quest/item when it's contained
-						if j.questID or j.itemID then
+						if GetRelativeDifficulty(j, difficultyID) then
 							tinsert(subgroup, j);
-						elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
-							for k,l in ipairs(j.g) do
-								tinsert(subgroup, l);
-							end
-						else
+						end
+					end
+					group = subgroup;
+				end
+			elseif paramA == "encounterID" then
+				local difficultyID = EJ_GetDifficulty();
+				if difficultyID and difficultyID > 0 then
+					local subgroup = {};
+					for i,j in ipairs(group) do
+						if GetRelativeDifficulty(j, difficultyID) then
 							tinsert(subgroup, j);
 						end
 					end
 					group = subgroup;
 				end
 			end
-		elseif paramA == "achievementID" then
-			-- Don't do anything for things linked to maps.
-			local regroup = {};
-			local criteriaID = ...;
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
+
+			if not app.MODE_DEBUG then
+				local regroup = {};
+				if app.MODE_ACCOUNT then
+					for i,j in ipairs(group) do
+						if app.RecursiveUnobtainableFilter(j) then
+							tinsert(regroup, j);
+						end
+					end
+				else
+					for i,j in ipairs(group) do
+						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 							tinsert(regroup, j);
 						end
 					end
 				end
-			else
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
+				group = regroup;
+			end
+			if #group > 0 then
+				-- collect descriptions from all search groups and insert into the info for the search
+				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+					for i,j in ipairs(group) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 						end
 					end
 				end
-			end
-
-			group = regroup;
-		elseif paramA == "azeriteEssenceID" then
-			local regroup = {};
-			local rank = ...;
-			if app.MODE_ACCOUNT then
+				local subgroup = {};
+				table.sort(group, function(a, b)
+					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
+				end);
 				for i,j in ipairs(group) do
-					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
+					-- always include the root quest/item when it's contained
+					if j.questID or j.itemID then
+						tinsert(subgroup, j);
+					elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
+						for k,l in ipairs(j.g) do
+							tinsert(subgroup, l);
 						end
+					else
+						tinsert(subgroup, j);
 					end
 				end
-			else
-				for i,j in ipairs(group) do
-					if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
-						end
+				group = subgroup;
+			end
+		end
+	elseif paramA == "achievementID" then
+		-- Don't do anything for things linked to maps.
+		local regroup = {};
+		local criteriaID = ...;
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
 					end
 				end
 			end
-
-			group = regroup;
-		elseif paramA == "titleID" then
-			-- Don't do anything
-			local regroup = {};
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-
-			group = regroup;
-		elseif paramA == "followerID" then
-			-- Don't do anything
-			local regroup = {};
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-
-			group = regroup;
 		else
-			-- Determine if this is a cache for an item
-			local itemID, sourceID;
-			if not paramB then
-				local itemString = string.match(paramA, "item[%-?%d:]+");
-				if itemString then
-					sourceID = GetSourceID(paramA);
-					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
-					if itemID2 then
-						itemID = tonumber(itemID2);
-						paramA = "itemID";
-						paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+			for i,j in ipairs(group) do
+				if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
 					end
-					if #group > 0 then
-						for i,j in ipairs(group) do
-							if j.modItemID == paramB then
-								if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
-								end
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "azeriteEssenceID" then
+		local regroup = {};
+		local rank = ...;
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
+					end
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
+					end
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "titleID" then
+		-- Don't do anything
+		local regroup = {};
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "followerID" then
+		-- Don't do anything
+		local regroup = {};
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		end
+
+		group = regroup;
+	else
+		-- Determine if this is a cache for an item
+		local itemID, sourceID;
+		if not paramB then
+			local itemString = string.match(paramA, "item[%-?%d:]+");
+			if itemString then
+				sourceID = GetSourceID(paramA);
+				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
+				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
+				if itemID2 then
+					itemID = tonumber(itemID2);
+					paramA = "itemID";
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+				end
+				if #group > 0 then
+					for i,j in ipairs(group) do
+						if j.modItemID == paramB then
+							if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+								tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 							end
 						end
 					end
-				else
-					local kind, id = strsplit(":", paramA);
-					kind = string.lower(kind);
-					if id then id = tonumber(id); end
-					if kind == "itemid" then
-						paramA = "itemID";
-						paramB = id;
-						itemID = id;
-					elseif kind == "questid" then
-						paramA = "questID";
-						paramB = id;
-					elseif kind == "creatureid" or kind == "npcid" then
-						paramA = "creatureID";
-						paramB = id;
-					elseif kind == "achievementid" then
-						paramA = "achievementID";
-						paramB = id;
-					end
 				end
-			elseif paramA == "itemID" then
-				-- itemID should only be the itemID, not including modID
-				itemID = GetItemIDAndModID(paramB) or paramB;
+			else
+				local kind, id = strsplit(":", paramA);
+				kind = string.lower(kind);
+				if id then id = tonumber(id); end
+				if kind == "itemid" then
+					paramA = "itemID";
+					paramB = id;
+					itemID = id;
+				elseif kind == "questid" then
+					paramA = "questID";
+					paramB = id;
+				elseif kind == "creatureid" or kind == "npcid" then
+					paramA = "creatureID";
+					paramB = id;
+				elseif kind == "achievementid" then
+					paramA = "achievementID";
+					paramB = id;
+				end
 			end
+		elseif paramA == "itemID" then
+			-- itemID should only be the itemID, not including modID
+			itemID = GetItemIDAndModID(paramB) or paramB;
+		end
 
-			if itemID then
-				-- Grab the best matching source group.
-				local sourceGroup;
+		if itemID then
+			-- Grab the best matching source group.
+			local sourceGroup;
+			for i,j in ipairs(group.g or group) do
+				if j.modItemID == paramB then
+					sourceGroup = j;
+				end
+			end
+			
+			-- Match the DB group by itemID if possible otherwise
+			if not sourceGroup then
 				for i,j in ipairs(group.g or group) do
-					if j.modItemID == paramB then
+					if j.itemID == itemID then
 						sourceGroup = j;
 					end
 				end
-				
-				-- Match the DB group by itemID if possible otherwise
-				if not sourceGroup then
-					for i,j in ipairs(group.g or group) do
-						if j.itemID == itemID then
-							sourceGroup = j;
-						end
-					end
+			end
+			
+			-- Show the unobtainable source text, if necessary.
+			if sourceGroup then
+				if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
+					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 				end
 				
-				-- Show the unobtainable source text, if necessary.
-				if sourceGroup then
-					if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
-						tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
-					end
-					
-					-- Acquire the SourceID if it hadn't been determined yet.
-					if not sourceID and sourceGroup.link then
-						sourceID = GetSourceID(sourceGroup.link);
-					end
-				else
-					-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
-					sourceGroup = { ["missing"] = true };
+				-- Acquire the SourceID if it hadn't been determined yet.
+				if not sourceID and sourceGroup.link then
+					sourceID = GetSourceID(sourceGroup.link);
 				end
-				
-				if sourceID then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and (sourceInfo.quality or 0) > 1 then
-						if app.Settings:GetTooltipSetting("SharedAppearances") then
-							local text;
-							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
-								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-											local link = sourceGroup.link;
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if sourceGroup.u then
-												local texture = GetUnobtainableTexture(sourceGroup);
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
+			else
+				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
+				sourceGroup = { ["missing"] = true };
+			end
+			
+			if sourceID then
+				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+				if sourceInfo and (sourceInfo.quality or 0) > 1 then
+					if app.Settings:GetTooltipSetting("SharedAppearances") then
+						local text;
+						if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
+							-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
+							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+								if otherSourceID == sourceID and not sourceGroup.missing then
+									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										local link = sourceGroup.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if sourceGroup.u then
+											local texture = GetUnobtainableTexture(sourceGroup);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
 											else
 												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
-
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-												local link = otherATTSource.link;
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												if otherATTSource.u then
-													local texture = GetUnobtainableTexture(otherATTSource);
-													if texture then
-														text = "|T" .. texture .. ":0|t";
-													else
-														text = "   ";
-													end
-												else
-													text = "   ";
-												end
-												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 											end
 										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local link = select(2, GetItemInfo(otherSource.itemID));
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
-											end
+											text = "   ";
 										end
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
 									end
-								end
-							else
-								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-											local link = sourceGroup.link;
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if sourceGroup.u then
-												local texture = GetUnobtainableTexture(sourceGroup);
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
+								else
+									local otherATTSource = app.SearchForField("s", otherSourceID);
+									if otherATTSource then
+										otherATTSource = otherATTSource[1];
 
-											-- Show information about the appearance:
-											local failText = "";
+										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
 											local link = otherATTSource.link;
 											if not link then
 												link = RETRIEVING_DATA;
@@ -3038,495 +2979,561 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or "");
-
-											-- Show all of the reasons why an appearance does not meet given criteria.
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if sourceGroup.f ~= otherATTSource.f then
-												-- This is NOT the same type. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
-											elseif otherATTSource.nmc then
-												-- This is NOT for your class. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												-- failText = failText .. "Class Locked";
-												for i,classID in ipairs(otherATTSource.c) do
-													if i > 1 then failText = failText .. ", "; end
-													failText = failText .. (GetClassInfo(classID) or "???");
-												end
-											elseif otherATTSource.nmr then
-												-- This is NOT for your race. Therefore, no credit for you!
-												if #failText > 1 then failText = failText .. ", "; end
-												failText = failText .. L["RACE_LOCKED"];
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+										end
+									else
+										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+										if otherSource then
+											local link = select(2, GetItemInfo(otherSource.itemID));
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+											if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+										end
+									end
+								end
+							end
+						else
+							-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
+							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+								if otherSourceID == sourceID and not sourceGroup.missing then
+									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										local link = sourceGroup.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if sourceGroup.u then
+											local texture = GetUnobtainableTexture(sourceGroup);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
 											else
-												-- Should be fine
+												text = "   ";
 											end
-
-											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local link = select(2, GetItemInfo(otherSource.itemID));
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											text = "   ";
+										end
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
+									end
+								else
+									local otherATTSource = app.SearchForField("s", otherSourceID);
+									if otherATTSource then
+										otherATTSource = otherATTSource[1];
+
+										-- Show information about the appearance:
+										local failText = "";
+										local link = otherATTSource.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if otherATTSource.u then
+											local texture = GetUnobtainableTexture(otherATTSource);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
+											else
+												text = "   ";
 											end
+										else
+											text = "   ";
+										end
+										text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or "");
+
+										-- Show all of the reasons why an appearance does not meet given criteria.
+										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+										if sourceGroup.f ~= otherATTSource.f then
+											-- This is NOT the same type. Therefore, no credit for you!
+											if #failText > 0 then failText = failText .. ", "; end
+											failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
+										elseif otherATTSource.nmc then
+											-- This is NOT for your class. Therefore, no credit for you!
+											if #failText > 0 then failText = failText .. ", "; end
+											-- failText = failText .. "Class Locked";
+											for i,classID in ipairs(otherATTSource.c) do
+												if i > 1 then failText = failText .. ", "; end
+												failText = failText .. (GetClassInfo(classID) or "???");
+											end
+										elseif otherATTSource.nmr then
+											-- This is NOT for your race. Therefore, no credit for you!
+											if #failText > 1 then failText = failText .. ", "; end
+											failText = failText .. L["RACE_LOCKED"];
+										else
+											-- Should be fine
+										end
+
+										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
+										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
+									else
+										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+										if otherSource then
+											local link = select(2, GetItemInfo(otherSource.itemID));
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+											if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
 							end
 						end
-
-						if sourceGroup.missing then
-							tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
-							tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
-						end
-						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
-				end
-				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-					local specs = GetFixedItemSpecInfo(itemID);
-					-- specs is already filtered/sorted to only current class
-					if #specs > 0 then
-						local spec_label = "";
-						for key, specID in ipairs(specs) do
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-							spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-						end
-						tinsert(info, { right = spec_label });
-					elseif sourceID then
-						tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });		-- L["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot."
-					end
-				end
 
-				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
-					-- If the item is a relic, then let's compare against equipped relics.
-					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
-					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
-					if myArtifactData then
-						local progress, total = 0, 0;
-						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
-						for relicID,artifactData in pairs(myArtifactData) do
-							local infoString;
-							for relicSlotIndex,relicData in pairs(artifactData) do
-								if relicData.relicType == relicType then
-									if infoString then
-										infoString = infoString .. " | " .. relicData.iLvl;
-									else
-										infoString = relicData.iLvl;
-									end
-									total = total + 1;
-									if relicData.iLvl >= relicItemLevel then
-										progress = progress + 1;
-										infoString = infoString .. " " .. GetCompletionIcon(1);
-									else
-										infoString = infoString .. " " .. GetCompletionIcon();
-									end
+					if sourceGroup.missing then
+						tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
+						tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
+					end
+					if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
+					if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
+				end
+			end
+			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+				local specs = GetFixedItemSpecInfo(itemID);
+				-- specs is already filtered/sorted to only current class
+				if #specs > 0 then
+					local spec_label = "";
+					for key, specID in ipairs(specs) do
+						local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+						spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
+					end
+					tinsert(info, { right = spec_label });
+				elseif sourceID then
+					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });		-- L["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot."
+				end
+			end
+
+			if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+				-- If the item is a relic, then let's compare against equipped relics.
+				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+				local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
+				if myArtifactData then
+					local progress, total = 0, 0;
+					local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+					for relicID,artifactData in pairs(myArtifactData) do
+						local infoString;
+						for relicSlotIndex,relicData in pairs(artifactData) do
+							if relicData.relicType == relicType then
+								if infoString then
+									infoString = infoString .. " | " .. relicData.iLvl;
+								else
+									infoString = relicData.iLvl;
+								end
+								total = total + 1;
+								if relicData.iLvl >= relicItemLevel then
+									progress = progress + 1;
+									infoString = infoString .. " " .. GetCompletionIcon(1);
+								else
+									infoString = infoString .. " " .. GetCompletionIcon();
 								end
 							end
-							if infoString then
-								local itemLink = select(2, GetItemInfo(relicID));
-								tinsert(info, 1, {
-									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA,
-									right = L["iLvl"] .. " " .. infoString,
-								});
-							end
 						end
-						if total > 0 then
-							tinsert(group, { itemID=itemID, total=total, progress=progress});
-							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+						if infoString then
+							local itemLink = select(2, GetItemInfo(relicID));
+							tinsert(info, 1, {
+								left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA,
+								right = L["iLvl"] .. " " .. infoString,
+							});
 						end
+					end
+					if total > 0 then
+						tinsert(group, { itemID=itemID, total=total, progress=progress});
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+					end
+				else
+					tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+				end
+			end
+		end
+	end
+
+	-- Create a list of sources
+	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+		local temp = {};
+		local unfiltered = {};
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local abbrevs = L["ABBREVIATIONS"];
+		for i,j in ipairs(group.g or group) do
+			if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
+				local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
+					for source,replacement in pairs(abbrevs) do
+						text = string.gsub(text, source, replacement);
+					end
+					if j.u then
+						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+					elseif not app.RecursiveUnobtainableFilter(j.parent) then
+						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
 					else
-						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+						tinsert(temp, text);
 					end
 				end
 			end
 		end
+		if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
+			for i,j in ipairs(unfiltered) do
+				tinsert(temp, j);
+			end
+		end
+		if #temp > 0 then
+			local listing = {};
+			local maximum = app.Settings:GetTooltipSetting("Locations");
+			table.sort(temp);
+			for i,j in ipairs(temp) do
+				if not contains(listing, j) then
+					tinsert(listing, 1, j);
+				end
+			end
+			local count = #listing;
+			if count > maximum + 1 then
+				for i=count,maximum + 1,-1 do
+					table.remove(listing, 1);
+				end
+				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
+			end
+			for i,text in ipairs(listing) do
+				if text:find(RETRIEVING_DATA) then working = true; end
+				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
+				tinsert(info, 1, { left = left, right = right, wrap = wrap });
+			end
+		end
+	end
 
-		-- Create a list of sources
-		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
-			local temp = {};
-			local unfiltered = {};
-			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			local abbrevs = L["ABBREVIATIONS"];
-			for i,j in ipairs(group.g or group) do
-				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
-					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
-						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source, replacement);
-						end
-						if j.u then
-							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-						elseif not app.RecursiveUnobtainableFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-						else
-							tinsert(temp, text);
-						end
-					end
-				end
+	-- Create an unlinked version of the object.
+	if not group.g then
+		local skipped = {};
+		-- Clone all the groups so that things don't get modified in the Source
+		local cloned = {};
+		local uniques = {};
+		for i,o in ipairs(group) do
+			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
+			if not uniques[tostring(o)] then
+				uniques[tostring(o)] = true;
+				tinsert(cloned, CloneData(o));
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
-				for i,j in ipairs(unfiltered) do
-					tinsert(temp, j);
-				end
-			end
-			if #temp > 0 then
-				local listing = {};
-				local maximum = app.Settings:GetTooltipSetting("Locations");
-				table.sort(temp);
-				for i,j in ipairs(temp) do
-					if not contains(listing, j) then
-						tinsert(listing, 1, j);
+		end
+		wipe(uniques);
+		-- replace the Source references with the cloned references
+		group = cloned;
+		-- Find or Create the root group for the search results
+		local root;
+		-- print("Find Root for",paramA,paramB);
+		for i,o in ipairs(group) do
+			-- If the obj "is" the root obj
+			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
+			if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
+				-- object meets filter criteria and is exactly what is being searched
+				if app.RecursiveGroupRequirementsFilter(o) then
+					-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
+					if root then
+						local otherRoot = root;
+						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
+						root = o;
+						MergeProperties(root, otherRoot);
+					else
+						root = o;
 					end
-				end
-				local count = #listing;
-				if count > maximum + 1 then
-					for i=count,maximum + 1,-1 do
-						table.remove(listing, 1);
-					end
-					tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
-				end
-				for i,text in ipairs(listing) do
-					if text:find(RETRIEVING_DATA) then working = true; end
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
-					tinsert(info, 1, { left = left, right = right, wrap = wrap });
+				else
+					-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+					if not root then root = o
+					else MergeProperties(root, o); end
 				end
 			end
 		end
-
-		-- Create an unlinked version of the object.
-		if not group.g then
-			local skipped = {};
-			-- Clone all the groups so that things don't get modified in the Source
-			local cloned = {};
-			local uniques = {};
-			for i,o in ipairs(group) do
-				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if not uniques[tostring(o)] then
-					uniques[tostring(o)] = true;
-					tinsert(cloned, CloneData(o));
+		if not root then
+			-- print("Create New Root")
+			root = CreateObject({ [paramA] = paramB });
+		end
+		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
+		paramA, paramB = root.key, root[root.key];
+		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
+		if paramA == "itemID" then
+			paramB = root.modItemID or paramB;
+		end
+		-- print("Root",root.key,root[root.key],root.modItemID);
+		-- print("Root Collect",root.collectible,root.collected);
+		-- print("params",paramA,paramB);
+		if not root.g then root.g = {}; end
+		-- Loop through all obj found for this search
+		-- print(#group,"Search total");
+		for i,o in ipairs(group) do
+			-- If the obj "is" the root obj via bi-directional key
+			-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
+				MergeProperties(root, o);
+				-- Merge the g of the obj into the merged results
+				if o.g then
+					-- print("Merge root g",#o.g,o.key,o[o.key])
+					MergeObjects(root.g, o.g);
 				end
-			end
-			wipe(uniques);
-			-- replace the Source references with the cloned references
-			group = cloned;
-			-- Find or Create the root group for the search results
-			local root;
-			-- print("Find Root for",paramA,paramB);
-			for i,o in ipairs(group) do
-				-- If the obj "is" the root obj
-				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
-					-- object meets filter criteria and is exactly what is being searched
-					if app.RecursiveGroupRequirementsFilter(o) then
-						-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
-						if root then
-							local otherRoot = root;
-							-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
-							root = o;
-							MergeProperties(root, otherRoot);
-						else
-							root = o;
-						end
-					else
-						-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
-						if not root then root = o
-						else MergeProperties(root, o); end
-					end
-				end
-			end
-			if not root then root = CreateObject({ [paramA] = paramB }); end
-			-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
-			paramA, paramB = root.key, root[root.key];
-			-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-			if paramA == "itemID" then
-				paramB = root.modItemID or paramB;
-			end
-			-- print("Root",root.key,root[root.key],root.modItemID);
-			-- print("Root Collect",root.collectible,root.collected);
-			-- print("params",paramA,paramB);
-			if not root.g then root.g = {}; end
-			-- Loop through all obj found for this search
-			-- print(#group,"Search total");
-			for i,o in ipairs(group) do
-				-- If the obj "is" the root obj via bi-directional key
-				-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-					-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
-					MergeProperties(root, o);
-					-- Merge the g of the obj into the merged results
-					if o.g then
-						-- print("Merge root g",#o.g,o.key,o[o.key])
-						MergeObjects(root.g, o.g);
-					end
+			-- otherwise
+			else
+				-- If the obj meets the recursive group filter
+				if app.RecursiveGroupRequirementsFilter(o) then
+					-- Merge the obj into the merged results
+					-- print("Merge object",o.key,o[o.key])
+					MergeObject(root.g, o);
 				-- otherwise
 				else
-					-- If the obj meets the recursive group filter
-					if app.RecursiveGroupRequirementsFilter(o) then
-						-- Merge the obj into the merged results
-						-- print("Merge object",o.key,o[o.key])
-						MergeObject(root.g, o);
-					-- otherwise
-					else
-						-- Add to the set of skipped objects
-						-- print("Skip",o.key,o[o.key])
-						tinsert(skipped, o);
-					end
+					-- Add to the set of skipped objects
+					-- print("Skip",o.key,o[o.key])
+					tinsert(skipped, o);
 				end
-				-- print(#root.g,"Merge total");
 			end
-			-- Loop through all skipped objects
-			for i,o in ipairs(skipped) do
-				-- Merge the obj into the merged results
-				-- print("Merge skip",o.key,o[o.key])
+			-- print(#root.g,"Merge total");
+		end
+		-- Loop through all skipped objects
+		for i,o in ipairs(skipped) do
+			-- Merge the obj into the merged results
+			-- print("Merge skip",o.key,o[o.key])
+			MergeObject(root.g, o);
+		end
+		-- Resolve symbolic links for the root
+		-- print("Resolve Root",root.key,root[root.key])
+		local rootResolved = ResolveSymbolicLink(root);
+		if rootResolved then
+			-- print("Has symbolic")
+			root.symbolized = true;
+			for k,o in pairs(rootResolved) do
 				MergeObject(root.g, o);
 			end
-			-- Resolve symbolic links for the root
-			-- print("Resolve Root",root.key,root[root.key])
-			local rootResolved = ResolveSymbolicLink(root);
-			if rootResolved then
+		end
+		-- Resolve symbolic links within the Root
+		for i,o in ipairs(root.g) do
+			-- print("Resolve",o.key,o[o.key],o.sym)
+			local symbolicLink = ResolveSymbolicLink(o);
+			if symbolicLink then
 				-- print("Has symbolic")
-				root.symbolized = true;
-				for k,o in pairs(rootResolved) do
-					MergeObject(root.g, o);
-				end
-			end
-			-- Resolve symbolic links within the Root
-			for i,o in ipairs(root.g) do
-				-- print("Resolve",o.key,o[o.key],o.sym)
-				local symbolicLink = ResolveSymbolicLink(o);
-				if symbolicLink then
-					-- print("Has symbolic")
-					o.symbolized = true;
-					if o.g and #o.g >= 0 then
-						for j=1,#symbolicLink,1 do
-							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-							MergeObject(o.g, symbolicLink[j]);
-						end
-					else
-						o.g = symbolicLink;
+				o.symbolized = true;
+				if o.g and #o.g >= 0 then
+					for j=1,#symbolicLink,1 do
+						-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
+						MergeObject(o.g, symbolicLink[j]);
 					end
-					-- print("o.g",o.g and #o.g)
+				else
+					o.g = symbolicLink;
 				end
+				-- print("o.g",o.g and #o.g)
 			end
-			-- Single group which matches the root, then collapse it
-			if #root.g == 1 then
-				local o = root.g[1];
-				-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-				-- TODO: find an example which tests this... may not be possible with above logic
-				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-					-- print("Single group")
-					root = o;
-				end
-			end
-
-			-- Replace as the group
-			group = root;
-			-- print(group.g and #group.g,"Merge total");
-			-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
-
-			-- Special cases
-			-- Don't show nested criteria of achievements
-			if group.g and group.key == "achievementID" then
-				local noCrits = {};
-				-- print("achieve group",#group.g)
-				for i=1,#group.g do
-					if group.g[i].key ~= "criteriaID" then
-						tinsert(noCrits, group.g[i]);
-					end
-				end
-				group.g = noCrits;
-				-- print("achieve nocrits",#group.g)
-			end
-
-			-- Append any crafted things using this group
-			app.BuildCrafted(group);
-
-			-- Expand any things requiring this group
-			app.ExpandSubGroups(group);
-
-			-- Append currency info to any orphan currency groups
-			app.BuildCurrencies(group);
-
-			group.total = 0;
-			group.progress = 0;
-			group.parent = nil;
-			BuildGroups(group, group.g, true);
-			app.UpdateGroups(group, group.g);
-			if group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
+		end
+		-- Single group which matches the root, then collapse it
+		if #root.g == 1 then
+			local o = root.g[1];
+			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+			-- TODO: find an example which tests this... may not be possible with above logic
+			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+				-- print("Single group")
+				root = o;
 			end
 		end
 
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
-			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
-		end
+		-- Replace as the group
+		group = root;
+		-- print(group.g and #group.g,"Merge total");
+		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
 
-		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
-		end
-
-		if paramA == "itemID" and paramB == 137642 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });		--L["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
-			end
-		end
-
-		-- an item used for a faction which is repeatable
-		if group.itemID and group.factionID and group.repeatable then
-			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
-		end
-
-		local collectionData;
-		if group.g and #group.g > 0 then
-			--[[
-			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
-				for i,j in ipairs(group.g) do
-					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
-						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-					end
+		-- Special cases
+		-- Don't show nested criteria of achievements
+		if group.g and group.key == "achievementID" then
+			local noCrits = {};
+			-- print("achieve group",#group.g)
+			for i=1,#group.g do
+				if group.g[i].key ~= "criteriaID" then
+					tinsert(noCrits, group.g[i]);
 				end
 			end
-			]]--
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				local entries, left, right = {};
-				-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
-				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				-- app.DEBUG_PRINT = nil;
-				if #entries > 0 then
-					-- print("#entries",#entries);
-					tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
-					local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
-					for i=1,containCount do
-						item = entries[i];
-						group = item.group;
-						left = group.text or RETRIEVING_DATA;
-						if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-						if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
-
-						-- If this group has specialization requirements, let's attempt to show the specialization icons.
-						right = item.right;
-						local specs = group.specs;
-						if specs and #specs > 0 then
-							for i,spec in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-								right = "|T" .. icon .. ":0|t " .. right;
-							end
-						end
-						-- If this group has customCollect requirements, list them for clarity
-						if group.customCollect then
-							for i,c in ipairs(group.customCollect) do
-								if i > 1 then
-									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
-								else
-									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
-								end
-							end
-						end
-						-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-						if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
-							-- Add the Zone name
-							local field, id;
-							for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
-								if not field then
-									id = app.RecursiveFirstParentWithField(group, v);
-									-- print("check",v,id)
-									if id then field = v; end
-								end
-							end
-							-- convert maps to a MapID
-							if field == "maps" then
-								field = "mapID";
-								id = id[1];
-							end
-							local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
-							local locationName = locationGroup and (locationGroup.name or locationGroup.text);
-							-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
-							if locationName then
-								-- Add the immediate parent group Vendor name
-								local parent = group.parent;
-								if parent and paramB ~= parent[parent.key] and parent.name then
-									right = locationName .. " > " .. parent.name .. " " .. right;
-								else
-									right = locationName .. " " .. right;
-								end
-							end
-						end
-						tinsert(info, { left = item.prefix .. left, right = right });
-					end
-					if #entries - containCount > 0 then
-						tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
-					end
-				end
-			end
+			group.g = noCrits;
+			-- print("achieve nocrits",#group.g)
 		end
 
-		-- If the item is a recipe, then show which characters know this recipe.
-		if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
-			for key,value in pairs(recipes) do
-				if value[group.spellID] then
-					table.insert(knownBy, key);
-				end
-			end
-			if #knownBy > 0 then
-				table.sort(knownBy);
-				local desc = L["KNOWN_BY"];
-				local characters = GetDataMember("Characters");
-				for i,key in ipairs(knownBy) do
-					if i > 1 then desc = desc .. ", "; end
-					desc = desc .. (characters[key] or key);
-				end
-				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
-			end
-		end
+		-- Append any crafted things using this group
+		app.BuildCrafted(group);
 
-		-- If the user wants to show the progress of this search result, do so.
-		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(collectionData or group);
-		end
+		-- Expand any things requiring this group
+		app.ExpandSubGroups(group);
 
-		-- If there was any informational text generated, then attach that info.
-		if #info > 0 then
-			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-			-- putting this back due to descriptions, ugh
-			local uniques, dupes = {}, {};
-			for i,item in ipairs(info) do
-				if not item.left then
-					tinsert(uniques, item);
-				elseif not dupes[item.left] then
-					dupes[item.left] = true;
-					tinsert(uniques, item);
-				end
-			end
+		-- Append currency info to any orphan currency groups
+		app.BuildCurrencies(group);
 
-			group.info = uniques;
-			for i,item in ipairs(uniques) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		group.total = 0;
+		group.progress = 0;
+		group.parent = nil;
+		BuildGroups(group, group.g, true);
+		app.UpdateGroups(group, group.g);
+		if group.collectible then
+			group.total = group.total + 1;
+			if group.collected then
+				group.progress = group.progress + 1;
 			end
 		end
-
-		-- Cache the result for a while depending on if there is more work to be done.
-		group.working = working;
-		cache[2] = (working and 0.01) or 100000000;
-		cache[3] = group;
-		return group;
 	end
+
+	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
+		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+	end
+
+	if group.isLimited then
+		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
+	end
+
+	if paramA == "itemID" and paramB == 137642 then
+		if app.Settings:GetTooltipSetting("SummarizeThings") then
+			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });		--L["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
+		end
+	end
+
+	-- an item used for a faction which is repeatable
+	if group.itemID and group.factionID and group.repeatable then
+		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
+	end
+
+	local collectionData;
+	if group.g and #group.g > 0 then
+		--[[
+		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
+			for i,j in ipairs(group.g) do
+				if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
+					tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+				end
+			end
+		end
+		]]--
+		if app.Settings:GetTooltipSetting("SummarizeThings") then
+			local entries, left, right = {};
+			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
+			collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			-- app.DEBUG_PRINT = nil;
+			if #entries > 0 then
+				-- print("#entries",#entries);
+				tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
+				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				for i=1,containCount do
+					item = entries[i];
+					group = item.group;
+					left = group.text or RETRIEVING_DATA;
+					if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
+
+					-- If this group has specialization requirements, let's attempt to show the specialization icons.
+					right = item.right;
+					local specs = group.specs;
+					if specs and #specs > 0 then
+						for i,spec in ipairs(specs) do
+							local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+							right = "|T" .. icon .. ":0|t " .. right;
+						end
+					end
+					-- If this group has customCollect requirements, list them for clarity
+					if group.customCollect then
+						for i,c in ipairs(group.customCollect) do
+							if i > 1 then
+								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+							else
+								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
+							end
+						end
+					end
+					-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+					if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
+						-- Add the Zone name
+						local field, id;
+						for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
+							if not field then
+								id = app.RecursiveFirstParentWithField(group, v);
+								-- print("check",v,id)
+								if id then field = v; end
+							end
+						end
+						-- convert maps to a MapID
+						if field == "maps" then
+							field = "mapID";
+							id = id[1];
+						end
+						local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
+						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
+						if locationName then
+							-- Add the immediate parent group Vendor name
+							local parent = group.parent;
+							if parent and paramB ~= parent[parent.key] and parent.name then
+								right = locationName .. " > " .. parent.name .. " " .. right;
+							else
+								right = locationName .. " " .. right;
+							end
+						end
+					end
+					tinsert(info, { left = item.prefix .. left, right = right });
+				end
+				if #entries - containCount > 0 then
+					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
+				end
+			end
+		end
+	end
+
+	-- If the item is a recipe, then show which characters know this recipe.
+	if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+		local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
+		for key,value in pairs(recipes) do
+			if value[group.spellID] then
+				table.insert(knownBy, key);
+			end
+		end
+		if #knownBy > 0 then
+			table.sort(knownBy);
+			local desc = L["KNOWN_BY"];
+			local characters = GetDataMember("Characters");
+			for i,key in ipairs(knownBy) do
+				if i > 1 then desc = desc .. ", "; end
+				desc = desc .. (characters[key] or key);
+			end
+			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
+		end
+	end
+
+	-- print("Info for tooltip")
+	-- app.PrintTable(group)
+	-- print(group.collectible,group.collected,group.spellID,info and #info)
+	-- If the user wants to show the progress of this search result, do so.
+	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(collectionData or group);
+	end
+
+	-- If there was any informational text generated, then attach that info.
+	if #info > 0 then
+		-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
+		-- putting this back due to descriptions, ugh
+		local uniques, dupes = {}, {};
+		for i,item in ipairs(info) do
+			if not item.left then
+				tinsert(uniques, item);
+			elseif not dupes[item.left] then
+				dupes[item.left] = true;
+				tinsert(uniques, item);
+			end
+		end
+
+		group.info = uniques;
+		for i,item in ipairs(uniques) do
+			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		end
+	end
+
+	-- Cache the result for a while depending on if there is more work to be done.
+	group.working = working;
+	cache[2] = (working and 0.01) or 100000000;
+	cache[3] = group;
+	return group;
 end
 app.BuildCrafted_IncludedItems = {};
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
@@ -4151,16 +4158,17 @@ local function SearchForLink(link)
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
 					_ = SearchForField("s", sourceID);
+					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					-- print("SEARCHING FOR ITEM LINK ", link, itemID);
 					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
+					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
 				end
 				
 				-- Merge together the cost search results as well.
 				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
+				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
@@ -11032,10 +11040,12 @@ function app:CreateMiniListForGroup(group)
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 			if sourceInfo then
+				-- print("Source Info on popout")
+				-- app.PrintTable(sourceInfo)
 				-- Show a list of all of the Shared Appearances.
 				local g = {};
 
-				-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
 					if otherSourceID ~= group.s then
