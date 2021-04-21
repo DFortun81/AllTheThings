@@ -19,11 +19,12 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	n(-10100, {	-- Shadowlands
+	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item wont be added, please put it into the correct section
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
 		-- Gear
+		i(183973),	-- Lost winged ritual kris
 		i(171401),	-- Phaeweald Rapier
 		i(175999),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
 		i(176002),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
@@ -126,7 +127,7 @@ _.NeverImplemented =
 			["classes"] = { PRIEST, MAGE, WARLOCK },
 		}),
 	}),
-	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
+	n(-10052, {	-- BFA 
 
 		i(159165),	-- Ashvane Company Bracers
 		i(159159),	-- Ashvane Company Gauntlets
