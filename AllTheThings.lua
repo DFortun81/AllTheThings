@@ -5204,27 +5204,31 @@ function app.GetQuestsForNPC(self, npc_id)
 	local group = {}
 
 	if (npcQuestsCache[npc_id]) then
-		group = npcQuestsCache[npc_id]
+		return npcQuestsCache[npc_id]
 	else
 		group, _, _ = app.SearchForField("creatureID", npc_id);
-		if not group then return false; end
-		npcQuestsCache[npc_id] = group
-	end
-
-	local regroup = {};
-	for i,j in ipairs(group) do
-		if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-			tinsert(regroup, j);
+		if not group then 
+			npcQuestsCache[npc_id] = false; 
+			return false;
 		end
-	end
 
-	for i,v in pairs(regroup) do
-		if (v["visible"] ~= nil and v["visible"] == true) then
-			return true;
+		local regroup = {};
+		for i,j in ipairs(group) do
+			if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+				tinsert(regroup, j);
+			end
 		end
-	end
 
-	return false
+		for i,v in pairs(regroup) do
+			if (v["visible"] ~= nil and v["visible"] == true) then
+				npcQuestsCache[npc_id] = true;
+				return true;
+			end
+		end
+
+		npcQuestsCache[npc_id] = false; 
+		return false;
+	end
 end
 -- ARP End
 
