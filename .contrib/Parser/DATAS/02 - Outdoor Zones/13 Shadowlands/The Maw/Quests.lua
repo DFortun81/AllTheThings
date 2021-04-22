@@ -937,6 +937,13 @@ _.Zones =
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, 1961 },	-- Korthia
 				}),
+				q(63763, {	-- They Could Be Anyone
+				--	TODO: verify that quest still exists on live.  all quest text lines are listed as "DEPRECATED" atm and there's another newer quest where you learn the nathrezim are in korthia
+					["sourceQuests"] = { 63762 },	-- Under the Illusion
+					["provider"] = { "i", 185740 },	-- Head of Azodius
+					["coord"] = { 56.5, 17.4, 1961 },	-- Korthia
+					["crs"] = { 177243 },	-- Azodius
+				}),
 				q(63714, {	-- To the Vault
 					["sourceQuests"] = { 63713 },	-- Hooking Over
 					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
@@ -1015,6 +1022,7 @@ _.Zones =
 				}),
 				
 				-- Korthia Daily
+				i(186017),	-- Korthium - TODO: item is marked WIP, itemID may change.  rewarded by some dailies but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(63783, {	-- Anima Reclaimation
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -1148,15 +1156,27 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.7, 27.9, 1961 },	-- Korthia
 				}),
+				q(64040, {	-- Patching Up the Troops
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179194 },	-- Kleia
+					["isDaily"] = true,
+					["coord"] = { 61.6, 24.1, 1961 },	-- Korthia
+				}),
 				q(63935, {	-- Precious Roots
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 60.9, 21.3, 1961 },
+				--	["provider"] = { "n",  },	-- TODO: add provider
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, 1961 },	-- Korthia
 					["g"] = {
 					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
 						i(185886),	-- Korthian Caretaker's Shoulderpads
 					},
+				}),
+				q(63777, {	-- Sealed Lockboxes
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
 				q(63955, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -1181,10 +1201,6 @@ _.Zones =
 					["provider"] = { "n", 178837 },	-- Lord Herne
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, 1961 },	-- Korthia
-					["g"] = {
-					--	TODO: unsure if this reward is static/if it should be linked here
-						i(186017),	-- Progenian Fragment
-					},
 				}),
 				q(63786, {	-- Sweep the Windswept Aerie
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

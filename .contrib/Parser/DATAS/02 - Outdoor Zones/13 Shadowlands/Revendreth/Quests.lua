@@ -882,7 +882,24 @@ _.Zones =
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
 				q(63646, {	-- Convoy of the Covenants
 				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
+				--	is this part of the questline Venthyr-only?  like maybe after 'Victory in Our Name' does the questline diverge into covenant-specific campaign quests?
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
+				}),
+				q(63651, {	-- Cryptograms
+				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
+				--	move to sinfall @ live
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 178260 },	-- The Stonewright
+					["coord"] = { 54.6, 40.3, 1699 },	-- Sinfall Reaches
+				}),
+				q(63650, {	-- De-Infiltration
+				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it takes you to Sinfall
+					["sourceQuests"] = {
+						63648,	-- Nal'ragas
+						63649,	-- Spy vs Spy
+					},
+					["provider"] = { "n", 177644 },	-- Prince Renathal
+					["coord"] = { 25.0, 27.9, 1525 },	-- Revendreth
 				}),
 				q(63648, {	-- Nal'ragas
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
@@ -893,6 +910,13 @@ _.Zones =
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177637 },	-- Baroness Vashj
 					["coord"] = { 36.0, 22.4, 1525 },
+				}),
+				q(63652, {	-- The "Unwelcome" Guests
+				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
+				--	move to sinfall @ live
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
 				}),
 				q(63647, {	-- The Unseen Guests
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
