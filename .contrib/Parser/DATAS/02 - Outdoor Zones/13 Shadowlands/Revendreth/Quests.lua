@@ -880,6 +880,12 @@ _.Zones =
 				})),
 				
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
+				q(63655, {	-- "NYI Medallion of Wrath"
+				--	TODO: this quest may change, its name/contents are clearly a WIP
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 178413 },	-- Prince Renathal
+					["coord"] = { 23.0, 45.8, 1525 },	-- Revendreth
+				}),
 				q(63646, {	-- Convoy of the Covenants
 				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
 				--	is this part of the questline Venthyr-only?  like maybe after 'Victory in Our Name' does the questline diverge into covenant-specific campaign quests?
@@ -917,6 +923,21 @@ _.Zones =
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
 					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(63654, {	-- The Nathrezim
+					["sourceQuests"] = { 63653 },	-- The Power of a Crown
+					["provider"] = { "n", 178337 },	-- The Stonewright
+					["coord"] = { 25.2, 45.1, 1525 },	-- Revendreth
+				}),
+				q(63653, {	-- The Power of a Crown
+					["sourceQuests"] = {
+					--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
+					--	move to sinfall @ live
+						63651,	-- Cryptograms
+						63652,	-- The "Unwelcome Guests",
+					},
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
 				}),
 				q(63647, {	-- The Unseen Guests
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
