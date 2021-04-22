@@ -5177,11 +5177,9 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 
--- ARP begin
-
 npcQuestsCache = {}
 
-function app.GetQuestsForNPC(self, npc_id)
+function app.IsNPCQuestGiver(self, npc_id)
 	local group = {}
 
 	if (npcQuestsCache[npc_id]) then
@@ -5211,7 +5209,6 @@ function app.GetQuestsForNPC(self, npc_id)
 		return false;
 	end
 end
--- ARP End
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
@@ -9042,7 +9039,7 @@ local function RefreshQuestCompletionState(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
-	wipe(npcQuestsCache) -- ARP
+	wipe(npcQuestsCache) 
 end
 
 -- Recipe Lib
