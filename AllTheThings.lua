@@ -6178,7 +6178,7 @@ local fields = {
 				return a.deaths > b.deaths;
 			end);
 			for i,data in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. string.gsub(data.name, "-" .. GetRealmName(), ""), data.deaths, 1, 1, 1);
 			end
 		end
 	end,
