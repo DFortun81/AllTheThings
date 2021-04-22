@@ -17,6 +17,9 @@ _.Zones =
 						crit(2, {	-- Maw Walkers
 							["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 						}),
+						crit(4, {	-- An Army of Bone and Steel
+							["sourceQuests"] = { 63622 },	-- Victory in Our Name
+						}),
 					},
 				}),
 				ach(14761, {	-- Deciphering Death's Intentions
@@ -101,6 +104,7 @@ _.Zones =
 						174129,	-- Agonized Soul
 						175897,	-- Aimless Soul
 						174182,	-- Caged Soul
+						178270,	-- Helya's Grasp (for Imprisoned Soul)
 						176149,	-- Imprisoned Soul
 						175910,	-- Scavenged Soul
 						176145,	-- Stone Prison (for Imprisoned Souls)

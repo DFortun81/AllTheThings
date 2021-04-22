@@ -7,6 +7,15 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
 			n(ACHIEVEMENTS, {
+				ach(14961, {	-- Chains of Domination
+				--	TODO: this quest is picked up in runecarver's oubliette, which is technically torghast, but it might make more sense to list it in Korthia for visibility?
+					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- The Last Sigil
+							["sourceQuests"] = { 63727 },	-- The Primus Returns (technically in Torghast/Runecarver's Oubliette)
+						}),
+					},
+				}),
 				ach(14795, {	-- Clearing the Fog
 					ach(14759),	-- It's Coming Back to Me...
 					ach(14760),	-- Recollection Collection

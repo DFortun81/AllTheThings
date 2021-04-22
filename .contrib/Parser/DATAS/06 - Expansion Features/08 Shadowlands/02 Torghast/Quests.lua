@@ -278,6 +278,18 @@ _.ExpansionFeatures =
 				}),
 				]]--
 				
+				-- 9.1 PTR QUESTS -- TODO: SORT ON LIVE
+				q(63727, {	-- The Primus Returns
+				--	TODO: maybe move to korthia for visibility?
+					["sourceQuests"] = { 63726 },	-- Untangling the Sigil
+					["provider"] = { "n", 177569 },	-- The Primus
+					["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
+					["g"] = {
+						i(185965, {	-- Memories of Sunless Skies
+							["questID"] = 63893,	-- quest may need to be moved to HQT if the item can only be used once per account
+						}),
+					},
+				}),
 				
 				-- Bonus Quests
 				q(61259, {	-- Ayeleth's Hunger

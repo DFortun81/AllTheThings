@@ -638,6 +638,14 @@ _.Zones =
 					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(63616, {	-- A Job Done Right
+					["sourceQuests"] = {
+						63615,	-- Clip Their Wings
+						63614,	-- Weapon in Hand
+						63613,	-- What We Wish to Be
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 63855 },	-- Ease of Passage
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
@@ -647,6 +655,12 @@ _.Zones =
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 62.7, 24.8, 1961 },	-- Korthia
+				}),
+				q(63620, {	-- A Traitor's Due
+					["sourceQuests"] = {
+						63619,	-- Forsworn and Forgotten
+						63618,	-- What Maldraxxus Does Best
+					},
 				}),
 				q(64106, {	-- A Unified Effort
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants (technically available before turning in, but you have to do the quest and be ready to turn it in before Bolvar is in Korthia)
@@ -666,10 +680,20 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, 1543 },
 				}),
+				q(63617, {	-- Bending Bars
+					["sourceQuests"] = { 63616 },	-- A Job Done Right
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 68.6, 52.9, 1543 },	-- The Maw
+				}),
 				q(63810, {	-- Birds of a Feather
 					["sourceQuests"] = { 63849 },	-- Hearing Aid
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
-					["coord"] = { 64.3, 50.6, 1543 },
+					["coord"] = { 64.3, 50.6, 1543 },	-- The Maw
+				}),
+				q(63711, {	-- Bone Tools
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, 1961 },	-- Korthia
 				}),
 				q(63733, {	-- Carving Out a Path
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
@@ -682,6 +706,11 @@ _.Zones =
 					["coord"] = { 67.0, 55.9, 1543 },
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(63615, {	-- Clip Their Wings
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, 1543 },	-- The Maw
+				}),
 				q(63740, {	-- Consulting the Experts
 					["sourceQuests"] = {
 						63733,	-- Carving Out a Path
@@ -689,6 +718,21 @@ _.Zones =
 					},
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, 1961 },	-- Korthia
+				}),
+				q(63717, {	-- Defending the Vault
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
+					["coord"] = { 49.5, 65.0, 1961 },	-- Korthia
+				}),
+				q(63644, {	-- Dread Tidings
+					["sourceQuests"] = { 63659 },	-- Dreadlords!
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.0, 25.3, 1961 },	-- Korthia
+				}),
+				q(63659, {	-- Dreadlords!
+					["sourceQuests"] = { 63622 },	-- Victory in Our Name
+					["provider"] = { "n", 177167 },	-- Baroness Vashj
+					["coord"] = { 65.0, 23.0, 1961 },	-- Korthia
 				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
@@ -718,6 +762,11 @@ _.Zones =
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 37.4, 27.0, 1543 },
 				}),
+				q(63619, {	-- Forsworn and Forgotten
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
+					["coord"] = { 65.5, 46.1, 1543 },	-- The Maw
+				}),
 				q(63831, {	-- Fury Given Voice
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
@@ -739,6 +788,14 @@ _.Zones =
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 61.6, 59.0, 1543 },
 				}),
+				q(63713, {	-- Hooking Over
+					["sourceQuests"] = {
+						63711,	-- Bone Tools
+						63712,	-- Lost Records
+					},
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, 1961 },	-- Korthia
+				}),
 				q(63739, {	-- Hope Ascending
 					["sourceQuests"] = {
 						63736,	-- An Infusion of Anima
@@ -753,10 +810,28 @@ _.Zones =
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 					["coord"] = { 59.0, 58.1, 1961 },	-- Korthia
 				}),
+				q(63725, {	-- Into the Vault
+					["sourceQuests"] = {
+						63717,	-- Defending the Vault
+						63722,	-- Keepers of Korthia
+					},
+					["provider"] = { "n", 178676 },	-- Tal-Galan
+					["coord"] = { 50.2, 75.7, 1961 },	-- Korthia
+				}),
+				q(63722, {	-- Keepers of Korthia
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
+					["coord"] = { 49.5, 65.0, 1961 },	-- Korthia
+				}),
 				q(63663, {	-- Korthia, the City of Secrets
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 					["provider"] = { "n", 177202 },	-- Ve'nari
 					["coord"] = { 58.3, 14.3, 1961 },	-- Korthia
+				}),
+				q(63706, {	-- Let the Anima Flow
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
+					["coord"] = { 57.2, 29.8, 1961 },	-- Korthia
 				}),
 				q(63757, {	-- Looting the Looters
 				--	TODO: verify SQ.  i had already killed a ton of mobs so i think it is dependent on turning this in, but you may also need to have picked up "the last place you look" and "rescued from torment"
@@ -765,6 +840,11 @@ _.Zones =
 					["provider"] = { "i", 185915 },	-- Korthian Artifact
 				--	["crs"] = {  },	-- 
 				}),
+				q(63712, {	-- Lost Records
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
+					["coord"] = { 34.9, 35.3, 1961 },	-- Korthia
+				}),
 				q(64014, {	-- Mawsplaining
 					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
 					["provider"] = { "n", 177726 },	-- Odyn
@@ -772,7 +852,7 @@ _.Zones =
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63662, {	-- Mysteries of the Maw
-					["sourceQuests"] = { 63611 },	-- Link to the Maw
+					["sourceQuests"] = { 63661 },	-- Link to the Maw
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, 1543 },
 				}),
@@ -799,21 +879,53 @@ _.Zones =
 					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
 					["coord"] = { 55.6, 22.2, 1961 },	-- Korthia
 				}),
+				q(63709, {	-- Secrets of the Vault
+					["sourceQuests"] = {
+						63706,	-- Let the Anima Flow
+						63705,	-- The Knowledge Keepers
+						63704,	-- Vengeance for Korthia
+					},
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, 1961 },	-- Korthia
+				}),
+				q(64193, {	-- Table of Discontent
+				--	["sourceQuests"] = {  },	-- TODO, unknown, implemented 4/21 on PTR.  definitely requires Korthia unlock, may require specific rep level (i was at 2775 Friendly)
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 63.3, 21.3, 1961 },	-- Korthia
+					["g"] = {
+						i(186470),	-- Recipe: Prestigious Crafter's Mark
+					},
+				}),
 				q(63896, {	-- Tears of the Damned
 					["sourceQuests"] = { 64014 },	-- Mawsplaining
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, 1543 },
+				}),
+				q(63710, {	-- The Anima Trail
+					["sourceQuests"] = { 63709 },	-- Secrets of the Vault
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, 1961 },	-- Korthia
 				}),
 				q(63754, {	-- The Caged Bird
 					["sourceQuests"] = { 63810 },	-- Birds of a Feather
 					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
 					["coord"] = { 67.2, 55.7, 1543 },
 				}),
+				q(63612, {	-- The Chains of Command
+					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.1, 25.3, 1961 },	-- Korthia
+				}),
 				q(63844, {	-- The Chosen Few
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63705, {	-- The Knowledge Keepers
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, 1961 },	-- Korthia
 				}),
 				q(63758, {	-- The Last Place You Look
 					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
@@ -825,10 +937,51 @@ _.Zones =
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, 1961 },	-- Korthia
 				}),
+				q(63714, {	-- To the Vault
+					["sourceQuests"] = { 63713 },	-- Hooking Over
+					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
+					["coord"] = { 34.9, 35.3, 1961 },	-- Korthia
+				}),
 				q(63762, {	-- Under the Illusion
 					["sourceQuests"] = { 63760 },	-- Echoes of Fate
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.5, 17.4, 1961 },	-- Korthia
+				}),
+				q(63726, {	-- Untangling the Sigil
+					["sourceQuests"] = { 63725 },	-- Into the Vault
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.0, 25.6, 1961 },	-- Korthia
+				}),
+				q(63703, {	-- Vault of Secrets
+				--	this is a 'campaign' quest (special '!' icon) but i'm not sure if this is the correct SQ, needs verification.  showed up on 4/21 on PTR randomly so probably wasn't implemented prior to that
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["coord"] = { 63.0, 24.8, 1961 },	-- Korthia
+				}),
+				q(63704, {	-- Vengeance for Korthia
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, 1961 },	-- Korthia
+				}),
+				q(63622, {	-- Victory in Our Name
+					["sourceQuests"] = { 63620 },	-- A Traitor's Due
+					["provider"] = { "n", 178103 },	-- Baroness Draka
+					["coord"] = { 62.0, 41.6, 1543 },	-- The Maw
+				}),
+				q(63614, {	-- Weapon in Hand
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177589 },	-- Thrall
+					["coord"] = { 62.8, 66.0, 1543 },	-- The Maw
+				}),
+				q(63618, {	-- What Maldraxxus Does Best
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 65.2, 48.4, 1543 },	-- The Maw
+				}),
+				q(63613, {	-- What We Wish to Be
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177560 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, 1543 },	-- The Maw
 				}),
 				q(63994, {	-- Who is the Maw Walker?
 					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
@@ -947,6 +1100,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
+				q(63958, {	-- Encrypted Databanks
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
 				q(63960, {	-- Encrypted Databanks
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -999,11 +1158,23 @@ _.Zones =
 						i(185886),	-- Korthian Caretaker's Shoulderpads
 					},
 				}),
+				q(63955, {	-- Sealed Lockboxes
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
 				q(63780, {	-- See How THEY Like It!
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178838 },	-- Lady Moonberry
 					["isDaily"] = true,
 					["coord"] = { 61.2, 21.2, 1961 },	-- Korthia
+				}),
+				q(63965, {	-- Slitherwing Egg Rescue
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178839 },	-- Dreamweaver
+					["isDaily"] = true,
+					["coord"] = { 61.4, 21.4, 1961 },	-- Korthia
 				}),
 				q(63950, {	-- Slitherwing Talons
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -1033,6 +1204,12 @@ _.Zones =
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, 1961 },	-- Korthia
+				}),
+				q(64104, {	-- Think of the Critters
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178839 },	-- Dreamweaver
+					["isDaily"] = true,
+					["coord"] = { 61.4, 21.4, 1961 },	-- Korthia
 				}),
 				q(64043, {	-- We Need a Healer - You!
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

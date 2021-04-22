@@ -878,11 +878,29 @@ _.Zones =
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 				})),
-				-- End of Zone Achievement Quests
-				-- The Duelist's Debt
-				-- Tithes of Darkhaven
-				-- The Final Atonement
-				-- Revelations of the Light
+				
+				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
+				q(63646, {	-- Convoy of the Covenants
+				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+				}),
+				q(63648, {	-- Nal'ragas
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
+					["coord"] = { 36.0, 22.4, 1525 },
+				}),
+				q(63649, {	-- Spy vs Spy
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177637 },	-- Baroness Vashj
+					["coord"] = { 36.0, 22.4, 1525 },
+				}),
+				q(63647, {	-- The Unseen Guests
+					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
+					["provider"] = { "n", 165866 },	-- The Stonewright
+					["coord"] = { 34.3, 22.0, 1525 },
+				}),
+				
+				
 
 
 				-- Bonus Objectives
