@@ -14,8 +14,9 @@ _.ExpansionFeatures =
                 -- Necrolord
                 1698,	-- Seat of the Primus
                 -- Night Fae
-                1701,	-- Heart of the Forest
-                1702,	-- Heart of the Forest
+                1701,	-- Heart of the Forest - The Trunk
+                1702,	-- Heart of the Forest - The Roots
+				1703,	-- Heart of the Forest - The Canopy
                 -- Venthyr
                 1699,	-- Sinfall Reaches
                 1700,	-- Sinfall Depths

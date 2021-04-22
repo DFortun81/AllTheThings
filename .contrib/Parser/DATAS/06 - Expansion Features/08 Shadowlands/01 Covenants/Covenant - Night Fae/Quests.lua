@@ -475,7 +475,7 @@ _.ExpansionFeatures =
 					q(61113, {	-- Kivarr's Den
 						["sourceQuests"] = { 61102 },	-- Kivarr the Thornspeaker
 						["provider"] = { "n", 170848 },	-- Lord Herne
-						["coord"] = { 50.9, 80.8, 1701 },
+						["coord"] = { 50.9, 80.8, 1701 },	-- The Trunk
 					}),
 					q(61701, {	-- Searching the Grove
 						["sourceQuests"] = { 61113 },	-- Kivarr's Den
@@ -515,8 +515,7 @@ _.ExpansionFeatures =
 					}),
 					q(61710, {	-- The Broken Spear
 						["sourceQuests"] = { 61703 },	-- Nox Root
-						-- TODO: add provider objectID, I couldn't see it in game and its not on wowhead yet.
-						--["provider"] = { "o", xxx },	-- Broken Spear
+						["provider"] = { "o", 357726 },	-- Broken Spear
 						["coord"] = { 33.8, 54.4, 1565 },
 					}),
 					q(61711, {	-- Ritual of Purification
@@ -543,12 +542,12 @@ _.ExpansionFeatures =
 					q(58445, {	-- Containing the Night
 						["sourceQuests"] = { 61171 },	-- Unbroken Bonds
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },
+						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
 					}),
 					q(58446, {	-- Tracker Tracking
 						["sourceQuests"] = { 58445 },	-- Containing the Night
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },
+						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
 					}),
 					q(59258, {	-- Home of the Tirnenn
 						["sourceQuests"] = { 58446 },	-- Tracker Tracking

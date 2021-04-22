@@ -5198,6 +5198,7 @@ app.L = {
 		[357565] = "Forgotten Angler's Rod",
 		[357584] = "Vyrtha's Dredglaive",
 		[357697] = "Taskmaster's Trove",
+		[357726] = "Broken Spear",
 		[357758] = "Plague Barrel",
 		[358298] = "Forbidden Chamber Lockbox",
 		[358315] = "Skeletal Hand Fragments",
