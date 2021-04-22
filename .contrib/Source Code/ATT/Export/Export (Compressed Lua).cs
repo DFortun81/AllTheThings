@@ -125,7 +125,24 @@ namespace ATT
                         builder.Append(field).Append('=');
 
                         // Append the undetermined object's format to the builder.
-                        ExportCompressedLua(builder, data[field]);
+                        if (field == "sym" || field == "cost")
+                        {
+                            // Write the symbolic link without changing anything.
+                            //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
+                            ExportRawLua(builder, data[field]);
+                        }
+                        else if (field == "OnUpdate")
+                        {
+                            var functionBody = Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t");
+                            if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
+                                || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
+                            {
+                                // Remove any sort of silly string escape used to encapsulate the function body.
+                                functionBody = functionBody.Substring(1, functionBody.Length - 2);
+                            }
+                            builder.Append(functionBody);
+                        }
+                        else ExportCompressedLua(builder, data[field]);
                     }
 
                     // Close Bracket for the end of the Dictionary.
@@ -158,7 +175,14 @@ namespace ATT
                         }
                         else if (field == "OnUpdate")
                         {
-                            builder.Append(Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t"));
+                            var functionBody = Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t");
+                            if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
+                                || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
+                            {
+                                // Remove any sort of silly string escape used to encapsulate the function body.
+                                functionBody = functionBody.Substring(1, functionBody.Length - 2);
+                            }
+                            builder.Append(functionBody);
                         }
                         else ExportCompressedLua(builder, data[field]);
                     }
