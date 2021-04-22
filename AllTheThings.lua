@@ -5176,25 +5176,6 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
--- local function CheckAttachTooltip(self, elapsed)
-	-- -- print("OnUpdate",elapsed);
-	-- -- run the UpdateTooltip if it exists
-	-- if self.UpdateTooltip then
-		-- -- only allow OnUpdate to process 4x per second, very slow
-		-- self.NextUpdate = (self.NextUpdate or .25) - elapsed;
-		-- -- print("NextUpdate",self.NextUpdate);
-		-- if self.NextUpdate > 0 then return; end
-		-- -- reset update frequency
-		-- self.NextUpdate = nil;
-		-- self.AllTheThingsProcessing = nil;
-		-- print(":UpdateTooltip()");
-		-- self:UpdateTooltip();
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self:UpdateTooltip(self);
-		-- -- print(".UpdateTooltip(self)");
-		-- -- self.UpdateTooltip(self);
-	-- end
--- end
 
 -- ARP begin
 
