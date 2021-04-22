@@ -157,31 +157,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(ENGINEERING, {
-					n(QUESTS, {
-						q(29477, {	-- Gnomish Engineering
-							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
-							["coord"] = { 62.8, 32.0, 84 },
-							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-						q(29475, {	-- Goblin Engineering
-							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
-							["coord"] = { 62.8, 32.0, 84 },
-							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-						q(3630, {	-- Gnome Engineering
-							["u"] = REMOVED_FROM_GAME,
-							["requireSkill"] = ENGINEERING,
-							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
-						}),
-					}),
-				}),
 				prof(FISHING, {
 					n(ACHIEVEMENTS, {
 						ach(5476, {	-- Fish or Cut Bait: Stormwind

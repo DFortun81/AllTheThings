@@ -143,7 +143,11 @@ _.Zones =
 						i(23594),	-- Plans: Adamantite Plate Bracers
 						i(23595),	-- Plans: Adamantite Plate Gloves
 						i(23593),	-- Plans: Adamantite Rapier
-						i(23638),	-- Plans: Lesser Ward of Shielding
+						i(23638, {	-- Plans: Lesser Ward of Shielding
+							["spellID"] = 29728,	-- Lesser Ward of Shielding
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

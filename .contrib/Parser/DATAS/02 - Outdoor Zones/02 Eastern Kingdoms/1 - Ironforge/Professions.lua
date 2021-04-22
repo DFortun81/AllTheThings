@@ -119,14 +119,6 @@ _.Zones =
 								currency(81),	-- Epicurean's Award
 							},
 						}),
-						q(6612, {	-- I Know A Guy...
-							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
-							["requireSkill"] = COOKING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
@@ -164,26 +156,6 @@ _.Zones =
 							["g"] = {
 								i(33792),	-- Plans: Heavy Copper Longsword
 							},
-						}),
-					}),
-				}),
-				prof(ENGINEERING, {
-					n(QUESTS, {
-						q(29477, {	-- Gnomish Engineering
-							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
-							["coord"] = { 68.8, 45.2, 87 },
-							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
-						}),
-						q(29475, {	-- Goblin Engineering
-							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
-							["coord"] = { 68.8, 45.2, 87 },
-							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = 20,
-							["repeatable"] = true,
 						}),
 					}),
 				}),

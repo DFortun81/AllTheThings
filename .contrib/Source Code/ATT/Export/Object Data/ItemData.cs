@@ -24,7 +24,7 @@ namespace ATT
             {
                 if (data.TryGetValue("f", out long f))
                 {
-                    if (f <= 0 || f == 104 || f == 56) fields.Remove("f");  // Quest Items, Reagents, and Invalid Filters
+                    if (f <= 0 || f == 104 || f == 56 || f== 114) fields.Remove("f");  // Quest Items, Reagents, Keys, and Invalid Filters
                     else if (f == 60)   // Selfies
                     {
                         WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");

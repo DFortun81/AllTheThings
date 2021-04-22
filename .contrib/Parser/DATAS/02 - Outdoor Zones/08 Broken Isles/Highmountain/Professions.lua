@@ -397,6 +397,7 @@ _.Zones =
 					}),
 					q(40191, {	-- Stamped Stories
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+						-- ["sourceQuests"] = { 40190 },	-- Hardening the Hide -- TODO verify
 						["g"] = {
 							i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
 						},

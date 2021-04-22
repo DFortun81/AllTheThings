@@ -36,6 +36,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
+							["spellID"] = 30329,	-- Adamantite Scope
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 					},
@@ -113,12 +115,18 @@ _.Zones =
 						}),
 					},
 				}),
-				n(19373, {	-- Mari Stonehand
+				n(19373, {	-- Mari Stonehand <Armorsmith>
 					["coord"] = { 36.8, 55.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod
+						i(25847, {	-- Plans: Eternium Rod
+							["spellID"] = 32657,	-- Eternium Rod
+							["requireSkill"] = BLACKSMITHING,
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
+							["spellID"] = 29728,	-- Lesser Ward of Shielding
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
 						}),
 					},

@@ -219,7 +219,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
-				q(28300, {	-- Meet with Ureda
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
 					["provider"] = { "n", 16653 },	-- Inethven
 					["coord"] = { 53.0, 19.6, SILVERMOON_CITY },
 					["isBreadcrumb"] = true,

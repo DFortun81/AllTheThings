@@ -9,6 +9,7 @@ _.Craftables =
 			filter(27, {	-- Wands
 				i(172462),	-- Enchanted Twilight Wand
 				i(172416),	-- Enchant Bracers - Shaded Hearthing
+				i(172406),	-- Enchant Gloves - Shadowlands Gathering
 			}),
 		}),
 	}),

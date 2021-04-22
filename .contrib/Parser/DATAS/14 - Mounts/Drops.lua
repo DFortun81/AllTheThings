@@ -161,6 +161,7 @@ _.Mounts =
 		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn
 		i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
+		mount(346141),	-- Slime Serpent
 		i(116786),	-- Smoky Direwolf
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk

@@ -320,7 +320,7 @@ _.Zones =
 					},
 					["races"] = { BLOODELF },
 				}),
-				q(28300, {	-- Meet with Ureda
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3047 },	-- Archmage Shymm
 					["classes"] = { MAGE },

@@ -243,7 +243,7 @@ namespace ATT
         /// <param name="length">The total length of the string content.</param>
         static void ProcessContent(StringBuilder builder, string content, ref int index, int previousIndex, int length)
         {
-            while ((index = content.IndexOf("-- #", previousIndex)) > -1)
+            while (previousIndex < length && (index = content.IndexOf("-- #", previousIndex)) > -1)
             {
                 builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
                 ProcessInitialCommandBlock(builder, content, ref index, length);
@@ -370,7 +370,7 @@ namespace ATT
             // Parse the next command in the block
             int previousIndex = index;
             var ConditionalSatisfied = ProcessCommand(command);
-            while ((index = content.IndexOf("-- #", previousIndex)) > -1)
+            while (previousIndex < length && (index = content.IndexOf("-- #", previousIndex)) > -1)
             {
                 // Write the portion of the statement prior to the next command to the buffer.
                 if (ConditionalSatisfied) builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
@@ -380,7 +380,8 @@ namespace ATT
 
                 // Determine what the next command says.
                 int newLineIndex = content.IndexOf('\n', index);
-                command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().ToUpper().Split(' ');
+                if (newLineIndex < 0) newLineIndex = length;
+                command = content.Substring(index, newLineIndex - index).Trim().ToUpper().Split(' ');
                 index = newLineIndex;
 
                 switch (command[0])

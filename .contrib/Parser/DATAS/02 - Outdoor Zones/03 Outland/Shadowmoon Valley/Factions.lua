@@ -154,11 +154,13 @@ _.Zones =
 						["provider"] = { "n", 22112 },	-- Karynaku
 						["sourceQuests"] = { 10858 },	-- Karynaku
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 					}),
 					q(10870, {	-- Ally of the Netherwing
 						["provider"] = { "n", 22112 },	-- Karynaku
 						["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["g"] = {
 							i(31492),	-- Claw of the Netherwing Flight
 							i(31491),	-- Netherwing Defender's Shield

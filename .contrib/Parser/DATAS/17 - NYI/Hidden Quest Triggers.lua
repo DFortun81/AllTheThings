@@ -3464,7 +3464,7 @@ _.HiddenQuestTriggers =
 		q(53269),	-- killed Taloc the Corrupted in LFR
 		q(51736),	-- killed Taloc on Mythic
 		q(51735),	-- killed MOTHER on Mythic
-		q(51735),	-- killed Vectis on Mythic
+		q(51734),	-- killed Vectis on Mythic / Heroic
 		q(51733),	-- killed Fetid Devourer on Mythic
 		q(51730),	-- killed Mythrax the Unraveler on Mythic
 		q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
@@ -4059,6 +4059,7 @@ _.HiddenQuestTriggers =
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
+		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -4097,6 +4098,8 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
+		-- Plaguefall dungeon
+		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount
 
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character

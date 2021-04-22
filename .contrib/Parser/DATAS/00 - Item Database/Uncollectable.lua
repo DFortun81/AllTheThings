@@ -209,6 +209,9 @@ i(128851);	-- Roasted juicycrunch carrots
 
 
 -- Quest Items
+i(175154);	-- A Secret Never Spoken
+i(175152);	-- A Slime-Covered Book of Secrets
+i(175149);	-- A Small Carving of Ysera
 i(164778);	-- Abyssal Scepter
 i(162579);	-- Abyssal Scepter
 i(146692);	-- Ancient Dreadleather Armor

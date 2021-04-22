@@ -123,6 +123,22 @@ _.ExpansionFeatures =
 						follower(1306),	-- Gorgelimb
 					},
 				}),
+				q(61319, {	-- Champion: Hala [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
+					["provider"] = { "n", 172037 },	-- Hala
+					["g"] = {
+						follower(1267),	-- Hala
+					},
+				}),
+				q(61321, {	-- Champion: Ispiron [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
+					["provider"] = { "n", 172154 },	-- Ispiron
+					["g"] = {
+						follower(1269),	-- Ispiron
+					},
+				}),
 				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61248 },	-- Kaletar's Freedom

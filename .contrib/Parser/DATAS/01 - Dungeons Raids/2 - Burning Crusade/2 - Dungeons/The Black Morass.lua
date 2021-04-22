@@ -43,6 +43,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						17839,	-- Rift Lord
 					},
 				}),
+				i(31753, {	-- Essence of Infinity
+					["crs"] = {
+						21104,	-- Rift Keeper
+						17839,	-- Rift Lord
+					},
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(17879, e(552, {	-- Chrono Lord Deja
