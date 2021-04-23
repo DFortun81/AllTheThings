@@ -1765,6 +1765,7 @@ _.Zones =
 					["coord"] = { 56.2, 25.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+					--	Arsenals
 					--	Dread Aspirant, Battle for Azeroth Season 1
 						i(184668, {	-- Arsenal: Dread Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1788,6 +1789,167 @@ _.Zones =
 								i(162881),	-- Dread Aspirant's Warglaive
 							},
 						}),
+					--	Dread Gladiator, Battle for Azeroth Season 1
+						i(184666, {	-- Arsenal: Dread Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(161698),	-- Dread Gladiator's Barrier
+								i(161703),	-- Dread Gladiator's Bonegrinder
+								i(166334),	-- Dread Gladiator's Cleaver
+								i(161692),	-- Dread Gladiator's Greatsword
+								i(161683),	-- Dread Gladiator's Gavel
+								i(161680),	-- Dread Gladiator's Longbow
+								i(161700),	-- Dread Gladiator's Pike
+								i(162002),	-- Dread Gladiator's Pummeler
+								i(161696),	-- Dread Gladiator's Reprieve
+								i(161701),	-- Dread Gladiator's Rifle
+								i(162017),	-- Dread Gladiator's Shanker
+								i(161697),	-- Dread Gladiator's Shield Wall
+								i(161708),	-- Dread Gladiator's Slicer
+								i(161681),	-- Dread Gladiator's Spellblade
+								i(161699),	-- Dread Gladiator's Staff
+								i(161704),	-- Dread Gladiator's Wand
+								i(161694),	-- Dread Gladiator's Warglaive
+							},
+						}),
+					--	Sinister Aspirant, Battle for Azeroth Season 2
+						i(184672, {	-- Arsenal: Sinister Aspirant's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(165206),	-- Sinister Aspirant's Bonecracker
+								i(166478),	-- Sinister Aspirant's Greatsword
+								i(165208),	-- Sinister Aspirant's Longbow
+								i(165207),	-- Sinister Aspirant's Mageblade
+								i(165202),	-- Sinister Aspirant's Pike
+								i(165205),	-- Sinister Aspirant's Pummeler
+								i(166476),	-- Sinister Aspirant's Runeaxe
+								i(165203),	-- Sinister Aspirant's Shanker
+								i(165199),	-- Sinister Aspirant's Shield Wall
+								i(166903),	-- Sinister Aspirant's Slicer
+								i(165200),	-- Sinister Aspirant's Staff
+								i(165204),	-- Sinister Aspirant's Warglaive
+							},
+						}),
+					--	Sinister Gladiator, Battle for Azeroth Season 2
+						i(184670, {	-- Arsenal: Sinister Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(165041),	-- Sinister Gladiator's Bonecracker
+								i(166479),	-- Sinister Gladiator's Greatsword
+								un(NEVER_IMPLEMENTED, i(165036)),	-- Sinister Gladiator's Halberd (A) (either NYI or removed)
+								i(165043),	-- Sinister Gladiator's Longbow
+								i(165042),	-- Sinister Gladiator's Mageblade
+								i(165037),	-- Sinister Gladiator's Pike
+								i(165040),	-- Sinister Gladiator's Pummeler
+								i(166477),	-- Sinister Gladiator's Runeaxe
+								i(165038),	-- Sinister Gladiator's Shanker
+								i(165034),	-- Sinister Gladiator's Shield Wall
+								i(166901),	-- Sinister Gladiator's Slicer
+								i(165035),	-- Sinister Gladiator's Staff
+								i(165039),	-- Sinister Gladiator's Warglaive
+							},
+						}),
+					--	Notorious Aspirant, Battle for Azeroth Season 3
+						i(184676, {	-- Arsenal: Notorious Aspirant's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(169756),	-- Notorious Aspirant's Blade
+								i(169754),	-- Notorious Aspirant's Cutter
+								i(169748),	-- Notorious Aspirant's Gavel
+								i(169760),	-- Notorious Aspirant's Greatsword
+								i(169746),	-- Notorious Aspirant's Longbow
+								i(169758),	-- Notorious Aspirant's Pike
+								i(169750),	-- Notorious Aspirant's Pummeler
+								i(169742),	-- Notorious Aspirant's Reprieve
+								i(169735),	-- Notorious Aspirant's Shanker
+								i(167522),	-- Notorious Aspirant's Shield Wall
+								i(169744),	-- Notorious Aspirant's Shield Wall
+								i(169752),	-- Notorious Aspirant's Slicer
+								i(169734),	-- Notorious Aspirant's Stabber
+								i(169740),	-- Notorious Aspirant's Staff
+								i(169738),	-- Notorious Aspirant's Wand
+								i(170080),	-- Notorious Aspirant's Warglaive
+							},
+						}),
+					--	Notorious Gladiator, Battle for Azeroth Season 3
+						i(184674, {	-- Arsenal: Notorious Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(169720),	-- Notorious Gladiator's Bonegrinder
+								i(169725),	-- Notorious Gladiator's Bonegrinder
+								i(169712),	-- Notorious Gladiator's Chopper
+								i(171160),	-- Notorious Gladiator's Claw
+								i(169730),	-- Notorious Gladiator's Cutter
+								i(169733),	-- Notorious Gladiator's Gavel
+								i(169716),	-- Notorious Gladiator's Longbow
+								i(169715),	-- Notorious Gladiator's Pike
+								i(171156),	-- Notorious Gladiator's Pike
+								i(169711),	-- Notorious Gladiator's Pummeler
+								i(169723),	-- Notorious Gladiator's Reprieve
+								i(169709),	-- Notorious Gladiator's Shanker
+								i(167365),	-- Notorious Gladiator's Shield Wall
+								i(169713),	-- Notorious Gladiator's Slicer
+								i(169727),	-- Notorious Gladiator's Stabber
+								i(171155),	-- Notorious Gladiator's Staff
+								i(169718),	-- Notorious Gladiator's Wand
+								i(169710),	-- Notorious Gladiator's Warglaive
+							},
+						}),
+					--	Corrupted Aspirant, Battle for Azeroth Season 4 (no ensembles for this yet!  Aspirant pieces sold individually in SW/Org)
+						i(184680, {	-- Arsenal: Corrupted Aspirant's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(172880),	-- Corrupted Aspirant's Chopper
+								i(174013),	-- Corrupted Aspirant's Claw
+								i(172878),	-- Corrupted Aspirant's Cleaver
+								i(174015),	-- Corrupted Aspirant's Decapitator
+								i(172872),	-- Corrupted Aspirant's Gavel
+								i(172884),	-- Corrupted Aspirant's Greatsword
+								i(172870),	-- Corrupted Aspirant's Longbow
+								i(172882),	-- Corrupted Aspirant's Pike
+								i(172874),	-- Corrupted Aspirant's Pummeler
+								i(172866),	-- Corrupted Aspirant's Reprieve
+								i(174017),	-- Corrupted Aspirant's Rifle
+								i(172859),	-- Corrupted Aspirant's Shanker
+								i(172868),	-- Corrupted Aspirant's Shield Wall
+								i(172876),	-- Corrupted Aspirant's Slicer
+								i(174011),	-- Corrupted Aspirant's Spellblade
+								i(172858),	-- Corrupted Aspirant's Stabber
+								i(172864),	-- Corrupted Aspirant's Staff
+								i(172862),	-- Corrupted Aspirant's Wand
+								i(174019),	-- Corrupted Aspirant's War Staff
+								i(172886),	-- Corrupted Aspirant's Warglaive
+							},
+						}),
+					--	Corrupted Gladiator, Battle for Azeroth Season 4
+						i(184678, {	-- Arsenal: Corrupted Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["g"] = {
+								i(172754),	-- Corrupted Gladiator's Chopper (A)
+								i(172778),	-- Corrupted Gladiator's Claw (A)
+								i(172770),	-- Corrupted Gladiator's Cleaver (A)
+								i(172762),	-- Corrupted Gladiator's Decapitator (A)
+								i(172773),	-- Corrupted Gladiator's Gavel (A)
+								i(172767),	-- Corrupted Gladiator's Greatsword (A)
+								i(172758),	-- Corrupted Gladiator's Longbow (A)
+								i(172757),	-- Corrupted Gladiator's Pike (A)
+								i(172753),	-- Corrupted Gladiator's Pummeler (A)
+								i(172765),	-- Corrupted Gladiator's Reprieve (A)
+								i(173306),	-- Corrupted Gladiator's Rifle (A)
+								i(172751),	-- Corrupted Gladiator's Shanker (A)
+								i(172654),	-- Corrupted Gladiator's Shield Wall (A)
+								i(172755),	-- Corrupted Gladiator's Slicer (A)
+								i(173305),	-- Corrupted Gladiator's Spellblade (A)
+								i(172769),	-- Corrupted Gladiator's Stabber (A)
+								i(172775),	-- Corrupted Gladiator's Staff (A)
+								i(172760),	-- Corrupted Gladiator's Wand (A)
+								i(172776),	-- Corrupted Gladiator's War Staff (A)
+								i(172752),	-- Corrupted Gladiator's Warglaive (A)
+							},
+						}),
+					
+					--	Ensembles
+					--	Dread Aspirant, Battle for Azeroth Season 1
 						i(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
@@ -1845,28 +2007,6 @@ _.Zones =
 							},
 						}),
 					--	Dread Gladiator, Battle for Azeroth Season 1
-						i(184666, {	-- Arsenal: Dread Gladiator's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(161698),	-- Dread Gladiator's Barrier
-								i(161703),	-- Dread Gladiator's Bonegrinder
-								i(166334),	-- Dread Gladiator's Cleaver
-								i(161692),	-- Dread Gladiator's Greatsword
-								i(161683),	-- Dread Gladiator's Gavel
-								i(161680),	-- Dread Gladiator's Longbow
-								i(161700),	-- Dread Gladiator's Pike
-								i(162002),	-- Dread Gladiator's Pummeler
-								i(161696),	-- Dread Gladiator's Reprieve
-								i(161701),	-- Dread Gladiator's Rifle
-								i(162017),	-- Dread Gladiator's Shanker
-								i(161697),	-- Dread Gladiator's Shield Wall
-								i(161708),	-- Dread Gladiator's Slicer
-								i(161681),	-- Dread Gladiator's Spellblade
-								i(161699),	-- Dread Gladiator's Staff
-								i(161704),	-- Dread Gladiator's Wand
-								i(161694),	-- Dread Gladiator's Warglaive
-							},
-						}),
 						i(184419, {	-- Ensemble: Dread Gladiator's Cloth Armor (purchased on priest)
 						-- purchased on priest.  didn't learn cord, cuffs, gloves, hood, leggings, mantle, robe, or treads.  not sure if these alternate item types are learned by mage/lock, but you can only purchase the ensemble once per account so i can't test. :\
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1924,25 +2064,7 @@ _.Zones =
 								i(161738),	-- Dread Gladiator's Plate Vambraces
 							},
 						}),
-					
 					--	Sinister Aspirant, Battle for Azeroth Season 2
-						i(184672, {	-- Arsenal: Sinister Aspirant's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(165206),	-- Sinister Aspirant's Bonecracker
-								i(166478),	-- Sinister Aspirant's Greatsword
-								i(165208),	-- Sinister Aspirant's Longbow
-								i(165207),	-- Sinister Aspirant's Mageblade
-								i(165202),	-- Sinister Aspirant's Pike
-								i(165205),	-- Sinister Aspirant's Pummeler
-								i(166476),	-- Sinister Aspirant's Runeaxe
-								i(165203),	-- Sinister Aspirant's Shanker
-								i(165199),	-- Sinister Aspirant's Shield Wall
-								i(166903),	-- Sinister Aspirant's Slicer
-								i(165200),	-- Sinister Aspirant's Staff
-								i(165204),	-- Sinister Aspirant's Warglaive
-							},
-						}),
 						i(180186, {	-- Ensemble: Sinister Aspirant's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
@@ -1999,26 +2121,7 @@ _.Zones =
 								i(165098),	-- Sinister Aspirant's Plate Warboots
 							},
 						}),
-					
 					--	Sinister Gladiator, Battle for Azeroth Season 2
-						i(184670, {	-- Arsenal: Sinister Gladiator's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(165041),	-- Sinister Gladiator's Bonecracker
-								i(166479),	-- Sinister Gladiator's Greatsword
-								un(NEVER_IMPLEMENTED, i(165036)),	-- Sinister Gladiator's Halberd (A) (either NYI or removed)
-								i(165043),	-- Sinister Gladiator's Longbow
-								i(165042),	-- Sinister Gladiator's Mageblade
-								i(165037),	-- Sinister Gladiator's Pike
-								i(165040),	-- Sinister Gladiator's Pummeler
-								i(166477),	-- Sinister Gladiator's Runeaxe
-								i(165038),	-- Sinister Gladiator's Shanker
-								i(165034),	-- Sinister Gladiator's Shield Wall
-								i(166901),	-- Sinister Gladiator's Slicer
-								i(165035),	-- Sinister Gladiator's Staff
-								i(165039),	-- Sinister Gladiator's Warglaive
-							},
-						}),
 						i(184427, {	-- Ensemble: Sinister Gladiator's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
@@ -2075,29 +2178,7 @@ _.Zones =
 								i(164816),	-- Sinister Gladiator's Plate Warboots
 							},
 						}),
-					
 					--	Notorious Aspirant, Battle for Azeroth Season 3
-						i(184676, {	-- Arsenal: Notorious Aspirant's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(169756),	-- Notorious Aspirant's Blade
-								i(169754),	-- Notorious Aspirant's Cutter
-								i(169748),	-- Notorious Aspirant's Gavel
-								i(169760),	-- Notorious Aspirant's Greatsword
-								i(169746),	-- Notorious Aspirant's Longbow
-								i(169758),	-- Notorious Aspirant's Pike
-								i(169750),	-- Notorious Aspirant's Pummeler
-								i(169742),	-- Notorious Aspirant's Reprieve
-								i(169735),	-- Notorious Aspirant's Shanker
-								i(167522),	-- Notorious Aspirant's Shield Wall
-								i(169744),	-- Notorious Aspirant's Shield Wall
-								i(169752),	-- Notorious Aspirant's Slicer
-								i(169734),	-- Notorious Aspirant's Stabber
-								i(169740),	-- Notorious Aspirant's Staff
-								i(169738),	-- Notorious Aspirant's Wand
-								i(170080),	-- Notorious Aspirant's Warglaive
-							},
-						}),
 						i(180194, {	-- Ensemble: Notorious Aspirant's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
@@ -2154,31 +2235,7 @@ _.Zones =
 								i(167494),	-- Notorious Aspirant's Plate Warboots
 							},
 						}),
-					
 					--	Notorious Gladiator, Battle for Azeroth Season 3
-						i(184674, {	-- Arsenal: Notorious Gladiator's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(169720),	-- Notorious Gladiator's Bonegrinder
-								i(169725),	-- Notorious Gladiator's Bonegrinder
-								i(169712),	-- Notorious Gladiator's Chopper
-								i(171160),	-- Notorious Gladiator's Claw
-								i(169730),	-- Notorious Gladiator's Cutter
-								i(169733),	-- Notorious Gladiator's Gavel
-								i(169716),	-- Notorious Gladiator's Longbow
-								i(169715),	-- Notorious Gladiator's Pike
-								i(171156),	-- Notorious Gladiator's Pike
-								i(169711),	-- Notorious Gladiator's Pummeler
-								i(169723),	-- Notorious Gladiator's Reprieve
-								i(169709),	-- Notorious Gladiator's Shanker
-								i(167365),	-- Notorious Gladiator's Shield Wall
-								i(169713),	-- Notorious Gladiator's Slicer
-								i(169727),	-- Notorious Gladiator's Stabber
-								i(171155),	-- Notorious Gladiator's Staff
-								i(169718),	-- Notorious Gladiator's Wand
-								i(169710),	-- Notorious Gladiator's Warglaive
-							},
-						}),
 						i(184436, {	-- Ensemble: Notorious Gladiator's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
@@ -2235,59 +2292,7 @@ _.Zones =
 								i(167271),	-- Notorious Gladiator's Plate Warboots
 							},
 						}),
-					
-					--	Corrupted Aspirant, Battle for Azeroth Season 4 (no ensembles for this yet!  Aspirant pieces sold individually in SW/Org)
-						i(184680, {	-- Arsenal: Corrupted Aspirant's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(172880),	-- Corrupted Aspirant's Chopper
-								i(174013),	-- Corrupted Aspirant's Claw
-								i(172878),	-- Corrupted Aspirant's Cleaver
-								i(174015),	-- Corrupted Aspirant's Decapitator
-								i(172872),	-- Corrupted Aspirant's Gavel
-								i(172884),	-- Corrupted Aspirant's Greatsword
-								i(172870),	-- Corrupted Aspirant's Longbow
-								i(172882),	-- Corrupted Aspirant's Pike
-								i(172874),	-- Corrupted Aspirant's Pummeler
-								i(172866),	-- Corrupted Aspirant's Reprieve
-								i(174017),	-- Corrupted Aspirant's Rifle
-								i(172859),	-- Corrupted Aspirant's Shanker
-								i(172868),	-- Corrupted Aspirant's Shield Wall
-								i(172876),	-- Corrupted Aspirant's Slicer
-								i(174011),	-- Corrupted Aspirant's Spellblade
-								i(172858),	-- Corrupted Aspirant's Stabber
-								i(172864),	-- Corrupted Aspirant's Staff
-								i(172862),	-- Corrupted Aspirant's Wand
-								i(174019),	-- Corrupted Aspirant's War Staff
-								i(172886),	-- Corrupted Aspirant's Warglaive
-							},
-						}),
 					--	Corrupted Gladiator, Battle for Azeroth Season 4
-						i(184678, {	-- Arsenal: Corrupted Gladiator's Weapons
-							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["g"] = {
-								i(172754),	-- Corrupted Gladiator's Chopper (A)
-								i(172778),	-- Corrupted Gladiator's Claw (A)
-								i(172770),	-- Corrupted Gladiator's Cleaver (A)
-								i(172762),	-- Corrupted Gladiator's Decapitator (A)
-								i(172773),	-- Corrupted Gladiator's Gavel (A)
-								i(172767),	-- Corrupted Gladiator's Greatsword (A)
-								i(172758),	-- Corrupted Gladiator's Longbow (A)
-								i(172757),	-- Corrupted Gladiator's Pike (A)
-								i(172753),	-- Corrupted Gladiator's Pummeler (A)
-								i(172765),	-- Corrupted Gladiator's Reprieve (A)
-								i(173306),	-- Corrupted Gladiator's Rifle (A)
-								i(172751),	-- Corrupted Gladiator's Shanker (A)
-								i(172654),	-- Corrupted Gladiator's Shield Wall (A)
-								i(172755),	-- Corrupted Gladiator's Slicer (A)
-								i(173305),	-- Corrupted Gladiator's Spellblade (A)
-								i(172769),	-- Corrupted Gladiator's Stabber (A)
-								i(172775),	-- Corrupted Gladiator's Staff (A)
-								i(172760),	-- Corrupted Gladiator's Wand (A)
-								i(172776),	-- Corrupted Gladiator's War Staff (A)
-								i(172752),	-- Corrupted Gladiator's Warglaive (A)
-							},
-						}),
 						i(180203, {	-- Ensemble: Corrupted Gladiator's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {

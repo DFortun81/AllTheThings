@@ -194,12 +194,12 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 1,
 	}, -- [61]
 	{
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Nighthaven, Moonglade",
 		["faction"] = 2,
 	}, -- [62]
 	{
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Nighthaven, Moonglade",
 		["faction"] = 1,
 	}, -- [63]
@@ -474,7 +474,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 	},
 	[2162] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Devoted Sanctuary, Vol'dun",
 		["faction"] = 0,
 	},
@@ -853,7 +853,7 @@ select(2, ...).FlightPathDB = {
 	},
 	[2530] = {
 		["name"] = "Dreamsong Fenn, Ardenweald",
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 	},
 	[634] = {
 		["name"] = "Dragon's Mouth, Badlands",
@@ -1463,7 +1463,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 	},
 	[2071] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Dreadpearl, Zuldazar",
 		["faction"] = 0,
 	},
@@ -1894,7 +1894,7 @@ select(2, ...).FlightPathDB = {
 	},
 	[2565] = {
 		["name"] = "Starlit Overlook, Ardenweald",
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 	},
 	[2569] = {
 		["name"] = "Plague Watch, Maldraxxus",
@@ -1981,7 +1981,7 @@ select(2, ...).FlightPathDB = {
 		},
 	},
 	[1849] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Dalaran",
 		["c"] = {
 			3, -- [1]
@@ -2087,7 +2087,7 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Glitterfall Basin, Ardenweald",
 	},
 	[2059] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Southwind Village, Silithus",
 		["faction"] = 1,
 	},
@@ -2152,7 +2152,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 	},
 	[2066] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Atal'Gral, Zuldazar",
 		["faction"] = 0,
 	},
@@ -2559,7 +2559,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 0,
 	},
 	[1567] = {
-		["u"] = 1,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Temple of Karabor, Shadowmoon Valley",
 		["faction"] = 2,
 	},
@@ -2614,13 +2614,13 @@ select(2, ...).FlightPathDB = {
 	[2401] = {
 		["name"] = "Alliance Outpost, Exile's Reach Outpost",
 		["faction"] = 2,
-		["u"] = NEVER_IMPLEMENTED,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
 	},
 	[2402] = {
 		["name"] = "Ogre Citadel, Exile's Reach Island",
 		["faction"] = 2,
-		["u"] = NEVER_IMPLEMENTED,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
 	},
 };
