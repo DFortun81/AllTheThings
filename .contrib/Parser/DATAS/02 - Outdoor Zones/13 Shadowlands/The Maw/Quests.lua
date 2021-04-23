@@ -1164,7 +1164,7 @@ _.Zones =
 				}),
 				q(63935, {	-- Precious Roots
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-				--	["provider"] = { "n",  },	-- TODO: add provider
+					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, 1961 },	-- Korthia
 					["g"] = {
@@ -1179,6 +1179,12 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
 				q(63955, {	-- Sealed Lockboxes
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
+				q(63961, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
