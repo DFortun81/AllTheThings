@@ -11,7 +11,6 @@ _.Zones =
 			["maps"] = {
 				1829,	-- Ardenweald_Micro_B
 				1816,	-- Claw's Edge (submap for the inn)
-				1709,	-- Heart of the Forest -- TODO: where is this, and should it actually show all of Ardenweald
 				1824,	-- Matriarch's Den
 				1825,	-- The Root Cellar (Marasmius daily)
 				1826,	-- The Root Cellar (Marasmius daily)

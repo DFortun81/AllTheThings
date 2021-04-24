@@ -41,12 +41,12 @@ _.ExpansionFeatures =
 					q(62561, {	-- My Heart is Full
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.6, 36.4, 1701 },
+						["coord"] = { 47.6, 36.4, 1701 },	-- The Trunk
 					}),
 					q(63347, {	-- Night Fae Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },
+						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 					}),
 					q(63346, {	-- Night Fae Veteran
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
@@ -677,7 +677,7 @@ _.ExpansionFeatures =
 					q(60189, {	-- We Strike Now
 						["sourceQuests"] = { 59866 },	-- Parting Ways
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },
+						["coord"] = { 44.5, 39.1, 1701 },	-- The Trunk
 					}),
 					q(60190, {	-- Assault on Darkreach
 						["sourceQuests"] = { 60189 },	-- We Strike Now
@@ -711,18 +711,17 @@ _.ExpansionFeatures =
 					q(60108, {	-- Drust and Ashes
 						["sourceQuests"] = { 60194 },	-- The Call of the Hunt
 						["provider"] = { "n", 172091 },	-- Lord Herne
-						["coord"] = { 39.0, 63.4, 1565 },
+						["coord"] = { 39.0, 63.4, 1565 },	-- Ardenweald
+						["maps"] = { 1709 },	-- Ardenweald (scenario)
 						["g"] = {
 							i(180721),	-- Enchanted Dreamlight Runestag (MOUNT!)
-							i(182165, {	-- Ardenmoth Soul
-								["questID"] = 62422,
-							}),
-							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
-							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
-							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
-							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
-							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
-							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
+							i(182165),	-- Ardenmoth Soul
+							i(183893, {["modID"] = 4, }),	-- LFR Abominable Anima Spherule
+							i(183892, {["modID"] = 4, }),	-- LFR Mystic Anima Spherule
+							i(183891, {["modID"] = 4, }),	-- LFR Venerated Anima Spherule
+							i(183890, {["modID"] = 4, }),	-- LFR Zenith Anima Spherule
+							i(183888, {["modID"] = 4, }),	-- LFR Apogee Anima Bead
+							i(183889, {["modID"] = 4, }),	-- LFR Thaumaturgic Anima Bead
 						},
 					}),
 
