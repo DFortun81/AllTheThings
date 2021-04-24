@@ -1015,6 +1015,7 @@ _.Zones =
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
 						i(186196, {	-- Death's Advance War Chest
+							i(185894),	-- Attendant's Loop
 							i(185860),	-- Korthian Caretaker's Cinch
 							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
 						}),
@@ -1045,12 +1046,24 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
 				}),
+				q(63790, {	-- Broker's Bounty: Lord Azzorak
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
 				--	TODO: add object localization
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
+				q(64129, {	-- Charge of the Wild Hunt
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178840 },	-- Niya
+					["isDaily"] = true,
+					["coord"] = { 61.1, 21.2, 1961 },	-- Korthia
 				}),
 				q(63787, {	-- Continued Efforts: Mauler's Outlook
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -1233,13 +1246,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, 1961 },	-- Korthia
 				}),
+				q(63778, {	-- We Move Forward
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178840 },	-- Niya
+					["isDaily"] = true,
+					["coord"] = { 61.1, 21.2, 1961 },	-- Korthia
+				}),
 				q(64043, {	-- We Need a Healer - You!
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, 1961 },	-- Korthia
 				}),
-
 
 
 
