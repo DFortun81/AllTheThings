@@ -27,11 +27,8 @@ _.Zones =
 							crit(10),	-- Wrath of the Party Herald
 						}),
 						ach(15032, {	-- Breaking Their Hold
-							crit(2),	-- Here's an Axe, Get to Work!
 							crit(4),	-- An Embarrassment of Corpses
-							crit(5),	-- Putting a Plan Together
 							crit(6),	-- Centurions March!
-							crit(9),	-- Get to the Point
 							crit(10),	-- Somebody Feed Kevin
 						}),
 						ach(15034, {	-- Wings Against the Flames
@@ -79,10 +76,12 @@ _.Zones =
 				q(63824, {	-- Kyrian Assault
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177900 },	-- Xandria
+					["isDaily"] = true,
 					["g"] = {
 						n(QUESTS, {
 							q(63858, {	-- Courage of the Soul
 								["provider"] = { "n", 178227 },
+								["isDaily"] = true,
 								["coord"] = { 42.4, 44.1, 1543 },
 								["g"] = {
 									crit(5, {	-- Courage of the Soul
@@ -92,6 +91,7 @@ _.Zones =
 							}),
 							q(63843, {	-- Heart and Soul
 								["provider"] = { "n", 177226 },	-- Artemede
+								["isDaily"] = true,
 								["coord"] = { 42.3, 44.3, 1543 },
 								["g"] = {
 									crit(2, {	-- Heart and Soul
@@ -101,6 +101,7 @@ _.Zones =
 							}),
 							q(63859, {	-- Saved By The Bells
 								["provider"] = { "n", 177900 },	-- Xandria
+								["isDaily"] = true,
 								["coord"] = { 42.7, 44.7, 1543 },
 								["g"] = {
 									crit(6, {	-- Saved By The Bells
@@ -110,6 +111,7 @@ _.Zones =
 							}),
 							q(63846, {	-- The Ember Count
 								["provider"] = { "n", 178091 },	-- Vulca
+								["isDaily"] = true,
 								["coord"] = { 43.1, 44.3, 1543 },
 								["g"] = {
 									crit(8, {	-- The Ember Count
@@ -132,11 +134,13 @@ _.Zones =
 				q(63543, {	-- Necrolord Assault
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177072 },	-- Baroness Draka
+					["isDaily"] = true,
 					["coord"] = { 33.8, 54.8, 1543 },
 					["g"] = {
 						n(QUESTS, {
 							q(63455, {	-- Dead On Their Feet
 								["provider"] = { "n", 177076 },	-- Margrave Sin'dane
+								["isDaily"] = true,
 								["coord"] = { 33.6, 54.9, 1543 },
 								["g"] = {
 									crit(1, {	-- Dead On Their Feet
@@ -144,9 +148,30 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63664, {	-- Get to the Point
+								["provider"] = { "n", 177126 },	-- Secutor Mevix
+								["isDaily"] = true,
+								["coord"] = { 33.2, 57.0, 1543 },
+								["g"] = {
+									crit(9, {	-- Get to the Point
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
+							q(63625, {	-- Here's an Axe, Get to Work!
+								["provider"] = { "n", 177072 },	-- Baroness Draka
+								["isDaily"] = true,
+								["coord"] = { 33.8, 54.8, 1543 },
+								["g"] = {
+									crit(2, {	-- Here's an Axe, Get to Work!
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
 							q(63621, {	-- Pulling His Chain
 								["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 								["provider"] = { "n", 177226 },	-- Artemede
+								["isDaily"] = true,
 								["coord"] = { 37.0, 63.3, 1543 },
 								["g"] = {
 									crit(7, {	-- Pulling His Chain
@@ -154,8 +179,20 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63545, {	-- Putting A Plan Together
+								["sourceQuests"] = { 63772 },	-- Waiting in the Wings
+								["provider"] = { "n", 177175 },	-- Mikanikos
+								["isDaily"] = true,
+								["coord"] = { 37.0, 63.5, 1543 },
+								["g"] = {
+									crit(5, {	-- Putting a Plan Together
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
 							q(59004, {	-- Splash Damage
 								["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
+								["isDaily"] = true,
 								["coord"] = { 32.9, 56.8, 1543 },
 								["g"] = {
 									crit(8, {	-- Splash Damage
@@ -165,10 +202,12 @@ _.Zones =
 							}),
 							q(63772, {	-- Waiting in the Wings
 								["provider"] = { "n", 177072 },	-- Baroness Draka
+								["isDaily"] = true,
 								["coord"] = { 33.8, 54.8, 1543 },
 							}),
 							q(63773, {	-- You and What Army
 								["provider"] = { "n", 177072 },	-- Baroness Draka
+								["isDaily"] = true,
 								["coord"] = { 33.8, 54.8, 1543 },
 								["g"] = {
 									crit(4, {	-- Boil Master Yetch
@@ -196,6 +235,7 @@ _.Zones =
 							i(185992, {	-- War Chest of the Undying Army
 						--	TODO: figure out the contents of this chest
 								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
+								i(185858),	-- Korthian Caretaker's Crest
 							--	i(186156),	-- PH Korthia Trinket
 							}),
 						}),
