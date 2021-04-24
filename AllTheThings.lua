@@ -11195,7 +11195,7 @@ function app:CreateMiniListForGroup(group)
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
-				local breakafter = 0;
+				-- local breakafter = 0;
 				local isAcctQuests = app.AccountWideQuests;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
@@ -11261,12 +11261,12 @@ function app:CreateMiniListForGroup(group)
 							["hideText"] = true
 						});
 						g = prereqs;
-						breakafter = breakafter + 1;
-						if breakafter >= 100 then
-							app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
-							app.report();
-							break;
-						end
+						-- breakafter = breakafter + 1;
+						-- if breakafter >= 100 then
+						-- 	app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
+						-- 	app.report();
+						-- 	break;
+						-- end
 					end
 				end
 
