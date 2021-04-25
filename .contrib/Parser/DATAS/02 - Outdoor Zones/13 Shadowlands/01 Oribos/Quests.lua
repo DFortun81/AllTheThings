@@ -742,16 +742,6 @@ _.Zones =
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
 					["lvl"] = { 60 },
 				}),
-				q(58609, {	-- Taking The Seat
-					["sourceQuests"] = {
-						57878,	-- Choosing Your Purpose [Story]
-						63212,	-- Report to Mevix [Skip]
-					},
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-					["provider"] = { "n", 171821 },	-- Baroness Draka
-					["coord"] = { 42.9, 74.1, 1670 },	-- Oribos
-					["lvl"] = { 60 },
-				}),
 				-- Revendreth
 
 

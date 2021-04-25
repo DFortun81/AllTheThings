@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 47.7, 29.1, 1698 },
+						["coord"] = { 47.7, 29.1, 1698 },	-- Seat of the Primus
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},

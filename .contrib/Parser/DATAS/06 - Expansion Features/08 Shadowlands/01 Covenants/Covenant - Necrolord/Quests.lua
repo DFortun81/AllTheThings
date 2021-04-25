@@ -10,6 +10,134 @@ _.ExpansionFeatures =
 			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
 				n(QUESTS, {
+					q(62835, {	-- A Call to Service
+						["sourceQuests"] = { 62834 },	-- Glorious Ambition
+						["provider"] = { "n", 175998 },	-- Elspeth Larink
+						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
+					}),
+					q(62833, {	-- A Hero of Great Renown
+						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
+						["sourceQuests"] = { 61359 },	-- Power of the Primus
+						["provider"] = { "n", 165182 },	-- Baroness Draka
+						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61388, {	-- A Journey Made Together
+						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+						["g"] = {
+							follower(1261),	-- Plague Deviser Marileth
+						},
+					}),
+					q(62839, {	-- Anima is Strength
+						["sourceQuests"] = { 62835 },	-- A Call to Service
+						["provider"] = { "n", 158339 },	-- Sergeant Romark
+						["coord"] = { 47.7, 29.1, 1698 },	-- Seat of the Primus
+					}),
+					q(62845, {	-- Bringing It All Together
+						["sourceQuests"] = { 62844 },	-- Return to Draka
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.1, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(182272),	-- Bladesworn Conjurer's Leggings
+							i(182254),	-- Bladesworn Harbinger's Greaves
+							i(182281),	-- Bladesworn Tactician's Chausses
+							i(182263),	-- Bladesworn Wraith's Breeches
+						},
+					}),
+					q(59596, {	-- Collective Soul
+						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
+						["altQuests"] = { 63003 },	-- Collective Soul
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(63003, {	-- Collective Soul
+						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
+						["altQuests"] = { 59596 },	-- Collective Soul
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+					}),
+					q(59597, {	-- Come On, We're Simpatico!
+						["sourceQuests"] = { 59596, 63003 },	-- Collective Soul
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+					}),
+					q(62848, {	-- Conduits, What Are They For?
+						["sourceQuests"] = { 61388 },	-- A Journey Made Together
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+					}),
+					q(62834, {	-- Glorious Ambition
+						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
+						["provider"] = { "n", 175998 },	-- Elspeth Larink
+						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
+					}),
+					q(62840, {	-- Into the Reservoir
+						["sourceQuests"] = { 62839 },	-- Anima is Strength
+						["provider"] = { "n", 161909 },	-- Arkadia Moa
+						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(59609, {	-- No Rest For the Dead
+						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61397, {	-- Opportunity Strikes
+						["sourceQuests"] = { 62840 },	-- Into the Reservoir
+						["provider"] = { "n", 161909 },	-- Arkadia Moa
+						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61359, {	-- Power of the Primus
+						["sourceQuests"] = { 59556 },	-- Welcome To Our House
+						["provider"] = { "n", 165182 },	-- Baroness Draka
+						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61983, {	-- Replenish the Reservoir
+						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["isWeekly"] = true,
+						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61333, {	-- Return Lost Souls (5 soul version)
+						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+						["isWeekly"] = true,
+						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
+					}),
+					q(62844, {	-- Return to Draka
+						["sourceQuests"] = { 62837 },	-- Hopeful News
+						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+						["coord"] = { 40.0, 68.4, 1670 },	-- Oribos
+					}),
+					q(62846, {	-- Sanctum Improvements
+						["sourceQuests"] = { 62845 },	-- Bringing It All Together
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(58609, {	-- Taking The Seat
+						["sourceQuests"] = {
+							57878,	-- Choosing Your Purpose [Story]
+							63212,	-- Report to Mevix [Skip]
+						},
+						["provider"] = { "n", 171821 },	-- Baroness Draka
+						["coord"] = { 42.9, 74.1, 1670 },	-- Oribos
+					}),
+					q(63032, {	-- The Highlord Calls
+						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(62843, {	-- The Soul Contact
+						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
+						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
+					}),
+					q(59556, {	-- Welcome To Our House
+						["sourceQuests"] = { 58609 },	-- Taking The Seat
+						["provider"] = { "n", 158453 },	-- Baroness Draka
+						["coord"] = { 49.5, 21.9, 1698 },	-- Seat of the Primus
+					}),
+					
+					
 					-- non-chapter Necrolord quests
 					q(60111, {	-- Forging a Friendship
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
@@ -29,118 +157,8 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 40.2, 1698 },
 						["description"] = "Becomes available at Renown 7",
 					}),
-					q(61983, {	-- Replenish the Reservoir
-						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },
-						["isWeekly"] = true,
-					}),
+					
 
-
-					-- Covenant Intro
-					q(59556, {	-- Welcome To Our House
-						["sourceQuests"] = { 58609 },	-- Taking The Seat
-						["provider"] = { "n", 158453 },	-- Baroness Draka
-						["coord"] = { 49.5, 21.9, 1698 },
-					}),
-					q(61359, {	-- Power of the Primus
-						["sourceQuests"] = { 59556 },	-- Welcome To Our House
-						["provider"] = { "n", 165182 },	-- Baroness Draka
-						["coord"] = { 49.7, 43.4, 1698 },
-					}),
-					q(62833, {	-- A Hero of Great Renown
-						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
-						["sourceQuests"] = { 61359 },	-- Power of the Primus
-						["provider"] = { "n", 165182 },	-- Baroness Draka
-						["coord"] = { 49.7, 43.4, 1698 },
-					}),
-					q(62834, {	-- Glorious Ambition
-						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
-						["provider"] = { "n", 175998 },	-- Elspeth Larink
-						["coord"] = { 46.7, 40.4, 1698 },
-					}),
-					q(62835, {	-- A Call to Service
-						["sourceQuests"] = { 62834 },	-- Glorious Ambition
-						["provider"] = { "n", 175998 },	-- Elspeth Larink
-						["coord"] = { 46.7, 40.4, 1698 },
-					}),
-					q(62839, {	-- Anima is Strength
-						["sourceQuests"] = { 62835 },	-- A Call to Service
-						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 47.7, 29.1, 1698 },
-					}),
-					q(62840, {	-- Into the Reservoir
-						["sourceQuests"] = { 62839 },	-- Anima is Strength
-						["provider"] = { "n", 161909 },	-- Arkadia Moa
-						["coord"] = { 52.4, 38.4, 1698 },
-					}),
-					q(61397, {	-- Opportunity Strikes
-						["sourceQuests"] = { 62840 },	-- Into the Reservoir
-						["provider"] = { "n", 161909 },	-- Arkadia Moa
-						["coord"] = { 52.4, 38.4, 1698 },
-					}),
-					q(62843, {	-- The Soul Contact
-						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
-						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },
-					}),
-					q(62844, {	-- Return to Draka
-						["sourceQuests"] = { 62837 },	-- Hopeful News
-						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 40.0, 68.4, 1670 },
-						["maps"] = { 1670 },	-- Oribos
-					}),
-					q(62845, {	-- Bringing It All Together
-						["sourceQuests"] = { 62844 },	-- Return to Draka
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["g"] = {
-							i(182272),	-- Bladesworn Conjurer's Leggings
-							i(182254),	-- Bladesworn Harbinger's Greaves
-							i(182281),	-- Bladesworn Tactician's Chausses
-							i(182263),	-- Bladesworn Wraith's Breeches
-						},
-					}),
-					q(62846, {	-- Sanctum Improvements
-						["sourceQuests"] = { 62845 },	-- Bringing It All Together
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },
-					}),
-					q(59596, {	-- Collective Soul
-						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
-						["altQuests"] = { 63003 },	-- Collective Soul
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },
-					}),
-					q(63003, {	-- Collective Soul
-						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
-						["altQuests"] = { 59596 },	-- Collective Soul
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-					}),
-					q(59597, {	-- Come On, We're Simpatico!
-						["sourceQuests"] = { 59596, 63003 },	-- Collective Soul
-						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },
-					}),
-					q(61388, {	-- A Journey Made Together
-						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
-						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },
-					}),
-					q(62848, {	-- Conduits, What Are They For?
-						["sourceQuests"] = { 61388 },	-- A Journey Made Together
-						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },
-					}),
-					q(59609, {	-- No Rest For the Dead
-						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
-						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },
-					}),
-					q(63032, {	-- The Highlord Calls
-						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1698 },
-					}),
 
 					-- Zone Breadcrumbs?
 					q(62448, {	-- Securing the House
@@ -825,12 +843,6 @@ _.ExpansionFeatures =
 							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 						},
-					}),
-					q(61333, {	-- Return Lost Souls (5 soul version)
-						-- ["sourceQuests"] = {  },	-- TODO
-						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },
-						["isWeekly"] = true,
 					}),
 					q(62864, {	-- Return Lost Souls (10 soul version)
 						-- ["sourceQuests"] = {  },	-- TODO
