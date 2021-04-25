@@ -1419,7 +1419,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
 		SetDataSubMember("CollectedQuests", key, 1);
-		SetTempDataSubMember("CollectedQuests", key, 1);
+		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	end
 end});
@@ -1444,7 +1444,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
 	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
-		if t.questID and GetTempDataSubMember("CollectedQuests", t.questID) then
+		if t.questID and app.CurrentCharacter.Quests[t.questID] then
 			return 1;
 		end
 		-- can an alt quest of a repeatable quest be permanent?
@@ -1453,7 +1453,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,questID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
-				if GetTempDataSubMember("CollectedQuests", questID) then
+				if app.CurrentCharacter.Quests[questID] then
 					return 2;
 				end
 			end
@@ -1462,7 +1462,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			-- Import previously completed repeatable quest from Grail addon data
 			if Grail:HasQuestEverBeenCompleted(t.questID) then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
-				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				app.CurrentCharacter.Quests[t.questID] = 1;
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
@@ -1473,7 +1473,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 					-- any altQuest completed on this character, return shared completion
 					if Grail:HasQuestEverBeenCompleted(questID) then
 						SetDataSubMember("CollectedQuests", questID, 1);
-						SetTempDataSubMember("CollectedQuests", questID, 1);
+						app.CurrentCharacter.Quests[questID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -1488,7 +1488,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 
 			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
-				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				app.CurrentCharacter.Quests[t.questID] = 1;
 				return 1;
 			end
 
@@ -1499,7 +1499,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 					-- any altQuest completed on this character, return shared completion
 					if wqt_local[questID] and wqt_local[questID] > 0 then
 						SetDataSubMember("CollectedQuests", questID, 1);
-						SetTempDataSubMember("CollectedQuests", questID, 1);
+						app.CurrentCharacter.Quests[questID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -6701,7 +6701,7 @@ local fields = {
 		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then return 1; end
+		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
 		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
 		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
 		if t.altQuests then
@@ -6765,9 +6765,9 @@ app.events.TAXIMAP_OPENED = function()
 		end
 		local updates, searchResults = {};
 		for i,nodeID in ipairs(knownNodeIDs) do
-			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+			if not app.CurrentCharacter.FlightPaths[nodeID] then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				app.CurrentCharacter.FlightPaths[nodeID] = 1;
 				searchResults = SearchForField("flightPathID", nodeID);
 				if searchResults then
 					for j,searchResult in ipairs(searchResults) do
@@ -17501,8 +17501,10 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
 	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -17525,6 +17527,15 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
+	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
+	if collectedFlightPathsPerCharacter then
+		for guid,flightPaths in pairs(collectedFlightPathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.FlightPaths = flightPaths; end
+		end
+	end
+	
 	-- Convert over the deprecated CollectedFollowersPerCharacter table.
 	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
 	if collectedFollowersPerCharacter then
@@ -17540,6 +17551,15 @@ app.events.VARIABLES_LOADED = function()
 		for guid,locks in pairs(lockouts) do
 			local character = characterData[guid];
 			if character then character.Lockouts = locks; end
+		end
+	end
+	
+	-- Convert over the deprecated CollectedQuestsPerCharacter table.
+	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
+	if collectedQuestsPerCharacter then
+		for guid,quests in pairs(collectedQuestsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Quests = quests; end
 		end
 	end
 	
@@ -17606,31 +17626,6 @@ app.events.VARIABLES_LOADED = function()
 		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
 	end
-
-	-- Cache your character's flight path data.
-	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
-	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
-	if not myFlightPaths then
-		myFlightPaths = {};
-		flightPaths[app.GUID] = myFlightPaths;
-		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
-	end
-
-	-- Migrate Flight Path data to the new containers.
-	if AllTheThingsAD.FlightPaths then
-		for key,value in pairs(AllTheThingsAD.FlightPaths) do
-			SetDataSubMember("CollectedFlightPaths", key, value);
-		end
-	end
-	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
-		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
-			if value then
-				myFlightPaths[key] = value;
-				SetDataSubMember("CollectedFlightPaths", key, value);
-			end
-		end
-	end
-
 	
 	-- Cache your character's title data.
 	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
@@ -17676,10 +17671,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFactionsPerCharacter",
 		"CollectedFollowers",
 		"CollectedFlightPaths",
-		"CollectedFlightPathsPerCharacter",
 		"CollectedIllusions",
 		"CollectedQuests",
-		"CollectedQuestsPerCharacter",
 		"CollectedSources",
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
@@ -17753,15 +17746,6 @@ app.events.VARIABLES_LOADED = function()
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 
-		-- Cache your character's quest data.
-		local quests = GetDataMember("CollectedQuestsPerCharacter", {});
-		local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
-		if not myQuests then
-			myQuests = {};
-			quests[app.GUID] = myQuests;
-			SetTempDataMember("CollectedQuests", myQuests);
-		end
-
 		-- Cache some collection states for account wide quests that aren't actually account wide. (Allied Races)
 		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
 		for i,achievementQuests in ipairs({
@@ -17792,9 +17776,9 @@ app.events.VARIABLES_LOADED = function()
 			if select(4, GetAchievementInfo(achievementQuests[1])) then
 				for j,questID in ipairs(achievementQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
-					if not myQuests[questID] then
-						myQuests[questID] = 2;
-						quests[questID] = 1;
+					if not app.CurrentCharacter.Quests[questID] then
+						app.CurrentCharacter.Quests[questID] = 2;
+						SetDataSubMember("CollectedQuests", questID, 1);
 					end
 				end
 			end
@@ -17808,9 +17792,9 @@ app.events.VARIABLES_LOADED = function()
 			if SourceInfo.isCollected then
 				for j,questID in ipairs(appearanceQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
-					if not myQuests[questID] then
-						myQuests[questID] = 2;
-						quests[questID] = 1;
+					if not app.CurrentCharacter.Quests[questID] then
+						app.CurrentCharacter.Quests[questID] = 2;
+						SetDataSubMember("CollectedQuests", questID, 1);
 					end
 				end
 			end
