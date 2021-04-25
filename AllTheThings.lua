@@ -3085,7 +3085,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 				-- If the item is a relic, then let's compare against equipped relics.
 				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
-				local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
+				local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
 				if myArtifactData then
 					local progress, total = 0, 0;
 					local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
@@ -17400,21 +17400,17 @@ app.events.ARTIFACT_UPDATE = function(...)
 	if itemID then
 		local count = C_ArtifactUI.GetNumRelicSlots();
 		if count and count > 0 then
-			local actArtifactData = GetDataSubMember("ArtifactRelicItemLevels", itemID, {});
-			local myArtifactData = GetTempDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels[itemID];
+			if not myArtifactData then
+				myArtifactData = {};
+				app.CurrentCharacter.ArtifactRelicItemLevels[itemID] = myArtifactData;
+			end
 			for relicSlotIndex=1,count,1 do
 				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
-				local artifactData = {
+				myArtifactData[relicSlotIndex] = {
 					["relicType"] = relicType,
 					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
 				};
-				myArtifactData[relicSlotIndex] = artifactData;
-				local existingArtifactData = artifactData[relicSlotIndex];
-				if not existingArtifactData then
-					actArtifactData[relicSlotIndex] = artifactData;
-				elseif existingArtifactData.iLvl < artifactData.iLvl then
-					existingArtifactData.iLvl = artifactData.iLvl;
-				end
 			end
 		end
 	end
@@ -17486,6 +17482,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
 	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
@@ -17506,6 +17503,15 @@ app.events.VARIABLES_LOADED = function()
 			if not characterData[guid] then
 				characterData[guid] = { ["text"] = text };
 			end
+		end
+	end
+	
+	-- Convert over the deprecated ArtifactRelicItemLevelsPerCharacter table.
+	local artifactRelicItemLevelsPerCharacter = GetDataMember("ArtifactRelicItemLevelsPerCharacter");
+	if artifactRelicItemLevelsPerCharacter then
+		for guid,data in pairs(artifactRelicItemLevelsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.ArtifactRelicItemLevels = data; end
 		end
 	end
 	
@@ -17627,7 +17633,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
-	GetDataMember("ArtifactRelicItemLevels", {});
 
 	-- Cache your character's faction data.
 	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
@@ -17638,22 +17643,13 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedFactionBonusReputation", myfactionBonusReps);
 	end
 
-	-- Cache your character's artifact relic item level data.
-	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
-	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
-	if not myArtifactRelicItemLevels then
-		myArtifactRelicItemLevels = {};
-		artifactRelicItemLevels[app.GUID] = myArtifactRelicItemLevels;
-		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
-	end
+	
 
 	
 
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"ArtifactRelicItemLevelsPerCharacter",
-		"ArtifactRelicItemLevels",
 		"AzeriteEssenceRanks",
 		"Categories",
 		"CollectedAchievements",
