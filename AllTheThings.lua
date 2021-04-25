@@ -6488,15 +6488,15 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		local factionID = t.factionID;
-		if GetTempDataSubMember("CollectedFactions", factionID) then return 1; end
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
 		if t.standing >= t.maxstanding then
-			SetTempDataSubMember("CollectedFactions", factionID, 1);
+			app.CurrentCharacter.Factions[factionID] = 1;
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
 		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
 		if friendID and not nextFriendThreshold then
-			SetTempDataSubMember("CollectedFactions", factionID, 1);
+			app.CurrentCharacter.Factions[factionID] = 1;
 			SetDataSubMember("CollectedFactions", factionID, 1);
 			return 1;
 		end
@@ -7237,7 +7237,7 @@ local fields = {
 	["collected"] = function(t)
 		if t.factionID then
 			if t.repeatable then
-				return (GetTempDataSubMember("CollectedFactions", t.factionID) and 1)
+				return (app.CurrentCharacter.Factions[t.factionID] and 1)
 					or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
@@ -7733,10 +7733,10 @@ local itemFields = {
 		if t.factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 				if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
-					SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+					app.CurrentCharacter.Factions[t.factionID] = 1;
 					SetDataSubMember("CollectedFactions", t.factionID, 1);
 					return 1;
 				end
@@ -17494,6 +17494,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
 	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
@@ -17518,6 +17519,15 @@ app.events.VARIABLES_LOADED = function()
 		for guid,deaths in pairs(deathsPerCharacter) do
 			local character = characterData[guid];
 			if character then character.Deaths = deaths; end
+		end
+	end
+	
+	-- Convert over the deprecated CollectedFactionsPerCharacter table.
+	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
+	if collectedFactionsPerCharacter then
+		for guid,factions in pairs(collectedFactionsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Factions = factions; end
 		end
 	end
 	
@@ -17606,13 +17616,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 
 	-- Cache your character's faction data.
-	local factions = GetDataMember("CollectedFactionsPerCharacter", {});
-	local myfactions = GetTempDataMember("CollectedFactions", factions[app.GUID]);
-	if not myfactions then
-		myfactions = {};
-		factions[app.GUID] = myfactions;
-		SetTempDataMember("CollectedFactions", myfactions);
-	end
 	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
 	local myfactionBonusReps = GetTempDataMember("CollectedFactionBonusReputation", factionBonusReps[app.GUID]);
 	if not myfactionBonusReps then
@@ -17662,7 +17665,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedBuildingsPerCharacter",
 		"CollectedFactionBonusReputation",
 		"CollectedFactions",
-		"CollectedFactionsPerCharacter",
 		"CollectedFollowers",
 		"CollectedFlightPaths",
 		"CollectedIllusions",
