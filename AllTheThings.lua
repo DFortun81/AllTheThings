@@ -5630,9 +5630,9 @@ local fields = {
 		return app.CollectibleAchievements and app.CheckCustomCollects(t);
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
+		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
 		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
-			SetTempDataSubMember("CollectedAchievements", t.achievementID, 1);
+			app.CurrentCharacter.Achievements[t.achievementID] = 1;
 			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
 			return 1;
 		end
@@ -5742,10 +5742,13 @@ local criteriaFields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
-		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
-		if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(t.achievementID) or -1) then
-			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
+		local achievementID = t.achievementID;
+		if achievementID then
+			if app.CurrentCharacter.Achievements[achievementID] then return 1; end
+			if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", achievementID) then return 2; end
+			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
+				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+			end
 		end
 	end,
 	["index"] = function(t)
@@ -17482,6 +17485,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
 	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
