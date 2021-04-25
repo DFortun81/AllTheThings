@@ -12742,7 +12742,7 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
-local function Update(self, force, got)
+local function UpdateWindow(self, force, got)
 	if self.data then
 		-- print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
 		if force or self:IsVisible() then
@@ -13473,8 +13473,9 @@ function app:GetWindow(suffix, parent, onUpdate)
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
 		window.Refresh = Refresh;
-		window.BaseUpdate = Update;
 		window.Toggle = Toggle;
+		window.BaseUpdate = UpdateWindow;
+		window.Update = onUpdate or UpdateWindow;
 		window.SetVisible = SetVisible;
 		if AllTheThingsSettings then
 			if suffix == "Prime" then
@@ -13560,13 +13561,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
-
-		-- Update Function Pointers
-		if onUpdate then
-			window.Update = onUpdate;
-		else
-			window.Update = Update;
-		end
 		window:Update(true);
 	end
 	return window;
@@ -13613,17 +13607,17 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.data = {
-			['text'] = L["BOUNTY"],		-- L["BOUNTY"] = "Bounty"
+			['text'] = L["BOUNTY"],
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
-			["description"] = L["BOUNTY_DESC"],		-- L["BOUNTY_DESC"] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below."
+			["description"] = L["BOUNTY_DESC"],
 			['visible'] = true,
 			['expanded'] = true,
 			['indent'] = 0,
 			['g'] = {
 				{
-					['text'] = L["OPEN_AUTOMATICALLY"],		-- L["OPEN_AUTOMATICALLY"] = "Open Automatically"
+					['text'] = L["OPEN_AUTOMATICALLY"],
 					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
-					['description'] = L["OPEN_AUTOMATICALLY_DESC"],		-- L["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs."
+					['description'] = L["OPEN_AUTOMATICALLY_DESC"],
 					['visible'] = true,
 					['OnUpdate'] = app.AlwaysShowUpdate,
 					['OnClick'] = function(row, button)
@@ -13639,39 +13633,8 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						return true;
 					end,
 				},
-				--[[app.CreateInstance(746, {	-- Gruul's Lair
-					['description'] = "Gruul's Lair has been hotfixed! All of the items previously marked Unobtainable from Gruul the Dragonkiller have been fixed and confirmed as dropping once again!",
-					['isRaid'] = true,
-					['visible'] = true,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				}),
-				app.CreateInstance(745, { 	-- Karazhan (Raid)
-					['description'] = "The reward chest for completing the Chess Event in Karazhan has been fixed!",
-					['isRaid'] = true,
-					['visible'] = true,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				}),
-				app.CreateInstance(228, {	-- Blackrock Depths
-					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
-					['visible'] = true,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				}),
-				app.CreateInstance(230, {	-- Dire Maul (West)
-					['description'] = "This item has been hotfixed, and is confirmed dropping once again.  TY Blizzard.",
-					['g'] = {
-						app.CreateItemSource(7303, 18382),	-- Fluctuating Cloak
-					},
-				}),
-				app.CreateInstance(277, { 	-- Halls of Stone
-					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone appears to be fixed! Please let us know if this is still a problem!",
-				}),
-				app.CreateEncounter(1997, {	-- LFR High Command
-					['description'] = "|cffFF0000In LFR, The portal to High Command will not spawn after you defeat the Felhounds.  Therefore there is no way to obtain the High Command loot from LFR.  Other difficulties work fine!|r",
-					['visible'] = true,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				}),]]
 				app.CreateNPC(-34, {
-					['description'] = L["TWO_CLOAKS"],		-- L["TWO_CLOAKS"] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r"
+					['description'] = L["TWO_CLOAKS"],
 					['g'] = {
 						app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
 						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
@@ -13679,7 +13642,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 				}),
 				app.CreateNPC(-16, {	-- Rares
 					app.CreateNPC(87622, {	-- Ogom the Mangler
-						['description'] = L["OGOM_THE_MANGLER_DESC"],		-- L["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r"
+						['description'] = L["OGOM_THE_MANGLER_DESC"],
 						['g'] = {
 							app.CreateItemSource(67041, 119366),
 						},
@@ -13691,7 +13654,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
-			-- print("Refreshed Bounties")
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
 				self.data.g[1].saved = true;
 				self:SetVisible(true);
@@ -14384,6 +14346,16 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 							ExpandGroupsRecursively(data, true);
 						end
 					end
+					
+					-- Update the groups without forcing Debug Mode.
+					local visibilityFilter = app.VisibilityFilter;
+					app.VisibilityFilter = app.ObjectVisibilityFilter;
+					data.progress = 0;
+					data.total = 0;
+					BuildGroups(data, data.g);
+					UpdateGroups(data, data.g);
+					self:BaseUpdate(true);
+					app.VisibilityFilter = visibilityFilter;
 				end,
 				['g'] = {},
 				['results'] = {},
@@ -14433,16 +14405,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 		
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		
-		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter = app.VisibilityFilter;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		self.data.progress = 0;
-		self.data.total = 0;
-		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
-		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("SourceFinder", UIParent, function(self)
@@ -14556,7 +14519,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				master = "Master Loot",
 			};
 			local difficultyDescriptions = {
-				personalloot = L["PERSONAL_LOOT_DESC"],		-- L["PERSONAL_LOOT_DESC"] = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself."
+				personalloot = L["PERSONAL_LOOT_DESC"],
 				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
 				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
 			};
@@ -14630,17 +14593,17 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				return true;
 			end
 			raidassistant = {
-				['text'] = L["RAID_ASSISTANT"],		-- L["RAID_ASSISTANT"] = "Raid Assistant"
+				['text'] = L["RAID_ASSISTANT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
-				["description"] = L["RAID_ASSISTANT_DESC"],		-- L["RAID_ASSISTANT_DESC"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!"
+				["description"] = L["RAID_ASSISTANT_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = L["LOOT_SPEC_UNKNOWN"],		-- L["LOOT_SPEC_UNKNOWN"] = "Loot Specialization Unknown"
-						['title'] = L["LOOT_SPEC"],		-- L["LOOT_SPEC"] = "Loot Specialization"
-						["description"] = L["LOOT_SPEC_DESC"],		-- L["LOOT_SPEC_DESC"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!"
+						['text'] = L["LOOT_SPEC_UNKNOWN"],
+						['title'] = L["LOOT_SPEC"],
+						["description"] = L["LOOT_SPEC_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = lootspecialization;
@@ -14659,8 +14622,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					app.CreateDifficulty(1, {
-						['title'] = L["DUNGEON_DIFF"],		-- L["DUNGEON_DIFF"] = "Dungeon Difficulty"
-						["description"] = L["DUNGEON_DIFF_DESC"],		-- L["DUNGEON_DIFF_DESC"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!"
+						['title'] = L["DUNGEON_DIFF"],
+						["description"] = L["DUNGEON_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = dungeondifficulty;
@@ -14679,8 +14642,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					app.CreateDifficulty(14, {
-						['title'] = L["RAID_DIFF"],		-- L["RAID_DIFF"] = "Raid Difficulty"
-						["description"] = L["RAID_DIFF_DESC"],		-- L["RAID_DIFF_DESC"] = "The difficulty setting for raids.\n\nClick this row to change it now!"
+						['title'] = L["RAID_DIFF"],
+						["description"] = L["RAID_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
@@ -14702,8 +14665,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					app.CreateDifficulty(5, {
-						['title'] = L["LEGACY_RAID_DIFF"],		-- L["LEGACY_RAID_DIFF"] = "Legacy Raid Difficulty"
-						["description"] = L["LEGACY_RAID_DIFF_DESC"],		-- L["LEGACY_RAID_DIFF_DESC"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!"
+						['title'] = L["LEGACY_RAID_DIFF"],
+						["description"] = L["LEGACY_RAID_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
@@ -14719,9 +14682,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					{
-						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],		-- L["TELEPORT_TO_FROM_DUNGEON"] = "Teleport to/from Dungeon"
+						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
 						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],		-- L["TELEPORT_TO_FROM_DUNGEON_DESC"] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way."
+						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							LFGTeleport(IsInLFGDungeon());
@@ -14732,9 +14695,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["RESET_INSTANCES"],		-- L["RESET_INSTANCES"] = "Reset Instances"
+						['text'] = L["RESET_INSTANCES"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-						['description'] = L["RESET_INSTANCES_DESC"],		-- L["RESET_INSTANCES_DESC"] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!"
+						['description'] = L["RESET_INSTANCES_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							if IsAltKeyDown() then
@@ -14758,9 +14721,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["DELIST_GROUP"],		-- L["DELIST_GROUP"] = "Delist Group"
+						['text'] = L["DELIST_GROUP"],
 						['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-						['description'] = L["DELIST_GROUP_DESC"],		-- L["DELIST_GROUP_DESC"] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in."
+						['description'] = L["DELIST_GROUP_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							C_LFGList.RemoveListing();
@@ -14776,9 +14739,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["LEAVE_GROUP"],		-- L["LEAVE_GROUP"] = "Leave Group"
+						['text'] = L["LEAVE_GROUP"],
 						['icon'] = "Interface\\Icons\\Ability_Vanish",
-						['description'] = L["LEAVE_GROUP_DESC"],		-- L["LEAVE_GROUP_DESC"] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group."
+						['description'] = L["LEAVE_GROUP_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							C_PartyInfo.LeaveParty();
@@ -14798,7 +14761,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			lootspecialization = {
 				['text'] = L["LOOT_SPEC"],
 				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
-				["description"] = L["LOOT_SPEC_DESC_2"],		-- L["LOOT_SPEC_DESC_2"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["LOOT_SPEC_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14813,7 +14776,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
 							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
 							['id'] = 0,
-							["description"] = L["CURRENT_SPEC_DESC"],		-- L["CURRENT_SPEC_DESC"] = "If you switch your talents, your loot specialization changes with you."
+							["description"] = L["CURRENT_SPEC_DESC"],
 							['visible'] = true,
 							['OnClick'] = function(row, button)
 								self.data = raidassistant;
@@ -14846,7 +14809,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			dungeondifficulty = {
 				['text'] = L["DUNGEON_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["DUNGEON_DIFF_DESC_2"],		-- L["DUNGEON_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["DUNGEON_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14879,7 +14842,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			raiddifficulty = {
 				['text'] = L["RAID_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["RAID_DIFF_DESC_2"],		-- L["RAID_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14909,7 +14872,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			legacyraiddifficulty = {
 				['text'] = L["LEGACY_RAID_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],		-- L["LEGACY_RAID_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14963,8 +14926,12 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			local s = GetSpecialization();
 			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
 		end
+		
+		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		BuildGroups(self.data, self.data.g);
+		for i,g in ipairs(self.data.g) do
+			if g.OnUpdate then g.OnUpdate(g, self); end
+		end
 
 		-- Update the groups without forcing Debug Mode.
 		local visibilityFilter = app.VisibilityFilter;
@@ -15185,9 +15152,9 @@ app:GetWindow("Random", UIParent, function(self)
 			end
 			local mainHeader, filterHeader;
 			local rerollOption = {
-				['text'] = L["REROLL"],		-- L["REROLL"] = "Reroll"
+				['text'] = L["REROLL"],
 				['icon'] = "Interface\\Icons\\ability_monk_roll",
-				['description'] = L["REROLL_DESC"],		-- L["REROLL_DESC"] = "Click this button to reroll using the active filter."
+				['description'] = L["REROLL_DESC"],
 				['visible'] = true,
 				['OnClick'] = function(row, button)
 					self:Reroll();
@@ -15196,16 +15163,17 @@ app:GetWindow("Random", UIParent, function(self)
 				['OnUpdate'] = app.AlwaysShowUpdate,
 			};
 			filterHeader = {
-				['text'] = L["APPLY_SEARCH_FILTER"],		-- L["APPLY_SEARCH_FILTER"] = "Apply a Search Filter"
+				['text'] = L["APPLY_SEARCH_FILTER"],
 				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
-				["description"] = L["APPLY_SEARCH_FILTER_DESC"],		-- L["APPLY_SEARCH_FILTER_DESC"] = "Please select a search filter option."
+				["description"] = L["APPLY_SEARCH_FILTER_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
+				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
-						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],		-- L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"] = "Click this button to search... EVERYTHING."
+						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "AllTheThings");
@@ -15220,9 +15188,9 @@ app:GetWindow("Random", UIParent, function(self)
 						end
 					end}),
 					{
-						['text'] = L["ACHIEVEMENT"],		-- L["ACHIEVEMENT"] = "Achievement"
+						['text'] = L["ACHIEVEMENT"],
 						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
-						['description'] = L["ACHIEVEMENT_DESC"],		-- L["ACHIEVEMENT_DESC"] = "Click this button to select a random achievement based on what you're missing."
+						['description'] = L["ACHIEVEMENT_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Achievement");
@@ -15233,9 +15201,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["ITEM"],		-- L["ITEM"] = "Item"
+						['text'] = L["ITEM"],
 						['icon'] = "Interface\\Icons\\INV_Box_02",
-						['description'] = L["ITEM_DESC"],		-- L["ITEM_DESC"] = "Click this button to select a random item based on what you're missing."
+						['description'] = L["ITEM_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Item");
@@ -15246,9 +15214,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["INSTANCE"],		-- L["INSTANCE"] = "Instance"
+						['text'] = L["INSTANCE"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
-						['description'] = L["INSTANCE_DESC"],		-- L["INSTANCE_DESC"] = "Click this button to select a random instance based on what you're missing."
+						['description'] = L["INSTANCE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Instance");
@@ -15259,9 +15227,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["DUNGEON"],		-- L["DUNGEON"] = "Dungeon"
+						['text'] = L["DUNGEON"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
-						['description'] = L["DUNGEON_DESC"],		-- L["DUNGEON_DESC"] = "Click this button to select a random dungeon based on what you're missing."
+						['description'] = L["DUNGEON_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Dungeon");
@@ -15272,9 +15240,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["RAID"],		-- L["RAID"] = "Raid"
+						['text'] = L["RAID"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
-						['description'] = L["RAID_DESC"],		-- L["RAID_DESC"] = "Click this button to select a random raid based on what you're missing."
+						['description'] = L["RAID_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Raid");
@@ -15298,9 +15266,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["PET"],		-- L["PET"] = "Pet"
+						['text'] = L["PET"],
 						['icon'] = "Interface\\Icons\\INV_Box_02",
-						['description'] = L["PET_DESC"],		-- L["PET_DESC"] = "Click this button to select a random pet based on what you're missing."
+						['description'] = L["PET_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
@@ -15311,10 +15279,10 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["QUEST"],		-- L["QUEST"] = "Quest"
+						['text'] = L["QUEST"],
 						['icon'] = "Interface\\GossipFrame\\AvailableQuestIcon",
 						['preview'] = "Interface\\Icons\\Achievement_Quests_Completed_08",
-						['description'] = L["QUEST_DESC"],		-- L["QUEST_DESC"] = "Click this button to select a random quest based on what you're missing."
+						['description'] = L["QUEST_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Quest");
@@ -15325,9 +15293,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["TOY"],		-- L["TOY"] = "Toy"
+						['text'] = L["TOY"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
-						['description'] = L["TOY_DESC"],		-- L["TOY_DESC"] = "Click this button to select a random toy based on what you're missing."
+						['description'] = L["TOY_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Toy");
@@ -15338,9 +15306,9 @@ app:GetWindow("Random", UIParent, function(self)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["ZONE"],		-- L["ZONE"] = "Zone"
+						['text'] = L["ZONE"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = L["ZONE_DESC"],		-- L["ZONE_DESC"] = "Click this button to select a random zone based on what you're missing."
+						['description'] = L["ZONE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Zone");
@@ -15353,9 +15321,9 @@ app:GetWindow("Random", UIParent, function(self)
 				},
 			};
 			mainHeader = {
-				['text'] = L["GO_GO_RANDOM"],		-- L["GO_GO_RANDOM"] = "Random - Go Get 'Em!"
+				['text'] = L["GO_GO_RANDOM"],
 				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
-				["description"] = L["GO_GO_RANDOM_DESC"],		-- L["GO_GO_RANDOM_DESC"] = "This window allows you to randomly select a place or item to get. Go get 'em!"
+				["description"] = L["GO_GO_RANDOM_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
@@ -15363,13 +15331,13 @@ app:GetWindow("Random", UIParent, function(self)
 				["indent"] = 0,
 				['options'] = {
 					{
-						['text'] = L["CHANGE_SEARCH_FILTER"],		-- L["CHANGE_SEARCH_FILTER"] = "Change Search Filter"
+						['text'] = L["CHANGE_SEARCH_FILTER"],
 						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
-						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],		-- L["CHANGE_SEARCH_FILTER_DESC"] = "Click this to change your search filter."
+						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = filterHeader;
-							self:BaseUpdate(true);
+							self:Update(true);
 							return true;
 						end,
 						['OnUpdate'] = app.AlwaysShowUpdate,
@@ -15386,8 +15354,8 @@ app:GetWindow("Random", UIParent, function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					rerollOption.text = L["REROLL_2"] .. method;		-- L["REROLL_2"] = "Reroll: "
-					method = "Select" .. method;		-- L["SELECT"] = "Select"
+					rerollOption.text = L["REROLL_2"] .. method;
+					method = L["SELECT"] .. method;
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
@@ -15407,13 +15375,13 @@ app:GetWindow("Random", UIParent, function(self)
 						if selected then
 							MergeObject(self.data.g, CreateObject(selected));
 						else
-							app.print(L["NOTHING_TO_SELECT_FROM"]);		-- L["NOTHING_TO_SELECT_FROM"] = "There was nothing to randomly select from."
+							app.print(L["NOTHING_TO_SELECT_FROM"]);
 						end
 					else
 						app.print(L["NOTHING_TO_SELECT_FROM"]);
 					end
 				else
-					app.print(L["NO_SEARCH_METHOD"]);		-- L["NO_SEARCH_METHOD"] = "No search method specified."
+					app.print(L["NO_SEARCH_METHOD"]);
 				end
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
@@ -15427,7 +15395,7 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");		--
+			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");
 		end
 
 		-- Update the window and all of its row data
