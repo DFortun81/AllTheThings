@@ -570,8 +570,6 @@ _.Zones =
 				q(45350),	-- Countering the Contagion
 				q(45347),	-- Crafting a Cure
 				q(45024),	-- Cult Culling
-				q(44272),	-- Darkheart Thicket
-				q(43551),	-- Darkheart Thicket
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash
 				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
@@ -583,8 +581,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45026),	-- Expending Fel Energy
-				q(44271),	-- Eye of Azshara
-				q(44270),	-- Eye of Azshara
 				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
@@ -618,8 +614,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46353),	-- Master Who?
-				q(44266),	-- Maw of Souls
-				q(44267),	-- Maw of Souls
 				q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 				q(43574),	-- Maw of Souls: Maul of the Dead
 				q(46260, {	-- Meld Into the Shadows
@@ -627,11 +621,7 @@ _.Zones =
 				}),
 				q(45345),	-- Mischievous Sprites
 				q(45827),	-- Monk
-				q(44264),	-- Neltharion's Lair
-				q(44265),	-- Neltharion's Lair
 				q(42730),	-- Noggenfogger's Reasonable Request
-				q(44269),	-- Odyn's Challenge
-				q(44268),	-- Odyn's Challenge
 				q(45243),	-- On Daumyr's Wings
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
@@ -650,7 +640,6 @@ _.Zones =
 				q(46267),	-- Return of the Battlelord
 				q(42449),	-- Return of the Four Horsemen
 				q(45331),	-- Return to Acherus
-				q(44917),	-- Return to Karazhan: The Tower of Power
 				q(38803),	-- Rin'thissa
 				q(45576, {	-- Rise Up
 					["races"] = HORDE_ONLY,
@@ -685,7 +674,6 @@ _.Zones =
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(43268),	-- Tech It Up A Notch
-				q(44263),	-- The Arcway
 				q(44787),	-- The Bonemother
 				q(46777),	-- The Bounties of Legionfall
 				q(38990),	-- The Call of Icecrown
@@ -708,9 +696,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42537),	-- The King Rises
-				q(43545),	-- The Lord of Black Rook Hold
-				q(44276),	-- The Lord of Black Rook Hold
-				q(44277),	-- The Lord of Black Rook Hold
 				q(46666),	-- The Motherlode
 				q(45553),	-- The Nighthuntress Beckons
 				q(44775),	-- The Peak of Bones
@@ -739,10 +724,6 @@ _.Zones =
 				q(43267),	-- Troops in the Field
 				q(44234),	-- Unleashing our Wrath
 				q(45557),	-- Unnatural Consequences
-				q(44261),	-- Vault of the Wardens
-				q(44260),	-- Vault of the Wardens
-				q(44259),	-- Violet Hold
-				q(44258),	-- Violet Hold
 				q(45826),	-- Warlock
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!

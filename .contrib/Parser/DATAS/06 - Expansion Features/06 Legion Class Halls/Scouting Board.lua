@@ -91,7 +91,7 @@ _.ExpansionFeatures =
 						q(44555, {	-- Khadgar's Discovery
 							["lvl"] = 110,
 						}),
-						un(REMOVED_FROM_GAME, q(43553, {	-- Maw of Souls: Into the Maw of Souls(Normal)
+						un(REMOVED_FROM_GAME, q(43553, {	-- Maw of Souls: Into the Maw of Souls (Normal)
 							un(REMOVED_FROM_GAME, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)
 						})),
 						un(REMOVED_FROM_GAME, q(44266, {	-- Maw of Souls: Into the Maw of Souls (Heroic)
@@ -100,7 +100,7 @@ _.ExpansionFeatures =
 						un(REMOVED_FROM_GAME, q(44267, {	-- Maw of Souls: Into the Maw of Souls (Mythic)
 							un(REMOVED_FROM_GAME, i(141180)),	-- Seaweed-Encrusted Satchel (Mythic)
 						})),
-						un(REMOVED_FROM_GAME, q(43554, {	-- Neltharion's Lair: Into Neltharion's Lair(Normal)
+						un(REMOVED_FROM_GAME, q(43554, {	-- Neltharion's Lair: Into Neltharion's Lair (Normal)
 							un(REMOVED_FROM_GAME, i(141161)),	-- Cache of the Black Dragon (Normal)
 						})),
 						un(REMOVED_FROM_GAME, q(44264, {	-- Neltharion's Lair: Into Neltharion's Lair (Heroic)
@@ -135,7 +135,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
 						}),
-						un(REMOVED_FROM_GAME, q(43555, {	-- The Arcway: Into the Arcway (Normal) --
+						un(REMOVED_FROM_GAME, q(43555, {	-- The Arcway: Into the Arcway (Normal)
 							un(REMOVED_FROM_GAME, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
 						})),
 						un(REMOVED_FROM_GAME, q(44262, {	-- The Arcway: Into the Arcway (Heroic)
