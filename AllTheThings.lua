@@ -17536,6 +17536,15 @@ app.events.VARIABLES_LOADED = function()
 	end
 	if not accountWideData.Deaths then accountWideData.Deaths = 0; end
 	
+	-- Update the total account wide death counter.
+	local deaths = 0;
+	for guid,character in pairs(characterData) do
+		if character and character.Deaths and character.Deaths > 0 then
+			deaths = deaths + character.Deaths;
+		end
+	end
+	accountWideData.Deaths = deaths;
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
@@ -17680,7 +17689,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedTitlesPerCharacter",
 		"CollectedToys",
 		"CustomCollectibility",
-		"DeathsPerCharacter",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"LockedWindows",
