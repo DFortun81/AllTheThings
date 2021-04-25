@@ -5903,7 +5903,7 @@ local fields = {
 		return app.CollectibleAzeriteEssences;
 	end,
 	["collected"] = function(t)
-		if (GetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0) >= t.rank then
+		if (app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] or 0) >= t.rank then
 			return 1;
 		end
 
@@ -5912,7 +5912,7 @@ local fields = {
 		if info and info.unlocked then
 			if t.rank and info.rank then
 				if info.rank >= t.rank then
-					SetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank);
+					app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank;
 					if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
 					return 1;
 				end
@@ -17486,6 +17486,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
@@ -17505,6 +17506,15 @@ app.events.VARIABLES_LOADED = function()
 			if not characterData[guid] then
 				characterData[guid] = { ["text"] = text };
 			end
+		end
+	end
+	
+	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
+	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
+	if azeriteEssenceRanksPerCharacter then
+		for guid,data in pairs(azeriteEssenceRanksPerCharacter) do
+			local character = characterData[guid];
+			if character then character.AzeriteEssenceRanks = data; end
 		end
 	end
 	
@@ -17637,21 +17647,13 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
 	end
 
-	-- Cache your character's azerite essence rank data.
-	local azeriteEssenceRanks = GetDataMember("AzeriteEssenceRanksPerCharacter", {});
-	local myAzeriteEssenceRanks = GetTempDataMember("AzeriteEssenceRanks", azeriteEssenceRanks[app.GUID]);
-	if not myAzeriteEssenceRanks then
-		myAzeriteEssenceRanks = {};
-		azeriteEssenceRanks[app.GUID] = myAzeriteEssenceRanks;
-		SetTempDataMember("AzeriteEssenceRanks", myAzeriteEssenceRanks);
-	end
+	
 
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"ArtifactRelicItemLevelsPerCharacter",
 		"ArtifactRelicItemLevels",
-		"AzeriteEssenceRanksPerCharacter",
 		"AzeriteEssenceRanks",
 		"Categories",
 		"CollectedAchievements",
