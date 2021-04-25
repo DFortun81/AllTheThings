@@ -91,8 +91,6 @@ local function OnUpdate(self)
 	-- Stop running OnUpdate if nothing in the Stack to process
 	if #self.__stack < 1 then
 		self:SetScript("OnUpdate", nil);
-		-- clear the next yield value since nothing is running
-		if app.nextYield then app.nextYield = nil; end
 	end
 end
 local function Push(self, name, method)
@@ -839,6 +837,8 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
@@ -3488,10 +3488,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #knownBy > 0 then
 			table.sort(knownBy);
 			local desc = L["KNOWN_BY"];
-			local characters = GetDataMember("Characters");
 			for i,key in ipairs(knownBy) do
 				if i > 1 then desc = desc .. ", "; end
-				desc = desc .. (characters[key] or key);
+				local character = ATTCharacterData[key];
+				desc = desc .. (character and character.text or key);
 			end
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
@@ -5008,7 +5008,6 @@ local function GetGroupSortValue(group)
 end
 local function SortGroup(group, sortType, row, recur)
 	if group.visible and group.g then
-		app:CheckYieldHelper();
 		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
@@ -6128,6 +6127,22 @@ end)();
 
 -- Death Tracker Lib
 (function()
+local OnUpdateForDeathTrackerLib = function(t)
+	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
+		t.visible = app.GroupVisibilityFilter(t);
+		
+		local deaths = tonumber(select(1, GetStatistic(60)) or "0");
+		if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
+			app.CurrentCharacter.Deaths = deaths;
+			ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + (deaths - app.CurrentCharacter.Deaths);
+		end
+		t.parent.progress = t.parent.progress + t.progress;
+		t.parent.total = t.parent.total + t.total;
+	else
+		t.visible = false;
+	end
+	return true;
+end
 local fields = {
 	["key"] = function(t)
 		return "deaths";
@@ -6139,64 +6154,34 @@ local fields = {
 		return app.asset("Category_Deaths");
 	end,
 	["progress"] = function(t)
-		if t.visible then
-			-- TODO: Add Death Tracking as a Module.
-			-- (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or
-			return math.min(1000, GetDataMember("Deaths", 0));
-		else
-			return 0;
-		end
+		return math.min(1000, app.AccountWideDeaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
 	["total"] = function(t)
-		if t.visible then
-			return 1000;
-		else
-			return 0;
-		end
+		return 1000;
 	end,
 	["description"] = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 	end,
 	["OnTooltip"] = function(t)
 		local c = {};
-		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-		if deathsPerCharacter then
-			local characters = GetDataMember("Characters");
-			for guid,deaths in pairs(deathsPerCharacter) do
-				if guid and deaths and deaths > 0 then
-					table.insert(c, {
-						["name"] = characters[guid] or guid or "???",
-						["deaths"] = deaths or 0
-					});
-				end
+		for guid,character in pairs(ATTCharacterData) do
+			if character and character.Deaths and character.Deaths > 0 then
+				table.insert(c, character);
 			end
 		end
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
 			table.sort(c, function(a, b)
-				return a.deaths > b.deaths;
+				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. string.gsub(data.name, "-" .. GetRealmName(), ""), data.deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. string.gsub(data.text, "-" .. GetRealmName(), ""), data.Deaths, 1, 1, 1);
 			end
 		end
 	end,
 	["OnUpdate"] = function(t)
-		t.visible = app.MODE_DEBUG;
-		if t.visible then
-			local deaths = tonumber(select(1, GetStatistic(60)) or "0");
-			if deaths > 0 then
-				local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-				local oldDeaths = deathsPerCharacter[app.GUID] or 0;
-				if deaths > oldDeaths then
-					deathsPerCharacter[app.GUID] = deaths;
-					SetDataMember("Deaths", GetDataMember("Deaths", 0) + (deaths - oldDeaths));
-				end
-			end
-			t.parent.progress = t.parent.progress + t.progress;
-			t.parent.total = t.parent.total + t.total;
-		end
+		return OnUpdateForDeathTrackerLib;
 	end,
 };
 app.BaseDeathClass = app.BaseObjectFields(fields);
@@ -10037,7 +10022,6 @@ app.VerifyCache = function()
 				if not app.VerifyRecursion(group) then
 					print("Caused infinite .parent recursion",group.key,group[group.key]);
 				end
-				app:CheckYieldHelper();
 			end
 		end
 	end
@@ -10131,6 +10115,7 @@ end
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
+--[[
 UpdateGroup = function(parent, group, defaultVisibility)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
@@ -10220,6 +10205,8 @@ UpdateGroup = function(parent, group, defaultVisibility)
 
 	if group.OnUpdate then group:OnUpdate(); end
 end
+]]
+--[[
 UpdateGroups = function(parent, g, defaultVis)
 	if g then
 		-- whenever updating a group, ensure values are set if not
@@ -10230,9 +10217,100 @@ UpdateGroups = function(parent, g, defaultVis)
 		local defaultVisibility = defaultVis or app.MODE_DEBUG or false;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
-			app:CheckYieldHelper();
 			UpdateGroup(parent, group, defaultVisibility);
 		end
+	end
+end
+]]--
+UpdateGroup = function(parent, group)
+	local visible = false;
+	
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupRequirementsFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+			
+			-- Update the subgroups recursively...
+			visible = UpdateGroups(group, group.g);
+			
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				-- Increment the parent group's totals.
+				parent.total = (parent.total or 0) + group.total;
+				parent.progress = (parent.progress or 0) + group.progress;
+				
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowIncompleteThings(group) and not group.saved then
+					visible = true;
+				elseif group.itemID and app.CollectibleLoot and group.f then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+					
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif group.trackable then
+					-- If this group is trackable, then we should show it.
+					if app.ShowIncompleteThings(group) and not group.saved then
+						visible = true;
+					end
+				elseif group.itemID and app.CollectibleLoot and group.f then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		end
+	end
+	
+	-- Set the visibility
+	group.visible = visible;
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for key, group in ipairs(g) do
+			if group.OnUpdate then
+				if not group:OnUpdate() then
+					if UpdateGroup(parent, group) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(parent, group) then
+				visible = true;
+			end
+		end
+		return visible;
 	end
 end
 local function UpdateParentProgress(group)
@@ -10639,19 +10717,6 @@ function app.QuestCompletionHelper(questID)
 
 			-- Don't force a full refresh.
 			app:RefreshData(true, true);
-		end
-	end
-end
--- helps prevent coroutines running longer than 1 second per frame, not sure we can get a finer time resolution like this...
-function app:CheckYieldHelper()
-	if coroutine.running() then
-		-- first call, then set the next yield
-		if not app.nextYield then app.nextYield = time(); end
-		if app.nextYield < time() then
-			app.nextYield = time();
-			-- print("yieldHelper",app.nextYield);
-			-- app:UpdateWindows();
-			coroutine.yield();
 		end
 	end
 end
@@ -13560,9 +13625,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
 					['description'] = L["OPEN_AUTOMATICALLY_DESC"],		-- L["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs."
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 					['OnClick'] = function(row, button)
 						if app.Settings:GetTooltipSetting("Auto:BountyList") then
 							app.Settings:SetTooltipSetting("Auto:BountyList", false);
@@ -13580,24 +13643,18 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					['description'] = "Gruul's Lair has been hotfixed! All of the items previously marked Unobtainable from Gruul the Dragonkiller have been fixed and confirmed as dropping once again!",
 					['isRaid'] = true,
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				}),
 				app.CreateInstance(745, { 	-- Karazhan (Raid)
 					['description'] = "The reward chest for completing the Chess Event in Karazhan has been fixed!",
 					['isRaid'] = true,
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				}),
 				app.CreateInstance(228, {	-- Blackrock Depths
 					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				}),
 				app.CreateInstance(230, {	-- Dire Maul (West)
 					['description'] = "This item has been hotfixed, and is confirmed dropping once again.  TY Blizzard.",
@@ -13611,9 +13668,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 				app.CreateEncounter(1997, {	-- LFR High Command
 					['description'] = "|cffFF0000In LFR, The portal to High Command will not spawn after you defeat the Felhounds.  Therefore there is no way to obtain the High Command loot from LFR.  Other difficulties work fine!|r",
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				}),]]
 				app.CreateNPC(-34, {
 					['description'] = L["TWO_CLOAKS"],		-- L["TWO_CLOAKS"] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r"
@@ -13669,9 +13724,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
 						['text'] = "Check for missing maps now!",
@@ -13681,9 +13734,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -14364,7 +14415,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 						end);
 						return true;
 					end,
-					['OnUpdate'] = function(data) data.visible = true; end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
 			
@@ -14410,9 +14461,7 @@ app:GetWindow("SourceFinder", UIParent, function(self)
 						self:Update(true);
 						return true;
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
 			db.OnUpdate = function(db)
@@ -14915,9 +14964,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
 		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		for i,g in ipairs(self.data.g) do
-			if g.OnUpdate then g.OnUpdate(g); end
-		end
 		BuildGroups(self.data, self.data.g);
 
 		-- Update the groups without forcing Debug Mode.
@@ -15147,9 +15193,7 @@ app:GetWindow("Random", UIParent, function(self)
 					self:Reroll();
 					return true;
 				end,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 			};
 			filterHeader = {
 				['text'] = L["APPLY_SEARCH_FILTER"],		-- L["APPLY_SEARCH_FILTER"] = "Apply a Search Filter"
@@ -15157,9 +15201,7 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = L["APPLY_SEARCH_FILTER_DESC"],		-- L["APPLY_SEARCH_FILTER_DESC"] = "Please select a search filter option."
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
@@ -15171,9 +15213,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					}, { __index = function(t, key)
 						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
 							return app:GetWindow("Prime").data[key];
@@ -15190,9 +15230,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["ITEM"],		-- L["ITEM"] = "Item"
@@ -15205,9 +15243,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["INSTANCE"],		-- L["INSTANCE"] = "Instance"
@@ -15220,9 +15256,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["DUNGEON"],		-- L["DUNGEON"] = "Dungeon"
@@ -15235,9 +15269,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["RAID"],		-- L["RAID"] = "Raid"
@@ -15250,9 +15282,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["MOUNT"],
@@ -15265,9 +15295,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["PET"],		-- L["PET"] = "Pet"
@@ -15280,9 +15308,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["QUEST"],		-- L["QUEST"] = "Quest"
@@ -15296,9 +15322,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["TOY"],		-- L["TOY"] = "Toy"
@@ -15311,9 +15335,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["ZONE"],		-- L["ZONE"] = "Zone"
@@ -15326,9 +15348,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -15338,9 +15358,7 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = L["GO_GO_RANDOM_DESC"],		-- L["GO_GO_RANDOM_DESC"] = "This window allows you to randomly select a place or item to get. Go get 'em!"
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
 				['options'] = {
@@ -15354,9 +15372,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:BaseUpdate(true);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					rerollOption,
 				},
@@ -15801,9 +15817,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							Push(self, "WorldQuests-Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -16223,18 +16237,16 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				-- Put a 'Clear World Quests' click at the bottom
 				MergeObject(temp, {
-						['text'] = L["CLEAR_WORLD_QUESTS"],		-- L["CLEAR_WORLD_QUESTS"] = "Clear World Quests"
-						['icon'] = "Interface\\Icons\\ability_racial_haymaker",
-						['description'] = L["CLEAR_WORLD_QUESTS_DESC"],		-- L["CLEAR_WORLD_QUESTS_DESC"] = "Click to clear the current information within the World Quests frame"
-						['hash'] = "funClearWorldQuests",
-						['OnClick'] = function(data, button)
-							Push(self, "WorldQuests-Clear", self.Clear);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
-					});
+					['text'] = L["CLEAR_WORLD_QUESTS"],		-- L["CLEAR_WORLD_QUESTS"] = "Clear World Quests"
+					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],		-- L["CLEAR_WORLD_QUESTS_DESC"] = "Click to clear the current information within the World Quests frame"
+					['hash'] = "funClearWorldQuests",
+					['OnClick'] = function(data, button)
+						Push(self, "WorldQuests-Clear", self.Clear);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				});
 
 				for i,o in ipairs(temp) do
 					UnsetNotCollectible(o);
@@ -16688,9 +16700,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 
 	-- Update the window and all of its row data
 	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	for i,g in ipairs(self.data.g) do
-		if g.OnUpdate then g.OnUpdate(g); end
-	end
 	self.data.index = 0;
 	self.data.back = 1;
 	self.data.indent = 0;
@@ -17197,11 +17206,6 @@ app.OpenAuctionModule = function(self)
 			self.data.back = 1;
 			BuildGroups(self.data, self.data.g);
 			UpdateGroups(self.data, self.data.g);
-			for i,option in ipairs(self.data.options) do
-				if option.OnUpdate then
-					option.OnUpdate(option);
-				end
-			end
 			self.data.visible = true;
 			self:BaseUpdate(true);
 		end);
@@ -17518,7 +17522,59 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
-
+	
+	-- Character Data Storage
+	local characterData = ATTCharacterData;
+	if not characterData then
+		characterData = {};
+		ATTCharacterData = characterData;
+	end
+	local currentCharacter = characterData[app.GUID];
+	if not currentCharacter then
+		currentCharacter = {};
+		characterData[app.GUID] = currentCharacter;
+	end
+	if not currentCharacter.text then currentCharacter.text = app.Me; end
+	if not currentCharacter.name and name then currentCharacter.name = name; end
+	if not currentCharacter.realm and realm then currentCharacter.realm = realm; end
+	if not currentCharacter.guid and app.GUID then currentCharacter.guid = app.GUID; end
+	if not currentCharacter.lvl and app.Level then currentCharacter.lvl = app.Level; end
+	if not currentCharacter.factionID and app.FactionID then currentCharacter.factionID = app.FactionID; end
+	if not currentCharacter.classID and app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+	if not currentCharacter.class and class then currentCharacter.class = class; end
+	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	currentCharacter.lastPlayed = time();
+	app.CurrentCharacter = currentCharacter;
+	
+	-- Convert over the deprecated Characters table.
+	local characters = GetDataMember("Characters");
+	if characters then
+		for guid,text in pairs(characters) do
+			if not characterData[guid] then
+				characterData[guid] = { ["text"] = text };
+			end
+		end
+	end
+	
+	-- Convert over the deprecated DeathsPerCharacter table.
+	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+	if deathsPerCharacter then
+		for guid,deaths in pairs(deathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Deaths = deaths; end
+		end
+	end
+	
+	-- Account Wide Data Storage
+	local accountWideData = ATTAccountWideData;
+	if not accountWideData then
+		accountWideData = {};
+		ATTAccountWideData = accountWideData;
+	end
+	if not accountWideData.Deaths then accountWideData.Deaths = 0; end
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
@@ -17530,11 +17586,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
-
-	-- Cache your character's deaths.
-	local totalDeaths = GetDataMember("Deaths", 0);
-	local deaths = GetDataMember("DeathsPerCharacter", {});
-	deaths[app.GUID] = deaths[app.GUID] or 0;
 
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -17621,39 +17672,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedTitles", myTitles);
 	end
 
-	-- GUID to Character Name cache
-	local characters = GetDataMember("Characters", {});
-	if not characters[app.GUID] or true then -- Temporary
-		-- Convert old-style "ME" data entries to "GUID" entries.
-		local nameF = name .. "%-" .. (realm or GetRealmName());
-		local CleanData = function(t, t2)
-			for key,data in pairs(t) do
-				if string.match(key, nameF) then
-					for id,state in pairs(data) do
-						t2[id] = state;
-					end
-					t[key] = nil;
-				elseif key ~= app.GUID then
-					local isEmpty = true;
-					for id,state in pairs(data) do
-						isEmpty = false;
-						break;
-					end
-					if isEmpty then
-						t[key] = nil;
-					end
-				end
-			end
-		end
-		CleanData(buildings, myBuildings);
-		CleanData(factions, myfactions);
-		CleanData(followers, myFollowers);
-		CleanData(lockouts, myLockouts);
-		CleanData(recipes, myRecipes);
-		CleanData(titles, myTitles);
-		characters[app.GUID] = app.Me;
-	end
-
 	-- Cache your character's artifact relic item level data.
 	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
 	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
@@ -17680,7 +17698,6 @@ app.events.VARIABLES_LOADED = function()
 		"AzeriteEssenceRanksPerCharacter",
 		"AzeriteEssenceRanks",
 		"Categories",
-		"Characters",
 		"CollectedAchievements",
 		"CollectedArtifacts",
 		"CollectedBuildings",
@@ -17702,7 +17719,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedTitlesPerCharacter",
 		"CollectedToys",
 		"CustomCollectibility",
-		"Deaths",
 		"DeathsPerCharacter",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",

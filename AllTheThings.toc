@@ -3,7 +3,7 @@
 ## X-Curse-Project-ID: 267285
 ## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
 ## Name: AllTheThings
-## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionConfig, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionConfig, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: @project-version@
