@@ -52,7 +52,29 @@ _.Zones =
 							crit(10),	-- Heavy Handed Tactics
 						}),
 					}),
+					ach(15056),		-- Friend of Bloop
+					ach(15055),		-- Friend of Ooz
+					ach(15057),		-- Friend of Plaguey
+					ach(15043),		-- Hoarder of Torghast
 					ach(15001),		-- Jailer's Personal Stash
+					ach(15044, {	-- Krrprripripkraak's Heroes
+						crit(1),	-- Elder Gwenna
+						crit(2),	-- Foreman Thorodir
+						crit(3),	-- Te'zan
+						crit(4),	-- Warden Casad
+						crit(5),	-- Kivarr
+						crit(6),	-- Guardian Kota
+					}),
+					ach(15042, {	-- Tea for the Troubled
+						crit(1),	-- Simone
+						crit(2),	-- Laurent
+						crit(3),	-- CryptKeeper Kassir
+						crit(4),	-- The Countess
+						crit(5),	-- Temel
+						crit(6),	-- Lost Sybille
+						crit(7),	-- Vulca
+						crit(8),	-- Watchmaster Boromod
+					}),
 					ach(15041, {	-- The Zovaal Shuffle
 					--	TODO: should perhaps be under kyrian assault, but i'm not 100% sure.  for visibility, it might be best to put it under the daily quest that uses the parasols, if gubbins isn't up when the daily isn't available, but i had already turned the quest in so i'm not sure which one it was
 						["coords"] = {
@@ -72,6 +94,7 @@ _.Zones =
 						crit(2),	-- Venthyr Assault
 						crit(3),	-- Night Fae Assault
 					}),
+					ach(15039),		-- Up For Grabs
 				}),
 				q(63824, {	-- Kyrian Assault
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

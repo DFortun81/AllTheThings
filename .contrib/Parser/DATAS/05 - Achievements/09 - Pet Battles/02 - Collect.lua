@@ -749,6 +749,10 @@ _.Achievements =
 				ach(6555),		-- Building a Team (25)
 				ach(6554),		-- He's Mine! (10)
 			}),
+			-- PTR - TODO: merge into regular achievement list, figure out what zone or w/e this belongs in
+			ach(15004, {	-- A Sly Fox
+				i(186539),	-- Sly
+			}),
 		}),
 	}),
 };

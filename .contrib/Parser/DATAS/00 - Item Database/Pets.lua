@@ -1003,5 +1003,6 @@ pet(181267, 2957);	-- Writhing Spine
 -----------------
 pet(185919, 3097);	-- Flawless Amethyst Baubleworm
 pet(186537, 3104);	-- Ruby Baubleworm
+pet(186539, 3101);	-- Sly
 pet(186535, 3106);	-- Topaz Baubleworm
 pet(186536, 3105);	-- Turquoise Baubleworm

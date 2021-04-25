@@ -607,6 +607,12 @@ _.Zones =
 						}),
 					},
 				}),
+				n(177444, {	-- Ylva <Mate of Guarm>
+				--	["coord"] = { , , 1543 },
+					["g"] = {
+						ach(14943),	-- Guarmageddon - TODO: there are little baby guarm around the area, achievement possibly requires killing all of them.  add crs/other necessary context
+					},
+				}),
 				i(182329, {	-- Domination's Calling
 					["description"] = "This is NOT consumed upon use.",
 					["cost"] = {
