@@ -1587,30 +1587,8 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 
-local function GetMaxAchievement(container)
-	local maxID = -1
-	for k,v in pairs(container) do
-		if k == "achievementID" and v > maxID then
-			maxID = v
-		elseif k == "g" or (k ~= "parent" and type(v) == "table") then
-			local groupMaxID = GetMaxAchievement(v)
-			if groupMaxID > maxID then maxID = groupMaxID end
-		end
-	end
-   return maxID
-end
-local function SetAchievementCollectionStatus(achievementID, status)
-	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-	if id and bit.band(flags,0x1) == 0 and not isGuild and accCompleted then
-		SetDataSubMember("CollectedAchievements", id, 1)
-	end
-end
-local function RefreshAchievementCollection()
-	local maxID = GetMaxAchievement(app.Categories.Achievements)
-	for achievementID=1,maxID,1 do SetAchievementCollectionStatus(achievementID, 1) end
-end
 -- Search Caching
-local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties = {};
+local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties, RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -5789,6 +5767,25 @@ app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields);
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
+
+local function CheckAchievementCollectionStatus(achievementID)
+	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+	if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
+		SetDataSubMember("CollectedAchievements", id, 1)
+	end
+end
+RefreshAchievementCollection = function()
+	local maxid, achID = 0;
+	for achievementID,_ in pairs(fieldCache["achievementID"]) do
+		achID = tonumber(achievementID);
+		if achID > maxid then maxid = achID; end
+	end
+	for achievementID=maxid,1,-1 do
+		CheckAchievementCollectionStatus(achievementID);
+	end
+end
+app:RegisterEvent("ACHIEVEMENT_EARNED");
+app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
 end)();
 
 -- Artifact Lib
@@ -17402,7 +17399,6 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 end
 
 -- Register Events required at the start
-app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
@@ -17418,9 +17414,6 @@ app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 
 -- Define Event Behaviours
-app.events.ACHIEVEMENT_EARNED = function(achievementID)
-	SetAchievementCollectionStatus(achievementID, 1)
-end
 app.events.ARTIFACT_UPDATE = function(...)
 	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
 	if itemID then
@@ -17715,9 +17708,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Apply Locked Window Settings
 	app:ApplyLockedWindows();
 
-	-- Refresh Achievements
-	RefreshAchievementCollection();
-
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
@@ -17889,16 +17879,13 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	Callback(app.LocationTrigger);
 end
 app.events.ADDON_LOADED = function(addonName)
-	-- print("ADDON_LOADED",addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then
 		app.Blizzard_AuctionHouseUILoaded = true;
-		app:UnregisterEvent("ADDON_LOADED");
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
 	elseif addonName == "Blizzard_AchievementUI" then
 		RefreshAchievementCollection();
-		-- no point to try to refresh data yet... nothing to see
 	end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
