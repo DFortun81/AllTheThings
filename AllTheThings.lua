@@ -4848,7 +4848,7 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Harvest Title Collections
-		local collectedTitles = GetTempDataMember("CollectedTitles", {});
+		local collectedTitles = app.CurrentCharacter.Titles;
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
 		end
@@ -9382,17 +9382,10 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		if app.AccountWideTitles then
-			if GetDataSubMember("CollectedTitles", t.titleID) then
-				return 1;
-			end
-		else
-			if GetTempDataSubMember("CollectedTitles", t.titleID) then
-				return 1;
-			end
-		end
+		if app.CurrentCharacter.Titles[t.titleID] then return 1; end
+		if app.AccountWideTitles and GetDataSubMember("CollectedTitles", t.titleID) then return 2; end
 		if IsTitleKnown(t.titleID) then
-			SetTempDataSubMember("CollectedTitles", t.titleID, 1);
+			app.CurrentCharacter.Titles[t.titleID] = 1;
 			SetDataSubMember("CollectedTitles", t.titleID, 1);
 			return 1;
 		end
@@ -17505,6 +17498,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -17560,6 +17554,15 @@ app.events.VARIABLES_LOADED = function()
 		for guid,quests in pairs(collectedQuestsPerCharacter) do
 			local character = characterData[guid];
 			if character then character.Quests = quests; end
+		end
+	end
+	
+	-- Convert over the deprecated CollectedTitlesPerCharacter table.
+	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
+	if collectedTitlesPerCharacter then
+		for guid,titles in pairs(collectedTitlesPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Titles = titles; end
 		end
 	end
 	
@@ -17626,15 +17629,6 @@ app.events.VARIABLES_LOADED = function()
 		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
 	end
-	
-	-- Cache your character's title data.
-	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
-	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
-	if not myTitles then
-		myTitles = {};
-		titles[app.GUID] = myTitles;
-		SetTempDataMember("CollectedTitles", myTitles);
-	end
 
 	-- Cache your character's artifact relic item level data.
 	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
@@ -17677,7 +17671,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
 		"CollectedTitles",
-		"CollectedTitlesPerCharacter",
 		"CollectedToys",
 		"CustomCollectibility",
 		"FilterSeasonal",
