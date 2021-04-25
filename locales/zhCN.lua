@@ -63,7 +63,7 @@ local L = app.L;
 	L.UPON_COMPLETION = "前置条件";
 	L.UPON_COMPLETION_DESC = "以上任务需要完成后才能够完成以下的事情.";
 	L.QUEST_CHAIN_REQ = "任务链要求";
-	L.QUEST_CHAIN_REQ_DESC = "在能够完成最终任务之前需要完成以下任务.\n\n|cffff6512注意: 战网范围内的任务追踪将导致该窗口的行为不准确!|r";
+	L.QUEST_CHAIN_REQ_DESC = "在能够完成最终任务之前需要完成以下任务.";
 	L.AH_SEARCH_NO_ITEMS_FOUND = "搜索中找不到缓存的物品. 展开组并查看物品缓存名称, 然后重试. 使用此搜索只能找到BOE物品.";
 	L.AH_SEARCH_BOE_ONLY = "使用此搜索只能找到BOE物品.";
 	L.TSM_WARNING_1 = "运行此命令可能会通过将物品重新分配到 ";
@@ -204,6 +204,13 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_2 = " 物品.";
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+
+	-- Item Filter Window
+		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
+		--TODO: L.ITEM_FILTER_DESCRIPTION = "You can search the ATT Database by using a item filter.";
+		--TODO: L.ITEM_FILTER_BUTTON_TEXT = "Set Item Filter";
+		--TODO: L.ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
+		--TODO: L.ITEM_FILTER_POPUP_TEXT = "Which Item Filter would you like to search for?";
 
 -- Instructional Text 指引
 	L["MINIMAP_MOUSEOVER_TEXT"] = "右键：改变设置\n左键：打开主列表\nCtrl + 左键：打开迷你列表\nShift + 左键：刷新收藏"
@@ -3114,6 +3121,7 @@ for key, value in pairs({
 	[357565] = "被遗忘的渔翁之竿",
 	[357584] = "弗莱莎的恐惧战刃",
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
+	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",
 	[358298] = "禁忌密室保险箱",	-- Forbidden Chamber Lockbox
 	[358315] = "骸骨手碎片",

@@ -38,28 +38,28 @@ _.Zones =
 				n(-9976, {	-- Kalimdor
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-504, {	-- Fire Plume Ridge
-							["collectible"] = true,
-							["questID"] = 53591,
+						q(53591, {	-- Fire Plume Ridge
+							["name"] = "Fire Plume Ridge",
 							["coord"] = { 52.89, 55.76, 78 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 78 },	-- Un'goro Crater
 						}),
-						n(-503, {	-- Honor's Stand
-							["collectible"] = true,
-							["questID"] = 53600,
+						q(53600, {	-- Honor's Stand
+							["name"] = "Honor's Stand",
 							["coord"] = { 39.11, 09.31, 199 },
 							["races"] = { DARKIRON },
 							["maps"] = { 199 },	-- Southern Barrens
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 						}),
-						n(-501, {	-- Sulfuron Spire
-							["collectible"] = true,
-							["questID"] = 53601,
+						q(53601, {	-- Sulfuron Spire
+							["name"] = "Sulfuron Spire",
 							["coord"] = { 57.16, 77.09, 198 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 					},
@@ -67,28 +67,28 @@ _.Zones =
 				n(-9975, {	-- Eastern Kingdoms
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-502, {	-- Aerie Peak
-							["collectible"] = true,
-							["questID"] = 53585,
+						q(53585, {	-- Aerie Peak
+							["name"] = "Aerie Peak",
 							["coord"] = { 13.52, 46.81, 26 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 26 },	-- The Hinterlands
 						}),
-						n(-505, {	-- Blackrock Depths
-							["collectible"] = true,
-							["questID"] = 53587,
+						q(53587, {	-- Blackrock Depths
+							["name"] = "Blackrock Depths",
 							["coord"] = { 33.4, 24.7, 35 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 35 },	-- Blackrock Mountain
 						}),
-						n(-506, {	-- Nethergarde Keep
-							["collectible"] = true,
-							["questID"] = 53594,
+						q( 53594, {	-- Nethergarde Keep
+							["name"] = "Nethergarde Keep",
 							["coord"] = { 61.82, 12.74, 17 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 17 },	-- Blasted Lands
 						}),
 					},
@@ -96,20 +96,20 @@ _.Zones =
 				n(-9977, {	-- Outland
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-507, {	-- The Hand of Gul'dan [Outlands]
-							["collectible"] = true,
-							["questID"] = 53599,
+						q(53599, {	-- The Hand of Gul'dan [Outlands]
+							["name"] = "The Hand of Gul'dan",
 							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { SHADOWMOON_VALLEY },
 						}),
-						n(-508, {	-- Skald [Outlands]
-							["collectible"] = true,
-							["questID"] = 53597,
+						q(53597, {	-- Skald [Outlands]
+							["name"] = "Skald",
 							["coord"] = { 72.41, 17.65, BLADES_EDGE_MOUNTAINS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { BLADES_EDGE_MOUNTAINS },
 						}),
 					},
@@ -117,20 +117,20 @@ _.Zones =
 				n(-9978, {	-- Northrend
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-510, {	-- Argent Tournament Grounds
-							["collectible"] = true,
-							["questID"] = 53586,
+						q(53586, {	-- Argent Tournament Grounds
+							["name"] = "Argent Tournament Grounds",
 							["coord"] = { 76.97, 18.68, 118 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 118 },	-- Icecrown
 						}),
-						n(-509, {	-- Ruby Dragonshrine
-							["collectible"] = true,
-							["questID"] = 53596,
+						q(53596, {	-- Ruby Dragonshrine
+							["name"] = "Ruby Dragonshrine",
 							["coord"] = { 45.34, 49.92, 115 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 115 },	-- Dragonblight
 						}),
 					},
@@ -138,20 +138,20 @@ _.Zones =
 				n(-9980, {	-- Pandaria
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-512, {	-- One Keg
-							["collectible"] = true,
-							["questID"] = 53595,
+						q(53595, {	-- One Keg
+							["name"] = "One Keg",
 							["coord"] = { 57.68, 62.81, 379 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 379 },	-- Kun-Lai Summit
 						}),
-						n(-511, {	-- Stormstout Brewery
-							["collectible"] = true,
-							["questID"] = 53598,
+						q(53598, {	-- Stormstout Brewery
+							["name"] = "Stormstout Brewery",
 							["coord"] = { 31.51, 73.57, 376 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 376 },	-- Valley of the Four Winds
 						}),
 					},
@@ -159,20 +159,20 @@ _.Zones =
 				n(-9981, {	-- Draenor
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-514, {	-- Elemental Plateau
-							["collectible"] = true,
-							["questID"] = 53590,
+						q(53590, {	-- Elemental Plateau
+							["name"] = "Elemental Plateau",
 							["coord"] = { 65.74, 08.24, 550 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 550 },	-- Nagrand
 						}),
-						n(-513, {	-- The Pit
-							["collectible"] = true,
-							["questID"] = 53588,
+						q(53588, {	-- The Pit
+							["name"] = "The Pit",
 							["coord"] = { 46.69, 38.75, 543 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 543 },	-- Gorgrond
 						}),
 					},
@@ -180,20 +180,20 @@ _.Zones =
 				n(-528,  {	-- Broken Isles
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
-						n(-515, {	-- Aalgen Point
-							["collectible"] = true,
-							["questID"] = 53589,
+						q(53589, {	-- Aalgen Point
+							["name"] = "Aalgen Point",
 							["coord"] = { 71.68, 48.01, 646 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 646 },	-- Broken Shore
 						}),
-						n(-516, {	-- Neltharion's Vault
-							["collectible"] = true,
-							["questID"] = 53593,
+						q(53593, {	-- Neltharion's Vault
+							["name"] = "Neltharion's Vault",
 							["coord"] = { 44.66, 72.87, 650 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 650 },	-- Highmountain
 						}),
 					},

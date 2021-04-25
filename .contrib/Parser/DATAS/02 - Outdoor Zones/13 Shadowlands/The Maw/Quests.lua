@@ -1059,6 +1059,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
 				}),
+				q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
 				q(64129, {	-- Charge of the Wild Hunt
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178840 },	-- Niya
@@ -1168,6 +1174,33 @@ _.Zones =
 					["provider"] = { "n", 178808 },	-- Baroness Draka
 					["isDaily"] = true,
 					["coord"] = { 60.7, 27.9, 1961 },	-- Korthia
+				}),
+				q(64017, {	-- Oozing with Character (Bloop)
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.6, 1961 },	-- Korthia
+					["g"] = {
+						ach(15056),		-- Friend of Bloop
+					},
+				}),
+				q(64016, {	-- Oozing with Character (Ooz)
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.6, 1961 },	-- Korthia
+					["g"] = {
+						ach(15055),		-- Friend of Ooz
+					},
+				}),
+				q(63989, {	-- Oozing with Character (Plaguey)
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.6, 1961 },	-- Korthia
+					["g"] = {
+						ach(15057),		-- Friend of Plaguey
+					},
 				}),
 				q(64040, {	-- Patching Up the Troops
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

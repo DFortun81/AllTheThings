@@ -216,6 +216,13 @@ app.L = {
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 
+	-- Item Filter Window
+	["ITEM_FILTER_TEXT"] = "Item Filters";
+	["ITEM_FILTER_DESCRIPTION"] = "You can search the ATT Database by using a item filter.";
+	["ITEM_FILTER_BUTTON_TEXT"] = "Set Item Filter";
+	["ITEM_FILTER_BUTTON_DESCRIPTION"] = "Click this to change the item filter you want to search for within ATT.";
+	["ITEM_FILTER_POPUP_TEXT"] = "Which Item Filter would you like to search for?";
+
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\nShift + Click to Refresh Collections\nCtrl + Click to Expand/Collapse Recursively\nShift + Right Click to Sort Groups/Popout Lists|r";

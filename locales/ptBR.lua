@@ -61,7 +61,7 @@ local L = app.L;
 	--TODO: L.UPON_COMPLETION = "Upon Completion";
 	--TODO: L.UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below.";
 	--TODO: L.QUEST_CHAIN_REQ = "Quest Chain Requirements";
-	--TODO: L.QUEST_CHAIN_REQ_DESC = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r";
+	--TODO: L.QUEST_CHAIN_REQ_DESC = "The following quests need to be completed before being able to complete the final quest.";
 	--TODO: L.AH_SEARCH_NO_ITEMS_FOUND = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.";
 	--TODO: L.AH_SEARCH_BOE_ONLY = "Only Bind on Equip items can be found using this search.";
 	--TODO: L.TSM_WARNING_1 = "Running this command can potentially destroy your existing TSM settings by reassigning items to the ";
@@ -202,6 +202,13 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+
+	-- Item Filter Window
+		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
+		--TODO: L.ITEM_FILTER_DESCRIPTION = "You can search the ATT Database by using a item filter.";
+		--TODO: L.ITEM_FILTER_BUTTON_TEXT = "Set Item Filter";
+		--TODO: L.ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
+		--TODO: L.ITEM_FILTER_POPUP_TEXT = "Which Item Filter would you like to search for?";
 
 -- Instructional Text
 	--TODO: L.MINIMAP_MOUSEOVER_TEXT = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
@@ -3092,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "Vara de Pescar Esquecida",
 	[357584] = "Glaive Medonha de Vyrtha",
 	[357697] = "Tesouro do Capataz",	-- Taskmaster's Trove
+	[357726] = "Lança Quebrada",	-- Broken Spear
 	[357758] = "Barril de Peste",
 	[358298] = "Cofre da Câmara Proibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de Mão Esquelética",

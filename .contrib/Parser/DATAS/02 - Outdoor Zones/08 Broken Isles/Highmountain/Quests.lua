@@ -1018,8 +1018,6 @@ _.Zones =
 				q(39994),	-- Crab Rider Grmlrml
 				q(41241),	-- Cursed Queenfish Needed
 				q(45392),	-- Dark Memento
-				q(43551),	-- Darkheart Thicket
-				q(44272),	-- Darkheart Thicket
 				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
 				q(45560),	-- Destruction: Rumblings Near Feltotem
@@ -1029,8 +1027,6 @@ _.Zones =
 				q(41191),	-- Drogbar Deception
 				q(40186),	-- Drogbar Durability
 				q(39576),	-- Echoes of Deathwing
-				q(44270),	-- Eye of Azshara
-				q(44271),	-- Eye of Azshara
 				q(39762),	-- Feltotem Warlock
 				q(39430),	-- Flasking for a Favor
 				q(41822),	-- Following his Hoofsteps
@@ -1067,22 +1063,13 @@ _.Zones =
 				q(40406),	-- Luggut the Eggeater
 				q(43956),	-- Lysanis Shadesoul
 				q(42523),	-- Making Contact
-				q(43553),	-- Maw of Souls
-				q(44266),	-- Maw of Souls
-				q(44267),	-- Maw of Souls
 				q(38532),	-- Maw of Souls: Hammered By The Storm
 				q(42657),	-- Meeting in Moonclaw Vale
 				q(40242),	-- Mellok, Son of Torok
 				q(42400),	-- Missing Mages
-				q(43554),	-- Neltharion's Lair
-				q(44265),	-- Neltharion's Lair
-				q(44264),	-- Neltharion's Lair
 				q(41188),	-- Neltharion's Lair: Misdirected
 				q(39533),	-- Nogginclobber Arena
 				q(40955),	-- Oath of Service
-				q(43509),	-- Odyn's Challenge
-				q(44268),	-- Odyn's Challenge
-				q(44269),	-- Odyn's Challenge
 				q(40953),	-- On Eagle's Wings
 				q(44366),	-- One Last Adventure
 				q(42655),	-- Ore Under the Sea
@@ -1105,7 +1092,6 @@ _.Zones =
 				q(38792),	-- Rethu's Lesson
 				q(38790),	-- Rethu's Pick
 				q(38794),	-- Rethu's Sacrifice
-				q(44917),	-- Return to Karazhan: The Tower of Power
 				q(38803),	-- Rin'thissa
 				q(42519),	-- Rise, Champions
 				q(41837),	-- Rockaway Bully
@@ -1130,7 +1116,6 @@ _.Zones =
 				q(40958),	-- Tactical Matters
 				q(40184),	-- Tauren Tanning
 				q(42526),	-- Tech It Up A Notch
-				q(44263),	-- The Arcway
 				q(40959),	-- The Campaign Begins
 				q(41829),	-- The Darkfeather Scout
 				q(39427),	-- The Eagle Spirit's Blessing
@@ -1139,9 +1124,6 @@ _.Zones =
 				q(38513),	-- The Highmountain Smiths
 				q(38888),	-- The Highmountain Tauren
 				q(38787),	-- The Legend of Rethu Ironhorn
-				q(44276),	-- The Lord of Black Rook Hold
-				q(44277),	-- The Lord of Black Rook Hold
-				q(43545),	-- The Lord of Black Rook Hold
 				q(43182),	-- The Missing Vessel
 				q(44671),	-- The Muscle
 				q(42407),	-- The Nature of the Beast
@@ -1161,10 +1143,6 @@ _.Zones =
 				q(44212),	-- Unseen Fate
 				q(42394),	-- Unseen Protection
 				q(42388),	-- Urgent Summons
-				q(44261),	-- Vault of the Wardens
-				q(44260),	-- Vault of the Wardens
-				q(44259),	-- Violet Hold
-				q(44258),	-- Violet Hold
 				q(42280),	-- Vorthax
 				q(44233),	-- Walk This Way
 				q(41820),	-- Walk Without Rhythm

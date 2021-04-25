@@ -595,20 +595,20 @@ _.ExpansionFeatures =
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63057, {	-- Restoring Power
-								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },
 								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
+								["provider"] = { "n", 161909 },	-- Arkadia Moa
+								["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
 							}),
 							q(60722, {	-- Tower Power
 								["sourceQuests"] = { 63057 },	-- Restoring Power
 								["provider"] = { "n", 167205 },	-- Yondare Hex
-								["coord"] = { 49.0, 36.0, 1698 },
+								["coord"] = { 49.0, 36.0, 1698 },	-- Seat of the Primus
 							}),
 							o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 								["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 								["questID"] = 61647,
-								["coord"] = { 38.0, 65.6, 1536 },
 								["isDaily"] = true,
+								["coord"] = { 38.0, 65.6, 1536 },	-- Maldraxxus
 								["g"] = {
 									o(1278968766, {	-- Rune -- TODO: proper objectID?
 										["questID"] = 61648,

@@ -52,9 +52,6 @@ _.Zones =
 							crit(10),	-- Heavy Handed Tactics
 						}),
 					}),
-					ach(15056),		-- Friend of Bloop
-					ach(15055),		-- Friend of Ooz
-					ach(15057),		-- Friend of Plaguey
 					ach(15043),		-- Hoarder of Torghast
 					ach(15001),		-- Jailer's Personal Stash
 					ach(15044, {	-- Krrprripripkraak's Heroes
