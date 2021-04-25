@@ -3457,27 +3457,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- If the item is a recipe, then show which characters know this recipe.
 	if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-		local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
-		for key,value in pairs(recipes) do
-			if value[group.spellID] then
-				table.insert(knownBy, key);
+		local knownBy = {};
+		for guid,character in pairs(ATTCharacterData) do
+			if character.Spells and character.Spells[group.spellID] then
+				table.insert(knownBy, character);
 			end
 		end
 		if #knownBy > 0 then
-			table.sort(knownBy);
+			table.sort(knownBy, function(a, b)
+				return a.text < b.text;
+			end);
 			local desc = L["KNOWN_BY"];
-			for i,key in ipairs(knownBy) do
+			for i,character in ipairs(knownBy) do
 				if i > 1 then desc = desc .. ", "; end
-				local character = ATTCharacterData[key];
-				desc = desc .. (character and character.text or key);
+				desc = desc .. (character.text or "???");
 			end
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
-
-	-- print("Info for tooltip")
-	-- print(group.collectible,group.collected,group.spellID,info and #info)
-	-- app.PrintTable(collectionData or group)
+	
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
@@ -4856,12 +4854,11 @@ local function RefreshCollections()
 
 		-- Refresh Mounts / Pets
 		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
 				rawset(collectedSpells, spellID, 1);
-				rawset(collectedSpellsPerCharacter, spellID, 1);
+				rawset(app.CurrentCharacter.Spells, spellID, 1);
 			end
 		end
 
@@ -8018,11 +8015,10 @@ local mountFields = {
 		return app.CollectibleMounts;
 	end,
 	["collected"] = function(t)
-		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-		end
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			app.CurrentCharacter.Spells[t.spellID] = 1;
 			SetDataSubMember("CollectedSpells", t.spellID, 1);
 			return 1;
 		end
@@ -8078,13 +8074,12 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 		
 		-- Refresh Mounts
 		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		if newMountID then
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
 				if not collectedSpells[spellID] then
 					collectedSpells[spellID] = 1;
-					collectedSpellsPerCharacter[spellID] = 1;
+					app.CurrentCharacter.Spells[spellID] = 1;
 					UpdateSearchResults(SearchForField("spellID", spellID));
 					app:PlayRareFindSound();
 				end
@@ -8096,7 +8091,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 				if spellID and isCollected then
 					if not collectedSpells[spellID] then
 						collectedSpells[spellID] = 1;
-						collectedSpellsPerCharacter[spellID] = 1;
+						app.CurrentCharacter.Spells[spellID] = 1;
 						anyNewMounts = true;
 					end
 				end
@@ -9022,11 +9017,10 @@ local fields = {
 		return app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-		end
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
 		if IsSpellKnown(t.spellID) then
-			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			app.CurrentCharacter.Spells[t.spellID] = 1;
 			SetDataSubMember("CollectedSpells", t.spellID, 1);
 			return 1;
 		end
@@ -9088,11 +9082,10 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
-		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-		end
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
 		if IsSpellKnown(t.spellID) then
-			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			app.CurrentCharacter.Spells[t.spellID] = 1;
 			SetDataSubMember("CollectedSpells", t.spellID, 1);
 			return 1;
 		end
@@ -15457,12 +15450,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						end
 						if spellRecipeInfo.learned then
 							if spellRecipeInfo.disabled then
-								if GetTempDataSubMember("CollectedSpells", recipeID) then
-									SetTempDataSubMember("CollectedSpells", recipeID, nil);
+								if app.CurrentCharacter.Spells[recipeID] then
+									app.CurrentCharacter.Spells[recipeID] = nil;
 									SetDataSubMember("CollectedSpells", recipeID, nil);
 								end
 							else
-								SetTempDataSubMember("CollectedSpells", recipeID, 1);
+								app.CurrentCharacter.Spells[recipeID] = 1;
 								if not GetDataSubMember("CollectedSpells", recipeID) then
 									SetDataSubMember("CollectedSpells", recipeID, 1);
 									learned = learned + 1;
@@ -15642,8 +15635,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				if spellID then
 					local previousState = GetDataSubMember("CollectedSpells", spellID);
 					SetDataSubMember("CollectedSpells", spellID, 1);
-					if not GetTempDataSubMember("CollectedSpells", spellID) then
-						SetTempDataSubMember("CollectedSpells", spellID, 1);
+					if not app.CurrentCharacter.Spells[spellID] then
+						app.CurrentCharacter.Spells[spellID] = 1;
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
@@ -17500,6 +17493,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
@@ -17577,6 +17571,15 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedSpellsPerCharacter table.
+	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
+	if collectedSpellsPerCharacter then
+		for guid,spells in pairs(collectedSpellsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Spells = spells; end
+		end
+	end
+	
 	-- Convert over the deprecated CollectedTitlesPerCharacter table.
 	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
 	if collectedTitlesPerCharacter then
@@ -17615,15 +17618,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
-
-	-- Cache your character's profession data.
-	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
-	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
-	if not myRecipes then
-		myRecipes = {};
-		recipes[app.GUID] = myRecipes;
-		SetTempDataMember("CollectedSpells", myRecipes);
-	end
 
 	-- Cache your character's faction data.
 	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
@@ -17671,7 +17665,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedQuests",
 		"CollectedSources",
 		"CollectedSpells",
-		"CollectedSpellsPerCharacter",
 		"CollectedTitles",
 		"CollectedToys",
 		"CustomCollectibility",
