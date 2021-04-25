@@ -7243,7 +7243,6 @@ local fields = {
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
 					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
 					return 1;
 				end
@@ -7744,7 +7743,6 @@ local itemFields = {
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
 					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
 					return 1;
 				end
@@ -17637,20 +17635,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
-
-	-- Cache your character's faction data.
-	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
-	local myfactionBonusReps = GetTempDataMember("CollectedFactionBonusReputation", factionBonusReps[app.GUID]);
-	if not myfactionBonusReps then
-		myfactionBonusReps = {};
-		factionBonusReps[app.GUID] = myfactionBonusReps;
-		SetTempDataMember("CollectedFactionBonusReputation", myfactionBonusReps);
-	end
-
 	
-
-	
-
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
