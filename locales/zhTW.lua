@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	--TODO: [357565] = "Forgotten Angler's Rod",
 	--TODO: [357584] = "Vyrtha's Dredglaive",
 	--TODO: [357697] = "Taskmaster's Trove",	-- Taskmaster's Trove
+	--TODO: [357726] = "Broken Spear",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",
 	--TODO: [358298] = "Forbidden Chamber Lockbox",	-- Forbidden Chamber Lockbox
 	--TODO: [358315] = "Skeletal Hand Fragments",

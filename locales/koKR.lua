@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "잊힌 강태공의 낚싯대",
 	[357584] = "비르타의 공포전투검",
 	[357697] = "작업반장의 보물",	-- Taskmaster's Trove
+	[357726] = "부러진 창",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",
 	[358298] = "금단의 방 금고",	-- Forbidden Chamber Lockbox
 	[358315] = "해골 손 파편",

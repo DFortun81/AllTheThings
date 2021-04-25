@@ -3121,6 +3121,7 @@ for key, value in pairs({
 	[357565] = "被遗忘的渔翁之竿",
 	[357584] = "弗莱莎的恐惧战刃",
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
+	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",
 	[358298] = "禁忌密室保险箱",	-- Forbidden Chamber Lockbox
 	[358315] = "骸骨手碎片",

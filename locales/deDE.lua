@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "Vergessene Angelrute",
 	[357584] = "Vyrthas Schreckensgleve",
 	[357697] = "Schatz des Zuchtmeisters",	-- Taskmaster's Trove
+	[357726] = "Zerbrochener Speer",	-- Broken Spear
 	[357758] = "Seuchenfass",
 	[358298] = "Schließkassette der verbotenen Kammer",	-- Forbidden Chamber Lockbox
 	[358315] = "Skeletthandfragmente",
