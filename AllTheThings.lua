@@ -6863,9 +6863,9 @@ local fields = {
 		return t.itemID and app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
+		if app.CurrentCharacter.Buildings[t.buildingID] then return 1; end
 		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
-			SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
+			app.CurrentCharacter.Buildings[t.buildingID] = 1;
 			SetDataSubMember("CollectedBuildings", t.buildingID, 1);
 			return 1;
 		end
@@ -17493,6 +17493,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
@@ -17510,6 +17511,15 @@ app.events.VARIABLES_LOADED = function()
 			if not characterData[guid] then
 				characterData[guid] = { ["text"] = text };
 			end
+		end
+	end
+	
+	-- Convert over the deprecated CollectedBuildingsPerCharacter table.
+	local collectedBuildingsPerCharacter = GetDataMember("CollectedBuildingsPerCharacter");
+	if collectedBuildingsPerCharacter then
+		for guid,buildings in pairs(collectedBuildingsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Buildings = buildings; end
 		end
 	end
 	
@@ -17624,15 +17634,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedFactionBonusReputation", myfactionBonusReps);
 	end
 
-	-- Cache your character's building data.
-	local buildings = GetDataMember("CollectedBuildingsPerCharacter", {});
-	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.GUID]);
-	if not myBuildings then
-		myBuildings = {};
-		buildings[app.GUID] = myBuildings;
-		SetTempDataMember("CollectedBuildings", myBuildings);
-	end
-
 	-- Cache your character's artifact relic item level data.
 	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
 	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
@@ -17662,7 +17663,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedAchievements",
 		"CollectedArtifacts",
 		"CollectedBuildings",
-		"CollectedBuildingsPerCharacter",
 		"CollectedFactionBonusReputation",
 		"CollectedFactions",
 		"CollectedFollowers",
