@@ -11133,8 +11133,8 @@ function app:CreateMiniListForGroup(group)
 			end
 
 			-- Determine if this source is part of a set or two.
-			local allSets = GetDataMember("Sets", {});
-			local sourceSets = GetDataMember("SourceSets", {});
+			local allSets = {};
+			local sourceSets = {};
 			local GetVariantSets = C_TransmogSets.GetVariantSets;
 			local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
 			for i,data in ipairs(C_TransmogSets.GetAllSets()) do
@@ -17679,8 +17679,6 @@ app.events.VARIABLES_LOADED = function()
 		"RefreshedCollectionsAlready",
 		"ToyCacheRebuilt",
 		"SeasonalFilters",
-		"Sets",
-		"SourceSets",
 		"UnobtainableItemFilters",
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
