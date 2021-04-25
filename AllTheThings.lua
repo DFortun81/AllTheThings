@@ -1052,7 +1052,7 @@ local function BuildSourceText(group, l)
 	local parent = group.sourceParent or group.parent;
 	if parent then
 		-- From ATT-Classic .. needs some modification to handle Retail source depths
-		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID)) 
+		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
 		-- 	and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
 		-- 	return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 		-- end
@@ -2879,7 +2879,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					sourceGroup = j;
 				end
 			end
-			
+
 			-- Match the DB group by itemID if possible otherwise
 			if not sourceGroup then
 				for i,j in ipairs(group.g or group) do
@@ -2888,13 +2888,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			
+
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup then
 				if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
 					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 				end
-				
+
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
 					sourceID = GetSourceID(sourceGroup.link);
@@ -2903,7 +2903,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
 				sourceGroup = { ["missing"] = true };
 			end
-			
+
 			if sourceID then
 				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 				if sourceInfo and (sourceInfo.quality or 0) > 1 then
@@ -3475,7 +3475,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
-	
+
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
@@ -4138,7 +4138,7 @@ local function SearchForLink(link)
 					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
 					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
 				end
-				
+
 				-- Merge together the cost search results as well.
 				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
 				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
@@ -4629,7 +4629,7 @@ local function PopulateQuestObject(questObject)
 				for k,o in ipairs(item.g) do
 					if o.itemID == 140495 then	-- Torn Invitation
 						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
- 						if searchResults and #searchResults > 0 then
+						if searchResults and #searchResults > 0 then
 							if not o.g then o.g = {}; end
 							MergeObjects(o.g, CreateObject(searchResults));
 						end
@@ -6122,7 +6122,7 @@ end)();
 local OnUpdateForDeathTrackerLib = function(t)
 	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
 		t.visible = app.GroupVisibilityFilter(t);
-		
+
 		local deaths = tonumber(select(1, GetStatistic(60)) or "0");
 		if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
 			app.CurrentCharacter.Deaths = deaths;
@@ -6276,7 +6276,7 @@ local function GetCached(t, field)
 	if not t[t["key"]] then return nil; end
 	local id, _ = t[t["key"]];
 	local idcache = rawget(cache, id);
-	if not idcache then 
+	if not idcache then
 		idcache = {};
 		rawset(cache, id, idcache);
 		-- Set necessary fields from the result
@@ -6441,7 +6441,7 @@ local function GetCached(t, field)
 	if not t[t["key"]] then return nil; end
 	local id, _ = t[t["key"]];
 	local idcache = rawget(cache, id);
-	if not idcache then 
+	if not idcache then
 		idcache = {};
 		rawset(cache, id, idcache);
 		-- Set necessary fields from the result
@@ -7471,7 +7471,7 @@ local function GetCached(t, field)
 	if not t[t["key"]] then return nil; end
 	local id, _ = t[t["key"]];
 	local idcache = rawget(cache, id);
-	if not idcache then 
+	if not idcache then
 		idcache = {};
 		rawset(cache, id, idcache);
 		-- Set necessary fields from the result
@@ -7556,10 +7556,10 @@ local itemFields = {
 			local bonusID = t.bonusID;
 			if bonusID then
 				if bonusID > 0 then
-                    itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-                else
-                    itemLink = string.format("item:%d:::::::::::::", itemLink);
-                end
+					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
+				end
 			else
 				bonusID = t.modID;
 				if bonusID then
@@ -7723,7 +7723,7 @@ local itemFields = {
 		end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
-		
+
 	end,
 	["collectedAsFaction"] = function(t)
 		return t.collectedAsFactionOnly or t.collectedAsCost;
@@ -7758,7 +7758,7 @@ local itemFields = {
 	["collectedAsTransmog"] = function(t)
 		return GetDataSubMember("CollectedSources", rawget(t, "s"));
 	end,
-	["savedAsQuest"] = function(t) 
+	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
 };
@@ -7963,12 +7963,12 @@ app.CreateMapWithStyle = function(id)
 		end
 	end
 
-    if not mapObject.text then
-        local mapInfo = C_Map_GetMapInfo(id);
-        if mapInfo then
-            mapObject.text = mapInfo.name;
-        end
-    end
+	if not mapObject.text then
+		local mapInfo = C_Map_GetMapInfo(id);
+		if mapInfo then
+			mapObject.text = mapInfo.name;
+		end
+	end
 	return mapObject;
 end
 
@@ -8072,7 +8072,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 	-- print("NEW_MOUNT_ADDED", newMountID, ...);
 	StartCoroutine("RefreshMountCollection" .. (newMountID or "ALL"), function()
 		while InCombatLockdown() do coroutine.yield(); end
-		
+
 		-- Refresh Mounts
 		local collectedSpells = GetDataMember("CollectedSpells", {});
 		if newMountID then
@@ -8097,7 +8097,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 					end
 				end
 			end
-			
+
 			if anyNewMounts then
 				-- Wait a frame before harvesting item collection status.
 				coroutine.yield();
@@ -8255,7 +8255,7 @@ local npcFields = {
 	["sort"] = function(t)
 		return (t.order or "51") .. t.name;
 	end,
-	
+
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8298,7 +8298,7 @@ app.BaseNPC = app.BaseObjectFields(npcFields);
 
 local fields = RawCloneData(npcFields);
 fields.icon = npcFields.iconAsAchievement;
---fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center -> 
+--fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center ->
 app.BaseNPCWithAchievement = app.BaseObjectFields(fields);
 
 local fields = RawCloneData(npcFields);
@@ -8422,7 +8422,7 @@ local objectFields = {
 	["sort"] = function(t)
 		return (t.order or "51") .. t.name;
 	end,
-	
+
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8726,7 +8726,7 @@ local questFields = {
 	["saved"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	
+
 	["collectibleAsReputation"] = function(t)
 		-- If Collectible purely by being a Quest
 		if app.CollectibleAsQuest(t) then return true; end
@@ -8751,7 +8751,7 @@ local questFields = {
 		end
 		return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
 	end,
-	
+
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
 		-- determine if an altQuest is considered completed for this quest for this character
@@ -8893,7 +8893,7 @@ local fields = {
 		-- If the parent is collected, return immediately.
 		local collected = t.parent.collected;
 		if collected then return collected; end
-		
+
 		-- Check to see if the objective was completed.
 		local questID = t.questID;
 		if questID then
@@ -8910,7 +8910,7 @@ local fields = {
 		-- If the parent is saved, return immediately.
 		local saved = t.parent.saved;
 		if saved then return saved; end
-		
+
 		-- Check to see if the objective was completed.
 		local questID = t.questID;
 		if questID then
@@ -8961,7 +8961,7 @@ app.CollectibleAsQuest = function(t)
 			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
 				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
 			)
-			
+
 			-- If it is an item and associated to an active quest.
 			-- TODO: add t.requiredForQuestID
 			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID))
@@ -10203,7 +10203,7 @@ end
 ]]--
 UpdateGroup = function(parent, group)
 	local visible = false;
-	
+
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
@@ -10218,16 +10218,16 @@ UpdateGroup = function(parent, group)
 				group.progress = 0;
 				group.total = 0;
 			end
-			
+
 			-- Update the subgroups recursively...
 			visible = UpdateGroups(group, group.g);
-			
+
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
-				
+
 				-- If this group is trackable, then we should show it.
 				if group.total > 0 and app.GroupVisibilityFilter(group) then
 					visible = true;
@@ -10245,7 +10245,7 @@ UpdateGroup = function(parent, group)
 				if group.collectible then
 					-- Increment the parent group's totals.
 					parent.total = (parent.total or 0) + 1;
-					
+
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					if group.collected then
 						parent.progress = (parent.progress or 0) + 1;
@@ -10268,7 +10268,7 @@ UpdateGroup = function(parent, group)
 			end
 		end
 	end
-	
+
 	-- Set the visibility
 	group.visible = visible;
 	return visible;
@@ -14291,19 +14291,19 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			self.dirty = true;
-			
+
 			-- Item Filter
 			local actions = {
-				['text'] = "Item Filters",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
-				["description"] = "You can search the ATT Database by using a item filter.",
-				['visible'] = true, 
+				['text'] = L["ITEM_FILTER_TEXT"],
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+				["description"] = L["ITEM_FILTER_DESCRIPTION"],
+				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = function(data)
 					if not self.dirty then return nil; end
 					self.dirty = nil;
-					
+
 					local g = {};
 					table.insert(g, 1, data.setItemFilter);
 					if #data.results > 0 then
@@ -14325,7 +14325,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 							ExpandGroupsRecursively(data, true);
 						end
 					end
-					
+
 					-- Update the groups without forcing Debug Mode.
 					local visibilityFilter = app.VisibilityFilter;
 					app.VisibilityFilter = app.ObjectVisibilityFilter;
@@ -14339,12 +14339,12 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 				['g'] = {},
 				['results'] = {},
 				['setItemFilter'] = {
-					['text'] = "Set Item Filter",
+					['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
 					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
-					['description'] = "Click this to change the item filter you want to search for within ATT.",
+					['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						app:ShowPopupDialogWithEditBox("Which Item Filter would you like to search for?", "", function(text)
+						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
 							text = string.lower(text);
 							local f = tonumber(text);
 							if tostring(f) ~= text then
@@ -14369,11 +14369,11 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
-			
+
 			self.Reset = function()
 				self.data = actions;
 			end
-			
+
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
 				self.dirty = true;
@@ -14381,7 +14381,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 			end);
 			self:Reset();
 		end
-		
+
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
@@ -14905,7 +14905,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			local s = GetSpecialization();
 			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
 		end
-		
+
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		for i,g in ipairs(self.data.g) do
@@ -17461,7 +17461,7 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
-	
+
 	-- Character Data Storage
 	local characterData = ATTCharacterData;
 	if not characterData then
@@ -17497,7 +17497,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
-	
+
 	-- Convert over the deprecated Characters table.
 	local characters = GetDataMember("Characters");
 	if characters then
@@ -17507,7 +17507,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 	end
-	
+
 	-- Convert over the deprecated ArtifactRelicItemLevelsPerCharacter table.
 	local artifactRelicItemLevelsPerCharacter = GetDataMember("ArtifactRelicItemLevelsPerCharacter");
 	if artifactRelicItemLevelsPerCharacter then
@@ -17516,7 +17516,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.ArtifactRelicItemLevels = data; end
 		end
 	end
-	
+
 	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
 	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
 	if azeriteEssenceRanksPerCharacter then
@@ -17525,7 +17525,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.AzeriteEssenceRanks = data; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedBuildingsPerCharacter table.
 	local collectedBuildingsPerCharacter = GetDataMember("CollectedBuildingsPerCharacter");
 	if collectedBuildingsPerCharacter then
@@ -17534,7 +17534,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Buildings = buildings; end
 		end
 	end
-	
+
 	-- Convert over the deprecated DeathsPerCharacter table.
 	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
 	if deathsPerCharacter then
@@ -17543,7 +17543,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Deaths = deaths; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedFactionsPerCharacter table.
 	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
 	if collectedFactionsPerCharacter then
@@ -17552,7 +17552,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Factions = factions; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
 	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
 	if collectedFlightPathsPerCharacter then
@@ -17561,7 +17561,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.FlightPaths = flightPaths; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedFollowersPerCharacter table.
 	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
 	if collectedFollowersPerCharacter then
@@ -17570,7 +17570,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Followers = followers; end
 		end
 	end
-	
+
 	-- Convert over the deprecated lockouts table.
 	local lockouts = GetDataMember("lockouts");
 	if lockouts then
@@ -17579,7 +17579,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Lockouts = locks; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedQuestsPerCharacter table.
 	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
 	if collectedQuestsPerCharacter then
@@ -17588,7 +17588,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Quests = quests; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedSpellsPerCharacter table.
 	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
 	if collectedSpellsPerCharacter then
@@ -17597,7 +17597,7 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Spells = spells; end
 		end
 	end
-	
+
 	-- Convert over the deprecated CollectedTitlesPerCharacter table.
 	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
 	if collectedTitlesPerCharacter then
@@ -17606,14 +17606,14 @@ app.events.VARIABLES_LOADED = function()
 			if character then character.Titles = titles; end
 		end
 	end
-	
+
 	-- Account Wide Data Storage
 	local accountWideData = ATTAccountWideData;
 	if not accountWideData then
 		accountWideData = {};
 		ATTAccountWideData = accountWideData;
 	end
-	
+
 	-- Update the total account wide death counter.
 	local deaths = 0;
 	for guid,character in pairs(characterData) do
@@ -17622,9 +17622,9 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
-	
-	
-	
+
+
+
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
@@ -17635,7 +17635,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
-	
+
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({

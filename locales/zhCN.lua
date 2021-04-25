@@ -205,6 +205,13 @@ local L = app.L;
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
 
+	-- Item Filter Window
+		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
+		--TODO: L.ITEM_FILTER_DESCRIPTION = "You can search the ATT Database by using a item filter.";
+		--TODO: L.ITEM_FILTER_BUTTON_TEXT = "Set Item Filter";
+		--TODO: L.ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
+		--TODO: L.ITEM_FILTER_POPUP_TEXT = "Which Item Filter would you like to search for?";
+
 -- Instructional Text 指引
 	L["MINIMAP_MOUSEOVER_TEXT"] = "右键：改变设置\n左键：打开主列表\nCtrl + 左键：打开迷你列表\nShift + 左键：刷新收藏"
 	L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住并拖拽左键移动\n右键打开设置\nShift+左键刷新收藏\nCtrl+左键展开/折叠列表\nShift+右键点击排序组/弹出列表|r";
