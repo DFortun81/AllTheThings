@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "Canna da Pesca Dimenticata",
 	[357584] = "Lama da Guerra di Vyrtha",
 	[357697] = "Manufatto del Coordinatore",	-- Taskmaster's Trove
+	[357726] = "Lancia Spezzata",	-- Broken Spear
 	[357758] = "Barile di Piaga",
 	[358298] = "Scrigno della Stanza Proibita",	-- Forbidden Chamber Lockbox
 	[358315] = "Frammenti di Mano Scheletrica",

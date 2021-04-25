@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "Vara de Pescar Esquecida",
 	[357584] = "Glaive Medonha de Vyrtha",
 	[357697] = "Tesouro do Capataz",	-- Taskmaster's Trove
+	[357726] = "Lança Quebrada",	-- Broken Spear
 	[357758] = "Barril de Peste",
 	[358298] = "Cofre da Câmara Proibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de Mão Esquelética",

@@ -3099,6 +3099,7 @@ for key,value in pairs({
 	[357565] = "Caña de pescador olvidada",
 	[357584] = "Gujaterrible de Vyrtha",
 	[357697] = "Tesoro del capataz",	-- Taskmaster's Trove
+	[357726] = "Lanza rota",	-- Broken Spear
 	[357758] = "Barril de peste",
 	[358298] = "Arcón de cámara prohibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de mano esquelética",
