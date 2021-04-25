@@ -6806,7 +6806,7 @@ local fields = {
 		return t.info.portraitIconID;
 	end,
 	["link"] = function(t)
-		if GetTempDataSubMember("CollectedFollowers", t.followerID) then
+		if app.CurrentCharacter.Followers[t.followerID] then
 			return C_Garrison_GetFollowerLink(t.followerID);
 		else
 			return C_Garrison_GetFollowerLinkByID(t.followerID);
@@ -6816,9 +6816,9 @@ local fields = {
 		return app.CollectibleFollowers;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
+		if app.CurrentCharacter.Followers[t.followerID] then return 1; end
 		if C_Garrison_IsFollowerCollected(t.followerID) then
-			SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
+			app.CurrentCharacter.Followers[t.followerID] = 1;
 			SetDataSubMember("CollectedFollowers", t.followerID, 1);
 			return 1;
 		end
@@ -17501,6 +17501,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
@@ -17524,6 +17525,15 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedFollowersPerCharacter table.
+	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
+	if collectedFollowersPerCharacter then
+		for guid,followers in pairs(collectedFollowersPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Followers = followers; end
+		end
+	end
+	
 	-- Convert over the deprecated lockouts table.
 	local lockouts = GetDataMember("lockouts");
 	if lockouts then
@@ -17539,7 +17549,6 @@ app.events.VARIABLES_LOADED = function()
 		accountWideData = {};
 		ATTAccountWideData = accountWideData;
 	end
-	if not accountWideData.Deaths then accountWideData.Deaths = 0; end
 	
 	-- Update the total account wide death counter.
 	local deaths = 0;
@@ -17549,6 +17558,8 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
+	
+	
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
@@ -17620,15 +17631,7 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 
-	-- Cache your character's follower data.
-	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
-	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.GUID]);
-	if not myFollowers then
-		myFollowers = {};
-		followers[app.GUID] = myFollowers;
-		SetTempDataMember("CollectedFollowers", myFollowers);
-	end
-
+	
 	-- Cache your character's title data.
 	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
 	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
@@ -17672,7 +17675,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
 		"CollectedFollowers",
-		"CollectedFollowersPerCharacter",
 		"CollectedFlightPaths",
 		"CollectedFlightPathsPerCharacter",
 		"CollectedIllusions",
