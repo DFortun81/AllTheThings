@@ -4723,37 +4723,32 @@ local function RefreshSavesCoroutine()
 
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
-	local lockouts = GetDataMember("lockouts");
-	local myLockouts = GetTempDataMember("lockouts");
 
 	-- Check to make sure that the old instance data has expired
-	for character,locks in pairs(lockouts) do
-		local lockCount = 0;
-		for name,instance in pairs(locks) do
-			local count = 0;
-			for difficulty,lock in pairs(instance) do
-				if serverTime >= lock.reset then
+	for guid,character in pairs(ATTCharacterData) do
+		local locks = character.Lockouts;
+		if locks then
+			for name,instance in pairs(locks) do
+				local count = 0;
+				for difficulty,lock in pairs(instance) do
+					if serverTime >= lock.reset then
+						-- Clean this up.
+						instance[difficulty] = nil;
+					else
+						count = count + 1;
+					end
+				end
+				if count == 0 then
 					-- Clean this up.
-					instance[difficulty] = nil;
-				else
-					count = count + 1;
+					locks[name] = nil;
 				end
 			end
-			if count == 0 then
-				-- Clean this up.
-				locks[name] = nil;
-			else
-				lockCount = lockCount + 1;
-			end
-		end
-		if lockCount == 0 then
-			-- Clean this up.
-			lockouts[character] = nil;
 		end
 	end
 
 	-- Update Saved Instances
 	local converter = L["SAVED_TO_DJ_INSTANCES"];
+	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,saves do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
@@ -7527,7 +7522,7 @@ local fields = {
 		return t.locks;
 	end,
 	["locks"] = function(t)
-		local locks = GetTempDataSubMember("lockouts", t.name);
+		local locks = app.CurrentCharacter.Lockouts[t.name];
 		if locks then
 			rawset(t, "locks", locks);
 			return locks;
@@ -17506,6 +17501,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -17525,6 +17521,15 @@ app.events.VARIABLES_LOADED = function()
 		for guid,deaths in pairs(deathsPerCharacter) do
 			local character = characterData[guid];
 			if character then character.Deaths = deaths; end
+		end
+	end
+	
+	-- Convert over the deprecated lockouts table.
+	local lockouts = GetDataMember("lockouts");
+	if lockouts then
+		for guid,locks in pairs(lockouts) do
+			local character = characterData[guid];
+			if character then character.Lockouts = locks; end
 		end
 	end
 	
@@ -17556,15 +17561,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
-
-	-- Cache your character's lockouts.
-	local lockouts = GetDataMember("lockouts", {});
-	local myLockouts = GetTempDataMember("lockouts", lockouts[app.GUID]);
-	if not myLockouts then
-		myLockouts = {};
-		lockouts[app.GUID] = myLockouts;
-		SetTempDataMember("lockouts", myLockouts);
-	end
 
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
@@ -17692,7 +17688,6 @@ app.events.VARIABLES_LOADED = function()
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"LockedWindows",
-		"lockouts",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
