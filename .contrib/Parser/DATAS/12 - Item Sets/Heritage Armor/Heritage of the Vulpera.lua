@@ -7,7 +7,7 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1981, {	-- Heritage of the Vulpera
 			["races"] = { VULPERA },
-			["questid"] = 58435,
+			["questID"] = 58435,
 			["g"] = {
 				i(173968),	-- Vulpera Heritage Shawl
 				i(173971),	-- Vulpera Heritage Shoulderpads

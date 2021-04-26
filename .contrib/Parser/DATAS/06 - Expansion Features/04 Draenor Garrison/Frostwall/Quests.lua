@@ -12,6 +12,67 @@ _.ExpansionFeatures =
 					n(-152,  {	-- Garrison Campaign
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							-- 1st Quest of Garrison Campaign
+							q(32979, {    -- Garrison Campaign: Farseer's Rock
+								["provider"] = { "n", 74808 },    -- Thrall
+								["coord"] = { 51.0, 37.4, 976 },    -- Frostwall
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
+							-- 2nd quest of Garrison Campaign: Farseer's Rock questchain
+							q(32980, {    -- Eaters of the Elements
+								["sourceQuests"] = { 32979 },    -- Garrison Campaign: Farseer's Rock
+								["provider"] = { "n", 72230 },    -- Draka
+								["coord"] = { 57.6, 41.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Farseer's Rock questchain
+							q(33444, {    -- Eatercology
+								["sourceQuests"] = { 32980 },    -- Eaters of the Elements
+								["provider"] = { "n", 72230 },    -- Draka
+								["coord"] = { 57.2, 41.6, 525 },    -- Frostfire 
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32983, {    -- In the Shadow of Giants
+								["sourceQuests"] = { 32980 },    -- Eaters of the Elements
+								["provider"] = { "n", 74253 },    -- Farseer Drek'Thar
+								["coord"] = { 57.6, 41.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
+							-- 5th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32984, {    -- The Ascent
+								["sourceQuests"] = {
+									33444,    -- Eatercology
+									32983,    -- In the Shadow of Giants
+								},
+								["provider"] = { "n", 74253 },    -- Farseer Drek'Thar
+								["coord"] = { 74.0, 29.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
+							-- 6th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32985, {    -- Fury of Frostfire
+								["sourceQuests"] = { 32984 },    -- The Ascent
+								["provider"] = { "n", 74330 },    -- Farseer Drek'Thar
+								["coord"] = { 70.0, 38.2, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+								["g"] = {
+									i(119145),    -- Firefury Totem
+								},
+							}),
+							-- 7th (last) quest of Garrison Campaign: Farseer's Rock questchain
+							q(33427, {    -- Ours is the Fury
+								["sourceQuests"] = { 32985 },    -- Fury of Frostfire
+								["provider"] = { "n", 76622 },    -- Thrall
+								["coord"] = { 70.0, 38.2, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["lvl"] = 40,
+							}),
 							q(34335, {	-- Garrison Campaign: Crows In The Field
 								["races"] = HORDE_ONLY,
 							}),
@@ -43,9 +104,6 @@ _.ExpansionFeatures =
 							}),
 							q(35195, {
 								i(119134),	-- Toy
-							}),
-							q(32985, {
-								i(119145),	-- Toy
 							}),
 							q(38567, {	-- Garrison Campaign: War Council
 								["sourceQuests"] = { 36614 },	-- My Very Own Fortress
