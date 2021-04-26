@@ -1230,30 +1230,30 @@ _.NeverImplemented =
 			i(166929),	-- Dread Gladiator's Chain Waistguard
 			i(166930),	-- Dread Gladiator's Chain Armbands
 			i(179830),	-- Ardenweald Covenant Mail Chest
-			i(179831),	-- Ardenweald Covenant Mail feet
-			i(179832),	-- Ardenweald Covenant Mail hand
-			i(179833),	-- Ardenweald Covenant Mail head
-			i(179834),	-- Ardenweald Covenant Mail legs
-			i(179835),	-- Ardenweald Covenant Mail shoulder
-			i(179836),	-- Ardenweald Covenant Mail waist
-			i(179837),	-- Ardenweald Covenant Mail wrist
-			i(179838),	-- Ardenweald Covenant Mail wrist
-			i(179839),	-- Ardenweald Covenant Mail waist
-			i(179840),	-- Ardenweald Covenant Mail shoulder
-			i(179841),	-- Ardenweald Covenant Mail öegs
-			i(179842),	-- Ardenweald Covenant Mail head
-			i(179843),	-- Ardenweald Covenant Mail hand
-			i(179844),	-- Ardenweald Covenant Mail feet
-			i(179845),	-- Ardenweald Covenant Mail chest
-			i(179846),	-- Ardenweald Covenant Mail wrist
-			i(179847),	-- Ardenweald Covenant Mail waist
-			i(179848),	-- Ardenweald Covenant Mail shoulder
-			i(179849),	-- Ardenweald Covenant Mail legs
-			i(179850),	-- Ardenweald Covenant Mail head
-			i(179851),	-- Ardenweald Covenant Mail hand
-			i(179852),	-- Ardenweald Covenant Mail feet
-			i(179853),	-- Ardenweald Covenant Mail chest
-			i(179854),	-- Ardenweald Covenant Mail wrist
+			i(179831),	-- Ardenweald Covenant Mail Feet
+			i(179832),	-- Ardenweald Covenant Mail Hand
+			i(179833),	-- Ardenweald Covenant Mail Head
+			i(179834),	-- Ardenweald Covenant Mail Legs
+			i(179835),	-- Ardenweald Covenant Mail Shoulder
+			i(179836),	-- Ardenweald Covenant Mail Waist
+			i(179837),	-- Ardenweald Covenant Mail Wrist
+			i(179838),	-- Ardenweald Covenant Mail Wrist
+			i(179839),	-- Ardenweald Covenant Mail Waist
+			i(179840),	-- Ardenweald Covenant Mail Shoulder
+			i(179841),	-- Ardenweald Covenant Mail Legs
+			i(179842),	-- Ardenweald Covenant Mail Head
+			i(179843),	-- Ardenweald Covenant Mail Hand
+			i(179844),	-- Ardenweald Covenant Mail Feet
+			i(179845),	-- Ardenweald Covenant Mail Chest
+			i(179846),	-- Ardenweald Covenant Mail Wrist
+			i(179847),	-- Ardenweald Covenant Mail Waist
+			i(179848),	-- Ardenweald Covenant Mail Shoulder
+			i(179849),	-- Ardenweald Covenant Mail Legs
+			i(179850),	-- Ardenweald Covenant Mail Head
+			i(179851),	-- Ardenweald Covenant Mail Hand
+			i(179852),	-- Ardenweald Covenant Mail Feet
+			i(179853),	-- Ardenweald Covenant Mail Chest
+			i(179854),	-- Ardenweald Covenant Mail Wrist
 			i(92838),	-- Danio-Scale Belt
 			i(92839),	-- Danio-Scale Bracers
 			i(92840),	-- Danio-Scale Gauntlets

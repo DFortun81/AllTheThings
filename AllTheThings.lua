@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
+
 local app = select(2, ...);
 local L = app.L;
 local auctionFrame = CreateFrame("Frame");
@@ -5153,7 +5154,7 @@ function app.IsNPCQuestGiver(self, npcID)
 		return npcQuestsCache[npcID];
 	else
 		local group = app.SearchForField("creatureID", npcID);
-		if not group then 
+		if not group then
 			npcQuestsCache[npcID] = false;
 			return false;
 		end
@@ -5165,7 +5166,7 @@ function app.IsNPCQuestGiver(self, npcID)
 			end
 		end
 
-		npcQuestsCache[npcID] = false; 
+		npcQuestsCache[npcID] = false;
 		return false;
 	end
 end
@@ -9003,7 +9004,7 @@ local function RefreshQuestCompletionState(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
-	wipe(npcQuestsCache) 
+	wipe(npcQuestsCache)
 end
 
 -- Recipe Lib
@@ -10917,7 +10918,7 @@ local function CreateMinimapButton()
 		end
 	end
 	button:UpdateStyle();
-	
+
 	-- Button Configuration
 	local radius = 78;
 	local rounding = 10;
@@ -17050,7 +17051,7 @@ app.OpenAuctionModule = function(self)
 							["priority"] = -3,
 							["OnClick"] = function()
 								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-								
+
 								-- Only allow a scan once every 15 minutes.
 								local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
 								if cooldown - now < 0 then
@@ -17695,7 +17696,7 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
-	
+
 	-- Convert over the deprecated account wide tables.
 	local data = GetDataMember("CollectedAchievements");
 	if data then accountWideData.Achievements = data; end
