@@ -233,7 +233,7 @@ _.ExpansionFeatures =
 							-- 8th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35195, {    -- Socrethar's Fury
 								["sourceQuests"] = { 35194 },    -- Facing Demons
-								["provider"] = { "o", 231918 },    -- Laanda's Scroll -- I guess "o" is for object
+								["provider"] = { "o", 231918 },    -- Laanda's Scroll
 								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
 								["g"] = {
 									i(119134),    -- Sargerei Disguise
@@ -257,7 +257,7 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 36261 },    -- Garrison Campaign: Missing Grunt (H)
 								["provider"] = { "n", 79740 },    -- Warmaster Zog
-								["provider"] = { "o", 233956 },    -- Bloody Blade -- I guess "o" is for object
+								["provider"] = { "o", 233956 },    -- Bloody Blade
 								["coord"] = { 53.8, 54.6, 590 },    -- Frostwall -- Warmaster Zog
 								["coord"] = { 63.8, 44.9, 590 },    -- Frostwall -- Bloody Blade
 							}),
