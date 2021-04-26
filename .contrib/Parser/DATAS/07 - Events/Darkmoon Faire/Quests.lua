@@ -636,6 +636,17 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(12798, {	-- Swords Deck
+				["repeatable"] = true,
+				["provider"] = { "i", 37164 },	-- Swords Deck
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(39897),	-- Azure Shoulderguards
+					i(39895),	-- Cloaked Shoulderpads
+					i(39894),	-- Darkcloth Shoulders
+					i(131277),	-- Veiled Pauldrons
+				},
+			}),
 			q(29467, {	-- Talkin' Tonks
 				["u"] = REMOVED_FROM_GAME,
 			}),

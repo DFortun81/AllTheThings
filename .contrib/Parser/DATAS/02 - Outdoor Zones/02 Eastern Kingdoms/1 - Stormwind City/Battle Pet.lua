@@ -23,7 +23,24 @@ _.Zones =
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(31878, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31879, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31880, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31881, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(31966, {	-- Battle Pet Tamers: Cataclysm
+						["altQuests"] = { 31967 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
@@ -43,6 +60,7 @@ _.Zones =
 						},
 					}),
 					q(31889, {	-- Battle Pet Tamers: Kalimdor
+						["altQuests"] = { 31981 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
@@ -51,6 +69,7 @@ _.Zones =
 						},
 					}),
 					q(31927, {	-- Battle Pet Tamers: Northrend
+						["altQuests"] = { 31929 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
@@ -60,6 +79,7 @@ _.Zones =
 						},
 					}),
 					q(31919, {	-- Battle Pet Tamers: Outland
+						["altQuests"] = { 31921 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
@@ -72,6 +92,7 @@ _.Zones =
 						},
 					}),
 					q(31930, {	-- Battle Pet Tamers: Pandaria
+						["altQuests"] = { 31952 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,

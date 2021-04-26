@@ -207,6 +207,7 @@ _.Zones =
 				}),
 				o(350802, {	-- Web Sealed Chest
 					["questID"] = 60109,
+					["isDaily"] = true,
 					["coord"] = { 54.9, 26.1, 1536 },
 					["g"] = {
 						i(183602),	-- Sticky Webbing

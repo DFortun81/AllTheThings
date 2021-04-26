@@ -218,6 +218,18 @@ _.Zones =
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
+				q(31386, {    -- The Shado-Pan Offensive (A)  
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 64030 },    -- Lao Lang
+					["coord"] = { 84.4, 61.6, 390 },    -- Vale of Eternal Blossoms
+					["lvl"] = 35,
+				}),
+				q(31388, {    -- The Shado-Pan Offensive (H)  
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 64002 },    -- Sang-Bo
+					["coord"] = { 63.0, 21.2, 390 },    -- Vale of Eternal Blossoms
+					["lvl"] = 35,
+				}),
 				q(30280, {	-- The Thunder Below
 					["coord"] = { 21.4, 71.5, 390 },
 					["isDaily"] = true,

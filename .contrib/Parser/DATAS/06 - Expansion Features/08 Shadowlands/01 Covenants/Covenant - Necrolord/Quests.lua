@@ -45,6 +45,11 @@ _.ExpansionFeatures =
 							i(182263),	-- Bladesworn Wraith's Breeches
 						},
 					}),
+					q(61252, {	-- Call In a Favor
+						["sourceQuests"] = { 61230 },	-- Outside Influence
+						["provider"] = { "n", 173343 },	-- Ascended Bearer
+						["coord"] = { 54.2, 16.2, 1536 },	-- Maldraxxus
+					}),
 					q(59596, {	-- Collective Soul
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 						["altQuests"] = { 63003 },	-- Collective Soul
@@ -66,6 +71,34 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
 					}),
+					q(59555, {	-- Enemy at the Door
+						["sourceQuests"] = { 62448 },	-- Securing the House
+						["description"] = "Requires Renown 5.",
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.7, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(182077),		-- War-Bred Tauralus (MOUNT!)
+						},
+					}),
+					q(61226, {	-- Extra Limbs
+						["sourceQuests"] = {
+							59265,	-- Prying Eyes
+							57649,	-- Whisper of Hope
+						},
+						["provider"] = { "n", 158529 },	-- Whisperer Vyn
+						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+					}),
+					q(58007, {	-- Eyes on the Problem
+						["sourceQuests"] = { 59555 },	-- Enemy at the Door
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(62169, {	-- Eyes to the Sky
+						["sourceQuests"] = { 57648, },	-- The Impossible Plan
+						["description"] = "Requires Renown 8.",
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1536 },
+					}),
 					q(62834, {	-- Glorious Ambition
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
@@ -75,6 +108,16 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(63342, {	-- Necrolord Veteran
+						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+					}),
+					q(57644, {	-- No Friend Left Behind
+						["sourceQuests"] = { 61226 },	-- Extra Limbs
+						["provider"] = { "n", 158604 },	-- Navigator Xennir
+						["coord"] = { 52.0, 16.9, 1536 },	-- Maldraxxus
 					}),
 					q(59609, {	-- No Rest For the Dead
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
@@ -86,10 +129,28 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
 					}),
+					q(61230, {	-- Outside Influence
+						["sourceQuests"] = {
+							59265,	-- Prying Eyes
+							57649,	-- Whisper of Hope
+						},
+						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
+						["coord"] = { 50.0, 17.9, 1536 },
+					}),
 					q(61359, {	-- Power of the Primus
 						["sourceQuests"] = { 59556 },	-- Welcome To Our House
 						["provider"] = { "n", 165182 },	-- Baroness Draka
 						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
+					}),
+					q(59265, {	-- Prying Eyes
+						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
+						["provider"] = { "n", 164619 },	-- Baroness Vashj
+						["coord"] = { 50.8, 24.4, 1536 },	-- Maldraxxus
+					}),
+					q(61335, {	-- Rage Against the Cage
+						["sourceQuests"] = { 61227 },	-- The Other Foot
+						["provider"] = { "n", 159814 },	-- Ansid the Mechanic
+						["coord"] = { 48.6, 18.5, 1536 },	-- Maldraxxus
 					}),
 					q(61983, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -113,6 +174,26 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
 					}),
+					q(62448, {	-- Securing the House
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(61323, {	-- See What You've Done
+						["sourceQuests"] = {
+							61335,	-- Rage Against the Cage
+							57644,	-- No Friend Left Behind
+							61252,	-- Call In a Favor
+						},
+						["provider"] = { "n", 158529 },	-- Whisperer Vyn
+						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+						["g"] = {
+							i(182265),	-- Bladesworn Wraith's Belt
+							i(182274),	-- Bladesworn Conjurer's Cinch
+							i(182283),	-- Bladesworn Tactician's Girdle
+							i(182256),	-- Bladesworn Harbinger's Warbelt
+						},
+					}),
 					q(58609, {	-- Taking The Seat
 						["sourceQuests"] = {
 							57878,	-- Choosing Your Purpose [Story]
@@ -126,6 +207,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
 					}),
+					q(57648, {	-- The Impossible Plan
+						["sourceQuests"] = { 61323 },	-- See What You've Done
+						["provider"] = { "n", 160518 },	-- Whisperer Vyn
+						["coord"] = { 50.7, 15.5, 1536 },	-- Maldraxxus
+					}),
+					q(61227, {	-- The Other Foot
+						["sourceQuests"] = {
+							59265,	-- Prying Eyes
+							57649,	-- Whisper of Hope
+						},
+						["provider"] = { "n", 164646 },	-- Baroness Vashj
+						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+					}),
 					q(62843, {	-- The Soul Contact
 						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
@@ -135,6 +229,11 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
 						["provider"] = { "n", 158453 },	-- Baroness Draka
 						["coord"] = { 49.5, 21.9, 1698 },	-- Seat of the Primus
+					}),
+					q(57649, {	-- Whisper of Hope
+						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
+						["provider"] = { "n", 164619 },	-- Baroness Vashj
+						["coord"] = { 50.8, 24.4, 1536 },	-- Maldraxxus
 					}),
 					
 					
@@ -152,109 +251,23 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 40.2, 1698 },
 						["description"] = "Becomes available at Renown 22",
 					}),
-					q(63342, {	-- Necrolord Veteran
-						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },
-						["description"] = "Becomes available at Renown 7",
-					}),
-					
-
-
-					-- Zone Breadcrumbs?
-					q(62448, {	-- Securing the House
-						-- Might be breadcrumb if able to reach Renown 5 prior to picking this up? not sure...
-						["coord"] = { 49.7, 50.6, 1698 },
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["sourceQuests"] = { 62694 },	-- A Calling in Maldraxxus
-					}),
-
-					-- Renown 5
-					-- House of Eyes
-					q(59555, {	-- Enemy at the Door
-						["sourceQuests"] = { 62448 },	-- Securing the House
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.7, 1698 },
-						["description"] = "Becomes available with Renown 5 (and previous chapters complete)",
-						["g"] = {
-							i(182077),		-- War-Bred Tauralus
-						},
-					}),
-					q(58007, {	-- Eyes on the Problem
-						["coord"] = { 49.7, 50.6, 1698 },
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["sourceQuests"] = { 59555 },	-- Enemy at the Door
-					}),
-					q(57649, {	-- Whisper of Hope
-						["coord"] = { 50.8, 24.4, 1536 },
-						["provider"] = { "n", 164619 },	-- Baroness Vashj
-						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
-					}),
-					q(59265, {	-- Prying Eyes
-						["coord"] = { 50.8, 24.4, 1536 },
-						["provider"] = { "n", 164619 },	-- Baroness Vashj
-						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
-					}),
 					-- TODO: may be a quest or two missing here? same screenshot in discord like 3 times with different provider/sq info >_<
-					q(61230, {	-- Outside Influence
-						["coord"] = { 50.0, 17.9, 1536 },
-						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
-						["sourceQuests"] = {
-							57649,	-- Whisper of Hope
-							59265,	-- Prying Eyes
-						},	-- Eyes on the Problem
-					}),
-					q(61226, {	-- Extra Limbs
-						["coord"] = { 49.9, 17.8, 1536 },
-						["provider"] = { "n", 158529 },	-- Whisperer Vyn
-						["sourceQuests"] = { 59265 },	-- Prying Eyes	-- TODO: not sure if this is correct...
-					}),
-					q(61227, {	-- The Other Foot
-						["coord"] = { 49.9, 17.8, 1536 },
-						["provider"] = { "n", 164646 },	-- Baroness Vashj
-						["sourceQuests"] = { 61230 },	-- Outside Influence	-- TODO: not sure if this is correct...
-					}),
-					q(57644, {	-- No Friend Left Behind
-						["coord"] = { 52.0, 16.9, 1536 },
-						["provider"] = { "n", 158604 },	-- Navigator Xennir
-						["sourceQuests"] = { 61226 },	-- Extra Limbs
-					}),
-					q(61252, {	-- Call In a Favor
-						["coord"] = { 54.2, 16.2, 1536 },
-						["provider"] = { "n", 173343 },	-- Ascended Bearer
-						["sourceQuests"] = { 61230 },	-- Outside Influence
-					}),
-					q(61335, {	-- Rage Against the Cage
-						["coord"] = { 48.6, 18.5, 1536 },
-						["provider"] = { "n", 159814 },	-- Ansid the Mechanic
-						["sourceQuests"] = { 61227 },	-- The Other Foot
-					}),
-					q(61323, {	-- See What You've Done
-						["coord"] = { 49.9, 17.8, 1536 },
-						["provider"] = { "n", 158529 },	-- Whisperer Vyn
-						["sourceQuests"] = {
-							61335,	-- Rage Against the Cage
-							57644,	-- No Friend Left Behind
-							61252,	-- Call In a Favor
-						},
-					}),
-					q(57648, {	-- The Impossible Plan
-						["coord"] = { 50.7, 15.5, 1536 },
-						["provider"] = { "n", 160518 },	-- Whisperer Vyn
-						["sourceQuests"] = { 61323 },	-- See What You've Done
-					}),
+					
+					
+					
+					
+					
+					
+					
+					
 					q(60110, {	-- Never Had A Friend Like Me
-						["coord"] = { 38.3, 36.7, 1698 },
+						["sourceQuests"] = { 57648 },	-- The Impossible Plan
 						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
-						["sourceQuests"] = { 57648, }	-- The Impossible Plan
+						["coord"] = { 38.3, 36.7, 1698 },	-- Seat of the Primus
 					}),
 
 					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
-					q(62169, {	-- Eyes to the Sky
-						["sourceQuests"] = { 57648, },	-- The Impossible Plan
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1536 },
-						["description"] = "Becomes available with Renown 8 (and previous chapters complete)",
-					}),
+					
 					q(57778, {	-- The Maldraxxian Job
 						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
 						["provider"] = { "n", 161907 },	-- Baroness Draka

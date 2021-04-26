@@ -256,6 +256,7 @@ i(141305);	-- Essence of Clarity (M)
 i(132560);	-- Essence of the Whirlwind
 i(132745);	-- Essence of the Whirlwind
 i(169229);	-- Exhaust Aromatics
+i(181456);	-- Faldo's Key
 i(169164);	-- Father's Bones
 i(169166);	-- Father's Clothes
 i(169165);	-- Father's Sword

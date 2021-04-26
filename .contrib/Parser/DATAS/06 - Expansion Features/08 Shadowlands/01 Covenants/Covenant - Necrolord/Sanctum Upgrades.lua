@@ -111,7 +111,7 @@ _.ExpansionFeatures =
 								q(59042, {	-- A Good Heart
 									["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
 									["provider"] = { "n", 162222 },	-- Rathan
-									["coord"] = { 48.0, 50.2, 1698 },
+									["coord"] = { 24.2, 38.6, 1536 },	-- Maldraxxus
 								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
@@ -146,7 +146,7 @@ _.ExpansionFeatures =
 								q(58671, {	-- Bottled Up Inside
 									["sourceQuests"] = { 59042 },	-- A Good Heart
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 23.8, 39.1, 1536 },
+									["coord"] = { 23.8, 39.1, 1536 },	-- Maldraxxus
 								}),
 								q(60041, {	-- Build-A-Bomination
 									["sourceQuests"] = {
@@ -199,7 +199,7 @@ _.ExpansionFeatures =
 								q(58668, {	-- Find The Way
 									["sourceQuests"] = { 58665 },	-- Rebellious Souls
 									["provider"] = { "n", 162153 },	-- Rathan
-									["coord"] = { 26.0, 42.6, 1536 },
+									["coord"] = { 26.0, 42.6, 1536 },	-- Maldraxxus
 								}),
 								q(62041, {	-- In A Bad Light
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
@@ -211,7 +211,7 @@ _.ExpansionFeatures =
 								q(58680, {	-- Loose Threads
 									["sourceQuests"] = { 58668 },	-- Find The Way
 									["provider"] = { "n", 162227 },	-- Rathan
-									["coord"] = { 24.2, 38.8, 1536 },
+									["coord"] = { 24.2, 38.8, 1536 },	-- Maldraxxus
 								}),
 								q(60042, {	-- May I Take Your Order?
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -219,10 +219,9 @@ _.ExpansionFeatures =
 									["coord"] = { 55.1, 68.8, 1536 },
 								}),
 								q(58665, {	-- Rebellious Souls
-									-- TODO: might be breadcrumb?
 									["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 									["provider"] = { "n", 162222 },	-- Rathan
-									["coord"] = { 48.0, 50.2, 1698 },
+									["coord"] = { 48.0, 50.2, 1698 },	-- Seat of the Primus
 								}),
 								q(61509, {	-- Shinies of Bastion
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -234,7 +233,7 @@ _.ExpansionFeatures =
 								q(58677, {	-- Skin in the Game
 									["sourceQuests"] = { 58668 },	-- Find The Way
 									["provider"] = { "n", 161285 },	-- Emeni
-									["coord"] = { 24.1, 38.7, 1536 },
+									["coord"] = { 24.1, 38.7, 1536 },	-- Maldraxxus
 								}),
 								q(58432, {	-- Something Old, Something Used
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -258,7 +257,7 @@ _.ExpansionFeatures =
 								q(58670, {	-- The Slaughter Daughter
 									["sourceQuests"] = { 59042 },	-- A Good Heart
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 23.8, 39.1, 1536 },
+									["coord"] = { 23.8, 39.1, 1536 },	-- Maldraxxus
 								}),
 								q(61511, {	-- Things They Leave Behind
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -280,7 +279,7 @@ _.ExpansionFeatures =
 										58677,	-- Skin in the Game
 									},
 									["provider"] = { "n", 162227 },	-- Rathan
-									["coord"] = { 24.2, 38.8, 1536 },
+									["coord"] = { 24.2, 38.8, 1536 },	-- Maldraxxus
 								}),
 							}),
 							n(-908, {	-- Rewards

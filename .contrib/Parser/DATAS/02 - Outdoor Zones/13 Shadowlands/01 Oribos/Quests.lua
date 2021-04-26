@@ -742,7 +742,6 @@ _.Zones =
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
 					["lvl"] = { 60 },
 				}),
-				-- Revendreth
 				
 				
 				-- PTR - TODO: move into alphabetized quests once we know there aren't changes/everything has made it to live.  keeping them in one place for now for ease of culling any data if necessary
@@ -788,6 +787,8 @@ _.Zones =
 					["provider"] = { "n", 159475 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 50.5, 45.1, 1673 },	-- The Crucible
 				}),
+				-- Revendreth
+				-- Revendreth
 
 
 				--[[ quest was in beta but still has not been seen in game

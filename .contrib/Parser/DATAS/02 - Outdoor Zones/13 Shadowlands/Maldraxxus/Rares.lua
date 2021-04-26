@@ -95,10 +95,11 @@ _.Zones =
 					},
 				}),
 				n(162741, {	-- Gieger <Experimental Construct>
-					["coord"] = { 31.4, 35.4, 1536 },
+					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
 					["questID"] = 58872,
 					["isDaily"] = true,
-					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
+					["coord"] = { 31.4, 35.4, 1536 },
+					["cr"] = 162815,	-- Final Thread
 					["g"] = {
 						i(182080, {	-- Predatory Plagueroc (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
@@ -251,7 +252,7 @@ _.Zones =
 						}),
 						i(182075, {	-- Bonehoof Tauralus (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-							["description"] = "You must be a Necrolord, have completed 9/9 story chapters, & have the Abomination building construct \"Neena\" with you for this mount to have a chance of dropping. It's not required to use the extra action button to loot Tahonta.",
+							["description"] = "You must be a Necrolord & have the Abomination building construct \"Neena\" with you for this mount to have a chance of dropping. It's not required to use the extra action button to loot Tahonta.",
 						}),
 						i(182190),	-- Tauralus Hide Collar
 					},
