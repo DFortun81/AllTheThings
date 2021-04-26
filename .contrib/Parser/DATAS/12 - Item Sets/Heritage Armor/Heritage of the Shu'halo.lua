@@ -13,7 +13,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 85 },	-- Orgrimmar
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54760, {	-- The Spiritwalkers
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -22,7 +22,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 88 },	-- Thunder Bluff
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54761, {	-- Spirit Guide
 				["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
@@ -31,7 +31,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 462 },	-- Camp Narache
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54762, {	-- A Small Retreat
 				["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
@@ -40,7 +40,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 462 },	-- Camp Narache
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54763, {	-- Crossing Over
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
@@ -49,7 +49,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 65 },	-- Stonetalon Mountains
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54764, {	-- Storm in Bloodhoof
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
@@ -58,7 +58,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 65 },	-- Stonetalon Mountains
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54766, {	-- Answer the Call
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -67,7 +67,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 88 },	-- Thunder Bluff
-				["lvl"] = 120,
+				["lvl"] = 50,
 			}),
 			q(54765, {	-- Thank Your Guide
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -76,7 +76,7 @@ _.GearSets =
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
 				["maps"] = { 88 },	-- Thunder Bluff
-				["lvl"] = 120,
+				["lvl"] = 50,
 				["g"] = {
 					i(168298),	-- Ancestral Chieftain's Armor
 					i(168297),	-- Ancestral Chieftain's Grasps

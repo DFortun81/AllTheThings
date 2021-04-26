@@ -6,7 +6,7 @@ _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1742, {	-- Heritage of the Zandalari
-			["lvl"] = 110,
+			["lvl"] = 50,
 			["races"] = { ZANDALARI },
 			["questID"] = 53721, -- there isn't an questline for this heritage armor so keeping it simple attaching the questID here
 			["g"] = {
