@@ -247,13 +247,13 @@ _.Achievements =
 			ach(15043),		-- Hoarder of Torghast
 			ach(15001),		-- Jailer's Personal Stash
 			ach(15044, {	-- Krrprripripkraak's Heroes
-						crit(1),	-- Elder Gwenna
-						crit(2),	-- Foreman Thorodir
-						crit(3),	-- Te'zan
-						crit(4),	-- Warden Casad
-						crit(5),	-- Kivarr
-						crit(6),	-- Guardian Kota
-					}),
+				crit(1),	-- Elder Gwenna
+				crit(2),	-- Foreman Thorodir
+				crit(3),	-- Te'zan
+				crit(4),	-- Warden Casad
+				crit(5),	-- Kivarr
+				crit(6),	-- Guardian Kota
+			}),
 			ach(15042, {	-- Tea for the Troubled
 				crit(1),	-- Simone
 				crit(2),	-- Laurent
