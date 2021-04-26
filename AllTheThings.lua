@@ -11771,10 +11771,10 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, true) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, false) end);
 				else
 					app.print("Sorting selection alphabetically...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, true) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, false) end);
 				end
 			else
 				if self.index > 0 then
