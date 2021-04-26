@@ -511,7 +511,24 @@ _.Achievements =
 				crit(12),		-- Wild Gormling
 			}),
 		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
-			ach(14943),	-- Guarmageddon
+			ach(14943),		-- Guarmageddon
+			ach(15054, {	-- Minions of the Cold Dark
+				crit(1),	-- Versya the Damned slain
+				crit(2),	-- Gralebboih slain
+				crit(3),	-- Promathiz slain
+				crit(4),	-- Sentinel Pyrophus slain
+				crit(5),	-- Gruukuuek the Elder slain
+				crit(6),	-- Zul'gath the Flayer slain
+				crit(7),	-- Mugrem the Soul Devourer slain
+				crit(8),	-- The Mass of Souls slain
+				crit(9),	-- Algel the Hunter slain
+				crit(10),	-- Sentinel Shakorzeth slain
+				crit(11),	-- Kazj the Sentinel slain
+				crit(12),	-- Intercessor Razzram slain
+				crit(13),	-- Malleus Grakizz slain
+				crit(14),	-- Manifestation of Pain slain
+				crit(15),	-- Golmak the Monstrosity slain
+			}),
 		}),
 	}),
 };

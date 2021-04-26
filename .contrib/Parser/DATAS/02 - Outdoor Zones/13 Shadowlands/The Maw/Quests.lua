@@ -82,9 +82,70 @@ _.Zones =
 						["isWeekly"] = true,
 						["questID"] = 63854,
 						["g"] = {
+							ach(15054, {	-- Minions of the Cold Dark
+								crit(1,  {	-- Versya the Damned slain
+									["cr"] = 177981,	-- Versya the Damned <Tormentor of Torghast>
+								}),
+								crit(2,  {	-- Gralebboih slain
+									["cr"] = 177979,	-- Gralebboih <Tormentor of Torghast>
+								}),
+								crit(3,  {	-- Promathiz slain
+									["cr"] = 177330,	-- Promathiz <Tormentor of Torghast>
+								}),
+								crit(4,  {	-- Sentinel Pyrophus slain
+									["cr"] = 177331,	-- Sentinel Pyrophus <Tormentor of Torghast>
+								}),
+								crit(5,  {	-- Gruukuuek the Elder slain
+									["cr"] = 177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
+								}),
+								crit(6,  {	-- Zul'gath the Flayer slain
+									["cr"] = 178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
+								}),
+								crit(7,  {	-- Mugrem the Soul Devourer slain
+									["cr"] = 178002,	-- Mugrem the Soul Devourer <Tormentor of Torghast>
+								}),
+								crit(8,  {	-- The Mass of Souls slain
+									["cr"] = 177427,	-- The Mass of Souls <Tormentor of Torghast>
+								}),
+								crit(9,  {	-- Algel the Hunter slain
+									["cr"] = 178897,	-- Algel the Haunter <Tormentor of Torghast>
+								}),
+								crit(10, {	-- Sentinel Shakorzeth slain
+									["cr"] = 178883,	-- Sentinel Shakorzeth <Tormentor of Torghast>
+								}),
+								crit(11, {	-- Kazj the Sentinel slain
+									["cr"] = 178882,	-- Kazj The Sentinel <Tormentor of Torghast>
+								}),
+								crit(12, {	-- Intercessor Razzram slain
+									["cr"] = 178004,	-- Intercessor Razzram <Tormentor of Torghast>
+								}),
+								crit(13, {	-- Malleus Grakizz slain
+									["cr"] = 177972,	-- Malleus Grakizz <Tormentor of Torghast>
+								}),
+								crit(14, {	-- Manifestation of Pain slain
+									["cr"] = 178899,	-- Manifestation of Pain <Tormentor of Torghast>
+								}),
+								crit(15, {	-- Golmak the Monstrosity slain
+									["cr"] = 178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+								}),
+							}),
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
+									178897,	-- Algel the Haunter <Tormentor of Torghast>
 									178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+									177979,	-- Gralebboih <Tormentor of Torghast>
+									177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
+									178004,	-- Intercessor Razzram <Tormentor of Torghast>
+									178882,	-- Kazj The Sentinel <Tormentor of Torghast>
+									177972,	-- Malleus Grakizz <Tormentor of Torghast>
+									178899,	-- Manifestation of Pain <Tormentor of Torghast>
+									178002,	-- Mugrem the Soul Devourer <Tormentor of Torghast>
+									177330,	-- Promathiz <Tormentor of Torghast>
+									177331,	-- Sentinel Pyrophus <Tormentor of Torghast>
+									178883,	-- Sentinel Shakorzeth <Tormentor of Torghast>
+									177427,	-- The Mass of Souls <Tormentor of Torghast>
+									177981,	-- Versya the Damned <Tormentor of Torghast>
+									178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
 								},
 								["g"] = {
 									i(185974),	-- Bahmeht Chain Link
@@ -95,7 +156,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-904, {	-- Wrath of the Jailer
+					n(-904,  {	-- Wrath of the Jailer
 						["isWeekly"] = true,
 						["questID"] = 63414,
 						["g"] = {
