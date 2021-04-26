@@ -712,7 +712,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(30667),	-- Ring of Unrelenting Storms
 			}),
 			e(1552, {	-- Servant's Quarters
-				["description"] = "The following rares are repeatable if you dont kill any other bosses in raid. Reset the raid after killing. Only one will be active at a time.",
+				["description"] = "The following rares are repeatable if you don't kill any other bosses in raid. Reset the raid after killing. Only one will be active at a time.",
 				-- #if BEFORE WRATH
 				["npcID"] = RARES,
 				-- #endif
