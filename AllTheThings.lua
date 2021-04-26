@@ -5146,35 +5146,26 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 
-npcQuestsCache = {}
-
-function app.IsNPCQuestGiver(self, npc_id)
-	local group = {}
-
-	if (npcQuestsCache[npc_id]) then
-		return npcQuestsCache[npc_id]
+local npcQuestsCache = {}
+function app.IsNPCQuestGiver(self, npcID)
+	if not npcID then return false; end
+	if npcQuestsCache[npcID] then
+		return npcQuestsCache[npcID];
 	else
-		group, _, _ = app.SearchForField("creatureID", npc_id);
+		local group = app.SearchForField("creatureID", npcID);
 		if not group then 
-			npcQuestsCache[npc_id] = false; 
+			npcQuestsCache[npcID] = false;
 			return false;
 		end
 
-		local regroup = {};
-		for i,j in ipairs(group) do
-			if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-				tinsert(regroup, j);
-			end
-		end
-
-		for i,v in pairs(regroup) do
-			if (v["visible"] ~= nil and v["visible"] == true) then
-				npcQuestsCache[npc_id] = true;
+		for i,v in pairs(group) do
+			if v.visible and v.questID then
+				npcQuestsCache[npcID] = true;
 				return true;
 			end
 		end
 
-		npcQuestsCache[npc_id] = false; 
+		npcQuestsCache[npcID] = false; 
 		return false;
 	end
 end
