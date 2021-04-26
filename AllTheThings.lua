@@ -17444,7 +17444,6 @@ end
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -17521,6 +17520,14 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
+	
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+		type = "launcher",
+		icon = app.asset("logo_32x32"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	});
 
 	-- Character Data Storage
 	local characterData = ATTCharacterData;
@@ -17903,17 +17910,6 @@ app.events.VARIABLES_LOADED = function()
 		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 		Callback(app.LocationTrigger);
 	end);
-end
-app.events.PLAYER_LOGIN = function(...)
-	-- print("PLAYER_LOGIN",...)
-	app:UnregisterEvent("PLAYER_LOGIN");
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	});
 end
 app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- print("PLAYER_ENTERING_WORLD",...)
