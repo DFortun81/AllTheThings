@@ -141,8 +141,8 @@ local function Callback(method, ...)
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = true;
 		local newCallback = function(...)
-			method(...);
 			app.__callbacks[method] = nil;
+			method(...);
 		end;
 		C_Timer.After(0, newCallback);
 	end
@@ -10700,26 +10700,21 @@ function app.QuestCompletionHelper(questID)
 	end
 end
 -- receives a key and a function which returns the value to be set for
--- that key in the CustomCollectibility data member based on the current value
-app.CustomCollects = {};
-function app.SetCustomCollectibility(key, func)
-	local playerKey = key .. "-" .. app.GUID;
-	local cc = GetDataMember("CustomCollectibility", {});
-	-- print("cached",playerKey,type(cc),cc,cc[playerKey]);
-	local result = func(cc[playerKey]);
+-- that key based on the current value and current character
+app.SetCustomCollectibility = function(key, func)
+	-- print("cached",key,app.CurrentCharacter.CustomCollects[key]);
+	local result = func(app.CurrentCharacter.CustomCollects[key]);
 	if result ~= nil then
-		-- print("saved",playerKey,result);
-		app.CustomCollects[key] = result;
-		cc[playerKey] = result;
-		SetDataMember("CustomCollectibility", cc);
+		-- print("saved",key,result);
+		app.CurrentCharacter.CustomCollects[key] = result;
 	end
 end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
 	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
-	for k,c in ipairs(t.customCollect) do
-		if not app.CustomCollects[c] then
+	for _,c in ipairs(t.customCollect) do
+		if not app.CurrentCharacter.CustomCollects[c] then
 			return false;
 		end
 	end
@@ -10727,7 +10722,10 @@ app.CheckCustomCollects = function(t)
 end
 -- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
 app.RefreshCustomCollectibility = function()
-	-- print("app.RefreshCustomCollectibility")
+	if not app.IsReady then
+		Callback(app.RefreshCustomCollectibility);
+		return;
+	end
 	-- do one-time per character custom visibility check(s)
 	-- Exile's Reach (New Player Experience)
 	app.SetCustomCollectibility("NPE", function(cc)
@@ -12448,7 +12446,7 @@ RowOnEnter = function (self)
 			local requires = L["REQUIRES"];		-- L["REQUIRES"] = "Requires"
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
-				if not app.CustomCollects[c] then
+				if not app.CurrentCharacter.CustomCollects[c] then
 					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
 				else
 					GameTooltip:AddDoubleLine(requires .. ": " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
@@ -17481,6 +17479,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
 	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
+	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
@@ -17648,7 +17647,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedSpells",
 		"CollectedTitles",
 		"CollectedToys",
-		"CustomCollectibility",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"LockedWindows",
@@ -17676,15 +17674,15 @@ app.events.VARIABLES_LOADED = function()
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
-	local reagentCache = app.GetDataMember("Reagents", {});
-	local rebuildReagents = 2;
-	-- verify that reagent cache is of the correct format by checking a special key
-	if not reagentCache[-1] or reagentCache[-1] < rebuildReagents then
+	-- Verify that reagent cache is of the correct format by checking a special key
+	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
+	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
 		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);		-- L["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!"
 		wipe(reagentCache);
 	end
 	if reagentCache then
-		reagentCache[-1] = rebuildReagents;
+		reagentCache[-1] = reagentCacheVer;
+		-- TODO: should these be converted to utilize 'cost' instead of being pseudo-crafted?
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
 		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
