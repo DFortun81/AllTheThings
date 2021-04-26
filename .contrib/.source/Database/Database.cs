@@ -17,14 +17,9 @@ namespace ATT
     {
         #region Static Variables
         /// <summary>
-        /// All of the World of Warcraft Classic Accounts loaded in the ATT Database. (locally)
-        /// </summary>
-        public static Dictionary<string, WoWAccount> ClassicWoWAccounts = new Dictionary<string, WoWAccount>();
-
-        /// <summary>
         /// All of the World of Warcraft Accounts loaded in the ATT Database. (locally)
         /// </summary>
-        public static Dictionary<string, WoWAccount> RetailWoWAccounts = new Dictionary<string, WoWAccount>();
+        public static Dictionary<string, ATTAccountWideData> WoWAccounts = new Dictionary<string, ATTAccountWideData>();
         #endregion
         #region Static Constructor
         /// <summary>
@@ -112,17 +107,10 @@ namespace ATT
         public static void ExportToCSV(string directory)
         {
             var builder = new StringBuilder("Available Accounts");
-            foreach (var account in ClassicWoWAccounts)
+            foreach (var account in WoWAccounts)
             {
-                var path = Path.Combine(directory, "Classic");
-                builder.AppendLine().Append("Classic").Append(',').Append(account.Key);
-                account.Value.ExportToCSV(path);
-            }
-            foreach (var account in RetailWoWAccounts)
-            {
-                var path = Path.Combine(directory, "Retail");
-                builder.AppendLine().Append("Retail").Append(',').Append(account.Key);
-                account.Value.ExportToCSV(path);
+                builder.AppendLine().Append(account.Key);
+                account.Value.ExportToCSV(directory);
             }
             System.IO.File.WriteAllText(Path.Combine(directory, "Account Summary.csv"), builder.ToString());
         }
@@ -132,7 +120,7 @@ namespace ATT
         /// </summary>
         /// <param name="root">The root folder of the installation.</param>
         /// <param name="accounts">The accounts currently stored for the environment.</param>
-        private static void SyncWithSavedVariables(string root, Dictionary<string, WoWAccount> accounts)
+        private static void SyncWithSavedVariables(string root, Dictionary<string, ATTAccountWideData> accounts)
         {
             // Determine if the root directory exists.
             var rootDirectory = new DirectoryInfo(root);
@@ -158,14 +146,14 @@ namespace ATT
             if (!accountDirectories.Any()) return;
 
             // Process the Accounts.
-            var attDataDirectory = Path.Combine(rootDirectory.FullName, "ATT");
+            var attDataDirectory = Path.Combine(rootDirectory.Parent.FullName, "_att_");
             foreach (var accountDirectory in accountDirectories)
             {
                 var modified = false;
                 var accountName = accountDirectory.Name;
-                if (!accounts.TryGetValue(accountName, out WoWAccount account))
+                if (!accounts.TryGetValue(accountName, out ATTAccountWideData account))
                 {
-                    account = new WoWAccount(accountName);
+                    account = new ATTAccountWideData(accountName);
                     accounts[accountName] = account;
                     account.Load(attDataDirectory);
                     modified = true;
@@ -188,8 +176,8 @@ namespace ATT
         /// </summary>
         public static void SyncWithSavedVariables()
         {
-            SyncWithSavedVariables(InstallationPathForClassicWoW, ClassicWoWAccounts);
-            SyncWithSavedVariables(InstallationPathForRetailWoW, RetailWoWAccounts);
+            SyncWithSavedVariables(InstallationPathForRetailWoW, WoWAccounts);
+            SyncWithSavedVariables(InstallationPathForClassicWoW, WoWAccounts);
         }
         #endregion
     }
