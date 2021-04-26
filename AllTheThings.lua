@@ -16922,56 +16922,11 @@ local ProcessAuctionData = function()
 	window:Update();
 end
 
-app.StartAuctionScan = function()
-	auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
-	C_AuctionHouse_ReplicateItems();
-end
-
-app.AuctionScan = function()
-	AllTheThingsAuctionData = {};
-	local items = {};
-	local auctionItems = C_AuctionHouse_GetNumReplicateItems();
-	for i=0,auctionItems-1 do
-		local itemLink;
-		local count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-		if price and itemID and status then
-			itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-			if itemLink then
-				AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
-			end
-		else
-			local item = Item:CreateFromItemID(itemID);
-			items[item] = true;
-
-			item:ContinueOnItemLoad(function()
-				count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-				items[item] = nil;
-				if itemID and status then
-					itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-					if itemLink then
-						AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
-					end
-				end
-				if not next(items) then
-					items = {};
-				end
-			end);
-		end
-	end
-	if not next(items) then
-		items = {};
-	end
-	print(L["TITLE"] .. L["AH_SCAN_SUCCESSFUL_1"] .. auctionItems .. L["AH_SCAN_SUCCESSFUL_2"]);		-- L["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned "; L["AH_SCAN_SUCCESSFUL_2"] = " item(s)."
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-end
-
 app.OpenAuctionModule = function(self)
 	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
 		C_Timer.After(2, function() end);
 	end
 	if app.Blizzard_AuctionHouseUILoaded then
-		if not AllTheThingsAuctionConfig then AllTheThingsAuctionConfig = {} end
-
 		-- Create the Auction Tab for ATT.
 		local tabID = AuctionHouseFrame.numTabs+1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
@@ -17020,6 +16975,7 @@ app.OpenAuctionModule = function(self)
 							['OnUpdate'] = function(data)
 								local window = app:GetWindow("AuctionData");
 								data.visible = #window.data.g > #window.data.options;
+								return true;
 							end,
 						},
 						{
@@ -17030,19 +16986,19 @@ app.OpenAuctionModule = function(self)
 							["priority"] = -3,
 							["OnClick"] = function()
 								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-								if AllTheThingsAuctionConfig then
-									if AllTheThingsAuctionConfig.LastScan == nil or (AllTheThingsAuctionConfig.LastScan+900)-time() <= 0 then -- Never scanned or player waited longer than the 15-min throttle
-										AllTheThingsAuctionConfig.LastScan = time();
-										app.StartAuctionScan();
-									else
-										app.print(": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
-										StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-									end
+								
+								-- Only allow a scan once every 15 minutes.
+								local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
+								if cooldown - now < 0 then
+									SetDataMember("AuctionScanCooldownTime", time() + 900);
+									auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
+									C_AuctionHouse_ReplicateItems();
+								else
+									app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
+									StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 								end
 							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
-							end,
+							['OnUpdate'] = app.AlwaysShowUpdate,
 						},
 						{
 							["text"] = "Toggle Debug Mode",
@@ -17063,6 +17019,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 						{
@@ -17083,6 +17040,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 						{
@@ -17106,6 +17064,7 @@ app.OpenAuctionModule = function(self)
 										data.saved = nil;
 									end
 								end
+								return true;
 							end,
 						},
 						{
@@ -17136,6 +17095,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 					},
@@ -17159,7 +17119,41 @@ app.OpenAuctionModule = function(self)
 		auctionFrame:SetScript("OnEvent", function(self, e, ...)
 			if e == "REPLICATE_ITEM_LIST_UPDATE" then
 				self:UnregisterEvent("REPLICATE_ITEM_LIST_UPDATE");
-				app.AuctionScan();
+				AllTheThingsAuctionData = {};
+				local items = {};
+				local auctionItems = C_AuctionHouse_GetNumReplicateItems();
+				for i=0,auctionItems-1 do
+					local itemLink;
+					local count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
+					if price and itemID and status then
+						itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+						if itemLink then
+							AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+						end
+					else
+						local item = Item:CreateFromItemID(itemID);
+						items[item] = true;
+
+						item:ContinueOnItemLoad(function()
+							count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
+							items[item] = nil;
+							if itemID and status then
+								itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+								if itemLink then
+									AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+								end
+							end
+							if not next(items) then
+								items = {};
+							end
+						end);
+					end
+				end
+				if not next(items) then
+					items = {};
+				end
+				print(L["TITLE"] .. L["AH_SCAN_SUCCESSFUL_1"] .. auctionItems .. L["AH_SCAN_SUCCESSFUL_2"]);
+				StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 			end
 		end);
 		window:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT", 0, -10);
