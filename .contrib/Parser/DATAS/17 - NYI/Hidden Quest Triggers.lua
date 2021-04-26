@@ -4157,6 +4157,7 @@ _.HiddenQuestTriggers =
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
+		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
