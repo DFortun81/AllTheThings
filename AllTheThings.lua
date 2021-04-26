@@ -1418,7 +1418,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
-		SetDataSubMember("CollectedQuests", key, 1);
+		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	end
@@ -1461,7 +1461,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		if Grail then
 			-- Import previously completed repeatable quest from Grail addon data
 			if Grail:HasQuestEverBeenCompleted(t.questID) then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
+				ATTAccountWideData.Quests[t.questID] = 1;
 				app.CurrentCharacter.Quests[t.questID] = 1;
 				return 1;
 			end
@@ -1472,7 +1472,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
 					if Grail:HasQuestEverBeenCompleted(questID) then
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 						app.CurrentCharacter.Quests[questID] = 1;
 						isCollected = 2;
 					end
@@ -1487,7 +1487,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			local wqt_local = wqt_questDoneHistory.character[app.GUID]
 
 			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
+				ATTAccountWideData.Quests[t.questID] = 1;
 				app.CurrentCharacter.Quests[t.questID] = 1;
 				return 1;
 			end
@@ -1498,7 +1498,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
 					if wqt_local[questID] and wqt_local[questID] > 0 then
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 						app.CurrentCharacter.Quests[questID] = 1;
 						isCollected = 2;
 					end
@@ -1508,7 +1508,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 
 			-- quest completed on any character, return shared completion
 			if wqt_global and wqt_global[t.questID] and wqt_global[t.questID] > 0 then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
+				ATTAccountWideData.Quests[t.questID] = 1;
 				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
 					return 2;
@@ -1517,14 +1517,14 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
 		if app.AccountWideQuests then
-			if GetDataSubMember("CollectedQuests", t.questID) then
+			if ATTAccountWideData.Quests[t.questID] then
 				return 2;
 			end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
 		-- any character has completed this specific quest, return shared completion
-		if GetDataSubMember("CollectedQuests", t.questID) then
+		if ATTAccountWideData.Quests[t.questID] then
 			return 2;
 		end
 	end
@@ -4839,7 +4839,7 @@ local function RefreshCollections()
 		app.events.QUEST_LOG_UPDATE();
 
 		-- Harvest Illusion Collections
-		local collectedIllusions = GetDataMember("CollectedIllusions", {});
+		local collectedIllusions = ATTAccountWideData.Illusions;
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
 			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
@@ -4853,7 +4853,7 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Mounts / Pets
-		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpells = ATTAccountWideData.Spells;
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
@@ -4870,7 +4870,7 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Toys from Cache
-		local collectedToys = GetDataMember("CollectedToys", {});
+		local collectedToys = ATTAccountWideData.Toys;
 		for id,group in pairs(fieldCache["toyID"]) do
 			if not rawget(collectedToys, id) and PlayerHasToy(id) then
 				rawset(collectedToys, id, 1);
@@ -5658,10 +5658,10 @@ local fields = {
 		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
 		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
 			app.CurrentCharacter.Achievements[t.achievementID] = 1;
-			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
+			ATTAccountWideData.Achievements[t.achievementID] = 1;
 			return 1;
 		end
-		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
+		if app.AccountWideAchievements and ATTAccountWideData.Achievements[t.achievementID] then return 2; end
 	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
@@ -5770,7 +5770,7 @@ local criteriaFields = {
 		local achievementID = t.achievementID;
 		if achievementID then
 			if app.CurrentCharacter.Achievements[achievementID] then return 1; end
-			if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", achievementID) then return 2; end
+			if app.AccountWideAchievements and ATTAccountWideData.Achievements[achievementID] then return 2; end
 			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
 				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
 			end
@@ -5791,7 +5791,7 @@ end
 local function CheckAchievementCollectionStatus(achievementID)
 	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
 	if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
-		SetDataSubMember("CollectedAchievements", id, 1)
+		ATTAccountWideData.Achievements[id] = 1;
 	end
 end
 RefreshAchievementCollection = function()
@@ -5838,10 +5838,10 @@ local fields = {
 	["collected"] = function(t)
 		-- _cache = t.s;
 		-- if _cache and GetDataSubMember("CollectedSources", _cache) then print("collected via sourceID",t.artifactID,_cache) return 1; end
-		if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
+		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
 		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
-			SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
+			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
 	end,
@@ -5935,13 +5935,13 @@ local fields = {
 			return 1;
 		end
 
-		local accountRank = GetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0;
+		local accountRank = ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] or 0;
 		local info = t.info;
 		if info and info.unlocked then
 			if t.rank and info.rank then
 				if info.rank >= t.rank then
 					app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank;
-					if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
+					if info.rank > accountRank then ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank; end
 					return 1;
 				end
 			else
@@ -6516,16 +6516,16 @@ local fields = {
 		if app.CurrentCharacter.Factions[factionID] then return 1; end
 		if t.standing >= t.maxstanding then
 			app.CurrentCharacter.Factions[factionID] = 1;
-			SetDataSubMember("CollectedFactions", factionID, 1);
+			ATTAccountWideData.Factions[factionID] = 1;
 			return 1;
 		end
 		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
 		if friendID and not nextFriendThreshold then
 			app.CurrentCharacter.Factions[factionID] = 1;
-			SetDataSubMember("CollectedFactions", factionID, 1);
+			ATTAccountWideData.Factions[factionID] = 1;
 			return 1;
 		end
-		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
+		if app.AccountWideReputations and ATTAccountWideData.Factions[factionID] then return 2; end
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
@@ -6727,7 +6727,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
-		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
+		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
 		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
@@ -6791,7 +6791,7 @@ app.events.TAXIMAP_OPENED = function()
 		local updates, searchResults = {};
 		for i,nodeID in ipairs(knownNodeIDs) do
 			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				ATTAccountWideData.FlightPaths[nodeID] = 1;
 				app.CurrentCharacter.FlightPaths[nodeID] = 1;
 				searchResults = SearchForField("flightPathID", nodeID);
 				if searchResults then
@@ -6844,10 +6844,10 @@ local fields = {
 		if app.CurrentCharacter.Followers[t.followerID] then return 1; end
 		if C_Garrison_IsFollowerCollected(t.followerID) then
 			app.CurrentCharacter.Followers[t.followerID] = 1;
-			SetDataSubMember("CollectedFollowers", t.followerID, 1);
+			ATTAccountWideData.Followers[t.followerID] = 1;
 			return 1;
 		end
-		if app.AccountWideFollowers and GetDataSubMember("CollectedFollowers", t.followerID) then return 2; end
+		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
 	end,
 	["description"] = function(t)
 		return L["FOLLOWERS_COLLECTION_DESC"];
@@ -6891,10 +6891,10 @@ local fields = {
 		if app.CurrentCharacter.Buildings[t.buildingID] then return 1; end
 		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
 			app.CurrentCharacter.Buildings[t.buildingID] = 1;
-			SetDataSubMember("CollectedBuildings", t.buildingID, 1);
+			ATTAccountWideData.Buildings[t.buildingID] = 1;
 			return 1;
 		end
-		if app.AccountWideRecipes and GetDataSubMember("CollectedBuildings", t.buildingID) then return 2; end
+		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
 	end,
 	["description"] = function(t)
 		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
@@ -7204,10 +7204,10 @@ local fields = {
 	["collected"] = function(t)
 		local itemID = t.parent.itemID;
 		if itemID then
-			if t.level <= GetDataSubMember("HeirloomUpgradeRanks", itemID, 0) then return 1; end
+			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return 1; end
 			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
 			if level then
-				SetDataSubMember("HeirloomUpgradeRanks", itemID, level);
+				ATTAccountWideData.HeirloomRanks[itemID] = level;
 				if t.level <= level then return 1; end
 			end
 		end
@@ -7263,12 +7263,12 @@ local fields = {
 		if t.factionID then
 			if t.repeatable then
 				return (app.CurrentCharacter.Factions[t.factionID] and 1)
-					or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
+					or (ATTAccountWideData.Factions[t.factionID] and 2);
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
 			end
@@ -7477,7 +7477,7 @@ local fields = {
 		return app.CollectibleIllusions;
 	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedIllusions", t.illusionID);
+		return ATTAccountWideData.Illusions[t.illusionID];
 	end,
 	["silentLink"] = function(t)
 		return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
@@ -7673,7 +7673,7 @@ local itemFields = {
 		return t.collectibleAsCost;
 	end,
 	["collectibleAsAchievement"] = function(t)
-		return app.CollectedAchievements or t.collectibleAsCost;
+		return app.CollectibleAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
 		if t.parent and t.parent.saved then return false; end
@@ -7758,17 +7758,17 @@ local itemFields = {
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
 				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-				if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
 					app.CurrentCharacter.Factions[t.factionID] = 1;
-					SetDataSubMember("CollectedFactions", t.factionID, 1);
+					ATTAccountWideData.Factions[t.factionID] = 1;
 					return 1;
 				end
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
 			end
@@ -8042,10 +8042,10 @@ local mountFields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			app.CurrentCharacter.Spells[t.spellID] = 1;
-			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
 	end,
@@ -8099,7 +8099,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 		while InCombatLockdown() do coroutine.yield(); end
 
 		-- Refresh Mounts
-		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpells = ATTAccountWideData.Spells;
 		if newMountID then
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 			if spellID and isCollected then
@@ -8182,7 +8182,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
+		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then return 2; end
 	end,
 	["saved"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
@@ -8220,7 +8220,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
+		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then
 			return 2;
 		end
 	end,
@@ -9045,10 +9045,10 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 		if IsSpellKnown(t.spellID) then
 			app.CurrentCharacter.Spells[t.spellID] = 1;
-			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
 	end,
@@ -9110,10 +9110,10 @@ local fields = {
 	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and GetDataSubMember("CollectedSpells", t.spellID) then return 2; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 		if IsSpellKnown(t.spellID) then
 			app.CurrentCharacter.Spells[t.spellID] = 1;
-			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
 	end,
@@ -9403,10 +9403,10 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Titles[t.titleID] then return 1; end
-		if app.AccountWideTitles and GetDataSubMember("CollectedTitles", t.titleID) then return 2; end
+		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
 		if IsTitleKnown(t.titleID) then
 			app.CurrentCharacter.Titles[t.titleID] = 1;
-			SetDataSubMember("CollectedTitles", t.titleID, 1);
+			ATTAccountWideData.Titles[t.titleID] = 1;
 			return 1;
 		end
 	end,
@@ -9431,7 +9431,7 @@ local fields = {
 		return app.CollectibleToys;
 	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedToys", t.itemID);
+		return ATTAccountWideData.Toys[t.itemID];
 	end,
 	["isToy"] = app.ReturnTrue,
 	["text"] = function(t)
@@ -15477,12 +15477,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if spellRecipeInfo.disabled then
 								if app.CurrentCharacter.Spells[recipeID] then
 									app.CurrentCharacter.Spells[recipeID] = nil;
-									SetDataSubMember("CollectedSpells", recipeID, nil);
+									ATTAccountWideData.Spells[recipeID] = nil;
 								end
 							else
 								app.CurrentCharacter.Spells[recipeID] = 1;
-								if not GetDataSubMember("CollectedSpells", recipeID) then
-									SetDataSubMember("CollectedSpells", recipeID, 1);
+								if not ATTAccountWideData.Spells[recipeID] then
+									ATTAccountWideData.Spells[recipeID] = 1;
 									learned = learned + 1;
 								end
 							end
@@ -15658,8 +15658,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			elseif e == "NEW_RECIPE_LEARNED" then
 				local spellID = ...;
 				if spellID then
-					local previousState = GetDataSubMember("CollectedSpells", spellID);
-					SetDataSubMember("CollectedSpells", spellID, 1);
+					local previousState = ATTAccountWideData.Spells[spellID];
+					ATTAccountWideData.Spells[spellID] = 1;
 					if not app.CurrentCharacter.Spells[spellID] then
 						app.CurrentCharacter.Spells[spellID] = 1;
 						app:RefreshData(true, true);
@@ -17632,6 +17632,19 @@ app.events.VARIABLES_LOADED = function()
 		accountWideData = {};
 		ATTAccountWideData = accountWideData;
 	end
+	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
+	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
+	if not accountWideData.Factions then accountWideData.Factions = {}; end
+	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
+	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+	if not accountWideData.Followers then accountWideData.Followers = {}; end
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
+	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	if not accountWideData.Titles then accountWideData.Titles = {}; end
+	if not accountWideData.Toys then accountWideData.Toys = {}; end
 
 	-- Update the total account wide death counter.
 	local deaths = 0;
@@ -17641,46 +17654,69 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
-
-
+	
+	-- Convert over the deprecated account wide tables.
+	local data = GetDataMember("CollectedAchievements");
+	if data then accountWideData.Achievements = data; end
+	data = GetDataMember("CollectedArtifacts");
+	if data then
+		if not data.V then
+			wipe(data);
+			C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+		else
+			data.V = nil;
+		end
+		accountWideData.Artifacts = data;
+	elseif accountWideData.Artifacts.V then
+		accountWideData.Artifacts.V = nil;
+	end
+	data = GetDataMember("AzeriteEssenceRanks");
+	if data then accountWideData.AzeriteEssenceRanks = data; end
+	data = GetDataMember("CollectedBuildings");
+	if data then accountWideData.Buildings = data; end
+	data = GetDataMember("CollectedFactions");
+	if data then accountWideData.Factions = data; end
+	data = GetDataMember("CollectedFactionBonusReputation");
+	if data then accountWideData.FactionBonus = data; end
+	data = GetDataMember("CollectedFlightPaths");
+	if data then accountWideData.FlightPaths = data; end
+	data = GetDataMember("CollectedFollowers");
+	if data then accountWideData.Followers = data; end
+	data = GetDataMember("HeirloomUpgradeRanks");
+	if data then accountWideData.HeirloomRanks = data; end
+	data = GetDataMember("CollectedIllusions");
+	if data then accountWideData.Illusions = data; end
+	data = GetDataMember("CollectedQuests");
+	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSpells");
+	if data then accountWideData.Spells = data; end
+	data = GetDataMember("CollectedTitles");
+	if data then accountWideData.Titles = data; end
+	data = GetDataMember("CollectedToys");
+	if data then
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
+		accountWideData.Toys = data;
+	end
 
 	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("CollectedBuildings", {});
-	GetDataMember("CollectedFactions", {});
-	GetDataMember("CollectedFlightPaths", {});
-	GetDataMember("CollectedFollowers", {});
-	GetDataMember("CollectedQuests", {});
-	GetDataMember("CollectedSpells", {});
-	GetDataMember("CollectedTitles", {});
+	GetDataMember("HeirloomUpgradeLevels", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"AzeriteEssenceRanks",
 		"Categories",
-		"CollectedAchievements",
-		"CollectedArtifacts",
-		"CollectedBuildings",
-		"CollectedFactionBonusReputation",
-		"CollectedFactions",
-		"CollectedFollowers",
-		"CollectedFlightPaths",
-		"CollectedIllusions",
-		"CollectedQuests",
 		"CollectedSources",
-		"CollectedSpells",
-		"CollectedTitles",
-		"CollectedToys",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
+		"HeirloomUpgradeLevels",
 		"LockedWindows",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
 		"RefreshedCollectionsAlready",
-		"ToyCacheRebuilt",
 		"SeasonalFilters",
 		"UnobtainableItemFilters",
 	}) do
@@ -17717,14 +17753,6 @@ app.events.VARIABLES_LOADED = function()
 		for i,itemID in ipairs({ 31910, 31918, 31917, 31913, 31912, 31916, 31915, 31911 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
-	end
-
-	-- Verify artifact cache is the correct version/clear known old bad data
-	local artifactCache, artifactCacheVer = app.GetDataMember("CollectedArtifacts", {}), 1;
-	if not artifactCache["V"] or artifactCache["V"] ~= artifactCacheVer then
-		wipe(artifactCache);
-		artifactCache["V"] = artifactCacheVer;
-		C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
 	end
 
 	Push(app, "WaitOnMountData", function()
@@ -17804,13 +17832,6 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("TOYS_UPDATED");
 
 		local needRefresh;
-		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
-		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt");
-		if not toyCacheRebuilt then
-			SetDataMember("ToyCacheRebuilt", true);
-			wipe(GetDataMember("CollectedToys", {}));
-			needRefresh = true;
-		end
 
 		-- NOTE: The auto refresh only happens once per version
 		if not app.autoRefreshedCollections then
@@ -18036,8 +18057,8 @@ app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and PlayerHasToy(itemID) and not GetDataSubMember("CollectedToys", itemID) then
-		SetDataSubMember("CollectedToys", itemID, true);
+	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
+		ATTAccountWideData.Toys[itemID] = 1;
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
