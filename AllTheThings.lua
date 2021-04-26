@@ -2964,7 +2964,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												working = true;
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
 											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 										end
 									end
@@ -3049,7 +3049,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												working = true;
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
 											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 										end
 									end
@@ -4884,7 +4884,7 @@ local function RefreshCollections()
 
 		-- Refresh Sources from Cache if tracking Transmog
 		if app.Settings:Get("Thing:Transmog") then
-			local collectedSources = GetDataMember("CollectedSources");
+			local collectedSources = ATTAccountWideData.Sources;
 			-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
 			app.MaxSourceID = app.MaxSourceID or 0;
 			-- process through all known ATT SourceIDs if not yet processed
@@ -5837,7 +5837,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		-- _cache = t.s;
-		-- if _cache and GetDataSubMember("CollectedSources", _cache) then print("collected via sourceID",t.artifactID,_cache) return 1; end
+		-- if _cache and ATTAccountWideData.Sources[_cache] then print("collected via sourceID",t.artifactID,_cache) return 1; end
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
 		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
@@ -5905,7 +5905,7 @@ local fields = {
 			if s and s > 0 then
 				rawset(t, "s", s);
 				if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-					SetDataSubMember("CollectedSources", s, 1);
+					ATTAccountWideData.Sources[s] = 1;
 				end
 				return s;
 			end
@@ -7057,7 +7057,7 @@ local fields = {
 		return rawget(t, "s") and app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
@@ -7273,7 +7273,7 @@ local fields = {
 				end
 			end
 		end
-		if t.s and GetDataSubMember("CollectedSources", t.s) then return 1; end
+		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 	end,
 	["trackable"] = app.ReturnTrue,
@@ -7781,7 +7781,7 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
@@ -10413,10 +10413,10 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for i, otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
 					tinsert(unlockedSourceIDs, otherSourceID);
 				end
 			end
@@ -10571,10 +10571,10 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for i, otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
 					tinsert(unlockedSourceIDs, otherSourceID);
 				end
 			end
@@ -11129,7 +11129,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
-									SetDataSubMember("CollectedSources", otherSourceID, 1);
+									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
 								end
 								tinsert(g, newItem);
@@ -11203,7 +11203,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
-									SetDataSubMember("CollectedSources", sourceID, 1);
+									ATTAccountWideData.Sources[sourceID] = 1;
 									newItem.collected = true;
 								end
 								tinsert(g, newItem);
@@ -17642,6 +17642,7 @@ app.events.VARIABLES_LOADED = function()
 	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
 	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.Toys then accountWideData.Toys = {}; end
@@ -17688,6 +17689,8 @@ app.events.VARIABLES_LOADED = function()
 	if data then accountWideData.Illusions = data; end
 	data = GetDataMember("CollectedQuests");
 	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSources");
+	if data then accountWideData.Sources = data; end
 	data = GetDataMember("CollectedSpells");
 	if data then accountWideData.Spells = data; end
 	data = GetDataMember("CollectedTitles");
@@ -17708,7 +17711,6 @@ app.events.VARIABLES_LOADED = function()
 	local oldsettings = {};
 	for i,key in ipairs({
 		"Categories",
-		"CollectedSources",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"HeirloomUpgradeLevels",
@@ -17839,7 +17841,7 @@ app.events.VARIABLES_LOADED = function()
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= app.Version) then
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
-				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				wipe(ATTAccountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				needRefresh = true;
 			end
 		end
@@ -17904,7 +17906,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						response = "s";
 						for i=3,#args,1 do
 							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Sources[b] or 0);
 						end
 					elseif a == "q" then
 						response = "q";
@@ -18072,12 +18074,12 @@ end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
-		local oldState = GetDataSubMember("CollectedSources", sourceID) or 0;
+		local oldState = ATTAccountWideData.Sources[sourceID] or 0;
 
 		-- Only do work if we weren't already learned.
 		-- We check here because Blizzard likes to double notify for items with timers.
 		if oldState ~= 1 then
-			SetDataSubMember("CollectedSources", sourceID, 1);
+			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
@@ -18086,10 +18088,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	local oldState = sourceID and GetDataSubMember("CollectedSources", sourceID);
+	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-		SetDataSubMember("CollectedSources", sourceID, nil);
+		ATTAccountWideData.Sources[sourceID] = nil;
 
 		-- If the user is a Completionist
 		if app.Settings:Get("Completionist") then
@@ -18104,10 +18106,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 			local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
 			if categoryID then
 				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-					if GetDataSubMember("CollectedSources", otherSourceID) then
+					if ATTAccountWideData.Sources[otherSourceID] then
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
-							SetDataSubMember("CollectedSources", otherSourceID, nil);
+							ATTAccountWideData.Sources[otherSourceID] = nil;
 							shared = shared + 1;
 						end
 					end
