@@ -1196,6 +1196,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
+				q(63957, {	-- Encrypted Databanks
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
 				q(63784, {	-- Gold's No Object
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
