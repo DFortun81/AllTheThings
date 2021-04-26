@@ -1015,8 +1015,6 @@ _.Zones =
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
 						i(186196, {	-- Death's Advance War Chest
-							i(185894),	-- Attendant's Loop
-							i(185860),	-- Korthian Caretaker's Cinch
 							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
 						}),
 					},
@@ -1076,20 +1074,12 @@ _.Zones =
 					["provider"] = { "n", 179149 },	-- Baroness Vashj
 					["isDaily"] = true,
 					["coord"] = { 60.9, 28.0, 1961 },	-- Korthia
-					["g"] = {
-					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
-						i(185900),	-- Korthian Caretaker's Stave
-					},
 				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178800 },	-- Voitha
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.7, 1961 },	-- Korthia
-					["g"] = {
-					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
-						i(185857),	-- Korthian Caretaker's Handwraps
-					},
 				}),
 				q(63789, {	-- Continued Efforts: Scholar's Den
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -1213,10 +1203,6 @@ _.Zones =
 					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, 1961 },	-- Korthia
-					["g"] = {
-					--	TODO: i assume this reward is not static, in which case it shouldn't be linked directly to this quest but placed in a separate header.  figure out exactly how to place this + any similar item sets for ideal visibility/accuracy of data
-						i(185886),	-- Korthian Caretaker's Shoulderpads
-					},
 				}),
 				q(63777, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

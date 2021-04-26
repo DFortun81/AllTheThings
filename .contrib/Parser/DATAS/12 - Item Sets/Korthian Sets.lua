@@ -1,0 +1,47 @@
+-----------------------------------------------------
+--       G E A R     S E T S     M O D U L E       --
+-----------------------------------------------------
+
+_.GearSets =
+{
+	n(-976, {	-- Korthian Sets
+		["description"] = "These items can drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.",
+		["g"] = {
+		-- TODO: someone smarter than me should symlink these to all 5 war chests
+		-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
+			f(4, {	-- Cloth
+				i(185861),	-- Korthian Caretaker's Bindings
+				i(185860),	-- Korthian Caretaker's Cinch*
+				i(185858),	-- Korthian Caretaker's Crest*
+				i(186666),	-- Korthian Caretaker's Crown
+				i(185857),	-- Korthian Caretaker's Handwraps*
+				i(185859),	-- Korthian Caretaker's Leggings
+				i(186670),	-- Korthian Caretaker's Mantle
+				i(186665),	-- Korthian Caretaker's Mitts
+				i(186667),	-- Korthian Caretaker's Pantaloons
+				i(185855),	-- Korthian Caretaker's Robes
+				i(186664),	-- Korthian Caretaker's Sandals
+				i(186668),	-- Korthian Caretaker's Sash
+				i(185886),	-- Korthian Caretaker's Shoulderpads*
+				i(185856),	-- Korthian Caretaker's Slippers
+				i(186663),	-- Korthian Caretaker's Vestments
+				i(186669),	-- Korthian Caretaker's Wraps
+			}),
+			f(5, {	-- Leather
+			}),
+			f(6, {	-- Mail
+			}),
+			f(7, {	-- Plate
+			}),
+			n(-319, {	-- Weapons
+				i(185890),	-- Korthian Caretaker's Kris
+				i(185888),	-- Korthian Caretaker's Orb
+				i(185900),	-- Korthian Caretaker's Rod
+				i(185900),	-- Korthian Caretaker's Stave*
+			}),
+			f(52, {	-- Finger
+				i(185894),	-- Attendant's Loop*
+			}),
+		},
+	}),
+};

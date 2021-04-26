@@ -146,7 +146,6 @@ _.Zones =
 							}),
 							i(185993, {	-- Ascended War Chest
 						--	TODO: figure out the contents of this chest
-								i(185894),	-- Attendant's Loop
 							}),
 						}),
 					},
@@ -255,7 +254,6 @@ _.Zones =
 							i(185992, {	-- War Chest of the Undying Army
 						--	TODO: figure out the contents of this chest
 								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
-								i(185858),	-- Korthian Caretaker's Crest
 							--	i(186156),	-- PH Korthia Trinket
 							}),
 						}),
