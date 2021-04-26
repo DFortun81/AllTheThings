@@ -7598,6 +7598,7 @@ local itemFields = {
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
+				rawset(t, "icon", icon);
 				rawset(t, "q", quality);
 				return link;
 			else
