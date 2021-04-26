@@ -10917,11 +10917,51 @@ local function CreateMinimapButton()
 		end
 	end
 	button:UpdateStyle();
-
+	
 	-- Button Configuration
+	local radius = 78;
+	local rounding = 10;
+	local MinimapShapes = {
+		-- quadrant booleans (same order as SetTexCoord)
+		-- {bottom-right, bottom-left, top-right, top-left}
+		-- true = rounded, false = squared
+		["ROUND"] 			= {true,  true,  true,  true },
+		["SQUARE"] 			= {false, false, false, false},
+		["CORNER-TOPLEFT"] 		= {false, false, false, true },
+		["CORNER-TOPRIGHT"] 		= {false, false, true,  false},
+		["CORNER-BOTTOMLEFT"] 		= {false, true,  false, false},
+		["CORNER-BOTTOMRIGHT"]	 	= {true,  false, false, false},
+		["SIDE-LEFT"] 			= {false, true,  false, true },
+		["SIDE-RIGHT"] 			= {true,  false, true,  false},
+		["SIDE-TOP"] 			= {false, false, true,  true },
+		["SIDE-BOTTOM"] 		= {true,  true,  false, false},
+		["TRICORNER-TOPLEFT"] 		= {false, true,  true,  true },
+		["TRICORNER-TOPRIGHT"] 		= {true,  false, true,  true },
+		["TRICORNER-BOTTOMLEFT"] 	= {true,  true,  false, true },
+		["TRICORNER-BOTTOMRIGHT"] 	= {true,  true,  true,  false},
+	};
 	button.update = function(self)
 		local position = GetDataMember("Position", -10.31);
-		self:SetPoint("CENTER", "Minimap", "CENTER", -78 * cos(position), 78 * sin(position));
+		local angle = math.rad(position) -- determine position on your own
+		local x, y
+		local cos = math.cos(angle)
+		local sin = math.sin(angle)
+		local q = 1;
+		if cos < 0 then
+			q = q + 1;	-- lower
+		end
+		if sin > 0 then
+			q = q + 2;	-- right
+		end
+		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
+			x = cos*radius;
+			y = sin*radius;
+		else
+			local diagRadius = math.sqrt(2*(radius)^2)-rounding
+			x = math.max(-radius, math.min(cos*diagRadius, radius))
+			y = math.max(-radius, math.min(sin*diagRadius, radius))
+		end
+		self:SetPoint("CENTER", "Minimap", "CENTER", -x, y);
 	end
 	local update = function(self)
 		local w, x = GetCursorPosition();
