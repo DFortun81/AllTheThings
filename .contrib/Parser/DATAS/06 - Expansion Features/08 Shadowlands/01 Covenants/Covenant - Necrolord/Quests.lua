@@ -66,6 +66,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
 					}),
+					q(59555, {	-- Enemy at the Door
+						["sourceQuests"] = { 62448 },	-- Securing the House
+						["description"] = "Requires Renown 5.",
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.7, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(182077),		-- War-Bred Tauralus (MOUNT!)
+						},
+					}),
+					q(58007, {	-- Eyes on the Problem
+						["sourceQuests"] = { 59555 },	-- Enemy at the Door
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+					}),
 					q(62834, {	-- Glorious Ambition
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
@@ -75,6 +89,11 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(63342, {	-- Necrolord Veteran
+						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),
 					q(59609, {	-- No Rest For the Dead
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
@@ -112,6 +131,11 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62845 },	-- Bringing It All Together
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(62448, {	-- Securing the House
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
 					}),
 					q(58609, {	-- Taking The Seat
 						["sourceQuests"] = {
@@ -152,38 +176,9 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 40.2, 1698 },
 						["description"] = "Becomes available at Renown 22",
 					}),
-					q(63342, {	-- Necrolord Veteran
-						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },
-						["description"] = "Becomes available at Renown 7",
-					}),
 					
-
-
-					-- Zone Breadcrumbs?
-					q(62448, {	-- Securing the House
-						-- Might be breadcrumb if able to reach Renown 5 prior to picking this up? not sure...
-						["coord"] = { 49.7, 50.6, 1698 },
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["sourceQuests"] = { 62694 },	-- A Calling in Maldraxxus
-					}),
-
 					-- Renown 5
 					-- House of Eyes
-					q(59555, {	-- Enemy at the Door
-						["sourceQuests"] = { 62448 },	-- Securing the House
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.7, 1698 },
-						["description"] = "Becomes available with Renown 5 (and previous chapters complete)",
-						["g"] = {
-							i(182077),		-- War-Bred Tauralus
-						},
-					}),
-					q(58007, {	-- Eyes on the Problem
-						["coord"] = { 49.7, 50.6, 1698 },
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["sourceQuests"] = { 59555 },	-- Enemy at the Door
-					}),
 					q(57649, {	-- Whisper of Hope
 						["coord"] = { 50.8, 24.4, 1536 },
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
