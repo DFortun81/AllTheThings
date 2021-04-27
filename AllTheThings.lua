@@ -5181,26 +5181,26 @@ local function AttachTooltip(self)
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
 		if link then
-			if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == link) then
-				return true
+			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
+				return true;
 			else
-				self.AllTheThingsProcessing = link
+				self.AllTheThingsProcessing = link;
 			end
 		else
-			 target = select(2, self:GetUnit());
+			target = select(2, self:GetUnit());
 			if target then
-				if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == target) then
-					return true
+				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
+					return true;
 				else
-					self.AllTheThingsProcessing = target
+					self.AllTheThingsProcessing = target;
 				end
 			else
 				spellID = select(2, self:GetSpell());
 				if spellID then
-					if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == spellID) then
-						return true
+					if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
+						return true;
 					else
-						self.AllTheThingsProcessing = spellID
+						self.AllTheThingsProcessing = spellID;
 					end
 				end
 			end
@@ -5279,7 +5279,6 @@ local function AttachTooltip(self)
 		if self.AllTheThingsProcessing and link then
 			-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-			local itemID = string.match(link, "item:(%d+)");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
 			-- print(Ltype,Id);
 			--[[
@@ -5291,7 +5290,8 @@ local function AttachTooltip(self)
 				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 			end--]]
 			-- print("Search Item",itemID);
-			if itemID and itemID == "137642" then -- skip Mark of Honor for now
+			local mohIndex = link:find("item:137642");
+			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
 				AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
 			else
 				AttachTooltipSearchResults(self, link, SearchForLink, link);
