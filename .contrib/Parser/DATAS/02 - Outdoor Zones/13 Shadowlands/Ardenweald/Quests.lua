@@ -16,6 +16,7 @@ _.Zones =
 					},
 				}),
 				q(62246, {	-- A Fallen Friend
+					-- ["sourceQuests"] = {  },	-- TODO: had this rare killed from previously (lvl 57+) but didn't receive the quest item. Guessing there's a SQ...
 					["provider"] = { "i", 183091 },	-- Lifewoven Bracelet
 				}),
 				q(60063, {	-- A Song for Silkstriders
