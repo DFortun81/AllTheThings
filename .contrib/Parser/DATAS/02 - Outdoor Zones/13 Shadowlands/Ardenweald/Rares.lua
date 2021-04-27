@@ -127,9 +127,7 @@ _.Zones =
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(183091, {	-- Lifewoven Bracelet
-							["questID"] = 62246,	-- A Fallen Friend
-						}),
+						i(183091),	-- Lifewoven Bracelet
 						i(179596),	-- Drust Mask of Dominance
 					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna
 						i(180163),	-- Blackthorn Harvester

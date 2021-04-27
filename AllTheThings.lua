@@ -11012,9 +11012,7 @@ end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then
-		addedQuests =  {};
-	end
+	if not addedQuests then addedQuests =  {}; end
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
@@ -11094,6 +11092,20 @@ local function NestSourceQuests(root, addedQuests, depth)
 			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
 			if not root.g then root.g = prereqs;
 			else MergeObjects(root.g, prereqs); end
+		end
+	end
+	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+	if root.providers then
+		for _,p in ipairs(root.providers) do
+			if p[1] == "i" then
+				-- print("Root Provider",p[1], p[2]);
+				local pRef = app.SearchForObject("itemID", p[2]);
+				if pRef then
+					pRef = CloneData(pRef);
+					if not root.g then root.g = { pRef };
+					else MergeObject(root.g, pRef, 1); end
+				end
+			end
 		end
 	end
 	return root;
@@ -11306,7 +11318,6 @@ function app:CreateMiniListForGroup(group)
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
 				-- local breakafter = 0;
-				local isAcctQuests = app.AccountWideQuests;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
@@ -11431,6 +11442,21 @@ function app:CreateMiniListForGroup(group)
 						prereqs = lastprereq.g;
 					end
 				until not prereqs or #prereqs < 1;
+			end
+			-- If the initial quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+			if g[1] and g[1].providers then
+				for _,p in ipairs(g[1].providers) do
+					if p[1] == "i" then
+						-- print("Root Provider",p[1], p[2]);
+						local pRef = app.SearchForObject("itemID", p[2]);
+						if pRef then
+							pRef = CloneData(pRef);
+							-- Set the full Quest Chain as the child of the Item
+							pRef.g = g;
+							g = { pRef };
+						end
+					end
+				end
 			end
 			popout.data = {
 				["text"] = L["QUEST_CHAIN_REQ"],		-- L["QUEST_CHAIN_REQ"] = "Quest Chain Requirements"
