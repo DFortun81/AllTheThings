@@ -1289,6 +1289,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
+				q(63954, {	-- Sealed Lockboxes
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
 				q(63780, {	-- See How THEY Like It!
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178838 },	-- Lady Moonberry
@@ -1331,6 +1337,12 @@ _.Zones =
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, 1961 },	-- Korthia
+				}),
+				q(64194, {	-- War Prototype
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.9, 1961 },	-- Korthia
 				}),
 				q(63778, {	-- We Move Forward
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
