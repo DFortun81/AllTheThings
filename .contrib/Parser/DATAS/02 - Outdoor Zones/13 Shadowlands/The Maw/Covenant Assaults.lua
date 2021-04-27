@@ -32,12 +32,10 @@ _.Zones =
 							crit(10),	-- Somebody Feed Kevin
 						}),
 						ach(15034, {	-- Wings Against the Flames
-							crit(1),	-- Mine's Bigger
 							crit(3),	-- No One Floats Down Here
 							crit(4),	-- Encouraging Words
 							crit(7),	-- United In Pride
 							crit(9),	-- Kill The Flame
-							crit(10),	-- The Dreadful Blend
 						}),
 						ach(15036, {	-- Rooting Out The Evil
 							crit(1),	-- Clean Out the Crucible
@@ -119,12 +117,32 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63828, {	-- Mine's Bigger
+								["provider"] = { "n", 177175 },	-- Mikanikos
+								["isDaily"] = true,
+								["coord"] = { 42.5, 45.0, 1543 },
+								["g"] = {
+									crit(1, {	-- Mine's Bigger
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+								},
+							}),
 							q(63859, {	-- Saved By The Bells
 								["provider"] = { "n", 177900 },	-- Xandria
 								["isDaily"] = true,
 								["coord"] = { 42.7, 44.7, 1543 },
 								["g"] = {
 									crit(6, {	-- Saved By The Bells
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+								},
+							}),
+							q(63864, {	-- The Dreadful Blend
+								["provider"] = { "n", 178005 },	-- Theotar
+								["isDaily"] = true,
+								["coord"] = { 42.9, 44.4, 1543 },
+								["g"] = {
+									crit(10, {	-- The Dreadful Blend
 										["achievementID"] = 15034,	-- Wings Against the Flames
 									}),
 								},
