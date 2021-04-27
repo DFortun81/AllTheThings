@@ -36,6 +36,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(61179, {    -- Forge Ahead
+								["provider"] = { "n", 158773 },    -- Capheus
+								["coord"] = { 64.2, 20.0, BASTION },
+							}),
 							q(62280, {	-- Limbo
 								["isWorldQuest"] = true,
 							}),
@@ -52,6 +56,14 @@ _.ExpansionFeatures =
 								["g"] = {
 								--	follower is granted upon accepting the quest
 									follower(1259),	-- Pelagos
+								},
+							}),
+							q(60175, {    -- Adventurer: Nemea
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 64.8, 16.4, BASTION },
+								["description"] = "Becomes available at Renown 4.",
+								["g"] = {
+								--	follower(???),	-- Nemea
 								},
 							}),
 							q(61861, {	-- Adventurer: Sika

@@ -557,6 +557,11 @@ _.Zones =
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58506,	-- Network Diagnostics
 						}),
+						q(59000, {    -- Elements of Corruption
+							["sourceQuests"] = { 56377 },    -- Forging Onward
+							["provider"] = { "n", 155496 },    -- Wrathion
+							["coord"] = { 46.6, 64.6, CHAMBER_OF_HEART },
+						}),
 						q(56536, {	-- It's Never Easy
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },

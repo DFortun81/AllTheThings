@@ -113,6 +113,9 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 162222 },	-- Rathan
 									["coord"] = { 24.2, 38.6, 1536 },	-- Maldraxxus
 								}),
+								q(59747, {    -- A Lost Soul
+									["provider"] = { "n", 166096 },    -- Miru Soulblossom
+								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
 									["provider"] = { "n", 162174 },	-- Emeni
@@ -241,6 +244,11 @@ _.ExpansionFeatures =
 									["coord"] = { 55.1, 68.6, 1536 },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
+								q(60264, {    -- Soul Survivor
+									["sourceQuests"] = { 59747 },    -- A Lost Soul
+									["provider"] = { "n", 167877 },    -- Miru Soulblossom
+									["coord"] = { 55.0, 68.2, MALDRAXXUS },
 								}),
 								q(60048, {	-- Stitching Time
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
