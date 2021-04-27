@@ -43,23 +43,20 @@ _.Zones =
 							["coord"] = { 52.89, 55.76, 78 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 78 },	-- Un'goro Crater
 						}),
 						q(53600, {	-- Honor's Stand
 							["name"] = "Honor's Stand",
 							["coord"] = { 39.11, 09.31, 199 },
 							["races"] = { DARKIRON },
-							["maps"] = { 199 },	-- Southern Barrens
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
+							["maps"] = { 199 },	-- Southern Barrens
 						}),
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",
 							["coord"] = { 57.16, 77.09, 198 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 					},
@@ -69,27 +66,24 @@ _.Zones =
 					["g"] = {
 						q(53585, {	-- Aerie Peak
 							["name"] = "Aerie Peak",
-							["coord"] = { 13.52, 46.81, 26 },
+							["coord"] = { 13.52, 46.81, THE_HINTERLANDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
-							["maps"] = { 26 },	-- The Hinterlands
+							["maps"] = { THE_HINTERLANDS },	-- The Hinterlands
 						}),
 						q(53587, {	-- Blackrock Depths
 							["name"] = "Blackrock Depths",
 							["coord"] = { 33.4, 24.7, 35 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 35 },	-- Blackrock Mountain
 						}),
 						q( 53594, {	-- Nethergarde Keep
 							["name"] = "Nethergarde Keep",
-							["coord"] = { 61.82, 12.74, 17 },
+							["coord"] = { 61.82, 12.74, BLASTED_LANDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
-							["maps"] = { 17 },	-- Blasted Lands
+							["maps"] = { BLASTED_LANDS },	-- Blasted Lands
 						}),
 					},
 				}),
@@ -101,7 +95,6 @@ _.Zones =
 							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { SHADOWMOON_VALLEY },
 						}),
 						q(53597, {	-- Skald [Outlands]
@@ -109,7 +102,6 @@ _.Zones =
 							["coord"] = { 72.41, 17.65, BLADES_EDGE_MOUNTAINS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { BLADES_EDGE_MOUNTAINS },
 						}),
 					},
@@ -122,7 +114,6 @@ _.Zones =
 							["coord"] = { 76.97, 18.68, 118 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 118 },	-- Icecrown
 						}),
 						q(53596, {	-- Ruby Dragonshrine
@@ -130,7 +121,6 @@ _.Zones =
 							["coord"] = { 45.34, 49.92, 115 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 115 },	-- Dragonblight
 						}),
 					},
@@ -143,7 +133,6 @@ _.Zones =
 							["coord"] = { 57.68, 62.81, 379 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 379 },	-- Kun-Lai Summit
 						}),
 						q(53598, {	-- Stormstout Brewery
@@ -151,7 +140,6 @@ _.Zones =
 							["coord"] = { 31.51, 73.57, 376 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 376 },	-- Valley of the Four Winds
 						}),
 					},
@@ -164,7 +152,6 @@ _.Zones =
 							["coord"] = { 65.74, 08.24, 550 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 550 },	-- Nagrand
 						}),
 						q(53588, {	-- The Pit
@@ -172,7 +159,6 @@ _.Zones =
 							["coord"] = { 46.69, 38.75, 543 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 543 },	-- Gorgrond
 						}),
 					},
@@ -185,7 +171,6 @@ _.Zones =
 							["coord"] = { 71.68, 48.01, 646 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 646 },	-- Broken Shore
 						}),
 						q(53593, {	-- Neltharion's Vault
@@ -193,7 +178,6 @@ _.Zones =
 							["coord"] = { 44.66, 72.87, 650 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
 							["maps"] = { 650 },	-- Highmountain
 						}),
 					},
