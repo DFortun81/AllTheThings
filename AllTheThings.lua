@@ -17601,16 +17601,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 	end
-
-	-- Convert over the deprecated ArtifactRelicItemLevelsPerCharacter table.
-	local artifactRelicItemLevelsPerCharacter = GetDataMember("ArtifactRelicItemLevelsPerCharacter");
-	if artifactRelicItemLevelsPerCharacter then
-		for guid,data in pairs(artifactRelicItemLevelsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.ArtifactRelicItemLevels = data; end
-		end
-	end
-
+	
 	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
 	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
 	if azeriteEssenceRanksPerCharacter then
