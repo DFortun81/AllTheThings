@@ -195,9 +195,6 @@ _.ExpansionFeatures =
 										}),
 										crit(13, {	-- Kyrian Arsenal
 										}),
-										crit(14, {	-- Night Fae Arsenal
-										-- possibly drops from Hunt-Captain Korayn's tribute at "Good Friend" (unsure if it requires rep, this is based on a wowhead comment.  or could also be any ardenweald guest at good friend, idk)
-										}),
 										crit(16, {	-- Vanity Mirror
 										}),
 									}),
@@ -395,14 +392,14 @@ _.ExpansionFeatures =
 											crit(6, {	-- Hunt-Captain Korayn
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(179605),	-- Elderwood Barrier
+											i(179548),	-- Elderwood Gavel
 											i(181618),	-- Gorm Quishe Platter
 											i(179509),	-- Grove Warden's Edge
 											i(179533),	-- Grove Warden's Harvester
-											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
-											i(179605),	-- Elderwood Barrier
 											i(179585),	-- Nightwillow Shortbow
-											i(179548),	-- Elderwood Gavel
+											i(183846),	-- Orders to Gormsmith Cavina
 										},
 									}),
 									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
@@ -439,6 +436,7 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181607),	-- Decree: Lady Moonberry's Esteem
+											i(181613),	-- Decree: Lady Moonberry's Boon
 											i(179516),	-- Songwood Staff
 											i(179605),	-- Elderwood Barrier
 											i(179548),	-- Elderwood Gavel
@@ -633,6 +631,10 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(63694, {	-- Choofa's Best Friend
+									["provider"] = { "n", 160814 },	-- Choofa
+									["coord"] = { 63.7, 36.6, 1565 },	-- Ardenweald
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
@@ -894,17 +896,26 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62073, {	-- Restock: Band Shirts
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 								}),
+								q(62064, {	-- Restock: Broken Mirrors
+									["repeatable"] = true,
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["cost"] = {
+										{ "i", 173109, 5 },	-- 5x Angerseye
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
+									},
+								}),
 								q(62066, {	-- Restock: Dredger Pool
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
 								q(62106, {	-- Restock: Enchantments
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, 1525 },
 									["cost"] = {
@@ -913,17 +924,17 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 								}),
 								q(61916, {	-- Restock: Fire Damage
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -933,13 +944,13 @@ _.ExpansionFeatures =
 								}),
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.2, 1525 },	-- Revendreth
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 								--	showed up after Week 3 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									["cost"] = {
@@ -949,7 +960,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62083, {	-- Restock: Medical Supplies
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									["cost"] = {
@@ -959,13 +970,13 @@ _.ExpansionFeatures =
 								}),
 								q(62082, {	-- Restock: Personal Stash
 								--	showed up after Week 4 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 								}),
 								q(62069, {	-- Restock: Sinstones
 								--	showed up after Week 2 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -974,7 +985,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62075, {	-- Restock: Soul Cages
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -990,7 +1001,7 @@ _.ExpansionFeatures =
 								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
 								}),
 								q(62108, {	-- Restock: Strategic Codices
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, 1525 },
 									["cost"] = {
@@ -1495,6 +1506,23 @@ _.ExpansionFeatures =
 									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								}),
+								q(62599, {	-- Gormsmith Cavina
+									-- TODO: first time obtaining this quest item, Exalted + Rank 5 Ember Court... not sure requirements if any
+									-- ["sourceQuests"] = {  },	-- TODO
+									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
+								}),
+								q(62616, {	-- Night Fae Arsenal
+									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
+									["provider"] = { "n", 165382 },	-- Gormsmith Cavina
+									["coord"] = { 51.6, 34.0, 1565 },	-- Ardenweald
+									["g"] = {
+										i(177244, {	-- Night Fae Arsenal
+											crit(14, {	-- Night Fae Arsenal
+												["achievementID"] = 14678,	-- Court Favors
+											}),
+										}),
+									},
 								}),
 							}),
 							-- Random, non-collectible items which go into your bags while in the Ember Court

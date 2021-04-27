@@ -4314,6 +4314,8 @@ _.HiddenQuestTriggers =
 		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 					-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62504),	-- triggered when Ember Court ended, First Lady Moonberry Elated & "Messy" at Max?
+		q(62519),	-- triggered when Ember Court ended, First Lady Moonberry Elated & "Messy" at Max?
 		q(62497),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
@@ -4397,6 +4399,7 @@ _.HiddenQuestTriggers =
 		q(61573),	-- When applying the long sleeved doublet to your dredger
 		q(61575),	-- When applying Spikey Hair to your dredger
 		-- q(59682),	-- triggered when using "Crown of Honor"
+		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
@@ -4498,6 +4501,7 @@ _.HiddenQuestTriggers =
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
+		q(61527),	-- when looting 'Decree: Lady Moonberry's Boon' / Opening Lady Moonberry's Extravagant Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
