@@ -17865,7 +17865,7 @@ app.events.VARIABLES_LOADED = function()
 					rawset(CompletedQuests, questID, 2);
 					if not app.CurrentCharacter.Quests[questID] then
 						app.CurrentCharacter.Quests[questID] = 2;
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
@@ -17881,7 +17881,7 @@ app.events.VARIABLES_LOADED = function()
 					rawset(CompletedQuests, questID, 2);
 					if not app.CurrentCharacter.Quests[questID] then
 						app.CurrentCharacter.Quests[questID] = 2;
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
