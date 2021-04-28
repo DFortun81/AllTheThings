@@ -68,19 +68,49 @@ profession(TAILORING, {
 										{ 40.0, 24.0, 895 },  --
 									},
 									["groups"] = {
-										i(167889),	-- Pattern: Azure Silk Cloak
-										i(167881),  -- Pattern: Belt of the Archmage
-										i(167887),  -- Pattern: Cindercloth Gloves
-										i(167886),  -- Pattern: Cindercloth Vest
-										i(167882),  -- Pattern: Cloak of Warding
-										i(167883),  -- Pattern: Felcloth Gloves
-										i(167890),  -- Pattern: Icy Cloak
-										i(167884),  -- Pattern: Inferno Gloves
-										i(167885),  -- Pattern: Mooncloth Gloves
-										i(167888),	-- Pattern: Robe of Winter Night
-										i(167880, {  -- Pattern: Robes of Arcana
+										i(167889, {	-- Pattern: Azure Silk Cloak
+											["recipeID"] = 8786,
 											["requiredSkill"] = TAILORING,
+										}),
+										i(167881, {	-- Pattern: Belt of the Archmage
+											["recipeID"] = 22866,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167887, {	-- Pattern: Cindercloth Gloves
+											["recipeID"] = 18412,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167886, {	-- Pattern: Cindercloth Vest
+											["recipeID"] = 18408,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167882, {	-- Pattern: Cloak of Warding
+											["recipeID"] = 22870,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167883, {	-- Pattern: Felcloth Gloves
+											["recipeID"] = 22867,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167890, {	-- Pattern: Icy Cloak
+											["recipeID"] = 3862,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167884, {	-- Pattern: Inferno Gloves
+											["recipeID"] = 22868,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167885, {	-- Pattern: Mooncloth Gloves
+											["recipeID"] = 22869,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167888, {	-- Pattern: Robe of Winter Night
+											["recipeID"] = 18436,
+											["requiredSkill"] = TAILORING,
+										}),
+										i(167880, {  -- Pattern: Robes of Arcana
 											["recipeID"] = 6692,
+											["requiredSkill"] = TAILORING,
 										}),
 									},
 								},
