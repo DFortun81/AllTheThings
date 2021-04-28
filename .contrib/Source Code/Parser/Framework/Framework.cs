@@ -343,7 +343,7 @@ namespace ATT
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
             }
-            if(data.TryGetValue("objectID", out npcID))
+            if (data.TryGetValue("objectID", out npcID))
             {
                 OBJECTS_WITH_REFERENCES[npcID] = true;
             }
@@ -701,7 +701,27 @@ namespace ATT
 
             // see if a matching recipe name exists for this skill, and use that recipeID
             if (Objects.FindRecipeByName(requiredSkill, name, out long recipeID))
+            {
                 data["recipeID"] = recipeID;
+                if (data.TryGetValue("itemID", out object itemID))
+                {
+                    Trace.WriteLine(string.Format(
+                        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},ItemID:{2}",
+                        recipeID,
+                        requiredSkill,
+                        itemID
+                        ));
+                }
+                else
+                {
+                    Trace.WriteLine(string.Format(
+                        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},[DATA]:{2}",
+                        recipeID,
+                        requiredSkill,
+                        MiniJSON.Json.Serialize(data)
+                        ));
+                }
+            }
         }
 
         /// <summary>

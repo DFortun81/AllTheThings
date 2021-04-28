@@ -792,7 +792,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);-- bubbleDown({ ["requireSkill"] = skillID, }, t)); (don't do this...)
+	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t)); -- Need to maintain the requireSkill inclusion until every individually-sourced recipe Item has the proper tagging as well
 	_.Professions = { p };
 	return p;
 end
