@@ -149,6 +149,7 @@ _.Zones =
 								},
 								["g"] = {
 									i(185974),	-- Bahmeht Chain Link
+									i(186218),	-- Fire-Tempered Armor Cinch (probably CBD, but looted from Zul'gath)
 									i(185972, {	-- Tormentor's Cache
 										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 									}),
@@ -1312,6 +1313,12 @@ _.Zones =
 					["provider"] = { "n", 178837 },	-- Lord Herne
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, 1961 },	-- Korthia
+				}),
+				q(64070, {	-- Staying Scrappy
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
+					["isDaily"] = true,
+					["coord"] = { 60.1, 27.5, 1961 },	-- Korthia
 				}),
 				q(63786, {	-- Sweep the Windswept Aerie
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
