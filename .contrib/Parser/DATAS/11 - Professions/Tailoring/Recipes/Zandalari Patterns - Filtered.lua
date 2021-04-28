@@ -78,7 +78,10 @@ profession(TAILORING, {
 										i(167884),  -- Pattern: Inferno Gloves
 										i(167885),  -- Pattern: Mooncloth Gloves
 										i(167888),	-- Pattern: Robe of Winter Night
-										i(167880),  -- Pattern: Robes of Arcana
+										i(167880, {  -- Pattern: Robes of Arcana
+											["requiredSkill"] = TAILORING,
+											["recipeID"] = 6692,
+										}),
 									},
 								},
 							},
