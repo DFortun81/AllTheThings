@@ -692,6 +692,10 @@ namespace ATT
         /// <param name="data"></param>
         private static void TryFindRecipeID(Dictionary<string, object> data)
         {
+            // don't apply a recipeID to data which is not an item or is a Toy
+            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID"))
+                return;
+
             // all recipes require a skill
             if (!data.TryGetValue("requireSkill", out object requiredSkill))
                 return;
@@ -703,29 +707,28 @@ namespace ATT
             if (Objects.FindRecipeByName(requiredSkill, name, out long recipeID))
             {
                 data["recipeID"] = recipeID;
-                long skillID = Convert.ToInt64(requiredSkill);
-                string skillConstant;
-                if (!Objects.SKILLID_CONSTANTS.TryGetValue(skillID, out skillConstant))
-                    skillConstant = "UNKNOWN_SKILL:" + skillID;
+                //long skillID = Convert.ToInt64(requiredSkill);
+                //if (!Objects.SKILLID_CONSTANTS.TryGetValue(skillID, out string skillConstant))
+                //    skillConstant = "UNKNOWN_SKILL:" + skillID;
 
-                if (data.TryGetValue("itemID", out object itemID))
-                {
-                    Trace.WriteLine(string.Format(
-                        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},ItemID:{2}",
-                        recipeID,
-                        skillConstant,
-                        itemID
-                        ));
-                }
-                else
-                {
-                    Trace.WriteLine(string.Format(
-                        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},[DATA]:{2}",
-                        recipeID,
-                        skillConstant,
-                        MiniJSON.Json.Serialize(data)
-                        ));
-                }
+                //if (data.TryGetValue("itemID", out object itemID))
+                //{
+                //    Trace.WriteLine(string.Format(
+                //        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},ItemID:{2}",
+                //        recipeID,
+                //        skillConstant,
+                //        itemID
+                //        ));
+                //}
+                //else
+                //{
+                //    Trace.WriteLine(string.Format(
+                //        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},[DATA]:{2}",
+                //        recipeID,
+                //        skillConstant,
+                //        MiniJSON.Json.Serialize(data)
+                //        ));
+                //}
             }
         }
 
