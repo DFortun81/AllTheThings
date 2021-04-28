@@ -10230,7 +10230,7 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group)
-	local visible = false;
+	local visible = app.MODE_DEBUG;
 
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
