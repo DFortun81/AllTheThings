@@ -703,12 +703,17 @@ namespace ATT
             if (Objects.FindRecipeByName(requiredSkill, name, out long recipeID))
             {
                 data["recipeID"] = recipeID;
+                long skillID = Convert.ToInt64(requiredSkill);
+                string skillConstant;
+                if (!Objects.SKILLID_CONSTANTS.TryGetValue(skillID, out skillConstant))
+                    skillConstant = "UNKNOWN_SKILL:" + skillID;
+
                 if (data.TryGetValue("itemID", out object itemID))
                 {
                     Trace.WriteLine(string.Format(
                         "Automated Recipe Lookup - RecipeID:{0},Skill:{1},ItemID:{2}",
                         recipeID,
-                        requiredSkill,
+                        skillConstant,
                         itemID
                         ));
                 }
@@ -717,7 +722,7 @@ namespace ATT
                     Trace.WriteLine(string.Format(
                         "Automated Recipe Lookup - RecipeID:{0},Skill:{1},[DATA]:{2}",
                         recipeID,
-                        requiredSkill,
+                        skillConstant,
                         MiniJSON.Json.Serialize(data)
                         ));
                 }
