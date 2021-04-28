@@ -564,6 +564,7 @@ _.Zones =
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1044 },	-- Arathi Highlands (scenario)
 							["g"] = {
 								i(169197, {	-- Warfronts Equipment Cache
 									["modID"] = 23,	-- iLvl 430
@@ -721,6 +722,7 @@ _.Zones =
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1044 },	-- Arathi Highlands (scenario)
 							["g"] = {
 								i(164578, {	-- Warfronts Equipment Cache
 									["sym"] = {
