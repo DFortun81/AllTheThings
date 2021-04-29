@@ -62,17 +62,41 @@ _.ExpansionFeatures =
 							follower(478),	-- Lady Liadrin
 						},
 					}),
+					q(44370, {	-- Completing Your Arsenal
+						["sourceQuests"] = { 42120 },	-- The Silver Hand
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },					
+					}),					
 					q(42847, {	-- Dark Storms
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },						
 					}),
+					q(42774, {	-- Hope Prevails
+						["sourceQuests"] = { 42773 },	-- The Light Reveals
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 52.1, 83.2, 22 },
+					}),
+					q(42771, {	-- Keeping the Peace
+						["sourceQuests"] = { 42770 },	-- Seeking Guidance
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
+						["coord"] = { 51.3, 79.0, 22 },
+					}),
 					q(38933, {	-- Logistical Matters
 						["sourceQuests"] = { 38566 },	-- A United Force
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 73.7, 19.6, 24 },
+					}),
+					q(42867, {	-- Meeting of the Silver Hand
+						["sourceQuests"] = { 44153 },	-- Light's Charge
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },					
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
@@ -89,6 +113,12 @@ _.ExpansionFeatures =
 							follower(480),	-- Lord Maxwell Tyrosus
 						},
 					}),
+					q(42772, {	-- Sacred Ground
+						["sourceQuests"] = { 42770 },	-- Seeking Guidance
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
+						["coord"] = { 51.4, 79.0, 22 },						
+					}),
 					q(42000, {	-- Seeker of Truth
 						["sourceQuests"] = { 40408 },	-- Weapons of Legend
 						["classes"] = { PALADIN },
@@ -98,11 +128,23 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 74.8, 48.2, 627 },
 					}),
+					q(42770, {	-- Seeking Guidance
+						["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },					
+					}),
 					q(42017, {	-- Shrine of the Truthguard
 						["sourceQuests"] = { 42005 },	-- The End of the Saga
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105813 },	-- Orik Trueheart
 						["coord"] = { 73.9, 49.0, 627 },
+					}),
+					q(42850, {	-- Tech It Up a Notch
+						["sourceQuests"] = { 42849 },	-- Wrath and Justice
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },						
 					}),
 					q(42846, {	-- The Blood Matriarch
 						["sourceQuests"] = { 39696 },	-- Rise, Champions
@@ -110,17 +152,53 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 72.4, 24 },						
 					}),
+					q(42377, {	-- The Brother's Trail
+						["sourceQuests"] = { 42231 },	-- The Mysterious Paladin
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 106337 },	-- Travard
+						["coord"] = { 72.0, 49.3, 627 },
+					}),	
 					q(42005, {	-- The End of the Saga
 						["sourceQuests"] = { 42002 }, -- To Northrend
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105724 },	-- Orik Trueheart
 						["coord"] = {56.8, 78.7, 117 },	-- Howling Fjord,
 					}),
+					q(42966, {	-- The Highlord's Command
+						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 50.8, 70.9, 24 },						
+					}),
+					q(42773, {	-- The Light Reveals
+						["sourceQuests"] = { 42771 },	-- Keeping the Peace
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 51.6, 81.9, 22 },
+					}),
 					q(42231, {	-- The Mysterious Paladin
 						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 72.4, 24 },						
+					}),
+					q(42919, {	-- The Scion's Legacy
+						["sourceQuests"] = { 42867 },	-- Meeting of the Silver Hand
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },						
+					}),
+					q(38376, {	-- The Search for the Highlord
+						["sourceQuests"] = { 42774 },	-- Hope Prevails
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 74.3, 53.2, 23 },				
+					}),
+					q(42120, {	-- The Silver Hand
+						["sourceQuests"] = { 42377 },	-- The Brother's Trail
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 106337 },	-- Travard
+						["coord"] = { 72.0, 49.3, 627 },					
 					}),
 					q(42002, {	-- To Northrend
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
@@ -167,7 +245,6 @@ _.ExpansionFeatures =
 					}),
 					q(43534),	-- Blood of Sargeras
 					q(44218),	-- Champion Armaments
-					q(44370),	-- Completing Your Arsenal
 					q(43486),	-- Cracking the Codex
 					q(43699),	-- Defenders of the World
 					q(45149),	-- Ending the Crescent Curse
@@ -178,15 +255,12 @@ _.ExpansionFeatures =
 					q(45143),	-- Judgment Awaits
 					q(46074),	-- Leather to Legendary
 					q(43698),	-- Lumenstone
-					q(42867),	-- Meeting of the Silver Hand
 					q(45145),	-- Moonfang Family Relics
 					q(45148),	-- Oath Breaker
 					q(46070),	-- Preparations Underway
 					q(45146),	-- Runic Reading
-					q(42770),	-- Seeking Guidance
 					q(43494),	-- Silver Hand Knights
 					--]]
-					q(42850),	-- Tech It Up a Notch
 					q(42890),	-- The Codex of Command
 					--[[
 					q(42885),	-- The Highlord's Command
@@ -194,11 +268,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(42968),	-- The Highlord's Command
-					q(42966),	-- The Highlord's Command
 					q(43540),	-- The Mind of the Enemy
-					q(42919),	-- The Scion's Legacy
-					q(38376),	-- The Search for the Highlord
-					q(42120),	-- The Silver Hand
 					q(42886),	-- To Faronaar
 					q(43489),	-- To Felblaze Ingress (also warrior?)
 					q(43535),	-- Translation: Danger!

@@ -325,12 +325,6 @@ _.Zones =
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(42774, {	-- Hope Prevails
-					["lvl"] = 98,
-					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-					["classes"] = { PALADIN },
---						["sourceQuests"] = {  },	--
-				}),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 					["provider"] = { "n", 44457 },	-- Selyria Groenveld
 					["coord"] = { 48.5, 54.9, 22 },
@@ -371,12 +365,6 @@ _.Zones =
 				q(27156, {	-- It's About Time!
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, 22 },
-				}),
-				q(42771, {	-- Keeping the Peace
-					["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
-					["lvl"] = 98,
-					["classes"] = { PALADIN },
---						["sourceQuests"] = {  },	--
 				}),
 				q(5515, {	-- Krastinov's Bag of Horrors
 					["u"] = REMOVED_FROM_GAME,
@@ -487,12 +475,6 @@ _.Zones =
 					["coord"] = { 62.5, 58.5, 22 },
 					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
-				}),
-				q(42772, {	-- Sacred Ground
-					["provider"] = { "n", 108777 },	-- High Priest Thel'danis
-					["lvl"] = 98,
-					["classes"] = { PALADIN },
---						["sourceQuests"] = {  },	--
 				}),
 				q(27162, {	-- Scholomancer (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
@@ -695,12 +677,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(14022)),	-- Barov Peasant Caller
 					},
-				}),
-				q(42773, {	-- The Light Reveals
-					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-					["lvl"] = 98,
-					["classes"] = { PALADIN },
---						["sourceQuests"] = {  },	--
 				}),
 				q(26957, {	-- The Long Trip Home
 					["provider"] = { "n", 44905 },	-- Del Gahrron

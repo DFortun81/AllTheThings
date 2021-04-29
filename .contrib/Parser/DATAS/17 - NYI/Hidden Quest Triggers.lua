@@ -2067,6 +2067,7 @@ _.HiddenQuestTriggers =
 		q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
 		q(44064),	-- Paladin Order Hall - Silver Hand Chosen Second (Holy)
 		q(44066),	-- Paladin Order Hall - Ashbringer Chosen Second (Retribution)
+		q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third(Retribution)
 		q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)

@@ -749,12 +749,6 @@ _.Zones =
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
 				}),
-				q(44337, {	-- Goddess Watch Over You
-					["provider"] = { "n", 113686 },	-- Archmage Khadgar
-				}),
-				q(44338, {	-- Goddess Watch Over You
-					["provider"] = { "n", 113686 },	-- Archmage Khadgar
-				}),
 				q(46744, {	-- Greater Power for Greater Threats
 					["u"] = REMOVED_FROM_GAME,
 					["isBreadcrumb"] = true,
@@ -1306,10 +1300,6 @@ _.Zones =
 				q(44172, {	-- The Arena Calls
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
-				}),
-				q(42377, {	-- The Brother's Trail
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 106337 },	-- Travard
 				}),
 				q(40714, {	-- The Call To War
 					["description"] = "Automatically given to you when you arrive in Dalaran.",
