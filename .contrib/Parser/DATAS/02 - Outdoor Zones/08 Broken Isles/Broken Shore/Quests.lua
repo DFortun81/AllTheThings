@@ -509,12 +509,6 @@ _.Zones =
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 				}),
-				q(42811, {	-- We Meet at Light's Hope
-					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-					["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
-					["classes"] = { PALADIN },
-					["coord"] = { 20.4, 61.4, 646 },
-				}),
 				q(46511, {	-- We're Treasure Hunters
 					["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					["provider"] = { "n", 119886 },	-- Excavator Karla

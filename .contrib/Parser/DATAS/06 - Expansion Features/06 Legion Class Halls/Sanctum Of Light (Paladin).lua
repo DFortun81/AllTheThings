@@ -10,27 +10,165 @@ _.ExpansionFeatures =
 			["maps"] = {
 				24,	-- Light's Hope Chapel
 			},
-			["lvl"] = 98,
 			["g"] = {
 				n(QUESTS, {
+					q(42866, {	-- A Sign From The Sky
+						["sourceQuests"] = { 42847 },	-- Dark Storms
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },						
+					}),
+					q(39756, {	-- A Sound Plan
+						["sourceQuests"] = { 38933 },	-- Logistical Matters
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
+					}),
+					q(38566, {	-- A United Force
+						["sourceQuests"] = {
+							38576,	-- We Meet at Light's Hope
+							42811,	-- We Meet at Light's Hope
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 63.0, 37.2, 24 },
+					}),
+					q(38710, {	-- An Urgent Gathering
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
+						["maps"] = { 627 },
+					}),
+					q(44063, {	-- Bolstering Your Arsenal
+						["sourceQuests"] = { 39756 },	-- A Sound Plan
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },	
+					}),
+					q(44250, {	-- Champion of the Light
+						["sourceQuests"] = { 38566 },	-- A United Force
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 100196 },	-- Eadric the Pure
+						["coord"] = { 41.4, 61.1, 24 },
+						["g"] = {
+								i(139693),	-- Crown of the Silver Hand
+						},
+					}),
+					q(42881, {	-- Champion: Lady Liadrin
+						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
+						["coord"] = { 38.2, 64.6, 24 },
+						["g"] = {
+							follower(478),	-- Lady Liadrin
+						},
+					}),
+					q(42847, {	-- Dark Storms
+						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },						
+					}),
+					q(38933, {	-- Logistical Matters
+						["sourceQuests"] = { 38566 },	-- A United Force
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 73.7, 19.6, 24 },
+					}),
+					q(42848, {	-- Recruiting the Troops
+						["sourceQuests"] = { 42847 },	-- Dark Storms
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },						
+					}),
+					q(39696, {	-- Rise, Champions
+						["sourceQuests"] = { 39756 },	-- A Sound Plan
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },
+						["g"] = {
+							follower(480),	-- Lord Maxwell Tyrosus
+						},
+					}),
+					q(42000, {	-- Seeker of Truth
+						["sourceQuests"] = { 40408 },	-- Weapons of Legend
+						["classes"] = { PALADIN },
+						["providers"] = {
+							{ "n", 90259 },	-- Lord Maxwell Tyrosus
+							{ "n", 90369 },	-- Lord Maxwell Tyrosus
+						},
+						["coord"] = { 74.8, 48.2, 627 },
+					}),
+					q(42017, {	-- Shrine of the Truthguard
+						["sourceQuests"] = { 42005 },	-- The End of the Saga
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 105813 },	-- Orik Trueheart
+						["coord"] = { 73.9, 49.0, 627 },
+					}),
+					q(42846, {	-- The Blood Matriarch
+						["sourceQuests"] = { 39696 },	-- Rise, Champions
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },						
+					}),
+					q(42005, {	-- The End of the Saga
+						["sourceQuests"] = { 42002 }, -- To Northrend
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 105724 },	-- Orik Trueheart
+						["coord"] = {56.8, 78.7, 117 },	-- Howling Fjord,
+					}),
+					q(42231, {	-- The Mysterious Paladin
+						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, 24 },						
+					}),
+					q(42002, {	-- To Northrend
+						["sourceQuests"] = { 42000 },	-- Seeker of Truth
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 105689 },	-- Orik Trueheart
+						["coord"] = { 73.9, 49.0, 627 },
+					}),
+					q(38576, {	-- We Meet at Light's Hope
+						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
+						["classes"] = { PALADIN },
+						["providers"] = {
+							{ "n", 106209 },	-- Lord Maxwell Tyrosus
+							{ "n", 106834 },	-- Lord Maxwell Tyrosus
+						},
+						["coord"] = { 71.7, 45.1, 627 },
+					}),
+					q(42811, {	-- We Meet at Light's Hope
+						["sourceQuests"] = { 38376 },	-- The Search for the Highlord
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 20.4, 61.4, 646 },
+					}),
+					q(40408, {	-- Weapons of Legend
+						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 74.8, 48.2, 627 },
+					}),					
+					q(42849, {	-- Wrath and Justice
+						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },						
+					}),
 					--[[
 					q(43424),	-- A Hero's Weapon
 					q(43700),	-- A Light in the Darkness
 					q(43934),	-- A New Path (also warrior?)
-					q(42866),	-- A Sign From The Sky
 					q(43491),	-- Allies of the Light
-					q(38710),	-- An Urgent Gathering
 					q(45890),	-- Ancestors and Enemies (also warrior?)
 					q(43493),	-- Black Rook Hold: Lord Ravencrest (also priest?)
 					q(44220, {	-- Blessing of the Order
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43534),	-- Blood of Sargeras
-					q(44063),	-- Bolstering Your Arsenal
 					q(44218),	-- Champion Armaments
 					q(44370),	-- Completing Your Arsenal
 					q(43486),	-- Cracking the Codex
-					q(42847),	-- Dark Storms
 					q(43699),	-- Defenders of the World
 					q(45149),	-- Ending the Crescent Curse
 					q(44219),	-- Fate's Blessing
@@ -44,17 +182,11 @@ _.ExpansionFeatures =
 					q(45145),	-- Moonfang Family Relics
 					q(45148),	-- Oath Breaker
 					q(46070),	-- Preparations Underway
-					q(42848),	-- Recruiting the Troops
 					q(45146),	-- Runic Reading
-					q(42000),	-- Seeker of Truth
 					q(42770),	-- Seeking Guidance
-					q(42017),	-- Shrine of the Truthguard
 					q(43494),	-- Silver Hand Knights
 					--]]
 					q(42850),	-- Tech It Up a Notch
-					--[[
-					q(42846),	-- The Blood Matriarch
-					--]]
 					q(42890),	-- The Codex of Command
 					--[[
 					q(42885),	-- The Highlord's Command
@@ -64,33 +196,16 @@ _.ExpansionFeatures =
 					q(42968),	-- The Highlord's Command
 					q(42966),	-- The Highlord's Command
 					q(43540),	-- The Mind of the Enemy
-					q(42231),	-- The Mysterious Paladin
 					q(42919),	-- The Scion's Legacy
 					q(38376),	-- The Search for the Highlord
 					q(42120),	-- The Silver Hand
 					q(42886),	-- To Faronaar
 					q(43489),	-- To Felblaze Ingress (also warrior?)
 					q(43535),	-- Translation: Danger!
-					q(40408),	-- Weapons of Legend
 					q(46069),	-- Worthy of the Title
-					q(42849),	-- Wrath and Justice
 					]]--
-					q(39756, {	-- A Sound Plan
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["sourceQuest"] = 38933,	-- Logistical Matters
-					}),
-					q(38566, {	-- A United Force
-						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-						["sourceQuests"] = {
-							38576,	-- We Meet at Light's Hope
-							42811,	-- We Meet at Light's Hope
-						},
-					}),
 					q(45974, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(44250, {	-- Champion of the Light
-						i(139693),	-- Crown of the Silver Hand
 					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -108,20 +223,12 @@ _.ExpansionFeatures =
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(38933, {	-- Logistical Matters
-						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-						["sourceQuest"] = 38566,	-- A United Force
-					}),
 					q(45770, {	-- Stirring in the Shadows
 						["lvl"] = 110,
 						["classes"] = { PALADIN },
 						["g"] = {
 							i(143502),	-- Highlord's Golden Charge
 						},
-					}),
-					q(42005, {	-- The End of the Saga [Moved from Howling Fjord]
-						["lvl"] = 98,
-						["provider"] = { "n", 105724 },	-- Orik Trueheart
 					}),
 					q(46071, {	-- The Hammer of Dalaran
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
@@ -166,19 +273,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 99995 },		-- Justicar Julia Celeste
 						["g"] = {
 							follower(755),	-- Justicar Julia Celeste
-						},
-					}),
-					q(42881, {	-- Champion: Lady Liadrin
-						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
-						["g"] = {
-							follower(478),	-- Lady Liadrin
-						},
-					}),
-					q(39696, {	-- Rise, Champions
-						["provider"] = { "n", 90259 },		-- Lord Maxwell Tyrosus
-						["sourceQuest"] = 42844,	-- Growing Power
-						["g"] = {
-							follower(480),	-- Lord Maxwell Tyrosus
 						},
 					}),
 					q(43701, {	-- Champion: Lothraxion

@@ -247,10 +247,6 @@ _.Zones =
 					["provider"] = { "n", 117871 },	-- War Councilor Victoria
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(38710, {	-- An Urgent Gathering
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
-				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -1242,13 +1238,6 @@ _.Zones =
 					},
 					["lvl"] = 110,
 				}),
-				q(42000, {	-- Seeker of Truth
-					["classes"] = { PALADIN },
-					["providers"] = {
-						{ "n", 90259 },	-- Lord Maxwell Tyrosus
-						{ "n", 90369 },	-- Lord Maxwell Tyrosus
-					},
-				}),
 				q(42770, {	-- Seeking Guidance
 					["classes"] = { PALADIN },
 					["providers"] = {
@@ -1267,10 +1256,6 @@ _.Zones =
 					},
 					["classes"] = { PRIEST },
 					["lvl"] = 110,
-				}),
-				q(42017, {	-- Shrine of the Truthguard
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 105813 },	-- Orik Trueheart
 				}),
 			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
 				q(44411, {	-- Strange Humming Crystal
@@ -1513,11 +1498,6 @@ _.Zones =
 					["coord"] = { 44.9, 28.8, 627 },
 					["lvl"] = 110,
 				}),
-				q(42002, {	-- To Northrend
-					["sourceQuests"] = { 42000 },	-- Seeker of Truth
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 105689 },	-- Orik Trueheart
-				}),
 				q(46810, {	-- To the Forge It Goes...
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
@@ -1596,19 +1576,6 @@ _.Zones =
 					},
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
-				}),
-				q(38576, {	-- We Meet at Light's Hope
-					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-					["classes"] = { PALADIN },
-					["providers"] = {
-						{ "n", 106209 },	-- Lord Maxwell Tyrosus
-						{ "n", 106834 },	-- Lord Maxwell Tyrosus
-					},
-				}),
-				q(40408, {	-- Weapons of Legend
-					["sourceQuests"] = { 38710 },	-- An Urgent Gathering
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 				}),
 				q(40618, {	-- Weapons of Legend
 					["sourceQuests"] = {
