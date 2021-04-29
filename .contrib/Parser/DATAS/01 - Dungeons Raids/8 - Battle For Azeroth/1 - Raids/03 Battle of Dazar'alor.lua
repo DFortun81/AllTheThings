@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["order"] = "03",
 		["maps"] = {
-		--	1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
+			--1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
 			1352,	-- Port of Zandalar
 			1357,	-- The Zocalo
 			1353,	-- Halls of Opulence
@@ -21,7 +21,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1364,	-- The Great Sea
 			1367,	-- Boralus
 		},
-		["lvl"] = 120,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1

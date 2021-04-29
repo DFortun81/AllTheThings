@@ -18,7 +18,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1519,
 			1520,
 		},
-		["lvl"] = 120,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(-852, {	-- Azerite Essences
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
