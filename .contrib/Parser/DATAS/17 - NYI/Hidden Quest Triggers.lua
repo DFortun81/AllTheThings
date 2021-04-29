@@ -4400,6 +4400,7 @@ _.HiddenQuestTriggers =
 		q(61575),	-- When applying Spikey Hair to your dredger
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
+		q(59694),	-- Using 'Night Fae Arsenal' (177244)
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
