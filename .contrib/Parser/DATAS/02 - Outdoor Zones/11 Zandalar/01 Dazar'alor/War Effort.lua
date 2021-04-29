@@ -559,6 +559,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["coord"] = { 52.9, 94.3, 1165 },
 							["races"] = HORDE_ONLY,
+							["maps"] = { 1044 },	-- Arathi Highlands (scenario)
 							["g"] = {
 								i(169196, {	-- Warfronts Equipment Cache
 									["modID"] = 23,	-- iLvl 430
@@ -737,6 +738,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["coord"] = { 52.97, 94.35, 1165 },
 							["races"] = HORDE_ONLY,
+							["maps"] = { 1044 },	-- Arathi Highlands (scenario)
 							["g"] = {
 								i(164577, {	-- Warfronts Equipment Cache
 									["sym"] = {

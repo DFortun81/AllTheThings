@@ -6,7 +6,7 @@ SLIME_SERPENT_DESC = "Requires solo kill of the last 2 bosses in either heroic o
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1183, {	-- Plaguefall
-		["coord"] = { 59.3, 64.8, 1536 },
+		["coord"] = { 59.3, 64.8, MALDRAXXUS },
 		["maps"] = {
 			1674,	-- Plaguefall
 			1697,	-- Plaguefall

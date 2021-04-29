@@ -32,16 +32,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			n(QUESTS, {
 				q(33147, {    -- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73335 },    -- Fading Breath
-				--	["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
-					["lvl"] = 35,
+					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
 				q(33138, {    -- Why Do We Fight?
 					["sourceQuests"] = { 33147 },    -- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },    -- Lorewalker Cho
-				--	["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
-					["lvl"] = 35,
+					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
-			}),	
+			}),
 			n(VENDORS, {
 				n(72157, {	-- Hagrus <Reagents>
 					["races"] = HORDE_ONLY,

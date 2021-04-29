@@ -46,7 +46,7 @@ _.ExpansionFeatures =
 					q(58178, {	-- A Partner for Eternity
 						["sourceQuests"] = { 58180 },	-- Phaestus, Genesis of Aeons
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(61767, {	-- A Perilous Journey
 						["sourceQuests"] = { 61785 },	-- An Expected Visitor
@@ -56,7 +56,7 @@ _.ExpansionFeatures =
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
 						["provider"] = { "n", 168742 },	-- Polemarch Adrestes
-						["coord"] = { 56.8, 31.4, 1533 },	-- Bastion
+						["coord"] = { 56.8, 31.4, BASTION },
 					}),
 					q(57122, {	-- A Step Too Far
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
@@ -81,12 +81,12 @@ _.ExpansionFeatures =
 					q(61778, {	-- Aerial Advantage
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167810 },	-- Emeni
-						["coord"] = { 28.5, 37.5, 1536 },	-- Maldraxxus
+						["coord"] = { 28.5, 37.5, MALDRAXXUS },
 					}),
 					q(57114, {	-- Aerial Reconnaissance
 						["sourceQuests"] = { 57113 },	-- Lysonia's Trail
 						["provider"] = { "n", 156361 },	-- Kleia
-						["coord"] = { 61.8, 43.6, 1533 },	-- Bastion
+						["coord"] = { 61.8, 43.6, BASTION },
 					}),
 					q(61775, {	-- An Early End
 						["sourceQuests"] = {
@@ -95,7 +95,7 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
 					}),
 					q(59919, {	-- An Earned Bond
 						["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
@@ -147,17 +147,17 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 168744 },	-- Artemede
-						["coord"] = { 35.1, 26.8, 1536 },	-- Maldraxxus
+						["coord"] = { 35.1, 26.8, MALDRAXXUS },
 					}),
 					q(58788, {	-- Censers of Guidance
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
 						["provider"] = { "n", 162542 },	-- Kleia
-						["coord"] = { 33.2, 26.1, 1533 }, -- Bastion
+						["coord"] = { 33.2, 26.1, BASTION },
 					}),
 					q(61777, {	-- Charging The Blade
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.8, 38.1, MALDRAXXUS },
 					}),
 					q(58562, {	-- Collecting Dust
 						["sourceQuests"] = {
@@ -171,7 +171,7 @@ _.ExpansionFeatures =
 					q(57120, {	-- Compassion, Blade of Humility
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 						["provider"] = { "o", 353472 },	-- Radiant Sword
-						["coord"] = { 64.7, 45.6, 1533 },	-- Bastion
+						["coord"] = { 64.7, 45.6, BASTION },
 					}),
 					q(58854, {	-- Convene the Paragons
 						["description"] = "Requires Renown 22.",
@@ -198,7 +198,7 @@ _.ExpansionFeatures =
 					q(61772, {	-- Dark Developments
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "o", 357246 },	-- Tattered Scroll
-						["coord"] = { 33.5, 24.1, 1536 },	-- Maldraxxus
+						["coord"] = { 33.5, 24.1, MALDRAXXUS },
 					}),
 					q(61773, {	-- Descended
 						["sourceQuests"] = {
@@ -207,7 +207,7 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.5, 26.4, MALDRAXXUS },
 						["g"] = {
 							i(177056),	-- Selfless Bearer's Waist
 							i(174295),	-- Selfless Collector's Girdle
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 					q(58182, {	-- Dismantling the Opposition
 						["sourceQuests"] = { 58178 },	-- A Partner for Eternity
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(57118, {	-- Distorted by the Maw
 						["sourceQuests"] = {
@@ -227,12 +227,12 @@ _.ExpansionFeatures =
 							57120,	-- Compassion, Blade of Humility
 						},
 						["provider"] = { "n", 156327 },	-- Voitha
-						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
+						["coord"] = { 66.0, 47.0, BASTION },
 					}),
 					q(57895, {	-- Elysian Hold
 						["sourceQuests"] = { 60492 },	-- A Proper Reception
 						["provider"] = { "n", 168906 },	-- Polemarch Adrestes
-						["coord"] = { 58.4, 28.9, 1533 },	-- Bastion
+						["coord"] = { 58.4, 28.9, BASTION },
 					}),
 					q(62794, {	-- Enhancing the Hold
 						-- TODO: verify SQ.  should be this, or It's All Coming Together
@@ -279,7 +279,7 @@ _.ExpansionFeatures =
 							57120,	-- Compassion, Blade of Humility
 						},
 						["provider"] = { "n", 156327 },	-- Voitha
-						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
+						["coord"] = { 66.0, 47.0, BASTION },
 						["g"] = {
 							i(181291),	-- Selfless Sigil of the Archon
 						},
@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 					q(61769, {	-- Fight and Flight
 						["sourceQuests"] = { 61768 },	-- Stronger Together
 						["provider"] = { "n", 171483 },	-- Baroness Draka
-						["coord"] = { 36.3, 36.6, 1536 },	-- Maldraxxus
+						["coord"] = { 36.3, 36.6, MALDRAXXUS },
 					}),
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
@@ -307,7 +307,7 @@ _.ExpansionFeatures =
 					q(58183, {	-- Friend to the Forgelite
 						["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(62832, {	-- Friends in Dark Places
 						["sourceQuests"] = { 57905 },	-- A Unique Opportunity
@@ -338,7 +338,7 @@ _.ExpansionFeatures =
 					q(61779, {	-- Grave Intent
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167173 },	-- Baroness Vashj
-						["coord"] = { 28.6, 37.6, 1536 },	-- Maldraxxus
+						["coord"] = { 28.6, 37.6, MALDRAXXUS },
 					}),
 					q(61135, {	-- Heart of the Crest
 						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
@@ -373,7 +373,7 @@ _.ExpansionFeatures =
 					q(58179, {	-- Instruments of Perfection
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
 						["provider"] = { "n", 160648 },	-- Sika
-						["coord"] = { 50.1, 20.6, 1533 },
+						["coord"] = { 50.1, 20.6, BASTION },
 					}),
 					q(62793, {	-- It's All Coming Together
 						["sourceQuests"] = { 62796 },	-- Return to Adrestes
@@ -384,7 +384,7 @@ _.ExpansionFeatures =
 					q(61771, {	-- Justice from Above
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.5, 26.4, MALDRAXXUS },
 					}),
 					q(57123, {	-- Kyrian No More
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
@@ -407,7 +407,7 @@ _.ExpansionFeatures =
 					q(58847, {	-- Kyrestia's Grace
 						["sourceQuests"] = { 58846 },	-- The Greater Good
 						["provider"] = { "n", 166693 },	-- Polemarch Adrestes
-						["coord"] = { 67.4, 15.2, 1533 },	-- Bastion
+						["coord"] = { 67.4, 15.2, BASTION },
 						["_drop"] = { "g" },	-- make a bunch of vendor items stop showing up that are not actually rewarded by this quest
 						["g"] = {
 							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
@@ -447,7 +447,7 @@ _.ExpansionFeatures =
 							57117,	-- Fallen to Their Vices
 						},
 						["provider"] = { "n", 156361 },	-- Kleia
-						["coord"] = { 68.3, 41.6, 1533 },	-- Bastion
+						["coord"] = { 68.3, 41.6, BASTION },
 					}),
 					q(57113, {	-- Lysonia's Trail
 						-- ["sourceQuests"] = {  },	--
@@ -468,7 +468,7 @@ _.ExpansionFeatures =
 					q(58789, {	-- Misguiding Mentors
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
 						["provider"] = { "n", 162544 },	-- Achillon
-						["coord"] = { 33.2, 26.2, 1533 },	-- Bastion
+						["coord"] = { 33.2, 26.2, BASTION },
 						["g"] = {
 							i(177058),	-- Selfless Bearer's Cloak
 							i(174297),	-- Selfless Collector's Greatcloak
@@ -518,7 +518,7 @@ _.ExpansionFeatures =
 							58176,	-- Stewards of a Feather
 						},
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },
+						["coord"] = { 50.1, 20.5, BASTION },
 						["g"] = {
 							i(177057),	-- Selfless Bearer's Wrists
 							i(174296),	-- Selfless Collector's Wristguards
@@ -538,12 +538,12 @@ _.ExpansionFeatures =
 							61779,	-- Grave Intent
 						},
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.7, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.7, 38.1, MALDRAXXUS },
 					}),
 					q(61782, {	-- Pursuit of Justice
 						["sourceQuests"] = { 61781 },	-- The End is Now
 						["provider"] = { "n", 172002 },	-- Xandria
-						["coord"] = { 31.7, 30.3, 1536 },	-- Maldraxxus
+						["coord"] = { 31.7, 30.3, MALDRAXXUS },
 						["g"] = {
 							i(177055),	-- Selfless Bearer's Shoulders
 							i(174294),	-- Selfless Collector's Spaulders
@@ -554,7 +554,7 @@ _.ExpansionFeatures =
 					q(58177, {	-- Refining Ego
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(61982, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
@@ -588,22 +588,22 @@ _.ExpansionFeatures =
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 39.9, 68.6, 1670 },	-- Oribos
+						["coord"] = { 39.9, 68.6, ORIBOS },
 					}),
 					q(61877, {	-- Return to the Hold
 						["sourceQuests"] = { 61876 },	-- Take Heart
 						["provider"] = { "n", 173193 },	-- Xandria
-						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+						["coord"] = { 31.0, 29.1, MALDRAXXUS },
 					}),
 					q(57967, {	-- Rightful Resting Place
 						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 						["provider"] = { "n", 159248 },	-- Haetio
-						["coord"] = { 43.2, 38.5, 1533 },
+						["coord"] = { 43.2, 38.5, BASTION },
 					}),
 					q(57115, {	-- Sacred Scrolls of Humility
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 						["provider"] = { "n", 156327 },	-- Voitha
-						["coord"] = { 66.0, 47.0, 1533 },	-- Bastion
+						["coord"] = { 66.0, 47.0, BASTION },
 					}),
 					q(58857, {	-- Seeds Away!
 						["sourceQuests"] = { 58939 },	-- The Blue Seed
@@ -632,7 +632,7 @@ _.ExpansionFeatures =
 					q(62238, {	-- Soul Led Astray
 						["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
 						["provider"] = { "n", 173771 },    -- Thenios
-						["coord"] = { 40.4, 19.9, 1533 }, -- Bastion
+						["coord"] = { 40.4, 19.9, BASTION },
 					}),
 					q(57898, {	-- Soul Meets Body
 						["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
@@ -642,7 +642,7 @@ _.ExpansionFeatures =
 					q(58176, {	-- Stewards of a Feather
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
 						["provider"] = { "n", 160648 },	-- Sika
-						["coord"] = { 50.1, 20.6, 1533 },
+						["coord"] = { 50.1, 20.6, BASTION },
 					}),
 					q(60504, {	-- Strengthen the Bond
 						["sourceQuests"] = { 57898 },	-- Soul Meets Body
@@ -661,17 +661,17 @@ _.ExpansionFeatures =
 					q(61768, {	-- Stronger Together
 						["sourceQuests"] = { 61767 },	-- A Perilous Journey
 						["provider"] = { "n", 173222 },	-- Xandria
-						["coord"] = { 37.7, 29.4, 1536 },	-- Maldraxxus
+						["coord"] = { 37.7, 29.4, MALDRAXXUS },
 					}),
 					q(57116, {	-- Succumbing to Pride
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 						["provider"] = { "n", 156361 },	-- Kleia
-						["coord"] = { 65.8, 46.9, 1533 },	-- Bastion
+						["coord"] = { 65.8, 46.9, BASTION },
 					}),
 					q(61876, {	-- Take Heart
 						["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 						["provider"] = { "n", 173193 },	-- Xandria
-						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+						["coord"] = { 31.0, 29.1, MALDRAXXUS },
 					}),
 					q(58939, {	-- The Blue Seed
 						["sourceQuests"] = {
@@ -684,12 +684,12 @@ _.ExpansionFeatures =
 					q(61770, {	-- The Butchers of Bastion
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
 					}),
 					q(61781, {	-- The End is Now
 						["sourceQuests"] = { 61780 },	-- Power of the Chosen
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.8, 38.1, MALDRAXXUS },
 					}),
 					q(58175, {	-- The Eternal Forge
 						-- Requires Kyrian, Renown 8
@@ -714,7 +714,7 @@ _.ExpansionFeatures =
 					q(58846, {	-- The Greater Good
 						["sourceQuests"] = { 58844 },	-- Before the Dawn
 						["provider"] = { "n", 164473 },	-- Polemarch Adrestes
-						["coord"] = { 31.4, 23.4, 1533 },	-- Bastion
+						["coord"] = { 31.4, 23.4, BASTION },
 					}),
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
@@ -729,7 +729,7 @@ _.ExpansionFeatures =
 					q(57121, {	-- The Power of the Maw
 						["sourceQuests"] = { 57207 },	-- Lysonia's Plan
 						["provider"] = { "n", 156474 },	-- Chyrus
-						["coord"] = { 69.0, 40.7, 1533 },	-- Bastion
+						["coord"] = { 69.0, 40.7, BASTION },
 					}),
 					q(58571, {	-- The Seal of Contrition
 						["sourceQuests"] = { 58570 },	-- Parting Words
@@ -770,7 +770,7 @@ _.ExpansionFeatures =
 							58789,	-- Misguiding Mentors
 						},
 						["provider"] = { "n", 162542 },	-- Kleia
-						["coord"] = { 32.1, 21.2, 1533 },	-- Bastion
+						["coord"] = { 32.1, 21.2, BASTION },
 					}),
 					q(58787, {	-- Trial of Ascension
 						["description"] = "Requires Renown 5.",
@@ -789,7 +789,7 @@ _.ExpansionFeatures =
 							61773,	-- Descended
 						},
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.4, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.4, 26.4, MALDRAXXUS },
 					}),
 					q(58792, {	-- Where a Soul Belongs
 						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand

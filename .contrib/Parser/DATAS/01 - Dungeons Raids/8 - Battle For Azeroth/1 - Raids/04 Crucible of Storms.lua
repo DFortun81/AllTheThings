@@ -12,7 +12,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1346,	-- Tendril of Corruption
 			1363,	-- Introquest (Twist the Knife)
 		},
-		["lvl"] = 120,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			n(QUESTS, {
 				q(59710, {	-- A Curious Invitation

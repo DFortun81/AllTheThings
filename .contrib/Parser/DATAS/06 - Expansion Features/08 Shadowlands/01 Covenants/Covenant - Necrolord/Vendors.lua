@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(VENDORS, {
 					n(159238, {	-- Atticus <Supplies & Acquisitions>
-						["coord"] = { 55.2, 68.2, 1536 },
+						["coord"] = { 55.2, 68.2, MALDRAXXUS },
 						["g"] = {
 							i(181317, {	-- Dauntless Duskrunner	(MOUNT!)
 								["cost"] = { { "c", 1813, 5000 } },
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(164795, {	-- Clyde <Curios & Oddities>
-						["coord"] = { 55.2, 68.4, 1536 },
+						["coord"] = { 55.2, 68.4, MALDRAXXUS },
 						["g"] = {
 							i(184303, {	-- Arsenal: Stitchmasters' Weapons
 								["cost"] = {
@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 4,	-- LFR
 						}, {
-						
+
 						--[[ LFR
 								["cost"] = {
 									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
@@ -126,7 +126,7 @@ _.ExpansionFeatures =
 									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
 								},
 									--]]
-									
+
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
@@ -331,7 +331,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 3,	-- Normal
 						}, {
-						
+
 						--[[ NORMAL
 								["cost"] = {
 									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
@@ -344,7 +344,7 @@ _.ExpansionFeatures =
 									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
 								},
 									--]]
-									
+
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
@@ -550,7 +550,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 6,	-- Mythic
 						}, {
-						
+
 						--[[ MYTHIC
 								["cost"] = {
 									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
@@ -563,7 +563,7 @@ _.ExpansionFeatures =
 									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 								},
 							--]]
-							
+
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
@@ -763,7 +763,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(164588, {	-- Shinbone Slim <Food and Attire>
-						["coord"] = { 47.0, 48.8, 1536 },
+						["coord"] = { 47.0, 48.8, MALDRAXXUS },
 						["g"] = {
 							i(184036),	-- Dundae's Hat
 						},
@@ -960,7 +960,7 @@ _.ExpansionFeatures =
 					}),
 					n(172176, {	-- Su Zettai <Renown Quartermaster>
 						["coords"] = {
-							{ 50.68, 71.38, 1536},	-- Maldraxxus
+							{ 50.68, 71.38, MALDRAXXUS },
 							{ 52.5, 41.2, 1698 },	-- Seat of the Primus
 						},
 						["g"] = {
@@ -1298,7 +1298,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 5,	-- Heroic
 						}, {
-							
+
 							--[[ HEROIC
 								["cost"] = {
 									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
@@ -1311,7 +1311,7 @@ _.ExpansionFeatures =
 									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 								},
 							--]]
-							
+
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1543, {	-- The Maw
 			n(RARES, {
 				n(COMMON_BOSS_DROPS, {

@@ -28,7 +28,7 @@ _.ExpansionFeatures =
 								["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
 								["isDaily"] = true,
 								["questID"] = 61688,
-								["coord"] = { 60.2, 78.2, 1533 },	-- Bastion
+								["coord"] = { 60.2, 78.2, BASTION },
 								["g"] = {
 									i(180762),	-- Phalynx of Humility (MOUNT!)
 									i(184296),	-- Purity's Edge Greatblade
@@ -36,6 +36,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(61179, {    -- Forge Ahead
+								["provider"] = { "n", 158773 },    -- Capheus
+								["coord"] = { 64.2, 20.0, BASTION },
+							}),
 							q(62280, {	-- Limbo
 								["isWorldQuest"] = true,
 							}),
@@ -52,6 +56,14 @@ _.ExpansionFeatures =
 								["g"] = {
 								--	follower is granted upon accepting the quest
 									follower(1259),	-- Pelagos
+								},
+							}),
+							q(60175, {    -- Adventurer: Nemea
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 64.8, 16.4, BASTION },
+								["description"] = "Becomes available at Renown 4.",
+								["g"] = {
+								--	follower(???),	-- Nemea
 								},
 							}),
 							q(61861, {	-- Adventurer: Sika
@@ -435,7 +447,7 @@ _.ExpansionFeatures =
 									}),
 								}),
 								--[[
-								n(, {	-- 
+								n(, {	--
 									n(-972, {	-- Courage
 									}),
 									n(-973, {	-- Loyalty
@@ -550,7 +562,7 @@ _.ExpansionFeatures =
 									-- Rewards spell 337133 "Trial: Echthra"
 									["sourceQuests"] = { 61490 },	-- War of Information
 									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+									["coord"] = { 56.7, 11.6, MALDRAXXUS },
 								}),
 								q(60493, {	-- Humble Gatherer
 									["sourceQuests"] = { 60489 },	-- The Path of Ascension
@@ -620,7 +632,7 @@ _.ExpansionFeatures =
 								q(61490, {	-- War of Information
 									["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
 									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+									["coord"] = { 56.7, 11.6, MALDRAXXUS },
 								}),
 								q(60494, {	-- Your Friend, Dactylis
 									["sourceQuests"] = { 60493 },	-- Humble Gatherer
@@ -691,7 +703,7 @@ _.ExpansionFeatures =
 								q(61372, {	-- Back to Him
 									["sourceQuests"] = { 61478 },	-- Humble Beginnings
 									["provider"] = { "n", 175295 },	-- Forgelite Sophone
-									["coord"] = { 51.6, 80.9, 1533 },    -- Bastion
+									["coord"] = { 51.6, 80.9, BASTION },
 								}),
 								q(61363, {	-- Mad Mortimer
 									-- TODO: not 100% sure of the requirements
@@ -707,7 +719,7 @@ _.ExpansionFeatures =
 								q(61364, {	-- Oozing with Oppotunity
 									["sourceQuests"] = { 61436 },	-- Field Trip
 									["provider"] = { "n", 172141 },	-- Mad Mortimer
-									["coord"] = { 59.2, 71.9, 1536 },    -- Maldraxxus
+									["coord"] = { 59.2, 71.9, MALDRAXXUS },
 								}),
 								q(61367, {	-- Thran'tiok
 									-- TODO: not 100% sure of the requirements
@@ -723,12 +735,12 @@ _.ExpansionFeatures =
 								q(62053, {	-- Necromantic Power
 									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
 									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 53.8, 48.8, 1536 },    -- Maldraxxus
+									["coord"] = { 53.8, 48.8, MALDRAXXUS },
 								}),
 								q(61368, {	-- Filching Phylacteries
 									["sourceQuests"] = { 62053 },	-- Necromantic Power
 									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 59.7, 38.0, 1536 },    -- Maldraxxus
+									["coord"] = { 59.7, 38.0, MALDRAXXUS },
 								}),
 								n(-908, {	-- Rewards
 									i(180761, {	-- Phalynx of Loyalty

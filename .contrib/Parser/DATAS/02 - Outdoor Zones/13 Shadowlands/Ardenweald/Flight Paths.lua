@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1565, {	-- Ardenweald
 			n(FLIGHT_PATHS, {
 				fp(2589, {	-- Ardenweald, Claw's Edge

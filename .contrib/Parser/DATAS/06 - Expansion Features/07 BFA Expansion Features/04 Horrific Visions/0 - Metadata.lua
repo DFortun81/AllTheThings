@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-10080, {	-- Horrific Visions
 			["lvl"] = 120,
 			["maps"] = {
-				1473,	-- Chamber of the Heart
+				REPAIRED_CHAMBER_OF_HEART,
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {

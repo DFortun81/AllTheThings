@@ -7,7 +7,6 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		n(-171, {	-- Quest Chains
 			["order"] = "02",
-			["lvl"] = 98,
 			["g"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
@@ -291,7 +290,7 @@ _.Zones =
 							["maps"] = { 627 },	-- Dalaran
 						}),
 						q(44257, {	-- A Falling Star (Paladin)
-							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
+							["sourceQuests"] = { 42866 }, -- A Sign From The Sky
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["classes"] = { PALADIN },
 							["coord"] = { 28.9, 48.4, 627 },
@@ -385,7 +384,6 @@ _.Zones =
 								709,		-- The Wandering Isle (Monk)
 								739,		-- Trueshot Lodge (Hunter)
 							},
-							["lvl"] = 110,
 						}),
 						q(44448, {	-- In the House of Light and Shadow
 							["sourceQuests"] = {

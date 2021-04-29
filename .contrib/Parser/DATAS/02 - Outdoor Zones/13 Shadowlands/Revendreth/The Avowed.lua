@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- The Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			n(FACTIONS, {
 				faction(2439, {	-- The Avowed

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1565, {	-- Ardenweald
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife

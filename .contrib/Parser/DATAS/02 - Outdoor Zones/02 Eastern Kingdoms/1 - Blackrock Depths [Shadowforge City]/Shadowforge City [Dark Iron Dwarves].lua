@@ -50,9 +50,8 @@ _.Zones =
 							["name"] = "Honor's Stand",
 							["coord"] = { 39.11, 09.31, 199 },
 							["races"] = { DARKIRON },
-							["maps"] = { 199 },	-- Southern Barrens
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
+							["maps"] = { 199 },	-- Southern Barrens
 						}),
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",
@@ -69,11 +68,10 @@ _.Zones =
 					["g"] = {
 						q(53585, {	-- Aerie Peak
 							["name"] = "Aerie Peak",
-							["coord"] = { 13.52, 46.81, 26 },
+							["coord"] = { 13.52, 46.81, THE_HINTERLANDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
-							["maps"] = { 26 },	-- The Hinterlands
+							["maps"] = { THE_HINTERLANDS },	-- The Hinterlands
 						}),
 						q(53587, {	-- Blackrock Depths
 							["name"] = "Blackrock Depths",
@@ -85,11 +83,10 @@ _.Zones =
 						}),
 						q( 53594, {	-- Nethergarde Keep
 							["name"] = "Nethergarde Keep",
-							["coord"] = { 61.82, 12.74, 17 },
+							["coord"] = { 61.82, 12.74, BLASTED_LANDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							-- ["sourceQuests"] = { },	-- TODO
-							["maps"] = { 17 },	-- Blasted Lands
+							["maps"] = { BLASTED_LANDS },	-- Blasted Lands
 						}),
 					},
 				}),

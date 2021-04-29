@@ -930,37 +930,6 @@ _.Zones =
 					["coord"] = { 40.1, 69.1, 1164 },
 					["races"] = HORDE_ONLY,
 				}),
-
-			-- TODO: unsorted
-
-				q(54439, {	-- Crucible of Storms: Relics of Shadow
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53763 },	-- Twist the Knife
-					["providers"] = {
-						{ "n", 146335 },	-- Queen Talanji
-						{ "n", 133050 },	-- Princess Talanji
-					},
-					["coords"] = {
-						{ 49.9, 46.6, 1165 },
-						{ 41.7, 66.7, 1163 },
-					},
-				}),
-				q(53766, {	-- His Eye Upon You
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53763 },	-- Twist the Knife
-					["description"]	= "You just get the Toy if you choose to cleanse the gift.",
-					["providers"] = {
-						{ "n", 146335 },	-- Queen Talanji
-						{ "n", 133050 },	-- Princess Talanji
-					},
-					["coords"] = {
-						{ 49.9, 46.6, 1165 },
-						{ 41.7, 66.7, 1163 },
-					},
-					["g"] = {
-						i(168123),	-- Twitching Eyeball
-					},
-				}),
 				q(47103, {	-- Journey to Nazmir
 					["coord"] = { 41.1, 66.8, 1164 },
 					["races"] = HORDE_ONLY,
@@ -1005,42 +974,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55649,	-- Machinations for Mechagon
 				}),
-				q(54174, {	-- Orders from Azshara
-					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
-					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
-					["provider"] = { "n", 134345 },	-- Collector Kojo
-					["classes"] = exclude(PRIEST, ALL_CLASSES),
-				}),
-				q(54433, {	-- Orders from Azshara
-					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
-					["classes"] = { PRIEST },
-					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
-					["provider"] = { "n", 134345 },	-- Collector Kojo
-				}),
 				q(54166, {	-- Set Sail
 					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 110,
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				i(165668, {	-- The Azsharan Medallion
-					["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
-					["races"] = HORDE_ONLY,
-					["crs"] = {
-						144778,	-- Darktide Champion
-						144769,	-- Darktide Sorceress
-						144770,	-- Darktide Witch
-						144816,	-- Darktide Slaver
-						144777,	-- Darktide Marauder
-						144780,	-- Darktide Brute
-					},
-					["g"] = {
-						q(54172, {	-- The Azsharan Medallion
-							["races"] = HORDE_ONLY,
-						}),
-					},
 				}),
 				q(55646, {	-- The Legend of Mechagon
 					["provider"] = { "n", 152522 },	-- Gazlowe
@@ -1062,67 +1000,16 @@ _.Zones =
 					["coord"] = { 68.7, 71.8, 1164 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(53761,  {	-- The Pirate's Treasure
-					["sourceQuests"] = { 53760 },	-- Unintended Consequences
-					["coord"] = { 20.0, 35.8, 896 },
-					["provider"] = { "n", 144773 },	-- Xal'atath
-				}),
-				q(53762,  {	-- The Tempest Crown
-					["provider"] = { "n", 145396 },	-- Xal'atath
-					["coord"] = { 75.0, 77.7, 895 },
-					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
-				}),
 				q(55651, {	-- To Mechagon!
 					["provider"] = { "n", 152504 },	-- Gazlowe
 					["coord"] = { 42.0, 87.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
 				}),
-				q(53763, {	-- Twist the Knife
-					["provider"] = { "n", 146384 },	-- Xal'atath
-					["coord"] = { 53.0, 13.6, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53762 },	-- The Tempest Crown
-				}),
 				q(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
 					["coord"] = { 58.5, 62.6, 1163 },
 					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 					["races"] = HORDE_ONLY,
-				}),
-				o(311218, {	-- Xal'atath, Blade of the Black Empire
-					q(54117, {	-- Every Little Death Helps
-						["coord"] = { 78.0, 36.7, 862 },
-						["sourceQuest"] = 54174,	-- Orders from Azshara
-						["races"] = HORDE_ONLY,
-						["classes"] = exclude(PRIEST, ALL_CLASSES),
-					}),
-					q(54118, {	-- Every Little Death Helps
-						["coords"] = {
-							{ 78.0, 36.7, 862 },
-							{ 34.2, 31.8, 942 },
-						},
-						["sourceQuests"] = {
-							54265,	-- Orders from Azshara
-							54433,	-- Orders from Azshara
-						},
-						["classes"] = { PRIEST },
-					}),
-					q(53760, {	-- Unintended Consequences
-						["coords"] = {
-							{ 78.0, 36.7, 862 },
-							{ 34.2, 31.8, 942 },
-						},
-						["sourceQuest"] = 54117,	-- Every Little Death Helps
-						["classes"] = exclude(PRIEST, ALL_CLASSES),
-					}),
-					q(54058, {	-- Unintended Consequences
-						["coords"] = {
-							{ 78.0, 36.7, 862 },
-							{ 34.2, 31.8, 942 },
-						},
-						["sourceQuest"] = 54118,	-- Every Little Death Helps
-						["classes"] = { PRIEST },
-					}),
 				}),
 			}),
 		}),

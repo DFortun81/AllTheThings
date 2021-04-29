@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62698 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 						["provider"] = { "n", 160470 },	-- Adjutant Nikos
-						["coord"] = { 52.2, 47.0, 1533 },
+						["coord"] = { 52.2, 47.0, BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -48,14 +48,14 @@ _.ExpansionFeatures =
 					}),
 					q(60380, {	-- A Source of Sorrowvine
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60372, {	-- A Wealth of Wealdwood
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 					}),
 					q(60465, {	-- Anima Appeal
 						["provider"] = { "n", 158773 },	-- Capheus
-						["coord"] = { 64.0, 20.0, 1533 },
+						["coord"] = { 64.0, 20.0, BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -104,7 +104,7 @@ _.ExpansionFeatures =
 					}),
 					q(60377, {	-- Bonemetal Bonanza
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -139,7 +139,7 @@ _.ExpansionFeatures =
 					}),
 					q(60358, {	-- Gildenite Grab
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -174,7 +174,7 @@ _.ExpansionFeatures =
 					}),
 					q(60407, {	-- Training in Maldraxxus
 						["provider"] = { "n", 168517 },	-- Kalisthene
-						--["coord"] = { , 1533 },
+						--["coord"] = { , BASTION },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},

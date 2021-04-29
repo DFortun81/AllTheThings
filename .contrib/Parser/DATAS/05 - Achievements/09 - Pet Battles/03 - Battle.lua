@@ -246,42 +246,42 @@ _.Achievements =
 				}),
 				crit(9,  {	-- Failed Experiment
 					["_quests"] = { 61870 },	-- Failed Experiment
-					["coord"] = { 54.0, 28.0, 1536 },
+					["coord"] = { 54.0, 28.0, MALDRAXXUS },
 					["cr"] = 173274,	-- Gorgemouth <Failed Experiment>
 				}),
 				crit(10, {	-- Uncomfortably Undercover
 					["_quests"] = { 61868 },	-- Uncomfortably Undercover
-					["coord"] = { 63.2, 46.8, 1536 },
+					["coord"] = { 63.2, 46.8, MALDRAXXUS },
 					["cr"] = 173267,	-- Dundley Stickyfingers
 				}),
 				crit(11, {	-- Extra Pieces
 					["_quests"] = { 61867 },	-- Extra Pieces
-					["coord"] = { 34.0, 55.2, 1536 },
+					["coord"] = { 34.0, 55.2, MALDRAXXUS },
 					["cr"] = 173263,	-- Rotgut
 				}),
 				crit(12, {	-- Mighty Minions of Maldraxxus
 					["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
-					["coord"] = { 46.8, 50.0, 1536 },
+					["coord"] = { 46.8, 50.0, MALDRAXXUS },
 					["cr"] = 173257,	-- Caregiver Maximillian
 				}),
 				crit(13, {	-- Thenia's Loyal Companions
 					["_quests"] = { 61791 },	-- Thenia's Loyal Companions
-					["coord"] = { 54.6, 56.0, 1533 },
+					["coord"] = { 54.6, 56.0, BASTION },
 					["cr"] = 173129,	-- Thenia
 				}),
 				crit(14, {	-- Micro Defense Force
 					["_quests"] = { 61787 },	-- Micro Defense Force
-					["coord"] = { 51.4, 38.2, 1533 },
+					["coord"] = { 51.4, 38.2, BASTION },
 					["cr"] = 173130,	-- Zolla
 				}),
 				crit(15, {	-- Cliffs of Bastion
 					["_quests"] = { 61784 },	-- Cliffs of Bastion
-					["coord"] = { 34.8, 62.8, 1533 },
+					["coord"] = { 34.8, 62.8, BASTION },
 					["cr"] = 173131,	-- Stratios
 				}),
 				crit(16, {	-- Mega Bite
 					["_quests"] = { 61783 },	-- Mega Bite
-					["coord"] = { 36.6, 31.8, 1533 },
+					["coord"] = { 36.6, 31.8, BASTION },
 					["cr"] = 173133,	-- Jawbone
 				}),
 			}),
@@ -745,27 +745,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -791,27 +791,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -837,27 +837,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -883,27 +883,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -929,27 +929,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -975,27 +975,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1021,27 +1021,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1067,27 +1067,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1113,27 +1113,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1159,27 +1159,27 @@ _.Achievements =
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust

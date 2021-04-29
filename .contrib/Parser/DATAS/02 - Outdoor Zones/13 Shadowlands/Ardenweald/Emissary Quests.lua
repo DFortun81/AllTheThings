@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1565, {	-- Ardenweald
 			n(-169, { 	-- Emissary Quests
 				q(61098, {	-- Supplies from The Wild Hunt

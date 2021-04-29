@@ -54,14 +54,14 @@ _.ExpansionFeatures =
 					}),
 					q(60378, {	-- A Source of Sorrowvine
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { ,  },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
 					}),
 					q(60370, {	-- A Wealth of Wealdwood
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { ,  },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -110,7 +110,7 @@ _.ExpansionFeatures =
 					}),
 					q(60375, {	-- Bonemetal Bonanza
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { ,  },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -145,7 +145,7 @@ _.ExpansionFeatures =
 					}),
 					q(60365, {	-- Gildenite Grab
 						["provider"] = { "n", 158713 },	-- The Curator
-						--["coord"] = { , 1533 },
+						--["coord"] = { ,  },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},

@@ -12,7 +12,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { 85 },	-- Orgrimmar
-				["lvl"] = 50,
 			}),
 			q(53734, {	-- Walk Among Ghosts
 				["provider"] = { "n", 16802 },	-- Lor'themar Theron
@@ -21,7 +20,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { SILVERMOON_CITY },
-				["lvl"] = 50,
 			}),
 			q(53882, {	-- Writing on the Wall
 				["provider"] = { "n", 145015 },	-- Lor'themar Theron
@@ -30,7 +28,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { GHOSTLANDS },
-				["lvl"] = 50,
 			}),
 			q(53735, {	-- The First to Fall
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
@@ -39,7 +36,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { GHOSTLANDS },
-				["lvl"] = 50,
 			}),
 			q(53736, {	-- Lament of the Highborne
 				["provider"] = { "n", 145005 },		-- Lor'themar Theron
@@ -48,7 +44,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { GHOSTLANDS },
-				["lvl"] = 50,
 			}),
 			q(53737, {	-- The Day Hope Died
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
@@ -57,7 +52,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { GHOSTLANDS },
-				["lvl"] = 50,
 			}),
 			q(53738, {	-- Defense of Qual'Danas
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
@@ -66,7 +60,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { EVERSONG_WOODS },
-				["lvl"] = 50,
 			}),
 			q(53725, {	-- A People Shattered
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
@@ -75,7 +68,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { ISLE_OF_QUELDANAS },
-				["lvl"] = 50,
 			}),
 			q(53853, {	-- The Setting Sun
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
@@ -84,7 +76,6 @@ _.GearSets =
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
 				["maps"] = { ISLE_OF_QUELDANAS },
-				["lvl"] = 50,
 			}),
 			q(54096, {	-- The Fall of the Sunwell
 				["provider"] = { "n", 145793 },	-- Lady Liadrin
@@ -96,7 +87,6 @@ _.GearSets =
 					ISLE_OF_QUELDANAS,
 					973,	-- The Sunwell: Shrine of the Eclipse (Scenario)
 				 },
-				["lvl"] = 50,
 				["g"] = {
 					i(166348),	-- Sin'dorei Helm
 					i(166349),	-- Sin'dorei Pauldrons

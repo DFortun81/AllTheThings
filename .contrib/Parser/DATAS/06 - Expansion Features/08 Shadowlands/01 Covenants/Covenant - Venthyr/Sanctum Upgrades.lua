@@ -195,9 +195,6 @@ _.ExpansionFeatures =
 										}),
 										crit(13, {	-- Kyrian Arsenal
 										}),
-										crit(14, {	-- Night Fae Arsenal
-										-- possibly drops from Hunt-Captain Korayn's tribute at "Good Friend" (unsure if it requires rep, this is based on a wowhead comment.  or could also be any ardenweald guest at good friend, idk)
-										}),
 										crit(16, {	-- Vanity Mirror
 										}),
 									}),
@@ -395,14 +392,14 @@ _.ExpansionFeatures =
 											crit(6, {	-- Hunt-Captain Korayn
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(179605),	-- Elderwood Barrier
+											i(179548),	-- Elderwood Gavel
 											i(181618),	-- Gorm Quishe Platter
 											i(179509),	-- Grove Warden's Edge
 											i(179533),	-- Grove Warden's Harvester
-											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
-											i(179605),	-- Elderwood Barrier
 											i(179585),	-- Nightwillow Shortbow
-											i(179548),	-- Elderwood Gavel
+											i(183846),	-- Orders to Gormsmith Cavina
 										},
 									}),
 									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
@@ -439,6 +436,7 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(181607),	-- Decree: Lady Moonberry's Esteem
+											i(181613),	-- Decree: Lady Moonberry's Boon
 											i(179516),	-- Songwood Staff
 											i(179605),	-- Elderwood Barrier
 											i(179548),	-- Elderwood Gavel
@@ -634,6 +632,10 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(63694, {	-- Choofa's Best Friend
+									["provider"] = { "n", 160814 },	-- Choofa
+									["coord"] = { 63.7, 36.6, 1565 },	-- Ardenweald
+								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.1, 56.1, 1525 },	-- Revendreth
@@ -657,7 +659,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
 									["provider"] = { "n", 172448 },	-- Stewart
-									["coord"] = { 33.9, 66.5, 1533 },	-- Bastion
+									["coord"] = { 33.9, 66.5, BASTION },
 									["g"] = {
 										i(176135, {	-- Contract: Divine Desserts
 											crit(5, {	-- Divine Desserts
@@ -706,7 +708,7 @@ _.ExpansionFeatures =
 								q(61403, {	-- Ember Court: Maldraxxus Army
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 172964 },	-- Emeni
-									["coord"] = { 54.2, 69.3, 1536 },	-- Maldraxxus
+									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
 										i(176140, {	-- Contract: Maldraxxian Army
 											crit(12, {	-- Maldraxxian Army
@@ -718,7 +720,7 @@ _.ExpansionFeatures =
 								q(61399, {	-- Ember Court: Mortal Reminders
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
-									["coord"] = { 59.2, 75.1, 1670 },	-- Oribos
+									["coord"] = { 59.2, 75.1, ORIBOS },
 									["g"] = {
 										i(176128, {	-- Contract: Mortal Reminders
 											crit(8, {	-- Mortal Reminders
@@ -730,7 +732,7 @@ _.ExpansionFeatures =
 								q(61406, {	-- Ember Court: Mushroom Surprise
 									["description"] = "Available after purchasing Staff: Waiters.",
 									["provider"] = { "n", 168429 },	-- Melody Madcap
-									["coord"] = { 40.2, 41.2, 1536 },	-- Maldraxxus
+									["coord"] = { 40.2, 41.2, MALDRAXXUS },
 									["g"] = {
 										i(176136, {	-- Contract: Mushroom Surprise!
 											crit(6, {	-- Mushroom Surprise
@@ -873,7 +875,7 @@ _.ExpansionFeatures =
 								q(63696, {	-- Grandmaster Vole's Best Friend
 									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
-									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 								}),
 								q(61880, {	-- Honored Attendance
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
@@ -882,7 +884,7 @@ _.ExpansionFeatures =
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
 									["provider"] = { "n", 174916 },	-- Kleia
-									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
+									["coord"] = { 55.8, 86.4, BASTION },
 								}),
 								q(63213, {	-- Naladu the Elder
 									["provider"] = { "n", 176253 },	-- Elder Naladu
@@ -894,17 +896,26 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62073, {	-- Restock: Band Shirts
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 								}),
+								q(62064, {	-- Restock: Broken Mirrors
+									["repeatable"] = true,
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["cost"] = {
+										{ "i", 173109, 5 },	-- 5x Angerseye
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
+									},
+								}),
 								q(62066, {	-- Restock: Dredger Pool
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
 								q(62106, {	-- Restock: Enchantments
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, 1525 },
 									["cost"] = {
@@ -913,17 +924,17 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 								}),
 								q(61916, {	-- Restock: Fire Damage
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -933,13 +944,13 @@ _.ExpansionFeatures =
 								}),
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.2, 1525 },	-- Revendreth
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 								--	showed up after Week 3 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									["cost"] = {
@@ -949,7 +960,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62083, {	-- Restock: Medical Supplies
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 									["cost"] = {
@@ -959,13 +970,13 @@ _.ExpansionFeatures =
 								}),
 								q(62082, {	-- Restock: Personal Stash
 								--	showed up after Week 4 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
 								}),
 								q(62069, {	-- Restock: Sinstones
 								--	showed up after Week 2 Ember Court
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -974,7 +985,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(62075, {	-- Restock: Soul Cages
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
 									["cost"] = {
@@ -990,7 +1001,7 @@ _.ExpansionFeatures =
 								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
 								}),
 								q(62108, {	-- Restock: Strategic Codices
-									["repeatable"] = true,	-- it shows up as a blue ?
+									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, 1525 },
 									["cost"] = {
@@ -1032,7 +1043,7 @@ _.ExpansionFeatures =
 									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 									["g"] = {
 										i(176122),	-- RSVP: Grandmaster Vole
 									},
@@ -1041,7 +1052,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["provider"] = { "n", 174916 },	-- Kleia
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
+									["coord"] = { 55.8, 86.4, BASTION },
 									["g"] = {
 										i(176123),	-- RSVP: Kleia and Pelagos
 									},
@@ -1051,7 +1062,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
 									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 60.4, 71.6, 1536 },
+									["coord"] = { 60.4, 71.6, MALDRAXXUS },
 									["g"] = {
 										i(176124),	-- RSVP: Plague Deviser Marileth
 									},
@@ -1060,7 +1071,7 @@ _.ExpansionFeatures =
 								--	available for me after Week 5 Ember Court (1,708 Friendly, not sure if that matters)
 									["provider"] = { "n", 166577 },	-- Sika
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.7, 82.6, 1533 },	-- Bastion
+									["coord"] = { 52.7, 82.6, BASTION },
 									["g"] = {
 										i(176125),	-- RSVP: Sika
 									},
@@ -1089,7 +1100,7 @@ _.ExpansionFeatures =
 								}),
 								q(63699, {	-- Sika's Best Friend
 									["provider"] = { "n", 166577 },	-- Sika
-									["coord"] = { 52.6, 82.5, 1533 },	-- Bastion
+									["coord"] = { 52.6, 82.5, BASTION },
 								}),
 								q(61898, {	-- Small Bites
 									["minReputation"] = { 2445, FRIENDLY },
@@ -1339,7 +1350,7 @@ _.ExpansionFeatures =
 							n(-963, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
-									["coord"] = { 50.4, 67.4, 1536 },	-- Maldraxxus
+									["coord"] = { 50.4, 67.4, MALDRAXXUS },
 								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
@@ -1356,7 +1367,7 @@ _.ExpansionFeatures =
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
-									["coord"] = { 50.3, 67.4, 1536 },	-- Maldraxxus
+									["coord"] = { 50.3, 67.4, MALDRAXXUS },
 									["g"] = {
 										i(176115),	-- RSVP: Alexandros Mograine
 									},
@@ -1372,7 +1383,7 @@ _.ExpansionFeatures =
 								q(61123, {	-- RSVP: Polemarch Adrestes
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
-									["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
+									["coord"] = { 51.8, 47.7, BASTION },
 									["g"] = {
 										i(176117),	-- RSVP: Polemarch Adrestes
 									},
@@ -1459,7 +1470,7 @@ _.ExpansionFeatures =
 								q(61174, {	-- RSVP: Baroness Vashj
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
-									["coord"] = { 67.6, 45.9, 1536 },	-- Maldraxxus
+									["coord"] = { 67.6, 45.9, MALDRAXXUS },
 									["g"] = {
 										i(176097),	-- RSVP: Baroness Vashj
 									},
@@ -1475,7 +1486,7 @@ _.ExpansionFeatures =
 								q(61173, {	-- RSVP: Mikanikos
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171647 },	-- Mikanikos
-									["coord"] = { 50.1, 21.0, 1533 },	-- Bastion
+									["coord"] = { 50.1, 21.0, BASTION },
 									["g"] = {
 										i(176113),	-- RSVP: Mikanikos
 										i(182114),	-- Assorted Parts and 'Things'
@@ -1495,6 +1506,23 @@ _.ExpansionFeatures =
 									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								}),
+								q(62599, {	-- Gormsmith Cavina
+									-- TODO: first time obtaining this quest item, Exalted + Rank 5 Ember Court... not sure requirements if any
+									-- ["sourceQuests"] = {  },	-- TODO
+									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
+								}),
+								q(62616, {	-- Night Fae Arsenal
+									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
+									["provider"] = { "n", 165382 },	-- Gormsmith Cavina
+									["coord"] = { 51.6, 34.0, 1565 },	-- Ardenweald
+									["g"] = {
+										i(177244, {	-- Night Fae Arsenal
+											crit(14, {	-- Night Fae Arsenal
+												["achievementID"] = 14678,	-- Court Favors
+											}),
+										}),
+									},
 								}),
 							}),
 							-- Random, non-collectible items which go into your bags while in the Ember Court

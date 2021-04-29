@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
+
 local app = select(2, ...);
 local L = app.L;
 local auctionFrame = CreateFrame("Frame");
@@ -78,7 +79,6 @@ local HORDE_ONLY = {
 };
 
 -- Coroutine Helper Functions
-app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
@@ -140,10 +140,32 @@ local function Callback(method, ...)
 	end
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = true;
+		-- print("Callback:",method, ...)
 		local newCallback = function(...)
 			app.__callbacks[method] = nil;
 			method(...);
 		end;
+		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a named timer callback method to run on the next game frame with the provided params; the name can only be set to run once per frame
+-- This callback version is used for in-line self-encapsulated functions since they are apparently
+-- re-defined on every call and thus are non-unique
+local function SelfCallback(self, name, method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self] then
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self][name] then
+		app.__callbacks[self][name] = true;
+		-- print("Callback:",self,name, ...)
+		local newCallback = function(...)
+				app.__callbacks[self][name] = nil;
+				method(...);
+			end;
 		C_Timer.After(0, newCallback);
 	end
 end
@@ -3963,15 +3985,20 @@ fieldConverters = {
 			rawget(fieldConverters, "mapID")(group, value[3]);
 		end
 	end,
-	["coords"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
-		for i,coord in ipairs(value) do
-			if coord[3] then
-				_cache(group, coord[3]);
-			end
-		end
-	end,
 	]]--
+	-- ["coords"] = function(group, value)
+	-- 	-- Don't cache by coords if 'maps' is used at or above this group already
+	-- 	if GetRelativeValue(group, "maps") then return; end
+	-- 	local relMapID, refText = GetRelativeValue(group, "mapID"), group.text;
+	-- 	_cache = rawget(fieldConverters, "mapID");
+	-- 	for i,coord in ipairs(value) do
+	-- 		-- Don't cache by coord mapID if this group is already under an object using that mapID
+	-- 		if coord[3] and coord[3] ~= relMapID then
+	-- 			print("Cached Group for MapID",relMapID,coord[3],refText)
+	-- 			_cache(group, coord[3]);
+	-- 		end
+	-- 	end
+	-- end,
 	["cost"] = function(group, value)
 		if type(value) == "number" then
 			return;
@@ -5156,7 +5183,7 @@ function app.IsNPCQuestGiver(self, npcID)
 		return npcQuestsCache[npcID];
 	else
 		local group = app.SearchForField("creatureID", npcID);
-		if not group then 
+		if not group then
 			npcQuestsCache[npcID] = false;
 			return false;
 		end
@@ -5168,7 +5195,7 @@ function app.IsNPCQuestGiver(self, npcID)
 			end
 		end
 
-		npcQuestsCache[npcID] = false; 
+		npcQuestsCache[npcID] = false;
 		return false;
 	end
 end
@@ -5183,26 +5210,26 @@ local function AttachTooltip(self)
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
 		if link then
-			if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == link) then
-				return true
+			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
+				return true;
 			else
-				self.AllTheThingsProcessing = link
+				self.AllTheThingsProcessing = link;
 			end
 		else
-			 target = select(2, self:GetUnit());
+			target = select(2, self:GetUnit());
 			if target then
-				if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == target) then
-					return true
+				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
+					return true;
 				else
-					self.AllTheThingsProcessing = target
+					self.AllTheThingsProcessing = target;
 				end
 			else
 				spellID = select(2, self:GetSpell());
 				if spellID then
-					if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == spellID) then
-						return true
+					if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
+						return true;
 					else
-						self.AllTheThingsProcessing = spellID
+						self.AllTheThingsProcessing = spellID;
 					end
 				end
 			end
@@ -5281,7 +5308,6 @@ local function AttachTooltip(self)
 		if self.AllTheThingsProcessing and link then
 			-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-			local itemID = string.match(link, "item:(%d+)");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
 			-- print(Ltype,Id);
 			--[[
@@ -5293,7 +5319,8 @@ local function AttachTooltip(self)
 				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 			end--]]
 			-- print("Search Item",itemID);
-			if itemID and itemID == "137642" then -- skip Mark of Honor for now
+			local mohIndex = link:find("item:137642");
+			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
 				AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
 			else
 				AttachTooltipSearchResults(self, link, SearchForLink, link);
@@ -7600,6 +7627,7 @@ local itemFields = {
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
+				rawset(t, "icon", icon);
 				rawset(t, "q", quality);
 				return link;
 			else
@@ -9006,7 +9034,7 @@ local function RefreshQuestCompletionState(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
-	wipe(npcQuestsCache) 
+	wipe(npcQuestsCache)
 end
 
 -- Recipe Lib
@@ -10231,7 +10259,7 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group)
-	local visible = false;
+	local visible = app.MODE_DEBUG;
 
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
@@ -11013,9 +11041,7 @@ end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then
-		addedQuests =  {};
-	end
+	if not addedQuests then addedQuests =  {}; end
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
@@ -11095,6 +11121,20 @@ local function NestSourceQuests(root, addedQuests, depth)
 			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
 			if not root.g then root.g = prereqs;
 			else MergeObjects(root.g, prereqs); end
+		end
+	end
+	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+	if root.providers then
+		for _,p in ipairs(root.providers) do
+			if p[1] == "i" then
+				-- print("Root Provider",p[1], p[2]);
+				local pRef = app.SearchForObject("itemID", p[2]);
+				if pRef then
+					pRef = CloneData(pRef);
+					if not root.g then root.g = { pRef };
+					else MergeObject(root.g, pRef, 1); end
+				end
+			end
 		end
 	end
 	return root;
@@ -11307,7 +11347,6 @@ function app:CreateMiniListForGroup(group)
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
 				-- local breakafter = 0;
-				local isAcctQuests = app.AccountWideQuests;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
@@ -11433,6 +11472,21 @@ function app:CreateMiniListForGroup(group)
 					end
 				until not prereqs or #prereqs < 1;
 			end
+			-- If the initial quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+			if g[1] and g[1].providers then
+				for _,p in ipairs(g[1].providers) do
+					if p[1] == "i" then
+						-- print("Root Provider",p[1], p[2]);
+						local pRef = app.SearchForObject("itemID", p[2]);
+						if pRef then
+							pRef = CloneData(pRef);
+							-- Set the full Quest Chain as the child of the Item
+							pRef.g = g;
+							g = { pRef };
+						end
+					end
+				end
+			end
 			popout.data = {
 				["text"] = L["QUEST_CHAIN_REQ"],		-- L["QUEST_CHAIN_REQ"] = "Quest Chain Requirements"
 				["description"] = L["QUEST_CHAIN_REQ_DESC"],		-- L["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r"
@@ -11486,7 +11540,6 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 		end
-		table.insert(app.RawData, popout.data);
 	end
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
@@ -11551,7 +11604,7 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text, data.itemID);
+			local s, dressable = GetSourceID(text);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
@@ -11675,6 +11728,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady then return; end
+	-- print("Refresh:",self.Suffix or self.suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -11745,15 +11799,15 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			Callback(function()
-				self:UpdateDone();
-			end);
+			SelfCallback(self, "UpdateDone",
+				function() self:UpdateDone(); end);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			Callback(function()
-				self.processingLinks = nil;
-				self:Refresh();
-			end);
+			SelfCallback(self, "Refresh",
+				function()
+					self.processingLinks = nil;
+					self:Refresh();
+				end);
 		end
 	else
 		self:Hide();
@@ -12789,16 +12843,15 @@ local function ProcessGroup(data, object)
 	end
 end
 local function UpdateWindow(self, force, got)
+	if not app.IsReady then return; end
 	if self.data then
-		-- print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
-			if not self.rowData then
-				self.rowData = {};
-			else
-				wipe(self.rowData);
-			end
+			if not self.rowData then self.rowData = {};
+			else wipe(self.rowData); end
 			self.data.expanded = true;
-			if self.shouldFullRefresh and (force or got) then
+			if not self.doesOwnUpdate and
+				(force or (self.shouldFullRefresh and got)) then
 				self.data.progress = 0;
 				self.data.total = 0;
 				UpdateGroups(self.data, self.data.g);
@@ -12864,7 +12917,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Dungeons & Raids
 		db = {};
@@ -13416,7 +13468,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -13468,7 +13519,7 @@ local backdrop = {
 
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
-	-- print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
+	-- print("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
@@ -13486,13 +13537,7 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
-			-- print("Update Groups")
 			app:GetDataCache();
-			for i,data in ipairs(app.RawData) do
-				data.progress = 0;
-				data.total = 0;
-				UpdateGroups(data, data.g);
-			end
 
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);
@@ -13697,7 +13742,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 			},
 		};
 		BuildGroups(self.data, self.data.g);
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			-- print("Refreshed Bounties")
@@ -13800,7 +13844,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		self.IsSameMapData = function(self)
 			local data = self.data;
@@ -14149,7 +14192,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					},
 				});
 			end
-			self:Update();
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniList(id, show)
 			-- print("open",id,show);
@@ -14174,7 +14218,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			Callback(function() self:Update(); end);
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
@@ -14234,6 +14279,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			-- self.doesOwnUpdate = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
@@ -14308,24 +14354,23 @@ app:GetWindow("Harvester", UIParent, function(self)
 			]]--
 			self.data = db;
 			BuildGroups(db, db.g);
-			UpdateGroups(db, db.g);
 			self.ScrollBar:SetValue(1);
 			self.UpdateDone = function(self)
+				-- Hide data which have completed their harvest
 				local progress = 0;
 				local total = 0;
 				for i,group in ipairs(db.g) do
 					total = total + 1;
-					if (group.s and group.s == 0) or group.artifactID or group.reSource then
-						group.visible = true;
-					else
+					if not group.reSource then
 						group.visible = false;
-						group.reSource = nil;
 						progress = progress + 1;
+						group.reSource = nil;
 					end
 				end
 				if self.rowData then
 					local count = #self.rowData;
 					if count > 1 then
+						-- Remove completed rows
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
 						for i=count,1,-1 do
@@ -14347,10 +14392,11 @@ app:GetWindow("Harvester", UIParent, function(self)
 						self.UpdateDone = nil;
 					end
 				end
-				Callback(function() self:Refresh(); end);
+				-- Update the Harvester Window to re-populate row data for next refresh
+				SelfCallback(self, "Refresh",
+					function() self:Refresh(); end);
 			end
 		end
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		self:BaseUpdate(true);
 	end
 end);
@@ -14555,6 +14601,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			self.doesOwnUpdate = true;
 
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
@@ -17054,7 +17101,7 @@ app.OpenAuctionModule = function(self)
 							["priority"] = -3,
 							["OnClick"] = function()
 								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-								
+
 								-- Only allow a scan once every 15 minutes.
 								local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
 								if cooldown - now < 0 then
@@ -17446,7 +17493,6 @@ end
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -17523,6 +17569,14 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
+	
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+		type = "launcher",
+		icon = app.asset("logo_32x32"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	});
 
 	-- Character Data Storage
 	local characterData = ATTCharacterData;
@@ -17570,16 +17624,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 	end
-
-	-- Convert over the deprecated ArtifactRelicItemLevelsPerCharacter table.
-	local artifactRelicItemLevelsPerCharacter = GetDataMember("ArtifactRelicItemLevelsPerCharacter");
-	if artifactRelicItemLevelsPerCharacter then
-		for guid,data in pairs(artifactRelicItemLevelsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.ArtifactRelicItemLevels = data; end
-		end
-	end
-
+	
 	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
 	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
 	if azeriteEssenceRanksPerCharacter then
@@ -17697,6 +17742,53 @@ app.events.VARIABLES_LOADED = function()
 		if character and character.Deaths and character.Deaths > 0 then
 			deaths = deaths + character.Deaths;
 		end
+	end
+	accountWideData.Deaths = deaths;
+
+	-- Convert over the deprecated account wide tables.
+	local data = GetDataMember("CollectedAchievements");
+	if data then accountWideData.Achievements = data; end
+	data = GetDataMember("CollectedArtifacts");
+	if data then
+		if not data.V then
+			wipe(data);
+			C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+		else
+			data.V = nil;
+		end
+		accountWideData.Artifacts = data;
+	elseif accountWideData.Artifacts.V then
+		accountWideData.Artifacts.V = nil;
+	end
+	data = GetDataMember("AzeriteEssenceRanks");
+	if data then accountWideData.AzeriteEssenceRanks = data; end
+	data = GetDataMember("CollectedBuildings");
+	if data then accountWideData.Buildings = data; end
+	data = GetDataMember("CollectedFactions");
+	if data then accountWideData.Factions = data; end
+	data = GetDataMember("CollectedFactionBonusReputation");
+	if data then accountWideData.FactionBonus = data; end
+	data = GetDataMember("CollectedFlightPaths");
+	if data then accountWideData.FlightPaths = data; end
+	data = GetDataMember("CollectedFollowers");
+	if data then accountWideData.Followers = data; end
+	data = GetDataMember("HeirloomUpgradeRanks");
+	if data then accountWideData.HeirloomRanks = data; end
+	data = GetDataMember("CollectedIllusions");
+	if data then accountWideData.Illusions = data; end
+	data = GetDataMember("CollectedQuests");
+	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSources");
+	if data then accountWideData.Sources = data; end
+	data = GetDataMember("CollectedSpells");
+	if data then accountWideData.Spells = data; end
+	data = GetDataMember("CollectedTitles");
+	if data then accountWideData.Titles = data; end
+	data = GetDataMember("CollectedToys");
+	if data then
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
+		accountWideData.Toys = data;
 	end
 	accountWideData.Deaths = deaths;
 	
@@ -17843,7 +17935,7 @@ app.events.VARIABLES_LOADED = function()
 					rawset(CompletedQuests, questID, 2);
 					if not app.CurrentCharacter.Quests[questID] then
 						app.CurrentCharacter.Quests[questID] = 2;
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
@@ -17859,7 +17951,7 @@ app.events.VARIABLES_LOADED = function()
 					rawset(CompletedQuests, questID, 2);
 					if not app.CurrentCharacter.Quests[questID] then
 						app.CurrentCharacter.Quests[questID] = 2;
-						SetDataSubMember("CollectedQuests", questID, 1);
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
@@ -17906,16 +17998,13 @@ app.events.VARIABLES_LOADED = function()
 		Callback(app.LocationTrigger);
 	end);
 end
-app.events.PLAYER_LOGIN = function(...)
-	-- print("PLAYER_LOGIN",...)
-	app:UnregisterEvent("PLAYER_LOGIN");
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	});
+app.events.PLAYER_ENTERING_WORLD = function(...)
+	-- print("PLAYER_ENTERING_WORLD",...)
+	app.InWorld = true;
+	-- refresh any custom collects for this character
+	app.RefreshCustomCollectibility();
+	-- send a location trigger now that the character is 'in the world'
+	Callback(app.LocationTrigger);
 end
 app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- print("PLAYER_ENTERING_WORLD",...)

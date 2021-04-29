@@ -69,6 +69,16 @@ SHATTRATH_CITY = 111;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
+-- Battle for Azeroth
+CHAMBER_OF_HEART = 1021;
+REPAIRED_CHAMBER_OF_HEART = 1473;
+
+-- Shadowlands
+SHADOWLANDS = 1550;
+ORIBOS = 1670;
+BASTION = 1533;
+MALDRAXXUS = 1536;
+
 -- Helper Tables
 local DifficultyDB = {
 	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
@@ -792,7 +802,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);-- bubbleDown({ ["requireSkill"] = skillID, }, t)); (don't do this...)
+	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t)); -- Need to maintain the requireSkill inclusion until every individually-sourced recipe Item has the proper tagging as well
 	_.Professions = { p };
 	return p;
 end

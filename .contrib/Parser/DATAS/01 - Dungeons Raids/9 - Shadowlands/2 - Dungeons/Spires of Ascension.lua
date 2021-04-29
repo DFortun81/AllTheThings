@@ -4,11 +4,11 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1186, {	-- Spires of Ascension
-		["coord"] = { 58.5, 28.5, 1533 },
+		["coord"] = { 58.5, 28.5, BASTION },
 		["maps"] = {
 			1692,	-- Honor's Ascent
 			1693,	-- Spires of Ascension
-			1694,	-- 
+			1694,	--
 			1695,	-- Seat of the Archon
 		},
 		["lvl"] = { 50 },

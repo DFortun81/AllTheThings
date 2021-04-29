@@ -674,6 +674,31 @@ namespace ATT
             };
 
             /// <summary>
+            /// Provides the proper string constant for LUA source given a Skill ID
+            /// </summary>
+            public static Dictionary<long, string> SKILLID_CONSTANTS = new Dictionary<long, string>()
+            {
+                {171, "ALCHEMY"},
+                {794, "ARCHAEOLOGY"},
+                {164, "BLACKSMITHING"},
+                {185, "COOKING"},
+                {333, "ENCHANTING"},
+                {202, "ENGINEERING"},
+                {20222, "GOBLIN_ENGINEERING"},
+                {20219, "GNOMISH_ENGINEERING"},
+                {129, "FIRST_AID"},
+                {356, "FISHING"},
+                {182, "HERBALISM"},
+                {773, "INSCRIPTION"},
+                {755, "JEWELCRAFTING"},
+                {2720, "JUNKYARD_TINKERING"},
+                {165, "LEATHERWORKING"},
+                {186, "MINING"},
+                {393, "SKINNING"},
+                {197, "TAILORING"},
+            };
+
+            /// <summary>
             /// Assign the Faction ID for this data dictionary if a valid ID hasn't already been assigned.
             /// </summary>
             /// <param name="data">The data dictionary.</param>
@@ -1001,7 +1026,7 @@ namespace ATT
                         var allLocalizationIDs = allLocalizedObjects.Keys.ToList();
                         allLocalizationIDs.Sort();
                         var builder = new StringBuilder();
-                        foreach(var id in allLocalizationIDs)
+                        foreach (var id in allLocalizationIDs)
                         {
                             builder.Append("\t\t[").Append(id).Append("] = ").Append(allLocalizedObjects[id]).AppendLine();
                         }
@@ -1932,11 +1957,11 @@ namespace ATT
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             if (newProvider.Item1 == "i")
                                 Items.MarkItemAsReferenced(newProvider.Item2);
-                            else if(newProvider.Item1 == "n")
+                            else if (newProvider.Item1 == "n")
                             {
                                 NPCS_WITH_REFERENCES[newProvider.Item2] = true;
                             }
-                            else if(newProvider.Item1 == "o")
+                            else if (newProvider.Item1 == "o")
                             {
                                 OBJECTS_WITH_REFERENCES[newProvider.Item2] = true;
                             }

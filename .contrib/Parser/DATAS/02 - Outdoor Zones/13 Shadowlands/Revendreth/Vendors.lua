@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			n(VENDORS, {
 				n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>

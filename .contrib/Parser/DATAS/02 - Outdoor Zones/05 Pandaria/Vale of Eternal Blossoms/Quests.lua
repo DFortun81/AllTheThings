@@ -197,7 +197,6 @@ _.Zones =
 					},
 					["coord"] = { 83.2, 29.6, 390 },
 					["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
-					["lvl"] = 90,
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
 					},
@@ -218,17 +217,15 @@ _.Zones =
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
-				q(31386, {    -- The Shado-Pan Offensive (A)  
+				q(31386, {    -- The Shado-Pan Offensive (A)
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64030 },    -- Lao Lang
 					["coord"] = { 84.4, 61.6, 390 },    -- Vale of Eternal Blossoms
-					["lvl"] = 35,
 				}),
-				q(31388, {    -- The Shado-Pan Offensive (H)  
+				q(31388, {    -- The Shado-Pan Offensive (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64002 },    -- Sang-Bo
 					["coord"] = { 63.0, 21.2, 390 },    -- Vale of Eternal Blossoms
-					["lvl"] = 35,
 				}),
 				q(30280, {	-- The Thunder Below
 					["coord"] = { 21.4, 71.5, 390 },
@@ -240,7 +237,6 @@ _.Zones =
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, 390 },
 					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
-					["lvl"] = 90,
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
 					},
@@ -274,14 +270,12 @@ _.Zones =
 					["provider"] = { "n", 64029 },	-- Elder Lin
 					["coord"] = { 85.2, 62.6, 390 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 85,
 				}),
 				q(33133, {	-- Warforged Seals (H)
 					["repeatable"] = true,
 					["provider"] = { "n", 63996 },	-- Elder Liao
 					["coord"] = { 62.0, 20.6, 390 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 85,
 				}),
 				q(31015, {	-- Your Private Collection
 					["providers"] = {

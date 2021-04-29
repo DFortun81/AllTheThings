@@ -126,12 +126,10 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic)
 						})),
 						q(39735, {	-- Stormheim (A)
-							["lvl"] = 98,
 							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = { 44700 },	-- Stormheim (A) from Archmage Landon in Stormheim
 						}),
 						q(39864, {	-- Stormheim (H)
-							["lvl"] = 98,
 							["races"] = HORDE_ONLY,
 							["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
 						}),

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1543, {	-- The Maw
 			n(-212, {	-- Treasure Chest
 				n(173841, {	-- Paper Scrap

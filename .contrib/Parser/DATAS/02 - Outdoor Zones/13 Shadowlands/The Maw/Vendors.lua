@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1543, {	-- The Maw
 			n(VENDORS, {
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>

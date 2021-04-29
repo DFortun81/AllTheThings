@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1565, {	-- Ardenweald
 			n(VENDORS, {
 				n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>
@@ -18,6 +18,7 @@ _.Zones =
 						}),
 						i(181309, {	-- Faewoven Pack
 							["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
+							["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
 						}),
 						i(178336, {	-- Tabard of the Wild Hunt
 							["cost"] = 2500000,	-- 250g

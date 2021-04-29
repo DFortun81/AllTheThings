@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1536, {	-- Maldraxxus
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
 			n(-169, { 	-- Emissary Quests
 				q(61095, {	-- Supplies from The Undying Army
 					["provider"] = { "n", 173003 },	-- Nalcorn Talsen
-					["coord"] = { 50.6, 53.4, 1536 },
+					["coord"] = { 50.6, 53.4, MALDRAXXUS },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
