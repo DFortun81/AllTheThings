@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			filter(101, {	-- Battle Pets
 				p(2902, {	-- Dusky Dredwing Pup

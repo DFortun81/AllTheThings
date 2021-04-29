@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(-169, { 	-- Emissary Quests
 				q(61097, {	-- Supplies from The Ascended

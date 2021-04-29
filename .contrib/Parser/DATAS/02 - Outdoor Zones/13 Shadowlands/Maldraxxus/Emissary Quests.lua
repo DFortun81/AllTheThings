@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(-169, { 	-- Emissary Quests
 				q(61095, {	-- Supplies from The Undying Army

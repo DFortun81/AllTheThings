@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1670, {	-- Oribos
 			n(QUESTS, {
 				n(-9, {	-- PvP

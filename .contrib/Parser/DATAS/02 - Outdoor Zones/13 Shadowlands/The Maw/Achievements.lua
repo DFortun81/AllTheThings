@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1543, {	-- The Maw
 			n(ACHIEVEMENTS, {
 				ach(14744, {	-- Better to Be Lucky Than Dead

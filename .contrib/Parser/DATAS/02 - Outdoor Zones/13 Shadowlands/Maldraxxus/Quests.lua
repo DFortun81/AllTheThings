@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(QUESTS, {
 				q(58068, {	-- ...Even The Most Ridiculous Request!

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(353627, {	-- Battlefront Rations

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(-34,  {	-- World Quests
 				i(183111, {	-- Animated Ulna

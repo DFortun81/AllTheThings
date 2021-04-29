@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(RARES, {
 				n(162727, {	-- Bubbleblood

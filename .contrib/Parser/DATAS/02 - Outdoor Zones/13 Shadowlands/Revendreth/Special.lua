@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			n(-77, {	-- Special
 				n(-907, {	-- Dead Blanchy

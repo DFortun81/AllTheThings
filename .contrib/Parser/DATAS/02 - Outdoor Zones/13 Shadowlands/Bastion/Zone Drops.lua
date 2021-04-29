@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(ZONEDROPS, {
 				i(184397, {	-- Lost Featherling (PET)

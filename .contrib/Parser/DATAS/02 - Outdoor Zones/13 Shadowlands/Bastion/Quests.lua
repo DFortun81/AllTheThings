@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(QUESTS, {
 				q(57584, {	-- A Fate Most Noble

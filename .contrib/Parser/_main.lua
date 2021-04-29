@@ -73,6 +73,10 @@ SHADOWMOON_VALLEY = 104;	-- Confirmed!
 CHAMBER_OF_HEART = 1021;
 REPAIRED_CHAMBER_OF_HEART = 1473;
 
+-- Shadowlands
+SHADOWLANDS = 1550;
+BASTION = 1533;
+
 -- Helper Tables
 local DifficultyDB = {
 	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },

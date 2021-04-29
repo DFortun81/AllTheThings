@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1536, {	-- Maldraxxus
 			n(FLIGHT_PATHS, {
 				fp(2398, {	-- Bleak Redoubt, Maldraxxus

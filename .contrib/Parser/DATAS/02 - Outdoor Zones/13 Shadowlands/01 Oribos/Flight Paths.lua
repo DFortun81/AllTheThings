@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1670, {	-- Oribos
 			n(FLIGHT_PATHS, {
 				fp(2395, {	-- Oribos

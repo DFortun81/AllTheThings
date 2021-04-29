@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, { 	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1670, {	-- Oribos
 			n(-176, {	-- Weekly Holidays
 				q(62632, {	-- A Burning Path Through Time

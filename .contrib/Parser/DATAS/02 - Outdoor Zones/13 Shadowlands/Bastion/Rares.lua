@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(RARES, {
 				n(161528, { -- Aethon

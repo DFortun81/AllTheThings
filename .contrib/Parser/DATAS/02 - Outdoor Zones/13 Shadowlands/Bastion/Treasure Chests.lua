@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(-212, {	-- Treasure Chest
 				i(180866),	-- Gilded Wader

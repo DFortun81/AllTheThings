@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1565, {	-- Ardenweald
 			n(VENDORS, {
 				n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(1525, {	-- Revendreth
 			n(-169, { 	-- Emissary Quests
 				q(61100, {	-- Supplies from the Court of Harvesters
