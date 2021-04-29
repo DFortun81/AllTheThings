@@ -262,23 +262,23 @@ _.ExpansionFeatures =
 					q(60508, {	-- On the Trail
 						["sourceQuests"] = { 59181 },	-- Into the Maw
 						["provider"] = { "n", 174833 },	-- Shandris Feathermoon
-						["coord"] = { 44.3, 41.1, 1543 },
+						["coord"] = { 44.3, 41.1, THE_MAW },
 					}),
 					q(59189, {	-- The Recovery of Tyrande Whisperwind
 						["sourceQuests"] = { 60530 },	-- The Sea of Souls
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
-						["coord"] = { 46.8, 41.7, 1543 },
+						["coord"] = { 46.8, 41.7, THE_MAW },
 						["maps"] = { 1720 },	-- Torghast Scenario
 					}),
 					q(60530, {	-- The Sea of Souls
 						["sourceQuests"] = { 60508 },	-- On the Trail
 						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
-						["coord"] = { 30.1, 36.4, 1543 },
+						["coord"] = { 30.1, 36.4, THE_MAW },
 					}),
 					q(59242, {	-- Their New Home
 						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
-						["coord"] = { 46.8, 41.7, 1543 },
+						["coord"] = { 46.8, 41.7, THE_MAW },
 						["g"] = {
 							i(175576),	-- Faewoven Raiment
 							i(179657),	-- Faewoven Tunic
@@ -649,22 +649,22 @@ _.ExpansionFeatures =
 					q(59822, {	-- Tracking a Wild God
 						["sourceQuests"] = { 59805 },	-- Maw Manifested
 						["provider"] = { "n", 171655 },	-- Spirit of Vol'jin
-						["coord"] = { 44.8, 40.9, 1543 },	-- The Maw
+						["coord"] = { 44.8, 40.9, THE_MAW },
 					}),
 					q(59824, {	-- Loa Rescue
 						["sourceQuests"] = { 59822 },	-- Tracking a Wild God
 						["provider"] = { "n", 171828 },	-- Spirit of Vol'jin
-						["coord"] = { 41.0, 64.2, 1543 },	-- The Maw
+						["coord"] = { 41.0, 64.2, THE_MAW },
 					}),
 					q(59856, {	-- Rezan, Loa of Kings
 						["sourceQuests"] = { 59824 },	-- Loa Rescue
 						["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
-						["coord"] = { 45.8, 85.0, 1543 },	-- The Maw
+						["coord"] = { 45.8, 85.0, THE_MAW },
 					}),
 					q(59866, {	-- Parting Ways
 						["sourceQuests"] = { 59856 },	-- Rezan, Loa of Kings
 						["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
-						["coord"] = { 45.8, 85.0, 1543 },	-- The Maw
+						["coord"] = { 45.8, 85.0, THE_MAW },
 						["g"] = {
 							i(175588),	-- Faewoven Cowl
 							i(179768),	-- Oakheart Crest

@@ -61,7 +61,7 @@ _.ExpansionFeatures =
 					q(57122, {	-- A Step Too Far
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
 						["provider"] = { "n", 170375 },	-- Kleia
-						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+						["coord"] = { 33.8, 55.7, THE_MAW },
 					}),
 					q(62555, {	-- A Touch of Humility
 						["sourceQuests"] = { 57125 },	-- Time to Reflect
@@ -352,7 +352,7 @@ _.ExpansionFeatures =
 							57123,	-- Kyrian No More
 						},
 						["provider"] = { "n", 170375 },	-- Kleia
-						-- ["coord"] = { 30.1, 61.9, 1543 },	-- The Maw (your pet)
+						--["coord"] = { 30.1, 61.9, THE_MAW },
 						["g"] = {
 							i(177051),	-- Selfless Bearer's Chest
 							i(174290),	-- Selfless Collector's Chestplate
@@ -389,7 +389,7 @@ _.ExpansionFeatures =
 					q(57123, {	-- Kyrian No More
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
 						["provider"] = { "n", 170375 },	-- Kleia
-						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+						["coord"] = { 33.8, 55.7, THE_MAW },
 					}),
 					q(63345, {	-- Kyrian Tactician
 						-- TODO: confirm SQ, assumed
@@ -762,7 +762,7 @@ _.ExpansionFeatures =
 					q(57125, {	-- Time to Reflect
 						["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
 						["provider"] = { "n", 169850 },	-- Uther
-						["coord"] = { 25.6, 65.1, 1543 },	-- The Maw
+						["coord"] = { 25.6, 65.1, THE_MAW },
 					}),
 					q(58790, {	-- To Cross the Veil
 						["sourceQuests"] = {

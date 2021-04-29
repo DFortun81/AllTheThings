@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1543, {	-- The Maw
+		m(THE_MAW, {
 			n(QUESTS, {
 				n(-229, {	-- Weekly
 					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
@@ -30,7 +30,7 @@ _.Zones =
 							n(174861, {	-- Gorged Shadehound
 								["isWeekly"] = true,
 								["questID"] = 63433,
-								["coord"] = { 53.4, 79.3, 1543 },
+								["coord"] = { 53.4, 79.3, THE_MAW },
 								["g"] = {
 									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 									i(183057, {	-- Shadehound Armor Plating
@@ -94,7 +94,7 @@ _.Zones =
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1543 },
+					["coord"] = { 32.9, 66.4, THE_MAW },
 				}),
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
@@ -139,7 +139,7 @@ _.Zones =
 				q(60271, {	-- A Grave Chance
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
@@ -150,47 +150,47 @@ _.Zones =
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
 					["isDaily"] = true,
-					["coord"] = { 22.1, 48.0, 1543 },
+					["coord"] = { 22.1, 48.0, THE_MAW },
 				}),
 				q(57691, {	-- A Royal Key
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
-					["coord"] = { 34.6, 18.6, 1543 },
+					["coord"] = { 34.6, 18.6, THE_MAW },
 				}),
 				q(63166, {	-- A Shadowed Fate
 					["provider"] = { "n", 176029 },	-- Tormented Soul
 					["isDaily"] = true,
-					["coord"] = { 29.7, 20.9, 1543 },
+					["coord"] = { 29.7, 20.9, THE_MAW },
 				}),
 				q(61075, {	-- A Spark of Light
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60775, {	-- A Suitable Demise
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(63050, {	-- Acquisition: Blazing Ingots
 					["provider"] = { "o", 364932 },	-- Blazing Ingot
 					["isDaily"] = true,
-					["coord"] = { 39.0, 39.9, 1543 },
+					["coord"] = { 39.0, 39.9, THE_MAW },
 				}),
 				q(63031, {	-- Acquisition: Crystallized Stygia
 					["provider"] = { "o", 364899 },	-- Crystallized Stygia
 					["isDaily"] = true,
-					["coord"] = { 21.2, 34.1, 1543 },
+					["coord"] = { 21.2, 34.1, THE_MAW },
 				}),
 				q(63047, {	-- Acquisition: Runeforged Shackles
 					["provider"] = { "o", 364926 },	-- Runeforged Shackles
 					["isDaily"] = true,
-					["coord"] = { 25.6, 24.2, 1543 },
+					["coord"] = { 25.6, 24.2, THE_MAW },
 				}),
 				q(63072, {	-- Acquisition: Stygic Ore
 					-- ["provider"] = { "o", ? },	--
 					["isDaily"] = true,
-					["coord"] = { 48.2, 81.9, 1543 },
+					["coord"] = { 48.2, 81.9, THE_MAW },
 				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
@@ -207,7 +207,7 @@ _.Zones =
 				q(57690, {	-- Cages For All Occasions
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
 					["provider"] = { "n", 158649 },	-- Vorpalia
-					["coord"] = { 38.7, 28.3, 1543 },
+					["coord"] = { 38.7, 28.3, THE_MAW },
 				}),
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
@@ -215,22 +215,22 @@ _.Zones =
 				-- TODO: bonus objective is the same ID as the Rare kill daily?
 				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
 					["isDaily"] = true,
-					["coord"] = { 27.6, 28.2, 1543 },
+					["coord"] = { 27.6, 28.2, THE_MAW },
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.2, 55.7, 1543 },
+					["coord"] = { 36.2, 55.7, THE_MAW },
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
 					["isDaily"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {
@@ -243,12 +243,12 @@ _.Zones =
 				q(63179, {	-- Drowned and Torn Asunder
 					["provider"] = { "n", 176144 },	-- Disciple Kimonas
 					["isDaily"] = true,
-					["coord"] = { 38.8, 23.6, 1543 },
+					["coord"] = { 38.8, 23.6, THE_MAW },
 				}),
 				q(60622, {	-- Eye of the Scryer
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(62932, {	-- Explore Torghast
 					["sourceQuests"] = { 61099 },	-- The Search for Baine
@@ -275,7 +275,7 @@ _.Zones =
 					-- },
 					["isDaily"] = true,
 					["provider"] = { "n", 175866 },	-- Vengeful Soul
-					["coord"] = { 25.2, 66.6, 1543 },
+					["coord"] = { 25.2, 66.6, THE_MAW },
 				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
@@ -287,7 +287,7 @@ _.Zones =
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {
@@ -301,29 +301,29 @@ _.Zones =
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(63038, {	-- Guaranteed Delivery
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
-					["coord"] = { 30.7, 58.3, 1543 },
+					["coord"] = { 30.7, 58.3, THE_MAW },
 				}),
 				q(63040, {	-- Guaranteed Delivery
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
-					["coord"] = { 30.7, 58.3, 1543 },
+					["coord"] = { 30.7, 58.3, THE_MAW },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
 					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.5, 50.7, 1543 },
+					["coord"] = { 36.5, 50.7, THE_MAW },
 				}),
 				q(62837, {	-- Hopeful News
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(63155, {	-- Indecipherable Map
 					["provider"] = { "i", 183058 },	-- Indecipherable Map
@@ -331,7 +331,7 @@ _.Zones =
 				q(62654, {	-- Maw Walker
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 49.9, 41.6, 1543 },
+					["coord"] = { 49.9, 41.6, THE_MAW },
 					["g"] = {
 						i(175511),	-- Fallen Protector's Headguard
 						i(175525),	-- Forgotten Pursuer's Cowl
@@ -348,12 +348,12 @@ _.Zones =
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
 					["isDaily"] = true,
-					["coord"] = { 24.6, 45.2, 1543 },
+					["coord"] = { 24.6, 45.2, THE_MAW },
 				}),
 				q(60646, {	-- Misery Business
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
@@ -364,12 +364,12 @@ _.Zones =
 				q(62234, {	-- Power of the Colossus
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(62239, {	-- Rodent Removal
 				--	["provider"] = { "o",  },	-- Tormentor's Pike
 					["isDaily"] = true,
-					["coord"] = { 60.3, 72.1, 1543 },
+					["coord"] = { 60.3, 72.1, THE_MAW },
 				}),
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
@@ -380,41 +380,41 @@ _.Zones =
 				q(60287, {	-- Rule 1: Have an Escape Plan
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(61355, {	-- Rule 2: Keep a Low Profile
 					["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60289, {	-- Rule 3: Trust is Earned
 					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60281, {	-- Rule 4: Make A List
 					["sourceQuests"] = { 63051 },	-- Trust Issues
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60284, {	-- Rule 5: Be Audacious
 					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["description"] = "Requires Tentative reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(60285, {	-- Rule 6: Concealment is Everything
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
 					["sourceQuests"] = {
@@ -423,13 +423,13 @@ _.Zones =
 					},
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
-					["coord"] = { 56.9, 57.5, 1543 },
+					["coord"] = { 56.9, 57.5, THE_MAW },
 				}),
 				q(60158, {	-- Rule 7: Betrayal is Inevitable
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["description"] = "Requires Appreciative reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = {
@@ -439,7 +439,7 @@ _.Zones =
 						62843,	-- The Soul Contact (Necrolords)
 					},
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
@@ -449,7 +449,7 @@ _.Zones =
 				q(63206, {	-- Soulless Husks
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
@@ -460,7 +460,7 @@ _.Zones =
 				--	TODO: may also require 'rule 6 addendum,' not sure
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.6, 1543 },
+					["coord"] = { 46.8, 41.6, THE_MAW },
 				}),
 				q(59770, {	-- Stand as One
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
@@ -470,12 +470,12 @@ _.Zones =
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
 					["isDaily"] = true,
-					["coord"] = { 37.2, 44.6, 1543 },
+					["coord"] = { 37.2, 44.6, THE_MAW },
 				}),
 				q(63043, {	-- Sundered Souls
 					["provider"] = { "n", 175813 },	-- Trapped Soul
 					["isDaily"] = true,
-					["coord"] = { 28.2, 14.6, 1543 },
+					["coord"] = { 28.2, 14.6, THE_MAW },
 				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
@@ -486,23 +486,23 @@ _.Zones =
 				q(59959, {	-- The Brand Holds the Key
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
 					["provider"] = { "o", 355798 },	-- Cage
-					["coord"] = { 38.3, 48.5, 1543 },
+					["coord"] = { 38.3, 48.5, THE_MAW },
 				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
-					["coord"] = { 44.9, 40.9, 1543 },
+					["coord"] = { 44.9, 40.9, THE_MAW },
 				}),
 				q(60622, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(61079, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
-					["coord"] = { 46.8, 41.6, 1543 },
+					["coord"] = { 46.8, 41.6, THE_MAW },
 				}),
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
@@ -519,7 +519,7 @@ _.Zones =
 				q(61099, {	-- The Search for Baine
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.7, 1543 },
+					["coord"] = { 46.8, 41.7, THE_MAW },
 					["g"] = {
 						i(184757),	-- Chain of the Purpose-Bound
 					},
@@ -527,7 +527,7 @@ _.Zones =
 				q(60272, {	-- The Weak Link
 					["sourceQuests"] = { 60271 },	-- A Grave Chance
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {
@@ -544,7 +544,7 @@ _.Zones =
 				q(57693, {	-- Torghast, Tower of the Damned
 					["sourceQuests"] = { 57691 },	-- A Royal Key
 					["provider"] = { "n", 158645 },	-- Prince Renathal
-					["coord"] = { 34.6, 18.6, 1543 },
+					["coord"] = { 34.6, 18.6, THE_MAW },
 					["g"] = {
 						i(175731),	-- Stolen Maw Badge
 					},
@@ -552,24 +552,24 @@ _.Zones =
 				q(63062, {	-- Torment for the Taking
 					["provider"] = { "o", 364937 },	-- Phasic Siphoner
 					["isDaily"] = true,
-					["coord"] = { 28.0, 47.0, 1543 },
+					["coord"] = { 28.0, 47.0, THE_MAW },
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1543 },
+					["coord"] = { 32.9, 66.4, THE_MAW },
 				}),
 				q(63069, {	-- What They Know
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "o", 364987 },	-- Broker Journal
 					["isDaily"] = true,
-					["coord"] = { 46.4, 62.3, 1543 },
+					["coord"] = { 46.4, 62.3, THE_MAW },
 				}),
 				q(61765, {	-- Words of Warding
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -649,7 +649,7 @@ _.Zones =
 				q(60134, {	-- A Tauren in Trade
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 
@@ -658,13 +658,13 @@ _.Zones =
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(61103, {	-- Thin Their Numbers
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
-					["coord"] = { 46.9, 41.7, 1543 },
+					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well

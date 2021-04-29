@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1543, {	-- The Maw
+		m(THE_MAW, {
 			n(VENDORS, {
 				n(162804, {	-- Ve'nari
 					i(180949, {	-- Animaflow Stabilizer

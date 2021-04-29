@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1543, {	-- The Maw
+		m(THE_MAW, {
 			n(ACHIEVEMENTS, {
 				ach(14744, {	-- Better to Be Lucky Than Dead
 					ach(14743),	-- Deadly Serious
@@ -68,7 +68,7 @@ _.Zones =
 					ach(14894),		-- To 'Ghast, Two Curios
 				}),
 				ach(14745, {	-- Grand Theft Shadehound
-					["crs"] = { 
+					["crs"] = {
 						173139,	-- Bridled Shadehound (random spawn)
 						173149,	-- Bridled Shadehound (after killing NPC riding it)
 						176390,	-- Bridled Shadehound (random spawn?  found one up around 44, 45.  you just click to ride and it doesn't have a cast bar to hop on)
