@@ -720,7 +720,7 @@ _.ExpansionFeatures =
 								q(61399, {	-- Ember Court: Mortal Reminders
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
-									["coord"] = { 59.2, 75.1, 1670 },	-- Oribos
+									["coord"] = { 59.2, 75.1, ORIBOS },
 									["g"] = {
 										i(176128, {	-- Contract: Mortal Reminders
 											crit(8, {	-- Mortal Reminders

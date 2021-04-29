@@ -180,8 +180,8 @@ _.ExpansionFeatures =
 					q(62894, {	-- Flutterback
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 40.0, 68.4, 1670 },
-						["maps"] = { 1670 },	-- Oribos
+						["coord"] = { 40.0, 68.4, ORIBOS },
+						["maps"] = { ORIBOS },
 					}),
 					q(62897, {	-- Recovered Souls
 						["sourceQuests"] = { 62894 },	-- Flutterback
@@ -257,7 +257,7 @@ _.ExpansionFeatures =
 							59246,	-- Daughter of the Night Warrior (H)
 						},
 						["provider"] = { "n", 164277 },	-- Shandris Feathermoon
-						["coord"] = { 39.2, 67.2, 1670 },	-- Oribos
+						["coord"] = { 39.2, 67.2, ORIBOS },
 					}),
 					q(60508, {	-- On the Trail
 						["sourceQuests"] = { 59181 },	-- Into the Maw

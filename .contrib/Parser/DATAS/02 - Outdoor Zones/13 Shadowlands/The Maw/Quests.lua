@@ -253,7 +253,7 @@ _.Zones =
 				q(62932, {	-- Explore Torghast
 					["sourceQuests"] = { 61099 },	-- The Search for Baine
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 					["maps"] = { 1627 },	-- Torghast
 					["g"] = {
 						i(184758),	-- Drape of Inscrutable Purpose
@@ -643,7 +643,7 @@ _.Zones =
 				q(62838, {	-- Soulful Recovery
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(60134, {	-- A Tauren in Trade

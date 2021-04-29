@@ -588,7 +588,7 @@ _.ExpansionFeatures =
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 39.9, 68.6, 1670 },	-- Oribos
+						["coord"] = { 39.9, 68.6, ORIBOS },
 					}),
 					q(61877, {	-- Return to the Hold
 						["sourceQuests"] = { 61876 },	-- Take Heart

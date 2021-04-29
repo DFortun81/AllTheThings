@@ -75,6 +75,7 @@ REPAIRED_CHAMBER_OF_HEART = 1473;
 
 -- Shadowlands
 SHADOWLANDS = 1550;
+ORIBOS = 1670;
 BASTION = 1533;
 
 -- Helper Tables

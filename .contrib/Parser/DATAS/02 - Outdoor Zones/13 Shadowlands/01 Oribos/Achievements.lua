@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1670, {	-- Oribos
+		m(ORIBOS, {
 			n(ACHIEVEMENTS, {
 				ach(14627, {	-- Choosing Your Purpose
 					["sourceQuests"] = {

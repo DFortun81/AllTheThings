@@ -480,8 +480,8 @@ _.ExpansionFeatures =
 					q(63215, {	-- Report to Draven
 						["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 						["provider"] = { "n", 159478 },	-- Tal-Inara
-						["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
-						["maps"] = { 1670 },	-- Oribos
+						["coord"] = { 39.2, 69.7, ORIBOS },
+						["maps"] = { ORIBOS },
 					}),
 					q(58444, {	-- Return to Sinfall
 						["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
@@ -508,8 +508,8 @@ _.ExpansionFeatures =
 					q(59314, {	-- Sinfall
 						["sourceQuests"] = { 63215 },	-- Report to Draven
 						["provider"] = { "n", 171589 },	-- General Draven
-						["coord"] = { 44.8, 68.9, 1670 },	-- Oribos
-						["maps"] = { 1670 },	-- Oribos
+						["coord"] = { 44.8, 68.9, ORIBOS },
+						["maps"] = { ORIBOS },
 					}),
 					q(63341, {	-- Sinfall Tactician
 						-- TODO: Assumed SQ... double check by skipping to Renown 22
@@ -532,8 +532,8 @@ _.ExpansionFeatures =
 					q(62870, {	-- Souls for Sinfall
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 40.0, 68.3, 1670 },	-- Oribos
-						["maps"] = { 1670 },	-- Oribos
+						["coord"] = { 40.0, 68.3, ORIBOS },
+						["maps"] = { ORIBOS },
 						["g"] = {
 						--	TODO: verify mail reward.  Fearstalker's Ebony Gauntlets is not recorded in API as a reward, but it'd be weird if it wasn't one and all the other armor types got a piece from the quest
 							i(180909),	-- Ebony Death Shroud Gloves

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1670, {	-- Oribos
+		m(ORIBOS, {
 			n(VENDORS, {
 				n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
-					["coord"] = { 61.7, 72.3, 1670 },
+					["coord"] = { 61.7, 72.3, ORIBOS },
 					["g"] = {
 						i(180970, {	-- Teregeer Crystal
 							["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
-					["coord"] = { 47.6, 77.2, 1670 },
+					["coord"] = { 47.6, 77.2, ORIBOS },
 					["g"] = {
 						i(183740, {	-- Gilded Prowler
 							["cost"] = 300000000, -- 30,000g
@@ -50,7 +50,7 @@ _.Zones =
 					},
 				}),
 				n(176368, {	-- Archivist Leonara <Avowed Quartermaster>
-					["coord"] = { 46.1, 77.7, 1670 },
+					["coord"] = { 46.1, 77.7, ORIBOS },
 					["g"] = {
 						i(184221, {	-- Archivist's Quill
 							["cost"] = { { "c", 1816, 1000 } },
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
-					["coord"] = { 47.8, 77.9, 1670 },
+					["coord"] = { 47.8, 77.9, ORIBOS },
 					["g"] = {
 						i(182082, {	-- Lurid Bloodtusk (MOUNT)
 							["cost"] = 300000000, -- 30,000g
@@ -144,7 +144,7 @@ _.Zones =
 					},
 				}),
 				n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
-					["coord"] = { 46.6, 77.2, 1670 },
+					["coord"] = { 46.6, 77.2, ORIBOS },
 					["g"] = {
 						i(183518, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
@@ -193,13 +193,13 @@ _.Zones =
 					},
 				}),
 				n(156690, {	-- Distributor Au'nagl
-					["coord"] = { 47.0, 23.6, 1670 },
+					["coord"] = { 47.0, 23.6, ORIBOS },
 					["g"] = {
 						i(180136),	-- The Brokers Angle'r
 					},
 				}),
 				n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
-					["coord"] = { 47.0, 76.8, 1670 },
+					["coord"] = { 47.0, 76.8, ORIBOS },
 					["g"] = {
 						i(180729, {	-- Duskflutter Ardenmoth (MOUNT)
 							["cost"] = 300000000,	-- 30,000g
@@ -225,7 +225,7 @@ _.Zones =
 						}),
 						i(183134, {	-- Illusion: Hunt's Favor
 							["questID"] = 62965,
-							["cost"] = 12500000,	-- 1,250g							
+							["cost"] = 12500000,	-- 1,250g
 						}),
 						i(183242, {	-- Memory of Eonar
 							["cost"] = 11000000,	-- 1,100g
@@ -251,7 +251,7 @@ _.Zones =
 					},
 				}),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-					["coord"] = { 36.0, 58.6, 1670 },
+					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
                         i(183246, {	-- Memory of Sephuz
 							["cost"] = { { "c", 1792, 1500 } },
@@ -330,16 +330,16 @@ _.Zones =
 						}),
 						i(178668, {	-- Sinful Aspirant's Longspear
 							["cost"] = { { "c", 1792, 1750 } },
-						}),		
+						}),
 						i(178472, {	-- Sinful Aspirant's Polearm
 							["cost"] = { { "c", 1792, 1750 } },
-						}),		
+						}),
 						i(178664, {	-- Sinful Aspirant's Recurve
 							["cost"] = { { "c", 1792, 1750 } },
 						}),
 						i(178475, {	-- Sinful Aspirant's Greataxe
 							["cost"] = { { "c", 1792, 1750 } },
-						}),	
+						}),
 						i(178481, {	-- Sinful Aspirant's Gavel
 							["cost"] = { { "c", 1792, 1325 } },
 						}),
@@ -348,7 +348,7 @@ _.Zones =
 						}),
 						i(178479, {	-- Sinful Aspirant's Warglaive
 							["cost"] = { { "c", 1792, 875 } },
-						}),			
+						}),
 						i(178670, {	-- Sinful Aspirant's Blade
 							["cost"] = { { "c", 1792, 875 } },
 						}),
@@ -375,7 +375,7 @@ _.Zones =
                         }),
 						i(178478, {	-- Sinful Aspirant's Orb
 							["cost"] = { { "c", 1792, 425 } },
-						}),	
+						}),
 						i(175850, {	-- Sinful Aspirant's Plate Helm
 							["cost"] = { { "c", 1792, 875 } },
 						}),
@@ -411,7 +411,7 @@ _.Zones =
 						}),
 						i(175870, {	-- Sinful Aspirant's Leather Breeches
 							["cost"] = { { "c", 1792, 875 } },
-						}),							
+						}),
 						i(175856, {	-- Sinful Aspirant's Plate Warboots
 							["cost"] = { { "c", 1792, 700 } },
 						}),
@@ -495,7 +495,7 @@ _.Zones =
 						}),
 						i(178329, {	-- Sinful Aspirant's Signet
 							["cost"] = { { "c", 1792, 525  } },
-						}),		
+						}),
 						i(178335, {	-- Sinful Aspirant's Pendant
 							["cost"] = { { "c", 1792, 525 } },
 						}),
@@ -510,7 +510,7 @@ _.Zones =
 					},
 				}),
 				n(168011, {	-- Zo'sorg <Master of Conflict>
-					["coord"] = { 35.0, 57.6, 1670 },
+					["coord"] = { 35.0, 57.6, ORIBOS },
 					["g"] = {
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 							-- These are only available to Kyrian covenant members

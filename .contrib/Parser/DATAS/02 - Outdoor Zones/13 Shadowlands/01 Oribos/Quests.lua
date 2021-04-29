@@ -5,43 +5,43 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1670, {	-- Oribos
+		m(ORIBOS, {
 			n(QUESTS, {
 				n(-9, {	-- PvP
 					q(62910, {	-- Against Overwhelming Odds
 						["provider"] = { "n", 168011 },	-- Zo'sorg
 						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, 1670 },
+						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62287, {	-- Observing Arenas
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
-						["coord"] = { 34.3, 55.8, 1670 },
+						["coord"] = { 34.3, 55.8, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62284, {	-- Observing Battle
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, 1670 },
+						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62286, {	-- Observing Skirmishes
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, 1670 },
+						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62288, {	-- Observing Teamwork
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, 1670 },
+						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, 1670 },
+						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					--[[
@@ -49,19 +49,19 @@ _.Zones =
 					q(62289, {	-- Observing Conflict
 						["provider"] = { "n",  },	--
 						["isWeekly"] = true,
-						["coord"] = { , , 1670 },
+						["coord"] = { , , ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),--]]
 				}),
 				q(60151, {	-- A Doorway Through the Veil
 					["sourceQuests"] = { 60150 },	-- Tether to Home
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.0, 65.3, 1670 },
+					["coord"] = { 40.0, 65.3, ORIBOS },
 				}),
 				q(61716, {	-- A Glimpse into Darkness
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
 					["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.3, 68.7, 1670 },
+					["coord"] = { 40.3, 68.7, ORIBOS },
 					["g"] = {
 						i(184165),	-- Seal of Fordragon
 					},
@@ -69,31 +69,31 @@ _.Zones =
 				q(61107, {	-- A Land of Strife
 					["sourceQuests"] = { 61096 },	-- The Arbiter's Will
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
-					["coord"] = {61.1, 36.9, 1670 },
+					["coord"] = {61.1, 36.9, ORIBOS },
 				}),
 				q(61559, {	-- A Mourneblade Born
 					["sourceQuests"] = { 61558 },	-- The Highlord's Vision
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.0, 65.3, 1670 },
+					["coord"] = { 40.0, 65.3, ORIBOS },
 				}),
 				q(57025, {	-- A Plea to Revendreth
 					["sourceQuests"] = { 58724 },	-- The Queen's Request
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coords"] = {
-						{ 49.4, 60.1, 1670 },
-						{ 38.8, 70.2, 1670 },
+						{ 49.4, 60.1, ORIBOS },
+						{ 38.8, 70.2, ORIBOS },
 					},
 				}),
 				q(59974, {	-- A Soul Saved
 					["sourceQuests"] = { 62654 },	-- Maw Walker
 					["provider"] = { "n", 167903 },	-- Baroness Draka
-					["coord"] = { 39.1, 49.9, 1670 },
+					["coord"] = { 39.1, 49.9, ORIBOS },
 				}),
 				q(60256, {	-- A Valuable Find: Halls of Atonement
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 					["g"] = {
 						i(178593),	-- Intricate Fae Groveweave
@@ -106,49 +106,49 @@ _.Zones =
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60251, {	-- A Valuable Find: Plaguefall
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60257, {	-- A Valuable Find: Sanguine Depths
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60252, {	-- A Valuable Find: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60255, {	-- A Valuable Find: The Other Side
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60250, {	-- A Valuable Find: Theater of Pain
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60254, {	-- A Valuable Find: Tirna Scithe
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 43.7, 1670 },
+					["coord"] = { 51.4, 43.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(61557, {	-- An Echo in the Darkness
@@ -161,27 +161,27 @@ _.Zones =
 				q(60149, {	-- Audience with the Arbiter
 					["sourceQuests"] = { 60148 },	-- No Place for the Living
 					["provider"] = { "n", 167486 },	-- Tal-Inara
-					["coord"] = { 40.5, 65.9, 1670 },
+					["coord"] = { 40.5, 65.9, ORIBOS },
 				}),
 				q(57878, {	-- Choosing Your Purpose
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },
+					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
 				q(62966, {	-- Finding a Witness
 					["sourceQuests"] = { 60139 },	-- Torture Chamber: Jaina
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.0, 65.3, 1670 },
+					["coord"] = { 40.0, 65.3, ORIBOS },
 				}),
 				q(57386, {	-- If You Want Peace...
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
-					["coord"] = {61.1, 36.9, 1670 },
+					["coord"] = {61.1, 36.9, ORIBOS },
 				}),
 				q(62938, {	-- Information for a Price
 					["sourceQuests"] = { 62935 },	-- Remnants of Hope
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(60136, {	-- Into Torghast
 					["sourceQuests"] = {
@@ -191,7 +191,7 @@ _.Zones =
 						63033,	-- The Highlord Calls (Venthyr)
 					},
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 					["g"] = {
 						spell(334746),	-- Access to Torghast
 					},
@@ -199,27 +199,27 @@ _.Zones =
 				q(60338, {	-- Journey to Ardenweald
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 69.9, 1670 },
+					["coord"] = { 38.8, 69.9, ORIBOS },
 				}),
 				q(62969, {	-- Lest the Trail Go Cold
 					["sourceQuests"] = { 62966 },	-- Finding a Witness
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(60148, {	-- No Place for the Living
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
-					["coord"] = { 39.7, 66.1, 1670 },
+					["coord"] = { 39.7, 66.1, ORIBOS },
 				}),
 				q(62935, {	-- Remnants of Hope
 					["sourceQuests"] = { 62932 },	-- Explore Torghast
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(61715, {	-- Request of the Highlord
 					["sourceQuests"] = { 59206 },	-- Words of the Primus
 					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
-					["coord"] = { 54.4, 54.2, 1670 },
+					["coord"] = { 54.4, 54.2, ORIBOS },
 				}),
 				q(51355, {	-- Secretest Fish
 					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
@@ -229,45 +229,45 @@ _.Zones =
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
 					["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi
-					["coord"] = { 64.3, 49.7, 1670 },
+					["coord"] = { 64.3, 49.7, ORIBOS },
 				}),
 				q(59897, {	-- Seeking the Baron
 					["sourceQuests"] = { 59874 },	-- The Maw
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(62836, {	-- Signs of the Lion
 					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(60129, {	-- Stranger in an Even Stranger Land
 					["sourceQuests"] = { 59770 },	-- Stand as One
-					["coord"] = { 20.4, 50.3, 1670 },
+					["coord"] = { 20.4, 50.3, ORIBOS },
 				}),
 				q(60150, {	-- Tether to Home
 					["sourceQuests"] = { 60149 },	-- Audience with the Arbiter
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
-					["coord"] = { 39.7, 66.1, 1670 },
+					["coord"] = { 39.7, 66.1, ORIBOS },
 				}),
 				q(61096, {	-- The Arbiter's Will
 					["sourceQuests"] = { 60056 },	-- Follow the Path
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.9, 69.9, 1670 },
+					["coord"] = { 38.9, 69.9, ORIBOS },
 				}),
 				q(61730, {	-- The Captive King
 					["sourceQuests"] = { 62836 },	-- Signs of the Lion
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.2, 68.2, 1670 },
+					["coord"] = { 40.2, 68.2, ORIBOS },
 				}),
 				q(60152, {	-- The Eternal City
 					["sourceQuests"] = { 60151 },	-- A Doorway Through the Veil
 					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher
-					["coord"] = { 39.7, 66.1, 1670 },
+					["coord"] = { 39.7, 66.1, ORIBOS },
 				}),
 				q(62457, {	-- The Great Vault
 					["provider"] = { "n", 173350 },	-- Ba'vol
-					["coord"] = { 64.4, 35.8, 1670 },
+					["coord"] = { 64.4, 35.8, ORIBOS },
 					["g"] = {
 						i(183224),	-- Memory of a Deep Focus Draught
 						i(183269),	-- Memory of the Triune Ward
@@ -279,92 +279,92 @@ _.Zones =
 						{ "n", 171362 },	-- Thrall (this NPC gives the quest but the RP does not properly progress)
 						{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
 					},
-					["coord"] = { 40.0, 68.4, 1670 },
+					["coord"] = { 40.0, 68.4, ORIBOS },
 				}),
 				q(62569, {	-- The Jailer's Grasp
 					["sourceQuests"] = { 61559 },	-- A Mourneblade Born
 					["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
-					["coord"] = { 39.8, 68.0, 1670 },
+					["coord"] = { 39.8, 68.0, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },
+					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
 				q(60156, {	-- The Path to Bastion
 					["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
 					["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
-					["coord"] = { 50.5, 62.0, 1670 },
+					["coord"] = { 50.5, 62.0, ORIBOS },
 				}),
 				q(60139, {	-- Torment Chamber: Jaina
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(60146, {	-- Torment Chamber: Thrall
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				q(60274, {	-- Trading Favors
 					["provider"] = { "n", 156688 },	-- Host Ta'rela
-					["coord"] = { 67.2, 50.6, 1670 },
+					["coord"] = { 67.2, 50.6, ORIBOS },
 				}),
 				q(60244, {	-- Trading Favors: Halls of Atonement
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60242, {	-- Trading Favors: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60248, {	-- Trading Favors: Plaguefall
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60243, {	-- Trading Favors: Sanguine Depths
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60249, {	-- Trading Favors: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60245, {	-- Trading Favors: The Other Side
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60247, {	-- Trading Favors: Theater of Pain
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60246, {	-- Trading Favors: Tirna Scithe
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
-					["coord"] = { 52.4, 55.3, 1670 },
+					["coord"] = { 52.4, 55.3, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(63051, {	-- Trust Issues
@@ -374,7 +374,7 @@ _.Zones =
 				q(60154, {	-- Understanding the Shadowlands
 					["sourceQuests"] = { 60152 },	-- The Eternal City
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.0, 64.8, 1670 },
+					["coord"] = { 40.0, 64.8, ORIBOS },
 				}),
 
 				-- Skip Quests
@@ -390,7 +390,7 @@ _.Zones =
 					-- Only available to 'alts' i.e. another character has completed (??)
 					["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
-					["coord"] = { 19.6, 50.2, 1670 },
+					["coord"] = { 19.6, 50.2, ORIBOS },
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				q(63771, {	-- Fate's Reminder
@@ -405,8 +405,8 @@ _.Zones =
 						{ "n", 164173 },	-- Fatescribe Roh-Tahl
 					},
 					["coords"] = {
-						{ 19.6, 50.2, 1670 },
-						{ 79.0, 49.2, 1670 },
+						{ 19.6, 50.2, ORIBOS },
+						{ 79.0, 49.2, ORIBOS },
 					},
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				}),
@@ -414,7 +414,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62716 },	-- Re-Introductionse
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 				}),
 
 				-- Zone Choice Quests
@@ -422,7 +422,7 @@ _.Zones =
 					["description"] = "Offered prior to completing any Zone Meta-quest.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					-- ["isBreadcrumb"] = true,	-- TODO: probably able to skip picking up any Zone-Select Quests by just flying away...
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
@@ -430,7 +430,7 @@ _.Zones =
 					["description"] = "Offered after completing 1 Zone Meta-quest.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 69.9, 1670 },
+					["coord"] = { 38.8, 69.9, ORIBOS },
 					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
@@ -439,7 +439,7 @@ _.Zones =
 					["description"] = "Offered after completing 2 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 69.9, 1670 },
+					["coord"] = { 38.8, 69.9, ORIBOS },
 					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 63208 },	-- The Next Step
@@ -448,7 +448,7 @@ _.Zones =
 					["description"] = "Offered after completing 3 Zone Meta-quests.",
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 69.9, 1670 },
+					["coord"] = { 38.8, 69.9, ORIBOS },
 					["isBreadcrumb"] = true,
 					-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 					["sourceQuests"] = { 63209 },	-- Furthering the Purpose
@@ -458,28 +458,28 @@ _.Zones =
 				q(62277, {	-- Ardenweald
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62275, {	-- Bastion
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62278, {	-- Maldraxxus
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62279, {	-- Revendreth
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
@@ -492,7 +492,7 @@ _.Zones =
 					["sourceQuests"] = { 62277 },	-- Ardenweald
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 				}),
 				q(63036, {	-- Restoring Balance [Night Fae]
 					["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- SL Skip Character + Night Fae
@@ -500,14 +500,14 @@ _.Zones =
 					["sourceQuests"] = { 62277 },	-- Ardenweald
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 				}),
 				-- Bastion
 				q(62707, {	-- The Elysian Fields [Non-Kyrian]
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Provided to a character which is not aligned with the Kyrian Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
@@ -515,7 +515,7 @@ _.Zones =
 					["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- SL Skip Character + Kyrian
 					["description"] = "Provided to a character which is aligned with the Kyrian Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
@@ -526,13 +526,13 @@ _.Zones =
 					["sourceQuests"] = { 62278 },	-- Maldraxxus
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 				}),
 				q(63035, {	-- A Fresh Blade [Necrolord]
 					["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- SL Skip Character + Necrolord
 					["description"] = "Provided to a character which is aligned with the Necrolord Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62278 },	-- Maldraxxus
 				}),
@@ -541,7 +541,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Provided to a character which is not aligned with the Venthyr Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62279 },	-- Revendreth
 				}),
@@ -549,7 +549,7 @@ _.Zones =
 					["customCollect"] = { "SL_SKIP", "SL_COV_VEN", },	-- SL Skip Character + Venthyr
 					["description"] = "Provided to a character which is aligned with the Venthyr Covenant",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
+					["coord"] = { 38.8, 70.0, ORIBOS },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62279 },	-- Revendreth
 				}),
@@ -700,7 +700,7 @@ _.Zones =
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
+					["coord"] = { 39.2, 69.7, ORIBOS },
 					["lvl"] = { 60 },
 				}),
 				q(61475, {	-- The Heart of the Forest
@@ -711,7 +711,7 @@ _.Zones =
 					},
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["provider"] = { "n", 171795 },	-- Lady Moonberry
-					["coord"] = { 39.7, 61.0, 1670 },	-- Oribos
+					["coord"] = { 39.7, 61.0, ORIBOS },
 					["lvl"] = { 60 },
 				}),
 				-- Bastion
@@ -720,7 +720,7 @@ _.Zones =
 					-- ["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
 					["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- Skip + Kyrian
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
+					["coord"] = { 39.2, 69.7, ORIBOS },
 					["lvl"] = { 60 },
 				}),
 				q(60491, {	-- Among the Kyrian
@@ -730,7 +730,7 @@ _.Zones =
 					 },
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
-					["coord"] = { 36.1, 64.1, 1670 },	-- Oribos
+					["coord"] = { 36.1, 64.1, ORIBOS },
 					["lvl"] = { 60 },
 				}),
 				-- Maldraxxus
@@ -738,7 +738,7 @@ _.Zones =
 					-- ["sourceQuests"] = { },	-- TODO
 					["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- Skip + Necrolord
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
+					["coord"] = { 39.2, 69.7, ORIBOS },
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
 					["lvl"] = { 60 },
 				}),
@@ -748,7 +748,7 @@ _.Zones =
 				--[[ quest was in beta but still has not been seen in game
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn
-					["coord"] = { 33.2, 48.9, 1670 },
+					["coord"] = { 33.2, 48.9, ORIBOS },
 				}),
 				--]]
 			}),

@@ -175,7 +175,7 @@ _.ExpansionFeatures =
 					q(62844, {	-- Return to Draka
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 40.0, 68.4, 1670 },	-- Oribos
+						["coord"] = { 40.0, 68.4, ORIBOS },
 					}),
 					q(62846, {	-- Sanctum Improvements
 						["sourceQuests"] = { 62845 },	-- Bringing It All Together
@@ -208,7 +208,7 @@ _.ExpansionFeatures =
 							63212,	-- Report to Mevix [Skip]
 						},
 						["provider"] = { "n", 171821 },	-- Baroness Draka
-						["coord"] = { 42.9, 74.1, 1670 },	-- Oribos
+						["coord"] = { 42.9, 74.1, ORIBOS },
 					}),
 					q(63032, {	-- The Highlord Calls
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead

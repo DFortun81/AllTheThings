@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1670, {	-- Oribos
+		m(ORIBOS, {
 			n(FLIGHT_PATHS, {
 				fp(2395, {	-- Oribos
-					["coord"] = { 60.7, 68.6, 1670 },
+					["coord"] = { 60.7, 68.6, ORIBOS },
 				}),
 			}),
 		}),

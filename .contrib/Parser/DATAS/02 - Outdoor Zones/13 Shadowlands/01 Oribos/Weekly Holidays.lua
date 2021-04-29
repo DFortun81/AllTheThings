@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1670, {	-- Oribos
+		m(ORIBOS, {
 			n(-176, {	-- Weekly Holidays
 				q(62632, {	-- A Burning Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 						i(184869),	-- Cache of Nathrian Treasures
 					},
@@ -18,13 +18,13 @@ _.Zones =
 				q(62637, {	-- A Call to Battle
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62633, {	-- A Frozen Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 						i(184869),	-- Cache of Nathrian Treasures
 					},
@@ -32,7 +32,7 @@ _.Zones =
 				q(62636, {	-- A Savage Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 						i(184869),	-- Cache of Nathrian Treasures
 					},
@@ -40,7 +40,7 @@ _.Zones =
 				q(62634, {	-- A Shattered Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 						i(184869),	-- Cache of Nathrian Treasures
 					},
@@ -48,7 +48,7 @@ _.Zones =
 				q(62635, {	-- A Shrouded Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 						i(184869),	-- Cache of Nathrian Treasures
 					},
@@ -56,7 +56,7 @@ _.Zones =
 				q(62638, {	-- Emissary of War
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 					--	TODO: ugh symlink raid stuff i GUESS
 						i(184868),	-- Cache of Nathrian Treasures
@@ -65,18 +65,18 @@ _.Zones =
 				q(62640, {	-- The Arena Calls
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62639, {	-- The Very Best
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 				}),
 				q(62631, {	-- The World Awaits
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
-					["coord"] = { 64.9, 32.7, 1670 },
+					["coord"] = { 64.9, 32.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 			}),
