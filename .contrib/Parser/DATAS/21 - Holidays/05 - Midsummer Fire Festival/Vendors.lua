@@ -36,9 +36,7 @@ _.Holidays =
 						}),
 					}),
 					i(34599, {	-- Juggling Torch (Item)
-						["achievementID"] = 272,	-- Torch Juggler
 						["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
-						["criteriaID"] = 1,	-- Torch Juggler Criteria
 						["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
 					}),
 					i(34686, {	-- Brazier of Dancing Flames
@@ -109,8 +107,6 @@ _.Holidays =
 						}),
 					}),
 					i(34599, {	-- Juggling Torch (Item)
-						["achievementID"] = 272,	-- Torch Juggler
-						["criteriaID"] = 1,	-- Torch Juggler Criteria
 						["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
 						["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
 					}),
