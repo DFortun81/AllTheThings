@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 					q(61778, {	-- Aerial Advantage
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167810 },	-- Emeni
-						["coord"] = { 28.5, 37.5, 1536 },	-- Maldraxxus
+						["coord"] = { 28.5, 37.5, MALDRAXXUS },
 					}),
 					q(57114, {	-- Aerial Reconnaissance
 						["sourceQuests"] = { 57113 },	-- Lysonia's Trail
@@ -95,7 +95,7 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
 					}),
 					q(59919, {	-- An Earned Bond
 						["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 168744 },	-- Artemede
-						["coord"] = { 35.1, 26.8, 1536 },	-- Maldraxxus
+						["coord"] = { 35.1, 26.8, MALDRAXXUS },
 					}),
 					q(58788, {	-- Censers of Guidance
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
@@ -157,7 +157,7 @@ _.ExpansionFeatures =
 					q(61777, {	-- Charging The Blade
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.8, 38.1, MALDRAXXUS },
 					}),
 					q(58562, {	-- Collecting Dust
 						["sourceQuests"] = {
@@ -198,7 +198,7 @@ _.ExpansionFeatures =
 					q(61772, {	-- Dark Developments
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "o", 357246 },	-- Tattered Scroll
-						["coord"] = { 33.5, 24.1, 1536 },	-- Maldraxxus
+						["coord"] = { 33.5, 24.1, MALDRAXXUS },
 					}),
 					q(61773, {	-- Descended
 						["sourceQuests"] = {
@@ -207,7 +207,7 @@ _.ExpansionFeatures =
 							61772,	-- Dark Developments
 						},
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.5, 26.4, MALDRAXXUS },
 						["g"] = {
 							i(177056),	-- Selfless Bearer's Waist
 							i(174295),	-- Selfless Collector's Girdle
@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 					q(61769, {	-- Fight and Flight
 						["sourceQuests"] = { 61768 },	-- Stronger Together
 						["provider"] = { "n", 171483 },	-- Baroness Draka
-						["coord"] = { 36.3, 36.6, 1536 },	-- Maldraxxus
+						["coord"] = { 36.3, 36.6, MALDRAXXUS },
 					}),
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
@@ -338,7 +338,7 @@ _.ExpansionFeatures =
 					q(61779, {	-- Grave Intent
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167173 },	-- Baroness Vashj
-						["coord"] = { 28.6, 37.6, 1536 },	-- Maldraxxus
+						["coord"] = { 28.6, 37.6, MALDRAXXUS },
 					}),
 					q(61135, {	-- Heart of the Crest
 						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
@@ -384,7 +384,7 @@ _.ExpansionFeatures =
 					q(61771, {	-- Justice from Above
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.5, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.5, 26.4, MALDRAXXUS },
 					}),
 					q(57123, {	-- Kyrian No More
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
@@ -538,12 +538,12 @@ _.ExpansionFeatures =
 							61779,	-- Grave Intent
 						},
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.7, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.7, 38.1, MALDRAXXUS },
 					}),
 					q(61782, {	-- Pursuit of Justice
 						["sourceQuests"] = { 61781 },	-- The End is Now
 						["provider"] = { "n", 172002 },	-- Xandria
-						["coord"] = { 31.7, 30.3, 1536 },	-- Maldraxxus
+						["coord"] = { 31.7, 30.3, MALDRAXXUS },
 						["g"] = {
 							i(177055),	-- Selfless Bearer's Shoulders
 							i(174294),	-- Selfless Collector's Spaulders
@@ -593,7 +593,7 @@ _.ExpansionFeatures =
 					q(61877, {	-- Return to the Hold
 						["sourceQuests"] = { 61876 },	-- Take Heart
 						["provider"] = { "n", 173193 },	-- Xandria
-						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+						["coord"] = { 31.0, 29.1, MALDRAXXUS },
 					}),
 					q(57967, {	-- Rightful Resting Place
 						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
@@ -661,7 +661,7 @@ _.ExpansionFeatures =
 					q(61768, {	-- Stronger Together
 						["sourceQuests"] = { 61767 },	-- A Perilous Journey
 						["provider"] = { "n", 173222 },	-- Xandria
-						["coord"] = { 37.7, 29.4, 1536 },	-- Maldraxxus
+						["coord"] = { 37.7, 29.4, MALDRAXXUS },
 					}),
 					q(57116, {	-- Succumbing to Pride
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
@@ -671,7 +671,7 @@ _.ExpansionFeatures =
 					q(61876, {	-- Take Heart
 						["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 						["provider"] = { "n", 173193 },	-- Xandria
-						["coord"] = { 31.0, 29.1, 1536 },	-- Maldraxxus
+						["coord"] = { 31.0, 29.1, MALDRAXXUS },
 					}),
 					q(58939, {	-- The Blue Seed
 						["sourceQuests"] = {
@@ -684,12 +684,12 @@ _.ExpansionFeatures =
 					q(61770, {	-- The Butchers of Bastion
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, 1536 },	-- Maldraxxus
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
 					}),
 					q(61781, {	-- The End is Now
 						["sourceQuests"] = { 61780 },	-- Power of the Chosen
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.1, 1536 },	-- Maldraxxus
+						["coord"] = { 28.8, 38.1, MALDRAXXUS },
 					}),
 					q(58175, {	-- The Eternal Forge
 						-- Requires Kyrian, Renown 8
@@ -789,7 +789,7 @@ _.ExpansionFeatures =
 							61773,	-- Descended
 						},
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.4, 26.4, 1536 },	-- Maldraxxus
+						["coord"] = { 35.4, 26.4, MALDRAXXUS },
 					}),
 					q(58792, {	-- Where a Soul Belongs
 						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand

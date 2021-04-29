@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1536, {	-- Maldraxxus
+		m(MALDRAXXUS, {
 			n(-34,  {	-- World Quests
 				i(183111, {	-- Animated Ulna
 					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
@@ -84,7 +84,7 @@ _.Zones =
 							["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
 							["questID"] = 58629,
 							["isDaily"] = true,
-							["coord"] = { 50.6, 63.2, 1536 },
+							["coord"] = { 50.6, 63.2, MALDRAXXUS },
 							["g"] = {
 								crit(9, {	-- Nirvaska the Summoner
 									["achievementID"] = 14308,	-- Adventurer of Maldraxxus

@@ -708,7 +708,7 @@ _.ExpansionFeatures =
 								q(61403, {	-- Ember Court: Maldraxxus Army
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 172964 },	-- Emeni
-									["coord"] = { 54.2, 69.3, 1536 },	-- Maldraxxus
+									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
 										i(176140, {	-- Contract: Maldraxxian Army
 											crit(12, {	-- Maldraxxian Army
@@ -732,7 +732,7 @@ _.ExpansionFeatures =
 								q(61406, {	-- Ember Court: Mushroom Surprise
 									["description"] = "Available after purchasing Staff: Waiters.",
 									["provider"] = { "n", 168429 },	-- Melody Madcap
-									["coord"] = { 40.2, 41.2, 1536 },	-- Maldraxxus
+									["coord"] = { 40.2, 41.2, MALDRAXXUS },
 									["g"] = {
 										i(176136, {	-- Contract: Mushroom Surprise!
 											crit(6, {	-- Mushroom Surprise
@@ -875,7 +875,7 @@ _.ExpansionFeatures =
 								q(63696, {	-- Grandmaster Vole's Best Friend
 									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
-									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 								}),
 								q(61880, {	-- Honored Attendance
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
@@ -1043,7 +1043,7 @@ _.ExpansionFeatures =
 									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.8, 49.2, 1536 },	-- Maldraxxus
+									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 									["g"] = {
 										i(176122),	-- RSVP: Grandmaster Vole
 									},
@@ -1062,7 +1062,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
 									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 60.4, 71.6, 1536 },
+									["coord"] = { 60.4, 71.6, MALDRAXXUS },
 									["g"] = {
 										i(176124),	-- RSVP: Plague Deviser Marileth
 									},
@@ -1350,7 +1350,7 @@ _.ExpansionFeatures =
 							n(-963, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
-									["coord"] = { 50.4, 67.4, 1536 },	-- Maldraxxus
+									["coord"] = { 50.4, 67.4, MALDRAXXUS },
 								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
@@ -1367,7 +1367,7 @@ _.ExpansionFeatures =
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
-									["coord"] = { 50.3, 67.4, 1536 },	-- Maldraxxus
+									["coord"] = { 50.3, 67.4, MALDRAXXUS },
 									["g"] = {
 										i(176115),	-- RSVP: Alexandros Mograine
 									},
@@ -1470,7 +1470,7 @@ _.ExpansionFeatures =
 								q(61174, {	-- RSVP: Baroness Vashj
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
-									["coord"] = { 67.6, 45.9, 1536 },	-- Maldraxxus
+									["coord"] = { 67.6, 45.9, MALDRAXXUS },
 									["g"] = {
 										i(176097),	-- RSVP: Baroness Vashj
 									},

@@ -602,7 +602,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering Maldraxxus after choosing a different Zone",
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
-					["coord"] = { 52.8, 68.2, 1536 },
+					["coord"] = { 52.8, 68.2, MALDRAXXUS },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
 						62738,	-- A Fresh Blade [Non-Necrolord]
@@ -669,7 +669,7 @@ _.Zones =
 				q(62761, {	-- Return to Oribos
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
-					["coord"] = { 52.8, 68.2, 1536 },
+					["coord"] = { 52.8, 68.2, MALDRAXXUS },
 					["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
 					["lvl"] = { 48, 60 },
 				}),

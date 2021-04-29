@@ -562,7 +562,7 @@ _.ExpansionFeatures =
 									-- Rewards spell 337133 "Trial: Echthra"
 									["sourceQuests"] = { 61490 },	-- War of Information
 									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+									["coord"] = { 56.7, 11.6, MALDRAXXUS },
 								}),
 								q(60493, {	-- Humble Gatherer
 									["sourceQuests"] = { 60489 },	-- The Path of Ascension
@@ -632,7 +632,7 @@ _.ExpansionFeatures =
 								q(61490, {	-- War of Information
 									["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
 									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+									["coord"] = { 56.7, 11.6, MALDRAXXUS },
 								}),
 								q(60494, {	-- Your Friend, Dactylis
 									["sourceQuests"] = { 60493 },	-- Humble Gatherer
@@ -719,7 +719,7 @@ _.ExpansionFeatures =
 								q(61364, {	-- Oozing with Oppotunity
 									["sourceQuests"] = { 61436 },	-- Field Trip
 									["provider"] = { "n", 172141 },	-- Mad Mortimer
-									["coord"] = { 59.2, 71.9, 1536 },    -- Maldraxxus
+									["coord"] = { 59.2, 71.9, MALDRAXXUS },
 								}),
 								q(61367, {	-- Thran'tiok
 									-- TODO: not 100% sure of the requirements
@@ -735,12 +735,12 @@ _.ExpansionFeatures =
 								q(62053, {	-- Necromantic Power
 									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
 									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 53.8, 48.8, 1536 },    -- Maldraxxus
+									["coord"] = { 53.8, 48.8, MALDRAXXUS },
 								}),
 								q(61368, {	-- Filching Phylacteries
 									["sourceQuests"] = { 62053 },	-- Necromantic Power
 									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 59.7, 38.0, 1536 },    -- Maldraxxus
+									["coord"] = { 59.7, 38.0, MALDRAXXUS },
 								}),
 								n(-908, {	-- Rewards
 									i(180761, {	-- Phalynx of Loyalty

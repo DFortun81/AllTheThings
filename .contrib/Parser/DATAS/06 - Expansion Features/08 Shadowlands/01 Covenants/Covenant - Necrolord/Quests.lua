@@ -48,7 +48,7 @@ _.ExpansionFeatures =
 					q(61252, {	-- Call In a Favor
 						["sourceQuests"] = { 61230 },	-- Outside Influence
 						["provider"] = { "n", 173343 },	-- Ascended Bearer
-						["coord"] = { 54.2, 16.2, 1536 },	-- Maldraxxus
+						["coord"] = { 54.2, 16.2, MALDRAXXUS },
 					}),
 					q(59596, {	-- Collective Soul
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
@@ -86,7 +86,7 @@ _.ExpansionFeatures =
 							57649,	-- Whisper of Hope
 						},
 						["provider"] = { "n", 158529 },	-- Whisperer Vyn
-						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+						["coord"] = { 49.9, 17.8, MALDRAXXUS },
 					}),
 					q(58007, {	-- Eyes on the Problem
 						["sourceQuests"] = { 59555 },	-- Enemy at the Door
@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 57648, },	-- The Impossible Plan
 						["description"] = "Requires Renown 8.",
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1536 },
+						["coord"] = { 49.7, 50.6, MALDRAXXUS },
 					}),
 					q(62834, {	-- Glorious Ambition
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 					q(57644, {	-- No Friend Left Behind
 						["sourceQuests"] = { 61226 },	-- Extra Limbs
 						["provider"] = { "n", 158604 },	-- Navigator Xennir
-						["coord"] = { 52.0, 16.9, 1536 },	-- Maldraxxus
+						["coord"] = { 52.0, 16.9, MALDRAXXUS },
 					}),
 					q(59609, {	-- No Rest For the Dead
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 							57649,	-- Whisper of Hope
 						},
 						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
-						["coord"] = { 50.0, 17.9, 1536 },
+						["coord"] = { 50.0, 17.9, MALDRAXXUS },
 					}),
 					q(61359, {	-- Power of the Primus
 						["sourceQuests"] = { 59556 },	-- Welcome To Our House
@@ -153,12 +153,12 @@ _.ExpansionFeatures =
 					q(59265, {	-- Prying Eyes
 						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
-						["coord"] = { 50.8, 24.4, 1536 },	-- Maldraxxus
+						["coord"] = { 50.8, 24.4, MALDRAXXUS },
 					}),
 					q(61335, {	-- Rage Against the Cage
 						["sourceQuests"] = { 61227 },	-- The Other Foot
 						["provider"] = { "n", 159814 },	-- Ansid the Mechanic
-						["coord"] = { 48.6, 18.5, 1536 },	-- Maldraxxus
+						["coord"] = { 48.6, 18.5, MALDRAXXUS },
 					}),
 					q(61983, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 							61252,	-- Call In a Favor
 						},
 						["provider"] = { "n", 158529 },	-- Whisperer Vyn
-						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+						["coord"] = { 49.9, 17.8, MALDRAXXUS },
 						["g"] = {
 							i(182265),	-- Bladesworn Wraith's Belt
 							i(182274),	-- Bladesworn Conjurer's Cinch
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 					q(57648, {	-- The Impossible Plan
 						["sourceQuests"] = { 61323 },	-- See What You've Done
 						["provider"] = { "n", 160518 },	-- Whisperer Vyn
-						["coord"] = { 50.7, 15.5, 1536 },	-- Maldraxxus
+						["coord"] = { 50.7, 15.5, MALDRAXXUS },
 					}),
 					q(61227, {	-- The Other Foot
 						["sourceQuests"] = {
@@ -226,7 +226,7 @@ _.ExpansionFeatures =
 							57649,	-- Whisper of Hope
 						},
 						["provider"] = { "n", 164646 },	-- Baroness Vashj
-						["coord"] = { 49.9, 17.8, 1536 },	-- Maldraxxus
+						["coord"] = { 49.9, 17.8, MALDRAXXUS },
 					}),
 					q(62843, {	-- The Soul Contact
 						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
@@ -241,7 +241,7 @@ _.ExpansionFeatures =
 					q(57649, {	-- Whisper of Hope
 						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
-						["coord"] = { 50.8, 24.4, 1536 },	-- Maldraxxus
+						["coord"] = { 50.8, 24.4, MALDRAXXUS },
 					}),
 
 
@@ -275,32 +275,32 @@ _.ExpansionFeatures =
 					q(57778, {	-- The Maldraxxian Job
 						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1536 },
+						["coord"] = { 49.7, 50.6, MALDRAXXUS },
 					}),
 					q(61485, {	-- I'll Only Say This Once
 						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
 						["provider"] = { "n", 160518 },	-- Whisperer Vyn
-						["coord"] = { 50.7, 15.6, 1536 },
+						["coord"] = { 50.7, 15.6, MALDRAXXUS },
 					}),
 					q(61518, {	-- Follow Me
 						["sourceQuests"] = { 61485 },	-- I'll Only Say This Once
 						["provider"] = { "n", 172574 },	-- Navigator Xennir
-						["coord"] = { 31.2, 49.4, 1536 },
+						["coord"] = { 31.2, 49.4, MALDRAXXUS },
 					}),
 					q(60112, {	-- Cut to the Bone
 						["sourceQuests"] = { 61518 },	-- Follow Me
 						["provider"] = { "n", 172574 },	-- Navigator Xennir
-						["coord"] = { 31.8, 40.2, 1536 },
+						["coord"] = { 31.8, 40.2, MALDRAXXUS },
 					}),
 					q(61548, {	-- Set Me Free
 						["sourceQuests"] = { 60112 },	-- Cut to the Bone
 						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 27.2, 45.2, 1536 },
+						["coord"] = { 27.2, 45.2, MALDRAXXUS },
 					}),
 					q(61551, {	-- Crush 'Em All
 						["sourceQuests"] = { 61548 },	-- Set Me Free
 						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 28.5, 47.7, 1536 },
+						["coord"] = { 28.5, 47.7, MALDRAXXUS },
 						["g"] = {
 							i(182268),	-- Bladesworn Conjurer's Cowl
 							i(182250),	-- Bladesworn Harbinger's Greathelm
@@ -311,12 +311,12 @@ _.ExpansionFeatures =
 					q(61569, {	-- Keys to the Ruin
 						["sourceQuests"] = { 61551 },	-- Crush 'Em All
 						["provider"] = { "n", 172805 },	-- Whisperer Vyn
-						["coord"] = { 30.2, 43.6, 1536 },
+						["coord"] = { 30.2, 43.6, MALDRAXXUS },
 					}),
 					q(61594, {	-- This Way Out
 						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
 						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 29.6, 44.0, 1536 },
+						["coord"] = { 29.6, 44.0, MALDRAXXUS },
 					}),
 					q(59722, {	-- Grand Theft Necropolis
 						["sourceQuests"] = { 61594 },	-- This Way Out
@@ -431,7 +431,7 @@ _.ExpansionFeatures =
 					q(61586, {	-- Machinations of War
 						["sourceQuests"] = { 59894 },	-- The Golden Dawn
 						["provider"] = { "n", 166535 },	-- Baroness Draka
-						["coord"] = { 50.4, 70.6, 1536 },	-- Maldraxxus
+						["coord"] = { 50.4, 70.6, MALDRAXXUS },
 					}),
 
 					-- Chapter 6 (A Golden Dawn), requires Renown 14
@@ -448,17 +448,17 @@ _.ExpansionFeatures =
 					q(60043, {	-- Justice from Above
 						["sourceQuests"] = { 59910 },	-- Fight and Flight
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.6, 26.5, 1536 },
+						["coord"] = { 35.6, 26.5, MALDRAXXUS },
 					}),
 					q(59916, {	-- The Butchers of Bastion
 						["sourceQuests"] = { 59910 },	-- Fight and Flight
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 26.0, 1536 },
+						["coord"] = { 35.3, 26.0, MALDRAXXUS },
 					}),
 					q(61396, {	-- Dark Developments
 						["sourceQuests"] = { 59910 },	-- Fight and Flight
 						["provider"] = { "o", 357246 },	-- Tattered Scroll
-						["coord"] = { 33.5, 24.1, 1536 },
+						["coord"] = { 33.5, 24.1, MALDRAXXUS },
 					}),
 					q(61180, {	-- Burn Before Reading
 						["sourceQuests"] = {
@@ -467,7 +467,7 @@ _.ExpansionFeatures =
 							59916,	-- The Butchers of Bastion
 						},
 						["provider"] = { "n", 168744 },	-- Artemede
-						["coord"] = { 35.2, 26.9, 1536 },
+						["coord"] = { 35.2, 26.9, MALDRAXXUS },
 					}),
 					q(60510, {	-- Descended
 						["sourceQuests"] = {
@@ -476,7 +476,7 @@ _.ExpansionFeatures =
 							59916,	-- The Butchers of Bastion
 						},
 						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.6, 26.5, 1536 },
+						["coord"] = { 35.6, 26.5, MALDRAXXUS },
 						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
 					}),
 					q(61412, {	-- An Early End
@@ -486,7 +486,7 @@ _.ExpansionFeatures =
 							59916,	-- The Butchers of Bastion
 						},
 						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, 1536 },
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
 					}),
 					q(60050, {	-- Trouble on the Western Front
 						["sourceQuests"] = {
@@ -495,22 +495,22 @@ _.ExpansionFeatures =
 							60510,	-- Descended
 						},
 						["provider"] = { "n", 168860 },	-- Kynthia
-						["coord"] = { 35.4, 26.5, 1536 },
+						["coord"] = { 35.4, 26.5, MALDRAXXUS },
 					}),
 					q(60044, {	-- Charging The Blade
 						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, 1536 },
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
 					}),
 					q(61567, {	-- Grave Intent
 						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167173 },	-- Baroness Vashj
-						["coord"] = { 28.7, 37.6, 1536 },
+						["coord"] = { 28.7, 37.6, MALDRAXXUS },
 					}),
 					q(60114, {	-- Aerial Advantage
 						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
 						["provider"] = { "n", 167810 },	-- Emeni
-						["coord"] = { 28.1, 37.5, 1536 },
+						["coord"] = { 28.1, 37.5, MALDRAXXUS },
 					}),
 					q(61246, {	-- Power of the Chosen
 						["sourceQuests"] = {
@@ -519,38 +519,38 @@ _.ExpansionFeatures =
 							61567,	-- Grave Intent
 						},
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, 1536 },
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
 						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
 					}),
 					q(60098, {	-- The End is Now
 						["sourceQuests"] = { 61246 },	-- Power of the Chosen
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, 1536 },
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
 					}),
 					q(60067, {	-- Pursuit of Justice
 						["sourceQuests"] = { 60098 },	-- The End is Now
 						["provider"] = { "n", 172002 },	-- Xandria
-						["coord"] = { 31.8, 30.3, 1536 },
+						["coord"] = { 31.8, 30.3, MALDRAXXUS },
 					}),
 					q(57470, {	-- An Abominable Discovery
 						["sourceQuests"] = { 60067 },	-- Pursuit of Justice
 						["provider"] = { "n", 173308 },	-- Baroness Draka
-						["coord"] = { 31.0, 29.4, 1536 },
+						["coord"] = { 31.0, 29.4, MALDRAXXUS },
 					}),
 					q(57530, {	-- Gharmal's Tower
 						["sourceQuests"] = { 57470 },	-- An Abominable Discovery
 						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.5, 23.9, 1536 },
+						["coord"] = { 27.5, 23.9, MALDRAXXUS },
 					}),
 					q(57473, {	-- Prized Possession
 						["sourceQuests"] = { 57530 },	-- Gharmal's Tower
 						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.3, 23.8, 1536 },
+						["coord"] = { 27.3, 23.8, MALDRAXXUS },
 					}),
 					q(57475, {	-- The Mantle Returned
 						["sourceQuests"] = { 57473 },	-- Prized Possession
 						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.3, 23.8, 1536 },
+						["coord"] = { 27.3, 23.8, MALDRAXXUS },
 					}),
 					q(57636, {	-- Pride of Place
 						["sourceQuests"] = { 57475 },	-- The Mantle Returned
@@ -623,17 +623,17 @@ _.ExpansionFeatures =
 					q(61740, {	-- Playing Favorites
 						["sourceQuests"] = { 61739 },	-- The Wayward Baron
 						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
 					}),
 					q(61741, {	-- Pilfered Power
 						["sourceQuests"] = { 61739 },	-- The Wayward Baron
 						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
 					}),
 					q(62414, {	-- Burying Suspicion
 						["sourceQuests"] = { 61739 },	-- The Wayward Baron
 						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, 1536 },	-- Maldraxxus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
 					}),
 					q(61742, {	-- A Fitting Guise
 						["sourceQuests"] = {
@@ -647,12 +647,12 @@ _.ExpansionFeatures =
 					q(61743, {	-- The Pupil Returns
 						["sourceQuests"] = { 61742 },	-- A Fitting Guise
 						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
 					}),
 					q(62297, {	-- A Fatal Failure
 						["sourceQuests"] = { 61742 },	-- A Fitting Guise
 						["provider"] = { "n", 174020 },	--
-						["coord"] = { 70.4, 27.7, 1536 },	-- Maldraxxus
+						["coord"] = { 70.4, 27.7, MALDRAXXUS },
 						["g"] = {
 							i(183394, {	-- Discarded Grimoire
 								["questID"] = 62266,
@@ -677,12 +677,12 @@ _.ExpansionFeatures =
 					q(61746, {	-- Cantrip Collections
 						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
 						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
 					}),
 					q(61747, {	-- Errant Enchantments
 						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
 						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
 					}),
 					q(61748, {	-- The Hall of Tomes
 						["sourceQuests"] = {
@@ -690,7 +690,7 @@ _.ExpansionFeatures =
 							61747,	-- Errant Enchantments
 						},
 						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, 1536 },	-- Maldraxxus
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
 					}),
 					q(61749, {	-- Necessary Ingredients
 						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
@@ -715,17 +715,17 @@ _.ExpansionFeatures =
 					q(61750, {	-- Heart of the Forest
 						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
 						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
 					}),
 					q(61751, {	-- Cage Free Spores
 						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
 						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
 					}),
 					q(62320, {	-- Regalia de Rigeuer
 						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
 						["provider"] = { "n", 174120 },	-- Moret the Vogue
-						["coord"] = { 71.7, 32.9, 1536 },	-- Maldraxxus
+						["coord"] = { 71.7, 32.9, MALDRAXXUS },
 						["g"] = {
 							i(183401, {	-- Amethystine Dye
 								["questID"] = 62319,
@@ -743,7 +743,7 @@ _.ExpansionFeatures =
 							61751,	-- Cage Free Spores
 						},
 						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, 1536 },	-- Maldraxxus
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
 						["g"] = {
 							i(182270),	-- Bladesworn Conjurer's Slippers
 							i(182252),	-- Bladesworn Harbinger's Stompers
@@ -754,7 +754,7 @@ _.ExpansionFeatures =
 					q(61753, {	-- Explosive Schemes
 						["sourceQuests"] = { 61752 },	-- The Final Reagent
 						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
 					}),
 					q(61754, {	-- No Crate Unturned
 						["sourceQuests"] = { 61753 },	-- Explosive Schemes
@@ -773,7 +773,7 @@ _.ExpansionFeatures =
 							61755,	-- Blinding the Brokers
 						},
 						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, 1536 },	-- Maldraxxus
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
 					}),
 					q(62308, {	-- Mantle of Mastery
 						["sourceQuests"] = {
@@ -781,7 +781,7 @@ _.ExpansionFeatures =
 							61755,	-- Blinding the Brokers TODO: (confirm?)
 						},
 						["provider"] = { "n", 172813 },	-- Ton'hamil
-						["coord"] = { 67.9, 30.6, 1536 },	-- Maldraxxus
+						["coord"] = { 67.9, 30.6, MALDRAXXUS },
 						["g"] = {
 							i(183399, {	-- Ritualist's Mantle
 								["questID"] = 62311,
@@ -822,7 +822,7 @@ _.ExpansionFeatures =
 					q(61761, {	-- The Better Part of Valor
 						["sourceQuests"] = { 61760 },	-- The Traitor Unmasked
 						["provider"] = { "n", 173831 },	-- Balmedar
-						["coord"] = { 69.9, 27.0, 1536 },	-- Maldraxxus
+						["coord"] = { 69.9, 27.0, MALDRAXXUS },
 						["g"] = {
 							i(183847),	-- Acolyte's Guise
 						},
@@ -843,7 +843,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58833 },	-- Calling in All Favors
 						["maps"] = { 1689 },	-- Exoramas (Necrolord Renown 24 Scenario)
 						["provider"] = { "n", 174179 },	-- Baroness Draka
-						["coord"] = { 62.2, 41.0, 1536 },
+						["coord"] = { 62.2, 41.0, MALDRAXXUS },
 						["g"] = {
 							i(181822),	-- Armored War-Bred Tauralus (MOUNT!)
 						},

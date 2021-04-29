@@ -599,7 +599,7 @@ _.Zones =
 				-- }),
 				-- q(60130, {	-- Souls of the Damned (Maldraxxus)
 					-- ["provider"] = { "n", 167748 },	-- Osbourne Black
-					-- --["coord"] = { 33.9, 43.5, 1536 },
+					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
 					-- ["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 				-- }),
 				-- q(60234, {	-- Souls of the Damned (Revendreth)
@@ -614,7 +614,7 @@ _.Zones =
 				-- }),
 				-- q(61513, {	-- Soul Salvation (Maldraxxus)
 					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, 1536 },
+					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
 					-- ["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
 				-- }),
 				-- q(61515, {	-- Soul Salvation (Revendreth)
@@ -627,7 +627,7 @@ _.Zones =
 					-- ["coords"] = {
 						-- { 33.8, 42.5, 1565 },	-- Ardenweald
 						-- --{ 33.8, 42.5, BASTION },
-						-- --{ 33.8, 42.5, 1536 },	-- Maldraxxus
+						-- --{ 33.8, 42.5, MALDRAXXUS },
 						-- --{ 33.8, 42.5, 1525 },	-- Revendreth
 					-- },
 					-- ["sourceQuests"] = {

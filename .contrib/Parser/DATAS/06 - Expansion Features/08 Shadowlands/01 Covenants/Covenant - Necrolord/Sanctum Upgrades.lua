@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory
 						n(167042, {	-- Abominable Stitching Table
-							["coord"] = { 55.0, 68.8, 1536 },
+							["coord"] = { 55.0, 68.8, MALDRAXXUS },
 							["g"] = {
 								i(182078, {	-- Bonesewn Fleshroc (MOUNT!)
 									["cost"] = {
@@ -97,21 +97,21 @@ _.ExpansionFeatures =
 								q(61510, {	-- A Bountiful Haul
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },    -- Chordy
-									["coord"] = { 55.1, 68.6, 1536 },	-- Maldraxxus
+									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62213, {    -- A Brokered Deal
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 									["provider"] = { "n", 159238 },    -- Atticus
-									["coord"] = { 55.3, 68.3, 1536 },
+									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(59042, {	-- A Good Heart
 									["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
 									["provider"] = { "n", 162222 },	-- Rathan
-									["coord"] = { 24.2, 38.6, 1536 },	-- Maldraxxus
+									["coord"] = { 24.2, 38.6, MALDRAXXUS },
 								}),
 								q(59747, {    -- A Lost Soul
 									["provider"] = { "n", 166096 },    -- Miru Soulblossom
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 24.9, 31.7, 1536 },	-- Maldraxxus
+									["coord"] = { 24.9, 31.7, MALDRAXXUS },
 								}),
 								q(63058, {	-- Abominable Stitching and Me
 									-- TODO: is this a breadcrumb to 60041?
@@ -130,26 +130,26 @@ _.ExpansionFeatures =
 								q(62232, {	-- Arboreal Tactics
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
-									["coord"] = { 54.2, 68.6, 1536 },
+									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62256, {    -- Asset Extraction
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 									["provider"] = { "n", 159238 },    -- Atticus
-									["coord"] = { 55.3, 68.3, 1536 },
+									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60049, {	-- At Your Service
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
 									["provider"] = { "n", 167044 },	-- Emeni
-									["coord"] = { 55.1, 68.7, 1536 },	-- Maldraxxus
+									["coord"] = { 55.1, 68.7, MALDRAXXUS },
 								}),
 								q(58671, {	-- Bottled Up Inside
 									["sourceQuests"] = { 59042 },	-- A Good Heart
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 23.8, 39.1, 1536 },	-- Maldraxxus
+									["coord"] = { 23.8, 39.1, MALDRAXXUS },
 								}),
 								q(60041, {	-- Build-A-Bomination
 									["sourceQuests"] = {
@@ -157,69 +157,69 @@ _.ExpansionFeatures =
 										63058,	-- Abominable Stitching and Me
 									},
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 								}),
 								q(60195, {	-- Build One More
 									["sourceQuests"] = { 60042 },	-- May I Take Your Order?
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 								}),
 								q(60291, {    -- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
-									["coord"] = { 54.3, 68.1, 1536 },
+									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61522, {	-- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
-									["coord"] = { 54.3, 68.1, 1536 },
+									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61523, {	-- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
-									["coord"] = { 54.3, 68.1, 1536 },
+									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60765, {    -- Cure For All Ills
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
-									["coord"] = { 55.1, 68.1, 1536 },
+									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62217, {	-- Field Training
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
-									["coord"] = { 54.2, 68.6, 1536 },
+									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58668, {	-- Find The Way
 									["sourceQuests"] = { 58665 },	-- Rebellious Souls
 									["provider"] = { "n", 162153 },	-- Rathan
-									["coord"] = { 26.0, 42.6, 1536 },	-- Maldraxxus
+									["coord"] = { 26.0, 42.6, MALDRAXXUS },
 								}),
 								q(62041, {	-- In A Bad Light
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
-									["coord"] = { 55.1, 68.1, 1536 },
+									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58680, {	-- Loose Threads
 									["sourceQuests"] = { 58668 },	-- Find The Way
 									["provider"] = { "n", 162227 },	-- Rathan
-									["coord"] = { 24.2, 38.8, 1536 },	-- Maldraxxus
+									["coord"] = { 24.2, 38.8, MALDRAXXUS },
 								}),
 								q(60042, {	-- May I Take Your Order?
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 								}),
 								q(58665, {	-- Rebellious Souls
 									["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -229,19 +229,19 @@ _.ExpansionFeatures =
 								q(61509, {	-- Shinies of Bastion
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },	-- Chordy
-									["coord"] = { 55.1, 68.6, 1536 },
+									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58677, {	-- Skin in the Game
 									["sourceQuests"] = { 58668 },	-- Find The Way
 									["provider"] = { "n", 161285 },	-- Emeni
-									["coord"] = { 24.1, 38.7, 1536 },	-- Maldraxxus
+									["coord"] = { 24.1, 38.7, MALDRAXXUS },
 								}),
 								q(58432, {	-- Something Old, Something Used
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },	-- Chordy
-									["coord"] = { 55.1, 68.6, 1536 },
+									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -253,31 +253,31 @@ _.ExpansionFeatures =
 								q(60048, {	-- Stitching Time
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },	-- Maldraxxus
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 								}),
 								q(59126, {	-- Supply Chain
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 									["provider"] = { "n", 159238 },    -- Atticus
-									["coord"] = { 55.3, 68.3, 1536 },
+									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58670, {	-- The Slaughter Daughter
 									["sourceQuests"] = { 59042 },	-- A Good Heart
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 23.8, 39.1, 1536 },	-- Maldraxxus
+									["coord"] = { 23.8, 39.1, MALDRAXXUS },
 								}),
 								q(61511, {	-- Things They Leave Behind
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },	-- Chordy
-									["coord"] = { 55.1, 68.6, 1536 },
+									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62216, {	-- Training Program
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
-									["coord"] = { 54.2, 68.6, 1536 },
+									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 										58677,	-- Skin in the Game
 									},
 									["provider"] = { "n", 162227 },	-- Rathan
-									["coord"] = { 24.2, 38.8, 1536 },	-- Maldraxxus
+									["coord"] = { 24.2, 38.8, MALDRAXXUS },
 								}),
 							}),
 							n(-908, {	-- Rewards
@@ -343,7 +343,7 @@ _.ExpansionFeatures =
 								q(62244, {	-- Digging Around
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
-									["coord"] = { 54.9, 67.8, 1536 },
+									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -351,63 +351,63 @@ _.ExpansionFeatures =
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
 									["provider"] = { "n", 162151 },    -- Neena
 									["cost"] = { { "i", 184354, 1 } },	-- 1 Soul Harvester Key (for opening Neena's Cage)
-									["coord"] = { 69.3, 40.6, 1536 },
+									["coord"] = { 69.3, 40.6, MALDRAXXUS },
 								}),
 								q(62194, {	-- Fighting Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
-									["coord"] = { 54.8, 68.8, 1536 },
+									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60230, {	-- More the Merrier
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 								}),
 								q(60237, {	-- Old Stomping Grounds
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
-									["coord"] = { 54.9, 67.8, 1536 },
+									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
-									["coord"] = { 55.4, 68.2, 1536 },
+									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61996, {	-- Say The Magic Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
-									["coord"] = { 54.8, 68.8, 1536 },
+									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58515, {	-- Scrounging for Scrolls
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
-									["coord"] = { 55.4, 68.2, 1536 },
+									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60283, {	-- Specter Of War: Visectus
 									["provider"] = { "n", 161668 },	-- Summoner Gerard
-									["coord"] = { 53.5, 69.3, 1536 },
+									["coord"] = { 53.5, 69.3, MALDRAXXUS },
 									["repeatable"] = true,
 								}),
 								q(62195, {	-- The Last Word
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
-									["coord"] = { 54.8, 68.8, 1536 },
+									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58525, {	-- The Two Sides of History
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
-									["coord"] = { 55.4, 68.2, 1536 },
+									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -421,62 +421,62 @@ _.ExpansionFeatures =
 								q(59043, {	-- Baker's Dozen
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, 1536 },
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60342, {	-- Cut 'Em Down to Size
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
-									["coord"] = { 54.4, 67.9, 1536 },
+									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(56470, {	-- Give A Dog A Bone
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, 1536 },
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62261, {	-- Grinder
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
-									["coord"] = { 54.4, 67.9, 1536 },
+									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60340, {	-- Hands on Approach
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
-									["coord"] = { 54.4, 67.9, 1536 },
+									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62407, {	-- Herbicidal Tendencies
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
-									["coord"] = { 54.2, 68.0, 1536 },
+									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58992, {	-- Pie Not?
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, 1536 },
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(59293, {	-- Special Formula
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
-									["coord"] = { 54.2, 68.0, 1536 },
+									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61635, {	-- Troubled Souls
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									["description"] = "Becomes available after you research Abomination Factory Tier 3 in your sanctum.",
 								}),
 							}),
@@ -498,20 +498,20 @@ _.ExpansionFeatures =
 								q(57634, {	-- Bring Your Own
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["provider"] = { "n", 159199 },    -- Iron Phillip
-									["coord"] = { 55.5, 68.4, 1536 },	-- Maldraxxus
+									["coord"] = { 55.5, 68.4, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62276, {	-- Drink to the Dead
 									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
 									["provider"] = { "n", 158298 },    -- Naxx
-									["coord"] = { 54.8, 68.7, 1536 },	-- Maldraxxus
+									["coord"] = { 54.8, 68.7, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61638, {	-- Iron Solution
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									["description"] = "Becomes available after you research Abomination Factory Tier 4 in your sanctum.",
 								}),
 							}),
@@ -523,7 +523,7 @@ _.ExpansionFeatures =
 								q(57634, {	-- Bring Your Own
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["provider"] = { "n", 159199 },    -- Iron Phillip
-									["coord"] = { 55.5, 68.4, 1536 },	-- Maldraxxus
+									["coord"] = { 55.5, 68.4, MALDRAXXUS },
 									-- Tier 5 is required to have the item sometimes show up.
 									["g"] = {
 										i(181806),	-- Regrown Osteowings
@@ -534,7 +534,7 @@ _.ExpansionFeatures =
 								q(62276, {	-- Drink to the Dead
 									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
 									["provider"] = { "n", 158298 },    -- Naxx
-									["coord"] = { 54.8, 68.7, 1536 },	-- Maldraxxus
+									["coord"] = { 54.8, 68.7, MALDRAXXUS },
 									-- Tier 5 is required to have the item sometimes show up.
 									["g"] = {
 										i(181802),	-- Standard of Death's Chosen
@@ -545,7 +545,7 @@ _.ExpansionFeatures =
 								q(58992, {	-- Pie Not?
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, 1536 },
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									-- Tier 5 is required to have the item sometimes show up.
 									["g"] = {
 										i(181809),	-- Tomalin's Seasoning Crystal
@@ -615,7 +615,7 @@ _.ExpansionFeatures =
 								["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 								["questID"] = 61647,
 								["isDaily"] = true,
-								["coord"] = { 38.0, 65.6, 1536 },	-- Maldraxxus
+								["coord"] = { 38.0, 65.6, MALDRAXXUS },
 								["g"] = {
 									o(1278968766, {	-- Rune -- TODO: proper objectID?
 										["questID"] = 61648,
@@ -639,7 +639,7 @@ _.ExpansionFeatures =
 							q(58454, {	-- Spoiling For A Fight
 								["provider"] = { "n", 159830 },	-- Au'narim
 								["isDaily"] = true,
-								["coord"] = { 53.6, 47.6, 1536 },
+								["coord"] = { 53.6, 47.6, MALDRAXXUS },
 							}),
 						}),
 					}),
@@ -728,7 +728,7 @@ _.ExpansionFeatures =
 									-- 63059,	-- Blink of an Eye -- I can pick this up without having the Transport network Tier 1 Researched
 								},
 								["provider"] = { "n", 173306 },	-- Khaliiq
-								["coord"] = { 29.6, 44.0, 1536 },
+								["coord"] = { 29.6, 44.0, MALDRAXXUS },
 							}),
 						-- Tier 3: Flying Fortress
 					}),

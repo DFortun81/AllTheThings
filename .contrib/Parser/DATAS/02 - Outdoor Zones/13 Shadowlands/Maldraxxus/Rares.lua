@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1536, {	-- Maldraxxus
+		m(MALDRAXXUS, {
 			n(RARES, {
 				n(162727, {	-- Bubbleblood
 					["questID"] = 58870,
 					["isDaily"] = true,
-					["coord"] = { 52.2, 35.1, 1536 },
+					["coord"] = { 52.2, 35.1, MALDRAXXUS },
 					["g"] = {
 						crit(18, {	-- Bubbleblood
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -23,7 +23,7 @@ _.Zones =
 				n(159105, { -- Collector Kash
 					["questID"] = 58005,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 24.6, 1536 },
+					["coord"] = { 49.8, 24.6, MALDRAXXUS },
 					["g"] = {
 						crit(4, {	-- Collector Kash
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				n(157058, { -- Corspecutter Moroc
-					["coord"] = { 26.6, 27.2, 1536 },
+					["coord"] = { 26.6, 27.2, MALDRAXXUS },
 					["questID"] = 58335,
 					["isDaily"] = true,
 					["g"] = {
@@ -58,7 +58,7 @@ _.Zones =
 				n(162711, {	-- Deadly Dapperling
 					["questID"] = 58868,
 					["isDaily"] = true,
-					["coord"] = { 76.8, 57.0, 1536 },
+					["coord"] = { 76.8, 57.0, MALDRAXXUS },
 					["g"] = {
 						crit(17, {	-- Deadly Dapperling
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -72,9 +72,9 @@ _.Zones =
 					["questID"] = 58878,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 46.8, 45.6, 1536 },
-						{ 54.0, 45.6, 1536 },
-						{ 48.2, 51.6, 1536 },
+						{ 46.8, 45.6, MALDRAXXUS },
+						{ 54.0, 45.6, MALDRAXXUS },
+						{ 48.2, 51.6, MALDRAXXUS },
 					},
 					["g"] = {
 						crit(20, {	-- Deepscar
@@ -86,7 +86,7 @@ _.Zones =
 				n(162669, { -- Devour'us
 					["questID"] = 58835,
 					["isDaily"] = true,
-					["coord"] = { 45.6, 28.4, 1536 },
+					["coord"] = { 45.6, 28.4, MALDRAXXUS },
 					["g"] = {
 						crit(15, {	-- Devour'us
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -98,7 +98,7 @@ _.Zones =
 					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
 					["questID"] = 58872,
 					["isDaily"] = true,
-					["coord"] = { 31.4, 35.4, 1536 },
+					["coord"] = { 31.4, 35.4, MALDRAXXUS },
 					["cr"] = 162815,	-- Final Thread
 					["g"] = {
 						i(182080, {	-- Predatory Plagueroc (MOUNT!)
@@ -113,7 +113,7 @@ _.Zones =
 					["description"] = "Kill the Unusual Eggs and Gristled Hatchlings to lure Gristlebeak.",
 					["questID"] = 58837,
 					["isDaily"] = true,
-					["coord"] = { 57.6, 51.6, 1536 },
+					["coord"] = { 57.6, 51.6, MALDRAXXUS },
 					["crs"] = {
 						168258,	-- Gristled Hatchling
 						162761,	-- Unusual Egg
@@ -126,7 +126,7 @@ _.Zones =
 					},
 				}),
 				n(161105, { -- Indomitable Schmitd
-					["coord"] = { 39.8, 43.4, 1536 },
+					["coord"] = { 39.8, 43.4, MALDRAXXUS },
 					["questID"] = 58332,
 					["isDaily"] = true,
 					["g"] = {
@@ -144,7 +144,7 @@ _.Zones =
 				n(174108, { -- Necromantic Anomaly
 					["questID"] = 62369,
 					["isDaily"] = true,
-					["coord"] = { 73.0, 29.2, 1536 },
+					["coord"] = { 73.0, 29.2, MALDRAXXUS },
 					["g"] = {
 						crit(22, {	-- Necromantic Anomaly
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -156,7 +156,7 @@ _.Zones =
 				n(162690, {	-- Nerissa Heartless
 					["questID"] = 58851,
 					["isDaily"] = true,
-					["coord"] = { 65.8, 36.0, 1536 },
+					["coord"] = { 65.8, 36.0, MALDRAXXUS },
 					["g"] = {
 						crit(16, {	-- Nerissa Heartless
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -172,7 +172,7 @@ _.Zones =
 				n(162767, {	-- Pesticide
 					["questID"] = 58875,
 					["isDaily"] = true,
-					["coord"] = { 53.8, 61.0, 1536 },
+					["coord"] = { 53.8, 61.0, MALDRAXXUS },
 					["g"] = {
 						crit(19, {	-- Pesticide
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -184,7 +184,7 @@ _.Zones =
 					["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
 					["questID"] = 58004,
 					["isDaily"] = true,
-					["coord"] = { 54.0, 18.4, 1536 },
+					["coord"] = { 54.0, 18.4, MALDRAXXUS },
 					["g"] = {
 						crit(5, {	-- Ravenomous
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -197,7 +197,7 @@ _.Zones =
 					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
 					["questID"] = 58006,
 					["isDaily"] = true,
-					["coord"] = { 61.6, 76.4, 1536 },
+					["coord"] = { 61.6, 76.4, MALDRAXXUS },
 					["g"] = {
 						crit(2, {	-- Scunner
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -211,7 +211,7 @@ _.Zones =
 					["description"] = "Destroy the Intricate Webbing and defeat waves of Chelicerae's Children.",
 					["questID"] = 58003,
 					["isDaily"] = true,
-					["coord"] = { 55.5, 23.6, 1536 },
+					["coord"] = { 55.5, 23.6, MALDRAXXUS },
 					["crs"] = {
 						159895,	-- Chelicerae's Children
 						159885,	-- Intricate Webbing
@@ -228,7 +228,7 @@ _.Zones =
 					["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare.  Clicking the object will aggro all the Peaceful Bloodlice in the area.",
 					["questID"] = 58768,
 					["isDaily"] = true,
-					["coord"] = { 42.5, 53.4, 1536 },
+					["coord"] = { 42.5, 53.4, MALDRAXXUS },
 					["g"] = {
 						crit(11, {	-- Smorgas the Feaster
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -245,7 +245,7 @@ _.Zones =
 				n(162586, { -- Tahonta
 					["questID"] = 58783,
 					["isDaily"] = true,
-					["coord"] = { 44.6, 52.0, 1536 },
+					["coord"] = { 44.6, 52.0, MALDRAXXUS },
 					["g"] = {
 						crit(12, {	-- Tahonta
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -261,7 +261,7 @@ _.Zones =
 					["description"] = "Kill non-rare taskmasters (Bloata, Joyless, and Mortis) and Xox has a chance to spawn in their place.",
 					["questID"] = 58091,
 					["isDaily"] = true,
-					["coord"] = { 50.7, 20.1, 1536 },
+					["coord"] = { 50.7, 20.1, MALDRAXXUS },
 					["crs"] = {
 						160204,	-- Taskmaster Bloata
 						160230,	-- Taskmaster Joyless
@@ -313,7 +313,7 @@ _.Zones =
 							["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
 							["isDaily"] = true,
 							["questID"] = 58784,
-							["coord"] = { 50.4, 48.2, 1536 },
+							["coord"] = { 50.4, 48.2, MALDRAXXUS },
 							["crs"] = { 168148 },	-- Drolkrad
 							["g"] = {
 								crit(13, {	-- Sabriel the Bonecleaver
@@ -349,7 +349,7 @@ _.Zones =
 					["description"] = "Kill the Razorthread Weavers in Leeda's room, and there is a chance that she will spawn in their place.",
 					["questID"] = 58678,
 					["isDaily"] = true,
-					["coord"] = { 24.0, 43.1, 1536 },
+					["coord"] = { 24.0, 43.1, MALDRAXXUS },
 					["crs"] = { 162220 },	-- Razorthread Weaver
 					["g"] = {
 						crit(10, {	-- Thread Mistress Leeda
@@ -361,7 +361,7 @@ _.Zones =
 				n(162819, { -- Warbringer Mal'Korak
 					["questID"] = 58889,
 					["isDaily"] = true,
-					["coord"] = { 34.4, 79.4, 1536 },
+					["coord"] = { 34.4, 79.4, MALDRAXXUS },
 					["crs"] = { 162818 },	-- Wartusk
 					["g"] = {
 						crit(21, {	-- Warbringer Mal'Korak
@@ -375,7 +375,7 @@ _.Zones =
 					["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him).  Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
 					["questID"] = 59290,
 					["isDaily"] = true,
-					["coord"] = { 29.0, 51.6, 1536 },
+					["coord"] = { 29.0, 51.6, MALDRAXXUS },
 					["g"] = {
 						crit(3, {	-- Zargox the Reborn
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus

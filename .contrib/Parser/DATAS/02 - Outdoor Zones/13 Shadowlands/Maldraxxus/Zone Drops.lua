@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1536, {	-- Maldraxxus
+		m(MALDRAXXUS, {
 			n(ZONEDROPS, {
 				i(184104, {	-- Blight-Touched Egg
 					["crs"] = {

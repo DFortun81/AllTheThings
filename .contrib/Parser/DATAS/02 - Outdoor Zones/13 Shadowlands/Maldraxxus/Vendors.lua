@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1536, {	-- Maldraxxus
+		m(MALDRAXXUS, {
 			n(VENDORS, {
 				n(166640, {	-- Au'larrynar <Enhancers>
-					["coord"] = { 53.6, 47.9, 1536 },
+					["coord"] = { 53.6, 47.9, MALDRAXXUS },
 					["g"] = {
 						i(180706),	-- Caustic Muck
 						i(180657),	-- Crystallized Ichor
@@ -26,13 +26,13 @@ _.Zones =
 					},
 				}),
 				n(168429, {	-- Melody Madcap <Fungus and Drinks>
-					["coord"] = { 40.2, 41.2, 1536 },
+					["coord"] = { 40.2, 41.2, MALDRAXXUS },
 					["g"] = {
 						i(184203),	-- Fungal Hair Tonic
 					},
 				}),
 				n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
-					["coord"] = { 50.6, 53.4, 1536 },
+					["coord"] = { 50.6, 53.4, MALDRAXXUS },
 					["g"] = {
 						i(182082, {	-- Lurid Bloodtusk (MOUNT)
 							["cost"] = 300000000, -- 30,000g
@@ -90,7 +90,7 @@ _.Zones =
 					},
 				}),
 				n(169964, {	-- One-Eyed Joby <Unusual Wares>
-					["coord"] = { 53.2, 41.2, 1536 },
+					["coord"] = { 53.2, 41.2, MALDRAXXUS },
 					["g"] = {
 						i(181798),	-- Stuffed Construct
 					},

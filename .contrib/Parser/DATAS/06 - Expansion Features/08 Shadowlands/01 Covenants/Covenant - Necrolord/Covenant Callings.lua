@@ -31,63 +31,63 @@ _.ExpansionFeatures =
 					}),
 					q(60426, {	-- A Call to Bastion
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60433, {	-- A Call to Revendreth
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60379, {	-- A Source of Sorrowvine
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60371, {	-- A Wealth of Wealdwood
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60390, {	-- Aiding Ardenweald
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , 1536 },
+						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60393, {	-- Aiding Bastion
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , 1536 },
+						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60396, {	-- Aiding Maldraxxus
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , 1536 },
+						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60398, {	-- Aiding Revendreth
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , 1536 },
+						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60464, {	-- Anima Appeal
 						["provider"] = { "n", 167205 },	-- Yondare Hex
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -101,7 +101,7 @@ _.ExpansionFeatures =
 					}),
 					q(60376, {	-- Bonemetal Bonanza
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -136,14 +136,14 @@ _.ExpansionFeatures =
 					}),
 					q(60363, {	-- Gildenite Grab
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60416, {	-- Rare Resources
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1536 },
+						--["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -185,7 +185,7 @@ _.ExpansionFeatures =
 					}),
 					q(60429, {	-- Troubles at Home
 					--	["provider"] = { "n",  },	--
-					--	["coord"] = { , 1536 },
+					--	["coord"] = { , MALDRAXXUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},

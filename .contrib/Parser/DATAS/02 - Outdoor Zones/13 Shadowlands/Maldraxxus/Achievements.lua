@@ -5,17 +5,17 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1536, {	-- Maldraxxus
+		m(MALDRAXXUS, {
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(8, {	-- Gelatinous
-							["coord"] = { 61.8, 78.8, 1536 },
+							["coord"] = { 61.8, 78.8, MALDRAXXUS },
 							["crs"] = { 175784 },	-- Gelatinous
 						}),
 						crit(10, {	-- Glurp
-							["coord"] = { 26.4, 26.8, 1536 },
+							["coord"] = { 26.4, 26.8, MALDRAXXUS },
 							["crs"] = { 175786 },	-- Glurp
 						}),
 					},
@@ -53,15 +53,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -70,15 +70,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -87,15 +87,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -104,15 +104,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -121,15 +121,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -138,15 +138,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -155,15 +155,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -172,15 +172,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -189,15 +189,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -206,15 +206,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(4,  {	-- Rotgut
-									["coord"] = { 34.0, 55.2, 1536 },
+									["coord"] = { 34.0, 55.2, MALDRAXXUS },
 									["cr"] = 173263,	-- Rotgut
 								}),
 								crit(5,  {	-- Dundley Stickyfingers
-									["coord"] = { 63.2, 46.8, 1536 },
+									["coord"] = { 63.2, 46.8, MALDRAXXUS },
 									["cr"] = 173267,	-- Dundley Stickyfingers
 								}),
 								crit(6,  {	-- Caregiver Maximillian
-									["coord"] = { 46.8, 50.0, 1536 },
+									["coord"] = { 46.8, 50.0, MALDRAXXUS },
 									["cr"] = 173257,	-- Caregiver Maximillian
 								}),
 							},
@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				ach(14721, {	-- It's in the Mix
 					["description"] = "Spawns a mob based on the current combination of 30 slimes added to the pool.",
-					["coord"] = { 58.6, 74.2, 1536 },
+					["coord"] = { 58.6, 74.2, MALDRAXXUS },
 					["g"] = {
 						i(183903),	-- Smelly Jelly
 						n(157294, {	-- Pulsing Leech
@@ -324,39 +324,39 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Snots
-							["coord"] = { 31.9, 57.0, 1536 },
+							["coord"] = { 31.9, 57.0, MALDRAXXUS },
 							["crs"] = { 174221 },	-- Snots
 						}),
 						crit(3, {	-- Pus-In-Boots
 							["description"] = "Under the bridge.",
-							["coord"] = { 50.2, 60.2, 1536 },
+							["coord"] = { 50.2, 60.2, MALDRAXXUS },
 							["crs"] = { 174223 },
 						}),
 						crit(4, {	-- Envy
-							["coord"] = { 65.2, 50.6, 1536 },
+							["coord"] = { 65.2, 50.6, MALDRAXXUS },
 							["crs"] = { 174224 },	-- Envy
 						}),
 						crit(5, {	-- Mr. Jigglesworth
-							["coord"] = { 64.8, 22.2, 1536 },
+							["coord"] = { 64.8, 22.2, MALDRAXXUS },
 							["crs"] = { 174226 },	-- Mr. Jigglesworth
 						}),
 						crit(6, {	-- Lime
 							["description"] = "Lime is on the bone arch that runs over the road.",
-							["coord"] = { 51.0, 27.5, 1536 },
+							["coord"] = { 51.0, 27.5, MALDRAXXUS },
 							["crs"] = { 174230 },	-- Lime
 						}),
 						crit(7, {	-- Mayhem
-							["coord"] = { 49.4, 17.5, 1536 },
+							["coord"] = { 49.4, 17.5, MALDRAXXUS },
 							["crs"] = { 174234 },	-- Mayhem
 						}),
 						crit(8, {	-- Moldstopheles
 							["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
-							["coord"] = { 47.5, 33.7, 1536 },
+							["coord"] = { 47.5, 33.7, MALDRAXXUS },
 							["crs"] = { 174236 },	-- Moldstopheles
 						}),
 						crit(9, {	-- Meowmalade
 							["description"] = "Napping inside a small crate.",
-							["coord"] = { 34.3, 53.1, 1536 },
+							["coord"] = { 34.3, 53.1, MALDRAXXUS },
 							["crs"] = { 174237 },	-- Meowmalade
 						}),
 					},
@@ -394,14 +394,14 @@ _.Zones =
 					crit(1, {	-- Ornate Bone Shield
 						["objectID"] = 347444,	-- Ornate Bone Shield
 						["questID"] = 59358,
-						["coord"] = { 47.2, 62.1, 1536 },
+						["coord"] = { 47.2, 62.1, MALDRAXXUS },
 						["g"] = {
 							i(180749),	-- Hauk's Battle-Scarred Bulwark
 						},
 					}),
 					crit(2, {	-- Kyrian Keepsake
 						["npcID"] = 169664,	-- Kyrian Corpse
-						["coord"] = { 32.7, 21.2, 1536 },
+						["coord"] = { 32.7, 21.2, MALDRAXXUS },
 						["g"] = {
 							i(180085, {	-- Kyrian Keepsake
 								["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
@@ -414,13 +414,13 @@ _.Zones =
 					crit(3, {	-- Halis's Lunch Pail
 						["objectID"] = 353380,	-- Halis's Lunch Pail
 						["questID"] = 60730,
-						["coord"] = { 30.7, 28.7, 1536 },
+						["coord"] = { 30.7, 28.7, MALDRAXXUS },
 					}),
 					crit(4, {	-- Vat of Conspicuous Slime
 						["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
 						["objectID"] = 355865,	-- Vat of Conspicuous Slime
 						["questID"] = 61444,
-						["coord"] = { 59.8, 79.0, 1536 },
+						["coord"] = { 59.8, 79.0, MALDRAXXUS },
 						["g"] = {
 							i(181825),	-- Phial of Ravenous Slime (TOY!)
 						},
@@ -429,7 +429,7 @@ _.Zones =
 						["description"] = "There are two caves, the Treasure is in the lower one.",
 						["objectID"] = 355872,	-- Stolen Jar
 						["questID"] = 61451,
-						["coord"] = { 65.6, 50.8, 1536 },
+						["coord"] = { 65.6, 50.8, MALDRAXXUS },
 						["g"] = {
 							i(182618, {	-- Reclaimed Vessel
 								["questID"] = 62085,	-- ...Why Me?
@@ -443,7 +443,7 @@ _.Zones =
 						},
 						["objectID"] = 355880,	-- The Necronom-i-nom
 						["questID"] = 61470,
-						["coord"] = { 42.3, 23.3, 1536 },
+						["coord"] = { 42.3, 23.3, MALDRAXXUS },
 						["g"] = {
 							i(182732),	-- The Necronom-i-nom TOY!
 							i(183120),	-- Partially Digested Encyclopedia (maybe drops when Toy is known?)
@@ -452,11 +452,11 @@ _.Zones =
 					crit(7, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos
 						["description"] = "Accessible once unlocked via the Chain in the other room.\nTreasure will respawn about 5 minutes after being clicked by any player",
-						["coord"] = { 22.5, 30.5, 1536 },
+						["coord"] = { 22.5, 30.5, MALDRAXXUS },
 						["questID"] = 58710,
 						["g"] = {
 							o(1278968750, {	-- TODO: fix objectID Hanging Chain
-								["coord"] = { 25.8, 53.9, 1536 },
+								["coord"] = { 25.8, 53.9, MALDRAXXUS },
 								["description"] = "A clickable, hanging chain required to open the gate to the Forgotten Momentos treasure",
 								["questID"] = 58709,
 								["repeatable"] = true,
@@ -467,14 +467,14 @@ _.Zones =
 						["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then just turn right and walk up the cliff to it.",
 						["objectID"] = 345456,	-- Chest of Eyes
 						["questID"] = 59244,
-						["coord"] = { 48.3, 16.3, 1536 },
+						["coord"] = { 48.3, 16.3, MALDRAXXUS },
 						["g"] = {
 							i(183696),	-- Sp-eye-glass
 						},
 					}),
 					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
-						["coord"] = { 62.4, 59.9, 1536 },
+						["coord"] = { 62.4, 59.9, MALDRAXXUS },
 						["questID"] = 59245,	-- 60311 triggered for me on this treasure
 						["description"] = "On top of the mushroom.",
 					}),
@@ -482,13 +482,13 @@ _.Zones =
 						["description"] = "In a cave behind the slime waterfall.",
 						["objectID"] = 355947,	-- Glutharn's Stash
 						["questID"] = 61484,
-						["coord"] = { 72.1, 52.7, 1536 },
+						["coord"] = { 72.1, 52.7, MALDRAXXUS },
 					}),
 					crit(11, {	-- Runespeaker's Trove
 						["objectID"] = 345456,	-- Runespeaker's Trove
 						["coords"] = {
-							{ 37.8, 70.1, 1536 },	-- Runespeaker Phaeton / Runespeaker's Key
-							{ 31.7, 70.0, 1536 },	-- Treasure
+							{ 37.8, 70.1, MALDRAXXUS },	-- Runespeaker Phaeton / Runespeaker's Key
+							{ 31.7, 70.0, MALDRAXXUS },	-- Treasure
 						},
 						["questID"] = 61491,
 						["description"] = "You need |cFFFFFFFF[Runespeaker's Key]|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
@@ -500,7 +500,7 @@ _.Zones =
 						["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleported to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
 						["objectID"] = 355886,	-- Plaguefallen Chest
 						["questID"] = 61474,
-						["coords"] = { 62.4, 76.5, 1536 },
+						["coords"] = { 62.4, 76.5, MALDRAXXUS },
 						["lvl"] = { 60 },
 						["g"] = {
 							i(183515),	-- Iridescent Ooze (PET!)
@@ -510,7 +510,7 @@ _.Zones =
 						["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
 						["objectID"] = 345456,	-- Ritualist's Cache
 						["questID"] = 61514,
-						["coord"] = { 64.6, 24.8, 1536 },
+						["coord"] = { 64.6, 24.8, MALDRAXXUS },
 						["g"] = {
 							i(183517, {	-- Page 76 of the Necronom-i-nom
 								["questID"] = 62372,
