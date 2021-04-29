@@ -1386,7 +1386,6 @@ _.ExpansionFeatures =
 									i(179656),	-- Winterborn Robes
 									i(179663),	-- Winterborn Sandals
 									i(179679),	-- Winterborn Sash
-									i(179660),	-- Winterborn Tunic
 								},
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark

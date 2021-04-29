@@ -393,7 +393,7 @@ _.NeverImplemented =
 			i(159190),	-- Foxhollow Bracelets
 			i(159170),	-- Freehold Handwraps
 			i(159183),	-- Foxhollow Cord
-			-- retrieving data
+			i(179660),	-- Winterborn Tunic
 			i(175420),	--
 			i(175512),	--
 			i(175608),	--
