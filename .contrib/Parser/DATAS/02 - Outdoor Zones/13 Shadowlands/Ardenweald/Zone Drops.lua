@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1565, {	-- Ardenweald
+		m(ARDENWEALD, {
 			n(ZONEDROPS, {
 				i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
 				i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)

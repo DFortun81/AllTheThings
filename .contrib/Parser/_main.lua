@@ -78,6 +78,7 @@ SHADOWLANDS = 1550;
 ORIBOS = 1670;
 BASTION = 1533;
 MALDRAXXUS = 1536;
+ARDENWEALD = 1565;
 
 -- Helper Tables
 local DifficultyDB = {

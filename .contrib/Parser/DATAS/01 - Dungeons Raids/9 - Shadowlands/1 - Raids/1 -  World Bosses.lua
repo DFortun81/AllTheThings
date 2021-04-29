@@ -110,8 +110,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
-				["coord"] = { 20.2, 63.6, 1565 },
-				["maps"] = { 1565 },	-- Ardenweald
+				["coord"] = { 20.2, 63.6, ARDENWEALD },
+				["maps"] = { ARDENWEALD },
 				["cr"] = 167527,	-- Oranomonos the Everbranching
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation

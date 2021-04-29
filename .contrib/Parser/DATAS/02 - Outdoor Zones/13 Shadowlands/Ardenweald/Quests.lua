@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1565, {	-- Ardenweald
+		m(ARDENWEALD, {
 			n(QUESTS, {
 				q(58163, {	-- A Desperate Solution
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "o", 349515 },	-- Battered Journal
-					["coord"] = { 72.2, 33.9, 1565 },
+					["coord"] = { 72.2, 33.9, ARDENWEALD },
 					["g"] = {
 						i(183851),	-- Withergrove Shardling
 					},
@@ -22,27 +22,27 @@ _.Zones =
 				q(60063, {	-- A Song for Silkstriders
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
-					["coord"] = { 37.0, 29.6, 1565 },
+					["coord"] = { 37.0, 29.6, ARDENWEALD },
 				}),
 				q(57865, {	-- Ages-Echoing Wisdom
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
 				}),
 				q(60519, {	-- Audience with the Winter Queen
 					["sourceQuests"] = { 60724 },	-- Heartless
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.0, 1565 },
+					["coord"] = { 63.4, 36.0, ARDENWEALD },
 				}),
 				q(58721, {	-- Awaken the Dreamer
 					["sourceQuests"] = { 60661 },	-- Dying Dreams
 					["provider"] = { "n", 169869 },	-- Lord Herne
-					["coord"] = { 47.9, 53.8, 1565 },
+					["coord"] = { 47.9, 53.8, ARDENWEALD },
 				}),
 				q(58869, {	-- Battle for Hibernal Hollow
 					["sourceQuests"] = { 60621 },	-- Enemies at the Gates
 					["provider"] = { "n", 169541 },	-- Droman Aliothe
-					["coord"] = { 59.9, 53.1, 1565 },
+					["coord"] = { 59.9, 53.1, ARDENWEALD },
 				}),
 				q(60575, {	-- Belly Full of Fae
 					["sourceQuests"] = {
@@ -50,7 +50,7 @@ _.Zones =
 						60563,	-- Tending to Wildseeds
 					},
 					["provider"] = { "n", 169202 },	-- Dreamweaver
-					["coord"] = { 61.4, 40.9, 1565 },
+					["coord"] = { 61.4, 40.9, ARDENWEALD },
 					["g"] = {
 						i(175672),	-- Spirit Tender's Cord
 						i(175674),	-- Starshroud Belt
@@ -74,68 +74,68 @@ _.Zones =
 						60628,	-- The Missing Hunters
 					},
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
+					["coord"] = { 51.3, 34.0, ARDENWEALD },
 				}),
 				q(58265, {	-- Blooming Villains
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 160929 },	-- Guardian Molan
-					["coord"] = { 60.6, 51.3, 1565 },
+					["coord"] = { 60.6, 51.3, ARDENWEALD },
 				}),
 				q(58266, {	-- Break It Down
 				--	TODO: figure out SQs.  in the same area as 'blooming villains,' but that is NOT their SQ.  possibly unlocked by completion of 60905, 'infusing the wildseed'?
 					["provider"] = { "n", 160749 },	-- Primrose
-					["coord"] = { 53.4, 58.7, 1565 },
+					["coord"] = { 53.4, 58.7, ARDENWEALD },
 				}),
 				q(59621, {	-- Breaking A Few Eggs
 					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
 				}),
 				q(58024, {	-- Burrows Away
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171195 },	-- Gorm Burrow
-					["coord"] = { 62.1, 29.9, 1565 },
+					["coord"] = { 62.1, 29.9, ARDENWEALD },
 				}),
 				q(60521, {	-- Call of the Hunt
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
-					["coord"] = { 63.5, 36.2, 1565 },
+					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
 				q(58592, {	-- Caring for the Caretakers
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
+					["coord"] = { 60.0, 52.9, ARDENWEALD },
 				}),
 				q(57824, {	-- Collection Day
 					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
 				}),
 				q(57868, {	-- Craftsman Needs No Tools
 				--	TODO: verify SQs
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 159427 },	-- Elder Finnan
-					["coord"] = { 55.8, 23.4, 1565 },
+					["coord"] = { 55.8, 23.4, ARDENWEALD },
 				}),
 				q(58164, {	-- Cult of Personality
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
 				}),
 				q(58165, {	-- Cut the Roots
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
 				}),
 				q(62458, {	-- De Other Side
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
-					["coord"] = { 64.8, 19.7, 1565 },
+					["coord"] = { 64.8, 19.7, ARDENWEALD },
 				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["sourceQuests"] = { 57824 },	-- Collection Day
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
 					["g"] = {
 						i(175741),	-- Gormgris Gorget
 					},
@@ -143,22 +143,22 @@ _.Zones =
 				q(58591, {	-- Despoilers
 					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
 				q(57816, {	-- Dreamweaver
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.2, 1565 },
+					["coord"] = { 63.4, 36.2, ARDENWEALD },
 				}),
 				q(60661, {	-- Dying Dreams
 					["sourceQuests"] = { 58869 },	-- Battle for Hibernal Hollow
 					["provider"] = { "n", 161847 },	-- Lady Moonberry
-					["coord"] = { 60.0, 53.0, 1565 },
+					["coord"] = { 60.0, 53.0, ARDENWEALD },
 				}),
 				q(58473, {	-- Echoes of Tirna Noch
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 160963 },	-- Ara'lon
-					["coord"] = { 60.1, 52.8, 1565 },
+					["coord"] = { 60.1, 52.8, ARDENWEALD },
 				}),
 				q(58593, {	-- End of the Dream
 					["sourceQuests"] = {
@@ -166,7 +166,7 @@ _.Zones =
 						60578,	-- Visions of the Dreamer: The Betrayal
 					},
 					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
+					["coord"] = { 60.0, 52.9, ARDENWEALD },
 					["g"] = {
 						i(175660),	-- Spirit Tender's Hood
 						i(175662),	-- Starshroud Helm
@@ -178,37 +178,37 @@ _.Zones =
 				q(60621, {	-- Enemies at the Gates
 					["sourceQuests"] = { 58720 },	-- Missing!
 					["provider"] = { "n", 162541 },	-- Hunt-Captain Korayn
-					["coord"] = { 55.9, 57.6, 1565 },
+					["coord"] = { 55.9, 57.6, ARDENWEALD },
 				}),
 				q(60629, {	-- Extreme Recycling
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
+					["coord"] = { 51.3, 34.0, ARDENWEALD },
 				}),
 				q(58022, {	-- Finish What He Started
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, 1565 },
+					["coord"] = { 62,8, 32.1, ARDENWEALD },
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
 					["provider"] = { "n", 157788 },	-- Lady Moonberry
-					["coord"] = { 65.0, 19.5, 1565 },
+					["coord"] = { 65.0, 19.5, ARDENWEALD },
 				}),
 				q(60572, {	-- For the Sake of Spirit
 					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
 				q(58161, {	-- Forest Disappearances
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 160440 },	-- Brigdin
-					["coord"] = { 64.4, 35.2, 1565 },
+					["coord"] = { 64.4, 35.2, ARDENWEALD },
 				}),
 				q(62807, {	-- Forest Refugees
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
 				q(57656, {	-- Gifts of the Forest
 					["sourceQuests"] = {
@@ -216,12 +216,12 @@ _.Zones =
 						59622,	-- Tending to the Tenders
 					},
 					["provider"] = { "n", 158489 },	-- Fluttercatch
-					["coord"] = { 48.0, 24.3, 1565 },
+					["coord"] = { 48.0, 24.3, ARDENWEALD },
 				}),
 				q(58488, {	-- Go for the Heart
 					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
 					["provider"] = { "n", 161492 },	-- Ara'lon
-					["coord"] = { 71.4, 54.5, 1565 },
+					["coord"] = { 71.4, 54.5, ARDENWEALD },
 				}),
 				q(58486, {	-- He's Drust in the Way
 					["sourceQuests"] = {
@@ -234,12 +234,12 @@ _.Zones =
 				q(60639, {	-- Heart of the Grove
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
+					["coord"] = { 66.9, 26.5, ARDENWEALD },
 				}),
 				q(60724, {	-- Heartless
 					["sourceQuests"] = { 60709 },	-- Recovering the Heart
 					["provider"] = { "n", 170012 },	-- Niya
-					["coord"] = { 65.3, 26.6, 1565 },
+					["coord"] = { 65.3, 26.6, ARDENWEALD },
 					["g"] = {
 						i(175648),	-- Spirit Tender's Robe
 						i(175651),	-- Starshroud Vest
@@ -253,7 +253,7 @@ _.Zones =
 						60563,	-- Tending to Wildseeds
 					},
 					["provider"] = { "n", 169202 },	-- Dreamweaver
-					["coord"] = { 61.4, 40.9, 1565 },
+					["coord"] = { 61.4, 40.9, ARDENWEALD },
 				}),
 				q(60632, {	-- I Know Your Face
 					["sourceQuests"] = {
@@ -271,27 +271,27 @@ _.Zones =
 				q(60763, {	-- I Moustache You to Lend a Hand
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
-					["coord"] = { 68.2, 18.3, 1565 },
+					["coord"] = { 68.2, 18.3, ARDENWEALD },
 				}),
 				q(57866, {	-- Idle Hands
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
 				}),
 				q(57952, {	-- In Need of Gorm Gris
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 158921 },	-- Guardian Kota
-					["coord"] = { 62.6, 36.0, 1565 },
+					["coord"] = { 62.6, 36.0, ARDENWEALD },
 				}),
 				q(60905, {	-- Infusing the Wildseed
 					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
 				q(57787, {	-- Keep to the Path
 					["sourceQuests"] = { 60859 },	-- Souls of the Forest
 					["provider"] = { "n", 170533 },	-- Featherlight
-					["coord"] = { 65.6, 27.9, 1565 },
+					["coord"] = { 65.6, 27.9, ARDENWEALD },
 				}),
 				q(58483, {	-- Mementos
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -299,7 +299,7 @@ _.Zones =
 						{ "n", 161379 },	-- Niya
 						{ "n", 161447 },	-- Niya
 					},
-					["coord"] = { 68.4, 57.4, 1565 },
+					["coord"] = { 68.4, 57.4, ARDENWEALD },
 				}),
 				q(58720, {	-- Missing!
 					["sourceQuests"] = {
@@ -307,7 +307,7 @@ _.Zones =
 						58719,	-- The Droman's Call
 					},
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.1, 53.8, 1565 },
+					["coord"] = { 60.1, 53.8, ARDENWEALD },
 				}),
 				q(57950, {	-- Mizik the Haughty
 					["sourceQuests"] = {
@@ -319,27 +319,27 @@ _.Zones =
 				q(58162, {	-- Mysterious Masks
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
 				}),
 				q(60520, {	-- Nightmares Manifest
 					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
 					["provider"] = { "n", 169142 },	-- Dreamweaver
-					["coord"] = { 65.2, 36.6, 1565 },
+					["coord"] = { 65.2, 36.6, ARDENWEALD },
 				}),
 				q(57818, {	-- Nothing Goes to Waste
 					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
 				}),
 				q(57948, {	-- Nothing Left to Give
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
-					["coord"] = { 67.1, 32.1, 1565 },
+					["coord"] = { 67.1, 32.1, ARDENWEALD },
 				}),
 				q(58023, {	-- One Big Problem
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, 1565 },
+					["coord"] = { 62,8, 32.1, ARDENWEALD },
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
@@ -347,12 +347,12 @@ _.Zones =
 						60577,	-- Hungry for Animacones
 					},
 					["provider"] = { "n", 169217 },	-- Dreamweaver
-					["coord"] = { 62.1, 36.4, 1565 },
+					["coord"] = { 62.1, 36.4, ARDENWEALD },
 				}),
 				q(57871, {	-- Outplayed
 					["sourceQuests"] = { 57870 },	-- The Games We Play
 					["provider"] = { "n", 159465 },	-- Elder Gwenna
-					["coord"] = { 59.0, 24.3, 1565 },
+					["coord"] = { 59.0, 24.3, ARDENWEALD },
 					["g"] = {
 						i(183850),	-- Wakener's Frond
 						i(183849),	-- Soulsifter Root
@@ -361,7 +361,7 @@ _.Zones =
 				q(60901, {	-- Passage to Hibernal Hollow
 					["sourceQuests"] = { 60881 },	-- Ride of the Wild Hunt
 					["provider"] = { "n", 170290 },	-- Ara'lon
-					["coord"] = { 62.3, 45.5, 1565 },
+					["coord"] = { 62.3, 45.5, ARDENWEALD },
 				}),
 				q(60600, {	-- Preparing for the Winter Queen
 					["sourceQuests"] = {
@@ -369,7 +369,7 @@ _.Zones =
 						57951,	-- Souls Come Home
 					},
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
-					["coord"] = { 63.5, 36.2, 1565 },
+					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
 				q(58025, {	-- Queen of the Underground
 					["sourceQuests"] = {
@@ -377,7 +377,7 @@ _.Zones =
 						58023,	-- One Big Problem
 					},
 					["provider"] = { "n", 160155 },	-- Guardian Kota
-					["coord"] = { 59.6, 33.4, 1565 },
+					["coord"] = { 59.6, 33.4, ARDENWEALD },
 				}),
 				q(58480, {	-- Read the Roots
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -385,7 +385,7 @@ _.Zones =
 						{ "n", 161378 },	-- Ara'lon
 						{ "n", 161446 },	-- Ara'lon
 					},
-					["coord"] = { 68.4, 57.4, 1565 },
+					["coord"] = { 68.4, 57.4, ARDENWEALD },
 				}),
 				q(60647, {	-- Recovering the Animacones
 					["sourceQuests"] = {
@@ -397,27 +397,27 @@ _.Zones =
 						{ "n", 169748 },	-- Niya (pre-pickup)
 						{ "n", 169868 },	-- Niya	(post-pickup)
 					},
-					["coord"] = { 68.4, 24.5, 1565 },
+					["coord"] = { 68.4, 24.5, ARDENWEALD },
 				}),
 				q(60709, {	-- Recovering the Heart
 					["sourceQuests"] = { 60671 },	-- The Sacrifices We Must Make
 					["provider"] = { "n", 169956 },	-- Warden Casad
-					["coord"] = { 66.2, 23.8, 1565 },
+					["coord"] = { 66.2, 23.8, ARDENWEALD },
 				}),
 				q(60638, {	-- Recovering Wildseeds
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
+					["coord"] = { 66.9, 26.5, ARDENWEALD },
 				}),
 				q(60839, {	-- Remnants of the Wild Hunt
 					["sourceQuests"] = { 60764 },	-- Soothing Song
 					["provider"] = { "n", 170290 },	-- Ara'lon
-					["coord"] = { 62.3, 45.5, 1565 },
+					["coord"] = { 62.3, 45.5, ARDENWEALD },
 				}),
 				q(59120, {	-- Renny the Vulpin
 					["sourceQuests"] = { 59087 },	-- That Darn Fox!
 					["provider"] = { "n", 163903 },	-- Renny
-					["coord"] = { 49.2, 51.9, 1565 },
+					["coord"] = { 49.2, 51.9, ARDENWEALD },
 					["g"] = {
 						i(175114),	-- Renny (PET!)
 					},
@@ -425,22 +425,22 @@ _.Zones =
 				q(60522, {	-- Return to Tirna Vaal
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
-					["coord"] = { 51.3, 34.0, 1565 },
+					["coord"] = { 51.3, 34.0, ARDENWEALD },
 				}),
 				q(60881, {	-- Ride of the Wild Hunt
 					["sourceQuests"] = { 60856 },	-- Toppling the Brute
 					["provider"] = { "n", 170485 },	-- Ara'lon
-					["coord"] = { 64.2, 49.9, 1565 },
+					["coord"] = { 64.2, 49.9, ARDENWEALD },
 				}),
 				q(60624, {	-- Ride to Heartwood Grove
 					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.5, 36.2, 1565 },
+					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
 				q(60064, {	-- Save Ol' Gertie
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
-					["coord"] = { 37.0, 29.6, 1565 },
+					["coord"] = { 37.0, 29.6, ARDENWEALD },
 				}),
 				q(51355, {	-- Secretest Fish
 					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
@@ -450,7 +450,7 @@ _.Zones =
 				q(60567, {	-- Shooing Wildlife
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
-					["coord"] = { 64.2, 41.2, 1565 },
+					["coord"] = { 64.2, 41.2, ARDENWEALD },
 				}),
 				q(60066, {	-- Silk for Ardenweald
 					["sourceQuests"] = {
@@ -459,21 +459,21 @@ _.Zones =
 						60065,	-- Thread of Hope
 					},
 					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
-					["coord"] = { 39.0, 29.9, 1565 },
+					["coord"] = { 39.0, 29.9, ARDENWEALD },
 				}),
 				q(57661, {	-- Silk Shortage
 					["provider"] = { "n", 158556 },	-- Aithlyn
-					["coord"] = { 59.5, 31.5, 1565 },
+					["coord"] = { 59.5, 31.5, ARDENWEALD },
 				}),
 				q(60764, {	-- Soothing Song
 					["sourceQuests"] = { 60738 },	-- The Way to Hibernal Hollow
 					["provider"] = { "n", 170172 },	-- Dreamweaver
-					["coord"] = { 64.5, 39.0, 1565 },
+					["coord"] = { 64.5, 39.0, ARDENWEALD },
 				}),
 				q(57951, {	-- Souls Come Home
 					["sourceQuests"] = { 57950 },	-- Mizik the Haughty
 					["provider"] = { "n", 159639 },	-- Choofa
-					["coord"] = { 67.1, 32.1, 1565 },
+					["coord"] = { 67.1, 32.1, ARDENWEALD },
 					["g"] = {
 						i(175658),	-- Spirit Tender's Handwraps
 						i(175656),	-- Starshroud Gloves
@@ -484,7 +484,7 @@ _.Zones =
 				q(60859, {	-- Souls of the Forest
 					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
 					["provider"] = { "n", 170537 },	-- Te'zan
-					["coord"] = { 67.8, 24.1, 1565 },
+					["coord"] = { 67.8, 24.1, ARDENWEALD },
 					["g"] = {
 						i(175654),	-- Dreamthorn Sabatons
 						i(175652),	-- Grove Warden's Warboots
@@ -495,7 +495,7 @@ _.Zones =
 				q(58524, {	-- Sparkles Rain from Above
 					["sourceQuests"] = { 58488 },	-- Go for the Heart
 					["provider"] = { "n", 161494 },	-- Lady Moonberry
-					["coord"] = { 71.5, 54.6, 1565 },
+					["coord"] = { 71.5, 54.6, ARDENWEALD },
 					["g"] = {
 						i(175767),	-- Glitterwing Greatcloak
 					},
@@ -504,22 +504,22 @@ _.Zones =
 				--	TODO: verify SQs
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 159428 },	-- Groonoomcrooek
-					["coord"] = { 56.4, 29.2, 1565 },
+					["coord"] = { 56.4, 29.2, ARDENWEALD },
 				}),
 				q(57947, {	-- Spirits of the Glen
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.2, 1565 },
+					["coord"] = { 63.4, 36.2, ARDENWEALD },
 				}),
 				q(57652, {	-- Supplies Needed: Amber Grease
 				--	TODO: figure out SQs.  saw this after doing the overall zone meta and after finishing the "when a gorm eats a god" criteria of "sojourner of ardenweald"
 					["provider"] = { "o", 348747 },	-- Muddy Scroll
-					["coord"] = { 46.9, 27.6, 1565 },
+					["coord"] = { 46.9, 27.6, ARDENWEALD },
 				}),
 				q(57655, {	-- Supplies Needed: More Husks!
 				--	TODO: figure out SQs.  saw after finish regular zone quest meta, while working on sojourner achievement, during 'unsafe workplace.'  but it may unlock sooner
 					["provider"] = { "o", 336415 },	-- Discarded Scroll
-					["coord"] = { 47.5, 26.2, 1565 },
+					["coord"] = { 47.5, 26.2, ARDENWEALD },
 				}),
 				q(60648, {	-- Survivors of Heartwood Grove
 					["sourceQuests"] = {
@@ -531,12 +531,12 @@ _.Zones =
 						{ "n", 169748 },	-- Niya (pre-pickup)
 						{ "n", 169868 },	-- Niya	(post-pickup)
 					},
-					["coord"] = { 68.4, 24.5, 1565 },
+					["coord"] = { 68.4, 24.5, ARDENWEALD },
 				}),
 				q(59801, {	-- Take the Power
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
 				}),
 				q(58484, {	-- Take What You Can
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -544,31 +544,31 @@ _.Zones =
 						{ "n", 161378 },	-- Ara'lon
 						{ "n", 161446 },	-- Ara'lon
 					},
-					["coord"] = { 68.4, 57.4, 1565 },
+					["coord"] = { 68.4, 57.4, ARDENWEALD },
 				}),
 				q(59622, {	-- Tending to the Tenders
 					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
 				}),
 				q(60563, {	-- Tending to Wildseeds
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
-					["coord"] = { 64.2, 41.2, 1565 },
+					["coord"] = { 64.2, 41.2, ARDENWEALD },
 				}),
 				q(59087, {	-- That Darn Fox!
 					["provider"] = { "n", 163774 },	-- Clarion Song
-					["coord"] = { 50.9, 33.8, 1565 },
+					["coord"] = { 50.9, 33.8, ARDENWEALD },
 				}),
 				q(61051, {	-- The Absent-Minded Artisan
 					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
 					["provider"] = { "n", 158921 },	-- Guardian Kota
-					["coord"] = { 62.6, 36.0, 1565 },
+					["coord"] = { 62.6, 36.0, ARDENWEALD },
 				}),
 				q(58723, {	-- The Court of Winter
 					["sourceQuests"] = { 58721 },	-- Awaken the Dreamer
 					["provider"] = { "n", 162968 },	-- Winter Queen
-					["coord"] = { 45.2, 63.0, 1565 },
+					["coord"] = { 45.2, 63.0, ARDENWEALD },
 					["g"] = {
 						i(175710),	-- Night Courtier's Ring
 					},
@@ -580,49 +580,49 @@ _.Zones =
 						58162,	-- Mysterious Masks
 					},
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
 				}),
 				q(58719, {	-- The Droman's Call
 					["sourceQuests"] = { 58593 },	-- End of the Dream
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
 				q(60637, {	-- The End of Former Friends
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
+					["coord"] = { 66.9, 26.5, ARDENWEALD },
 				}),
 				q(58714, {	-- The Forest Has Eyes
 					["sourceQuests"] = { 58593 },	-- End of the Dream
 					["provider"] = { "n", 161847 },	-- Lady Moonberry
-					["coord"] = { 59.9, 53.0, 1565 },
+					["coord"] = { 59.9, 53.0, ARDENWEALD },
 				}),
 				q(57870, {	-- The Games We Play
 				--	TODO: verify SQs
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 159465 },	-- Elder Gwenna
-					["coord"] = { 59.0, 24.3, 1565 },
+					["coord"] = { 59.0, 24.3, ARDENWEALD },
 				}),
 				q(57660, {	-- The Grove of Creation
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
-					["coord"] = { 62.9, 36.2, 1565 },
+					["coord"] = { 62.9, 36.2, ARDENWEALD },
 				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
+					["coord"] = { 51.3, 34.0, ARDENWEALD },
 				}),
 				q(58724, {	-- The Queen's Request
 					["sourceQuests"] = { 58723 },	-- The Court of Winter
 					["provider"] = { "n", 161847 },	-- Winter Queen
-					["coord"] = { 48.9, 33.5, 1565 },
+					["coord"] = { 48.9, 33.5, ARDENWEALD },
 				}),
 				q(58589, {	-- The Restless Dreamer
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
+					["coord"] = { 60.0, 52.9, ARDENWEALD },
 				}),
 				q(60671, {	-- The Sacrifices We Must Make
 					["sourceQuests"] = {
@@ -634,38 +634,38 @@ _.Zones =
 				q(60062, {	-- The Shattered Harp
 					["sourceQuests"] = { 57661 },	-- Silk Shortage
 					["provider"] = { "o", 350804 },	-- Broken Harp
-					["coord"] = { 38.1, 28.7, 1565 },
+					["coord"] = { 38.1, 28.7, ARDENWEALD },
 				}),
 				q(57867, {	-- The Sweat of Our Brow
 				--	TODO: verify SQs
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 160045 },	-- Helpful Faerie
-					["coord"] = { 53.8, 27.5, 1565 },
+					["coord"] = { 53.8, 27.5, ARDENWEALD },
 				}),
 				q(60738, {	-- The Way to Hibernal Hollow
 					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
 					["provider"] = { "n", 169142 },	-- Dreamweaver
-					["coord"] = { 65.2, 36.6, 1565 },
+					["coord"] = { 65.2, 36.6, ARDENWEALD },
 				}),
 				q(57949, {	-- They Need to Calm Down
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
-					["coord"] = { 97.1, 32.1, 1565 },
+					["coord"] = { 97.1, 32.1, ARDENWEALD },
 				}),
 				q(60065, {	-- Thread of Hope
 					["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
 					["provider"] = { "n", 159388 },	-- Gertie Jr.
-					["coord"] = { 37.2, 25.9, 1565 },
+					["coord"] = { 37.2, 25.9, ARDENWEALD },
 				}),
 				q(57657, {	-- Tied Totem Toter
 					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
 					["provider"] = { "n", 158489 },	-- Fluttercatch
-					["coord"] = { 48.0, 24.3, 1565 },
+					["coord"] = { 48.0, 24.3, ARDENWEALD },
 				}),
 				q(62371, {	-- Tirna Scithe: A Warning Silence
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 168032 },	-- Flwngyrr
-					["coord"] = { 48.3, 50.5, 1565 },
+					["coord"] = { 48.3, 50.5, ARDENWEALD },
 					["maps"] = { 1669 },	-- Mists of Tirna Scithe
 					["g"] = {
 						i(184516),	-- Mistveil Sandals
@@ -677,7 +677,7 @@ _.Zones =
 				q(60856, {	-- Toppling the Brute
 					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
 					["provider"] = { "n", 170485 },	-- Ara'lon
-					["coord"] = { 64.2, 49.9, 1565 },
+					["coord"] = { 64.2, 49.9, ARDENWEALD },
 					["g"] = {
 						i(175986, {	-- Grove Defender's Maul
 							["f"] = 24,	-- 2H mace (for some reason erroneously has filterID of 23, which is 1H maces)
@@ -699,12 +699,12 @@ _.Zones =
 						60628,	-- The Missing Hunters
 					},
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
+					["coord"] = { 51.3, 34.0, ARDENWEALD },
 				}),
 				q(60061, {	-- Tough as Silk
 					["sourceQuests"] = { 57661 },	-- Silk Shortage
 					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
-					["coord"] = { 38.9, 29.9, 1565 },
+					["coord"] = { 38.9, 29.9, ARDENWEALD },
 				}),
 				q(57651, {	-- Trouble in the Banks
 					["sourceQuests"] = {
@@ -712,7 +712,7 @@ _.Zones =
 						57660,	-- The Grove of Creation (breadcrumb)
 					},
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
 				}),
 				q(58166, {	-- Unknown Assailants
 					["sourceQuests"] = {
@@ -720,7 +720,7 @@ _.Zones =
 						59801,	-- Take the Power
 					},
 					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
 					["g"] = {
 						i(175677),	-- Dreamthorn Wristguards
 						i(175676),	-- Grove Warden's Vambraces
@@ -734,7 +734,7 @@ _.Zones =
 						59622,	-- Tending to the Tenders
 					},
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
 				}),
 				q(58590, {	-- Visions of the Dreamer: Origins
 					["sourceQuests"] = {
@@ -743,7 +743,7 @@ _.Zones =
 						58592,	-- Caring for the Caretakers
 					},
 					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
+					["coord"] = { 60.0, 52.9, ARDENWEALD },
 				}),
 				q(60578, {	-- Visions of the Dreamer: The Betrayal
 					["sourceQuests"] = {
@@ -752,17 +752,17 @@ _.Zones =
 						58592,	-- Caring for the Caretakers
 					},
 					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
+					["coord"] = { 60.0, 52.9, ARDENWEALD },
 				}),
 				q(58264, {	-- Wake Up, Get Up, Get Out There
 				--	TODO: figure out SQs.  in the same area as 'blooming villains,' but that is NOT their SQ.  possibly unlocked by completion of 60905, 'infusing the wildseed'?
 					["provider"] = { "n", 160749 },	-- Primrose
-					["coord"] = { 53.4, 58.7, 1565 },
+					["coord"] = { 53.4, 58.7, ARDENWEALD },
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
 					["provider"] = { "n", 170324 },	-- Featherlight
-					["coord"] = { 67.7, 20.6, 1565 },
+					["coord"] = { 67.7, 20.6, ARDENWEALD },
 				}),
 				q(59656, {	-- Well, Tell the Lady
 					["sourceQuests"] = {
@@ -770,7 +770,7 @@ _.Zones =
 						57657,	-- Tied Totem Toter
 					},
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
 				}),
 				q(59623, {	-- What a Buzzkill
 					["sourceQuests"] = {
@@ -778,7 +778,7 @@ _.Zones =
 						57655,	-- Supplies Needed: More Husks
 					},
 					["provider"] = { "n", 165382 },	-- Gormsmith Cavina
-					["coord"] = { 51.5, 34.0, 1565 },
+					["coord"] = { 51.5, 34.0, ARDENWEALD },
 					["g"] = {
 						i(178024),	-- Gormhusk Bludgeon
 						i(178021),	-- Culexwood Longbow
@@ -794,7 +794,7 @@ _.Zones =
 				q(58026, {	-- When a Gorm Eats a God
 					["sourceQuests"] = { 58025 },	-- Queen of the Underground
 					["provider"] = { "n", 160155 },	-- Guardian Kota
-					["coord"] = { 59.6, 33.4, 1565 },
+					["coord"] = { 59.6, 33.4, ARDENWEALD },
 					["g"] = {
 						i(175664),	-- Spirit Tender's Leggings
 						i(175666),	-- Starshroud Breeches
@@ -804,14 +804,14 @@ _.Zones =
 				}),
 				q(60840, {	-- Wild Hunt Offensive (bonus objective)
 					["isWorldQuest"] = true,	-- shows up in /attwq without this
-					["coord"] = { 64, 46, 1565 },
+					["coord"] = { 64, 46, ARDENWEALD },
 				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
-					["coord"] = { 65.0, 19.5, 1565 },
+					["coord"] = { 65.0, 19.5, ARDENWEALD },
 				}),
-				
+
 				-- Bonus Objectives
 				q(62773, {	-- Dreamshrine Basin (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

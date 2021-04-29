@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 					q(58997, {	-- A Bittersweet Prize
 						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
-						["coord"] = { 45.2, 65.4, 1565 },
+						["coord"] = { 45.2, 65.4, ARDENWEALD },
 					}),
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
@@ -254,7 +254,7 @@ _.ExpansionFeatures =
 							{ "n", 162392 },	-- Willowblossom
 							{ "n", 163060 },	-- Willowblossom
 						},
-						["coord"] = { 50.5, 68.9, 1565 },
+						["coord"] = { 50.5, 68.9, ARDENWEALD },
 						["g"] = {
 							i(179941),	-- Selfless Forgelite's Boots
 							i(178155),	-- Selfless Watcher's Warboots
@@ -328,7 +328,7 @@ _.ExpansionFeatures =
 							{ "n", 162392 },	-- Willowblossom
 							{ "n", 163060 },	-- Willowblossom
 						},
-						["coord"] = { 50.5, 68.9, 1565 },
+						["coord"] = { 50.5, 68.9, ARDENWEALD },
 					}),
 					q(58560, {	-- Gothic Fashion
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
@@ -363,7 +363,7 @@ _.ExpansionFeatures =
 					q(58995, {	-- I Dreamed A Dream
 						["sourceQuests"] = { 58857 },	-- Seeds Away!
 						["provider"] = { "n", 163328 },	-- Pelagos
-						["coord"] = { 45.2, 65.4, 1565 },
+						["coord"] = { 45.2, 65.4, ARDENWEALD },
 					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -799,7 +799,7 @@ _.ExpansionFeatures =
 					q(58856, {	-- Who Are You Fooling?
 						["sourceQuests"] = { 58775 },	-- Meet the Queen
 						["provider"] = { "n", 162392 },	-- Willowblossom
-						["coord"] = { 44.0, 51.8, 1565 },
+						["coord"] = { 44.0, 51.8, ARDENWEALD },
 					}),
 				}),
 			},

@@ -1298,7 +1298,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
-						["coord"] = { 59.6, 52.9, 1565 },
+						["coord"] = { 59.6, 52.9, ARDENWEALD },
 						["g"] = {
 							i(183053, {	-- Umbral Scythehorn (MOUNT)
 								["cost"] = {

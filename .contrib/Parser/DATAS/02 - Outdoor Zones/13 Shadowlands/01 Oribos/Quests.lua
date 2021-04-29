@@ -560,7 +560,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering Ardenweald after choosing a different Zone",
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
-					["coord"] = { 49.2, 52.2, 1565 },
+					["coord"] = { 49.2, 52.2, ARDENWEALD },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
 						62739,	-- Restoring Balance [Non-Night Fae]
@@ -653,7 +653,7 @@ _.Zones =
 				q(62776, {	-- Return to Oribos
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
-					["coord"] = { 49.2, 52.2, 1565 },
+					["coord"] = { 49.2, 52.2, ARDENWEALD },
 					["sourceQuests"] = { 62763 },	-- Support the Court
 					["lvl"] = { 48, 60 },
 				}),

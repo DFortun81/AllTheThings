@@ -82,21 +82,21 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
 					}),
 					q(62859, {	-- Return Lost Souls (15 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["description"] = "Requires Renown 24.",
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
 					}),
 					q(62860, {	-- Return Lost Souls (20 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["description"] = "Requires Renown 32.",
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
 					}),
 					q(62536, {	-- The Lost of Teldrassil
@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 					q(61479, {	-- The Boon of Shapes
 						["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 						["provider"] = { "n", 172431 },	-- Lady Moonberry
-						["coord"] = { 39.7, 60.8, 1565 },
+						["coord"] = { 39.7, 60.8, ARDENWEALD },
 					}),
 					q(58104, {	-- Show, Don't Tell
 						["sourceQuests"] = { 61479 },	-- The Boon of Shapes
@@ -123,17 +123,17 @@ _.ExpansionFeatures =
 					q(58157, {	-- Break a Leg
 						["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 						["provider"] = { "n", 160484 },	-- Featherlight
-						["coord"] = { 40.7, 42.7, 1565 },
+						["coord"] = { 40.7, 42.7, ARDENWEALD },
 					}),
 					q(58158, {	-- The Fourth Wall, er, War
 						["sourceQuests"] = { 58157 },	-- Break a Leg
 						["provider"] = { "n", 160484 },	-- Featherlight
-						["coord"] = { 40.7, 42.7, 1565 },
+						["coord"] = { 40.7, 42.7, ARDENWEALD },
 					}),
 					q(58159, {	-- What's My Motivation?
 						["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
 						["provider"] = { "n", 160484 },	-- Featherlight
-						["coord"] = { 40.7, 42.7, 1565 },
+						["coord"] = { 40.7, 42.7, ARDENWEALD },
 						["g"] = {
 							i(180263),	-- Dreamlight Runestag
 						},
@@ -141,7 +141,7 @@ _.ExpansionFeatures =
 					q(58160, {	-- For Queen and Grove!
 						["sourceQuests"] = { 58159 },	-- What's My Motivation?
 						["provider"] = { "n", 160500 },	-- Ysera
-						["coord"] = { 42.4, 45.2, 1565 },
+						["coord"] = { 42.4, 45.2, ARDENWEALD },
 					}),
 					q(62883, {	-- Keeper of Great Renown
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -336,12 +336,12 @@ _.ExpansionFeatures =
 					q(59819, {	-- Cleansing the Forest
 						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
 						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 66.6, 55.6, 1565 },	-- Ardenweald
+						["coord"] = { 66.6, 55.6, ARDENWEALD },
 					}),
 					q(59821, {	-- Report to the Queen
 						["sourceQuests"] = { 59819 },	-- Cleansing the Forest
 						["provider"] = { "n", 167823 },	-- Lady Moonberry
-						["coord"] = { 68.4, 65.2, 1565 },
+						["coord"] = { 68.4, 65.2, ARDENWEALD },
 						["_drop"] = { "g" },	-- make 7 items stop showing up that are not actually rewarded by this quest
 					}),
 
@@ -354,17 +354,17 @@ _.ExpansionFeatures =
 					q(58647, {	-- Broken Webs
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 						["provider"] = { "n", 161786 },	-- Qadarin
-						["coord"] = { 40.3, 51.2, 1565 },
+						["coord"] = { 40.3, 51.2, ARDENWEALD },
 					}),
 					q(58669, {	-- A Little Pruning
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 						["provider"] = { "n", 161786 },	-- Qadarin
-						["coord"] = { 40.3, 51.2, 1565 },
+						["coord"] = { 40.3, 51.2, ARDENWEALD },
 					}),
 					q(59008, {	-- Spriggan Snares
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 						["provider"] = { "n", 163385 },	-- Cirrik
-						["coord"] = { 39.0, 52.4, 1565 },
+						["coord"] = { 39.0, 52.4, ARDENWEALD },
 					}),
 					q(58704, {	-- The Garden of Night
 						["sourceQuests"] = {
@@ -383,7 +383,7 @@ _.ExpansionFeatures =
 					q(58871, {	-- Broken Harts
 						["sourceQuests"] = { 58704 },	-- The Garden of Night
 						["provider"] = { "n", 161785 },	-- Thiernax
-						["coord"] = { 39.0, 59.4, 1565 },	-- Ardenweald
+						["coord"] = { 39.0, 59.4, ARDENWEALD },
 					}),
 					q(59725, {	-- Archivist on the Edge
 						["sourceQuests"] = { 58871 },	-- Broken Harts
@@ -393,7 +393,7 @@ _.ExpansionFeatures =
 					q(59063, {	-- Curses!
 						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
 						["provider"] = { "n", 165867 },	-- Archivist Dreyden
-						["coord"] = { 63.6, 22.6, 1565 },	-- Ardenweald
+						["coord"] = { 63.6, 22.6, ARDENWEALD },
 					}),
 					q(59068, {	-- A Secret Never Spoken
 						["sourceQuests"] = { 59063 },	-- Curses!
@@ -439,17 +439,17 @@ _.ExpansionFeatures =
 					q(60910, {	-- Masks of Deception
 						["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
 						["provider"] = { "n", 170705 },	-- Ara'lon
-						["coord"] = { 43.2, 40.1, 1565 },
+						["coord"] = { 43.2, 40.1, ARDENWEALD },
 					}),
 					q(60928, {	-- Blackthorn Captives
 						["sourceQuests"] = { 60910 },	-- Masks of Deception
 						["provider"] = { "n", 170705 },	-- Ara'lon
-						["coord"] = { 43.2, 40.1, 1565 },
+						["coord"] = { 43.2, 40.1, ARDENWEALD },
 					}),
 					q(60934, {	-- Report to Lord Herne
 						["sourceQuests"] = { 60928 },	-- Blackthorn Captives
 						["provider"] = { "n", 170705 },	-- Ara'lon
-						["coord"] = { 41.1, 31.6, 1565 },
+						["coord"] = { 41.1, 31.6, ARDENWEALD },
 						["g"] = {
 							i(175603),	-- Faewoven Cuffs
 							i(179772),	-- Oakheart Bracers
@@ -480,22 +480,22 @@ _.ExpansionFeatures =
 					q(61701, {	-- Searching the Grove
 						["sourceQuests"] = { 61113 },	-- Kivarr's Den
 						["provider"] = { "n", 170705 },	-- Ara'lon
-						["coord"] = { 43.7, 69.1, 1565 },
+						["coord"] = { 43.7, 69.1, ARDENWEALD },
 					}),
 					q(58773, {	-- The Thornspeaker Captive
 						["sourceQuests"] = { 61701 },	-- Searching the Grove
 						["provider"] = { "n", 171413 },	-- Kivarr
-						["coord"] = { 46.6, 73.1, 1565 },
+						["coord"] = { 46.6, 73.1, ARDENWEALD },
 					}),
 					q(61702, {	-- A Swift Intervention
 						["sourceQuests"] = { 58773 },	-- The Thornspeaker Captive
 						["provider"] = { "n", 173612 },	-- Nika
-						["coord"] = { 46.6, 73.1, 1565 },
+						["coord"] = { 46.6, 73.1, ARDENWEALD },
 					}),
 					q(61143, {	-- Return to the Den
 						["sourceQuests"] = { 61702 },	-- A Swift Intervention
 						["provider"] = { "n", 171413 },	-- Kivarr
-						["coord"] = { 41.3, 74.3, 1565 },
+						["coord"] = { 41.3, 74.3, ARDENWEALD },
 						["g"] = {
 							i(175600),	-- Faewoven Sash
 							i(179771),	-- Oakheart Belt
@@ -506,17 +506,17 @@ _.ExpansionFeatures =
 					q(61703, {	-- Nox Root
 						["sourceQuests"] = { 61143 },	-- Return to the Den
 						["provider"] = { "n", 171413 },	-- Kivarr
-						["coord"] = { 43.7, 69.0, 1565 },
+						["coord"] = { 43.7, 69.0, ARDENWEALD },
 					}),
 					q(61709, {	-- Witch's Satchel
 						["sourceQuests"] = { 61703 },	-- Nox Root
 						["provider"] = { "n", 171413 },	-- Kivarr
-						["coord"] = { 46.2, 56.5, 1565 },
+						["coord"] = { 46.2, 56.5, ARDENWEALD },
 					}),
 					q(61710, {	-- The Broken Spear
 						["sourceQuests"] = { 61703 },	-- Nox Root
 						["provider"] = { "o", 357726 },	-- Broken Spear
-						["coord"] = { 33.8, 54.4, 1565 },
+						["coord"] = { 33.8, 54.4, ARDENWEALD },
 					}),
 					q(61711, {	-- Ritual of Purification
 						["sourceQuests"] = {
@@ -524,12 +524,12 @@ _.ExpansionFeatures =
 							61709,	 -- Witch's Satchel
 						},
 						["provider"] = { "n", 171413 },	-- Kivarr
-						["coord"] = { 46.2, 56.5, 1565 },
+						["coord"] = { 46.2, 56.5, ARDENWEALD },
 					}),
 					q(61171, {	-- Unbroken Bonds
 						["sourceQuests"] = { 61711 },	-- Ritual of Purification
 						["provider"] = { "n", 170848 },	-- Lord Herne
-						["coord"] = { 46.2, 56.7, 1565 },
+						["coord"] = { 46.2, 56.7, ARDENWEALD },
 						["g"] = {
 							i(175597),	-- Faewoven Amice
 							i(179770),	-- Oakheart Mantle
@@ -552,28 +552,28 @@ _.ExpansionFeatures =
 					q(59258, {	-- Home of the Tirnenn
 						["sourceQuests"] = { 58446 },	-- Tracker Tracking
 						["provider"] = { "n", 164627 },	-- Reldorn
-						["coord"] = { 35.3, 51.5, 1565 },
+						["coord"] = { 35.3, 51.5, ARDENWEALD },
 					}),
 					q(58706, {	-- Dressing the Kill
 						["sourceQuests"] = { 59258 },	-- Home of the Tirnenn
 						["provider"] = { "n", 161353 },	-- Huln Highmountain
-						["coord"] = { 30.0, 44.9, 1565 },
+						["coord"] = { 30.0, 44.9, ARDENWEALD },
 					}),
 					q(58447, {	-- Monster Hunting
 						["sourceQuests"] = { 58706 },	-- Dressing the Kill
 						["provider"] = { "n", 161353 },	-- Huln Highmountain
-						["coord"] = { 30.0, 44.9, 1565 },
+						["coord"] = { 30.0, 44.9, ARDENWEALD },
 						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
 					}),
 					q(58449, {	-- Acid Reflux
 						["sourceQuests"] = { 58447 },	-- Monster Hunting
 						["provider"] = { "n", 165841 },	-- Huln Highmountain
-						["coord"] = { 35.3, 51.2, 1565 },
+						["coord"] = { 35.3, 51.2, ARDENWEALD },
 					}),
 					q(58450, {	-- Anima Instincts
 						["sourceQuests"] = { 58447 },	-- Monster Hunting
 						["provider"] = { "n", 165841 },	-- Huln Highmountain
-						["coord"] = { 35.3, 51.2, 1565 },
+						["coord"] = { 35.3, 51.2, ARDENWEALD },
 					}),
 					q(59721, {	-- Becoming the Hunt
 						["sourceQuests"] = {
@@ -581,17 +581,17 @@ _.ExpansionFeatures =
 							58450,	-- Anima Instincts
 						},
 						["provider"] = { "n", 164627 },	-- Reldorn
-						["coord"] = { 35.3, 51.5, 1565 },
+						["coord"] = { 35.3, 51.5, ARDENWEALD },
 					}),
 					q(58451, {	-- Voras, The Realm Eater
 						["sourceQuests"] = { 59721 },	-- Becoming the Hunt
 						["provider"] = { "n", 161353 },	-- Huln Highmountain
-						["coord"] = { 24.5, 49.0, 1565 },
+						["coord"] = { 24.5, 49.0, ARDENWEALD },
 					}),
 					q(58452, {	-- Tracking the Shadows
 						["sourceQuests"] = { 58451 },	-- Voras, The Realm Eater
 						["provider"] = { "n", 161353 },	-- Huln Highmountain
-						["coord"] = { 24.5, 49.0, 1565 },
+						["coord"] = { 24.5, 49.0, ARDENWEALD },
 						["g"] = {
 							i(175592),	-- Faewoven Leggings
 							i(179769),	-- Oakheart Britches
@@ -609,7 +609,7 @@ _.ExpansionFeatures =
 					q(59732, {	-- Something Extra for the Winter Queen
 						["sourceQuests"] = { 59731 },	-- An Expected Guest
 						["provider"] = { "n", 165951 },	-- Bwonsamdi
-						["coord"] = { 48.4, 52.5, 1565 },
+						["coord"] = { 48.4, 52.5, ARDENWEALD },
 					}),
 					q(59739, {	-- The Problem with Containing a Death Loa
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
@@ -682,17 +682,17 @@ _.ExpansionFeatures =
 					q(60190, {	-- Assault on Darkreach
 						["sourceQuests"] = { 60189 },	-- We Strike Now
 						["provider"] = { "n", 167686 },	-- Lord Herne
-						["coord"] = { 39.1, 63.7, 1565 },
+						["coord"] = { 39.1, 63.7, ARDENWEALD },
 					}),
 					q(60191, {	-- Ingra Drif
 						["sourceQuests"] = { 60189 },	-- We Strike Now
 						["provider"] = { "n", 172010 },	-- Kivarr
-						["coord"] = { 39.0, 63.7, 1565 },
+						["coord"] = { 39.0, 63.7, ARDENWEALD },
 					}),
 					q(60192, {	-- Their Last Line of Defense
 						["sourceQuests"] = { 60189 },	-- We Strike Now
 						["provider"] = { "n", 167688 },	-- Lady Moonberry
-						["coord"] = { 39.1, 63.7, 1565 },
+						["coord"] = { 39.1, 63.7, ARDENWEALD },
 					}),
 					q(60193, {	-- Unmasked
 						["sourceQuests"] = {
@@ -701,17 +701,17 @@ _.ExpansionFeatures =
 							60192,	-- Their Last Line of Defense
 						},
 						["provider"] = { "n", 171838 },	-- Lord Herne
-						["coord"] = { 35.2, 72.4, 1565 },
+						["coord"] = { 35.2, 72.4, ARDENWEALD },
 					}),
 					q(60194, {	-- The Call of the Hunt
 						["sourceQuests"] = { 60193 },	-- Unmasked
 						["provider"] = { "n", 171992 },	-- Lady Moonberry
-						["coord"] = { 36.2, 69.6, 1565 },
+						["coord"] = { 36.2, 69.6, ARDENWEALD },
 					}),
 					q(60108, {	-- Drust and Ashes
 						["sourceQuests"] = { 60194 },	-- The Call of the Hunt
 						["provider"] = { "n", 172091 },	-- Lord Herne
-						["coord"] = { 39.0, 63.4, 1565 },	-- Ardenweald
+						["coord"] = { 39.0, 63.4, ARDENWEALD },
 						["maps"] = { 1709 },	-- Ardenweald (scenario)
 						["g"] = {
 							i(180721),	-- Enchanted Dreamlight Runestag (MOUNT!)
@@ -732,18 +732,18 @@ _.ExpansionFeatures =
 					q(61554, {	-- The Play's The Thing
 						-- pretty sure this was beta only
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 44.6, 56.2, 1565 },
+						["coord"] = { 44.6, 56.2, ARDENWEALD },
 						["sourceQuests"] = { 61553 },	-- Know Where to Strike
 					}),
 					-- Return to the Maw
 					q(60233, {	-- Souls of the Damned (Ardenweald)
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 					}),
 					q(61508, {	-- Soul Salvation (Ardenweald)
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["sourceQuests"] = { 60233 },	-- Souls of the Damned
 					}),
 					--]]

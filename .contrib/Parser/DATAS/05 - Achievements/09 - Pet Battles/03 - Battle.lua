@@ -206,22 +206,22 @@ _.Achievements =
 				i(184508),	-- Mawsworn Pet Leash
 				crit(1,  {	-- Ardenweald's Tricksters
 					["_quests"] = { 61949 },	-- Ardenweald's Tricksters
-					["coord"] = { 40.2, 28.8, 1565 },
+					["coord"] = { 40.2, 28.8, ARDENWEALD },
 					["cr"] = 173381,	-- Rascal
 				}),
 				crit(2,  {	-- Airborne Defense Force
 					["_quests"] = { 61948 },	-- Airborne Defense Force
-					["coord"] = { 51.2, 44.2, 1565 },
+					["coord"] = { 51.2, 44.2, ARDENWEALD },
 					["cr"] = 173377,	-- Faryl
 				}),
 				crit(3,  {	-- Lurking In The Shadows
 					["_quests"] = { 61947 },	-- Lurking In The Shadows
-					["coord"] = { 40.0, 64.4, 1565 },
+					["coord"] = { 40.0, 64.4, ARDENWEALD },
 					["cr"] = 173376,	-- Nightfang
 				}),
 				crit(4,  {	-- Natural Defenders
 					["_quests"] = { 61946 },	-- Natural Defenders
-					["coord"] = { 58.2, 56.8, 1565 },
+					["coord"] = { 58.2, 56.8, ARDENWEALD },
 					["cr"] = 173372,	-- Glitterdust
 				}),
 				crit(5,  {	-- The Mind Games of Addius
@@ -769,11 +769,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -815,11 +815,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -861,11 +861,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -907,11 +907,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -953,11 +953,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -999,11 +999,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -1045,11 +1045,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -1091,11 +1091,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -1137,11 +1137,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
@@ -1183,11 +1183,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),

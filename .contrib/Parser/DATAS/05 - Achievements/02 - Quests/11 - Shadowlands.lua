@@ -13,32 +13,32 @@ _.Achievements =
 					crit(1, {	-- Faerie Pomander
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 158345 },	-- Lady of the Falls
-						["coord"] = { 51.1, 33.9, 1565 },
+						["coord"] = { 51.1, 33.9, ARDENWEALD },
 					}),
 					crit(2, {	-- Slumberweb
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 165704 },	-- Elder Gwenna
-						["coord"] = { 50.4, 33.0, 1565 },
+						["coord"] = { 50.4, 33.0, ARDENWEALD },
 					}),
 					crit(3, {	-- Vorkai War Paint
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 158519 },	-- Sorcha
-						["coord"] = { 51.1, 33.7, 1565 },
+						["coord"] = { 51.1, 33.7, ARDENWEALD },
 					}),
 					crit(4, {	-- Gorm Whisperer
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 165382 },	-- Gormsmith Cavina
-						["coord"] = { 51.6, 34.0, 1565 },
+						["coord"] = { 51.6, 34.0, ARDENWEALD },
 					}),
 					crit(5, {	-- Tirnenn Resilience
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 165705 },	-- Groonoomcrooek
-						["coord"] = { 51.8, 32.0, 1565 },
+						["coord"] = { 51.8, 32.0, ARDENWEALD },
 					}),
 					crit(6, {	-- Finnan's Luck
 						["_quests"] = { 60475 },	-- We'll Workshop It
 						["crs"] = { 165703 },	-- Elder Finnan
-						["coord"] = { 51.7, 34.0, 1565 },
+						["coord"] = { 51.7, 34.0, ARDENWEALD },
 					}),
 				},
 			}),

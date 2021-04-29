@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1565, {	-- Ardenweald
+		m(ARDENWEALD, {
 			n(-77, {	-- Special
 				n(-919, {	-- Night Mare
 					["description"] = "Enable Debug Mode to view all the steps.\n\nYou will need at least 2 |cFFFFFFFFGoblin Gliders|r and 10 |cff16bf0dLightless Silk|r.  (I encountered a bug where, until I had more than 10 cloth in my bags, I could not progress to the next step, so you may want to bring a few extra.)\n\nYou will also need to have completed the 'Trouble at the Gormling Corral' and 'Tricky Spriggans' criteria of the |cffffff00Sojourner of Ardenweald|r achievement.  You must also fight a 62 rare elite, so bringing a couple friends along is a good idea.",
@@ -21,7 +21,7 @@ _.Zones =
 								57871,	-- Outplayed
 							},
 							["description"] = "Take the |cFFFFFFFFBroken Soulweb|r to Elder Gwenna in Glitterfall Basin.  Give her 10 |cff16bf0dLightless Silk|r and she will repair the |cFFFFFFFFBroken Soulweb|r.",
-							["coord"] = { 50.4, 33.0, 1565 },
+							["coord"] = { 50.4, 33.0, ARDENWEALD },
 							["cost"] = { { "i", 173204, 10 } },	-- 10x Lightless Silk
 							["crs"] = { 165704 },	-- Elder Gwenna
 						}),
@@ -32,7 +32,7 @@ _.Zones =
 							["description"] = "Take the |cff045ab3Dream Catcher|r behind Hibernal Hollow and use it at |cFFFFFFFF62.5, 51.6|r to phase to the Night Mare's realm.",
 							["questID"] = 60306,
 							["isDaily"] = true,
-							["coord"] = { 62.5, 51.6, 1565 },
+							["coord"] = { 62.5, 51.6, ARDENWEALD },
 							["g"] = {
 								crit(16, {	-- Night Mare
 									["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -45,13 +45,13 @@ _.Zones =
 				--[[
 				n(171699, {	-- Shimmermist Runner
 					["coords"] = {
-						{  31.04, 54.51, 1565 },	-- start
-						{  29.60, 55.76, 1565 },	-- 1
-						{  30.02, 57.49, 1565 },	-- 2
-						{  29.56, 57.91, 1565 },	-- 3
-						{  29.31, 59.10, 1565 },	-- 4
-						{  28.82, 58.71, 1565 },	-- 5
-						{  27.56, 57.85, 1565 },	-- 6
+						{  31.04, 54.51, ARDENWEALD },	-- start
+						{  29.60, 55.76, ARDENWEALD },	-- 1
+						{  30.02, 57.49, ARDENWEALD },	-- 2
+						{  29.56, 57.91, ARDENWEALD },	-- 3
+						{  29.31, 59.10, ARDENWEALD },	-- 4
+						{  28.82, 58.71, ARDENWEALD },	-- 5
+						{  27.56, 57.85, ARDENWEALD },	-- 6
 					},
 					["description"] = "Enter the Maze in Oaken Assembly on (31.04, 54.51).\n\n On the 1st intersection at (29.60, 55.76) go LEFT/SOUTH-EAST.\n\n On the 2nd intersection at (30.02, 57.49) go RIGHT/SOUTH-WEST.\n\n On the 3rd intersection at (29.56, 57.91) go LEFT/SOUTH.\n\n On the 4th intersection at (29.31, 59.10) go RIGHT/NORTH-WEST.\n\n On the 5th intersection at (28.82, 58.71) go FORWARD/NORTH-WEST.\n\n On the 6th and last intersection at (27.56, 57.85) go LEFT/WEST into the Area.\n\n You can now engage Shizgher.\n\n After defeating Shizgher you can click Shimmermist Runner and the mount Shimmermist Runner will be put in your bag.",
 					["crs"] = { 171767 },	-- Shizgher

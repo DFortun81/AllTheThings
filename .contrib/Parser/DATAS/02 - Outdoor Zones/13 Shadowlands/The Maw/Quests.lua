@@ -625,7 +625,7 @@ _.Zones =
 				-- q(61496, {	-- A Familiar Energy
 					-- ["provider"] = { "n", 172543 },	-- Rescued Soul
 					-- ["coords"] = {
-						-- { 33.8, 42.5, 1565 },	-- Ardenweald
+						-- { 33.8, 42.5, ARDENWEALD },
 						-- --{ 33.8, 42.5, BASTION },
 						-- --{ 33.8, 42.5, MALDRAXXUS },
 						-- --{ 33.8, 42.5, 1525 },	-- Revendreth

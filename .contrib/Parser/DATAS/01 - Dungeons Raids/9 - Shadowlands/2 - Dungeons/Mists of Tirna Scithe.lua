@@ -4,7 +4,7 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1184, {	-- Mists of Tirna Scithe
-		["coord"] = { 35.6, 54.2, 1565 },
+		["coord"] = { 35.6, 54.2, ARDENWEALD },
 		["maps"] = {
 			1669,	-- Mists of Tirna Scithe
 		},

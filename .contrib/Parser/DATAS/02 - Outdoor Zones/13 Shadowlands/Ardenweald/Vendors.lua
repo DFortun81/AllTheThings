@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1565, {	-- Ardenweald
+		m(ARDENWEALD, {
 			n(VENDORS, {
 				n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>
 					["coords"] = {
-						{ 48.4, 50.4, 1565 },	-- Ardenweald
+						{ 48.4, 50.4, ARDENWEALD },
 						{ 59.6, 31.8, 1701 },	-- Heart of the Forest (covenant)
 					},
 					["g"] = {
@@ -62,13 +62,13 @@ _.Zones =
 					},
 				}),
 				n(172634, {	-- Brightgleam
-					["coord"] = { 33.2, 51.6, 1565 },
+					["coord"] = { 33.2, 51.6, ARDENWEALD },
 					["g"] = {
 						i(180782),	-- Technique: Fae Revel Masque
 					},
 				}),
 				n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
-					["coord"] = { 43.0, 47.0, 1565 },
+					["coord"] = { 43.0, 47.0, ARDENWEALD },
 					["g"] = {
 						i(180748, {	-- Silky Shimmermoth (MOUNT)
 							["cost"] = { { "c", 1813, 5000 } },

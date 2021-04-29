@@ -28,7 +28,7 @@ _.ExpansionFeatures =
 					}),
 					q(60418, {	-- A Call to Bastion
 						["provider"] = { "n", 167193 },	-- Featherlight
-						["coord"] = { 59.7, 31.3, 1565 },
+						["coord"] = { 59.7, 31.3, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -49,14 +49,14 @@ _.ExpansionFeatures =
 					}),
 					q(60373, {	-- A Source of Sorrowvine
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-						["coord"] = { 16.5, 52.4, 1565 },
+						["coord"] = { 16.5, 52.4, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60369, {	-- A Wealth of Wealdwood
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-						["coord"] = { 16.5, 52.4, 1565 },
+						["coord"] = { 16.5, 52.4, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -77,7 +77,7 @@ _.ExpansionFeatures =
 					}),
 					q(60383, {	-- Aiding Maldraxxus
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 46.4, 50.6, 1565 },
+						["coord"] = { 46.4, 50.6, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -91,21 +91,21 @@ _.ExpansionFeatures =
 					}),
 					q(60462, {	-- Anima Appeal
 						["provider"] = { "n", 167196 },	-- Sesselie
-						["coord"] = { 48.9, 39.3, 1565 },
+						["coord"] = { 48.9, 39.3, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60457, {	-- Anima Salvage
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
 					}),
 					q(60374, {	-- Bonemetal Bonanza
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-						["coord"] = { 16.5, 52.4, 1565 },
+						["coord"] = { 16.5, 52.4, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -140,14 +140,14 @@ _.ExpansionFeatures =
 					}),
 					q(60364, {	-- Gildenite Grab
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-						["coord"] = { 16.5, 52.4, 1565 },
+						["coord"] = { 16.5, 52.4, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60414, {	-- Rare Resources
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-						["coord"] = { 43.6, 52.4, 1565 },	-- Ardenweald
+						["coord"] = { 43.6, 52.4, ARDENWEALD },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},

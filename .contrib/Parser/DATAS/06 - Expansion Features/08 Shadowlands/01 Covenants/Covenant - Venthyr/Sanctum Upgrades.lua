@@ -634,7 +634,7 @@ _.ExpansionFeatures =
 								}),
 								q(63694, {	-- Choofa's Best Friend
 									["provider"] = { "n", 160814 },	-- Choofa
-									["coord"] = { 63.7, 36.6, 1565 },	-- Ardenweald
+									["coord"] = { 63.7, 36.6, ARDENWEALD },
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
@@ -677,7 +677,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
 									["provider"] = { "n", 172352 },	-- Niya
-									["coord"] = { 56.3, 55.6, 1565 },	-- Ardenweald
+									["coord"] = { 56.3, 55.6, ARDENWEALD },
 									["g"] = {
 										i(176131, {	-- Contract: Glimpse of the Wilds
 											crit(2, {	-- Glimpse of the Wilds
@@ -1025,7 +1025,7 @@ _.ExpansionFeatures =
 									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for a |cFFFFFFFFPristine Vulpine Pelt|r from Trader Ta'bix in Bastion (|cFFFFFFFF33.4, 36.4|r).\n\n3. Exchange the pelt for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n4. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n5. Exchange the crystal for a |cFFFFFFFFSpiral Deathroc Horn|r from Au'larrynar in Maldraxxus (|cFFFFFFFF53.6, 47.9|r).\n\n6. Return to Revendreth and exchange the horn for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 60.1, 53.8, 1565 },	-- Ardenweald
+									["coord"] = { 60.1, 53.8, ARDENWEALD },
 									["cost"] = {
 										{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
 										{ "i", 180972, 1 },	-- Pristine Vulpine Pelt
@@ -1089,7 +1089,7 @@ _.ExpansionFeatures =
 									["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
 									["provider"] = { "n", 160814 },	-- Choofa
 									["isDaily"] = true,
-									["coord"] = { 63.6, 36.6, 1565 },	-- Ardenweald
+									["coord"] = { 63.6, 36.6, ARDENWEALD },
 									["g"] = {
 										i(176119),	-- RSVP: Choofa
 									},
@@ -1375,7 +1375,7 @@ _.ExpansionFeatures =
 								q(61109, {	-- RSVP: Hunt-Captain Korayn
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
-									["coord"] = { 50.8, 70.4, 1565 },	-- Ardenweald
+									["coord"] = { 50.8, 70.4, ARDENWEALD },
 									["g"] = {
 										i(176116),	-- RSVP: Hunt-Captain Korayn
 									},
@@ -1478,7 +1478,7 @@ _.ExpansionFeatures =
 								q(61354, {	-- RSVP: Lady Moonberry
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
-									["coord"] = { 48.9, 51.0, 1565 },	-- Ardenweald
+									["coord"] = { 48.9, 51.0, ARDENWEALD },
 									["g"] = {
 										i(176112),	-- RSVP: Lady Moonberry
 									},
@@ -1515,7 +1515,7 @@ _.ExpansionFeatures =
 								q(62616, {	-- Night Fae Arsenal
 									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
 									["provider"] = { "n", 165382 },	-- Gormsmith Cavina
-									["coord"] = { 51.6, 34.0, 1565 },	-- Ardenweald
+									["coord"] = { 51.6, 34.0, ARDENWEALD },
 									["g"] = {
 										i(177244, {	-- Night Fae Arsenal
 											crit(14, {	-- Night Fae Arsenal

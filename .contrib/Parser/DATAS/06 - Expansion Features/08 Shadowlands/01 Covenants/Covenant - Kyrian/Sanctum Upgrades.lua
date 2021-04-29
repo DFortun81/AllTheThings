@@ -541,7 +541,7 @@ _.ExpansionFeatures =
 									-- Rewards spell 340388 (Trial: Nuuminuuru)
 									["sourceQuests"] = { 62219 },	-- Fanciful Distractions
 									["provider"] = { "n", 173710 },	-- Nuuminuuru
-									["coord"] = { 51.4, 33.7, 1565 }, -- Ardenweald
+									["coord"] = { 51.4, 33.7, ARDENWEALD },
 								}),
 								q(61369, {	-- Craven Corinth
 									["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
@@ -556,7 +556,7 @@ _.ExpansionFeatures =
 								q(62219, {	-- Fanciful Distractions
 									["sourceQuests"] = { 62218 },	-- A Fountain for Fae
 									["provider"] = { "n", 173710 },	-- Nuuminuuru
-									["coord"] = { 51.4, 33.7, 1565 }, -- Ardenweald
+									["coord"] = { 51.4, 33.7, ARDENWEALD },
 								}),
 								q(61357, {	-- Hatred Abated
 									-- Rewards spell 337133 "Trial: Echthra"
@@ -601,7 +601,7 @@ _.ExpansionFeatures =
 								q(61965, {	-- Piercing the Shell
 									["sourceQuests"] = { 61963 },	-- Called to the Hunt
 									["provider"] = { "n", 173402 },	-- Alderyn
-									["coord"] = { 50.6, 69.9, 1565 },	-- Ardenweald
+									["coord"] = { 50.6, 69.9, ARDENWEALD },
 								}),
 								q(61473, {	-- Sourcing Your Own Materials
 									["sourceQuests"] = { 60497 },	-- Herald's Footpads
@@ -623,7 +623,7 @@ _.ExpansionFeatures =
 									-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
 									["sourceQuests"] = { 61965 },	-- Piercing the Shell
 									["provider"] = { "n", 173403 },	-- Myn'ir
-									["coord"] = { 51.7, 78.8, 1565 },
+									["coord"] = { 51.7, 78.8, ARDENWEALD },
 								}),
 								q(60489, {	-- The Path of Ascension
 									["provider"] = { "n", 167745 },	-- Haephus
