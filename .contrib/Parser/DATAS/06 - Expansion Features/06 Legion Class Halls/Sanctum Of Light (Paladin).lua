@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42847 },	-- Dark Storms
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },						
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(39756, {	-- A Sound Plan
 						["sourceQuests"] = { 38933 },	-- Logistical Matters
@@ -42,7 +42,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },	
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(44250, {	-- Champion of the Light
 						["sourceQuests"] = { 38566 },	-- A United Force
@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100196 },	-- Eadric the Pure
 						["coord"] = { 41.4, 61.1, 24 },
 						["g"] = {
-								i(139693),	-- Crown of the Silver Hand
+							i(139693),	-- Crown of the Silver Hand
 						},
 					}),
 					q(42881, {	-- Champion: Lady Liadrin
@@ -66,13 +66,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42120 },	-- The Silver Hand
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },					
-					}),					
+						["coord"] = { 49.8, 72.4, 24 },
+					}),
 					q(42847, {	-- Dark Storms
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, 24 },						
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42774, {	-- Hope Prevails
 						["sourceQuests"] = { 42773 },	-- The Light Reveals
@@ -96,13 +96,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44153 },	-- Light's Charge
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, 24 },					
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, 24 },						
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(39696, {	-- Rise, Champions
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
@@ -117,7 +117,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
-						["coord"] = { 51.4, 79.0, 22 },						
+						["coord"] = { 51.4, 79.0, 22 },
 					}),
 					q(42000, {	-- Seeker of Truth
 						["sourceQuests"] = { 40408 },	-- Weapons of Legend
@@ -132,7 +132,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },					
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(42017, {	-- Shrine of the Truthguard
 						["sourceQuests"] = { 42005 },	-- The End of the Saga
@@ -144,20 +144,20 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42849 },	-- Wrath and Justice
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, 24 },						
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42846, {	-- The Blood Matriarch
 						["sourceQuests"] = { 39696 },	-- Rise, Champions
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },						
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(42377, {	-- The Brother's Trail
 						["sourceQuests"] = { 42231 },	-- The Mysterious Paladin
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
-					}),	
+					}),
 					q(42005, {	-- The End of the Saga
 						["sourceQuests"] = { 42002 }, -- To Northrend
 						["classes"] = { PALADIN },
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 50.8, 70.9, 24 },						
+						["coord"] = { 50.8, 70.9, 24 },
 					}),
 					q(42773, {	-- The Light Reveals
 						["sourceQuests"] = { 42771 },	-- Keeping the Peace
@@ -180,25 +180,25 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },						
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(42919, {	-- The Scion's Legacy
 						["sourceQuests"] = { 42867 },	-- Meeting of the Silver Hand
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, 24 },						
+						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(38376, {	-- The Search for the Highlord
 						["sourceQuests"] = { 42774 },	-- Hope Prevails
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.3, 53.2, 23 },				
+						["coord"] = { 74.3, 53.2, 23 },
 					}),
 					q(42120, {	-- The Silver Hand
 						["sourceQuests"] = { 42377 },	-- The Brother's Trail
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
-						["coord"] = { 72.0, 49.3, 627 },					
+						["coord"] = { 72.0, 49.3, 627 },
 					}),
 					q(42002, {	-- To Northrend
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
@@ -226,12 +226,12 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 74.8, 48.2, 627 },
-					}),					
+					}),
 					q(42849, {	-- Wrath and Justice
 						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, 24 },						
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					--[[
 					q(43424),	-- A Hero's Weapon

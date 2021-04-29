@@ -238,7 +238,7 @@ _.HiddenQuestTriggers =
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
 		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
-		
+
 		-- Trial of Style
 		q(48058),	-- Ensemble: Mana-Etched Regalia
 		q(48059),	-- Ensemble: Der'izu Armor
@@ -2067,7 +2067,7 @@ _.HiddenQuestTriggers =
 		q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
 		q(44064),	-- Paladin Order Hall - Silver Hand Chosen Second (Holy)
 		q(44066),	-- Paladin Order Hall - Ashbringer Chosen Second (Retribution)
-		q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third(Retribution)
+		q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third (Retribution)
 		q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
@@ -2083,7 +2083,7 @@ _.HiddenQuestTriggers =
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 		q(43507), 	-- Priest Order Hall - Looting the priest altar
 		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
-		
+
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
@@ -2645,7 +2645,7 @@ _.HiddenQuestTriggers =
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-		
+
 		-- MISSIONS
 		q(53743),	-- Hillcrest Pasture completed
 		q(53745),	-- Mudfisher Cove completed
