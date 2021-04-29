@@ -1084,6 +1084,12 @@ _.Zones =
 				
 				-- Korthia Daily
 				i(186017),	-- Korthium - TODO: item is marked WIP, itemID may change.  rewarded by some dailies but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
+				q(63779, {	-- A Semblance of Normal
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179134 },	-- Pelagos
+					["isDaily"] = true,
+					["coord"] = { 61.7, 24.0, 1961 },	-- Korthia
+				}),
 				q(63783, {	-- Anima Reclaimation
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -1114,6 +1120,12 @@ _.Zones =
 				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
 				--	TODO: add object localization
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
+				q(63963, {	-- Broker's Bounty: Ripmaul
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -1271,6 +1283,12 @@ _.Zones =
 					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, 1961 },	-- Korthia
+				}),
+				q(64166, {	-- Random Memory Access
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179134 },	-- Pelagos
+					["isDaily"] = true,
+					["coord"] = { 61.7, 24.0, 1961 },	-- Korthia
 				}),
 				q(63777, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
