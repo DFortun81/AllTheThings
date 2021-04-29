@@ -69,6 +69,10 @@ SHATTRATH_CITY = 111;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
+-- Battle for Azeroth
+CHAMBER_OF_HEART = 1021;
+REPAIRED_CHAMBER_OF_HEART = 1473;
+
 -- Helper Tables
 local DifficultyDB = {
 	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
