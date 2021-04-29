@@ -79,7 +79,6 @@ local HORDE_ONLY = {
 };
 
 -- Coroutine Helper Functions
-app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
@@ -141,10 +140,32 @@ local function Callback(method, ...)
 	end
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = true;
+		-- print("Callback:",method, ...)
 		local newCallback = function(...)
 			app.__callbacks[method] = nil;
 			method(...);
 		end;
+		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a named timer callback method to run on the next game frame with the provided params; the name can only be set to run once per frame
+-- This callback version is used for in-line self-encapsulated functions since they are apparently
+-- re-defined on every call and thus are non-unique
+local function SelfCallback(self, name, method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self] then
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self][name] then
+		app.__callbacks[self][name] = true;
+		-- print("Callback:",self,name, ...)
+		local newCallback = function(...)
+				app.__callbacks[self][name] = nil;
+				method(...);
+			end;
 		C_Timer.After(0, newCallback);
 	end
 end
@@ -3961,15 +3982,20 @@ fieldConverters = {
 			rawget(fieldConverters, "mapID")(group, value[3]);
 		end
 	end,
-	["coords"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
-		for i,coord in ipairs(value) do
-			if coord[3] then
-				_cache(group, coord[3]);
-			end
-		end
-	end,
 	]]--
+	-- ["coords"] = function(group, value)
+	-- 	-- Don't cache by coords if 'maps' is used at or above this group already
+	-- 	if GetRelativeValue(group, "maps") then return; end
+	-- 	local relMapID, refText = GetRelativeValue(group, "mapID"), group.text;
+	-- 	_cache = rawget(fieldConverters, "mapID");
+	-- 	for i,coord in ipairs(value) do
+	-- 		-- Don't cache by coord mapID if this group is already under an object using that mapID
+	-- 		if coord[3] and coord[3] ~= relMapID then
+	-- 			print("Cached Group for MapID",relMapID,coord[3],refText)
+	-- 			_cache(group, coord[3]);
+	-- 		end
+	-- 	end
+	-- end,
 	["cost"] = function(group, value)
 		if type(value) == "number" then
 			return;
@@ -11511,7 +11537,6 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 		end
-		table.insert(app.RawData, popout.data);
 	end
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
@@ -11576,7 +11601,7 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text, data.itemID);
+			local s, dressable = GetSourceID(text);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
@@ -11700,6 +11725,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady then return; end
+	-- print("Refresh:",self.Suffix or self.suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -11770,15 +11796,15 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			Callback(function()
-				self:UpdateDone();
-			end);
+			SelfCallback(self, "UpdateDone",
+				function() self:UpdateDone(); end);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			Callback(function()
-				self.processingLinks = nil;
-				self:Refresh();
-			end);
+			SelfCallback(self, "Refresh",
+				function()
+					self.processingLinks = nil;
+					self:Refresh();
+				end);
 		end
 	else
 		self:Hide();
@@ -12814,16 +12840,15 @@ local function ProcessGroup(data, object)
 	end
 end
 local function UpdateWindow(self, force, got)
+	if not app.IsReady then return; end
 	if self.data then
-		-- print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
-			if not self.rowData then
-				self.rowData = {};
-			else
-				wipe(self.rowData);
-			end
+			if not self.rowData then self.rowData = {};
+			else wipe(self.rowData); end
 			self.data.expanded = true;
-			if self.shouldFullRefresh and (force or got) then
+			if not self.doesOwnUpdate and
+				(force or (self.shouldFullRefresh and got)) then
 				self.data.progress = 0;
 				self.data.total = 0;
 				UpdateGroups(self.data, self.data.g);
@@ -12889,7 +12914,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Dungeons & Raids
 		db = {};
@@ -13441,7 +13465,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -13493,7 +13516,7 @@ local backdrop = {
 
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
-	-- print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
+	-- print("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
@@ -13511,13 +13534,7 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
-			-- print("Update Groups")
 			app:GetDataCache();
-			for i,data in ipairs(app.RawData) do
-				data.progress = 0;
-				data.total = 0;
-				UpdateGroups(data, data.g);
-			end
 
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);
@@ -13722,7 +13739,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 			},
 		};
 		BuildGroups(self.data, self.data.g);
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -13824,7 +13840,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		self.IsSameMapData = function(self)
 			local data = self.data;
@@ -14173,7 +14188,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					},
 				});
 			end
-			self:Update();
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniList(id, show)
 			-- print("open",id,show);
@@ -14198,7 +14214,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			Callback(function() self:Update(); end);
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
@@ -14258,6 +14275,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			-- self.doesOwnUpdate = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
@@ -14332,24 +14350,23 @@ app:GetWindow("Harvester", UIParent, function(self)
 			]]--
 			self.data = db;
 			BuildGroups(db, db.g);
-			UpdateGroups(db, db.g);
 			self.ScrollBar:SetValue(1);
 			self.UpdateDone = function(self)
+				-- Hide data which have completed their harvest
 				local progress = 0;
 				local total = 0;
 				for i,group in ipairs(db.g) do
 					total = total + 1;
-					if (group.s and group.s == 0) or group.artifactID or group.reSource then
-						group.visible = true;
-					else
+					if not group.reSource then
 						group.visible = false;
-						group.reSource = nil;
 						progress = progress + 1;
+						group.reSource = nil;
 					end
 				end
 				if self.rowData then
 					local count = #self.rowData;
 					if count > 1 then
+						-- Remove completed rows
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
 						for i=count,1,-1 do
@@ -14371,10 +14388,11 @@ app:GetWindow("Harvester", UIParent, function(self)
 						self.UpdateDone = nil;
 					end
 				end
-				Callback(function() self:Refresh(); end);
+				-- Update the Harvester Window to re-populate row data for next refresh
+				SelfCallback(self, "Refresh",
+					function() self:Refresh(); end);
 			end
 		end
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		self:BaseUpdate(true);
 	end
 end);
@@ -14579,6 +14597,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			self.doesOwnUpdate = true;
 
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
