@@ -20,6 +20,10 @@ _.NeverImplemented =
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
 	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item wont be added, please put it into the correct section
+		i(179531),	-- Faesworn Reaper (might be ingame, hopefully can source it in #errors)
+		i(180491),	-- wingdancers spire (might be ingame, hopefully can source it in #errors)
+		i(179515),	-- faesworn falchion (might be ingame, hopefully can source it in #errors)
+		i(179564),	-- faesworn channeling root (might be ingame, hopefully can source it in #errors)
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
@@ -59,23 +63,6 @@ _.NeverImplemented =
 		i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
 		i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
 		i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
-		i(175181),	-- Retrieving Data
-		i(175213),	-- Retrieving Data
-		i(178302),	-- Retrieving Data
-		i(178307),	-- Retrieving Data
-		i(178312),	-- Retrieving Data
-		i(178314),	-- Retrieving Data
-		i(178318),	-- Retrieving Data
-		i(178323),	-- Retrieving Data
-		i(178326),	-- Retrieving Data
-		i(178330),	-- Retrieving Data
-		i(178480),	-- Retrieving Data
-		i(178665),	-- Retrieving Data
-		i(183434),	-- Retrieving Data
-		i(183431),	-- Retrieving Data
-		i(178488),	-- Retrieving Data
-		i(178489),	-- Retrieving Data
-		i(178673),	-- Retrieving Data
 		-- Pets
 		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -129,17 +116,7 @@ _.NeverImplemented =
 	}),
 	n(-10052, {	-- BFA
 
-		i(159165),	-- Ashvane Company Bracers
-		i(159159),	-- Ashvane Company Gauntlets
-		i(159160),	-- Ashvane Company Girdle
-
-		-- patch 8.3 removed content
-		i(173421),	-- Black Empire Signet
-		i(173426),	-- Black Empire trinkets
-
 		-- weapons with placeholder names from BFA section
-		i(182564),	-- NPE Weapon Dagger AGI
-		i(182573),	-- NPE Weapon Dagger AGI 2
 		i(182350),	-- Ardenweald Raid Mace STR
 		i(182578),	-- NPE Weapon 1H Mace AGI
 		i(182566),	-- NPE Weapon Staff AGI
@@ -1653,6 +1630,9 @@ _.NeverImplemented =
 			i(163423),	-- 7th Legionnaire's Girdle
 			i(163408),	-- 7th Legionnaire's Legplates
 			i(163420),	-- 7th Legionnaire's Stompers
+			i(159165),	-- Ashvane Company Bracers
+			i(159159),	-- Ashvane Company Gauntlets
+			i(159160),	-- Ashvane Company Girdle
 			i(163457),	-- Honorbound Centurion's Helmet
 			i(163454),	-- Honorbound Centurion's Pauldrons
 			i(163462),	-- Honorbound Centurion's Girdle
@@ -2010,6 +1990,7 @@ _.NeverImplemented =
 			i(4988),		-- Burning Obsidian Band
 			i(17000),	-- Band of the Wraith
 			i(17108),	-- Mark of Deflection
+			i(173421),	-- Black Empire Signet
 			i(33097),	-- Unknown
 			i(33193),	-- Unknown
 			i(33194),	-- Unknown
@@ -2091,6 +2072,7 @@ _.NeverImplemented =
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
 			i(37561),	-- Unknown
+			i(173426),	-- Black Empire trinkets
 			i(25994),	-- rune of force (only beta)
 			i(25995),	-- Star of Sha'naar (only beta)
 			i(18355),	-- Ferras Collar
@@ -2204,6 +2186,23 @@ _.NeverImplemented =
 			i(168031),	-- dnt transference disc
 		}),
 		-- M+ PTR Testing
+		i(175181),	-- Retrieving Data
+		i(175213),	-- Retrieving Data
+		i(178302),	-- Retrieving Data
+		i(178307),	-- Retrieving Data
+		i(178312),	-- Retrieving Data
+		i(178314),	-- Retrieving Data
+		i(178318),	-- Retrieving Data
+		i(178323),	-- Retrieving Data
+		i(178326),	-- Retrieving Data
+		i(178330),	-- Retrieving Data
+		i(178480),	-- Retrieving Data
+		i(178665),	-- Retrieving Data
+		i(183434),	-- Retrieving Data
+		i(183431),	-- Retrieving Data
+		i(178488),	-- Retrieving Data
+		i(178489),	-- Retrieving Data
+		i(178673),	-- Retrieving Data
 		i(159681),	-- Set Keystone Map: Darkheart Thicket
 		i(159683),	-- Set Keystone Map: Black Rook Hold
 		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
@@ -3915,6 +3914,8 @@ _.NeverImplemented =
 		}),
 		n(-333, {	-- Daggers
 			i(108785),	-- Unknown
+			i(182564),	-- NPE Weapon Dagger AGI
+			i(182573),	-- NPE Weapon Dagger AGI 2
 			i(115295),	-- Spectral Dagger
 			i(108786),	-- Unknown
 			i(167148),	-- Unknown
