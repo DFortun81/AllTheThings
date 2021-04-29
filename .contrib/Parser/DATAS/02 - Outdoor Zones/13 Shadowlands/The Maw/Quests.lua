@@ -188,7 +188,7 @@ _.Zones =
 					["coord"] = { 25.6, 24.2, 1543 },
 				}),
 				q(63072, {	-- Acquisition: Stygic Ore
-					-- ["provider"] = { "o", ? },	-- 
+					-- ["provider"] = { "o", ? },	--
 					["isDaily"] = true,
 					["coord"] = { 48.2, 81.9, 1543 },
 				}),
@@ -432,7 +432,7 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(62882, {	-- Setting the Ground Rules
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						62905,	-- Back into the Darkness (Venthyr)
 						62893,	-- Do What We Cannot (Night Fae)
 						62832,	-- Friends in Dark Places (Kyrian)
@@ -594,7 +594,7 @@ _.Zones =
 				-- Do not think these made it into the release version of the game
 				-- q(60232, {	-- Souls of the Damned (Bastion)
 					-- ["provider"] = { "n", 160212 },	-- Soulguide Daelia
-					-- ["coord"] = { 33.9, 43.5, 1533 },
+					-- ["coord"] = { 33.9, 43.5, BASTION },
 					-- ["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 				-- }),
 				-- q(60130, {	-- Souls of the Damned (Maldraxxus)
@@ -609,7 +609,7 @@ _.Zones =
 				-- }),
 				-- q(61508, {	-- Soul Salvation (Bastion)
 					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, 1533 },
+					-- --["coord"] = { 33.9, 43.5, BASTION },
 					-- ["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
 				-- }),
 				-- q(61513, {	-- Soul Salvation (Maldraxxus)
@@ -626,7 +626,7 @@ _.Zones =
 					-- ["provider"] = { "n", 172543 },	-- Rescued Soul
 					-- ["coords"] = {
 						-- { 33.8, 42.5, 1565 },	-- Ardenweald
-						-- --{ 33.8, 42.5, 1533 },	-- Bastion
+						-- --{ 33.8, 42.5, BASTION },
 						-- --{ 33.8, 42.5, 1536 },	-- Maldraxxus
 						-- --{ 33.8, 42.5, 1525 },	-- Revendreth
 					-- },

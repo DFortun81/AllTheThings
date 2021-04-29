@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1533, {	-- Bastion
+		m(BASTION, {
 			n(-34,  {	-- World Quests
 				q(61593, {	-- A Crisis of Memory (no idea why there are 2 versions of this)
 					["isWorldQuest"] = true,

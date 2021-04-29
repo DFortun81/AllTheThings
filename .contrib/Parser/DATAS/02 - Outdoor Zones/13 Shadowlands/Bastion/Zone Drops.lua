@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1533, {	-- Bastion
+		m(BASTION, {
 			n(ZONEDROPS, {
 				i(184397, {	-- Lost Featherling (PET)
 					["description"] = "This pet seems to only drop for Kyrian players, but can be used by non-Kyrians",

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1533, {	-- Bastion
+		m(BASTION, {
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
@@ -37,7 +37,7 @@ _.Zones =
 					i(181612),	-- Shieldguard's Girdle
 					i(181609),	-- Shieldguard's Greathelm
 					i(181610),	-- Shieldguard's Greaves
-					i(181611),	-- Shieldguard's Shoulderplates 
+					i(181611),	-- Shieldguard's Shoulderplates
 					i(181614),	-- Shieldguard's Vambraces
 					i(181606),	-- Shieldguard's Warboots
 					i(181704),	-- Silvernote Cloak

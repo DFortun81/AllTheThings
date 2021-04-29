@@ -133,7 +133,7 @@ _.ExpansionFeatures =
 					}),
 					q(60435, {	-- Challenges in Revendreth
 						["provider"] = { "n", 167206 },	-- Yanlar
-						["coord"] = { 36.8, 24.8, 1533 },
+						--["coord"] = { 36.8, 24.8,  }, this had Bastion map, should be fixed
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},

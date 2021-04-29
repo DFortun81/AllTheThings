@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1533, {	-- Bastion
+		m(BASTION, {
 			n(VENDORS, {
 				n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
-					["coord"] = { 52.2, 47.0, 1533 },
+					["coord"] = { 52.2, 47.0, BASTION },
 					["g"] = {
 						i(183740, {	-- Gilded Prowler
 							["cost"] = 300000000, -- 30,000g
@@ -45,7 +45,7 @@ _.Zones =
 					i(180136),	-- The Brokers Angle'r
 				}),
 				n(158625, {	-- Trader Ta'bix
-					["coord"] = { 33.4, 36.4, 1533 },
+					["coord"] = { 33.4, 36.4, BASTION },
 					["g"] = {
 						i(180972, {	-- Pristine Vuline Pelt
 							["description"] = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",

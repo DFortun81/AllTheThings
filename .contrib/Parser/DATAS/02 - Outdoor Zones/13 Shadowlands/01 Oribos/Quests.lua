@@ -583,7 +583,7 @@ _.Zones =
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering Bastion after choosing a different Zone",
 					["provider"] = { "n", 163427 },	-- Kalisthene
-					["coord"] = { 51.1, 43.7, 1533 },
+					["coord"] = { 51.1, 43.7, BASTION },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
 						62707,	-- The Elysian Fields [Non-Kyrian]
@@ -661,7 +661,7 @@ _.Zones =
 				q(62729, {	-- Return to Oribos
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Kalisthene
-					["coord"] = { 51.1, 43.7, 1533 },
+					["coord"] = { 51.1, 43.7, BASTION },
 					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 					["lvl"] = { 48, 60 },
 				}),

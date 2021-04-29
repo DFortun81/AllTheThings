@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1533, {	-- Bastion
+		m(BASTION, {
 			n(-169, { 	-- Emissary Quests
 				q(61097, {	-- Supplies from The Ascended
 					["provider"] = { "n", 160470 },	-- Adjutant Nikos
-					["coord"] = { 52.2, 47.0, 1533 },
+					["coord"] = { 52.2, 47.0, BASTION },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {

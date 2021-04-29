@@ -266,22 +266,22 @@ _.Achievements =
 				}),
 				crit(13, {	-- Thenia's Loyal Companions
 					["_quests"] = { 61791 },	-- Thenia's Loyal Companions
-					["coord"] = { 54.6, 56.0, 1533 },
+					["coord"] = { 54.6, 56.0, BASTION },
 					["cr"] = 173129,	-- Thenia
 				}),
 				crit(14, {	-- Micro Defense Force
 					["_quests"] = { 61787 },	-- Micro Defense Force
-					["coord"] = { 51.4, 38.2, 1533 },
+					["coord"] = { 51.4, 38.2, BASTION },
 					["cr"] = 173130,	-- Zolla
 				}),
 				crit(15, {	-- Cliffs of Bastion
 					["_quests"] = { 61784 },	-- Cliffs of Bastion
-					["coord"] = { 34.8, 62.8, 1533 },
+					["coord"] = { 34.8, 62.8, BASTION },
 					["cr"] = 173131,	-- Stratios
 				}),
 				crit(16, {	-- Mega Bite
 					["_quests"] = { 61783 },	-- Mega Bite
-					["coord"] = { 36.6, 31.8, 1533 },
+					["coord"] = { 36.6, 31.8, BASTION },
 					["cr"] = 173133,	-- Jawbone
 				}),
 			}),
@@ -757,15 +757,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -803,15 +803,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -849,15 +849,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -895,15 +895,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -941,15 +941,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -987,15 +987,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1033,15 +1033,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1079,15 +1079,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1125,15 +1125,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
@@ -1171,15 +1171,15 @@ _.Achievements =
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust

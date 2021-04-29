@@ -72,7 +72,7 @@ _.ExpansionFeatures =
 							58586,	-- The Right Stuff
 						},
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(59325, {	-- A Stalwart Ally
 						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
@@ -85,7 +85,7 @@ _.ExpansionFeatures =
 					q(58555, {	-- A Tense Reunion
 						["sourceQuests"] = { 58530 },	-- Hidden Mirror
 						["provider"] = { "n", 162213 },	-- General Draven
-						["coord"] = { 49.7, 30.1, 1533 },	-- Bastion
+						["coord"] = { 49.7, 30.1, BASTION },
 					}),
 					q(60183, {	-- After Them!
 						["sourceQuests"] = {
@@ -163,7 +163,7 @@ _.ExpansionFeatures =
 					q(60993, {	-- Citadel of Loyalty
 						["sourceQuests"] = { 58656 },	-- Heavy is the Head...
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(58326, {	-- Combing the Catacombs
 						["sourceQuests"] = { 58842 },	-- The Curator
@@ -193,7 +193,7 @@ _.ExpansionFeatures =
 							58603,	-- Phaestus, Genesis of Aeons
 						},
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(58428, {	-- Crypt Crashers
 						["sourceQuests"] = { 58372 },	-- Lead the Way
@@ -208,7 +208,7 @@ _.ExpansionFeatures =
 					q(60995, {	-- Disloyalty
 						["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
 						["provider"] = { "n", 170999 },	-- General Draven
-						["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
+						["coord"] = { 24.3, 29.8, BASTION },
 					}),
 					q(60265, {	-- Disrupting the Chain
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
@@ -244,7 +244,7 @@ _.ExpansionFeatures =
 							60994,	-- Lowering Their Defenses
 						},
 						["provider"] = { "n", 171147 },	-- General Draven
-						["coord"] = { 24.3, 29.7, 1533 },	-- Bastion
+						["coord"] = { 24.3, 29.7, BASTION },
 					}),
 					q(57772, {	-- Fangs and Minds
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
@@ -274,7 +274,7 @@ _.ExpansionFeatures =
 					q(58656, {	-- Heavy is the Head...
 						["sourceQuests"] = { 58630 },	-- Crown of the Harvesters
 						["provider"] = { "n", 174587 },	-- Mikanikos
-						["coord"] = { 51.4, 18.5, 1533 },	-- Bastion
+						["coord"] = { 51.4, 18.5, BASTION },
 					}),
 					q(58530, {	-- Hidden Mirror
 						["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
@@ -368,7 +368,7 @@ _.ExpansionFeatures =
 					q(60994, {	-- Lowering Their Defenses
 						["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
 						["provider"] = { "n", 171001 },	-- Mikanikos
-						["coord"] = { 24.3, 29.8, 1533 },	-- Bastion
+						["coord"] = { 24.3, 29.8, BASTION },
 					}),
 					q(58389, {	-- Maldraxxian Weapons
 						["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
@@ -428,7 +428,7 @@ _.ExpansionFeatures =
 					q(58585, {	-- No Friend of Mine
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.6, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.6, BASTION },
 					}),
 					q(62921, {	-- Our True Purpose
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
@@ -447,7 +447,7 @@ _.ExpansionFeatures =
 							58586,	-- The Right Stuff
 						},
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.5, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.5, BASTION },
 					}),
 					q(57884, {	-- Reclaiming Thornhill Manor
 						["sourceQuests"] = {
@@ -491,7 +491,7 @@ _.ExpansionFeatures =
 					q(58584, {	-- Right our Wrongs
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
 						["provider"] = { "n", 161526 },	-- General Draven
-						["coord"] = { 50.1, 20.6, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.6, BASTION },
 						["g"] = {
 							i(180937),	-- Fearstalker's Ebony Cloak
 							i(180934),	-- Soulbreaker's Ebony Drape
@@ -641,7 +641,7 @@ _.ExpansionFeatures =
 					q(59233, {	-- The Prince's New Crown
 						["sourceQuests"] = { 60996 },	-- Face Your Fears
 						["provider"] = { "n", 171175 },	-- General Draven
-						["coord"] = { 21.0, 22.8, 1533 },	-- Bastion
+						["coord"] = { 21.0, 22.8, BASTION },
 						["g"] = {
 							i(180907),	-- Fearstalker's Ebony Sabatons
 							i(180906),	-- Soulbreaker's Ebony Slippers
@@ -659,7 +659,7 @@ _.ExpansionFeatures =
 					q(58586, {	-- The Right Stuff
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 50.1, 20.6, 1533 },	-- Bastion
+						["coord"] = { 50.1, 20.6, BASTION },
 					}),
 					q(62904, {	-- The Souls Plight
 						["sourceQuests"] = { 62903 },	-- Into the Reservoir

@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				n(-901, sharedData({	-- Covenant Callings
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						["repeatable"] = true,
-					}, {
+				}, {
 					q(62694, {	-- A Calling in Maldraxxus
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
@@ -157,28 +157,28 @@ _.ExpansionFeatures =
 					}),
 					q(60408, {	-- Training Our Forces
 						["provider"] = { "n", 167209 },	-- Niall Kugal
-						["coord"] = { 54.4, 67.8, 1533 },
+						--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious [Live Reward]
 						},
 					}),
 					q(60402, {	-- Training in Ardenweald
 						["provider"] = { "n", 167209 },	-- Niall Kugal
-						["coord"] = { 54.4, 67.8, 1533 },
+						--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60405, {	-- Training in Bastion
 						["provider"] = { "n", 167209 },	-- Niall Kugal
-						["coord"] = { 54.4, 67.8, 1533 },
+						--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60411, {	-- Training in Revendreth
 						["provider"] = { "n", 167209 },	-- Niall Kugal
-						["coord"] = { 54.4, 67.8, 1533 },
+						--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},

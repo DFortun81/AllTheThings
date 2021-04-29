@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 				n(FLIGHT_PATHS, {
 					fp(2528, {	-- Bastion, Elysian Hold
 						["customCollect"] = "SL_COV_KYR",	-- Kyrian
-						["coord"] = { 65.6, 17.6, 1533 },
+						["coord"] = { 65.6, 17.6, BASTION },
 					}),
 				}),
 			},

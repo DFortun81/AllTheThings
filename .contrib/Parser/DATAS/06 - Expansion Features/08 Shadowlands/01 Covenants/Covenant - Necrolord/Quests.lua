@@ -243,8 +243,8 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
 						["coord"] = { 50.8, 24.4, 1536 },	-- Maldraxxus
 					}),
-					
-					
+
+
 					-- non-chapter Necrolord quests
 					q(60111, {	-- Forging a Friendship
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
@@ -260,18 +260,18 @@ _.ExpansionFeatures =
 						["description"] = "Becomes available at Renown 22",
 					}),
 					-- TODO: may be a quest or two missing here? same screenshot in discord like 3 times with different provider/sq info >_<
-					
-					
-					
-					
-					
-					
-					
-					
-					
+
+
+
+
+
+
+
+
+
 
 					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
-					
+
 					q(57778, {	-- The Maldraxxian Job
 						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
 						["provider"] = { "n", 161907 },	-- Baroness Draka
@@ -353,12 +353,12 @@ _.ExpansionFeatures =
 					q(59648, {	-- Peace by Piece
 						["sourceQuests"] = { 59625 },	-- The Only Cure
 						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 40.7, 55.0, 1533 },	-- Bastion
+						["coord"] = { 40.7, 55.0, BASTION },
 					}),
 					q(59650, {	-- No Hesitation, No Surrender
 						["sourceQuests"] = { 59625 },	-- The Only Cure
 						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 40.7, 55.0, 1533 },	-- Bastion
+						["coord"] = { 40.7, 55.0, BASTION },
 					}),
 					q(59645, {	-- Death Rains
 						["sourceQuests"] = { 59625 },	-- The Only Cure
@@ -371,7 +371,7 @@ _.ExpansionFeatures =
 							59645,	-- Death Rains
 						},
 						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 38.9, 55.2, 1533 },	-- Bastion
+						["coord"] = { 38.9, 55.2, BASTION },
 					}),
 					q(59659, {	-- Aerial Absolution
 						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
@@ -387,12 +387,12 @@ _.ExpansionFeatures =
 							59678,	-- Sustain, In Vain
 						},
 						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 30.0, 55.2, 1533 },	-- Bastion
+						["coord"] = { 30.0, 55.2, BASTION },
 					}),
 					q(59700, {	-- The Last Labor
 						["sourceQuests"] = { 59698 },	-- Wipe the Slate Clean
 						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 30.0, 55.2, 1533 },	-- Bastion
+						["coord"] = { 30.0, 55.2, BASTION },
 						["g"] = {
 							i(182271),	-- Bladesworn Conjurer's Gloves
 							i(182253),	-- Bladesworn Harbinger's Crushers
@@ -403,22 +403,22 @@ _.ExpansionFeatures =
 					q(59709, {	-- Afterlife Goes On
 						["sourceQuests"] = { 59700 },	-- The Last Labor
 						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 29.7, 53.1, 1533 },	-- Bastion
+						["coord"] = { 29.7, 53.1, BASTION },
 					}),
 					q(59748, {	-- No Peace In Death
 						["sourceQuests"] = { 59709 },	-- Afterlife Goes On
 						["provider"] = { "n", 165795 },	-- Alexandros Mograine <The Ashbringer>
-						["coord"] = { 41.6, 55.1, 1533 },	-- Bastion
+						["coord"] = { 41.6, 55.1, BASTION },
 					}),
 					q(59921, {	-- All I Ever Will Be
 						["sourceQuests"] = { 59748 },	-- No Peace In Death
 						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 46.5, 63.0, 1533 },	-- Bastion
+						["coord"] = { 46.5, 63.0, BASTION },
 					}),
 					q(59922, {	-- Do Not Forget
 						["sourceQuests"] = { 59921 },	-- All I Ever Will Be
 						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 46.5, 63.0, 1533 },	-- Bastion
+						["coord"] = { 46.5, 63.0, BASTION },
 					}),
 					q(59894, {	-- The Golden Dawn
 						["sourceQuests"] = { 59922 },	-- Do Not Forget

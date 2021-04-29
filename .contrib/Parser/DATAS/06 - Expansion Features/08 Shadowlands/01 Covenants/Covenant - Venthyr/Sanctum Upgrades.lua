@@ -659,7 +659,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
 									["provider"] = { "n", 172448 },	-- Stewart
-									["coord"] = { 33.9, 66.5, 1533 },	-- Bastion
+									["coord"] = { 33.9, 66.5, BASTION },
 									["g"] = {
 										i(176135, {	-- Contract: Divine Desserts
 											crit(5, {	-- Divine Desserts
@@ -884,7 +884,7 @@ _.ExpansionFeatures =
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
 									["provider"] = { "n", 174916 },	-- Kleia
-									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
+									["coord"] = { 55.8, 86.4, BASTION },
 								}),
 								q(63213, {	-- Naladu the Elder
 									["provider"] = { "n", 176253 },	-- Elder Naladu
@@ -1052,7 +1052,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["provider"] = { "n", 174916 },	-- Kleia
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
+									["coord"] = { 55.8, 86.4, BASTION },
 									["g"] = {
 										i(176123),	-- RSVP: Kleia and Pelagos
 									},
@@ -1071,7 +1071,7 @@ _.ExpansionFeatures =
 								--	available for me after Week 5 Ember Court (1,708 Friendly, not sure if that matters)
 									["provider"] = { "n", 166577 },	-- Sika
 									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.7, 82.6, 1533 },	-- Bastion
+									["coord"] = { 52.7, 82.6, BASTION },
 									["g"] = {
 										i(176125),	-- RSVP: Sika
 									},
@@ -1100,7 +1100,7 @@ _.ExpansionFeatures =
 								}),
 								q(63699, {	-- Sika's Best Friend
 									["provider"] = { "n", 166577 },	-- Sika
-									["coord"] = { 52.6, 82.5, 1533 },	-- Bastion
+									["coord"] = { 52.6, 82.5, BASTION },
 								}),
 								q(61898, {	-- Small Bites
 									["minReputation"] = { 2445, FRIENDLY },
@@ -1383,7 +1383,7 @@ _.ExpansionFeatures =
 								q(61123, {	-- RSVP: Polemarch Adrestes
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
-									["coord"] = { 51.8, 47.7, 1533 },	-- Bastion
+									["coord"] = { 51.8, 47.7, BASTION },
 									["g"] = {
 										i(176117),	-- RSVP: Polemarch Adrestes
 									},
@@ -1486,7 +1486,7 @@ _.ExpansionFeatures =
 								q(61173, {	-- RSVP: Mikanikos
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171647 },	-- Mikanikos
-									["coord"] = { 50.1, 21.0, 1533 },	-- Bastion
+									["coord"] = { 50.1, 21.0, BASTION },
 									["g"] = {
 										i(176113),	-- RSVP: Mikanikos
 										i(182114),	-- Assorted Parts and 'Things'

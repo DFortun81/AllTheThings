@@ -28,7 +28,7 @@ _.ExpansionFeatures =
 								["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
 								["isDaily"] = true,
 								["questID"] = 61688,
-								["coord"] = { 60.2, 78.2, 1533 },	-- Bastion
+								["coord"] = { 60.2, 78.2, BASTION },
 								["g"] = {
 									i(180762),	-- Phalynx of Humility (MOUNT!)
 									i(184296),	-- Purity's Edge Greatblade
@@ -447,7 +447,7 @@ _.ExpansionFeatures =
 									}),
 								}),
 								--[[
-								n(, {	-- 
+								n(, {	--
 									n(-972, {	-- Courage
 									}),
 									n(-973, {	-- Loyalty
@@ -703,7 +703,7 @@ _.ExpansionFeatures =
 								q(61372, {	-- Back to Him
 									["sourceQuests"] = { 61478 },	-- Humble Beginnings
 									["provider"] = { "n", 175295 },	-- Forgelite Sophone
-									["coord"] = { 51.6, 80.9, 1533 },    -- Bastion
+									["coord"] = { 51.6, 80.9, BASTION },
 								}),
 								q(61363, {	-- Mad Mortimer
 									-- TODO: not 100% sure of the requirements
