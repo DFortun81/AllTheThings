@@ -31,13 +31,13 @@ _.ExpansionFeatures =
 								["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
 								["questID"] = 61646,
 								["isDaily"] = true,
-								["coord"] = { 71.9, 34.5, 1525 },
+								["coord"] = { 71.9, 34.5, REVENDRETH },
 							}),
 							o(354211, {	-- Greed's Reward
 								["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
 								["questID"] = 61045,
 								["isDaily"] = true,
-								["coord"] = { 46.0, 29.1, 1525 },
+								["coord"] = { 46.0, 29.1, REVENDRETH },
 								["g"] = {
 									i(182768),	-- The Enchanted Dragon (unknown if interesting yet)
 								},
@@ -48,23 +48,23 @@ _.ExpansionFeatures =
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173038 },	-- John the Reanimator
 								["isDaily"] = true,
-								["coord"] = { 71.5, 76.3, 1525 },	-- Revendreth
+								["coord"] = { 71.5, 76.3, REVENDRETH },
 							}),
 							q(61733, {	-- Big Bag of Creepers
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173127 },	-- Thinman
 								["isDaily"] = true,
-								["coord"] = { 71.4, 74.4, 1525 },	-- Revendreth
+								["coord"] = { 71.4, 74.4, REVENDRETH },
 							}),
 							q(61734, {	-- Census of Sins
 								["provider"] = { "n", 173532 },	-- Lady Sinrender
 								["isDaily"] = true,
-								["coord"] = { 72.2, 75.8, 1525 },	-- Revendreth
+								["coord"] = { 72.2, 75.8, REVENDRETH },
 							}),
 							q(61707, {	-- Crumbled Reality
 								["provider"] = { "n", 173036 },	-- Thickman
 								["isDaily"] = true,
-								["coord"] = { 71.3, 74.5, 1525 },	-- Revendreth
+								["coord"] = { 71.3, 74.5, REVENDRETH },
 							}),
 							q(60601, {	-- Darkwing Drills
 								["isWorldQuest"] = true,
@@ -74,34 +74,34 @@ _.ExpansionFeatures =
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 								["isDaily"] = true,
-								["coord"] = { 71.6, 76.9, 1525 },	-- Revendreth
+								["coord"] = { 71.6, 76.9, REVENDRETH },
 							}),
 							q(61848, {	-- Edict of Doom: Sinstone Golems
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 								["isDaily"] = true,
-								["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
+								["coord"] = { 71.6, 76.8, REVENDRETH },
 							}),
 							q(61845, {	-- Edict of Doom: Devourers
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 								["isDaily"] = true,
-								["coord"] = { 71.6, 76.8, 1525 },	-- Revendreth
+								["coord"] = { 71.6, 76.8, REVENDRETH },
 							}),
 							q(61732, {	-- Old Habits Never Die
 								["provider"] = { "n", 173042 },	-- Second Talon Shenraa
 								["isDaily"] = true,
-								["coord"] = { 72.3, 76.0, 1525 },	-- Revendreth
+								["coord"] = { 72.3, 76.0, REVENDRETH },
 							}),
 							q(61847, {	-- Overdue Purging
 								["provider"] = { "n", 173087 },	-- Ironwing Fraado
 								["isDaily"] = true,
-								["coord"] = { 71.4, 76.3, 1525 },	-- Revendreth
+								["coord"] = { 71.4, 76.3, REVENDRETH },
 							}),
 							q(61849, {	-- Take the Bite Out of 'Em
 								["provider"] = { "n", 173630 },	-- Partially-eaten Iger
 								["isDaily"] = true,
-								["coord"] = { 71.2, 74.4, 1525 },	-- Revendreth
+								["coord"] = { 71.2, 74.4, REVENDRETH },
 							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
@@ -611,7 +611,7 @@ _.ExpansionFeatures =
 								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
 									["minReputation"] = { 2445, HONORED },
 									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.8, 1525 },	-- Revendreth
+									["coord"] = { 30.7, 41.8, REVENDRETH },
 									["g"] = {
 										i(181533, {	-- Stock: Anima Samples
 											crit(13, {	-- Stock: Anima Samples
@@ -623,7 +623,7 @@ _.ExpansionFeatures =
 								q(61900, {	-- Comfy Chairs
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["g"] = {
 										i(181535, {	-- Stock: Comfy Chairs
 											crit(14, {	-- Stock: Comfy Chairs
@@ -638,7 +638,7 @@ _.ExpansionFeatures =
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["coord"] = { 70.1, 56.1, 1525 },	-- Revendreth
+									["coord"] = { 70.1, 56.1, REVENDRETH },
 								}),
 								q(61407, {	-- Ember Court: Atoning Rituals
 									["sourceQuests"] = {
@@ -646,7 +646,7 @@ _.ExpansionFeatures =
 										57929,	-- Hunting an Inquisitor
 									},
 									["provider"] = { "n", 167332 },	-- Gresit
-									["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
+									["coord"] = { 71.7, 40.3, REVENDRETH },
 									["g"] = {
 										i(176130, {	-- Contract: Atoning Rituals
 											crit(1, {	-- Atoning Rituals
@@ -671,7 +671,7 @@ _.ExpansionFeatures =
 								q(61706, {	-- Ember Court: Entertainment
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61408, {	-- Ember Court: Glimpse of the Wilds
 									["sourceQuests"] = { 61880 },	-- Honored Attendance
@@ -690,13 +690,13 @@ _.ExpansionFeatures =
 								--	also requires Absolution Crypt storyline, add that SQ upon completion
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61738, {	-- Ember Court: Lost Chalice Band
 								--	TODO: might just require 'honored' rep???
 									["description"] = "Available after purchasing Staff: Stage Crew.",
 									["provider"] = { "n", 173173 },	-- Caretaker Tedo
-									["coord"] = { 55.1, 43.7, 1525 },	-- Revendreth
+									["coord"] = { 55.1, 43.7, REVENDRETH },
 									["g"] = {
 										i(176132, {	-- Contract: Lost Chalice Band
 											crit(3, {	-- Lost Chalice Band
@@ -744,7 +744,7 @@ _.ExpansionFeatures =
 								q(61400, {	-- Ember Court: Mystery Mirrors
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 172986 },	-- Simone
-									["coord"] = { 24.6, 50.2, 1525 },	-- Revendreth
+									["coord"] = { 24.6, 50.2, REVENDRETH },
 									["g"] = {
 										i(176127, {	-- Contract: Mystery Mirrors
 											crit(9, {	-- Mystery Mirrors
@@ -756,12 +756,12 @@ _.ExpansionFeatures =
 								q(61705, {	-- Ember Court: Refreshments
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61402, {	-- Ember Court: Stoneborn Reserves
 									["description"] = "Available after purchasing Building: Guardhouse.",
 									["provider"] = { "n", 172502 },	-- Chelra the Bladewall
-									["coord"] = { 26.5, 29.1, 1525 },	-- Revendreth
+									["coord"] = { 26.5, 29.1, REVENDRETH },
 									["g"] = {
 										i(176139, {	-- Contract: Stoneborn Reserves
 											crit(11, {	-- Stoneborn Reserves
@@ -773,7 +773,7 @@ _.ExpansionFeatures =
 								q(61398, {	-- Ember Court: Traditional
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 156822 },	-- Mistress Mihaela
-									["coord"] = { 61.3, 63.8, 1525 },	-- Revendreth
+									["coord"] = { 61.3, 63.8, REVENDRETH },
 									["g"] = {
 										i(176126, {	-- Contract: Traditional Theme
 											crit(7, {	-- Traditional Decorations
@@ -785,7 +785,7 @@ _.ExpansionFeatures =
 								q(61404, {	-- Ember Court: Tubbins's Tea Party
 									["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
 									["provider"] = { "n", 167863 },	-- Tubbins
-									["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
+									["coord"] = { 30.9, 57.6, REVENDRETH },
 									["g"] = {
 										i(176134, {	-- Contract: Tubbins's Tea Party
 											crit(4, {	-- Tubbins's Tea Party
@@ -797,7 +797,7 @@ _.ExpansionFeatures =
 								q(61401, {	-- Ember Court: Venthyr Volunteers
 									["description"] = "Available after purchasing Building: Guardhouse.",
 									["provider"] = { "n", 172614 },	-- Nadija the Mistblade
-									["coord"] = { 60.9, 39.5, 1525 },	-- Revendreth
+									["coord"] = { 60.9, 39.5, REVENDRETH },
 									["g"] = {
 										i(176138, {	-- Contract: Venthyr Volunteers
 											crit(10, {	-- Venthyr Volunteers
@@ -809,7 +809,7 @@ _.ExpansionFeatures =
 								q(61892, {	-- Ember Court Ambassador 1 - Revendreth
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
-									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(181521, {	-- Ember Court Ambassador
 											crit(7, {	-- Staff: Revendreth Ambassador
@@ -822,7 +822,7 @@ _.ExpansionFeatures =
 									["minReputation"] = { 2445, HONORED },
 									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(181524, {	-- Staff: Ambassador
 											crit(8, {	-- Staff: Ardenweald Ambassador
@@ -835,7 +835,7 @@ _.ExpansionFeatures =
 									["minReputation"] = { 2445, REVERED },
 									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(182342, {	-- Staff: Maldraxxus Ambassador
 											crit(9, {	-- Staff: Maldraxxus Ambassador
@@ -848,7 +848,7 @@ _.ExpansionFeatures =
 									["minReputation"] = { 2445, REVERED },
 									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(182343, {	-- Staff: Bastion Ambassador
 											crit(10, {	-- Staff: Bastion Ambassador
@@ -860,17 +860,17 @@ _.ExpansionFeatures =
 								q(59661, {	-- Ember Court Rehearsal
 									["sourceQuests"] = { 59660 },	-- A New Court
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61882, {	-- Formal Entertainment
 									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
 									["provider"] = { "n", 167332 },	-- Gresit
-									["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
+									["coord"] = { 71.7, 40.3, REVENDRETH },
 								}),
 								q(61884, {	-- Formal Refreshments
 									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
 									["provider"] = { "n", 167863 },	-- Tubbins
-									["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
+									["coord"] = { 30.9, 57.6, REVENDRETH },
 								}),
 								q(63696, {	-- Grandmaster Vole's Best Friend
 									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
@@ -880,7 +880,7 @@ _.ExpansionFeatures =
 								q(61880, {	-- Honored Attendance
 									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["coord"] = { 70.0, 56.2, 1525 },
+									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
 									["provider"] = { "n", 174916 },	-- Kleia
@@ -898,12 +898,12 @@ _.ExpansionFeatures =
 								q(62073, {	-- Restock: Band Shirts
 									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["coord"] = { 30.7, 41.7, REVENDRETH },
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
 									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173109, 5 },	-- 5x Angerseye
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
@@ -912,12 +912,12 @@ _.ExpansionFeatures =
 								q(62066, {	-- Restock: Dredger Pool
 									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["coord"] = { 29.8, 45.4, REVENDRETH },
 								}),
 								q(62106, {	-- Restock: Enchantments
 									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, 1525 },
+									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 172416, 1 },	-- Enchant Bracers - Shaded Hearthing
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
@@ -926,17 +926,17 @@ _.ExpansionFeatures =
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+									["coord"] = { 29.0, 44.3, REVENDRETH },
 								}),
 								q(61916, {	-- Restock: Fire Damage
 									["repeatable"] = true,
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, 1525 },	-- Revendreth
+									["coord"] = { 29.8, 45.4, REVENDRETH },
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
 									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 170554, 1 },		-- 1x Vigil's Torch
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
@@ -946,13 +946,13 @@ _.ExpansionFeatures =
 								--	showed up after Week 1 Ember Court
 									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.2, 1525 },	-- Revendreth
+									["coord"] = { 29.0, 44.2, REVENDRETH },
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 								--	showed up after Week 3 Ember Court
 									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171831, 1 },	-- 1x Phaedrum Ore
 										{ "i", 177061, 5 },	-- 5x Twilight Bark
@@ -962,7 +962,7 @@ _.ExpansionFeatures =
 								q(62083, {	-- Restock: Medical Supplies
 									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
@@ -972,13 +972,13 @@ _.ExpansionFeatures =
 								--	showed up after Week 4 Ember Court
 									["repeatable"] = true,
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, 1525 },	-- Revendreth
+									["coord"] = { 29.0, 44.3, REVENDRETH },
 								}),
 								q(62069, {	-- Restock: Sinstones
 								--	showed up after Week 2 Ember Court
 									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 										{ "c", 1816, 50 },	-- 50x Sinstone Fragment
@@ -987,7 +987,7 @@ _.ExpansionFeatures =
 								q(62075, {	-- Restock: Soul Cages
 									["repeatable"] = true,
 									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, 1525 },	-- Revendreth
+									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 172089, 20 },	-- 20x Desolate Leather
 										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
@@ -997,13 +997,13 @@ _.ExpansionFeatures =
 								q(62104, {	-- Restock: Stoneborn Reserves
 									["repeatable"] = true,
 									["provider"] = { "n", 165496 },
-									["coord"] = { 32.1, 41.6, 1525 },	-- Revendreth
+									["coord"] = { 32.1, 41.6, REVENDRETH },
 								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
 								}),
 								q(62108, {	-- Restock: Strategic Codices
 									["repeatable"] = true,
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, 1525 },
+									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
@@ -1016,7 +1016,7 @@ _.ExpansionFeatures =
 									},
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["isDaily"] = true,
-									["coord"] = { 70.2, 56.1, 1525 },	-- Revendreth
+									["coord"] = { 70.2, 56.1, REVENDRETH },
 									["g"] = {
 										i(176120),	-- RSVP: Cryptkeeper Kassir
 									},
@@ -1080,7 +1080,7 @@ _.ExpansionFeatures =
 								--	was available for me after doing Week 2 Ember Court
 									["provider"] = { "n", 157199 },	-- Stonehead
 									["isDaily"] = true,
-									["coord"] = { 38.9, 66.0, 1525 },	-- Revendreth
+									["coord"] = { 38.9, 66.0, REVENDRETH },
 									["g"] = {
 										i(178686),	-- RSVP: Stonehead
 									},
@@ -1105,7 +1105,7 @@ _.ExpansionFeatures =
 								q(61898, {	-- Small Bites
 									["minReputation"] = { 2445, FRIENDLY },
 									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 28.9, 44.2, 1525 },	-- Revendreth
+									["coord"] = { 28.9, 44.2, REVENDRETH },
 									["g"] = {
 										i(181532, {	-- Stock: Appetizers
 											crit(12, {	-- Stock: Appetizers
@@ -1123,7 +1123,7 @@ _.ExpansionFeatures =
 									},
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
-									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 28.0, 43.1, REVENDRETH },
 									["g"] = {
 										i(181536, {	-- Guest List Page (1st EC)
 											crit(15, {	-- Second Guest List Page
@@ -1136,22 +1136,22 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 28.0, 43.1, REVENDRETH },
 								}),
 								q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 28.0, 43.1, REVENDRETH },
 								}),
 								q(60339, {	-- The Ember Court (Honored)
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 28.0, 43.1, REVENDRETH },
 								}),
 								q(61896, {	-- Undercover Security
 									["minReputation"] = { 2445, REVERED },
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.0, 41.6, 1525 },	-- Revendreth
+									["coord"] = { 32.0, 41.6, REVENDRETH },
 									["g"] = {
 										i(181530, {	-- Stock: Greeting Kits
 											crit(11, {	-- Stock: Greeting Kits
@@ -1243,7 +1243,7 @@ _.ExpansionFeatures =
 								q(61763, {	-- Dredging Up an Assistant
 									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
 									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									["coord"] = { 72.5, 73.2, REVENDRETH },
 									["g"] = {
 										i(182683),	-- Dredger Butler's Contract (PET!)
 									},
@@ -1263,12 +1263,12 @@ _.ExpansionFeatures =
 								q(61766, {	-- Homegrown Help
 									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.0, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.0, REVENDRETH },
 								}),
 								q(62361, {	-- Introductions are in Order
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62173, {	-- Long Sleeved Doublet
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1307,12 +1307,12 @@ _.ExpansionFeatures =
 								q(61762, {	-- Making a Smarter Dredger
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(61851, {	-- Shades of Muck
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["provider"] = { "n", 157846 },	-- Rendle
-									["coord"] = { 72.5, 73.2, 1525 },	-- Revendreth
+									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62172, {	-- Shortsleeved Doublet
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1355,7 +1355,7 @@ _.ExpansionFeatures =
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
-									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
 										i(181537, {		-- Guest List Page
 											crit(16, {		-- Third Guest List Page
@@ -1458,7 +1458,7 @@ _.ExpansionFeatures =
 								q(61944, {	-- Discerning Taste
 									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
 									["provider"] = { "n", 165399 },	-- Lord Garridan
-									["coord"] = { 28.5, 41.0, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
 										i(181538, {		-- Guest List Page
 											crit(17, {		-- Fourth Guest List Page
@@ -1495,7 +1495,7 @@ _.ExpansionFeatures =
 								q(60948, {	-- RSVP: The Countess
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171106 },	-- The Countess
-									["coord"] = { 58.0, 27.4, 1525 },	-- Revendreth
+									["coord"] = { 58.0, 27.4, REVENDRETH },
 									["g"] = {
 										i(176114),	-- RSVP: The Countess
 									},
@@ -1505,7 +1505,7 @@ _.ExpansionFeatures =
 								q(61945, {	-- The Professionals
 									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(62599, {	-- Gormsmith Cavina
 									-- TODO: first time obtaining this quest item, Exalted + Rank 5 Ember Court... not sure requirements if any
@@ -1531,7 +1531,7 @@ _.ExpansionFeatures =
 							n(VENDORS, {
 								n(174711, {	-- Freeman
 									["minReputation"] = { 2445, REVERED },
-									["coord"] = { 32.0, 41.2, 1525 },
+									["coord"] = { 32.0, 41.2, REVENDRETH },
 									["g"] = {
 										i(182371, {	-- Claws of the Court's Sentinels
 											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
@@ -1578,7 +1578,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(165453, {	-- Lady Ilinca <Court Concierge>
-									["coord"] = { 28.5, 41.1, 1525 },	-- Revendreth
+									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(176850, {	-- Blank Invitation
 											["cost"] = { { "c", 1820, 15 } },
@@ -1605,7 +1605,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(173371, {	-- Lady Rovinette <Ember Court Clothier>
-									["coord"] = { 28.3, 43.7, 1525 },	-- Revendreth
+									["coord"] = { 28.3, 43.7, REVENDRETH },
 									["g"] = {
 										i(181055, {	-- Court Death Shroud Belt
 											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
@@ -1719,7 +1719,7 @@ _.ExpansionFeatures =
 								}),
 								n(164966, {	-- Temel <The Party Herald> (with a hat)
 									["coords"] = {
-										{ 28.0, 43.0, 1525 },	-- with hat, outside Sinfall
+										{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
 										{ 58.8, 80.0, 1699},	-- without hat, inside Sinfall
 									},
 									["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
@@ -1867,7 +1867,7 @@ _.ExpansionFeatures =
 										n(-1433951, {	-- Broken Mirror A-1
 											["questID"] = 61819,
 											["isDaily"] = true,
-											["coord"] = { 39.1, 52.2, 1525 },	-- Revendreth
+											["coord"] = { 39.1, 52.2, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357236, {	-- Forgotten Chest
@@ -1879,7 +1879,7 @@ _.ExpansionFeatures =
 										n(-1433952, {	-- Broken Mirror A-2
 											["questID"] = 61823,
 											["isDaily"] = true,
-											["coord"] = { 58.8, 67.8, 1525 },	-- Revendreth
+											["coord"] = { 58.8, 67.8, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357237, {	-- Forgotten Chest
@@ -1891,7 +1891,7 @@ _.ExpansionFeatures =
 										n(-1433953, {	-- Broken Mirror A-3
 											["questID"] = 61827,
 											["isDaily"] = true,
-											["coord"] = { 70.9, 43.6, 1525 },	-- Revendreth
+											["coord"] = { 70.9, 43.6, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357238, {	-- Forgotten Chest
@@ -1906,7 +1906,7 @@ _.ExpansionFeatures =
 											["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
 											["questID"] = 61817,
 											["isDaily"] = true,
-											["coord"] = { 73.1, 44.8, 1525 },	-- Revendreth
+											["coord"] = { 73.1, 44.8, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357230, {	-- Forgotten Chest
@@ -1918,7 +1918,7 @@ _.ExpansionFeatures =
 										n(-1433955, {	-- Broken Mirror B-2
 											["questID"] = 61821,
 											["isDaily"] = true,
-											["coord"] = { 40.3, 77.1, 1525 },	-- Revendreth
+											["coord"] = { 40.3, 77.1, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357231, {	-- Forgotten Chest
@@ -1931,7 +1931,7 @@ _.ExpansionFeatures =
 											["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
 											["questID"] = 61825,
 											["isDaily"] = true,
-											["coord"] = { 77.2, 65.4, 1525 },	-- Revendreth
+											["coord"] = { 77.2, 65.4, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357232, {	-- Forgotten Chest
@@ -1947,7 +1947,7 @@ _.ExpansionFeatures =
 											["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
 											["questID"] = 61826,
 											["isDaily"] = true,
-											["coord"] = { 27.1, 21.6, 1525 },	-- Revendreth
+											["coord"] = { 27.1, 21.6, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357229, {	-- Forgotten Chest
@@ -1960,7 +1960,7 @@ _.ExpansionFeatures =
 											["description"] = "On the middle level of the crumbled edifice.",
 											["questID"] = 61818,
 											["isDaily"] = true,
-											["coord"] = { 29.4, 37.3, 1525 },	-- Revendreth
+											["coord"] = { 29.4, 37.3, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(351948, {	-- Forgotten Chest
@@ -1972,7 +1972,7 @@ _.ExpansionFeatures =
 										n(-1433959, {	-- Broken Mirror C-3
 											["questID"] = 61822,
 											["isDaily"] = true,
-											["coord"] = { 40.4, 73.3, 1525 },	-- Revendreth
+											["coord"] = { 40.4, 73.3, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357228, {	-- Forgotten Chest
@@ -1986,7 +1986,7 @@ _.ExpansionFeatures =
 										n(-1433960, {	-- Broken Mirror D-1
 											["questID"] = 59236,
 											["isDaily"] = true,
-											["coord"] = { 20.7, 54.2, 1525 },	-- Revendreth
+											["coord"] = { 20.7, 54.2, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357233, {	-- Forgotten Chest
@@ -1998,7 +1998,7 @@ _.ExpansionFeatures =
 										n(-1433961, {	-- Broken Mirror D-2
 											["questID"] = 61824,
 											["isDaily"] = true,
-											["coord"] = { 29.6, 25.8, 1525 },	-- Revendreth
+											["coord"] = { 29.6, 25.8, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357235, {	-- Forgotten Chest
@@ -2011,7 +2011,7 @@ _.ExpansionFeatures =
 											["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the left.",
 											["questID"] = 61820,
 											["isDaily"] = true,
-											["coord"] = { 55.1, 34.7, 1525 },	-- Revendreth
+											["coord"] = { 55.1, 34.7, REVENDRETH },
 											["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
 											["g"] = {
 												o(357234, {	-- Forgotten Chest

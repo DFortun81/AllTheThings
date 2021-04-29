@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 					q(57889, {	-- "Accidental" Arson
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 						["g"] = {
 							i(180917),	-- Soulbreaker's Ebony Leggings
 						--	TODO: confirm non-cloth rewards (they aren't linked on wowhead)
@@ -58,12 +58,12 @@ _.ExpansionFeatures =
 					q(57885, {	-- A Discreet Entrance
 						["sourceQuests"] = { 57884 },	-- Reclaiming Thornhill Manor
 						["provider"] = { "n", 159513 },	-- Bogdan
-						["coord"] = { 58.8, 29.9, 1525 },	-- Revendreth
+						["coord"] = { 58.8, 29.9, REVENDRETH },
 					}),
 					q(57886, {	-- A Meal and a Deal
 						["sourceQuests"] = { 57885 },	-- A Discreet Entrance
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 					}),
 					q(58600, {	-- A Perfect Circle
 						["sourceQuests"] = {
@@ -95,7 +95,7 @@ _.ExpansionFeatures =
 							60145,	-- Third Talon Vartox
 						},
 						["provider"] = { "n", 167381 },	-- Baroness Draka
-						["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 66.6, REVENDRETH },
 					}),
 					q(57880, {	-- An Estate Within the Old Gate
 						["sourceQuests"] = { 60904 },	-- Medallion of Desire
@@ -105,17 +105,17 @@ _.ExpansionFeatures =
 					q(58424, {	-- An Eye for an Amulet
 						["sourceQuests"] = { 58372 },	-- Lead the Way
 						["provider"] = { "n", 160956 },	-- Watcher Emil
-						["coord"] = { 72.6, 37.5, 1525 },	-- Revendreth
+						["coord"] = { 72.6, 37.5, REVENDRETH },
 					}),
 					q(57888, {	-- An Invitation to Treachery
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 					}),
 					q(57771, {	-- An Unwelcome Incursion
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 						["provider"] = { "n", 167381 },	-- Baroness Draka
-						["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 66.6, REVENDRETH },
 						["g"] = {
 							i(180947),	-- Tithe Collector's Vessel
 						},
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 					q(57890, {	-- Beautiful, But Deadly
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 					}),
 					q(62918, {	-- Binding Power
 						["sourceQuests"] = { 62915 },	-- Home Improvement
@@ -148,12 +148,12 @@ _.ExpansionFeatures =
 					q(58388, {	-- Blackbale Betrayers
 						["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
 						["provider"] = { "n", 161421 },	-- The Accuser
-						["coord"] = { 46.4, 51.4, 1525 },	-- Revendreth
+						["coord"] = { 46.4, 51.4, REVENDRETH },
 					}),
 					q(58337, {	-- Break Out
 						["sourceQuests"] = { 58842 },	-- The Curator
 						["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
-						["coord"] = { 65.9, 32.2, 1525 },	-- Revendreth
+						["coord"] = { 65.9, 32.2, REVENDRETH },
 					}),
 					q(62856, {	-- Building Your Renown
 						["sourceQuests"] = { 59323 },	-- Anima Awakening
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 					q(58326, {	-- Combing the Catacombs
 						["sourceQuests"] = { 58842 },	-- The Curator
 						["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
-						["coord"] = { 65.9, 32.2, 1525 },	-- Revendreth
+						["coord"] = { 65.9, 32.2, REVENDRETH },
 					}),
 					q(59701, {	-- Common Ground
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -185,7 +185,7 @@ _.ExpansionFeatures =
 					q(58443, {	-- Continued Care of Kael'thas
 						["sourceQuests"] = { 58387 },	-- We Each Must Carry Our Own Sins
 						["provider"] = { "n", 161278 },	-- The Accuser
-						["coord"] = { 43.8, 51.4, 1525 },	-- Revendreth
+						["coord"] = { 43.8, 51.4, REVENDRETH },
 					}),
 					q(58630, {	-- Crown of the Harvesters
 						["sourceQuests"] = {
@@ -198,12 +198,12 @@ _.ExpansionFeatures =
 					q(58428, {	-- Crypt Crashers
 						["sourceQuests"] = { 58372 },	-- Lead the Way
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						["coord"] = { 72.7, 37.6, REVENDRETH },
 					}),
 					q(58392, {	-- Death's End Destruction
 						["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
 						["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
-						["coord"] = { 69.8, 59.9, 1525 },	-- Revendreth
+						["coord"] = { 69.8, 59.9, REVENDRETH },
 					}),
 					q(60995, {	-- Disloyalty
 						["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
@@ -213,18 +213,18 @@ _.ExpansionFeatures =
 					q(60265, {	-- Disrupting the Chain
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 						["provider"] = { "i", 178557 },	-- Supply Chain Memo
-						["coord"] = { 57.4, 69.2, 1525 },	-- Revendreth (rough area)
+						["coord"] = { 57.4, 69.2, REVENDRETH },	-- rough area
 						["crs"] = { 158796 },	-- Stonevigil Collector
 					}),
 					q(58384, {	-- Dredgers Left Behind
 						["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
 						["provider"] = { "n", 161208 },	-- The Accuser
-						["coord"] = { 42.2, 47.5, 1525 },	-- Revendreth
+						["coord"] = { 42.2, 47.5, REVENDRETH },
 					}),
 					q(57892, {	-- Enacting Immediate Justice
 						["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
 						["provider"] = { "n", 159946 },	-- The Countess
-						["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
+						["coord"] = { 56.9, 28.7, REVENDRETH },
 					}),
 					q(58395, {	-- Enough Vengeance For One Day
 						["sourceQuests"] = { 58394 },	-- Lady Ouix'Ara
@@ -249,7 +249,7 @@ _.ExpansionFeatures =
 					q(57772, {	-- Fangs and Minds
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 						["provider"] = { "n", 167380 },	-- Prince Renethal
-						["coord"] = { 56.3, 66.7, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 66.7, REVENDRETH },
 					}),
 					q(60500, {	-- Halls of Atonement: Medallion of Pride
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -259,17 +259,17 @@ _.ExpansionFeatures =
 					q(59676, {	-- Harvester of Desire
 						["sourceQuests"] = { 59706 },	-- Invitation for the Countess
 						["provider"] = { "n", 165658 },	-- Cudgelface
-						["coord"] = { 52.4, 35.4, 1525 },	-- Revendreth
+						["coord"] = { 52.4, 35.4, REVENDRETH },
 					}),
 					q(59711, {	-- Harvester of Envy
 						["sourceQuests"] = { 59707 },	-- Invitation for the Tithelord
 						["provider"] = { "n", 165818 },	-- Nadjia the Mistblade
-						["coord"] = { 72.1, 74.9, 1525 },	-- Revendreth
+						["coord"] = { 72.1, 74.9, REVENDRETH },
 					}),
 					q(59720, {	-- Harvester of Wrath
 						["sourceQuests"] = { 59708 },	-- Invitation for the Stonewright
 						["provider"] = { "n", 165865 },	-- General Draven
-						["coord"] = { 40.3, 30.7, 1525 },	-- Revendreth
+						["coord"] = { 40.3, 30.7, REVENDRETH },
 					}),
 					q(58656, {	-- Heavy is the Head...
 						["sourceQuests"] = { 58630 },	-- Crown of the Harvesters
@@ -308,7 +308,7 @@ _.ExpansionFeatures =
 							61492,	-- The Princeguard
 						},
 						["provider"] = { "n", 165661 },	-- Prince Renathal
-						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+						["coord"] = { 41.0, 54.7, REVENDRETH },
 					}),
 					q(59708, {	-- Invitation for the Stonewright
 						["sourceQuests"] = {
@@ -316,7 +316,7 @@ _.ExpansionFeatures =
 							61492,	-- The Princeguard
 						},
 						["provider"] = { "n", 165661 },	-- Prince Renathal
-						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+						["coord"] = { 41.0, 54.7, REVENDRETH },
 					}),
 					q(59707, {	-- Invitation for the Tithelord
 						["sourceQuests"] = {
@@ -324,12 +324,12 @@ _.ExpansionFeatures =
 							61492,	-- The Princeguard
 						},
 						["provider"] = { "n", 165661 },	-- Prince Renathal
-						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+						["coord"] = { 41.0, 54.7, REVENDRETH },
 					}),
 					q(57887, {	-- Killing the Messenger
 						["sourceQuests"] = { 57886 },	-- A Meal and a Deal
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 					}),
 					q(59343, {	-- Kindred Spirits
 						["sourceQuests"] = { 59719 },	-- The Court
@@ -351,7 +351,7 @@ _.ExpansionFeatures =
 							58326,	-- Combing the Catacombs
 						},
 						["provider"] = { "n", 160956 },	-- Watcher Emil
-						["coord"] = { 65.9, 28.8, 1525 },	-- Revendreth
+						["coord"] = { 65.9, 28.8, REVENDRETH },
 						["g"] = {
 							i(180925),	-- Soulbreaker's Ebony Sash
 						--	TODO: verify non-cloth pieces
@@ -363,7 +363,7 @@ _.ExpansionFeatures =
 					q(58385, {	-- Learning to Sacrifice
 						["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
 						["provider"] = { "n", 161208 },	-- The Accuser
-						["coord"] = { 42.2, 47.5, 1525 },	-- Revendreth
+						["coord"] = { 42.2, 47.5, REVENDRETH },
 					}),
 					q(60994, {	-- Lowering Their Defenses
 						["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
@@ -373,7 +373,7 @@ _.ExpansionFeatures =
 					q(58389, {	-- Maldraxxian Weapons
 						["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
 						["provider"] = { "i", 174212 },	-- Suspicious Weapon
-						["coord"] = { 48.3, 54.4, 1525 },	-- Revendreth
+						["coord"] = { 48.3, 54.4, REVENDRETH },
 						["crs"] = {
 							161448,	-- Blackbale Lookout
 							161480,	-- Blackbale Extortionist
@@ -406,7 +406,7 @@ _.ExpansionFeatures =
 							58428,	-- Crypt Crashers
 						},
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						["coord"] = { 72.7, 37.6, REVENDRETH },
 						["g"] = {
 							i(180945),	-- Crypt Gargon (MOUNT!)
 						},
@@ -418,12 +418,12 @@ _.ExpansionFeatures =
 							57890,	-- Beautiful, But Deadly
 						},
 						["provider"] = { "n", 159694 },	-- The Countess
-						["coord"] = { 58.0, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.0, 27.5, REVENDRETH },
 					}),
 					q(57893, {	-- Neither Enemy nor Ally
 						["sourceQuests"] = { 57892 },	-- Enacting Immediate Justice
 						["provider"] = { "n", 159946 },	-- The Countess
-						["coord"] = { 56.9, 28.7, 1525 },	-- Revendreth
+						["coord"] = { 56.9, 28.7, REVENDRETH },
 					}),
 					q(58585, {	-- No Friend of Mine
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
@@ -455,7 +455,7 @@ _.ExpansionFeatures =
 							57881,	-- The Key to Rebuilding
 						},
 						["provider"] = { "n", 159513 },	-- Bogdan
-						["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
+						["coord"] = { 60.4, 40.1, REVENDRETH },
 					}),
 					q(58391, {	-- Reconnaissance... for my, uh, Recovery
 						["sourceQuests"] = {
@@ -469,7 +469,7 @@ _.ExpansionFeatures =
 					q(57882, {	-- Reestablishing the Household
 						["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
 						["provider"] = { "n", 159513 },	-- Bogdan
-						["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
+						["coord"] = { 60.4, 40.1, REVENDRETH },
 					}),
 					q(61981, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -486,7 +486,7 @@ _.ExpansionFeatures =
 					q(58444, {	-- Return to Sinfall
 						["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						["coord"] = { 72.7, 37.6, REVENDRETH },
 					}),
 					q(58584, {	-- Right our Wrongs
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
@@ -545,7 +545,7 @@ _.ExpansionFeatures =
 					q(58421, {	-- Special Access
 						["sourceQuests"] = { 58372 },	-- Lead the Way
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["coord"] = { 72.7, 37.6, 1525 },	-- Revendreth
+						["coord"] = { 72.7, 37.6, REVENDRETH },
 					}),
 					q(57727, {	-- Stonevigil Unrest
 						["description"] = "Requires Renown 20.",
@@ -556,7 +556,7 @@ _.ExpansionFeatures =
 					q(58393, {	-- Strategic Executions
 						["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
 						["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
-						["coord"] = { 69.8, 59.9, 1525 },	-- Revendreth
+						["coord"] = { 69.8, 59.9, REVENDRETH },
 					}),
 					q(62919, {	-- Strengthening the Bond
 						["sourceQuests"] = { 62918 },	-- Binding Power
@@ -584,7 +584,7 @@ _.ExpansionFeatures =
 							59708,	-- Harvester of Wrath
 						},
 						["provider"] = { "n", 165661 },	-- Prince Renathal
-						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+						["coord"] = { 41.0, 54.7, REVENDRETH },
 						["g"] = {
 							i(180928),	-- Soulbreaker's Ebony Wraps
 						--	TODO: verify non-cloth rewards.  API doesn't pick up rewards for this quest, but it gave me cloth wrists on my priest
@@ -616,7 +616,7 @@ _.ExpansionFeatures =
 					q(57881, {	-- The Key to Rebuilding
 						["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
 						["provider"] = { "n", 159513 },	-- Bogdan
-						["coord"] = { 60.4, 40.1, 1525 },	-- Revendreth
+						["coord"] = { 60.4, 40.1, REVENDRETH },
 					}),
 					q(58383, {	-- The Many Sins of Kael'thas Sunstrider
 						["sourceQuests"] = { 58382 },	-- Someone Worth Saving
@@ -627,7 +627,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58406 },	-- Mirror to Maldraxxus
 						["maps"] = { 1689 },	-- Exoramas (Venthyr Renown 22 Scenario)
 						["provider"] = { "n", 170543 },	-- General Draven
-						["coord"] = { 27.4, 40.3, 1525 },	-- Revendreth
+						["coord"] = { 27.4, 40.3, REVENDRETH },
 						["g"] = {
 							i(180948),	-- Battle Gargon Vrednic
 							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
@@ -669,7 +669,7 @@ _.ExpansionFeatures =
 					q(57646, {	-- The Tithelord
 						["sourceQuests"] = { 57729 },	-- To the Estate
 						["provider"] = { "n", 167689 },	-- Prince Renethal
-						["coord"] = { 71.9, 68.8, 1525 },	-- Revendreth
+						["coord"] = { 71.9, 68.8, REVENDRETH },
 						["g"] = {
 							i(180923),	-- Fearstalker's Ebony Monnion
 							i(180922),	-- Soulbreaker's Ebony Mantle
@@ -681,7 +681,7 @@ _.ExpansionFeatures =
 					q(60673, {	-- The Traitor
 						["sourceQuests"] = { 58421 },	-- Special Access
 						["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
-						["coord"] = { 77.5, 39.2, 1525 },	-- Revendreth
+						["coord"] = { 77.5, 39.2, REVENDRETH },
 						["g"] = {
 							i(180913),	-- Soulbreaker's Ebony Hood
 						--	TODO: verify non-cloth rewards
@@ -698,12 +698,12 @@ _.ExpansionFeatures =
 					q(60145, {	-- Third Talon Vartox
 						["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 						["provider"] = { "n", 167381 },	-- Baroness Draka
-						["coord"] = { 56.3, 66.6, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 66.6, REVENDRETH },
 					}),
 					q(57729, {	-- To the Estate
 						["sourceQuests"] = { 60183 },	-- After Them!
 						["provider"] = { "n", 167620 },	-- Prince Renethal
-						["coord"] = { 61.5, 69.6, 1525 },	-- Revendreth
+						["coord"] = { 61.5, 69.6, REVENDRETH },
 					}),
 					q(58386, {	-- Use My Strengths
 						["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
@@ -717,8 +717,8 @@ _.ExpansionFeatures =
 							{ "n", 160942 },	-- Forgotten Soul (if you abandon it, this is in the follow-up quest area)
 						},
 						["coords"] = {
-							{ 72.7, 37.6, 1525 },	-- Revendreth, The Curator
-							{ 66.0, 28.9, 1525 },	-- Revendreth, Forgotten Soul
+							{ 72.7, 37.6, REVENDRETH },	-- The Curator
+							{ 66.0, 28.9, REVENDRETH },	-- Forgotten Soul
 						},
 					}),
 					q(58387, {	-- We Each Must Carry Our Own Sins
@@ -728,7 +728,7 @@ _.ExpansionFeatures =
 							58386,	-- Use My Strengths
 						},
 						["provider"] = { "n", 161278 },	-- The Accuser
-						["coord"] = { 43.8, 51.4, 1525 },	-- Revendreth
+						["coord"] = { 43.8, 51.4, REVENDRETH },
 						["g"] = {
 							i(180941),	-- Kael's Dark Sinstone Chain
 						},

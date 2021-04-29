@@ -91,8 +91,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
 				["isRaid"] = true,
-				["coord"] = { 27.2, 14.9, 1525 },
-				["maps"] = { 1525 },	-- Revendreth
+				["coord"] = { 27.2, 14.9, REVENDRETH },
+				["maps"] = { REVENDRETH },
 				["cr"] = 167526,	-- Nurgash Muckformed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity

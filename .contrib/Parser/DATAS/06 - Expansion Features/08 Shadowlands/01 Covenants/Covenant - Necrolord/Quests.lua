@@ -578,12 +578,12 @@ _.ExpansionFeatures =
 					q(58523, {	-- You're Dead To Me
 						["sourceQuests"] = { 58504 },	-- Accusatory Missive
 						["provider"] = { "n", 161461 },	-- The Accuser
-						["coord"] = { 72.0, 41.2, 1525 },
+						["coord"] = { 72.0, 41.2, REVENDRETH },
 					}),
 					q(58472, {	-- A Farewell to Arms
 						["sourceQuests"] = { 58523 },	-- You're Dead To Me
 						["provider"] = { "n", 161461 },	-- The Accuser
-						["coord"] = { 73.8, 57.4, 1525 },
+						["coord"] = { 73.8, 57.4, REVENDRETH },
 					}),
 					q(58599, {	-- Drive A Dredge Between Them
 						["sourceQuests"] = { 58523 },	-- You're Dead To Me
@@ -599,7 +599,7 @@ _.ExpansionFeatures =
 					q(58624, {	-- Pauldrons of Imperium
 						["sourceQuests"] = { 58608 },	-- It's Treason, Then
 						["provider"] = { "n", 161865 },	-- Baroness Draka
-						["coord"] = { 78.1, 62.2, 1525 },
+						["coord"] = { 78.1, 62.2, REVENDRETH },
 						["g"] = {
 							i(182273),	-- Bladesworn Conjurer's Mantle
 							i(182255),	-- Bladesworn Harbinger's Pauldrons

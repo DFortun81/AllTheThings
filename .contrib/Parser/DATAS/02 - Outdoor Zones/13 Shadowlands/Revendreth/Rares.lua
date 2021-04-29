@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(RARES, {
 				n(166393, {	-- Amalgamation of Filth
 					["description"] = "Click on the sparkling Rubbish Box and throw rubbish into the water.  Kill the oozes, and eventually the rare will spawn.",
 					["questID"] = 59854,
 					["isDaily"] = true,
-					["coord"] = { 53.8, 72.5, 1525 },
+					["coord"] = { 53.8, 72.5, REVENDRETH },
 					["g"] = {
 						crit(14, {	-- Amalgamation of Filth
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -32,7 +32,7 @@ _.Zones =
 					["description"] = "When the rare is available, 3 light-reflecting mirrors will appear.  Move all 3 to start the encounter.",
 					["questID"] = 59584,
 					["isDaily"] = true,
-					["coord"] = { 25.3, 48.5, 1525 },
+					["coord"] = { 25.3, 48.5, REVENDRETH },
 					["g"] = {
 						crit(12, {	-- Amalgamation of Light
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -48,7 +48,7 @@ _.Zones =
 				n(166576, {	-- Azgar
 					["questID"] = 59893,
 					["isDaily"] = true,
-					["coord"] = { 36.0, 68.6, 1525 },
+					["coord"] = { 36.0, 68.6, REVENDRETH },
 					["g"] = {
 						crit(16, {	-- Azgar
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -61,7 +61,7 @@ _.Zones =
 					["description"] = "There is a sparkling Anima Stake in front of the portal.  Pick it up and use the Extra Action Button to lure the rare.",
 					["questID"] = 59582,
 					["isDaily"] = true,
-					["coord"] = { 66.4, 59.6, 1525 },
+					["coord"] = { 66.4, 59.6, REVENDRETH },
 					["g"] = {
 						crit(11, {	-- Endlurker
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -73,7 +73,7 @@ _.Zones =
 					["description"] = "Kill the 3 Stone Legion Punishers along the wall to make the rare attackable.",
 					["questID"] = 59913,
 					["isDaily"] = true,
-					["coord"] = { 37.2, 47.8, 1525 },
+					["coord"] = { 37.2, 47.8, REVENDRETH },
 					["crs"] = { 166715 },	-- Stone Legion Punisher
 					["g"] = {
 						crit(19, {	-- Executioner Aatron
@@ -86,7 +86,7 @@ _.Zones =
 				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time
 					["questID"] = 58441,
 					["isDaily"] = true,
-					["coord"] = { 44.0, 51.0, 1525 },
+					["coord"] = { 44.0, 51.0, REVENDRETH },
 					["g"] = {
 						crit(8, {	-- Executioner Adrastia
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -98,7 +98,7 @@ _.Zones =
 				n(166521, {	-- Famu the Infinite
 					["questID"] = 59869,
 					["isDaily"] = true,
-					["coord"] = { 62.6, 47.2, 1525 },
+					["coord"] = { 62.6, 47.2, REVENDRETH },
 					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {
 						crit(15, {	-- Famu the Infinite
@@ -113,7 +113,7 @@ _.Zones =
 					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
 					["questID"] = 61618,
 					["isDaily"] = true,
-					["coord"] = { 32.6, 14.7, 1525 },	-- Madalav's Hammer (to summon rare)
+					["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer (to summon rare)
 					["g"] = {
 						i(180489),	-- Forgemaster's Many-Fold Rapier
 						i(180939),	-- Mantle of the Forgemaster's Dark Blades
@@ -123,7 +123,7 @@ _.Zones =
 					["description"] = "Kill the Shrouded Ritualists to spawn the rare.",
 					["questID"] = 60173,
 					["isDaily"] = true,
-					["coord"] = { 20.9, 54.3, 1525 },
+					["coord"] = { 20.9, 54.3, REVENDRETH },
 					["g"] = {
 						crit(21, {	-- Grand Arcanist Dimitri
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -137,28 +137,28 @@ _.Zones =
 					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
 					["questID"] = 59612,
 					["isDaily"] = true,
-					["coord"] = { 45.8, 79.0, 1525 },
+					["coord"] = { 45.8, 79.0, REVENDRETH },
 					["g"] = {
 						q(59607, {	-- Takin' Down the Beast
 							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
 							["isDaily"] = true,
 							["crs"] = { 165327 },	-- Wingsmash
-							["coord"] = { 46.30, 77.86, 1525 },
+							["coord"] = { 46.30, 77.86, REVENDRETH },
 							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 						}),
 						i(176397, {	-- Dredhollow Bolt
-							["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
+							["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
 						}),
 						-- TODO: do they offer a quest to repair the ballista? have never seen it...
 						-- n(165325, {	-- Muckborn Craftsman
-						-- 	["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+						-- 	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
 						-- 	["g"] = {
 						-- 		-- i(176396, {			-- Dredhollow Tools
 						-- 		-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
 						-- 		-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
 						-- 		-- 	["coords"] = {
-						-- 		-- 		{ 40.77, 72.70, 1525 },	-- Tool1
-						-- 		-- 		{ 41.18, 74.67, 1525 },	-- Tool2
+						-- 		-- 		{ 40.77, 72.70, REVENDRETH },	-- Tool1
+						-- 		-- 		{ 41.18, 74.67, REVENDRETH },	-- Tool2
 						-- 		-- 	},
 						-- 		-- 	["g"] = {
 						-- 		-- 	},
@@ -176,7 +176,7 @@ _.Zones =
 					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
 					["questID"] = 59900,
 					["isDaily"] = true,
-					["coord"] = { 51.9, 51.8, 1525 },
+					["coord"] = { 51.9, 51.8, REVENDRETH },
 					["crs"] = { 166682 },	-- Large Prey
 					["g"] = {
 						crit(17, {	-- Hopecrusher
@@ -190,7 +190,7 @@ _.Zones =
 				n(166993, {	-- Huntmaster Petrus
 					["questID"] = 60022,
 					["isDaily"] = true,
-					["coord"] = { 61.8, 79.2, 1525 },
+					["coord"] = { 61.8, 79.2, REVENDRETH },
 					["crs"] = { 165891 },	-- Reza
 					["g"] = {
 						crit(20, {	-- Huntmaster Petrus
@@ -206,7 +206,7 @@ _.Zones =
 					["description"] = "You will need a |cFFFFFFFFScorched Crypt Key|r to enter the rare's tomb.  The key can drop from the Feral Ritualists and Blistering Inquisitors in the surrounding area.",
 					["questID"] = 58210,
 					["isDaily"] = true,
-					["coord"] = { 21.7, 35.9, 1525 },
+					["coord"] = { 21.7, 35.9, REVENDRETH },
 					["g"] = {
 						crit(3, {	-- Innervus
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -220,7 +220,7 @@ _.Zones =
 					["description"] = "Inside the crypt.  Protect Absolver Meylann from waves of mobs.",
 					["questID"] = 59580,
 					["isDaily"] = true,
-					["coord"] = { 67.5, 82.2, 1525 },
+					["coord"] = { 67.5, 82.2, REVENDRETH },
 					["crs"] = {
 						165151,	-- Absolver Meylann
 						165175,	-- Prideful Hulk
@@ -237,7 +237,7 @@ _.Zones =
 					["description"] = "Collect 4 |cFF0070ddMortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
 					["questID"] = 58633,
 					["isDaily"] = true,
-					["coord"] = { 75.8, 61.4, 1525 },
+					["coord"] = { 75.8, 61.4, REVENDRETH },
 					["cost"] = { { "i", 174378, 4 } },	-- 4 Mortegore Scroll
 					["g"] = {
 						crit(9, {	-- Lord Mortegore
@@ -250,7 +250,7 @@ _.Zones =
 					["description"] = "To spawn the rare, find four stacks of Forbidden Tomes in the surrounding area and deliver them to the library.",
 					["questID"] = 58213,
 					["isDaily"] = true,
-					["coord"] = { 37.6, 68.7, 1525 },
+					["coord"] = { 37.6, 68.7, REVENDRETH },
 					["crs"] = { 160753 },	-- Forbidden Tomes
 					["g"] = {
 						crit(2, {	-- Scrivener Lenua
@@ -263,7 +263,7 @@ _.Zones =
 					["description"] = "Click on the |cFFFFFFFFCatacombs Cache|r to spawn the rare.",
 					["questID"] = 62252,
 					["isDaily"] = true,
-					["coord"] = { 67.4, 30.6, 1525 },
+					["coord"] = { 67.4, 30.6, REVENDRETH },
 					["crs"] = { 162503 },	-- Catacombs Cache
 					["g"] = {
 						crit(24, {	-- Sinstone Hoarder
@@ -276,7 +276,7 @@ _.Zones =
 					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on any mobs in the area (ghouls/outcasts/etc.) for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
 					["questID"] = 58263,
 					["isDaily"] = true,
-					["coord"] = { 34.0, 55.5, 1525 },
+					["coord"] = { 34.0, 55.5, REVENDRETH },
 					["g"] = {
 						crit(7, {	-- Sire Ladinas
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -288,7 +288,7 @@ _.Zones =
 					["description"] = "Spawns at the top of the tower.  She will escape through mirror portals twice during the encounter.  Follow her to continue the fight.",
 					["questID"] = 58130,
 					["isDaily"] = true,
-					["coord"] = { 78.5, 49.7, 1525 },
+					["coord"] = { 78.5, 49.7, REVENDRETH },
 					["crs"] = {	-- she spawned as 160385, but i think her npcID changes each time she ports, because there's no loot recorded as dropping from that version or 160393
 						160392,	-- Soulstalker Doina
 						160393,	-- Soulstalker Doina
@@ -306,7 +306,7 @@ _.Zones =
 				n(159503, {	-- Stonefist
 					["questID"] = 62220,
 					["isDaily"] = true,
-					["coord"] = { 31.0, 23.2, 1525 },
+					["coord"] = { 31.0, 23.2, REVENDRETH },
 					["g"] = {
 						crit(5, {	-- Stonefist
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -317,7 +317,7 @@ _.Zones =
 				n(165253, {	-- Tollkeeper Varaboss
 					["questID"] = 59595,
 					["isDaily"] = true,
-					["coord"] = { 66.4, 71.4, 1525 },
+					["coord"] = { 66.4, 71.4, REVENDRETH },
 					["g"] = {
 						crit(13, {	-- Tollkeeper Varaboss
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -332,7 +332,7 @@ _.Zones =
 					["description"] = "After you kill all the Crawler Eggs around Funguss and defeat several waves of Dread Crawlers, the rare will attack.",
 					["questID"] = 56877,
 					["isDaily"] = true,	--	the quest for this one appears to be permanent and not a daily reset.  having the isDaily tag doesn't affect it, so if blizz ever fixes it it'll already be good to go
-					["coord"] = { 42.8, 79.2, 1525 },
+					["coord"] = { 42.8, 79.2, REVENDRETH },
 					["crs"] = {
 						155769,	-- Crawler Egg
 						155777,	-- Funguss
@@ -348,7 +348,7 @@ _.Zones =
 					["description"] = "To summon Worldedge Gorger, you need to use |cff1eff00Enticing Anima|r to light Worldedge Braziers. |cff1eff00Enticing Anima|r drops from the aberrations that spawn along the river.",
 					["questID"] = 58259,
 					["isDaily"] = true,
-					["coord"] = { 38.6, 72.0, 1525 },
+					["coord"] = { 38.6, 72.0, REVENDRETH },
 					["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
 					["g"] = {
 						crit(6, {	-- Worldedge Gorger

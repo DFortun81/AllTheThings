@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(-77, {	-- Special
 				n(-907, {	-- Dead Blanchy
 					["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
 					["questID"] = 62107,	-- daily Blanchy interaction
 					["isDaily"] = true,
-					["coord"] = { 63.1, 43.1, 1525 },	-- Revendreth, area where Dead Blanchy spawns
+					["coord"] = { 63.1, 43.1, REVENDRETH },	-- area where Dead Blanchy spawns
 					["icon"] = 2143082,
 					["crs"] = { 173468 },	-- Dead Blanchy
 					["g"] = {
@@ -48,7 +48,7 @@ _.Zones =
 							["description"] = "Day 2: Borrow 1 |cFFFFFFFFGrooming Brush|r from Snickersnee in Darkhaven.",
 							["questID"] = 62042,
 							["sourceQuests"] = { 62038 },	-- Handful of Oats
-							["coord"] = { 63.4, 61.8, 1525 },	-- Revendreth
+							["coord"] = { 63.4, 61.8, REVENDRETH },
 							["crs"] = { 173570 },	-- Snickersnee Snickersnee <Stable Dredger>
 						}),
 						i(182595, {	-- Sturdy Horseshoe
@@ -56,28 +56,28 @@ _.Zones =
 							["questID"] = 62047,
 							["sourceQuests"] = { 62042 },	-- Grooming Brush
 							["coords"] = {
-								{ 61.2, 69.4, 1525 },	-- Revendreth
-								{ 63.2, 65.7, 1525 },
-								{ 64.2, 58.4, 1525 },
-								{ 65.1, 74.1, 1525 },
-								{ 68.1, 68.8, 1525 },
-								{ 70.3, 59.0, 1525 },
-								{ 74.5, 57.8, 1525 },
+								{ 61.2, 69.4, REVENDRETH },
+								{ 63.2, 65.7, REVENDRETH },
+								{ 64.2, 58.4, REVENDRETH },
+								{ 65.1, 74.1, REVENDRETH },
+								{ 68.1, 68.8, REVENDRETH },
+								{ 70.3, 59.0, REVENDRETH },
+								{ 74.5, 57.8, REVENDRETH },
 							},
 						}),
 						i(182599, {	-- Bucket of Clean Water
 							["description"] = "Day 4: Pick up the |cFFFFFFFFEmpty Water Bucket|r in Revendreth, and fill it in either Bastion or Ardenweald.",
 							["questID"] = 62049,
 							["sourceQuests"] = { 62047 },	-- Sturdy Horseshoe
-							["coord"] = { 63.2, 61.5, 1525 },
+							["coord"] = { 63.2, 61.5, REVENDRETH },
 							["cost"] = { { "i", 182620, 1 } },	-- 1x Empty Water Bucket
 						}),
 						i(182597, {	-- Comfortable Saddle Blanket
 							["description"] = "Day 5: Purchase 1 |cFFFFFFFFComfortable Saddle Blanket|r from Ta'tru in Revendreth.\n\nNOTE: This item has a varying cost depending on the week!",
 							["questID"] = 62048,
 							["sourceQuests"] = { 62049 },	-- Bucket of Clean Water
-							["coord"] = { 51.1, 78.8, 1525 },
-							["cost"] = { 
+							["coord"] = { 51.1, 78.8, REVENDRETH },
+							["cost"] = {
 								{ "i", 179314, 30 },	-- 30x Creeping Crawler Meat
 								{ "i", 168589, 10 },	-- 10x Marrowroot
 								-- TODO: more costs?
@@ -89,8 +89,8 @@ _.Zones =
 							["questID"] = 62050,
 							["sourceQuests"] = { 62048 },	-- Comfortable Saddle Blanket
 							["coords"] = {
-								{ 40.8, 46.6, 1525 },	-- Mims <Innkeeper>
-								{ 70.6, 80.2, 1525 },	-- Slabchop <Chugs, Chews, and Stews>
+								{ 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
+								{ 70.6, 80.2, REVENDRETH },	-- Slabchop <Chugs, Chews, and Stews>
 							},
 							["crs"] = {
 								167815,	-- Mims <Innkeeper>

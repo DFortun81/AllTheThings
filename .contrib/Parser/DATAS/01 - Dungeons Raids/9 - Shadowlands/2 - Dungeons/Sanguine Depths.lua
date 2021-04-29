@@ -4,7 +4,7 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1189, {	-- Sanguine Depths
-		["coord"] = { 51.0, 30.1, 1525 },
+		["coord"] = { 51.0, 30.1, REVENDRETH },
 		["maps"] = {
 			1675,	-- Sanguine Depths
 			1676,	-- Amphitheater of Sorrow / Ring of Souls

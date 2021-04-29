@@ -604,7 +604,7 @@ _.Zones =
 				-- }),
 				-- q(60234, {	-- Souls of the Damned (Revendreth)
 					-- ["provider"] = { "n", 164738 },	-- Tenaval
-					-- ["coord"] = { 46.6, 28.6, 1525 },
+					-- ["coord"] = { 46.6, 28.6, REVENDRETH },
 					-- ["sourceQuests"] = { 59320 },	-- Souls to Save
 				-- }),
 				-- q(61508, {	-- Soul Salvation (Bastion)
@@ -619,7 +619,7 @@ _.Zones =
 				-- }),
 				-- q(61515, {	-- Soul Salvation (Revendreth)
 					-- ["provider"] = { "n", 158553 },	-- Tenaval
-					-- ["coord"] = { 33.9, 43.5, 1525 },
+					-- ["coord"] = { 33.9, 43.5, REVENDRETH },
 					-- ["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
 				-- }),
 				-- q(61496, {	-- A Familiar Energy
@@ -628,10 +628,10 @@ _.Zones =
 						-- { 33.8, 42.5, ARDENWEALD },
 						-- --{ 33.8, 42.5, BASTION },
 						-- --{ 33.8, 42.5, MALDRAXXUS },
-						-- --{ 33.8, 42.5, 1525 },	-- Revendreth
+						-- --{ 33.8, 42.5, REVENDRETH },
 					-- },
 					-- ["sourceQuests"] = {
-						-- 61508,	-- Soul Salvation (Ardenweald)
+						-- 61508,	-- Soul Salvation (Ardenweald)REVENDRETH
 						-- 61508,	-- Soul Salvation (Bastion)
 						-- 61513,	-- Soul Salvation (Maldraxxus)
 						-- 61515,	-- Soul Salvation (Revendreth)

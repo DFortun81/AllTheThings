@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(FACTIONS, {
 				faction(2439, {	-- The Avowed
 					["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor (unlocks ability to collect Sinstone Fragments + gain reputation)
@@ -32,7 +32,7 @@ _.Zones =
 								["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 								["provider"] = { "n", 160248 },	-- Archivist Fane
 								["isDaily"] = true,
-								["coord"] = { 73.0, 52.0, 1525 },
+								["coord"] = { 73.0, 52.0, REVENDRETH },
 								["cost"] = { { "c", 1816, 100 } },	-- 100x Sinstone Fragment
 								["g"] = {
 									-- TODO: add sinstone
@@ -42,7 +42,7 @@ _.Zones =
 								["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 								["provider"] = { "n", 160248 },	-- Archivist Fane
 								["isDaily"] = true,
-								["coord"] = { 73.0, 52.0, 1525 },
+								["coord"] = { 73.0, 52.0, REVENDRETH },
 								["cost"] = { { "c", 1816, 250 } },	-- 250x Sinstone Fragment
 								["g"] = {
 									i(173794),	-- High Inquisitor Sinstone
@@ -52,7 +52,7 @@ _.Zones =
 								["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 								["provider"] = { "n", 160248 },	-- Archivist Fane
 								["isDaily"] = true,
-								["coord"] = { 73.0, 52.0, 1525 },
+								["coord"] = { 73.0, 52.0, REVENDRETH },
 								["cost"] = { { "i", 180451, 10 } },	-- 10x Grand Inquisitor's Sinstone Fragment
 								["g"] = {
 									-- TODO: add sinstone
@@ -62,7 +62,7 @@ _.Zones =
 								["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 								["provider"] = { "n", 167332 },	-- Gresit
 								["isWeekly"] = true,
-								["coord"] = { 71.7, 40.3, 1525 },
+								["coord"] = { 71.7, 40.3, REVENDRETH },
 							}),
 						}),
 						n(RARES, {
@@ -88,7 +88,7 @@ _.Zones =
 									["description"] = "Requires |cff18bb0aInquisitor Otilia's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,	--
 									["isDaily"] = true,
-									["coord"] = { 64.8, 46.6, 1525 },
+									["coord"] = { 64.8, 46.6, REVENDRETH },
 									["g"] = {
 										crit(1, {	-- Inquisitor Otilia
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -100,7 +100,7 @@ _.Zones =
 									["description"] = "Requires |cff18bb0aInquisitor Petre's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,	--
 									["isDaily"] = true,
-									["coord"] = { 67.2, 43.6, 1525 },
+									["coord"] = { 67.2, 43.6, REVENDRETH },
 									["g"] = {
 										crit(2, {	-- Inquisitor Petre
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -112,7 +112,7 @@ _.Zones =
 									["description"] = "Requires |cff18bb0aInquisitor Sorin's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,	--
 									["isDaily"] = true,
-									["coord"] = { 69.6, 47.6, 1525 },
+									["coord"] = { 69.6, 47.6, REVENDRETH },
 									["g"] = {
 										crit(3, {	-- Inquisitor Sorin
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -122,7 +122,7 @@ _.Zones =
 								}),
 								n(159151, {	-- Inquisitor Traian
 									["description"] = "Requires |cff18bb0aInquisitor Traian's Sinstone|r to summon.  Inquisitor Traian is killed as part of the quest |cFFFFD700Hunting an Inquisitor|r.",
-									["coord"] = { 76.0, 51.8, 1525 },
+									["coord"] = { 76.0, 51.8, REVENDRETH },
 									["g"] = {
 										crit(4, {	-- Inquisitor Traian
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -157,7 +157,7 @@ _.Zones =
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,
 									["isDaily"] = true,
-									["coord"] = { 72.0, 53.0, 1525 },
+									["coord"] = { 72.0, 53.0, REVENDRETH },
 									["g"] = {
 										crit(5, {	-- High Inquisitor Dacian
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -170,7 +170,7 @@ _.Zones =
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 									["questID"] = 59887,
 									["isDaily"] = true,
-									["coord"] = { 75.2, 44.2, 1525 },
+									["coord"] = { 75.2, 44.2, REVENDRETH },
 									["g"] = {
 										crit(6, {	-- High Inquisitor Gabi
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -183,7 +183,7 @@ _.Zones =
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Magda's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,
 									["isDaily"] = true,
-									["coord"] = { 69.6, 52.0, 1525 },
+									["coord"] = { 69.6, 52.0, REVENDRETH },
 									["g"] = {
 										crit(7, {	-- High Inquisitor Magda
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -195,7 +195,7 @@ _.Zones =
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Radu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,
 									["isDaily"] = true,
-									["coord"] = { 71.4, 42.2, 1525 },
+									["coord"] = { 71.4, 42.2, REVENDRETH },
 									["g"] = {
 										crit(8, {	-- High Inquisitor Radu
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -223,7 +223,7 @@ _.Zones =
 									["description"] = "Requires |cff712daaGrand Inquisitor Aurica's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,
 									["isDaily"] = true,
-									["coord"] = { 69.7, 45.4, 1525 },
+									["coord"] = { 69.7, 45.4, REVENDRETH },
 									["g"] = {
 										crit(9, {	-- Grand Inquisitor Aurica
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -235,7 +235,7 @@ _.Zones =
 									["description"] = "Requires |cff712daaGrand Inquisitor Nicu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								--	["questID"] = ,
 									["isDaily"] = true,
-									["coord"] = { 64.6, 52.6, 1525 },
+									["coord"] = { 64.6, 52.6, REVENDRETH },
 									["g"] = {
 										crit(10, {	-- Grand Inquisitor Nicu
 											["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
@@ -247,7 +247,7 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
-								["coord"] = { 73.0, 52.0, 1525 },
+								["coord"] = { 73.0, 52.0, REVENDRETH },
 								["g"] = {
 									i(184221, {	-- Archivist's Quill
 										["cost"] = { { "c", 1816, 1000 } },

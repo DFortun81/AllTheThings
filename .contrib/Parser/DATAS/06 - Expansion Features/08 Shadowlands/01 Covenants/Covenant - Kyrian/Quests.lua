@@ -76,7 +76,7 @@ _.ExpansionFeatures =
 					q(58566, {	-- Actions Speak Louder than Words
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
-						["coord"] = { 31.9, 47.5, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.5, REVENDRETH },
 					}),
 					q(61778, {	-- Aerial Advantage
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -166,7 +166,7 @@ _.ExpansionFeatures =
 							58560,	-- Gothic Fashion
 						},
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 41.4, REVENDRETH },
 					}),
 					q(57120, {	-- Compassion, Blade of Humility
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
@@ -265,7 +265,7 @@ _.ExpansionFeatures =
 					q(58559, {	-- Eyes of the Master
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 60.2, 60.8, 1525 },	-- Revendreth
+						["coord"] = { 60.2, 60.8, REVENDRETH },
 					}),
 					q(58793, {	-- Faith Through the Darkness
 						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 					q(58560, {	-- Gothic Fashion
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 165011 },	-- Pelagos
-						["coord"] = { 50.6, 52.1, 1525 },	-- Revendreth
+						["coord"] = { 50.6, 52.1, REVENDRETH },
 					}),
 					q(61779, {	-- Grave Intent
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -426,12 +426,12 @@ _.ExpansionFeatures =
 					q(58565, {	-- Land of Light
 						["sourceQuests"] = { 58564 },	-- Sins of the Past
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 58.1, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.1, 27.5, REVENDRETH },
 					}),
 					q(58568, {	-- Light Respite
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.7, REVENDRETH },
 					}),
 					q(58950, {	-- Lumber for Lakeshire
 						["sourceQuests"] = {
@@ -504,12 +504,12 @@ _.ExpansionFeatures =
 					q(58558, {	-- Overhead Intelligence
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 60.3, 60.8, 1525 },	-- Revendreth
+						["coord"] = { 60.3, 60.8, REVENDRETH },
 					}),
 					q(58570, {	-- Parting Words
 						["sourceQuests"] = { 58569 },	-- The Folly of Envy
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
+						["coord"] = { 39.9, 59.0, REVENDRETH },
 					}),
 					q(58180, {	-- Phaestus, Genesis of Aeons
 						["sourceQuests"] = {
@@ -617,17 +617,17 @@ _.ExpansionFeatures =
 							58558,	-- Overhead Intelligence
 						},
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 41.4, REVENDRETH },
 					}),
 					q(58564, {	-- Sins of the Past
 						["sourceQuests"] = { 58563 },	-- Through Glass
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 77.8, 39.6, 1525 },	-- Revendreth
+						["coord"] = { 77.8, 39.6, REVENDRETH },
 					}),
 					q(58567, {	-- Skulking in the Darkness
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.7, REVENDRETH },
 					}),
 					q(62238, {	-- Soul Led Astray
 						["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
@@ -704,7 +704,7 @@ _.ExpansionFeatures =
 							58567,	-- Skulking in the Darkness
 						},
 						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
-						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
+						["coord"] = { 39.9, 59.0, REVENDRETH },
 					}),
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
@@ -754,7 +754,7 @@ _.ExpansionFeatures =
 							58562,	-- Collecting Dust
 						},
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 55.2, 34.7, 1525 },	-- Revendreth
+						["coord"] = { 55.2, 34.7, REVENDRETH },
 						["g"] = {
 							i(181286),	-- Halo of the Selfless
 						},
