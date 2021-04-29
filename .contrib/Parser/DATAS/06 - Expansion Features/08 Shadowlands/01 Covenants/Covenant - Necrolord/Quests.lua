@@ -114,6 +114,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),
+					q(60110, {	-- Never Had A Friend Like Me
+						["sourceQuests"] = { 60049 },	-- At Your Service
+						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
+						["coord"] = { 38.3, 36.7, 1698 },	-- Seat of the Primus
+						["g"] = {
+							follower(1263),	-- Emeni
+						},
+					}),
 					q(57644, {	-- No Friend Left Behind
 						["sourceQuests"] = { 61226 },	-- Extra Limbs
 						["provider"] = { "n", 158604 },	-- Navigator Xennir
@@ -260,11 +268,7 @@ _.ExpansionFeatures =
 					
 					
 					
-					q(60110, {	-- Never Had A Friend Like Me
-						["sourceQuests"] = { 57648 },	-- The Impossible Plan
-						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
-						["coord"] = { 38.3, 36.7, 1698 },	-- Seat of the Primus
-					}),
+					
 
 					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
 					

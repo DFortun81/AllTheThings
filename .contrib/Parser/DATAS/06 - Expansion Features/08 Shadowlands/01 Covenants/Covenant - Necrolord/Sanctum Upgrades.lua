@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
 									["provider"] = { "n", 162174 },	-- Emeni
-									["coord"] = { 24.9, 31.7, 1536 },
+									["coord"] = { 24.9, 31.7, 1536 },	-- Maldraxxus
 								}),
 								q(63058, {	-- Abominable Stitching and Me
 									-- TODO: is this a breadcrumb to 60041?
@@ -144,7 +144,7 @@ _.ExpansionFeatures =
 								q(60049, {	-- At Your Service
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
 									["provider"] = { "n", 167044 },	-- Emeni
-									["coord"] = { 55.1, 68.7, 1536 },
+									["coord"] = { 55.1, 68.7, 1536 },	-- Maldraxxus
 								}),
 								q(58671, {	-- Bottled Up Inside
 									["sourceQuests"] = { 59042 },	-- A Good Heart
@@ -253,7 +253,7 @@ _.ExpansionFeatures =
 								q(60048, {	-- Stitching Time
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
 									["provider"] = { "n", 167150 },	-- Rathan
-									["coord"] = { 55.1, 68.8, 1536 },
+									["coord"] = { 55.1, 68.8, 1536 },	-- Maldraxxus
 								}),
 								q(59126, {	-- Supply Chain
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
