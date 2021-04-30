@@ -2919,7 +2919,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
-					sourceID = GetSourceID(sourceGroup.link);
+					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
 				end
 			else
 				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors

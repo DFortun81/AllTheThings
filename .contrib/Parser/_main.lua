@@ -937,11 +937,11 @@ function Harvest(things)
 			if not thing.bonuses then thing.bonuses = {} end
 		end
 		if j.mods then
-			for l,modID in ipairs(j.mods) do
-				thing.mods[l] = modID;
+			for modID,sourceID in ipairs(j.mods) do
+				thing.mods[modID] = sourceID;
 			end
-			for l,modID in pairs(j.mods) do
-				thing.mods[l] = modID;
+			for modID,sourceID in pairs(j.mods) do
+				thing.mods[modID] = sourceID;
 			end
 		end
 		if j.bonuses then
