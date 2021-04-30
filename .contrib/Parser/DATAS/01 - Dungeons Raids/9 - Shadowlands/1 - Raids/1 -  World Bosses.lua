@@ -91,8 +91,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
 				["isRaid"] = true,
-				["coord"] = { 27.2, 14.9, 1525 },
-				["maps"] = { 1525 },	-- Revendreth
+				["coord"] = { 27.2, 14.9, REVENDRETH },
+				["maps"] = { REVENDRETH },
 				["cr"] = 167526,	-- Nurgash Muckformed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
@@ -110,8 +110,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
-				["coord"] = { 20.2, 63.6, 1565 },
-				["maps"] = { 1565 },	-- Ardenweald
+				["coord"] = { 20.2, 63.6, ARDENWEALD },
+				["maps"] = { ARDENWEALD },
 				["cr"] = 167527,	-- Oranomonos the Everbranching
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation

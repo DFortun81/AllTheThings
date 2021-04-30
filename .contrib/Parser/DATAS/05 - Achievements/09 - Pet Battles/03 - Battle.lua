@@ -206,42 +206,42 @@ _.Achievements =
 				i(184508),	-- Mawsworn Pet Leash
 				crit(1,  {	-- Ardenweald's Tricksters
 					["_quests"] = { 61949 },	-- Ardenweald's Tricksters
-					["coord"] = { 40.2, 28.8, 1565 },
+					["coord"] = { 40.2, 28.8, ARDENWEALD },
 					["cr"] = 173381,	-- Rascal
 				}),
 				crit(2,  {	-- Airborne Defense Force
 					["_quests"] = { 61948 },	-- Airborne Defense Force
-					["coord"] = { 51.2, 44.2, 1565 },
+					["coord"] = { 51.2, 44.2, ARDENWEALD },
 					["cr"] = 173377,	-- Faryl
 				}),
 				crit(3,  {	-- Lurking In The Shadows
 					["_quests"] = { 61947 },	-- Lurking In The Shadows
-					["coord"] = { 40.0, 64.4, 1565 },
+					["coord"] = { 40.0, 64.4, ARDENWEALD },
 					["cr"] = 173376,	-- Nightfang
 				}),
 				crit(4,  {	-- Natural Defenders
 					["_quests"] = { 61946 },	-- Natural Defenders
-					["coord"] = { 58.2, 56.8, 1565 },
+					["coord"] = { 58.2, 56.8, ARDENWEALD },
 					["cr"] = 173372,	-- Glitterdust
 				}),
 				crit(5,  {	-- The Mind Games of Addius
 					["_quests"] = { 61886 },	-- The Mind Games of Addius
-					["coord"] = { 61.2, 41.0, 1525 },
+					["coord"] = { 61.2, 41.0, REVENDRETH },
 					["cr"] = 173331,	-- Addius the Tormentor
 				}),
 				crit(6,  {	-- Eyegor's Special Friends
 					["_quests"] = { 61885 },	-- Eyegor's Special Friends
-					["coord"] = { 67.6, 66.0, 1525 },
+					["coord"] = { 67.6, 66.0, REVENDRETH },
 					["cr"] = 173324,	-- Eyegor
 				}),
 				crit(7,  {	-- Resilient Survivors
 					["_quests"] = { 61883 },	-- Resilient Survivors
-					["coord"] = { 51.4, 38.2, 1525 },
+					["coord"] = { 51.4, 38.2, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
 				}),
 				crit(8,  {	-- Ashes Will Fall
 					["_quests"] = { 61879 },	-- Ashes Will Fall
-					["coord"] = { 25.2, 38.0, 1525 },
+					["coord"] = { 25.2, 38.0, REVENDRETH },
 					["cr"] = 173303,	-- Scorch
 				}),
 				crit(9,  {	-- Failed Experiment
@@ -733,15 +733,15 @@ _.Achievements =
 				i(184509),	-- Spriggan Trickster
 				ach(14868, {	-- Aquatic Apparitions  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -769,25 +769,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14869, {	-- Beast Busters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -815,25 +815,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14870, {	-- Creepy Critters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -861,25 +861,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14871, {	-- Deathly Dragonkin -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -907,25 +907,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14872, {	-- Eerie Elementals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -953,25 +953,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14873, {	-- Flickering Fliers -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -999,25 +999,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14874, {	-- Haunted Humanoids -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -1045,25 +1045,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14875, {	-- Mummified Magics -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -1091,25 +1091,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14876, {	-- Macabre Mechanicals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -1137,25 +1137,25 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14877, {	-- Unholy Undead -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
@@ -1183,11 +1183,11 @@ _.Achievements =
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),

@@ -26,18 +26,22 @@ _.Zones =
 					q(31878, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["DisablePartySync"] = true,
 					}),
 					q(31879, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["DisablePartySync"] = true,
 					}),
 					q(31880, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["DisablePartySync"] = true,
 					}),
 					q(31881, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["DisablePartySync"] = true,
 					}),
 					q(31966, {	-- Battle Pet Tamers: Cataclysm
 						["altQuests"] = { 31967 },

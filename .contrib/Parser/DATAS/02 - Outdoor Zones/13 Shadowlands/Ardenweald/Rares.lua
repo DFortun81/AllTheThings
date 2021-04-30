@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1565, {	-- Ardenweald
+		m(ARDENWEALD, {
 			n(RARES, {
 				n(164477, {	-- Deathbinder Hroth
 					["questID"] = 59226,
 					["isDaily"] = true,
-					["coord"] = { 34.6, 68.0, 1565 },
+					["coord"] = { 34.6, 68.0, ARDENWEALD },
 					["g"] = {
 						crit(1, {	-- Deathbinder Hroth
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -22,7 +22,7 @@ _.Zones =
 					["description"] = "The rare runs laps through the water.  You can hop on its back slow it and periodically stun it.",
 					["questID"] = 59201,
 					["isDaily"] = true,
-					["coord"] = { 47.6, 24.6, 1565 },
+					["coord"] = { 47.6, 24.6, ARDENWEALD },
 					["g"] = {
 						crit(7, {	-- Deifir the Untamed
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -31,7 +31,7 @@ _.Zones =
 					},
 				}),
 				n(163229, {	-- Dustbrawl
-					["coord"] = { 48.6, 76.8, 1565 },
+					["coord"] = { 48.6, 76.8, ARDENWEALD },
 					["questID"] = 58987,
 					["isDaily"] = true,
 					["g"] = {
@@ -44,7 +44,7 @@ _.Zones =
 					["description"] = "At the back of the cave.  Destroy |cFFFFFFFFQuivering Gorm Eggs|r and defeat the Angry Egg-Tenders until the rare spawns.",
 					["questID"] = 60266,
 					["isDaily"] = true,
-					["coord"] = { 58.5, 31.8, 1565 },
+					["coord"] = { 58.5, 31.8, ARDENWEALD },
 					["crs"] = { 171827 },	-- Angry Egg-Tender
 					["g"] = {
 						crit(13, {	-- Egg-Tender Leh'go
@@ -57,7 +57,7 @@ _.Zones =
 					["description"] = "In a cave behind a waterfall.",
 					["questID"] = 61184,
 					["isDaily"] = true,
-					["coord"] = { 68.4, 29.4, 1565 },
+					["coord"] = { 68.4, 29.4, ARDENWEALD },
 					["g"] = {
 						crit(21, {	-- Faeflayer (incorrectly showing in-game as Soultwister Cero -- but that rare awards criteria 20)
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -69,7 +69,7 @@ _.Zones =
 					["description"] = "Kill mobs on top of the dust cloud.  Eventually, Watcher Ver'lo will yell a warning about something moving underground, at which point you've almost killed enough to force the rare to spawn.",
 					["questID"] = 59006,
 					["isDaily"] = true,
-					["coord"] = { 53.8, 75.8, 1565 },
+					["coord"] = { 53.8, 75.8, ARDENWEALD },
 					["g"] = {
 						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -81,7 +81,7 @@ _.Zones =
 					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns.  Gormtamer Tizo will spawn after Chompy is killed.",
 					["questID"] = 59145,
 					["isDaily"] = true,
-					["coord"] = { 28.4, 55.3, 1565 },
+					["coord"] = { 28.4, 55.3, ARDENWEALD },
 					["crs"] = { 164110 },	-- Chompy
 					["g"] = {
 						crit(4, {	-- Gormtamer Tizo
@@ -96,7 +96,7 @@ _.Zones =
 						n(164547, {	-- Mystic Rainbowhorn
 							["questID"] = 59235,
 							["isDaily"] = true,
-							["coord"] = { 65.7, 28.1, 1565 },
+							["coord"] = { 65.7, 28.1, ARDENWEALD },
 							["g"] = {
 								crit(2, {	-- Mystic Rainbowhorn
 									["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -110,7 +110,7 @@ _.Zones =
 				n(164112, {	-- Humon'gozz
 					["questID"] = 59157,
 					["isDaily"] = true,
-					["coord"] = { 32.6, 31.0, 1565 },
+					["coord"] = { 32.6, 31.0, ARDENWEALD },
 					["crs"] = { 164122 },	-- Rapidly Growing Mushroom/Humon'gozz (npcID stays the same after it morphs from the mushroom into Humon'gozz)
 					["g"] = {
 						crit(5, {	-- Humon'gozz
@@ -122,7 +122,7 @@ _.Zones =
 				n(160448, {	-- Hunter Vivanna <The Wild Hunt>
 					["questID"] = 59221,
 					["isDaily"] = true,
-					["coord"] = { 67.8, 51.2, 1565 },
+					["coord"] = { 67.8, 51.2, ARDENWEALD },
 					["g"] = {
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -148,12 +148,12 @@ _.Zones =
 					["questID"] = 59140,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 32.9, 44.4, 1565 },	-- confirmed
-						{ 36.4, 48.1, 1565 },	-- confirmed
-						{ 47.9, 40.2, 1565 },	-- confirmed
-						{ 59.9, 29.4, 1565 },
-						{ 36.5, 47.9, 1565 },
-						{ 57.9, 29.3, 1565 },
+						{ 32.9, 44.4, ARDENWEALD },	-- confirmed
+						{ 36.4, 48.1, ARDENWEALD },	-- confirmed
+						{ 47.9, 40.2, ARDENWEALD },	-- confirmed
+						{ 59.9, 29.4, ARDENWEALD },
+						{ 36.5, 47.9, ARDENWEALD },
+						{ 57.9, 29.3, ARDENWEALD },
 					},
 					["g"] = {
 						crit(3, {	-- Macabre
@@ -166,7 +166,7 @@ _.Zones =
 					["description"] = "Shared spawn with Rotbriar Scrappers.",
 					["questID"] = 59431,
 					["isDaily"] = true,
-					["coord"] = { 62.2, 24.8, 1565 },
+					["coord"] = { 62.2, 24.8, ARDENWEALD },
 					["g"] = {
 						crit(11, {	-- Mymaen
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -178,7 +178,7 @@ _.Zones =
 					["description"] = "Use either a |cff16bf0dPinch of Faerie Dust|r (dropped by the mobs in the area) or the buff from |cFFFFFFFFBasket of Enchanted Wings|r to fly up to the rare.  When you get close enough, it will fly down and be attackable.",
 					["questID"] = 59208,
 					["isDaily"] = true,
-					["coord"] = { 52.0, 58.8, 1565 },
+					["coord"] = { 52.0, 58.8, ARDENWEALD },
 					["g"] = {
 						crit(8, {	-- Old Ardeite
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -190,7 +190,7 @@ _.Zones =
 					["description"] = "Poke the Dormant Blossoms repeatedly to summon the rare.",
 					["questID"] = 60273,
 					["isDaily"] = true,
-					["coord"] = { 64.6, 44.0, 1565 },
+					["coord"] = { 64.6, 44.0, ARDENWEALD },
 					["crs"] = { 167928, 167929, 167916 },	-- Dormant Blossom
 					["g"] = {
 						crit(14, {	-- Rootwrithe
@@ -202,7 +202,7 @@ _.Zones =
 				n(167724, {	-- Rotbriar Boggart
 					["questID"] = 60258,
 					["isDaily"] = true,
-					["coord"] = { 65.6, 24.0, 1565 },
+					["coord"] = { 65.6, 24.0, ARDENWEALD },
 					["crs"] = { 171684 },	-- Daffodil
 					["g"] = {
 						crit(12, {	-- Rotbriar Changeling
@@ -213,13 +213,13 @@ _.Zones =
 				}),
 				n(171699, {	-- Shimmermist Runner
 					["coords"] = {
-						{  31.0, 54.5, 1565 },	-- start
-						{  29.6, 56.3, 1565 },	-- 1
-						{  29.8, 57.8, 1565 },	-- 2
-						{  29.2, 58.5, 1565 },	-- 3
-						{  28.9, 58.8, 1565 },	-- 4
-						{  28.1, 58.1, 1565 },	-- 5
-						{  27.5, 57.8, 1565 },	-- 6
+						{  31.0, 54.5, ARDENWEALD },	-- start
+						{  29.6, 56.3, ARDENWEALD },	-- 1
+						{  29.8, 57.8, ARDENWEALD },	-- 2
+						{  29.2, 58.5, ARDENWEALD },	-- 3
+						{  28.9, 58.8, ARDENWEALD },	-- 4
+						{  28.1, 58.1, ARDENWEALD },	-- 5
+						{  27.5, 57.8, ARDENWEALD },	-- 6
 					},
 					["description"] = "To complete the maze correctly, follow the blue lanterns at every step.\n\n1. Enter Mistveil Tangle through the Oaken Assembly at |cFFFFFFFF31.0, 54.5|r.  Two blue lanterns hang on either side of a vine arch.\n\n2. Head down the hill and turn left at |cFFFFFFFF29.6, 56.3|r.  Again, two blue lanterns hang on either side of a vine arch.\n\n3. Turn right at |cFFFFFFFF29.8, 57.8|r.  A single blue lamp hangs from the vine arch.\n\n4. Turn left at |cFFFFFFFF29.2, 58.5|r.  A single blue lamp is on the ground.\n\n5. Immediately turn right through the arch at |cFFFFFFFF28.9, 58.8|r.  A single blue lamp hangs on the left side.\n\n6. Go through the arch at |cFFFFFFFF28.1, 58.1|r.  A single blue lamp is on the ground on the right side of the arch.\n\n7. Go straight to the area on the map where the Tame Gladerunner treasure is displayed.  If you've done the maze correctly Shizgher will not fade out of view.  Defeat him, and then click on the Shimmermist Runner to collect it.",
 					["questID"] = 61192,
@@ -231,7 +231,7 @@ _.Zones =
 				n(164415, {	-- Skuld Vit
 					["questID"] = 59220,
 					["isDaily"] = true,
-					["coord"] = { 37.4, 59.6, 1565 },
+					["coord"] = { 37.4, 59.6, ARDENWEALD },
 					["g"] = {
 						crit(9, {	-- Skuld Vit
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -243,7 +243,7 @@ _.Zones =
 				n(171451, {	-- Soultwister Cero
 					["questID"] = 61177,
 					["isDaily"] = true,
-					["coord"] = { 72.4, 51.6, 1565 },
+					["coord"] = { 72.4, 51.6, ARDENWEALD },
 					["g"] = {
 						crit(20, {	-- Soultwister Cero
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -255,7 +255,7 @@ _.Zones =
 					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["isDaily"] = true,
-					["coord"] = { 41.5, 44.8, 1565 },
+					["coord"] = { 41.5, 44.8, ARDENWEALD },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew
 					["g"] = {
@@ -336,7 +336,7 @@ _.Zones =
 					["description"] = "You can use various toys (Darkmoon Cannon, Phial of Ravenous Slime), pet abilities, and AoE abilities to pull this rare.  If you need help not falling asleep, pulling a nearby Greater Ardenmoth can apply a poison that will give you a few more seconds by waking you up with each tick.",
 					["questID"] = 60290,	-- no other quest popped
 					["isDaily"] = true,
-					["coord"] = { 59.2, 46.6, 1565 },
+					["coord"] = { 59.2, 46.6, ARDENWEALD },
 					["g"] = {
 						crit(15, {	-- The Slumbering Emperor
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -349,7 +349,7 @@ _.Zones =
 					["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
 					["questID"] = 61632,
 					["isDaily"] = true,
-					["coord"] = { 30.0, 55.0, 1565 },
+					["coord"] = { 30.0, 55.0, ARDENWEALD },
 					["g"] = {
 						crit(19, {	-- Valfir the Unrelenting
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -365,7 +365,7 @@ _.Zones =
 					["description"] = "Pull on the Wriggling Tendril to spawn the rare.",
 					["questID"] = 59170,
 					["isDaily"] = true,
-					["coord"] = { 58.0, 61.6, 1565 },
+					["coord"] = { 58.0, 61.6, ARDENWEALD },
 					["crs"] = { 164179 },	-- Wriggling Tendril
 					["g"] = {
 						crit(6, {	-- Wrigglemortis

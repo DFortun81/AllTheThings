@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 					q(58997, {	-- A Bittersweet Prize
 						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
-						["coord"] = { 45.2, 65.4, 1565 },
+						["coord"] = { 45.2, 65.4, ARDENWEALD },
 					}),
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
@@ -61,7 +61,7 @@ _.ExpansionFeatures =
 					q(57122, {	-- A Step Too Far
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
 						["provider"] = { "n", 170375 },	-- Kleia
-						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+						["coord"] = { 33.8, 55.7, THE_MAW },
 					}),
 					q(62555, {	-- A Touch of Humility
 						["sourceQuests"] = { 57125 },	-- Time to Reflect
@@ -76,7 +76,7 @@ _.ExpansionFeatures =
 					q(58566, {	-- Actions Speak Louder than Words
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
-						["coord"] = { 31.9, 47.5, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.5, REVENDRETH },
 					}),
 					q(61778, {	-- Aerial Advantage
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -166,7 +166,7 @@ _.ExpansionFeatures =
 							58560,	-- Gothic Fashion
 						},
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 41.4, REVENDRETH },
 					}),
 					q(57120, {	-- Compassion, Blade of Humility
 						["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
@@ -254,7 +254,7 @@ _.ExpansionFeatures =
 							{ "n", 162392 },	-- Willowblossom
 							{ "n", 163060 },	-- Willowblossom
 						},
-						["coord"] = { 50.5, 68.9, 1565 },
+						["coord"] = { 50.5, 68.9, ARDENWEALD },
 						["g"] = {
 							i(179941),	-- Selfless Forgelite's Boots
 							i(178155),	-- Selfless Watcher's Warboots
@@ -265,7 +265,7 @@ _.ExpansionFeatures =
 					q(58559, {	-- Eyes of the Master
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 60.2, 60.8, 1525 },	-- Revendreth
+						["coord"] = { 60.2, 60.8, REVENDRETH },
 					}),
 					q(58793, {	-- Faith Through the Darkness
 						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
@@ -328,12 +328,12 @@ _.ExpansionFeatures =
 							{ "n", 162392 },	-- Willowblossom
 							{ "n", 163060 },	-- Willowblossom
 						},
-						["coord"] = { 50.5, 68.9, 1565 },
+						["coord"] = { 50.5, 68.9, ARDENWEALD },
 					}),
 					q(58560, {	-- Gothic Fashion
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 165011 },	-- Pelagos
-						["coord"] = { 50.6, 52.1, 1525 },	-- Revendreth
+						["coord"] = { 50.6, 52.1, REVENDRETH },
 					}),
 					q(61779, {	-- Grave Intent
 						["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -352,7 +352,7 @@ _.ExpansionFeatures =
 							57123,	-- Kyrian No More
 						},
 						["provider"] = { "n", 170375 },	-- Kleia
-						-- ["coord"] = { 30.1, 61.9, 1543 },	-- The Maw (your pet)
+						--["coord"] = { 30.1, 61.9, THE_MAW },
 						["g"] = {
 							i(177051),	-- Selfless Bearer's Chest
 							i(174290),	-- Selfless Collector's Chestplate
@@ -363,7 +363,7 @@ _.ExpansionFeatures =
 					q(58995, {	-- I Dreamed A Dream
 						["sourceQuests"] = { 58857 },	-- Seeds Away!
 						["provider"] = { "n", 163328 },	-- Pelagos
-						["coord"] = { 45.2, 65.4, 1565 },
+						["coord"] = { 45.2, 65.4, ARDENWEALD },
 					}),
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -389,7 +389,7 @@ _.ExpansionFeatures =
 					q(57123, {	-- Kyrian No More
 						["sourceQuests"] = { 57121 },	-- The Power of the Maw
 						["provider"] = { "n", 170375 },	-- Kleia
-						["coord"] = { 33.8, 55.7, 1543 },	-- The Maw
+						["coord"] = { 33.8, 55.7, THE_MAW },
 					}),
 					q(63345, {	-- Kyrian Tactician
 						-- TODO: confirm SQ, assumed
@@ -426,12 +426,12 @@ _.ExpansionFeatures =
 					q(58565, {	-- Land of Light
 						["sourceQuests"] = { 58564 },	-- Sins of the Past
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 58.1, 27.5, 1525 },	-- Revendreth
+						["coord"] = { 58.1, 27.5, REVENDRETH },
 					}),
 					q(58568, {	-- Light Respite
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.7, REVENDRETH },
 					}),
 					q(58950, {	-- Lumber for Lakeshire
 						["sourceQuests"] = {
@@ -504,12 +504,12 @@ _.ExpansionFeatures =
 					q(58558, {	-- Overhead Intelligence
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 60.3, 60.8, 1525 },	-- Revendreth
+						["coord"] = { 60.3, 60.8, REVENDRETH },
 					}),
 					q(58570, {	-- Parting Words
 						["sourceQuests"] = { 58569 },	-- The Folly of Envy
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
+						["coord"] = { 39.9, 59.0, REVENDRETH },
 					}),
 					q(58180, {	-- Phaestus, Genesis of Aeons
 						["sourceQuests"] = {
@@ -617,17 +617,17 @@ _.ExpansionFeatures =
 							58558,	-- Overhead Intelligence
 						},
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 56.3, 41.4, 1525 },	-- Revendreth
+						["coord"] = { 56.3, 41.4, REVENDRETH },
 					}),
 					q(58564, {	-- Sins of the Past
 						["sourceQuests"] = { 58563 },	-- Through Glass
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 77.8, 39.6, 1525 },	-- Revendreth
+						["coord"] = { 77.8, 39.6, REVENDRETH },
 					}),
 					q(58567, {	-- Skulking in the Darkness
 						["sourceQuests"] = { 58565 },	-- Land of Light
 						["provider"] = { "n", 161540 },	-- Kleia
-						["coord"] = { 31.9, 47.7, 1525 },	-- Revendreth
+						["coord"] = { 31.9, 47.7, REVENDRETH },
 					}),
 					q(62238, {	-- Soul Led Astray
 						["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
@@ -704,7 +704,7 @@ _.ExpansionFeatures =
 							58567,	-- Skulking in the Darkness
 						},
 						["provider"] = { "n", 161553 },	-- Mindscorched Alwin
-						["coord"] = { 39.9, 59.0, 1525 },	-- Revendreth
+						["coord"] = { 39.9, 59.0, REVENDRETH },
 					}),
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
@@ -754,7 +754,7 @@ _.ExpansionFeatures =
 							58562,	-- Collecting Dust
 						},
 						["provider"] = { "n", 161544 },	-- The Curator
-						["coord"] = { 55.2, 34.7, 1525 },	-- Revendreth
+						["coord"] = { 55.2, 34.7, REVENDRETH },
 						["g"] = {
 							i(181286),	-- Halo of the Selfless
 						},
@@ -762,7 +762,7 @@ _.ExpansionFeatures =
 					q(57125, {	-- Time to Reflect
 						["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
 						["provider"] = { "n", 169850 },	-- Uther
-						["coord"] = { 25.6, 65.1, 1543 },	-- The Maw
+						["coord"] = { 25.6, 65.1, THE_MAW },
 					}),
 					q(58790, {	-- To Cross the Veil
 						["sourceQuests"] = {
@@ -799,7 +799,7 @@ _.ExpansionFeatures =
 					q(58856, {	-- Who Are You Fooling?
 						["sourceQuests"] = { 58775 },	-- Meet the Queen
 						["provider"] = { "n", 162392 },	-- Willowblossom
-						["coord"] = { 44.0, 51.8, 1565 },
+						["coord"] = { 44.0, 51.8, ARDENWEALD },
 					}),
 				}),
 			},

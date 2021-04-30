@@ -1298,7 +1298,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
-						["coord"] = { 59.6, 52.9, 1565 },
+						["coord"] = { 59.6, 52.9, ARDENWEALD },
 						["g"] = {
 							i(183053, {	-- Umbral Scythehorn (MOUNT)
 								["cost"] = {
@@ -1386,7 +1386,6 @@ _.ExpansionFeatures =
 									i(179656),	-- Winterborn Robes
 									i(179663),	-- Winterborn Sandals
 									i(179679),	-- Winterborn Sash
-									i(179660),	-- Winterborn Tunic
 								},
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark

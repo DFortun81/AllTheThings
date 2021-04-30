@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(VENDORS, {
 				n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>
-					["coord"] = { 48.6, 68.6, 1525 },
+					["coord"] = { 48.6, 68.6, REVENDRETH },
 					["g"] = {
 						i(183416, {	-- Mail Courier's Left Runner
 							["cost"] = { { "c", 1820, 10 } },
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				n(165859, {	-- Dimwiddle
-					["coord"] = { 60.8, 62.5, 1525 },
+					["coord"] = { 60.8, 62.5, REVENDRETH },
 					["g"] = {
 						i(180687, {	-- Anima Residue
 							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(165419, {	-- Grand Marshal Mudrag
-					["coord"] = { 40.6, 46.9, 1525 },
+					["coord"] = { 40.6, 46.9, REVENDRETH },
 					["g"] = {
 						i(183989, {	-- Dredger Barrow Racer
 							["cost"] = { { "c", 1820, 50 } },	-- 50x Infused Ruby
@@ -65,7 +65,7 @@ _.Zones =
 					},
 				}),
 				n(166076, {	-- Mats
-					["coord"] = { 32.6, 49.3, 1525 },
+					["coord"] = { 32.6, 49.3, REVENDRETH },
 					["g"] = {
 						i(180676, {	-- Discarded Commendation
 							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
@@ -91,7 +91,7 @@ _.Zones =
 					},
 				}),
 				n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
-					["coord"] = { 61.4, 63.8, 1525 },
+					["coord"] = { 61.4, 63.8, REVENDRETH },
 					["g"] = {
 						i(183518, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
@@ -141,7 +141,7 @@ _.Zones =
 					},
 				}),
 				n(160084, {	-- Ta'rmoro <Purveyor of Arms>
-					["coord"] = { 50.4, 81.4, 1525 },
+					["coord"] = { 50.4, 81.4, REVENDRETH },
 					["g"] = {
 						i(183982, {	-- Devourer Mite Sticker
 							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
@@ -176,13 +176,13 @@ _.Zones =
 					},
 				}),
 				n(160091, {	-- Ta'ruca
-					["coord"] = { 51.1, 78.5, 1525 },	-- Revendreth
+					["coord"] = { 51.1, 78.5, REVENDRETH },
 					["g"] = {
 						i(180774),	-- Preserved Berries
 					},
 				}),
 				n(171808, {	-- Ta'tru
-					["coord"] = { 51.1, 78.8, 1525 },	-- Revendreth
+					["coord"] = { 51.1, 78.8, REVENDRETH },
 					["g"] = {
 						i(180973, {	-- Necklace of Dredbat Fangs
 							["description"] = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",

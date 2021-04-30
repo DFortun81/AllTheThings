@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
-			["coord"] = { 48.2, 39.4, 1543 },	-- Torghast Portal in The Maw
+			["coord"] = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
 			["icon"] = 3642306,
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'

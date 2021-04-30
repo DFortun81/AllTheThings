@@ -113,8 +113,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 4,	-- LFR
 						}, {
-
-						--[[ LFR
+							--[[ LFR
 								["cost"] = {
 									{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
 									{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
@@ -125,8 +124,7 @@ _.ExpansionFeatures =
 									{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
 									{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
 								},
-									--]]
-
+							--]]
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
@@ -331,8 +329,7 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 3,	-- Normal
 						}, {
-
-						--[[ NORMAL
+							--[[ NORMAL
 								["cost"] = {
 									{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
 									{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
@@ -343,8 +340,7 @@ _.ExpansionFeatures =
 									{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
 									{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
 								},
-									--]]
-
+							--]]
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
@@ -550,20 +546,17 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 6,	-- Mythic
 						}, {
-
-						--[[ MYTHIC
+							--[[ MYTHIC
 								["cost"] = {
 									{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
 									{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 								},
-
 								["modID"] = 85,
 								["cost"] = {
 									{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
 									{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 								},
 							--]]
-
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
@@ -1298,20 +1291,17 @@ _.ExpansionFeatures =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 5,	-- Heroic
 						}, {
-
 							--[[ HEROIC
 								["cost"] = {
 									{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
 									{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 								},
-
 								["modID"] = 84,
 								["cost"] = {
 									{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
 									{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 								},
 							--]]
-
 							i(184253, {	-- Abdomen Chopper
 								["cost"] = {
 									{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213

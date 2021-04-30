@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(-34,  {	-- World Quests
 				q(59902, {	-- A Curious Cache
 					["isWorldQuest"] = true,
@@ -172,7 +172,7 @@ _.Zones =
 							["description"] = "Only available when the |cFFFFD700Muck It Up|r world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
 							["questID"] = 59823,
 							["isDaily"] = true,
-							["coord"] = { 35.8, 32.6, 1525 },
+							["coord"] = { 35.8, 32.6, REVENDRETH },
 							["g"] = {
 								crit(18, {	-- Bog Beast
 									["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -220,7 +220,7 @@ _.Zones =
 							["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
 							["questID"] = 60836,
 							["isDaily"] = true,
-							["coord"] = { 66.0, 33.2, 1525 },
+							["coord"] = { 66.0, 33.2, REVENDRETH },
 							["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
 							["g"] = {
 								crit(23, {	-- Amalgamation of Sin
@@ -239,7 +239,7 @@ _.Zones =
 							["description"] = "Only available when the |cFFFFD700Swarming Souls|r world quest is active.  When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
 							["questID"] = 60729,
 							["isDaily"] = true,
-							["coord"] = { 49.8, 35.0, 1525 },
+							["coord"] = { 49.8, 35.0, REVENDRETH },
 							["crs"] = { 169917 },	-- Avowed Ritualist
 							["g"] = {
 								crit(22, {	-- Manifestation of Wrath

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1543, {	-- The Maw
+		m(THE_MAW, {
 			n(VENDORS, {
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				--	TODO: move to korthia if we wind up separating maps

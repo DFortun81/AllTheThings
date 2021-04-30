@@ -5,31 +5,31 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(1525, {	-- Revendreth
+		m(REVENDRETH, {
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(5, {	-- Sewer Creeper
-							["coord"] = { 25.66, 23.62, 1525 },
+							["coord"] = { 25.66, 23.62, REVENDRETH },
 							["crs"] = { 175781 },	-- Sewer Creeper
 						}),
 						crit(6, {	-- The Countess
-							["coord"] = { 53.0, 41.8, 1525 },
+							["coord"] = { 53.0, 41.8, REVENDRETH },
 							["crs"] = { 175782 },	-- The Countess
 						}),
 					},
 				}),
 				ach(14769, {	-- Bat!
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
-						{ 21.7, 50.2, 1525 },
-						{ 25.1, 37.5, 1525 },
-						{ 31.9, 59.2, 1525 },
-						{ 35.0, 35.0, 1525 },
-						{ 56.2, 62.2, 1525 },
-						{ 57.3, 61.3, 1525 },
-						{ 60.4, 61.1, 1525 },
-						{ 64.0, 62.0, 1525 },
+						{ 21.7, 50.2, REVENDRETH },
+						{ 25.1, 37.5, REVENDRETH },
+						{ 31.9, 59.2, REVENDRETH },
+						{ 35.0, 35.0, REVENDRETH },
+						{ 56.2, 62.2, REVENDRETH },
+						{ 57.3, 61.3, REVENDRETH },
+						{ 60.4, 61.1, REVENDRETH },
+						{ 64.0, 62.0, REVENDRETH },
 					},
 					["crs"] = { 161015 },	-- Dredbat Statue
 				}),
@@ -43,15 +43,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -60,15 +60,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -77,15 +77,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -94,15 +94,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -111,15 +111,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -128,15 +128,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -145,15 +145,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -162,15 +162,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -179,15 +179,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -196,15 +196,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(1, {	-- Sylla
-									["coord"] = { 39.8, 52.4, 1525 },
+									["coord"] = { 39.8, 52.4, REVENDRETH },
 									["cr"] = 173315,	-- Sylla
 								}),
 								crit(2, {	-- Eyegor
-									["coord"] = { 67.6, 66.0, 1525 },
+									["coord"] = { 67.6, 66.0, REVENDRETH },
 									["cr"] = 173324,	-- Eyegor
 								}),
 								crit(3,  {	-- Addius the Tormentor
-									["coord"] = { 61.2, 41.0, 1525 },
+									["coord"] = { 61.2, 41.0, REVENDRETH },
 									["cr"] = 173331,	-- Addius the Tormentor
 								}),
 							},
@@ -258,27 +258,27 @@ _.Zones =
 					["description"] = "Coordinates listed are a single point along the path driven by each carriage.  Some have more circuitous routes than others and will require a longer wait.",
 					["g"] = {
 						crit(1, {	-- Chalice Carriage
-							["coord"] = { 47.5, 47.7, 1525 },
+							["coord"] = { 47.5, 47.7, REVENDRETH },
 							["crs"] = { 174750 },	-- Chalice Carriage
 						}),
 						crit(2, {	-- Old Gate Carriage
-							["coord"] = { 59.2, 39.0, 1525 },
+							["coord"] = { 59.2, 39.0, REVENDRETH },
 							["crs"] = { 174751 },	-- Old Gate Carriage
 						}),
 						crit(3, {	-- Banewood Carriage
-							["coord"] = { 40.1, 67.4, 1525 },
+							["coord"] = { 40.1, 67.4, REVENDRETH },
 							["crs"] = { 158365 },	-- Banewood Carriage
 						}),
 						crit(4, {	-- Pridefall Carriage
-							["coord"] = { 69.2, 81.4, 1525 },
+							["coord"] = { 69.2, 81.4, REVENDRETH },
 							["crs"] = { 161879 },	-- Pridefall Carriage
 						}),
 						crit(5, {	-- Darkhaven Carriage
-							["coord"] = { 64.2, 58.8, 1525 },
+							["coord"] = { 64.2, 58.8, REVENDRETH },
 							["crs"] = { 158336 },	-- Darkhaven Carriage
 						}),
 						crit(6, {	-- The Castle Carriage
-							["coord"] = { 44.2, 41.4, 1525 },
+							["coord"] = { 44.2, 41.4, REVENDRETH },
 							["crs"] = { 174754 },	-- The Castle Carriage
 						}),
 					},
@@ -308,7 +308,7 @@ _.Zones =
 						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
 						["objectID"] = 357467,	-- Forbidden Ink
 						["npcID"] = 173449,	-- Lost Quill
-						["coord"] = { 37.7, 69.2, 1525 },
+						["coord"] = { 37.7, 69.2, REVENDRETH },
 						["questID"] = 61990,
 						["g"] = {
 							i(182613),	-- Refilling Inkwell
@@ -319,14 +319,14 @@ _.Zones =
 						["description"] = "Go up the stairs that start at 41.3, 44.9.",
 						["objectID"] = 357487,	-- Stylish Parasol
 						["questID"] = 61999,
-						["coord"] = { 38.4, 44.2, 1525 },
+						["coord"] = { 38.4, 44.2, REVENDRETH },
 						["g"] = {
 							i(182694),	-- Stylish Black Parasol (TOY!)
 						},
 					}),
 					crit(3, {	-- The Count
 						["questID"] = 62063,
-						["coord"] = { 57.3, 43.3, 1525 },
+						["coord"] = { 57.3, 43.3, REVENDRETH },
 						["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
 						["crs"] = { 173488 },	-- The Count
 						["g"] = {
@@ -335,7 +335,7 @@ _.Zones =
 					}),
 					crit(4, {	-- Rapier of the Fearless
 						["questID"] = 62156,
-						["coord"] = { 80.0, 37.1, 1525 },
+						["coord"] = { 80.0, 37.1, REVENDRETH },
 						["crs"] = { 173603 },	-- Rapier of the Fearless
 						["g"] = {
 							i(182689),	-- Rapier of the Fearless
@@ -344,7 +344,7 @@ _.Zones =
 					crit(5, {	-- Vyrtha's Dredglaive
 						["objectID"] = 357584,	-- Vyrtha's Dredglaive
 						["questID"] = 62164,
-						["coord"] = { 70.1, 60.0, 1525 },
+						["coord"] = { 70.1, 60.0, REVENDRETH },
 						["g"] = {
 							i(177807),	-- Vyrtha's Dredglaive
 						},
@@ -352,7 +352,7 @@ _.Zones =
 					crit(6, {	-- Makeshift Muckpool
 					--	["objectID"] = ,	-- Outcast's Makeshift Muckpool
 						["questID"] = 62198,
-						["coord"] = { 29.6, 37.1, 1525 },
+						["coord"] = { 29.6, 37.1, REVENDRETH },
 						["cost"] = { { "c", 1820, 30 } },	-- 30x Infused Ruby
 						["g"] = {
 							i(182780),	-- Muckpool Cookpot (TOY!)
@@ -363,8 +363,8 @@ _.Zones =
 						["objectID"] = 357697,	-- Taskmaster's Trove
 						["questID"] = 62199,
 						["coords"] = {
-							{ 63.0, 72.1, 1525 },
-							{ 62.8, 75.3, 1525 },
+							{ 63.0, 72.1, REVENDRETH },
+							{ 62.8, 75.3, REVENDRETH },
 						},
 						["g"] = {
 							i(183986),	-- Bondable Sinstone (TOY!)
@@ -374,7 +374,7 @@ _.Zones =
 						["description"] = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
 						["objectID"] = 358298,	-- Forbidden Chamber Lockbox
 						["questID"] = 62243,
-						["coord"] = { 47.3, 55.3, 1525 },
+						["coord"] = { 47.3, 55.3, REVENDRETH },
 						["crs"] = {
 							173786,	-- Chamber Guardian
 							173838,	-- Silent Observer
@@ -386,7 +386,7 @@ _.Zones =
 					crit(9, {	-- Smuggled Cache
 						["objectID"] = 349798,	-- Smuggled Cache
 						["questID"] = 59889,
-						["coord"] = { 31.1, 55.0, 1525 },
+						["coord"] = { 31.1, 55.0, REVENDRETH },
 						["g"] = {
 							i(182738, {	-- Bundle of Smuggled Parasol Components
 								["questID"] = 62189,	-- Parasol Components
@@ -396,7 +396,7 @@ _.Zones =
 					crit(10, {	-- Chest of Envious Dreams
 						["objectID"] = 349565,	-- Chest of Envious Dreams
 						["questID"] = 59833,
-						["coord"] = { 69.3, 77.9, 1525 },
+						["coord"] = { 69.3, 77.9, REVENDRETH },
 						["g"] = {
 							i(179393),	-- Mirror of Envious Dreams
 						},
@@ -404,31 +404,31 @@ _.Zones =
 					crit(11, {	-- Filcher's Prize
 						["objectID"] = 349792,	-- Filcher's Prize
 						["questID"] = 59883,
-						["coord"] = { 64.2, 72.7, 1525 },
+						["coord"] = { 64.2, 72.7, REVENDRETH },
 					}),
 					crit(12, {	-- Wayfarer's Abandoned Spoils
 						["description"] = "Use the nearby Bounding Shroom to get up to the treasure.",
 						["objectID"] = 349793,	-- Wayfarer's Abandoned Spoils
 						["questID"] = 59884,
-						["coord"] = { 68.4, 64.4, 1525 },
+						["coord"] = { 68.4, 64.4, REVENDRETH },
 					}),
 					crit(13, {	-- Remlate's Hidden Cache
 						["description"] = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
 						["objectID"] = 349794,	-- Remlate's Hidden Cache
 						["questID"] = 59885,
-						["coord"] = { 61.5, 58.6, 1525 },
+						["coord"] = { 61.5, 58.6, REVENDRETH },
 					}),
 					crit(14, {	-- Fleeing Soul's Bundle
 						["description"] = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
 						["objectID"] = 349795,	-- Fleeing Soul's Bundle
-						["coord"] = { 46.4, 58.1, 1525 },
+						["coord"] = { 46.4, 58.1, REVENDRETH },
 						["questID"] = 59886,
 					}),
 					crit(15, {	-- Gilded Plum Chest
 						["description"] = "There is a Greedy Soul that wanders up and down the road.  Kill it, and it will drop the treasure.",
 						["objectID"] = 349796,	-- Gilded Plum Chest
 						["questID"] = 59887,
-						["coord"] = { 75.2, 56.1, 1525 },
+						["coord"] = { 75.2, 56.1, REVENDRETH },
 						["crs"] = { 166680 },	-- Greedy Soul
 						["g"] = {
 							i(179390),	-- Tantalizingly Large Golden Plum (grey item but causes a permanent debuff while held)
@@ -439,7 +439,7 @@ _.Zones =
 						["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
 						["objectID"] = 349797,	-- Abandoned Curios
 						["questID"] = 59888,
-						["coord"] = { 51.8, 59.5, 1525 },
+						["coord"] = { 51.8, 59.5, REVENDRETH },
 						["g"] = {
 							i(182744, {	-- Ornate Belt Buckle
 								i(182741, {	-- Buckled Cloth Belt
@@ -463,16 +463,16 @@ _.Zones =
 					["crs"] = { 174032 },	-- Castle Sinrunner
 					["g"] = {
 						crit(1, {	-- Old Gate
-							["coord"] = { 60.3, 62.6, 1525 }
+							["coord"] = { 60.3, 62.6, REVENDRETH }
 						}),
 						crit(2, {	-- Hole in the Wall
-							["coord"] = { 41.2, 47.2, 1525 },
+							["coord"] = { 41.2, 47.2, REVENDRETH },
 						}),
 						crit(3, {	-- Dominance Gate Battlements
-							["coord"] = { 41.2, 47.2, 1525 },
+							["coord"] = { 41.2, 47.2, REVENDRETH },
 						}),
 						crit(4, {	-- Darkhaven
-							["coord"] = { 69.6, 58.0, 1525 },
+							["coord"] = { 69.6, 58.0, REVENDRETH },
 						}),
 					},
 				}),

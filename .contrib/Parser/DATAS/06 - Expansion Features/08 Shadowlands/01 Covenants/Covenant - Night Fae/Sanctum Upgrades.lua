@@ -29,28 +29,28 @@ _.ExpansionFeatures =
 								["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
 								["isDaily"] = true,
 								["questID"] = 61691,
-								["coord"] = { 51.7, 32.3, 1565 },
+								["coord"] = { 51.7, 32.3, ARDENWEALD },
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
 							q(62160, {	-- A Bundle of Lilies
 								["provider"] = { "n", 173277 },	-- Teendynneetll
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62224, {	-- A Thread of Hope
 								["provider"] = { "n", 173277 },	-- Teendynneetll
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62188, {	-- Catch A Star
 								["provider"] = { "n", 173277 },	-- Teendynneetll
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(61875, {	-- Doing the Dew
 								["provider"] = { "n", 173277 },	-- Teendynneetll
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62068, {	-- Gormling Piper: Crumbled Ridge
@@ -70,32 +70,32 @@ _.ExpansionFeatures =
 							}),
 							q(61950, {	-- Hunting the Wilds
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(61968, {	-- Just Wing It
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62081, {	-- Return Those Animacones!
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62155, {	-- Runestone Roundup
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(62057, {	-- Those Who Hunger
 								["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 							q(61985, {	-- Wake the Sleepers
 								["provider"] = { "n", 173277 },	-- Teendynneetll
-								["coord"] = { 59.7, 52.8, 1565 },
+								["coord"] = { 59.7, 52.8, ARDENWEALD },
 								["isDaily"] = true,
 							}),
 						}),
@@ -105,7 +105,7 @@ _.ExpansionFeatures =
 					n(-905, {	-- Command Table
 						q(61857, {	-- Adventurer: Groonoomcrooek
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 38.",
 							["g"] = {
 								follower(1288),	-- Groonoomcrooek
@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 						}),
 						q(61854, {	-- Adventurer: Master Sha'lor
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 17.",
 							["g"] = {
 								follower(1284),	-- Master Sha'lor
@@ -121,7 +121,7 @@ _.ExpansionFeatures =
 						}),
 						q(61852, {	-- Adventurer: Guardian Kota
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 4.",
 							["g"] = {
 								follower(1283),	-- Guardian Kota
@@ -129,7 +129,7 @@ _.ExpansionFeatures =
 						}),
 						q(61855, {	-- Adventurer: Qadarin
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 27.",
 							["g"] = {
 								follower(1286),	-- Qadarin
@@ -137,7 +137,7 @@ _.ExpansionFeatures =
 						}),
 						q(61853, {	-- Adventurer: Te'zan
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 12.",
 							["g"] = {
 								follower(1285),	-- Te'zan
@@ -145,7 +145,7 @@ _.ExpansionFeatures =
 						}),
 						q(61856, {	-- Adventurer: Watcher Vesperbloom
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, 1565 },
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["description"] = "Requires Renown 33.",
 							["g"] = {
 								follower(1287),	-- Watcher Vesperbloom
@@ -154,7 +154,7 @@ _.ExpansionFeatures =
 						q(61553, {	-- Know Where to Strike
 							["sourceQuests"] = { 61552 },	-- The Hunt Watches
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.6, 56.2, 1565 },
+							["coord"] = { 44.6, 56.2, ARDENWEALD },
 						}),
 						q(61552, {	-- The Hunt Watches
 							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
@@ -180,7 +180,7 @@ _.ExpansionFeatures =
 							}),
 							o(350978, {	-- Queen's Conservatory Cache
 								filter(100, {	-- Mounts
-									["coord"] = { 43.4, 33.6, 1565 },
+									["coord"] = { 43.4, 33.6, ARDENWEALD },
 									-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
 									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7003|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 									["g"] = {
@@ -536,7 +536,7 @@ _.ExpansionFeatures =
 								57458,	-- Ring Repairs
 							},
 							["provider"] = { "n", 157710 },	-- Cortinarius
-							["coord"] = { 29.5, 34.8, 1565 },
+							["coord"] = { 29.5, 34.8, ARDENWEALD },
 						}),
 						q(62607, {	-- Glittering Gritty Goodness
 							["sourceQuests"] = { 57583 },	-- Through the Veil
@@ -595,17 +595,17 @@ _.ExpansionFeatures =
 						q(57455, {	-- Mushroom For Improvement
 							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 							["provider"] = { "n", 157710 },	-- Cortinarius
-							["coord"] = { 33.2, 36.3, 1565 },
+							["coord"] = { 33.2, 36.3, ARDENWEALD },
 						}),
 						q(57463, {	-- My Way or the Hyphae
 							["sourceQuests"] = { 57459 },	-- Fighting For Fungus
 							["provider"] = { "n", 166982 },	-- Marasmius
-							["coord"] = { 29.5, 34.6, 1565 },
+							["coord"] = { 29.5, 34.6, ARDENWEALD },
 						}),
 						q(57458, {	-- Ring Repairs
 							["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 							["provider"] = { "n", 157710 },	-- Cortinarius
-							["coord"] = { 33.2, 36.3, 1565 },
+							["coord"] = { 33.2, 36.3, ARDENWEALD },
 						}),
 						q(57454, {	-- Silence in the Stalks
 							["sourceQuests"] = { 63073 },	-- A Mycelial Network
@@ -615,7 +615,7 @@ _.ExpansionFeatures =
 						q(57583, {	-- Through the Veil
 							["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
 							["provider"] = { "n", 166982 },	-- Marasmius
-							["coord"] = { 29.5, 34.6, 1565 },
+							["coord"] = { 29.5, 34.6, ARDENWEALD },
 						}),
 					}),
 				}),

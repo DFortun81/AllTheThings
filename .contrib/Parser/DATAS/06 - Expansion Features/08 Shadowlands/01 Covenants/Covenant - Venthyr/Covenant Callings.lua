@@ -96,7 +96,7 @@ _.ExpansionFeatures =
 					}),
 					q(60462, {	-- Anima Appeal
 						["provider"] = { "n", 164739 },	-- Devahia
-						--["coord"] = { 48.9, 39.3, 1525 },
+						--["coord"] = { 48.9, 39.3, REVENDRETH },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},

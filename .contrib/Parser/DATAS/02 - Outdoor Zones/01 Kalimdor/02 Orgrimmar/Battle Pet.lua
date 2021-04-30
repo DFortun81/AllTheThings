@@ -191,18 +191,22 @@ _.Zones =
 				q(31882, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31883, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31884, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31885, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 63626 },	-- Varzok
