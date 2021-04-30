@@ -15,7 +15,7 @@ _.GearSets =
 				i(185858),	-- Korthian Caretaker's Crest*
 				i(186666),	-- Korthian Caretaker's Crown
 				i(185857),	-- Korthian Caretaker's Handwraps*
-				i(185859),	-- Korthian Caretaker's Leggings
+				i(185859),	-- Korthian Caretaker's Leggings*
 				i(186670),	-- Korthian Caretaker's Mantle
 				i(186665),	-- Korthian Caretaker's Mitts
 				i(186667),	-- Korthian Caretaker's Pantaloons

@@ -4624,5 +4624,6 @@ _.HiddenQuestTriggers =
 		q(64147),	-- triggered when turning in #63621, "Pulling His Chain"
 		q(63544),	-- triggered when completing #63543, "Necrolord Assault"
 		q(62679),	-- when clicking the 4th death gate (the one i did last was 67.4, 65.4) while on #63613, "What We Wish to Be"
+		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure
 	}),
 };

@@ -886,6 +886,12 @@ _.Zones =
 					["provider"] = { "n", 178413 },	-- Prince Renathal
 					["coord"] = { 23.0, 45.8, 1525 },	-- Revendreth
 				}),
+				q(63672, {	-- A Cry From the Heart
+				--	TODO: 'nyi medallion of wrath' is still not fully implemented, but w/e that quest winds up being may eventually be the true SQ.  until then, the previous quest is enough to continue the venthyr campaign
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 63.4, 24.6, 1961 },	-- Korthia
+				}),
 				q(63646, {	-- Convoy of the Covenants
 				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
 				--	is this part of the questline Venthyr-only?  like maybe after 'Victory in Our Name' does the questline diverge into covenant-specific campaign quests?
