@@ -27,6 +27,9 @@ _.Zones =
 				i(186125),	-- Foresworn Scout's Shoulderguards
 				i(186121),	-- Foresworn Scout's Striders
 				i(186153),	-- Foresworn Seal
+				i(186559, {	-- Grappling Gauntlet (PET!)
+					["cr"] = 177293,	-- Mawsworn Torturer (possibly from other mobs in Scholar's Den)
+				}),
 				i(186151),	-- Mawsworn Assasin's Twinblade
 				i(186143),	-- Mawsworn Assassin's Backstabber
 				i(186118),	-- Mawsworn Assassin's Belt
@@ -65,6 +68,9 @@ _.Zones =
 				i(186127),	-- Mawsworn Scout's Bracers
 				i(186120),	-- Mawsworn Scout's Chainmail
 				i(186126),	-- Mawsworn Scout's Cincture
+				i(186727, {	-- Seal Breaker Key
+					-- TODO: add crs, i didn't see what dropped it when i first picked one up.  dropped in destmotwhateverthefuck in the maw, not korthia
+				}),
 				i(186145),	-- Stygian Thorn Loop
 			}),
 		}),

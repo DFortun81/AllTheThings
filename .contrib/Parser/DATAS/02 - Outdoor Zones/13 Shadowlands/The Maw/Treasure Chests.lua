@@ -7,6 +7,13 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
 			n(-212, {	-- Treasure Chest
+				--[[ currently just dropped a grey item, 15 anima, and 14 gold.  not sure if this is a one-time chest or repeatable or tied to an upcoming achievement.  no objectID on wowhead yet either
+				o(, {	-- Jeweled Heart of Ezekiel
+					["description"] = "In a small cave.",
+					["questID"] = 64261,
+					["coord"] = { 66.5, 62.2, THE_MAW },
+				}),
+				--]]
 				n(173841, {	-- Paper Scrap
 					["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
 					["coord"] = { 19.3, 33.5, THE_MAW },

@@ -4,9 +4,9 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1193, {	-- Sanctum of Domination
-	--	TODO: add coords + maps
+	--	TODO: add maps
 		["isRaid"] = true,
-	--	["coord"] = {  },
+		["coord"] = { 69.8, 31.8, THE_MAW },
 		["order"] = "02",
 	--	["maps"] = {
 	--	},

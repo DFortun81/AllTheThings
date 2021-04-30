@@ -608,9 +608,23 @@ _.Zones =
 					},
 				}),
 				n(177444, {	-- Ylva <Mate of Guarm>
-				--	["coord"] = { , , 1543 },
+					["questID"] = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time.  didn't get to do the achievement so it's unrelated to that
+					["isDaily"] = true,
+					["coord"] = { 66.7, 42.4, THE_MAW },
 					["g"] = {
-						ach(14943),	-- Guarmageddon - TODO: there are little baby guarm around the area, achievement possibly requires killing all of them.  add crs/other necessary context
+						ach(14943, {	-- Guarmageddon
+							["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.",
+							["coords"] = {
+								{ 63.1, 42.4, THE_MAW },	-- Vanargun <Child of Guarm>
+								{ 63.1, 40.3, THE_MAW },	-- Hrodvetni <Child of Guarm>
+								{ 65.4, 38.9, THE_MAW },	-- Frekki <Child of Guarm>
+								{ 68.4, 42.0, THE_MAW },	-- Vargir <Child of Guarm>
+								{ 67.0, 41.5, THE_MAW },	-- Girs <Child of Guarm>
+							},
+						}),
+						i(186970, {	-- Feeder's Hand and Key - TODO: not sure if this is used for something?  it's a green item
+							i(186727),	-- Seal Breaker Key
+						}),
 					},
 				}),
 				i(182329, {	-- Domination's Calling
