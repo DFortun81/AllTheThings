@@ -20,10 +20,18 @@ _.NeverImplemented =
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
 	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item wont be added, please put it into the correct section
-		i(179531),	-- Faesworn Reaper (might be ingame, hopefully can source it in #errors)
-		i(180491),	-- wingdancers spire (might be ingame, hopefully can source it in #errors)
-		i(179515),	-- faesworn falchion (might be ingame, hopefully can source it in #errors)
-		i(179564),	-- faesworn channeling root (might be ingame, hopefully can source it in #errors)
+		-- Added in 9.1. Remove me soon!
+		i(179531),		-- Faesworn Reaper 
+		i(179515),		-- faesworn falchion 
+		i(179498),    -- Faesworn Barb
+		i(179564),    -- Faesworn Channeling Root
+		i(182322),    -- Faesworn Gavel
+		i(182323),    -- Faesworn Spellblade
+		i(179546),    -- Faesworn Warclub
+		i(179583),		-- faeswornwarbow
+		
+		
+		i(180491),		-- wingdancers spire 
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
@@ -113,14 +121,6 @@ _.NeverImplemented =
 			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 			["classes"] = { PRIEST, MAGE, WARLOCK },
 		}),
-	}),
-	n(-10052, {	-- BFA
-
-		-- weapons with placeholder names from BFA section
-		i(182350),	-- Ardenweald Raid Mace STR
-		i(182578),	-- NPE Weapon 1H Mace AGI
-		i(182566),	-- NPE Weapon Staff AGI
-		i(182572),	-- NPE Weapon Staff INT
 	}),
 	n(ACHIEVEMENTS, {
 		ach(14116),	-- All Bridges Burned
@@ -1190,6 +1190,13 @@ _.NeverImplemented =
 			i(163297),	-- honorbound vanguard's legguards
 			i(163302),	-- honorbound vanguard's spaulders
 			i(163304),	-- honorbound vanguard's waistcord
+			i(179855),	-- ardenweald covenant mail waist
+			i(179856),	-- ardenweald covenant mail shoulders
+			i(179857),	-- ardenweald covenant mail legs
+			i(179858),	-- ardenweald covenant mail head
+			i(179859),	-- ardenweald covenant mail hand
+			i(179860),	-- ardenweald covenant mail feet
+			i(179861),	-- ardenweald covenant mail chest
 			i(166954),	-- Dread Gladiator's Chain Armor
 			i(166955),	-- Dread Gladiator's Chain Sabatons
 			i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -4040,6 +4047,7 @@ _.NeverImplemented =
 			i(68050),	-- Shatterscale Mightfish
 			i(49456),	-- Will of the Earth
 			i(50251),	-- Unknown
+			i(180460),	-- Primal Combatant decapitator
 			i(115292),	-- spectral axe
 			i(42214),	-- Savage Gladiator's Waraxe
 			i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
@@ -4062,12 +4070,14 @@ _.NeverImplemented =
 			i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
 			i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
 			i(165262),	-- Unknown
+			i(182578),	-- NPE Weapon 1H Mace AGI
 			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
 			i(159550),	-- Unknown
 			i(108791),	-- Unknown
 			i(108792),	-- Unknown
 			i(108793),	-- Unknown
 			i(176012),	--
+			i(182350),	-- Ardenweald Raid Mace STR
 			i(176013),	--
 			i(176014),	--
 			i(176015),	--
@@ -4204,6 +4214,8 @@ _.NeverImplemented =
 			i(132475),	-- Unknown - was under Legion>Staves
 			i(132476),	-- Unknown - was under Legion>Staves
 			i(49458),	-- Unknown
+			i(182566),	-- NPE Weapon Staff AGI
+			i(182572),	-- NPE Weapon Staff INT
 			i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
 			i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
 			i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
@@ -4291,6 +4303,7 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			i(134563),	-- Unknown
 			i(108782),	-- Unknown
+			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 			i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 			i(150607),	-- Greataxe of Fury
 			i(150606),	-- Armsmaster's Greataxe
@@ -4302,6 +4315,7 @@ _.NeverImplemented =
 			i(69916),	-- Trollbane (Test)
 			i(109519),	-- Unknown
 			i(165265),	-- Unknown
+			i(182568),	-- npe weapon 2h axe str
 			i(177121),	-- honorbound decaitator
 			i(177591),	-- oathsworn headshopper
 			i(180147),	--
@@ -4549,7 +4563,6 @@ _.NeverImplemented =
 	i(146651),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	i(133018),	-- Azsuna Packe 3 Holy 1 Unused
 	i(138229),	-- Nightmare Boss 3 Relic Storm
-	i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	i(140011),	-- Duskwatch Adjudicator's Pauldrons
 	i(33964),	-- Helm of the Stormcaller - Never Added
 	i(8195),		-- Nightscape Cloak										(Pattern never actually went live)
