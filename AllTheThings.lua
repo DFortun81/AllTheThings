@@ -17711,6 +17711,7 @@ app.events.VARIABLES_LOADED = function()
 		ATTAccountWideData = accountWideData;
 	end
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
 	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
