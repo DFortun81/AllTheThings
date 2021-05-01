@@ -787,6 +787,7 @@ _.Zones =
 					["provider"] = { "n", 159475 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 50.5, 45.1, 1673 },	-- The Crucible
 				}),
+				-- Revendreth
 
 
 				--[[ quest was in beta but still has not been seen in game

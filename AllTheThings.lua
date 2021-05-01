@@ -2922,7 +2922,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
-					sourceID = GetSourceID(sourceGroup.link);
+					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
 				end
 			else
 				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
@@ -9624,12 +9624,7 @@ function app.FilterItemClass_RequireClasses(item)
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
-		local f = item.f;
-		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
-		return (f > 49 and f < 60) or	-- Misc. Filters on non-collectible items
-			f == 114 or				-- Key Items
-			f == 999 or				-- Event Items
-			app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
+		return app.Settings:GetFilter(item.f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -10279,8 +10274,8 @@ UpdateGroup = function(parent, group)
 			-- Update the subgroups recursively...
 			visible = UpdateGroups(group, group.g);
 
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
+			-- If we have to show this group due to visible content or the 'can equip' filter says true
+			if visible or app.GroupFilter(group) then
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -10293,8 +10288,6 @@ UpdateGroup = function(parent, group)
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-			else
-				visible = false;
 			end
 		else
 			-- If the 'can equip' filter says true
@@ -17722,6 +17715,7 @@ app.events.VARIABLES_LOADED = function()
 		ATTAccountWideData = accountWideData;
 	end
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
 	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end

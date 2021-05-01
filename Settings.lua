@@ -1877,7 +1877,6 @@ f:SetWidth(80);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
@@ -1902,7 +1901,6 @@ f:SetWidth(100);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
