@@ -95,6 +95,12 @@ _.ExpansionFeatures =
 					q(45989, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
+					q(45021, {	-- Answers Unknown
+						--["sourceQuests"] = {  },	--
+						["classes"] = { WARLOCK },
+						["coord"] = { 57.4, 38.0, 717 },
+						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
+					}),
 					q(42098, {	-- Black Rook Hold: An Unclaimed Soul
 						["sourceQuests"] = { 
 							41752,	-- Champion: Zinnin Smythe
@@ -146,6 +152,13 @@ _.ExpansionFeatures =
 							follower(618),	-- Zinnin Smythe
 						},
 					}),
+					q(45024, {	-- Cult Culling
+						["sourceQuests"] = { 45021 },	-- Answers Unknown
+						["classes"] = { WARLOCK },
+						["coord"] = { 30.4, 44.6, 630 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 630 },	-- Azsuna
+					}),
 					q(40218, {	-- Debt Repaid
 						["sourceQuests"] = { 39142 },	-- Testing a Theory
 						["classes"] = { WARLOCK },
@@ -173,6 +186,16 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 55.2, 37.0, 717 },
 						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
+					}),
+					q(45026, {	-- Expending Fel Energy
+						["sourceQuests"] = { 
+							45024,	-- Cult Culling
+							45025,	-- Stealing the Source of Power
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 30.4, 44.6, 630 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(43100, {	-- Finding the Scepter
 						["sourceQuests"] = {
@@ -217,6 +240,13 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(45794, {	-- Informing the Council
+						["sourceQuests"] = { 45026 },	-- Expending Fel Energy
+						["classes"] = { WARLOCK },
+						["coord"] = { 30.4, 44.6, 630 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(45990, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -291,6 +321,13 @@ _.ExpansionFeatures =
 						["coord"] = { 55.3, 37.1, 717 },
 						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
+					q(45025, {	-- Stealing the Source of Power
+						["sourceQuests"] = { 45021 },	-- Answers Unknown
+						["classes"] = { WARLOCK },
+						["coord"] = { 30.4, 44.6, 630 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 630 },	-- Azsuna
+					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
 						["classes"] = { WARLOCK },
@@ -349,6 +386,12 @@ _.ExpansionFeatures =
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
 						["maps"] = { 42 },	-- Deadwind Pass
 					}),
+					q(45027, {	-- To the Broken Shore
+						["sourceQuests"] = { 45794 },	-- Informing the Council
+						["classes"] = { WARLOCK },
+						["coord"] = { 57.4, 38.0, 717 },
+						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
+					}),
 					q(40712, {	-- The Power Possessed
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders
@@ -392,7 +435,6 @@ _.ExpansionFeatures =
 
 				--	TODO: not organized/sourced yet.
 					q(43414),	-- A Hero's Weapon
-					q(45021),	-- Answers Unknown
 					q(46237),	-- Bloodbringer's Missive
 					q(44228),	-- Champion Armaments
 					q(46316),	-- Champion: Kanrethad Ebonlocke
@@ -404,7 +446,6 @@ _.ExpansionFeatures =
 					q(46784),	-- Further Advancement
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
-					q(45794),	-- Informing the Council
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
 					q(42102),	-- One Who's Worthy
@@ -420,7 +461,6 @@ _.ExpansionFeatures =
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(46243),	-- The Wrathsteed of Xoroth
-					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
 					q(46243, {	-- The Wrathsteed of Xoroth
@@ -487,43 +527,46 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(112434, {	-- Gigi Gigavoid <Black Harvest Quartermaster>
-						i(139768, {	-- Amice of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(143727, {	-- Champion's Salute Toy
-							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-						}),
-						i(139769, {	-- Cinch of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139764, {	-- Gloves of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139766, {	-- Leggings of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(140945, {	-- Netherlord's Armor Kit
-							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-						}),
-						i(140983, {	-- Netherlord's Greater Armor Kit
-							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-						}),
-						i(140982, {	-- Netherlord's Lesser Armor Kit
-							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-						}),
-						i(140553),	-- Netherlord's Staff of Summoning
-						i(139763, {	-- Path of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139767, {	-- Robes of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139765, {	-- Visage of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139770, {	-- Wristbands of the Black Harvest
-							["cost"] = 5000000,	-- 500g
-						}),
+						["coord"] = { 58.7, 32.7, 717 },
+						["g"] = {
+							i(139768, {	-- Amice of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(143727, {	-- Champion's Salute Toy
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(139769, {	-- Cinch of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139764, {	-- Gloves of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139766, {	-- Leggings of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140945, {	-- Netherlord's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(140983, {	-- Netherlord's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(140982, {	-- Netherlord's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
+							i(140553),	-- Netherlord's Staff of Summoning
+							i(139763, {	-- Path of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139767, {	-- Robes of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139765, {	-- Visage of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139770, {	-- Wristbands of the Black Harvest
+								["cost"] = 5000000,	-- 500g
+							}),
+						},
 					}),
 				}),
 			},
