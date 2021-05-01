@@ -553,6 +553,11 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
+								q(61637, {	-- Unity
+									["provider"] = { "n", 167150 },	-- Rathan
+									["coord"] = { 55.1, 68.8, MALDRAXXUS },
+									["description"] = "Becomes available after you research Abomination Factory Tier 5 in your sanctum.",
+								}),
 							}),
 							n(-908, {	-- Rewards
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
