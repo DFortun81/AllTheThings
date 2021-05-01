@@ -892,6 +892,34 @@ _.Zones =
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, 1961 },	-- Korthia
 				}),
+				q(63579, {	-- A Paladin's Soul
+					["sourceQuests"] = { 63683 },	-- Winter's Sigil
+					["provider"] = { "n", 179356 },	-- Thenios
+					["coord"] = { 62.9, 25.3, 1961 },	-- Korthia
+					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
+						1968,	-- TG107_Floor
+						1967,	-- TG106_Floor
+						1969,	-- TG108_Floor
+					},
+				}),
+				q(63678, {	-- Akarek Avenged
+					["sourceQuests"] = {
+						63677,	-- You Can Only Die
+						63676,	-- You Cannot Hide
+						63675,	-- You Cannot Run
+					},
+					["provider"] = { "n", 177437 },	-- Khaliiq
+				}),
+				q(63681, {	-- Back to The Heart
+					["sourceQuests"] = { 63680 },	-- Out On the Edge
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 34.0, 9.65, REVENDRETH },
+				}),
+				q(63674, {	-- By Your Leave
+					["sourceQuests"] = { 63990 },	-- The Blade in the Night
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 42.1, 23.2, MALDRAXXUS },
+				}),
 				q(63646, {	-- Convoy of the Covenants
 				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
 				--	is this part of the questline Venthyr-only?  like maybe after 'Victory in Our Name' does the questline diverge into covenant-specific campaign quests?
@@ -913,10 +941,40 @@ _.Zones =
 					["provider"] = { "n", 177644 },	-- Prince Renathal
 					["coord"] = { 25.0, 27.9, 1525 },	-- Revendreth
 				}),
+				q(63728, {	-- Hunting Amid Houses
+					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 47.8, 53.5, ARDENWEALD },
+				}),
+				q(64092, {	-- Hunting Huln
+					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
+				q(63679, {	-- Magical Mystery Tour!
+					["sourceQuests"] = { 63678 },	-- Akarek Avenged
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 74.7, 33.6, MALDRAXXUS },
+				}),
+				q(64091, {	-- Mal'appropriated
+					["sourceQuests"] = { 64092 },	-- Hunting Huln
+					["provider"] = { "n", 179327 },	-- Mal'Ganis
+					["coord"] = { 37.9, 23.4, REVENDRETH },
+				}),
 				q(63648, {	-- Nal'ragas
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
 					["coord"] = { 36.0, 22.4, 1525 },
+				}),
+				q(63680, {	-- Out On the Edge
+					["sourceQuests"] = { 64090 },	-- The Big Squeeze
+					["provider"] = { "n", 177967 },	-- Lady Moonberry
+					["coord"] = { 35.6, 22.6, REVENDRETH },
+				}),
+				q(64042, {	-- Rituals of Night
+					["sourceQuests"] = { 63681 },	-- Back to The Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 48.0, 53.9, ARDENWEALD },
 				}),
 				q(63649, {	-- Spy vs Spy
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
@@ -929,6 +987,27 @@ _.Zones =
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
 					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(64090, {	-- The Big Squeeze
+					["sourceQuests"] = { 64091 },	-- Mal'appropriated
+					["provider"] = { "n", 177968 },	-- Cudgelface
+					["coord"] = { 38.0, 23.7, REVENDRETH },
+				}),
+				q(63990, {	-- The Blade in the Night
+					["sourceQuests"] = { 63728 },	-- Hunting Amid Houses
+					["provider"] = { "n", 177471 },	-- Huln Highmountain
+					["coord"] = { 42.8, 25.2, MALDRAXXUS },
+				}),
+				q(64210, {	-- The Box of Many Things
+				--	TODO: picked up in torghast scenario while on "a paladin's soul" - unsure if this is venthyr-only
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul (must be on quest)
+					["provider"] = { "n", 179598 },	-- Ve'nish
+					["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
+					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
+						1968,	-- TG107_Floor
+						1967,	-- TG106_Floor
+						1969,	-- TG108_Floor
+					},
 				}),
 				q(63654, {	-- The Nathrezim
 					["sourceQuests"] = { 63653 },	-- The Power of a Crown
@@ -945,12 +1024,42 @@ _.Zones =
 					["provider"] = { "n", 158653 },	-- Prince Renathal
 					["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
 				}),
+				q(63682, {	-- The Power of Elune
+					["sourceQuests"] = { 64042 },	-- Rituals of Night
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 45.3, 64.8, ARDENWEALD },
+				}),
 				q(63647, {	-- The Unseen Guests
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
 					["provider"] = { "n", 165866 },	-- The Stonewright
 					["coord"] = { 34.3, 22.0, 1525 },
 				}),
-				
+				q(64216, {	-- Tower Knowledge
+				--	TODO: also not sure if this torghast-related quest is venthyr-only
+					["sourceQuests"] = { 64210 },	-- The Box of Many Things
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
+				}),
+				q(63683, {	-- Winter's Sigil
+					["sourceQuests"] = { 63682 },	-- The Power of Elune
+					["provider"] = { "n", 178669 },	-- Winter Queen
+					["coord"] = { 45.2, 65.1, ARDENWEALD },
+				}),
+				q(63677, {	-- You Can Only Die
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63676, {	-- You Cannot Hide
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63675, {	-- You Cannot Run
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
 				
 
 
