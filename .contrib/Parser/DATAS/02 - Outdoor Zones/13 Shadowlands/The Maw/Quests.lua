@@ -1105,6 +1105,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 22.4, 1961 },	-- Korthia
 				}),
+				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, 1961 },	-- Korthia
+				}),
 				q(63964, {	-- Broker's Bounty: Grimtalon
 				--	TODO: add object localization
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
