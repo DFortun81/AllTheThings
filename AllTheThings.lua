@@ -10268,11 +10268,17 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 
-			-- Update the subgroups recursively...
-			visible = UpdateGroups(group, group.g);
+			-- TODO: ideally the recursive update would outside of the top group, and we only need to process the top group
+			-- if everything inside is hidden, otherwise it would obviously need to be shown.
+			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
+			-- otherwise filtered groups
 
-			-- If we have to show this group due to visible content or the 'can equip' filter says true
-			if visible or app.GroupFilter(group) then
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+
+				-- Update the subgroups recursively...
+				visible = UpdateGroups(group, group.g);
+
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
