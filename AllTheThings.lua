@@ -11023,16 +11023,16 @@ app.CreateMinimapButton = CreateMinimapButton;
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
-local function SetVisible(self, show)
+local function SetVisible(self, show, forceUpdate)
 	if show then
 		self:Show();
-		self:Update();
+		self:Update(forceUpdate);
 	else
 		self:Hide();
 	end
 end
-local function Toggle(self)
-	return SetVisible(self, not self:IsVisible());
+local function Toggle(self, forceUpdate)
+	return SetVisible(self, not self:IsVisible(), forceUpdate);
 end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
@@ -11526,13 +11526,20 @@ function app:CreateMiniListForGroup(group)
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
-		-- Adjust some update logic if this is a Quest Chain window
+		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
 				local oldQuestTracking = app.AccountWideQuests;
 				app.AccountWideQuests = false;
 				oldUpdate(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+			local oldRefresh = popout.Refresh;
+			popout.Refresh = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 		end
