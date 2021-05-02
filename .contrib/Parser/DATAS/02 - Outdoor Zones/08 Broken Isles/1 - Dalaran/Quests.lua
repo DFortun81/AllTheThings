@@ -228,6 +228,11 @@ _.Zones =
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
 					["classes"] = { DRUID },
 				}),
+				q(50318, {	-- A Timely Summons from Northrend
+					["provider"] = { "n", 111246 },	-- Archmage Timear
+					["coord"] = { 63.8, 55.2, 627 },
+					["isWeekly"] = true,
+				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["sourceQuests"] = {
 						44821,	-- In Dire Need

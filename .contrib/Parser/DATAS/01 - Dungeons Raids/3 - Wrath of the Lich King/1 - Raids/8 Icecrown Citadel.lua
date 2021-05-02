@@ -4143,12 +4143,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							}),
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
-							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50672),	-- Bloodvenom Blade
 							i(50668),	-- Greatcloak of the Turned Champion
