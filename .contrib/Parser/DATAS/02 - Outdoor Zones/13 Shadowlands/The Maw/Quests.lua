@@ -1227,6 +1227,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, 1961 },	-- Korthia
 				}),
+				q(64065, {	-- Local Reagents
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.7, 1961 },	-- Korthia
+				}),
 				q(63781, {	-- Mawsworn Battle Plans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -1315,6 +1321,12 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
 				q(63954, {	-- Sealed Lockboxes
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
+				q(63956, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
