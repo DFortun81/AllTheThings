@@ -6809,26 +6809,25 @@ end
 app.events.TAXIMAP_OPENED = function()
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 	if allNodeData then
-		local knownNodeIDs = {};
+		local updates, searchResults, nodeID = {};
+		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
-				table.insert(knownNodeIDs, nodeData.nodeID);
-			end
-		end
-		local updates, searchResults = {};
-		for i,nodeID in ipairs(knownNodeIDs) do
-			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				ATTAccountWideData.FlightPaths[nodeID] = 1;
-				app.CurrentCharacter.FlightPaths[nodeID] = 1;
-				searchResults = SearchForField("flightPathID", nodeID);
-				if searchResults then
-					for j,searchResult in ipairs(searchResults) do
-						table.insert(updates, searchResult);
+				nodeID = nodeData.nodeID;
+				if not currentCharFPs[nodeID] then
+					acctFPs[nodeID] = 1;
+					currentCharFPs[nodeID] = 1;
+					searchResults = SearchForField("flightPathID", nodeID);
+					if searchResults then
+						for j,searchResult in ipairs(searchResults) do
+							table.insert(updates, searchResult);
+						end
 					end
 				end
+
 			end
 		end
-		if #updates > 0 then UpdateSearchResults(updates); end
+		UpdateSearchResults(updates);
 	end
 end
 end)();
