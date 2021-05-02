@@ -125,6 +125,15 @@ _.ExpansionFeatures =
 							follower(616),	-- Calydus
 						},
 					}),
+					q(41756, {	-- Champion: Eredar Twins
+						--["sourceQuests"] = {  },
+						["classes"] = { WARLOCK },
+						--["coord"] = { , 717 },
+						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
+						["g"] = {
+							follower(621),	-- Eredar Twins
+						},
+					}),
 					q(41753, {	-- Champion: Jubeka Shadowbreaker
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
 						["classes"] = { WARLOCK },
@@ -132,6 +141,32 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
 						["g"] = {
 							follower(619),	-- Jubeka Shadowbreaker
+						},
+					}),
+					q(46047, {	-- Champion: Kanrethad Ebonlocke
+						["sourceQuests"] = { 46020 },	-- Crystal Containment
+						["altQuests"] = { 46316 },	-- Diff quest text if you completed green fire quest.  Same result from both quests.
+						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
+						["g"] = {
+							follower(997),	-- Kanrethad Ebonlocke
+						},
+					}),
+					q(41751, {	-- Champion: Kira Iresoul
+						--["sourceQuests"] = {  },
+						["classes"] = { WARLOCK },
+						--["coord"] = { , 717 },
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
+						["g"] = {
+							follower(617),	-- Kira Iresoul
+						},
+					}),
+					q(41755, {	-- Champion: Lulubelle Fizzlebang
+						--["sourceQuests"] = {  },
+						["classes"] = { WARLOCK },
+						--["coord"] = { , 717 },
+						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
+						["g"] = {
+							follower(590),	-- Lulubelle Fizzlebang
 						},
 					}),
 					q(41748, {	-- Champion: Ritssyn Flamescowl
@@ -143,6 +178,15 @@ _.ExpansionFeatures =
 							follower(589),	-- Ritssyn Flamescowl
 						},
 					}),
+					q(41754, {	-- Champion: Shinfel Blightsworn
+						--["sourceQuests"] = {  },
+						["classes"] = { WARLOCK },
+						--["coord"] = { , 717 },
+						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
+						["g"] = {
+							follower(620),	-- Shinfel Blightsworn
+						},
+					}),
 					q(41752, {	-- Champion: Zinnin Smythe
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
 						["classes"] = { WARLOCK },
@@ -151,6 +195,13 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(618),	-- Zinnin Smythe
 						},
+					}),
+					q(46020, {	-- Crystal Containment
+						["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
+						["classes"] = { WARLOCK },
+						["coord"] = { 78.1, 39.7, 646 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(45024, {	-- Cult Culling
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
@@ -213,6 +264,12 @@ _.ExpansionFeatures =
 						["coord"] = { 77.4, 36.1, 47 },
 						["provider"] = { "n", 100323 },	-- Revil Kost
 						["maps"] = { 47 }	-- Duskwood
+					}),
+					q(46784, {	-- Further Advancement
+						["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke
+						["classes"] = { WARLOCK },
+						["coord"] = { 67.0, 46.6, 717 },
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(46150, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -348,6 +405,11 @@ _.ExpansionFeatures =
 						["maps"] = { 42 },	-- Deadwind Pass
 						["altQuests"] = { 41155 },	-- The Dark Riders
 					}),
+					q(46242, {	-- The Dreadlord's Calling
+						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
+						["classes"] = { WARLOCK },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(40611, {	-- The Fate of Deadwind
 						["sourceQuests"] = { 40606 },	-- To Point the Way
 						["classes"] = { WARLOCK },
@@ -355,6 +417,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
 						["altQuests"] = { 41154 },
+					}),
+					q(45028, {	-- The Fate of Kanrethad
+						["sourceQuests"] = { 45027 },	-- To the Broken Shore
+						["classes"] = { WARLOCK },
+						["coord"] = { 81.1, 49.6, 646 },
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(40731, {	-- The Heart of the Dreadscar
 						["sourceQuests"] = {
@@ -373,11 +442,32 @@ _.ExpansionFeatures =
 						["coord"] = { 31.2, 58.8, 717 },
 						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 					}),
+					q(40712, {	-- The Power Possessed
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
+						["provider"] = { "n", 101282 },	-- Revil Kost
+						["altQuests"] = { 41156 },	-- The Power Possessed
+						["maps"] = { 46 },
+					}),
 					q(43984, {	-- The Tome Opens Again
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
+					}),
+					q(46243, {	-- The Wrathsteed of Xoroth
+						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.6, 38.4, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+						["g"] = {
+							mount(241851),	-- Netherlord's Chaotic Wrathsteed
+						},
 					}),
 					q(40606, {	-- To Point the Way
 						["sourceQuests"] = { 40604 },	-- Disturbing the Past
@@ -391,18 +481,6 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 57.4, 38.0, 717 },
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
-					}),
-					q(40712, {	-- The Power Possessed
-						["sourceQuests"] = {
-							40623,	-- The Dark Riders
-							41155,	-- The Dark Riders
-							42168,	-- Looking into the Darkness
-						},
-						["classes"] = { WARLOCK },
-						["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
-						["provider"] = { "n", 101282 },	-- Revil Kost
-						["altQuests"] = { 41156 },	-- The Power Possessed
-						["maps"] = { 46 },
 					}),
 					q(42602, {	-- Troops in the Field
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
@@ -437,13 +515,10 @@ _.ExpansionFeatures =
 					q(43414),	-- A Hero's Weapon
 					q(46237),	-- Bloodbringer's Missive
 					q(44228),	-- Champion Armaments
-					q(46316),	-- Champion: Kanrethad Ebonlocke
-					q(46020),	-- Crystal Containment
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
-					q(46784),	-- Further Advancement
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(42103),	-- Let it Feed
@@ -454,21 +529,13 @@ _.ExpansionFeatures =
 					q(43895),	-- Sealing Fate: Gold
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
-					q(46242),	-- The Dreadlord's Calling
 					q(46241, {	-- The Minions of Hel'nurath
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
-					q(46243),	-- The Wrathsteed of Xoroth
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
-					q(46243, {	-- The Wrathsteed of Xoroth
-						["classes"] = { WARLOCK },
-						["g"] = {
-							{ ["mountID"] = 232412 },	-- Netherlord's Chaotic Wrathsteed
-						},
-					}),
 					q(44254, {	-- Gazing Into Oblivion
 						i(139765),	-- Visage of the Black Harvest
 					}),
@@ -483,42 +550,11 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
-					--Followers Sort Later
-					q(41756, {	-- Champion: Eredar Twins
-						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
-						["g"] = {
-							follower(621),	-- Eredar Twins
-						},
-					}),
-					q(46047, {	-- Champion: Kanrethad Ebonlocke
-					--q(46316)  Diff quest text if you completed green fire quest.  Same result from both quests.
-						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
-						["g"] = {
-							follower(997),	-- Kanrethad Ebonlocke
-						},
-					}),
-					q(41751, {	-- Champion: Kira Iresoul
-						["provider"] = { "n", 104732 },	-- Kira Iresoul
-						["g"] = {
-							follower(617),	-- Kira Iresoul
-						},
-					}),
-					q(41755, {	-- Champion: Lulubelle Fizzlebang
-						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
-						["g"] = {
-							follower(590),	-- Lulubelle Fizzlebang
-						},
-					}),
-					q(41754, {	-- Champion: Shinfel Blightsworn
-						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
-						["g"] = {
-							follower(620),	-- Shinfel Blightsworn
-						},
-					}),
 				}),
 				n(VENDORS, {
 					n(101097, {	-- Calydus
 						["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
+						["coord"] = { 37.7, 31.0, 717 },
 						["classes"] = { WARLOCK },
 						["g"] = {
 							i(143637, {	-- Hellblazing Reins of the Brimstone Wrathsteed (MOUNT!)

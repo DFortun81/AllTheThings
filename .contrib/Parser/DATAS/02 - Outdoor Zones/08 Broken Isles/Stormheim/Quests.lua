@@ -1213,7 +1213,6 @@ _.Zones =
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(47767),	-- Death Metal Knight
 				q(39125),	-- Demon Destroyer
-				q(47049),	-- Demonology: Fate of the Tideskorn
 				q(40110),	-- Disrupt the Inkbinders
 				q(47050),	-- Enhancement: Fate of the Tideskorn
 				q(40542),	-- Eyes of Nashal

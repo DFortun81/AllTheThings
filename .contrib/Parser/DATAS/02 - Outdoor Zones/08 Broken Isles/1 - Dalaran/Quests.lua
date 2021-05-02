@@ -139,15 +139,14 @@ _.Zones =
 				}),
 				q(45842, {	-- A Gift From the Six
 					["sourceQuests"] = { 45841 },	-- A Triumphant Report
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
+					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45866, {	-- A Gift From the Six
 					["sourceQuests"] = { 45193 },	-- One Step Behind
@@ -531,7 +530,7 @@ _.Zones =
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 					["classes"] = { WARLOCK },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.4, 627 },
 				}),
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -540,7 +539,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = { WARLOCK },
-					["lvl"] = 110,
+					["coord"] = { 28.4, 48.9, 627 },
 				}),
 				q(47020, {	-- Discipline: Rumblings Near Feltotem
 					["sourceQuests"] = {
