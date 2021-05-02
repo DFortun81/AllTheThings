@@ -8730,6 +8730,7 @@ end)();
 
 -- Quest Lib
 (function()
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -8766,6 +8767,12 @@ local questFields = {
 		else
 			return "Interface\\GossipFrame\\AvailableQuestIcon";
 		end
+	end,
+	["hasIndicator"] = function(t)
+		return C_QuestLog_IsOnQuest(t.questID);
+	end,
+	["indicator"] = function(t)
+		return "star";
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
@@ -8873,6 +8880,38 @@ local questFields = {
 	end,
 };
 app.BaseQuest = app.BaseObjectFields(questFields);
+
+-- consolidated representation of whether a Thing can be collectible via QuestID
+app.CollectibleAsQuest = function(t)
+	-- if t.questID == 11381 then
+	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
+	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
+	-- end
+	return
+	-- must treat Quests as collectible
+	app.CollectibleQuests
+	and (
+			(
+			-- must have a questID associated
+			t.questID
+			-- must not be repeatable, unless considering repeatable quests as collectible
+			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must match custom collectibility if set as well
+			and app.CheckCustomCollects(t)
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
+			-- TODO: revisit if party sync option becomes a thing
+			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			)
+
+			-- If it is an item and associated to an active quest.
+			-- TODO: add t.requiredForQuestID
+			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
+		);
+end
 
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
@@ -8992,37 +9031,6 @@ local function QueryCompletedQuests()
 	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
 	end
-end
--- consolidated representation of whether a Thing can be collectible via QuestID
-app.CollectibleAsQuest = function(t)
-	-- if t.questID == 11381 then
-	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
-	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
-	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
-	-- end
-	return
-	-- must treat Quests as collectible
-	app.CollectibleQuests
-	and (
-			(
-			-- must have a questID associated
-			t.questID
-			-- must not be repeatable, unless considering repeatable quests as collectible
-			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-			-- must match custom collectibility if set as well
-			and app.CheckCustomCollects(t)
-			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-			-- TODO: revisit if party sync option becomes a thing
-			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
-			)
-
-			-- If it is an item and associated to an active quest.
-			-- TODO: add t.requiredForQuestID
-			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID))
-		);
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
@@ -11677,6 +11685,10 @@ local function SetRowData(self, row, data)
 			else
 				row.Indicator:SetTexture(app.asset("known_green"));
 			end
+			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+			row.Indicator:Show();
+		elseif data.hasIndicator then
+			row.Indicator:SetTexture(app.asset(data.indicator));
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
 		end
