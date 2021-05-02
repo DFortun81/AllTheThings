@@ -1452,10 +1452,11 @@ end
 local IsQuestFlaggedCompletedForObject = function(t)
 	-- nil if not a quest-based object
 	if not t.questID then return; end
+	local questID = t.questID;
 	-- 1 = This character completed this quest
 	-- 2 = This quest was completed by another character on the account / This quest cannot be completed by this character
 	-- If the quest is completed for this character, return completed.
-	if IsQuestFlaggedCompleted(t.questID) then
+	if IsQuestFlaggedCompleted(questID) then
 		return 1;
 	end
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
@@ -1466,36 +1467,36 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
 	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
-		if t.questID and app.CurrentCharacter.Quests[t.questID] then
+		if app.CurrentCharacter.Quests[questID] then
 			return 1;
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
 		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
-			for i,questID in ipairs(t.altQuests) do
+			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
-				if app.CurrentCharacter.Quests[questID] then
+				if app.CurrentCharacter.Quests[altQuestID] then
 					return 2;
 				end
 			end
 		end
 		if Grail then
 			-- Import previously completed repeatable quest from Grail addon data
-			if Grail:HasQuestEverBeenCompleted(t.questID) then
-				ATTAccountWideData.Quests[t.questID] = 1;
-				app.CurrentCharacter.Quests[t.questID] = 1;
+			if Grail:HasQuestEverBeenCompleted(questID) then
+				ATTAccountWideData.Quests[questID] = 1;
+				app.CurrentCharacter.Quests[questID] = 1;
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
 			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
-				for i,questID in ipairs(t.altQuests) do
+				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
-					if Grail:HasQuestEverBeenCompleted(questID) then
-						ATTAccountWideData.Quests[questID] = 1;
-						app.CurrentCharacter.Quests[questID] = 1;
+					if Grail:HasQuestEverBeenCompleted(altQuestID) then
+						ATTAccountWideData.Quests[altQuestID] = 1;
+						app.CurrentCharacter.Quests[altQuestID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -1508,20 +1509,20 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			local wqt_global = wqt_questDoneHistory.global
 			local wqt_local = wqt_questDoneHistory.character[app.GUID]
 
-			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
-				ATTAccountWideData.Quests[t.questID] = 1;
-				app.CurrentCharacter.Quests[t.questID] = 1;
+			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+				ATTAccountWideData.Quests[questID] = 1;
+				app.CurrentCharacter.Quests[questID] = 1;
 				return 1;
 			end
 
 			-- only consider altquest completion if not on account-mode
 			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
-				for i,questID in ipairs(t.altQuests) do
+				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
-					if wqt_local[questID] and wqt_local[questID] > 0 then
-						ATTAccountWideData.Quests[questID] = 1;
-						app.CurrentCharacter.Quests[questID] = 1;
+					if wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
+						ATTAccountWideData.Quests[altQuestID] = 1;
+						app.CurrentCharacter.Quests[altQuestID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -1529,8 +1530,8 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- quest completed on any character, return shared completion
-			if wqt_global and wqt_global[t.questID] and wqt_global[t.questID] > 0 then
-				ATTAccountWideData.Quests[t.questID] = 1;
+			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+				ATTAccountWideData.Quests[questID] = 1;
 				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
 					return 2;
@@ -1539,14 +1540,14 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
 		if app.AccountWideQuests then
-			if ATTAccountWideData.Quests[t.questID] then
+			if ATTAccountWideData.Quests[questID] then
 				return 2;
 			end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
 		-- any character has completed this specific quest, return shared completion
-		if ATTAccountWideData.Quests[t.questID] then
+		if ATTAccountWideData.Quests[questID] then
 			return 2;
 		end
 	end
@@ -1884,8 +1885,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				(not group.itemID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
-				-- it is not a 'saved' thing for this character or account mode is active
-				(not group.saved or group.saved ~= 1 or app.MODE_ACCOUNT))
+				-- account mode is active or it is not a 'saved' thing for this character
+				(app.MODE_ACCOUNT or not group.saved))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
@@ -5808,13 +5809,21 @@ local criteriaFields = {
 			end
 		end
 	end,
+	["saved"] = function(t)
+		local achievementID = t.achievementID;
+		if achievementID then
+			if app.CurrentCharacter.Achievements[achievementID] then return true; end
+			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
+				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+			end
+		end
+	end,
 	["index"] = function(t)
 		return 1;
 	end,
 };
 criteriaFields.collectible = fields.collectible;
 criteriaFields.icon = fields.icon;
-criteriaFields.saved = criteriaFields.collected;
 app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields);
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
@@ -6391,7 +6400,7 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		-- only consider encounters saved if saved for the current character
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["index"] = function(t)
 		return 1;
@@ -6991,7 +7000,7 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		return t.questID and IsQuestFlaggedCompleted(t.questID) or t.info.researched;
+		return IsQuestFlaggedCompleted(t.questID) or t.info.researched;
 	end,
 };
 app.BaseGarrisonTalent = app.BaseObjectFields(fields);
@@ -7189,7 +7198,7 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleHeirlooms;
 	end,
-	["collected"] = function(t)
+	["saved"] = function(t)
 		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
 	end,
 	["trackable"] = app.ReturnTrue,
@@ -7200,7 +7209,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = fields.collected;
+fields.collected = fields.saved;
 app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
 
 local armorTextures = {
@@ -7232,14 +7241,14 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
 	end,
-	["collected"] = function(t)
+	["saved"] = function(t)
 		local itemID = t.parent.itemID;
 		if itemID then
-			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return 1; end
+			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
 			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
 			if level then
 				ATTAccountWideData.HeirloomRanks[itemID] = level;
-				if t.level <= level then return 1; end
+				if t.level <= level then return true; end
 			end
 		end
 	end,
@@ -7259,7 +7268,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = fields.collected;
+fields.collected = fields.saved;
 app.BaseHeirloomLevel = app.BaseObjectFields(fields);
 
 local fields = {
@@ -7308,6 +7317,9 @@ local fields = {
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 	end,
 	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		return t.collected == 1;
+	end,
 	["g"] = function(t)
 		if app.CollectibleHeirlooms then
 			local g = {};
@@ -7348,14 +7360,12 @@ local fields = {
 					tinsert(g, l);
 				end
 				BuildGroups(t, g);
-				app.UpdateGroups(t, g);
 			end
 			rawset(t, "g", g);
 			return g;
 		end
 	end,
 };
-fields.saved = fields.collected;
 app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
@@ -7816,7 +7826,7 @@ local itemFields = {
 		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t);
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
@@ -8217,7 +8227,7 @@ local fields = {
 		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then return 2; end
 	end,
 	["saved"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 };
 app.BaseMusicRoll = app.BaseObjectFields(fields);
@@ -8258,7 +8268,7 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["lvl"] = function(t)
 		return 40;
@@ -8788,7 +8798,7 @@ local questFields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 
 	["collectibleAsReputation"] = function(t)
@@ -9004,8 +9014,7 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		-- If the parent is saved, return immediately.
-		local saved = t.parent.saved;
-		if saved then return saved; end
+		if t.parent.saved then return true; end
 
 		-- Check to see if the objective was completed.
 		local questID = t.questID;
@@ -9147,6 +9156,14 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return true; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return true;
+		end
+	end,
 	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
@@ -9174,7 +9191,6 @@ local fields = {
 		return t.requireSkill;
 	end,
 };
-fields.saved = fields.collected;
 app.BaseSpell = app.BaseObjectFields(fields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
@@ -9450,8 +9466,15 @@ local fields = {
 			return 1;
 		end
 	end,
+	["saved"] = function(t)
+		if app.CurrentCharacter.Titles[t.titleID] then return true; end
+		if IsTitleKnown(t.titleID) then
+			app.CurrentCharacter.Titles[t.titleID] = 1;
+			ATTAccountWideData.Titles[t.titleID] = 1;
+			return true;
+		end
+	end,
 };
-fields.saved = fields.collected;
 app.BaseTitle = app.BaseObjectFields(fields);
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
@@ -11354,7 +11377,6 @@ function app:CreateMiniListForGroup(group)
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
-				-- local breakafter = 0;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
@@ -11382,7 +11404,7 @@ function app:CreateMiniListForGroup(group)
 								sourceQuest.visible = true;
 								sourceQuest.hideText = true;
 								if found.sourceQuests and #found.sourceQuests > 0 and
-									(found.saved ~= 1 or app.AccountWideQuests or app.CollectedItemVisibilityFilter(sourceQuest)) then
+									(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 									for j, subsourceQuests in ipairs(found.sourceQuests) do
 										subSourceQuests[subsourceQuests] = true;
@@ -11410,8 +11432,8 @@ function app:CreateMiniListForGroup(group)
 							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
 						tinsert(prereqs, {
-							["text"] = L["UPON_COMPLETION"],		-- L["UPON_COMPLETION"] = "Upon Completion"
-							["description"] = L["UPON_COMPLETION_DESC"],		-- L["UPON_COMPLETION_DESC"] = "The above quests need to be completed before being able to complete the things listed below."
+							["text"] = L["UPON_COMPLETION"],
+							["description"] = L["UPON_COMPLETION_DESC"],
 							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 							["visible"] = true,
 							["expanded"] = true,
@@ -11419,12 +11441,6 @@ function app:CreateMiniListForGroup(group)
 							["hideText"] = true
 						});
 						g = prereqs;
-						-- breakafter = breakafter + 1;
-						-- if breakafter >= 100 then
-						-- 	app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
-						-- 	app.report();
-						-- 	break;
-						-- end
 					end
 				end
 
@@ -11496,8 +11512,8 @@ function app:CreateMiniListForGroup(group)
 				end
 			end
 			popout.data = {
-				["text"] = L["QUEST_CHAIN_REQ"],		-- L["QUEST_CHAIN_REQ"] = "Quest Chain Requirements"
-				["description"] = L["QUEST_CHAIN_REQ_DESC"],		-- L["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r"
+				["text"] = L["QUEST_CHAIN_REQ"],
+				["description"] = L["QUEST_CHAIN_REQ_DESC"],
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 				["g"] = gTop and { gTop } or g,
 				["hideText"] = true
@@ -12175,10 +12191,10 @@ RowOnEnter = function (self)
 			if reference.total and reference.total >= 2 then
 				-- if collecting this reference type, then show Collection State
 				if reference.collectible then
-					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));		-- L["COLLECTION_PROGRESS"] = "Collection Progress"
+					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));
 				-- if completion/tracking is available, show Completion State
 				elseif reference.trackable then
-					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));		-- L["TRACKING_PROGRESS"] = "Tracking Progress"
+					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));
 				end
 			end
 		end
@@ -12186,7 +12202,7 @@ RowOnEnter = function (self)
 		-- achievement progress. If it has a measurable statistic, show it under the achievement description
 		if reference.achievementID then
 			if reference.statistic then
-				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)		-- L["PROGRESS"] = "Progress"
+				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)
 			end
 		end
 
@@ -12597,14 +12613,14 @@ RowOnEnter = function (self)
 		end
 
 		-- Show Quest Prereqs
-		local isDebugMode = app.MODE_DEBUG;
+		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
 		if reference.sourceQuests and (not reference.saved or isDebugMode) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-					local sqs = SearchForField("questID", sourceQuestID);
+					sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
-						local bestMatch = nil;
+						bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID then
 								if isDebugMode or (app.RecursiveClassAndRaceFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
@@ -12632,8 +12648,9 @@ RowOnEnter = function (self)
 			end
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
+				local text;
 				for i,prereq in ipairs(prereqs) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -12646,8 +12663,9 @@ RowOnEnter = function (self)
 			end
 			if bc and #bc > 0 then
 				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
+				local text;
 				for i,prereq in ipairs(bc) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -12668,7 +12686,7 @@ RowOnEnter = function (self)
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						local nq = app.SearchForObjectClone("questID", nextQuestID);
+						nq = app.SearchForObjectClone("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
@@ -18127,6 +18145,8 @@ app.events.QUEST_ACCEPTED = function(questID)
 			end
 		end
 		PrintQuestInfo(questID, 1, freq);
+		-- Make sure windows update incase any show the picked up quest
+		app:UpdateWindows();
 	end
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
