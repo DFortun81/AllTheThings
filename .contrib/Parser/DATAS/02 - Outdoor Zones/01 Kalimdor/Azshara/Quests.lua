@@ -46,7 +46,6 @@ _.Zones =
 				}),
 				q(46177, {	-- A Portal Away
 					["sourceQuests"] = { 44924 },	-- The Archmage Accosted
-					["provider"] = { "n", 116048 },	-- Joanna
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -54,6 +53,7 @@ _.Zones =
 						ROGUE,			-- Subtlety
 						WARRIOR,		-- Arms
 					},
+					["provider"] = { "n", 116048 },	-- Joanna
 					["coord"] = { 25.2, 37.9, 76 },
 				}),
 				q(14197, {	-- A Quota to Meet
@@ -599,6 +599,7 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
+					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 				}),
 				q(26372, {	-- Pre-Flight Checklist
 					["sourceQuests"] = { 26361 },	-- Smoot's Samophlange
@@ -634,7 +635,6 @@ _.Zones =
 						47048,	-- Subtlety: The Thieving Apprentice
 						47047,	-- Survival: The Thieving Apprentice
 					},
-					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -642,6 +642,7 @@ _.Zones =
 						ROGUE,			-- Subtlety
 						WARRIOR,		-- Arms
 					},
+					["provider"] = { "n", 115791 },	-- Joanna
 					["coord"] = { 25.0, 38.6, 76 },
 				}),
 				q(24452, {	-- Profitability Scouting
