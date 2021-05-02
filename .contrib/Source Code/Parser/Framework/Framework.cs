@@ -1955,7 +1955,8 @@ namespace ATT
                                 // KEY: Item ID, VALUE: Data (generic object field/value pairs)
                                 if (o.Value is Dictionary<object, object> entry)
                                 {
-                                    Items.Merge(Convert.ToInt64(o.Key), entry);
+                                    entry["itemID"] = o.Key;
+                                    Items.Merge(entry);
                                 }
                             }
                             break;
