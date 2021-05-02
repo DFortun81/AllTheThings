@@ -941,6 +941,11 @@ _.Zones =
 					["provider"] = { "n", 177644 },	-- Prince Renathal
 					["coord"] = { 25.0, 27.9, 1525 },	-- Revendreth
 				}),
+				q(63582, {	-- He Was My Student
+					["sourceQuests"] = { 63581 },	-- Step Into the Light
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 				q(63728, {	-- Hunting Amid Houses
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
 					["provider"] = { "n", 177434 },	-- Ysera
@@ -950,6 +955,11 @@ _.Zones =
 					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
 					["provider"] = { "n", 177962 },	-- Lady Moonberry
 					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
+				q(63583, {	-- I Intend to Live Forever
+					["sourceQuests"] = { 63582 },	-- He Was My Student
+					["provider"] = { "n", 177112 },	-- Uther
+					["coord"] = { 40.1, 20.3, BASTION },
 				}),
 				q(63679, {	-- Magical Mystery Tour!
 					["sourceQuests"] = { 63678 },	-- Akarek Avenged
@@ -980,6 +990,11 @@ _.Zones =
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177637 },	-- Baroness Vashj
 					["coord"] = { 36.0, 22.4, 1525 },
+				}),
+				q(63581, {	-- Step Into the Light
+					["sourceQuests"] = { 63580 },	-- Wounded Memories
+					["provider"] = { "n", 154629 },	-- Thenios
+					["coord"] = { 40.1, 20.0, BASTION },
 				}),
 				q(63652, {	-- The "Unwelcome" Guests
 				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
@@ -1044,6 +1059,11 @@ _.Zones =
 					["sourceQuests"] = { 63682 },	-- The Power of Elune
 					["provider"] = { "n", 178669 },	-- Winter Queen
 					["coord"] = { 45.2, 65.1, ARDENWEALD },
+				}),
+				q(63580, {	-- Wounded Memories
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
 				}),
 				q(63677, {	-- You Can Only Die
 					["sourceQuests"] = { 63674 },	-- By Your Leave
