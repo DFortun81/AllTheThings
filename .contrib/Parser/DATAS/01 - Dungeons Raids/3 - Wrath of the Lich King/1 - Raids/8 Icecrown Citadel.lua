@@ -4231,12 +4231,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
 							}),
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
-							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(50708),	-- Last Word
 							i(50704),	-- Rigormortis
@@ -4286,12 +4280,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
-							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50727),	-- Bloodfall
 							i(50725),	-- Dying Light
 							i(50729),	-- Icecrown Glacial Wall
@@ -4335,12 +4323,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
 							}),
 							ach(4620),	-- All You Can Eat (25 player)
-							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(50635),	-- Sundial of Eternal Dusk
 							i(50633),	-- Sindragosa's Cruel Claw
@@ -4361,12 +4343,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								title(138),	-- the Light of Dawn
 							}),
 							i(50818),	-- Invincible's Reins (MOUNT!)
-							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
 							i(50731),	-- Archus, Greatstaff of Antonidas
