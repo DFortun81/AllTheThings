@@ -4254,11 +4254,13 @@ end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
-		local fresh = false;
+		-- local fresh = false;
 
 		-- Mark all results as marked. This prevents a double +1 on parents.
 		for i,result in ipairs(searchResults) do
+			-- print("result",result.text,result.visible,result.parent and result.parent.total)
 			if result.visible and result.parent and result.parent.total then
+				-- print(".marked",result.text)
 				result.marked = true;
 			end
 		end
@@ -4282,12 +4284,15 @@ local function UpdateSearchResults(searchResults)
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					result.visible = app.CollectedItemVisibilityFilter(result);
 				end
-				fresh = true;
+				-- fresh = true;
 			end
 		end
 
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		-- Can't think of any situation where this method would be called without having processed the proper result updates...
+		-- app:RefreshData(fresh, true);
+		-- Just need to update the windows now that the data is updated
+		app:RefreshData(true, true);
 	end
 end
 app.SearchForLink = SearchForLink;
