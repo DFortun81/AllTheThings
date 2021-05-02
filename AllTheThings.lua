@@ -4257,11 +4257,13 @@ end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
-		local fresh = false;
+		-- local fresh = false;
 
 		-- Mark all results as marked. This prevents a double +1 on parents.
 		for i,result in ipairs(searchResults) do
+			-- print("result",result.text,result.visible,result.parent and result.parent.total)
 			if result.visible and result.parent and result.parent.total then
+				-- print(".marked",result.text)
 				result.marked = true;
 			end
 		end
@@ -4285,12 +4287,15 @@ local function UpdateSearchResults(searchResults)
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					result.visible = app.CollectedItemVisibilityFilter(result);
 				end
-				fresh = true;
+				-- fresh = true;
 			end
 		end
 
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		-- Can't think of any situation where this method would be called without having processed the proper result updates...
+		-- app:RefreshData(fresh, true);
+		-- Just need to update the windows now that the data is updated
+		app:RefreshData(true, true);
 	end
 end
 app.SearchForLink = SearchForLink;
@@ -6812,26 +6817,25 @@ end
 app.events.TAXIMAP_OPENED = function()
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 	if allNodeData then
-		local knownNodeIDs = {};
+		local updates, searchResults, nodeID = {};
+		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
-				table.insert(knownNodeIDs, nodeData.nodeID);
-			end
-		end
-		local updates, searchResults = {};
-		for i,nodeID in ipairs(knownNodeIDs) do
-			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				ATTAccountWideData.FlightPaths[nodeID] = 1;
-				app.CurrentCharacter.FlightPaths[nodeID] = 1;
-				searchResults = SearchForField("flightPathID", nodeID);
-				if searchResults then
-					for j,searchResult in ipairs(searchResults) do
-						table.insert(updates, searchResult);
+				nodeID = nodeData.nodeID;
+				if not currentCharFPs[nodeID] then
+					acctFPs[nodeID] = 1;
+					currentCharFPs[nodeID] = 1;
+					searchResults = SearchForField("flightPathID", nodeID);
+					if searchResults then
+						for j,searchResult in ipairs(searchResults) do
+							table.insert(updates, searchResult);
+						end
 					end
 				end
+
 			end
 		end
-		if #updates > 0 then UpdateSearchResults(updates); end
+		UpdateSearchResults(updates);
 	end
 end
 end)();
@@ -8729,6 +8733,7 @@ end)();
 
 -- Quest Lib
 (function()
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -8765,6 +8770,12 @@ local questFields = {
 		else
 			return "Interface\\GossipFrame\\AvailableQuestIcon";
 		end
+	end,
+	["hasIndicator"] = function(t)
+		return C_QuestLog_IsOnQuest(t.questID);
+	end,
+	["indicator"] = function(t)
+		return "star";
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
@@ -8872,6 +8883,38 @@ local questFields = {
 	end,
 };
 app.BaseQuest = app.BaseObjectFields(questFields);
+
+-- consolidated representation of whether a Thing can be collectible via QuestID
+app.CollectibleAsQuest = function(t)
+	-- if t.questID == 11381 then
+	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
+	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
+	-- end
+	return
+	-- must treat Quests as collectible
+	app.CollectibleQuests
+	and (
+			(
+			-- must have a questID associated
+			t.questID
+			-- must not be repeatable, unless considering repeatable quests as collectible
+			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must match custom collectibility if set as well
+			and app.CheckCustomCollects(t)
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
+			-- TODO: revisit if party sync option becomes a thing
+			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			)
+
+			-- If it is an item and associated to an active quest.
+			-- TODO: add t.requiredForQuestID
+			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
+		);
+end
 
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
@@ -8991,37 +9034,6 @@ local function QueryCompletedQuests()
 	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
 	end
-end
--- consolidated representation of whether a Thing can be collectible via QuestID
-app.CollectibleAsQuest = function(t)
-	-- if t.questID == 11381 then
-	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
-	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
-	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
-	-- end
-	return
-	-- must treat Quests as collectible
-	app.CollectibleQuests
-	and (
-			(
-			-- must have a questID associated
-			t.questID
-			-- must not be repeatable, unless considering repeatable quests as collectible
-			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-			-- must match custom collectibility if set as well
-			and app.CheckCustomCollects(t)
-			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-			-- TODO: revisit if party sync option becomes a thing
-			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
-			)
-
-			-- If it is an item and associated to an active quest.
-			-- TODO: add t.requiredForQuestID
-			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID))
-		);
 end
 local function RefreshQuestCompletionState(questID)
 	if not questID then
@@ -10271,11 +10283,17 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 
-			-- Update the subgroups recursively...
-			visible = UpdateGroups(group, group.g);
+			-- TODO: ideally the recursive update would outside of the top group, and we only need to process the top group
+			-- if everything inside is hidden, otherwise it would obviously need to be shown.
+			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
+			-- otherwise filtered groups
 
-			-- If we have to show this group due to visible content or the 'can equip' filter says true
-			if visible or app.GroupFilter(group) then
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+
+				-- Update the subgroups recursively...
+				visible = UpdateGroups(group, group.g);
+
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -11020,16 +11038,16 @@ app.CreateMinimapButton = CreateMinimapButton;
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
-local function SetVisible(self, show)
+local function SetVisible(self, show, forceUpdate)
 	if show then
 		self:Show();
-		self:Update();
+		self:Update(forceUpdate);
 	else
 		self:Hide();
 	end
 end
-local function Toggle(self)
-	return SetVisible(self, not self:IsVisible());
+local function Toggle(self, forceUpdate)
+	return SetVisible(self, not self:IsVisible(), forceUpdate);
 end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
@@ -11523,13 +11541,20 @@ function app:CreateMiniListForGroup(group)
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
-		-- Adjust some update logic if this is a Quest Chain window
+		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
 				local oldQuestTracking = app.AccountWideQuests;
 				app.AccountWideQuests = false;
 				oldUpdate(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+			local oldRefresh = popout.Refresh;
+			popout.Refresh = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 		end
@@ -11663,6 +11688,10 @@ local function SetRowData(self, row, data)
 			else
 				row.Indicator:SetTexture(app.asset("known_green"));
 			end
+			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+			row.Indicator:Show();
+		elseif data.hasIndicator then
+			row.Indicator:SetTexture(app.asset(data.indicator));
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
 		end

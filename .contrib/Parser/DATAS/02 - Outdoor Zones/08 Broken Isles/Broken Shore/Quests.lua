@@ -550,7 +550,6 @@ _.Zones =
 				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
-				q(45021),	-- Answers Unknown
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
@@ -563,7 +562,6 @@ _.Zones =
 				}),
 				q(45350),	-- Countering the Contagion
 				q(45347),	-- Crafting a Cure
-				q(45024),	-- Cult Culling
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash
 				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
@@ -574,7 +572,6 @@ _.Zones =
 				q(46035, {	-- End of the Risen Threat
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45026),	-- Expending Fel Energy
 				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
@@ -596,7 +593,6 @@ _.Zones =
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
 				q(40151),	-- Immaculate Stormscale
-				q(45794),	-- Informing the Council
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
 				q(46688),	-- Leather of the Ancients
@@ -710,7 +706,6 @@ _.Zones =
 				q(46127, {	-- Thwarting the Twins
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45027),	-- To the Broken Shore
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
 				q(47054),	-- Touched By Fate

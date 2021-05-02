@@ -826,7 +826,6 @@ _.Zones =
 				q(38948),	-- Hard Times
 				q(43561),	-- I Believe I Can Fly!
 				q(40874),	-- I'd Do It Myself, But...
-				q(45794),	-- Informing the Council
 				q(37908),	-- Inquisitor Ernstenbok
 				q(40556),	-- Jabrul Needs You
 				q(40873),	-- Keep Yer Powder Dry
@@ -901,7 +900,6 @@ _.Zones =
 				q(42886),	-- To Faronaar
 				q(43489),	-- To Felblaze Ingress
 				q(42406),	-- To Tame the Beast
-				q(45027),	-- To the Broken Shore
 				q(47064),	-- Tracking Quest
 				q(44081),	-- Treacherous Leyrunners
 				q(37649),	-- Treasure: Offerings for the Giants

@@ -4129,6 +4129,7 @@ _.HiddenQuestTriggers =
 		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
 		q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
 		q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
+		q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"

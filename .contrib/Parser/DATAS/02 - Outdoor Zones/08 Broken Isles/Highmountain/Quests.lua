@@ -52,14 +52,14 @@ _.Zones =
 				}),
 				q(45841, {	-- A Triumphant Report
 					["sourceQuests"] = { 45796 },	-- Destroying the Nest
-					["provider"] = { "n", 117361 },	-- Navarrogg
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["lvl"] = 110,
+					["coord"] = { 31.3, 25.1, 650 },
+					["provider"] = { "n", 117361 },	-- Navarrogg
 				}),
 				q(40000, {	-- A True Hunter
 					["coord"] = { 57.5, 56.4, 650 },
@@ -240,14 +240,14 @@ _.Zones =
 				}),
 				q(45796, {	-- Destroying the Nest
 					["sourceQuests"] = { 45587 },	-- The Feltotem Menace
-					["provider"] = { "n", 117361 },	-- Navarrogg
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["lvl"] = 110,
+					["coord"] = { 31.3, 25.1, 650 },
+					["provider"] = { "n", 117361 },	-- Navarrogg
 				}),
 				q(40070, {	-- Eagle Egg Recovery
 					["coord"] = { 50.9, 36.6, 650 },
@@ -720,7 +720,7 @@ _.Zones =
 						WARLOCK,	-- Destruction
 					},
 					["provider"] = { "n", 117225 },	-- Navarrogg
-					["lvl"] = 110,
+					["coord"] = { 35.6, 24.0, 650 },
 				}),
 				q(39026, {	-- The Drogbar
 					["sourceQuests"] = { 42104 },	-- The Underking Comes
@@ -804,14 +804,14 @@ _.Zones =
 				}),
 				q(45726, {	-- The Tainted Marsh
 					["sourceQuests"] = { 45564 },	-- The Burning Birds
-					["provider"] = { "n", 117249 },	-- Navarrogg
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["lvl"] = 110,
+					["coord"] = { 31.3, 25.1, 650 },
+					["provider"] = { "n", 117249 },	-- Navarrogg
 				}),
 				q(39321, {	-- The Three
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -929,15 +929,15 @@ _.Zones =
 					["provider"] = { "n", 95392 },	-- Navarrogg
 				}),
 				q(45575, {	-- Village of the Corruptors
+					["sourceQuests"] = { 45726 },	-- The Tainted Marsh
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["sourceQuests"] = { 45726 },	-- The Tainted Marsh
+					["coord"] = { 31.3, 25.1, 650 },
 					["provider"] = { "n", 117249 },	-- Navarrogg
-					["lvl"] = 110,
 				}),
 				q(39765, {	-- Wax On, Wax Off
 					["coord"] = { 54.7, 45.0, 650 },
@@ -1020,7 +1020,6 @@ _.Zones =
 				q(45392),	-- Dark Memento
 				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
-				q(45560),	-- Destruction: Rumblings Near Feltotem
 				q(45551),	-- Devastating Effects
 				q(40414),	-- Devouring Darkness
 				q(47020),	-- Discipline: Rumblings Near Feltotem

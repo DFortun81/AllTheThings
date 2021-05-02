@@ -459,36 +459,41 @@ ItemClassInfo = {
 		["class"] = "Consumable",
 	},
 };
-WOD_CRAFTED_ITEM = function(id)
+WOD_CRAFTED_ITEM = function(id, upgradeItem)
 	return
 	{
 		["itemID"] = id,
 		["bonusID"] = 525,
-		["groups"] = {
+		["g"] = {
 			{
 				["itemID"] = id,
 				["bonusID"] = 558,
 				["u"] = REMOVED_FROM_GAME,
-				["groups"] = {
+				["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },
+				["g"] = {
 					{
 						["itemID"] = id,
 						["bonusID"] = 559,
 						["u"] = REMOVED_FROM_GAME,
+						["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 594,
 						["u"] = REMOVED_FROM_GAME,
+						["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 619,
 						["u"] = REMOVED_FROM_GAME,
+						["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },
 					},
 					{
 						["itemID"] = id,
 						["bonusID"] = 620,
 						["u"] = REMOVED_FROM_GAME,
+						["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },
 					}
 				}
 			}

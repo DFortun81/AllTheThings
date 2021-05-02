@@ -166,9 +166,7 @@ _.ExpansionFeatures =
 						-- Tier 3: Hidden Pathways
 					}),
 					n(-930, {	-- Queen's Conservatory
-						["maps"] = {
-							1662,	-- Queen's Conservatory
-						},
+						["maps"] = { 1662 },	-- Queen's Conservatory
 						["g"] = {
 							n(ACHIEVEMENTS,{
 								ach(14789),	-- All Spirits Great and Small
@@ -246,7 +244,7 @@ _.ExpansionFeatures =
 								q(59862, {	-- A Savior for Lost Souls
 									["sourceQuests"] = { 63046 },	-- The End and the Beginning
 									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 69.9, 44.7, 1662 },
+									["coord"] = { 69.9, 44.7, 1662 },	-- Queen's Conservatory
 								}),
 								q(62449, {	-- A Spirit's Duty
 									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
@@ -330,12 +328,12 @@ _.ExpansionFeatures =
 								q(59873, {	-- Greeting a God
 									["sourceQuests"] = { 59872 },	-- How to Save a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
+									["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 								}),
 								q(59872, {	-- How to Save a God
 									["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
+									["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 									["g"] = {
 										i(177953),	-- Untamed Spirit
 									},
@@ -391,7 +389,7 @@ _.ExpansionFeatures =
 								q(63046, {	-- The End and the Beginning
 									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },
+									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
 								}),
 								q(60642, {	-- The Grove Resplendent
 									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
@@ -400,7 +398,7 @@ _.ExpansionFeatures =
 								}),
 								q(62624, {	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },
+									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
 								}),
 							}),
 							-- Spirits/Transmog

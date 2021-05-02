@@ -139,15 +139,14 @@ _.Zones =
 				}),
 				q(45842, {	-- A Gift From the Six
 					["sourceQuests"] = { 45841 },	-- A Triumphant Report
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
+					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45866, {	-- A Gift From the Six
 					["sourceQuests"] = { 45193 },	-- One Step Behind
@@ -228,6 +227,11 @@ _.Zones =
 				q(40643, {	-- A Summons From Moonglade
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
 					["classes"] = { DRUID },
+				}),
+				q(50318, {	-- A Timely Summons from Northrend
+					["provider"] = { "n", 111246 },	-- Archmage Timear
+					["coord"] = { 63.8, 55.2, 627 },
+					["isWeekly"] = true,
 				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["sourceQuests"] = {
@@ -531,7 +535,7 @@ _.Zones =
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 					["classes"] = { WARLOCK },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.4, 627 },
 				}),
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -540,7 +544,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = { WARLOCK },
-					["lvl"] = 110,
+					["coord"] = { 28.4, 48.9, 627 },
 				}),
 				q(47020, {	-- Discipline: Rumblings Near Feltotem
 					["sourceQuests"] = {
