@@ -311,8 +311,8 @@ _.ExpansionFeatures =
 								q(62441, {	-- Fair Exchange for a Soul
 									["sourceQuests"] = { 59873 },	-- Greeting a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
 									["isWeekly"] = true,
+									["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 									["g"] = {
 										i(178880),	-- Greater Dutiful Spirit
 										i(178877),	-- Greater Martial Spirit
@@ -374,7 +374,7 @@ _.ExpansionFeatures =
 								q(59999, {	-- Rebirth of the Grove
 									["sourceQuests"] = { 59873 },	-- Greeting a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
+									["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 								}),
 								q(60640, {	-- Regrowth of the Grove
 									["sourceQuests"] = { 62467 },	-- Seed of a Thought

@@ -4045,7 +4045,7 @@ _.HiddenQuestTriggers =
 		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
-		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Pelagos)
+		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Kleia/Pelagos)
 		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
 		q(61018),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Loyalty, Pelagos)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
@@ -4056,6 +4056,9 @@ _.HiddenQuestTriggers =
 		q(61016),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos)
 		q(63080),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos) [First time?]
 		q(60926),	-- Looting Path of Ascension Victor's Chest (Athanos, Courage, Pelagos)
+		q(60927),	-- Looting Path of Ascension Victor's Chest (Azaruux, Courage, Mikanikos)
+		q(63075),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
+		q(63083),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
 		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
@@ -4340,6 +4343,10 @@ _.HiddenQuestTriggers =
 		q(62489),	-- Ember Court End - (Kleia&Pelagos / Mikanikos / Alexandros / Sika, all elated - Mikanikos only one i hadn't done before.  also got We Happy Few, so possibly one of these is related to that) - next week's automatic assigned pickups were Choofa, Droman Aliothe, Rendle and Cudgelface, and Lady Moonberry
 		q(62505),	-- ""
 		q(62529),	-- ""
+		q(62488),	-- Ember Court End - (Lady Moonberry / Rendle&Cudgelface as first-time guests, Elated and Very Happy respectively, had Casual maxed)
+		q(62494),	-- ""
+		q(62518),	-- ""
+		q(62527),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
 		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry

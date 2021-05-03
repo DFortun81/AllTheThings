@@ -270,6 +270,7 @@ i(118386);	-- Heart of Stone (H)
 i(118389);	-- Heart of Stone (M)
 i(168236);	-- Hearthstone Card
 i(158913);	-- Huge Dragon Kite
+i(181471);	-- Humility's Guard
 i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
