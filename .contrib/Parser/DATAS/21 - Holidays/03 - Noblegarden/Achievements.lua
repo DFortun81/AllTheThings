@@ -40,6 +40,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 						ach(2576, {	-- Blushing Bride
 						}),
 						ach(2416, {	-- Hard Boiled
+							["cost"] = { { "i", 44792, 1, } },	-- 1x Blossoming Branch
 						}),
 						ach(2419, {	-- Spring Fling (A)
 							["races"] = ALLIANCE_ONLY,

@@ -2,13 +2,12 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
--- TODO: fromatting
 _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 	holiday(235477, {	-- Noblegarden
 		n(QUESTS, {
-			{	--	A Tisket, a Tasket, a Noblegarden Basket [Alliance]
-				["questID"] = 13502,	-- A Tisket, a Tasket, a Noblegarden Basket
-				["u"] = 19,				-- Noblegarden Filter
+			q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket [Alliance]
+				["isYearly"] = true,
+				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 32836 },	-- Noblegarden Vendor
 				["coords"] = {
 					{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
@@ -22,17 +21,13 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					57,	-- Teldrassil
 					AZUREMYST_ISLE,
 				},
-				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Egg Basket
-						["itemID"] = 45067,	-- Egg Basket
-					},
+					i(45067),	-- Egg Basket
 				},
+			}),
+			q(13503, {	--	A Tisket, a Tasket, a Noblegarden Basket [Horde]
 				["isYearly"] = true,
-			},
-			{	--	A Tisket, a Tasket, a Noblegarden Basket [Horde]
-				["questID"] = 13503,	-- A Tisket, a Tasket, a Noblegarden Basket
-				["u"] = 19,				-- Noblegarden Filter
+				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 32837 },	-- Noblegarden Merchant  [Falconwing]
 				["coords"] = {
 					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
@@ -46,17 +41,13 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					18,	-- Tirisfal Glades
 					EVERSONG_WOODS,
 				},
-				["races"] = HORDE_ONLY,
 				["g"] = {
-					{	-- Egg Basket
-						["itemID"] = 45067,	-- Egg Basket
-					},
+					i(45067),	-- Egg Basket
 				},
+			}),
+			q(13484, {	--	Spring Gathers [Alliance]
 				["isYearly"] = true,
-			},
-			{	--	Spring Gathers [Alliance]
-				["questID"] = 13484,	-- Spring Gatherers
-				["u"] = 19,				-- Noblegarden Filter
+				["races"] = ALLIANCE_ONLY,
 				["providers"] = {
 					{ "n", 19171 },	-- Draenei Commoner
 					{ "n", 19148 },	-- Dwarf Commoner
@@ -117,12 +108,10 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					120,	-- The Storm Peaks
 					83,		-- Winterspring
 				},
-				["races"] = ALLIANCE_ONLY,
+			}),
+			q(13483, {	--	Spring Gathers [Horde]
 				["isYearly"] = true,
-			},
-			{	--	Spring Gathers [Horde]
-				["questID"] = 13483,	-- Spring Gatherers
-				["u"] = 19,				-- Noblegarden Filter
+				["races"] = HORDE_ONLY,
 				["providers"] = {
 					{ "n", 19169 },	-- Blood Elf Commoner
 					{ "n", 19178 },	-- Forsaken Commoner
@@ -191,13 +180,10 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					90,		-- Undercity
 					83,		-- Winterspring
 				},
-				["races"] = HORDE_ONLY,
-				["isYearly"] = true,
-			},
-			{	--	The Great Egg Hunt [Alliance]
-				["questID"] = 13480,	-- The Great Egg Hunt
-				["u"] = 19,				-- Noblegarden Filter
+			}),
+			q(13480, {	--	The Great Egg Hunt [Alliance]
 				["isDaily"] = true,
+				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 32799 },	-- Spring Collector
 				["coords"] = {
 					{ 49.07, 51.25, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
@@ -211,21 +197,15 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					57,	-- Teldrassil
 					AZUREMYST_ISLE,
 				},
-				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Blossoming Branch
-						["itemID"] = 44792,			-- Blossoming Branch
-						-- ["achievementID"] = 2416,	-- Hard Boiled
-						-- ["criteriaID"] = 1,			-- Hard Boiled
-						["u"] = 19,					-- Noblegarden Filter
+					i(44792, {	-- Blossoming Branch
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
-					},
+					}),
 				},
-			},
-			{	--	The Great Egg Hunt [Horde]
-				["questID"] = 13479,	-- The Great Egg Hunt
-				["u"] = 19,				-- Noblegarden Filter
+			}),
+			q(13479, {	--	The Great Egg Hunt [Horde]
 				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 32798 },	-- Spring Gatherer [Falconwing]
 				["coords"] = {
 					{ 46.92, 59.53, 7 },	-- Bloodhoof Village, Mulgore
@@ -239,17 +219,12 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 					18,	-- Tirisfal Glades
 					EVERSONG_WOODS,
 				},
-				["races"] = HORDE_ONLY,
 				["g"] = {
-					{	-- Blossoming Branch
-						["itemID"] = 44792,			-- Blossoming Branch
-						-- ["achievementID"] = 2416,	-- Hard Boiled
-						-- ["criteriaID"] = 1,			-- Hard Boiled
-						["u"] = 19,					-- Noblegarden Filter
+					i(44792, {	-- Blossoming Branch
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
-					},
+					}),
 				},
-			},
+			}),
 		}),
 	}),
 });

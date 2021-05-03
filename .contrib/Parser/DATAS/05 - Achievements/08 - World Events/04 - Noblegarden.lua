@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		["g"] = bubbleDown({["u"] = 19}, {
+		["g"] = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 			holiday(235477, {	-- Noblegarden
 				ach(2576),	-- Blushing Bride
 				ach(2418, {	-- Chocoholic [Eat 100]
@@ -19,7 +19,9 @@ _.Achievements =
 					crit(5),	-- Thousand Needles
 				}),
 				ach(249),	-- Dressed for the Occasion
-				ach(2416),	-- Hard Boiled
+				ach(2416, {	-- Hard Boiled
+					["cost"] = { { "i", 44792, 1, } },	-- 1x Blossoming Branch
+				}),
 				ach(2676),	-- I Found One
 				ach(2421, {	-- Noble Garden (A)
 					["races"] = ALLIANCE_ONLY,
