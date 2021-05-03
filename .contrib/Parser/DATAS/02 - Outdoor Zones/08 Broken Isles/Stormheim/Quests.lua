@@ -849,23 +849,19 @@ _.Zones =
 					["provider"] = { "n", 93234 },	-- Ashildir
 				}),
 				q(45524, {	-- The Forgotten Heir
-					["lvl"] = 110,
 					["sourceQuests"] = { 45523 },	-- To Tame the Drekirjar
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
 					["provider"] = { "n", 116568 },	-- Sigryn
 					["coord"] = { 41.4, 71.7, 634 },
-					["classes"] = {
-						MAGE,		-- Arcane
-						PALADIN,	-- Retribution
-						ROGUE,		-- Assassination
-						SHAMAN,		-- Enhancement
-						WARLOCK,	-- Demonology
-					},
 				}),
 				q(46340, {	-- The Gates Are Closed
-					["lvl"] = 110,
 					["sourceQuests"] = { 45525 },	-- Unanswered Questions
-					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 71.9, 51.1, 634 },
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -873,6 +869,8 @@ _.Zones =
 						SHAMAN,		-- Enhancement
 						WARLOCK,	-- Demonology
 					},
+					["provider"] = { "n", 93628 },	-- Eyir
+					["coord"] = { 71.9, 51.1, 634 },
 				}),
 				q(38057, {	-- The Lost Legion
 					["sourceQuests"] = {
@@ -895,24 +893,6 @@ _.Zones =
 					["sourceQuests"] = { 39801 },	-- The Splintered Fleet
 					["provider"] = { "n", 91473 },	-- Dread-Rider Cullen
 					["coord"] = { 36.1, 27.5, 634 },
-				}),
-				q(45486, {	-- The Reluctant Queen
-					["sourceQuests"] = {
-						45482,	-- Arcane: Fate of the Tideskorn
-						47051, 	-- Assassination: Fate of the Tideskorn
-						47049,	-- Demonology: Fate of the Tideskorn
-						47050,	-- Enhancement: Fate of the Tideskorn
-						47052,	-- Retribution: Fate of the Tideskorn
-					},
-					["provider"] = { "n", 116568 },	-- Sigryn
-					["classes"] = {
-						MAGE,		-- Arcane
-						PALADIN,	-- Retribution
-						ROGUE,		-- Assassination
-						SHAMAN,		-- Enhancement
-						WARLOCK,	-- Demonology
-					},
-					["lvl"] = 110,
 				}),
 				q(38823, {	-- The Runes that Bind
 					["sourceQuests"] = {
@@ -980,10 +960,7 @@ _.Zones =
 					["provider"] = { "n", 97973 },	-- Havi
 				}),
 				q(45522, {	-- To Silence the Bonespeakers
-					["lvl"] = 110,
 					["sourceQuests"] = { 45486 },	-- The Reluctant Queen
-					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 65.0, 68.0, 634 },
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -991,6 +968,8 @@ _.Zones =
 						SHAMAN,		-- Enhancement
 						WARLOCK,	-- Demonology
 					},
+					["provider"] = { "n", 93628 },	-- Eyir
+					["coord"] = { 65.0, 68.0, 634 },
 				}),
 				q(39062, {	-- To Skold-Ashil (Alliance)
 					["sourceQuests"] = {
@@ -1013,10 +992,7 @@ _.Zones =
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(45523, {	-- To Tame the Drekirjar
-					["lvl"] = 110,
 					["sourceQuests"] = { 45522 },	-- To Silence the Bonespeakers
-					["provider"] = { "n", 116568 },	-- Sigryn
-					["coord"] = { 72.9, 40.4, 634 },
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -1024,6 +1000,8 @@ _.Zones =
 						SHAMAN,		-- Enhancement
 						WARLOCK,	-- Demonology
 					},
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 72.9, 40.4, 634 },
 				}),
 				q(38405, {	-- To Weather the Storm (Alliance)
 					["sourceQuests"] = { 38312 },	-- A Grapple a Day
@@ -1060,10 +1038,7 @@ _.Zones =
 					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(45525, {	-- Unanswered Questions
-					["lvl"] = 110,
 					["sourceQuests"] = { 45524 },	-- The Forgotten Heir
-					["provider"] = { "n", 116568 },	-- Sigryn
-					["coord"] = { 74.2, 85.0, 634 },
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -1071,6 +1046,8 @@ _.Zones =
 						SHAMAN,		-- Enhancement
 						WARLOCK,	-- Demonology
 					},
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 74.2, 85.0, 634 },
 				}),
 				q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 					["sourceQuests"] = { 42749 },	-- Strange Bedfellows

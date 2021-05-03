@@ -664,12 +664,6 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
 				}),
-				q(39763, {	-- For Whom the Fel Tolls
-					["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
-					["classes"] = { PALADIN, HUNTER, WARLOCK },
-					["races"] = { DWARF, GOBLIN },
-					["provider"] = { "n", 97360 },	-- Matthew Rabis
-				}),
 				q(47046, {	-- Frost: The Thieving Apprentice
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
