@@ -902,6 +902,11 @@ _.Zones =
 						1969,	-- TG108_Floor
 					},
 				}),
+				q(63584, {	-- A Triumphant Return
+					["sourceQuests"] = { 63590 },	-- The Vesper Rings
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
 				q(63678, {	-- Akarek Avenged
 					["sourceQuests"] = {
 						63677,	-- You Can Only Die
@@ -915,10 +920,20 @@ _.Zones =
 					["provider"] = { "n", 177962 },	-- Lady Moonberry
 					["coord"] = { 34.0, 9.65, REVENDRETH },
 				}),
+				q(63585, {	-- Blind Loyalty
+					["sourceQuests"] = { 63583 },	-- I Intend to Live Forever
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 				q(63674, {	-- By Your Leave
 					["sourceQuests"] = { 63990 },	-- The Blade in the Night
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 42.1, 23.2, MALDRAXXUS },
+				}),
+				q(63586, {	-- Compassion in Devotion
+					["sourceQuests"] = { 63585 },	-- Blind Loyalty
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 66.5, 16.5, 1707 },	-- Elysian Hold, Archon's Rise
 				}),
 				q(63646, {	-- Convoy of the Covenants
 				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
@@ -940,6 +955,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 177644 },	-- Prince Renathal
 					["coord"] = { 25.0, 27.9, 1525 },	-- Revendreth
+				}),
+				q(63589, {	-- Directing Dedication
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 24.3, 30.2, BASTION },
 				}),
 				q(63582, {	-- He Was My Student
 					["sourceQuests"] = { 63581 },	-- Step Into the Light
@@ -980,6 +1000,16 @@ _.Zones =
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
 					["provider"] = { "n", 177967 },	-- Lady Moonberry
 					["coord"] = { 35.6, 22.6, REVENDRETH },
+				}),
+				q(63588, {	-- Rebuilding Faith
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177300 },	-- Fallen Disciple Nikolon
+					["coord"] = { 24.4, 30.1, BASTION },
+				}),
+				q(63587, {	-- Reclaimable Anima
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177123 },	-- Kleia
+					["coord"] = { 24.2, 30.0, BASTION },
 				}),
 				q(64042, {	-- Rituals of Night
 					["sourceQuests"] = { 63681 },	-- Back to The Heart
@@ -1048,6 +1078,15 @@ _.Zones =
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
 					["provider"] = { "n", 165866 },	-- The Stonewright
 					["coord"] = { 34.3, 22.0, 1525 },
+				}),
+				q(63590, {	-- The Vesper Rings
+					["sourceQuests"] = {
+						63589,	-- Directing Dedication
+						63588,	-- Rebuilding Faith
+						63587,	-- Reclaimable Anima
+					},
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
 				}),
 				q(64216, {	-- Tower Knowledge
 				--	TODO: also not sure if this torghast-related quest is venthyr-only
