@@ -215,10 +215,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 				}),
-				q(37448, {	-- A Simple Plan
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110953 },	-- Master Mathias Shaw
-				}),
 				q(40643, {	-- A Summons From Moonglade
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
 					["classes"] = { DRUID },
@@ -282,12 +278,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47033,  -- Legion Threat: Suramar
 					},
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-					["classes"] = { ROGUE },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.3, 627 },
 				}),
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
@@ -1004,10 +1000,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadwarden
 				}),
-				q(44215, {	-- One More Thing...
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(41967, {	-- Out of the Darkness
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 105603 },	-- Defender Barrem
@@ -1023,11 +1015,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 					["coord"] = { 28.5, 48.9, 627 },
-				}),
-				q(37666, {	-- Picking a Fight
-					["sourceQuests"] = { 43508 },	-- The Captive Spymaster
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110793 },	-- Taoshi
 				}),
 				q(40821, {	-- Power Overwhelming
 					["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
@@ -1247,7 +1234,6 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 110,
 				}),
-			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
 				q(44411, {	-- Strange Humming Crystal
 					["provider"] = { "i", 141349 },	-- Strange Humming Crystal
 				}),
@@ -1256,12 +1242,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47032,  -- Legion Threat: Azshara
 					},
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-					["classes"] = { ROGUE },
-					["lvl"] = 110,
+					["coord"] = { 28.7, 49.9, 627 },
 				}),
 				q(47047, {	-- Survival: The Thieving Apprentice
 					["sourceQuests"] = {
@@ -1359,17 +1345,6 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.5, 48.9, 627 },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
-				}),
-				q(37689, {	-- The Imposter
-					["provider"] = { "n", 111049 },	-- Master Mathias Shaw
-					["coord"] = { 35.6, 60.0, 84 },
-					["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
-					["classes"] = { ROGUE },	-- Rogue
-					["maps"] = { 84 },	 -- Stormwind City
-					["lvl"] = 98,
-					["g"] = {
-						i(139739),	-- Chestguard of the Uncrowned
-					},
 				}),
 				q(41625, {	-- The Light's Wrath
 					["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
@@ -1524,11 +1499,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(37494, {	-- Under Cover of Darkness
-					["sourceQuests"] = { 37448 },	-- A Simple Plan
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {

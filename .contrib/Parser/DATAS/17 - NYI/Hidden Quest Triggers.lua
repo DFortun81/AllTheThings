@@ -2108,6 +2108,7 @@ _.HiddenQuestTriggers =
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault
 		q(43719),	-- Rogue Order Hall - Rare Item One Obtained (looted the Suspicious Crate toy)
+		q(46790),	-- Rogue Order Hall - triggered when completing A Hero's Weapon (artifact appearances after finishing class campaigh)
 
 		q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
 		q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed

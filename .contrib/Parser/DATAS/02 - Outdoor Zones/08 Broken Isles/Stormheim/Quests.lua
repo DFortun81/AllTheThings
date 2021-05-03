@@ -1174,7 +1174,6 @@ _.Zones =
 				q(40078),	-- A Heavy Burden
 				q(45482),	-- Arcane: Fate of the Tideskorn
 				q(46006),	-- Arkuthaz
-				q(47051),	-- Assassination: Fate of the Tideskorn
 				q(43560),	-- Audience with the Windlord
 				q(42398),	-- Awakening the Senses
 				q(42397),	-- Baron and the Huntsman
