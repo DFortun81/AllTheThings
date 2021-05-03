@@ -811,7 +811,6 @@ _.Zones =
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
 		--[[ TODO: These quests will be organized soon™
-				q(43514),	-- A Vainglorious Past
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
 				q(41167),	-- Fel Fragments
 				q(40527),	-- Finishing Touches
@@ -835,7 +834,6 @@ _.Zones =
 				q(45073),	-- Loot and Plunder!
 				q(43519),	-- Lucid Strength
 				q(38952),	-- Meticulous Precision
-				q(43462),	-- Mother Ozram
 				q(41181),	-- Narrowing Down
 				q(39921),	-- Neltharion's Lair: Rod of Azure
 				q(37928),	-- Normantis the Deposed
@@ -895,9 +893,7 @@ _.Zones =
 				q(37660),	-- The Scythe of Souls
 				q(38950),	-- The Wayward Tailor
 				q(43581),	-- The Wisdom of Patience
-				q(42887),	-- This Is Retribution
 				q(37963),	-- Those Beyond Redemption
-				q(42886),	-- To Faronaar
 				q(43489),	-- To Felblaze Ingress
 				q(42406),	-- To Tame the Beast
 				q(47064),	-- Tracking Quest

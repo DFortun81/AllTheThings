@@ -12,7 +12,6 @@ _.Zones =
 						["classes"] = { PALADIN },
 						["g"] = {
 							q(43490),	-- Aponi's Trail
-							q(42888),	-- Communication Orbs
 						},
 					}),
 					cl(ROGUE, {

@@ -38,6 +38,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
 						["maps"] = { 627 },
 					}),
+					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
+						["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, 627 },
+					}),
+					q(43488, {	-- Blood of Our Enemy
+						["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, 627 },
+					}),
 					q(44063, {	-- Bolstering Your Arsenal
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
 						["classes"] = { PALADIN },
@@ -53,6 +65,15 @@ _.ExpansionFeatures =
 							i(139693),	-- Crown of the Silver Hand
 						},
 					}),
+					q(42852, {	-- Champion: Justicar Julia Celeste
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 99995 },	-- Justicar Julia Celeste
+						["coord"] = { 50.2, 72.8, 24 },
+						["g"] = {
+							follower(755),	-- Justicar Julia Celeste
+						},
+					}),
 					q(42881, {	-- Champion: Lady Liadrin
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 						["classes"] = { PALADIN },
@@ -62,11 +83,32 @@ _.ExpansionFeatures =
 							follower(478),	-- Lady Liadrin
 						},
 					}),
+					q(42851, {	-- Champion: Vindicator Boros
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
+						["coord"] = { 49.3, 71.5, 24 },
+						["g"] = {
+							follower(479),	-- Vindicator Boros
+						},
+					}),
+					q(42888, {	-- Communication Orbs
+						["sourceQuests"] = { 42887 },	-- This Is Retribution
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
+						["coord"] = { 30.6, 44.9, 630 },
+					}),
 					q(44370, {	-- Completing Your Arsenal
 						["sourceQuests"] = { 42120 },	-- The Silver Hand
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 72.4, 24 },
+					}),
+					q(43486, {	-- Cracking the Codex
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane
+						["coord"] = { 48.4, 72.8, 24 },
 					}),
 					q(42847, {	-- Dark Storms
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
@@ -97,6 +139,12 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
+					}),
+					q(43462, {	-- Mother Ozram
+						["sourceQuests"] = { 42887 },	-- This Is Retribution
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
+						["coord"] = { 30.6, 44.9, 630 },
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
@@ -140,6 +188,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105813 },	-- Orik Trueheart
 						["coord"] = { 73.9, 49.0, 627 },
 					}),
+					q(43494, {	-- Silver Hand Knights
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
+					}),
 					q(42850, {	-- Tech It Up a Notch
 						["sourceQuests"] = { 42849 },	-- Wrath and Justice
 						["classes"] = { PALADIN },
@@ -158,6 +212,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
 					}),
+					q(42890, {	-- The Codex of Command
+						["sourceQuests"] = {
+							43462,	-- Mother Ozram
+							42888,	-- Communication Orbs
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
+					}),
 					q(42005, {	-- The End of the Saga
 						["sourceQuests"] = { 42002 }, -- To Northrend
 						["classes"] = { PALADIN },
@@ -169,6 +231,11 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 50.8, 70.9, 24 },
+						["altQuests"] = {
+							42885,	-- The Highlord's Command
+							42967,	-- The Highlord's Command
+							42968,	-- The Highlord's Command
+						},
 					}),
 					q(42773, {	-- The Light Reveals
 						["sourceQuests"] = { 42771 },	-- Keeping the Peace
@@ -199,6 +266,18 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
+					}),
+					q(42887, {	-- This Is Retribution
+						["sourceQuests"] = { 42886 },	-- To Faronaar
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109356 },	-- Vindicator Boros
+						["coord"] = { 45.9, 51.6, 630 },
+					}),
+					q(42886, {	-- To Faronaar
+						["sourceQuests"] = { 42966 },	-- The Highlord's Command
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42002, {	-- To Northrend
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
@@ -245,7 +324,6 @@ _.ExpansionFeatures =
 					}),
 					q(43534),	-- Blood of Sargeras
 					q(44218),	-- Champion Armaments
-					q(43486),	-- Cracking the Codex
 					q(43699),	-- Defenders of the World
 					q(45149),	-- Ending the Crescent Curse
 					q(44219),	-- Fate's Blessing
@@ -259,17 +337,9 @@ _.ExpansionFeatures =
 					q(45148),	-- Oath Breaker
 					q(46070),	-- Preparations Underway
 					q(45146),	-- Runic Reading
-					q(43494),	-- Silver Hand Knights
 					--]]
-					q(42890),	-- The Codex of Command
 					--[[
-					q(42885),	-- The Highlord's Command
-					q(42967, {	-- The Highlord's Command
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(42968),	-- The Highlord's Command
 					q(43540),	-- The Mind of the Enemy
-					q(42886),	-- To Faronaar
 					q(43489),	-- To Felblaze Ingress (also warrior?)
 					q(43535),	-- Translation: Danger!
 					q(46069),	-- Worthy of the Title
@@ -339,12 +409,6 @@ _.ExpansionFeatures =
 							follower(756),	-- Delas Moonfang
 						},
 					}),
-					q(42852, {	-- Champion: Justicar Julia Celeste
-						["provider"] = { "n", 99995 },		-- Justicar Julia Celeste
-						["g"] = {
-							follower(755),	-- Justicar Julia Celeste
-						},
-					}),
 					q(43701, {	-- Champion: Lothraxion
 						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
 						["g"] = {
@@ -364,12 +428,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 119545 },	-- Nerus Moonfang
 						["g"] = {
 							follower(1000),	-- Nerus Moonfang
-						},
-					}),
-					q(42851, {	-- Champion: Vindicator Boros
-						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
-						["g"] = {
-							follower(479),	-- Vindicator Boros
 						},
 					}),
 				}),

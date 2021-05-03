@@ -2075,6 +2075,7 @@ _.HiddenQuestTriggers =
 		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 		q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
+		q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first

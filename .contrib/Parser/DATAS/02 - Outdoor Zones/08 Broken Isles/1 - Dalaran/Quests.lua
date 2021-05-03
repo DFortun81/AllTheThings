@@ -302,14 +302,6 @@ _.Zones =
 						i(141356),	-- Violet Guardian's Faceguard
 					},
 				}),
-				q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
-					["sourceQuests"] = {
-						43486,	-- Cracking the Codex
-						49812,	-- Delas in Dalaran
-					},
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 110571 },	-- Delas Moonfang
-				}),
 				q(44782, {	-- Away From Prying Eyes
 					["sourceQuests"] = { 47000 },	-- The Council's Call
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -379,10 +371,6 @@ _.Zones =
 						{ "n", 101314 },	-- Alonsus Faol
 						{ "n", 110564 },	-- Alonsus Faol
 					},
-				}),
-				q(43488, {	-- Blood of Our Enemy
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 110571 },	-- Delas Moonfang
 				}),
 				q(44760, {	-- Blood On Your Hands
 					["provider"] = { "n", 115264 },	-- Illnea Bloodthorn
