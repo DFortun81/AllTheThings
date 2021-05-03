@@ -3,8 +3,7 @@
 --------------------------------------------
 
 -- TODO: fromatting
-_.Holidays = bubbleDown({["u"] = 19},
-{
+_.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 	holiday(235477, {	-- Noblegarden
 		n(QUESTS, {
 			{	--	A Tisket, a Tasket, a Noblegarden Basket [Alliance]
@@ -216,8 +215,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["g"] = {
 					{	-- Blossoming Branch
 						["itemID"] = 44792,			-- Blossoming Branch
-						["achievementID"] = 2416,	-- Hard Boiled
-						["criteriaID"] = 1,			-- Hard Boiled
+						-- ["achievementID"] = 2416,	-- Hard Boiled
+						-- ["criteriaID"] = 1,			-- Hard Boiled
 						["u"] = 19,					-- Noblegarden Filter
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
 					},
@@ -244,8 +243,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["g"] = {
 					{	-- Blossoming Branch
 						["itemID"] = 44792,			-- Blossoming Branch
-						["achievementID"] = 2416,	-- Hard Boiled
-						["criteriaID"] = 1,			-- Hard Boiled
+						-- ["achievementID"] = 2416,	-- Hard Boiled
+						-- ["criteriaID"] = 1,			-- Hard Boiled
 						["u"] = 19,					-- Noblegarden Filter
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
 					},

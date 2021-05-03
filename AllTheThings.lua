@@ -7462,6 +7462,11 @@ local fields = {
 		return t.info.name;
 	end,
 	["icon"] = function(t)
+		-- Use the custom icon if defined
+		if L["HOLIDAY_ID_ICONS"][t.holidayID] then
+			rawset(t, "icon", L["HOLIDAY_ID_ICONS"][t.holidayID]);
+			return rawget(t, "icon");
+		end
 		return t.holidayID == 235466 and 235465 or t.holidayID;
 	end,
 	["texcoord"] = function(t)

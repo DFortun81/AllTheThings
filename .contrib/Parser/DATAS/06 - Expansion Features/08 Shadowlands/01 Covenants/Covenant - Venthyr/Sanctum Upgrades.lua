@@ -230,22 +230,22 @@ _.ExpansionFeatures =
 								q(63721, {	-- Lord Garridan's Egg
 									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63720, {	-- Prince Renethal's Egg
 									["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63718, {	-- Theotar's Egg
 									["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63719, {	-- Temel's Egg
 									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 							}),
 							n(-908, {	-- Rewards

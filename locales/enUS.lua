@@ -750,6 +750,15 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
+	
+	-- Custom Icons for Holidays
+	["HOLIDAY_ID_ICONS"] = {
+		-- Examples --
+		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
+		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
+
+		[235477] = app.asset("noblegarden"),	-- Noblegarden
+	};
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###

@@ -3,11 +3,8 @@
 --------------------------------------------
 
 -- TODO: formatting
-_.Holidays = bubbleDown({["u"] = 19},
-{
-	{	-- Noblegarden
-		["holidayID"] = 235477,	-- Noblegarden
-		["u"] = 19,				-- Noblegarden Filter
+_.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
+	holiday(235477, {	-- Noblegarden
 		["g"] = {
 			n(VENDORS, {
 				["g"] = {
@@ -97,8 +94,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 									-- Other
 									{	-- Blossoming Branch
 										["itemID"] = 44792,			-- Blossoming Branch
-										["achievementID"] = 2416,	-- Hard Boiled
-										["criteriaID"] = 1,			-- Hard Boiled
+										-- ["achievementID"] = 2416,	-- Hard Boiled
+										-- ["criteriaID"] = 1,			-- Hard Boiled
 										["u"] = 19,					-- Noblegarden Filter
 										["description"] = "This item is required for the achievement \"Hard Boiled\".",
 									},
@@ -108,8 +105,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Spring Flowers
 										["itemID"] = 45073,			-- Spring Flowers
-										["achievementID"] = 2798,	-- Noble Gardener
-										["criteriaID"] = 8,			-- Shake Your Bunny-Maker [Alliance/Horde]
+										-- ["achievementID"] = 2798,	-- Noble Gardener
+										-- ["criteriaID"] = 8,			-- Shake Your Bunny-Maker [Alliance/Horde]
 										["u"] = 19,					-- Noblegarden Filter
 										["description"] = "This item is required for the achievement \"Shake Your Bunny-Maker\".",
 									},
@@ -221,8 +218,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 									-- Other
 									{	-- Blossoming Branch
 										["itemID"] = 44792,			-- Blossoming Branch
-										["achievementID"] = 2416,	-- Hard Boiled
-										["criteriaID"] = 1,			-- Hard Boiled
+										-- ["achievementID"] = 2416,	-- Hard Boiled
+										-- ["criteriaID"] = 1,			-- Hard Boiled
 										["u"] = 19,					-- Noblegarden Filter
 										["description"] = "This item is required for the achievement \"Hard Boiled\".",
 									},
@@ -232,8 +229,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Spring Flowers
 										["itemID"] = 45073,			-- Spring Flowers
-										["achievementID"] = 2798,	-- Noble Gardener
-										["criteriaID"] = 8,			-- Shake Your Bunny-Maker [Alliance/Horde]
+										-- ["achievementID"] = 2798,	-- Noble Gardener
+										-- ["criteriaID"] = 8,			-- Shake Your Bunny-Maker [Alliance/Horde]
 										["u"] = 19,					-- Noblegarden Filter
 										["description"] = "This item is required for the achievement \"Shake Your Bunny-Maker\".",
 									},
@@ -262,5 +259,5 @@ _.Holidays = bubbleDown({["u"] = 19},
 				},
 			}),
 		},
-	},
+	}),
 });

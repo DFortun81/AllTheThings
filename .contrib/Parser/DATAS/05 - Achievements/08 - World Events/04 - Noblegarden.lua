@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9962, {	-- World Events
 		["g"] = bubbleDown({["u"] = 19}, {
-			n(-10017, {	-- Noblegarden
+			holiday(235477, {	-- Noblegarden
 				ach(2576),	-- Blushing Bride
 				ach(2418, {	-- Chocoholic [Eat 100]
 					ach(2417),	-- Chocolate Lover [Eat 25]
