@@ -569,17 +569,11 @@ _.Zones =
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
 				q(45829),	-- Druid
-				q(46035, {	-- End of the Risen Threat
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
 				q(45574),	-- Fel Ingredients
 				q(45555),	-- Felbound Beasts
-				q(45627, {	-- Feltotem's Fall
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47118),	-- Free The Tormented
 				q(47119),	-- Free The Tormented
 				q(47121),	-- Free The Tormented
@@ -681,10 +675,6 @@ _.Zones =
 				q(45028),	-- The Fate of Kanrethad
 				q(42484),	-- The Firstborn Rises
 				q(43686),	-- The Fourth Horseman
-				q(45526),	-- The God-Queen's Fury
-				q(45416, {	-- The Highlord's Return
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(42537),	-- The King Rises
 				q(46666),	-- The Motherlode
 				q(45553),	-- The Nighthuntress Beckons
@@ -703,9 +693,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(42684),	-- Throwing SI:7 Off the Trail
-				q(46127, {	-- Thwarting the Twins
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
 				q(47054),	-- Touched By Fate

@@ -1715,6 +1715,24 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44052,	-- And They Will Tremble
 				}),
+				q(45486, {	-- The Reluctant Queen
+					["sourceQuests"] = {
+						45482,	-- Arcane: Fate of the Tideskorn
+						47051, 	-- Assassination: Fate of the Tideskorn
+						47049,	-- Demonology: Fate of the Tideskorn
+						47050,	-- Enhancement: Fate of the Tideskorn
+						47052,	-- Retribution: Fate of the Tideskorn
+					},
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 76.3, 50.1, 680 },
+				}),
 				q(40964, {	-- The Rift Between
 					["coord"] = { 31.4, 23.1, 680 },
 					["provider"] = { "n", 102425 },	-- Serena Windfeather

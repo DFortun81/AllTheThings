@@ -172,9 +172,6 @@ _.Zones =
 						i(30856),	-- Underworld Helm
 					},
 				}),
-				q(45415, {	-- Between Worlds
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(9397,  {	-- Birds of a Feather
 					["provider"] = { "n", 16790 },
 					["coord"] = { 27.7, 60.3, HELLFIRE_PENINSULA },
@@ -189,11 +186,6 @@ _.Zones =
 					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 					["isDaily"] = true,
 					["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
-				}),
-				q(47025, {	-- Blood: Aid of the Illidari
-					["classes"] = { DEATHKNIGHT },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10250, {	-- Bloody Vengeance
 					["sourceQuests"] = { 10230 },	-- The Battle Horn
@@ -218,10 +210,6 @@ _.Zones =
 						i(29916),	-- Ironstar Repeater
 						i(29917),	-- Landslide Buckler
 					},
-				}),
-				q(47024, {	-- Brewmaster: Aid of the Illidari
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10087, {	-- Burn It Up... For the Horde!
 					["sourceQuests"] = { 10086 },	-- Work For the Horde
@@ -260,9 +248,6 @@ _.Zones =
 						i(28063),	-- Survivalist's Wand
 					},
 				}),
-				q(45414, {	-- Confirming Suspicions
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(10134, {	-- Crimson Crystal Clue
 					["provider"] = { "i", 29476 },	-- Crimson Crystal Shard
 					["crs"] = { 19188 },	-- Raging Colossus
@@ -299,8 +284,8 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
+					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["coord"] = { 85.2, 50.1, HELLFIRE_PENINSULA },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9587,  {	-- Dark Tidings (A)
 					["provider"] = { "i", 23890 },	-- Ominous Letter
@@ -532,9 +517,6 @@ _.Zones =
 					["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45413, {	-- Gathering Information
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(10382, {	-- Go to the Front
 					["sourceQuests"] = { 10163 },	-- Mission: The Abyssal Shelf
 					["provider"] = { "n", 20232 },	-- Wing Commander Gryphongar
@@ -563,11 +545,6 @@ _.Zones =
 						i(28051),	-- Jerkin of the Untamed Spirit
 						i(28050),	-- Sacred Feather Vest
 					},
-				}),
-				q(47023, {	-- Guardian: Aid of the Illidari
-					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9608,  {	-- Heart of Rage
 					["provider"] = { "n", 17558 },	-- Caza'rez
@@ -928,16 +905,6 @@ _.Zones =
 					["provider"] = { "n", 16858 },	-- Grelag
 					["coord"] = { 60.9, 81.6, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-				}),
-				q(45412, {	-- Protection: Aid of the Illidari (Warrior)
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(47022, {	-- Protection: Aid of the Illidari (Paladin)
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9385,  {	-- Rampaging Ravagers
 					["provider"] = { "n", 16850 },	-- Gremni Longbeard
@@ -1350,10 +1317,6 @@ _.Zones =
 					["provider"] = { "n", 16827 },	-- Honor Guard Wesilow
 					["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(46314, {	-- Vengeance: Seeking Kor'vas
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10393, {	-- Vile Plans
 					["provider"] = { "i", 29590 },	-- Burning Legion Missive

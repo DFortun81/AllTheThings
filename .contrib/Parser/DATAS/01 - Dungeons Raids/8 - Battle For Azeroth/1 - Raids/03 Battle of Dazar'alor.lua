@@ -44,8 +44,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					n(-351, {	-- Boss Drops
 						i(165703),	-- Breath of Bwonsamdi
 					}),
-					ach(13286, {	-- Siege of Dazar'alor (A)
-						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor (H)
+					ach(13286, 13289, {	-- Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
+						["collectible"] = false,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu
@@ -143,8 +143,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						},
 					}),
-					ach(13287, {	-- Empire's Fall (A)
-						["hordeAchievementID"] = 13290,	-- Death's Bargain (H)
+					ach(13287, 13290, {	-- Empire's Fall (A) / Death's Bargain (H)
+						["collectible"] = false,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu
@@ -246,8 +246,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						},
 					}),
-					ach(13288, {	-- Might of the Alliance (A)
-						["hordeAchievementID"] = 13291,	-- Victory or Death (H)
+					ach(13288, 13291, {	-- Might of the Alliance (A) / Victory or Death (H)
+						["collectible"] = true,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu

@@ -247,6 +247,32 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								n(171873, {	-- Athanos
+									n(-972, {	-- Courage
+										i(182975, {	-- Ascension Calling: Mikanikos
+											["questID"] = 62223,	-- Ascension Calling: Mikanikos
+										}),
+									}),
+									n(-973, {	-- Loyalty
+									}),
+									n(-974, {	-- Wisdom
+									}),
+									n(-975, {	-- Humility
+									}),
+								}),
+								n(172333, {	-- Azaruux
+									n(-972, {	-- Courage
+										i(183794, {	-- Blueprint: Empyrean Refreshment
+											["questID"] = 62486,	-- Blueprint: Empyrean Refreshment
+										}),
+									}),
+									n(-973, {	-- Loyalty
+									}),
+									n(-974, {	-- Wisdom
+									}),
+									n(-975, {	-- Humility
+									}),
+								}),
 								n(172412, {	-- Craven Corinth
 									crit(2, {	-- Defeat Craven Corinth with Spiritforged Aegis
 										["achievementID"] = 14851,	-- Bastion of Protection
@@ -377,6 +403,26 @@ _.ExpansionFeatures =
 										i(178188),	-- Reverent Watcher's Helm
 									}),
 								}),
+								n(172099, {	-- Mort
+									["crs"] = {	-- TODO: possibly replace with "Mad Mortimer" header for clarity, this one is less clear than Alderyn&Myn'ir
+										172101,	-- Ortim
+										172102,	-- Imer
+									},
+									["g"] = {
+										n(-972, {	-- Courage
+											i(184414, {	-- Blueprint: Artisan Tool Belt
+												["questID"] = 62981,	-- Blueprint: Artisan Tool Belt
+											}),
+										}),
+										n(-973, {	-- Loyalty
+											i(180761),	-- Phalynx of Loyalty (MOUNT!)
+										}),
+										n(-974, {	-- Wisdom
+										}),
+										n(-975, {	-- Humility
+										}),
+									},
+								}),
 								n(172410, {	-- Nuuminuuru
 									n(-972, {	-- Courage
 										q(60907, {	-- Ascension Calling: Kleia
@@ -446,8 +492,24 @@ _.ExpansionFeatures =
 										i(178193),	-- Reverent Watcher's Shoulders
 									}),
 								}),
+								n(172411, {	-- Thran'tiok
+									n(-972, {	-- Courage
+										i(184349, {	-- Blueprint: Vial of Lichfrost
+											["questID"] = 62997,	-- Blueprint: Vial of Lichfrost
+										}),
+									}),
+									n(-973, {	-- Loyalty
+										i(181238, {	-- Blueprint: Charm of Focus
+											["questID"] = 63000,	-- Blueprint: Charm of Focus
+										}),
+									}),
+									n(-974, {	-- Wisdom
+									}),
+									n(-975, {	-- Humility
+									}),
+								}),
 								--[[
-								n(, {	--
+								n(, {	-- 
 									n(-972, {	-- Courage
 									}),
 									n(-973, {	-- Loyalty
@@ -463,21 +525,17 @@ _.ExpansionFeatures =
 								["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 								["crs"] = { 168430 },	-- Dactylis
 								["g"] = {
-									q(62981, {	-- Blueprint: Artisan Tool Belt
-										["provider"] = { "i", 184414 },	-- Blueprint: Artisan Tool Belt
-									}),
-									q(63000, {	-- Blueprint: Charm of Focus
-										-- Rewards: spell ?? (Crafting: Charm of Focus), unlocking ascension crafting recipe
-										["description"] = "From defeating Thran'tiok on 'Loyalty' difficulty.",
-										["provider"] = { "i", 181238 },	-- Blueprint: Charm of Fortitude
-									}),
-									q(62997, {	-- Blueprint: Vial of Lichfrost
-										-- Thran'tiok on Courage
-										["provider"] = { "i", 184349 },	-- Blueprint: Vial of Lichfrost
+									q(62976, {	-- Artisan Tool Belt
+										["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184578 },	-- Artisan Tool Belt
 									}),
 									q(60945, {	-- Deep Echo Trident
 										["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
 										["provider"] = { "i", 181499 },	-- Deep Echo Trident
+									}),
+									q(61714, {	-- Gilded Abacus
+										["sourceQuests"] = { 62971 },	-- Blueprint: Gilded Abacus
+										["provider"] = { "i", 184580 },	-- Gilded Abacus
 									}),
 									q(60497, {	-- Herald's Footpads
 										-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
@@ -490,7 +548,7 @@ _.ExpansionFeatures =
 										["provider"] = { "i", 184478 },	-- Phial of Serenity
 									}),
 									q(62998, {	-- Ring of Warding
-									--	["sourceQuests"] = { 60975 },	-- Blueprint: Ring of Warding
+										["sourceQuests"] = { 62928 },	-- Blueprint: Ring of Warding
 										["provider"] = { "i", 184481 },	-- Ring of Warding
 									}),
 									q(62995, {	-- Spiritforged Aegis
@@ -498,11 +556,11 @@ _.ExpansionFeatures =
 										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 									}),
 									q(62483, {	-- Steward Mail Pouch
-										-- Quest starter created with Ascension crafting
+										["sourceQuests"] = { 62970 },	-- Blueprint: Steward Mail Pouch
 										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 									}),
 									q(62996, {	-- Vial of Lichfrost
-										-- Quest starter created with Ascension crafting
+										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
 										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
 									}),
 									i(180594),	-- Calloused Bone
@@ -512,6 +570,7 @@ _.ExpansionFeatures =
 									i(181145),	-- Charm of Persistence
 									i(181846),	-- Charm of Quickness
 									i(180477),	-- Elysian Feathers
+									i(183793),	-- Empyrean Refreshment
 									i(180579),	-- Herald's Footpads
 									i(180595),	-- Nightforged Steel
 								},
@@ -641,9 +700,79 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-944, {	-- Tier 2: Sacred Trials
-								q(62223, {	-- Ascension Calling: Mikanikos
-									["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
+							--	TODO: kept descriptions for athanos/mortimer/thran'tiok although i'm not sure about them.  i *had* fulfilled all those requirements before i upgraded to tier 2, but a guide i read just said "unlocked after you upgrade to tier 2" so i'm not sure if that's the only thing necessary
+								q(61371, {	-- Athanos
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
 								}),
+								q(61373, {	-- Azaruux, the Realm Ender
+									["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								q(61372, {	-- Back to Him
+									["sourceQuests"] = { 61478 },	-- Humble Beginnings
+									["provider"] = { "n", 175295 },	-- Forgelite Sophone
+									["coord"] = { 51.6, 80.9, BASTION },
+								}),
+								q(62052, {	-- Exiled by Paranoia
+									["sourceQuests"] = { 61367 },	-- Thran'tiok
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								}),
+								q(61436, {	-- Field Trip
+									["sourceQuests"] = { 61363 },	-- Mad Mortimer
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								}),
+								q(61368, {	-- Filching Phylacteries
+									["sourceQuests"] = { 62053 },	-- Necromantic Power
+									["provider"] = { "n", 173495 },	-- Karaxi the Defector
+									["coord"] = { 59.7, 38.0, MALDRAXXUS },
+								}),
+								q(61478, {	-- Humble Beginnings
+									["sourceQuests"] = { 61371 },	-- Athanos
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
+								}),
+								q(61363, {	-- Mad Mortimer
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+								q(62053, {	-- Necromantic Power
+									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
+									["provider"] = { "n", 173495 },	-- Karaxi the Defector
+									["coord"] = { 53.8, 48.8, MALDRAXXUS },
+								}),
+								q(61364, {	-- Oozing with Opportunity
+									["sourceQuests"] = { 61436 },	-- Field Trip
+									["provider"] = { "n", 172141 },	-- Mad Mortimer
+									["coord"] = { 59.2, 71.9, MALDRAXXUS },
+								}),
+								q(63172, {	-- Path of Ascension: Splinterbark Nightmare
+								--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
+									["provider"] = { "n", 168485 },	-- Apolon
+									["isWeekly"] = true,
+									["coord"] = { 28.1, 41.7, 1707 },	-- Archon's Rise
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
+								q(61367, {	-- Thran'tiok
+									-- TODO: not 100% sure of the requirements
+									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+									["provider"] = { "n", 168430 },	-- Dactylis
+									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
+								}),
+
+
+
+
+
 								q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
 									-- ["sourceQuests"] = {  },	-- TODO: ?
 									["provider"] = { "n", 168485 },	-- Apolon
@@ -679,73 +808,6 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(184812),	-- Apolon's Bounty
 									},
-								}),
-								q(61373, {	-- Azaruux, the Realm Ender
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating 9 'Courage' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61371, {	-- Athanos
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61478, {	-- Humble Beginnings
-									["sourceQuests"] = { 61371 },	-- Athanos
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-									["g"] = {
-										i(181471),	-- Humility's Guard (provided for quest)
-									},
-								}),
-								q(61372, {	-- Back to Him
-									["sourceQuests"] = { 61478 },	-- Humble Beginnings
-									["provider"] = { "n", 175295 },	-- Forgelite Sophone
-									["coord"] = { 51.6, 80.9, BASTION },
-								}),
-								q(61363, {	-- Mad Mortimer
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61436, {	-- Field Trip
-									["sourceQuests"] = { 61363 },	-- Mad Mortimer
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(61364, {	-- Oozing with Oppotunity
-									["sourceQuests"] = { 61436 },	-- Field Trip
-									["provider"] = { "n", 172141 },	-- Mad Mortimer
-									["coord"] = { 59.2, 71.9, MALDRAXXUS },
-								}),
-								q(61367, {	-- Thran'tiok
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(62052, {	-- Exiled by Paranoia
-									["sourceQuests"] = { 61367 },	-- Thran'tiok
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(62053, {	-- Necromantic Power
-									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
-									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 53.8, 48.8, MALDRAXXUS },
-								}),
-								q(61368, {	-- Filching Phylacteries
-									["sourceQuests"] = { 62053 },	-- Necromantic Power
-									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 59.7, 38.0, MALDRAXXUS },
-								}),
-								n(-908, {	-- Rewards
-									i(180761, {	-- Phalynx of Loyalty
-										["description"] = "Defeat Mad Mortimer on 'Loyalty' difficulty.",
-									}),
 								}),
 							}),
 							n(-945, {	-- Tier 3: Continued Training

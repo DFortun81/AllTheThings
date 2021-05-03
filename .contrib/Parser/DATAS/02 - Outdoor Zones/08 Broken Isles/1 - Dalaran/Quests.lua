@@ -108,12 +108,10 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45864, {	-- A Gift From the Six
 					["sourceQuests"] = { 46200 },	-- The Matter Resolved... For Now...
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						PALADIN,
 						PRIEST,
@@ -121,8 +119,8 @@ _.Zones =
 						MONK,
 						DRUID
 					},
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45862, {	-- A Gift From the Six
 					["sourceQuests"] = { 46340 },	-- The Gates Are Closed
@@ -134,8 +132,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45842, {	-- A Gift From the Six
 					["sourceQuests"] = { 45841 },	-- A Triumphant Report
@@ -145,12 +142,11 @@ _.Zones =
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["coord"] = { 28.5, 48.9, 627 },
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45866, {	-- A Gift From the Six
 					["sourceQuests"] = { 45193 },	-- One Step Behind
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						DRUID,	-- Balance
 						HUNTER,	-- Marksmanship
@@ -158,12 +154,11 @@ _.Zones =
 						PRIEST,	-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45861, {	-- A Gift From the Six
 					["sourceQuests"] = { 45127 },	-- Fel-Crossed Lovers
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						DRUID,			-- Feral
 						DEATHKNIGHT,	-- Unholy
@@ -172,10 +167,12 @@ _.Zones =
 						SHAMAN,			-- Elemental
 						WARRIOR,		-- Fury
 					},
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["sourceQuests"] = { 45843 },	-- Dark Omens
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45863, {	-- A Gift From the Six
+					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -184,10 +181,8 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.8, 48.8, 627 },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(44099, {	-- A Mutual Friend
 					["sourceQuests"] = { 40823 },	-- Rebuilding the Council
@@ -219,10 +214,6 @@ _.Zones =
 				q(42866, {	-- A Sign From The Sky
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-				}),
-				q(37448, {	-- A Simple Plan
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 				}),
 				q(40643, {	-- A Summons From Moonglade
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
@@ -271,7 +262,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
-					["lvl"] = 110,
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
 						47032,	-- Legion Threat: Azshara
@@ -281,18 +271,19 @@ _.Zones =
 						{ "n", 105081 },	-- Archmage Kalec
 						{ "n", 115467 },	-- Archmage Kalec
 					},
+					["coord"] = { 28.7, 49.9, 627 },
 				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
 						47033,  -- Legion Threat: Suramar
 					},
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-					["classes"] = { ROGUE },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.3, 627 },
 				}),
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
@@ -346,7 +337,6 @@ _.Zones =
 						47058,	-- Outlaw: The Folly of Levia laurence
 						47057,	-- Unholy: The Folly of Levia laurence
 					},
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						DRUID,			-- Feral
 						DEATHKNIGHT,	-- Unholy
@@ -355,23 +345,23 @@ _.Zones =
 						SHAMAN,			-- Elemental
 						WARRIOR,		-- Fury
 					},
-					["lvl"] = 110,
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
 						44821,	-- In Dire Need
 					},
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 90418 },		-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera (2 versions)
 					},
-					["classes"] = { HUNTER },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45415, {	-- Between Worlds
 					["sourceQuests"] = { 45414 },	-- Confirming Suspicions
-					["provider"] = { "n", 117042 },	-- Prophet Velen
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -380,8 +370,8 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["coord"] = { 74.3, 45.6, 627 },
-					["lvl"] = 110,
+					["provider"] = { "n", 117042 },	-- Prophet Velen
+					["coord"] = { 74.8, 45.6, 627 },
 				}),
 				q(40710, {	-- Blade in Twilight
 					["classes"] = { PRIEST },
@@ -403,24 +393,24 @@ _.Zones =
 						47030,  -- Legion Threat: Dalaran Infiltration
 						44821,	-- In Dire Need
 					},
+					["classes"] = { DEATHKNIGHT },
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["classes"] = { DEATHKNIGHT },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 49.5, 627 },
 				}),
 				q(47024, {	-- Brewmaster: Aid of the Illidari
 					["sourceQuests"] = {
 						47030,  -- Legion Threat: Dalaran Infiltration
 						44821,	-- In Dire Need
 					},
+					["classes"] = { MONK },
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["classes"] = { MONK },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 49.5, 627 },
 				}),
 				q(40392, {	-- Call of the Marksman
 					["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
@@ -444,7 +434,6 @@ _.Zones =
 				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
-					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -453,8 +442,8 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["coord"] = { 51.9, 20.1, 627 },
-					["lvl"] = 110,
+					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
+					["coord"] = { 52.0, 19.6, 627 },
 				}),
 				q(43486, {	-- Cracking the Codex
 					["classes"] = { PALADIN },
@@ -493,19 +482,6 @@ _.Zones =
 					["coord"] = { 57.9, 72.6, 629 },
 					["lvl"] = 110,
 				}),
-				q(45843, {	-- Dark Omens
-					["sourceQuests"] = { 45415 },	-- Between Worlds
-					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["classes"] = {
-						DEATHKNIGHT,	-- Blood
-						DEMONHUNTER,	-- Vengeance
-						DRUID,			-- Guardian
-						MONK,			-- Brewmaster
-						PALADIN,		-- Protection
-						WARRIOR,		-- Protection
-					},
-					["lvl"] = 110,
-				}),
 				q(42125, {	-- Dark Whispers
 					["sourceQuests"] = {
 						40623,	-- The Dark Riders
@@ -542,21 +518,21 @@ _.Zones =
 						47031,	-- Legion Threat: Highmountain
 						44821,	-- In Dire Need
 					},
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = { WARLOCK },
-					["coord"] = { 28.4, 48.9, 627 },
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(47020, {	-- Discipline: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
 						44821,	-- In Dire Need
 					},
+					["classes"] = { PRIEST },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { PRIEST },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(41220, {	-- Down to Azsuna
 					["coord"] = { 72.0, 45.4, 627 },
@@ -576,12 +552,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47035,  -- Legion Threat: The Missing Mage
 					},
+					["classes"] = { SHAMAN },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { SHAMAN },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(47050, {	-- Enhancement: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -624,12 +600,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47035,  -- Legion Threat: The Missing Mage
 					},
+					["classes"] = { DRUID },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { DRUID },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(43100, {	-- Finding the Scepter
 					["sourceQuests"] = {
@@ -652,7 +628,6 @@ _.Zones =
 					},
 					["classes"] = { MAGE },
 					["coord"] = { 22.2, 39.6, 635 },
-					["lvl"] = 110,
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
@@ -684,12 +659,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
-				}),
-				q(39763, {	-- For Whom the Fel Tolls
-					["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
-					["classes"] = { PALADIN, HUNTER, WARLOCK },
-					["races"] = { DWARF, GOBLIN },
-					["provider"] = { "n", 97360 },	-- Matthew Rabis
 				}),
 				q(47046, {	-- Frost: The Thieving Apprentice
 					["sourceQuests"] = {
@@ -725,12 +694,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47035,  -- Legion Threat: The Missing Mage
 					},
+					["classes"] = { WARRIOR },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { WARRIOR },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45413, {	-- Gathering Information
 					["sourceQuests"] = {
@@ -741,7 +710,6 @@ _.Zones =
 						47022,	-- Protection: Aid of the Illidari
 						46314,	-- Vengeance: Seeking Kor'vas
 					},
-					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -750,8 +718,8 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["coord"] = { 51.9, 20.1, 627 },
-					["lvl"] = 110,
+					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
+					["coord"] = { 52.0, 19.6, 627 },
 				}),
 				q(46744, {	-- Greater Power for Greater Threats
 					["u"] = REMOVED_FROM_GAME,
@@ -810,24 +778,24 @@ _.Zones =
 						44821,	-- In Dire Need
 						47027,  -- Legion Threat: Val'sharah
 					},
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { PALADIN },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(46078, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
 						47027,  -- Legion Threat: Val'sharah
 					},
+					["classes"] = { PRIEST },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { PRIEST },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(42774, {	-- Hope Prevails
 					["classes"] = { PALADIN },
@@ -861,7 +829,6 @@ _.Zones =
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
 					["coord"] = { 22.5, 39.2, 627 },
-					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
 					["u"] = REMOVED_FROM_GAME,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
@@ -881,10 +848,16 @@ _.Zones =
 				}),
 				q(45906, {	-- Jarod's Gift
 					["sourceQuests"] = { 46035 },	-- End of the Risen Threat
-					["classes"] = { PALADIN, PRIEST, SHAMAN, DRUID },
-					["races"] = ALLIANCE_ONLY,
+						["classes"] = {
+							DRUID,		-- Restoration
+							PALADIN,	-- Holy
+							MONK,		-- Mistweaver
+							PRIEST,		-- Holy
+							SHAMAN,		-- Restoration
+						},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 28.5, 48.9, 627 },
+					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(38907, {	-- Keepers of the Hammer
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
@@ -899,9 +872,17 @@ _.Zones =
 				}),
 				q(45905, {	-- Kruul's Gift
 					["sourceQuests"] = { 45416 },	-- The Highlord's Return
-					["races"] = ALLIANCE_ONLY,
+					["classes"] = {
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
+					},
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 28.5, 49.5, 627 },
+					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(46074, {	-- Leather to Legendary
 					["sourceQuests"] = { 46083 },	-- A Few Things First
@@ -977,18 +958,24 @@ _.Zones =
 						47027,  -- Legion Threat: Val'sharah
 						44821,	-- In Dire Need
 					},
+					["classes"] = { MONK },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { MONK },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 28.5, 48.9, 627 },
+					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(40384, {	-- Needs of the Hunters
 					["classes"] = { HUNTER },
@@ -1013,10 +1000,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadwarden
 				}),
-				q(44215, {	-- One More Thing...
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(41967, {	-- Out of the Darkness
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 105603 },	-- Defender Barrem
@@ -1026,17 +1009,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47035,  -- Legion Threat: The Missing Mage
 					},
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { ROGUE },
-					["lvl"] = 110,
-				}),
-				q(37666, {	-- Picking a Fight
-					["sourceQuests"] = { 43508 },	-- The Captive Spymaster
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110793 },	-- Taoshi
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(40821, {	-- Power Overwhelming
 					["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
@@ -1072,14 +1050,14 @@ _.Zones =
 						47030,  -- Legion Threat: Dalaran Infiltration
 						44821,	-- In Dire Need
 					},
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["classes"] = { PALADIN },
+					["coord"] = { 28.5, 49.5, 627 },
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
-					["lvl"] = 110,
 					["sourceQuests"] = {
 						47030,	-- Legion Threat: Dalaran Inflitration
 						44821,	-- In Dire Need
@@ -1089,6 +1067,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
+					["coord"] = { 28.5, 49.5, 627 },
 				}),
 				q(43470, {	-- Pruning the Garden
 					["classes"] = { ROGUE },
@@ -1126,24 +1105,24 @@ _.Zones =
 						47027,  -- Legion Threat: Val'sharah
 						44821,	-- In Dire Need
 					},
+					["classes"] = { DRUID },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { DRUID },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(47003, {	-- Restoration: The Bradensbrook Investigation (Shaman version)
 					["sourceQuests"] = {
 						47027,  -- Legion Threat: Val'sharah
 						44821,	-- In Dire Need
 					},
+					["classes"] = { SHAMAN },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { SHAMAN },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(47052, {	-- Retribution: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -1255,7 +1234,6 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 110,
 				}),
-			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
 				q(44411, {	-- Strange Humming Crystal
 					["provider"] = { "i", 141349 },	-- Strange Humming Crystal
 				}),
@@ -1264,12 +1242,12 @@ _.Zones =
 						44821,	-- In Dire Need
 						47032,  -- Legion Threat: Azshara
 					},
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-					["classes"] = { ROGUE },
-					["lvl"] = 110,
+					["coord"] = { 28.7, 49.9, 627 },
 				}),
 				q(47047, {	-- Survival: The Thieving Apprentice
 					["sourceQuests"] = {
@@ -1355,21 +1333,18 @@ _.Zones =
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 				}),
 				q(45902, {	-- The Imp Mother's Gift
-					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(37689, {	-- The Imposter
-					["provider"] = { "n", 111049 },	-- Master Mathias Shaw
-					["coord"] = { 35.6, 60.0, 84 },
-					["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
-					["classes"] = { ROGUE },	-- Rogue
-					["maps"] = { 84 },	 -- Stormwind City
-					["lvl"] = 98,
-					["g"] = {
-						i(139739),	-- Chestguard of the Uncrowned
+					["sourceQuests"] = { 46065 },	-- An Impossible Foe
+					["classes"] = {
+						DEATHKNIGHT,	-- Unholy
+						DRUID,			-- Feral
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
 					},
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.5, 48.9, 627 },
+					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(41625, {	-- The Light's Wrath
 					["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
@@ -1525,22 +1500,17 @@ _.Zones =
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-				q(37494, {	-- Under Cover of Darkness
-					["sourceQuests"] = { 37448 },	-- A Simple Plan
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98100 },	-- Taoshi
-				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
 						47035,  -- Legion Threat: The Missing Mage
 					},
+					["classes"] = { DEATHKNIGHT },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { DEATHKNIGHT },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(43341, {	-- Uniting the Isles
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -1568,6 +1538,7 @@ _.Zones =
 						{ "n", 90431 },		-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
+					["coord"] = { 28.5, 49.5, 627 },
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
@@ -1617,12 +1588,12 @@ _.Zones =
 						47031,	-- Legion Threat: Highmountain
 						44821,	-- In Dire Need
 					},
+					["classes"] = { MONK },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["classes"] = { MONK },
-					["lvl"] = 110,
+					["coord"] = { 28.5, 48.9, 627 },
 				}),
 				q(44195, {	-- Workorders for Armaments
 					["classes"] = { ROGUE },

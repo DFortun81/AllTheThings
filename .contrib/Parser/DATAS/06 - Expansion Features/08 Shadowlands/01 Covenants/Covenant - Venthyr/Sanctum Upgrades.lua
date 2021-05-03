@@ -522,6 +522,7 @@ _.ExpansionFeatures =
 											}),
 											i(181780),	-- An Undelivered Tradesman's Shipment
 											i(180962),	-- Sterling-Silver Cudgel
+											i(181779),	-- A "Wrapped" Weapon
 											i(181315),	-- Bloodfeaster Spiderling
 											i(180959),	-- Dredger Anklebiter
 											i(180964),	-- Ember Court Barrier
