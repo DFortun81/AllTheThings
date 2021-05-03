@@ -3101,7 +3101,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 					tinsert(info, { right = spec_label });
 				elseif sourceID then
-					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });		-- L["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot."
+					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
 				end
 			end
 
@@ -3412,7 +3412,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
 				-- print("#entries",#entries);
-				tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
+				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
 				for i=1,containCount do
 					item = entries[i];
@@ -3666,8 +3666,8 @@ app.BuildCost = function(group)
 	-- Gold cost currently ignored
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
-				["text"] = L["COST"],		-- L["COST"] = "Cost"
-				["description"] = L["COST_DESC"],		-- L["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing"
+				["text"] = L["COST"],
+				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["g"] = { },
 			};
@@ -11253,15 +11253,15 @@ function app:CreateMiniListForGroup(group)
 				end
 				if #g > 0 then
 					table.insert(popout.data.g, {
-						["text"] = L["SHARED_APPEARANCES_LABEL"],		-- L["SHARED_APPEARANCES_LABEL"] = "Shared Appearances"
-						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],		-- L["SHARED_APPEARANCES_LABEL_DESC"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected."
+						["text"] = L["SHARED_APPEARANCES_LABEL"],
+						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g
 					});
 				else
 					table.insert(popout.data.g, {
-						["text"] = L["UNIQUE_APPEARANCE_LABEL"],		-- L["UNIQUE_APPEARANCE_LABEL"] = "Unique Appearance"
-						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],		-- L["UNIQUE_APPEARANCE_LABEL_DESC"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance."
+						["text"] = L["UNIQUE_APPEARANCE_LABEL"],
+						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["collectible"] = true,
 					});
@@ -11928,7 +11928,7 @@ local function RowOnClick(self, button)
 								Atr_SearchAH(L["TITLE"], missingItems, LE_ITEM_CLASS_ARMOR);
 								return true;
 							end
-							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);		-- L["AH_SEARCH_NO_ITEMS_FOUND"] = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search."
+							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
 						else
 							local name = reference.name;
 							if name then
@@ -11938,7 +11938,7 @@ local function RowOnClick(self, button)
 								Atr_Search_Onclick ();
 								return true;
 							end
-							app.print(L["AH_SEARCH_BOE_ONLY"]);		-- L["AH_SEARCH_BOE_ONLY"] = "Only Bind on Equip items can be found using this search."
+							app.print(L["AH_SEARCH_BOE_ONLY"]);
 						end
 						return true;
 					elseif TSMAPI and TSMAPI.Auction then
@@ -11950,13 +11950,13 @@ local function RowOnClick(self, button)
 									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
 									if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
 								end
-								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],		-- L["TSM_WARNING_1"] = "Running this command can potentially destroy your existing TSM settings by reassigning items to the "; L["TSM_WARNING_2"] = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?"
+								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 								function()
 									TSMAPI.Groups:CreatePreset(itemList);
-									app.print(L["PRESET_UPDATE_SUCCESS"]);		-- L["PRESET_UPDATE_SUCCESS"] = "Updated the preset successfully."
+									app.print(L["PRESET_UPDATE_SUCCESS"]);
 									if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
-										print(L["SHOPPING_OP_MISSING_1"]);		-- L["SHOPPING_OP_MISSING_1"] = "The preset is missing a 'Shopping' Operation assignment."
-										print(L["SHOPPING_OP_MISSING_2"]);		-- L["SHOPPING_OP_MISSING_2"] = "Type '/tsm operations' to create or assign one."
+										print(L["SHOPPING_OP_MISSING_1"]);
+										print(L["SHOPPING_OP_MISSING_2"]);
 									end
 								end);
 								return true;
@@ -11973,7 +11973,7 @@ local function RowOnClick(self, button)
 						return true;
 					else
 						if reference.g and #reference.g > 0 and not reference.link then
-							app.print(L["AUCTIONATOR_GROUPS"]);		-- L["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator."
+							app.print(L["AUCTIONATOR_GROUPS"]);
 							return true;
 						else
 							-- Attempt to search manually with the link.
@@ -11987,7 +11987,7 @@ local function RowOnClick(self, button)
 				elseif TSMAPI_FOUR and false then
 					if reference.g and #reference.g > 0 then
 						if true then
-							app.print(L["TSM4_ERROR"]);		-- L["TSM4_ERROR"] = "TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!"
+							app.print(L["TSM4_ERROR"]);
 							return true;
 						end
 						local missingItems = SearchForMissingItems(reference);
@@ -12224,7 +12224,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
 		elseif reference.questID and reference.retries then
-			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);		-- L["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. "
+			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 		end
 		if reference.lvl then
 			local minlvl;
@@ -12267,15 +12267,15 @@ RowOnEnter = function (self)
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
-			local msg = L["MINUMUM_STANDING"]	-- L["MINUMUM_STANDING"] = "Requires a minimum standing of"
+			local msg = L["MINUMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."		-- L["_WITH_"] = " with "
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
 			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
 			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
-			local msg = L["MAXIMUM_STANDING"]	-- L["MAXIMUM_STANDING"] = "Requires a standing lower than"
+			local msg = L["MAXIMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
 			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
@@ -12284,9 +12284,9 @@ RowOnEnter = function (self)
 			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
 			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
-			local msg = L["MIN_MAX_STANDING"]		-- L["MIN_MAX_STANDING"] = "Requires a standing between"
+			local msg = L["MIN_MAX_STANDING"]
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]		-- L["_AND"] = " and"
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 			GameTooltip:AddLine(msg);
@@ -12318,7 +12318,7 @@ RowOnEnter = function (self)
 				else
 					str = "";
 				end
-				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",		-- L["COORDINATES_STRING"] = "Coordinates"
+				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
 			end
@@ -12337,7 +12337,7 @@ RowOnEnter = function (self)
 					local name = GetItemInfo(providerID)
 					providerString = name or 'Item #'..providerID
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');		-- L["PROVIDERS"] = "Provider(s)"
+				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');
 				counter = counter + 1;
 			end
 		end
@@ -12447,12 +12447,12 @@ RowOnEnter = function (self)
 				end
 			end
 		end
-		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
-		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);		-- L["COMPLETED_DAILY"] = "This can be completed daily."
-		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);		-- L["COMPLETED_WEEKLY"] = "This can be completed weekly."
-		elseif reference.isMontly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);		-- L["COMPLETED_MONTHLY"] = "This can be completed monthly."
-		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);		-- L["COMPLETED_YEARLY"] = "This can be completed yearly."
-		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end		-- L["COMPLETED_MULTIPLE"] = "This can be repeated multiple times."
+		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
+		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
+		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
+		elseif reference.isMontly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
+		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
+		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
 		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if app.Settings:GetTooltipSetting("iconPath") then
 				GameTooltip:AddDoubleLine("Icon", reference.icon);
@@ -12499,7 +12499,7 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.criteriaID and reference.achievementID then
-			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));		-- L["CRITERIA_FOR"] = "Criteria for"
+			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 		end
 		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
 		if app.Settings:GetTooltipSetting("Progress") then
@@ -12540,7 +12540,7 @@ RowOnEnter = function (self)
 
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
 						if totalItems > 0 then
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");		-- L["LOOT_TABLE_CHANCE"] = "Loot Table Chance"
+							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
 						else
 							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
 						end
@@ -12570,7 +12570,7 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local chance = (1 / specHits[bestSpecID]) * 100;
 								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);		-- L["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance"; L["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance"
+								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -12586,7 +12586,7 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
 								if totalItems > 0 then
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);		-- L["BONUS_ROLL"] = Bonus Roll"
+									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
 								else
 									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
 								end
@@ -12601,7 +12601,7 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect then
 			local customCollectEx;
-			local requires = L["REQUIRES"];		-- L["REQUIRES"] = "Requires"
+			local requires = L["REQUIRES"];
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
 				if not app.CurrentCharacter.CustomCollects[c] then
@@ -12680,7 +12680,7 @@ RowOnEnter = function (self)
 
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(L["THIS_IS_BREADCRUMB"]);		-- L["THIS_IS_BREADCRUMB"] = "This is a breadcrumb quest."
+			GameTooltip:AddLine(L["THIS_IS_BREADCRUMB"]);
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -12700,17 +12700,17 @@ RowOnEnter = function (self)
 				end
 				if isBreadcrumbAvailable then
 					-- The character is able to accept the breadcrumb quest without Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);		-- L["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:"
+					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
 				else
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);		-- L["BREADCRUMB_PARTYSYNC_2"] = "This may be obtained via Party Sync with another character that has not completed any of these quests:"
+					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);
 				end
 				for i,nquest in ipairs(nextq) do
 					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. nquest.text);
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
-				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);		-- L["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest."
+				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
 			end
 		end
 
@@ -12911,8 +12911,8 @@ local function UpdateWindow(self, force, got)
 					-- print("any data",#self.Container,#self.rowData,#self.data)
 					if #self.rowData < 2 then
 						tinsert(self.rowData, {
-							["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
-							["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+							["text"] = L["NO_ENTRIES"],
+							["description"] = L["NO_ENTRIES_DESC"],
 							["collectible"] = 1,
 							["collected"] = 1,
 							["back"] = 0.7
@@ -13468,7 +13468,7 @@ function app:GetDataCache()
 
 		-- Yourself.
 		table.insert(g, app.CreateUnit("player", {
-			["description"] = L["DEBUG_LOGIN"],		-- L["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode."
+			["description"] = L["DEBUG_LOGIN"],
 			["races"] = { app.RaceIndex },
 			["c"] = { app.ClassIndex },
 			["r"] = app.FactionID,
@@ -13497,9 +13497,9 @@ function app:GetDataCache()
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
-		allData.text = L["TITLE"] .. " (Unsorted)";		-- L["UNSORTED_2"] = " (Unsorted)"
-		allData.title = L["UNSORTED_1"];		-- L["UNSORTED_1"] = "Unsorted"
-		allData.description = L["UNSORTED_DESC"];		-- L["UNSORTED_DESC"] = "This data hasn't been implemented yet."
+		allData.text = L["TITLE"] .. " (Unsorted)";
+		allData.title = L["UNSORTED_1"];
+		allData.description = L["UNSORTED_DESC"];
 		allData.visible = true;
 		allData.progress = 0;
 		allData.total = 0;
@@ -13511,8 +13511,8 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.NeverImplemented;
-			db.text = L["NEVER_IMPLEMENTED"];		-- L["NEVER_IMPLEMENTED"] = "Never Implemented"
-			db.description = L["NEVER_IMPLEMENTED_DESC"];		-- L["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players"
+			db.text = L["NEVER_IMPLEMENTED"];
+			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			table.insert(g, db);
 		end
 
@@ -13521,8 +13521,8 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.HiddenQuestTriggers;
-			db.text = L["HIDDEN_QUEST_TRIGGERS"];		-- L["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers"
-			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];		-- L["HIDDEN_QUEST_TRIGGERS_DESC"] = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes"
+			db.text = L["HIDDEN_QUEST_TRIGGERS"];
+			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 			table.insert(g, db);
 		end
 
@@ -13532,7 +13532,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Unsorted;
 			db.expanded = false;
 			db.text = L["UNSORTED_1"];
-			db.description = L["UNSORTED_DESC_2"];		-- L["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT"
+			db.description = L["UNSORTED_DESC_2"];
 			table.insert(g, db);
 		end
 		BuildGroups(allData, allData.g);
@@ -14077,7 +14077,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 					end
 
-					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = L["HOLYDAY_DESC"] }));		-- L["HOLYDAY_DESC"] = "A specific holiday may need to be active for you to complete the referenced Things within this section."
+					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = L["HOLYDAY_DESC"] }));
 				end
 
 				-- Check for timewalking difficulty objects
@@ -14179,7 +14179,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							end
 						end
 						if completed and other then
-							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);		-- L["DIFF_COMPLETED_1"] = "You have collected everything from this difficulty. Switch to "; L["DIFF_COMPLETED_2"] = " instead."
+							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
 						end
 					end
 				end
@@ -14207,16 +14207,16 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					app.report();
 				end
 				self.data = app.CreateMap(mapID, {
-					['text'] = L["MINI_LIST"],		-- L["MINI_LIST"] = "Mini List"
+					['text'] = L["MINI_LIST"],
 					['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp",
-					["description"] = L["MINI_LIST_DESC"],		-- L["MINI_LIST_DESC"] = "This list contains the relevant information for your current zone, which cannot be found in the ATT database"
+					["description"] = L["MINI_LIST_DESC"],
 					['visible'] = true,
 					['expanded'] = true,
 					['g'] = {
 						{
-							['text'] = L["UPDATE_LOCATION_NOW"],		-- L["UPDATE_LOCATION_NOW"] = "Update Location Now"
+							['text'] = L["UPDATE_LOCATION_NOW"],
 							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-							['description'] = L["UPDATE_LOCATION_NOW_DESC"],		-- L["UPDATE_LOCATION_NOW_DESC"] = "If you wish to forcibly refresh the data to your current Map, click this button now!"
+							['description'] = L["UPDATE_LOCATION_NOW_DESC"],
 							['visible'] = true,
 							['collectible'] = true,
 							['collected'] = false,
@@ -14902,7 +14902,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					local numSpecializations = GetNumSpecializations();
 					if numSpecializations and numSpecializations > 0 then
 						tinsert(data.g, {
-							['text'] = L["CURRENT_SPEC"],		-- L["CURRENT_SPEC"] = "Current Specialization"
+							['text'] = L["CURRENT_SPEC"],
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
 							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
 							['id'] = 0,
@@ -14951,7 +14951,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['g'] = {
 					app.CreateDifficulty(1, {
 						['OnClick'] = switchDungeonDifficulty,
-						["description"] = L["CLICK_TO_CHANGE"],		-- L["CLICK_TO_CHANGE"] = "Click to change now. (if available)"
+						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
 						['back'] = 0.5,
 					}),
@@ -15548,9 +15548,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 		self.data = {
-			['text'] = L["PROFESSION_LIST"],		-- L["PROFESSION_LIST"] = "Profession List"
+			['text'] = L["PROFESSION_LIST"],
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
-			["description"] = L["PROFESSION_LIST_DESC"],		-- L["PROFESSION_LIST_DESC"] = "Open your professions to cache them."
+			["description"] = L["PROFESSION_LIST_DESC"],
 			['visible'] = true,
 			['expanded'] = true,
 			["indent"] = 0,
@@ -15683,7 +15683,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true);
-					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);		-- L["CACHED_RECIPES_1"] = "Cached "; L["CACHED_RECIPES_2"] = " known recipes!"
+					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);
 					wipe(searchCache);
 				end
 			end
@@ -15898,18 +15898,18 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			self.data = {
-				['text'] = L["WORLD_QUESTS"],		-- L["WORLD_QUESTS"] = "World Quests"
+				['text'] = L["WORLD_QUESTS"],
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
-				["description"] = L["WORLD_QUESTS_DESC"],		-- L["WORLD_QUESTS_DESC"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!"
+				["description"] = L["WORLD_QUESTS_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = L["UPDATE_WORLD_QUESTS"],		-- L["UPDATE_WORLD_QUESTS"] = "Update World Quests Now"
+						['text'] = L["UPDATE_WORLD_QUESTS"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = L["UPDATE_WORLD_QUESTS_DESC"],		-- L["UPDATE_WORLD_QUESTS_DESC"] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited"
+						['description'] = L["UPDATE_WORLD_QUESTS_DESC"],
 						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
 							Push(self, "WorldQuests-Rebuild", self.Rebuild);
@@ -16335,9 +16335,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				-- Put a 'Clear World Quests' click at the bottom
 				MergeObject(temp, {
-					['text'] = L["CLEAR_WORLD_QUESTS"],		-- L["CLEAR_WORLD_QUESTS"] = "Clear World Quests"
+					['text'] = L["CLEAR_WORLD_QUESTS"],
 					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
-					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],		-- L["CLEAR_WORLD_QUESTS_DESC"] = "Click to clear the current information within the World Quests frame"
+					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],
 					['hash'] = "funClearWorldQuests",
 					['OnClick'] = function(data, button)
 						Push(self, "WorldQuests-Clear", self.Clear);
@@ -17002,7 +17002,7 @@ local ProcessAuctionData = function()
 		["criteriaID"] = setmetatable({	-- Achievements
 			["filterID"] = 105,
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
-			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],		-- L["ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC"] = "All items that can be used to obtain achievements that you are missing are displayed here."
+			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
 		}, app.BaseFilter),
 		["s"] = setmetatable({			-- Appearances
@@ -17013,13 +17013,13 @@ local ProcessAuctionData = function()
 		}, app.BaseHeader),
 		["mountID"] = setmetatable({	-- Mounts
 			["filterID"] = 100,
-			["description"] = L["ALL_THE_MOUNTS_DESC"],		-- L["ALL_THE_MOUNTS_DESC"] = "All mounts that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_MOUNTS_DESC"],
 			["priority"] = 3,
 		}, app.BaseFilter),
 		["speciesID"] = setmetatable({	-- Battle Pets
 			["filterID"] = 101,
 			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
-			["description"] = L["ALL_THE_BATTLEPETS_DESC"],		-- L["ALL_THE_BATTLEPETS_DESC"] = "All pets that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
 		}, app.BaseFilter),
 		["questID"] = setmetatable({	-- Quests
@@ -17031,19 +17031,19 @@ local ProcessAuctionData = function()
 		["recipeID"] = setmetatable({	-- Recipes
 			["filterID"] = 200,
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
-			["description"] = L["ALL_THE_RECIPES_DESC"],		-- L["ALL_THE_RECIPES_DESC"] = "All recipes that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_RECIPES_DESC"],
 			["priority"] = 6,
 		}, app.BaseFilter),
 		["itemID"] = {					-- General
 			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
-			["description"] = L["ALL_THE_ILLUSIONS_DESC"],		-- L["ALL_THE_ILLUSIONS_DESC"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here."
+			["description"] = L["ALL_THE_ILLUSIONS_DESC"],
 			["priority"] = 7,
 		},
 		["reagentID"] = setmetatable({	-- Reagent
 			["filterID"] = 56,
 			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
-			["description"] = L["ALL_THE_REAGENTS_DESC"],		-- L["ALL_THE_REAGENTS_DESC"] = "All items that can be used to craft an item using a profession on your account."
+			["description"] = L["ALL_THE_REAGENTS_DESC"],
 			["priority"] = 8,
 		}, app.BaseFilter),
 	};
@@ -17867,7 +17867,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Verify that reagent cache is of the correct format by checking a special key
 	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
 	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
-		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);		-- L["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!"
+		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);
 		wipe(reagentCache);
 	end
 	if reagentCache then
