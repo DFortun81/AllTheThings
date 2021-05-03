@@ -1251,6 +1251,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, 1961 },	-- Korthia
 				}),
+				q(63959, {	-- Observational Records
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
+				}),
 				q(64103, {	-- Old Tricks Work Best
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178808 },	-- Baroness Draka
