@@ -999,6 +999,14 @@ _.Zones =
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, 1961 },	-- Korthia
 				}),
+				q(64305, {	-- The Tormentors of Torghast
+				--	showed up after PTR realms got taken down for a couple hours.  not sure if there are rep requirements/specific SQs necessary to unlock
+				--	i was at 6900/12000 honored
+				--	TODO: there is no weekly flag via API on the quest but check back to see if it pops up again
+				--	["sourceQuests"] = {  },	-- ??? showed up randomly
+					["provider"] = { "n", 179321 },	-- Duchess Mynx
+					["coord"] = { 63.4, 23.3, 1961 },	-- Korthia
+				}),
 				q(63763, {	-- They Could Be Anyone
 				--	TODO: verify that quest still exists on live.  all quest text lines are listed as "DEPRECATED" atm and there's another newer quest where you learn the nathrezim are in korthia
 					["sourceQuests"] = { 63762 },	-- Under the Illusion
@@ -1222,6 +1230,7 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, 1961 },	-- Korthia
 				}),
 				q(63784, {	-- Gold's No Object
+				--	awarded i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,

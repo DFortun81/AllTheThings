@@ -29,7 +29,6 @@ _.Zones =
 						}),
 						ach(15034, {	-- Wings Against the Flames
 							crit(3),	-- No One Floats Down Here
-							crit(4),	-- Encouraging Words
 							crit(7),	-- United In Pride
 							crit(9),	-- Kill The Flame
 						}),
@@ -66,17 +65,6 @@ _.Zones =
 						crit(7),	-- Vulca
 						crit(8),	-- Watchmaster Boromod
 					}),
-					ach(15041, {	-- The Zovaal Shuffle
-					--	TODO: should perhaps be under kyrian assault, but i'm not 100% sure.  for visibility, it might be best to put it under the daily quest that uses the parasols, if gubbins isn't up when the daily isn't available, but i had already turned the quest in so i'm not sure which one it was
-						["coords"] = {
-							{ 41.8, 42.2, THE_MAW },
-							{ 38.8, 39.7, THE_MAW },
-							{ 36.2, 37.2, THE_MAW },
-							{ 34.4, 36.2, THE_MAW },
-							{ 35.9, 45.2, THE_MAW },
-						},
-						["cr"] = 178033,	-- Gubbins
-					}),
 					ach(15037, {	-- This Army
 						crit(2),	-- Kearnen the Blade
 						crit(3),	-- Winslow Swan
@@ -98,6 +86,16 @@ _.Zones =
 								["coord"] = { 42.4, 44.1, THE_MAW },
 								["g"] = {
 									crit(5, {	-- Courage of the Soul
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+								},
+							}),
+							q(63827, {	-- Encouraging Words
+								["provider"] = { "n", 177900 },	-- Xandria
+								["isDaily"] = true,
+								["coord"] = { 42.7, 44.7, THE_MAW },
+								["g"] = {
+									crit(4, {	-- Encouraging Words
 										["achievementID"] = 15034,	-- Wings Against the Flames
 									}),
 								},
@@ -149,6 +147,16 @@ _.Zones =
 								["g"] = {
 									crit(8, {	-- The Ember Count
 										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+									ach(15041, {	-- The Zovaal Shuffle
+										["coords"] = {
+											{ 41.8, 42.2, THE_MAW },
+											{ 38.8, 39.7, THE_MAW },
+											{ 36.2, 37.2, THE_MAW },
+											{ 34.4, 36.2, THE_MAW },
+											{ 35.9, 45.2, THE_MAW },
+										},
+										["cr"] = 178033,	-- Gubbins
 									}),
 								},
 							}),
