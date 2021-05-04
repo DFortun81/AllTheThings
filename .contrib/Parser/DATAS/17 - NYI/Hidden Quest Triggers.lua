@@ -4150,6 +4150,7 @@ _.HiddenQuestTriggers =
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
+		q(58412),	-- Triggered after recruiting Unity
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
