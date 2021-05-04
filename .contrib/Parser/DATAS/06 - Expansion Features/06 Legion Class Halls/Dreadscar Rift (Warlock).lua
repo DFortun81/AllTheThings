@@ -110,6 +110,13 @@ _.ExpansionFeatures =
 						["coord"] = { 55.2, 37.0, 717 },
 						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
+					q(46237, {	-- Bloodbringer's Missive
+						["sourceQuests"] = { 46253 },	-- Pillars of Creation
+						["classes"] = { WARLOCK },
+						["coord"] = { 43.9, 63.2, 646 },	
+						["maps"] = { 646 },	-- Broken Shore
+						["provider"] = { "n", 117622 },	-- Elithys Firestorm
+					}),
 					q(39179, {	-- Bloodstone Bandit
 						["sourceQuests"] = { 41759 },	-- An Unlikely Ally
 						["classes"] = { WARLOCK },
@@ -248,6 +255,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["maps"] = { 630 },	-- Azsuna
 					}),
+					q(46239, {	-- Fel to the Core
+						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.3, 38.5, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+					}),
 					q(43100, {	-- Finding the Scepter
 						["sourceQuests"] = {
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
@@ -280,6 +293,12 @@ _.ExpansionFeatures =
 						["coord"] = { 58.7, 32.7, 717 },
 						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
 					}),
+					q(46240, {	-- Give Me Fuel, Give Me Fire
+						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.3, 38.5, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+					}),
 					q(41781, {	-- Herding Goats
 						["sourceQuest"] = 41769,	-- Mad Ernie the Alchemist
 						["classes"] = { WARLOCK },
@@ -288,6 +307,12 @@ _.ExpansionFeatures =
 					}),
 					q(43887, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(46238, {	-- If You Build It
+						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.3, 38.5, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = {
@@ -513,14 +538,10 @@ _.ExpansionFeatures =
 
 				--	TODO: not organized/sourced yet.
 					q(43414),	-- A Hero's Weapon
-					q(46237),	-- Bloodbringer's Missive
 					q(44228),	-- Champion Armaments
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
-					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
-					q(46240),	-- Give Me Fuel, Give Me Fire
-					q(46238),	-- If You Build It
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
 					q(42102),	-- One Who's Worthy

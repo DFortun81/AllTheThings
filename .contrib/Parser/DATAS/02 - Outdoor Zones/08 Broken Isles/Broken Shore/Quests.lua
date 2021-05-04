@@ -535,11 +535,6 @@ _.Zones =
 				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-				q(46827, {	-- Meld Into the Shadows
-					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-				}),
 				q(42074, {	-- Return of the Light
 					["provider"] = { "n", 106011 },	-- Jace Darkweaver
 					["classes"] = { PRIEST },
@@ -600,9 +595,6 @@ _.Zones =
 				q(46353),	-- Master Who?
 				q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 				q(43574),	-- Maw of Souls: Maul of the Dead
-				q(46260, {	-- Meld Into the Shadows
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45345),	-- Mischievous Sprites
 				q(45827),	-- Monk
 				q(42730),	-- Noggenfogger's Reasonable Request
@@ -625,12 +617,6 @@ _.Zones =
 				q(42449),	-- Return of the Four Horsemen
 				q(45331),	-- Return to Acherus
 				q(38803),	-- Rin'thissa
-				q(45576, {	-- Rise Up
-					["races"] = HORDE_ONLY,
-				}),
-				q(45573, {	-- Rise Up
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(43264),	-- Rise, Champions
 				q(45815),	-- Rogue
 				q(45348),	-- Safekeeping
@@ -686,12 +672,6 @@ _.Zones =
 				q(41919),	-- The Shadows Reveal
 				q(45788),	-- The Speaker Awaits
 				q(42824),	-- The Zealot Rises
-				q(45628, {	-- This Time, Leave a Trail
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45629, {	-- This Time, Leave a Trail
-					["races"] = HORDE_ONLY,
-				}),
 				q(42684),	-- Throwing SI:7 Off the Trail
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon

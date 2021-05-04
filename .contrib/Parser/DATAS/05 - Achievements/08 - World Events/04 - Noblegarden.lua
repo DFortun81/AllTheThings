@@ -5,11 +5,11 @@
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		["g"] = bubbleDown({["u"] = 19}, {
-			n(-10017, {	-- Noblegarden
+		["g"] = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
+			holiday(235477, {	-- Noblegarden
 				ach(2576),	-- Blushing Bride
-				ach(2418, {	-- Chocoholic [Eat 100]
-					ach(2417),	-- Chocolate Lover [Eat 25]
+				ach(2418, {	-- Chocoholic
+					ach(2417),	-- Chocolate Lover
 				}),
 				ach(2436, {	-- Desert Rose
 					crit(1),	-- The Badlands

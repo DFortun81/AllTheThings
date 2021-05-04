@@ -7465,6 +7465,11 @@ local fields = {
 		return t.info.name;
 	end,
 	["icon"] = function(t)
+		-- Use the custom icon if defined
+		if L["HOLIDAY_ID_ICONS"][t.holidayID] then
+			rawset(t, "icon", L["HOLIDAY_ID_ICONS"][t.holidayID]);
+			return rawget(t, "icon");
+		end
 		return t.holidayID == 235466 and 235465 or t.holidayID;
 	end,
 	["texcoord"] = function(t)
@@ -14158,9 +14163,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						for _, row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then ExpandGroupsRecursively(row, true); end
+									if not row.expanded then ExpandGroupsRecursively(row, true, true); end
 								elseif row.expanded then
-									ExpandGroupsRecursively(row, false);
+									ExpandGroupsRecursively(row, false, true);
 								end
 							end
 						end

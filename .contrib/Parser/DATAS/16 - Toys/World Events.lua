@@ -227,12 +227,11 @@ _.Toys =
 				i(141649),	-- Set of Matches
 			},
 		}),
-		n(-51, {	-- Noblegarden
-			["achievementID"] = 2798,	-- Noble Gardener
-			["u"] = 19,
-			["g"] = {
-				un(19, i(165802)),	-- Noble Gardener's Hearthstone
-			},
+		holiday(235477, {	-- Noblegarden
+			["u"] = HOLIDAY_NOBLEGARDEN,
+			["g"] = sharedData({["u"] = HOLIDAY_NOBLEGARDEN,}, {
+				i(165802),	-- Noble Gardener's Hearthstone
+			}),
 		}),
 		n(-60, {    -- Pilgrim's Bounty
 			["achievementID"] = 3478,	-- Pilgrim

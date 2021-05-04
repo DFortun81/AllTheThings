@@ -446,7 +446,8 @@ namespace ATT
             internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out long recipeID)
             {
                 recipeID = 0;
-                if (recipeItemName == null)
+                // no recipe name or doesn't contain :
+                if (recipeItemName == null || !recipeItemName.Contains(":"))
                     return false;
 
                 // find skill bucket

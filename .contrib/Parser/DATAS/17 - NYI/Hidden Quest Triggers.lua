@@ -2075,6 +2075,7 @@ _.HiddenQuestTriggers =
 		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 		q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
+		q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
@@ -4149,6 +4150,7 @@ _.HiddenQuestTriggers =
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
+		q(58412),	-- Triggered after recruiting Unity
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
@@ -4512,9 +4514,12 @@ _.HiddenQuestTriggers =
 		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
+		q(63356),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61527),	-- when looting 'Decree: Lady Moonberry's Boon' / Opening Lady Moonberry's Extravagant Tribute
+		q(61532),	-- when looting 'Decree: The Countess's Esteem' / Opening The Countess's Substantial Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor

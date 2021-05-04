@@ -203,8 +203,6 @@ _.ExpansionFeatures =
 										}),
 										crit(3, {	-- Maldraxxus Etiquette
 										}),
-										crit(6, {	-- Dredbat Riding
-										}),
 									}),
 									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
@@ -230,22 +228,22 @@ _.ExpansionFeatures =
 								q(63721, {	-- Lord Garridan's Egg
 									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63720, {	-- Prince Renethal's Egg
 									["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63718, {	-- Theotar's Egg
 									["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 								q(63719, {	-- Temel's Egg
 									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 									["repeatable"] = true,
-									["u"] = 19,	-- Noblegarden
+									["u"] = HOLIDAY_NOBLEGARDEN,
 								}),
 							}),
 							n(-908, {	-- Rewards
@@ -898,11 +896,13 @@ _.ExpansionFeatures =
 								}),
 								q(62073, {	-- Restock: Band Shirts
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
@@ -912,11 +912,13 @@ _.ExpansionFeatures =
 								}),
 								q(62066, {	-- Restock: Dredger Pool
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 								}),
 								q(62106, {	-- Restock: Enchantments
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
@@ -926,16 +928,19 @@ _.ExpansionFeatures =
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 								}),
 								q(61916, {	-- Restock: Fire Damage
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
@@ -946,12 +951,14 @@ _.ExpansionFeatures =
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.2, REVENDRETH },
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 								--	showed up after Week 3 Ember Court
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
@@ -962,6 +969,7 @@ _.ExpansionFeatures =
 								}),
 								q(62083, {	-- Restock: Medical Supplies
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
@@ -972,12 +980,14 @@ _.ExpansionFeatures =
 								q(62082, {	-- Restock: Personal Stash
 								--	showed up after Week 4 Ember Court
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 								}),
 								q(62069, {	-- Restock: Sinstones
 								--	showed up after Week 2 Ember Court
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
@@ -987,6 +997,7 @@ _.ExpansionFeatures =
 								}),
 								q(62075, {	-- Restock: Soul Cages
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
@@ -995,14 +1006,27 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62062, {	-- Restock: Stolen Rugs
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 171840, 20 },	-- 20x Porous Stone
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
+									},
+								}),
 								q(62104, {	-- Restock: Stoneborn Reserves
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
 								}),
 								q(62108, {	-- Restock: Strategic Codices
 									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
@@ -1310,6 +1334,17 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
+								q(62222, {	-- On Silver Wings
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183843, 1 } },	-- Juvenile Dredbat Harness
+									["g"] = {
+										crit(6, {	-- Dredbat Riding
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 								q(61851, {	-- Shades of Muck
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["provider"] = { "n", 157846 },	-- Rendle
@@ -1336,6 +1371,12 @@ _.ExpansionFeatures =
 											["achievementID"] = 14683,	-- Dredger Style
 										}),
 									},
+								}),
+								q(63765, {	-- Unseen Hero of the Party
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 185741, 1 } },	-- 1x Restock and Repair, Tips and Tricks for Keeping the Party Going
 								}),
 								q(62205, {	-- Venthyr Etiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1802,6 +1843,9 @@ _.ExpansionFeatures =
 										}),
 										i(183854, {	-- Battie's Pendant
 											["cost"] = { { "i", 163036, 250 } },
+										}),
+										i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
+											["cost"] = { { "c", 1820, 85 } },
 										}),
 									},
 								}),
