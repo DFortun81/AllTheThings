@@ -673,10 +673,6 @@ _.Zones =
 					["coord"] = { 22.9, 38.1, 635 },
 					["lvl"] = 110,
 				}),
-				q(46779, {	-- Further Advancement
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
-				}),
 				q(47056, {	-- Fury: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -913,15 +909,6 @@ _.Zones =
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
-				}),
-				q(46260, {	-- Meld Into the Shadows
-					["sourceQuests"] = {
-						45628,	-- This Time, Leave a Trail
-						45629,	-- This Time, Leave a Trail
-					},
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45185, {	-- Message from the Shadows
 					["sourceQuests"] = {
@@ -1358,16 +1345,6 @@ _.Zones =
 				q(41631, {	-- The Nexus Vault
 					["sourceQuests"] = { 41630 },	-- Unleashing Judgment
 					["classes"] = { PRIEST },
-				}),
-				q(46322, {	-- The Pirate's Bay
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
-				q(45833, {	-- The Pirate's Bay
-					["classes"] = { ROGUE },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(43249, {	-- The Raven's Eye
 					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends

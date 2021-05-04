@@ -83,8 +83,13 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 					q(45571, {	-- A Bit of Espionage
+						["coord"] = { 41.4, 78.0, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuests"] = {
+							45836,	-- Jorach's Calling (A)
+							46326, 	-- Jorach's Calling (H)
+						},
 					}),
 					q(43958, {	-- A Body of Evidence
 						["coord"] = { 41.4, 78.0, 626 },
@@ -206,6 +211,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["sourceQuest"] = 46827,	-- Meld Into the Shadows
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
@@ -247,9 +253,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46059, {	-- Champion: Tess Greymane
+						["coord"] = { 42.3, 75.9, 626 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
+						["sourceQuest"] = 46260,	-- Meld Into the Shadows
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
@@ -339,6 +347,22 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
 					}),
+					q(45835, {	-- False Orders (A)
+						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 57.7, 63.5, 630 },
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 119821 },	-- Tess Graymane
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
+					}),
+					q(46324, {	-- False Orders (H)
+						--TBD: ["maps"] = { },
+						--TBD: ["coord"] = { },
+						["classes"] = { ROGUE },
+						--TBD: ["provider"] = { "n", xxxxx },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 46322,	-- The Pirate's Bay
+					}),
 					q(43852, {	-- Fancy Lads and Buccaneers
 						["coord"] = { 41.2, 74.3, 626 },
 						["classes"] = { ROGUE },
@@ -353,15 +377,34 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 41922,	-- Traitor!
 					}),
 					q(42501, {	-- Finishing the Job
-						["coord"] = { 42.3, 755.9, 626 },
+						["coord"] = { 42.3, 75.9, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
 					}),
 					q(45848, {	-- Fit For a Pirate
+						["coord"] = { 57.7, 63.5, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["classes"] = { ROGUE },
+						["provider"] = { "n", 118126 },	-- Crackers
+						["sourceQuests"] = {
+							45835,	-- False Orders (A)
+							46324,	-- False Orders (H)
+							45073,	-- Loot and Plunder!
+							44758,	-- What's the Cache? (A)
+							46323,	-- What's the Cache? (H)
+						},
 						["g"] = {
-							i(143679),	-- Crackers Pet
+							i(143679),	-- Crackers (PET!)
+						},
+					}),
+					q(46779, {	-- Further Advancement
+						["coord"] = { 37.7, 44.8, 626 },
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["sourceQuests"] = {
+							46058,	-- Champion: Lilian Voss
+							46059,	-- Champion: Tess Greymane
 						},
 					}),
 					q(46089, {	-- Hiding in Plain Sight (A)
@@ -422,6 +465,22 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
+					q(45836, {	-- Jorach's Calling (A)
+						["maps"] = { 630 },	-- Azsuna
+						["classes"] = { ROGUE },
+						["coord"] = { 57.6, 63.4, 630 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
+						["sourceQuest"] = 45848,	-- Fit For a Pirate
+					}),
+					q(46326, {	-- Jorach's Calling (H)
+						["maps"] = { 630 },	-- Azsuna
+						["classes"] = { ROGUE },
+						["coord"] = { 57.6, 63.4, 630 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 119822 },	-- Lilian Voss
+						["sourceQuest"] = 45848,	-- Fit For a Pirate
+					}),
 					q(46129, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -430,6 +489,13 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 40996,	-- Delegation
+					}),
+					q(45073, {	-- Loot and Plunder!
+						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 57.7, 63.6, 630 },
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
 					}),
 					q(47606, {	-- Loyalty Is Its Own Reward
 						["coord"] = { 45.0, 26.8, 626 },
@@ -450,6 +516,22 @@ _.ExpansionFeatures =
 							43468,	-- Blood for the Wolfe
 						},
 					}),
+					q(46260, {	-- Meld Into the Shadows (A)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 76.9, 39.8, 646 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
+					}),
+					q(46827, {	-- Meld Into the Shadows (H)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 76.9, 39.8, 646 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
+					}),
 					q(44116, {	-- Mystery at Citrine Bay
 						["lvl"] = 103,
 						["coord"] = { 41.3, 78.1, 626 },
@@ -458,7 +540,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44041,	-- The Bloody Truth
 					}),
 					q(42502, {	-- No Sanctuary
-						["coord"] = { 42.3, 755.9, 626 },
+						["coord"] = { 42.3, 75.9, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
@@ -508,6 +590,22 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
+					}),
+					q(45573, {	-- Rise Up (A)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 70.1, 47.0, 646 },
+						["classes"] = { ROGUE },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 45571,	-- A Bit of Espionage
+					}),
+					q(45576, {	-- Rise Up (H)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 70.1, 47.0, 646 },
+						["classes"] = { ROGUE },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 45571,	-- A Bit of Espionage
 					}),
 					q(44155, {	-- Searching For Clues
 						["maps"] = { 634 },	-- Stormheim
@@ -587,6 +685,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47592,	-- Shine Bright Like a Diamond
 					}),
+					q(45833, {	-- The Pirate's Bay (A)
+						["coord"] = { 41.3, 78.0, 626 },
+						["classes"] = { ROGUE },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
+					}),
+					q(46322, {	-- The Pirate's Bay (H)
+						["coord"] = { 41.3, 78.0, 626 },
+						["classes"] = { ROGUE },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
+					}),
 					q(43013, {	-- The School of Roguery
 						["coord"] = { 37.7, 44.9, 626 },
 						["classes"] = { ROGUE },
@@ -625,6 +737,20 @@ _.ExpansionFeatures =
 							i(128869),	-- The Kingslayers (Sorrow)
 							i(128870),	-- The Kingslayers (Anguish)
 						},
+					}),
+					q(45628, {	-- This Time, Leave a Trail (A)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 71.6, 41.9, 646 },
+						["classes"] = { ROGUE },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
+						["sourceQuest"] = 45573,	-- Rise Up
+					}),
+					q(45629, {	-- This Time, Leave a Trail (H)
+						["maps"] = { 646 },	-- Broken Shore
+						["classes"] = { ROGUE },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 45576,	-- Rise Up
 					}),
 					q(42684, {	-- Throwing SI:7 Off the Trail
 						["coord"] = { 40.8, 75.3, 626 },
@@ -665,6 +791,22 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43014,	-- The Big Bad Wolfe
+					}),
+					q(44758, {	-- What's the Cache? (A)
+						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 57.7, 63.5, 630 },
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 119821 },	-- Tess Graymane
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
+					}),
+					q(46323, {	-- What's the Cache? (H)
+						--TBD: ["maps"] = { },
+						--TBD: ["coord"] = { },
+						["classes"] = { ROGUE },
+						--TBD: ["provider"] = { "n", xxxxx },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 46322,	-- The Pirate's Bay
 					}),
 				}),
 				n(98093, {	-- Scouting Map

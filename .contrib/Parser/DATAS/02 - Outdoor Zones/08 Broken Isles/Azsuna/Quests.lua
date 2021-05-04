@@ -313,19 +313,6 @@ _.Zones =
 					["coord"] = { 45.1, 42.9, 630 },
 					["provider"] = { "n", 93337 },	-- Archmage Khadgar
 				}),
-				q(45836, {	-- Jorach's Calling
-					["classes"] = { ROGUE },
-					["coord"] = { 57.6, 63.4, 630 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-					["provider"] = { "n", 119821 },	-- Princess Tess Greymane
-				}),
-				q(46326, {	-- Jorach's Calling
-					["classes"] = { ROGUE },
-					["coord"] = { 57.6, 63.4, 630 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 119822 },	-- Lilian Voss
-				}),
 				q(38443, {	-- Journey to the Repose
 					["sourceQuests"] = { 37449 },	-- Dark Revelations
 					["coord"] = { 43.5, 43.4, 630 },
@@ -816,7 +803,6 @@ _.Zones =
 				q(40527),	-- Finishing Touches
 				q(40528),	-- Finishing Touches
 				q(40526),	-- Finishing Touches
-				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
 				q(40144),	-- Glielle
 				q(41177),	-- Goblin Archaeology
@@ -831,7 +817,6 @@ _.Zones =
 				q(42689),	-- Knowing Our Enemy
 				q(42691),	-- Leyworm Lure
 				q(38785),	-- Living Leystone Sample
-				q(45073),	-- Loot and Plunder!
 				q(43519),	-- Lucid Strength
 				q(38952),	-- Meticulous Precision
 				q(41181),	-- Narrowing Down
@@ -881,12 +866,6 @@ _.Zones =
 				q(45174),	-- The Hunt for Illidan Stormrage
 				q(41185),	-- The Keys to Success
 				q(42407),	-- The Nature of the Beast
-				q(46322, {	-- The Pirate's Bay
-					["races"] = HORDE_ONLY,
-				}),
-				q(45833, {	-- The Pirate's Bay
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
 				q(41171),	-- The Reliquary Calls
@@ -906,12 +885,6 @@ _.Zones =
 				q(41180),	-- Unspeakable Power
 				q(40130),	-- Washed Clean
 				q(41179),	-- What Once Was Lost
-				q(44758, {	-- What's the Cache?
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(46323, {	-- What's the Cache?
-					["races"] = HORDE_ONLY,
-				}),
 				q(37930),	-- Whelp? That Happened.
 				q(38956),	-- Where's Lyndras Again?
 				q(38954),	-- Where's Lyndras?
