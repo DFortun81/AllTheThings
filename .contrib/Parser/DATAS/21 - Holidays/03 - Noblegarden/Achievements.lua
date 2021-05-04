@@ -13,8 +13,10 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 						ach(2676, {	-- I Found One
 						}),
 						ach(2418, {	-- Chocoholic
+							["cost"] = { { "i", 44791, 100, } },	-- 100x Noblegarden Chocolate
 							["g"] = {
 								ach(2417, {	-- Chocolate Lover
+									["cost"] = { { "i", 44791, 25, } },	-- 25 Noblegarden Chocolate
 								}),
 							},
 						}),
@@ -91,6 +93,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 							["races"] = HORDE_ONLY,
 						}),
 						ach(2422, {	-- Shake Your Bunny-Maker
+							["cost"] = { { "i", 45073, 12 } },	-- 12x Spring Flowers
 							["g"] = {
 								crit(1, {	-- Blood Elf
 								}),
@@ -124,10 +127,8 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 				}),
 				ach(248, {	-- Sunday's Finest
 					["g"] = {
-						crit(1, {	-- White Tuxedo Shirt
-						}),
-						crit(2, {	-- Black Tuxedo Pants
-						}),
+						crit(1),	-- White Tuxedo Shirt
+						crit(2),	-- Black Tuxedo Pants
 					},
 				}),
 			}),

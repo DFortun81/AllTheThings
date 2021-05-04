@@ -2,14 +2,12 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
--- TODO: formatting
 _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 	holiday(235477, {	-- Noblegarden
 		["g"] = {
 			n(VENDORS, {
 				["g"] = {
-					{	-- Noblegarden Merchant
-						["npcID"] = 32837,	-- Noblegarden Merchant
+					n(32837, {	-- Noblegarden Merchant
 						["coords"] = {
 							{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
 							{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
@@ -109,9 +107,8 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 								["itemID"] = 116357,		-- Poorly Painted Egg
 							},
 						},
-					},
-					{	-- Noblegarden Vendor
-						["npcID"] = 32836,	-- Noblegarden Vendor
+					}),
+					n(32836, {	-- Noblegarden Vendor
 						["coords"] = {
 							{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 							{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
@@ -211,7 +208,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_NOBLEGARDEN}, {
 								["itemID"] = 116357,		-- Poorly Painted Egg
 							},
 						},
-					},
+					}),
 				},
 			}),
 		},
