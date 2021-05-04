@@ -754,10 +754,43 @@ app.L = {
 	-- Custom Icons for Holidays
 	["HOLIDAY_ID_ICONS"] = {
 		-- Examples --
+		-- [HOLIDAY_ID] = app.asset("PATH"),	-- Holiday Name
 		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
 		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
 
+		-- "Legit" Holidays
+		-- [235442] = app.asset("TODO"),	-- Brewfest
+		-- [235445] = app.asset("TODO"),	-- Children's Week
+		-- [235448] = app.asset("TODO"),	-- Darkmoon Faire
+		-- [307365] = app.asset("TODO"),	-- Day of the Dead
+		-- [235485] = app.asset("TODO"),	-- Feast of Winter Veil
+		-- [235457] = app.asset("TODO"),	-- Fireworks Spectacular
+		-- [235462] = app.asset("TODO"),	-- Hallow's End
+		-- [235465] = app.asset("TODO"),	-- Harvest Festival
+		-- [235468] = app.asset("TODO"),	-- Love is in the Air
+		-- [235471] = app.asset("TODO"),	-- Lunar Festival
+		-- [235474] = app.asset("TODO"),	-- Midsummer Fire Festival
 		[235477] = app.asset("noblegarden"),	-- Noblegarden
+		-- [235466] = app.asset("TODO"),	-- Pilgrim's Bounty
+		-- [235481] = app.asset("TODO"),	-- Pirates' Day
+
+		-- "Micro" Holidays
+		-- [1671624] = app.asset("TODO"),	-- Auction House Dance Party
+		-- [1574965] = app.asset("TODO"),	-- Call of the Scarab
+		-- [2827082] = app.asset("TODO"),	-- Free T-Shirt Day
+		-- [1572471] = app.asset("TODO"),	-- Glowcap Festival
+		-- [1574966] = app.asset("TODO"),	-- Hatching of the Hippogryphs
+		-- [1574967] = app.asset("TODO"),	-- Kirin Tor Tavern Crawl
+		-- [2827083] = app.asset("TODO"),	-- Luminous Luminaries
+		-- [1572472] = app.asset("TODO"),	-- March of the Tadpoles
+		-- [1671628] = app.asset("TODO"),	-- Moonkin Festival
+		-- [1572475] = app.asset("TODO"),	-- Spring Balloon Festival
+		-- [1671627] = app.asset("TODO"),	-- The Great Gnomeregan Run
+		-- [1572478] = app.asset("TODO"),	-- Thousand Boat Bash
+		-- [1671631] = app.asset("TODO"),	-- Trial of Style
+		-- [1574970] = app.asset("TODO"),	-- Un'Goro Madness
+		-- [1572479] = app.asset("TODO"),	-- Volunteer Guard Day
+		-- [2827084] = app.asset("TODO"),	-- Wanderer's Festival
 	};
 
 	-- These need to be localized manually.
