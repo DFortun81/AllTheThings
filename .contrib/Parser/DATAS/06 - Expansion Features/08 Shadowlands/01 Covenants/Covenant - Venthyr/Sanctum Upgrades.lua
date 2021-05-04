@@ -995,6 +995,16 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62062, {	-- Restock: Stolen Rugs
+									["repeatable"] = true,
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 171840, 20 },	-- 20x Porous Stone
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
+									},
+								}),
 								q(62104, {	-- Restock: Stoneborn Reserves
 									["repeatable"] = true,
 									["provider"] = { "n", 165496 },
