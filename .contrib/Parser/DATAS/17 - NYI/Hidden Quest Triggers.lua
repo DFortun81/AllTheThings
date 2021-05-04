@@ -4513,6 +4513,8 @@ _.HiddenQuestTriggers =
 		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
+		q(63356),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
 		q(61527),	-- when looting 'Decree: Lady Moonberry's Boon' / Opening Lady Moonberry's Extravagant Tribute
