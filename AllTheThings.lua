@@ -14159,9 +14159,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						for _, row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then ExpandGroupsRecursively(row, true); end
+									if not row.expanded then ExpandGroupsRecursively(row, true, true); end
 								elseif row.expanded then
-									ExpandGroupsRecursively(row, false);
+									ExpandGroupsRecursively(row, false, true);
 								end
 							end
 						end
