@@ -203,8 +203,6 @@ _.ExpansionFeatures =
 										}),
 										crit(3, {	-- Maldraxxus Etiquette
 										}),
-										crit(6, {	-- Dredbat Riding
-										}),
 									}),
 									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
@@ -1336,6 +1334,17 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
+								q(62222, {	-- On Silver Wings
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 183843, 1 } },	-- Juvenile Dredbat Harness
+									["g"] = {
+										crit(6, {	-- Dredbat Riding
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 								q(61851, {	-- Shades of Muck
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["provider"] = { "n", 157846 },	-- Rendle
@@ -1365,6 +1374,7 @@ _.ExpansionFeatures =
 								}),
 								q(63765, {	-- Unseen Hero of the Party
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 185741, 1 } },	-- 1x Restock and Repair, Tips and Tricks for Keeping the Party Going
 								}),
