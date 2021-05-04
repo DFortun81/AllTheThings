@@ -7767,6 +7767,8 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
+		-- local LOG = t.itemID == 76402 and t.itemID;
+		-- if LOG then print("Logging Costs for",LOG) end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
 		if t.modItemID then
@@ -7779,14 +7781,30 @@ local itemFields = {
 			results = app.SearchForField("itemIDAsCost", id);
 		end
 		if results and #results > 0 then
+			-- if LOG then print("Found Cost Results",#results) end
 			for _,ref in pairs(results) do
+				-- TODO: why is this so weird
+				-- ensure this result has updated itself prior to determining if a cost is required for it
+				-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
+				-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
+				-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
 				-- different itemID, OR same itemID with different modID is allowed
 				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					-- Used as a cost for something which has a total greater than its progress and is not a parent of the cost group itself
-					if ref.total and ref.total > 0 and ref.progress < ref.total and not GetRelativeField(t, "parent", ref) then
-						return false;
+					-- TODO: maybe use this instead eventually
+					-- if not app.IsComplete(ref) then
+					-- 	return false;
+					-- end
 					-- Used as a cost for something which is collectible itself and not collected
-					elseif ref.collectible and not ref.collected then
+					if ref.collectible and not ref.collected then
+						-- if LOG then print("Cost Required via Collectible") end
+						return false;
+					-- Used as a cost for something which has an incomplete progress
+					elseif ref.total and ref.total > 0 and ref.total ~= ref.progress and
+						-- is account or debug mode or the thing is not altcollected
+						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- if LOG then print("Cost Required via Total/Prog") end
 						return false;
 					end
 				end
@@ -8833,10 +8851,13 @@ local questFields = {
 
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
+		-- local LOG = t.questID == 8753 and t.questID;
+		-- if LOG then print(LOG,"checking altCollected") end		
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
+					-- if LOG then print(LOG,"altCollected by",questID) end
 					rawset(t, "altcollected", questID);
 					return questID;
 				end
@@ -10291,6 +10312,24 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group)
+	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
+	-- if LOG then app.DEBUG_LOG = LOG; end
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
+
+	-- -- Only update a group ONCE per update cycle...
+	-- if not group._Updated or group._Updated ~= app._Updated then
+	-- 	if LOG then print("First Update") end
+	-- 	group._Updated = app._Updated;
+	-- else
+	-- 	-- group has already updated on this pass
+	-- 	if LOG then print("Skip Update") end
+	-- 	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
+	-- 	-- Increment the parent group's totals.
+	-- 	parent.total = (parent.total or 0) + (group.total or 0);
+	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
+	-- 	return group.visible;
+	-- end
+
 	local visible = app.MODE_DEBUG;
 
 	-- Determine if this user can enter the instance or acquire the item.
@@ -10308,16 +10347,20 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 
-			-- TODO: ideally the recursive update would outside of the top group, and we only need to process the top group
+			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
+
+			-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
 			-- if everything inside is hidden, otherwise it would obviously need to be shown.
 			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
-			-- otherwise filtered groups
+			-- otherwise filtered groups... maybe that's good...?
 
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
 
 				-- Update the subgroups recursively...
 				visible = UpdateGroups(group, group.g);
+
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
 
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
@@ -10364,6 +10407,8 @@ UpdateGroup = function(parent, group)
 
 	-- Set the visibility
 	group.visible = visible;
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
+	-- if LOG then app.DEBUG_LOG = nil; end
 	return visible;
 end
 UpdateGroups = function(parent, g)
@@ -10405,6 +10450,7 @@ local function UpdateParentProgress(group)
 		end
 	end
 end
+app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
 
@@ -12896,6 +12942,7 @@ local function UpdateWindow(self, force, got)
 				(force or (self.shouldFullRefresh and got)) then
 				self.data.progress = 0;
 				self.data.total = 0;
+				-- app._Updated = time();
 				UpdateGroups(self.data, self.data.g);
 			end
 			ProcessGroup(self.rowData, self.data);
