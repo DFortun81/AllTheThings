@@ -753,6 +753,14 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 172141 },	-- Mad Mortimer
 									["coord"] = { 59.2, 71.9, MALDRAXXUS },
 								}),
+								q(63174, {	-- Path of Ascension: Mad Mortimer
+									["provider"] = { "n", 168485 },	-- Apolon
+									["isWeekly"] = true,
+									["coord"] = { 28.1, 41.7, 1707 },	-- Archon's Rise
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
 								q(63172, {	-- Path of Ascension: Splinterbark Nightmare
 								--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
 									["provider"] = { "n", 168485 },	-- Apolon
