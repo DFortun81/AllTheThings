@@ -126,7 +126,6 @@ _.Zones =
 			--	PTR - TODO: INCORPORATE INTO MAIN LIST
 				ach(15099, {	-- Treasures of Korthia
 					crit(2),	-- Forgotten Feather
-					crit(4),	-- Dislodged Nest
 					crit(6),	-- Displaced Relic
 					crit(10),	-- Offering Box
 				}),

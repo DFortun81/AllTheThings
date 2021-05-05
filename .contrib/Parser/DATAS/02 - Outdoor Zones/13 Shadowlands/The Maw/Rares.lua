@@ -625,6 +625,7 @@ _.Zones =
 						i(186970, {	-- Feeder's Hand and Key - TODO: not sure if this is used for something?  it's a green item
 							i(186727),	-- Seal Breaker Key
 						}),
+						i(186217),	-- Supple Helhound Leather Pants
 					},
 				}),
 				i(182329, {	-- Domination's Calling

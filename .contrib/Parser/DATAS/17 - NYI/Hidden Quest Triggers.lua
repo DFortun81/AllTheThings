@@ -4646,6 +4646,7 @@ _.HiddenQuestTriggers =
 	--	q(),	-- Desmotaeron treasure - Helsworn Chest
 		q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
 		q(64244),	-- Korthia treasure - Anima Laden Egg
+		q(64241),	-- Korthia treasure - Dislodged Nest
 		q(64222),	-- Korthia treasure - Glittering Nest Material
 		q(64264),	-- Korthia treasure - Infested Vestige
 		q(64238),	-- Korthia treasure - Lost Memento

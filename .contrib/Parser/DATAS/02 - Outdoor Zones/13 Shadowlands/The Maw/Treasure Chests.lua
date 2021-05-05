@@ -17,6 +17,26 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369225369225, {	-- Dislodged Nest TODO: REPLACE WITH ACTUAL OBJECTID
+					["description"] = "Find and click one of the sparkling |cFFFFFFFFNoxious Moths|r in Mauler's Outlook.  There is a |cFFFFFFFFPrecarious Silk Nest|r stuck in the branches of a tree.  Use the Extra Action Button ability granted by the moth to ride a Shardhide into the tree to dislodge the nest.",
+				--	["questID"] = 64241,
+					["coord"] = { 47.5, 29.2, 1961 },
+					["g"] = {
+						crit(4, {	-- Dislodged Nest
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
+				o(369132, {	-- Domination Sealed Chest
+				--	4 quests total, 64204/64205 for the first 2 cage unlocks, then 64207/64208 for the last cage unlock + chest unlock.  not sure which is which because i stupidly did them 2 steps at a time
+				--	this is *possibly* related to i(186713) for the Hand of Nilganihmaht mount, so may need to be moved to a special/secret header when it's fully figured out
+				--	requires 4 Seal Breaker Keys 
+					-- 1. dropped from random mob in the area (i think maldraxxi defector)
+					-- 2. ylva, rare elite, inside 'feeder's hand and key,' which seems to drop on your first kill
+					-- 3. The Harrower's Key Ring, next to Kjellrun inside building at 66.9, 56.2
+					-- 4. Helgarde Supply Cache, roughly 67.3, 49.0.  chest did not glow/sparkle.  this dropped 2 keys, not sure if the 5th is used for anything
+					i(186607),	-- Nilganihmaht's Silver Ring
+				}),
 				o(369148, {	-- Glittering Nest Material
 				--	["questID"] = 64222,
 					["coord"] = { 38.3, 42.8, 1961 },	-- Korthia
@@ -27,9 +47,9 @@ _.Zones =
 					},
 				}),
 				o(369216, {	-- Helsworn Chest
-				--	disconnected right after i looted this, logged back in dead, don't have coords/questID.  it's in desmotaeron in one of the openable cells
+				--	disconnected right after i looted this, logged back in dead, don't have questID
 				--	["questID"] = ,
-				--	["coord"] = { , , THE_MAW },
+				--	["coord"] = { 66.0, 48.9, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
 							["achievementID"] = 15099,	-- Treasures of Korthia
