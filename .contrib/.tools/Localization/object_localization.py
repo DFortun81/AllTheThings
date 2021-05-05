@@ -12,8 +12,14 @@ from collections import namedtuple
 
 custom_objects_const = 9000000
 
-def get_localized_obj_name(obj_id, lang_code='en'):
-  URL = f'https://{lang_code}.wowhead.com/object={obj_id}'
+def get_localized_obj_name(obj_id, lang_code='en', game_version="retail"):
+  if game_version == "retail":
+    game_version = ""
+  URL = f'https://{lang_code}.'
+  if game_version != '':
+    URL += game_version + '.'
+  URL += f'wowhead.com/object={obj_id}'
+
   page = requests.get(URL)
   if 'notFound' in page.url:
     print(f"Can't find {obj_id} on Wowhead!")
@@ -157,7 +163,8 @@ def get_objects_info(filename):
           objects.append(Object(int(obj_id), 'GetSpellInfo', line))
           continue
         obj_name = re.findall('"([^"]*)"', line)[0]
-        if len(obj_name) == 0 and int(obj_id) < custom_objects_const: # new entry, need to get the name
+        # new entry, need to get the name, this only happens in enUS
+        if len(obj_name) == 0 and int(obj_id) < custom_objects_const:
           obj_name = get_localized_obj_name(obj_id)
           line = re.sub('\".*\"', f'"{obj_name}"', line)
           print(f'New object {obj_id}: {obj_name}')
@@ -176,15 +183,24 @@ def get_objects_info(filename):
 
   return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
+game_versions = ["retail", "classic", "tbc"]
+
 def get_new_object_line(obj_id, obj_name, lang_code):
   print(f'New object {obj_id}: {obj_name}')
-  localized_obj_name = get_localized_obj_name(obj_id, lang_code)
-  if obj_name == '': # those weird objects that don't have page in enUS even
+
+  for game_version in game_versions:
+    localized_obj_name = get_localized_obj_name(obj_id, lang_code, game_version)
+    if localized_obj_name != "":
+      break
+
+  if obj_name == '': # those weird objects that don't have page even in enUS
     new_object = f'\t--TODO: [{obj_id}] = \"\",\t--\n'
   elif lang_code == 'tw' or localized_obj_name == '': # no translation on Wowhead
     new_object = f'\t--TODO: [{obj_id}] = \"{obj_name}\",\t-- {obj_name}\n'
-  else: # all good
+  else: # all good (maybe)
     new_object = f'\t[{obj_id}] = \"{localized_obj_name}\",\t-- {obj_name}\n'
+    if game_version != "retail":
+      new_object = re.sub("\n", f"\t--TODO: This was taken from {game_version} Wowhead\n", new_object)
 
   print(new_object)
   return new_object
@@ -212,9 +228,10 @@ def sync_objects(objects, filename, lang_code):
 
   if new_tail:
     for i in range(ind, len(objects)):
-      obj_id, obj_name = objects[i]
+      obj_id, obj_name, _ = objects[i]
       new_object = get_new_object_line(obj_id, obj_name, lang_code)
       localized_objects.append(Object(obj_id, obj_name, new_object))
+      localized_ind += 1
   if localized_ind < len(localized_objects): # we need to delete objects in tail
     print('Deleted objects ')
     for del_obj in localized_objects[localized_ind:]: print(del_obj)
@@ -230,13 +247,13 @@ def sync_objects(objects, filename, lang_code):
   f.close()
 
 def copy_esES_objects_to_esMX():
-  es_objects = get_objects_info('../../locales/esES.lua').objects
-  _, esMX_start, esMX_end = get_objects_info('../../locales/esMX.lua')
-  f = open('../../locales/esMX.lua', "r")
+  es_objects = get_objects_info('../../../locales/esES.lua').objects
+  _, esMX_start, esMX_end = get_objects_info('../../../locales/esMX.lua')
+  f = open('../../../locales/esMX.lua', "r")
   contents = f.readlines()
   f.close()
   localized_obj_lines = [i.line for i in es_objects]
   contents[esMX_start:esMX_end + 1] = localized_obj_lines
-  f = open('../../locales/esMX.lua', "w")
+  f = open('../../../locales/esMX.lua', "w")
   f.writelines(contents)
   f.close()

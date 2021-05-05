@@ -750,7 +750,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
-	
+
 	-- Custom Icons for Holidays
 	["HOLIDAY_ID_ICONS"] = {
 		-- Examples --
@@ -4959,7 +4959,7 @@ app.L = {
 		[307330] = "Captain's Footlocker",
 		[307748] = "Venture Co. Letter",
 		[309498] = "Armor Stand",
-		[310709] = "Waterlogged Chest",											-- New Chest in Elywynn since 8.1
+		[310709] = "Waterlogged Chest",											-- New Chest in Elwynn since 8.1
 		[311155] = "Ancient Tablet",
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",												-- Loose Parts (Horde Won)

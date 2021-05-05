@@ -19,19 +19,19 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item wont be added, please put it into the correct section
+	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		-- Added in 9.1. Remove me soon!
-		i(179531),		-- Faesworn Reaper 
-		i(179515),		-- faesworn falchion 
-		i(179498),    -- Faesworn Barb
-		i(179564),    -- Faesworn Channeling Root
-		i(182322),    -- Faesworn Gavel
-		i(182323),    -- Faesworn Spellblade
-		i(179546),    -- Faesworn Warclub
-		i(179583),		-- faeswornwarbow
-		
-		
-		i(180491),		-- wingdancers spire 
+		i(179531),	-- Faesworn Reaper
+		i(179515),	-- Faesworn Falchion
+		i(179498),	-- Faesworn Barb
+		i(179564),	-- Faesworn Channeling Root
+		i(182322),	-- Faesworn Gavel
+		i(182323),	-- Faesworn Spellblade
+		i(179546),	-- Faesworn Warclub
+		i(179583),	-- Faesworn Warbow
+
+
+		i(180491),	-- Wingdancer's Spire
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
@@ -1184,19 +1184,19 @@ _.NeverImplemented =
 				i(96257),	-- Saurok Stalker's Legguards
 				i(96258),	-- Saurok Stalker's Spaulders
 			}),
-			i(163286),	-- honorbound vanguard's footguards
-			i(163291),	-- honorbound vanguard's strikers
-			i(163293),	-- honorbound vanguard's warhelm
-			i(163297),	-- honorbound vanguard's legguards
-			i(163302),	-- honorbound vanguard's spaulders
-			i(163304),	-- honorbound vanguard's waistcord
-			i(179855),	-- ardenweald covenant mail waist
-			i(179856),	-- ardenweald covenant mail shoulders
-			i(179857),	-- ardenweald covenant mail legs
-			i(179858),	-- ardenweald covenant mail head
-			i(179859),	-- ardenweald covenant mail hand
-			i(179860),	-- ardenweald covenant mail feet
-			i(179861),	-- ardenweald covenant mail chest
+			i(163286),	-- Honorbound Vanguard's Footguards
+			i(163291),	-- Honorbound Vanguard's Strikers
+			i(163293),	-- Honorbound Vanguard's Warhelm
+			i(163297),	-- Honorbound Vanguard's Legguards
+			i(163302),	-- Honorbound Vanguard's Spaulders
+			i(163304),	-- Honorbound Vanguard's Waistcord
+			i(179855),	-- Ardenweald Covenant Mail Waist
+			i(179856),	-- Ardenweald Covenant Mail Shoulders
+			i(179857),	-- Ardenweald Covenant Mail Legs
+			i(179858),	-- Ardenweald Covenant Mail Head
+			i(179859),	-- Ardenweald Covenant Mail Hand
+			i(179860),	-- Ardenweald Covenant Mail Feet
+			i(179861),	-- Ardenweald Covenant Mail Chest
 			i(166954),	-- Dread Gladiator's Chain Armor
 			i(166955),	-- Dread Gladiator's Chain Sabatons
 			i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -4047,7 +4047,7 @@ _.NeverImplemented =
 			i(68050),	-- Shatterscale Mightfish
 			i(49456),	-- Will of the Earth
 			i(50251),	-- Unknown
-			i(180460),	-- Primal Combatant decapitator
+			i(180460),	-- Primal Combatant's Decapitator
 			i(115292),	-- spectral axe
 			i(42214),	-- Savage Gladiator's Waraxe
 			i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
@@ -4315,19 +4315,19 @@ _.NeverImplemented =
 			i(69916),	-- Trollbane (Test)
 			i(109519),	-- Unknown
 			i(165265),	-- Unknown
-			i(182568),	-- npe weapon 2h axe str
-			i(177121),	-- honorbound decaitator
-			i(177591),	-- oathsworn headshopper
+			i(182568),	-- NPE Weapon 2H Axe STR
+			i(177121),	-- Honorbound Decapitator
+			i(177591),	-- Oathsworn Headchopper
 			i(180147),	--
 			i(180148),	--
 			i(180149),	--
 			i(180150),	--
 			i(180151),	--
-			i(180152),	-- drust 2h axe
+			i(180152),	-- Drust 2H Axe
 			i(183432),	--
 			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
-			i(117994),	-- Rename karabor honor guard axe
+			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
