@@ -533,6 +533,7 @@ _.ExpansionFeatures =
 						["description"] = "Available after obtaining your first artifact weapon.",
 					}),
 					q(42974, {	-- The Fate of Hodir
+						["maps"] = { 714 },	-- Niskara scenario map
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
@@ -633,45 +634,48 @@ _.ExpansionFeatures =
 				}),
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
-						i(140946, {	-- Battlelord's Armor Kit
-							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-						}),
-						i(139681, {	-- Battlelord's Chestplate
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139683, {	-- Battlelord's Gauntlets
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139687, {	-- Battlelord's Girdle
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(140985, {	-- Battlelord's Greater Armor Kit
-							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-						}),
-						i(139684, {	-- Battlelord's Greathelm
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139685, {	-- Battlelord's Legplates
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(140984, {	-- Battlelord's Lesser Armor Kit
-							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-						}),
-						i(139686, {	-- Battlelord's Pauldrons
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139682, {	-- Battlelord's Warboots
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139688, {	-- Battlelord's Wristguards
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(143727, {	-- Champion's Salute (TOY!)
-							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-						}),
-						i(140537),	-- Skyhold Bulwark
-						i(140559),	-- Skyhold Claymore
-						i(140557),	-- Skyhold Quickblade
+						["coord"] = { 56.1, 27.0, 695 },
+						["g"] = {
+							i(140946, {	-- Battlelord's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(139681, {	-- Battlelord's Chestplate
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139683, {	-- Battlelord's Gauntlets
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139687, {	-- Battlelord's Girdle
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140985, {	-- Battlelord's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(139684, {	-- Battlelord's Greathelm
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139685, {	-- Battlelord's Legplates
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140984, {	-- Battlelord's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
+							i(139686, {	-- Battlelord's Pauldrons
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139682, {	-- Battlelord's Warboots
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139688, {	-- Battlelord's Wristguards
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(140537),	-- Skyhold Bulwark
+							i(140559),	-- Skyhold Claymore
+							i(140557),	-- Skyhold Quickblade
+						},
 					}),
 				}),
 			},

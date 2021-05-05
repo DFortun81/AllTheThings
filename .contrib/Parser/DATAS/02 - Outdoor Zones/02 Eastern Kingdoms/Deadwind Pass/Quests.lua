@@ -157,13 +157,6 @@ _.Zones =
 					["provider"] = { "n", 113655 },	--
 				}),
 --]]
---[[
-				o(254007, {	-- Executioner's Altar
-					q(44154, {	-- The Rite of the Executioner
-						["classes"] = { WARLOCK },
-					}),
-				}),
-				]]--
 				q(44686, {	-- Thought Collection
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
@@ -187,6 +180,12 @@ _.Zones =
 					["lvl"] = 110,
 					["coord"] = { 46.9, 75.2, 42 },
 					["sourceQuest"] = 44764,	-- Demon in Disguise
+				}),
+				q(44154, {	-- The Rite of the Executioner
+					["provider"] = { "o", 254007 },	-- Executioner's Altar
+					["classes"] = { WARLOCK },
+					["coord"] = { 38.7, 73.9, 42 },
+					["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
 				}),
 				q(44487, {	-- Waterlogged Tome
 					["lvl"] = 110,

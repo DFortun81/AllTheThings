@@ -2169,6 +2169,7 @@ _.HiddenQuestTriggers =
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
 		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
+		q(43676),	-- Hidden Appearance Unlocked (triggered after learning hidden appearance for Ulthalesh on affliction lock)
 
 		--	Professions
 		--	Archaeology

@@ -461,6 +461,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 						["maps"] = { 628 },	-- Dalaran, Broken Isles
 					}),
+					q(46241, {	-- The Minions of Hel'nurath
+						["sourceQuests"] = {
+							46239,	-- Fel to the Core
+							46240,	-- Give Me Fuel, Give Me Fire
+							46238,	-- If You Build It
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.3, 38.5, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
@@ -491,7 +501,7 @@ _.ExpansionFeatures =
 						["coord"] = { 35.6, 38.4, 717 },
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["g"] = {
-							mount(241851),	-- Netherlord's Chaotic Wrathsteed
+							mount(232412),	-- Netherlord's Chaotic Wrathsteed
 						},
 					}),
 					q(40606, {	-- To Point the Way
@@ -550,9 +560,6 @@ _.ExpansionFeatures =
 					q(43895),	-- Sealing Fate: Gold
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
-					q(46241, {	-- The Minions of Hel'nurath
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(44227),	-- Unleashing our Wrath
