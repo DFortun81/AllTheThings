@@ -4641,5 +4641,13 @@ _.HiddenQuestTriggers =
 		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure
 		q(64253),	-- triggered when walking through a Maw Mirror on the last part of the Venthyr Assault (possibly for riding Draven up to the top area)
 		q(63819),	-- triggered when completing #63822, "Venthyr Assault"
+		
+		-- Treasures of Korthia achievement
+	--	q(),	-- Desmotaeron treasure - Helsworn Chest
+		q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
+		q(64244),	-- Korthia treasure - Anima Laden Egg
+		q(64222),	-- Korthia treasure - Glittering Nest Material
+		q(64264),	-- Korthia treasure - Infested Vestige
+		q(64238),	-- Korthia treasure - Lost Memento
 	}),
 };

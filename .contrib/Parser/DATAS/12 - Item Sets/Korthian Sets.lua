@@ -24,7 +24,7 @@ _.GearSets =
 				i(186668),	-- Korthian Caretaker's Sash
 				i(185886),	-- Korthian Caretaker's Shoulderpads*
 				i(185856),	-- Korthian Caretaker's Slippers
-				i(186663),	-- Korthian Caretaker's Vestments
+				i(186663),	-- Korthian Caretaker's Vestments*
 				i(186669),	-- Korthian Caretaker's Wraps
 			}),
 			f(5, {	-- Leather

@@ -529,6 +529,18 @@ _.Achievements =
 				crit(14),	-- Manifestation of Pain slain
 				crit(15),	-- Golmak the Monstrosity slain
 			}),
+			ach(15099, {	-- Treasures of Korthia
+				crit(1),	-- Glittering Nest Material
+				crit(2),	-- Forgotten Feather
+				crit(3),	-- Lost Memento
+				crit(4),	-- Dislodged Nest
+				crit(5),	-- Anima Laden Egg
+				crit(6),	-- Displaced Relic
+				crit(7),	-- Helsworn Chest
+				crit(8),	-- Jeweled Heart
+				crit(9),	-- Infested Vestige
+				crit(10),	-- Offering Box
+			}),
 		}),
 	}),
 };

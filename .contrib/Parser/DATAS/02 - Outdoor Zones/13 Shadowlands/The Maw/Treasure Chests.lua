@@ -7,13 +7,64 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
 			n(-212, {	-- Treasure Chest
-				--[[ currently just dropped a grey item, 15 anima, and 14 gold.  not sure if this is a one-time chest or repeatable or tied to an upcoming achievement.  no objectID on wowhead yet either
-				o(, {	-- Jeweled Heart of Ezekiel
-					["description"] = "In a small cave.",
-					["questID"] = 64261,
-					["coord"] = { 66.5, 62.2, THE_MAW },
+				o(369194, {	-- Anima Laden Egg
+					["description"] = "In a tree.",
+				--	["questID"] = 64244,
+					["coord"] = { 29.5, 53.5, 1961 },	-- Korthia
+					["g"] = {
+						crit(5, {	-- Anima Laden Egg
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
 				}),
-				--]]
+				o(369148, {	-- Glittering Nest Material
+				--	["questID"] = 64222,
+					["coord"] = { 38.3, 42.8, 1961 },	-- Korthia
+					["g"] = {
+						crit(1, {	-- Glittering Nest Material
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
+				o(369216, {	-- Helsworn Chest
+				--	disconnected right after i looted this, logged back in dead, don't have coords/questID.  it's in desmotaeron in one of the openable cells
+				--	["questID"] = ,
+				--	["coord"] = { , , THE_MAW },
+					["g"] = {
+						crit(7, {	-- Helsworn Chest
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
+				o(369225, {	-- Infested Vestige
+					["description"] = "At the back of the cave.",
+				--	["questID"] = 64264,
+					["coord"] = { 40.1, 59.0, 1961 },	-- Korthia
+					["g"] = {
+						crit(9, {	-- Infested Vestige
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
+				o(369224, {	-- Jeweled Heart of Ezekiel
+					["description"] = "In a small cave.",
+				--	["questID"] = 64261,
+					["coord"] = { 66.5, 62.2, THE_MAW },
+					["g"] = {
+						crit(8, {	-- Jeweled Heart
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
+				o(369172, {	-- Lost Memento
+				--	["questID"] = 64238,
+					["coord"] = { 52.9, 14.7, 1961 },	-- Korthia
+					["g"] = {
+						crit(3, {	-- Lost Memento
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
 				n(173841, {	-- Paper Scrap
 					["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
 					["coord"] = { 19.3, 33.5, THE_MAW },

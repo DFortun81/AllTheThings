@@ -1003,6 +1003,7 @@ pet(181267, 2957);	-- Writhing Spine
 -----------------
 pet(185919, 3097);	-- Flawless Amethyst Baubleworm
 pet(186559, 3121);	-- Grappling Gauntlet
+pet(186551, 3132);	-- Mord'al Eveningstar
 pet(186537, 3104);	-- Ruby Baubleworm
 pet(186539, 3101);	-- Sly
 pet(186535, 3106);	-- Topaz Baubleworm
