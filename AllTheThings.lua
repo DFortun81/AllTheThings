@@ -139,11 +139,14 @@ local function Callback(method, ...)
 		app.__callbacks = {};
 	end
 	if not app.__callbacks[method] then
-		app.__callbacks[method] = true;
+		app.__callbacks[method] = ... and {...} or true;
 		-- print("Callback:",method, ...)
-		local newCallback = function(...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
 			app.__callbacks[method] = nil;
-			method(...);
+			-- print("Callback Running",method, args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Callback Done",method)
 		end;
 		C_Timer.After(0, newCallback);
 	end
@@ -160,13 +163,40 @@ local function SelfCallback(self, name, method, ...)
 		app.__callbacks[self] = {};
 	end
 	if not app.__callbacks[self][name] then
-		app.__callbacks[self][name] = true;
-		-- print("Callback:",self,name, ...)
-		local newCallback = function(...)
-				app.__callbacks[self][name] = nil;
-				method(...);
-			end;
+		app.__callbacks[self][name] = ... and {...} or true;
+		-- print("Self-Callback:", self, name, ...)
+		local newCallback = function()
+			local args = app.__callbacks[self][name];
+			app.__callbacks[self][name] = nil;
+			-- print("Self-Callback Running",self,name,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Self-Callback Done",self,name)
+		end;
 		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
+local function AfterCombatCallback(method, ...)
+	if not InCombatLockdown() then Callback(method, ...); return; end
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__combatcallbacks then
+		app.__combatcallbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		-- If in combat, register to trigger on leave combat
+		-- print("AfterCombatCallback:Added",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- print("AfterCombatCallback:Running",method,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("AfterCombatCallback:Done",method)
+		end;
+		tinsert(app.__combatcallbacks, 1, newCallback);
+		app:RegisterEvent("PLAYER_REGEN_ENABLED");
 	end
 end
 local constructor = function(id, t, typeID)
@@ -9068,6 +9098,7 @@ local function QueryCompletedQuests()
 	end
 end
 local function RefreshQuestCompletionState(questID)
+	-- print("QuestRefresh",questID)
 	if not questID then
 		QueryCompletedQuests();
 	else
@@ -9079,6 +9110,9 @@ local function RefreshQuestCompletionState(questID)
 	end
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache)
+end
+app.RefreshQuestInfo = function(questID)
+	AfterCombatCallback(RefreshQuestCompletionState, questID);
 end
 
 -- Recipe Lib
@@ -14312,9 +14346,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
-		local function RefreshLocationCoroutine()
-			-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
-			while InCombatLockdown() do coroutine.yield(); end
+		local function RefreshLocation()
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
 			while not mapID or mapID < 0 do
@@ -14332,8 +14364,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			if app.InWorld and app.IsReady and app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
+				AfterCombatCallback(RefreshLocation);
 			end
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
@@ -16514,7 +16546,7 @@ app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
 	local _,event = CombatLogGetCurrentEventInfo();
 	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
-		RefreshQuestCompletionState()
+		app.RefreshQuestInfo();
 	end
 end
 -- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
@@ -16526,7 +16558,7 @@ app.events.LOOT_OPENED = function()
 		if(type == "GameObject") then
 		  local text = GameTooltipTextLeft1:GetText()
 		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
-		  RefreshQuestCompletionState()
+		  app.RefreshQuestInfo();
 	   end
 	end
 end
@@ -18133,13 +18165,15 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
-	RefreshQuestCompletionState()
+	-- print("PLAYER_LEVEL_UP")
+	app.RefreshQuestInfo();
 	app.Level = newLevel;
 	app:UpdateWindows();
 	app.Settings:Refresh();
 end
 app.events.BOSS_KILL = function(id, name, ...)
-	RefreshQuestCompletionState()
+	-- print("BOSS_KILL")
+	app.RefreshQuestInfo();
 	-- This is so that when you kill a boss, you can trigger
 	-- an automatic update of your saved instance cache.
 	-- (It does lag a little, but you can disable this if you want.)
@@ -18161,7 +18195,8 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
-	RefreshQuestCompletionState()
+	-- print("HEIRLOOMS_UPDATED")
+	app.RefreshQuestInfo();
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
@@ -18174,13 +18209,16 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	RefreshQuestCompletionState(questID);
+	-- print("QUEST_TURNED_IN")
+	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_LOG_UPDATE")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_FINISHED = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_FINISHED")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
@@ -18226,6 +18264,19 @@ app.events.PET_BATTLE_CLOSE = function(...)
 end
 app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
+end
+app.events.PLAYER_REGEN_ENABLED = function()
+	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
+	-- print("PLAYER_REGEN_ENABLED:Begin")
+	if app.__combatcallbacks and #app.__combatcallbacks > 0 then
+		local i = #app.__combatcallbacks;
+		for c=i,1,-1 do
+			-- print("PLAYER_REGEN_ENABLED:",c)
+			app.__combatcallbacks[c]();
+			app.__combatcallbacks[c] = nil;
+		end
+	end
+	-- print("PLAYER_REGEN_ENABLED:End")
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
