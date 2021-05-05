@@ -94,7 +94,7 @@ def localize_objects(filename, lang_code):
       obj_name = localized_dict[line_ind]
       obj_id = todo_dict[line_ind]
       original_obj_name = original_obj_names[line_ind]
-      line = f"\t[{obj_id}] = \"obj_name\"\t-- {original_obj_name}\n"
+      line = f"\t[{obj_id}] = \"{obj_name}\",\t-- {original_obj_name}\n"
     print(line, end='') # this writes to file
 
 def sort_objects(filename):
