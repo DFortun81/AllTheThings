@@ -92,9 +92,9 @@ def localize_objects(filename, lang_code):
     line_ind = fileinput.filelineno() - 1 # filelineno() indexing starts from 1
     if line_ind in localized_dict:
       obj_name = localized_dict[line_ind]
-      line = re.sub('\".*\"', f'"{obj_name}"', line)
-      line = re.sub('--TODO: ', '', line)
-      line = re.sub('\n', f'\t-- {original_obj_names[line_ind]}\n', line)
+      obj_id = todo_dict[line_ind]
+      original_obj_name = original_obj_names[line_ind]
+      line = f"\t[{obj_id}] = \"obj_name\"\t-- {original_obj_name}\n"
     print(line, end='') # this writes to file
 
 def sort_objects(filename):
