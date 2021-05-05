@@ -6579,10 +6579,11 @@ local fields = {
 	["filterID"] = function(t)
 		return 112;
 	end,
-	["trackable"] = function(t)
+	["trackable"] = app.ReturnTrue,
+	["collectible"] = function(t)
 		return app.CollectibleReputations;
 	end,
-	["saved"] = function(t)
+	["collected"] = function(t)
 		local factionID = t.factionID;
 		if app.CurrentCharacter.Factions[factionID] then return 1; end
 		if t.standing >= t.maxstanding then
@@ -6615,6 +6616,21 @@ local fields = {
 					return 2;
 				end
 			end
+		end
+	end,
+	["saved"] = function(t)
+		local factionID = t.factionID;
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
+		if t.standing >= t.maxstanding then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
+		end
+		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
+		if friendID and not nextFriendThreshold then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
 		end
 	end,
 	["title"] = function(t)
@@ -6678,8 +6694,6 @@ local fields = {
 		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
-fields.collectible = fields.trackable;
-fields.collected = fields.saved;
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
