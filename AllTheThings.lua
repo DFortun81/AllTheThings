@@ -7782,7 +7782,10 @@ local itemFields = {
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
 				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
+					app.RecursiveGroupRequirementsFilter(ref) and
+					-- don't include items which are from something the current character cannot complete
+					not GetRelativeValue(t, "altcollected") then
 					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
