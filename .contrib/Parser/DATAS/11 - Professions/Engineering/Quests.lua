@@ -165,7 +165,7 @@ profession(ENGINEERING, {
 				{ "i", 4407, 1 },	-- Accurate Scope
 			},
 			["requireSkill"] = ENGINEERING,
-			["u"] = MOP_PHASE_ONE,
+			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
 		q(29475, {	-- Goblin Engineering
@@ -201,7 +201,7 @@ profession(ENGINEERING, {
 				{ "i", 4384, 5 },	-- Explosive Sheep
 			},
 			["requireSkill"] = ENGINEERING,
-			["u"] = MOP_PHASE_ONE,
+			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
 		q(3526, {	-- Goblin Engineering
