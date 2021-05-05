@@ -71,9 +71,8 @@ def get_localized_names(todo_dict, lang_code):
     for obj_line_ind, obj_id in todo_dict.items():
         localized_obj_name = get_localized_obj_name(obj_id, lang_code)
 
-        if (
-            localized_obj_name == ""
-        ):  # no obj_id found, no heading found or no localization
+        # no obj_id found, no heading found or no localization
+        if localized_obj_name == "":
             continue
 
         localized_dict[obj_line_ind] = localized_obj_name
