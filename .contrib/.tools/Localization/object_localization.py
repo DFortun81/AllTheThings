@@ -12,12 +12,16 @@ from collections import namedtuple
 
 custom_objects_const = 9000000
 
-def get_localized_obj_name(obj_id, lang_code='en', game_version="retail"):
-  if game_version == "retail":
-    game_version = ""
-  URL = f'https://{lang_code}.'
-  if game_version != '':
-    URL += game_version + '.'
+def get_localized_obj_name(obj_id, lang_code='en', game_flavor="retail"):
+  if lang_code == "en":
+    lang_code = ""
+  if game_flavor == "retail":
+    game_flavor = ""
+  URL = "https://"
+  if lang_code != "":
+    URL += f"{lang_code}."
+  if game_flavor != "":
+    URL += f"{game_flavor}."
   URL += f'wowhead.com/object={obj_id}'
 
   page = requests.get(URL)
@@ -54,7 +58,8 @@ def get_todo_lines_and_og_names(lines):
             ind += 1
             continue
           todo_dict[ind] = obj_id
-          original_obj_names[ind] = re.search(r'\"(.*?)\"', line).group(1)
+          # have to get name from Wowhead cause it might be name from non retail in this line
+          original_obj_names[ind] = get_localized_obj_name(obj_id)
         ind += 1
       break
   return todo_dict, original_obj_names
@@ -183,13 +188,13 @@ def get_objects_info(filename):
 
   return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
-game_versions = ["retail", "classic", "tbc"]
+game_flavors = ["retail", "classic", "tbc"]
 
 def get_new_object_line(obj_id, obj_name, lang_code):
   print(f'New object {obj_id}: {obj_name}')
 
-  for game_version in game_versions:
-    localized_obj_name = get_localized_obj_name(obj_id, lang_code, game_version)
+  for game_flavor in game_flavors:
+    localized_obj_name = get_localized_obj_name(obj_id, lang_code, game_flavor)
     if localized_obj_name != "":
       break
 
@@ -199,8 +204,8 @@ def get_new_object_line(obj_id, obj_name, lang_code):
     new_object = f'\t--TODO: [{obj_id}] = \"{obj_name}\",\t-- {obj_name}\n'
   else: # all good (maybe)
     new_object = f'\t[{obj_id}] = \"{localized_obj_name}\",\t-- {obj_name}\n'
-    if game_version != "retail":
-      new_object = re.sub("\n", f"\t--TODO: This was taken from {game_version} Wowhead\n", new_object)
+    if game_flavor != "retail":
+      new_object = re.sub("\n", f"\t--TODO: This was taken from {game_flavor} Wowhead\n", new_object)
 
   print(new_object)
   return new_object
