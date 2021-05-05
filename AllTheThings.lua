@@ -14366,9 +14366,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		local function RefreshLocation()
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
-			while not mapID or mapID < 0 do
-				coroutine.yield();
-				mapID = app.GetCurrentMapID();
+			if not mapID or mapID < 0 then
+				AfterCombatCallback(RefreshLocation);
+				return;
 			end
 			OpenMiniList(mapID);
 		end
