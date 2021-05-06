@@ -437,11 +437,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 90251 },	-- Aponi Brightmane
 				}),
-				q(43394, {	-- Crossing Legion Lines
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 111044 },	-- Lord Maxwell Tyrosus
-					["maps"] = { 748 },
-				}),
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
 					["provider"] = { "n", 93538 },	-- Dariness the Learned

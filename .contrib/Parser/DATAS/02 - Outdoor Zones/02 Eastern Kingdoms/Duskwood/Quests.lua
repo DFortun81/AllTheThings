@@ -90,13 +90,6 @@ _.Zones =
 					["provider"] = { "o", 204824 },	-- Lightforged Arch
 					["sourceQuest"] = 26753,	-- The Halls of the Dead
 				}),
-				q(43382, {	-- Champion: Natalie Seline
-					["provider"] = { "n", 110684 },	-- Natalie Seline
-					["lvl"] = 110,
-					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { PRIEST },
-					["sourceQuest"] = 43392,	-- Into the Void
-				}),
 				q(26685, {	-- Classy Glass
 					["provider"] = { "n", 276 },	-- Viktori Prism'Antras
 					["coord"] = { 79.5, 47.4, 47 },
@@ -204,13 +197,6 @@ _.Zones =
 					["coord"] = { 72.4, 46.9, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26667,	-- The Stolen Letters
-				}),
-				q(43392, {	-- Into the Void
-					["provider"] = { "n", 111041 },	-- Micah Belford
-					["lvl"] = 110,
-					["coord"] = { 24.4, 37.8, 47 },
-					["classes"] = { PRIEST },
-					["sourceQuest"] = 43391,	-- Secrets of the Void
 				}),
 				q(26676, {	-- Juice Delivery
 					["provider"] = { "n", 273 },	-- Tavernkeep Smitts
@@ -339,13 +325,6 @@ _.Zones =
 				q(26673, {	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
 					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(43393, {	-- Rising Shadows
-					["provider"] = { "n", 110684 },	-- Natalie Seline
-					["lvl"] = 110,
-					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { PRIEST },
-					["sourceQuest"] = 43392,	-- Into the Void
-				}),
 				q(1383,  {	-- Nothing But The Truth
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -375,13 +354,6 @@ _.Zones =
 					["g"] = {
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
 					},
-				}),
-				q(43391, {	-- Secrets of the Void
-					["provider"] = { "n", 111041 },	-- Micah Belford
-					["lvl"] = 110,
-					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { PRIEST },
-					--["sourceQuest"] = ,	-- TODO:: determine sourceQuest
 				}),
 				q(26777, {	-- Soothing Spirits
 					["provider"] = { "n", 43731 },	-- Sister Elsington
