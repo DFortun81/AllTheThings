@@ -8206,44 +8206,47 @@ app.CreateMount = function(id, t)
 	end
 end
 
-app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
-	-- print("NEW_MOUNT_ADDED", newMountID, ...);
-	StartCoroutine("RefreshMountCollection" .. (newMountID or "ALL"), function()
-		while InCombatLockdown() do coroutine.yield(); end
-
-		-- Refresh Mounts
-		local collectedSpells = ATTAccountWideData.Spells;
-		if newMountID then
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+-- Refresh a specific Mount or all Mounts if not provided with a specific ID
+local RefreshMounts = function(newMountID)
+	local collectedSpells, newSpellIDResults = ATTAccountWideData.Spells;
+	-- Think learning multiple mounts at once or multiple mounts without leaving combat
+	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
+	-- plus it's not laggy now to do that so it should be fine
+	
+	-- if newMountID then
+	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+	-- 	if spellID and isCollected then
+	-- 		if not collectedSpells[spellID] then
+	-- 			collectedSpells[spellID] = 1;
+	-- 			app.CurrentCharacter.Spells[spellID] = 1;
+	-- 			newSpellIDResults = SearchForField("spellID", spellID);
+	-- 		end
+	-- 	end
+	-- else
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
 				if not collectedSpells[spellID] then
 					collectedSpells[spellID] = 1;
 					app.CurrentCharacter.Spells[spellID] = 1;
-					UpdateSearchResults(SearchForField("spellID", spellID));
-					app:PlayRareFindSound();
-				end
-			end
-		else
-			local anyNewMounts = false;
-			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-				if spellID and isCollected then
-					if not collectedSpells[spellID] then
-						collectedSpells[spellID] = 1;
-						app.CurrentCharacter.Spells[spellID] = 1;
-						anyNewMounts = true;
+					if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
+					else
+						for _,result in ipairs(SearchForField("spellID", spellID)) do
+							tinsert(newSpellIDResults, result);
+						end
 					end
 				end
 			end
-
-			if anyNewMounts then
-				-- Wait a frame before harvesting item collection status.
-				coroutine.yield();
-				app:PlayRareFindSound();
-				app:RefreshData(false, true);
-			end
 		end
-	end);
+	-- end
+
+	if newSpellIDResults then
+		UpdateSearchResults(newSpellIDResults);
+		app:PlayRareFindSound();
+	end
+end
+app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
+	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
 end)();
