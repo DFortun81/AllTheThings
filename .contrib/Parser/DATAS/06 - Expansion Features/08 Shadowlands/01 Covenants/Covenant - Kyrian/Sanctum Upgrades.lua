@@ -509,7 +509,7 @@ _.ExpansionFeatures =
 									}),
 								}),
 								--[[
-								n(, {	-- 
+								n(, {	--
 									n(-972, {	-- Courage
 									}),
 									n(-973, {	-- Loyalty
