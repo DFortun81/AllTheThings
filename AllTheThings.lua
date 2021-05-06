@@ -4759,26 +4759,27 @@ local function ExportData(group)
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
 	end
 end
-local function RefreshSavesCoroutine()
-	-- While the player is in combat, wait for combat to end.
-	while InCombatLockdown() do coroutine.yield(); end
-
-	-- While the player is still logging in, wait.
-	while not app.GUID do coroutine.yield(); end
-
-	-- While the player is still waiting for information, wait.
-	-- NOTE: Usually, this is only 1 wait.
-	local counter = 600;
+local function RefreshSavesCallback()
+	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
+	app.refreshingSaves = app.refreshingSaves or 30;
+	-- Make sure there's info available to check save data
 	local saves = GetNumSavedInstances();
-	while counter > 0 and saves and saves < 1 do
-		counter = counter - 1;
-		coroutine.yield();
-		saves = GetNumSavedInstances();
+	-- While the player is still logging in, wait.
+	if not app.GUID then
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
 	end
-	if counter < 1 then
-		app.refreshingSaves = false;
-		-- Need to return if hitting the limit
-		-- A character who has never entered an instance will hit this
+	
+	-- While the player is still waiting for information, wait.
+	if saves and saves < 1 and app.refreshingSaves > 0 then
+		app.refreshingSaves = app.refreshingSaves - 1;
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Too many attempts, so give up
+	if app.refreshingSaves <= 0 then
+		app.refreshingSaves = nil;
 		return;
 	end
 
@@ -4890,10 +4891,10 @@ local function RefreshSavesCoroutine()
 	end
 
 	-- Mark that we're done now.
-	app:UpdateWindows(nil, true);
+	app:UpdateWindows();
 end
 local function RefreshSaves()
-	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
+	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
@@ -18054,7 +18055,6 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		app:RegisterEvent("QUEST_ACCEPTED");
-		RefreshSaves();
 
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
@@ -18077,6 +18077,8 @@ app.events.VARIABLES_LOADED = function()
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 		-- print("ATT is Ready!");
+		
+		RefreshSaves();
 
 		if needRefresh then
 			-- collection refresh includes data refresh
@@ -18207,7 +18209,7 @@ app.events.LOOT_CLOSED = function()
 	RequestRaidInfo();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
-	-- We got new information, not refresh the saves. :D
+	-- We got new information, now refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
