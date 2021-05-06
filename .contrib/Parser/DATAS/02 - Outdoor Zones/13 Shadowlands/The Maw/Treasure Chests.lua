@@ -49,7 +49,7 @@ _.Zones =
 				o(369216, {	-- Helsworn Chest
 				--	disconnected right after i looted this, logged back in dead, don't have questID
 				--	["questID"] = ,
-				--	["coord"] = { 66.0, 48.9, THE_MAW },
+					["coord"] = { 66.0, 48.9, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
 							["achievementID"] = 15099,	-- Treasures of Korthia

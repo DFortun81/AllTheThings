@@ -1126,6 +1126,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63794, {	-- Broker's Bounty: Hungering Behemoth
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
 				q(63790, {	-- Broker's Bounty: Lord Azzorak
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
@@ -1317,6 +1323,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
+				q(63950, {	-- Razorwing Talons
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178837 },	-- Lord Herne
+					["isDaily"] = true,
+					["coord"] = { 61.3, 21.3, KORTHIA },
+				}),
 				q(63777, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
@@ -1358,12 +1370,6 @@ _.Zones =
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
-				}),
-				q(63950, {	-- Slitherwing Talons
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 178837 },	-- Lord Herne
-					["isDaily"] = true,
-					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
 				q(64070, {	-- Staying Scrappy
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
