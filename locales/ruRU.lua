@@ -565,7 +565,7 @@ for key,value in pairs({
 		[110] = "Звания";									-- Titles
 		[114] = "Экипировка Транспорта";					-- Mount Equipment
 
-	[999] = "Предметы Событий";
+	[999] = "Предметы Событий";								-- Event Item
 })
 do a[key] = value; end
 

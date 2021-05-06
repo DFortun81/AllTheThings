@@ -576,7 +576,7 @@ for key,value in pairs({
 		--TODO: [110] = "Titles";									-- Titles
 		--TODO: [114] = "Mount Equipment";							-- Mount Equipment
 
-	--TODO: [999] = "Event Item";
+	--TODO: [999] = "Event Item";									-- Event Item
 })
 do a[key] = value; end
 
