@@ -513,7 +513,7 @@ profession(COOKING, {
 			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 70,
-			["groups"] = {
+			["g"] = {
 				crit(1, {	-- Revenge is Tasty
 					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
@@ -524,7 +524,7 @@ profession(COOKING, {
 						{ "i", 27659, 3 },	-- Warp Burger
 						{ "i", 33838, 1 },	-- Giant Kaliri Wing
 					},
-					["groups"] = {
+					["g"] = {
 						i(33839),	-- Kaliri Stew
 					},
 				}),
@@ -600,7 +600,7 @@ profession(COOKING, {
 			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 70,
-			["groups"] = {
+			["g"] = {
 				crit(4, {	-- Soup for the Soul
 					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
@@ -609,7 +609,7 @@ profession(COOKING, {
 					["cost"] = {
 						{ "i", 27658, 4 },	-- Roasted Clefthoof
 					},
-					["groups"] = {
+					["g"] = {
 						i(33850),	-- Spiritual Soup
 					},
 				}),
@@ -629,7 +629,7 @@ profession(COOKING, {
 			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 70,
-			["groups"] = {
+			["g"] = {
 				crit(2, {	-- Super Hot Stew
 					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
@@ -640,7 +640,7 @@ profession(COOKING, {
 						{ "i", 31672, 2 },	-- Mok'Nathal Shortribs
 						{ "i", 31673, 1 },	-- Crunchy Serpent
 					},
-					["groups"] = {
+					["g"] = {
 						i(33848),	-- Demon Broiled Surprise
 					},
 				}),
@@ -650,7 +650,6 @@ profession(COOKING, {
 		}),
 		q(6611, {	-- To Gadgetzan You Go!
 			["qg"] = 3399,	-- Zamja
-			["coord"] = { , ORGRIMMAR },
 			-- #if AFTER CATA
 			["coord"] = { 32.2, 69.4, ORGRIMMAR },
 			-- #else

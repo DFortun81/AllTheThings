@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1565, {	-- Ardenweald
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
 			filter(101, {	-- Battle Pets
 				p(3081, {	-- Decay Grub
 					["crs"] = { 176020 },	-- Decay Grub

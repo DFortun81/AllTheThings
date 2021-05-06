@@ -1423,10 +1423,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27400, {	-- Mastering the Arcane
-					["sourceQuests"] = { 27277 },	-- An Audience with Ureda
-					["provider"] = { "n", 47246 },	-- Ureda
+					-- ["sourceQuests"] = { 27277 },	-- An Audience with Ureda
+					["sourceQuests"] = { 27277 },	-- An Audience with Feenix Arcshine
+					-- ["provider"] = { "n", 47246 },	-- Ureda
+					["provider"] = { "n", 168626 },	-- Feenix Arcshine
 					["classes"] = { MAGE },
-					["coord"] = { 51.2, 72.4, 85 },
+					-- ["coord"] = { 48.4, 62.6, 85 },	-- Ureda / Org
+					["coord"] = { 74.6, 43.5, 85 },	-- Feenix Arcshine / Org
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65468),	-- Staff of the Arcane Path
@@ -1906,10 +1909,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28458, {	-- The Pyromancer's Grimoire
-					["sourceQuests"] = { 28300 },	-- Meet with Ureda
-					["provider"] = { "n", 47246 },	-- Ureda
+					-- ["sourceQuests"] = { 28300 },	-- Meet with Ureda
+					["sourceQuests"] = { 28300 },	-- Meet with Feenix Arcshine
+					-- ["provider"] = { "n", 47246 },	-- Ureda
+					["provider"] = { "n", 168626 },	-- Feenix Arcshine
 					["classes"] = { MAGE },
-					["coord"] = { 48.4, 62.6, 85 },
+					-- ["coord"] = { 48.4, 62.6, 85 },	-- Ureda / Org
+					["coord"] = { 74.6, 43.5, 85 },	-- Feenix Arcshine / Org
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65626),	-- Hood of the Arcane Path

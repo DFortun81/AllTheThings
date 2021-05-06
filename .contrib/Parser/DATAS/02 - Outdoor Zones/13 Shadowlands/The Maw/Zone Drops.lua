@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1543, {	-- The Maw
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
 			n(ZONEDROPS, {
 				i(182771, {	-- Flickering Eviscerator
 					["crs"] = {

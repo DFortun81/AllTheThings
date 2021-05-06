@@ -12,6 +12,262 @@ _.ExpansionFeatures =
 					n(-152,  {	-- Garrison Campaign
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							-- 1st Quest of Garrison Campaign
+							q(32979, {    -- Garrison Campaign: Farseer's Rock
+								["provider"] = { "n", 74808 },    -- Thrall
+								["coord"] = { 51.0, 37.4, 590 },    -- Frostwall
+								["races"] = HORDE_ONLY,
+							}),
+							-- 2nd quest of Garrison Campaign: Farseer's Rock questchain
+							q(32980, {    -- Eaters of the Elements
+								["sourceQuests"] = { 32979 },    -- Garrison Campaign: Farseer's Rock
+								["provider"] = { "n", 72230 },    -- Draka
+								["coord"] = { 57.6, 41.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Farseer's Rock questchain
+							q(33444, {    -- Eatercology
+								["sourceQuests"] = { 32980 },    -- Eaters of the Elements
+								["provider"] = { "n", 72230 },    -- Draka
+								["coord"] = { 57.2, 41.6, 525 },    -- Frostfire
+								["races"] = HORDE_ONLY,
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32983, {    -- In the Shadow of Giants
+								["sourceQuests"] = { 32980 },    -- Eaters of the Elements
+								["provider"] = { "n", 74253 },    -- Farseer Drek'Thar
+								["coord"] = { 57.6, 41.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+							}),
+							-- 5th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32984, {    -- The Ascent
+								["sourceQuests"] = {
+									33444,    -- Eatercology
+									32983,    -- In the Shadow of Giants
+								},
+								["provider"] = { "n", 74253 },    -- Farseer Drek'Thar
+								["coord"] = { 74.0, 29.6, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+							}),
+							-- 6th quest of Garrison Campaign: Farseer's Rock questchain
+							q(32985, {    -- Fury of Frostfire
+								["sourceQuests"] = { 32984 },    -- The Ascent
+								["provider"] = { "n", 74330 },    -- Farseer Drek'Thar
+								["coord"] = { 70.0, 38.2, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(119145),    -- Firefury Totem
+								},
+							}),
+							-- 7th (last) quest of Garrison Campaign: Farseer's Rock questchain
+							q(33427, {    -- Ours is the Fury
+								["sourceQuests"] = { 32985 },    -- Fury of Frostfire
+								["provider"] = { "n", 76622 },    -- Thrall
+								["coord"] = { 70.0, 38.2, 525 },    -- Frostfire Ridge
+								["races"] = HORDE_ONLY,
+							}),
+							-- 1st quest of Garrison Campaign: Grinding Gears questchain
+							q(34034, {    -- Garrison Campaign: Grinding Gears
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 78487 },    -- Rokhan
+								["coord"] = { 51.6, 51.6, 590 },    -- Frostwall
+							}),
+							-- 2nd quest of Garrison Campaign: Grinding Gears questchain
+							q(34035, {    -- I Know The Drill!
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34034 },    -- Garrison Campaign: Grinding Gears
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 78.2, 55.0, 525 },    -- Frostfire Ridge
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Grinding Gears questchain
+							q(34040, {    -- Maker's Mark
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34035 },    -- I Know The Drill!
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 80.0, 56.2, 525 },    -- Frostfire Ridge
+							}),
+							-- 3rd/4th quest of Garrison Campaign: Grinding Gears questchain
+							q(34041, {    -- Four Finger Discount
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34035 },    -- I Know The Drill!
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 80.0, 56.2, 525 },    -- Frostfire Ridge
+							}),
+							-- 5th quest of Garrison Campaign: Grinding Gears questchain
+							q(34042, {    -- A Fellow Gearhead
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									34040,    -- Maker's Mark
+									34041,    -- Four Finger Discount
+								},
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 85.8, 45.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 6th quest of Garrison Campaign: Grinding Gears questchain
+							q(34039, {    -- WANTED: Overlord Blackhammer
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34042 },    -- A Fellow Gearhead
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 85.8, 45.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 7th (last) quest of Garrison Campaign: Grinding Gears questchain
+							q(34078, {    -- Payment Due for Services Rendered
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34039 },    -- WANTED: Overlord Blackhammer
+								["provider"] = { "n", 77928 },    -- Gazlowe
+								["coord"] = { 85.8, 45.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 1st quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34309, {    -- Garrison Campaign: The Search for Shadow Hunter Bwu'ja
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 78487 },    -- Rokhan
+								["coord"] = { 51.6, 51.6, 590 },    -- Frostwall
+							}),
+							-- 2nd quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34314, {    -- Out of the Chains
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34309 },    -- Garrison Campaign: The Search for Shadow Hunter Bwu'ja
+								["provider"] = { "n", 78659 },    -- Shadow Hunter Bwu'ja
+								["coord"] = { 51.8, 16.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 3rd quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34315, {    -- Gearing Up
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34314 },    -- Out of the Chains
+								["provider"] = { "n", 78659 },    -- Shadow Hunter Bwu'ja
+								["coord"] = { 51.8, 16.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 4th quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34316, {    -- Seeking the Truth
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34315 },    -- Gearing Up
+								["provider"] = { "n", 78746 },    -- Shadow Hunter Bwu'ja
+								["coord"] = { 51.8, 16.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 5th quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34381, {    -- The Shadow Gate
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34316 },    -- Seeking the Truth
+								["provider"] = { "n", 78785 },    -- Shadow Hunter Bwu'ja
+								["coord"] = { 40.6, 21.8, 525 },    -- Frostfire Ridge
+							}),
+							-- 6th/7th quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34469, {    -- Cleansing the Souls
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34381 },    -- The Shadow Gate
+								["provider"] = { "n", 78428 },    -- Orlana Strongbrow
+								["coord"] = { 39.6, 23.4, 525 },    -- Frostfire Ridge
+							}),
+							-- 6th/7th quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34318, {    -- The Totems That Bind
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 34381 },    -- The Shadow Gate
+								["provider"] = { "n", 78428 },    -- Orlana Strongbrow
+								["coord"] = { 39.6, 23.4, 525 },    -- Frostfire Ridge
+							}),
+							-- 8th quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
+							q(34319, {    -- Soulgrinder Survivor
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									34469,    -- Cleansing the Souls
+									34318,    -- The Totems That Bind
+								},
+								["provider"] = { "n", 78428 },    -- Orlana Strongbrow
+								["coord"] = { 39.6, 23.4, 525 },    -- Frostfire Ridge
+								["g"] = {
+									i(119151),    -- Soulgrinder
+								},
+							}),
+							-- 1st quest of Garrison Campaign: The Sargerei (H) questchain
+							q(35186, {    -- Garrison Campaign: The Sargerei
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 83858 },    -- Khadgar's Servant
+								["coord"] = { 52.0, 39.8, 590 },    -- Frostwall
+							}),
+							-- 2nd quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35187, {    -- Infiltrating the Sargerei
+								["sourceQuests"] = {
+									35185,    -- Garrison Campaign: The Sargerei (A)
+									35186,    -- Garrison Campaign: The Sargerei (H)
+								},
+								["provider"] = { "n", 88276 },    -- Archmage Modera
+								["coord"] = { 43.6, 77.2, 525 },    -- Frostfire Ridge
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35188, {    -- Pesky Podlings
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
+								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+							}),
+
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35189, {    -- The Word of Socrethar
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35190, {    -- An Ancient Threat
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
+								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35191, {    -- Shattering the Enemy
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 7th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35194, {    -- Facing Demons
+								["sourceQuests"] = {
+									35188,    -- Pesky Podlings
+									35189,    -- The Word of Socrethar
+									35190,    -- An Ancient Threat
+									35191,	  -- Shattering the Enemy
+								},
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 8th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35195, {    -- Socrethar's Fury
+								["sourceQuests"] = { 35194 },    -- Facing Demons
+								["provider"] = { "o", 231918 },    -- Laanda's Scroll
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["g"] = {
+									i(119134),    -- Sargerei Disguise
+								},
+							}),
+							-- 9th (last) quest of Garrison Campaign: The Sargerei (H) questchain
+							q(35197, {    -- Shattering the Enemy
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 35195 },    -- Socrethar's Fury
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.6, 82.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 1st quest of Garrison Campaign: Missing Grunt (H) questchain
+							q(36261, {    -- Garrison Campaign: Missing Grunt (H)
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 79740 },    -- Warmaster Zog
+								["coord"] = { 53.8, 54.6, 590 },    -- Frostwall
+							}),
+							-- 2nd quest of Garrison Campaign: Missing Grunt (H) questchain
+							q(36242, {    -- Where There Is Smoke... (H)
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 36261 },    -- Garrison Campaign: Missing Grunt (H)
+								["provider"] = { "n", 79740 },    -- Warmaster Zog
+								["provider"] = { "o", 233956 },    -- Bloody Blade
+								["coord"] = { 53.8, 54.6, 590 },    -- Frostwall -- Warmaster Zog
+								["coord"] = { 63.8, 44.9, 590 },    -- Frostwall -- Bloody Blade
+							}),
+							-- 3rd (last) quest of Garrison Campaign: Missing Grunt (H) questchain
+							q(36248, {    -- A Stolen Heart
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 36242 },    -- Where There Is Smoke... (H)
+								["provider"] = { "n", 79740 },    -- Warmaster Zog
+								["coord"] = { 53.8, 54.6, 590 },    -- Frostwall
+							}),
 							q(34335, {	-- Garrison Campaign: Crows In The Field
 								["races"] = HORDE_ONLY,
 							}),
@@ -44,12 +300,8 @@ _.ExpansionFeatures =
 							q(35195, {
 								i(119134),	-- Toy
 							}),
-							q(32985, {
-								i(119145),	-- Toy
-							}),
 							q(38567, {	-- Garrison Campaign: War Council
 								["sourceQuests"] = { 36614 },	-- My Very Own Fortress
-								["lvl"] = 100,
 								["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
 								["altQuests"] = { 40417 },	-- To Tanaan!
 							}),
@@ -404,7 +656,6 @@ _.ExpansionFeatures =
 							{ "n", 91030 },	-- Trixxy Volt
 						},
 						["isDaily"] = true,
-						["lvl"] = 90,
 					}),
 					q(38574, {	-- All Hands on Deck
 						["provider"] = { "n", 92400 },	-- Vol'jin
@@ -415,7 +666,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 35537 },	-- News from Spires of Arak
 						["isBreadcrumb"] = true,
 						["coord"] = { 45.6, 43.2, 590 },
-						["lvl"] = 96,
 						["provider"] = { "n", 78487 },	-- Rokhan
 					}),
 					q(36706, {	-- Ashran Appearance
@@ -719,49 +969,42 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37814, {	-- Death to Gor'thul!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37818, {	-- Death to Hivelord Ik'rix!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37815, {	-- Death to Nullifier Darkoor!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37949, {	-- Death to Nullifier Darkoor!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37817, {	-- Death to Tremor!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(37816, {	-- Death to Undertow!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
 					}),
 					q(34379, {	-- Den of Wolves
 						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
@@ -797,7 +1040,6 @@ _.ExpansionFeatures =
 							{ "i", 109127, 10 },	-- 10x Starflower
 							{ "i", 109129, 10 },	-- 10x Talador Orchid
 						},
-						["lvl"] = 90,
 					}),
 					q(36953, {	-- It's a Matter of Strategy
 						["races"] = HORDE_ONLY,
@@ -828,7 +1070,6 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36567,	-- Bigger is Better
 					}),
 					q(38306, {	-- Mystery Notebook
-						["lvl"] = 100,
 						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
@@ -874,7 +1115,14 @@ _.ExpansionFeatures =
 						},
 						["isDaily"] = true,
 						["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
-						["lvl"] = 90,
+					}),
+					q(34733, {    -- Services of Dagg
+						--["sourceQuests"] = { ??? },    -- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
+						["coord"] = { 48.6, 17.2, 590 },    -- Frostwall
+						--["coord"] = { 61.6, 74.8, 582 },    -- Lunarfall
+						["g"] = {
+							follower(32),    -- Follower: Dagg
+						},
 					}),
 					o(233263,{	-- Shamanstone: Blessing of the Wolf
 						["questID"] = 33977,	-- Blessing of the Wolf
@@ -906,16 +1154,13 @@ _.ExpansionFeatures =
 						},
 						["isDaily"] = true,
 						["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
-						["lvl"] = 90,
 					}),
 					q(34794, {	-- Taking the Fight to Nagrand
-						["lvl"] = 98,
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(36952, {	-- Taking the Fight to Nagrand
-						["lvl"] = 98,
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["providers"] = {
@@ -961,7 +1206,6 @@ _.ExpansionFeatures =
 					}),
 					q(40417, {	-- To Tanaan! -- no idea how to get this one
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
-						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
 						["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
 					}),

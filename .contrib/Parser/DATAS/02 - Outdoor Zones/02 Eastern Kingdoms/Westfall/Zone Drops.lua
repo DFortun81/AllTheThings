@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				i(820, {	-- Slicer Blade
-					["crs"] = { 831 },	-- Harvest Reaper
+					["crs"] = { 115 },	-- Harvest Reaper
 				}),
 				i(2088, {	-- Long Crawler Limb
 					["crs"] = { 831 },	-- Sea Crawler

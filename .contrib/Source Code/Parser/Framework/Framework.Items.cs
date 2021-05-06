@@ -466,7 +466,7 @@ namespace ATT
             /// </summary>
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
+            private static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
             {
                 foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
             }
@@ -478,39 +478,9 @@ namespace ATT
             /// </summary>
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
+            private static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
             {
                 foreach (var pair in data) Merge(item, pair.Key, pair.Value);
-            }
-
-            /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// </summary>
-            /// <param name="itemID">The item ID to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(long itemID, Dictionary<object, object> data)
-            {
-                // Ignore this for Artifacts.
-                if (data.ContainsKey("artifactID")) return;
-
-                // Merge the data with the item dictionary.
-                if (itemID > 0) Merge(Get(itemID), data);
-            }
-
-            /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// </summary>
-            /// <param name="itemID">The item ID to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(long itemID, Dictionary<string, object> data)
-            {
-                // Ignore this for Artifacts.
-                if (data.ContainsKey("artifactID")) return;
-
-                // Merge the data with the item dictionary.
-                if (itemID > 0) Merge(Get(itemID), data);
             }
 
             /// <summary>
@@ -520,18 +490,18 @@ namespace ATT
             /// <param name="data">The data to merge into the item database.</param>
             public static void Merge(Dictionary<object, object> data)
             {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
+                // Ignore this for Artifacts.
+                if (data.ContainsKey("artifactID")) return;
+
+                // Attempt to extract the itemID from the data table.
+                if (data.TryGetValue("itemID", out object itemIDRef) ||
+                    data.TryGetValue("itemId", out itemIDRef) ||
+                    data.TryGetValue("toyID", out itemIDRef))
                 {
-                    Merge(Convert.ToInt64(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(Convert.ToInt64(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(Convert.ToInt64(itemIDRef), data);
+                    long itemID = Convert.ToInt64(itemIDRef);
+                    if (itemID < 1) return;
+
+                    Merge(Get(itemID), data);
                 }
             }
 
@@ -542,68 +512,20 @@ namespace ATT
             /// <param name="data">The data to merge into the item database.</param>
             public static void Merge(Dictionary<string, object> data)
             {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
+                // Ignore this for Artifacts.
+                if (data.ContainsKey("artifactID")) return;
+
+                // Attempt to extract the itemID from the data table.
+                if (data.TryGetValue("itemID", out object itemIDRef) ||
+                    data.TryGetValue("itemId", out itemIDRef) ||
+                    data.TryGetValue("toyID", out itemIDRef))
                 {
-                    Merge(Convert.ToInt64(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(Convert.ToInt64(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(Convert.ToInt64(itemIDRef), data);
+                    long itemID = Convert.ToInt64(itemIDRef);
+                    if (itemID < 1) return;
+
+                    Merge(Get(itemID), data);
                 }
             }
-
-            /// <summary>
-            /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.
-            /// </summary>
-            /// <param name="data">The data to merge into the item database.</param>
-            /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            //public static void Merge(Dictionary<object, object> data, out int itemID)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out object itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else if (data.TryGetValue("itemId", out itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else itemID = -1;
-            //}
-
-            /// <summary>
-            /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.
-            /// </summary>
-            /// <param name="data">The data to merge into the item database.</param>
-            /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            //public static void Merge(Dictionary<string, object> data, out int itemID)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out object itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else if (data.TryGetValue("itemId", out itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemIDRef))
-            //    {
-            //        Merge(itemID = Convert.ToInt64(itemIDRef), data);
-            //    }
-            //    else itemID = -1;
-            //}
             #endregion
             #region Merge Into (for merging item data back into an object)
             /// <summary>

@@ -238,7 +238,7 @@ _.HiddenQuestTriggers =
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
 		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
-		
+
 		-- Trial of Style
 		q(48058),	-- Ensemble: Mana-Etched Regalia
 		q(48059),	-- Ensemble: Der'izu Armor
@@ -1777,7 +1777,6 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
-		q(38229),	-- triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
 		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
 		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
@@ -1810,8 +1809,6 @@ _.HiddenQuestTriggers =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1913,7 +1910,6 @@ _.HiddenQuestTriggers =
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
 		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
-		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
@@ -1944,7 +1940,7 @@ _.HiddenQuestTriggers =
 
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
-		q(44296),	-- Generic Order Hall - Triggers after recruiting your first two followers
+		q(44296),	-- Generic Order Hall - Triggers after recruiting your first follower(s)
 		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
@@ -1955,6 +1951,8 @@ _.HiddenQuestTriggers =
 		q(45171),	-- Generic Order Hall - 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
 		q(47661),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
+		q(44483),	-- Generic Order Hall - Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
+		q(44484),	-- Generic Order Hall - Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
 
 		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
 		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
@@ -2067,11 +2065,17 @@ _.HiddenQuestTriggers =
 		q(38713),	-- Paladin Order Hall - The Crusade Calls. Triggered with An Urgent Gathering 38710
 		q(40409),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
 		q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+		q(44064),	-- Paladin Order Hall - Silver Hand Chosen Second (Holy)
+		q(44066),	-- Paladin Order Hall - Ashbringer Chosen Second (Retribution)
+		q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third (Retribution)
 		q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
 		q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 		q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 		q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
+		q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
+		q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
+		q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
@@ -2080,7 +2084,12 @@ _.HiddenQuestTriggers =
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 		q(43507), 	-- Priest Order Hall - Looting the priest altar
 		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
-		
+		q(42328),	-- Priest Order Hall - Tracking Quest: Lumenstone 1
+		q(42329),	-- Priest Order Hall - Tracking Quest: Lumenstone 2
+		q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
+		q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
+		q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
+
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
@@ -2105,6 +2114,7 @@ _.HiddenQuestTriggers =
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault
 		q(43719),	-- Rogue Order Hall - Rare Item One Obtained (looted the Suspicious Crate toy)
+		q(46790),	-- Rogue Order Hall - triggered when completing A Hero's Weapon (artifact appearances after finishing class campaigh)
 
 		q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
 		q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
@@ -2164,6 +2174,7 @@ _.HiddenQuestTriggers =
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
 		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
+		q(43676),	-- Hidden Appearance Unlocked (triggered after learning hidden appearance for Ulthalesh on affliction lock)
 
 		--	Professions
 		--	Archaeology
@@ -2642,7 +2653,7 @@ _.HiddenQuestTriggers =
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-		
+
 		-- MISSIONS
 		q(53743),	-- Hillcrest Pasture completed
 		q(53745),	-- Mudfisher Cove completed
@@ -3464,7 +3475,7 @@ _.HiddenQuestTriggers =
 		q(53269),	-- killed Taloc the Corrupted in LFR
 		q(51736),	-- killed Taloc on Mythic
 		q(51735),	-- killed MOTHER on Mythic
-		q(51735),	-- killed Vectis on Mythic
+		q(51734),	-- killed Vectis on Mythic / Heroic
 		q(51733),	-- killed Fetid Devourer on Mythic
 		q(51730),	-- killed Mythrax the Unraveler on Mythic
 		q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
@@ -4041,7 +4052,7 @@ _.HiddenQuestTriggers =
 		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
-		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Pelagos)
+		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Kleia/Pelagos)
 		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
 		q(61018),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Loyalty, Pelagos)
 		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
@@ -4052,6 +4063,9 @@ _.HiddenQuestTriggers =
 		q(61016),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos)
 		q(63080),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos) [First time?]
 		q(60926),	-- Looting Path of Ascension Victor's Chest (Athanos, Courage, Pelagos)
+		q(60927),	-- Looting Path of Ascension Victor's Chest (Azaruux, Courage, Mikanikos)
+		q(63075),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
+		q(63083),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
 		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
@@ -4059,6 +4073,7 @@ _.HiddenQuestTriggers =
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
+		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -4097,6 +4112,8 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
+		-- Plaguefall dungeon
+		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount
 
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
@@ -4123,6 +4140,7 @@ _.HiddenQuestTriggers =
 		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
 		q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
 		q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
+		q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
@@ -4138,6 +4156,7 @@ _.HiddenQuestTriggers =
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor
+		q(58412),	-- Triggered after recruiting Unity
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
@@ -4154,6 +4173,7 @@ _.HiddenQuestTriggers =
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
+		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -4310,6 +4330,8 @@ _.HiddenQuestTriggers =
 		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 					-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62504),	-- triggered when Ember Court ended, First Lady Moonberry Elated & "Messy" at Max?
+		q(62519),	-- triggered when Ember Court ended, First Lady Moonberry Elated & "Messy" at Max?
 		q(62497),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
@@ -4329,6 +4351,10 @@ _.HiddenQuestTriggers =
 		q(62489),	-- Ember Court End - (Kleia&Pelagos / Mikanikos / Alexandros / Sika, all elated - Mikanikos only one i hadn't done before.  also got We Happy Few, so possibly one of these is related to that) - next week's automatic assigned pickups were Choofa, Droman Aliothe, Rendle and Cudgelface, and Lady Moonberry
 		q(62505),	-- ""
 		q(62529),	-- ""
+		q(62488),	-- Ember Court End - (Lady Moonberry / Rendle&Cudgelface as first-time guests, Elated and Very Happy respectively, had Casual maxed)
+		q(62494),	-- ""
+		q(62518),	-- ""
+		q(62527),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
 		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
@@ -4393,6 +4419,8 @@ _.HiddenQuestTriggers =
 		q(61573),	-- When applying the long sleeved doublet to your dredger
 		q(61575),	-- When applying Spikey Hair to your dredger
 		-- q(59682),	-- triggered when using "Crown of Honor"
+		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
+		q(59694),	-- Using 'Night Fae Arsenal' (177244)
 		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
@@ -4492,8 +4520,12 @@ _.HiddenQuestTriggers =
 		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
+		q(63356),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
 		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
+		q(61527),	-- when looting 'Decree: Lady Moonberry's Boon' / Opening Lady Moonberry's Extravagant Tribute
+		q(61532),	-- when looting 'Decree: The Countess's Esteem' / Opening The Countess's Substantial Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor

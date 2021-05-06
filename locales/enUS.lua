@@ -73,7 +73,7 @@ app.L = {
 	["UPON_COMPLETION"] = "Upon Completion";
 	["UPON_COMPLETION_DESC"] = "The above quests need to be completed before being able to complete the things listed below.";
 	["QUEST_CHAIN_REQ"] = "Quest Chain Requirements";
-	["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r";
+	["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.";
 	["AH_SEARCH_NO_ITEMS_FOUND"] = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.";
 	["AH_SEARCH_BOE_ONLY"] = "Only Bind on Equip items can be found using this search.";
 	["TSM_WARNING_1"] = "Running this command can potentially destroy your existing TSM settings by reassigning items to the ";
@@ -216,6 +216,13 @@ app.L = {
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 
+	-- Item Filter Window
+	["ITEM_FILTER_TEXT"] = "Item Filters";
+	["ITEM_FILTER_DESCRIPTION"] = "You can search the ATT Database by using a item filter.";
+	["ITEM_FILTER_BUTTON_TEXT"] = "Set Item Filter";
+	["ITEM_FILTER_BUTTON_DESCRIPTION"] = "Click this to change the item filter you want to search for within ATT.";
+	["ITEM_FILTER_POPUP_TEXT"] = "Which Item Filter would you like to search for?";
+
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\nShift + Click to Refresh Collections\nCtrl + Click to Expand/Collapse Recursively\nShift + Right Click to Sort Groups/Popout Lists|r";
@@ -239,9 +246,10 @@ app.L = {
 	["TITLE_MAIN_ONLY"] = " (Main Only)";
 	["TITLE_NONE_THINGS"] = "None of the Things ";
 	["TITLE_ONLY"] = " Only ";
-	["TITLE_INSANE"] = "Insane " ;
-	["TITLE_SOME_THINGS"] = "Some of the Things " ;
+	["TITLE_INSANE"] = "Insane ";
+	["TITLE_SOME_THINGS"] = "Some of the Things ";
 	["TITLE_LEVEL"] = "Level ";
+	["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
 
 
 	["GENERAL_TAB"] = "General";
@@ -425,7 +433,7 @@ app.L = {
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-	["MORE_COLORS_CHECKBOX"] = "Use More Colors! |CFF4AA7FF[Beta]|R";
+	["MORE_COLORS_CHECKBOX"] = "Use More Colors!";
 	["MORE_COLORS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
 	["TOOLTIP_HELP_CHECKBOX"] = "Show Tooltip Help";
 	["TOOLTIP_HELP_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
@@ -458,7 +466,7 @@ app.L = {
 	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 	["SORT_BY_PROGRESS_CHECKBOX"] = "Sort By Progress";
 	["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)";
-	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Nested Quest Chain Requirements |CFF4AA7FF[Beta]|R";
+	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Nested Quest Chain Requirements";
 	["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
 	["MASTER_AUDIO_CHECKBOX"] = "Use the Master Audio Channel";
@@ -741,6 +749,48 @@ app.L = {
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
+	};
+
+	-- Custom Icons for Holidays
+	["HOLIDAY_ID_ICONS"] = {
+		-- Examples --
+		-- [HOLIDAY_ID] = app.asset("PATH"),	-- Holiday Name
+		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
+		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
+
+		-- "Legit" Holidays
+		-- [235442] = app.asset("TODO"),	-- Brewfest
+		-- [235445] = app.asset("TODO"),	-- Children's Week
+		-- [235448] = app.asset("TODO"),	-- Darkmoon Faire
+		-- [307365] = app.asset("TODO"),	-- Day of the Dead
+		-- [235485] = app.asset("TODO"),	-- Feast of Winter Veil
+		-- [235457] = app.asset("TODO"),	-- Fireworks Spectacular
+		-- [235462] = app.asset("TODO"),	-- Hallow's End
+		-- [235465] = app.asset("TODO"),	-- Harvest Festival
+		-- [235468] = app.asset("TODO"),	-- Love is in the Air
+		-- [235471] = app.asset("TODO"),	-- Lunar Festival
+		-- [235474] = app.asset("TODO"),	-- Midsummer Fire Festival
+		[235477] = app.asset("noblegarden"),	-- Noblegarden
+		-- [235466] = app.asset("TODO"),	-- Pilgrim's Bounty
+		-- [235481] = app.asset("TODO"),	-- Pirates' Day
+
+		-- "Micro" Holidays
+		-- [1671624] = app.asset("TODO"),	-- Auction House Dance Party
+		-- [1574965] = app.asset("TODO"),	-- Call of the Scarab
+		-- [2827082] = app.asset("TODO"),	-- Free T-Shirt Day
+		-- [1572471] = app.asset("TODO"),	-- Glowcap Festival
+		-- [1574966] = app.asset("TODO"),	-- Hatching of the Hippogryphs
+		-- [1574967] = app.asset("TODO"),	-- Kirin Tor Tavern Crawl
+		-- [2827083] = app.asset("TODO"),	-- Luminous Luminaries
+		-- [1572472] = app.asset("TODO"),	-- March of the Tadpoles
+		-- [1671628] = app.asset("TODO"),	-- Moonkin Festival
+		-- [1572475] = app.asset("TODO"),	-- Spring Balloon Festival
+		-- [1671627] = app.asset("TODO"),	-- The Great Gnomeregan Run
+		-- [1572478] = app.asset("TODO"),	-- Thousand Boat Bash
+		-- [1671631] = app.asset("TODO"),	-- Trial of Style
+		-- [1574970] = app.asset("TODO"),	-- Un'Goro Madness
+		-- [1572479] = app.asset("TODO"),	-- Volunteer Guard Day
+		-- [2827084] = app.asset("TODO"),	-- Wanderer's Festival
 	};
 
 	-- These need to be localized manually.
@@ -1152,6 +1202,10 @@ app.L = {
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
+		[-972] = 3536185,																	-- Courage
+		[-973] = 3536186,																	-- Loyalty
+		[-974] = 3536184,																	-- Wisdom
+		[-975] = 3536187,																	-- Humility
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -2019,6 +2073,10 @@ app.L = {
 		[-3349] = "Tier 2: Leap of Power",										-- Tier 2: Leap of Power
 		[-3350] = "Tier 3: Eternal Paths",										-- Tier 3: Eternal Paths
 		[-966] = "Blueprints & Crafting",										-- Blueprints (for Path of Ascension)
+		[-972] = "Courage",														-- Courage
+		[-973] = "Loyalty",														-- Loyalty
+		[-974] = "Wisdom",														-- Wisdom
+		[-975] = "Humility",													-- Humility
 
 	-- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
@@ -3937,6 +3995,7 @@ app.L = {
 		[231103] = "Raided Loot",
 		[231644] = "Horned Skull",
 		[231903] = "Razzlebeard's Report",
+		[231918] = "Laanda's Scroll",
 		[232066] = "Sunken Treasure",
 		[232067] = "Stolen Treasure",
 		[232090] = "Spark's Stolen Supplies",
@@ -4048,6 +4107,7 @@ app.L = {
 		[233773] = "Bag of Herbs",
 		[233792] = "Pile of Rubble",
 		[233917] = "Femur of Improbability",
+		[233956] = "Bloody Blade",
 		[233973] = "Bounty of the Elements",
 		[233975] = "Rooby's Roo",
 		[234054] = "Warm Goren Egg",
@@ -4898,10 +4958,13 @@ app.L = {
 		[307325] = "Wanted Poster",
 		[307330] = "Captain's Footlocker",
 		[307748] = "Venture Co. Letter",
-		[310709] = "Waterlogged Chest",											-- New Chest in Elywynn since 8.1
+		[309498] = "Armor Stand",
+		[310709] = "Waterlogged Chest",											-- New Chest in Elwynn since 8.1
+		[311155] = "Ancient Tablet",
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",												-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",												-- Loose Parts (Alliance Won)
+		[316443] = "Xal'atath, Blade of the Black Empire",
 		[316788] = "Alliance Bonfire",
 		[316791] = "Alliance Bonfire",
 		[316793] = "Alliance Bonfire",
@@ -5189,6 +5252,7 @@ app.L = {
 		[357565] = "Forgotten Angler's Rod",
 		[357584] = "Vyrtha's Dredglaive",
 		[357697] = "Taskmaster's Trove",
+		[357726] = "Broken Spear",
 		[357758] = "Plague Barrel",
 		[358298] = "Forbidden Chamber Lockbox",
 		[358315] = "Skeletal Hand Fragments",

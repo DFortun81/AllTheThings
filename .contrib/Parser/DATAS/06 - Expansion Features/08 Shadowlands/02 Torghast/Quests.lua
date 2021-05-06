@@ -123,6 +123,22 @@ _.ExpansionFeatures =
 						follower(1306),	-- Gorgelimb
 					},
 				}),
+				q(61319, {	-- Champion: Hala [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
+					["provider"] = { "n", 172037 },	-- Hala
+					["g"] = {
+						follower(1267),	-- Hala
+					},
+				}),
+				q(61321, {	-- Champion: Ispiron [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					-- ["sourceQuests"] = { },	-- TODO
+					["provider"] = { "n", 172154 },	-- Ispiron
+					["g"] = {
+						follower(1269),	-- Ispiron
+					},
+				}),
 				q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61248 },	-- Kaletar's Freedom
@@ -235,7 +251,7 @@ _.ExpansionFeatures =
 						follower(1282)	-- Yira'lya
 					},
 				}),
-				
+
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 				--[[
 				q(60137, {	-- The Fracture Chambers
@@ -245,7 +261,7 @@ _.ExpansionFeatures =
 				q(60141, {	-- Coldheart Interstitia
 					["sourceQuests"] = { 60139 },	-- The Soulforges
 					["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
-					["coord"] = { 39.8, 68.2, 1670 },
+					["coord"] = { 39.8, 68.2, ORIBOS },
 				}),
 				q(60140, {	-- Mort'regar
 					["sourceQuests"] = { 60141 },	-- Coldheart Interstitia
@@ -258,11 +274,11 @@ _.ExpansionFeatures =
 				q(61730, {	-- The Upper Reaches
 					["sourceQuests"] = { 60146 },	-- The Upper Reaches
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
+					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				]]--
-				
-				
+
+
 				-- Bonus Quests
 				q(61259, {	-- Ayeleth's Hunger
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -403,11 +419,11 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173753 },	-- Velkein
 					-- Coldheart 8 / 5
 				}),
-				
+
 				--------------
 				-- Lockouts --
 				--------------
-				
+
 				-- Coldheart
 				q(58198, {	-- Coldheart Interstitia, Layer 1
 					["isWeekly"] = true,
@@ -441,7 +457,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Coldheart Interstitia, Layer 8",
 				}),
-				
+
 				-- Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
 					["isWeekly"] = true,
@@ -475,7 +491,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Fracture Chambers, Layer 8",
 				}),
-				
+
 				-- Mort'regar
 				q(58204, {	-- Mort'regar, Layer 1
 					["isWeekly"] = true,
@@ -509,7 +525,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Mort'regar, Layer 8",
 				}),
-				
+
 				-- Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1
 					["isWeekly"] = true,
@@ -543,7 +559,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Skoldus Hall, Layer 8",
 				}),
-				
+
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
 					["isWeekly"] = true,
@@ -577,7 +593,7 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Soulforges, Layer 8",
 				}),
-				
+
 				-- Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1
 					["isWeekly"] = true,

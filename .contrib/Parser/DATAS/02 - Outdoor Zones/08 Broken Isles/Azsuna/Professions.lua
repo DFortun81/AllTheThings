@@ -486,49 +486,50 @@ _.Zones =
 				prof(LEATHERWORKING, {
 					q(40195),	-- A Daring Rescue
 					q(40188, {	-- Best Served Cold
+						["provider"] = { "n", 98964 },	-- Celea
 						["g"] = {
 							-- note there is no pattern item for these, so just listing the spell IDs
 							recipe(194735),	-- Battlebound Armbands (Rank 1)
 							recipe(194740),	-- Battlebound Grips (Rank 1)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40208, {	-- Eye of Azshara: Scales of the Sea
+						["provider"] = { "n", 98964 },	-- Celea
 						["g"] = {
 							i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40189, {	-- Naga Know-How
+						["provider"] = { "n", 98964 },	-- Celea
 						["g"] = {
 							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40194, {	-- Reclaimed Cargo
+						["provider"] = { "n", 98964 },	-- Celea
+						-- ["sourceQuests"] = { 40193 },	-- Getting the Kinks Out -- TODO verify
 						["g"] = {
 							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
 							i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40207, {	-- Scales of the Arcane
+						["provider"] = { "n", 98964 },	-- Celea
 						["g"] = {
 							i(137905),	-- Recipe: Battlebound Grips (Rank 2)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40209, {	-- Scales of the Earth
+						["provider"] = { "n", 98964 },	-- Celea
 						["g"] = {
 							i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
 						},
-						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40327, {	-- Testing the Metal
+						["provider"] = { "n", 99689 },	-- Taldranis
 						["g"] = {
 							i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
 						},
-						["provider"] = { "n", 99689 },	-- Taldranis
 					}),
 					q(40210, {	-- Time Well Spent
 						["requireSkill"] = LEATHERWORKING,

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1565, {	-- Ardenweald
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {

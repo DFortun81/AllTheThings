@@ -470,7 +470,7 @@ end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
 	self:UpdateMode();
-	wipe(app.GetDataMember("CollectedSources"));
+	wipe(ATTAccountWideData.Sources);
 	app.RefreshCollections();
 end
 settings.ToggleCompletionistMode = function(self)
@@ -485,7 +485,7 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(app.GetDataMember("CollectedSources"));
+			wipe(ATTAccountWideData.Sources);
 			app.RefreshCollections();
 			debugMode = "R";
 		end
@@ -697,11 +697,6 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AchievementFilter = 4;
 	else
 		app.AchievementFilter = 13;
-	end
-	if self:Get("AccountWide:Recipes") then
-		app.RecipeChecker = app.GetDataSubMember;
-	else
-		app.RecipeChecker = app.GetTempDataSubMember;
 	end
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
@@ -1023,7 +1018,7 @@ function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
 	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(app.GetDataMember("CollectedSources"));
+		wipe(ATTAccountWideData.Sources);
 		app.RefreshCollections();
 	end
 	app:RefreshData(nil,nil,true);
@@ -1882,7 +1877,6 @@ f:SetWidth(80);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
@@ -1907,7 +1901,6 @@ f:SetWidth(100);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
@@ -3147,7 +3140,7 @@ end);
 SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
 SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
-local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
+local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"] .. L["_BETA_LABEL"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
 end,

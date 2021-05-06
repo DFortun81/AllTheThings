@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1565, {	-- Ardenweald
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
 			n(-34,  {	-- World Quests
 				q(60872, {	-- A Dangerous Harvest
 					["isWorldQuest"] = true,

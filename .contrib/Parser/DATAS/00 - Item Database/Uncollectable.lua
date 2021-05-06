@@ -209,6 +209,9 @@ i(128851);	-- Roasted juicycrunch carrots
 
 
 -- Quest Items
+i(175154);	-- A Secret Never Spoken
+i(175152);	-- A Slime-Covered Book of Secrets
+i(175149);	-- A Small Carving of Ysera
 i(164778);	-- Abyssal Scepter
 i(162579);	-- Abyssal Scepter
 i(146692);	-- Ancient Dreadleather Armor
@@ -253,6 +256,7 @@ i(141305);	-- Essence of Clarity (M)
 i(132560);	-- Essence of the Whirlwind
 i(132745);	-- Essence of the Whirlwind
 i(169229);	-- Exhaust Aromatics
+i(181456);	-- Faldo's Key
 i(169164);	-- Father's Bones
 i(169166);	-- Father's Clothes
 i(169165);	-- Father's Sword
@@ -266,6 +270,7 @@ i(118386);	-- Heart of Stone (H)
 i(118389);	-- Heart of Stone (M)
 i(168236);	-- Hearthstone Card
 i(158913);	-- Huge Dragon Kite
+i(181471);	-- Humility's Guard
 i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts

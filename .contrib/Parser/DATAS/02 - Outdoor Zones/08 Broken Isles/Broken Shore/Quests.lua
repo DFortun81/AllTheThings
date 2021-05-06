@@ -509,12 +509,6 @@ _.Zones =
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 				}),
-				q(42811, {	-- We Meet at Light's Hope
-					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-					["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
-					["classes"] = { PALADIN },
-					["coord"] = { 20.4, 61.4, 646 },
-				}),
 				q(46511, {	-- We're Treasure Hunters
 					["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -541,11 +535,6 @@ _.Zones =
 				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-				q(46827, {	-- Meld Into the Shadows
-					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-				}),
 				q(42074, {	-- Return of the Light
 					["provider"] = { "n", 106011 },	-- Jace Darkweaver
 					["classes"] = { PRIEST },
@@ -556,7 +545,6 @@ _.Zones =
 				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
-				q(45021),	-- Answers Unknown
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
@@ -569,9 +557,6 @@ _.Zones =
 				}),
 				q(45350),	-- Countering the Contagion
 				q(45347),	-- Crafting a Cure
-				q(45024),	-- Cult Culling
-				q(44272),	-- Darkheart Thicket
-				q(43551),	-- Darkheart Thicket
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash
 				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
@@ -579,20 +564,11 @@ _.Zones =
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
 				q(45829),	-- Druid
-				q(46035, {	-- End of the Risen Threat
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45026),	-- Expending Fel Energy
-				q(44271),	-- Eye of Azshara
-				q(44270),	-- Eye of Azshara
 				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
 				q(45574),	-- Fel Ingredients
 				q(45555),	-- Felbound Beasts
-				q(45627, {	-- Feltotem's Fall
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47118),	-- Free The Tormented
 				q(47119),	-- Free The Tormented
 				q(47121),	-- Free The Tormented
@@ -606,7 +582,6 @@ _.Zones =
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
 				q(40151),	-- Immaculate Stormscale
-				q(45794),	-- Informing the Council
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
 				q(46688),	-- Leather of the Ancients
@@ -618,20 +593,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46353),	-- Master Who?
-				q(44266),	-- Maw of Souls
-				q(44267),	-- Maw of Souls
 				q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 				q(43574),	-- Maw of Souls: Maul of the Dead
-				q(46260, {	-- Meld Into the Shadows
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45345),	-- Mischievous Sprites
 				q(45827),	-- Monk
-				q(44264),	-- Neltharion's Lair
-				q(44265),	-- Neltharion's Lair
 				q(42730),	-- Noggenfogger's Reasonable Request
-				q(44269),	-- Odyn's Challenge
-				q(44268),	-- Odyn's Challenge
 				q(45243),	-- On Daumyr's Wings
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
@@ -650,14 +616,7 @@ _.Zones =
 				q(46267),	-- Return of the Battlelord
 				q(42449),	-- Return of the Four Horsemen
 				q(45331),	-- Return to Acherus
-				q(44917),	-- Return to Karazhan: The Tower of Power
 				q(38803),	-- Rin'thissa
-				q(45576, {	-- Rise Up
-					["races"] = HORDE_ONLY,
-				}),
-				q(45573, {	-- Rise Up
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(43264),	-- Rise, Champions
 				q(45815),	-- Rogue
 				q(45348),	-- Safekeeping
@@ -685,7 +644,6 @@ _.Zones =
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(43268),	-- Tech It Up A Notch
-				q(44263),	-- The Arcway
 				q(44787),	-- The Bonemother
 				q(46777),	-- The Bounties of Legionfall
 				q(38990),	-- The Call of Icecrown
@@ -703,14 +661,7 @@ _.Zones =
 				q(45028),	-- The Fate of Kanrethad
 				q(42484),	-- The Firstborn Rises
 				q(43686),	-- The Fourth Horseman
-				q(45526),	-- The God-Queen's Fury
-				q(45416, {	-- The Highlord's Return
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(42537),	-- The King Rises
-				q(43545),	-- The Lord of Black Rook Hold
-				q(44276),	-- The Lord of Black Rook Hold
-				q(44277),	-- The Lord of Black Rook Hold
 				q(46666),	-- The Motherlode
 				q(45553),	-- The Nighthuntress Beckons
 				q(44775),	-- The Peak of Bones
@@ -721,17 +672,7 @@ _.Zones =
 				q(41919),	-- The Shadows Reveal
 				q(45788),	-- The Speaker Awaits
 				q(42824),	-- The Zealot Rises
-				q(45628, {	-- This Time, Leave a Trail
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45629, {	-- This Time, Leave a Trail
-					["races"] = HORDE_ONLY,
-				}),
 				q(42684),	-- Throwing SI:7 Off the Trail
-				q(46127, {	-- Thwarting the Twins
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45027),	-- To the Broken Shore
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
 				q(47054),	-- Touched By Fate
@@ -739,10 +680,6 @@ _.Zones =
 				q(43267),	-- Troops in the Field
 				q(44234),	-- Unleashing our Wrath
 				q(45557),	-- Unnatural Consequences
-				q(44261),	-- Vault of the Wardens
-				q(44260),	-- Vault of the Wardens
-				q(44259),	-- Violet Hold
-				q(44258),	-- Violet Hold
 				q(45826),	-- Warlock
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!

@@ -5,6 +5,7 @@ local i = function(itemID)
 	return item;
 end
 
+i(43876);	-- A Guide to Northern Cloth Scavenging
 i(94232);	-- Ancient Tome of Dinomancy
 i(166502);	-- Blood-Soaked Tome of Dark Whispers
 i(24345);	-- Book of Cower IV

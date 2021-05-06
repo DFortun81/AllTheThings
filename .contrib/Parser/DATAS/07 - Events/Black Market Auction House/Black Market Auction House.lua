@@ -12,7 +12,7 @@ _.WorldEvents =
 			1161,	-- Boralus
 			626,	-- Dalaran: Rogue Class Hall	-- Still works in 9.0.2
 			862,	-- Dazar'alor
-			1525,	-- Ravendreth
+			REVENDRETH,
 			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
 			--628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
 			--590,	-- Frostwall
@@ -30,7 +30,7 @@ _.WorldEvents =
 			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
-			{ 52.40, 83.80, 1525 },	-- Ta'xera, Ravendreth <Matron of the Market>
+			{ 52.40, 83.80, REVENDRETH },	-- Ta'xera <Matron of the Market>
 			--{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
 			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},

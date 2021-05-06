@@ -4,7 +4,7 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1182, {	-- Necrotic Wake
-		["coord"] = { 40.0, 55.3, 1533 },
+		["coord"] = { 40.0, 55.3, BASTION },
 		["maps"] = {
 			1666,	-- Necrotic Wake
 			1667,	-- Necrotic Wake

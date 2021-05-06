@@ -4,7 +4,7 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1187, {	-- Theater of Pain
-		["coord"] = { 53.1, 53.0, 1536 },
+		["coord"] = { 53.1, 53.0, MALDRAXXUS },
 		["maps"] = {
 			1683,	-- Theater of Pain
 			1684,	-- Chamber of Conquest

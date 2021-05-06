@@ -7,7 +7,7 @@ _.Zones =
 	m(OUTLAND, {
 		m(HELLFIRE_PENINSULA, {
 			n(RARES, {
-				n(18678, {	-- Fulgore
+				n(18678, {	-- Fulgorge
 					["description"] = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high.  Search along its three possible paths and be on the lookout for red rumbling rocks.",
 					["coords"] = {
 						{ 23.8, 63.0, HELLFIRE_PENINSULA },	-- west path, bottom
@@ -20,7 +20,7 @@ _.Zones =
 						{ 49.4, 70.6, HELLFIRE_PENINSULA },	-- east path, mid
 						{ 56.6, 71.8, HELLFIRE_PENINSULA },	-- east path, top
 					},
-					["g"] = {
+					["groups"] = {
 						crit(9, {	-- Fulgorge slain
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -41,7 +41,7 @@ _.Zones =
 						{ 64.8, 72.4, HELLFIRE_PENINSULA },
 						{ 67.8, 76.8, HELLFIRE_PENINSULA },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(14, {	-- Mekthorg the Wild slain
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -51,17 +51,12 @@ _.Zones =
 						i(31168),	-- Demon-Forged Chestguard
 					},
 				}),
-				n(18679, {	-- Vorakem Doomspeaker
+				n(18679, {	-- Vorakem Doomspeaker <Herald of Doom Lord Kazzak>
 					["coords"] = {
-						{ 41.0, 32.8, HELLFIRE_PENINSULA },
-						{ 53.8, 27.4, HELLFIRE_PENINSULA },
-						{ 65.2, 29.4, HELLFIRE_PENINSULA },
-						{ 73.8, 37.8, HELLFIRE_PENINSULA },
-						{ 70.0, 45.2, HELLFIRE_PENINSULA },
+						{ 74.0, 36.9, HELLFIRE_PENINSULA },
 						{ 71.4, 56.0, HELLFIRE_PENINSULA },
-						{ 72.8, 59.4, HELLFIRE_PENINSULA },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(20, {	-- Vorakem Doomspeaker Slain
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),

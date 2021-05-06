@@ -78,6 +78,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
+				q(12278, {    -- Brew of the Month Club (A)
+					["races"] = ALLIANCE_ONLY,    
+					["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form
+				}),
 				q(56341, {	-- Direbrew Cog (A)
 					--	["provider"] = { "o", ??? },	-- ???
 					["coord"] = { 55.5, 37.7, 27 },
@@ -242,6 +246,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
+				}),
+				q(12306, {    -- Brew of the Month Club (H)
+					["races"] = HORDE_ONLY,    
+					["provider"] = { "i", 37599 },    -- "Brew of the Month" Club Membership Form
 				}),
 				q(56716, {	-- Direbrew Cog (H)
 					--	["provider"] = { "o", ??? },	-- ???

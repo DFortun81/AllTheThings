@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
+
 local app = select(2, ...);
 local L = app.L;
 local auctionFrame = CreateFrame("Frame");
@@ -78,7 +79,6 @@ local HORDE_ONLY = {
 };
 
 -- Coroutine Helper Functions
-app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
@@ -91,8 +91,6 @@ local function OnUpdate(self)
 	-- Stop running OnUpdate if nothing in the Stack to process
 	if #self.__stack < 1 then
 		self:SetScript("OnUpdate", nil);
-		-- clear the next yield value since nothing is running
-		if app.nextYield then app.nextYield = nil; end
 	end
 end
 local function Push(self, name, method)
@@ -133,6 +131,72 @@ local function StartCoroutine(name, method, delaySec)
 		end
 	-- else
 		-- print("skipped coroutine",name);/
+	end
+end
+-- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
+local function Callback(method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		-- print("Callback:",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- print("Callback Running",method, args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Callback Done",method)
+		end;
+		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a named timer callback method to run on the next game frame with the provided params; the name can only be set to run once per frame
+-- This callback version is used for in-line self-encapsulated functions since they are apparently
+-- re-defined on every call and thus are non-unique
+local function SelfCallback(self, name, method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self] then
+		app.__callbacks[self] = {};
+	end
+	if not app.__callbacks[self][name] then
+		app.__callbacks[self][name] = ... and {...} or true;
+		-- print("Self-Callback:", self, name, ...)
+		local newCallback = function()
+			local args = app.__callbacks[self][name];
+			app.__callbacks[self][name] = nil;
+			-- print("Self-Callback Running",self,name,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Self-Callback Done",self,name)
+		end;
+		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
+local function AfterCombatCallback(method, ...)
+	if not InCombatLockdown() then Callback(method, ...); return; end
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__combatcallbacks then
+		app.__combatcallbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		-- If in combat, register to trigger on leave combat
+		-- print("AfterCombatCallback:Added",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- print("AfterCombatCallback:Running",method,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("AfterCombatCallback:Done",method)
+		end;
+		tinsert(app.__combatcallbacks, 1, newCallback);
+		app:RegisterEvent("PLAYER_REGEN_ENABLED");
 	end
 end
 local constructor = function(id, t, typeID)
@@ -247,12 +311,20 @@ local function GetTempDataSubMember(member, submember, default)
 		return default;
 	end
 end
+local function ReturnTrue()
+	return true;
+end
+local function ReturnFalse()
+	return false;
+end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
+app.ReturnTrue = ReturnTrue;
+app.ReturnFalse = ReturnFalse;
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
@@ -647,11 +719,11 @@ local function GetDisplayID(data, all)
 		local displayInfo, _ = {};
 		-- specific displayID
 		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then tinsert(displayInfo, _); return displayInfo; end
+		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -663,33 +735,33 @@ local function GetDisplayID(data, all)
 				end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then return displayInfo; end
+		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
 	else
 		-- specific displayID
-		local _ = data.displayID;
+		local _ = data.displayID or data.fetchedDisplayID;
 		if _ then return _; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then return _; end
+		if _ then rawset(data,"fetchedDisplayID",_); return _; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -697,24 +769,24 @@ local function GetDisplayID(data, all)
 				-- if one of the providers is an NPC, we should show its texture regardless of other providers
 				if v[1] == "n" then
 					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then return _; end
+					if _ then rawset(data,"fetchedDisplayID",_); return _; end
 				end
 			end
 		end
 
-		-- for quest givers (is this a thing still?)
+		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 
-		-- for a generic header, use the attached crs if so
-		if data.headerID and data.headerID < 0 and data.crs then
+		-- otherwise use the attached crs if so
+		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then return _; end
+				if _ then rawset(data,"fetchedDisplayID",_); return _; end
 			end
 		end
 	end
@@ -817,6 +889,8 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
@@ -1030,7 +1104,7 @@ local function BuildSourceText(group, l)
 	local parent = group.sourceParent or group.parent;
 	if parent then
 		-- From ATT-Classic .. needs some modification to handle Retail source depths
-		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID)) 
+		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
 		-- 	and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
 		-- 	return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 		-- end
@@ -1289,7 +1363,7 @@ end
 -- Ex. 87654 (ModID 23)=> 87654.23
 local function GetGroupItemIDWithModID(group, rawItemID, rawModID)
 	if group and group.itemID then
-		if group.modID and group.modID > 1 then
+		if group.modID and group.modID > 0 then
 			return group.itemID + (group.modID / 100);
 		else
 			return group.itemID;
@@ -1311,10 +1385,12 @@ end
 local function GroupMatchesParams(group, key, value, ignoreModID)
 	if not group then return false; end
 	if key == "itemID" then
-		if ignoreModID then
+		if group.modItemID == value then
+			return true;
+		elseif ignoreModID then
 			value = GetItemIDAndModID(value);
+			return group.itemID == value;
 		end
-		return group.modItemID == value;
 	end
 	-- exact specific match for other keys
 	if group[key] == value then return true; end
@@ -1394,8 +1470,8 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
-		SetDataSubMember("CollectedQuests", key, 1);
-		SetTempDataSubMember("CollectedQuests", key, 1);
+		ATTAccountWideData.Quests[key] = 1;
+		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	end
 end});
@@ -1406,10 +1482,11 @@ end
 local IsQuestFlaggedCompletedForObject = function(t)
 	-- nil if not a quest-based object
 	if not t.questID then return; end
+	local questID = t.questID;
 	-- 1 = This character completed this quest
 	-- 2 = This quest was completed by another character on the account / This quest cannot be completed by this character
 	-- If the quest is completed for this character, return completed.
-	if IsQuestFlaggedCompleted(t.questID) then
+	if IsQuestFlaggedCompleted(questID) then
 		return 1;
 	end
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
@@ -1420,36 +1497,36 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
 	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
-		if t.questID and GetTempDataSubMember("CollectedQuests", t.questID) then
+		if app.CurrentCharacter.Quests[questID] then
 			return 1;
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
 		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
-			for i,questID in ipairs(t.altQuests) do
+			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
-				if GetTempDataSubMember("CollectedQuests", questID) then
+				if app.CurrentCharacter.Quests[altQuestID] then
 					return 2;
 				end
 			end
 		end
 		if Grail then
 			-- Import previously completed repeatable quest from Grail addon data
-			if Grail:HasQuestEverBeenCompleted(t.questID) then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
-				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+			if Grail:HasQuestEverBeenCompleted(questID) then
+				ATTAccountWideData.Quests[questID] = 1;
+				app.CurrentCharacter.Quests[questID] = 1;
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
 			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
-				for i,questID in ipairs(t.altQuests) do
+				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
-					if Grail:HasQuestEverBeenCompleted(questID) then
-						SetDataSubMember("CollectedQuests", questID, 1);
-						SetTempDataSubMember("CollectedQuests", questID, 1);
+					if Grail:HasQuestEverBeenCompleted(altQuestID) then
+						ATTAccountWideData.Quests[altQuestID] = 1;
+						app.CurrentCharacter.Quests[altQuestID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -1462,20 +1539,20 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			local wqt_global = wqt_questDoneHistory.global
 			local wqt_local = wqt_questDoneHistory.character[app.GUID]
 
-			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
-				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+				ATTAccountWideData.Quests[questID] = 1;
+				app.CurrentCharacter.Quests[questID] = 1;
 				return 1;
 			end
 
 			-- only consider altquest completion if not on account-mode
 			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
-				for i,questID in ipairs(t.altQuests) do
+				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
-					if wqt_local[questID] and wqt_local[questID] > 0 then
-						SetDataSubMember("CollectedQuests", questID, 1);
-						SetTempDataSubMember("CollectedQuests", questID, 1);
+					if wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
+						ATTAccountWideData.Quests[altQuestID] = 1;
+						app.CurrentCharacter.Quests[altQuestID] = 1;
 						isCollected = 2;
 					end
 				end
@@ -1483,8 +1560,8 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- quest completed on any character, return shared completion
-			if wqt_global and wqt_global[t.questID] and wqt_global[t.questID] > 0 then
-				SetDataSubMember("CollectedQuests", t.questID, 1);
+			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+				ATTAccountWideData.Quests[questID] = 1;
 				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
 					return 2;
@@ -1493,14 +1570,14 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
 		if app.AccountWideQuests then
-			if GetDataSubMember("CollectedQuests", t.questID) then
+			if ATTAccountWideData.Quests[questID] then
 				return 2;
 			end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
 		-- any character has completed this specific quest, return shared completion
-		if GetDataSubMember("CollectedQuests", t.questID) then
+		if ATTAccountWideData.Quests[questID] then
 			return 2;
 		end
 	end
@@ -1563,30 +1640,8 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 
-local function GetMaxAchievement(container)
-	local maxID = -1
-	for k,v in pairs(container) do
-		if k == "achievementID" and v > maxID then
-			maxID = v
-		elseif k == "g" or (k ~= "parent" and type(v) == "table") then
-			local groupMaxID = GetMaxAchievement(v)
-			if groupMaxID > maxID then maxID = groupMaxID end
-		end
-	end
-   return maxID
-end
-local function SetAchievementCollectionStatus(achievementID, status)
-	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-	if id and bit.band(flags,0x1) == 0 and not isGuild and accCompleted then
-		SetDataSubMember("CollectedAchievements", id, 1)
-	end
-end
-local function RefreshAchievementCollection()
-	local maxID = GetMaxAchievement(app.Categories.Achievements)
-	for achievementID=1,maxID,1 do SetAchievementCollectionStatus(achievementID, 1) end
-end
 -- Search Caching
-local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties = {};
+local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties, RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -1653,6 +1708,22 @@ local function CreateHash(t)
 					hash = hash .. t.crs[1] .. t.crs[2];
 				elseif numCrs > 2 then
 					hash = hash .. t.crs[1] .. t.crs[2] .. t.crs[3];
+				end
+			end
+		elseif key == "headerID" then
+			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
+			-- Separate if using Class requirements
+			if t.c then
+				for _,class in pairs(t.c) do
+					hash = "C" .. class .. hash;
+				end
+			end
+			-- Separate if using Faction/Race requirements
+			if t.r then
+				hash = "F" .. t.r .. hash;
+			elseif t.races then
+				for _,race in pairs(t.races) do
+					hash = "R" .. race .. hash;
 				end
 			end
 		end
@@ -1844,8 +1915,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				(not group.itemID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
-				-- it is not a 'saved' thing for this character or account mode is active
-				(not group.saved or group.saved ~= 1 or app.MODE_ACCOUNT))
+				-- account mode is active or it is not a 'saved' thing for this character
+				(app.MODE_ACCOUNT or not group.saved))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
@@ -2516,22 +2587,18 @@ ResolveSymbolicLink = function(o)
 end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
-	local total = 0;
-	local progress = 0;
+	-- local total = 0;
+	-- local progress = 0;
 	-- using pairs since some index values may get set to nil prior to this
 	for i,group in pairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.modItemID,group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- dont list itself under Contains
-		-- if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		-- no need to filter recursively of things when we already have a set of groups which we want to show in the Contains...
-		-- if app.RecursiveGroupRequirementsFilter(group) then
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			-- print("display")
 			local right = nil;
 			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
-				total = total + group.total;
-				progress = progress + (group.progress or 0);
+				-- total = total + group.total;
+				-- progress = progress + (group.progress or 0);
 				if app.GroupVisibilityFilter(group) then
 					right = GetProgressColorText(group.progress, group.total);
 				-- the group itself may be a trackable thing
@@ -2548,9 +2615,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			else
 				if group.collectible then
-					total = total + 1;
+					-- total = total + 1;
 					if group.collected then
-						progress = progress + 1;
+						-- progress = progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
 							right = GetCollectionIcon(group.collected);
 						end
@@ -2623,368 +2690,307 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			-- end
 		end
 	end
-	if (total > 0) then
-		local data = {};
-		data.total = total;
-		data.progress = progress;
-		return data;
-	end
+	-- if (total > 0) then
+	-- 	local data = {};
+	-- 	data.total = total;
+	-- 	data.progress = progress;
+	-- 	return data;
+	-- end
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if search then
-		local now = time();
-		local cache = searchCache[search];
-		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+	if not search then return nil; end
+	local now = time();
+	local cache = searchCache[search];
+	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
 
-		-- Determine if this tooltip needs more work the next time it refreshes.
-		if not paramA then paramA = ""; end
-		local working, info = false, {};
-		cache = { now, 100000000 };
-		searchCache[search] = cache;
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	if not paramA then paramA = ""; end
+	local working, info = false, {};
+	cache = { now, 100000000 };
+	searchCache[search] = cache;
 
-		-- Call to the method to search the database.
-		local group, a, b = method(paramA, paramB, ...);
-		if not group then group = {}; end
-		if a then paramA = a; end
-		if b then paramB = b; end
-		--print("Raw Search", paramA, paramB, #group);
+	-- Call to the method to search the database.
+	local group, a, b = method(paramA, paramB, ...);
+	if not group then group = {}; end
+	if a then paramA = a; end
+	if b then paramB = b; end
+	-- print("Raw Search", paramA, paramB, #group);
 
-		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
-		if paramA == "creatureID" or paramA == "encounterID" then
-			if group and #group > 0 then
-				if IsInInstance() then
-					local difficultyID = select(3, GetInstanceInfo());
-					if difficultyID and difficultyID > 0 then
-						local subgroup = {};
-						for i,j in ipairs(group) do
-							if GetRelativeDifficulty(j, difficultyID) then
-								tinsert(subgroup, j);
-							end
-						end
-						group = subgroup;
-					end
-				elseif paramA == "encounterID" then
-					local difficultyID = EJ_GetDifficulty();
-					if difficultyID and difficultyID > 0 then
-						local subgroup = {};
-						for i,j in ipairs(group) do
-							if GetRelativeDifficulty(j, difficultyID) then
-								tinsert(subgroup, j);
-							end
-						end
-						group = subgroup;
-					end
-				end
-
-				if not app.MODE_DEBUG then
-					local regroup = {};
-					if app.MODE_ACCOUNT then
-						for i,j in ipairs(group) do
-							if app.RecursiveUnobtainableFilter(j) then
-								tinsert(regroup, j);
-							end
-						end
-					else
-						for i,j in ipairs(group) do
-							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-								tinsert(regroup, j);
-							end
-						end
-					end
-					group = regroup;
-				end
-				if #group > 0 then
-					-- collect descriptions from all search groups and insert into the info for the search
-					if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
-						for i,j in ipairs(group) do
-							if j.description and j[paramA] and j[paramA] == paramB then
-								tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-							end
-						end
-					end
+	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
+	if paramA == "creatureID" or paramA == "encounterID" then
+		if group and #group > 0 then
+			if IsInInstance() then
+				local difficultyID = select(3, GetInstanceInfo());
+				if difficultyID and difficultyID > 0 then
 					local subgroup = {};
-					table.sort(group, function(a, b)
-						return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
-					end);
 					for i,j in ipairs(group) do
-						-- always include the root quest/item when it's contained
-						if j.questID or j.itemID then
+						if GetRelativeDifficulty(j, difficultyID) then
 							tinsert(subgroup, j);
-						elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
-							for k,l in ipairs(j.g) do
-								tinsert(subgroup, l);
-							end
-						else
+						end
+					end
+					group = subgroup;
+				end
+			elseif paramA == "encounterID" then
+				local difficultyID = EJ_GetDifficulty();
+				if difficultyID and difficultyID > 0 then
+					local subgroup = {};
+					for i,j in ipairs(group) do
+						if GetRelativeDifficulty(j, difficultyID) then
 							tinsert(subgroup, j);
 						end
 					end
 					group = subgroup;
 				end
 			end
-		elseif paramA == "achievementID" then
-			-- Don't do anything for things linked to maps.
-			local regroup = {};
-			local criteriaID = ...;
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
+
+			if not app.MODE_DEBUG then
+				local regroup = {};
+				if app.MODE_ACCOUNT then
+					for i,j in ipairs(group) do
+						if app.RecursiveUnobtainableFilter(j) then
+							tinsert(regroup, j);
+						end
+					end
+				else
+					for i,j in ipairs(group) do
+						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 							tinsert(regroup, j);
 						end
 					end
 				end
-			else
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
+				group = regroup;
+			end
+			if #group > 0 then
+				-- collect descriptions from all search groups and insert into the info for the search
+				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+					for i,j in ipairs(group) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 						end
 					end
 				end
-			end
-
-			group = regroup;
-		elseif paramA == "azeriteEssenceID" then
-			local regroup = {};
-			local rank = ...;
-			if app.MODE_ACCOUNT then
+				local subgroup = {};
+				table.sort(group, function(a, b)
+					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
+				end);
 				for i,j in ipairs(group) do
-					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
+					-- always include the root quest/item when it's contained
+					if j.questID or j.itemID then
+						tinsert(subgroup, j);
+					elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
+						for k,l in ipairs(j.g) do
+							tinsert(subgroup, l);
 						end
+					else
+						tinsert(subgroup, j);
 					end
 				end
-			else
-				for i,j in ipairs(group) do
-					if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
-						end
+				group = subgroup;
+			end
+		end
+	elseif paramA == "achievementID" then
+		-- Don't do anything for things linked to maps.
+		local regroup = {};
+		local criteriaID = ...;
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
 					end
 				end
 			end
-
-			group = regroup;
-		elseif paramA == "titleID" then
-			-- Don't do anything
-			local regroup = {};
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-
-			group = regroup;
-		elseif paramA == "followerID" then
-			-- Don't do anything
-			local regroup = {};
-			if app.MODE_ACCOUNT then
-				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-
-			group = regroup;
 		else
-			-- Determine if this is a cache for an item
-			local itemID, sourceID;
-			if not paramB then
-				local itemString = string.match(paramA, "item[%-?%d:]+");
-				if itemString then
-					sourceID = GetSourceID(paramA);
-					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
-					if itemID2 then
-						itemID = tonumber(itemID2);
-						paramA = "itemID";
-						paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+			for i,j in ipairs(group) do
+				if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
 					end
-					if #group > 0 then
-						for i,j in ipairs(group) do
-							if j.modItemID == paramB then
-								if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
-								end
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "azeriteEssenceID" then
+		local regroup = {};
+		local rank = ...;
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
+					end
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					if j.mapID or j.parent == nil or j.parent.parent == nil then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					else
+						tinsert(regroup, j);
+					end
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "titleID" then
+		-- Don't do anything
+		local regroup = {};
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		end
+
+		group = regroup;
+	elseif paramA == "followerID" then
+		-- Don't do anything
+		local regroup = {};
+		if app.MODE_ACCOUNT then
+			for i,j in ipairs(group) do
+				if app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		else
+			for i,j in ipairs(group) do
+				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				end
+			end
+		end
+
+		group = regroup;
+	else
+		-- Determine if this is a cache for an item
+		local itemID, sourceID;
+		if not paramB then
+			local itemString = string.match(paramA, "item[%-?%d:]+");
+			if itemString then
+				sourceID = GetSourceID(paramA);
+				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
+				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
+				if itemID2 then
+					itemID = tonumber(itemID2);
+					paramA = "itemID";
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+				end
+				if #group > 0 then
+					for i,j in ipairs(group) do
+						if j.modItemID == paramB then
+							if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+								tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 							end
 						end
 					end
-				else
-					local kind, id = strsplit(":", paramA);
-					kind = string.lower(kind);
-					if id then id = tonumber(id); end
-					if kind == "itemid" then
-						paramA = "itemID";
-						paramB = id;
-						itemID = id;
-					elseif kind == "questid" then
-						paramA = "questID";
-						paramB = id;
-					elseif kind == "creatureid" or kind == "npcid" then
-						paramA = "creatureID";
-						paramB = id;
-					elseif kind == "achievementid" then
-						paramA = "achievementID";
-						paramB = id;
-					end
 				end
-			elseif paramA == "itemID" then
-				-- itemID should only be the itemID, not including modID
-				itemID = GetItemIDAndModID(paramB) or paramB;
+			else
+				local kind, id = strsplit(":", paramA);
+				kind = string.lower(kind);
+				if id then id = tonumber(id); end
+				if kind == "itemid" then
+					paramA = "itemID";
+					paramB = id;
+					itemID = id;
+				elseif kind == "questid" then
+					paramA = "questID";
+					paramB = id;
+				elseif kind == "creatureid" or kind == "npcid" then
+					paramA = "creatureID";
+					paramB = id;
+				elseif kind == "achievementid" then
+					paramA = "achievementID";
+					paramB = id;
+				end
+			end
+		elseif paramA == "itemID" then
+			-- itemID should only be the itemID, not including modID
+			itemID = GetItemIDAndModID(paramB) or paramB;
+		end
+
+		if itemID then
+			-- Grab the best matching source group.
+			local sourceGroup;
+			for i,j in ipairs(group.g or group) do
+				if j.modItemID == paramB then
+					sourceGroup = j;
+				end
 			end
 
-			if itemID then
-				-- Grab the best matching source group.
-				local sourceGroup;
+			-- Match the DB group by itemID if possible otherwise
+			if not sourceGroup then
 				for i,j in ipairs(group.g or group) do
-					if j.modItemID == paramB then
+					if j.itemID == itemID then
 						sourceGroup = j;
 					end
 				end
-				
-				-- Match the DB group by itemID if possible otherwise
-				if not sourceGroup then
-					for i,j in ipairs(group.g or group) do
-						if j.itemID == itemID then
-							sourceGroup = j;
-						end
-					end
+			end
+
+			-- Show the unobtainable source text, if necessary.
+			if sourceGroup then
+				if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
+					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 				end
-				
-				-- Show the unobtainable source text, if necessary.
-				if sourceGroup then
-					if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
-						tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
-					end
-					
-					-- Acquire the SourceID if it hadn't been determined yet.
-					if not sourceID and sourceGroup.link then
-						sourceID = GetSourceID(sourceGroup.link);
-					end
-				else
-					-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
-					sourceGroup = { ["missing"] = true };
+
+				-- Acquire the SourceID if it hadn't been determined yet.
+				if not sourceID and sourceGroup.link then
+					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
 				end
-				
-				if sourceID then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and (sourceInfo.quality or 0) > 1 then
-						if app.Settings:GetTooltipSetting("SharedAppearances") then
-							local text;
-							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
-								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-											local link = sourceGroup.link;
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if sourceGroup.u then
-												local texture = GetUnobtainableTexture(sourceGroup);
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
+			else
+				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
+				sourceGroup = { ["missing"] = true };
+			end
+
+			if sourceID then
+				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+				if sourceInfo and (sourceInfo.quality or 0) > 1 then
+					if app.Settings:GetTooltipSetting("SharedAppearances") then
+						local text;
+						if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
+							-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
+							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+								if otherSourceID == sourceID and not sourceGroup.missing then
+									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										local link = sourceGroup.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if sourceGroup.u then
+											local texture = GetUnobtainableTexture(sourceGroup);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
 											else
 												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
-
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-												local link = otherATTSource.link;
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												if otherATTSource.u then
-													local texture = GetUnobtainableTexture(otherATTSource);
-													if texture then
-														text = "|T" .. texture .. ":0|t";
-													else
-														text = "   ";
-													end
-												else
-													text = "   ";
-												end
-												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 											end
 										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local link = select(2, GetItemInfo(otherSource.itemID));
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
-											end
+											text = "   ";
 										end
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
 									end
-								end
-							else
-								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-											local link = sourceGroup.link;
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if sourceGroup.u then
-												local texture = GetUnobtainableTexture(sourceGroup);
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
+								else
+									local otherATTSource = app.SearchForField("s", otherSourceID);
+									if otherATTSource then
+										otherATTSource = otherATTSource[1];
 
-											-- Show information about the appearance:
-											local failText = "";
+										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
 											local link = otherATTSource.link;
 											if not link then
 												link = RETRIEVING_DATA;
@@ -3000,495 +3006,560 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or "");
-
-											-- Show all of the reasons why an appearance does not meet given criteria.
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if sourceGroup.f ~= otherATTSource.f then
-												-- This is NOT the same type. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
-											elseif otherATTSource.nmc then
-												-- This is NOT for your class. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												-- failText = failText .. "Class Locked";
-												for i,classID in ipairs(otherATTSource.c) do
-													if i > 1 then failText = failText .. ", "; end
-													failText = failText .. (GetClassInfo(classID) or "???");
-												end
-											elseif otherATTSource.nmr then
-												-- This is NOT for your race. Therefore, no credit for you!
-												if #failText > 1 then failText = failText .. ", "; end
-												failText = failText .. L["RACE_LOCKED"];
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+										end
+									else
+										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+										if otherSource then
+											local link = select(2, GetItemInfo(otherSource.itemID));
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+										end
+									end
+								end
+							end
+						else
+							-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
+							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+								if otherSourceID == sourceID and not sourceGroup.missing then
+									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										local link = sourceGroup.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if sourceGroup.u then
+											local texture = GetUnobtainableTexture(sourceGroup);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
 											else
-												-- Should be fine
+												text = "   ";
 											end
-
-											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local link = select(2, GetItemInfo(otherSource.itemID));
-												if not link then
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											text = "   ";
+										end
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
+									end
+								else
+									local otherATTSource = app.SearchForField("s", otherSourceID);
+									if otherATTSource then
+										otherATTSource = otherATTSource[1];
+
+										-- Show information about the appearance:
+										local failText = "";
+										local link = otherATTSource.link;
+										if not link then
+											link = RETRIEVING_DATA;
+											working = true;
+										end
+										if otherATTSource.u then
+											local texture = GetUnobtainableTexture(otherATTSource);
+											if texture then
+												text = "|T" .. texture .. ":0|t";
+											else
+												text = "   ";
 											end
+										else
+											text = "   ";
+										end
+										text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or "");
+
+										-- Show all of the reasons why an appearance does not meet given criteria.
+										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+										if sourceGroup.f ~= otherATTSource.f then
+											-- This is NOT the same type. Therefore, no credit for you!
+											if #failText > 0 then failText = failText .. ", "; end
+											failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
+										elseif otherATTSource.nmc then
+											-- This is NOT for your class. Therefore, no credit for you!
+											if #failText > 0 then failText = failText .. ", "; end
+											-- failText = failText .. "Class Locked";
+											for i,classID in ipairs(otherATTSource.c) do
+												if i > 1 then failText = failText .. ", "; end
+												failText = failText .. (GetClassInfo(classID) or "???");
+											end
+										elseif otherATTSource.nmr then
+											-- This is NOT for your race. Therefore, no credit for you!
+											if #failText > 1 then failText = failText .. ", "; end
+											failText = failText .. L["RACE_LOCKED"];
+										else
+											-- Should be fine
+										end
+
+										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
+										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
+									else
+										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+										if otherSource then
+											local link = select(2, GetItemInfo(otherSource.itemID));
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
 							end
 						end
-
-						if sourceGroup.missing then
-							tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
-							tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
-						end
-						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
-				end
-				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-					local specs = GetFixedItemSpecInfo(itemID);
-					-- specs is already filtered/sorted to only current class
-					if #specs > 0 then
-						local spec_label = "";
-						for key, specID in ipairs(specs) do
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-							spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-						end
-						tinsert(info, { right = spec_label });
-					elseif sourceID then
-						tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });		-- L["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot."
-					end
-				end
 
-				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
-					-- If the item is a relic, then let's compare against equipped relics.
-					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
-					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
-					if myArtifactData then
-						local progress, total = 0, 0;
-						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
-						for relicID,artifactData in pairs(myArtifactData) do
-							local infoString;
-							for relicSlotIndex,relicData in pairs(artifactData) do
-								if relicData.relicType == relicType then
-									if infoString then
-										infoString = infoString .. " | " .. relicData.iLvl;
-									else
-										infoString = relicData.iLvl;
-									end
-									total = total + 1;
-									if relicData.iLvl >= relicItemLevel then
-										progress = progress + 1;
-										infoString = infoString .. " " .. GetCompletionIcon(1);
-									else
-										infoString = infoString .. " " .. GetCompletionIcon();
-									end
+					if sourceGroup.missing then
+						tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
+						tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
+					end
+					if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
+					if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
+				end
+			end
+			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+				local specs = GetFixedItemSpecInfo(itemID);
+				-- specs is already filtered/sorted to only current class
+				if #specs > 0 then
+					local spec_label = "";
+					for key, specID in ipairs(specs) do
+						local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+						spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
+					end
+					tinsert(info, { right = spec_label });
+				elseif sourceID then
+					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
+				end
+			end
+
+			if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+				-- If the item is a relic, then let's compare against equipped relics.
+				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+				local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
+				if myArtifactData then
+					local progress, total = 0, 0;
+					local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+					for relicID,artifactData in pairs(myArtifactData) do
+						local infoString;
+						for relicSlotIndex,relicData in pairs(artifactData) do
+							if relicData.relicType == relicType then
+								if infoString then
+									infoString = infoString .. " | " .. relicData.iLvl;
+								else
+									infoString = relicData.iLvl;
+								end
+								total = total + 1;
+								if relicData.iLvl >= relicItemLevel then
+									progress = progress + 1;
+									infoString = infoString .. " " .. GetCompletionIcon(1);
+								else
+									infoString = infoString .. " " .. GetCompletionIcon();
 								end
 							end
-							if infoString then
-								local itemLink = select(2, GetItemInfo(relicID));
-								tinsert(info, 1, {
-									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA,
-									right = L["iLvl"] .. " " .. infoString,
-								});
-							end
 						end
-						if total > 0 then
-							tinsert(group, { itemID=itemID, total=total, progress=progress});
-							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+						if infoString then
+							local itemLink = select(2, GetItemInfo(relicID));
+							tinsert(info, 1, {
+								left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA,
+								right = L["iLvl"] .. " " .. infoString,
+							});
 						end
+					end
+					if total > 0 then
+						tinsert(group, { itemID=itemID, total=total, progress=progress});
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+					end
+				else
+					tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+				end
+			end
+		end
+	end
+
+	-- Create a list of sources
+	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+		local temp = {};
+		local unfiltered = {};
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local abbrevs = L["ABBREVIATIONS"];
+		for i,j in ipairs(group.g or group) do
+			if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
+				local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
+					for source,replacement in pairs(abbrevs) do
+						text = string.gsub(text, source, replacement);
+					end
+					if j.u then
+						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+					elseif not app.RecursiveUnobtainableFilter(j.parent) then
+						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
 					else
-						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+						tinsert(temp, text);
 					end
 				end
 			end
 		end
+		if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
+			for i,j in ipairs(unfiltered) do
+				tinsert(temp, j);
+			end
+		end
+		if #temp > 0 then
+			local listing = {};
+			local maximum = app.Settings:GetTooltipSetting("Locations");
+			table.sort(temp);
+			for i,j in ipairs(temp) do
+				if not contains(listing, j) then
+					tinsert(listing, 1, j);
+				end
+			end
+			local count = #listing;
+			if count > maximum + 1 then
+				for i=count,maximum + 1,-1 do
+					table.remove(listing, 1);
+				end
+				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
+			end
+			for i,text in ipairs(listing) do
+				if text:find(RETRIEVING_DATA) then working = true; end
+				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
+				tinsert(info, 1, { left = left, right = right, wrap = wrap });
+			end
+		end
+	end
 
-		-- Create a list of sources
-		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
-			local temp = {};
-			local unfiltered = {};
-			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			local abbrevs = L["ABBREVIATIONS"];
-			for i,j in ipairs(group.g or group) do
-				if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
-					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
-						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source, replacement);
-						end
-						if j.u then
-							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-						elseif not app.RecursiveUnobtainableFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-						else
-							tinsert(temp, text);
-						end
-					end
-				end
+	-- Create an unlinked version of the object.
+	if not group.g then
+		local skipped = {};
+		-- Clone all the groups so that things don't get modified in the Source
+		local cloned = {};
+		local uniques = {};
+		for i,o in ipairs(group) do
+			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
+			if not uniques[tostring(o)] then
+				uniques[tostring(o)] = true;
+				tinsert(cloned, CloneData(o));
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
-				for i,j in ipairs(unfiltered) do
-					tinsert(temp, j);
-				end
-			end
-			if #temp > 0 then
-				local listing = {};
-				local maximum = app.Settings:GetTooltipSetting("Locations");
-				table.sort(temp);
-				for i,j in ipairs(temp) do
-					if not contains(listing, j) then
-						tinsert(listing, 1, j);
+		end
+		wipe(uniques);
+		-- replace the Source references with the cloned references
+		group = cloned;
+		-- Find or Create the root group for the search results
+		local root;
+		-- print("Find Root for",paramA,paramB);
+		for i,o in ipairs(group) do
+			-- If the obj "is" the root obj
+			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
+			if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
+				-- object meets filter criteria and is exactly what is being searched
+				if app.RecursiveGroupRequirementsFilter(o) then
+					-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
+					if root then
+						local otherRoot = root;
+						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
+						root = o;
+						MergeProperties(root, otherRoot);
+					else
+						root = o;
 					end
-				end
-				local count = #listing;
-				if count > maximum + 1 then
-					for i=count,maximum + 1,-1 do
-						table.remove(listing, 1);
-					end
-					tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
-				end
-				for i,text in ipairs(listing) do
-					if text:find(RETRIEVING_DATA) then working = true; end
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
-					tinsert(info, 1, { left = left, right = right, wrap = wrap });
+				else
+					-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+					if not root then root = o
+					else MergeProperties(root, o); end
 				end
 			end
 		end
-
-		-- Create an unlinked version of the object.
-		if not group.g then
-			local skipped = {};
-			-- Clone all the groups so that things don't get modified in the Source
-			local cloned = {};
-			local uniques = {};
-			for i,o in ipairs(group) do
-				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if not uniques[tostring(o)] then
-					uniques[tostring(o)] = true;
-					tinsert(cloned, CloneData(o));
+		if not root then
+			-- print("Create New Root")
+			root = CreateObject({ [paramA] = paramB });
+		end
+		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
+		paramA, paramB = root.key, root[root.key];
+		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
+		if paramA == "itemID" then
+			paramB = root.modItemID or paramB;
+		end
+		-- print("Root",root.key,root[root.key],root.modItemID);
+		-- print("Root Collect",root.collectible,root.collected);
+		-- print("params",paramA,paramB);
+		if not root.g then root.g = {}; end
+		-- Loop through all obj found for this search
+		-- print(#group,"Search total");
+		for i,o in ipairs(group) do
+			-- If the obj "is" the root obj via bi-directional key
+			-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
+				MergeProperties(root, o);
+				-- Merge the g of the obj into the merged results
+				if o.g then
+					-- print("Merge root g",#o.g,o.key,o[o.key])
+					MergeObjects(root.g, o.g);
 				end
-			end
-			wipe(uniques);
-			-- replace the Source references with the cloned references
-			group = cloned;
-			-- Find or Create the root group for the search results
-			local root;
-			-- print("Find Root for",paramA,paramB);
-			for i,o in ipairs(group) do
-				-- If the obj "is" the root obj
-				-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-				if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
-					-- object meets filter criteria and is exactly what is being searched
-					if app.RecursiveGroupRequirementsFilter(o) then
-						-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
-						if root then
-							local otherRoot = root;
-							-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
-							root = o;
-							MergeProperties(root, otherRoot);
-						else
-							root = o;
-						end
-					else
-						-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
-						if not root then root = o
-						else MergeProperties(root, o); end
-					end
-				end
-			end
-			if not root then root = CreateObject({ [paramA] = paramB }); end
-			-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
-			paramA, paramB = root.key, root[root.key];
-			-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-			if paramA == "itemID" then
-				paramB = root.modItemID or paramB;
-			end
-			-- print("Root",root.key,root[root.key],root.modItemID);
-			-- print("Root Collect",root.collectible,root.collected);
-			-- print("params",paramA,paramB);
-			if not root.g then root.g = {}; end
-			-- Loop through all obj found for this search
-			-- print(#group,"Search total");
-			for i,o in ipairs(group) do
-				-- If the obj "is" the root obj via bi-directional key
-				-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-					-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
-					MergeProperties(root, o);
-					-- Merge the g of the obj into the merged results
-					if o.g then
-						-- print("Merge root g",#o.g,o.key,o[o.key])
-						MergeObjects(root.g, o.g);
-					end
+			-- otherwise
+			else
+				-- If the obj meets the recursive group filter
+				if app.RecursiveGroupRequirementsFilter(o) then
+					-- Merge the obj into the merged results
+					-- print("Merge object",o.key,o[o.key])
+					MergeObject(root.g, o);
 				-- otherwise
 				else
-					-- If the obj meets the recursive group filter
-					if app.RecursiveGroupRequirementsFilter(o) then
-						-- Merge the obj into the merged results
-						-- print("Merge object",o.key,o[o.key])
-						MergeObject(root.g, o);
-					-- otherwise
-					else
-						-- Add to the set of skipped objects
-						-- print("Skip",o.key,o[o.key])
-						tinsert(skipped, o);
-					end
+					-- Add to the set of skipped objects
+					-- print("Skip",o.key,o[o.key])
+					tinsert(skipped, o);
 				end
-				-- print(#root.g,"Merge total");
 			end
-			-- Loop through all skipped objects
-			for i,o in ipairs(skipped) do
-				-- Merge the obj into the merged results
-				-- print("Merge skip",o.key,o[o.key])
+			-- print(#root.g,"Merge total");
+		end
+		-- Loop through all skipped objects
+		for i,o in ipairs(skipped) do
+			-- Merge the obj into the merged results
+			-- print("Merge skip",o.key,o[o.key])
+			MergeObject(root.g, o);
+		end
+		-- Resolve symbolic links for the root
+		-- print("Resolve Root",root.key,root[root.key])
+		local rootResolved = ResolveSymbolicLink(root);
+		if rootResolved then
+			-- print("Has symbolic")
+			root.symbolized = true;
+			for k,o in pairs(rootResolved) do
 				MergeObject(root.g, o);
 			end
-			-- Resolve symbolic links for the root
-			-- print("Resolve Root",root.key,root[root.key])
-			local rootResolved = ResolveSymbolicLink(root);
-			if rootResolved then
+		end
+		-- Resolve symbolic links within the Root
+		for i,o in ipairs(root.g) do
+			-- print("Resolve",o.key,o[o.key],o.sym)
+			local symbolicLink = ResolveSymbolicLink(o);
+			if symbolicLink then
 				-- print("Has symbolic")
-				root.symbolized = true;
-				for k,o in pairs(rootResolved) do
-					MergeObject(root.g, o);
-				end
-			end
-			-- Resolve symbolic links within the Root
-			for i,o in ipairs(root.g) do
-				-- print("Resolve",o.key,o[o.key],o.sym)
-				local symbolicLink = ResolveSymbolicLink(o);
-				if symbolicLink then
-					-- print("Has symbolic")
-					o.symbolized = true;
-					if o.g and #o.g >= 0 then
-						for j=1,#symbolicLink,1 do
-							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-							MergeObject(o.g, symbolicLink[j]);
-						end
-					else
-						o.g = symbolicLink;
+				o.symbolized = true;
+				if o.g and #o.g >= 0 then
+					for j=1,#symbolicLink,1 do
+						-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
+						MergeObject(o.g, symbolicLink[j]);
 					end
-					-- print("o.g",o.g and #o.g)
+				else
+					o.g = symbolicLink;
 				end
+				-- print("o.g",o.g and #o.g)
 			end
-			-- Single group which matches the root, then collapse it
-			if #root.g == 1 then
-				local o = root.g[1];
-				-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-				-- TODO: find an example which tests this... may not be possible with above logic
-				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-					-- print("Single group")
-					root = o;
-				end
-			end
-
-			-- Replace as the group
-			group = root;
-			-- print(group.g and #group.g,"Merge total");
-			-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
-
-			-- Special cases
-			-- Don't show nested criteria of achievements
-			if group.g and group.key == "achievementID" then
-				local noCrits = {};
-				-- print("achieve group",#group.g)
-				for i=1,#group.g do
-					if group.g[i].key ~= "criteriaID" then
-						tinsert(noCrits, group.g[i]);
-					end
-				end
-				group.g = noCrits;
-				-- print("achieve nocrits",#group.g)
-			end
-
-			-- Append any crafted things using this group
-			app.BuildCrafted(group);
-
-			-- Expand any things requiring this group
-			app.ExpandSubGroups(group);
-
-			-- Append currency info to any orphan currency groups
-			app.BuildCurrencies(group);
-
-			group.total = 0;
-			group.progress = 0;
-			group.parent = nil;
-			BuildGroups(group, group.g, true);
-			app.UpdateGroups(group, group.g);
-			if group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
+		end
+		-- Single group which matches the root, then collapse it
+		if #root.g == 1 then
+			local o = root.g[1];
+			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
+			-- TODO: find an example which tests this... may not be possible with above logic
+			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+				-- print("Single group")
+				root = o;
 			end
 		end
 
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
-			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
-		end
+		-- Replace as the group
+		group = root;
+		-- print(group.g and #group.g,"Merge total");
+		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
 
-		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
-		end
-
-		if paramA == "itemID" and paramB == 137642 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });		--L["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
-			end
-		end
-
-		-- an item used for a faction which is repeatable
-		if group.itemID and group.factionID and group.repeatable then
-			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
-		end
-
-		local collectionData;
-		if group.g and #group.g > 0 then
-			--[[
-			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
-				for i,j in ipairs(group.g) do
-					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
-						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-					end
+		-- Special cases
+		-- Don't show nested criteria of achievements
+		if group.g and group.key == "achievementID" then
+			local noCrits = {};
+			-- print("achieve group",#group.g)
+			for i=1,#group.g do
+				if group.g[i].key ~= "criteriaID" then
+					tinsert(noCrits, group.g[i]);
 				end
 			end
-			]]--
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				local entries, left, right = {};
-				-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
-				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				-- app.DEBUG_PRINT = nil;
-				if #entries > 0 then
-					-- print("#entries",#entries);
-					tinsert(info, { left = L["CONTAINS"] });		-- L["CONTAINS"] = "Contains:"
-					local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
-					for i=1,containCount do
-						item = entries[i];
-						group = item.group;
-						left = group.text or RETRIEVING_DATA;
-						if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-						if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
-
-						-- If this group has specialization requirements, let's attempt to show the specialization icons.
-						right = item.right;
-						local specs = group.specs;
-						if specs and #specs > 0 then
-							for i,spec in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-								right = "|T" .. icon .. ":0|t " .. right;
-							end
-						end
-						-- If this group has customCollect requirements, list them for clarity
-						if group.customCollect then
-							for i,c in ipairs(group.customCollect) do
-								if i > 1 then
-									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
-								else
-									right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
-								end
-							end
-						end
-						-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-						if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
-							-- Add the Zone name
-							local field, id;
-							for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
-								if not field then
-									id = app.RecursiveFirstParentWithField(group, v);
-									-- print("check",v,id)
-									if id then field = v; end
-								end
-							end
-							-- convert maps to a MapID
-							if field == "maps" then
-								field = "mapID";
-								id = id[1];
-							end
-							local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
-							local locationName = locationGroup and (locationGroup.name or locationGroup.text);
-							-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
-							if locationName then
-								-- Add the immediate parent group Vendor name
-								local parent = group.parent;
-								if parent and paramB ~= parent[parent.key] and parent.name then
-									right = locationName .. " > " .. parent.name .. " " .. right;
-								else
-									right = locationName .. " " .. right;
-								end
-							end
-						end
-						tinsert(info, { left = item.prefix .. left, right = right });
-					end
-					if #entries - containCount > 0 then
-						tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
-					end
-				end
-			end
+			group.g = noCrits;
+			-- print("achieve nocrits",#group.g)
 		end
 
-		-- If the item is a recipe, then show which characters know this recipe.
-		if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
-			for key,value in pairs(recipes) do
-				if value[group.spellID] then
-					table.insert(knownBy, key);
-				end
-			end
-			if #knownBy > 0 then
-				table.sort(knownBy);
-				local desc = L["KNOWN_BY"];
-				local characters = GetDataMember("Characters");
-				for i,key in ipairs(knownBy) do
-					if i > 1 then desc = desc .. ", "; end
-					desc = desc .. (characters[key] or key);
-				end
-				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
-			end
-		end
+		-- Append any crafted things using this group
+		app.BuildCrafted(group);
 
-		-- If the user wants to show the progress of this search result, do so.
-		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(collectionData or group);
-		end
+		-- Expand any things requiring this group
+		app.ExpandSubGroups(group);
 
-		-- If there was any informational text generated, then attach that info.
-		if #info > 0 then
-			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-			-- putting this back due to descriptions, ugh
-			local uniques, dupes = {}, {};
-			for i,item in ipairs(info) do
-				if not item.left then
-					tinsert(uniques, item);
-				elseif not dupes[item.left] then
-					dupes[item.left] = true;
-					tinsert(uniques, item);
-				end
-			end
+		-- Append currency info to any orphan currency groups
+		app.BuildCurrencies(group);
 
-			group.info = uniques;
-			for i,item in ipairs(uniques) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		group.total = 0;
+		group.progress = 0;
+		group.parent = nil;
+		BuildGroups(group, group.g, true);
+		app.UpdateGroups(group, group.g);
+		if group.collectible then
+			group.total = group.total + 1;
+			if group.collected then
+				group.progress = group.progress + 1;
 			end
 		end
-
-		-- Cache the result for a while depending on if there is more work to be done.
-		group.working = working;
-		cache[2] = (working and 0.01) or 100000000;
-		cache[3] = group;
-		return group;
 	end
+
+	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
+		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+	end
+
+	if group.isLimited then
+		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
+	end
+
+	if paramA == "itemID" and paramB == 137642 then
+		if app.Settings:GetTooltipSetting("SummarizeThings") then
+			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });		--L["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
+		end
+	end
+
+	-- an item used for a faction which is repeatable
+	if group.itemID and group.factionID and group.repeatable then
+		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
+	end
+
+	-- local collectionData;
+	if group.g and #group.g > 0 then
+		--[[
+		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
+			for i,j in ipairs(group.g) do
+				if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
+					tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+				end
+			end
+		end
+		]]--
+		if app.Settings:GetTooltipSetting("SummarizeThings") then
+			local entries, left, right = {};
+			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
+			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			-- app.DEBUG_PRINT = nil;
+			if #entries > 0 then
+				-- print("#entries",#entries);
+				tinsert(info, { left = L["CONTAINS"] });
+				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				for i=1,containCount do
+					item = entries[i];
+					group = item.group;
+					left = group.text or RETRIEVING_DATA;
+					if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
+
+					-- If this group has specialization requirements, let's attempt to show the specialization icons.
+					right = item.right;
+					local specs = group.specs;
+					if specs and #specs > 0 then
+						for i,spec in ipairs(specs) do
+							local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+							right = "|T" .. icon .. ":0|t " .. right;
+						end
+					end
+					-- If this group has customCollect requirements, list them for clarity
+					if group.customCollect then
+						for i,c in ipairs(group.customCollect) do
+							if i > 1 then
+								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+							else
+								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
+							end
+						end
+					end
+					-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+					if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
+						-- Add the Zone name
+						local field, id;
+						for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
+							if not field then
+								id = app.RecursiveFirstParentWithField(group, v);
+								-- print("check",v,id)
+								if id then field = v; end
+							end
+						end
+						-- convert maps to a MapID
+						if field == "maps" then
+							field = "mapID";
+							id = id[1];
+						end
+						local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
+						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
+						if locationName then
+							-- Add the immediate parent group Vendor name
+							local parent = group.parent;
+							if parent and paramB ~= parent[parent.key] and parent.name then
+								right = locationName .. " > " .. parent.name .. " " .. right;
+							else
+								right = locationName .. " " .. right;
+							end
+						end
+					end
+					tinsert(info, { left = item.prefix .. left, right = right });
+				end
+				if #entries - containCount > 0 then
+					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
+				end
+			end
+		end
+	end
+
+	-- If the item is a recipe, then show which characters know this recipe.
+	if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+		local knownBy = {};
+		for guid,character in pairs(ATTCharacterData) do
+			if character.Spells and character.Spells[group.spellID] then
+				table.insert(knownBy, character);
+			end
+		end
+		if #knownBy > 0 then
+			table.sort(knownBy, function(a, b)
+				return a.text < b.text;
+			end);
+			local desc = L["KNOWN_BY"];
+			for i,character in ipairs(knownBy) do
+				if i > 1 then desc = desc .. ", "; end
+				desc = desc .. (character.text or "???");
+			end
+			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
+		end
+	end
+
+	-- If the user wants to show the progress of this search result, do so.
+	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
+		-- print(group.collectionText)
+	end
+
+	-- If there was any informational text generated, then attach that info.
+	if #info > 0 then
+		-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
+		-- putting this back due to descriptions, ugh
+		local uniques, dupes = {}, {};
+		for i,item in ipairs(info) do
+			if not item.left then
+				tinsert(uniques, item);
+			elseif not dupes[item.left] then
+				dupes[item.left] = true;
+				tinsert(uniques, item);
+			end
+		end
+
+		group.info = uniques;
+		for i,item in ipairs(uniques) do
+			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		end
+	end
+
+	-- Cache the result for a while depending on if there is more work to be done.
+	group.working = working;
+	cache[2] = (working and 0.01) or 100000000;
+	cache[3] = group;
+	return group;
 end
 app.BuildCrafted_IncludedItems = {};
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
@@ -3625,8 +3696,8 @@ app.BuildCost = function(group)
 	-- Gold cost currently ignored
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
-				["text"] = L["COST"],		-- L["COST"] = "Cost"
-				["description"] = L["COST_DESC"],		-- L["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing"
+				["text"] = L["COST"],
+				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["g"] = { },
 			};
@@ -3942,15 +4013,20 @@ fieldConverters = {
 			rawget(fieldConverters, "mapID")(group, value[3]);
 		end
 	end,
-	["coords"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
-		for i,coord in ipairs(value) do
-			if coord[3] then
-				_cache(group, coord[3]);
-			end
-		end
-	end,
 	]]--
+	-- ["coords"] = function(group, value)
+	-- 	-- Don't cache by coords if 'maps' is used at or above this group already
+	-- 	if GetRelativeValue(group, "maps") then return; end
+	-- 	local relMapID, refText = GetRelativeValue(group, "mapID"), group.text;
+	-- 	_cache = rawget(fieldConverters, "mapID");
+	-- 	for i,coord in ipairs(value) do
+	-- 		-- Don't cache by coord mapID if this group is already under an object using that mapID
+	-- 		if coord[3] and coord[3] ~= relMapID then
+	-- 			print("Cached Group for MapID",relMapID,coord[3],refText)
+	-- 			_cache(group, coord[3]);
+	-- 		end
+	-- 	end
+	-- end,
 	["cost"] = function(group, value)
 		if type(value) == "number" then
 			return;
@@ -4111,18 +4187,20 @@ local function SearchForLink(link)
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID);
 					_ = SearchForField("s", sourceID);
+					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					-- print("SEARCHING FOR ITEM LINK ", link, itemID);
-					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
+					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
+					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
 				end
-				
+
 				-- Merge together the cost search results as well.
-				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
+				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
+				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
@@ -4208,11 +4286,13 @@ end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
-		local fresh = false;
+		-- local fresh = false;
 
 		-- Mark all results as marked. This prevents a double +1 on parents.
 		for i,result in ipairs(searchResults) do
+			-- print("result",result.text,result.visible,result.parent and result.parent.total)
 			if result.visible and result.parent and result.parent.total then
+				-- print(".marked",result.text)
 				result.marked = true;
 			end
 		end
@@ -4236,12 +4316,15 @@ local function UpdateSearchResults(searchResults)
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					result.visible = app.CollectedItemVisibilityFilter(result);
 				end
-				fresh = true;
+				-- fresh = true;
 			end
 		end
 
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		-- Can't think of any situation where this method would be called without having processed the proper result updates...
+		-- app:RefreshData(fresh, true);
+		-- Just need to update the windows now that the data is updated
+		app:RefreshData(true, true);
 	end
 end
 app.SearchForLink = SearchForLink;
@@ -4610,7 +4693,7 @@ local function PopulateQuestObject(questObject)
 				for k,o in ipairs(item.g) do
 					if o.itemID == 140495 then	-- Torn Invitation
 						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
- 						if searchResults and #searchResults > 0 then
+						if searchResults and #searchResults > 0 then
 							if not o.g then o.g = {}; end
 							MergeObjects(o.g, CreateObject(searchResults));
 						end
@@ -4677,62 +4760,58 @@ local function ExportData(group)
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
 	end
 end
-local function RefreshSavesCoroutine()
-	-- While the player is in combat, wait for combat to end.
-	while InCombatLockdown() do coroutine.yield(); end
-
-	-- While the player is still logging in, wait.
-	while not app.GUID do coroutine.yield(); end
-
-	-- While the player is still waiting for information, wait.
-	-- NOTE: Usually, this is only 1 wait.
-	local counter = 600;
+local function RefreshSavesCallback()
+	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
+	app.refreshingSaves = app.refreshingSaves or 30;
+	-- Make sure there's info available to check save data
 	local saves = GetNumSavedInstances();
-	while counter > 0 and saves and saves < 1 do
-		counter = counter - 1;
-		coroutine.yield();
-		saves = GetNumSavedInstances();
+	-- While the player is still logging in, wait.
+	if not app.GUID then
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
 	end
-	if counter < 1 then
-		app.refreshingSaves = false;
-		-- Need to return if hitting the limit
-		-- A character who has never entered an instance will hit this
+	
+	-- While the player is still waiting for information, wait.
+	if saves and saves < 1 and app.refreshingSaves > 0 then
+		app.refreshingSaves = app.refreshingSaves - 1;
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Too many attempts, so give up
+	if app.refreshingSaves <= 0 then
+		app.refreshingSaves = nil;
 		return;
 	end
 
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
-	local lockouts = GetDataMember("lockouts");
-	local myLockouts = GetTempDataMember("lockouts");
 
 	-- Check to make sure that the old instance data has expired
-	for character,locks in pairs(lockouts) do
-		local lockCount = 0;
-		for name,instance in pairs(locks) do
-			local count = 0;
-			for difficulty,lock in pairs(instance) do
-				if serverTime >= lock.reset then
+	for guid,character in pairs(ATTCharacterData) do
+		local locks = character.Lockouts;
+		if locks then
+			for name,instance in pairs(locks) do
+				local count = 0;
+				for difficulty,lock in pairs(instance) do
+					if serverTime >= lock.reset then
+						-- Clean this up.
+						instance[difficulty] = nil;
+					else
+						count = count + 1;
+					end
+				end
+				if count == 0 then
 					-- Clean this up.
-					instance[difficulty] = nil;
-				else
-					count = count + 1;
+					locks[name] = nil;
 				end
 			end
-			if count == 0 then
-				-- Clean this up.
-				locks[name] = nil;
-			else
-				lockCount = lockCount + 1;
-			end
-		end
-		if lockCount == 0 then
-			-- Clean this up.
-			lockouts[character] = nil;
 		end
 	end
 
 	-- Update Saved Instances
 	local converter = L["SAVED_TO_DJ_INSTANCES"];
+	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,saves do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
@@ -4813,10 +4892,10 @@ local function RefreshSavesCoroutine()
 	end
 
 	-- Mark that we're done now.
-	app:UpdateWindows(nil, true);
+	app:UpdateWindows();
 end
 local function RefreshSaves()
-	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
+	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
@@ -4825,27 +4904,26 @@ local function RefreshCollections()
 		app.events.QUEST_LOG_UPDATE();
 
 		-- Harvest Illusion Collections
-		local collectedIllusions = GetDataMember("CollectedIllusions", {});
+		local collectedIllusions = ATTAccountWideData.Illusions;
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
 			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
 		coroutine.yield();
 
 		-- Harvest Title Collections
-		local collectedTitles = GetTempDataMember("CollectedTitles", {});
+		local collectedTitles = app.CurrentCharacter.Titles;
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
 		end
 		coroutine.yield();
 
 		-- Refresh Mounts / Pets
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
+		local collectedSpells = ATTAccountWideData.Spells;
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
 				rawset(collectedSpells, spellID, 1);
-				rawset(collectedSpellsPerCharacter, spellID, 1);
+				rawset(app.CurrentCharacter.Spells, spellID, 1);
 			end
 		end
 
@@ -4857,7 +4935,7 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Toys from Cache
-		local collectedToys = GetDataMember("CollectedToys", {});
+		local collectedToys = ATTAccountWideData.Toys;
 		for id,group in pairs(fieldCache["toyID"]) do
 			if not rawget(collectedToys, id) and PlayerHasToy(id) then
 				rawset(collectedToys, id, 1);
@@ -4871,7 +4949,7 @@ local function RefreshCollections()
 
 		-- Refresh Sources from Cache if tracking Transmog
 		if app.Settings:Get("Thing:Transmog") then
-			local collectedSources = GetDataMember("CollectedSources");
+			local collectedSources = ATTAccountWideData.Sources;
 			-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
 			app.MaxSourceID = app.MaxSourceID or 0;
 			-- process through all known ATT SourceIDs if not yet processed
@@ -4965,7 +5043,6 @@ local function GetGroupSortValue(group)
 end
 local function SortGroup(group, sortType, row, recur)
 	if group.visible and group.g then
-		app:CheckYieldHelper();
 		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
@@ -5133,6 +5210,31 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
+
+local npcQuestsCache = {}
+function app.IsNPCQuestGiver(self, npcID)
+	if not npcID then return false; end
+	if npcQuestsCache[npcID] then
+		return npcQuestsCache[npcID];
+	else
+		local group = app.SearchForField("creatureID", npcID);
+		if not group then
+			npcQuestsCache[npcID] = false;
+			return false;
+		end
+
+		for i,v in pairs(group) do
+			if v.visible and v.questID then
+				npcQuestsCache[npcID] = true;
+				return true;
+			end
+		end
+
+		npcQuestsCache[npcID] = false;
+		return false;
+	end
+end
+
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
@@ -5143,26 +5245,26 @@ local function AttachTooltip(self)
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
 		if link then
-			if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == link) then
-				return true
+			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
+				return true;
 			else
-				self.AllTheThingsProcessing = link
+				self.AllTheThingsProcessing = link;
 			end
 		else
-			 target = select(2, self:GetUnit());
+			target = select(2, self:GetUnit());
 			if target then
-				if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == target) then
-					return true
+				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
+					return true;
 				else
-					self.AllTheThingsProcessing = target
+					self.AllTheThingsProcessing = target;
 				end
 			else
 				spellID = select(2, self:GetSpell());
 				if spellID then
-					if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == spellID) then
-						return true
+					if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
+						return true;
 					else
-						self.AllTheThingsProcessing = spellID
+						self.AllTheThingsProcessing = spellID;
 					end
 				end
 			end
@@ -5241,7 +5343,6 @@ local function AttachTooltip(self)
 		if self.AllTheThingsProcessing and link then
 			-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-			local itemID = string.match(link, "item:(%d+)");
 			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
 			-- print(Ltype,Id);
 			--[[
@@ -5253,7 +5354,8 @@ local function AttachTooltip(self)
 				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 			end--]]
 			-- print("Search Item",itemID);
-			if itemID and itemID == "137642" then -- skip Mark of Honor for now
+			local mohIndex = link:find("item:137642");
+			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
 				AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
 			else
 				AttachTooltipSearchResults(self, link, SearchForLink, link);
@@ -5618,13 +5720,13 @@ local fields = {
 		return app.CollectibleAchievements and app.CheckCustomCollects(t);
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
+		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
 		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
-			SetTempDataSubMember("CollectedAchievements", t.achievementID, 1);
-			SetDataSubMember("CollectedAchievements", t.achievementID, 1);
+			app.CurrentCharacter.Achievements[t.achievementID] = 1;
+			ATTAccountWideData.Achievements[t.achievementID] = 1;
 			return 1;
 		end
-		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
+		if app.AccountWideAchievements and ATTAccountWideData.Achievements[t.achievementID] then return 2; end
 	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
@@ -5728,14 +5830,24 @@ local criteriaFields = {
 			return displayInfos;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedAchievements", t.achievementID) then return 1; end
-		if app.AccountWideAchievements and GetDataSubMember("CollectedAchievements", t.achievementID) then return 2; end
-		if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(t.achievementID) or -1) then
-			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
+		local achievementID = t.achievementID;
+		if achievementID then
+			if app.CurrentCharacter.Achievements[achievementID] then return 1; end
+			if app.AccountWideAchievements and ATTAccountWideData.Achievements[achievementID] then return 2; end
+			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
+				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+			end
+		end
+	end,
+	["saved"] = function(t)
+		local achievementID = t.achievementID;
+		if achievementID then
+			if app.CurrentCharacter.Achievements[achievementID] then return true; end
+			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
+				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+			end
 		end
 	end,
 	["index"] = function(t)
@@ -5744,11 +5856,29 @@ local criteriaFields = {
 };
 criteriaFields.collectible = fields.collectible;
 criteriaFields.icon = fields.icon;
-criteriaFields.saved = criteriaFields.collected;
 app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields);
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
+
+local function CheckAchievementCollectionStatus(achievementID)
+	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+	if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
+		ATTAccountWideData.Achievements[id] = 1;
+	end
+end
+RefreshAchievementCollection = function()
+	local maxid, achID = 0;
+	for achievementID,_ in pairs(fieldCache["achievementID"]) do
+		achID = tonumber(achievementID);
+		if achID > maxid then maxid = achID; end
+	end
+	for achievementID=maxid,1,-1 do
+		CheckAchievementCollectionStatus(achievementID);
+	end
+end
+app:RegisterEvent("ACHIEVEMENT_EARNED");
+app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
 end)();
 
 -- Artifact Lib
@@ -5780,11 +5910,11 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		-- _cache = t.s;
-		-- if _cache and GetDataSubMember("CollectedSources", _cache) then print("collected via sourceID",t.artifactID,_cache) return 1; end
-		if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
+		-- if _cache and ATTAccountWideData.Sources[_cache] then print("collected via sourceID",t.artifactID,_cache) return 1; end
+		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
 		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
-			SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
+			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
 	end,
@@ -5848,7 +5978,7 @@ local fields = {
 			if s and s > 0 then
 				rawset(t, "s", s);
 				if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-					SetDataSubMember("CollectedSources", s, 1);
+					ATTAccountWideData.Sources[s] = 1;
 				end
 				return s;
 			end
@@ -5874,17 +6004,17 @@ local fields = {
 		return app.CollectibleAzeriteEssences;
 	end,
 	["collected"] = function(t)
-		if (GetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0) >= t.rank then
+		if (app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] or 0) >= t.rank then
 			return 1;
 		end
 
-		local accountRank = GetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0;
+		local accountRank = ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] or 0;
 		local info = t.info;
 		if info and info.unlocked then
 			if t.rank and info.rank then
 				if info.rank >= t.rank then
-					SetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank);
-					if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
+					app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank;
+					if info.rank > accountRank then ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank; end
 					return 1;
 				end
 			else
@@ -6087,6 +6217,22 @@ end)();
 
 -- Death Tracker Lib
 (function()
+local OnUpdateForDeathTrackerLib = function(t)
+	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
+		t.visible = app.GroupVisibilityFilter(t);
+
+		local deaths = tonumber(select(1, GetStatistic(60)) or "0");
+		if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
+			app.CurrentCharacter.Deaths = deaths;
+			ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + (deaths - app.CurrentCharacter.Deaths);
+		end
+		t.parent.progress = t.parent.progress + t.progress;
+		t.parent.total = t.parent.total + t.total;
+	else
+		t.visible = false;
+	end
+	return true;
+end
 local fields = {
 	["key"] = function(t)
 		return "deaths";
@@ -6098,64 +6244,34 @@ local fields = {
 		return app.asset("Category_Deaths");
 	end,
 	["progress"] = function(t)
-		if t.visible then
-			-- TODO: Add Death Tracking as a Module.
-			-- (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or
-			return math.min(1000, GetDataMember("Deaths", 0));
-		else
-			return 0;
-		end
+		return math.min(1000, app.AccountWideDeaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
 	["total"] = function(t)
-		if t.visible then
-			return 1000;
-		else
-			return 0;
-		end
+		return 1000;
 	end,
 	["description"] = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 	end,
 	["OnTooltip"] = function(t)
 		local c = {};
-		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-		if deathsPerCharacter then
-			local characters = GetDataMember("Characters");
-			for guid,deaths in pairs(deathsPerCharacter) do
-				if guid and deaths and deaths > 0 then
-					table.insert(c, {
-						["name"] = characters[guid] or guid or "???",
-						["deaths"] = deaths or 0
-					});
-				end
+		for guid,character in pairs(ATTCharacterData) do
+			if character and character.Deaths and character.Deaths > 0 then
+				table.insert(c, character);
 			end
 		end
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
 			table.sort(c, function(a, b)
-				return a.deaths > b.deaths;
+				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. string.gsub(data.text, "-" .. GetRealmName(), ""), data.Deaths, 1, 1, 1);
 			end
 		end
 	end,
 	["OnUpdate"] = function(t)
-		t.visible = app.MODE_DEBUG;
-		if t.visible then
-			local deaths = tonumber(select(1, GetStatistic(60)) or "0");
-			if deaths > 0 then
-				local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-				local oldDeaths = deathsPerCharacter[app.GUID] or 0;
-				if deaths > oldDeaths then
-					deathsPerCharacter[app.GUID] = deaths;
-					SetDataMember("Deaths", GetDataMember("Deaths", 0) + (deaths - oldDeaths));
-				end
-			end
-			t.parent.progress = t.parent.progress + t.progress;
-			t.parent.total = t.parent.total + t.total;
-		end
+		return OnUpdateForDeathTrackerLib;
 	end,
 };
 app.BaseDeathClass = app.BaseObjectFields(fields);
@@ -6253,6 +6369,26 @@ end)();
 
 -- Encounter Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		idcache["link"]
+			= EJ_GetEncounterInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "encounterID";
@@ -6261,13 +6397,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
+		return GetCached(t, "name") or RETRIEVING_DATA;
+		-- return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["link"] = function(t)
-		return select(5, EJ_GetEncounterInfo(t.encounterID));
+		return GetCached(t, "link");
+		-- return select(5, EJ_GetEncounterInfo(t.encounterID));
 	end,
 	["displayID"] = function(t)
 		-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
@@ -6293,7 +6432,7 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		-- only consider encounters saved if saved for the current character
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["index"] = function(t)
 		return 1;
@@ -6395,6 +6534,23 @@ end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"]
+			= GetFactionInfoByID(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "factionID";
@@ -6403,7 +6559,8 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		return GetCached(t, "name") or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		-- return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
@@ -6424,24 +6581,25 @@ local fields = {
 	["filterID"] = function(t)
 		return 112;
 	end,
-	["trackable"] = function(t)
+	["trackable"] = app.ReturnTrue,
+	["collectible"] = function(t)
 		return app.CollectibleReputations;
 	end,
-	["saved"] = function(t)
+	["collected"] = function(t)
 		local factionID = t.factionID;
-		if GetTempDataSubMember("CollectedFactions", factionID) then return 1; end
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
 		if t.standing >= t.maxstanding then
-			SetTempDataSubMember("CollectedFactions", factionID, 1);
-			SetDataSubMember("CollectedFactions", factionID, 1);
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
 			return 1;
 		end
 		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
 		if friendID and not nextFriendThreshold then
-			SetTempDataSubMember("CollectedFactions", factionID, 1);
-			SetDataSubMember("CollectedFactions", factionID, 1);
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
 			return 1;
 		end
-		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", factionID) then return 2; end
+		if app.AccountWideReputations and ATTAccountWideData.Factions[factionID] then return 2; end
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
@@ -6460,6 +6618,21 @@ local fields = {
 					return 2;
 				end
 			end
+		end
+	end,
+	["saved"] = function(t)
+		local factionID = t.factionID;
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
+		if t.standing >= t.maxstanding then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
+		end
+		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
+		if friendID and not nextFriendThreshold then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
 		end
 	end,
 	["title"] = function(t)
@@ -6514,14 +6687,15 @@ local fields = {
 	end,
 	["description"] = function(t)
 		if t.isFriend then
-			return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			return (GetCached(t, "description") or L["FACTION_SPECIFIC_REP"])
 				.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
+			-- return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
+			-- 	.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
 		end
-		return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
+		return GetCached(t, "description") or L["FACTION_SPECIFIC_REP"];
+		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
-fields.collectible = fields.trackable;
-fields.collected = fields.saved;
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
@@ -6639,8 +6813,8 @@ local fields = {
 		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then return 1; end
-		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
+		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
+		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
 		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
@@ -6695,26 +6869,25 @@ end
 app.events.TAXIMAP_OPENED = function()
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 	if allNodeData then
-		local knownNodeIDs = {};
+		local updates, searchResults, nodeID = {};
+		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
-				table.insert(knownNodeIDs, nodeData.nodeID);
-			end
-		end
-		local updates, searchResults = {};
-		for i,nodeID in ipairs(knownNodeIDs) do
-			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				searchResults = SearchForField("flightPathID", nodeID);
-				if searchResults then
-					for j,searchResult in ipairs(searchResults) do
-						table.insert(updates, searchResult);
+				nodeID = nodeData.nodeID;
+				if not currentCharFPs[nodeID] then
+					acctFPs[nodeID] = 1;
+					currentCharFPs[nodeID] = 1;
+					searchResults = SearchForField("flightPathID", nodeID);
+					if searchResults then
+						for j,searchResult in ipairs(searchResults) do
+							table.insert(updates, searchResult);
+						end
 					end
 				end
+
 			end
 		end
-		if #updates > 0 then UpdateSearchResults(updates); end
+		UpdateSearchResults(updates);
 	end
 end
 end)();
@@ -6744,7 +6917,7 @@ local fields = {
 		return t.info.portraitIconID;
 	end,
 	["link"] = function(t)
-		if GetTempDataSubMember("CollectedFollowers", t.followerID) then
+		if app.CurrentCharacter.Followers[t.followerID] then
 			return C_Garrison_GetFollowerLink(t.followerID);
 		else
 			return C_Garrison_GetFollowerLinkByID(t.followerID);
@@ -6754,13 +6927,13 @@ local fields = {
 		return app.CollectibleFollowers;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
+		if app.CurrentCharacter.Followers[t.followerID] then return 1; end
 		if C_Garrison_IsFollowerCollected(t.followerID) then
-			SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
-			SetDataSubMember("CollectedFollowers", t.followerID, 1);
+			app.CurrentCharacter.Followers[t.followerID] = 1;
+			ATTAccountWideData.Followers[t.followerID] = 1;
 			return 1;
 		end
-		if app.AccountWideFollowers and GetDataSubMember("CollectedFollowers", t.followerID) then return 2; end
+		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
 	end,
 	["description"] = function(t)
 		return L["FOLLOWERS_COLLECTION_DESC"];
@@ -6801,13 +6974,13 @@ local fields = {
 		return t.itemID and app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
+		if app.CurrentCharacter.Buildings[t.buildingID] then return 1; end
 		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
-			SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
-			SetDataSubMember("CollectedBuildings", t.buildingID, 1);
+			app.CurrentCharacter.Buildings[t.buildingID] = 1;
+			ATTAccountWideData.Buildings[t.buildingID] = 1;
 			return 1;
 		end
-		if app.AccountWideRecipes and GetDataSubMember("CollectedBuildings", t.buildingID) then return 2; end
+		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
 	end,
 	["description"] = function(t)
 		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
@@ -6871,11 +7044,9 @@ local fields = {
 	["description"] = function(t)
 		return t.info.description;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		return t.questID and IsQuestFlaggedCompleted(t.questID) or t.info.researched;
+		return IsQuestFlaggedCompleted(t.questID) or t.info.researched;
 	end,
 };
 app.BaseGarrisonTalent = app.BaseObjectFields(fields);
@@ -6972,7 +7143,7 @@ local fields = {
 		return rawget(t, "s") and app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
@@ -7073,12 +7244,10 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleHeirlooms;
 	end,
-	["collected"] = function(t)
+	["saved"] = function(t)
 		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["u"] = function(t)
 		return t.parent.u;
 	end,
@@ -7086,7 +7255,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.collected = fields.saved;
 app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
 
 local armorTextures = {
@@ -7118,20 +7287,18 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
 	end,
-	["collected"] = function(t)
+	["saved"] = function(t)
 		local itemID = t.parent.itemID;
 		if itemID then
-			if t.level <= GetDataSubMember("HeirloomUpgradeRanks", itemID, 0) then return 1; end
+			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
 			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
 			if level then
-				SetDataSubMember("HeirloomUpgradeRanks", itemID, level);
-				if t.level <= level then return 1; end
+				ATTAccountWideData.HeirloomRanks[itemID] = level;
+				if t.level <= level then return true; end
 			end
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
 		if t.parent.f and contains(isWeapon, t.parent.f) then
 			rawset(t, "isWeapon", true);
@@ -7147,7 +7314,7 @@ local fields = {
 		return t.parent.f;
 	end,
 };
-fields.saved = collected;
+fields.collected = fields.saved;
 app.BaseHeirloomLevel = app.BaseObjectFields(fields);
 
 local fields = {
@@ -7181,23 +7348,23 @@ local fields = {
 	["collected"] = function(t)
 		if t.factionID then
 			if t.repeatable then
-				return (GetTempDataSubMember("CollectedFactions", t.factionID) and 1)
-					or (GetDataSubMember("CollectedFactions", t.factionID) and 2);
+				return (app.CurrentCharacter.Factions[t.factionID] and 1)
+					or (ATTAccountWideData.Factions[t.factionID] and 2);
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
 			end
 		end
-		if t.s and GetDataSubMember("CollectedSources", t.s) then return 1; end
+		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 	end,
-	["trackable"] = function(t)
-		return true;
+	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		return t.collected == 1;
 	end,
 	["g"] = function(t)
 		if app.CollectibleHeirlooms then
@@ -7239,14 +7406,12 @@ local fields = {
 					tinsert(g, l);
 				end
 				BuildGroups(t, g);
-				app.UpdateGroups(t, g);
 			end
 			rawset(t, "g", g);
 			return g;
 		end
 	end,
 };
-fields.saved = collected;
 app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
@@ -7343,6 +7508,11 @@ local fields = {
 		return t.info.name;
 	end,
 	["icon"] = function(t)
+		-- Use the custom icon if defined
+		if L["HOLIDAY_ID_ICONS"][t.holidayID] then
+			rawset(t, "icon", L["HOLIDAY_ID_ICONS"][t.holidayID]);
+			return rawget(t, "icon");
+		end
 		return t.holidayID == 235466 and 235465 or t.holidayID;
 	end,
 	["texcoord"] = function(t)
@@ -7399,7 +7569,7 @@ local fields = {
 		return app.CollectibleIllusions;
 	end,
 	["collected"] = function(t)
-		return GetDataSubMember("CollectedIllusions", t.illusionID);
+		return ATTAccountWideData.Illusions[t.illusionID];
 	end,
 	["silentLink"] = function(t)
 		return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
@@ -7413,25 +7583,51 @@ end)();
 
 -- Instance Lib
 (function()
+local cache = {};
+local function GetCached(t, field)
+	if not t[t["key"]] then return nil; end
+	local id, _ = t[t["key"]];
+	local idcache = rawget(cache, id);
+	if not idcache then
+		idcache = {};
+		rawset(cache, id, idcache);
+		-- Set necessary fields from the result
+		idcache["name"],
+		idcache["description"],
+		_,
+		_,
+		_,
+		idcache["icon"],
+		_,
+		idcache["link"]
+			= EJ_GetInstanceInfo(id);
+		-- print("Set New CacheID",id)
+		-- app.PrintTable(idcache);
+	end
+	return rawget(idcache, field);
+end
 local fields = {
 	["key"] = function(t)
 		return "instanceID";
 	end,
 	["text"] = function(t)
-		local name = t.name;
-		if name then return rawget(t, "isRaid") and ("|cffff8000" .. name .. "|r") or name; end
+		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return select(6, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "icon");
+		-- return select(6, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["name"] = function(t)
-		return select(1, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "name");
+		-- return select(1, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["description"] = function(t)
-		return select(2, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "description");
+		-- return select(2, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["link"] = function(t)
-		return select(8, EJ_GetInstanceInfo(t.instanceID));
+		return GetCached(t, "link");
+		-- return select(8, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
@@ -7442,15 +7638,13 @@ local fields = {
 		return t.locks;
 	end,
 	["locks"] = function(t)
-		local locks = GetTempDataSubMember("lockouts", t.name);
+		local locks = app.CurrentCharacter.Lockouts[t.name];
 		if locks then
 			rawset(t, "locks", locks);
 			return locks;
 		end
 	end,
-	["isLockoutShared"] = function(t)
-		return false;
-	end,
+	["isLockoutShared"] = app.ReturnFalse,
 	["sort"] = function(t)
 		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
 	end,
@@ -7471,7 +7665,7 @@ local itemFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
@@ -7479,10 +7673,10 @@ local itemFields = {
 			local bonusID = t.bonusID;
 			if bonusID then
 				if bonusID > 0 then
-                    itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-                else
-                    itemLink = string.format("item:%d:::::::::::::", itemLink);
-                end
+					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
+				end
 			else
 				bonusID = t.modID;
 				if bonusID then
@@ -7495,6 +7689,7 @@ local itemFields = {
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
+				rawset(t, "icon", icon);
 				rawset(t, "q", quality);
 				return link;
 			else
@@ -7510,7 +7705,7 @@ local itemFields = {
 						return itemName;
 					end
 				else
-					rawset(t, "retries", nil);
+					rawset(t, "retries", 1);
 				end
 			end
 		end
@@ -7562,24 +7757,25 @@ local itemFields = {
 	end,
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		local modItemID = GetGroupItemIDWithModID(t);
-		rawset(t, "modItemID", modItemID);
-		return modItemID;
+		if t.modID and t.modID > 0 then
+			rawset(t, "modItemID", t.itemID + (t.modID / 100));
+		else
+			rawset(t, "modItemID", t.itemID);
+		end		
+		return rawget(t, "modItemID");
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		return t.collectibleAsCost;
 	end,
 	["collectibleAsAchievement"] = function(t)
-		return app.CollectedAchievements or t.collectibleAsCost;
+		return app.CollectibleAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
 		if t.parent and t.parent.saved then return false; end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -7591,7 +7787,10 @@ local itemFields = {
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
 				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
+					app.RecursiveGroupRequirementsFilter(ref) and
+					-- don't include items which are from something the current character cannot complete
+					not GetRelativeValue(t, "altcollected") then
 					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
@@ -7603,9 +7802,7 @@ local itemFields = {
 			return false;
 		end
 	end,
-	["collectibleAsCostAfterFailure"] = function(t)
-		return false;
-	end,
+	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsCost;
 	end,
@@ -7622,9 +7819,11 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
+		-- local LOG = t.itemID == 76402 and t.itemID;
+		-- if LOG then print("Logging Costs for",LOG) end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -7634,31 +7833,39 @@ local itemFields = {
 			results = app.SearchForField("itemIDAsCost", id);
 		end
 		if results and #results > 0 then
-			local collected, count = true, 0;
+			-- if LOG then print("Found Cost Results",#results) end
 			for _,ref in pairs(results) do
+				-- TODO: why is this so weird
+				-- ensure this result has updated itself prior to determining if a cost is required for it
+				-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
+				-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
+				-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
 				-- different itemID, OR same itemID with different modID is allowed
 				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
-						count = count + 1;
-						if ref.progress < ref.total then
-							collected = false;
-						end
-					elseif ref.collectible then
-						count = count + 1;
-						if not ref.collected then
-							collected = false;
-						end
+					-- TODO: maybe use this instead eventually
+					-- if not app.IsComplete(ref) then
+					-- 	return false;
+					-- end
+					-- Used as a cost for something which is collectible itself and not collected
+					if ref.collectible and not ref.collected then
+						-- if LOG then print("Cost Required via Collectible") end
+						return false;
+					-- Used as a cost for something which has an incomplete progress
+					elseif ref.total and ref.total > 0 and ref.total ~= ref.progress and
+						-- is account or debug mode or the thing is not altcollected
+						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- if LOG then print("Cost Required via Total/Prog") end
+						return false;
 					end
 				end
 			end
-			if count > 0 then
-				return collected;
-			end
-			return false;
+			return true;
 		end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
-		
+
 	end,
 	["collectedAsFaction"] = function(t)
 		return t.collectedAsFactionOnly or t.collectedAsCost;
@@ -7667,19 +7874,18 @@ local itemFields = {
 		if t.factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-				if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
+				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
-					SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-					SetDataSubMember("CollectedFactions", t.factionID, 1);
+					app.CurrentCharacter.Factions[t.factionID] = 1;
+					ATTAccountWideData.Factions[t.factionID] = 1;
 					return 1;
 				end
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
 				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
 			end
@@ -7692,10 +7898,10 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
-	["savedAsQuest"] = function(t) 
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompleted(t);
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
@@ -7899,12 +8105,12 @@ app.CreateMapWithStyle = function(id)
 		end
 	end
 
-    if not mapObject.text then
-        local mapInfo = C_Map_GetMapInfo(id);
-        if mapInfo then
-            mapObject.text = mapInfo.name;
-        end
-    end
+	if not mapObject.text then
+		local mapInfo = C_Map_GetMapInfo(id);
+		if mapInfo then
+			mapObject.text = mapInfo.name;
+		end
+	end
 	return mapObject;
 end
 
@@ -7952,12 +8158,11 @@ local mountFields = {
 		return app.CollectibleMounts;
 	end,
 	["collected"] = function(t)
-		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-		end
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
 	end,
@@ -8005,45 +8210,47 @@ app.CreateMount = function(id, t)
 	end
 end
 
-app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
-	-- print("NEW_MOUNT_ADDED", newMountID, ...);
-	StartCoroutine("RefreshMountCollection" .. (newMountID or "ALL"), function()
-		while InCombatLockdown() do coroutine.yield(); end
-		
-		-- Refresh Mounts
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		if newMountID then
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+-- Refresh a specific Mount or all Mounts if not provided with a specific ID
+local RefreshMounts = function(newMountID)
+	local collectedSpells, newSpellIDResults = ATTAccountWideData.Spells;
+	-- Think learning multiple mounts at once or multiple mounts without leaving combat
+	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
+	-- plus it's not laggy now to do that so it should be fine
+	
+	-- if newMountID then
+	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+	-- 	if spellID and isCollected then
+	-- 		if not collectedSpells[spellID] then
+	-- 			collectedSpells[spellID] = 1;
+	-- 			app.CurrentCharacter.Spells[spellID] = 1;
+	-- 			newSpellIDResults = SearchForField("spellID", spellID);
+	-- 		end
+	-- 	end
+	-- else
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
 				if not collectedSpells[spellID] then
 					collectedSpells[spellID] = 1;
-					collectedSpellsPerCharacter[spellID] = 1;
-					UpdateSearchResults(SearchForField("spellID", spellID));
-					app:PlayRareFindSound();
-				end
-			end
-		else
-			local anyNewMounts = false;
-			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-				if spellID and isCollected then
-					if not collectedSpells[spellID] then
-						collectedSpells[spellID] = 1;
-						collectedSpellsPerCharacter[spellID] = 1;
-						anyNewMounts = true;
+					app.CurrentCharacter.Spells[spellID] = 1;
+					if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
+					else
+						for _,result in ipairs(SearchForField("spellID", spellID)) do
+							tinsert(newSpellIDResults, result);
+						end
 					end
 				end
 			end
-			
-			if anyNewMounts then
-				-- Wait a frame before harvesting item collection status.
-				coroutine.yield();
-				app:PlayRareFindSound();
-				app:RefreshData(false, true);
-			end
 		end
-	end);
+	-- end
+
+	if newSpellIDResults then
+		UpdateSearchResults(newSpellIDResults);
+		app:PlayRareFindSound();
+	end
+end
+app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
+	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
 end)();
@@ -8092,15 +8299,13 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleMusicRollsAndSelfieFilters;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then return 2; end
+		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then return 2; end
 	end,
 	["saved"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 };
 app.BaseMusicRoll = app.BaseObjectFields(fields);
@@ -8135,15 +8340,13 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and GetDataSubMember("CollectedQuests", t.questID) then
+		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then
 			return 2;
 		end
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		if IsQuestFlaggedCompleted(t.questID) then return 1; end
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["lvl"] = function(t)
 		return 40;
@@ -8197,7 +8400,7 @@ local npcFields = {
 	["sort"] = function(t)
 		return (t.order or "51") .. t.name;
 	end,
-	
+
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8220,9 +8423,7 @@ local npcFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8242,7 +8443,7 @@ app.BaseNPC = app.BaseObjectFields(npcFields);
 
 local fields = RawCloneData(npcFields);
 fields.icon = npcFields.iconAsAchievement;
---fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center -> 
+--fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center ->
 app.BaseNPCWithAchievement = app.BaseObjectFields(fields);
 
 local fields = RawCloneData(npcFields);
@@ -8296,9 +8497,7 @@ local headerFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
 local fields = RawCloneData(headerFields);
@@ -8368,7 +8567,7 @@ local objectFields = {
 	["sort"] = function(t)
 		return (t.order or "51") .. t.name;
 	end,
-	
+
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8387,9 +8586,7 @@ local objectFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
-	["trackableAsQuest"] = function(t)
-		return true;
-	end,
+	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
@@ -8605,9 +8802,7 @@ local fields = {
 	["lifetimeRank"] = function(t)
 		return select(3, GetPVPLifetimeStats());
 	end,
-	["collectible"] = function(t)
-		return false;	-- TODO?
-	end,
+	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		return t.lifetimeRank >= t.pvpRankID;
 	end,
@@ -8623,6 +8818,7 @@ end)();
 
 -- Quest Lib
 (function()
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -8660,6 +8856,12 @@ local questFields = {
 			return "Interface\\GossipFrame\\AvailableQuestIcon";
 		end
 	end,
+	["hasIndicator"] = function(t)
+		return C_QuestLog_IsOnQuest(t.questID);
+	end,
+	["indicator"] = function(t)
+		return "star";
+	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
 	end,
@@ -8672,13 +8874,11 @@ local questFields = {
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
-	
+
 	["collectibleAsReputation"] = function(t)
 		-- If Collectible purely by being a Quest
 		if app.CollectibleAsQuest(t) then return true; end
@@ -8703,13 +8903,16 @@ local questFields = {
 		end
 		return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
 	end,
-	
+
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
+		-- local LOG = t.questID == 8753 and t.questID;
+		-- if LOG then print(LOG,"checking altCollected") end		
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
+					-- if LOG then print(LOG,"altCollected by",questID) end
 					rawset(t, "altcollected", questID);
 					return questID;
 				end
@@ -8723,13 +8926,14 @@ local questFields = {
 		if not IsQuestFlaggedCompleted(t.questID) then
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			if t.isBreadcrumb and t.nextQuests then
+				local nq;
 				for i,questID in ipairs(t.nextQuests) do
 					if IsQuestFlaggedCompleted(questID) then
 						rawset(t, "breadcrumbLockedBy", questID);
 						return questID;
 					else
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local nq = app.SearchForObjectClone("questID", questID);
+						nq = app.SearchForObject("questID", questID);
 						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
 							rawset(t, "breadcrumbLockedBy", questID);
 							return questID;
@@ -8743,6 +8947,7 @@ local questFields = {
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local completed = true;
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
+			local sq;
 			for i,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					if includeBreadcrumbs then
@@ -8750,7 +8955,7 @@ local questFields = {
 						completed = false;
 					else
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
-						local sq = app.SearchForObjectClone("questID", sourceQuestID);
+						sq = app.SearchForObject("questID", sourceQuestID);
 						if sq then
 							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
 								completed = false;
@@ -8766,6 +8971,38 @@ local questFields = {
 	end,
 };
 app.BaseQuest = app.BaseObjectFields(questFields);
+
+-- consolidated representation of whether a Thing can be collectible via QuestID
+app.CollectibleAsQuest = function(t)
+	-- if t.questID == 11381 then
+	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
+	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
+	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
+	-- end
+	return
+	-- must treat Quests as collectible
+	app.CollectibleQuests
+	and (
+			(
+			-- must have a questID associated
+			t.questID
+			-- must not be repeatable, unless considering repeatable quests as collectible
+			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			-- must match custom collectibility if set as well
+			and app.CheckCustomCollects(t)
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
+			-- TODO: revisit if party sync option becomes a thing
+			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			)
+
+			-- If it is an item and associated to an active quest.
+			-- TODO: add t.requiredForQuestID
+			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
+		);
+end
 
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
@@ -8837,17 +9074,13 @@ local fields = {
 	["repeatable"] = function(t)
 		return t.parent.repeatable;
 	end,
-	["collectible"] = function(t)
-		return false;
-	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		-- If the parent is collected, return immediately.
 		local collected = t.parent.collected;
 		if collected then return collected; end
-		
+
 		-- Check to see if the objective was completed.
 		local questID = t.questID;
 		if questID then
@@ -8862,9 +9095,8 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		-- If the parent is saved, return immediately.
-		local saved = t.parent.saved;
-		if saved then return saved; end
-		
+		if t.parent.saved then return true; end
+
 		-- Check to see if the objective was completed.
 		local questID = t.questID;
 		if questID then
@@ -8890,24 +9122,8 @@ local function QueryCompletedQuests()
 		t[v] = true;
 	end
 end
--- consolidated representation of whether a Thing can be collectible via QuestID
-app.CollectibleAsQuest = function(t)
-	return
-	-- must treat Quests as collectible
-	app.CollectibleQuests
-	-- must not be repeatable, unless considering repeatable quests as trackable
-	and (((not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-	-- must match custom collectibility if set as well
-	and app.CheckCustomCollects(t)
-	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-	-- TODO: revisit if party sync option becomes a thing
-	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-		
-	-- If it is an item or used for an active quest.
-	or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)));
-end
 local function RefreshQuestCompletionState(questID)
+	-- print("QuestRefresh",questID)
 	if not questID then
 		QueryCompletedQuests();
 	else
@@ -8918,123 +9134,153 @@ local function RefreshQuestCompletionState(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
+	wipe(npcQuestsCache)
+end
+app.RefreshQuestInfo = function(questID)
+	AfterCombatCallback(RefreshQuestCompletionState, questID);
 end
 
 -- Recipe Lib
-app.BaseRecipe = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "filterID" then
-			return 200;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["filterID"] = function(t)
+		return 200;
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
-		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "collectible" then
-			return app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
-		elseif key == "b" then
-			return t.itemID and app.AccountWideRecipes and 2;
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
 		end
-	end
+		return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
+			end
+		end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
+	["b"] = function(t)
+		return t.itemID and app.AccountWideRecipes and 2;
+	end,
+	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+		return rawget(t, "modItemID");
+	end,
 };
+app.BaseRecipe = app.BaseObjectFields(fields);
 app.CreateRecipe = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
+end)();
 
 -- Spell Lib
-app.BaseSpell = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "link" then
-			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+			if link then
+				t.link = link;
+				t.icon = icon;
+				return link;
 			end
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return false;
-		elseif key == "collected" or key == "saved" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if IsSpellKnown(t.spellID) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
-		elseif key == "specs" then
-			if t.itemID then
-				return GetFixedItemSpecInfo(t.itemID);
-			end
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "skillID" then
-			return t.requireSkill;
 		end
-	end
+		return select(1, GetSpellLink(t.spellID));
+	end,
+	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return true; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return true;
+		end
+	end,
+	["collectible"] = app.ReturnFalse,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return 1;
+		end
+	end,
+	["name"] = function(t)
+		return t.itemID and GetItemInfo(t.itemID);
+	end,
+	["specs"] = function(t)
+		if t.itemID then
+			return GetFixedItemSpecInfo(t.itemID);
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then
+			return string.format("i:%d", t.itemID);
+		end
+	end,
+	["skillID"] = function(t)
+		return t.requireSkill;
+	end,
 };
+app.BaseSpell = app.BaseObjectFields(fields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
+end)();
 
 -- Species Lib
 (function()
@@ -9049,6 +9295,58 @@ local meta = {
 	end
 };
 local collectedSpecies = setmetatable({}, meta);
+local fields = {
+	["key"] = function(t)
+		return "speciesID";
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleBattlePets;
+	end,
+	["collected"] = function(t)
+		if collectedSpecies[t.speciesID] then
+			return 1;
+		end
+		local altSpeciesID = t.altSpeciesID;
+		if altSpeciesID and collectedSpecies[altSpeciesID]then
+			return 2;
+		end
+	end,
+	["text"] = function(t)
+		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["description"] = function(t)
+		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["displayID"] = function(t)
+		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["name"] = function(t)
+		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local link = select(2, GetItemInfo(t.itemID));
+			if link then
+				t.link = link;
+				return link;
+			end
+		end
+	end,
+	["tsm"] = function(t)
+		return string.format("p:%d:1:3", t.speciesID);
+	end,
+};
+app.BaseSpecies = app.BaseObjectFields(fields);
+app.CreateSpecies = function(id, t)
+	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
+end
+
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	-- print("NEW_PET_ADDED", petID, speciesID);
@@ -9077,365 +9375,328 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	if atLeastOne then
 		app:PlayRemoveSound();
 		app:RefreshData(false, true);
-		-- wipe(searchCache); -- handled by refresth data
+		-- wipe(searchCache); -- handled by refresh data
 	end
-end
-app.BaseSpecies = {
-	__index = function(t, key)
-		if key == "key" then
-			return "speciesID";
-		elseif key == "filterID" then
-			return 101;
-		elseif key == "collectible" then
-			return app.CollectibleBattlePets;
-		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] then
-				return 1;
-			end
-			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID and collectedSpecies[altSpeciesID]then
-				return 2;
-			end
-		elseif key == "text" then
-			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
-		elseif key == "icon" then
-			return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "description" then
-			return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "displayID" then
-			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "name" then
-			return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-		elseif key == "link" then
-			if t.itemID then
-				local link = select(2, GetItemInfo(t.itemID));
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
-			return rawget(t, "modItemID");
-		elseif key == "tsm" then
-			return string.format("p:%d:1:3", t.speciesID);
-		end
-	end
-};
-app.CreateSpecies = function(id, t)
-	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
 end)();
 
 -- Tier Lib
 (function()
-	local tiers = {
-		{	-- Classic
-			["icon"] = app.asset("Expansion_CLASSIC"),
-			["description"] = L["CLASSIC_TIER_DESC"],
-		},
-		{	-- Burning Crusade
-			["icon"] = app.asset("Expansion_TBC"),
-			["description"] = L["TBC_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Wrath of the Lich King
-			["icon"] = app.asset("Expansion_WOTLK"),
-			["description"] = L["WOTLK_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Cataclysm
-			["icon"] = app.asset("Expansion_CATA"),
-			["description"] = L["CATA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Mists of Pandaria
-			["icon"] = app.asset("Expansion_MOP"),
-			["description"] = L["MOP_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Warlords of Draenor
-			["icon"] = app.asset("Expansion_WOD"),
-			["description"] = L["WOD_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Legion
-			["icon"] = app.asset("Expansion_LEGION"),
-			["description"] = L["LEGION_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Battle for Azeroth
-			["icon"] = app.asset("Expansion_BFA"),
-			["description"] = L["BFA_TIER_DESC"],
-			["lvl"] = 10,
-		},
-		{	-- Shadowlands
-			["icon"] = app.asset("Expansion_SL"),
-			["description"] = L["SL_TIER_DESC"],
-			["lvl"] = 50,
-		},
-	};
-	app.BaseTier = {
-		__index = function(t, key)
-			if key == "key" then
-				return "tierID";
-			elseif key == "text" then
-				return EJ_GetTierInfo(t.tierID);
-			else
-				local info = rawget(tiers, t.tierID);
-				return info and rawget(info, key);
-			end
-		end
-	};
-	app.CreateTier = function(id, t)
-		local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-		if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-			table.sort(tier.g, app.SortGroups);
-		end
-		return tier
+local tiers = {
+	{	-- Classic
+		["icon"] = app.asset("Expansion_CLASSIC"),
+		["description"] = L["CLASSIC_TIER_DESC"],
+	},
+	{	-- Burning Crusade
+		["icon"] = app.asset("Expansion_TBC"),
+		["description"] = L["TBC_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Wrath of the Lich King
+		["icon"] = app.asset("Expansion_WOTLK"),
+		["description"] = L["WOTLK_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Cataclysm
+		["icon"] = app.asset("Expansion_CATA"),
+		["description"] = L["CATA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Mists of Pandaria
+		["icon"] = app.asset("Expansion_MOP"),
+		["description"] = L["MOP_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Warlords of Draenor
+		["icon"] = app.asset("Expansion_WOD"),
+		["description"] = L["WOD_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Legion
+		["icon"] = app.asset("Expansion_LEGION"),
+		["description"] = L["LEGION_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Battle for Azeroth
+		["icon"] = app.asset("Expansion_BFA"),
+		["description"] = L["BFA_TIER_DESC"],
+		["lvl"] = 10,
+	},
+	{	-- Shadowlands
+		["icon"] = app.asset("Expansion_SL"),
+		["description"] = L["SL_TIER_DESC"],
+		["lvl"] = 50,
+	},
+};
+local function GetTierInfo(tierID, key)
+	if rawget(tiers, tierID) then
+		return rawget(rawget(tiers, tierID), key);
 	end
+end
+local fields = {
+	["key"] = function(t)
+		return "tierID";
+	end,
+	["text"] = function(t)
+		return EJ_GetTierInfo(t.tierID);
+	end,
+	-- Keyed values from 'tiers' data
+	["icon"] = function(t)
+		return GetTierInfo(t.tierID, "icon");
+	end,
+	["description"] = function(t)
+		return GetTierInfo(t.tierID, "description");
+	end,
+	["lvl"] = function(t)
+		return GetTierInfo(t.tierID, "lvl");
+	end,
+};
+
+app.BaseTier = app.BaseObjectFields(fields);
+app.CreateTier = function(id, t)
+	local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+	if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+		table.sort(tier.g, app.SortGroups);
+	end
+	return tier
+end
 end)();
 
 -- Title Lib
-app.BaseTitle = {
-	__index = function(t, key)
-		if key == "key" then
-			return "titleID";
-		elseif key == "filterID" then
-			return 110;
-		elseif key == "icon" then
-			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
-		elseif key == "description" then
-			return L["TITLES_DESC"];		-- L["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character."
-		elseif key == "text" then
-			local name = t.playerTitle;
-			if name then
-				name = "|cff00ccff" .. name .. "|r";
-				rawset(t, "name", name);
-				return name;
+(function()
+local fields = {
+	["key"] = function(t)
+		return "titleID";
+	end,
+	["filterID"] = function(t)
+		return 110;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
+	end,
+	["description"] = function(t)
+		return L["TITLES_DESC"];
+	end,
+	["text"] = function(t)
+		local name = t.playerTitle;
+		if name then
+			name = "|cff00ccff" .. name .. "|r";
+			rawset(t, "name", name);
+			return name;
+		end
+	end,
+	["playerTitle"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local style = t.style;
+			if style == 0 then
+				-- Prefix
+				return name .. UnitName("player");
+			elseif style == 1 then
+				-- Player Name First
+				return UnitName("player") .. name;
+			elseif style == 2 then
+				-- Player Name First (with space)
+				return UnitName("player") .. " " .. name;
+			elseif style == 3 then
+				-- Comma Separated
+				return UnitName("player") .. ", " .. name;
 			end
-		elseif key == "playerTitle" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local style = t.style;
-				if style == 0 then
-					-- Prefix
-					return name .. UnitName("player");
-				elseif style == 1 then
-					-- Player Name First
-					return UnitName("player") .. name;
-				elseif style == 2 then
-					-- Player Name First (with space)
-					return UnitName("player") .. " " .. name;
-				elseif style == 3 then
-					-- Comma Separated
-					return UnitName("player") .. ", " .. name;
-				end
-			end
-		elseif key == "style" then
-			local name = GetTitleName(t.titleID);
-			if name then
-				local first = string.sub(name, 1, 1);
-				if first == " " then
-					-- Suffix
-					first = string.sub(name, 2, 2);
-					if first == string.upper(first) then
-						-- Comma Separated
-						return 3;
-					end
-
-					-- Player Name First
-					return 1;
-				else
-					local last = string.sub(name, -1);
-					if last == " " then
-						-- Prefix
-						return 0;
-					end
-
-					-- Suffix
-					if first == string.lower(first) then
-						-- Player Name First with a space
-						return 2;
-					end
-
+		end
+	end,
+	["style"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local first = string.sub(name, 1, 1);
+			if first == " " then
+				-- Suffix
+				first = string.sub(name, 2, 2);
+				if first == string.upper(first) then
 					-- Comma Separated
 					return 3;
 				end
-			end
 
-			return 1;	-- Player Name First
-		elseif key == "collectible" then
-			return app.CollectibleTitles;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" or key == "collected" then
-			if app.AccountWideTitles then
-				if GetDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
-				end
-			else
-				if GetTempDataSubMember("CollectedTitles", t.titleID) then
-					return 1;
-				end
-			end
-			if IsTitleKnown(t.titleID) then
-				SetTempDataSubMember("CollectedTitles", t.titleID, 1);
-				SetDataSubMember("CollectedTitles", t.titleID, 1);
+				-- Player Name First
 				return 1;
+			else
+				local last = string.sub(name, -1);
+				if last == " " then
+					-- Prefix
+					return 0;
+				end
+
+				-- Suffix
+				if first == string.lower(first) then
+					-- Player Name First with a space
+					return 2;
+				end
+
+				-- Comma Separated
+				return 3;
 			end
 		end
-	end
+
+		return 1;	-- Player Name First
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleTitles;
+	end,
+	["trackable"] = app.ReturnTrue,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Titles[t.titleID] then return 1; end
+		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
+		if IsTitleKnown(t.titleID) then
+			app.CurrentCharacter.Titles[t.titleID] = 1;
+			ATTAccountWideData.Titles[t.titleID] = 1;
+			return 1;
+		end
+	end,
+	["saved"] = function(t)
+		if app.CurrentCharacter.Titles[t.titleID] then return true; end
+		if IsTitleKnown(t.titleID) then
+			app.CurrentCharacter.Titles[t.titleID] = 1;
+			ATTAccountWideData.Titles[t.titleID] = 1;
+			return true;
+		end
+	end,
 };
+app.BaseTitle = app.BaseObjectFields(fields);
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
 end
+end)();
 
 -- Toy Lib
-app.BaseToy = {
-	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "filterID" then
-			return 102;
-		elseif key == "collectible" then
-			return app.CollectibleToys;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedToys", t.itemID);
-		elseif key == "isToy" then
-			return true;
-		elseif key == "text" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "link" then
-			return C_ToyBox_GetToyLink(t.itemID);
-		elseif key == "icon" then
-			return select(3, C_ToyBox_GetToyInfo(t.itemID));
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		elseif key == "modItemID" then
-			-- toys don't use modIDs
-			rawset(t, "modItemID", t.itemID);
-			return rawget(t, "modItemID");
-		elseif key == "name" then
-			return select(2, C_ToyBox_GetToyInfo(t.itemID));
-		elseif key == "tsm" then
-			return string.format("i:%d", t.itemID);
-		elseif key == "b" then
-			return 2;
-		end
-	end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["filterID"] = function(t)
+		return 102;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleToys;
+	end,
+	["collected"] = function(t)
+		return ATTAccountWideData.Toys[t.itemID];
+	end,
+	["isToy"] = app.ReturnTrue,
+	["text"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["link"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["icon"] = function(t)
+		return select(3, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["name"] = function(t)
+		return select(2, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["tsm"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
 };
+app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
+end)();
 
 -- Vignette Lib
-app.BaseVignette = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			if t.qgs then
-				local all = true;
-				for i,qg in ipairs(t.qgs) do
-					if not NPCNameFromID[qg] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.qgs;
-					for i=1,count,1 do
-						local qg = t.qgs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-						else
-							t.name = NPCNameFromID[qg];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[qg];
-						end
-					end
-					return t.name;
-				end
-			elseif t.crs then
-				local all = true;
-				for i,cr in ipairs(t.crs) do
-					if not NPCNameFromID[cr] then
-						all = false;
-					end
-				end
-				if all then
-					t.name = nil;
-					local count = #t.crs;
-					for i=1,count,1 do
-						local cr = t.crs[i];
-						if t.name then
-							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-						else
-							t.name = NPCNameFromID[cr];
-						end
-						if not t.title then
-							t.title = NPCTitlesFromID[cr];
-						end
-					end
-					return t.name;
-				end
-			elseif t.qg then
-				if NPCNameFromID[t.qg] then
-					t.name = NPCNameFromID[t.qg];
-					if not t.title then
-						t.title = NPCTitlesFromID[t.qg];
-					end
-					return t.name;
-				end
-			elseif t.creatureID then
-				if t.creatureID > 0 then
-					if NPCNameFromID[t.creatureID] then
-						t.name = NPCNameFromID[t.creatureID];
-						if not t.title then
-							t.title = NPCTitlesFromID[t.creatureID];
-						end
-						return t.name;
-					end
-				else
-					t.name = L["HEADER_NAMES"][t.creatureID];
-					return t.name;
+(function()
+local fields = {
+	["text"] = function(t)
+		if t.qgs then
+			local all = true;
+			for i,qg in ipairs(t.qgs) do
+				if not NPCNameFromID[qg] then
+					all = false;
 				end
 			end
-			return t.name;
-		elseif key == "name" then
-			return QuestTitleFromID[t.questID];
-		elseif key == "link" then
-			return "quest:" .. t.questID;
-		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleAsQuest(t);
-		elseif key == "collected" then
-			return t.collectible and t.saved;
-		elseif key == "repeatable" then
-			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "isVignette" then
-			return true;
+			if all then
+				t.name = nil;
+				local count = #t.qgs;
+				for i=1,count,1 do
+					local qg = t.qgs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+					else
+						t.name = NPCNameFromID[qg];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[qg];
+					end
+				end
+				return t.name;
+			end
+		elseif t.crs then
+			local all = true;
+			for i,cr in ipairs(t.crs) do
+				if not NPCNameFromID[cr] then
+					all = false;
+				end
+			end
+			if all then
+				t.name = nil;
+				local count = #t.crs;
+				for i=1,count,1 do
+					local cr = t.crs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+					else
+						t.name = NPCNameFromID[cr];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[cr];
+					end
+				end
+				return t.name;
+			end
+		elseif t.qg then
+			if NPCNameFromID[t.qg] then
+				t.name = NPCNameFromID[t.qg];
+				if not t.title then
+					t.title = NPCTitlesFromID[t.qg];
+				end
+				return t.name;
+			end
+		elseif t.creatureID then
+			if t.creatureID > 0 then
+				if NPCNameFromID[t.creatureID] then
+					t.name = NPCNameFromID[t.creatureID];
+					if not t.title then
+						t.title = NPCTitlesFromID[t.creatureID];
+					end
+					return t.name;
+				end
+			else
+				t.name = L["HEADER_NAMES"][t.creatureID];
+				return t.name;
+			end
 		end
-	end
+		return t.name;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+	end,
+	["isVignette"] = app.ReturnTrue,
 };
+app.BaseVignette = setmetatable(app.BaseObjectFields(fields), app.BaseQuest);
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
+end)();
 
 -- Filtering
-function app.Filter()
-	-- Meaning "Don't display."
-	-- Nothing needs to return
-end
-function app.NoFilter()
-	-- Meaning "Display as expected."
-	return true;
-end
+-- Meaning "Don't display." - Returns false
+app.Filter = app.ReturnFalse;
+-- Meaning "Display as expected" - Returns true
+app.NoFilter = app.ReturnTrue;
 function app.FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
 	if group.lvl then
@@ -9480,12 +9741,7 @@ function app.FilterItemClass_RequireClasses(item)
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	if item.f then
-		local f = item.f;
-		-- manually do NOT filter some various filters which are applied only because Blizzard gives the wrong information about them
-		return (f > 49 and f < 60) or	-- Misc. Filters on non-collectible items
-			f == 114 or				-- Key Items
-			f == 999 or				-- Event Items
-			app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
+		return app.Settings:GetFilter(item.f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -9914,7 +10170,6 @@ app.VerifyCache = function()
 				if not app.VerifyRecursion(group) then
 					print("Caused infinite .parent recursion",group.key,group[group.key]);
 				end
-				app:CheckYieldHelper();
 			end
 		end
 	end
@@ -10008,12 +10263,17 @@ end
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
+--[[
 UpdateGroup = function(parent, group, defaultVisibility)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
 		if group.g then
 			-- If this item is collectible, then mark it as such.
+			-- TODO: items which are flagged as a 'cost' become collectible. But if they are also containers, then their total will be inaccurate
+			-- if the contained groups are the same as those for which the 'cost' has been applied
+			-- (i.e. tier tokens creating their tier piece + vendor selling tier peice for token cost)
+			-- feel like cost collectibility needs to remain a separate check to base collectibility
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.collected and 1 or 0;
@@ -10093,6 +10353,8 @@ UpdateGroup = function(parent, group, defaultVisibility)
 
 	if group.OnUpdate then group:OnUpdate(); end
 end
+]]
+--[[
 UpdateGroups = function(parent, g, defaultVis)
 	if g then
 		-- whenever updating a group, ensure values are set if not
@@ -10100,12 +10362,131 @@ UpdateGroups = function(parent, g, defaultVis)
 		if not parent.progress then parent.progress = 0; end
 		-- default visibility for group updates is debug mode itself
 		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.MODE_DEBUG;
+		local defaultVisibility = defaultVis or app.MODE_DEBUG or false;
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
-			app:CheckYieldHelper();
 			UpdateGroup(parent, group, defaultVisibility);
 		end
+	end
+end
+]]--
+UpdateGroup = function(parent, group)
+	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
+	-- if LOG then app.DEBUG_LOG = LOG; end
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
+
+	-- -- Only update a group ONCE per update cycle...
+	-- if not group._Updated or group._Updated ~= app._Updated then
+	-- 	if LOG then print("First Update") end
+	-- 	group._Updated = app._Updated;
+	-- else
+	-- 	-- group has already updated on this pass
+	-- 	if LOG then print("Skip Update") end
+	-- 	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
+	-- 	-- Increment the parent group's totals.
+	-- 	parent.total = (parent.total or 0) + (group.total or 0);
+	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
+	-- 	return group.visible;
+	-- end
+
+	local visible = app.MODE_DEBUG;
+
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupRequirementsFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+
+			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
+
+			-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
+			-- if everything inside is hidden, otherwise it would obviously need to be shown.
+			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
+			-- otherwise filtered groups... maybe that's good...?
+
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+
+				-- Update the subgroups recursively...
+				visible = UpdateGroups(group, group.g);
+
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
+
+				-- Increment the parent group's totals.
+				parent.total = (parent.total or 0) + group.total;
+				parent.progress = (parent.progress or 0) + group.progress;
+
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowIncompleteThings(group) and not group.saved then
+					visible = true;
+				-- elseif group.itemID and app.CollectibleLoot and group.f then
+				-- 	visible = true;
+				end
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif group.trackable then
+					-- If this group is trackable, then we should show it.
+					if app.ShowIncompleteThings(group) and not group.saved then
+						visible = true;
+					end
+				-- elseif group.itemID and app.CollectibleLoot and group.f then
+				-- 	visible = true;
+				end
+			else
+				visible = false;
+			end
+		end
+	end
+
+	-- Set the visibility
+	group.visible = visible;
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
+	-- if LOG then app.DEBUG_LOG = nil; end
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for key, group in ipairs(g) do
+			if group.OnUpdate then
+				if not group:OnUpdate() then
+					if UpdateGroup(parent, group) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(parent, group) then
+				visible = true;
+			end
+		end
+		return visible;
 	end
 end
 local function UpdateParentProgress(group)
@@ -10128,6 +10509,7 @@ local function UpdateParentProgress(group)
 		end
 	end
 end
+app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
 
@@ -10203,10 +10585,10 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for i, otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
 					tinsert(unlockedSourceIDs, otherSourceID);
 				end
 			end
@@ -10361,10 +10743,10 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for i, otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
 					tinsert(unlockedSourceIDs, otherSourceID);
 				end
 			end
@@ -10515,46 +10897,105 @@ function app.QuestCompletionHelper(questID)
 		end
 	end
 end
--- helps prevent coroutines running longer than 1 second per frame, not sure we can get a finer time resolution like this...
-function app:CheckYieldHelper()
-	if coroutine.running() then
-		-- first call, then set the next yield
-		if not app.nextYield then app.nextYield = time(); end
-		if app.nextYield < time() then
-			app.nextYield = time();
-			-- print("yieldHelper",app.nextYield);
-			-- app:UpdateWindows();
-			coroutine.yield();
-		end
-	end
-end
 -- receives a key and a function which returns the value to be set for
--- that key in the CustomCollectibility data member based on the current value
-app.CustomCollects = {};
-function app.SetCustomCollectibility(key, func)
-	local playerKey = key .. "-" .. app.GUID;
-	local cc = GetDataMember("CustomCollectibility", {});
-	-- print("cached",playerKey,type(cc),cc,cc[playerKey]);
-	local result = func(cc[playerKey]);
+-- that key based on the current value and current character
+app.SetCustomCollectibility = function(key, func)
+	-- print("cached",key,app.CurrentCharacter.CustomCollects[key]);
+	local result = func(app.CurrentCharacter.CustomCollects[key]);
 	if result ~= nil then
-		-- print("saved",playerKey,result);
-		app.CustomCollects[key] = result;
-		cc[playerKey] = result;
-		SetDataMember("CustomCollectibility", cc);
+		-- print("saved",key,result);
+		app.CurrentCharacter.CustomCollects[key] = result;
 	end
 end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
 	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
-	for k,c in ipairs(t.customCollect) do
-		if not app.CustomCollects[c] then
+	for _,c in ipairs(t.customCollect) do
+		if not app.CurrentCharacter.CustomCollects[c] then
 			return false;
 		end
 	end
 	return true;
 end
+-- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
+app.RefreshCustomCollectibility = function()
+	if not app.IsReady then
+		Callback(app.RefreshCustomCollectibility);
+		return;
+	end
+	-- do one-time per character custom visibility check(s)
+	-- Exile's Reach (New Player Experience)
+	app.SetCustomCollectibility("NPE", function(cc)
+		-- character is not checked
+		if cc == nil then
+			-- print("first check");
+			-- check if the current MapID is in Exile's Reach
+			local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
+			while not app.CurrentMapID do
+				app.GetCurrentMapID();
+			end
+			-- print("map check",app.CurrentMapID);
+			-- this is an NPE character, so flag the GUID
+			if maps[app.CurrentMapID] then
+				-- print("on map");
+				return true;
+			-- if character has completed the first NPE quest
+			elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
+					-- but not finished the NPE chain
+					and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
+				-- print("incomplete NPE chain");
+				return true;
+			end
+			-- otherwise character is not NPE
+			return false;
+		-- character has previously been flagged
+		elseif cc then
+			-- finished the NPE chain
+			if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
+				-- print("complete NPE chain");
+				return false;
+			end
+		end
+		return cc;
+	end);
+	-- Shadowlands Skip
+	app.SetCustomCollectibility("SL_SKIP", function(cc)
+		-- character is not checked
+		if cc == nil then
+			-- print("first check of SL_SKIP");
+			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+			cc = IsQuestFlaggedCompleted(62713) or false;
+		-- character is not a skip character, check if the status has changed
+		elseif not cc then
+			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+			cc = IsQuestFlaggedCompleted(62713);
+		end
+		-- no apparent way to revert this choice, so no logic to revert the CC value
+		-- print("isSkip",cc);
+		return cc;
+	end);
 
+	local SLCovenantId = C_Covenants.GetActiveCovenantID();
+	-- print("Current Covenant",SLCovenantId);
+	-- Show all Covenants if not yet selected
+	-- Shadowlands Covenant: Kyrian
+	app.SetCustomCollectibility("SL_COV_KYR", function()
+		return SLCovenantId == 1 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Venthyr
+	app.SetCustomCollectibility("SL_COV_VEN", function()
+		return SLCovenantId == 2 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Night Fae
+	app.SetCustomCollectibility("SL_COV_NFA", function()
+		return SLCovenantId == 3 or SLCovenantId == 0;
+	end);
+	-- Shadowlands Covenant: Necrolord
+	app.SetCustomCollectibility("SL_COV_NEC", function()
+		return SLCovenantId == 4 or SLCovenantId == 0;
+	end);
+end
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		app.Settings:Open();
@@ -10650,9 +11091,49 @@ local function CreateMinimapButton()
 	button:UpdateStyle();
 
 	-- Button Configuration
+	local radius = 78;
+	local rounding = 10;
+	local MinimapShapes = {
+		-- quadrant booleans (same order as SetTexCoord)
+		-- {bottom-right, bottom-left, top-right, top-left}
+		-- true = rounded, false = squared
+		["ROUND"] 			= {true,  true,  true,  true },
+		["SQUARE"] 			= {false, false, false, false},
+		["CORNER-TOPLEFT"] 		= {false, false, false, true },
+		["CORNER-TOPRIGHT"] 		= {false, false, true,  false},
+		["CORNER-BOTTOMLEFT"] 		= {false, true,  false, false},
+		["CORNER-BOTTOMRIGHT"]	 	= {true,  false, false, false},
+		["SIDE-LEFT"] 			= {false, true,  false, true },
+		["SIDE-RIGHT"] 			= {true,  false, true,  false},
+		["SIDE-TOP"] 			= {false, false, true,  true },
+		["SIDE-BOTTOM"] 		= {true,  true,  false, false},
+		["TRICORNER-TOPLEFT"] 		= {false, true,  true,  true },
+		["TRICORNER-TOPRIGHT"] 		= {true,  false, true,  true },
+		["TRICORNER-BOTTOMLEFT"] 	= {true,  true,  false, true },
+		["TRICORNER-BOTTOMRIGHT"] 	= {true,  true,  true,  false},
+	};
 	button.update = function(self)
 		local position = GetDataMember("Position", -10.31);
-		self:SetPoint("CENTER", "Minimap", "CENTER", -78 * cos(position), 78 * sin(position));
+		local angle = math.rad(position) -- determine position on your own
+		local x, y
+		local cos = math.cos(angle)
+		local sin = math.sin(angle)
+		local q = 1;
+		if cos < 0 then
+			q = q + 1;	-- lower
+		end
+		if sin > 0 then
+			q = q + 2;	-- right
+		end
+		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
+			x = cos*radius;
+			y = sin*radius;
+		else
+			local diagRadius = math.sqrt(2*(radius)^2)-rounding
+			x = math.max(-radius, math.min(cos*diagRadius, radius))
+			y = math.max(-radius, math.min(sin*diagRadius, radius))
+		end
+		self:SetPoint("CENTER", "Minimap", "CENTER", -x, y);
 	end
 	local update = function(self)
 		local w, x = GetCursorPosition();
@@ -10687,23 +11168,21 @@ app.CreateMinimapButton = CreateMinimapButton;
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
-local function SetVisible(self, show)
+local function SetVisible(self, show, forceUpdate)
 	if show then
 		self:Show();
-		self:Update();
+		self:Update(forceUpdate);
 	else
 		self:Hide();
 	end
 end
-local function Toggle(self)
-	return SetVisible(self, not self:IsVisible());
+local function Toggle(self, forceUpdate)
+	return SetVisible(self, not self:IsVisible(), forceUpdate);
 end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then
-		addedQuests =  {};
-	end
+	if not addedQuests then addedQuests =  {}; end
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
@@ -10785,6 +11264,20 @@ local function NestSourceQuests(root, addedQuests, depth)
 			else MergeObjects(root.g, prereqs); end
 		end
 	end
+	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+	if root.providers then
+		for _,p in ipairs(root.providers) do
+			if p[1] == "i" then
+				-- print("Root Provider",p[1], p[2]);
+				local pRef = app.SearchForObject("itemID", p[2]);
+				if pRef then
+					pRef = CloneData(pRef);
+					if not root.g then root.g = { pRef };
+					else MergeObject(root.g, pRef, 1); end
+				end
+			end
+		end
+	end
 	return root;
 end
 
@@ -10840,10 +11333,12 @@ function app:CreateMiniListForGroup(group)
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 			if sourceInfo then
+				-- print("Source Info on popout")
+				-- app.PrintTable(sourceInfo)
 				-- Show a list of all of the Shared Appearances.
 				local g = {};
 
-				-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
 					if otherSourceID ~= group.s then
@@ -10858,7 +11353,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
-									SetDataSubMember("CollectedSources", otherSourceID, 1);
+									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
 								end
 								tinsert(g, newItem);
@@ -10868,15 +11363,15 @@ function app:CreateMiniListForGroup(group)
 				end
 				if #g > 0 then
 					table.insert(popout.data.g, {
-						["text"] = L["SHARED_APPEARANCES_LABEL"],		-- L["SHARED_APPEARANCES_LABEL"] = "Shared Appearances"
-						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],		-- L["SHARED_APPEARANCES_LABEL_DESC"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected."
+						["text"] = L["SHARED_APPEARANCES_LABEL"],
+						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g
 					});
 				else
 					table.insert(popout.data.g, {
-						["text"] = L["UNIQUE_APPEARANCE_LABEL"],		-- L["UNIQUE_APPEARANCE_LABEL"] = "Unique Appearance"
-						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],		-- L["UNIQUE_APPEARANCE_LABEL_DESC"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance."
+						["text"] = L["UNIQUE_APPEARANCE_LABEL"],
+						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["collectible"] = true,
 					});
@@ -10884,8 +11379,8 @@ function app:CreateMiniListForGroup(group)
 			end
 
 			-- Determine if this source is part of a set or two.
-			local allSets = GetDataMember("Sets", {});
-			local sourceSets = GetDataMember("SourceSets", {});
+			local allSets = {};
+			local sourceSets = {};
 			local GetVariantSets = C_TransmogSets.GetVariantSets;
 			local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
 			for i,data in ipairs(C_TransmogSets.GetAllSets()) do
@@ -10932,7 +11427,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
-									SetDataSubMember("CollectedSources", sourceID, 1);
+									ATTAccountWideData.Sources[sourceID] = 1;
 									newItem.collected = true;
 								end
 								tinsert(g, newItem);
@@ -10965,6 +11460,7 @@ function app:CreateMiniListForGroup(group)
 			local root = group;
 			root.collectible = not root.repeatable;
 			local g = { root };
+			popout.isQuestChain = true;
 
 			-- Check to see if Source Quests are listed elsewhere.
 			if group.questID and not group.sourceQuests then
@@ -10991,8 +11487,6 @@ function app:CreateMiniListForGroup(group)
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
-				local breakafter = 0;
-				local isAcctQuests = app.AccountWideQuests;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
@@ -11020,7 +11514,7 @@ function app:CreateMiniListForGroup(group)
 								sourceQuest.visible = true;
 								sourceQuest.hideText = true;
 								if found.sourceQuests and #found.sourceQuests > 0 and
-									(found.saved ~= 1 or app.AccountWideQuests or app.CollectedItemVisibilityFilter(sourceQuest)) then
+									(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 									for j, subsourceQuests in ipairs(found.sourceQuests) do
 										subSourceQuests[subsourceQuests] = true;
@@ -11048,8 +11542,8 @@ function app:CreateMiniListForGroup(group)
 							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
 						tinsert(prereqs, {
-							["text"] = L["UPON_COMPLETION"],		-- L["UPON_COMPLETION"] = "Upon Completion"
-							["description"] = L["UPON_COMPLETION_DESC"],		-- L["UPON_COMPLETION_DESC"] = "The above quests need to be completed before being able to complete the things listed below."
+							["text"] = L["UPON_COMPLETION"],
+							["description"] = L["UPON_COMPLETION_DESC"],
 							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 							["visible"] = true,
 							["expanded"] = true,
@@ -11057,12 +11551,6 @@ function app:CreateMiniListForGroup(group)
 							["hideText"] = true
 						});
 						g = prereqs;
-						breakafter = breakafter + 1;
-						if breakafter >= 100 then
-							app.print(L["QUEST_LOOP"]); -- L["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop."
-							app.report();
-							break;
-						end
 					end
 				end
 
@@ -11118,9 +11606,24 @@ function app:CreateMiniListForGroup(group)
 					end
 				until not prereqs or #prereqs < 1;
 			end
+			-- If the initial quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+			if g[1] and g[1].providers then
+				for _,p in ipairs(g[1].providers) do
+					if p[1] == "i" then
+						-- print("Root Provider",p[1], p[2]);
+						local pRef = app.SearchForObject("itemID", p[2]);
+						if pRef then
+							pRef = CloneData(pRef);
+							-- Set the full Quest Chain as the child of the Item
+							pRef.g = g;
+							g = { pRef };
+						end
+					end
+				end
+			end
 			popout.data = {
-				["text"] = L["QUEST_CHAIN_REQ"],		-- L["QUEST_CHAIN_REQ"] = "Quest Chain Requirements"
-				["description"] = L["QUEST_CHAIN_REQ_DESC"],		-- L["QUEST_CHAIN_REQ_DESC"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r"
+				["text"] = L["QUEST_CHAIN_REQ"],
+				["description"] = L["QUEST_CHAIN_REQ_DESC"],
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 				["g"] = gTop and { gTop } or g,
 				["hideText"] = true
@@ -11155,15 +11658,29 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Clone the data and then insert it into the Raw Data table.
-		-- popout.data = popout.data or group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
 		popout.data.indent = 0;
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
-		table.insert(app.RawData, popout.data);
+		-- Adjust some update/refresh logic if this is a Quest Chain window
+		if popout.isQuestChain then
+			local oldUpdate = popout.Update;
+			popout.Update = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldUpdate(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+			local oldRefresh = popout.Refresh;
+			popout.Refresh = function(self, ...)
+				local oldQuestTracking = app.AccountWideQuests;
+				app.AccountWideQuests = false;
+				oldRefresh(self, ...);
+				app.AccountWideQuests = oldQuestTracking;
+			end;
+		end
 	end
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
@@ -11228,7 +11745,7 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text, data.itemID);
+			local s, dressable = GetSourceID(text);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
@@ -11296,6 +11813,10 @@ local function SetRowData(self, row, data)
 			end
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
+		elseif data.hasIndicator then
+			row.Indicator:SetTexture(app.asset(data.indicator));
+			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+			row.Indicator:Show();
 		end
 		if SetPortraitIcon(row.Texture, data) then
 			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
@@ -11352,6 +11873,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady then return; end
+	-- print("Refresh:",self.Suffix or self.suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -11420,32 +11942,17 @@ local function Refresh(self)
 		totalRowCount = totalRowCount + 1;
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
 
+		-- If this window has an UpdateDone method which should process after the Refresh is complete
+		if self.UpdateDone then
+			SelfCallback(self, "UpdateDone",
+				function() self:UpdateDone(); end);
 		-- If the rows need to be processed again, do so next update.
-		if self.processingLinks then
-			StartCoroutine(self:GetName(), function()
-				while self.processingLinks do
+		elseif self.processingLinks then
+			SelfCallback(self, "Refresh",
+				function()
 					self.processingLinks = nil;
-					coroutine.yield();
 					self:Refresh();
-				end
-				if self.UpdateDone then
-					StartCoroutine(self:GetName()..":UpdateDone", function()
-						coroutine.yield();
-						StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-							coroutine.yield();
-							self:UpdateDone();
-						end);
-					end);
-				end
-			end);
-		elseif self.UpdateDone then
-			StartCoroutine(self:GetName()..":UpdateDone", function()
-				coroutine.yield();
-				StartCoroutine(self:GetName()..":UpdateDoneP2", function()
-					coroutine.yield();
-					self:UpdateDone();
 				end);
-			end);
 		end
 	else
 		self:Hide();
@@ -11506,10 +12013,10 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, true) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, false) end);
 				else
 					app.print("Sorting selection alphabetically...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, true) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, false) end);
 				end
 			else
 				if self.index > 0 then
@@ -11531,7 +12038,7 @@ local function RowOnClick(self, button)
 								Atr_SearchAH(L["TITLE"], missingItems, LE_ITEM_CLASS_ARMOR);
 								return true;
 							end
-							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);		-- L["AH_SEARCH_NO_ITEMS_FOUND"] = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search."
+							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
 						else
 							local name = reference.name;
 							if name then
@@ -11541,7 +12048,7 @@ local function RowOnClick(self, button)
 								Atr_Search_Onclick ();
 								return true;
 							end
-							app.print(L["AH_SEARCH_BOE_ONLY"]);		-- L["AH_SEARCH_BOE_ONLY"] = "Only Bind on Equip items can be found using this search."
+							app.print(L["AH_SEARCH_BOE_ONLY"]);
 						end
 						return true;
 					elseif TSMAPI and TSMAPI.Auction then
@@ -11553,13 +12060,13 @@ local function RowOnClick(self, button)
 									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
 									if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
 								end
-								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],		-- L["TSM_WARNING_1"] = "Running this command can potentially destroy your existing TSM settings by reassigning items to the "; L["TSM_WARNING_2"] = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?"
+								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 								function()
 									TSMAPI.Groups:CreatePreset(itemList);
-									app.print(L["PRESET_UPDATE_SUCCESS"]);		-- L["PRESET_UPDATE_SUCCESS"] = "Updated the preset successfully."
+									app.print(L["PRESET_UPDATE_SUCCESS"]);
 									if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
-										print(L["SHOPPING_OP_MISSING_1"]);		-- L["SHOPPING_OP_MISSING_1"] = "The preset is missing a 'Shopping' Operation assignment."
-										print(L["SHOPPING_OP_MISSING_2"]);		-- L["SHOPPING_OP_MISSING_2"] = "Type '/tsm operations' to create or assign one."
+										print(L["SHOPPING_OP_MISSING_1"]);
+										print(L["SHOPPING_OP_MISSING_2"]);
 									end
 								end);
 								return true;
@@ -11576,7 +12083,7 @@ local function RowOnClick(self, button)
 						return true;
 					else
 						if reference.g and #reference.g > 0 and not reference.link then
-							app.print(L["AUCTIONATOR_GROUPS"]);		-- L["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator."
+							app.print(L["AUCTIONATOR_GROUPS"]);
 							return true;
 						else
 							-- Attempt to search manually with the link.
@@ -11590,7 +12097,7 @@ local function RowOnClick(self, button)
 				elseif TSMAPI_FOUR and false then
 					if reference.g and #reference.g > 0 then
 						if true then
-							app.print(L["TSM4_ERROR"]);		-- L["TSM4_ERROR"] = "TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!"
+							app.print(L["TSM4_ERROR"]);
 							return true;
 						end
 						local missingItems = SearchForMissingItems(reference);
@@ -11794,10 +12301,10 @@ RowOnEnter = function (self)
 			if reference.total and reference.total >= 2 then
 				-- if collecting this reference type, then show Collection State
 				if reference.collectible then
-					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));		-- L["COLLECTION_PROGRESS"] = "Collection Progress"
+					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));
 				-- if completion/tracking is available, show Completion State
 				elseif reference.trackable then
-					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));		-- L["TRACKING_PROGRESS"] = "Tracking Progress"
+					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));
 				end
 			end
 		end
@@ -11805,7 +12312,7 @@ RowOnEnter = function (self)
 		-- achievement progress. If it has a measurable statistic, show it under the achievement description
 		if reference.achievementID then
 			if reference.statistic then
-				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)		-- L["PROGRESS"] = "Progress"
+				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)
 			end
 		end
 
@@ -11827,7 +12334,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
 		elseif reference.questID and reference.retries then
-			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);		-- L["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. "
+			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 		end
 		if reference.lvl then
 			local minlvl;
@@ -11870,15 +12377,15 @@ RowOnEnter = function (self)
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
-			local msg = L["MINUMUM_STANDING"]	-- L["MINUMUM_STANDING"] = "Requires a minimum standing of"
+			local msg = L["MINUMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."		-- L["_WITH_"] = " with "
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
 			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
 			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
-			local msg = L["MAXIMUM_STANDING"]	-- L["MAXIMUM_STANDING"] = "Requires a standing lower than"
+			local msg = L["MAXIMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
 			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
@@ -11887,9 +12394,9 @@ RowOnEnter = function (self)
 			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
 			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
-			local msg = L["MIN_MAX_STANDING"]		-- L["MIN_MAX_STANDING"] = "Requires a standing between"
+			local msg = L["MIN_MAX_STANDING"]
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]		-- L["_AND"] = " and"
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 			GameTooltip:AddLine(msg);
@@ -11921,7 +12428,7 @@ RowOnEnter = function (self)
 				else
 					str = "";
 				end
-				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",		-- L["COORDINATES_STRING"] = "Coordinates"
+				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
 			end
@@ -11940,7 +12447,7 @@ RowOnEnter = function (self)
 					local name = GetItemInfo(providerID)
 					providerString = name or 'Item #'..providerID
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');		-- L["PROVIDERS"] = "Provider(s)"
+				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');
 				counter = counter + 1;
 			end
 		end
@@ -12017,12 +12524,14 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str = "";
+			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				-- TODO: causes 60 upvalue error...
-				-- str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr)
-				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				if colors then
+					str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr);
+				else
+					str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
@@ -12039,15 +12548,21 @@ RowOnEnter = function (self)
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
 				end
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+				if reference.r == 2 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, "ff407fbf") or ITEM_REQ_ALLIANCE);
+				elseif reference.r == 1 then
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, "ffcc6666") or ITEM_REQ_HORDE);
+				else
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
+				end
 			end
 		end
-		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end		-- L["DURING_WQ_ONLY"] = "This can be completed when the world quest is active."
-		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);		-- L["COMPLETED_DAILY"] = "This can be completed daily."
-		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);		-- L["COMPLETED_WEEKLY"] = "This can be completed weekly."
-		elseif reference.isMontly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);		-- L["COMPLETED_MONTHLY"] = "This can be completed monthly."
-		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);		-- L["COMPLETED_YEARLY"] = "This can be completed yearly."
-		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end		-- L["COMPLETED_MULTIPLE"] = "This can be repeated multiple times."
+		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
+		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
+		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
+		elseif reference.isMontly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
+		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
+		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
 		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if app.Settings:GetTooltipSetting("iconPath") then
 				GameTooltip:AddDoubleLine("Icon", reference.icon);
@@ -12094,7 +12609,7 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.criteriaID and reference.achievementID then
-			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));		-- L["CRITERIA_FOR"] = "Criteria for"
+			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 		end
 		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
 		if app.Settings:GetTooltipSetting("Progress") then
@@ -12135,7 +12650,7 @@ RowOnEnter = function (self)
 
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
 						if totalItems > 0 then
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");		-- L["LOOT_TABLE_CHANCE"] = "Loot Table Chance"
+							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
 						else
 							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
 						end
@@ -12165,7 +12680,7 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local chance = (1 / specHits[bestSpecID]) * 100;
 								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);		-- L["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance"; L["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance"
+								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -12181,7 +12696,7 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
 								if totalItems > 0 then
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);		-- L["BONUS_ROLL"] = Bonus Roll"
+									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
 								else
 									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
 								end
@@ -12196,10 +12711,10 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect then
 			local customCollectEx;
-			local requires = L["REQUIRES"];		-- L["REQUIRES"] = "Requires"
+			local requires = L["REQUIRES"];
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
-				if not app.CustomCollects[c] then
+				if not app.CurrentCharacter.CustomCollects[c] then
 					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
 				else
 					GameTooltip:AddDoubleLine(requires .. ": " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
@@ -12208,14 +12723,14 @@ RowOnEnter = function (self)
 		end
 
 		-- Show Quest Prereqs
-		local isDebugMode = app.MODE_DEBUG;
+		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
 		if reference.sourceQuests and (not reference.saved or isDebugMode) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-					local sqs = SearchForField("questID", sourceQuestID);
+					sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
-						local bestMatch = nil;
+						bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID then
 								if isDebugMode or (app.RecursiveClassAndRaceFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
@@ -12243,8 +12758,9 @@ RowOnEnter = function (self)
 			end
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
+				local text;
 				for i,prereq in ipairs(prereqs) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -12257,8 +12773,9 @@ RowOnEnter = function (self)
 			end
 			if bc and #bc > 0 then
 				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
+				local text;
 				for i,prereq in ipairs(bc) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -12273,13 +12790,13 @@ RowOnEnter = function (self)
 
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(L["THIS_IS_BREADCRUMB"]);		-- L["THIS_IS_BREADCRUMB"] = "This is a breadcrumb quest."
+			GameTooltip:AddLine(L["THIS_IS_BREADCRUMB"]);
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						local nq = app.SearchForObjectClone("questID", nextQuestID);
+						nq = app.SearchForObjectClone("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
@@ -12293,17 +12810,17 @@ RowOnEnter = function (self)
 				end
 				if isBreadcrumbAvailable then
 					-- The character is able to accept the breadcrumb quest without Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);		-- L["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:"
+					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
 				else
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);		-- L["BREADCRUMB_PARTYSYNC_2"] = "This may be obtained via Party Sync with another character that has not completed any of these quests:"
+					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);
 				end
 				for i,nquest in ipairs(nextq) do
 					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. nquest.text);
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
-				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);		-- L["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest."
+				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
 			end
 		end
 
@@ -12472,19 +12989,19 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
-local function Update(self, force, got)
+local function UpdateWindow(self, force, got)
+	if not app.IsReady then return; end
 	if self.data then
-		--print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
-			if not self.rowData then
-				self.rowData = {};
-			else
-				wipe(self.rowData);
-			end
+			if not self.rowData then self.rowData = {};
+			else wipe(self.rowData); end
 			self.data.expanded = true;
-			if self.shouldFullRefresh and (force or got) then
+			if not self.doesOwnUpdate and
+				(force or (self.shouldFullRefresh and got)) then
 				self.data.progress = 0;
 				self.data.total = 0;
+				-- app._Updated = time();
 				UpdateGroups(self.data, self.data.g);
 			end
 			ProcessGroup(self.rowData, self.data);
@@ -12505,8 +13022,8 @@ local function Update(self, force, got)
 					-- print("any data",#self.Container,#self.rowData,#self.data)
 					if #self.rowData < 2 then
 						tinsert(self.rowData, {
-							["text"] = L["NO_ENTRIES"],		-- L["NO_ENTRIES"] = "No entries matching your filters were found."
-							["description"] = L["NO_ENTRIES_DESC"],		-- L["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+							["text"] = L["NO_ENTRIES"],
+							["description"] = L["NO_ENTRIES_DESC"],
 							["collectible"] = 1,
 							["collected"] = 1,
 							["back"] = 0.7
@@ -12548,7 +13065,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Dungeons & Raids
 		db = {};
@@ -13063,7 +13579,7 @@ function app:GetDataCache()
 
 		-- Yourself.
 		table.insert(g, app.CreateUnit("player", {
-			["description"] = L["DEBUG_LOGIN"],		-- L["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode."
+			["description"] = L["DEBUG_LOGIN"],
 			["races"] = { app.RaceIndex },
 			["c"] = { app.ClassIndex },
 			["r"] = app.FactionID,
@@ -13092,23 +13608,22 @@ function app:GetDataCache()
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
-		allData.text = L["TITLE"] .. " (Unsorted)";		-- L["UNSORTED_2"] = " (Unsorted)"
-		allData.title = L["UNSORTED_1"];		-- L["UNSORTED_1"] = "Unsorted"
-		allData.description = L["UNSORTED_DESC"];		-- L["UNSORTED_DESC"] = "This data hasn't been implemented yet."
+		allData.text = L["TITLE"] .. " (Unsorted)";
+		allData.title = L["UNSORTED_1"];
+		allData.description = L["UNSORTED_DESC"];
 		allData.visible = true;
 		allData.progress = 0;
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
-		table.insert(app.RawData, allData);
 
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.NeverImplemented;
-			db.text = L["NEVER_IMPLEMENTED"];		-- L["NEVER_IMPLEMENTED"] = "Never Implemented"
-			db.description = L["NEVER_IMPLEMENTED_DESC"];		-- L["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players"
+			db.text = L["NEVER_IMPLEMENTED"];
+			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			table.insert(g, db);
 		end
 
@@ -13117,8 +13632,8 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.HiddenQuestTriggers;
-			db.text = L["HIDDEN_QUEST_TRIGGERS"];		-- L["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers"
-			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];		-- L["HIDDEN_QUEST_TRIGGERS_DESC"] = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes"
+			db.text = L["HIDDEN_QUEST_TRIGGERS"];
+			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 			table.insert(g, db);
 		end
 
@@ -13128,7 +13643,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Unsorted;
 			db.expanded = false;
 			db.text = L["UNSORTED_1"];
-			db.description = L["UNSORTED_DESC_2"];		-- L["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT"
+			db.description = L["UNSORTED_DESC_2"];
 			table.insert(g, db);
 		end
 		BuildGroups(allData, allData.g);
@@ -13152,7 +13667,7 @@ local backdrop = {
 
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
-	-- print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
+	-- print("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
@@ -13170,13 +13685,7 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
-			-- print("Update Groups")
 			app:GetDataCache();
-			for i,data in ipairs(app.RawData) do
-				data.progress = 0;
-				data.total = 0;
-				UpdateGroups(data, data.g);
-			end
 
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);
@@ -13203,8 +13712,9 @@ function app:GetWindow(suffix, parent, onUpdate)
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
 		window.Refresh = Refresh;
-		window.BaseUpdate = Update;
 		window.Toggle = Toggle;
+		window.BaseUpdate = UpdateWindow;
+		window.Update = onUpdate or UpdateWindow;
 		window.SetVisible = SetVisible;
 		if AllTheThingsSettings then
 			if suffix == "Prime" then
@@ -13290,13 +13800,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
-
-		-- Update Function Pointers
-		if onUpdate then
-			window.Update = onUpdate;
-		else
-			window.Update = Update;
-		end
 		window:Update(true);
 	end
 	return window;
@@ -13343,21 +13846,19 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.data = {
-			['text'] = L["BOUNTY"],		-- L["BOUNTY"] = "Bounty"
+			['text'] = L["BOUNTY"],
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
-			["description"] = L["BOUNTY_DESC"],		-- L["BOUNTY_DESC"] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below."
+			["description"] = L["BOUNTY_DESC"],
 			['visible'] = true,
 			['expanded'] = true,
 			['indent'] = 0,
 			['g'] = {
 				{
-					['text'] = L["OPEN_AUTOMATICALLY"],		-- L["OPEN_AUTOMATICALLY"] = "Open Automatically"
+					['text'] = L["OPEN_AUTOMATICALLY"],
 					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
-					['description'] = L["OPEN_AUTOMATICALLY_DESC"],		-- L["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs."
+					['description'] = L["OPEN_AUTOMATICALLY_DESC"],
 					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 					['OnClick'] = function(row, button)
 						if app.Settings:GetTooltipSetting("Auto:BountyList") then
 							app.Settings:SetTooltipSetting("Auto:BountyList", false);
@@ -13371,47 +13872,8 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						return true;
 					end,
 				},
-				--[[app.CreateInstance(746, {	-- Gruul's Lair
-					['description'] = "Gruul's Lair has been hotfixed! All of the items previously marked Unobtainable from Gruul the Dragonkiller have been fixed and confirmed as dropping once again!",
-					['isRaid'] = true,
-					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
-				}),
-				app.CreateInstance(745, { 	-- Karazhan (Raid)
-					['description'] = "The reward chest for completing the Chess Event in Karazhan has been fixed!",
-					['isRaid'] = true,
-					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
-				}),
-				app.CreateInstance(228, {	-- Blackrock Depths
-					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
-					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
-				}),
-				app.CreateInstance(230, {	-- Dire Maul (West)
-					['description'] = "This item has been hotfixed, and is confirmed dropping once again.  TY Blizzard.",
-					['g'] = {
-						app.CreateItemSource(7303, 18382),	-- Fluctuating Cloak
-					},
-				}),
-				app.CreateInstance(277, { 	-- Halls of Stone
-					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone appears to be fixed! Please let us know if this is still a problem!",
-				}),
-				app.CreateEncounter(1997, {	-- LFR High Command
-					['description'] = "|cffFF0000In LFR, The portal to High Command will not spawn after you defeat the Felhounds.  Therefore there is no way to obtain the High Command loot from LFR.  Other difficulties work fine!|r",
-					['visible'] = true,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
-				}),]]
 				app.CreateNPC(-34, {
-					['description'] = L["TWO_CLOAKS"],		-- L["TWO_CLOAKS"] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r"
+					['description'] = L["TWO_CLOAKS"],
 					['g'] = {
 						app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
 						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
@@ -13419,7 +13881,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 				}),
 				app.CreateNPC(-16, {	-- Rares
 					app.CreateNPC(87622, {	-- Ogom the Mangler
-						['description'] = L["OGOM_THE_MANGLER_DESC"],		-- L["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r"
+						['description'] = L["OGOM_THE_MANGLER_DESC"],
 						['g'] = {
 							app.CreateItemSource(67041, 119366),
 						},
@@ -13428,7 +13890,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 			},
 		};
 		BuildGroups(self.data, self.data.g);
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -13437,7 +13898,8 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			StartCoroutine("RefreshBounties", RefreshBounties, 1);
+			self:UnregisterEvent("VARIABLES_LOADED");
+			Callback(RefreshBounties);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 	end
@@ -13462,9 +13924,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
 						['text'] = "Check for missing maps now!",
@@ -13474,9 +13934,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -13533,7 +13991,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		self.IsSameMapData = function(self)
 			local data = self.data;
@@ -13731,7 +14188,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 					end
 
-					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = L["HOLYDAY_DESC"] }));		-- L["HOLYDAY_DESC"] = "A specific holiday may need to be active for you to complete the referenced Things within this section."
+					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = L["HOLYDAY_DESC"] }));
 				end
 
 				-- Check for timewalking difficulty objects
@@ -13808,9 +14265,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						for _, row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then ExpandGroupsRecursively(row, true); end
+									if not row.expanded then ExpandGroupsRecursively(row, true, true); end
 								elseif row.expanded then
-									ExpandGroupsRecursively(row, false);
+									ExpandGroupsRecursively(row, false, true);
 								end
 							end
 						end
@@ -13833,7 +14290,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							end
 						end
 						if completed and other then
-							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);		-- L["DIFF_COMPLETED_1"] = "You have collected everything from this difficulty. Switch to "; L["DIFF_COMPLETED_2"] = " instead."
+							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
 						end
 					end
 				end
@@ -13861,16 +14318,16 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					app.report();
 				end
 				self.data = app.CreateMap(mapID, {
-					['text'] = L["MINI_LIST"],		-- L["MINI_LIST"] = "Mini List"
+					['text'] = L["MINI_LIST"],
 					['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp",
-					["description"] = L["MINI_LIST_DESC"],		-- L["MINI_LIST_DESC"] = "This list contains the relevant information for your current zone, which cannot be found in the ATT database"
+					["description"] = L["MINI_LIST_DESC"],
 					['visible'] = true,
 					['expanded'] = true,
 					['g'] = {
 						{
-							['text'] = L["UPDATE_LOCATION_NOW"],		-- L["UPDATE_LOCATION_NOW"] = "Update Location Now"
+							['text'] = L["UPDATE_LOCATION_NOW"],
 							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-							['description'] = L["UPDATE_LOCATION_NOW_DESC"],		-- L["UPDATE_LOCATION_NOW_DESC"] = "If you wish to forcibly refresh the data to your current Map, click this button now!"
+							['description'] = L["UPDATE_LOCATION_NOW_DESC"],
 							['visible'] = true,
 							['collectible'] = true,
 							['collected'] = false,
@@ -13882,7 +14339,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					},
 				});
 			end
-			self:Update();
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniList(id, show)
 			-- print("open",id,show);
@@ -13907,24 +14365,20 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			self:Update();
+			SelfCallback(self, "Update",
+				function() self:Update(); end);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
-		local function RefreshLocationCoroutine()
-			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-
-				-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
-				while not app.IsReady or InCombatLockdown() do coroutine.yield(); end
-				-- Acquire the new map ID.
-				local mapID = app.GetCurrentMapID();
-				while not mapID or mapID < 0 do
-					coroutine.yield();
-					mapID = app.GetCurrentMapID();
-				end
-				OpenMiniList(mapID);
+		local function RefreshLocation()
+			-- Acquire the new map ID.
+			local mapID = app.GetCurrentMapID();
+			if not mapID or mapID < 0 then
+				AfterCombatCallback(RefreshLocation);
+				return;
 			end
+			OpenMiniList(mapID);
 		end
 		local function ToggleMiniListForCurrentZone()
 			local self = app:GetWindow("CurrentInstance");
@@ -13935,7 +14389,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
+				AfterCombatCallback(RefreshLocation);
+			end
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
@@ -13944,7 +14400,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- print("LocationTrigger",e,...);
 			LocationTrigger();
 		end);
-		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
@@ -13990,8 +14445,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			local minID,maxID = app.customHarvestMin,app.customHarvestMax;
-			app.MaximumItemInfoRetries = 40;
+			local minID,maxID,oldRetries = app.customHarvestMin,app.customHarvestMax,app.MaximumItemInfoRetries;
+			app.MaximumItemInfoRetries = 10;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
@@ -14043,24 +14498,23 @@ app:GetWindow("Harvester", UIParent, function(self)
 			]]--
 			self.data = db;
 			BuildGroups(db, db.g);
-			UpdateGroups(db, db.g);
 			self.ScrollBar:SetValue(1);
 			self.UpdateDone = function(self)
+				-- Hide data which have completed their harvest
 				local progress = 0;
 				local total = 0;
 				for i,group in ipairs(db.g) do
 					total = total + 1;
-					if (group.s and group.s == 0) or group.artifactID or group.reSource then
-						group.visible = true;
-					else
+					if not group.reSource then
 						group.visible = false;
-						group.reSource = nil;
 						progress = progress + 1;
+						group.reSource = nil;
 					end
 				end
 				if self.rowData then
 					local count = #self.rowData;
 					if count > 1 then
+						-- Remove completed rows
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
 						for i=count,1,-1 do
@@ -14077,13 +14531,117 @@ app:GetWindow("Harvester", UIParent, function(self)
 							self.forcedDebug = nil;
 						end
 						app.print("Source Harvest Complete!");
+						-- revert the number of retries to retrieve item information
+						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
 					end
 				end
-				self:Refresh();
+				-- Update the Harvester Window to re-populate row data for next refresh
+				SelfCallback(self, "Refresh",
+					function() self:Refresh(); end);
 			end
 		end
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		self:BaseUpdate(true);
+	end
+end);
+app:GetWindow("ItemFilter", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			self.dirty = true;
+
+			-- Item Filter
+			local actions = {
+				['text'] = L["ITEM_FILTER_TEXT"],
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+				["description"] = L["ITEM_FILTER_DESCRIPTION"],
+				['visible'] = true,
+				['expanded'] = true,
+				['back'] = 1,
+				['OnUpdate'] = function(data)
+					if not self.dirty then return nil; end
+					self.dirty = nil;
+
+					local g = {};
+					table.insert(g, 1, data.setItemFilter);
+					if #data.results > 0 then
+						for i,result in ipairs(data.results) do
+							table.insert(g, result);
+						end
+					end
+					data.g = g;
+					if #g > 0 then
+						for i,entry in ipairs(g) do
+							entry.indent = nil;
+						end
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						app.UpdateGroups(data, data.g);
+						if not data.expanded then
+							data.expanded = true;
+							ExpandGroupsRecursively(data, true);
+						end
+					end
+
+					-- Update the groups without forcing Debug Mode.
+					local visibilityFilter = app.VisibilityFilter;
+					app.VisibilityFilter = app.ObjectVisibilityFilter;
+					data.progress = 0;
+					data.total = 0;
+					BuildGroups(data, data.g);
+					UpdateGroups(data, data.g);
+					self:BaseUpdate(true);
+					app.VisibilityFilter = visibilityFilter;
+				end,
+				['g'] = {},
+				['results'] = {},
+				['setItemFilter'] = {
+					['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+					['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
+							text = string.lower(text);
+							local f = tonumber(text);
+							if tostring(f) ~= text then
+								-- The string form did not match, the filter must have been by name.
+								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
+									if string.match(string.lower(filter), text) then
+										f = tonumber(id);
+										break;
+									end
+								end
+							end
+							if f then
+								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
+								row.ref.f = f;
+								self.dirty = true;
+							end
+							wipe(searchCache);
+							self:Update();
+						end);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+
+			self.Reset = function()
+				self.data = actions;
+			end
+
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...)
+				self.dirty = true;
+				self:Update();
+			end);
+			self:Reset();
+		end
+
+		-- Update the window and all of its row data
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
 	end
 end);
@@ -14103,9 +14661,7 @@ app:GetWindow("SourceFinder", UIParent, function(self)
 						self:Update(true);
 						return true;
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
 			db.OnUpdate = function(db)
@@ -14189,6 +14745,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			self.doesOwnUpdate = true;
 
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
@@ -14200,7 +14757,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				master = "Master Loot",
 			};
 			local difficultyDescriptions = {
-				personalloot = L["PERSONAL_LOOT_DESC"],		-- L["PERSONAL_LOOT_DESC"] = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself."
+				personalloot = L["PERSONAL_LOOT_DESC"],
 				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
 				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
 			};
@@ -14274,17 +14831,17 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				return true;
 			end
 			raidassistant = {
-				['text'] = L["RAID_ASSISTANT"],		-- L["RAID_ASSISTANT"] = "Raid Assistant"
+				['text'] = L["RAID_ASSISTANT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
-				["description"] = L["RAID_ASSISTANT_DESC"],		-- L["RAID_ASSISTANT_DESC"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!"
+				["description"] = L["RAID_ASSISTANT_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = L["LOOT_SPEC_UNKNOWN"],		-- L["LOOT_SPEC_UNKNOWN"] = "Loot Specialization Unknown"
-						['title'] = L["LOOT_SPEC"],		-- L["LOOT_SPEC"] = "Loot Specialization"
-						["description"] = L["LOOT_SPEC_DESC"],		-- L["LOOT_SPEC_DESC"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!"
+						['text'] = L["LOOT_SPEC_UNKNOWN"],
+						['title'] = L["LOOT_SPEC"],
+						["description"] = L["LOOT_SPEC_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = lootspecialization;
@@ -14303,8 +14860,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					app.CreateDifficulty(1, {
-						['title'] = L["DUNGEON_DIFF"],		-- L["DUNGEON_DIFF"] = "Dungeon Difficulty"
-						["description"] = L["DUNGEON_DIFF_DESC"],		-- L["DUNGEON_DIFF_DESC"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!"
+						['title'] = L["DUNGEON_DIFF"],
+						["description"] = L["DUNGEON_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = dungeondifficulty;
@@ -14323,8 +14880,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					app.CreateDifficulty(14, {
-						['title'] = L["RAID_DIFF"],		-- L["RAID_DIFF"] = "Raid Difficulty"
-						["description"] = L["RAID_DIFF_DESC"],		-- L["RAID_DIFF_DESC"] = "The difficulty setting for raids.\n\nClick this row to change it now!"
+						['title'] = L["RAID_DIFF"],
+						["description"] = L["RAID_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
@@ -14346,8 +14903,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					app.CreateDifficulty(5, {
-						['title'] = L["LEGACY_RAID_DIFF"],		-- L["LEGACY_RAID_DIFF"] = "Legacy Raid Difficulty"
-						["description"] = L["LEGACY_RAID_DIFF_DESC"],		-- L["LEGACY_RAID_DIFF_DESC"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!"
+						['title'] = L["LEGACY_RAID_DIFF"],
+						["description"] = L["LEGACY_RAID_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
@@ -14363,9 +14920,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					}),
 					{
-						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],		-- L["TELEPORT_TO_FROM_DUNGEON"] = "Teleport to/from Dungeon"
+						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
 						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],		-- L["TELEPORT_TO_FROM_DUNGEON_DESC"] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way."
+						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							LFGTeleport(IsInLFGDungeon());
@@ -14376,9 +14933,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["RESET_INSTANCES"],		-- L["RESET_INSTANCES"] = "Reset Instances"
+						['text'] = L["RESET_INSTANCES"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-						['description'] = L["RESET_INSTANCES_DESC"],		-- L["RESET_INSTANCES_DESC"] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!"
+						['description'] = L["RESET_INSTANCES_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							if IsAltKeyDown() then
@@ -14402,9 +14959,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["DELIST_GROUP"],		-- L["DELIST_GROUP"] = "Delist Group"
+						['text'] = L["DELIST_GROUP"],
 						['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-						['description'] = L["DELIST_GROUP_DESC"],		-- L["DELIST_GROUP_DESC"] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in."
+						['description'] = L["DELIST_GROUP_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							C_LFGList.RemoveListing();
@@ -14420,9 +14977,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = L["LEAVE_GROUP"],		-- L["LEAVE_GROUP"] = "Leave Group"
+						['text'] = L["LEAVE_GROUP"],
 						['icon'] = "Interface\\Icons\\Ability_Vanish",
-						['description'] = L["LEAVE_GROUP_DESC"],		-- L["LEAVE_GROUP_DESC"] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group."
+						['description'] = L["LEAVE_GROUP_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							C_PartyInfo.LeaveParty();
@@ -14442,7 +14999,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			lootspecialization = {
 				['text'] = L["LOOT_SPEC"],
 				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
-				["description"] = L["LOOT_SPEC_DESC_2"],		-- L["LOOT_SPEC_DESC_2"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["LOOT_SPEC_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14453,11 +15010,11 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					local numSpecializations = GetNumSpecializations();
 					if numSpecializations and numSpecializations > 0 then
 						tinsert(data.g, {
-							['text'] = L["CURRENT_SPEC"],		-- L["CURRENT_SPEC"] = "Current Specialization"
+							['text'] = L["CURRENT_SPEC"],
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
 							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
 							['id'] = 0,
-							["description"] = L["CURRENT_SPEC_DESC"],		-- L["CURRENT_SPEC_DESC"] = "If you switch your talents, your loot specialization changes with you."
+							["description"] = L["CURRENT_SPEC_DESC"],
 							['visible'] = true,
 							['OnClick'] = function(row, button)
 								self.data = raidassistant;
@@ -14490,7 +15047,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			dungeondifficulty = {
 				['text'] = L["DUNGEON_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["DUNGEON_DIFF_DESC_2"],		-- L["DUNGEON_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["DUNGEON_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14502,7 +15059,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['g'] = {
 					app.CreateDifficulty(1, {
 						['OnClick'] = switchDungeonDifficulty,
-						["description"] = L["CLICK_TO_CHANGE"],		-- L["CLICK_TO_CHANGE"] = "Click to change now. (if available)"
+						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
 						['back'] = 0.5,
 					}),
@@ -14523,7 +15080,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			raiddifficulty = {
 				['text'] = L["RAID_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["RAID_DIFF_DESC_2"],		-- L["RAID_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14553,7 +15110,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			legacyraiddifficulty = {
 				['text'] = L["LEGACY_RAID_DIFF"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],		-- L["LEGACY_RAID_DIFF_DESC_2"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant."
+				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
 					self:Update(true);
@@ -14607,11 +15164,12 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			local s = GetSpecialization();
 			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
 		end
+
+		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		for i,g in ipairs(self.data.g) do
-			if g.OnUpdate then g.OnUpdate(g); end
+			if g.OnUpdate then g.OnUpdate(g, self); end
 		end
-		BuildGroups(self.data, self.data.g);
 
 		-- Update the groups without forcing Debug Mode.
 		local visibilityFilter = app.VisibilityFilter;
@@ -14832,31 +15390,28 @@ app:GetWindow("Random", UIParent, function(self)
 			end
 			local mainHeader, filterHeader;
 			local rerollOption = {
-				['text'] = L["REROLL"],		-- L["REROLL"] = "Reroll"
+				['text'] = L["REROLL"],
 				['icon'] = "Interface\\Icons\\ability_monk_roll",
-				['description'] = L["REROLL_DESC"],		-- L["REROLL_DESC"] = "Click this button to reroll using the active filter."
+				['description'] = L["REROLL_DESC"],
 				['visible'] = true,
 				['OnClick'] = function(row, button)
 					self:Reroll();
 					return true;
 				end,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 			};
 			filterHeader = {
-				['text'] = L["APPLY_SEARCH_FILTER"],		-- L["APPLY_SEARCH_FILTER"] = "Apply a Search Filter"
+				['text'] = L["APPLY_SEARCH_FILTER"],
 				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
-				["description"] = L["APPLY_SEARCH_FILTER_DESC"],		-- L["APPLY_SEARCH_FILTER_DESC"] = "Please select a search filter option."
+				["description"] = L["APPLY_SEARCH_FILTER_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
+				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
-						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],		-- L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"] = "Click this button to search... EVERYTHING."
+						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "AllTheThings");
@@ -14864,18 +15419,16 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					}, { __index = function(t, key)
 						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
 							return app:GetWindow("Prime").data[key];
 						end
 					end}),
 					{
-						['text'] = L["ACHIEVEMENT"],		-- L["ACHIEVEMENT"] = "Achievement"
+						['text'] = L["ACHIEVEMENT"],
 						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
-						['description'] = L["ACHIEVEMENT_DESC"],		-- L["ACHIEVEMENT_DESC"] = "Click this button to select a random achievement based on what you're missing."
+						['description'] = L["ACHIEVEMENT_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Achievement");
@@ -14883,14 +15436,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["ITEM"],		-- L["ITEM"] = "Item"
+						['text'] = L["ITEM"],
 						['icon'] = "Interface\\Icons\\INV_Box_02",
-						['description'] = L["ITEM_DESC"],		-- L["ITEM_DESC"] = "Click this button to select a random item based on what you're missing."
+						['description'] = L["ITEM_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Item");
@@ -14898,14 +15449,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["INSTANCE"],		-- L["INSTANCE"] = "Instance"
+						['text'] = L["INSTANCE"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
-						['description'] = L["INSTANCE_DESC"],		-- L["INSTANCE_DESC"] = "Click this button to select a random instance based on what you're missing."
+						['description'] = L["INSTANCE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Instance");
@@ -14913,14 +15462,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["DUNGEON"],		-- L["DUNGEON"] = "Dungeon"
+						['text'] = L["DUNGEON"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
-						['description'] = L["DUNGEON_DESC"],		-- L["DUNGEON_DESC"] = "Click this button to select a random dungeon based on what you're missing."
+						['description'] = L["DUNGEON_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Dungeon");
@@ -14928,14 +15475,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["RAID"],		-- L["RAID"] = "Raid"
+						['text'] = L["RAID"],
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
-						['description'] = L["RAID_DESC"],		-- L["RAID_DESC"] = "Click this button to select a random raid based on what you're missing."
+						['description'] = L["RAID_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Raid");
@@ -14943,9 +15488,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = L["MOUNT"],
@@ -14958,14 +15501,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["PET"],		-- L["PET"] = "Pet"
+						['text'] = L["PET"],
 						['icon'] = "Interface\\Icons\\INV_Box_02",
-						['description'] = L["PET_DESC"],		-- L["PET_DESC"] = "Click this button to select a random pet based on what you're missing."
+						['description'] = L["PET_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
@@ -14973,15 +15514,13 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["QUEST"],		-- L["QUEST"] = "Quest"
+						['text'] = L["QUEST"],
 						['icon'] = "Interface\\GossipFrame\\AvailableQuestIcon",
 						['preview'] = "Interface\\Icons\\Achievement_Quests_Completed_08",
-						['description'] = L["QUEST_DESC"],		-- L["QUEST_DESC"] = "Click this button to select a random quest based on what you're missing."
+						['description'] = L["QUEST_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Quest");
@@ -14989,14 +15528,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["TOY"],		-- L["TOY"] = "Toy"
+						['text'] = L["TOY"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
-						['description'] = L["TOY_DESC"],		-- L["TOY_DESC"] = "Click this button to select a random toy based on what you're missing."
+						['description'] = L["TOY_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Toy");
@@ -15004,14 +15541,12 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
-						['text'] = L["ZONE"],		-- L["ZONE"] = "Zone"
+						['text'] = L["ZONE"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = L["ZONE_DESC"],		-- L["ZONE_DESC"] = "Click this button to select a random zone based on what you're missing."
+						['description'] = L["ZONE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Zone");
@@ -15019,37 +15554,31 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
 			mainHeader = {
-				['text'] = L["GO_GO_RANDOM"],		-- L["GO_GO_RANDOM"] = "Random - Go Get 'Em!"
+				['text'] = L["GO_GO_RANDOM"],
 				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
-				["description"] = L["GO_GO_RANDOM_DESC"],		-- L["GO_GO_RANDOM_DESC"] = "This window allows you to randomly select a place or item to get. Go get 'em!"
+				["description"] = L["GO_GO_RANDOM_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
 				['options'] = {
 					{
-						['text'] = L["CHANGE_SEARCH_FILTER"],		-- L["CHANGE_SEARCH_FILTER"] = "Change Search Filter"
+						['text'] = L["CHANGE_SEARCH_FILTER"],
 						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
-						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],		-- L["CHANGE_SEARCH_FILTER_DESC"] = "Click this to change your search filter."
+						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = filterHeader;
-							self:BaseUpdate(true);
+							self:Update(true);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					rerollOption,
 				},
@@ -15063,8 +15592,8 @@ app:GetWindow("Random", UIParent, function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					rerollOption.text = L["REROLL_2"] .. method;		-- L["REROLL_2"] = "Reroll: "
-					method = "Select" .. method;		-- L["SELECT"] = "Select"
+					rerollOption.text = L["REROLL_2"] .. method;
+					method = L["SELECT"] .. method;
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
@@ -15084,13 +15613,13 @@ app:GetWindow("Random", UIParent, function(self)
 						if selected then
 							MergeObject(self.data.g, CreateObject(selected));
 						else
-							app.print(L["NOTHING_TO_SELECT_FROM"]);		-- L["NOTHING_TO_SELECT_FROM"] = "There was nothing to randomly select from."
+							app.print(L["NOTHING_TO_SELECT_FROM"]);
 						end
 					else
 						app.print(L["NOTHING_TO_SELECT_FROM"]);
 					end
 				else
-					app.print(L["NO_SEARCH_METHOD"]);		-- L["NO_SEARCH_METHOD"] = "No search method specified."
+					app.print(L["NO_SEARCH_METHOD"]);
 				end
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
@@ -15104,7 +15633,7 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");		--
+			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");
 		end
 
 		-- Update the window and all of its row data
@@ -15127,9 +15656,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 		self.data = {
-			['text'] = L["PROFESSION_LIST"],		-- L["PROFESSION_LIST"] = "Profession List"
+			['text'] = L["PROFESSION_LIST"],
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
-			["description"] = L["PROFESSION_LIST_DESC"],		-- L["PROFESSION_LIST_DESC"] = "Open your professions to cache them."
+			["description"] = L["PROFESSION_LIST_DESC"],
 			['visible'] = true,
 			['expanded'] = true,
 			["indent"] = 0,
@@ -15181,14 +15710,14 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						end
 						if spellRecipeInfo.learned then
 							if spellRecipeInfo.disabled then
-								if GetTempDataSubMember("CollectedSpells", recipeID) then
-									SetTempDataSubMember("CollectedSpells", recipeID, nil);
-									SetDataSubMember("CollectedSpells", recipeID, nil);
+								if app.CurrentCharacter.Spells[recipeID] then
+									app.CurrentCharacter.Spells[recipeID] = nil;
+									ATTAccountWideData.Spells[recipeID] = nil;
 								end
 							else
-								SetTempDataSubMember("CollectedSpells", recipeID, 1);
-								if not GetDataSubMember("CollectedSpells", recipeID) then
-									SetDataSubMember("CollectedSpells", recipeID, 1);
+								app.CurrentCharacter.Spells[recipeID] = 1;
+								if not ATTAccountWideData.Spells[recipeID] then
+									ATTAccountWideData.Spells[recipeID] = 1;
 									learned = learned + 1;
 								end
 							end
@@ -15262,7 +15791,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true);
-					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);		-- L["CACHED_RECIPES_1"] = "Cached "; L["CACHED_RECIPES_2"] = " known recipes!"
+					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);
 					wipe(searchCache);
 				end
 			end
@@ -15364,10 +15893,10 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			elseif e == "NEW_RECIPE_LEARNED" then
 				local spellID = ...;
 				if spellID then
-					local previousState = GetDataSubMember("CollectedSpells", spellID);
-					SetDataSubMember("CollectedSpells", spellID, 1);
-					if not GetTempDataSubMember("CollectedSpells", spellID) then
-						SetTempDataSubMember("CollectedSpells", spellID, 1);
+					local previousState = ATTAccountWideData.Spells[spellID];
+					ATTAccountWideData.Spells[spellID] = 1;
+					if not app.CurrentCharacter.Spells[spellID] then
+						app.CurrentCharacter.Spells[spellID] = 1;
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
@@ -15477,26 +16006,24 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			self.data = {
-				['text'] = L["WORLD_QUESTS"],		-- L["WORLD_QUESTS"] = "World Quests"
+				['text'] = L["WORLD_QUESTS"],
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
-				["description"] = L["WORLD_QUESTS_DESC"],		-- L["WORLD_QUESTS_DESC"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!"
+				["description"] = L["WORLD_QUESTS_DESC"],
 				['visible'] = true,
 				['expanded'] = true,
 				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = L["UPDATE_WORLD_QUESTS"],		-- L["UPDATE_WORLD_QUESTS"] = "Update World Quests Now"
+						['text'] = L["UPDATE_WORLD_QUESTS"],
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = L["UPDATE_WORLD_QUESTS_DESC"],		-- L["UPDATE_WORLD_QUESTS_DESC"] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited"
+						['description'] = L["UPDATE_WORLD_QUESTS_DESC"],
 						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
 							Push(self, "WorldQuests-Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -15916,18 +16443,16 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				-- Put a 'Clear World Quests' click at the bottom
 				MergeObject(temp, {
-						['text'] = L["CLEAR_WORLD_QUESTS"],		-- L["CLEAR_WORLD_QUESTS"] = "Clear World Quests"
-						['icon'] = "Interface\\Icons\\ability_racial_haymaker",
-						['description'] = L["CLEAR_WORLD_QUESTS_DESC"],		-- L["CLEAR_WORLD_QUESTS_DESC"] = "Click to clear the current information within the World Quests frame"
-						['hash'] = "funClearWorldQuests",
-						['OnClick'] = function(data, button)
-							Push(self, "WorldQuests-Clear", self.Clear);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = true;
-						end,
-					});
+					['text'] = L["CLEAR_WORLD_QUESTS"],
+					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],
+					['hash'] = "funClearWorldQuests",
+					['OnClick'] = function(data, button)
+						Push(self, "WorldQuests-Clear", self.Clear);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				});
 
 				for i,o in ipairs(temp) do
 					UnsetNotCollectible(o);
@@ -16029,10 +16554,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		end
 
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
@@ -16045,7 +16567,7 @@ app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
 	local _,event = CombatLogGetCurrentEventInfo();
 	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
-		RefreshQuestCompletionState()
+		app.RefreshQuestInfo();
 	end
 end
 -- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
@@ -16057,7 +16579,7 @@ app.events.LOOT_OPENED = function()
 		if(type == "GameObject") then
 		  local text = GameTooltipTextLeft1:GetText()
 		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
-		  RefreshQuestCompletionState()
+		  app.RefreshQuestInfo();
 	   end
 	end
 end
@@ -16381,9 +16903,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 
 	-- Update the window and all of its row data
 	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	for i,g in ipairs(self.data.g) do
-		if g.OnUpdate then g.OnUpdate(g); end
-	end
 	self.data.index = 0;
 	self.data.back = 1;
 	self.data.indent = 0;
@@ -16588,7 +17107,7 @@ local ProcessAuctionData = function()
 		["criteriaID"] = setmetatable({	-- Achievements
 			["filterID"] = 105,
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
-			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],		-- L["ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC"] = "All items that can be used to obtain achievements that you are missing are displayed here."
+			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
 		}, app.BaseFilter),
 		["s"] = setmetatable({			-- Appearances
@@ -16599,13 +17118,13 @@ local ProcessAuctionData = function()
 		}, app.BaseHeader),
 		["mountID"] = setmetatable({	-- Mounts
 			["filterID"] = 100,
-			["description"] = L["ALL_THE_MOUNTS_DESC"],		-- L["ALL_THE_MOUNTS_DESC"] = "All mounts that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_MOUNTS_DESC"],
 			["priority"] = 3,
 		}, app.BaseFilter),
 		["speciesID"] = setmetatable({	-- Battle Pets
 			["filterID"] = 101,
 			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
-			["description"] = L["ALL_THE_BATTLEPETS_DESC"],		-- L["ALL_THE_BATTLEPETS_DESC"] = "All pets that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
 		}, app.BaseFilter),
 		["questID"] = setmetatable({	-- Quests
@@ -16617,19 +17136,19 @@ local ProcessAuctionData = function()
 		["recipeID"] = setmetatable({	-- Recipes
 			["filterID"] = 200,
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
-			["description"] = L["ALL_THE_RECIPES_DESC"],		-- L["ALL_THE_RECIPES_DESC"] = "All recipes that you have not collected yet are displayed here."
+			["description"] = L["ALL_THE_RECIPES_DESC"],
 			["priority"] = 6,
 		}, app.BaseFilter),
 		["itemID"] = {					-- General
 			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
-			["description"] = L["ALL_THE_ILLUSIONS_DESC"],		-- L["ALL_THE_ILLUSIONS_DESC"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here."
+			["description"] = L["ALL_THE_ILLUSIONS_DESC"],
 			["priority"] = 7,
 		},
 		["reagentID"] = setmetatable({	-- Reagent
 			["filterID"] = 56,
 			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
-			["description"] = L["ALL_THE_REAGENTS_DESC"],		-- L["ALL_THE_REAGENTS_DESC"] = "All items that can be used to craft an item using a profession on your account."
+			["description"] = L["ALL_THE_REAGENTS_DESC"],
 			["priority"] = 8,
 		}, app.BaseFilter),
 	};
@@ -16659,56 +17178,11 @@ local ProcessAuctionData = function()
 	window:Update();
 end
 
-app.StartAuctionScan = function()
-	auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
-	C_AuctionHouse_ReplicateItems();
-end
-
-app.AuctionScan = function()
-	AllTheThingsAuctionData = {};
-	local items = {};
-	local auctionItems = C_AuctionHouse_GetNumReplicateItems();
-	for i=0,auctionItems-1 do
-		local itemLink;
-		local count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-		if price and itemID and status then
-			itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-			if itemLink then
-				AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
-			end
-		else
-			local item = Item:CreateFromItemID(itemID);
-			items[item] = true;
-
-			item:ContinueOnItemLoad(function()
-				count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-				items[item] = nil;
-				if itemID and status then
-					itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-					if itemLink then
-						AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
-					end
-				end
-				if not next(items) then
-					items = {};
-				end
-			end);
-		end
-	end
-	if not next(items) then
-		items = {};
-	end
-	print(L["TITLE"] .. L["AH_SCAN_SUCCESSFUL_1"] .. auctionItems .. L["AH_SCAN_SUCCESSFUL_2"]);		-- L["AH_SCAN_SUCCESSFUL_1"] = ": Successfully scanned "; L["AH_SCAN_SUCCESSFUL_2"] = " item(s)."
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-end
-
 app.OpenAuctionModule = function(self)
 	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
 		C_Timer.After(2, function() end);
 	end
 	if app.Blizzard_AuctionHouseUILoaded then
-		if not AllTheThingsAuctionConfig then AllTheThingsAuctionConfig = {} end
-
 		-- Create the Auction Tab for ATT.
 		local tabID = AuctionHouseFrame.numTabs+1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
@@ -16757,6 +17231,7 @@ app.OpenAuctionModule = function(self)
 							['OnUpdate'] = function(data)
 								local window = app:GetWindow("AuctionData");
 								data.visible = #window.data.g > #window.data.options;
+								return true;
 							end,
 						},
 						{
@@ -16767,19 +17242,19 @@ app.OpenAuctionModule = function(self)
 							["priority"] = -3,
 							["OnClick"] = function()
 								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-								if AllTheThingsAuctionConfig then
-									if AllTheThingsAuctionConfig.LastScan == nil or (AllTheThingsAuctionConfig.LastScan+900)-time() <= 0 then -- Never scanned or player waited longer than the 15-min throttle
-										AllTheThingsAuctionConfig.LastScan = time();
-										app.StartAuctionScan();
-									else
-										app.print(": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
-										StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-									end
+
+								-- Only allow a scan once every 15 minutes.
+								local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
+								if cooldown - now < 0 then
+									SetDataMember("AuctionScanCooldownTime", time() + 900);
+									auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
+									C_AuctionHouse_ReplicateItems();
+								else
+									app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
+									StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 								end
 							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
-							end,
+							['OnUpdate'] = app.AlwaysShowUpdate,
 						},
 						{
 							["text"] = "Toggle Debug Mode",
@@ -16800,6 +17275,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 						{
@@ -16820,6 +17296,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 						{
@@ -16843,6 +17320,7 @@ app.OpenAuctionModule = function(self)
 										data.saved = nil;
 									end
 								end
+								return true;
 							end,
 						},
 						{
@@ -16873,6 +17351,7 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
+								return true;
 							end,
 						},
 					},
@@ -16890,18 +17369,47 @@ app.OpenAuctionModule = function(self)
 			self.data.back = 1;
 			BuildGroups(self.data, self.data.g);
 			UpdateGroups(self.data, self.data.g);
-			for i,option in ipairs(self.data.options) do
-				if option.OnUpdate then
-					option.OnUpdate(option);
-				end
-			end
 			self.data.visible = true;
 			self:BaseUpdate(true);
 		end);
 		auctionFrame:SetScript("OnEvent", function(self, e, ...)
 			if e == "REPLICATE_ITEM_LIST_UPDATE" then
 				self:UnregisterEvent("REPLICATE_ITEM_LIST_UPDATE");
-				app.AuctionScan();
+				AllTheThingsAuctionData = {};
+				local items = {};
+				local auctionItems = C_AuctionHouse_GetNumReplicateItems();
+				for i=0,auctionItems-1 do
+					local itemLink;
+					local count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
+					if price and itemID and status then
+						itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+						if itemLink then
+							AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+						end
+					else
+						local item = Item:CreateFromItemID(itemID);
+						items[item] = true;
+
+						item:ContinueOnItemLoad(function()
+							count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
+							items[item] = nil;
+							if itemID and status then
+								itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+								if itemLink then
+									AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+								end
+							end
+							if not next(items) then
+								items = {};
+							end
+						end);
+					end
+				end
+				if not next(items) then
+					items = {};
+				end
+				print(L["TITLE"] .. L["AH_SCAN_SUCCESSFUL_1"] .. auctionItems .. L["AH_SCAN_SUCCESSFUL_2"]);
+				StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 			end
 		end);
 		window:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT", 0, -10);
@@ -17123,14 +17631,11 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 end
 
 -- Register Events required at the start
-app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("PLAYER_LOGIN");
+app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
--- app:RegisterEvent("COMPANION_LEARNED");		-- might be obsolete?
--- app:RegisterEvent("COMPANION_UNLEARNED");	-- might be obsolete?
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -17140,29 +17645,22 @@ app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 
 -- Define Event Behaviours
-app.events.ACHIEVEMENT_EARNED = function(achievementID)
-	SetAchievementCollectionStatus(achievementID, 1)
-end
 app.events.ARTIFACT_UPDATE = function(...)
 	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
 	if itemID then
 		local count = C_ArtifactUI.GetNumRelicSlots();
 		if count and count > 0 then
-			local actArtifactData = GetDataSubMember("ArtifactRelicItemLevels", itemID, {});
-			local myArtifactData = GetTempDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels[itemID];
+			if not myArtifactData then
+				myArtifactData = {};
+				app.CurrentCharacter.ArtifactRelicItemLevels[itemID] = myArtifactData;
+			end
 			for relicSlotIndex=1,count,1 do
 				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
-				local artifactData = {
+				myArtifactData[relicSlotIndex] = {
 					["relicType"] = relicType,
 					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
 				};
-				myArtifactData[relicSlotIndex] = artifactData;
-				local existingArtifactData = artifactData[relicSlotIndex];
-				if not existingArtifactData then
-					actArtifactData[relicSlotIndex] = artifactData;
-				elseif existingArtifactData.iLvl < artifactData.iLvl then
-					existingArtifactData.iLvl = artifactData.iLvl;
-				end
 			end
 		end
 	end
@@ -17212,204 +17710,247 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
+	
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+		type = "launcher",
+		icon = app.asset("logo_32x32"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	});
+
+	-- Character Data Storage
+	local characterData = ATTCharacterData;
+	if not characterData then
+		characterData = {};
+		ATTCharacterData = characterData;
+	end
+	local currentCharacter = characterData[app.GUID];
+	if not currentCharacter then
+		currentCharacter = {};
+		characterData[app.GUID] = currentCharacter;
+	end
+	if not currentCharacter.text then currentCharacter.text = app.Me; end
+	if not currentCharacter.name and name then currentCharacter.name = name; end
+	if not currentCharacter.realm and realm then currentCharacter.realm = realm; end
+	if not currentCharacter.guid and app.GUID then currentCharacter.guid = app.GUID; end
+	if not currentCharacter.lvl and app.Level then currentCharacter.lvl = app.Level; end
+	if not currentCharacter.factionID and app.FactionID then currentCharacter.factionID = app.FactionID; end
+	if not currentCharacter.classID and app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+	if not currentCharacter.class and class then currentCharacter.class = class; end
+	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
+	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
+	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
+	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
+	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
+	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
+	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
+	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
+	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
+	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
+	currentCharacter.lastPlayed = time();
+	app.CurrentCharacter = currentCharacter;
+
+	-- Convert over the deprecated Characters table.
+	local characters = GetDataMember("Characters");
+	if characters then
+		for guid,text in pairs(characters) do
+			if not characterData[guid] then
+				characterData[guid] = { ["text"] = text };
+			end
+		end
+	end
+	
+	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
+	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
+	if azeriteEssenceRanksPerCharacter then
+		for guid,data in pairs(azeriteEssenceRanksPerCharacter) do
+			local character = characterData[guid];
+			if character then character.AzeriteEssenceRanks = data; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedBuildingsPerCharacter table.
+	local collectedBuildingsPerCharacter = GetDataMember("CollectedBuildingsPerCharacter");
+	if collectedBuildingsPerCharacter then
+		for guid,buildings in pairs(collectedBuildingsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Buildings = buildings; end
+		end
+	end
+
+	-- Convert over the deprecated DeathsPerCharacter table.
+	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+	if deathsPerCharacter then
+		for guid,deaths in pairs(deathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Deaths = deaths; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFactionsPerCharacter table.
+	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
+	if collectedFactionsPerCharacter then
+		for guid,factions in pairs(collectedFactionsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Factions = factions; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
+	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
+	if collectedFlightPathsPerCharacter then
+		for guid,flightPaths in pairs(collectedFlightPathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.FlightPaths = flightPaths; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFollowersPerCharacter table.
+	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
+	if collectedFollowersPerCharacter then
+		for guid,followers in pairs(collectedFollowersPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Followers = followers; end
+		end
+	end
+
+	-- Convert over the deprecated lockouts table.
+	local lockouts = GetDataMember("lockouts");
+	if lockouts then
+		for guid,locks in pairs(lockouts) do
+			local character = characterData[guid];
+			if character then character.Lockouts = locks; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedQuestsPerCharacter table.
+	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
+	if collectedQuestsPerCharacter then
+		for guid,quests in pairs(collectedQuestsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Quests = quests; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedSpellsPerCharacter table.
+	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
+	if collectedSpellsPerCharacter then
+		for guid,spells in pairs(collectedSpellsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Spells = spells; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedTitlesPerCharacter table.
+	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
+	if collectedTitlesPerCharacter then
+		for guid,titles in pairs(collectedTitlesPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Titles = titles; end
+		end
+	end
+
+	-- Account Wide Data Storage
+	local accountWideData = ATTAccountWideData;
+	if not accountWideData then
+		accountWideData = {};
+		ATTAccountWideData = accountWideData;
+	end
+	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
+	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
+	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
+	if not accountWideData.Factions then accountWideData.Factions = {}; end
+	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
+	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+	if not accountWideData.Followers then accountWideData.Followers = {}; end
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
+	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Sources then accountWideData.Sources = {}; end
+	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	if not accountWideData.Titles then accountWideData.Titles = {}; end
+	if not accountWideData.Toys then accountWideData.Toys = {}; end
+
+	-- Update the total account wide death counter.
+	local deaths = 0;
+	for guid,character in pairs(characterData) do
+		if character and character.Deaths and character.Deaths > 0 then
+			deaths = deaths + character.Deaths;
+		end
+	end
+	accountWideData.Deaths = deaths;
+
+	-- Convert over the deprecated account wide tables.
+	local data = GetDataMember("CollectedAchievements");
+	if data then accountWideData.Achievements = data; end
+	data = GetDataMember("CollectedArtifacts");
+	if data then
+		if not data.V then
+			wipe(data);
+			C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+		else
+			data.V = nil;
+		end
+		accountWideData.Artifacts = data;
+	elseif accountWideData.Artifacts.V then
+		accountWideData.Artifacts.V = nil;
+	end
+	data = GetDataMember("AzeriteEssenceRanks");
+	if data then accountWideData.AzeriteEssenceRanks = data; end
+	data = GetDataMember("CollectedBuildings");
+	if data then accountWideData.Buildings = data; end
+	data = GetDataMember("CollectedFactions");
+	if data then accountWideData.Factions = data; end
+	data = GetDataMember("CollectedFactionBonusReputation");
+	if data then accountWideData.FactionBonus = data; end
+	data = GetDataMember("CollectedFlightPaths");
+	if data then accountWideData.FlightPaths = data; end
+	data = GetDataMember("CollectedFollowers");
+	if data then accountWideData.Followers = data; end
+	data = GetDataMember("HeirloomUpgradeRanks");
+	if data then accountWideData.HeirloomRanks = data; end
+	data = GetDataMember("CollectedIllusions");
+	if data then accountWideData.Illusions = data; end
+	data = GetDataMember("CollectedQuests");
+	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSources");
+	if data then accountWideData.Sources = data; end
+	data = GetDataMember("CollectedSpells");
+	if data then accountWideData.Spells = data; end
+	data = GetDataMember("CollectedTitles");
+	if data then accountWideData.Titles = data; end
+	data = GetDataMember("CollectedToys");
+	if data then
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
+		accountWideData.Toys = data;
+	end
 
 	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("CollectedBuildings", {});
-	GetDataMember("CollectedFactions", {});
-	GetDataMember("CollectedFlightPaths", {});
-	GetDataMember("CollectedFollowers", {});
-	GetDataMember("CollectedQuests", {});
-	GetDataMember("CollectedSpells", {});
-	GetDataMember("CollectedTitles", {});
+	GetDataMember("HeirloomUpgradeLevels", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
-	GetDataMember("ArtifactRelicItemLevels", {});
-
-	-- Cache your character's deaths.
-	local totalDeaths = GetDataMember("Deaths", 0);
-	local deaths = GetDataMember("DeathsPerCharacter", {});
-	deaths[app.GUID] = deaths[app.GUID] or 0;
-
-	-- Cache your character's lockouts.
-	local lockouts = GetDataMember("lockouts", {});
-	local myLockouts = GetTempDataMember("lockouts", lockouts[app.GUID]);
-	if not myLockouts then
-		myLockouts = {};
-		lockouts[app.GUID] = myLockouts;
-		SetTempDataMember("lockouts", myLockouts);
-	end
-
-	-- Cache your character's profession data.
-	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
-	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
-	if not myRecipes then
-		myRecipes = {};
-		recipes[app.GUID] = myRecipes;
-		SetTempDataMember("CollectedSpells", myRecipes);
-	end
-
-	-- Cache your character's faction data.
-	local factions = GetDataMember("CollectedFactionsPerCharacter", {});
-	local myfactions = GetTempDataMember("CollectedFactions", factions[app.GUID]);
-	if not myfactions then
-		myfactions = {};
-		factions[app.GUID] = myfactions;
-		SetTempDataMember("CollectedFactions", myfactions);
-	end
-	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
-	local myfactionBonusReps = GetTempDataMember("CollectedFactionBonusReputation", factionBonusReps[app.GUID]);
-	if not myfactionBonusReps then
-		myfactionBonusReps = {};
-		factionBonusReps[app.GUID] = myfactionBonusReps;
-		SetTempDataMember("CollectedFactionBonusReputation", myfactionBonusReps);
-	end
-
-	-- Cache your character's building data.
-	local buildings = GetDataMember("CollectedBuildingsPerCharacter", {});
-	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.GUID]);
-	if not myBuildings then
-		myBuildings = {};
-		buildings[app.GUID] = myBuildings;
-		SetTempDataMember("CollectedBuildings", myBuildings);
-	end
-
-	-- Cache your character's flight path data.
-	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
-	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
-	if not myFlightPaths then
-		myFlightPaths = {};
-		flightPaths[app.GUID] = myFlightPaths;
-		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
-	end
-
-	-- Migrate Flight Path data to the new containers.
-	if AllTheThingsAD.FlightPaths then
-		for key,value in pairs(AllTheThingsAD.FlightPaths) do
-			SetDataSubMember("CollectedFlightPaths", key, value);
-		end
-	end
-	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
-		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
-			if value then
-				myFlightPaths[key] = value;
-				SetDataSubMember("CollectedFlightPaths", key, value);
-			end
-		end
-	end
-
-	-- Cache your character's follower data.
-	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
-	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.GUID]);
-	if not myFollowers then
-		myFollowers = {};
-		followers[app.GUID] = myFollowers;
-		SetTempDataMember("CollectedFollowers", myFollowers);
-	end
-
-	-- Cache your character's title data.
-	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
-	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
-	if not myTitles then
-		myTitles = {};
-		titles[app.GUID] = myTitles;
-		SetTempDataMember("CollectedTitles", myTitles);
-	end
-
-	-- GUID to Character Name cache
-	local characters = GetDataMember("Characters", {});
-	if not characters[app.GUID] or true then -- Temporary
-		-- Convert old-style "ME" data entries to "GUID" entries.
-		local nameF = name .. "%-" .. (realm or GetRealmName());
-		local CleanData = function(t, t2)
-			for key,data in pairs(t) do
-				if string.match(key, nameF) then
-					for id,state in pairs(data) do
-						t2[id] = state;
-					end
-					t[key] = nil;
-				elseif key ~= app.GUID then
-					local isEmpty = true;
-					for id,state in pairs(data) do
-						isEmpty = false;
-						break;
-					end
-					if isEmpty then
-						t[key] = nil;
-					end
-				end
-			end
-		end
-		CleanData(buildings, myBuildings);
-		CleanData(factions, myfactions);
-		CleanData(followers, myFollowers);
-		CleanData(lockouts, myLockouts);
-		CleanData(recipes, myRecipes);
-		CleanData(titles, myTitles);
-		characters[app.GUID] = app.Me;
-	end
-
-	-- Cache your character's artifact relic item level data.
-	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
-	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
-	if not myArtifactRelicItemLevels then
-		myArtifactRelicItemLevels = {};
-		artifactRelicItemLevels[app.GUID] = myArtifactRelicItemLevels;
-		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
-	end
-
-	-- Cache your character's azerite essence rank data.
-	local azeriteEssenceRanks = GetDataMember("AzeriteEssenceRanksPerCharacter", {});
-	local myAzeriteEssenceRanks = GetTempDataMember("AzeriteEssenceRanks", azeriteEssenceRanks[app.GUID]);
-	if not myAzeriteEssenceRanks then
-		myAzeriteEssenceRanks = {};
-		azeriteEssenceRanks[app.GUID] = myAzeriteEssenceRanks;
-		SetTempDataMember("AzeriteEssenceRanks", myAzeriteEssenceRanks);
-	end
 
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"ArtifactRelicItemLevelsPerCharacter",
-		"ArtifactRelicItemLevels",
-		"AzeriteEssenceRanksPerCharacter",
-		"AzeriteEssenceRanks",
 		"Categories",
-		"Characters",
-		"CollectedAchievements",
-		"CollectedArtifacts",
-		"CollectedBuildings",
-		"CollectedBuildingsPerCharacter",
-		"CollectedFactionBonusReputation",
-		"CollectedFactions",
-		"CollectedFactionsPerCharacter",
-		"CollectedFollowers",
-		"CollectedFollowersPerCharacter",
-		"CollectedFlightPaths",
-		"CollectedFlightPathsPerCharacter",
-		"CollectedIllusions",
-		"CollectedQuests",
-		"CollectedQuestsPerCharacter",
-		"CollectedSources",
-		"CollectedSpells",
-		"CollectedSpellsPerCharacter",
-		"CollectedTitles",
-		"CollectedTitlesPerCharacter",
-		"CollectedToys",
-		"CustomCollectibility",
-		"Deaths",
-		"DeathsPerCharacter",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
+		"HeirloomUpgradeLevels",
 		"LockedWindows",
-		"lockouts",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
 		"RefreshedCollectionsAlready",
-		"ToyCacheRebuilt",
 		"SeasonalFilters",
-		"Sets",
-		"SourceSets",
 		"UnobtainableItemFilters",
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
@@ -17425,24 +17966,18 @@ app.events.VARIABLES_LOADED = function()
 	-- Apply Locked Window Settings
 	app:ApplyLockedWindows();
 
-	-- Refresh Achievements
-	RefreshAchievementCollection();
-
-	-- Set the Current Map ID
-	app.GetCurrentMapID();
-
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
-	local reagentCache = app.GetDataMember("Reagents", {});
-	local rebuildReagents = 2;
-	-- verify that reagent cache is of the correct format by checking a special key
-	if not reagentCache[-1] or reagentCache[-1] < rebuildReagents then
-		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);		-- L["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!"
+	-- Verify that reagent cache is of the correct format by checking a special key
+	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
+	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
+		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);
 		wipe(reagentCache);
 	end
 	if reagentCache then
-		reagentCache[-1] = rebuildReagents;
+		reagentCache[-1] = reagentCacheVer;
+		-- TODO: should these be converted to utilize 'cost' instead of being pseudo-crafted?
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
 		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
@@ -17453,37 +17988,15 @@ app.events.VARIABLES_LOADED = function()
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
 
-	-- Verify artifact cache is the correct version/clear known old bad data
-	local artifactCache, artifactCacheVer = app.GetDataMember("CollectedArtifacts", {}), 1;
-	if not artifactCache["V"] or artifactCache["V"] ~= artifactCacheVer then
-		wipe(artifactCache);
-		artifactCache["V"] = artifactCacheVer;
-		C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
-	end
-
-	app:GetDataCache();
-
 	Push(app, "WaitOnMountData", function()
-		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
-		local counter = 300;
-		local mountIDs = C_MountJournal.GetMountIDs();
-		while counter > 0 and (not mountIDs or #mountIDs < 1) do
-			for i=10,1,-1 do coroutine.yield(); end
-			counter = counter - 1;
-			mountIDs = C_MountJournal.GetMountIDs();
-		end
+		-- First, load the addon data
+		app:GetDataCache();
+
+		-- Then wait for the player to actually be 'in the game' to do further logic
+		while not app.InWorld do coroutine.yield(); end
 
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
-
-		-- Cache your character's quest data.
-		local quests = GetDataMember("CollectedQuestsPerCharacter", {});
-		local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
-		if not myQuests then
-			myQuests = {};
-			quests[app.GUID] = myQuests;
-			SetTempDataMember("CollectedQuests", myQuests);
-		end
 
 		-- Cache some collection states for account wide quests that aren't actually account wide. (Allied Races)
 		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
@@ -17515,9 +18028,9 @@ app.events.VARIABLES_LOADED = function()
 			if select(4, GetAchievementInfo(achievementQuests[1])) then
 				for j,questID in ipairs(achievementQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
-					if not myQuests[questID] then
-						myQuests[questID] = 2;
-						quests[questID] = 1;
+					if not app.CurrentCharacter.Quests[questID] then
+						app.CurrentCharacter.Quests[questID] = 2;
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
@@ -17531,9 +18044,9 @@ app.events.VARIABLES_LOADED = function()
 			if SourceInfo.isCollected then
 				for j,questID in ipairs(appearanceQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
-					if not myQuests[questID] then
-						myQuests[questID] = 2;
-						quests[questID] = 1;
+					if not app.CurrentCharacter.Quests[questID] then
+						app.CurrentCharacter.Quests[questID] = 2;
+						ATTAccountWideData.Quests[questID] = 1;
 					end
 				end
 			end
@@ -17545,20 +18058,12 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		app:RegisterEvent("QUEST_ACCEPTED");
-		RefreshSaves();
 
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
 
 		local needRefresh;
-		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
-		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt");
-		if not toyCacheRebuilt then
-			SetDataMember("ToyCacheRebuilt", true);
-			wipe(GetDataMember("CollectedToys", {}));
-			needRefresh = true;
-		end
 
 		-- NOTE: The auto refresh only happens once per version
 		if not app.autoRefreshedCollections then
@@ -17566,86 +18071,17 @@ app.events.VARIABLES_LOADED = function()
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= app.Version) then
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
-				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				wipe(ATTAccountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				needRefresh = true;
 			end
 		end
-
-		-- do one-time per character custom visibility check(s)
-		-- Exile's Reach (New Player Experience)
-		app.SetCustomCollectibility("NPE", function(cc)
-			-- character is not checked
-			if cc == nil then
-				-- print("first check");
-				-- check if the current MapID is in Exile's Reach
-				local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
-				while not app.CurrentMapID do
-					app.GetCurrentMapID();
-				end
-				-- print("map check",app.CurrentMapID);
-				-- this is an NPE character, so flag the GUID
-				if maps[app.CurrentMapID] then
-					-- print("on map");
-					return true;
-				-- if character has completed the first NPE quest
-				elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
-						-- but not finished the NPE chain
-						and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
-					-- print("incomplete NPE chain");
-					return true;
-				end
-				-- otherwise character is not NPE
-				return false;
-			-- character has previously been flagged
-			elseif cc then
-				-- finished the NPE chain
-				if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
-					-- print("complete NPE chain");
-					return false;
-				end
-			end
-			return cc;
-		end);
-		-- Shadowlands Skip
-		app.SetCustomCollectibility("SL_SKIP", function(cc)
-			-- character is not checked
-			if cc == nil then
-				-- print("first check of SL_SKIP");
-				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-				cc = IsQuestFlaggedCompleted(62713) or false;
-			-- character is not a skip character, check if the status has changed
-			elseif not cc then
-				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-				cc = IsQuestFlaggedCompleted(62713);
-			end
-			-- no apparent way to revert this choice, so no logic to revert the CC value
-			-- print("isSkip",cc);
-			return cc;
-		end);
-		local SLCovenantId = C_Covenants.GetActiveCovenantID();
-		-- print("Current Covenant",SLCovenantId);
-		-- Show all Covenants if not yet selected
-		-- Shadowlands Covenant: Kyrian
-		app.SetCustomCollectibility("SL_COV_KYR", function()
-			return SLCovenantId == 1 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Venthyr
-		app.SetCustomCollectibility("SL_COV_VEN", function()
-			return SLCovenantId == 2 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Night Fae
-		app.SetCustomCollectibility("SL_COV_NFA", function()
-			return SLCovenantId == 3 or SLCovenantId == 0;
-		end);
-		-- Shadowlands Covenant: Necrolord
-		app.SetCustomCollectibility("SL_COV_NEC", function()
-			return SLCovenantId == 4 or SLCovenantId == 0;
-		end);
 
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 		-- print("ATT is Ready!");
+		
+		RefreshSaves();
 
 		if needRefresh then
 			-- collection refresh includes data refresh
@@ -17654,31 +18090,26 @@ app.events.VARIABLES_LOADED = function()
 			app:RefreshData(false);
 		end
 
-		-- fire a late location trigger to make sure the minilist syncs to the current zone
-		-- so that addon-loading doesn't interfere with map info
-		C_Timer.After(2, app.LocationTrigger);
+		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
+		Callback(app.LocationTrigger);
 	end);
 end
-app.events.PLAYER_LOGIN = function()
-	app:UnregisterEvent("PLAYER_LOGIN");
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	});
+app.events.PLAYER_ENTERING_WORLD = function(...)
+	-- print("PLAYER_ENTERING_WORLD",...)
+	app.InWorld = true;
+	-- refresh any custom collects for this character
+	app.RefreshCustomCollectibility();
+	-- send a location trigger now that the character is 'in the world'
+	Callback(app.LocationTrigger);
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then
 		app.Blizzard_AuctionHouseUILoaded = true;
-		app:UnregisterEvent("ADDON_LOADED");
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
 	elseif addonName == "Blizzard_AchievementUI" then
-		RefreshAchievementCollection()
-		app:RefreshData(false, true);
+		RefreshAchievementCollection();
 	end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
@@ -17696,7 +18127,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						response = "s";
 						for i=3,#args,1 do
 							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Sources[b] or 0);
 						end
 					elseif a == "q" then
 						response = "q";
@@ -17756,13 +18187,15 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
-	RefreshQuestCompletionState()
+	-- print("PLAYER_LEVEL_UP")
+	app.RefreshQuestInfo();
 	app.Level = newLevel;
 	app:UpdateWindows();
 	app.Settings:Refresh();
 end
 app.events.BOSS_KILL = function(id, name, ...)
-	RefreshQuestCompletionState()
+	-- print("BOSS_KILL")
+	app.RefreshQuestInfo();
 	-- This is so that when you kill a boss, you can trigger
 	-- an automatic update of your saved instance cache.
 	-- (It does lag a little, but you can disable this if you want.)
@@ -17779,12 +18212,13 @@ app.events.LOOT_CLOSED = function()
 	RequestRaidInfo();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
-	-- We got new information, not refresh the saves. :D
+	-- We got new information, now refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
-	RefreshQuestCompletionState()
+	-- print("HEIRLOOMS_UPDATED")
+	app.RefreshQuestInfo();
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
@@ -17797,13 +18231,16 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	RefreshQuestCompletionState(questID);
+	-- print("QUEST_TURNED_IN")
+	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_LOG_UPDATE")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_FINISHED = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_FINISHED")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
@@ -17820,6 +18257,8 @@ app.events.QUEST_ACCEPTED = function(questID)
 			end
 		end
 		PrintQuestInfo(questID, 1, freq);
+		-- Make sure windows update incase any show the picked up quest
+		app:UpdateWindows();
 	end
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
@@ -17848,9 +18287,22 @@ end
 app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
 end
+app.events.PLAYER_REGEN_ENABLED = function()
+	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
+	-- print("PLAYER_REGEN_ENABLED:Begin")
+	if app.__combatcallbacks and #app.__combatcallbacks > 0 then
+		local i = #app.__combatcallbacks;
+		for c=i,1,-1 do
+			-- print("PLAYER_REGEN_ENABLED:",c)
+			app.__combatcallbacks[c]();
+			app.__combatcallbacks[c] = nil;
+		end
+	end
+	-- print("PLAYER_REGEN_ENABLED:End")
+end
 app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and PlayerHasToy(itemID) and not GetDataSubMember("CollectedToys", itemID) then
-		SetDataSubMember("CollectedToys", itemID, true);
+	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
+		ATTAccountWideData.Toys[itemID] = 1;
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
@@ -17864,12 +18316,12 @@ end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
-		local oldState = GetDataSubMember("CollectedSources", sourceID) or 0;
+		local oldState = ATTAccountWideData.Sources[sourceID] or 0;
 
 		-- Only do work if we weren't already learned.
 		-- We check here because Blizzard likes to double notify for items with timers.
 		if oldState ~= 1 then
-			SetDataSubMember("CollectedSources", sourceID, 1);
+			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
@@ -17878,10 +18330,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	local oldState = sourceID and GetDataSubMember("CollectedSources", sourceID);
+	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-		SetDataSubMember("CollectedSources", sourceID, nil);
+		ATTAccountWideData.Sources[sourceID] = nil;
 
 		-- If the user is a Completionist
 		if app.Settings:Get("Completionist") then
@@ -17896,10 +18348,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 			local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
 			if categoryID then
 				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-					if GetDataSubMember("CollectedSources", otherSourceID) then
+					if ATTAccountWideData.Sources[otherSourceID] then
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
-							SetDataSubMember("CollectedSources", otherSourceID, nil);
+							ATTAccountWideData.Sources[otherSourceID] = nil;
 							shared = shared + 1;
 						end
 					end

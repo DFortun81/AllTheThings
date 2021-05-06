@@ -791,8 +791,9 @@ _.ExpansionFeatures =
 					q(41096),	-- Time is of the Essence
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
-					q(43557, {	-- Violet Hold
+					q(43557, {	-- Assault on Violet Hold: Into the Violet Hold
 						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43186, {	-- I Am the Slayer!
 						i(139715),	-- Robes of

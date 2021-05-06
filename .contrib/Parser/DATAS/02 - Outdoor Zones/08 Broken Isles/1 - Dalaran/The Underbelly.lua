@@ -18,6 +18,20 @@ _.Zones =
 					p(1915),	-- Blind Rat
 				}),
 				n(VENDORS, {
+					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
+						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
+						["coord"] = { 51.6, 40.6, 628 },
+						["g"] = {
+							i(136803, {	-- Dirty Tricks, Vol 1: Detection
+								--["spellID"] = 210108,	-- Detection
+							}),
+							i(136927),	-- Scarlet Confessional Book
+							i(141056),	-- Technique: Glyph of Burnout
+							i(136972, {	-- Tome of Hex: Cockroach
+								["spellID"] = 211015,	-- Hex(Cockroach)
+							}),
+						},
+					}),
 					n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
 						["coord"] = { 66.2, 74.8, 628 },
 						["g"] = {

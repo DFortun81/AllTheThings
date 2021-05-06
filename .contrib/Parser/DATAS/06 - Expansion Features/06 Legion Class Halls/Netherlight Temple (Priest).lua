@@ -11,11 +11,6 @@ _.ExpansionFeatures =
 			["g"] =  {
 				n(QUESTS, {
 					n(-10067, {	-- Artifact Quests
-						q(43386, {	-- Onslaught Envoy
-							["lvl"] = 110,
-							["classes"] = { PRIEST },
-							["provider"] = { "n", 110564 },	-- Alonsus Faol
-						}),
 						i(141332, {	-- The Annals of Light and Shadow
 							["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
 							["maps"] = {
@@ -161,11 +156,30 @@ _.ExpansionFeatures =
 						["coord"] = { 28.7, 49.9, 627 },	-- Dalaran
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 					}),
+					q(43935, {	-- A Second Legend
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+						["classes"] = { PRIEST },
+						["coord"] = { 51.1, 48.2, 702 },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
 					q(41019, {	-- Actions on Azeroth
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
+					}),
+					q(43797, {	-- Aiding the Conclave
+						["sourceQuests"] = { 43397 } ,	-- United As One
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 111616 },	-- Lady Liadrin
+						["coord"] = { 50.2, 74.1, 24 },	-- Dalaran
+					}),
+					q(43395, {	-- Allies of the Light
+						["sourceQuests"] = { 43394 },	-- Crossing Legion Lines
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.6, 748 },
+						["maps"] = { 748 },
 					}),
 					q(43375, {	-- An Ample Supply
 						["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
@@ -176,11 +190,11 @@ _.ExpansionFeatures =
 					n(46028, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
-					q(43935, {	-- A Second Legend
-						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+					q(43388, {	-- Apostate Liberation
+						["sourceQuests"] = { 43387 },	-- Scarlet Redemption
 						["classes"] = { PRIEST },
-						["coord"] = { 51.1, 48.2, 702 },
-						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 71.4, 71.8, 115 },
+						["provider"] = { "n", 110683 },	-- Mariella the Heretic
 					}),
 					q(43383, {	-- Awakening the Light
 						["sourceQuests"] = { 43377 },	-- Halls of Valor: The Light Within
@@ -228,6 +242,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43381, {	-- Champion: Mariella Ward
+						["sourceQuests"] = { 43389 },	-- Unexpected Guests
+						["classes"] = { PRIEST },
+						["coord"] = { 51.2, 49.6, 702 },
 						["provider"] = { "n", 111215 },	-- Mariella Ward
 						["g"] = {
 							i(139762),	-- Bracers of the High Priest
@@ -235,7 +252,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43382, {	-- Champion: Natalie Seline
-						["provider"] = { "n", 110684 },	-- Natalie Seline <Cult of Forgotten Shadows>
+						["sourceQuest"] = 43392,	-- Into the Void
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110684 },	-- Natalie Seline
+						["coord"] = { 24.2, 37.8, 47 },
 						["g"] = {
 							follower(874),	-- Natalie Seline
 						},
@@ -271,11 +291,23 @@ _.ExpansionFeatures =
 						["description"] = "Requires researching the Order Advancement for Armaments of Light.",
 						["classes"] = { PRIEST },
 					}),
+					q(43394, {	-- Crossing Legion Lines
+						["sourceQuests"] = { 43393 },	-- Rising Shadows
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 111044 },	-- Lord Maxwell Tyrosus
+						["maps"] = { 748 },
+					}),
 					q(43384, {	-- Demonic Runes
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
 						["coord"] = { 48.9, 48.7, 702 },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
+					}),
+					q(43832, {	-- Elixirs of Aid
+						["sourceQuests"] = { 43797 },	-- Aiding the Conclave
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
 					}),
 					q(43378, {	-- Eye of Azshara: Looking Through the Lens
 						["sourceQuests"] = {
@@ -292,8 +324,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
 					q(43390, {	-- Forgotten Shadows
+						["sourceQuests"] = { 43381 },	-- Champion: Mariella Ward
 						["classes"] = { PRIEST },
-						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
+					}),
+					q(43399, {	-- Fortifying the Temple
+						["sourceQuests"] = { 43797 },	-- Aiding the Conclave
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
 					}),
 					q(43377, {	-- Halls of Valor: The Light Within
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
@@ -320,11 +360,16 @@ _.ExpansionFeatures =
 					}),
 					q(43385, {	-- Infiltrating Our Enemies
 						["sourceQuests"] = { 43380 },	-- Champion: Sol
-						["lvl"] = 45,
 						["classes"] = { PRIEST },
 						["coord"] = { 51.5, 47.7, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),	
+					q(43392, {	-- Into the Void
+						["sourceQuest"] = 43391,	-- Secrets of the Void
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 111041 },	-- Micah Belford
+						["coord"] = { 24.4, 37.8, 47 },
+					}),
 					q(46029, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
@@ -332,12 +377,31 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { PRIEST },
 					}),
+					q(43924, {	-- Leyblood
+						["repeatable"] = true,
+						["sourceQuests"] = { 43832 },	-- Elixirs of Aid
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
+					}),
+					q(43400, {	-- Lumenstone
+						["sourceQuests"] = { 43797 },	-- Aiding the Conclave
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 109776 },	-- Moira Thaurissan
+						["coord"] = { 51.5, 45.9, 702 },
+					}),
 					q(43374, {	-- Murloc Mind Control
 						["sourceQuests"] = { 43372 },	-- The Best and Brightest
 						["classes"] = { PRIEST },
 						["coord"] = { 58.5, 37.2, 630 },
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
-					}),					
+					}),
+					q(43386, {	-- Onslaught Envoy
+						["sourceQuests"] = { 43385 },	-- Infiltrating Our Enemies
+						["classes"] = { PRIEST },
+						["coord"] = { 51.5, 47.7, 702 },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
 					q(41967, {	-- Out of the Darkness
 						["sourceQuests"] = { 41966 },	-- House Call
 						["classes"] = { PRIEST },
@@ -401,17 +465,49 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 48.2, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
+					q(43393, {	-- Rising Shadows
+						["sourceQuest"] = 43392,	-- Into the Void
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110684 },	-- Natalie Seline
+						["coord"] = { 24.2, 37.8, 47 },
+					}),
+					q(43925, {	-- Runescale Koi
+						["repeatable"] = true,
+						["sourceQuests"] = { 43832 },	-- Elixirs of Aid
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
+					}),
 					q(41993, {	-- Salvation From On High
 						["sourceQuests"] = { 41967 },	-- Out of the Darkness
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105684 },	-- Alora
 						["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
 					}),
+					q(43387, {	-- Scarlet Redemption
+						["sourceQuests"] = { 43386 },	-- Onslaught Envoy
+						["classes"] = { PRIEST },
+						["coord"] = { 71.4, 71.8, 115 },
+						["provider"] = { "n", 110683 },	-- Mariella the Heretic
+					}),
+					q(43391, {	-- Secrets of the Void
+						["sourceQuests"] = { 43390 },	-- Forgotten Shadows
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 111041 },	-- Micah Belford
+						["coord"] = { 24.2, 37.8, 47 },
+					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.3, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
+					q(43923, {	-- Starlight Rose
+						["repeatable"] = true,
+						["sourceQuests"] = { 43832 },	-- Elixirs of Aid
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 50.9, 46.8, 702 },
 					}),
 					q(43277, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 43276 },	-- Troops in the Field
@@ -436,6 +532,13 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["coord"] = { 51.5, 47.9, 702 },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
+					}),
+					q(43396, {	-- The Mind of the Enemy
+						["sourceQuests"] = { 43394 },	-- Crossing Legion Lines
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.6, 748 },
+						["maps"] = { 748 },
 					}),
 					q(41631, {	-- The Nexus Vault
 						["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
@@ -467,6 +570,20 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
+					}),
+					q(43389, {	-- Unexpected Guests
+						["sourceQuests"] = { 43387 },	-- Scarlet Redemption
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110683 },	-- Mariella the Heretic
+					}),
+					q(43397, {	-- United As One
+						["sourceQuests"] = {
+							43395,	-- Allies of the Light
+							43396,	-- The Mind of the Enemy
+						},
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
+						["coord"] = { 51.1, 48.5, 702 },
 					}),
 					q(41630, {	-- Unleashing Judgment
 						["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire

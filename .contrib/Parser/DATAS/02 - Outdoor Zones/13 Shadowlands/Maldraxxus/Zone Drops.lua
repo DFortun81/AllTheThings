@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
-		m(1536, {	-- Maldraxxus
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
 			n(ZONEDROPS, {
 				i(184104, {	-- Blight-Touched Egg
 					["crs"] = {

@@ -73,6 +73,7 @@ _.Zones =
 					},
 				}),
 				q(31967, {	-- Battle Pet Tamers: Cataclysm
+					["altQuests"] = { 31966 },
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
@@ -90,6 +91,7 @@ _.Zones =
 					},
 				}),
 				q(31891, {	-- Battle Pet Tamers: Kalimdor
+					["altQuests"] = { 31889 },
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
@@ -98,6 +100,7 @@ _.Zones =
 					},
 				}),
 				q(31929, {	-- Battle Pet Tamers: Northrend
+					["altQuests"] = { 31927 },
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
@@ -106,6 +109,7 @@ _.Zones =
 					},
 				}),
 				q(31921, {	-- Battle Pet Tamers: Outland
+					["altQuests"] = { 31919 },
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
@@ -114,6 +118,7 @@ _.Zones =
 					},
 				}),
 				q(31952, {	-- Battle Pet Tamers: Pandaria
+					["altQuests"] = { 31930 },
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
@@ -186,18 +191,22 @@ _.Zones =
 				q(31882, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31883, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31884, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(31885, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 63626 },	-- Varzok

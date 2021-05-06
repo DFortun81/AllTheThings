@@ -19,11 +19,24 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	n(-10100, {	-- Shadowlands
+	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
+		-- Added in 9.1. Remove me soon!
+		i(179531),	-- Faesworn Reaper
+		i(179515),	-- Faesworn Falchion
+		i(179498),	-- Faesworn Barb
+		i(179564),	-- Faesworn Channeling Root
+		i(182322),	-- Faesworn Gavel
+		i(182323),	-- Faesworn Spellblade
+		i(179546),	-- Faesworn Warclub
+		i(179583),	-- Faesworn Warbow
+
+
+		i(180491),	-- Wingdancer's Spire
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
 		-- Gear
+		i(183973),	-- Lost winged ritual kris
 		i(171401),	-- Phaeweald Rapier
 		i(175999),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
 		i(176002),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
@@ -58,23 +71,6 @@ _.NeverImplemented =
 		i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
 		i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
 		i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
-		i(175181),	-- Retrieving Data
-		i(175213),	-- Retrieving Data
-		i(178302),	-- Retrieving Data
-		i(178307),	-- Retrieving Data
-		i(178312),	-- Retrieving Data
-		i(178314),	-- Retrieving Data
-		i(178318),	-- Retrieving Data
-		i(178323),	-- Retrieving Data
-		i(178326),	-- Retrieving Data
-		i(178330),	-- Retrieving Data
-		i(178480),	-- Retrieving Data
-		i(178665),	-- Retrieving Data
-		i(183434),	-- Retrieving Data
-		i(183431),	-- Retrieving Data
-		i(178488),	-- Retrieving Data
-		i(178489),	-- Retrieving Data
-		i(178673),	-- Retrieving Data
 		-- Pets
 		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -125,293 +121,6 @@ _.NeverImplemented =
 			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
 			["classes"] = { PRIEST, MAGE, WARLOCK },
 		}),
-	}),
-	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
-		-- Future Emsembles!!
-		-- Leather Alliance
-		i(166946),	-- Dread Gladiator's Leather Tunic
-		i(166947),	-- Dread Gladiator's Leather Boots
-		i(166948),	-- Dread Gladiator's Leather Gloves
-		i(166949),	-- Dread Gladiator's Leather Helm
-		i(166950),	-- Dread Gladiator's Leather Legguards
-		i(166951),	-- Dread Gladiator's Leather Spaulders
-		i(166952),	-- Dread Gladiator's Leather Belt
-		i(166953),	-- Dread Gladiator's Leather Bindings
-		-- Leather Horde (you probably will learn both after learning one)
-		i(166915),	-- Dread Gladiator's leather tunic
-		i(166916),	-- Dread Gladiator's leather boots
-		i(166917),	-- Dread Gladiator's leather gloves
-		i(166918),	-- Dread Gladiator's leather helm
-		i(166919),	-- Dread Gladiator's leather legguards
-		i(166920),	-- Dread Gladiator's leather spaulders
-		i(166921),	-- Dread Gladiator's leather belt
-		i(166922),	-- Dread Gladiator's leather bindings
-		i(163436),	-- Honorbound Outrider's Faceguard
-		i(163433),	-- Honorbound Outrider's Mantle
-		i(163440),	-- Honorbound Outrider's Belt
-		
-		-- Mail Alliance
-		i(166954),	-- Dread Gladiator's Chain Armor
-		i(166955),	-- Dread Gladiator's Chain Sabatons
-		i(166956),	-- Dread Gladiator's Chain Gauntlets
-		i(166957),	-- Dread Gladiator's Chain Helm
-		i(166958),	-- Dread Gladiator's Chain Leggings
-		i(166959),	-- Dread Gladiator's Chain Spaulders
-		i(166960),	-- Dread Gladiator's Chain Waistguard
-		i(166961),	-- Dread Gladiator's Chain Armbands
-		-- Mail Horde
-		i(166923),	-- Dread Gladiator's Chain Armor
-		i(166924),	-- Dread Gladiator's Chain Sabatons
-		i(166925),	-- Dread Gladiator's Chain Gauntlets
-		i(166926),	-- Dread Gladiator's Chain Helm
-		i(166927),	-- Dread Gladiator's Chain Leggings
-		i(166928),	-- Dread Gladiator's Chain Spaulders
-		i(166929),	-- Dread Gladiator's Chain Waistguard
-		i(166930),	-- Dread Gladiator's Chain Armbands
-
-		-- Scrapped Lv20 Gear (??)
-		i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
-		i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
-		i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
-		i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
-		i(157626),	-- Staff of Sining mists (Lv20 Start Gear?)
-		i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
-		i(157653),	-- fatihful shield (Lv20 Start Gear?)
-		i(157654),	-- stalwarts bulwark (Lv20 Start Gear?)
-		i(157656),	-- raincallers shield (Lv20 Start Gear?)
-		i(157657),	-- foebreakers barrier (Lv20 Start Gear?)
-		i(157629),	-- hammer of faith
-		i(157635),	-- Duskfall Daggers
-		i(140703),	-- Duskfall Daggers
-		i(150598),	-- Duskfall Daggers
-		i(140704),	-- Assassins Serrated Dagger
-		i(150599),	-- Assassins Serrated Dagger
-
-		i(159165),	-- Ashvane Company Bracers
-		i(159159),	-- Ashvane Company Gauntlets
-		i(159160),	-- Ashvane Company Girdle
-
-		-- patch 8.3 removed content
-		i(173421),	-- Black Empire Signet
-		i(173426),	-- Black Empire trinkets
-		
-		-- weapons with placeholder names from BFA section
-		i(182564),	-- NPE Weapon Dagger AGI
-		i(182573),	-- NPE Weapon Dagger AGI 2
-		i(182350),	-- Ardenweald Raid Mace STR
-		i(182578),	-- NPE Weapon 1H Mace AGI
-		i(182566),	-- NPE Weapon Staff AGI
-		i(182572),	-- NPE Weapon Staff INT
-		
-		-- armor with placeholder names from BFA section
-		i(179615),	-- Oribos Quest Mail Cloak
-		i(179621),	-- Ardenweald Covenant Mail Cloak
-		i(179630),	-- Ardenweald Covenant Mail Cloak
-		i(179631),	-- Ardenweald Covenant Mail Cloak
-		i(179632),	-- Ardenweald Covenant Mail Cloak
-		
-		-- all "Retrieving Data" in the BFA Cloth section
-		i(175420),	-- 
-		i(175512),	-- 
-		i(175608),	-- 
-		i(175620),	-- 
-		i(175629),	-- 
-		i(175632),	-- 
-		i(175679),	-- 
-		i(175682),	-- 
-		i(175686),	-- 
-		i(175688),	-- 
-		i(175691),	-- 
-		i(175695),	-- 
-		i(175697),	-- 
-		i(175700),	-- 
-		i(179412),	-- 
-		i(179413),	-- 
-		i(179414),	-- 
-		i(179415),	-- 
-		i(179416),	-- 
-		i(179417),	-- 
-		i(179418),	-- 
-		i(179419),	-- 
-		i(179439),	-- 
-		i(179440),	-- 
-		i(179441),	-- 
-		i(179442),	-- 
-		i(179443),	-- 
-		i(179444),	-- 
-		i(179445),	-- 
-		i(179446),	-- 
-		i(179466),	-- 
-		i(179467),	-- 
-		i(179468),	-- 
-		i(179469),	-- 
-		i(179470),	-- 
-		i(179471),	-- 
-		i(179472),	-- 
-		i(179473),	-- 
-		i(179489),	-- 
-		i(179490),	-- 
-		i(179587),	-- 
-		i(179588),	-- 
-		i(179589),	-- 
-		i(179590),	-- 
-		i(179591),	-- 
-		i(179592),	-- 
-		i(179595),	-- 
-		i(179683),	-- 
-		i(179684),	-- 
-		i(179685),	-- 
-		i(179686),	-- 
-		i(179687),	-- 
-		i(179688),	-- 
-		i(179689),	-- 
-		i(179690),	-- 
-		i(179691),	-- 
-		i(179692),	-- 
-		i(179693),	-- 
-		i(179694),	-- 
-		i(179695),	-- 
-		i(179696),	-- 
-		i(179697),	-- 
-		i(179698),	-- 
-		i(179699),	-- 
-		i(179700),	-- 
-		i(179701),	-- 
-		i(179702),	-- 
-		i(179703),	-- 
-		i(179704),	-- 
-		i(179705),	-- 
-		i(179706),	-- 
-		i(179707),	-- 
-		i(179708),	-- 
-		i(179709),	-- 
-		i(179710),	-- 
-		i(179711),	-- 
-		i(179712),	-- 
-		i(179713),	-- 
-		i(179714),	-- 
-		i(179715),	-- 
-		i(179716),	-- 
-		i(179717),	-- 
-		i(179718),	-- 
-		
-		-- all "Retrieving Data" in BFA cloak section
-		i(173926),	-- 
-		i(174193),	-- 
-		i(174206),	-- 
-		i(177692),	-- 
-		i(179402),	-- 
-		i(179411),	-- 
-		i(179420),	-- 
-		i(179429),	-- 
-		i(179438),	-- 
-		i(179447),	-- 
-		i(179456),	-- 
-		i(179465),	-- 
-		i(179474),	-- 
-		i(179483),	-- 
-		i(179612),	-- 
-		i(179614),	-- 
-		i(179616),	-- 
-		i(179617),	-- 
-		i(179618),	-- 
-		i(179619),	-- 
-		i(179636),	-- 
-		i(179637),	-- 
-		i(179639),	-- 
-		i(179640),	-- 
-		i(179641),	-- 
-		i(179642),	-- 
-		i(179644),	-- 
-		i(179645),	-- 
-		i(179646),	-- 
-		i(179647),	-- 
-		i(179648),	-- 
-		i(179649),	-- 
-		i(179650),	-- 
-		i(179651),	-- 
-		i(179732),	-- 
-		i(179738),	-- 
-		i(180578),	-- 
-		i(181812),	-- 
-		i(181813),	-- 
-		i(181814),	-- 
-		i(181881),	-- 
-		i(181882),	-- 
-		i(181883),	-- 
-		i(181884),	-- 
-		
-		-- all "Retrieving Data" in BFA weapons
-		-- Daggers
-		i(177719),	-- 
-		i(177720),	-- 
-		i(177721),	-- 
-		i(177722),	-- 
-		i(177723),	-- 
-		i(177724),	-- 
-		i(179503),	-- 
-		i(179504),	-- 
-		i(179505),	-- 
-		i(179506),	-- 
-		i(179507),	-- 
-		i(180863),	-- 
-		-- 1H Maces
-		i(176012),	-- 
-		i(176013),	-- 
-		i(176014),	-- 
-		i(176015),	-- 
-		i(176016),	-- 
-		i(176007),	-- 
-		i(179007),	-- 
-		i(179550),	-- 
-		i(179551),	-- 
-		i(179552),	-- 
-		i(179553),	-- 
-		i(179554),	-- 
-		i(179555),	-- 
-		-- Held In Off-Hand
-		i(176042),	-- 
-		i(176043),	-- 
-		i(176044),	-- 
-		i(176045),	-- 
-		i(176046),	-- 
-		i(177725),	-- 
-		i(177726),	-- 
-		i(177727),	-- 
-		i(177728),	-- 
-		i(177729),	-- 
-		i(177730),	-- 
-		-- Staves
-		i(176841),	-- 
-		i(176842),	-- 
-		i(176843),	-- 
-		i(176844),	-- 
-		i(178117),	-- 
-		i(178118),	-- 
-		i(179519),	-- 
-		i(179520),	-- 
-		i(179521),	-- 
-		i(179522),	-- 
-		i(179523),	-- 
-		i(179524),	-- 
-		i(179994),	-- 
-		i(179995),	-- 
-		i(179996),	-- 
-		i(179997),	-- 
-		i(179998),	-- 
-		i(179999),	-- 
-		i(180157),	-- 
-		i(180158),	-- 
-		i(180159),	-- 
-		i(180160),	-- 
-		i(180161),	-- 
-		-- Wands
-		i(180012),	-- 
-		i(180013),	-- 
-		i(180014),	-- 
-		i(180015),	-- 
-		i(180016),	-- 
-		i(180017),	-- 
 	}),
 	n(ACHIEVEMENTS, {
 		ach(14116),	-- All Bridges Burned
@@ -661,6 +370,90 @@ _.NeverImplemented =
 			i(159190),	-- Foxhollow Bracelets
 			i(159170),	-- Freehold Handwraps
 			i(159183),	-- Foxhollow Cord
+			i(179660),	-- Winterborn Tunic
+			i(175420),	--
+			i(175512),	--
+			i(175608),	--
+			i(175620),	--
+			i(175629),	--
+			i(175632),	--
+			i(175679),	--
+			i(175682),	--
+			i(175686),	--
+			i(175688),	--
+			i(175691),	--
+			i(175695),	--
+			i(175697),	--
+			i(175700),	--
+			i(179412),	--
+			i(179413),	--
+			i(179414),	--
+			i(179415),	--
+			i(179416),	--
+			i(179417),	--
+			i(179418),	--
+			i(179419),	--
+			i(179439),	--
+			i(179440),	--
+			i(179441),	--
+			i(179442),	--
+			i(179443),	--
+			i(179444),	--
+			i(179445),	--
+			i(179446),	--
+			i(179466),	--
+			i(179467),	--
+			i(179468),	--
+			i(179469),	--
+			i(179470),	--
+			i(179471),	--
+			i(179472),	--
+			i(179473),	--
+			i(179489),	--
+			i(179490),	--
+			i(179587),	--
+			i(179588),	--
+			i(179589),	--
+			i(179590),	--
+			i(179591),	--
+			i(179592),	--
+			i(179595),	--
+			i(179683),	--
+			i(179684),	--
+			i(179685),	--
+			i(179686),	--
+			i(179687),	--
+			i(179688),	--
+			i(179689),	--
+			i(179690),	--
+			i(179691),	--
+			i(179692),	--
+			i(179693),	--
+			i(179694),	--
+			i(179695),	--
+			i(179696),	--
+			i(179697),	--
+			i(179698),	--
+			i(179699),	--
+			i(179700),	--
+			i(179701),	--
+			i(179702),	--
+			i(179703),	--
+			i(179704),	--
+			i(179705),	--
+			i(179706),	--
+			i(179707),	--
+			i(179708),	--
+			i(179709),	--
+			i(179710),	--
+			i(179711),	--
+			i(179712),	--
+			i(179713),	--
+			i(179714),	--
+			i(179715),	--
+			i(179716),	--
+			i(179717),	--
+			i(179718),	--
 			i(78017),	-- Replica Magister's Leggings (Cloth)
 			i(4989),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			i(4990),		-- Scorched Bands
@@ -969,6 +762,25 @@ _.NeverImplemented =
 			i(159175),	-- Mistfall Belt
 			i(159180),	-- Mistfall Legguards
 			i(159178),	-- Mistfall Boots
+			i(166946),	-- Dread Gladiator's Leather Tunic
+			i(166947),	-- Dread Gladiator's Leather Boots
+			i(166948),	-- Dread Gladiator's Leather Gloves
+			i(166949),	-- Dread Gladiator's Leather Helm
+			i(166950),	-- Dread Gladiator's Leather Legguards
+			i(166951),	-- Dread Gladiator's Leather Spaulders
+			i(166952),	-- Dread Gladiator's Leather Belt
+			i(166953),	-- Dread Gladiator's Leather Bindings
+			i(166915),	-- Dread Gladiator's leather tunic
+			i(166916),	-- Dread Gladiator's leather boots
+			i(166917),	-- Dread Gladiator's leather gloves
+			i(166918),	-- Dread Gladiator's leather helm
+			i(166919),	-- Dread Gladiator's leather legguards
+			i(166920),	-- Dread Gladiator's leather spaulders
+			i(166921),	-- Dread Gladiator's leather belt
+			i(166922),	-- Dread Gladiator's leather bindings
+			i(163436),	-- Honorbound Outrider's Faceguard
+			i(163433),	-- Honorbound Outrider's Mantle
+			i(163440),	-- Honorbound Outrider's Belt
 			i(12104),	-- Brindlethorn Tunic (Leather)
 			i(54708),	-- Ceremonial Leather Gloves
 			i(54666),	-- Ceremonial Leather Harness
@@ -1372,13 +1184,60 @@ _.NeverImplemented =
 				i(96257),	-- Saurok Stalker's Legguards
 				i(96258),	-- Saurok Stalker's Spaulders
 			}),
-				-- Future Emsembles!!
-			i(163286),	-- honorbound vanguard's footguards
-			i(163291),	-- honorbound vanguard's strikers
-			i(163293),	-- honorbound vanguard's warhelm
-			i(163297),	-- honorbound vanguard's legguards
-			i(163302),	-- honorbound vanguard's spaulders
-			i(163304),	-- honorbound vanguard's waistcord
+			i(163286),	-- Honorbound Vanguard's Footguards
+			i(163291),	-- Honorbound Vanguard's Strikers
+			i(163293),	-- Honorbound Vanguard's Warhelm
+			i(163297),	-- Honorbound Vanguard's Legguards
+			i(163302),	-- Honorbound Vanguard's Spaulders
+			i(163304),	-- Honorbound Vanguard's Waistcord
+			i(179855),	-- Ardenweald Covenant Mail Waist
+			i(179856),	-- Ardenweald Covenant Mail Shoulders
+			i(179857),	-- Ardenweald Covenant Mail Legs
+			i(179858),	-- Ardenweald Covenant Mail Head
+			i(179859),	-- Ardenweald Covenant Mail Hand
+			i(179860),	-- Ardenweald Covenant Mail Feet
+			i(179861),	-- Ardenweald Covenant Mail Chest
+			i(166954),	-- Dread Gladiator's Chain Armor
+			i(166955),	-- Dread Gladiator's Chain Sabatons
+			i(166956),	-- Dread Gladiator's Chain Gauntlets
+			i(166957),	-- Dread Gladiator's Chain Helm
+			i(166958),	-- Dread Gladiator's Chain Leggings
+			i(166959),	-- Dread Gladiator's Chain Spaulders
+			i(166960),	-- Dread Gladiator's Chain Waistguard
+			i(166961),	-- Dread Gladiator's Chain Armbands
+			i(166923),	-- Dread Gladiator's Chain Armor
+			i(166924),	-- Dread Gladiator's Chain Sabatons
+			i(166925),	-- Dread Gladiator's Chain Gauntlets
+			i(166926),	-- Dread Gladiator's Chain Helm
+			i(166927),	-- Dread Gladiator's Chain Leggings
+			i(166928),	-- Dread Gladiator's Chain Spaulders
+			i(166929),	-- Dread Gladiator's Chain Waistguard
+			i(166930),	-- Dread Gladiator's Chain Armbands
+			i(179830),	-- Ardenweald Covenant Mail Chest
+			i(179831),	-- Ardenweald Covenant Mail Feet
+			i(179832),	-- Ardenweald Covenant Mail Hand
+			i(179833),	-- Ardenweald Covenant Mail Head
+			i(179834),	-- Ardenweald Covenant Mail Legs
+			i(179835),	-- Ardenweald Covenant Mail Shoulder
+			i(179836),	-- Ardenweald Covenant Mail Waist
+			i(179837),	-- Ardenweald Covenant Mail Wrist
+			i(179838),	-- Ardenweald Covenant Mail Wrist
+			i(179839),	-- Ardenweald Covenant Mail Waist
+			i(179840),	-- Ardenweald Covenant Mail Shoulder
+			i(179841),	-- Ardenweald Covenant Mail Legs
+			i(179842),	-- Ardenweald Covenant Mail Head
+			i(179843),	-- Ardenweald Covenant Mail Hand
+			i(179844),	-- Ardenweald Covenant Mail Feet
+			i(179845),	-- Ardenweald Covenant Mail Chest
+			i(179846),	-- Ardenweald Covenant Mail Wrist
+			i(179847),	-- Ardenweald Covenant Mail Waist
+			i(179848),	-- Ardenweald Covenant Mail Shoulder
+			i(179849),	-- Ardenweald Covenant Mail Legs
+			i(179850),	-- Ardenweald Covenant Mail Head
+			i(179851),	-- Ardenweald Covenant Mail Hand
+			i(179852),	-- Ardenweald Covenant Mail Feet
+			i(179853),	-- Ardenweald Covenant Mail Chest
+			i(179854),	-- Ardenweald Covenant Mail Wrist
 			i(92838),	-- Danio-Scale Belt
 			i(92839),	-- Danio-Scale Bracers
 			i(92840),	-- Danio-Scale Gauntlets
@@ -1778,6 +1637,9 @@ _.NeverImplemented =
 			i(163423),	-- 7th Legionnaire's Girdle
 			i(163408),	-- 7th Legionnaire's Legplates
 			i(163420),	-- 7th Legionnaire's Stompers
+			i(159165),	-- Ashvane Company Bracers
+			i(159159),	-- Ashvane Company Gauntlets
+			i(159160),	-- Ashvane Company Girdle
 			i(163457),	-- Honorbound Centurion's Helmet
 			i(163454),	-- Honorbound Centurion's Pauldrons
 			i(163462),	-- Honorbound Centurion's Girdle
@@ -1914,6 +1776,55 @@ _.NeverImplemented =
 			i(165261),	-- Unknown Cloak
 			i(134699),	-- Enveloping Drape
 			i(134609),	-- Scorching Cape
+			i(179615),	-- Oribos Quest Mail Cloak
+			i(179621),	-- Ardenweald Covenant Mail Cloak
+			i(179630),	-- Ardenweald Covenant Mail Cloak
+			i(179631),	-- Ardenweald Covenant Mail Cloak
+			i(179632),	-- Ardenweald Covenant Mail Cloak
+			i(173926),	--
+			i(174193),	--
+			i(174206),	--
+			i(177692),	--
+			i(179402),	--
+			i(179411),	--
+			i(179420),	--
+			i(179429),	--
+			i(179438),	--
+			i(179447),	--
+			i(179456),	--
+			i(179465),	--
+			i(179474),	--
+			i(179483),	--
+			i(179612),	--
+			i(179614),	--
+			i(179616),	--
+			i(179617),	--
+			i(179618),	--
+			i(179619),	--
+			i(179636),	--
+			i(179637),	--
+			i(179639),	--
+			i(179640),	--
+			i(179641),	--
+			i(179642),	--
+			i(179644),	--
+			i(179645),	--
+			i(179646),	--
+			i(179647),	--
+			i(179648),	--
+			i(179649),	--
+			i(179650),	--
+			i(179651),	--
+			i(179732),	--
+			i(179738),	--
+			i(180578),	--
+			i(181812),	--
+			i(181813),	--
+			i(181814),	--
+			i(181881),	--
+			i(181882),	--
+			i(181883),	--
+			i(181884),	--
 			i(163311),	-- 7th Legionnaire's Shroud
 			i(163312),	-- 7th Legionnaire's Shawl
 			i(163348),	-- Warfront Gear Cloak
@@ -2086,6 +1997,7 @@ _.NeverImplemented =
 			i(4988),		-- Burning Obsidian Band
 			i(17000),	-- Band of the Wraith
 			i(17108),	-- Mark of Deflection
+			i(173421),	-- Black Empire Signet
 			i(33097),	-- Unknown
 			i(33193),	-- Unknown
 			i(33194),	-- Unknown
@@ -2167,6 +2079,7 @@ _.NeverImplemented =
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
 			i(37561),	-- Unknown
+			i(173426),	-- Black Empire trinkets
 			i(25994),	-- rune of force (only beta)
 			i(25995),	-- Star of Sha'naar (only beta)
 			i(18355),	-- Ferras Collar
@@ -2280,6 +2193,23 @@ _.NeverImplemented =
 			i(168031),	-- dnt transference disc
 		}),
 		-- M+ PTR Testing
+		i(175181),	-- Retrieving Data
+		i(175213),	-- Retrieving Data
+		i(178302),	-- Retrieving Data
+		i(178307),	-- Retrieving Data
+		i(178312),	-- Retrieving Data
+		i(178314),	-- Retrieving Data
+		i(178318),	-- Retrieving Data
+		i(178323),	-- Retrieving Data
+		i(178326),	-- Retrieving Data
+		i(178330),	-- Retrieving Data
+		i(178480),	-- Retrieving Data
+		i(178665),	-- Retrieving Data
+		i(183434),	-- Retrieving Data
+		i(183431),	-- Retrieving Data
+		i(178488),	-- Retrieving Data
+		i(178489),	-- Retrieving Data
+		i(178673),	-- Retrieving Data
 		i(159681),	-- Set Keystone Map: Darkheart Thicket
 		i(159683),	-- Set Keystone Map: Black Rook Hold
 		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
@@ -3964,6 +3894,9 @@ _.NeverImplemented =
 			i(99964),	-- Tyrannical Gladiator's longbow h s14
 			i(158562),	-- Howdah-Rider's Bow
 			i(167141),	-- Unknown
+			i(177114),	-- [Honorbound Longbow]
+			i(177128),	-- [7th Legionnaire's Longbow]
+			i(178469),	--
 			i(64783),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
@@ -3988,9 +3921,28 @@ _.NeverImplemented =
 		}),
 		n(-333, {	-- Daggers
 			i(108785),	-- Unknown
+			i(182564),	-- NPE Weapon Dagger AGI
+			i(182573),	-- NPE Weapon Dagger AGI 2
 			i(115295),	-- Spectral Dagger
 			i(108786),	-- Unknown
 			i(167148),	-- Unknown
+			i(177719),	--
+			i(177720),	--
+			i(177721),	--
+			i(177722),	--
+			i(177723),	--
+			i(177724),	--
+			i(179503),	--
+			i(179504),	--
+			i(179505),	--
+			i(179506),	--
+			i(179507),	--
+			i(180863),	--
+			i(157635),	-- Duskfall Daggers
+			i(140703),	-- Duskfall Daggers
+			i(150598),	-- Duskfall Daggers
+			i(140704),	-- Assassins Serrated Dagger
+			i(150599),	-- Assassins Serrated Dagger
 			i(64848),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
 			i(64859),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			i(109269),	-- Unknown
@@ -4062,6 +4014,17 @@ _.NeverImplemented =
 			i(23462),	-- High Warlord's Tome of Destruction
 			i(23463),	-- High Warlord's Tome of Mending
 			i(32191),	-- Chancellor's Battletome
+			i(176042),	--
+			i(176043),	--
+			i(176044),	--
+			i(176045),	--
+			i(176046),	--
+			i(177725),	--
+			i(177726),	--
+			i(177727),	--
+			i(177728),	--
+			i(177729),	--
+			i(177730),	--
 			i(42523),	-- Savage Gladiator's Endgame
 			i(42529),	-- Savage Gladiator's Reprieve
 			i(42535),	-- Savage Gladiator's Grimoire
@@ -4080,16 +4043,54 @@ _.NeverImplemented =
 			i(167146),	-- Unknown
 			i(167998),	-- Dark Iron Tankard
 		}),
+		n(-334, {	-- One-Handed Axes
+			i(68050),	-- Shatterscale Mightfish
+			i(49456),	-- Will of the Earth
+			i(50251),	-- Unknown
+			i(180460),	-- Primal Combatant's Decapitator
+			i(115292),	-- spectral axe
+			i(42214),	-- Savage Gladiator's Waraxe
+			i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+			i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
+			i(108779),	-- Unknown
+			i(108780),	-- Unknown
+			i(108781),	-- Unknown
+			i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
+			i(159483),	--Unknown
+			i(159484),	--Unknown
+			i(164967),	--Unknown
+			i(165264),	--Unknown
+			i(109319),	-- 6.0 QA Combat Test Agility 1h Axe 2
+			i(109502),	-- 6.0 QA Combat Test Agility 1h Axe
+			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
+			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
+		}),
 		n(-336, { 	-- One-Handed Maces
 			i(64700),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
 			i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
 			i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
 			i(165262),	-- Unknown
+			i(182578),	-- NPE Weapon 1H Mace AGI
 			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
 			i(159550),	-- Unknown
 			i(108791),	-- Unknown
 			i(108792),	-- Unknown
 			i(108793),	-- Unknown
+			i(176012),	--
+			i(182350),	-- Ardenweald Raid Mace STR
+			i(176013),	--
+			i(176014),	--
+			i(176015),	--
+			i(176016),	--
+			i(176007),	--
+			i(179007),	--
+			i(179550),	--
+			i(179551),	--
+			i(179552),	--
+			i(179553),	--
+			i(179554),	--
+			i(179555),	--
+			i(157629),	-- hammer of faith
 			i(163930),	-- Kovorks rattle
 			i(109279),	-- Unknown
 			i(109383),	-- Unknown
@@ -4100,26 +4101,6 @@ _.NeverImplemented =
 			i(90331),	-- Face Smasher Warhammer
 			i(140697),	-- Justicar's Hammer
 			i(150592),	-- Justicar's Hammer
-		}),
-		n(-334, {	-- One-Handed Axes
-			i(68050),	-- Shatterscale Mightfish
-			i(49456),	-- Will of the Earth
-			i(50251),	-- Unknown
-			i(115292),	-- spectral axe
-			i(42214),	-- Savage Gladiator's Waraxe
-			i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
-			i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
-			i(108779),	-- Unknown
-			i(108780),	-- Unknown
-			i(108781),	-- Unknown
-			i(159483),	--Unknown
-			i(159484),	--Unknown
-			i(164967),	--Unknown
-			i(165264),	--Unknown
-			i(109319),	-- 6.0 QA Combat Test Agility 1h Axe 2
-			i(109502),	-- 6.0 QA Combat Test Agility 1h Axe
-			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
-			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
@@ -4213,6 +4194,10 @@ _.NeverImplemented =
 			i(109312),	-- Unknown
 			i(109476),	-- Unknown
 			i(109550),	-- Unknown
+			i(157653),	-- fatihful shield (Lv20 Start Gear?)
+			i(157654),	-- stalwarts bulwark (Lv20 Start Gear?)
+			i(157656),	-- raincallers shield (Lv20 Start Gear?)
+			i(157657),	-- foebreakers barrier (Lv20 Start Gear?)
 			i(34415),	-- Crystaline Shard Shield
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(60220),	-- Unknown
@@ -4229,6 +4214,35 @@ _.NeverImplemented =
 			i(132475),	-- Unknown - was under Legion>Staves
 			i(132476),	-- Unknown - was under Legion>Staves
 			i(49458),	-- Unknown
+			i(182566),	-- NPE Weapon Staff AGI
+			i(182572),	-- NPE Weapon Staff INT
+			i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
+			i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
+			i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
+			i(157626),	-- Staff of Sining mists (Lv20 Start Gear?)
+			i(176841),	--
+			i(176842),	--
+			i(176843),	--
+			i(176844),	--
+			i(178117),	--
+			i(178118),	--
+			i(179519),	--
+			i(179520),	--
+			i(179521),	--
+			i(179522),	--
+			i(179523),	--
+			i(179524),	--
+			i(179994),	--
+			i(179995),	--
+			i(179996),	--
+			i(179997),	--
+			i(179998),	--
+			i(179999),	--
+			i(180157),	--
+			i(180158),	--
+			i(180159),	--
+			i(180160),	--
+			i(180161),	--
 			i(115298),	-- Spectral Spire
 			i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
 			i(64744),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
@@ -4289,6 +4303,8 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			i(134563),	-- Unknown
 			i(108782),	-- Unknown
+			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
+			i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 			i(150607),	-- Greataxe of Fury
 			i(150606),	-- Armsmaster's Greataxe
 			i(140711),	-- Armsmaster's Greataxe
@@ -4299,9 +4315,19 @@ _.NeverImplemented =
 			i(69916),	-- Trollbane (Test)
 			i(109519),	-- Unknown
 			i(165265),	-- Unknown
+			i(182568),	-- NPE Weapon 2H Axe STR
+			i(177121),	-- Honorbound Decapitator
+			i(177591),	-- Oathsworn Headchopper
+			i(180147),	--
+			i(180148),	--
+			i(180149),	--
+			i(180150),	--
+			i(180151),	--
+			i(180152),	-- Drust 2H Axe
+			i(183432),	--
 			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
-			i(117994),	-- Rename karabor honor guard axe
+			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
@@ -4362,6 +4388,12 @@ _.NeverImplemented =
 			i(161926),	-- Talanji's Salutary Scepter (never added)
 			i(159923),	-- Unknown
 			i(161929),	-- Unknown
+			i(180012),	--
+			i(180013),	--
+			i(180014),	--
+			i(180015),	--
+			i(180016),	--
+			i(180017),	--
 			i(152871),	-- Seapriest's Wand
 			i(152873),	-- Talanji's Salutary Scepter
 			i(64694),	-- Bloodthirsty Gladiator's Baton of Light
@@ -4531,7 +4563,6 @@ _.NeverImplemented =
 	i(146651),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	i(133018),	-- Azsuna Packe 3 Holy 1 Unused
 	i(138229),	-- Nightmare Boss 3 Relic Storm
-	i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	i(140011),	-- Duskwatch Adjudicator's Pauldrons
 	i(33964),	-- Helm of the Stormcaller - Never Added
 	i(8195),		-- Nightscape Cloak										(Pattern never actually went live)

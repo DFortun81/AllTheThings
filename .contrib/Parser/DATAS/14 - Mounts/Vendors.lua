@@ -298,9 +298,6 @@ _.Mounts =
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
 			["classes"] = { WARLOCK },
 		}),
-		mount(232412, {	-- Netherlord's Chaotic Wrathsteed [Warlock Only]
-			["classes"] = { WARLOCK },
-		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(180726),	-- Pale Acidmaw

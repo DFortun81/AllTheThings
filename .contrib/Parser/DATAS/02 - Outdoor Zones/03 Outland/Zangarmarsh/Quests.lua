@@ -589,24 +589,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(28180)),	-- Myrmidon's Headdress
 					},
 				}),
-				q(9636,  {	-- The Zapthrottle Mote Extractor!
-					["provider"] = { "n", 17634 },	-- K. Lee Smallfry
-					["coord"] = { 68.6, 50.2, ZANGARMARSH },
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["g"] = {
-						i(23888),	-- Schematic: Zapthrottle Mote Extractor
-					},
-				}),
-				q(9635,  {	-- The Zapthrottle Mote Extractor!
-					["provider"] = { "n", 17637 },	-- Mack Diver
-					["coord"] = { 34.0, 51.0, ZANGARMARSH },
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["g"] = {
-						i(23888),	-- Schematic: Zapthrottle Mote Extractor
-					},
-				}),
 				q(9781,  {	-- Too Many Mouths to Feed
 					["provider"] = { "n", 18005 },	-- Haalrun
 					["coord"] = { 67.8, 48.0, ZANGARMARSH },

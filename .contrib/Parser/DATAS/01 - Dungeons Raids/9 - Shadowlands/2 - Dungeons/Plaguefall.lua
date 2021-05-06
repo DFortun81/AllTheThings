@@ -2,9 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+SLIME_SERPENT_DESC = "Requires solo kill of the last 2 bosses in either heroic or mythic Plaguefall."
+
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1183, {	-- Plaguefall
-		["coord"] = { 59.3, 64.8, 1536 },
+		["coord"] = { 59.3, 64.8, MALDRAXXUS },
 		["maps"] = {
 			1674,	-- Plaguefall
 			1697,	-- Plaguefall
@@ -170,6 +172,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178769),	-- Infinitely Divisible Ooze
 						},
 					}),
+					n(-77, {	-- Special
+						mount(346141, {	-- Slime Serpent
+							["description"] = SLIME_SERPENT_DESC,
+						}),
+					}),
 				},
 			}),
 			d(23, {	-- Mythic
@@ -250,6 +257,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178774),	-- Muckwallow Stompers
 							i(178769),	-- Infinitely Divisible Ooze
 						},
+					}),
+					n(-77, {	-- Special
+						mount(346141, {	-- Slime Serpent
+							["description"] = SLIME_SERPENT_DESC,
+						}),
 					}),
 				},
 			}),

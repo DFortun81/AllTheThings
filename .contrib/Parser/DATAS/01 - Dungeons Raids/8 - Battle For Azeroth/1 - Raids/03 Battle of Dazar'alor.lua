@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["order"] = "03",
 		["maps"] = {
-		--	1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
+			--1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
 			1352,	-- Port of Zandalar
 			1357,	-- The Zocalo
 			1353,	-- Halls of Opulence
@@ -21,7 +21,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1364,	-- The Great Sea
 			1367,	-- Boralus
 		},
-		["lvl"] = 120,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
@@ -44,8 +44,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					n(-351, {	-- Boss Drops
 						i(165703),	-- Breath of Bwonsamdi
 					}),
-					ach(13286, {	-- Siege of Dazar'alor (A)
-						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor (H)
+					ach(13286, 13289, {	-- Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
+						["collectible"] = false,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu
@@ -143,8 +143,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						},
 					}),
-					ach(13287, {	-- Empire's Fall (A)
-						["hordeAchievementID"] = 13290,	-- Death's Bargain (H)
+					ach(13287, 13290, {	-- Empire's Fall (A) / Death's Bargain (H)
+						["collectible"] = false,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu
@@ -246,8 +246,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						},
 					}),
-					ach(13288, {	-- Might of the Alliance (A)
-						["hordeAchievementID"] = 13291,	-- Victory or Death (H)
+					ach(13288, 13291, {	-- Might of the Alliance (A) / Victory or Death (H)
+						["collectible"] = true,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu

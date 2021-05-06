@@ -206,82 +206,82 @@ _.Achievements =
 				i(184508),	-- Mawsworn Pet Leash
 				crit(1,  {	-- Ardenweald's Tricksters
 					["_quests"] = { 61949 },	-- Ardenweald's Tricksters
-					["coord"] = { 40.2, 28.8, 1565 },
+					["coord"] = { 40.2, 28.8, ARDENWEALD },
 					["cr"] = 173381,	-- Rascal
 				}),
 				crit(2,  {	-- Airborne Defense Force
 					["_quests"] = { 61948 },	-- Airborne Defense Force
-					["coord"] = { 51.2, 44.2, 1565 },
+					["coord"] = { 51.2, 44.2, ARDENWEALD },
 					["cr"] = 173377,	-- Faryl
 				}),
 				crit(3,  {	-- Lurking In The Shadows
 					["_quests"] = { 61947 },	-- Lurking In The Shadows
-					["coord"] = { 40.0, 64.4, 1565 },
+					["coord"] = { 40.0, 64.4, ARDENWEALD },
 					["cr"] = 173376,	-- Nightfang
 				}),
 				crit(4,  {	-- Natural Defenders
 					["_quests"] = { 61946 },	-- Natural Defenders
-					["coord"] = { 58.2, 56.8, 1565 },
+					["coord"] = { 58.2, 56.8, ARDENWEALD },
 					["cr"] = 173372,	-- Glitterdust
 				}),
 				crit(5,  {	-- The Mind Games of Addius
 					["_quests"] = { 61886 },	-- The Mind Games of Addius
-					["coord"] = { 61.2, 41.0, 1525 },
+					["coord"] = { 61.2, 41.0, REVENDRETH },
 					["cr"] = 173331,	-- Addius the Tormentor
 				}),
 				crit(6,  {	-- Eyegor's Special Friends
 					["_quests"] = { 61885 },	-- Eyegor's Special Friends
-					["coord"] = { 67.6, 66.0, 1525 },
+					["coord"] = { 67.6, 66.0, REVENDRETH },
 					["cr"] = 173324,	-- Eyegor
 				}),
 				crit(7,  {	-- Resilient Survivors
 					["_quests"] = { 61883 },	-- Resilient Survivors
-					["coord"] = { 51.4, 38.2, 1525 },
+					["coord"] = { 51.4, 38.2, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
 				}),
 				crit(8,  {	-- Ashes Will Fall
 					["_quests"] = { 61879 },	-- Ashes Will Fall
-					["coord"] = { 25.2, 38.0, 1525 },
+					["coord"] = { 25.2, 38.0, REVENDRETH },
 					["cr"] = 173303,	-- Scorch
 				}),
 				crit(9,  {	-- Failed Experiment
 					["_quests"] = { 61870 },	-- Failed Experiment
-					["coord"] = { 54.0, 28.0, 1536 },
+					["coord"] = { 54.0, 28.0, MALDRAXXUS },
 					["cr"] = 173274,	-- Gorgemouth <Failed Experiment>
 				}),
 				crit(10, {	-- Uncomfortably Undercover
 					["_quests"] = { 61868 },	-- Uncomfortably Undercover
-					["coord"] = { 63.2, 46.8, 1536 },
+					["coord"] = { 63.2, 46.8, MALDRAXXUS },
 					["cr"] = 173267,	-- Dundley Stickyfingers
 				}),
 				crit(11, {	-- Extra Pieces
 					["_quests"] = { 61867 },	-- Extra Pieces
-					["coord"] = { 34.0, 55.2, 1536 },
+					["coord"] = { 34.0, 55.2, MALDRAXXUS },
 					["cr"] = 173263,	-- Rotgut
 				}),
 				crit(12, {	-- Mighty Minions of Maldraxxus
 					["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
-					["coord"] = { 46.8, 50.0, 1536 },
+					["coord"] = { 46.8, 50.0, MALDRAXXUS },
 					["cr"] = 173257,	-- Caregiver Maximillian
 				}),
 				crit(13, {	-- Thenia's Loyal Companions
 					["_quests"] = { 61791 },	-- Thenia's Loyal Companions
-					["coord"] = { 54.6, 56.0, 1533 },
+					["coord"] = { 54.6, 56.0, BASTION },
 					["cr"] = 173129,	-- Thenia
 				}),
 				crit(14, {	-- Micro Defense Force
 					["_quests"] = { 61787 },	-- Micro Defense Force
-					["coord"] = { 51.4, 38.2, 1533 },
+					["coord"] = { 51.4, 38.2, BASTION },
 					["cr"] = 173130,	-- Zolla
 				}),
 				crit(15, {	-- Cliffs of Bastion
 					["_quests"] = { 61784 },	-- Cliffs of Bastion
-					["coord"] = { 34.8, 62.8, 1533 },
+					["coord"] = { 34.8, 62.8, BASTION },
 					["cr"] = 173131,	-- Stratios
 				}),
 				crit(16, {	-- Mega Bite
 					["_quests"] = { 61783 },	-- Mega Bite
-					["coord"] = { 36.6, 31.8, 1533 },
+					["coord"] = { 36.6, 31.8, BASTION },
 					["cr"] = 173133,	-- Jawbone
 				}),
 			}),
@@ -733,461 +733,461 @@ _.Achievements =
 				i(184509),	-- Spriggan Trickster
 				ach(14868, {	-- Aquatic Apparitions  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14869, {	-- Beast Busters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14870, {	-- Creepy Critters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14871, {	-- Deathly Dragonkin -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14872, {	-- Eerie Elementals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14873, {	-- Flickering Fliers -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14874, {	-- Haunted Humanoids -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14875, {	-- Mummified Magics -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14876, {	-- Macabre Mechanicals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),
 				ach(14877, {	-- Unholy Undead -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
-						["coord"] = { 39.8, 52.4, 1525 },
+						["coord"] = { 39.8, 52.4, REVENDRETH },
 						["cr"] = 173315,	-- Sylla
 					}),
 					crit(2,  {	-- Eyegor
-						["coord"] = { 67.6, 66.0, 1525 },
+						["coord"] = { 67.6, 66.0, REVENDRETH },
 						["cr"] = 173324,	-- Eyegor
 					}),
 					crit(3,  {	-- Addius the Tormentor
-						["coord"] = { 61.2, 41.0, 1525 },
+						["coord"] = { 61.2, 41.0, REVENDRETH },
 						["cr"] = 173331,	-- Addius the Tormentor
 					}),
 					crit(4,  {	-- Rotgut
-						["coord"] = { 34.0, 55.2, 1536 },
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
 						["cr"] = 173263,	-- Rotgut
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
-						["coord"] = { 63.2, 46.8, 1536 },
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
 						["cr"] = 173267,	-- Dundley Stickyfingers
 					}),
 					crit(6,  {	-- Caregiver Maximillian
-						["coord"] = { 46.8, 50.0, 1536 },
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
 						["cr"] = 173257,	-- Caregiver Maximillian
 					}),
 					crit(7,  {	-- Zolla
-						["coord"] = { 51.4, 38.2, 1533 },
+						["coord"] = { 51.4, 38.2, BASTION },
 						["cr"] = 173130,	-- Zolla
 					}),
 					crit(8,  {	-- Thenia
-						["coord"] = { 54.6, 56.0, 1533 },
+						["coord"] = { 54.6, 56.0, BASTION },
 						["cr"] = 173129,	-- Thenia
 					}),
 					crit(9,  {	-- Stratios
-						["coord"] = { 34.8, 62.8, 1533 },
+						["coord"] = { 34.8, 62.8, BASTION },
 						["cr"] = 173131,	-- Stratios
 					}),
 					crit(10, {	-- Glitterdust
-						["coord"] = { 58.2, 56.8, 1565 },
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
 						["cr"] = 173372,	-- Glitterdust
 					}),
 					crit(11, {	-- Faryl
-						["coord"] = { 51.2, 44.2, 1565 },
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
 						["cr"] = 173377,	-- Faryl
 					}),
 				}),

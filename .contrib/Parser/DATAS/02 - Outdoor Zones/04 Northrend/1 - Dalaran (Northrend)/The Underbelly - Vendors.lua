@@ -18,7 +18,7 @@ _.Zones =
 						},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
-						["description"] = "This vendor is not always present.",
+						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 						["coord"] = { 47.0, 28.1, 126 },
 						["g"] = {
 							i(136803, {	-- Dirty Tricks, Vol 1: Detection

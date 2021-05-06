@@ -12,6 +12,72 @@ _.ExpansionFeatures =
 					n(-152,  {	-- Garrison Campaign
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							-- 1st quest of Garrison Campaign: The Sargerei (H) questchain
+							q(35185, {    -- Garrison Campaign: The Sargerei
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 83858 },    -- Khadgar's Servant
+								["coord"] = { 42.6, 46.8, 582 },    -- Lunarfall
+							}),
+							-- 2nd quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35187, {    -- Infiltrating the Sargerei
+								["sourceQuests"] = {
+									35185,    -- Garrison Campaign: The Sargerei (A)
+									35186,    -- Garrison Campaign: The Sargerei (H)
+								},
+								["provider"] = { "n", 88276 },    -- Archmage Modera
+								["coord"] = { 43.6, 77.2, 525 },    -- Frostfire Ridge
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35188, {    -- Pesky Podlings
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
+								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35189, {    -- The Word of Socrethar
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35190, {    -- An Ancient Threat
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
+								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+							}),
+							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35191, {    -- Shattering the Enemy
+								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 7th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35194, {    -- Facing Demons
+								["sourceQuests"] = {
+									35188,    -- Pesky Podlings
+									35189,    -- The Word of Socrethar
+									35190,    -- An Ancient Threat
+									35191,	  -- Shattering the Enemy
+								},
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+							}),
+							-- 8th quest of Garrison Campaign: The Sargerei (N) questchain
+							q(35195, {    -- Socrethar's Fury
+								["sourceQuests"] = { 35194 },    -- Facing Demons
+								["provider"] = { "o", 231918 },    -- Laanda's Scroll -- I guess "o" is for object
+								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["g"] = {
+									i(119134),    -- Sargerei Disguise
+								},
+							}),
+							-- 9th (last) quest of Garrison Campaign: The Sargerei (A) questchain
+							q(35196, {    -- Shattering the Enemy
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 35195 },    -- Socrethar's Fury
+								["provider"] = { "n", 81530 },    -- Anchorite Laanda
+								["coord"] = { 50.6, 82.2, 539 },    -- Shadowmoon Valley
+							}),
 							q(35679, {	-- Garrison Campaign: The Fall of Shattrath
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -65,9 +131,6 @@ _.ExpansionFeatures =
 								["coord"] = { 64.5, 69.8, 582 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 34027,	-- Groundbreaking Data
-							}),
-							q(35195, {	-- Socrethar's Fury
-								i(119134),	-- Sargerei Disguise (TOY!)
 							}),
 						},
 					}),
@@ -421,7 +484,6 @@ _.ExpansionFeatures =
 							{ "n", 91030 },	-- Trixxy Volt
 						},
 						["isDaily"] = true,
-						["lvl"] = 90,
 					}),
 					q(33075, {	-- A Hero's Welcome
 						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
@@ -437,12 +499,6 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 115507 },	-- Drained Crystal Fragment
 						["requireSkill"] = JEWELCRAFTING,
 					}),
-					q(36248, {	-- A Stolen Heart
-						["sourceQuest"] = 36161,	-- Where There Is Smoke...
-						["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
-						["coord"] = { 29.6, 34.4, 582 },
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(38259, {	-- All Hands on Deck
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
 						["coord"] = { 32.0, 31.9, 582 },
@@ -452,15 +508,19 @@ _.ExpansionFeatures =
 							garrisonBuilding(205),	-- Shipyard lvl 1
 						},
 					}),
+					q(36162, {    -- A Stolen Heart
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = { 36161 },    -- Where There Is Smoke... (A)
+						["provider"] = { "n", 84511 },    -- Lieutenant Thorn
+						["coord"] = { 31.6, 33.6, 582 },    -- Lunarfall
+					}),
 					q(34653, {	-- Arakkoa Exodus
 						["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 						["isBreadcrumb"] = true,
 						["coord"] = { 37.8, 36.8, 582 },
-						["lvl"] = 96,
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
 					}),
 					q(36624, {	-- Ashran Appearance
-						["lvl"] = 91,
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34692,	-- Delegating on Draenor
@@ -693,7 +753,6 @@ _.ExpansionFeatures =
 					}),
 					q(38356, {	-- Bringing the Bass
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
-						["lvl"] = 100,
 						["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 						["coord"] = { 33.8, 36.4, 582 },
 						["races"] = ALLIANCE_ONLY,
@@ -752,7 +811,6 @@ _.ExpansionFeatures =
 					q(36404, {	-- Clearing the Garden
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["coord"] = { 58.9, 53.4, 582 },
-						["lvl"] = 96,
 						["provider"] = { "n", 85344 },	-- Naron Bloomthistle
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -763,43 +821,36 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37774, {	-- Death to Gor'thul!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37778, {	-- Death to Hivelord Ik'rix!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37775, {	-- Death to Nullifier Darkoor!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37948, {	-- Death to Nullifier Darkoor!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37777, {	-- Death to Tremor!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(37776, {	-- Death to Undertow!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(34692, {	-- Delegating on Draenor
 						["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
@@ -843,7 +894,6 @@ _.ExpansionFeatures =
 					}),
 					q(38253, {	-- Garrison Campaign: War Council
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
-						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Automatically granted upon entering your garrison.",
 						["altQuests"] = { 40418 },	-- To Tanaan!
@@ -880,7 +930,6 @@ _.ExpansionFeatures =
 							{ "i", 109127, 10 },	-- 10x Starflower
 							{ "i", 109129, 10 },	-- 10x Talador Orchid
 						},
-						["lvl"] = 90,
 					}),
 					q(35176, {	-- Keeping it Together
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
@@ -937,19 +986,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 						["coord"] = { 33.8, 36.4, 582 },
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(36615, {	-- My Very Own Castle
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["coord"] = { 31.8, 31.0, 582 },
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 100,
 					}),
 					q(38408, {	-- New Goods
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
 						["coord"] = { 28.7, 35.0, 582 },
-						["lvl"] = 100,
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -961,7 +1007,6 @@ _.ExpansionFeatures =
 					}),
 					q(36861, {	-- Pinchwhistle Gearworks (Alliance)
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-						["lvl"] = 96,
 						["provider"] = { "n", 86589 },	-- Watchman Tilnia
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -972,7 +1017,6 @@ _.ExpansionFeatures =
 					}),
 					q(37433, {	-- Proving Grounds
 						["coord"] = { 29.1, 34.6, 582 },
-						["lvl"] = 100,
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
@@ -1018,7 +1062,6 @@ _.ExpansionFeatures =
 						},
 						["isDaily"] = true,
 						["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
-						["lvl"] = 90,
 					}),
 					q(37288, {	-- Resources in Ashran
 					--	unknown SQ.  wowhead says level requirement is 92, but i didn't see this until i hit 100 and upgraded to a level 3 garrison
@@ -1029,6 +1072,14 @@ _.ExpansionFeatures =
 						["coord"] = { 29.5, 33.3, 582 },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(34733, {    -- Services of Dagg
+						--["sourceQuests"] = { ??? },    -- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
+						--["coord"] = { 48.6, 17.2, 590 },    -- Frostwall
+						["coord"] = { 61.6, 74.8, 582 },    -- Lunarfall
+						["g"] = {
+							follower(32),    -- Follower: Dagg
+						},
 					}),
 					q(37289, {	-- Shadowmoon Invasion!
 					--	not a real invasion!  this is the trial one.
@@ -1060,10 +1111,8 @@ _.ExpansionFeatures =
 						},
 						["isDaily"] = true,
 						["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
-						["lvl"] = 90,
 					}),
 					q(34674, {	-- Taking the Fight to Nagrand
-						["lvl"] = 98,
 						["coord"] = { 42.8, 45.2, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1071,7 +1120,6 @@ _.ExpansionFeatures =
 					}),
 					q(37184, {	-- Taking the Fight to Nagrand
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
-						["lvl"] = 98,
 						["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1081,7 +1129,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(34676, {	-- The Critical Path
-						["lvl"] = 94,
 						["coord"] = { 42.8, 45.2, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1089,7 +1136,6 @@ _.ExpansionFeatures =
 					}),
 					q(37183, {	-- The Critical Path
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
-						["lvl"] = 94,
 						["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1101,7 +1147,6 @@ _.ExpansionFeatures =
 					}),
 					q(35556, {	-- The Secrets of Gorgrond
 						["isBreadcrumb"] = true,
-						["lvl"] = 92,
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
@@ -1134,7 +1179,6 @@ _.ExpansionFeatures =
 					}),
 					q(40418, {	-- To Tanaan! -- no idea how to get this one
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
-						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
 						["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 					}),

@@ -102,12 +102,6 @@ _.Zones =
 					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
 					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
-				q(43388, {	-- Apostate Liberation
-					["lvl"] = 110,
-					["coord"] = { 71.4, 71.8, 115 },
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 110683 },	-- Mariella the Heretic
-				}),
 				q(12077, {	-- Apply This Twice A Day
 					["coord"] = { 59.3, 18.1, 115 },
 					["provider"] = { "n", 26659 },	-- Zort
@@ -1058,12 +1052,6 @@ _.Zones =
 						i(38531),	-- Links of Righteous Persecution
 						i(38533),	-- Girdle of Forceful Annihilation
 					},
-				}),
-				q(43387, {	-- Scarlet Redemption
-					["lvl"] = 110,
-					["coord"] = { 71.4, 71.8, 115 },
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 110683 },	-- Mariella the Heretic
 				}),
 				q(12455, {	-- Scattered To The Wind
 					["coord"] = { 85.9, 50.8, 115 },

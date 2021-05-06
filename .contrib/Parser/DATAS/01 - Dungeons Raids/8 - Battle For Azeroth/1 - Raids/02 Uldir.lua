@@ -6,7 +6,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1031, { 	-- Uldir
 		["order"] = "02",
 		["isRaid"] = true,
-		["lvl"] = 120,
+		["lvl"] = { 50 },
 		["mapID"] = 1148,	-- Ruin's Descent
 		["maps"] = {
 			1149,	-- Hall of Sanitation
@@ -117,7 +117,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(161074),	-- Crushproof Vambraces
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
-				ach(12521, {	-- Halls of Containment	
+				ach(12521, {	-- Halls of Containment
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
