@@ -123,6 +123,15 @@ _.ExpansionFeatures =
 						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
+					q(41784, {	-- Borrowed Time
+						["sourceQuests"] = { 41780 },	-- Doom and Gloom
+						["classes"] = { WARLOCK },
+						["coord"] = { 39.1, 62.6, 641 },
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
+						["g"] = {
+							i(139770),	-- Wristbands of the Black Harvest
+						},
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
@@ -159,9 +168,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41751, {	-- Champion: Kira Iresoul
-						--["sourceQuests"] = {  },
+						["sourceQuests"] = { 41784 },	-- Borrowed Time
 						["classes"] = { WARLOCK },
-						--["coord"] = { , 717 },
+						["coord"] = { 54.1, 34.9, 717 },
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["g"] = {
 							follower(617),	-- Kira Iresoul
@@ -186,9 +195,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41754, {	-- Champion: Shinfel Blightsworn
-						--["sourceQuests"] = {  },
+						["sourceQuests"] = { 41784 },	-- Borrowed Time
 						["classes"] = { WARLOCK },
-						--["coord"] = { , 717 },
+						["coord"] = { 54.0, 35.5, 717 },
 						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["g"] = {
 							follower(620),	-- Shinfel Blightsworn
@@ -342,8 +351,23 @@ _.ExpansionFeatures =
 					q(46131, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(42103, {	-- Let it Feed
+						["sourceQuests"] = { 42660 },	-- Vault of the Wardens: Matters of the Heart
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.1, 34.9, 717 },
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
+					}),
 					q(41769, {	-- Mad Ernie the Alchemist
 						["sourceQuests"] = { 41768 },	-- Soul Beacon
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.0, 36.2, 717 },
+						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
+					}),
+					q(42103, {	-- One Who's Worthy
+						["sourceQuests"] = {
+							41751,	-- Champion: Kira Iresoul
+							41754,	-- Champion: Shinfel Blightsworn
+						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 54.0, 36.2, 717 },
 						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
@@ -461,6 +485,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 						["maps"] = { 628 },	-- Dalaran, Broken Isles
 					}),
+					q(46241, {	-- The Minions of Hel'nurath
+						["sourceQuests"] = {
+							46239,	-- Fel to the Core
+							46240,	-- Give Me Fuel, Give Me Fire
+							46238,	-- If You Build It
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 35.3, 38.5, 717 },
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
@@ -491,7 +525,7 @@ _.ExpansionFeatures =
 						["coord"] = { 35.6, 38.4, 717 },
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["g"] = {
-							mount(241851),	-- Netherlord's Chaotic Wrathsteed
+							mount(232412),	-- Netherlord's Chaotic Wrathsteed
 						},
 					}),
 					q(40606, {	-- To Point the Way
@@ -512,6 +546,24 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(44682, {	-- Unparalleled Power
+						["sourceQuests"] = {
+							41751,	-- Champion: Kira Iresoul
+							41754,	-- Champion: Shinfel Blightsworn
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 67.0, 46.4, 717 },
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(42660, {	-- Vault of the Wardens: Matters of the Heart
+						["sourceQuests"] = {
+							41751,	-- Champion: Kira Iresoul
+							41754,	-- Champion: Shinfel Blightsworn
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.1, 34.9, 717 },
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -542,17 +594,12 @@ _.ExpansionFeatures =
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
 					q(41785),	-- Finding Fizzlebang
-					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
-					q(42102),	-- One Who's Worthy
 					q(40821),	-- Power Overwhelming
 					q(42517),	-- Ritual of Doom
 					q(43895),	-- Sealing Fate: Gold
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
-					q(46241, {	-- The Minions of Hel'nurath
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(44227),	-- Unleashing our Wrath
@@ -562,9 +609,6 @@ _.ExpansionFeatures =
 					}),
 					q(41796, {	-- Selecting a Sixth
 						i(139767),	-- Robes of the Black Harvest
-					}),
-					q(41784, {	-- Borrowed Time
-						i(139770),	-- Wristbands of the Black Harvest
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43414, {	-- A Hero's Weapon

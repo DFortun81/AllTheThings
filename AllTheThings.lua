@@ -139,11 +139,14 @@ local function Callback(method, ...)
 		app.__callbacks = {};
 	end
 	if not app.__callbacks[method] then
-		app.__callbacks[method] = true;
+		app.__callbacks[method] = ... and {...} or true;
 		-- print("Callback:",method, ...)
-		local newCallback = function(...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
 			app.__callbacks[method] = nil;
-			method(...);
+			-- print("Callback Running",method, args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Callback Done",method)
 		end;
 		C_Timer.After(0, newCallback);
 	end
@@ -160,13 +163,40 @@ local function SelfCallback(self, name, method, ...)
 		app.__callbacks[self] = {};
 	end
 	if not app.__callbacks[self][name] then
-		app.__callbacks[self][name] = true;
-		-- print("Callback:",self,name, ...)
-		local newCallback = function(...)
-				app.__callbacks[self][name] = nil;
-				method(...);
-			end;
+		app.__callbacks[self][name] = ... and {...} or true;
+		-- print("Self-Callback:", self, name, ...)
+		local newCallback = function()
+			local args = app.__callbacks[self][name];
+			app.__callbacks[self][name] = nil;
+			-- print("Self-Callback Running",self,name,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("Self-Callback Done",self,name)
+		end;
 		C_Timer.After(0, newCallback);
+	end
+end
+-- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
+local function AfterCombatCallback(method, ...)
+	if not InCombatLockdown() then Callback(method, ...); return; end
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__combatcallbacks then
+		app.__combatcallbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		-- If in combat, register to trigger on leave combat
+		-- print("AfterCombatCallback:Added",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- print("AfterCombatCallback:Running",method,args ~= true and unpack(args) or nil)
+			method(args ~= true and unpack(args) or nil);
+			-- print("AfterCombatCallback:Done",method)
+		end;
+		tinsert(app.__combatcallbacks, 1, newCallback);
+		app:RegisterEvent("PLAYER_REGEN_ENABLED");
 	end
 end
 local constructor = function(id, t, typeID)
@@ -4160,18 +4190,19 @@ local function SearchForLink(link)
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("s", sourceID);
 					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
+					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
 				end
 
 				-- Merge together the cost search results as well.
-				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
+				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
 				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
@@ -4732,26 +4763,27 @@ local function ExportData(group)
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
 	end
 end
-local function RefreshSavesCoroutine()
-	-- While the player is in combat, wait for combat to end.
-	while InCombatLockdown() do coroutine.yield(); end
-
-	-- While the player is still logging in, wait.
-	while not app.GUID do coroutine.yield(); end
-
-	-- While the player is still waiting for information, wait.
-	-- NOTE: Usually, this is only 1 wait.
-	local counter = 600;
+local function RefreshSavesCallback()
+	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
+	app.refreshingSaves = app.refreshingSaves or 30;
+	-- Make sure there's info available to check save data
 	local saves = GetNumSavedInstances();
-	while counter > 0 and saves and saves < 1 do
-		counter = counter - 1;
-		coroutine.yield();
-		saves = GetNumSavedInstances();
+	-- While the player is still logging in, wait.
+	if not app.GUID then
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
 	end
-	if counter < 1 then
-		app.refreshingSaves = false;
-		-- Need to return if hitting the limit
-		-- A character who has never entered an instance will hit this
+	
+	-- While the player is still waiting for information, wait.
+	if saves and saves < 1 and app.refreshingSaves > 0 then
+		app.refreshingSaves = app.refreshingSaves - 1;
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Too many attempts, so give up
+	if app.refreshingSaves <= 0 then
+		app.refreshingSaves = nil;
 		return;
 	end
 
@@ -4863,10 +4895,10 @@ local function RefreshSavesCoroutine()
 	end
 
 	-- Mark that we're done now.
-	app:UpdateWindows(nil, true);
+	app:UpdateWindows();
 end
 local function RefreshSaves()
-	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
+	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
@@ -6552,10 +6584,11 @@ local fields = {
 	["filterID"] = function(t)
 		return 112;
 	end,
-	["trackable"] = function(t)
+	["trackable"] = app.ReturnTrue,
+	["collectible"] = function(t)
 		return app.CollectibleReputations;
 	end,
-	["saved"] = function(t)
+	["collected"] = function(t)
 		local factionID = t.factionID;
 		if app.CurrentCharacter.Factions[factionID] then return 1; end
 		if t.standing >= t.maxstanding then
@@ -6588,6 +6621,21 @@ local fields = {
 					return 2;
 				end
 			end
+		end
+	end,
+	["saved"] = function(t)
+		local factionID = t.factionID;
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
+		if t.standing >= t.maxstanding then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
+		end
+		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
+		if friendID and not nextFriendThreshold then
+			app.CurrentCharacter.Factions[factionID] = 1;
+			ATTAccountWideData.Factions[factionID] = 1;
+			return 1;
 		end
 	end,
 	["title"] = function(t)
@@ -6651,8 +6699,6 @@ local fields = {
 		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
-fields.collectible = fields.trackable;
-fields.collected = fields.saved;
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
@@ -7622,7 +7668,7 @@ local itemFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
@@ -7714,9 +7760,12 @@ local itemFields = {
 	end,
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		local modItemID = GetGroupItemIDWithModID(t);
-		rawset(t, "modItemID", modItemID);
-		return modItemID;
+		if t.modID and t.modID > 0 then
+			rawset(t, "modItemID", t.itemID + (t.modID / 100));
+		else
+			rawset(t, "modItemID", t.itemID);
+		end		
+		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["collectible"] = function(t)
@@ -7729,7 +7778,7 @@ local itemFields = {
 		if t.parent and t.parent.saved then return false; end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -7741,7 +7790,10 @@ local itemFields = {
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
 				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
+				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
+					app.RecursiveGroupRequirementsFilter(ref) and
+					-- don't include items which are from something the current character cannot complete
+					not GetRelativeValue(t, "altcollected") then
 					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
@@ -7770,9 +7822,11 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
+		-- local LOG = t.itemID == 76402 and t.itemID;
+		-- if LOG then print("Logging Costs for",LOG) end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -7782,14 +7836,30 @@ local itemFields = {
 			results = app.SearchForField("itemIDAsCost", id);
 		end
 		if results and #results > 0 then
+			-- if LOG then print("Found Cost Results",#results) end
 			for _,ref in pairs(results) do
+				-- TODO: why is this so weird
+				-- ensure this result has updated itself prior to determining if a cost is required for it
+				-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
+				-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
+				-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
 				-- different itemID, OR same itemID with different modID is allowed
 				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					-- Used as a cost for something which has a total greater than its progress and is not a parent of the cost group itself
-					if ref.total and ref.total > 0 and ref.progress < ref.total and not GetRelativeField(t, "parent", ref) then
-						return false;
+					-- TODO: maybe use this instead eventually
+					-- if not app.IsComplete(ref) then
+					-- 	return false;
+					-- end
 					-- Used as a cost for something which is collectible itself and not collected
-					elseif ref.collectible and not ref.collected then
+					if ref.collectible and not ref.collected then
+						-- if LOG then print("Cost Required via Collectible") end
+						return false;
+					-- Used as a cost for something which has an incomplete progress
+					elseif ref.total and ref.total > 0 and ref.total ~= ref.progress and
+						-- is account or debug mode or the thing is not altcollected
+						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- if LOG then print("Cost Required via Total/Prog") end
 						return false;
 					end
 				end
@@ -8143,44 +8213,47 @@ app.CreateMount = function(id, t)
 	end
 end
 
-app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
-	-- print("NEW_MOUNT_ADDED", newMountID, ...);
-	StartCoroutine("RefreshMountCollection" .. (newMountID or "ALL"), function()
-		while InCombatLockdown() do coroutine.yield(); end
-
-		-- Refresh Mounts
-		local collectedSpells = ATTAccountWideData.Spells;
-		if newMountID then
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+-- Refresh a specific Mount or all Mounts if not provided with a specific ID
+local RefreshMounts = function(newMountID)
+	local collectedSpells, newSpellIDResults = ATTAccountWideData.Spells;
+	-- Think learning multiple mounts at once or multiple mounts without leaving combat
+	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
+	-- plus it's not laggy now to do that so it should be fine
+	
+	-- if newMountID then
+	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
+	-- 	if spellID and isCollected then
+	-- 		if not collectedSpells[spellID] then
+	-- 			collectedSpells[spellID] = 1;
+	-- 			app.CurrentCharacter.Spells[spellID] = 1;
+	-- 			newSpellIDResults = SearchForField("spellID", spellID);
+	-- 		end
+	-- 	end
+	-- else
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
 				if not collectedSpells[spellID] then
 					collectedSpells[spellID] = 1;
 					app.CurrentCharacter.Spells[spellID] = 1;
-					UpdateSearchResults(SearchForField("spellID", spellID));
-					app:PlayRareFindSound();
-				end
-			end
-		else
-			local anyNewMounts = false;
-			for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-				if spellID and isCollected then
-					if not collectedSpells[spellID] then
-						collectedSpells[spellID] = 1;
-						app.CurrentCharacter.Spells[spellID] = 1;
-						anyNewMounts = true;
+					if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
+					else
+						for _,result in ipairs(SearchForField("spellID", spellID)) do
+							tinsert(newSpellIDResults, result);
+						end
 					end
 				end
 			end
-
-			if anyNewMounts then
-				-- Wait a frame before harvesting item collection status.
-				coroutine.yield();
-				app:PlayRareFindSound();
-				app:RefreshData(false, true);
-			end
 		end
-	end);
+	-- end
+
+	if newSpellIDResults then
+		UpdateSearchResults(newSpellIDResults);
+		app:PlayRareFindSound();
+	end
+end
+app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
+	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
 end)();
@@ -8836,10 +8909,13 @@ local questFields = {
 
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
+		-- local LOG = t.questID == 8753 and t.questID;
+		-- if LOG then print(LOG,"checking altCollected") end		
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
+					-- if LOG then print(LOG,"altCollected by",questID) end
 					rawset(t, "altcollected", questID);
 					return questID;
 				end
@@ -9050,6 +9126,7 @@ local function QueryCompletedQuests()
 	end
 end
 local function RefreshQuestCompletionState(questID)
+	-- print("QuestRefresh",questID)
 	if not questID then
 		QueryCompletedQuests();
 	else
@@ -9061,6 +9138,9 @@ local function RefreshQuestCompletionState(questID)
 	end
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache)
+end
+app.RefreshQuestInfo = function(questID)
+	AfterCombatCallback(RefreshQuestCompletionState, questID);
 end
 
 -- Recipe Lib
@@ -10294,6 +10374,24 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group)
+	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
+	-- if LOG then app.DEBUG_LOG = LOG; end
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
+
+	-- -- Only update a group ONCE per update cycle...
+	-- if not group._Updated or group._Updated ~= app._Updated then
+	-- 	if LOG then print("First Update") end
+	-- 	group._Updated = app._Updated;
+	-- else
+	-- 	-- group has already updated on this pass
+	-- 	if LOG then print("Skip Update") end
+	-- 	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
+	-- 	-- Increment the parent group's totals.
+	-- 	parent.total = (parent.total or 0) + (group.total or 0);
+	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
+	-- 	return group.visible;
+	-- end
+
 	local visible = app.MODE_DEBUG;
 
 	-- Determine if this user can enter the instance or acquire the item.
@@ -10311,16 +10409,20 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 
-			-- TODO: ideally the recursive update would outside of the top group, and we only need to process the top group
+			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
+
+			-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
 			-- if everything inside is hidden, otherwise it would obviously need to be shown.
 			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
-			-- otherwise filtered groups
+			-- otherwise filtered groups... maybe that's good...?
 
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
 
 				-- Update the subgroups recursively...
 				visible = UpdateGroups(group, group.g);
+
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
 
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
@@ -10367,6 +10469,8 @@ UpdateGroup = function(parent, group)
 
 	-- Set the visibility
 	group.visible = visible;
+	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
+	-- if LOG then app.DEBUG_LOG = nil; end
 	return visible;
 end
 UpdateGroups = function(parent, g)
@@ -10408,6 +10512,7 @@ local function UpdateParentProgress(group)
 		end
 	end
 end
+app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
 
@@ -12899,6 +13004,7 @@ local function UpdateWindow(self, force, got)
 				(force or (self.shouldFullRefresh and got)) then
 				self.data.progress = 0;
 				self.data.total = 0;
+				-- app._Updated = time();
 				UpdateGroups(self.data, self.data.g);
 			end
 			ProcessGroup(self.rowData, self.data);
@@ -14269,14 +14375,12 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
-		local function RefreshLocationCoroutine()
-			-- While the addon is not yet loaded or the player is in combat, wait for combat to end.
-			while InCombatLockdown() do coroutine.yield(); end
+		local function RefreshLocation()
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
-			while not mapID or mapID < 0 do
-				coroutine.yield();
-				mapID = app.GetCurrentMapID();
+			if not mapID or mapID < 0 then
+				AfterCombatCallback(RefreshLocation);
+				return;
 			end
 			OpenMiniList(mapID);
 		end
@@ -14289,8 +14393,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		local function LocationTrigger()
-			if app.InWorld and app.IsReady and app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
+				AfterCombatCallback(RefreshLocation);
 			end
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
@@ -16455,10 +16559,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		end
 
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
@@ -16471,7 +16572,7 @@ app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
 	local _,event = CombatLogGetCurrentEventInfo();
 	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
-		RefreshQuestCompletionState()
+		app.RefreshQuestInfo();
 	end
 end
 -- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
@@ -16483,7 +16584,7 @@ app.events.LOOT_OPENED = function()
 		if(type == "GameObject") then
 		  local text = GameTooltipTextLeft1:GetText()
 		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
-		  RefreshQuestCompletionState()
+		  app.RefreshQuestInfo();
 	   end
 	end
 end
@@ -18009,7 +18110,6 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		app:RegisterEvent("QUEST_ACCEPTED");
-		RefreshSaves();
 
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
@@ -18032,6 +18132,8 @@ app.events.VARIABLES_LOADED = function()
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 		-- print("ATT is Ready!");
+		
+		RefreshSaves();
 
 		if needRefresh then
 			-- collection refresh includes data refresh
@@ -18146,13 +18248,15 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
-	RefreshQuestCompletionState()
+	-- print("PLAYER_LEVEL_UP")
+	app.RefreshQuestInfo();
 	app.Level = newLevel;
 	app:UpdateWindows();
 	app.Settings:Refresh();
 end
 app.events.BOSS_KILL = function(id, name, ...)
-	RefreshQuestCompletionState()
+	-- print("BOSS_KILL")
+	app.RefreshQuestInfo();
 	-- This is so that when you kill a boss, you can trigger
 	-- an automatic update of your saved instance cache.
 	-- (It does lag a little, but you can disable this if you want.)
@@ -18169,12 +18273,13 @@ app.events.LOOT_CLOSED = function()
 	RequestRaidInfo();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
-	-- We got new information, not refresh the saves. :D
+	-- We got new information, now refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
-	RefreshQuestCompletionState()
+	-- print("HEIRLOOMS_UPDATED")
+	app.RefreshQuestInfo();
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
@@ -18187,13 +18292,16 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	RefreshQuestCompletionState(questID);
+	-- print("QUEST_TURNED_IN")
+	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_LOG_UPDATE")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_FINISHED = function()
-	RefreshQuestCompletionState();
+	-- print("QUEST_FINISHED")
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
@@ -18239,6 +18347,19 @@ app.events.PET_BATTLE_CLOSE = function(...)
 end
 app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
+end
+app.events.PLAYER_REGEN_ENABLED = function()
+	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
+	-- print("PLAYER_REGEN_ENABLED:Begin")
+	if app.__combatcallbacks and #app.__combatcallbacks > 0 then
+		local i = #app.__combatcallbacks;
+		for c=i,1,-1 do
+			-- print("PLAYER_REGEN_ENABLED:",c)
+			app.__combatcallbacks[c]();
+			app.__combatcallbacks[c] = nil;
+		end
+	end
+	-- print("PLAYER_REGEN_ENABLED:End")
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then

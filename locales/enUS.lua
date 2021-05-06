@@ -758,6 +758,13 @@ app.L = {
 		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
 		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
 
+	-- Custom Icons for Holidays
+	["HOLIDAY_ID_ICONS"] = {
+		-- Examples --
+		-- [HOLIDAY_ID] = app.asset("PATH"),	-- Holiday Name
+		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
+		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
+
 		-- "Legit" Holidays
 		-- [235442] = app.asset("TODO"),	-- Brewfest
 		-- [235445] = app.asset("TODO"),	-- Children's Week
@@ -4966,7 +4973,7 @@ app.L = {
 		[307330] = "Captain's Footlocker",
 		[307748] = "Venture Co. Letter",
 		[309498] = "Armor Stand",
-		[310709] = "Waterlogged Chest",											-- New Chest in Elywynn since 8.1
+		[310709] = "Waterlogged Chest",											-- New Chest in Elwynn since 8.1
 		[311155] = "Ancient Tablet",
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",												-- Loose Parts (Horde Won)

@@ -2084,6 +2084,11 @@ _.HiddenQuestTriggers =
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 		q(43507), 	-- Priest Order Hall - Looting the priest altar
 		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
+		q(42328),	-- Priest Order Hall - Tracking Quest: Lumenstone 1
+		q(42329),	-- Priest Order Hall - Tracking Quest: Lumenstone 2
+		q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
+		q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
+		q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
@@ -2169,6 +2174,7 @@ _.HiddenQuestTriggers =
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
 		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
+		q(43676),	-- Hidden Appearance Unlocked (triggered after learning hidden appearance for Ulthalesh on affliction lock)
 
 		--	Professions
 		--	Archaeology

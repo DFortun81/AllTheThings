@@ -4322,7 +4322,7 @@ _.NeverImplemented =
 			i(183432),	--
 			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
-			i(117994),	-- Rename karabor honor guard axe
+			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
