@@ -4187,18 +4187,19 @@ local function SearchForLink(link)
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("s", sourceID);
 					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					_ = SearchForField("itemID", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemID", itemID);
+					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
 				end
 
 				-- Merge together the cost search results as well.
-				local searchResultsAsCost = SearchForField("itemIDAsCost", GetGroupItemIDWithModID(nil, itemID, modID)) or SearchForField("itemIDAsCost", itemID);
+				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
 				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
@@ -7664,7 +7665,7 @@ local itemFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
@@ -7756,9 +7757,12 @@ local itemFields = {
 	end,
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		local modItemID = GetGroupItemIDWithModID(t);
-		rawset(t, "modItemID", modItemID);
-		return modItemID;
+		if t.modID and t.modID > 0 then
+			rawset(t, "modItemID", t.itemID + (t.modID / 100));
+		else
+			rawset(t, "modItemID", t.itemID);
+		end		
+		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["collectible"] = function(t)
@@ -7771,7 +7775,7 @@ local itemFields = {
 		if t.parent and t.parent.saved then return false; end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -7819,7 +7823,7 @@ local itemFields = {
 		-- if LOG then print("Logging Costs for",LOG) end
 		local id, results;
 		-- Search by modItemID if possible for accuracy
-		if t.modItemID then
+		if t.modItemID and t.modItemID ~= t.itemID then
 			id = t.modItemID;
 			results = app.SearchForField("itemIDAsCost", id);
 		end
@@ -14420,7 +14424,6 @@ app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			-- self.doesOwnUpdate = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
@@ -16551,10 +16554,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		end
 
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
