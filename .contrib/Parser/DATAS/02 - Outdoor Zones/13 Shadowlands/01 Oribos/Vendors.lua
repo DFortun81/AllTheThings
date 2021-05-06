@@ -199,7 +199,7 @@ _.Zones =
 					},
 				}),
 				n(156769, {	-- Keeper Ta'hult <Pet Vendor>
-					["coord"] = { 64.9, 67.3, 1670 },
+					["coord"] = { 64.9, 67.3, ORIBOS },
 					["g"] = {
 					--	TODO: verify costs if these make it to live
 						i(185919, {	-- Flawless Amethyst Baubleworm

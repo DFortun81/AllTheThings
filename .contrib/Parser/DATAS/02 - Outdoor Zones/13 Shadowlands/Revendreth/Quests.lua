@@ -878,24 +878,24 @@ _.Zones =
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 				})),
-				
+
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
 				q(63655, {	-- "NYI Medallion of Wrath"
 				--	TODO: this quest may change, its name/contents are clearly a WIP
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
 					["provider"] = { "n", 178413 },	-- Prince Renathal
-					["coord"] = { 23.0, 45.8, 1525 },	-- Revendreth
+					["coord"] = { 23.0, 45.8, REVENDRETH },
 				}),
 				q(63672, {	-- A Cry From the Heart
 				--	TODO: 'nyi medallion of wrath' is still not fully implemented, but w/e that quest winds up being may eventually be the true SQ.  until then, the previous quest is enough to continue the venthyr campaign
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-					["coord"] = { 63.4, 24.6, 1961 },	-- Korthia
+					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
 				q(63579, {	-- A Paladin's Soul
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
 					["provider"] = { "n", 179356 },	-- Thenios
-					["coord"] = { 62.9, 25.3, 1961 },	-- Korthia
+					["coord"] = { 62.9, 25.3, KORTHIA },
 					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
 						1968,	-- TG107_Floor
 						1967,	-- TG106_Floor
@@ -954,7 +954,7 @@ _.Zones =
 						63649,	-- Spy vs Spy
 					},
 					["provider"] = { "n", 177644 },	-- Prince Renathal
-					["coord"] = { 25.0, 27.9, 1525 },	-- Revendreth
+					["coord"] = { 25.0, 27.9, REVENDRETH },
 				}),
 				q(63589, {	-- Directing Dedication
 					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
@@ -994,7 +994,7 @@ _.Zones =
 				q(63648, {	-- Nal'ragas
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
-					["coord"] = { 36.0, 22.4, 1525 },
+					["coord"] = { 36.0, 22.4, REVENDRETH },
 				}),
 				q(63680, {	-- Out On the Edge
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
@@ -1019,7 +1019,7 @@ _.Zones =
 				q(63649, {	-- Spy vs Spy
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177637 },	-- Baroness Vashj
-					["coord"] = { 36.0, 22.4, 1525 },
+					["coord"] = { 36.0, 22.4, REVENDRETH },
 				}),
 				q(63581, {	-- Step Into the Light
 					["sourceQuests"] = { 63580 },	-- Wounded Memories
@@ -1057,7 +1057,7 @@ _.Zones =
 				q(63654, {	-- The Nathrezim
 					["sourceQuests"] = { 63653 },	-- The Power of a Crown
 					["provider"] = { "n", 178337 },	-- The Stonewright
-					["coord"] = { 25.2, 45.1, 1525 },	-- Revendreth
+					["coord"] = { 25.2, 45.1, REVENDRETH },
 				}),
 				q(63653, {	-- The Power of a Crown
 					["sourceQuests"] = {
@@ -1077,7 +1077,7 @@ _.Zones =
 				q(63647, {	-- The Unseen Guests
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
 					["provider"] = { "n", 165866 },	-- The Stonewright
-					["coord"] = { 34.3, 22.0, 1525 },
+					["coord"] = { 34.3, 22.0, REVENDRETH },
 				}),
 				q(63590, {	-- The Vesper Rings
 					["sourceQuests"] = {
@@ -1119,7 +1119,7 @@ _.Zones =
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 52.8, 68.6, MALDRAXXUS },
 				}),
-				
+
 
 
 				-- Bonus Objectives

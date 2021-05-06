@@ -81,6 +81,7 @@ THE_MAW = 1543;
 SHADOWLANDS = 1550;
 ARDENWEALD = 1565;
 ORIBOS = 1670;
+KORTHIA = 1961;
 
 -- Helper Tables
 local DifficultyDB = {

@@ -9,7 +9,7 @@ _.Zones =
 			n(VENDORS, {
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				--	TODO: move to korthia if we wind up separating maps
-					["coord"] = { 63.5, 23.3, 1961 },	-- Korthia
+					["coord"] = { 63.5, 23.3, KORTHIA },
 					["g"] = {
 						i(186453),	-- Vault Anima Tracker
 						i(186647),	-- Amber Shardhide (MOUNT!)

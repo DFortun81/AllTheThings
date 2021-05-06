@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1550, {	-- Shadowlands
+	m(SHADOWLANDS, {
 		m(THE_MAW, {	-- The Maw
 			n(-10083, {	-- Covenant Assaults
 			--	PTR - Assault quests

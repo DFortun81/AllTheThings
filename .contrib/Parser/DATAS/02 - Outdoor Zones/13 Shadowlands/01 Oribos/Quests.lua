@@ -742,13 +742,13 @@ _.Zones =
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
 					["lvl"] = { 60 },
 				}),
-				
-				
+
+
 				-- PTR - TODO: move into alphabetized quests once we know there aren't changes/everything has made it to live.  keeping them in one place for now for ease of culling any data if necessary
 				q(63856, {	-- A Gathering of Covenants
 					["sourceQuests"] = { 63576 },	-- The First Move
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
 				}),
 				q(64007, {	-- Charge of the Covenants
 					["sourceQuests"] = { 63665 },	-- Opening to Oribos
@@ -758,17 +758,17 @@ _.Zones =
 				q(63661, {	-- Link to the Maw
 					["sourceQuests"] = { 63660 },	-- Opening the Maw
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
 				}),
 				q(63660, {	-- Opening the Maw
 					["sourceQuests"] = { 63639 },	-- Report to Oribos
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.1, 69.5, 1670 },	-- Ring of Fates
+					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
 				}),
 				q(63578, {	-- The Battle of Ardenweald
 					["sourceQuests"] = { 63857 },	-- Voices of the Eternal
 					["provider"] = { "n", 177141 },	-- Lady Moonberry
-					["coord"] = { 40.9, 66.2, 1670 },	-- Ring of Fates
+					["coord"] = { 40.9, 66.2, ORIBOS },	-- Ring of Fates
 					["maps"] = { 2005 },	-- Ardenweald (scenario)
 					["g"] = {	-- TODO: add additional rewards
 						i(179498),	-- Faesworn Barb
