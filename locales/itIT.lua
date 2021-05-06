@@ -2819,7 +2819,7 @@ for key,value in pairs({
 	--TODO: [316443] = "Xal'atath, Blade of the Black Empire",	-- Xal'atath, Blade of the Black Empire
 	[316788] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[316791] = "Falò dell'Alleanza",	-- Alliance Bonfire
-	--TODO: [316793] = "Alliance Bonfire",	-- Alliance Bonfire
+	[316793] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[316795] = "Falò dell'Orda",	-- Horde Bonfire
 	[316796] = "Falò dell'Orda",	-- Horde Bonfire
 	[316801] = "Falò dell'Orda",	-- Horde Bonfire
