@@ -3839,6 +3839,7 @@ local function CacheField(group, field, value)
 end
 -- These are the fields we store.
 fieldCache["achievementID"] = {};
+fieldCache["artifactID"] = {};
 fieldCache["azeriteEssenceID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
@@ -3869,6 +3870,9 @@ fieldConverters = {
 	end,
 	["altAchID"] = function(group, value)
 		CacheField(group, "achievementID", value);
+	end,
+	["artifactID"] = function(group, value)
+		CacheField(group, "artifactID", value);
 	end,
 	["azeriteEssenceID"] = function(group, value)
 		CacheField(group, "azeriteEssenceID", value);
@@ -5991,12 +5995,14 @@ local fields = {
 		end
 	end,
 	["s"] = function(t)
+		-- Return the calculated 's' field if existing
+		if t._s then return t._s; end
 		local s = t.silentLink;
 		if s then
 			s = app.GetSourceID(s);
 			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
-				rawset(t, "s", s);
+				rawset(t, "_s", s);
 				if ATTAccountWideData.Sources[s] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
 					-- print("Saved Known Source",s)
 					ATTAccountWideData.Sources[s] = 1;
@@ -11766,17 +11772,17 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text);
+			local s, dressable = GetSourceID(text) or (data.artifactID and data.s);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
-				if not data.s or data.s < 1 or data.s ~= s then
+				if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
 					print("SourceID Update",data.text,data.s,"=>",s);
 					data.s = s;
 					if data.collected then
 						data.parent.progress = data.parent.progress + 1;
 					end
-					local item = AllTheThingsHarvestItems[data.itemID];
+					local item = AllTheThingsHarvestItems[data.itemID or data.silentItemID];
 					if not item then
 						item = {};
 					end
@@ -11787,6 +11793,13 @@ local function SetRowData(self, row, data)
 							item.bonuses = bonuses;
 						end
 						bonuses[data.bonusID] = s;
+					elseif data.artifactID then
+						local artifacts = item.artifacts;
+						if not artifacts then
+							artifacts = {};
+							item.artifacts = artifacts;
+						end
+						artifacts[data.artifactID] = s;
 					else
 						local mods = item.mods;
 						if not mods then
@@ -11796,7 +11809,7 @@ local function SetRowData(self, row, data)
 						mods[data.modID or 0] = s;
 					end
 					-- print("NEW SOURCE ID!",text,s);
-					AllTheThingsHarvestItems[data.itemID] = item;
+					AllTheThingsHarvestItems[data.itemID or data.silentItemID] = item;
 				end
 			else
 				--print("NARP", text);
@@ -13741,6 +13754,14 @@ function app:GetDataCache()
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 
+		-- Pull all artifacts and get their relative itemID cached
+		-- TODO: remove this if artifacts have their sourceID in each raw artifact group
+		for artifactID,groups in pairs(fieldCache["artifactID"]) do
+			for _,group in pairs(groups) do
+				_ = group.silentItemID;
+			end
+		end
+
 		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	end
 	app.GetDataCache = function()
@@ -14521,8 +14542,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 				self.forcedDebug = true;
 				app.Settings:ToggleDebugMode();
 			end
-			-- clear any previously saved harvest data
-			AllTheThingsHarvestItems = {};
+
 			local db = {};
 			db.g = {};
 			db.text = "Harvesting All Items";
@@ -14582,11 +14602,20 @@ app:GetWindow("Harvester", UIParent, function(self)
 			-- remove the custom harvest flags
 			app.customHarvestMin = nil;
 			app.customHarvestMax = nil;
-			--[[
+			-- add artifacts
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
-				tinsert(db.g, setmetatable({visible = true, artifactID = tonumber(artifactID)}, app.BaseArtifact));
+				for _,group in pairs(groups) do
+					if not rawget(group, "s") then
+						tinsert(db.g, setmetatable({
+							visible = true,
+							artifactID = tonumber(artifactID),
+							silentItemID = group.silentItemID,
+							isOffHand = group.isOffHand,
+							reSource = true,
+						}, app.BaseArtifact));
+					end
+				end
 			end
-			]]--
 			self.data = db;
 			BuildGroups(db, db.g);
 			self.ScrollBar:SetValue(1);
@@ -17678,10 +17707,14 @@ SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	if cmd then
-		local min,max = strsplit(",",cmd);
+		local min,max,reset = strsplit(",",cmd);
 		app.customHarvestMin = tonumber(min);
 		app.customHarvestMax = tonumber(max);
 		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
+		if reset then
+			AllTheThingsHarvestItems = {};
+			app.print("Harvest Data Reset!");
+		end
 	end
 	app:GetWindow("Harvester"):Toggle();
 end
