@@ -758,13 +758,6 @@ app.L = {
 		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
 		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
 
-	-- Custom Icons for Holidays
-	["HOLIDAY_ID_ICONS"] = {
-		-- Examples --
-		-- [HOLIDAY_ID] = app.asset("PATH"),	-- Holiday Name
-		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
-		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
-
 		-- "Legit" Holidays
 		-- [235442] = app.asset("TODO"),	-- Brewfest
 		-- [235445] = app.asset("TODO"),	-- Children's Week
