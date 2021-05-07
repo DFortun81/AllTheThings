@@ -826,7 +826,6 @@ GameTooltipModel.TrySetModel = function(self, reference)
 		if s then
 			if reference.artifactID then
 				-- Okay, fine.
-				-- TODO: This doesn't work for variants
 			elseif reference.g and #reference.g > 0 then
 				local header = reference.g[1];
 				if header and header.headerID and header.headerID <= -5200 and header.headerID >= -5206 then
@@ -5887,6 +5886,7 @@ local artifactItemIDs = {
 	[841] = 133755, -- Underlight Angler [Base Skin]
 	[988] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
 	[989] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
+	[1] = {},		-- Off-Hand ItemIDs
 };
 local fields = {
 	["key"] = function(t)
@@ -5909,20 +5909,22 @@ local fields = {
 		return app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		-- _cache = t.s;
-		-- if _cache and ATTAccountWideData.Sources[_cache] then print("collected via sourceID",t.artifactID,_cache) return 1; end
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
+		if not GetRelativeField(t, "nmc", true) and t.info[5] then
 			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
 	end,
 	["text"] = function(t)
-		return t.parent and t.parent.itemID and t.variantText or t.appearanceText;
+		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
+		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
+			return t.variantText;
+		end
+		return t.appearanceText;
 	end,
 	["title"] = function(t)
-		return t.parent and t.parent.itemID and t.appearanceText or t.variantText;
+		return t.variantText;
 	end,
 	["variantText"] = function(t)
 		return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
@@ -5956,28 +5958,52 @@ local fields = {
 	end,
 	["silentLink"] = function(t)
 		local itemID = t.silentItemID;
-		if itemID then return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))); end
+		if itemID then
+			-- 1 -> Off-Hand Appearance
+			-- 2 -> Main-Hand Appearance
+			-- return select(2, GetItemInfo(string.format("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
+			-- local link = string.format("item:%d::::::::%d:::11::%d:8:%d:", itemID, app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			-- print("Artifact link",t.artifactID,itemID,link);
+			return select(2, GetItemInfo(string.format("item:%d:::::::::::11::%d:8:%d:", itemID, t.isOffHand and 1 or 2, t.artifactID)));
+		end
 	end,
 	["silentItemID"] = function(t)
-		local itemID = artifactItemIDs[t.artifactID];
+		local itemID;
+		if t.isOffHand then
+			itemID = artifactItemIDs[1][t.artifactID];
+		else
+			itemID = artifactItemIDs[t.artifactID];
+		end
 		if itemID then
 			return itemID;
 		elseif t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
-			return GetRelativeValue(t.parent, "itemID");
+			itemID = GetRelativeValue(t.parent, "itemID");
+			-- Store the relative ItemID in the artifactItemID cache so it can be referenced accurately by artifacts sourced in specific locations
+			if itemID then
+				if t.isOffHand then
+					artifactItemIDs[1][t.artifactID] = itemID;
+				else
+					artifactItemIDs[t.artifactID] = itemID;
+				end
+				-- print("Artifact ItemID Cached",t.artifactID,t.isOffHand,itemID)
+			end
+			return itemID;
 		end
 	end,
 	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-		return rawget(t, "modItemID");
-	end,
+	-- ["modItemID"] = function(t)
+	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+	-- 	return rawget(t, "modItemID");
+	-- end,
 	["s"] = function(t)
 		local s = t.silentLink;
 		if s then
-			s = app.GetSourceID(s, t.silentItemID);
+			s = app.GetSourceID(s);
+			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
 				rawset(t, "s", s);
-				if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+				if ATTAccountWideData.Sources[s] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+					-- print("Saved Known Source",s)
 					ATTAccountWideData.Sources[s] = 1;
 				end
 				return s;

@@ -1521,6 +1521,7 @@ namespace ATT
                     case "ilvl":
                     case "q":
                     case "r":
+                    case "isOffHand":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;

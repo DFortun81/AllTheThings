@@ -1822,6 +1822,7 @@ namespace ATT
                 case "isFlying":
                 case "isGround":
                 case "isJumping":
+                case "isOffHand":
                 case "isRaid":
                 case "isToy":
                 case "isWorldQuest":

@@ -156,7 +156,7 @@ _.GearSets =
 -----------------------------------------------------
 {
 	n(-10067, {	-- Artifacts
-		["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\nUnlocks are shown based off your current hero and may or may not reflect whether you actually unlocked them on that class.\n\n",
+		["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 		["groups"] = {
 			cl(WARRIOR, {
 				i(128910, {	-- Strom'kar, the Warbreaker
@@ -233,14 +233,14 @@ _.GearSets =
 							i(140660),	-- Haft of the God-King
 							i(140658),	-- Skull of Nithogg
 							i(140659),	-- Skull of Shar'thos
-							artifact(964),	-- Find Hidden Artifact Skin
 						}),
+						artifact(964),	-- Find Hidden Artifact Skin
 						artifact(962),	-- Complete 30 Legion Dungeons Hidden
 						artifact(961),	-- Complete 200 WQ Hidden
 						artifact(963),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(134553, {	-- Warswords of the Valarjar [Off Hand]
+				i(134553, bubbleDown({ ["isOffHand"] = 1 }, {	-- Warswords of the Valarjar [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01", {
 						artifact(296),	-- Standard
 						artifact(654),	-- Recover one of the Pillars
@@ -276,14 +276,14 @@ _.GearSets =
 							i(140660),	-- Haft of the God-King
 							i(140658),	-- Skull of Nithogg
 							i(140659),	-- Skull of Shar'thos
-							artifact(964),	-- Find Hidden Artifact Skin
 						}),
+						artifact(964),	-- Find Hidden Artifact Skin
 						artifact(962),	-- Complete 30 Legion Dungeons Hidden
 						artifact(961),	-- Complete 200 WQ Hidden
 						artifact(963),	-- Kill 1,000 Players Hidden
 					}),
-				}),
-				i(128289, {	-- Scale of the Earth-Warder
+				})),
+				i(128289, bubbleDown({ ["isOffHand"] = 1 }, {	-- Scale of the Earth-Warder
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactmagnar_d_01", {
 						artifact(66),	-- Standard
 						artifact(147),	-- Recover one of the Pillars
@@ -320,7 +320,7 @@ _.GearSets =
 						artifact(158),	-- Complete 200 WQ Hidden
 						artifact(160),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128288, {	-- Scaleshard
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactmagnar_d_01", {
 						artifact(66),	-- Standard
@@ -437,7 +437,7 @@ _.GearSets =
 						artifact(980),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128866, {	-- Truthguard
+				i(128866, bubbleDown({ ["isOffHand"] = 1 }, {	-- Truthguard
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_01", {
 						artifact(291),	-- Standard
 						artifact(704),	-- Recover one of the Pillars
@@ -474,7 +474,7 @@ _.GearSets =
 						artifact(721),	-- Complete 200 WQ Hidden
 						artifact(722),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128867, {	-- Oathseeker
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactnorgannon_d_01", {
 						artifact(291),	-- Standard
@@ -669,7 +669,7 @@ _.GearSets =
 						artifact(612),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128869, {	-- The Kingslayers [Off Hand]
+				i(128869, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Kingslayers [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactgarona_d_01", {
 						artifact(228),	-- Standard
 						artifact(115),	-- Recover one of the Pillars
@@ -706,7 +706,7 @@ _.GearSets =
 						artifact(609),	-- Complete 200 WQ Hidden
 						artifact(612),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128872, {	-- The Dreadblades [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactskywall_d_01", {
 						artifact(692),	-- Standard
@@ -745,7 +745,7 @@ _.GearSets =
 						artifact(884),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(134552, {	-- The Dreadblades [Off Hand]
+				i(134552, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Dreadblades [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactskywall_d_01", {
 						artifact(692),	-- Standard
 						artifact(693),	-- Recover one of the Pillars
@@ -782,7 +782,7 @@ _.GearSets =
 						artifact(883),	-- Complete 200 WQ Hidden
 						artifact(884),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128476, {	-- Fangs of the Devourer [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfangs_d_01", {
 						artifact(67),	-- Standard
@@ -821,7 +821,7 @@ _.GearSets =
 						artifact(892),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128479, {	-- Fangs of the Devourer [Off Hand]
+				i(128479, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fangs of the Devourer [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfangs_d_01", {
 						artifact(67),	-- Standard
 						artifact(68),	-- Recover one of the Pillars
@@ -858,7 +858,7 @@ _.GearSets =
 						artifact(889),	-- Complete 200 WQ Hidden
 						artifact(892),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(PRIEST, {
 				i(128868, {	-- Light's Wrath
@@ -934,8 +934,8 @@ _.GearSets =
 						i(139568, {	-- Staff of the Lightborn
 							i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 							i(140656),	-- Rod of the Ascended - Priest Artifact Appearance item
-							artifact(910),	-- Find Hidden Artifact Skin
 						}),
+						artifact(910),	-- Find Hidden Artifact Skin
 						artifact(909),	-- Complete 30 Legion Dungeons Hidden
 						artifact(911),	-- Complete 200 WQ Hidden
 						artifact(912),	-- Kill 1,000 Players Hidden
@@ -979,7 +979,7 @@ _.GearSets =
 						artifact(952),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(133958, {	-- Secrets of the Void
+				i(133958, bubbleDown({ ["isOffHand"] = 1 }, {	-- Secrets of the Void
 					BaseAppearance("Interface\\Icons\\inv_offhand_1h_artifactcthun_d_01", {
 						artifact(119),	-- Standard
 						artifact(245),	-- Recover one of the Pillars
@@ -1016,7 +1016,7 @@ _.GearSets =
 						artifact(951),	-- Complete 200 WQ Hidden
 						artifact(952),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(DEATHKNIGHT, {
 				i(128402, {	-- Maw of the Damned
@@ -1057,7 +1057,7 @@ _.GearSets =
 						artifact(924),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128292, {	-- Blades of the Fallen Prince
+				i(128292, {	-- Blades of the Fallen Prince [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01", {
 						artifact(111),	-- Standard
 						artifact(374),	-- Recover one of the Pillars
@@ -1095,7 +1095,7 @@ _.GearSets =
 						artifact(872),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128293, {	-- Blades of the Fallen Prince
+				i(128293, bubbleDown({ ["isOffHand"] = 1 }, {	-- Blades of the Fallen Prince [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01", {
 						artifact(111),	-- Standard
 						artifact(374),	-- Recover one of the Pillars
@@ -1132,7 +1132,7 @@ _.GearSets =
 						artifact(871),	-- Complete 200 WQ Hidden
 						artifact(872),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128403, {	-- Apocalypse
 					BaseAppearance("Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_01", {
 						artifact(110),	-- Standard
@@ -1211,7 +1211,7 @@ _.GearSets =
 						artifact(877),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128873, {	-- Fury of the Stonemother
+				i(128873, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fury of the Stonemother
 					BaseAppearance("Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01", {
 						artifact(117),	-- Standard
 						artifact(297),	-- Recover one of the Pillars
@@ -1248,7 +1248,7 @@ _.GearSets =
 						artifact(879),	-- Complete 200 WQ Hidden
 						artifact(877),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128935, {	-- The Fist of Ra-den
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactstormfist_d_01", {
 						artifact(113),	-- Standard
@@ -1287,7 +1287,7 @@ _.GearSets =
 						artifact(897),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128936, {	-- The Highkeeper's Ward
+				i(128936, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Highkeeper's Ward
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactstormfist_d_01", {
 						artifact(113),	-- Standard
 						artifact(673),	-- Recover one of the Pillars
@@ -1324,7 +1324,7 @@ _.GearSets =
 						artifact(899),	-- Complete 200 WQ Hidden
 						artifact(897),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128911, {	-- Sharas'dal, Scepter of Tides
 					BaseAppearance("Interface\\Icons\\inv_mace_1h_artifactazshara_d_01", {
 						artifact(116),	-- Standard
@@ -1363,7 +1363,7 @@ _.GearSets =
 						artifact(928),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128934, {	-- Shield of the Sea Queen
+				i(128934, bubbleDown({ ["isOffHand"] = 1 }, {	-- Shield of the Sea Queen
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactazshara_d_01", {
 						artifact(116),	-- Standard
 						artifact(772),	-- Recover one of the Pillars
@@ -1400,7 +1400,7 @@ _.GearSets =
 						artifact(927),	-- Complete 200 WQ Hidden
 						artifact(928),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(MAGE, {
 				i(128862, {	-- Ebonchill
@@ -1479,7 +1479,7 @@ _.GearSets =
 						artifact(896),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(133959, {	-- Heart of the Phoenix
+				i(133959, bubbleDown({ ["isOffHand"] = 1 }, {	-- Heart of the Phoenix
 					BaseAppearance("Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_01", {
 						artifact(124),	-- Standard
 						artifact(490),	-- Recover one of the Pillars
@@ -1516,7 +1516,7 @@ _.GearSets =
 						artifact(895),	-- Complete 200 WQ Hidden
 						artifact(896),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(127857, {	-- Aluneth
 					BaseAppearance("Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_01", {
 						artifact(126),	-- Standard
@@ -1671,7 +1671,7 @@ _.GearSets =
 						artifact(940),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(137246, {	-- Spine of Thal'kiel
+				i(137246, bubbleDown({ ["isOffHand"] = 1 }, {	-- Spine of Thal'kiel
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_01", {
 						artifact(811),	-- Standard
 						artifact(810),	-- Recover one of the Pillars
@@ -1708,7 +1708,7 @@ _.GearSets =
 						artifact(939),	-- Complete 200 WQ Hidden
 						artifact(940),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(MONK, {
 				i(128937, {	-- Sheilun, Staff of the Mists
@@ -1825,7 +1825,7 @@ _.GearSets =
 						artifact(542),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(133948, {	-- Fists of the Heavens [Off Hand]
+				i(133948, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fists of the Heavens [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactskywall_d_01", {
 						artifact(290),	-- Standard
 						artifact(528),	-- Recover one of the Pillars
@@ -1862,7 +1862,7 @@ _.GearSets =
 						artifact(541),	-- Complete 200 WQ Hidden
 						artifact(542),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(DRUID, {
 				i(128858, {	-- Scythe of Elune
@@ -1900,8 +1900,8 @@ _.GearSets =
 						i(139551, {	-- The Sunbloom
 							i(140652),	-- Seed of Solar Fire
 							i(140653),	-- Pure Drop of Shaladrassil's Sap
-							artifact(425),	-- Find Hidden Artifact Skin
 						}),
+						artifact(425),	-- Find Hidden Artifact Skin
 						artifact(423),	-- Complete 30 Legion Dungeons Hidden
 						artifact(424),	-- Complete 200 WQ Hidden
 						artifact(410),	-- Kill 1,000 Players Hidden
@@ -2005,7 +2005,7 @@ _.GearSets =
 						artifact(833),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128859, {	-- Fangs of Ashamane [Off Hand]
+				i(128859, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fangs of Ashamane [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01", {
 						artifact(426, {	-- Standard Troll
 							["races"] = { TROLL, ZANDALARI },
@@ -2063,7 +2063,7 @@ _.GearSets =
 						artifact(832),	-- Complete 200 WQ Hidden
 						artifact(833),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128821, {	-- Claws of Ursoc [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01", {
 						artifact(265, {	-- Standard Troll
@@ -2113,7 +2113,7 @@ _.GearSets =
 						artifact(285),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128822, {	-- Claws of Ursoc [Offhand]
+				i(128822, bubbleDown({ ["isOffHand"] = 1 }, {	-- Claws of Ursoc [Offhand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01", {
 						artifact(265, {	-- Standard Troll
 							["races"] = { TROLL, ZANDALARI },
@@ -2161,7 +2161,7 @@ _.GearSets =
 						artifact(284),	-- Complete 200 WQ Hidden
 						artifact(285),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			cl(DEMONHUNTER, {
 				i(127829, {	-- Twinblades of the Deceiver [Main Hand]
@@ -2202,7 +2202,7 @@ _.GearSets =
 						artifact(984),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(127830, {	-- Twinblades of the Deceiver [Off Hand]
+				i(127830, bubbleDown({ ["isOffHand"] = 1 }, {	-- Twinblades of the Deceiver [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_01", {
 						artifact(26),	-- Standard
 						artifact(25),	-- Recover one of the Pillars
@@ -2239,7 +2239,7 @@ _.GearSets =
 						artifact(983),	-- Complete 200 WQ Hidden
 						artifact(984),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 				i(128832, {	-- Aldrachi Warblades [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01", {
 						artifact(554),	-- Standard
@@ -2278,7 +2278,7 @@ _.GearSets =
 						artifact(573),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128831, {	-- Aldrachi Warblades [Off Hand]
+				i(128831, bubbleDown({ ["isOffHand"] = 1 }, {	-- Aldrachi Warblades [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01", {
 						artifact(554),	-- Standard
 						artifact(555),	-- Recover one of the Pillars
@@ -2315,7 +2315,7 @@ _.GearSets =
 						artifact(572),	-- Complete 200 WQ Hidden
 						artifact(573),	-- Kill 1,000 Players Hidden
 					}),
-				}),
+				})),
 			}),
 			prof(FISHING, {
 				i(133755, {	-- Underlight Angler
