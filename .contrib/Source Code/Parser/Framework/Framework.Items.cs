@@ -320,6 +320,7 @@ namespace ATT
                     case "class":
                     case "subclass":
                     case "inventoryType":
+                    case "isOffHand":
                     case "factionID":
                     case "mountID":
                     case "speciesID":

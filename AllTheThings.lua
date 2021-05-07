@@ -5990,11 +5990,6 @@ local fields = {
 			return itemID;
 		end
 	end,
-	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-	-- ["modItemID"] = function(t)
-	-- 	rawset(t, "modItemID", GetGroupItemIDWithModID(t));
-	-- 	return rawget(t, "modItemID");
-	-- end,
 	["s"] = function(t)
 		local s = t.silentLink;
 		if s then
