@@ -770,7 +770,7 @@ _.ExpansionFeatures =
 						["coord"] = { 49.4, 41.2, 627 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-						["sourceQuest"] = 41920,	-- A Matter of Finesse
+						["sourceQuest"] = 41921,	-- Closing In
 					}),
 					q(37494, {	-- Under Cover of Darkness
 						["sourceQuests"] = { 37448 },	-- A Simple Plan

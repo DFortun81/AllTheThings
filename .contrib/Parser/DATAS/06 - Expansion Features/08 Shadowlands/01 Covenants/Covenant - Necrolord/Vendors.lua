@@ -755,12 +755,6 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(164588, {	-- Shinbone Slim <Food and Attire>
-						["coord"] = { 47.0, 48.8, MALDRAXXUS },
-						["g"] = {
-							i(184036),	-- Dundae's Hat
-						},
-					}),
 					n(175311, {	-- Slayer Araya <Covenant Armor>
 						["coord"] = { 57.1, 48.3, 1698 },
 						["g"] = {

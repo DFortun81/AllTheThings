@@ -4125,6 +4125,7 @@ _.HiddenQuestTriggers =
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
+		q(62758),	-- triggered after crafting Dundae's Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
 		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
@@ -4143,6 +4144,7 @@ _.HiddenQuestTriggers =
 		q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
 		q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
 		q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
+		q(62468),	-- triggered after crafting Vestigial Wings at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
@@ -4152,6 +4154,7 @@ _.HiddenQuestTriggers =
 		q(57859),	-- Triggered after recruiting Guillotine
 		q(57610),	-- Triggered after recruiting Iron Phillip
 		q(57578),	-- Triggered after recruiting Marz
+		q(57858),	-- Triggered after recruiting Miru
 		q(57575),	-- Triggered after recruiting Naxx
 		q(57603),	-- Triggered after recruiting Neena
 		q(57606),	-- Triggered after recruiting Roseboil
@@ -4176,6 +4179,7 @@ _.HiddenQuestTriggers =
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
+		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

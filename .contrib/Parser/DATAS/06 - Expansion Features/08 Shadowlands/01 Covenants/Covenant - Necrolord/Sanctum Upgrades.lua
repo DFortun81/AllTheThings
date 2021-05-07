@@ -114,7 +114,8 @@ _.ExpansionFeatures =
 									["coord"] = { 24.2, 38.6, MALDRAXXUS },
 								}),
 								q(59747, {    -- A Lost Soul
-									["provider"] = { "n", 166096 },    -- Miru Soulblossom
+									["provider"] = { "n", 166096 },	-- Miru Soulblossom
+									["coord"] = { 32.9, 33.3, 1649 },	-- Etheric Vault
 								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
