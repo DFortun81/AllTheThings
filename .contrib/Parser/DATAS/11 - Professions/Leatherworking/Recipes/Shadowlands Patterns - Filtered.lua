@@ -9,7 +9,7 @@ profession(LEATHERWORKING, {
 					["categoryID"] = 1526,	-- Quest Recipes
 					["g"] = {
 						{
-							["recipeID"] = 338260,	-- Arden Apple Pie
+							["recipeID"] = 338260,	-- Bonestudded Fist
 							["u"] = 15,	-- Training Recipes / Unlearnable
 						},
 						{

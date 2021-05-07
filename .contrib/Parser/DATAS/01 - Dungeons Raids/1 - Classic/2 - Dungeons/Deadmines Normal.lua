@@ -195,8 +195,8 @@ _.Instances = { tier(1, {	-- Classic
 					["creatureID"] = 47739,	-- "Captain" Cookie
 					["g"] = {
 						ach(628),	-- Deadmines
-						i(5192),	-- Cookie's Tenderizer
-						i(5197),	-- Thief's Blade
+						i(5192),	-- Thief's Blade
+						i(5197),	-- Cookie's Tenderizer
 						i(5198),	-- Cookie's Stirring Rod
 						i(5193),	-- Cape of the Brotherhood
 						i(5202),	-- Corsair's Overshirt

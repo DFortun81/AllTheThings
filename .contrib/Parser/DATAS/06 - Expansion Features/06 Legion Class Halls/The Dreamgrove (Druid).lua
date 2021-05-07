@@ -304,7 +304,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, 747 },
 						["sourceQuests"] = { 42049 },	-- Powering the Portal
-						["maps"] = { 747 },	-- Moonglade
+						["maps"] = { 80 },	-- Moonglade
+					}),
+					q(44235, {	-- Essence of Fate
+						["provider"] = { "n", 110810 },	-- Almenis
+						["coord"] = { 41.0, 29.3, 747 },
+						["altQuests"] = { 44236 },	-- Essence of Fate
 					}),
 					q(42719, {	-- Eye of Azshara: Cleansing the Dreamway
 						["classes"] = { DRUID },
@@ -881,7 +886,7 @@ _.ExpansionFeatures =
 					spell(231437, {	-- Archdruid's Lunarwing Form
 						q(46317, {	-- Talon's Call
 							["classes"] = { DRUID },
-								["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
+							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 							["coord"] = { 43.6, 63.6, 646 },
 							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["maps"] = { 646 },
@@ -908,8 +913,6 @@ _.ExpansionFeatures =
 					}),
 
 					q(44237),	-- Ancients of War
-					q(44235),	-- Essence of Fate
-					q(44236),	-- Essence of Fate
 					q(41413),	-- What Could Go Wrong?
 
 					--[[ Artifact Appearance  Quests Commented Out For Now

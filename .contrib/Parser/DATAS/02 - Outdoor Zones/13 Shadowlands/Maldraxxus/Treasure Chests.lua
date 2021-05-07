@@ -81,6 +81,12 @@ _.Zones =
 						157028,	-- Thalrix the Slicer
 					},
 				}),
+				o(358855, {	-- Damaged Safe Fall Pack
+					["coord"] = { 60.0, 44.6, MALDRAXXUS },
+					["g"] = {
+						i(183831),	-- Safe Fall Kit
+					},
+				}),
 				spell(343124, {	-- Giant Cache of Epic Treasure
 					["questID"] = 62602,
 					["coord"] = { 41.4, 19.7, MALDRAXXUS },

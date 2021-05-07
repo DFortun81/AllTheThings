@@ -95,6 +95,12 @@ _.Zones =
 						i(181798),	-- Stuffed Construct
 					},
 				}),
+				n(164588, {	-- Shinbone Slim <Food and Attire>
+					["coord"] = { 47.0, 48.8, MALDRAXXUS },
+					["g"] = {
+						i(184036),	-- Dundae's Hat
+					},
+				}),
 			}),
 		}),
 	}),
