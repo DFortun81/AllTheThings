@@ -639,7 +639,6 @@ for key,value in pairs({
 		[-165] = "Сундучки",
 		[-168] = "Другие Задания",									-- Other Quests
 		[-171] = "Цепочки заданий",
-		[-175] = "Кустарная механика",								-- Junkyard Tinkering
 
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
@@ -684,7 +683,6 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "Трофейный сундук",								-- Daily War Chest
-		[-489] = "Еженедельный PVP Сундук",							-- Weekly Conquest Point Cap Chest
 		[-491] = "Карты таро",
 		[-498] = "Круговерть Пустоты",								-- Twisting Nether (Demon Hunter Order Hall advancement)
 
@@ -721,7 +719,6 @@ for key,value in pairs({
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
-			[-694] = "Доспехи Дуэлянта",							-- Duelist Gear (SL)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
 
@@ -773,7 +770,6 @@ for key,value in pairs({
 
 	-- Shadowlands Header
 		[-900] = "Обитель Ковенанта",								-- Covenant Sanctum
-		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),		-- Renown (NYI)
 		[-903] = "Добыча локации",									-- Zone Rewards
 		[-904] = "Гнев Тюремщика",									-- Wrath of the Jailer
 		[-905] = "Командирский стол",								-- Command Table
@@ -784,7 +780,6 @@ for key,value in pairs({
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
-		--[-913] = ,												--
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
 		[-916] = "1-й уровень: Растущая паутина",					-- Tier 1: Flowing Tendrils
@@ -876,60 +871,10 @@ for key,value in pairs({
 		[-2211] = "Volund's Folly",
 
 	-- Other Sets
-		[-3159] = "Комплект 6.5-го уровня",							--GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
-		[-3160] = "Комплект 21-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 21),
-		[-3161] = "Комплект 20-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 20),
-		[-3162] = "Комплект 19-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 19),
-		[-3163] = "Комплект 18-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 18),
-		[-3164] = "Комплект 17-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 17),
-		[-3165] = "Комплект 16-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 16),
-		[-3166] = "Комплект 15-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 15),
-		[-3167] = "Комплект 14-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 14),
-		[-3168] = "Комплект 13-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 13),
-		[-3169] = "Комплект 12-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 12),
-		[-3170] = "Комплект 11-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 11),
-		[-3171] = "Комплект 10-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 10),
-		[-3172] = "Комплект 9-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 9),
-		[-3173] = "Комплект 8-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 8),
-		[-3174] = "Комплект 7-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 7),
-		[-3175] = "Комплект 6-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 6),
-		[-3176] = "Комплект 5-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 5),
-		[-3177] = "Комплект 4-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 4),
-		[-3178] = "Комплект 3.5-го уровня",							--GARRISON_TIER.." 3.5 "..WARDROBE_SETS,
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
-		[-3180] = "Комплект 2.5-го уровня",							--GARRISON_TIER.." 2.5 "..WARDROBE_SETS,
-		[-3181] = "Комплект Круга Кенария (Руины Ан'Киража)",
-		[-3182] = "Комплект 2-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 2),
-		[-3183] = "Комплект 1.5-го уровня",							--GARRISON_TIER.." 1.5 "..WARDROBE_SETS,
-		[-3184] = "Комплект 1-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 1),
-		[-3185] = "Комплект 0.5-го уровня",							--GARRISON_TIER.." 0.5 "..WARDROBE_SETS,
-		[-3186] = "Комплект 0-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 0),
-		[-3187] = "Комплекты Подземелий",							-- Instance Item Sets
-		[-3188] = "Комплекты Подземелий, Рейдов и Классовые",
-		[-3189] = "Оскверненное Оружие",							--"Fel-Touched Weapons"
 
 	-- Holiday Sets
 		[-3199] = "Наряд гуляки Огненного Солнцеворота",
-	-- Dungeon 1 Sets [Tier 0]
-		[-3200] = "Ризы Благочестия ",								-- Priest
-		[-3201] = "Регалии Магистра",								-- Mage
-		[-3202] = "Одеяния Багрового Тумана",						-- Warlock
-		[-3203] = "Облачение Звериного сердца",						-- Druid
-		[-3204] = "Доспехи Незаметности",							-- Rogue
-		[-3205] = "Доспехи следопыта",								-- Hunter
-		[-3206] = "Стихии",											-- Shaman
-		[-3207] = "Доспехи Светлой стали",							-- Paladin
-		[-3208] = "Броня Доблести",									-- Warrior
-	-- Dungeon 2 Sets [Tier 0.5]
-		[-3209] = "Ризы Добродетели",								-- Priest
-		[-3210] = "Регалии чародея",								-- Mage
-		[-3211] = "Одеяния Тумана смерти",							-- Warlock
-		[-3212] = "Одеяния Жестокого Сердца",						-- Druid
-		[-3213] = "Доспехи Покрова тьмы",							-- Rogue
-		[-3214] = "Доспехи Повелителя зверей",						-- Hunter
-		[-3215] = "Пять Громов",									-- Shaman
-		[-3216] = "Доспехи Закаленного духа",						-- Paladin
-		[-3217] = "Броня Героизма",									-- Warrior
 	-- Anti-Undead Armor Sets [Scourge Event]
 		[-3218] = "Благословенные регалии искоренения нежити",
 		[-3219] = "Благословенная броня убийцы нежити",
@@ -940,23 +885,6 @@ for key,value in pairs({
 		[-3223] = "Доспехи истребителя нежити",
 		[-3224] = "Облачение Истребителя нежити",
 		[-3225] = "Броня истребления нежити",
-	-- Instance Sets
-		[-3226] = "Железнотканные доспехи",							-- Cloth
-		[-3227] = "Вестник",										-- Cloth
-		[-3228] = "Одеяния праха",									-- Cloth
-		[-3229] = "Трупный наряд",									-- Leather
-		[-3230] = "Регалии Кровавой кольчуги",						-- Mail
-		[-3231] = "Костяной Страж",									-- Plate
-	-- Cenarion Circle Set (Ruins of Ahn'Qiraj")
-		[-3232] = "Облачение Беспредельной мудрости",				-- Priest
-		[-3233] = "Облачение Погребенных тайн",						-- Mage
-		[-3234] = "Воплощение Неназванных имен",					-- Warlock
-		[-3235] = "Символы Бесконечной жизни",						-- Druid
-		[-3236] = "Знаки сокрытых теней",							-- Rogue
-		[-3237] = "Ловушки Незримого пути",							-- Hunter
-		[-3238] = "Дар Зова Бури",									-- Shaman
-		[-3239] = "Броня Вечной Справедливости",					-- Paladin
-		[-3240] = "Броня Непреклонной силы",						-- Warrior
 	-- Cloth WQ Gear
 		[-3241] = "Опаленный чародейский",
 		[-3242] = "Говорящий с костями",
@@ -967,23 +895,18 @@ for key,value in pairs({
 		[-3247] = "Ткань роггов",
 		[-3248] = "Морская ведьма",
 		[-3249] = "Морозное Солнце",
-	-- Cloth WQ Gear Continued
 		[-3259] = "Кошмарная ткань",
-		[-3260] = "Смотритель Казематов",
-		[-3261] = "Тронутый силой",
 	-- Leather WQ Gear
 		[-3262] = "Песнь меча",
 		[-3263] = "Речная Грива",
 		[-3264] = "Шкура манапарда",
 		[-3265] = "Кожа сквернотопыря",
 		[-3266] = "Медвежья кожа",
-		[-3267] = "Ужасная шкура",
 		[-3268] = "Безмятежные ветви",
 		[-3269] = "Ужасная шкура",
 		[-3270] = "Шкура сталегляда",
 		[-3271] = "Выдержанный в морской воде",
 		[-3272] = "Лунная гниль",
-		[-3273] = "Обработанный Скверной",
 	-- Mail WQ Gear
 		[-3274] = "Силовая линия",
 		[-3275] = "Небесный Рог",
@@ -991,27 +914,10 @@ for key,value in pairs({
 		[-3277] = "Мардумский",
 		[-3278] = "Волнскорнский",
 		[-3279] = "Гнусная чешуя",
-		[-3280] = "Всплеск маны",
 		[-3281] = "Ветви ежевики",
 		[-3282] = "Всплеск маны",
 		[-3283] = "Разрушитель святилищ",
-		[-3284] = "Гальванизированный из гремучей чешуи",
-		[-3285] = "Если Вы это читаете, свяжитесь с Lucetia, пожалуйста",
 		[-3346] = "Страж острова";
-	-- Dungeon 3 Sets [Tier 3.5]
-		[-3286] = "Благословенные ризы",							-- Priest
-		[-3287] = "Регалии Заклинателя",							-- Mage
-		[-3288] = "Одеяния Забвения",								-- Warlock
-		[-3289] = "Одеяния Лунной поляны",							-- Druid
-		[-3290] = "Доспехи Ликвидации",								-- Rogue
-		[-3291] = "Доспехи Повелителя зверей",						-- Hunter
-		[-3292] = "Одеяния Яростного прилива",						-- Shaman
-		[-3293] = "Доспехи Праведности",							-- Paladin
-		[-3294] = "Могучая броня",									-- Warrior
-		[-3295] = "Регалии маны",									-- Cloth
-		[-3296] = "Доспехи Странника пустошей",						-- Leather
-		[-3297] = "Броня опустошения",								-- Mail
-		[-3298] = "Роковая броня",									-- Plate
 	-- Plate WQ Gear
 		[-3299] = "Магический защитник",
 		[-3300] = "Серый Камень",
@@ -1024,10 +930,6 @@ for key,value in pairs({
 		[-3307] = "Сумерки",
 		[-3308] = "Скальный",
 		[-3309] = "Разбиватель оберегов",
-		[-3314] = "Закаленный бурями",
-	-- Garrison Mission Table Sets
-		[-3312] = "Штормовой комплект",
-		[-3313] = "Потрясающий комплект",
 	-- Island Expedition Sets
 		[-3315] = "Паук-послушник",
 		[-3316] = "Гидраксианский",
@@ -1066,8 +968,6 @@ for key,value in pairs({
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4168] = "Облачение Чешуи",
-		[-4169] = "Объятия гадюки",
 		[-4190] = "Предсезон",
 		[-4191] = "Турнир",
 	-- Tier/Dungeon/Event/Holiday Sets
@@ -1079,10 +979,7 @@ for key,value in pairs({
 			[-5204] = "Облик Испытаний",
 			[-5205] = "Скрытый облик",
 		-- Class Sets
-			[-5349] = "Различные комплекты", 						-- Miscellaneous Item Sets
 			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
-
-			[-5352] = "Рейдовые комплекты",							-- Tier Sets
 
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
 		[-7777] = "Временное Событие",
@@ -1092,11 +989,8 @@ for key,value in pairs({
 		[-7781] = "Последний Сундук",
 
 	-- Classes
-		[-9912] = GetSpellInfo(42206).." и "..GetSpellInfo(137027),		-- Protection / Retribution Paladin Spec
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
-		[-9953] = GetSpellInfo(226693).." и "..GetSpellInfo(137050), 	-- Arms / Fury Warrior Spec
-		[-9954] = GetSpellInfo(200078).." и "..GetSpellInfo(137007), 	-- Frost / Unholy Death Knight Spec
 
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-10066] = "Легендарные",									-- "Legendary";

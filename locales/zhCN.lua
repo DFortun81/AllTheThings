@@ -656,7 +656,6 @@ for key,value in pairs({
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
 		[-171] = "任务线",											-- Quest Chains
-		[-175] = "垃圾场匠技",										-- Junkyard Tinkering
 
 		[-206] = "典范",												-- Paragon
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
@@ -702,7 +701,6 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest
-		[-489] = "周常PvP宝箱",										-- Weekly Conquest Point Cap Chest
 		[-491] = "塔罗牌",											-- Tarot Cards
 		--TODO: [-498] = "Круговерть Пустоты",						-- Twisting Nether (Demon Hunter Order Hall advancement)
 
@@ -739,9 +737,7 @@ for key,value in pairs({
 		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
 		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
 		[-566] = "暗黑破坏神3",										-- Diablo III
-		[-567] = "炉石传说",											-- Hearthstone
 
-		[-572] = "风暴英雄",											-- Heroes of the Storm
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽世界电影",										-- World of Warcraft Movie
@@ -752,7 +748,6 @@ for key,value in pairs({
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
 
@@ -804,8 +799,6 @@ for key,value in pairs({
 
 	-- Shadowlands Header
 		[-900] = "盟约圣所",											-- Covenant Sanctum
-		--TODO: [-901] = GetSpellInfo(339041),						-- Covenant Callings
-		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),		-- Renown (NYI)
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-904] = "典狱长之怒",										-- Wrath of the Jailer
 		[-905] = "指挥台",											-- Command Table
@@ -816,7 +809,6 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--[-913] = ,												--
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
 		[-916] = "等级 1: 流动卷须",									-- Tier 1: Flowing Tendrils
@@ -908,60 +900,10 @@ for key,value in pairs({
 		--TODO: [-2211] = "Volund's Folly",
 
 	-- Other Sets
-		[-3159] = "T6.5套装",
-		[-3160] = "T21套装",
-		[-3161] = "T20套装",
-		[-3162] = "T19套装",
-		[-3163] = "T18套装",
-		[-3164] = "T17套装",
-		[-3165] = "T16套装",
-		[-3166] = "T15套装",
-		[-3167] = "T14套装",
-		[-3168] = "T13套装",
-		[-3169] = "T12套装",
-		[-3170] = "T11套装",
-		[-3171] = "T10套装",
-		[-3172] = "T9套装",
-		[-3173] = "T8套装",
-		[-3174] = "T7套装",
-		[-3175] = "T6套装",
-		[-3176] = "T5套装",
-		[-3177] = "T4套装",
-		[-3178] = "T3.5套装",
 		[-3179] = "T3套装",
-		[-3180] = "T2.5套装",
-		--TODO: [-3181] = "Cenarion Circle Set (Ruins of Ahn'Qiraj)",
-		[-3182] = "T2套装",
-		[-3183] = "T1.5套装",
-		[-3184] = "T1套装",
-		[-3185] = "T0.5套装",
-		[-3186] = "T0套装",
-		[-3187] = "副本套装",										-- Instance Item Sets
-		--TODO: [-3188] = "Dungeon, Tier and Class Sets",
-		--TODO: [-3189] = "Fel-Touched Weapons",
 
 	-- Holiday Sets
 		[-3199] = "仲夏节套装",
-	-- Dungeon 1 Sets [Tier 0]
-		[-3200] = "虔诚",											-- Vestments of the Devout (Priest)
-		[-3201] = "博学者",											-- Magister's Regalia (Mage)
-		[-3202] = "鬼雾",											-- Dreadmist Rainment (Warlock)
-		[-3203] = "野性之心",										-- Wildheart Rainment (Druid)
-		[-3204] = "迅影",											-- Shadowcraft Armor (Rogue)
-		[-3205] = "野兽追猎者",										-- Beaststalker Armor (Hunter)
-		[-3206] = "元素",											-- The Elements (Shaman)
-		[-3207] = "光铸护甲",										-- Lightforge Armor (Paladin)
-		[-3208] = "勇气",											-- Battlegear of Valor (Warrior)
-	-- Dungeon 2 Sets [Tier 0.5]
-		[-3209] = "坚贞",											-- Vestments of the Virtuous (Priest)
-		[-3210] = "巫师",											-- Sorcerer's Regalia (Mage_
-		[-3211] = "死雾",											-- Deathmist Rainment (Warlock)
-		[-3212] = "狂野之心",										-- Feralheart Rainment (Druid)
-		[-3213] = "暗幕",											-- Darkmantle Armor (Rogue)
-		[-3214] = "兽王",											-- Beastmaster Armor (Hunter)
-		[-3215] = "五雷",											-- The Five Thunders (Shaman)
-		[-3216] = "魂铸",											-- Soulforge Armor (Paladin)
-		[-3217] = "英勇",											-- Battlegear of Heroism (Warrior)
 	-- Anti-Undead Armor Sets [Scourge Event]
 		[-3218] = "神圣的亡灵净化法衣",
 		[-3219] = "神圣的亡灵毁灭护甲",
@@ -972,23 +914,6 @@ for key,value in pairs({
 		[-3223] = "亡灵屠戮者的护甲",
 		[-3224] = "亡灵屠戮者的装备",
 		[-3225] = "亡灵毁灭者",
-	-- Instance Sets
-		[-3226] = "铁纹作战套装",									-- Ironweave Battlesuit (Cloth)
-		[-3227] = "邮差",											-- The Postmaster (Cloth)
-		[-3228] = "骨堆",											-- Necropile Raiment (Cloth)
-		[-3229] = "苍白",											-- Cadaverous Garb (Leather)
-		[-3230] = "血链",											-- Bloodmail Regalia (Mail)
-		[-3231] = "亡骨",											-- Deathbone Guardian (Plate)
-	-- Cenarion Circle Set (Ruins of Ahn'Qiraj")
-		[-3232] = "无尽的智慧",										-- Priest
-		[-3233] = "神秘套装",										-- Trappings of Vaulted Secrets (Mage)
-		[-3234] = "禁断的邪语",										-- Warlock
-		[-3235] = "不灭的生命",										-- Druid
-		[-3236] = "笼罩之阴影",										-- Rogue
-		[-3237] = "隐秘的通途",										-- Hunter
-		[-3238] = "聚集的风暴",										-- Shaman
-		[-3239] = "永恒的公正",										-- Paladin
-		[-3240] = "坚定的力量",										-- Warrior
 	-- Cloth WQ Gear
 		[-3241] = "焦魔套装",
 		[-3242] = "骨语套装",
@@ -999,23 +924,18 @@ for key,value in pairs({
 		[-3247] = "石线套装",
 		[-3248] = "海巫套装",
 		[-3249] = "霜阳套装",
-	-- Cloth WQ Gear Continued
 		[-3259] = "织恐套装",
-		[-3260] = "地窟卫士套装",
-		[-3261] = "触魔套装",
 	-- Leather WQ Gear
 		[-3262] = "剑歌者套装",
 		[-3263] = "河鬃套装",
 		--TODO: [-3264] = "Mana-Saber Set",
 		[-3265] = "魔蝠皮套装",
 		[-3266] = "白熊皮套装",
-		[-3267] = "死皮套装",
 		[-3268] = "静枝套装",
 		[-3269] = "死皮套装",
 		--TODO: [-3270] = "Steelgazer Set",
 		--TODO: [-3271] = "Brinewashed Set",
 		[-3272] = "灾月套装",
-		--TODO: [-3273] = "Fel-Treated Set",
 	-- Mail WQ Gear
 		[-3274] = "魔力龙骑兵套装",
 		--TODO: [-3275] = "Skyhorn Set",
@@ -1023,27 +943,10 @@ for key,value in pairs({
 		[-3277] = "马顿链甲套装",
 		[-3278] = "蔑潮套装",
 		[-3279] = "邪鳞套装",
-		[-3280] = "魔爆套装",
 		[-3281] = "棘锁套装",
 		[-3282] = "魔爆套装",
 		[-3283] = "神殿毁灭者套装",
-		[-3284] = "闪耀风鳞套装",
-		[-3285] = "如果你看到这个请联系Lucetia",
 		[-3346] = "守岛人套装";
-	-- Dungeon 3 Sets [Tier 3.5]
-		[-3286] = "圣徒"	,											-- Hallowed Raiment (Priest)
-		[-3287] = "魔咒师",											-- Incanter's Regalia (Mage)
-		[-3288] = "湮灭",											-- Oblivion Raiment (Warlock)
-		[-3289] = "月光林地",										-- Moonglade Raiment (Druid)
-		[-3290] = "刺杀"	,											-- Assassination Armor (Rogue)
-		[-3291] = "巨兽之王",										-- Beast Lord Armor (Hunter)
-		[-3292] = "潮汐之怒",										-- Tidefury Raiment (Shaman)
-		[-3293] = "正义",											-- Righteous Armor (Paladin)
-		[-3294] = "鲁莽套装",										-- Bold Armor (Warrior)
-		[-3295] = "法力蚀刻魔装",									-- Mana-Etched Regalia (Cloth)
-		[-3296] = "废土行者",										-- Wastewalker Armor (Leather)
-		[-3297] = "荒芜",											-- Desolation Battlegear (Mail)
-		[-3298] = "末日板甲",										-- Doomplate Battlegear (Plate)
 	-- Plate WQ Gear
 		[-3299] = "奥术防御者套装",
 		[-3300] = "灰石套装",
@@ -1056,10 +959,6 @@ for key,value in pairs({
 		[-3307] = "夜幕套装",
 		[-3308] = "缚石套装",
 		[-3309] = "越狱者套装",
-		[-3314] = "淬雷套装",
-	-- Garrison Mission Table Sets
-		[-3312] = "动乱套装",
-		[-3313] = "豪华套装",
 	-- Island Expedition Sets
 		[-3315] = "蜘蛛助祭",
 		[-3316] = "海达希亚",
@@ -1099,8 +998,6 @@ for key,value in pairs({
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4168] = "鳞族之拥",										-- The Scale's Embrace
-		[-4169] = "毒蛇的拥抱",										-- Embrace of the Viper
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
 		[-4190] = "季前赛",											-- Pre-Season
 		[-4191] = "竞技装备",										-- Tournament
@@ -1113,10 +1010,7 @@ for key,value in pairs({
 			[-5204] = "挑战外观",									-- Challenge Appearance
 			[-5205] = "隐藏外观",									-- Hidden Appearance
 		-- Class Sets
-			--TODO: [-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS,-- Miscellaneous Item Sets
 			[-5350] = "职业试用套装",								-- Class Trial
-
-			[-5352] = "Tier套装",									-- Tier Sets / 想不到更好的翻译了
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 		--TODO: [-7777] = "Timed Event",

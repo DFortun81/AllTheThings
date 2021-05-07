@@ -4107,7 +4107,7 @@ _.NeverImplemented =
 			i(134755),	-- Covert Hatchet
 			i(140713),	-- Protectors 'axe
 			i(150608),	-- Protectors 'axe
-			i(18582),	-- twin blades of azzinoth
+			i(18582),	-- The Twin Blades of Azzinoth
 			i(18583),	-- warglaves of azzinoth right
 			i(18584),	-- warglaves of azzinoth left
 			i(108803),	-- Unknown - was under Legion>1Handed Swords
