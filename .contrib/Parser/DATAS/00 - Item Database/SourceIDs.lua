@@ -10,7 +10,7 @@ i(7509, 0, 2859);		-- Manaweave Robe (Ghostlands)
 i(24339, 0, 9500);		-- Stung
 i(49888, 0, 24432);		-- Shadow's Edge
 i(20637, 0, 8133);		-- Acid Inscribed Pauldrons
-i(5197, 0, 1989);		-- Cookie's Tenderizer
+i(5197, 1, 1989);		-- Cookie's Tenderizer
 i(41755, 0, 20156);		-- The Fire Extinguisher
 i(86559, 0, 44498);		-- Frying Pan
 i(86558, 0, 44497);		-- Rolling Pin

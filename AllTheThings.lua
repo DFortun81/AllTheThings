@@ -14541,7 +14541,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
-				if (not minID or minID < itemID) and (not maxID or itemID < maxID) then
+				if (not minID or minID <= itemID) and (not maxID or itemID <= maxID) then
 					-- clean any cached modID from the itemID
 					itemID = GetItemIDAndModID(itemID);
 					-- print("Checking for Source",itemID)
@@ -14603,9 +14603,10 @@ app:GetWindow("Harvester", UIParent, function(self)
 					end
 				end
 				if self.rowData then
-					local count = #self.rowData;
+					-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
+					-- TODO: this is still very laggy due to the thousands of rows being shifted on 'every remove'
+					local count = math.min(#self.rowData,100);
 					if count > 1 then
-						-- Remove completed rows
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
 						for i=count,1,-1 do
@@ -17680,7 +17681,7 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 		local min,max = strsplit(",",cmd);
 		app.customHarvestMin = tonumber(min);
 		app.customHarvestMax = tonumber(max);
-		app.print("Set Harvest ItemID Bounds:",min,max);
+		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
 	end
 	app:GetWindow("Harvester"):Toggle();
 end
