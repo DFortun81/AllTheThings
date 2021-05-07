@@ -4129,9 +4129,11 @@ _.HiddenQuestTriggers =
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
 		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
+		q(62759),	-- triggered after crafting Lovely Candle Display at Abominable Stitching Table
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
 		q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
+		q(62576),	-- triggered after crafting Plague Pack at Abominable Stitching Table
 		q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
 		q(62825),	-- triggered after crafting Shoulder Sprouts at Abominable Stitching Table
 		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table

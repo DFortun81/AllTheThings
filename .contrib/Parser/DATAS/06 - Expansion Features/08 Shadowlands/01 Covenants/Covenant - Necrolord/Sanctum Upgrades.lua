@@ -337,6 +337,13 @@ _.ExpansionFeatures =
 									i(182490),	-- Stitched Wraith's Visage
 								},
 							}),
+							n(161270, {	-- Chordy
+								["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+								["g"] = {
+									i(184205),	-- Long Lost Crown
+									i(184204),	-- Otherworld Hat
+								},
+							}),
 						}),
 						n(-926, {	-- Tier 2: Crafting Limbs
 							n(QUESTS, {
@@ -491,6 +498,12 @@ _.ExpansionFeatures =
 										i(183790),	-- Platter Master Stue
 									},
 								})
+							}),
+							o(360054, {	-- Sticky Cat
+								["coord"] = { 67.9, 79.3, 1698 },
+								["g"] = {
+									i(183829),	-- Slime Cat
+								},
 							}),
 						}),
 						n(-928, {	-- Tier 4: Forged Friends
