@@ -13166,22 +13166,27 @@ function app:GetDataCache()
 			db.headerID = -3;
 			table.insert(g, db);
 		end
-
-		db = {};
-		db.g = {};
-		app.CacheFlightPathData();
-		db.LoadFlightPaths = function(self)
-			for i,fp in pairs(app.FlightPathDB) do
-				tinsert(self.g, app.CreateFlightPath(tonumber(i)));
-			end
-			table.sort(self.g, function(a, b)
-				return a.name < b.name;
-			end);
-		end;
-		db:LoadFlightPaths();
-		db.text = L["FLIGHT_PATHS"];
-		db.icon = app.asset("Category_FlightPaths");
-		table.insert(g, db);
+		
+		-- Factions (Dynamic)
+		--[[
+		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
+		local factionsCategory = {};
+		factionsCategory.g = {};
+		factionsCategory.factions = {};
+		factionsCategory.expanded = false;
+		factionsCategory.icon = app.asset("Category_Factions");
+		factionsCategory.text = L["FACTIONS"];
+		table.insert(g, factionsCategory);
+		]]--
+		
+		-- Flight Paths (Dynamic)
+		local flightPathsCategory = {};
+		flightPathsCategory.g = {};
+		flightPathsCategory.fps = {};
+		flightPathsCategory.expanded = false;
+		flightPathsCategory.icon = app.asset("Category_FlightPaths");
+		flightPathsCategory.text = L["FLIGHT_PATHS"];
+		table.insert(g, flightPathsCategory);
 
 		-- Pet Battles
 		if app.Categories.PetBattles then
@@ -13622,6 +13627,70 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Prime").data = allData;
 		CacheFields(allData);
+		
+		-- Update Faction data.
+		--[[
+		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
+		factionsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["factionID"]) do
+				if not self.factions[i] then
+					local faction = app.CreateFaction(tonumber(i));
+					for j,o in ipairs(_) do
+						if o.key == "factionID" then
+							for key,value in pairs(o) do rawset(faction, key, value); end
+						end
+					end
+					faction.progress = nil;
+					faction.total = nil;
+					faction.g = nil;
+					self.factions[i] = faction;
+					if not faction.u or faction.u ~= 1 then
+						faction.parent = self;
+						tinsert(self.g, faction);
+					end
+					CacheFields(faction);
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end
+		]]--
+		
+		-- Update Flight Path data.
+		app.CacheFlightPathData();
+		flightPathsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["flightPathID"]) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(fp, key, value); end
+					end
+					fp.g = nil;
+					fp.maps = nil;
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+					CacheFields(fp);
+				end
+			end
+			for i,_ in pairs(app.FlightPathDB) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+					CacheFields(fp);
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end;
 
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
