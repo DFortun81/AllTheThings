@@ -13688,7 +13688,7 @@ function app:GetDataCache()
 				end
 			end
 			table.sort(self.g, function(a, b)
-				return a.text < b.text;
+				return a.name < b.name;
 			end);
 		end;
 
