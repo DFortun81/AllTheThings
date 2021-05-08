@@ -308,7 +308,8 @@ _.ExpansionFeatures =
 					i(143328),	-- Battle Report
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-					i(142522),			-- Rude Letter
+					i(142522),	-- Rude Letter
+					i(140362),	-- Dust from the Shadowlands
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
