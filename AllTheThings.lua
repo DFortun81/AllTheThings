@@ -2912,13 +2912,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local sourceGroup;
 
 			-- Match the DB group by sourceID
-			if not sourceGroup and sourceID then
-				for i,j in ipairs(group.g or group) do
-					if j.s == sourceID then
-						sourceGroup = j;
-					end
-				end
-			end
+			-- if not sourceGroup and sourceID then
+			-- 	for i,j in ipairs(group.g or group) do
+			-- 		if j.s == sourceID then
+			-- 			sourceGroup = j;
+			-- 		end
+			-- 	end
+			-- end
 
 			-- Otherwise use modItemID for item accuracy
 			if not sourceGroup then
@@ -2988,6 +2988,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
 											local link = otherATTSource.link or otherATTSource.silentLink;
+											local otherItemID = otherATTSource.itemID or otherATTSource.silentItemID;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
@@ -3002,7 +3003,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 										end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -4186,7 +4187,8 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				-- Don't use SourceID for artifact searches since they contain many SourceIDs
+				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
@@ -4195,12 +4197,12 @@ local function SearchForLink(link)
 				else
 					-- Search for the Item ID. (an item without an appearance)
 					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
-					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
+					-- print("SEARCHING FOR ITEM LINK ", link, modItemID, itemID, _ and #_);
 				end
 
 				-- Merge together the cost search results as well.
 				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
-				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
+				-- print("SEARCHING FOR COST",modItemID,itemID,searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
