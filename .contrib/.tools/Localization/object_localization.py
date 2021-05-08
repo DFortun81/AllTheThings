@@ -179,7 +179,7 @@ def get_objects_info(filename):
                     continue
                 obj_name = re.findall('"([^"]*)"', line)[0]
                 # new entry, need to get the name, this only happens in enUS
-                if len(obj_name) == 0 and int(obj_id) < custom_objects_const:
+                if len(obj_name) == 0 and int(obj_id) < CUSTOM_OBJECTS_CONST:
                     obj_name = get_localized_obj_name(obj_id)
                     line = re.sub('".*"', f'"{obj_name}"', line)
                     print(f"New object {obj_id}: {obj_name}")
