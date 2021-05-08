@@ -78,7 +78,7 @@ _.ExpansionFeatures =
 						--["sourceQuests"] = {  },	--
 						["classes"] = { WARLOCK },
 						--["coord"] = { , , 717 },
-						--["provider"] = { "n",  },	-- 
+						--["provider"] = { "n",  },	--
 					}),
 					q(43153, {	-- An Eye for a Scepter
 						["sourceQuest"] = 43100,	-- Finding the Scepter
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 					}),
 					q(42098, {	-- Black Rook Hold: An Unclaimed Soul
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 					q(46237, {	-- Bloodbringer's Missive
 						["sourceQuests"] = { 46253 },	-- Pillars of Creation
 						["classes"] = { WARLOCK },
-						["coord"] = { 43.9, 63.2, 646 },	
+						["coord"] = { 43.9, 63.2, 646 },
 						["maps"] = { 646 },	-- Broken Shore
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 					}),
@@ -246,7 +246,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 					}),
 					q(42100, {	-- Empowering the Soul
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
@@ -255,7 +255,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 					}),
 					q(45026, {	-- Expending Fel Energy
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							45024,	-- Cult Culling
 							45025,	-- Stealing the Source of Power
 						},
@@ -379,7 +379,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41798, {	-- Recruiting More Troops
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
@@ -400,7 +400,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42517, {	-- Ritual of Doom
-						["description"] =  "Requires the Demonic Offering Class Hall upgrade",
+						["description"] =  "Requires the Demonic Offering Class Hall upgrade.",
 						["classes"] = { WARLOCK },
 						["coord"] = { 57.0, 41.0, 717 },
 						["provider"] = { "n", 111740 },	-- Mile Raithborne

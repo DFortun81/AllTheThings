@@ -201,7 +201,8 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": Успешно сканировано ";
 	L.AH_SCAN_SUCCESSFUL_2 = " предмет(ов).";
 	L.REAGENT_CACHE_OUT_OF_DATE = "Кэш реагентов устарел и будет обновлен, когда откроете Ваши профессии!";
-	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий."
+	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
+	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' [%d] не позволит собрать Хлебную Крошку [%d]";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
