@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
-					["description"] = "|cff66ccff-125 Timbermaw Reputation if you kill (until exalted).|r",
+					["description"] = "-125 Timbermaw Reputation if you kill (until exalted).",
 					["coord"] = { 33.0, 32.6, 76 },
 				}),
 				n(6650, {	-- General Fangferror

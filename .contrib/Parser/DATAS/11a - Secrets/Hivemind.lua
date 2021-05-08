@@ -31,7 +31,7 @@ _.Secrets =
 				},
 			}),
 			o(13000001, {	-- Step 2: Equip Talisman
-				["description"] = "|cFFFFFFFFSTEP 2:|r |cff66ccffYou must wear the talisman to see/interact with many objects in this secret.",
+				["description"] = "|cFFFFFFFFSTEP 2:|r You must wear the talisman to see/interact with many objects in this secret.",
 			}),
 			o(13000032, {	-- Step 3: Pick a Monocle (Or Don't!)
 				["description"] = "|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group.  Four members must each collect a different monocle before the group can continue with the secret.",

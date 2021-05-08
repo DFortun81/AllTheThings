@@ -64,7 +64,7 @@ _.Zones =
 					["model"] = 571710,
 					["modelScale"] = .2,
 					["icon"] = "Interface\\Icons\\INV_Misc_Bag_HerbPouch",
-					["description"] = "|cff66ccffLoot the Lost Sentinel's Pouch inside a large hollow tree trunk.|r",
+					["description"] = "Loot the Lost Sentinel's Pouch inside a large hollow tree trunk.",
 					["g"] = {
 						i(122226),	-- Music Roll: Magic
 					},

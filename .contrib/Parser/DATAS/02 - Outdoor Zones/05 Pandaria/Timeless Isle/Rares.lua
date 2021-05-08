@@ -541,7 +541,7 @@ _.Zones =
 					},
 				}),
 				n(71919,  {	-- Zhu-Gon the Sour
-					["description"] = "|cff66ccffKill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.|r",
+					["description"] = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
 					["questID"] = 32959,
 					["isDaily"] = true,
 					["coord"] = { 37.8, 77.2, 554 },

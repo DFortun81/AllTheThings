@@ -43,11 +43,11 @@ _.GroupFinder =
 		}),
 		i(51999, {	-- Satchel of Helpful Goods 15-25
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 15-25 range.",
 		}),
 		i(52000, {	-- Satchel of Helpful Goods 24-34
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 24-34 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 24-34 range.",
 			["g"] = {
 				i(51973),	-- Enumerated Handwraps
 				i(143581),	-- Earthbound Grips
@@ -57,7 +57,7 @@ _.GroupFinder =
 		}),
 		i(67248, {	-- Satchel of Helpful Goods 35-39
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 35-39 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 35-39 range.",
 			["g"] = {
 				i(51974),	-- Enumerated Shoulderpads
 				i(51966),	-- Vigorous Spaulders;	  These two share name, possible
@@ -70,7 +70,7 @@ _.GroupFinder =
 		}),
 		i(52001, {	-- Satchel of Helpful Goods 40-45
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 40-45 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 40-45 range.",
 			["g"] = {
 				i(51974),	-- Enumerated Shoulderpads
 				i(51966),	-- Vigorous Spaulders
@@ -80,7 +80,7 @@ _.GroupFinder =
 		}),
 		i(52002, {	-- Satchel of Helpful Goods 46-55
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 46-55 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
 			["g"] = {
 				i(51972),	-- Enumerated Bracers
 				i(51967),	-- Enumerated Sandals
@@ -94,7 +94,7 @@ _.GroupFinder =
 		}),
 		i(52003, {	-- Satchel of Helpful Goods 56-60
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
 			["g"] = {
 				i(51993),	-- Turbulent Cloak
 				i(51971),	-- Enumerated Belt

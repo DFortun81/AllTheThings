@@ -28,7 +28,7 @@ _.Zones =
 					["isWeekly"] = true,
 				}),
 				i(46007,  {	-- Bag of Fishing Treasures
-					["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+					["description"] = "Fishing Daily Quest Reward",
 					["crs"] = { 28742 },	-- Marcia Chase
 					["g"] = {
 						i(46004),	-- Sealed Vial of Poison

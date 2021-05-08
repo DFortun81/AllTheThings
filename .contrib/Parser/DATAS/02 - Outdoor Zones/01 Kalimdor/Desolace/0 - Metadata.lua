@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(66, {	-- Desolace
 			["achievementID"] = 848,
-			["description"] = "|cff66ccffDesolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.|r",
+			["description"] = "Desolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.",
 		}),
 	}),
 };

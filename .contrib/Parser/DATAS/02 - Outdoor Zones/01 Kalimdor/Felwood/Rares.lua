@@ -48,11 +48,11 @@ _.Zones =
 					["coord"] = { 52.6, 31.8, 77 },
 				}),
 				n(107595, {	-- Grimrot
-					["description"] = "|cff66ccffThis is the daytime light grey bear model.|r",
+					["description"] = "This is the daytime light grey bear model.",
 					["coord"] = { 38.2, 45.4, 77 },
 				}),
 				n(107596, {	-- Grimrot
-					["description"] = "|cff66ccffThis is the nightime black diseased bear model.|r",
+					["description"] = "This is the nightime black diseased bear model.",
 					["coord"] = { 38.2, 45.4, 77 },
 				}),
 				n(50925,  {	-- Grovepaw

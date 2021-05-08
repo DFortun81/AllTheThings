@@ -7,10 +7,8 @@ _.Secrets =
 	n(-802, {	-- Sun Darter Hatchling
 		["modelID"] = 74529,
 		["description"] = "***This secret requires you to have debug mode enabled to see the consumables/steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievement Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item, plot it, and then plot again from the main list.",
-		["maps"] = {
-		},
 		["g"] = {
-			o(9999908, {	-- |cFFFFFFFFStep 1:|r Gather Consumables.
+			o(9999908, {	-- Step 1: Gather Consumables.
 				["description"] = "|cFFFFFFFFSTEP 1:|r Gather the following quantity of consumables:",
 				["g"] = {
 					i(38320, {	-- Dire Brew
@@ -154,51 +152,60 @@ _.Secrets =
 					}),
 				},
 			}),
-			o(9999909, {	-- |cFFFFFFFFStep 2:|r Cavern of Consumption
-				["description"] = "|cFFFFFFFFSTEP 2:|r |cff66ccffOnce you have gathered all of the consumables go to Caverns of Consumption on the North coast of Winterspring|r, and travel through the cavern to the fire barrier.\n\n***Before you continue, make sure you have 10-15 mins to finish the remaining steps***",
+			o(9999909, {	-- Step 2: Cavern of Consumption
+				["description"] = "|cFFFFFFFFSTEP 2:|r Once you have gathered all of the consumables go to Caverns of Consumption on the North coast of Winterspring, and travel through the cavern to the fire barrier.\n\n***Before you continue, make sure you have 10-15 mins to finish the remaining steps***",
 				["coords"] = {
 					{ 57.2, 14.0, 12 },	-- Cave Entrance
 				},
 			}),
-			o(9999910, {	-- |cFFFFFFFFStep 3:|r Fire Barrier
-				["description"] = "|cFFFFFFFFSTEP 3:|r |cff66ccffUse the Major Fire Protection Potion, and pass through the Fire Barrier.|r",
+			o(9999910, {	-- Step 3: Fire Barrier
+				["description"] = "|cFFFFFFFFSTEP 3:|r Use the Major Fire Protection Potion, and pass through the Fire Barrier.",
 			}),
-			o(9999911, {	-- |cFFFFFFFFStep 4:|r Prismatic Barrier
-				["description"] = "|cFFFFFFFFSTEP 4:|r |cff66ccffUse the rest of the Major Potions and pass through the Prismatic Barrier.|r",
+			o(9999911, {	-- Step 4: Prismatic Barrier
+				["description"] = "|cFFFFFFFFSTEP 4:|r Use the rest of the Major Potions and pass through the Prismatic Barrier.",
 			}),
-			o(9999912, {	-- |cFFFFFFFFStep 5:|r Diligent Watcher
-				["description"] = "|cFFFFFFFFSTEP 5:|r |cff66ccffUse Noggenfogger Elixir until you turn into a Skeleton, then walk past the Diligent Watcher.|r",
+			o(9999912, {	-- Step 5: Diligent Watcher
+				["description"] = "|cFFFFFFFFSTEP 5:|r Use Noggenfogger Elixir until you turn into a Skeleton, then walk past the Diligent Watcher.",
+				["cost"] = {
+					{ "i", 8529, 1 },	-- Noggenfogger Elixir
+				},
 			}),
-			o(9999913, {	-- |cFFFFFFFFStep 6:|r Vine Barrier
-				["description"] = "|cFFFFFFFFSTEP 6:|r |cff66ccffOn the right will be a Wall of Vines.  Use Scotty's Lucky Coin, pass through the vines, and loot a Water Stone from the water.|r",
+			o(9999913, {	-- Step 6: Vine Barrier
+				["description"] = "|cFFFFFFFFSTEP 6:|r On the right will be a Wall of Vines.  Use Scotty's Lucky Coin, pass through the vines, and loot a Water Stone from the water.",
+				["cost"] = {
+					{ "i", 89373, 1 },	-- Scotty's Lucky Coin
+				},
 			}),
-			o(9999914, {	-- |cFFFFFFFFStep 7:|r Water Barrier
-				["description"] = "|cFFFFFFFFSTEP 7:|r |cff66ccffUse the Water Stone, backtrack to the Blue Barrier and walk through ever so slightly.|r",	-- i(147455)	-- Water Stone
+			o(9999914, {	-- Step 7: Water Barrier
+				["description"] = "|cFFFFFFFFSTEP 7:|r Use the Water Stone, backtrack to the Blue Barrier and walk through ever so slightly.",
+				["cost"] = {
+					{ "i", 147455, 1 },	-- Water Stone
+				},
 			}),
-			o(9999915, {	-- |cFFFFFFFFStep 8:|r Stone Golem
-				["description"] = "|cFFFFFFFFSTEP 8:|r |cff66ccffUse the Dire Brew and walk past the Stone Watcher.|r",
+			o(9999915, {	-- Step 8: Stone Golem
+				["description"] = "|cFFFFFFFFSTEP 8:|r Use the Dire Brew and walk past the Stone Watcher.",
 			}),
-			o(9999916, {	-- |cFFFFFFFFStep 9:|r Ethereal Barrier
-				["description"] = "|cFFFFFFFFSTEP 9:|r |cff66ccffGo up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk through the barrier to the Strange Stone in the back.|r",
+			o(9999916, {	-- Step 9: Ethereal Barrier
+				["description"] = "|cFFFFFFFFSTEP 9:|r Go up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk through the barrier to the Strange Stone in the back.",
 			}),
-			o(9999917, {	-- |cFFFFFFFFStep 10:|r Strange Stone
-				["description"] = "|cFFFFFFFFSTEP 10:|r |cff66ccffAt the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.|r",	-- n(54213)	-- Strange Stone
+			o(9999917, {	-- Step 10: Strange Stone
+				["description"] = "|cFFFFFFFFSTEP 10:|r At the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.",	-- n(54213)	-- Strange Stone
 			}),
-			o(9999918, {	-- |cFFFFFFFFStep 11:|r Metal Gate
-				["description"] = "|cFFFFFFFFSTEP 11:|r |cff66ccffBacktrack to the gate and use the Pygmy Oil until you turn into a Pygmy.  Walk through the gate to the Wisdom Cube.|r",
+			o(9999918, {	-- Step 11: Metal Gate
+				["description"] = "|cFFFFFFFFSTEP 11:|r Backtrack to the gate and use the Pygmy Oil until you turn into a Pygmy.  Walk through the gate to the Wisdom Cube.",
 			}),
-			o(9999919, {	-- |cFFFFFFFFStep 12:|r Wisdom Cube
-				["description"] = "|cFFFFFFFFSTEP 12:|r |cff66ccffAt the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"<Place arm beneath cube.>\" and recieve Sign of the First debuff.|r",	-- n(53730)	-- Wisdom Cube
+			o(9999919, {	-- Step 12: Wisdom Cube
+				["description"] = "|cFFFFFFFFSTEP 12:|r At the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"<Place arm beneath cube.>\" and recieve Sign of the First debuff.",	-- n(53730)	-- Wisdom Cube
 			}),
-			o(9999920, {	-- |cFFFFFFFFStep 13:|r Tarnished Plaque
-				["description"] = "|cFFFFFFFFSTEP 13a:|r |cff66ccffBacktrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.|r",
+			o(9999920, {	-- Step 13: Tarnished Plaque
+				["description"] = "|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.",
 			}),
-			o(272487, {	-- |cFFFFFFFFStep 14:|r Oddly-Colored Egg
+			o(272487, {	-- Step 14: Oddly-Colored Egg
 				["model"] = 1405664,
 				["modelScale"] = 2,
 				["questID"] = 48022,
 				["isWeekly"] = true,
-				["description"] = "|cFFFFFFFFSTEP 14:|r |cff66ccffDO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.|r\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",  -- |cff3399ff -- blue color
+				["description"] = "|cFFFFFFFFSTEP 14:|r DO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",
 				["g"] = {
 					i(142223),	-- Sun Darter Hatchling (PET!)
 				},

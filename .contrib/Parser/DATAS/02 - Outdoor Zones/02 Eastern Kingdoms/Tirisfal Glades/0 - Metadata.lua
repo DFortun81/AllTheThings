@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(18, {	-- Tirisfal Glades
 			["achievementID"] = 768,
-			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",
+			["description"] = "Tirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.",
 			["maps"] = {
 				20,		-- Keeper's Rest (part of Priest artifact questline)
 				466,	-- Night Web's Hollow
