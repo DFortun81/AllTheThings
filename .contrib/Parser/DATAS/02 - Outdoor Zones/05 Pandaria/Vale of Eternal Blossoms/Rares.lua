@@ -7,26 +7,6 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
 			n(RARES, {
-				i(87779, {	-- Ancient Guo-Lai Cache Key
-					["description"] = "Use these keys to unlock Ancient Guo Lai Cache chests in the Vault.",
-					["g"] = {
-						i(90470),	-- Design: Jade Owl
-						i(90471),	-- Design: Sapphire Cub
-						i(101768),	-- Recipe: Farmer's Delight
-						i(101770),	-- Recipe: Fluffy Silkfeather Omelet
-						i(101767),	-- Recipe: Mango Ice
-						i(101765),	-- Recipe: Seasoned Pomfruit Slices
-						i(101766),	-- Recipe: Spiced Blossom Soup
-						i(101769),	-- Recipe: Stuffed Lushrooms
-						i(90815),	-- Relic of Guo-Lai
-						i(103624),	-- Treasures of the Vale
-						i(102541),	-- Aged Balsamic Vinegar
-						i(102543),	-- Aged Mogu'shan Cheese
-						i(102542),	-- Ancient Pandaren Spices
-						i(90816),	-- Relic of the Thunder King
-						i(76061),	-- Spirit of Harmony
-					},
-				}),
 				n(58778, {	-- Aetha
 					["coord"] = { 35.0, 89.9, 390 },
 					["g"] = {
@@ -52,11 +32,14 @@ _.Zones =
 					},
 				}),
 				n(64403, {	-- Alani
-					["description"] = "|cff66ccffCollect 10 Skyshards and use them to create a Sky Crystal, which can remove Alani's Nimbus Shroud Debuff. Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.|r",
+					["description"] = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
 					["coords"] = {
 						{ 56.2, 42.6, 390 },
 						{ 35.6, 26.0, 390 },
 						{ 38.6, 64.6, 390 },
+					},
+					["cost"] = {
+						{ "i", 86546, 1 },	-- Sky Crystal
 					},
 					["g"] = {
 						i(90655),	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)

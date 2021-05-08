@@ -7,7 +7,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(627, {	-- Dalaran
 			["order"] = "01",
-			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",
+			["description"] = "Dalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna.",
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
 			["maps"] = { -- Do not include 626 as that is Rogue Class Hall

@@ -304,7 +304,7 @@ _.Zones =
 					},
 				}),
 				n(75434, {	-- Windfang Matriarch (Alliance)
-					["description"] = "|cff66ccffSpeak with Romuul to start the event that spawns Wildfang Matriarch. |r",
+					["description"] = "Speak with Romuul to start the event that spawns Wildfang Matriarch.",
 					["questID"] = 33038,
 					["coord"] = { 42.8, 40.4, 539 },
 					["races"] = ALLIANCE_ONLY,

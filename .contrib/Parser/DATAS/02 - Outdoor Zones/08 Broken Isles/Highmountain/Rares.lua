@@ -8,7 +8,7 @@ _.Zones =
 		m(650, {	-- Highmountain
 			n(RARES, {
 				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
-					["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
+					["description"] = "There are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
 					["coord"] = { 43.1, 47.9, 650 },
 					["crs"] = {
 						100232,	-- Ryael Dawndrifter <Amateur Hunter>
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				v(39784,  {	-- Beastmaster Pao'lek & Arru
-					["description"] = "|cff66ccffSpeak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.|r",
+					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
 					["coord"] = { 48.6, 50.0, 650 },
 					["crs"] = {
 						97215,	-- Beastmaster Pao'lek
@@ -96,7 +96,7 @@ _.Zones =
 					},
 				}),
 				n(100495, {	-- Devouring Darkness
-					["description"] = "|cff66ccffClick all candles to summon the mob.|r",
+					["description"] = "Click all candles to summon the mob.",
 					["coords"] = {
 						{ 54.5, 41.4, 650 },	-- actual rare
 						{ 55.1, 44.3, 650 },	-- cave entrance
@@ -119,7 +119,7 @@ _.Zones =
 					},
 				}),
 				n(97793,  {	-- Flamescale
-					["description"] = "|cff66ccffClick on the Abandoned Fishing Pole to summon Flamescale.|r",
+					["description"] = "Click on the Abandoned Fishing Pole to summon Flamescale.",
 					["questID"] = 39963,
 					["coord"] = { 40.9, 57.7, 650 },
 					["g"] = {
@@ -203,7 +203,7 @@ _.Zones =
 					},
 				}),
 				v(40423,  {	-- Puck (Unethical Adventurers)
-					["description"] = "|cff66ccffLoot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure. |r",
+					["description"] = "Loot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure.",
 					["coord"] = { 52.3, 58.5, 650 },
 					["crs"] = {
 						100302,	-- Puck <Unethical Adventurers>
@@ -234,7 +234,7 @@ _.Zones =
 					},
 				}),
 				n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
-					["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
+					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
 					["questID"] = 39866,
 					["coord"] = { 54.5, 40.5, 650 },
 					["g"] = {

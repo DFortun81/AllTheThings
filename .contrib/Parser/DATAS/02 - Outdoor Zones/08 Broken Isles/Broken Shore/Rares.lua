@@ -187,7 +187,7 @@ _.Zones =
 					["coord"] = { 41.0, 16.0, 646 },
 				}),
 				n(119629, {	-- Lord Hel'Nurath
-					["description"] = "|cff66ccffThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |cff66ccffquest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.|r",
+					["description"] = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
 					["questID"] = 46304,	-- Rare Elite 15
 					["classes"] = { WARLOCK },
 					["isDaily"] = true,

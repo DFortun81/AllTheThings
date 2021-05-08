@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(90244,  {	-- Arcavellus
-					["description"] = "|cff66ccffClick on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.|r",
+					["description"] = "Click on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.",
 					["questID"] = 37932,
 					["coord"] = { 59.8, 11.9, 630 },
 					["g"] = {
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(91100,  {	-- Brogozog
-					["description"] = "|cff66ccffSpeak to Tehd to start the encounter.|r",
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 38212,
 					["coord"] = { 59.2, 46.3, 630 },
 					["g"] = {
@@ -133,7 +133,7 @@ _.Zones =
 					},
 				}),
 				n(91579,  {	-- Doomlord Kazrok
-					["description"] = "|cff66ccffSpeak to Tehd to start the encounter.|r",
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 38352,	-- Kazrok
 					["coord"] = { 43.4, 28.2, 630 },
 					["g"] = {
@@ -147,7 +147,7 @@ _.Zones =
 					},
 				}),
 				n(105938, {	-- Felwing (Felbats)
-					["description"] = "|cff66ccffSpeak to Tehd to start the encounter.|r",
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 42069,
 					["coord"] = { 43.5, 24.6, 630 },
 					["g"] = {
@@ -188,7 +188,7 @@ _.Zones =
 					},
 				}),
 				n(90803,  {	-- Infernal Lord
-					["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
+					["description"] = "Click Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.",
 					["questID"] = 38037,
 					["coord"] = { 35.2, 50.4, 630 },
 					["g"] = {
