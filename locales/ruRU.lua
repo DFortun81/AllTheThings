@@ -3001,6 +3001,8 @@ for key,value in pairs({
 	[358319] = "Записка чародея",	-- Sorceror's Note
 	[358382] = "Разыскивается: Хелицера",	-- Wanted: Chelicera
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
+	[358855] = "Поврежденный набор для безопасного падения",	-- Damaged Safe Fall Pack
+	[360054] = "Липкая кошка",	-- Slime Cat
 	[362489] = "Элизийский декрет",	-- Elysian Decree
 	[363825] = "Серебряный сундучок",	-- Silver Strongbox
 	[364899] = "Кристаллизованная стигия",	-- Crystallized Stygia

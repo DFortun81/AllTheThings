@@ -3008,6 +3008,8 @@ for key,value in pairs({
 	--TODO: [358319] = "Sorceror's Note",	-- Sorceror's Note
 	--TODO: [358382] = "Wanted: Chelicera",	-- Wanted: Chelicera
 	--TODO: [358533] = "Forgotten Supplies",	-- Forgotten Supplies
+	--TODO: [358855] = "Damaged Safe Fall Pack",	-- Damaged Safe Fall Pack
+	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	--TODO: [362489] = "Elysian Decree",	-- Elysian Decree
 	--TODO: [363825] = "Silver Strongbox",	-- Silver Strongbox
 	--TODO: [364899] = "Crystallized Stygia",	-- Crystallized Stygia

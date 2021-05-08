@@ -3008,6 +3008,8 @@ for key,value in pairs({
 	[358319] = "마술사의 기록",	-- Sorceror's Note
 	[358382] = "현상 수배: 칼리세라",	-- Wanted: Chelicera
 	[358533] = "잊혀진 보급품",	-- Forgotten Supplies
+	[358855] = "손상된 안전 낙하 가방",	-- Damaged Safe Fall Pack
+	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	[362489] = "엘리시안 칙령",	-- Elysian Decree
 	[363825] = "은 금고",	-- Silver Strongbox
 	[364899] = "결정화 저승석",	-- Crystallized Stygia

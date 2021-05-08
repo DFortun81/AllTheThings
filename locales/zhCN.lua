@@ -3028,6 +3028,8 @@ for key, value in pairs({
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
+	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
+	[360054] = "黏黏猫",	-- Slime Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
 	[363825] = "白银保险箱",	-- Silver Strongbox
 	[364899] = "晶体冥殇",	-- Crystallized Stygia

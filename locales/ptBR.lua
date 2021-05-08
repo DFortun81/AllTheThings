@@ -3008,6 +3008,8 @@ for key,value in pairs({
 	[358319] = "Nota do Feiticeiro",	-- Sorceror's Note
 	[358382] = "Procura-se: Quelícera",	-- Wanted: Chelicera
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies
+	[358855] = "Mochila de Queda Segura Danificada",	-- Damaged Safe Fall Pack
+	[360054] = "Gato Grudento",	-- Slime Cat
 	[362489] = "Decreto Elísio",	-- Elysian Decree
 	[363825] = "Caixa-forte de Prata",	-- Silver Strongbox
 	[364899] = "Estígia Cristalizada",	-- Crystallized Stygia
