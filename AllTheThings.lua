@@ -2638,7 +2638,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					-- not for things with a parent unless the parent has no difficultyID
 					and (not group.parent or not group.parent.difficultyID)
 					-- not for group which contains an artifact
-					and not group.g[1].artifactID
+					-- and not group.g[1].artifactID
 					-- not for heirlooms
 					and not (group.filterID == 109)
 					-- not for a group which is symbolized
@@ -3421,7 +3421,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	end
 
-	-- local collectionData;
 	if group.g and #group.g > 0 then
 		--[[
 		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
@@ -3528,7 +3527,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
+		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 		-- print(group.collectionText)
 	end
 
