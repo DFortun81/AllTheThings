@@ -81,7 +81,7 @@ _.Achievements =
 				crit(10),				-- He Knows If You've Been Naughty
 				crit(11),				-- A Frosty Shake
 			})),
-			un(19, ach(2798, {		-- Noble Gardener (Noble Garden)
+			un(HOLIDAY_NOBLEGARDEN, ach(2798, {		-- Noble Gardener (Noble Garden)
 				title(122),				-- the Noble
 				crit(1),				-- I Found One!
 				crit(2),				-- Chocoholic

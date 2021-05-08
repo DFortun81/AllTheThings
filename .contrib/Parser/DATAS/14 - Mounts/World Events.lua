@@ -24,7 +24,7 @@ _.Mounts =
 		un(24, i(33977)),	-- Swift Brewfest Ram
 		i(72140),			-- Swift Forest Strider
 		un(18, i(72146)),	-- Swift Lovebird
-		un(19, i(72145)),	-- Swift Springstrider
+		un(HOLIDAY_NOBLEGARDEN, i(72145)),	-- Swift Springstrider
 		i(87775),			-- Yu'lei, Daughter of Jade
 	}),
 };
