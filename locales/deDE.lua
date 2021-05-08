@@ -3008,6 +3008,8 @@ for key,value in pairs({
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
+	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack
+	[360054] = "Klebrige Katze",	-- Slime Cat
 	[362489] = "Elysischer Erlass",	-- Elysian Decree
 	[363825] = "Silberne Schließkassette",	-- Silver Strongbox
 	[364899] = "Kristallisierte Stygia",	-- Crystallized Stygia
