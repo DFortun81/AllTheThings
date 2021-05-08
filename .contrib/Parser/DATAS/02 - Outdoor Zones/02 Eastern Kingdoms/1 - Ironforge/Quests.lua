@@ -25,14 +25,14 @@ _.Zones =
 					["groups"] = {
 						i(34418, {	-- Scrying Wand
 							["timeline"] = {
-								"removed 2.3.0.10000",
+								"added 2.3.0.10000",
 								"removed 4.0.3.10000",
 							},
 						}),
 						-- #if BEFORE MOP
 						i(34419, {	-- Thorium Flight Blade
 							["timeline"] = {
-								"removed 2.3.0.10000",
+								"added 2.3.0.10000",
 								"removed 4.0.3.10000",
 							},
 						}),
