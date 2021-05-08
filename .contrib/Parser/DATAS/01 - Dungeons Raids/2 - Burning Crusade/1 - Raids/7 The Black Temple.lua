@@ -93,6 +93,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["spellID"] = 0,	-- This is now available via 32737, need to delink the old plans from the recipe
 					["u"] = NEVER_IMPLEMENTED,
 				},
+				i(32227),	-- Crimson Spinel
+				i(32228),	-- Empyrean Sapphire
+				i(32229),	-- Lionseye
+				i(32231),	-- Pyrestone
+				i(32230),	-- Shadowsong Amethyst
+				i(32249),	-- Seaspray Emerald
 			}),
 			d(14, {	-- Normal
 				["lvl"] = 68,

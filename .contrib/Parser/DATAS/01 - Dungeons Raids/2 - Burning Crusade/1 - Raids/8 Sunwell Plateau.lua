@@ -843,6 +843,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						25315,	-- Kil'jaeden
 					},
 				},
+				i(32227),	-- Crimson Spinel
+				i(32228),	-- Empyrean Sapphire
+				i(32229),	-- Lionseye
+				i(32231),	-- Pyrestone
+				i(32230),	-- Shadowsong Amethyst
+				i(32249),	-- Seaspray Emerald
 			}),
 			e(1591, {	-- Kalecgos
 				["crs"] = {

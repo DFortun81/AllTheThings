@@ -1655,18 +1655,6 @@ _.Zones =
 				faction(935,  {	-- The Sha'tar
 					["crs"] = { 21432 },	-- Almaador <Sha'tari Quartermaster>
 					["g"] = {
-						q(13430, {	-- Trial of the Naaru: Magtheridon
-							["sourceQuests"] = {
-								10884,	-- Trial of the Naaru: Mercy
-								10885, 	-- Trial of the Naaru: Strength
-								10886,	-- Trial of the Naaru: Tenacity
-							},
-							["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
-							["provider"] = { "n", 18481 },	-- A'dal
-							["g"] = {
-								i(31746) -- Phoenix-Fire Band
-							},
-						}),
 						n(VENDORS, {
 							n(21432, {	-- Almaador <Sha'tari Quartermaster>
 								["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
