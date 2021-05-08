@@ -374,3 +374,12 @@ i(180415, 332245);	-- Winterborn Runestag
 -- PATCH 9.0.5 --
 -----------------
 i(184168, 344577);	-- Bound Shadehound
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+i(186647, 354356);	-- Amber Shardhide
+i(186477, 353873);	-- Pale Gravewing
+i(186648, 347251);	-- Soaring Razorwing
+i(186103, 352742);	-- Undying Darkhound
+i(186000, 352441);	-- Wild Hunt Legsplitter

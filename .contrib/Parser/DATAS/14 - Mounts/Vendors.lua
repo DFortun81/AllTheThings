@@ -12,6 +12,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(85262),	-- Amber Scorpion
+		i(186647),	-- Amber Shardhide
 		i(152794),	-- Amethyst Ruinstrider
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
@@ -92,7 +93,9 @@ _.Mounts =
 		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
-		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
+		i(128480, {	-- Bristling Hellboar
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		i(91005, {	-- Brown Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
@@ -301,6 +304,7 @@ _.Mounts =
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(180726),	-- Pale Acidmaw
+		i(186477),	-- Pale Gravewing
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(180762, {	-- Phalynx of Humility
@@ -404,6 +408,7 @@ _.Mounts =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25472),	-- Snowy Gryphon
+		i(186648),	-- Soaring Razorwing
 		i(64998, {	-- Spectral Steed [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),

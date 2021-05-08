@@ -11,7 +11,6 @@ _.Zones =
 				-- seems similar to Mogu/Mantid etc. assaults from Uldum/Vale, it's an automatically-started zone quest that lasts a few days
 				-- the quest was automatically on the map, but you had to speak to Xandria to ~activate it, and then all the other quests popped up.  weird system
 				-- everything after "Kyrian Assault" requires speaking to Xandria to show up.  these are probably periodically repeatable, like potentially up every time the kyrian assault is active
-				-- TODO: test doing all 4 quests for the assault but not completing it, letting the daily reset occur, and going back the next day to see if the quests have changed/if any new quests are available.  currently it appears that once you complete the assault fully there are no quests for the remainder of the days it's up
 				n(ACHIEVEMENTS, {
 					ach(15035, {	-- Breaking The Chains
 						ach(15033, {	-- Taking the Tremaculum
@@ -79,6 +78,14 @@ _.Zones =
 					["provider"] = { "n", 177900 },	-- Xandria
 					["isDaily"] = true,
 					["g"] = {
+					--[[ treasure that contains pet supposedly during kyrian assault, haven't found it yet
+						o(368935, {	-- Sinfall Screecher Cage
+							["coord"] = { , , THE_MAW },
+							["g"] = {
+								i(186544),	-- Sinfall Screecher (PET!)
+							},
+						}),
+					--]]
 						n(QUESTS, {
 							q(63858, {	-- Courage of the Soul
 								["provider"] = { "n", 178227 },
@@ -167,6 +174,7 @@ _.Zones =
 							}),
 							i(185993, {	-- Ascended War Chest
 						--	TODO: figure out the contents of this chest
+								i(186546),	-- Copperback Etherwyrm (PET!)
 							}),
 						}),
 					},
@@ -275,11 +283,20 @@ _.Zones =
 							i(185992, {	-- War Chest of the Undying Army
 						--	TODO: figure out the contents of this chest
 								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
+								i(186557),	-- Fodder (PET!)
 							--	i(186156),	-- PH Korthia Trinket
 							}),
 						}),
 					},
 				}),
+				--[[
+				-- this apparently comes from an Etherwyrm Cage from the Ardenweald/Night Fae assault.  probably also requires i(186190),	-- Etherwyrm Cage Key
+				i(186191),	-- Infused Etherwyrm (PET!)
+				i(, {	-- War Chest of the Wild Hunt
+					i(186547),	-- Invasive Buzzer (PET!)
+					i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
+				}),
+				--]]
 				q(63822, {	-- Venthyr Assault
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178006 },	-- Prince Renathal

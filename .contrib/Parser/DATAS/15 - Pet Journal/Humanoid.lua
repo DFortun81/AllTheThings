@@ -93,6 +93,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(298, {	-- Moonkin Hatchling (Horde)
 			["races"] = HORDE_ONLY,
 		})),
+		p(3132),			-- Mord'al Eveningstar
 		p(2681),			-- Murgle
 		un(REMOVED_FROM_GAME, p(329)),		-- Murkablo
 		un(REMOVED_FROM_GAME, p(1364)),		-- Murkalot

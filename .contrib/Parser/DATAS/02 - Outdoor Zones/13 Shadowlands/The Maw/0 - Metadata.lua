@@ -13,8 +13,6 @@ _.Zones =
 				1821,	-- Pit of Anguish
 				1822,	-- Maw Micro Tremaculum
 				1823,	-- Altar of Domination
-				KORTHIA,	-- may need to be moved to its own zone/subzone of "the maw"?  the maps are pretty janky on PTR right now so i'm not really sure
-				2006,	-- Korthia - Caverns of Contemplation
 			},
 		}),
 	}),

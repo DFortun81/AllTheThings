@@ -14,11 +14,13 @@ _.PetJournal =
 		p(331, {			-- Alliance Balloon (Alliance)
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(3117),			-- Amaranthine Stinger
 		p(732),				-- Amber Moth
 		p(2911),			-- Amber Glitterwing
 		p(1465),			-- Amberbarb Wisp
 		p(2586),			-- Amberglow Stinger
 		p(52),				-- Ancona Chicken
+		p(3102),			-- Animite Broodling
 		p(2126),			-- Antoran Bilescourge
 		p(1324),			-- Ashwing Moth
 		p(1470),			-- Axebeak Hatchling
@@ -52,6 +54,7 @@ _.PetJournal =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		p(47),				-- Cockatiel
+		p(3103),			-- Copperback Etherwyrm
 		p(2405, {			-- Corlain Falcon
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -137,6 +140,8 @@ _.PetJournal =
 		p(1532),			-- Ikky
 		p(534),				-- Imperial Eagle Chick
 		p(1039),			-- Imperial Moth
+		p(3099),			-- Infused Etherwyrm
+		p(3116),			-- Invasive Buzzer
 		p(792),				-- Jade Crane Chick
 		p(1202),			-- Ji-Kun Hatchling
 		p(1469),			-- Junglebeak
@@ -193,6 +198,7 @@ _.PetJournal =
 		p(2384),			-- Shore Butterfly
 		p(754),				-- Shrine Fly
 		p(503),				-- Silky Moth
+		p(3010),			-- Sinfall Screecher
 		p(1575),			-- Sky Fry
 		p(1350),			-- Sky Lantern
 		p(2134),			-- Skyfin Juvenile
@@ -236,6 +242,7 @@ _.PetJournal =
 		p(84),				-- Westfall Chicken
 		p(141),				-- White Moth
 		p(195),				-- White Tickbird Hatchling
+		p(3141),			-- Wild Corpsefly
 		p(2943),			-- Wild Etherwyrm
 		p(548),				-- Wildhammer Gryphon Hatchling
 		p(2853),			-- Windfeather Chick

@@ -18,6 +18,7 @@ _.PetJournal =
 		p(2767),	-- Burnout
 		p(2455),	-- Captain Nibs
 		p(3025),	-- Carpal
+		p(3115),	-- Clinging Remains
 		p(2950),	-- Clutch
 		p(264),		-- Crawling Claw
 		p(321),		-- Creepy Crate
@@ -28,6 +29,7 @@ _.PetJournal =
 		p(1967),	-- Drudge Ghoul
 		un(10, p(348)),	-- Eye of the Legion
 		un(REMOVED_FROM_GAME, p(346)),	-- Fetish Shaman
+		p(3114),	-- Fodder
 		p(266),		-- Fossilized Hatchling
 		p(1625),	-- Fragment of Anger
 		p(1627),	-- Fragment of Desire
@@ -42,7 +44,9 @@ _.PetJournal =
 		p(190),		-- Ghostly Skull
 		p(2754),	-- Ghostly Whelpling
 		p(1143),	-- Giant Bone Spider
+		p(3121),	-- Grappling Gauntlet
 		p(1639),	-- Graves
+		p(3120),	-- Grip of Terror
 		p(1622),	-- Grotesque
 		p(2747),	-- Gruesome Belcher
 		p(628),		-- Infected Fawn
@@ -52,6 +56,7 @@ _.PetJournal =
 		un(10, p(302)),	-- Landro's Lichling
 		p(2532),	-- Leper Rat
 		un(10, p(249)),		-- Lil' K.T.
+		p(3119),	-- Lost Limb
 		p(458),		-- Lost of Lordaeron
 		p(2895),	-- Lost Soul
 		p(3066),	-- Lucy

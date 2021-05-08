@@ -4662,5 +4662,8 @@ _.HiddenQuestTriggers =
 		q(64222),	-- Korthia treasure - Glittering Nest Material
 		q(64264),	-- Korthia treasure - Infested Vestige
 		q(64238),	-- Korthia treasure - Lost Memento
+		q(64316),	-- Korthia repeatable treasure, Relic Cache
+		q(64317),	-- Korthia repeatable treasure, Relic Cache
+		q(64318),	-- Korthia repeatable treasure, Relic Cache / Pile of Bones
 	}),
 };
