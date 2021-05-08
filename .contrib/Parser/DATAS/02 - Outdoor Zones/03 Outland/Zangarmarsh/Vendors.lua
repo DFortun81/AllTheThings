@@ -26,6 +26,12 @@ _.Zones =
 						i(27927, {	-- Mark of Vindication
 							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
 						}),
+						-- #if BEFORE MOP
+						i(27929, {	-- Terminal Edge
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					},
 				}),
 				n(19383, {	-- Captured Gnome
@@ -93,6 +99,12 @@ _.Zones =
 						i(27930, {	-- Splintermark
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 						}),
+						-- #if BEFORE MOP
+						i(27928, {	-- Terminal Edge
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					},
 				}),
 				n(18911, {	-- Juno Dufrain <Fishing Trainer>

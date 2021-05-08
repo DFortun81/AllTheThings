@@ -60,13 +60,29 @@ _.Zones =
 				q(9447,  {	-- Administering the Salve
 					["sourceQuests"] = { 9442 },	-- A Debilitating Sickness
 					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
+					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(25492)),	-- Earthcaller's Mace
-						un(REMOVED_FROM_GAME, i(25496)),	-- Mag'har Bow
-						un(REMOVED_FROM_GAME, i(25494)),	-- Totemic Staff
-						un(REMOVED_FROM_GAME, i(25495)),	-- Wolfrider's Dagger
+						i(25492, {	-- Earthcaller's Mace
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						i(25496, {	-- Mag'har Bow
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						i(25494, {	-- Totemic Staff
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						i(25495, {	-- Wolfrider's Dagger
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						-- #if BEFORE MOP
+						i(29212, {	-- Balanced Stone Dirk
+							["timeline"] = {
+								"added 2.0.1.10000",
+								"removed 4.0.3.10000"
+							},
+						}),
+						-- #endif
 					},
 				}),
 				q(29689, {	-- Advancing the Campaign (A)

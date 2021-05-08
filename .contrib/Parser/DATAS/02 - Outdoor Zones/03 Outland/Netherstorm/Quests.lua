@@ -681,6 +681,11 @@ _.Zones =
 					["coord"] = { 31.6, 56.6, NETHERSTORM },
 					["g"] = {
 						i(30226),	-- Alley's Recurve
+						-- #if BEFORE MOP
+						i(30227, {	-- Mark V's Throwing Star
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 						i(30252),	-- Unearthed Enkaat Wand
 					},
 				}),

@@ -974,6 +974,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28654),	-- Malefic Girdle
 					i(28661),	-- Mender's Heart-Ring
 					i(28785),	-- The Lightning Capacitor
+					-- #if BEFORE MOP
+					i(28659, {	-- Xavian Stiletto
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				},
 			}),
 			e(1559, {	-- Shade of Aran

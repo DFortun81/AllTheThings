@@ -31,11 +31,21 @@ _.Zones =
 					["sourceQuests"] = { 2967 },	-- Return to Thunder Bluff
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.4, 46.9, 88 },
+					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(34421)),	-- Cave Crawler's Mail Treads
-						un(REMOVED_FROM_GAME, i(34422)),	-- Tempered Thorium Boots
+					["groups"] = {
+						un(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
+							["timeline"] = {
+								"removed 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
+						un(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
+							["timeline"] = {
+								"removed 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
 					},
 				}),
 				q(27283, {	-- A Journey to Moonglade

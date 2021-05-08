@@ -149,6 +149,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					cr(22871, e(1585, {	-- Teron Gorefiend
 						i(32348),	-- Soul Cleaver
 						i(32325),	-- Rifle of the Stoic Guardian
+						-- #if BEFORE MOP
+						i(32326, {	-- Twisted Blades of Zarak
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 						i(32329),	-- Cowl of Benevolence
 						i(32323),	-- Shadowmoon Destroyer's Drape
 						i(32327),	-- Robe of the Shadow Council

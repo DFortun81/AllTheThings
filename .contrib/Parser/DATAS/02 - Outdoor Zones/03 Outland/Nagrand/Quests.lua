@@ -859,9 +859,30 @@ _.Zones =
 						9851,	-- Clefthoof Mastery
 						9859,	-- Talbuk Mastery
 					},
+					["cost"] = {
+						{ "i", 24505, 1 },	-- Heart of Tusker
+					},
 					["g"] = {
+						i(24505, {	-- Heart of Tusker
+							["cr"] = 18290,	-- Tusker <Queen of the Elekk>
+							["coord"] = { 44.2, 65.2, NAGRAND },
+						}),
 						i(25640),	-- Nesingwary Safari Stick
 						i(25639),	-- Hemet's Elekk Gun
+						-- #if BEFORE MOP
+						i(29211, {	-- Fitz's Throwing Axe
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						i(25644, {	-- Blessed Book of Nagrand
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						i(25643, {	-- Harold's Rejuvenating Broach
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						i(25645, {	-- Totem of the Plains
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					},
 				}),
 				q(9818,  {	-- The Underneath

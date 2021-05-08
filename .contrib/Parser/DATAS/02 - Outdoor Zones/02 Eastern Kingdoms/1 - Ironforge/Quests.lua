@@ -20,11 +20,23 @@ _.Zones =
 					["sourceQuests"] = { 2977 },	-- Return to Ironforge
 					["provider"] = { "n", 2916 },	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
+					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(34418)),	-- Scrying Wand
-						un(REMOVED_FROM_GAME, i(34419)),	-- Thorium Flight Blade
+					["groups"] = {
+						i(34418, {	-- Scrying Wand
+							["timeline"] = {
+								"removed 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						}),
+						-- #if BEFORE MOP
+						i(34419, {	-- Thorium Flight Blade
+							["timeline"] = {
+								"removed 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						}),
+						-- #endif
 					},
 				}),
 				q(700,   {	-- A King's Tribute

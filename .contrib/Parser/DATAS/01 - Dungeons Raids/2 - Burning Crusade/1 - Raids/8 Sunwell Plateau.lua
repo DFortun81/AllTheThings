@@ -642,9 +642,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						25369,	-- Sunblade Vindicator
 					},
 				},
+				-- #if BEFORE MOP
+				i(34349, {	-- Blade of Life's Inevitability
+					["timeline"] = { "removed 5.0.4.10000" },
+				}),
+				-- #endif
 				{	-- Gauntlets of the Ancient Shadowmoon
 					["itemID"] = 34350,	-- Gauntlets of the Ancient Shadowmoon
-					["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 					["crs"] = {
 						25593,	-- Apocalypse Guard
 						25599,	-- Cataclysm Hound
@@ -667,11 +671,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						25507,	-- Sunblade Protector
 						25368,	-- Sunblade Slayer
 						25369,	-- Sunblade Vindicator
-					},
-					["g"] = {
-						{	-- Gauntlets of the Ancient Frostwolf
-							["itemID"] = 34409,	-- Gauntlets of the Ancient Frostwolf
-						},
 					},
 				},
 				{	-- Mounting Vengeance
@@ -728,7 +727,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				{	-- Tranquil Majesty Wraps
 					["itemID"] = 34351,	-- Tranquil Majesty Wraps
-					["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 					["crs"] = {
 						25593,	-- Apocalypse Guard
 						25599,	-- Cataclysm Hound
@@ -751,11 +749,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						25507,	-- Sunblade Protector
 						25368,	-- Sunblade Slayer
 						25369,	-- Sunblade Vindicator
-					},
-					["g"] = {
-						{	-- Tranquil Moonlight Wraps
-							["itemID"] = 34407,	-- Tranquil Moonlight Wraps
-						},
 					},
 				},
 				{	-- Wand of Cleansing Light

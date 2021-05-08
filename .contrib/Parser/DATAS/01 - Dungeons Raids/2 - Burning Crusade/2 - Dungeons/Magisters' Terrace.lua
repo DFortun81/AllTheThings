@@ -111,6 +111,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(34472),	-- Shard of Contempt
 						i(34470),	-- Timbal's Focusing Crystal
 						i(34471),	-- Vial of the Sunwell
+						-- #if BEFORE MOP
+						i(34783, {	-- Nightstrike
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					},
 				}),
 				e(533, {	-- Kael'thas Sunstrider
@@ -179,6 +184,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(34602),	-- Eversong Bracers
 							i(34700),	-- Gauntlets of Divine Blessings
 							i(34701),	-- Leggings of the Betrayed
+							-- #if BEFORE MOP
+							i(34603, {	-- Distracting Blades
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(531, {	-- Vexallus
@@ -209,6 +219,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(34472),	-- Shard of Contempt
 							i(34470),	-- Timbal's Focusing Crystal
 							i(34471),	-- Vial of the Sunwell
+							-- #if BEFORE MOP
+							i(34783, {	-- Nightstrike
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(533, {	-- Kael'thas Sunstrider

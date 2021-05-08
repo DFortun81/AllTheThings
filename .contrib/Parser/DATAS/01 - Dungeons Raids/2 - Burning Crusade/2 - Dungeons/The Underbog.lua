@@ -44,6 +44,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(24452),	-- Starlight Gauntlets
 					i(27743),	-- Girdle of Living Flame
 					i(27748),	-- Cassock of the Loyal
+					-- #if BEFORE MOP
+					i(27631, {	-- Needle Shrike
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				})),
 				cr(18105, e(577, {	-- Ghaz'an
 					i(27757),	-- Greatstaff of the Leviathan
