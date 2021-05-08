@@ -1912,7 +1912,7 @@ _.HiddenQuestTriggers =
 		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
 		q(40722),	-- DK-Blood Artifact Chosen
 		q(43966),	-- DK-Frost Artifact Chosen
-		-- q(),	-- DK-Unholy Artifact Chosen
+		q(44404),	-- DK-Unholy Artifact Chosen
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"

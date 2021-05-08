@@ -343,9 +343,11 @@ _.ExpansionFeatures =
 						["maps"] = {
 							698,	-- Icecrown Citadel
 							700,	-- Icecrown Citadel
+							701,	-- Icecrown Citadel
 						},
 						["g"] = {
-							i(128292), -- Blades of the Fallen Prince
+							i(128292),	-- Blades of the Fallen Prince
+							i(127009),	-- Fragment of Frostmourne 
 						},
 					}),
 					q(40740, {	-- The Dead and the Damned [Blood]

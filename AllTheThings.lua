@@ -5913,7 +5913,7 @@ local fields = {
 	["collected"] = function(t)
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and t.artifactinfo[5] then
+		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
 			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
