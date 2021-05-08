@@ -36,13 +36,13 @@ _.Zones =
 					["groups"] = {
 						un(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
 							["timeline"] = {
-								"removed 2.3.0.10000",
+								"added 2.3.0.10000",
 								"removed 4.0.3.10000",
 							},
 						})),
 						un(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
 							["timeline"] = {
-								"removed 2.3.0.10000",
+								"added 2.3.0.10000",
 								"removed 4.0.3.10000",
 							},
 						})),
