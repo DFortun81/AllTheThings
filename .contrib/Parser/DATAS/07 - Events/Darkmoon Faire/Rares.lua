@@ -18,7 +18,7 @@ _.WorldEvents =
 			n(122899, {	-- Death Metal Knight
 				["questID"] = 47767,
 				["isWeekly"] = true,
-				["description"] = "|cff66ccffDeath Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.|r",
+				["description"] = "Death Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.",
 				["coords"] = {
 					{ 65.54, 68.29, 407 },	-- Cave Entrance [Allows it to be shown on meta DMF map]
 					{ 41.43, 42.19, 408 },	-- Fight becomes active

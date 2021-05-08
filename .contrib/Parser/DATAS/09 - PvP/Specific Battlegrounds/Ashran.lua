@@ -7,7 +7,7 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(1478, {	-- Ashran
 			["achievementID"] = 9102,	-- Ashran Victory
-			["description"] = "|cff66ccffAshran is a 40v40 epic battleground found in eastern Draenor.|r",
+			["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
 			["maps"] = { 588 },	-- Ashran
 			["lvl"] = { 25 },
 			["g"] = {

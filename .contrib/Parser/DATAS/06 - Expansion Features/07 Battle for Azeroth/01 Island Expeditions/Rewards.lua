@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-3338, {	-- Island Expeditions
 			n(-6015, {	-- Rewards
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",
-				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.|r",
+				["description"] = "These are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
 				["g"] = {
 					n(-3339, {	-- Item Sets
 						i(164367),	-- Plundered Blue Captain's Hat

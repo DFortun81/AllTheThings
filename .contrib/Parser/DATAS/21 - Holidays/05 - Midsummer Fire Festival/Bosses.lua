@@ -7,7 +7,7 @@ _.Holidays =
 	holiday(235474, {	-- Midsummer Fire Festival
 		n(-139, {	-- Bosses
 			n(25740, {	-- Ahune
-				["description"] = "|cff66ccffYou can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.|r",
+				["description"] = "You can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.",
 				["maps"] = { 265 },	-- The Slave Pens
 				["u"] = 21,	-- Midsummer Fire Festival
 				["g"] = {

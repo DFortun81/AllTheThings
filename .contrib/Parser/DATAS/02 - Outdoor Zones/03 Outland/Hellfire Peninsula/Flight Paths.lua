@@ -35,7 +35,7 @@ _.Zones =
 				}),
 				-- #endif
 				fp(141, {	-- Spinebreaker Ridge, Hellfire Peninsula
-					--["cr"] = ,	-- 
+					["cr"] = 19558,	-- Amilya Airheart <Wind Rider Master>
 					["coord"] = { 61.6, 81.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),

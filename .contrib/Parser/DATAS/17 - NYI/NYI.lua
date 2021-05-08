@@ -2582,7 +2582,7 @@ _.NeverImplemented =
 		i(13343),	-- Pet Stone
 		i(82800), 	-- "Pet Cage"
 		i(62769, { 	-- Hardboiled Egg
-			["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
+			["description"] = "Unable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.",
 			["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
 				p(1758),
 			},

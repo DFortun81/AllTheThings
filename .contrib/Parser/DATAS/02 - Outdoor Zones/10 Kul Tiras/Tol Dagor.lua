@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(1169, {	-- Tol Dagor
-			["description"] = "|cff66ccffA prison located on an island east of Tiragarde Sound.  Before the Ashvane Trading Company bought it, Tol Dagor used to be a real prison — now it is Priscilla Ashvane's own fortress, with scumbags on both sides of the bar.|r",
+			["description"] = "A prison located on an island east of Tiragarde Sound.  Before the Ashvane Trading Company bought it, Tol Dagor used to be a real prison — now it is Priscilla Ashvane's own fortress, with scumbags on both sides of the bar.",
 			["icon"] = "Interface\\Icons\\ability_demonhunter_imprison",
 			["groups"] = {
 				n(FLIGHT_PATHS, {
