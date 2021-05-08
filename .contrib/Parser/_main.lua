@@ -957,3 +957,20 @@ function Harvest(things)
 		end
 	end
 end
+function Artifacts(things)
+	if not _.Artifacts then _.Artifacts = {}; end
+	local thing;
+	for i,j in pairs(things) do
+		thing = _.Artifacts[i];
+		if not thing then
+			thing = {};
+			_.Artifacts[i] = thing;
+		end
+		if j[1] then
+			thing.offHand = j[1];
+		end
+		if j[2] then
+			thing.mainHand = j[2];
+		end
+	end
+end

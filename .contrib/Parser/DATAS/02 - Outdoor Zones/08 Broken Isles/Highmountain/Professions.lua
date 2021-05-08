@@ -366,7 +366,7 @@ _.Zones =
 					q(40192, {	-- Claw of the Land
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["g"] = {
-							i(194695),	-- Recipe: Warhide Belt (Rank 2)
+							i(137869),	-- Recipe: Warhide Belt (Rank 2)
 							i(137868),	-- Recipe: Warhide Bindings (Rank 2)
 						},
 					}),

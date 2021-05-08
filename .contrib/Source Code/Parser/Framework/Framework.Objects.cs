@@ -62,6 +62,11 @@ namespace ATT
             public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
 
             /// <summary>
+            /// All of the SourceID's harvested for Legion Artifacts
+            /// </summary>
+            public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
+
+            /// <summary>
             /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
             /// </summary>
             public static bool ProcessingSourceData = false;

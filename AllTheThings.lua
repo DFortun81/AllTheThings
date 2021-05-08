@@ -822,27 +822,11 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self:Show();
 		end
 
-		local s = reference.s;
-		if s then
-			if reference.artifactID then
-				-- Okay, fine.
-			elseif reference.g and #reference.g > 0 then
-				local header = reference.g[1];
-				if header and header.headerID and header.headerID <= -5200 and header.headerID >= -5206 then
-					-- Okay, we're good.
-				else
-					s = nil;
-				end
-			else
-				s = nil;
-			end
-		end
-
-		if s then
-			local categoryID, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(s);
-			if appearanceID then
+		if reference.s then
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.s);
+			if sourceInfo and sourceInfo.visualID then
 				self.Model:SetCamDistanceScale(0.8);
-				self.Model:SetItemAppearance(appearanceID);
+				self.Model:SetItemAppearance(sourceInfo.visualID);
 				self.Model:Show();
 				self:Show();
 				return true;
@@ -2926,13 +2910,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if itemID then
 			-- Grab the best matching source group.
 			local sourceGroup;
-			for i,j in ipairs(group.g or group) do
-				if j.modItemID == paramB then
-					sourceGroup = j;
+
+			-- Match the DB group by sourceID
+			if not sourceGroup and sourceID then
+				for i,j in ipairs(group.g or group) do
+					if j.s == sourceID then
+						sourceGroup = j;
+					end
 				end
 			end
 
-			-- Match the DB group by itemID if possible otherwise
+			-- Otherwise use modItemID for item accuracy
+			if not sourceGroup then
+				for i,j in ipairs(group.g or group) do
+					if j.modItemID == paramB then
+						sourceGroup = j;
+					end
+				end
+			end
+
+			-- Finally match the DB group by itemID
 			if not sourceGroup then
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
@@ -2966,7 +2963,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 								if otherSourceID == sourceID and not sourceGroup.missing then
 									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link;
+										local link = sourceGroup.link or sourceGroup.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -2990,7 +2987,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-											local link = otherATTSource.link;
+											local link = otherATTSource.link or otherATTSource.silentLink;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
@@ -3027,7 +3024,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 								if otherSourceID == sourceID and not sourceGroup.missing then
 									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link;
+										local link = sourceGroup.link or sourceGroup.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -3051,7 +3048,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 										-- Show information about the appearance:
 										local failText = "";
-										local link = otherATTSource.link;
+										local link = otherATTSource.link or otherATTSource.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -5896,14 +5893,14 @@ local fields = {
 	["key"] = function(t)
 		return "artifactID";
 	end,
-	["info"] = function(t)
+	["artifactinfo"] = function(t)
 		--[[
 		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
 			uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
 			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
 		]]--
 		local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
-		rawset(t, "info", info);
+		rawset(t, "artifactinfo", info);
 		return info;
 	end,
 	["f"] = function(t)
@@ -5915,14 +5912,15 @@ local fields = {
 	["collected"] = function(t)
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and t.info[5] then
+		if not GetRelativeField(t, "nmc", true) and t.artifactinfo[5] then
 			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
 	end,
 	["text"] = function(t)
+		if not t.artifactinfo then return RETRIEVING_DATA; end
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
-		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) and t.info then
+		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
 			return t.variantText;
 		end
 		return t.appearanceText;
@@ -5931,13 +5929,13 @@ local fields = {
 		return t.variantText;
 	end,
 	["variantText"] = function(t)
-		return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
+		return Colorize("Variant " .. t.artifactinfo[4], RGBToHex(t.artifactinfo[9] * 255, t.artifactinfo[10] * 255, t.artifactinfo[11] * 255));
 	end,
 	["appearanceText"] = function(t)
-		return "|cffe6cc80" .. (t.info[3] or "???") .. "|r";
+		return "|cffe6cc80" .. (t.artifactinfo[3] or "???") .. "|r";
 	end,
 	["description"] = function(t)
-		return t.info[6] or L["ARTIFACT_INTRO_REWARD"];
+		return t.artifactinfo[6] or L["ARTIFACT_INTRO_REWARD"];
 	end,
 	["atlas"] = function(t)
 		return "Forge-ColorSwatchBorder";
@@ -5949,7 +5947,7 @@ local fields = {
 		return "Forge-ColorSwatch";
 	end,
 	["atlas-color"] = function(t)
-		return { t.info[9], t.info[10], t.info[11], 1.0 };
+		return { t.artifactinfo[9], t.artifactinfo[10], t.artifactinfo[11], 1.0 };
 	end,
 	["model"] = function(t)
 		return t.parent and GetRelativeValue(t.parent, "model");
@@ -11782,34 +11780,36 @@ local function SetRowData(self, row, data)
 					if data.collected then
 						data.parent.progress = data.parent.progress + 1;
 					end
-					local item = AllTheThingsHarvestItems[data.itemID or data.silentItemID];
-					if not item then
-						item = {};
-					end
-					if data.bonusID then
-						local bonuses = item.bonuses;
-						if not bonuses then
-							bonuses = {};
-							item.bonuses = bonuses;
+					if data.artifactID then
+						local artifact = AllTheThingsArtifactsItems[data.artifactID];
+						if not artifact then
+							artifact = {};
 						end
-						bonuses[data.bonusID] = s;
-					elseif data.artifactID then
-						local artifacts = item.artifacts;
-						if not artifacts then
-							artifacts = {};
-							item.artifacts = artifacts;
-						end
-						artifacts[data.artifactID] = s;
+						artifact[data.isOffHand and 1 or 2] = s;
+						AllTheThingsArtifactsItems[data.artifactID] = artifact;
 					else
-						local mods = item.mods;
-						if not mods then
-							mods = {};
-							item.mods = mods;
+						local item = AllTheThingsHarvestItems[data.itemID];
+						if not item then
+							item = {};
 						end
-						mods[data.modID or 0] = s;
+						if data.bonusID then
+							local bonuses = item.bonuses;
+							if not bonuses then
+								bonuses = {};
+								item.bonuses = bonuses;
+							end
+							bonuses[data.bonusID] = s;
+						else
+							local mods = item.mods;
+							if not mods then
+								mods = {};
+								item.mods = mods;
+							end
+							mods[data.modID or 0] = s;
+						end
+						-- print("NEW SOURCE ID!",text,s);
+						AllTheThingsHarvestItems[data.itemID] = item;
 					end
-					-- print("NEW SOURCE ID!",text,s);
-					AllTheThingsHarvestItems[data.itemID or data.silentItemID] = item;
 				end
 			else
 				--print("NARP", text);
@@ -13754,14 +13754,6 @@ function app:GetDataCache()
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 
-		-- Pull all artifacts and get their relative itemID cached
-		-- TODO: remove this if artifacts have their sourceID in each raw artifact group
-		for artifactID,groups in pairs(fieldCache["artifactID"]) do
-			for _,group in pairs(groups) do
-				_ = group.silentItemID;
-			end
-		end
-
 		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	end
 	app.GetDataCache = function()
@@ -14556,7 +14548,9 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			local minID,maxID,oldRetries = app.customHarvestMin,app.customHarvestMax,app.MaximumItemInfoRetries;
+			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
+			self.min = minID;
+			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
@@ -14645,6 +14639,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 						end
 					else
 						table.sort(AllTheThingsHarvestItems);
+						table.sort(AllTheThingsArtifactsItems);
 						-- revert Debug if it was enabled by the harvester
 						if self.forcedDebug then
 							app.print("Reverted Debug Mode");
@@ -14655,6 +14650,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- revert the number of retries to retrieve item information
 						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
+						-- un-initialize self so we can harvest again without reloading if needed
+						self.initialized = nil;
 					end
 				end
 				-- Update the Harvester Window to re-populate row data for next refresh
@@ -17711,10 +17708,9 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 		app.customHarvestMin = tonumber(min);
 		app.customHarvestMax = tonumber(max);
 		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
-		if reset then
-			AllTheThingsHarvestItems = {};
-			app.print("Harvest Data Reset!");
-		end
+		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
+		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
+		if reset then app.print("Harvest Data Reset!"); end
 	end
 	app:GetWindow("Harvester"):Toggle();
 end
