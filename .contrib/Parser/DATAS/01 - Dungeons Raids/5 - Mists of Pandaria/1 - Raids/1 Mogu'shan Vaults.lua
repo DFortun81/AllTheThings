@@ -4,7 +4,6 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(317, { 	-- Mogu'shan Vaults
-		["order"] = "01",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,

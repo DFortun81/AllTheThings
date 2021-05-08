@@ -7,7 +7,6 @@ _.Instances = { tier(7, {	-- Legion
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
 		["coord"] = { 54.9, 62.3, 885 },
-		["order"] = "05",
 		["maps"] = {
 			909,
 			910,

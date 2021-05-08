@@ -6,7 +6,6 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-171, {	-- Quest Chains
-			["order"] = "02",
 			["g"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor

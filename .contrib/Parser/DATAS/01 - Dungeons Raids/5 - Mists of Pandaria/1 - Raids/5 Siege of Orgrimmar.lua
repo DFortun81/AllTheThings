@@ -4,7 +4,6 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(369, { 	-- Siege of Orgrimmar
-		["order"] = "05",
 		["isRaid"] = true,
 		["coords"] = {
 			{ 72.3, 44.3, 390 },	-- old Vale

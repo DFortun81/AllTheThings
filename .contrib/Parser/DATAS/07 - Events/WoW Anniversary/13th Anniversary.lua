@@ -127,7 +127,6 @@ _.WorldEvents =
 				}),
 			})),
 			n(-7, {	-- World Bosses
-				["ordered"] = true,
 				["u"] = 31, -- WoW Anniversary Filter
 				["g"] = bubbleDown({ ["u"] = 31, }, {	-- WoW Anniversary
 					n(121820, {	-- Azuregos [Azshara - Always Up]

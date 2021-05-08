@@ -4,7 +4,6 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(747, { 	-- Magtheridon's Lair
-		["order"] = "03",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

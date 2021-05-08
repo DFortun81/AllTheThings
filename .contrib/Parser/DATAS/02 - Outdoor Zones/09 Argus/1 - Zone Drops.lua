@@ -7,7 +7,6 @@ _.Zones =
 	m(905, {	-- Argus
 		["g"] = {
 			n(ZONEDROPS, {
-				["order"] = "06",
 				["description"] = "These tokens can drop from any mobs or treasure chest.",
 				["maps"] = {
 					885,	-- Antoran Wastes

@@ -4,8 +4,6 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	n(-7, {	-- World Bosses
-		["order"] = "00",
-		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 70,
 		["g"] = {

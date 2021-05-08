@@ -4,7 +4,6 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, { 	-- Firelands
-		["order"] = "05",
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, 198 },
 		["maps"] = { 367, 368, 369 },

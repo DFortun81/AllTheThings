@@ -4,7 +4,6 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(749, { 	-- The Eye
-		["order"] = "05",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

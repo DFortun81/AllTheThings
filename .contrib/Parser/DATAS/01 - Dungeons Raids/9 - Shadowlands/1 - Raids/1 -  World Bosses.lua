@@ -4,8 +4,6 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	n(-7, {	-- World Bosses
-		["order"] = "01",
-		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = { 60 },

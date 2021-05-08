@@ -4,7 +4,6 @@
 
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-857, {	-- Mythic+
-		["order"] = "07",
 		["g"] = {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)

@@ -12,6 +12,5 @@ _.Zones =
 			276,	-- The Maelstrom
 			839,	-- Priest: Legion Class Mount Map
 		},
-		["ordered"] = true,
 	}),
 };

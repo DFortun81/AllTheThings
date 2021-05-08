@@ -5061,11 +5061,6 @@ local function SortGroup(group, sortType, row, recur)
 				end
 				return false;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, "name", nil, recur);
-				end
-			end
 		elseif sortType == "progress" then
 			local progA, progB;
 			table.sort(group.g, function(a, b)
@@ -5077,11 +5072,6 @@ local function SortGroup(group, sortType, row, recur)
 				end
 				return false;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, "progress", nil, recur);
-				end
-			end
 		else
 			local sortA, sortB;
 			table.sort(group.g, function(a, b)
@@ -5089,26 +5079,18 @@ local function SortGroup(group, sortType, row, recur)
 				sortB = b and tostring(b[sortType]);
 				return sortA < sortB;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, sortType, nil, recur);
-				end
+		end
+		-- TODO: Add more sort types?
+		if recur then
+			for i,o in ipairs(group.g) do
+				SortGroup(o, sortType, nil, recur);
 			end
 		end
-		-- other sort types?
 	end
 	if row then
 		row:GetParent():GetParent():Update();
 		app.print("Finished Sorting.");
 	end
-end
-app.SortGroups = function(a,b)
-	-- Sort value starts with a number and the group name
-	-- Values < 50 are for groups manually positioned before alphabetic groups
-	-- 50 is for alphabetic groups for raids and cities, always before any dungeon or zone
-	-- 51 is for alphabetic groups for dungeons and zones
-	-- Values > 51 are for groups manually positioned after alphabetic groups
-	return a.sort < b.sort;
 end
 app.SortGroup = SortGroup;
 
@@ -7677,9 +7659,6 @@ local fields = {
 		end
 	end,
 	["isLockoutShared"] = app.ReturnFalse,
-	["sort"] = function(t)
-		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
-	end,
 };
 app.BaseInstance = app.BaseObjectFields(fields);
 app.CreateInstance = function(id, t)
@@ -8094,9 +8073,6 @@ local mapFields = {
 	["lvl"] = function(t)
 		return select(1, C_Map_GetMapLevels(t.mapID));
 	end,
-	["sort"] = function(t)
-		return (t.order or (t.isRaid and "50") or "51") .. t.name;
-	end,
 	["iconForAchievement"] = function(t)
 		return select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
 	end,
@@ -8117,10 +8093,6 @@ app.CreateMap = function(id, t)
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
-	end
-	if t.ordered and t.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		-- Only need to order groups alphabetically in non-english locales
-		table.sort(t.g, app.SortGroups);
 	end
 	return t;
 end
@@ -8429,10 +8401,7 @@ local npcFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.name;
-	end,
-
+	
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8514,9 +8483,6 @@ local headerFields = {
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
-	["sort"] = function(t)
-		return (t.order or "50") .. t.name;
-	end,
 	["nameAsAchievement"] = function(t)
 		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8596,10 +8562,7 @@ local objectFields = {
 	["icon"] = function(t)
 		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.name;
-	end,
-
+	
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8796,9 +8759,6 @@ local fields = {
 	end,
 	["requireSkill"] = function(t)
 		return t.professionID;
-	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.text;
 	end,
 };
 app.BaseProfession = app.BaseObjectFields(fields);
@@ -9486,11 +9446,7 @@ local fields = {
 
 app.BaseTier = app.BaseObjectFields(fields);
 app.CreateTier = function(id, t)
-	local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-	if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		table.sort(tier.g, app.SortGroups);
-	end
-	return tier
+	return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
 end
 end)();
 
@@ -14349,19 +14305,34 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
-
-				-- Check to see completion...
-				-- print("build groups");
-				BuildGroups(self.data, self.data.g);
-				-- print("update groups");
+				
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort by name if not in an instance
 				if not self.data.instanceID then
 					self.data.visible = true;
-					-- print("sort",self.mapID);
 					SortGroup(self.data, "name", nil, false);
 				end
+					
+				-- Move all "isRaid" entries to the top of the list.
+				if results.g then
+					local top = {};
+					for i=#results.g,1,-1 do
+						local o = results.g[i];
+						if o.isRaid then
+							table.remove(results.g, i);
+							table.insert(top, o);
+						end
+					end
+					for i,o in ipairs(top) do
+						table.insert(results.g, 1, o);
+					end
+				end
+				
+				-- Check to see completion...
+				-- print("build groups");
+				BuildGroups(self.data, self.data.g);
+				-- print("update groups");
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
 				if not self.fullCollapsed then

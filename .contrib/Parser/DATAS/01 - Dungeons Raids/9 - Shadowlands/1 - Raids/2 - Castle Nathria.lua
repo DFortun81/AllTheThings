@@ -6,7 +6,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
-		["order"] = "02",
 		["maps"] = {
 			1735,	-- The Grand Walk
 			1744,	-- The Purloined Stores

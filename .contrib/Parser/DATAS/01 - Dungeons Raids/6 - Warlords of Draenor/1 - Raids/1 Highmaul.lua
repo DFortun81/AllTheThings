@@ -4,7 +4,6 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(477, {	-- Highmaul
-		["order"] = "01",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 612,
