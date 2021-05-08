@@ -400,14 +400,6 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 49.5, 627 },
 				}),
-				q(40392, {	-- Call of the Marksman
-					["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
-					["classes"] = { HUNTER },
-					["providers"] = {
-						{ "n", 103415 },	-- Courier Larkspur
-						{ "n", 103741 },	-- Courier Larkspur
-					},
-				}),
 				q(44550, {	-- Called to Acherus
 					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
 					["coord"] = { 58.5, 45.2, 627 },	-- Anywhere in Dalaran really, but nice to have a specific coord
@@ -1062,15 +1054,6 @@ _.Zones =
 						{ "n", 107973 },	-- Emmarel Shadewarden
 					},
 				}),
-				q(40419, {	-- Rescue Mission
-					["sourceQuests"] = {
-						40400,	-- Clandestine Operation (alliance)
-						40402,	-- Clandestine Operation (horde)
-						40403,	-- Clandestine Operation (horde v2)
-					},
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 100190 },	-- Vareesa Windrunner
-				}),
 				q(47004, {	-- Restoration: The Bradensbrook Investigation (Druid version)
 					["sourceQuests"] = {
 						47027,  -- Legion Threat: Val'sharah
@@ -1262,11 +1245,6 @@ _.Zones =
 					q(49474, {	-- The Cursed Shard
 						["isBreadcrumb"] = true,
 					}),
-				}),
-				q(39427, {	-- The Eagle Spirit's Blessing
-					["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 104382 },	-- Apata Highmountain
 				}),
 			--	q(42005),	-- The End of the Saga -- starts in Howling Fjord
 				q(45420, {	-- The Eye of Aman'Thul

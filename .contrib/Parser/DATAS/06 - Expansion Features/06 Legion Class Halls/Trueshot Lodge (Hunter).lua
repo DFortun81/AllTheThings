@@ -46,131 +46,17 @@ _.ExpansionFeatures =
 					}),
 					q(42656),	-- Azure Weaponry
 					q(42397),	-- Baron and the Huntsman
-					q(40392),	-- Call of the Marksman
-					q(42389),	-- Calling Hilaire Home
-					q(42415),	-- Champion: Halduron Brightwing
-					q(42409),	-- Champion: Loren Stormhoof
-					q(46048, {	-- Champion: Nighthuntress Syrenne
+					q(40392, {	-- Call of the Marksman
+						["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
 						["classes"] = { HUNTER },
-					}),
-					q(44043),	-- Continuing the Legend
-					q(45392),	-- Dark Memento
-					q(42654),	-- Darkheart Thicket: Nightmare Oak
-					q(45551),	-- Devastating Effects
-					q(45555, {	-- Felbound Beasts
-						["classes"] = { HUNTER },
-					}),
-					q(46783),	-- Further Advancement
-					q(43880, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(42403, {	-- Highmountain Hunters
-						["isBreadcrumb"] = true,
-					}),
-					q(42393),	-- Homecoming
-					q(42659),	-- In Defense of Dalaran
-					q(42405),	-- Informing Our Allies
-					q(41047),	-- Infused with Power
-					q(46023, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(42689),	-- Knowing Our Enemy
-					q(46130, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(44680),	-- Leading by Example
-					q(42385),	-- Lending a Hand
-					q(42523),	-- Making Contact
-					q(42657),	-- Meeting in Moonclaw Vale
-					q(42400, {	-- Missing Mages
-						["sourceQuest"] = 42399,  -- Ready to Work
-						["classes"] = { HUNTER },
-					}),
-					q(42185, {	-- Never Hunt Alone
-						["sourceQuests"] = { 42158 },	-- The Creator's Workshop
-						["classes"] = { HUNTER },
-						["provider"] = { "n", 106558 },	-- Mimiron
-					}),
-					q(40955),	-- Oath of Service
-					q(40953),	-- On Eagle's Wings
-					q(44366),	-- One Last Adventure
-					q(42655),	-- Ore Under the Sea
-					q(44090),	-- Pledge of Loyalty
-					q(41542),	-- Preparation for the Hunt
-					q(45556, {	-- Ready to Strike
-						["classes"] = { HUNTER },
-					}),
-					q(42399),	-- Ready to Work
-					q(42134),	-- Recruiting More Troops
-					q(42390),	-- Recruiting Rexxar
-					q(42524),	-- Recruiting The Troops
-					q(41540),	-- Rendezvous with the Courier
-					q(42402),	-- Requesting Reinforcements
-					q(42408),	-- Required Reagents
-					q(42519),	-- Rise, Champions
-					q(42133),	-- Same Day Delivery
-					q(42384),	-- Scouting Reports
-					q(42395),	-- Signaling Trouble
-					q(45552, {	-- Soothing Wounds
-						["classes"] = { HUNTER },
-					}),
-					q(41574, {	-- Stolen Thunder
-						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
-						["classes"] = { HUNTER },
-						["provider"] = { "n", 104381 },	-- Grif Wildheart
+						["providers"] = {
+							{ "n", 103415 },	-- Courier Larkspur
+							{ "n", 103741 },	-- Courier Larkspur
+						},
+						["coord"] = { 71.5, 49.8, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
-					q(40958),	-- Tactical Matters
-					q(45554, {	-- Taking Control
-						["classes"] = { HUNTER },
-					}),
-					q(42526),	-- Tech It Up A Notch
-					q(40959),	-- The Campaign Begins
-					q(42158, {	-- The Creator's Workshop
-						["sourceQuests"] = { 41574 },	-- Stolen Thunder
-						["classes"] = { HUNTER },
-						["provider"] = { "n", 106558 },	-- Mimiron
-					}),
-					q(45553, {	-- The Nighthuntress Beckons
-						["classes"] = { HUNTER },
-						["provider"] = { "n", 117308 },	-- D'Bynn
-					}),
-					q(43182),	-- The Missing Vessel
-					q(42407),	-- The Nature of the Beast
-					q(42401, {	-- The Scent of Magic
-						["sourceQuest"] = 42400,  -- Missing Mages
-						["classes"] = { HUNTER },
-					}),
-					q(40385),	-- The Spear in the Shadow
-					q(40954),	-- The Unseen Path
-					q(42525),	-- Troops in the Field
-					q(44211),	-- Unseen Armaments
-					q(44212),	-- Unseen Fate
-					q(42394),	-- Unseen Protection
-					q(42388),	-- Urgent Summons
-					q(44233),	-- Walk This Way
-					q(46337, {	-- Night of the Wilds
-						["lvl"] = 110,
-						["classes"] = { HUNTER },
-						["g"] = {
-							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
-						},
-					}),
-					q(46149, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(44233, {	-- Walk This Way
-						i(139710),	-- Mask of the Unseen Path
-					}),
-					q(42659, {	-- In Defense of Dalaran
-						i(139707),	-- Hauberk of the Unseen Path
-					}),
-					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43423, {	-- A Hero's Weapon
-						sp(219663) -- Heroic Weapons [No item associated]
-					}),
-					--]]
-					-- TODO: Followers  Sort to other quests later
+					q(42389),	-- Calling Hilaire Home
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
 						["g"] = {
@@ -181,12 +67,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire <Unseen Path>
 						["g"] = {
 							follower(744),	-- Beastmaster Hilaire
-						},
-					}),
-					q(42519, {	-- Rise, Champions
-						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
-						["g"] = {
-							follower(593),	-- Emmarel Shadewarden
 						},
 					}),
 					q(42415, {	-- Champion: Halduron Brightwing
@@ -225,15 +105,207 @@ _.ExpansionFeatures =
 							follower(743),	-- Rexxar
 						},
 					}),
-					-- Hunter Hati Reborn Questline (BfA)
-					q(54913, {	-- Spark of Genius
-						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 47.8, 89.4, 1165 },
-						["races"] = HORDE_ONLY,
+					q(40400, {	-- Clandestine Operation (A)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = { 40392 },	-- Call of the Marksman
 						["classes"] = { HUNTER },
-						["lvl"] = 120,
-						["maps"] = { 1165 },	-- Dazar'alor
+						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
+						["coord"] = { 32.3, 32.5, 646 },
+						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
 					}),
+					q(40402, {	-- Clandestine Operation (H, Non-BloodElf)
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 40392 },	-- Call of the Marksman
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
+						["coord"] = { 32.3, 32.5, 646 },
+						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
+					}),
+					q(40403, {	-- Clandestine Operation (H, BloodElf only)
+						["races"] = exclude(BLOODELF, HORDE_ONLY),
+						["sourceQuests"] = { 40392 },	-- Call of the Marksman
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
+						["coord"] = { 32.3, 32.5, 646 },
+						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
+					}),
+					q(44043, {	-- Continuing the Legend
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(45392),	-- Dark Memento
+					q(42654),	-- Darkheart Thicket: Nightmare Oak
+					q(45551),	-- Devastating Effects
+					q(45555, {	-- Felbound Beasts
+						["classes"] = { HUNTER },
+					}),
+					q(46783),	-- Further Advancement
+					q(46149, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(43880, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(42403, {	-- Highmountain Hunters
+						["isBreadcrumb"] = true,
+					}),
+					q(42393),	-- Homecoming
+					q(42659, {	-- In Defense of Dalaran
+						i(139707),	-- Hauberk of the Unseen Path
+					}),
+					q(42405),	-- Informing Our Allies
+					q(41047),	-- Infused with Power
+					q(46023, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					q(42689),	-- Knowing Our Enemy
+					q(46130, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(44680),	-- Leading by Example
+					q(42385),	-- Lending a Hand
+					q(42523),	-- Making Contact
+					q(42657),	-- Meeting in Moonclaw Vale
+					q(42400, {	-- Missing Mages
+						["sourceQuest"] = 42399,  -- Ready to Work
+						["classes"] = { HUNTER },
+					}),
+					q(42185, {	-- Never Hunt Alone
+						["sourceQuests"] = { 42158 },	-- The Creator's Workshop
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 106558 },	-- Mimiron
+					}),
+					q(46337, {	-- Night of the Wilds
+						["classes"] = { HUNTER },
+						["g"] = {
+							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
+						},
+					}),
+					q(40955),	-- Oath of Service
+					q(40953),	-- On Eagle's Wings
+					q(44366, {	-- One Last Adventure
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(42655),	-- Ore Under the Sea
+					q(44090),	-- Pledge of Loyalty
+					q(41542, {	-- Preparation for the Hunt
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(45556, {	-- Ready to Strike
+						["classes"] = { HUNTER },
+					}),
+					q(42399),	-- Ready to Work
+					q(42134),	-- Recruiting More Troops
+					q(42390),	-- Recruiting Rexxar
+					q(42524),	-- Recruiting The Troops
+					q(41540, {	-- Rendezvous with the Courier
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(42402),	-- Requesting Reinforcements
+					q(42408),	-- Required Reagents
+					q(40419, {	-- Rescue Mission
+						["sourceQuests"] = {
+							40400,	-- Clandestine Operation (A)
+							40402,	-- Clandestine Operation (H non-BE)
+							40403,	-- Clandestine Operation (Blood Elf)
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 100190 },	-- Vareesa Windrunner
+						["coord"] = { 32.3, 32.5, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
+					q(42519, {	-- Rise, Champions
+						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
+						["g"] = {
+							follower(593),	-- Emmarel Shadewarden
+						},
+					}),
+					q(42133),	-- Same Day Delivery
+					q(42384, {	-- Scouting Reports
+						["sourceQuests"] = { 42526 },	-- Tech It Up A Notch
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(42395),	-- Signaling Trouble
+					q(45552, {	-- Soothing Wounds
+						["classes"] = { HUNTER },
+					}),
+					q(41574, {	-- Stolen Thunder
+						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 104381 },	-- Grif Wildheart
+						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(40958),	-- Tactical Matters
+					q(45554, {	-- Taking Control
+						["classes"] = { HUNTER },
+					}),
+					q(42526, {	-- Tech It Up A Notch
+						["sourceQuests"] = { 42525 },	-- Troops in the Field
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(40959),	-- The Campaign Begins
+					q(42158, {	-- The Creator's Workshop
+						["sourceQuests"] = { 41574 },	-- Stolen Thunder
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 106558 },	-- Mimiron
+					}),
+					q(39427, {	-- The Eagle Spirit's Blessing
+						["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 104382 },	-- Apata Highmountain
+						["coord"] = { 71.0, 50.0, 627 },
+						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(45553, {	-- The Nighthuntress Beckons
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 117308 },	-- D'Bynn
+					}),
+					q(43182),	-- The Missing Vessel
+					q(42407),	-- The Nature of the Beast
+					q(42401, {	-- The Scent of Magic
+						["sourceQuest"] = 42400,  -- Missing Mages
+						["classes"] = { HUNTER },
+					}),
+					q(40385, {	-- The Spear in the Shadow
+						["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
+						["classes"] = { HUNTER },
+						["providers"] = {
+							{ "n", 110821 },	-- Apata Highmountain
+							{ "n", 110986 },	-- Apata Highmountain
+						},
+						["coord"] = { 60.8, 80.9, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
+					q(40954),	-- The Unseen Path
+					q(42525, {	-- Troops in the Field
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(44211),	-- Unseen Armaments
+					q(44212),	-- Unseen Fate
+					q(42394),	-- Unseen Protection
+					q(42388),	-- Urgent Summons
+					q(44233, {	-- Walk This Way
+						i(139710),	-- Mask of the Unseen Path
+					}),
+					--[[ Artifact Appearance  Quests Commented Out For Now
+					q(43423, {	-- A Hero's Weapon
+						sp(219663) -- Heroic Weapons [No item associated]
+					}),
+					--]]
+					-- Hunter Hati Reborn Questline (BfA)
 					q(55516, {	-- Spark of Genius (A)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 72.8, 14.0, 1161 },
@@ -241,6 +313,14 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
+					}),
+					q(54913, {	-- Spark of Genius (H)
+						["provider"] = { "n", 152002 },	-- Image of Mimiron
+						["coord"] = { 47.8, 89.4, 1165 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { HUNTER },
+						["lvl"] = 120,
+						["maps"] = { 1165 },	-- Dazar'alor
 					}),
 					q(54915, {	-- Telemetry Online
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
@@ -326,6 +406,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
+						["coord"] = { 52.6, 50.3, 739 },
 						["classes"] = { HUNTER },
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["g"] = {
@@ -333,56 +414,62 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
-						i(139713, {	-- Belt of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(143727, {	-- Champion's Salute (TOY!)
-							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-						}),
-						i(139709, {	-- Grips of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139707, {	-- Hauberk of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(136855),	-- Hunter's Call (TOY!)
-						i(140938, {	-- Huntmaster's Armor Kit
-							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-						}),
-						i(140969, {	-- Huntmaster's Greater Armor Kit
-							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-						}),
-						i(140548),	-- Huntmaster's Halberd
-						i(140968, {	-- Huntmaster's Lesser Armor Kit
-							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-						}),
-						i(140539),	-- Huntmaster's Longbow
-						i(140544),	-- Huntmaster's Rifle
-						i(139711, {	-- Leggings of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139710, {	-- Mask of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(136781, {	-- Pet Training Manual: Fetch
-							["spellID"] = 125050,	-- Fetch
-						}),
-						i(136780, {	-- Pet Training Manual: Play Dead
-							["spellID"] = 209997,	-- Play Dead
-						}),
-						i(139712, {	-- Spaulders of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139708, {	-- Treads of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139714, {	-- Wristwraps of the Unseen Path
-							["cost"] = 5000000,	-- 500g
-						}),
+						["coord"] = { 44.6, 48.8, 739 },
+						["g"] = {
+							i(139713, {	-- Belt of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(139709, {	-- Grips of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139707, {	-- Hauberk of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(136855, {	-- Hunter's Call (TOY!)
+								["cost"] = 500000,	-- 50g
+							}),
+							i(140938, {	-- Huntmaster's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(140969, {	-- Huntmaster's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(140548),	-- Huntmaster's Halberd
+							i(140968, {	-- Huntmaster's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
+							i(140539),	-- Huntmaster's Longbow
+							i(140544),	-- Huntmaster's Rifle
+							i(139711, {	-- Leggings of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139710, {	-- Mask of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(136781, {	-- Pet Training Manual: Fetch
+								["spellID"] = 125050,	-- Fetch
+							}),
+							i(136780, {	-- Pet Training Manual: Play Dead
+								["spellID"] = 209997,	-- Play Dead
+							}),
+							i(139712, {	-- Spaulders of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139708, {	-- Treads of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139714, {	-- Wristwraps of the Unseen Path
+								["cost"] = 5000000,	-- 500g
+							}),
+						},
 					}),
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["classes"] = { HUNTER },
+						["coord"] = { 58.8, 31.8, 739 },
 						["g"] = {
 							i(147580, {	-- Tome of the Hybrid Beast
 								--["spellID"] = 242155,	-- Hybrid Kinship
@@ -397,9 +484,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(103325, {	-- Uthrok
-						i(11304, {	-- Fine Bow
-							["isLimited"] = true,
-						}),
+						["coord"] = { 58.9, 50.1, 739 },
+						["g"] = {
+							i(11304, {	-- Fine Bow
+								["isLimited"] = true,
+							}),
+						},
 					}),
 				}),
 			},
