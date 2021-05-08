@@ -399,6 +399,12 @@ _.ExpansionFeatures =
 						["coord"] = { 37.6, 31.8, 717 },
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
+					q(42517, {	-- Ritual of Doom
+						["description"] =  "Requires the Demonic Offering Class Hall upgrade",
+						["classes"] = { WARLOCK },
+						["coord"] = { 57.0, 41.0, 717 },
+						["provider"] = { "n", 111740 },	-- Mile Raithborne
+					}),
 					q(43254, {	-- Ritual Ruination
 						["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
 						["classes"] = { WARLOCK },
@@ -596,7 +602,6 @@ _.ExpansionFeatures =
 					q(41785),	-- Finding Fizzlebang
 					q(41793),	-- Lulubelle on Loan
 					q(40821),	-- Power Overwhelming
-					q(42517),	-- Ritual of Doom
 					q(43895),	-- Sealing Fate: Gold
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders

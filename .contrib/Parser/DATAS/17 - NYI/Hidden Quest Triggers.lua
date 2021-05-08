@@ -1782,11 +1782,6 @@ _.HiddenQuestTriggers =
 		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
 		q(36588),	-- Tracking - See Closed Chest — triggered immediately after accepting quest #34410, "The Beating Heart"
 		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
-		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
-		q(44609),	-- Tracking Quest: Holy Ground 2
-		q(44610),	-- Tracking Quest: Holy Ground 3
-		q(44611),	-- Tracking Quest: Holy Ground 4
-		q(44612),	-- Tracking Quest: Holy Ground 5
 		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
 		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
 		q(39518),	-- Demon Hunter - picked Vengeance during "Fel Secrets" on Mardum
@@ -1909,13 +1904,6 @@ _.HiddenQuestTriggers =
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
-		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
-		q(40722),	-- DK-Blood Artifact Chosen
-		q(43966),	-- DK-Frost Artifact Chosen
-		q(44404),	-- DK-Unholy Artifact Chosen
-		q(40936),	-- Convincing Revil Kost to help during 'Apocalypse' (40930)
-		q(40986),	-- Completed 'The Dark Riders' (40934) / Unlocked Apocalypse DK-Unholy Artifact
-		q(40987),	-- Completed 'The Call of Vengeance' (40935)
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
@@ -1975,10 +1963,17 @@ _.HiddenQuestTriggers =
 		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
 		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
 		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
+		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen
+		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
+		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
+		q(40936),	-- Death Knight Order Hall - Convincing Revil Kost to help during 'Apocalypse' (40930)
+		q(40986),	-- Death Knight Order Hall - Completed 'The Dark Riders' (40934) / Unlocked Apocalypse DK-Unholy Artifact
+		q(40987),	-- Death Knight Order Hall - Completed 'The Call of Vengeance' (40935)
 
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
 		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
+		q(44380),	-- Demon Hunter Order Hall - Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
 		q(41129),	-- Demon Hunter Altruis - wrong answer chosen at the violet citadel during "By Any Means"
 		q(43467),	-- Demon Hunter Order Hall - Boarding the Fel Hammer - triggers when entering Mardum for the first time
 		q(41045),	-- Demon Hunter Order Hall - Matron Moves - triggers after walking into the Fel Hammer
@@ -2005,16 +2000,16 @@ _.HiddenQuestTriggers =
 		q(43977),	-- Druid Order Hall - Guardian Chosen (Second)
 		q(44434),	-- Druid Order Hall - Guardian Chosen (Third)
 		q(44446),	-- Druid Order Hall - Guardian Chosen (Forth)
-		q(43353),	-- Gathering the Dreamweavers: Celestine of the Harvest
-		q(43354),	-- Gathering the Dreamweavers: Thisalee Crow
-		q(43355),	-- Gathering the Dreamweavers: Matoclaw
-		q(43356),	-- Gathering the Dreamweavers: Talza
-		q(43357),	-- Gathering the Dreamweavers: Graham Silverclaw
-		q(44642),	-- Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
-		q(42361),	-- Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
-		q(42363),	-- Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
-		q(42513),	-- Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
-		q(41885),	-- Naralex Kneel Seen — drinking the potion while next to Naralex during #41436, "In Deep Slumber"
+		q(43353),	-- Druid Order Hall - Gathering the Dreamweavers: Celestine of the Harvest
+		q(43354),	-- Druid Order Hall - Gathering the Dreamweavers: Thisalee Crow
+		q(43355),	-- Druid Order Hall - Gathering the Dreamweavers: Matoclaw
+		q(43356),	-- Druid Order Hall - Gathering the Dreamweavers: Talza
+		q(43357),	-- Druid Order Hall - Gathering the Dreamweavers: Graham Silverclaw
+		q(44642),	-- Druid Order Hall - Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
+		q(42361),	-- Druid Order Hall - Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
+		q(42363),	-- Druid Order Hall - Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
+		q(42513),	-- Druid Order Hall - Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
+		q(41885),	-- Druid Order Hall - Naralex Kneel Seen — drinking the potion while next to Naralex during #41436, "In Deep Slumber"
 
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -2026,7 +2021,7 @@ _.HiddenQuestTriggers =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
-		q(43158),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(43158),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second
@@ -2099,6 +2094,11 @@ _.HiddenQuestTriggers =
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 		q(43507), 	-- Priest Order Hall - Looting the priest altar
 		q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
+		q(44608),	-- Priest Order Hall - Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
+		q(44609),	-- Priest Order Hall - Tracking Quest: Holy Ground 2
+		q(44610),	-- Priest Order Hall - Tracking Quest: Holy Ground 3
+		q(44611),	-- Priest Order Hall - Tracking Quest: Holy Ground 4
+		q(44612),	-- Priest Order Hall - Tracking Quest: Holy Ground 5
 		q(42328),	-- Priest Order Hall - Tracking Quest: Lumenstone 1
 		q(42329),	-- Priest Order Hall - Tracking Quest: Lumenstone 2
 		q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
@@ -2185,6 +2185,11 @@ _.HiddenQuestTriggers =
 		q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
 		q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
 		q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
+		q(44438),	-- Warlock Order Hall - Tracking Quest: New Blood 1
+		q(44439),	-- Warlock Order Hall - Tracking Quest: New Blood 2
+		q(44440),	-- Warlock Order Hall - Tracking Quest: New Blood 3
+		q(44441),	-- Warlock Order Hall - Tracking Quest: New Blood 4
+		q(44442),	-- Warlock Order Hall - Tracking Quest: New Blood 5
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
@@ -2250,13 +2255,6 @@ _.HiddenQuestTriggers =
 		q(43132),	-- Tracking Quest: Freya's Spring 4
 		q(43133),	-- Tracking Quest: Freya's Spring 5
 		q(44647),	-- Tracking Quest: Triggers after finishing the mission 'Impending Danger' for quest 'Impending Danger (32442)'
-
-		-- Warlock class campaign
-		q(44438),	-- Tracking Quest: New Blood 1
-		q(44439),	-- Tracking Quest: New Blood 2
-		q(44440),	-- Tracking Quest: New Blood 3
-		q(44441),	-- Tracking Quest: New Blood 4
-		q(44442),	-- Tracking Quest: New Blood 5
 
 		--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
