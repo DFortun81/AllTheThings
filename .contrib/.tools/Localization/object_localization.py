@@ -9,7 +9,8 @@ from collections import namedtuple
 import requests
 from bs4 import BeautifulSoup
 
-custom_objects_const = 9000000
+CUSTOM_OBJECTS_CONST = 9000000
+LOCALES_DIR = "../../../locales/"
 
 
 def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
@@ -55,7 +56,7 @@ def get_todo_lines_and_og_names(lines):
                     break
                 if "--TODO: " in line:
                     obj_id = re.search(r"\d+", line).group()
-                    if int(obj_id) > custom_objects_const:  # custom objects
+                    if int(obj_id) > CUSTOM_OBJECTS_CONST:  # custom objects
                         ind += 1
                         continue
                     todo_dict[ind] = obj_id
@@ -272,13 +273,13 @@ def sync_objects(objects, filename, lang_code):
 
 
 def copy_esES_objects_to_esMX():
-    es_objects = get_objects_info("../../../locales/esES.lua").objects
-    _, esMX_start, esMX_end = get_objects_info("../../../locales/esMX.lua")
-    f = open("../../../locales/esMX.lua")
+    es_objects = get_objects_info(f"{LOCALES_DIR}esES.lua").objects
+    _, esMX_start, esMX_end = get_objects_info(f"{LOCALES_DIR}esMX.lua")
+    f = open(f"{LOCALES_DIR}esMX.lua")
     contents = f.readlines()
     f.close()
     localized_obj_lines = [i.line for i in es_objects]
     contents[esMX_start : esMX_end + 1] = localized_obj_lines
-    f = open("../../../locales/esMX.lua", "w")
+    f = open(f"{LOCALES_DIR}esMX.lua", "w")
     f.writelines(contents)
     f.close()
