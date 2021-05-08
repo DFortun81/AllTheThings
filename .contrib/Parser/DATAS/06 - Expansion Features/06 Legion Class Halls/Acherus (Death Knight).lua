@@ -13,6 +13,9 @@ _.ExpansionFeatures =
 			},
 			["lvl"] = 98,
 			["g"] = {
+				n(FLIGHT_PATHS, {
+					fp(1862),
+				}),
 				n(QUESTS, {
 					q(39761, {	-- Advanced Runecarving
 						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
@@ -337,12 +340,20 @@ _.ExpansionFeatures =
 					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
+						["maps"] = {
+							698,	-- Icecrown Citadel
+							700,	-- Icecrown Citadel
+						},
 						["g"] = {
 							i(128292), -- Blades of the Fallen Prince
 						},
 					}),
 					q(40740, {	-- The Dead and the Damned [Blood]
 						["classes"] = { DEATHKNIGHT },
+						["maps"] = {
+							701,	-- Icecrown Citadel
+							714,	-- Niskara
+						},
 						["g"] = {
 							i(128402), -- Maw of the Damned
 						},

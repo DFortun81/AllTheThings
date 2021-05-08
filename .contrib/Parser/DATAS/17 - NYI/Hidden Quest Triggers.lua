@@ -1910,12 +1910,24 @@ _.HiddenQuestTriggers =
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
 		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
+		q(40722),	-- DK-Blood Artifact Chosen
+		q(43966),	-- DK-Frost Artifact Chosen
+		-- q(),	-- DK-Unholy Artifact Chosen
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
 		q(47255), 	-- Triggers after completing "Mark of the Sentinax" (47139)
+		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
+			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
+			["name"] = "Flight Path Unlock",
+			["sourceQuests"] = {
+				40740,	-- The Dead and the Damned [Blood Artifact]*
+				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
+				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
+			},
+		}),
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -2091,6 +2103,7 @@ _.HiddenQuestTriggers =
 		q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
+					-- DK Order Hall - Entered class hall for the first time
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
 		q(44037),	-- Rogue Order Hall - Combat Chosen

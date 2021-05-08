@@ -14115,12 +14115,13 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		self.SetMapID = function(self, mapID)
+			-- print("SetMapID",mapID)
 			self.mapID = mapID;
 			self:SetVisible(true);
 			self:Update();
 		end
 		self.Rebuild = function(self)
-			-- print("rebuild",self.mapID);
+			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
 			if self:IsSameMapData() then
 				self:Update();
@@ -14347,7 +14348,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- print("build groups");
 				BuildGroups(self.data, self.data.g);
 				-- print("update groups");
-				UpdateGroups(self.data, self.data.g);
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort by name if not in an instance
@@ -14422,33 +14422,32 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					print("Path: ", mapPath);
 					app.report();
 				end
-				self.data = app.CreateMap(mapID, {
-					['text'] = L["MINI_LIST"],
-					['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp",
+				self.data = app.CreateMap(self.mapID, {
+					["text"] = L["MINI_LIST"] .. " [" .. self.mapID .. "]",
+					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
-					['visible'] = true,
-					['expanded'] = true,
-					['g'] = {
+					["visible"] = true,
+					["expanded"] = true,
+					["g"] = {
 						{
-							['text'] = L["UPDATE_LOCATION_NOW"],
-							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-							['description'] = L["UPDATE_LOCATION_NOW_DESC"],
-							['visible'] = true,
-							['collectible'] = true,
-							['collected'] = false,
-							['OnClick'] = function(row, button)
-								Push(self, "ResetMapID", function() self:SetMapID(app.CurrentMapID) end);
+							["text"] = L["UPDATE_LOCATION_NOW"],
+							["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+							["description"] = L["UPDATE_LOCATION_NOW_DESC"],
+							["OnClick"] = function(row, button)
+								Push(self, "ResetMapID", function() self.displayedMapID = -1; self:SetMapID(app.GetCurrentMapID()) end);
 								return true;
 							end,
+							["OnUpdate"] = app.AlwaysShowUpdate,
 						},
 					},
 				});
+				BuildGroups(self.data, self.data.g);
 			end
 			SelfCallback(self, "Update",
 				function() self:Update(); end);
 		end
 		local function OpenMiniList(id, show)
-			-- print("open",id,show);
+			-- print("OpenMiniList",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
 			local self = app:GetWindow("CurrentInstance");
 			if not self:IsVisible() then
@@ -14520,7 +14519,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.data.total = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
