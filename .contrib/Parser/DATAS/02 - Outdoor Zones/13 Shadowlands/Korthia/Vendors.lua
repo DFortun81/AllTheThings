@@ -8,7 +8,6 @@ _.Zones =
 		m(KORTHIA, {
 			n(VENDORS, {
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
-				--	TODO: move to korthia if we wind up separating maps
 					["coord"] = { 63.5, 23.3, KORTHIA },
 					["g"] = {
 					--	TODO: are these 'renathal' ensembles venthyr-only?  are there ones for each armor class (both are purely 'cosmetic,' not tagged 'cloth')?  need to add any missing ensembles + the gear they contain
@@ -64,7 +63,6 @@ _.Zones =
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
 							["cost"] = { { "c", 1767, 7500 } },	-- 7,500x Stygia
 						}),
-						
 					},
 				}),
 			}),
