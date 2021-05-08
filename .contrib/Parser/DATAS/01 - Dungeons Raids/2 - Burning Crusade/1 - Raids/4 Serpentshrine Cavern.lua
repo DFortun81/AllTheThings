@@ -84,46 +84,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1569, {	-- Leotheras the Blind
 				["creatureID"] = 21215,
 				["groups"] = {
-					i(30239, {	-- Gloves of the Vanquished Champion
-						i(30130),	-- Crystalforge Gauntlets
-						i(30135),	-- Crystalforge Gloves
-						i(30124),	-- Crystalforge Handguards
-						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-						i(32021),	-- Merciless Gladiator's Ornamented Gloves
-						i(32040),	-- Merciless Gladiator's Scaled Gauntlets
-						i(30145),	-- Deathmantle Handguards
-						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(30189),	-- Cataclysm Gauntlets
-						i(30165),	-- Cataclysm Gloves
-						i(30170),	-- Cataclysm Handgrips
-						i(32005),	-- Merciless Gladiator's Linked Gauntlets
-						i(32010),	-- Merciless Gladiator's Mail Gauntlets
-						i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
-					}),
-					i(30240, {	-- Gloves of the Vanquished Defender
-						i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-						i(31987),	-- Merciless Gladiator's Kodohide Gloves
-						i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
-						i(30232),	-- Nordrassil Gauntlets
-						i(30217),	-- Nordrassil Gloves
-						i(30223),	-- Nordrassil Handgrips
-						i(30151),	-- Gloves of the Avatar
-						i(30160),	-- Handguards of the Avatar
-						i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-						i(32034),	-- Merciless Gladiator's Satin Gloves
-						i(30119),	-- Destroyer Gauntlets
-						i(30114),	-- Destroyer Handguards
-						i(30487),	-- Merciless Gladiator's Plate Gauntlets
-					}),
-					i(30241, {	-- Gloves of the Vanquished Hero
-						i(31961),	-- Merciless Gladiator's Chain Gauntlets
-						i(30140),	-- Rift Stalker Gauntlets
-						i(30205),	-- Gloves of Tirisfal
-						i(32049),	-- Merciless Gladiator's Silk Handguards
-						i(30211),	-- Gloves of the Corruptor
-						i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-						i(31981),	-- Merciless Gladiator's Felweave Handguards
-					}),
+					i(30239),	-- Gloves of the Vanquished Champion
+					i(30240),	-- Gloves of the Vanquished Defender
+					i(30241),	-- Gloves of the Vanquished Hero
 					i(30095),	-- Fang of the Leviathan
 					i(30097),	-- Coral-Barbed Shoulderpads
 					i(30091),	-- True-Aim Stalker Bands
@@ -135,46 +98,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1570, {	-- Fathom-Lord Karathress
 				["creatureID"] = 21214,
 				["groups"] = {
-					i(30245, {	-- Leggings of the Vanquished Champion
-						i(30132),	-- Crystalforge Greaves
-						i(30137),	-- Crystalforge Leggings
-						i(30126),	-- Crystalforge Legguards
-						i(31995),	-- Merciless Gladiator's Lamellar Legguards
-						i(32023),	-- Merciless Gladiator's Ornamented Legplates
-						i(32042),	-- Merciless Gladiator's Scaled Legguards
-						i(30148),	-- Deathmantle Legguards
-						i(32000),	-- Merciless Gladiator's Leather Legguards
-						i(30172),	-- Cataclysm Leggings
-						i(30167),	-- Cataclysm Legguards
-						i(30192),	-- Cataclysm Legplates
-						i(32007),	-- Merciless Gladiator's Linked Leggings
-						i(32012),	-- Merciless Gladiator's Mail Leggings
-						i(32032),	-- Merciless Gladiator's Ringmail Leggings
-					}),
-					i(30246, {	-- Leggings of the Vanquished Defender
-						i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-						i(31989),	-- Merciless Gladiator's Kodohide Legguards
-						i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
-						i(30229),	-- Nordrassil Feral-Kilt
-						i(30220),	-- Nordrassil Life-Kilt
-						i(30234),	-- Nordrassil Wrath-Kilt
-						i(30153),	-- Breeches of the Avatar
-						i(30162),	-- Leggings of the Avatar
-						i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-						i(32036),	-- Merciless Gladiator's Satin Leggings
-						i(30121),	-- Destroyer Greaves
-						i(30116),	-- Destroyer Legguards
-						i(30489),	-- Merciless Gladiator's Plate Legguards
-					}),
-					i(30247, {	-- Leggings of the Vanquished Hero
-						i(31963),	-- Merciless Gladiator's Chain Leggings
-						i(30142),	-- Rift Stalker Leggings
-						i(30207),	-- Leggings of Tirisfal
-						i(32051),	-- Merciless Gladiator's Silk Trousers
-						i(30213),	-- Leggings of the Corruptor
-						i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-						i(31983),	-- Merciless Gladiator's Felweave Trousers
-					}),
+					i(30245),	-- Leggings of the Vanquished Champion
+					i(30246),	-- Leggings of the Vanquished Defender
+					i(30247),	-- Leggings of the Vanquished Hero
 					i(30090),	-- World Breaker
 					i(30099),	-- Frayed Tether of the Drowned
 					i(30101),	-- Bloodsea Brigand's Vest
@@ -207,46 +133,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["groups"] = {
 					ach(694),	-- Serpentshrine Cavern
 					i(97554),	-- Dripping Strider Egg (PET!)
-					i(30242, {	-- Helm of the Vanquished Champion
-						i(30125),	-- Crystalforge Faceguard
-						i(30136),	-- Crystalforge Greathelm
-						i(30131),	-- Crystalforge War-Helm
-						i(31997),	-- Merciless Gladiator's Lamellar Helm
-						i(32022),	-- Merciless Gladiator's Ornamented Headcover
-						i(32041),	-- Merciless Gladiator's Scaled Helm
-						i(30146),	-- Deathmantle Helm
-						i(31999),	-- Merciless Gladiator's Leather Helm
-						i(30166),	-- Cataclysm Headguard
-						i(30171),	-- Cataclysm Headpiece
-						i(30190),	-- Cataclysm Helm
-						i(32006),	-- Merciless Gladiator's Linked Helm
-						i(32011),	-- Merciless Gladiator's Mail Helm
-						i(32031),	-- Merciless Gladiator's Ringmail Helm
-					}),
-					i(30243, {	-- Helm of the Vanquished Defender
-						i(31968),	-- Merciless Gladiator's Dragonhide Helm
-						i(31988),	-- Merciless Gladiator's Kodohide Helm
-						i(32057),	-- Merciless Gladiator's Wyrmhide Helm
-						i(30228),	-- Nordrassil Headdress
-						i(30219),	-- Nordrassil Headguard
-						i(30233),	-- Nordrassil Headpiece
-						i(30152),	-- Cowl of the Avatar
-						i(30161),	-- Hood of the Avatar
-						i(32016),	-- Merciless Gladiator's Mooncloth Hood
-						i(32035),	-- Merciless Gladiator's Satin Hood
-						i(30120),	-- Destroyer Battle-Helm
-						i(30115),	-- Destroyer Greathelm
-						i(30488),	-- Merciless Gladiator's Plate Helm
-					}),
-					i(30244, {	-- Helm of the Vanquished Hero
-						i(31962),	-- Merciless Gladiator's Chain Helm
-						i(30141),	-- Rift Stalker Helm
-						i(30206),	-- Cowl of Tirisfall
-						i(32048),	-- Merciless Gladiator's Silk Cowl
-						i(30212),	-- Hood of the Corruptor
-						i(31974),	-- Merciless Gladiator's Dreadweave Hood
-						i(31980),	-- Merciless Gladiator's Felweave Cowl
-					}),
+					i(30242),	-- Helm of the Vanquished Champion
+					i(30243),	-- Helm of the Vanquished Defender
+					i(30244),	-- Helm of the Vanquished Hero
 					i(30103),	-- Fang of Vashj
 					i(30108),	-- Lightfathom Scepter
 					i(30105),	-- Serpent Spine Longbow

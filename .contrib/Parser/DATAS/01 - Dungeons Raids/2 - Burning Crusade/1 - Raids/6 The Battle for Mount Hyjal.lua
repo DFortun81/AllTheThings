@@ -627,47 +627,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1580, {	-- Azgalor
 				["creatureID"] = 17842,
 				["groups"] = {
-					i(31092, {	-- Gloves of the Forgotten Conqueror
-						i(31060),	-- Gloves of Absolution
-						i(31050),	-- Gloves of the Malefic
-						i(31061),	-- Handguards of Absolution
-						i(30982),	-- Lightbringer Gauntlets
-						i(30983),	-- Lightbringer Gloves
-						i(30985),	-- Lightbringer Handguards
-						i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-						i(31981),	-- Merciless Gladiator's Felweave Handguards
-						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-						i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-						i(32021),	-- Merciless Gladiator's Ornamented Gloves
-						i(32034),	-- Merciless Gladiator's Satin Gloves
-						i(32040),	-- Merciless Gladiator's Scaled Gauntlets
-					}),
-					i(31094, {	-- Gloves of the Forgotten Protector
-						i(31001),	-- Gronnstalker's Gloves
-						i(31961),	-- Merciless Gladiator's Chain Gauntlets
-						i(32005),	-- Merciless Gladiator's Linked Gauntlets
-						i(32010),	-- Merciless Gladiator's Mail Gauntlets
-						i(30487),	-- Merciless Gladiator's Plate Gauntlets
-						i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
-						i(30969),	-- Onslaught Gauntlets
-						i(30970),	-- Onslaught Handguards
-						i(31008),	-- Skyshatter Gauntlets
-						i(31007),	-- Skyshatter Gloves
-						i(31011),	-- Skyshatter Grips
-					}),
-					i(31093, {	-- Gloves of the Forgotten Vanquisher
-						i(31055),	-- Gloves of the Tempest
-						i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-						i(31987),	-- Merciless Gladiator's Kodohide Gloves
-						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(32049),	-- Merciless Gladiator's Silk Handguards
-						i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
-						i(31026),	-- Slayer's Handguards
-						i(31034),	-- Thunderheart Gauntlets
-						i(31032),	-- Thunderheart Gloves
-						i(31035),	-- Thunderheart Handguards
-					}),
 					i(122105),	-- Grotesque Statue (PET!)
+					i(31092),	-- Gloves of the Forgotten Conqueror
+					i(31094),	-- Gloves of the Forgotten Protector
+					i(31093),	-- Gloves of the Forgotten Vanquisher
 					i(30901),	-- Boundless Agony
 					i(30899),	-- Don Rodrigo's Poncho
 					i(30896),	-- Glory of the Defender
@@ -680,47 +643,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695),	-- The Battle for Mount Hyjal
-					i(31097, {	-- Helm of the Forgotten Conqueror
-						i(31063),	-- Cowl of Absolution
-						i(31064),	-- Hood of Absolution
-						i(31051),	-- Hood of the Malefic
-						i(30987),	-- Lightbringer Faceguard
-						i(30988),	-- Lightbringer Greathelm
-						i(30989),	-- Lightbringer War-Helm
-						i(31974),	-- Merciless Gladiator's Dreadweave Hood
-						i(31980),	-- Merciless Gladiator's Felweave Cowl
-						i(31997),	-- Merciless Gladiator's Lamellar Helm
-						i(32016),	-- Merciless Gladiator's Mooncloth Hood
-						i(32022),	-- Merciless Gladiator's Ornamented Headcover
-						i(32035),	-- Merciless Gladiator's Satin Hood
-						i(32041),	-- Merciless Gladiator's Scaled Helm
-					}),
-					i(31095, {	-- Helm of the Forgotten Protector
-						i(31003),	-- Gronnstalker's Helmet
-						i(31962),	-- Merciless Gladiator's Chain Helm
-						i(32006),	-- Merciless Gladiator's Linked Helm
-						i(32011),	-- Merciless Gladiator's Mail Helm
-						i(30488),	-- Merciless Gladiator's Plate Helm
-						i(32031),	-- Merciless Gladiator's Ringmail Helm
-						i(30972),	-- Onslaught Battle-Helm
-						i(30974),	-- Onslaught Greathelm
-						i(31015),	-- Skyshatter Cover
-						i(31014),	-- Skyshatter Headguard
-						i(31012),	-- Skyshatter Helmet
-					}),
-					i(31096, {	-- Helm of the Forgotten Vanquisher
-						i(31056),	-- Cowl of the Tempest
-						i(31968),	-- Merciless Gladiator's Dragonhide Helm
-						i(31988),	-- Merciless Gladiator's Kodohide Helm
-						i(31999),	-- Merciless Gladiator's Leather Helm
-						i(32048),	-- Merciless Gladiator's Silk Cowl
-						i(32057),	-- Merciless Gladiator's Wyrmhide Helm
-						i(31027),	-- Slayer's Helm
-						i(31039),	-- Thunderheart Cover
-						i(31040),	-- Thunderheart Headguard
-						i(31037),	-- Thunderheart Helmet
-					}),
 					i(122112),	-- Hyjal Wisp (PET!)
+					i(31097),	-- Helm of the Forgotten Conqueror
+					i(31095),	-- Helm of the Forgotten Protector
+					i(31096),	-- Helm of the Forgotten Vanquisher
 					i(30908),	-- Apostle of Argus
 					i(30902),	-- Cataclysm's Edge
 					i(30910),	-- Tempest of Chaos

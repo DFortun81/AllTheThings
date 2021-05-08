@@ -30,7 +30,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 68,
 		["groups"] = {
 			ach(960),	-- The Violet Eye
-			faction(967),	-- The Violet Eye
+			n(FACTIONS, {
+				faction(967),	-- The Violet Eye
+			}),
 			n(QUESTS, bubbleDown({ ["timeline"] = REMOVED_WITH_RETURN_TO_KARAZHAN }, {
 				q(9631, {	-- A Colleague's Aid
 					["qg"] = 17613,	-- Archmage Alturus
@@ -924,52 +926,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1557, {	-- The Curator
 				["creatureID"] = 15691,
 				["groups"] = {
-					i(29757, {	-- Gloves of the Fallen Champion
-						i(27703),	-- Gladiator's Lamellar Gauntlets
-						i(31614),	-- Gladiator's Ornamented Gloves
-						i(27880),	-- Gladiator's Scaled Gauntlets
-						i(29072),	-- Justicar Gauntlets
-						i(29065),	-- Justicar Gloves
-						i(29067),	-- Justicar Handguards
-						i(25834),	-- Gladiator's Leather Gloves
-						i(29048),	-- Netherblade Gloves
-						i(29039),	-- Cyclone Gauntlets
-						i(29032),	-- Cyclone Gloves
-						i(29034),	-- Cyclone Handguards
-						i(26000),	-- Gladiator's Linked Gauntlets
-						i(27470),	-- Gladiator's Mail Gauntlets
-						i(31397),	-- Gladiator's Ringmail Gauntlets
-					}),
-					i(29758, {	-- Gloves of the Fallen Defender
-						i(29097),	-- Gauntlets of Malorne
-						i(28126),	-- Gladiator's Dragonhide Gloves
-						i(31375),	-- Gladiator's Kodohide Gloves
-						i(28136),	-- Gladiator's Wyrmhide Gloves
-						i(29092),	-- Gloves of Nature
-						i(29090),	-- Handguards of Malorne
-						i(31409),	-- Gladiator's Mooncloth Gloves
-						i(27707),	-- Gladiator's Satin Gloves
-						i(29057),	-- Gloves of the Incarnate
-						i(29055),	-- Handwraps of the Incarnate
-						i(24549),	-- Gladiator's Plate Gauntlets
-						i(29020),	-- Warbringer Gauntlets
-						i(29017),	-- Warbringer Handguards
-					}),
-					i(29756, {	-- Gloves of the Fallen Hero
-						i(25857),	-- Gladiator's Silk Handguards
-						i(29080),	-- Gloves of the Aldor
-						i(29085),	-- Demon Stalker Gauntlets
-						i(28335),	-- Gladiator's Chain Gauntlets
-						i(24556),	-- Gladiator's Dreadweave Gloves
-						i(30188),	-- Gladiator's Felweave Handguards
-						i(28968),	-- Voidheart Gloves
-					}),
 					i(97549, {	-- Instant Arcane Sanctum Security Kit (PET!)
 						["timeline"] = {
 							"created 5.3.0.16758",
 							"added 5.3.0.16758"
 						},
 					}),
+					i(29757),	-- Gloves of the Fallen Champion
+					i(29758),	-- Gloves of the Fallen Defender
+					i(29756),	-- Gloves of the Fallen Hero
 					i(28633),	-- Staff of Infinite Mysteries
 					i(28631),	-- Dragon-Quake Shoulderguards
 					i(28647),	-- Forest Wind Shoulderpads
@@ -1081,52 +1046,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690),	-- Karazhan
-					i(29760, {	-- Helm of the Fallen Champion
-						i(27704),	-- Gladiator's Lamellar Helm
-						i(31616),	-- Gladiator's Ornamented Headcover
-						i(27881),	-- Gladiator's Scaled Helm
-						i(29073),	-- Justicar Crown
-						i(29061),	-- Justicar Diadem
-						i(29068),	-- Justicar Faceguard
-						i(25830),	-- Gladiator's Leather Helm
-						i(29044),	-- Netherblade Facemask
-						i(29035),	-- Cyclone Faceguard
-						i(29028),	-- Cyclone Headdress
-						i(29040),	-- Cyclone Helm
-						i(25998),	-- Gladiator's Linked Helm
-						i(27471),	-- Gladiator's Mail Helm
-						i(31400),	-- Gladiator's Ringmail Helm
-					}),
-					i(29761, {	-- Helm of the Fallen Defender
-						i(29093),	-- Antlers of Malorne
-						i(29086),	-- Crown of Malorne
-						i(28127),	-- Gladiator's Dragonhide Helm
-						i(31376),	-- Gladiator's Kodohide Helm
-						i(28137),	-- Gladiator's Wyrmhide Helm
-						i(29098),	-- Stag-Helm of Malorne
-						i(31410),	-- Gladiator's Mooncloth Hood
-						i(27708),	-- Gladiator's Satin Hood
-						i(29049),	-- Light-Collar of the Incarnate
-						i(29058),	-- Soul-Collar of the Incarnate
-						i(24545),	-- Gladiator's Plate Helm
-						i(29021),	-- Warbringer Battle Helm
-						i(29011),	-- Warbringer Greathelm
-					}),
-					i(29759, {	-- Helm of the Fallen Hero
-						i(29081),	-- Demon Stalker Greathelm
-						i(28331),	-- Gladiator's Chain Helm
-						i(29076),	-- Collar of the Aldor
-						i(25855),	-- Gladiator's Silk Cowl
-						i(24553),	-- Gladiator's Dreadweave Hood
-						i(30187),	-- Gladiator's Felweave Cowl
-						i(28963),	-- Voidheart Crown
-					}),
 					i(97550, {	-- Netherspace Portal Stone (PET!)
 						["timeline"] = {
 							"created 5.3.0.16758",
 							"added 5.3.0.16758"
 						},
 					}),
+					i(29760),	-- Helm of the Fallen Champion
+					i(29761),	-- Helm of the Fallen Defender
+					i(29759),	-- Helm of the Fallen Hero
 					i(28773),	-- Gorehowl
 					i(28771),	-- Light's Justice
 					i(28768),	-- Malchazeen
