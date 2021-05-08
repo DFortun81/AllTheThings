@@ -410,8 +410,9 @@ _.Zones =
 				}),
 				q(44550, {	-- Called to Acherus
 					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
+					["coord"] = { 58.5, 45.2, 627 },	-- Anywhere in Dalaran really, but nice to have a specific coord
 					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = { 42449 }, -- Return of the Four Horseman
+					["sourceQuests"] = { 42484 }, -- The Firstborn Rises
 					["isBreadcrumb"] = true,
 				}),
 				q(48021, {	-- Chromie
@@ -519,7 +520,7 @@ _.Zones =
 				}),
 				q(41220, {	-- Down to Azsuna
 					["coord"] = { 72.0, 45.4, 627 },
-					["provider"] = { "n", 41220 },	-- Archmage Khadgar
+					["provider"] = { "n", 86563 },	-- Archmage Khadgar
 					["sourceQuests"] = { 39718 },	-- Paradise Lost
 					["isBreadcrumb"] = true,
 				}),

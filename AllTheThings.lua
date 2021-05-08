@@ -3849,6 +3849,7 @@ fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
+fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 fieldCache["questID"] = {};
@@ -4004,6 +4005,11 @@ fieldConverters = {
 		_cache = rawget(fieldConverters, "mapID");
 		for i,mapID in ipairs(value) do
 			_cache(group, mapID);
+		end
+	end,
+	["nextQuests"] = function(group, value)
+		for i,questID in ipairs(value) do
+			CacheField(group, "nextQuests", questID);
 		end
 	end,
 	--[[
@@ -18365,10 +18371,11 @@ end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
-		local freq;
+		local freq, title;
 		if logIndex then
 			local info = C_QuestLog.GetInfo(logIndex);
 			if info then
+				title = info.title;
 				if info.frequency == 1 then
 					freq = " (D)";
 				elseif info.frequency == 2 then
@@ -18377,6 +18384,20 @@ app.events.QUEST_ACCEPTED = function(questID)
 			end
 		end
 		PrintQuestInfo(questID, 1, freq);
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
+		if app.Settings:Get("Thing:QuestBreadcrumbs") then
+			local nextQuests = app.SearchForField("nextQuests", questID);
+			if nextQuests then
+				local warning;
+				for _,group in pairs(nextQuests) do
+					if not group.collected then
+						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.questID));
+						warning = true;
+					end
+				end
+				if warning then app:PlayRemoveSound(); end
+			end
+		end
 		-- Make sure windows update incase any show the picked up quest
 		app:UpdateWindows();
 	end

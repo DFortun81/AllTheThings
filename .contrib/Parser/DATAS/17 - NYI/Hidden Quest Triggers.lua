@@ -1913,6 +1913,9 @@ _.HiddenQuestTriggers =
 		q(40722),	-- DK-Blood Artifact Chosen
 		q(43966),	-- DK-Frost Artifact Chosen
 		q(44404),	-- DK-Unholy Artifact Chosen
+		q(40936),	-- Convincing Revil Kost to help during 'Apocalypse' (40930)
+		q(40986),	-- Completed 'The Dark Riders' (40934) / Unlocked Apocalypse DK-Unholy Artifact
+		q(40987),	-- Completed 'The Call of Vengeance' (40935)
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
