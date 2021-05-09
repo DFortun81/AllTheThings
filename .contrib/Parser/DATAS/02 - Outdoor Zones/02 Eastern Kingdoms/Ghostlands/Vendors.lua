@@ -14,6 +14,12 @@ _.Zones =
 						i(29583, {	-- Sinister Scimitar
 							["isLimited"] = true,
 						}),
+						-- #if BEFORE MOP
+						i(29584, {	-- Throat Piercers
+							["timeline"] = { "removed 5.0.4.10000" },
+							["isLimited"] = true,
+						}),
+						-- #endif
 					},
 				}),
 				n(16253, {	-- Master Chef Mouldier <Cooking Trainer & Supplies>

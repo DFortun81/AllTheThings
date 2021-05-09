@@ -215,6 +215,7 @@ app.L = {
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
+	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -5031,6 +5032,10 @@ app.L = {
 		[364932] = "Blazing Ingot",
 		[364937] = "Phasic Siphoner",
 		[364987] = "Broker Journal",
+		[368663] = "Lil'Abom's Right Hand",
+		[368665] = "Lil'Abom's Spare Arm",
+		[368666] = "Lil'Abom's Head",
+		[368668] = "Lil'Abom's Trunk",
 		[369132] = "Domination Sealed Chest",
 		[369148] = "Glittering Nest Material",
 		[369149] = "Forgotten Feather",

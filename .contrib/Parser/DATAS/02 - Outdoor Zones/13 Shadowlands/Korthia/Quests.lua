@@ -406,12 +406,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63957, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(64240, {	-- Flight of the Kyrian
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179194 },	-- Kleia
@@ -448,6 +442,12 @@ _.Zones =
 					["provider"] = { "n", 178805 },	-- Emeni
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, KORTHIA },
+				}),
+				q(63957, {	-- Observational Records
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63959, {	-- Observational Records
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

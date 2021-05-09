@@ -203,7 +203,8 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": 成功扫描 ";
 	L.AH_SCAN_SUCCESSFUL_2 = " 物品.";
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
-	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -3029,6 +3030,8 @@ for key, value in pairs({
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
+	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
+	[360054] = "黏黏猫",	-- Slime Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
 	[363825] = "白银保险箱",	-- Silver Strongbox
 	[364899] = "晶体冥殇",	-- Crystallized Stygia

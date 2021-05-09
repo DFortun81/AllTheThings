@@ -173,7 +173,20 @@ _.Instances = { tier(1, {	-- Classic
 				i(22231),	-- Kayser's Boots of Precision
 				un(REMOVED_FROM_GAME, i(16676)),	-- Beaststalker's Gloves
 				un(REMOVED_FROM_GAME, i(13175)),	-- Voone's Twitchbow
-				un(REMOVED_FROM_GAME, i(13173)),	-- Broken Flightblade Throwing Axe
+				-- #if BEFORE MOP
+				i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
+					["timeline"] = {
+						"added 1.11.1.5462",
+						"removed 2.0.1.5678"
+					},
+				}),
+				i(28972, {	-- Flightblade Throwing Axe [TBC]
+					["timeline"] = {
+						"added 2.0.1.5678",
+						"removed 5.0.4.10000"
+					},
+				}),
+				-- #endif
 				i(12335, {	-- Gemstone of Smolderthorn
 					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),

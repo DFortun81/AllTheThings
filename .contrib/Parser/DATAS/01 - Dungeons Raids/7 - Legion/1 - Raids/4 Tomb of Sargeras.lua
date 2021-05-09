@@ -7,7 +7,6 @@ _.Instances = { tier(7, {	-- Legion
 	inst(875, { 	-- Tomb of Sargeras
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, 646 },	-- Broken Shore
-		["order"] = "04",
 		["maps"] = {
 			850,
 			851,

@@ -7,7 +7,6 @@ _.Zones =
 	m(905, {	-- Argus
 		["g"] = {
 			{	-- Skinning
-				["order"] = "04",
 				["professionID"] = SKINNING,
 				["maps"] = {
 					885,	-- Antoran Wastes

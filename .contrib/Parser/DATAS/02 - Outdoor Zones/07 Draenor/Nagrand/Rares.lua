@@ -207,7 +207,7 @@ _.Zones =
 					},
 				}),
 				n(88210, {	-- Krud the Eviscerator
-					["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
+					["description"] = "Kill 15 mobs near him to make him attackable.",
 					["questID"] = 37398,
 					["isDaily"] = true,
 					["coord"] = { 58.2, 12.0, 550 },

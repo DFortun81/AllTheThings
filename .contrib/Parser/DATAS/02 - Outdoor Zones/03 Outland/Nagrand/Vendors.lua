@@ -18,6 +18,11 @@ _.Zones =
 						i(30598, {	-- Don Amancio's Heart
 							["isLimited"] = true,
 						}),
+						-- #if BEFORE MOP
+						i(30599, {	-- Avenging Blades
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 						i(30597, {	-- Halaani Claymore
 							["isLimited"] = true,
 						}),
@@ -61,6 +66,11 @@ _.Zones =
 						i(30571, {	-- Don Rodrigo's Heart
 							["isLimited"] = true,
 						}),
+						-- #if BEFORE MOP
+						i(30568, {	-- The Sharp Cookie
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 						i(28915, {	-- Reins of the Dark Riding Talbuk
 							["cost"] = {
 								{ "i", 26045, 70 },	-- 70x Halaa Battle Token

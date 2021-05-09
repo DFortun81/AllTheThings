@@ -97,7 +97,6 @@ i(25978, 0, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 0, 45845);		-- Sharpened Tuskarr Spear
 i(180136, 0, 112899);	-- The Brokers Angle'r
 i(120163, 0, 67918);	-- Thruk's Fishing Rod
-i(133755, 0, 76909);	-- Underlight Angler
 
 -------------------
 -- F I S H I E S --

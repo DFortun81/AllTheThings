@@ -49,7 +49,7 @@ _.Zones =
 					},
 				}),
 				n(85036, {	-- Formless Nightmare
-					["description"] = "|cff66ccffLocated inside the void portal phase.|r",
+					["description"] = "Located inside the void portal phase.",
 					["questID"] = 37360,
 					["isDaily"] = true,
 					["coord"] = { 72.2, 19.6, 542 },
@@ -115,7 +115,7 @@ _.Zones =
 					},
 				}),
 				n(85037, {	-- Kenos the Unraveler
-					["description"] = "|cff66ccffLocated inside the void portal phase. Requires 3 people to click orb.|r",
+					["description"] = "Located inside the void portal phase. Requires 3 people to click orb.",
 					["questID"] = 37361,
 					["isDaily"] = true,
 					["coord"] = { 70.6, 24.2, 542 },

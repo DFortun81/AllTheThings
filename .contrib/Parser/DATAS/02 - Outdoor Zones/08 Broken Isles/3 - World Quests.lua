@@ -6,7 +6,6 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(WORLD_QUESTS, {
-			["order"] = "03",
 			["lvl"] = 110,
 			["g"] = {			
 				q(47063, {	-- Tracking Quest [Broken Isles Legion Invasion Scenario Completion]

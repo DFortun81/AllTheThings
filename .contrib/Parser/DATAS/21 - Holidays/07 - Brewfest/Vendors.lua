@@ -45,7 +45,7 @@ _.Holidays =
 					}),
 				}),
 				n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
-					["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
+					["description"] = "Larkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.",
 					["coord"] = { 56.3, 37.5, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
@@ -212,7 +212,7 @@ _.Holidays =
 					}),
 				}),
 				n(24495,  {	-- Blix Fixwidget <Token Redeemer>
-					["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
+					["description"] = "Ray'ma <Brew of the Month Club> in Orgrimmar also sells these items.",
 					["coord"] = { 41.0, 17.0, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar

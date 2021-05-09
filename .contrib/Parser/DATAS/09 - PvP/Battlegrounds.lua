@@ -18,7 +18,7 @@ _.PVP =
 			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-59 range.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 10-59 range.",
 			["lvl"] = { 10, 59 },
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
@@ -82,7 +82,7 @@ _.PVP =
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(135540, {	-- Crate of Battlefield Goods 40-59 before 9.0
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range before 9.0.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
 			["g"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
@@ -115,7 +115,7 @@ _.PVP =
 			},
 		})),
 		un(REMOVED_FROM_GAME, i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range before 9.0.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(134584)),	-- Inciter's Cord
 				un(REMOVED_FROM_GAME, i(134585)),	-- Inciter's Cuffs
@@ -143,7 +143,7 @@ _.PVP =
 			},
 		})),
 		un(REMOVED_FROM_GAME, i(135542, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range before 9.0.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(134724)),	-- Icyweave Amice*
 				un(REMOVED_FROM_GAME, i(134722)),	-- Icyweave Robes*
@@ -177,7 +177,7 @@ _.PVP =
 			},
 		})),
 		un(REMOVED_FROM_GAME, i(135543, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range before 9.0.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
 			["g"] = {
 				n(-302, {	-- Level 80-84 before 9.0
 					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
@@ -247,7 +247,7 @@ _.PVP =
 			},
 		})),
 		un(REMOVED_FROM_GAME, i(135545, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range before 9.0.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(134787)),	-- Entrenched Cowl*
 				un(REMOVED_FROM_GAME, i(134786)),	-- Entrenched Handwraps*
@@ -282,7 +282,7 @@ _.PVP =
 			},
 		})),
 		un(REMOVED_FROM_GAME, i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.|r",
+			["description"] = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(135578)),	-- Battle Touched Banner
 				un(REMOVED_FROM_GAME, i(135568)),	-- Battle Touched Blood of the Fallen

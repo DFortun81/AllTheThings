@@ -8,7 +8,7 @@ _.Zones =
 		m(641, {	-- Val'sharah
 			n(QUESTS, {
 				q(38889, {	-- Adopting the Adorable
-					["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
+					["description"] = "You have to kill Jinikki the Puncturer to get this quest.",
 					["coord"] = { 53.0, 87.7, 641 },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer
 					["groups"] = {

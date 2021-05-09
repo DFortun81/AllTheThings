@@ -4,7 +4,6 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(861, { 	-- Trial of Valor
-		["order"] = "02",
 		["isRaid"] = true,
 		["coord"] = { 70.4, 69.4, 634 },
 		["maps"] = { 806, 807, 808 },

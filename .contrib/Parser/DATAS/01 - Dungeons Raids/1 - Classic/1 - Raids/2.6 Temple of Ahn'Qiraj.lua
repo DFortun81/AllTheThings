@@ -12,7 +12,6 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
-		["order"] = "06",
 		["lvl"] = 50,
 		["g"] = {
 			-- Legacy War Effort Quests

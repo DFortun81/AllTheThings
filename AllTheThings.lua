@@ -822,27 +822,11 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self:Show();
 		end
 
-		local s = reference.s;
-		if s then
-			if reference.artifactID then
-				-- Okay, fine.
-			elseif reference.g and #reference.g > 0 then
-				local header = reference.g[1];
-				if header and header.headerID and header.headerID <= -5200 and header.headerID >= -5206 then
-					-- Okay, we're good.
-				else
-					s = nil;
-				end
-			else
-				s = nil;
-			end
-		end
-
-		if s then
-			local categoryID, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(s);
-			if appearanceID then
+		if reference.s then
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.s);
+			if sourceInfo and sourceInfo.visualID then
 				self.Model:SetCamDistanceScale(0.8);
-				self.Model:SetItemAppearance(appearanceID);
+				self.Model:SetItemAppearance(sourceInfo.visualID);
 				self.Model:Show();
 				self:Show();
 				return true;
@@ -2657,7 +2641,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					-- not for things with a parent unless the parent has no difficultyID
 					and (not group.parent or not group.parent.difficultyID)
 					-- not for group which contains an artifact
-					and not group.g[1].artifactID
+					-- and not group.g[1].artifactID
 					-- not for heirlooms
 					and not (group.filterID == 109)
 					-- not for a group which is symbolized
@@ -2929,13 +2913,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if itemID then
 			-- Grab the best matching source group.
 			local sourceGroup;
-			for i,j in ipairs(group.g or group) do
-				if j.modItemID == paramB then
-					sourceGroup = j;
+
+			-- Match the DB group by sourceID
+			-- if not sourceGroup and sourceID then
+			-- 	for i,j in ipairs(group.g or group) do
+			-- 		if j.s == sourceID then
+			-- 			sourceGroup = j;
+			-- 		end
+			-- 	end
+			-- end
+
+			-- Otherwise use modItemID for item accuracy
+			if not sourceGroup then
+				for i,j in ipairs(group.g or group) do
+					if j.itemID == itemID then
+						sourceGroup = j;
+					end
 				end
 			end
 
-			-- Match the DB group by itemID if possible otherwise
+			-- Finally match the DB group by itemID
 			if not sourceGroup then
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
@@ -2969,7 +2966,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 								if otherSourceID == sourceID and not sourceGroup.missing then
 									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link;
+										local link = sourceGroup.link or sourceGroup.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -2993,7 +2990,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-											local link = otherATTSource.link;
+											local link = otherATTSource.link or otherATTSource.silentLink;
+											local otherItemID = otherATTSource.itemID or otherATTSource.silentItemID;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
@@ -3008,7 +3006,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 										end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -3030,7 +3028,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 								if otherSourceID == sourceID and not sourceGroup.missing then
 									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link;
+										local link = sourceGroup.link or sourceGroup.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -3054,7 +3052,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 										-- Show information about the appearance:
 										local failText = "";
-										local link = otherATTSource.link;
+										local link = otherATTSource.link or otherATTSource.silentLink;
 										if not link then
 											link = RETRIEVING_DATA;
 											working = true;
@@ -3426,7 +3424,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	end
 
-	-- local collectionData;
 	if group.g and #group.g > 0 then
 		--[[
 		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
@@ -3533,7 +3530,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(--[[collectionData or ]]group);
+		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 		-- print(group.collectionText)
 	end
 
@@ -3855,6 +3852,7 @@ fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
+fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 fieldCache["questID"] = {};
@@ -4010,6 +4008,11 @@ fieldConverters = {
 		_cache = rawget(fieldConverters, "mapID");
 		for i,mapID in ipairs(value) do
 			_cache(group, mapID);
+		end
+	end,
+	["nextQuests"] = function(group, value)
+		for i,questID in ipairs(value) do
+			CacheField(group, "nextQuests", questID);
 		end
 	end,
 	--[[
@@ -4192,7 +4195,8 @@ local function SearchForLink(link)
 				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
-				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link);
+				-- Don't use SourceID for artifact searches since they contain many SourceIDs
+				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
 				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
@@ -4201,12 +4205,12 @@ local function SearchForLink(link)
 				else
 					-- Search for the Item ID. (an item without an appearance)
 					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
-					-- print("SEARCHING FOR ITEM LINK ", link, GetGroupItemIDWithModID(nil, itemID, modID), _ and #_);
+					-- print("SEARCHING FOR ITEM LINK ", link, modItemID, itemID, _ and #_);
 				end
 
 				-- Merge together the cost search results as well.
 				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
-				-- print("SEARCHING FOR COST",GetGroupItemIDWithModID(nil, itemID, modID),searchResultsAsCost and #searchResultsAsCost)
+				-- print("SEARCHING FOR COST",modItemID,itemID,searchResultsAsCost and #searchResultsAsCost)
 				if searchResultsAsCost and #searchResultsAsCost > 0 then
 					if not _ then
 						_ = searchResultsAsCost;
@@ -5060,11 +5064,6 @@ local function SortGroup(group, sortType, row, recur)
 				end
 				return false;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, "name", nil, recur);
-				end
-			end
 		elseif sortType == "progress" then
 			local progA, progB;
 			table.sort(group.g, function(a, b)
@@ -5076,11 +5075,6 @@ local function SortGroup(group, sortType, row, recur)
 				end
 				return false;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, "progress", nil, recur);
-				end
-			end
 		else
 			local sortA, sortB;
 			table.sort(group.g, function(a, b)
@@ -5088,26 +5082,18 @@ local function SortGroup(group, sortType, row, recur)
 				sortB = b and tostring(b[sortType]);
 				return sortA < sortB;
 			end);
-			if recur then
-				for i,o in ipairs(group.g) do
-					SortGroup(o, sortType, nil, recur);
-				end
+		end
+		-- TODO: Add more sort types?
+		if recur then
+			for i,o in ipairs(group.g) do
+				SortGroup(o, sortType, nil, recur);
 			end
 		end
-		-- other sort types?
 	end
 	if row then
 		row:GetParent():GetParent():Update();
 		app.print("Finished Sorting.");
 	end
-end
-app.SortGroups = function(a,b)
-	-- Sort value starts with a number and the group name
-	-- Values < 50 are for groups manually positioned before alphabetic groups
-	-- 50 is for alphabetic groups for raids and cities, always before any dungeon or zone
-	-- 51 is for alphabetic groups for dungeons and zones
-	-- Values > 51 are for groups manually positioned after alphabetic groups
-	return a.sort < b.sort;
 end
 app.SortGroup = SortGroup;
 
@@ -5899,14 +5885,14 @@ local fields = {
 	["key"] = function(t)
 		return "artifactID";
 	end,
-	["info"] = function(t)
+	["artifactinfo"] = function(t)
 		--[[
 		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
 			uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
 			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
 		]]--
 		local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
-		rawset(t, "info", info);
+		rawset(t, "artifactinfo", info);
 		return info;
 	end,
 	["f"] = function(t)
@@ -5918,14 +5904,15 @@ local fields = {
 	["collected"] = function(t)
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and t.info[5] then
+		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
 			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
 	end,
 	["text"] = function(t)
+		if not t.artifactinfo then return RETRIEVING_DATA; end
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
-		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) and t.info then
+		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
 			return t.variantText;
 		end
 		return t.appearanceText;
@@ -5934,13 +5921,13 @@ local fields = {
 		return t.variantText;
 	end,
 	["variantText"] = function(t)
-		return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
+		return Colorize("Variant " .. t.artifactinfo[4], RGBToHex(t.artifactinfo[9] * 255, t.artifactinfo[10] * 255, t.artifactinfo[11] * 255));
 	end,
 	["appearanceText"] = function(t)
-		return "|cffe6cc80" .. (t.info[3] or "???") .. "|r";
+		return "|cffe6cc80" .. (t.artifactinfo[3] or "???") .. "|r";
 	end,
 	["description"] = function(t)
-		return t.info[6] or L["ARTIFACT_INTRO_REWARD"];
+		return t.artifactinfo[6] or L["ARTIFACT_INTRO_REWARD"];
 	end,
 	["atlas"] = function(t)
 		return "Forge-ColorSwatchBorder";
@@ -5952,7 +5939,7 @@ local fields = {
 		return "Forge-ColorSwatch";
 	end,
 	["atlas-color"] = function(t)
-		return { t.info[9], t.info[10], t.info[11], 1.0 };
+		return { t.artifactinfo[9], t.artifactinfo[10], t.artifactinfo[11], 1.0 };
 	end,
 	["model"] = function(t)
 		return t.parent and GetRelativeValue(t.parent, "model");
@@ -7675,9 +7662,6 @@ local fields = {
 		end
 	end,
 	["isLockoutShared"] = app.ReturnFalse,
-	["sort"] = function(t)
-		return (t.order or (rawget(t, "isRaid") and "50") or "51") .. t.name;
-	end,
 };
 app.BaseInstance = app.BaseObjectFields(fields);
 app.CreateInstance = function(id, t)
@@ -8092,9 +8076,6 @@ local mapFields = {
 	["lvl"] = function(t)
 		return select(1, C_Map_GetMapLevels(t.mapID));
 	end,
-	["sort"] = function(t)
-		return (t.order or (t.isRaid and "50") or "51") .. t.name;
-	end,
 	["iconForAchievement"] = function(t)
 		return select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
 	end,
@@ -8115,10 +8096,6 @@ app.CreateMap = function(id, t)
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
-	end
-	if t.ordered and t.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		-- Only need to order groups alphabetically in non-english locales
-		table.sort(t.g, app.SortGroups);
 	end
 	return t;
 end
@@ -8427,10 +8404,7 @@ local npcFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.name;
-	end,
-
+	
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8512,9 +8486,6 @@ local headerFields = {
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
-	["sort"] = function(t)
-		return (t.order or "50") .. t.name;
-	end,
 	["nameAsAchievement"] = function(t)
 		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8594,10 +8565,7 @@ local objectFields = {
 	["icon"] = function(t)
 		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.name;
-	end,
-
+	
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -8794,9 +8762,6 @@ local fields = {
 	end,
 	["requireSkill"] = function(t)
 		return t.professionID;
-	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.text;
 	end,
 };
 app.BaseProfession = app.BaseObjectFields(fields);
@@ -9484,11 +9449,7 @@ local fields = {
 
 app.BaseTier = app.BaseObjectFields(fields);
 app.CreateTier = function(id, t)
-	local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-	if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		table.sort(tier.g, app.SortGroups);
-	end
-	return tier
+	return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
 end
 end)();
 
@@ -11785,34 +11746,36 @@ local function SetRowData(self, row, data)
 					if data.collected then
 						data.parent.progress = data.parent.progress + 1;
 					end
-					local item = AllTheThingsHarvestItems[data.itemID or data.silentItemID];
-					if not item then
-						item = {};
-					end
-					if data.bonusID then
-						local bonuses = item.bonuses;
-						if not bonuses then
-							bonuses = {};
-							item.bonuses = bonuses;
+					if data.artifactID then
+						local artifact = AllTheThingsArtifactsItems[data.artifactID];
+						if not artifact then
+							artifact = {};
 						end
-						bonuses[data.bonusID] = s;
-					elseif data.artifactID then
-						local artifacts = item.artifacts;
-						if not artifacts then
-							artifacts = {};
-							item.artifacts = artifacts;
-						end
-						artifacts[data.artifactID] = s;
+						artifact[data.isOffHand and 1 or 2] = s;
+						AllTheThingsArtifactsItems[data.artifactID] = artifact;
 					else
-						local mods = item.mods;
-						if not mods then
-							mods = {};
-							item.mods = mods;
+						local item = AllTheThingsHarvestItems[data.itemID];
+						if not item then
+							item = {};
 						end
-						mods[data.modID or 0] = s;
+						if data.bonusID then
+							local bonuses = item.bonuses;
+							if not bonuses then
+								bonuses = {};
+								item.bonuses = bonuses;
+							end
+							bonuses[data.bonusID] = s;
+						else
+							local mods = item.mods;
+							if not mods then
+								mods = {};
+								item.mods = mods;
+							end
+							mods[data.modID or 0] = s;
+						end
+						-- print("NEW SOURCE ID!",text,s);
+						AllTheThingsHarvestItems[data.itemID] = item;
 					end
-					-- print("NEW SOURCE ID!",text,s);
-					AllTheThingsHarvestItems[data.itemID or data.silentItemID] = item;
 				end
 			else
 				--print("NARP", text);
@@ -13756,6 +13719,70 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
+		
+		-- Update Faction data.
+		--[[
+		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
+		factionsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["factionID"]) do
+				if not self.factions[i] then
+					local faction = app.CreateFaction(tonumber(i));
+					for j,o in ipairs(_) do
+						if o.key == "factionID" then
+							for key,value in pairs(o) do rawset(faction, key, value); end
+						end
+					end
+					faction.progress = nil;
+					faction.total = nil;
+					faction.g = nil;
+					self.factions[i] = faction;
+					if not faction.u or faction.u ~= 1 then
+						faction.parent = self;
+						tinsert(self.g, faction);
+					end
+					CacheFields(faction);
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end
+		factionsCategory:OnUpdate();
+		]]--
+		
+		-- Update Flight Path data.
+		app.CacheFlightPathData();
+		flightPathsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["flightPathID"]) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(fp, key, value); end
+					end
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.g = nil;
+						fp.maps = nil;
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+				end
+			end
+			for i,_ in pairs(app.FlightPathDB) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.name < b.name;
+			end);
+		end;
+		flightPathsCategory:OnUpdate();
 
 		-- Pull all artifacts and get their relative itemID cached
 		-- TODO: remove this if artifacts have their sourceID in each raw artifact group
@@ -14126,12 +14153,13 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 		end
 		self.SetMapID = function(self, mapID)
+			-- print("SetMapID",mapID)
 			self.mapID = mapID;
 			self:SetVisible(true);
 			self:Update();
 		end
 		self.Rebuild = function(self)
-			-- print("rebuild",self.mapID);
+			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
 			if self:IsSameMapData() then
 				self:Update();
@@ -14353,20 +14381,34 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
-
-				-- Check to see completion...
-				-- print("build groups");
-				BuildGroups(self.data, self.data.g);
-				-- print("update groups");
-				UpdateGroups(self.data, self.data.g);
+				
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort by name if not in an instance
 				if not self.data.instanceID then
 					self.data.visible = true;
-					-- print("sort",self.mapID);
 					SortGroup(self.data, "name", nil, false);
 				end
+					
+				-- Move all "isRaid" entries to the top of the list.
+				if results.g then
+					local top = {};
+					for i=#results.g,1,-1 do
+						local o = results.g[i];
+						if o.isRaid then
+							table.remove(results.g, i);
+							table.insert(top, o);
+						end
+					end
+					for i,o in ipairs(top) do
+						table.insert(results.g, 1, o);
+					end
+				end
+				
+				-- Check to see completion...
+				-- print("build groups");
+				BuildGroups(self.data, self.data.g);
+				-- print("update groups");
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
 				if not self.fullCollapsed then
@@ -14433,33 +14475,32 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					print("Path: ", mapPath);
 					app.report();
 				end
-				self.data = app.CreateMap(mapID, {
-					['text'] = L["MINI_LIST"],
-					['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp",
+				self.data = app.CreateMap(self.mapID, {
+					["text"] = L["MINI_LIST"] .. " [" .. self.mapID .. "]",
+					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
-					['visible'] = true,
-					['expanded'] = true,
-					['g'] = {
+					["visible"] = true,
+					["expanded"] = true,
+					["g"] = {
 						{
-							['text'] = L["UPDATE_LOCATION_NOW"],
-							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-							['description'] = L["UPDATE_LOCATION_NOW_DESC"],
-							['visible'] = true,
-							['collectible'] = true,
-							['collected'] = false,
-							['OnClick'] = function(row, button)
-								Push(self, "ResetMapID", function() self:SetMapID(app.CurrentMapID) end);
+							["text"] = L["UPDATE_LOCATION_NOW"],
+							["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+							["description"] = L["UPDATE_LOCATION_NOW_DESC"],
+							["OnClick"] = function(row, button)
+								Push(self, "ResetMapID", function() self.displayedMapID = -1; self:SetMapID(app.GetCurrentMapID()) end);
 								return true;
 							end,
+							["OnUpdate"] = app.AlwaysShowUpdate,
 						},
 					},
 				});
+				BuildGroups(self.data, self.data.g);
 			end
 			SelfCallback(self, "Update",
 				function() self:Update(); end);
 		end
 		local function OpenMiniList(id, show)
-			-- print("open",id,show);
+			-- print("OpenMiniList",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
 			local self = app:GetWindow("CurrentInstance");
 			if not self:IsVisible() then
@@ -14531,7 +14572,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.data.total = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
@@ -14561,7 +14601,9 @@ app:GetWindow("Harvester", UIParent, function(self)
 
 			local _;
 			local harvested = {};
-			local minID,maxID,oldRetries = app.customHarvestMin,app.customHarvestMax,app.MaximumItemInfoRetries;
+			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
+			self.min = minID;
+			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
@@ -14651,6 +14693,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 						end
 					else
 						table.sort(AllTheThingsHarvestItems);
+						table.sort(AllTheThingsArtifactsItems);
 						-- revert Debug if it was enabled by the harvester
 						if self.forcedDebug then
 							app.print("Reverted Debug Mode");
@@ -14661,6 +14704,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- revert the number of retries to retrieve item information
 						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
+						-- un-initialize self so we can harvest again without reloading if needed
+						self.initialized = nil;
 					end
 				end
 				-- Update the Harvester Window to re-populate row data for next refresh
@@ -16687,7 +16732,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 end);
 
 -- WARNING: DEV ONLY START
---[[--
+
 -- Uncomment this section if you need to enable Debugger:
 -- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
 app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
@@ -17717,10 +17762,9 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 		app.customHarvestMin = tonumber(min);
 		app.customHarvestMax = tonumber(max);
 		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
-		if reset then
-			AllTheThingsHarvestItems = {};
-			app.print("Harvest Data Reset!");
-		end
+		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
+		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
+		if reset then app.print("Harvest Data Reset!"); end
 	end
 	app:GetWindow("Harvester"):Toggle();
 end
@@ -18432,10 +18476,11 @@ end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
-		local freq;
+		local freq, title;
 		if logIndex then
 			local info = C_QuestLog.GetInfo(logIndex);
 			if info then
+				title = info.title;
 				if info.frequency == 1 then
 					freq = " (D)";
 				elseif info.frequency == 2 then
@@ -18444,6 +18489,20 @@ app.events.QUEST_ACCEPTED = function(questID)
 			end
 		end
 		PrintQuestInfo(questID, 1, freq);
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
+		if app.Settings:Get("Thing:QuestBreadcrumbs") then
+			local nextQuests = app.SearchForField("nextQuests", questID);
+			if nextQuests then
+				local warning;
+				for _,group in pairs(nextQuests) do
+					if not group.collected then
+						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.questID));
+						warning = true;
+					end
+				end
+				if warning then app:PlayRemoveSound(); end
+			end
+		end
 		-- Make sure windows update incase any show the picked up quest
 		app:UpdateWindows();
 	end

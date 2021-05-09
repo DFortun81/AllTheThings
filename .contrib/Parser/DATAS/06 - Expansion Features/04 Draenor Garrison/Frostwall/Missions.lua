@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		m(590, {	-- Frostwall
 			n(-299, { 	-- Missions
 				["races"] = HORDE_ONLY,
-				["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
+				["description"] = "Various missions at your garrison, shipyard, or class hall offer these rewards.",
 				["g"] = {
 					n(85805, {	-- Command Table [Garrison Level 3]
 						["modelScale"] = 2.5,

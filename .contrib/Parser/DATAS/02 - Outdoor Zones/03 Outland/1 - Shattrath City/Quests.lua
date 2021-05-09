@@ -217,14 +217,6 @@ _.Zones =
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
 				}),
-				q(13430, {	-- Trial of the Naaru: Magtheridon
-					["provider"] = { "n", 18481 },	-- A'dal
-					["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
-					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
-				}),
-				q(10888, {	-- Trial of the Naaru: Magtheridon
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(10884, {	-- Trial of the Naaru: Mercy
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key

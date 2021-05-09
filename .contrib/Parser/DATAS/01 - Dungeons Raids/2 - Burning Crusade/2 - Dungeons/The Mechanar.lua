@@ -58,6 +58,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28202),	-- Moonglade Robe (7.3.5 - Moved from Pathaleon the Calculator)
 					i(22920),	-- Recipe: Major Fire Protection Potion
 					i(28263),	-- Stellaris
+					-- #if BEFORE MOP
+					i(28258, {	-- Nethershrike
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				})),
 				cr(19220, e(565, {	-- Pathaleon the Calculator
 					ach(658),	-- The Mechanar
@@ -100,6 +105,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28202),	-- Moonglade Robe (7.3.5 - Moved from Pathaleon the Calculator)
 						i(22920),	-- Recipe: Major Fire Protection Potion
 						i(28263),	-- Stellaris
+						-- #if BEFORE MOP
+						i(28258, {	-- Nethershrike
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					})),
 					cr(19220, e(565, {	-- Pathaleon the Calculator
 						ach(679),	-- Heroic: The Mechanar

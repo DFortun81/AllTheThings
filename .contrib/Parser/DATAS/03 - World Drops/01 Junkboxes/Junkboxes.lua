@@ -188,6 +188,11 @@ _.WorldDrops =
 				i(15743),	-- Quicksilver Pendant
 				i(14499),	-- Quicksilver Ring
 				i(12689),	-- Ring Of The Heavens
+				-- #if BEFORE MOP
+				i(34622, {	-- Spinesever
+					["timeline"] = { "removed 5.0.4.10000" },
+				}),
+				-- #endif
 				i(12695),	-- Swamp Pendant
 				i(12683),	-- Vermilion Necklace
 			}),

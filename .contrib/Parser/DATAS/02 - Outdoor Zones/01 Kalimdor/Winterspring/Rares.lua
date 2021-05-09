@@ -32,7 +32,7 @@ _.Zones =
 					["coord"] = { 65.6, 42.8, 83 },
 				}),
 				o(240616, {	-- Frozen Supplies
-					["description"] = "|cff66ccffLoot the Frozen Supplies in a nook at the base of the pillar.|r",
+					["description"] = "Loot the Frozen Supplies in a nook at the base of the pillar.",
 					["model"] = 874403,
 					["coord"] = { 68.0, 73.9, 83 },
 					["g"] = {

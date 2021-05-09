@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(4,
-			{	-- Cataclysm
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(4, {	-- Cataclysm
+		-- #if ANYCLASSIC
+		["u"] = CATA_PHASE_ONE,
+		-- #endif
+	}),
+}

@@ -546,15 +546,6 @@ _.Zones =
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
 				q(45816),	-- Choose Order Hall to Support
-				q(40403, {	-- Clandestine Operation
-					["races"] = HORDE_ONLY,
-				}),
-				q(40400, {	-- Clandestine Operation
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(40402, {	-- Clandestine Operation
-					["races"] = HORDE_ONLY,
-				}),
 				q(45350),	-- Countering the Contagion
 				q(45347),	-- Crafting a Cure
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash

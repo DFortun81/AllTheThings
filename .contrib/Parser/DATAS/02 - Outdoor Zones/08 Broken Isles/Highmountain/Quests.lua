@@ -789,14 +789,6 @@ _.Zones =
 					["coord"] = { 51.8, 82.0, 654 },	-- Mucksnout Den
 					["provider"] = { "n", 97094 },	-- Apprentice Rosalyn
 				}),
-				q(40385, {	-- The Spear in the Shadow
-					["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
-					["classes"] = { HUNTER },
-					["providers"] = {
-						{ "n", 110821 },	-- Apata Highmountain
-						{ "n", 110986 },	-- Apata Highmountain
-					},
-				}),
 				q(40167, {	-- The Story of Huln
 					["sourceQuests"] = { 40515 },	-- A Walk With the Spirits
 					["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
@@ -1012,7 +1004,6 @@ _.Zones =
 				q(42409),	-- Champion: Loren Stormhoof
 				q(42410),	-- Champion: Rexxar
 				q(43960),	-- Cinderwing
-				q(44043),	-- Continuing the Legend
 				q(45350),	-- Countering the Contagion
 				q(42699),	-- Coura, Master of Arcana
 				q(39994),	-- Crab Rider Grmlrml
@@ -1114,10 +1105,8 @@ _.Zones =
 				q(42392),	-- Survive the Night
 				q(40958),	-- Tactical Matters
 				q(40184),	-- Tauren Tanning
-				q(42526),	-- Tech It Up A Notch
 				q(40959),	-- The Campaign Begins
 				q(41829),	-- The Darkfeather Scout
-				q(39427),	-- The Eagle Spirit's Blessing
 				q(40202),	-- The Final Lessons
 				q(40135),	-- The Freedom to Roam
 				q(38513),	-- The Highmountain Smiths

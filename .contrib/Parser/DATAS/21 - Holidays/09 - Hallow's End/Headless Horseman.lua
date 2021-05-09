@@ -6,7 +6,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 {
 	holiday(235462, {	-- Hallow's End
 		n(23682, {	-- Headless Horseman
-			["description"] = "|cff66ccffYou can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.|r",
+			["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
 			["maps"] = {
 				435,	-- Scarlet Monastery
 				436,	-- Scarlet Monastery

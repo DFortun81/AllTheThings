@@ -9,7 +9,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			{ 41.6, 45.5, 1530 },	-- Vale of Eternal Blossoms
 		},
 		["isRaid"] = true,
-		["order"] = "06",
 		["lvl"] = { 50 },
 		["maps"] = {
 			1580,	-- Vision of Destiny

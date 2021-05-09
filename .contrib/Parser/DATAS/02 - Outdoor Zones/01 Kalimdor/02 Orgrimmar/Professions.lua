@@ -231,7 +231,7 @@ _.Zones =
 					}),
 					n(QUESTS, {
 						i(67414, {	-- Bag of Shiny Things
-							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+							["description"] = "Fishing Daily Quest Reward",
 							["crs"] = { 43239 },	-- Razgar
 							["g"] = {
 								i(44983),	-- Strand Crawler

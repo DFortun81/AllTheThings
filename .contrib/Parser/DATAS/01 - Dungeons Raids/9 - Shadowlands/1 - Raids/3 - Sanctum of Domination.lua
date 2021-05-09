@@ -8,18 +8,23 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
 		["order"] = "02",
-	--	["maps"] = {
-	--	},
+		["maps"] = {
+			1998,	-- TorghastRaidA
+			1999,	-- TorghastRaidB
+			2001,	-- TorghastRaidD
+		},
 		["g"] = {
-		--[[ loot is still mostly placeholder, so not filling it out yet, just getting structure in place
 			d(17, {	-- LFR
 				e(2435, {	-- The Tarragrue
-				--	["crs"] = {  },	-- 
+					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
 					},
 				}),
 				e(2442, {	-- The Eye of the Jailer
-				--	["crs"] = {  },	-- 
+					["crs"] = {
+						175725,	-- Eye of the Jailer
+						176531,	-- Deathseeker Eye
+					},
 					["g"] = {
 					},
 				}),
@@ -64,6 +69,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
+		--[[ loot is still mostly placeholder, so not filling it out yet, just getting structure in place
 			d(14, {	-- Normal
 				e(2435, {	-- The Tarragrue
 				--	["crs"] = {  },	-- 

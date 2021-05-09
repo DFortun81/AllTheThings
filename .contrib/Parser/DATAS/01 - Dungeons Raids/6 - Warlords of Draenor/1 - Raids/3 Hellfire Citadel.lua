@@ -4,7 +4,6 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(669, { 	-- Hellfire Citadel
-		["order"] = "03",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 661,

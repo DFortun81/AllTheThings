@@ -255,7 +255,7 @@ _.ExpansionFeatures =
 								follower(172, {	-- Soulare of Andorhal
 									i(117573, {	-- Wayfarer's Bonfire
 										["crs"] = { 82717 },	-- Soulare of Andorhal
-										["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a |cFFFFFFFF/tired|r emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.|r\n",
+										["description"] = "|cff3399ffStep 1:|r Recruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.\n|cff3399ffStep 2:|r Do a |cFFFFFFFF/tired|r emote and he will award the toy.\n|cff3399ffNote:|r Can get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.",
 									}),
 								}),
 								follower(452),	-- Sprynt Starkflange

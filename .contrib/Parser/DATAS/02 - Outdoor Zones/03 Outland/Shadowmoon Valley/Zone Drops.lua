@@ -70,7 +70,7 @@ _.Zones =
 					["crs"] = { 19755 },	-- Mo'arg Weaponsmith
 				}),
 				o(240622, {	-- Warden's Scroll Case
-					["description"] = "|cff66ccffLoot the Warden's Scroll Case inside the Warden's Cage (underground).|r",
+					["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
 					["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 					["modelScale"] = .5,
 					["model"] = 521201,

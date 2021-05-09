@@ -4,7 +4,6 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(959, {	-- Invasion Points
-		["order"] = "06",
 		["isRaid"] = true,
 		["lvl"] = 110,
 		["g"] = {

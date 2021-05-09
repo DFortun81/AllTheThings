@@ -201,7 +201,8 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -3009,6 +3010,8 @@ for key,value in pairs({
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
+	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack
+	[360054] = "Klebrige Katze",	-- Slime Cat
 	[362489] = "Elysischer Erlass",	-- Elysian Decree
 	[363825] = "Silberne Schließkassette",	-- Silver Strongbox
 	[364899] = "Kristallisierte Stygia",	-- Crystallized Stygia

@@ -38,3 +38,4 @@ obj/
 __pycache__
 .contrib/Parser/localizedObjects.txt
 .contrib/.tools/log.txt
+/.vscode/settings.json

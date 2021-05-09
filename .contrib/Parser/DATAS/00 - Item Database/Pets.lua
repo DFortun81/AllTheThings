@@ -1010,6 +1010,7 @@ pet(186564, 3125);	-- Golden Eye
 pet(186559, 3121);	-- Grappling Gauntlet
 pet(186191, 3099);	-- Infused Etherwyrm
 pet(186547, 3116);	-- Invasive Buzzer
+pet(186188, 3098);	-- Lil'Abom
 pet(186551, 3132);	-- Mord'al Eveningstar
 pet(186537, 3104);	-- Ruby Baubleworm
 pet(186544, 3010);	-- Sinfall Screecher

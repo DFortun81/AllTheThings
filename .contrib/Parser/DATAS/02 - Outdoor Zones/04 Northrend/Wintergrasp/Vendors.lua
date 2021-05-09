@@ -7,7 +7,7 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
 			n(VENDORS, {
-				["description"] = "|cff66ccffThese vendors will only show if your faction controls Wintergrasp.|r",
+				["description"] = "These vendors will only show if your faction controls Wintergrasp.",
 				["g"] = {
 					n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor

@@ -8,7 +8,7 @@ _.Zones =
 		m(241, {	-- Twilight Highlands
 			n(-38,  {	-- Profession
 				prof(MINING, {
-					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["g"] = {
 						i(67282), 	-- Pet Elementium Geode
 					},

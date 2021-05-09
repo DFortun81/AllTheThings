@@ -4,7 +4,6 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(74, { 	-- Throne of the Four Winds
-		["order"] = "04",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

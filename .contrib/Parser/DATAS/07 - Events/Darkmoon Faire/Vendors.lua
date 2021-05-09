@@ -964,7 +964,7 @@ _.WorldEvents =
 				},
 			}),
 			n(108785, {	-- Scarlet Quartermaster
-				["description"] = "|cff66ccffYou must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  A tabard that has been transmogged will NOT work.|r",
+				["description"] = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  A tabard that has been transmogged will NOT work.",
 				["coord"] = { 58.2, 80.6, 407 },
 				["g"] = {
 					i(138429, {	-- Cropped Tabard of the Scarlet Crusade

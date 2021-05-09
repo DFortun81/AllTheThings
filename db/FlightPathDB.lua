@@ -2027,6 +2027,9 @@ select(2, ...).FlightPathDB = {
 			6, -- [1]
 		},
 		["faction"] = 0,
+		["sourceQuests"] = {
+			39017,	-- HQT representing if the player has completed any of their artifacts (assumed)
+		},
 	},
 	[1863] = {
 		["name"] = "Hafr Fjall, Stormheim",

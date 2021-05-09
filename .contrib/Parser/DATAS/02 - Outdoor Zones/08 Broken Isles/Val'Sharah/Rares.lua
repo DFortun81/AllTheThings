@@ -48,7 +48,7 @@ _.Zones =
 					},
 				}),
 				n(92334,  {	-- Elindya Featherlight (Skul'vrax)
-					["description"] = "|cff66ccffRevive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.|r",
+					["description"] = "Revive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.",
 					["questID"] = 38887,
 					["coord"] = { 60.4, 90.7, 641 },
 					["crs"] = { 93654 },	-- Skul'vrax
@@ -161,7 +161,7 @@ _.Zones =
 					},
 				}),
 				n(92423,  {	-- Theryssia
-					["description"] = "|cff66ccffClick on Theryssia's nameplate on the gravestone.|r",
+					["description"] = "Click on Theryssia's nameplate on the gravestone.",
 					["questID"] = 38772,
 					["coord"] = { 38.0, 52.8, 641 },
 					["g"] = {

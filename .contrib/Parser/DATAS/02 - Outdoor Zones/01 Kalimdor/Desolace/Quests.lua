@@ -745,13 +745,25 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1370,  {	-- Stealing Supplies
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
+					["timeline"] = { "removed 4.0.3.10000" },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(32378)),	-- Silver Star
-						un(REMOVED_FROM_GAME, i(3463)),	-- Broken Silver Star
 						un(REMOVED_FROM_GAME, i(3464)),	-- Feathered Arrow
 						un(REMOVED_FROM_GAME, i(3465)),	-- Exploding Shot
+						-- #if BEFORE MOP
+						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 2.0.1.5678"
+							},
+						}),
+						i(32378, {	-- Silver Star [TBC]
+							["timeline"] = {
+								"added 2.0.1.5678",
+								"removed 4.0.3.10000",
+							},
+						}),
+						-- #endif
 					},
 				}),
 				q(1382,  {	-- Strange Alliance

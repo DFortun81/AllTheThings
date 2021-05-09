@@ -146,6 +146,11 @@ _.Zones =
 								["cr"] = 21838,	-- Terokk
 								["g"] = {
 									i(32831),	-- Jeweled Rod
+									-- #if BEFORE MOP
+									i(32832, {	-- Scout's Throwing Knives
+										["timeline"] = { "removed 5.0.4.10000" },
+									}),
+									-- #endif
 									i(32830),	-- Severin's Cane
 									i(32829),	-- Windcharger's Lance
 								},

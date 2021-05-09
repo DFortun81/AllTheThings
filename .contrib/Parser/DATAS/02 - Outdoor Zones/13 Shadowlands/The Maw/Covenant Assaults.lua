@@ -22,9 +22,7 @@ _.Zones =
 							crit(8),	-- They Grow Up So Quickly
 						}),
 						ach(15032, {	-- Breaking Their Hold
-							crit(4),	-- An Embarrassment of Corpses
 							crit(6),	-- Centurions March!
-							crit(10),	-- Somebody Feed Kevin
 						}),
 						ach(15034, {	-- Wings Against the Flames
 							crit(3),	-- No One Floats Down Here
@@ -186,6 +184,16 @@ _.Zones =
 					["coord"] = { 33.8, 54.8, THE_MAW },
 					["g"] = {
 						n(QUESTS, {
+							q(63774, {	-- An Embarrassment Of Corpses
+								["provider"] = { "n", 177720 },	-- Rathan
+								["isDaily"] = true,
+								["coord"] = { 33.5, 55.4, THE_MAW },
+								["g"] = {
+									crit(4, {	-- An Embarrassment of Corpses
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
 							q(63455, {	-- Dead On Their Feet
 								["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 								["isDaily"] = true,
@@ -238,6 +246,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63669, {	-- Somebody Feed Kevin
+								["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
+								["isDaily"] = true,
+								["coord"] = { 32.9, 56.8, THE_MAW },
+								["g"] = {
+									crit(10, {	-- Somebody Feed Kevin
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
 							q(59004, {	-- Splash Damage
 								["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
 								["isDaily"] = true,
@@ -273,6 +291,55 @@ _.Zones =
 									crit(3, {	-- You and What Army
 										["achievementID"] = 15032,	-- Breaking Their Hold
 									}),
+								},
+							}),
+						}),
+						n(TREASURES, {
+						--	TODO: figure out if these are only up during the necrolord assault, or available at all times (in which case they need to be moved)
+							i(186188, {	-- Lil'Abom (PET!)
+								["cost"] = {
+									{ "i", 186183, 1 },	-- Lil'Abom Head
+									{ "i", 186185, 1 },	-- Lil'Abom Legs
+									{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+									{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+									{ "i", 186184, 1 },	-- Lil'Abom Torso
+								},
+							}),
+							o(368666, {	-- Lil'Abom's Head
+								["questID"] = 64010,
+								["coord"] = { 30.3, 63.3, THE_MAW },
+								["g"] = {
+									i(186183),	-- Lil'Abom Head
+								},
+							}),
+							o(368663, {	-- Lil'Abom's Right Hand
+								["description"] = "At the back of the cave, behind a rock on the left side.",
+								["questID"] = 64008,
+								["coord"] = { 38.5, 58.5, THE_MAW },
+								["g"] = {
+									i(186186),	-- Lil'Abom Right Hand
+								},
+							}),
+							o(368665, {	-- Lil'Abom's Spare Arm
+								["questID"] = 64009,
+								["coord"] = { 39.2, 66.5, THE_MAW },
+								["g"] = {
+									i(186187),	-- Lil'Abom Spare Arm
+								},
+							}),
+						--	o(, {	-- Lil'Abom's Torso
+						--	TODO: objectID unavailable on wowhead and i didn't have the debugger up when i looted it
+						--		["questID"] = 64011,
+						--		["coord"] = { 39.9, 62.6, THE_MAW },
+						--		["g"] = {
+									i(186184),	-- Lil'Abom Torso
+						--		},
+						--	}),
+							o(368668, {	-- Lil'Abom's Trunk
+								["questID"] = 64013,
+								["coord"] = { 29.4, 67.2, THE_MAW },
+								["g"] = {
+									i(186185),	-- Lil'Abom Legs
 								},
 							}),
 						}),

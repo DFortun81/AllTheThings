@@ -45,6 +45,9 @@ _.Zones =
 					["coord"] = { 49.4, 74.6, 42 },
 					["classes"] = { DEATHKNIGHT },
 					["sourceQuest"] = 40933, -- A Grisly Task
+					["g"] = {
+						i(128403), -- Apocalypse (Artifact)
+					},
 				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
@@ -142,16 +145,6 @@ _.Zones =
 					["coord"] = { 47.3, 75.0, 42 },
 					["lvl"] = 110,
 				}),
-				--[[
-				q(40987, {	-- The Call of Vengeance (map blank
-					["provider"] = { "n", 101282 },	--
-					["classes"] = { DEATHKNIGHT },
-				}),
-				q(40986, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	--
-					["classes"] = { DEATHKNIGHT },
-				}),
---]]
 --[[´
 				q(42970, {	-- The Diamond King
 					["provider"] = { "n", 113655 },	--
@@ -171,9 +164,6 @@ _.Zones =
 					["provider"] = { "n", 101282 },	-- Revil Kost
 					["classes"] = { DEATHKNIGHT },
 					["sourceQuest"] = 40934, -- The Dark Riders
-					["g"] = {
-						i(128403), -- Apocalypse (Artifact)
-					},
 				}),
 				q(44733, {	-- The Power of Corruption
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar

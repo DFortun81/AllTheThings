@@ -342,6 +342,11 @@ _.Craftables =
 				i(30031),	-- Red Havoc Boots
 				i(32402),	-- Shadesteel Sabots
 			}),
+			-- #if BEFORE MOP
+			i(29204, {	-- Felsteel Whisper Knives
+				["timeline"] = { "removed 5.0.4.10000" },
+			}),
+			-- #endif
 		}),
 		prof(ENCHANTING, {
 			filter(103, {	-- Illusions

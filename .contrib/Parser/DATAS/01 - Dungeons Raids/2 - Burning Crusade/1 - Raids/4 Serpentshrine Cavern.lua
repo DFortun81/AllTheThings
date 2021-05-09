@@ -1,53 +1,141 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(748, {	-- Serpentshrine Cavern
-		["order"] = "04",
-		["isRaid"] = true,
+		["mapID"] = SERPENTSHRINE_CAVERN,
 		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		-- #if ANYCLASSIC
+		-- #if BEFORE WRATH
+		["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
+		-- #endif
+		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,
-		["mapID"] = 332,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #endif
 		["coords"] = {
 			{ 50.2, 41.0, ZANGARMARSH },	-- underwater entrance
 			{ 51.9, 32.9, ZANGARMARSH },	-- pipe entrance
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(10944, {	-- The Secret Compromised
-					["sourceQuests"] = { 10708 },	-- Akama's Promise
+					["qg"] = 22820,	-- Seer Olum
+					["sourceQuest"] = 10708,	-- Akama's Promise
+					["coord"] = { 48, 18.2, SERPENTSHRINE_CAVERN },
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
-					["provider"] = { "n", 22820 },	-- Seer Olum
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(30027),	-- Boots of Courage Unending
-				i(30280),	-- Pattern: Belt of Blasting
-				i(30302),	-- Pattern: Belt of Deep Shadow
-				i(30301),	-- Pattern: Belt of Natural Power
-				i(30303),	-- Pattern: Belt of the Black Eagle
-				i(30281),	-- Pattern: Belt of the Long Road
-				i(30282),	-- Pattern: Boots of Blasting
-				i(30305),	-- Pattern: Boots of Natural Grace
-				i(30307),	-- Pattern: Boots of the Crimson Hawk
-				i(30283),	-- Pattern: Boots of the Long Road
-				i(30306),	-- Pattern: Boots of Utter Darkness
-				i(30308),	-- Pattern: Hurricane Boots
-				i(30304),	-- Pattern: Monsoon Belt
+				i(30280, {	-- Pattern: Belt of Blasting
+					["spellID"] = 36315,	-- Belt of Blasting
+					["requireSkill"] = TAILORING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30302, {	-- Pattern: Belt of Deep Shadow
+					["spellID"] = 36351,	-- Belt of Deep Shadow
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30301, {	-- Pattern: Belt of Natural Power
+					["spellID"] = 36349,	-- Belt of Natural Power
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30303, {	-- Pattern: Belt of the Black Eagle
+					["spellID"] = 36352,	-- Belt of the Black Eagle
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30281, {	-- Pattern: Belt of the Long Road
+					["spellID"] = 36316,	-- Belt of the Long Road
+					["requireSkill"] = TAILORING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30282, {	-- Pattern: Boots of Blasting
+					["spellID"] = 36317,	-- Boots of Blasting
+					["requireSkill"] = TAILORING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30305, {	-- Pattern: Boots of Natural Grace
+					["spellID"] = 36355,	-- Boots of Natural Grace
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30307, {	-- Pattern: Boots of the Crimson Hawk
+					["spellID"] = 36358,	-- Boots of the Crimson Hawk
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30283, {	-- Pattern: Boots of the Long Road
+					["spellID"] = 36318,	-- Boots of the Long Road
+					["requireSkill"] = TAILORING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30306, {	-- Pattern: Boots of Utter Darkness
+					["spellID"] = 36357,	-- Boots of Utter Darkness
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30308, {	-- Pattern: Hurricane Boots
+					["spellID"] = 36359,	-- Hurricane Boots
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30304, {	-- Pattern: Monsoon Belt
+					["spellID"] = 36353,	-- Monsoon Belt
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30321, {	-- Plans: Belt of the Guardian
+					["spellID"] = 36389,	-- Belt of the Guardian
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30323, {	-- Plans: Boots of the Protector
+					["spellID"] = 36391,	-- Boots of the Protector
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30322, {	-- Plans: Red Belt of Battle
+					["spellID"] = 36390,	-- Red Belt of Battle
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,	-- Recipe
+				}),
+				i(30324, {	-- Plans: Red Havoc Boots
+					["spellID"] = 36392,	-- Red Havoc Boots
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,	-- Recipe
+				}),
 				i(30022),	-- Pendant of the Perilous
-				i(30321),	-- Plans: Belt of the Guardian
-				i(30323),	-- Plans: Boots of the Protector
-				i(30322),	-- Plans: Red Belt of Battle
-				i(30324),	-- Plans: Red Havoc Boots
+				-- #if BEFORE MOP
+				i(30025, {	-- Serpentshrine Shuriken
+					["timeline"] = { "removed 5.0.4.10000" },
+				}),
+				-- #endif
+				i(30027),	-- Boots of Courage Unending
 				i(30620),	-- Spyglass of the Hidden Fleet
 				i(30021),	-- Wildfury Greatstaff
+				i(30183),	-- Nether Vortex
 			}),
 			e(1567, {	-- Hydross the Unstable
 				["creatureID"] = 21216,
 				["groups"] = {
-					i(138834),	-- Illusion: Frostbrand
-					i(97553),	-- Tainted Core (PET!)
+					i(138834, {	-- Illusion: Frostbrand
+						["classes"] = { SHAMAN },
+						["timeline"] = {
+							"created 7.0.3.22248",
+							"added 7.0.3.22248"
+						},
+					}),
+					i(97553, {	-- Tainted Core (PET!)
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
+					}),
 					i(30049),	-- Fathomstone
 					i(30048),	-- Brighthelm of Justice
 					i(30053),	-- Pauldrons of the Wardancer
@@ -59,15 +147,27 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30050),	-- Boots of the Shifting Nightmare
 					i(33055),	-- Band of Vile Aggression
 					i(30052),	-- Ring of Lethality
-					i(30664),	-- Living Root of the Wildheart
+					i(30664, {	-- Living Root of the Wildheart
+						["classes"] = { DRUID },
+					}),
 					i(30629),	-- Scarab of Displacement
+					i(30051, {	-- Idol of the Crescent Goddess
+						["classes"] = { DRUID },
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
 				},
 			}),
 			e(1568, {	-- The Lurker Below
 				["creatureID"] = 21217,
 				["groups"] = {
 					ach(144),	-- The Lurker Above
-					i(138834),	-- Illusion: Frostbrand
+					i(138834, {	-- Illusion: Frostbrand
+						["classes"] = { SHAMAN },
+						["timeline"] = {
+							"created 7.0.3.22248",
+							"added 7.0.3.22248"
+						},
+					}),
 					i(30058),	-- Mallet of the Tides
 					i(30059),	-- Choker of Animalistic Fury
 					i(30065),	-- Glowing Breastplate of Truth
@@ -79,51 +179,26 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30067),	-- Velvet Boots of the Guardian
 					i(30061),	-- Ancestral Ring of Conquest
 					i(33054),	-- The Seal of Danzalar
-					i(30665),	-- Earring of Soulful Meditation
+					i(30665, {	-- Earring of Soulful Meditation
+						["classes"] = { PRIEST },
+					}),
+					i(30063, {	-- Libram of Absolute Truth
+						["timeline"] = { "removed 5.0.4.10000" },
+						["classes"] = { PALADIN },
+					}),
 				},
 			}),
 			e(1569, {	-- Leotheras the Blind
 				["creatureID"] = 21215,
 				["groups"] = {
 					i(30239, {	-- Gloves of the Vanquished Champion
-						i(30130),	-- Crystalforge Gauntlets
-						i(30135),	-- Crystalforge Gloves
-						i(30124),	-- Crystalforge Handguards
-						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-						i(32021),	-- Merciless Gladiator's Ornamented Gloves
-						i(32040),	-- Merciless Gladiator's Scaled Gauntlets
-						i(30145),	-- Deathmantle Handguards
-						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(30189),	-- Cataclysm Gauntlets
-						i(30165),	-- Cataclysm Gloves
-						i(30170),	-- Cataclysm Handgrips
-						i(32005),	-- Merciless Gladiator's Linked Gauntlets
-						i(32010),	-- Merciless Gladiator's Mail Gauntlets
-						i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
+						["classes"] = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30240, {	-- Gloves of the Vanquished Defender
-						i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-						i(31987),	-- Merciless Gladiator's Kodohide Gloves
-						i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
-						i(30232),	-- Nordrassil Gauntlets
-						i(30217),	-- Nordrassil Gloves
-						i(30223),	-- Nordrassil Handgrips
-						i(30151),	-- Gloves of the Avatar
-						i(30160),	-- Handguards of the Avatar
-						i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-						i(32034),	-- Merciless Gladiator's Satin Gloves
-						i(30119),	-- Destroyer Gauntlets
-						i(30114),	-- Destroyer Handguards
-						i(30487),	-- Merciless Gladiator's Plate Gauntlets
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30241, {	-- Gloves of the Vanquished Hero
-						i(31961),	-- Merciless Gladiator's Chain Gauntlets
-						i(30140),	-- Rift Stalker Gauntlets
-						i(30205),	-- Gloves of Tirisfal
-						i(32049),	-- Merciless Gladiator's Silk Handguards
-						i(30211),	-- Gloves of the Corruptor
-						i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-						i(31981),	-- Merciless Gladiator's Felweave Handguards
+						["classes"] = { HUNTER, MAGE, WARLOCK },
 					}),
 					i(30095),	-- Fang of the Leviathan
 					i(30097),	-- Coral-Barbed Shoulderpads
@@ -137,57 +212,33 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 21214,
 				["groups"] = {
 					i(30245, {	-- Leggings of the Vanquished Champion
-						i(30132),	-- Crystalforge Greaves
-						i(30137),	-- Crystalforge Leggings
-						i(30126),	-- Crystalforge Legguards
-						i(31995),	-- Merciless Gladiator's Lamellar Legguards
-						i(32023),	-- Merciless Gladiator's Ornamented Legplates
-						i(32042),	-- Merciless Gladiator's Scaled Legguards
-						i(30148),	-- Deathmantle Legguards
-						i(32000),	-- Merciless Gladiator's Leather Legguards
-						i(30172),	-- Cataclysm Leggings
-						i(30167),	-- Cataclysm Legguards
-						i(30192),	-- Cataclysm Legplates
-						i(32007),	-- Merciless Gladiator's Linked Leggings
-						i(32012),	-- Merciless Gladiator's Mail Leggings
-						i(32032),	-- Merciless Gladiator's Ringmail Leggings
+						["classes"] = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30246, {	-- Leggings of the Vanquished Defender
-						i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-						i(31989),	-- Merciless Gladiator's Kodohide Legguards
-						i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
-						i(30229),	-- Nordrassil Feral-Kilt
-						i(30220),	-- Nordrassil Life-Kilt
-						i(30234),	-- Nordrassil Wrath-Kilt
-						i(30153),	-- Breeches of the Avatar
-						i(30162),	-- Leggings of the Avatar
-						i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-						i(32036),	-- Merciless Gladiator's Satin Leggings
-						i(30121),	-- Destroyer Greaves
-						i(30116),	-- Destroyer Legguards
-						i(30489),	-- Merciless Gladiator's Plate Legguards
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30247, {	-- Leggings of the Vanquished Hero
-						i(31963),	-- Merciless Gladiator's Chain Leggings
-						i(30142),	-- Rift Stalker Leggings
-						i(30207),	-- Leggings of Tirisfal
-						i(32051),	-- Merciless Gladiator's Silk Trousers
-						i(30213),	-- Leggings of the Corruptor
-						i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-						i(31983),	-- Merciless Gladiator's Felweave Trousers
+						["classes"] = { HUNTER, MAGE, WARLOCK },
 					}),
 					i(30090),	-- World Breaker
 					i(30099),	-- Frayed Tether of the Drowned
 					i(30101),	-- Bloodsea Brigand's Vest
 					i(30100),	-- Soul-Strider Boots
-					i(30663),	-- Fathom-Brooch of the Tidewalker
+					i(30663, {	-- Fathom-Brooch of the Tidewalker
+						["classes"] = { SHAMAN },
+					}),
 					i(30626),	-- Sextant of Unstable Currents
 				},
 			}),
 			e(1571, {	-- Morogrim Tidewalker
 				["creatureID"] = 21213,
 				["groups"] = {
-					i(97552),	-- Shell of Tide-Calling (PET!)
+					i(97552, {	-- Shell of Tide-Calling (PET!)
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
+					}),
 					i(30082),	-- Talon of Azshara
 					i(30080),	-- Luminescent Rod of the Naaru
 					i(30008),	-- Pendant of the Lost Ages
@@ -200,53 +251,29 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30081),	-- Warboots of Obliteration
 					i(33058),	-- Band of the Vigilant
 					i(30083),	-- Ring of Sundered Souls
-					i(30720),	-- Serpent-Coil Braid
+					i(30720, {	-- Serpent-Coil Braid
+						["classes"] = { MAGE },
+					}),
 				},
 			}),
 			e(1572, {	-- Lady Vashj
 				["creatureID"] = 21212,
 				["groups"] = {
 					ach(694),	-- Serpentshrine Cavern
-					i(97554),	-- Dripping Strider Egg (PET!)
+					i(97554, {	-- Dripping Strider Egg (PET!)
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
+					}),
 					i(30242, {	-- Helm of the Vanquished Champion
-						i(30125),	-- Crystalforge Faceguard
-						i(30136),	-- Crystalforge Greathelm
-						i(30131),	-- Crystalforge War-Helm
-						i(31997),	-- Merciless Gladiator's Lamellar Helm
-						i(32022),	-- Merciless Gladiator's Ornamented Headcover
-						i(32041),	-- Merciless Gladiator's Scaled Helm
-						i(30146),	-- Deathmantle Helm
-						i(31999),	-- Merciless Gladiator's Leather Helm
-						i(30166),	-- Cataclysm Headguard
-						i(30171),	-- Cataclysm Headpiece
-						i(30190),	-- Cataclysm Helm
-						i(32006),	-- Merciless Gladiator's Linked Helm
-						i(32011),	-- Merciless Gladiator's Mail Helm
-						i(32031),	-- Merciless Gladiator's Ringmail Helm
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30243, {	-- Helm of the Vanquished Defender
-						i(31968),	-- Merciless Gladiator's Dragonhide Helm
-						i(31988),	-- Merciless Gladiator's Kodohide Helm
-						i(32057),	-- Merciless Gladiator's Wyrmhide Helm
-						i(30228),	-- Nordrassil Headdress
-						i(30219),	-- Nordrassil Headguard
-						i(30233),	-- Nordrassil Headpiece
-						i(30152),	-- Cowl of the Avatar
-						i(30161),	-- Hood of the Avatar
-						i(32016),	-- Merciless Gladiator's Mooncloth Hood
-						i(32035),	-- Merciless Gladiator's Satin Hood
-						i(30120),	-- Destroyer Battle-Helm
-						i(30115),	-- Destroyer Greathelm
-						i(30488),	-- Merciless Gladiator's Plate Helm
+						["classes"] = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30244, {	-- Helm of the Vanquished Hero
-						i(31962),	-- Merciless Gladiator's Chain Helm
-						i(30141),	-- Rift Stalker Helm
-						i(30206),	-- Cowl of Tirisfall
-						i(32048),	-- Merciless Gladiator's Silk Cowl
-						i(30212),	-- Hood of the Corruptor
-						i(31974),	-- Merciless Gladiator's Dreadweave Hood
-						i(31980),	-- Merciless Gladiator's Felweave Cowl
+						["classes"] = { HUNTER, MAGE, WARLOCK },
 					}),
 					i(30103),	-- Fang of Vashj
 					i(30108),	-- Lightfathom Scepter
@@ -260,7 +287,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30110),	-- Coral Band of the Revived
 					i(30109),	-- Ring of Endless Coils
 					i(30621),	-- Prism of Inner Calm
-					un(REMOVED_FROM_GAME, i(32895)),	-- Scroll of the Maelstrom. This Item originally boe & completed the attunement to enter The Serpentshrine. It was later changed to be bop and provide 5 Mark of the Illidari.
+					i(32895, {	-- Scroll of the Maelstrom
+						["timeline"] = { "removed 4.0.3.10000" },	-- TODO: Determine exactly when to remove this.
+						["groups"] = {
+							i(32897),	-- Mark of the Illidari
+						},
+					}),
+					i(29906),	-- Vashj's Vial Remnant
 				},
 			}),
 		},

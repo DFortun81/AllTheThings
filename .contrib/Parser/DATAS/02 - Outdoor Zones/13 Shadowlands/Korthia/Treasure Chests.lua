@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(THE_MAW, {
+		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
 				o(369194, {	-- Anima Laden Egg
 					["description"] = "In a tree.",

@@ -6,7 +6,6 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		n(ACHIEVEMENTS, {
-			["order"] = "01",
 			["maps"] = {
 				885,	-- Antoran Wastes
 				830,	-- Krokuun

@@ -140,13 +140,13 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(128422)),	-- Grove Warden
 		})),
 		un(REMOVED_FROM_GAME, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["description"] = "Completed prior to patch 3.1 awarded the mount.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(44164)),	-- Reins of the Black Proto-Drake
 			},
 		})),
 		un(REMOVED_FROM_GAME, ach(2137, {	-- Glory of the Raider (10 Player) Pre 3.1
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["description"] = "Completed prior to patch 3.1 awarded the mount.",
 			["g"] = {
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 			},

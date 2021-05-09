@@ -4,7 +4,6 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(330, {	-- Heart of Fear
-		["order"] = "02",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
@@ -13,7 +12,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["coord"] = { 39.0, 34.9, 422 },	-- Heart of Fear, Dread Wastes
 		["groups"] = {
 			d(7, {	-- LFR
-				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
+				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
 				["groups"] = {

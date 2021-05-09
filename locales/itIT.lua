@@ -201,7 +201,8 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -3009,6 +3010,8 @@ for key,value in pairs({
 	[358319] = "Nota dell'Occultista",	-- Sorceror's Note
 	[358382] = "Ricercato: Chelicera",	-- Wanted: Chelicera
 	[358533] = "Rifornimenti Dimenticati",	-- Forgotten Supplies
+	[358855] = "Zaino della Caduta Sicura Danneggiato",	-- Damaged Safe Fall Pack
+	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	[362489] = "Decreto Elisio",	-- Elysian Decree
 	[363825] = "Forziere d'Argento",	-- Silver Strongbox
 	[364899] = "Stigia Cristallizzata",	-- Crystallized Stygia

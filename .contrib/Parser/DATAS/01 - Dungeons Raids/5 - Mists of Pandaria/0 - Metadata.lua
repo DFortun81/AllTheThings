@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(5,
-			{	-- Mists of Pandaria
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(5, {	-- Mists of Pandaria
+		-- #if ANYCLASSIC
+		["u"] = MOP_PHASE_ONE,
+		-- #endif
+	}),
+}

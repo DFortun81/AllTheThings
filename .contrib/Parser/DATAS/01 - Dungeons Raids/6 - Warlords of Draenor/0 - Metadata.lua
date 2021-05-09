@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(6,
-			{	-- Warlords of Draenor
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(6, {	-- Warlords of Draenor
+		-- #if ANYCLASSIC
+		["u"] = WOD_PHASE_ONE,
+		-- #endif
+	}),
+}

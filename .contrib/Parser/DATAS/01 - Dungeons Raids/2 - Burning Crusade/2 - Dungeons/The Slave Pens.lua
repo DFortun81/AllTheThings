@@ -19,6 +19,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					-- This quest started showing up again after SL level squish
 					["sourceQuests"] = { 10900 },	-- The Mark of Vashj
 					["provider"] = { "n", 22421 },	-- Skar'this the Heretic
+					["cost"] = {
+						{ "i", 31751, 1 },	-- Blazing Signet
+						{ "i", 31750, 1 },	-- Earthen Signet
+					},
+					["maps"] = {
+						KARAZHAN,
+						GRUULS_LAIR,
+					},
 				}),
 				q(29565, {	-- The Heart of the Matter
 					["provider"] = { "n", 54667 },	-- Watcher Jhang

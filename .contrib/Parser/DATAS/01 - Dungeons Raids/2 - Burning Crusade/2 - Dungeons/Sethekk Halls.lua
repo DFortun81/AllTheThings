@@ -57,6 +57,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27919),	-- Light-Woven Slippers
 					i(27914),	-- Moonstrider Boots
 					i(27915),	-- Sky-Hunter Swift Boots
+					-- #if BEFORE MOP
+					i(27916, {	-- Sethekk Feather-Darts
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				})),
 				cr(18473, e(543, {	-- Talon King Ikiss
 					ach(653),	-- Sethekk Halls
@@ -87,6 +92,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27919),	-- Light-Woven Slippers
 						i(27914),	-- Moonstrider Boots
 						i(27915),	-- Sky-Hunter Swift Boots
+						-- #if BEFORE MOP
+						i(27916, {	-- Sethekk Feather-Darts
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 						i(25461, {	-- Book of Forgotten Names
 							["timeline"] = { "removed 7.1.0.1233" },
 						}),

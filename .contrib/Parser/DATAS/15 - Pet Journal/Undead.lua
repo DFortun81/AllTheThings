@@ -55,6 +55,7 @@ _.PetJournal =
 		p(3045),	-- Iridescent Ooze
 		un(10, p(302)),	-- Landro's Lichling
 		p(2532),	-- Leper Rat
+		p(3098),	-- Lil'Abom
 		un(10, p(249)),		-- Lil' K.T.
 		p(3119),	-- Lost Limb
 		p(458),		-- Lost of Lordaeron

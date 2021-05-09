@@ -6,7 +6,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1179, { 	-- The Eternal Palace
 		["isRaid"] = true,
 		["coord"] = { 50.5, 11.9, 1355 },
-		["order"] = "05",
 		["maps"] = {
 			1512,
 			1513,

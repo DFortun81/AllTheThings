@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(3,
-			{	-- Wrath of the Lich King
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(3, {	-- Wrath of the Lich King
+		-- #if ANYCLASSIC
+		["u"] = WRATH_PHASE_ONE,
+		-- #endif
+	}),
+}

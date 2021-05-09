@@ -5,7 +5,6 @@
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(786, { 	-- The Nighthold
-		["order"] = "03",
 		["isRaid"] = true,
 		["coords"] = {
 			{ 43.3, 62.3, 680 },	-- entrance that leads underground

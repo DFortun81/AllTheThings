@@ -275,7 +275,7 @@ _.Zones =
 					},
 				}),
 				n(87668, {	-- Orumo the Observer
-					["description"] = "|cff66ccffRequires 5 players to summon. Have one person stand on each of the runes around Orumo to make him attackable.|r",
+					["description"] = "Requires 5 players to summon. Have one person stand on each of the runes around Orumo to make him attackable.",
 					["questID"] = 37344,
 					["isDaily"] = true,
 					["coord"] = { 31.4, 47.6, 535 },

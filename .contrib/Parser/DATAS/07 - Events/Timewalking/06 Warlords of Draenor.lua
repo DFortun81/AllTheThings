@@ -2,7 +2,6 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODOL fromatting
 _.WorldEvents =
 {
 	d(24, {  -- Timewalking

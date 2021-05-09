@@ -226,7 +226,7 @@ _.Zones =
 							}),
 							q(31810, {	-- Riding the Skies (Azure)
 								["minReputation"] = { 1271, EXALTED },
-								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
@@ -235,7 +235,7 @@ _.Zones =
 							}),
 							q(31811, {	-- Riding the Skies (Golden)
 								["minReputation"] = { 1271, EXALTED },
-								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
@@ -244,7 +244,7 @@ _.Zones =
 							}),
 							q(30188, {	-- Riding the Skies (Jade)
 								["minReputation"] = { 1271, EXALTED },
-								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {

@@ -1,21 +1,22 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(747, { 	-- Magtheridon's Lair
-		["order"] = "03",
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 68,
-		["mapID"] = 331,
 		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
+		["mapID"] = MAGTHERIDONS_LAIR,
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		-- #if ANYCLASSIC
+		["lvl"] = 68,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #endif
 		["g"] = {
 			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)
-					["crs"] = { 17257 },	-- Magtheridon
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 32385 },	-- Magtheridon's Head
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28792),	-- A'dal's Signet of Defense
 						i(28793),	-- Band of Crimson Fury
@@ -24,9 +25,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(11003, {	-- The Fall of Magtheridon (H)
-					["crs"] = { 17257 },	-- Magtheridon
-					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 32386 },	-- Magtheridon's Head
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(28792),	-- A'dal's Signet of Defense
 						i(28793),	-- Band of Crimson Fury
@@ -34,64 +34,82 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28791),	-- Ring of the Recalcitrant
 					},
 				}),
+				q(13430, {	-- Trial of the Naaru: Magtheridon
+					["qg"] = 18481,	-- A'dal
+					["sourceQuests"] = {
+						10884,	-- Trial of the Naaru: Mercy
+						10885, 	-- Trial of the Naaru: Strength
+						10886,	-- Trial of the Naaru: Tenacity
+					},
+					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
+					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY },
+					["groups"] = {
+						i(31746),	-- Phoenix-Fire Band
+						i(31704, {	-- The Tempest Key
+							-- #if AFTER WRATH
+							["timeline"] = { "removed 2.3.0.10000" },
+							-- #endif
+						}),
+					},
+				}),
 			}),
-			cr(17257, e(1566, {
-				ach(693),	-- Magtheridon's Lair
-				i(29754, {		-- Chestguard of the Fallen Champion
-					i(27702),	-- Gladiator's Lamellar Chestpiece
-					i(31613),	-- Gladiator's Ornamented Chestguard
-					i(27879),	-- Gladiator's Scaled Chestpiece
-					i(29071),	-- Justicar Breastplate
-					i(29066),	-- Justicar Chestguard
-					i(29062),	-- Justicar Chestpiece
-					i(25831),	-- Gladiator's Leather Tunic
-					i(29045),	-- Netherblade Chestpiece
-					i(29038),	-- Cyclone Breastplate
-					i(29033),	-- Cyclone Chestguard
-					i(29029),	-- Cyclone Hauberk
-					i(25997),	-- Gladiator's Linked Armor
-					i(27469),	-- Gladiator's Mail Armor
-					i(31396),	-- Gladiator's Ringmail Armor
-				}),
-				i(29753, {	-- Chestguard of the Fallen Defender
-					i(29096),	-- Breastplate of Malorne
-					i(29087),	-- Chestguard of Malorne
-					i(29091),	-- Chestpiece of Malorne
-					i(28130),	-- Gladiator's Dragonhide Tunic
-					i(31379),	-- Gladiator's Kodohide Tunic
-					i(28140),	-- Gladiator's Wyrmhide Tunic
-					i(31413),	-- Gladiator's Mooncloth Robe
-					i(27711),	-- Gladiator's Satin Robe
-					i(29050),	-- Robes of the Incarnate
-					i(29056),	-- Shroud of the Incarnate
-					i(24544),	-- Gladiator's Plate Chestpiece
-					i(29019),	-- Warbringer Breastplate
-					i(29012),	-- Warbringer Chestguard
-				}),
-				i(29755, {	-- Chestguard of the Fallen Hero
-					i(29082),	-- Demon Stalker Harness
-					i(28334),	-- Gladiator's Chain Armor
-					i(25856),	-- Gladiator's Silk Raiment
-					i(29077),	-- Vestments of the Aldor
-					i(24552),	-- Gladiator's Dreadweave Robe
-					i(30200),	-- Gladiator's Felweave Raiment
-					i(28964),	-- Voidheart Robe
-				}),
-				i(34845),	-- Pit Lord's Satchel
-				i(28782),	-- Crystalheart Pulse-Staff
-				i(28774),	-- Glaive of the Pit
-				i(28783),	-- Eredar Wand of Obliteration
-				i(29458),	-- Aegis of the Vindicator
-				i(28781),	-- Karaborian Talisman
-				i(28775),	-- Thundering Greathelm
-				i(28777),	-- Cloak of the Pit Stalker
-				i(28776),	-- Liar's Tongue Gloves
-				i(28780),	-- Soul-Eater's Handwraps
-				i(28779),	-- Girdle of the Endless Pit
-				i(28778),	-- Terror Pit Girdle
-				i(28789),	-- Eye of Magtheridon
-				i(34846),	-- Black Sack of Gems // Maybe add contents later?
-			})),
+			e(1566, {
+				["creatureID"] = 17257,
+				["groups"] = {
+					ach(693),	-- Magtheridon's Lair
+					i(32385, {	-- Magtheridon's Head
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(32386, {	-- Magtheridon's Head
+						["races"] = HORDE_ONLY,
+					}),
+					i(29754, {	-- Chestguard of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29753, {	-- Chestguard of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29755, {	-- Chestguard of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
+					i(34845),	-- Pit Lord's Satchel
+					i(28782),	-- Crystalheart Pulse-Staff
+					i(28774),	-- Glaive of the Pit
+					i(28783),	-- Eredar Wand of Obliteration
+					i(29458),	-- Aegis of the Vindicator
+					i(28781),	-- Karaborian Talisman
+					i(28775),	-- Thundering Greathelm
+					i(28777),	-- Cloak of the Pit Stalker
+					i(28776),	-- Liar's Tongue Gloves
+					i(28780),	-- Soul-Eater's Handwraps
+					i(28779),	-- Girdle of the Endless Pit
+					i(28778),	-- Terror Pit Girdle
+					i(28789),	-- Eye of Magtheridon
+					i(34846, {	-- Black Sack of Gems
+						-- #if ANYCLASSIC
+						-- #if BEFORE WRATH
+						["description"] = "Might not be available until Black Temple is released.",
+						-- #endif
+						["timeline"] = { "added 2.4.0.7923" },
+						-- #endif
+						["groups"] = {
+							i(32227),	-- Crimson Spinel
+							i(32228),	-- Empyrean Sapphire
+							i(32229),	-- Lionseye
+							i(32231),	-- Pyrestone
+							i(32230),	-- Shadowsong Amethyst
+							i(32249),	-- Seaspray Emerald
+							i(23440),	-- Dawnstone
+							i(23436),	-- Living Ruby
+							i(23441),	-- Nightseye
+							i(23439),	-- Noble Topaz
+							i(23438),	-- Star of Elune
+							i(23437),	-- Talasite
+						},
+					}),
+				},
+			}),
 		},
 	}),
 })};

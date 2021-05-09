@@ -173,15 +173,16 @@ _.Instances = { tier(1, {	-- Classic
 						i(18315),	-- Ring of Demonic Potency
 					})),
 					n(16097, {			-- Isalien Summonable
-						["g"] = {
-							i(22057, {	-- Brazier of Invocation
-								un(11, i(22472)), 	-- Boots of Ferocity
-								un(11, i(22315)), 	-- Hammer of Revitalization
-								un(11, i(22314)), 	-- Huntsman's Harpoon
-								un(11, i(22304)), 	-- Ironweave Gloves
-							}),
+						["description"] = "Brazier of Invocation |cff3399ff(Dungeon Set 2 questline)|r is required to summon this boss.",
+						["cost"] = {
+							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
-						["description"] = "|cff66ccffBrazier of Invocation|r |cff3399ff(Dungeon Set 2 questline)|r |cff66ccffis required to summon this boss.|r",
+						["g"] = {
+							un(11, i(22472)), 	-- Boots of Ferocity
+							un(11, i(22315)), 	-- Hammer of Revitalization
+							un(11, i(22314)), 	-- Huntsman's Harpoon
+							un(11, i(22304)), 	-- Ironweave Gloves
+						},
 					}),
 					cr(11492, e(405, {	-- Alzzin the Wildshaper
 						{
@@ -735,7 +736,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18370),	-- Vigilance Charm
 					})),
 					n(14506, {			-- Lord Hel'nurath
-						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Warlock with (Dreadsteed of Xoroth) FOS|r \n|cff3399ffSTEP 2:|r|cff66ccff Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)|r \n|cff3399ffSTEP 3:|r|cff66ccff Kill Immol'thar.|r \n|cff3399ffSTEP 4:|r|cff66ccff Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.|r \n|cff3399ffSTEP 5:|r|cff66ccff Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.|r \n|cff3399ffSTEP 6:|r|cff66ccff Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.|r \n|cff3399ffSTEP 7:|r|cff66ccff Kill Lord Hel'nurath & collect loot.|r",
+						["description"] = "|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
 						["g"] = {
 							un(11, i(18757)), 	-- Diabolic Mantle
 							un(11, i(18755)), 	-- Xorothian Firestick

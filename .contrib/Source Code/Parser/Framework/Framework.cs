@@ -347,6 +347,20 @@ namespace ATT
             {
                 OBJECTS_WITH_REFERENCES[npcID] = true;
             }
+            if (data.TryGetValue("artifactID", out npcID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(npcID, out Dictionary<string, long> sources))
+            {
+                // off-hand artifact source
+                if (data.ContainsKey("isOffHand"))
+                {
+                    if (sources.TryGetValue("offHand", out long s))
+                        data["s"] = s;
+                }
+                else
+                {
+                    if (sources.TryGetValue("mainHand", out long s))
+                        data["s"] = s;
+                }
+            }
 
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
@@ -1962,6 +1976,23 @@ namespace ATT
                             }
                             break;
                         }
+                    case "Artifacts":
+                        foreach (var o in data)
+                        {
+                            // KEY: ArtifactID, VALUE: Data (generic object field/value pairs)
+                            if (o.Value is Dictionary<object, object> entry)
+                            {
+                                long artifactID = Convert.ToInt64(o.Key);
+                                if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
+                                    Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
+
+                                foreach (KeyValuePair<object, object> artifactHand in entry)
+                                {
+                                    artifactInfo[ATT.Export.ToString(artifactHand.Key)] = Convert.ToInt64(artifactHand.Value);
+                                }
+                            }
+                        }
+                        break;
                     default:
                         {
                             // Parse a Source DB Container

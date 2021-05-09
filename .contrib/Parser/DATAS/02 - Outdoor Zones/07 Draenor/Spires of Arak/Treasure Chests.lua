@@ -106,7 +106,7 @@ _.Zones =
 					},
 				}),
 				o(234618, {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36381,
 					["coord"] = { 61.1, 55.3, 542 },
 					["model"] = 145256,
@@ -116,7 +116,7 @@ _.Zones =
 					},
 				}),
 				n(86961,  {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36386,
 					["coord"] = { 48.6, 44.4, 542 },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -125,7 +125,7 @@ _.Zones =
 					},
 				}),
 				n(86941,  {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36388,
 					["coord"] = { 42.42, 26.69, 542 },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -134,7 +134,7 @@ _.Zones =
 					},
 				}),
 				n(86962,  {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36389,
 					["coord"] = { 46.9, 40.46, 542 },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -143,7 +143,7 @@ _.Zones =
 					},
 				}),
 				n(86953,  {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36390,
 					["coord"] = { 57.01, 78.93, 542 },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -152,7 +152,7 @@ _.Zones =
 					},
 				}),
 				n(86956,  {	-- Gift of Anzu
-					["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.|r",
+					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36392,
 					["coord"] = { 52.0, 19.7, 542 },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working

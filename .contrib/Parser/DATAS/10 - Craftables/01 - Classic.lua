@@ -340,6 +340,26 @@ _.Craftables =
 				i(3482),	-- Silvered Bronze Boots
 				i(12409),	-- Thorium Boots
 			}),
+			-- #if BEFORE MOP
+			i(29203, {	-- Enchanted Thorium Blades
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			i(29201, {	-- Thick Bronze Darts
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			i(29202, {	-- Whirling Steel Axes
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			-- #endif
 		}),
 		prof(ENCHANTING, {
 			filter(103, {	-- Illusions

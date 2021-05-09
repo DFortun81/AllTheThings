@@ -778,12 +778,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 77.0, 626 },
 					}),
-					q(37494, {	-- Under Cover of Darkness
-						["sourceQuests"] = { 37448 },	-- A Simple Plan
-						["classes"] = { ROGUE },
-						["provider"] = { "n", 98100 },	-- Taoshi
-						["coord"] = { 40.6, 77.0, 626 },
-					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),

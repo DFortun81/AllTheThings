@@ -6,7 +6,6 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(886, {	-- Vindicaar
-			["order"] = "99",
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
 			["maps"] = {
 				831,	-- Upper Deck [The Vindicaar: Krokuun]

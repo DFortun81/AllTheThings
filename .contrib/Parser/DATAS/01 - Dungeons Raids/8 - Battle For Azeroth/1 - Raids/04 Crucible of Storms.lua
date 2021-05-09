@@ -6,7 +6,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1177, { 	-- Crucible of Storms
 		["isRaid"] = true,
 		["coord"] = { 83.8, 47.0, 942 },
-		["order"] = "04",
 		["maps"] = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption

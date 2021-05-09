@@ -201,7 +201,8 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -3009,6 +3010,8 @@ for key,value in pairs({
 	[358319] = "마술사의 기록",	-- Sorceror's Note
 	[358382] = "현상 수배: 칼리세라",	-- Wanted: Chelicera
 	[358533] = "잊혀진 보급품",	-- Forgotten Supplies
+	[358855] = "손상된 안전 낙하 가방",	-- Damaged Safe Fall Pack
+	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	[362489] = "엘리시안 칙령",	-- Elysian Decree
 	[363825] = "은 금고",	-- Silver Strongbox
 	[364899] = "결정화 저승석",	-- Crystallized Stygia

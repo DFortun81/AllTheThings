@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(37, {	-- Elwynn Forest
 			["achievementID"] = 776,
-			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",
+			["description"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.",
 			["maps"] = {
 				38,	-- Fargodeep Mine Lv1
 				39,	-- Fargodeep Mine Lv2
