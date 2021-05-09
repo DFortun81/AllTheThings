@@ -27,7 +27,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #endif
 		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,
-		-- #elseif AFTER LEGION
+		-- #elseif AFTER SHADOWLANDS
 		["lvl"] = 30,
 		-- #endif
 		["groups"] = {
