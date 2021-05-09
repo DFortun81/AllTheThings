@@ -27,7 +27,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
+		-- #if ANYCLASSIC
 		["lvl"] = 68,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #endif
 		["groups"] = {
 			ach(960),	-- The Violet Eye
 			n(FACTIONS, {
@@ -932,9 +936,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							"added 5.3.0.16758"
 						},
 					}),
-					i(29757),	-- Gloves of the Fallen Champion
-					i(29758),	-- Gloves of the Fallen Defender
-					i(29756),	-- Gloves of the Fallen Hero
+					i(29757, {	-- Gloves of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29758, {	-- Gloves of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29756, {	-- Gloves of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
 					i(28633),	-- Staff of Infinite Mysteries
 					i(28631),	-- Dragon-Quake Shoulderguards
 					i(28647),	-- Forest Wind Shoulderpads
@@ -1057,9 +1067,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							"added 5.3.0.16758"
 						},
 					}),
-					i(29760),	-- Helm of the Fallen Champion
-					i(29761),	-- Helm of the Fallen Defender
-					i(29759),	-- Helm of the Fallen Hero
+					i(29760, {	-- Helm of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29761, {	-- Helm of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29759, {	-- Helm of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
 					i(28773),	-- Gorehowl
 					i(28771),	-- Light's Justice
 					i(28768),	-- Malchazeen

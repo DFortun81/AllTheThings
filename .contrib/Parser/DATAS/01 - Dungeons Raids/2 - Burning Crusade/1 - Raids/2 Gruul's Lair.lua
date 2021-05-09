@@ -8,14 +8,24 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = GRUULS_LAIR,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
+		-- #if ANYCLASSIC
 		["lvl"] = 68,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #endif
 		["groups"] = {
 			e(1564, {	-- High King Maulgar
 				["creatureID"] = 18831,
 				["groups"] = {
-					i(29763),	-- Pauldrons of the Fallen Champion
-					i(29764),	-- Pauldrons of the Fallen Defender
-					i(29762),	-- Pauldrons of the Fallen Hero
+					i(29763, {	-- Pauldrons of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29764, {	-- Pauldrons of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29762, {	-- Pauldrons of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
 					i(28800),	-- Hammer of the Naaru
 					i(28796),	-- Malefic Mask of the Shadows
 					i(28801),	-- Maulgar's Warhelm
@@ -28,9 +38,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 19044,
 				["groups"] = {
 					ach(692),	-- Gruul's Lair
-					i(29766),	-- Leggings of the Fallen Champion
-					i(29767),	-- Leggings of the Fallen Defender
-					i(29765),	-- Leggings of the Fallen Hero
+					i(29766, {	-- Leggings of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29767, {	-- Leggings of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29765, {	-- Leggings of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
 					i(28794),	-- Axe of the Gronn Lords
 					i(28802),	-- Bloodmaw Magus-Blade
 					i(28825),	-- Aldori Legacy Defender

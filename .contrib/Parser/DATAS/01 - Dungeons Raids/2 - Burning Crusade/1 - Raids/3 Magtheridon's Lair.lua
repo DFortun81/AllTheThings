@@ -7,7 +7,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
+		-- #if ANYCLASSIC
 		["lvl"] = 68,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #endif
 		["g"] = {
 			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)
@@ -61,9 +65,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32386, {	-- Magtheridon's Head
 						["races"] = HORDE_ONLY,
 					}),
-					i(29754),	-- Chestguard of the Fallen Champion
-					i(29753),	-- Chestguard of the Fallen Defender
-					i(29755),	-- Chestguard of the Fallen Hero
+					i(29754, {	-- Chestguard of the Fallen Champion
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
+					}),
+					i(29753, {	-- Chestguard of the Fallen Defender
+						["classes"] = { DRUID, PRIEST, WARRIOR },
+					}),
+					i(29755, {	-- Chestguard of the Fallen Hero
+						["classes"] = { HUNTER, MAGE, WARLOCK },
+					}),
 					i(34845),	-- Pit Lord's Satchel
 					i(28782),	-- Crystalheart Pulse-Staff
 					i(28774),	-- Glaive of the Pit
