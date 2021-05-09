@@ -2703,9 +2703,11 @@ _.NeverImplemented =
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(35530, {	-- Plans: Dawnsteel Shoulders
-				["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
+				["spellID"] = 0,
 			}),
-			
+			i(35532, {	-- Plans: Swiftsteel Shoulders
+				["spellID"] = 0,
+			}),
 			
 			-- Cataclysm
 			{	-- Plans: Cold-Forged Shank

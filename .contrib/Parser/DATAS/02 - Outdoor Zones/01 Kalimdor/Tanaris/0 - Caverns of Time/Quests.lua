@@ -15,6 +15,10 @@ _.Zones =
 						},
 						["description"] = "The questgiver can be found walking around the Caverns of Time.",
 						["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
+						["maps"] = {
+							TEMPEST_KEEP_THE_EYE,
+							SERPENTSHRINE_CAVERN,
+						},
 						["cost"] = {
 							{ "i", 29905, 1 },	-- Kael's Vial Remnant
 							{ "i", 29906, 1 },	-- Vashj's Vial Remnant
