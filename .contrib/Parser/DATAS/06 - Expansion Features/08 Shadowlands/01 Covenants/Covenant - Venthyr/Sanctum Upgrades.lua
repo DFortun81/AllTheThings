@@ -265,6 +265,7 @@ _.ExpansionFeatures =
 											crit(5, {	-- Alexandros Mograine
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181616),	-- A Treatise on the Great Battles of Lordaeron
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181325),	-- Marrowfused Dagger
@@ -289,6 +290,7 @@ _.ExpansionFeatures =
 											crit(1, {	-- Baroness Vashj
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181322),	-- Bonebound Tome
 											i(178894),	-- Decree: Baroness Vashj's Boon
 											i(181330),	-- Marrowfused Warglaive
@@ -390,6 +392,7 @@ _.ExpansionFeatures =
 											crit(6, {	-- Hunt-Captain Korayn
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(180726),	-- Pale Acidmaw (MOUNT!)
 											i(179605),	-- Elderwood Barrier
 											i(179548),	-- Elderwood Gavel
 											i(181618),	-- Gorm Quishe Platter
@@ -433,6 +436,7 @@ _.ExpansionFeatures =
 											crit(2, {	-- Lady Moonberry
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(180726),	-- Pale Acidmaw (MOUNT!)
 											i(181607),	-- Decree: Lady Moonberry's Esteem
 											i(181613),	-- Decree: Lady Moonberry's Boon
 											i(179516),	-- Songwood Staff
@@ -449,6 +453,7 @@ _.ExpansionFeatures =
 											crit(3, {	-- Mikanikos
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181317),	-- Dauntless Duskrunner (MOUNT!)
 											i(181227),	-- Bronze Ceremonial Targe
 											i(181563),	-- Decree: Mikanikos's Boon
 											i(181235),	-- Final Arbiter's Gavel
@@ -494,6 +499,7 @@ _.ExpansionFeatures =
 											crit(7, {	-- Polemarch Adrestes
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181317),	-- Dauntless Duskrunner (MOUNT!)
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
@@ -1764,10 +1770,7 @@ _.ExpansionFeatures =
 									},
 									["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
 									["g"] = {
-										i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
-										i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
 										i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
-										i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
 										i(181441, {	-- Altar of Accomplishment
 											["cost"] = { { "c", 1813, 25 } },	-- 25x Reservoir Anima
 											["g"] = {

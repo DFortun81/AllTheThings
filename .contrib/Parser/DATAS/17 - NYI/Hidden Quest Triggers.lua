@@ -4375,6 +4375,8 @@ _.HiddenQuestTriggers =
 		q(62494),	-- ""
 		q(62518),	-- ""
 		q(62527),	-- ""
+		q(62493),	-- Ember Court End (The Countess / Polemarch Adrestes as first-time guests, both Elated)
+		q(62510),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
 		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
