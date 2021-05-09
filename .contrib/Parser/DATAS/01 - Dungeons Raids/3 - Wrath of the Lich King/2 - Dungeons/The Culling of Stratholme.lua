@@ -5,7 +5,7 @@
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(279, {	-- The Culling of Stratholme
 		["coords"] = {
-			{ 56.9, 82.4, 75 },	-- dungeon entrance
+			{ 56.9, 82.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["mapID"] = 130,

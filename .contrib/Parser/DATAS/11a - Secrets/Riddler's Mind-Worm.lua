@@ -52,8 +52,8 @@ _.Secrets =
 				["model"] = 305393,
 				["questID"] = 47211,
 				["coords"] = {
-					{ 22.9, 64.4, 75 },	-- Well of Eternity
-					{ 64.7, 49.9, 71 },	-- Caverns of Time
+					{ 22.9, 64.4, CAVERNS_OF_TIME },	-- Well of Eternity Entrance
+					{ 64.7, 49.9, 71 },	-- Caverns of Time Entrance
 				},
 				["sourceQuest"] = 47210,	-- Step 5: Page 845
 				["description"] = "|cFFFFFFFFStep 6:|r This step will take us to the |cFFFFD700Well of Eternity|r instance in |cFFFFD700Caverns of Time|r.  Kill the first 2 bosses.  Take the drake and when you are dropped off walk to the left to the stone stairs.  |cFFFFD700Page 1127|r will be on the bottom stair next to a large stone divider.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...behold the battle, unblinking...|r",

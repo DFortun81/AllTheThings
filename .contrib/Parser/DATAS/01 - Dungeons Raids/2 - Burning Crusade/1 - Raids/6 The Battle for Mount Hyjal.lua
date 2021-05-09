@@ -22,6 +22,433 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 68,
 		-- #endif
 		["groups"] = {
+			n(FACTIONS, {
+				faction(990, {	-- The Scale of the Sands
+					["maps"] = { CAVERNS_OF_TIME },
+				}),
+			}),
+			n(QUESTS, {
+				q(10947, {	-- An Artifact From the Past
+					["qg"] = 21700,	-- Akama
+					["sourceQuest"] = 10946,	-- Ruse of the Ashtongue
+					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
+					["maps"] = { SHADOWMOON_VALLEY },
+					["cost"] = {
+						{ "i", 32459, 1 },	-- Time-Phased Phylactery
+					},
+				}),
+				q(11105, {	-- Champion No More
+					["qg"] = 19935,	-- Soridormi
+					["sourceQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,	-- Defender's Covenant
+						10473,	-- Restorer's Covenant
+						10472,	-- Sage's Covenant
+					},
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 29301, 1 },	-- Band of the Eternal Champion
+						{ "g", 750000 },	-- 75g
+					},
+					["groups"] = {
+						i(29297),	-- Band of the Eternal Defender
+						i(29309),	-- Band of the Eternal Restorer
+						i(29305),	-- Band of the Eternal Sage
+					},
+				}),
+				q(10474, {	-- Champion's Covenant
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10470,	-- Champion's Oath
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						--10474,	-- Champion's Covenant
+						10475,  -- Defender's Covenant
+						10473,  -- Restorer's Covenant
+						10472,  -- Sage's Covenant
+					},
+					["cost"] = {
+						{ "i", 29300, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29301),	-- Band of the Eternal Champion
+					},
+				}),
+				q(10470, {	-- Champion's Oath
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10466,	-- Champion's Vow
+					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						--10470,	-- Champion's Oath
+						10471,  -- Defender's Oath
+						10469,  -- Restorer's Oath
+						10468,  -- Sage's Oath
+					},
+					["cost"] = {
+						{ "i", 29299, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29300),	-- Band of Eternity
+					},
+				}),
+				q(10462, {	-- Champion's Pledge
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						--10462,	-- Champion's Pledge
+						10460,  -- Defender's Pledge
+						10461,  -- Restorer's Pledge
+						10463,  -- Sage's Pledge
+					},
+					["groups"] = {
+						i(29298),	-- Band of Eternity
+					},
+				}),
+				q(10466, {	-- Champion's Vow
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10462,	-- Champion's Pledge
+					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						--10466,	-- Champion's Vow
+						10467,  -- Defender's Vow
+						10465,  -- Restorer's Vow
+						10464,  -- Sage's Vow
+					},
+					["cost"] = {
+						{ "i", 29298, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29299),	-- Band of Eternity
+					},
+				}),
+				
+				q(11106, {	-- Defender No More
+					["qg"] = 19935,	-- Soridormi
+					["sourceQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,	-- Defender's Covenant
+						10473,	-- Restorer's Covenant
+						10472,	-- Sage's Covenant
+					},
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 29297, 1 },	-- Band of the Eternal Defender
+						{ "g", 750000 },	-- 75g
+					},
+					["groups"] = {
+						i(29301),	-- Band of the Eternal Champion
+						i(29309),	-- Band of the Eternal Restorer
+						i(29305),	-- Band of the Eternal Sage
+					},
+				}),
+				q(10475, {	-- Defender's Covenant
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10471,	-- Defender's Oath
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10474,	-- Champion's Covenant
+						--10475,  -- Defender's Covenant
+						10473,  -- Restorer's Covenant
+						10472,  -- Sage's Covenant
+					},
+					["cost"] = {
+						{ "i", 29296, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29297),	-- Band of the Eternal Defender
+					},
+				}),
+				q(10471, {	-- Defender's Oath
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10467,	-- Defender's Vow
+					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10470,	-- Champion's Oath
+						--10471,  -- Defender's Oath
+						10469,  -- Restorer's Oath
+						10468,  -- Sage's Oath
+					},
+					["cost"] = {
+						{ "i", 29295, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29296),	-- Band of Eternity
+					},
+				}),
+				q(10460, {	-- Defender's Pledge
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10462,	-- Champion's Pledge
+						--10460,  -- Defender's Pledge
+						10461,  -- Restorer's Pledge
+						10463,  -- Sage's Pledge
+					},
+					["groups"] = {
+						i(29294),	-- Band of Eternity
+					},
+				}),
+				q(10467, {	-- Defender's Vow
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10460,	-- Defender's Pledge
+					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10466,	-- Champion's Vow
+						--10467,  -- Defender's Vow
+						10465,  -- Restorer's Vow
+						10464,  -- Sage's Vow
+					},
+					["cost"] = {
+						{ "i", 29294, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29295),	-- Band of Eternity
+					},
+				}),
+				
+				q(11104, {	-- Restorer No More
+					["qg"] = 19935,	-- Soridormi
+					["sourceQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,	-- Defender's Covenant
+						10473,	-- Restorer's Covenant
+						10472,	-- Sage's Covenant
+					},
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 29309, 1 },	-- Band of the Eternal Restorer
+						{ "g", 750000 },	-- 75g
+					},
+					["groups"] = {
+						i(29301),	-- Band of the Eternal Champion
+						i(29297),	-- Band of the Eternal Defender
+						i(29305),	-- Band of the Eternal Sage
+					},
+				}),
+				q(10473, {	-- Restorer's Covenant
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10469,	-- Restorer's Oath
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,  -- Defender's Covenant
+						--10473,  -- Restorer's Covenant
+						10472,  -- Sage's Covenant
+					},
+					["cost"] = {
+						{ "i", 29308, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29309),	-- Band of the Eternal Restorer
+					},
+				}),
+				q(10469, {	-- Restorer's Oath
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10465,	-- Restorer's Vow
+					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10470,	-- Champion's Oath
+						10471,  -- Defender's Oath
+						--10469,  -- Restorer's Oath
+						10468,  -- Sage's Oath
+					},
+					["cost"] = {
+						{ "i", 29306, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29308),	-- Band of Eternity
+					},
+				}),
+				q(10461, {	-- Restorer's Pledge
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10462,	-- Champion's Pledge
+						10460,  -- Defender's Pledge
+						--10461,  -- Restorer's Pledge
+						10463,  -- Sage's Pledge
+					},
+					["groups"] = {
+						i(29307),	-- Band of Eternity
+					},
+				}),
+				q(10465, {	-- Restorer's Vow
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10461,	-- Restorer's Pledge
+					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10466,	-- Champion's Vow
+						10467,  -- Defender's Vow
+						--10465,  -- Restorer's Vow
+						10464,  -- Sage's Vow
+					},
+					["cost"] = {
+						{ "i", 29307, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29306),	-- Band of Eternity
+					},
+				}),
+				
+				q(11103, {	-- Sage No More
+					["qg"] = 19935,	-- Soridormi
+					["sourceQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,	-- Defender's Covenant
+						10473,	-- Restorer's Covenant
+						10472,	-- Sage's Covenant
+					},
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 29305, 1 },	-- Band of the Eternal Sage
+						{ "g", 750000 },	-- 75g
+					},
+					["groups"] = {
+						i(29301),	-- Band of the Eternal Champion
+						i(29297),	-- Band of the Eternal Defender
+						i(29309),	-- Band of the Eternal Restorer
+					},
+				}),
+				q(10472, {	-- Sage's Covenant
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10468,	-- Sage's Oath
+					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10474,	-- Champion's Covenant
+						10475,  -- Defender's Covenant
+						10473,  -- Restorer's Covenant
+						--10472,  -- Sage's Covenant
+					},
+					["cost"] = {
+						{ "i", 29304, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29305),	-- Band of the Eternal Sage
+					},
+				}),
+				q(10468, {	-- Sage's Oath
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10464,	-- Sage's Vow
+					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10470,	-- Champion's Oath
+						10471,  -- Defender's Oath
+						10469,  -- Restorer's Oath
+						--10468,  -- Sage's Oath
+					},
+					["cost"] = {
+						{ "i", 29303, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29304),	-- Band of Eternity
+					},
+				}),
+				q(10463, {	-- Sage's Pledge
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10462,	-- Champion's Pledge
+						10460,  -- Defender's Pledge
+						10461,  -- Restorer's Pledge
+						--10463,  -- Sage's Pledge
+					},
+					["groups"] = {
+						i(29302),	-- Band of Eternity
+					},
+				}),
+				q(10464, {	-- Sage's Vow
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
+					},
+					["sourceQuest"] = 10463,	-- Sage's Pledge
+					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						10466,	-- Champion's Vow
+						10467,  -- Defender's Vow
+						10465,  -- Restorer's Vow
+						--10464,  -- Sage's Vow
+					},
+					["cost"] = {
+						{ "i", 29302, 1 },	-- Band of Eternity
+					},
+					["groups"] = {
+						i(29303),	-- Band of Eternity
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
 					-- #if BEFORE CATA

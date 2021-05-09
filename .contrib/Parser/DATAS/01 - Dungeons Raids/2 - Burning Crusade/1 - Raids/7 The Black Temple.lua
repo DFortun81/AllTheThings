@@ -1,15 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(751, {	-- The Black Temple
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
 		["isRaid"] = true,
-		["lvl"] = 68,
 		["maps"] = {
+			THE_BLACK_TEMPLE,
 			339,	-- Karabor Sewers
-			340,	-- Black Temple
 			341,	-- Sanctuary of Shadows
 			342,	-- Halls of Anguish
 			343,	-- Gorefiend's Vigil
@@ -18,6 +16,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			346,	-- Temple Summit
 			759,	-- Black Temple (used in DH scenario for "Confrontation at the Black Temple" quest)
 		},
+		-- #if ANYCLASSIC
+		-- #if BEFORE WRATH
+		--["sourceQuest"] = ,	-- 
+		-- #endif
+		["u"] = TBC_PHASE_THREE,
+		["lvl"] = 70,
+		-- #elseif AFTER SHADOWLANDS
+		["lvl"] = 30,
+		-- #else
+		["lvl"] = 68,
+		-- #endif
 		["groups"] = {
 			ach(958),	-- Sworn to the Deathsworn
 			n(FACTIONS, {

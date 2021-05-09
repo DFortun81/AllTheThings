@@ -48,11 +48,6 @@ _.Zones =
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10514 },	-- I Was a Lot of Things...
 				}),
-				q(10947, {	-- An Artifact From the Past
-					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10946 },	-- Ruse of the Ashtongue
-				}),
 				q(10527, {	-- Ar'tor, Son of Oronok
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
