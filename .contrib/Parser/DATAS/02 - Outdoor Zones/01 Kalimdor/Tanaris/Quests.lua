@@ -1056,19 +1056,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(10445, {	-- The Vials of Eternity (legacy version)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = 	{ "n", 19935 },	-- Soridormi
-				}),
-				q(13432, {	-- The Vials of Eternity
-					["description"] = "The questgiver can be found walking around the Caverns of Time.",
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
-					},
-					["lvl"] = 70,
-					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
-				}),
 				q(2772,  {	-- The World At Your Feet
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
