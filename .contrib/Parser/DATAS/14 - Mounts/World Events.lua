@@ -5,7 +5,7 @@
 _.Mounts =
 {
 	n(-3, { 	-- World Event
-		un(18, i(50250)),	-- Big Love Rocket
+		un(HOLIDAY_LOVEINTHEAIR, i(50250)),	-- Big Love Rocket
 		i(73766),			-- Darkmoon Dancing Bear
 		i(142398),			-- Darkwater Skate
 		i(129923),			-- Eclipse Dragonhawk
@@ -23,7 +23,7 @@ _.Mounts =
 		})),
 		un(24, i(33977)),	-- Swift Brewfest Ram
 		i(72140),			-- Swift Forest Strider
-		un(18, i(72146)),	-- Swift Lovebird
+		un(HOLIDAY_LOVEINTHEAIR, i(72146)),	-- Swift Lovebird
 		un(HOLIDAY_NOBLEGARDEN, i(72145)),	-- Swift Springstrider
 		i(87775),			-- Yu'lei, Daughter of Jade
 	}),

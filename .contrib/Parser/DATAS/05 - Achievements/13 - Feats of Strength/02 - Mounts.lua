@@ -10,7 +10,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
 			ach(4626),			-- And I'll Form the Head!
 			ach(885),			-- Ashes of Al'ar
-			un(18, ach(4627)),	-- Big Love Rocket
+			un(HOLIDAY_LOVEINTHEAIR, ach(4627)),	-- Big Love Rocket
 			un(14, ach(2316)),	-- Brutal Nether Drake
 			un(14, ach(6741)),	-- Cataclysmic Gladiator's Twilight Drake
 			ach(14183),			-- Conspicuous Consumption
