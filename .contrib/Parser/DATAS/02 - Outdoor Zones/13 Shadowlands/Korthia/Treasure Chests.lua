@@ -55,6 +55,17 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369232, {	-- Offering Box
+					["description"] = "To open the treasure, climb up the outside of the building and loot the |cFFFFFFFFSmall Offering Key|r at |cFFFFFFFF43.5 67.5|r.",
+				--	["questID"] = 64268,
+					["coord"] = { 45.3, 67.1, KORTHIA },
+					["cost"] = { { "i", 187033, 1 } },	-- Small Offering Key
+					["g"] = {
+						crit(10, {	-- Offering Box
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
 				n(179772, {	-- Spectral Bound Chest
 					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r in a specific order.",
 				--	["isDaily"] = true,	-- TODO - the keys reset daily, but i'm not actually sure if this chest does, because i have not yet personally opened it lol.  under the assumption the chest is 1-time, i commented out isDaily on the keys for ease of tracking, and attached altQuests so if the quest is permanent they won't show up once the one-time chest has been collected.  will revisit and change if necessary when i'm able to open the chest myself

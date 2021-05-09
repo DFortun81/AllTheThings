@@ -21,7 +21,6 @@ _.Zones =
 				ach(15099, {	-- Treasures of Korthia
 					crit(2),	-- Forgotten Feather
 					crit(6),	-- Displaced Relic
-					crit(10),	-- Offering Box
 				}),
 			}),
 		}),
