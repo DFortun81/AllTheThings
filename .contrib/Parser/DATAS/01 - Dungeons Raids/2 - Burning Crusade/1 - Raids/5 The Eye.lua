@@ -2,15 +2,28 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local legendary = function(itemID, creatureID)
-	-- #if ANYCLASSIC
-	return creatureID and cr(creatureID, i(itemID)) or i(itemID);
-	-- #else
-	return i(itemID, {
-		["collectible"] = false,
-		["creatureID"] = creatureID,
-		["u"] = 15,
-	});
-	-- #endif
+	if creatureID then
+		-- #if ANYCLASSIC
+		return i(itemID, {
+			["cr"] = creatureID,
+		});
+		-- #else
+		return i(itemID, {
+			["collectible"] = false,
+			["cr"] = creatureID,
+			["u"] = 15,
+		});
+		-- #endif
+	else
+		-- #if ANYCLASSIC
+		return i(itemID);
+		-- #else
+		return i(itemID, {
+			["collectible"] = false,
+			["u"] = 15,
+		});
+		-- #endif
+	end
 end;
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(749, { 	-- The Eye
