@@ -9,9 +9,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if ANYCLASSIC
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
-		["cost"] = {
-			{ "i", 39145, 1 },	-- The Mark of Vashj
-		},
 		-- #endif
 		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,

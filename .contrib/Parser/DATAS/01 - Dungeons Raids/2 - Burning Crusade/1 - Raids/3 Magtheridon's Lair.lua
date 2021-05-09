@@ -47,7 +47,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["groups"] = {
 						i(31746),	-- Phoenix-Fire Band
 						i(31704, {	-- The Tempest Key
-							["questID"] = 13430,	-- Trial of the Naaru: Magtheridon
 							-- #if AFTER WRATH
 							["timeline"] = { "removed 2.3.0.10000" },
 							-- #endif

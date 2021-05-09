@@ -34,9 +34,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if ANYCLASSIC
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 13430,	-- Trial of the Naaru: Magtheridon
-		["cost"] = {
-			{ "i", 31704, 1 },	-- The Tempest Key
-		},
 		-- #endif
 		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,
