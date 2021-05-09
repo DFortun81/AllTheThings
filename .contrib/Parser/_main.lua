@@ -12,7 +12,7 @@ MAGTHERIDONS_LAIR = 331;	-- Confirmed!
 SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
 TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
 THE_BATTLE_FOR_MOUNT_HYJAL = 329;
-THE_BLACK_TEMPLE = 339;	-- Confirmed!
+THE_BLACK_TEMPLE = 340;	-- Confirmed!
 SUNWELL_PLATEAU = 335;
 ZULAMAN = 333;
 
@@ -40,6 +40,7 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 -- Kalimdor
 KALIMDOR = 12;	-- Confirmed!
 ASHENVALE = 63;	-- Confirmed!
+CAVERNS_OF_TIME = 75;	-- Confirmed!
 FERALAS = 69;	-- Confirmed!
 
 -- Eastern Kingdoms
@@ -244,6 +245,7 @@ TAILORING = 197;
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
+HOLIDAY_LOVEINTHEAIR = 18;
 HOLIDAY_NOBLEGARDEN = 19;
 
 ItemClassInfo = {

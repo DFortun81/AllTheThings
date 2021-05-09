@@ -2,28 +2,25 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 18},
-{
+_.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 	holiday(235468, {	-- Love is in the Air
 		n(-139, {	-- Bosses
 			n(36296, {	-- Apothecary Hummel
 				i(147907, {	-- Heart-Shaped Carton
-					["lvl"] = 16,
 					["g"] = {
-						i(49715),		-- Forever-Lovely Rose
-						i(50446),		-- Toxic Wasteling
-						i(50741),		-- Vile Fumigator's Mask
-						i(50471),		-- The Heartbreaker
+						i(49715),	-- Forever-Lovely Rose
+						i(50446),	-- Toxic Wasteling
+						i(50741),	-- Vile Fumigator's Mask
+						i(50471),	-- The Heartbreaker
 					},
 				}),
 				i(54537, {	-- Heart-Shaped Box
-					["lvl"] = 110,
 					["g"] = {
-						i(49715),		-- Forever-Lovely Rose
-						i(50446),		-- Toxic Wasteling
-						i(50741),		-- Vile Fumigator's Mask
-						i(50471),		-- The Heartbreaker
-						i(50250, {				-- Big Love Rocket
+						i(49715),	-- Forever-Lovely Rose
+						i(50446),	-- Toxic Wasteling
+						i(50741),	-- Vile Fumigator's Mask
+						i(50471),	-- The Heartbreaker
+						i(50250, {	-- Big Love Rocket
 							ach(4627),	-- Big Love Rocket
 						}),
 					},
@@ -58,8 +55,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 				un(REMOVED_FROM_GAME, i(93392)),	-- Winking Eye of Love [Level 90]
 				un(REMOVED_FROM_GAME, i(117367)),	-- Winking Eye of Love [Level 100]
 				i(143905),	-- Winking Eye of Love [Level 110]
-
-				-- Other Items
 				i(21813),	-- Bag of Heart Candies
 				i(49909),	-- Box of Chocolates
 				i(34258),	-- Love Rocket

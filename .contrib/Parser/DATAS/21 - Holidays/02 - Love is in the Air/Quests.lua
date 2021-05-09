@@ -2,8 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 18},
-{
+_.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 	holiday(235468, {	-- Love is in the Air
 		n(QUESTS, {
 			q(9029,  {	-- A Bubbling Cauldron
@@ -13,14 +12,14 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },		-- Darnassus
-					{ 33.8, 66.6, 87 },		-- Ironforge
-					{ 52.8, 77.0, 85 },		-- Orgrimmar
+					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 52.8, 77.0, 85 },	-- Orgrimmar
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },		-- Stormwind
+					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },		-- Thunder Bluff
-					{ 66.0, 38.4, 90 },		-- Undercity
+					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
 			q(24657, {	-- A Friendly Chat... (A)
@@ -93,14 +92,14 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },		-- Darnassus
-					{ 33.8, 66.6, 87 },		-- Ironforge
-					{ 52.8, 77.0, 85 },		-- Orgrimmar
+					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 52.8, 77.0, 85 },	-- Orgrimmar
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },		-- Stormwind
+					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },		-- Thunder Bluff
-					{ 66.0, 38.4, 90 },		-- Undercity
+					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
 			q(9024,  {	-- Aristan's Hunch
@@ -111,19 +110,19 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },		-- Darnassus
-					{ 33.8, 66.6, 87 },		-- Ironforge
-					{ 52.8, 77.0, 85 },		-- Orgrimmar
+					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 52.8, 77.0, 85 },	-- Orgrimmar
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },		-- Stormwind
+					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },		-- Thunder Bluff
-					{ 66.0, 38.4, 90 },		-- Undercity
+					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
 			q(44558, {	-- Crushing the Crown (A)
 				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (A)
-				["provider"] = { "n", 38066 },		-- Detective Snip Snagglebolt
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
 				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -409,8 +408,8 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 38293 },	-- Junior Inspector
 				["coords"] = {
-					{ 44.8, 56.6, 89 },		-- Darnassus
-					{ 35.0, 68.8, 87 },		-- Ironforge
+					{ 44.8, 56.6, 89 },	-- Darnassus
+					{ 35.0, 68.8, 87 },	-- Ironforge
 					{ 76.2, 57.2, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -421,7 +420,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, 88 },	-- Thunder Bluff
-					{ 64.6, 37.4, 90 },		-- Undercity
+					{ 64.6, 37.4, 90 },	-- Undercity
 				},
 				["races"] = HORDE_ONLY,
 			}),

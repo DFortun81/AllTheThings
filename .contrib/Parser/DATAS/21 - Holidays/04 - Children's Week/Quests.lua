@@ -1580,12 +1580,13 @@ _.Holidays =
 							10954,	-- Jheel is at Aeris Landing!
 						},
 						["coords"] = {
-							{ 53.29, 55.35, 75 },	-- Salandria taken to Caverns of Time
-							{ 39.94, 77.39, 75 },	-- Toy Dragon
-							{ 64.76, 50.01, 75 },	-- Caverns of Time Entrance
+							{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Salandria taken to Caverns of Time
+							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
+							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
 						["maps"] = {
 							71,		-- Tanaris
+							CAVERNS_OF_TIME,
 							SHATTRATH_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1602,13 +1603,13 @@ _.Holidays =
 							10953,	-- Visit the Throne of the Elements
 						},
 						["coords"] = {
-							{ 53.29, 55.35, 75 },	-- Salandria taken to Caverns of Time
-							{ 39.94, 77.39, 75 },	-- Toy Dragon
-							{ 64.76, 50.01, 75 },	-- Caverns of Time Entrance
+							{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Salandria taken to Caverns of Time
+							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
+							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
 						["maps"] = {
 							71,		-- Tanaris
-							75,		-- Tanaris: Caverns of Time
+							CAVERNS_OF_TIME,
 							SHATTRATH_CITY,
 						},
 						["races"] = HORDE_ONLY,

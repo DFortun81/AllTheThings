@@ -8,7 +8,7 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
 			74,	-- Caverns of Time, Timeless Tunnel
-			75,	-- Caverns of Time, bottom floor
+			CAVERNS_OF_TIME,
 		},
 		["g"] = {
 			ach(14271, {	-- 16th Anniversary
@@ -19,7 +19,7 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(158061, {	-- Historian Ma'di
-					["coord"] = { 50.7, 41.1, 75 },
+					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["g"] = {
 						i(178514, {	-- Crafted Cloak of War
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge

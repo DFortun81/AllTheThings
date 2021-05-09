@@ -1,14 +1,21 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(77, { 	-- Zul'Aman
-		["u"] = REMOVED_FROM_GAME,
-		["isRaid"] = true,
-		["lvl"] = 68,
-		["maps"] = { 333 },
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
+		["mapID"] = ZULAMAN,
+		["isRaid"] = true,
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_FOUR,
+		["lvl"] = 70,
+		-- #elseif AFTER SHADOWLANDS
+		["u"] = REMOVED_FROM_GAME,
+		["lvl"] = 30,
+		-- #else
+		["u"] = REMOVED_FROM_GAME,
+		["lvl"] = 68,
+		-- #endif
 		["groups"] = {
 			d(1, {	-- Normal (Legacy)
 				["u"] = REMOVED_FROM_GAME,

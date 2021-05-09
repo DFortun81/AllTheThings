@@ -185,17 +185,16 @@ _.Toys =
 				un(26, i(128794)),	-- Sack of Spectral Spiders
 			},
 		}),
-		n(-50, {    -- Love is in the Air
-			["achievementID"] = 1693,    -- Fool For Love
-			["u"] = 18,
-			["g"] = {
+		holiday(235468, {	-- Love is in the Air
+			["u"] = HOLIDAY_LOVEINTHEAIR,
+			["g"] = sharedData({["u"] = HOLIDAY_LOVEINTHEAIR,}, {
 				i(142341), 	-- Love Boat
 				i(165670),	-- Peddlefeet's Lovely Hearthstone
 				i(34480),	-- Romantic Picnic Basket
 				i(144339), 	-- Sturdy Love Fool
 				i(50471),	-- The Heartbreaker
 				i(116651),	-- True Love Prism
-			},
+			}),
 		}),
 		n(-47, {    -- Lunar Festival
 			["achievementID"] = 913,	-- To Honor One's Elders

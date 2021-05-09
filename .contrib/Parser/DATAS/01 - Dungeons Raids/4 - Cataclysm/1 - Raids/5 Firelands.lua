@@ -19,7 +19,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["maps"] = {
 					71,		-- Tanaris
 					74, 	-- Tanaris: Caverns of Time Entrance
-					75, 	-- Tanaris: Caverns of Time
+					CAVERNS_OF_TIME,
 					84,		-- Stormwind City
 					85,		-- Orgrimmar
 					86,		-- Orgrimmar: The Drag

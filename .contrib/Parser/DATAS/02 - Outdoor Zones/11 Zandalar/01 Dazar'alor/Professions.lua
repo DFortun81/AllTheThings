@@ -674,7 +674,7 @@ _.Zones =
 					}),
 					q(53810, {	-- The Severed Thread
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 62.0, 53.9, 75 },
+						["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (A)
 							55188,	-- Tearing at the Seams (H)
@@ -684,7 +684,7 @@ _.Zones =
 					}),
 					q(53813, {	-- Rolling Up the Sleeves
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 43.5, 34.8, 75 },
+						["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (A)
 							55188,	-- Tearing at the Seams (H)
@@ -694,7 +694,7 @@ _.Zones =
 					}),
 					q(53858, {	-- Step Into Her Shoes
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 39.1, 63.3, 75 },
+						["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
 						["sourceQuests"] = {
 							53810,	-- The Severed Thread
 							53813,	-- Rolling Up the Sleeves

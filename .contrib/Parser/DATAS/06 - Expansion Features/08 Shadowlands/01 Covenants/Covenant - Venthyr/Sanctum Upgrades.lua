@@ -265,6 +265,7 @@ _.ExpansionFeatures =
 											crit(5, {	-- Alexandros Mograine
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181616),	-- A Treatise on the Great Battles of Lordaeron
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181325),	-- Marrowfused Dagger
@@ -289,6 +290,7 @@ _.ExpansionFeatures =
 											crit(1, {	-- Baroness Vashj
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181322),	-- Bonebound Tome
 											i(178894),	-- Decree: Baroness Vashj's Boon
 											i(181330),	-- Marrowfused Warglaive
@@ -390,6 +392,7 @@ _.ExpansionFeatures =
 											crit(6, {	-- Hunt-Captain Korayn
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(180726),	-- Pale Acidmaw (MOUNT!)
 											i(179605),	-- Elderwood Barrier
 											i(179548),	-- Elderwood Gavel
 											i(181618),	-- Gorm Quishe Platter
@@ -433,6 +436,7 @@ _.ExpansionFeatures =
 											crit(2, {	-- Lady Moonberry
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(180726),	-- Pale Acidmaw (MOUNT!)
 											i(181607),	-- Decree: Lady Moonberry's Esteem
 											i(181613),	-- Decree: Lady Moonberry's Boon
 											i(179516),	-- Songwood Staff
@@ -449,6 +453,7 @@ _.ExpansionFeatures =
 											crit(3, {	-- Mikanikos
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181317),	-- Dauntless Duskrunner (MOUNT!)
 											i(181227),	-- Bronze Ceremonial Targe
 											i(181563),	-- Decree: Mikanikos's Boon
 											i(181235),	-- Final Arbiter's Gavel
@@ -494,6 +499,7 @@ _.ExpansionFeatures =
 											crit(7, {	-- Polemarch Adrestes
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181317),	-- Dauntless Duskrunner (MOUNT!)
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
 											i(181228),	-- Temple Guard's Partisan
@@ -1047,16 +1053,14 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61129, {	-- RSVP: Droman Aliothe
-									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for a |cFFFFFFFFPristine Vulpine Pelt|r from Trader Ta'bix in Bastion (|cFFFFFFFF33.4, 36.4|r).\n\n3. Exchange the pelt for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n4. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n5. Exchange the crystal for a |cFFFFFFFFSpiral Deathroc Horn|r from Au'larrynar in Maldraxxus (|cFFFFFFFF53.6, 47.9|r).\n\n6. Return to Revendreth and exchange the horn for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
 									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 60.1, 53.8, ARDENWEALD },
 									["cost"] = {
 										{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
-										{ "i", 180972, 1 },	-- Pristine Vulpine Pelt
 										{ "i", 180971, 1 },	-- Aquamarine Cartel Chit
 										{ "i", 180970, 1 },	-- Teregeer Crystal
-										{ "i", 180969, 1 },	-- Spiral Deathroc Horn
 										{ "i", 180774, 1 },	-- Preserved Berries
 									},
 									["g"] = {
@@ -1766,10 +1770,7 @@ _.ExpansionFeatures =
 									},
 									["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
 									["g"] = {
-										i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
-										i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
 										i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
-										i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
 										i(181441, {	-- Altar of Accomplishment
 											["cost"] = { { "c", 1813, 25 } },	-- 25x Reservoir Anima
 											["g"] = {

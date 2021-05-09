@@ -442,6 +442,7 @@ _.ExpansionFeatures =
 							i(114822),	-- Heavily Reinforced Armor Enhancement
 							i(128313),	-- Huge Ogre Cache
 							i(128315),	-- Medallion of the Legion
+							i(122514),	-- Mission Completion Orders
 							i(122580),	-- Ogre Buddy Handbook
 							i(114131),	-- Power Overrun Weapon Enhancement
 							i(122576),	-- Rush Order: Alchemy Lab

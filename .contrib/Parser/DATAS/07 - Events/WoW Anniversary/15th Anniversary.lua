@@ -8,7 +8,7 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
 			74,	-- Caverns of Time, Timeless Tunnel
-			75,	-- Caverns of Time, bottom floor
+			CAVERNS_OF_TIME,
 		},
 		["g"] = {
 			ach(13917, {	-- 15th Anniversary
@@ -1282,35 +1282,35 @@ _.WorldEvents =
 			n(QUESTS, {
 				q(57300, {	-- Soldier of Time
 					["provider"] = { "n", 157113 },	-- Chromie
-					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
+					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 					["u"] = 31,	-- WoW Anniversary
 					["isWeekly"] = true,
 				}),
 				q(43323, {	-- A Time to Reflect (A)
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
-					["coord"] = { 51.4, 39.0, 75 },
+					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 31,	-- WoW Anniversary
 				}),
 				q(43461, {	-- A Time to Reflect (H)
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
-					["coord"] = { 51.4, 39.0, 75 },
+					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["races"] = HORDE_ONLY,
 					["u"] = 31,	-- WoW Anniversary
 				}),
 				q(57298, {	-- How Things "Really" Happened...
 					["sourceQuests"] = { 57249 },	-- A Timely Invitation
 					["provider"] = { "n", 157113 },	-- Chromie
-					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
+					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 					["lvl"] = 60,
 					["u"] = 36,	-- WoW Anniversary [Removed]
 				}),
 				q(47253, {	-- The Originals (A)
 					["provider"] = { "n", 110034 },	-- Historian Llore
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 39.0, 75 },
+					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
 						47463,	-- Nightmare Dragons
@@ -1323,7 +1323,7 @@ _.WorldEvents =
 				q(47254, {	-- The Originals (H)
 					["provider"] = { "n", 110035 },	-- Historian Jupa
 					["isWeekly"] = true,
-					["coord"] = { 51.4, 39.0, 75 },
+					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
 						47463,	-- Nightmare Dragons
@@ -1336,7 +1336,7 @@ _.WorldEvents =
 			}),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(158061, {	-- Historian Ma'di
-					["coord"] = { 50.7, 41.1, 75 },
+					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["g"] = {
 						i(158149),	-- Overtuned Corgi Goggles
 						i(136925),	-- Corgi Pup

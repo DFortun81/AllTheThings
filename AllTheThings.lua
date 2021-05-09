@@ -715,6 +715,8 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 end
 -- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
+	-- don't create a displayID for groups with a sourceID already
+	if data.s then return nil; end
 	if all then
 		local displayInfo, _ = {};
 		-- specific displayID
@@ -822,7 +824,8 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self:Show();
 		end
 
-		if reference.s then
+		if reference.s and reference.artifactID then
+			-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.s);
 			if sourceInfo and sourceInfo.visualID then
 				self.Model:SetCamDistanceScale(0.8);

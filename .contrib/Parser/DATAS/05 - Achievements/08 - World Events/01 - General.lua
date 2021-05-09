@@ -24,7 +24,7 @@ _.Achievements =
 			})),
 			un(27, ach(9428)),		-- Calavera (Day of the Dead)
 			un(27, ach(3456)),		-- Dead Man's Party (Day of the Dead)
-			un(18, ach(1693, {		-- Fool For Love (Love is in the Air)
+			un(HOLIDAY_LOVEINTHEAIR, ach(1693, {		-- Fool For Love (Love is in the Air)
 				title(103),				-- the Love Fool
 				crit(1),				-- Charming
 				crit(2),				-- Shafted!
