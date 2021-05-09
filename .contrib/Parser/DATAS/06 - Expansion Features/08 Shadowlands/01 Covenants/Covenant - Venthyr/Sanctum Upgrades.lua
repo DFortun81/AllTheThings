@@ -1047,16 +1047,14 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(61129, {	-- RSVP: Droman Aliothe
-									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for a |cFFFFFFFFPristine Vulpine Pelt|r from Trader Ta'bix in Bastion (|cFFFFFFFF33.4, 36.4|r).\n\n3. Exchange the pelt for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n4. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n5. Exchange the crystal for a |cFFFFFFFFSpiral Deathroc Horn|r from Au'larrynar in Maldraxxus (|cFFFFFFFF53.6, 47.9|r).\n\n6. Return to Revendreth and exchange the horn for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
 									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 60.1, 53.8, ARDENWEALD },
 									["cost"] = {
 										{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
-										{ "i", 180972, 1 },	-- Pristine Vulpine Pelt
 										{ "i", 180971, 1 },	-- Aquamarine Cartel Chit
 										{ "i", 180970, 1 },	-- Teregeer Crystal
-										{ "i", 180969, 1 },	-- Spiral Deathroc Horn
 										{ "i", 180774, 1 },	-- Preserved Berries
 									},
 									["g"] = {
