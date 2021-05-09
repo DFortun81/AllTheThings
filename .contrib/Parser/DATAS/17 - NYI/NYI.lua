@@ -2702,7 +2702,11 @@ _.NeverImplemented =
 				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
-
+			i(35530, {	-- Plans: Dawnsteel Shoulders
+				["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
+			}),
+			
+			
 			-- Cataclysm
 			{	-- Plans: Cold-Forged Shank
 				["itemID"] = 66095,	-- Plans: Cold-Forged Shank
