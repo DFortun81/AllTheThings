@@ -55,9 +55,7 @@ _.ExpansionFeatures =
 						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 					}),
 					q(62546, {	-- No Wisp Left Behind (1)
-						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday (similar to 62536 a couple weeks earlier).
-						-- possibly a Venari requirement? Currently Apprehensive + Rule 4 completed
-						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
+						["sourceQuests"] = { 62544 },	-- From a Dark Place
 						["provider"] = { "n", 160262 },	-- Ysera
 						["coord"] = { 44.6, 39.0, 1701 },
 					}),
