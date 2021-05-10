@@ -1178,11 +1178,8 @@ _.Zones =
 				q(42398),	-- Awakening the Senses
 				q(42397),	-- Baron and the Huntsman
 				q(46110),	-- Battle for Stormheim
-				q(42391),	-- Bite of the Beast
 				q(40857),	-- Bits and Pieces
 				q(40867),	-- Bubble Baubles
-				q(42389),	-- Calling Hilaire Home
-				q(42411),	-- Champion: Beastmaster Hilaire
 				q(42412),	-- Champion: Huntsman Blake
 				q(41788),	-- Coercing a Confession
 				q(40540),	-- Come at Me, Brul
@@ -1201,7 +1198,6 @@ _.Zones =
 				q(38607),	-- Gates of Valhallas
 				q(38670),	-- Goredome 2
 				q(40615),	-- Halls of Valor: Odyn's Blessing
-				q(42393),	-- Homecoming
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
 				q(38712),	-- Houndmaster Ely

@@ -986,7 +986,6 @@ _.Zones =
 				q(46182),	-- Battle for Highmountain
 				q(47018),	-- Beast Mastery: Rumblings Near Feltotem
 				q(43961),	-- Bestrix
-				q(42930),	-- Big Gamy Ribs
 				q(42417),	-- Bilebrain
 				q(39991),	-- Blessing of Cenarius
 				q(40773),	-- Bloodshard
@@ -996,13 +995,11 @@ _.Zones =
 				q(39235),	-- Buba
 				q(44311),	-- Burning Plate of the Worldbreaker Available
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
-				q(42389),	-- Calling Hilaire Home
 				q(41042),	-- Champion Chomper
 				q(42414),	-- Champion: Addie Fizzlebog
 				q(42415),	-- Champion: Halduron Brightwing
 				q(42413),	-- Champion: Hemet Nesingwary
 				q(42409),	-- Champion: Loren Stormhoof
-				q(42410),	-- Champion: Rexxar
 				q(43960),	-- Cinderwing
 				q(45350),	-- Countering the Contagion
 				q(42699),	-- Coura, Master of Arcana
@@ -1029,11 +1026,9 @@ _.Zones =
 				q(39827),	-- Haglands Treasure
 				q(40134),	-- Highmountain Hides
 				q(42403),	-- Highmountain Hunters
-				q(42929),	-- Highmountain Salmon
 				q(42233),	-- Highmountain Tribes
 				q(41186),	-- History of Highmountain
 				q(45572),	-- Holding Our Ground
-				q(42393),	-- Homecoming
 				q(42286),	-- Houndmaster Stroxis
 				q(40136),	-- Immaculate Stonehide Leather
 				q(42659),	-- In Defense of Dalaran
@@ -1071,7 +1066,6 @@ _.Zones =
 				q(42700),	-- Quin'el, Master of Chillwind
 				q(42399),	-- Ready to Work
 				q(42134),	-- Recruiting More Troops
-				q(42390),	-- Recruiting Rexxar
 				q(42524),	-- Recruiting The Troops
 				q(41540),	-- Rendezvous with the Courier
 				q(42402),	-- Requesting Reinforcements
@@ -1091,8 +1085,6 @@ _.Zones =
 				q(44039),	-- Sea King Tidross
 				q(38914),	-- Secrets of Highmountain REMOVED
 				q(42698),	-- Selia, Master of Balefire
-				q(42395),	-- Signaling Trouble
-				q(42928),	-- Silkweave Bandages
 				q(41817),	-- Skull of the Taskmaster
 				q(39465),	-- Skywhisker Taskmaster
 				q(40175),	-- Sleeping Bear
@@ -1101,8 +1093,6 @@ _.Zones =
 				q(40141),	-- Stormscale Sample
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
-				q(43335),	-- Survival Skills
-				q(42392),	-- Survive the Night
 				q(40958),	-- Tactical Matters
 				q(40184),	-- Tauren Tanning
 				q(40959),	-- The Campaign Begins
@@ -1129,8 +1119,6 @@ _.Zones =
 				q(40423),	-- Unethical Adventurers
 				q(44211),	-- Unseen Armaments
 				q(44212),	-- Unseen Fate
-				q(42394),	-- Unseen Protection
-				q(42388),	-- Urgent Summons
 				q(42280),	-- Vorthax
 				q(44233),	-- Walk This Way
 				q(41820),	-- Walk Without Rhythm

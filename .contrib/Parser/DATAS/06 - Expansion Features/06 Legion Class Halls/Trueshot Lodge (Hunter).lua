@@ -33,10 +33,22 @@ _.ExpansionFeatures =
 					q(43423),	-- A Hero's Weapon
 					q(43370),	-- A New Invention
 					q(40957),	-- A Strong Right Hand
-					q(42436),	-- Aiding Our Allies
+					q(42436, {	-- Aiding Our Allies
+						["sourceQuests"] = { 42395 },	-- Signaling Trouble
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 41.6, 74.8, 739 },
+					}),
 					q(41053),	-- Altar of the Eternal Hunt
 					q(46022, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					q(42387, {	-- Assassin Entrapment
+						["sourceQuests"] = { 42385 },	-- Lending a Hand
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107372 },	-- Hudson Crawford
+						["coord"] = { 41.7, 60.0, 641 },
+						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(42404, {	-- Assisting the Archmage
 						["maps"] = { 680 },	-- Suramar
@@ -46,6 +58,21 @@ _.ExpansionFeatures =
 					}),
 					q(42656),	-- Azure Weaponry
 					q(42397),	-- Baron and the Huntsman
+					q(42930, {	-- Big Gamy Ribs
+						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
+						["coord"] = { 53.0, 44.5, 650 },
+						["maps"] = { 650 },	-- Highmountain
+						["repeatable"] = true,
+					}),
+					q(42391, {	-- Bite of the Beast
+						["sourceQuests"] = { 42389 },	-- Calling Hilaire Home
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
+						["coord"] = { 34.7, 41.6, 634 },
+						["maps"] = { 634 },	-- Stormheim
+					}),
 					q(40392, {	-- Call of the Marksman
 						["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
 						["classes"] = { HUNTER },
@@ -56,7 +83,12 @@ _.ExpansionFeatures =
 						["coord"] = { 71.5, 49.8, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
-					q(42389),	-- Calling Hilaire Home
+					q(42389, {	-- Calling Hilaire Home
+						["sourceQuests"] = { 42388 },	-- Urgent Summons
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
 						["g"] = {
@@ -64,7 +96,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42411, {	-- Champion: Beastmaster Hilaire
-						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire <Unseen Path>
+						["sourceQuests"] = { 42391 },	-- Bite of the Beast
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
+						["coord"] = { 34.7, 41.6, 634 },
+						["maps"] = { 634 },	-- Stormheim
 						["g"] = {
 							follower(744),	-- Beastmaster Hilaire
 						},
@@ -100,7 +136,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42410, {	-- Champion: Rexxar
+						["sourceQuests"] = { 42392 },	-- Survive the Night
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 107425 },	-- Rexxar
+						["coord"] = { 36.7, 35.4, 650 },
+						["maps"] = { 650 },	-- Highmountain
 						["g"] = {
 							follower(743),	-- Rexxar
 						},
@@ -150,7 +190,21 @@ _.ExpansionFeatures =
 					q(42403, {	-- Highmountain Hunters
 						["isBreadcrumb"] = true,
 					}),
-					q(42393),	-- Homecoming
+					q(42929, {	-- Highmountain Salmon
+						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
+						["coord"] = { 53.0, 44.5, 650 },
+						["maps"] = { 650 },	-- Highmountain
+						["repeatable"] = true,
+					}),
+					q(42393, {	-- Homecoming
+						["sourceQuests"] = { 42411 },	-- Champion: Beastmaster Hilaire
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
+						["coord"] = { 34.7, 41.6, 634 },
+						["maps"] = { 634 },	-- Stormheim
+					}),
 					q(42659, {	-- In Defense of Dalaran
 						i(139707),	-- Hauberk of the Unseen Path
 					}),
@@ -164,7 +218,12 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(44680),	-- Leading by Example
-					q(42385),	-- Lending a Hand
+					q(42385, {	-- Lending a Hand
+						["sourceQuests"] = { 42384 },	-- Scouting Reports
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42523),	-- Making Contact
 					q(42657),	-- Meeting in Moonclaw Vale
 					q(42400, {	-- Missing Mages
@@ -200,8 +259,18 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 					}),
 					q(42399),	-- Ready to Work
-					q(42134),	-- Recruiting More Troops
-					q(42390),	-- Recruiting Rexxar
+					q(42134, {	-- Recruiting More Troops
+						["sourceQuests"] = { 42395 },	-- Signaling Trouble
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(42390, {	-- Recruiting Rexxar
+						["sourceQuests"] = { 42388 },	-- Urgent Summons
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42524),	-- Recruiting The Troops
 					q(41540, {	-- Rendezvous with the Courier
 						["classes"] = { HUNTER },
@@ -227,6 +296,13 @@ _.ExpansionFeatures =
 							follower(593),	-- Emmarel Shadewarden
 						},
 					}),
+					q(42386, {	-- Rising Troubles
+						["sourceQuests"] = { 42385 },	-- Lending a Hand
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107372 },	-- Hudson Crawford
+						["coord"] = { 41.7, 60.0, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(42133),	-- Same Day Delivery
 					q(42384, {	-- Scouting Reports
 						["sourceQuests"] = { 42526 },	-- Tech It Up A Notch
@@ -234,7 +310,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, 739 },
 					}),
-					q(42395),	-- Signaling Trouble
+					q(42395, {	-- Signaling Trouble
+						["sourceQuests"] = { 42393 },	-- Homecoming
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(42928, {	-- Silkweave Bandages
+						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
+						["coord"] = { 53.0, 44.5, 650 },
+						["maps"] = { 650 },	-- Highmountain
+						["repeatable"] = true,
+					}),
 					q(45552, {	-- Soothing Wounds
 						["classes"] = { HUNTER },
 					}),
@@ -243,6 +332,20 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 104381 },	-- Grif Wildheart
 						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(43335, {	-- Survival Skills
+						["sourceQuests"] = { 42390 },	-- Recruiting Rexxar
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107425 },	-- Rexxar
+						["coord"] = { 36.7, 35.4, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
+					q(42392, {	-- Survive the Night
+						["sourceQuests"] = { 43335 },	-- Survival Skills
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107425 },	-- Rexxar
+						["coord"] = { 36.7, 35.4, 650 },
+						["maps"] = { 650 },	-- Highmountain
 					}),
 					q(40958),	-- Tactical Matters
 					q(45554, {	-- Taking Control
@@ -295,8 +398,22 @@ _.ExpansionFeatures =
 					}),
 					q(44211),	-- Unseen Armaments
 					q(44212),	-- Unseen Fate
-					q(42394),	-- Unseen Protection
-					q(42388),	-- Urgent Summons
+					q(42394, {	-- Unseen Protection
+						["sourceQuests"] = { 42395 },	-- Signaling Trouble
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 41.6, 74.8, 739 },
+					}),
+					q(42388, {	-- Urgent Summons
+						["sourceQuests"] = { 
+							42387,	-- Assassin Entrapment
+							42386,	-- Rising Troubles
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 113325 },	-- Snowfeather
+						["coord"] = { 41.7, 659.9, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(44233, {	-- Walk This Way
 						i(139710),	-- Mask of the Unseen Path
 					}),
