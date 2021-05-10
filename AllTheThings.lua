@@ -2692,6 +2692,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	local cache = searchCache[search];
 	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
 
+	-- This method can be called nested, and some logic should only process for the initial call
+	local topLevelSearch;
+	if not app.InitialCachedSearch then
+		-- print("TopLevelSearch",paramA,paramB)
+		wipe(app.BuildCrafted_IncludedItems);
+		wipe(app.ExpandSubGroups_IncludedItems);
+		app.InitialCachedSearch = search;
+		topLevelSearch = true;
+	end
+
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	if not paramA then paramA = ""; end
 	local working, info = false, {};
@@ -2752,10 +2762,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #group > 0 then
 				-- collect descriptions from all search groups and insert into the info for the search
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+					local descriptions = {};
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+							-- Only add unique descriptions to the final info
+							if not descriptions[j.description] then
+								descriptions[j.description] = true;
+							end
 						end
+					end
+					for description,_ in pairs(descriptions) do
+						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
 					end
 				end
 				local subgroup = {};
@@ -2873,6 +2890,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local itemString = string.match(paramA, "item[%-?%d:]+");
 			if itemString then
 				sourceID = GetSourceID(paramA);
+				-- print("ParamA SourceID",sourceID,paramA)
 				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
 				if itemID2 then
@@ -3231,7 +3249,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 			end
 			for i,text in ipairs(listing) do
-				if text:find(RETRIEVING_DATA) then working = true; end
+				if not working and text:find(RETRIEVING_DATA) then working = true; end
 				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 				tinsert(info, 1, { left = left, right = right, wrap = wrap });
 			end
@@ -3332,7 +3350,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print("Resolve Root",root.key,root[root.key])
 		local rootResolved = ResolveSymbolicLink(root);
 		if rootResolved then
-			-- print("Has symbolic")
+			-- print("Root has symbolic")
 			root.symbolized = true;
 			for k,o in pairs(rootResolved) do
 				MergeObject(root.g, o);
@@ -3343,7 +3361,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- print("Resolve",o.key,o[o.key],o.sym)
 			local symbolicLink = ResolveSymbolicLink(o);
 			if symbolicLink then
-				-- print("Has symbolic")
+				-- print("Sub has symbolic")
 				o.symbolized = true;
 				if o.g and #o.g >= 0 then
 					for j=1,#symbolicLink,1 do
@@ -3395,15 +3413,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Append currency info to any orphan currency groups
 		app.BuildCurrencies(group);
 
-		group.total = 0;
-		group.progress = 0;
-		group.parent = nil;
-		BuildGroups(group, group.g, true);
-		app.UpdateGroups(group, group.g);
-		if group.collectible then
-			group.total = group.total + 1;
-			if group.collected then
-				group.progress = group.progress + 1;
+		-- Only need to build/update groups from the top level
+		if topLevelSearch then
+			group.total = 0;
+			group.progress = 0;
+			group.parent = nil;
+			BuildGroups(group, group.g);
+			app.UpdateGroups(group, group.g);
+			if group.collectible then
+				group.total = group.total + 1;
+				if group.collected then
+					group.progress = group.progress + 1;
+				end
 			end
 		end
 	end
@@ -3427,7 +3448,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	end
 
-	if group.g and #group.g > 0 then
+	if topLevelSearch and group.g and #group.g > 0 then
 		--[[
 		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 			for i,j in ipairs(group.g) do
@@ -3450,7 +3471,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					item = entries[i];
 					group = item.group;
 					left = group.text or RETRIEVING_DATA;
-					if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
 					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
 
 					-- If this group has specialization requirements, let's attempt to show the specialization icons.
@@ -3541,18 +3562,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if #info > 0 then
 		-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
 		-- putting this back due to descriptions, ugh
-		local uniques, dupes = {}, {};
-		for i,item in ipairs(info) do
-			if not item.left then
-				tinsert(uniques, item);
-			elseif not dupes[item.left] then
-				dupes[item.left] = true;
-				tinsert(uniques, item);
-			end
-		end
+		-- descriptions are cleaned when found instead of cleaning all info at the end, so hopefully don't need this done here anymore
+		-- local uniques, dupes = {}, {};
+		-- for i,item in ipairs(info) do
+		-- 	if not item.left then
+		-- 		tinsert(uniques, item);
+		-- 	elseif not dupes[item.left] then
+		-- 		dupes[item.left] = true;
+		-- 		tinsert(uniques, item);
+		-- 	end
+		-- end
 
-		group.info = uniques;
-		for i,item in ipairs(uniques) do
+		group.info = info;
+		for i,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
 	end
@@ -3560,7 +3582,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
 	cache[2] = (working and 0.01) or 100000000;
+	-- if working then print("still working...")
+	-- else print("Cached Search",search,paramA,paramB,#group.info); end
 	cache[3] = group;
+
+	-- Check if finally leaving the top-level search
+	if topLevelSearch then
+		-- print("TopLevelSearch-Done",search)
+		app.InitialCachedSearch = nil;
+	end
 	return group;
 end
 app.BuildCrafted_IncludedItems = {};
@@ -3569,9 +3599,11 @@ app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
 	-- track the starting item
-	tinsert(app.BuildCrafted_IncludedItems, itemID);
+	-- print("BuildCrafted",itemID)
+	app.BuildCrafted_IncludedItems[itemID] = true;
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
+		-- print("Item is Reagent")
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
 		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
@@ -3596,18 +3628,18 @@ app.BuildCrafted = function(item)
 					-- ensure this character can craft the recipe
 					if skillID then
 						if knownSkills and knownSkills[skillID] then
-							if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+							if not app.BuildCrafted_IncludedItems[craftedItemID] then
 								-- track the added craftedItemID regardless of if an item was added for it
-								tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+								app.BuildCrafted_IncludedItems[craftedItemID] = true;
 								-- find a reference to the item in the DB and add it to the group
 								clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 							end
 						end
 					else
 					-- recipe without any skill requirement? weird...
-						if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+						if not app.BuildCrafted_IncludedItems[craftedItemID] then
 							-- track the added craftedItemID regardless of if an item was added for it
-							tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+							app.BuildCrafted_IncludedItems[craftedItemID] = true;
 							-- find a reference to the item in the DB and add it to the group
 							clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 						end
@@ -3633,9 +3665,9 @@ app.BuildCrafted = function(item)
 			for craftedItemID,count in pairs(reagentCache[2]) do
 				-- print(itemID,"x",count,"=>",craftedItemID);
 				clone = nil;
-				if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+				if not app.BuildCrafted_IncludedItems[craftedItemID] then
 					-- track the added craftedItemID regardless of if an item was added for it
-					tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+					app.BuildCrafted_IncludedItems[craftedItemID] = true;
 					-- find a reference to the item in the DB and add it to the group
 					clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 					if clone then
@@ -3663,9 +3695,9 @@ app.ExpandSubGroups = function(item)
 	if not itemID or itemID < 1 or not item.g then return; end
 
 	-- print("ExpandSubGroups",itemID);
-	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
+	if not app.ExpandSubGroups_IncludedItems[itemID] then
 		-- track the starting item
-		tinsert(app.ExpandSubGroups_IncludedItems, itemID);
+		app.ExpandSubGroups_IncludedItems[itemID] = true;
 		local count, modItemID, clone = #item.g;
 		-- only loop thru existing items in case somehow more show up
 		for i=1,count do
@@ -3696,6 +3728,7 @@ end
 app.BuildCost = function(group)
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	-- Gold cost currently ignored
+	-- print("BuildCost",group.itemID)
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
 				["text"] = L["COST"],
@@ -3726,7 +3759,7 @@ app.BuildCost = function(group)
 end
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
-	-- print("check for currencies",group.key,group[group.key])
+	-- print("BuildCurrencies",group.key,group[group.key])
 	if group and group.g and #group.g > 0 then
 		for i=1,#group.g do
 			local o = group.g[i];
@@ -5201,8 +5234,6 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	wipe(app.BuildCrafted_IncludedItems);
-	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 
@@ -17735,9 +17766,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			end
 		end
 
-		-- Reset the build crafted included items list
-		wipe(app.BuildCrafted_IncludedItems);
-		wipe(app.ExpandSubGroups_IncludedItems);
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- make sure it's 'something' returned from the search before throwing it into a window

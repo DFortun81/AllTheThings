@@ -365,13 +365,6 @@ _.Zones =
 					["provider"] = { "n", 117042 },	-- Prophet Velen
 					["coord"] = { 74.8, 45.6, 627 },
 				}),
-				q(40710, {	-- Blade in Twilight
-					["classes"] = { PRIEST },
-					["providers"] = {
-						{ "n", 101314 },	-- Alonsus Faol
-						{ "n", 110564 },	-- Alonsus Faol
-					},
-				}),
 				q(44760, {	-- Blood On Your Hands
 					["provider"] = { "n", 115264 },	-- Illnea Bloodthorn
 					["u"] = REMOVED_FROM_GAME,	-- presumably, was unable to find it on a character fresh to legion and on a level 50.  may be available under random specific circumstances (45 but not unlocked WQs, not above 45, etc) but LIKELY removed
@@ -1294,11 +1287,6 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.5, 48.9, 627 },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
-				}),
-				q(41625, {	-- The Light's Wrath
-					["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 110564 },	-- Alonsus Faol
 				}),
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,

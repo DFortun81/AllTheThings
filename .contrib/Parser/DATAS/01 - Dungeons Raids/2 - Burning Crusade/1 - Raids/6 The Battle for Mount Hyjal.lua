@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2,	-- Burning Crusade
+-- #if ANYCLASSIC
+bubbleDown({ ["u"] = TBC_PHASE_THREE },
+-- #endif
+{
 	inst(750, { 	-- The Battle for Mount Hyjal
 		["mapID"] = THE_BATTLE_FOR_MOUNT_HYJAL,
 		["coords"] = {
@@ -14,7 +18,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10445,	-- The Vials of Eternity
 		-- #endif
-		["u"] = TBC_PHASE_THREE,
 		["lvl"] = 70,
 		-- #elseif AFTER SHADOWLANDS
 		["lvl"] = 30,
@@ -1357,4 +1360,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			})
 		},
 	}),
-})};
+}
+-- #if ANYCLASSIC
+)
+-- #endif
+)};

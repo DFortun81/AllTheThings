@@ -363,7 +363,7 @@ namespace ATT
             }
 
             // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
+            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
             {
                 // 2.0.1 or older items.
                 int removed = 0;
