@@ -2692,6 +2692,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- This method can be called nested, and some logic should only process for the initial call
 	local topLevelSearch;
 	if not app.InitialCachedSearch then
+		-- print("TopLevelSearch",paramA,paramB)
+		wipe(app.BuildCrafted_IncludedItems);
+		wipe(app.ExpandSubGroups_IncludedItems);
 		app.InitialCachedSearch = search;
 		topLevelSearch = true;
 	end
@@ -2756,10 +2759,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #group > 0 then
 				-- collect descriptions from all search groups and insert into the info for the search
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+					local descriptions = {};
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+							-- Only add unique descriptions to the final info
+							if not descriptions[j.description] then
+								descriptions[j.description] = true;
+							end
 						end
+					end
+					for description,_ in pairs(descriptions) do
+						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
 					end
 				end
 				local subgroup = {};
@@ -3549,30 +3559,35 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if #info > 0 then
 		-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
 		-- putting this back due to descriptions, ugh
-		local uniques, dupes = {}, {};
-		for i,item in ipairs(info) do
-			if not item.left then
-				tinsert(uniques, item);
-			elseif not dupes[item.left] then
-				dupes[item.left] = true;
-				tinsert(uniques, item);
-			end
-		end
+		-- descriptions are cleaned when found instead of cleaning all info at the end, so hopefully don't need this done here anymore
+		-- local uniques, dupes = {}, {};
+		-- for i,item in ipairs(info) do
+		-- 	if not item.left then
+		-- 		tinsert(uniques, item);
+		-- 	elseif not dupes[item.left] then
+		-- 		dupes[item.left] = true;
+		-- 		tinsert(uniques, item);
+		-- 	end
+		-- end
 
-		group.info = uniques;
-		for i,item in ipairs(uniques) do
+		group.info = info;
+		for i,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
 	end
 
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
-	-- if working then print("still working...") end
 	cache[2] = (working and 0.01) or 100000000;
+	-- if working then print("still working...")
+	-- else print("Cached Search",search,paramA,paramB,#group.info); end
 	cache[3] = group;
 
 	-- Check if finally leaving the top-level search
-	if topLevelSearch then app.InitialCachedSearch = nil; end
+	if topLevelSearch then
+		-- print("TopLevelSearch-Done",search)
+		app.InitialCachedSearch = nil;
+	end
 	return group;
 end
 app.BuildCrafted_IncludedItems = {};
@@ -3582,7 +3597,7 @@ app.BuildCrafted = function(item)
 	if not itemID then return; end
 	-- track the starting item
 	-- print("BuildCrafted",itemID)
-	tinsert(app.BuildCrafted_IncludedItems, itemID);
+	app.BuildCrafted_IncludedItems[itemID] = true;
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
 		-- print("Item is Reagent")
@@ -3610,18 +3625,18 @@ app.BuildCrafted = function(item)
 					-- ensure this character can craft the recipe
 					if skillID then
 						if knownSkills and knownSkills[skillID] then
-							if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+							if not app.BuildCrafted_IncludedItems[craftedItemID] then
 								-- track the added craftedItemID regardless of if an item was added for it
-								tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+								app.BuildCrafted_IncludedItems[craftedItemID] = true;
 								-- find a reference to the item in the DB and add it to the group
 								clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 							end
 						end
 					else
 					-- recipe without any skill requirement? weird...
-						if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+						if not app.BuildCrafted_IncludedItems[craftedItemID] then
 							-- track the added craftedItemID regardless of if an item was added for it
-							tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+							app.BuildCrafted_IncludedItems[craftedItemID] = true;
 							-- find a reference to the item in the DB and add it to the group
 							clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 						end
@@ -3647,9 +3662,9 @@ app.BuildCrafted = function(item)
 			for craftedItemID,count in pairs(reagentCache[2]) do
 				-- print(itemID,"x",count,"=>",craftedItemID);
 				clone = nil;
-				if not contains(app.BuildCrafted_IncludedItems, craftedItemID) then
+				if not app.BuildCrafted_IncludedItems[craftedItemID] then
 					-- track the added craftedItemID regardless of if an item was added for it
-					tinsert(app.BuildCrafted_IncludedItems, craftedItemID);
+					app.BuildCrafted_IncludedItems[craftedItemID] = true;
 					-- find a reference to the item in the DB and add it to the group
 					clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 					if clone then
@@ -3677,9 +3692,9 @@ app.ExpandSubGroups = function(item)
 	if not itemID or itemID < 1 or not item.g then return; end
 
 	-- print("ExpandSubGroups",itemID);
-	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
+	if not app.ExpandSubGroups_IncludedItems[itemID] then
 		-- track the starting item
-		tinsert(app.ExpandSubGroups_IncludedItems, itemID);
+		app.ExpandSubGroups_IncludedItems[itemID] = true;
 		local count, modItemID, clone = #item.g;
 		-- only loop thru existing items in case somehow more show up
 		for i=1,count do
@@ -5216,8 +5231,6 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	wipe(app.BuildCrafted_IncludedItems);
-	wipe(app.ExpandSubGroups_IncludedItems);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 
@@ -17675,9 +17688,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			end
 		end
 
-		-- Reset the build crafted included items list
-		wipe(app.BuildCrafted_IncludedItems);
-		wipe(app.ExpandSubGroups_IncludedItems);
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- make sure it's 'something' returned from the search before throwing it into a window
