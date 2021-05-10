@@ -194,7 +194,6 @@ _.Zones =
 					},
 				}),
 				n(158406, { -- Scunner
-					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
 					["questID"] = 58006,
 					["isDaily"] = true,
 					["coord"] = { 61.6, 76.4, MALDRAXXUS },

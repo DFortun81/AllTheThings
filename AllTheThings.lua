@@ -3426,7 +3426,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
+	-- Creature/Encounter Descriptions are handled already
+	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.creatureID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
 		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 	end
 
