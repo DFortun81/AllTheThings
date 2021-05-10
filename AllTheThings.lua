@@ -2689,6 +2689,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	local cache = searchCache[search];
 	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
 
+	-- This method can be called nested, and some logic should only process for the initial call
+	local topLevelSearch;
+	if not app.InitialCachedSearch then
+		app.InitialCachedSearch = search;
+		topLevelSearch = true;
+	end
+
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	if not paramA then paramA = ""; end
 	local working, info = false, {};
@@ -2870,6 +2877,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local itemString = string.match(paramA, "item[%-?%d:]+");
 			if itemString then
 				sourceID = GetSourceID(paramA);
+				-- print("ParamA SourceID",sourceID,paramA)
 				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
 				if itemID2 then
@@ -3228,7 +3236,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 			end
 			for i,text in ipairs(listing) do
-				if text:find(RETRIEVING_DATA) then working = true; end
+				if not working and text:find(RETRIEVING_DATA) then working = true; end
 				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 				tinsert(info, 1, { left = left, right = right, wrap = wrap });
 			end
@@ -3329,7 +3337,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print("Resolve Root",root.key,root[root.key])
 		local rootResolved = ResolveSymbolicLink(root);
 		if rootResolved then
-			-- print("Has symbolic")
+			-- print("Root has symbolic")
 			root.symbolized = true;
 			for k,o in pairs(rootResolved) do
 				MergeObject(root.g, o);
@@ -3340,7 +3348,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- print("Resolve",o.key,o[o.key],o.sym)
 			local symbolicLink = ResolveSymbolicLink(o);
 			if symbolicLink then
-				-- print("Has symbolic")
+				-- print("Sub has symbolic")
 				o.symbolized = true;
 				if o.g and #o.g >= 0 then
 					for j=1,#symbolicLink,1 do
@@ -3392,15 +3400,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Append currency info to any orphan currency groups
 		app.BuildCurrencies(group);
 
-		group.total = 0;
-		group.progress = 0;
-		group.parent = nil;
-		BuildGroups(group, group.g, true);
-		app.UpdateGroups(group, group.g);
-		if group.collectible then
-			group.total = group.total + 1;
-			if group.collected then
-				group.progress = group.progress + 1;
+		-- Only need to build/update groups from the top level
+		if topLevelSearch then
+			group.total = 0;
+			group.progress = 0;
+			group.parent = nil;
+			BuildGroups(group, group.g);
+			app.UpdateGroups(group, group.g);
+			if group.collectible then
+				group.total = group.total + 1;
+				if group.collected then
+					group.progress = group.progress + 1;
+				end
 			end
 		end
 	end
@@ -3424,7 +3435,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	end
 
-	if group.g and #group.g > 0 then
+	if topLevelSearch and group.g and #group.g > 0 then
 		--[[
 		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 			for i,j in ipairs(group.g) do
@@ -3447,7 +3458,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					item = entries[i];
 					group = item.group;
 					left = group.text or RETRIEVING_DATA;
-					if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
 					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
 
 					-- If this group has specialization requirements, let's attempt to show the specialization icons.
@@ -3556,8 +3567,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
+	-- if working then print("still working...") end
 	cache[2] = (working and 0.01) or 100000000;
 	cache[3] = group;
+
+	-- Check if finally leaving the top-level search
+	if topLevelSearch then app.InitialCachedSearch = nil; end
 	return group;
 end
 app.BuildCrafted_IncludedItems = {};
@@ -3566,9 +3581,11 @@ app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
 	-- track the starting item
+	-- print("BuildCrafted",itemID)
 	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
+		-- print("Item is Reagent")
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
 		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
@@ -3693,6 +3710,7 @@ end
 app.BuildCost = function(group)
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	-- Gold cost currently ignored
+	-- print("BuildCost",group.itemID)
 	if group.cost and type(group.cost) == "table" then
 		local costGroup = {
 				["text"] = L["COST"],
@@ -3723,7 +3741,7 @@ app.BuildCost = function(group)
 end
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
-	-- print("check for currencies",group.key,group[group.key])
+	-- print("BuildCurrencies",group.key,group[group.key])
 	if group and group.g and #group.g > 0 then
 		for i=1,#group.g do
 			local o = group.g[i];
