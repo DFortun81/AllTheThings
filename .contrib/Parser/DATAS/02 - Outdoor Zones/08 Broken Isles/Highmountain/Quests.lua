@@ -505,6 +505,7 @@ _.Zones =
 						40217,	-- An Offering of Ammo
 						39417,	-- Rating Razik
 					},
+					["coord"] = { 39.9, 52.2, 650 },
 					["provider"] = { "n", 94434 },	-- Addie Fizzlebog
 					["g"] = {
 						i(130320),	-- Addie's Ink-Stained Satchel
@@ -980,9 +981,7 @@ _.Zones =
 				q(40413),	-- Amateur Hunters
 				q(42505),	-- Arcanist Shal'iman
 				q(41823),	-- Ashes to Ashes
-				q(42404),	-- Assisting the Archmage
 				q(42656),	-- Azure Weaponry
-				q(42397),	-- Baron and the Huntsman
 				q(46182),	-- Battle for Highmountain
 				q(47018),	-- Beast Mastery: Rumblings Near Feltotem
 				q(43961),	-- Bestrix
@@ -996,9 +995,7 @@ _.Zones =
 				q(44311),	-- Burning Plate of the Worldbreaker Available
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
 				q(41042),	-- Champion Chomper
-				q(42414),	-- Champion: Addie Fizzlebog
 				q(42415),	-- Champion: Halduron Brightwing
-				q(42413),	-- Champion: Hemet Nesingwary
 				q(42409),	-- Champion: Loren Stormhoof
 				q(43960),	-- Cinderwing
 				q(45350),	-- Countering the Contagion
@@ -1025,7 +1022,6 @@ _.Zones =
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
 				q(40134),	-- Highmountain Hides
-				q(42403),	-- Highmountain Hunters
 				q(42233),	-- Highmountain Tribes
 				q(41186),	-- History of Highmountain
 				q(45572),	-- Holding Our Ground

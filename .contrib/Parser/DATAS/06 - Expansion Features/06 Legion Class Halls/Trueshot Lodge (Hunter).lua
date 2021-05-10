@@ -51,13 +51,26 @@ _.ExpansionFeatures =
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(42404, {	-- Assisting the Archmage
-						["maps"] = { 680 },	-- Suramar
+						["sourceQuest"] = 42401,  -- The Scent of Magic
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 108089 },	-- Archmage Khadgar
-						["sourceQuest"] = 42401,  -- The Scent of Magic
+						["coord"] = { 33.1, 57.0, 680 },
+						["maps"] = { 680 },	-- Suramar
+					}),
+					q(42398, {	-- Awakening the Senses
+						["sourceQuests"] = { 42397 },	-- Baron and the Huntsman
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107981 },	-- Huntsman Blake
+						["coord"] = { 80.1, 66.2, 634 },
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(42656),	-- Azure Weaponry
-					q(42397),	-- Baron and the Huntsman
+					q(42397, {	-- Baron and the Huntsman
+						["sourceQuests"] = { 42394 },	-- Unseen Protection
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 41.6, 74.8, 739 },
+					}),
 					q(42930, {	-- Big Gamy Ribs
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
 						["classes"] = { HUNTER },
@@ -90,9 +103,17 @@ _.ExpansionFeatures =
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(42414, {	-- Champion: Addie Fizzlebog
+						["sourceQuests"] = { 
+							42403,	-- Highmountain Hunters
+							40228,	-- Scout It Out
+						},
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
+						["coord"] = { 39.9, 52.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
 						["g"] = {
 							follower(746),	-- Addie Fizzlebog
+							i(139714),	-- Wristwraps of the Unseen Path
 						},
 					}),
 					q(42411, {	-- Champion: Beastmaster Hilaire
@@ -112,13 +133,24 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42413, {	-- Champion: Hemet Nesingwary
-						["provider"] = { "n", 94409 },		-- Hemet Nesingwary <Hemet's Hunting Party>
+						["sourceQuests"] = { 
+							42403,	-- Highmountain Hunters
+							40228,	-- Scout It Out
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 94409 },	-- Hemet Nesingwary
+						["coord"] = { 40.0, 52.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
 						["g"] = {
 							follower(745),	-- Hemet Nesingwary
 						},
 					}),
 					q(42412, {	-- Champion: Huntsman Blake
+						["sourceQuests"] = { 42398 },	-- Awakening the Senses
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
+						["coord"] = { 80.1, 66.2, 634 },
+						["maps"] = { 634 },	-- Stormheim
 						["g"] = {
 							follower(747),	-- Huntsman Blake
 						},
@@ -189,6 +221,10 @@ _.ExpansionFeatures =
 					}),
 					q(42403, {	-- Highmountain Hunters
 						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 42394 },	-- Unseen Protection
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
 					}),
 					q(42929, {	-- Highmountain Salmon
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
@@ -213,7 +249,12 @@ _.ExpansionFeatures =
 					q(46023, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
-					q(42689),	-- Knowing Our Enemy
+					q(42689, {	-- Knowing Our Enemy
+						["sourceQuests"] = { 42404 },	-- Assisting the Archmage
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.3, 739 },
+					}),
 					q(46130, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -227,8 +268,10 @@ _.ExpansionFeatures =
 					q(42523),	-- Making Contact
 					q(42657),	-- Meeting in Moonclaw Vale
 					q(42400, {	-- Missing Mages
-						["sourceQuest"] = 42399,  -- Ready to Work
+						["sourceQuests"] = { 42399 },	-- Ready to Work
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(42185, {	-- Never Hunt Alone
 						["sourceQuests"] = { 42158 },	-- The Creator's Workshop
@@ -258,7 +301,13 @@ _.ExpansionFeatures =
 					q(45556, {	-- Ready to Strike
 						["classes"] = { HUNTER },
 					}),
-					q(42399),	-- Ready to Work
+					q(42399, {	-- Ready to Work
+						["sourceQuests"] = { 42412 },	-- Champion: Huntsman Blake
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
+						["coord"] = { 80.1, 66.2, 634 },
+						["maps"] = { 634 },	-- Stormheim
+					}),
 					q(42134, {	-- Recruiting More Troops
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["classes"] = { HUNTER },
@@ -379,6 +428,9 @@ _.ExpansionFeatures =
 					q(42401, {	-- The Scent of Magic
 						["sourceQuest"] = 42400,  -- Missing Mages
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 107966 },	-- Archmage Khadgar
+						["coord"] = { 38.1, 47.1, 680 },
+						["maps"] = { 680 },	-- Suramar
 					}),
 					q(40385, {	-- The Spear in the Shadow
 						["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing

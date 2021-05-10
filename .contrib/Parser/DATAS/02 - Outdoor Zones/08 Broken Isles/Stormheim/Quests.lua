@@ -1175,12 +1175,9 @@ _.Zones =
 				q(45482),	-- Arcane: Fate of the Tideskorn
 				q(46006),	-- Arkuthaz
 				q(43560),	-- Audience with the Windlord
-				q(42398),	-- Awakening the Senses
-				q(42397),	-- Baron and the Huntsman
 				q(46110),	-- Battle for Stormheim
 				q(40857),	-- Bits and Pieces
 				q(40867),	-- Bubble Baubles
-				q(42412),	-- Champion: Huntsman Blake
 				q(41788),	-- Coercing a Confession
 				q(40540),	-- Come at Me, Brul
 				q(41169),	-- Darkheart Thicket: Through the Fog

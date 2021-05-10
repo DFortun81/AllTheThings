@@ -2022,7 +2022,13 @@ _.HiddenQuestTriggers =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
-		q(43158),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44391),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 1
+		q(44392),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 2
+		q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3
+		q(44394),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 4
+		q(44395),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 5
+
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second
@@ -2091,6 +2097,7 @@ _.HiddenQuestTriggers =
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
 		q(43941), 	-- Priest Order Hall - Discipline chosen second
+		q(44409),	-- Priest Order Hall - Discipline chosen third
 		q(44408),	-- Priest Order Hall - Shadow chosen third
 		q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
 		q(43507), 	-- Priest Order Hall - Looting the priest altar
