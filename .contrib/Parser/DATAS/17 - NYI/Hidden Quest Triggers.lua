@@ -1919,7 +1919,8 @@ _.HiddenQuestTriggers =
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
 		}),
-
+		q(40603),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
+		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
 
@@ -2106,7 +2107,6 @@ _.HiddenQuestTriggers =
 		q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
-					-- DK Order Hall - Entered class hall for the first time
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
 		q(44037),	-- Rogue Order Hall - Combat Chosen
@@ -2196,6 +2196,7 @@ _.HiddenQuestTriggers =
 		q(45130),	-- Hidden Appearance unlocked
 		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
 		q(43676),	-- Hidden Appearance Unlocked (triggered after learning hidden appearance for Ulthalesh on affliction lock)
+		q(43680),	-- Hidden Appearance Unlocked (Fury Warrior "The Dragonslayers")
 
 		--	Professions
 		--	Archaeology
@@ -2377,9 +2378,11 @@ _.HiddenQuestTriggers =
 		--	Rares
 		q(43961),	-- Azsuna - WQ rare: Bestrix
 		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
+		q(43960),	-- Azsuna - WQ rare: Cinderwing
 		q(42699),	-- Azsuna - WQ rare: Coura, Mistress of Arcana
 		q(45489),	-- Azsuna - WQ rare: Deepclaw
 		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(45516),	-- Azsuna - WQ rare: Mortiferous
 		q(45497),	-- Azsuna - WQ rare: Stormfeather
 		q(44035),	-- Azsuna - WQ rare: Torrentius
 		q(45513),	-- Highmountain - WQ rare: Defilia
@@ -2389,8 +2392,8 @@ _.HiddenQuestTriggers =
 		q(45510),	-- Highmountain - WQ rare: Ormagrogg
 		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
-		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
+		q(45507),	-- Stormheim - WQ rare: Fjorlag
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
 		q(45475),	-- Suramar - WQ rare: Auditor Esiel
@@ -2415,6 +2418,7 @@ _.HiddenQuestTriggers =
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
+		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 
