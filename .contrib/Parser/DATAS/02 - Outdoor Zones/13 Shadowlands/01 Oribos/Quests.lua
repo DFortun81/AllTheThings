@@ -780,7 +780,8 @@ _.Zones =
 				}),
 				q(63576, {	-- The First Move
 					--	TODO: ascertain whether there are specific SQs for this.  it was in my quest log when i logged in to the 9.1 ptr
-					--	possible this has renown requirements, idk
+					--	does not appear to require a specific renown.  was able to pick it up on my rogue who is at renown 5
+					--	requires some amount of torghast quests (possibly the entire questline to save jaina/anduin/etc/learn the jailer's plan) but there are skips available that allow you to start it by speaking to bolvar
 				}),
 				q(63857, {	-- Voices of the Eternal
 					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants
