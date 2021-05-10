@@ -25,7 +25,11 @@ local legendary = function(itemID, creatureID)
 		-- #endif
 	end
 end;
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2,	-- Burning Crusade
+-- #if ANYCLASSIC
+bubbleDown({ ["u"] = TBC_PHASE_TWO },
+-- #endif
+{
 	inst(749, { 	-- The Eye
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["mapID"] = TEMPEST_KEEP_THE_EYE,
@@ -35,7 +39,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 13430,	-- Trial of the Naaru: Magtheridon
 		-- #endif
-		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,
 		-- #elseif AFTER SHADOWLANDS
 		["lvl"] = 30,
@@ -311,4 +314,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 		},
 	}),
-})};
+}
+-- #if ANYCLASSIC
+)
+-- #endif
+)};

@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2,	-- Burning Crusade
+-- #if ANYCLASSIC
+bubbleDown({ ["u"] = TBC_PHASE_THREE },
+-- #endif
+{
 	inst(751, {	-- The Black Temple
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
 		["isRaid"] = true,
@@ -20,7 +24,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10985,	-- A Distraction for Akama
 		-- #endif
-		["u"] = TBC_PHASE_THREE,
 		["lvl"] = 70,
 		-- #elseif AFTER SHADOWLANDS
 		["lvl"] = 30,
@@ -111,7 +114,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(1582, {	-- High Warlord Naj'entus
 						["creatureID"] = 22887,
 						["groups"] = {
-							i(122104),	-- Leviathan Egg (PET!)
+							i(122104, {	-- Leviathan Egg (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
 							i(32248),	-- Halberd of Desolation
 							i(32236),	-- Rising Tide
 							i(32237),	-- The Maelstrom's Fury
@@ -131,7 +139,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(1583, {	-- Supremus
 						["creatureID"] = 22898,
 						["groups"] = {
-							i(122106),	-- Shard of Supremus (PET!)
+							i(122106, {	-- Shard of Supremus (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
 							i(32262),	-- Syphon of the Nathrezim
 							i(32254),	-- The Brutalizer
 							i(32253),	-- Legionkiller
@@ -206,9 +219,24 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(1587, {	-- Reliquary of Souls
 						["creatureID"] = 23418,
 						["groups"] = {
-							i(122107),	-- Fragment of Anger (PET!)
-							i(122109),	-- Fragment of Desire (PET!)
-							i(122108),	-- Fragment of Suffering (PET!)
+							i(122107, {	-- Fragment of Anger (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
+							i(122109, {	-- Fragment of Desire (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
+							i(122108, {	-- Fragment of Suffering (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
 							i(32332),	-- Torch of the Damned
 							i(32363),	-- Naaru-Blessed Life Rod
 							i(32350),	-- Touch of Inspiration
@@ -227,7 +255,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(1588, {	-- Mother Shahraz
 						["creatureID"] = 22947,
 						["groups"] = {
-							i(122110),	-- Sultry Grimoire (PET!)
+							i(122110, {	-- Sultry Grimoire (PET!)
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
+							}),
 							i(31101),	-- Pauldrons of the Forgotten Conqueror
 							i(31103),	-- Pauldrons of the Forgotten Protector
 							i(31102),	-- Pauldrons of the Forgotten Vanquisher
@@ -263,12 +296,21 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["groups"] = {
 							ach(697),	-- The Black Temple
 							ach(426, {	-- Warglaives of Azzinoth
+								["description"] = "Once you have both, simply equip them for this achievement.",
 								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
-								["groups"] = {
-									i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
-									i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
+								["cost"] = {
+									{ "i", 32837, 1 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
+									{ "i", 32838, 1 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
 								},
 							}),
+							i(122196, {	-- Music Roll: The Burning Legion
+								["timeline"] = {
+									"created 6.1.0.19480",
+									"added 6.1.0.19480"
+								},
+							}),
+							i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
+							i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
 							i(31089),	-- Chestguard of the Forgotten Conqueror
 							i(31091),	-- Chestguard of the Forgotten Protector
 							i(31090),	-- Chestguard of the Forgotten Vanquisher
@@ -284,7 +326,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(32497),	-- Stormrage Signet Ring
 							i(32496),	-- Memento of Tyrande
 							i(32483),	-- The Skull of Gul'dan
-							i(122196),	-- Music Roll: The Burning Legion
 						},
 					}),
 			-- #if AFTER LEGION
@@ -297,7 +338,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["lvl"] = 71,
 				["groups"] = {
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
-						i(122104),	-- Leviathan Egg (PET!)
+						i(122104, {	-- Leviathan Egg (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
 						i(150447),	-- Halberd of Desolation
 						i(150437),	-- Rising Tide
 						i(150438),	-- The Maelstrom's Fury
@@ -314,7 +360,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150446),	-- Ring of Captured Storms
 					})),
 					cr(22898, e(1583, {	-- Supremus
-						i(122106),	-- Shard of Supremus (PET!)
+						i(122106, {	-- Shard of Supremus (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
 						i(150460),	-- Syphon of the Nathrezim
 						i(150451),	-- Legionkiller
 						i(150453),	-- Felstone Bulwark
@@ -362,9 +413,24 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150487),	-- Unstoppable Aggressor's Ring
 					})),
 					cr(23418, e(1587, {	-- Reliquary of Souls
-						i(122107),	-- Fragment of Anger (PET!)
-						i(122109),	-- Fragment of Desire (PET!)
-						i(122108),	-- Fragment of Suffering (PET!)
+						i(122107, {	-- Fragment of Anger (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
+						i(122109, {	-- Fragment of Desire (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
+						i(122108, {	-- Fragment of Suffering (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
 						i(150484),	-- Torch of the Damned
 						i(150509),	-- Naaru-Blessed Life Rod
 						i(150506),	-- Crown of Empowered Fate
@@ -379,7 +445,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150504),	-- Naturewarden's Treads
 					})),
 					cr(22947, e(1588, {	-- Mother Shahraz
-						i(122110),	-- Sultry Grimoire (PET!)
+						i(122110, {	-- Sultry Grimoire (PET!)
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
+						}),
 						i(150514),	-- Blade of Savagery
 						i(150519),	-- Forest Prowler's Helm
 						i(150442),	-- Helm of Soothing Currents
@@ -429,6 +500,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 								}),
 							},
 						}),
+						i(122196, {	-- Music Roll: The Burning Legion
+							["timeline"] = {
+								"created 6.1.0.19480",
+								"added 6.1.0.19480"
+							},
+						}),
 						i(150517),	-- Zhar'doom, Greatstaff of the Devourer
 						i(150525),	-- Crystal Spire of Karabor
 						i(150521),	-- Shard of Azzinoth
@@ -452,11 +529,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150524),	-- Stormrage Signet Ring
 						i(150523),	-- Memento of Tyrande
 						i(150522),	-- The Skull of Gul'dan
-						i(122196),	-- Music Roll: The Burning Legion
 					})),
 				},
 			}),
 			-- #endif
 		},
 	}),
-})};
+}
+-- #if ANYCLASSIC
+)
+-- #endif
+)};

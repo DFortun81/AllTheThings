@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2,	-- Burning Crusade
+-- #if ANYCLASSIC
+bubbleDown({ ["u"] = TBC_PHASE_TWO },
+-- #endif
+{
 	inst(748, {	-- Serpentshrine Cavern
 		["mapID"] = SERPENTSHRINE_CAVERN,
 		["sharedLockout"] = 1,
@@ -10,7 +14,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
 		-- #endif
-		["u"] = TBC_PHASE_TWO,
 		["lvl"] = 68,
 		-- #elseif AFTER SHADOWLANDS
 		["lvl"] = 30,
@@ -298,4 +301,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 		},
 	}),
-})};
+}
+-- #if ANYCLASSIC
+)
+-- #endif
+)};
