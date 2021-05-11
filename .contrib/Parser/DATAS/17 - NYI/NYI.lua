@@ -36,7 +36,6 @@ _.NeverImplemented =
 		i(182083),	-- Bonecleaver's Skullboar
 		i(181817),	-- Deathbringer's Flayedwing
 		-- Gear
-		i(183973),	-- Lost winged ritual kris
 		i(171401),	-- Phaeweald Rapier
 		i(175999),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
 		i(176002),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
