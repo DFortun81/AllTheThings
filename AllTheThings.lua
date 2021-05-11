@@ -3579,7 +3579,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
-	group.isSearchResult = true;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
 	-- else print("Cached Search",search,paramA,paramB,#group.info); end
@@ -3588,6 +3587,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
 		-- print("TopLevelSearch-Done",search)
+		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 	end
 	return group;
@@ -11329,7 +11329,7 @@ function app:CreateMiniListForGroup(group)
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone/search initially so as to not let popout operations modify the source data
-		if not group.isSearchResult then
+		if not group.isBaseSearchResult then
 			-- make a search for this group if it is an item/currency and not already a container for things
 			if not group.g and (group.itemID or group.currencyID) then
 				local cmd = group.key .. ":" .. group[group.key];
