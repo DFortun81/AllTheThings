@@ -3579,6 +3579,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
+	group.isSearchResult = true;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
 	-- else print("Cached Search",search,paramA,paramB,#group.info); end
@@ -11327,8 +11328,16 @@ function app:CreateMiniListForGroup(group)
 	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
-		-- clone initially so that nothing in the popout modifies the real data
-		group = CloneData(group);
+		-- clone/search initially so as to not let popout operations modify the source data
+		if not group.isSearchResult then
+			-- make a search for this group if it is an item/currency and not already a container for things
+			if not group.g and (group.itemID or group.currencyID) then
+				local cmd = group.key .. ":" .. group[group.key];
+				group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			else
+				group = CloneData(group);
+			end
+		end
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		if group.cost then app.BuildCost(group); end
 		popout = app:GetWindow(suffix);
@@ -11671,12 +11680,8 @@ function app:CreateMiniListForGroup(group)
 					MergeObjects(popout.data.g, resolved);
 				end
 			end
-		elseif group.g then
-			-- This is already a container with accurate numbers.
-			popout.data = group;
 		else
-			-- This is a standalone item
-			group.visible = true;
+			-- This is a standalone item/group
 			popout.data = group;
 		end
 
@@ -13075,6 +13080,114 @@ local function UpdateWindow(self, force, got)
 		end
 	end
 end
+local backdrop = {
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+};
+function app:GetWindow(suffix, parent, onUpdate)
+	local window = app.Windows[suffix];
+	if not window then
+		-- Create the window instance.
+		-- print("Creating new Window Frame for",suffix)
+		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+		app.Windows[suffix] = window;
+		window.Suffix = suffix;
+		window.Refresh = Refresh;
+		window.Toggle = Toggle;
+		window.BaseUpdate = UpdateWindow;
+		window.Update = onUpdate or UpdateWindow;
+		window.SetVisible = SetVisible;
+		if AllTheThingsSettings then
+			if suffix == "Prime" then
+				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
+			end
+		end
+
+		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
+		window:SetScript("OnMouseDown", StartMovingOrSizing);
+		window:SetScript("OnMouseUp", StopMovingOrSizing);
+		window:SetScript("OnHide", StopMovingOrSizing);
+		window:SetBackdrop(backdrop);
+		window:SetBackdropBorderColor(1, 1, 1, 1);
+		window:SetBackdropColor(0, 0, 0, 1);
+		window:SetClampedToScreen(true);
+		window:SetToplevel(true);
+		window:EnableMouse(true);
+		window:SetMovable(true);
+		window:SetResizable(true);
+		window:SetPoint("CENTER");
+		window:SetMinResize(96, 32);
+		window:SetSize(300, 300);
+
+		window:SetUserPlaced(true);
+		window.data = {
+			['text'] = suffix,
+			['icon'] = "Interface\\Icons\\Ability_Spy.blp",
+			['visible'] = true,
+			['expanded'] = true,
+			['g'] = {
+				{
+					['text'] = "No data linked to listing.",
+					['visible'] = true
+				}
+			}
+		};
+
+		-- set whether this window lock is persistable between sessions
+		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
+			window.lockPersistable = true;
+		end
+
+		window:Hide();
+
+		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
+		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
+
+		-- The Scroll Bar.
+		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
+		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -10);
+		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
+		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
+		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+		scrollbar.back:SetColorTexture(0,0,0,0.4)
+		scrollbar.back:SetAllPoints(scrollbar);
+		scrollbar:SetMinMaxValues(1, 1);
+		scrollbar:SetValueStep(1);
+		scrollbar:SetObeyStepOnDrag(true);
+		scrollbar.CurrentValue = 1;
+		scrollbar:SetWidth(16);
+		scrollbar:EnableMouseWheel(true);
+		window:EnableMouseWheel(true);
+		window.ScrollBar = scrollbar;
+
+		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
+		local grip = window:CreateTexture(nil, "ARTWORK");
+		grip:SetTexture(app.asset("grip"));
+		grip:SetSize(16, 16);
+		grip:SetTexCoord(0,1,0,1);
+		grip:SetPoint("BOTTOMRIGHT", -5, 5);
+		window.Grip = grip;
+
+		-- The Row Container. This contains all of the row frames.
+		local container = CreateFrame("FRAME", nil, window);
+		container:SetPoint("TOPLEFT", window, "TOPLEFT", 0, -6);
+		container:SetPoint("RIGHT", scrollbar, "LEFT", 0, 0);
+		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+		window.Container = container;
+		container.rows = {};
+		scrollbar:SetValue(1);
+		container:Show();
+		window:Update(true);
+	end
+	return window;
+end
+end)();
 
 function app:GetDataCache()
 	-- Update the Row Data by filtering raw data
@@ -13761,13 +13874,6 @@ function app:GetDataCache()
 	return allData;
 end
 
-local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-	tile = true, tileSize = 16, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
 	-- print("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
@@ -13806,107 +13912,6 @@ function app:RefreshData(lazy, got, manual)
 		wipe(searchCache);
 	end);
 end
-function app:GetWindow(suffix, parent, onUpdate)
-	local window = app.Windows[suffix];
-	if not window then
-		-- Create the window instance.
-		-- print("Creating new Window Frame for",suffix)
-		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		app.Windows[suffix] = window;
-		window.Suffix = suffix;
-		window.Refresh = Refresh;
-		window.Toggle = Toggle;
-		window.BaseUpdate = UpdateWindow;
-		window.Update = onUpdate or UpdateWindow;
-		window.SetVisible = SetVisible;
-		if AllTheThingsSettings then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
-
-		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
-		window:SetScript("OnMouseDown", StartMovingOrSizing);
-		window:SetScript("OnMouseUp", StopMovingOrSizing);
-		window:SetScript("OnHide", StopMovingOrSizing);
-		window:SetBackdrop(backdrop);
-		window:SetBackdropBorderColor(1, 1, 1, 1);
-		window:SetBackdropColor(0, 0, 0, 1);
-		window:SetClampedToScreen(true);
-		window:SetToplevel(true);
-		window:EnableMouse(true);
-		window:SetMovable(true);
-		window:SetResizable(true);
-		window:SetPoint("CENTER");
-		window:SetMinResize(96, 32);
-		window:SetSize(300, 300);
-
-		window:SetUserPlaced(true);
-		window.data = {
-			['text'] = suffix,
-			['icon'] = "Interface\\Icons\\Ability_Spy.blp",
-			['visible'] = true,
-			['expanded'] = true,
-			['g'] = {
-				{
-					['text'] = "No data linked to listing.",
-					['visible'] = true
-				}
-			}
-		};
-
-		-- set whether this window lock is persistable between sessions
-		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
-			window.lockPersistable = true;
-		end
-
-		window:Hide();
-
-		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
-		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
-
-		-- The Scroll Bar.
-		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -10);
-		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
-		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-		scrollbar.back:SetColorTexture(0,0,0,0.4)
-		scrollbar.back:SetAllPoints(scrollbar);
-		scrollbar:SetMinMaxValues(1, 1);
-		scrollbar:SetValueStep(1);
-		scrollbar:SetObeyStepOnDrag(true);
-		scrollbar.CurrentValue = 1;
-		scrollbar:SetWidth(16);
-		scrollbar:EnableMouseWheel(true);
-		window:EnableMouseWheel(true);
-		window.ScrollBar = scrollbar;
-
-		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture(app.asset("grip"));
-		grip:SetSize(16, 16);
-		grip:SetTexCoord(0,1,0,1);
-		grip:SetPoint("BOTTOMRIGHT", -5, 5);
-		window.Grip = grip;
-
-		-- The Row Container. This contains all of the row frames.
-		local container = CreateFrame("FRAME", nil, window);
-		container:SetPoint("TOPLEFT", window, "TOPLEFT", 0, -6);
-		container:SetPoint("RIGHT", scrollbar, "LEFT", 0, 0);
-		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-		window.Container = container;
-		container.rows = {};
-		scrollbar:SetValue(1);
-		container:Show();
-		window:Update(true);
-	end
-	return window;
-end
 function app:ApplyLockedWindows()
 	local lockedWindows = GetDataMember("LockedWindows", nil);
 	if lockedWindows then
@@ -13938,9 +13943,6 @@ function app:BuildSearchResponse(groups, field, value)
 		return t;
 	end
 end
-end)();
-
-
 
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
