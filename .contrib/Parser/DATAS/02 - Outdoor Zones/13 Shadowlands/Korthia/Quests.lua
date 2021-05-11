@@ -269,6 +269,12 @@ _.Zones =
 
 				-- Korthia Daily
 				i(186017),	-- Korthium - TODO: item is marked WIP, itemID may change.  rewarded by some dailies but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
+				q(64271, {	-- A More Civilized Way
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.2, KORTHIA },
+				}),
 				q(63779, {	-- A Semblance of Normal
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179134 },	-- Pelagos
