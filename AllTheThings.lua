@@ -11973,6 +11973,7 @@ local function Refresh(self)
 
 		totalRowCount = totalRowCount + 1;
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
+		self.ScrollBar:SetStepsPerPage(rowCount - 1);
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
