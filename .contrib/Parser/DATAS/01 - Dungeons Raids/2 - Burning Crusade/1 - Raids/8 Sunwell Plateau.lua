@@ -235,9 +235,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 					24892,	-- Sathrovarr the Corruptor
 				},
 				["groups"] = {
-					i(34848),	-- Bracers of the Forgotten Conqueror
-					i(34851),	-- Bracers of the Forgotten Protector
-					i(34852),	-- Bracers of the Forgotten Vanquisher
+					i(34848, {	-- Bracers of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34851, {	-- Bracers of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34852, {	-- Bracers of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
 					i(34164),	-- Dragonscale-Encrusted Longblade
 					i(34165),	-- Fang of Kalecgos
 					i(34169),	-- Breeches of Natural Aggression
@@ -256,9 +262,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 							"added 6.1.0.19445"
 						},
 					}),
-					i(34853),	-- Belt of the Forgotten Conqueror
-					i(34854),	-- Belt of the Forgotten Protector
-					i(34855),	-- Belt of the Forgotten Vanquisher
+					i(34853, {	-- Belt of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34854, {	-- Belt of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34855, {	-- Belt of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
 					i(34176),	-- Reign of Misery
 					i(34179),	-- Heart of the Pit
 					i(34177),	-- Clutch of Demise
@@ -270,9 +282,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 			e(1593, {	-- Felmyst
 				["creatureID"] = 25038,
 				["groups"] = {
-					i(34856),	-- Boots of the Forgotten Conqueror
-					i(34857),	-- Boots of the Forgotten Protector
-					i(34858),	-- Boots of the Forgotten Vanquisher
+					i(34856, {	-- Boots of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34857, {	-- Boots of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34858, {	-- Boots of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
 					i(34182),	-- Grand Magister's Staff of Torrents
 					i(34185),	-- Sword Breaker's Bulwark
 					i(34184),	-- Brooch of the Highborne
@@ -293,15 +311,33 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 							"added 6.1.0.19445"
 						},
 					}),
-					i(34853),	-- Belt of the Forgotten Conqueror
-					i(34854),	-- Belt of the Forgotten Protector
-					i(34855),	-- Belt of the Forgotten Vanquisher
-					i(34856),	-- Boots of the Forgotten Conqueror
-					i(34857),	-- Boots of the Forgotten Protector
-					i(34858),	-- Boots of the Forgotten Vanquisher
-					i(34848),	-- Bracers of the Forgotten Conqueror
-					i(34851),	-- Bracers of the Forgotten Protector
-					i(34852),	-- Bracers of the Forgotten Vanquisher
+					i(34853, {	-- Belt of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34854, {	-- Belt of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34855, {	-- Belt of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
+					i(34856, {	-- Boots of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34857, {	-- Boots of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34858, {	-- Boots of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
+					i(34848, {	-- Bracers of the Forgotten Conqueror
+						["classes"] = { PALADIN, PRIEST, WARLOCK },
+					}),
+					i(34851, {	-- Bracers of the Forgotten Protector
+						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+					}),
+					i(34852, {	-- Bracers of the Forgotten Vanquisher
+						["classes"] = { ROGUE, MAGE, DRUID },
+					}),
 					i(34198),	-- Stanchion of Primal Intellect
 					i(34199),	-- Archon's Gavel
 					i(34203),	-- Grip of Mannoroth
