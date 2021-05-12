@@ -68,13 +68,6 @@ _.Zones =
 						27997,	-- The Corruption of the Jadefire
 					},
 				}),
-				q(7634, {	-- Ancient Sinew Wrapped Lamina
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 14526 },	-- Hastat the Ancient
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(18714)),	-- Ancient Sinew Wrapped Lamina
-					},
-				}),
 				q(4261,  {	-- Ancient Spirit
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9598 },	-- Arei

@@ -5,6 +5,17 @@ _ = AllTheThings;
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
+-- Map Constants for quick and easy replacement when we can get mapIDs on live!
+-- NOTE: All of these must be changed!
+-- Raids (Classic)
+BLACKWING_LAIR = 287;
+MOLTEN_CORE = 232;
+NAXXRAMAS = 162;
+ONYXIAS_LAIR = 248;
+RUINS_OF_AHNQIRAJ = 247;
+TEMPLE_OF_AHNQIRAJ = 320;
+ZULGURUB = 337;
+
 -- Raids (TBC)
 KARAZHAN = 350;
 GRUULS_LAIR = 330;	-- Confirmed!
@@ -41,6 +52,7 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 KALIMDOR = 12;	-- Confirmed!
 ASHENVALE = 63;	-- Confirmed!
 CAVERNS_OF_TIME = 75;	-- Confirmed!
+DUSTWALLOW_MARSH = 70;	-- Confirmed!
 FERALAS = 69;	-- Confirmed!
 
 -- Eastern Kingdoms
@@ -520,6 +532,9 @@ struct = function(field, id, t)
 end
 
 -- Helper Functions
+isarray = function(t)
+	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
 addObject = function(o, t)
 	table.insert(t, o);
 	return t;
@@ -535,16 +550,28 @@ sharedData = function(data, t)
 	return t;
 end
 bubbleDown = function(data, t)
-	for i, group in ipairs(t) do
-		for key, value in pairs(data) do
-			if not group[key] then
-				group[key] = value;
+	if t then
+		if t.g or t.groups then
+			for key, value in pairs(data) do
+				if not t[key] then
+					t[key] = value;
+				end
+			end
+			bubbleDown(data, t.groups);
+			bubbleDown(data, t.g);
+		elseif isarray(t) then
+			for i,group in ipairs(t) do
+				bubbleDown(data, group);
+			end
+		else
+			for key, value in pairs(data) do
+				if not t[key] then
+					t[key] = value;
+				end
 			end
 		end
-		if group.groups then bubbleDown(data, group.groups); end
-		if group.g then bubbleDown(data, group.g); end
+		return t;
 	end
-	return t;
 end
 bubbleUp = function(t)
 	local t2 = {};
@@ -635,9 +662,7 @@ merge = function(...)
 	end
 	return t;
 end
-isarray = function(t)
-	return type(t) == 'table' and (#t > 0 or next(t) == nil);
-end
+
 
 -- Asset Path Helper Functions
 asset = function(path)
@@ -845,8 +870,8 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t)); -- Need to maintain the requireSkill inclusion until every individually-sourced recipe Item has the proper tagging as well
-	_.Professions = { p };
+	local p = prof(skillID, t);
+	_.Professions = { bubbleDown({ ["requireSkill"] = skillID }, p) };
 	return p;
 end
 pvprank = function(id, t)								-- Create a PVP Rank Object.

@@ -384,22 +384,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(LEATHERWORKING, {
-					n(QUESTS, {
-						q(7493, {	-- The Journey Has Just Begun
-							["provider"] = { "n", 14392 },	-- Overlord Natoj
-							["coord"] = { 51.3, 83.2, 85 },
-							["sourceQuest"] = 24429, -- A Most Puzzling Circumstance (H)
-							["requireSkill"] = LEATHERWORKING,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 60,
-							["g"] = {
-								recipe(19093),		-- Onyxia Scale Cloak
-								un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
-							},
-						}),
-					}),
-				}),
 			}),
 		}),
 	}),
