@@ -616,6 +616,11 @@ for key,value in pairs({
 		[-70] = DUNGEON_FLOOR_DESOLACE22,							-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21,							-- The Wicked Grotto [Purple]
 		[-72] = "萨格雷战争议会",									-- Sargerei War Council
+		--TODO: [-78] = "Timed Event",
+		--TODO: [-79] = "First Chest",
+		--TODO: [-80] = "Second Chest",
+		--TODO: [-81] = "Third Chest",
+		--TODO: [-82] = "Final Chest",
 		[-85] = "墓地",												-- Graveyard
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
@@ -1014,11 +1019,6 @@ for key,value in pairs({
 			[-5350] = "职业试用套装",								-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-		--TODO: [-7777] = "Timed Event",
-		--TODO: [-7778] = "First Chest",
-		--TODO: [-7779] = "Second Chest",
-		--TODO: [-7780] = "Third Chest",
-		--TODO: [-7781] = "Final Chest",
 
 	------ ACHIEVEMENT HEADER SECTION ------
 		--TODO: [-10066] = BATTLE_PET_BREED_QUALITY6,				-- Legendary

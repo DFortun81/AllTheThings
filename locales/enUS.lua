@@ -859,6 +859,13 @@ app.L = {
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
 		[-77] = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",						-- Special
+		[-78] = "Interface\\Icons\\INV_Misc_Basket_05",										-- Timed Event
+		[-79] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",								-- First Chest
+		[-80] = "Interface\\Icons\\inv_misc_treasurechest03a",								-- Second Chest
+		[-81] = "Interface\\Icons\\INV_Misc_Bag_10",										-- Third Chest
+		[-82] = "Interface\\Icons\\INV_Box_01",												-- Final Chest
+		
+		
 		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
@@ -1288,11 +1295,6 @@ app.L = {
 		[-6015] = "Interface\\Icons\\battleground_strongbox_gold_horde",					-- Rewards
 
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",				-- Winter Revelers (for Winter Veil)
-		[-7777] = "Interface\\Icons\\INV_Misc_Basket_05",
-		[-7778] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",
-		[-7779] = "Interface\\Icons\\inv_misc_treasurechest03a",
-		[-7780] = "Interface\\Icons\\INV_Misc_Bag_10",
-		[-7781] = "Interface\\Icons\\INV_Box_01",
 
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
@@ -1564,6 +1566,12 @@ app.L = {
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
 		[-77] = SPECIAL,														-- Special
+		[-78] = "Timed Event",
+		[-79] = "First Chest",
+		[-80] = "Second Chest",
+		[-81] = "Third Chest",
+		[-82] = "Final Chest",
+		
 		[-85] = "Graveyard",
 		[-86] = "Library",
 		[-87] = "Armory",
@@ -2147,11 +2155,6 @@ app.L = {
 		[-6015] = GUILD_TAB_REWARDS,											-- Rewards
 
 		[-7776] = "Winter Revelers",											-- Winter Revelers (for Winter Veil)
-		[-7777] = "Timed Event",
-		[-7778] = "First Chest",
-		[-7779] = "Second Chest",
-		[-7780] = "Third Chest",
-		[-7781] = "Final Chest",
 
 	-- Factions
 		[-9913] = FACTION_HORDE, 												-- Horde

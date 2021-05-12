@@ -1,11 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2,	-- Burning Crusade
--- #if ANYCLASSIC
-bubbleDown({ ["u"] = TBC_PHASE_THREE },
--- #endif
-{
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 	inst(751, {	-- The Black Temple
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
 		["isRaid"] = true,
@@ -20,16 +16,10 @@ bubbleDown({ ["u"] = TBC_PHASE_THREE },
 			346,	-- Temple Summit
 			759,	-- Black Temple (used in DH scenario for "Confrontation at the Black Temple" quest)
 		},
-		-- #if ANYCLASSIC
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10985,	-- A Distraction for Akama
 		-- #endif
-		["lvl"] = 70,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #else
-		["lvl"] = 68,
-		-- #endif
+		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			ach(958),	-- Sworn to the Deathsworn
 			n(FACTIONS, {
@@ -535,8 +525,4 @@ bubbleDown({ ["u"] = TBC_PHASE_THREE },
 			-- #endif
 		},
 	}),
-}
--- #if ANYCLASSIC
-)
--- #endif
-)};
+}))};

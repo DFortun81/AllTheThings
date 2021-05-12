@@ -610,6 +610,11 @@ for key,value in pairs({
 		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",
 		--TODO: [-65] = GetSpellInfo(190357).." "..select(1,GetCategoryInfo(15268)),-- Blizzard Promotions
 		--TODO: [-72] = "Sargerei War Council",
+		--TODO: [-78] = "Timed Event",
+		--TODO: [-79] = "First Chest",
+		--TODO: [-80] = "Second Chest",
+		--TODO: [-81] = "Third Chest",
+		--TODO: [-82] = "Final Chest",
 		--TODO: [-85] = "Graveyard",
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
@@ -994,11 +999,6 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-		--TODO: [-7777] = "Timed Event",
-		--TODO: [-7778] = "First Chest",
-		--TODO: [-7779] = "Second Chest",
-		--TODO: [-7780] = "Third Chest",
-		--TODO: [-7781] = "Final Chest",
 
 	------ ACHIEVEMENT HEADER SECTION ------
 		--TODO: [-10066] = BATTLE_PET_BREED_QUALITY6,				-- "Legendary";
