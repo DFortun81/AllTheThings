@@ -8883,11 +8883,11 @@ local questFields = {
 			end
 		end
 		if t.isWorldQuest then
-			return "Interface\\GossipFrame\\DailyActiveQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questind";
 		elseif t.repeatable then
-			return "Interface\\GossipFrame\\DailyQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questd";
 		else
-			return "Interface\\GossipFrame\\AvailableQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Quest";
 		end
 	end,
 	["hasIndicator"] = function(t)
