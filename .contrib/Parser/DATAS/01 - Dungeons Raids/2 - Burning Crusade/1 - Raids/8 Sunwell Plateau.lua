@@ -2,835 +2,220 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 	inst(752, { 	-- Sunwell Plateau
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 68,
+		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
 		["maps"] = {
-			335,	-- Sunwell Plateau
+			SUNWELL_PLATEAU,
 			336,	-- Shrine of the Eclipse
 		},
-		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
-		["g"] = {
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
+		["groups"] = {
 			n(ZONEDROPS, {
-				--Note!! All items are CRS'ed as of October 25, 2018
 				i(35202, {	-- Design: Amulet of Flowing Life
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46126,	-- Amulet of Flowing Life
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35200, {	-- Design: Hard Khorium Band
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46124,	-- Hard Khorium Band
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35203, {	-- Design: Hard Khorium Choker
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25595,	-- Chaos Gazer
-						25597,	-- Oblivion Mage
-						25837,	-- Shadowsword Commander
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46127,	-- Hard Khorium Choker
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35198, {	-- Design: Loop of Forged Power
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25484,	-- Shadowsword Assassin
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46122,	-- Loop of Forged Power
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35201, {	-- Design: Pendant of Sunfire
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46125,	-- Pendant of Sunfire
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35199, {	-- Design: Ring of Flowing Life
-					["crs"] = {
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46123,	-- Ring of Flowing Life
+					["requireSkill"] = JEWELCRAFTING,
+					["f"] = 200,
 				}),
 				i(35218, {	-- Pattern: Carapace of Sun and Shadow
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46138,	-- Carapace of Sun and Shadow
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35217, {	-- Pattern: Embrace of the Phoenix
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25592,	-- Doomfire Destroyer
-						25591,	-- Painbringer
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46137,	-- Embrace of the Phoenix
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46133,	-- Fletcher's Gloves of the Phoenix
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35214, {	-- Pattern: Gloves of Immortal Dusk
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25592,	-- Doomfire Destroyer
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46134,	-- Gloves of Immortal Dusk
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35205, {	-- Pattern: Hands of Eternal Light
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46129,	-- Hands of Eternal Light
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
 				}),
 				i(35216, {	-- Pattern: Leather Chestguard of the Sun
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25484,	-- Shadowsword Assassin
-						25508,	-- Shadowsword Guardian
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46136,	-- Leather Chestguard of the Sun
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35212, {	-- Pattern: Leather Gauntlets of the Sun
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46132,	-- Leather Gauntlets of the Sun
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35207, {	-- Pattern: Robe of Eternal Light
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46131,	-- Robe of Eternal Light
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
 				}),
 				i(35219, {	-- Pattern: Sun-Drenched Scalee Chestguard
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46139,	-- Sun-Drenched Scalee Chestguard
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35215, {	-- Pattern: Sun-Drenched Scale Gloves
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46135,	-- Sun-Drenched Scale Gloves
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
 				}),
 				i(35204, {	-- Pattern: Sunfire Handwraps
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46128,	-- Sunfire Handwraps
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
 				}),
 				i(35206, {	-- Pattern: Sunfire Robe
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25484,	-- Shadowsword Assassin
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46130,	-- Sunfire Robe
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
 				}),
 				i(35209, {	-- Plans: Hard Khorium Battlefists
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46141,	-- Hard Khorium Battlefists
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
 				}),
 				i(35211, {	-- Plans: Hard Khorium Battleplate
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46144,	-- Hard Khorium Battleplate
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
 				}),
-				{	-- Plans: Sunblessed Breastplate
-					["itemID"] = 35210,	-- Plans: Sunblessed Breastplate
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Plans: Sunblessed Breastplate
-					["itemID"] = 35555,	-- Plans: Sunblessed Breastplate
-					["spellID"] = 0,	-- This is now available via 35210, need to delink the old plans from the recipe
-					["u"] = NEVER_IMPLEMENTED,
-				},
+				i(35210, {	-- Plans: Sunblessed Breastplate
+					["spellID"] = 46142,	-- Sunblessed Breastplate
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
+				}),
 				i(35208, {	-- Plans: Sunblessed Gauntlets
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
+					["spellID"] = 46140,	-- Sunblessed Gauntlets
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
 				}),
-				{	-- Schematic: Annihilator Holo-Gogs
-					["itemID"] = 35186,	-- Schematic: Annihilator Holo-Gogs
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Hard Khorium Goggles
-					["itemID"] = 35196,	-- Schematic: Hard Khorium Goggles
-					["crs"] = {
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Hyper-Magnified Moon Specs
-					["itemID"] = 35190,	-- Schematic: Hyper-Magnified Moon Specs
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25591,	-- Painbringer
-						25506,	-- Shadowsword Lifeshaper
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Justicebringer 3000 Specs
-					["itemID"] = 35187,	-- Schematic: Justicebringer 3000 Specs
-					["crs"] = {
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25837,	-- Shadowsword Commander
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Lightning Etched Specs
-					["itemID"] = 35193,	-- Schematic: Lightning Etched Specs
-					["crs"] = {
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Mayhem Projection Goggles
-					["itemID"] = 35195,	-- Schematic: Mayhem Projection Goggles
-					["crs"] = {
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Powerheal 9000 Lens
-					["itemID"] = 35189,	-- Schematic: Powerheal 9000 Lens
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25597,	-- Oblivion Mage
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Primal-Attuned Goggles
-					["itemID"] = 35192,	-- Schematic: Primal-Attuned Goggles
-					["crs"] = {
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25597,	-- Oblivion Mage
-						25509,	-- Priestess of Torment
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Quad Deathblow X44 Goggles
-					["itemID"] = 35197,	-- Schematic: Quad Deathblow X44 Goggles
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25597,	-- Oblivion Mage
-						25508,	-- Shadowsword Guardian
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Surestrike Goggles v3.0
-					["itemID"] = 35194,	-- Schematic: Surestrike Goggles v3.0
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25597,	-- Oblivion Mage
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Schematic: Wonderheal XT68 Shades
-					["itemID"] = 35191,	-- Schematic: Wonderheal XT68 Shades
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25370,	-- Sunblade Dusk Priest
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Study of Advanced Smelting
-					["itemID"] = 35273,	-- Study of Advanced Smelting
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
+				i(35186, {	-- Schematic: Annihilator Holo-Gogs
+					["spellID"] = 46111,	-- Annihilator Holo-Gogs
+					["requireSkill"] = ENGINEERING,
+					["races"] = { PRIEST, MAGE, WARLOCK },
+					["f"] = 200,
+				}),
+				i(35196, {	-- Schematic: Hard Khorium Goggles
+					["spellID"] = 46115,	-- Hard Khorium Goggles
+					["requireSkill"] = ENGINEERING,
+					["races"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["f"] = 200,
+				}),
+				i(35190, {	-- Schematic: Hyper-Magnified Moon Specs
+					["spellID"] = 46109,	-- Hyper-Magnified Moon Specs
+					["requireSkill"] = ENGINEERING,
+					["races"] = { DRUID },
+					["f"] = 200,
+				}),
+				i(35187, {	-- Schematic: Justicebringer 3000 Specs
+					["spellID"] = 46107,	-- Justicebringer 3000 Specs
+					["requireSkill"] = ENGINEERING,
+					["races"] = { PALADIN },
+					["f"] = 200,
+				}),
+				i(35193, {	-- Schematic: Lightning Etched Specs
+					["spellID"] = 46112,	-- Lightning Etched Specs
+					["requireSkill"] = ENGINEERING,
+					["races"] = { SHAMAN },
+					["f"] = 200,
+				}),
+				i(35195, {	-- Schematic: Mayhem Projection Goggles
+					["spellID"] = 46114,	-- Mayhem Projection Goggles
+					["requireSkill"] = ENGINEERING,
+					["races"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["f"] = 200,
+				}),
+				i(35189, {	-- Schematic: Powerheal 9000 Lens
+					["spellID"] = 46108,	-- Powerheal 9000 Lens
+					["requireSkill"] = ENGINEERING,
+					["races"] = { PRIEST },
+					["f"] = 200,
+				}),
+				i(35192, {	-- Schematic: Primal-Attuned Goggles
+					["spellID"] = 46110,	-- Primal-Attuned Goggles
+					["requireSkill"] = ENGINEERING,
+					["races"] = { SHAMAN },
+					["f"] = 200,
+				}),
+				i(35197, {	-- Schematic: Quad Deathblow X44 Goggles
+					["spellID"] = 46116,	-- Quad Deathblow X44 Goggles
+					["requireSkill"] = ENGINEERING,
+					["races"] = { ROGUE, DRUID, MONK },
+					["f"] = 200,
+				}),
+				i(35194, {	-- Schematic: Surestrike Goggles v3.0
+					["spellID"] = 46113,	-- Surestrike Goggles v3.0
+					["requireSkill"] = ENGINEERING,
+					["races"] = { HUNTER, SHAMAN },
+					["f"] = 200,
+				}),
+				i(35191, {	-- Schematic: Wonderheal XT68 Shades
+					["spellID"] = 46106,	-- Wonderheal XT68 Shades
+					["requireSkill"] = ENGINEERING,
+					["races"] = { DRUID },
+					["f"] = 200,
+				}),
+				i(35273, {	-- Study of Advanced Smelting
+					["spellID"] = 46353,	-- Smelt Hardened Khorium
+					["requireSkill"] = MINING,
+					["f"] = 200,
+				}),
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
 					["timeline"] = { "removed 5.0.4.10000" },
 				}),
 				-- #endif
-				{	-- Gauntlets of the Ancient Shadowmoon
-					["itemID"] = 34350,	-- Gauntlets of the Ancient Shadowmoon
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Mounting Vengeance
-					["itemID"] = 34346,	-- Mounting Vengeance
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Shivering Felspine
-					["itemID"] = 34183,	-- Shivering Felspine
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Tranquil Majesty Wraps
-					["itemID"] = 34351,	-- Tranquil Majesty Wraps
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Wand of Cleansing Light
-					["itemID"] = 34348,	-- Wand of Cleansing Light
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Wand of the Demonsoul
-					["itemID"] = 34347,	-- Wand of the Demonsoul
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Ring of Harmonic Beauty
-					["itemID"] = 35733,	-- Ring of Harmonic Beauty
-					["crs"] = {
-						25593,	-- Apocalypse Guard
-						25599,	-- Cataclysm Hound
-						25595,	-- Chaos Gazer
-						25592,	-- Doomfire Destroyer
-						25597,	-- Oblivion Mage
-						25591,	-- Painbringer
-						25509,	-- Priestess of Torment
-						25484,	-- Shadowsword Assassin
-						25837,	-- Shadowsword Commander
-						25508,	-- Shadowsword Guardian
-						25506,	-- Shadowsword Lifeshaper
-						25483,	-- Shadowsword Manafiend
-						25486,	-- Shadowsword Vanquisher
-						25367,	-- Sunblade Arch Mage
-						25363,	-- Sunblade Cabalist
-						25371,	-- Sunblade Dawn Priest
-						25867,	-- Sunblade Dragonhawk
-						25370,	-- Sunblade Dusk Priest
-						25507,	-- Sunblade Protector
-						25368,	-- Sunblade Slayer
-						25369,	-- Sunblade Vindicator
-					},
-				},
-				{	-- Sunmote
-					["itemID"] = 34664,	-- Sunmote
+				i(34350),	-- Gauntlets of the Ancient Shadowmoon
+				i(34346),	-- Mounting Vengeance
+				i(34183),	-- Shivering Felspine
+				i(34351),	-- Tranquil Majesty Wraps
+				i(34348),	-- Wand of Cleansing Light
+				i(34347),	-- Wand of the Demonsoul
+				i(35733),	-- Ring of Harmonic Beauty
+				i(32227),	-- Crimson Spinel
+				i(32228),	-- Empyrean Sapphire
+				i(32229),	-- Lionseye
+				i(32231),	-- Pyrestone
+				i(32230),	-- Shadowsong Amethyst
+				i(32249),	-- Seaspray Emerald
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(34664, {	-- Sunmote
 					["crs"] = {
 						24850,	-- Kalecgos
 						24892,	-- Sathrovarr the Corruptor
@@ -842,20 +227,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						25741,	-- M'uru
 						25315,	-- Kil'jaeden
 					},
-				},
-				i(32227),	-- Crimson Spinel
-				i(32228),	-- Empyrean Sapphire
-				i(32229),	-- Lionseye
-				i(32231),	-- Pyrestone
-				i(32230),	-- Shadowsong Amethyst
-				i(32249),	-- Seaspray Emerald
+				}),
 			}),
 			e(1591, {	-- Kalecgos
 				["crs"] = {
 					24850,	-- Kalecgos
 					24892,	-- Sathrovarr the Corruptor
 				},
-				["g"] = {
+				["groups"] = {
 					i(34848),	-- Bracers of the Forgotten Conqueror
 					i(34851),	-- Bracers of the Forgotten Protector
 					i(34852),	-- Bracers of the Forgotten Vanquisher
@@ -870,8 +249,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			e(1592, {	-- Brutallus
 				["creatureID"] = 24882,
-				["g"] = {
-					i(122113),	-- Sunblade Rune of Activation (PET!)
+				["groups"] = {
+					i(122113, {	-- Sunblade Rune of Activation (PET!)
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
+					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
 					i(34854),	-- Belt of the Forgotten Protector
 					i(34855),	-- Belt of the Forgotten Vanquisher
@@ -885,7 +269,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			e(1593, {	-- Felmyst
 				["creatureID"] = 25038,
-				["g"] = {
+				["groups"] = {
 					i(34856),	-- Boots of the Forgotten Conqueror
 					i(34857),	-- Boots of the Forgotten Protector
 					i(34858),	-- Boots of the Forgotten Vanquisher
@@ -902,8 +286,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					25165,	-- Sacrolash
 					25166,	-- Alythess
 				},
-				["g"] = {
-					i(122115),	-- Servant's Bell (PET!)
+				["groups"] = {
+					i(122115, {	-- Servant's Bell (PET!)
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
+					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
 					i(34854),	-- Belt of the Forgotten Protector
 					i(34855),	-- Belt of the Forgotten Vanquisher
@@ -941,11 +330,21 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					25840,	-- Entropius
 					25741,	-- M'uru
 				},
-				["g"] = {
+				["groups"] = {
 					i(175160, {	-- Holy Relic
 						["races"] = { VULPERA },	-- part of Vulpera's "Bag of Tricks" racial.  TODO: figure out if there's a way to track its collection status
+						["questID"] = 59036,
+						["timeline"] = {
+							"created 8.3.0.33115",
+							"added 8.3.0.33115"
+						},
 					}),
-					i(122114),	-- Void Collar (PET!)
+					i(122114, {	-- Void Collar (PET!)
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
+					}),
 					i(34214),	-- Muramasa
 					i(34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)
 					i(34232),	-- Fel Conqueror Raiments (MISSING IN ADVENTURE GUIDE)
@@ -971,11 +370,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			e(1596, {	-- Kil'jaeden
 				["creatureID"] = 25315,
-				["g"] = {
+				["groups"] = {
 					ach(698),	-- Sunwell Plateau
-					i(34334, {	-- Thori'dal, the Stars' Fury (LEGENDARY!)
-						ach(725),	-- Thori'dal, the Stars' Fury
+					ach(725, {	-- Thori'dal, the Stars' Fury
+						["description"] = "You must equip the bow to earn this achievement.",
+						["cost"] = {
+							{ "i", 34334, 1 },	-- Thori'dal, the Stars' Fury (LEGENDARY!)
+						},
 					}),
+					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render
 					i(34337),	-- Golden Staff of the Sin'dorei
 					i(34329),	-- Crux of the Apocalypse
@@ -1000,4 +403,4 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 		},
 	}),
-})};
+}))};

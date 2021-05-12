@@ -2707,6 +2707,9 @@ _.NeverImplemented =
 			i(35532, {	-- Plans: Swiftsteel Shoulders
 				["spellID"] = 0,
 			}),
+			i(35555, {	-- Plans: Sunblessed Breastplate
+				["spellID"] = 0,
+			}),
 			
 			-- Cataclysm
 			{	-- Plans: Cold-Forged Shank
