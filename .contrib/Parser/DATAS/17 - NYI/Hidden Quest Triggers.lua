@@ -4014,6 +4014,7 @@ _.HiddenQuestTriggers =
 		q(62586),	-- Triggered after restoring Lia the Curious
 		q(62960),	-- triggered after questID #62459, "Go Beyond!"
 		q(62415),	-- hitting Renown 39 as Night Fae
+		q(62806),	-- HQT for Arsenal: Winterborn Weapons
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended

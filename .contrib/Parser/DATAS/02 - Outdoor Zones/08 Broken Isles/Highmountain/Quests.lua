@@ -1035,7 +1035,6 @@ _.Zones =
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
 				q(38907),	-- Keepers of the Hammer
-				q(42689),	-- Knowing Our Enemy
 				q(41193),	-- Laying to Rest
 				q(44680),	-- Leading by Example
 				q(44059),	-- Legion Attacks
@@ -1064,7 +1063,6 @@ _.Zones =
 				q(42134),	-- Recruiting More Troops
 				q(42524),	-- Recruiting The Troops
 				q(41540),	-- Rendezvous with the Courier
-				q(42402),	-- Requesting Reinforcements
 				q(42408),	-- Required Reagents
 				q(38793),	-- Rethu's Experience
 				q(38791),	-- Rethu's Horn
@@ -1100,7 +1098,6 @@ _.Zones =
 				q(38787),	-- The Legend of Rethu Ironhorn
 				q(43182),	-- The Missing Vessel
 				q(44671),	-- The Muscle
-				q(42407),	-- The Nature of the Beast
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
 				q(40954),	-- The Unseen Path

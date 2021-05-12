@@ -228,7 +228,6 @@ _.ExpansionFeatures =
 								["cost"] = { { "c", 1813, 5000 } },
 							}),
 							i(184118, {	-- Arsenal: Winterborn Weapons
-								["questID"] = 62806,
 								["cost"] = { { "c", 1813, 30000 } },
 								["g"] = {
 									i(180075),	-- Winterborn Bow
