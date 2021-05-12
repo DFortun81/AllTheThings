@@ -16,7 +16,7 @@ _.Zones =
 				["cr"] = 179229,	-- Eye of Affliction
 			}),
 			pet(3120, {	-- Grip of Terror
-			--	["cr"] = ,	-- 
+				["cr"] = 179219,	-- Grip of Terror
 			}),
 			pet(3119, {	-- Lost Limb
 			--	["cr"] = ,	-- 

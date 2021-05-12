@@ -25,8 +25,6 @@ _.Zones =
 							crit(6),	-- Centurions March!
 						}),
 						ach(15034, {	-- Wings Against the Flames
-							crit(3),	-- No One Floats Down Here
-							crit(7),	-- United In Pride
 							crit(9),	-- Kill The Flame
 						}),
 						ach(15036, {	-- Rooting Out The Evil
@@ -125,6 +123,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63829, {	-- No One Floats Down Here
+								["provider"] = { "n", 177900 },	-- Xandria
+								["isDaily"] = true,
+								["coord"] = { 42.7, 44.7, THE_MAW },
+								["g"] = {
+									crit(3, {	-- No One Floats Down Here
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+								},
+							}),
 							q(63859, {	-- Saved By The Bells
 								["provider"] = { "n", 177900 },	-- Xandria
 								["isDaily"] = true,
@@ -162,6 +170,16 @@ _.Zones =
 											{ 35.9, 45.2, THE_MAW },
 										},
 										["cr"] = 178033,	-- Gubbins
+									}),
+								},
+							}),
+							q(63863, {	-- United In Pride
+								["provider"] = { "n", 178353 },	-- Pelodis
+								["isDaily"] = true,
+								["coord"] = { 42.9, 45.5, THE_MAW },
+								["g"] = {
+									crit(7, {	-- United In Pride
+										["achievementID"] = 15034,	-- Wings Against the Flames
 									}),
 								},
 							}),
