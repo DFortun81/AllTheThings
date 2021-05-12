@@ -2095,6 +2095,11 @@ _.HiddenQuestTriggers =
 		q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
+		q(44458),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 1
+		q(44459),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 2
+		q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
+		q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
+		q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
