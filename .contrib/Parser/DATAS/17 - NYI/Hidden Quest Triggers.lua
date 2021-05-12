@@ -4686,6 +4686,8 @@ _.HiddenQuestTriggers =
 		q(64148),	-- triggered when completing ##63621, "Pulling His Chain"
 		q(64280),	-- looting a Lost Razorwing Egg
 		q(64281),	-- looting a second Lost Razorwing Egg
+		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
+		q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
 		
 		-- Treasures of Korthia achievement
 	--	q(),	-- Desmotaeron treasure - Helsworn Chest
@@ -4699,6 +4701,7 @@ _.HiddenQuestTriggers =
 		q(64316),	-- Korthia repeatable treasure, Relic Cache
 		q(64317),	-- Korthia repeatable treasure, Relic Cache
 		q(64318),	-- Korthia repeatable treasure, Relic Cache / Pile of Bones
+		q(64309),	-- Korthia repeatable treasure, Relic Cache
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6)
 	}),

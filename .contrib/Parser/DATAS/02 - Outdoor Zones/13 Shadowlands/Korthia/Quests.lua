@@ -40,6 +40,11 @@ _.Zones =
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
+				q(64290, {	-- Collecting Research
+					["sourceQuests"] = { 64289 },	-- Picking Up Fragments
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
+				}),
 				q(63740, {	-- Consulting the Experts
 					["sourceQuests"] = {
 						63733,	-- Carving Out a Path
@@ -145,6 +150,16 @@ _.Zones =
 					["provider"] = { "n", 177227 },	-- Tal-Galan
 					["coord"] = { 63.8, 23.7, KORTHIA },
 				}),
+				q(64289, {	-- Picking Up Fragments
+				--	think this unlocked 'the archivist's codex' reputation, these quests may need to be in their own section depending on how extensive the faction/friendship is
+				--	["sourceQuests"] = {  },	-- TODO, was randomly added on 5/11 so unsure if it has specific SQs or rep requirements (i was at 1650/21000 Revered)
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
+					["g"] = { -- TODO: unsure if these rewards vary from class to class + if they don't, remainder of armor class rewards need to be added
+						i(186665),	-- Korthian Caretaker's Mitts
+						i(186664),	-- Korthian Caretaker's Sandals
+					},
+				}),
 				q(63759, {	-- Redirect the Search
 					["sourceQuests"] = {
 						63757,	-- Looting the Looters
@@ -189,6 +204,11 @@ _.Zones =
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 63.1, 25.3, KORTHIA },
+				}),
+				q(64438, {	-- The Fruits of Research
+					["sourceQuests"] = { 64290 },	-- Collecting Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
 				}),
 				q(63705, {	-- The Knowledge Keepers
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets

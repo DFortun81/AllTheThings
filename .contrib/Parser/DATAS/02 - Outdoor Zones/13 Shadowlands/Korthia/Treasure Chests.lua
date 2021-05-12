@@ -46,6 +46,18 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369327, {	-- Invasive Mawshroom
+					["questID"] = 64351,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 34.8, 41.0, KORTHIA },
+				}),
+				o(369329, {	-- Invasive Mawshroom
+					["questID"] = 64354,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 53.7, 37.9, KORTHIA },
+				}),
+				o(369330, {	-- Invasive Mawshroom
+					["questID"] = 64355,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 45.6, 34.3, KORTHIA },
+				}),
 				o(369172, {	-- Lost Memento
 				--	["questID"] = 64238,
 					["coord"] = { 52.9, 14.7, KORTHIA },
@@ -54,6 +66,23 @@ _.Zones =
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
 					},
+				}),
+				o(369341, {	-- Mawsworn Cache
+					["questID"] = 64364,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 56.4, 69.5, KORTHIA },
+				}),
+				o(369334, {	-- Nest of Unusual Materials
+					["questID"] = 64359,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 42.4, 54.8, KORTHIA },
+				}),
+				o(369335, {	-- Nest of Unusual Materials
+					["description"] = "Climb across the tree to reach the nest.",
+					["questID"] = 64360,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 52.4, 43.8, KORTHIA },
+				}),
+				o(369337, {	-- Nest of Unusual Materials
+					["questID"] = 64362,	-- TODO: unsure if repeatable or daily
+					["coord"] = { 52.3, 72.7, KORTHIA },
 				}),
 				o(369232, {	-- Offering Box
 					["description"] = "To open the treasure, climb up the outside of the building and loot the |cFFFFFFFFSmall Offering Key|r at |cFFFFFFFF43.5 67.5|r.",

@@ -9,6 +9,9 @@ _.GearSets =
 		["g"] = {
 		-- TODO: someone smarter than me should symlink these to all 5 war chests
 		-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
+			f(3, {	-- Cloaks
+				i(185905),	-- Vault Guardian's Drape*
+			}),
 			f(4, {	-- Cloth
 				i(185861),	-- Korthian Caretaker's Bindings
 				i(185860),	-- Korthian Caretaker's Cinch*
@@ -17,10 +20,10 @@ _.GearSets =
 				i(185857),	-- Korthian Caretaker's Handwraps*
 				i(185859),	-- Korthian Caretaker's Leggings*
 				i(186670),	-- Korthian Caretaker's Mantle
-				i(186665),	-- Korthian Caretaker's Mitts
+				i(186665),	-- Korthian Caretaker's Mitts*
 				i(186667),	-- Korthian Caretaker's Pantaloons
 				i(185855),	-- Korthian Caretaker's Robes
-				i(186664),	-- Korthian Caretaker's Sandals
+				i(186664),	-- Korthian Caretaker's Sandals*
 				i(186668),	-- Korthian Caretaker's Sash
 				i(185886),	-- Korthian Caretaker's Shoulderpads*
 				i(185856),	-- Korthian Caretaker's Slippers

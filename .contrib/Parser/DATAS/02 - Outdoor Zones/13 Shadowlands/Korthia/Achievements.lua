@@ -18,6 +18,21 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(15107, {	-- Conquering Korthia
+					crit(1),	-- Dominated Protector
+					crit(2),	-- Hunting the Hunter
+					crit(3),	-- Torgllun, Lord of Shades - maw, think it's connected to a specific tormentor of torghast event, replaces cyrixia
+					crit(5),	-- Deomen the Vortex - maw, in desmotaeron, didn't have a questID when i killed it, will add later
+					crit(8),	-- Assault Supply Carriage [NYI]
+					crit(10),	-- Guard Orguluus
+					crit(11),	-- Screaming Shade - korthia (44.6, 42.9) but requires a currently inaccessible phase to engage in combat
+					crit(12),	-- Silent Soulstalker
+					crit(13),	-- Deadsoul Hatcher
+					crit(14),	-- Chamber of Knowledge
+					crit(15),	-- Chamber of Wisdom
+					crit(16),	-- Blinding Shadow
+					crit(23),	-- Towering Exterminator
+				}),
 				ach(15099, {	-- Treasures of Korthia
 					crit(2),	-- Forgotten Feather
 					crit(6),	-- Displaced Relic

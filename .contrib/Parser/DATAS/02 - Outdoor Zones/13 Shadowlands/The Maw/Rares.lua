@@ -583,6 +583,19 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179805, {	-- Traitor Balthier
+					["questID"] = 64258,	-- TODO: also 64439, not sure which is first-time ID
+					["isDaily"] = true,
+					["coords"] = {	-- TODO: the first few times i saw it, it was up on a ledge, but then it was down on the lowest level, so i'm not sure if it can spawn on multiple levels/needs additional coords or if these coords need to be changed
+						{ 67.5, 48.3, THE_MAW },
+						{ 68.8, 45.5, THE_MAW },
+					},
+					["g"] = {
+						crit(7, {	-- Traitor Balthier
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
 				n(173086, {	-- Valis the Cruel
 					["description"] = "Click the runes in the correct order.",
 					["questID"] = 63387,
@@ -612,6 +625,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 66.7, 42.4, THE_MAW },
 					["g"] = {
+						crit(6, {	-- Ylva, Mate of Guarm
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
 						ach(14943, {	-- Guarmageddon
 							["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.",
 							["coords"] = {
