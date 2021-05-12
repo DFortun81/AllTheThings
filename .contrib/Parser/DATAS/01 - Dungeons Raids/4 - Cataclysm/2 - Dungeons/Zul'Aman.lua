@@ -59,57 +59,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								24138,	-- Tamed Amani Crocolisk
 							},
 						}),
-						i(33865, {	-- Amani Hex Stick
-							n(24396, { 	-- Forest Frog
-								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
-								["groups"] = {
-									i(33993),	-- Mojo (PET!)
-									ach(5761, {	-- Hex Mix
-										crit(1, {	-- Rosa saved.
-											["provider"] = { "n", 52905 },	-- Rosa
-										}),
-										crit(2, {	-- Eulinda saved.
-											["provider"] = { "n", 52914 },	-- Eulinda
-										}),
-										crit(3, {	-- Lenzo saved.
-											["provider"] = { "n", 52917 },	-- Lenzo
-										}),
-										crit(4, {	-- Melasong saved.
-											["provider"] = { "n", 52916 },	-- Melasong
-										}),
-										crit(5, {	-- Harald saved.
-											["provider"] = { "n", 52915 },	-- Harald
-											["g"] = {
-												i(33926, {	-- Sealed Scroll Case
-													["description"] = "Can contain profession recipes."
-												})
-											}
-										}),
-										crit(6, {	-- Relissa saved.
-											["provider"] = { "n", 52912 },	-- Relissa
-										}),
-										crit(7, {	-- Kaldrick saved.
-											["provider"] = { "n", 52918 },	-- Kaldrick
-										}),
-										crit(8, {	-- Arinoth saved.
-											["provider"] = { "n", 52919 },	-- Arinoth
-										}),
-										crit(9, {	-- Micah saved.
-											["provider"] = { "n", 52910 },	-- Micah
-										}),
-										crit(10, {	-- Tyllan saved.
-											["provider"] = { "n", 52909 },	-- Tyllan
-										}),
-										crit(11, {	-- Mawago saved.
-											["provider"] = { "n", 52920 },	-- Mawago
-										}),
-										crit(12, {	-- Melissa saved.
-											["provider"] = { "n", 52947 },	-- Melissa
-										}),
-									}),
-								},
-							}),
-						}),
+						i(33865),	-- Amani Hex Stick
 						i(69797, {	-- Charmbinder Grips
 							["crs"] = {
 								23584,	-- Amani Bear
@@ -156,6 +106,58 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 						i(69799),	-- Quickfinger Ring
+					}),
+					n(24396, { 	-- Forest Frog
+						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
+						["cost"] = {
+							{ "i", 33865, 1 },	-- Amani Hex Stick
+						},
+						["groups"] = {
+							i(33993),	-- Mojo (PET!)
+							ach(5761, {	-- Hex Mix
+								crit(1, {	-- Rosa saved.
+									["provider"] = { "n", 52905 },	-- Rosa
+								}),
+								crit(2, {	-- Eulinda saved.
+									["provider"] = { "n", 52914 },	-- Eulinda
+								}),
+								crit(3, {	-- Lenzo saved.
+									["provider"] = { "n", 52917 },	-- Lenzo
+								}),
+								crit(4, {	-- Melasong saved.
+									["provider"] = { "n", 52916 },	-- Melasong
+								}),
+								crit(5, {	-- Harald saved.
+									["provider"] = { "n", 52915 },	-- Harald
+									["g"] = {
+										i(33926, {	-- Sealed Scroll Case
+											["description"] = "Can contain profession recipes."
+										})
+									}
+								}),
+								crit(6, {	-- Relissa saved.
+									["provider"] = { "n", 52912 },	-- Relissa
+								}),
+								crit(7, {	-- Kaldrick saved.
+									["provider"] = { "n", 52918 },	-- Kaldrick
+								}),
+								crit(8, {	-- Arinoth saved.
+									["provider"] = { "n", 52919 },	-- Arinoth
+								}),
+								crit(9, {	-- Micah saved.
+									["provider"] = { "n", 52910 },	-- Micah
+								}),
+								crit(10, {	-- Tyllan saved.
+									["provider"] = { "n", 52909 },	-- Tyllan
+								}),
+								crit(11, {	-- Mawago saved.
+									["provider"] = { "n", 52920 },	-- Mawago
+								}),
+								crit(12, {	-- Melissa saved.
+									["provider"] = { "n", 52947 },	-- Melissa
+								}),
+							}),
+						},
 					}),
 					n(-78, {	-- Timed Events
 						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
