@@ -58,12 +58,22 @@ _.ExpansionFeatures =
 									follower(1259),	-- Pelagos
 								},
 							}),
-							q(60175, {    -- Adventurer: Nemea
+							q(61859, {    -- Adventurer: Nemea
+								["sourceQuests"] = { 58103 },    -- Pride or Unit
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 64.8, 16.4, BASTION },
-								["description"] = "Becomes available at Renown 4.",
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["description"] = "Becomes available at Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 								["g"] = {
-								--	follower(???),	-- Nemea
+									follower(1270),	-- Nemea
+								},
+							}),
+							q(61860, {	-- Adventurer: Pelodis
+								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["description"] = "Becomes available at Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
+								["g"] = {
+									follower(1271),	-- Pelodis
 								},
 							}),
 							q(61861, {	-- Adventurer: Sika
@@ -122,15 +132,6 @@ _.ExpansionFeatures =
 							["description"] = "Becomes available at Renown 38.",
 							["g"] = {
 								follower(1274),	-- Disciple Kosmas
-							},
-						}),
-						q(61860, {	-- Adventurer: Pelodis
-							["sourceQuests"] = { 58103 },    -- Pride or Unit
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 4.",
-							["g"] = {
-								follower(1271),	-- Pelodis
 							},
 						}),
 					}),

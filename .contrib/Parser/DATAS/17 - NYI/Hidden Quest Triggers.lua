@@ -2025,6 +2025,7 @@ _.HiddenQuestTriggers =
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
 		q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
 		q(44391),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 1
 		q(44392),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 2
 		q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3

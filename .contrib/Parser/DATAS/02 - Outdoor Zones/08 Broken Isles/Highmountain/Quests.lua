@@ -1003,7 +1003,6 @@ _.Zones =
 				q(39994),	-- Crab Rider Grmlrml
 				q(41241),	-- Cursed Queenfish Needed
 				q(45392),	-- Dark Memento
-				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
 				q(45551),	-- Devastating Effects
 				q(40414),	-- Devouring Darkness
@@ -1028,7 +1027,6 @@ _.Zones =
 				q(42286),	-- Houndmaster Stroxis
 				q(40136),	-- Immaculate Stonehide Leather
 				q(42659),	-- In Defense of Dalaran
-				q(42405),	-- Informing Our Allies
 				q(41047),	-- Infused with Power
 				q(42376),	-- Inquisitor Tivos
 				q(43957),	-- Jade Darkhaven
@@ -1036,7 +1034,6 @@ _.Zones =
 				q(39989),	-- Keepers of the Hammer
 				q(38907),	-- Keepers of the Hammer
 				q(41193),	-- Laying to Rest
-				q(44680),	-- Leading by Example
 				q(44059),	-- Legion Attacks
 				q(42385),	-- Lending a Hand
 				q(38785),	-- Living Leystone Sample
@@ -1052,7 +1049,6 @@ _.Zones =
 				q(40955),	-- Oath of Service
 				q(40953),	-- On Eagle's Wings
 				q(44366),	-- One Last Adventure
-				q(42655),	-- Ore Under the Sea
 				q(39435),	-- Oubdob da Smasher
 				q(42381),	-- Ox'iloth
 				q(46796),	-- Paragon of Highmountain
@@ -1063,7 +1059,6 @@ _.Zones =
 				q(42134),	-- Recruiting More Troops
 				q(42524),	-- Recruiting The Troops
 				q(41540),	-- Rendezvous with the Courier
-				q(42408),	-- Required Reagents
 				q(38793),	-- Rethu's Experience
 				q(38791),	-- Rethu's Horn
 				q(38789),	-- Rethu's Journal
@@ -1096,7 +1091,6 @@ _.Zones =
 				q(38513),	-- The Highmountain Smiths
 				q(38888),	-- The Highmountain Tauren
 				q(38787),	-- The Legend of Rethu Ironhorn
-				q(43182),	-- The Missing Vessel
 				q(44671),	-- The Muscle
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic

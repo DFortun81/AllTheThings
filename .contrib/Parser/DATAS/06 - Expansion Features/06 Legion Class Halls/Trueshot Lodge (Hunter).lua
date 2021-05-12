@@ -207,7 +207,12 @@ _.ExpansionFeatures =
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(45392),	-- Dark Memento
-					q(42654),	-- Darkheart Thicket: Nightmare Oak
+					q(42654, {	-- Darkheart Thicket: Nightmare Oak
+						["sourceQuests"] = { 42405 },	-- Informing Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108456 },	-- Halduron Brightwing
+						["coord"] = { 43.1, 6.1, 739 },
+					}),
 					q(45551),	-- Devastating Effects
 					q(45555, {	-- Felbound Beasts
 						["classes"] = { HUNTER },
@@ -269,7 +274,12 @@ _.ExpansionFeatures =
 					q(42659, {	-- In Defense of Dalaran
 						i(139707),	-- Hauberk of the Unseen Path
 					}),
-					q(42405),	-- Informing Our Allies
+					q(42405, {	-- Informing Our Allies
+						["sourceQuests"] = { 42402 },	-- Requesting Reinforcements
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(41047),	-- Infused with Power
 					q(46023, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -283,7 +293,12 @@ _.ExpansionFeatures =
 					q(46130, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(44680),	-- Leading by Example
+					q(44680, {	-- Leading by Example
+						["sourceQuests"] = { 42405 },	-- Informing Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42385, {	-- Lending a Hand
 						["sourceQuests"] = { 42384 },	-- Scouting Reports
 						["classes"] = { HUNTER },
@@ -323,7 +338,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
-					q(42655),	-- Ore Under the Sea
+					q(42655, {	-- Ore Under the Sea
+						["sourceQuests"] = { 42405 },	-- Informing Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108456 },	-- Halduron Brightwing
+						["coord"] = { 43.1, 6.1, 739 },
+					}),
 					q(44090),	-- Pledge of Loyalty
 					q(41542, {	-- Preparation for the Hunt
 						["classes"] = { HUNTER },
@@ -364,7 +384,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
-					q(42408),	-- Required Reagents
+					q(42408, {	-- Required Reagents
+						["sourceQuests"] = { 42405 },	-- Informing Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
+						["coord"] = { 46.4, 34.8, 739 },
+					}),
 					q(40419, {	-- Rescue Mission
 						["sourceQuests"] = {
 							40400,	-- Clandestine Operation (A)
@@ -460,7 +485,12 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- D'Bynn
 					}),
-					q(43182),	-- The Missing Vessel
+					q(43182, {	-- The Missing Vessel
+						["sourceQuests"] = { 42405 },	-- Informing Our Allies
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107966 },	-- Archmage Khadgar
+						["coord"] = { 42.9, 25.4, 739 },
+					}),
 					q(42407, {	-- The Nature of the Beast
 						["sourceQuests"] = { 42406 },	-- To Tame the Beast
 						["classes"] = { HUNTER },
