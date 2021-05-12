@@ -2,8 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { "removed 7.1.0.1233" };
-
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 	inst(745, {	-- Karazhan (Raid)
 		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
 		["maps"] = {
@@ -27,11 +26,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		-- #if ANYCLASSIC
-		["lvl"] = 68,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #endif
+		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
 			ach(960),	-- The Violet Eye
 			n(FACTIONS, {
@@ -1092,4 +1087,4 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 		},
 	}),
-})};
+}))};

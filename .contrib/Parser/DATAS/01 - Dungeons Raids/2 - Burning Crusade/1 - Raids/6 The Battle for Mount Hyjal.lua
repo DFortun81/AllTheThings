@@ -1,29 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2,	-- Burning Crusade
--- #if ANYCLASSIC
-bubbleDown({ ["u"] = TBC_PHASE_THREE },
--- #endif
-{
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 	inst(750, { 	-- The Battle for Mount Hyjal
 		["mapID"] = THE_BATTLE_FOR_MOUNT_HYJAL,
 		["coords"] = {
 			{ 36.0, 16.1, CAVERNS_OF_TIME },	-- raid entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT, Tanaris
 		},
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		-- #if ANYCLASSIC
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10445,	-- The Vials of Eternity
 		-- #endif
-		["lvl"] = 70,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #else
-		["lvl"] = 68,
-		-- #endif
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(FACTIONS, {
 				faction(990, {	-- The Scale of the Sands
@@ -1360,8 +1350,4 @@ bubbleDown({ ["u"] = TBC_PHASE_THREE },
 			})
 		},
 	}),
-}
--- #if ANYCLASSIC
-)
--- #endif
-)};
+}))};

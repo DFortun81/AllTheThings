@@ -4,7 +4,6 @@
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 	inst(751, {	-- The Black Temple
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
-		["isRaid"] = true,
 		["maps"] = {
 			THE_BLACK_TEMPLE,
 			339,	-- Karabor Sewers
@@ -16,6 +15,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 			346,	-- Temple Summit
 			759,	-- Black Temple (used in DH scenario for "Confrontation at the Black Temple" quest)
 		},
+		["isRaid"] = true,
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10985,	-- A Distraction for Akama
 		-- #endif
