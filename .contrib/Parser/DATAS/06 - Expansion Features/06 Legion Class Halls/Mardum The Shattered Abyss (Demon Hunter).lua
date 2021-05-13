@@ -160,6 +160,24 @@ _.ExpansionFeatures =
 						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
 					}),
+					q(44223, {	-- Champion Armaments
+						["coord"] = { 60.0, 43.8, 720 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 110433 },	-- Slitesh
+						["description"] = "Only available if you you have the |cFFFFD700Fel Armaments|r order hall upgrade.",
+					}),
+					q(42653, {	-- Champion: Akama
+						["sourceQuests"] = { 
+							39741,	-- Into Our Ranks (Altruis)
+							42665,	-- Into Our Ranks (Kayn)
+						},
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 57.9, 57.4, 720 },
+						["provider"] = { "n", 108239 },	-- Akama
+						["g"] = {
+							follower(718),	-- Champion: Akama
+						},
+					}),
 					q(43184, {	-- Champion: Allari the Souleater
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
@@ -564,9 +582,9 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42802, {	-- Securing Mardum
-						["sourceQuests"] = {
-							42673,	-- Champion: Kor'vas Bloodthorn
-							42664,	-- Champion: Shade of Akama
+						["sourceQuests"] = { 
+							39741,	-- Into Our Ranks (Altruis)
+							42665,	-- Into Our Ranks (Kayn)
 						},
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.5, 50.6, 720 },
@@ -721,9 +739,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41221 },	-- Return to Mardum
 					}),
 					q(42131, {	-- Unexpected Visitors
-						["sourceQuests"] = {
-							42673,	-- Champion: Kor'vas Bloodthorn
-							42664,	-- Champion: Shade of Akama
+						["sourceQuests"] = { 
+							39741,	-- Into Our Ranks (Altruis)
+							42665,	-- Into Our Ranks (Kayn)
 						},
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.5, 50.6, 720 },
@@ -778,13 +796,6 @@ _.ExpansionFeatures =
 
 
 					-- unconfirmed/unsourced
-					q(44223),	-- Champion Armaments
-					q(42653, {	-- Champion: Akama
-						["provider"] = { "n", 108239 },	-- Akama
-						["g"] = {
-							follower(718),	-- Champion: Akama
-						},
-					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(44226),	-- Fate Favors Us
 					q(45994, {	-- Investigate the Broken Shore

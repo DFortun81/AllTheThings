@@ -75,9 +75,12 @@ _.Zones =
 						q(43517),	-- Fallen Power
 						q(43518),	-- Tempering Darkness
 						q(43519),	-- Lucid Strength
-						--q(43581),	-- The Wisdom of Patience NOTE: This quest was removed when Emerald Nightmare opened
-						q(43520),	-- In Nightmares
-						q(43521),	-- Essence of Power
+						q(43581, {	-- The Wisdom of Patience
+							-- NOTE: This quest was removed when Emerald Nightmare opened
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(43520),	-- The Emerald Nightmare: In Nightmares
+						q(43521),	-- The Emerald Nightmare: Essence of Power
 						q(43522),	-- Essential Consumption
 						q(43523, {	-- Repaid Debt
 							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar."
@@ -85,11 +88,24 @@ _.Zones =
 						q(43527, {	-- Saving the Guard
 							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar."
 						}),
+						q(43937),	-- Seeking Refuge
 						q(43938),	-- Focusing Our Efforts
 						q(40673),	-- Lost Knowledge
-						q(43525),	-- Vault of the Wardens: Borrowing Without Asking
-						q(40675),	-- The Arcway: Rite of the Captain
-						q(43524),	-- Court of Stars: Literary Perfection
+						q(43525, {	-- Vault of the Wardens: Borrowing Without Asking
+							["sourceQuests"] = { 40673 },	-- Lost Knowledge
+							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
+							["coord"] = { 37.8, 47.3, 680 },
+						}),
+						q(40675, {	-- The Arcway: Rite of the Captain
+							["sourceQuests"] = { 40673 },	-- Lost Knowledge
+							["provider"] = { "n", 101080 },	-- Syrana Starweaver
+							["coord"] = { 37.9, 47.3, 680 },
+						}),
+						q(43524, {	-- Court of Stars: Literary Perfection
+							["sourceQuests"] = { 40673 },	-- Lost Knowledge
+							["provider"] = { "n", 101082 },	-- Lothrius Mooncaller
+							["coord"] = { 37.9, 47.4, 680 },
+						}),
 						q(40678),	-- Twisted Power
 						q(43526),	-- A True Test
 						q(40603),	-- Seeking the Valkyra
