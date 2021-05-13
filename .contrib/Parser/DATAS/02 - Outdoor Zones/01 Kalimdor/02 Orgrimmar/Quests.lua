@@ -1095,17 +1095,6 @@ _.Zones =
 					["coord"] = { 49.4, 59.2, 85 },
 					["races"] = { GOBLIN },
 				}),
-				q(7491,  {	-- For All To See
-					["provider"] = { "n", 4949 },	-- Thrall
-					["coord"] = { 48.6, 71.0, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
-						un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
-						un(REMOVED_FROM_GAME, i(18404)),	-- Onyxia Tooth Pendant
-					},
-				}),
 				q(8367,  {	-- For Great Honor
 					["provider"] = { "n", 15350 },	-- Horde Warbringer
 					["races"] = HORDE_ONLY,

@@ -2119,6 +2119,7 @@ _.ExpansionFeatures =
 									i(181121),	-- Soulbreaker's Burnished Vestments
 									i(181128),	-- Soulbreaker's Burnished Wraps
 									i(183972),	-- Forgotten Venthyr Winged Kris
+									i(183973),	-- Lost Winged Ritual Kris
 									i(183976),	-- Rogue Researcher's Dagger
 									i(183978),	-- Silver-Etched Hopebreaker Dirk
 								}),

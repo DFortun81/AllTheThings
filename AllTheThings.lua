@@ -3582,7 +3582,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.working = working;
-	group.isSearchResult = true;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
 	-- else print("Cached Search",search,paramA,paramB,#group.info); end
@@ -3591,6 +3590,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
 		-- print("TopLevelSearch-Done",search)
+		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 	end
 	return group;
@@ -3619,17 +3619,28 @@ app.BuildCrafted = function(item)
 			for recipeID,info in pairs(reagentCache[1]) do
 				local craftedItemID = info[1];
 				-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
-				clone = nil;
-				-- print("recipeID",recipeID);
-				local searchRecipes = app.SearchForField("spellID", recipeID);
-				if searchRecipes and #searchRecipes > 0 then
-					local recipe = searchRecipes[1];
-					local skillID = GetRelativeValue(recipe, "skillID");
-					-- print(recipeID,"requires",skillID);
+				-- TODO: review how this can be nil
+				if craftedItemID then
+					clone = nil;
+					-- print("recipeID",recipeID);
+					local searchRecipes = app.SearchForField("spellID", recipeID);
+					if searchRecipes and #searchRecipes > 0 then
+						local recipe = searchRecipes[1];
+						local skillID = GetRelativeValue(recipe, "skillID");
+						-- print(recipeID,"requires",skillID);
 
-					-- ensure this character can craft the recipe
-					if skillID then
-						if knownSkills and knownSkills[skillID] then
+						-- ensure this character can craft the recipe
+						if skillID then
+							if knownSkills and knownSkills[skillID] then
+								if not app.BuildCrafted_IncludedItems[craftedItemID] then
+									-- track the added craftedItemID regardless of if an item was added for it
+									app.BuildCrafted_IncludedItems[craftedItemID] = true;
+									-- find a reference to the item in the DB and add it to the group
+									clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
+								end
+							end
+						else
+						-- recipe without any skill requirement? weird...
 							if not app.BuildCrafted_IncludedItems[craftedItemID] then
 								-- track the added craftedItemID regardless of if an item was added for it
 								app.BuildCrafted_IncludedItems[craftedItemID] = true;
@@ -3637,41 +3648,7 @@ app.BuildCrafted = function(item)
 								clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 							end
 						end
-					else
-					-- recipe without any skill requirement? weird...
-						if not app.BuildCrafted_IncludedItems[craftedItemID] then
-							-- track the added craftedItemID regardless of if an item was added for it
-							app.BuildCrafted_IncludedItems[craftedItemID] = true;
-							-- find a reference to the item in the DB and add it to the group
-							clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-						end
 					end
-				end
-				if clone then
-					-- use the crafting count as the total/progress
-					-- clone.matCount = count;-- * (item.matCount or 1);
-					-- clone.total = clone.collectible and clone.matCount;
-					-- clone.progress = clone.collectible and clone.collected and clone.matCount;
-					if not clone.g then
-						clone.total = nil;
-						clone.progress = nil;
-					end
-
-					if not item.g then item.g = { clone };
-					else MergeObject(item.g, clone); end
-				end
-			end
-		-- item is BoE
-		else
-			-- Can otherwise simply iterate over the set of crafted items and add them
-			for craftedItemID,count in pairs(reagentCache[2]) do
-				-- print(itemID,"x",count,"=>",craftedItemID);
-				clone = nil;
-				if not app.BuildCrafted_IncludedItems[craftedItemID] then
-					-- track the added craftedItemID regardless of if an item was added for it
-					app.BuildCrafted_IncludedItems[craftedItemID] = true;
-					-- find a reference to the item in the DB and add it to the group
-					clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
 					if clone then
 						-- use the crafting count as the total/progress
 						-- clone.matCount = count;-- * (item.matCount or 1);
@@ -3684,6 +3661,35 @@ app.BuildCrafted = function(item)
 
 						if not item.g then item.g = { clone };
 						else MergeObject(item.g, clone); end
+					end
+				end
+			end
+		-- item is BoE
+		else
+			-- Can otherwise simply iterate over the set of crafted items and add them
+			for craftedItemID,count in pairs(reagentCache[2]) do
+				-- print(itemID,"x",count,"=>",craftedItemID);
+				-- TODO: review how this can be nil
+				if craftedItemID then
+					clone = nil;
+					if not app.BuildCrafted_IncludedItems[craftedItemID] then
+						-- track the added craftedItemID regardless of if an item was added for it
+						app.BuildCrafted_IncludedItems[craftedItemID] = true;
+						-- find a reference to the item in the DB and add it to the group
+						clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
+						if clone then
+							-- use the crafting count as the total/progress
+							-- clone.matCount = count;-- * (item.matCount or 1);
+							-- clone.total = clone.collectible and clone.matCount;
+							-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+							if not clone.g then
+								clone.total = nil;
+								clone.progress = nil;
+							end
+
+							if not item.g then item.g = { clone };
+							else MergeObject(item.g, clone); end
+						end
 					end
 				end
 			end
@@ -8880,11 +8886,11 @@ local questFields = {
 			end
 		end
 		if t.isWorldQuest then
-			return "Interface\\GossipFrame\\DailyActiveQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questind";
 		elseif t.repeatable then
-			return "Interface\\GossipFrame\\DailyQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questd";
 		else
-			return "Interface\\GossipFrame\\AvailableQuestIcon";
+			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Quest";
 		end
 	end,
 	["hasIndicator"] = function(t)
@@ -11332,7 +11338,7 @@ function app:CreateMiniListForGroup(group)
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone/search initially so as to not let popout operations modify the source data
-		if not group.isSearchResult then
+		if not group.isBaseSearchResult then
 			-- make a search for this group if it is an item/currency and not already a container for things
 			if not group.g and (group.itemID or group.currencyID) then
 				local cmd = group.key .. ":" .. group[group.key];
@@ -12775,7 +12781,7 @@ RowOnEnter = function (self)
 						bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID then
-								if isDebugMode or (app.RecursiveClassAndRaceFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
+								if isDebugMode or (not IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
 									if sq.sourceQuests then
 										-- Always prefer the source quest with additional source quest data.
 										bestMatch = sq;

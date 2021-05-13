@@ -59,57 +59,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								24138,	-- Tamed Amani Crocolisk
 							},
 						}),
-						i(33865, {	-- Amani Hex Stick
-							n(24396, { 	-- Forest Frog
-								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
-								["groups"] = {
-									i(33993),	-- Mojo (PET!)
-									ach(5761, {	-- Hex Mix
-										crit(1, {	-- Rosa saved.
-											["provider"] = { "n", 52905 },	-- Rosa
-										}),
-										crit(2, {	-- Eulinda saved.
-											["provider"] = { "n", 52914 },	-- Eulinda
-										}),
-										crit(3, {	-- Lenzo saved.
-											["provider"] = { "n", 52917 },	-- Lenzo
-										}),
-										crit(4, {	-- Melasong saved.
-											["provider"] = { "n", 52916 },	-- Melasong
-										}),
-										crit(5, {	-- Harald saved.
-											["provider"] = { "n", 52915 },	-- Harald
-											["g"] = {
-												i(33926, {	-- Sealed Scroll Case
-													["description"] = "Can contain profession recipes."
-												})
-											}
-										}),
-										crit(6, {	-- Relissa saved.
-											["provider"] = { "n", 52912 },	-- Relissa
-										}),
-										crit(7, {	-- Kaldrick saved.
-											["provider"] = { "n", 52918 },	-- Kaldrick
-										}),
-										crit(8, {	-- Arinoth saved.
-											["provider"] = { "n", 52919 },	-- Arinoth
-										}),
-										crit(9, {	-- Micah saved.
-											["provider"] = { "n", 52910 },	-- Micah
-										}),
-										crit(10, {	-- Tyllan saved.
-											["provider"] = { "n", 52909 },	-- Tyllan
-										}),
-										crit(11, {	-- Mawago saved.
-											["provider"] = { "n", 52920 },	-- Mawago
-										}),
-										crit(12, {	-- Melissa saved.
-											["provider"] = { "n", 52947 },	-- Melissa
-										}),
-									}),
-								},
-							}),
-						}),
+						i(33865),	-- Amani Hex Stick
 						i(69797, {	-- Charmbinder Grips
 							["crs"] = {
 								23584,	-- Amani Bear
@@ -157,38 +107,80 @@ _.Instances = { tier(4, {	-- Cataclysm
 						}),
 						i(69799),	-- Quickfinger Ring
 					}),
-					n(-7777, {	-- Timed Events
+					n(24396, { 	-- Forest Frog
+						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
+						["cost"] = {
+							{ "i", 33865, 1 },	-- Amani Hex Stick
+						},
+						["groups"] = {
+							i(33993),	-- Mojo (PET!)
+							ach(5761, {	-- Hex Mix
+								crit(1, {	-- Rosa saved.
+									["provider"] = { "n", 52905 },	-- Rosa
+								}),
+								crit(2, {	-- Eulinda saved.
+									["provider"] = { "n", 52914 },	-- Eulinda
+								}),
+								crit(3, {	-- Lenzo saved.
+									["provider"] = { "n", 52917 },	-- Lenzo
+								}),
+								crit(4, {	-- Melasong saved.
+									["provider"] = { "n", 52916 },	-- Melasong
+								}),
+								crit(5, {	-- Harald saved.
+									["provider"] = { "n", 52915 },	-- Harald
+									["g"] = {
+										i(33926, {	-- Sealed Scroll Case
+											["description"] = "Can contain profession recipes."
+										})
+									}
+								}),
+								crit(6, {	-- Relissa saved.
+									["provider"] = { "n", 52912 },	-- Relissa
+								}),
+								crit(7, {	-- Kaldrick saved.
+									["provider"] = { "n", 52918 },	-- Kaldrick
+								}),
+								crit(8, {	-- Arinoth saved.
+									["provider"] = { "n", 52919 },	-- Arinoth
+								}),
+								crit(9, {	-- Micah saved.
+									["provider"] = { "n", 52910 },	-- Micah
+								}),
+								crit(10, {	-- Tyllan saved.
+									["provider"] = { "n", 52909 },	-- Tyllan
+								}),
+								crit(11, {	-- Mawago saved.
+									["provider"] = { "n", 52920 },	-- Mawago
+								}),
+								crit(12, {	-- Melissa saved.
+									["provider"] = { "n", 52947 },	-- Melissa
+								}),
+							}),
+						},
+					}),
+					n(-78, {	-- Timed Events
 						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
 						["groups"] = {
-							o(187021, {	-- Bakkalzu's Satchel
-								["model"] = 200351,
-								["g"] = {
-									i(69886),	-- Bag of Coins
-								},
+							n(-79, {	-- First Chest
+								i(69886),	-- Bag of Coins
 							}),
-							o(186648, {	-- Hazlek's Trunk
-								["model"] = 196982,
-								["g"] = {
-									i(69584),	-- Recovered Cloak of Frostheim
-									i(69587),	-- Chestplate of Hubris
-									i(69585),	-- Wristwraps of Madness
-									i(69586),	-- Two-Toed Boots
-									i(69588),	-- Skullcrusher Warboots
-								},
+							n(-80, {	-- Second Chest
+								i(69584),	-- Recovered Cloak of Frostheim
+								i(69587),	-- Chestplate of Hubris
+								i(69585),	-- Wristwraps of Madness
+								i(69586),	-- Two-Toed Boots
+								i(69588),	-- Skullcrusher Warboots
 							}),
-							o(186667, {	-- Norkani's Package
-								["model"] = 191107,
-								["g"] = {
-									i(69592),	-- Reforged Trollbane
-									i(69591),	-- Voodoo Hexblade
-									i(69593),	-- Battleplate of the Amani Empire
-									i(69590),	-- Mojo-Mender's Gloves
-									i(69589),	-- Leggings of Dancing Blades
-								},
+							n(-81, {	-- Third Chest
+								i(69592),	-- Reforged Trollbane
+								i(69591),	-- Voodoo Hexblade
+								i(69593),	-- Battleplate of the Amani Empire
+								i(69590),	-- Mojo-Mender's Gloves
+								i(69589),	-- Leggings of Dancing Blades
 							}),
-							o(186672, {	-- Kasha's Bag
+							n(-82, {	-- Final Chest
 								["description"] = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
-								["model"] = 200442,
 								["groups"] = {
 									ach(5858),	-- Bear-ly Made It
 									i(69747),	-- Amani Battle Bear (mount)

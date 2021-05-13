@@ -2025,11 +2025,16 @@ _.HiddenQuestTriggers =
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
 		q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
 		q(44391),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 1
 		q(44392),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 2
 		q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3
 		q(44394),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 4
 		q(44395),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 5
+		q(44333),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 1
+		q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
+		q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
+		q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
 
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
@@ -2095,6 +2100,11 @@ _.HiddenQuestTriggers =
 		q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
+		q(44458),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 1
+		q(44459),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 2
+		q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
+		q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
+		q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
@@ -4010,6 +4020,7 @@ _.HiddenQuestTriggers =
 		q(62586),	-- Triggered after restoring Lia the Curious
 		q(62960),	-- triggered after questID #62459, "Go Beyond!"
 		q(62415),	-- hitting Renown 39 as Night Fae
+		q(62806),	-- HQT for Arsenal: Winterborn Weapons
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -4233,6 +4244,7 @@ _.HiddenQuestTriggers =
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		q(60849),	-- When looting [Ledger of Souls] (173712)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+		q(62649),	-- triggered during 'Secret Service WQ'
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
 		q(60703),	-- triggered when looting Pristine Dredbat Fang

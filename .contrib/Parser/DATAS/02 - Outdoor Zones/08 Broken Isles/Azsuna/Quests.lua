@@ -814,7 +814,6 @@ _.Zones =
 				q(37908),	-- Inquisitor Ernstenbok
 				q(40556),	-- Jabrul Needs You
 				q(40873),	-- Keep Yer Powder Dry
-				q(42689),	-- Knowing Our Enemy
 				q(42691),	-- Leyworm Lure
 				q(38785),	-- Living Leystone Sample
 				q(43519),	-- Lucid Strength
@@ -865,7 +864,6 @@ _.Zones =
 				q(38963),	-- The Final Lesson?
 				q(45174),	-- The Hunt for Illidan Stormrage
 				q(41185),	-- The Keys to Success
-				q(42407),	-- The Nature of the Beast
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
 				q(41171),	-- The Reliquary Calls
@@ -874,7 +872,6 @@ _.Zones =
 				q(43581),	-- The Wisdom of Patience
 				q(37963),	-- Those Beyond Redemption
 				q(43489),	-- To Felblaze Ingress
-				q(42406),	-- To Tame the Beast
 				q(47064),	-- Tracking Quest
 				q(44081),	-- Treacherous Leyrunners
 				q(37649),	-- Treasure: Offerings for the Giants

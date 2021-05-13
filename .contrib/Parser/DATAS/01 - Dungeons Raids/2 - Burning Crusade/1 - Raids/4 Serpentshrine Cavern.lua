@@ -1,27 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2,	-- Burning Crusade
--- #if ANYCLASSIC
-bubbleDown({ ["u"] = TBC_PHASE_TWO },
--- #endif
-{
+_.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
 	inst(748, {	-- Serpentshrine Cavern
 		["mapID"] = SERPENTSHRINE_CAVERN,
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		-- #if ANYCLASSIC
-		-- #if BEFORE WRATH
-		["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
-		-- #endif
-		["lvl"] = 68,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #endif
 		["coords"] = {
 			{ 50.2, 41.0, ZANGARMARSH },	-- underwater entrance
 			{ 51.9, 32.9, ZANGARMARSH },	-- pipe entrance
 		},
+		-- #if BEFORE WRATH
+		["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
+		-- #endif
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
 			n(QUESTS, {
 				q(10944, {	-- The Secret Compromised
@@ -301,8 +293,4 @@ bubbleDown({ ["u"] = TBC_PHASE_TWO },
 			}),
 		},
 	}),
-}
--- #if ANYCLASSIC
-)
--- #endif
-)};
+}))};

@@ -290,22 +290,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(LEATHERWORKING, {
-					n(QUESTS, {
-						q(7497, {	-- The Journey Has Just Begun
-							["provider"] = { "n", 14394 },	-- Major Mattingly
-							["coord"] = { 67.2, 85.1, 84 },
-							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance (A)
-							["requireSkill"] = LEATHERWORKING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 60,
-							["g"] = {
-								recipe(19093),		-- Onyxia Scale Cloak
-								un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
-							},
-						}),
-					}),
-				}),
 			}),
 		}),
 	}),

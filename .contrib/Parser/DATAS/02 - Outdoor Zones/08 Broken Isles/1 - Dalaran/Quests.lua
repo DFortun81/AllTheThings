@@ -770,26 +770,6 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 105602 },	-- Vindicator Boros
 				}),
-				q(41009, {	-- Hunter to Hunter
-				--	these are possibly tied to specs?  this one is probably for BM hunters, quest text references Titanstrike
-					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["altQuests"] = { 40952, 41008 },	-- Hunter to Hunter
-					["provider"] = { "n", 106879 },	-- Grif Wildheart
-					["classes"] = { HUNTER },
-				}),
-				q(40952, {	-- Hunter to Hunter
-				--	probably for MM hunters, quest text references Thas'dorah
-					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["altQuests"] = { 41009, 41008 },	-- Hunter to Hunter
-					["provider"] = { "n", 102570 },	-- Vereesa Windrunner
-					["classes"] = { HUNTER },
-				}),
-				q(41008, {	-- Hunter to Hunter
-				--	TODO: verify whether or not this version actually exists so we can add provider/coords / figre out if these are truly spec-specific.  this one is probably for surv hunters, quest text references Talonclaw
-					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["altQuests"] = { 41009, 40952 },	-- Hunter to Hunter
-					["classes"] = { HUNTER },
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -946,15 +926,6 @@ _.Zones =
 					["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 118009 },	-- Maximillian of Northshire
-				}),
-				q(40953, {	-- On Eagle's Wings
-					["sourceQuests"] = {
-						40952,	-- Hunter to Hunter
-						41008,	-- Hunter to Hunter
-						41009,	-- Hunter to Hunter
-					},
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 102478 },	-- Emmarel Shadwarden
 				}),
 				q(41967, {	-- Out of the Darkness
 					["classes"] = { PRIEST },

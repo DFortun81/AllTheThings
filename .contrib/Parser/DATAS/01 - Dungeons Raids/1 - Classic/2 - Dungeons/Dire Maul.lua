@@ -41,13 +41,6 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
-							["g"] = {
-								un(REMOVED_FROM_GAME, q(7507)),	-- Furor's Compendium
-								un(REMOVED_FROM_GAME, q(7508)),	-- The Forging of Quel'Serrar
-								un(REMOVED_FROM_GAME, q(7509, {	-- The Forging of Quel'Serrar
-									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
-								})),
-							},
 						}),
 						q(7488, {	-- Lethtendris's Web
 							["u"] = REMOVED_FROM_GAME,
@@ -239,13 +232,6 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
-							["g"] = {
-								un(REMOVED_FROM_GAME, q(7507)),	-- Furor's Compendium
-								un(REMOVED_FROM_GAME, q(7508)),	-- The Forging of Quel'Serrar
-								un(REMOVED_FROM_GAME, q(7509, {	-- The Forging of Quel'Serrar
-									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
-								})),
-							},
 						}),
 						q(5525, {	-- Free Knot!
 							["u"] = REMOVED_FROM_GAME,
@@ -521,13 +507,6 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
-							["g"] = {
-								un(REMOVED_FROM_GAME, q(7507)),	-- Furor's Compendium
-								un(REMOVED_FROM_GAME, q(7508)),	-- The Forging of Quel'Serrar
-								un(REMOVED_FROM_GAME, q(7509, {	-- The Forging of Quel'Serrar
-									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
-								})),
-							},
 						}),
 						q(7505, {	-- Frost Shock and You
 							["u"] = REMOVED_FROM_GAME,

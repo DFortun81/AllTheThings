@@ -25,24 +25,16 @@ local legendary = function(itemID, creatureID)
 		-- #endif
 	end
 end;
-_.Instances = { tier(2,	-- Burning Crusade
--- #if ANYCLASSIC
-bubbleDown({ ["u"] = TBC_PHASE_TWO },
--- #endif
-{
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 	inst(749, { 	-- The Eye
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["mapID"] = TEMPEST_KEEP_THE_EYE,
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		-- #if ANYCLASSIC
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 13430,	-- Trial of the Naaru: Magtheridon
 		-- #endif
-		["lvl"] = 68,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #endif
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(QUESTS, {
 				q(11007, {	-- Kael'thas and the Verdant Sphere
@@ -314,8 +306,4 @@ bubbleDown({ ["u"] = TBC_PHASE_TWO },
 			}),
 		},
 	}),
-}
--- #if ANYCLASSIC
-)
--- #endif
-)};
+}))};

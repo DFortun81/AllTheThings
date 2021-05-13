@@ -637,10 +637,6 @@ _.Zones =
 				q(43268),	-- Tech It Up A Notch
 				q(44787),	-- The Bonemother
 				q(46777),	-- The Bounties of Legionfall
-				q(38990),	-- The Call of Icecrown
-				q(40987),	-- The Call of Vengeance
-				q(40935),	-- The Call of Vengeance
-				q(40740),	-- The Dead and the Damned
 				q(47127),	-- The Deceiver
 				q(47126),	-- The Deceiver
 				q(47129),	-- The Deceiver

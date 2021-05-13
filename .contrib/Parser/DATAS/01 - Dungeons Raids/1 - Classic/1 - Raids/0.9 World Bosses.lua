@@ -18,7 +18,6 @@ _.Instances = { tier(1, {	-- Classic
 				["lvl"] = 60,
 				["groups"] = {
 					i(18704, {	-- Mature Blue Dragon Sinew
-						["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
 						["classes"] = { HUNTER },
 					}),
 					i(19130),	-- Cold Snap

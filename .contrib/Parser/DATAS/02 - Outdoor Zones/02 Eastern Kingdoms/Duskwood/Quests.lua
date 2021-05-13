@@ -161,13 +161,6 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
 				}),
-				q(40931, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 77.4, 36.2, 47 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 40930,	-- Apocalypse
-				}),
 				q(26661, {	-- Gather Rot Blossoms
 					["provider"] = { "n", 273 },	-- Tavernkeep Smitts
 					["coord"] = { 73.7, 44.4, 47 },

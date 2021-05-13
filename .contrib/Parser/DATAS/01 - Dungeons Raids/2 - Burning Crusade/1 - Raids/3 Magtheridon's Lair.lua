@@ -1,23 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2, {	-- Burning Crusade
+_.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 	inst(747, { 	-- Magtheridon's Lair
 		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		-- #if ANYCLASSIC
-		["lvl"] = 68,
-		-- #elseif AFTER SHADOWLANDS
-		["lvl"] = 30,
-		-- #endif
-		["g"] = {
+		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
+		["groups"] = {
 			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)
 					["provider"] = { "i", 32385 },	-- Magtheridon's Head
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28792),	-- A'dal's Signet of Defense
 						i(28793),	-- Band of Crimson Fury
 						i(28790),	-- Naaru Lightwarden's Band
@@ -27,7 +23,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				q(11003, {	-- The Fall of Magtheridon (H)
 					["provider"] = { "i", 32386 },	-- Magtheridon's Head
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(28792),	-- A'dal's Signet of Defense
 						i(28793),	-- Band of Crimson Fury
 						i(28790),	-- Naaru Lightwarden's Band
@@ -112,4 +108,4 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 		},
 	}),
-})};
+}))};

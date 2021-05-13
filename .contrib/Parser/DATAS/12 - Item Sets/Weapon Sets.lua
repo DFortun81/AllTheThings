@@ -1071,13 +1071,34 @@ _.GearSets =
 				["lvl"] = 110,
 			}),
 			i(184303, {	-- Arsenal: Stitchmasters' Weapons
-				["lvl"] = { 50 },
 				["g"] = {
+					i(184079),	-- Abominable Bulwark of Marz
+					i(184082),	-- Atticus's Anima Absolver
+					i(184085),	-- Flytrap's Life-Dividing Broadaxe
+					i(184081),	-- Gas Bag's Fetid Basher
+					i(184087),	-- Iron Phillip's Problem Solver
+					i(184078),	-- Naxx's Discarded Tooth
+					i(184086),	-- Neena's Fetch Stick
+					i(184083),	-- Professor's Beating Stick
+					i(184084),	-- Rathan's Bonespike Launcher
+					i(184080),	-- Roseboil's Molting Totem
+					i(184088),	-- Sabrina's Crooked Finger
+					i(184089),	-- Tomalin's Cleaver
 				},
 			}),
 			i(184118, {	-- Arsenal: Winterborn Weapons
-				["lvl"] = { 30 },
 				["g"] = {
+					i(180075),	-- Winterborn Bow
+					i(179496),	-- Winterborn Fang
+					i(179571),	-- Winterborn Harp
+					i(179582),	-- Winterborn Jaws
+					i(179545),	-- Winterborn Maul
+					i(179556),	-- Winterborn Scepter
+					i(182353),	-- Winterborn Shillelagh
+					i(179525),	-- Winterborn Spear
+					i(180001),	-- Winterborn Staff
+					i(180018),	-- Winterborn Wand
+					i(180256),	-- Winterborn Warglaive
 				},
 			}),
 		},
