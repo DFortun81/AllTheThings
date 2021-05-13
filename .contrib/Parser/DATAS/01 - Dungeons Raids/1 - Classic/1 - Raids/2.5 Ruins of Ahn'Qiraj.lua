@@ -514,153 +514,288 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 						{
 							["itemID"] = 21294,		-- Book of Healing Touch XI
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25297,	-- Healing Touch XI
 							["rank"] = 11,
+							-- #endif
 						},
 						{
 							["itemID"] = 21295,		-- Book of Starfire VII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25298,	-- Starfire VII
 							["rank"] = 7,
+							-- #endif
 						},
 						{
 							["itemID"] = 21296,		-- Book of Rejuvenation XI
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25299,	-- Rejuvenation XI
 							["rank"] = 11,
+							-- #endif
 						},
 					})),
 					cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
 						{
 							["itemID"] = 21304,		-- Guide: Multi-Shot V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25294,	-- Multi-Shot V
 							["rank"] = 5,
+							-- #endif
 						},
 						{
 							["itemID"] = 21306,		-- Guide: Serpent Sting IX
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25295,	-- Serpent Sting IX
 							["rank"] = 9,
+							-- #endif
 						},
 						{
 							["itemID"] = 21307,		-- Guide: Aspect of the Hawk VII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25296,	-- Aspect of the Hawk VII
 							["rank"] = 7,
+							-- #endif
 						},
 					})),
 					cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
 						{
 							["itemID"] = 21280,		-- Tome of Arcane Missiles VIII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25345,	-- Arcane Missiles VIII
 							["rank"] = 8,
+							-- #endif
 						},
 						{
 							["itemID"] = 21279,		-- Tome of Fireball XII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25306,	-- Fireball XII
 							["rank"] = 12,
+							-- #endif
 						},
 						{
 							["itemID"] = 21214,		-- Tome of Frostbolt XI
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25304,	-- Frostbolt XI
 							["rank"] = 11,
+							-- #endif
 						},
 					})),
 					cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 						{
 							["itemID"] = 21289,		-- Libram: Blessing of Might VII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25291,	-- Blessing of Might VII
 							["rank"] = 7,
+							-- #endif
 						},
 						{
 							["itemID"] = 21288,		-- Libram: Blessing of Wisdom VI
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25290,	-- Blessing of Wisdom VI
 							["rank"] = 6,
+							-- #endif
 						},
 						{
 							["itemID"] = 21290,		-- Libram: Holy Light IX
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25292,	-- Holy Light IX
 							["rank"] = 9,
+							-- #endif
 						},
 					})),
 					cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
 						{
 							["itemID"] = 21284,		-- Codex of Greater Heal V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25314,	-- Greater Heal V
 							["rank"] = 5,
+							-- #endif
 						},
 						{
 							["itemID"] = 21285,		-- Codex of Renew X
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25315,	-- Renew X
 							["rank"] = 10,
+							-- #endif
 						},
 						{
 							["itemID"] = 21287,		-- Codex of Prayer of Healing V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25316,	-- Prayer of Healing V
 							["rank"] = 5,
+							-- #endif
 						},
 					})),
 					cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 						{
 							["itemID"] = 21300,		-- Handbook of Backstab IX
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25300,	-- Backstab IX
 							["rank"] = 9,
+							-- #endif
 						},
 						{
 							["itemID"] = 21302,		-- Handbook of Deadly Poison V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["recipeID"] = 25347,	-- Deadly Poison V
+							-- #endif
 						},
 						{
 							["itemID"] = 21303,		-- Handbook of Feint V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25302,	-- Feint V
 							["rank"] = 5,
+							-- #endif
 						},
 					})),
 					cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 						{
 							["itemID"] = 21293,		-- Tablet of Grace of Air Totem III
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25359,	-- Grace of Air Totem III
 							["rank"] = 3,
+							-- #endif
 						},
 						{
 							["itemID"] = 21291,		-- Tablet of Healing Wave X
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25357,	-- Healing Wave X
 							["rank"] = 10,
+							-- #endif
 						},
 						{
 							["itemID"] = 21292,		-- Tablet of Strength of Earth Totem V
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25361,	-- Strength of Earth Totem V
 							["rank"] = 5,
+							-- #endif
 						},
 					})),
 					cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
 						{
 							["itemID"] = 21283,		-- Grimoire of Corruption VII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25311,	-- Corruption VII
 							["rank"] = 7,
+							-- #endif
 						},
 						{
 							["itemID"] = 21282,		-- Grimoire of Immolate VIII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25309,	-- Immolate VIII
 							["rank"] = 8,
+							-- #endif
 						},
 						{
 							["itemID"] = 21281,		-- Grimoire of Shadow Bolt X
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25307,	-- Shadow Bolt X
 							["rank"] = 10,
+							-- #endif
 						},
 					})),
 					cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 						{
 							["itemID"] = 21298,		-- Manual of Battle Shout VII
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25289,	-- Battle Shout VII
 							["rank"] = 7,
+							-- #endif
 						},
 						{
 							["itemID"] = 21297,		-- Manual of Heroic Strike IX
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25286,	-- Heroic Strike IX
 							["rank"] = 9,
+							-- #endif
 						},
 						{
 							["itemID"] = 21299,		-- Manual of Revenge VI
+							-- #if AFTER CATA
+							["timeline"] = { "removed 4.0.1.10000" },
+							["spellID"] = 0,
+							-- #else
 							["spellID"] = 25288,	-- Revenge VI
 							["rank"] = 6,
+							-- #endif
 						},
 					})),
 					
