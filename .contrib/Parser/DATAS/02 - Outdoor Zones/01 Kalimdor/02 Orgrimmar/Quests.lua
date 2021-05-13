@@ -908,6 +908,7 @@ _.Zones =
 				}),
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,
@@ -1113,6 +1114,7 @@ _.Zones =
 				}),
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 					["races"] = HORDE_ONLY,

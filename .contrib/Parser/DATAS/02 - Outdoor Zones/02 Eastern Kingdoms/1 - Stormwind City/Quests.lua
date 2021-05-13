@@ -622,6 +622,7 @@ _.Zones =
 				}),
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -889,6 +890,7 @@ _.Zones =
 				}),
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1018,12 +1020,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
 					},
-				}),
-				q(60891, {	-- Onward to Adventure: Eastern Kingdoms
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.26, 17.32, 84 },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
