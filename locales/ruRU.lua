@@ -584,6 +584,8 @@ for key,value in pairs({
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Запад - Эльфы]",	-- Capital Gardens [West - Elves]
 		[-15] = "Обычные предметы у Торговцев",					-- Common Vendor Items
 		[-16] = "Редкие",										-- Rares
+		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
+		[-21] = "Капитаны",										-- Captains
 
 		--[-40] = LFG_LIST_LEGACY,								-- Legacy (TODO: probably need to translate)
 		[-41] = "Тайник Безумия",
@@ -686,6 +688,7 @@ for key,value in pairs({
 		[-395] = "Багровый зал",									-- The Crimson Halls
 		[-396] = "Залы Ледокрылых",									-- The Frostwing Halls
 		[-397] = "Аванпосты",										-- Outposts
+		[-420] = "Комплекты T0.5",									-- Tier 0.5 Sets
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "Трофейный сундук",								-- Daily War Chest
