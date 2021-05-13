@@ -818,7 +818,7 @@ app.L = {
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		[-21] = "Interface\\Icons\\inv_misc_enggizmos_17",									-- Containers
+		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green",									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17",										-- Raid Finder Bag
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
@@ -1525,7 +1525,7 @@ app.L = {
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
 		[-18] = QUEST_REWARDS, 													-- Rewards
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-21] = AUCTION_CATEGORY_CONTAINERS,									-- Containers
+		[-21] = "Captains",
 
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 
