@@ -1872,17 +1872,6 @@ _.Zones =
 					["coord"] = { 48.4, 71.4, 85 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(7784,  {	-- The Lord of Blackrock
-					["sourceQuests"] = { 7783 },	-- The Lord of Blackrock (Head of Nefarian)
-					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(19383),	-- Master Dragonslayer's Medallion
-						i(19366),	-- Master Dragonslayer's Orb
-						i(19384),	-- Master Dragonslayer's Ring
-					},
-				}),
 				q(27203, {	-- The Maelstrom
 					["sourceQuests"] = {
 						27399, -- The Battle Is Won, The War Goes On

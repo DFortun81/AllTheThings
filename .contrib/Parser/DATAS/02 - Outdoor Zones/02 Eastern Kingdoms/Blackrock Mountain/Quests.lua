@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(35, {	-- Blackrock Mountain
+		m(BLACKROCK_MOUNTAIN, {
 			n(QUESTS, {
 				q(8961, {	-- Three Kings of Flame
 					["provider"] = { "n", 16033 },	-- Bodley

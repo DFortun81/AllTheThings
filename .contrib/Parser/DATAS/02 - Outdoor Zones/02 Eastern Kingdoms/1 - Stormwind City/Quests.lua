@@ -1309,17 +1309,6 @@ _.Zones =
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7782,  {	-- The Lord of Blackrock
-					["sourceQuests"] = { 7781 },	-- The Lord of Blackrock
-					["provider"] = { "n", 107574 },	-- Anduin Wrynn
-					["coord"] = { 85.6, 31.8, 84 },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(19366), 	-- Master Dragonslayer's Orb
-						i(19383),	-- Master Dragonslayer's Medallion
-						i(19384),	-- Master Dragonslayer's Ring
-					},
-				}),
 				q(27203, {	-- The Maelstrom
 					["sourceQuests"] = {
 						27398, -- The Battle Is Won, The War Goes On
