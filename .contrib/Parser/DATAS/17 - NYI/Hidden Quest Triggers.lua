@@ -4239,6 +4239,7 @@ _.HiddenQuestTriggers =
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		q(60849),	-- When looting [Ledger of Souls] (173712)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+		q(62649),	-- triggered during 'Secret Service WQ'
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
 		q(60703),	-- triggered when looting Pristine Dredbat Fang
