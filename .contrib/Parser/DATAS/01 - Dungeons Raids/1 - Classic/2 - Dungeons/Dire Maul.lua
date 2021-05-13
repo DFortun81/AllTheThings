@@ -221,13 +221,6 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(18466)),	--Royal Seal of Eldre'Thalas
 							},
 						}),
-						q(8949, {	-- Falrin's Vendetta
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(22150)),	-- Beads of Ogre Might
-								un(REMOVED_FROM_GAME, i(22149)),	-- Beads of Ogre Mojo
-							},
-						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
@@ -583,29 +576,6 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(27109, {	-- The Warped Defender
 							["provider"] = { "n", 44999 },
-						}),
-						-- Part of the Dungeon 2 Set Questline
-						q(8949, {	-- Falrin's Vendetta
-							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-							["sourceQuest"] = 8948,	-- Anthion's Old Friend
-							["lvl"] = 58,
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22150)),	-- Beads of Ogre Might
-								un(REMOVED_FROM_GAME, i(22149)),	-- Beads of Ogre Mojo
-							},
-						}),
-						q(8950, {	-- The Instigator's Enchantment
-							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-							["sourceQuest"] = 8949,	-- Falrin's Vendetta
-							["lvl"] = 58,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						q(9015, {	-- The Challenge
-							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-							["sourceQuest"] = 8950,	-- The Instigator's Enchantment
-							["lvl"] = 58,
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 					n(VENDORS, {

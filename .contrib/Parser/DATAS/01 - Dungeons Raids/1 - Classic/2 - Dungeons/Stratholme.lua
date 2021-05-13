@@ -195,13 +195,6 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(16725)),	-- Lightforge Boots
 					})),
 					n(-40, {	-- Legacy
-						-- Part of the Dungeon 2 Set Questline
-						q(8946, {	-- Proof of Life
-							["provider"] = { "n", 16031 },	-- Ysida Harmon
-							["sourceQuest"] = 8945,	-- Dead Man's Plea
-							["lvl"] = 58,
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						n(ZONEDROPS, {
 							un(REMOVED_FROM_GAME, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",

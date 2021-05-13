@@ -737,23 +737,6 @@ _.Zones =
 						i(65481),	-- Staff of Golden Worship
 					},
 				}),
-				q(8923,  {	-- A Supernatural Device
-					["sourceQuests"] = {
-						8913,	-- An Earnest Proposition (Druid)
-						8914,	-- An Earnest Proposition (Hunter)
-						8915,	-- An Earnest Proposition (Mage)
-						10493,	-- An Earnest Proposition (Paladin)
-						8916,	-- An Earnest Proposition (Priest)
-						8917,	-- An Earnest Proposition (Rogue)
-						8918,	-- An Earnest Proposition (Shaman)
-						8919,	-- An Earnest Proposition (Warlock)
-						8920,	-- An Earnest Proposition (Warrior)
-					},
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(32309, {	-- A Tale of Six Masters
 					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
 					["provider"] = { "n", 88705 },	-- Kranosh
@@ -821,96 +804,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(8913,  {	-- An Earnest Proposition (Druid)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { DRUID },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
-					},
-				}),
-				q(8914,  {	-- An Earnest Proposition (Hunter)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { HUNTER },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22011)),	-- Beastmaster's Bindings
-					},
-				}),
-				q(8915,  {	-- An Earnest Proposition (Mage)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { MAGE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22063)),	-- Sorcerer's Bindings
-					},
-				}),
-				q(10493, {	-- An Earnest Proposition (Paladin)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PALADIN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22088)),	-- Soulforge Bracers
-					},
-				}),
-				q(8916,  {	-- An Earnest Proposition (Priest)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PRIEST },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22079)),	-- Virtuous Bracers
-					},
-				}),
-				q(8917,  {	-- An Earnest Proposition (Rogue)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { ROGUE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22004)),	-- Darkmantle Bracers
-					},
-				}),
-				q(8918,  {	-- An Earnest Proposition (Shaman)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { SHAMAN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22095)),	-- Bindings of The Five Thunders
-					},
-				}),
-				q(8919,  {	-- An Earnest Proposition (Warlock)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARLOCK },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22071)),	-- Deathmist Bracers
-					},
-				}),
-				q(8920,  {	-- An Earnest Proposition (Warrior)
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARRIOR },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(21996)),	-- Bracers of Heroism
-					},
-				}),
 				q(60360, {	-- An Urgent Meeting
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
@@ -959,23 +852,6 @@ _.Zones =
 					["g"] = {
 						i(72045),	-- Horde Balloon
 					},
-				}),
-				q(9032,  {	-- Bodley's Unfortunate Fate
-					["sourceQuests"] = {
-						9016,	-- Anthion's Parting Words (Druid)
-						9017,	-- Anthion's Parting Words (Hunter)
-						9018,	-- Anthion's Parting Words (Mage)
-						10497,	-- Anthion's Parting Words (Paladin)
-						9019,	-- Anthion's Parting Words (Priest)
-						9020,	-- Anthion's Parting Words (Rogue)
-						8957,	-- Anthion's Parting Words (Shaman)
-						9021,	-- Anthion's Parting Words (Warlock)
-						9022,	-- Anthion's Parting Words (Warrior)
-					},
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4300,  {	-- Bone-Bladed Weapons
 					["provider"] = { "n", 8659 },	-- Jes'rimon
@@ -1191,23 +1067,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(8930,  {	-- In Search of Anthion
-					["sourceQuests"] = {
-						8927,	-- Just Compensation (Druid)
-						8938,	-- Just Compensation (Hunter)
-						8939,	-- Just Compensation (Mage)
-						10495,	-- Just Compensation (Paladin)
-						8940,	-- Just Compensation (Priest)
-						8941,	-- Just Compensation (Rogue)
-						8942,	-- Just Compensation (Shaman)
-						8943,	-- Just Compensation (Warlock)
-						8944,	-- Just Compensation (Warrior)
-					},
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(44663, {	-- In the Blink of an Eye
 					["sourceQuests"] = {
 						41002,	-- A Weapon of the Horde
@@ -1228,114 +1087,6 @@ _.Zones =
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8944,  {	-- Just Compensation (Warrior)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARRIOR },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(21994)), 	-- Belt of Heroism
-						un(REMOVED_FROM_GAME, i(21998)), 	-- Gauntlets of Heroism
-					},
-				}),
-				q(10495, {	-- Just Compensation (Paladin)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PALADIN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22086)), 	-- Soulforge Belt
-						un(REMOVED_FROM_GAME, i(22090)), 	-- Soulforge Gauntlets
-					},
-				}),
-				q(8938,  {	-- Just Compensation (Hunter)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { HUNTER },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22010)), 	-- Beastmaster's Belt
-						un(REMOVED_FROM_GAME, i(22015)), 	-- Beastmaster's Gloves
-					},
-				}),
-				q(8941,  {	-- Just Compensation (Rogue)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { ROGUE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22002)), 	-- Darkmantle Belt
-						un(REMOVED_FROM_GAME, i(22006)), 	-- Darkmantle Gloves
-					},
-				}),
-				q(8940,  {	-- Just Compensation (Priest)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PRIEST },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt
-						un(REMOVED_FROM_GAME, i(22081)), 	-- Virtuous Gloves
-					},
-				}),
-				q(8942,  {	-- Just Compensation (Shaman)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { SHAMAN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22098)), 	-- Cord of The Five Thunders
-						un(REMOVED_FROM_GAME, i(22099)), 	-- Gauntlets of The Five Thunders
-					},
-				}),
-				q(8939,  {	-- Just Compensation (Mage)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { MAGE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt
-						un(REMOVED_FROM_GAME, i(22066)), 	-- Sorcerer's Gloves
-					},
-				}),
-				q(8943,  {	-- Just Compensation (Warlock)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARLOCK },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22070)), 	-- Deathmist Belt
-						un(REMOVED_FROM_GAME, i(22077)), 	-- Deathmist Wraps
-					},
-				}),
-				q(8927,  {	-- Just Compensation (Druid)
-					["sourceQuests"] = { 8978 },	-- Return to Mokvar
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { DRUID },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22106)), 	-- Feralheart Belt
-						un(REMOVED_FROM_GAME, i(22110)), 	-- Feralheart Gloves
-					},
 				}),
 				q(1945,  {	-- Laughing Sisters
 					["classes"] = { MAGE },
@@ -1573,114 +1324,6 @@ _.Zones =
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(9007,  {	-- Saving the Best for Last (Druid)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { DRUID },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl
-						un(REMOVED_FROM_GAME, i(22113)),	-- Feralheart Vest
-					},
-				}),
-				q(9008,  {	-- Saving the Best for Last (Hunter)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { HUNTER },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap
-						un(REMOVED_FROM_GAME, i(22060)),	-- Beastmaster's Tunic
-					},
-				}),
-				q(9014,  {	-- Saving the Best for Last (Mage)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { MAGE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22065)),	-- Sorcerer's Crown
-						un(REMOVED_FROM_GAME, i(22069)),	-- Sorcerer's Robes
-					},
-				}),
-				q(10499, {	-- Saving the Best for Last (Paladin)
-					["sourceQuests"] = { 9015 },	-- The Challenge
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PALADIN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22089)),	-- Soulforge Breastplate
-						un(REMOVED_FROM_GAME, i(22091)),	-- Soulforge Helm
-					},
-				}),
-				q(9009,  {	-- Saving the Best for Last (Priest)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { PRIEST },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown
-						un(REMOVED_FROM_GAME, i(22083)),	-- Virtuous Robe
-					},
-				}),
-				q(9010,  {	-- Saving the Best for Last (Rogue)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { ROGUE },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22005)),	-- Darkmantle Cap
-						un(REMOVED_FROM_GAME, i(22009)),	-- Darkmantle Tunic
-					},
-				}),
-				q(9011,  {	-- Saving the Best for Last (Shaman)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { SHAMAN },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders
-						un(REMOVED_FROM_GAME, i(22102)),	-- Vest of The Five Thunders
-					},
-				}),
-				q(9012,  {	-- Saving the Best for Last (Warlock)
-					["sourceQuests"] = { 8998 },	-- Back to the Beginning
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARLOCK },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask
-						un(REMOVED_FROM_GAME, i(22075)),	-- Deathmist Robe
-					},
-				}),
-				q(9013,  {	-- Saving the Best for Last (Warrior)
-					["sourceQuests"] = { 9015 },	-- The Challenge
-					["provider"] = { "n", 16012 },	-- Mokvar
-					["classes"] = { WARRIOR },
-					["coord"] = { 48.6, 72.8, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(21997)),	-- Breastplate of Heroism
-						un(REMOVED_FROM_GAME, i(21999)),	-- Helm of Heroism
-					},
 				}),
 				q(32317, {	-- Seeking the Soulstones
 					["sourceQuests"] = { 32309 },	-- A Tale of Six Masters

@@ -103,12 +103,6 @@ _.Instances = { tier(1, {	-- Classic
 							un(REMOVED_FROM_GAME, i(15867)),	-- Prismcharm
 						},
 					}),
-					q(8996, {	-- Return to Bodley
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
-						["lvl"] = 58,
-						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
-					}),
 					q(5161, {	-- Wrath of the Blue Flight (1/2)
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10929 },	-- Haleh
