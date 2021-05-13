@@ -14,14 +14,6 @@ _.Zones =
 				34,	-- Blackrock Caverns
 				35,	-- Blackrock Depths
 			},
-			["g"] = {
-				-- One special NPC whose sole purpose is to show the Molten Core tooltip
-				n(14387, {	-- Lothos Riftwaker
-					["sym"] = {
-						{ "select", "instanceID", 741, },	-- Molten Core
-					},
-				}),
-			},
 		}),
 	}),
 };

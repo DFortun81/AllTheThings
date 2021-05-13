@@ -51,11 +51,14 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 -- Kalimdor
 KALIMDOR = 12;	-- Confirmed!
 ASHENVALE = 63;	-- Confirmed!
+AZSHARA = 76;	-- Confirmed!
 CAVERNS_OF_TIME = 75;	-- Confirmed!
 DUSTWALLOW_MARSH = 70;	-- Confirmed!
 FERALAS = 69;	-- Confirmed!
+SILITHUS = 81;	-- Confirmed!
 
 -- Eastern Kingdoms
+BLACKROCK_MOUNTAIN = 35;
 BLASTED_LANDS = 17;	-- Confirmed!
 EASTERN_KINGDOMS = 13;	-- Confirmed!
 ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
