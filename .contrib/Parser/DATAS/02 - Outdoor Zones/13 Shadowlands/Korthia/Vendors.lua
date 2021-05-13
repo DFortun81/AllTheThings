@@ -7,6 +7,28 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(VENDORS, {
+				n(178257, {	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
+					["g"] = {	-- TODO - verify */NYI/PH items once it goes live
+						i(187148),	-- Codex of Untapped Soulbinding - PH*
+						i(187134),	-- Spatial Realignment Apparatus mk2 NYI*
+						--
+						i(186470),	-- Recipe: Crafter's Mark of the Chained Isle
+						i(186717),	-- Research Report: Adaptive Alloys
+						i(186714),	-- Research Report: All-Seeing Crystal
+						i(186716),	-- Research Report: Ancient Shrines
+						i(187136),	-- Research Report: Careful Examination
+						i(187138),	-- Research Report: First Alloys
+						i(187137),	-- Research Report: Relic Finding Techniques
+						i(187145),	-- Treatise: Recognizing Stygia and its Uses
+						i(186721),	-- Treatise: Relics Abound in the Shadowlands
+						i(186722),	-- Treatise: The Study of Anima and Harnessing Every Drop
+						--
+						i(186984),	-- Korthian Archivists' Key
+						i(186731),	-- Repaired Riftkey
+						i(186718),	-- Teleporter Repair Kit
+					},
+				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 					["coord"] = { 63.5, 23.3, KORTHIA },
 					["g"] = {

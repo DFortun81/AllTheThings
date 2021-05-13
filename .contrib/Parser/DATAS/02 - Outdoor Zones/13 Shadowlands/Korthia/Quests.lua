@@ -401,6 +401,9 @@ _.Zones =
 					["provider"] = { "n", 178797 },	-- Sika
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.9, KORTHIA },
+					["g"] = { -- TODO: unsure if this item will be up every time, it was added
+						i(187184),	-- Vesper of Clarity
+					},
 				}),
 				q(64080, {	-- Down to Earth
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -593,7 +596,6 @@ _.Zones =
 					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64089, {	-- Teas and Tinctures
-				--	quest has a Venthyr provider, not sure if this means the quest is Venthyr-only or if this is related to the covenant assaults for the "United Front" achievement
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,

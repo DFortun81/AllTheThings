@@ -6,6 +6,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(RARES, {
+			--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
 				n(179769, {	-- Consumption
 				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
 				--	["questID"] = ,
@@ -22,7 +23,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 33.1, 39.5, KORTHIA },
 					["g"] = {
-						crit(17, {	-- Escaped Wilderling
+					--	crit(17, {	-- Escaped Wilderling
+						crit(19, {	-- Escaped Wilderling
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -34,7 +36,8 @@ _.Zones =
 					["coord"] = { 59.7, 43.3, KORTHIA },
 					["cr"] = 180057,	-- Restless Necromancer
 					["g"] = {
-						crit(18, {	-- Corpse Heap
+					--	crit(18, {	-- Corpse Heap
+						crit(20, {	-- Corpse Heap
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -45,9 +48,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 30.2, 54.9, KORTHIA },
 					["g"] = {
+					--[[ achievement is currently fucked and does not return the correct information
 						crit(24, {	-- Konthrogz the Obliterator
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						--]]
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
@@ -55,8 +60,24 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.1, 34.0, KORTHIA },	-- TODO: unsure of original spawnpoint, it was engaged in combat when i killed it
 					["g"] = {
-						crit(22, {	-- Kroke the Tormented
+					--	crit(22, {	-- Kroke the Tormented
+						crit(24, {	-- Kroke the Tormented
 							["achievementID"] = 15107,	-- Kroke the Tormented
+						}),
+					},
+				}),
+				n(179684, {	-- Malbog
+					["description"] = "Speak to Caretaker Kah-Kay at Keeper's Respite to enlist the help of Kah-Bear.  Follow the footprints all the way to your prey, and summon it by clicking on the |cFFFFFFFFFleshy Remains|r.",
+					["questID"] = 64233,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 60.6, 23.1, KORTHIA },
+						{ 44.3, 29.5, KORTHIA },	-- remove if the path doesn't end at the same place every time
+					},
+					["cr"] = 179729,	-- Caretaker Kah-Kay
+					["g"] = {
+						crit(2, {	-- Hunting the Hunter
+							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
 				}),
@@ -77,7 +98,8 @@ _.Zones =
 					["isDaily"] = true,
 					["cr"] = 179974,	-- Drippy
 					["g"] = {
-						crit(20, {	-- No Stoneborn Left Behind
+					--	crit(20, {	-- No Stoneborn Left Behind
+						crit(22, {	-- NO Stoneborn Left Behind
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -92,7 +114,8 @@ _.Zones =
 					},
 					["cr"] = 180028,	-- Popo
 					["g"] = {
-						crit(19, {	-- Popo's Potion Patrol
+					--	crit(19, {	-- Popo's Potion Patrol
+						crit(21, {	-- Popo's Potion Patrol
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -103,7 +126,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 30.2, 54.9, KORTHIA },
 					["g"] = {
-						crit(21, {	-- Zelnithop
+					--	crit(21, {	-- Zelnithop
+						crit(23, {	-- Zelnithop
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},

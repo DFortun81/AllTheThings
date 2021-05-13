@@ -4700,6 +4700,8 @@ _.HiddenQuestTriggers =
 		q(64281),	-- looting a second Lost Razorwing Egg
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
 		q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
+		q(64343),	-- looted 9 Relic Fragments from a mob around 51.6, 52.6
+		q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
 		
 		-- Treasures of Korthia achievement
 	--	q(),	-- Desmotaeron treasure - Helsworn Chest

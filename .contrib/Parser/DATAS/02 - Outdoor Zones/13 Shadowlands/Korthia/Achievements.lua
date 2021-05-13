@@ -20,7 +20,6 @@ _.Zones =
 				}),
 				ach(15107, {	-- Conquering Korthia
 					crit(1),	-- Dominated Protector
-					crit(2),	-- Hunting the Hunter
 					crit(3),	-- Torgllun, Lord of Shades - maw, think it's connected to a specific tormentor of torghast event, replaces cyrixia
 					crit(5),	-- Deomen the Vortex - maw, in desmotaeron, didn't have a questID when i killed it, will add later
 					crit(8),	-- Assault Supply Carriage [NYI]

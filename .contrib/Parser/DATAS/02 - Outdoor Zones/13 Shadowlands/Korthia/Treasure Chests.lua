@@ -47,16 +47,24 @@ _.Zones =
 					},
 				}),
 				o(369327, {	-- Invasive Mawshroom
-					["questID"] = 64351,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64351,
+					["isDaily"] = true,
 					["coord"] = { 34.8, 41.0, KORTHIA },
 				}),
 				o(369329, {	-- Invasive Mawshroom
-					["questID"] = 64354,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64354,
+					["isDaily"] = true,
 					["coord"] = { 53.7, 37.9, KORTHIA },
 				}),
 				o(369330, {	-- Invasive Mawshroom
-					["questID"] = 64355,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64355,
+					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
+				}),
+				o(369332, {	-- Invasive Mawshroom
+					["questID"] = 64357,
+					["isDaily"] = true,
+					["coord"] = { 39.6, 30.0, KORTHIA },
 				}),
 				o(369172, {	-- Lost Memento
 				--	["questID"] = 64238,
@@ -67,21 +75,35 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369339, {	-- Mawsworn Cache
+					["questID"] = 64363,
+					["isDaily"] = true,
+					["coord"] = { 61.2, 57.9, KORTHIA },
+				}),
 				o(369341, {	-- Mawsworn Cache
-					["questID"] = 64364,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64364,
+					["isDaily"] = true,
 					["coord"] = { 56.4, 69.5, KORTHIA },
 				}),
 				o(369334, {	-- Nest of Unusual Materials
-					["questID"] = 64359,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64359,
+					["isDaily"] = true,
 					["coord"] = { 42.4, 54.8, KORTHIA },
 				}),
 				o(369335, {	-- Nest of Unusual Materials
 					["description"] = "Climb across the tree to reach the nest.",
-					["questID"] = 64360,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64360,
+					["isDaily"] = true,
 					["coord"] = { 52.4, 43.8, KORTHIA },
 				}),
+				o(369336, {	-- Nest of Unusual Materials
+					["questID"] = 64361,
+					["isDaily"] = true,
+					["coord"] = { 63.7, 31.4, KORTHIA },
+				}),
 				o(369337, {	-- Nest of Unusual Materials
-					["questID"] = 64362,	-- TODO: unsure if repeatable or daily
+					["questID"] = 64362,
+					["isDaily"] = true,
 					["coord"] = { 52.3, 72.7, KORTHIA },
 				}),
 				o(369232, {	-- Offering Box
