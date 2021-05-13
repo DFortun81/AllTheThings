@@ -7,12 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(DEADWIND_PASS, {
 			n(QUESTS, {
-				q(40933, {	-- A Grisly Task
-					["provider"] = { "n", 100729 },	-- Revil Kost
-					["coord"] = { 52.3, 34.5, 42 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 40932,	-- Disturbing the Past
-				}),
 				--[[q(44421, {	-- Anomalous Anomalies
 					["provider"] = { "n", 113986 },	--
 				}),
@@ -40,26 +34,11 @@ _.Zones =
 					["provider"] = { "n", 114631 },	-- Archmage Karlain
 					["coord"] = { 46.9, 75.3, 42 },
 				}),
-				q(40934, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- Revil Kost
-					["coord"] = { 49.4, 74.6, 42 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 40933, -- A Grisly Task
-					["g"] = {
-						i(128403), -- Apocalypse (Artifact)
-					},
-				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
 					["coord"] = { 46.9, 75.3, 42 },
 					["sourceQuest"] = 44686,	-- Thought Collection
-				}),
-				q(40932, {	-- Disturbing the Past
-					["provider"] = { "n", 100729 },	-- Revil Kost
-					["coord"] = { 52.3, 34.5, 42 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 40931,	-- Following the Curse
 				}),
 				q(44557, {	-- Finite Numbers
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
@@ -159,11 +138,6 @@ _.Zones =
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
 					},
-				}),
-				q(40935, {	-- The Call of Vengeance
-					["provider"] = { "n", 101282 },	-- Revil Kost
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 40934, -- The Dark Riders
 				}),
 				q(44733, {	-- The Power of Corruption
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar

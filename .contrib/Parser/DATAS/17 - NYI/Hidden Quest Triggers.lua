@@ -2031,6 +2031,10 @@ _.HiddenQuestTriggers =
 		q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3
 		q(44394),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 4
 		q(44395),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 5
+		q(44333),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 1
+		q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
+		q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
+		q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
 
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first

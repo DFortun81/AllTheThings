@@ -1046,8 +1046,6 @@ _.Zones =
 				q(42400),	-- Missing Mages
 				q(41188),	-- Neltharion's Lair: Misdirected
 				q(39533),	-- Nogginclobber Arena
-				q(40955),	-- Oath of Service
-				q(40953),	-- On Eagle's Wings
 				q(44366),	-- One Last Adventure
 				q(39435),	-- Oubdob da Smasher
 				q(42381),	-- Ox'iloth
@@ -1068,7 +1066,6 @@ _.Zones =
 				q(38803),	-- Rin'thissa
 				q(42519),	-- Rise, Champions
 				q(41837),	-- Rockaway Bully
-				q(42133),	-- Same Day Delivery
 				q(42384),	-- Scouting Reports
 				q(40133),	-- Scrap of Pants
 				q(44039),	-- Sea King Tidross
@@ -1094,7 +1091,6 @@ _.Zones =
 				q(44671),	-- The Muscle
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
-				q(40954),	-- The Unseen Path
 				q(44055),	-- They Have A Pitlord
 				q(45349),	-- To the Broken Shore
 				q(42110),	-- To the Summit!

@@ -927,15 +927,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 				}),
-				q(40953, {	-- On Eagle's Wings
-					["sourceQuests"] = {
-						40952,	-- Hunter to Hunter
-						41008,	-- Hunter to Hunter
-						41009,	-- Hunter to Hunter
-					},
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 102478 },	-- Emmarel Shadwarden
-				}),
 				q(41967, {	-- Out of the Darkness
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 105603 },	-- Defender Barrem

@@ -367,7 +367,10 @@ _.ExpansionFeatures =
 					}),
 					q(42510, {	-- Immortal Soul
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
-						["provider"] = { "n", 107724 },	-- Kayn Sunfury
+						["providers"] = {
+							{ "n", 107723 },	-- Altruis the Sufferer
+							{ "n", 107724 },	-- Kayn Sunfury
+						},
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
 					}),
@@ -417,13 +420,13 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42522, {	-- Leader of the Illidari
-						["sourceQuests"] = { 42510 },
-						["coord"] = { 58.3, 51.5, 721 },
-						["lvl"] = 103,
+						["sourceQuests"] = { 42510 },	-- Immortal Soul
 						["providers"] = {
 							{ "n", 107724 },	-- Kayn Sunfury
 							{ "n", 107723 },	-- Altruis the Sufferer
 						},
+						["coord"] = { 58.3, 51.5, 721 },
+						["lvl"] = 103,
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
@@ -808,55 +811,59 @@ _.ExpansionFeatures =
 					--]]
 				}),
 				n(VENDORS, {
-					n(116621, {	--Demissya Gladestrider <Illidari Provisioner's Assistant>
-						i(123960),	-- Charm of Demonic Fire
-						i(123959),	-- Demon Trophy
-						i(128950),	-- Demon-Rend Shoulderblades (A)
-						i(133311),	-- Demon-Rend Shoulderblades (H)
-						i(128956),	-- Fel-Etched Glaive
-						i(132243),	-- Fel-Etched Glaive
-						i(138970),	-- Helm of Reaffirmed Purpose (A)
-						i(141650),	-- Helm of Reaffirmed Purpose (H)
-						i(112460),	-- Illidari Band
-						i(133325),	-- Illidari Belt (A)
-						i(112453),	-- Illidari Belt (H)
-						i(133320),	-- Illidari Blindfold (A)
-						i(112450),	-- Illidari Blindfold (H)
-						i(133324),	-- Illidari Boots (A)
-						i(112457),	-- Illidari Boots (H)
-						i(133323),	-- Illidari Bracers (A)
-						i(112452),	-- Illidari Bracers (H)
-						i(112461),	-- Illidari Chain
-						i(112462),	-- Illidari Drape
-						i(133321),	-- Illidari Gloves (A)
-						i(112455),	-- Illidari Gloves (H)
-						i(133319),	-- Illidari Leggings (A)
-						i(112451),	-- Illidari Leggings (H)
-						i(112459),	-- Illidari Ring
-						i(133322),	-- Illidari Robe (A)
-						i(112454),	-- Illidari Robe (H)
-						i(133318),	-- Illidari Shoulders (A)
-						i(112456),	-- Illidari Shoulders (H)
-						i(112458),	-- Illidari Warglaive
-						i(129181),	-- Illidari Warglaive
-						i(128949),	-- Infernal Firecord Sash (A)
-						i(133315),	-- Infernal Firecord Sash (H)
-						i(128951),	-- Leggings of Sacrifice (A)
-						i(133316),	-- Leggings of Sacrifice (H)
-						i(128947),	-- Pit Lord's Cuffs (A)
-						i(133313),	-- Pit Lord's Cuffs (H)
-						i(128954),	-- Power Handler's Gloves (A)
-						i(133314),	-- Power Handler's Gloves (H)
-						i(128955),	-- The Brood Queen's Veil (A)
-						i(133310),	-- The Brood Queen's Veil (H)
-						i(128952),	-- Torment Ender's Chestguard (A)
-						i(133312),	-- Torment Ender's Chestguard (H)
-						i(128953),	-- Treads of Illidari Supremacy (A)
-						i(133317),	-- Treads of Illidari Supremacy (H)
-						i(128944),	-- Voras' Silk Drape
+					n(116621, {	-- Demissya Gladestrider <Illidari Provisioner's Assistant>
+						["coord"] = { 59.3, 42.4, 720 },
+						["g"] = {
+							i(123960),	-- Charm of Demonic Fire
+							i(123959),	-- Demon Trophy
+							i(128950),	-- Demon-Rend Shoulderblades (A)
+							i(133311),	-- Demon-Rend Shoulderblades (H)
+							i(128956),	-- Fel-Etched Glaive
+							i(132243),	-- Fel-Etched Glaive
+							i(138970),	-- Helm of Reaffirmed Purpose (A)
+							i(141650),	-- Helm of Reaffirmed Purpose (H)
+							i(112460),	-- Illidari Band
+							i(133325),	-- Illidari Belt (A)
+							i(112453),	-- Illidari Belt (H)
+							i(133320),	-- Illidari Blindfold (A)
+							i(112450),	-- Illidari Blindfold (H)
+							i(133324),	-- Illidari Boots (A)
+							i(112457),	-- Illidari Boots (H)
+							i(133323),	-- Illidari Bracers (A)
+							i(112452),	-- Illidari Bracers (H)
+							i(112461),	-- Illidari Chain
+							i(112462),	-- Illidari Drape
+							i(133321),	-- Illidari Gloves (A)
+							i(112455),	-- Illidari Gloves (H)
+							i(133319),	-- Illidari Leggings (A)
+							i(112451),	-- Illidari Leggings (H)
+							i(112459),	-- Illidari Ring
+							i(133322),	-- Illidari Robe (A)
+							i(112454),	-- Illidari Robe (H)
+							i(133318),	-- Illidari Shoulders (A)
+							i(112456),	-- Illidari Shoulders (H)
+							i(112458),	-- Illidari Warglaive
+							i(129181),	-- Illidari Warglaive
+							i(128949),	-- Infernal Firecord Sash (A)
+							i(133315),	-- Infernal Firecord Sash (H)
+							i(128951),	-- Leggings of Sacrifice (A)
+							i(133316),	-- Leggings of Sacrifice (H)
+							i(128947),	-- Pit Lord's Cuffs (A)
+							i(133313),	-- Pit Lord's Cuffs (H)
+							i(128954),	-- Power Handler's Gloves (A)
+							i(133314),	-- Power Handler's Gloves (H)
+							i(128955),	-- The Brood Queen's Veil (A)
+							i(133310),	-- The Brood Queen's Veil (H)
+							i(128952),	-- Torment Ender's Chestguard (A)
+							i(133312),	-- Torment Ender's Chestguard (H)
+							i(128953),	-- Treads of Illidari Supremacy (A)
+							i(133317),	-- Treads of Illidari Supremacy (H)
+							i(128944),	-- Voras' Silk Drape
+						},
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
 						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Black|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
+						["coord"] = { 57.8, 43.5, 720 },
 						["g"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources

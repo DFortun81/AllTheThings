@@ -39,8 +39,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 41.6, 74.8, 739 },
 					}),
-					q(41053),	-- Altar of the Eternal Hunt
+					q(41053, {	-- Altar of the Eternal Hunt
+						["classes"] = { HUNTER },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46022, {	-- An Urgent Warning
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42387, {	-- Assassin Entrapment
@@ -64,7 +68,15 @@ _.ExpansionFeatures =
 						["coord"] = { 80.1, 66.2, 634 },
 						["maps"] = { 634 },	-- Stormheim
 					}),
-					q(42656),	-- Azure Weaponry
+					q(42656, {	-- Azure Weaponry
+						["sourceQuests"] = { 
+							42654,	-- Darkheart Thicket: Nightmare Oak
+							42655,	-- Ore Under the Sea
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108456 },	-- Halduron Brightwing
+						["coord"] = { 43.1, 6.1, 739 },
+					}),
 					q(42397, {	-- Baron and the Huntsman
 						["sourceQuests"] = { 42394 },	-- Unseen Protection
 						["classes"] = { HUNTER },
@@ -207,6 +219,13 @@ _.ExpansionFeatures =
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(45392),	-- Dark Memento
+					q(42658, {	-- Delicate Enchantments
+						["sourceQuests"] = { 42657 },	-- Meeting in Moonclaw Vale
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108492 },	-- Lyana Stardust
+						["coord"] = { 60.1, 72.2, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(42654, {	-- Darkheart Thicket: Nightmare Oak
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["classes"] = { HUNTER },
@@ -280,8 +299,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
-					q(41047),	-- Infused with Power
+					q(41047, {	-- Infused with Power
+						["classes"] = { HUNTER },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46023, {	-- Investigate the Broken Shore
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42689, {	-- Knowing Our Enemy
@@ -291,6 +314,7 @@ _.ExpansionFeatures =
 						["coord"] = { 43.4, 26.3, 739 },
 					}),
 					q(46130, {	-- Knowledge is Power
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(44680, {	-- Leading by Example
@@ -313,7 +337,12 @@ _.ExpansionFeatures =
 						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(42523),	-- Making Contact
-					q(42657),	-- Meeting in Moonclaw Vale
+					q(42657, {	-- Meeting in Moonclaw Vale
+						["sourceQuests"] = { 42656 },	-- Azure Weaponry
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
+						["coord"] = { 46.4, 34.8, 739 },
+					}),
 					q(42400, {	-- Missing Mages
 						["sourceQuests"] = { 42399 },	-- Ready to Work
 						["classes"] = { HUNTER },
@@ -331,8 +360,22 @@ _.ExpansionFeatures =
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},
 					}),
-					q(40955),	-- Oath of Service
-					q(40953),	-- On Eagle's Wings
+					q(40955, {	-- Oath of Service
+						["sourceQuests"] = { 40954 },	-- The Unseen Path
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
+					q(40953, {	-- On Eagle's Wings
+						["sourceQuests"] = {
+							40952,	-- Hunter to Hunter
+							41008,	-- Hunter to Hunter
+							41009,	-- Hunter to Hunter
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(44366, {	-- One Last Adventure
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
@@ -414,7 +457,13 @@ _.ExpansionFeatures =
 						["coord"] = { 41.7, 60.0, 641 },
 						["maps"] = { 641 },	-- Val'sharah
 					}),
-					q(42133),	-- Same Day Delivery
+					q(42133, {	-- Same Day Delivery
+						["sourceQuests"] = { 42658 },	-- Delicate Enchantments
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 108492 },	-- Lyana Stardust
+						["coord"] = { 60.1, 72.2, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(42384, {	-- Scouting Reports
 						["sourceQuests"] = { 42526 },	-- Tech It Up A Notch
 						["classes"] = { HUNTER },
@@ -515,7 +564,12 @@ _.ExpansionFeatures =
 						["coord"] = { 60.8, 80.9, 650 },
 						["maps"] = { 650 },	-- Highmountain
 					}),
-					q(40954),	-- The Unseen Path
+					q(40954, {	-- The Unseen Path
+						["sourceQuests"] = { 40953 },	-- On Eagle's Wings
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42406, {	-- To Tame the Beast
 						["sourceQuests"] = { 42691 },	-- Leystone Lure
 						["classes"] = { HUNTER },
@@ -634,6 +688,7 @@ _.ExpansionFeatures =
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
 					q(46940, {	-- Using Lost Knowledge
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
