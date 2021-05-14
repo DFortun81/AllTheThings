@@ -2036,7 +2036,9 @@ _.HiddenQuestTriggers =
 		q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
 		q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
 		q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
-
+		q(43159),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
+		q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
+		q(43366),	-- Hunter Order Hall - Talked With Mimiron Tracking Quest
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second

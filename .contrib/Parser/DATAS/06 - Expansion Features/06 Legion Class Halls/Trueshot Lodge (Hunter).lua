@@ -30,9 +30,30 @@ _.ExpansionFeatures =
 						},
 						["maps"] = { 627 },	-- Dalaran
 					}),
-					q(43423),	-- A Hero's Weapon
-					q(43370),	-- A New Invention
-					q(40957),	-- A Strong Right Hand
+					q(46336, {	-- A Golden Ticket
+						["sourceQuests"] = { 46246 },	-- Strike Them Down
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 117810 },	-- Nimi Brightcastle
+						["coord"] = { 43.8, 63.2, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
+					q(43423, {	-- A Hero's Weapon
+						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 110505 },	-- Emmarel Shadewarden
+						["coord"] = { 47.7, 49.3, 739 },
+					}),
+					q(43370, {	-- A New Invention
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 110424 },	-- Image of Mimiron
+						["coord"] = { 44.4, 45.0, 739 },
+					}),
+					q(40957, {	-- A Strong Right Hand
+						["sourceQuests"] = { 40955 },	-- Oath of Service
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+					}),
 					q(42436, {	-- Aiding Our Allies
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["classes"] = { HUNTER },
@@ -139,7 +160,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42415, {	-- Champion: Halduron Brightwing
+						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
 						["provider"] = { "n", 108620 },	-- Halduron Brightwing <Ranger-General of the Farstriders>
+						["coord"] = { 49.9, 65.7, 723 },
 						["g"] = {
 							follower(748),	-- Halduron Brightwing
 						},
@@ -168,13 +191,18 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42409, {	-- Champion: Loren Stormhoof
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 107315 },	-- Loren Stormhoof <Skyhorn Emissary>
 						["g"] = {
 							follower(742),	-- Loren Stormhoof
 						},
 					}),
 					q(46048, {	-- Champion: Nighthuntress Syrenne
+						["sourceQuests"] = { 46235 },	-- Secured Surroundings
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
+						["coord"] = { 44.8, 61.1, 646 },
+						["maps"] = { 646 },	-- Broken Shore
 						["g"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
@@ -218,7 +246,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
-					q(45392),	-- Dark Memento
+					q(45392, {	-- Dark Memento
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 105099 },	-- Dark Ranger Velonara
+						["coord"] = { 49.4, 49.7, 739 },
+					}),
 					q(42658, {	-- Delicate Enchantments
 						["sourceQuests"] = { 42657 },	-- Meeting in Moonclaw Vale
 						["classes"] = { HUNTER },
@@ -232,15 +264,31 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
 						["coord"] = { 43.1, 6.1, 739 },
 					}),
-					q(45551),	-- Devastating Effects
-					q(45555, {	-- Felbound Beasts
+					q(45551, {	-- Devastating Effects
+						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be on the quest)
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
+						["coord"] = { 46.4, 34.8, 739 },
 					}),
-					q(46783),	-- Further Advancement
+					q(45555, {	-- Felbound Beasts
+						["sourceQuests"] = { 45554 },	-- Taking Control
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
+						["coord"] = { 57.5, 44.8, 680 },
+						["maps"] = { 680 },	-- Suramar
+					}),
+					q(46783, {	-- Further Advancement
+						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
 					q(46149, {	-- Furthering Knowledge
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43880, {	-- Hitting the Books
+						["classes"] = { HUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42403, {	-- Highmountain Hunters
@@ -291,7 +339,16 @@ _.ExpansionFeatures =
 						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42659, {	-- In Defense of Dalaran
-						i(139707),	-- Hauberk of the Unseen Path
+						["sourceQuests"] = { 
+							44680,	-- Leading by Example
+							42133,	-- Same Day Delivery
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
+						["coord"] = { 43.4, 26.4, 739 },
+						["g"] = {
+							i(139707),	-- Hauberk of the Unseen Path
+						},
 					}),
 					q(42405, {	-- Informing Our Allies
 						["sourceQuests"] = { 42402 },	-- Requesting Reinforcements
@@ -336,7 +393,11 @@ _.ExpansionFeatures =
 						["coord"] = { 60.8, 30.7, 630 },
 						["maps"] = { 630 },	-- Azsuna
 					}),
-					q(42523),	-- Making Contact
+					q(42523, {	-- Making Contact
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
 					q(42657, {	-- Meeting in Moonclaw Vale
 						["sourceQuests"] = { 42656 },	-- Azure Weaponry
 						["classes"] = { HUNTER },
@@ -355,6 +416,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106558 },	-- Mimiron
 					}),
 					q(46337, {	-- Night of the Wilds
+						["sourceQuests"] = { 46336 },	-- A Golden Ticket
 						["classes"] = { HUNTER },
 						["g"] = {
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
@@ -387,14 +449,21 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
 						["coord"] = { 43.1, 6.1, 739 },
 					}),
-					q(44090),	-- Pledge of Loyalty
+					q(44090, {	-- Pledge of Loyalty
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 113327 },	-- Snowfeather
+					}),
 					q(41542, {	-- Preparation for the Hunt
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(45556, {	-- Ready to Strike
+						["sourceQuests"] = { 45555 },	-- Felbound Beasts
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
+						["coord"] = { 55.8, 42.2, 680 },
+						["maps"] = { 680 },	-- Suramar
 					}),
 					q(42399, {	-- Ready to Work
 						["sourceQuests"] = { 42412 },	-- Champion: Huntsman Blake
@@ -415,7 +484,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
-					q(42524),	-- Recruiting The Troops
+					q(42524, {	-- Recruiting The Troops
+						["sourceQuests"] = { 42523 },	-- Making Contact
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
 					q(41540, {	-- Rendezvous with the Courier
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
@@ -457,6 +531,13 @@ _.ExpansionFeatures =
 						["coord"] = { 41.7, 60.0, 641 },
 						["maps"] = { 641 },	-- Val'sharah
 					}),
+					q(46060, {	-- Salvation
+						["sourceQuests"] = { 45556 },	-- Ready to Strike
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
+						["coord"] = { 50.9, 30.7, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(42133, {	-- Same Day Delivery
 						["sourceQuests"] = { 42658 },	-- Delicate Enchantments
 						["classes"] = { HUNTER },
@@ -469,6 +550,16 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(46235, {	-- Secured Surroundings
+						["sourceQuests"] = { 
+							46060,	-- Salvation
+							45557,	-- Unnatural Consequences
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
+						["coord"] = { 50.9, 30.7, 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42395, {	-- Signaling Trouble
 						["sourceQuests"] = { 42393 },	-- Homecoming
@@ -485,7 +576,11 @@ _.ExpansionFeatures =
 						["repeatable"] = true,
 					}),
 					q(45552, {	-- Soothing Wounds
+						["sourceQuests"] = { 45551 },	-- Devastating Effects
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 117308 },	-- D'Bynn
+						["coord"] = { 52.2, 48.9, 680 },
+						["maps"] = { 680 },	-- Suramar
 					}),
 					q(41574, {	-- Stolen Thunder
 						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
@@ -507,9 +602,18 @@ _.ExpansionFeatures =
 						["coord"] = { 36.7, 35.4, 650 },
 						["maps"] = { 650 },	-- Highmountain
 					}),
-					q(40958),	-- Tactical Matters
-					q(45554, {	-- Taking Control
+					q(40958, {	-- Tactical Matters
+						["sourceQuests"] = { 40955 },	-- Oath of Service
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
+						["coord"] = { 42.9, 46.9, 739 },
+					}),
+					q(45554, {	-- Taking Control
+						["sourceQuests"] = { 45553 },	-- The Nighthuntress Beckons
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
+						["coord"] = { 57.5, 44.8, 680 },
+						["maps"] = { 680 },	-- Suramar
 					}),
 					q(42526, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42525 },	-- Troops in the Field
@@ -530,10 +634,6 @@ _.ExpansionFeatures =
 						["coord"] = { 71.0, 50.0, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
-					q(45553, {	-- The Nighthuntress Beckons
-						["classes"] = { HUNTER },
-						["provider"] = { "n", 117308 },	-- D'Bynn
-					}),
 					q(43182, {	-- The Missing Vessel
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["classes"] = { HUNTER },
@@ -546,6 +646,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108375 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.7, 630 },
 						["maps"] = { 630 },	-- Azsuna
+					}),
+					q(45553, {	-- The Nighthuntress Beckons
+						["sourceQuests"] = { 45552 },	-- Soothing Wounds
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 117308 },	-- D'Bynn
+						["coord"] = { 52.2, 48.9, 680 },
+						["maps"] = { 680 },	-- Suramar
 					}),
 					q(42401, {	-- The Scent of Magic
 						["sourceQuest"] = 42400,  -- Missing Mages
@@ -582,8 +689,25 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, 739 },
 					}),
-					q(44211),	-- Unseen Armaments
-					q(44212),	-- Unseen Fate
+					q(45557, {	-- Unnatural Consequences
+						["sourceQuests"] = { 45556 },	-- Ready to Strike
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
+						["coord"] = { 50.9, 30.7, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
+					q(44211, {	-- Unseen Armaments
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 110412 },	-- Berger the Steadfast
+						["coord"] = { 58.4, 48.4, 739 },
+						["description"] = "Requires the |cFFFFD700Fletchery|r order hall upgrade.",
+					}),
+					q(44212, {	-- Unseen Fate
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 110816 },	-- Tu'Las the Gifted
+						["coord"] = { 43.4, 48.2, 739 },
+						["description"] = "Requires the |cFFFFD700Unseen Path|r order hall upgrade.",
+					}),
 					q(42394, {	-- Unseen Protection
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["classes"] = { HUNTER },
@@ -603,11 +727,7 @@ _.ExpansionFeatures =
 					q(44233, {	-- Walk This Way
 						i(139710),	-- Mask of the Unseen Path
 					}),
-					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43423, {	-- A Hero's Weapon
-						sp(219663) -- Heroic Weapons [No item associated]
-					}),
-					--]]
+
 					-- Hunter Hati Reborn Questline (BfA)
 					q(55516, {	-- Spark of Genius (A)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron

@@ -970,10 +970,6 @@ _.Zones =
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
 	--[[ TODO: These quests will be organized Soon™
-				q(43423),	-- A Hero's Weapon
-				q(43370),	-- A New Invention
-				q(40957),	-- A Strong Right Hand
-				q(42436),	-- Aiding Our Allies
 				q(40312),	-- A Timely Opportunity REMOVED
 				q(45766),	-- Albino Elderhorn
 				q(39646),	-- Albino Elderhorn
@@ -981,9 +977,7 @@ _.Zones =
 				q(40413),	-- Amateur Hunters
 				q(42505),	-- Arcanist Shal'iman
 				q(41823),	-- Ashes to Ashes
-				q(42656),	-- Azure Weaponry
 				q(46182),	-- Battle for Highmountain
-				q(47018),	-- Beast Mastery: Rumblings Near Feltotem
 				q(43961),	-- Bestrix
 				q(42417),	-- Bilebrain
 				q(39991),	-- Blessing of Cenarius
@@ -995,16 +989,12 @@ _.Zones =
 				q(44311),	-- Burning Plate of the Worldbreaker Available
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
 				q(41042),	-- Champion Chomper
-				q(42415),	-- Champion: Halduron Brightwing
-				q(42409),	-- Champion: Loren Stormhoof
 				q(43960),	-- Cinderwing
 				q(45350),	-- Countering the Contagion
 				q(42699),	-- Coura, Master of Arcana
 				q(39994),	-- Crab Rider Grmlrml
 				q(41241),	-- Cursed Queenfish Needed
-				q(45392),	-- Dark Memento
 				q(47073),	-- Delivering Lost Knowledge
-				q(45551),	-- Devastating Effects
 				q(40414),	-- Devouring Darkness
 				q(47020),	-- Discipline: Rumblings Near Feltotem
 				q(41191),	-- Drogbar Deception
@@ -1013,8 +1003,6 @@ _.Zones =
 				q(39762),	-- Feltotem Warlock
 				q(39430),	-- Flasking for a Favor
 				q(41822),	-- Following his Hoofsteps
-				q(46783),	-- Further Advancement
-				q(46149),	-- Furthering Knowledge
 				q(41987),	-- Garn
 				q(41833),	-- Grmlrml's Last Ride
 				q(40347),	-- Gurbog da Basher
@@ -1026,8 +1014,6 @@ _.Zones =
 				q(45572),	-- Holding Our Ground
 				q(42286),	-- Houndmaster Stroxis
 				q(40136),	-- Immaculate Stonehide Leather
-				q(42659),	-- In Defense of Dalaran
-				q(41047),	-- Infused with Power
 				q(42376),	-- Inquisitor Tivos
 				q(43957),	-- Jade Darkhaven
 				q(43815),	-- Karthax
@@ -1035,27 +1021,17 @@ _.Zones =
 				q(38907),	-- Keepers of the Hammer
 				q(41193),	-- Laying to Rest
 				q(44059),	-- Legion Attacks
-				q(42385),	-- Lending a Hand
 				q(38785),	-- Living Leystone Sample
 				q(40406),	-- Luggut the Eggeater
 				q(43956),	-- Lysanis Shadesoul
-				q(42523),	-- Making Contact
 				q(38532),	-- Maw of Souls: Hammered By The Storm
-				q(42657),	-- Meeting in Moonclaw Vale
 				q(40242),	-- Mellok, Son of Torok
-				q(42400),	-- Missing Mages
 				q(41188),	-- Neltharion's Lair: Misdirected
 				q(39533),	-- Nogginclobber Arena
-				q(44366),	-- One Last Adventure
 				q(39435),	-- Oubdob da Smasher
 				q(42381),	-- Ox'iloth
 				q(46796),	-- Paragon of Highmountain
-				q(44090),	-- Pledge of Loyalty
-				q(41542),	-- Preparation for the Hunt
 				q(42700),	-- Quin'el, Master of Chillwind
-				q(42399),	-- Ready to Work
-				q(42134),	-- Recruiting More Troops
-				q(42524),	-- Recruiting The Troops
 				q(41540),	-- Rendezvous with the Courier
 				q(38793),	-- Rethu's Experience
 				q(38791),	-- Rethu's Horn
@@ -1079,7 +1055,6 @@ _.Zones =
 				q(40141),	-- Stormscale Sample
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
-				q(40958),	-- Tactical Matters
 				q(40184),	-- Tauren Tanning
 				q(40959),	-- The Campaign Begins
 				q(41829),	-- The Darkfeather Scout
@@ -1098,12 +1073,8 @@ _.Zones =
 				q(47065),	-- Tracking Quest
 				q(39606),	-- Treasures of Deathwing
 				q(38533),	-- Tribal Knowledge
-				q(42525),	-- Troops in the Field
 				q(40423),	-- Unethical Adventurers
-				q(44211),	-- Unseen Armaments
-				q(44212),	-- Unseen Fate
 				q(42280),	-- Vorthax
-				q(44233),	-- Walk This Way
 				q(41820),	-- Walk Without Rhythm
 				q(38786),	-- Where Respect is Due
 				q(41832),	-- White Water Terror

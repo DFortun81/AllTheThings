@@ -541,7 +541,6 @@ _.Zones =
 				}),
 				--[[
 				q(45343),	-- A Curious Contagion
-				q(46336),	-- A Golden Ticket
 				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
@@ -559,7 +558,6 @@ _.Zones =
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
 				q(45574),	-- Fel Ingredients
-				q(45555),	-- Felbound Beasts
 				q(47118),	-- Free The Tormented
 				q(47119),	-- Free The Tormented
 				q(47121),	-- Free The Tormented
@@ -580,9 +578,6 @@ _.Zones =
 				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
 				q(45240),	-- Making Preparations
-				q(47039, {	-- Marksmanship: The Twisted Twin
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(46353),	-- Master Who?
 				q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 				q(43574),	-- Maw of Souls: Maul of the Dead
@@ -597,7 +592,6 @@ _.Zones =
 				q(46802),	-- Paragon of the Legionfall Armies
 				q(39832),	-- Plans and Preparations
 				q(45823),	-- Priest
-				q(45556),	-- Ready to Strike
 				q(43266),	-- Recruiting the Troops
 				q(40419),	-- Rescue Mission
 				q(44889),	-- Resource Management
@@ -612,14 +606,8 @@ _.Zones =
 				q(45815),	-- Rogue
 				q(45348),	-- Safekeeping
 				q(43539),	-- Salanar the Horseman
-				q(46060),	-- Salvation
 				q(41993),	-- Salvation From On High
 				q(45344),	-- Sampling the Source
---]]
-				q(46235, {	-- Secured Surroundings
-					["classes"] = { HUNTER },
-				}),
---[[
 				q(47067),	-- Seeking Lost Knowledge
 				q(47042, {	-- Shadow: The Twisted Twin
 					["races"] = ALLIANCE_ONLY,
@@ -650,7 +638,6 @@ _.Zones =
 				q(43686),	-- The Fourth Horseman
 				q(42537),	-- The King Rises
 				q(46666),	-- The Motherlode
-				q(45553),	-- The Nighthuntress Beckons
 				q(44775),	-- The Peak of Bones
 				q(46674),	-- The Preservation of Nature
 				q(43249),	-- The Raven's Eye
@@ -666,7 +653,6 @@ _.Zones =
 				q(41922),	-- Traitor!
 				q(43267),	-- Troops in the Field
 				q(44234),	-- Unleashing our Wrath
-				q(45557),	-- Unnatural Consequences
 				q(45826),	-- Warlock
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!

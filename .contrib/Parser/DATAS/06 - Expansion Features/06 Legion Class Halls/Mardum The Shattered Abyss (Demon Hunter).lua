@@ -164,7 +164,7 @@ _.ExpansionFeatures =
 						["coord"] = { 60.0, 43.8, 720 },
 						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 110433 },	-- Slitesh
-						["description"] = "Only available if you you have the |cFFFFD700Fel Armaments|r order hall upgrade.",
+						["description"] = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
 					}),
 					q(42653, {	-- Champion: Akama
 						["sourceQuests"] = { 
