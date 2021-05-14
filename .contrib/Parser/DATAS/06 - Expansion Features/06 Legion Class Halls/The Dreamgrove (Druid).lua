@@ -713,7 +713,7 @@ _.ExpansionFeatures =
 					}),
 					q(44232, {	-- The Grove Provides
 					--	this is now available to level 45 characters (was previously 110).  unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
-					--	["sourceQuests"] = { },	-- 
+					--	["sourceQuests"] = { },	--
 						["provider"] = { "n", 112323 },	-- Amurra Thistledew
 						["classes"] = { DRUID },
 						["coord"] = { 40.0, 24.8, 747 },
@@ -915,7 +915,7 @@ _.ExpansionFeatures =
 					q(44237),	-- Ancients of War
 					q(41413),	-- What Could Go Wrong?
 
-					--[[ Artifact Appearance  Quests Commented Out For Now
+					--[[ TODO: Artifact Appearance  Quests Commented Out For Now
 					o(253118, {	-- Dreamgrove Blossoms
 						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),

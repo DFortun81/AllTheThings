@@ -469,7 +469,6 @@ _.Zones =
 				q(33944, {	-- And the Elekk Too?!
 					["coord"] = { 30.9, 70.8, 535 },
 					["icon"] = "Interface\\Icons\\inv_pet_baby_elekk_blue",
-					--["objectID"] = 226987	-- Ricky
 				}),
 				q(33967, {	-- Antivenin
 					["provider"] = { "n", 78028 },	-- Soulbinder Tuulani
