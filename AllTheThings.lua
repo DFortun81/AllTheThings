@@ -1712,6 +1712,9 @@ local function CreateHash(t)
 					hash = "R" .. race .. hash;
 				end
 			end
+		elseif key == "spellID" and t.itemID then
+			-- Some recipes teach the same spell, so need to differentiate by their itemID as well
+			hash = hash .. ":" .. t.itemID;
 		end
 		rawset(t, "hash", hash);
 		return hash;
@@ -3261,8 +3264,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local uniques = {};
 		for i,o in ipairs(group) do
 			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-			if not uniques[tostring(o)] then
-				uniques[tostring(o)] = true;
+			if not uniques[o] then
+				uniques[o] = true;
 				tinsert(cloned, CloneData(o));
 			end
 		end
