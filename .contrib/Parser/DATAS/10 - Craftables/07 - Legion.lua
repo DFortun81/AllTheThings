@@ -1,7 +1,6 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-
 _.Craftables =
 {
 	tier(7, {	-- Legion
@@ -305,6 +304,25 @@ _.Craftables =
 			filter(54, {	-- Relics
 				i(136692),	-- Aqual Mark
 				i(136693),	-- Straszan Mark
+			}),
+		}),
+		prof(FISHING, {
+			spell(201943, {	-- Better Luck Next Time
+				["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+				["g"] = {
+					i(139408, {	-- Deck Sandals
+						["bonusID"] = 1812,
+					}),
+					i(139407, {	-- Diver's Chain Boots
+						["bonusID"] = 1812,
+					}),
+					i(139405, {	-- Kul'Tiras Marine Issue Boots
+						["bonusID"] = 1812,
+					}),
+					i(139406, {	-- Sea Dog Boots
+						["bonusID"] = 1812,
+					}),
+				},
 			}),
 		}),
 		prof(JEWELCRAFTING, {
