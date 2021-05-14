@@ -131,6 +131,7 @@ _.Zones =
 				}),
 				q(58717, {	-- Bell of Remembrance
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["coord"] = { 67.0, 33.6, REVENDRETH },
 					["provider"] = { "i", 174674 },	-- Bell of Remembrance
 					["crs"] = { 160716 },	-- Sinstone Rampager
 				}),

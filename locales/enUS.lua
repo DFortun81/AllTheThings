@@ -234,6 +234,7 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
+	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
 
 	-- Settings.lua
 		-- General tab

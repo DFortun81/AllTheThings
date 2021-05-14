@@ -12924,6 +12924,9 @@ RowOnEnter = function (self)
 					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
 				end
 			end
+			if reference.questID then
+				GameTooltip:AddLine(L["QUEST_ROW_INSTRUCTIONS"], 1, 1, 1);
+			end
 		end
 		-- Add info in tooltip for the header of a Window for whether it is locked or not
 		if self.index == 0 then
