@@ -1948,28 +1948,29 @@ local function HasExpandedSubgroup(group)
 	end
 	return false;
 end
-local function ReapplyExpand(g, g2)
-	for j,p in ipairs(g2) do
-		local found = false;
-		local key = p.key;
-		local id = p[key];
-		for i,o in ipairs(g) do
-			if o[key] == id then
-				found = true;
-				if o.expanded then
-					if not p.expanded then
-						p.expanded = true;
-						if o.g and p.g then ReapplyExpand(o.g, p.g); end
-					end
-				end
-				break;
-			end
-		end
-		if not found then
-			ExpandGroupsRecursively(p, true);
-		end
-	end
-end
+-- TODO: remove if really unnecessary
+-- local function ReapplyExpand(g, g2)
+-- 	for j,p in ipairs(g2) do
+-- 		local found = false;
+-- 		local key = p.key;
+-- 		local id = p[key];
+-- 		for i,o in ipairs(g) do
+-- 			if o[key] == id then
+-- 				found = true;
+-- 				if o.expanded then
+-- 					if not p.expanded then
+-- 						p.expanded = true;
+-- 						if o.g and p.g then ReapplyExpand(o.g, p.g); end
+-- 					end
+-- 				end
+-- 				break;
+-- 			end
+-- 		end
+-- 		if not found then
+-- 			ExpandGroupsRecursively(p, true);
+-- 		end
+-- 	end
+-- end
 
 local ResolveSymbolicLink;
 (function()
@@ -2763,23 +2764,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 
-			if not app.MODE_DEBUG then
-				local regroup = {};
-				if app.MODE_ACCOUNT then
-					for i,j in ipairs(group) do
-						if app.RecursiveUnobtainableFilter(j) then
-							tinsert(regroup, j);
-						end
-					end
-				else
-					for i,j in ipairs(group) do
-						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-							tinsert(regroup, j);
-						end
-					end
-				end
-				group = regroup;
-			end
+			-- Seems pretty pointless now since all results at the end will pass through a RecursiveGroupRequirementsFilter on every object
+			-- if not app.MODE_DEBUG then
+			-- 	print("Pre-Filtering NPC Search",group and #group)
+			-- 	local regroup = {};
+			-- 	if app.MODE_ACCOUNT then
+			-- 		for i,j in ipairs(group) do
+			-- 			if app.RecursiveUnobtainableFilter(j) then
+			-- 				tinsert(regroup, j);
+			-- 			end
+			-- 		end
+			-- 	else
+			-- 		for i,j in ipairs(group) do
+			-- 			if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+			-- 				tinsert(regroup, j);
+			-- 			end
+			-- 		end
+			-- 	end
+			-- 	group = regroup;
+			-- end
 			if #group > 0 then
 				-- collect descriptions from all search groups and insert into the info for the search
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" and paramA ~= "currencyID" then
@@ -3435,7 +3438,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if topLevelSearch then
 			group.total = 0;
 			group.progress = 0;
-			group.parent = nil;
 			BuildGroups(group, group.g);
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
@@ -3604,7 +3606,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
-		-- print("TopLevelSearch-Done",search)
+		-- if not working then
+		-- 	print("TopLevelSearch-Done",search,group.text or (group.key and group.key .. group[group.key]),group)
+		-- end
 		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 	end
@@ -4205,27 +4209,9 @@ app.SearchForObject = function(field, id)
 		end
 	end
 end
--- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
--- will attempt to return a filtered clone as a priority
+-- This method performs the SearchForObject logic and returns a cloned instance of the resulting group
 app.SearchForObjectClone = function(field, id)
-	local fcache = SearchForField(field, id);
-	if fcache and #fcache > 0 then
-		-- find a filter-match object first
-		local fcacheObj;
-		for i=1,#fcache,1 do
-			fcacheObj = fcache[i];
-			if fcacheObj[field] == id and app.RecursiveGroupRequirementsFilter(fcacheObj) then
-				return CloneData(fcacheObj);
-			end
-		end
-		-- otherwise just find the first matching object
-		for i=1,#fcache,1 do
-			fcacheObj = fcache[i];
-			if fcacheObj[field] == id then
-				return CloneData(fcacheObj);
-			end
-		end
-	end
+	return CloneData(app.SearchForObject(field, id));
 end
 
 -- Item Information Lib
@@ -11364,15 +11350,17 @@ function app:CreateMiniListForGroup(group)
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone/search initially so as to not let popout operations modify the source data
-		if not group.isBaseSearchResult then
-			-- make a search for this group if it is an item/currency and not already a container for things
-			if not group.g and (group.itemID or group.currencyID) then
-				local cmd = group.key .. ":" .. group[group.key];
-				group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			else
-				group = CloneData(group);
-			end
-		end
+		group = CloneData(group);
+		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
+		-- if not group.isBaseSearchResult then
+		-- 	-- make a search for this group if it is an item/currency and not already a container for things
+		-- 	if not group.g and (group.itemID or group.currencyID) then
+		-- 		local cmd = group.key .. ":" .. group[group.key];
+		-- 		group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		-- 	else
+		-- 		group = CloneData(group);
+		-- 	end
+		-- end
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		if group.cost then app.BuildCost(group); end
 		popout = app:GetWindow(suffix);

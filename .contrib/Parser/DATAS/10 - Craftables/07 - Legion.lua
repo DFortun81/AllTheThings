@@ -208,33 +208,6 @@ _.Craftables =
 				i(136687),	-- "The Felic"*
 				i(136688),	-- Shockinator*
 			}),
-			n(-494, {	-- Miscellaneous
-				q(40753, { -- Blingtron 6000
-					["isDaily"] = true,
-					["provider"] = { "n", 101527 },    -- Blingtron 6000
-					["g"] ={
-						i(132892, {	-- Blingtron 6000 Gift Package
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(87251),	-- Geosynchronous World Spinner Mount
-							i(41508),	-- Mechano-Hog Mount
-							i(44413),	-- Mekgineer's Chopper Mount
-							i(136911),	-- Knockoff Blingtron
-							i(103670),	-- Lil'Bling Pet
-							i(15996),	-- Lifelike Mechanical Toad Pet
-							i(11826),	-- Lil' Smoky Pet
-							i(4401),	-- Mechanical Squirrel Box Pet
-							i(11825),	-- Pet Bombling
-							i(115483),	-- Sky-Bo Pet
-							i(21277),	-- Tranquil Mechanical Yeti Pet
-							i(123851),	-- Photo B.O.M.B. Toy
-							i(136631),	-- Surface-to-Infernal Rocket Launcher
-							i(136630),	-- "Twirling Bottom" Repeaater"
-							i(136629),	-- Felgibber Shotgun
-							i(136632),	-- Chaos Blaster
-						}),
-					},
-				})
-			}),
 			{
 				["name"] = "Robotics",
 				["categoryID"] = 474,

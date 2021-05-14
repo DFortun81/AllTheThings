@@ -273,26 +273,7 @@ _.Craftables =
 				i(100905),	-- Rascal-Bot*
 			}),
 			filter(102, {	-- Toys
-				i(87214, {	-- Blingtron 4000*
-					q(31752, { -- Blingtron 4000
-						["provider"] = { "n", 43929 },    -- Blingtron 4000
-						["isDaily"] = 1,
-						["g"] = {
-							i(86623, {	-- Blingtron 4000 Gift Package
-									i(87250),	-- Depleted-Kyparium Rocket Mount
-									i(87251),	-- Geosynchronous World Spinner Mount
-									i(41508),	-- Mechano-Hog Mount
-									i(44413),	-- Mekgineer's Chopper Mount
-									i(103670),	-- Lil' Bling Pet
-									i(15996),	-- Lifelike Mechanical Toad Pet
-									i(11826),	-- Lil' Smoky Pet
-									i(4401),	-- Mechanical Squirrel Box Pet
-									i(11825),	-- Pet Bombling
-									i(21277),	-- Tranquil Mechanical Yeti Pet
-							}),
-						},
-					}),
-				}),
+				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
 			n(-319, {	-- Weapons
