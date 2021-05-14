@@ -14255,7 +14255,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							end
 							group = nil;
 						elseif group.key == "speciesID" then
-							group = app.CreateNPC(-25, { g = { group } });
+							group = app.CreateFilter(101, { g = { group } });
 						elseif group.key == "questID" then
 							group = app.CreateNPC(-17, { g = { group } });
 						elseif group.key == "criteriaID" and group.achievementID then
