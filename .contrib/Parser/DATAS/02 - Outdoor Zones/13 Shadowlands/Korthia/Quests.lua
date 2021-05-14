@@ -443,6 +443,7 @@ _.Zones =
 				}),
 				q(63784, {	-- Gold's No Object
 				--	awarded i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
+				--	awarded i(186707),	-- Gold Filled Crate on 5/14
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,

@@ -347,6 +347,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
 					}),
+					q(46103, {	-- Dread Infiltrators
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 45.0, 64.0, 646 },
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 119259 },	-- Apothecary Keever
+						["sourceQuest"] = 46246,	-- Strike Them Down
+					}),
 					q(45835, {	-- False Orders (A)
 						["maps"] = { 630 },	-- Azsuna
 						["coord"] = { 57.7, 63.5, 630 },
@@ -408,14 +415,22 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46089, {	-- Hiding in Plain Sight (A)
-						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { ROGUE },
+						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["sourceQuest"] = 46103,	-- Dread Infiltrators
+						["g"] = {
+							i(143493),	-- Shadowblade's Murderous Omen
+						},
 					}),
 					q(46178, {	-- Hiding in Plain Sight (H)
-						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["classes"] = { ROGUE },
+						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["sourceQuest"] = 46103,	-- Dread Infiltrators
+						["g"] = {
+							i(143493),	-- Shadowblade's Murderous Omen
+						},
 					}),
 					q(47607, {	-- High Fash-Djinn
 						["coord"] = { 45.0, 26.8, 626 },

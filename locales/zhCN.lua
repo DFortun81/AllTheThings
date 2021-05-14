@@ -597,6 +597,8 @@ for key,value in pairs({
 		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]",			-- Capital Gardens [West - Elves] 中心花园
 		[-15] = "常规商人物品",										-- Common Vendor Items
 		[-16] = "稀有",												-- Rares
+		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
+		--TODO: [-21] = "Captains",									-- Captains
 
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
@@ -704,6 +706,7 @@ for key,value in pairs({
 		--TODO: [-395] = "The Crimson Halls",						-- The Crimson Halls
 		[-396] = "霜翼大厅",											-- The Frostwing Halls
 		--TODO: [-397] = "Outposts",								-- Outposts
+		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest

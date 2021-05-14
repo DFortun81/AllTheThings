@@ -760,35 +760,35 @@ app.L = {
 		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
 
 		-- "Legit" Holidays
-		-- [235442] = app.asset("Holiday_brewfest"),	-- Brewfest
-		-- [235445] = app.asset("Holiday_Children"),	-- Children's Week
-		-- [235448] = app.asset("Holiday_dmf"),	-- Darkmoon Faire
-		-- [307365] = app.asset("Holiday_Day_of_the_Dead"),	-- Day of the Dead
-		-- [235485] = app.asset("Holiday_winter_veil"),	-- Feast of Winter Veil
+		[235442] = app.asset("Holiday_brewfest"),	-- Brewfest
+		[235445] = app.asset("Holiday_Children"),	-- Children's Week
+		[235448] = app.asset("Holiday_dmf"),	-- Darkmoon Faire
+		[307365] = app.asset("Holiday_Day_of_the_Dead"),	-- Day of the Dead
+		[235485] = app.asset("Holiday_winter_veil"),	-- Feast of Winter Veil
 		-- [235457] = app.asset("TODO"),	-- Fireworks Spectacular
-		-- [235462] = app.asset("Holiday_hallows_end"),	-- Hallow's End
-		-- [235465] = app.asset("Holiday_Harvestfest"),	-- Harvest Festival
+		[235462] = app.asset("Holiday_hallows_end"),	-- Hallow's End
+		[235465] = app.asset("Holiday_Harvestfest"),	-- Harvest Festival
 		[235468] = app.asset("love_is_in_the_air"),	-- Love is in the Air
-		-- [235471] = app.asset("Holiday_Lunar"),	-- Lunar Festival
-		-- [235474] = app.asset("Holiday_Midsummer"),	-- Midsummer Fire Festival
+		[235471] = app.asset("Holiday_Lunar"),	-- Lunar Festival
+		[235474] = app.asset("Holiday_Midsummer"),	-- Midsummer Fire Festival
 		[235477] = app.asset("noblegarden"),	-- Noblegarden
-		-- [235466] = app.asset("Holiday_Pilgrim"),	-- Pilgrim's Bounty
-		-- [235481] = app.asset("Holiday_Pirate"),	-- Pirates' Day
+		[235466] = app.asset("Holiday_Pilgrim"),	-- Pilgrim's Bounty
+		[235481] = app.asset("Holiday_Pirate"),	-- Pirates' Day
 
 		-- "Micro" Holidays
 		-- [1671624] = app.asset("TODO"),	-- Auction House Dance Party
-		-- [1574965] = app.asset("Holiday_call_of_the_scarab"),	-- Call of the Scarab
-		-- [2827082] = app.asset("Holiday_Tshirt"),	-- Free T-Shirt Day
+		[1574965] = app.asset("Holiday_call_of_the_scarab"),	-- Call of the Scarab
+		[2827082] = app.asset("Holiday_Tshirt"),	-- Free T-Shirt Day
 		-- [1572471] = app.asset("TODO"),	-- Glowcap Festival
 		-- [1574966] = app.asset("TODO"),	-- Hatching of the Hippogryphs
 		-- [1574967] = app.asset("TODO"),	-- Kirin Tor Tavern Crawl
 		-- [2827083] = app.asset("TODO"),	-- Luminous Luminaries
-		-- [1572472] = app.asset("Holiday_Marchofmurloc"),	-- March of the Tadpoles
+		[1572472] = app.asset("Holiday_Marchofmurloc"),	-- March of the Tadpoles
 		-- [1671628] = app.asset("TODO"),	-- Moonkin Festival
 		-- [1572475] = app.asset("TODO"),	-- Spring Balloon Festival
 		-- [1671627] = app.asset("TODO"),	-- The Great Gnomeregan Run
 		-- [1572478] = app.asset("TODO"),	-- Thousand Boat Bash
-		-- [1671631] = app.asset("Holiday_Trialofstyle"),	-- Trial of Style
+		[1671631] = app.asset("Holiday_Trialofstyle"),	-- Trial of Style
 		-- [1574970] = app.asset("TODO"),	-- Un'Goro Madness
 		-- [1572479] = app.asset("TODO"),	-- Volunteer Guard Day
 		-- [2827084] = app.asset("TODO"),	-- Wanderer's Festival
@@ -818,7 +818,7 @@ app.L = {
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		[-21] = "Interface\\Icons\\inv_misc_enggizmos_17",									-- Containers
+		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green",									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17",										-- Raid Finder Bag
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
@@ -1022,6 +1022,7 @@ app.L = {
 		[-395] = "Interface\\Icons\\achievement_dungeon_crimsonhall",						-- The Crimson Halls
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
+		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",								-- Miscellaneous
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
@@ -1528,7 +1529,7 @@ app.L = {
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
 		[-18] = QUEST_REWARDS, 													-- Rewards
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-21] = AUCTION_CATEGORY_CONTAINERS,									-- Containers
+		[-21] = "Captains",
 
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 
@@ -1741,6 +1742,7 @@ app.L = {
 		[-395] = "The Crimson Halls",											-- The Crimson Halls
 		[-396] = "The Frostwing Halls",											-- The Frostwing Halls
 		[-397] = "Outposts",													-- Outposts
+		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest

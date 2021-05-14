@@ -38,20 +38,6 @@ _.Zones =
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
 					["coord"] = { 55.6, 60.8, 71 },
 				}),
-				q(8925,  {	-- A Portable Power Source
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8928,  {	-- A Shifty Merchant
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8925,	-- A Portable Power Source
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(26889, {	-- All Cheered Out
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["coord"] = { 72.1, 45.2, 71 },
@@ -399,16 +385,6 @@ _.Zones =
 						i(165845),	-- Feathers (PET!)
 					},
 				}),
-				q(8924,  {	-- Hunting for Ectoplasm
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuests"] = {
-						8922,	-- A Supernatural Device [Alliance]
-						8921,	-- The Ectoplasmic Distiller [Horde]
-					},
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25521, {	-- I'm With Scorpid
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, 71 },
@@ -683,14 +659,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9634)),	-- Skilled Handling Gloves
 					},
 				}),
-				q(8977,  {	-- Return to Deliana
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(2977,  {	-- Return to Ironforge
 					["model"] = 201041,
 					["coord"] = { 37.6, 81.4, 71 },
@@ -698,14 +666,6 @@ _.Zones =
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8978,  {	-- Return to Mokvar
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(53819, {	-- Return to the Nest
@@ -948,13 +908,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16739)),	-- Rugwood Mantle
 						un(REMOVED_FROM_GAME, i(16738)),	-- Witherseed Gloves
 					},
-				}),
-				q(8921,  {	-- The Ectoplasmic Distiller
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8923,	-- A Supernatural Device
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead

@@ -1829,6 +1829,15 @@ _.ExpansionFeatures =
 										}),
 										i(182296, {	-- Letter of Note, Premier Party Planner
 											["cost"] = { { "c", 1820, 85 } },
+											["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+											["g"] = {
+												q(61493, {	-- Dredger Pool Unlocked on Character
+													["name"] = "Dredger Pool Unlocked",
+												}),
+												q(61494, {	-- Guardhouse Unlocked on Character
+													["name"] = "Guardhouse Unlocked",
+												}),
+											},
 										}),
 										i(182973, {	-- Leather Dredger Coif
 											["cost"] = { { "c", 1820, 10 } },
@@ -1847,6 +1856,7 @@ _.ExpansionFeatures =
 										}),
 										i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
 											["cost"] = { { "c", 1820, 85 } },
+											["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 										}),
 									},
 								}),

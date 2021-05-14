@@ -1386,19 +1386,40 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 end
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
-	if specs then
-		if #specs > 0 then
-			local specCount = #specs;
-			for i=specCount,1,-1 do
-				local specID = specs[i];
-				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-				if class ~= app.Class or not name or name == "" then
-					table.remove(specs, i);
-				end
+	if specs and #specs > 0 then
+		local specCount, name, class, _ = #specs;
+		for i=specCount,1,-1 do
+			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
+			if class ~= app.Class or not name or name == "" then
+				table.remove(specs, i);
 			end
-			table.sort(specs);
+		end
+		table.sort(specs);
+	end
+end
+-- Returns a string containing the spec icons, followed by their respective names if desired
+local function GetSpecsString(specs, includeNames, trim)
+	local specCount, icons, name, icon, _ = #specs, {};
+	if includeNames then
+		for i=#specs,1,-1 do
+			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 4 - 3] = "  |T";
+			icons[i * 4 - 2] = icon;
+			icons[i * 4 - 1] = ":0|t ";
+			icons[i * 4] = name;
+		end
+	else
+		for i=#specs,1,-1 do
+			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 3 - 2] = "|T";
+			icons[i * 3 - 1] = icon;
+			icons[i * 3] = ":0|t ";
 		end
 	end
+	if trim then
+		return string.match(table.concat(icons),'^%s*(.*%S)');
+	end
+	return table.concat(icons);
 end
 -- Returns proper, class-filtered specs for a given itemID
 local function GetFixedItemSpecInfo(itemID)
@@ -1715,6 +1736,9 @@ local function CreateHash(t)
 					hash = "R" .. race .. hash;
 				end
 			end
+		elseif key == "spellID" and t.itemID then
+			-- Some recipes teach the same spell, so need to differentiate by their itemID as well
+			hash = hash .. ":" .. t.itemID;
 		end
 		rawset(t, "hash", hash);
 		return hash;
@@ -2761,7 +2785,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if #group > 0 then
 				-- collect descriptions from all search groups and insert into the info for the search
-				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" and paramA ~= "currencyID" then
 					local descriptions = {};
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
@@ -3145,12 +3169,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local specs = GetFixedItemSpecInfo(itemID);
 				-- specs is already filtered/sorted to only current class
 				if #specs > 0 then
-					local spec_label = "";
-					for key, specID in ipairs(specs) do
-						local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-						spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-					end
-					tinsert(info, { right = spec_label });
+					tinsert(info, { right = GetSpecsString(specs, true, true) });
 				elseif sourceID then
 					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
 				end
@@ -3264,8 +3283,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local uniques = {};
 		for i,o in ipairs(group) do
 			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-			if not uniques[tostring(o)] then
-				uniques[tostring(o)] = true;
+			if not uniques[o] then
+				uniques[o] = true;
 				tinsert(cloned, CloneData(o));
 			end
 		end
@@ -3316,7 +3335,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		for i,o in ipairs(group) do
 			-- If the obj "is" the root obj via bi-directional key
 			-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+			if (root.hash and root.hash == o.hash) or root[o.key] == o[o.key] or root[root.key] == o[root.key] then
 				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
 				MergeProperties(root, o);
 				-- Merge the g of the obj into the merged results
@@ -3340,11 +3359,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			-- print(#root.g,"Merge total");
 		end
-		-- Loop through all skipped objects
-		for i,o in ipairs(skipped) do
-			-- Merge the obj into the merged results
-			-- print("Merge skip",o.key,o[o.key])
-			MergeObject(root.g, o);
+		-- Loop through all skipped objects if the root group is something which can bypass group filters
+		if paramA ~= "currencyID" then
+			for i,o in ipairs(skipped) do
+				-- Merge the obj into the merged results
+				-- print("Merge skip",o.key,o[o.key])
+				MergeObject(root.g, o);
+			end
 		end
 		-- Resolve symbolic links for the root
 		-- print("Resolve Root",root.key,root[root.key])
@@ -3479,10 +3500,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					right = item.right;
 					local specs = group.specs;
 					if specs and #specs > 0 then
-						for i,spec in ipairs(specs) do
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-							right = "|T" .. icon .. ":0|t " .. right;
-						end
+						right = GetSpecsString(specs, false, false) .. right;
 					end
 					-- If this group has customCollect requirements, list them for clarity
 					if group.customCollect then
@@ -3510,7 +3528,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							field = "mapID";
 							id = id[1];
 						end
-						local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationGroup = app.SearchForObject(field, id) or (field == "mapID" and C_Map_GetMapInfo(id));
 						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
 						if locationName then
@@ -5192,6 +5210,10 @@ app.TryColorizeName = function(group, name)
 end
 
 -- Tooltip Functions
+-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
+local function CanAttachTooltips()
+	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
+end
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
 		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
@@ -5271,11 +5293,11 @@ end
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
-	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled") then
-		local numLines = self:NumLines();
-		if numLines < 1 then
-			return false
-		end
+	local numLines = self:NumLines();
+	if numLines < 1 then
+		return false
+	end
+	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
 		if link then
@@ -5531,8 +5553,7 @@ end
 		-- print("set currency tooltip");
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
-
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if CanAttachTooltips() then
 			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
@@ -5544,8 +5565,7 @@ end
 		-- this only runs once per tooltip show
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
-
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if CanAttachTooltips() then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
 			local info = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
 			local name, isHeader = info.name, info.isHeader;
@@ -5576,7 +5596,7 @@ end
 	GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardID)
 		-- Only call to the base functionality if it is unknown.
 		GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardID);
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if CanAttachTooltips() then
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
 			if itemID then
 				if spec == "item" then
@@ -5593,7 +5613,7 @@ end
 	GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
 		-- Only call to the base functionality if it is unknown.
 		GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if CanAttachTooltips() then
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
 			if itemID then
 				if spec == "item" then
@@ -5610,7 +5630,7 @@ end
 	local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
 	GameTooltip.SetToyByItemID = function(self, itemID)
 		GameTooltip_SetToyByItemID(self, itemID);
-		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
+		if CanAttachTooltips() then
 			AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 			self:Show();
 		end
@@ -5652,7 +5672,7 @@ end
 	};
 	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-		if app.Settings:GetTooltipSetting("Enabled") and (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) then
+		if CanAttachTooltips() then
 			-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
 			-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
 			-- //Interface//FrameXML//ReputationFrame.lua Segment code
@@ -10237,17 +10257,26 @@ end
 app.RecursiveGroupRequirementsFilter = function(group)
 	-- if not app.VerifyRecursion(group) then return; end
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		-- this logic was to fix Blingtrons since they exist on their own, but are nested under Engineering
+		-- But it causes other situations where specific NPC sells an item but that NPC can only be accessible by a specific class/race/etc.
+		-- and the restriction is applied higher up. Instead of making those restrictions propgate to thousands of objects in the game, we just need
+		-- to fix source listings which are nested under inaccurate requirements
+
 		-- if this group is an actual in-game 'thing', there's no reason to continue checking the parents, since it can exist on its own
-		local key = group.key;
-		local id = key and tonumber(group[key]);
-		if id and id > 0 and
-			(key == "npcID" or
-			key == "creatureID" or
-			key == "objectID" or
-			key == "questID" or
-			(key == "itemID" and app.FilterItemBind(group))) then
-			return true;
-		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent) end;
+		-- local key = group.key;
+		-- local id = key and tonumber(group[key]);
+		-- if id and id > 0 and
+		-- 	(key == "npcID" or
+		-- 	key == "creatureID" or
+		-- 	key == "objectID" or
+		-- 	key == "questID" --or
+		-- 	-- (key == "itemID" and app.FilterItemBind(group))
+		-- 	)
+		-- 	then return true;
+		-- elseif group.sourceParent or group.parent then
+		if group.sourceParent or group.parent then
+			return app.RecursiveGroupRequirementsFilter(group.sourceParent or group.parent)
+		end;
 		return true;
 	-- elseif app.DEBUG_PRINT then
 	-- 	print("FILTERED FROM", app.DEBUG_PRINT)
@@ -11874,23 +11903,21 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
-		local iconAdjust = (summary and string.find(summary, "|T") and -1) or 0;
+		local iconAdjust;
 		if not summary then
 			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
 			else
 				summary = "---";
 			end
+			iconAdjust = 0;
+		else
+			iconAdjust = string.find(summary, "|T") and -1 or 0;
 		end
-		local specs = data.specs;
+		local specs, icons = data.specs, {};
 		if specs and #specs > 0 then
-			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
-			for i=#specs,1,-1 do
-				local spec = specs[i]
-				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-				summary = "|T" .. icon .. ":0|t " .. summary;
-				iconAdjust = iconAdjust - 1;
-			end
+			summary = GetSpecsString(specs, false, false) .. summary;
+			iconAdjust = iconAdjust - #specs;
 		end
 		row.Summary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
@@ -12844,7 +12871,7 @@ RowOnEnter = function (self)
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						nq = app.SearchForObjectClone("questID", nextQuestID);
+						nq = app.SearchForObject("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
@@ -17129,17 +17156,21 @@ end):Show();
 -- WARNING: DEV ONLY END
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
-	local link = C_ToyBox_GetToyLink(itemID);
-	if link then
-		AttachTooltipSearchResults(self, link, SearchForLink, link);
-		self:Show();
+	if CanAttachTooltips() then
+		local link = C_ToyBox_GetToyLink(itemID);
+		if link then
+			AttachTooltipSearchResults(self, link, SearchForLink, link);
+			self:Show();
+		end
 	end
 end)
 hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reagentID, ...)
-	local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
-	if link then
-		AttachTooltipSearchResults(self, link, SearchForLink, link);
-		self:Show();
+	if CanAttachTooltips() then
+		local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
+		if link then
+			AttachTooltipSearchResults(self, link, SearchForLink, link);
+			self:Show();
+		end
 	end
 end)
 -- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(35, {	-- Blackrock Mountain
+		m(BLACKROCK_MOUNTAIN, {
 			n(RARES, {
 				n(50839, { 	-- Chromehound
 					["description"] = "Patrols around the circular path above the lava.",

@@ -880,12 +880,6 @@ _.Zones =
 				})),
 
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
-				q(63655, {	-- "NYI Medallion of Wrath"
-				--	TODO: this quest may change, its name/contents are clearly a WIP
-					["sourceQuests"] = { 63654 },	-- The Nathrezim
-					["provider"] = { "n", 178413 },	-- Prince Renathal
-					["coord"] = { 23.0, 45.8, REVENDRETH },
-				}),
 				q(63672, {	-- A Cry From the Heart
 				--	TODO: 'nyi medallion of wrath' is still not fully implemented, but w/e that quest winds up being may eventually be the true SQ.  until then, the previous quest is enough to continue the venthyr campaign
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
@@ -991,6 +985,12 @@ _.Zones =
 					["provider"] = { "n", 179327 },	-- Mal'Ganis
 					["coord"] = { 37.9, 23.4, REVENDRETH },
 				}),
+				q(63655, {	-- Medallion of Wrath
+				--	TODO: this quest may change, it's not fully implemented/cannot be turned in
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
 				q(63648, {	-- Nal'ragas
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
@@ -1053,6 +1053,11 @@ _.Zones =
 						1967,	-- TG106_Floor
 						1969,	-- TG108_Floor
 					},
+				}),
+				q(63656, {	-- The Meaning of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
 				}),
 				q(63654, {	-- The Nathrezim
 					["sourceQuests"] = { 63653 },	-- The Power of a Crown

@@ -1,16 +1,71 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(1, {	-- Classic
+_.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
 	inst(742, {	-- Blackwing Lair
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["mapID"] = 287,
+		["description"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
+		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
+		["mapID"] = BLACKWING_LAIR,
 		["maps"] = { 288, 289, 290 },
-		["coord"] = { 64.2, 71.0, 33 },	-- Blackwing Lair, Blackrock Mountain [Blackrock Spire]
-		["g"] = {
+		-- #if AFTER WOD
+		["sourceQuest"] = 7761,	-- Blackhand's Command
+		-- #endif
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = lvlsquish(50, 25, 50),
+		["groups"] = {
+			n(QUESTS, {
+				q(7783, {	-- The Lord of Blackrock [Horde]
+					["provider"] = { "i", 19002 },	-- Head of Nefarian
+					["races"] = HORDE_ONLY,
+				}),
+				q(7781, {	-- The Lord of Blackrock [Alliance]
+					["provider"] = { "i", 19003 },	-- Head of Nefarian
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7782, {	-- The Lord of Blackrock
+					-- #if BEFORE CATA
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78, 18, STORMWIND_CITY },
+					-- #else
+					-- #if AFTER LEGION
+					["qg"] = 107574,	-- Anduin Wrynn
+					-- #else
+					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
+					-- #endif
+					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					-- #endif
+					["sourceQuest"] = 7781,	-- The Lord of Blackrock
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(19366), 	-- Master Dragonslayer's Orb
+						i(19383),	-- Master Dragonslayer's Medallion
+						i(19384),	-- Master Dragonslayer's Ring
+					},
+				}),
+				q(7784, {	-- The Lord of Blackrock
+					-- #if BEFORE CATA
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32, 37.8, ORGRIMMAR },
+					-- #else
+					-- #if AFTER LEGION
+					["qg"] = 14720,	-- High Overlord Saurfang
+					-- #elseif AFTER CATA
+					["qg"] = 39605,	-- Garrosh Hellscream <Warchief>
+					-- #else
+					["qg"] = 86832,	-- Vol'jin <Warchief>
+					-- #endif
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					-- #endif
+					["sourceQuest"] = 7783,	-- The Lord of Blackrock
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(19383),	-- Master Dragonslayer's Medallion
+						i(19366),	-- Master Dragonslayer's Orb
+						i(19384),	-- Master Dragonslayer's Ring
+					},
+				}),
+			}),
 			n(ZONEDROPS, {
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
@@ -58,6 +113,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18562, {	-- Elementium Ingot
 					["crs"] = {
 						13996,	-- Blackwing Technician
+						14401,	-- Master Elemental Shaper Krixix
 					},
 				}),
 				i(19435, {	-- Essence Gatherer
@@ -79,9 +135,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			e(1529,  {	-- Razorgore the Untamed
-				["cr"] = 12435,	-- Razorgore the Untamed
-				["g"] = {
-					i(93036),	-- Unscathed Egg (Pet)
+				["creatureID"] = 12435,
+				["groups"] = {
+					i(93036, {	-- Unscathed Egg (Pet)
+						["timeline"] = { "added 5.1.0.16309" },
+					}),
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
 					i(19370),	-- Mantle of the Blackwing Cabal
@@ -100,8 +158,8 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1530,  {	-- Vaelastrasz the Corrupt
-				["cr"] = 13020,	-- Vaelastrasz the Corrupt
-				["g"] = {
+				["creatureID"] = 13020,
+				["groups"] = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
 					i(19372),	-- Helm of Endless Rage
@@ -120,9 +178,11 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1531,  {	-- Broodlord Lashlayer
-				["cr"] = 12017,	-- Broodlord Lashlayer
-				["g"] = {
-					i(93037),	-- Blackwing Banner (Pet)
+				["creatureID"] = 12017,
+				["groups"] = {
+					i(93037, {	-- Blackwing Banner (Pet)
+						["timeline"] = { "added 5.1.0.16309" },
+					}),
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
 					i(19350),	-- Heartstriker
 					i(19373),	-- Black Brood Pauldrons
@@ -141,8 +201,8 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1532,  {	-- Firemaw
-				["cr"] = 11983,	-- Firemaw
-				["g"] = {
+				["creatureID"] = 11983,
+				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19365),	-- Claw of the Black Drake
@@ -169,12 +229,25 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
-				i(18562),	-- Elementium Ingot
-				i(44956),	-- Goblin's Guide to Elementium
+				-- #if BEFORE TBC
+				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+				["groups"] = {
+					{
+						["recipeID"] = 22967,	-- Smelt Elementium
+						["requireSkill"] = MINING,
+					},
+				},
+				-- #else
+				i(44956, {	-- Goblin's Guide to Elementium
+					["timeline"] = { "added 3.0.8.10000" },
+					["recipeID"] = 22967,	-- Smelt Elementium
+					["requireSkill"] = MINING,
+				}),
+				-- #endif
 			}),
 			e(1533,  {	-- Ebonroc
-				["cr"] = 14601,	-- Ebonroc
-				["g"] = {
+				["creatureID"] = 14601,
+				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19368),	-- Dragonbreath Hand Cannon
@@ -199,8 +272,8 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1534,  {	-- Flamegor
-				["cr"] = 11981,	-- Flamegor
-				["g"] = {
+				["creatureID"] = 11981,
+				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
 					i(19355),	-- Shadow Wing Focus Staff
@@ -225,9 +298,11 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1535,  {	-- Chromaggus
-				["cr"] = 14020,	-- Chromaggus
-				["g"] = {
-					i(93038),	-- Whistle of Chromatic Bone
+				["creatureID"] = 14020,
+				["groups"] = {
+					i(93038, {	-- Whistle of Chromatic Bone (Pet)
+						["timeline"] = { "added 5.1.0.16309" },
+					}),
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus
 					i(19361),	-- Ashjre'thul, Crossbow of Smiting
@@ -253,58 +328,35 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1536,  {	-- Nefarian
-				["cr"] = 11583,	-- Nefarian
-				["g"] = {
+				["creatureID"] = 11583,	-- Nefarian
+				["groups"] = {
 					ach(685),	-- Blackwing Lair
-					i(19003,  {	-- Head of Nefarian (A)
-						q(7781, { 	-- The Lord of Blackrock
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(7782, {	-- The Lord of Blackrock
-							["provider"] = { "n", 107574 },	-- Anduin Wrynn
-							["coord"] = { 85.6, 31.8, 84 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 7781,	-- The Lord of Blackrock
-							["g"] = {
-								i(19366), 	-- Master Dragonslayer's Orb
-								i(19383),	-- Master Dragonslayer's Medallion
-								i(19384),	-- Master Dragonslayer's Ring
-							},
-						}),
+					i(19003, {	-- Head of Nefarian (A)
+						["races"] = ALLIANCE_ONLY,
 					}),
-					i(19002,  {	-- Head of Nefarian (H)
-						q(7783, { 	-- The Lord of Blackrock
-							["races"] = HORDE_ONLY,
-						}),
-						q(7784, {	-- The Lord of Blackrock
-							["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-							["coord"] = { 48.6, 71.0, 85 },
-							["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								i(19383),	-- Master Dragonslayer's Medallion
-								i(19366),	-- Master Dragonslayer's Orb
-								i(19384),	-- Master Dragonslayer's Ring
-							},
-						}),
+					i(19002, {	-- Head of Nefarian (H)
+						["races"] = HORDE_ONLY,
 					}),
-					i(170511, {	-- Head of Nefarian (Paladin, if A/H have already been looted)
-						["classes"] = { PALADIN },	-- used for a hidden artifact appearance.  may come back and add more context/info later
+					i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
+						["timeline"] = { "added 8.2.0.30918" },
+						["classes"] = { PALADIN },
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame
 					i(19363),	-- Crul'shorukh, Edge of Chaos
 					i(19360),	-- Lok'amir il Romathis
+					i(19375),	-- Mish'undare, Circlet of the Mind Flayer
+					-- #if AFTER WRATH
 					i(16908),	-- Bloodfang Hood
 					i(16939),	-- Dragonstalker's Helm
 					i(16921),	-- Halo of Transcendence
 					i(16963),	-- Helm of Wrath
 					i(16947),	-- Helmet of Ten Storms
 					i(16955),	-- Judgment Crown
-					i(19375),	-- Mish'undare, Circlet of the Mind Flayer
 					i(16929),	-- Nemesis Skullcap
 					i(16914),	-- Netherwind Crown
 					i(16900),	-- Stormrage Cover
+					-- #endif
 					i(19377),	-- Prestor's Talisman of Connivery
 					i(19378),	-- Cloak of the Brood Lord
 					i(16905),	-- Bloodfang Chestpiece
@@ -321,9 +373,12 @@ _.Instances = { tier(1, {	-- Classic
 					i(19376),	-- Archimtiros' Ring of Reckoning
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
+					i(17964),	-- Gray Sack of Gems
+					i(17963),	-- Green Sack of Gems
 					i(17969),	-- Red Sack of Gems
+					i(17965),	-- Yellow Sack of Gems
 				},
 			})
 		},
 	}),
-})};
+}))};

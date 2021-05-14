@@ -595,6 +595,8 @@ for key,value in pairs({
 		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
 		--TODO: [-15] = "Common Vendor Items",						-- Common Vendor Items
 		--TODO: [-16] = BATTLE_PET_BREED_QUALITY4,					-- Rares
+		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
+		--TODO: [-21] = "Captains",									-- Captains
 
 		--TODO: [-40] = LFG_LIST_LEGACY,							-- Legacy
 		--TODO: [-41] = "Cache of Madness",
@@ -697,6 +699,7 @@ for key,value in pairs({
 		--TODO: [-395] = "The Crimson Halls",						-- The Crimson Halls
 		--TODO: [-396] = "The Frostwing Halls",						-- The Frostwing Halls
 		--TODO: [-397] = "Outposts",								-- Outposts
+		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		--TODO: [-488] = "War Chest",								-- Daily War Chest

@@ -509,10 +509,6 @@ _.Zones =
 					["sourceQuests"] = { 39718 },	-- Paradise Lost
 					["isBreadcrumb"] = true,
 				}),
-				q(46103, {	-- Dread Infiltrators
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 119259 },	-- Apothecary Keever
-				}),
 				q(42911, {	-- Drowned Mana
 					["provider"] = { "n", 108825 },	-- Conjurer Margoss
 				}),
@@ -717,22 +713,6 @@ _.Zones =
 					},
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
-				}),
-				q(46178, {	-- Hiding In Plain Sight
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 98099 },	-- Lilian Voss
-					["g"] = {
-						-- rewards spell 240982 (mount: shadowblade's murderous omen)
-					},
-				}),
-				q(46089, {	-- Hiding In Plain Sight
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98099 },	-- Lilian Voss
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						-- rewards spell 240982 (mount: shadowblade's murderous omen)
-					},
 				}),
 				q(47607, {	-- High Fash-Djinn
 					["classes"] = { ROGUE },

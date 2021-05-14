@@ -1985,7 +1985,8 @@ _.HiddenQuestTriggers =
 		q(49238),	-- Demon Hunter Order Hall - triggers immediately after completing the "Things Gaardoun Needs" mission
 		q(44382),	-- Demon Hunter Order Hall - Vengeance Chosen — chose to pursue Vengeance artifact while on "In Pursuit of Power"
 		q(44638),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — triggers when "Additional Accoutrements" is completed
-
+		q(44639),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 2 - Story Mission
+		
 		q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
 		q(40703),	-- Druid Order Hall - Restoration Chosen (First)
 		q(43979),	-- Druid Order Hall - Resto Chosen (second)
@@ -2035,7 +2036,9 @@ _.HiddenQuestTriggers =
 		q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
 		q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
 		q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
-
+		q(43159),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
+		q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
+		q(43366),	-- Hunter Order Hall - Talked With Mimiron Tracking Quest
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second

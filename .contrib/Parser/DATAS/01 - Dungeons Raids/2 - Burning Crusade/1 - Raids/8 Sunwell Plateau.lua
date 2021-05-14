@@ -410,6 +410,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 					ach(698),	-- Sunwell Plateau
 					ach(725, {	-- Thori'dal, the Stars' Fury
 						["description"] = "You must equip the bow to earn this achievement.",
+						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						["cost"] = {
 							{ "i", 34334, 1 },	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 						},
