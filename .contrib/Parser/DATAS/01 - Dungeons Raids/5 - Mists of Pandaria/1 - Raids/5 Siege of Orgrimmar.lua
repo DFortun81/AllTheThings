@@ -2971,14 +2971,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										PRIEST,
 										WARLOCK,
 									},
-									["sym"] = {
-										{"select", "itemID", 99672}, -- Helm of the Cursed Conqueror
-										{"select", "itemID", 99669}, -- Shoulders of the Cursed Conqueror
-										{"select", "itemID", 99678}, -- Chest of the Cursed Conqueror
-										{"select", "itemID", 99681}, -- Gauntlets of the Cursed Conqueror
-										{"select", "itemID", 99675}, -- Leggings of the Cursed Conqueror
-										{"pop"},
-									},
 								}),
 								i(105860, {	-- Essence of the Cursed Protector
 									["classes"] = {
@@ -2987,14 +2979,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										SHAMAN,
 										WARRIOR,
 									},
-									["sym"] = {
-										{"select", "itemID", 99673}, -- Helm of the Cursed Protector
-										{"select", "itemID", 99670}, -- Shoulders of the Cursed Protector
-										{"select", "itemID", 99679}, -- Chest of the Cursed Protector
-										{"select", "itemID", 99667}, -- Gauntlets of the Cursed Protector
-										{"select", "itemID", 99676}, -- Leggings of the Cursed Protector
-										{"pop"},
-									},
 								}),
 								i(105862, {	-- Essence of the Cursed Vanquisher
 									["classes"] = {
@@ -3002,14 +2986,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										DRUID,
 										MAGE,
 										ROGUE,
-									},
-									["sym"] = {
-										{"select", "itemID", 99671}, -- Helm of the Cursed Vanquisher
-										{"select", "itemID", 99668}, -- Shoulders of the Cursed Vanquisher
-										{"select", "itemID", 99677}, -- Chest of the Cursed Vanquisher
-										{"select", "itemID", 99680}, -- Gauntlets of the Cursed Vanquisher
-										{"select", "itemID", 99674}, -- Leggings of the Cursed Vanquisher
-										{"pop"},
 									},
 								}),
 								i(112932),	-- Kor'kron Spire of Supremacy
@@ -4195,14 +4171,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							PRIEST,
 							WARLOCK,
 						},
-						["sym"] = {
-							{"select", "itemID", 99749}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99755}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99743}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99746}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99752}, -- Leggings of the Cursed Conqueror
-							{"pop"},
-						},
 					}),
 					i(105863, {	-- Essence of the Cursed Protector
 						["classes"] = {
@@ -4211,14 +4179,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							SHAMAN,
 							WARRIOR,
 						},
-						["sym"] = {
-							{"select", "itemID", 99750}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99756}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99744}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99747}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99753}, -- Leggings of the Cursed Protector
-							{"pop"},
-						},
 					}),
 					i(105865, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
@@ -4226,14 +4186,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							DRUID,
 							MAGE,
 							ROGUE,
-						},
-						["sym"] = {
-							{"select", "itemID", 99748}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99754}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99742}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99745}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99751}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
 						},
 					}),
 					i(112932),	-- Kor'kron Spire of Supremacy
@@ -5432,14 +5384,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							PRIEST,
 							WARLOCK,
 						},
-						["sym"] = {
-							{"select", "itemID", 99689}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99690}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99686}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99687}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99688}, -- Leggings of the Cursed Conqueror
-							{"pop"},
-						},
 					}),
 					i(105857, {	-- Essence of the Cursed Protector
 						["classes"] = {
@@ -5448,14 +5392,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							SHAMAN,
 							WARRIOR,
 						},
-						["sym"] = {
-							{"select", "itemID", 99694}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99695}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99691}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99692}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99693}, -- Leggings of the Cursed Protector
-							{"pop"},
-						},
 					}),
 					i(105859, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
@@ -5463,14 +5399,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							DRUID,
 							MAGE,
 							ROGUE,
-						},
-						["sym"] = {
-							{"select", "itemID", 99683}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99685}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99696}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99682}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99684}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
 						},
 					}),
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
@@ -6725,14 +6653,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							PRIEST,
 							WARLOCK,
 						},
-						["sym"] = {
-							{"select", "itemID", 99724}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99718}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99715}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99721}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99712}, -- Leggings of the Cursed Conqueror
-							{"pop"},
-						},
 					}),
 					i(105866, {	-- Essence of the Cursed Protector
 						["classes"] = {
@@ -6741,14 +6661,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							SHAMAN,
 							WARRIOR,
 						},
-						["sym"] = {
-							{"select", "itemID", 99725}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99719}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99716}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99722}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99713}, -- Leggings of the Cursed Protector
-							{"pop"},
-						},
 					}),
 					i(105868, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
@@ -6756,14 +6668,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							DRUID,
 							MAGE,
 							ROGUE,
-						},
-						["sym"] = {
-							{"select", "itemID", 99723}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99717}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99714}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99720}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99726}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
 						},
 					}),
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]

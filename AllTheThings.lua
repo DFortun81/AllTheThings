@@ -11874,23 +11874,27 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
-		local iconAdjust = (summary and string.find(summary, "|T") and -1) or 0;
+		local iconAdjust;
 		if not summary then
 			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
 			else
 				summary = "---";
 			end
+			iconAdjust = 0;
+		else
+			iconAdjust = string.find(summary, "|T") and -1 or 0;
 		end
-		local specs = data.specs;
+		local specs, icons = data.specs, {};
 		if specs and #specs > 0 then
 			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
 			for i=#specs,1,-1 do
-				local spec = specs[i]
-				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-				summary = "|T" .. icon .. ":0|t " .. summary;
-				iconAdjust = iconAdjust - 1;
+				icons[i * 3] = ":0|t ";
+				icons[i * 3 - 1] = select(4, GetSpecializationInfoByID(specs[i]));
+				icons[i * 3 - 2] = "|T";
 			end
+			summary = table.concat(icons) .. summary;
+			iconAdjust = iconAdjust - #specs;
 		end
 		row.Summary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
