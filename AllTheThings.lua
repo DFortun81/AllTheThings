@@ -3523,7 +3523,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							field = "mapID";
 							id = id[1];
 						end
-						local locationGroup = app.SearchForObjectClone(field,id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationGroup = app.SearchForObject(field, id) or (field == "mapID" and C_Map_GetMapInfo(id));
 						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
 						if locationName then
@@ -12855,7 +12855,7 @@ RowOnEnter = function (self)
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						nq = app.SearchForObjectClone("questID", nextQuestID);
+						nq = app.SearchForObject("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
