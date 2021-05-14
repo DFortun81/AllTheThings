@@ -1218,10 +1218,15 @@ _.WorldEvents =
 										i(171631),	-- Prestor's Talisman of Machination
 									}),
 								}),
-								e(198, {	-- Ragnaros
+								e(198, {	-- Ragnaros — items available outside of anniversary event
 									["cr"] = 52409,
 									["g"] = {
 										i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+									},
+								}),
+								e(198, {	-- Ragnaros — WoW anniversary only
+									["cr"] = 52409,
+									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
 										i(171804),	-- Balespider's Hood
 										i(171794),	-- Cowl of the Cleansing Flame
 										i(171770),	-- Dark Phoenix Helmet
@@ -1254,7 +1259,7 @@ _.WorldEvents =
 										i(171646),	-- Matrix Restabilizer
 										i(171640),	-- Variable Pulse Lightning Capacitor
 										i(171647),	-- Vessel of Acceleration
-									},
+									}),
 								}),
 							}),
 						}),
