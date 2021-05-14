@@ -1383,19 +1383,40 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 end
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
-	if specs then
-		if #specs > 0 then
-			local specCount = #specs;
-			for i=specCount,1,-1 do
-				local specID = specs[i];
-				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-				if class ~= app.Class or not name or name == "" then
-					table.remove(specs, i);
-				end
+	if specs and #specs > 0 then
+		local specCount, name, class, _ = #specs;
+		for i=specCount,1,-1 do
+			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
+			if class ~= app.Class or not name or name == "" then
+				table.remove(specs, i);
 			end
-			table.sort(specs);
+		end
+		table.sort(specs);
+	end
+end
+-- Returns a string containing the spec icons, followed by their respective names if desired
+local function GetSpecsString(specs, includeNames, trim)
+	local specCount, icons, name, icon, _ = #specs, {};
+	if includeNames then
+		for i=#specs,1,-1 do
+			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 4 - 3] = "  |T";
+			icons[i * 4 - 2] = icon;
+			icons[i * 4 - 1] = ":0|t ";
+			icons[i * 4] = name;
+		end
+	else
+		for i=#specs,1,-1 do
+			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 3 - 2] = "|T";
+			icons[i * 3 - 1] = icon;
+			icons[i * 3] = ":0|t ";
 		end
 	end
+	if trim then
+		return string.match(table.concat(icons),'^%s*(.*%S)');
+	end
+	return table.concat(icons);
 end
 -- Returns proper, class-filtered specs for a given itemID
 local function GetFixedItemSpecInfo(itemID)
@@ -3145,12 +3166,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local specs = GetFixedItemSpecInfo(itemID);
 				-- specs is already filtered/sorted to only current class
 				if #specs > 0 then
-					local spec_label = "";
-					for key, specID in ipairs(specs) do
-						local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-						spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-					end
-					tinsert(info, { right = spec_label });
+					tinsert(info, { right = GetSpecsString(specs, true, true) });
 				elseif sourceID then
 					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
 				end
@@ -3479,10 +3495,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					right = item.right;
 					local specs = group.specs;
 					if specs and #specs > 0 then
-						for i,spec in ipairs(specs) do
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-							right = "|T" .. icon .. ":0|t " .. right;
-						end
+						right = GetSpecsString(specs, false, false) .. right;
 					end
 					-- If this group has customCollect requirements, list them for clarity
 					if group.customCollect then
@@ -11887,13 +11900,7 @@ local function SetRowData(self, row, data)
 		end
 		local specs, icons = data.specs, {};
 		if specs and #specs > 0 then
-			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
-			for i=#specs,1,-1 do
-				icons[i * 3] = ":0|t ";
-				icons[i * 3 - 1] = select(4, GetSpecializationInfoByID(specs[i]));
-				icons[i * 3 - 2] = "|T";
-			end
-			summary = table.concat(icons) .. summary;
+			summary = GetSpecsString(specs, false, false) .. summary;
 			iconAdjust = iconAdjust - #specs;
 		end
 		row.Summary:SetText(summary);
