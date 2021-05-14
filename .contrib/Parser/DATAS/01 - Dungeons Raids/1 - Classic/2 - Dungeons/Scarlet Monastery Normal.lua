@@ -108,7 +108,7 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(REMOVED_FROM_GAME, i(7736)),	-- Fight Club
+					i(7736),	-- Fight Club
 					i(7755),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
