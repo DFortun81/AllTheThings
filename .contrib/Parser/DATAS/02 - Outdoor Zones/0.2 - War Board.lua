@@ -96,6 +96,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49543, {	-- Warchief's Command: Dread Wastes!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
@@ -136,10 +138,14 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49540, {	-- Warchief's Command: Krasarang Wilds!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
 			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,
 			}),
@@ -222,6 +228,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49542, {	-- Warchief's Command: Townlong Steppes!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 83,
 				["races"] = HORDE_ONLY,
@@ -236,6 +244,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 81,
 				["races"] = HORDE_ONLY,

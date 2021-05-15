@@ -18433,7 +18433,7 @@ end
 app.events.QUEST_REMOVED = function()
 	-- print("QUEST_REMOVED")
 	-- simply soft update windows to remove any visible star markers
-	app:UpdateWindows();
+	AfterCombatCallback(app.UpdateWindows);
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
