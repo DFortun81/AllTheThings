@@ -27,6 +27,16 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369149, {	-- Forgotten Feather
+					["description"] = "Use a |cFFFFFFFFGoblin Glider|r at |cFFFFFFFF63.8, 28.9|r to access the island.",
+				--	["questID"] = 64234,
+					["coord"] = { 68.9, 29.9, KORTHIA },
+					["g"] = {
+						crit(2, {	-- Forgotten Feather
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+					},
+				}),
 				o(369148, {	-- Glittering Nest Material
 				--	["questID"] = 64222,
 					["coord"] = { 38.3, 42.8, KORTHIA },
@@ -61,6 +71,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
 				}),
+				o(369331, {	-- Invasive Mawshroom
+					["questID"] = 64356,
+					["isDaily"] = true,
+					["coord"] = { 39.7, 34.8, KORTHIA },
+				}),
 				o(369332, {	-- Invasive Mawshroom
 					["questID"] = 64357,
 					["isDaily"] = true,
@@ -84,6 +99,11 @@ _.Zones =
 					["questID"] = 64364,
 					["isDaily"] = true,
 					["coord"] = { 56.4, 69.5, KORTHIA },
+				}),
+				o(369333, {	-- Nest of Unusual Materials
+					["questID"] = 64358,
+					["isDaily"] = true,
+					["coord"] = { 41.0, 39.7, KORTHIA },
 				}),
 				o(369334, {	-- Nest of Unusual Materials
 					["questID"] = 64359,

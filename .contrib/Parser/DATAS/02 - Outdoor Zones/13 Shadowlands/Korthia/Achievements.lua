@@ -19,7 +19,6 @@ _.Zones =
 					},
 				}),
 				ach(15107, {	-- Conquering Korthia
-					crit(1),	-- Dominated Protector
 					crit(3),	-- Torgllun, Lord of Shades - maw, think it's connected to a specific tormentor of torghast event, replaces cyrixia
 					crit(5),	-- Deomen the Vortex - maw, in desmotaeron, didn't have a questID when i killed it, will add later
 					crit(8),	-- Assault Supply Carriage [NYI]
@@ -32,8 +31,8 @@ _.Zones =
 					crit(16),	-- Blinding Shadow
 					crit(23),	-- Towering Exterminator
 				}),
+				ach(15066),		-- Reliquary Restoration
 				ach(15099, {	-- Treasures of Korthia
-					crit(2),	-- Forgotten Feather
 					crit(6),	-- Displaced Relic
 				}),
 			}),

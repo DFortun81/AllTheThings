@@ -9,11 +9,22 @@ _.Zones =
 			--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
 				n(179769, {	-- Consumption
 				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
-				--	["questID"] = ,
+				--	^ 64243 pops now but it still doesn't grant achievement credit, so not sure if this will change
+					["questID"] = 64243,
 					["isDaily"] = true,
 					["coord"] = { 51.1, 41.7, KORTHIA },
 					["g"] = {
 						crit(4, {	-- Consumption
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
+				n(177903, {	-- Dominated Protector
+					["questID"] = 63830,
+					["isDaily"] = true,
+					["coord"] = { 51.9, 20.9, KORTHIA },
+					["g"] = {
+						crit(1, {	-- Dominated Protector
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -43,10 +54,11 @@ _.Zones =
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
-					["description"] = "At the bottom of the cave.",
+					["description"] = "At the bottom of the cave, near Zelnithop.  A |cFFFFFFFFDevouring Tear|r spawns first - once you've defeated several waves of mobs, the rare will emerge.",
 					["questID"] = 64246,
 					["isDaily"] = true,
 					["coord"] = { 30.2, 54.9, KORTHIA },
+					["cr"] = 179464,	-- Devouring Tear
 					["g"] = {
 					--[[ achievement is currently fucked and does not return the correct information
 						crit(24, {	-- Konthrogz the Obliterator
@@ -96,21 +108,34 @@ _.Zones =
 					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.",
 					["questID"] = 64313,
 					["isDaily"] = true,
+					["coord"] = { 46.3, 79.7, KORTHIA },
 					["cr"] = 179974,	-- Drippy
 					["g"] = {
 					--	crit(20, {	-- No Stoneborn Left Behind
-						crit(22, {	-- NO Stoneborn Left Behind
+						crit(22, {	-- No Stoneborn Left Behind
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
 				}),
+				n(179760, {	-- Towering Exterminator
+					["questID"] = 64245,
+					["isDaily"] = true,
+				--	["coord"] = { 46.7, 79.6, KORTHIA },	-- this is where i found it, engaged in combat with an npc, but i'm not sure if it spawned here
+					["g"] = {
+					--[[ this crit is currently broken
+						crit(23),	-- Towering Exterminator
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						--]]
+					},
+				}),
 				n(180032, {	-- Wild Worldcracker
-					["description"] = "Escort Popo as she gives out potions to all her friends, and eventually she will summon the rare.  She patrols from east to west.",
+					["description"] = "Escort Popo as she helps all her friends, and eventually she will summon the rare.  She patrols from east to west.",
 					["questID"] = 64338,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 55.6, 31.7, KORTHIA },
-						{ 26.8, 52.6, KORTHIA },
+					--	{ 26.8, 52.6, KORTHIA }, somehow i typed this in wrong so it's EXTREMELY wrong
 					},
 					["cr"] = 180028,	-- Popo
 					["g"] = {

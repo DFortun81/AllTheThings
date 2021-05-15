@@ -191,8 +191,7 @@ _.Achievements =
 				},
 			}),
 		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
-			ach(15035, {	-- Breaking The Chains
-				ach(15033, {	-- Taking the Tremaculum
+			ach(15033, {	-- Taking the Tremaculum
 					crit(1),	-- Terrorizing the Tremaculum
 					crit(2),	-- Weapons of the Tremaculum
 					crit(3),	-- That's a Good Trick
@@ -240,6 +239,90 @@ _.Achievements =
 					crit(9),	-- A Shady Place
 					crit(10),	-- Heavy Handed Tactics
 				}),
+			ach(15035, {	-- Breaking The Chains
+				i(186654),	-- Bracelet of Salarangor
+				ach(14961, {	-- Chains of Domination
+					crit(1),	-- Battle of Ardenweald
+					crit(2),	-- Maw Walkers
+					crit(3),	-- The Last Sigil
+					crit(4),	-- An Army of Bone and Steel
+					crit(5),	-- The Unseen Guests
+					crit(6),	-- The Power of Night
+					crit(7),	-- A New Path
+					crit(8),	-- What Lies Ahead
+				}),
+				ach(15035, {	-- On the Offensive
+					ach(15000, {	-- United Front
+						crit(1),	-- Necrolord Assault
+						crit(2),	-- Venthyr Assault
+						crit(3),	-- Night Fae Assault
+						crit(4),	-- Kyrian Assault
+					}),
+					ach(15001),		-- Jailer's Personal Stash
+					ach(15037, {	-- This Army
+						crit(1),	-- Cutter Fin
+						crit(2),	-- Kearnen the Blade
+						crit(3),	-- Winslow Swan
+						crit(4),	-- Boil Master Yetch
+						crit(5),	-- Flytrap
+					}),
+					ach(15039),		-- Up For Grabs
+					ach(15041),		-- The Zovaal Shuffle
+					ach(15043),		-- Hoarder of Torghast
+					ach(15004, {	-- A Sly Fox
+						i(186539),	-- Sly (PET!)
+					}),
+					ach(15042, {	-- Tea for the Troubled
+						crit(1),	-- Simone
+						crit(2),	-- Laurent
+						crit(3),	-- CryptKeeper Kassir
+						crit(4),	-- The Countess
+						crit(5),	-- Temel
+						crit(6),	-- Lost Sybille
+						crit(7),	-- Vulca
+						crit(8),	-- Watchmaster Boromod
+					}),
+					ach(15044, {	-- Krrprripripkraak's Heroes
+						crit(1),	-- Elder Gwenna
+						crit(2),	-- Foreman Thorodir
+						crit(3),	-- Te'zan
+						crit(4),	-- Warden Casad
+						crit(5),	-- Kivarr
+						crit(6),	-- Guardian Kota
+					}),
+				}),
+				ach(15054, {	-- Minions of the Cold Dark
+					crit(1),	-- Versya the Damned slain
+					crit(2),	-- Gralebboih slain
+					crit(3),	-- Promathiz slain
+					crit(4),	-- Sentinel Pyrophus slain
+					crit(5),	-- Gruukuuek the Elder slain
+					crit(6),	-- Zul'gath the Flayer slain
+					crit(7),	-- Mugrem the Soul Devourer slain
+					crit(8),	-- The Mass of Souls slain
+					crit(9),	-- Algel the Hunter slain
+					crit(10),	-- Sentinel Shakorzeth slain
+					crit(11),	-- Kazj the Sentinel slain
+					crit(12),	-- Intercessor Razzram slain
+					crit(13),	-- Malleus Grakizz slain
+					crit(14),	-- Manifestation of Pain slain
+					crit(15),	-- Golmak the Monstrosity slain
+				}),
+				ach(15066),		-- Reliquary Restoration
+				ach(15059),		-- Death's Advance
+				ach(15069),		-- The Archivist's Codex
+				ach(15099, {	-- Treasures of Korthia
+					crit(1),	-- Glittering Nest Material
+					crit(2),	-- Forgotten Feather
+					crit(3),	-- Lost Memento
+					crit(4),	-- Dislodged Nest
+					crit(5),	-- Anima Laden Egg
+					crit(6),	-- Displaced Relic
+					crit(7),	-- Helsworn Chest
+					crit(8),	-- Jeweled Heart
+					crit(9),	-- Infested Vestige
+					crit(10),	-- Offering Box
+				}),
 			}),
 			ach(15107, {	-- Conquering Korthia
 			--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
@@ -284,41 +367,6 @@ _.Achievements =
 			ach(15056),		-- Friend of Bloop
 			ach(15055),		-- Friend of Ooz
 			ach(15057),		-- Friend of Plaguey
-			ach(15043),		-- Hoarder of Torghast
-			ach(15001),		-- Jailer's Personal Stash
-			ach(15044, {	-- Krrprripripkraak's Heroes
-				crit(1),	-- Elder Gwenna
-				crit(2),	-- Foreman Thorodir
-				crit(3),	-- Te'zan
-				crit(4),	-- Warden Casad
-				crit(5),	-- Kivarr
-				crit(6),	-- Guardian Kota
-			}),
-			ach(15042, {	-- Tea for the Troubled
-				crit(1),	-- Simone
-				crit(2),	-- Laurent
-				crit(3),	-- CryptKeeper Kassir
-				crit(4),	-- The Countess
-				crit(5),	-- Temel
-				crit(6),	-- Lost Sybille
-				crit(7),	-- Vulca
-				crit(8),	-- Watchmaster Boromod
-			}),
-			ach(15041),		-- The Zovaal Shuffle
-			ach(15037, {	-- This Army
-				crit(1),	-- Cutter Fin
-				crit(2),	-- Kearnen the Blade
-				crit(3),	-- Winslow Swan
-				crit(4),	-- Boil Master Yetch
-				crit(5),	-- Flytrap
-			}),
-			ach(15000, {	-- United Front
-				crit(1),	-- Necrolord Assault
-				crit(2),	-- Venthyr Assault
-				crit(3),	-- Night Fae Assault
-				crit(4),	-- Kyrian Assault
-			}),
-			ach(15039),		-- Up For Grabs
 		}),
 	}),
 };
