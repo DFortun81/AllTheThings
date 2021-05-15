@@ -11234,11 +11234,14 @@ local function NestSourceQuests(root, addedQuests, depth)
 	if root.sourceQuests and #root.sourceQuests > 0 then
 		-- any breadcrumb sourcequests should have their corresponding sourcequests pushed up into the parent as well, so that
 		-- quest chains only passing through a breadcrumb do not get stuck if not collecting breadcrumbs
-		local allsqs = {};
-		for i,sourceQuestID in ipairs(root.sourceQuests) do
-			local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+		local allsqs, qs, sq, i = {};
+		-- we will ignore custom collect if the root quest is already out of scope
+		local checkCustomCollects = app.CheckCustomCollects(root);
+		for _,sourceQuestID in ipairs(root.sourceQuests) do
+			qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
 			if qs and #qs > 0 then
-				local i, sq = #qs;
+				i = #qs;
+				sq = nil;
 				while not sq and i > 0 do
 					if qs[i].questID == sourceQuestID then sq = qs[i]; end
 					i = i - 1;
@@ -11247,8 +11250,8 @@ local function NestSourceQuests(root, addedQuests, depth)
 					if sq.parent and sq.parent.questID == sq.questID then
 						sq = sq.parent;
 					end
-					-- if this is a breadcrumb, push all of its sqs into allsqs
-					if sq.isBreadcrumb and sq.sourceQuests then
+					-- if this is a breadcrumb and the user is not trying to collect breadcrumbs, push all of its sqs into allsqs
+					if sq.isBreadcrumb and sq.sourceQuests and not app.Settings:Get("Thing:QuestBreadcrumbs") then
 						for i,bcsq in ipairs(sq.sourceQuests) do
 							tinsert(allsqs, bcsq);
 						end
@@ -11259,10 +11262,10 @@ local function NestSourceQuests(root, addedQuests, depth)
 			tinsert(allsqs,sourceQuestID);
 		end
 		local prereqs;
-		for i,sourceQuestID in ipairs(allsqs) do
+		for _,sourceQuestID in ipairs(allsqs) do
 			if not addedQuests[sourceQuestID] then
 				addedQuests[sourceQuestID] = true;
-				local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+				qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
 				if qs and #qs > 0 then
 					local i, sq = #qs;
 					while not sq and i > 0 do
@@ -11273,6 +11276,19 @@ local function NestSourceQuests(root, addedQuests, depth)
 						if sq.parent and sq.parent.questID == sq.questID then
 							sq = sq.parent;
 						end
+						-- clone the object so as to not modify actual data
+						sq = CloneData(sq);
+						sq.visible = true;
+						sq.hideText = true;
+						-- clean anything out of it so that items don't show in the quest requirements
+						sq.g = {};
+
+						-- force collectible to make sure it shows in list
+						if not (sq.isBreadcrumb or sq.repeatable) then
+							sq.collectible = true;
+						end
+
+						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
 					elseif sourceQuestID > 0 then
 						-- Create a Quest Object.
 						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true, });
@@ -11281,23 +11297,13 @@ local function NestSourceQuests(root, addedQuests, depth)
 						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
 					end
 
-					-- clone the object so as to not modify actual data
-					sq = CloneData(sq);
-					-- force collectible to make sure it shows in list
-					if not (sq.isBreadcrumb or sq.repeatable) then
-						sq.collectible = true;
-					end
-					sq.visible = true;
-					sq.hideText = true;
-					-- clean anything out of it so that items don't show in the quest requirements
-					sq.g = {};
-
-					sq = app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1) or sq;
 					if sq then
 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
 						root.depth = math.max((root.depth or 0),(sq.depth or 1));
 						if not prereqs then prereqs = {}; end
 						tinsert(prereqs, sq);
+					else
+						addedQuests[sourceQuestID] = nil;
 					end
 				end
 			end

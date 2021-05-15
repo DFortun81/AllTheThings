@@ -12,7 +12,9 @@ _.ExpansionFeatures =
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
-				n(QUESTS, {
+				n(QUESTS, sharedData({
+						["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
+						}, {
 					q(58997, {	-- A Bittersweet Prize
 						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
@@ -801,7 +803,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 162392 },	-- Willowblossom
 						["coord"] = { 44.0, 51.8, ARDENWEALD },
 					}),
-				}),
+				})),
 			},
 		}),
 	}),
