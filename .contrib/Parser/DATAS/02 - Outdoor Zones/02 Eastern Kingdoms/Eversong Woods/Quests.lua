@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local SENSE_UNDEAD = recipe(5502);	-- Sense Undead
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -385,12 +386,7 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
 					-- #if BEFORE CATA
-					["groups"] = {
-						recipe(5503, {	-- Sense Undead
-							["classes"] = { PALADIN },
-							["races"] = { BLOODELF },
-						}),
-					},
+					["groups"] = { SENSE_UNDEAD },
 					-- #endif
 				}),
 				q(9035, {	-- Roadside Ambush
@@ -746,3 +742,6 @@ _.Zones =
 		}),
 	})),
 };
+
+-- Remove the phase requirement from Sense Undead.
+SENSE_UNDEAD.u = nil;
