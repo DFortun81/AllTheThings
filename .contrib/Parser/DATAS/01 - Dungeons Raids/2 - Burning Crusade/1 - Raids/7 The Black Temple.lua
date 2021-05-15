@@ -59,15 +59,33 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 					i(32444),	-- Plans: Shadesteel Girdle
 					i(32443),	-- Plans: Shadesteel Greaves
 					i(32441),	-- Plans: Shadesteel Sabots
-					i(32490),	-- Ashtongue Talisman of Acumen
-					i(32486),	-- Ashtongue Talisman of Equilibrium
-					i(32488),	-- Ashtongue Talisman of Insight
-					i(32492),	-- Ashtongue Talisman of Lethality
-					i(32493),	-- Ashtongue Talisman of Shadows
-					i(32487),	-- Ashtongue Talisman of Swiftness
-					i(32485),	-- Ashtongue Talisman of Valor
-					i(32491),	-- Ashtongue Talisman of Vision
-					i(32489),	-- Ashtongue Talisman of Zeal
+					i(32490, {	-- Ashtongue Talisman of Acumen
+						["classes"] = { PRIEST },
+					}),
+					i(32486, {	-- Ashtongue Talisman of Equilibrium
+						["classes"] = { DRUID },
+					}),
+					i(32488, {	-- Ashtongue Talisman of Insight
+						["classes"] = { MAGE },
+					}),
+					i(32492, {	-- Ashtongue Talisman of Lethality
+						["classes"] = { ROGUE },
+					}),
+					i(32493, {	-- Ashtongue Talisman of Shadows
+						["classes"] = { WARLOCK },
+					}),
+					i(32487, {	-- Ashtongue Talisman of Swiftness
+						["classes"] = { HUNTER },
+					}),
+					i(32485, {	-- Ashtongue Talisman of Valor
+						["classes"] = { WARRIOR },
+					}),
+					i(32491, {	-- Ashtongue Talisman of Vision
+						["classes"] = { SHAMAN },
+					}),
+					i(32489, {	-- Ashtongue Talisman of Zeal
+						["classes"] = { PALADIN },
+					}),
 				}),
 			}),
 			n(ZONEDROPS, {
