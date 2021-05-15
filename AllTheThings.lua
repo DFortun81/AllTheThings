@@ -6282,8 +6282,9 @@ end)();
 local OnUpdateForDeathTrackerLib = function(t)
 	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
 		t.visible = app.GroupVisibilityFilter(t);
-
-		local deaths = tonumber(select(1, GetStatistic(60)) or "0");
+		local stat = select(1, GetStatistic(60)) or "0";
+		if stat == "--" then stat = "0"; end
+		local deaths = tonumber(stat);
 		if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
 			app.CurrentCharacter.Deaths = deaths;
 			ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + (deaths - app.CurrentCharacter.Deaths);
