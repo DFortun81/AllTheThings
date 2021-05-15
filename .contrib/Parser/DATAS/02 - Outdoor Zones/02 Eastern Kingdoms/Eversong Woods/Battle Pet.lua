@@ -1,14 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(EVERSONG_WOODS, {
 			filter(101, {	-- Pet Battle
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
+					["maps"] = { SUNSTRIDER_ISLE },
 				}),
 				p(460, {	-- Ruby Sapling
 					["crs"] = { 62020 },	-- Ruby Sapling
@@ -72,5 +73,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif
