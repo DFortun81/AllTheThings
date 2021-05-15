@@ -41,6 +41,11 @@ _.Zones =
 						{ "i", 152891, 1 },	-- Power Cell
 					},
 				}),
+				q(48605, {	-- Commander's Downfall
+					["sourceQuests"] = { 48513 },	-- Invasion Point Offensive
+					["provider"] = { "n", 127051 },	-- Illidan Stormrage
+					["coord"] = { 68.8, 25.9, 885 },
+				}),
 				q(48448, {	-- Hindering the Legion War Machine
 					["sourceQuests"] = {
 						48446,	-- Relics of the Ancient Eredar
@@ -50,7 +55,6 @@ _.Zones =
 					["coord"] = { 46.7, 24.6, 831 },
 				}),
 				--[[
-				q(48605),	-- Commander's Downfall
 				q(49030),	-- Fragments of the Abyss
 				q(48636),	-- Fueling the Antoran Campaign
 				q(48964),	-- Immortal Ace

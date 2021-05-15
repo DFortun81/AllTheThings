@@ -14,8 +14,7 @@ _.Zones =
 						i(147120),	-- Technique: Glyph of the Shadow Succubus
 					},
 				}),
-				n(121589, {	-- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
-					["description"] = "This vendor no longer exists on the Broken Shore and the only way to obtain these appearances is from the Legion Invasion bosses, and Legion Invasion quests only.",
+				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(147796, {	-- Relinquished Hood
 							i(146786),	-- Cloth

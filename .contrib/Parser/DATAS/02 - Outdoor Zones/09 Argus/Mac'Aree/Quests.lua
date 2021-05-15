@@ -252,7 +252,6 @@ _.Zones =
 					["coord"] = { 62.7, 39.4, 882 },
 				}),
 --[[
-				q(48605),	-- Commander's Downfall
 				q(48636),	-- Fueling the Antoran Campaign
 				q(48632),	-- Void Extract
 --]]
