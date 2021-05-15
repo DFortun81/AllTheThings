@@ -90,7 +90,11 @@ _.Zones =
 					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 34918,	-- Shields Down!
+					["sourceQuests"] = {
+						35158,	-- Reglakk's Research
+						34918,	-- Shields Down!
+						-- 34826,	-- The Friend of My Enemy TODO: not sure if required
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(36193, {	-- An Act of Kindness

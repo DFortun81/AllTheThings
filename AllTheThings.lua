@@ -8860,6 +8860,8 @@ end)();
 -- Quest Lib
 (function()
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
+local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -8917,6 +8919,9 @@ local questFields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
+		if app.IsInPartySync then
+			return C_QuestLog_IsQuestReplayedRecently(t.questID) or (not C_QuestLog_IsQuestReplayable(t.questID) and IsQuestFlaggedCompleted(t.questID));
+		end
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
 
@@ -9025,23 +9030,26 @@ app.CollectibleAsQuest = function(t)
 	return
 	-- must treat Quests as collectible
 	app.CollectibleQuests
+	-- must have a questID associated
+	and t.questID
 	and (
 			(
-			-- must have a questID associated
-			t.questID
 			-- must not be repeatable, unless considering repeatable quests as collectible
-			and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
 			-- must match custom collectibility if set as well
 			and app.CheckCustomCollects(t)
-			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
-			-- TODO: revisit if party sync option becomes a thing
-			and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-				(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)))
+			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode OR in Party Sync
+			and (app.MODE_DEBUG
+				or (not t.isBreadcrumb and not t.DisablePartySync)
+				or (app.CollectibleBreadcrumbs and 
+					(app.MODE_ACCOUNT
+					or (app.IsInPartySync and not t.DisablePartySync)
+					or not t.breadcrumbLockedBy)))
 			)
 
 			-- If it is an item and associated to an active quest.
 			-- TODO: add t.requiredForQuestID
-			or (t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
+			or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
 		);
 end
 
@@ -9055,6 +9063,8 @@ app.CreateQuest = function(id, t)
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+-- Causes a group to remain visible if it is replayable, regardless of collection status
+app.ShowIfReplayableQuest = function(data) data.visible = C_QuestLog_IsQuestReplayable(data.questID); return true; end
 
 local fields = {
 	["key"] = function(t)
@@ -9155,6 +9165,7 @@ app.BaseQuestObjective = app.BaseObjectFields(fields);
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
+app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
 local function QueryCompletedQuests()
@@ -10526,6 +10537,7 @@ UpdateGroups = function(parent, g)
 						visible = true;
 					end
 				elseif group.visible then
+					UpdateGroups(group, group.g);
 					visible = true;
 				end
 			elseif UpdateGroup(parent, group) then
@@ -10909,34 +10921,34 @@ function app.QuestCompletionHelper(questID)
 		-- Search ATT for the related quests.
 		local searchResults = SearchForField("questID", questID);
 		if searchResults and #searchResults > 0 then
-				-- Attempt to cleanly refresh the data.
-				for i,result in ipairs(searchResults) do
-					if result.visible and result.parent and result.parent.total then
-						result.marked = true;
-					end
+			-- Attempt to cleanly refresh the data.
+			for i,result in ipairs(searchResults) do
+				if result.visible and result.parent and result.parent.total then
+					result.marked = true;
 				end
-				for i,result in ipairs(searchResults) do
-					if result.marked then
-						result.marked = nil;
-						if result.total then
-							-- This is an item that has a relative set of groups
-							if result.collectible then UpdateParentProgress(result) end;
+			end
+			for i,result in ipairs(searchResults) do
+				if result.marked then
+					result.marked = nil;
+					if result.total then
+						-- This is an item that has a relative set of groups
+						if result.collectible then UpdateParentProgress(result) end;
 
-							-- If this is NOT a group...
-							if not result.g and result.collectible then
-								-- If we've collected the item, use the "Show Collected Items" filter.
-								result.visible = app.CollectedItemVisibilityFilter(result);
-							end
-						else
-							UpdateParentProgress(result.parent);
+						-- If this is NOT a group...
+						if not result.g and result.collectible then
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
+						end
+					else
+						UpdateParentProgress(result.parent);
 
-							if result.collectible then
-								-- If we've collected the item, use the "Show Collected Items" filter.
-								result.visible = app.CollectedItemVisibilityFilter(result);
-							end
+						if result.collectible then
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
 						end
 					end
 				end
+			end
 
 			-- Don't force a full refresh.
 			app:RefreshData(true, true);
@@ -11287,6 +11299,11 @@ local function NestSourceQuests(root, addedQuests, depth)
 						-- force collectible to make sure it shows in list
 						if not (sq.isBreadcrumb or sq.repeatable) then
 							sq.collectible = true;
+						end
+
+						-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
+						if app.IsInPartySync and sq.collected then
+							sq.OnUpdate = app.ShowIfReplayableQuest;
 						end
 
 						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
@@ -13068,11 +13085,12 @@ local function UpdateWindow(self, force, got)
 			else wipe(self.rowData); end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
-				(force or (self.shouldFullRefresh and got)) then
+				(force or (self.shouldFullRefresh and self:IsVisible())) then
 				self.data.progress = 0;
 				self.data.total = 0;
-				-- app._Updated = time();
+				-- print("UpdateGroups",self.suffix or self.Suffix)
 				UpdateGroups(self.data, self.data.g);
+				-- print("Done")
 			end
 			ProcessGroup(self.rowData, self.data);
 
@@ -18225,7 +18243,7 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		app:RegisterEvent("QUEST_ACCEPTED");
-
+		app:RegisterEvent("QUEST_REMOVED");
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
@@ -18242,6 +18260,9 @@ app.events.VARIABLES_LOADED = function()
 				needRefresh = true;
 			end
 		end
+
+		-- check if we are in a Party Sync session when loading in
+		app.IsInPartySync = C_QuestSession.Exists();
 
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
@@ -18405,9 +18426,14 @@ app.events.QUEST_LOG_UPDATE = function()
 	-- print("QUEST_LOG_UPDATE")
 	app.RefreshQuestInfo();
 end
-app.events.QUEST_FINISHED = function()
-	-- print("QUEST_FINISHED")
-	app.RefreshQuestInfo();
+-- app.events.QUEST_FINISHED = function()
+-- 	-- print("QUEST_FINISHED")
+-- 	app.RefreshQuestInfo();
+-- end
+app.events.QUEST_REMOVED = function()
+	-- print("QUEST_REMOVED")
+	-- simply soft update windows to remove any visible star markers
+	app:UpdateWindows();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	if questID then
@@ -18431,7 +18457,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 			if nextQuests then
 				local warning;
 				for _,group in pairs(nextQuests) do
-					if not group.collected then
+					if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
 						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.questID));
 						warning = true;
 					end
@@ -18481,6 +18507,20 @@ app.events.PLAYER_REGEN_ENABLED = function()
 		end
 	end
 	-- print("PLAYER_REGEN_ENABLED:End")
+end
+app.events.QUEST_SESSION_JOINED = function()
+	-- print("QUEST_SESSION_JOINED")
+	app:UnregisterEvent("QUEST_SESSION_JOINED");
+	app:RegisterEvent("QUEST_SESSION_LEFT");
+	app.IsInPartySync = true;
+	app:UpdateWindows(true);
+end
+app.events.QUEST_SESSION_LEFT = function()
+	-- print("QUEST_SESSION_LEFT")
+	app:UnregisterEvent("QUEST_SESSION_LEFT");
+	app:RegisterEvent("QUEST_SESSION_JOINED");
+	app.IsInPartySync = false;
+	app:UpdateWindows(true);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
