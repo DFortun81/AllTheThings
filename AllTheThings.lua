@@ -1147,14 +1147,14 @@ local function CloneData(data)
 				rawset(clone, "sourceParent", value);
 			end
 		end
-	end
-	if data.g then
-		clone.g = {};
-		for i,group in ipairs(data.g) do
-			local child = CloneData(group);
-			rawset(child, "sourceParent", nil);
-			rawset(child, "parent", clone);
-			tinsert(clone.g, child);
+		if data.g then
+			clone.g = {};
+			for i,group in ipairs(data.g) do
+				local child = CloneData(group);
+				rawset(child, "sourceParent", nil);
+				rawset(child, "parent", clone);
+				tinsert(clone.g, child);
+			end
 		end
 	end
 	return clone;
