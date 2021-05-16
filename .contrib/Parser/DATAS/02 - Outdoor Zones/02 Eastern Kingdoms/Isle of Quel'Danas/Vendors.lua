@@ -498,120 +498,260 @@ _.Zones =
 				n(26091, {	-- Olus <Exotic Gear Purveyor>
 					["coord"] = { 50.2, 40.1, ISLE_OF_QUELDANAS },
 					["g"] = {
-						i(30244, {	-- Helm of the Vanquished Hero [Hunter, Mage, Warlock]
-							i(31962),	-- Merciless Gladiator's Chain Helm
-							i(31974),	-- Merciless Gladiator's Dreadweave Hood
-							i(31980),	-- Merciless Gladiator's Felweave Cowl
-							i(32048),	-- Merciless Gladiator's Silk Cowl
+						i(31962, {	-- Merciless Gladiator's Chain Helm
+							["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 						}),
-						i(30243, {	-- Helm of the Vanquished Defender [Warrior, Priest, Druid]
-							i(31968),	-- Merciless Gladiator's Dragonhide Helm
-							i(31988),	-- Merciless Gladiator's Kodohide Helm
-							i(32016),	-- Merciless Gladiator's Mooncloth Hood
-							i(30488),	-- Merciless Gladiator's Plate Helm
-							i(32035),	-- Merciless Gladiator's Satin Hood
-							i(32057),	-- Merciless Gladiator's Wyrmhide Helm
+						i(31974, {	-- Merciless Gladiator's Dreadweave Hood
+							["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 						}),
-						i(30242, {	-- Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
-							i(31997),	-- Merciless Gladiator's Lamellar Helm
-							i(31999),	-- Merciless Gladiator's Leather Helm
-							i(32006),	-- Merciless Gladiator's Linked Helm
-							i(32011),	-- Merciless Gladiator's Mail Helm
-							i(32022),	-- Merciless Gladiator's Ornamented Headcover
-							i(32031),	-- Merciless Gladiator's Ringmail Helm
-							i(32041),	-- Merciless Gladiator's Scaled Helm
+						i(31980, {	-- Merciless Gladiator's Felweave Cowl
+							["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 						}),
-						i(30250, {	-- Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
-							i(31964),	-- Merciless Gladiator's Chain Spaulders
-							i(31976),	-- Merciless Gladiator's Dreadweave Mantle
-							i(31979),	-- Merciless Gladiator's Felweave Amice
-							i(32047),	-- Merciless Gladiator's Silk Amice
+						i(32048, {	-- Merciless Gladiator's Silk Cowl
+							["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 						}),
-						i(30249, {	-- Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
-							i(31971),	-- Merciless Gladiator's Dragonhide Spaulders
-							i(31990),	-- Merciless Gladiator's Kodohide Spaulders
-							i(32018),	-- Merciless Gladiator's Mooncloth Mantle
-							i(30490),	-- Merciless Gladiator's Plate Shoulders
-							i(32037),	-- Merciless Gladiator's Satin Mantle
-							i(32059),	-- Merciless Gladiator's Wyrmhide Spaulders
+						i(31968, {	-- Merciless Gladiator's Dragonhide Helm
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30248, {	-- Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
-							i(31996),	-- Merciless Gladiator's Lamellar Shoulders
-							i(32001),	-- Merciless Gladiator's Leather Spaulders
-							i(32008),	-- Merciless Gladiator's Linked Spaulders
-							i(32013),	-- Merciless Gladiator's Mail Spaulders
-							i(32024),	-- Merciless Gladiator's Ornamented Spaulders
-							i(32033),	-- Merciless Gladiator's Ringmail Spaulders
-							i(32043),	-- Merciless Gladiator's Scaled Shoulders
+						i(31988, {	-- Merciless Gladiator's Kodohide Helm
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30238, {	-- Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
-							i(31960),	-- Merciless Gladiator's Chain Armor
-							i(31977),	-- Merciless Gladiator's Dreadweave Robe
-							i(31982),	-- Merciless Gladiator's Felweave Raiment
-							i(32050),	-- Merciless Gladiator's Silk Raiment
+						i(32016, {	-- Merciless Gladiator's Mooncloth Hood
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30237, {	-- Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
-							i(31972),	-- Merciless Gladiator's Dragonhide Tunic
-							i(31991),	-- Merciless Gladiator's Kodohide Tunic
-							i(32019),	-- Merciless Gladiator's Mooncloth Robe
-							i(30486),	-- Merciless Gladiator's Plate Chestpiece
-							i(32038),	-- Merciless Gladiator's Satin Robe
-							i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
+						i(30488, {	-- Merciless Gladiator's Plate Helm
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30236, {	-- Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
-							i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
-							i(32002),	-- Merciless Gladiator's Leather Tunic
-							i(32004),	-- Merciless Gladiator's Linked Armor
-							i(32009),	-- Merciless Gladiator's Mail Armor
-							i(32020),	-- Merciless Gladiator's Ornamented Chestguard
-							i(32029),	-- Merciless Gladiator's Ringmail Armor
-							i(32039),	-- Merciless Gladiator's Scaled Chestpiece
+						i(32035, {	-- Merciless Gladiator's Satin Hood
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30247, {	-- Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
-							i(31963),	-- Merciless Gladiator's Chain Leggings
-							i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-							i(31983),	-- Merciless Gladiator's Felweave Trousers
-							i(32051),	-- Merciless Gladiator's Silk Trousers
+						i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
+							["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 						}),
-						i(30246, {	-- Leggings of the Vanquished Defender [Warrior, Priest, Druid]
-							i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-							i(31989),	-- Merciless Gladiator's Kodohide Legguards
-							i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-							i(30489),	-- Merciless Gladiator's Plate Legguards
-							i(32036),	-- Merciless Gladiator's Satin Leggings
-							i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
+						i(31997, {	-- Merciless Gladiator's Lamellar Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 						}),
-						i(30245, {	-- Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
-							i(31995),	-- Merciless Gladiator's Lamellar Legguards
-							i(32000),	-- Merciless Gladiator's Leather Legguards
-							i(32007),	-- Merciless Gladiator's Linked Leggings
-							i(32012),	-- Merciless Gladiator's Mail Leggings
-							i(32023),	-- Merciless Gladiator's Ornamented Legplates
-							i(32032),	-- Merciless Gladiator's Ringmail Leggings
-							i(32042),	-- Merciless Gladiator's Scaled Legguards
+						i(31999, {	-- Merciless Gladiator's Leather Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 						}),
-						i(30241, {	-- Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
-							i(31961),	-- Merciless Gladiator's Chain Gauntlets
-							i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-							i(31981),	-- Merciless Gladiator's Felweave Handguards
-							i(32049),	-- Merciless Gladiator's Silk Handguards
+						i(32006, {	-- Merciless Gladiator's Linked Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 						}),
-						i(30240, {	-- Gloves of the Vanquished Defender [Warrior, Priest, Druid]
-							i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-							i(31987),	-- Merciless Gladiator's Kodohide Gloves
-							i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-							i(30487),	-- Merciless Gladiator's Plate Gauntlets
-							i(32034),	-- Merciless Gladiator's Satin Gloves
-							i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
+						i(32011, {	-- Merciless Gladiator's Mail Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 						}),
-						i(30239, {	-- Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
-							i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-							i(31998),	-- Merciless Gladiator's Leather Gloves
-							i(32005),	-- Merciless Gladiator's Linked Gauntlets
-							i(32010),	-- Merciless Gladiator's Mail Gauntlets
-							i(32021),	-- Merciless Gladiator's Ornamented Gloves
-							i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
-							i(32040),	-- Merciless Gladiator's Scaled Gauntlets
+						i(32022, {	-- Merciless Gladiator's Ornamented Headcover
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32031, {	-- Merciless Gladiator's Ringmail Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32041, {	-- Merciless Gladiator's Scaled Helm
+							["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(31964, {	-- Merciless Gladiator's Chain Spaulders
+							["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31976, {	-- Merciless Gladiator's Dreadweave Mantle
+							["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31979, {	-- Merciless Gladiator's Felweave Amice
+							["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(32047, {	-- Merciless Gladiator's Silk Amice
+							["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31971, {	-- Merciless Gladiator's Dragonhide Spaulders
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31990, {	-- Merciless Gladiator's Kodohide Spaulders
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32018, {	-- Merciless Gladiator's Mooncloth Mantle
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(30490, {	-- Merciless Gladiator's Plate Shoulders
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32037, {	-- Merciless Gladiator's Satin Mantle
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32059, {	-- Merciless Gladiator's Wyrmhide Spaulders
+							["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32001, {	-- Merciless Gladiator's Leather Spaulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32008, {	-- Merciless Gladiator's Linked Spaulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32013, {	-- Merciless Gladiator's Mail Spaulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32043, {	-- Merciless Gladiator's Scaled Shoulders
+							["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(31960, {	-- Merciless Gladiator's Chain Armor
+							["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31977, {	-- Merciless Gladiator's Dreadweave Robe
+							["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31982, {	-- Merciless Gladiator's Felweave Raiment
+							["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(32050, {	-- Merciless Gladiator's Silk Raiment
+							["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31972, {	-- Merciless Gladiator's Dragonhide Tunic
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31991, {	-- Merciless Gladiator's Kodohide Tunic
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32019, {	-- Merciless Gladiator's Mooncloth Robe
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(30486, {	-- Merciless Gladiator's Plate Chestpiece
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32038, {	-- Merciless Gladiator's Satin Robe
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32060, {	-- Merciless Gladiator's Wyrmhide Tunic
+							["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32002, {	-- Merciless Gladiator's Leather Tunic
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32004, {	-- Merciless Gladiator's Linked Armor
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32009, {	-- Merciless Gladiator's Mail Armor
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32020, {	-- Merciless Gladiator's Ornamented Chestguard
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32029, {	-- Merciless Gladiator's Ringmail Armor
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32039, {	-- Merciless Gladiator's Scaled Chestpiece
+							["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(31963, {	-- Merciless Gladiator's Chain Leggings
+							["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
+							["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31983, {	-- Merciless Gladiator's Felweave Trousers
+							["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(32051, {	-- Merciless Gladiator's Silk Trousers
+							["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31989, {	-- Merciless Gladiator's Kodohide Legguards
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(30489, {	-- Merciless Gladiator's Plate Legguards
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32036, {	-- Merciless Gladiator's Satin Leggings
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
+							["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31995, {	-- Merciless Gladiator's Lamellar Legguards
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32000, {	-- Merciless Gladiator's Leather Legguards
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32007, {	-- Merciless Gladiator's Linked Leggings
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32012, {	-- Merciless Gladiator's Mail Leggings
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32023, {	-- Merciless Gladiator's Ornamented Legplates
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32032, {	-- Merciless Gladiator's Ringmail Leggings
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32042, {	-- Merciless Gladiator's Scaled Legguards
+							["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(31961, {	-- Merciless Gladiator's Chain Gauntlets
+							["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
+							["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31981, {	-- Merciless Gladiator's Felweave Handguards
+							["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(32049, {	-- Merciless Gladiator's Silk Handguards
+							["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+						}),
+						i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31987, {	-- Merciless Gladiator's Kodohide Gloves
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(30487, {	-- Merciless Gladiator's Plate Gauntlets
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32034, {	-- Merciless Gladiator's Satin Gloves
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
+							["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+						}),
+						i(31993, {	-- Merciless Gladiator's Lamellar Gauntlets
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(31998, {	-- Merciless Gladiator's Leather Gloves
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32005, {	-- Merciless Gladiator's Linked Gauntlets
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32010, {	-- Merciless Gladiator's Mail Gauntlets
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32021, {	-- Merciless Gladiator's Ornamented Gloves
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32030, {	-- Merciless Gladiator's Ringmail Gauntlets
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+						}),
+						i(32040, {	-- Merciless Gladiator's Scaled Gauntlets
+							["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 						}),
 					},
 				}),
