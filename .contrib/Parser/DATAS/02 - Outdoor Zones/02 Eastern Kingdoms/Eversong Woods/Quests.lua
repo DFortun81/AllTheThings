@@ -491,6 +491,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
+						objective(1, {	-- Apprentice Meledor Disciplined
+							["cr"] = 15945,	-- Apprentice Meledor
+							["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
+						}),
+						objective(2, {	-- Apprentice Ralen Disciplined
+							["cr"] = 15941,	-- Apprentice Ralen
+							["coord"] = { 45.2, 56.4, EVERSONG_WOODS },
+						}),
 						i(22976),	-- Magister's Pouch
 					},
 				}),
