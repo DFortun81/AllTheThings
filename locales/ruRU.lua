@@ -221,6 +221,7 @@ local L = app.L;
 	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000Чем больше информации, тем лучше. Спасибо!|r";
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt + Левый клик - Закрепить это Окно";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt + Левый клик - Открепить это Окно";
+	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 
 -- Settings.lua
 	-- General tab

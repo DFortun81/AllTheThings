@@ -223,6 +223,7 @@ local L = app.L;
 	L["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000提供越多信息越好，谢谢！|r"
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt单击锁定窗口";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt单击解锁窗口";
+	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
 
 -- Settings.lua
 	-- General tab
