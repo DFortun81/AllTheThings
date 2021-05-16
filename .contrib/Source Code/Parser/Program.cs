@@ -75,7 +75,7 @@ namespace ATT
                 }
 
                 Lua lua = new Lua();
-                ProcessLuaFile(lua, mainFileName);
+                lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
@@ -116,6 +116,7 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
+                string content = "";
                 Framework.Objects.ProcessingSourceData = true;
                 foreach (var fileName in luaFiles)
                 {
@@ -125,7 +126,7 @@ namespace ATT
                         try
                         {
                             lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                            ProcessLuaFile(lua, fileName);
+                            lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
                             Framework.Merge(lua, lua.GetTable("AllTheThings"));
                             break;
                         }
@@ -133,6 +134,19 @@ namespace ATT
                         {
                             Trace.WriteLine(fileName);
                             Trace.WriteLine(e.Message);
+                            var line = GetLineNumber(e);
+                            if (line > -1)
+                            {
+                                var lines = content.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                                for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
+                                {
+                                    Trace.Write(i);
+                                    Trace.Write(":");
+                                    if (i == line) Trace.Write(">");
+                                    Trace.WriteLine(lines[i]);
+                                    ++i;
+                                }
+                            }
                             Trace.WriteLine("Press Enter once you have resolved the issue.");
                             Console.ReadLine();
                         }
@@ -197,14 +211,11 @@ namespace ATT
             }
         }
 
-        static void ProcessLuaFile(Lua lua, string filename)
+        public static int GetLineNumber(Exception ex)
         {
-            // Old:
-            //lua.DoFile(filename);
-
-            // New:
-            // We are now pre-processing the files based on parser version.
-            lua.DoString(ProcessContent(File.ReadAllText(filename)));
+            var s = ex.Message.Split(':');
+            if (int.TryParse(s[1], out int line)) return line;
+            return -1;
         }
 
         /// <summary>
