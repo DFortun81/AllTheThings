@@ -34,6 +34,16 @@ _.Zones =
 						15937,	-- Mmmrrrggglll
 					},
 				}),
+				i(23334, {	-- Cracked Power Core
+					["cr"] = 15638,	-- Arcane Patroller
+				}),
+				i(23354, {	-- Crystalized Mana Residue
+					["crs"] = {
+						15967,	-- Ether Fiend
+						15647,	-- Mana Stalker
+						15648,	-- Manawraith
+					},
+				}),
 				i(21757, {	-- Grimscale Murloc Head
 					["races"] = HORDE_ONLY,
 					["crs"] = {

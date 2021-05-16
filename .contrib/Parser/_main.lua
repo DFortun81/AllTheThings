@@ -547,6 +547,15 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
+appendGroups = function(common, groups)
+	if not groups then groups = {}; end
+	if common then
+		for i,o in ipairs(common) do
+			table.insert(groups, o);
+		end
+	end
+	return groups;
+end
 sharedData = function(data, t)
 	for i, group in ipairs(t) do
 		for key, value in pairs(data) do
@@ -786,15 +795,6 @@ end
 gb = function(id, t)									-- Create a GARRISON BUILDING Object (Alternative)
 	return struct("buildingID", id, t);
 end
-mission = function(id, t)								-- Create an MISSION Object
-	return struct("missionID", id, t);
-end
-mi = function(id, t)									-- Create a MISSION Object (Alternative)
-	return struct("missionID", id, t);
-end
-mount = function(id, t)
-	return struct("mountID", id, t);
-end
 garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end
@@ -866,6 +866,19 @@ map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
+mission = function(id, t)								-- Create an MISSION Object
+	return struct("missionID", id, t);
+end
+mi = function(id, t)									-- Create a MISSION Object (Alternative)
+	return struct("missionID", id, t);
+end
+mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
+	-- #if BEFORE WRATH
+	return struct("spellID", id, t);
+	-- #else
+	return struct("mountID", id, t);
+	-- #endif
+end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	return struct("npcID", id, t);
 end
@@ -1041,3 +1054,1407 @@ function Artifacts(things)
 		end
 	end
 end
+
+-- Giant Copy+Paste Sections that need a better solution at some point, but for now, this is the best I've got.
+-- I'm thinking a "World Vendors" section. Stable Master, Cataclysm Blacksmithing Supplies, etc fit into this category.
+-- Use maps to link them. You know, like a sensible person that hates pointless duplication.
+COMMON_CATACLYSM_BLACKSMITHING_RECIPES = {
+	i(66100, {	-- Plans: Ebonsteel Belt Buckle
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76439,	-- Ebonsteel Belt Buckle
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66113, {	-- Plans: Elementium Bonesplitter
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76452,	-- Elementium Bonesplitter
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66106, {	-- Plans: Elementium Deathplate
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76445,	-- Elementium Deathplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66115, {	-- Plans: Elementium Earthguard
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76454,	-- Elementium Earthguard
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66107, {	-- Plans: Elementium Girdle of Pain
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76446,	-- Elementium Girdle of Pain
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(67603, {	-- Plans: Elementium Gutslicer
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 94718,	-- Elementium Gutslicer
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66111, {	-- Plans: Elementium Hammer
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76450,	-- Elementium Hammer
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66112, {	-- Plans: Elementium Poleaxe
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76451,	-- Elementium Poleaxe
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66114, {	-- Plans: Elementium Shank
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76453,	-- Elementium Shank
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66110, {	-- Plans: Elementium Spellblade
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76449,	-- Elementium Spellblade
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66116, {	-- Plans: Elementium Stormshield
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76455,	-- Elementium Stormshield
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(67606, {	-- Plans: Forged Elementium Mindcrusher
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 94732,	-- Forged Elementium Mindcrusher
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66105, {	-- Plans: Hardened Elementium Girdle
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76444,	-- Hardened Elementium Girdle
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66104, {	-- Plans: Hardened Elementium Hauberk
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76443,	-- Hardened Elementium Hauberk
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66109, {	-- Plans: Light Elementium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76448,	-- Light Elementium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66108, {	-- Plans: Light Elementium Chestguard
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76447,	-- Light Elementium Chestguard
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66101, {	-- Plans: Pyrium Shield Spike
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76440,	-- Pyrium Shield Spike
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66103, {	-- Plans: Pyrium Weapon Chain
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76442,	-- Pyrium Weapon Chain
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76467,	-- Vicious Ornate Pyrium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76468,	-- Vicious Ornate Pyrium Boots
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76465,	-- Vicious Ornate Pyrium Bracers
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76472,	-- Vicious Ornate Pyrium Breastplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76466,	-- Vicious Ornate Pyrium Gauntlets
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76471,	-- Vicious Ornate Pyrium Helm
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76470,	-- Vicious Ornate Pyrium Legguards
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76469,	-- Vicious Ornate Pyrium Shoulders
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66119, {	-- Plans: Vicious Pyrium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76458,	-- Vicious Pyrium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66120, {	-- Plans: Vicious Pyrium Boots
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76459,	-- Vicious Pyrium Boots
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66117, {	-- Plans: Vicious Pyrium Bracers
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76456,	-- Vicious Pyrium Bracers
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66124, {	-- Plans: Vicious Pyrium Breastplate
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76464,	-- Vicious Pyrium Breastplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76457,	-- Vicious Pyrium Gauntlets
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66123, {	-- Plans: Vicious Pyrium Helm
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76463,	-- Vicious Pyrium Helm
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66122, {	-- Plans: Vicious Pyrium Legguards
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76462,	-- Vicious Pyrium Legguards
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66121, {	-- Plans: Vicious Pyrium Shoulders
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76461,	-- Vicious Pyrium Shoulders
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+};
+COMMON_CATACLYSM_ENCHANTING_RECIPES = {
+	i(67308, {	-- Formula: Enchanted Lantern
+		["races"] = HORDE_ONLY,
+		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 93841,	-- Enchanted Lantern
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(67312, {	-- Formula: Magic Lamp
+		["races"] = ALLIANCE_ONLY,
+		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 93843,	-- Magic Lamp
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64411, {	-- Formula: Enchant Boots - Assassin's Step
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74252,	-- Enchant Boots - Assassin's Step
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64412, {	-- Formula: Enchant Boots - Lavawalker
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74253,	-- Enchant Boots - Lavawalker
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74248,	-- Enchant Bracer - Greater Critical Strike
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64413, {	-- Formula: Enchant Bracer - Greater Speed
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74256,	-- Enchant Bracer - Greater Speed
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52740, {	-- Formula: Enchant Chest - Greater Stamina
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74251,	-- Enchant Chest - Greater Stamina
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52739, {	-- Formula: Enchant Chest - Peerless Stats
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74250,	-- Enchant Chest - Peerless Stats
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74247,	-- Enchant Cloak - Greater Critical Strike
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74255,	-- Enchant Gloves - Greater Mastery
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74254,	-- Enchant Gloves - Mighty Strength
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52736, {	-- Formula: Enchant Weapon - Landslide
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74246,	-- Enchant Weapon - Landslide
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52733, {	-- Formula: Enchant Weapon - Power Torrent
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74242,	-- Enchant Weapon - Power Torrent
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52735, {	-- Formula: Enchant Weapon - Windwalk
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74244,	-- Enchant Weapon - Windwalk
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+};
+COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
+	i(52409, {	-- Design: Accurate Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73360,	-- Accurate Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52419, {	-- Design: Adept Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73371,	-- Adept Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52421, {	-- Design: Artful Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73373,	-- Artful Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52437, {	-- Design: Austere Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73468,	-- Austere Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52461, {	-- Design: Band of Blades
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73498,	-- Band of Blades
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52381, {	-- Design: Bold Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73396,	-- Bold Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52362, {	-- Design: Bold Inferno Ruby
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73335,	-- Bold Inferno Ruby
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52435, {	-- Design: Bracing Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73466,	-- Bracing Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52464, {	-- Design: Brazen Elementium Medallion
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73521,	-- Brazen Elementium Medallion
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52449, {	-- Design: Brilliant Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73399,	-- Brilliant Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52387, {	-- Design: Brilliant Inferno Ruby
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73338,	-- Brilliant Inferno Ruby
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52434, {	-- Design: Chaotic Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73465,	-- Chaotic Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52413, {	-- Design: Deadly Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73365,	-- Deadly Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52401, {	-- Design: Defender's Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73352,	-- Defender's Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52416, {	-- Design: Deft Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73368,	-- Deft Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52447, {	-- Design: Delicate Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73397,	-- Delicate Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52380, {	-- Design: Delicate Inferno Ruby
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73336,	-- Delicate Inferno Ruby
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52441, {	-- Design: Destructive Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73472,	-- Destructive Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52438, {	-- Design: Effulgent Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73469,	-- Effulgent Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52460, {	-- Design: Elementium Destroyer's Ring
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73520,	-- Elementium Destroyer's Ring
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52467, {	-- Design: Elementium Guardian
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73506,	-- Elementium Guardian
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52463, {	-- Design: Elementium Moebius Band
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73503,	-- Elementium Moebius Band
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52439, {	-- Design: Ember Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73470,	-- Ember Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52443, {	-- Design: Enigmatic Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73474,	-- Enigmatic Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52465, {	-- Design: Entwined Elementium Choker
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73504,	-- Entwined Elementium Choker
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52405, {	-- Design: Etched Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73356,	-- Etched Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52436, {	-- Design: Eternal Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73467,	-- Eternal Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52466, {	-- Design: Eye of Many Deaths
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73505,	-- Eye of Many Deaths
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52415, {	-- Design: Fierce Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73367,	-- Fierce Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52420, {	-- Design: Fine Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73372,	-- Fine Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52448, {	-- Design: Flashing Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73398,	-- Flashing Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52384, {	-- Design: Flashing Inferno Ruby
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73337,	-- Flashing Inferno Ruby
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52433, {	-- Design: Fleet Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73464,	-- Fleet Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52428, {	-- Design: Forceful Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73380,	-- Forceful Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52445, {	-- Design: Forlorn Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73476,	-- Forlorn Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52398, {	-- Design: Fractured Amberjewel
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73349,	-- Fractured Amberjewel
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52459, {	-- Design: Fractured Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73409,	-- Fractured Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52406, {	-- Design: Glinting Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73357,	-- Glinting Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52403, {	-- Design: Guardian's Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73354,	-- Guardian's Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52444, {	-- Design: Impassive Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73475,	-- Impassive Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52412, {	-- Design: Inscribed Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73364,	-- Inscribed Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52425, {	-- Design: Jagged Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73377,	-- Jagged Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52422, {	-- Design: Keen Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73374,	-- Keen Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52429, {	-- Design: Lightning Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73381,	-- Lightning Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(68360, {	-- Design: Lucent Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 95755,	-- Lucent Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52396, {	-- Design: Mystic Amberjewel
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73347,	-- Mystic Amberjewel
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52457, {	-- Design: Mystic Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73407,	-- Mystic Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52424, {	-- Design: Nimble Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73376,	-- Nimble Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52426, {	-- Design: Piercing Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73378,	-- Piercing Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52410, {	-- Design: Polished Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73361,	-- Polished Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52414, {	-- Design: Potent Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73366,	-- Potent Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52442, {	-- Design: Powerful Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73473,	-- Powerful Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52450, {	-- Design: Precise Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73400,	-- Precise Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52389, {	-- Design: Precise Inferno Ruby
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73339,	-- Precise Inferno Ruby
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52430, {	-- Design: Puissant Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73382,	-- Puissant Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(69853, {	-- Design: Punisher's Band
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 98921,	-- Punisher's Band
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52404, {	-- Design: Purified Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73355,	-- Purified Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52397, {	-- Design: Quick Amberjewel
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73348,	-- Quick Amberjewel
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52458, {	-- Design: Quick Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73408,	-- Quick Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52417, {	-- Design: Reckless Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73369,	-- Reckless Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52423, {	-- Design: Regal Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73375,	-- Regal Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52411, {	-- Design: Resolute Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73362,	-- Resolute Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(68361, {	-- Design: Resplendent Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 95756,	-- Resplendent Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52407, {	-- Design: Retaliating Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73358,	-- Retaliating Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52440, {	-- Design: Revitalizing Shadowspirit Diamond
+		["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73471,	-- Revitalizing Shadowspirit Diamond
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52454, {	-- Design: Rigid Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73404,	-- Rigid Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52393, {	-- Design: Rigid Ocean Sapphire
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73344,	-- Rigid Ocean Sapphire
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52462, {	-- Design: Ring of Warring Elements
+		["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73502,	-- Ring of Warring Elements
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52432, {	-- Design: Sensei's Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73384,	-- Sensei's Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52400, {	-- Design: Shifting Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73351,	-- Shifting Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52418, {	-- Design: Skillful Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73370,	-- Skillful Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52395, {	-- Design: Smooth Amberjewel
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73346,	-- Smooth Amberjewel
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52456, {	-- Design: Smooth Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73406,	-- Smooth Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52451, {	-- Design: Solid Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73401,	-- Solid Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52390, {	-- Design: Solid Ocean Sapphire
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73340,	-- Solid Ocean Sapphire
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52399, {	-- Design: Sovereign Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73350,	-- Sovereign Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52452, {	-- Design: Sparkling Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73402,	-- Sparkling Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52391, {	-- Design: Sparkling Ocean Sapphire
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73341,	-- Sparkling Ocean Sapphire
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52427, {	-- Design: Steady Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73379,	-- Steady Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52453, {	-- Design: Stormy Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73403,	-- Stormy Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52392, {	-- Design: Stormy Ocean Sapphire
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73343,	-- Stormy Ocean Sapphire
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52394, {	-- Design: Subtle Amberjewel
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73345,	-- Subtle Amberjewel
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52455, {	-- Design: Subtle Chimera's Eye
+		["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73405,	-- Subtle Chimera's Eye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52402, {	-- Design: Timeless Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73353,	-- Timeless Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52408, {	-- Design: Veiled Demonseye
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73359,	-- Veiled Demonseye
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(68742, {	-- Design: Vivid Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 96226,	-- Vivid Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(68359, {	-- Design: Willful Ember Topaz
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 95754,	-- Willful Ember Topaz
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52431, {	-- Design: Zen Dream Emerald
+		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 73383,	-- Zen Dream Emerald
+		["requireSkill"] = JEWELCRAFTING,
+		["f"] = 200,
+	}),
+	i(52196, {	-- Chimera's Eye
+		["cost"] = { { "c", 361, 1 }, },	-- 1x Illustrious Jewelcrafter's Token
+		["timeline"] = { "added 4.0.3.13287" },
+		["requireSkill"] = JEWELCRAFTING,
+	}),
+};
+COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
+	i(67095, {	-- Pattern: Assassin's Chestplate
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78488,	-- Assassin's Chestplate
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67070, {	-- Pattern: Belt of Nefarious Whispers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78461,	-- Belt of Nefarious Whispers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67084, {	-- Pattern: Charscale Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78478,	-- Charscale Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67094, {	-- Pattern: Chestguard of Nature's Fury
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78487,	-- Chestguard of Nature's Fury
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67073, {	-- Pattern: Corded Viper Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78463,	-- Corded Viper Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67100, {	-- Pattern: Dragonkiller Tunic
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78490,	-- Dragonkiller Tunic
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(68193, {	-- Pattern: Dragonscale Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78477,	-- Dragonscale Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(71721, {	-- Pattern: Drakehide Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 101599,	-- Drakehide Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67068, {	-- Pattern: Lightning Lash
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78460,	-- Lightning Lash
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67082, {	-- Pattern: Razor-Edged Cloak
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78475,	-- Razor-Edged Cloak
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67072, {	-- Pattern: Stormleather Sash
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78462,	-- Stormleather Sash
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67083, {	-- Pattern: Twilight Dragonscale Cloak
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78476,	-- Twilight Dragonscale Cloak
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67096, {	-- Pattern: Twilight Scale Chestguard
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78489,	-- Twilight Scale Chestguard
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67064, {	-- Pattern: Vicious Charscale Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78457,	-- Vicious Charscale Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67063, {	-- Pattern: Vicious Charscale Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78456,	-- Vicious Charscale Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67049, {	-- Pattern: Vicious Charscale Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78448,	-- Vicious Charscale Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67090, {	-- Pattern: Vicious Charscale Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78483,	-- Vicious Charscale Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67053, {	-- Pattern: Vicious Charscale Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78449,	-- Vicious Charscale Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67091, {	-- Pattern: Vicious Charscale Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78484,	-- Vicious Charscale Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67079, {	-- Pattern: Vicious Charscale Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78471,	-- Vicious Charscale Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67078, {	-- Pattern: Vicious Charscale Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78470,	-- Vicious Charscale Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67080, {	-- Pattern: Vicious Dragonscale Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78473,	-- Vicious Dragonscale Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67065, {	-- Pattern: Vicious Dragonscale Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78458,	-- Vicious Dragonscale Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67054, {	-- Pattern: Vicious Dragonscale Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78450,	-- Vicious Dragonscale Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67093, {	-- Pattern: Vicious Dragonscale Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78486,	-- Vicious Dragonscale Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67066, {	-- Pattern: Vicious Dragonscale Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78459,	-- Vicious Dragonscale Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67081, {	-- Pattern: Vicious Dragonscale Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78474,	-- Vicious Dragonscale Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67092, {	-- Pattern: Vicious Dragonscale Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78485,	-- Vicious Dragonscale Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78451,	-- Vicious Dragonscale Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67076, {	-- Pattern: Vicious Leather Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78468,	-- Vicious Leather Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67060, {	-- Pattern: Vicious Leather Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78454,	-- Vicious Leather Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67046, {	-- Pattern: Vicious Leather Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78446,	-- Vicious Leather Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67087, {	-- Pattern: Vicious Leather Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78481,	-- Vicious Leather Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67048, {	-- Pattern: Vicious Leather Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78447,	-- Vicious Leather Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67077, {	-- Pattern: Vicious Leather Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78469,	-- Vicious Leather Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67089, {	-- Pattern: Vicious Leather Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78482,	-- Vicious Leather Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67062, {	-- Pattern: Vicious Leather Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78455,	-- Vicious Leather Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67044, {	-- Pattern: Vicious Wyrmhide Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78445,	-- Vicious Wyrmhide Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67058, {	-- Pattern: Vicious Wyrmhide Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78453,	-- Vicious Wyrmhide Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78444,	-- Vicious Wyrmhide Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67075, {	-- Pattern: Vicious Wyrmhide Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78467,	-- Vicious Wyrmhide Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78452,	-- Vicious Wyrmhide Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67086, {	-- Pattern: Vicious Wyrmhide Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78480,	-- Vicious Wyrmhide Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67085, {	-- Pattern: Vicious Wyrmhide Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78479,	-- Vicious Wyrmhide Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78464,	-- Vicious Wyrmhide Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(52980, {	-- Pristine Hide
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+	}),
+};
+COMMON_CATACLYSM_TAILORING_RECIPES = {
+	i(54601, {	-- Pattern: Belt of the Depths
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75298,	-- Belt of the Depths
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(68199, {	-- Pattern: Black Embersilk Gown
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75288,	-- Black Embersilk Gown
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54603, {	-- Pattern: Breeches of Mended Nightmares
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75300,	-- Breeches of Mended Nightmares
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54602, {	-- Pattern: Dreamless Belt
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75299,	-- Dreamless Belt
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54604, {	-- Pattern: Flame-Ascended Pantaloons
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75301,	-- Flame-Ascended Pantaloons
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54605, {	-- Pattern: Illusionary Bag
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75308,	-- Illusionary Bag
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54600, {	-- Pattern: Powerful Ghostly Spellthread
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75310,	-- Powerful Ghostly Spellthread
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54599, {	-- Pattern: Powerful Enchanted Spellthread
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75309,	-- Powerful Enchanted Spellthread
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54593, {	-- Pattern: Vicious Embersilk Cowl
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75306,	-- Vicious Embersilk Cowl
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54594, {	-- Pattern: Vicious Embersilk Pants
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75307,	-- Vicious Embersilk Pants
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54595, {	-- Pattern: Vicious Embersilk Robe
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75305,	-- Vicious Embersilk Robe
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54596, {	-- Pattern: Vicious Fireweave Cowl
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75304,	-- Vicious Fireweave Cowl
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54597, {	-- Pattern: Vicious Fireweave Pants
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75302,	-- Vicious Fireweave Pants
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54598, {	-- Pattern: Vicious Fireweave Robe
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75303,	-- Vicious Fireweave Robe
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+};
+
+-- Other things to consider adding to that section:
+-- Recipe: Sagefish Delight
+-- Formula: Lesser Wizard Oil
+-- Pattern: Enchanted Mageweave Pouch
+
+--[[
+-- Uncomment to check that I didn't mess up the spellID/itemID pairs.
+for i,o in ipairs(COMMON_CATACLYSM_ENCHANTING_RECIPES) do
+	if o.itemID == o.spellID then
+		print("YA MESSED UP CRIEVE", o.itemID, o.spellID);
+	end
+end
+]]--

@@ -107,6 +107,7 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -118,6 +119,7 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -266,11 +268,13 @@ _.Zones =
 							["spellID"] = 30316,	-- Cogspinner Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
 							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -384,11 +388,13 @@ _.Zones =
 							["spellID"] = 30329,	-- Adamantite Scope
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							["spellID"] = 30316,	-- Cogspinner Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -502,11 +508,13 @@ _.Zones =
 							["spellID"] = 32657,	-- Eternium Rod
 							["requireSkill"] = BLACKSMITHING,
 							["timeline"] = { "removed 5.0.4.10000" },
+							["f"] = 200,
 						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["spellID"] = 29728,	-- Lesser Ward of Shielding
 							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),

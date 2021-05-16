@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(KALIMDOR, {
@@ -66,13 +65,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6725)),	-- Marbled Buckler
 					},
 				}),
-				q(27277, {	-- An Audience with Ureda
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3047 },	-- Archmage Shymm
-					["classes"] = { MAGE },
-					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
 				q(5088,  {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, 88 },
@@ -117,19 +109,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(7749)),	-- Omega Orb
 					},
 				}),
-				q(27334, {	-- Dark Cleric Cecille
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { UNDEAD },
-				}),
 				q(1205,  {	-- Deadmire
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, 88 },
@@ -173,33 +152,6 @@ _.Zones =
 					["coord"] = { 44.0, 44.6, 88 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(27281, {	-- Grezz Ragefist
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3042 },	-- Sark Ragetotem
-					["classes"] = { WARRIOR },
-					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(27278, {	-- Grimshot's Call
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
-					["classes"] = { HUNTER },
-					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(27335, {	-- Journey to Orgrimmar
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { BLOODELF },
-				}),
 				q(1065,  {	-- Journey to Tarren Mill
 					["sourceQuests"] = { 1064 },	-- Forsaken Aid
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
@@ -214,21 +166,6 @@ _.Zones =
 					["g"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
-				}),
-				q(27282, {	-- Kranosh's Behest
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 43881 },	-- Delano Morisett (Thunder Bluff)
-						{ "n", 4563 },	-- Kaal Soulreaper (Undercity)
-						{ "n", 16648 },	-- Zanien (Silvermoon City)
-					},
-					["classes"] = { WARLOCK },
-					["coords"] = {
-						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
-						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien (Silvermoon City)
-					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(914,   {	-- Leaders of the Fang
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
@@ -254,88 +191,6 @@ _.Zones =
 					["coord"] = { 69.9, 30.9, 88 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(28323, {	-- Meet with Brother Silverhallow
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { GOBLIN },
-				}),
-				q(28304, {	-- Meet with Dark Cleric Cecille
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3045 },	-- Malakai Cross
-					["classes"] = { PRIEST },
-					["coord"] = { 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-					["races"] = { UNDEAD },
-				}),
-				q(28290, {	-- Meet with Grezz Ragefist
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3042 },	-- Sark Ragetotem
-					["classes"] = { WARRIOR },
-					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28299, {	-- Meet with Kranosh
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43881 },	-- Delano Morisett
-					["classes"] = { WARLOCK },
-					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28303, {	-- Meet with Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { BLOODELF },
-				}),
-				q(28297, {	-- Meet with Ormak Grimshot
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
-					["classes"] = { HUNTER },
-					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28302, {	-- Meet with Sunwalker Atohmo
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { TAUREN },
-				}),
-				q(28301, {	-- Meet with Terga Earthbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 51639 },	-- Kador Cloudsong
-					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28307, {	-- Meet with Tyelis
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { BLOODELF },
-				}),
-				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3047 },	-- Archmage Shymm
-					["classes"] = { MAGE },
-					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
-					["races"] = HORDE_ONLY,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
@@ -404,33 +259,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28164, {	-- Seek Brother Silverhallow
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43870 },	-- Seer Beryl
-					["classes"] = { PRIEST },
-					["coord"] = { 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					["races"] = { GOBLIN },
-				}),
-				q(27298, {	-- Seek Out Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { BLOODELF },
-				}),
-				q(27332, {	-- Seek the Shadow-Walker
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { TROLL },
-				}),
 				q(2966,  {	-- Seeing What Happens
 					["sourceQuests"] = { 2965 },	-- Portents of Uldum
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
@@ -469,13 +297,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27280, {	-- The Earthbreaker Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 51639 },	-- Kador Cloudsong
-					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
 				q(1086,  {	-- The Flying Machine Airport
 					["sourceQuests"] = { 1067 },	-- Return to Thunder Bluff
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
@@ -506,19 +327,6 @@ _.Zones =
 					["sourceQuests"] = { 1195 },	-- The Sacred Flame
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(27331, {	-- The Seer's Call
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 3045 },	-- Malakai Cross
-						{ "n", 43870 },	-- Seer Beryl
-					},
-					["classes"] = { PRIEST },
-					["coords"] = {
-						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
-						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
-					},
-					["races"] = { TAUREN },
 				}),
 				q(3761,  {	-- Un'Goro Soil
 					["sourceQuests"] = {

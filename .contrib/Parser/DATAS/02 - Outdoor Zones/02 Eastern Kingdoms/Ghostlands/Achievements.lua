@@ -1,15 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(GHOSTLANDS, {
+		m(GHOSTLANDS, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(4908, {	-- Ghostlands Quests
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Citizens of Tranquillien
 							["sourceQuests"] = {
 								9315,	-- Anok'suten (verify)
@@ -50,6 +50,7 @@ _.Zones =
 					},
 				}),
 			}),
-		}),
+		})),
 	}),
 };
+-- #endif

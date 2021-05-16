@@ -78,33 +78,9 @@ _.Zones =
 				n(3005, {	-- Mahu <Tailoring Supplies>
 					["coord"] = { 43.83, 45.12, 88 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(54601, {	-- Pattern: Belt of the Depths
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54605, {	-- Pattern: Illusionary Bag
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(68199, {	-- Pattern: Black Embersilk Gown
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(10311, {	-- Pattern: Orange Martial Shirt
 							["isLimited"] = true,
-						}),
-						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(5771, {	-- Pattern: Red Linen Bag
 							["isLimited"] = true,
@@ -112,28 +88,10 @@ _.Zones =
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
 						i(10325, {	-- Pattern: White Wedding Dress
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(3008, {	-- Mak <Leatherworking Supplies>
 					["coord"] = { 42.08, 43.46, 88 },
@@ -376,328 +334,23 @@ _.Zones =
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 					["coord"] = { 44.91, 37.66, 88 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
 							["isLimited"] = true,
 						}),
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
 						i(6377, {	-- Formula: Enchant Boots - Minor Agility
 							["isLimited"] = true,
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(67308, {	-- Formula: Enchanted Lantern
-							["races"] = HORDE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
 					["coord"] = { 34.75, 53.45, 88 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(52409, {	-- Design: Accurate Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52419, {	-- Design: Adept Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52421, {	-- Design: Artful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52437, {	-- Design: Austere Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52461, {	-- Design: Band of Blades
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52381, {	-- Design: Bold Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52362, {	-- Design: Bold Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52435, {	-- Design: Bracing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52464, {	-- Design: Brazen Elementium Medallion
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52449, {	-- Design: Brilliant Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52387, {	-- Design: Brilliant Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52434, {	-- Design: Chaotic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52413, {	-- Design: Deadly Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52401, {	-- Design: Defender's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52416, {	-- Design: Deft Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52447, {	-- Design: Delicate Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52380, {	-- Design: Delicate Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52441, {	-- Design: Destructive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52438, {	-- Design: Effulgent Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52460, {	-- Design: Elementium Destroyer's Ring
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52467, {	-- Design: Elementium Guardian
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52463, {	-- Design: Elementium Moebius Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52439, {	-- Design: Ember Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52443, {	-- Design: Enigmatic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52465, {	-- Design: Entwined Elementium Choker
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52405, {	-- Design: Etched Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52436, {	-- Design: Eternal Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52466, {	-- Design: Eye of Many Deaths
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52415, {	-- Design: Fierce Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52420, {	-- Design: Fine Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52448, {	-- Design: Flashing Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52384, {	-- Design: Flashing Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52433, {	-- Design: Fleet Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52428, {	-- Design: Forceful Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52445, {	-- Design: Forlorn Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52398, {	-- Design: Fractured Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52459, {	-- Design: Fractured Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52406, {	-- Design: Glinting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52403, {	-- Design: Guardian's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52444, {	-- Design: Impassive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52412, {	-- Design: Inscribed Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52425, {	-- Design: Jagged Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52422, {	-- Design: Keen Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52429, {	-- Design: Lightning Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68360, {	-- Design: Lucent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52396, {	-- Design: Mystic Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52457, {	-- Design: Mystic Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52424, {	-- Design: Nimble Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52426, {	-- Design: Piercing Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52410, {	-- Design: Polished Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52414, {	-- Design: Potent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52442, {	-- Design: Powerful Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52450, {	-- Design: Precise Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52389, {	-- Design: Precise Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52430, {	-- Design: Puissant Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(69853, {	-- Design: Punisher's Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52404, {	-- Design: Purified Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52397, {	-- Design: Quick Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52458, {	-- Design: Quick Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52417, {	-- Design: Reckless Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52423, {	-- Design: Regal Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52411, {	-- Design: Resolute Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68361, {	-- Design: Resplendent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52407, {	-- Design: Retaliating Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52440, {	-- Design: Revitalizing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52454, {	-- Design: Rigid Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52393, {	-- Design: Rigid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52462, {	-- Design: Ring of Warring Elements
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52432, {	-- Design: Sensei's Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52400, {	-- Design: Shifting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52418, {	-- Design: Skillful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52395, {	-- Design: Smooth Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52456, {	-- Design: Smooth Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52451, {	-- Design: Solid Chimera's Eye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52390, {	-- Design: Solid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52399, {	-- Design: Sovereign Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52452, {	-- Design: Sparkling Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52391, {	-- Design: Sparkling Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52427, {	-- Design: Steady Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52453, {	-- Design: Stormy Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52392, {	-- Design: Stormy Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52394, {	-- Design: Subtle Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52455, {	-- Design: Subtle Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52402, {	-- Design: Timeless Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52408, {	-- Design: Veiled Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68742, {	-- Design: Vivid Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68359, {	-- Design: Willful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52431, {	-- Design: Zen Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, 88 },
@@ -739,7 +392,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21948, {	-- Design: Opal Necklace of Impact
+							["spellID"] = 26897,	-- Opal Necklace of Impact
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -755,110 +415,7 @@ _.Zones =
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 					["coord"] = { 39.81, 55.68, 88 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
 				}),
 			}),
 		}),

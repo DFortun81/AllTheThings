@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(GHOSTLANDS, {
 			n(RARES, {
 				n(22062, {	-- Dr. Whitherlimb
@@ -14,7 +13,7 @@ _.Zones =
 						{ 29.6, 88.8, GHOSTLANDS },
 						{ 35.6, 89.6, GHOSTLANDS },
 					},
-					["g"] = {
+					["groups"] = {
 						i(31270),	-- Banshee Rod
 						i(31269),	-- Ghoul Hammer
 						i(31268),	-- Abomination Cleaver
@@ -22,5 +21,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

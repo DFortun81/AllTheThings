@@ -93,6 +93,7 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(22909, {	-- Recipe: Elixir of Major Defense
 							["isLimited"] = true,

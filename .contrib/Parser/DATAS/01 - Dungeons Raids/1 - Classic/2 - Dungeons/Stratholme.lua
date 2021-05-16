@@ -456,17 +456,6 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(17045)),	-- Blood of the Martyr
 								un(REMOVED_FROM_GAME, i(17044)),	-- Will of the Martyr
 							})),
-							un(REMOVED_FROM_GAME, q(9737, { 	-- True Masters of the Light
-								["classes"] = { PALADIN },
-								["races"] = { BLOODELF },
-								["groups"] = {
-									{
-										["mountID"] = 34767, 	-- Thalassian Charger
-										["u"] = REMOVED_FROM_GAME,
-									},
-									i(25549),	-- Blood Knight Tabard (not unobtainable, new quest out of Orgrimmar)
-								},
-							})),
 						}),
 						n(ZONEDROPS, {
 							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings

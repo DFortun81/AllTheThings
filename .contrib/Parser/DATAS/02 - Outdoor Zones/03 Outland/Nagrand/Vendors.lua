@@ -11,7 +11,7 @@ _.Zones =
 					["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(24208, {	-- Design: Mystic Dawnstone
 							["isLimited"] = true,
 						}),
@@ -43,9 +43,12 @@ _.Zones =
 				n(19017, {	-- Borto <Trade Supplies>
 					["coord"] = { 53.2, 71.8, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["spellID"] = 26750,	-- Bolt of Soulcloth
+							["requireSkill"] = TAILORING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(21902, { 	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
@@ -56,7 +59,7 @@ _.Zones =
 					["description"] = "This vendor is only accessible when the Horde controls Halaa.",
 					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30570, {	-- Arkadian Claymore
 							["isLimited"] = true,
 						}),
@@ -87,7 +90,7 @@ _.Zones =
 				}),
 				n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
 					["coord"] = { 60.6, 22.1, NAGRAND },
-					["g"] = {
+					["groups"] = {
 						i(136934, {	-- Raging Elemental Stone (TOY!)
 							["classes"] = { SHAMAN },
 						}),
@@ -117,11 +120,18 @@ _.Zones =
 						{ 57.0, 40.0, NAGRAND },
 					},
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["spellID"] = 26750,	-- Bolt of Soulcloth
+							["requireSkill"] = TAILORING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
-						i(21893),	-- Pattern: Imbued Netherweave Bag
+						i(21893, {	-- Pattern: Imbued Netherweave Bag
+							["spellID"] = 26749,	-- Imbued Netherweave Bag
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
+						}),
 						i(21902, { 	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
 						}),
@@ -130,7 +140,7 @@ _.Zones =
 				n(20097, {	-- Nula the Butcher <Cooking Supplies>
 					["coord"] = { 58.0, 35.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27697),	-- Recipe: Grilled Mudfish
 						i(27698),	-- Recipe: Poached Bluefish
 						i(27691),	-- Recipe: Roasted Clefthoof
@@ -141,7 +151,7 @@ _.Zones =
 					["description"] = "This NPC is only accessible when the Alliance controls Halaa.",
 					["coord"] = { 41.2, 44.2, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27654, {	-- Avenger's Legplates
 							["cost"] = {
 								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
@@ -241,7 +251,7 @@ _.Zones =
 					["description"] = "This NPC is only accessible when the Horde controls Halaa.",
 					["coord"] = { 41.2, 44.2, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["g"]= {
+					["groups"]= {
 						i(27654, {	-- Avenger's Legplates
 							["cost"] = {
 								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
@@ -340,7 +350,7 @@ _.Zones =
 				n(20096, {		-- Uriku <Cooking Supplies>
 					["coord"] = { 56.2, 73.2, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(27697),	-- Recipe: Grilled Mudfish
 						i(27698),	-- Recipe: Poached Bluefish
 						i(27691),	-- Recipe: Roasted Clefthoof

@@ -34,12 +34,35 @@ _.Zones =
 					["coord"] = { 33.6, 50.8, 634 },
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
+							["spellID"] = 30313,	-- Adamantite Rifle
+							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
-						i(23807),	-- Schematic: Adamantite Scope
-						i(23803),	-- Schematic: Cogspinner Goggles
-						i(23816),	-- Schematic: Fel Iron Toolbox
-						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
+						i(23807, {	-- Schematic: Adamantite Scope
+							["spellID"] = 30329,	-- Adamantite Scope
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23803, {	-- Schematic: Cogspinner Goggles
+							["spellID"] = 30316,	-- Cogspinner Goggles
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23816, {	-- Schematic: Fel Iron Toolbox
+							["spellID"] = 30348,	-- Fel Iron Toolbox
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
+							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
 					},
 				}),
 				n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
