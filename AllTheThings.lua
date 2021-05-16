@@ -11375,7 +11375,13 @@ function app:CreateMiniListForGroup(group)
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone/search initially so as to not let popout operations modify the source data
-		group = CloneData(group);
+		-- make a search for this group if it is an item/currency and not already a container for things
+		if not group.g and (group.itemID or group.currencyID) then
+			local cmd = group.key .. ":" .. group[group.key];
+			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		else
+			group = CloneData(group);
+		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		-- 	-- make a search for this group if it is an item/currency and not already a container for things
