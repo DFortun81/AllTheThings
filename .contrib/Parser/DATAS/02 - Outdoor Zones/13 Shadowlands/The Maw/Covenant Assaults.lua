@@ -12,62 +12,60 @@ _.Zones =
 				-- the quest was automatically on the map, but you had to speak to Xandria to ~activate it, and then all the other quests popped up.  weird system
 				-- everything after "Kyrian Assault" requires speaking to Xandria to show up.  these are probably periodically repeatable, like potentially up every time the kyrian assault is active
 				n(ACHIEVEMENTS, {
-					ach(15035, {	-- Breaking The Chains
-						ach(15033, {	-- Taking the Tremaculum
-							crit(2),	-- Weapons of the Tremaculum
-							crit(3),	-- That's a Good Trick
-							crit(4),	-- Fangcrack's Fan Club
-							crit(5),	-- A Tea for Every Occasion
-							crit(7),	-- If Even One is Worthy
-							crit(8),	-- They Grow Up So Quickly
+					ach(15032),	-- Breaking Their Hold
+					ach(15035, {	-- On the Offensive
+						ach(15000, {	-- United Front
+							crit(3),	-- Night Fae Assault
 						}),
-						ach(15032, {	-- Breaking Their Hold
-							crit(6),	-- Centurions March!
+						ach(15001),		-- Jailer's Personal Stash
+						ach(15037, {	-- This Army
+							crit(2),	-- Kearnen the Blade
+							crit(3),	-- Winslow Swan
 						}),
-						ach(15034, {	-- Wings Against the Flames
-							crit(9),	-- Kill The Flame
+						ach(15039),		-- Up For Grabs
+						ach(15043),		-- Hoarder of Torghast
+						ach(15042, {	-- Tea for the Troubled
+							crit(1),	-- Simone
+							crit(2),	-- Laurent
+							crit(3),	-- CryptKeeper Kassir
+							crit(4),	-- The Countess
+							crit(5),	-- Temel
+							crit(6),	-- Lost Sybille
+							crit(7),	-- Vulca
+							crit(8),	-- Watchmaster Boromod
 						}),
-						ach(15036, {	-- Rooting Out The Evil
-							crit(1),	-- Clean Out the Crucible
-							crit(2),	-- Looming Darkness
-							crit(3),	-- No Soul Left Behind
-							crit(4),	-- Snail Stomping
-							crit(5),	-- Just Don't Ask Me to Spell It
-							crit(6),	-- Double Dromans
-							crit(7),	-- Needless Needlers
-							crit(8),	-- The Soul Blade
-							crit(9),	-- A Shady Place
-							crit(10),	-- Heavy Handed Tactics
+						ach(15044, {	-- Krrprripripkraak's Heroes
+							crit(1),	-- Elder Gwenna
+							crit(2),	-- Foreman Thorodir
+							crit(3),	-- Te'zan
+							crit(4),	-- Warden Casad
+							crit(5),	-- Kivarr
+							crit(6),	-- Guardian Kota
 						}),
 					}),
-					ach(15043),		-- Hoarder of Torghast
-					ach(15001),		-- Jailer's Personal Stash
-					ach(15044, {	-- Krrprripripkraak's Heroes
-						crit(1),	-- Elder Gwenna
-						crit(2),	-- Foreman Thorodir
-						crit(3),	-- Te'zan
-						crit(4),	-- Warden Casad
-						crit(5),	-- Kivarr
-						crit(6),	-- Guardian Kota
+					ach(15036, {	-- Rooting Out The Evil
+						crit(1),	-- Clean Out the Crucible
+						crit(2),	-- Looming Darkness
+						crit(3),	-- No Soul Left Behind
+						crit(4),	-- Snail Stomping
+						crit(5),	-- Just Don't Ask Me to Spell It
+						crit(6),	-- Double Dromans
+						crit(7),	-- Needless Needlers
+						crit(8),	-- The Soul Blade
+						crit(9),	-- A Shady Place
+						crit(10),	-- Heavy Handed Tactics
 					}),
-					ach(15042, {	-- Tea for the Troubled
-						crit(1),	-- Simone
-						crit(2),	-- Laurent
-						crit(3),	-- CryptKeeper Kassir
-						crit(4),	-- The Countess
-						crit(5),	-- Temel
-						crit(6),	-- Lost Sybille
-						crit(7),	-- Vulca
-						crit(8),	-- Watchmaster Boromod
+					ach(15033, {	-- Taking the Tremaculum
+						crit(2),	-- Weapons of the Tremaculum
+						crit(3),	-- That's a Good Trick
+						crit(4),	-- Fangcrack's Fan Club
+						crit(5),	-- A Tea for Every Occasion
+						crit(7),	-- If Even One is Worthy
+						crit(8),	-- They Grow Up So Quickly
 					}),
-					ach(15037, {	-- This Army
-						crit(2),	-- Kearnen the Blade
-						crit(3),	-- Winslow Swan
+					ach(15034, {	-- Wings Against the Flames
+						crit(9),	-- Kill The Flame
 					}),
-					ach(15000, {	-- United Front
-						crit(3),	-- Night Fae Assault
-					}),
-					ach(15039),		-- Up For Grabs
 				}),
 				q(63824, {	-- Kyrian Assault
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -212,6 +210,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63753, {	-- Centurions March!
+								["sourceQuests"] = { 63772 },	-- Waiting in the Wings
+								["isDaily"] = true,
+								["coord"] = { 37.0, 63.5, THE_MAW },
+								["g"] = {
+									crit(6, {	-- Centurions March!
+										["achievementID"] = 15032,	-- Breaking Their Hold
+									}),
+								},
+							}),
 							q(63455, {	-- Dead On Their Feet
 								["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 								["isDaily"] = true,
@@ -345,14 +353,13 @@ _.Zones =
 									i(186187),	-- Lil'Abom Spare Arm
 								},
 							}),
-						--	o(, {	-- Lil'Abom's Torso
-						--	TODO: objectID unavailable on wowhead and i didn't have the debugger up when i looted it
-						--		["questID"] = 64011,
-						--		["coord"] = { 39.9, 62.6, THE_MAW },
-						--		["g"] = {
+							o(368667, {	-- Lil'Abom's Torso
+								["questID"] = 64011,
+								["coord"] = { 39.9, 62.6, THE_MAW },
+								["g"] = {
 									i(186184),	-- Lil'Abom Torso
-						--		},
-						--	}),
+								},
+							}),
 							o(368668, {	-- Lil'Abom's Trunk
 								["questID"] = 64013,
 								["coord"] = { 29.4, 67.2, THE_MAW },

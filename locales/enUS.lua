@@ -5040,6 +5040,7 @@ app.L = {
 		[368663] = "Lil'Abom's Right Hand",
 		[368665] = "Lil'Abom's Spare Arm",
 		[368666] = "Lil'Abom's Head",
+		[368667] = "Lil'Abom's Torso",
 		[368668] = "Lil'Abom's Trunk",
 		[369132] = "Domination Sealed Chest",
 		[369148] = "Glittering Nest Material",

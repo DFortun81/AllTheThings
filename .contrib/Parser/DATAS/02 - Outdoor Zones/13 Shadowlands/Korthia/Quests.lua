@@ -301,14 +301,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
-				q(63783, {	-- Anima Reclaimation
+				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
-					["g"] = {
-						i(186017),	-- Progenian Fragment
-					},
 				}),
 				q(63934, {	-- Assail Mail
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -411,12 +408,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
 				}),
-				q(63776, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(63958, {	-- Encrypted Databanks
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -472,6 +463,12 @@ _.Zones =
 					["provider"] = { "n", 178805 },	-- Emeni
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, KORTHIA },
+				}),
+				q(63776, {	-- Observational Records
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63957, {	-- Observational Records
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

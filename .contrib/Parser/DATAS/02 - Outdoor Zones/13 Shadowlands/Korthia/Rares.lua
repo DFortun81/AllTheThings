@@ -45,7 +45,10 @@ _.Zones =
 					["questID"] = 64349,
 					["isDaily"] = true,
 					["coord"] = { 59.7, 43.3, KORTHIA },
-					["cr"] = 180057,	-- Restless Necromancer
+					["crs"] = {
+						180064,	-- Corpse Heap
+						180057,	-- Restless Necromancer
+					},
 					["g"] = {
 					--	crit(18, {	-- Corpse Heap
 						crit(20, {	-- Corpse Heap
@@ -135,7 +138,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 55.6, 31.7, KORTHIA },
-					--	{ 26.8, 52.6, KORTHIA }, somehow i typed this in wrong so it's EXTREMELY wrong
+						{ 56.8, 32.6, KORTHIA },
 					},
 					["cr"] = 180028,	-- Popo
 					["g"] = {

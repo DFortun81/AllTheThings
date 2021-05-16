@@ -7,7 +7,7 @@ _.Zones =
 	m(THE_MAW, {
 		filter(101, {	-- Battle Pets
 			pet(3115, {	-- Clinging Remains
-			--	["cr"] = ,	-- 
+				["cr"] = 179179,	-- Clinging Remains
 			}),
 			pet(3123, {	-- Deathroach
 			--	["cr"] = ,	-- 
@@ -19,7 +19,7 @@ _.Zones =
 				["cr"] = 179219,	-- Grip of Terror
 			}),
 			pet(3119, {	-- Lost Limb
-			--	["cr"] = ,	-- 
+				["cr"] = 179183,	-- Lost Limb
 			}),
 			pet(3118, {	-- Scurrying Mawrat
 			--	["cr"] = ,	-- 

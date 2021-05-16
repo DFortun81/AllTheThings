@@ -59,7 +59,7 @@ _.Zones =
 				o(369327, {	-- Invasive Mawshroom
 					["questID"] = 64351,
 					["isDaily"] = true,
-					["coord"] = { 34.8, 41.0, KORTHIA },
+					["coord"] = { 54.2, 41.2, KORTHIA },
 				}),
 				o(369329, {	-- Invasive Mawshroom
 					["questID"] = 64354,
