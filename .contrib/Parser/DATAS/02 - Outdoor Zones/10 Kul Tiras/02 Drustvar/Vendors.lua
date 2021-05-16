@@ -134,19 +134,53 @@ _.Zones =
 					["coord"] = { 37.6, 25.8, 896 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(23596),	-- Plans: Adamantite Breastplate
-						i(23591, {	-- Plans: Adamantite Cleaver
+						i(23596, {	-- Plans: Adamantite Breastplate
+							["spellID"] = 29606,	-- Adamantite Breastplate
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
-						i(23592),	-- Plans: Adamantite Dagger
-						i(23590),	-- Plans: Adamantite Maul
-						i(23594),	-- Plans: Adamantite Plate Bracers
-						i(23595),	-- Plans: Adamantite Plate Gloves
-						i(23593),	-- Plans: Adamantite Rapier
+						i(23591, {	-- Plans: Adamantite Cleaver
+							["spellID"] = 29568,	-- Adamantite Cleaver
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23592, {	-- Plans: Adamantite Dagger
+							["spellID"] = 29569,	-- Adamantite Dagger
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23590, {	-- Plans: Adamantite Maul
+							["spellID"] = 29566,	-- Adamantite Maul
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23594, {	-- Plans: Adamantite Plate Bracers
+							["spellID"] = 29603,	-- Adamantite Plate Bracers
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23595, {	-- Plans: Adamantite Plate Gloves
+							["spellID"] = 29605,	-- Adamantite Plate Gloves
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23593, {	-- Plans: Adamantite Rapier
+							["spellID"] = 29571,	-- Adamantite Rapier
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["spellID"] = 29728,	-- Lesser Ward of Shielding
 							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),

@@ -10,14 +10,18 @@ _.Zones =
 				n(16705, {	-- Altaa <Alchemy Supplies>
 					["coord"] = { 27.8, 61.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23574, {	-- Recipe: Transmute Primal Might
+							["spellID"] = 29688,	-- Transmute Primal Might
+							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -26,16 +30,28 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(23591, {	-- Plans: Adamantite Cleaver
+							["spellID"] = 29568,	-- Adamantite Cleaver
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23592, {	-- Plans: Adamantite Dagger
+							["spellID"] = 29569,	-- Adamantite Dagger
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23590, {	-- Plans: Adamantite Maul
+							["spellID"] = 29566,	-- Adamantite Maul
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23593, {	-- Plans: Adamantite Rapier
+							["spellID"] = 29571,	-- Adamantite Rapier
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
@@ -44,16 +60,44 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
 						i(20854, {	-- Design: Amulet of the Moon
+							["spellID"] = 25339,	-- Amulet of the Moon
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(21948, {	-- Design: Opal Necklace of Impact
+							["spellID"] = 26897,	-- Opal Necklace of Impact
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(20975, {	-- Design: The Jade Eye
+							["spellID"] = 25619,	-- The Jade Eye
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
@@ -62,16 +106,37 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(22565, {	-- Formula: Large Prismatic Shard
+							["spellID"] = 28022,	-- Large Prismatic Shard
+							["requireSkill"] = ENCHANTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22562, {	-- Formula: Superior Mana Oil
+							["spellID"] = 28016,	-- Superior Mana Oil
+							["requireSkill"] = ENCHANTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(22563, {	-- Formula: Superior Wizard Oil
+							["spellID"] = 28019,	-- Superior Wizard Oil
+							["requireSkill"] = ENCHANTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
@@ -79,28 +144,31 @@ _.Zones =
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.0, 90.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["spellID"] = 30313,	-- Adamantite Rifle
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["spellID"] = 30348,	-- Fel Iron Toolbox
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
 							["spellID"] = 30341,	-- White Smoke Flare
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					["coord"] = { 71.0, 91.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(3428),	-- Common Grey Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
@@ -111,14 +179,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(25726, {	-- Pattern: Comfortable Insoles
+							["spellID"] = 32482,	-- Comfortable Insoles
+							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(64889),	-- Mantle of Exodar
 						i(64890),	-- Cape of Exodar
 						i(64891),	-- Shroud of Exodar
@@ -130,18 +201,33 @@ _.Zones =
 					["coord"] = { 64.6, 68.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
-						i(21892),	-- Pattern: Bolt of Imbued Netherweave
-						i(21894, {	-- Pattern: Bolt of Soulcloth
-							["isLimited"] = true,
+						i(21892, {	-- Pattern: Bolt of Imbued Netherweave
+							["spellID"] = 26747,	-- Bolt of Imbued Netherweave
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
 						}),
-						i(21896), 	-- Pattern: Netherweave Robe
-						i(21897), 	-- Pattern: Netherweave Tunic
+						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["spellID"] = 26750,	-- Bolt of Soulcloth
+							["requireSkill"] = TAILORING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(21896, {	-- Pattern: Netherweave Robe
+							["spellID"] = 26773,	-- Netherweave Robe
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
+						}),
+						i(21897, {	-- Pattern: Netherweave Tunic
+							["spellID"] = 26774,	-- Netherweave Tunic
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
+						}),
 					}),
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.6, 26.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
@@ -149,7 +235,7 @@ _.Zones =
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.4, 34.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29901),	-- Blue Moth Egg Pet
 						i(29903),	-- Yellow Moth Egg Pet
 						i(29904),	-- White Moth Egg Pet
@@ -171,7 +257,7 @@ _.Zones =
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 					["coord"] = { 81.6, 52.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(29745),	-- Great Blue Elekk Mount
 						i(29746),	-- Great Green Elekk Mount
 						i(29747),	-- Great Purple Elekk Mount

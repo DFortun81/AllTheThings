@@ -2444,6 +2444,11 @@ COMMON_CATACLYSM_TAILORING_RECIPES = {
 	}),
 };
 
+-- Other things to consider adding to that section:
+-- Recipe: Sagefish Delight
+-- Formula: Lesser Wizard Oil
+-- Pattern: Enchanted Mageweave Pouch
+
 --[[
 -- Uncomment to check that I didn't mess up the spellID/itemID pairs.
 for i,o in ipairs(COMMON_CATACLYSM_ENCHANTING_RECIPES) do

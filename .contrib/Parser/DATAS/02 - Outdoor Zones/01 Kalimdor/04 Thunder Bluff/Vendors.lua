@@ -392,7 +392,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21948, {	-- Design: Opal Necklace of Impact
+							["spellID"] = 26897,	-- Opal Necklace of Impact
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),

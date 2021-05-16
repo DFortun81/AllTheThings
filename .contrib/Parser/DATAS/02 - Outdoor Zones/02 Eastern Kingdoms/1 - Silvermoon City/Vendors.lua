@@ -1,7 +1,39 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local ANDRA_ZYANDREL_GROUPS = {};
+local ANDRA_ZYANDREL_GROUPS, QUELIS_GROUPS = {}, {};
+local LYNA_GROUPS = {
+	i(22565, {	-- Formula: Large Prismatic Shard
+		["spellID"] = 28022,	-- Large Prismatic Shard
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+	i(22562, {	-- Formula: Superior Mana Oil
+		["spellID"] = 28016,	-- Superior Mana Oil
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+	i(22563, {	-- Formula: Superior Wizard Oil
+		["spellID"] = 28019,	-- Superior Wizard Oil
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+};
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -27,12 +59,27 @@ _.Zones =
 					["coord"] = { 56.0, 51.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
-						i(21892),	-- Pattern: Bolt of Imbued Netherweave
-						i(21894, {	-- Pattern: Bolt of Soulcloth
-							["isLimited"] = true,
+						i(21892, {	-- Pattern: Bolt of Imbued Netherweave
+							["spellID"] = 26747,	-- Bolt of Imbued Netherweave
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
 						}),
-						i(21896), 	-- Pattern: Netherweave Robe
-						i(21897), 	-- Pattern: Netherweave Tunic
+						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["spellID"] = 26750,	-- Bolt of Soulcloth
+							["requireSkill"] = TAILORING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(21896, {	-- Pattern: Netherweave Robe
+							["spellID"] = 26773,	-- Netherweave Robe
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
+						}),
+						i(21897, {	-- Pattern: Netherweave Tunic
+							["spellID"] = 26774,	-- Netherweave Tunic
+							["requireSkill"] = TAILORING,
+							["f"] = 200,
+						}),
 					}),
 				}),
 				n(16670, {	-- Eriden <Blacksmithing Supplies>
@@ -40,16 +87,28 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(23591, {	-- Plans: Adamantite Cleaver
+							["spellID"] = 29568,	-- Adamantite Cleaver
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23592, {	-- Plans: Adamantite Dagger
+							["spellID"] = 29569,	-- Adamantite Dagger
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23590, {	-- Plans: Adamantite Maul
+							["spellID"] = 29566,	-- Adamantite Maul
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23593, {	-- Plans: Adamantite Rapier
+							["spellID"] = 29571,	-- Adamantite Rapier
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
@@ -58,37 +117,51 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
 						i(20854, {	-- Design: Amulet of the Moon
+							["spellID"] = 25339,	-- Amulet of the Moon
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(21948, {	-- Design: Opal Necklace of Impact
+							["spellID"] = 26897,	-- Opal Necklace of Impact
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(20975, {	-- Design: The Jade Eye
+							["spellID"] = 25619,	-- The Jade Eye
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-						i(22565, {	-- Formula: Large Prismatic Shard
-							["isLimited"] = true,
-						}),
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22562, {	-- Formula: Superior Mana Oil
-							["isLimited"] = true,
-						}),
-						i(22563, {	-- Formula: Superior Wizard Oil
-							["isLimited"] = true,
-						}),
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, LYNA_GROUPS),
 				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
@@ -111,10 +184,7 @@ _.Zones =
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-					},
+					["groups"] = QUELIS_GROUPS,
 				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 					["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
@@ -131,16 +201,19 @@ _.Zones =
 							["spellID"] = 30313,	-- Adamantite Rifle
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["spellID"] = 30348,	-- Fel Iron Toolbox
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
 							["spellID"] = 30341,	-- White Smoke Flare
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -173,7 +246,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(25726, {	-- Pattern: Comfortable Insoles
+							["spellID"] = 32482,	-- Comfortable Insoles
+							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					}),
 				}),
@@ -193,3 +269,17 @@ for i,o in ipairs({
 	i(3428),	-- Common Gray Shirt
 	i(16060),	-- Common White Shirt
 }) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
+for i,o in ipairs({
+	i(21219),	-- Recipe: Sagefish Delight
+	i(21099),	-- Recipe: Smoked Sagefish
+}) do table.insert(QUELIS_GROUPS, o); end
+for i,o in ipairs({
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307, {	-- Pattern: Enchanted Mageweave Pouch
+		["spellID"] = 27658,	-- Enchanted Mageweave Pouch
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+}) do table.insert(LYNA_GROUPS, o); end

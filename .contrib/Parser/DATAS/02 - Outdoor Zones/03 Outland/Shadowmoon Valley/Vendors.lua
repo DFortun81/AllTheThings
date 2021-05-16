@@ -9,7 +9,7 @@ _.Zones =
 			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
 					["coord"] = { 55.8, 58.2, SHADOWMOON_VALLEY },
-					["g"] = {
+					["groups"] = {
 						i(21900, { 	-- Pattern: Imbued Netherweave Robe
 							["isLimited"] = true,
 						}),
@@ -21,7 +21,7 @@ _.Zones =
 				n(20510, {	-- Brunn Flamebeard <Gryphon Keeper>
 					["coord"] = { 37.6, 56.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25471),	-- Ebon Gryphon Mount
 						i(25470),	-- Golden Gryphon Mount
 						i(25472),	-- Snowy Gryphon Mount
@@ -34,18 +34,19 @@ _.Zones =
 				n(19351, {	-- Daggle Ironshaper
 					["coord"] = { 36.8, 54.4, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
 							["spellID"] = 30329,	-- Adamantite Scope
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
 				n(20494, {	-- Dama Wildmane <Wind Rider Keeper>
 					["coord"] = { 29.0, 29.4, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
 						i(25474),	-- Tawny Wind Rider Mount
@@ -67,7 +68,7 @@ _.Zones =
 					["minReputation"] = { 1015, EXALTED },
 					["description"] = "To access this vendor, you must reach Exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
 					["coord"] = { 65.6, 85.9, SHADOWMOON_VALLEY },
-					["g"] = {
+					["groups"] = {
 						i(32858),	-- Reins of the Azure Netherwing Drake Mount
 						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
 						i(32857),	-- Reins of the Onyx Netherwing Drake Mount
@@ -78,7 +79,7 @@ _.Zones =
 				}),
 				n(19526, {	-- Dunaman <Weapons Vendor>
 					["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -90,7 +91,7 @@ _.Zones =
 				n(19333, {	-- Grokom Deatheye <Weaponsmith>
 					["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -103,31 +104,42 @@ _.Zones =
 				n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
 					["coord"] = { 29.2, 31.0, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23596, {	-- Plans: Adamantite Breastplate
+							["spellID"] = 29606,	-- Adamantite Breastplate
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23594, {	-- Plans: Adamantite Plate Bracers
+							["spellID"] = 29603,	-- Adamantite Plate Bracers
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23595, {	-- Plans: Adamantite Plate Gloves
+							["spellID"] = 29605,	-- Adamantite Plate Gloves
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
 				n(19373, {	-- Mari Stonehand <Armorsmith>
 					["coord"] = { 36.8, 55.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25847, {	-- Plans: Eternium Rod
 							["spellID"] = 32657,	-- Eternium Rod
 							["requireSkill"] = BLACKSMITHING,
 							["timeline"] = { "removed 5.0.4.10000" },
+							["f"] = 200,
 						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["spellID"] = 29728,	-- Lesser Ward of Shielding
 							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
