@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(SILVERMOON_CITY, {
 			filter(101, { 	-- Pet Battle
 				p(459, {	-- Cat
@@ -18,5 +18,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

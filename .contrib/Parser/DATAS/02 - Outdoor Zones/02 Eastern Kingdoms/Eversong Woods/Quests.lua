@@ -47,6 +47,24 @@ _.Zones =
 						i(23371),	-- Velania's Walking Stick
 					},
 				}),
+				q(9673, {	-- Beast Training
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["coord"] = { 60.3, 62.8, EVERSONG_WOODS },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["maps"] = { SILVERMOON_CITY },
+					["classes"] = { HUNTER },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						i(24136, {	-- Farstrider's Bow
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						-- #if BEFORE CATA
+						recipe(6991),		-- Feed Pet
+						recipe(982),		-- Revive Pet
+						-- #endif
+					},
+				}),
 				q(8887, {	-- Captain Kelisendra's Lost Rutters
 					["provider"] = { "i", 21776 },	-- Captain Kelisendra's Lost Rutters
 					["races"] = HORDE_ONLY,
@@ -58,6 +76,19 @@ _.Zones =
 					["coord"] = { 68.7, 46.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
+				}),
+				q(9489, {	-- Cleansing the Scar
+					["qg"] = 16276,	-- Ponaris <Priest Trainer>
+					["coord"] = { 47.8, 47.8, EVERSONG_WOODS },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(5, 1, 5),
+					["groups"] = {
+						i(23924, {	-- Robes of Silvermoon
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+					},
 				}),
 				q(8350, {	-- Completing the Delivery
 					["qg"] = 15301,	-- Outrunner Alarion
@@ -213,7 +244,6 @@ _.Zones =
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
-					["classes"] = exclude({ PALADIN, WARLOCK }, ALL_CLASSES),
 					["timeline"] = { "created 5.2.0.10000", "added 5.2.0.10000" },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
@@ -684,7 +714,7 @@ _.Zones =
 					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 					["cost"] = {
-						{ "i", 23228, 1 },	-- Old Whitebark's Pendant
+						{ "i", 28209, 1 },	-- Old Whitebark's Pendant
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),

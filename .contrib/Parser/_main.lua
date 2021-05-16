@@ -785,15 +785,6 @@ end
 gb = function(id, t)									-- Create a GARRISON BUILDING Object (Alternative)
 	return struct("buildingID", id, t);
 end
-mission = function(id, t)								-- Create an MISSION Object
-	return struct("missionID", id, t);
-end
-mi = function(id, t)									-- Create a MISSION Object (Alternative)
-	return struct("missionID", id, t);
-end
-mount = function(id, t)
-	return struct("mountID", id, t);
-end
 garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end
@@ -865,6 +856,19 @@ map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
+mission = function(id, t)								-- Create an MISSION Object
+	return struct("missionID", id, t);
+end
+mi = function(id, t)									-- Create a MISSION Object (Alternative)
+	return struct("missionID", id, t);
+end
+mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
+	-- #if BEFORE WRATH
+	return struct("spellID", id, t);
+	-- #else
+	return struct("mountID", id, t);
+	-- #endif
+end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	return struct("npcID", id, t);
 end

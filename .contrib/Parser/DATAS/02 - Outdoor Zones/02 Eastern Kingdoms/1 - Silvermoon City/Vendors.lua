@@ -3,22 +3,33 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(SILVERMOON_CITY, {
 			n(VENDORS, {
 				n(16631, {	-- Andra <Clothier>
 					["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Gray Shirt
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(16683, {	-- Darlia <Poison Supplies>
+					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(24285, {	-- Crepuscular Powder
+							["cost"] = { { "g", 1500000 } },	-- 150g
+							["classes"] = { PALADIN },
+							["races"] = { BLOODELF },
+						}),
+					},
+				}),
 				n(16638, {	-- Deynna <Tailoring Supplies>
 					["coord"] = { 56.0, 51.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(54601, {	-- Pattern: Belt of the Depths
 							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
@@ -72,7 +83,7 @@ _.Zones =
 				n(16670, {	-- Eriden <Blacksmithing Supplies>
 					["coord"] = { 80.6, 37.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["isLimited"] = true,
 						}),
@@ -192,7 +203,7 @@ _.Zones =
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(52409, {	-- Design: Accurate Demonseye
 							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
 						}),
@@ -474,7 +485,7 @@ _.Zones =
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
 							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
@@ -533,7 +544,7 @@ _.Zones =
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
@@ -547,7 +558,7 @@ _.Zones =
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
@@ -562,7 +573,7 @@ _.Zones =
 				n(16782, {	-- Yatheon <Engineering Supplies>
 					["coord"] = { 75.8, 40.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["spellID"] = 30313,	-- Adamantite Rifle
 							["requireSkill"] = ENGINEERING,
@@ -580,17 +591,28 @@ _.Zones =
 						}),
 					},
 				}),
+				n(16611, {	-- Zalle <Reagents>
+					["coord"] = { 54.5, 72.0, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(24286, {	-- Arcane Catalyst
+							["cost"] = { { "g", 500000 } },	-- 50g
+							["classes"] = { PALADIN },
+							["races"] = { BLOODELF },
+						}),
+					},
+				}),
 				n(30710, {	-- Zantasia <Inscription Trainer>
 					["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						n(137789),	-- Technique: Songs of the Legion
+					["groups"] = {
+						i(137789),	-- Technique: Songs of the Legion
 					},
 				}),
 				n(16689, {	-- Zaralda <Leatherworking Supplies>
 					["coord"] = { 84.6, 78.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(67095, {	-- Pattern: Assassin's Chestplate
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
@@ -734,7 +756,7 @@ _.Zones =
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Gray Shirt
 						i(16060),	-- Common White Shirt
@@ -742,5 +764,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

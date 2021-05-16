@@ -61,13 +61,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27277, {	-- An Audience with Feenix Arcshine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
-					["classes"] = { MAGE },
-					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
 				q(3564,  {	-- Andron's Payment to Jediga
 					["sourceQuests"] = { 3542 },	-- Delivery to Andron Gant
 					["provider"] = { "n", 6522 },	-- Andron Gant
@@ -124,12 +117,16 @@ _.Zones =
 						i(122340),	-- Timeworn Heirloom Armor Casing
 					},
 				}),
-				q(27334, {	-- Dark Cleric Cecille
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { UNDEAD },
+				q(9189, {	-- Delivery to the Sepulcher
+					["qg"] = 16287,	-- Ambassador Sunsorrow
+					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
+					["coord"] = { 57.8, 90.6, UNDERCITY },
+					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 22629, 1 },	-- Sealed Sin'dorei Orders
+					},
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(15, 1, 15),
 				}),
 				q(1846,  {	-- Dragonmaw Shinbones
 					["sourceQuests"] = { 1841 },	-- Velora Nitely and the Brutal Legguards
@@ -215,20 +212,6 @@ _.Zones =
 					["provider"] = { "n", 8403 },	-- Jeremiah Payson
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27281, {	-- Grezz Ragefist
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4593 },	-- Christoph Walker
-					["classes"] = { WARRIOR },
-					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
-				q(27278, {	-- Grimshot's Call
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 39116 },	-- Apolos
-					["classes"] = { HUNTER },
-					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
 				q(1113,  {	-- Hearts of Zeal
 					["sourceQuests"] = { 1109 },	-- Going, Going, Guano!
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
@@ -267,13 +250,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27335, {	-- Journey to Orgrimmar
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { BLOODELF },
-				}),
 				q(27282, {	-- Kranosh's Behest
 					["isBreadcrumb"] = true,
 					["providers"] = {
@@ -301,20 +277,6 @@ _.Zones =
 					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(28323, {	-- Meet with Brother Silverhallow
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { GOBLIN },
-				}),
-				q(28304, {	-- Meet with Dark Cleric Cecille
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { UNDEAD },
 				}),
 				q(28298, {	-- Meet with Gordul
 					["isBreadcrumb"] = true,
@@ -351,20 +313,6 @@ _.Zones =
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["races"] = HORDE_ONLY,
 				}),
-				q(28308, {	-- Meet with Seer Liwatha
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coords"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { TAUREN },
-				}),
-				q(28309, {	-- Meet with Shadow-Walker Zuru
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { TROLL, ZANDALARI },
-				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
@@ -372,30 +320,11 @@ _.Zones =
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["races"] = { TAUREN },
 				}),
-				q(28307, {	-- Meet with Tyelis
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { BLOODELF },
-				}),
 				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
 					["classes"] = { MAGE },
 					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
-				q(9626,  {	-- Meeting the Orcs
-					["sourceQuests"] = { 9621 },	-- Envoy to the Horde
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coords"] = { 57.8, 91.6, 90 },
-					["races"] = { BLOODELF },
-				}),
-				q(9813,  {	-- Meeting the Orcs
-					["sourceQuests"] = { 9812 },	-- Envoy to the Horde
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coords"] = { 57.8, 91.6, 90 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4642,  {	-- Melding of Influences
@@ -474,26 +403,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10638)),	-- Long Draping Cape
 					},
 				}),
-				q(28164, {	-- Seek Brother Silverhallow
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { GOBLIN },
-				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["classes"] = { PALADIN },
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["races"] = { BLOODELF },
-				}),
-				q(27332, {	-- Seek the Shadow-Walker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { TROLL },
 				}),
 				q(3568,  {	-- Seeping Corruption
 					["provider"] = { "n", 8390 },	-- Chemist Cuely
@@ -654,13 +569,6 @@ _.Zones =
 					["g"] = {
 						i(122341),	-- Timeworn Heirloom Scabbard
 					},
-				}),
-				q(27331, {	-- The Seer's Call
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4606 },	-- Aelthalyste
-					["classes"] = { PRIEST },
-					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
-					["races"] = { TAUREN },
 				}),
 				q(27279, {	-- The Shattered Hand
 					["isBreadcrumb"] = true,
