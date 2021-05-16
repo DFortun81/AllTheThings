@@ -193,13 +193,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28290, {	-- Meet with Grezz Ragefist
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3042 },	-- Sark Ragetotem
-					["classes"] = { WARRIOR },
-					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
 				q(28299, {	-- Meet with Kranosh
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43881 },	-- Delano Morisett

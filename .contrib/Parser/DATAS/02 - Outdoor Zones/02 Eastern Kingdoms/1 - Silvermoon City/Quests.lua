@@ -173,14 +173,6 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
 				}),
-				q(28290, {	-- Meet with Grezz Ragefist
-					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
-					["coord"] = { 81.0, 37.8, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(28299, {	-- Meet with Kranosh
 					["provider"] = { "n", 16648 },	-- Zanien
 					["coord"] = { 73.2, 45.2, SILVERMOON_CITY },

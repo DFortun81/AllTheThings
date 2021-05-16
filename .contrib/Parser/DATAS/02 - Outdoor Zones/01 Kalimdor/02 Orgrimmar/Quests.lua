@@ -619,10 +619,10 @@ _.Zones =
 					},
 				}),
 				q(28457, {	-- A Dangerous Alliance
-					["sourceQuests"] = { 28290 },	-- Meet with Grezz Ragefist
-					["provider"] = { "n", 168596 },	-- Gormok Ogrefist
+					["qg"] = 168596,	-- Gormok Ogrefist
+					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
+					["coord"] = { 73.6, 45.6, ORGRIMMAR },
 					["classes"] = { WARRIOR },
-					["coord"] = { 73.6, 45.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65625),	-- Faceguard of the Horde
@@ -1654,6 +1654,70 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
+				q(28298, {	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
+					["qgs"] = {
+						16684,	-- Zelanis <Rogue Trainer>
+						4584,	-- Gregory Charles <Rogue Trainer>
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
+					},
+					["maps"] = {
+						SILVERMOON_CITY,
+						UNDERCITY,
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28290, {	-- Meet with Gormok Ogrefist (SL+) / Meet with Grezz Ragefist (Cata+)
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion
+						3042,	-- Sark Ragetotem
+						4593,	-- Christoph Walker
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
+					},
+					["maps"] = {
+						SILVERMOON_CITY,
+						THUNDER_BLUFF,
+						UNDERCITY,
+					},
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28290, {	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion
+						3042,	-- Sark Ragetotem
+						4593,	-- Christoph Walker
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
+					},
+					["maps"] = {
+						SILVERMOON_CITY,
+						THUNDER_BLUFF,
+						UNDERCITY,
+					},
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
 				q(28308, {	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1702,6 +1766,28 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28298, {	-- Meet with Thega Graveblade (SL+) / Meet with Gordul (Cata+)
+					["qgs"] = {
+						16684,	-- Zelanis <Rogue Trainer>
+						4584,	-- Gregory Charles <Rogue Trainer>
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
+					},
+					["maps"] = {
+						SILVERMOON_CITY,
+						UNDERCITY,
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
 				q(28307, {	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1727,24 +1813,6 @@ _.Zones =
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
 				-- #endif
-				q(28298, {	-- Meet with Gordul
-					["qgs"] = {
-						16684,	-- Zelanis <Rogue Trainer>
-						4584,	-- Gregory Charles <Rogue Trainer>
-					},
-					["coords"] = {
-						{ 79.4, 52.0, SILVERMOON_CITY },
-						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						UNDERCITY,
-					},
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
-				}),
 				q(28296, {	-- Meetup with the Caravan
 					["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,
@@ -2086,7 +2154,7 @@ _.Zones =
 				}),
 				q(28463, {	-- The Dark Iron Army
 					["qg"] = 47233,	-- Gordul
-					["sourceQuest"] = 28298,	-- Meet with Gordul
+					["sourceQuest"] = 28298,	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
 					["coord"] = { 44.6, 61.4, ORGRIMMAR },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,

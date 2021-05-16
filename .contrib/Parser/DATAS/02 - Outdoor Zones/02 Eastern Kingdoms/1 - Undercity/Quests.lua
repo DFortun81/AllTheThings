@@ -263,13 +263,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28290, {	-- Meet with Grezz Ragefist
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4593 },	-- Christoph Walker
-					["classes"] = { WARRIOR },
-					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
 				q(28299, {	-- Meet with Kranosh
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4563 },	-- Kaal Soulreaper
