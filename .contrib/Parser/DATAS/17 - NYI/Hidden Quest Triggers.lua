@@ -3656,7 +3656,6 @@ _.HiddenQuestTriggers =
 		q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
 		q(57271),	-- Trade District cleansed (Stormwind)
 		q(58897),	-- triggered together with 57271
-		q(27282),	-- Mage Quarter cleansed (Stormwind)
 		q(58890),	-- Dwarven district
 		q(58893),	-- cleared mage quarter
 		q(57282),	-- cleared mage quarter

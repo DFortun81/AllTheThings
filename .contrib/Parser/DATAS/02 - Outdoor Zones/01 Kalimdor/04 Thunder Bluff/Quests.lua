@@ -168,21 +168,6 @@ _.Zones =
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
 				}),
-				q(27282, {	-- Kranosh's Behest
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 43881 },	-- Delano Morisett (Thunder Bluff)
-						{ "n", 4563 },	-- Kaal Soulreaper (Undercity)
-						{ "n", 16648 },	-- Zanien (Silvermoon City)
-					},
-					["classes"] = { WARLOCK },
-					["coords"] = {
-						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
-						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien (Silvermoon City)
-					},
-					["races"] = HORDE_ONLY,
-				}),
 				q(914,   {	-- Leaders of the Fang
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
 					["coord"] = { 75.8, 30.8, 88 },

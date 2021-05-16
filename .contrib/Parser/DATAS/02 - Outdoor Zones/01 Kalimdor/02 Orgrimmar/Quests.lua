@@ -1454,6 +1454,52 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				-- #if AFTER SHADOWLANDS
+				q(27282, {	-- Kazak's Behest (SL+) / Kranosh's Behest (WOD+) / Zevrost's Behest (Cata+)
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["maps"] = {
+						THUNDER_BLUFF,
+						UNDERCITY,
+						SILVERMOON_CITY,
+					},
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
+				-- #if AFTER WOD
+				q(27282, {	-- Kranosh's Behest (WOD+) / Kazak's Behest (SL+) / Zevrost's Behest (Cata+)
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["maps"] = {
+						THUNDER_BLUFF,
+						UNDERCITY,
+						SILVERMOON_CITY,
+					},
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
 				q(1945,  {	-- Laughing Sisters
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -2197,12 +2243,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(27402, {	-- Token of Power
-					["sourceQuests"] = { 27282 },	-- Kranosh's Behest
-					["provider"] = { "n", 88705 },	-- Kranosh
+					["qg"] = 88705,	-- Kranosh
+					["sourceQuest"] = 27282,	-- Zevrost's Behest (Cata+) / Kranosh's Behest (WOD+) / Kazak's Behest (SL+)
+					["coord"] = { 76.8, 37.4, ORGRIMMAR },
 					["classes"] = { WARLOCK },
-					["coord"] = { 76.8, 37.4, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(65497),	-- Staff of the Left Hand Path
 					},
 				}),
@@ -2461,6 +2507,29 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
 				}),
+				-- #if BEFORE WOD
+				q(27282, {	-- Zevrost's Behest (Cata+) / Kranosh's Behest (WOD+) / Kazak's Behest (SL+)
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["maps"] = {
+						THUNDER_BLUFF,
+						UNDERCITY,
+						SILVERMOON_CITY,
+					},
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
 			}),
 		}),
 	}),

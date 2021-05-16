@@ -250,21 +250,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27282, {	-- Kranosh's Behest
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 43881 },	-- Delano Morisett (Thunder Bluff)
-						{ "n", 4563 },	-- Kaal Soulreaper (Undercity)
-						{ "n", 16648 },	-- Zanien (Silvermoon City)
-					},
-					["classes"] = { WARLOCK },
-					["coords"] = {
-						{ 25.2, 14.4, 88 },		-- Delano Morisett (Thunder Bluff)
-						{ 86.0, 15.6, 90 },		-- Kaal Soulreaper (Undercity)
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien (Silvermoon City)
-					},
-					["races"] = HORDE_ONLY,
-				}),
 				q(9154,  {	-- Light's Hope Chapel
 					["isBreadcrumb"] = true,
 					["providers"] = {
