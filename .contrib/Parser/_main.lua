@@ -1297,6 +1297,108 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = {
 		["f"] = 200,
 	}),
 };
+COMMON_CATACLYSM_ENCHANTING_RECIPES = {
+	i(67308, {	-- Formula: Enchanted Lantern
+		["races"] = HORDE_ONLY,
+		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 93841,	-- Enchanted Lantern
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(67312, {	-- Formula: Magic Lamp
+		["races"] = ALLIANCE_ONLY,
+		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 93843,	-- Magic Lamp
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64411, {	-- Formula: Enchant Boots - Assassin's Step
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74252,	-- Enchant Boots - Assassin's Step
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64412, {	-- Formula: Enchant Boots - Lavawalker
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74253,	-- Enchant Boots - Lavawalker
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74248,	-- Enchant Bracer - Greater Critical Strike
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64413, {	-- Formula: Enchant Bracer - Greater Speed
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74256,	-- Enchant Bracer - Greater Speed
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52740, {	-- Formula: Enchant Chest - Greater Stamina
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74251,	-- Enchant Chest - Greater Stamina
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52739, {	-- Formula: Enchant Chest - Peerless Stats
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74250,	-- Enchant Chest - Peerless Stats
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74247,	-- Enchant Cloak - Greater Critical Strike
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74255,	-- Enchant Gloves - Greater Mastery
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
+		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74254,	-- Enchant Gloves - Mighty Strength
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52736, {	-- Formula: Enchant Weapon - Landslide
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74246,	-- Enchant Weapon - Landslide
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52733, {	-- Formula: Enchant Weapon - Power Torrent
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74242,	-- Enchant Weapon - Power Torrent
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+	i(52735, {	-- Formula: Enchant Weapon - Windwalk
+		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 74244,	-- Enchant Weapon - Windwalk
+		["requireSkill"] = ENCHANTING,
+		["f"] = 200,
+	}),
+};
 COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 	i(52409, {	-- Design: Accurate Demonseye
 		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
@@ -2344,7 +2446,7 @@ COMMON_CATACLYSM_TAILORING_RECIPES = {
 
 --[[
 -- Uncomment to check that I didn't mess up the spellID/itemID pairs.
-for i,o in ipairs(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES) do
+for i,o in ipairs(COMMON_CATACLYSM_ENCHANTING_RECIPES) do
 	if o.itemID == o.spellID then
 		print("YA MESSED UP CRIEVE", o.itemID, o.spellID);
 	end

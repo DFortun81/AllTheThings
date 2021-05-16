@@ -1680,52 +1680,12 @@ _.Zones =
 				n(1318,   {	-- Jessara Cordell
 					["coord"] = { 53.0, 74.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(67312, {	-- Formula: Magic Lamp
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(5565,   {	-- Jillian Tanner
 					["coord"] = { 71.7, 62.8, 84 },

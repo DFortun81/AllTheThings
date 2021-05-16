@@ -2590,58 +2590,15 @@ _.Zones =
 				n(3346,   {	-- Kithas <Enchanting Supplies>
 					["coord"] = { 53.2, 48.8, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
 							["isLimited"] = true,
-						}),
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(6346, {	-- Formula: Enchant Chest - Lesser Mana
-							["isLimited"] = true,
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(67308, {	-- Formula: Enchanted Lantern
-							["races"] = HORDE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(3348,   {	-- Kor'geld <Alchemy Supplies>
 					["coord"] = { 55.6, 45.4, 85 },

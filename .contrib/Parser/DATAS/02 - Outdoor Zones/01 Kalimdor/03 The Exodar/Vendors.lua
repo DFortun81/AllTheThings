@@ -60,51 +60,11 @@ _.Zones =
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.8, 39.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(22565, {	-- Formula: Large Prismatic Shard
 							["isLimited"] = true,
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
-						i(67312, {	-- Formula: Magic Lamp
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22562, {	-- Formula: Superior Mana Oil
@@ -114,7 +74,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.0, 90.0, THE_EXODAR },
@@ -197,9 +157,15 @@ _.Zones =
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
 					["coord"] = { 39.78, 38.87, THE_EXODAR },
+					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(137789),	-- Technique: Songs of the Legion
+					["groups"] = {
+						i(137789, {	-- Technique: Songs of the Legion
+							["spellID"] = 210656,	-- Songs of the Legion
+							["timeline"] = { "added 7.0.3.21134" },
+							["requireSkill"] = INSCRIPTION,
+							["f"] = 200,
+						}),
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>

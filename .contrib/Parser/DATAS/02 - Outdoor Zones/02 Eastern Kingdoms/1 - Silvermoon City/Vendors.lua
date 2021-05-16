@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local ANDRA_GROUPS = {};
+local ANDRA_ZYANDREL_GROUPS = {};
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -10,7 +10,7 @@ _.Zones =
 				n(16631, {	-- Andra <Clothier>
 					["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = ANDRA_GROUPS,
+					["groups"] = ANDRA_ZYANDREL_GROUPS,
 				}),
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
@@ -74,47 +74,7 @@ _.Zones =
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(67308, {	-- Formula: Enchanted Lantern
-							["races"] = HORDE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(22565, {	-- Formula: Large Prismatic Shard
 							["isLimited"] = true,
 						}),
@@ -128,7 +88,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
@@ -138,9 +98,13 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23574, {	-- Recipe: Transmute Primal Might
+							["spellID"] = 29688,	-- Transmute Primal Might
+							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -193,9 +157,15 @@ _.Zones =
 				}),
 				n(30710, {	-- Zantasia <Inscription Trainer>
 					["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
+					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(137789),	-- Technique: Songs of the Legion
+						i(137789, {	-- Technique: Songs of the Legion
+							["spellID"] = 210656,	-- Songs of the Legion
+							["timeline"] = { "added 7.0.3.21134" },
+							["requireSkill"] = INSCRIPTION,
+							["f"] = 200,
+						}),
 					},
 				}),
 				n(16689, {	-- Zaralda <Leatherworking Supplies>
@@ -210,11 +180,7 @@ _.Zones =
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
-					},
+					["groups"] = ANDRA_ZYANDREL_GROUPS,
 				}),
 			}),
 		}),
@@ -226,4 +192,4 @@ for i,o in ipairs({
 	i(16059),	-- Common Brown Shirt
 	i(3428),	-- Common Gray Shirt
 	i(16060),	-- Common White Shirt
-}) do table.insert(ANDRA_GROUPS, o); end
+}) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
