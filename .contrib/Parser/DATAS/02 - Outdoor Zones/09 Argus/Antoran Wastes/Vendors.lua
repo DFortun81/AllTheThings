@@ -15,14 +15,12 @@ _.Zones =
 					},
 					["g"] = {
 						i(153021, {	-- Intact Demon Eye
+							["description"] = "These eyes drop off of any demon on Argus while you have the Agent of the All-Seer buff, which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Guards will be unfriendly to you while you have the buff.",
 							["coords"] = {	-- All-Seer Focus locations
 								{ 67.34, 48.11, 885 },	-- Ven'orn's Lair
 								{ 64.41, 21.03, 885 },	-- Defiled Path
 								{ 58.01, 66.96, 885 },	-- Felfire Armory
 							},
-							["description"] = "These eyes drop off of any demon on Argus while you have the Agent of the All-Seer buff, which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Guards will be unfriendly to you while you have the buff.",
-							-- ["provider"] = { "n", 128151 },	-- All-Seer Focus
-							-- ["f"] = 0,	-- force this to show in the list?
 						}),
 					},
 				}),

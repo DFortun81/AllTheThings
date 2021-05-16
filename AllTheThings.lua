@@ -8900,10 +8900,11 @@ local questFields = {
 		end
 	end,
 	["hasIndicator"] = function(t)
-		return C_QuestLog_IsOnQuest(t.questID);
+		return C_QuestLog_IsOnQuest(t.questID) or (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID));
 	end,
 	["indicator"] = function(t)
-		return "star";
+		return (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID) and "incomplete") or
+			(C_QuestLog_IsOnQuest(t.questID) and "star");
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
