@@ -71,6 +71,7 @@ _.PetJournal =
 		p(745),		-- Crunchy Scorpion
 		p(634),		-- Crystal Spider
 		p(1809),	-- Crystalline Broodling
+		p(3108),	-- Curious Purrkin
 		p(2780),	-- Daisy	
 		p(343),		-- Darkmoon Cub
 		p(330),		-- Darkmoon Monkey
@@ -226,6 +227,7 @@ _.PetJournal =
 		p(741),		-- Silent Hedgehog
 		p(494),		-- Silithid Hatchling
 		p(2163),	-- Silithid Mini-Tank
+		p(3109),	-- Silver Purrkin
 		p(45),		-- Silver Tabby Cat
 		p(637),		-- Skittering Cavern Crawler
 		p(2949),	-- Skittering Venomspitter

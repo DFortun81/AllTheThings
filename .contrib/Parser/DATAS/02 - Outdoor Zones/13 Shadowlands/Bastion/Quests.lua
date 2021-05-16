@@ -953,6 +953,18 @@ _.Zones =
 						i(181577),	-- Soulbearer's Vest [monk]
 					},
 				}),
+				
+				-- PTR - todo: merge with regular quests
+				q(63984, {	-- Coins for the Ferryman
+					["sourceQuests"] = { 63983 },	-- Dead Drop
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63983, {	-- Dead Drop
+					["sourceQuests"] = { 63982 },	-- Above My Station
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
 			}),
 		}),
 	}),

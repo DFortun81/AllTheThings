@@ -755,6 +755,11 @@ _.Zones =
 					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
 				}),
+				q(63977, {	-- Insider Trading
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
 				q(63661, {	-- Link to the Maw
 					["sourceQuests"] = { 63660 },	-- Opening the Maw
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -764,6 +769,19 @@ _.Zones =
 					["sourceQuests"] = { 63639 },	-- Report to Oribos
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
+				}),
+				q(63980, {	-- Seeking Smugglers
+					["sourceQuests"] = {
+						63977,	-- Insider Trading
+						63979,	-- Things Best Kept Dark
+					},
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63976, {	-- The Al'ley Cat of Oribos
+				--	["sourceQuests"] = {  },	-- ???
+					["provider"] = { "n", 156688 },	-- Host Ta'rela
+					["coord"] = { 67.0, 50.3, ORIBOS },	-- Ring of Fates
 				}),
 				q(63578, {	-- The Battle of Ardenweald
 					["sourceQuests"] = { 63857 },	-- Voices of the Eternal
@@ -782,6 +800,16 @@ _.Zones =
 					--	TODO: ascertain whether there are specific SQs for this.  it was in my quest log when i logged in to the 9.1 ptr
 					--	does not appear to require a specific renown.  was able to pick it up on my rogue who is at renown 5
 					--	requires some amount of torghast quests (possibly the entire questline to save jaina/anduin/etc/learn the jailer's plan) but there are skips available that allow you to start it by speaking to bolvar
+				}),
+				q(63985, {	-- The Veiled Market
+					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman
+					["provider"] = { "n", 178792 },	-- Ta'meri
+					["coord"] = { 29.6, 66.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63979, {	-- Things Best Kept Dark
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				}),
 				q(63857, {	-- Voices of the Eternal
 					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants

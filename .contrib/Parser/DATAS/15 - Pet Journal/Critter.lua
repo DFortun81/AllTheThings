@@ -38,6 +38,7 @@ _.PetJournal =
 		p(468),		-- Creepy Crawly
 		p(1752),	-- Crispin
 		p(556),		-- Crystal Beetle
+		p(3111),	-- Damp Skrat
 		p(2699),	-- Damplight Slug
 		p(1061),	-- Darkmoon Hatchling
 		p(848),		-- Darkmoon Rabbit
@@ -144,6 +145,7 @@ _.PetJournal =
 		p(2463),	-- Sandshell Chitterer
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
+		p(3112),	-- Scavenging Skrat
 		un(20, p(289)),		-- Scooter the Snail
 		p(3118),	-- Scurrying Mawrat
 		p(3022),	-- Shimmerbough Hoarder

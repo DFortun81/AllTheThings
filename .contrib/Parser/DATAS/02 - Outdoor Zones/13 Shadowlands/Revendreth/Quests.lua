@@ -881,6 +881,15 @@ _.Zones =
 				})),
 
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
+				
+				-- part of tazavesh unlock, unrelated to campaign
+				q(63982, {	-- Above My Station
+					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
+					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
+					["coord"] = { 51.4, 82.7, REVENDRETH },
+				}),
+				-------------------------------------------------
+				
 				q(63672, {	-- A Cry From the Heart
 				--	TODO: 'nyi medallion of wrath' is still not fully implemented, but w/e that quest winds up being may eventually be the true SQ.  until then, the previous quest is enough to continue the venthyr campaign
 					["sourceQuests"] = { 63654 },	-- The Nathrezim

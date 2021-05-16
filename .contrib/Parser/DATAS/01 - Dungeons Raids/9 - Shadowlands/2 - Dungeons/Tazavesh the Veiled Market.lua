@@ -6,16 +6,59 @@ _.Instances = { tier(9, {	-- Shadowlands
 	inst(1194, {	-- Tazavesh, the Veiled Market
 	--	TODO: add entrance coord/maps - presumably eventually there will be achievements to add here as well
 	--	["coord"] = {  },
-	--	["maps"] = {
-	--	},
+		["maps"] = {
+			1989,	-- The Veiled Market
+		--	,	-- The Menagerie
+		--	,	-- The Mail Room
+		--	,	-- The Speak Easy
+		--	,	-- Stormheim
+		--	,	-- Aggramar's Vault
+		--	,	-- Boralus
+		--	,	-- The Upper City
+		},
 		["lvl"] = { 60 },
 		["g"] = {
+			--	TODO: add fp to fpdb, add coords when (presumably) this gets its own map and isn't just on the main SL 1550
+			filter(101, {	-- Battle Pets
+			--	there are some caged Child of Jani at the entrance of the dungeon (npcID 143198), haven't been through the dungeon to know if these pets are found independently outside of secondary pets in those encounters
+				pet(3108, {	-- Curious Purrkin
+				--	["cr"] = ,	-- 
+				}),
+				pet(3111, {	-- Damp Skrat
+				--	["cr"] = ,	-- 
+				}),
+				pet(3112, {	-- Scavenging Skrat
+				--	["cr"] = ,	-- 
+				}),
+				pet(3109, {	-- Silver Purrkin
+				--	["cr"] = ,	-- 
+				}),
+			}),
+			n(FLIGHT_PATHS, {
+				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)
+				--	["coord"] = { , ,  },	-- 
+				}),
+			}),
+			n(QUESTS, {
+				q(63986, {	-- Tazavesh: Raiders of the Lost Artifact
+					["sourceQuests"] = { 63985 },	-- The Veiled Market
+					["provider"] = { "n", 178908 },	-- Al'dalil
+				--	["coord"] = { , ,  },	-- TODO when this (presumably) gets its own map and isn't just on the main SL 1550
+				}),
+			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
 				["g"] = {
 					e(2437, {	-- Zo'phex the Sentinel
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(183468),	-- Born Anew
+							i(183498),	-- Cloaked in Shadows
+							i(182110),	-- Crippling Hex
+							i(182330),	-- Demonic Parole
+							i(181962),	-- Mental Recovery
+							i(182338),	-- Pure Concentration
+							i(181841),	-- Reinforced Shell
 							i(185824),	-- Blade of Grievous Harm
 							i(185780),	-- Interrogator's Flensing Blade
 							i(185816),	-- Confiscated Bracers of Concealment
@@ -24,9 +67,15 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(185791),	-- Knuckle-Dusting Handwraps
 						},
 					}),
-					e(2454, {	-- The Bazaar
+					e(2454, {	-- The Menagerie
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(184587),	-- Ambuscade
+							i(181512),	-- Dizzying Tumble
+							i(181756),	-- Incantation of Swiftness
+							i(181469),	-- Indelible Victory
+							i(183044),	-- Kilrogg's Cunning
+							i(181836),	-- Spirit Drain
 							i(185777),	-- Fang of Alcruux
 							i(185821),	-- Gluttonous Rondel
 							i(185814),	-- Auctioneer's Counting Bracers
@@ -39,6 +88,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2436, {	-- Mailroom Mayhem
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(182584),	-- Cheetah's Vigor
+							i(181837),	-- Clear Mind
+							i(182461),	-- Echoing Blessings
+							i(182325),	-- Ravenous Consumption
+							i(183497),	-- Recuperator
+							i(183465),	-- Ursine Vigor
 							i(185811),	-- Package Protector
 							i(185817),	-- Bracers of Autonomous Classification
 							i(185808),	-- Discount Mail-Order Belt
