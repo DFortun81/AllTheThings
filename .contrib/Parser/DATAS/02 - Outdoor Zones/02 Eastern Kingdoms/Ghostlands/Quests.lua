@@ -7,10 +7,25 @@ _.Zones =
 		m(GHOSTLANDS, {
 			n(QUESTS, {
 				q(9275, {	-- A Little Dash of Seasoning
-					["provider"] = { "n", 16464 },	-- Apothecary Venustus
+					["qg"] = 16464,	-- Apothecary Venustus
+					["sourceQuest"] = 9276,	-- Attack on Zeb'Tela
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9276 },	-- Attack on Zeb'Tela
+					["lvl"] = lvlsquish(16, 1, 16),
+					["groups"] = {
+						objective(1, {	-- Poison the Raw Meat Rack
+							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["coord"] = { 65.1, 66.8, GHOSTLANDS },
+						}),
+						objective(2, {	-- Poison the Smoked Meat Rack
+							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["coord"] = { 63.0, 75.0, GHOSTLANDS },
+						}),
+						objective(3, {	-- Poison the Fresh Fish Rack
+							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["coord"] = { 68.2, 57.8, GHOSTLANDS },
+						}),
+					},
 				}),
 				q(9315, {	-- Anok'suten
 					["provider"] = { "n", 16601 },	-- Dying Blood Elf
@@ -47,22 +62,26 @@ _.Zones =
 					},
 				}),
 				q(9277, {	-- Assault on Zeb'Nowa
-					["provider"] = { "n", 16463 },	-- Farstrider Solanna
+					["qg"] = 16463,	-- Farstrider Solanna
+					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9276 },	-- Attack on Zeb'tela
+					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
 						i(23406),	-- Sentry Bracers
 						i(23407),	-- Supple Cotton Bracers
 						i(23408),	-- Farstrider Bracers
+						-- #if AFTER LEGION
 						i(131249),	-- Farstrider Cuffs
+						-- #endif
 					},
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
-					["provider"] = { "n", 16463 },	-- Farstrider Solanna
+					["qg"] = 16463,	-- Farstrider Solanna
+					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
+					["lvl"] = lvlsquish(15, 1, 15),
 				}),
 				q(9158, {	-- Bearers of the Plague
 					["provider"] = { "n", 16202 },	-- Farstrider Sedina
@@ -167,10 +186,11 @@ _.Zones =
 					},
 				}),
 				q(9143, {	-- Dealing with Zeb'Sora
-					["provider"] = { "n", 16219 },	-- Ranger Valanna
+					["qg"] = 16219,	-- Ranger Valanna
+					["sourceQuest"] = 9145,	-- Help Ranger Valanna!
 					["coord"] = { 69.3, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9145 },	-- Help Ranger Valanna!
+					["lvl"] = lvlsquish(9, 1, 9),
 				}),
 				q(9166, {	-- Deliver the Plans to An'telas
 					["provider"] = { "n", 16231 },	-- Dame Auriferous
@@ -352,15 +372,18 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(9146, {	-- Report to Captain Helios
-					["provider"] = { "n", 16219 },	-- Ranger Valanna
+					["qg"] = 16219,	-- Ranger Valanna
+					["sourceQuest"] = 9143,	-- Dealing with Zeb'Sora
 					["coord"] = { 69.4, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9143 },	-- Dealing with Zeb'Sora
+					["lvl"] = lvlsquish(9, 1, 9),
 					["groups"] = {
 						i(23405),	-- Farstrider's Tunic
 						i(28144),	-- Troll Handler Gloves
 						i(28153),	-- Farstrider's Shield
+						-- #if AFTER LEGION
 						i(131242),	-- Farstrider's Chainmail
+						-- #endif
 					},
 				}),
 				q(9172, {	-- Report to Magister Kaendris

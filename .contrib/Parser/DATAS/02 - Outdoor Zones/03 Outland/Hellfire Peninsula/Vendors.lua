@@ -359,7 +359,7 @@ _.Zones =
 						}),
 						i(25870, {	-- Recipe: Transmute Skyfire Diamond
 							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
+							["requireSkill"] = ALCHEMY,
 						}),
 						i(29169),	-- Ring of Convalescence
 						i(25826),	-- Sage's Band
@@ -480,7 +480,7 @@ _.Zones =
 						}),
 						i(29232, {	-- Recipe: Transmute Skyfire Diamond
 							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
+							["requireSkill"] = ALCHEMY,
 						}),
 						i(35339),	-- Satin Hood
 						i(35409),	-- Savage Plate Helm
