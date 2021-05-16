@@ -1813,6 +1813,193 @@ _.Zones =
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
 				-- #endif
+				
+				
+				
+				-- THE GREAT SOMEONE ELSE DEAL WITH THIS MESS I DONT HAVE TIME SECTION
+				-- These were taken from elsewhere, they are breadcrumb quests. Please use the maps tech to link them, NOT DUPLICATE THEM.
+				q(28299, {	-- Meet with Kranosh
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 43881 },	-- Delano Morisett
+					["classes"] = { WARLOCK },
+					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
+					["races"] = HORDE_ONLY,
+				}),
+				q(28299, {	-- Meet with Kranosh
+					["provider"] = { "n", 16648 },	-- Zanien
+					["coord"] = { 73.2, 45.2, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["lvl"] = 50,
+				}),
+				q(28299, {	-- Meet with Kranosh
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4563 },	-- Kaal Soulreaper
+					["classes"] = { WARLOCK },
+					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				q(28303, {	-- Meet with Master Pyreanor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
+					["classes"] = { PALADIN },
+					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["races"] = { BLOODELF },
+				}),
+				q(28303, {	-- Meet with Master Pyreanor
+					["provider"] = { "n", 16681 },	-- Champion Bachi
+					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				}),
+				q(28303, {	-- Meet with Master Pyreanor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
+					["classes"] = { PALADIN },
+					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["races"] = { BLOODELF },
+				}),
+				
+				q(28297, {	-- Meet with Ormak Grimshot
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
+					["classes"] = { HUNTER },
+					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
+					["races"] = HORDE_ONLY,
+				}),
+				q(28297, {	-- Meet with Ormak Grimshot
+					["provider"] = { "n", 16674 },	-- Zandine
+					["coord"] = { 84.4, 28.0, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+					["lvl"] = 50,
+				}),
+				q(28297, {	-- Meet with Ormak Grimshot
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 39116 },	-- Apolos
+					["classes"] = { HUNTER },
+					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				q(28301, {	-- Meet with Terga Earthbreaker
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 51639 },	-- Kador Cloudsong
+					["classes"] = { SHAMAN },
+					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
+					["races"] = HORDE_ONLY,
+				}),
+				q(28301, {	-- Meet with Terga Earthbreaker
+					["provider"] = { "n", 16661 },	-- Gez'li
+					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["lvl"] = 50,
+				}),
+				
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 3047 },	-- Archmage Shymm
+					["classes"] = { MAGE },
+					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
+					["races"] = HORDE_ONLY,
+				}),
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
+					["provider"] = { "n", 16653 },	-- Inethven
+					["coord"] = { 53.0, 19.6, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },
+					["lvl"] = 50,
+				}),
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
+					["classes"] = { MAGE },
+					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				q(27298, {	-- Seek Out Master Pyreanor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
+					["classes"] = { PALADIN },
+					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["races"] = { BLOODELF },
+				}),
+				q(27298, {	-- Seek Out Master Pyreanor
+					["provider"] = { "n", 16681 },	-- Champion Bachi
+					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(27298, {	-- Seek Out Master Pyreanor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
+					["classes"] = { PALADIN },
+					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["races"] = { BLOODELF },
+				}),
+				
+				q(27280, {	-- The Earthbreaker Calls
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 51639 },	-- Kador Cloudsong
+					["classes"] = { SHAMAN },
+					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
+					["races"] = HORDE_ONLY,
+				}),
+				q(27280, {	-- The Earthbreaker Calls
+					["provider"] = { "n", 16661 },	-- Gez'li
+					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["lvl"] = 20,
+				}),
+				
+				q(27279, {	-- The Shattered Hand
+					["provider"] = { "n", 16684 },	-- Zelanis
+					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+				}),
+				q(27279, {	-- The Shattered Hand
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4584 },	-- Gregory Charles
+					["classes"] = { ROGUE },
+					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				q(28302, {	-- Meet with Sunwalker Atohmo
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
+					["classes"] = { PALADIN },
+					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["races"] = { TAUREN },
+				}),
+				q(28302, {	-- Meet with Sunwalker Atohmo
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
+					["classes"] = { PALADIN },
+					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["races"] = { TAUREN },
+				}),
+				-- END SECTION OF INSANITY, CRIEVE WILL COME BACK FOR YOU LATER. TOUCH AT YOUR OWN PERIL, IT IS MADNESS.
+				-- That said, feel free to ask how I want this done and how I did the other ones. - Crieve
+				
+				
+				
 				q(28296, {	-- Meetup with the Caravan
 					["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,

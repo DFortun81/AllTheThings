@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(KALIMDOR, {
@@ -193,48 +192,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28299, {	-- Meet with Kranosh
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43881 },	-- Delano Morisett
-					["classes"] = { WARLOCK },
-					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28303, {	-- Meet with Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { BLOODELF },
-				}),
-				q(28297, {	-- Meet with Ormak Grimshot
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
-					["classes"] = { HUNTER },
-					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28302, {	-- Meet with Sunwalker Atohmo
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { TAUREN },
-				}),
-				q(28301, {	-- Meet with Terga Earthbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 51639 },	-- Kador Cloudsong
-					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3047 },	-- Archmage Shymm
-					["classes"] = { MAGE },
-					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
-					["races"] = HORDE_ONLY,
-				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3034 },	-- Sheal Runetotem
@@ -302,13 +259,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27298, {	-- Seek Out Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
-					["races"] = { BLOODELF },
-				}),
 				q(2966,  {	-- Seeing What Happens
 					["sourceQuests"] = { 2965 },	-- Portents of Uldum
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
@@ -346,13 +296,6 @@ _.Zones =
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(27280, {	-- The Earthbreaker Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 51639 },	-- Kador Cloudsong
-					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
-					["races"] = HORDE_ONLY,
 				}),
 				q(1086,  {	-- The Flying Machine Airport
 					["sourceQuests"] = { 1067 },	-- Return to Thunder Bluff

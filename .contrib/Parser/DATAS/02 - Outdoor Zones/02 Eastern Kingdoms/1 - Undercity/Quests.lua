@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
@@ -263,41 +262,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28299, {	-- Meet with Kranosh
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4563 },	-- Kaal Soulreaper
-					["classes"] = { WARLOCK },
-					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28303, {	-- Meet with Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
-					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
-					["races"] = { BLOODELF },
-				}),
-				q(28297, {	-- Meet with Ormak Grimshot
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 39116 },	-- Apolos
-					["classes"] = { HUNTER },
-					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
-				q(28302, {	-- Meet with Sunwalker Atohmo
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
-					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
-					["races"] = { TAUREN },
-				}),
-				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
-					["classes"] = { MAGE },
-					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
 				q(4642,  {	-- Melding of Influences
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
 					["coord"] = { 47.5, 73.3, 90 },
@@ -373,13 +337,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10637)),	-- Brewer's Gloves
 						un(REMOVED_FROM_GAME, i(10638)),	-- Long Draping Cape
 					},
-				}),
-				q(27298, {	-- Seek Out Master Pyreanor
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
-					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
-					["races"] = { BLOODELF },
 				}),
 				q(3568,  {	-- Seeping Corruption
 					["provider"] = { "n", 8390 },	-- Chemist Cuely
@@ -540,13 +497,6 @@ _.Zones =
 					["g"] = {
 						i(122341),	-- Timeworn Heirloom Scabbard
 					},
-				}),
-				q(27279, {	-- The Shattered Hand
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4584 },	-- Gregory Charles
-					["classes"] = { ROGUE },
-					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
-					["races"] = HORDE_ONLY,
 				}),
 				q(736,   {	-- The Star, the Hand and the Heart
 					["sourceQuests"] = { 728 },	-- To the Undercity for Yagyin's Digest

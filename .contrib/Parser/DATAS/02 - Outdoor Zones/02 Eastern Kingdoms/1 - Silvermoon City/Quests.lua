@@ -173,46 +173,6 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
 				}),
-				q(28299, {	-- Meet with Kranosh
-					["provider"] = { "n", 16648 },	-- Zanien
-					["coord"] = { 73.2, 45.2, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
-				}),
-				q(28303, {	-- Meet with Master Pyreanor
-					["provider"] = { "n", 16681 },	-- Champion Bachi
-					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["lvl"] = 50,
-				}),
-				q(28297, {	-- Meet with Ormak Grimshot
-					["provider"] = { "n", 16674 },	-- Zandine
-					["coord"] = { 84.4, 28.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 50,
-				}),
-				q(28301, {	-- Meet with Terga Earthbreaker
-					["provider"] = { "n", 16661 },	-- Gez'li
-					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["lvl"] = 50,
-				}),
-				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
-					["provider"] = { "n", 16653 },	-- Inethven
-					["coord"] = { 53.0, 19.6, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },
-					["lvl"] = 50,
-				}),
 				q(9626, {	-- Meeting the Orcs [Blood Elf Only]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
 					["sourceQuest"] = 9621,	-- Envoy to the Horde [Blood Elf Only]
@@ -255,14 +215,6 @@ _.Zones =
 					},
 					-- #endif
 				}),
-				q(27298, {	-- Seek Out Master Pyreanor
-					["provider"] = { "n", 16681 },	-- Champion Bachi
-					["coord"] = { 92.0, 37.2, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["lvl"] = 20,
-				}),
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9134, {	-- Skymistress Gloaming
@@ -302,14 +254,6 @@ _.Zones =
 							["timeline"] = { "removed 4.0.3.10000" },
 						}),
 					},
-				}),
-				q(27280, {	-- The Earthbreaker Calls
-					["provider"] = { "n", 16661 },	-- Gez'li
-					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["lvl"] = 20,
 				}),
 				q(9678, {	-- The First Trial
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -360,14 +304,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
-				}),
-				q(27279, {	-- The Shattered Hand
-					["provider"] = { "n", 16684 },	-- Zelanis
-					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 20,
 				}),
 				q(9735, {	-- True Masters of the Light (1/3)
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
