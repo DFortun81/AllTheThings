@@ -57,29 +57,7 @@ _.Craftables =
 				i(118741),	-- Mechanical Scorpid*
 			}),
 			filter(102, {	-- Toys
-				i(111821, {	-- Blingtron 5000*
-					q(34774, { -- Blingtron 5000
-						["provider"] = { "n", 77789 },    -- Blingtron 5000
-						["isDaily"] = true,
-						["g"] = {
-							i(113258, {	-- Blingtron 5000 Gift Package
-								i(87250),	-- Depleted-Kyparium Rocket Mount
-								i(87251), 	-- Geosynchronous World Spinner Mount
-								i(41508), 	-- Mechano-Hog Mount
-								i(44413), 	-- Mekgineer's Chopper Mount
-								i(103670), 	-- Lil'Bling Pet
-								i(15996), 	-- Lifelike Mechanical Toad Pet
-								i(11826), 	-- Lil' Smoky Pet
-								i(118741), 	-- Mechanical Scorpid
-								i(4401), 	-- Mechanical Squirrel Box Pet
-								i(11825), 	-- Pet Bombling
-								i(115483), 	-- Sky-Bo Pet
-								i(21277), 	-- Tranquil Mechanical Yeti Pet
-								i(123851), 	-- Photo B.O.M.B. Toy
-							}),
-						},
-					}),
-				}),
+				i(111821),	-- Blingtron 5000*
 				i(109167),	-- Findle's Loot-A-Rang*
 				i(108745),	-- Personal Hologram*
 				i(109183),	-- World Shrinker*

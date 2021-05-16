@@ -112,6 +112,16 @@ _.Instances = { tier(1, {	-- Classic
 				i(151424),	-- Belt of Boundless Fury
 				i(82886),	-- Gorewalker Treads
 			})),
+			n(17830, {	-- Zelemar the Wrathful
+				["timeline"] = { "created 2.2.0.7272", "added 2.2.0.7272", "removed 4.0.3.10000" },
+				["groups"] = {
+					i(24225, {	-- Blood of the Wrathful
+						["timeline"] = { "created 2.2.0.7272", "added 2.2.0.7272", "removed 4.0.3.10000" },
+						["classes"] = { PALADIN },
+						["races"] = { BLOODELF },
+					}),
+				},
+			}),
 			n(-40, {	-- Legacy
 				n(ZONEDROPS, {
 					un(REMOVED_FROM_GAME, n(11519, {	-- Bazzalan

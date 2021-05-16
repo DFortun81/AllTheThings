@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
@@ -174,6 +173,19 @@ _.Zones =
 						i(131248),	-- Troll Kickers (Mail)
 					},
 				}),
+				-- #if BEFORE WRATH
+				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
+				q(9133, {	-- Fly to Silvermoon City
+					["qg"] = 16189,	-- Skymaster Sunwing <Bat Handler>
+					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
+					["coord"] = { 45.4, 30.5, GHOSTLANDS },
+					["cost"] = {
+						{ "i", 22549, 1 },	-- Quartermaster Lymel's Bill of Lading
+					},
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				-- #endif
 				q(9157,  {	-- Forgotten Rituals
 					["provider"] = { "n", 16201 },	-- Geranis Whitemorn
 					["lvl"] = 10,
@@ -196,6 +208,19 @@ _.Zones =
 						i(28152)	-- Quel'Thalas Recurve
 					},
 				}),
+				-- #if BEFORE WRATH
+				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
+				q(9130, {	-- Goods from Silvermoon City
+					["qg"] = 16187,	-- Quartermaster Lymel <General Goods>
+					["sourceQuest"] = 9327,	-- The Forsaken
+					["coord"] = { 47.3, 29.3, GHOSTLANDS },
+					["cost"] = {
+						{ "i", 22549, 1 },	-- Quartermaster Lymel's Bill of Lading
+					},
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				-- #endif
 				q(9491,  {	-- Greed
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

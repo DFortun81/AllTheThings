@@ -572,7 +572,6 @@ _.Zones =
 				}),
 				n(-357,  { 	-- Sparring Arena
 					q(35210,  {	-- A Great Escape
-						--["objectID"] = 236140,	-- Goren Tunnel
 						["coord"] = { 34.7, 66.9, 547 },
 						["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
 						["isBreadcrumb"] = true,	-- unavailable once you turn in "Leave Every Soldier Behind"
@@ -1098,7 +1097,6 @@ _.Zones =
 						},
 					}),
 					q(35925,  {	-- The Gronn Strategy
-						--["objectID"] = 233391,	-- Weaponization Orders
 						["icon"] = "Interface\\Icons\\inv_letter_07",
 						["coord"] = { 47.7, 52.0, 543 },
 						["sourceQuests"] = {

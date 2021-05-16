@@ -19,6 +19,10 @@ _.NeverImplemented =
 		q(11179, {	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless
 			["u"] = NEVER_IMPLEMENTED,	-- can't find a history of a non-"temporarily deprecated" version of this quest
 		}),
+		q(8489),	-- BETA An Intact Converter [Eversong Woods]
+		q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
+		q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
+		q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
 		q(39991, {	-- Blessing of Cenarius
 			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
 		}),

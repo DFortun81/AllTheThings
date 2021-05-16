@@ -1493,27 +1493,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(51240, {	-- WANTED: Anchorface
-					--["objectID"] = 288214,	-- Wanted Poster
 					["coord"] = { 19.57, 43.65, 896 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53459, {	-- WANTED: Sister Lilias
-					--["objectID"] = 298858,	-- Wanted Poster
 					["coord"] = { 37.51, 25.8, 896 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53455, {	-- WANTED: The Crimson Cutthroats
-					--["objectID"] = 288214,	-- Wanted Poster
 					["coord"] = { 19.57, 43.65, 896 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53456, {	-- WANTED: The Rime Huntress
-					--["objectID"] = 298858,	-- Wanted Poster
 					["coord"] = { 37.51, 25.8, 896 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53458, {	-- WANTED: The Rindlewoe
-					--["objectID"] = 298858,	-- Wanted Poster
 					["coord"] = { 37.51, 25.8, 896 },
 					["races"] = HORDE_ONLY,
 				}),

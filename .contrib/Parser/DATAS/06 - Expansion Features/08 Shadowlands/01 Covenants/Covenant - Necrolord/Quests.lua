@@ -9,7 +9,9 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
-				n(QUESTS, {
+				n(QUESTS, sharedData({
+						["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
+						}, {
 					q(62835, {	-- A Call to Service
 						["sourceQuests"] = { 62834 },	-- Glorious Ambition
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
@@ -882,7 +884,7 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 42.2, 1698 },
 						["isWeekly"] = true,
 					}),
-				}),
+				})),
 			},
 		}),
 	}),

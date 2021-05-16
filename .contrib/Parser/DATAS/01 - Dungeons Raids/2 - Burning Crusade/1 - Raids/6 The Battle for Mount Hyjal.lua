@@ -1229,6 +1229,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 					i(32589),	-- Hellfire-Encased Pendant
 					i(32590),	-- Nethervoid Cloak
 					i(34010),	-- Pepe's Shroud of Pacification
+					i(32428),	-- Heart of Darkness
 				},
 			}),
 			e(1577, {	-- Rage Winterchill

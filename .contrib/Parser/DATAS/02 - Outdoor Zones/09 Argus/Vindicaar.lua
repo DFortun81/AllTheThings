@@ -269,7 +269,7 @@ _.Zones =
 						["coord"] = { 42.9, 26.4, 831 },
 					}),
 					q(49293, {	-- Invasion Onslaught
-					--	["sourceQuests"] = {  },	-- ???
+						["sourceQuests"] = { 48605 },	-- Commander's Downfall
 						["provider"] = { "n", 126408 },	-- Illidan Stormrage
 						["isWeekly"] = true,
 						["coord"] = { 40.1, 21.3, 831 },

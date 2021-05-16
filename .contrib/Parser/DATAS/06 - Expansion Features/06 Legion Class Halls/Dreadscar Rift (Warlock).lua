@@ -363,7 +363,7 @@ _.ExpansionFeatures =
 						["coord"] = { 54.0, 36.2, 717 },
 						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 					}),
-					q(42103, {	-- One Who's Worthy
+					q(42102, {	-- One Who's Worthy
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
 							41754,	-- Champion: Shinfel Blightsworn

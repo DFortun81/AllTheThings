@@ -42,43 +42,165 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 			}),
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
-					i(32429),	-- Pattern: Boots of Shackled Souls
-					i(32430),	-- Pattern: Bracers of Shackled Souls
-					i(32431),	-- Pattern: Greaves of Shackled Souls
-					i(32447),	-- Pattern: Night's End
-					i(32436),	-- Pattern: Redeemed Soul Cinch
-					i(32435),	-- Pattern: Redeemed Soul Legguards
-					i(32433),	-- Pattern: Redeemed Soul Moccasins
-					i(32434),	-- Pattern: Redeemed Soul Wristguards
-					i(32438),	-- Pattern: Soulguard Bracers
-					i(32440),	-- Pattern: Soulguard Girdle
-					i(32439),	-- Pattern: Soulguard Leggings
-					i(32437),	-- Pattern: Soulguard Slippers
-					i(32432),	-- Pattern: Waistguard of Shackled Souls
-					i(32442),	-- Plans: Shadesteel Bracers
-					i(32444),	-- Plans: Shadesteel Girdle
-					i(32443),	-- Plans: Shadesteel Greaves
-					i(32441),	-- Plans: Shadesteel Sabots
-					i(32490),	-- Ashtongue Talisman of Acumen
-					i(32486),	-- Ashtongue Talisman of Equilibrium
-					i(32488),	-- Ashtongue Talisman of Insight
-					i(32492),	-- Ashtongue Talisman of Lethality
-					i(32493),	-- Ashtongue Talisman of Shadows
-					i(32487),	-- Ashtongue Talisman of Swiftness
-					i(32485),	-- Ashtongue Talisman of Valor
-					i(32491),	-- Ashtongue Talisman of Vision
-					i(32489),	-- Ashtongue Talisman of Zeal
+					i(32429, {	-- Pattern: Boots of Shackled Souls
+						["spellID"] = 39997,	-- Boots of Shackled Souls
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32430, {	-- Pattern: Bracers of Shackled Souls
+						-- #if AFTER CATA
+						["spellID"] = 52733,	-- Bracers of Shackled Souls
+						-- #else
+						["spellID"] = 40000,	-- Bracers of Shackled Souls
+						-- #endif
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32431, {	-- Pattern: Greaves of Shackled Souls
+						["spellID"] = 40001,	-- Greaves of Shackled Souls
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32447, {	-- Pattern: Night's End
+						["spellID"] = 40060,	-- Night's End
+						["requireSkill"] = TAILORING,
+						["f"] = 200,
+					}),
+					i(32436, {	-- Pattern: Redeemed Soul Cinch
+						["spellID"] = 40006,	-- Redeemed Soul Cinch
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32435, {	-- Pattern: Redeemed Soul Legguards
+						["spellID"] = 40005,	-- Redeemed Soul Legguards
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32433, {	-- Pattern: Redeemed Soul Moccasins
+						["spellID"] = 40003,	-- Redeemed Soul Moccasins
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32434, {	-- Pattern: Redeemed Soul Wristguards
+						["spellID"] = 40004,	-- Redeemed Soul Wristguards
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32438, {	-- Pattern: Soulguard Bracers
+						["spellID"] = 40021,	-- Soulguard Bracers
+						["requireSkill"] = TAILORING,
+						["f"] = 200,
+					}),
+					i(32440, {	-- Pattern: Soulguard Girdle
+						["spellID"] = 40024,	-- Soulguard Girdle
+						["requireSkill"] = TAILORING,
+						["f"] = 200,
+					}),
+					i(32439, {	-- Pattern: Soulguard Leggings
+						["spellID"] = 40023,	-- Soulguard Leggings
+						["requireSkill"] = TAILORING,
+						["f"] = 200,
+					}),
+					i(32437, {	-- Pattern: Soulguard Slippers
+						["spellID"] = 40020,	-- Soulguard Slippers
+						["requireSkill"] = TAILORING,
+						["f"] = 200,
+					}),
+					i(32432, {	-- Pattern: Waistguard of Shackled Souls
+						["spellID"] = 40002,	-- Waistguard of Shackled Souls
+						["requireSkill"] = LEATHERWORKING,
+						["f"] = 200,
+					}),
+					i(32442, {	-- Plans: Shadesteel Bracers
+						["spellID"] = 40034,	-- Shadesteel Bracers
+						["requireSkill"] = BLACKSMITHING,
+						["f"] = 200,
+					}),
+					i(32444, {	-- Plans: Shadesteel Girdle
+						["spellID"] = 40036,	-- Shadesteel Girdle
+						["requireSkill"] = BLACKSMITHING,
+						["f"] = 200,
+					}),
+					i(32443, {	-- Plans: Shadesteel Greaves
+						["spellID"] = 40035,	-- Shadesteel Greaves
+						["requireSkill"] = BLACKSMITHING,
+						["f"] = 200,
+					}),
+					i(32441, {	-- Plans: Shadesteel Sabots
+						["spellID"] = 40033,	-- Shadesteel Sabots
+						["requireSkill"] = BLACKSMITHING,
+						["f"] = 200,
+					}),
+					i(32490, {	-- Ashtongue Talisman of Acumen
+						["classes"] = { PRIEST },
+					}),
+					i(32486, {	-- Ashtongue Talisman of Equilibrium
+						["classes"] = { DRUID },
+					}),
+					i(32488, {	-- Ashtongue Talisman of Insight
+						["classes"] = { MAGE },
+					}),
+					i(32492, {	-- Ashtongue Talisman of Lethality
+						["classes"] = { ROGUE },
+					}),
+					i(32493, {	-- Ashtongue Talisman of Shadows
+						["classes"] = { WARLOCK },
+					}),
+					i(32487, {	-- Ashtongue Talisman of Swiftness
+						["classes"] = { HUNTER },
+					}),
+					i(32485, {	-- Ashtongue Talisman of Valor
+						["classes"] = { WARRIOR },
+					}),
+					i(32491, {	-- Ashtongue Talisman of Vision
+						["classes"] = { SHAMAN },
+					}),
+					i(32489, {	-- Ashtongue Talisman of Zeal
+						["classes"] = { PALADIN },
+					}),
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(32754),	-- Pattern: Bracers of Nimble Thought
-				i(32744),	-- Pattern: Bracers of Renewed Life
-				i(32750),	-- Pattern: Living Earth Bindings
-				i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-				i(32747),	-- Pattern: Swiftstrike Shoulders
-				i(32753),	-- Pattern: Swiftheal Mantle
-				i(32738),	-- Plans: Dawnsteel Bracers
-				i(32737),	-- Plans: Swiftsteel Shoulders
+				i(32754, {	-- Pattern: Bracers of Nimble Thought
+					["spellID"] = 41205,	-- Bracers of Nimble Thought
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
+				}),
+				i(32744, {	-- Pattern: Bracers of Renewed Life
+					["spellID"] = 41156,	-- Bracers of Renewed Life
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
+				}),
+				i(32750, {	-- Pattern: Living Earth Bindings
+					["spellID"] = 41163,	-- Living Earth Bindings
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
+				}),
+				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
+					["spellID"] = 41162,	-- Shoulders of Lightning Reflexes
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
+				}),
+				i(32747, {	-- Pattern: Swiftstrike Shoulders
+					["spellID"] = 41160,	-- Swiftstrike Shoulders
+					["requireSkill"] = LEATHERWORKING,
+					["f"] = 200,
+				}),
+				i(32753, {	-- Pattern: Swiftheal Mantle
+					["spellID"] = 41208,	-- Swiftheal Mantle
+					["requireSkill"] = TAILORING,
+					["f"] = 200,
+				}),
+				i(32738, {	-- Plans: Dawnsteel Bracers
+					["spellID"] = 41134,	-- Dawnsteel Bracers
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
+				}),
+				i(32737, {	-- Plans: Swiftsteel Shoulders
+					["spellID"] = 41133,	-- Swiftsteel Shoulders
+					["requireSkill"] = BLACKSMITHING,
+					["f"] = 200,
+				}),
 				i(32606),	-- Girdle of the Lightbearer
 				i(34011),	-- Illidari Runeshield
 				i(32608),	-- Pillager's Gauntlets
@@ -94,6 +216,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 				i(32231),	-- Pyrestone
 				i(32230),	-- Shadowsong Amethyst
 				i(32249),	-- Seaspray Emerald
+				i(32428),	-- Heart of Darkness
 			}),
 			-- #if AFTER LEGION
 			d(14, {	-- Normal

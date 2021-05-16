@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
@@ -42,11 +41,13 @@ _.Zones =
 					["sourceQuest"] = 9722,	-- The Master's Path
 				}),
 				q(9681, {	-- A Study in Power
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(12, 1, 12),
 				}),
 				q(9721,  {	-- A Summons from Lord Solanar
 					["u"] = REMOVED_FROM_GAME,
@@ -62,13 +63,25 @@ _.Zones =
 					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
-				q(9684, {	-- Claiming the Light
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17718 },	-- Magister Astalor Bloodsworn
+				q(9684, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {	-- Claiming the Light
+					["qg"] = 17718,	-- Magister Astalor Bloodsworn
 					["sourceQuest"] = 9681,	-- A Study in Power
-				}),
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["cost"] = {
+						{ "i", 24156, 1 },	-- Filled Shimmering Vessel
+					},
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(12, 1, 12),
+					["groups"] = {
+						i(24157, {	-- Shimmering Vessel
+							["coord"] = { 92.1, 36.2, SILVERMOON_CITY },
+							["groups"] = {
+								i(24156),	-- Filled Shimmering Vessel
+							},
+						}),
+					},
+				})),
 				q(27334, {	-- Dark Cleric Cecille
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, SILVERMOON_CITY },
@@ -94,11 +107,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9707, {	-- Forging the Weapon
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9692,	-- The Path of the Adept
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["cost"] = {
+						{ "i", 24239, 1 },	-- Crate of Materials
+					},
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(20, 1, 20),
 				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
@@ -228,11 +246,24 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(9685, {	-- Redeeming the Dead
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9684,	-- Claiming the Light
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 24184, 1 },	-- Filled Shimmering Vessel
+					},
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(12, 1, 12),
+					-- #if BEFORE CATA
+					["groups"] = {
+						recipe(7329, {	-- Redemption
+							["classes"] = { PALADIN },
+							["races"] = { BLOODELF },
+						}),
+					},
+					-- #endif
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 16681 },	-- Champion Bachi
@@ -250,20 +281,44 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
+				-- #if BEFORE WRATH
+				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9134,  {	-- Skymistress Gloaming
-					["provider"] = { "n", 16191 },	-- Sathren Azuredawn
-					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
+					["qg"] = 16191,	-- Sathren Azuredawn
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
+					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
+					["maps"] = { EVERSONG_WOODS },
+					["cost"] = {
+						{ "i", 22550, 1 },	-- Quartermaster Lymel's Goods
+					},
 					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 1, 10),
 				}),
-				q(9710, {	-- The Blood-Tempered Ranseur
-					["u"] = REMOVED_FROM_GAME,
+				-- #else
+				q(9134,  {	-- Skymistress Gloaming
+					["qg"] = 16191,	-- Sathren Azuredawn
+					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
+					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
+					["maps"] = { EVERSONG_WOODS },
+					["cost"] = {
+						{ "i", 22550, 1 },	-- Sathiel's Goods
+					},
 					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 16669 },	-- Bemarrin
+					["lvl"] = lvlsquish(5, 1, 5),
+				}),
+				-- #endif
+				q(9710, {	-- The Blood-Tempered Ranseur
+					["qg"] = 16669,	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(25464)),	-- Blood-Tempered Ranseur
+					["coord"] = { 79.4, 38.6, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(20, 1, 20),
+					["groups"] = {
+						i(25464, {	-- Blood-Tempered Ranseur
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
 					},
 				}),
 				q(27280, {	-- The Earthbreaker Calls
@@ -275,11 +330,13 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(9678, {	-- The First Trial
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(12, 1, 12),
 				}),
 				q(9722,  {	-- The Master's Path
 					["u"] = REMOVED_FROM_GAME,
@@ -289,17 +346,36 @@ _.Zones =
 					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
 				}),
 				q(9692, {	-- The Path of the Adept
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
-				}),
-				q(9690, {	-- The Second Trial
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { BLOODELF },
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["cost"] = {
+						{ "i", 24223, 1 },	-- Bloodvalor's Notes
+						{ "i", 24226, 1 },	-- Blood Knight Insignia
+						{ "i", 24225, 1 },	-- Blood of the Wrathful
+						{ "i", 6995, 1 },	-- Corrupted Kor Gem
+						{ "i", 24224, 1 },	-- Crate of Bloodforged Ingots
+					},
+					["timeline"] = { "removed 4.0.3.10000" },
+					["maps"] = { GHOSTLANDS, BLACKFATHOM_DEEPS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
 					["classes"] = { PALADIN },
-					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(20, 1, 20),
+					["groups"] = {
+						i(24226, {	-- Blood Knight Insignia
+							["cr"] = 17832,	-- Blood Knight Dawnstar
+							["coord"] = { 34.8, 81.8, GHOSTLANDS },
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+					},
+				}),
+				q(9690, {	-- The Second Trial (1/2)
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(20, 1, 20),
 				}),
 				q(27331, {	-- The Seer's Call
 					["provider"] = { "n", 16658 },	-- Aldrae

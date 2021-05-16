@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(EVERSONG_WOODS, {
 			n(RARES, {
 				n(16854, {	-- Eldinarcus
@@ -33,5 +32,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1,7 +1,6 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-
 _.Craftables =
 {
 	tier(7, {	-- Legion
@@ -209,33 +208,6 @@ _.Craftables =
 				i(136687),	-- "The Felic"*
 				i(136688),	-- Shockinator*
 			}),
-			n(-494, {	-- Miscellaneous
-				q(40753, { -- Blingtron 6000
-					["isDaily"] = true,
-					["provider"] = { "n", 101527 },    -- Blingtron 6000
-					["g"] ={
-						i(132892, {	-- Blingtron 6000 Gift Package
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(87251),	-- Geosynchronous World Spinner Mount
-							i(41508),	-- Mechano-Hog Mount
-							i(44413),	-- Mekgineer's Chopper Mount
-							i(136911),	-- Knockoff Blingtron
-							i(103670),	-- Lil'Bling Pet
-							i(15996),	-- Lifelike Mechanical Toad Pet
-							i(11826),	-- Lil' Smoky Pet
-							i(4401),	-- Mechanical Squirrel Box Pet
-							i(11825),	-- Pet Bombling
-							i(115483),	-- Sky-Bo Pet
-							i(21277),	-- Tranquil Mechanical Yeti Pet
-							i(123851),	-- Photo B.O.M.B. Toy
-							i(136631),	-- Surface-to-Infernal Rocket Launcher
-							i(136630),	-- "Twirling Bottom" Repeaater"
-							i(136629),	-- Felgibber Shotgun
-							i(136632),	-- Chaos Blaster
-						}),
-					},
-				})
-			}),
 			{
 				["name"] = "Robotics",
 				["categoryID"] = 474,
@@ -305,6 +277,25 @@ _.Craftables =
 			filter(54, {	-- Relics
 				i(136692),	-- Aqual Mark
 				i(136693),	-- Straszan Mark
+			}),
+		}),
+		prof(FISHING, {
+			spell(201943, {	-- Better Luck Next Time
+				["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+				["g"] = {
+					i(139408, {	-- Deck Sandals
+						["bonusID"] = 1812,
+					}),
+					i(139407, {	-- Diver's Chain Boots
+						["bonusID"] = 1812,
+					}),
+					i(139405, {	-- Kul'Tiras Marine Issue Boots
+						["bonusID"] = 1812,
+					}),
+					i(139406, {	-- Sea Dog Boots
+						["bonusID"] = 1812,
+					}),
+				},
 			}),
 		}),
 		prof(JEWELCRAFTING, {
