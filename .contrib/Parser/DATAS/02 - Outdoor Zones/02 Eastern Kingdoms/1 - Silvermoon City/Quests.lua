@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local REDEMPTION = recipe(7328);	-- Redemption
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -207,12 +208,7 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(12, 1, 12),
 					-- #if BEFORE CATA
-					["groups"] = {
-						recipe(7329, {	-- Redemption
-							["classes"] = { PALADIN },
-							["races"] = { BLOODELF },
-						}),
-					},
+					["groups"] = { REDEMPTION },
 					-- #endif
 				}),
 				-- #if BEFORE WRATH
@@ -359,3 +355,6 @@ _.Zones =
 		}),
 	})),
 };
+
+-- Remove the phase requirement from Redemption.
+REDEMPTION.u = nil;

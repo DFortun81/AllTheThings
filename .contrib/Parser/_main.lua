@@ -546,6 +546,15 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
+appendGroups = function(common, groups)
+	if not groups then groups = {}; end
+	if common then
+		for i,o in ipairs(common) do
+			table.insert(groups, o);
+		end
+	end
+	return groups;
+end
 sharedData = function(data, t)
 	for i, group in ipairs(t) do
 		for key, value in pairs(data) do
@@ -1044,3 +1053,676 @@ function Artifacts(things)
 		end
 	end
 end
+
+-- Giant Copy+Paste Sections that need a better solution at some point, but for now, this is the best I've got.
+-- I'm thinking a "World Vendors" section. Stable Master, Cataclysm Blacksmithing Supplies, etc fit into this category.
+-- Use maps to link them. You know, like a sensible person that hates pointless duplication.
+COMMON_CATACLYSM_BLACKSMITHING_RECIPES = {
+	i(66100, {	-- Plans: Ebonsteel Belt Buckle
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76439,	-- Ebonsteel Belt Buckle
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66113, {	-- Plans: Elementium Bonesplitter
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76452,	-- Elementium Bonesplitter
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66106, {	-- Plans: Elementium Deathplate
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76445,	-- Elementium Deathplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66115, {	-- Plans: Elementium Earthguard
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76454,	-- Elementium Earthguard
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66107, {	-- Plans: Elementium Girdle of Pain
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76446,	-- Elementium Girdle of Pain
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(67603, {	-- Plans: Elementium Gutslicer
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 94718,	-- Elementium Gutslicer
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66111, {	-- Plans: Elementium Hammer
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76450,	-- Elementium Hammer
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66112, {	-- Plans: Elementium Poleaxe
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76451,	-- Elementium Poleaxe
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66114, {	-- Plans: Elementium Shank
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76453,	-- Elementium Shank
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66110, {	-- Plans: Elementium Spellblade
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76449,	-- Elementium Spellblade
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66116, {	-- Plans: Elementium Stormshield
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76455,	-- Elementium Stormshield
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(67606, {	-- Plans: Forged Elementium Mindcrusher
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 94732,	-- Forged Elementium Mindcrusher
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66105, {	-- Plans: Hardened Elementium Girdle
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76444,	-- Hardened Elementium Girdle
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66104, {	-- Plans: Hardened Elementium Hauberk
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76443,	-- Hardened Elementium Hauberk
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66109, {	-- Plans: Light Elementium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76448,	-- Light Elementium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66108, {	-- Plans: Light Elementium Chestguard
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76447,	-- Light Elementium Chestguard
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66101, {	-- Plans: Pyrium Shield Spike
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76440,	-- Pyrium Shield Spike
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66103, {	-- Plans: Pyrium Weapon Chain
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76442,	-- Pyrium Weapon Chain
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76467,	-- Vicious Ornate Pyrium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76468,	-- Vicious Ornate Pyrium Boots
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76465,	-- Vicious Ornate Pyrium Bracers
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76472,	-- Vicious Ornate Pyrium Breastplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76466,	-- Vicious Ornate Pyrium Gauntlets
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76471,	-- Vicious Ornate Pyrium Helm
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76470,	-- Vicious Ornate Pyrium Legguards
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76469,	-- Vicious Ornate Pyrium Shoulders
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66119, {	-- Plans: Vicious Pyrium Belt
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76458,	-- Vicious Pyrium Belt
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66120, {	-- Plans: Vicious Pyrium Boots
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76459,	-- Vicious Pyrium Boots
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66117, {	-- Plans: Vicious Pyrium Bracers
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76456,	-- Vicious Pyrium Bracers
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66124, {	-- Plans: Vicious Pyrium Breastplate
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76464,	-- Vicious Pyrium Breastplate
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+		["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76457,	-- Vicious Pyrium Gauntlets
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66123, {	-- Plans: Vicious Pyrium Helm
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76463,	-- Vicious Pyrium Helm
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66122, {	-- Plans: Vicious Pyrium Legguards
+		["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76462,	-- Vicious Pyrium Legguards
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+	i(66121, {	-- Plans: Vicious Pyrium Shoulders
+		["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 76461,	-- Vicious Pyrium Shoulders
+		["requireSkill"] = BLACKSMITHING,
+		["f"] = 200,
+	}),
+};
+COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
+	i(67095, {	-- Pattern: Assassin's Chestplate
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78488,	-- Assassin's Chestplate
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67070, {	-- Pattern: Belt of Nefarious Whispers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78461,	-- Belt of Nefarious Whispers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67084, {	-- Pattern: Charscale Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78478,	-- Charscale Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67094, {	-- Pattern: Chestguard of Nature's Fury
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78487,	-- Chestguard of Nature's Fury
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67073, {	-- Pattern: Corded Viper Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78463,	-- Corded Viper Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67100, {	-- Pattern: Dragonkiller Tunic
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78490,	-- Dragonkiller Tunic
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(68193, {	-- Pattern: Dragonscale Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78477,	-- Dragonscale Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(71721, {	-- Pattern: Drakehide Leg Armor
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 101599,	-- Drakehide Leg Armor
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67068, {	-- Pattern: Lightning Lash
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78460,	-- Lightning Lash
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67082, {	-- Pattern: Razor-Edged Cloak
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78475,	-- Razor-Edged Cloak
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67072, {	-- Pattern: Stormleather Sash
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78462,	-- Stormleather Sash
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67083, {	-- Pattern: Twilight Dragonscale Cloak
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78476,	-- Twilight Dragonscale Cloak
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67096, {	-- Pattern: Twilight Scale Chestguard
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78489,	-- Twilight Scale Chestguard
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67064, {	-- Pattern: Vicious Charscale Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78457,	-- Vicious Charscale Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67063, {	-- Pattern: Vicious Charscale Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78456,	-- Vicious Charscale Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67049, {	-- Pattern: Vicious Charscale Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78448,	-- Vicious Charscale Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67090, {	-- Pattern: Vicious Charscale Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78483,	-- Vicious Charscale Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67053, {	-- Pattern: Vicious Charscale Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78449,	-- Vicious Charscale Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67091, {	-- Pattern: Vicious Charscale Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78484,	-- Vicious Charscale Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67079, {	-- Pattern: Vicious Charscale Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78471,	-- Vicious Charscale Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67078, {	-- Pattern: Vicious Charscale Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78470,	-- Vicious Charscale Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67080, {	-- Pattern: Vicious Dragonscale Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78473,	-- Vicious Dragonscale Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67065, {	-- Pattern: Vicious Dragonscale Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78458,	-- Vicious Dragonscale Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67054, {	-- Pattern: Vicious Dragonscale Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78450,	-- Vicious Dragonscale Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67093, {	-- Pattern: Vicious Dragonscale Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78486,	-- Vicious Dragonscale Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67066, {	-- Pattern: Vicious Dragonscale Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78459,	-- Vicious Dragonscale Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67081, {	-- Pattern: Vicious Dragonscale Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78474,	-- Vicious Dragonscale Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67092, {	-- Pattern: Vicious Dragonscale Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78485,	-- Vicious Dragonscale Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78451,	-- Vicious Dragonscale Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67076, {	-- Pattern: Vicious Leather Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78468,	-- Vicious Leather Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67060, {	-- Pattern: Vicious Leather Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78454,	-- Vicious Leather Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67046, {	-- Pattern: Vicious Leather Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78446,	-- Vicious Leather Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67087, {	-- Pattern: Vicious Leather Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78481,	-- Vicious Leather Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67048, {	-- Pattern: Vicious Leather Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78447,	-- Vicious Leather Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67077, {	-- Pattern: Vicious Leather Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78469,	-- Vicious Leather Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67089, {	-- Pattern: Vicious Leather Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78482,	-- Vicious Leather Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67062, {	-- Pattern: Vicious Leather Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78455,	-- Vicious Leather Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67044, {	-- Pattern: Vicious Wyrmhide Belt
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78445,	-- Vicious Wyrmhide Belt
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67058, {	-- Pattern: Vicious Wyrmhide Boots
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78453,	-- Vicious Wyrmhide Boots
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78444,	-- Vicious Wyrmhide Bracers
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67075, {	-- Pattern: Vicious Wyrmhide Chest
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78467,	-- Vicious Wyrmhide Chest
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78452,	-- Vicious Wyrmhide Gloves
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67086, {	-- Pattern: Vicious Wyrmhide Helm
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78480,	-- Vicious Wyrmhide Helm
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67085, {	-- Pattern: Vicious Wyrmhide Legs
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78479,	-- Vicious Wyrmhide Legs
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 78464,	-- Vicious Wyrmhide Shoulders
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = 200,
+	}),
+	i(52980, {	-- Pristine Hide
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+	}),
+};
+COMMON_CATACLYSM_TAILORING_RECIPES = {
+	i(54601, {	-- Pattern: Belt of the Depths
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75298,	-- Belt of the Depths
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(68199, {	-- Pattern: Black Embersilk Gown
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75288,	-- Black Embersilk Gown
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54603, {	-- Pattern: Breeches of Mended Nightmares
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75300,	-- Breeches of Mended Nightmares
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54602, {	-- Pattern: Dreamless Belt
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75299,	-- Dreamless Belt
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54604, {	-- Pattern: Flame-Ascended Pantaloons
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75301,	-- Flame-Ascended Pantaloons
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54605, {	-- Pattern: Illusionary Bag
+		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75308,	-- Illusionary Bag
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54600, {	-- Pattern: Powerful Ghostly Spellthread
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75310,	-- Powerful Ghostly Spellthread
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54599, {	-- Pattern: Powerful Enchanted Spellthread
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75309,	-- Powerful Enchanted Spellthread
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54593, {	-- Pattern: Vicious Embersilk Cowl
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75306,	-- Vicious Embersilk Cowl
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54594, {	-- Pattern: Vicious Embersilk Pants
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75307,	-- Vicious Embersilk Pants
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54595, {	-- Pattern: Vicious Embersilk Robe
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75305,	-- Vicious Embersilk Robe
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54596, {	-- Pattern: Vicious Fireweave Cowl
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75304,	-- Vicious Fireweave Cowl
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54597, {	-- Pattern: Vicious Fireweave Pants
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75302,	-- Vicious Fireweave Pants
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+	i(54598, {	-- Pattern: Vicious Fireweave Robe
+		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+		["timeline"] = { "added 4.0.3.13287" },
+		["spellID"] = 75303,	-- Vicious Fireweave Robe
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+};
+
+--[[
+-- Uncomment to check that I didn't mess up the spellID/itemID pairs.
+for i,o in ipairs(COMMON_CATACLYSM_BLACKSMITHING_RECIPES) do
+	if o.itemID == o.spellID then
+		print("YA MESSED UP CRIEVE", o.itemID, o.spellID);
+	end
+end
+]]--

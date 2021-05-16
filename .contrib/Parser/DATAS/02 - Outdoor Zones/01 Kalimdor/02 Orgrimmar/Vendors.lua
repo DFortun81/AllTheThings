@@ -463,49 +463,7 @@ _.Zones =
 				n(3364,   {	-- Borya <Tailoring Supplies>
 					["coord"] = { 60.6, 58.6, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(54601, {	-- Pattern: Belt of the Depths
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(68199, {	-- Pattern: Black Embersilk Gown
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54605, {	-- Pattern: Illusionary Bag
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),
@@ -521,7 +479,7 @@ _.Zones =
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
 					["coord"] = { 38.2, 72.6, 85 },
@@ -2815,30 +2773,12 @@ _.Zones =
 				n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies>
 					["coord"] = { 41.0, 79.8, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(54601, {	-- Pattern: Belt of the Depths
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(68199, {	-- Pattern: Black Embersilk Gown
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54605, {	-- Pattern: Illusionary Bag
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt
 							["isLimited"] = true,
@@ -2846,34 +2786,10 @@ _.Zones =
 						i(10317, {	-- Pattern: Pink Mageweave Shirt
 							["isLimited"] = true,
 						}),
-						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-					},
+					}),
 				}),
 				n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, 85 },
@@ -3177,113 +3093,11 @@ _.Zones =
 				n(46359,  {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-					},
+					}),
 				}),
 				n(12796,  {	-- Raider Bork <War Mount Quartermaster>
 					["coord"] = { 41.8, 72.6, 85 },
@@ -4239,257 +4053,20 @@ _.Zones =
 				n(3356,   {	-- Sumi <Blacksmithing Supplies>
 					["coord"] = { 75.8, 35.2, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-					},
+					}),
 				}),
 				n(3366,   {	-- Tamar <Leatherworking Supplies>
 					["coord"] = { 60.6, 54.4, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(67095, {	-- Pattern: Assassin's Chestplate
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67070, {	-- Pattern: Belt of Nefarious Whispers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67084, {	-- Pattern: Charscale Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67094, {	-- Pattern: Chestguard of Nature's Fury
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67073, {	-- Pattern: Corded Viper Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67100, {	-- Pattern: Dragonkiller Tunic
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(68193, {	-- Pattern: Dragonscale Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(71721, {	-- Pattern: Drakehide Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(18731, {	-- Pattern: Heavy Leather Ball
 							["isLimited"] = true,
 						}),
-						i(67068, {	-- Pattern: Lightning Lash
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67082, {	-- Pattern: Razor-Edged Cloak
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67072, {	-- Pattern: Stormleather Sash
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67096, {	-- Pattern: Twilight Scale Chestguard
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67064, {	-- Pattern: Vicious Charscale Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67049, {	-- Pattern: Vicious Charscale Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67090, {	-- Pattern: Vicious Charscale Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67053, {	-- Pattern: Vicious Charscale Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67091, {	-- Pattern: Vicious Charscale Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67079, {	-- Pattern: Vicious Charscale Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67078, {	-- Pattern: Vicious Charscale Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67080, {	-- Pattern: Vicious Dragonscale Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67065, {	-- Pattern: Vicious Dragonscale Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67093, {	-- Pattern: Vicious Dragonscale Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67066, {	-- Pattern: Vicious Dragonscale Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67081, {	-- Pattern: Vicious Dragonscale Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67092, {	-- Pattern: Vicious Dragonscale Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67076, {	-- Pattern: Vicious Leather Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67060, {	-- Pattern: Vicious Leather Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67046, {	-- Pattern: Vicious Leather Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67087, {	-- Pattern: Vicious Leather Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67048, {	-- Pattern: Vicious Leather Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67077, {	-- Pattern: Vicious Leather Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67089, {	-- Pattern: Vicious Leather Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67062, {	-- Pattern: Vicious Leather Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67044, {	-- Pattern: Vicious Wyrmhide Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67058, {	-- Pattern: Vicious Wyrmhide Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67086, {	-- Pattern: Vicious Wyrmhide Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67085, {	-- Pattern: Vicious Wyrmhide Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-					},
+					}),
 				}),
 				n(57922,  {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, 85 },
@@ -4807,113 +4384,11 @@ _.Zones =
 				n(45549,  {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					["coord"] = { 36.2, 83.2, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-					},
+					}),
 				}),
 			}),
 		}),
