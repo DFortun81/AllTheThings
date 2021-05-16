@@ -1727,6 +1727,24 @@ _.Zones =
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
 				-- #endif
+				q(28298, {	-- Meet with Gordul
+					["qgs"] = {
+						16684,	-- Zelanis <Rogue Trainer>
+						4584,	-- Gregory Charles <Rogue Trainer>
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
+					},
+					["maps"] = {
+						SILVERMOON_CITY,
+						UNDERCITY,
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
 				q(28296, {	-- Meetup with the Caravan
 					["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,
@@ -2067,12 +2085,12 @@ _.Zones =
 					},
 				}),
 				q(28463, {	-- The Dark Iron Army
-					["sourceQuests"] = { 28298 },	-- Meet with Gordul
-					["provider"] = { "n", 47233 },	-- Gordul
+					["qg"] = 47233,	-- Gordul
+					["sourceQuest"] = 28298,	-- Meet with Gordul
+					["coord"] = { 44.6, 61.4, ORGRIMMAR },
 					["classes"] = { ROGUE },
-					["coord"] = { 44.6, 61.4, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(65629),	-- Facemask of the Shattered Hand
 					},
 				}),

@@ -263,13 +263,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28298, {	-- Meet with Gordul
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4584 },	-- Gregory Charles
-					["classes"] = { ROGUE },
-					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
-					["races"] = HORDE_ONLY,
-				}),
 				q(28290, {	-- Meet with Grezz Ragefist
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4593 },	-- Christoph Walker

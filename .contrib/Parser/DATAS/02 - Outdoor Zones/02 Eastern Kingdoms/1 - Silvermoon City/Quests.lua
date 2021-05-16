@@ -173,14 +173,6 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
 				}),
-				q(28298, {	-- Meet with Gordul
-					["provider"] = { "n", 16684 },	-- Zelanis
-					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 50,
-				}),
 				q(28290, {	-- Meet with Grezz Ragefist
 					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
 					["coord"] = { 81.0, 37.8, SILVERMOON_CITY },
