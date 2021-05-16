@@ -7,7 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(ISLE_OF_QUELDANAS, {
 			n(VENDORS, {
-			-- TODO: Olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, ISLE_OF_QUELDANAS },
 					["g"] = {
