@@ -18533,21 +18533,34 @@ app.events.QUEST_SESSION_JOINED = function()
 	-- print("QUEST_SESSION_JOINED")
 	app:UnregisterEvent("QUEST_SESSION_JOINED");
 	app:RegisterEvent("QUEST_SESSION_LEFT");
+	app:RegisterEvent("QUEST_SESSION_DESTROYED");
 	app.IsInPartySync = true;
 	app:UpdateWindows(true);
 end
 app.events.QUEST_SESSION_LEFT = function()
 	-- print("QUEST_SESSION_LEFT")
+	app.LeavePartySync();
+end
+app.events.QUEST_SESSION_DESTROYED = function()
+	-- print("QUEST_SESSION_DESTROYED")
+	app.LeavePartySync();
+end
+app.LeavePartySync = function()
 	app:UnregisterEvent("QUEST_SESSION_LEFT");
+	app:UnregisterEvent("QUEST_SESSION_DESTROYED");
 	app:RegisterEvent("QUEST_SESSION_JOINED");
 	app.IsInPartySync = false;
 	app:UpdateWindows(true);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
+	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
+		-- TODO: remember to test this logic with a toy collect...
+		-- UpdateSearchResults(SearchForField("itemID", itemID));
+		--[[]]-- uncomment to test
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		--]]
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
