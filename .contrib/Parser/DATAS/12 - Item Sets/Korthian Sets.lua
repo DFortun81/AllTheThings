@@ -60,6 +60,7 @@ _.GearSets =
 			}),
 			f(52, {	-- Finger
 				i(185894),	-- Attendant's Loop*
+				i(185941),	-- Korthian Scholar's Signet*
 				i(185895),	-- Lost Wayfairer's Band*
 			}),
 		},
