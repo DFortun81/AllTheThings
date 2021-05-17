@@ -1489,6 +1489,7 @@ namespace ATT
                     case "description":
                     case "title":
                     case "order":
+                    case "maphash":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;

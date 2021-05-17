@@ -728,10 +728,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52166, {	-- The Faceless Herald
-						["lvl"] = { 50 },
-						["isWorldQuest"] = true,
-					}),
 					q(52476, {	-- The Lichen King
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
@@ -816,8 +812,6 @@ _.Zones =
 						["g"] = {
 							n(129803, {	-- Whiplash
 								["description"] = "This rare only spawns during its associated world quest.",
-								["repeatable"] = true,
-								["questID"] = 52299,	-- Whiplash
 								["coord"] = { 47.32, 65.81, 942 },
 								["g"] = {
 									crit(27, {	-- Whiplash

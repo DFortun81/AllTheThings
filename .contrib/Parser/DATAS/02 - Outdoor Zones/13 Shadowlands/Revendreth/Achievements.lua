@@ -388,9 +388,7 @@ _.Zones =
 						["questID"] = 59889,
 						["coord"] = { 31.1, 55.0, REVENDRETH },
 						["g"] = {
-							i(182738, {	-- Bundle of Smuggled Parasol Components
-								["questID"] = 62189,	-- Parasol Components
-							}),
+							i(182738),	-- Bundle of Smuggled Parasol Components
 						},
 					}),
 					crit(10, {	-- Chest of Envious Dreams

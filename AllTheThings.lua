@@ -3443,7 +3443,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.progress = 0;
 			BuildGroups(group, group.g);
 			app.UpdateGroups(group, group.g);
-			if group.collectible then
+			if not group.collectibleAsCost and group.collectible then
 				group.total = group.total + 1;
 				if group.collected then
 					group.progress = group.progress + 1;
@@ -8903,10 +8903,11 @@ local questFields = {
 		end
 	end,
 	["hasIndicator"] = function(t)
-		return C_QuestLog_IsOnQuest(t.questID);
+		return C_QuestLog_IsOnQuest(t.questID) or (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID));
 	end,
 	["indicator"] = function(t)
-		return "star";
+		return (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID) and "incomplete") or
+			(C_QuestLog_IsOnQuest(t.questID) and "star");
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
@@ -8929,30 +8930,37 @@ local questFields = {
 	end,
 
 	["collectibleAsReputation"] = function(t)
-		-- If Collectible purely by being a Quest
-		if app.CollectibleAsQuest(t) then return true; end
-		-- If Collectible otherwise by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
-		if (app.CollectibleReputations and t.maxReputation) then
+		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
+		if app.CollectibleReputations and t.maxReputation then
 			local factionID = t.maxReputation[1];
-			local factionRef = app.SearchForObject("factionID", factionID, true);
-			return factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2];
+			local factionRef = app.SearchForObject("factionID", factionID);
+			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
+				return true;
+			end
 		end
+		-- If Collectible purely by being a Quest
+		return app.CollectibleQuests and app.CollectibleAsQuest(t);
 	end,
 	["collectedAsReputation"] = function(t)
-		local factionID = t.maxReputation[1];
-		-- Do not consider Quests for a Faction as collectible due to the Faction if the Faction itself is considered collected
-		local factionRef = app.SearchForObject("factionID", factionID, true);
-		if factionRef and factionRef.collected then
-			-- Only consider collectiblity of the Quest portion since the Faction is collected
-			return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
+		-- If the Quest is completed on this character, then it doesn't matter about the faction
+		if IsQuestFlaggedCompleted(t.questID) then
+			return 1;
 		end
-		-- Otherwise check whether this Quest provides Rep towards the incomplete Faction
-		if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(factionID)) or 0) >= t.maxReputation[2] then
-			return true;
+		-- Check whether this Quest can provide Rep towards an incomplete Faction
+		if app.CollectibleReputations and t.maxReputation then
+			local factionID = t.maxReputation[1];
+			local factionRef = app.SearchForObject("factionID", factionID);
+			-- Completing the quest will increase the Faction, so it is incomplete
+			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
+				return false;
+			elseif not app.CollectibleQuests then
+			-- Completing the quest will not increase the Faction, and User doesn't care about Quests, then consider it 'collected'
+				return 2;
+			end
 		end
-		return app.CollectibleQuests and IsQuestFlaggedCompletedForObject(t);
+		-- Finally, check if the quest is otherwise considered 'collected' by normal logic
+		return IsQuestFlaggedCompletedForObject(t);
 	end,
-
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
 		-- local LOG = t.questID == 8753 and t.questID;
@@ -11377,7 +11385,13 @@ function app:CreateMiniListForGroup(group)
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- clone/search initially so as to not let popout operations modify the source data
-		group = CloneData(group);
+		-- make a search for this group if it is an item/currency and not already a container for things
+		if not group.g and (group.itemID or group.currencyID) then
+			local cmd = group.key .. ":" .. group[group.key];
+			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		else
+			group = CloneData(group);
+		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		-- 	-- make a search for this group if it is an item/currency and not already a container for things

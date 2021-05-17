@@ -596,9 +596,9 @@ for key,value in pairs({
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
 		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]",			-- Gordok Commons [North - Ogres] 戈多克议会
 		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]",			-- Capital Gardens [West - Elves] 中心花园
-		[-15] = "常规商人物品",										-- Common Vendor Items
 		[-16] = "稀有",												-- Rares
 		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
+		[-20] = "常规商人物品",										-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
 
 		[-40] = "绝版",												-- Legacy

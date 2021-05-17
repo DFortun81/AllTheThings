@@ -646,22 +646,22 @@ _.Zones =
 						}),
 						q(53207, {	-- The Warfront Looms
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coords"] = {
-								{ 52.97, 94.35, 1165 },
-							},
+							["coord"] = { 52.97, 94.35, 1165 },
+							["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+							["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
+							["races"] = HORDE_ONLY,
 						}),
 						q(53208, {	-- To The Front
 							["sourceQuests"] = { 53207 },	-- The Warfront Looms
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 52.97, 94.35, 1165 },
+							["coord"] = { 52.9, 94.4, 1165 },
 							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
+							["races"] = HORDE_ONLY,
 						}),
 						q(53955, {	-- Warfront: The Battle for Darkshore [Tier 3]
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["isWeekly"] = true,
-							["coords"] = {
-								{ 52.97, 94.35, 1165 },
-							},
+							["coord"] = { 52.97, 94.35, 1165 },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(166369, {	-- Deathguard Equipment Cache
@@ -756,7 +756,8 @@ _.Zones =
 						}),
 						q(53209, {	-- Warfront Contribution
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 52.97, 94.35, 1165 },
+							["coord"] = { 53.0, 94.3, 1165 },
+							["races"] = HORDE_ONLY,
 						}),
 						-- INCURSIONS INFO STARTS HERE
 						i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)

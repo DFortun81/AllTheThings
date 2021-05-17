@@ -79,10 +79,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 166608 },	-- 	Mueh'zala
 					["g"] = {
 						ach(14373),	-- De Other Side
-						i(182178, {	-- Raptor Soul
-							["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-							["questID"] = 62433,	-- Raptor Soul
-						}),
+						i(182178),	-- Raptor Soul
 						i(181943),	-- Eradicating Blow
 						i(183490),	-- Floral Recycling
 						i(182145),	-- Heavy Rainfall
@@ -163,10 +160,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 166608 },	-- 	Mueh'zala
 						["g"] = {
 							ach(14408),	-- Heroic: De Other Side
-							i(182178, {	-- Raptor Soul
-								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-								["questID"] = 62433,	-- Raptor Soul
-							}),
+							i(182178),	-- Raptor Soul
 							i(181943),	-- Eradicating Blow
 							i(183490),	-- Floral Recycling
 							i(182145),	-- Heavy Rainfall
@@ -254,10 +248,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 166608 },	-- 	Mueh'zala
 						["g"] = {
 							ach(14409),	-- Mythic: De Other Side
-							i(182178, {	-- Raptor Soul
-								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-								["questID"] = 62433,	-- Raptor Soul
-							}),
+							i(182178),	-- Raptor Soul
 							i(181943),	-- Eradicating Blow
 							i(183490),	-- Floral Recycling
 							i(182145),	-- Heavy Rainfall

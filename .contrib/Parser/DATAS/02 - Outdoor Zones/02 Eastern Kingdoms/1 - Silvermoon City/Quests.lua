@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local REDEMPTION = recipe(7328);	-- Redemption
+local SUMMON_VOIDWALKER = recipe(697);	-- Summon Voidwalker
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -211,6 +212,25 @@ _.Zones =
 					["groups"] = { REDEMPTION },
 					-- #endif
 				}),
+				q(10788, {	-- Return to Talionia
+					["qgs"] = {
+						5875,	-- Gan'rul Bloodeye
+						5675,	-- Carendin Halgar
+					},
+					["coords"] = {
+						{ 48.2, 45.3, ORGRIMMAR },	-- Gan'rul Bloodeye
+						{ 85.1, 26.0, UNDERCITY },	-- Carendin Halgar
+					},
+					["maps"] = {
+						ORGRIMMAR,
+						UNDERCITY,
+					},
+					["timeline"] = { "removed 4.0.3.10000" },
+					["races"] = { BLOODELF },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9134, {	-- Skymistress Gloaming
@@ -293,6 +313,25 @@ _.Zones =
 						}),
 					},
 				}),
+				q(9619, {	-- The Rune of Summoning
+					["provider"] = { "i", 23732 },	-- Voidstone
+					["sourceQuest"] = 9529,	-- The Stone
+					["coord"] = { 42.6, 15.7, GHOSTLANDS },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["maps"] = { GHOSTLANDS },
+					["races"] = { BLOODELF },
+					["classes"] = { WARLOCK },
+					["lvl"] = lvlsquish(10, 1, 10),
+					-- #if BEFORE CATA
+					["groups"] = {
+						objective(1, {	-- Summoned Voidwalker slain
+							["cr"] = 5676,	-- Summoned Voidwalker
+							["coord"] = { 26, 15, GHOSTLANDS },
+						}),
+						SUMMON_VOIDWALKER,
+					},
+					-- #endif
+				}),
 				q(9690, {	-- The Second Trial (1/2)
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
@@ -300,6 +339,16 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
+				}),
+				q(9529, {	-- The Stone
+					["qg"] = 16647,	-- Talionia <Warlock Trainer>
+					["sourceQuest"] = 10788,	-- Return to Talionia
+					["coord"] = { 74.4, 47.2, SILVERMOON_CITY },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["maps"] = { GHOSTLANDS },
+					["races"] = { BLOODELF },
+					["classes"] = { WARLOCK },
+					["lvl"] = lvlsquish(10, 1, 10),
 				}),
 				q(9735, {	-- True Masters of the Light (1/3)
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
@@ -358,3 +407,4 @@ _.Zones =
 
 -- Remove the phase requirement from Redemption.
 REDEMPTION.u = nil;
+SUMMON_VOIDWALKER.u = nil;

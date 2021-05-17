@@ -536,9 +536,7 @@ _.Zones =
 						["questID"] = 61048,
 						["coord"] = { 59.3, 60.9, BASTION },
 						["g"] = {
-							i(182693, {	-- Lost Disciple's Notes
-								["questID"] = 62170,	-- You'll Never Walk Alone
-							}),
+							i(182693),	-- Lost Disciple's Notes
 						},
 					}),
 					crit(5,  {	-- Larion Tamer's Harness

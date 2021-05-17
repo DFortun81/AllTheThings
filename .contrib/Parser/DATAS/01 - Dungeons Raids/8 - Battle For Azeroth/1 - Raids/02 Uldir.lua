@@ -77,7 +77,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-592, {	-- Power Increased to Level 10
-							["questID"] = 53579,	-- Stack #10
+							["questID"] = 53580,	-- Stack #10	gonna assume this is actually 53580, completed on main
 							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 					},

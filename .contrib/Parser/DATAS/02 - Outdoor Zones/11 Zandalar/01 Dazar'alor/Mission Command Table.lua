@@ -141,11 +141,7 @@ _.Zones =
 					mission(2078),	-- Azeroth Bleeds
 					mission(2087),	-- Explore the Roost
 					mission(1878, {	-- The Shadow War
-						["g"] = {
-							i(160983, {	-- Recruitment Orders
-								["questID"] = 51771,	-- War of Shadows	NOTE!! Finishing the quest rewards the unlock
-							}),
-						},
+						i(160983),	-- Recruitment Orders
 					}),
 					currency(1579, {	-- Champions of Azeroth
 						["repeatable"] = true,

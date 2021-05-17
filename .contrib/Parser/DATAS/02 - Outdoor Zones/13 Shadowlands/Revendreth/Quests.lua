@@ -449,11 +449,8 @@ _.Zones =
 					["coord"] = { 72.9, 52.0, REVENDRETH },
 				}),
 				q(62189, {	-- Parasol Components
-					["provider"] = { "o", 349798 },	-- Smuggled Cache
+					["provider"] = { "i", 182738 },	-- Bundle of Smuggled Parasol Components
 					["coord"] = { 31.1, 55.1, REVENDRETH },
-					["g"] =  {
-						i(182738),	-- Bundle of Smuggled Parasol Components
-					},
 				}),
 				q(57689, {	-- Prince Renathal
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion

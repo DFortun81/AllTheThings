@@ -230,6 +230,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 -- Headers
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
+EXPLORATION = -15;
 FACTIONS = -6013;
 FLIGHT_PATHS = -228;
 QUESTS = -17;
@@ -774,6 +775,10 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 end
 e = function(id, t)										-- Create an ENCOUNTER Object
 	return struct("encounterID", id, t);
+end
+exploration = function(id, t)							-- Create an EXPLORATION Object
+	if type(t) == "string" then t = { ["maphash"] = t }; end
+	return struct("explorationID", id, t);
 end
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);

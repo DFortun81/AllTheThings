@@ -285,19 +285,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
-				q(56056, {	-- Terror of the Depths
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
 				q(56048, {	-- The Drowned Oracles
 					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),
 				q(55982, {	-- The Lords of Water
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				q(56057, {	-- The Soulbinder
 					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),

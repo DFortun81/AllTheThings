@@ -43,12 +43,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = { 154794 },
 				}),
 			}),
-			n(QUESTS, {
-				q(55609, {	-- Operation: Mechagon - The Mechoriginator
-					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
-					["provider"] = { "n", 149816 },	-- Prince Erazmin
-				}),
-			}),
 			d(2,  {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {

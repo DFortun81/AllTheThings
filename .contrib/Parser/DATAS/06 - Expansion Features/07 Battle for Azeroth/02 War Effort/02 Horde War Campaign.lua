@@ -145,6 +145,7 @@ _.ExpansionFeatures =
 						}),
 						q(51771, {	-- War of Shadows
 							["provider"] = { "n", 138708 },	-- Garona Halforcen
+							["cost"] = { { "i", 160983, 1, } },	-- Recruitment Orders
 							["coord"] = { 58.4, 62.6, 862 },
 							["sourceQuest"] = 51770,	-- Mission from the Warchief
 							["races"] = HORDE_ONLY,

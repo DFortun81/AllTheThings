@@ -743,6 +743,12 @@ _.Zones =
 						q(58991, {	-- Curious Corruption
 							["description"] = "Automatically granted when you get your first corrupted item.",
 						}),
+						un(REMOVED_FROM_GAME, q(58876, {	-- Lost Flight
+							["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+							["g"] = {
+								i(174862),	-- Uncorrupted Voidwing
+							},
+						})),
 					}),
 					n(VENDORS, {
 						n(130216, {	-- Magni Bronzebeard

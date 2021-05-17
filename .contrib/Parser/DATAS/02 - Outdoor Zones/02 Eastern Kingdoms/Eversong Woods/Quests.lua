@@ -607,6 +607,7 @@ _.Zones =
 						{ "i", 21770, 1 },	-- Ring of Mmmrrrggglll
 					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(5, 1, 5),
 					["groups"] = {
 						i(21770, {	-- Ring of Mmmrrrggglll
 							["races"] = HORDE_ONLY,

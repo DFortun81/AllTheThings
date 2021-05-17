@@ -64,9 +64,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2210, {	-- Dunegorger Kraulok
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
 				["coord"] = { 44.3, 55.5, 864 },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Vol'dun maps
 					864,	-- Vol'dun
 					1009,	-- Atul'Aman: The Blood Font
@@ -133,11 +135,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2345, {	-- Ivus the Decayed [Alliance Only]
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, 62 },
 				["maps"] = { 62 },	-- Darkshore
+				["lvl"] = { 50 },
 				["cr"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166695),	-- Petrified Ironbark Crown
@@ -155,11 +159,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2329, {	-- Ivus the Forest Lord [Horde Only]
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.4, 35.9, 62 },
 				["maps"] = { 62 },	-- Darkshore
+				["lvl"] = { 50 },
 				["cr"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166696),	-- Petrified Ironbark Crown
@@ -177,9 +183,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2141, {	-- Ji'arak
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				["isRaid"] = true,
 				["coord"] = { 69.0, 31.0, 862 },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
 					862,	-- Zuldazar
 					1166,	-- Zanchul
@@ -205,9 +213,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, 863 },
+				["lvl"] = { 50 },
 				["maps"] = { 863 },	-- Nazmir
 				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] =  bubbleDown({["modID"] = 3}, {
@@ -300,9 +310,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				["isRaid"] = true,
 				["coord"] = { 83.2, 49.6, 942 },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Stormsong Valley maps
 					942,	-- Stormsong Valley
 					1179,	-- Abyssal Melody

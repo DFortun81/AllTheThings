@@ -223,16 +223,6 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = { 50 },
 					}),
-					q(54895, {	-- Ivus the Decayed (A)
-						["isWorldQuest"] = true,
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = { 50 },
-					}),
-					q(54896, {	-- Ivus the Forest Lord (H)
-						["isWorldQuest"] = true,
-						["races"] = HORDE_ONLY,
-						["lvl"] = { 50 },
-					}),
 					q(54648, {	-- Kaldorei Resurgence (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
