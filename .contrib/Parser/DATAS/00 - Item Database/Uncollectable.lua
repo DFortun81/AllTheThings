@@ -410,6 +410,7 @@ i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
+i(181454);	-- Duskmire Rose
 i(173788);	-- Dusty Bun
 i(118265);	-- Echoing Betrayal
 i(2460);	-- Elixir of Tongues
@@ -452,6 +453,7 @@ i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
 i(179295);	-- Squeaky Bat
 i(173776);	-- Stale Loaf
+i(182186);	-- Stolen Memento
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
