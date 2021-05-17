@@ -4881,6 +4881,7 @@ app.L = {
 		[360054] = "Slime Cat",
 		[362489] = "Elysian Decree",
 		[364899] = "Crystallized Stygia",
+		[364483] = "Empty Nightcap Cask",
 		[364926] = "Runeforged Shackles",
 		[364932] = "Blazing Ingot",
 		[364937] = "Phasic Siphoner",
