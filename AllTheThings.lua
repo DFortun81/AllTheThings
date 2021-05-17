@@ -8927,16 +8927,23 @@ local questFields = {
 	end,
 
 	["collectibleAsReputation"] = function(t)
+		local factionID = t.maxReputation[1];
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
-		if app.CollectibleReputations and t.maxReputation then
-			local factionID = t.maxReputation[1];
+		if app.CollectibleReputations then
 			local factionRef = app.SearchForObject("factionID", factionID);
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return true;
 			end
 		end
-		-- If Collectible purely by being a Quest
-		return app.CollectibleQuests and app.CollectibleAsQuest(t);
+		-- If Collectible by being a Quest, and the character is able to turn in the Quest
+		if app.CollectibleQuests then
+			if (select(6, GetFactionInfoByID(factionID)) or 0) <= t.maxReputation[2] then
+				return app.CollectibleAsQuest(t);
+			else
+				-- Otherwise, treat the quest as collectible if it has already been completed
+				return IsQuestFlaggedCompletedForObject(t);
+			end
+		end
 	end,
 	["collectedAsReputation"] = function(t)
 		-- If the Quest is completed on this character, then it doesn't matter about the faction
@@ -8951,7 +8958,7 @@ local questFields = {
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return false;
 			elseif not app.CollectibleQuests then
-			-- Completing the quest will not increase the Faction, and User doesn't care about Quests, then consider it 'collected'
+			-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
 				return 2;
 			end
 		end

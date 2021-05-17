@@ -13,10 +13,8 @@ _.Zones =
 						ach(902),	-- Chief Exalted Officer
 						n(QUESTS, {
 							q(9914, {	-- A Head Full of Ivory
-								--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 								["provider"] = { "n", 18333 },	-- Shadrek
 								["coord"] = { 31.8, 56.8, NAGRAND },
-								["isBreadcrumb"] = true,
 								["minReputation"] = { 933, NEUTRAL },
 								["maxReputation"] = { 933, FRIENDLY },
 							}),
@@ -88,8 +86,6 @@ _.Zones =
 								["minReputation"] = { 933, FRIENDLY },
 							}),
 							q(9882, {	-- Stealing from Thieves
-								--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
-								["isBreadcrumb"] = true,
 								["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 								["coord"] = { 31.4, 57.8, NAGRAND },
 								["minReputation"] = { 933, NEUTRAL },
