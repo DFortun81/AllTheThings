@@ -1921,7 +1921,7 @@ _.HiddenQuestTriggers =
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
 		}),
-		q(40603),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
+		q(43775),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
 		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7

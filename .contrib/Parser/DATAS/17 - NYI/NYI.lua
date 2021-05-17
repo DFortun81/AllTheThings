@@ -70,6 +70,8 @@ _.NeverImplemented =
 		i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
 		i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
 		i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
+		i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
+		i(179660),	-- Winterborn Tunic (reported as not being awarded from ensemble 184114)
 		-- Pets
 		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
