@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(AZUREMYST_ISLE, {
 			n(QUESTS, {
 				q(9528,  {	-- A Cry For Help
@@ -417,5 +417,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

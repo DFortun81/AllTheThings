@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLOODMYST_ISLE, {
 			n(VENDORS, {
 				n(18427, {	-- Fazu <Tradesman>
@@ -15,5 +15,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

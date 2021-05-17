@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(THE_EXODAR, {
 			n(QUESTS, {
 				q(27225, {	-- A Summons from Ander Germaine
@@ -164,5 +163,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

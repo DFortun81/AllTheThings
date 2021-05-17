@@ -23,9 +23,6 @@ _.Zones =
 				exploration(3492, "256:256:40:287"),	-- Windrunner Spire [TBC]
 				exploration(3491, "256:512:60:117"),	-- Windrunner Village [TBC]
 				exploration(3517, "512:431:466:237"),	-- Zeb'Nowa [TBC]
-				--[[
-				exploration(3507, ""),	-- Hatchet Hills [TBC]
-				]]--
 			}),
 		}),
 	})),

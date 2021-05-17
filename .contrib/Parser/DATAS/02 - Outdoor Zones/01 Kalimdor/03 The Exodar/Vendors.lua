@@ -1,10 +1,42 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+local GORNII_GROUPS, PHEA_GROUPS = {}, {};
+local EGOMIS_GROUPS = {
+	i(22565, {	-- Formula: Large Prismatic Shard
+		["spellID"] = 28022,	-- Large Prismatic Shard
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+	i(22562, {	-- Formula: Superior Mana Oil
+		["spellID"] = 28016,	-- Superior Mana Oil
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+	i(22563, {	-- Formula: Superior Wizard Oil
+		["spellID"] = 28019,	-- Superior Wizard Oil
+		["requireSkill"] = ENCHANTING,
+		["timeline"] = { "added 2.0.1.6180" },
+		-- #if ANYCLASSIC
+		["u"] = TBC_PHASE_ONE,
+		-- #endif
+		["isLimited"] = true,
+		["f"] = 200,
+	}),
+};
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(THE_EXODAR, {
 			n(VENDORS, {
 				n(16705, {	-- Altaa <Alchemy Supplies>
@@ -104,42 +136,7 @@ _.Zones =
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.8, 39.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-						i(22565, {	-- Formula: Large Prismatic Shard
-							["spellID"] = 28022,	-- Large Prismatic Shard
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22562, {	-- Formula: Superior Mana Oil
-							["spellID"] = 28016,	-- Superior Mana Oil
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(22563, {	-- Formula: Superior Wizard Oil
-							["spellID"] = 28019,	-- Superior Wizard Oil
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, EGOMIS_GROUPS),
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.0, 90.0, THE_EXODAR },
@@ -168,11 +165,7 @@ _.Zones =
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					["coord"] = { 71.0, 91.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(3428),	-- Common Grey Shirt
-						i(16059),	-- Common Brown Shirt
-						i(16060),	-- Common White Shirt
-					},
+					["groups"] = GORNII_GROUPS,
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 74.0, THE_EXODAR },
@@ -188,6 +181,7 @@ _.Zones =
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64889),	-- Mantle of Exodar
@@ -227,10 +221,7 @@ _.Zones =
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.6, 26.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-					},
+					["groups"] = PHEA_GROUPS,
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.4, 34.6, THE_EXODAR },
@@ -268,5 +259,26 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+
+-- Add in items that aren't supposed to be marked with a phase release.
+for i,o in ipairs({
+	i(16059),	-- Common Brown Shirt
+	i(3428),	-- Common Gray Shirt
+	i(16060),	-- Common White Shirt
+}) do table.insert(GORNII_GROUPS, o); end
+for i,o in ipairs({
+	i(21219),	-- Recipe: Sagefish Delight
+	i(21099),	-- Recipe: Smoked Sagefish
+}) do table.insert(PHEA_GROUPS, o); end
+for i,o in ipairs({
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307, {	-- Pattern: Enchanted Mageweave Pouch
+		["spellID"] = 27658,	-- Enchanted Mageweave Pouch
+		["requireSkill"] = TAILORING,
+		["f"] = 200,
+	}),
+}) do table.insert(EGOMIS_GROUPS, o); end
