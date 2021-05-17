@@ -197,6 +197,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179791, {	-- Deomen the Vortex
+				--	TODO: get questID, figure out how to open the gate to get to the rare
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 66.4, 55.4, THE_MAW },
+					["g"] = {
+						crit(5, {	-- Deomen the Vortex
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
 				n(170711, {	-- Dolos
 					["questID"] = 60909,
 					["isDaily"] = true,

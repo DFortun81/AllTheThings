@@ -22,7 +22,7 @@ _.Zones =
 				}),
 				o(369216, {	-- Helsworn Chest
 				--	disconnected right after i looted this, logged back in dead, don't have questID
-				--	["questID"] = ,
+				--	["questID"] = 64256,
 					["coord"] = { 66.0, 48.9, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
@@ -65,6 +65,12 @@ _.Zones =
 								}),
 							},
 						}),
+					},
+				}),
+				o(369144, {	-- The Harrower's Key Ring
+					["questID"] = 62680,
+					["g"] = {
+						i(186727),	-- Seal Breaker Key
 					},
 				}),
 				n(173837, {	-- Torture Implements

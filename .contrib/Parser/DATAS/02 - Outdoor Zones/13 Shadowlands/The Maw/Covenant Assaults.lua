@@ -68,7 +68,7 @@ _.Zones =
 					}),
 				}),
 				q(63824, {	-- Kyrian Assault
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177900 },	-- Xandria
 					["isDaily"] = true,
 					["g"] = {
@@ -194,7 +194,7 @@ _.Zones =
 					},
 				}),
 				q(63543, {	-- Necrolord Assault
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177072 },	-- Baroness Draka
 					["isDaily"] = true,
 					["coord"] = { 33.8, 54.8, THE_MAW },
@@ -390,7 +390,7 @@ _.Zones =
 				}),
 				--]]
 				q(63822, {	-- Venthyr Assault
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 178006 },	-- Prince Renathal
 					["isDaily"] = true,
 					["coord"] = { 29.9, 17.1, THE_MAW },

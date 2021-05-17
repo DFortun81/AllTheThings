@@ -4703,9 +4703,10 @@ _.HiddenQuestTriggers =
 		q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
 		q(64343),	-- looted 9 Relic Fragments from a mob around 51.6, 52.6
 		q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
+		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		
 		-- Treasures of Korthia achievement
-	--	q(),	-- Desmotaeron treasure - Helsworn Chest
+		q(64256),	-- Desmotaeron treasure - Helsworn Chest
 		q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
 		q(64244),	-- Korthia treasure - Anima Laden Egg
 		q(64241),	-- Korthia treasure - Dislodged Nest

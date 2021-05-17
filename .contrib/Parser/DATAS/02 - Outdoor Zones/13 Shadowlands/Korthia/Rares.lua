@@ -71,9 +71,11 @@ _.Zones =
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
+					["description"] = "Kill the |cFF883325Tormented Demolisher|r for a chance to spawn Kroke.",
 				--	["questID"] = ,	-- has not been added yet
 					["isDaily"] = true,
 					["coord"] = { 60.1, 34.0, KORTHIA },	-- TODO: unsure of original spawnpoint, it was engaged in combat when i killed it
+					["cr"] = 179029,	-- Tormented Demolisher
 					["g"] = {
 					--	crit(22, {	-- Kroke the Tormented
 						crit(24, {	-- Kroke the Tormented
@@ -146,6 +148,7 @@ _.Zones =
 						crit(21, {	-- Popo's Potion Patrol
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187176),	-- Vesper of Harmony
 					},
 				}),
 				n(177336, {	-- Zelnithop

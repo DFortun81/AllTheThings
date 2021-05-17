@@ -8,7 +8,7 @@ _.Zones =
 		m(KORTHIA, {
 			n(QUESTS, {
 				q(63755, {	-- A Matter of Urgency
-					["sourceQuests"] = { 63855 },	-- Ease of Passage
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
 					["coord"] = { 65.1, 23.1, KORTHIA },
 				}),
@@ -18,9 +18,9 @@ _.Zones =
 					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
 				q(64106, {	-- A Unified Effort
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants (technically available before turning in, but you have to do the quest and be ready to turn it in before Bolvar is in Korthia)
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 62.7, 24.8, KORTHIA },
+					["coord"] = { 63.0, 25.6, KORTHIA },
 				}),
 				q(63736, {	-- An Infusion of Anima
 					["sourceQuests"] = {
@@ -256,7 +256,6 @@ _.Zones =
 					["coord"] = { 63.0, 25.6, KORTHIA },
 				}),
 				q(63703, {	-- Vault of Secrets
-				--	this is a 'campaign' quest (special '!' icon) but i'm not sure if this is the correct SQ, needs verification.  showed up on 4/21 on PTR randomly so probably wasn't implemented prior to that
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 63.0, 24.8, KORTHIA },
