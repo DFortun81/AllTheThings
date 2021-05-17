@@ -8860,6 +8860,7 @@ end)();
 -- Quest Lib
 (function()
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local questFields = {
@@ -8900,11 +8901,10 @@ local questFields = {
 		end
 	end,
 	["hasIndicator"] = function(t)
-		return C_QuestLog_IsOnQuest(t.questID) or (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID));
+		return C_QuestLog_IsOnQuest(t.questID);
 	end,
 	["indicator"] = function(t)
-		return (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID) and "incomplete") or
-			(C_QuestLog_IsOnQuest(t.questID) and "star");
+		return C_QuestLog_ReadyForTurnIn(t.questID) and "star" or "star";	-- TODO: change to yellow/grey question mark
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
