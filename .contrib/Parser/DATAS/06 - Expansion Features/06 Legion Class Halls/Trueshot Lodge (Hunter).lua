@@ -418,6 +418,8 @@ _.ExpansionFeatures =
 					q(46337, {	-- Night of the Wilds
 						["sourceQuests"] = { 46336 },	-- A Golden Ticket
 						["classes"] = { HUNTER },
+						["provider"] = { "n", 119943 },	-- Golden Letter
+						["coord"] = { 42.9, 45.7, 739 },
 						["g"] = {
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},

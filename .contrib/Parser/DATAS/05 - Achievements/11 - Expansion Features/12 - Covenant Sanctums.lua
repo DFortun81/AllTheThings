@@ -139,6 +139,43 @@ _.Achievements =
 			}),
 			n(-920, {	-- Covenant: Necrolord
 				-- These are only available to Necrolord covenant members
+				ach(14833, {	-- Fashion Abomination
+					crit(1),	-- Chef Hat
+					crit(2),	-- Dapper Top Hat
+					crit(3),	-- Dundae's Hat
+					crit(4),	-- Egg Hat
+					crit(5),	-- Flower Crown
+					crit(6),	-- Halo of Purity
+					crit(7),	-- Holiday Hat
+					crit(8),	-- Magician's Hat
+					crit(9),	-- Pirate Hat
+					crit(10),	-- Red Eye Lens
+					crit(11),	-- Skull Fungus
+					crit(12),	-- Skull Protector
+					crit(13),	-- Unworthy Crown
+					crit(14),	-- Happiness Bird
+					crit(15),	-- Hitchhiker
+					crit(16),	-- Lovely Candle Display
+					crit(17),	-- Shoulder Sprouts
+					crit(18),	-- Sticky Cat
+					crit(19),	-- Trained Corpselice
+					crit(20),	-- Trustworthy Doll
+					crit(21),	-- Armor Plating
+					crit(22),	-- Back Mushrooms
+					crit(23),	-- Collector Kash's Pack
+					crit(24),	-- Engineering Pack
+					crit(25),	-- Plague Pack
+					crit(26),	-- Safe Fall Pack
+					crit(27),	-- Six-League Pack
+					crit(28),	-- Vestigial Wings
+					crit(29),	-- Barrel O' Fish
+					crit(30),	-- Underpowered Gravity Pack
+					crit(31),	-- Butterflies
+					crit(32),	-- Spare Weapon
+					crit(33),	-- Faction Flag
+					crit(34),	-- Operational Instructions
+					crit(35),	-- Outlaw Flag
+				}),
 				ach(14764),	-- The Great Luckydo
 				ach(14752, {	-- Things To Do When You're Dead
 					i(181820),	-- Armored Chosen Tauralus (MOUNT!)
