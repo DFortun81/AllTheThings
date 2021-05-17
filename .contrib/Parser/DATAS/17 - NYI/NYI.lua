@@ -22,7 +22,6 @@ _.NeverImplemented =
 	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		-- Added in 9.1. Remove me soon!
 		i(179531),	-- Faesworn Reaper
-		i(179515),	-- Faesworn Falchion
 		i(179583),	-- Faesworn Warbow
 
 
