@@ -345,7 +345,10 @@ _.Zones =
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
 				q(9130, {	-- Goods from Silvermoon City
 					["qg"] = 16187,	-- Quartermaster Lymel <General Goods>
-					["sourceQuest"] = 9327,	-- The Forsaken
+					["sourceQuests"] = {
+						9327,	-- The Forsaken [Blood Elf Only]
+						9329,	-- The Forsaken [Non-Blood Elf Only]
+					},
 					["coord"] = { 47.3, 29.3, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22549, 1 },	-- Quartermaster Lymel's Bill of Lading
@@ -655,7 +658,16 @@ _.Zones =
 				}),
 				q(9149, {	-- The Plagued Coast
 					["qg"] = 16198,	-- Apothecary Renzithen
-					["sourceQuest"] = 9138,	-- Suncrown Village
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
+					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
+					-- #else
+					-- TBC Beta, this became available after turning in The Forsaken.
+					["sourceQuests"] = {
+						9327,	-- The Forsaken [Blood Elf Only]
+						9329,	-- The Forsaken [Non-Blood Elf Only]
+					},
+					-- #endif
 					["coord"] = { 47.6, 34.8, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22579, 6 },	-- Plagued Murloc Spine
@@ -756,7 +768,16 @@ _.Zones =
 				}),
 				q(9152, {	-- Tomber's Supplies
 					["qg"] = 16224,	-- Rathis Tomber
-					["sourceQuest"] = 9138,	-- Suncrown Village
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
+					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
+					-- #else
+					-- TBC Beta, this became available after turning in The Forsaken.
+					["sourceQuests"] = {
+						9327,	-- The Forsaken [Blood Elf Only]
+						9329,	-- The Forsaken [Non-Blood Elf Only]
+					},
+					-- #endif
 					["coord"] = { 47.2, 28.5, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22583, 1 },	-- Rathis Tomber's Supplies
@@ -828,7 +849,10 @@ _.Zones =
 				}),
 				q(9156, {	-- Wanted: Knucklerot and Luzran
 					["provider"] = { "o", 181147 },	-- Wanted Poster
+					-- #if AFTER LEGION
+					-- Tested on TBC Beta, you can get this quest without the prereq. Need to test again on Retail.
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					-- #endif
 					["coord"] = { 48.3, 31.6, GHOSTLANDS },
 					["model"] = 192133,
 					["races"] = HORDE_ONLY,
