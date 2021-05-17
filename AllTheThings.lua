@@ -3440,7 +3440,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.progress = 0;
 			BuildGroups(group, group.g);
 			app.UpdateGroups(group, group.g);
-			if group.collectible then
+			if not group.collectibleAsCost and group.collectible then
 				group.total = group.total + 1;
 				if group.collected then
 					group.progress = group.progress + 1;
