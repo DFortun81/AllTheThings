@@ -162,6 +162,7 @@ _.ExpansionFeatures =
 						}),
 						q(51715, {	-- War of Shadows
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["cost"] = { { "i", 160982, 1, } },	-- Recruitment Orders
 							["coord"] = { 70.4, 27.1, 1161 },	-- Boralus
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51714 },	-- Mission from the King

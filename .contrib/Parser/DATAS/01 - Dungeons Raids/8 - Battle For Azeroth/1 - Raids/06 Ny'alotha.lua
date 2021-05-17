@@ -737,12 +737,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							q(58876, {	-- Lost Flight
-								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
-								["g"] = {
-									i(174862),	-- Uncorrupted Voidwing
-								},
-							}),
+							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
 						})),
 						ach(14148),	-- Peer Pressure
 						i(175062),	-- Malefic Core
@@ -989,12 +984,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							q(58876, {	-- Lost Flight
-								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
-								["g"] = {
-									i(174862),	-- Uncorrupted Voidwing
-								},
-							}),
+							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
 						})),
 						un(REMOVED_FROM_GAME, ach(14069)),	-- Cutting Edge: N'Zoth, the Corruptor
 						un(REMOVED_FROM_GAME, ach(14055, {	-- Mythic: N'Zoth, the Corruptor

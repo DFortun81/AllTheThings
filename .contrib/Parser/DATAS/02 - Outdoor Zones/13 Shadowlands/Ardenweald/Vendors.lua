@@ -27,7 +27,6 @@ _.Zones =
 							["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
 						}),
 						i(182168, {	-- Crane Soul
-							["questID"] = 62424,
 							["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
 						}),
 						i(183093, {	-- Technique: Contract: The Wild Hunt
@@ -103,12 +102,9 @@ _.Zones =
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182175, {	-- Moose Soul
-								["customCollect"] = { "SL_COV_NFA" },
-								["questID"] = 62430,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 							i(181304, {	-- Winterwoven Branches
-								["customCollect"] = { "SL_COV_NFA" },
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
 						}),

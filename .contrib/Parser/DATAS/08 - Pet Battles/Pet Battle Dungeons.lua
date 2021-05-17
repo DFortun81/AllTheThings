@@ -196,7 +196,7 @@ _.PetBattles =
 			}),
 			q(54184, {	-- Trouble in Gnomeregan (A)
 				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
-				["coord"] = { 50.3, 46.9, 1161 },
+				["coord"] = { 50.3, 46.9, 1161 },	-- Boralus
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,

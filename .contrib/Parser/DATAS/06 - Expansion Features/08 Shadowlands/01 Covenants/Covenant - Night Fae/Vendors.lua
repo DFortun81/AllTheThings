@@ -259,11 +259,9 @@ _.ExpansionFeatures =
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182181, {	-- Tiger Soul
-								["questID"] = 62437,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 							i(182166, {	-- Ursine Soul
-								["questID"] = 62423,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 						},
@@ -1407,14 +1405,12 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(182174, {	-- Leonine Soul
-								["questID"] = 62429,
 								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 5 },
 								},
 							}),
 							i(182182, {	-- Lupine Soul
-								["questID"] = 62438,
 								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 5 },

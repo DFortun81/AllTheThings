@@ -54,6 +54,7 @@ _.WorldEvents =
 				}),
 				q(55005, {	-- The Financial Participation Incentive
 					["provider"] = { "n", 150314 },	-- Ann Dennyson
+					["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
 					["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
 					["coord"] = { 69.7, 36.7, 500 },
 				}),
@@ -64,6 +65,7 @@ _.WorldEvents =
 				}),
 				q(55007, {	-- Lord Browne's Debts
 					["provider"] = { "n", 68365 },	-- Lord Winifred Browne <Prediction Incentives>
+					["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
 					["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 					["coord"] = { 63.3, 40.6, 500 },
 				}),
@@ -94,6 +96,7 @@ _.WorldEvents =
 				}),
 				q(55013, {	-- The Precious 13-Tooth Gogglegear
 					["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
+					["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
 					["sourceQuest"] = 55012,	-- Cause for Concern
 					["coord"] = { 44.4, 34.6, 500 },
 				}),
@@ -109,11 +112,17 @@ _.WorldEvents =
 				}),
 				q(55016, {	-- Undercover Agent: Silent Jussho
 					["provider"] = { "n", 150313 },	-- Commander Daalo
+					["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
 					["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
 					["coord"] = { 72.7, 68.4, 500 },
 				}),
 				q(55017, {	-- Flaunt It If You Got It
 					["provider"] = { "n", 70722 },	-- Grant Lazarby
+					["cost"] = {
+						{ "i", 98121, 1, },		-- Amberseed Bun
+						{ "i", 98117, 1, },		-- Moneybrau
+						{ "i", 143758, 1, },	-- Free Drinks Voucher
+					},
 					["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
 					["coord"] = { 33.1, 64.3, 500 },
 				}),
@@ -140,6 +149,7 @@ _.WorldEvents =
 				q(55022, {	-- Solving the Mystery
 					["u"] = REMOVED_FROM_GAME,	-- whole file is marked REMOVED_FROM_GAME but had to put this here to make it stop showing up in Netherstorm minilist
 					["provider"] = { "n", 150320 },	-- Bizmo
+					["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["coord"] = { 31.1, 66.5, NETHERSTORM },
 					["races"] = ALLIANCE_ONLY,
@@ -152,15 +162,10 @@ _.WorldEvents =
 			}),
 			n(VENDORS, {
 				n(70752,  {	-- Card Trader Leila
-					i(94178, {	-- Challenge Card: G.G. Engineering
-						["questID"] = 55013,	-- The Precious 13-Tooth Gogglegear
-					}),
-					i(164935, {	-- Challenge Card: Lord Sylysthrel
-						["questID"] = 55007,	-- Lord Browne's Debts
-					}),
+					i(94178),	-- Challenge Card: G.G. Engineering
+					i(164935),	-- Challenge Card: Lord Sylysthrel
 					i(164936, {	-- Mysterious Challenge Card
 						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
-						["questID"] = 55022,	-- Solving the Mystery
 						["g"] = {
 							n(145782, {	-- Xan-Sallish <Blade of the Watcher>
 								i(164940, {	-- Mysterious Satchel
@@ -173,7 +178,6 @@ _.WorldEvents =
 				n(70723,  {	-- Dame Jesepha
 					i(98121, {	-- Amberseed Bun
 						["description"] = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
-						["questID"] = 55017,	-- Flaunt It If You Got It
 					}),
 				}),
 				n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
@@ -229,7 +233,6 @@ _.WorldEvents =
 				n(70719,  { -- Mozzle Gearbeer
 					i(98117, {	-- Moneybrau
 						["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
-						["questID"] = 55017,	-- Flaunt It If You Got It
 					}),
 				}),
 				n(118898, { -- Ulaani
@@ -353,12 +356,10 @@ _.WorldEvents =
 					}),
 					i(143758, {	-- Free Drinks Voucher
 						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
-						["questID"] = 55017,	-- Flaunt It If You Got It
 						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
 					}),
 					i(143762, {	-- High Roller's Contract
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
-						["questID"] = 55005,	-- The Financial Participation Incentive
 						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
@@ -429,7 +430,6 @@ _.WorldEvents =
 					}),
 					i(143759, {	-- VIP Room Rental Form
 						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
-						["questID"] = 55016,	-- Undercover Agent: Silent Jussho
 						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
 					}),
 				}),

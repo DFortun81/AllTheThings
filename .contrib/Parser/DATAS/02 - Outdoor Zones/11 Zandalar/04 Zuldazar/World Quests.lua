@@ -108,11 +108,6 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(52251, {	-- Compromised Reconnaissance
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -285,10 +280,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50885, { 	-- Lei-zhi
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-					}),
-					q(51496, {	-- Loa Your Standards
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -472,10 +463,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(55304, {	-- The Cycle of Life
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-					}),
-					q(52169, {	-- The Matriarch
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),

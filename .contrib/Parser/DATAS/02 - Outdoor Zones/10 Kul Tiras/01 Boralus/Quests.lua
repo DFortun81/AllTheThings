@@ -798,16 +798,6 @@ _.Zones =
 					["coord"] = { 44.7, 62.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(56499, {	-- Storming the Battlefields
-					["provider"] = { "n", 143560 },	-- Marshal Gabriel
-					["coord"] = { 56.2, 25.7, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(168442),	-- Roiling Blood of the Vanquished
-						i(168920),	-- Azerite-Encrusted Timequartz
-						i(168578),	-- Sphere of Suppressed Force
-					},
-				}),
 				q(47962, {	-- Stormsong Valley
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["isBreadcrumb"] = true,
@@ -910,12 +900,6 @@ _.Zones =
 					["sourceQuests"] = { 50790 },	-- Hot Pursuit
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 130377 },	-- Courier Gerald
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54184, {	-- Trouble in Gnomeregan
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
-					["coord"] = { 50.19, 46.81},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52194, { 	-- What You May Regret

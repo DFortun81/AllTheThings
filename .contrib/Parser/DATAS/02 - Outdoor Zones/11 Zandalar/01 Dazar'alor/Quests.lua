@@ -795,12 +795,6 @@ _.Zones =
 					["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.",
 					["races"] = HORDE_ONLY,
 				}),
-				q(53207, {	-- The Warfront Looms
-				--	might be a breadcrumb?
-					["sourceQuests"] = { 52451 },	-- Uniting Zandalar
-					["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
-					["races"] = HORDE_ONLY,
-				}),
 				q(49965, {	-- The Warpack
 					["sourceQuests"] = {
 						49421,	-- Hunting Zul
@@ -837,12 +831,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120168 },	-- Chronicler To'kini
 				}),
-				q(53208, {	-- To the Front
-					["sourceQuests"] = { 53207 },	-- The Warfront Looms
-					["provider"] = { "n", 138949 },	-- Throk
-					["coord"] = { 52.9, 94.4, 1165 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(54042, {	-- Trouble in Darkshore
 					["provider"] = { "n", 149471 },	-- Dark Ranger Velonara
 					["coord"] = { 53.0, 94.3, 1165 },
@@ -872,11 +860,6 @@ _.Zones =
 					["coord"] = { 39.4, 13.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },	-- Dazar'alor
-				}),
-				q(53209, {	-- Warfront Contribution
-					["provider"] = { "n", 138949 },	-- Throk
-					["coord"] = { 53.0, 94.3, 1165 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji

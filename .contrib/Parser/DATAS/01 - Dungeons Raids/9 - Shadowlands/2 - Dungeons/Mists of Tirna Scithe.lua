@@ -40,10 +40,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2402, {	-- Mistcaller
 					["crs"] = { 164501 },	-- Mistcaller
 					["g"] = {
-						i(182185, {	-- Shrieker Soul
-							["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-							["questID"] = 62436,	-- Shrieker Soul
-						}),
+						i(182185),	-- Shrieker Soul
 						i(181462),	-- Coordinated Offensive
 						i(182754),	-- Duplicitous Havoc
 						i(181734),	-- Magi's Brand
@@ -112,10 +109,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(182185, {	-- Shrieker Soul
-								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-								["questID"] = 62436,	-- Shrieker Soul
-							}),
+							i(182185),	-- Shrieker Soul
 							i(181462),	-- Coordinated Offensive
 							i(182754),	-- Duplicitous Havoc
 							i(181734),	-- Magi's Brand
@@ -197,10 +191,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(182185, {	-- Shrieker Soul
-								["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
-								["questID"] = 62436,	-- Shrieker Soul
-							}),
+							i(182185),	-- Shrieker Soul
 							i(181462),	-- Coordinated Offensive
 							i(182754),	-- Duplicitous Havoc
 							i(181734),	-- Magi's Brand

@@ -3275,7 +3275,6 @@ _.HiddenQuestTriggers =
 		q(56485),	-- Killed Dusty Amalgamation
 		q(56730),	-- First kill of Dusty Amalgamation
 		q(56488),	-- Killed Herald of Salgos
-		q(55891),	-- Killed Herald of Salgos
 		q(56733),	-- First kill of Herald of Salgos
 		q(56484),	-- Killed Moghiea
 		q(56728),	-- killed Moghiea (first time)
@@ -4483,7 +4482,7 @@ _.HiddenQuestTriggers =
 		q(60611),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(60613),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(62460),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
-		q(61493),	-- when using "Building: Dredger Pool"
+		-- q(61493),	-- when using "Building: Dredger Pool"
 		q(59472),	-- when using "Contract: Traditional Theme"
 		q(59473),	-- when using "Contract: Traditional Theme"
 		q(61501),	-- when using "Staff: Ambassador"
@@ -4535,7 +4534,7 @@ _.HiddenQuestTriggers =
 		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
-		q(61494),	-- using Building: Guardhouse
+		-- q(61494),	-- using Building: Guardhouse
 		q(59436),	-- using Staff: Stage Crew
 		q(59433),	-- using Staff: Waiters
 		q(61457),	-- using Altar of Accomplishment

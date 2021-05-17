@@ -477,10 +477,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52181, {	-- Smoke and Shadow
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-					}),
 					q(54694, {	-- Stormcaller Morka (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,

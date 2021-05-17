@@ -241,7 +241,6 @@ _.Zones =
 						i(184753),	-- Tree-Scaler's Britches
 						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
 							i(182168, {	-- Crane Soul
-								["questID"] = 62424,
 								["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
 							}),
 							i(181309, {	-- Faewoven Pack

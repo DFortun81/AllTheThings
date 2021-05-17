@@ -488,10 +488,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52196, {	-- Sandswept Bones
-						["lvl"] = { 50 },
-						["isWorldQuest"] = true,
-					}),
 					q(51107, {	-- Scaleclaw Broodmother
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,

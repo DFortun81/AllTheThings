@@ -1014,9 +1014,6 @@ _.Zones =
 					["coord"] = { 60.9, 41.3, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(56107, {	-- One of the Hive
-					["u"] = NEVER_IMPLEMENTED, -- placeholder replaced with tracking quest
-				}),
 				q(52511, {	-- Opening the Way
 					["sourceQuests"] = { 52510 },	-- Shrine of the Storm: The Missing Ritual
 					["provider"] = { "n", 141223 },	-- Brother Pike

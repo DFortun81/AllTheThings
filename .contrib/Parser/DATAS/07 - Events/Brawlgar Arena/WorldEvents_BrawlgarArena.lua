@@ -39,6 +39,7 @@ _.WorldEvents =
 				q(53918, {	-- The Financial Participation Incentive
 					["sourceQuests"] = { 53917 },	-- Undercover Agent: Sharisanda
 					["provider"] = { "n", 145582 },	-- Sharisanda
+					["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 					["coord"] = { 48.8, 79.8, 503 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -104,12 +105,14 @@ _.WorldEvents =
 				q(53930, {	-- Undercover Agent: Nugg Lumbo
 					["sourceQuests"] = { 53929 },	-- Evidence Packet: Shadowmaster Skrizzik
 					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 					["coord"] = { 43.4, 97.0, 503 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53931, {	-- Flaunt It If You Got It
 					["sourceQuests"] = { 53930 },	-- Undercover Agent: Nugg Lumbo
 					["provider"] = { "n", 70716 },	-- Libbiara Blightrunner
+					["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 					["coord"] = { 31.2, 54.0, 503 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -323,12 +326,10 @@ _.WorldEvents =
 						}),
 						i(142311, {	-- Free Drinks Voucher
 							["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
-							["questID"] = 53931,	-- Flaunt It If You Got It
 							["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
 						}),
 						i(142318, {	-- High Roller's Contract
 							["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
-							["questID"] = 53918,	-- The Financial Participation Incentive
 							["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 						}),
 						i(142290, {	-- Rumble Card: Battle of the Brew
@@ -399,7 +400,6 @@ _.WorldEvents =
 						}),
 						i(143759, {	-- VIP Room Rental Form
 							["description"] = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
-							["questID"] = 53930,	-- Undercover Agent: Nugg Lumbo
 							["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
 						}),
 					},
