@@ -594,6 +594,7 @@ for key,value in pairs({
 		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
 		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
 		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
+		--TODO: [-15] = "Exploration",								-- Exploration
 		--TODO: [-16] = BATTLE_PET_BREED_QUALITY4,					-- Rares
 		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
 		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
