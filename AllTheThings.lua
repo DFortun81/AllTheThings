@@ -6764,14 +6764,14 @@ app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 app.OnUpdateReputationRequired = function(t)
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
-		t.visible = true;
-		return false;
-	else
-		local reputationID = t.minReputation[1];
-		t.visible = (select(3, GetFactionInfoByID(reputationID)) or 1) >= 4;
+	-- The only non-regular update processing this group should have
+	-- is if the User is not in Deubg/Account and should not see it due to the reputation requirement not being met
+	if not app.MODE_DEBUG and not app.MODE_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
+		t.visible = false;
 		return true;
 	end
+	-- Returns false since we need to just call the regular update group logic
+	return false;
 end
 end)();
 
