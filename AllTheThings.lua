@@ -8914,7 +8914,7 @@ local questFields = {
 		return C_QuestLog_IsOnQuest(t.questID);
 	end,
 	["indicator"] = function(t)
-		return C_QuestLog_ReadyForTurnIn(t.questID) and "star" or "star";	-- TODO: change to yellow/grey question mark
+		return C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin" or "Interface_Questin_grey";
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
