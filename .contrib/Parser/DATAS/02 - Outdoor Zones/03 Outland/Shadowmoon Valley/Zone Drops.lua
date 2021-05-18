@@ -71,6 +71,7 @@ _.Zones =
 				o(240622, {	-- Warden's Scroll Case
 					["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
 					["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
+					["timeline"] = { "added 6.1.0.19508" },
 					["modelScale"] = .5,
 					["model"] = 521201,
 					["g"] = {
