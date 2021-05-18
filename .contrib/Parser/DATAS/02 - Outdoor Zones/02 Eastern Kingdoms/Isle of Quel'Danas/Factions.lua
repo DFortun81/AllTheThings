@@ -3,15 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {
-		m(AZUREMYST_ISLE, {
-			m(AMMEN_VALE, {
-				filter(101, {	-- Pet Battle
-					p(464, {	-- Grey Moth
-						["crs"] = { 62050 },	-- Grey Moth
-					}),
-				}),
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
+		m(ISLE_OF_QUELDANAS, {
+			n(FACTIONS, {
+				faction(1077),	-- Shattered Sun Offensive
 			}),
 		}),
-	}),
+	})),
 };

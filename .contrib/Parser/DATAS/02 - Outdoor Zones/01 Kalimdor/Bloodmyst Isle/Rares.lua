@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLOODMYST_ISLE, {
 			n(RARES, {
 				n(22060, {	-- Fenissa the Assassin
@@ -17,7 +17,7 @@ _.Zones =
 						{ 37.8, 58.4, BLOODMYST_ISLE },	-- cryo-core, mid
 						{ 40.1, 61.2, BLOODMYST_ISLE },	-- cryo-core, right
 					},
-					["g"] = {
+					["groups"] = {
 						i(31264),	-- Silvermoon Robes
 						i(31263),	-- Silvermoon Tunic
 						i(31256),	-- Silvermoon Armor
@@ -25,5 +25,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

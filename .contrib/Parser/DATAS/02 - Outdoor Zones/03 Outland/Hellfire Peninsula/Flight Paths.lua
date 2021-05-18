@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(FLIGHT_PATHS, {
 				fp(102, {	-- Falcon Watch, Hellfire Peninsula
@@ -27,7 +26,7 @@ _.Zones =
 					["coord"] = { 54.6, 62.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if ANY CLASSIC
+				-- #if ANYCLASSIC
 				fp(149, {	-- Shatter Point, Hellfire Peninsula
 					["cr"] = 20234,	-- Runetog Wildhammer <Gryphon Master>
 					["coord"] = { 78.4, 34.9, HELLFIRE_PENINSULA },
@@ -51,5 +50,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

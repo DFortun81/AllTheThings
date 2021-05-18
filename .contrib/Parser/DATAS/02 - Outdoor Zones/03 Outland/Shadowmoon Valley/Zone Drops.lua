@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			n(ZONEDROPS, {
 				i(34689, {	-- Design: Chaotic Skyfire Diamond
@@ -80,5 +79,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1921,7 +1921,7 @@ _.HiddenQuestTriggers =
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
 		}),
-		q(40603),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
+		q(43775),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
 		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -4167,6 +4167,7 @@ _.HiddenQuestTriggers =
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
 		q(62758),	-- triggered after crafting Dundae's Hat at Abominable Stitching Table
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
+		q(62469),	-- triggered after crafting Engineering Pack at Abominable Stitching Table
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
 		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table

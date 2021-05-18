@@ -1,16 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
-					["g"] = {
+					["groups"] = {
 						crit(31, {	-- Ras'an
 							["coord"] = { 17.2, 50.6, ZANGARMARSH },
 							["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
@@ -98,5 +98,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

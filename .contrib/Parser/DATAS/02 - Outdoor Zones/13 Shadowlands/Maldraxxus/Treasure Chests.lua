@@ -87,6 +87,13 @@ _.Zones =
 						i(183831),	-- Safe Fall Kit
 					},
 				}),
+				o(364483, {	-- Empty Nightcap Cask
+					["description"] = "Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
+					["coord"] = { 39.3, 74.7, MALDRAXXUS },
+					["g"] = {
+						i(183752),	-- Empty Nightcap Cask
+					},
+				}),
 				spell(343124, {	-- Giant Cache of Epic Treasure
 					["questID"] = 62602,
 					["coord"] = { 41.4, 19.7, MALDRAXXUS },

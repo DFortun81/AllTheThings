@@ -1,12 +1,357 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, {
 			n(QUESTS, {
+				-- TODO: https://wowwiki-archive.fandom.com/wiki/Wind_Trader_Zhareem
+				q(11369, {	-- WANTED: A Black Stalker Egg
+					["qg"] = 24369,	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
+					["isDaily"] = true,
+					["lvl"] = 70,
+					["cost"] = {
+						{ "i", 33826, 1 },	-- Black Stalker Egg
+					},
+				}),
+				q(10552, {	-- Allegiance to the Scryers
+					["sourceQuest"] = 10211,	-- City of Light
+					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
+					["provider"] = { "n", 18166 },	-- Archmage Khadgar
+				}),
+				q(10553, {	-- Voren'thal the Seer
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
+					["provider"] = { "n", 18166 },	-- Archmage Khadgar
+				}),
+				q(10412, {	-- Firewing Signets
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10414, {	-- Single Firewing Signet
+					["description"] = "Gives reputation through Honored.",
+					["sourceQuest"] = 10412,	-- Firewing Signets
+					["repeatable"] = true,
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10415, {	-- More Firewing Signets
+					["description"] = "Gives reputation through Honored.",
+					["sourceQuest"] = 10412,	-- Firewing Signets
+					["repeatable"] = true,
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10656, {	-- Sunfury Signets
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10659, {	-- Single Sunfury Signet
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuest"] = 10656,	-- Sunfury Signets
+					["repeatable"] = true,
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10658, {	-- More Sunfury Signets
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuest"] = 10656,	-- Sunfury Signets
+					["repeatable"] = true,
+					["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+				}),
+				q(10416, {	-- Synthesis of Power
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+				}),
+				q(10419, {	-- Arcane Tomes
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuest"] = 10416,	-- Synthesis of Power
+					["repeatable"] = true,
+					["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
+					["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+				}),
+				q(11039, {	-- Report to Spymaster Thalodien
+					["isBreadcrumb"] = true,	-- for Manaforge B'naar
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["coords"] = {
+						{ 44.6, 76.2, SHATTRATH_CITY },
+						{ 60.6, 63.2, SHATTRATH_CITY },
+					},
+					["providers"] = {
+						{ "n", 23273 }, 	-- Arcanist Raestan
+						{ "n", 23272 },	-- Arcanist Savan
+					},
+				}),
+				q(10024, {	-- Voren'thal's Visions
+					["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+					["repeatable"] = true,
+					["provider"] = { "n", 18596 },	-- Arcanist Adyria
+				}),
+				q(10025, {	-- More Basilisk Eyes
+					["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
+					["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+					["repeatable"] = true,
+					["provider"] = { "n", 18596 },	-- Arcanist Adyria
+				}),
+				q(11482, {	-- Duty Calls
+					["minReputation"] = { 934, FRIENDLY },
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 18594 },	-- Dathris Sunstriker
+					["coord"] = { 54.6, 80.8, SHATTRATH_CITY },
+					["lvl"] = 70,
+				}),
+				q(10551, {	-- Allegiance to the Aldor
+					["sourceQuest"] = 10211,	-- City of Light
+					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
+					["provider"] = { "n", 18166 },	-- Archmage Khadgar
+				}),
+				q(10554, {	-- Ishanah
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
+					["provider"] = { "n", 18166 },	-- Archmage Khadgar
+				}),
+				q(10021, {	-- Restoring the Light
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
+					["provider"] = { "n", 18538 },	-- Ishanah
+				}),
+				q(10325, {	-- Marks of Kil'jaeden
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10327, {	-- Single Mark of Kil'jaeden
+					["description"] = "Gives reputation through Honored.",
+					["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+					["repeatable"] = true,
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10326, {	-- More Marks of Kil'jaeden
+					["description"] = "Gives reputation through Honored.",
+					["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+					["repeatable"] = true,
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10653, {	-- Marks of Sargeras
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10655, {	-- Single Mark of Sargeras
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+					["repeatable"] = true,
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10654, {	-- More Marks of Sargeras
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+					["repeatable"] = true,
+					["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(10420, {	-- A Cleansing Light
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
+					["provider"] = { "n", 18538 },	-- Ishanah
+				}),
+				q(10421, {	-- Fel Armaments
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuest"] = 10420,	-- A Cleansing Light
+					["repeatable"] = true,
+					["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
+					["provider"] = { "n", 18538 },	-- Ishanah
+				}),
+				q(10020, {	-- A Cure for Zahlia
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["provider"] = { "n", 18597 },	-- Sha'nir
+				}),
+				q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+				}),
+				q(11038, {	-- Assist Exarch Orelis
+					["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
+					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["coords"] = {
+						{ 35.0, 32.6, SHATTRATH_CITY },
+						{ 47.4, 26.4, SHATTRATH_CITY },
+					},
+					["providers"] = {
+						{ "n", 23271 },	-- Vindicator Kaan
+						{ "n", 23270 },	-- Vindicator Aeus
+					},
+				}),
+				q(10017, {	-- Strained Supplies
+					["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+					["repeatable"] = true,
+					["provider"] = { "n", 18597 },	-- Sha'nir
+				}),
+				q(10019, {	-- More Venom Sacs
+					["sourceQuests"] = { 10017 },	-- Strained Supplies
+					["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+					["repeatable"] = true,
+					["provider"] = { "n", 18597 },	-- Sha'nir
+				}),
+				q(11877, {	-- Sunfury Attack Plans
+					["provider"] = { "n", 25140 },	-- Lord Torvos
+					["repeatable"] = true,
+				}),
+				q(11880, {	-- The Multiphase Survey
+					["provider"] = { "n", 19475 },	-- Harbinger Haronem
+					["repeatable"] = true,
+				}),
+				q(11875, {	-- Gaining the Advantage
+					["provider"] = { "n", 19202 },	-- Emissary Mordin
+					["repeatable"] = true,
+					["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
+				}),
+				q(11513, {	-- Intercepting the Mana Cells
+					["sourceQuests"] = { 11534 },	-- Report to Nasuun
+					["provider"] = { "n", 24932 },	-- Exarch Nasuun
+					["isDaily"] = true,
+					["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(11514, {	-- Maintaining the Sunwell Portal
+					["provider"] = { "n", 24932 },	-- Exarch Nasuun
+					["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+					["repeatable"] = true,
+				}),
+				q(11096, {	-- Threat from Above
+					["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
+					["provider"] = { "n", 23449 },	-- Yuula
+				}),
+				q(11098, {	-- To Skettis!
+					["sourceQuest"] = 11096,	-- Threat From Above
+					["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
+					["provider"] = { "n", 23449 },	-- Yuula
+				}),
+				q(10984, {	-- Speak with the Ogre
+					["isBreadcrumb"] = true,
+					["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
+					["provider"] = { "n", 22497 },	-- V'eru
+				}),
+				q(10983, {	-- Mog'dorg the Wizened
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 10984,	-- Speak with the Ogre
+					["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
+					["provider"] = { "n", 22940 },	-- Grok
+				}),
+				q(10917,  {  -- The Outcast's Plight
+					["provider"] = { "n", 22429 },	-- Vekax
+					["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
+					["g"] = {
+						i(31800,  {  -- Outcasts Cache
+							i(28495),	-- Windwalker's Sash
+							i(28496),	-- Talonite's Belt
+							i(28497),	-- Dreadhawk's Girdle
+							i(28498),	-- Ravenguard's Baldric
+							i(28491),	-- Windwalker's Footwraps
+							i(28493),	-- Dreadhawk's Schynbald
+							i(28492),	-- Talonite's Boots
+							i(28494),	-- Ravenguard's Greaves
+						}),
+					},
+				}),
+				q(10918,  {  -- More Feathers
+					["maxReputation"] = { 1011, HONORED },
+					["sourceQuests"] = { 10917 },	-- The Outcast's Plight
+					["repeatable"] = true,
+					["provider"] = { "n", 22429 },	-- Vekax
+					["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
+					["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
+					["g"] = {
+						i(31800,  {  -- Outcasts Cache
+							i(28495),	-- Windwalker's Sash
+							i(28496),	-- Talonite's Belt
+							i(28497),	-- Dreadhawk's Girdle
+							i(28498),	-- Ravenguard's Baldric
+							i(28491),	-- Windwalker's Footwraps
+							i(28493),	-- Dreadhawk's Schynbald
+							i(28492),	-- Talonite's Boots
+							i(28494),	-- Ravenguard's Greaves
+						}),
+					},
+				}),
+				q(57581, {	-- Plucking Plumes
+					["minReputation"] = { 1011, HONORED },
+					["repeatable"] = true,
+					["provider"] = { "n", 22429 },	-- Vekax
+					["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
+					["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
+					["g"] = {
+						i(31800,  {  -- Outcasts Cache
+							i(28495),	-- Windwalker's Sash
+							i(28496),	-- Talonite's Belt
+							i(28497),	-- Dreadhawk's Girdle
+							i(28498),	-- Ravenguard's Baldric
+							i(28491),	-- Windwalker's Footwraps
+							i(28493),	-- Dreadhawk's Schynbald
+							i(28492),	-- Talonite's Boots
+							i(28494),	-- Ravenguard's Greaves
+						}),
+					},
+				}),
+				q(11109, {	-- Jorus the Cobalt Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+					},
+				}),
+				q(11110, {	-- Malfas the Purple Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32860),	-- Reins of the Purple Netherwing Drake Mount
+					},
+				}),
+				q(11111, {	-- Onyxien the Onyx Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+					},
+				}),
+				q(11112, {	-- Suraku the Azure Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32858),	-- Reins of the Azure Netherwing Drake Mount
+					},
+				}),
+				q(11113, {	-- Voranaku the Violet Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32862),	-- Reins of the Violet Netherwing Drake Mount
+					},
+				}),
+				q(11114, {	-- Zoya the Veridian Netherwing Drake
+					-- ["provider"] = { "n",  },	-- 
+					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
+					-- ["coord"] = { , SHATTRATH_CITY },
+					["g"] = {
+						i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+					},
+				}),
 				q(12753, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { DWARF },
@@ -321,5 +666,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

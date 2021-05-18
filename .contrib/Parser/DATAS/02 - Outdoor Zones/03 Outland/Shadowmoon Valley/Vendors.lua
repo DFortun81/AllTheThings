@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
@@ -99,7 +98,6 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 					},
-
 				}),
 				n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
 					["coord"] = { 29.2, 31.0, SHADOWMOON_VALLEY },
@@ -145,5 +143,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

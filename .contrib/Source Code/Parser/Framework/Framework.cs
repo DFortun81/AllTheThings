@@ -706,8 +706,8 @@ namespace ATT
         /// <param name="data"></param>
         private static void TryFindRecipeID(Dictionary<string, object> data)
         {
-            // don't apply a recipeID to data which is not an item or is a Toy
-            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID"))
+            // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
+            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID") || data.ContainsKey("questID"))
                 return;
 
             // all recipes require a skill

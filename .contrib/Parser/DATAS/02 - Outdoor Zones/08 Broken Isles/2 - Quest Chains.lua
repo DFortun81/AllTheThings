@@ -106,9 +106,25 @@ _.Zones =
 							["provider"] = { "n", 101082 },	-- Lothrius Mooncaller
 							["coord"] = { 37.9, 47.4, 680 },
 						}),
-						q(40678),	-- Twisted Power
-						q(43526),	-- A True Test
-						q(40603),	-- Seeking the Valkyra
+						q(40678, {	-- Twisted Power
+							["sourceQuests"] = { 
+								43524,	-- Court of Stars: Literary Perfection
+								40675,	-- The Arcway: Rite of the Captain
+								43525,	-- Vault of the Wardens: Borrowing Without Asking
+							},
+							["provider"] = { "n", 101080 },	-- Syrana Starweaver
+							["coord"] = { 37.9, 47.3, 680 },
+						}),
+						q(43526, {	-- A True Test
+							["sourceQuests"] = { 40678 },	-- Twisted Power
+							["provider"] = { "n", 101080 },	-- Syrana Starweaver
+							["coord"] = { 37.9, 47.3, 680 },
+						}),
+						q(40603, {	-- Seeking the Valkyra
+							["sourceQuests"] = { 43526 },	-- A True Test
+							["provider"] = { "n", 111826 },	-- Archmage Kalec
+							["coord"] = { 37.8, 47.4, 680 },
+						}),
 						q(40608, {	-- The Mark
 							["sourceQuest"] = 40603,	-- Seeking the Valkyra
 							["provider"] = { "n", 100738 },	-- Ashildir

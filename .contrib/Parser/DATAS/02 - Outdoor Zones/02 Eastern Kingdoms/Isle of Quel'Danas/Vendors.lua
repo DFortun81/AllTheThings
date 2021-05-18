@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		m(ISLE_OF_QUELDANAS, {
 			n(VENDORS, {
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
@@ -1492,5 +1491,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

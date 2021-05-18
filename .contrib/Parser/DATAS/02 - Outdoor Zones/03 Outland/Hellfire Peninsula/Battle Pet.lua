@@ -4,7 +4,7 @@
 -- #if AFTER MOP
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
@@ -20,6 +20,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
 -- #endif

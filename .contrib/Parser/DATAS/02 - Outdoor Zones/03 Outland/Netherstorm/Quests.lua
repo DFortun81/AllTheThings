@@ -1,308 +1,290 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
 			n(QUESTS, {
-				faction(932, {	-- The Aldor
-					["collectible"] = false,	-- Collectible in Shattrath
-					["crs"] = { 19321 },	-- Quartermaster Endarin <Aldor Quartermaster>
+				q(10197, {	-- A Convincing Disguise
+					["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+					["coord"] = { 48.2, 86.6, NETHERSTORM },
+					["sourceQuest"] = 10652,	-- Behind Enemy Lines
+				}),
+				q(10202, {	-- A Defector
+					["provider"] = { "n", 19469 },	-- Magistrix Larynna
+					["coord"] = { 32.1, 64.0, NETHERSTORM },
+					["sourceQuest"] = 10341,	-- Kick Them While They're Down
+				}),
+				q(10508, {	-- A Gift for Voren'thal
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuest"] = 10432,	-- Damning Evidence
+					-- May also require Shutting Down Manaforge Ara.
+				}),
+				q(10264, {	-- Assisting the Consortium (The Scryers)
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 10186 },	-- You're Hired!
+				}),
+				q(10652, {	-- Behind Enemy Lines
+					["provider"] = { "n", 20162 },	-- Veronia
+					["coord"] = { 33.8, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10194,	-- Stealth Flight
+				}),
+				q(10204, {	-- Bloodgem Crystals
+					["provider"] = { "n", 19469 },	-- Magistrix Larynna
+					["coord"] = { 32.1, 64.0, NETHERSTORM },
+					["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+				}),
+				q(10509, {	-- Bound for Glory
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuest"] = 10508,	-- A Gift for Voren'thal
+				}),
+				q(10432, {	-- Damning Evidence
+					["provider"] = { "n", 20920 },	-- Magister Theledorn
+					["coord"] = { 26.2, 41.6, NETHERSTORM },
+					["sourceQuest"] = 10202,	-- A Defector
+				}),
+				q(10193, {	-- High Value Targets
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+				}),
+				q(10198, {	-- Information Gathering
+					["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+					["coord"] = { 48.2, 86.6, NETHERSTORM },
+					["sourceQuest"] = 10197,	-- A Convincing Disguise
 					["g"] = {
-						q(10380, {	-- A Dark Pact
-							["provider"] = { "n", 20780 },	-- Kaylaan
-							["coord"] = { 34.8, 38.3, NETHERSTORM },
-							["sourceQuest"] = 10431,	-- Outside Assistance
-						}),
-						q(10381, {	-- Aldor No More
-							["provider"] = { "n", 20780 },	-- Kaylaan
-							["coord"] = { 34.8, 38.3, NETHERSTORM },
-							["sourceQuest"] = 10380,	-- A Dark Pact
-							["g"] = {
-								i(30382),	-- Aldor Ceremonial Wraps
-								i(30380),	-- Girdle of the Lost Vindicator
-								i(30381),	-- Kaylaan's Spaulders
-								i(30379),	-- Vindicator's Light Vest
-							},
-						}),
-						q(10263, {	-- Assisting the Consortium (The Aldor)
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["isBreadcrumb"] = true,
-							["sourceQuests"] = { 10186 },	-- You're Hired!
-						}),
-						q(10246, {	-- Attack on Manaforge Coruu
-							["provider"] = { "n", 19466 },	-- Exarch Orelis
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
-						}),
-						q(10245, {	-- B'naar Console Transcription
-							["provider"] = { "o", 183770 },	-- B'naar Control Console
-							["coord"] = { 23.2, 68.2, NETHERSTORM },
-							["sourceQuest"] = 10243,	-- Naaru Technology
-						}),
-						q(10409, {	-- Deathblow to the Legion
-							["provider"] = { "n", 18538 },	-- Ishanah
-							["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
-							["sourceQuest"] = 10410,	-- Ishanah's Help
-							["g"] = {
-								i(30369),	-- Cleansed Fel Pauldrons
-								i(30370),	-- Gauntlets of the Redeemed Vindicator
-								i(30371),	-- Lightwarden's Girdle
-								i(30860),	-- Kaylaan's Signet
-								i(30368),	-- Slippers of the High Priestess
-							},
-						}),
-						q(10241, {	-- Distraction at Manaforge B'naar
-							["provider"] = { "n", 19466 },	-- Exarch Orelis
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuests"] = {
-								10551,	-- Allegiance to the Aldor
-								11038,	-- Assist Exarch Orelis
-							},
-						}),
-						q(10410, {	-- Ishanah's Help
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10407,	-- Socrethar's Shadow
-						}),
-						q(10313, {	-- Measuring Warp Energies
-							["provider"] = { "n", 19466 },	-- Exarch Orelis
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
-							["g"] = {
-								i(30362),	-- Energized Helm
-								i(30364),	-- Resonating Axe
-								i(30363),	-- Warp-Shielded Hauberk
-								i(30521),	-- Warpweaver's Gloves
-							},
-						}),
-						q(10243, {	-- Naaru Technology
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
-						}),
-						q(10431, {	-- Outside Assistance
-							["provider"] = { "n", 19466 },	-- Exarch Orelis
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10328,	-- Sunfury Briefings
-						}),
-						q(10323, {	-- Shutting Down Manaforge Ara
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
-							["g"] = {
-								i(30377),	-- Karja's Medallion
-								i(30365),	-- Overseer's Signet
-							},
-						}),
-						q(10299, {	-- Shutting Down Manaforge B'naar
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10245,	-- B'naar Console Transcription
-						}),
-						q(10321, {	-- Shutting Down Manaforge Coruu
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
-						}),
-						q(10322, {	-- Shutting Down Manaforge Duro
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
-						}),
-						q(10407, {	-- Socrethar's Shadow
-							["provider"] = { "n", 19467 },	-- Anchorite Karja
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuests"] = {
-								10323,	-- Shutting Down Manaforge Ara
-								10381,	-- Aldor No More
-							},
-						}),
-						q(10328, {	-- Sunfury Briefings
-							["provider"] = { "n", 19466 },	-- Exarch Orelis
-							["coord"] = { 32.0, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
-						}),
+						i(30383),	-- Belt of the Sage
+						i(30386),	-- Bloodguard's Greaves
+						i(30384),	-- Brightdawn Bracers
+						i(30397),	-- Spymaster's Crossbow
 					},
 				}),
-				faction(933, {	-- The Consortium
-					["collectible"] = false,	-- Collectible in Nagrand
+				q(10341, {	-- Kick Them While They're Down
+					["provider"] = { "n", 19469 },	-- Magistrix Larynna
+					["coord"] = { 32.1, 64.0, NETHERSTORM },
+					["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
 					["g"] = {
-						q(10970, {	-- A Mission of Mercy
-							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["coord"] = { 59.5, 32.4, NETHERSTORM },
-							["minReputation"] = { 933, HONORED },
-						}),
-						q(10973, {	-- A Thousand Worlds
-							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["minReputation"] = { 933, REVERED },
-						}),
-						q(10308, {	-- Another Heap of Ethereals
-							["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
-							["coord"] = { 32.4, 64.2, NETHERSTORM },
-							["repeatable"] = true,
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuest"] = 10262,	-- A Heap of Ethereals
-						}),
-						q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["sourceQuest"] = 10971,	-- Ethereum Secrets
-							["coord"] = { 59.5, 32.4, NETHERSTORM },
-							["description"] = "Gives reputation through Exalted.",
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 31957, 1 },	-- Ethereum Prisoner I.D. Tag
-							},
-						}),
-						q(10971, {	-- Ethereum Secrets
-							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["coord"] = { 59.5, 32.4, NETHERSTORM },
-							["sourceQuest"] = 10970,	-- A Mission of Mercy
-						}),
-						q(10969, {	-- Seek Out Ameer
-							["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
-							["coord"] = { 32.4, 64.2, NETHERSTORM },
-							["minReputation"] = { 933, HONORED },
-							["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
-						}),
-						q(10974, {	-- Stasis Chambers of Bash'ir
-							["provider"] = { "n", 20448 },	-- Commander Ameer
-							["coord"] = { 59.5, 32.4, NETHERSTORM },
-							["sourceQuest"] = 10973,	-- A Thousand Worlds
-						}),
+						i(30522),	-- Conjurer's Staff
+						i(30396),	-- Jeweled Halberd
+						i(30394),	-- Sunfury Blade
+						i(30395),	-- Warp-Master's Maul
 					},
 				}),
-				faction(934, {	-- The Scryers
-					["collectible"] = false,	-- Collectible in Shattrath
-					["crs"] = { 19331 },	-- Quartermaster Enuril <Scryer Quartermaster>
-					["g"] = {
-						q(10197, {	-- A Convincing Disguise
-							["provider"] = { "n", 19840 },	-- Caledis Brightdawn
-							["coord"] = { 48.2, 86.6, NETHERSTORM },
-							["sourceQuest"] = 10652,	-- Behind Enemy Lines
-						}),
-						q(10202, {	-- A Defector
-							["provider"] = { "n", 19469 },	-- Magistrix Larynna
-							["coord"] = { 32.1, 64.0, NETHERSTORM },
-							["sourceQuest"] = 10341,	-- Kick Them While They're Down
-						}),
-						q(10508, {	-- A Gift for Voren'thal
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuest"] = 10432,	-- Damning Evidence
-							-- May also require Shutting Down Manaforge Ara.
-						}),
-						q(10264, {	-- Assisting the Consortium (The Scryers)
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["isBreadcrumb"] = true,
-							["sourceQuests"] = { 10186 },	-- You're Hired!
-						}),
-						q(10652, {	-- Behind Enemy Lines
-							["provider"] = { "n", 20162 },	-- Veronia
-							["coord"] = { 33.8, 64.2, NETHERSTORM },
-							["sourceQuest"] = 10194,	-- Stealth Flight
-						}),
-						q(10204, {	-- Bloodgem Crystals
-							["provider"] = { "n", 19469 },	-- Magistrix Larynna
-							["coord"] = { 32.1, 64.0, NETHERSTORM },
-							["sourceQuests"] = { 10189 },	-- Manaforge B'naar
-						}),
-						q(10509, {	-- Bound for Glory
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuest"] = 10508,	-- A Gift for Voren'thal
-						}),
-						q(10432, {	-- Damning Evidence
-							["provider"] = { "n", 20920 },	-- Magister Theledorn
-							["coord"] = { 26.2, 41.6, NETHERSTORM },
-							["sourceQuest"] = 10202,	-- A Defector
-						}),
-						q(10193, {	-- High Value Targets
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuests"] = { 10189 },	-- Manaforge B'naar
-						}),
-						q(10198, {	-- Information Gathering
-							["provider"] = { "n", 19840 },	-- Caledis Brightdawn
-							["coord"] = { 48.2, 86.6, NETHERSTORM },
-							["sourceQuest"] = 10197,	-- A Convincing Disguise
-							["g"] = {
-								i(30383),	-- Belt of the Sage
-								i(30386),	-- Bloodguard's Greaves
-								i(30384),	-- Brightdawn Bracers
-								i(30397),	-- Spymaster's Crossbow
-							},
-						}),
-						q(10341, {	-- Kick Them While They're Down
-							["provider"] = { "n", 19469 },	-- Magistrix Larynna
-							["coord"] = { 32.1, 64.0, NETHERSTORM },
-							["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
-							["g"] = {
-								i(30522),	-- Conjurer's Staff
-								i(30396),	-- Jeweled Halberd
-								i(30394),	-- Sunfury Blade
-								i(30395),	-- Warp-Master's Maul
-							},
-						}),
-						q(10189, {	-- Manaforge B'naar
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuests"] = {
-								10552,	-- Allegiance to the Scryers
-								11039,	-- Report to Spymaster Thalodien
-							},
-						}),
-						q(10200, {	-- Return to Thalodien
-							["provider"] = { "n", 19840 },	-- Caledis Brightdawn
-							["coord"] = { 48.2, 86.6, NETHERSTORM },
-							["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
-						}),
-						q(10329, {	-- Shutting Down Manaforge B'naar
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuest"] = 10193,	-- High Value Targets
-						}),
-						q(10330, {	-- Shutting Down Manaforge Coruu
-							["provider"] = { "n", 19840 },	-- Caledis Brightdawn
-							["coord"] = { 48.2, 86.6, NETHERSTORM },
-							["sourceQuest"] = 10198,	-- Information Gathering
-						}),
-						q(10338, {	-- Shutting Down Manaforge Duro
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuest"] = 10200,	-- Return to Thalodien
-						}),
-						q(10194, {	-- Stealth Flight
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.1, NETHERSTORM },
-							["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
-						}),
-						q(10365, {	-- Shutting Down Manaforge Ara
-							["provider"] = { "n", 19468 },	-- Spymaster Thalodien
-							["coord"] = { 32.0, 64.0, NETHERSTORM },
-							["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
-							["g"] = {
-								i(30366),	-- Manastorm Band
-								i(30378),	-- Thalodien's Charm
-							},
-						}),
-						q(10507, {	-- Turning Point
-							["provider"] = { "n", 18530 },	-- Voren'thal the Seer
-							["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
-							["sourceQuest"] = 10509,	-- Bound for Glory
-							["g"] = {
-								i(30375),	-- Gauntlets of the Vanquisher
-								i(30374),	-- Greaves of Spellpower
-								i(30373),	-- Netherfused Pauldrons
-								i(30372),	-- Socrethar's Girdle
-								i(30859),	-- Wand of the Seer
-							},
-						}),
+				q(10189, {	-- Manaforge B'naar
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuests"] = {
+						10552,	-- Allegiance to the Scryers
+						11039,	-- Report to Spymaster Thalodien
 					},
+				}),
+				q(10200, {	-- Return to Thalodien
+					["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+					["coord"] = { 48.2, 86.6, NETHERSTORM },
+					["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
+				}),
+				q(10329, {	-- Shutting Down Manaforge B'naar
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuest"] = 10193,	-- High Value Targets
+				}),
+				q(10330, {	-- Shutting Down Manaforge Coruu
+					["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+					["coord"] = { 48.2, 86.6, NETHERSTORM },
+					["sourceQuest"] = 10198,	-- Information Gathering
+				}),
+				q(10338, {	-- Shutting Down Manaforge Duro
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuest"] = 10200,	-- Return to Thalodien
+				}),
+				q(10194, {	-- Stealth Flight
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.1, NETHERSTORM },
+					["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
+				}),
+				q(10365, {	-- Shutting Down Manaforge Ara
+					["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+					["coord"] = { 32.0, 64.0, NETHERSTORM },
+					["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
+					["g"] = {
+						i(30366),	-- Manastorm Band
+						i(30378),	-- Thalodien's Charm
+					},
+				}),
+				q(10507, {	-- Turning Point
+					["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+					["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
+					["sourceQuest"] = 10509,	-- Bound for Glory
+					["g"] = {
+						i(30375),	-- Gauntlets of the Vanquisher
+						i(30374),	-- Greaves of Spellpower
+						i(30373),	-- Netherfused Pauldrons
+						i(30372),	-- Socrethar's Girdle
+						i(30859),	-- Wand of the Seer
+					},
+				}),
+				q(10970, {	-- A Mission of Mercy
+					["provider"] = { "n", 20448 },	-- Commander Ameer
+					["coord"] = { 59.5, 32.4, NETHERSTORM },
+					["minReputation"] = { 933, HONORED },
+				}),
+				q(10973, {	-- A Thousand Worlds
+					["provider"] = { "n", 20448 },	-- Commander Ameer
+					["minReputation"] = { 933, REVERED },
+				}),
+				q(10308, {	-- Another Heap of Ethereals
+					["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
+					["coord"] = { 32.4, 64.2, NETHERSTORM },
+					["repeatable"] = true,
+					["description"] = "Gives reputation through Exalted.",
+					["sourceQuest"] = 10262,	-- A Heap of Ethereals
+				}),
+				q(10972, {	-- Ethereum Prisoner I.D. Catalogue
+					["provider"] = { "n", 20448 },	-- Commander Ameer
+					["sourceQuest"] = 10971,	-- Ethereum Secrets
+					["coord"] = { 59.5, 32.4, NETHERSTORM },
+					["description"] = "Gives reputation through Exalted.",
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 31957, 1 },	-- Ethereum Prisoner I.D. Tag
+					},
+				}),
+				q(10971, {	-- Ethereum Secrets
+					["provider"] = { "n", 20448 },	-- Commander Ameer
+					["coord"] = { 59.5, 32.4, NETHERSTORM },
+					["sourceQuest"] = 10970,	-- A Mission of Mercy
+				}),
+				q(10969, {	-- Seek Out Ameer
+					["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
+					["coord"] = { 32.4, 64.2, NETHERSTORM },
+					["minReputation"] = { 933, HONORED },
+					["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
+				}),
+				q(10974, {	-- Stasis Chambers of Bash'ir
+					["provider"] = { "n", 20448 },	-- Commander Ameer
+					["coord"] = { 59.5, 32.4, NETHERSTORM },
+					["sourceQuest"] = 10973,	-- A Thousand Worlds
+				}),
+				q(10380, {	-- A Dark Pact
+					["provider"] = { "n", 20780 },	-- Kaylaan
+					["coord"] = { 34.8, 38.3, NETHERSTORM },
+					["sourceQuest"] = 10431,	-- Outside Assistance
+				}),
+				q(10381, {	-- Aldor No More
+					["provider"] = { "n", 20780 },	-- Kaylaan
+					["coord"] = { 34.8, 38.3, NETHERSTORM },
+					["sourceQuest"] = 10380,	-- A Dark Pact
+					["g"] = {
+						i(30382),	-- Aldor Ceremonial Wraps
+						i(30380),	-- Girdle of the Lost Vindicator
+						i(30381),	-- Kaylaan's Spaulders
+						i(30379),	-- Vindicator's Light Vest
+					},
+				}),
+				q(10263, {	-- Assisting the Consortium (The Aldor)
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 10186 },	-- You're Hired!
+				}),
+				q(10246, {	-- Attack on Manaforge Coruu
+					["provider"] = { "n", 19466 },	-- Exarch Orelis
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+				}),
+				q(10245, {	-- B'naar Console Transcription
+					["provider"] = { "o", 183770 },	-- B'naar Control Console
+					["coord"] = { 23.2, 68.2, NETHERSTORM },
+					["sourceQuest"] = 10243,	-- Naaru Technology
+				}),
+				q(10409, {	-- Deathblow to the Legion
+					["provider"] = { "n", 18538 },	-- Ishanah
+					["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
+					["sourceQuest"] = 10410,	-- Ishanah's Help
+					["g"] = {
+						i(30369),	-- Cleansed Fel Pauldrons
+						i(30370),	-- Gauntlets of the Redeemed Vindicator
+						i(30371),	-- Lightwarden's Girdle
+						i(30860),	-- Kaylaan's Signet
+						i(30368),	-- Slippers of the High Priestess
+					},
+				}),
+				q(10241, {	-- Distraction at Manaforge B'naar
+					["provider"] = { "n", 19466 },	-- Exarch Orelis
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuests"] = {
+						10551,	-- Allegiance to the Aldor
+						11038,	-- Assist Exarch Orelis
+					},
+				}),
+				q(10410, {	-- Ishanah's Help
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10407,	-- Socrethar's Shadow
+				}),
+				q(10313, {	-- Measuring Warp Energies
+					["provider"] = { "n", 19466 },	-- Exarch Orelis
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
+					["g"] = {
+						i(30362),	-- Energized Helm
+						i(30364),	-- Resonating Axe
+						i(30363),	-- Warp-Shielded Hauberk
+						i(30521),	-- Warpweaver's Gloves
+					},
+				}),
+				q(10243, {	-- Naaru Technology
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
+				}),
+				q(10431, {	-- Outside Assistance
+					["provider"] = { "n", 19466 },	-- Exarch Orelis
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10328,	-- Sunfury Briefings
+				}),
+				q(10323, {	-- Shutting Down Manaforge Ara
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
+					["g"] = {
+						i(30377),	-- Karja's Medallion
+						i(30365),	-- Overseer's Signet
+					},
+				}),
+				q(10299, {	-- Shutting Down Manaforge B'naar
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10245,	-- B'naar Console Transcription
+				}),
+				q(10321, {	-- Shutting Down Manaforge Coruu
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+				}),
+				q(10322, {	-- Shutting Down Manaforge Duro
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
+				}),
+				q(10407, {	-- Socrethar's Shadow
+					["provider"] = { "n", 19467 },	-- Anchorite Karja
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuests"] = {
+						10323,	-- Shutting Down Manaforge Ara
+						10381,	-- Aldor No More
+					},
+				}),
+				q(10328, {	-- Sunfury Briefings
+					["provider"] = { "n", 19466 },	-- Exarch Orelis
+					["coord"] = { 32.0, 64.2, NETHERSTORM },
+					["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
 				}),
 				q(10185, {	-- A Fate Worse Than Death
 					["provider"] = { "n", 19488 },	-- Custodian Dieworth
@@ -1069,5 +1051,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 -- The following recipes and gems go through a lot of changes between TBC and Cata.
 local JEWELCRAFTING_PATTERNS = {
 	i(23131, {	-- Design: Bold Blood Garnet (Both)
@@ -94,9 +93,14 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
+local FELANNIA_JOHAN_GROUPS = {};
+-- #if AFTER WRATH
+-- All of these were removed and the associated recipes are now available through trainers now.
+bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
+-- #endif
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
@@ -192,15 +196,7 @@ _.Zones =
 				n(18753, {	-- Felannia <Enchanting Trainer>
 					["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(16602, {	-- Floyd Pinkus <Innkeeper>
 					["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
@@ -239,26 +235,12 @@ _.Zones =
 				n(18773, {	-- Johan Barnes <Enchanting Trainer>
 					["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
 				}),
 				n(18775, {	-- Lebowski <Engineering Trainer>
 					["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
@@ -543,13 +525,7 @@ _.Zones =
 				n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 					["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
 				}),
 				n(18266, {	-- Warrant Officer Tracy Proudwell
 					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
@@ -590,5 +566,16 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+
+-- Add in the items that aren't locked by phase.
+appendGroups({
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	-- #if BEFORE CATA
+	i(6342),	-- Formula: Enchant Chest - Minor Mana
+	-- #endif
+}, FELANNIA_JOHAN_GROUPS);

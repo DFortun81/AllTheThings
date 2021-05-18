@@ -6766,6 +6766,16 @@ app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
+app.OnUpdateReputationRequired = function(t)
+	if app.MODE_DEBUG or app.MODE_ACCOUNT then
+		t.visible = true;
+		return false;
+	else
+		local reputationID = t.minReputation[1];
+		t.visible = (select(3, GetFactionInfoByID(reputationID)) or 1) >= 4;
+		return true;
+	end
+end
 end)();
 
 -- Filter Lib
@@ -8863,6 +8873,7 @@ end)();
 -- Quest Lib
 (function()
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local questFields = {
@@ -8906,8 +8917,7 @@ local questFields = {
 		return C_QuestLog_IsOnQuest(t.questID) or (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID));
 	end,
 	["indicator"] = function(t)
-		return (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID) and "incomplete") or
-			(C_QuestLog_IsOnQuest(t.questID) and "star");
+		return C_QuestLog_ReadyForTurnIn(t.questID) and "star" or "star";	-- TODO: change to yellow/grey question mark
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
@@ -8930,16 +8940,23 @@ local questFields = {
 	end,
 
 	["collectibleAsReputation"] = function(t)
+		local factionID = t.maxReputation[1];
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
-		if app.CollectibleReputations and t.maxReputation then
-			local factionID = t.maxReputation[1];
+		if app.CollectibleReputations then
 			local factionRef = app.SearchForObject("factionID", factionID);
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return true;
 			end
 		end
-		-- If Collectible purely by being a Quest
-		return app.CollectibleQuests and app.CollectibleAsQuest(t);
+		-- If Collectible by being a Quest, and the character is able to turn in the Quest
+		if app.CollectibleQuests then
+			if (select(6, GetFactionInfoByID(factionID)) or 0) <= t.maxReputation[2] then
+				return app.CollectibleAsQuest(t);
+			else
+				-- Otherwise, treat the quest as collectible if it has already been completed
+				return IsQuestFlaggedCompletedForObject(t);
+			end
+		end
 	end,
 	["collectedAsReputation"] = function(t)
 		-- If the Quest is completed on this character, then it doesn't matter about the faction
@@ -8954,7 +8971,7 @@ local questFields = {
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return false;
 			elseif not app.CollectibleQuests then
-			-- Completing the quest will not increase the Faction, and User doesn't care about Quests, then consider it 'collected'
+			-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
 				return 2;
 			end
 		end
@@ -18660,21 +18677,34 @@ app.events.QUEST_SESSION_JOINED = function()
 	-- print("QUEST_SESSION_JOINED")
 	app:UnregisterEvent("QUEST_SESSION_JOINED");
 	app:RegisterEvent("QUEST_SESSION_LEFT");
+	app:RegisterEvent("QUEST_SESSION_DESTROYED");
 	app.IsInPartySync = true;
 	app:UpdateWindows(true);
 end
 app.events.QUEST_SESSION_LEFT = function()
 	-- print("QUEST_SESSION_LEFT")
+	app.LeavePartySync();
+end
+app.events.QUEST_SESSION_DESTROYED = function()
+	-- print("QUEST_SESSION_DESTROYED")
+	app.LeavePartySync();
+end
+app.LeavePartySync = function()
 	app:UnregisterEvent("QUEST_SESSION_LEFT");
+	app:UnregisterEvent("QUEST_SESSION_DESTROYED");
 	app:RegisterEvent("QUEST_SESSION_JOINED");
 	app.IsInPartySync = false;
 	app:UpdateWindows(true);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and PlayerHasToy(itemID) and not ATTAccountWideData.Toys[itemID] then
+	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
+		-- TODO: remember to test this logic with a toy collect...
+		-- UpdateSearchResults(SearchForField("itemID", itemID));
+		--[[]]-- uncomment to test
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		--]]
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then

@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(THE_EXODAR, {
 			n(QUESTS, {
 				q(27225, {	-- A Summons from Ander Germaine
@@ -22,7 +21,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(24138)),	-- Silver Crossbow
 					},
 				}),
@@ -119,13 +118,13 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				-- #if AFTER CATA
-					q(9606, {	-- Return to Caregiver Chellan
-						["provider"] = { "n", 17555 },	-- Stephanos
-						["coord"] = { 54.8, 35.8, THE_EXODAR },
-						["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
-						["races"] = { DRAENEI },
-						["lvl"] = 5,
-					}),
+				q(9606, {	-- Return to Caregiver Chellan
+					["provider"] = { "n", 17555 },	-- Stephanos
+					["coord"] = { 54.8, 35.8, THE_EXODAR },
+					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
+					["races"] = { DRAENEI },
+					["lvl"] = 5,
+				}),
 				-- #endif
 				q(9762, {	-- The Unwritten Prophecy
 					["provider"] = { "n", 17468 },	-- Prophet Velen
@@ -133,7 +132,7 @@ _.Zones =
 					["sourceQuest"] =	9759,	-- Ending Their World
 					["races"] = { DRAENEI },
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(24344),	-- Tabard of the Hand
 						i(24349),   -- Signet Ring of the Hand
 						i(24350),   -- Signet Ring of the Hand
@@ -164,5 +163,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

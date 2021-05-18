@@ -1,17 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(QUESTS, {
 				q(10713, {	-- ...and a Time for Action
 					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10682,	-- A Time for Negotiation...
-					["g"] = {
+					["groups"] = {
 						i(31516),	-- Bracers of the Weald
 						i(31521),	-- Expedition Defender's Shoulders
 						i(31510),	-- Hewing Gloves
@@ -50,7 +49,7 @@ _.Zones =
 					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10543,	-- Grimnok and Korgaah, I Am For You!
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31472),	-- Hexxer's Belt
 						i(31473),	-- Ogre Defiler's Handguards
 						i(31470),	-- Witch Doctor's Beads
@@ -168,7 +167,7 @@ _.Zones =
 					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 11010,	-- Bombing Run
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						ach(1276),	-- Blade's Edge Bomberman
 					},
 				}),
@@ -187,7 +186,7 @@ _.Zones =
 					["coord"] = { 51.9, 58.4, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10749,	-- Baron Sablemane's Poison
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31539),	-- Chaintwine Cinch
 						i(31537),	-- Darktread Boots
 						i(31540),	-- Fairweather's Wristguards
@@ -198,7 +197,7 @@ _.Zones =
 					["provider"] = { "n", 22150 },	-- Lieutenant Fairweather
 					["coord"] = { 62.0, 37.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31539),	-- Chaintwine Cinch
 						i(31537),	-- Darktread Boots
 						i(31540),	-- Fairweather's Wristguards
@@ -222,7 +221,7 @@ _.Zones =
 						{ 60.0, 67.8, BLADES_EDGE_MOUNTAINS },
 					},
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31447),	-- Vibro Dagger
 						i(157549),	-- Vibro Knuckles
 						i(31446),	-- Vibro Shanker
@@ -269,7 +268,7 @@ _.Zones =
 					["provider"] = { "n", 22215 },	-- Treebole
 					["coord"] = { 37.2, 22.2, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10829,	-- Treebole Must Know
-					["g"] = {
+					["groups"] = {
 						i(31527),	-- Leafbeard Ring
 						i(31526),	-- Raven's Wood Exorciser's Band
 						i(31528),	-- Ring of the Stonebark
@@ -288,7 +287,7 @@ _.Zones =
 					["model"] = 191094,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 184660 },	-- Wanted Poster
-					["g"] = {
+					["groups"] = {
 						i(31486),	-- Bear-Strength Harness
 						i(31488),	-- Boots of the Ancient-Killer
 						i(31485),	-- Dark Deed Leggings
@@ -314,7 +313,7 @@ _.Zones =
 				q(10771, {	-- From the Ashes
 					["provider"] = { "n", 22053 },	-- Mosswood the Ancient
 					["coord"] = { 61.2, 38.5, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						i(31415),	-- Iron Oak Shield
 						i(31416),	-- Scorch Wood Bow
 						i(31414),	-- Wild Wood Staff
@@ -331,7 +330,7 @@ _.Zones =
 					["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10608,	-- Crystal Clear
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31445),	-- Last Year's "In" Belt
 						i(31442),	-- Metro's Slimming Legs
 						i(31443),	-- Nickwinkle's Harness Experiment
@@ -355,7 +354,7 @@ _.Zones =
 					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10801,	-- It's a Trap!
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31542),	-- Fanged Axe
 						i(31541),	-- Whistling Sword
 						i(31543),	-- Adjudicator's Staff
@@ -366,7 +365,7 @@ _.Zones =
 					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10785,	-- It's a Trap!
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31542),	-- Fanged Axe
 						i(31541),	-- Whistling Sword
 						i(31543),	-- Adjudicator's Staff
@@ -434,7 +433,7 @@ _.Zones =
 					["provider"] = { "n", 21197 },	-- Bronwyn Stouthammer
 					["coord"] = { 37.4, 65.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31431),	-- All-Weather Armguards
 						i(31432),	-- Explorer's Boots
 						i(31430),	-- Miner's Gloves
@@ -508,7 +507,7 @@ _.Zones =
 					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10722,	-- Meeting at the Blackwing Coven
-					["g"] = {
+					["groups"] = {
 						i(31520),	-- Blackwing Helm
 						i(31511),	-- Chest of the Wyrmcult
 						i(31508),	-- Coven Britches
@@ -529,7 +528,7 @@ _.Zones =
 					["provider"] = { "n", 21088 },	-- Matron Varah
 					["coord"] = { 76.1, 60.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					},
@@ -599,7 +598,7 @@ _.Zones =
 					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10517,	-- Gorr'Dim, Your Time Has Come...
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31435),	-- Gurn's Horned Helmet
 						i(31434),	-- Ogre Assassin's Britches
 						i(31436),	-- Sylvanaar Champion's Shoulders
@@ -622,7 +621,7 @@ _.Zones =
 					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10456,	-- Marauding Wolves
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31419),	-- Living Grove Shoulderpads
 						i(31420),	-- Protector's Boots
 						i(31421),	-- Sentinel Armbands
@@ -634,7 +633,7 @@ _.Zones =
 					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10487,	-- Dust from the Drakes
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31482),	-- Dire Wolf Handler Gloves
 						i(31483),	-- Gor'drek's Pauldrons
 						i(31481),	-- Thunderlord Armbands
@@ -664,7 +663,7 @@ _.Zones =
 					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31453),	-- Charged Footwear
 						i(31452),	-- Energized Wristwraps
 						i(31455),	-- Muscle Toning Belt
@@ -697,7 +696,7 @@ _.Zones =
 					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10674,	-- Trapping The Light Fantastic
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31456),	-- Gnomish Casting Boots
 						i(30690), 	-- Power Converter (Toy !)
 						i(31458),	-- Razaani-Buster Leggings
@@ -710,7 +709,7 @@ _.Zones =
 					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10805,	-- Massacre at Gruul's Lair
 					["races"] = ALLIANCE_ONLY,
-					["g"] ={
+					["groups"] ={
 						i(31548),	-- Blackened Chestplate
 						i(31544),	-- Clefthoof Hide Leggings
 						i(31549),	-- Leonine Breastplate
@@ -724,7 +723,7 @@ _.Zones =
 					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10724,	-- Prisoner of the Bladespire
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31548),	-- Blackened Chestplate
 						i(31544),	-- Clefthoof Hide Leggings
 						i(31549),	-- Leonine Breastplate
@@ -761,7 +760,7 @@ _.Zones =
 					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10843,	-- Since Time Forgotten...
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31685),	-- Brood Mother Leggings
 						i(31683),	-- Dreadwing Skin Belt
 						i(31684),	-- Netherhide Gloves
@@ -780,7 +779,7 @@ _.Zones =
 					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10851,	-- The Totems of My Enemy
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31712),	-- Mok'Nathal Champion's Shoulderguards
 						i(31711),	-- Nether-Empowered Footgear
 						i(31714),	-- Nether Drake Wristguards
@@ -791,7 +790,7 @@ _.Zones =
 					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
-					["g"] = {
+					["groups"] = {
 						i(32064),	-- Protectorate Treasure Cache
 					},
 				}),
@@ -837,7 +836,7 @@ _.Zones =
 					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10502,	-- The Bloodmaul Ogres
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31426),	-- Agile Mountain Bracers
 						i(31428),	-- Commander Skyshadow's Gloves
 						i(31425),	-- Ogre Vanquisher's Belt
@@ -859,7 +858,7 @@ _.Zones =
 					["coord"] = { 51.8,58.4, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10503,	-- The Bladespire Threat
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31480),	-- Ogre Beater's Belt
 						i(31477),	-- Red Hands of the Thunderlord
 						i(31479),	-- Rugged Mountain Bracers
@@ -875,7 +874,7 @@ _.Zones =
 					["coord"] = { 36.6, 67.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 185035 },	-- Wanted Poster
-					["g"] = {
+					["groups"] = {
 						i(31424),	-- Arcane Wand of Sylvanaar
 						i(31422),	-- Heavy Elven Dirk
 						i(31423),	-- Wolf Hewer's Axe
@@ -904,14 +903,14 @@ _.Zones =
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10981,	-- Nexus-Prince Shaffar's Personal Chamber
 					["minReputation"] = { 933, EXALTED },	-- The Consortium
-					["g"] = {
+					["groups"] = {
 						i(32092),	-- The Eye of Haramad
 					},
 				}),
 				q(10912, {	-- The Hound-Master
 					["provider"] = { "n", 22423 },	-- Evergrove Druid
 					["sourceQuest"] = 10911,	-- Fire At Will!
-					["g"] = {
+					["groups"] = {
 						i(31693),	-- Natasha's Arcane Filament
 						i(31696),	-- Natasha's Battle Chain
 						i(31695),	-- Natasha's Choker
@@ -966,7 +965,7 @@ _.Zones =
 					["coord"] = { 52.8, 59.0, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10525,	-- Vision Guide
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31476),	-- Slow Death Dirk
 						i(31475),	-- Thunderlord Scalpel
 						i(31474),	-- Wand of the Ancestors
@@ -1002,7 +1001,7 @@ _.Zones =
 					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10865,	-- Inform Leoroxx!
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31690),	-- Belt of the Soul Saver
 						i(31689),	-- Mok'Nathal Hero's Pantaloons
 						i(31687),	-- Mok'Nathal Mantle
@@ -1066,7 +1065,7 @@ _.Zones =
 					["provider"] = { "n", 21110 },	-- Fizit "Doc" Clocktock
 					["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31441),	-- Clocktock's Jumpers
 						i(31440),	-- Devolved Drake Girdle
 						i(31438),	-- Fizit's Mantle of Drake Hunting
@@ -1077,7 +1076,7 @@ _.Zones =
 					["provider"] = { "n", 21983 },	-- Samia Inkling
 					["coord"] = { 61.9, 39.5, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10717,	-- Poaching from Poachers
-					["g"] = {
+					["groups"] = {
 						i(31513),	-- Blackwhelp Belt
 						i(31519),	-- Inkling's Leggings
 						i(31515),	-- Whelpscale Gauntlets
@@ -1094,7 +1093,7 @@ _.Zones =
 					["provider"] = { "n", 21782 },	-- Timeon
 					["coord"] = { 62.2, 39.1, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10567,	-- Creating the Pendant
-					["g"] = {
+					["groups"] = {
 						i(31533),	-- Diluvian Spaulders
 						i(31532),	-- Supple Leather Boots
 						i(31534),	-- Whiteknuckle Gauntlets
@@ -1128,7 +1127,7 @@ _.Zones =
 					["model"] = 192342,
 					["provider"] = { "o", 185165 },	-- Legion Communicator
 					["sourceQuest"] = 10820,	-- Deceive thy Enemy
-					["g"] = {
+					["groups"] = {
 						i(31793),	-- Ruuan Weald Wristguards
 						i(31792),	-- Evergrove Ranger's Cloak
 						i(31790),	-- Expedition Pendant
@@ -1159,5 +1158,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

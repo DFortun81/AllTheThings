@@ -1,13 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+-- #if AFTER MOP
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(AZUREMYST_ISLE, {
 			filter(101, {	-- Pet Battle
 				p(464, {	-- Grey Moth
 					["crs"] = { 62050 },	-- Grey Moth
+					["maps"] = { AMMEN_VALE },
 				}),
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
@@ -76,5 +78,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

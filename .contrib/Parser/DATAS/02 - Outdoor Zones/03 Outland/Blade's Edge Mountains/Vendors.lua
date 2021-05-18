@@ -1,16 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(VENDORS, {
 				n(23245, {	-- Aether-tech Master
 					["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 					["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						i(32759, {	-- Accelerator Module
 							["cost"] = { { "i", 32569, 35 }, },	-- Apexis Shard
 						}),
@@ -22,49 +21,49 @@ _.Zones =
 						}),
 						i(32626, {	-- Large Copper Metamorphosis Geode
 							["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31568),	-- Mistshoud Helm
 							},
 						}),
 						i(32629, {	-- Large Gold Metamorphosis Geode
 							["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31552),	-- Windchanneller's Miter
 							},
 						}),
 						i(32624, {	-- Large Iron Metamorphosis Geode
 							["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31576),	-- Slatesteel Helm
 							},
 						}),
 						i(32628, {	-- Large Silver Metamorphosis Geode
 							["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31560),	-- Skystalker's Shroud
 							},
 						}),
 						i(32627, {	-- Small Copper Metamorphosis Geode
 							["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31575),	-- Mistshroud Gauntlets
 							},
 						}),
 						i(32630, {	-- Small Gold Metamorphosis Geode
 							["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31559),	-- Windchanneller's Gloves
 							},
 						}),
 						i(32625, {	-- Small Iron Metamorphosis Geode
 							["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31583),	-- Slatesteel Gauntlets
 							},
 						}),
 						i(32631, {	-- Small Silver Metamorphosis Geode
 							["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
-							["g"] = {
+							["groups"] = {
 								i(31567),	-- Skystalker's Gloves
 							},
 						}),
@@ -73,7 +72,7 @@ _.Zones =
 				n(19499, {	-- Cahill <Weaponsmith>
 					["coord"] = { 37.6, 63.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -88,7 +87,7 @@ _.Zones =
 				n(19837, {	-- Daga Ramba <Potions>
 					["coord"] = { 51.0, 57.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
@@ -108,7 +107,7 @@ _.Zones =
 				}),
 				n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 					["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						i(32653, {	-- Apexis Cloak
 							["cost"] = {
 								{ "i", 32572, 1 },	-- 1x Apexis Crystal
@@ -165,7 +164,7 @@ _.Zones =
 				n(21113, {	-- Sassa Weldwell <Trade Goods>
 					["coord"] = { 61.2, 68.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					},
@@ -174,7 +173,7 @@ _.Zones =
 					["requireSkill"] = 20219,	-- Gnomish Engineering
 					["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
 					["coord"] = { 60.2, 65.2, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						recipe(36955),	-- Ultrasafe Transporter - Toshley's Station
 					},
 				}),
@@ -184,21 +183,21 @@ _.Zones =
 					["cost"] = {
 						{ "i", 31122, 1 },	-- Overseer Disguise
 					},
-					["g"] = {
+					["groups"] = {
 						i(31341),	-- Wyrmcultist's Cloak
 					},
 				}),
 				n(20916, {	-- Xerintha Ravenoak <Food & Drink>
 					["description"] = "This vendor stocks a limited supply of these items.  Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities.  Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
 					["coord"] = { 62.4, 40.2, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					},
 				}),
 				n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>
 					["coord"] = { 61.6, 38.4, BLADES_EDGE_MOUNTAINS },
-					["g"] = {
+					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,
 						}),
@@ -209,5 +208,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1,100 +1,24 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
-			n(-38, {	-- Professions
-				prof(FISHING, {
-					i(27446, {	-- Mr. Pinchy's Gift
-						i(27388, {	-- Mr. Pinchy
-							i(27445, {	-- Magical Crawdad Box
-								["description"] = "Fish up Mr. Pinchy from Highland Mixed Schools.  You then have 3 chances at getting the pet.",
-							}),
-						}),
-					}),
-					n(QUESTS, {
-						q(11665,  {  -- Crocolisks in the City
-							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-							["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["g"] = {
-								i(35348,  { -- Bag of Fishing Treasures
-									i(35350),	-- Chuck's Bucket
-									i(33818),	-- Muckbreath's Bucket
-									i(35349),	-- Snarly's Bucket
-									i(33816),	-- Toothy's Bucket
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(34837),	-- The 2 Ring
-								}),
-								crit(1, {	-- Crocolisks in the City
-									["achievementID"] = 905,	-- Old Man Barlowned
-								}),
+			prof(FISHING, {
+				i(27388, {	-- Mr. Pinchy
+					["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
+					["groups"] = {
+						i(27445),	-- Magical Crawdad Box
+						i(27446, {	-- Mr. Pinchy's Gift
+							["description"] = "Contains an assortment of potions.",
+							["groups"] = {
+								i(8350),	-- The 1 Ring
 							},
 						}),
-						q(11669, {	-- Felblood Fillet
-							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["g"] = {
-								i(34863,  {  -- Bag of Fishing Treasures
-									i(33820),  -- Weather-Beaten Fishing Hat
-								}),
-								crit(3, {	-- Felblood Fillet
-									["achievementID"] = 905,	-- Old Man Barlowned
-								}),
-							},
-						}),
-						q(11668, {	-- Shrimpin' Ain't Easy
-							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["g"] = {
-								i(34863,  {  -- Bag of Fishing Treasures
-									i(33820),  -- Weather-Beaten Fishing Hat
-								}),
-								crit(5, {	-- Shrimpin' Ain't Easy
-									["achievementID"] = 905,	-- Old Man Barlowned
-								}),
-							},
-						}),
-						q(11667, {	-- The One That Got Away
-							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["g"] = {
-								i(34863,  {  -- Bag of Fishing Treasures
-									i(33820),  -- Weather-Beaten Fishing Hat
-								}),
-								crit(4, {	-- The One That Got Away
-									["achievementID"] = 905,	-- Old Man Barlowned
-								}),
-							},
-						}),
-						q(11666, {	-- Bait Bandits
-							["provider"] = { "n", 25580 },	-- Old Man Barlo
-							["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["g"] = {
-								i(34863,  {  -- Bag of Fishing Treasures
-									i(33820),  -- Weather-Beaten Fishing Hat
-								}),
-								crit(2, {	-- Bait Bandits
-									["achievementID"] = 905,	-- Old Man Barlowned
-								}),
-							},
-						}),
-					}),
+					},
 				}),
 			}),
 		}),
-	}),
+	})),
 };

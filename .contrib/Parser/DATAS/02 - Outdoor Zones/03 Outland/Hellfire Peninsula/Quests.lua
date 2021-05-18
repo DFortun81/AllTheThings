@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(QUESTS, {
 				q(10864, {	-- A Burden of Souls
@@ -1441,5 +1440,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

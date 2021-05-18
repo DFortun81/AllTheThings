@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(KALIMDOR, {
+	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLOODMYST_ISLE, {
 			n(QUESTS, {
 				q(9624,  {	-- A Favorite Treat
@@ -50,11 +49,11 @@ _.Zones =
 					["sourceQuest"] = 9696,	-- Translations...
 				}),
 				-- #if BEFORE CATA
-					q(9603,  {	-- Beds, Bandages, and Beyond
-						["provider"] = { "n", 17553 },	-- Caregiver Topher Loaal
-						["coord"] = { 55.8, 59.8, BLOODMYST_ISLE },
-						["races"] = { DRAENEI },
-					}),
+				q(9603,  {	-- Beds, Bandages, and Beyond
+					["provider"] = { "n", 17553 },	-- Caregiver Topher Loaal
+					["coord"] = { 55.8, 59.8, BLOODMYST_ISLE },
+					["races"] = { DRAENEI },
+				}),
 				-- #endif
 				q(9694,  {	-- Blood Watch
 					["provider"] = { "n", 17684 },	-- Vindicator Boros
@@ -325,12 +324,12 @@ _.Zones =
 					},
 				}),
 				-- #if BEFORE CATA
-					q(9604,  {	-- On the Wings of a Hippogryph
-						["provider"] = { "n", 17554 },	-- Laando
-						["coord"] = { 57.7, 53.9, BLOODMYST_ISLE },
-						["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
-						["races"] = { DRAENEI },
-					}),
+				q(9604,  {	-- On the Wings of a Hippogryph
+					["provider"] = { "n", 17554 },	-- Laando
+					["coord"] = { 57.7, 53.9, BLOODMYST_ISLE },
+					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
+					["races"] = { DRAENEI },
+				}),
 				-- #endif
 				q(9548,  {	-- Pilfered Equipment
 					["provider"] = { "n", 17421 },	-- Clopper Wizbang
@@ -555,5 +554,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

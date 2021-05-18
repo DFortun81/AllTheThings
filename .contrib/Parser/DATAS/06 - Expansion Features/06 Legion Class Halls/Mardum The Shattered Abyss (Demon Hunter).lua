@@ -54,12 +54,14 @@ _.ExpansionFeatures =
 				n(QUESTS, {
 					-- confirmed/sourced
 					q(42810, {	-- A Final Offer
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42754 },	-- Jump-Capable
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 74.0, 721 },
 						["lvl"] = 110,
 					}),
 					q(43412, {	-- A Hero's Weapon
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 44214 },	-- One More Thing
 						["providers"] = {
 							{ "n", 110485 },	-- Altruis the Sufferer
@@ -69,15 +71,18 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42682, {	-- Additional Accoutrements
+						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
 						["sourceQuests"] = { 42683 },	-- Demonic Improvements
 						["coord"] = { 59.9, 48.7, 720 },
 					}),
 					q(46159, {	-- An Urgent Message
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be in log)
 						["lvl"] = 110,
 					}),
 					q(45993, {	-- An Urgent Warning
+						["classes"] = { DEMONHUNTER },
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(41803, {	-- Asking a Favor (Altruis)
@@ -106,6 +111,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42733, {	-- A Very Special Kind of Fuel
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 55.6, 50.1, 721 },
@@ -122,12 +128,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42801, {	-- Back in Black
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.5, 52.3, 720 },
 						["lvl"] = 103,
 					}),
 					q(42679, {	-- Broken Warriors
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42677,	-- Things Gaardoun Needs (Kayn)
 							44161,	-- Things Gaardoun Needs (Altruis)
@@ -179,6 +187,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43184, {	-- Champion: Allari the Souleater
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 62.0, 49.2, 721 },
@@ -187,6 +196,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42690, {	-- Champion: Altruis the Sufferer
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42670 },	-- Rise, Champions (Altruis) — must be on this quest
 						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 						["coord"] = { 58.6, 57.7, 720 },
@@ -196,6 +206,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42697, {	-- Champion: Asha Ravensong
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42671,	-- Rise, Champions (Kayn) — must be on this quest
 							42670,	-- Rise, Champions (Altruis) — must be on this quest
@@ -208,6 +219,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42777, {	-- Champion: Belath Dawnblade
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42776 },	-- Two Worthies (must be in log)
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.2, 51.4, 720 },
@@ -217,6 +229,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43185, {	-- Champion: Jace Darkweaver
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 73.5, 721 },
@@ -225,6 +238,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42695, {	-- Champion: Kayn Sunfury
+						["classes"] = { DEMONHUNTER },
 						["sourceQuest"] = 42671,	-- Rise, Champions (Kayn) — must be on this quest
 						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 59.1, 58.7, 720 },
@@ -234,6 +248,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42673, {	-- Champion: Kor'vas Bloodthorn
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
@@ -246,6 +261,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45391, {	-- Champion: Lady S'theno
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 46266 },	-- Return of the Slayer
 						["provider"] = { "n", 117481 },	-- Lady S'theno
 						["coord"] = { 61.1, 55.4, 720 },
@@ -255,6 +271,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42701, {	-- Champion: Matron Mother Malevolence
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42776 },	-- Two Worthies (must be in log)
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.0, 49.3, 720 },
@@ -264,6 +281,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42664, {	-- Champion: Shade of Akama
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
@@ -276,18 +294,21 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42634, {	-- Confrontation at the Black Temple (Altruis)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42801 },	-- Back in Black
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
 					}),
 					q(42921, {	-- Confrontation at the Black Temple (Kayn)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42801 },	-- Back in Black
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
 					}),
 					q(42732, {	-- Deadlier Warglaives
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 55.6, 50.1, 721 },
@@ -301,6 +322,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(45339, {	-- Defense of the Fel Hammer
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							45329,	-- Operation: Portals
 							45330,	-- Scouting Party
@@ -315,6 +337,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42683, {	-- Demonic Improvements
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.8, 720 },
@@ -345,16 +368,25 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 39247, 41119 },	-- The Hunt
 						["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 					}),
+					q(44226, {	-- Fate Favors Us
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 112992 },	-- Seer Aleis
+						["coord"] = { 54.6, 59.4, 721 },
+						["description"] = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
+					}),
 					q(46780, {	-- Further Advancement
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45391 },	-- Champion: Lady S'theno
 						["provider"] = { "n", 103732 },	-- Tylos Darksight
 						["coord"] = { 54.0, 46.7, 721 },
 						["lvl"] = 110,
 					}),
 					q(46152, {	-- Furthering Knowledge
+						["classes"] = { DEMONHUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42808, {	-- Green Adepts
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42802 },	-- Securing Mardum
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.3, 51.1, 720 },
@@ -364,6 +396,7 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43186, {	-- I Am the Slayer!
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							43184,	-- Champion: Allari the Souleater
 							43185,	-- Champion: Jace Darkweaver
@@ -384,6 +417,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42510, {	-- Immortal Soul
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
 						["providers"] = {
 							{ "n", 107723 },	-- Altruis the Sufferer
@@ -393,30 +427,35 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 					}),
 					q(44379, {	-- In Pursuit of Power (Altruis)
+						["classes"] = { DEMONHUNTER },
 						["lvl"] = 120,
 						["coord"] = { 58.6, 57.8, 720 },
 						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
 						["sourceQuest"] = 41099,	-- Direct Our Wrath
 					}),
 					q(44383, {	-- In Pursuit of Power (Kayn)
+						["classes"] = { DEMONHUNTER },
 						["lvl"] = 120,
 						["coord"] = { 58.6, 57.8, 720 },
 						["provider"] = { "n", 95240 },	-- Kayn
 						["sourceQuest"] = 41069,	-- Direct Our Wrath
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
 						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
 					}),
 					q(42665, {	-- Into Our Ranks (Kayn)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42921 },	-- Confrontation at the Black Temple (Kayn)
 						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
 					}),
 					q(42754, {	-- Jump-Capable
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42733,	-- A Very Special Kind of Fuel
 							42732,	-- Deadlier Warglaives
@@ -426,9 +465,11 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(46133, {	-- Knowledge is Power
+						["classes"] = { DEMONHUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42132, {	-- Last, But Not Least
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42920, 42809 },	-- The Invasion of Niskara (Altruis, Kayn)
 						["providers"] = {
 							{ "n", 108571 },	-- Altruis the Sufferer
@@ -438,6 +479,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42522, {	-- Leader of the Illidari
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42510 },	-- Immortal Soul
 						["providers"] = {
 							{ "n", 107724 },	-- Kayn Sunfury
@@ -447,6 +489,7 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 					}),
 					q(42681, {	-- Loramus, Is That You?
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.3, 57.6, 720 },
@@ -478,6 +521,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42735, {	-- Malace in Vrykul Land
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42787 },	-- Deal With it Personally
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.6, 53.3, 720 },
@@ -497,6 +541,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(44214, {	-- One More Thing...
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 43186 },	-- I Am the Slayer!
 						["providers"] = {
 							{ "n", 108571 },	-- Altruis the Sufferer
@@ -506,6 +551,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(45329, {	-- Operation: Portals
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45301 },	-- Taking Charge
 						["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
 						["coord"] = { 74.2, 41.7, 719 },
@@ -513,6 +559,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42669, {	-- Preparations for Invasion
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42777,	-- Champion: Belath Dawnblade
 							42701,	-- Champion: Matron Mother Malevolence
@@ -557,6 +604,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 112666 },	-- Asha Ravensong
 					}),
 					q(42670, {	-- Rise, Champions (Altruis)
+						["classes"] = { DEMONHUNTER },
 						["lvl"] = 101,
 						["coord"] = { 56.1, 54.1, 720 },
 						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
@@ -566,6 +614,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42671, {	-- Rise, Champions (Kayn)
+						["classes"] = { DEMONHUNTER },
 						["lvl"] = 101,
 						["coord"] = { 56.4, 55.1, 720 },
 						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
@@ -575,6 +624,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45330, {	-- Scouting Party
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45301 },	-- Taking Charge
 						["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
 						["coord"] = { 74.2, 41.7, 719 },
@@ -582,6 +632,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(42802, {	-- Securing Mardum
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
@@ -610,24 +661,28 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41060 },	-- Unbridled Power
 					}),
 					q(45301, {	-- Taking Charge
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 46159 },	-- An Urgent Message
 						["provider"] = { "n", 108311 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.5, 58.7, 720 },
 						["lvl"] = 110,
 					}),
 					q(42593, {	-- The Arcane Way
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42522 },	-- Leader of the Illidari
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.9, 48.7, 720 },
 						["lvl"] = 103,
 					}),
 					q(37447, {	-- The Blood of Demons
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.3, 57.7, 720 },
 						["lvl"] = 103,
 					}),
 					q(42775, {	-- The Crux of the Plan
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42752, 42753 },	-- Vault of the Wardens: Vault Break-In (2 different versions)
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.5, 53.3, 720 },
@@ -680,6 +735,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 39261 },	-- Call of the Illidari
 					}),
 					q(44161, {	-- Things Gaardoun Needs (Altruis)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42697,	-- Champion: Asha Ravensong
 							42690,	-- Champion: Altruis the Sufferer
@@ -689,6 +745,7 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 					}),
 					q(42677, {	-- Things Gaardoun Needs (Kayn)
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							42697,	-- Champion: Asha Ravensong
 							42695,	-- Champion: Kayn Sunfury
@@ -715,6 +772,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42776, {	-- Two Worthies
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
 						["providers"] = {
 							{ "n", 108571 },	-- Altruis the Sufferer
@@ -739,6 +797,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41221 },	-- Return to Mardum
 					}),
 					q(42131, {	-- Unexpected Visitors
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
@@ -753,6 +812,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46940, {	-- Using Lost Knowledge
+						["classes"] = { DEMONHUNTER },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(41863, {	-- Vengeance Will Be Ours (Altruis)
@@ -770,12 +830,14 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					}),
 					q(45385, {	-- We Must be Prepared!
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45339 },	-- Defense of the Fel Hammer
 						["provider"] = { "n", 108311 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.6, 58.8, 720 },
 						["lvl"] = 110,
 					}),
 					q(42731, {	-- Working With the Wardens
+						["classes"] = { DEMONHUNTER },
 					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 						["sourceQuests"] = { 42131 },	-- Unexpected Visitors
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
@@ -783,6 +845,7 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 					}),
 					q(44213, {	-- You Will Be Prepared!
+						["classes"] = { DEMONHUNTER },
 					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression.  i had done up through "working with the wardens."
 						["provider"] = { "n", 112407 },	-- Falara Nightsong
 						["coord"] = { 57.7, 44.2, 720 },
@@ -797,29 +860,16 @@ _.ExpansionFeatures =
 
 					-- unconfirmed/unsourced
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(44226),	-- Fate Favors Us
 					q(45994, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46333),	-- Livin' on the Ledge
 					q(41096),	-- Time is of the Essence
-					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
 					q(43557, {	-- Assault on Violet Hold: Into the Violet Hold
 						["races"] = ALLIANCE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(43186, {	-- I Am the Slayer!
-						i(139715),	-- Robes of
-					}),
-					q(42776, {	-- Two Worthies
-						i(139722),	-- Bracers of
-					}),
-					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43412, {	-- A Hero's Weapon
-						sp(219663) -- Heroic Weapons [No item associated]
-					}),
-					--]]
 				}),
 				n(VENDORS, {
 					n(116621, {	-- Demissya Gladestrider <Illidari Provisioner's Assistant>
