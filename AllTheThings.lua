@@ -12736,7 +12736,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
-		if reference.itemID and not reference.speciesID and not reference.spellID then
+		if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
 			local numSpecializations = GetNumSpecializations();
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");
