@@ -269,7 +269,6 @@ _.Zones =
 				q(9808,  {	-- Glowcap Mushrooms
 					["provider"] = { "n", 17924 },	-- Msshi'fn
 					["coord"] = { 19.7, 52.1, ZANGARMARSH },
-					["repeatable"] = true,
 					["minReputation"] = { 970, NEUTRAL },
 					["maxReputation"] = { 970, FRIENDLY },
 				}),
