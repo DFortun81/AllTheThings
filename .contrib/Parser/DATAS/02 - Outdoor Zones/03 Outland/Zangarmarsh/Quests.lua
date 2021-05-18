@@ -1,17 +1,88 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
 			n(QUESTS, {
+				q(50130, {	-- A Friendly Gesture
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 17924 },	-- Msshi'fn
+					["coord"] = { 19.7, 52.1, ZANGARMARSH },
+					["sourceQuest"] = 50131,	-- An Outside Perspective
+					["minReputation"] = { 970, NEUTRAL },
+					["maxReputation"] = { 970, HONORED },
+				}),
+				q(50131, {	-- An Outside Perspective
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 17923 },	-- Fahssn
+					["coord"] = { 19.0, 63.4, ZANGARMARSH },
+					["minReputation"] = { 970, NEUTRAL },
+					["maxReputation"] = { 970, FRIENDLY },
+					["sourceQuests"] = {
+						9743,	-- Natural Enemies
+						9739,	-- The Sporelings' Plight
+					},
+				}),
+				q(9807, {	-- More Fertile Spores
+					["provider"] = { "n", 17925 },	-- Gshaff
+					["coord"] = { 19.1, 49.4, ZANGARMARSH },
+					["sourceQuest"] = 9806,	-- Fertile Spores
+					["repeatable"] = true,
+					["maxReputation"] = { 970, FRIENDLY },
+				}),
+				q(9809, {	-- More Glowcaps
+					["provider"] = { "n", 17924 },	-- Mshii'fn
+					["coord"] = { 19.7, 52.1, ZANGARMARSH },
+					["sourceQuest"] = 9808,	-- Glowcap Mushrooms
+					["repeatable"] = true,
+					["maxReputation"] = { 970, FRIENDLY },
+				}),
+				q(9742, {	-- More Spore Sacs
+					["provider"] = { "n", 17923 },	-- Fahssn
+					["coord"] = { 19.0, 63.4, ZANGARMARSH },
+					["sourceQuest"] = 9739,	-- The Sporelings' Plight
+					["repeatable"] = true,
+					["maxReputation"] = { 970, FRIENDLY },
+				}),
+				q(9744, {	-- More Tendrils!
+					["provider"] = { "n", 17923 },	-- Fahssn
+					["coord"] = { 19.0, 63.4, ZANGARMARSH },
+					["sourceQuest"] = 9743,	-- Natural Enemies
+					["repeatable"] = true,
+					["maxReputation"] = { 970, FRIENDLY },
+				}),
+				q(9727, {	-- Now That We're Still Friends...
+					["provider"] = { "n", 17856 },	-- Gzhun'tt
+					["coord"] = { 19.5, 50.0, ZANGARMARSH },
+					["sourceQuest"] = 9726,	-- Now That We're Friends...
+					["minReputation"] = { 970, FRIENDLY },
+					["repeatable"] = true,
+				}),
+				q(9784, {	-- Identify Plant Parts
+					["provider"] = { "n", 17909 },	-- Lauranna Thar'well
+					["coord"] = { 80.3, 64.2, ZANGARMARSH },
+					["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
+					["repeatable"] = true,
+					["maxReputation"] = { 942, HONORED },
+					["groups"] = {
+						i(24402, {	-- Package of Identified Plants
+							i(24407),	-- Uncatalogued Species
+						}),
+					},
+				}),
+				q(9875, {	-- Uncatalogued Species
+					["provider"] = { "i", 24407 },	-- Uncatalogued Species
+					["repeatable"] = true,
+					["sourceQuest"] = 9784,	-- Identify Plant Parts
+					["maxReputation"] = { 942, HONORED },
+				}),
 				q(9788,  {	-- A Damp, Dark Place
 					["provider"] = { "n", 17956 },	-- Ikeyen
 					["coord"] = { 80.4, 64.2, ZANGARMARSH },
 					["sourceQuest"] = 9747,	-- The Umbrafen Tribe
-					["g"] = {
+					["groups"] = {
 						i(25516),	-- Ikeyen's Boots
 						i(25514),	-- Ikeyen's Pauldrons
 						i(25515),	-- Mud Encrusted Boots
@@ -39,7 +110,7 @@ _.Zones =
 					["coord"] = { 32.4, 52.0, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9846 },	-- Spirits of the Feralfen
-					["g"] = {
+					["groups"] = {
 						i(25620),	-- Ancient Crystal Talisman
 						i(31770),	-- Marsh Bracers
 						i(25621),	-- Serpent Spirit's Drape
@@ -55,7 +126,7 @@ _.Zones =
 					["coord"] = { 68.2, 50.0, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9782,	-- The Dead Mire
-					["g"] = {
+					["groups"] = {
 						i(25599),	-- Explorer's Bands
 						i(25598),	-- Fen Strider's Bracer
 						i(31659),	-- Researcher's Mantle
@@ -87,7 +158,7 @@ _.Zones =
 					["coord"] = { 68.6, 49.4, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9901,	-- Unfinished Business
-					["g"] = {
+					["groups"] = {
 						i(31788), 	-- Blacksting Gloves
 						i(31786), 	-- Blacksting Shoulders
 						i(31789), 	-- Marshfang Boots
@@ -142,7 +213,7 @@ _.Zones =
 					["provider"] = { "i", 24330 },	-- Drain Schematics
 					["sourceQuest"] = 9718,	-- Balance Must Be Preserved
 					["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",
-					["g"] = {
+					["groups"] = {
 						i(27734),	-- Expedition Caster's Band
 						i(27735),	-- Pendant of the Marsh
 						i(27733),	-- Warden's Ring of Precision
@@ -152,7 +223,7 @@ _.Zones =
 				q(9752,  {	-- Escape from Umbrafen
 					["provider"] = { "n", 17969 },	-- Kayra Longmane
 					["coord"] = { 83.4, 85.5, ZANGARMARSH },
-					["g"] = {
+					["groups"] = {
 						i(25518),	-- Explorer's Leggings
 						i(25517),	-- Preserver's Medallion
 						i(25519),	-- Warden's Hammer
@@ -178,7 +249,7 @@ _.Zones =
 					["provider"] = { "n", 17877 },	-- Fhwoor
 					["coord"] = { 19.8, 50.8, ZANGARMARSH },
 					["minReputation"] = { 970, FRIENDLY },
-					["g"] = {
+					["groups"] = {
 						i(25537),	-- Hewing Axe of the Marsh
 						i(25536),	-- Sporeggar Smasher
 						i(25538),	-- Sporeling Claw
@@ -207,7 +278,7 @@ _.Zones =
 					["coord"] = { 32.9, 48.9, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9814,	-- Burstcap Mushrooms, Mon!
-					["g"] = {
+					["groups"] = {
 						i(25612),	-- Daggerfen Mail
 						i(25610),	-- Fen Strider's Footguards
 						i(25611),	-- The Witch Doctor's Wraps
@@ -230,7 +301,7 @@ _.Zones =
 					["coord"] = { 80.7, 36.3, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9771,	-- Searching for Scout Jyoba
-					["g"] = {
+					["groups"] = {
 						i(25600),	-- Bog Walker's Bands
 						i(25602),	-- Bog Walker's Belt
 						i(31768),	-- Deep Mire Cloak
@@ -241,7 +312,7 @@ _.Zones =
 					["coord"] = { 79.1, 64.9, ZANGARMARSH },
 					["model"] = 199428,
 					["provider"] = { "o", 182115 },	-- Wanted Poster
-					["g"] = {
+					["groups"] = {
 						i(27723), 	-- Belt of the Moonkin
 						i(27721), 	-- Expedition Footgear
 						i(27722), 	-- Gloves of Marshmanship
@@ -252,7 +323,7 @@ _.Zones =
 					["coord"] = { 79.1, 64.9, ZANGARMARSH },
 					["model"] = 199428,
 					["provider"] = { "o", 182115 },	-- Wanted Poster
-					["g"] = {
+					["groups"] = {
 						i(27728),	-- Cushy Cenarion Walkers
 						i(27725),	-- Expedition Mantle
 						i(27726),	-- Hearty Cenarion Cincture
@@ -264,7 +335,7 @@ _.Zones =
 					["coord"] = { 40.8, 28.6, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
-					["g"] = {
+					["groups"] = {
 						i(27753),	-- Ensorcelled Marshfang Blade
 						i(157547),	-- Keen Marshfang Shanker
 						i(27754),	-- Keen Marshfang Slicer
@@ -274,7 +345,7 @@ _.Zones =
 				q(9738,  {	-- Lost in Action
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17884 },	-- Watcher Jhang
-					["g"] = {
+					["groups"] = {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
@@ -307,7 +378,7 @@ _.Zones =
 					["coord"] = { 68.2, 49.4, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9801,	-- Gathering the Reagents
-					["g"] = {
+					["groups"] = {
 						i(25614), 	-- Feralfen Beastmaster's Hauberk
 						i(25615), 	-- Feralfen Champion's Boots
 						i(25613), 	-- Feralfen Mystic's Handwraps
@@ -352,7 +423,7 @@ _.Zones =
 					["coord"] = { 85.0, 54.0, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9770,	-- Menacing Marshfangs
-					["g"] = {
+					["groups"] = {
 						i(31788),	-- Blacksting Gloves
 						i(31786),	-- Blacksting Shoulders
 						i(31789),	-- Marshfang Boots
@@ -363,7 +434,7 @@ _.Zones =
 					["provider"] = { "n", 17856 },	-- Gzhun'tt
 					["coord"] = { 19.5, 50.0, ZANGARMARSH },
 					["minReputation"] = { 970, FRIENDLY },
-					["g"] = {
+					["groups"] = {
 						i(27750),	-- Hammer of the Sporelings
 						i(27749),	-- Staff of the Wild
 						i(27751),	-- Survivalist's Pike
@@ -384,7 +455,7 @@ _.Zones =
 					["coord"] = { 41.8, 27.0, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9835,	-- Ango'rosh Encroachment
-					["g"] = {
+					["groups"] = {
 						i(25619),	-- Glowing Crystal Insignia
 						i(31770),	-- Marsh Bracers
 						i(25618),	-- Telaar Courier's Cloak
@@ -393,7 +464,7 @@ _.Zones =
 				q(9802, {	-- Plants of Zangarmarsh
 					["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 					["coord"] = { 80.3, 64.2, ZANGARMARSH },
-					["g"] = {
+					["groups"] = {
 						i(24402),	-- Package of Identified Plants
 					},
 				}),
@@ -407,7 +478,7 @@ _.Zones =
 					["coord"] = { 32.9, 48.9, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9845,	-- Angling to Beat the Competition
-					["g"] = {
+					["groups"] = {
 						i(25922),	-- Fearless Girdle
 						i(25923),	-- Fierce Mantle
 						i(25924),	-- Swamprunner's Boots
@@ -434,7 +505,7 @@ _.Zones =
 					["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 					["coord"] = { 80.3, 64.2, ZANGARMARSH },
 					["sourceQuest"] = 9747,	-- The Umbrafen Tribe
-					["g"] = {
+					["groups"] = {
 						i(31657),	-- Chemise of Rebirth
 						i(27715),	-- Circle's Stalwart Helmet
 						i(27717),	-- Expedition Forager Leggings
@@ -451,14 +522,14 @@ _.Zones =
 					["provider"] = { "n", 18019 },	-- Timothy Daniels
 					["coord"] = { 41.2, 28.6, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25616),	-- Tim's Trusty Helmet
 					},
 				}),
 				q(9719,  {	-- Stalk the Stalker
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17866 },	-- Khn'nix
-					["g"] = {
+					["groups"] = {
 						i(28109),	-- Essence Infused Mushroom
 						i(28108),	-- Power Infused Mushroom
 					},
@@ -477,7 +548,7 @@ _.Zones =
 					["provider"] = { "n", 17831 },	-- Watcher Leesa'oh
 					["coord"] = { 23.3, 66.2, ZANGARMARSH },
 					["sourceQuests"] = { 9708 },	-- Familiar Fungi
-					["g"] = {
+					["groups"] = {
 						i(25530),	-- Helm of Natural Purity
 						i(31661),	-- Leesa'oh's Wristbands
 						i(25534),	-- Marsh Survivalist's Belt
@@ -552,7 +623,7 @@ _.Zones =
 					["coord"] = { 31.6, 49.2, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9841,	-- Stinging the Stingers
-					["g"] = {
+					["groups"] = {
 						i(27753),	-- Ensorcelled Marshfang Blade
 						i(157547),	-- Keen Marshfang Shanker
 						i(27754),	-- Keen Marshfang Slicer
@@ -568,7 +639,7 @@ _.Zones =
 					["coord"] = { 40.8, 28.6, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
-					["g"] = {
+					["groups"] = {
 						i(25922),	-- Fearless Girdle
 						i(25923),	-- Fierce Mantle
 						i(25924),	-- Swamprunner's Boots
@@ -582,7 +653,7 @@ _.Zones =
 				q(9763,  {	-- The Warlord's Hideout
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17884 },	-- Watcher Jhang
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(28181)),	-- Earthwarden's Coif
 						un(REMOVED_FROM_GAME, i(28182)),	-- Helm of the Claw
 						un(REMOVED_FROM_GAME, i(28183)),	-- Hydromancer's Headwrap
@@ -620,7 +691,7 @@ _.Zones =
 					["coord"] = { 30.6, 50.8, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9822,	-- Impending Attack
-					["g"] = {
+					["groups"] = {
 						i(25617),	-- Captain Krosh's Crash Helmet
 					},
 				}),
@@ -683,5 +754,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

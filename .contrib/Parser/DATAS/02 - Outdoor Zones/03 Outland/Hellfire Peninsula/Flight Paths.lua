@@ -26,7 +26,7 @@ _.Zones =
 					["coord"] = { 54.6, 62.4, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if ANY CLASSIC
+				-- #if ANYCLASSIC
 				fp(149, {	-- Shatter Point, Hellfire Peninsula
 					["cr"] = 20234,	-- Runetog Wildhammer <Gryphon Master>
 					["coord"] = { 78.4, 34.9, HELLFIRE_PENINSULA },

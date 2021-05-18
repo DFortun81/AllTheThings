@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		m(ISLE_OF_QUELDANAS, {
 			n(QUESTS, {
 				q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
@@ -174,5 +173,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

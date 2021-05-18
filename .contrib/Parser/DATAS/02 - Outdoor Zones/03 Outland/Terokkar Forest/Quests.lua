@@ -1,12 +1,240 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			n(QUESTS, {
+				q(11665,  {  -- Crocolisks in the City
+					["provider"] = { "n", 25580 },	-- Old Man Barlo
+					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+					["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
+					["isDaily"] = true,
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(35348,  { -- Bag of Fishing Treasures
+							i(35350),	-- Chuck's Bucket
+							i(33818),	-- Muckbreath's Bucket
+							i(35349),	-- Snarly's Bucket
+							i(33816),	-- Toothy's Bucket
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(34837),	-- The 2 Ring
+						}),
+						crit(1, {	-- Crocolisks in the City
+							["achievementID"] = 905,	-- Old Man Barlowned
+						}),
+					},
+				}),
+				q(11669, {	-- Felblood Fillet
+					["provider"] = { "n", 25580 },	-- Old Man Barlo
+					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+					["isDaily"] = true,
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(34863,  {  -- Bag of Fishing Treasures
+							i(33820),  -- Weather-Beaten Fishing Hat
+						}),
+						crit(3, {	-- Felblood Fillet
+							["achievementID"] = 905,	-- Old Man Barlowned
+						}),
+					},
+				}),
+				q(11668, {	-- Shrimpin' Ain't Easy
+					["provider"] = { "n", 25580 },	-- Old Man Barlo
+					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+					["isDaily"] = true,
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(34863,  {  -- Bag of Fishing Treasures
+							i(33820),  -- Weather-Beaten Fishing Hat
+						}),
+						crit(5, {	-- Shrimpin' Ain't Easy
+							["achievementID"] = 905,	-- Old Man Barlowned
+						}),
+					},
+				}),
+				q(11667, {	-- The One That Got Away
+					["provider"] = { "n", 25580 },	-- Old Man Barlo
+					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+					["isDaily"] = true,
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(34863,  {  -- Bag of Fishing Treasures
+							i(33820),  -- Weather-Beaten Fishing Hat
+						}),
+						crit(4, {	-- The One That Got Away
+							["achievementID"] = 905,	-- Old Man Barlowned
+						}),
+					},
+				}),
+				q(11666, {	-- Bait Bandits
+					["provider"] = { "n", 25580 },	-- Old Man Barlo
+					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+					["isDaily"] = true,
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(34863,  {  -- Bag of Fishing Treasures
+							i(33820),  -- Weather-Beaten Fishing Hat
+						}),
+						crit(2, {	-- Bait Bandits
+							["achievementID"] = 905,	-- Old Man Barlowned
+						}),
+					},
+				}),
+				q(11885, {	-- Adversarial Blood
+					["provider"] = { "n", 23306 },	-- Hazzik
+					["sourceQuest"] = 11029,	-- A Shabby Disguise
+					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+					["groups"] = {
+						i(32720),	-- Time-Lost Offering
+					},
+				}),
+				q(11072, {	-- Adversarial Blood (was replaced by Adversarial Blood (ID 11885)
+					["provider"] = { "n", 23306 },	-- Hazzik
+					["sourceQuest"] = 11029,	-- A Shabby Disguise
+					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32715, 1 },	-- Akkarai's Talons
+						{ "i", 32716, 1 },	-- Gezzarak's Claws
+						{ "i", 32717, 1 },	-- Karrog's Spine
+						{ "i", 32718, 1 },	-- Vakkiz's Scale
+					},
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						i(32720),	-- Time-Lost Offering
+					},
+				}),
+				q(11029, {	-- A Shabby Disguise
+					["provider"] = { "n", 23306 },	-- Hazzik
+					["sourceQuest"] = 11056,	-- Hazzik's Bargain
+					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32741, 1 },	-- Shabby Arakkoa Disguise
+						{ "i", 32742, 1 },	-- Adversarial Bloodlines
+					},
+					["groups"] = {
+						i(32742, {	-- Adversarial Bloodlines
+							["questID"] = 11029,	-- A Shabby Disguise
+							["coord"] = { 67.0, 79.6, TEROKKAR_FOREST },
+						}),
+					},
+				}),
+				q(11024, {	-- An Ally in Lower City
+					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+					["sourceQuest"] = 11021,	-- Ishaal's Almanac
+					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+				}),
+				q(11028, {	-- Countdown to Doom
+					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
+					["sourceQuest"] = 11024,	-- An Ally in Lower City
+					["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
+				}),
+				q(11085, {	-- Escape from Skettis
+					["provider"] = { "n", 23383 },	-- Skyguard Prisoner
+					["coord"] = { 75, 86.2, TEROKKAR_FOREST },
+					["isDaily"] = true,
+				}),
+				q(11008, {	-- Fires Over Skettis
+					["provider"] = { "n", 23048 },	-- Sky Sergeant Doryn
+					["sourceQuest"] = 11098,	-- To Skettis!
+					["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32406, 1 },	-- Skyguard Blasting Charges
+					},
+					["isDaily"] = true,
+					["groups"] = {
+						ach(1275),	-- Bombs Away
+					},
+				}),
+				q(11056, {	-- Hazzik's Bargain
+					["provider"] = { "n", 23306 },	-- Hazzik
+					["sourceQuest"] = 11028,	-- Countdown to Doom
+					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32687, 1 },	-- Hazzik's Package
+					},
+					["groups"] = {
+						i(32687, {	-- Hazzik's Package
+							["questID"] = 11056,	-- Hazzik's Bargain
+							["coord"] = { 74.8, 80.1, TEROKKAR_FOREST },
+						}),
+					},
+				}),
+				q(11093, {	-- Hungry Nether Rays
+					["provider"] = { "n", 23415 },	-- Skyguard Handler Deesak
+					["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32834, 1 },	-- Nether Ray Cage (Provided)
+					},
+					["groups"] = {
+						i(28103),	-- Adept's Elixir
+						i(22831),	-- Elixir of Major Agility
+					},
+				}),
+				q(11021, {	-- Ishaal's Almanac
+					["provider"] = { "i", 32523 },	-- Ishaal's Almanac
+					["coord"] = { 69.2, 78.2, TEROKKAR_FOREST },
+					["cr"] = 23066,	-- Talonpriest Ishaal
+				}),
+				q(11006, {	-- More Shadow Dust
+					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
+					["sourceQuest"] = 11004,	-- World of Shadows
+					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 32388, 6 },	-- Shadow Dust
+					},
+					["groups"] = {
+						i(32446),	-- Elixir of Shadows
+					},
+				}),
+				q(11005, {	-- Secrets of the Talonpriests
+					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+					["sourceQuest"] = 11004,	-- World of Shadows
+					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+				}),
+				q(11074, {	-- Tokens of the Descendants
+					["provider"] = { "n", 23306 },	-- Hazzik
+					["sourceQuest"] = 11885,	-- Adversarial Blood
+					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32715, 1 },	-- Akkarai's Talons
+						{ "i", 32716, 1 },	-- Gezzarak's Claws
+						{ "i", 32717, 1 },	-- Karrog's Spine
+						{ "i", 32718, 1 },	-- Vakkiz's Scale
+					},
+					["repeatable"] = true,
+					["groups"] = {
+						i(32720),	-- Time-Lost Offering
+					},
+				}),
+				q(11073, {  -- Terokk's Downfall
+					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+					["sourceQuest"] = 11885,	-- Adversarial Blood
+					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+					["cr"] = 21838,	-- Terokk
+					["groups"] = {
+						i(32831),	-- Jeweled Rod
+						-- #if BEFORE MOP
+						i(32832, {	-- Scout's Throwing Knives
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
+						i(32830),	-- Severin's Cane
+						i(32829),	-- Windcharger's Lance
+					},
+				}),
+				q(11004, {	-- World of Shadows
+					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
+					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+					["cost"] = {
+						{ "i", 32388, 6 },	-- Shadow Dust
+					},
+					["groups"] = {
+						i(32446),	-- Elixir of Shadows
+					},
+				}),
 				q(10914, {	-- A Hero Is Needed
 					["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 					["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
@@ -17,7 +245,7 @@ _.Zones =
 					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 9979,	-- Wind Trader Lathrai
-					["g"] = {
+					["groups"] = {
 						i(31724),	-- Arakkoa Divining Rod
 						i(25927),	-- Consortium Cloak of the Quick
 						i(25928),	-- Ethereal Healing Pendant
@@ -109,7 +337,7 @@ _.Zones =
 					["provider"] = { "n", 18760 },	-- Isla Starmane
 					["coord"] = { 73.9, 35.2, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25918),	-- Blood-Guided Knife
 						i(25917),	-- Healer's Staff of the Forest
 						i(25916),	-- Terokkar Axe
@@ -119,7 +347,7 @@ _.Zones =
 					["provider"] = { "n", 18760 },	-- Isla Starmane
 					["coord"] = { 73.9, 35.1, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25918),	-- Blood-Guided Knife
 						i(25917),	-- Healer's Staff of the Forest
 						i(25916),	-- Terokkar Axe
@@ -128,7 +356,7 @@ _.Zones =
 				q(10887, {	-- Escaping the Tomb -- aa
 					["provider"] = { "n", 22377 },	-- Akuno
 					["coord"] = { 30.6, 49.1, TEROKKAR_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(31733),	-- Akuno's Blade
 						i(31734),	-- Ancient Draenei Crest
 						i(31731),	-- Mekeda's Gift
@@ -145,7 +373,7 @@ _.Zones =
 					["provider"] = { "n", 22456 },	-- Oakun
 					["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 					["sourceQuest"] = 10877,	-- The Dread Relic
-					["g"] = {
+					["groups"] = {
 						i(31816),	-- Dragonbone Greatsword
 						i(31817),	-- Dragonbone Shoulders
 						i(31818),	-- Dragonbone Talisman
@@ -182,7 +410,7 @@ _.Zones =
 				q(10164, {	-- Greatfather Aldrimus
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
-					["g"] = {
+					["groups"] = {
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
 						i(29339),	-- Auchenai Tracker's Hauberk
@@ -199,7 +427,7 @@ _.Zones =
 					["provider"] = { "n", 19417 },	-- Ramdor the Mad
 					["coord"] = { 35.1, 66.2, TEROKKAR_FOREST },
 					["sourceQuest"] = 10030,	-- Recover the Bones
-					["g"] = {
+					["groups"] = {
 						i(31725),	-- Cilice of Suffering
 						i(25951),	-- Fleet Refugee's Boots
 						i(25948),	-- Girdle of the Penitent
@@ -227,7 +455,7 @@ _.Zones =
 						{ 45.3, 21.8, TEROKKAR_FOREST },
 						{ 45.1, 20.8, TEROKKAR_FOREST },
 					},
-					["g"] = {
+					["groups"] = {
 						i(28026),	-- Crazy Cenarion Cloak
 						i(25542),	-- Lucky Circle of the Fool
 						i(28027),	-- Lunatic's Choker
@@ -240,7 +468,7 @@ _.Zones =
 					["coord"] = { 40.4, 36.0, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10023,	-- Patriarch Ironjaw
-					["g"] = {
+					["groups"] = {
 						i(25933),	-- Extra Sharp Blade
 						i(25935),	-- Invincible Stave
 						i(25934),	-- Spiked Destroyer
@@ -251,7 +479,7 @@ _.Zones =
 					["coord"] = { 39.0, 43.7, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10041,	-- Who Are They?
-					["g"] = {
+					["groups"] = {
 						i(25933),	-- Extra Sharp Blade
 						i(25935),	-- Invincible Stave
 						i(25934),	-- Spiked Destroyer
@@ -262,7 +490,7 @@ _.Zones =
 					["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10446,	-- The Final Code
-					["g"] = {
+					["groups"] = {
 						i(25931),	-- Cenarion Thicket Circlet
 						i(25930),	-- Cenarion Thicket Helm
 						i(25932),	-- Cenarion Thicket Jerkin
@@ -274,7 +502,7 @@ _.Zones =
 					["coord"] = { 50.0, 45.9, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10447,	-- The Final Code
-					["g"] = {
+					["groups"] = {
 						i(25931),	-- Cenarion Thicket Circlet
 						i(25930),	-- Cenarion Thicket Helm
 						i(25932),	-- Cenarion Thicket Jerkin
@@ -339,7 +567,7 @@ _.Zones =
 				q(9980,  {	-- Rescue Deirom!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						un(NEVER_IMPLEMENTED, i(25967)),	-- Eagle Crested Pauldrons
 						un(NEVER_IMPLEMENTED, i(25968)),	-- Shalassi Sentry's Epaulets
 						un(NEVER_IMPLEMENTED, i(25969)),	-- Rapscallion's Touch
@@ -370,7 +598,7 @@ _.Zones =
 				q(10898, {	-- Skywing -- aa
 					["provider"] = { "n", 22424 },	-- Skywing
 					["coord"] = { 53.7, 72.3, TEROKKAR_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(31766),	-- Skywitch Hat
 						i(31765),	-- Redeemer's Plate
 						i(31764),	-- Stillfire Leggings
@@ -379,7 +607,7 @@ _.Zones =
 				}),
 				q(10218, {	-- Someone Else's Hard Work Pays Off
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(29328)),	-- Consortium Prince's Wrap
 						un(REMOVED_FROM_GAME, i(29327)),	-- Cryo-mitts
 						un(REMOVED_FROM_GAME, i(29326)),	-- Consortium Mantle of Phasing
@@ -448,7 +676,7 @@ _.Zones =
 					["provider"] = { "n", 22462 },	-- Vindicator Haylen
 					["coord"] = { 49.7, 76.2, TEROKKAR_FOREST },
 					["sourceQuest"] = 10920,	-- For the Fallen
-					["g"] = {
+					["groups"] = {
 						i(31821),	-- Blade of Retribution
 						i(31820),	-- Blessed Signet Ring
 						i(31819),	-- Noble Plate Pauldrons
@@ -459,7 +687,7 @@ _.Zones =
 					["provider"] = { "n", 22481 },	-- Dwarfowitz
 					["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 					["sourceQuest"] = 10929,	-- Fumping
-					["g"] = {
+					["groups"] = {
 						i(31756),	-- Dib'Muad's Crysknife
 						i(31758),	-- Revered Mother's Crysknife
 						i(31759),	-- Shani's Crysknife
@@ -474,7 +702,7 @@ _.Zones =
 					["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10016,	-- Timber Worg Tails
-					["g"] = {
+					["groups"] = {
 						i(25974),	-- Helm of Lupine Cunning
 						i(25976),	-- Helm of Lupine Grace
 						i(25977),	-- Helm of Lupine Ferocity
@@ -495,7 +723,7 @@ _.Zones =
 					["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 					["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					["sourceQuest"] = 10914,	-- A Hero Is Needed
-					["g"] = {
+					["groups"] = {
 						i(31798),	-- Death-Speaker's Tunic
 						i(31797),	-- Elekk Hide Spaulders
 						i(31796),	-- Sha'tari Marksman's Gloves
@@ -507,7 +735,7 @@ _.Zones =
 					["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9996,	-- Attack on Firewing Point
-					["g"] = {
+					["groups"] = {
 						i(31784),	-- Ancient Terokkar Hood
 						i(31783),	-- Bloodfire Leggings
 						i(31785),	-- Edge of Inevitability
@@ -519,7 +747,7 @@ _.Zones =
 					["coord"] = { 63.2, 42.3, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9997,	-- Attack on Firewing Point
-					["g"] = {
+					["groups"] = {
 						i(31784),	-- Ancient Terokkar Hood
 						i(31783),	-- Bloodfire Leggings
 						i(31785),	-- Edge of Inevitability
@@ -541,7 +769,7 @@ _.Zones =
 				q(10992, {	-- The Hawk's Essence
 					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { DRUID },
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(32481)),	-- Charm of Swift Flight
 					},
 				}),
@@ -553,7 +781,7 @@ _.Zones =
 					["provider"] = { "n", 22370 },	-- Mekeda
 					["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 					["sourceQuest"] = 10880,	-- Cabal Orders
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(31730)),	-- Heirloom Signet of Convalescence
 						i(31729),	-- Heirloom Signet of Valor
 						i(31728),	-- Heirloom Signet of Willpower
@@ -564,7 +792,7 @@ _.Zones =
 					["coord"] = { 51.8, 20.8, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY },
 					["sourceQuest"] = 10889,	-- Return to Shattrath
-					["g"] = {
+					["groups"] = {
 						i(31727),	-- Choker of Bloodied Feathers
 						i(31726),	-- Necklace of Bloodied Feathers
 					},
@@ -588,7 +816,7 @@ _.Zones =
 					["coord"] = { 69.6, 44.2, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9998,	-- Unruly Neighbors
-					["g"] = {
+					["groups"] = {
 						i(25973),	-- Dark Augur's Wand
 						i(25972),	-- Deadeye's Piece
 						i(25971),	-- Stout Oak Longbow
@@ -604,7 +832,7 @@ _.Zones =
 					["coord"] = { 58.0, 53.4, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
-					["g"] = {
+					["groups"] = {
 						i(25937),	-- Terokkar Tablet of Precision
 						i(25936),	-- Terokkar Tablet of Vim
 					},
@@ -614,14 +842,14 @@ _.Zones =
 					["coord"] = { 49.2, 45.9, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10034,	-- WANTED: Bonelashers Dead!
-					["g"] = {
+					["groups"] = {
 						i(25937),	-- Terokkar Tablet of Precision
 						i(25936),	-- Terokkar Tablet of Vim
 					},
 				}),
 				q(10165, {	-- Undercutting the Competition
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(29342)),	-- Consortium Plated Legguards
 						un(REMOVED_FROM_GAME, i(29343)),	-- Haramad's Leggings of the Third Coin
 						un(REMOVED_FROM_GAME, i(29345)),	-- Haramad's Leg Wraps
@@ -637,7 +865,7 @@ _.Zones =
 					["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 					["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10848,	-- Veil Rhaze: Unliving Evil
-					["g"] = {
+					["groups"] = {
 						i(25958),	-- Eagle Engraved Bracers
 						i(25959),	-- Feathered Armbands
 						i(25961),	-- Feathered Wrist Cuffs
@@ -648,7 +876,7 @@ _.Zones =
 					["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 					["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10839,	-- Veil Skith: Darkstone of Terokk
-					["g"] = {
+					["groups"] = {
 						i(31762),	-- Feather-Wrapped Bow
 						i(31761),	-- Talonbranch Wand
 					},
@@ -657,7 +885,7 @@ _.Zones =
 					["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 					["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10861,	-- Veil Lithic: Preemptive Strike
-					["g"] = {
+					["groups"] = {
 						i(25966),	-- Arakkoa Sage's Shawl
 						i(25965),	-- Cloak of Grasping Talons
 						i(25963),	-- Kokorek's Signet
@@ -673,7 +901,7 @@ _.Zones =
 					["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 					-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 					--["sourceQuest"] = 10852,	-- Missing Friends
-					["g"] = {
+					["groups"] = {
 						i(31615),	-- Ancient Draenei Arcane Relic
 						i(31617),	-- Ancient Draenei War Talisman
 					},
@@ -706,7 +934,7 @@ _.Zones =
 					["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10023,	-- Patriarch Ironjaw
-					["g"] = {
+					["groups"] = {
 						i(25974),	-- Helm of Lupine Cunning
 						i(25977),	-- Helm of Lupine Ferocity
 						i(25976),	-- Helm of Lupine Grace
@@ -729,7 +957,7 @@ _.Zones =
 					["provider"] = { "n", 18566 },	-- Shadowstalker Kaide
 					["coord"] = { 63.3, 42.7, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(25973),	-- Dark Augur's Wand
 						i(25972),	-- Deadeye's Piece
 						i(25971),	-- Stout Oak Longbow
@@ -778,5 +1006,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

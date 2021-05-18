@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
 			n(ZONEDROPS, {
 				i(24162, {	-- Design: Arcane Khorium Band
@@ -70,5 +69,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1,16 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
-					["g"] = {
+					["groups"] = {
 						crit(5, {	-- Bloodknight Antari
 							["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 							["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
@@ -64,5 +64,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

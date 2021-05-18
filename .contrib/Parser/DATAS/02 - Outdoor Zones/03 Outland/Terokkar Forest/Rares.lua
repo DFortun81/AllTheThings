@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			n(RARES, {
 				n(18689, {	-- Crippler
@@ -25,7 +24,7 @@ _.Zones =
 						{ 40.0, 62.4, TEROKKAR_FOREST },
 						{ 41.2, 65.4, TEROKKAR_FOREST },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(6, {	-- Crippler
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -48,7 +47,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32620, 10 },	-- Time-Lost Scroll
 					},
-					["g"] = {
+					["groups"] = {
 						i(32529),	-- Heretic's Gauntlets
 						i(31571),	-- Mistshroud Belt
 						i(31574),	-- Mistshroud Bracers
@@ -80,7 +79,7 @@ _.Zones =
 						{ 57.6, 32.8, TEROKKAR_FOREST },
 						{ 55.4, 32.6, TEROKKAR_FOREST },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(7, {	-- Doomsayer Jurim
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -106,7 +105,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32620, 10 },	-- Time-Lost Scroll
 					},
-					["g"] = {
+					["groups"] = {
 						i(32531),	-- Gezzarak's Fang
 						i(31571),	-- Mistshroud Belt
 						i(31574),	-- Mistshroud Bracers
@@ -140,7 +139,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32620, 10 },	-- Time-Lost Scroll
 					},
-					["g"] = {
+					["groups"] = {
 						i(32533),	-- Karrog's Shard
 						i(31571),	-- Mistshroud Belt
 						i(31574),	-- Mistshroud Bracers
@@ -169,7 +168,7 @@ _.Zones =
 						{ 59.2, 24.2, TEROKKAR_FOREST },
 						{ 59.8, 25.2, TEROKKAR_FOREST },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(17, {	-- Okrek
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -185,7 +184,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32720, 1 },	-- Time-Lost Offering
 					},
-					["g"] = {
+					["groups"] = {
 						i(32535),	-- Gift of the Talonpriests
 						i(32534),	-- Brooch of the Immortal King
 						i(31564),	--	Skystalker's Leggings
@@ -215,7 +214,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32620, 10 },	-- Time-Lost Scroll
 					},
-					["g"] = {
+					["groups"] = {
 						i(32532),	-- Windrager's Coils
 						i(31571),	-- Mistshroud Belt
 						i(31574),	-- Mistshroud Bracers
@@ -231,5 +230,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
 			n(RARES, {
 				n(18697, { 	-- Chief Engineer Lorthander
@@ -81,5 +80,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
