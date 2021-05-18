@@ -203,6 +203,13 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
+						i(23815, {	-- Schematic: Adamantite Shell Machine
+							["spellID"] = 30347,	-- Adamantite Shell Machine
+							["timeline"] = { "removed 4.0.1.10000" },
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["spellID"] = 30348,	-- Fel Iron Toolbox
 							["requireSkill"] = ENGINEERING,
@@ -247,6 +254,13 @@ _.Zones =
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
+							["requireSkill"] = LEATHERWORKING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(25720, {	-- Pattern: Heavy Knothide Leather
+							["spellID"] = 32455,	-- Heavy Knothide Leather
+							["timeline"] = { "removed 3.2.0.10000"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = 200,

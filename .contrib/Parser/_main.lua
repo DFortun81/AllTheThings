@@ -1404,6 +1404,10 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = {
 		["f"] = 200,
 	}),
 };
+-- TODO: Add Engineering as well. cogwheels and stuff
+-- https://www.wowhead.com/npc=16657/feera
+-- TODO: Add Inscription as well. Inks and Pigments
+-- https://www.wowhead.com/npc=30732/sessoh
 COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 	i(52409, {	-- Design: Accurate Demonseye
 		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token

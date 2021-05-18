@@ -118,13 +118,13 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				-- #if AFTER CATA
-					q(9606, {	-- Return to Caregiver Chellan
-						["provider"] = { "n", 17555 },	-- Stephanos
-						["coord"] = { 54.8, 35.8, THE_EXODAR },
-						["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
-						["races"] = { DRAENEI },
-						["lvl"] = 5,
-					}),
+				q(9606, {	-- Return to Caregiver Chellan
+					["provider"] = { "n", 17555 },	-- Stephanos
+					["coord"] = { 54.8, 35.8, THE_EXODAR },
+					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
+					["races"] = { DRAENEI },
+					["lvl"] = 5,
+				}),
 				-- #endif
 				q(9762, {	-- The Unwritten Prophecy
 					["provider"] = { "n", 17468 },	-- Prophet Velen

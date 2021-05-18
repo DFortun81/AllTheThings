@@ -124,8 +124,11 @@ _.Zones =
 					["coord"] = { 67.2, 67.6, SHATTRATH_CITY },
 					["groups"] = {
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
+							["spellID"] = 32455,	-- Heavy Knothide Leather
+							["timeline"] = { "removed 3.2.0.10000"},
+							["requireSkill"] = LEATHERWORKING,
+							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -1256,6 +1259,13 @@ _.Zones =
 				n(18484,  {	-- Wind Trader Lathrai
 					["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 					["groups"] = {
+						i(23815, {	-- Schematic: Adamantite Shell Machine
+							["spellID"] = 30347,	-- Adamantite Shell Machine
+							["timeline"] = { "removed 4.0.1.10000" },
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["spellID"] = 30348,	-- Fel Iron Toolbox
 							["requireSkill"] = ENGINEERING,

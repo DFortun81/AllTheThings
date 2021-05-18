@@ -40,7 +40,7 @@ _.Zones =
 		m(THE_EXODAR, {
 			n(VENDORS, {
 				n(16705, {	-- Altaa <Alchemy Supplies>
-					["coord"] = { 27.8, 61.8, THE_EXODAR },
+					["coord"] = { 28.1, 61.9, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
@@ -58,7 +58,7 @@ _.Zones =
 					},
 				}),
 				n(16713, {	-- Arras <Blacksmithing Supplies>
-					["coord"] = { 61.0, 89.0, THE_EXODAR },
+					["coord"] = { 61.3, 89.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(23591, {	-- Plans: Adamantite Cleaver
@@ -88,7 +88,7 @@ _.Zones =
 					}),
 				}),
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
-					["coord"] = { 45.6, 25.0, THE_EXODAR },
+					["coord"] = { 45.5, 25.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
 						i(20854, {	-- Design: Amulet of the Moon
@@ -134,16 +134,23 @@ _.Zones =
 					}),
 				}),
 				n(16722, {	-- Egomis <Enchanting Supplies>
-					["coord"] = { 39.8, 39.8, THE_EXODAR },
+					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, EGOMIS_GROUPS),
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
-					["coord"] = { 53.0, 90.0, THE_EXODAR },
+					["coord"] = { 53.6, 90.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["spellID"] = 30313,	-- Adamantite Rifle
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23815, {	-- Schematic: Adamantite Shell Machine
+							["spellID"] = 30347,	-- Adamantite Shell Machine
+							["timeline"] = { "removed 4.0.1.10000" },
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = 200,
@@ -163,16 +170,23 @@ _.Zones =
 					},
 				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
-					["coord"] = { 71.0, 91.4, THE_EXODAR },
+					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = GORNII_GROUPS,
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
-					["coord"] = { 66.6, 74.0, THE_EXODAR },
+					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
+							["requireSkill"] = LEATHERWORKING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(25720, {	-- Pattern: Heavy Knothide Leather
+							["spellID"] = 32455,	-- Heavy Knothide Leather
+							["timeline"] = { "removed 3.2.0.10000"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = 200,
@@ -192,7 +206,7 @@ _.Zones =
 					},
 				}),
 				n(16767, {	-- Neii <Tailoring Supplies>
-					["coord"] = { 64.6, 68.6, THE_EXODAR },
+					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(21892, {	-- Pattern: Bolt of Imbued Netherweave
@@ -219,21 +233,21 @@ _.Zones =
 					}),
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
-					["coord"] = { 54.6, 26.6, THE_EXODAR },
+					["coord"] = { 54.4, 26.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = PHEA_GROUPS,
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
-					["coord"] = { 30.4, 34.6, THE_EXODAR },
+					["coord"] = { 30.1, 33.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(29901),	-- Blue Moth Egg Pet
-						i(29903),	-- Yellow Moth Egg Pet
-						i(29904),	-- White Moth Egg Pet
+						i(29901),	-- Blue Moth Egg
+						i(29903),	-- Yellow Moth Egg
+						i(29904),	-- White Moth Egg
 					},
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
-					["coord"] = { 39.78, 38.87, THE_EXODAR },
+					["coord"] = { 40.5, 39.8, THE_EXODAR },
 					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -246,7 +260,7 @@ _.Zones =
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
-					["coord"] = { 81.6, 52.6, THE_EXODAR },
+					["coord"] = { 81.5, 51.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(29745),	-- Great Blue Elekk Mount
