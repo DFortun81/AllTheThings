@@ -1,105 +1,90 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NAGRAND, {
 			n(QUESTS, {
-				faction(932, {	-- The Aldor
-					["collectible"] = false,	-- Collectible in Shattrath
-					["g"] = {
-						n(QUESTS, {
-							q(10669, {	-- Against All Odds
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10668, {	-- Against the Illidari
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10641, {	-- Against the Legion
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10646, {	-- Illidan's Pupil
-								["provider"] = { "n", 18417 },	-- Altruis
-								["sourceQuests"] = {
-									10641,	-- Against the Legion
-									10668,	-- Against the Illidari
-									10669,	-- Against All Odds
-								},
-							}),
-							q(10650, {	-- Return to the Aldor
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["sourceQuest"] = 10649,	-- The Book of Fel Names
-							}),
-							q(10649, {	-- The Book of Fel Names
-								["provider"] = { "n", 18417 },	-- Altruis
-								["sourceQuest"] = 10646,	-- Illidan's Pupil
-							}),
-						}),
+				q(10669, {	-- Against All Odds
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
 					},
 				}),
-				faction(934,  {	-- The Scryers
-					["collectible"] = false,	-- Collectible in Shattrath
-					["g"] = {
-						n(QUESTS, {
-							q(10669, {	-- Against All Odds
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10668, {	-- Against the Illidari
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10641, {	-- Against the Legion
-								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuests"] = {
-									10640,	-- Altruis (Aldor)
-									10689,	-- Altruis (Scryer)
-								},
-							}),
-							q(10646, {	-- Illidan's Pupil
-								["provider"] = { "n", 18417 },	-- Altruis
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuests"] = {
-									10641,	-- Against the Legion
-									10668,	-- Against the Illidari
-									10669,	-- Against All Odds
-								},
-							}),
-							q(10691, {	-- Return to the Scryers
-								["provider"] = { "n", 18417 },	-- Altruis
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuest"] = 10649,	-- The Book of Fel Names
-							}),
-							q(10649, {	-- The Book of Fel Names
-								["provider"] = { "n", 18417 },	-- Altruis
-								["coord"] = { 27.3, 43.0, NAGRAND },
-								["sourceQuest"] = 10646,	-- Illidan's Pupil
-							}),
-						}),
+				q(10668, {	-- Against the Illidari
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
 					},
+				}),
+				q(10641, {	-- Against the Legion
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10646, {	-- Illidan's Pupil
+					["provider"] = { "n", 18417 },	-- Altruis
+					["sourceQuests"] = {
+						10641,	-- Against the Legion
+						10668,	-- Against the Illidari
+						10669,	-- Against All Odds
+					},
+				}),
+				q(10650, {	-- Return to the Aldor
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["sourceQuest"] = 10649,	-- The Book of Fel Names
+				}),
+				q(10649, {	-- The Book of Fel Names
+					["provider"] = { "n", 18417 },	-- Altruis
+					["sourceQuest"] = 10646,	-- Illidan's Pupil
+				}),
+				q(10669, {	-- Against All Odds
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10668, {	-- Against the Illidari
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10641, {	-- Against the Legion
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10646, {	-- Illidan's Pupil
+					["provider"] = { "n", 18417 },	-- Altruis
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10641,	-- Against the Legion
+						10668,	-- Against the Illidari
+						10669,	-- Against All Odds
+					},
+				}),
+				q(10691, {	-- Return to the Scryers
+					["provider"] = { "n", 18417 },	-- Altruis
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuest"] = 10649,	-- The Book of Fel Names
+				}),
+				q(10649, {	-- The Book of Fel Names
+					["provider"] = { "n", 18417 },	-- Altruis
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuest"] = 10646,	-- Illidan's Pupil
 				}),
 				q(11042, {	-- A Mystifying Vision
 					["provider"] = { "n", 23268 },	-- Seer Jovar
@@ -448,6 +433,109 @@ _.Zones =
 				q(9925,  {	-- Matters of Security
 					["provider"] = { "n", 18276 },	-- Zerid
 					["coord"] = { 30.8, 58.1, NAGRAND },
+				}),
+				q(9914, {	-- A Head Full of Ivory
+					["provider"] = { "n", 18333 },	-- Shadrek
+					["coord"] = { 31.8, 56.8, NAGRAND },
+					["minReputation"] = { 933, NEUTRAL },
+					["maxReputation"] = { 933, FRIENDLY },
+				}),
+				q(9886, {	-- Membership Benefits
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["isMonthly"] = true,
+					["minReputation"] = { 933, NEUTRAL },
+					["maxReputation"] = { 933, FRIENDLY },
+					["g"] = {
+						i(25424),	-- Gem-Stuffed Envelope
+					},
+				}),
+				q(9884, {	-- Membership Benefits
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["isMonthly"] = true,
+					["minReputation"] = { 933, FRIENDLY },
+					["maxReputation"] = { 933, HONORED },
+					["g"] = {
+						i(25419),	-- Unmarked Bag of Gems
+					},
+				}),
+				q(10476, {	-- Fierce Enemies
+					["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
+					["coord"] = { 54.8, 70.8, NAGRAND },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(10477, {	-- More Warbeads!
+					["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
+					["coord"] = { 54.8, 70.8, NAGRAND },
+					["sourceQuest"] = 10476,	-- Fierce Enemies
+					["repeatable"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(9885, {	-- Membership Benefits
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["isMonthly"] = true,
+					["minReputation"] = { 933, HONORED },
+					["maxReputation"] = { 933, REVERED },
+					["g"] = {
+						i(25422),	-- Bulging Sack of Gems
+					},
+				}),
+				q(9887, {	-- Membership Benefits
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["isMonthly"] = true,
+					["minReputation"] = { 933, REVERED },
+					["g"] = {
+						i(25423),	-- Bag of Premium Gems
+					},
+				}),
+				q(9883, {	-- More Crystal Fragments
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["sourceQuest"] = 9882,	-- Stealing from Thieves
+					["repeatable"] = true,
+					["minReputation"] = { 933, NEUTRAL },
+					["maxReputation"] = { 933, FRIENDLY },
+				}),
+				q(9915, {	-- More Heads Full of Ivory
+					["provider"] = { "n", 18333 },	-- Shadrek
+					["coord"] = { 31.8, 56.8, NAGRAND },
+					["sourceQuest"] = 9914,	-- A Head Full of Ivory
+					["repeatable"] = true,
+					["minReputation"] = { 933, NEUTRAL },
+					["maxReputation"] = { 933, FRIENDLY },
+				}),
+				q(9892, {	-- More Obsidian Warbeads
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["sourceQuest"] = 9893,	-- Obsidian Warbeads
+					["repeatable"] = true,
+					["minReputation"] = { 933, FRIENDLY },
+				}),
+				q(10478, {	-- More Warbeads!
+					["provider"] = { "n", 18407 },	-- Warden Bullrok
+					["coord"] = { 55.8, 37.8, NAGRAND },
+					["sourceQuest"] = 10479,	-- Proving Your Strength
+					["repeatable"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(10479, {	-- Proving Your Strength
+					["provider"] = { "n", 18407 },	-- Warden Bullrok
+					["coord"] = { 55.8, 37.8, NAGRAND },
+					["races"] = HORDE_ONLY,
+				}),
+				q(9893, {	-- Obsidian Warbeads
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["minReputation"] = { 933, FRIENDLY },
+				}),
+				q(9882, {	-- Stealing from Thieves
+					["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+					["coord"] = { 31.4, 57.8, NAGRAND },
+					["minReputation"] = { 933, NEUTRAL },
+					["maxReputation"] = { 933, FRIENDLY },
 				}),
 				q(9906,  {	-- Message in a Battle
 					["provider"] = { "n", 18106 },	-- Jorin Deadeye
@@ -1041,6 +1129,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
-

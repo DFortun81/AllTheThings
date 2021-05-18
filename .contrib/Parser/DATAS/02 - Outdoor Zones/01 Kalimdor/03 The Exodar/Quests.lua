@@ -21,7 +21,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(24138)),	-- Silver Crossbow
 					},
 				}),
@@ -132,7 +132,7 @@ _.Zones =
 					["sourceQuest"] =	9759,	-- Ending Their World
 					["races"] = { DRAENEI },
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(24344),	-- Tabard of the Hand
 						i(24349),   -- Signet Ring of the Hand
 						i(24350),   -- Signet Ring of the Hand
