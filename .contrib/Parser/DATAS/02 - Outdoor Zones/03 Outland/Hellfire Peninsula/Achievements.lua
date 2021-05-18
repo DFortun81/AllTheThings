@@ -4,7 +4,7 @@
 -- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(ACHIEVEMENTS, {
 				-- #if AFTER MOP
@@ -119,6 +119,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
 -- #endif
