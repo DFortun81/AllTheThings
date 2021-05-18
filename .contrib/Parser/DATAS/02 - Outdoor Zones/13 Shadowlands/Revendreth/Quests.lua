@@ -893,6 +893,13 @@ _.Zones =
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
+				q(63592, {	-- A New Path
+				--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
+				--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
+					["sourceQuests"] = { 63584 },	-- A Triumphant Return
+					["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
+					["coord"] = { 64.0, 19.1, 1707 },	-- Elysian Hold, Archon's Rise
+				}),
 				q(63579, {	-- A Paladin's Soul
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
 					["provider"] = { "n", 179356 },	-- Thenios
@@ -981,6 +988,11 @@ _.Zones =
 					["sourceQuests"] = { 63582 },	-- He Was My Student
 					["provider"] = { "n", 177112 },	-- Uther
 					["coord"] = { 40.1, 20.3, BASTION },
+				}),
+				q(64437, {	-- Inform the Primus
+					["sourceQuests"] = { 63592 },	-- A New Path
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 47.8, 53.6, 1701 },	-- Heart of the Forest
 				}),
 				q(63679, {	-- Magical Mystery Tour!
 					["sourceQuests"] = { 63678 },	-- Akarek Avenged

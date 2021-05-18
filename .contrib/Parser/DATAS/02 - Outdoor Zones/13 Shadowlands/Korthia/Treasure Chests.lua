@@ -90,6 +90,11 @@ _.Zones =
 						}),
 					},
 				}),
+				o(368876, {	-- Mawsworn Cache
+					["questID"] = 64021,
+					["isDaily"] = true,
+					["coord"] = { 58.8, 33.6, KORTHIA },
+				}),
 				o(369339, {	-- Mawsworn Cache
 					["questID"] = 64363,
 					["isDaily"] = true,

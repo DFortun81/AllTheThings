@@ -105,7 +105,7 @@ _.Zones =
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(63732, {	-- Interrupt the Interrogations
-				--	TODO: verify SQ.  i saw the ! on the map at the same time as "a matter of urgency," but it's possible this is available sooner.  the NPC is cloaked and only shows up when you get pretty close to it, so look for the map !
+				--	TODO: verify SQ.  intro chain has been changed slightly since i first did it - i forgot to check when i initially got to korthia for the map '!' but saw it after turning in "Good News, Everyone!" (may be available sooner - NPC is cloaked until you get very close, look for the '!' on the map)
 					["sourceQuests"] = { 63855 },	-- Ease of Passage
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 					["coord"] = { 59.0, 58.1, KORTHIA },
@@ -117,6 +117,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 178676 },	-- Tal-Galan
 					["coord"] = { 50.2, 75.7, KORTHIA },
+					["maps"] = { 2008 },	-- Korthia_Micro_C
 				}),
 				q(63722, {	-- Keepers of Korthia
 					["sourceQuests"] = { 63714 },	-- To the Vault
@@ -226,10 +227,8 @@ _.Zones =
 					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
 				q(64305, {	-- The Tormentors of Torghast
-				--	showed up after PTR realms got taken down for a couple hours.  not sure if there are rep requirements/specific SQs necessary to unlock
-				--	i was at 6900/12000 honored
-				--	TODO: there is no weekly flag via API on the quest but check back to see if it pops up again
-				--	["sourceQuests"] = {  },	-- ??? showed up randomly
+				--	TODO: not 100% on this SQ - i did the chain through "Good News, Everyone!" and picked up all the one-time quests that were up, then logged out.  when i logged back in later that day, this quest was up.  i'm PRETTY SURE i had picked up all the yellow quests in the area already but i guess maybe i missed one (even though it was literally right next to me lol)?  anyway, could use verification
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 179321 },	-- Duchess Mynx
 					["coord"] = { 63.4, 23.3, KORTHIA },
 				}),
@@ -432,8 +431,11 @@ _.Zones =
 					["coord"] = { 61.6, 23.9, KORTHIA },
 				}),
 				q(63784, {	-- Gold's No Object
-				--	awarded i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
-				--	awarded i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
+				--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
+				--	i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
+				--	i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
+				--	i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
+				--	i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,

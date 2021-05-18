@@ -379,6 +379,7 @@ i(184168, 344577);	-- Bound Shadehound
 -- PATCH 9.1.0 --
 -----------------
 i(186647, 354356);	-- Amber Shardhide
+i(185996, 332904);	-- Harvester's Dredwing
 i(186477, 353873);	-- Pale Gravewing
 i(186648, 347251);	-- Soaring Razorwing
 i(186103, 352742);	-- Undying Darkhound

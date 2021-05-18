@@ -56,8 +56,6 @@ _.Zones =
 						crit(10),	-- Heavy Handed Tactics
 					}),
 					ach(15033, {	-- Taking the Tremaculum
-						crit(2),	-- Weapons of the Tremaculum
-						crit(3),	-- That's a Good Trick
 						crit(4),	-- Fangcrack's Fan Club
 						crit(5),	-- A Tea for Every Occasion
 						crit(7),	-- If Even One is Worthy
@@ -321,7 +319,7 @@ _.Zones =
 							}),
 						}),
 						n(TREASURES, {
-						--	TODO: figure out if these are only up during the necrolord assault, or available at all times (in which case they need to be moved)
+						--	TODO: these quests currently reset, unsure if that's intended or not though.  but just a reminder to check back about it as ptr continues i guess - currently you could just make infinite lil'aboms lol
 							i(186188, {	-- Lil'Abom (PET!)
 								["cost"] = {
 									{ "i", 186183, 1 },	-- Lil'Abom Head
@@ -416,12 +414,32 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63842, {	-- That's a Good Trick
+								["provider"] = { "n", 178172 },	-- Lady Moonberry
+								["isDaily"] = true,
+								["coord"] = { 29.9, 17.1, THE_MAW },
+								["g"] = {
+									crit(3, {	-- That's a Good Trick
+										["achievementID"] = 15033,	-- Taking the Tremaculum
+									}),
+								},
+							}),
 							q(63841, {	-- The Skyhunt
 								["provider"] = { "n", 178180 },	-- Hunt-Captain Korayn
 								["isDaily"] = true,
 								["coord"] = { 29.3, 18.1, THE_MAW },
 								["g"] = {
 									crit(9, {	-- The Skyhunt
+										["achievementID"] = 15033,	-- Taking the Tremaculum
+									}),
+								},
+							}),
+							q(63834, {	-- Weapons of the Tremaculum
+								["provider"] = { "n", 178066 },	-- General Draven
+								["isDaily"] = true,
+								["coord"] = { 30.0, 17.1, THE_MAW },
+								["g"] = {
+									crit(2, {	-- Weapons of the Tremaculum
 										["achievementID"] = 15033,	-- Taking the Tremaculum
 									}),
 								},
@@ -442,6 +460,7 @@ _.Zones =
 								["achievementID"] = 15000,	-- United Front
 							}),
 							i(185990, {	-- Harvester's War Chest
+								i(185996),	-- Harvester's Dredwing Saddle (MOUNT!)
 							}),
 						}),
 					},

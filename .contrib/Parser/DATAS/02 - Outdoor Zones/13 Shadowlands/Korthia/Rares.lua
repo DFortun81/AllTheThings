@@ -13,6 +13,7 @@ _.Zones =
 					["questID"] = 64243,
 					["isDaily"] = true,
 					["coord"] = { 51.1, 41.7, KORTHIA },
+					["cr"] = 179755,	-- Consumption (Rare, non-Elite version)
 					["g"] = {
 						crit(4, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
@@ -71,10 +72,13 @@ _.Zones =
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
-					["description"] = "Kill the |cFF883325Tormented Demolisher|r for a chance to spawn Kroke.",
+					["description"] = "Kill |cFF883325Tormented Demolishers|r for a chance to spawn Kroke.\n\nIf the two on the surface are not up, there is a third Demolisher inside the cave in the bottom-left room.",
 				--	["questID"] = ,	-- has not been added yet
 					["isDaily"] = true,
-					["coord"] = { 60.1, 34.0, KORTHIA },	-- TODO: unsure of original spawnpoint, it was engaged in combat when i killed it
+					["coords"] = {
+						{ 59.8, 37.5, KORTHIA },
+						{ 63.0, 35.8, KORTHIA },
+					},
 					["cr"] = 179029,	-- Tormented Demolisher
 					["g"] = {
 					--	crit(22, {	-- Kroke the Tormented

@@ -792,7 +792,6 @@ _.Zones =
 					--	paladin
 					--	hunter
 					--	rogue
-					--	shaman
 					--	warlock
 					--	monk
 					--	druid
@@ -804,6 +803,7 @@ _.Zones =
 						i(182322),	-- Faesworn Gavel
 						i(182323),	-- Faesworn Spellblade
 						i(179546),	-- Faesworn Warclub
+						i(179536),	-- Faesworn Warmaul
 					},
 				}),
 				q(63576, {	-- The First Move

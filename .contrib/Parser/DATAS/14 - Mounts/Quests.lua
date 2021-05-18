@@ -79,6 +79,7 @@ _.Mounts =
 			["races"] = { TAUREN },
 			["classes"] = { PALADIN },
 		}),
+		i(185996),		-- Harvester's Dredwing
 		i(143502, {		-- Highlord's Golden Charger
 			["classes"] = { PALADIN },
 		}),

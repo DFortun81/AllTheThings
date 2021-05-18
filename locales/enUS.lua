@@ -4899,6 +4899,7 @@ app.L = {
 		[368666] = "Lil'Abom's Head",
 		[368667] = "Lil'Abom's Torso",
 		[368668] = "Lil'Abom's Trunk",
+		[368876] = "Mawsworn Cache",
 		[369132] = "Domination Sealed Chest",
 		[369148] = "Glittering Nest Material",
 		[369149] = "Forgotten Feather",

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+		--[[ TODO: they added a vendor item where these fit very neatly but i'm not sure if it will stay.  so i'm leaving this file here but it can be deleted if the vendor item makes it to live
 _.GearSets =
 {
 	n(-976, {	-- Korthian Sets
@@ -66,3 +66,4 @@ _.GearSets =
 		},
 	}),
 };
+			--]]
