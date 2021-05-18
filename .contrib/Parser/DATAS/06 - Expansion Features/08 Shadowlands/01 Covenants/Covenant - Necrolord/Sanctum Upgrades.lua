@@ -354,6 +354,17 @@ _.ExpansionFeatures =
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["g"] = {
+										o(357937, {	-- Burried Cache (Revendreth version)
+											["g"] = {
+												i(183826),	-- Big Floppy Hat
+												i(183789),	-- Six-League Pack
+												i(181797),	-- Strange Cloth
+												i(183759),	-- Unusually Large Cranium
+												i(183760),	-- Venthyr Spectacles
+											},
+										}),
+									},
 								}),
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -378,6 +389,18 @@ _.ExpansionFeatures =
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["g"] = {
+										o(357771, {	-- Burried Cache (Ardenweald version)
+											["g"] = {
+												i(183755),	-- Ardenweald Wreath
+												i(183826),	-- Big Floppy Hat
+												i(183789),	-- Six-League Pack
+												i(181797),	-- Strange Cloth
+												i(183759),	-- Unusually Large Cranium
+												i(183760),	-- Venthyr Spectacles
+											},
+										}),
+									},
 								}),
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor

@@ -19,11 +19,6 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 167745 },	-- Haephus
 								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
 							}),
-							q(57903, {	-- Power in the Sky
-								["sourceQuests"] = { 57901 },	-- All That Remains
-								["provider"] = { "n", 158773 },	-- Capheus
-								["coord"] = { 37.9, 67.5, 1707 },	-- Archon's Rise
-							}),
 							o(356818, {	-- Penitence of Purity
 								["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
 								["isDaily"] = true,
@@ -34,14 +29,29 @@ _.ExpansionFeatures =
 									i(184296),	-- Purity's Edge Greatblade
 								},
 							}),
+							q(57903, {	-- Power in the Sky
+								["sourceQuests"] = { 57901 },	-- All That Remains
+								["provider"] = { "n", 158773 },	-- Capheus
+								["coord"] = { 37.9, 67.5, 1707 },	-- Archon's Rise
+							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
-							q(61179, {    -- Forge Ahead
+							q(61179, {	-- Forge Ahead
 								["provider"] = { "n", 158773 },    -- Capheus
 								["coord"] = { 64.2, 20.0, BASTION },
 							}),
 							q(62280, {	-- Limbo
 								["isWorldQuest"] = true,
+							}),
+							q(61159, {	-- Signs of Demise
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
+							}),
+							q(61157, {	-- Straight to the Point
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
 							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power

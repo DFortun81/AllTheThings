@@ -1967,6 +1967,7 @@ _.HiddenQuestTriggers =
 		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
 		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
 		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen
+		q(43965),	-- Death Knight Order Hall - Blood Artifact Chosen second
 		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
 		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
 		q(40936),	-- Death Knight Order Hall - Convincing Revil Kost to help during 'Apocalypse' (40930)
@@ -2219,6 +2220,8 @@ _.HiddenQuestTriggers =
 		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
 		q(43676),	-- Hidden Appearance Unlocked (triggered after learning hidden appearance for Ulthalesh on affliction lock)
 		q(43680),	-- Hidden Appearance Unlocked (Fury Warrior "The Dragonslayers")
+		q(43670),	-- Hidden Appearance Unlocked (Assassination Rogue "The Kingslayers")
+		q(43673),	-- Hidden Appearance Unlocked (Ele Shaman "Lost Codex of the Amani")
 
 		--	Professions
 		--	Archaeology
@@ -3524,6 +3527,7 @@ _.HiddenQuestTriggers =
 		--	Battle of Dazar'alor
 		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing
 		q(55024),	-- LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
+		q(55025),	-- triggered after killing Conclave on normal
 
 		--	Eternal Palace
 		q(55754),	-- Abyssal Commander Sivara HC LootID
