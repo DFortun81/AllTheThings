@@ -1604,6 +1604,31 @@ _.Zones =
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				
+				-- ANOTHER SET OF SILLY BREADCRUMBS, PLEASE FIX.
+				q(27266, {	-- Wulf Calls
+					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
+					["coord"] = { 47.2, 88.4, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["lvl"] = 20,
+				}),
+				q(27266, {	-- Wulf Calls
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
+					["classes"] = { HUNTER },
+					["coord"] = { 70.9, 89.8, 87 },	-- Daera Brightspear (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27266, {	-- Wulf Calls
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
+					["classes"] = { HUNTER },
+					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				-- END SILL BREADCRUMB SECTION
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
 					["classes"] = { WARRIOR },

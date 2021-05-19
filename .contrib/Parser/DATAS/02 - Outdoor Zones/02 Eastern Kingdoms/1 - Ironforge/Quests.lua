@@ -425,13 +425,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27266, {	-- Wulf Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
-					["classes"] = { HUNTER },
-					["coord"] = { 70.9, 89.8, 87 },	-- Daera Brightspear (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
 			}),
 		}),
 	}),

@@ -256,13 +256,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6967)),	-- Elunite Sword
 					},
 				}),
-				q(27266, {	-- Wulf Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
-					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 			}),
 		}),
 	}),
