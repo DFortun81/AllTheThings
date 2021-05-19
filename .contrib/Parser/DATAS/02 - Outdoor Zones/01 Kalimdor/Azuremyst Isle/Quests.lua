@@ -360,19 +360,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(9672, {	-- The Bloodcurse Legacy
-					["sourceQuests"] = { 9671 },	-- Urgent Delivery
-					["provider"] = { "n", 17240 },	-- Admiral Odesyus
-					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(9751, {	-- The Bloodcurse Legacy (duplicate, never implemented?)
-					["sourceQuests"] = { 9671 },	-- Urgent Delivery
-					["provider"] = { "n", 17240 },	-- Admiral Odesyus
-					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(9454, {	-- The Great Moongraze Hunt
 					["provider"] = { "n", 17110 },	-- Acteon
 					["coord"] = { 49.8, 51.9, AZUREMYST_ISLE },
